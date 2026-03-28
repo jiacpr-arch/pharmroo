@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 import { getQuestionSet } from "@/lib/db/queries-mcq";
 import { auth } from "@/lib/auth";
 import { db } from "@/lib/db";

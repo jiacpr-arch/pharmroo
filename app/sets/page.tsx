@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 import { Suspense } from "react";
 import { getQuestionSets } from "@/lib/db/queries-mcq";
 import { auth } from "@/lib/auth";

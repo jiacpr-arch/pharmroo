@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: "ฝึกทำข้อสอบ PLE-PC PLE-CC1 ใบประกอบวิชาชีพเภสัชกรรม ครบทุกหมวด",
 };
 
-export const revalidate = 60;
+export const dynamic = "force-dynamic";
 
 export default async function PLEPage() {
   const [subjects, counts] = await Promise.all([

@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 import { Suspense } from "react";
 import { getMcqQuestions } from "@/lib/db/queries-mcq";
 import McqMock from "@/components/McqMock";
