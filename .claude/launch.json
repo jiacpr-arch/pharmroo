@@ -3,8 +3,9 @@
   "configurations": [
     {
       "name": "pharmroo",
-      "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev", "--", "--port", "3002"],
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["next", "dev", "--port", "3002"],
+      "cwd": "/Users/apple/Desktop/pharmroo",
       "port": 3002
     }
   ]

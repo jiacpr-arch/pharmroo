@@ -1,69 +1,35 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useSession, signOut } from "next-auth/react";
 import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { createClient } from "@/lib/supabase/client";
 import { User, Mail, Crown, Calendar, LogOut } from "lucide-react";
-import type { Profile } from "@/lib/types";
 
 const membershipLabels: Record<string, string> = {
   free: "ฟรี",
   monthly: "รายเดือน",
   yearly: "รายปี",
-  bundle: "ชุดข้อสอบ",
 };
 
 const membershipColors: Record<string, string> = {
   free: "bg-gray-100 text-gray-700",
   monthly: "bg-brand/10 text-brand",
   yearly: "bg-amber-100 text-amber-700",
-  bundle: "bg-blue-100 text-blue-700",
 };
 
 export default function ProfilePage() {
+  const { data: session, status } = useSession();
   const router = useRouter();
-  const [profile, setProfile] = useState<Profile | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [userEmail, setUserEmail] = useState("");
 
   useEffect(() => {
-    async function loadProfile() {
-      const supabase = createClient();
-      const {
-        data: { user },
-      } = await supabase.auth.getUser();
+    if (status === "unauthenticated") router.push("/login");
+  }, [status, router]);
 
-      if (!user) {
-        router.push("/login");
-        return;
-      }
-
-      setUserEmail(user.email || "");
-
-      const { data } = await supabase
-        .from("profiles")
-        .select("*")
-        .eq("id", user.id)
-        .single();
-
-      setProfile(data);
-      setLoading(false);
-    }
-    loadProfile();
-  }, [router]);
-
-  const handleLogout = async () => {
-    const supabase = createClient();
-    await supabase.auth.signOut();
-    router.push("/");
-    router.refresh();
-  };
-
-  if (loading) {
+  if (status === "loading") {
     return (
       <div className="flex items-center justify-center min-h-[calc(100vh-12rem)]">
         <p className="text-muted-foreground">กำลังโหลด...</p>
@@ -71,12 +37,23 @@ export default function ProfilePage() {
     );
   }
 
+  if (!session) return null;
+
+  const user = session.user as {
+    name?: string;
+    email?: string;
+    role?: string;
+    membership_type?: string;
+    membership_expires_at?: string | null;
+  };
+
+  const membershipType = user.membership_type || "free";
+
   return (
     <div className="mx-auto max-w-2xl px-4 py-8 sm:px-6 lg:px-8">
       <h1 className="text-3xl font-bold mb-8">โปรไฟล์</h1>
 
       <div className="space-y-6">
-        {/* Profile Info */}
         <Card>
           <CardHeader>
             <div className="flex items-center gap-4">
@@ -84,19 +61,16 @@ export default function ProfilePage() {
                 <User className="h-8 w-8 text-brand" />
               </div>
               <div>
-                <h2 className="text-xl font-bold">
-                  {profile?.name || "ผู้ใช้งาน"}
-                </h2>
+                <h2 className="text-xl font-bold">{user.name || "ผู้ใช้งาน"}</h2>
                 <p className="text-sm text-muted-foreground flex items-center gap-1">
                   <Mail className="h-3.5 w-3.5" />
-                  {profile?.email || userEmail}
+                  {user.email}
                 </p>
               </div>
             </div>
           </CardHeader>
         </Card>
 
-        {/* Membership */}
         <Card>
           <CardHeader>
             <h3 className="font-semibold flex items-center gap-2">
@@ -106,23 +80,17 @@ export default function ProfilePage() {
           <CardContent className="space-y-4">
             <div className="flex items-center justify-between">
               <span className="text-muted-foreground">แพ็กเกจ</span>
-              <Badge
-                className={
-                  membershipColors[profile?.membership_type || "free"]
-                }
-              >
-                {membershipLabels[profile?.membership_type || "free"]}
+              <Badge className={membershipColors[membershipType] || membershipColors.free}>
+                {membershipLabels[membershipType] || membershipType}
               </Badge>
             </div>
-            {profile?.membership_expires_at && (
+            {user.membership_expires_at && (
               <div className="flex items-center justify-between">
                 <span className="text-muted-foreground flex items-center gap-1">
                   <Calendar className="h-4 w-4" /> วันหมดอายุ
                 </span>
                 <span className="text-sm font-medium">
-                  {new Date(
-                    profile.membership_expires_at
-                  ).toLocaleDateString("th-TH", {
+                  {new Date(user.membership_expires_at).toLocaleDateString("th-TH", {
                     year: "numeric",
                     month: "long",
                     day: "numeric",
@@ -130,7 +98,7 @@ export default function ProfilePage() {
                 </span>
               </div>
             )}
-            {(!profile || profile.membership_type === "free") && (
+            {membershipType === "free" && (
               <Link href="/pricing">
                 <Button className="w-full bg-brand hover:bg-brand-light text-white mt-2">
                   อัปเกรดแพ็กเกจ
@@ -140,11 +108,10 @@ export default function ProfilePage() {
           </CardContent>
         </Card>
 
-        {/* Logout */}
         <Button
           variant="outline"
           className="w-full gap-2 text-destructive border-destructive/30 hover:bg-destructive/5"
-          onClick={handleLogout}
+          onClick={() => signOut({ callbackUrl: "/" })}
         >
           <LogOut className="h-4 w-4" /> ออกจากระบบ
         </Button>

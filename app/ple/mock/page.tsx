@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import { getMcqQuestions } from "@/lib/supabase/queries-mcq";
+import { getMcqQuestions } from "@/lib/db/queries-mcq";
 import McqMock from "@/components/McqMock";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";

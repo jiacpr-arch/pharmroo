@@ -1,78 +1,35 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { createClient } from "@/lib/supabase/client";
-import {
-  Shield,
-  Loader2,
-  BookOpen,
-  CreditCard,
-  Users,
-  Plus,
-} from "lucide-react";
+import { Shield, Loader2, BookOpen, CreditCard, Users } from "lucide-react";
 
 export default function AdminDashboard() {
+  const { data: session, status } = useSession();
   const router = useRouter();
-  const [loading, setLoading] = useState(true);
-  const [isAdmin, setIsAdmin] = useState(false);
-  const [stats, setStats] = useState({
-    totalExams: 0,
-    totalUsers: 0,
-    pendingPayments: 0,
-  });
+  const [stats, setStats] = useState({ totalExams: 0, totalUsers: 0, pendingPayments: 0 });
+  const [statsLoading, setStatsLoading] = useState(true);
+
+  const user = session?.user as { role?: string } | undefined;
+  const isAdmin = user?.role === "admin";
 
   useEffect(() => {
-    async function load() {
-      const supabase = createClient();
-      const {
-        data: { user },
-      } = await supabase.auth.getUser();
+    if (status === "unauthenticated") router.push("/login");
+  }, [status, router]);
 
-      if (!user) {
-        router.push("/login");
-        return;
-      }
+  useEffect(() => {
+    if (!isAdmin) return;
+    fetch("/api/admin/stats")
+      .then((r) => r.json())
+      .then((data) => { setStats(data); setStatsLoading(false); });
+  }, [isAdmin]);
 
-      const { data: profile } = await supabase
-        .from("profiles")
-        .select("role")
-        .eq("id", user.id)
-        .single();
-
-      if (profile?.role !== "admin") {
-        setLoading(false);
-        return;
-      }
-
-      setIsAdmin(true);
-
-      // Fetch stats
-      const [examsRes, usersRes, paymentsRes] = await Promise.all([
-        supabase.from("exams").select("id", { count: "exact", head: true }),
-        supabase.from("profiles").select("id", { count: "exact", head: true }),
-        supabase
-          .from("payment_orders")
-          .select("id", { count: "exact", head: true })
-          .eq("status", "pending"),
-      ]);
-
-      setStats({
-        totalExams: examsRes.count || 0,
-        totalUsers: usersRes.count || 0,
-        pendingPayments: paymentsRes.count || 0,
-      });
-
-      setLoading(false);
-    }
-    load();
-  }, [router]);
-
-  if (loading) {
+  if (status === "loading" || statsLoading && isAdmin) {
     return (
       <div className="flex items-center justify-center min-h-[60vh]">
         <Loader2 className="h-8 w-8 animate-spin text-brand" />
@@ -85,9 +42,7 @@ export default function AdminDashboard() {
       <div className="mx-auto max-w-lg px-4 py-16 text-center">
         <Shield className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
         <h1 className="text-2xl font-bold">ไม่มีสิทธิ์เข้าถึง</h1>
-        <p className="text-muted-foreground mt-2">
-          หน้านี้สำหรับผู้ดูแลระบบเท่านั้น
-        </p>
+        <p className="text-muted-foreground mt-2">หน้านี้สำหรับผู้ดูแลระบบเท่านั้น</p>
       </div>
     );
   }
@@ -97,11 +52,10 @@ export default function AdminDashboard() {
       <div className="flex items-center justify-between mb-8">
         <div>
           <h1 className="text-2xl font-bold">Admin Dashboard</h1>
-          <p className="text-muted-foreground mt-1">จัดการระบบหมอรู้</p>
+          <p className="text-muted-foreground mt-1">จัดการระบบ PharmRoo</p>
         </div>
       </div>
 
-      {/* Stats */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
         <Card>
           <CardContent className="pt-6">
@@ -144,7 +98,6 @@ export default function AdminDashboard() {
         </Card>
       </div>
 
-      {/* Quick actions */}
       <h2 className="text-lg font-bold mb-4">จัดการ</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         <Link href="/admin/exams">
@@ -156,9 +109,7 @@ export default function AdminDashboard() {
               </div>
             </CardHeader>
             <CardContent>
-              <p className="text-sm text-muted-foreground">
-                เพิ่ม แก้ไข ลบข้อสอบ และตอนย่อย
-              </p>
+              <p className="text-sm text-muted-foreground">เพิ่ม แก้ไข ลบข้อสอบ MCQ</p>
             </CardContent>
           </Card>
         </Link>
@@ -178,9 +129,7 @@ export default function AdminDashboard() {
               </div>
             </CardHeader>
             <CardContent>
-              <p className="text-sm text-muted-foreground">
-                ตรวจสอบสลิปและอนุมัติสมาชิก
-              </p>
+              <p className="text-sm text-muted-foreground">ตรวจสอบสลิปและอนุมัติสมาชิก</p>
             </CardContent>
           </Card>
         </Link>
@@ -193,9 +142,7 @@ export default function AdminDashboard() {
               </div>
             </CardHeader>
             <CardContent>
-              <p className="text-sm text-muted-foreground">
-                ดูข้อมูลสมาชิก แก้ไขสมาชิกภาพ และกำหนดสิทธิ์
-              </p>
+              <p className="text-sm text-muted-foreground">ดูข้อมูลสมาชิก แก้ไขสมาชิกภาพ และกำหนดสิทธิ์</p>
             </CardContent>
           </Card>
         </Link>

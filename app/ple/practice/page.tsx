@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import { getMcqSubjects, getMcqQuestions } from "@/lib/supabase/queries-mcq";
+import { getMcqSubjects, getMcqQuestions } from "@/lib/db/queries-mcq";
 import McqPractice from "@/components/McqPractice";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";

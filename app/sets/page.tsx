@@ -1,6 +1,6 @@
 import { Suspense } from "react";
-import { getQuestionSets } from "@/lib/supabase/queries-mcq";
-import { createClient } from "@/lib/supabase/server";
+import { getQuestionSets } from "@/lib/db/queries-mcq";
+import { auth } from "@/lib/auth";
 import type { QuestionSet } from "@/lib/types-mcq";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
@@ -30,12 +30,10 @@ const EXAM_TYPE_LABEL: Record<string, string> = {
 };
 
 async function SetsContent() {
-  const supabase = await createClient();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+  const session = await auth();
+  const userId = (session?.user as { id?: string } | undefined)?.id;
 
-  const sets = await getQuestionSets(user?.id);
+  const sets = await getQuestionSets(userId);
 
   const bundles = sets.filter((s) => s.is_bundle);
   const singles = sets.filter((s) => !s.is_bundle);

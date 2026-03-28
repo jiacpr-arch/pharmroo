@@ -1,16 +1,9 @@
-import { NextResponse, type NextRequest } from "next/server";
-import { updateSession } from "@/lib/supabase/middleware";
+import { auth } from "@/lib/auth";
+import { NextResponse } from "next/server";
 
-export async function middleware(request: NextRequest) {
-  // Skip Supabase session refresh if not configured
-  if (
-    !process.env.NEXT_PUBLIC_SUPABASE_URL ||
-    process.env.NEXT_PUBLIC_SUPABASE_URL === "your-supabase-url"
-  ) {
-    return NextResponse.next();
-  }
-  return await updateSession(request);
-}
+export default auth(() => {
+  return NextResponse.next();
+});
 
 export const config = {
   matcher: [

@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { ArrowRight, BookOpen, Shuffle, Target } from "lucide-react";
-import { getMcqSubjects, getMcqSubjectCounts } from "@/lib/supabase/queries-mcq";
+import { getMcqSubjects, getMcqSubjectCounts } from "@/lib/db/queries-mcq";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

@@ -1,5 +1,8 @@
-import { getQuestionSet } from "@/lib/supabase/queries-mcq";
-import { createClient } from "@/lib/supabase/server";
+import { getQuestionSet } from "@/lib/db/queries-mcq";
+import { auth } from "@/lib/auth";
+import { db } from "@/lib/db";
+import { setPurchases } from "@/lib/db/schema";
+import { and, eq } from "drizzle-orm";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -49,21 +52,17 @@ export default async function SetDetailPage({
   if (!set) notFound();
 
   // Check if user already purchased
-  const supabase = await createClient();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+  const session = await auth();
+  const user = session?.user as { id?: string } | undefined;
 
   let alreadyPurchased = false;
-  if (user) {
-    const { data } = await supabase
-      .from("set_purchases")
-      .select("id")
-      .eq("user_id", user.id)
-      .eq("set_id", id)
-      .eq("status", "active")
-      .maybeSingle();
-    alreadyPurchased = !!data;
+  if (user?.id) {
+    const purchase = await db
+      .select({ id: setPurchases.id })
+      .from(setPurchases)
+      .where(and(eq(setPurchases.user_id, user.id), eq(setPurchases.set_id, id), eq(setPurchases.status, "active")))
+      .get();
+    alreadyPurchased = !!purchase;
   }
 
   const savings =
