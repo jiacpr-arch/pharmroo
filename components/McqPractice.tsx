@@ -13,12 +13,9 @@ import {
   ChevronUp,
 } from "lucide-react";
 import type { McqQuestion } from "@/lib/types-mcq";
-import {
-  saveMcqAttempt,
-  createMcqSession,
-  updateMcqSession,
-} from "@/lib/supabase/mutations-mcq";
-import { createClient } from "@/lib/supabase/client";
+import { useSession } from "next-auth/react";
+import Link from "next/link";
+import { Lock } from "lucide-react";
 
 interface McqPracticeProps {
   questions: McqQuestion[];
@@ -33,33 +30,36 @@ export default function McqPractice({ questions }: McqPracticeProps) {
   const [userId, setUserId] = useState<string | null>(null);
   const [sessionId, setSessionId] = useState<string | null>(null);
   const questionStartTime = useRef<number>(Date.now());
+  const { data: authSession } = useSession();
+  const membershipType = (authSession?.user as { membership_type?: string })?.membership_type;
+  const isPaid = membershipType === "monthly" || membershipType === "yearly";
 
   // Get user on mount and create session
   useEffect(() => {
     async function init() {
+      const uid = (authSession?.user as { id?: string })?.id;
+      if (!uid) return;
+      setUserId(uid);
       try {
-        const supabase = createClient();
-        const {
-          data: { user },
-        } = await supabase.auth.getUser();
-        if (user) {
-          setUserId(user.id);
-          const session = await createMcqSession({
-            user_id: user.id,
+        const res = await fetch("/api/mcq/session", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
             mode: "practice",
             exam_type: "PLE-CC1",
             total_questions: questions.length,
-          });
-          if (session) {
-            setSessionId(session.id);
-          }
+          }),
+        });
+        if (res.ok) {
+          const session = await res.json();
+          setSessionId(session.id);
         }
       } catch {
-        // Not logged in or error — skip saving
+        // skip saving
       }
     }
     init();
-  }, [questions.length]);
+  }, [questions.length, authSession]);
 
   // Reset question timer when question changes
   useEffect(() => {
@@ -85,14 +85,17 @@ export default function McqPractice({ questions }: McqPracticeProps) {
         const timeSpent = Math.round(
           (Date.now() - questionStartTime.current) / 1000
         );
-        saveMcqAttempt({
-          user_id: userId,
-          question_id: question.id,
-          selected_answer: label,
-          is_correct: isCorrect,
-          time_spent_seconds: timeSpent,
-          mode: "practice",
-          session_id: sessionId,
+        fetch("/api/mcq/attempt", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            question_id: question.id,
+            selected_answer: label,
+            is_correct: isCorrect,
+            time_spent_seconds: timeSpent,
+            mode: "practice",
+            session_id: sessionId,
+          }),
         }).catch(() => {
           // Silently fail — don't block UI
         });
@@ -135,9 +138,14 @@ export default function McqPractice({ questions }: McqPracticeProps) {
   useEffect(() => {
     if (isFinished && sessionId && !hasUpdatedSession.current) {
       hasUpdatedSession.current = true;
-      updateMcqSession(sessionId, {
-        correct_count: stats.correct,
-        completed_at: new Date().toISOString(),
+      fetch("/api/mcq/session", {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          id: sessionId,
+          correct_count: stats.correct,
+          completed_at: new Date().toISOString(),
+        }),
       }).catch(() => {});
     }
   }, [isFinished, sessionId, stats.correct]);
@@ -274,121 +282,155 @@ export default function McqPractice({ questions }: McqPracticeProps) {
             ) : (
               <ChevronDown className="h-4 w-4" />
             )}
-            {showExplanation ? "ซ่อนคำอธิบาย" : "ดูเฉลยละเอียด"}
+            {showExplanation ? "ซ่อนคำอธิบาย" : "ดูเฉลย"}
           </button>
           {showExplanation && (
             <div className="mt-3 space-y-4">
-              {/* Detailed explanation */}
-              {question.detailed_explanation ? (
-                <>
-                  {/* Correct answer summary */}
-                  <Card className="border-green-300 bg-green-50/50">
-                    <CardContent className="p-4">
-                      <div className="flex items-start gap-2 mb-2">
-                        <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
-                        <h4 className="font-bold text-green-800">
-                          คำตอบที่ถูกต้อง: {question.correct_answer}
-                        </h4>
-                      </div>
-                      <p className="text-sm leading-relaxed text-green-900">
-                        {question.detailed_explanation.summary}
-                      </p>
-                    </CardContent>
-                  </Card>
-
-                  {/* Detailed reason */}
-                  <Card className="border-blue-200 bg-blue-50/30">
-                    <CardContent className="p-4">
-                      <h4 className="font-bold text-blue-800 mb-2">เหตุผลโดยละเอียด</h4>
-                      <p className="text-sm leading-relaxed whitespace-pre-line text-foreground/80">
-                        {question.detailed_explanation.reason}
-                      </p>
-                    </CardContent>
-                  </Card>
-
-                  {/* Each choice explanation */}
-                  <div>
-                    <h4 className="font-bold text-sm mb-3">อธิบายแต่ละตัวเลือก</h4>
-                    <div className="space-y-2">
-                      {question.detailed_explanation.choices.map((ce) => (
-                        <div
-                          key={ce.label}
-                          className={`p-3 rounded-lg border text-sm ${
-                            ce.is_correct
-                              ? "border-green-300 bg-green-50/50"
-                              : "border-border bg-muted/30"
-                          }`}
-                        >
-                          <div className="flex items-start gap-2">
-                            <span
-                              className={`flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${
-                                ce.is_correct
-                                  ? "bg-green-500 text-white"
-                                  : "bg-muted text-muted-foreground"
-                              }`}
-                            >
-                              {ce.label}
-                            </span>
-                            <div>
-                              <span className="font-medium">{ce.text}</span>
-                              {ce.is_correct && (
-                                <Badge className="ml-2 bg-green-100 text-green-700 text-[10px]">
-                                  ถูกต้อง
-                                </Badge>
-                              )}
-                              <p className="text-muted-foreground mt-1 leading-relaxed">
-                                {ce.explanation}
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
+              {/* Short explanation — visible to everyone */}
+              <Card className="border-green-300 bg-green-50/50">
+                <CardContent className="p-4">
+                  <div className="flex items-start gap-2 mb-2">
+                    <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
+                    <h4 className="font-bold text-green-800">
+                      คำตอบที่ถูกต้อง: {question.correct_answer}
+                    </h4>
                   </div>
+                  <p className="text-sm leading-relaxed text-green-900">
+                    {question.detailed_explanation?.summary || question.explanation}
+                  </p>
+                </CardContent>
+              </Card>
 
-                  {/* Calculation Steps */}
-                  {question.detailed_explanation.calculation_steps &&
-                    question.detailed_explanation.calculation_steps.length > 0 && (
-                    <Card className="border-purple-200 bg-purple-50/30">
+              {/* Detailed explanation — paid members only */}
+              {question.detailed_explanation && (
+                isPaid ? (
+                  <>
+                    {/* Detailed reason */}
+                    <Card className="border-blue-200 bg-blue-50/30">
                       <CardContent className="p-4">
-                        <h4 className="font-bold text-purple-800 mb-2 text-sm">ขั้นตอนคำนวณ</h4>
-                        <ol className="list-decimal pl-5 space-y-1">
-                          {question.detailed_explanation.calculation_steps.map(
-                            (step, i) => (
-                              <li
-                                key={i}
-                                className="text-sm leading-relaxed text-purple-900"
-                              >
-                                {step}
-                              </li>
-                            )
-                          )}
-                        </ol>
-                      </CardContent>
-                    </Card>
-                  )}
-
-                  {/* Key takeaway */}
-                  {question.detailed_explanation.key_takeaway && (
-                    <Card className="border-amber-200 bg-amber-50/30">
-                      <CardContent className="p-4">
-                        <h4 className="font-bold text-amber-800 mb-1 text-sm">สรุปจุดสำคัญ</h4>
-                        <p className="text-sm leading-relaxed text-amber-900">
-                          {question.detailed_explanation.key_takeaway}
+                        <h4 className="font-bold text-blue-800 mb-2">เหตุผลโดยละเอียด</h4>
+                        <p className="text-sm leading-relaxed whitespace-pre-line text-foreground/80">
+                          {question.detailed_explanation.reason}
                         </p>
                       </CardContent>
                     </Card>
-                  )}
-                </>
-              ) : (
-                /* Fallback: simple explanation */
-                <Card className="border-brand/20">
-                  <CardContent className="p-4">
-                    <p className="text-sm leading-relaxed whitespace-pre-line text-muted-foreground">
-                      {question.explanation}
-                    </p>
-                  </CardContent>
-                </Card>
+
+                    {/* Each choice explanation */}
+                    <div>
+                      <h4 className="font-bold text-sm mb-3">อธิบายแต่ละตัวเลือก</h4>
+                      <div className="space-y-2">
+                        {question.detailed_explanation.choices?.map((ce) => (
+                          <div
+                            key={ce.label}
+                            className={`p-3 rounded-lg border text-sm ${
+                              ce.is_correct
+                                ? "border-green-300 bg-green-50/50"
+                                : "border-border bg-muted/30"
+                            }`}
+                          >
+                            <div className="flex items-start gap-2">
+                              <span
+                                className={`flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${
+                                  ce.is_correct
+                                    ? "bg-green-500 text-white"
+                                    : "bg-muted text-muted-foreground"
+                                }`}
+                              >
+                                {ce.label}
+                              </span>
+                              <div>
+                                <span className="font-medium">{ce.text}</span>
+                                {ce.is_correct && (
+                                  <Badge className="ml-2 bg-green-100 text-green-700 text-[10px]">
+                                    ถูกต้อง
+                                  </Badge>
+                                )}
+                                <p className="text-muted-foreground mt-1 leading-relaxed">
+                                  {ce.explanation}
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Calculation Steps */}
+                    {question.detailed_explanation.calculation_steps &&
+                      question.detailed_explanation.calculation_steps.length > 0 && (
+                      <Card className="border-purple-200 bg-purple-50/30">
+                        <CardContent className="p-4">
+                          <h4 className="font-bold text-purple-800 mb-2 text-sm">ขั้นตอนคำนวณ</h4>
+                          <ol className="list-decimal pl-5 space-y-1">
+                            {question.detailed_explanation.calculation_steps.map(
+                              (step, i) => (
+                                <li
+                                  key={i}
+                                  className="text-sm leading-relaxed text-purple-900"
+                                >
+                                  {step}
+                                </li>
+                              )
+                            )}
+                          </ol>
+                        </CardContent>
+                      </Card>
+                    )}
+
+                    {/* Key takeaway */}
+                    {question.detailed_explanation.key_takeaway && (
+                      <Card className="border-amber-200 bg-amber-50/30">
+                        <CardContent className="p-4">
+                          <h4 className="font-bold text-amber-800 mb-1 text-sm">สรุปจุดสำคัญ</h4>
+                          <p className="text-sm leading-relaxed text-amber-900">
+                            {question.detailed_explanation.key_takeaway}
+                          </p>
+                        </CardContent>
+                      </Card>
+                    )}
+                  </>
+                ) : (
+                  /* Free user: blurred preview + upgrade CTA */
+                  <div className="relative">
+                    <div className="select-none pointer-events-none blur-[6px] opacity-60 space-y-4">
+                      <Card className="border-blue-200 bg-blue-50/30">
+                        <CardContent className="p-4">
+                          <h4 className="font-bold text-blue-800 mb-2">เหตุผลโดยละเอียด</h4>
+                          <p className="text-sm leading-relaxed text-foreground/80">
+                            {question.detailed_explanation.reason || "เหตุผลโดยละเอียดสำหรับคำตอบที่ถูกต้อง อธิบายกลไกทางเภสัชวิทยา..."}
+                          </p>
+                        </CardContent>
+                      </Card>
+                      <Card className="border-border">
+                        <CardContent className="p-4">
+                          <h4 className="font-bold text-sm mb-2">อธิบายแต่ละตัวเลือก</h4>
+                          <div className="space-y-2 text-sm text-muted-foreground">
+                            <p>A: คำอธิบายตัวเลือก A โดยละเอียด...</p>
+                            <p>B: คำอธิบายตัวเลือก B โดยละเอียด...</p>
+                            <p>C: คำอธิบายตัวเลือก C โดยละเอียด...</p>
+                            <p>D: คำอธิบายตัวเลือก D โดยละเอียด...</p>
+                          </div>
+                        </CardContent>
+                      </Card>
+                    </div>
+                    {/* Upgrade overlay */}
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="bg-white/95 backdrop-blur-sm border-2 border-brand/30 rounded-2xl p-6 text-center shadow-lg max-w-sm">
+                        <Lock className="h-8 w-8 text-brand mx-auto mb-3" />
+                        <h4 className="font-bold text-lg mb-1">เฉลยละเอียด</h4>
+                        <p className="text-sm text-muted-foreground mb-4">
+                          สมัครสมาชิกเพื่อดูเหตุผลโดยละเอียด คำอธิบายทุกตัวเลือก และสรุปจุดสำคัญ
+                        </p>
+                        <Link
+                          href="/pricing"
+                          className="inline-flex items-center gap-2 bg-brand hover:bg-brand-light text-white px-6 py-2.5 rounded-lg font-medium text-sm transition-colors"
+                        >
+                          สมัครสมาชิก
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                )
               )}
             </div>
           )}

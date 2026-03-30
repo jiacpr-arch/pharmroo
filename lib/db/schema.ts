@@ -1,16 +1,18 @@
 import { sql } from "drizzle-orm";
 import {
+  boolean,
   integer,
+  jsonb,
+  pgTable,
   primaryKey,
   real,
-  sqliteTable,
   text,
-} from "drizzle-orm/sqlite-core";
+} from "drizzle-orm/pg-core";
 
 // ========================================
 // 1. Users (replaces Supabase auth.users + profiles)
 // ========================================
-export const users = sqliteTable("users", {
+export const users = pgTable("users", {
   id: text("id").primaryKey(),
   email: text("email").notNull().unique(),
   name: text("name").notNull().default(""),
@@ -24,11 +26,11 @@ export const users = sqliteTable("users", {
   membership_expires_at: text("membership_expires_at"),
   created_at: text("created_at")
     .notNull()
-    .default(sql`(datetime('now'))`),
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
 });
 
 // NextAuth sessions
-export const sessions = sqliteTable("sessions", {
+export const sessions = pgTable("sessions", {
   id: text("id").primaryKey(),
   user_id: text("user_id")
     .notNull()
@@ -39,10 +41,10 @@ export const sessions = sqliteTable("sessions", {
 // ========================================
 // 2. MCQ Subjects
 // ========================================
-export const mcqSubjects = sqliteTable("mcq_subjects", {
+export const mcqSubjects = pgTable("mcq_subjects", {
   id: text("id")
     .primaryKey()
-    .default(sql`(lower(hex(randomblob(16))))`),
+    .default(sql`generate_hex_id()`),
   name: text("name").notNull().unique(),
   name_th: text("name_th").notNull(),
   icon: text("icon").notNull().default("📝"),
@@ -52,16 +54,16 @@ export const mcqSubjects = sqliteTable("mcq_subjects", {
   question_count: integer("question_count").notNull().default(0),
   created_at: text("created_at")
     .notNull()
-    .default(sql`(datetime('now'))`),
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
 });
 
 // ========================================
 // 3. MCQ Questions
 // ========================================
-export const mcqQuestions = sqliteTable("mcq_questions", {
+export const mcqQuestions = pgTable("mcq_questions", {
   id: text("id")
     .primaryKey()
-    .default(sql`(lower(hex(randomblob(16))))`),
+    .default(sql`generate_hex_id()`),
   subject_id: text("subject_id").references(() => mcqSubjects.id),
   exam_type: text("exam_type", { enum: ["PLE-PC", "PLE-CC1"] })
     .notNull()
@@ -71,38 +73,36 @@ export const mcqQuestions = sqliteTable("mcq_questions", {
   question_number: integer("question_number"),
   scenario: text("scenario").notNull(),
   image_url: text("image_url"),
-  choices: text("choices", { mode: "json" }).notNull().default("[]"),
+  choices: jsonb("choices").notNull().default(sql`'[]'::jsonb`),
   correct_answer: text("correct_answer").notNull(),
   explanation: text("explanation"),
-  detailed_explanation: text("detailed_explanation", { mode: "json" }),
+  detailed_explanation: jsonb("detailed_explanation"),
   difficulty: text("difficulty", { enum: ["easy", "medium", "hard"] })
     .notNull()
     .default("medium"),
-  is_ai_enhanced: integer("is_ai_enhanced", { mode: "boolean" })
-    .notNull()
-    .default(false),
+  is_ai_enhanced: boolean("is_ai_enhanced").notNull().default(false),
   ai_notes: text("ai_notes"),
   status: text("status", { enum: ["active", "review", "disabled"] })
     .notNull()
     .default("active"),
   created_at: text("created_at")
     .notNull()
-    .default(sql`(datetime('now'))`),
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
 });
 
 // ========================================
 // 4. MCQ Attempts
 // ========================================
-export const mcqAttempts = sqliteTable("mcq_attempts", {
+export const mcqAttempts = pgTable("mcq_attempts", {
   id: text("id")
     .primaryKey()
-    .default(sql`(lower(hex(randomblob(16))))`),
+    .default(sql`generate_hex_id()`),
   user_id: text("user_id").references(() => users.id, { onDelete: "cascade" }),
   question_id: text("question_id").references(() => mcqQuestions.id, {
     onDelete: "cascade",
   }),
   selected_answer: text("selected_answer").notNull(),
-  is_correct: integer("is_correct", { mode: "boolean" }).notNull(),
+  is_correct: boolean("is_correct").notNull(),
   time_spent_seconds: integer("time_spent_seconds"),
   mode: text("mode", { enum: ["practice", "mock"] })
     .notNull()
@@ -110,16 +110,16 @@ export const mcqAttempts = sqliteTable("mcq_attempts", {
   session_id: text("session_id"),
   created_at: text("created_at")
     .notNull()
-    .default(sql`(datetime('now'))`),
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
 });
 
 // ========================================
 // 5. MCQ Sessions
 // ========================================
-export const mcqSessions = sqliteTable("mcq_sessions", {
+export const mcqSessions = pgTable("mcq_sessions", {
   id: text("id")
     .primaryKey()
-    .default(sql`(lower(hex(randomblob(16))))`),
+    .default(sql`generate_hex_id()`),
   user_id: text("user_id").references(() => users.id, { onDelete: "cascade" }),
   mode: text("mode", { enum: ["practice", "mock"] })
     .notNull()
@@ -135,16 +135,16 @@ export const mcqSessions = sqliteTable("mcq_sessions", {
   completed_at: text("completed_at"),
   created_at: text("created_at")
     .notNull()
-    .default(sql`(datetime('now'))`),
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
 });
 
 // ========================================
 // 6. Question Sets
 // ========================================
-export const questionSets = sqliteTable("question_sets", {
+export const questionSets = pgTable("question_sets", {
   id: text("id")
     .primaryKey()
-    .default(sql`(lower(hex(randomblob(16))))`),
+    .default(sql`generate_hex_id()`),
   name: text("name").notNull(),
   name_th: text("name_th").notNull(),
   description: text("description"),
@@ -155,18 +155,18 @@ export const questionSets = sqliteTable("question_sets", {
   question_count: integer("question_count").notNull().default(0),
   price: real("price").notNull(),
   original_price: real("original_price"),
-  is_bundle: integer("is_bundle", { mode: "boolean" }).notNull().default(false),
-  is_active: integer("is_active", { mode: "boolean" }).notNull().default(true),
+  is_bundle: boolean("is_bundle").notNull().default(false),
+  is_active: boolean("is_active").notNull().default(true),
   sort_order: integer("sort_order").notNull().default(0),
   created_at: text("created_at")
     .notNull()
-    .default(sql`(datetime('now'))`),
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
 });
 
 // ========================================
 // 7. Set Questions (many-to-many)
 // ========================================
-export const setQuestions = sqliteTable(
+export const setQuestions = pgTable(
   "set_questions",
   {
     set_id: text("set_id").references(() => questionSets.id, {
@@ -183,10 +183,10 @@ export const setQuestions = sqliteTable(
 // ========================================
 // 8. Set Purchases
 // ========================================
-export const setPurchases = sqliteTable("set_purchases", {
+export const setPurchases = pgTable("set_purchases", {
   id: text("id")
     .primaryKey()
-    .default(sql`(lower(hex(randomblob(16))))`),
+    .default(sql`generate_hex_id()`),
   user_id: text("user_id").references(() => users.id, { onDelete: "cascade" }),
   set_id: text("set_id").references(() => questionSets.id, {
     onDelete: "cascade",
@@ -198,16 +198,16 @@ export const setPurchases = sqliteTable("set_purchases", {
   purchased_at: text("purchased_at"),
   created_at: text("created_at")
     .notNull()
-    .default(sql`(datetime('now'))`),
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
 });
 
 // ========================================
 // 9. Payment Orders
 // ========================================
-export const paymentOrders = sqliteTable("payment_orders", {
+export const paymentOrders = pgTable("payment_orders", {
   id: text("id")
     .primaryKey()
-    .default(sql`(lower(hex(randomblob(16))))`),
+    .default(sql`generate_hex_id()`),
   user_id: text("user_id").references(() => users.id, { onDelete: "cascade" }),
   order_type: text("order_type", { enum: ["subscription", "set"] })
     .notNull()
@@ -223,7 +223,13 @@ export const paymentOrders = sqliteTable("payment_orders", {
   reviewed_at: text("reviewed_at"),
   created_at: text("created_at")
     .notNull()
-    .default(sql`(datetime('now'))`),
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+  invoice_requested: boolean("invoice_requested").default(false),
+  invoice_type: text("invoice_type", { enum: ["personal", "company"] }),
+  invoice_name: text("invoice_name"),
+  invoice_tax_id: text("invoice_tax_id"),
+  invoice_address: text("invoice_address"),
+  invoice_branch: text("invoice_branch"),
 });
 
 // Types

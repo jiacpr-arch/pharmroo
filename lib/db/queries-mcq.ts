@@ -1,6 +1,6 @@
 import { db } from "./index";
-import { mcqSubjects, mcqQuestions, questionSets, setPurchases, setQuestions } from "./schema";
-import { eq, and, inArray } from "drizzle-orm";
+import { mcqSubjects, mcqQuestions, mcqAttempts, mcqSessions, questionSets, setPurchases, setQuestions } from "./schema";
+import { eq, and, sql, desc } from "drizzle-orm";
 import type { McqSubject, McqQuestion, QuestionSet, SetPurchase } from "../types-mcq";
 
 export async function getMcqSubjects(): Promise<McqSubject[]> {
@@ -54,7 +54,7 @@ export async function getMcqQuestion(id: string): Promise<McqQuestion | null> {
     .from(mcqQuestions)
     .leftJoin(mcqSubjects, eq(mcqQuestions.subject_id, mcqSubjects.id))
     .where(and(eq(mcqQuestions.id, id), eq(mcqQuestions.status, "active")))
-    .get();
+    .then(rows => rows[0]);
 
   if (!row) return null;
   return toMcqQuestion(row.q, row.s ?? undefined);
@@ -83,7 +83,7 @@ export async function getQuestionSet(id: string): Promise<QuestionSet | null> {
     .select()
     .from(questionSets)
     .where(and(eq(questionSets.id, id), eq(questionSets.is_active, true)))
-    .get();
+    .then(rows => rows[0]);
 
   if (!row) return null;
   return toQuestionSet(row);
@@ -108,6 +108,115 @@ export async function getMcqSubjectCounts(): Promise<Record<string, number>> {
     if (row.subject_id) counts[row.subject_id] = (counts[row.subject_id] || 0) + 1;
   }
   return counts;
+}
+
+// ========================================
+// Student Stats Queries
+// ========================================
+
+export async function getStudentOverallStats(userId: string) {
+  const rows = await db
+    .select({
+      total: sql<number>`count(*)`,
+      correct: sql<number>`sum(case when ${mcqAttempts.is_correct} then 1 else 0 end)`,
+      total_time: sql<number>`coalesce(sum(${mcqAttempts.time_spent_seconds}), 0)`,
+    })
+    .from(mcqAttempts)
+    .where(eq(mcqAttempts.user_id, userId));
+
+  const sessionRows = await db
+    .select({ count: sql<number>`count(*)` })
+    .from(mcqSessions)
+    .where(and(eq(mcqSessions.user_id, userId), sql`${mcqSessions.completed_at} is not null`));
+
+  const r = rows[0];
+  const total = Number(r?.total ?? 0);
+  const correct = Number(r?.correct ?? 0);
+
+  return {
+    total_attempts: total,
+    correct_count: correct,
+    accuracy_pct: total > 0 ? Math.round((correct / total) * 100) : 0,
+    total_time_seconds: Number(r?.total_time ?? 0),
+    total_sessions: Number(sessionRows[0]?.count ?? 0),
+  };
+}
+
+export async function getStudentSubjectBreakdown(userId: string) {
+  const rows = await db
+    .select({
+      subject_id: mcqQuestions.subject_id,
+      name_th: mcqSubjects.name_th,
+      icon: mcqSubjects.icon,
+      total: sql<number>`count(*)`,
+      correct: sql<number>`sum(case when ${mcqAttempts.is_correct} then 1 else 0 end)`,
+    })
+    .from(mcqAttempts)
+    .innerJoin(mcqQuestions, eq(mcqAttempts.question_id, mcqQuestions.id))
+    .leftJoin(mcqSubjects, eq(mcqQuestions.subject_id, mcqSubjects.id))
+    .where(eq(mcqAttempts.user_id, userId))
+    .groupBy(mcqQuestions.subject_id, mcqSubjects.name_th, mcqSubjects.icon);
+
+  return rows.map((r) => {
+    const total = Number(r.total);
+    const correct = Number(r.correct);
+    return {
+      subject_id: r.subject_id ?? "",
+      name_th: r.name_th ?? "ไม่ระบุ",
+      icon: r.icon ?? "📝",
+      total,
+      correct,
+      accuracy_pct: total > 0 ? Math.round((correct / total) * 100) : 0,
+    };
+  }).sort((a, b) => a.accuracy_pct - b.accuracy_pct); // weakest first
+}
+
+export async function getStudentRecentSessions(userId: string, limit = 10) {
+  const rows = await db
+    .select({
+      id: mcqSessions.id,
+      mode: mcqSessions.mode,
+      exam_type: mcqSessions.exam_type,
+      total_questions: mcqSessions.total_questions,
+      correct_count: mcqSessions.correct_count,
+      completed_at: mcqSessions.completed_at,
+      created_at: mcqSessions.created_at,
+      subject_name_th: mcqSubjects.name_th,
+      subject_icon: mcqSubjects.icon,
+    })
+    .from(mcqSessions)
+    .leftJoin(mcqSubjects, eq(mcqSessions.subject_id, mcqSubjects.id))
+    .where(and(eq(mcqSessions.user_id, userId), sql`${mcqSessions.completed_at} is not null`))
+    .orderBy(desc(mcqSessions.created_at))
+    .limit(limit);
+
+  return rows.map((r) => ({
+    id: r.id,
+    mode: r.mode,
+    exam_type: r.exam_type,
+    total_questions: r.total_questions,
+    correct_count: r.correct_count,
+    pct: r.total_questions > 0 ? Math.round((r.correct_count / r.total_questions) * 100) : 0,
+    completed_at: r.completed_at,
+    created_at: r.created_at,
+    subject_name_th: r.subject_name_th,
+    subject_icon: r.subject_icon,
+  }));
+}
+
+export async function getStudentStatsForAdmin(userId: string) {
+  const [overall, subjects, recentSessions] = await Promise.all([
+    getStudentOverallStats(userId),
+    getStudentSubjectBreakdown(userId),
+    getStudentRecentSessions(userId),
+  ]);
+
+  return {
+    overall,
+    subjects,
+    weakAreas: subjects.filter((s) => s.accuracy_pct < 60),
+    recentSessions,
+  };
 }
 
 // ---- mappers ----

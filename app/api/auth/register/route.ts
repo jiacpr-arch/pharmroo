@@ -22,7 +22,7 @@ export async function POST(req: NextRequest) {
     .select({ id: users.id })
     .from(users)
     .where(eq(users.email, email))
-    .get();
+    .then(rows => rows[0]);
 
   if (existing) {
     return NextResponse.json({ error: "อีเมลนี้ถูกใช้แล้ว" }, { status: 409 });

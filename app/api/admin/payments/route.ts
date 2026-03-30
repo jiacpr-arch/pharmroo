@@ -46,7 +46,7 @@ export async function PATCH(req: NextRequest) {
     .select()
     .from(paymentOrders)
     .where(eq(paymentOrders.id, orderId))
-    .get();
+    .then(rows => rows[0]);
 
   if (!order) return NextResponse.json({ error: "Not found" }, { status: 404 });
 

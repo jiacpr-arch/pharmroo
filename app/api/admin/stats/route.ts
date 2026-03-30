@@ -11,13 +11,13 @@ export async function GET() {
   }
 
   const [totalQuestions, totalUsers, pendingPayments] = await Promise.all([
-    db.select({ count: sql<number>`count(*)` }).from(mcqQuestions).get(),
-    db.select({ count: sql<number>`count(*)` }).from(users).get(),
+    db.select({ count: sql<number>`count(*)` }).from(mcqQuestions).then(rows => rows[0]),
+    db.select({ count: sql<number>`count(*)` }).from(users).then(rows => rows[0]),
     db
       .select({ count: sql<number>`count(*)` })
       .from(paymentOrders)
       .where(eq(paymentOrders.status, "pending"))
-      .get(),
+      .then(rows => rows[0]),
   ]);
 
   return NextResponse.json({

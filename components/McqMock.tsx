@@ -17,6 +17,9 @@ import {
   AlertTriangle,
 } from "lucide-react";
 import type { McqQuestion } from "@/lib/types-mcq";
+import { useSession } from "next-auth/react";
+import Link from "next/link";
+import { Lock } from "lucide-react";
 
 interface McqMockProps {
   questions: McqQuestion[];
@@ -39,9 +42,97 @@ export default function McqMock({ questions, timeLimitMinutes }: McqMockProps) {
   const [phase, setPhase] = useState<MockPhase>("exam");
   const [timeLeft, setTimeLeft] = useState(timeLimitMinutes * 60); // seconds
   const [showConfirmSubmit, setShowConfirmSubmit] = useState(false);
+  const { data: authSession } = useSession();
+  const membershipType = (authSession?.user as { membership_type?: string })?.membership_type;
+  const isPaid = membershipType === "monthly" || membershipType === "yearly";
   const [reviewIndex, setReviewIndex] = useState(0);
   const [showExplanation, setShowExplanation] = useState(false);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const [mcqSessionId, setMcqSessionId] = useState<string | null>(null);
+  const hasSavedResults = useRef(false);
+
+  // Calculate results (declared early for use in save effect)
+  const getResults = useCallback(() => {
+    let correct = 0;
+    const subjectMap = new Map<string, SubjectResult>();
+
+    questions.forEach((q, i) => {
+      const userAnswer = answers[i];
+      const isCorrect = userAnswer === q.correct_answer;
+      if (isCorrect) correct++;
+
+      const subjectId = q.subject_id;
+      const subjectName = q.mcq_subjects?.name_th || "ไม่ระบุ";
+      const icon = q.mcq_subjects?.icon || "📝";
+
+      if (!subjectMap.has(subjectId)) {
+        subjectMap.set(subjectId, { subjectId, subjectName, icon, correct: 0, total: 0 });
+      }
+      const entry = subjectMap.get(subjectId)!;
+      entry.total++;
+      if (isCorrect) entry.correct++;
+    });
+
+    return {
+      correct,
+      total: questions.length,
+      percentage: Math.round((correct / questions.length) * 100),
+      subjects: Array.from(subjectMap.values()).sort((a, b) => b.total - a.total),
+    };
+  }, [questions, answers]);
+
+  // Create session on mount
+  useEffect(() => {
+    const uid = (authSession?.user as { id?: string })?.id;
+    if (!uid) return;
+    fetch("/api/mcq/session", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        mode: "mock",
+        exam_type: "PLE-CC1",
+        total_questions: questions.length,
+        time_limit_minutes: timeLimitMinutes,
+      }),
+    })
+      .then((r) => r.json())
+      .then((s) => setMcqSessionId(s.id))
+      .catch(() => {});
+  }, [authSession, questions.length, timeLimitMinutes]);
+
+  // Save results when entering results phase
+  useEffect(() => {
+    if (phase !== "results" || hasSavedResults.current || !mcqSessionId) return;
+    hasSavedResults.current = true;
+    const uid = (authSession?.user as { id?: string })?.id;
+    if (!uid) return;
+
+    const results = getResults();
+
+    // Bulk save attempts
+    const attemptData = questions.map((q, i) => ({
+      question_id: q.id,
+      selected_answer: answers[i] || "",
+      is_correct: answers[i] === q.correct_answer,
+    }));
+    fetch("/api/mcq/attempts/bulk", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ session_id: mcqSessionId, attempts: attemptData }),
+    }).catch(() => {});
+
+    // Update session
+    fetch("/api/mcq/session", {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        id: mcqSessionId,
+        correct_count: results.correct,
+        completed_at: new Date().toISOString(),
+      }),
+    }).catch(() => {});
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [phase, mcqSessionId]);
 
   // Timer
   useEffect(() => {
@@ -109,44 +200,6 @@ export default function McqMock({ questions, timeLimitMinutes }: McqMockProps) {
     setReviewIndex(0);
     setShowExplanation(false);
   }, [timeLimitMinutes]);
-
-  // Calculate results
-  const getResults = () => {
-    let correct = 0;
-    const subjectMap = new Map<string, SubjectResult>();
-
-    questions.forEach((q, i) => {
-      const userAnswer = answers[i];
-      const isCorrect = userAnswer === q.correct_answer;
-      if (isCorrect) correct++;
-
-      const subjectId = q.subject_id;
-      const subjectName = q.mcq_subjects?.name_th || "ไม่ระบุ";
-      const icon = q.mcq_subjects?.icon || "📝";
-
-      if (!subjectMap.has(subjectId)) {
-        subjectMap.set(subjectId, {
-          subjectId,
-          subjectName,
-          icon,
-          correct: 0,
-          total: 0,
-        });
-      }
-      const entry = subjectMap.get(subjectId)!;
-      entry.total++;
-      if (isCorrect) entry.correct++;
-    });
-
-    return {
-      correct,
-      total: questions.length,
-      percentage: Math.round((correct / questions.length) * 100),
-      subjects: Array.from(subjectMap.values()).sort(
-        (a, b) => b.total - a.total
-      ),
-    };
-  };
 
   const answeredCount = Object.keys(answers).length;
   const question = questions[currentIndex];
@@ -555,88 +608,123 @@ export default function McqMock({ questions, timeLimitMinutes }: McqMockProps) {
               ) : (
                 <ChevronDown className="h-4 w-4" />
               )}
-              {showExplanation ? "ซ่อนคำอธิบาย" : "ดูเฉลยละเอียด"}
+              {showExplanation ? "ซ่อนคำอธิบาย" : "ดูเฉลย"}
             </button>
             {showExplanation && (
               <div className="mt-3 space-y-4">
-                {reviewQuestion.detailed_explanation ? (
-                  <>
-                    <Card className="border-green-300 bg-green-50/50">
-                      <CardContent className="p-4">
-                        <div className="flex items-start gap-2 mb-2">
-                          <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
-                          <h4 className="font-bold text-green-800">
-                            คำตอบที่ถูกต้อง: {reviewQuestion.correct_answer}
-                          </h4>
-                        </div>
-                        <p className="text-sm leading-relaxed text-green-900">
-                          {reviewQuestion.detailed_explanation.summary}
-                        </p>
-                      </CardContent>
-                    </Card>
-
-                    <Card className="border-blue-200 bg-blue-50/30">
-                      <CardContent className="p-4">
-                        <h4 className="font-bold text-blue-800 mb-2">เหตุผลโดยละเอียด</h4>
-                        <p className="text-sm leading-relaxed whitespace-pre-line text-foreground/80">
-                          {reviewQuestion.detailed_explanation.reason}
-                        </p>
-                      </CardContent>
-                    </Card>
-
-                    <div>
-                      <h4 className="font-bold text-sm mb-3">อธิบายแต่ละตัวเลือก</h4>
-                      <div className="space-y-2">
-                        {reviewQuestion.detailed_explanation.choices.map((ce) => (
-                          <div
-                            key={ce.label}
-                            className={`p-3 rounded-lg border text-sm ${
-                              ce.is_correct
-                                ? "border-green-300 bg-green-50/50"
-                                : "border-border bg-muted/30"
-                            }`}
-                          >
-                            <div className="flex items-start gap-2">
-                              <span
-                                className={`flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${
-                                  ce.is_correct
-                                    ? "bg-green-500 text-white"
-                                    : "bg-muted text-muted-foreground"
-                                }`}
-                              >
-                                {ce.label}
-                              </span>
-                              <div>
-                                <span className="font-medium">{ce.text}</span>
-                                <p className="text-muted-foreground mt-1 leading-relaxed">
-                                  {ce.explanation}
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        ))}
-                      </div>
+                {/* Short explanation — visible to everyone */}
+                <Card className="border-green-300 bg-green-50/50">
+                  <CardContent className="p-4">
+                    <div className="flex items-start gap-2 mb-2">
+                      <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
+                      <h4 className="font-bold text-green-800">
+                        คำตอบที่ถูกต้อง: {reviewQuestion.correct_answer}
+                      </h4>
                     </div>
+                    <p className="text-sm leading-relaxed text-green-900">
+                      {reviewQuestion.detailed_explanation?.summary || reviewQuestion.explanation}
+                    </p>
+                  </CardContent>
+                </Card>
 
-                    {reviewQuestion.detailed_explanation.key_takeaway && (
-                      <Card className="border-amber-200 bg-amber-50/30">
+                {/* Detailed — paid only */}
+                {reviewQuestion.detailed_explanation && (
+                  isPaid ? (
+                    <>
+                      <Card className="border-blue-200 bg-blue-50/30">
                         <CardContent className="p-4">
-                          <h4 className="font-bold text-amber-800 mb-1 text-sm">สรุปจุดสำคัญ</h4>
-                          <p className="text-sm leading-relaxed text-amber-900">
-                            {reviewQuestion.detailed_explanation.key_takeaway}
+                          <h4 className="font-bold text-blue-800 mb-2">เหตุผลโดยละเอียด</h4>
+                          <p className="text-sm leading-relaxed whitespace-pre-line text-foreground/80">
+                            {reviewQuestion.detailed_explanation.reason}
                           </p>
                         </CardContent>
                       </Card>
-                    )}
-                  </>
-                ) : (
-                  <Card className="border-brand/20">
-                    <CardContent className="p-4">
-                      <p className="text-sm leading-relaxed whitespace-pre-line text-muted-foreground">
-                        {reviewQuestion.explanation}
-                      </p>
-                    </CardContent>
-                  </Card>
+
+                      <div>
+                        <h4 className="font-bold text-sm mb-3">อธิบายแต่ละตัวเลือก</h4>
+                        <div className="space-y-2">
+                          {reviewQuestion.detailed_explanation.choices?.map((ce) => (
+                            <div
+                              key={ce.label}
+                              className={`p-3 rounded-lg border text-sm ${
+                                ce.is_correct
+                                  ? "border-green-300 bg-green-50/50"
+                                  : "border-border bg-muted/30"
+                              }`}
+                            >
+                              <div className="flex items-start gap-2">
+                                <span
+                                  className={`flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${
+                                    ce.is_correct
+                                      ? "bg-green-500 text-white"
+                                      : "bg-muted text-muted-foreground"
+                                  }`}
+                                >
+                                  {ce.label}
+                                </span>
+                                <div>
+                                  <span className="font-medium">{ce.text}</span>
+                                  <p className="text-muted-foreground mt-1 leading-relaxed">
+                                    {ce.explanation}
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+
+                      {reviewQuestion.detailed_explanation.key_takeaway && (
+                        <Card className="border-amber-200 bg-amber-50/30">
+                          <CardContent className="p-4">
+                            <h4 className="font-bold text-amber-800 mb-1 text-sm">สรุปจุดสำคัญ</h4>
+                            <p className="text-sm leading-relaxed text-amber-900">
+                              {reviewQuestion.detailed_explanation.key_takeaway}
+                            </p>
+                          </CardContent>
+                        </Card>
+                      )}
+                    </>
+                  ) : (
+                    <div className="relative">
+                      <div className="select-none pointer-events-none blur-[6px] opacity-60 space-y-4">
+                        <Card className="border-blue-200 bg-blue-50/30">
+                          <CardContent className="p-4">
+                            <h4 className="font-bold text-blue-800 mb-2">เหตุผลโดยละเอียด</h4>
+                            <p className="text-sm text-foreground/80">
+                              {reviewQuestion.detailed_explanation.reason || "เหตุผลโดยละเอียดสำหรับคำตอบที่ถูกต้อง..."}
+                            </p>
+                          </CardContent>
+                        </Card>
+                        <Card className="border-border">
+                          <CardContent className="p-4">
+                            <h4 className="font-bold text-sm mb-2">อธิบายแต่ละตัวเลือก</h4>
+                            <div className="space-y-2 text-sm text-muted-foreground">
+                              <p>A: คำอธิบายตัวเลือก A โดยละเอียด...</p>
+                              <p>B: คำอธิบายตัวเลือก B โดยละเอียด...</p>
+                              <p>C: คำอธิบายตัวเลือก C โดยละเอียด...</p>
+                              <p>D: คำอธิบายตัวเลือก D โดยละเอียด...</p>
+                            </div>
+                          </CardContent>
+                        </Card>
+                      </div>
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <div className="bg-white/95 backdrop-blur-sm border-2 border-brand/30 rounded-2xl p-6 text-center shadow-lg max-w-sm">
+                          <Lock className="h-8 w-8 text-brand mx-auto mb-3" />
+                          <h4 className="font-bold text-lg mb-1">เฉลยละเอียด</h4>
+                          <p className="text-sm text-muted-foreground mb-4">
+                            สมัครสมาชิกเพื่อดูเหตุผลโดยละเอียด คำอธิบายทุกตัวเลือก และสรุปจุดสำคัญ
+                          </p>
+                          <Link
+                            href="/pricing"
+                            className="inline-flex items-center gap-2 bg-brand hover:bg-brand-light text-white px-6 py-2.5 rounded-lg font-medium text-sm transition-colors"
+                          >
+                            สมัครสมาชิก
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  )
                 )}
               </div>
             )}

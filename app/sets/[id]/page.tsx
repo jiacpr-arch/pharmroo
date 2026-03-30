@@ -62,7 +62,7 @@ export default async function SetDetailPage({
       .select({ id: setPurchases.id })
       .from(setPurchases)
       .where(and(eq(setPurchases.user_id, user.id), eq(setPurchases.set_id, id), eq(setPurchases.status, "active")))
-      .get();
+      .then(rows => rows[0]);
     alreadyPurchased = !!purchase;
   }
 

@@ -15,7 +15,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
-  const { plan, slipBase64 } = await req.json();
+  const { plan, slipBase64, invoiceData } = await req.json();
 
   if (!PLANS[plan]) {
     return NextResponse.json({ error: "Invalid plan" }, { status: 400 });
@@ -29,6 +29,14 @@ export async function POST(req: NextRequest) {
     amount: PLANS[plan].price,
     slip_url: slipBase64 || "pending",
     status: "pending",
+    ...(invoiceData?.requested && {
+      invoice_requested: true,
+      invoice_type: invoiceData.type,
+      invoice_name: invoiceData.name,
+      invoice_tax_id: invoiceData.taxId,
+      invoice_address: invoiceData.address,
+      invoice_branch: invoiceData.branch || null,
+    }),
   });
 
   return NextResponse.json({ success: true });

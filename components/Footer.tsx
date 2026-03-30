@@ -47,8 +47,12 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 border-t border-white/10 pt-6 text-center text-sm text-white/50">
-          © {new Date().getFullYear()} ภ.รู้ (PharmRoo) — สงวนลิขสิทธิ์
+        <div className="mt-10 border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-2 text-sm text-white/50">
+          <span>© {new Date().getFullYear()} ภ.รู้ (PharmRoo) — สงวนลิขสิทธิ์</span>
+          <div className="flex gap-4">
+            <Link href="/privacy" className="hover:text-white transition-colors">นโยบายความเป็นส่วนตัว (PDPA)</Link>
+            <Link href="/terms" className="hover:text-white transition-colors">นโยบายการซื้อสินค้า</Link>
+          </div>
         </div>
       </div>
     </footer>

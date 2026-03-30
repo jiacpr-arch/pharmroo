@@ -7,7 +7,8 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { User, Mail, Crown, Calendar, LogOut } from "lucide-react";
+import { User, Mail, Crown, Calendar, LogOut, BarChart3 } from "lucide-react";
+import StudentStats from "@/components/StudentStats";
 
 const membershipLabels: Record<string, string> = {
   free: "ฟรี",
@@ -107,6 +108,14 @@ export default function ProfilePage() {
             )}
           </CardContent>
         </Card>
+
+        {/* Student Stats Dashboard */}
+        <div>
+          <h3 className="text-xl font-bold flex items-center gap-2 mb-4">
+            <BarChart3 className="h-5 w-5 text-brand" /> ผลการทำข้อสอบ
+          </h3>
+          <StudentStats />
+        </div>
 
         <Button
           variant="outline"

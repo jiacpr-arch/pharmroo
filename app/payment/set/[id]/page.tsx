@@ -9,8 +9,9 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import {
   ArrowLeft, Building2, Copy, Check, Upload, ImageIcon,
-  Loader2, CheckCircle, AlertCircle, Package,
+  Loader2, CheckCircle, AlertCircle, Package, CreditCard,
 } from "lucide-react";
+import InvoiceForm, { defaultInvoiceData, type InvoiceData } from "@/components/invoice-form";
 import type { QuestionSet } from "@/lib/types-mcq";
 
 const BANK_INFO = {
@@ -31,6 +32,8 @@ export default function PaymentSetPage({ params }: { params: Promise<{ id: strin
   const [copied, setCopied] = useState(false);
   const [slipFile, setSlipFile] = useState<File | null>(null);
   const [slipPreview, setSlipPreview] = useState<string | null>(null);
+  const [stripeLoading, setStripeLoading] = useState(false);
+  const [invoiceData, setInvoiceData] = useState<InvoiceData>(defaultInvoiceData);
 
   useEffect(() => {
     if (status === "unauthenticated") router.push(`/login?redirect=/payment/set/${id}`);
@@ -61,6 +64,25 @@ export default function PaymentSetPage({ params }: { params: Promise<{ id: strin
     reader.readAsDataURL(file);
   };
 
+  const handleStripeCheckout = async () => {
+    if (!set) return;
+    setStripeLoading(true);
+    setError("");
+    try {
+      const res = await fetch("/api/stripe/checkout", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ type: "set", setId: id, invoiceData }),
+      });
+      const data = await res.json();
+      if (!res.ok) { setError(data.error || "เกิดข้อผิดพลาด"); setStripeLoading(false); return; }
+      window.location.href = data.url;
+    } catch {
+      setError("เกิดข้อผิดพลาด กรุณาลองใหม่");
+      setStripeLoading(false);
+    }
+  };
+
   const handleSubmit = async () => {
     if (!slipFile || !set) return;
     setSubmitting(true);
@@ -69,7 +91,7 @@ export default function PaymentSetPage({ params }: { params: Promise<{ id: strin
     const res = await fetch(`/api/payment/set/${id}`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ slipBase64: slipPreview }),
+      body: JSON.stringify({ slipBase64: slipPreview, invoiceData }),
     });
 
     if (!res.ok) {
@@ -116,6 +138,25 @@ export default function PaymentSetPage({ params }: { params: Promise<{ id: strin
       </Link>
       <h1 className="text-2xl font-bold mb-6">ชำระเงิน</h1>
       <div className="space-y-6">
+        {/* Invoice Form */}
+        <InvoiceForm value={invoiceData} onChange={setInvoiceData} />
+
+        {/* Stripe */}
+        <Card className="border-purple-200 bg-purple-50/30">
+          <CardHeader><h2 className="font-semibold flex items-center gap-2"><CreditCard className="h-5 w-5 text-purple-600" />ชำระด้วยบัตรเครดิต / เดบิต</h2></CardHeader>
+          <CardContent className="space-y-3">
+            <p className="text-sm text-muted-foreground">ชำระผ่าน Stripe — ปลอดภัย เปิดใช้งานทันที รองรับ Visa, Mastercard</p>
+            {error && <div className="flex items-center gap-2 text-sm text-destructive"><AlertCircle className="h-4 w-4" />{error}</div>}
+            <Button className="w-full bg-purple-600 hover:bg-purple-700 text-white" size="lg" onClick={handleStripeCheckout} disabled={stripeLoading}>
+              {stripeLoading ? <><Loader2 className="h-4 w-4 mr-2 animate-spin" />กำลังเปิดหน้าชำระเงิน...</> : <><CreditCard className="h-4 w-4 mr-2" />ชำระผ่าน Stripe ฿{set.price.toLocaleString()}</>}
+            </Button>
+          </CardContent>
+        </Card>
+
+        <div className="flex items-center gap-3">
+          <div className="flex-1 border-t" /><span className="text-sm text-muted-foreground">หรือโอนผ่านธนาคาร</span><div className="flex-1 border-t" />
+        </div>
+
         <Card>
           <CardHeader><h2 className="font-semibold">สรุปคำสั่งซื้อ</h2></CardHeader>
           <CardContent>

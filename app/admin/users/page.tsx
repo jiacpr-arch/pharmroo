@@ -8,7 +8,8 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { Loader2, Shield, ArrowLeft, Users, Crown, Search, Save, UserCheck, UserX } from "lucide-react";
+import { Loader2, Shield, ArrowLeft, Users, Crown, Search, Save, UserCheck, UserX, BarChart3 } from "lucide-react";
+import UserStatsPanel from "@/components/admin/UserStatsPanel";
 
 interface UserRow {
   id: string;
@@ -37,6 +38,7 @@ export default function AdminUsersPage() {
   const [searchQuery, setSearchQuery] = useState("");
   const [savingId, setSavingId] = useState<string | null>(null);
   const [edits, setEdits] = useState<Record<string, { membership_type: string; membership_expires_at: string; role: string }>>({});
+  const [expandedStatsId, setExpandedStatsId] = useState<string | null>(null);
 
   const user = session?.user as { role?: string } | undefined;
   const isAdmin = user?.role === "admin";
@@ -179,8 +181,16 @@ export default function AdminUsersPage() {
                     <Button className="bg-brand hover:bg-brand-light text-white gap-1" size="sm" disabled={!changed || savingId === u.id} onClick={() => handleSave(u.id)}>
                       {savingId === u.id ? <Loader2 className="h-4 w-4 animate-spin" /> : <Save className="h-4 w-4" />} บันทึก
                     </Button>
+                    <Button variant="outline" size="sm" className="gap-1" onClick={() => setExpandedStatsId(expandedStatsId === u.id ? null : u.id)}>
+                      <BarChart3 className="h-4 w-4" /> {expandedStatsId === u.id ? "ซ่อนสถิติ" : "ดูสถิติ"}
+                    </Button>
                   </div>
                 </div>
+                {expandedStatsId === u.id && (
+                  <div className="mt-4">
+                    <UserStatsPanel userId={u.id} userName={u.name} userEmail={u.email} onClose={() => setExpandedStatsId(null)} />
+                  </div>
+                )}
               </CardContent>
             </Card>
           );

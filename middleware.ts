@@ -1,8 +1,10 @@
-import { auth } from "@/lib/auth";
-import { NextResponse } from "next/server";
+import NextAuth from "next-auth";
+import { authConfig } from "@/lib/auth.config";
+
+const { auth } = NextAuth(authConfig);
 
 export default auth(() => {
-  return NextResponse.next();
+  return undefined; // allow all requests through
 });
 
 export const config = {

@@ -10,7 +10,7 @@ export async function GET(
   { params }: { params: Promise<{ id: string }> }
 ) {
   const { id } = await params;
-  const set = await db.select().from(questionSets).where(eq(questionSets.id, id)).get();
+  const set = await db.select().from(questionSets).where(eq(questionSets.id, id)).then(rows => rows[0]);
   if (!set || !set.is_active) {
     return NextResponse.json({ error: "Not found" }, { status: 404 });
   }
@@ -33,7 +33,7 @@ export async function POST(
     .select()
     .from(questionSets)
     .where(eq(questionSets.id, id))
-    .get();
+    .then(rows => rows[0]);
 
   if (!set || !set.is_active) {
     return NextResponse.json({ error: "Set not found" }, { status: 404 });

@@ -1,7 +1,6 @@
 import { db } from "./index";
 import { mcqAttempts, mcqSessions } from "./schema";
 import { eq, sql } from "drizzle-orm";
-import { randomUUID } from "crypto";
 import type { McqAttempt, McqSession } from "../types-mcq";
 
 export async function saveMcqAttempt(attempt: {
@@ -13,7 +12,7 @@ export async function saveMcqAttempt(attempt: {
   mode: "practice" | "mock";
   session_id?: string | null;
 }): Promise<McqAttempt | null> {
-  const id = randomUUID();
+  const id = crypto.randomUUID();
   await db.insert(mcqAttempts).values({
     id,
     user_id: attempt.user_id,
@@ -25,7 +24,7 @@ export async function saveMcqAttempt(attempt: {
     session_id: attempt.session_id ?? null,
   });
 
-  const row = await db.select().from(mcqAttempts).where(eq(mcqAttempts.id, id)).get();
+  const row = await db.select().from(mcqAttempts).where(eq(mcqAttempts.id, id)).then(rows => rows[0]);
   if (!row) return null;
   return toMcqAttempt(row);
 }
@@ -39,7 +38,7 @@ export async function createMcqSession(session: {
   total_questions: number;
   time_limit_minutes?: number | null;
 }): Promise<McqSession | null> {
-  const id = randomUUID();
+  const id = crypto.randomUUID();
   await db.insert(mcqSessions).values({
     id,
     user_id: session.user_id,
@@ -52,7 +51,7 @@ export async function createMcqSession(session: {
     time_limit_minutes: session.time_limit_minutes ?? null,
   });
 
-  const row = await db.select().from(mcqSessions).where(eq(mcqSessions.id, id)).get();
+  const row = await db.select().from(mcqSessions).where(eq(mcqSessions.id, id)).then(rows => rows[0]);
   if (!row) return null;
   return toMcqSession(row);
 }
@@ -62,7 +61,7 @@ export async function updateMcqSession(
   updates: { correct_count?: number; completed_at?: string }
 ): Promise<McqSession | null> {
   await db.update(mcqSessions).set(updates).where(eq(mcqSessions.id, id));
-  const row = await db.select().from(mcqSessions).where(eq(mcqSessions.id, id)).get();
+  const row = await db.select().from(mcqSessions).where(eq(mcqSessions.id, id)).then(rows => rows[0]);
   if (!row) return null;
   return toMcqSession(row);
 }
