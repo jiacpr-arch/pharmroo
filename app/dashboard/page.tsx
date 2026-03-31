@@ -7,8 +7,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import { Crown, Sparkles } from "lucide-react";
-import StatsOverview from "@/components/dashboard/StatsOverview";
+import { Crown, Sparkles, Target, TrendingUp, BookOpen, Clock } from "lucide-react";
 import QuickActions from "@/components/dashboard/QuickActions";
 import SubjectProgress from "@/components/dashboard/SubjectProgress";
 import WeakAreas from "@/components/dashboard/WeakAreas";
@@ -57,17 +56,138 @@ const membershipLabels: Record<string, string> = {
   yearly: "รายปี",
 };
 
-const membershipBadgeClass: Record<string, string> = {
-  free: "bg-gray-100 text-gray-600",
-  monthly: "bg-brand/10 text-brand",
-  yearly: "bg-amber-100 text-amber-700",
-};
-
 function getGreeting() {
   const hour = new Date().getHours();
   if (hour < 12) return "อรุณสวัสดิ์";
   if (hour < 17) return "สวัสดีตอนบ่าย";
   return "สวัสดีตอนเย็น";
+}
+
+function formatTime(seconds: number) {
+  if (seconds < 60) return `${seconds} วิ`;
+  const m = Math.floor(seconds / 60);
+  if (m < 60) return `${m} นาที`;
+  const h = Math.floor(m / 60);
+  return `${h} ชม. ${m % 60} นาที`;
+}
+
+function HeroBanner({
+  userName,
+  membershipType,
+  membershipExpiresAt,
+  overall,
+}: {
+  userName: string;
+  membershipType: string;
+  membershipExpiresAt?: string | null;
+  overall?: OverallStats;
+}) {
+  const isYearly = membershipType === "yearly";
+  const isMonthly = membershipType === "monthly";
+  const isPaid = isYearly || isMonthly;
+
+  return (
+    <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#0D9488] via-[#0f766e] to-[#134E4A] text-white px-6 py-8 sm:px-8">
+      {/* decorative circles */}
+      <div className="absolute -top-10 -right-10 w-48 h-48 rounded-full bg-white/5" />
+      <div className="absolute -bottom-8 -left-8 w-36 h-36 rounded-full bg-white/5" />
+      <div className="absolute top-4 right-24 w-20 h-20 rounded-full bg-white/5" />
+
+      <div className="relative">
+        {/* top row */}
+        <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
+          <div>
+            <p className="text-teal-200 text-sm font-medium">{getGreeting()} 👋</p>
+            <h1 className="text-3xl sm:text-4xl font-bold mt-0.5">{userName}</h1>
+            <div className="flex items-center gap-2 mt-2 flex-wrap">
+              <Crown className="h-4 w-4 text-amber-300" />
+              <span
+                className={`text-xs font-semibold px-2.5 py-0.5 rounded-full ${
+                  isYearly
+                    ? "bg-amber-400/20 text-amber-200 border border-amber-400/30"
+                    : isMonthly
+                    ? "bg-white/20 text-white border border-white/20"
+                    : "bg-white/10 text-teal-100 border border-white/10"
+                }`}
+              >
+                {membershipLabels[membershipType] ?? membershipType}
+              </span>
+              {membershipExpiresAt && isPaid && (
+                <span className="text-xs text-teal-200">
+                  หมดอายุ{" "}
+                  {new Date(membershipExpiresAt).toLocaleDateString("th-TH", {
+                    day: "numeric",
+                    month: "short",
+                    year: "numeric",
+                  })}
+                </span>
+              )}
+            </div>
+          </div>
+
+          {!isPaid && (
+            <Link href="/pricing" className="shrink-0">
+              <Button
+                size="sm"
+                className="bg-white text-brand hover:bg-teal-50 gap-1.5 font-semibold shadow"
+              >
+                <Sparkles className="h-4 w-4" />
+                อัปเกรดแพ็กเกจ
+              </Button>
+            </Link>
+          )}
+        </div>
+
+        {/* stats inline */}
+        {overall && (
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-6">
+            {[
+              {
+                icon: Target,
+                value: overall.total_attempts.toLocaleString(),
+                label: "ข้อที่ทำ",
+              },
+              {
+                icon: TrendingUp,
+                value: `${overall.accuracy_pct}%`,
+                label: "ความถูกต้อง",
+                highlight:
+                  overall.accuracy_pct >= 75
+                    ? "text-green-300"
+                    : overall.accuracy_pct >= 60
+                    ? "text-amber-300"
+                    : "text-red-300",
+              },
+              {
+                icon: BookOpen,
+                value: overall.total_sessions.toLocaleString(),
+                label: "ครั้งที่สอบ",
+              },
+              {
+                icon: Clock,
+                value: formatTime(overall.total_time_seconds),
+                label: "เวลาทั้งหมด",
+              },
+            ].map((s, i) => {
+              const Icon = s.icon;
+              return (
+                <div
+                  key={i}
+                  className="bg-white/10 backdrop-blur-sm rounded-xl px-4 py-3 border border-white/10"
+                >
+                  <Icon className="h-4 w-4 text-teal-200 mb-1.5" />
+                  <p className={`text-xl font-bold leading-tight ${s.highlight ?? "text-white"}`}>
+                    {s.value}
+                  </p>
+                  <p className="text-xs text-teal-200 mt-0.5">{s.label}</p>
+                </div>
+              );
+            })}
+          </div>
+        )}
+      </div>
+    </div>
+  );
 }
 
 function EmptyState() {
@@ -139,57 +259,21 @@ export default function DashboardPage() {
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-8 sm:px-6 lg:px-8">
-      {/* Header */}
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
-        <div>
-          <p className="text-sm text-muted-foreground">{getGreeting()} 👋</p>
-          <h1 className="text-3xl font-bold text-foreground">
-            {user.name ?? "นักเรียน"}
-          </h1>
-          <div className="flex items-center gap-2 mt-1.5">
-            <Crown className="h-4 w-4 text-brand" />
-            <Badge
-              className={`text-xs ${
-                membershipBadgeClass[membershipType] ??
-                membershipBadgeClass.free
-              }`}
-            >
-              {membershipLabels[membershipType] ?? membershipType}
-            </Badge>
-            {user.membership_expires_at && membershipType !== "free" && (
-              <span className="text-xs text-muted-foreground">
-                หมดอายุ{" "}
-                {new Date(user.membership_expires_at).toLocaleDateString(
-                  "th-TH",
-                  { day: "numeric", month: "short", year: "numeric" }
-                )}
-              </span>
-            )}
-          </div>
-        </div>
+      <div className="space-y-6">
+        {/* Hero Banner with inline stats */}
+        <HeroBanner
+          userName={user.name ?? "นักเรียน"}
+          membershipType={membershipType}
+          membershipExpiresAt={user.membership_expires_at}
+          overall={hasData ? stats.overall : undefined}
+        />
 
-        {membershipType === "free" && (
-          <Link href="/pricing">
-            <Button
-              size="sm"
-              className="bg-brand hover:bg-brand-light text-white gap-1.5"
-            >
-              <Sparkles className="h-4 w-4" />
-              อัปเกรดแพ็กเกจ
-            </Button>
-          </Link>
-        )}
-      </div>
-
-      <div className="space-y-8">
-        {/* Quick Actions — always shown */}
+        {/* Quick Actions */}
         <QuickActions />
 
-        {/* Stats & progress — only when data exists */}
+        {/* Content — only when data exists */}
         {hasData ? (
           <>
-            <StatsOverview overall={stats.overall} />
-
             {stats.weakAreas.length > 0 && (
               <WeakAreas weakAreas={stats.weakAreas} />
             )}
