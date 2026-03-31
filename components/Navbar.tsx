@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, User, LogOut } from "lucide-react";
+import { Menu, X, LayoutDashboard, LogOut } from "lucide-react";
 import { createClient } from "@/lib/supabase/client";
 import type { User as SupabaseUser } from "@supabase/supabase-js";
 
@@ -67,10 +67,10 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-3">
           {user ? (
             <>
-              <Link href="/profile">
+              <Link href="/dashboard">
                 <Button variant="ghost" size="sm" className="gap-2">
-                  <User className="h-4 w-4" />
-                  โปรไฟล์
+                  <LayoutDashboard className="h-4 w-4" />
+                  Dashboard
                 </Button>
               </Link>
               <Button
@@ -133,11 +133,11 @@ export default function Navbar() {
               {user ? (
                 <>
                   <Link
-                    href="/profile"
+                    href="/dashboard"
                     onClick={() => setMobileOpen(false)}
                     className="block rounded-md px-3 py-2 text-sm font-medium text-muted-foreground hover:bg-muted"
                   >
-                    โปรไฟล์
+                    Dashboard
                   </Link>
                   <button
                     onClick={handleLogout}
