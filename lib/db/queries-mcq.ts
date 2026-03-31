@@ -204,11 +204,109 @@ export async function getStudentRecentSessions(userId: string, limit = 10) {
   }));
 }
 
+export async function getStudentStreak(userId: string): Promise<number> {
+  const result = await db.execute(sql`
+    WITH daily AS (
+      SELECT DISTINCT DATE(created_at::timestamp) AS day
+      FROM mcq_attempts
+      WHERE user_id = ${userId}
+    ),
+    with_gaps AS (
+      SELECT day, LAG(day, 1) OVER (ORDER BY day ASC) AS prev_day
+      FROM daily
+    ),
+    grouped AS (
+      SELECT day,
+        SUM(CASE WHEN prev_day IS NULL OR day - prev_day > 1 THEN 1 ELSE 0 END)
+          OVER (ORDER BY day ASC) AS grp
+      FROM with_gaps
+    ),
+    group_stats AS (
+      SELECT grp, COUNT(*) AS days, MAX(day) AS last_day
+      FROM grouped
+      GROUP BY grp
+    )
+    SELECT COALESCE(
+      (SELECT days FROM group_stats
+       WHERE last_day >= CURRENT_DATE - 1
+       ORDER BY last_day DESC LIMIT 1),
+      0
+    ) AS streak
+  `);
+  const row = result.rows[0] as { streak: number } | undefined;
+  return Number(row?.streak ?? 0);
+}
+
+export async function getStudentAccuracyTrend(userId: string) {
+  const result = await db.execute(sql`
+    SELECT
+      DATE_TRUNC('week', created_at::timestamp)::date AS week_start,
+      COUNT(*)::int AS total_attempts,
+      SUM(CASE WHEN is_correct THEN 1 ELSE 0 END)::int AS correct_count,
+      ROUND(SUM(CASE WHEN is_correct THEN 1 ELSE 0 END) * 100.0 / COUNT(*), 1)::float AS accuracy
+    FROM mcq_attempts
+    WHERE user_id = ${userId}
+    GROUP BY week_start
+    ORDER BY week_start ASC
+    LIMIT 12
+  `);
+  return (result.rows as Array<{
+    week_start: string;
+    total_attempts: number;
+    correct_count: number;
+    accuracy: number;
+  }>).map((r) => ({
+    week_start: String(r.week_start).slice(0, 10),
+    total_attempts: Number(r.total_attempts),
+    correct_count: Number(r.correct_count),
+    accuracy: Number(r.accuracy),
+  }));
+}
+
+export async function getStudentVsGlobalAvg(userId: string) {
+  const result = await db.execute(sql`
+    SELECT
+      s.id AS subject_id,
+      s.name_th AS subject_name_th,
+      s.icon AS subject_icon,
+      ROUND(
+        SUM(CASE WHEN a.user_id = ${userId} AND a.is_correct THEN 1 ELSE 0 END) * 100.0 /
+        NULLIF(SUM(CASE WHEN a.user_id = ${userId} THEN 1 ELSE 0 END), 0)
+      )::int AS user_accuracy,
+      ROUND(
+        SUM(CASE WHEN a.is_correct THEN 1 ELSE 0 END) * 100.0 / COUNT(*)
+      )::int AS global_accuracy
+    FROM mcq_subjects s
+    INNER JOIN mcq_questions q ON q.subject_id = s.id AND q.status = 'active'
+    INNER JOIN mcq_attempts a ON a.question_id = q.id
+    GROUP BY s.id, s.name_th, s.icon
+    HAVING SUM(CASE WHEN a.user_id = ${userId} THEN 1 ELSE 0 END) > 0
+    ORDER BY s.name_th
+  `);
+  return (result.rows as Array<{
+    subject_id: string;
+    subject_name_th: string;
+    subject_icon: string;
+    user_accuracy: number;
+    global_accuracy: number;
+  }>).map((r) => ({
+    subject_id: String(r.subject_id),
+    subject_name_th: String(r.subject_name_th),
+    subject_icon: String(r.subject_icon),
+    user_accuracy: Number(r.user_accuracy ?? 0),
+    global_accuracy: Number(r.global_accuracy ?? 0),
+    diff: Number(r.user_accuracy ?? 0) - Number(r.global_accuracy ?? 0),
+  }));
+}
+
 export async function getStudentStatsForAdmin(userId: string) {
-  const [overall, subjects, recentSessions] = await Promise.all([
+  const [overall, subjects, recentSessions, streak, trend, comparison] = await Promise.all([
     getStudentOverallStats(userId),
     getStudentSubjectBreakdown(userId),
     getStudentRecentSessions(userId),
+    getStudentStreak(userId),
+    getStudentAccuracyTrend(userId),
+    getStudentVsGlobalAvg(userId),
   ]);
 
   return {
@@ -216,6 +314,9 @@ export async function getStudentStatsForAdmin(userId: string) {
     subjects,
     weakAreas: subjects.filter((s) => s.accuracy_pct < 60),
     recentSessions,
+    streak,
+    trend,
+    comparison,
   };
 }
 

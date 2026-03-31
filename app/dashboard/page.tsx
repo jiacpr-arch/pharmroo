@@ -7,6 +7,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { AccuracyTrendChart } from "@/components/AccuracyTrendChart";
 import {
   Loader2,
   Target,
@@ -17,6 +18,7 @@ import {
   BarChart3,
   ArrowRight,
   Flame,
+  Users,
 } from "lucide-react";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
@@ -51,11 +53,30 @@ interface RecentSession {
   subject_icon: string | null;
 }
 
+interface AccuracyTrend {
+  week_start: string;
+  total_attempts: number;
+  correct_count: number;
+  accuracy: number;
+}
+
+interface SubjectComparison {
+  subject_id: string;
+  subject_name_th: string;
+  subject_icon: string;
+  user_accuracy: number;
+  global_accuracy: number;
+  diff: number;
+}
+
 interface StatsData {
   overall: OverallStats;
   subjects: SubjectBreakdown[];
   weakAreas: SubjectBreakdown[];
   recentSessions: RecentSession[];
+  streak: number;
+  trend: AccuracyTrend[];
+  comparison: SubjectComparison[];
 }
 
 // ─── Component ───────────────────────────────────────────────────────────────
@@ -93,6 +114,9 @@ export default function DashboardPage() {
   const subjects = data?.subjects ?? [];
   const weakAreas = data?.weakAreas ?? [];
   const recentSessions = data?.recentSessions ?? [];
+  const streak = data?.streak ?? 0;
+  const trend = data?.trend ?? [];
+  const comparison = data?.comparison ?? [];
 
   if (totalAttempts === 0) {
     return (
@@ -154,15 +178,15 @@ export default function DashboardPage() {
           </CardContent>
         </Card>
 
-        <Card>
+        <Card className={streak >= 3 ? "border-orange-300" : ""}>
           <CardContent className="pt-6">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-lg bg-orange-100 flex items-center justify-center">
-                <Flame className="h-5 w-5 text-orange-400" />
+                <Flame className={`h-5 w-5 ${streak >= 3 ? "text-orange-500" : "text-orange-300"}`} />
               </div>
               <div>
-                <p className="text-2xl font-bold">{overall?.total_sessions ?? 0}</p>
-                <p className="text-xs text-muted-foreground">ครั้งที่สอบ</p>
+                <p className="text-2xl font-bold">{streak}</p>
+                <p className="text-xs text-muted-foreground">วันติดต่อกัน</p>
               </div>
             </div>
           </CardContent>
@@ -232,6 +256,61 @@ export default function DashboardPage() {
                 </div>
               ))}
             </div>
+          </CardContent>
+        </Card>
+      )}
+
+      {/* ── Comparison vs Global Average ──────────────────────────────── */}
+      {comparison.length > 0 && (
+        <Card className="mb-8">
+          <CardHeader>
+            <CardTitle className="text-base flex items-center gap-2">
+              <Users className="h-5 w-5 text-muted-foreground" />
+              เปรียบเทียบกับ avg ผู้ใช้ทั้งหมด
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-2">
+              {comparison.map((c) => (
+                <div
+                  key={c.subject_id}
+                  className="flex items-center gap-3 rounded-lg border p-2.5"
+                >
+                  <span className="text-lg w-7 text-center shrink-0">{c.subject_icon}</span>
+                  <p className="text-sm flex-1 truncate">{c.subject_name_th}</p>
+                  <div className="flex items-center gap-2 shrink-0">
+                    <span className="text-sm font-mono text-muted-foreground">
+                      avg {c.global_accuracy}%
+                    </span>
+                    <span className="text-sm font-bold">→ {c.user_accuracy}%</span>
+                    <Badge
+                      className={`text-xs min-w-[52px] justify-center ${
+                        c.diff > 0
+                          ? "bg-green-100 text-green-700"
+                          : c.diff < 0
+                          ? "bg-red-100 text-red-700"
+                          : "bg-gray-100 text-gray-600"
+                      }`}
+                    >
+                      {c.diff > 0 ? "+" : ""}
+                      {c.diff}%
+                    </Badge>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+      )}
+
+      {/* ── Accuracy Trend Chart ──────────────────────────────────────── */}
+      {trend.length >= 2 && (
+        <Card className="mb-8">
+          <CardHeader>
+            <CardTitle className="text-base">แนวโน้มความถูกต้องรายสัปดาห์</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <AccuracyTrendChart data={trend} />
           </CardContent>
         </Card>
       )}
