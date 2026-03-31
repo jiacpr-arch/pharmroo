@@ -13,6 +13,8 @@ const navLinks = [
   { href: "/ple", label: "PLE Exam" },
   { href: "/sets", label: "ชุดข้อสอบ" },
   { href: "/pricing", label: "แพ็กเกจ" },
+  { href: "/dashboard", label: "Dashboard" },
+  { href: "/challenges", label: "Challenges" },
 ];
 
 export default function Navbar() {
@@ -43,7 +45,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 font-bold text-lg">
           <span className="text-2xl">💊</span>
-          <span className="text-brand-dark">ภ.รู้</span>
+          <span className="text-brand-dark">ฟาร์มรู้</span>
         </Link>
 
         {/* Desktop nav */}
