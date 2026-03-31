@@ -20,24 +20,24 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "PharmRoo (ภ.รู้) — แพลตฟอร์มข้อสอบใบประกอบวิชาชีพเภสัชกรรม",
-    template: "%s | PharmRoo ภ.รู้",
+    default: "ฟาร์มรู้ PharmRu — แพลตฟอร์มข้อสอบใบประกอบวิชาชีพเภสัชกรรม",
+    template: "%s | ฟาร์มรู้ PharmRu",
   },
   description:
-    "เตรียมสอบใบประกอบวิชาชีพเภสัชกรรม PLE-PC PLE-CC1 ออนไลน์ ครอบคลุมทุกหมวดวิชา Pharmacotherapy เทคโนโลยีเภสัชกรรม เภสัชวิเคราะห์ เภสัชจลนศาสตร์ กฎหมายยา พร้อมเฉลยละเอียด",
-  metadataBase: new URL("https://pharma.morroo.com"),
+    "เตรียมสอบใบประกอบวิชาชีพเภสัชกรรม PLE-PC PLE-CC1 ออนไลน์ ครอบคลุมทุกหมวดวิชา เภสัชเคมี เภสัชวิทยา เภสัชกรรมคลินิก กฎหมายเภสัชกรรม สมุนไพร พร้อมเฉลยละเอียด",
+  metadataBase: new URL("https://pharmru.com"),
   openGraph: {
-    title: "PharmRoo (ภ.รู้) — แพลตฟอร์มข้อสอบเภสัชกรรม",
+    title: "ฟาร์มรู้ PharmRu — แพลตฟอร์มข้อสอบเภสัชกรรม",
     description:
       "เตรียมสอบ PLE เภสัชกรรม ข้อสอบ MCQ ออนไลน์ ครบทุกหมวด พร้อมเฉลยละเอียด",
-    url: "https://pharma.morroo.com",
-    siteName: "PharmRoo ภ.รู้",
+    url: "https://pharmru.com",
+    siteName: "ฟาร์มรู้ PharmRu",
     locale: "th_TH",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "PharmRoo (ภ.รู้)",
+    title: "ฟาร์มรู้ PharmRu",
     description: "แพลตฟอร์มข้อสอบใบประกอบวิชาชีพเภสัชกรรม",
   },
 };
