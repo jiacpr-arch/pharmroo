@@ -5,31 +5,14 @@ import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { AccuracyTrendChart } from "@/components/AccuracyTrendChart";
 import {
-  Loader2,
-  Target,
-  Clock,
-  TrendingUp,
-  AlertTriangle,
-  BookOpen,
-  BarChart3,
-  ArrowRight,
-  Flame,
-  Users,
+  Loader2, Zap, AlertTriangle, Trophy, Star,
+  CheckSquare, Plus, Trash2, ChevronRight, Flame,
+  ArrowRight, Lock, CheckCircle,
 } from "lucide-react";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
-
-interface OverallStats {
-  total_attempts: number;
-  correct_count: number;
-  accuracy_pct: number;
-  total_time_seconds: number;
-  total_sessions: number;
-}
 
 interface SubjectBreakdown {
   subject_id: string;
@@ -43,11 +26,9 @@ interface SubjectBreakdown {
 interface RecentSession {
   id: string;
   mode: string;
-  exam_type: string;
   total_questions: number;
   correct_count: number;
   pct: number;
-  completed_at: string | null;
   created_at: string;
   subject_name_th: string | null;
   subject_icon: string | null;
@@ -70,7 +51,13 @@ interface SubjectComparison {
 }
 
 interface StatsData {
-  overall: OverallStats;
+  overall: {
+    total_attempts: number;
+    correct_count: number;
+    accuracy_pct: number;
+    total_time_seconds: number;
+    total_sessions: number;
+  };
   subjects: SubjectBreakdown[];
   weakAreas: SubjectBreakdown[];
   recentSessions: RecentSession[];
@@ -79,347 +66,500 @@ interface StatsData {
   comparison: SubjectComparison[];
 }
 
-// ─── Component ───────────────────────────────────────────────────────────────
+interface StudyTask { id: string; text: string; done: boolean; }
+
+// ─── Rank system ─────────────────────────────────────────────────────────────
+
+const RANKS = [
+  { min: 0,    max: 99,       label: "Student นศภ.",     short: "Student",    icon: "📖", bg: "bg-emerald-600" },
+  { min: 100,  max: 499,      label: "Trainee ฝึกงาน",   short: "Trainee",    icon: "📋", bg: "bg-blue-600" },
+  { min: 500,  max: 999,      label: "Pharmacist ภ.บ.",  short: "Pharmacist", icon: "💊", bg: "bg-purple-600" },
+  { min: 1000, max: Infinity, label: "Specialist ภ.ม.",  short: "Specialist", icon: "🧪", bg: "bg-amber-500" },
+] as const;
+
+function getRank(xp: number) {
+  return RANKS.find((r) => xp >= r.min && xp <= r.max) ?? RANKS[0];
+}
+
+function xpToNextRank(xp: number) {
+  const rank = getRank(xp);
+  if (rank.max === Infinity) return null;
+  return { current: xp - rank.min, total: rank.max - rank.min + 1, next: rank.max + 1 };
+}
+
+// ─── Radar Chart ─────────────────────────────────────────────────────────────
+
+function RadarChart({ subjects }: { subjects: SubjectBreakdown[] }) {
+  const items = subjects.slice(0, 10);
+  const N = items.length;
+  if (N < 3) return (
+    <div className="flex items-center justify-center h-48 text-sm text-muted-foreground">
+      ทำข้อสอบอย่างน้อย 3 สาขาเพื่อดู Radar Chart
+    </div>
+  );
+
+  const CX = 160, CY = 155, R = 100, LABEL_R = R + 28;
+  const angle = (i: number) => (2 * Math.PI * i / N) - Math.PI / 2;
+  const pt = (i: number, val: number) => ({
+    x: CX + (val / 100) * R * Math.cos(angle(i)),
+    y: CY + (val / 100) * R * Math.sin(angle(i)),
+  });
+  const outer = (i: number) => ({
+    x: CX + R * Math.cos(angle(i)),
+    y: CY + R * Math.sin(angle(i)),
+  });
+  const label = (i: number) => ({
+    x: CX + LABEL_R * Math.cos(angle(i)),
+    y: CY + LABEL_R * Math.sin(angle(i)),
+  });
+
+  const gridPoly = (level: number) =>
+    items.map((_, i) => { const p = pt(i, level); return `${p.x.toFixed(1)},${p.y.toFixed(1)}`; }).join(" ");
+
+  const valuePoly = items
+    .map((d, i) => { const p = pt(i, d.accuracy_pct); return `${p.x.toFixed(1)},${p.y.toFixed(1)}`; })
+    .join(" ");
+
+  return (
+    <svg viewBox="0 0 320 310" className="w-full max-h-72">
+      {[25, 50, 75, 100].map((lv) => (
+        <polygon key={lv} points={gridPoly(lv)} fill="none" stroke="#e5e7eb" strokeWidth="1" />
+      ))}
+      {items.map((_, i) => {
+        const o = outer(i);
+        return <line key={i} x1={CX} y1={CY} x2={o.x.toFixed(1)} y2={o.y.toFixed(1)} stroke="#e5e7eb" strokeWidth="1" />;
+      })}
+      <polygon points={valuePoly} fill="rgba(16,185,129,0.18)" stroke="#10b981" strokeWidth="2" />
+      {items.map((d, i) => {
+        const p = pt(i, d.accuracy_pct);
+        return <circle key={i} cx={p.x.toFixed(1)} cy={p.y.toFixed(1)} r="3" fill="#10b981" />;
+      })}
+      {items.map((d, i) => {
+        const lp = label(i);
+        const name = d.name_th.length > 8 ? d.name_th.slice(0, 7) + "…" : d.name_th;
+        return (
+          <text key={i} x={lp.x.toFixed(1)} y={lp.y.toFixed(1)} textAnchor="middle"
+            dominantBaseline="middle" fontSize="10" fill="#6b7280">
+            {d.icon} {name}
+          </text>
+        );
+      })}
+    </svg>
+  );
+}
+
+// ─── Challenges data (same as /challenges page) ───────────────────────────────
+
+const CHALLENGES = [
+  { id: "daily_10",         title: "ทำ 10 ข้อวันนี้",      icon: "📝", xp: 50,  href: "/ple/practice" },
+  { id: "daily_accuracy",   title: "แม่นยำ 80%+",           icon: "🎯", xp: 100, href: "/ple/practice" },
+  { id: "daily_mock",       title: "สอบ Mock วันนี้",       icon: "📋", xp: 150, href: "/ple/mock" },
+  { id: "week_streak_5",    title: "5 วันติดต่อกัน",        icon: "🔥", xp: 300, href: "/ple/practice" },
+  { id: "week_all_subjects", title: "ครบทุกสาขา",           icon: "🌐", xp: 500, href: "/ple/practice" },
+  { id: "week_100",         title: "100 ข้อในสัปดาห์",      icon: "💯", xp: 400, href: "/ple/practice" },
+  { id: "special_pharma_chem", title: "เภสัชเคมีมาสเตอร์",  icon: "⚗️", xp: 600, href: "/ple/practice?subject=pharma_chem" },
+  { id: "special_pharm_law",   title: "กฎหมายไม่ง้อจด",    icon: "⚖️", xp: 400, href: "/ple/practice?subject=pharm_law" },
+  { id: "special_mock_pass",   title: "ผ่าน Mock ครั้งแรก", icon: "🏅", xp: 800, href: "/ple/mock" },
+  { id: "special_500",         title: "นักศึกษาจริงจัง",    icon: "💊", xp: 1000, href: "/ple/practice" },
+];
+
+// ─── Tab type ────────────────────────────────────────────────────────────────
+
+type Tab = "overview" | "weak" | "challenge" | "badge";
+
+// ─── Page ─────────────────────────────────────────────────────────────────────
 
 export default function DashboardPage() {
-  const { status } = useSession();
+  const { data: session, status } = useSession();
   const router = useRouter();
+
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState<StatsData | null>(null);
+  const [tab, setTab] = useState<Tab>("overview");
+  const [tasks, setTasks] = useState<StudyTask[]>([]);
+  const [newTask, setNewTask] = useState("");
+  const [completedChallenges, setCompletedChallenges] = useState<Set<string>>(new Set());
+  const [claiming, setClaiming] = useState<string | null>(null);
+  const [claimMsg, setClaimMsg] = useState<{ ok: boolean; text: string } | null>(null);
 
   useEffect(() => {
-    if (status === "unauthenticated") {
-      router.push("/login");
-      return;
-    }
+    if (status === "unauthenticated") { router.push("/login"); return; }
     if (status !== "authenticated") return;
-
-    fetch("/api/mcq/stats")
-      .then((r) => r.json())
-      .then(setData)
-      .catch(() => {})
-      .finally(() => setLoading(false));
+    Promise.all([
+      fetch("/api/mcq/stats").then((r) => r.json()),
+      fetch("/api/challenges").then((r) => r.json()),
+    ]).then(([stats, ch]) => {
+      setData(stats);
+      setCompletedChallenges(new Set(ch.completed ?? []));
+    }).catch(() => {}).finally(() => setLoading(false));
   }, [status, router]);
 
+  useEffect(() => {
+    try { const s = localStorage.getItem("pharmru-plan-tasks"); if (s) setTasks(JSON.parse(s)); } catch {}
+  }, []);
+  useEffect(() => {
+    try { localStorage.setItem("pharmru-plan-tasks", JSON.stringify(tasks)); } catch {}
+  }, [tasks]);
+
   if (status === "loading" || loading) {
-    return (
-      <div className="flex items-center justify-center min-h-[60vh]">
-        <Loader2 className="h-8 w-8 animate-spin text-brand" />
-      </div>
-    );
+    return <div className="flex items-center justify-center min-h-[60vh]"><Loader2 className="h-8 w-8 animate-spin text-brand" /></div>;
   }
 
-  const overall = data?.overall;
-  const totalAttempts = overall?.total_attempts ?? 0;
+  const user = session?.user as { name?: string } | undefined;
+  const displayName = user?.name || "นักศึกษาเภสัชศาสตร์";
+  const xp = data?.overall.total_attempts ?? 0;
+  const rank = getRank(xp);
+  const xpInfo = xpToNextRank(xp);
+  const streak = data?.streak ?? 0;
+  const accuracy = data?.overall.accuracy_pct ?? 0;
   const subjects = data?.subjects ?? [];
   const weakAreas = data?.weakAreas ?? [];
-  const recentSessions = data?.recentSessions ?? [];
-  const streak = data?.streak ?? 0;
-  const trend = data?.trend ?? [];
-  const comparison = data?.comparison ?? [];
 
-  if (totalAttempts === 0) {
-    return (
-      <div className="mx-auto max-w-4xl px-4 py-16 text-center">
-        <BarChart3 className="h-16 w-16 text-muted-foreground mx-auto mb-4" />
-        <h1 className="text-2xl font-bold mb-2">ยังไม่มีข้อมูลการเรียน</h1>
-        <p className="text-muted-foreground mb-6">
-          เริ่มทำข้อสอบเพื่อดูสถิติและจุดอ่อนของคุณ
-        </p>
+  // Study plan helpers
+  const addTask = () => {
+    const t = newTask.trim(); if (!t) return;
+    setTasks((p) => [...p, { id: Date.now().toString(), text: t, done: false }]);
+    setNewTask("");
+  };
+
+  const handleClaim = async (id: string) => {
+    setClaiming(id); setClaimMsg(null);
+    try {
+      const res = await fetch("/api/challenges", {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ challenge_id: id }),
+      });
+      if (res.ok) {
+        setCompletedChallenges((p) => new Set([...p, id]));
+        const def = CHALLENGES.find((c) => c.id === id);
+        setClaimMsg({ ok: true, text: `🎉 สำเร็จ! +${def?.xp ?? 0} XP` });
+      } else {
+        setClaimMsg({ ok: false, text: "ยังไม่ครบเงื่อนไข ลองทำเพิ่มก่อนนะ" });
+      }
+    } catch { setClaimMsg({ ok: false, text: "เกิดข้อผิดพลาด" }); }
+    finally {
+      setClaiming(null);
+      setTimeout(() => setClaimMsg(null), 3000);
+    }
+  };
+
+  return (
+    <div className="mx-auto max-w-5xl px-4 py-6 sm:px-6 lg:px-8">
+
+      {/* ── Header ─────────────────────────────────────────────────── */}
+      <div className="rounded-2xl bg-gradient-to-br from-brand-dark to-brand p-5 text-white mb-4">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <div className="flex items-center gap-4">
+            <div className={`w-14 h-14 rounded-xl ${rank.bg} flex items-center justify-center text-3xl shrink-0`}>
+              {rank.icon}
+            </div>
+            <div>
+              <p className="text-xl font-bold leading-tight">{displayName}</p>
+              <p className="text-white/70 text-sm">{rank.short} · {xp} XP</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-6 text-center">
+            <div>
+              <p className="text-2xl font-bold flex items-center gap-1">
+                <Flame className={`h-5 w-5 ${streak >= 3 ? "text-orange-300" : "text-white/40"}`} />
+                {streak}
+              </p>
+              <p className="text-white/60 text-xs">Streak</p>
+            </div>
+            <div>
+              <p className="text-2xl font-bold">{xp}</p>
+              <p className="text-white/60 text-xs">ข้อ</p>
+            </div>
+            <div>
+              <p className="text-2xl font-bold">{accuracy}%</p>
+              <p className="text-white/60 text-xs">เฉลี่ย</p>
+            </div>
+          </div>
+        </div>
+
+        {/* XP Bar */}
+        {xpInfo && (
+          <div className="mt-4">
+            <div className="flex justify-between text-xs text-white/60 mb-1">
+              <span>{rank.short}</span>
+              <span>{xpInfo.current}/{xpInfo.total} XP → {RANKS[RANKS.findIndex(r => r.min === rank.min) + 1]?.short}</span>
+            </div>
+            <div className="w-full bg-white/20 rounded-full h-2.5">
+              <div className="h-2.5 rounded-full bg-white transition-all"
+                style={{ width: `${Math.min(100, Math.round(xpInfo.current / xpInfo.total * 100))}%` }} />
+            </div>
+          </div>
+        )}
+      </div>
+
+      {/* ── Quick Quiz Banner ───────────────────────────────────────── */}
+      <div className="rounded-xl border border-brand/20 bg-brand/5 px-5 py-4 flex items-center justify-between gap-4 mb-4">
+        <div className="flex items-center gap-3">
+          <Zap className="h-5 w-5 text-brand shrink-0" />
+          <div>
+            <p className="font-bold text-sm">Quick Quiz 5 นาที</p>
+            <p className="text-xs text-muted-foreground">5 ข้อ MCQ สุ่มจากข้อสอบสภาเภสัชฯ · บันทึกผลอัตโนมัติ</p>
+          </div>
+        </div>
         <Link href="/ple/practice">
-          <Button className="bg-brand hover:bg-brand-light text-white">
-            เริ่มทำข้อสอบ
+          <Button size="sm" className="bg-brand hover:bg-brand-light text-white gap-1 shrink-0">
+            เริ่มเลย <ArrowRight className="h-3.5 w-3.5" />
           </Button>
         </Link>
       </div>
-    );
-  }
 
-  const bestSubject = [...subjects].sort((a, b) => b.accuracy_pct - a.accuracy_pct)[0];
-  const avgTimeSec =
-    totalAttempts > 0 ? Math.round((overall?.total_time_seconds ?? 0) / totalAttempts) : 0;
-
-  return (
-    <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 lg:px-8">
-      <div className="mb-8">
-        <h1 className="text-2xl font-bold">ผลการเรียน</h1>
-        <p className="text-muted-foreground mt-1">
-          ติดตามความก้าวหน้าและจุดที่ต้องปรับปรุง
-        </p>
+      {/* ── Tabs ────────────────────────────────────────────────────── */}
+      <div className="flex gap-1 border-b mb-6 overflow-x-auto">
+        {([
+          { key: "overview",   label: "ภาพรวม" },
+          { key: "weak",       label: "จุดอ่อน & แผนติว" },
+          { key: "challenge",  label: "Challenge" },
+          { key: "badge",      label: "Badge & Rank" },
+        ] as const).map(({ key, label }) => (
+          <button key={key} onClick={() => setTab(key)}
+            className={`px-4 py-2.5 text-sm font-medium border-b-2 whitespace-nowrap transition-colors ${
+              tab === key ? "border-brand text-brand" : "border-transparent text-muted-foreground hover:text-foreground"
+            }`}>
+            {label}
+          </button>
+        ))}
       </div>
 
-      {/* ── Summary Cards ─────────────────────────────────────────────── */}
-      <div className="grid grid-cols-2 lg:grid-cols-5 gap-4 mb-8">
-        <Card>
-          <CardContent className="pt-6">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-brand/10 flex items-center justify-center">
-                <BookOpen className="h-5 w-5 text-brand" />
-              </div>
+      {/* ── Tab: ภาพรวม ─────────────────────────────────────────────── */}
+      {tab === "overview" && (
+        <div className="space-y-6">
+          {subjects.length === 0 ? (
+            <div className="text-center py-16 text-muted-foreground">
+              <p className="text-lg font-bold mb-2">ยังไม่มีข้อมูล</p>
+              <p className="text-sm mb-4">เริ่มทำข้อสอบเพื่อดูสถิติของคุณ</p>
+              <Link href="/ple/practice"><Button className="bg-brand hover:bg-brand-light text-white">เริ่มทำข้อสอบ</Button></Link>
+            </div>
+          ) : (
+            <>
+              {/* Radar chart */}
               <div>
-                <p className="text-2xl font-bold">{totalAttempts}</p>
-                <p className="text-xs text-muted-foreground">ข้อที่ทำแล้ว</p>
+                <h2 className="font-bold mb-3">คะแนนเฉลี่ยแยกสาขา</h2>
+                <RadarChart subjects={[...subjects].sort((a,b) => b.total - a.total)} />
               </div>
-            </div>
-          </CardContent>
-        </Card>
 
-        <Card>
-          <CardContent className="pt-6">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center">
-                <Target className="h-5 w-5 text-green-600" />
+              {/* Subject cards grid */}
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+                {[...subjects].sort((a, b) => b.accuracy_pct - a.accuracy_pct).map((s) => {
+                  const weak = s.accuracy_pct < 60;
+                  const color = s.accuracy_pct >= 80 ? "text-green-600" : s.accuracy_pct >= 60 ? "text-yellow-600" : "text-red-600";
+                  const bar = s.accuracy_pct >= 80 ? "bg-green-500" : s.accuracy_pct >= 60 ? "bg-yellow-400" : "bg-red-500";
+                  return (
+                    <Link key={s.subject_id} href={`/ple/practice?subject=${s.subject_id}`}>
+                      <div className="relative rounded-xl border bg-white p-4 hover:shadow-sm hover:border-brand/30 transition-all cursor-pointer">
+                        {weak && (
+                          <span className="absolute top-2 right-2 text-[10px] font-bold bg-red-100 text-red-600 px-1.5 py-0.5 rounded-full">
+                            ต้องเพิ่ม
+                          </span>
+                        )}
+                        <p className="text-sm text-muted-foreground mb-1">{s.icon} {s.name_th}</p>
+                        <p className={`text-3xl font-bold ${color}`}>{s.accuracy_pct}<span className="text-lg">%</span></p>
+                        <div className="w-full bg-gray-100 rounded-full h-1.5 my-2">
+                          <div className={`h-1.5 rounded-full ${bar}`} style={{ width: `${s.accuracy_pct}%` }} />
+                        </div>
+                        <p className="text-xs text-muted-foreground">ทำแล้ว {s.total} ข้อ</p>
+                      </div>
+                    </Link>
+                  );
+                })}
               </div>
-              <div>
-                <p className="text-2xl font-bold">{overall?.accuracy_pct ?? 0}%</p>
-                <p className="text-xs text-muted-foreground">ถูกต้องรวม</p>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-
-        <Card className={streak >= 3 ? "border-orange-300" : ""}>
-          <CardContent className="pt-6">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-orange-100 flex items-center justify-center">
-                <Flame className={`h-5 w-5 ${streak >= 3 ? "text-orange-500" : "text-orange-300"}`} />
-              </div>
-              <div>
-                <p className="text-2xl font-bold">{streak}</p>
-                <p className="text-xs text-muted-foreground">วันติดต่อกัน</p>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardContent className="pt-6">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center">
-                <TrendingUp className="h-5 w-5 text-blue-600" />
-              </div>
-              <div>
-                <p className="text-lg font-bold truncate">
-                  {bestSubject ? `${bestSubject.icon} ${bestSubject.accuracy_pct}%` : "—"}
-                </p>
-                <p className="text-xs text-muted-foreground">เก่งที่สุด</p>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardContent className="pt-6">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-slate-100 flex items-center justify-center">
-                <Clock className="h-5 w-5 text-slate-600" />
-              </div>
-              <div>
-                <p className="text-2xl font-bold">{avgTimeSec}s</p>
-                <p className="text-xs text-muted-foreground">เวลาเฉลี่ย/ข้อ</p>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-      </div>
-
-      {/* ── Weak Topics ───────────────────────────────────────────────── */}
-      {weakAreas.length > 0 && (
-        <Card className="border-red-200 bg-red-50/50 mb-8">
-          <CardHeader className="pb-3">
-            <CardTitle className="text-base flex items-center gap-2 text-red-700">
-              <AlertTriangle className="h-5 w-5" />
-              ควรทบทวน — สาขาที่ถูกต้อง &lt; 60%
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-              {weakAreas.map((topic) => (
-                <div
-                  key={topic.subject_id}
-                  className="flex items-center justify-between rounded-lg bg-white p-3 border border-red-100"
-                >
-                  <div className="flex items-center gap-2">
-                    <span className="text-lg">{topic.icon}</span>
-                    <div>
-                      <p className="text-sm font-medium">{topic.name_th}</p>
-                      <p className="text-xs text-red-600">
-                        {topic.accuracy_pct}% ({topic.total - topic.correct} ข้อผิด)
-                      </p>
-                    </div>
-                  </div>
-                  <Link href={`/ple/practice?subject=${topic.subject_id}`}>
-                    <Button size="sm" variant="outline" className="text-xs gap-1">
-                      ฝึกเพิ่ม <ArrowRight className="h-3 w-3" />
-                    </Button>
-                  </Link>
-                </div>
-              ))}
-            </div>
-          </CardContent>
-        </Card>
+            </>
+          )}
+        </div>
       )}
 
-      {/* ── Comparison vs Global Average ──────────────────────────────── */}
-      {comparison.length > 0 && (
-        <Card className="mb-8">
-          <CardHeader>
-            <CardTitle className="text-base flex items-center gap-2">
-              <Users className="h-5 w-5 text-muted-foreground" />
-              เปรียบเทียบกับ avg ผู้ใช้ทั้งหมด
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-2">
-              {comparison.map((c) => (
-                <div
-                  key={c.subject_id}
-                  className="flex items-center gap-3 rounded-lg border p-2.5"
-                >
-                  <span className="text-lg w-7 text-center shrink-0">{c.subject_icon}</span>
-                  <p className="text-sm flex-1 truncate">{c.subject_name_th}</p>
-                  <div className="flex items-center gap-2 shrink-0">
-                    <span className="text-sm font-mono text-muted-foreground">
-                      avg {c.global_accuracy}%
-                    </span>
-                    <span className="text-sm font-bold">→ {c.user_accuracy}%</span>
-                    <Badge
-                      className={`text-xs min-w-[52px] justify-center ${
-                        c.diff > 0
-                          ? "bg-green-100 text-green-700"
-                          : c.diff < 0
-                          ? "bg-red-100 text-red-700"
-                          : "bg-gray-100 text-gray-600"
-                      }`}
-                    >
-                      {c.diff > 0 ? "+" : ""}
-                      {c.diff}%
-                    </Badge>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </CardContent>
-        </Card>
-      )}
-
-      {/* ── Accuracy Trend Chart ──────────────────────────────────────── */}
-      {trend.length >= 2 && (
-        <Card className="mb-8">
-          <CardHeader>
-            <CardTitle className="text-base">แนวโน้มความถูกต้องรายสัปดาห์</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <AccuracyTrendChart data={trend} />
-          </CardContent>
-        </Card>
-      )}
-
-      {/* ── Subject Performance Table ──────────────────────────────────── */}
-      <Card className="mb-8">
-        <CardHeader>
-          <CardTitle className="text-base">สถิติแยกตามสาขา</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <div className="space-y-3">
-            {[...subjects].sort((a, b) => b.accuracy_pct - a.accuracy_pct).map((stat) => {
-              const color =
-                stat.accuracy_pct >= 80
-                  ? "text-green-600"
-                  : stat.accuracy_pct >= 60
-                  ? "text-yellow-600"
-                  : "text-red-600";
-              const bgColor =
-                stat.accuracy_pct >= 80
-                  ? "bg-green-500"
-                  : stat.accuracy_pct >= 60
-                  ? "bg-yellow-500"
-                  : "bg-red-500";
-              return (
-                <div
-                  key={stat.subject_id}
-                  className="flex items-center gap-3 rounded-lg border p-3"
-                >
-                  <span className="text-xl w-8 text-center">{stat.icon}</span>
-                  <div className="flex-1 min-w-0">
-                    <div className="flex items-center justify-between mb-1">
-                      <p className="text-sm font-medium truncate">{stat.name_th}</p>
-                      <div className="flex items-center gap-2 shrink-0">
-                        <span className={`text-sm font-bold ${color}`}>
-                          {stat.accuracy_pct}%
-                        </span>
-                        <span className="text-xs text-muted-foreground">
-                          ({stat.correct}/{stat.total})
-                        </span>
+      {/* ── Tab: จุดอ่อน & แผนติว ───────────────────────────────────── */}
+      {tab === "weak" && (
+        <div className="space-y-6">
+          {/* Weak areas */}
+          {weakAreas.length > 0 && (
+            <div>
+              <h2 className="font-bold mb-3 flex items-center gap-2">
+                <AlertTriangle className="h-4 w-4 text-red-500" /> สาขาที่ต้องทบทวน (ถูกต้อง &lt; 60%)
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {weakAreas.map((s) => (
+                  <div key={s.subject_id} className="flex items-center justify-between rounded-xl border bg-red-50 border-red-100 p-4">
+                    <div className="flex items-center gap-3">
+                      <span className="text-2xl">{s.icon}</span>
+                      <div>
+                        <p className="font-medium text-sm">{s.name_th}</p>
+                        <p className="text-red-600 text-xs font-bold">{s.accuracy_pct}% · ผิด {s.total - s.correct} ข้อ</p>
                       </div>
                     </div>
-                    <div className="w-full bg-gray-100 rounded-full h-2">
-                      <div
-                        className={`h-2 rounded-full ${bgColor}`}
-                        style={{ width: `${Math.min(stat.accuracy_pct, 100)}%` }}
-                      />
-                    </div>
+                    <Link href={`/ple/practice?subject=${s.subject_id}`}>
+                      <Button size="sm" variant="outline" className="text-xs border-red-200 text-red-600 hover:bg-red-100">
+                        ฝึกเพิ่ม <ArrowRight className="h-3 w-3 ml-1" />
+                      </Button>
+                    </Link>
                   </div>
-                  <Link href={`/ple/practice?subject=${stat.subject_id}`}>
-                    <Button size="icon" variant="ghost" className="h-8 w-8 shrink-0">
-                      <ArrowRight className="h-4 w-4" />
-                    </Button>
-                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Study plan */}
+          <div>
+            <h2 className="font-bold mb-3 flex items-center gap-2">
+              <CheckSquare className="h-4 w-4 text-brand" /> แผนติวของฉัน
+            </h2>
+
+            {/* AI suggestions */}
+            <div className="rounded-xl border border-brand/20 bg-brand/5 p-4 mb-4">
+              <p className="text-sm font-semibold text-brand mb-2">💡 AI แนะนำ</p>
+              <div className="space-y-1.5">
+                {weakAreas.slice(0, 3).map((s) => (
+                  <div key={s.subject_id} className="flex items-center justify-between text-sm">
+                    <span className="text-muted-foreground">ทบทวน {s.icon} {s.name_th}</span>
+                    <button onClick={() => setTasks((p) => [...p, { id: Date.now().toString(), text: `ทบทวน ${s.icon} ${s.name_th}`, done: false }])}
+                      className="text-xs text-brand hover:underline shrink-0 ml-2">+ เพิ่ม</button>
+                  </div>
+                ))}
+                {[
+                  "Long Case / OSPE อย่างน้อย 2 เคส",
+                  "Mock Exam สภาเภสัชฯ 1 ชุด",
+                ].map((t) => (
+                  <div key={t} className="flex items-center justify-between text-sm">
+                    <span className="text-muted-foreground">{t}</span>
+                    <button onClick={() => setTasks((p) => [...p, { id: Date.now().toString(), text: t, done: false }])}
+                      className="text-xs text-brand hover:underline shrink-0 ml-2">+ เพิ่ม</button>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Task list */}
+            <div className="flex gap-2 mb-3">
+              <input value={newTask} onChange={(e) => setNewTask(e.target.value)}
+                onKeyDown={(e) => e.key === "Enter" && addTask()}
+                placeholder="เพิ่มรายการใหม่..."
+                className="flex-1 text-sm border rounded-lg px-3 py-2 outline-none focus:ring-1 focus:ring-brand" />
+              <Button size="sm" onClick={addTask} className="bg-brand hover:bg-brand-light text-white shrink-0">
+                <Plus className="h-4 w-4" />
+              </Button>
+            </div>
+            <div className="space-y-2">
+              {tasks.length === 0 && (
+                <p className="text-center text-muted-foreground text-sm py-4">ยังไม่มีรายการ</p>
+              )}
+              {tasks.map((t) => (
+                <div key={t.id} className={`flex items-center gap-3 p-3 rounded-lg border ${t.done ? "bg-muted/40" : "bg-white"}`}>
+                  <input type="checkbox" checked={t.done} onChange={() => setTasks((p) => p.map((x) => x.id === t.id ? { ...x, done: !x.done } : x))}
+                    className="h-4 w-4 accent-brand shrink-0 cursor-pointer" />
+                  <span className={`flex-1 text-sm ${t.done ? "line-through text-muted-foreground" : ""}`}>{t.text}</span>
+                  <button onClick={() => setTasks((p) => p.filter((x) => x.id !== t.id))}
+                    className="text-muted-foreground hover:text-destructive shrink-0">
+                    <Trash2 className="h-4 w-4" />
+                  </button>
+                </div>
+              ))}
+            </div>
+            {tasks.length > 0 && (
+              <p className="text-xs text-muted-foreground mt-2 text-right">
+                {tasks.filter((t) => t.done).length}/{tasks.length} เสร็จแล้ว
+              </p>
+            )}
+          </div>
+        </div>
+      )}
+
+      {/* ── Tab: Challenge ───────────────────────────────────────────── */}
+      {tab === "challenge" && (
+        <div className="space-y-3">
+          {claimMsg && (
+            <div className={`rounded-lg px-4 py-3 text-sm font-medium ${claimMsg.ok ? "bg-green-100 text-green-800" : "bg-red-100 text-red-800"}`}>
+              {claimMsg.text}
+            </div>
+          )}
+          {CHALLENGES.map((c) => {
+            const done = completedChallenges.has(c.id);
+            return (
+              <div key={c.id} className={`flex items-center justify-between rounded-xl border p-4 gap-3 ${done ? "bg-green-50 border-green-200" : "bg-white"}`}>
+                <div className="flex items-center gap-3 min-w-0">
+                  <span className="text-2xl shrink-0">{c.icon}</span>
+                  <p className="font-medium text-sm truncate">{c.title}</p>
+                </div>
+                <div className="flex items-center gap-2 shrink-0">
+                  <span className="text-xs font-bold text-amber-600">+{c.xp} XP</span>
+                  {done ? (
+                    <span className="flex items-center gap-1 text-xs text-green-600"><CheckCircle className="h-3.5 w-3.5" /> สำเร็จ</span>
+                  ) : (
+                    <div className="flex items-center gap-1.5">
+                      <Link href={c.href}>
+                        <Button size="sm" className="bg-brand hover:bg-brand-light text-white h-7 text-xs">ลุย</Button>
+                      </Link>
+                      <Button size="sm" variant="outline" className="h-7 text-xs" disabled={claiming === c.id} onClick={() => handleClaim(c.id)}>
+                        {claiming === c.id ? <Loader2 className="h-3 w-3 animate-spin" /> : "รับ"}
+                      </Button>
+                    </div>
+                  )}
+                </div>
+              </div>
+            );
+          })}
+          <div className="pt-2 text-center">
+            <Link href="/challenges">
+              <Button variant="outline" size="sm" className="gap-1">
+                ดู Challenges ทั้งหมด <ChevronRight className="h-4 w-4" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      )}
+
+      {/* ── Tab: Badge & Rank ────────────────────────────────────────── */}
+      {tab === "badge" && (
+        <div className="space-y-6">
+          {/* Badge card */}
+          <div className="max-w-sm mx-auto rounded-2xl bg-gradient-to-br from-brand-dark to-brand p-6 text-white shadow-xl">
+            <div className="flex items-center gap-3 mb-4">
+              <span className="text-4xl">{rank.icon}</span>
+              <div>
+                <p className="font-bold text-lg">ฟาร์มรู้ Badge Card</p>
+                <p className="text-white/60 text-sm">pharmru.com</p>
+              </div>
+            </div>
+            <div className="bg-white/10 rounded-xl p-4 mb-4">
+              <p className="text-xl font-bold">{displayName}</p>
+              <p className="text-white/70 text-sm">{rank.label}</p>
+            </div>
+            <div className="grid grid-cols-3 gap-3 text-center">
+              {[
+                { val: xp, label: "ข้อที่ทำ" },
+                { val: `${accuracy}%`, label: "ถูกต้อง" },
+                { val: streak, label: "Streak" },
+              ].map(({ val, label }) => (
+                <div key={label} className="bg-white/10 rounded-lg p-3">
+                  <p className="text-xl font-bold">{val}</p>
+                  <p className="text-white/60 text-xs">{label}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Rank table */}
+          <div className="space-y-2">
+            {RANKS.map((r) => {
+              const active = rank.label === r.label;
+              return (
+                <div key={r.label} className={`flex items-center gap-3 p-4 rounded-xl border ${active ? "border-brand/30 bg-brand/5" : "bg-white"}`}>
+                  <span className={`w-10 h-10 rounded-lg ${r.bg} flex items-center justify-center text-xl`}>{r.icon}</span>
+                  <div className="flex-1">
+                    <p className={`font-bold text-sm ${active ? "text-brand" : ""}`}>{r.label}</p>
+                    <p className="text-xs text-muted-foreground">
+                      {r.max === Infinity ? `${r.min}+ ข้อ` : `${r.min}–${r.max} ข้อ`}
+                    </p>
+                  </div>
+                  {active && <Badge className="bg-brand/10 text-brand border-0 text-xs">ตำแหน่งปัจจุบัน</Badge>}
                 </div>
               );
             })}
           </div>
-        </CardContent>
-      </Card>
-
-      {/* ── Recent Sessions ───────────────────────────────────────────── */}
-      {recentSessions.length > 0 && (
-        <Card>
-          <CardHeader>
-            <CardTitle className="text-base">เซสชันล่าสุด</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-2">
-              {recentSessions.map((session) => (
-                <div
-                  key={session.id}
-                  className="flex items-center justify-between rounded-lg border p-3"
-                >
-                  <div className="flex items-center gap-3">
-                    <span className="text-lg">{session.subject_icon || "📝"}</span>
-                    <div>
-                      <p className="text-sm font-medium">
-                        {session.subject_name_th || "ทุกสาขา"}
-                      </p>
-                      <p className="text-xs text-muted-foreground">
-                        {new Date(session.created_at).toLocaleDateString("th-TH", {
-                          day: "numeric",
-                          month: "short",
-                          year: "2-digit",
-                        })}
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Badge
-                      variant={session.mode === "mock" ? "default" : "secondary"}
-                      className="text-xs"
-                    >
-                      {session.mode === "mock" ? "Mock" : "Practice"}
-                    </Badge>
-                    <span
-                      className={`text-sm font-bold ${
-                        session.pct >= 60 ? "text-green-600" : "text-red-600"
-                      }`}
-                    >
-                      {session.correct_count}/{session.total_questions} ({session.pct}%)
-                    </span>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </CardContent>
-        </Card>
+        </div>
       )}
     </div>
   );
