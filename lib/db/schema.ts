@@ -7,6 +7,7 @@ import {
   primaryKey,
   real,
   text,
+  uniqueIndex,
 } from "drizzle-orm/pg-core";
 
 // ========================================
@@ -247,7 +248,7 @@ export const userChallenges = pgTable(
       .notNull()
       .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
   },
-  (t) => [{ name: "uq_user_challenge", columns: [t.user_id, t.challenge_id] }]
+  (t) => [uniqueIndex("uq_user_challenge").on(t.user_id, t.challenge_id)]
 );
 
 // Types

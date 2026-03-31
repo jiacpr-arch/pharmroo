@@ -124,13 +124,13 @@ async function checkEligible(userId: string, challengeId: string): Promise<boole
     }
 
     case "week_all_subjects": {
-      const [row] = await db.execute(sql`
+      const r1 = await db.execute(sql`
         SELECT COUNT(DISTINCT q.subject_id) AS subjects
         FROM mcq_attempts a
         JOIN mcq_questions q ON q.id = a.question_id
         WHERE a.user_id = ${userId} AND a.created_at >= ${weekStr}
       `);
-      return Number((row as { subjects: number })?.subjects ?? 0) >= 5;
+      return Number((r1.rows[0] as { subjects: number })?.subjects ?? 0) >= 5;
     }
 
     case "week_100": {
@@ -142,7 +142,7 @@ async function checkEligible(userId: string, challengeId: string): Promise<boole
     }
 
     case "special_pharma_chem": {
-      const [row] = await db.execute(sql`
+      const r2 = await db.execute(sql`
         SELECT COUNT(*) AS total,
                SUM(CASE WHEN a.is_correct THEN 1 ELSE 0 END) AS correct
         FROM mcq_attempts a
@@ -150,19 +150,19 @@ async function checkEligible(userId: string, challengeId: string): Promise<boole
         JOIN mcq_subjects s  ON s.id = q.subject_id
         WHERE a.user_id = ${userId} AND s.name = 'pharma_chem'
       `);
-      const r = row as { total: number; correct: number };
+      const r = r2.rows[0] as { total: number; correct: number };
       return Number(r?.total ?? 0) >= 50 && Number(r?.correct ?? 0) / Number(r?.total ?? 1) >= 0.7;
     }
 
     case "special_pharm_law": {
-      const [row] = await db.execute(sql`
+      const r3 = await db.execute(sql`
         SELECT COUNT(*) AS total
         FROM mcq_attempts a
         JOIN mcq_questions q ON q.id = a.question_id
         JOIN mcq_subjects s  ON s.id = q.subject_id
         WHERE a.user_id = ${userId} AND s.name = 'pharm_law'
       `);
-      return Number((row as { total: number })?.total ?? 0) >= 30;
+      return Number((r3.rows[0] as { total: number })?.total ?? 0) >= 30;
     }
 
     case "special_mock_pass": {
