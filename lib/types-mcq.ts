@@ -103,11 +103,21 @@ export interface SetPurchase {
 }
 
 export const MCQ_SUBJECTS = [
-  { name: "pharmacotherapy", name_th: "Pharmacotherapy", icon: "💊" },
-  { name: "pharma_tech", name_th: "เทคโนโลยีเภสัชกรรม", icon: "🧪" },
   { name: "pharma_chem", name_th: "เภสัชเคมี", icon: "⚗️" },
-  { name: "pharma_analysis", name_th: "เภสัชวิเคราะห์", icon: "🔬" },
-  { name: "pharmacokinetics", name_th: "เภสัชจลนศาสตร์", icon: "📈" },
-  { name: "pharma_law", name_th: "กฎหมายยา/จริยธรรม", icon: "⚖️" },
-  { name: "herbal", name_th: "สมุนไพร/ผลิตภัณฑ์สุขภาพ", icon: "🌿" },
+  { name: "pharmacology", name_th: "เภสัชวิทยา", icon: "💊" },
+  { name: "pharma_care", name_th: "เภสัชกรรมบริบาล", icon: "🏥" },
+  { name: "clinical_pharm", name_th: "เภสัชกรรมคลินิก", icon: "🩺" },
+  { name: "pharm_tech", name_th: "เภสัชกรรมเทคโนโลยี", icon: "🏭" },
+  { name: "biopharm", name_th: "ชีวเภสัชศาสตร์", icon: "🧬" },
+  { name: "pharm_admin", name_th: "เภสัชศาสตร์สังคมและบริหาร", icon: "📋" },
+  { name: "toxicology", name_th: "พิษวิทยา", icon: "☠️" },
+  { name: "cosmetic", name_th: "เครื่องสำอาง", icon: "✨" },
+  { name: "herbal_med", name_th: "เภสัชเวท/สมุนไพร", icon: "🌿" },
+  { name: "pharm_law", name_th: "กฎหมายเภสัชกรรม", icon: "⚖️" },
+  { name: "biochem", name_th: "ชีวเคมี", icon: "🔬" },
+  { name: "public_health_pharm", name_th: "เภสัชสาธารณสุข", icon: "📊" },
+  { name: "drug_info", name_th: "สารสนเทศทางยา", icon: "📖" },
+  { name: "compounding", name_th: "การปรุงยา", icon: "🧪" },
+  { name: "nutrition", name_th: "โภชนศาสตร์คลินิก", icon: "🥗" },
+  { name: "pharma_marketing", name_th: "การตลาดยา", icon: "📈" },
 ] as const;
