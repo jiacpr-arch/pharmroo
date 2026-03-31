@@ -7,7 +7,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { User, Mail, Crown, Calendar, LogOut, BarChart3 } from "lucide-react";
+import { User, Mail, Crown, Calendar, LogOut, BarChart3, ArrowRight } from "lucide-react";
 import StudentStats from "@/components/StudentStats";
 
 const membershipLabels: Record<string, string> = {
@@ -111,9 +111,16 @@ export default function ProfilePage() {
 
         {/* Student Stats Dashboard */}
         <div>
-          <h3 className="text-xl font-bold flex items-center gap-2 mb-4">
-            <BarChart3 className="h-5 w-5 text-brand" /> ผลการทำข้อสอบ
-          </h3>
+          <div className="flex items-center justify-between mb-4">
+            <h3 className="text-xl font-bold flex items-center gap-2">
+              <BarChart3 className="h-5 w-5 text-brand" /> ผลการทำข้อสอบ
+            </h3>
+            <Link href="/dashboard">
+              <Button variant="outline" size="sm" className="gap-1 text-brand border-brand/30">
+                ดูแบบละเอียด <ArrowRight className="h-3.5 w-3.5" />
+              </Button>
+            </Link>
+          </div>
           <StudentStats />
         </div>
 
