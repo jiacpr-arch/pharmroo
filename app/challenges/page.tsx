@@ -1,15 +1,26 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Loader2, ArrowRight, Trophy, Flame, Star, Lock, CheckCircle } from "lucide-react";
+import {
+  Loader2,
+  ArrowRight,
+  Trophy,
+  Flame,
+  Star,
+  Lock,
+  CheckCircle,
+  RefreshCw,
+} from "lucide-react";
 
-interface Challenge {
+// ─── Challenge definitions ────────────────────────────────────────────────────
+
+interface ChallengeDef {
   id: string;
   title: string;
   description: string;
@@ -18,11 +29,10 @@ interface Challenge {
   xp: number;
   href: string;
   condition: string;
-  completed?: boolean;
   locked?: boolean;
 }
 
-const DAILY_CHALLENGES: Challenge[] = [
+const DAILY_CHALLENGES: ChallengeDef[] = [
   {
     id: "daily_10",
     title: "ทำ 10 ข้อวันนี้",
@@ -55,7 +65,7 @@ const DAILY_CHALLENGES: Challenge[] = [
   },
 ];
 
-const WEEKLY_CHALLENGES: Challenge[] = [
+const WEEKLY_CHALLENGES: ChallengeDef[] = [
   {
     id: "week_streak_5",
     title: "5 วันติดต่อกัน",
@@ -88,7 +98,7 @@ const WEEKLY_CHALLENGES: Challenge[] = [
   },
 ];
 
-const SPECIAL_CHALLENGES: Challenge[] = [
+const SPECIAL_CHALLENGES: ChallengeDef[] = [
   {
     id: "special_pharma_chem",
     title: "เภสัชเคมีมาสเตอร์",
@@ -132,6 +142,8 @@ const SPECIAL_CHALLENGES: Challenge[] = [
   },
 ];
 
+const ALL_CHALLENGES = [...DAILY_CHALLENGES, ...WEEKLY_CHALLENGES, ...SPECIAL_CHALLENGES];
+
 const TYPE_LABEL: Record<string, string> = {
   daily: "ประจำวัน",
   weekly: "ประจำสัปดาห์",
@@ -144,20 +156,32 @@ const TYPE_COLOR: Record<string, string> = {
   special: "bg-amber-100 text-amber-700",
 };
 
-function ChallengeCard({ challenge }: { challenge: Challenge }) {
+// ─── ChallengeCard ────────────────────────────────────────────────────────────
+
+function ChallengeCard({
+  challenge,
+  completed,
+  onClaim,
+  claiming,
+}: {
+  challenge: ChallengeDef;
+  completed: boolean;
+  onClaim: (id: string) => void;
+  claiming: boolean;
+}) {
   return (
     <div
-      className={`flex items-center justify-between rounded-xl border p-4 gap-4 ${
-        challenge.completed
+      className={`flex items-center justify-between rounded-xl border p-4 gap-4 transition-colors ${
+        completed
           ? "bg-green-50 border-green-200"
           : challenge.locked
           ? "bg-muted/40 border-muted opacity-60"
           : "bg-white"
       }`}
     >
-      <div className="flex items-center gap-3">
+      <div className="flex items-center gap-3 min-w-0">
         <span className="text-3xl shrink-0">{challenge.icon}</span>
-        <div>
+        <div className="min-w-0">
           <div className="flex items-center gap-2 flex-wrap mb-0.5">
             <p className="font-semibold text-sm">{challenge.title}</p>
             <Badge className={`text-[10px] ${TYPE_COLOR[challenge.type]}`}>
@@ -170,11 +194,12 @@ function ChallengeCard({ challenge }: { challenge: Challenge }) {
           </p>
         </div>
       </div>
+
       <div className="flex flex-col items-end gap-2 shrink-0">
         <span className="flex items-center gap-1 text-sm font-bold text-amber-600">
           <Star className="h-3.5 w-3.5" /> +{challenge.xp} XP
         </span>
-        {challenge.completed ? (
+        {completed ? (
           <span className="flex items-center gap-1 text-xs text-green-600 font-medium">
             <CheckCircle className="h-3.5 w-3.5" /> สำเร็จแล้ว
           </span>
@@ -183,26 +208,79 @@ function ChallengeCard({ challenge }: { challenge: Challenge }) {
             <Lock className="h-3.5 w-3.5" /> ยังล็อคอยู่
           </span>
         ) : (
-          <Link href={challenge.href}>
-            <Button size="sm" className="bg-brand hover:bg-brand-light text-white gap-1 text-xs">
-              ลุยเลย <ArrowRight className="h-3 w-3" />
+          <div className="flex flex-col gap-1.5 items-end">
+            <Link href={challenge.href}>
+              <Button size="sm" className="bg-brand hover:bg-brand-light text-white gap-1 text-xs">
+                ลุยเลย <ArrowRight className="h-3 w-3" />
+              </Button>
+            </Link>
+            <Button
+              size="sm"
+              variant="outline"
+              className="text-xs gap-1 h-7"
+              disabled={claiming}
+              onClick={() => onClaim(challenge.id)}
+            >
+              {claiming ? (
+                <Loader2 className="h-3 w-3 animate-spin" />
+              ) : (
+                <CheckCircle className="h-3 w-3" />
+              )}
+              รับรางวัล
             </Button>
-          </Link>
+          </div>
         )}
       </div>
     </div>
   );
 }
 
+// ─── Page ─────────────────────────────────────────────────────────────────────
+
 export default function ChallengesPage() {
   const { status } = useSession();
   const router = useRouter();
+  const [loading, setLoading] = useState(true);
+  const [completed, setCompleted] = useState<Set<string>>(new Set());
+  const [claiming, setClaiming] = useState<string | null>(null);
+  const [claimMsg, setClaimMsg] = useState<{ id: string; ok: boolean; text: string } | null>(null);
 
   useEffect(() => {
-    if (status === "unauthenticated") router.push("/login");
+    if (status === "unauthenticated") { router.push("/login"); return; }
+    if (status !== "authenticated") return;
+
+    fetch("/api/challenges")
+      .then((r) => r.json())
+      .then((d) => setCompleted(new Set(d.completed ?? [])))
+      .catch(() => {})
+      .finally(() => setLoading(false));
   }, [status, router]);
 
-  if (status === "loading") {
+  const handleClaim = useCallback(async (id: string) => {
+    setClaiming(id);
+    setClaimMsg(null);
+    try {
+      const res = await fetch("/api/challenges", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ challenge_id: id }),
+      });
+      if (res.ok) {
+        setCompleted((prev) => new Set([...prev, id]));
+        const def = ALL_CHALLENGES.find((c) => c.id === id);
+        setClaimMsg({ id, ok: true, text: `🎉 สำเร็จ! +${def?.xp ?? 0} XP` });
+      } else {
+        setClaimMsg({ id, ok: false, text: "ยังไม่ครบเงื่อนไข ลองทำเพิ่มก่อนนะ" });
+      }
+    } catch {
+      setClaimMsg({ id, ok: false, text: "เกิดข้อผิดพลาด ลองใหม่อีกครั้ง" });
+    } finally {
+      setClaiming(null);
+      setTimeout(() => setClaimMsg(null), 3000);
+    }
+  }, []);
+
+  if (status === "loading" || loading) {
     return (
       <div className="flex items-center justify-center min-h-[60vh]">
         <Loader2 className="h-8 w-8 animate-spin text-brand" />
@@ -210,17 +288,47 @@ export default function ChallengesPage() {
     );
   }
 
+  const doneCount = ALL_CHALLENGES.filter((c) => completed.has(c.id)).length;
+
   return (
     <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6 lg:px-8">
       {/* Header */}
-      <div className="mb-8">
-        <h1 className="text-2xl font-bold flex items-center gap-2">
-          <Trophy className="h-6 w-6 text-amber-500" /> Challenges
-        </h1>
-        <p className="text-muted-foreground mt-1">
-          ทำ Challenge สะสม XP เพื่อ Rank Up
-        </p>
+      <div className="flex items-center justify-between mb-8">
+        <div>
+          <h1 className="text-2xl font-bold flex items-center gap-2">
+            <Trophy className="h-6 w-6 text-amber-500" /> Challenges
+          </h1>
+          <p className="text-muted-foreground mt-1">
+            สำเร็จแล้ว {doneCount}/{ALL_CHALLENGES.length} challenge
+          </p>
+        </div>
+        <Button
+          variant="outline"
+          size="sm"
+          className="gap-1"
+          onClick={() => {
+            setLoading(true);
+            fetch("/api/challenges")
+              .then((r) => r.json())
+              .then((d) => setCompleted(new Set(d.completed ?? [])))
+              .catch(() => {})
+              .finally(() => setLoading(false));
+          }}
+        >
+          <RefreshCw className="h-3.5 w-3.5" /> รีเฟรช
+        </Button>
       </div>
+
+      {/* Claim feedback toast */}
+      {claimMsg && (
+        <div
+          className={`mb-4 rounded-lg px-4 py-3 text-sm font-medium ${
+            claimMsg.ok ? "bg-green-100 text-green-800" : "bg-red-100 text-red-800"
+          }`}
+        >
+          {claimMsg.text}
+        </div>
+      )}
 
       {/* XP note */}
       <Card className="mb-8 border-amber-200 bg-amber-50/50">
@@ -246,7 +354,13 @@ export default function ChallengesPage() {
         </CardHeader>
         <CardContent className="space-y-3">
           {DAILY_CHALLENGES.map((c) => (
-            <ChallengeCard key={c.id} challenge={c} />
+            <ChallengeCard
+              key={c.id}
+              challenge={c}
+              completed={completed.has(c.id)}
+              onClaim={handleClaim}
+              claiming={claiming === c.id}
+            />
           ))}
         </CardContent>
       </Card>
@@ -261,7 +375,13 @@ export default function ChallengesPage() {
         </CardHeader>
         <CardContent className="space-y-3">
           {WEEKLY_CHALLENGES.map((c) => (
-            <ChallengeCard key={c.id} challenge={c} />
+            <ChallengeCard
+              key={c.id}
+              challenge={c}
+              completed={completed.has(c.id)}
+              onClaim={handleClaim}
+              claiming={claiming === c.id}
+            />
           ))}
         </CardContent>
       </Card>
@@ -276,7 +396,13 @@ export default function ChallengesPage() {
         </CardHeader>
         <CardContent className="space-y-3">
           {SPECIAL_CHALLENGES.map((c) => (
-            <ChallengeCard key={c.id} challenge={c} />
+            <ChallengeCard
+              key={c.id}
+              challenge={c}
+              completed={completed.has(c.id)}
+              onClaim={handleClaim}
+              claiming={claiming === c.id}
+            />
           ))}
         </CardContent>
       </Card>

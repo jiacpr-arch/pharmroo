@@ -232,6 +232,24 @@ export const paymentOrders = pgTable("payment_orders", {
   invoice_branch: text("invoice_branch"),
 });
 
+// ========================================
+// 10. User Challenges
+// ========================================
+export const userChallenges = pgTable(
+  "user_challenges",
+  {
+    id: text("id").primaryKey().default(sql`generate_hex_id()`),
+    user_id: text("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    challenge_id: text("challenge_id").notNull(),
+    completed_at: text("completed_at")
+      .notNull()
+      .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+  },
+  (t) => [{ name: "uq_user_challenge", columns: [t.user_id, t.challenge_id] }]
+);
+
 // Types
 export type User = typeof users.$inferSelect;
 export type McqSubject = typeof mcqSubjects.$inferSelect;
