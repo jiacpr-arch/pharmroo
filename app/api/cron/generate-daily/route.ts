@@ -3,19 +3,16 @@ import { createAdminClient } from "@/lib/supabase/admin";
 import { SUBJECT_CONFIGS, generateMcqBatch } from "@/lib/ai/generate-mcq";
 
 /**
- * POST /api/cron/generate-daily
+ * GET /api/cron/generate-daily  (Vercel Cron)
+ * POST /api/cron/generate-daily (manual trigger)
  *
  * Generates 10–20 mixed-subject MCQ questions per day and saves them to Supabase.
  * Secured by CRON_SECRET environment variable.
  *
- * Call this endpoint daily via Vercel Cron, GitHub Actions, or any cron service:
- *   curl -X POST https://your-domain.com/api/cron/generate-daily \
- *        -H "Authorization: Bearer $CRON_SECRET"
- *
- * Optional JSON body:
+ * Optional JSON body (POST only):
  *   { "total": 15 }   — override total question count (default 15, min 10, max 20)
  */
-export async function POST(req: Request) {
+async function handler(req: Request) {
   // ── Auth ─────────────────────────────────────────────────────────────────────
   const authHeader = req.headers.get("authorization");
   const cronSecret = process.env.CRON_SECRET;
@@ -118,3 +115,7 @@ export async function POST(req: Request) {
     subjects: results,
   });
 }
+
+// Vercel Cron sends GET — manual trigger uses POST
+export const GET = handler;
+export const POST = handler;
