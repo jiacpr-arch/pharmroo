@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { SUBJECT_CONFIGS, generateMcqBatch } from "@/lib/ai/generate-mcq";
 
+export const maxDuration = 300; // Pro plan: up to 300s
+
 /**
  * GET /api/cron/generate-daily  (Vercel Cron)
  * POST /api/cron/generate-daily (manual trigger)
