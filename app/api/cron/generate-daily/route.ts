@@ -54,7 +54,6 @@ async function handler(req: Request) {
   for (const s of dbSubjects) subjectIdMap[s.name] = s.id;
 
   // ── Pick subjects for today ───────────────────────────────────────────────────
-  // Rotate deterministically by day-of-year so each day covers different subjects
   const dayOfYear = Math.floor(
     (Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / 86_400_000
   );
@@ -64,7 +63,6 @@ async function handler(req: Request) {
     return NextResponse.json({ error: "No matching subjects in DB" }, { status: 500 });
   }
 
-  // Pick 3 subjects (wrapping around), distribute questions evenly
   const numSubjects = Math.min(3, available.length);
   const picked = Array.from({ length: numSubjects }, (_, i) =>
     available[(dayOfYear + i) % available.length]
@@ -72,30 +70,31 @@ async function handler(req: Request) {
 
   const perSubject = Math.ceil(total / numSubjects);
 
-  // ── Generate & insert ─────────────────────────────────────────────────────────
+  // ── Generate all subjects in parallel ────────────────────────────────────────
+  const generated = await Promise.all(
+    picked.map(async (subject, i) => {
+      const subjectId = subjectIdMap[subject.name];
+      const count = i < picked.length - 1 ? perSubject : total - perSubject * i;
+      try {
+        const questions = await generateMcqBatch(subject, subjectId, Math.max(1, count), dayOfYear);
+        return { subject, subjectId, questions };
+      } catch (err) {
+        console.error(`[cron] generate failed for ${subject.name}:`, err);
+        return { subject, subjectId, questions: [] };
+      }
+    })
+  );
+
+  // ── Insert results ────────────────────────────────────────────────────────────
   const results: { subject: string; generated: number; inserted: number }[] = [];
   let totalInserted = 0;
 
-  for (let i = 0; i < picked.length; i++) {
-    const subject = picked[i];
-    const subjectId = subjectIdMap[subject.name];
-    const count = i < picked.length - 1 ? perSubject : total - perSubject * i;
-
-    let questions;
-    try {
-      questions = await generateMcqBatch(subject, subjectId, Math.max(1, count), dayOfYear);
-    } catch (err) {
-      console.error(`[cron] generate failed for ${subject.name}:`, err);
-      results.push({ subject: subject.name, generated: 0, inserted: 0 });
-      continue;
-    }
-
+  for (const { subject, questions } of generated) {
     if (questions.length === 0) {
       results.push({ subject: subject.name, generated: 0, inserted: 0 });
       continue;
     }
 
-    // Insert in chunks of 10
     let inserted = 0;
     for (let j = 0; j < questions.length; j += 10) {
       const chunk = questions.slice(j, j + 10);
