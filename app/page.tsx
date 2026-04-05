@@ -21,7 +21,11 @@ import {
 export const revalidate = 60;
 
 export default async function HomePage() {
-  const stats = await getNewQuestionsStats();
+  const stats = await getNewQuestionsStats().catch(() => ({
+    totalActive: 0,
+    newThisWeek: 0,
+    nextReleaseAt: new Date(Date.now() + 7 * 86400000).toISOString(),
+  }));
 
   return (
     <>
