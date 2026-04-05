@@ -97,6 +97,44 @@ export async function getUserSetPurchases(userId: string): Promise<SetPurchase[]
   return rows.map(toSetPurchase);
 }
 
+export async function getNewQuestionsStats(): Promise<{
+  totalActive: number;
+  newThisWeek: number;
+  nextReleaseAt: string; // ISO string — next Sunday 00:00 Bangkok
+}> {
+  const [totalRow, newRow] = await Promise.all([
+    db
+      .select({ count: sql<number>`count(*)` })
+      .from(mcqQuestions)
+      .where(eq(mcqQuestions.status, "active")),
+    db
+      .select({ count: sql<number>`count(*)` })
+      .from(mcqQuestions)
+      .where(
+        and(
+          eq(mcqQuestions.status, "active"),
+          sql`${mcqQuestions.created_at} >= to_char(now() - interval '7 days', 'YYYY-MM-DD HH24:MI:SS')`
+        )
+      ),
+  ]);
+
+  // Next Sunday 00:00 Bangkok (UTC+7)
+  const now = new Date();
+  const bangkokOffset = 7 * 60; // minutes
+  const localMs = now.getTime() + (bangkokOffset + now.getTimezoneOffset()) * 60000;
+  const localNow = new Date(localMs);
+  const daysUntilSunday = (7 - localNow.getDay()) % 7 || 7;
+  const nextSunday = new Date(localMs + daysUntilSunday * 86400000);
+  nextSunday.setHours(0, 0, 0, 0);
+  const nextReleaseAt = new Date(nextSunday.getTime() - bangkokOffset * 60000).toISOString();
+
+  return {
+    totalActive: Number(totalRow[0]?.count ?? 0),
+    newThisWeek: Number(newRow[0]?.count ?? 0),
+    nextReleaseAt,
+  };
+}
+
 export async function getMcqSubjectCounts(): Promise<Record<string, number>> {
   const rows = await db
     .select({ subject_id: mcqQuestions.subject_id })

@@ -2,7 +2,9 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import PricingCard from "@/components/PricingCard";
+import NewQuestionsCountdown from "@/components/NewQuestionsCountdown";
 import { CATEGORIES, PRICING_PLANS } from "@/lib/types";
+import { getNewQuestionsStats } from "@/lib/db/queries-mcq";
 import {
   BookOpen,
   Clock,
@@ -19,6 +21,8 @@ import {
 export const revalidate = 60;
 
 export default async function HomePage() {
+  const stats = await getNewQuestionsStats();
+
   return (
     <>
       {/* Hero */}
@@ -56,7 +60,13 @@ export default async function HomePage() {
                 </Button>
               </Link>
             </div>
-            <div className="mt-10 flex items-center justify-center gap-8 text-sm text-white/60">
+            <NewQuestionsCountdown
+              totalActive={stats.totalActive}
+              newThisWeek={stats.newThisWeek}
+              nextReleaseAt={stats.nextReleaseAt}
+            />
+
+            <div className="mt-6 flex items-center justify-center gap-8 text-sm text-white/60">
               <span className="flex items-center gap-1.5">
                 <Users className="h-4 w-4" /> สำหรับเภสัชกร
               </span>
