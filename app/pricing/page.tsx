@@ -11,11 +11,11 @@ export const metadata: Metadata = {
 };
 
 const QUESTION_SETS_PREVIEW = [
-  { name: "PLE-CC1 Day 1 (120 ข้อ)", price: 390 },
-  { name: "PLE-CC1 Day 2 (120 ข้อ)", price: 390 },
-  { name: "PLE-CC1 ครบ 2 วัน (240 ข้อ)", price: 590, highlight: true },
-  { name: "PLE-PC1 (120 ข้อ)", price: 490 },
-  { name: "Bundle ทุกชุด", price: 990, highlight: true },
+  { name: "PLE-CC1 Day 1 (120 ข้อ)", price: 390, id: "ple-cc1-day1" },
+  { name: "PLE-CC1 Day 2 (120 ข้อ)", price: 390, id: "ple-cc1-day2" },
+  { name: "PLE-CC1 ครบ 2 วัน (240 ข้อ)", price: 590, highlight: true, id: "ple-cc1-bundle" },
+  { name: "PLE-PC1 (120 ข้อ)", price: 490, id: "ple-pc1" },
+  { name: "Bundle ทุกชุด", price: 990, highlight: true, id: "bundle-all" },
 ];
 
 export default function PricingPage() {
@@ -47,22 +47,23 @@ export default function PricingPage() {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-6">
             {QUESTION_SETS_PREVIEW.map((s) => (
-              <div
-                key={s.name}
-                className={`rounded-lg border p-4 flex items-center justify-between ${
-                  s.highlight
-                    ? "bg-teal-600 text-white border-teal-600"
-                    : "bg-white border-teal-200"
-                }`}
-              >
-                <div className="flex items-center gap-2">
-                  <CheckCircle className={`h-4 w-4 shrink-0 ${s.highlight ? "text-teal-200" : "text-teal-500"}`} />
-                  <span className="text-sm font-medium">{s.name}</span>
+              <Link key={s.name} href={`/sets/${s.id}`}>
+                <div
+                  className={`rounded-lg border p-4 flex items-center justify-between cursor-pointer transition-opacity hover:opacity-80 ${
+                    s.highlight
+                      ? "bg-teal-600 text-white border-teal-600"
+                      : "bg-white border-teal-200"
+                  }`}
+                >
+                  <div className="flex items-center gap-2">
+                    <CheckCircle className={`h-4 w-4 shrink-0 ${s.highlight ? "text-teal-200" : "text-teal-500"}`} />
+                    <span className="text-sm font-medium">{s.name}</span>
+                  </div>
+                  <span className={`font-bold text-sm ml-2 shrink-0 ${s.highlight ? "text-white" : "text-teal-700"}`}>
+                    ฿{s.price}
+                  </span>
                 </div>
-                <span className={`font-bold text-sm ml-2 shrink-0 ${s.highlight ? "text-white" : "text-teal-700"}`}>
-                  ฿{s.price}
-                </span>
-              </div>
+              </Link>
             ))}
           </div>
           <div className="flex flex-col sm:flex-row gap-3 items-start sm:items-center justify-between">
