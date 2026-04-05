@@ -24,6 +24,7 @@ export default async function HomePage() {
   const stats = await getNewQuestionsStats().catch(() => ({
     totalActive: 0,
     newThisWeek: 0,
+    newBySubject: [] as { icon: string; name_th: string; count: number }[],
     nextReleaseAt: new Date(Date.now() + 7 * 86400000).toISOString(),
   }));
 
@@ -67,6 +68,7 @@ export default async function HomePage() {
             <NewQuestionsCountdown
               totalActive={stats.totalActive}
               newThisWeek={stats.newThisWeek}
+              newBySubject={stats.newBySubject}
               nextReleaseAt={stats.nextReleaseAt}
             />
 

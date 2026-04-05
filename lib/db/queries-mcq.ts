@@ -100,27 +100,41 @@ export async function getUserSetPurchases(userId: string): Promise<SetPurchase[]
 export async function getNewQuestionsStats(): Promise<{
   totalActive: number;
   newThisWeek: number;
-  nextReleaseAt: string; // ISO string — next Sunday 00:00 Bangkok
+  newBySubject: { icon: string; name_th: string; count: number }[];
+  nextReleaseAt: string;
 }> {
-  const [totalRow, newRow] = await Promise.all([
+  const sevenDaysAgo = sql`to_char(now() - interval '7 days', 'YYYY-MM-DD HH24:MI:SS')`;
+
+  const [totalRow, newBySubjectRows] = await Promise.all([
     db
       .select({ count: sql<number>`count(*)` })
       .from(mcqQuestions)
       .where(eq(mcqQuestions.status, "active")),
     db
-      .select({ count: sql<number>`count(*)` })
+      .select({
+        icon: mcqSubjects.icon,
+        name_th: mcqSubjects.name_th,
+        count: sql<number>`count(*)`,
+      })
       .from(mcqQuestions)
-      .where(
-        and(
-          eq(mcqQuestions.status, "active"),
-          sql`${mcqQuestions.created_at} >= to_char(now() - interval '7 days', 'YYYY-MM-DD HH24:MI:SS')`
-        )
-      ),
+      .leftJoin(mcqSubjects, eq(mcqQuestions.subject_id, mcqSubjects.id))
+      .where(and(
+        eq(mcqQuestions.status, "active"),
+        sql`${mcqQuestions.created_at} >= ${sevenDaysAgo}`
+      ))
+      .groupBy(mcqSubjects.icon, mcqSubjects.name_th)
+      .orderBy(sql`count(*) desc`),
   ]);
+
+  const newBySubject = newBySubjectRows
+    .filter(r => r.name_th)
+    .map(r => ({ icon: r.icon ?? "📝", name_th: r.name_th!, count: Number(r.count) }));
+
+  const newThisWeek = newBySubject.reduce((s, r) => s + r.count, 0);
 
   // Next Sunday 00:00 Bangkok (UTC+7)
   const now = new Date();
-  const bangkokOffset = 7 * 60; // minutes
+  const bangkokOffset = 7 * 60;
   const localMs = now.getTime() + (bangkokOffset + now.getTimezoneOffset()) * 60000;
   const localNow = new Date(localMs);
   const daysUntilSunday = (7 - localNow.getDay()) % 7 || 7;
@@ -130,7 +144,8 @@ export async function getNewQuestionsStats(): Promise<{
 
   return {
     totalActive: Number(totalRow[0]?.count ?? 0),
-    newThisWeek: Number(newRow[0]?.count ?? 0),
+    newThisWeek,
+    newBySubject,
     nextReleaseAt,
   };
 }

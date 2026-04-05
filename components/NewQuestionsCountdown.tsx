@@ -3,9 +3,16 @@
 import { useEffect, useState } from "react";
 import { Sparkles, Clock, BookOpen } from "lucide-react";
 
+interface SubjectStat {
+  icon: string;
+  name_th: string;
+  count: number;
+}
+
 interface Props {
   totalActive: number;
   newThisWeek: number;
+  newBySubject: SubjectStat[];
   nextReleaseAt: string;
 }
 
@@ -22,8 +29,7 @@ function Digit({ value, label }: { value: number; label: string }) {
   );
 }
 
-export default function NewQuestionsCountdown({ totalActive, newThisWeek, nextReleaseAt }: Props) {
-  // ใช้ null เป็น initial state เพื่อป้องกัน hydration mismatch
+export default function NewQuestionsCountdown({ totalActive, newThisWeek, newBySubject, nextReleaseAt }: Props) {
   const [remaining, setRemaining] = useState<{
     days: number; hours: number; minutes: number; seconds: number; done: boolean;
   } | null>(null);
@@ -47,7 +53,7 @@ export default function NewQuestionsCountdown({ totalActive, newThisWeek, nextRe
 
   return (
     <div className="mt-8 flex flex-col items-center gap-4">
-      {/* Stats */}
+      {/* Total + new badge */}
       <div className="flex items-center gap-3 flex-wrap justify-center">
         <div className="flex items-center gap-2 bg-white/10 border border-white/20 text-white rounded-full px-4 py-1.5 text-sm">
           <BookOpen className="h-3.5 w-3.5 text-brand-light" />
@@ -63,7 +69,23 @@ export default function NewQuestionsCountdown({ totalActive, newThisWeek, nextRe
         )}
       </div>
 
-      {/* Countdown — render only after client mount */}
+      {/* Subject breakdown */}
+      {newBySubject.length > 0 && (
+        <div className="flex flex-wrap justify-center gap-2 max-w-lg">
+          {newBySubject.slice(0, 6).map((s) => (
+            <span
+              key={s.name_th}
+              className="flex items-center gap-1 bg-white/8 border border-white/15 text-white/70 rounded-full px-3 py-1 text-xs"
+            >
+              <span>{s.icon}</span>
+              <span>{s.name_th}</span>
+              <span className="text-green-300 font-bold">+{s.count}</span>
+            </span>
+          ))}
+        </div>
+      )}
+
+      {/* Countdown */}
       {remaining && (
         <div className="flex flex-col items-center gap-2">
           <div className="flex items-center gap-1.5 text-white/50 text-xs">
