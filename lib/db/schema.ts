@@ -251,7 +251,41 @@ export const userChallenges = pgTable(
   (t) => [uniqueIndex("uq_user_challenge").on(t.user_id, t.challenge_id)]
 );
 
+// ========================================
+// 11. Invoices
+// ========================================
+export const invoices = pgTable("invoices", {
+  id: text("id")
+    .primaryKey()
+    .default(sql`generate_hex_id()`),
+  invoice_number: text("invoice_number").notNull().unique(),
+  user_id: text("user_id").references(() => users.id, { onDelete: "cascade" }),
+  order_id: text("order_id").references(() => paymentOrders.id),
+  payment_method: text("payment_method").notNull().default("stripe"),
+  stripe_session_id: text("stripe_session_id"),
+  plan_type: text("plan_type"),
+  order_type: text("order_type", { enum: ["subscription", "set"] }),
+  set_name: text("set_name"),
+  amount: real("amount").notNull(),
+  vat_amount: real("vat_amount").notNull(),
+  total_amount: real("total_amount").notNull(),
+  buyer_name: text("buyer_name"),
+  buyer_tax_id: text("buyer_tax_id"),
+  buyer_address: text("buyer_address"),
+  buyer_email: text("buyer_email"),
+  status: text("status", { enum: ["paid", "voided"] })
+    .notNull()
+    .default("paid"),
+  issued_at: text("issued_at")
+    .notNull()
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+  created_at: text("created_at")
+    .notNull()
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+});
+
 // Types
+export type Invoice = typeof invoices.$inferSelect;
 export type User = typeof users.$inferSelect;
 export type McqSubject = typeof mcqSubjects.$inferSelect;
 export type McqQuestion = typeof mcqQuestions.$inferSelect;
