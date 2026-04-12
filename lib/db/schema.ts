@@ -25,6 +25,14 @@ export const users = pgTable("users", {
     .notNull()
     .default("free"),
   membership_expires_at: text("membership_expires_at"),
+  onboarding_done: boolean("onboarding_done").notNull().default(false),
+  daily_goal: integer("daily_goal").notNull().default(20),
+  target_exam: text("target_exam"),
+  weak_subjects: jsonb("weak_subjects").default(sql`'[]'::jsonb`),
+  line_user_id: text("line_user_id"),
+  line_linked_at: text("line_linked_at"),
+  referral_code: text("referral_code").unique(),
+  referred_by: text("referred_by"),
   created_at: text("created_at")
     .notNull()
     .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
@@ -231,6 +239,8 @@ export const paymentOrders = pgTable("payment_orders", {
   invoice_tax_id: text("invoice_tax_id"),
   invoice_address: text("invoice_address"),
   invoice_branch: text("invoice_branch"),
+  stripe_session_id: text("stripe_session_id"),
+  payment_method: text("payment_method").default("stripe"),
 });
 
 // ========================================
@@ -284,7 +294,179 @@ export const invoices = pgTable("invoices", {
     .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
 });
 
+// ========================================
+// 12. Exams (MEQ — Progressive Case)
+// ========================================
+export const exams = pgTable("exams", {
+  id: text("id")
+    .primaryKey()
+    .default(sql`generate_hex_id()`),
+  title: text("title").notNull(),
+  category: text("category").notNull(),
+  difficulty: text("difficulty", { enum: ["easy", "medium", "hard"] })
+    .notNull()
+    .default("medium"),
+  status: text("status", { enum: ["draft", "published", "archived"] })
+    .notNull()
+    .default("published"),
+  is_free: boolean("is_free").notNull().default(false),
+  publish_date: text("publish_date"),
+  created_at: text("created_at")
+    .notNull()
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+});
+
+// ========================================
+// 13. Exam Parts (MEQ parts — 6 ตอนต่อเคส)
+// ========================================
+export const examParts = pgTable("exam_parts", {
+  id: text("id")
+    .primaryKey()
+    .default(sql`generate_hex_id()`),
+  exam_id: text("exam_id")
+    .notNull()
+    .references(() => exams.id, { onDelete: "cascade" }),
+  part_number: integer("part_number").notNull(),
+  scenario: text("scenario").notNull(),
+  question: text("question").notNull(),
+  answer: text("answer").notNull(),
+  key_points: jsonb("key_points").default(sql`'[]'::jsonb`),
+  time_minutes: integer("time_minutes").notNull().default(10),
+});
+
+// ========================================
+// 14. Long Cases (OSCE-style — AI Patient Simulation)
+// ========================================
+export const longCases = pgTable("long_cases", {
+  id: text("id")
+    .primaryKey()
+    .default(sql`generate_hex_id()`),
+  title: text("title").notNull(),
+  specialty: text("specialty").notNull(),
+  difficulty: text("difficulty", { enum: ["easy", "medium", "hard"] })
+    .notNull()
+    .default("medium"),
+  patient_info: jsonb("patient_info").notNull(),
+  history_script: jsonb("history_script").notNull(),
+  pe_findings: jsonb("pe_findings").notNull(),
+  lab_results: jsonb("lab_results").notNull(),
+  correct_diagnosis: text("correct_diagnosis").notNull(),
+  accepted_ddx: jsonb("accepted_ddx").default(sql`'[]'::jsonb`),
+  management_plan: text("management_plan").notNull(),
+  scoring_rubric: jsonb("scoring_rubric").notNull(),
+  status: text("status", { enum: ["draft", "published", "archived"] })
+    .notNull()
+    .default("published"),
+  created_at: text("created_at")
+    .notNull()
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+});
+
+// ========================================
+// 15. Long Case Sessions (user play-through)
+// ========================================
+export const longCaseSessions = pgTable("long_case_sessions", {
+  id: text("id")
+    .primaryKey()
+    .default(sql`generate_hex_id()`),
+  user_id: text("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
+  long_case_id: text("long_case_id")
+    .notNull()
+    .references(() => longCases.id, { onDelete: "cascade" }),
+  phase: text("phase", {
+    enum: ["history", "pe_lab", "diagnosis", "examiner", "scoring", "completed"],
+  })
+    .notNull()
+    .default("history"),
+  history_messages: jsonb("history_messages").default(sql`'[]'::jsonb`),
+  selected_pe: jsonb("selected_pe").default(sql`'[]'::jsonb`),
+  selected_labs: jsonb("selected_labs").default(sql`'[]'::jsonb`),
+  diagnosis_submission: jsonb("diagnosis_submission"),
+  examiner_messages: jsonb("examiner_messages").default(sql`'[]'::jsonb`),
+  scores: jsonb("scores"),
+  total_score: real("total_score"),
+  completed_at: text("completed_at"),
+  created_at: text("created_at")
+    .notNull()
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+});
+
+// ========================================
+// 16. Referrals
+// ========================================
+export const referrals = pgTable("referrals", {
+  id: text("id")
+    .primaryKey()
+    .default(sql`generate_hex_id()`),
+  referrer_id: text("referrer_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
+  referred_id: text("referred_id").references(() => users.id, {
+    onDelete: "set null",
+  }),
+  code: text("code").notNull().unique(),
+  status: text("status", { enum: ["pending", "rewarded"] })
+    .notNull()
+    .default("pending"),
+  reward_days: integer("reward_days").notNull().default(30),
+  rewarded_at: text("rewarded_at"),
+  created_at: text("created_at")
+    .notNull()
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+});
+
+// ========================================
+// 17. LINE Link Codes (for OA linking)
+// ========================================
+export const lineLinkCodes = pgTable("line_link_codes", {
+  id: text("id")
+    .primaryKey()
+    .default(sql`generate_hex_id()`),
+  user_id: text("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
+  code: text("code").notNull().unique(),
+  expires_at: text("expires_at").notNull(),
+  created_at: text("created_at")
+    .notNull()
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+});
+
+// ========================================
+// 18. Blog Posts (AI auto-generated)
+// ========================================
+export const blogPosts = pgTable("blog_posts", {
+  id: text("id")
+    .primaryKey()
+    .default(sql`generate_hex_id()`),
+  slug: text("slug").notNull().unique(),
+  title: text("title").notNull(),
+  description: text("description"),
+  category: text("category"),
+  reading_time: integer("reading_time").notNull().default(3),
+  content: text("content").notNull(),
+  cover_image: text("cover_image"),
+  published_at: text("published_at")
+    .notNull()
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+});
+
+// ========================================
+// 19. App Settings (key-value store)
+// ========================================
+export const appSettings = pgTable("app_settings", {
+  key: text("key").primaryKey(),
+  value: text("value").notNull(),
+  updated_at: text("updated_at")
+    .notNull()
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+});
+
+// ========================================
 // Types
+// ========================================
 export type Invoice = typeof invoices.$inferSelect;
 export type User = typeof users.$inferSelect;
 export type McqSubject = typeof mcqSubjects.$inferSelect;
@@ -294,3 +476,11 @@ export type McqSession = typeof mcqSessions.$inferSelect;
 export type QuestionSet = typeof questionSets.$inferSelect;
 export type SetPurchase = typeof setPurchases.$inferSelect;
 export type PaymentOrder = typeof paymentOrders.$inferSelect;
+export type Exam = typeof exams.$inferSelect;
+export type ExamPart = typeof examParts.$inferSelect;
+export type LongCase = typeof longCases.$inferSelect;
+export type LongCaseSession = typeof longCaseSessions.$inferSelect;
+export type Referral = typeof referrals.$inferSelect;
+export type LineLinkCode = typeof lineLinkCodes.$inferSelect;
+export type BlogPost = typeof blogPosts.$inferSelect;
+export type AppSetting = typeof appSettings.$inferSelect;
