@@ -76,6 +76,7 @@ export async function sendFulfillmentNotifications(
             <p>Order ID: ${data.orderId}</p>
           `,
         })
+        .then(() => {})
         .catch((err) => console.error("[notify] admin email failed:", err))
     );
   }
@@ -100,6 +101,7 @@ export async function sendFulfillmentNotifications(
             <p>ขอบคุณที่ใช้บริการ PharmRoo</p>
           `,
         })
+        .then(() => {})
         .catch((err) => console.error("[notify] buyer email failed:", err))
     );
   }
