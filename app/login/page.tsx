@@ -75,6 +75,19 @@ function LoginForm() {
             เข้าสู่ระบบด้วย Google
           </Button>
 
+          {/* LINE Login */}
+          <Button
+            type="button"
+            variant="outline"
+            className="w-full flex items-center gap-3"
+            onClick={() => { window.location.href = "/api/auth/line?mode=login"; }}
+          >
+            <svg className="h-4 w-4" viewBox="0 0 24 24" fill="#06C755">
+              <path d="M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.814 4.27 8.846 10.035 9.608.391.084.922.258 1.057.592.121.303.079.778.039 1.085l-.171 1.027c-.053.303-.242 1.186 1.039.647 1.281-.54 6.911-4.069 9.428-6.967C23.076 14.405 24 12.48 24 10.304"/>
+            </svg>
+            เข้าสู่ระบบด้วย LINE
+          </Button>
+
           <div className="flex items-center gap-3">
             <div className="flex-1 border-t" />
             <span className="text-xs text-muted-foreground">หรือใช้อีเมล</span>

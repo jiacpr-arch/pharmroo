@@ -2,12 +2,12 @@
 
 import { useSession, signOut } from "next-auth/react";
 import { useRouter } from "next/navigation";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { User, Mail, Crown, Calendar, LogOut, BarChart3, ArrowRight } from "lucide-react";
+import { User, Mail, Crown, Calendar, LogOut, BarChart3, ArrowRight, Share2, MessageCircle, Copy, Check } from "lucide-react";
 import StudentStats from "@/components/StudentStats";
 
 const membershipLabels: Record<string, string> = {
@@ -109,6 +109,30 @@ export default function ProfilePage() {
           </CardContent>
         </Card>
 
+        {/* LINE OA Linking */}
+        <Card>
+          <CardHeader>
+            <h3 className="font-semibold flex items-center gap-2">
+              <MessageCircle className="h-5 w-5 text-[#06C755]" /> เชื่อมต่อ LINE
+            </h3>
+          </CardHeader>
+          <CardContent>
+            <LineLinkSection />
+          </CardContent>
+        </Card>
+
+        {/* Referral */}
+        <Card>
+          <CardHeader>
+            <h3 className="font-semibold flex items-center gap-2">
+              <Share2 className="h-5 w-5 text-brand" /> ชวนเพื่อน +30 วัน
+            </h3>
+          </CardHeader>
+          <CardContent>
+            <ReferralSection />
+          </CardContent>
+        </Card>
+
         {/* Student Stats Dashboard */}
         <div>
           <div className="flex items-center justify-between mb-4">
@@ -130,6 +154,121 @@ export default function ProfilePage() {
           onClick={() => signOut({ callbackUrl: "/" })}
         >
           <LogOut className="h-4 w-4" /> ออกจากระบบ
+        </Button>
+      </div>
+    </div>
+  );
+}
+
+function LineLinkSection() {
+  const [code, setCode] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false);
+  const [copied, setCopied] = useState(false);
+
+  const generateCode = async () => {
+    setLoading(true);
+    try {
+      const res = await fetch("/api/line/generate-code", { method: "POST" });
+      const data = await res.json();
+      setCode(data.code);
+    } catch {
+      // ignore
+    }
+    setLoading(false);
+  };
+
+  const copyCode = () => {
+    if (code) {
+      navigator.clipboard.writeText(code);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    }
+  };
+
+  if (!code) {
+    return (
+      <div className="space-y-3">
+        <p className="text-sm text-muted-foreground">
+          เชื่อมต่อ LINE เพื่อรับแจ้งเตือนสรุปผลสัปดาห์ และเตือนก่อนหมดอายุ
+        </p>
+        <Button
+          onClick={generateCode}
+          disabled={loading}
+          className="w-full bg-[#06C755] hover:bg-[#05b04d] text-white"
+        >
+          {loading ? "กำลังสร้างรหัส..." : "สร้างรหัสเชื่อมต่อ"}
+        </Button>
+      </div>
+    );
+  }
+
+  return (
+    <div className="space-y-3">
+      <p className="text-sm text-muted-foreground">
+        คัดลอกรหัสด้านล่าง แล้วส่งในแชท LINE OA @pharmroo
+      </p>
+      <div className="flex items-center gap-2">
+        <code className="flex-1 bg-muted px-4 py-2 rounded-lg text-center font-mono font-bold text-lg">
+          {code}
+        </code>
+        <Button variant="outline" size="sm" onClick={copyCode}>
+          {copied ? <Check className="h-4 w-4 text-green-500" /> : <Copy className="h-4 w-4" />}
+        </Button>
+      </div>
+      <p className="text-xs text-muted-foreground">รหัสหมดอายุใน 24 ชั่วโมง</p>
+    </div>
+  );
+}
+
+function ReferralSection() {
+  const [link, setLink] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false);
+  const [copied, setCopied] = useState(false);
+
+  const generateLink = async () => {
+    setLoading(true);
+    try {
+      const res = await fetch("/api/referral/generate", { method: "POST" });
+      const data = await res.json();
+      setLink(data.link);
+    } catch {
+      // ignore
+    }
+    setLoading(false);
+  };
+
+  const copyLink = () => {
+    if (link) {
+      navigator.clipboard.writeText(link);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    }
+  };
+
+  if (!link) {
+    return (
+      <div className="space-y-3">
+        <p className="text-sm text-muted-foreground">
+          ชวนเพื่อนสมัคร PharmRoo เมื่อเพื่อนจ่ายเงิน คุณได้ +30 วันฟรี!
+        </p>
+        <Button onClick={generateLink} disabled={loading} variant="outline" className="w-full">
+          {loading ? "กำลังสร้างลิงก์..." : "สร้างลิงก์เชิญเพื่อน"}
+        </Button>
+      </div>
+    );
+  }
+
+  return (
+    <div className="space-y-3">
+      <p className="text-sm text-muted-foreground">
+        แชร์ลิงก์นี้ให้เพื่อน เมื่อเพื่อนสมัครและจ่ายเงิน คุณได้ +30 วันฟรี!
+      </p>
+      <div className="flex items-center gap-2">
+        <code className="flex-1 bg-muted px-3 py-2 rounded-lg text-xs truncate">
+          {link}
+        </code>
+        <Button variant="outline" size="sm" onClick={copyLink}>
+          {copied ? <Check className="h-4 w-4 text-green-500" /> : <Copy className="h-4 w-4" />}
         </Button>
       </div>
     </div>

@@ -25,6 +25,14 @@ export const users = pgTable("users", {
     .notNull()
     .default("free"),
   membership_expires_at: text("membership_expires_at"),
+  onboarding_done: boolean("onboarding_done").notNull().default(false),
+  daily_goal: integer("daily_goal").notNull().default(20),
+  target_exam: text("target_exam"),
+  weak_subjects: jsonb("weak_subjects").default(sql`'[]'::jsonb`),
+  line_user_id: text("line_user_id"),
+  line_linked_at: text("line_linked_at"),
+  referral_code: text("referral_code").unique(),
+  referred_by: text("referred_by"),
   created_at: text("created_at")
     .notNull()
     .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
@@ -231,6 +239,8 @@ export const paymentOrders = pgTable("payment_orders", {
   invoice_tax_id: text("invoice_tax_id"),
   invoice_address: text("invoice_address"),
   invoice_branch: text("invoice_branch"),
+  stripe_session_id: text("stripe_session_id"),
+  payment_method: text("payment_method").default("stripe"),
 });
 
 // ========================================
@@ -284,7 +294,80 @@ export const invoices = pgTable("invoices", {
     .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
 });
 
+// ========================================
+// 12. Referrals
+// ========================================
+export const referrals = pgTable("referrals", {
+  id: text("id")
+    .primaryKey()
+    .default(sql`generate_hex_id()`),
+  referrer_id: text("referrer_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
+  referred_id: text("referred_id").references(() => users.id, {
+    onDelete: "set null",
+  }),
+  code: text("code").notNull().unique(),
+  status: text("status", { enum: ["pending", "rewarded"] })
+    .notNull()
+    .default("pending"),
+  reward_days: integer("reward_days").notNull().default(30),
+  rewarded_at: text("rewarded_at"),
+  created_at: text("created_at")
+    .notNull()
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+});
+
+// ========================================
+// 17. LINE Link Codes (for OA linking)
+// ========================================
+export const lineLinkCodes = pgTable("line_link_codes", {
+  id: text("id")
+    .primaryKey()
+    .default(sql`generate_hex_id()`),
+  user_id: text("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
+  code: text("code").notNull().unique(),
+  expires_at: text("expires_at").notNull(),
+  created_at: text("created_at")
+    .notNull()
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+});
+
+// ========================================
+// 18. Blog Posts (AI auto-generated)
+// ========================================
+export const blogPosts = pgTable("blog_posts", {
+  id: text("id")
+    .primaryKey()
+    .default(sql`generate_hex_id()`),
+  slug: text("slug").notNull().unique(),
+  title: text("title").notNull(),
+  description: text("description"),
+  category: text("category"),
+  reading_time: integer("reading_time").notNull().default(3),
+  content: text("content").notNull(),
+  cover_image: text("cover_image"),
+  published_at: text("published_at")
+    .notNull()
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+});
+
+// ========================================
+// 19. App Settings (key-value store)
+// ========================================
+export const appSettings = pgTable("app_settings", {
+  key: text("key").primaryKey(),
+  value: text("value").notNull(),
+  updated_at: text("updated_at")
+    .notNull()
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+});
+
+// ========================================
 // Types
+// ========================================
 export type Invoice = typeof invoices.$inferSelect;
 export type User = typeof users.$inferSelect;
 export type McqSubject = typeof mcqSubjects.$inferSelect;
@@ -294,3 +377,7 @@ export type McqSession = typeof mcqSessions.$inferSelect;
 export type QuestionSet = typeof questionSets.$inferSelect;
 export type SetPurchase = typeof setPurchases.$inferSelect;
 export type PaymentOrder = typeof paymentOrders.$inferSelect;
+export type Referral = typeof referrals.$inferSelect;
+export type LineLinkCode = typeof lineLinkCodes.$inferSelect;
+export type BlogPost = typeof blogPosts.$inferSelect;
+export type AppSetting = typeof appSettings.$inferSelect;

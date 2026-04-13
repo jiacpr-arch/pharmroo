@@ -69,7 +69,7 @@ export default function PaymentSetPage({ params }: { params: Promise<{ id: strin
     setStripeLoading(true);
     setError("");
     try {
-      const res = await fetch("/api/stripe/checkout", {
+      const res = await fetch("/api/billing/checkout", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ type: "set", setId: id, invoiceData }),

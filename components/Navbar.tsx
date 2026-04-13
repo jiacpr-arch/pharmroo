@@ -13,8 +13,8 @@ const navLinks = [
   { href: "/ple", label: "PLE Exam" },
   { href: "/sets", label: "ชุดข้อสอบ" },
   { href: "/pricing", label: "แพ็กเกจ" },
+  { href: "/blog", label: "บทความ" },
   { href: "/dashboard", label: "Dashboard" },
-  { href: "/challenges", label: "Challenges" },
 ];
 
 export default function Navbar() {

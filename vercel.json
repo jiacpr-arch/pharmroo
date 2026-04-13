@@ -3,11 +3,33 @@
     {
       "path": "/api/cron/generate-daily",
       "schedule": "0 2 * * *"
+    },
+    {
+      "path": "/api/billing/reconcile",
+      "schedule": "0 3 * * *"
+    },
+    {
+      "path": "/api/line/expiry-warning",
+      "schedule": "0 2 * * *"
+    },
+    {
+      "path": "/api/line/weekly-summary",
+      "schedule": "0 3 * * 0"
+    },
+    {
+      "path": "/api/blog/generate",
+      "schedule": "0 19 * * 1,4"
     }
   ],
   "functions": {
     "app/api/cron/generate-daily/route.ts": {
       "maxDuration": 300
+    },
+    "app/api/blog/generate/route.ts": {
+      "maxDuration": 120
+    },
+    "app/api/billing/reconcile/route.ts": {
+      "maxDuration": 60
     }
   }
 }
