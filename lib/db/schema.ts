@@ -295,106 +295,7 @@ export const invoices = pgTable("invoices", {
 });
 
 // ========================================
-// 12. Exams (MEQ — Progressive Case)
-// ========================================
-export const exams = pgTable("exams", {
-  id: text("id")
-    .primaryKey()
-    .default(sql`generate_hex_id()`),
-  title: text("title").notNull(),
-  category: text("category").notNull(),
-  difficulty: text("difficulty", { enum: ["easy", "medium", "hard"] })
-    .notNull()
-    .default("medium"),
-  status: text("status", { enum: ["draft", "published", "archived"] })
-    .notNull()
-    .default("published"),
-  is_free: boolean("is_free").notNull().default(false),
-  publish_date: text("publish_date"),
-  created_at: text("created_at")
-    .notNull()
-    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
-});
-
-// ========================================
-// 13. Exam Parts (MEQ parts — 6 ตอนต่อเคส)
-// ========================================
-export const examParts = pgTable("exam_parts", {
-  id: text("id")
-    .primaryKey()
-    .default(sql`generate_hex_id()`),
-  exam_id: text("exam_id")
-    .notNull()
-    .references(() => exams.id, { onDelete: "cascade" }),
-  part_number: integer("part_number").notNull(),
-  scenario: text("scenario").notNull(),
-  question: text("question").notNull(),
-  answer: text("answer").notNull(),
-  key_points: jsonb("key_points").default(sql`'[]'::jsonb`),
-  time_minutes: integer("time_minutes").notNull().default(10),
-});
-
-// ========================================
-// 14. Long Cases (OSCE-style — AI Patient Simulation)
-// ========================================
-export const longCases = pgTable("long_cases", {
-  id: text("id")
-    .primaryKey()
-    .default(sql`generate_hex_id()`),
-  title: text("title").notNull(),
-  specialty: text("specialty").notNull(),
-  difficulty: text("difficulty", { enum: ["easy", "medium", "hard"] })
-    .notNull()
-    .default("medium"),
-  patient_info: jsonb("patient_info").notNull(),
-  history_script: jsonb("history_script").notNull(),
-  pe_findings: jsonb("pe_findings").notNull(),
-  lab_results: jsonb("lab_results").notNull(),
-  correct_diagnosis: text("correct_diagnosis").notNull(),
-  accepted_ddx: jsonb("accepted_ddx").default(sql`'[]'::jsonb`),
-  management_plan: text("management_plan").notNull(),
-  scoring_rubric: jsonb("scoring_rubric").notNull(),
-  status: text("status", { enum: ["draft", "published", "archived"] })
-    .notNull()
-    .default("published"),
-  created_at: text("created_at")
-    .notNull()
-    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
-});
-
-// ========================================
-// 15. Long Case Sessions (user play-through)
-// ========================================
-export const longCaseSessions = pgTable("long_case_sessions", {
-  id: text("id")
-    .primaryKey()
-    .default(sql`generate_hex_id()`),
-  user_id: text("user_id")
-    .notNull()
-    .references(() => users.id, { onDelete: "cascade" }),
-  long_case_id: text("long_case_id")
-    .notNull()
-    .references(() => longCases.id, { onDelete: "cascade" }),
-  phase: text("phase", {
-    enum: ["history", "pe_lab", "diagnosis", "examiner", "scoring", "completed"],
-  })
-    .notNull()
-    .default("history"),
-  history_messages: jsonb("history_messages").default(sql`'[]'::jsonb`),
-  selected_pe: jsonb("selected_pe").default(sql`'[]'::jsonb`),
-  selected_labs: jsonb("selected_labs").default(sql`'[]'::jsonb`),
-  diagnosis_submission: jsonb("diagnosis_submission"),
-  examiner_messages: jsonb("examiner_messages").default(sql`'[]'::jsonb`),
-  scores: jsonb("scores"),
-  total_score: real("total_score"),
-  completed_at: text("completed_at"),
-  created_at: text("created_at")
-    .notNull()
-    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
-});
-
-// ========================================
-// 16. Referrals
+// 12. Referrals
 // ========================================
 export const referrals = pgTable("referrals", {
   id: text("id")
@@ -476,10 +377,6 @@ export type McqSession = typeof mcqSessions.$inferSelect;
 export type QuestionSet = typeof questionSets.$inferSelect;
 export type SetPurchase = typeof setPurchases.$inferSelect;
 export type PaymentOrder = typeof paymentOrders.$inferSelect;
-export type Exam = typeof exams.$inferSelect;
-export type ExamPart = typeof examParts.$inferSelect;
-export type LongCase = typeof longCases.$inferSelect;
-export type LongCaseSession = typeof longCaseSessions.$inferSelect;
 export type Referral = typeof referrals.$inferSelect;
 export type LineLinkCode = typeof lineLinkCodes.$inferSelect;
 export type BlogPost = typeof blogPosts.$inferSelect;
