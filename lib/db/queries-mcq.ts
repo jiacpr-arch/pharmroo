@@ -373,6 +373,20 @@ export async function getStudentStatsForAdmin(userId: string) {
   };
 }
 
+// ---- helpers ----
+
+/** Safely parse JSONB fields that might be double-encoded as strings */
+function parseJsonbField(value: unknown): unknown {
+  if (typeof value === "string") {
+    try {
+      return JSON.parse(value);
+    } catch {
+      return value;
+    }
+  }
+  return value;
+}
+
 // ---- mappers ----
 
 function toMcqSubject(row: typeof mcqSubjects.$inferSelect): McqSubject {
@@ -400,10 +414,10 @@ function toMcqQuestion(
     question_number: row.question_number,
     scenario: row.scenario,
     image_url: row.image_url,
-    choices: row.choices as McqQuestion["choices"],
+    choices: parseJsonbField(row.choices) as McqQuestion["choices"],
     correct_answer: row.correct_answer,
     explanation: row.explanation,
-    detailed_explanation: row.detailed_explanation as McqQuestion["detailed_explanation"],
+    detailed_explanation: parseJsonbField(row.detailed_explanation) as McqQuestion["detailed_explanation"],
     difficulty: row.difficulty,
     is_ai_enhanced: row.is_ai_enhanced,
     ai_notes: row.ai_notes,
