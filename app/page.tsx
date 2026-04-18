@@ -194,6 +194,18 @@ export default async function HomePage() {
         </div>
       </section>
 
+      {/* Goody Widget */}
+      <section className="py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <iframe
+            src="https://goody-bay.vercel.app/?site=pharmru"
+            style={{ width: "100%", maxWidth: 900, height: 420, border: 0, display: "block", margin: "0 auto" }}
+            loading="lazy"
+            title="วันดีๆ ที่ควรรู้"
+          />
+        </div>
+      </section>
+
       {/* Pricing */}
       <section className="py-16 bg-muted/30" id="pricing">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
