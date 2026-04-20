@@ -19,9 +19,13 @@ import { Lock } from "lucide-react";
 
 interface McqPracticeProps {
   questions: McqQuestion[];
+  examType?: "PLE-PC" | "PLE-CC1" | "NLE";
 }
 
-export default function McqPractice({ questions }: McqPracticeProps) {
+export default function McqPractice({
+  questions,
+  examType = "PLE-CC1",
+}: McqPracticeProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [showResult, setShowResult] = useState(false);
@@ -46,7 +50,7 @@ export default function McqPractice({ questions }: McqPracticeProps) {
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
             mode: "practice",
-            exam_type: "PLE-CC1",
+            exam_type: examType,
             total_questions: questions.length,
           }),
         });
@@ -59,7 +63,7 @@ export default function McqPractice({ questions }: McqPracticeProps) {
       }
     }
     init();
-  }, [questions.length, authSession]);
+  }, [questions.length, authSession, examType]);
 
   // Reset question timer when question changes
   useEffect(() => {

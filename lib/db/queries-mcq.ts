@@ -1,10 +1,31 @@
 import { db } from "./index";
 import { mcqSubjects, mcqQuestions, mcqAttempts, mcqSessions, questionSets, setPurchases, setQuestions } from "./schema";
-import { eq, and, sql, desc } from "drizzle-orm";
+import { eq, and, inArray, sql, desc } from "drizzle-orm";
 import type { McqSubject, McqQuestion, QuestionSet, SetPurchase } from "../types-mcq";
 
-export async function getMcqSubjects(): Promise<McqSubject[]> {
-  const rows = await db.select().from(mcqSubjects).orderBy(mcqSubjects.name_th);
+export type ExamCategory = "pharmacy" | "nursing";
+
+const PHARMACY_EXAM_TYPES = ["PLE-PC", "PLE-CC1", "both"] as const;
+const NURSING_EXAM_TYPES = ["NLE"] as const;
+
+export async function getMcqSubjects(options?: {
+  examCategory?: ExamCategory;
+}): Promise<McqSubject[]> {
+  const allowed =
+    options?.examCategory === "pharmacy"
+      ? [...PHARMACY_EXAM_TYPES]
+      : options?.examCategory === "nursing"
+        ? [...NURSING_EXAM_TYPES]
+        : null;
+
+  const rows = allowed
+    ? await db
+        .select()
+        .from(mcqSubjects)
+        .where(inArray(mcqSubjects.exam_type, allowed))
+        .orderBy(mcqSubjects.name_th)
+    : await db.select().from(mcqSubjects).orderBy(mcqSubjects.name_th);
+
   return rows.map(toMcqSubject);
 }
 
@@ -33,7 +54,7 @@ export async function getMcqQuestions(options?: {
 
   const conditions = [eq(mcqQuestions.status, "active")];
   if (options?.subjectId) conditions.push(eq(mcqQuestions.subject_id, options.subjectId));
-  if (options?.examType) conditions.push(eq(mcqQuestions.exam_type, options.examType as "PLE-PC" | "PLE-CC1"));
+  if (options?.examType) conditions.push(eq(mcqQuestions.exam_type, options.examType as "PLE-PC" | "PLE-CC1" | "NLE"));
   if (options?.examDay) conditions.push(eq(mcqQuestions.exam_day, options.examDay));
 
   const rows = await db
@@ -150,11 +171,31 @@ export async function getNewQuestionsStats(): Promise<{
   };
 }
 
-export async function getMcqSubjectCounts(): Promise<Record<string, number>> {
-  const rows = await db
-    .select({ subject_id: mcqQuestions.subject_id })
-    .from(mcqQuestions)
-    .where(eq(mcqQuestions.status, "active"));
+export async function getMcqSubjectCounts(
+  examCategory?: ExamCategory
+): Promise<Record<string, number>> {
+  const baseConditions = [eq(mcqQuestions.status, "active")];
+
+  const rows = examCategory
+    ? await db
+        .select({ subject_id: mcqQuestions.subject_id })
+        .from(mcqQuestions)
+        .innerJoin(mcqSubjects, eq(mcqQuestions.subject_id, mcqSubjects.id))
+        .where(
+          and(
+            ...baseConditions,
+            inArray(
+              mcqSubjects.exam_type,
+              examCategory === "pharmacy"
+                ? [...PHARMACY_EXAM_TYPES]
+                : [...NURSING_EXAM_TYPES]
+            )
+          )
+        )
+    : await db
+        .select({ subject_id: mcqQuestions.subject_id })
+        .from(mcqQuestions)
+        .where(eq(mcqQuestions.status, "active"));
 
   const counts: Record<string, number> = {};
   for (const row of rows) {

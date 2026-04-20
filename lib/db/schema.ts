@@ -57,7 +57,7 @@ export const mcqSubjects = pgTable("mcq_subjects", {
   name: text("name").notNull().unique(),
   name_th: text("name_th").notNull(),
   icon: text("icon").notNull().default("📝"),
-  exam_type: text("exam_type", { enum: ["PLE-PC", "PLE-CC1", "both"] })
+  exam_type: text("exam_type", { enum: ["PLE-PC", "PLE-CC1", "both", "NLE"] })
     .notNull()
     .default("both"),
   question_count: integer("question_count").notNull().default(0),
@@ -74,7 +74,7 @@ export const mcqQuestions = pgTable("mcq_questions", {
     .primaryKey()
     .default(sql`generate_hex_id()`),
   subject_id: text("subject_id").references(() => mcqSubjects.id),
-  exam_type: text("exam_type", { enum: ["PLE-PC", "PLE-CC1"] })
+  exam_type: text("exam_type", { enum: ["PLE-PC", "PLE-CC1", "NLE"] })
     .notNull()
     .default("PLE-CC1"),
   exam_source: text("exam_source"),
@@ -133,7 +133,7 @@ export const mcqSessions = pgTable("mcq_sessions", {
   mode: text("mode", { enum: ["practice", "mock"] })
     .notNull()
     .default("practice"),
-  exam_type: text("exam_type", { enum: ["PLE-PC", "PLE-CC1"] })
+  exam_type: text("exam_type", { enum: ["PLE-PC", "PLE-CC1", "NLE"] })
     .notNull()
     .default("PLE-CC1"),
   exam_day: integer("exam_day"),

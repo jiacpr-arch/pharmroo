@@ -20,7 +20,7 @@ async function PracticeContent({
   day?: 1 | 2;
 }) {
   const [subjects, questions] = await Promise.all([
-    getMcqSubjects(),
+    getMcqSubjects({ examCategory: "pharmacy" }),
     getMcqQuestions({
       subjectId,
       examType: "PLE-CC1",
