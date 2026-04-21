@@ -5,17 +5,19 @@ import type { McqSubject, McqQuestion, QuestionSet, SetPurchase } from "../types
 
 export type ExamCategory = "pharmacy" | "nursing";
 
-const PHARMACY_EXAM_TYPES = ["PLE-PC", "PLE-CC1", "both"] as const;
-const NURSING_EXAM_TYPES = ["NLE"] as const;
+const PHARMACY_SUBJECT_EXAM_TYPES = ["PLE-PC", "PLE-CC1", "both"] as const;
+const NURSING_SUBJECT_EXAM_TYPES = ["NLE"] as const;
+const PHARMACY_QUESTION_EXAM_TYPES = ["PLE-PC", "PLE-CC1"] as const;
+const NURSING_QUESTION_EXAM_TYPES = ["NLE"] as const;
 
 export async function getMcqSubjects(options?: {
   examCategory?: ExamCategory;
 }): Promise<McqSubject[]> {
   const allowed =
     options?.examCategory === "pharmacy"
-      ? [...PHARMACY_EXAM_TYPES]
+      ? [...PHARMACY_SUBJECT_EXAM_TYPES]
       : options?.examCategory === "nursing"
-        ? [...NURSING_EXAM_TYPES]
+        ? [...NURSING_SUBJECT_EXAM_TYPES]
         : null;
 
   const rows = allowed
@@ -127,9 +129,9 @@ export async function getNewQuestionsStats(options?: { examCategory?: ExamCatego
   const sevenDaysAgo = sql`to_char(now() - interval '7 days', 'YYYY-MM-DD HH24:MI:SS')`;
 
   const examTypes = options?.examCategory === "pharmacy"
-    ? [...PHARMACY_EXAM_TYPES]
+    ? [...PHARMACY_QUESTION_EXAM_TYPES]
     : options?.examCategory === "nursing"
-      ? [...NURSING_EXAM_TYPES]
+      ? [...NURSING_QUESTION_EXAM_TYPES]
       : null;
 
   const statusCond = eq(mcqQuestions.status, "active");
@@ -197,8 +199,8 @@ export async function getMcqSubjectCounts(
             inArray(
               mcqSubjects.exam_type,
               examCategory === "pharmacy"
-                ? [...PHARMACY_EXAM_TYPES]
-                : [...NURSING_EXAM_TYPES]
+                ? [...PHARMACY_SUBJECT_EXAM_TYPES]
+                : [...NURSING_SUBJECT_EXAM_TYPES]
             )
           )
         )
