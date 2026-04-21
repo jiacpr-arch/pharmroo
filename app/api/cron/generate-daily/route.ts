@@ -8,11 +8,11 @@ export const maxDuration = 300; // Pro plan: up to 300s
  * GET /api/cron/generate-daily  (Vercel Cron)
  * POST /api/cron/generate-daily (manual trigger)
  *
- * Generates 10–20 mixed-subject MCQ questions per day and saves them to Supabase.
+ * Generates new MCQ questions daily, with separate quotas per exam category.
  * Secured by CRON_SECRET environment variable.
  *
  * Optional JSON body (POST only):
- *   { "total": 15 }   — override total question count (default 15, min 10, max 20)
+ *   { "pharmacy_total": 12, "nursing_total": 5 }
  */
 async function handler(req: Request) {
   // ── Auth ─────────────────────────────────────────────────────────────────────
@@ -27,14 +27,18 @@ async function handler(req: Request) {
   }
 
   // ── Parse options ─────────────────────────────────────────────────────────────
-  let total = 15;
+  let pharmacyTotal = 12;
+  let nursingTotal = 5;
   try {
     const body = await req.json().catch(() => ({}));
-    if (typeof body.total === "number") {
-      total = Math.max(10, Math.min(20, body.total));
+    if (typeof body.pharmacy_total === "number") {
+      pharmacyTotal = Math.max(0, Math.min(20, body.pharmacy_total));
+    }
+    if (typeof body.nursing_total === "number") {
+      nursingTotal = Math.max(0, Math.min(20, body.nursing_total));
     }
   } catch {
-    // use default
+    // use defaults
   }
 
   // ── Load subject IDs from Supabase ────────────────────────────────────────────
@@ -53,28 +57,44 @@ async function handler(req: Request) {
   const subjectIdMap: Record<string, string> = {};
   for (const s of dbSubjects) subjectIdMap[s.name] = s.id;
 
-  // ── Pick subjects for today ───────────────────────────────────────────────────
+  // ── Build per-category job lists ─────────────────────────────────────────────
   const dayOfYear = Math.floor(
     (Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / 86_400_000
   );
 
-  const available = SUBJECT_CONFIGS.filter((s) => subjectIdMap[s.name]);
-  if (available.length === 0) {
+  const pharmacyPool = SUBJECT_CONFIGS.filter(
+    (s) => s.exam_type !== "NLE" && subjectIdMap[s.name]
+  );
+  const nursingPool = SUBJECT_CONFIGS.filter(
+    (s) => s.exam_type === "NLE" && subjectIdMap[s.name]
+  );
+
+  function pickJobs(pool: typeof SUBJECT_CONFIGS, total: number, offset: number) {
+    if (pool.length === 0 || total === 0) return [];
+    const num = Math.min(3, pool.length);
+    const picked = Array.from({ length: num }, (_, i) =>
+      pool[(dayOfYear + offset + i) % pool.length]
+    );
+    const perSubject = Math.ceil(total / num);
+    return picked.map((subject, i) => ({
+      subject,
+      count: i < num - 1 ? perSubject : total - perSubject * i,
+    }));
+  }
+
+  const allJobs = [
+    ...pickJobs(pharmacyPool, pharmacyTotal, 0),
+    ...pickJobs(nursingPool, nursingTotal, 100),
+  ];
+
+  if (allJobs.length === 0) {
     return NextResponse.json({ error: "No matching subjects in DB" }, { status: 500 });
   }
 
-  const numSubjects = Math.min(3, available.length);
-  const picked = Array.from({ length: numSubjects }, (_, i) =>
-    available[(dayOfYear + i) % available.length]
-  );
-
-  const perSubject = Math.ceil(total / numSubjects);
-
-  // ── Generate all subjects in parallel ────────────────────────────────────────
+  // ── Generate all jobs in parallel ────────────────────────────────────────────
   const generated = await Promise.all(
-    picked.map(async (subject, i) => {
+    allJobs.map(async ({ subject, count }) => {
       const subjectId = subjectIdMap[subject.name];
-      const count = i < picked.length - 1 ? perSubject : total - perSubject * i;
       try {
         const questions = await generateMcqBatch(subject, subjectId, Math.max(1, count), dayOfYear);
         return { subject, subjectId, questions };
@@ -113,6 +133,7 @@ async function handler(req: Request) {
   return NextResponse.json({
     date: new Date().toISOString().slice(0, 10),
     total_inserted: totalInserted,
+    quotas: { pharmacy: pharmacyTotal, nursing: nursingTotal },
     subjects: results,
   });
 }
