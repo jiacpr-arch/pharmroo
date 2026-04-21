@@ -3,7 +3,8 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { ArrowRight, BookOpen, Shuffle, Target } from "lucide-react";
-import { getMcqSubjects, getMcqSubjectCounts } from "@/lib/db/queries-mcq";
+import { getMcqSubjects, getMcqSubjectCounts, getNewQuestionsStats } from "@/lib/db/queries-mcq";
+import NewQuestionsCountdown from "@/components/NewQuestionsCountdown";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -15,24 +16,38 @@ export const metadata: Metadata = {
 export const dynamic = "force-dynamic";
 
 export default async function NursingPage() {
-  const [subjects, counts] = await Promise.all([
+  const [subjects, counts, stats] = await Promise.all([
     getMcqSubjects({ examCategory: "nursing" }),
     getMcqSubjectCounts("nursing"),
+    getNewQuestionsStats({ examCategory: "nursing" }).catch(() => ({
+      totalActive: 0,
+      newThisWeek: 0,
+      newBySubject: [] as { icon: string; name_th: string; count: number }[],
+      nextReleaseAt: new Date(Date.now() + 7 * 86400000).toISOString(),
+    })),
   ]);
-
-  const totalQuestions = Object.values(counts).reduce((a, b) => a + b, 0);
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
-      <div className="mb-8">
+      {/* Header */}
+      <div className="mb-6">
         <div className="flex items-center gap-2 mb-2">
           <Badge className="bg-rose-100 text-rose-700">NLE Exam</Badge>
-          <Badge variant="secondary">{totalQuestions} ข้อ</Badge>
         </div>
         <h1 className="text-3xl font-bold">ข้อสอบขึ้นทะเบียนสภาการพยาบาล</h1>
         <p className="mt-2 text-muted-foreground">
-          ฝึกทำข้อสอบ NLE แบบ MCQ ครบทุกสาขาการพยาบาล
+          ฝึกทำข้อสอบ NLE แบบ MCQ ครบทุกสาขาการพยาบาล พร้อมเฉลยละเอียด
         </p>
+      </div>
+
+      {/* Stats + countdown banner */}
+      <div className="mb-8 rounded-2xl bg-gradient-to-r from-rose-600 to-pink-600 px-6 py-6 flex flex-col items-center text-center">
+        <NewQuestionsCountdown
+          totalActive={stats.totalActive}
+          newThisWeek={stats.newThisWeek}
+          newBySubject={stats.newBySubject}
+          nextReleaseAt={stats.nextReleaseAt}
+        />
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">

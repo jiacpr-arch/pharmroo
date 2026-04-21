@@ -5,15 +5,15 @@ import Anthropic from "@anthropic-ai/sdk";
 export interface SubjectConfig {
   name: string;
   name_th: string;
-  exam_type: "PLE-CC1" | "PLE-PC1";
-  exam_day: 1 | 2;
+  exam_type: "PLE-CC1" | "PLE-PC1" | "NLE";
+  exam_day?: 1 | 2;
   topic_areas: string[];
 }
 
 export interface GeneratedQuestion {
   subject_id: string;
   exam_type: string;
-  exam_day: number;
+  exam_day?: number;
   scenario: string;
   choices: { label: string; text: string }[];
   correct_answer: string;
@@ -354,12 +354,133 @@ export const SUBJECT_CONFIGS: SubjectConfig[] = [
       "Budget impact analysis",
     ],
   },
+
+  // ─── NLE (Nursing Licensing Exam) subjects ────────────────────────────────────
+  {
+    name: "NursingAdult",
+    name_th: "การพยาบาลผู้ใหญ่",
+    exam_type: "NLE",
+    topic_areas: [
+      "Respiratory nursing: COPD, asthma, pneumonia, mechanical ventilation, oxygen therapy",
+      "Cardiovascular nursing: ACS, heart failure, shock, dysrhythmias, cardiac monitoring",
+      "Neurological nursing: stroke, seizure, increased ICP, spinal cord injury, GCS assessment",
+      "Perioperative nursing: preoperative assessment, intraoperative care, PACU, wound care",
+      "Oncology nursing: chemotherapy side effects, mucositis, neutropenia, palliative care",
+      "Fluid/electrolyte imbalances: hyponatremia, hyperkalemia, metabolic acidosis, IV therapy",
+      "Infection and sepsis: sepsis bundle, wound infection, central line care, isolation precautions",
+      "Endocrine nursing: DKA, HHS, thyroid crisis, steroid management",
+    ],
+  },
+  {
+    name: "NursingGeriatric",
+    name_th: "การพยาบาลผู้สูงอายุ",
+    exam_type: "NLE",
+    topic_areas: [
+      "Comprehensive geriatric assessment (CGA): ADL, IADL, cognitive screening (MMSE, MoCA)",
+      "Delirium vs dementia vs depression: differential diagnosis, nursing management",
+      "Falls prevention: risk assessment (Morse Fall Scale), environment modification, hip fracture",
+      "Polypharmacy and Beer's criteria: drug review, deprescribing, medication safety",
+      "Functional decline: immobility complications, pressure injury prevention (Braden Scale)",
+      "Nutritional assessment in elderly: malnutrition screening (MNA), dysphagia management",
+      "Elder abuse and neglect: types, recognition, mandatory reporting",
+      "Palliative and end-of-life care: symptom management, family support, DNR",
+    ],
+  },
+  {
+    name: "NursingPediatric",
+    name_th: "การพยาบาลเด็กและวัยรุ่น",
+    exam_type: "NLE",
+    topic_areas: [
+      "Growth and development: Erikson psychosocial stages, Piaget cognitive stages, developmental milestones",
+      "Pediatric vital signs and assessment: age-appropriate norms, pediatric pain assessment (FLACC, Wong-Baker)",
+      "Common childhood respiratory illnesses: croup, bronchiolitis, asthma exacerbation, RSV",
+      "Fever management and febrile seizure: antipyretic use, seizure precautions, parental education",
+      "Congenital heart disease: cyanotic (ToF, TGA) vs acyanotic (VSD, ASD, PDA) defects",
+      "Pediatric fluid therapy: weight-based calculations, dehydration assessment, oral rehydration",
+      "Childhood immunization schedule: vaccines, contraindications, cold chain",
+      "Adolescent health: eating disorders, substance use, reproductive health, confidentiality",
+    ],
+  },
+  {
+    name: "NursingMaternal",
+    name_th: "การพยาบาลมารดาและทารก",
+    exam_type: "NLE",
+    topic_areas: [
+      "Antepartum complications: preeclampsia/eclampsia (magnesium sulfate), gestational diabetes, placenta previa, PROM",
+      "APGAR scoring: 5 components, interpretation, resuscitation decision",
+      "Newborn assessment: physical examination, reflexes (Moro, rooting, Babinski), gestational age",
+      "Breastfeeding: latch technique, common problems (engorgement, mastitis), benefits",
+      "Postpartum complications: PPH (uterine atony, retained placenta), infection (endometritis), DVT",
+      "Newborn hyperbilirubinemia: risk factors, phototherapy, exchange transfusion criteria",
+      "Neonatal care: thermoregulation, hypoglycemia, congenital anomaly identification",
+      "Postpartum blues vs depression vs psychosis: screening (Edinburgh scale), management",
+    ],
+  },
+  {
+    name: "NursingMidwifery",
+    name_th: "การผดุงครรภ์",
+    exam_type: "NLE",
+    topic_areas: [
+      "Stages of labor: latent, active, transition, second stage, third stage — duration and characteristics",
+      "Fetal heart rate monitoring: baseline, variability, accelerations, decelerations (early/late/variable)",
+      "Labor complications: prolonged labor, fetal distress, umbilical cord prolapse, shoulder dystocia",
+      "Normal vaginal delivery: cardinal movements, delivery technique, Apgar at 1 and 5 minutes",
+      "Episiotomy: indications, types (mediolateral vs median), repair, postpartum care",
+      "Placenta delivery: management of third stage, signs of placental separation, controlled cord traction",
+      "Induction and augmentation of labor: oxytocin protocol, Bishop score, contraindications",
+      "Postpartum uterine assessment: involution, lochia characteristics (rubra, serosa, alba), fundal height",
+    ],
+  },
+  {
+    name: "NursingPsych",
+    name_th: "การพยาบาลสุขภาพจิตและจิตเวชศาสตร์",
+    exam_type: "NLE",
+    topic_areas: [
+      "Therapeutic communication: techniques (reflection, clarification, silence), non-therapeutic responses, boundaries",
+      "Mental status examination (MSE): appearance, behavior, affect, thought process, insight",
+      "Schizophrenia: positive/negative symptoms, antipsychotic side effects (EPS, tardive dyskinesia, NMS)",
+      "Mood disorders: major depressive disorder, bipolar I/II — nursing interventions, medication monitoring",
+      "Anxiety disorders: panic disorder, PTSD, OCD — nursing management, relaxation techniques",
+      "Suicide risk assessment: SAD PERSONS scale, safety planning, environmental safety",
+      "Substance use disorders: alcohol withdrawal (CIWA), opioid withdrawal, relapse prevention",
+      "Personality disorders: borderline, antisocial — limit setting, therapeutic milieu management",
+    ],
+  },
+  {
+    name: "NursingCommunity",
+    name_th: "การพยาบาลอนามัยชุมชนและการรักษาพยาบาลขั้นต้น",
+    exam_type: "NLE",
+    topic_areas: [
+      "Levels of prevention: primary (health promotion, immunization), secondary (screening), tertiary (rehabilitation)",
+      "Epidemiology basics: incidence vs prevalence, attack rate, herd immunity, outbreak investigation",
+      "Non-communicable disease (NCD) programs: DM/HT screening, lifestyle modification counseling",
+      "Communicable disease control: TB (DOTS), HIV/AIDS, dengue, COVID-19 — isolation and reporting",
+      "Maternal and child health (MCH): ANC schedule, growth monitoring, EPI program",
+      "Primary care nursing: SOAP documentation, triage, wound care, basic procedures",
+      "Environmental and occupational health: hazard identification, workplace health promotion",
+      "Disaster nursing and mass casualty: START triage, field hospital setup, mental health support",
+    ],
+  },
+  {
+    name: "NursingLawEthics",
+    name_th: "กฎหมายและจรรยาบรรณวิชาชีพ",
+    exam_type: "NLE",
+    topic_areas: [
+      "Nursing Council Act (พ.ร.บ.วิชาชีพการพยาบาลและการผดุงครรภ์): licensing, scope of practice, renewal",
+      "Patient rights: informed consent elements, capacity assessment, right to refuse treatment",
+      "Confidentiality and privacy: exceptions (mandatory reporting, public health threat), medical records",
+      "Bioethical principles: autonomy, beneficence, nonmaleficence, justice — clinical application",
+      "Professional misconduct: types, disciplinary process, grounds for license suspension/revocation",
+      "Nursing documentation: legal requirements, incident reports, chain of custody",
+      "End-of-life care: DNR orders, advance directives, withdrawing vs withholding treatment",
+      "Delegation and supervision: principles, accountability, unlicensed assistive personnel (UAP)",
+    ],
+  },
 ];
 
 // ─── Prompt builder ────────────────────────────────────────────────────────────
 
 function buildPrompt(subject: SubjectConfig, count: number, batchIndex: number): string {
-  // Rotate topics per batch for diversity
   const n = subject.topic_areas.length;
   const start = (batchIndex * 3) % n;
   const rotated = [
@@ -367,6 +488,48 @@ function buildPrompt(subject: SubjectConfig, count: number, batchIndex: number):
     ...subject.topic_areas.slice(0, start),
   ];
   const topics = rotated.slice(0, Math.min(4, n));
+
+  if (subject.exam_type === "NLE") {
+    return `สร้างข้อสอบ NLE (ข้อสอบขึ้นทะเบียนสภาการพยาบาล) ไทย จำนวน ${count} ข้อ
+หมวดวิชา: ${subject.name_th}
+หัวข้อที่ครอบคลุม:
+${topics.map((t, i) => `${i + 1}. ${t}`).join("\n")}
+
+กฎ:
+- ข้อสอบ 4 ตัวเลือก (A-D) แบบ MCQ เหมือนข้อสอบ NLE จริง
+- เขียนเป็นภาษาไทยทั้งหมด ยกเว้นคำศัพท์ทางการพยาบาล/การแพทย์ภาษาอังกฤษ
+- โจทย์เป็น clinical scenario สั้น กระชับ ระบุปัญหาการพยาบาลได้ชัดเจน
+- difficulty: 40% easy, 40% medium, 20% hard (ระบุใน field)
+- ตัวเลือกที่ผิดต้องสมเหตุสมผล (plausible distractors)
+- ครอบคลุมหลาย topic ไม่ซ้ำกันในชุดนี้
+
+ตอบเป็น JSON array เท่านั้น ห้ามใส่ข้อความอื่น:
+[
+  {
+    "scenario": "โจทย์ข้อสอบ clinical scenario",
+    "choices": [
+      {"label": "A", "text": "..."},
+      {"label": "B", "text": "..."},
+      {"label": "C", "text": "..."},
+      {"label": "D", "text": "..."}
+    ],
+    "correct_answer": "B",
+    "difficulty": "medium",
+    "topic_tag": "หัวข้อย่อย",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. [ชื่อคำตอบ] — อธิบายสั้น 1 ประโยค",
+      "reason": "อธิบายเหตุผล 2-3 ย่อหน้า: วิเคราะห์โจทย์ + หลักการพยาบาล",
+      "choices": [
+        {"label": "A", "text": "...", "is_correct": false, "explanation": "ทำไมผิด 1-2 ประโยค"},
+        {"label": "B", "text": "...", "is_correct": true, "explanation": "ทำไมถูก 1-2 ประโยค"},
+        {"label": "C", "text": "...", "is_correct": false, "explanation": "ทำไมผิด 1-2 ประโยค"},
+        {"label": "D", "text": "...", "is_correct": false, "explanation": "ทำไมผิด 1-2 ประโยค"}
+      ],
+      "key_takeaway": "จุดสำคัญที่ต้องจำ 1-2 ประโยค"
+    }
+  }
+]`;
+  }
 
   return `สร้างข้อสอบ PLE (Pharmacy Licensing Examination) ไทย จำนวน ${count} ข้อ
 หมวดวิชา: ${subject.name_th}
@@ -451,21 +614,25 @@ export async function generateMcqBatch(
 
   if (!raw || !Array.isArray(raw)) return [];
 
+  const isNLE = subject.exam_type === "NLE";
+  const expectedChoices = isNLE ? 4 : 5;
+  const validAnswers = isNLE ? "ABCD" : "ABCDE";
+
   const questions: GeneratedQuestion[] = [];
   for (const q of raw) {
     const item = q as Record<string, unknown>;
     if (
       typeof item.scenario === "string" &&
       Array.isArray(item.choices) &&
-      (item.choices as unknown[]).length === 5 &&
+      (item.choices as unknown[]).length === expectedChoices &&
       typeof item.correct_answer === "string" &&
-      "ABCDE".includes(item.correct_answer as string) &&
+      validAnswers.includes(item.correct_answer as string) &&
       item.detailed_explanation
     ) {
       questions.push({
         subject_id: subjectId,
         exam_type: subject.exam_type,
-        exam_day: subject.exam_day,
+        ...(subject.exam_day !== undefined && { exam_day: subject.exam_day }),
         scenario: item.scenario as string,
         choices: item.choices as { label: string; text: string }[],
         correct_answer: item.correct_answer as string,

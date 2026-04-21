@@ -118,7 +118,7 @@ export async function getUserSetPurchases(userId: string): Promise<SetPurchase[]
   return rows.map(toSetPurchase);
 }
 
-export async function getNewQuestionsStats(): Promise<{
+export async function getNewQuestionsStats(options?: { examCategory?: ExamCategory }): Promise<{
   totalActive: number;
   newThisWeek: number;
   newBySubject: { icon: string; name_th: string; count: number }[];
@@ -126,11 +126,21 @@ export async function getNewQuestionsStats(): Promise<{
 }> {
   const sevenDaysAgo = sql`to_char(now() - interval '7 days', 'YYYY-MM-DD HH24:MI:SS')`;
 
+  const examTypes = options?.examCategory === "pharmacy"
+    ? [...PHARMACY_EXAM_TYPES]
+    : options?.examCategory === "nursing"
+      ? [...NURSING_EXAM_TYPES]
+      : null;
+
+  const statusCond = eq(mcqQuestions.status, "active");
+  const examTypeCond = examTypes ? inArray(mcqQuestions.exam_type, examTypes) : null;
+  const baseWhere = examTypeCond ? and(statusCond, examTypeCond) : statusCond;
+
   const [totalRow, newBySubjectRows] = await Promise.all([
     db
       .select({ count: sql<number>`count(*)` })
       .from(mcqQuestions)
-      .where(eq(mcqQuestions.status, "active")),
+      .where(baseWhere),
     db
       .select({
         icon: mcqSubjects.icon,
@@ -140,7 +150,7 @@ export async function getNewQuestionsStats(): Promise<{
       .from(mcqQuestions)
       .leftJoin(mcqSubjects, eq(mcqQuestions.subject_id, mcqSubjects.id))
       .where(and(
-        eq(mcqQuestions.status, "active"),
+        baseWhere,
         sql`${mcqQuestions.created_at} >= ${sevenDaysAgo}`
       ))
       .groupBy(mcqSubjects.icon, mcqSubjects.name_th)
