@@ -111,6 +111,28 @@ export default async function HomePage() {
         </div>
       </section>
 
+      {/* Nursing NLE entry point */}
+      <section className="py-12 bg-gradient-to-r from-rose-50 to-pink-50">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center">
+          <Badge className="mb-3 bg-rose-100 text-rose-700">ใหม่</Badge>
+          <h2 className="text-2xl sm:text-3xl font-bold">
+            สำหรับนักศึกษาพยาบาล
+          </h2>
+          <p className="mt-2 text-muted-foreground">
+            ข้อสอบขึ้นทะเบียนสภาการพยาบาล (NLE) ครบทุกรายวิชา
+            พร้อมเฉลยละเอียดแนวคิดสำคัญ
+          </p>
+          <Link href="/nursing">
+            <Button
+              size="lg"
+              className="mt-5 bg-rose-600 hover:bg-rose-700 text-white gap-2"
+            >
+              เริ่มฝึกทำ NLE <ArrowRight className="h-4 w-4" />
+            </Button>
+          </Link>
+        </div>
+      </section>
+
       {/* Features */}
       <section className="py-16 bg-muted/30">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

@@ -9,10 +9,15 @@ export async function POST(req: Request) {
   }
 
   const body = await req.json();
+  const allowedExamTypes = ["PLE-PC", "PLE-CC1", "NLE"] as const;
+  const examType = allowedExamTypes.includes(body.exam_type)
+    ? body.exam_type
+    : "PLE-CC1";
+
   const result = await createMcqSession({
     user_id: session.user.id,
     mode: body.mode || "practice",
-    exam_type: body.exam_type || "PLE-CC1",
+    exam_type: examType,
     exam_day: body.exam_day ?? null,
     subject_id: body.subject_id ?? null,
     total_questions: body.total_questions,

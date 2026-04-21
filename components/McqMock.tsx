@@ -24,6 +24,7 @@ import { Lock } from "lucide-react";
 interface McqMockProps {
   questions: McqQuestion[];
   timeLimitMinutes: number;
+  examType?: "PLE-PC" | "PLE-CC1" | "NLE";
 }
 
 type MockPhase = "exam" | "results" | "review";
@@ -36,7 +37,11 @@ interface SubjectResult {
   total: number;
 }
 
-export default function McqMock({ questions, timeLimitMinutes }: McqMockProps) {
+export default function McqMock({
+  questions,
+  timeLimitMinutes,
+  examType = "PLE-CC1",
+}: McqMockProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<number, string>>({});
   const [phase, setPhase] = useState<MockPhase>("exam");
@@ -90,7 +95,7 @@ export default function McqMock({ questions, timeLimitMinutes }: McqMockProps) {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         mode: "mock",
-        exam_type: "PLE-CC1",
+        exam_type: examType,
         total_questions: questions.length,
         time_limit_minutes: timeLimitMinutes,
       }),
@@ -98,7 +103,7 @@ export default function McqMock({ questions, timeLimitMinutes }: McqMockProps) {
       .then((r) => r.json())
       .then((s) => setMcqSessionId(s.id))
       .catch(() => {});
-  }, [authSession, questions.length, timeLimitMinutes]);
+  }, [authSession, questions.length, timeLimitMinutes, examType]);
 
   // Save results when entering results phase
   useEffect(() => {

@@ -3,7 +3,7 @@ export interface McqSubject {
   name: string;
   name_th: string;
   icon: string;
-  exam_type: "PLE-PC" | "PLE-CC1" | "both";
+  exam_type: "PLE-PC" | "PLE-CC1" | "both" | "NLE";
   question_count: number;
   created_at: string;
 }
@@ -23,7 +23,7 @@ export interface McqChoiceExplanation {
 export interface McqQuestion {
   id: string;
   subject_id: string;
-  exam_type: "PLE-PC" | "PLE-CC1";
+  exam_type: "PLE-PC" | "PLE-CC1" | "NLE";
   exam_source: string | null;
   exam_day: 1 | 2 | null;
   question_number: number | null;
@@ -64,7 +64,7 @@ export interface McqSession {
   id: string;
   user_id: string;
   mode: "practice" | "mock";
-  exam_type: "PLE-PC" | "PLE-CC1";
+  exam_type: "PLE-PC" | "PLE-CC1" | "NLE";
   exam_day: 1 | 2 | null;
   subject_id: string | null;
   total_questions: number;

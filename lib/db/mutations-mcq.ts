@@ -32,7 +32,7 @@ export async function saveMcqAttempt(attempt: {
 export async function createMcqSession(session: {
   user_id: string;
   mode: "practice" | "mock";
-  exam_type: "PLE-PC" | "PLE-CC1";
+  exam_type: "PLE-PC" | "PLE-CC1" | "NLE";
   exam_day?: 1 | 2 | null;
   subject_id?: string | null;
   total_questions: number;
