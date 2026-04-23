@@ -10,6 +10,7 @@ import { useSession, signOut } from "next-auth/react";
 const navLinks = [
   { href: "/", label: "หน้าแรก" },
   { href: "/ple", label: "PLE Exam" },
+  { href: "/nursing", label: "NLE Exam" },
   { href: "/sets", label: "ชุดข้อสอบ" },
   { href: "/pricing", label: "แพ็กเกจ" },
   { href: "/blog", label: "บทความ" },
