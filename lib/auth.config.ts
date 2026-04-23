@@ -1,5 +1,6 @@
 import type { NextAuthConfig } from "next-auth";
 import Google from "next-auth/providers/google";
+import LINE from "next-auth/providers/line";
 import Credentials from "next-auth/providers/credentials";
 
 // Edge-compatible auth config (no Node.js modules like pg, bcrypt)
@@ -12,6 +13,10 @@ export const authConfig = {
     Google({
       clientId: process.env.GOOGLE_CLIENT_ID!,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
+    }),
+    LINE({
+      clientId: process.env.LINE_LOGIN_CHANNEL_ID!,
+      clientSecret: process.env.LINE_LOGIN_CHANNEL_SECRET!,
     }),
     // Credentials listed here for middleware awareness, but authorize runs in Node runtime via auth.ts
     Credentials({

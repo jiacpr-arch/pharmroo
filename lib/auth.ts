@@ -1,6 +1,7 @@
 import NextAuth from "next-auth";
 import Credentials from "next-auth/providers/credentials";
 import Google from "next-auth/providers/google";
+import LINE from "next-auth/providers/line";
 import { db } from "@/lib/db";
 import { users } from "@/lib/db/schema";
 import { eq } from "drizzle-orm";
@@ -15,6 +16,10 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
     Google({
       clientId: process.env.GOOGLE_CLIENT_ID!,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
+    }),
+    LINE({
+      clientId: process.env.LINE_LOGIN_CHANNEL_ID!,
+      clientSecret: process.env.LINE_LOGIN_CHANNEL_SECRET!,
     }),
     Credentials({
       credentials: {
@@ -50,7 +55,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
     }),
   ],
   callbacks: {
-    async signIn({ user, account }) {
+    async signIn({ user, account, profile }) {
       if (account?.provider === "google") {
         if (!user.email) return false;
 
@@ -74,6 +79,60 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
           user.id = existing.id;
         }
       }
+
+      if (account?.provider === "line") {
+        const lineUserId = account.providerAccountId;
+        if (!lineUserId) return false;
+
+        let existing = await db
+          .select()
+          .from(users)
+          .where(eq(users.line_user_id, lineUserId))
+          .then(rows => rows[0]);
+
+        if (!existing && user.email) {
+          existing = await db
+            .select()
+            .from(users)
+            .where(eq(users.email, user.email))
+            .then(rows => rows[0]);
+
+          if (existing) {
+            await db
+              .update(users)
+              .set({
+                line_user_id: lineUserId,
+                line_linked_at: new Date().toISOString(),
+              })
+              .where(eq(users.id, existing.id));
+          }
+        }
+
+        if (!existing) {
+          const newId = crypto.randomUUID();
+          const userEmail =
+            user.email || `line_${lineUserId}@line.pharmroo.com`;
+          const userName =
+            user.name ||
+            (profile as { name?: string } | undefined)?.name ||
+            "LINE User";
+          await db.insert(users).values({
+            id: newId,
+            email: userEmail,
+            name: userName,
+            membership_type: "free",
+            role: "user",
+            line_user_id: lineUserId,
+            line_linked_at: new Date().toISOString(),
+          });
+          user.id = newId;
+          user.email = userEmail;
+        } else {
+          user.id = existing.id;
+          user.email = existing.email;
+        }
+      }
+
       return true;
     },
     async jwt({ token, user, account }) {
@@ -83,8 +142,11 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         token.membership_type = (user as { membership_type?: string }).membership_type;
         token.membership_expires_at = (user as { membership_expires_at?: string | null }).membership_expires_at;
       }
-      // For Google login, fetch fresh user data from DB
-      if (account?.provider === "google" && token.email) {
+      // For OAuth providers, fetch fresh user data from DB
+      if (
+        (account?.provider === "google" || account?.provider === "line") &&
+        token.email
+      ) {
         const dbUser = await db
           .select()
           .from(users)
