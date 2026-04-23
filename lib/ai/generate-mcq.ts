@@ -495,15 +495,45 @@ function buildPrompt(subject: SubjectConfig, count: number, batchIndex: number):
 หัวข้อที่ครอบคลุม:
 ${topics.map((t, i) => `${i + 1}. ${t}`).join("\n")}
 
-กฎ:
-- ข้อสอบ 4 ตัวเลือก (A-D) แบบ MCQ เหมือนข้อสอบ NLE จริง
-- เขียนเป็นภาษาไทยทั้งหมด ยกเว้นคำศัพท์ทางการพยาบาล/การแพทย์ภาษาอังกฤษ
-- โจทย์เป็น clinical scenario สั้น กระชับ ระบุปัญหาการพยาบาลได้ชัดเจน
-- difficulty: 40% easy, 40% medium, 20% hard (ระบุใน field)
-- ตัวเลือกที่ผิดต้องสมเหตุสมผล (plausible distractors)
-- ครอบคลุมหลาย topic ไม่ซ้ำกันในชุดนี้
+มาตรฐานคุณภาพ (สำคัญ — ต้องการโจทย์เชิงลึก ไม่สั้น ไม่ง่ายเกิน):
 
-ตอบเป็น JSON array เท่านั้น ห้ามใส่ข้อความอื่น:
+[Difficulty distribution]
+- 15% easy / 50% medium / 35% hard (ต้องระบุใน field)
+
+[ความยาว + เนื้อหาตาม difficulty]
+- easy (1-2 ประโยค): pure recall — concept, definition, normal value, classification
+- medium (3-5 ประโยค): clinical/nursing decision — **บังคับมี patient context**: อายุ + เพศ + diagnosis/condition + assessment findings (vital signs, physical exam, lab) + intervention หรือ priority ที่ต้องตัดสินใจ
+- hard (5-8 ประโยค): integration multi-step — ต้อง integrate ≥2 concepts (เช่น assessment + prioritization + intervention + rationale + patient education, หรือ ethics + legal + therapeutic communication)
+
+[Distractor quality — สำคัญที่สุด]
+- ตัวเลือกผิดต้องเป็น "common nursing student errors" ที่หน้าตาเหมือนคำตอบจริง:
+  - Intervention ที่เหมาะสมในเวลาอื่นแต่ไม่ใช่ priority ตอนนี้
+  - คำตอบที่ "ถูกบางส่วน" แต่ขาด safety priority
+  - Action ที่อยู่นอก scope ของพยาบาล
+  - คำสั่งที่ขัดกับ standard of care/ethics
+- ห้ามใช้ตัวเลือก absurd ที่ตัดออกได้ทันที
+- ห้ามใช้ "ทุกข้อข้างต้นถูก/ผิด"
+
+[Format]
+- 4 ตัวเลือก (A-D) — ความยาวตัวเลือกใกล้เคียงกัน
+- ภาษาไทย ยกเว้นคำศัพท์ทางพยาบาล/การแพทย์ที่นิยมใช้ภาษาอังกฤษ
+- ใช้ guideline/best practice ไทยและสากลล่าสุด
+- ครอบคลุมหลาย topic ใน batch ไม่ซ้ำ
+
+[ตัวอย่าง hard question คุณภาพดี — ใช้เป็น quality bar]
+{
+  "scenario": "ผู้ป่วยหญิง 65 ปี admit ด้วย CHF exacerbation ได้รับ furosemide 40 mg IV BID มา 3 วัน วันนี้พยาบาลประเมินพบ: BP 95/60 mmHg (จากเดิม 130/80), HR 110 ครั้ง/นาที, RR 22, SpO2 92% room air, urine output 800 mL/8 hr, K 3.0 mEq/L, Cr 1.8 (baseline 1.0), ผู้ป่วยบ่นเวียนศีรษะเมื่อลุกนั่ง การพยาบาลที่เป็น priority สูงสุดคือข้อใด",
+  "choices": [
+    {"label": "A", "text": "ให้ KCl supplement ทาง IV ตามแผนการรักษา"},
+    {"label": "B", "text": "หยุด furosemide ชั่วคราว แจ้งแพทย์รายงาน hypotension + AKI + hypokalemia + over-diuresis เพื่อทบทวนแผนการรักษาทันที"},
+    {"label": "C", "text": "จัดท่านอนศีรษะสูง ให้ออกซิเจน mask 4 LPM"},
+    {"label": "D", "text": "เพิ่ม IV NSS 1000 mL ใน 4 ชั่วโมงเพื่อแก้ภาวะ hypotension"}
+  ],
+  "correct_answer": "B",
+  "difficulty": "hard"
+}
+
+ตอบเป็น JSON array เท่านั้น ห้ามใส่ข้อความหรือ markdown อื่น:
 [
   {
     "scenario": "โจทย์ข้อสอบ clinical scenario",
@@ -520,7 +550,7 @@ ${topics.map((t, i) => `${i + 1}. ${t}`).join("\n")}
       "summary": "คำตอบที่ถูกต้อง: B. [ชื่อคำตอบ] — อธิบายสั้น 1 ประโยค",
       "reason": "อธิบายเหตุผล 2-3 ย่อหน้า: วิเคราะห์โจทย์ + หลักการพยาบาล",
       "choices": [
-        {"label": "A", "text": "...", "is_correct": false, "explanation": "ทำไมผิด 1-2 ประโยค"},
+        {"label": "A", "text": "...", "is_correct": false, "explanation": "ทำไมผิด 1-2 ประโยค (ระบุ misconception ที่พบบ่อย)"},
         {"label": "B", "text": "...", "is_correct": true, "explanation": "ทำไมถูก 1-2 ประโยค"},
         {"label": "C", "text": "...", "is_correct": false, "explanation": "ทำไมผิด 1-2 ประโยค"},
         {"label": "D", "text": "...", "is_correct": false, "explanation": "ทำไมผิด 1-2 ประโยค"}
@@ -536,15 +566,46 @@ ${topics.map((t, i) => `${i + 1}. ${t}`).join("\n")}
 หัวข้อที่ครอบคลุม:
 ${topics.map((t, i) => `${i + 1}. ${t}`).join("\n")}
 
-กฎ:
-- ข้อสอบ 5 ตัวเลือก (A-E) แบบ MCQ เหมือนข้อสอบ PLE จริง
-- เขียนเป็นภาษาไทยทั้งหมด ยกเว้นชื่อยา/คำศัพท์ทางวิชาชีพ
-- โจทย์ realistic: ชื่อยา generic ที่ถูกต้อง, ขนาดยาที่ถูกต้อง
-- difficulty: 40% easy, 40% medium, 20% hard (ระบุใน field)
-- ตัวเลือกที่ผิดต้องสมเหตุสมผล (plausible distractors)
-- ครอบคลุมหลาย topic ไม่ซ้ำกันในชุดนี้
+มาตรฐานคุณภาพ (สำคัญ — ผู้ใช้รายงานว่าโจทย์เก่าสั้นและง่ายเกินไป):
 
-ตอบเป็น JSON array เท่านั้น ห้ามใส่ข้อความอื่น:
+[Difficulty distribution]
+- 15% easy / 50% medium / 35% hard (ต้องระบุใน field)
+
+[ความยาว + เนื้อหาตาม difficulty]
+- easy (1-2 ประโยค): pure recall — MoA, drug class, common ADR, brand-generic, schedule
+- medium (3-5 ประโยค): clinical decision — **บังคับมี patient context**: อายุ + เพศ + comorbidity ≥1 + current medications ≥1 + lab/vital signs ที่จำเป็นต่อการตอบ (เช่น SCr/eGFR, K, INR, BP, HR)
+- hard (5-8 ประโยค): integration multi-step — ต้อง integrate ≥2 concepts (เช่น renal-adjusted dose + drug interaction + monitoring plan + counseling, หรือ ADR identification + alternative selection + dose conversion)
+
+[Distractor quality — สำคัญที่สุด]
+- ตัวเลือกผิดต้องเป็น "common trainee mistakes" ที่หน้าตาเหมือนคำตอบจริง:
+  - ยาตระกูลเดียวกันแต่ผิด indication/contraindication
+  - ขนาดยาที่พบใช้ผิดบ่อย (เช่น loading vs maintenance, mg vs mcg, q6h vs q8h)
+  - Alternative drug ที่ contraindicated ใน comorbidity ที่โจทย์ระบุ
+  - คำตอบที่ "ถูกบางส่วน" แต่ขาดประเด็นสำคัญที่โจทย์ทดสอบ
+- ห้ามใช้ตัวเลือก absurd ที่ตัดออกได้ทันทีโดยไม่ต้องคิด
+- ห้ามใช้ "ทุกข้อข้างต้นถูก/ผิด"
+
+[Format]
+- 5 ตัวเลือก (A-E) — ความยาวตัวเลือกใกล้เคียงกัน
+- ภาษาไทย ยกเว้นชื่อยา (generic name) และคำศัพท์วิชาชีพ
+- ชื่อยาและขนาดต้องถูกต้องตามจริง (อ้างอิง guideline ไทย/สากลล่าสุด)
+- ครอบคลุมหลาย topic ใน batch ไม่ซ้ำ
+
+[ตัวอย่าง hard question คุณภาพดี — ใช้เป็น quality bar]
+{
+  "scenario": "ผู้ป่วยชาย 72 ปี น้ำหนัก 60 กก. ประวัติ HFrEF (EF 28%), AF, CKD stage 3b (eGFR 32 mL/min/1.73m²) ปัจจุบันรับยาประจำ: furosemide 40 mg OD, bisoprolol 5 mg OD, sacubitril/valsartan 49/51 mg BID, warfarin (INR 2.4 last week), spironolactone 25 mg OD ผู้ป่วยมาด้วย ankle edema เพิ่มขึ้น 1 สัปดาห์ BP 108/68, HR 62, K 4.6 mEq/L แพทย์ขอเริ่ม dapagliflozin 10 mg OD เพื่อลด HF hospitalization คำแนะนำที่สำคัญที่สุดของเภสัชกรคือข้อใด",
+  "choices": [
+    {"label": "A", "text": "เริ่ม dapagliflozin 10 mg OD ทันที ไม่ต้องปรับยาอื่น"},
+    {"label": "B", "text": "ลด furosemide ลง 50% ชั่วคราว 1-2 สัปดาห์ + monitor BP/volume status เพราะ SGLT2i มี natriuretic effect ร่วมกัน"},
+    {"label": "C", "text": "หยุด spironolactone เพื่อป้องกัน hyperkalemia จาก SGLT2i"},
+    {"label": "D", "text": "ลด dapagliflozin เป็น 5 mg OD เพราะ eGFR <45"},
+    {"label": "E", "text": "เปลี่ยน warfarin เป็น apixaban เพราะ interaction กับ SGLT2i"}
+  ],
+  "correct_answer": "B",
+  "difficulty": "hard"
+}
+
+ตอบเป็น JSON array เท่านั้น ห้ามใส่ข้อความหรือ markdown อื่น:
 [
   {
     "scenario": "โจทย์ข้อสอบ",
@@ -560,9 +621,9 @@ ${topics.map((t, i) => `${i + 1}. ${t}`).join("\n")}
     "topic_tag": "Drug interaction",
     "detailed_explanation": {
       "summary": "คำตอบที่ถูกต้อง: B. [ชื่อคำตอบ] — อธิบายสั้น 1 ประโยค",
-      "reason": "อธิบายเหตุผล 2-3 ย่อหน้า: วิเคราะห์โจทย์ + หลักการทางวิทยาศาสตร์",
+      "reason": "อธิบายเหตุผล 2-3 ย่อหน้า: วิเคราะห์โจทย์ + หลักการทางวิทยาศาสตร์ + เหตุผลที่ถูก",
       "choices": [
-        {"label": "A", "text": "...", "is_correct": false, "explanation": "ทำไมผิด 1-2 ประโยค"},
+        {"label": "A", "text": "...", "is_correct": false, "explanation": "ทำไมผิด 1-2 ประโยค (ระบุ misconception ที่พบบ่อย)"},
         {"label": "B", "text": "...", "is_correct": true, "explanation": "ทำไมถูก 1-2 ประโยค"},
         {"label": "C", "text": "...", "is_correct": false, "explanation": "ทำไมผิด 1-2 ประโยค"},
         {"label": "D", "text": "...", "is_correct": false, "explanation": "ทำไมผิด 1-2 ประโยค"},
