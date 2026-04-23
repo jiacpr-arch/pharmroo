@@ -12,8 +12,22 @@ const OPTIONS = [
   { count: 150, label: "150 ข้อ", time: "2 ชม. 30 นาที", description: "จำลองสอบเต็ม" },
 ];
 
-export default function MockSetup() {
+export default function MockSetup({ availableCount }: { availableCount: number }) {
   const router = useRouter();
+  const usable = OPTIONS.filter((o) => o.count <= availableCount);
+
+  if (usable.length === 0) {
+    return (
+      <div className="rounded-xl border border-rose-100 bg-rose-50/40 p-6 text-center">
+        <p className="text-sm text-rose-700">
+          ข้อสอบในระบบมี {availableCount} ข้อ — ยังไม่พอสำหรับจำลองสอบ (ต้องการอย่างน้อย 20 ข้อ)
+        </p>
+        <p className="text-xs text-muted-foreground mt-2">
+          ระบบเพิ่มข้อใหม่อัตโนมัติวันละ 5 ข้อ กลับมาใหม่เร็วๆ นี้
+        </p>
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-6">
@@ -22,9 +36,12 @@ export default function MockSetup() {
           <Shuffle className="h-5 w-5 text-rose-600" />
           <h2 className="text-base font-semibold">เลือกจำนวนข้อ (คละทุกสาขา)</h2>
         </div>
+        <p className="text-xs text-muted-foreground">
+          มีข้อสอบพร้อมใช้ทั้งหมด {availableCount} ข้อ
+        </p>
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-          {OPTIONS.map((opt) => (
+          {usable.map((opt) => (
             <Card
               key={opt.count}
               className="group hover:shadow-md hover:border-rose-300 transition-all cursor-pointer"

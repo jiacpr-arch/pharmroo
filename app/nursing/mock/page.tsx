@@ -1,6 +1,6 @@
 export const dynamic = "force-dynamic";
 import { Suspense } from "react";
-import { getMcqQuestions } from "@/lib/db/queries-mcq";
+import { getMcqQuestions, getNewQuestionsStats } from "@/lib/db/queries-mcq";
 import McqMock from "@/components/McqMock";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
@@ -84,8 +84,15 @@ export default async function NursingMockPage({
           <MockExamContent count={count} />
         </Suspense>
       ) : (
-        <MockSetup />
+        <MockSetupWithStats />
       )}
     </div>
   );
+}
+
+async function MockSetupWithStats() {
+  const stats = await getNewQuestionsStats({ examCategory: "nursing" }).catch(
+    () => ({ totalActive: 0 })
+  );
+  return <MockSetup availableCount={stats.totalActive} />;
 }
