@@ -283,20 +283,50 @@ function buildGenerationPrompt(subject, topicAreas, batchSize, batchIndex) {
 หัวข้อที่ต้องครอบคลุมใน batch นี้:
 ${uniqueTopics.map((t, i) => `${i + 1}. ${t}`).join("\n")}
 
-กฎ:
-- ข้อสอบ 5 ตัวเลือก (A-E) แบบ MCQ เหมือนข้อสอบ PLE จริง
-- เขียนเป็นภาษาไทยทั้งหมด ยกเว้นชื่อยา/คำศัพท์ทางวิชาชีพ
-- โจทย์ realistic: ใช้ชื่อยา generic ที่ถูกต้อง, ขนาดยาที่ถูกต้อง, ค่าปกติที่ถูกต้อง
-- difficulty: ประมาณ 40% easy, 40% medium, 20% hard
-- ตัวเลือกที่ผิดต้องสมเหตุสมผล (plausible distractors) ไม่ใช่ผิดชัดเจน
-- ครอบคลุมหลาย topic ไม่ซ้ำกัน
-- สำหรับ Pharmacotherapy: เน้น clinical decision making
-- สำหรับยาคำนวณ: ระบุข้อมูลที่ต้องใช้ครบในโจทย์
+มาตรฐานคุณภาพ (สำคัญ — ผู้ใช้รายงานว่าโจทย์เก่าสั้นและง่ายเกินไป):
 
-ตอบเป็น JSON array เท่านั้น ห้ามใส่ข้อความอื่น:
+[Difficulty distribution]
+- 15% easy / 50% medium / 35% hard (ต้องระบุใน field)
+
+[ความยาว + เนื้อหาตาม difficulty]
+- easy (1-2 ประโยค): pure recall — MoA, drug class, common ADR, brand-generic, schedule
+- medium (3-5 ประโยค): clinical decision — **บังคับมี patient context**: อายุ + เพศ + comorbidity ≥1 + current medications ≥1 + lab/vital signs ที่จำเป็นต่อการตอบ (เช่น SCr/eGFR, K, INR, BP, HR)
+- hard (5-8 ประโยค): integration multi-step — ต้อง integrate ≥2 concepts (เช่น renal-adjusted dose + drug interaction + monitoring plan + counseling, หรือ ADR identification + alternative selection + dose conversion)
+
+[Distractor quality — สำคัญที่สุด]
+- ตัวเลือกผิดต้องเป็น "common trainee mistakes" ที่หน้าตาเหมือนคำตอบจริง:
+  - ยาตระกูลเดียวกันแต่ผิด indication/contraindication
+  - ขนาดยาที่พบใช้ผิดบ่อย (loading vs maintenance, mg vs mcg, q6h vs q8h)
+  - Alternative drug ที่ contraindicated ใน comorbidity ที่โจทย์ระบุ
+  - คำตอบที่ "ถูกบางส่วน" แต่ขาดประเด็นสำคัญที่โจทย์ทดสอบ
+- ห้ามใช้ตัวเลือก absurd ที่ตัดออกได้ทันทีโดยไม่ต้องคิด
+- ห้ามใช้ "ทุกข้อข้างต้นถูก/ผิด"
+
+[Format]
+- 5 ตัวเลือก (A-E) — ความยาวตัวเลือกใกล้เคียงกัน
+- ภาษาไทย ยกเว้นชื่อยา (generic name) และคำศัพท์วิชาชีพ
+- ชื่อยาและขนาดต้องถูกต้องตามจริง (อ้างอิง guideline ไทย/สากลล่าสุด)
+- สำหรับ Pharmacotherapy: เน้น clinical decision making + patient-specific factors
+- สำหรับยาคำนวณ: ให้ข้อมูลครบที่ต้องใช้ + ทดสอบ unit conversion / dosing weight
+
+[ตัวอย่าง hard question คุณภาพดี — ใช้เป็น quality bar]
+{
+  "scenario": "ผู้ป่วยชาย 72 ปี น้ำหนัก 60 กก. ประวัติ HFrEF (EF 28%), AF, CKD stage 3b (eGFR 32 mL/min/1.73m²) ปัจจุบันรับยาประจำ: furosemide 40 mg OD, bisoprolol 5 mg OD, sacubitril/valsartan 49/51 mg BID, warfarin (INR 2.4 last week), spironolactone 25 mg OD ผู้ป่วยมาด้วย ankle edema เพิ่มขึ้น 1 สัปดาห์ BP 108/68, HR 62, K 4.6 mEq/L แพทย์ขอเริ่ม dapagliflozin 10 mg OD เพื่อลด HF hospitalization คำแนะนำที่สำคัญที่สุดของเภสัชกรคือข้อใด",
+  "choices": [
+    {"label": "A", "text": "เริ่ม dapagliflozin 10 mg OD ทันที ไม่ต้องปรับยาอื่น"},
+    {"label": "B", "text": "ลด furosemide ลง 50% ชั่วคราว 1-2 สัปดาห์ + monitor BP/volume status เพราะ SGLT2i มี natriuretic effect ร่วมกัน"},
+    {"label": "C", "text": "หยุด spironolactone เพื่อป้องกัน hyperkalemia จาก SGLT2i"},
+    {"label": "D", "text": "ลด dapagliflozin เป็น 5 mg OD เพราะ eGFR <45"},
+    {"label": "E", "text": "เปลี่ยน warfarin เป็น apixaban เพราะ interaction กับ SGLT2i"}
+  ],
+  "correct_answer": "B",
+  "difficulty": "hard"
+}
+
+ตอบเป็น JSON array เท่านั้น ห้ามใส่ข้อความหรือ markdown อื่น:
 [
   {
-    "scenario": "โจทย์ข้อสอบ (อาจมีหลายย่อหน้า รวมข้อมูลผู้ป่วยหรือบริบท)",
+    "scenario": "โจทย์ข้อสอบ (รวมข้อมูลผู้ป่วยและบริบทตามมาตรฐาน difficulty ด้านบน)",
     "choices": [
       {"label": "A", "text": "ตัวเลือก A"},
       {"label": "B", "text": "ตัวเลือก B"},
@@ -311,7 +341,7 @@ ${uniqueTopics.map((t, i) => `${i + 1}. ${t}`).join("\n")}
       "summary": "คำตอบที่ถูกต้อง: B. [ชื่อคำตอบ] — อธิบายสั้น 1 ประโยค",
       "reason": "อธิบายเหตุผล 2-4 ย่อหน้า: วิเคราะห์โจทย์ + หลักการทางวิทยาศาสตร์ + เหตุผลที่ถูก",
       "choices": [
-        {"label": "A", "text": "ตัวเลือก A", "is_correct": false, "explanation": "ทำไมผิด 1-2 ประโยค"},
+        {"label": "A", "text": "ตัวเลือก A", "is_correct": false, "explanation": "ทำไมผิด 1-2 ประโยค (ระบุ misconception)"},
         {"label": "B", "text": "ตัวเลือก B", "is_correct": true, "explanation": "ทำไมถูก 1-2 ประโยค"},
         {"label": "C", "text": "ตัวเลือก C", "is_correct": false, "explanation": "ทำไมผิด 1-2 ประโยค"},
         {"label": "D", "text": "ตัวเลือก D", "is_correct": false, "explanation": "ทำไมผิด 1-2 ประโยค"},
