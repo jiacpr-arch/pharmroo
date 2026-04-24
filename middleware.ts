@@ -22,9 +22,19 @@ export default auth((req) => {
   }
 
   // Protect /nursing/admin — only nursing_admin or admin may access
-  if (pathname.startsWith("/nursing/admin")) {
+  if (pathname === "/nursing/admin" || pathname.startsWith("/nursing/admin/")) {
     const role = (req.auth?.user as { role?: string } | undefined)?.role;
     if (role !== "nursing_admin" && role !== "admin") {
+      const loginUrl = new URL("/login", req.nextUrl.origin);
+      loginUrl.searchParams.set("callbackUrl", pathname);
+      return NextResponse.redirect(loginUrl);
+    }
+  }
+
+  // Protect /admin — only admin may access (mirrors /nursing/admin)
+  if (pathname === "/admin" || pathname.startsWith("/admin/")) {
+    const role = (req.auth?.user as { role?: string } | undefined)?.role;
+    if (role !== "admin") {
       const loginUrl = new URL("/login", req.nextUrl.origin);
       loginUrl.searchParams.set("callbackUrl", pathname);
       return NextResponse.redirect(loginUrl);
