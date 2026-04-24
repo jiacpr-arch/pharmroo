@@ -3,7 +3,7 @@
 import { useState, Suspense } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
-import { signIn } from "next-auth/react";
+import { signIn, getSession } from "next-auth/react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -13,7 +13,7 @@ import { Loader2 } from "lucide-react";
 function LoginForm() {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const redirect = searchParams.get("redirect") || "/profile";
+  const redirect = searchParams.get("callbackUrl") || searchParams.get("redirect") || "";
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -21,14 +21,23 @@ function LoginForm() {
   const [googleLoading, setGoogleLoading] = useState(false);
   const [lineLoading, setLineLoading] = useState(false);
 
+  const resolveDestination = async () => {
+    if (redirect) return redirect;
+    const session = await getSession();
+    const role = (session?.user as { role?: string } | undefined)?.role;
+    if (role === "nursing_admin") return "/nursing/admin";
+    if (role === "admin") return "/admin";
+    return "/profile";
+  };
+
   const handleGoogleLogin = async () => {
     setGoogleLoading(true);
-    await signIn("google", { callbackUrl: redirect });
+    await signIn("google", { callbackUrl: redirect || "/auth/redirect" });
   };
 
   const handleLineLogin = async () => {
     setLineLoading(true);
-    await signIn("line", { callbackUrl: redirect });
+    await signIn("line", { callbackUrl: redirect || "/auth/redirect" });
   };
 
   const handleEmailLogin = async (e: React.FormEvent) => {
@@ -46,7 +55,8 @@ function LoginForm() {
       setError("อีเมลหรือรหัสผ่านไม่ถูกต้อง");
       setLoading(false);
     } else {
-      router.push(redirect);
+      const dest = await resolveDestination();
+      router.push(dest);
       router.refresh();
     }
   };
