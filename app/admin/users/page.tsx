@@ -151,6 +151,7 @@ export default function AdminUsersPage() {
                       <div className="flex items-center gap-2 flex-wrap mb-1">
                         <h3 className="font-semibold">{u.name || "(ไม่มีชื่อ)"}</h3>
                         {u.role === "admin" && <Badge className="bg-red-100 text-red-700 text-xs"><Crown className="h-3 w-3 mr-1" />แอดมิน</Badge>}
+                        {u.role === "nursing_admin" && <Badge className="bg-rose-100 text-rose-700 text-xs"><Crown className="h-3 w-3 mr-1" />Nursing Admin</Badge>}
                         <Badge className={`text-xs ${membershipColors[u.membership_type] || membershipColors.free}`}>
                           {membershipLabels[u.membership_type] || u.membership_type}
                         </Badge>
@@ -176,6 +177,7 @@ export default function AdminUsersPage() {
                       <select className="w-full rounded-md border px-3 py-2 text-sm" value={edit.role} onChange={(e) => setEdits((p) => ({ ...p, [u.id]: { ...p[u.id], role: e.target.value } }))}>
                         <option value="user">user</option>
                         <option value="admin">admin</option>
+                        <option value="nursing_admin">nursing_admin</option>
                       </select>
                     </div>
                     <Button className="bg-brand hover:bg-brand-light text-white gap-1" size="sm" disabled={!changed || savingId === u.id} onClick={() => handleSave(u.id)}>

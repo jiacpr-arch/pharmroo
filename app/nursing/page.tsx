@@ -2,9 +2,10 @@ import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { ArrowRight, BookOpen, Shuffle, Target } from "lucide-react";
+import { ArrowRight, BookOpen, Shuffle, Target, UserPlus } from "lucide-react";
 import { getMcqSubjects, getMcqSubjectCounts, getNewQuestionsStats } from "@/lib/db/queries-mcq";
 import NewQuestionsCountdown from "@/components/NewQuestionsCountdown";
+import { auth } from "@/lib/auth";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -16,7 +17,8 @@ export const metadata: Metadata = {
 export const dynamic = "force-dynamic";
 
 export default async function NursingPage() {
-  const [subjects, counts, stats] = await Promise.all([
+  const [session, subjects, counts, stats] = await Promise.all([
+    auth(),
     getMcqSubjects({ examCategory: "nursing" }),
     getMcqSubjectCounts("nursing"),
     getNewQuestionsStats({ examCategory: "nursing" }).catch(() => ({
@@ -26,6 +28,7 @@ export default async function NursingPage() {
       nextReleaseAt: new Date(Date.now() + 7 * 86400000).toISOString(),
     })),
   ]);
+  const isLoggedIn = Boolean(session?.user?.id);
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
@@ -49,6 +52,32 @@ export default async function NursingPage() {
           nextReleaseAt={stats.nextReleaseAt}
         />
       </div>
+
+      {!isLoggedIn && (
+        <div className="mb-8 rounded-2xl border-2 border-rose-200 bg-rose-50 p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="flex items-start gap-3 text-left">
+            <UserPlus className="h-6 w-6 text-rose-600 shrink-0 mt-0.5" />
+            <div>
+              <h3 className="font-bold text-rose-900">สมัครสมาชิกฟรี</h3>
+              <p className="text-sm text-rose-800">
+                บันทึกความคืบหน้า ฝึก NLE ได้เต็มรูปแบบ พร้อมเฉลยละเอียด
+              </p>
+            </div>
+          </div>
+          <div className="flex gap-2 shrink-0">
+            <Link href="/register">
+              <Button className="bg-rose-600 hover:bg-rose-700 text-white">
+                สมัครสมาชิก
+              </Button>
+            </Link>
+            <Link href="/login">
+              <Button variant="outline" className="border-rose-300 text-rose-700 hover:bg-rose-100">
+                เข้าสู่ระบบ
+              </Button>
+            </Link>
+          </div>
+        </div>
+      )}
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
         <Card className="group hover:shadow-lg hover:border-rose-300 transition-all">
