@@ -79,7 +79,7 @@ export interface QuestionSet {
   name: string;
   name_th: string;
   description: string | null;
-  exam_type: "PLE-CC1" | "PLE-PC1" | "PLE-IP1" | "PLE-PHCP1" | "mixed" | null;
+  exam_type: "PLE-CC1" | "PLE-PC1" | "PLE-IP1" | "PLE-PHCP1" | "NLE" | "mixed" | null;
   exam_day: 1 | 2 | null;
   question_count: number;
   price: number;
