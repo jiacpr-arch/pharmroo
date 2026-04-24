@@ -32,7 +32,9 @@ export default function NursingAdminDashboard() {
     if (!isAuthorized) return;
     fetch("/api/nursing-admin/stats")
       .then((r) => r.json())
-      .then((data) => { setStats(data); setStatsLoading(false); });
+      .then((data) => { setStats(data); })
+      .catch(() => {})
+      .finally(() => setStatsLoading(false));
   }, [isAuthorized]);
 
   if (status === "loading" || (statsLoading && isAuthorized)) {

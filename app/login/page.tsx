@@ -1,9 +1,9 @@
 "use client";
 
-import { useState, Suspense } from "react";
+import { useState, useEffect, Suspense } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
-import { signIn, getSession } from "next-auth/react";
+import { signIn, getSession, useSession } from "next-auth/react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -20,6 +20,23 @@ function LoginForm() {
   const [loading, setLoading] = useState(false);
   const [googleLoading, setGoogleLoading] = useState(false);
   const [lineLoading, setLineLoading] = useState(false);
+
+  const { data: session, status } = useSession();
+
+  // If already logged in, redirect based on role immediately
+  useEffect(() => {
+    if (status !== "authenticated") return;
+    const role = (session?.user as { role?: string } | undefined)?.role;
+    if (redirect) {
+      router.replace(redirect);
+    } else if (role === "nursing_admin") {
+      router.replace("/nursing/admin");
+    } else if (role === "admin") {
+      router.replace("/admin");
+    } else {
+      router.replace("/profile");
+    }
+  }, [status, session, redirect, router]);
 
   const resolveDestination = async () => {
     if (redirect) return redirect;
