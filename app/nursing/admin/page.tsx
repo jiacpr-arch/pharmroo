@@ -7,7 +7,7 @@ import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { Shield, Loader2, BookOpen, Users, LayoutDashboard } from "lucide-react";
+import { Shield, Loader2, BookOpen, Users, LayoutDashboard, Users2 } from "lucide-react";
 
 type Stats = {
   totalQuestions: number;
@@ -121,7 +121,20 @@ export default function NursingAdminDashboard() {
       </div>
 
       <h2 className="text-lg font-bold mb-4">จัดการ</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <Link href="/nursing/admin/users">
+          <Card className="hover:shadow-md transition-shadow cursor-pointer h-full">
+            <CardHeader className="pb-2">
+              <div className="flex items-center gap-2">
+                <Users2 className="h-5 w-5 text-rose-600" />
+                <h3 className="font-bold">จัดการสมาชิกสายพยาบาล</h3>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <p className="text-sm text-muted-foreground">ดูและแก้ไขสมาชิกที่เลือก NLE</p>
+            </CardContent>
+          </Card>
+        </Link>
         <Link href="/nursing">
           <Card className="hover:shadow-md transition-shadow cursor-pointer h-full">
             <CardHeader className="pb-2">
