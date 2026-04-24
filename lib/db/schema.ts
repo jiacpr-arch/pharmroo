@@ -18,7 +18,7 @@ export const users = pgTable("users", {
   email: text("email").notNull().unique(),
   name: text("name").notNull().default(""),
   password_hash: text("password_hash"),
-  role: text("role", { enum: ["user", "admin"] }).notNull().default("user"),
+  role: text("role", { enum: ["user", "admin", "nursing_admin"] }).notNull().default("user"),
   membership_type: text("membership_type", {
     enum: ["free", "monthly", "yearly"],
   })

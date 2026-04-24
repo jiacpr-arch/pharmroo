@@ -21,9 +21,16 @@ export default auth((req) => {
     return undefined;
   }
 
-  // If logged in and onboarding not done, redirect to onboarding
-  // (onboarding_done is checked via session token — see auth callbacks)
-  // For prototype: allow all through, onboarding redirect handled client-side
+  // Protect /nursing/admin — only nursing_admin or admin may access
+  if (pathname.startsWith("/nursing/admin")) {
+    const role = (req.auth?.user as { role?: string } | undefined)?.role;
+    if (role !== "nursing_admin" && role !== "admin") {
+      const loginUrl = new URL("/login", req.nextUrl.origin);
+      loginUrl.searchParams.set("callbackUrl", pathname);
+      return NextResponse.redirect(loginUrl);
+    }
+  }
+
   return undefined;
 });
 
