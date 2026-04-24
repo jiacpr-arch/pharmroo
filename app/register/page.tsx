@@ -74,7 +74,7 @@ function RegisterForm() {
           <div className="text-4xl">💊</div>
           <h1 className="text-2xl font-bold">สมัครสมาชิก</h1>
           <p className="text-sm text-muted-foreground">
-            เริ่มต้นเตรียมสอบเภสัชกรรมกับ PharmRoo
+            เริ่มต้นเตรียมสอบวิชาชีพ (เภสัช / พยาบาล) กับ PharmRoo
           </p>
         </CardHeader>
         <CardContent className="space-y-4">

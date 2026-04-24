@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 const EXAM_TYPES = [
   { value: "PLE-PC", label: "PLE-PC (สภาเภสัชกรรม ขั้น 1)" },
   { value: "PLE-CC1", label: "PLE-CC1 (สภาเภสัชกรรม ขั้น 2)" },
+  { value: "NLE", label: "NLE (สภาการพยาบาล)" },
 ];
 
 const DAILY_GOALS = [
@@ -14,7 +15,7 @@ const DAILY_GOALS = [
   { value: 30, label: "30 ข้อ/วัน" },
 ];
 
-const SUBJECTS = [
+const PHARMACY_SUBJECTS = [
   "Pharmacotherapy",
   "เทคโนโลยีเภสัชกรรม",
   "เภสัชเคมี",
@@ -24,6 +25,17 @@ const SUBJECTS = [
   "สมุนไพร",
 ];
 
+const NURSING_SUBJECTS = [
+  "การพยาบาลมารดา ทารก และการผดุงครรภ์",
+  "การพยาบาลเด็กและวัยรุ่น",
+  "การพยาบาลผู้ใหญ่",
+  "การพยาบาลผู้สูงอายุ",
+  "การพยาบาลสุขภาพจิตและจิตเวช",
+  "การพยาบาลอนามัยชุมชน",
+  "การรักษาโรคเบื้องต้น",
+  "กฎหมายและจรรยาบรรณวิชาชีพ",
+];
+
 export default function OnboardingPage() {
   const router = useRouter();
   const [step, setStep] = useState(1);
@@ -31,6 +43,8 @@ export default function OnboardingPage() {
   const [dailyGoal, setDailyGoal] = useState(20);
   const [weakSubjects, setWeakSubjects] = useState<string[]>([]);
   const [saving, setSaving] = useState(false);
+
+  const subjects = targetExam === "NLE" ? NURSING_SUBJECTS : PHARMACY_SUBJECTS;
 
   const toggleSubject = (subject: string) => {
     setWeakSubjects((prev) =>
@@ -80,7 +94,10 @@ export default function OnboardingPage() {
               {EXAM_TYPES.map((exam) => (
                 <button
                   key={exam.value}
-                  onClick={() => setTargetExam(exam.value)}
+                  onClick={() => {
+                    setTargetExam(exam.value);
+                    setWeakSubjects([]);
+                  }}
                   className={`w-full p-4 rounded-xl border-2 text-left transition ${
                     targetExam === exam.value
                       ? "border-blue-500 bg-blue-50"
@@ -148,7 +165,7 @@ export default function OnboardingPage() {
               เลือกวิชาที่ต้องฝึกเพิ่ม (เลือกได้หลายข้อ)
             </p>
             <div className="space-y-2">
-              {SUBJECTS.map((subject) => (
+              {subjects.map((subject) => (
                 <button
                   key={subject}
                   onClick={() => toggleSubject(subject)}
