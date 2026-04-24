@@ -159,7 +159,7 @@ export const questionSets = pgTable("question_sets", {
   name_th: text("name_th").notNull(),
   description: text("description"),
   exam_type: text("exam_type", {
-    enum: ["PLE-CC1", "PLE-PC1", "PLE-IP1", "PLE-PHCP1", "mixed"],
+    enum: ["PLE-CC1", "PLE-PC1", "PLE-IP1", "PLE-PHCP1", "NLE", "mixed"],
   }),
   exam_day: integer("exam_day"),
   question_count: integer("question_count").notNull().default(0),

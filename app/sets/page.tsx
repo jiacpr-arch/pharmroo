@@ -17,9 +17,9 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "ชุดข้อสอบ PLE — PharmRoo",
+  title: "ชุดข้อสอบ PLE และ NLE — PharmRoo",
   description:
-    "ซื้อชุดข้อสอบ PLE แบบครั้งเดียว ใช้ได้ตลอด ไม่มีวันหมดอายุ",
+    "ซื้อชุดข้อสอบ PLE (เภสัช) หรือ NLE (พยาบาล) แบบครั้งเดียว ใช้ได้ตลอด ไม่มีวันหมดอายุ",
 };
 
 const EXAM_TYPE_LABEL: Record<string, string> = {
@@ -27,8 +27,13 @@ const EXAM_TYPE_LABEL: Record<string, string> = {
   "PLE-PC1": "PLE-PC1 บริบาล",
   "PLE-IP1": "PLE-IP1 อุตสาหการ",
   "PLE-PHCP1": "PLE-PHCP1 คุ้มครองฯ",
+  NLE: "NLE พยาบาล",
   mixed: "คละทุกประเภท",
 };
+
+function isNursingExamType(examType: string | null | undefined): boolean {
+  return examType === "NLE";
+}
 
 async function SetsContent() {
   const session = await auth();
@@ -197,7 +202,13 @@ function SetCard({ set }: { set: QuestionSet }) {
           <p className="text-sm text-muted-foreground">{set.description}</p>
         )}
         {set.user_purchased ? (
-          <Link href={`/ple/practice?set=${set.id}`}>
+          <Link
+            href={
+              isNursingExamType(set.exam_type)
+                ? `/nursing/practice?set=${set.id}`
+                : `/ple/practice?set=${set.id}`
+            }
+          >
             <Button className="w-full bg-brand hover:bg-brand-light text-white" size="sm">
               <BookOpen className="h-4 w-4 mr-2" /> เริ่มทำข้อสอบ
             </Button>
@@ -218,9 +229,9 @@ export default function SetsPage() {
   return (
     <div className="mx-auto max-w-5xl px-4 py-8 sm:px-6">
       <div className="mb-8">
-        <h1 className="text-3xl font-bold">ชุดข้อสอบ PLE</h1>
+        <h1 className="text-3xl font-bold">ชุดข้อสอบ PLE และ NLE</h1>
         <p className="text-muted-foreground mt-2">
-          ซื้อครั้งเดียว เข้าถึงได้ตลอด — ถูกกว่าคอร์สติว 10 เท่า
+          ซื้อครั้งเดียว เข้าถึงได้ตลอด — เหมาะกับทั้งสายเภสัชและพยาบาล
         </p>
       </div>
       <Suspense
