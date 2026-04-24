@@ -28,6 +28,7 @@ export const users = pgTable("users", {
   onboarding_done: boolean("onboarding_done").notNull().default(false),
   daily_goal: integer("daily_goal").notNull().default(20),
   target_exam: text("target_exam"),
+  exam_category: text("exam_category", { enum: ["pharmacy", "nursing"] }),
   weak_subjects: jsonb("weak_subjects").default(sql`'[]'::jsonb`),
   line_user_id: text("line_user_id"),
   line_linked_at: text("line_linked_at"),
