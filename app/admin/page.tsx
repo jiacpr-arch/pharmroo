@@ -12,7 +12,12 @@ import { Shield, Loader2, BookOpen, CreditCard, Users } from "lucide-react";
 export default function AdminDashboard() {
   const { data: session, status } = useSession();
   const router = useRouter();
-  const [stats, setStats] = useState({ totalExams: 0, totalUsers: 0, pendingPayments: 0 });
+  const [stats, setStats] = useState({
+    totalExams: 0,
+    totalUsers: 0,
+    pendingPayments: 0,
+    usersByCategory: { pharmacy: 0, nursing: 0, uncategorized: 0 },
+  });
   const [statsLoading, setStatsLoading] = useState(true);
 
   const user = session?.user as { role?: string } | undefined;
@@ -97,6 +102,35 @@ export default function AdminDashboard() {
           </CardContent>
         </Card>
       </div>
+
+      <Card className="mb-8">
+        <CardContent className="pt-6">
+          <h3 className="text-sm font-semibold mb-3 text-muted-foreground">สมาชิกแยกตามสาย</h3>
+          <div className="grid grid-cols-3 gap-4">
+            <div>
+              <div className="flex items-center gap-2">
+                <span className="text-lg">💊</span>
+                <p className="text-2xl font-bold text-teal-700">{stats.usersByCategory.pharmacy}</p>
+              </div>
+              <p className="text-xs text-muted-foreground mt-1">เภสัช (PLE)</p>
+            </div>
+            <div>
+              <div className="flex items-center gap-2">
+                <span className="text-lg">💉</span>
+                <p className="text-2xl font-bold text-rose-600">{stats.usersByCategory.nursing}</p>
+              </div>
+              <p className="text-xs text-muted-foreground mt-1">พยาบาล (NLE)</p>
+            </div>
+            <div>
+              <div className="flex items-center gap-2">
+                <span className="text-lg">❓</span>
+                <p className="text-2xl font-bold text-gray-500">{stats.usersByCategory.uncategorized}</p>
+              </div>
+              <p className="text-xs text-muted-foreground mt-1">ยังไม่ onboard</p>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
 
       <h2 className="text-lg font-bold mb-4">จัดการ</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

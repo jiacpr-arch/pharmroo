@@ -24,10 +24,11 @@ export async function GET() {
       membership_type: users.membership_type,
       membership_expires_at: users.membership_expires_at,
       target_exam: users.target_exam,
+      exam_category: users.exam_category,
       created_at: users.created_at,
     })
     .from(users)
-    .where(eq(users.target_exam, "NLE"))
+    .where(eq(users.exam_category, "nursing"))
     .orderBy(desc(users.created_at));
 
   return NextResponse.json(rows);
@@ -42,10 +43,10 @@ export async function PATCH(req: NextRequest) {
 
   const { userId, membership_type, membership_expires_at } = await req.json();
 
-  // Scope guard: nursing_admin can only edit users whose target_exam = NLE
+  // Scope guard: nursing_admin can only edit users in the nursing track
   // and must never touch role / admin users.
   const target = await db
-    .select({ role: users.role, target_exam: users.target_exam })
+    .select({ role: users.role, exam_category: users.exam_category })
     .from(users)
     .where(eq(users.id, userId))
     .then((r) => r[0]);
@@ -53,7 +54,7 @@ export async function PATCH(req: NextRequest) {
   if (!target) {
     return NextResponse.json({ error: "Not found" }, { status: 404 });
   }
-  if (target.target_exam !== "NLE") {
+  if (target.exam_category !== "nursing") {
     return NextResponse.json({ error: "Out of scope" }, { status: 403 });
   }
   if (target.role === "admin" || target.role === "nursing_admin") {
@@ -68,7 +69,7 @@ export async function PATCH(req: NextRequest) {
         ? new Date(membership_expires_at).toISOString()
         : null,
     })
-    .where(and(eq(users.id, userId), eq(users.target_exam, "NLE")));
+    .where(and(eq(users.id, userId), eq(users.exam_category, "nursing")));
 
   return NextResponse.json({ success: true });
 }

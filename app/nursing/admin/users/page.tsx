@@ -18,6 +18,7 @@ interface UserRow {
   membership_type: string;
   membership_expires_at: string | null;
   target_exam: string | null;
+  exam_category: string | null;
   created_at: string;
 }
 

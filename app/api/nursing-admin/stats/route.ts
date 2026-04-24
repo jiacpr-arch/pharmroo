@@ -25,7 +25,7 @@ export async function GET() {
     db
       .select({ count: sql<number>`count(*)` })
       .from(users)
-      .where(eq(users.target_exam, "NLE"))
+      .where(eq(users.exam_category, "nursing"))
       .then((rows) => rows[0]),
   ]);
 

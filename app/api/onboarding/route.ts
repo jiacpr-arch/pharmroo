@@ -16,11 +16,17 @@ export async function POST(request: NextRequest) {
     weakSubjects: string[];
   };
 
+  const examCategory: "pharmacy" | "nursing" | null =
+    targetExam === "NLE" ? "nursing"
+    : targetExam === "PLE-PC" || targetExam === "PLE-CC1" ? "pharmacy"
+    : null;
+
   await db
     .update(users)
     .set({
       onboarding_done: true,
       target_exam: targetExam,
+      exam_category: examCategory,
       daily_goal: dailyGoal,
       weak_subjects: weakSubjects,
     })
