@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, User, LogOut } from "lucide-react";
+import { Menu, X, User, LogOut, Shield } from "lucide-react";
 import { useSession, signOut } from "next-auth/react";
 
 const navLinks = [
@@ -22,6 +22,13 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const { data: session } = useSession();
   const user = session?.user;
+  const role = (user as { role?: string } | undefined)?.role;
+  const adminLink =
+    role === "admin"
+      ? { href: "/admin", label: "Admin", className: "text-red-600" }
+      : role === "nursing_admin"
+      ? { href: "/nursing/admin", label: "NLE Admin", className: "text-rose-600" }
+      : null;
 
   const handleLogout = async () => {
     await signOut({ callbackUrl: "/" });
@@ -57,6 +64,14 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-3">
           {user ? (
             <>
+              {adminLink && (
+                <Link href={adminLink.href}>
+                  <Button variant="ghost" size="sm" className={`gap-2 ${adminLink.className}`}>
+                    <Shield className="h-4 w-4" />
+                    {adminLink.label}
+                  </Button>
+                </Link>
+              )}
               <Link href="/profile">
                 <Button variant="ghost" size="sm" className="gap-2">
                   <User className="h-4 w-4" />
@@ -122,6 +137,15 @@ export default function Navbar() {
             <div className="border-t pt-3 mt-3 space-y-2">
               {user ? (
                 <>
+                  {adminLink && (
+                    <Link
+                      href={adminLink.href}
+                      onClick={() => setMobileOpen(false)}
+                      className={`block rounded-md px-3 py-2 text-sm font-semibold hover:bg-muted ${adminLink.className}`}
+                    >
+                      🛡️ {adminLink.label}
+                    </Link>
+                  )}
                   <Link
                     href="/profile"
                     onClick={() => setMobileOpen(false)}
