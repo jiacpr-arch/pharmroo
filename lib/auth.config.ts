@@ -36,6 +36,8 @@ export const authConfig = {
         (
           session.user as { membership_expires_at?: string | null }
         ).membership_expires_at = token.membership_expires_at as string | null;
+        (session.user as { exam_category?: string | null }).exam_category =
+          token.exam_category as string | null;
       }
       return session;
     },
