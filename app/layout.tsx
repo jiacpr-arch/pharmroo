@@ -20,16 +20,21 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "ฟาร์มรู้ PharmRu — แพลตฟอร์มข้อสอบใบประกอบวิชาชีพเภสัชกรรม",
+    default: "ฟาร์มรู้ PharmRu — แพลตฟอร์มข้อสอบ PLE และ NLE",
     template: "%s | ฟาร์มรู้ PharmRu",
   },
   description:
-    "เตรียมสอบใบประกอบวิชาชีพเภสัชกรรม PLE-PC PLE-CC1 ออนไลน์ ครอบคลุมทุกหมวดวิชา เภสัชเคมี เภสัชวิทยา เภสัชกรรมคลินิก กฎหมายเภสัชกรรม สมุนไพร พร้อมเฉลยละเอียด",
+    "เตรียมสอบใบประกอบวิชาชีพเภสัชกรรม (PLE-PC, PLE-CC1) และพยาบาล (NLE) ออนไลน์ ครอบคลุมทุกหมวดวิชา พร้อมเฉลยละเอียด — ฝึกฟรี เริ่มต้นที่ 0 บาท",
+  keywords: [
+    "PLE", "PLE-PC", "PLE-CC1", "ข้อสอบเภสัช", "ใบประกอบเภสัชกรรม",
+    "NLE", "ข้อสอบพยาบาล", "ใบประกอบพยาบาล", "สภาการพยาบาล",
+    "ข้อสอบ MCQ", "เตรียมสอบใบประกอบวิชาชีพ",
+  ],
   metadataBase: new URL("https://pharmru.com"),
   openGraph: {
-    title: "ฟาร์มรู้ PharmRu — แพลตฟอร์มข้อสอบเภสัชกรรม",
+    title: "ฟาร์มรู้ PharmRu — ข้อสอบ PLE เภสัช และ NLE พยาบาล",
     description:
-      "เตรียมสอบ PLE เภสัชกรรม ข้อสอบ MCQ ออนไลน์ ครบทุกหมวด พร้อมเฉลยละเอียด",
+      "เตรียมสอบ PLE (เภสัช) และ NLE (พยาบาล) ออนไลน์ ข้อสอบ MCQ ครบทุกหมวด พร้อมเฉลยละเอียด ฝึกฟรีไม่จำกัด",
     url: "https://pharmru.com",
     siteName: "ฟาร์มรู้ PharmRu",
     locale: "th_TH",
@@ -38,7 +43,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "ฟาร์มรู้ PharmRu",
-    description: "แพลตฟอร์มข้อสอบใบประกอบวิชาชีพเภสัชกรรม",
+    description: "แพลตฟอร์มข้อสอบใบประกอบวิชาชีพเภสัชและพยาบาล",
   },
 };
 
