@@ -32,7 +32,7 @@ interface ChallengeDef {
   locked?: boolean;
 }
 
-const DAILY_CHALLENGES: ChallengeDef[] = [
+const DAILY_CHALLENGES_BASE = (practice: string, mock: string): ChallengeDef[] => [
   {
     id: "daily_10",
     title: "ทำ 10 ข้อวันนี้",
@@ -40,7 +40,7 @@ const DAILY_CHALLENGES: ChallengeDef[] = [
     icon: "📝",
     type: "daily",
     xp: 50,
-    href: "/ple/practice",
+    href: practice,
     condition: "ทำ 10 ข้อ",
   },
   {
@@ -50,7 +50,7 @@ const DAILY_CHALLENGES: ChallengeDef[] = [
     icon: "🎯",
     type: "daily",
     xp: 100,
-    href: "/ple/practice",
+    href: practice,
     condition: "80%+ ใน session เดียว",
   },
   {
@@ -60,12 +60,12 @@ const DAILY_CHALLENGES: ChallengeDef[] = [
     icon: "📋",
     type: "daily",
     xp: 150,
-    href: "/ple/mock",
+    href: mock,
     condition: "Mock 1 ชุด",
   },
 ];
 
-const WEEKLY_CHALLENGES: ChallengeDef[] = [
+const WEEKLY_CHALLENGES_BASE = (practice: string): ChallengeDef[] => [
   {
     id: "week_streak_5",
     title: "5 วันติดต่อกัน",
@@ -73,7 +73,7 @@ const WEEKLY_CHALLENGES: ChallengeDef[] = [
     icon: "🔥",
     type: "weekly",
     xp: 300,
-    href: "/ple/practice",
+    href: practice,
     condition: "Streak 5 วัน",
   },
   {
@@ -83,7 +83,7 @@ const WEEKLY_CHALLENGES: ChallengeDef[] = [
     icon: "🌐",
     type: "weekly",
     xp: 500,
-    href: "/ple/practice",
+    href: practice,
     condition: "5 สาขาขึ้นไปในสัปดาห์เดียว",
   },
   {
@@ -93,12 +93,12 @@ const WEEKLY_CHALLENGES: ChallengeDef[] = [
     icon: "💯",
     type: "weekly",
     xp: 400,
-    href: "/ple/practice",
+    href: practice,
     condition: "100 ข้อ/สัปดาห์",
   },
 ];
 
-const SPECIAL_CHALLENGES: ChallengeDef[] = [
+const PHARMACY_SPECIAL: ChallengeDef[] = [
   {
     id: "special_pharma_chem",
     title: "เภสัชเคมีมาสเตอร์",
@@ -142,7 +142,59 @@ const SPECIAL_CHALLENGES: ChallengeDef[] = [
   },
 ];
 
-const ALL_CHALLENGES = [...DAILY_CHALLENGES, ...WEEKLY_CHALLENGES, ...SPECIAL_CHALLENGES];
+const NURSING_SPECIAL: ChallengeDef[] = [
+  {
+    id: "nle_adult_master",
+    title: "การพยาบาลผู้ใหญ่มาสเตอร์",
+    description: "ทำข้อสอบการพยาบาลผู้ใหญ่ ≥ 50 ข้อ และได้คะแนน ≥ 70%",
+    icon: "🩺",
+    type: "special",
+    xp: 600,
+    href: "/nursing/practice",
+    condition: "50 ข้อ + 70%+ ในสาขาเดียว",
+  },
+  {
+    id: "nle_obstetric",
+    title: "สูติฯ ไม่ง้อจด",
+    description: "ทำข้อสอบสาขาสูติฯ ≥ 30 ข้อ",
+    icon: "👶",
+    type: "special",
+    xp: 400,
+    href: "/nursing/practice",
+    condition: "30 ข้อ สาขาสูติฯ",
+  },
+  {
+    id: "special_mock_pass",
+    title: "ผ่าน Mock ครั้งแรก",
+    description: "ทำ Mock Exam และได้คะแนน ≥ 60%",
+    icon: "🏅",
+    type: "special",
+    xp: 800,
+    href: "/nursing/mock",
+    condition: "Mock ≥ 60%",
+  },
+  {
+    id: "special_500_nle",
+    title: "นักศึกษาพยาบาลจริงจัง",
+    description: "ทำข้อสอบสะสมครบ 500 ข้อ",
+    icon: "💉",
+    type: "special",
+    xp: 1000,
+    href: "/nursing/practice",
+    condition: "สะสม 500 ข้อ",
+    locked: true,
+  },
+];
+
+function buildChallenges(category: string | null | undefined) {
+  const isNursing = category === "nursing";
+  const practice = isNursing ? "/nursing/practice" : "/ple/practice";
+  const mock = isNursing ? "/nursing/mock" : "/ple/mock";
+  const daily = DAILY_CHALLENGES_BASE(practice, mock);
+  const weekly = WEEKLY_CHALLENGES_BASE(practice);
+  const special = isNursing ? NURSING_SPECIAL : PHARMACY_SPECIAL;
+  return { daily, weekly, special, all: [...daily, ...weekly, ...special] };
+}
 
 const TYPE_LABEL: Record<string, string> = {
   daily: "ประจำวัน",
@@ -238,12 +290,16 @@ function ChallengeCard({
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
 export default function ChallengesPage() {
-  const { status } = useSession();
+  const { data: session, status } = useSession();
   const router = useRouter();
   const [loading, setLoading] = useState(true);
   const [completed, setCompleted] = useState<Set<string>>(new Set());
   const [claiming, setClaiming] = useState<string | null>(null);
   const [claimMsg, setClaimMsg] = useState<{ id: string; ok: boolean; text: string } | null>(null);
+
+  const examCategory =
+    (session?.user as { exam_category?: string | null } | undefined)?.exam_category ?? null;
+  const { daily, weekly, special, all } = buildChallenges(examCategory);
 
   useEffect(() => {
     if (status === "unauthenticated") { router.push("/login"); return; }
@@ -267,7 +323,7 @@ export default function ChallengesPage() {
       });
       if (res.ok) {
         setCompleted((prev) => new Set([...prev, id]));
-        const def = ALL_CHALLENGES.find((c) => c.id === id);
+        const def = all.find((c) => c.id === id);
         setClaimMsg({ id, ok: true, text: `🎉 สำเร็จ! +${def?.xp ?? 0} XP` });
       } else {
         setClaimMsg({ id, ok: false, text: "ยังไม่ครบเงื่อนไข ลองทำเพิ่มก่อนนะ" });
@@ -288,7 +344,7 @@ export default function ChallengesPage() {
     );
   }
 
-  const doneCount = ALL_CHALLENGES.filter((c) => completed.has(c.id)).length;
+  const doneCount = all.filter((c) => completed.has(c.id)).length;
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6 lg:px-8">
@@ -299,7 +355,7 @@ export default function ChallengesPage() {
             <Trophy className="h-6 w-6 text-amber-500" /> Challenges
           </h1>
           <p className="text-muted-foreground mt-1">
-            สำเร็จแล้ว {doneCount}/{ALL_CHALLENGES.length} challenge
+            สำเร็จแล้ว {doneCount}/{all.length} challenge
           </p>
         </div>
         <Button
@@ -353,7 +409,7 @@ export default function ChallengesPage() {
           </CardTitle>
         </CardHeader>
         <CardContent className="space-y-3">
-          {DAILY_CHALLENGES.map((c) => (
+          {daily.map((c) => (
             <ChallengeCard
               key={c.id}
               challenge={c}
@@ -374,7 +430,7 @@ export default function ChallengesPage() {
           </CardTitle>
         </CardHeader>
         <CardContent className="space-y-3">
-          {WEEKLY_CHALLENGES.map((c) => (
+          {weekly.map((c) => (
             <ChallengeCard
               key={c.id}
               challenge={c}
@@ -395,7 +451,7 @@ export default function ChallengesPage() {
           </CardTitle>
         </CardHeader>
         <CardContent className="space-y-3">
-          {SPECIAL_CHALLENGES.map((c) => (
+          {special.map((c) => (
             <ChallengeCard
               key={c.id}
               challenge={c}
