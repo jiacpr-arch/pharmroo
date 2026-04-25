@@ -84,7 +84,7 @@ function RegisterForm() {
               <Input
                 id="name"
                 type="text"
-                placeholder="ภก.สมชาย ใจดี"
+                placeholder="เช่น สมชาย ใจดี"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 required
