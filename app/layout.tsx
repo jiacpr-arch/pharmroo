@@ -4,6 +4,7 @@ import { Geist_Mono } from "next/font/google";
 import { SessionProvider } from "next-auth/react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import JsonLd from "@/components/JsonLd";
 import "./globals.css";
 
 const sarabun = Sarabun({
@@ -47,6 +48,33 @@ export const metadata: Metadata = {
   },
 };
 
+const organizationLd = {
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  name: "ฟาร์มรู้ PharmRu",
+  alternateName: "PharmRoo",
+  url: "https://pharmru.com",
+  description:
+    "แพลตฟอร์มข้อสอบใบประกอบวิชาชีพเภสัชกรรม (PLE) และพยาบาล (NLE) ออนไลน์",
+  contactPoint: {
+    "@type": "ContactPoint",
+    email: "jiacpr@gmail.com",
+    contactType: "customer support",
+    availableLanguage: ["Thai", "English"],
+  },
+  areaServed: "TH",
+  inLanguage: "th",
+};
+
+const websiteLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "ฟาร์มรู้ PharmRu",
+  url: "https://pharmru.com",
+  inLanguage: "th",
+  publisher: { "@type": "Organization", name: "ฟาร์มรู้ PharmRu" },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -58,6 +86,8 @@ export default function RootLayout({
       className={`${sarabun.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <JsonLd data={organizationLd} />
+        <JsonLd data={websiteLd} />
         <SessionProvider>
           <Navbar />
           <main className="flex-1">{children}</main>

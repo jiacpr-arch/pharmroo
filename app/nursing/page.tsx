@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { ArrowRight, BookOpen, Shuffle, Target, UserPlus, Package, Sparkles } from "lucide-react";
 import { getQuestionSets } from "@/lib/db/queries-mcq";
+import JsonLd from "@/components/JsonLd";
 import { getMcqSubjects, getMcqSubjectCounts, getNewQuestionsStats } from "@/lib/db/queries-mcq";
 import NewQuestionsCountdown from "@/components/NewQuestionsCountdown";
 import { auth } from "@/lib/auth";
@@ -45,8 +46,34 @@ export default async function NursingPage() {
   const nursingSets = allSets.filter((s) => s.exam_type === "NLE");
   const featuredSet = nursingSets[0];
 
+  const courseLd = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    name: "ข้อสอบ NLE ขึ้นทะเบียนสภาการพยาบาล",
+    description:
+      "หลักสูตรฝึกข้อสอบ NLE (Nursing Licensing Exam) ครบทุกสาขาการพยาบาล พร้อมเฉลยละเอียด",
+    provider: {
+      "@type": "EducationalOrganization",
+      name: "ฟาร์มรู้ PharmRu",
+      sameAs: "https://pharmru.com",
+    },
+    inLanguage: "th",
+    educationalCredentialAwarded: "ใบประกอบวิชาชีพการพยาบาล",
+    url: "https://pharmru.com/nursing",
+    offers: featuredSet
+      ? {
+          "@type": "Offer",
+          price: featuredSet.price,
+          priceCurrency: "THB",
+          availability: "https://schema.org/InStock",
+          url: `https://pharmru.com/sets/${featuredSet.id}`,
+        }
+      : undefined,
+  };
+
   return (
     <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+      <JsonLd data={courseLd} />
       {/* Header */}
       <div className="mb-6">
         <div className="flex items-center gap-2 mb-2">
