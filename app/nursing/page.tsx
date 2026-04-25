@@ -2,22 +2,34 @@ import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { ArrowRight, BookOpen, Shuffle, Target, UserPlus } from "lucide-react";
+import { ArrowRight, BookOpen, Shuffle, Target, UserPlus, Package, Sparkles } from "lucide-react";
+import { getQuestionSets } from "@/lib/db/queries-mcq";
 import { getMcqSubjects, getMcqSubjectCounts, getNewQuestionsStats } from "@/lib/db/queries-mcq";
 import NewQuestionsCountdown from "@/components/NewQuestionsCountdown";
 import { auth } from "@/lib/auth";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "ข้อสอบ NLE — ใบประกอบวิชาชีพพยาบาล",
+  title: "ข้อสอบ NLE พยาบาล — ใบประกอบวิชาชีพพยาบาล",
   description:
-    "ฝึกทำข้อสอบขึ้นทะเบียนสภาการพยาบาล (NLE) ครบทุกสาขา พร้อมเฉลยละเอียด",
+    "ฝึกทำข้อสอบขึ้นทะเบียนสภาการพยาบาล (NLE) ออนไลน์ ครบทุกสาขา การพยาบาลผู้ใหญ่ เด็ก สูติฯ จิตเวช ชุมชน พร้อมเฉลยละเอียด ฝึกฟรีไม่จำกัด",
+  keywords: [
+    "NLE", "ข้อสอบ NLE", "ข้อสอบพยาบาล", "ใบประกอบพยาบาล",
+    "สภาการพยาบาล", "ขึ้นทะเบียนพยาบาล", "เตรียมสอบพยาบาล",
+    "ข้อสอบสภาการพยาบาล", "MCQ พยาบาล",
+  ],
+  openGraph: {
+    title: "ข้อสอบ NLE พยาบาล — ฟาร์มรู้",
+    description: "ฝึก NLE ครบทุกสาขา เฉลยละเอียด ฝึกฟรีไม่จำกัด",
+    url: "https://pharmru.com/nursing",
+    type: "website",
+  },
 };
 
 export const dynamic = "force-dynamic";
 
 export default async function NursingPage() {
-  const [session, subjects, counts, stats] = await Promise.all([
+  const [session, subjects, counts, stats, allSets] = await Promise.all([
     auth(),
     getMcqSubjects({ examCategory: "nursing" }),
     getMcqSubjectCounts("nursing"),
@@ -27,8 +39,11 @@ export default async function NursingPage() {
       newBySubject: [] as { icon: string; name_th: string; count: number }[],
       nextReleaseAt: new Date(Date.now() + 7 * 86400000).toISOString(),
     })),
+    getQuestionSets().catch(() => []),
   ]);
   const isLoggedIn = Boolean(session?.user?.id);
+  const nursingSets = allSets.filter((s) => s.exam_type === "NLE");
+  const featuredSet = nursingSets[0];
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
@@ -118,6 +133,43 @@ export default async function NursingPage() {
           </CardContent>
         </Card>
       </div>
+
+      {featuredSet && (
+        <div className="mb-12 rounded-2xl border-2 border-rose-200 bg-gradient-to-br from-rose-50 to-pink-50 p-6 sm:p-8">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+            <div className="w-14 h-14 rounded-2xl bg-rose-600 text-white flex items-center justify-center shrink-0">
+              <Package className="h-7 w-7" />
+            </div>
+            <div className="flex-1">
+              <div className="flex items-center gap-2 mb-1">
+                <Sparkles className="h-4 w-4 text-rose-600" />
+                <span className="text-xs font-semibold text-rose-700 uppercase tracking-wide">ชุดข้อสอบ NLE</span>
+              </div>
+              <h3 className="font-bold text-lg text-rose-900">{featuredSet.name_th}</h3>
+              <p className="text-sm text-rose-700 mt-1">
+                ซื้อครั้งเดียว ใช้ได้ตลอด ไม่มีวันหมดอายุ · {featuredSet.question_count} ข้อ พร้อมเฉลยละเอียด
+              </p>
+            </div>
+            <div className="flex flex-col items-end gap-2">
+              <div className="text-right">
+                {featuredSet.original_price && (
+                  <p className="text-xs text-muted-foreground line-through">
+                    ฿{featuredSet.original_price.toLocaleString()}
+                  </p>
+                )}
+                <p className="text-2xl font-bold text-rose-700">
+                  ฿{featuredSet.price.toLocaleString()}
+                </p>
+              </div>
+              <Link href={`/sets/${featuredSet.id}`}>
+                <Button className="bg-rose-600 hover:bg-rose-700 text-white gap-2">
+                  ดูรายละเอียด <ArrowRight className="h-4 w-4" />
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      )}
 
       <div className="mb-8">
         <div className="flex items-center gap-2 mb-6">
