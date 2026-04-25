@@ -141,6 +141,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         token.role = (user as { role?: string }).role;
         token.membership_type = (user as { membership_type?: string }).membership_type;
         token.membership_expires_at = (user as { membership_expires_at?: string | null }).membership_expires_at;
+        token.exam_category = (user as { exam_category?: string | null }).exam_category;
       }
       // For OAuth providers, fetch fresh user data from DB
       if (
@@ -157,6 +158,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
           token.role = dbUser.role;
           token.membership_type = dbUser.membership_type;
           token.membership_expires_at = dbUser.membership_expires_at;
+          token.exam_category = dbUser.exam_category;
         }
       }
       return token;
@@ -167,6 +169,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         (session.user as { role?: string }).role = token.role as string;
         (session.user as { membership_type?: string }).membership_type = token.membership_type as string;
         (session.user as { membership_expires_at?: string | null }).membership_expires_at = token.membership_expires_at as string | null;
+        (session.user as { exam_category?: string | null }).exam_category = token.exam_category as string | null;
       }
       return session;
     },

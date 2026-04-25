@@ -70,19 +70,31 @@ interface StudyTask { id: string; text: string; done: boolean; }
 
 // ─── Rank system ─────────────────────────────────────────────────────────────
 
-const RANKS = [
+const PHARMACY_RANKS = [
   { min: 0,    max: 99,       label: "Student นศภ.",     short: "Student",    icon: "📖", bg: "bg-emerald-600" },
   { min: 100,  max: 499,      label: "Trainee ฝึกงาน",   short: "Trainee",    icon: "📋", bg: "bg-blue-600" },
   { min: 500,  max: 999,      label: "Pharmacist ภ.บ.",  short: "Pharmacist", icon: "💊", bg: "bg-purple-600" },
   { min: 1000, max: Infinity, label: "Specialist ภ.ม.",  short: "Specialist", icon: "🧪", bg: "bg-amber-500" },
 ] as const;
 
-function getRank(xp: number) {
-  return RANKS.find((r) => xp >= r.min && xp <= r.max) ?? RANKS[0];
+const NURSING_RANKS = [
+  { min: 0,    max: 99,       label: "Student นศพ.",       short: "Student",    icon: "📖", bg: "bg-emerald-600" },
+  { min: 100,  max: 499,      label: "Trainee ฝึกงาน",     short: "Trainee",    icon: "📋", bg: "bg-blue-600" },
+  { min: 500,  max: 999,      label: "Nurse พ.บ.",         short: "Nurse",      icon: "💉", bg: "bg-rose-600" },
+  { min: 1000, max: Infinity, label: "Specialist พยาบาล",  short: "Specialist", icon: "🩺", bg: "bg-amber-500" },
+] as const;
+
+function getRanks(category: string | null | undefined) {
+  return category === "nursing" ? NURSING_RANKS : PHARMACY_RANKS;
 }
 
-function xpToNextRank(xp: number) {
-  const rank = getRank(xp);
+function getRank(xp: number, category: string | null | undefined) {
+  const ranks = getRanks(category);
+  return ranks.find((r) => xp >= r.min && xp <= r.max) ?? ranks[0];
+}
+
+function xpToNextRank(xp: number, category: string | null | undefined) {
+  const rank = getRank(xp, category);
   if (rank.max === Infinity) return null;
   return { current: xp - rank.min, total: rank.max - rank.min + 1, next: rank.max + 1 };
 }
@@ -205,11 +217,20 @@ export default function DashboardPage() {
     return <div className="flex items-center justify-center min-h-[60vh]"><Loader2 className="h-8 w-8 animate-spin text-brand" /></div>;
   }
 
-  const user = session?.user as { name?: string } | undefined;
-  const displayName = user?.name || "นักศึกษาเภสัชศาสตร์";
+  const user = session?.user as { name?: string; exam_category?: string | null } | undefined;
+  const examCategory = user?.exam_category ?? null;
+  const isNursing = examCategory === "nursing";
+  const practiceUrl = isNursing ? "/nursing/practice" : "/ple/practice";
+  const subjectUrlBase = isNursing ? "/nursing/practice" : "/ple/practice";
+  const defaultName = isNursing ? "นักศึกษาพยาบาล" : "นักศึกษาเภสัชศาสตร์";
+  const displayName = user?.name || defaultName;
   const xp = data?.overall.total_attempts ?? 0;
-  const rank = getRank(xp);
-  const xpInfo = xpToNextRank(xp);
+  const rank = getRank(xp, examCategory);
+  const xpInfo = xpToNextRank(xp, examCategory);
+  const ranksForUser = getRanks(examCategory);
+  const quizSourceLabel = isNursing
+    ? "5 ข้อ MCQ สุ่มจากข้อสอบสภาการพยาบาล · บันทึกผลอัตโนมัติ"
+    : "5 ข้อ MCQ สุ่มจากข้อสอบสภาเภสัชฯ · บันทึกผลอัตโนมัติ";
   const streak = data?.streak ?? 0;
   const accuracy = data?.overall.accuracy_pct ?? 0;
   const subjects = data?.subjects ?? [];
@@ -282,7 +303,7 @@ export default function DashboardPage() {
           <div className="mt-4">
             <div className="flex justify-between text-xs text-white/60 mb-1">
               <span>{rank.short}</span>
-              <span>{xpInfo.current}/{xpInfo.total} XP → {RANKS[RANKS.findIndex(r => r.min === rank.min) + 1]?.short}</span>
+              <span>{xpInfo.current}/{xpInfo.total} XP → {ranksForUser[ranksForUser.findIndex(r => r.min === rank.min) + 1]?.short}</span>
             </div>
             <div className="w-full bg-white/20 rounded-full h-2.5">
               <div className="h-2.5 rounded-full bg-white transition-all"
@@ -298,10 +319,10 @@ export default function DashboardPage() {
           <Zap className="h-5 w-5 text-brand shrink-0" />
           <div>
             <p className="font-bold text-sm">Quick Quiz 5 นาที</p>
-            <p className="text-xs text-muted-foreground">5 ข้อ MCQ สุ่มจากข้อสอบสภาเภสัชฯ · บันทึกผลอัตโนมัติ</p>
+            <p className="text-xs text-muted-foreground">{quizSourceLabel}</p>
           </div>
         </div>
-        <Link href="/ple/practice">
+        <Link href={practiceUrl}>
           <Button size="sm" className="bg-brand hover:bg-brand-light text-white gap-1 shrink-0">
             เริ่มเลย <ArrowRight className="h-3.5 w-3.5" />
           </Button>
@@ -332,7 +353,7 @@ export default function DashboardPage() {
             <div className="text-center py-16 text-muted-foreground">
               <p className="text-lg font-bold mb-2">ยังไม่มีข้อมูล</p>
               <p className="text-sm mb-4">เริ่มทำข้อสอบเพื่อดูสถิติของคุณ</p>
-              <Link href="/ple/practice"><Button className="bg-brand hover:bg-brand-light text-white">เริ่มทำข้อสอบ</Button></Link>
+              <Link href={practiceUrl}><Button className="bg-brand hover:bg-brand-light text-white">เริ่มทำข้อสอบ</Button></Link>
             </div>
           ) : (
             <>
@@ -349,7 +370,7 @@ export default function DashboardPage() {
                   const color = s.accuracy_pct >= 80 ? "text-green-600" : s.accuracy_pct >= 60 ? "text-yellow-600" : "text-red-600";
                   const bar = s.accuracy_pct >= 80 ? "bg-green-500" : s.accuracy_pct >= 60 ? "bg-yellow-400" : "bg-red-500";
                   return (
-                    <Link key={s.subject_id} href={`/ple/practice?subject=${s.subject_id}`}>
+                    <Link key={s.subject_id} href={`${subjectUrlBase}?subject=${s.subject_id}`}>
                       <div className="relative rounded-xl border bg-white p-4 hover:shadow-sm hover:border-brand/30 transition-all cursor-pointer">
                         {weak && (
                           <span className="absolute top-2 right-2 text-[10px] font-bold bg-red-100 text-red-600 px-1.5 py-0.5 rounded-full">
@@ -391,7 +412,7 @@ export default function DashboardPage() {
                         <p className="text-red-600 text-xs font-bold">{s.accuracy_pct}% · ผิด {s.total - s.correct} ข้อ</p>
                       </div>
                     </div>
-                    <Link href={`/ple/practice?subject=${s.subject_id}`}>
+                    <Link href={`${subjectUrlBase}?subject=${s.subject_id}`}>
                       <Button size="sm" variant="outline" className="text-xs border-red-200 text-red-600 hover:bg-red-100">
                         ฝึกเพิ่ม <ArrowRight className="h-3 w-3 ml-1" />
                       </Button>
