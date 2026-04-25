@@ -17,7 +17,14 @@ const PHARMACY_SETS = [
 
 type Track = "pharmacy" | "nursing";
 
-export default function PricingClient() {
+type NursingSet = {
+  id: string;
+  name: string;
+  price: number;
+  highlight?: boolean;
+};
+
+export default function PricingClient({ nursingSets = [] }: { nursingSets?: NursingSet[] }) {
   const [track, setTrack] = useState<Track>("pharmacy");
 
   return (
@@ -113,25 +120,54 @@ export default function PricingClient() {
           <div className="rounded-xl border bg-gradient-to-br from-rose-50 to-pink-50 border-rose-200 p-8">
             <div className="flex items-center gap-3 mb-2">
               <Sparkles className="h-6 w-6 text-rose-700" />
-              <h2 className="text-2xl font-bold text-rose-900">ชุดข้อสอบพยาบาล — เร็วๆ นี้</h2>
+              <h2 className="text-2xl font-bold text-rose-900">
+                ชุดข้อสอบพยาบาล {nursingSets.length === 0 && "— เร็วๆ นี้"}
+              </h2>
             </div>
             <p className="text-rose-700 mb-6">
-              ชุดข้อสอบ NLE แบบซื้อครั้งเดียวกำลังจัดเตรียม — ระหว่างนี้สมัคร Subscription
-              รายเดือน/รายปี เพื่อเข้าถึงข้อสอบ NLE ทั้งหมดได้ทันที
+              {nursingSets.length > 0
+                ? "ชุดข้อสอบ NLE แบบซื้อครั้งเดียว — จ่ายครั้งเดียว เข้าถึงได้ตลอดไม่มีวันหมดอายุ"
+                : "ชุดข้อสอบ NLE แบบซื้อครั้งเดียวกำลังจัดเตรียม — ระหว่างนี้สมัคร Subscription รายเดือน/รายปี เพื่อเข้าถึงข้อสอบ NLE ทั้งหมดได้ทันที"}
             </p>
-            <div className="rounded-lg border-2 border-dashed border-rose-300 bg-white/60 p-6 text-center mb-6">
-              <p className="text-sm text-rose-700">
-                🚧 ทีมงานกำลังจัดชุดข้อสอบ NLE แบบซื้อครั้งเดียว<br />
-                คาดว่าเปิดให้ซื้อเร็วๆ นี้
-              </p>
-            </div>
+
+            {nursingSets.length > 0 ? (
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-6">
+                {nursingSets.map((s) => (
+                  <Link key={s.id} href={`/sets/${s.id}`}>
+                    <div
+                      className={`rounded-lg border p-4 flex items-center justify-between cursor-pointer transition-opacity hover:opacity-80 ${
+                        s.highlight
+                          ? "bg-rose-600 text-white border-rose-600"
+                          : "bg-white border-rose-200"
+                      }`}
+                    >
+                      <div className="flex items-center gap-2">
+                        <CheckCircle className={`h-4 w-4 shrink-0 ${s.highlight ? "text-rose-200" : "text-rose-500"}`} />
+                        <span className="text-sm font-medium">{s.name}</span>
+                      </div>
+                      <span className={`font-bold text-sm ml-2 shrink-0 ${s.highlight ? "text-white" : "text-rose-700"}`}>
+                        ฿{s.price.toLocaleString()}
+                      </span>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            ) : (
+              <div className="rounded-lg border-2 border-dashed border-rose-300 bg-white/60 p-6 text-center mb-6">
+                <p className="text-sm text-rose-700">
+                  🚧 ทีมงานกำลังจัดชุดข้อสอบ NLE แบบซื้อครั้งเดียว<br />
+                  คาดว่าเปิดให้ซื้อเร็วๆ นี้
+                </p>
+              </div>
+            )}
+
             <div className="flex flex-col sm:flex-row gap-3 items-start sm:items-center justify-between">
               <p className="text-sm text-rose-700">
                 สมาชิกรายเดือน/รายปี ใช้ได้ทั้งเภสัชและพยาบาล
               </p>
-              <Link href="/nursing">
+              <Link href={nursingSets.length > 0 ? "/sets" : "/nursing"}>
                 <Button className="bg-rose-600 hover:bg-rose-700 text-white shrink-0">
-                  ดูเนื้อหา NLE
+                  {nursingSets.length > 0 ? "ดูชุดข้อสอบทั้งหมด" : "ดูเนื้อหา NLE"}
                 </Button>
               </Link>
             </div>
