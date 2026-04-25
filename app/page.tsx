@@ -74,16 +74,38 @@ export default async function HomePage() {
 
             <div className="mt-6 flex items-center justify-center gap-8 text-sm text-white/60">
               <span className="flex items-center gap-1.5">
-                <Users className="h-4 w-4" /> สำหรับเภสัชกร
+                <Users className="h-4 w-4" /> สำหรับเภสัช & พยาบาล
               </span>
               <span className="flex items-center gap-1.5">
-                <BookOpen className="h-4 w-4" /> PLE-PC & PLE-CC1
+                <BookOpen className="h-4 w-4" /> PLE & NLE
               </span>
               <span className="flex items-center gap-1.5">
                 <Shield className="h-4 w-4" /> เฉลยจากผู้เชี่ยวชาญ
               </span>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Nursing NLE entry point — placed right after hero so nursing students see it immediately */}
+      <section className="py-12 bg-gradient-to-r from-rose-50 to-pink-50">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center">
+          <Badge className="mb-3 bg-rose-100 text-rose-700">ใหม่</Badge>
+          <h2 className="text-2xl sm:text-3xl font-bold">
+            สำหรับนักศึกษาพยาบาล
+          </h2>
+          <p className="mt-2 text-muted-foreground">
+            ข้อสอบขึ้นทะเบียนสภาการพยาบาล (NLE) ครบทุกรายวิชา
+            พร้อมเฉลยละเอียดแนวคิดสำคัญ
+          </p>
+          <Link href="/nursing">
+            <Button
+              size="lg"
+              className="mt-5 bg-rose-600 hover:bg-rose-700 text-white gap-2"
+            >
+              เริ่มฝึกทำ NLE <ArrowRight className="h-4 w-4" />
+            </Button>
+          </Link>
         </div>
       </section>
 
@@ -111,34 +133,12 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* Nursing NLE entry point */}
-      <section className="py-12 bg-gradient-to-r from-rose-50 to-pink-50">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center">
-          <Badge className="mb-3 bg-rose-100 text-rose-700">ใหม่</Badge>
-          <h2 className="text-2xl sm:text-3xl font-bold">
-            สำหรับนักศึกษาพยาบาล
-          </h2>
-          <p className="mt-2 text-muted-foreground">
-            ข้อสอบขึ้นทะเบียนสภาการพยาบาล (NLE) ครบทุกรายวิชา
-            พร้อมเฉลยละเอียดแนวคิดสำคัญ
-          </p>
-          <Link href="/nursing">
-            <Button
-              size="lg"
-              className="mt-5 bg-rose-600 hover:bg-rose-700 text-white gap-2"
-            >
-              เริ่มฝึกทำ NLE <ArrowRight className="h-4 w-4" />
-            </Button>
-          </Link>
-        </div>
-      </section>
-
       {/* Features */}
       <section className="py-16 bg-muted/30">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold">ทำไมต้อง PharmRoo?</h2>
-            <p className="mt-2 text-muted-foreground">ออกแบบมาสำหรับข้อสอบเภสัชโดยเฉพาะ</p>
+            <p className="mt-2 text-muted-foreground">ออกแบบมาสำหรับข้อสอบ PLE (เภสัช) และ NLE (พยาบาล) โดยเฉพาะ</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
