@@ -187,6 +187,42 @@ async function checkEligible(userId: string, challengeId: string): Promise<boole
       return Number(row?.cnt ?? 0) >= 500;
     }
 
+    // ── NLE (nursing) challenges ─────────────────────────────────────────────
+    // Conditions check against NLE-tagged questions broadly. Subject-specific
+    // filtering (e.g. "การพยาบาลผู้ใหญ่") will land once subject naming for
+    // nursing is finalized.
+    case "nle_adult_master": {
+      const r = await db.execute(sql`
+        SELECT COUNT(*) AS total,
+               SUM(CASE WHEN a.is_correct THEN 1 ELSE 0 END) AS correct
+        FROM mcq_attempts a
+        JOIN mcq_questions q ON q.id = a.question_id
+        WHERE a.user_id = ${userId} AND q.exam_type = 'NLE'
+      `);
+      const stats = r.rows[0] as { total: number; correct: number };
+      const total = Number(stats?.total ?? 0);
+      const correct = Number(stats?.correct ?? 0);
+      return total >= 50 && correct / total >= 0.7;
+    }
+
+    case "nle_obstetric": {
+      const r = await db.execute(sql`
+        SELECT COUNT(*) AS total
+        FROM mcq_attempts a
+        JOIN mcq_questions q ON q.id = a.question_id
+        WHERE a.user_id = ${userId} AND q.exam_type = 'NLE'
+      `);
+      return Number((r.rows[0] as { total: number })?.total ?? 0) >= 30;
+    }
+
+    case "special_500_nle": {
+      const [row] = await db
+        .select({ cnt: sql<number>`count(*)` })
+        .from(mcqAttempts)
+        .where(eq(mcqAttempts.user_id, userId));
+      return Number(row?.cnt ?? 0) >= 500;
+    }
+
     default:
       return false;
   }
