@@ -27,15 +27,15 @@ async function handler(req: Request) {
   }
 
   // ── Parse options ─────────────────────────────────────────────────────────────
-  let pharmacyTotal = 12;
-  let nursingTotal = 5;
+  let pharmacyTotal = 50;
+  let nursingTotal = 50;
   try {
     const body = await req.json().catch(() => ({}));
     if (typeof body.pharmacy_total === "number") {
-      pharmacyTotal = Math.max(0, Math.min(20, body.pharmacy_total));
+      pharmacyTotal = Math.max(0, Math.min(100, body.pharmacy_total));
     }
     if (typeof body.nursing_total === "number") {
-      nursingTotal = Math.max(0, Math.min(20, body.nursing_total));
+      nursingTotal = Math.max(0, Math.min(100, body.nursing_total));
     }
   } catch {
     // use defaults
@@ -69,22 +69,19 @@ async function handler(req: Request) {
     (s) => s.exam_type === "NLE" && subjectIdMap[s.name]
   );
 
-  function pickJobs(pool: typeof SUBJECT_CONFIGS, total: number, offset: number) {
+  function pickJobs(pool: typeof SUBJECT_CONFIGS, total: number) {
     if (pool.length === 0 || total === 0) return [];
-    const num = Math.min(3, pool.length);
-    const picked = Array.from({ length: num }, (_, i) =>
-      pool[(dayOfYear + offset + i) % pool.length]
-    );
-    const perSubject = Math.ceil(total / num);
-    return picked.map((subject, i) => ({
+    const perSubject = Math.floor(total / pool.length);
+    const remainder = total % pool.length;
+    return pool.map((subject, i) => ({
       subject,
-      count: i < num - 1 ? perSubject : total - perSubject * i,
-    }));
+      count: perSubject + (i < remainder ? 1 : 0),
+    })).filter(j => j.count > 0);
   }
 
   const allJobs = [
-    ...pickJobs(pharmacyPool, pharmacyTotal, 0),
-    ...pickJobs(nursingPool, nursingTotal, 100),
+    ...pickJobs(pharmacyPool, pharmacyTotal),
+    ...pickJobs(nursingPool, nursingTotal),
   ];
 
   if (allJobs.length === 0) {
