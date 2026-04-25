@@ -401,7 +401,9 @@ export default function McqPractice({
                         <CardContent className="p-4">
                           <h4 className="font-bold text-blue-800 mb-2">เหตุผลโดยละเอียด</h4>
                           <p className="text-sm leading-relaxed text-foreground/80">
-                            {question.detailed_explanation.reason || "เหตุผลโดยละเอียดสำหรับคำตอบที่ถูกต้อง อธิบายกลไกทางเภสัชวิทยา..."}
+                            {question.detailed_explanation.reason || (examType === "NLE"
+                              ? "เหตุผลโดยละเอียดสำหรับคำตอบที่ถูกต้อง อธิบายกลไกทางการพยาบาลและการดูแลผู้ป่วย..."
+                              : "เหตุผลโดยละเอียดสำหรับคำตอบที่ถูกต้อง อธิบายกลไกทางเภสัชวิทยา...")}
                           </p>
                         </CardContent>
                       </Card>
