@@ -584,7 +584,7 @@ export default function DashboardPage() {
 
           {/* Rank table */}
           <div className="space-y-2">
-            {RANKS.map((r) => {
+            {ranksForUser.map((r) => {
               const active = rank.label === r.label;
               return (
                 <div key={r.label} className={`flex items-center gap-3 p-4 rounded-xl border ${active ? "border-brand/30 bg-brand/5" : "bg-white"}`}>
