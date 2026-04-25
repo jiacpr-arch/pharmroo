@@ -6,6 +6,7 @@ import { setPurchases } from "@/lib/db/schema";
 import { and, eq } from "drizzle-orm";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
@@ -71,8 +72,30 @@ export default async function SetDetailPage({
       ? set.original_price - set.price
       : null;
 
+  const productLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: set.name_th,
+    description:
+      set.description ||
+      `ชุดข้อสอบ ${set.name_th} จำนวน ${set.question_count} ข้อ พร้อมเฉลยละเอียด`,
+    category: set.exam_type === "NLE" ? "ข้อสอบ NLE พยาบาล" : "ข้อสอบ PLE เภสัช",
+    brand: { "@type": "Brand", name: "ฟาร์มรู้ PharmRu" },
+    offers: {
+      "@type": "Offer",
+      price: set.price,
+      priceCurrency: "THB",
+      availability: "https://schema.org/InStock",
+      url: `https://pharmru.com/sets/${set.id}`,
+      priceValidUntil: new Date(Date.now() + 365 * 86400000)
+        .toISOString()
+        .slice(0, 10),
+    },
+  };
+
   return (
     <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6">
+      <JsonLd data={productLd} />
       <Link
         href="/sets"
         className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-brand mb-6"
