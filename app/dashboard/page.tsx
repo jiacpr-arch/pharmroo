@@ -162,18 +162,37 @@ function RadarChart({ subjects }: { subjects: SubjectBreakdown[] }) {
 
 // ─── Challenges data (same as /challenges page) ───────────────────────────────
 
-const CHALLENGES = [
-  { id: "daily_10",         title: "ทำ 10 ข้อวันนี้",      icon: "📝", xp: 50,  href: "/ple/practice" },
-  { id: "daily_accuracy",   title: "แม่นยำ 80%+",           icon: "🎯", xp: 100, href: "/ple/practice" },
-  { id: "daily_mock",       title: "สอบ Mock วันนี้",       icon: "📋", xp: 150, href: "/ple/mock" },
-  { id: "week_streak_5",    title: "5 วันติดต่อกัน",        icon: "🔥", xp: 300, href: "/ple/practice" },
-  { id: "week_all_subjects", title: "ครบทุกสาขา",           icon: "🌐", xp: 500, href: "/ple/practice" },
-  { id: "week_100",         title: "100 ข้อในสัปดาห์",      icon: "💯", xp: 400, href: "/ple/practice" },
-  { id: "special_pharma_chem", title: "เภสัชเคมีมาสเตอร์",  icon: "⚗️", xp: 600, href: "/ple/practice?subject=pharma_chem" },
-  { id: "special_pharm_law",   title: "กฎหมายไม่ง้อจด",    icon: "⚖️", xp: 400, href: "/ple/practice?subject=pharm_law" },
-  { id: "special_mock_pass",   title: "ผ่าน Mock ครั้งแรก", icon: "🏅", xp: 800, href: "/ple/mock" },
-  { id: "special_500",         title: "นักศึกษาจริงจัง",    icon: "💊", xp: 1000, href: "/ple/practice" },
-];
+type Challenge = { id: string; title: string; icon: string; xp: number; href: string };
+
+function getChallenges(category: string | null | undefined): Challenge[] {
+  const isNursing = category === "nursing";
+  const practice = isNursing ? "/nursing/practice" : "/ple/practice";
+  const mock = isNursing ? "/nursing/mock" : "/ple/mock";
+
+  const generic: Challenge[] = [
+    { id: "daily_10",          title: "ทำ 10 ข้อวันนี้",       icon: "📝", xp: 50,   href: practice },
+    { id: "daily_accuracy",    title: "แม่นยำ 80%+",            icon: "🎯", xp: 100,  href: practice },
+    { id: "daily_mock",        title: "สอบ Mock วันนี้",        icon: "📋", xp: 150,  href: mock },
+    { id: "week_streak_5",     title: "5 วันติดต่อกัน",          icon: "🔥", xp: 300,  href: practice },
+    { id: "week_all_subjects", title: "ครบทุกสาขา",             icon: "🌐", xp: 500,  href: practice },
+    { id: "week_100",          title: "100 ข้อในสัปดาห์",       icon: "💯", xp: 400,  href: practice },
+    { id: "special_mock_pass", title: "ผ่าน Mock ครั้งแรก",     icon: "🏅", xp: 800,  href: mock },
+  ];
+
+  const trackSpecific: Challenge[] = isNursing
+    ? [
+        { id: "nle_adult_master",   title: "การพยาบาลผู้ใหญ่มาสเตอร์", icon: "🩺", xp: 600, href: `${practice}` },
+        { id: "nle_obstetric",      title: "สูติฯ ไม่ง้อจด",            icon: "👶", xp: 400, href: `${practice}` },
+        { id: "special_500_nle",    title: "นักศึกษาพยาบาลจริงจัง",     icon: "💉", xp: 1000, href: practice },
+      ]
+    : [
+        { id: "special_pharma_chem", title: "เภสัชเคมีมาสเตอร์",   icon: "⚗️", xp: 600, href: `${practice}?subject=pharma_chem` },
+        { id: "special_pharm_law",   title: "กฎหมายไม่ง้อจด",     icon: "⚖️", xp: 400, href: `${practice}?subject=pharm_law` },
+        { id: "special_500",         title: "นักศึกษาจริงจัง",     icon: "💊", xp: 1000, href: practice },
+      ];
+
+  return [...generic, ...trackSpecific];
+}
 
 // ─── Tab type ────────────────────────────────────────────────────────────────
 
@@ -231,6 +250,7 @@ export default function DashboardPage() {
   const quizSourceLabel = isNursing
     ? "5 ข้อ MCQ สุ่มจากข้อสอบสภาการพยาบาล · บันทึกผลอัตโนมัติ"
     : "5 ข้อ MCQ สุ่มจากข้อสอบสภาเภสัชฯ · บันทึกผลอัตโนมัติ";
+  const challenges = getChallenges(examCategory);
   const streak = data?.streak ?? 0;
   const accuracy = data?.overall.accuracy_pct ?? 0;
   const subjects = data?.subjects ?? [];
@@ -252,7 +272,7 @@ export default function DashboardPage() {
       });
       if (res.ok) {
         setCompletedChallenges((p) => new Set([...p, id]));
-        const def = CHALLENGES.find((c) => c.id === id);
+        const def = challenges.find((c) => c.id === id);
         setClaimMsg({ ok: true, text: `🎉 สำเร็จ! +${def?.xp ?? 0} XP` });
       } else {
         setClaimMsg({ ok: false, text: "ยังไม่ครบเงื่อนไข ลองทำเพิ่มก่อนนะ" });
@@ -496,7 +516,7 @@ export default function DashboardPage() {
               {claimMsg.text}
             </div>
           )}
-          {CHALLENGES.map((c) => {
+          {challenges.map((c) => {
             const done = completedChallenges.has(c.id);
             return (
               <div key={c.id} className={`flex items-center justify-between rounded-xl border p-4 gap-3 ${done ? "bg-green-50 border-green-200" : "bg-white"}`}>
@@ -564,7 +584,7 @@ export default function DashboardPage() {
 
           {/* Rank table */}
           <div className="space-y-2">
-            {RANKS.map((r) => {
+            {ranksForUser.map((r) => {
               const active = rank.label === r.label;
               return (
                 <div key={r.label} className={`flex items-center gap-3 p-4 rounded-xl border ${active ? "border-brand/30 bg-brand/5" : "bg-white"}`}>
