@@ -16,10 +16,19 @@ interface ReportData {
   };
   subjects: SubjectData[];
   weakAreas: SubjectData[];
+  examCategory?: string | null;
 }
 
 export function generateReportEmailHtml(data: ReportData): string {
-  const { userName, overall, subjects, weakAreas } = data;
+  const { userName, overall, subjects, weakAreas, examCategory } = data;
+  const isNursing = examCategory === "nursing";
+  const examLabel = isNursing ? "NLE" : "PLE";
+  const platformTagline = isNursing
+    ? "แพลตฟอร์มข้อสอบใบประกอบวิชาชีพพยาบาล"
+    : "แพลตฟอร์มข้อสอบเภสัชกรรม";
+  const ctaHref = isNursing
+    ? "https://pharmru.com/nursing"
+    : "https://pharmru.com/ple";
 
   const subjectRows = subjects
     .map(
@@ -46,7 +55,7 @@ export function generateReportEmailHtml(data: ReportData): string {
   <div style="max-width:600px;margin:0 auto;padding:24px;">
     <div style="background:#0d9488;color:white;padding:24px;border-radius:12px 12px 0 0;text-align:center;">
       <h1 style="margin:0;font-size:24px;">💊 PharmRoo ภ.รู้</h1>
-      <p style="margin:8px 0 0;opacity:0.9;">รายงานผลการทำข้อสอบ PLE</p>
+      <p style="margin:8px 0 0;opacity:0.9;">รายงานผลการทำข้อสอบ ${examLabel}</p>
     </div>
 
     <div style="background:white;padding:24px;border-radius:0 0 12px 12px;">
@@ -95,14 +104,14 @@ export function generateReportEmailHtml(data: ReportData): string {
 
       <!-- CTA -->
       <div style="text-align:center;margin-top:32px;">
-        <a href="https://pharma.morroo.com/ple" style="display:inline-block;background:#0d9488;color:white;padding:12px 32px;border-radius:8px;text-decoration:none;font-weight:bold;">
+        <a href="${ctaHref}" style="display:inline-block;background:#0d9488;color:white;padding:12px 32px;border-radius:8px;text-decoration:none;font-weight:bold;">
           ฝึกทำข้อสอบเพิ่ม →
         </a>
       </div>
 
       <p style="color:#999;font-size:12px;text-align:center;margin-top:32px;">
-        ส่งจาก PharmRoo ภ.รู้ — แพลตฟอร์มข้อสอบเภสัชกรรม<br>
-        <a href="https://pharma.morroo.com" style="color:#0d9488;">pharma.morroo.com</a>
+        ส่งจาก PharmRoo ภ.รู้ — ${platformTagline}<br>
+        <a href="https://pharmru.com" style="color:#0d9488;">pharmru.com</a>
       </p>
     </div>
   </div>
