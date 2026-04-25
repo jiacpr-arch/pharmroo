@@ -59,12 +59,25 @@ export async function getMcqQuestions(options?: {
   if (options?.examType) conditions.push(eq(mcqQuestions.exam_type, options.examType as "PLE-PC" | "PLE-CC1" | "NLE"));
   if (options?.examDay) conditions.push(eq(mcqQuestions.exam_day, options.examDay));
 
-  const rows = await db
+  const limit = options?.limit || 50;
+
+  const aiRows = await db
     .select({ q: mcqQuestions, s: mcqSubjects })
     .from(mcqQuestions)
     .leftJoin(mcqSubjects, eq(mcqQuestions.subject_id, mcqSubjects.id))
-    .where(and(...conditions))
-    .limit(options?.limit || 50);
+    .where(and(...conditions, eq(mcqQuestions.is_ai_enhanced, true)))
+    .limit(limit);
+
+  let rows = aiRows;
+  if (rows.length < limit) {
+    const legacyRows = await db
+      .select({ q: mcqQuestions, s: mcqSubjects })
+      .from(mcqQuestions)
+      .leftJoin(mcqSubjects, eq(mcqQuestions.subject_id, mcqSubjects.id))
+      .where(and(...conditions, eq(mcqQuestions.is_ai_enhanced, false)))
+      .limit(limit - rows.length);
+    rows = [...rows, ...legacyRows];
+  }
 
   let questions = rows.map((r) => toMcqQuestion(r.q, r.s ?? undefined));
   if (options?.randomize) questions = questions.sort(() => Math.random() - 0.5);
