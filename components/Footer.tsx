@@ -12,35 +12,39 @@ export default function Footer() {
               <span>ภ.รู้</span>
             </div>
             <p className="text-sm text-white/70">
-              แพลตฟอร์มข้อสอบเภสัชกรรมออนไลน์
+              แพลตฟอร์มข้อสอบ PLE (เภสัช) และ NLE (พยาบาล) ออนไลน์
               <br />
-              เตรียมสอบ PLE ด้วย AI ที่เข้าใจคุณ
+              เตรียมสอบใบประกอบวิชาชีพด้วย AI ที่เข้าใจคุณ
             </p>
           </div>
 
-          {/* Links */}
+          {/* PLE links */}
           <div>
-            <h3 className="font-semibold mb-3">หมวดวิชา</h3>
+            <h3 className="font-semibold mb-3">PLE เภสัช</h3>
             <ul className="space-y-2 text-sm text-white/70">
-              <li><Link href="/ple" className="hover:text-white transition-colors">ข้อสอบทั้งหมด</Link></li>
-              <li><Link href="/ple/practice?subject=pharmacotherapy" className="hover:text-white transition-colors">Pharmacotherapy</Link></li>
-              <li><Link href="/ple/practice?subject=pharma_tech" className="hover:text-white transition-colors">เทคโนโลยีเภสัชกรรม</Link></li>
-              <li><Link href="/ple/practice?subject=pharma_analysis" className="hover:text-white transition-colors">เภสัชวิเคราะห์</Link></li>
+              <li><Link href="/ple" className="hover:text-white transition-colors">ข้อสอบ PLE ทั้งหมด</Link></li>
+              <li><Link href="/ple/practice" className="hover:text-white transition-colors">ฝึกทำ PLE</Link></li>
+              <li><Link href="/ple/mock" className="hover:text-white transition-colors">จำลองสอบ PLE</Link></li>
+              <li><Link href="/sets" className="hover:text-white transition-colors">ชุดข้อสอบ</Link></li>
+            </ul>
+          </div>
+
+          {/* NLE links */}
+          <div>
+            <h3 className="font-semibold mb-3">NLE พยาบาล</h3>
+            <ul className="space-y-2 text-sm text-white/70">
+              <li><Link href="/nursing" className="hover:text-white transition-colors">ข้อสอบ NLE ทั้งหมด</Link></li>
+              <li><Link href="/nursing/practice" className="hover:text-white transition-colors">ฝึกทำ NLE</Link></li>
+              <li><Link href="/nursing/mock" className="hover:text-white transition-colors">จำลองสอบ NLE</Link></li>
+              <li><Link href="/pricing" className="hover:text-white transition-colors">แพ็กเกจราคา</Link></li>
             </ul>
           </div>
 
           <div>
-            <h3 className="font-semibold mb-3">เกี่ยวกับ</h3>
+            <h3 className="font-semibold mb-3">ติดต่อ</h3>
             <ul className="space-y-2 text-sm text-white/70">
-              <li><Link href="/pricing" className="hover:text-white transition-colors">แพ็กเกจราคา</Link></li>
               <li><Link href="/login" className="hover:text-white transition-colors">เข้าสู่ระบบ</Link></li>
               <li><Link href="/register" className="hover:text-white transition-colors">สมัครสมาชิก</Link></li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="font-semibold mb-3">ติดต่อเรา</h3>
-            <ul className="space-y-2 text-sm text-white/70">
               <li>📧 jiacpr@gmail.com</li>
               <li>📱 Line: @jiacpr</li>
             </ul>
