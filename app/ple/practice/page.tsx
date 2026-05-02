@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import { getMcqSubjects, getMcqQuestions } from "@/lib/db/queries-mcq";
 import McqPractice from "@/components/McqPractice";
 import { Badge } from "@/components/ui/badge";
+import GoodyEmbed from "@/components/GoodyEmbed";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import type { Metadata } from "next";
@@ -179,6 +180,13 @@ export default async function PracticePage({
       >
         <PracticeContent subjectId={subject} day={day} />
       </Suspense>
+
+      <section className="mt-12">
+        <h2 className="text-lg font-semibold mb-3">ข่าวสารสุขภาพ</h2>
+        <div className="overflow-hidden rounded-xl border bg-white">
+          <GoodyEmbed site="health" type="news" title="ข่าวสารสุขภาพ" />
+        </div>
+      </section>
     </div>
   );
 }
