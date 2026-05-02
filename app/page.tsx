@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import PricingCard from "@/components/PricingCard";
 import NewQuestionsCountdown from "@/components/NewQuestionsCountdown";
+import GoodyEmbed from "@/components/GoodyEmbed";
 import { CATEGORIES, PRICING_PLANS } from "@/lib/types";
 import { getNewQuestionsStats } from "@/lib/db/queries-mcq";
 import {
@@ -129,6 +130,16 @@ export default async function HomePage() {
                 <span className="text-sm font-medium text-center">{cat.name}</span>
               </Link>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Health News */}
+      <section className="py-12">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold mb-4 text-center">ข่าวสารสุขภาพ</h2>
+          <div className="overflow-hidden rounded-xl border bg-white">
+            <GoodyEmbed site="health" type="news" title="ข่าวสารสุขภาพ" />
           </div>
         </div>
       </section>
