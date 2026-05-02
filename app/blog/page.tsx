@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getBlogPosts } from "@/lib/blog";
+import GoodyEmbed from "@/components/GoodyEmbed";
 
 export const dynamic = "force-dynamic";
 
@@ -13,6 +14,13 @@ export default async function BlogPage() {
         <p className="text-gray-500 mb-8">
           ความรู้เภสัชกรรม เทคนิคการสอบ และข่าวสารวงการ
         </p>
+
+        <section className="mb-10">
+          <h2 className="text-lg font-semibold mb-3">ข่าวสารสุขภาพ</h2>
+          <div className="overflow-hidden rounded-xl border bg-white">
+            <GoodyEmbed site="health" type="news" title="ข่าวสารสุขภาพ" />
+          </div>
+        </section>
 
         {posts.length === 0 ? (
           <p className="text-gray-400 text-center py-20">

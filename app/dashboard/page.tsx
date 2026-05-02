@@ -11,6 +11,7 @@ import {
   CheckSquare, Plus, Trash2, ChevronRight, Flame,
   ArrowRight, Lock, CheckCircle,
 } from "lucide-react";
+import GoodyEmbed from "@/components/GoodyEmbed";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -331,6 +332,11 @@ export default function DashboardPage() {
             </div>
           </div>
         )}
+      </div>
+
+      {/* ── Wandee (ข้อความวันดี) ───────────────────────────────────── */}
+      <div className="mb-4 overflow-hidden rounded-xl border bg-white">
+        <GoodyEmbed site="jiacpr" type="wandee" title="ข้อความวันดี" />
       </div>
 
       {/* ── Quick Quiz Banner ───────────────────────────────────────── */}
