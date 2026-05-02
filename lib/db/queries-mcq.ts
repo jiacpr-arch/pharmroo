@@ -74,7 +74,7 @@ export async function getMcqQuestions(options?: {
       .select({ q: mcqQuestions, s: mcqSubjects })
       .from(mcqQuestions)
       .leftJoin(mcqSubjects, eq(mcqQuestions.subject_id, mcqSubjects.id))
-      .where(and(...conditions, eq(mcqQuestions.is_ai_enhanced, false)))
+      .where(and(...conditions, sql`${mcqQuestions.is_ai_enhanced} IS NOT TRUE`))
       .limit(limit - rows.length);
     rows = [...rows, ...legacyRows];
   }
