@@ -38,6 +38,7 @@ export default async function NursingPage() {
       totalActive: 0,
       newThisWeek: 0,
       newBySubject: [] as { icon: string; name_th: string; count: number }[],
+      // eslint-disable-next-line react-hooks/purity
       nextReleaseAt: new Date(Date.now() + 7 * 86400000).toISOString(),
     })),
     getQuestionSets().catch(() => []),

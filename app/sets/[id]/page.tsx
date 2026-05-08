@@ -87,6 +87,7 @@ export default async function SetDetailPage({
       priceCurrency: "THB",
       availability: "https://schema.org/InStock",
       url: `https://pharmru.com/sets/${set.id}`,
+      // eslint-disable-next-line react-hooks/purity
       priceValidUntil: new Date(Date.now() + 365 * 86400000)
         .toISOString()
         .slice(0, 10),
@@ -158,7 +159,7 @@ export default async function SetDetailPage({
               <ol className="space-y-2 text-sm text-muted-foreground list-decimal pl-4">
                 <li>ซื้อชุดข้อสอบโดยโอนเงินตามข้อมูลที่แสดง</li>
                 <li>แนบสลิปและรอการยืนยัน (ภายใน 1-2 ชั่วโมง)</li>
-                <li>เข้าถึงชุดข้อสอบได้จากหน้า "ชุดข้อสอบของฉัน"</li>
+                <li>เข้าถึงชุดข้อสอบได้จากหน้า &ldquo;ชุดข้อสอบของฉัน&rdquo;</li>
                 <li>ทำซ้ำได้ไม่จำกัด ไม่มีวันหมดอายุ</li>
               </ol>
             </CardContent>
