@@ -33,6 +33,7 @@ export default function McqPractice({
   const [stats, setStats] = useState({ correct: 0, total: 0 });
   const [userId, setUserId] = useState<string | null>(null);
   const [sessionId, setSessionId] = useState<string | null>(null);
+  // eslint-disable-next-line react-hooks/purity
   const questionStartTime = useRef<number>(Date.now());
   const { data: authSession } = useSession();
   const membershipType = (authSession?.user as { membership_type?: string })?.membership_type;
@@ -125,19 +126,10 @@ export default function McqPractice({
     setStats({ correct: 0, total: 0 });
   }, []);
 
-  if (!question) {
-    return (
-      <div className="text-center py-16">
-        <p className="text-lg text-muted-foreground">ไม่มีข้อสอบ</p>
-      </div>
-    );
-  }
-
   const isFinished = showResult && currentIndex === questions.length - 1;
   const percentage =
     stats.total > 0 ? Math.round((stats.correct / stats.total) * 100) : 0;
 
-  // Update session when finished
   const hasUpdatedSession = useRef(false);
   useEffect(() => {
     if (isFinished && sessionId && !hasUpdatedSession.current) {
@@ -153,6 +145,14 @@ export default function McqPractice({
       }).catch(() => {});
     }
   }, [isFinished, sessionId, stats.correct]);
+
+  if (!question) {
+    return (
+      <div className="text-center py-16">
+        <p className="text-lg text-muted-foreground">ไม่มีข้อสอบ</p>
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-6">

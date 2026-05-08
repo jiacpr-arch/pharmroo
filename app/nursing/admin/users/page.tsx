@@ -63,6 +63,7 @@ export default function NursingAdminUsersPage() {
   }, []);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     if (isAuthorized) loadUsers();
   }, [isAuthorized, loadUsers]);
 

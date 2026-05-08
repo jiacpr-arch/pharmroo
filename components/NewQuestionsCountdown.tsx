@@ -49,6 +49,7 @@ export default function NewQuestionsCountdown({ totalActive, newThisWeek, newByS
         done: false,
       };
     }
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setRemaining(calc());
     const id = setInterval(() => setRemaining(calc()), 1000);
     return () => clearInterval(id);
