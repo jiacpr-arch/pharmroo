@@ -9,7 +9,9 @@ export const dynamic = "force-dynamic";
 
 export default async function AdminChatbotPage() {
   const session = await auth();
-  if (session?.user?.role !== "admin") redirect("/");
+  if (!session?.user || (session.user as { role?: string }).role !== "admin") {
+    redirect("/");
+  }
 
   const messages = await db
     .select()

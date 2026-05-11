@@ -1,4 +1,4 @@
-import { describe, it, expect } from "vitest";
+import { describe, it, expect, beforeEach } from "vitest";
 import { verifyWebhookSignature, mapFieldData, rewardForForm } from "./facebook-leads";
 import { createHmac } from "crypto";
 
