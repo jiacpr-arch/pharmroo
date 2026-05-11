@@ -337,7 +337,7 @@ export const lineLinkCodes = pgTable("line_link_codes", {
 });
 
 // ========================================
-// 18. Blog Posts (AI auto-generated)
+// 18. Blog Posts (AI auto-generated) + autopost state
 // ========================================
 export const blogPosts = pgTable("blog_posts", {
   id: text("id")
@@ -353,6 +353,20 @@ export const blogPosts = pgTable("blog_posts", {
   published_at: text("published_at")
     .notNull()
     .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+  // Facebook autopost state
+  fb_post_id: text("fb_post_id"),
+  fb_posted_at: text("fb_posted_at"),
+  fb_last_error: text("fb_last_error"),
+  autopost_format: text("autopost_format"),
+  // 'cover_caption' | 'quote_card' | 'link_only'
+  // LINE broadcast state
+  cover_image_line: text("cover_image_line"),
+  line_broadcast_at: text("line_broadcast_at"),
+  line_last_error: text("line_last_error"),
+  // Instagram autopost state
+  ig_media_id: text("ig_media_id"),
+  ig_posted_at: text("ig_posted_at"),
+  ig_last_error: text("ig_last_error"),
 });
 
 // ========================================
@@ -365,6 +379,147 @@ export const appSettings = pgTable("app_settings", {
     .notNull()
     .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
 });
+
+// ========================================
+// 20. Leads — canonical lead/prospect table
+// ========================================
+export const leads = pgTable("leads", {
+  id: text("id").primaryKey().default(sql`generate_hex_id()`),
+  source: text("source").notNull(),
+  // 'fb_leadgen_form' | 'fb_messenger' | 'line_oa' | 'landing' | 'organic' | 'admin'
+  campaign: text("campaign"),
+  ad_set: text("ad_set"),
+  fb_lead_id: text("fb_lead_id").unique(),
+  fb_psid: text("fb_psid"),
+  line_user_id: text("line_user_id"),
+  email: text("email"),
+  phone: text("phone"),
+  name: text("name"),
+  status_year: text("status_year"),
+  exam_target: text("exam_target"),
+  reward_choice: text("reward_choice"),
+  stage: text("stage").notNull().default("new"),
+  // 'new' | 'contacted' | 'code_issued' | 'registered' | 'redeemed' | 'paid' | 'dropped'
+  user_id: text("user_id").references(() => users.id, { onDelete: "set null" }),
+  consent_pdpa: boolean("consent_pdpa").notNull().default(false),
+  consent_at: text("consent_at"),
+  raw_payload: jsonb("raw_payload"),
+  created_at: text("created_at")
+    .notNull()
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+  updated_at: text("updated_at")
+    .notNull()
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+});
+
+// ========================================
+// 21. Redeem Codes
+// ========================================
+export const redeemCodes = pgTable("redeem_codes", {
+  code: text("code").primaryKey(),
+  reward_type: text("reward_type").notNull(),
+  // 'monthly_1m' | 'bundle_10q'
+  source: text("source").notNull(),
+  campaign: text("campaign"),
+  lead_id: text("lead_id").references(() => leads.id, { onDelete: "set null" }),
+  issued_to_email: text("issued_to_email"),
+  redeemed_by: text("redeemed_by").references(() => users.id, {
+    onDelete: "set null",
+  }),
+  redeemed_at: text("redeemed_at"),
+  expires_at: text("expires_at").notNull(),
+  stripe_coupon_id: text("stripe_coupon_id"),
+  created_at: text("created_at")
+    .notNull()
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+});
+
+// ========================================
+// 22. Chat Messages
+// ========================================
+export const chatMessages = pgTable("chat_messages", {
+  id: text("id").primaryKey().default(sql`generate_hex_id()`),
+  channel: text("channel").notNull(),
+  // 'web' | 'line' | 'facebook'
+  channel_user_id: text("channel_user_id").notNull(),
+  user_id: text("user_id").references(() => users.id, { onDelete: "set null" }),
+  lead_id: text("lead_id").references(() => leads.id, { onDelete: "set null" }),
+  role: text("role").notNull(),
+  // 'user' | 'assistant'
+  content: text("content").notNull(),
+  created_at: text("created_at")
+    .notNull()
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+});
+
+// ========================================
+// 23. Lead Messages Sent — dedupe follow-up reminders
+// ========================================
+export const leadMessagesSent = pgTable(
+  "lead_messages_sent",
+  {
+    lead_id: text("lead_id")
+      .notNull()
+      .references(() => leads.id, { onDelete: "cascade" }),
+    day: integer("day").notNull(),
+    channel: text("channel").notNull(),
+    // 'email' | 'messenger' | 'line'
+    sent_at: text("sent_at")
+      .notNull()
+      .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+  },
+  (t) => [primaryKey({ columns: [t.lead_id, t.day, t.channel] })]
+);
+
+// ========================================
+// 24. Lead Chat State — Messenger PSID conversation state
+// ========================================
+export const leadChatState = pgTable("lead_chat_state", {
+  psid: text("psid").primaryKey(),
+  step: text("step").notNull(),
+  partial_data: jsonb("partial_data").notNull().default(sql`'{}'::jsonb`),
+  campaign: text("campaign"),
+  ad_set: text("ad_set"),
+  updated_at: text("updated_at")
+    .notNull()
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+});
+
+// ========================================
+// 25. Bundle Credits — ledger for redeemed credits
+// ========================================
+export const bundleCredits = pgTable("bundle_credits", {
+  id: text("id").primaryKey().default(sql`generate_hex_id()`),
+  user_id: text("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
+  delta: integer("delta").notNull(),
+  source: text("source").notNull(),
+  // 'redeem' | 'purchase' | 'use' | 'adjustment'
+  reference: text("reference"),
+  created_at: text("created_at")
+    .notNull()
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+});
+
+// ========================================
+// 26. Trial Messages Sent — dedupe trial-expiry reminders
+// ========================================
+export const trialMessagesSent = pgTable(
+  "trial_messages_sent",
+  {
+    user_id: text("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    days_before_expiry: integer("days_before_expiry").notNull(),
+    channel: text("channel").notNull(),
+    // 'email' | 'line' | 'messenger'
+    sent_at: text("sent_at")
+      .notNull()
+      .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+  },
+  (t) => [primaryKey({ columns: [t.user_id, t.days_before_expiry, t.channel] })]
+);
 
 // ========================================
 // Types
@@ -382,3 +537,10 @@ export type Referral = typeof referrals.$inferSelect;
 export type LineLinkCode = typeof lineLinkCodes.$inferSelect;
 export type BlogPost = typeof blogPosts.$inferSelect;
 export type AppSetting = typeof appSettings.$inferSelect;
+export type Lead = typeof leads.$inferSelect;
+export type RedeemCode = typeof redeemCodes.$inferSelect;
+export type ChatMessage = typeof chatMessages.$inferSelect;
+export type LeadMessageSent = typeof leadMessagesSent.$inferSelect;
+export type LeadChatState = typeof leadChatState.$inferSelect;
+export type BundleCredit = typeof bundleCredits.$inferSelect;
+export type TrialMessageSent = typeof trialMessagesSent.$inferSelect;

@@ -5,12 +5,17 @@ const CHANNEL_ACCESS_TOKEN = () =>
 const CHANNEL_SECRET = () =>
   (process.env.LINE_CHANNEL_SECRET ?? "").trim();
 
+export type LineMessage =
+  | { type: "text"; text: string }
+  | { type: "flex"; altText: string; contents: object };
+
 /**
- * Send a LINE push message to a user or group.
+ * Send LINE push message(s) to a user or group.
+ * Accepts either a plain string (converted to text message) or an array of message objects.
  */
 export async function sendLineMessage(
   to: string,
-  text: string
+  messages: string | LineMessage[]
 ): Promise<void> {
   const token = CHANNEL_ACCESS_TOKEN();
   if (!token) {
@@ -18,21 +23,47 @@ export async function sendLineMessage(
     return;
   }
 
+  const lineMessages: LineMessage[] =
+    typeof messages === "string"
+      ? [{ type: "text", text: messages }]
+      : messages;
+
   const res = await fetch("https://api.line.me/v2/bot/message/push", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
       Authorization: `Bearer ${token}`,
     },
-    body: JSON.stringify({
-      to,
-      messages: [{ type: "text", text }],
-    }),
+    body: JSON.stringify({ to, messages: lineMessages }),
   });
 
   if (!res.ok) {
     const body = await res.text();
     throw new Error(`LINE push failed (${res.status}): ${body}`);
+  }
+}
+
+/**
+ * Broadcast LINE messages to all followers.
+ */
+export async function broadcastLineMessages(
+  messages: LineMessage[]
+): Promise<void> {
+  const token = CHANNEL_ACCESS_TOKEN();
+  if (!token) return;
+
+  const res = await fetch("https://api.line.me/v2/bot/message/broadcast", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token}`,
+    },
+    body: JSON.stringify({ messages }),
+  });
+
+  if (!res.ok) {
+    const body = await res.text();
+    throw new Error(`LINE broadcast failed (${res.status}): ${body}`);
   }
 }
 
