@@ -7,7 +7,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { Shield, Loader2, BookOpen, CreditCard, Users } from "lucide-react";
+import { Shield, Loader2, BookOpen, CreditCard, Users, Target, MessageSquare } from "lucide-react";
 
 export default function AdminDashboard() {
   const { data: session, status } = useSession();
@@ -177,6 +177,32 @@ export default function AdminDashboard() {
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground">ดูข้อมูลสมาชิก แก้ไขสมาชิกภาพ และกำหนดสิทธิ์</p>
+            </CardContent>
+          </Card>
+        </Link>
+        <Link href="/admin/leads">
+          <Card className="hover:shadow-md transition-shadow cursor-pointer h-full">
+            <CardHeader className="pb-2">
+              <div className="flex items-center gap-2">
+                <Target className="h-5 w-5 text-amber-600" />
+                <h3 className="font-bold">Lead Pipeline</h3>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <p className="text-sm text-muted-foreground">จัดการ leads จาก ads, landing page และแชต ออกโค้ดทดลองให้ manual</p>
+            </CardContent>
+          </Card>
+        </Link>
+        <Link href="/admin/chatbot">
+          <Card className="hover:shadow-md transition-shadow cursor-pointer h-full">
+            <CardHeader className="pb-2">
+              <div className="flex items-center gap-2">
+                <MessageSquare className="h-5 w-5 text-violet-600" />
+                <h3 className="font-bold">Chatbot Conversations</h3>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <p className="text-sm text-muted-foreground">ดูบทสนทนาของบอท พี่ฟาร์ม ทุก channel (Web / LINE / FB)</p>
             </CardContent>
           </Card>
         </Link>

@@ -19,6 +19,22 @@
     {
       "path": "/api/blog/generate",
       "schedule": "0 19 * * 1,4"
+    },
+    {
+      "path": "/api/line/daily-reminder",
+      "schedule": "0 1 * * *"
+    },
+    {
+      "path": "/api/cron/lead-followup",
+      "schedule": "0 9 * * *"
+    },
+    {
+      "path": "/api/cron/trial-expiry",
+      "schedule": "0 8 * * *"
+    },
+    {
+      "path": "/api/autopost/retry?platform=all&limit=1",
+      "schedule": "0 10 * * 1,3,5"
     }
   ],
   "functions": {
@@ -29,6 +45,27 @@
       "maxDuration": 120
     },
     "app/api/billing/reconcile/route.ts": {
+      "maxDuration": 60
+    },
+    "app/api/cron/lead-followup/route.ts": {
+      "maxDuration": 60
+    },
+    "app/api/cron/trial-expiry/route.ts": {
+      "maxDuration": 60
+    },
+    "app/api/autopost/retry/route.ts": {
+      "maxDuration": 60
+    },
+    "app/api/chat/route.ts": {
+      "maxDuration": 60
+    },
+    "app/api/facebook/webhook/route.ts": {
+      "maxDuration": 60
+    },
+    "app/api/line/webhook/route.ts": {
+      "maxDuration": 60
+    },
+    "app/api/line/jiaroo-webhook/route.ts": {
       "maxDuration": 60
     }
   }
