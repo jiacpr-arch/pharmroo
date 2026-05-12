@@ -1,6 +1,6 @@
 import { db } from "@/lib/db";
 import { leads, redeemCodes } from "@/lib/db/schema";
-import { desc, eq } from "drizzle-orm";
+import { desc, isNull } from "drizzle-orm";
 import { auth } from "@/lib/auth";
 import { redirect } from "next/navigation";
 import LeadPipelineClient from "./LeadPipelineClient";
@@ -22,7 +22,7 @@ export default async function AdminLeadsPage() {
   const codes = await db
     .select()
     .from(redeemCodes)
-    .where(eq(redeemCodes.redeemed_at, null as unknown as string));
+    .where(isNull(redeemCodes.redeemed_at));
 
   const codesByLead: Record<string, string> = {};
   for (const c of codes) {

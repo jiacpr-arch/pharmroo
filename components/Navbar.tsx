@@ -90,6 +90,11 @@ export default function Navbar() {
             </>
           ) : (
             <>
+              <Link href="/lp/free-trial">
+                <Button variant="ghost" size="sm" className="text-amber-600 hover:text-amber-700">
+                  🎁 ทดลองฟรี
+                </Button>
+              </Link>
               <Link href="/login">
                 <Button variant="ghost" size="sm">
                   เข้าสู่ระบบ
@@ -162,6 +167,13 @@ export default function Navbar() {
                 </>
               ) : (
                 <>
+                  <Link
+                    href="/lp/free-trial"
+                    onClick={() => setMobileOpen(false)}
+                    className="block rounded-md px-3 py-2 text-sm font-semibold text-amber-600 hover:bg-muted"
+                  >
+                    🎁 ทดลองฟรี
+                  </Link>
                   <Link
                     href="/login"
                     onClick={() => setMobileOpen(false)}
