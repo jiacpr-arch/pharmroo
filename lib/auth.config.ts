@@ -3,11 +3,29 @@ import Google from "next-auth/providers/google";
 import LINE from "next-auth/providers/line";
 import Credentials from "next-auth/providers/credentials";
 
+const isProd = process.env.NODE_ENV === "production";
+
 // Edge-compatible auth config (no Node.js modules like pg, bcrypt)
 export const authConfig = {
   session: { strategy: "jwt" as const },
   pages: {
     signIn: "/login",
+  },
+  // SameSite=None required so the session cookie survives inside the LINE
+  // in-app webview (which treats requests as cross-site on iOS). Production
+  // serves over HTTPS so Secure is fine; in dev we fall back to Lax.
+  cookies: {
+    sessionToken: {
+      name: isProd
+        ? "__Secure-authjs.session-token"
+        : "authjs.session-token",
+      options: {
+        httpOnly: true,
+        sameSite: isProd ? "none" : "lax",
+        path: "/",
+        secure: isProd,
+      },
+    },
   },
   providers: [
     Google({
@@ -23,6 +41,12 @@ export const authConfig = {
       credentials: {
         email: { type: "email" },
         password: { type: "password" },
+      },
+    }),
+    Credentials({
+      id: "line-liff",
+      credentials: {
+        idToken: { type: "text" },
       },
     }),
   ],

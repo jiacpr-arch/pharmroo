@@ -24,7 +24,13 @@ type NursingSet = {
   highlight?: boolean;
 };
 
-export default function PricingClient({ nursingSets = [] }: { nursingSets?: NursingSet[] }) {
+export default function PricingClient({
+  nursingSets = [],
+  paymentBasePath,
+}: {
+  nursingSets?: NursingSet[];
+  paymentBasePath?: string;
+}) {
   const [track, setTrack] = useState<Track>("pharmacy");
 
   return (
@@ -65,7 +71,7 @@ export default function PricingClient({ nursingSets = [] }: { nursingSets?: Nurs
       {/* Subscription plans (universal — covers both tracks) */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 items-start max-w-4xl mx-auto">
         {PRICING_PLANS.map((plan) => (
-          <PricingCard key={plan.name} {...plan} />
+          <PricingCard key={plan.name} {...plan} paymentBasePath={paymentBasePath} />
         ))}
       </div>
 
