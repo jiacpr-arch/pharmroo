@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Sarabun } from "next/font/google";
 import { Geist_Mono } from "next/font/google";
 import { SessionProvider } from "next-auth/react";
+import { Analytics } from "@vercel/analytics/next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
@@ -93,6 +94,7 @@ export default function RootLayout({
           <main className="flex-1">{children}</main>
           <Footer />
         </SessionProvider>
+        <Analytics />
       </body>
     </html>
   );
