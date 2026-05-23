@@ -8,6 +8,7 @@ import JsonLd from "@/components/JsonLd";
 import { getMcqSubjects, getMcqSubjectCounts, getNewQuestionsStats } from "@/lib/db/queries-mcq";
 import NewQuestionsCountdown from "@/components/NewQuestionsCountdown";
 import { auth } from "@/lib/auth";
+import { resolveCopyForPath } from "@/lib/analytics/serve";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -29,8 +30,13 @@ export const metadata: Metadata = {
 
 export const dynamic = "force-dynamic";
 
+const DEFAULT_COPY = {
+  headline: "ข้อสอบขึ้นทะเบียนสภาการพยาบาล",
+  subheadline: "ฝึกทำข้อสอบ NLE แบบ MCQ ครบทุกสาขาการพยาบาล พร้อมเฉลยละเอียด",
+};
+
 export default async function NursingPage() {
-  const [session, subjects, counts, stats, allSets] = await Promise.all([
+  const [session, subjects, counts, stats, allSets, copyResult] = await Promise.all([
     auth(),
     getMcqSubjects({ examCategory: "nursing" }),
     getMcqSubjectCounts("nursing"),
@@ -42,7 +48,9 @@ export default async function NursingPage() {
       nextReleaseAt: new Date(Date.now() + 7 * 86400000).toISOString(),
     })),
     getQuestionSets().catch(() => []),
+    resolveCopyForPath("/nursing", DEFAULT_COPY).catch(() => ({ copy: DEFAULT_COPY })),
   ]);
+  const copy = copyResult.copy;
   const isLoggedIn = Boolean(session?.user?.id);
   const nursingSets = allSets.filter((s) => s.exam_type === "NLE");
   const featuredSet = nursingSets[0];
@@ -80,9 +88,9 @@ export default async function NursingPage() {
         <div className="flex items-center gap-2 mb-2">
           <Badge className="bg-rose-100 text-rose-700">NLE Exam</Badge>
         </div>
-        <h1 className="text-3xl font-bold">ข้อสอบขึ้นทะเบียนสภาการพยาบาล</h1>
+        <h1 className="text-3xl font-bold">{copy.headline ?? DEFAULT_COPY.headline}</h1>
         <p className="mt-2 text-muted-foreground">
-          ฝึกทำข้อสอบ NLE แบบ MCQ ครบทุกสาขาการพยาบาล พร้อมเฉลยละเอียด
+          {copy.subheadline ?? DEFAULT_COPY.subheadline}
         </p>
       </div>
 
