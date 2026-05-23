@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { ArrowRight, BookOpen, Shuffle, Target } from "lucide-react";
 import { getMcqSubjects, getMcqSubjectCounts } from "@/lib/db/queries-mcq";
+import { resolveCopyForPath } from "@/lib/analytics/serve";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -13,11 +14,18 @@ export const metadata: Metadata = {
 
 export const dynamic = "force-dynamic";
 
+const DEFAULT_COPY = {
+  headline: "ข้อสอบใบประกอบวิชาชีพเภสัชกรรม",
+  subheadline: "ฝึกทำข้อสอบ PLE-PC และ PLE-CC1 แบบ MCQ ครบทุกหมวดวิชา",
+};
+
 export default async function PLEPage() {
-  const [subjects, counts] = await Promise.all([
+  const [subjects, counts, copyResult] = await Promise.all([
     getMcqSubjects({ examCategory: "pharmacy" }),
     getMcqSubjectCounts("pharmacy"),
+    resolveCopyForPath("/ple", DEFAULT_COPY).catch(() => ({ copy: DEFAULT_COPY })),
   ]);
+  const copy = copyResult.copy;
 
   const totalQuestions = Object.values(counts).reduce((a, b) => a + b, 0);
 
@@ -29,9 +37,9 @@ export default async function PLEPage() {
           <Badge className="bg-teal-100 text-teal-700">PLE Exam</Badge>
           <Badge variant="secondary">{totalQuestions} ข้อ</Badge>
         </div>
-        <h1 className="text-3xl font-bold">ข้อสอบใบประกอบวิชาชีพเภสัชกรรม</h1>
+        <h1 className="text-3xl font-bold">{copy.headline ?? DEFAULT_COPY.headline}</h1>
         <p className="mt-2 text-muted-foreground">
-          ฝึกทำข้อสอบ PLE-PC และ PLE-CC1 แบบ MCQ ครบทุกหมวดวิชา
+          {copy.subheadline ?? DEFAULT_COPY.subheadline}
         </p>
       </div>
 
