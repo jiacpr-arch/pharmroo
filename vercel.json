@@ -19,6 +19,10 @@
     {
       "path": "/api/blog/generate",
       "schedule": "0 19 * * 1,4"
+    },
+    {
+      "path": "/api/cron/ad-metrics",
+      "schedule": "0 */6 * * *"
     }
   ],
   "functions": {
@@ -30,6 +34,9 @@
     },
     "app/api/billing/reconcile/route.ts": {
       "maxDuration": 60
+    },
+    "app/api/cron/ad-metrics/route.ts": {
+      "maxDuration": 300
     }
   }
 }
