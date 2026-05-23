@@ -6,6 +6,7 @@ import NewQuestionsCountdown from "@/components/NewQuestionsCountdown";
 import GoodyEmbed from "@/components/GoodyEmbed";
 import { CATEGORIES, PRICING_PLANS } from "@/lib/types";
 import { getNewQuestionsStats } from "@/lib/db/queries-mcq";
+import { resolveCopyForPath } from "@/lib/analytics/serve";
 import {
   BookOpen,
   Clock,
@@ -21,6 +22,12 @@ import {
 
 export const revalidate = 60;
 
+const DEFAULT_COPY = {
+  subheadline:
+    "ข้อสอบ PLE-PC + PLE-CC1 ครบทุกหมวดวิชา พร้อมเฉลยละเอียด โครงสร้างเคมี และ Step-by-step คำนวณ",
+  cta_text: "ฝึกทำข้อสอบ",
+};
+
 export default async function HomePage() {
   const stats = await getNewQuestionsStats().catch(() => ({
     totalActive: 0,
@@ -28,6 +35,10 @@ export default async function HomePage() {
     newBySubject: [] as { icon: string; name_th: string; count: number }[],
     // eslint-disable-next-line react-hooks/purity
     nextReleaseAt: new Date(Date.now() + 7 * 86400000).toISOString(),
+  }));
+
+  const { copy } = await resolveCopyForPath("/", DEFAULT_COPY).catch(() => ({
+    copy: DEFAULT_COPY,
   }));
 
   return (
@@ -46,8 +57,7 @@ export default async function HomePage() {
               <span className="text-brand-light">วิชาชีพเภสัชกรรม</span>
             </h1>
             <p className="mt-6 text-lg text-white/70 max-w-2xl mx-auto">
-              ข้อสอบ PLE-PC + PLE-CC1 ครบทุกหมวดวิชา
-              พร้อมเฉลยละเอียด โครงสร้างเคมี และ Step-by-step คำนวณ
+              {copy.subheadline ?? DEFAULT_COPY.subheadline}
             </p>
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link href="/ple/practice">
@@ -55,7 +65,7 @@ export default async function HomePage() {
                   size="lg"
                   className="bg-brand hover:bg-brand-light text-white px-8 text-base"
                 >
-                  ฝึกทำข้อสอบ <ArrowRight className="ml-2 h-4 w-4" />
+                  {copy.cta_text ?? DEFAULT_COPY.cta_text} <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
               <Link href="/ple/mock">

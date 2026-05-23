@@ -4,6 +4,23 @@ import { NextResponse } from "next/server";
 
 const { auth } = NextAuth(authConfig);
 
+const VISITOR_COOKIE = "pr_vid";
+
+function ensureVisitorId(req: Request, res: NextResponse): NextResponse {
+  const existing = (req as unknown as { cookies?: { get(name: string): { value: string } | undefined } })
+    .cookies?.get(VISITOR_COOKIE);
+  if (existing?.value) return res;
+  const id = crypto.randomUUID().replace(/-/g, "");
+  res.cookies.set({
+    name: VISITOR_COOKIE,
+    value: id,
+    maxAge: 60 * 60 * 24 * 365,
+    path: "/",
+    sameSite: "lax",
+  });
+  return res;
+}
+
 export default auth((req) => {
   const { pathname } = req.nextUrl;
 
@@ -18,7 +35,7 @@ export default auth((req) => {
     "/terms",
   ];
   if (skipPaths.some((p) => pathname.startsWith(p))) {
-    return undefined;
+    return ensureVisitorId(req, NextResponse.next());
   }
 
   // Protect /nursing/admin — only nursing_admin or admin may access
@@ -41,7 +58,7 @@ export default auth((req) => {
     }
   }
 
-  return undefined;
+  return ensureVisitorId(req, NextResponse.next());
 });
 
 export const config = {
