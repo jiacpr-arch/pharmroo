@@ -23,6 +23,14 @@
     {
       "path": "/api/cron/ad-metrics",
       "schedule": "0 */6 * * *"
+    },
+    {
+      "path": "/api/cron/detect-underperformers",
+      "schedule": "30 */6 * * *"
+    },
+    {
+      "path": "/api/cron/process-optimizations",
+      "schedule": "45 */6 * * *"
     }
   ],
   "functions": {
@@ -36,6 +44,12 @@
       "maxDuration": 60
     },
     "app/api/cron/ad-metrics/route.ts": {
+      "maxDuration": 300
+    },
+    "app/api/cron/detect-underperformers/route.ts": {
+      "maxDuration": 120
+    },
+    "app/api/cron/process-optimizations/route.ts": {
       "maxDuration": 300
     }
   }
