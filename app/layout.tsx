@@ -5,6 +5,7 @@ import { SessionProvider } from "next-auth/react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
+import AdBanner from "@/components/AdBanner";
 import "./globals.css";
 
 const sarabun = Sarabun({
@@ -90,6 +91,7 @@ export default function RootLayout({
         <JsonLd data={websiteLd} />
         <SessionProvider>
           <Navbar />
+          <AdBanner />
           <main className="flex-1">{children}</main>
           <Footer />
         </SessionProvider>

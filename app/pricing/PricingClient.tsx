@@ -6,7 +6,6 @@ import { PRICING_PLANS } from "@/lib/types";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Package, CheckCircle, Sparkles } from "lucide-react";
-import AdRotator from "@/components/AdRotator";
 
 const PHARMACY_SETS = [
   { name: "PLE-CC1 Day 1 (120 ข้อ)", price: 390, id: "ple-cc1-day1" },
@@ -73,11 +72,6 @@ export default function PricingClient({ nursingSets = [] }: { nursingSets?: Nurs
       <p className="text-center text-sm text-muted-foreground mt-6 max-w-2xl mx-auto">
         ✨ สมาชิกรายเดือน/รายปี เข้าถึงข้อสอบ <strong>ทั้ง PLE และ NLE</strong> โดยไม่ต้องสมัครแยก
       </p>
-
-      {/* Rotating ad slot — sister sites */}
-      <div className="mt-12 max-w-3xl mx-auto">
-        <AdRotator />
-      </div>
 
       {/* Question Sets section — varies by track */}
       <div className="mt-16 max-w-4xl mx-auto">
