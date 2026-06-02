@@ -1,56 +1,456 @@
 {
   "subject": "Immunologic",
   "unit": {
-    "title_th": "การแพ้และภูมิคุ้มกันวิทยา",
-    "description_th": "ปฏิกิริยาภูมิแพ้ยาตาม Gell-Coombs และการจัดการ anaphylaxis",
+    "title_th": "ภูมิคุ้มกันวิทยาและยากดภูมิคุ้มกัน",
+    "description_th": "คอร์สครบวงจรสำหรับสอบใบประกอบวิชาชีพเภสัชกรรม ครอบคลุมชนิดของวัคซีนและ cold chain แผนงานสร้างเสริมภูมิคุ้มกันโรค (EPI) ของไทย คอร์ติโคสเตียรอยด์และยากดภูมิคุ้มกัน (calcineurin inhibitors, antimetabolites, mTOR) ยาชีววัตถุและ monoclonal antibodies ปฏิกิริยาภูมิแพ้ตาม Gell-Coombs การจัดการ anaphylaxis ด้วย adrenaline IM และการดูแลโรคภูมิต้านตนเอง",
     "icon": "🛡️"
   },
   "lessons": [
     {
-      "title_th": "ปฏิกิริยาภูมิแพ้ยา (Gell-Coombs)",
-      "subtitle_th": "Type I–IV และตัวอย่างยา",
-      "icon": "🛡️",
-      "est_minutes": 5,
-      "xp_reward": 10,
+      "title_th": "ชนิดของวัคซีนและระบบลูกโซ่ความเย็น",
+      "subtitle_th": "Live-attenuated, inactivated, toxoid, subunit/conjugate, mRNA, viral vector & cold chain",
+      "icon": "💉",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "วัคซีน",
+        "vaccine",
+        "live attenuated",
+        "inactivated",
+        "toxoid",
+        "mRNA vaccine",
+        "viral vector",
+        "cold chain",
+        "ลูกโซ่ความเย็น",
+        "conjugate vaccine"
+      ],
       "cards": [
         {
           "card_type": "concept",
-          "title_th": "Type I–II",
-          "body_md": "- **Type I (IgE, immediate)**: anaphylaxis, urticaria, angioedema เกิดในนาที–ชั่วโมง (เช่น penicillin)\n- **Type II (cytotoxic, IgG/IgM)**: ทำลายเซลล์ เช่น hemolytic anemia, thrombocytopenia"
+          "title_th": "ภูมิคุ้มกัน Active vs Passive",
+          "body_md": "**Active immunization** = ให้ antigen (วัคซีน) กระตุ้นร่างกายให้สร้างภูมิคุ้มกันเอง → ออกฤทธิ์ช้า (สัปดาห์) แต่ **อยู่ได้นาน** เพราะมี memory cells\n\n**Passive immunization** = ให้ antibody สำเร็จรูปจากภายนอก (เช่น immunoglobulin, antitoxin, monoclonal antibody) → ออกฤทธิ์ **ทันที** แต่อยู่สั้น (สัปดาห์–เดือน) ไม่มี memory\n\nตัวอย่าง passive: HBIG (ตับอักเสบบี), RIG (พิษสุนัขบ้า), TIG (บาดทะยัก), palivizumab (RSV)\n\nหลักการสอบ: **post-exposure ที่ต้องการผลทันที** มักใช้ passive (immunoglobulin) ร่วมกับ active (วัคซีน)"
         },
         {
           "card_type": "concept",
-          "title_th": "Type III–IV",
-          "body_md": "- **Type III (immune complex)**: serum sickness, vasculitis\n- **Type IV (delayed, T-cell)**: เกิดช้า 48–72 ชม. เช่น contact dermatitis, SJS/TEN, DRESS"
+          "title_th": "วัคซีนเชื้อเป็นอ่อนฤทธิ์ (Live-attenuated)",
+          "body_md": "เชื้อมีชีวิตที่ถูกทำให้อ่อนฤทธิ์ → กระตุ้นภูมิคุ้มกันได้แรงและนาน มักให้ **1–2 เข็มก็พอ**\n\n**ตัวอย่าง:** MMR (หัด-คางทูม-หัดเยอรมัน), BCG (วัณโรค), OPV (โปลิโอชนิดหยอด), varicella (อีสุกอีใส), rotavirus, yellow fever, JE ชนิดเชื้อเป็น\n\n**ข้อห้ามสำคัญ (สอบบ่อย):**\n- **หญิงตั้งครรภ์** (ห้าม)\n- **ผู้ที่ภูมิคุ้มกันบกพร่องรุนแรง** (HIV ที่ CD4 ต่ำ, ได้ยากดภูมิ, มะเร็ง)\n\nถ้าให้วัคซีนเชื้อเป็น 2 ชนิดที่ไม่ใช่วันเดียวกัน ต้องเว้นห่าง **อย่างน้อย 4 สัปดาห์**"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "วัคซีนเชื้อตาย/ส่วนประกอบของเชื้อ",
+          "body_md": "**Inactivated (เชื้อตาย):** เชื้อทั้งตัวที่ถูกฆ่า เช่น IPV (โปลิโอชนิดฉีด), ไวรัสตับอักเสบเอ, พิษสุนัขบ้า, influenza ชนิดฉีด → ปลอดภัยในหญิงตั้งครรภ์/ภูมิบกพร่อง แต่ต้อง **ฉีดซ้ำหลายเข็ม + booster**\n\n**Toxoid:** ใช้ exotoxin ที่ทำให้หมดพิษ เช่น **diphtheria, tetanus** (DTP/Td/Tdap)\n\n**Subunit/conjugate:** ใช้เฉพาะส่วน antigen\n- Subunit/recombinant: ตับอักเสบบี (HBsAg), HPV, acellular pertussis\n- **Conjugate:** จับ polysaccharide กับ protein carrier เพื่อให้เด็กเล็ก (<2 ปี) สร้างภูมิได้ดี เช่น Hib, PCV (pneumococcal conjugate), MenACWY"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "วัคซีน mRNA และ Viral vector",
+          "body_md": "**mRNA vaccine** (เช่น Pfizer, Moderna COVID-19): บรรจุ mRNA ที่เข้ารหัส spike protein ใน lipid nanoparticle → เซลล์ร่างกายสร้าง antigen เอง\n- **ไม่มีเชื้อมีชีวิต** ใช้ในหญิงตั้งครรภ์/ภูมิบกพร่องได้\n- ต้องเก็บที่อุณหภูมิต่ำมาก (−20 ถึง −70°C ขึ้นกับชนิด)\n\n**Viral vector vaccine** (เช่น AstraZeneca, J&J): ใช้ adenovirus ที่ทำให้ไม่ก่อโรคเป็นพาหะนำยีน antigen เข้าเซลล์\n- เก็บที่ตู้เย็นปกติ 2–8°C ได้\n- มีรายงาน ADR หายาก: **VITT** (vaccine-induced thrombotic thrombocytopenia)"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "ระบบลูกโซ่ความเย็น (Cold Chain)",
+          "body_md": "วัคซีนส่วนใหญ่ต้องเก็บที่ **+2 ถึง +8°C** ตลอดทั้งห่วงโซ่ตั้งแต่ผลิตจนถึงผู้รับ\n\n**หลักปฏิบัติ:**\n- เก็บวัคซีนในชั้นกลางของตู้เย็น **ห้ามวางที่ฝาประตูหรือชิดผนังด้านหลัง** (เสี่ยงเย็นเกิน/แกว่ง)\n- วาง ice pack รอบ ๆ ไม่ใช่สัมผัสวัคซีนโดยตรง\n- ใช้ **VVM (Vaccine Vial Monitor)** และเทอร์โมมิเตอร์บันทึกอุณหภูมิ\n- หลักการ **FEFO** (First Expired First Out) ใช้ขวดที่หมดอายุก่อนก่อน\n\nวัคซีนเชื้อเป็นบางชนิด (OPV, MMR) **ไวต่อความร้อน**; toxoid/aluminium-adjuvant **ห้ามแช่แข็ง** (จับเป็นก้อนเสียสภาพ)"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "วัคซีนที่ห้ามแช่แข็งและการ shake test",
+          "body_md": "**ห้ามแช่แข็ง** วัคซีนที่มี **aluminium adjuvant** เพราะการแช่แข็งทำให้เสียสภาพถาวร:\n- ตับอักเสบบี, DTP/Td/Tdap, Hib, HPV, PCV\n\nถ้าสงสัยว่าวัคซีน adjuvant เคยแข็งตัว → ทำ **Shake Test:** เขย่าแล้วตั้งทิ้งไว้\n- ปกติ: ขุ่นสม่ำเสมอ ตกตะกอนช้า\n- เคยแข็งตัว: **ตกตะกอนเร็ว เห็นเป็นเกล็ด/flakes** → ทิ้ง ห้ามใช้\n\nวัคซีนที่หลุดจาก cold chain หรือสงสัยเสียสภาพ ห้ามนำกลับมาใช้ ต้องบันทึกและรายงาน"
         },
         {
           "card_type": "mnemonic",
-          "title_th": "จำ ACID",
-          "body_md": "**A**naphylaxis (I) → **C**ytotoxic (II) → **I**mmune complex (III) → **D**elayed (IV)\n\nType I–III ใช้ **antibody**; Type IV ใช้ **T-cell** (cell-mediated)"
+          "title_th": "จำวัคซีนเชื้อเป็น: \"MR. BOY-V\"",
+          "body_md": "วัคซีน **เชื้อเป็นอ่อนฤทธิ์ (live)** ที่ต้องระวังในหญิงตั้งครรภ์/ภูมิบกพร่อง:\n\n**M**MR (หัด-คางทูม-หัดเยอรมัน)\n**R**otavirus\n**B**CG (วัณโรค)\n**O**PV (โปลิโอหยอด)\n**Y**ellow fever\n**V**aricella (อีสุกอีใส) + JE เชื้อเป็น\n\nนอกจากนี้จำง่าย: ถ้าจำชื่อไม่ได้ ให้ตัดออกว่า toxoid/subunit/conjugate/mRNA/vector **ไม่ใช่เชื้อเป็น** เสมอ"
         }
       ]
     },
     {
-      "title_th": "การจัดการ Anaphylaxis",
-      "subtitle_th": "Adrenaline IM เป็นอันดับแรก",
-      "icon": "💉",
-      "est_minutes": 5,
-      "xp_reward": 10,
+      "title_th": "แผนงานสร้างเสริมภูมิคุ้มกันโรคของไทย (EPI)",
+      "subtitle_th": "ตารางวัคซีนเด็กและผู้ใหญ่ตามกระทรวงสาธารณสุข",
+      "icon": "📅",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "EPI",
+        "แผนงานสร้างเสริมภูมิคุ้มกันโรค",
+        "วัคซีนพื้นฐาน",
+        "BCG",
+        "DTP-HB-Hib",
+        "MMR",
+        "Td",
+        "Tdap",
+        "influenza vaccine",
+        "วัคซีนผู้ใหญ่"
+      ],
       "cards": [
         {
-          "card_type": "warning",
-          "title_th": "Adrenaline IM ก่อนเสมอ",
-          "body_md": "ใน anaphylaxis ยาตัวแรกคือ **adrenaline (epinephrine) IM** ที่ต้นขาด้านนอก (vastus lateralis)\n\n- ผู้ใหญ่: 0.5 mg ของ 1:1000\n- ฉีดซ้ำได้ทุก 5–15 นาที\n- **ห้ามรอ** ให้ antihistamine/steroid ออกฤทธิ์ก่อน"
+          "card_type": "concept",
+          "title_th": "ภาพรวม EPI ของไทย",
+          "body_md": "**แผนงานสร้างเสริมภูมิคุ้มกันโรค (Expanded Programme on Immunization, EPI)** คือชุดวัคซีนพื้นฐานที่รัฐจัดให้ฟรีแก่ประชาชนไทย\n\nวัคซีนพื้นฐานครอบคลุม: วัณโรค (BCG), ตับอักเสบบี, คอตีบ-บาดทะยัก-ไอกรน (DTP), Hib, โปลิโอ, หัด-คางทูม-หัดเยอรมัน (MMR), ไข้สมองอักเสบเจอี (JE), HPV (นักเรียนหญิง ป.5)\n\nหลักการสำคัญที่ออกสอบ: **ลำดับอายุที่ให้** และ **วัคซีนที่ให้แรกเกิด**"
         },
         {
           "card_type": "concept",
-          "title_th": "ยาเสริม (second-line)",
-          "body_md": "ใช้เสริม **ไม่ใช่แทน** adrenaline:\n- **Antihistamine** (chlorpheniramine): บรรเทาผื่น/คัน\n- **Corticosteroid**: ป้องกัน biphasic reaction (ออกฤทธิ์ช้า)\n- ให้สารน้ำ IV ถ้า hypotension"
+          "title_th": "วัคซีนแรกเกิดและช่วง 2–6 เดือน",
+          "body_md": "**แรกเกิด:** **BCG** (วัณโรค ฉีดในผิวหนังที่ไหล่ซ้าย) + **HBV เข็มแรก** (ตับอักเสบบี ภายใน 24 ชม.)\n\n**อายุ 2, 4, 6 เดือน:** **DTP-HB-Hib** (วัคซีนรวม 5 โรค: คอตีบ-บาดทะยัก-ไอกรน-ตับอักเสบบี-ฮิบ) + **OPV** (โปลิโอหยอด)\n- ที่ **อายุ 4 เดือน** ให้ **IPV** (โปลิโอชนิดฉีด) เพิ่ม 1 เข็ม\n- Rotavirus (หยอด) ที่ 2, 4 (และ 6) เดือนแล้วแต่ชนิด\n\nจำ: เด็กไทยได้ **โปลิโอทั้งชนิดหยอด (OPV) และฉีด (IPV)** ตาม schedule"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "วัคซีนช่วง 9 เดือน – 2 ปี",
+          "body_md": "**อายุ 9 เดือน:** **MMR เข็มที่ 1** (หัด-คางทูม-หัดเยอรมัน)\n\n**อายุ 1 ปี (12 เดือน):** **JE** (ไข้สมองอักเสบเจอี) เข็มแรก (ชนิดเชื้อเป็น LAJE)\n\n**อายุ 1 ปีครึ่ง (18 เดือน):**\n- **DTP เข็มกระตุ้น 1** + **OPV กระตุ้น**\n- **MMR เข็มที่ 2**\n\n**อายุ 2 ปีครึ่ง (30 เดือน):** **JE เข็มที่ 2**\n\nจำง่าย: **MMR 2 เข็ม** (9 เดือน และ 2½ ปี เดิม → ปัจจุบันเข็ม 2 ที่ 1½ ปี)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "วัคซีนวัยเรียน",
+          "body_md": "**อายุ 4–6 ปี (ป.1):** **DTP กระตุ้น 2** + **OPV กระตุ้น**\n\n**ป.1:** ตรวจและให้ **MMR/วัคซีนตกค้าง** ที่ยังไม่ครบ\n\n**ป.5 (อายุ ~11 ปี):**\n- **HPV** 2 เข็ม (เฉพาะนักเรียนหญิง) ป้องกันมะเร็งปากมดลูก\n\n**ป.6 (อายุ ~12 ปี):** **dT** (คอตีบ-บาดทะยัก ชนิดผู้ใหญ่) กระตุ้น\n\nหลังจากนั้นแนะนำ **Td/dT booster ทุก 10 ปี** ตลอดชีวิต"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "วัคซีนผู้ใหญ่และหญิงตั้งครรภ์",
+          "body_md": "**ผู้ใหญ่ทั่วไป:**\n- **Td/dT** กระตุ้นทุก **10 ปี**\n- **Influenza** ปีละครั้ง โดยเฉพาะกลุ่มเสี่ยง (อายุ ≥65, โรคเรื้อรัง, หญิงตั้งครรภ์, บุคลากรการแพทย์)\n\n**ผู้สูงอายุ:** พิจารณา pneumococcal (PCV/PPSV23), งูสวัด (zoster)\n\n**หญิงตั้งครรภ์:**\n- **Tdap 1 เข็ม** ทุกการตั้งครรภ์ (แนะนำช่วง 27–36 สัปดาห์) เพื่อป้องกันไอกรนในทารก\n- **Influenza** (เชื้อตาย) ให้ได้ทุกไตรมาส\n- **ห้ามวัคซีนเชื้อเป็น** (MMR, varicella) ระหว่างตั้งครรภ์"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำวัคซีนแรกเกิด: \"BH = Born → BCG + HBV\"",
+          "body_md": "ทารกแรกเกิดในไทยได้ **2 วัคซีน** ทันที:\n\n**B** = **BCG** (วัณโรค)\n**H** = **Hepatitis B** เข็มแรก (ภายใน 24 ชม.)\n\nและจำ schedule หลักด้วย **\"2-4-6\"**: DTP-HB-Hib + OPV ให้ที่ **2, 4, 6 เดือน**\n\n**MMR \"9 + 18\"**: เข็ม 1 ที่ 9 เดือน, เข็ม 2 ที่ 18 เดือน\n\n**HPV** = หญิง **ป.5**; **dT** booster = **ป.6 และทุก 10 ปี**"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ข้อควรระวังในการให้วัคซีนตามกำหนด",
+          "body_md": "- **เลื่อนวัคซีน** เมื่อมีไข้สูง/เจ็บป่วยเฉียบพลันปานกลาง-รุนแรง แต่ **หวัดเล็กน้อยไม่ใช่ข้อห้าม**\n- เคยมี **anaphylaxis** ต่อวัคซีนหรือส่วนประกอบ (เช่น ไข่ในบางสูตร, gelatin, neomycin) → ห้ามให้ซ้ำ\n- **OPV (เชื้อเป็น)** ห้ามให้เด็กภูมิคุ้มกันบกพร่องและคนในบ้านที่ภูมิบกพร่อง → ใช้ IPV แทน\n- ถ้าให้วัคซีนล่าช้า **ไม่ต้องเริ่มนับใหม่** ให้ต่อจากเดิม (catch-up)\n- บันทึกในสมุดสุขภาพทุกครั้งและนัด follow-up"
+        }
+      ]
+    },
+    {
+      "title_th": "คอร์ติโคสเตียรอยด์ในฐานะยากดภูมิคุ้มกัน",
+      "subtitle_th": "กลไก การลดยา (tapering) ADRs และ stress dosing",
+      "icon": "🧪",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "corticosteroid",
+        "prednisolone",
+        "คอร์ติโคสเตียรอยด์",
+        "tapering",
+        "adrenal suppression",
+        "Cushing",
+        "stress dose",
+        "hydrocortisone",
+        "dexamethasone",
+        "สเตียรอยด์"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "กลไกการกดภูมิคุ้มกันของสเตียรอยด์",
+          "body_md": "Glucocorticoid จับ intracellular receptor → เข้านิวเคลียส → เปลี่ยนการถอดรหัสยีน\n\n**ฤทธิ์กดภูมิและต้านการอักเสบ:**\n- ยับยั้ง **phospholipase A2** (ผ่าน lipocortin/annexin) → ลด prostaglandin และ leukotriene\n- กด **NF-κB** → ลด cytokine (IL-1, IL-2, IL-6, TNF-α)\n- ลด T-cell, ลดการเคลื่อนที่ของ neutrophil เข้าเนื้อเยื่อ (แต่เพิ่มจำนวนในเลือด = demargination)\n- ลด lymphocyte และ eosinophil ในเลือด\n\nผลรวม = กดทั้ง **innate และ adaptive immunity** → เสี่ยงติดเชื้อเพิ่มขึ้น"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "เปรียบเทียบ potency และ duration",
+          "body_md": "เทียบความแรง glucocorticoid (equivalent anti-inflammatory dose):\n\n| ยา | ขนาดเทียบเท่า | Mineralocorticoid | Duration |\n|---|---|---|---|\n| Hydrocortisone | 20 mg | สูง | สั้น |\n| Prednisolone | 5 mg | ปานกลาง | กลาง |\n| Methylprednisolone | 4 mg | ต่ำ | กลาง |\n| Dexamethasone | 0.75 mg | แทบไม่มี | ยาว |\n\nจำ: **Dexamethasone แรงที่สุด** (0.75 mg ≈ prednisolone 5 mg) และออกฤทธิ์ยาว ไม่มี mineralocorticoid effect → เหมาะเมื่อต้องการเลี่ยงการคั่งน้ำ-โซเดียม"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "การลดขนาดยา (Tapering) และ HPA axis",
+          "body_md": "การใช้สเตียรอยด์ขนาดสูงนาน **> 2–3 สัปดาห์** กด **HPA axis** (hypothalamic-pituitary-adrenal) → ต่อมหมวกไตหยุดสร้าง cortisol\n\n**ถ้าหยุดยาทันที** → **adrenal crisis** (ความดันต่ำ, ช็อก, น้ำตาลต่ำ, ไข้, อ่อนเพลีย) อาจถึงตาย\n\n**ต้อง taper ลงช้า ๆ** เพื่อให้ต่อมหมวกไตฟื้นตัว\n\n**ไม่จำเป็นต้อง taper** เมื่อ:\n- ใช้ระยะสั้น **≤ 1–2 สัปดาห์** (เช่น prednisolone 5 วันใน asthma/COPD exacerbation)\n- ขนาดต่ำกว่าระดับ physiologic\n\nให้ยา **มื้อเดียวตอนเช้า** เลียนแบบจังหวะ cortisol ธรรมชาติ ลดการกด HPA"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ADR ของสเตียรอยด์ระยะยาว (Cushingoid)",
+          "body_md": "การใช้ระยะยาวทำให้เกิด **iatrogenic Cushing syndrome:**\n- **Metabolic:** น้ำตาลสูง (steroid-induced diabetes), ไขมันสูง, น้ำหนักขึ้น, moon face, buffalo hump, central obesity\n- **กระดูก:** **osteoporosis**, avascular necrosis, ในเด็กชะลอการเจริญเติบโต\n- **GI:** **peptic ulcer/เลือดออก** (โดยเฉพาะร่วม NSAIDs)\n- **ตา:** ต้อกระจก, ต้อหิน\n- **กล้ามเนื้อ:** myopathy (proximal)\n- **จิตประสาท:** นอนไม่หลับ, อารมณ์แปรปรวน, psychosis\n- **ผิวหนัง:** ผิวบาง, ช้ำง่าย, แผลหายช้า\n- **ภูมิคุ้มกัน:** ติดเชื้อง่าย, **กลบไข้/อาการอักเสบ**\n- **Electrolyte:** Na/น้ำคั่ง, K ต่ำ (จาก mineralocorticoid effect)"
         },
         {
           "card_type": "tip",
-          "title_th": "Antihistamine รุ่น 1 vs 2",
-          "body_md": "- **รุ่น 1** (chlorpheniramine, diphenhydramine): ผ่าน BBB → ง่วง, anticholinergic\n- **รุ่น 2** (loratadine, cetirizine, fexofenadine): ง่วงน้อย เลือกใช้ในผู้ป่วยทั่วไป/allergic rhinitis"
+          "title_th": "Stress Dosing (Perioperative/เจ็บป่วยเฉียบพลัน)",
+          "body_md": "ผู้ป่วยที่ใช้สเตียรอยด์เรื้อรัง (กด HPA แล้ว) เมื่อเจอ **ความเครียดทางกาย** (ผ่าตัด, ติดเชื้อรุนแรง, บาดเจ็บ) ร่างกายสร้าง cortisol เพิ่มเองไม่ได้ → ต้องให้ **stress dose steroid**\n\n**ตัวอย่าง:**\n- ผ่าตัดเล็ก: เพิ่ม hydrocortisone ~25 mg/วัน\n- ผ่าตัดใหญ่: hydrocortisone 50–100 mg IV ทุก 8 ชม. ในวันผ่าตัด แล้วลดลง\n\nถ้าไม่ให้ stress dose → เสี่ยง **adrenal crisis**\n\nผู้ป่วยทุกคนที่ใช้สเตียรอยด์ระยะยาวควรพก **บัตรเตือน (steroid card)** และรู้ว่าห้ามหยุดยาเอง"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ ADR สเตียรอยด์: \"CUSHINGOID\"",
+          "body_md": "**C**ataracts (ต้อกระจก) / Cushingoid appearance\n**U**lcers (peptic ulcer)\n**S**kin thinning, Striae, ช้ำง่าย\n**H**ypertension / **H**yperglycemia\n**I**nfection (ติดเชื้อง่าย, กลบอาการ)\n**N**ecrosis (avascular necrosis)\n**G**lucose สูง / **G**rowth retardation\n**O**steoporosis\n**I**mmunosuppression\n**D**epression / mood / psychosis\n\nให้ยาตอนเช้า + ให้ Ca/vitamin D + พิจารณา bisphosphonate ป้องกัน osteoporosis + PPI ถ้าเสี่ยง ulcer"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ข้อควรระวัง: วัคซีนและการติดเชื้อ",
+          "body_md": "ผู้ที่ได้สเตียรอยด์ขนาดกดภูมิ (เทียบเท่า **prednisolone ≥ 20 mg/วัน นาน ≥ 2 สัปดาห์**):\n- ถือว่า **immunocompromised** → **ห้ามวัคซีนเชื้อเป็น** ระหว่างใช้และอย่างน้อย 1 เดือนหลังหยุด\n- ควรให้วัคซีนเชื้อตาย/เชื้อเป็นก่อนเริ่มสเตียรอยด์ถ้าทำได้\n\nเฝ้าระวัง **การกลับเป็นซ้ำของวัณโรค** และ **strongyloidiasis** (hyperinfection) ในผู้ใช้สเตียรอยด์\n\nสเตียรอยด์ **กลบอาการติดเชื้อ** (ไข้, ปวด) → ตรวจพบช้า ต้องเฝ้าระวังใกล้ชิด"
+        }
+      ]
+    },
+    {
+      "title_th": "ยากดภูมิคุ้มกัน: CNI, Antimetabolite, mTOR",
+      "subtitle_th": "Cyclosporine/tacrolimus (TDM), azathioprine/MMF, sirolimus",
+      "icon": "🔬",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "ยากดภูมิคุ้มกัน",
+        "immunosuppressant",
+        "cyclosporine",
+        "tacrolimus",
+        "calcineurin inhibitor",
+        "azathioprine",
+        "mycophenolate",
+        "sirolimus",
+        "TDM",
+        "TPMT"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "Calcineurin Inhibitors (CNI): กลไก",
+          "body_md": "**Cyclosporine** และ **Tacrolimus** เป็นยาหลักในการป้องกัน graft rejection\n\n**กลไก:**\n- Cyclosporine จับ **cyclophilin**\n- Tacrolimus จับ **FKBP-12** (FK-binding protein)\n- ทั้งคู่ยับยั้ง **calcineurin** → ลดการสร้าง **IL-2** → ยับยั้งการ activate และ proliferate ของ **T-cell**\n\nTacrolimus แรงกว่า cyclosporine ~10–100 เท่าในระดับโมเลกุล จึงใช้ขนาดต่ำกว่ามาก"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ADR และ TDM ของ CNI",
+          "body_md": "**ADR ร่วม (ทั้งสองตัว):** **Nephrotoxicity** (เด่นสุด), neurotoxicity (tremor, ปวดหัว), HTN, hyperkalemia, hypomagnesemia, เพิ่มเสี่ยงติดเชื้อ/มะเร็ง\n\n**ต่างกัน:**\n- **Cyclosporine:** **เหงือกบวม (gingival hyperplasia), ขนดก (hirsutism)**, ไขมันสูง\n- **Tacrolimus:** **เบาหวาน (new-onset DM)** มากกว่า, ผมร่วง, neurotoxic มากกว่า\n\n**TDM จำเป็น** (narrow TI): วัด **trough (C0)** ก่อนยา dose ถัดไป\n- ทั้งคู่ถูกเมแทบอลิซึมโดย **CYP3A4** และเป็น substrate ของ **P-glycoprotein** → drug interaction มาก"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Drug Interactions ของ CNI (CYP3A4)",
+          "body_md": "Cyclosporine/tacrolimus เป็น **CYP3A4 substrate** → ระดับยาเปลี่ยนง่าย:\n\n**เพิ่มระดับ (CYP3A4 inhibitor → เสี่ยงพิษไต):**\n- **Azole antifungals** (ketoconazole, itraconazole, voriconazole)\n- **Macrolides** (erythromycin, clarithromycin)\n- Diltiazem, verapamil, **น้ำเกรปฟรุต**\n\n**ลดระดับ (CYP3A4 inducer → เสี่ยง rejection):**\n- **Rifampicin**, phenytoin, carbamazepine, **St. John's wort**\n\nระวังเสริมพิษไต: **NSAIDs, aminoglycosides, amphotericin B, vancomycin**\nCyclosporine ยังเพิ่มระดับ **statin** → เสี่ยง rhabdomyolysis"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Antimetabolites: Azathioprine และ MMF",
+          "body_md": "**Azathioprine (AZA):** prodrug เปลี่ยนเป็น 6-mercaptopurine → ยับยั้งการสังเคราะห์ purine → กด lymphocyte proliferation\n- ADR: **กดไขกระดูก (myelosuppression)**, ตับเป็นพิษ, GI, เพิ่มเสี่ยงมะเร็ง\n- เมแทบอลิซึมผ่าน **TPMT** และ **XO (xanthine oxidase)**\n\n**Mycophenolate mofetil (MMF):** ยับยั้ง **IMPDH** → ลดการสังเคราะห์ guanosine ใน lymphocyte แบบจำเพาะ (T และ B cell ต้องพึ่ง de novo pathway)\n- ADR: **GI (ท้องเสีย)** เด่น, กดไขกระดูก (leukopenia), ติดเชื้อ\n- **Teratogenic** → ห้ามในหญิงตั้งครรภ์ ต้องคุมกำเนิด"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Azathioprine + Allopurinol = อันตราย",
+          "body_md": "**Interaction คลาสสิกที่ออกสอบบ่อย:**\n\n**Allopurinol** ยับยั้ง **xanthine oxidase (XO)** ซึ่งเป็นเอนไซม์ที่สลาย 6-mercaptopurine (เมแทบอไลต์ของ azathioprine)\n\n→ ระดับ active metabolite พุ่งสูง → **myelosuppression รุนแรง (pancytopenia)** อาจถึงตาย\n\n**การจัดการ:** ถ้าจำเป็นต้องใช้ร่วมกัน ต้อง **ลดขนาด azathioprine ลง 25–33%** และเฝ้าระวัง CBC ใกล้ชิด\n\nนอกจากนี้ผู้ที่มี **TPMT deficiency** เสี่ยง myelosuppression รุนแรง → ควรตรวจ TPMT ก่อนเริ่มยา"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "mTOR Inhibitors: Sirolimus/Everolimus",
+          "body_md": "**Sirolimus (rapamycin)** และ **Everolimus** จับ **FKBP-12** เหมือน tacrolimus แต่ไปยับยั้ง **mTOR** (ไม่ใช่ calcineurin) → หยุด cell cycle ของ T-cell ที่ระยะ G1→S\n\n**ข้อเด่น:** **ไม่เป็นพิษต่อไต** เท่า CNI → ใช้แทน/ลด CNI ในผู้ป่วยที่ไตเสื่อม\n\n**ADR เฉพาะ:**\n- **ไขมันสูง (hyperlipidemia)** เด่นมาก\n- แผลหายช้า (impaired wound healing) → หยุดก่อนผ่าตัด\n- Proteinuria, ปากเป็นแผล (stomatitis), interstitial pneumonitis, กดไขกระดูก\n\nเป็น **CYP3A4/P-gp substrate** เช่นเดียวกับ CNI → interaction คล้ายกัน"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ ADR เด่น: \"Cyclosporine = ขน+เหงือก, Tacrolimus = เบาหวาน, mTOR = ไขมัน\"",
+          "body_md": "ความแตกต่างที่ออกสอบบ่อย:\n\n- **Cyclosporine** → **ขนดก (Hirsutism) + เหงือกบวม (Gum hyperplasia)** จำว่า \"Cyclosporine = Cosmetic\"\n- **Tacrolimus** → **เบาหวาน (Diabetes)** มากกว่า + neurotoxic + ผมร่วง\n- **mTOR (sirolimus)** → **ไขมันสูง + แผลหายช้า**\n- **Azathioprine** → **กดไขกระดูก** + ระวัง allopurinol\n- **MMF** → **ท้องเสีย (GI)** + teratogen\n\nร่วมกันทุกตัว: **เพิ่มความเสี่ยงติดเชื้อ (รวม opportunistic) และมะเร็ง** โดยเฉพาะ skin cancer และ lymphoma (PTLD)"
+        }
+      ]
+    },
+    {
+      "title_th": "ยาชีววัตถุและ Monoclonal Antibodies",
+      "subtitle_th": "TNF-α inhibitors, anti-IL, naming (-mab/-cept), screening ก่อนใช้",
+      "icon": "🧬",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "biologics",
+        "monoclonal antibody",
+        "ยาชีววัตถุ",
+        "TNF-alpha inhibitor",
+        "adalimumab",
+        "infliximab",
+        "etanercept",
+        "rituximab",
+        "TB screening",
+        "HBV reactivation"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "หลักการตั้งชื่อ (-mab / -cept)",
+          "body_md": "ชื่อยาชีววัตถุบอก **โครงสร้างและแหล่งที่มา**:\n\n**คำลงท้าย -mab = monoclonal antibody** โดยพยางค์ก่อน mab บอกแหล่งที่มา:\n- **-omab** = หนู (murine) — immunogenic สูง\n- **-ximab** = chimeric (หนู+คน) เช่น **infliximab, rituximab**\n- **-zumab** = humanized เช่น **tocilizumab, omalizumab**\n- **-umab** = fully human เช่น **adalimumab, golimumab**\n\n**คำลงท้าย -cept = receptor fusion protein** เช่น **etanercept** (TNF receptor-Fc), **abatacept, aflibercept**\n\nจำง่าย: \"**คนมากขึ้น (u) → immunogenic น้อยลง**\""
+        },
+        {
+          "card_type": "concept",
+          "title_th": "TNF-α Inhibitors",
+          "body_md": "ยับยั้ง **TNF-α** ซึ่งเป็น cytokine กลางของการอักเสบใน RA, psoriasis, IBD, ankylosing spondylitis\n\n**กลุ่มยา:**\n- **Etanercept** — fusion protein (TNF receptor) ฉีด SC\n- **Infliximab** — chimeric mAb ให้ IV (ต้องระวัง infusion reaction)\n- **Adalimumab, Golimumab, Certolizumab** — mAb ฉีด SC\n\n**ADR/ข้อควรระวัง:**\n- **การติดเชื้อรุนแรง** รวม **TB กลับเป็นซ้ำ** และเชื้อราในระบบ\n- เพิ่มเสี่ยง lymphoma, demyelinating disease\n- **ห้ามใน CHF รุนแรง (NYHA III–IV)** — infliximab ขนาดสูงทำให้แย่ลง"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Anti-IL และ Biologics อื่น ๆ",
+          "body_md": "**กลุ่มตาม target cytokine/cell:**\n- **Anti-IL-6:** tocilizumab (RA, cytokine release syndrome)\n- **Anti-IL-1:** anakinra (gout flare, autoinflammatory)\n- **Anti-IL-5:** mepolizumab, benralizumab (severe eosinophilic asthma)\n- **Anti-IL-17:** secukinumab (psoriasis, ankylosing spondylitis)\n- **Anti-IL-12/23:** ustekinumab (psoriasis, Crohn)\n- **Anti-IgE:** **omalizumab** (severe allergic asthma, chronic urticaria)\n- **Anti-CD20:** **rituximab** (lymphoma, RA, SLE) — ลด B-cell\n- **T-cell costimulation:** abatacept (CTLA-4-Ig)"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Screening ก่อนเริ่ม Biologics (TB/HBV)",
+          "body_md": "**ก่อนเริ่ม biologics (โดยเฉพาะ TNF-α inhibitor) ต้องคัดกรอง:**\n\n1. **วัณโรคแฝง (Latent TB):** ทำ **TST (tuberculin skin test)** หรือ **IGRA** + chest X-ray\n   - ถ้าพบ latent TB → **รักษา TB ก่อน/ระหว่าง** (เช่น isoniazid) อย่างน้อย 1 เดือนก่อนเริ่ม biologic\n2. **ไวรัสตับอักเสบบี (HBV):** ตรวจ **HBsAg, anti-HBc** — เสี่ยง **HBV reactivation** → ให้ antiviral prophylaxis (entecavir/tenofovir)\n3. **HCV, HIV** ตามข้อบ่งชี้\n4. ปรับวัคซีนให้ครบ **โดยเฉพาะวัคซีนเชื้อเป็นต้องให้ก่อนเริ่ม** (ห้ามให้ระหว่างใช้ biologic)\n\nเฝ้าระวังการติดเชื้อตลอดการรักษา"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "Biosimilar คืออะไร",
+          "body_md": "**Biosimilar** = ยาชีววัตถุที่ \"คล้ายคลึงอย่างมาก\" (highly similar) กับยาต้นแบบ (originator) หลังหมดสิทธิบัตร\n\n- **ไม่ใช่ generic** (ยาชีววัตถุผลิตซ้ำให้เหมือนเป๊ะไม่ได้เพราะเป็นโปรตีนขนาดใหญ่จากสิ่งมีชีวิต)\n- ต้องมีการศึกษายืนยันว่า **ประสิทธิภาพ ความปลอดภัย และ immunogenicity ไม่ต่างอย่างมีนัยสำคัญ**\n- ช่วย **ลดค่าใช้จ่าย** การรักษา\n\nตัวอย่าง: infliximab biosimilar, rituximab biosimilar, adalimumab biosimilar\n\nการ **สลับยา (switching)** ต้องระวังและติดตาม เพราะอาจกระตุ้น anti-drug antibody"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำคำลงท้าย: \"-ximab = chimera, -zumab = humanized, -umab = human\"",
+          "body_md": "ลำดับ \"ความเป็นคน\" จากน้อยไปมาก:\n\n**-o-mab** (murine, หนูล้วน) → immunogenic สูงสุด\n**-xi-mab** (chimeric) เช่น infl**iximab**, rit**uximab** — จำ \"X = ผสม (cross)\"\n**-zu-mab** (humanized) เช่น tocili**zumab**, omali**zumab** — \"Z = เกือบคน\"\n**-u-mab** (fully human) เช่น adalim**umab** — \"U = human\"\n\nและ **-cept = receptor fusion** (etaner**cept**, abata**cept**)\n\nเทคนิคสอบ: เห็น **-cept → ไม่ใช่ antibody แท้** แต่เป็น fusion protein"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Infusion/Injection Reactions และข้อควรระวังทั่วไป",
+          "body_md": "- **Infliximab (IV)** เสี่ยง **infusion reaction** (ไข้ หนาวสั่น ผื่น หายใจลำบาก) → ให้ช้า ๆ มี premedication และเฝ้าระวัง\n- ยาฉีด SC อาจมี **injection site reaction** (แดง บวม คัน)\n- เก็บยาชีววัตถุส่วนใหญ่ที่ **ตู้เย็น 2–8°C ห้ามแช่แข็ง** และไม่เขย่าแรง\n- เลี่ยงร่วมกับ biologic อื่นพร้อมกัน (เพิ่มเสี่ยงติดเชื้อรุนแรง)\n- หยุดยาเมื่อมีการติดเชื้อรุนแรง active infection\n- ระวัง **demyelination** และ malignancy ระยะยาว"
+        }
+      ]
+    },
+    {
+      "title_th": "ปฏิกิริยาภูมิไวเกิน (Gell & Coombs Type I–IV)",
+      "subtitle_th": "กลไกและตัวอย่างยาในแต่ละชนิด",
+      "icon": "⚡",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "hypersensitivity",
+        "ภูมิไวเกิน",
+        "Gell Coombs",
+        "Type I",
+        "IgE",
+        "Type II",
+        "Type III",
+        "Type IV",
+        "SJS",
+        "DRESS"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "Type I: Immediate (IgE-mediated)",
+          "body_md": "ปฏิกิริยา **ทันที (นาที–ชั่วโมง)** เกิดจาก **IgE** จับ mast cell/basophil → หลั่ง **histamine** และ mediator อื่น\n\n**อาการ:** urticaria (ลมพิษ), angioedema, bronchospasm, **anaphylaxis**, allergic rhinitis\n\n**ตัวอย่างยา/สาเหตุ:** penicillin และ beta-lactam, สารทึบรังสี, อาหาร (ถั่ว อาหารทะเล), แมลงต่อย\n\nกลไก: ต้องเคย sensitized มาก่อน (re-exposure) → ครั้งแรกมักไม่เกิด\n\nรักษาเฉียบพลัน: **adrenaline** (ดูบทเรียน anaphylaxis)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Type II: Cytotoxic (IgG/IgM-mediated)",
+          "body_md": "**IgG/IgM** จับ antigen บน **ผิวเซลล์** → กระตุ้น complement และ phagocytosis → **ทำลายเซลล์**\n\n**อาการ/โรค:**\n- **Hemolytic anemia** (drug-induced, autoimmune)\n- **Thrombocytopenia** (เช่น **heparin-induced thrombocytopenia, HIT**)\n- **Agranulocytosis** (เช่นจาก methimazole, clozapine)\n- Goodpasture syndrome, Graves, myasthenia gravis\n\n**ตัวอย่างยา:** penicillin (dose สูง → hemolysis), methyldopa, quinidine, heparin\n\nจำ: Type II = **ทำลายเซลล์เฉพาะที่ผิวเซลล์**"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Type III: Immune Complex",
+          "body_md": "เกิดจาก **immune complex (antigen-antibody)** สะสมในเนื้อเยื่อ/หลอดเลือด → กระตุ้น complement → อักเสบ\n\n**อาการ/โรค:**\n- **Serum sickness** (ไข้ ผื่น ปวดข้อ ต่อมน้ำเหลืองโต ~1–3 สัปดาห์หลังได้ยา/serum)\n- **Vasculitis**, glomerulonephritis\n- **Arthus reaction** (เฉพาะที่บริเวณฉีด)\n- SLE, post-streptococcal GN\n\n**ตัวอย่างยา:** antiserum (สัตว์), penicillin, sulfonamides, infliximab\n\nต่างจาก Type II: Type III complex **ลอยอยู่แล้วมาสะสม** ไม่ได้อยู่บนผิวเซลล์ตั้งแต่แรก"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Type IV: Delayed (T-cell mediated)",
+          "body_md": "**ไม่ใช้ antibody** แต่เป็น **T-cell mediated** → เกิด **ช้า 48–72 ชม.**\n\n**อาการ/โรค:**\n- **Contact dermatitis** (เช่น nickel, neomycin)\n- **ทดสอบ TB (tuberculin/Mantoux)**\n- การปฏิเสธอวัยวะปลูกถ่าย (graft rejection)\n- **Severe Cutaneous Adverse Reactions (SCAR):** SJS/TEN, DRESS, AGEP\n\n**ตัวอย่างยา:** sulfonamides, anticonvulsants (carbamazepine, phenytoin, lamotrigine), allopurinol, abacavir\n\nจำ: Type IV = **Delayed + Dermatitis + DRESS + Drug-induced SCAR**"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "SCAR ที่อันตราย: SJS/TEN และ DRESS",
+          "body_md": "**Stevens-Johnson Syndrome (SJS) / Toxic Epidermal Necrolysis (TEN):**\n- ผิวหนังลอกหลุด (epidermal detachment), เยื่อบุ (ปาก ตา อวัยวะเพศ) เป็นแผล\n- SJS < 10% BSA, TEN > 30% BSA — **อัตราตายสูง**\n- ยาเสี่ยง: allopurinol, carbamazepine, phenytoin, sulfonamides, nevirapine, lamotrigine\n\n**DRESS** (Drug Reaction with Eosinophilia and Systemic Symptoms):\n- ผื่น + **ไข้ + eosinophilia + ตับ/อวัยวะอักเสบ** + ต่อมน้ำเหลืองโต เกิดช้า 2–8 สัปดาห์\n\n**HLA แนะนำตรวจก่อนใช้ยา (สำคัญในไทย/เอเชีย):**\n- **HLA-B*15:02 → carbamazepine** (เสี่ยง SJS/TEN)\n- **HLA-B*58:01 → allopurinol** (เสี่ยง SCAR)\n- HLA-B*57:01 → abacavir\n\n**หยุดยาทันที** ห้ามใช้ซ้ำตลอดชีวิต"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ Gell-Coombs: \"ACID\" และ \"1-2-3 = Ab, 4 = T-cell\"",
+          "body_md": "**A**naphylactic/Allergic (Type **I** — IgE)\n**C**ytotoxic (Type **II** — IgG/IgM ทำลายเซลล์)\n**I**mmune complex (Type **III**)\n**D**elayed (Type **IV** — T-cell)\n\nกฎจำกลไก:\n- **Type I–III ใช้ Antibody** (humoral)\n- **Type IV ใช้ T-cell** (cell-mediated) เพียงชนิดเดียว\n\nเวลาเกิด: **I = ทันที**, **II–III = ชั่วโมง–สัปดาห์**, **IV = ช้า 48–72 ชม.**"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "แยกแพ้จริง (Allergy) vs ผลข้างเคียง (Intolerance)",
+          "body_md": "**สำคัญในการซักประวัติแพ้ยา:**\n- **Allergy จริง** = ปฏิกิริยาภูมิคุ้มกัน (เช่น ผื่นลมพิษ, angioedema, anaphylaxis, SJS) → **ห้ามใช้ยาซ้ำ** และระวัง cross-reactivity\n- **Intolerance/ADR** = ผลข้างเคียงไม่ผ่านภูมิคุ้มกัน เช่น **คลื่นไส้จาก opioid, ปวดท้องจาก antibiotic** → อาจปรับขนาด/วิธีใช้ได้\n\n**Cross-reactivity:** ผู้แพ้ penicillin มีโอกาสแพ้ cephalosporin (โดยเฉพาะรุ่น 1 ที่ side chain คล้าย) ~1–2%\n\nบันทึก **ชนิดอาการ + ความรุนแรง** เสมอ ไม่ใช่แค่ \"แพ้ยา\""
+        }
+      ]
+    },
+    {
+      "title_th": "การรับรู้และจัดการ Anaphylaxis",
+      "subtitle_th": "Adrenaline IM (ขนาด/ตำแหน่ง), adjuncts, biphasic reaction",
+      "icon": "🚑",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "anaphylaxis",
+        "แพ้รุนแรง",
+        "adrenaline",
+        "epinephrine",
+        "IM injection",
+        "vastus lateralis",
+        "biphasic reaction",
+        "antihistamine",
+        "EpiPen",
+        "hypotension"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "นิยามและการรับรู้ Anaphylaxis",
+          "body_md": "**Anaphylaxis** = ปฏิกิริยาภูมิแพ้รุนแรงเฉียบพลัน (Type I) ที่คุกคามชีวิต เกิดเร็วหลังสัมผัส allergen\n\n**เกณฑ์วินิจฉัย (ข้อใดข้อหนึ่ง):**\n1. อาการเฉียบพลันที่ **ผิวหนัง/เยื่อบุ** (ลมพิษ, angioedema) **ร่วมกับ** ระบบหายใจ (หายใจลำบาก, wheeze, stridor) **หรือ** ความดันตก/หมดสติ\n2. มี ≥2 ระบบหลังสัมผัส allergen ที่น่าจะเป็น (ผิวหนัง, หายใจ, GI, หัวใจ-หลอดเลือด)\n3. ความดันตกหลังสัมผัส allergen ที่รู้แน่ชัด\n\nสาเหตุพบบ่อย: ยา (penicillin, NSAIDs, สารทึบรังสี), อาหาร, แมลงต่อย"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Adrenaline IM คือยาอันดับแรกเสมอ",
+          "body_md": "**Adrenaline (epinephrine) IM คือยาตัวแรกและสำคัญที่สุด** — ห้ามรอ ห้ามให้ antihistamine/steroid ก่อน\n\n**ขนาดและความเข้มข้น (1:1000 = 1 mg/mL):**\n- **ผู้ใหญ่: 0.5 mg (0.5 mL)** IM\n- **เด็ก: 0.01 mg/kg** (สูงสุด 0.3 mg ต่อครั้ง)\n- EpiPen: ผู้ใหญ่ 0.3 mg, เด็ก 0.15 mg\n\n**ฉีดซ้ำได้ทุก 5–15 นาที** ถ้าอาการไม่ดีขึ้น\n\nกลไก: กระตุ้น **α1** (เพิ่ม BP, ลด angioedema), **β1** (เพิ่ม cardiac output), **β2** (ขยายหลอดลม, ยับยั้ง mediator release)"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "ตำแหน่งฉีด: ต้นขาด้านนอก (Vastus lateralis)",
+          "body_md": "**ฉีด IM ที่กล้ามเนื้อต้นขาด้านนอก (vastus lateralis) — anterolateral mid-thigh**\n\nทำไมไม่ฉีดต้นแขน (deltoid)?\n- ต้นขามีเลือดมาเลี้ยงมาก → ดูดซึมเร็วและได้ระดับยาในเลือดสูงกว่า deltoid และดีกว่า SC\n\n**IM ดีกว่า SC** เพราะดูดซึมเร็วและสม่ำเสมอกว่า\n\n**IV adrenaline** ใช้เฉพาะ **refractory anaphylaxis/cardiac arrest** โดยทีมที่มีประสบการณ์ + monitor (เสี่ยง arrhythmia) — ใช้ความเข้มข้นเจือจาง 1:10000\n\nให้ผู้ป่วยนอนราบยกขาสูง (ยกเว้นหายใจลำบากให้นั่ง) เพื่อช่วย venous return"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ยาเสริม (Second-line / Adjuncts)",
+          "body_md": "ใช้ **เสริม ไม่ใช่แทน** adrenaline:\n\n- **Oxygen** high flow + ดูแลทางเดินหายใจ\n- **IV fluid (crystalloid)** bolus ถ้า hypotension (distributive shock)\n- **Antihistamine** (chlorpheniramine, diphenhydramine): บรรเทาผื่น/คัน — **ไม่ช่วยชีวิตและออกฤทธิ์ช้า**\n- **Corticosteroid** (hydrocortisone): ออกฤทธิ์ช้า อาจช่วยลด **biphasic reaction** (หลักฐานจำกัด)\n- **Nebulized salbutamol** ถ้ามี bronchospasm ดื้อ\n- **Glucagon** ถ้าผู้ป่วยใช้ **beta-blocker** (adrenaline ตอบสนองไม่ดี)"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Biphasic Reaction และการเฝ้าสังเกต",
+          "body_md": "**Biphasic reaction** = อาการ anaphylaxis **กลับมาอีกครั้ง** หลังหายแล้ว โดยไม่ได้สัมผัส allergen ซ้ำ มักภายใน **1–72 ชม.** (ส่วนใหญ่ 6–12 ชม.)\n\n**ดังนั้นต้องเฝ้าสังเกตในโรงพยาบาล:**\n- อาการไม่รุนแรง: สังเกต **อย่างน้อย 4–6 ชม.**\n- อาการรุนแรง/เคยต้องให้ adrenaline ซ้ำ/มีประวัติ biphasic: สังเกตนานขึ้น **12–24 ชม.**\n\nก่อนกลับบ้านต้อง:\n- สั่งจ่าย **adrenaline autoinjector (EpiPen) 2 ชุด** + สอนวิธีใช้\n- แนะนำหลีกเลี่ยง allergen, พกบัตรแพ้ยา\n- นัดพบ allergist"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำการจัดการ: \"A for Anaphylaxis = Adrenaline first\"",
+          "body_md": "**ลำดับขั้น (ABC + adrenaline):**\n\n**A**drenaline IM 0.5 mg ทันที (ต้นขาด้านนอก) — อันดับ 1 เสมอ\n**A**irway — ดูแลทางเดินหายใจ + O2\n**B**P support — นอนราบยกขา + IV fluid\n**C**all for help — ขอความช่วยเหลือ\n\nจำสิ่งที่ \"ทำทีหลัง\": antihistamine และ steroid เป็น **adjunct** เท่านั้น **ห้ามใช้แทน adrenaline**\n\nจุดสอบบ่อย: ความเข้มข้น **IM ใช้ 1:1000**, **IV ใช้ 1:10000** (เจือจาง)"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "การใช้ Adrenaline Autoinjector (EpiPen)",
+          "body_md": "สอนผู้ป่วย/ผู้ดูแล:\n1. ถอดฝานิรภัย (สีฟ้า/สำหรับเด็ก) ออก\n2. กดปลายสีส้มแนบ **ต้นขาด้านนอก** (ผ่านเสื้อผ้าได้) ออกแรงจนได้ยินเสียงคลิก\n3. **กดค้างไว้ ~3 วินาที** แล้วถอดออก นวดบริเวณที่ฉีด\n4. **โทรเรียกรถพยาบาลทันที** แม้อาการดีขึ้น (เสี่ยง biphasic)\n\n**ข้อควรรู้:**\n- ขนาด: ผู้ใหญ่ 0.3 mg, เด็ก (15–30 kg) 0.15 mg\n- พกติดตัว 2 ชุด, ตรวจวันหมดอายุและสารใส (ถ้าขุ่น/เปลี่ยนสี = ทิ้ง)\n- เก็บที่อุณหภูมิห้อง **ห้ามแช่ตู้เย็น/แช่แข็ง**"
+        }
+      ]
+    },
+    {
+      "title_th": "การรักษาโรคภูมิต้านตนเองและวัคซีนในผู้ภูมิคุ้มกันบกพร่อง",
+      "subtitle_th": "SLE, RA bridge และหลักการให้วัคซีนในผู้กดภูมิ",
+      "icon": "🩺",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "autoimmune",
+        "ภูมิต้านตนเอง",
+        "SLE",
+        "rheumatoid arthritis",
+        "hydroxychloroquine",
+        "methotrexate",
+        "DMARD",
+        "vaccination immunocompromised",
+        "live vaccine",
+        "folic acid"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "ภาพรวมโรคภูมิต้านตนเองและกลยุทธ์การรักษา",
+          "body_md": "โรคภูมิต้านตนเอง (autoimmune) = ภูมิคุ้มกันโจมตีเนื้อเยื่อตนเอง เช่น **SLE, RA, psoriasis, IBD**\n\n**กลยุทธ์การรักษา (escalation):**\n1. **NSAIDs/สเตียรอยด์** คุมอาการระยะสั้น/flare\n2. **csDMARDs** (conventional synthetic): methotrexate, hydroxychloroquine, sulfasalazine, leflunomide\n3. **bDMARDs** (biologics): TNF inhibitor, rituximab, tocilizumab, abatacept\n4. **tsDMARDs** (targeted synthetic): **JAK inhibitor** (tofacitinib, baricitinib)\n\nหลักการ RA: เริ่ม DMARD เร็ว (\"treat to target\"), **methotrexate เป็น anchor drug**"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Methotrexate ใน RA: ขนาดและความปลอดภัย",
+          "body_md": "**Methotrexate (MTX)** เป็นยาหลักของ RA (low dose):\n- ขนาด **รายสัปดาห์ (สัปดาห์ละครั้ง)** เช่น 7.5–25 mg/สัปดาห์ — **ห้ามให้รายวันโดยเด็ดขาด** (เสียชีวิตจาก toxicity)\n- กลไก: ยับยั้ง dihydrofolate reductase + ฤทธิ์ต้านการอักเสบ\n\n**ให้ folic acid เสริม** (เช่น 5 mg/สัปดาห์ คนละวันกับ MTX) เพื่อลด ADR (ปากเป็นแผล, GI, กดไขกระดูก)\n\n**ADR:** กดไขกระดูก, ตับเป็นพิษ (ตรวจ LFT), pulmonary fibrosis, mucositis\n\n**ห้ามในหญิงตั้งครรภ์ (teratogen)** — ต้องคุมกำเนิด; ระวังร่วม trimethoprim/NSAIDs (เพิ่มพิษ)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "การรักษา SLE",
+          "body_md": "**SLE (Systemic Lupus Erythematosus):**\n- **Hydroxychloroquine (HCQ)** เป็นยาพื้นฐานในผู้ป่วย SLE เกือบทุกราย — ลด flare, ปกป้องอวัยวะ\n  - **ADR สำคัญ: retinopathy** → ตรวจตาประจำปี (จอประสาทตา)\n- **Corticosteroid** คุม flare\n- **Immunosuppressant** ตามความรุนแรง: azathioprine, MMF (โดยเฉพาะ lupus nephritis), cyclophosphamide (รุนแรง)\n- **Biologics:** belimumab (anti-BLyS/BAFF), rituximab (refractory)\n\nเลี่ยงแสงแดด (UV กระตุ้น flare), ระวังยาที่กระตุ้น **drug-induced lupus** (hydralazine, procainamide, isoniazid)"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "หลักการให้วัคซีนในผู้ภูมิคุ้มกันบกพร่อง",
+          "body_md": "**กฎทอง: ผู้ภูมิคุ้มกันบกพร่อง/ได้ยากดภูมิ → ห้ามวัคซีนเชื้อเป็น (live vaccine)**\n- ห้าม: MMR, varicella, zoster เชื้อเป็น, BCG, OPV, yellow fever, rotavirus, JE เชื้อเป็น, intranasal influenza\n- **วัคซีนเชื้อตาย/subunit/toxoid/mRNA ให้ได้** (แต่การตอบสนองอาจลดลง)\n\n**เกณฑ์ \"กดภูมิอย่างมีนัยสำคัญ\":**\n- prednisolone **≥ 20 mg/วัน (หรือ ≥2 mg/kg/วัน) นาน ≥ 14 วัน**\n- ยา biologics, ยากดภูมิ, เคมีบำบัด\n\nให้วัคซีนเชื้อเป็น **อย่างน้อย 4 สัปดาห์ก่อน** เริ่มกดภูมิ และเลี่ยงระหว่างใช้ยา (รอ ~1–3 เดือนหลังหยุด)"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "วัคซีนที่แนะนำในผู้ภูมิคุ้มกันบกพร่อง",
+          "body_md": "ควรให้ **วัคซีนเชื้อตายเพิ่มเติม** ในกลุ่มภูมิบกพร่อง (ก่อนเริ่มกดภูมิถ้าทำได้):\n- **Influenza** (เชื้อตายฉีด) ปีละครั้ง\n- **Pneumococcal:** PCV ตามด้วย PPSV23\n- **Hepatitis B** (ตรวจ titer, อาจต้อง booster)\n- **HPV, Tdap, meningococcal** ตามข้อบ่งชี้\n- **Zoster ชนิด recombinant (RZV/Shingrix)** = ไม่ใช่เชื้อเป็น → ให้ได้ในผู้ภูมิบกพร่อง (ต่างจาก zoster เชื้อเป็น)\n\nคนในครอบครัว (household contacts) ควรได้วัคซีนครบ แต่ **หลีกเลี่ยง OPV**; ถ้าได้ rotavirus/varicella ให้ระวังการสัมผัสสารคัดหลั่งช่วงสั้น ๆ"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ DMARD anchor และข้อห้าม: \"MTX = Weekly + Folate + No Pregnancy\"",
+          "body_md": "**Methotrexate (RA anchor drug):**\n- **W**eekly — สัปดาห์ละครั้งเท่านั้น (รายวัน = ตาย)\n- **F**olate — ให้ folic acid เสริมลด ADR\n- **N**o pregnancy — teratogen ห้ามตั้งครรภ์\n- **L**FT/CBC — ตรวจตับและเลือดสม่ำเสมอ\n\n**Hydroxychloroquine (SLE):** จำ **\"ตา\"** = retinopathy ตรวจตาประจำปี\n\n**Sulfasalazine:** ระวังแพ้ sulfa, ปัสสาวะเป็นสีส้ม\n\n**Leflunomide:** teratogen + ตับเป็นพิษ + half-life ยาวมาก (ต้อง washout ด้วย cholestyramine)"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ข้อควรระวังร่วมในผู้ป่วยภูมิต้านตนเองที่ได้ยากดภูมิ",
+          "body_md": "- **คัดกรองและป้องกันการติดเชื้อ:** TB latent, HBV, strongyloides ก่อนเริ่ม biologics/สเตียรอยด์ขนาดสูง\n- เฝ้าระวัง **opportunistic infection** (เช่น PJP — พิจารณา cotrimoxazole prophylaxis ในผู้กดภูมิรุนแรง)\n- **JAK inhibitors** (tofacitinib): เพิ่มเสี่ยง **งูสวัด (herpes zoster)**, VTE, และ MACE — ตรวจ lipid, screening ก่อนใช้\n- ให้คำแนะนำเรื่อง **สุขอนามัย** และมาพบแพทย์เมื่อมีไข้/อาการติดเชื้อ\n- หญิงวัยเจริญพันธุ์: คุมกำเนิดเมื่อใช้ยา teratogen (MTX, MMF, leflunomide, cyclophosphamide)\n- ตรวจติดตาม **CBC, LFT, renal function** สม่ำเสมอตามชนิดยา"
         }
       ]
     }

@@ -1,56 +1,456 @@
 {
   "subject": "Pharmacognosy",
   "unit": {
-    "title_th": "สมุนไพรและเภสัชเวท",
-    "description_th": "สมุนไพรสำคัญ สารสำคัญ และข้อควรระวังอันตรกิริยาสมุนไพร-ยาแผนปัจจุบัน",
+    "title_th": "เภสัชเวทและผลิตภัณฑ์ธรรมชาติ",
+    "description_th": "คอร์สครบวงจรเภสัชเวทสำหรับสอบใบประกอบวิชาชีพเภสัชกรรม ครอบคลุมเมแทบอไลต์ปฐมภูมิ/ทุติยภูมิ วิถีชีวสังเคราะห์ แอลคาลอยด์ ไกลโคไซด์ เทอร์พีนอยด์และน้ำมันหอมระเหย แทนนิน เรซิน ซาโปนิน น้ำมันคงตัว สมุนไพรไทยในบัญชียาจากสมุนไพร อันตรกิริยาสมุนไพร-ยา และการควบคุมคุณภาพ/มาตรฐานเครื่องยาสมุนไพร",
     "icon": "🌿"
   },
   "lessons": [
     {
-      "title_th": "สมุนไพรสำคัญและสารออกฤทธิ์",
-      "subtitle_th": "Active constituents ที่ออกข้อสอบบ่อย",
-      "icon": "🍃",
-      "est_minutes": 6,
-      "xp_reward": 10,
+      "title_th": "บทนำเภสัชเวทและผลิตภัณฑ์ธรรมชาติ",
+      "subtitle_th": "Primary vs secondary metabolites และวิถีชีวสังเคราะห์",
+      "icon": "🌱",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "เภสัชเวท",
+        "pharmacognosy",
+        "ผลิตภัณฑ์ธรรมชาติ",
+        "natural products",
+        "secondary metabolite",
+        "primary metabolite",
+        "biosynthesis",
+        "shikimic acid",
+        "mevalonate",
+        "crude drug"
+      ],
       "cards": [
         {
           "card_type": "concept",
-          "title_th": "กลุ่มสารสำคัญในพืช",
-          "body_md": "**กลุ่มสารออกฤทธิ์หลัก**\n- **Alkaloids:** มีไนโตรเจน ฤทธิ์แรง เช่น morphine, quinine, atropine\n- **Glycosides:** เช่น cardiac glycoside (digoxin จาก Digitalis)\n- **Flavonoids/Tannins:** ต้านอนุมูลอิสระ ฝาดสมาน\n- **Volatile oils (น้ำมันหอมระเหย):** เช่น menthol, eugenol\n- **Saponins:** ฟองคล้ายสบู่"
+          "title_th": "เภสัชเวทคืออะไร",
+          "body_md": "**เภสัชเวท (Pharmacognosy)** คือศาสตร์ที่ศึกษายาที่ได้จาก **ธรรมชาติ** (พืช สัตว์ จุลินทรีย์ แร่ธาตุ) โดยเน้นสารออกฤทธิ์ทางชีวภาพ\n\nคำว่า pharmacognosy มาจากภาษากรีก: *pharmakon* (ยา) + *gnosis* (ความรู้)\n\n**ขอบเขตการศึกษา:**\n- แหล่งที่มา (source/origin) ของเครื่องยา\n- การจำแนกพืช (taxonomy) และส่วนที่ใช้ (plant part)\n- สารสำคัญ (active constituents) และโครงสร้าง\n- การควบคุมคุณภาพและการตรวจสอบเอกลักษณ์\n\n**Crude drug (เครื่องยา/ยาดิบ):** ส่วนของพืชหรือสัตว์ที่ผ่านการทำให้แห้ง/แปรรูปขั้นต้นแต่ยังไม่สกัดบริสุทธิ์ เช่น ใบ ราก เปลือก เมล็ด"
         },
         {
-          "card_type": "example",
-          "title_th": "สมุนไพรไทยในบัญชียาหลัก",
-          "body_md": "**ตัวอย่างที่ออกบ่อย**\n- **ฟ้าทะลายโจร** (Andrographis) — สาร andrographolide บรรเทาหวัด เจ็บคอ\n- **ขมิ้นชัน** (Curcuma) — curcumin บรรเทาท้องอืด\n- **ขิง** (Ginger) — gingerol แก้คลื่นไส้\n- **ชุมเห็ดเทศ/มะขามแขก** — anthraquinone ระบาย"
+          "card_type": "concept",
+          "title_th": "Primary vs Secondary Metabolites",
+          "body_md": "**Primary metabolites (เมแทบอไลต์ปฐมภูมิ):**\n- จำเป็นต่อการเจริญเติบโตและดำรงชีวิตของพืช\n- พบในพืชทั่วไป (ubiquitous)\n- ตัวอย่าง: **คาร์โบไฮเดรต โปรตีน ไขมัน กรดนิวคลิอิก คลอโรฟิลล์**\n\n**Secondary metabolites (เมแทบอไลต์ทุติยภูมิ):**\n- **ไม่จำเป็น** ต่อการดำรงชีวิตขั้นพื้นฐาน แต่ช่วยป้องกันตัว/ดึงดูดแมลง\n- พบเฉพาะบางชนิด/วงศ์พืช (specific)\n- **เป็นสารที่มีฤทธิ์ทางยาเป็นส่วนใหญ่**\n- ตัวอย่าง: **alkaloids, glycosides, terpenoids, flavonoids, tannins**\n\nข้อสอบมักถามว่ายาสมุนไพรส่วนใหญ่เป็น **secondary metabolites**"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "วิถีชีวสังเคราะห์หลัก 3 วิถี",
+          "body_md": "สารทุติยภูมิสังเคราะห์ผ่านวิถีหลัก 3 ทาง:\n\n**1. Shikimic acid pathway (วิถีชิคิมิก):**\n- สร้างกรดอะมิโนอะโรมาติก (Phe, Tyr, Trp)\n- ได้สารกลุ่ม **phenylpropanoids, lignans, coumarins, แทนนินบางชนิด** และ alkaloid ที่มาจากกรดอะมิโนอะโรมาติก\n\n**2. Acetate–malonate pathway (polyketide):**\n- ได้ **fatty acids, anthraquinones, flavonoids (ส่วนวงแหวน A), phloroglucinols**\n\n**3. Mevalonic acid (MVA) / MEP pathway:**\n- เป็นวิถีของ **isoprenoid/terpenoid** ทั้งหมด\n- ได้ **terpenes, steroids, carotenoids** และ steroidal/triterpenoid glycoside"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ที่มาของแอลคาลอยด์ตามกรดอะมิโน",
+          "body_md": "**Alkaloids** ส่วนใหญ่มาจากกรดอะมิโน (มีไนโตรเจน) ซึ่งจำง่ายตามสารตั้งต้น:\n\n| กรดอะมิโนตั้งต้น | กลุ่มแอลคาลอยด์ | ตัวอย่าง |\n|---|---|---|\n| Ornithine | tropane, pyrrolidine | atropine, nicotine |\n| Lysine | piperidine, quinolizidine | lobeline |\n| Phenylalanine/Tyrosine | isoquinoline | morphine, codeine |\n| Tryptophan | indole | reserpine, vincristine, ergot |\n| Histidine | imidazole | pilocarpine |\n\nบางชนิด เช่น caffeine มาจาก **purine** (ไม่ใช่กรดอะมิโนอะโรมาติก)"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "ชื่อเครื่องยา: Latin binomial และส่วนที่ใช้",
+          "body_md": "ชื่อพฤกษศาสตร์ใช้ระบบ **binomial nomenclature**: *Genus species* (เอียง, Genus ขึ้นต้นตัวใหญ่)\n\n**คำลงท้ายบอกส่วนที่ใช้ของเครื่องยา (pharmacopoeial):**\n- *folium* = ใบ (leaf)\n- *radix* = ราก (root)\n- *cortex* = เปลือก (bark)\n- *rhizoma* = เหง้า (rhizome)\n- *semen* = เมล็ด (seed)\n- *flos* = ดอก (flower)\n- *fructus* = ผล (fruit)\n\nตัวอย่าง: *Digitalis folium* = ใบดิจิทาลิส, *Glycyrrhizae radix* = รากชะเอม"
         },
         {
           "card_type": "mnemonic",
-          "title_th": "จำ Alkaloid ลงท้าย -ine",
-          "body_md": "**\"Alkaloid มักลงท้าย -ine\"**\n\nmorph**ine**, caffe**ine**, atrop**ine**, quin**ine**, nicot**ine**, codeine\n\nและมักมีรสขม ตอบสนองต่อกรด-เบส (เป็นเบสอ่อน) สกัดได้ด้วยการปรับ pH"
+          "title_th": "จำสารทุติยภูมิ 5 กลุ่มหลัก: \"AGTTF\"",
+          "body_md": "กลุ่มสารทุติยภูมิที่ออกข้อสอบบ่อยที่สุด:\n\n**A** – **A**lkaloids (มีไนโตรเจน, รสขม, เป็นเบส)\n**G** – **G**lycosides (มีน้ำตาล + aglycone)\n**T** – **T**erpenoids (จาก isoprene unit, MVA pathway)\n**T** – **T**annins (ฟีนอลิก, ฝาดสมาน, ตกตะกอนโปรตีน)\n**F** – **F**lavonoids (สี, ต้านอนุมูลอิสระ)\n\nเสริม: saponins (ฟองสบู่), volatile oils (น้ำมันหอมระเหย), resins\n\nจำง่าย: \"AGTTF + ฟองสบู่กับน้ำมันหอม\""
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ปัจจัยที่ทำให้ปริมาณสารสำคัญแปรปรวน",
+          "body_md": "ปริมาณสารออกฤทธิ์ในพืชสมุนไพร **ไม่คงที่** ขึ้นกับหลายปัจจัย จึงต้องทำ standardization:\n\n- **พันธุกรรม (genetics/chemotype)** และสายพันธุ์\n- **สภาพแวดล้อม:** ดิน อากาศ แสง น้ำ ระดับความสูง\n- **ฤดูกาลและช่วงเวลาเก็บเกี่ยว (harvest time)** – สารบางชนิดสูงสุดตามฤดู\n- **ส่วนของพืชที่ใช้** และอายุพืช\n- **การเก็บรักษาและการอบแห้ง** – ความร้อน/ความชื้นทำให้สารสลายตัว เกิด enzymatic degradation\n\nดังนั้นเครื่องยาสมุนไพรจึงต้องมี **assay/มาตรฐานสารสำคัญ** กำกับเสมอ"
+        }
+      ]
+    },
+    {
+      "title_th": "แอลคาลอยด์: การจำแนกและตัวอย่างสำคัญ",
+      "subtitle_th": "Morphine, atropine, quinine, caffeine, vincristine, reserpine",
+      "icon": "💊",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "แอลคาลอยด์",
+        "alkaloid",
+        "morphine",
+        "atropine",
+        "quinine",
+        "caffeine",
+        "vincristine",
+        "reserpine",
+        "opium",
+        "Cinchona"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "คุณสมบัติทั่วไปของแอลคาลอยด์",
+          "body_md": "**Alkaloids** เป็นสารทุติยภูมิที่มี **ไนโตรเจน** อยู่ในวง (heterocyclic N เป็นส่วนใหญ่)\n\n**คุณสมบัติเด่น:**\n- มีฤทธิ์เป็น **เบสอ่อน (alkaline)** → ชื่อ \"alkaloid\"\n- รส **ขม**, มักมีฤทธิ์ทางเภสัชวิทยาแรง\n- ชื่อมักลงท้าย **-ine** (morphine, atropine, quinine)\n- **อยู่ในรูปเกลือ (salt)** กับกรดในพืช → ละลายน้ำได้\n- รูป **เบสอิสระ (free base)** ละลายในตัวทำละลายอินทรีย์\n\n**การสกัด:** ใช้หลักกรด-เบส – ปรับเป็นเบสเพื่อเปลี่ยนเป็น free base แล้วสกัดด้วยตัวทำละลายอินทรีย์\n\n**Test เบื้องต้น:** Dragendorff's reagent (ตะกอนส้ม-แดง), Mayer's reagent (ตะกอนขาว-ครีม)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Morphine และ alkaloid จากฝิ่น (Opium)",
+          "body_md": "**ฝิ่น (Opium)** = ยางแห้งจากผล **Papaver somniferum** (วงศ์ Papaveraceae) เป็นแหล่ง isoquinoline alkaloid\n\n**Phenanthrene group (ฤทธิ์ระงับปวด/เสพติด):**\n- **Morphine** – opioid analgesic ต้นแบบ, agonist ที่ mu receptor\n- **Codeine** – ระงับไอ, prodrug ของ morphine ผ่าน **CYP2D6**\n- **Thebaine** – ใช้สังเคราะห์ oxycodone, naloxone\n\n**Benzylisoquinoline group:**\n- **Papaverine** – คลายกล้ามเนื้อเรียบ (smooth muscle relaxant), antispasmodic\n- **Noscapine** – ระงับไอ\n\nMorphine จัดเป็น **isoquinoline alkaloid** มาจากกรดอะมิโน tyrosine"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Tropane alkaloids: Atropine และพวก",
+          "body_md": "**Tropane alkaloids** จาก **Solanaceae** เช่น *Atropa belladonna*, *Datura* (ลำโพง), *Hyoscyamus*\n\n**สาร 3 ตัวที่ต้องจำ (anticholinergic – antagonist ที่ muscarinic receptor):**\n- **Atropine (dl-hyoscyamine):** เพิ่ม HR, ขยายม่านตา (mydriasis), ลดน้ำลาย, ยาแก้พิษ organophosphate/cholinergic\n- **Hyoscyamine:** isomer ที่ออกฤทธิ์แรงกว่า\n- **Scopolamine (hyoscine):** ป้องกันเมารถ/เมาเรือ (motion sickness), ลดสารคัดหลั่ง, ออกฤทธิ์ต่อ CNS มากกว่า atropine\n\n**Cocaine** ก็เป็น tropane alkaloid (จาก *Erythroxylum coca*) – local anesthetic, ยับยั้ง reuptake ของ catecholamine"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Quinine, Reserpine, Vincristine: indole/quinoline",
+          "body_md": "**Quinine (ควินิน):**\n- **Quinoline alkaloid** จากเปลือก **Cinchona** (วงศ์ Rubiaceae)\n- ใช้รักษา **มาลาเรีย** (antimalarial), **quinidine** (stereoisomer) ใช้เป็น antiarrhythmic\n- ADR: **cinchonism** (หูอื้อ ตาพร่า ปวดหัว คลื่นไส้)\n\n**Reserpine:**\n- **Indole alkaloid** จากราก **Rauwolfia serpentina** (ระย่อม)\n- ลดความดัน (antihypertensive) โดยพร่อง catecholamine ใน vesicle, antipsychotic เก่า\n\n**Vinca alkaloids (vincristine, vinblastine):**\n- **Indole (dimeric) alkaloid** จาก **Catharanthus roseus** (แพงพวยฝรั่ง)\n- **ยาเคมีบำบัด** ยับยั้ง microtubule (จับ tubulin, หยุดที่ metaphase)\n- ADR: vincristine → **neurotoxicity**; vinblastine → **myelosuppression**"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Caffeine และ purine (methylxanthine) alkaloids",
+          "body_md": "**Methylxanthines** เป็น **purine alkaloid** (มาจาก purine ไม่ใช่กรดอะมิโน):\n- **Caffeine** – จากเมล็ดกาแฟ (*Coffea*), ใบชา (*Camellia sinensis*), เมล็ดโกโก้, กระท้อม/กัวรานา\n- **Theophylline** – จากใบชา, ใช้ในโรคหอบหืด/COPD\n- **Theobromine** – จากโกโก้ (*Theobroma cacao*)\n\n**กลไก:** ยับยั้ง phosphodiesterase (เพิ่ม cAMP) และเป็น **adenosine receptor antagonist** → กระตุ้น CNS, ขับปัสสาวะ, ขยายหลอดลม\n\nอื่น ๆ ที่ควรรู้:\n- **Pilocarpine** (imidazole) – cholinergic agonist รักษาต้อหิน/ตาแห้ง\n- **Ephedrine** (จาก *Ephedra*/มาหวง) – sympathomimetic, เป็น protoalkaloid (N นอกวง)"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำแหล่งที่มา: \"แอลคาลอยด์-ต้นกำเนิด\"",
+          "body_md": "จับคู่สาร ↔ พืชต้นกำเนิด (ออกข้อสอบบ่อย):\n\n- **Morphine/Codeine** ← *Papaver somniferum* (ฝิ่น)\n- **Atropine/Scopolamine** ← *Atropa belladonna / Datura*\n- **Quinine** ← *Cinchona* (ซิงโคนา)\n- **Reserpine** ← *Rauwolfia serpentina* (ระย่อม)\n- **Vincristine/Vinblastine** ← *Catharanthus roseus* (แพงพวยฝรั่ง)\n- **Caffeine** ← *Coffea / Camellia sinensis*\n- **Pilocarpine** ← *Pilocarpus*\n- **Physostigmine** ← *Physostigma* (calabar bean)\n- **Cocaine** ← *Erythroxylum coca*"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ความเป็นพิษและการควบคุมตามกฎหมาย",
+          "body_md": "แอลคาลอยด์หลายชนิดมี **therapeutic index แคบ** และเป็นสารควบคุม:\n\n- **Morphine, codeine** – เป็น **ยาเสพติดให้โทษ/วัตถุออกฤทธิ์** (narcotic) ต้องควบคุมการจ่ายและบันทึก\n- **Atropine/scopolamine** – พิษ anticholinergic: \"ร้อนแดง แห้ง บอด บ้า\" (hot, red, dry, blind, mad) – ตัวแก้คือ physostigmine\n- **Quinine** – cinchonism, hypoglycemia, อันตรายต่อหัวใจ (QT prolong)\n- **Strychnine** (จาก *Strychnos nux-vomica* / แสลงใจ) – พิษกระตุ้นไขสันหลังรุนแรง ทำให้ชักเกร็ง\n- **Colchicine** (จาก *Colchicum*) – รักษาเกาต์แต่ index แคบมาก พิษถึงตาย\n\nต้องซักประวัติและตรวจสอบขนาดยาอย่างระมัดระวังเสมอ"
+        }
+      ]
+    },
+    {
+      "title_th": "ไกลโคไซด์: หัวใจ แอนทราควิโนน และอื่น ๆ",
+      "subtitle_th": "Cardiac, anthraquinone, flavonoid, cyanogenic, saponin glycosides",
+      "icon": "🍂",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "ไกลโคไซด์",
+        "glycoside",
+        "digoxin",
+        "digitalis",
+        "cardiac glycoside",
+        "anthraquinone",
+        "senna",
+        "มะขามแขก",
+        "cyanogenic",
+        "aglycone"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "โครงสร้างพื้นฐานของไกลโคไซด์",
+          "body_md": "**Glycoside** = **น้ำตาล (glycone)** + **ส่วนที่ไม่ใช่น้ำตาล (aglycone/genin)** เชื่อมด้วย glycosidic bond\n\n- **ส่วน aglycone** มักเป็นตัวออกฤทธิ์ทางเภสัชวิทยา\n- **ส่วนน้ำตาล** ช่วยเพิ่มการละลายน้ำและการดูดซึม\n\n**จำแนกตามชนิดพันธะ:**\n- **O-glycoside** (พบบ่อยสุด, ผ่าน O)\n- C-glycoside, N-glycoside, S-glycoside (thioglycoside)\n\n**จำแนกตามชนิด aglycone** (วิธีที่ใช้สอบ): cardiac, anthraquinone, flavonoid, cyanogenic, saponin, coumarin glycoside\n\nไกลโคไซด์ถูก **ไฮโดรไลซ์ได้ด้วยกรดหรือเอนไซม์** → แยกเป็นน้ำตาล + aglycone"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Cardiac glycosides: Digitalis และ digoxin",
+          "body_md": "**Cardiac (cardiotonic) glycosides** มี aglycone เป็น **steroid** ติดวง **lactone**:\n- **Cardenolide** (5-membered lactone): digoxin, digitoxin\n- **Bufadienolide** (6-membered lactone): จากคางคก\n\n**แหล่งสำคัญ:**\n- **Digitalis purpurea / D. lanata** (foxglove) → **digoxin, digitoxin**\n- **Strophanthus** → ouabain (G-strophanthin)\n\n**กลไก:** ยับยั้ง **Na⁺/K⁺-ATPase** → เพิ่ม Ca²⁺ ในเซลล์ → **positive inotrope** (หัวใจบีบแรงขึ้น) ใช้ในภาวะหัวใจล้มเหลว/AF\n\n**สำคัญ:** therapeutic index **แคบมาก** ต้องทำ TDM (digoxin 0.5–2 ng/mL); ภาวะ **hypokalemia เพิ่มพิษ digoxin**"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Anthraquinone glycosides: ยาระบาย",
+          "body_md": "**Anthraquinone glycosides** มี aglycone เป็น **anthraquinone** ออกฤทธิ์ **ยาระบายกระตุ้น (stimulant laxative)**\n\n**แหล่งสำคัญ:**\n- **Senna (มะขามแขก, *Cassia/Senna*)** → **sennosides A, B**\n- **Cascara, Rhubarb (โกฐน้ำเต้า), Aloe (ว่านหางจระเข้ – aloin), ชุมเห็ดเทศ**\n\n**กลไก:** เป็น **prodrug** – ถูกแบคทีเรียในลำไส้ใหญ่เปลี่ยนเป็น aglycone ที่ออกฤทธิ์ → กระตุ้น peristalsis, เพิ่มสารน้ำในลำไส้ → ถ่ายใน 6–12 ชม.\n\n**ข้อควรระวัง:**\n- ใช้นาน → **melanosis coli** (เม็ดสีในลำไส้), เสีย electrolyte (hypokalemia)\n- ทำให้ปัสสาวะ/อุจจาระเปลี่ยนสี\n- ห้ามในลำไส้อุดตัน, ปวดท้องไม่ทราบสาเหตุ"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Cyanogenic และ flavonoid glycosides",
+          "body_md": "**Cyanogenic glycosides (ไซยาโนเจนิก):**\n- ปล่อย **HCN (กรดไฮโดรไซยานิก)** เมื่อถูกไฮโดรไลซ์ → **พิษ**\n- **Amygdalin** ใน **เมล็ดอัลมอนด์ขม, แอปริคอต, แอปเปิล** และ **linamarin ในมันสำปะหลังดิบ**\n- การต้ม/ทำให้สุกช่วยลดพิษ; เป็นเหตุผลที่ห้ามกินมันสำปะหลังดิบปริมาณมาก\n\n**Flavonoid glycosides:**\n- aglycone เป็น flavonoid (เช่น **rutin = quercetin + rutinose**, hesperidin)\n- ฤทธิ์ **ต้านอนุมูลอิสระ, เสริมความแข็งแรงหลอดเลือดฝอย (vascular protectant)**\n- พบใน buckwheat, ส้ม (citrus bioflavonoids)\n\n**Coumarin glycoside:** เช่นใน *Glycyrrhiza*, ginkgo; บางตัวเกี่ยวกับฤทธิ์ต้านการแข็งตัวของเลือด"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Saponin glycosides",
+          "body_md": "**Saponin glycosides** = น้ำตาล + aglycone (**sapogenin**) ที่เป็น steroid หรือ triterpene\n\n**คุณสมบัติเด่น:**\n- เกิด **ฟองคงตัวเมื่อเขย่ากับน้ำ** (คล้ายสบู่ – ชื่อมาจาก *sapo* = สบู่)\n- ทำให้เม็ดเลือดแดงแตก (**hemolysis**) → เป็นพิษถ้าฉีดเข้าเส้น แต่ดูดซึมทางปากน้อย\n- รสขม กัดเยื่อเมือก\n\n**2 ชนิด:**\n- **Steroidal saponin:** เช่น diosgenin (จาก *Dioscorea*/กลอย) → ใช้สังเคราะห์ steroid/ฮอร์โมน\n- **Triterpenoid saponin:** glycyrrhizin (ชะเอม), ginsenosides (โสม), aescin (เกาลัดม้า)\n\n**ประโยชน์:** expectorant (ขับเสมหะ), บางชนิดลดคอเลสเตอรอล, สารลดแรงตึงผิวธรรมชาติ"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำชนิดไกลโคไซด์: \"CASFC\"",
+          "body_md": "จำชนิดไกลโคไซด์ตาม aglycone + ฤทธิ์:\n\n**C** – **C**ardiac → digoxin/digitalis (หัวใจ, Na/K-ATPase)\n**A** – **A**nthraquinone → senna/มะขามแขก (ยาระบาย)\n**S** – **S**aponin → ฟองสบู่, hemolysis (โสม ชะเอม)\n**F** – **F**lavonoid → rutin (ต้านอนุมูลอิสระ, หลอดเลือด)\n**C** – **C**yanogenic → amygdalin (ปล่อย HCN, พิษ)\n\nจำคู่สำคัญ: **digoxin = แคบ ต้อง TDM, ระวัง hypokalemia** / **senna = prodrug ที่แบคทีเรียในลำไส้เปลี่ยน**"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ความเป็นพิษและการเก็บรักษาไกลโคไซด์",
+          "body_md": "**ข้อควรระวังด้านพิษ:**\n- **Cardiac glycoside:** พิษ digoxin → คลื่นไส้ อาเจียน เห็นสีเหลือง-เขียว (xanthopsia), หัวใจเต้นผิดจังหวะ; **hypokalemia, hypomagnesemia, hypercalcemia เพิ่มพิษ**; ยาแก้คือ **digoxin immune Fab (Digibind)**\n- **Cyanogenic glycoside:** พิษไซยาไนด์เฉียบพลัน (มันสำปะหลังดิบ เมล็ดผลไม้)\n- **Saponin:** เป็นพิษถ้าเข้ากระแสเลือด (hemolysis)\n\n**การเก็บรักษา:** ไกลโคไซด์ถูก **เอนไซม์ในพืชเอง (เช่น emulsin, myrosinase) ไฮโดรไลซ์** ได้ → ต้อง **ทำให้แห้งและทำลายเอนไซม์เร็ว** (เช่น อบแห้งทันที) เพื่อรักษาสารสำคัญไว้"
+        }
+      ]
+    },
+    {
+      "title_th": "เทอร์พีนอยด์และน้ำมันหอมระเหย",
+      "subtitle_th": "Mono/sesqui/di/triterpenes และ volatile (essential) oils",
+      "icon": "🌸",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "เทอร์พีนอยด์",
+        "terpenoid",
+        "volatile oil",
+        "essential oil",
+        "น้ำมันหอมระเหย",
+        "menthol",
+        "monoterpene",
+        "isoprene",
+        "limonene",
+        "carotenoid"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "Isoprene rule และการจำแนกเทอร์พีน",
+          "body_md": "**Terpenes/Terpenoids** สร้างจากหน่วย **isoprene (C5H8)** ต่อกัน (isoprene rule) ผ่าน **MVA/MEP pathway**\n\n**จำแนกตามจำนวนคาร์บอน (จำนวน isoprene unit):**\n\n| ชนิด | จำนวน C | isoprene unit | ตัวอย่าง |\n|---|---|---|---|\n| Monoterpene | C10 | 2 | menthol, limonene, camphor |\n| Sesquiterpene | C15 | 3 | artemisinin, farnesol |\n| Diterpene | C20 | 4 | taxol (paclitaxel), vitamin A |\n| Triterpene | C30 | 6 | squalene, steroid, saponin |\n| Tetraterpene | C40 | 8 | carotenoids (β-carotene) |\n\n**Terpenoid** = terpene ที่มีหมู่ฟังก์ชัน (O) เพิ่มเข้ามา"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "น้ำมันหอมระเหย (Volatile/Essential oils)",
+          "body_md": "**Volatile oils (น้ำมันหอมระเหย)** มีลักษณะ:\n- **ระเหยได้ที่อุณหภูมิห้อง** (ต่างจาก fixed oil ที่ไม่ระเหย)\n- มีกลิ่นหอมเฉพาะตัว\n- **ไม่ทิ้งคราบมันถาวรบนกระดาษ** (fixed oil ทิ้งคราบมันถาวร) — ข้อแตกต่างสำคัญ!\n- องค์ประกอบหลัก: **monoterpenes + sesquiterpenes** และ phenylpropanoids\n\n**การสกัด:**\n- **Steam distillation (กลั่นด้วยไอน้ำ)** – วิธีมาตรฐานที่ใช้บ่อยสุด\n- Cold pressing (ผิวส้ม), solvent extraction, supercritical CO2\n\nใช้ในน้ำหอม, aromatherapy, สารแต่งกลิ่นรส, ยาดม, ยาฆ่าเชื้อ"
+        },
+        {
+          "card_type": "example",
+          "title_th": "น้ำมันหอมระเหยและองค์ประกอบสำคัญ",
+          "body_md": "จับคู่พืช ↔ องค์ประกอบหลัก (ออกข้อสอบบ่อย):\n\n- **เปเปอร์มินต์ (Mint)** → **menthol** (เย็น, แก้ท้องอืด, ยาดม)\n- **กานพลู (Clove)** → **eugenol** (ระงับปวดฟัน, antiseptic)\n- **การบูร (Camphor)** → camphor (ยาทาแก้ปวด, ยาดม)\n- **ตะไคร้ (Lemongrass)** → citral\n- **ส้ม/มะนาว (Citrus peel)** → **limonene**\n- **ยูคาลิปตัส** → **eucalyptol (cineole)** (ขับเสมหะ)\n- **อบเชย (Cinnamon)** → cinnamaldehyde\n- **โป๊ยกั๊ก/ยี่หร่า (Anise)** → anethole\n- **กระวาน/ขมิ้น/ขิง** → มีน้ำมันหอมระเหยให้กลิ่นเฉพาะ"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "เทอร์พีนอยด์ที่ใช้เป็นยาสำคัญ",
+          "body_md": "**Sesquiterpene lactone:**\n- **Artemisinin** จาก **ชิงเฮา (*Artemisia annua*)** → ยารักษา **มาลาเรีย** ที่สำคัญที่สุด (artemisinin-based combination therapy)\n- **Parthenolide** จาก feverfew → ป้องกันไมเกรน\n\n**Diterpene:**\n- **Paclitaxel (Taxol)** จากเปลือก ***Taxus* (yew)** → ยาเคมีบำบัด ยับยั้ง microtubule (stabilize)\n- **Ginkgolides** จากแปะก๊วย → PAF antagonist\n- **Vitamin A (retinol)** เป็น diterpene\n\n**Triterpene/Tetraterpene:**\n- **β-carotene** (tetraterpene) → provitamin A, antioxidant\n- **Steroid** มาจาก triterpene (squalene → lanosterol → cholesterol)"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "Volatile oil vs Fixed oil: แยกให้ออก",
+          "body_md": "ตารางเปรียบเทียบที่ออกข้อสอบบ่อย:\n\n| ลักษณะ | Volatile oil | Fixed oil |\n|---|---|---|\n| ระเหย | **ระเหยได้** | ไม่ระเหย |\n| คราบบนกระดาษ | หายไป (ไม่ถาวร) | **คราบมันถาวร** |\n| โครงสร้าง | terpenoid/phenylpropanoid | glyceride ของกรดไขมัน |\n| กลิ่น | หอมเฉพาะตัว | แทบไม่มีกลิ่น |\n| หืน (rancid) | ไม่ค่อย | **หืนได้** (oxidation) |\n| การสกัด | กลั่นไอน้ำ | บีบเย็น/ใช้ตัวทำละลาย |\n\nทดสอบง่าย ๆ: หยดบนกระดาษ – ถ้าคราบหายไปเมื่อแห้ง = volatile oil"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำขนาดเทอร์พีน: \"MSD-T-T\" (2-3-4-6-8)",
+          "body_md": "นับจำนวน isoprene unit (และคาร์บอน):\n\n- **M**ono = **2** unit = C10 → menthol, limonene\n- **S**esqui = **3** unit = C15 → artemisinin\n- **D**i = **4** unit = C20 → paclitaxel, vitamin A\n- **T**ri = **6** unit = C30 → squalene, steroid, saponin\n- **T**etra = **8** unit = C40 → carotenoids\n\nจำ: \"2-3-4-6-8\" (mono ขึ้น 1, sesqui = 1.5 เท่า) และ **ยิ่ง C มาก ยิ่งระเหยยาก** (mono/sesqui = ระเหยได้ = น้ำมันหอมระเหย)"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ความเป็นพิษและข้อควรระวังน้ำมันหอมระเหย",
+          "body_md": "น้ำมันหอมระเหยเข้มข้นมีพิษได้ ต้องระวัง:\n\n- **Camphor (การบูร):** กลืนปริมาณมากทำให้ **ชัก** โดยเฉพาะในเด็ก – ห้ามใช้ในเด็กเล็ก/บริเวณรูจมูกทารก\n- **Eucalyptus oil / methyl salicylate (น้ำมันระกำ):** กลืนเป็นพิษ, methyl salicylate พิษคล้าย salicylate overdose\n- **Pennyroyal, sassafras:** เป็นพิษต่อตับ/ก่อมะเร็ง\n- **Eugenol (น้ำมันกานพลู):** ระคายเยื่อเมือก, พิษตับถ้ามาก\n\n**ทั่วไป:** ระคายผิว (ต้องเจือจางด้วย carrier oil), แพ้สัมผัส (contact dermatitis), ระวังในหญิงตั้งครรภ์ และห้ามหยดเข้าตา"
+        }
+      ]
+    },
+    {
+      "title_th": "แทนนิน เรซิน ซาโปนิน และน้ำมันคงตัว",
+      "subtitle_th": "Tannins, resins, saponins, fixed oils/fats",
+      "icon": "🪵",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "แทนนิน",
+        "tannin",
+        "resin",
+        "เรซิน",
+        "fixed oil",
+        "น้ำมันคงตัว",
+        "saponin",
+        "ฝาดสมาน",
+        "astringent",
+        "fatty acid"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "Tannins (แทนนิน): สารฝาดสมาน",
+          "body_md": "**Tannins** เป็นสารประกอบ **ฟีนอลิก (polyphenol)** น้ำหนักโมเลกุลสูง รสฝาด มีฤทธิ์ **ฝาดสมาน (astringent)**\n\n**คุณสมบัติเด่น:**\n- **ตกตะกอนโปรตีน** (จับกับโปรตีน/แอลคาลอยด์/โลหะหนัก) → ใช้ฟอกหนัง, แก้ท้องเสีย, ห้ามเลือดเล็กน้อย, รักษาแผลไหม้\n- ให้สีน้ำเงิน-ดำกับ **เกลือเฟอร์ริก (FeCl3)** → ใช้ตรวจสอบ\n\n**2 ชนิด:**\n- **Hydrolyzable tannins:** ไฮโดรไลซ์ได้ด้วยกรด/เอนไซม์ → กรด gallic/ellagic (เช่น gallotannin จาก nutgall)\n- **Condensed tannins (proanthocyanidins):** ไม่ไฮโดรไลซ์ง่าย (เช่นในเปลือกไม้ ชา องุ่น)\n\nพบมากใน **ใบฝรั่ง, ชา, เปลือกมังคุด, สีเสียด (catechu)**"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Resins (เรซิน) และ oleoresin/gum",
+          "body_md": "**Resins (เรซิน)** เป็นสารผสมซับซ้อนที่ได้จากยางพืช ส่วนใหญ่เป็น **terpenoid ออกซิไดซ์** หรือ phenolic\n\n**คุณสมบัติ:**\n- ไม่ละลายน้ำ ละลายในแอลกอฮอล์/ตัวทำละลายอินทรีย์\n- ไม่ระเหย เผาไหม้ให้เปลวและควัน\n\n**ชนิดและตัวอย่าง:**\n- **Oleoresin:** เรซิน + น้ำมันหอมระเหย เช่น **ขมิ้นชัน oleoresin, ginger oleoresin, capsicum (พริก – capsaicin)**\n- **Gum-resin:** เช่น **myrrh (มดยอบ), asafoetida (มหาหิงคุ์)**\n- **Balsam:** เรซิน + กรดอะโรมาติก เช่น **benzoin (กำยาน), Peru balsam, Tolu balsam** (มี cinnamic/benzoic acid)\n- **Podophyllum resin** → ใช้รักษาหูด (podophyllotoxin)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Fixed oils และ fats (น้ำมันคงตัว/ไขมัน)",
+          "body_md": "**Fixed oils/fats** = **glyceride (ester ของ glycerol + กรดไขมัน)** ไม่ระเหย\n\n**Oil vs Fat:** oil = เหลวที่อุณหภูมิห้อง (กรดไขมันไม่อิ่มตัวมาก); fat = แข็ง (กรดไขมันอิ่มตัวมาก)\n\n**ค่ามาตรฐานควบคุมคุณภาพ (ออกข้อสอบ):**\n- **Acid value:** ปริมาณกรดไขมันอิสระ (บ่งบอกความหืน/เสื่อม)\n- **Saponification value:** ขนาดของกรดไขมัน (ค่าสูง = สายสั้น)\n- **Iodine value:** ระดับความไม่อิ่มตัว (ค่าสูง = พันธะคู่มาก = น้ำมันแห้งได้/drying oil)\n- **Peroxide value:** ระดับการเกิดออกซิเดชัน (หืน)\n\n**ตัวอย่างใช้ทางยา:** น้ำมันละหุ่ง (castor – ยาระบาย, ricinoleic acid), น้ำมันปลา (omega-3), น้ำมันมะพร้าว, olive oil, น้ำมันสะเดา"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Saponins ทบทวนเชิงสารเคมี",
+          "body_md": "**Saponins** เป็น glycoside ที่ aglycone (sapogenin) เป็น **steroid หรือ triterpene** มีคุณสมบัติ **surfactant**\n\n**คุณสมบัติทดสอบ:**\n- **Froth test (ทดสอบฟอง):** เขย่ากับน้ำเกิด **ฟองคงตัว** → บ่งชี้ saponin\n- **Hemolysis test:** ทำให้เม็ดเลือดแดงแตก\n\n**บทบาททางยา:**\n- **Expectorant** (ขับเสมหะ) – ระคายเยื่อบุทางเดินอาหารกระตุ้นการหลั่งของเหลวในหลอดลม\n- **Diosgenin** (จากกลอย *Dioscorea*) → สารตั้งต้นสังเคราะห์ steroid/ฮอร์โมนเพศ/corticosteroid\n- **Glycyrrhizin** (ชะเอม) → ฤทธิ์คล้าย mineralocorticoid (ระวัง pseudoaldosteronism)\n- **Ginsenosides** (โสม), **aescin** (เกาลัดม้า – ลดบวมหลอดเลือดดำ)"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "การทดสอบเอกลักษณ์เบื้องต้น (Phytochemical screening)",
+          "body_md": "เทคนิคทดสอบหากลุ่มสารในห้องปฏิบัติการ:\n\n| กลุ่มสาร | รีเอเจนต์/วิธี | ผลบวก |\n|---|---|---|\n| Alkaloid | Dragendorff / Mayer | ตะกอนส้ม / ครีม |\n| Tannin | FeCl3 | น้ำเงิน-ดำ-เขียว |\n| Saponin | Froth test (เขย่าน้ำ) | ฟองคงตัว |\n| Flavonoid | Shinoda (Mg + HCl) | สีแดง-ส้ม |\n| Glycoside | Keller-Kiliani (cardiac) | วงสีน้ำตาล-แดง |\n| Anthraquinone | Borntrager's test | สีชมพู-แดงในชั้นด่าง |\n| Fixed oil | หยดบนกระดาษ | คราบมันถาวร |\n\nจำคู่: **Borntrager = anthraquinone**, **Keller-Kiliani = cardiac glycoside (deoxysugar)**"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำการทดสอบ: \"Tannin-Iron, Anthra-Borntrager\"",
+          "body_md": "ผูกรีเอเจนต์กับกลุ่มสาร:\n\n- **Tannin** ↔ **FeCl3 (เหล็ก)** = สีดำ-น้ำเงิน (เหมือนน้ำหมึก)\n- **Anthraquinone** ↔ **Borntrager** = ชั้นด่างเป็นสีชมพู-แดง\n- **Cardiac glycoside** ↔ **Keller-Kiliani** (ตรวจ deoxysugar)\n- **Saponin** ↔ **Froth (ฟอง)**\n- **Alkaloid** ↔ **Dragendorff (ส้ม)**\n- **Flavonoid** ↔ **Shinoda (Mg/HCl, แดง)**\n\nคำคล้องจอง: \"แทนนินกินเหล็ก, แอนทราพบ Borntrager, การ์เดียกต้อง Keller, ซาโปนินเกิดฟอง\""
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ข้อควรระวังทางคลินิกของแต่ละกลุ่ม",
+          "body_md": "**Tannin:**\n- จับและ **ลดการดูดซึมยา** (แอลคาลอยด์, เหล็ก) และโปรตีน → เลี่ยงดื่มชาเข้มพร้อมยาธาตุเหล็ก\n- ปริมาณมากระคายกระเพาะ, อาจเกี่ยวข้องกับพิษตับ\n\n**Resin/Balsam:**\n- **Peru/Tolu balsam, benzoin** เป็นสาเหตุ **contact allergy/dermatitis** บ่อย\n- Podophyllum resin เป็นพิษ ห้ามใช้ในหญิงตั้งครรภ์\n\n**Fixed oil:** หืน (rancidity) ทำให้เกิด peroxide ระคายเคือง; น้ำมันละหุ่งระบายแรง ห้ามใช้นาน\n\n**Saponin (glycyrrhizin/ชะเอม):** กินมาก/นาน → **ความดันสูง บวมน้ำ โพแทสเซียมต่ำ** (pseudoaldosteronism)"
+        }
+      ]
+    },
+    {
+      "title_th": "สมุนไพรไทยและบัญชียาจากสมุนไพร",
+      "subtitle_th": "ฟ้าทะลายโจร ขมิ้นชัน ขิง กระชายดำ ชุมเห็ดเทศ",
+      "icon": "🇹🇭",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "บัญชียาจากสมุนไพร",
+        "ฟ้าทะลายโจร",
+        "andrographis",
+        "ขมิ้นชัน",
+        "turmeric",
+        "curcumin",
+        "ขิง",
+        "ginger",
+        "กระชายดำ",
+        "ชุมเห็ดเทศ"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "บัญชียาจากสมุนไพรคืออะไร",
+          "body_md": "**บัญชียาจากสมุนไพร** เป็นส่วนหนึ่งของ **บัญชียาหลักแห่งชาติ (National List of Essential Medicines)** ที่รวบรวมยาสมุนไพรที่มีหลักฐานสนับสนุนและคุ้มค่า ให้เบิกจ่ายในระบบสุขภาพได้\n\n**แบ่งกลุ่มหลัก:**\n- **ยาแผนไทย/ยาตำรับ** (ตามองค์ความรู้แพทย์แผนไทย เช่น ยาหอม ยาประสะ)\n- **ยาพัฒนาจากสมุนไพร (ยาเดี่ยว/สารสกัด)** เช่น ฟ้าทะลายโจร ขมิ้นชัน\n\nเป้าหมาย: ส่งเสริมการใช้สมุนไพร ลดการนำเข้ายา และใช้ยาอย่างสมเหตุผล (RDU)\n\nเภสัชกรต้องรู้ **ข้อบ่งใช้ ขนาด ข้อห้าม และอันตรกิริยา** ของสมุนไพรในบัญชีนี้"
+        },
+        {
+          "card_type": "example",
+          "title_th": "ฟ้าทะลายโจร (Andrographis)",
+          "body_md": "**ฟ้าทะลายโจร** *Andrographis paniculata* (วงศ์ Acanthaceae) — ส่วนที่ใช้: **ส่วนเหนือดิน/ใบ**\n\n- **สารสำคัญ:** **andrographolide** (diterpene lactone, รสขมมาก)\n- **ข้อบ่งใช้ในบัญชี:** บรรเทาอาการ **หวัด เจ็บคอ** (ลดไข้ ลดอาการ); และบรรเทา **ท้องเสียชนิดไม่ติดเชื้อ**\n- **ขนาด:** ปริมาณ andrographolide รวม 60–120 มก./วัน แบ่งให้ (ช่วงสั้น ๆ ไม่เกิน 5–7 วัน)\n- **หลักฐาน:** ลดความรุนแรง/ระยะของอาการหวัดได้; เคยใช้ในผู้ป่วย COVID-19 อาการน้อย (ข้อมูลยังจำกัด)\n\n**ข้อห้าม/ระวัง:** หญิงตั้งครรภ์-ให้นมบุตร, แพ้พืชวงศ์นี้, อาจทำให้ **ความดันต่ำ/ใจสั่น**; ระวังร่วมยาลดความดัน/ยาต้านการแข็งตัวของเลือด; หยุดถ้ามีผื่นแพ้"
+        },
+        {
+          "card_type": "example",
+          "title_th": "ขมิ้นชัน (Turmeric) และ ขิง (Ginger)",
+          "body_md": "**ขมิ้นชัน** *Curcuma longa* (Zingiberaceae) — ส่วนที่ใช้: **เหง้า (rhizome)**\n- **สารสำคัญ:** **curcumin (curcuminoids)** + น้ำมันหอมระเหย\n- **ข้อบ่งใช้:** บรรเทา **อาการท้องอืด ท้องเฟ้อ อาหารไม่ย่อย (dyspepsia)**; ฤทธิ์ต้านการอักเสบ/ต้านอนุมูลอิสระ\n- **ระวัง:** **นิ่วน้ำดี/ท่อน้ำดีอุดตัน** (กระตุ้นการบีบตัวถุงน้ำดี), อาจเสริมฤทธิ์ยาต้านการแข็งตัวของเลือด\n\n**ขิง** *Zingiber officinale* (Zingiberaceae) — ส่วนที่ใช้: **เหง้า**\n- **สารสำคัญ:** **gingerol, shogaol** + น้ำมันหอมระเหย\n- **ข้อบ่งใช้:** บรรเทา **คลื่นไส้ อาเจียน** (เมารถ, หลังผ่าตัด, แพ้ท้อง), ท้องอืด\n- **ระวัง:** ขนาดสูงอาจเพิ่มความเสี่ยง **เลือดออก** ร่วมกับยาต้านเกล็ดเลือด/warfarin; ระวังนิ่วน้ำดี"
+        },
+        {
+          "card_type": "example",
+          "title_th": "กระชายดำ และ ชุมเห็ดเทศ",
+          "body_md": "**กระชายดำ** *Kaempferia parviflora* (Zingiberaceae) — ส่วนที่ใช้: **เหง้า**\n- **สารสำคัญ:** กลุ่ม **methoxyflavone**\n- **การใช้พื้นบ้าน/ศึกษา:** บำรุงกำลัง เพิ่มสมรรถภาพทางเพศ (PDE5 inhibition บางส่วน), ต้านอักเสบ; หลักฐานทางคลินิกยังจำกัด\n- **ระวัง:** อาจเสริมฤทธิ์ PDE5 inhibitor (sildenafil) → ระวังร่วมกับ **ไนเตรต**\n\n**ชุมเห็ดเทศ** *Senna alata* (Fabaceae) — ส่วนที่ใช้: **ใบ**\n- **สารสำคัญ:** **anthraquinone glycoside**\n- **ข้อบ่งใช้:** **ยาระบาย (บรรเทาท้องผูก)** และใบสดตำพอกรักษา **กลากเกลื้อน/โรคผิวหนังจากเชื้อรา**\n- **ระวัง:** ใช้นานเสียสมดุลเกลือแร่ (เหมือน senna), ห้ามในลำไส้อุดตัน/ปวดท้องไม่ทราบสาเหตุ/หญิงตั้งครรภ์"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "สมุนไพรไทยอื่นที่ออกข้อสอบบ่อย",
+          "body_md": "กลุ่มที่ควรจำคู่ \"สมุนไพร–ข้อบ่งใช้\":\n\n- **ขมิ้นชัน, ขิง** → ทางเดินอาหาร (ท้องอืด/คลื่นไส้)\n- **ฟ้าทะลายโจร** → หวัด เจ็บคอ ท้องเสียไม่ติดเชื้อ\n- **เพชรสังฆาต** → ริดสีดวงทวาร\n- **มะระขี้นก** → ลดน้ำตาลในเลือด (ระวังร่วมยาเบาหวาน)\n- **ว่านหางจระเข้ (Aloe)** → แผลไฟไหม้ (วุ้น), ยาง = ยาระบาย (aloin)\n- **บัวบก** → แผล, บำรุงสมอง (asiaticoside)\n- **กระเทียม** → ลดไขมัน/ความดัน (allicin)\n- **ขี้เหล็ก** → นอนหลับ (barakol)\n- **มะแว้ง/มะขามป้อม/ชะเอม** → แก้ไอ ขับเสมหะ"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ 5 สมุนไพรหลัก: \"ฟ้า-ขมิ้น-ขิง-กระชาย-ชุมเห็ด\"",
+          "body_md": "ผูกชื่อกับ \"จุดออกฤทธิ์\":\n\n- **ฟ้า**ทะลายโจร → **ฟ้า**ลงคอ = หวัด/เจ็บคอ (andrographolide)\n- **ขมิ้น**ชัน → ท้องอืด อาหารไม่ย่อย (curcumin)\n- **ขิง** → แก้คลื่นไส้ อาเจียน (gingerol)\n- **กระชาย**ดำ → บำรุงกำลัง สมรรถภาพ (methoxyflavone)\n- **ชุมเห็ด**เทศ → ระบาย + กลากเกลื้อน (anthraquinone)\n\nจำวงศ์: **ขมิ้น ขิง กระชาย = วงศ์ขิง (Zingiberaceae)** เหมือนกันหมด (ใช้เหง้า)"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "หลักฐานเชิงประจักษ์และข้อควรระวังการใช้สมุนไพร",
+          "body_md": "**ประเด็นที่ต้องระวังในการใช้สมุนไพรไทย:**\n\n- **\"ธรรมชาติ ไม่ได้แปลว่าปลอดภัย\"** – มีพิษและอันตรกิริยาได้\n- **ฟ้าทะลายโจร:** เคยมีรายงาน **anaphylaxis/ผื่นแพ้** และห้ามในหญิงตั้งครรภ์; ใช้ขนาดสูง/นานอาจกระทบตับ\n- **ขมิ้น/ขิง/กระเทียม:** เพิ่มเสี่ยงเลือดออก – **หยุดก่อนผ่าตัด** และระวังร่วม warfarin\n- คุณภาพผลิตภัณฑ์ไม่สม่ำเสมอ – ปริมาณสารสำคัญต่างกันมาก, เสี่ยงปนเปื้อนโลหะหนัก/ยาแผนปัจจุบันลักลอบผสม (adulteration)\n- ระวังในผู้ป่วย **โรคตับ ไต และหญิงตั้งครรภ์/ให้นมบุตร**\n\nเภสัชกรควร **ซักประวัติการใช้สมุนไพรเสมอ** เพราะผู้ป่วยมักไม่แจ้ง"
         }
       ]
     },
     {
       "title_th": "อันตรกิริยาสมุนไพร-ยา",
-      "subtitle_th": "Herb-drug interactions ที่ต้องระวัง",
+      "subtitle_th": "St. John's Wort, ginkgo, garlic, ginseng, ginger",
       "icon": "⚠️",
-      "est_minutes": 6,
-      "xp_reward": 10,
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "อันตรกิริยาสมุนไพร-ยา",
+        "herb-drug interaction",
+        "St. John's Wort",
+        "CYP3A4",
+        "P-glycoprotein",
+        "ginkgo",
+        "garlic",
+        "ginseng",
+        "ginger",
+        "bleeding risk"
+      ],
       "cards": [
         {
-          "card_type": "warning",
-          "title_th": "St. John's Wort เหนี่ยวนำเอนไซม์",
-          "body_md": "**St. John's Wort (เซนต์จอห์นเวิร์ต)** เป็น **enzyme inducer (CYP3A4, P-gp)** ที่สำคัญ\n\nลดระดับยา:\n- ยาคุมกำเนิด → คุมไม่อยู่\n- warfarin, cyclosporine, ยาต้านไวรัส\n\nหลีกเลี่ยงการใช้ร่วมกับยาที่มี therapeutic index แคบ"
+          "card_type": "concept",
+          "title_th": "กลไกอันตรกิริยาสมุนไพร-ยา",
+          "body_md": "อันตรกิริยาสมุนไพร-ยาแบ่งเป็น 2 ประเภทหลัก:\n\n**1. Pharmacokinetic (PK):** สมุนไพรเปลี่ยนระดับยาในเลือด\n- **เหนี่ยวนำเอนไซม์ (induction):** เพิ่มการกำจัดยา → ระดับยาลด (เช่น St. John's Wort กับ CYP3A4)\n- **ยับยั้งเอนไซม์ (inhibition):** ลดการกำจัดยา → ระดับยาสูง เสี่ยงพิษ\n- **เปลี่ยน transporter:** เช่น **P-glycoprotein (P-gp)**\n\n**2. Pharmacodynamic (PD):** ฤทธิ์เสริม/ต้านกันที่เป้าหมายเดียวกัน\n- เช่น สมุนไพรกลุ่ม \"G\" เสริมฤทธิ์ยาต้านการแข็งตัวของเลือด → เลือดออก\n- สมุนไพรลดน้ำตาล + ยาเบาหวาน → น้ำตาลต่ำ"
         },
         {
           "card_type": "warning",
-          "title_th": "สมุนไพรกับเลือดออก",
-          "body_md": "**กลุ่ม \"G\" เพิ่มความเสี่ยงเลือดออก** เมื่อใช้ร่วม warfarin/ยาต้านเกล็ดเลือด\n- **Ginkgo** (แปะก๊วย)\n- **Garlic** (กระเทียม)\n- **Ginger** (ขิง)\n- **Ginseng** (โสม)\n\nควรหยุดก่อนผ่าตัดและเฝ้าระวังอาการเลือดออก"
+          "title_th": "St. John's Wort: enzyme inducer ที่สำคัญที่สุด",
+          "body_md": "**St. John's Wort (เซนต์จอห์นเวิร์ต, *Hypericum perforatum*)** ใช้บรรเทาซึมเศร้า แต่เป็น **ตัวเหนี่ยวนำที่แรง** ของ **CYP3A4, CYP2C9, CYP1A2 และ P-glycoprotein**\n\n**ผล: ลดระดับและประสิทธิภาพของยาหลายชนิด:**\n- **ยาคุมกำเนิด** → คุมไม่อยู่/เลือดออกกะปริบกะปรอย\n- **Warfarin** → INR ลด เสี่ยงลิ่มเลือด\n- **Cyclosporine/tacrolimus** → graft rejection\n- **ยาต้านไวรัส HIV (protease inhibitors), ยาต้านมะเร็ง (imatinib), digoxin**\n\n**กลไก PD เสริม:** มีฤทธิ์ serotonergic → ร่วมกับ SSRI/SNRI เสี่ยง **serotonin syndrome**\n\nกฎ: หลีกเลี่ยงร่วมกับยา **therapeutic index แคบ** เด็ดขาด"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "กลุ่ม \"5 G\": เพิ่มความเสี่ยงเลือดออก",
+          "body_md": "สมุนไพรกลุ่ม **\"G\"** เพิ่มความเสี่ยงเลือดออกเมื่อใช้ร่วม **warfarin, antiplatelet, NSAIDs** หรือก่อนผ่าตัด:\n\n- **Ginkgo (แปะก๊วย):** ยับยั้ง **platelet-activating factor (PAF)** → เลือดออก, เคยมีรายงานเลือดออกในสมอง\n- **Garlic (กระเทียม):** ยับยั้งการเกาะกลุ่มเกล็ดเลือด (allicin); ยังเหนี่ยวนำ CYP3A4 เล็กน้อย\n- **Ginger (ขิง):** ยับยั้ง thromboxane synthesis (ขนาดสูง)\n- **Ginseng (โสม):** ผลต่อเกล็ดเลือด + อาจ **ลด INR ของ warfarin** (ทำให้คุมยาก) + ลดน้ำตาล\n- **Ginkgo ยัง** ลด threshold การชัก → ระวังร่วมยากันชัก\n\n**คำแนะนำ:** หยุดสมุนไพรกลุ่มนี้ **อย่างน้อย 1–2 สัปดาห์ก่อนผ่าตัด**"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "อันตรกิริยาสำคัญอื่น ๆ ที่ต้องรู้",
+          "body_md": "เพิ่มเติมจากกลุ่มหลัก:\n\n- **Grapefruit juice (น้ำเกรปฟรุต):** **ยับยั้ง CYP3A4 ที่ลำไส้** → เพิ่มระดับ statin (simvastatin), calcium channel blocker, cyclosporine → เสี่ยงพิษ\n- **ชะเอม (Licorice/glycyrrhizin):** ทำให้ **โพแทสเซียมต่ำ** → เสริมพิษ **digoxin** และต้านฤทธิ์ยาลดความดัน\n- **Kava:** พิษตับ + เสริมฤทธิ์ยากดประสาท (benzodiazepine, แอลกอฮอล์)\n- **Echinacea:** อาจกระทบ immunosuppressant, ยับยั้ง CYP1A2\n- **มะระขี้นก, สมุนไพรลดน้ำตาล:** เสริมยาเบาหวาน → hypoglycemia\n- **Ephedra (มาหวง):** เสริม sympathomimetic → ความดันสูง หัวใจเต้นเร็ว"
         },
         {
           "card_type": "tip",
-          "title_th": "ซักประวัติการใช้สมุนไพร",
-          "body_md": "**ผู้ป่วยมักไม่บอกว่าใช้สมุนไพร** เพราะคิดว่าปลอดภัย\n\n- ถามตรง ๆ ว่าใช้ผลิตภัณฑ์เสริมอาหาร/สมุนไพรอะไรบ้าง\n- ระวังในผู้ป่วยโรคไต/ตับ และหญิงตั้งครรภ์\n- \"ธรรมชาติ\" ไม่ได้แปลว่าปลอดภัยเสมอไป"
+          "title_th": "การคัดกรองและให้คำแนะนำผู้ป่วย",
+          "body_md": "**บทบาทเภสัชกรในการป้องกันอันตรกิริยา:**\n\n1. **ซักประวัติเชิงรุก** – ถามตรง ๆ ว่าใช้สมุนไพร/อาหารเสริม/ชาชง อะไรบ้าง (ผู้ป่วยมักไม่บอกเพราะคิดว่าปลอดภัย)\n2. **เน้นกลุ่มเสี่ยงสูง:** ผู้ใช้ warfarin, digoxin, ยาคุมกำเนิด, ยากดภูมิ, ยาต้าน HIV/มะเร็ง, ก่อนผ่าตัด\n3. **ระวังกลุ่มผู้ป่วย:** โรคตับ ไต หญิงตั้งครรภ์/ให้นม ผู้สูงอายุ\n4. แนะนำให้ **หยุดสมุนไพรก่อนผ่าตัด** และแจ้งทีมผ่าตัด\n5. บันทึกในประวัติยาและรายงาน ADR เมื่อสงสัย"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำกลุ่มเลือดออก: \"5 G's of Bleeding\"",
+          "body_md": "สมุนไพร 5 ตัวที่เพิ่มเสี่ยงเลือดออก ขึ้นต้นด้วย **G** ทั้งหมด:\n\n**G**inkgo (แปะก๊วย)\n**G**arlic (กระเทียม)\n**G**inger (ขิง)\n**G**inseng (โสม)\n**G**rape seed / Feverfew (เสริม)\n\nและจำคู่ตรงข้าม: **St. John's Wort = inducer ลดยา** vs **Grapefruit = inhibitor เพิ่มยา**\n\nประโยคช่วยจำ: \"กิน 5 G เลือดไหล, เซนต์จอห์นลดยา, เกรปฟรุตเพิ่มยา\""
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Warfarin: สมุนไพรที่ต้องจับตาเป็นพิเศษ",
+          "body_md": "Warfarin มี **therapeutic index แคบ** จึงเป็นยาที่เกิดอันตรกิริยากับสมุนไพรบ่อยที่สุด:\n\n**ทำให้ INR สูงขึ้น (เสี่ยงเลือดออก):**\n- Ginkgo, garlic, ginger, dong quai (ตังกุย), danshen (โกฐจุฬาลัมพา), cranberry\n\n**ทำให้ INR ลดลง (เสี่ยงลิ่มเลือด):**\n- **St. John's Wort** (induce CYP), **Ginseng**, อาหารวิตามิน K สูง (ผักใบเขียว, ชาเขียวปริมาณมาก)\n\n**คำแนะนำ:** ผู้ป่วย warfarin ควร\n- หลีกเลี่ยงเริ่ม/หยุดสมุนไพรกะทันหัน\n- **ตรวจ INR ถี่ขึ้น** เมื่อมีการเปลี่ยนแปลงการใช้สมุนไพร\n- คงความสม่ำเสมอของอาหารวิตามิน K"
+        }
+      ]
+    },
+    {
+      "title_th": "การควบคุมคุณภาพและมาตรฐานเครื่องยา",
+      "subtitle_th": "Macro/microscopic, TLC/HPLC, assays, adulteration",
+      "icon": "🔬",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "ควบคุมคุณภาพ",
+        "quality control",
+        "standardization",
+        "TLC",
+        "HPLC",
+        "microscopic",
+        "adulteration",
+        "การปลอมปน",
+        "assay",
+        "moisture content"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "ทำไมต้องควบคุมคุณภาพและ standardization",
+          "body_md": "เครื่องยาสมุนไพรมีความแปรปรวนสูง จึงต้องมี **standardization** เพื่อให้ได้คุณภาพ ประสิทธิภาพ และความปลอดภัยสม่ำเสมอ\n\n**3 เกณฑ์หลักของการประเมินคุณภาพ (จำ \"3 ตัว I\"):**\n- **Identity (เอกลักษณ์):** ใช่พืชชนิดที่ถูกต้องหรือไม่\n- **Purity (ความบริสุทธิ์):** มีสิ่งปลอมปน/สิ่งแปลกปลอมหรือไม่\n- **Quality/Content (ปริมาณสารสำคัญ):** มีสารออกฤทธิ์ตามเกณฑ์หรือไม่ (assay)\n\nกำหนดมาตรฐานโดย **เภสัชตำรับ (Pharmacopoeia)** เช่น Thai Herbal Pharmacopoeia (THP), USP, BP, WHO monographs\n\nวิธีประเมิน: organoleptic, macroscopic, microscopic, physical, chemical และ biological"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Macroscopic และ Organoleptic evaluation",
+          "body_md": "**Organoleptic (ประสาทสัมผัส):** ประเมินด้วย **สี กลิ่น รส ลักษณะผิว** – เป็นวิธีแรกและเร็วที่สุด\n\n**Macroscopic (ลักษณะภายนอกด้วยตาเปล่า/แว่นขยาย):**\n- รูปร่าง ขนาด สี พื้นผิว ลักษณะการหัก (fracture)\n- ใช้ระบุชนิดและตรวจสอบความสมบูรณ์ของเครื่องยา\n\nวิธีเหล่านี้ใช้ **ระบุเอกลักษณ์เบื้องต้น (identity)** และตรวจจับการปลอมปนแบบหยาบ ๆ แต่ **ไม่ละเอียดพอ** สำหรับผงยา (powdered drug) ที่ดูภายนอกเหมือนกัน → ต้องใช้ microscopic หรือ chemical ต่อ"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Microscopic evaluation",
+          "body_md": "**Microscopic evaluation** ใช้ดูลักษณะเซลล์/เนื้อเยื่อเฉพาะ (diagnostic features) สำคัญมากสำหรับ **ผงยา (powdered crude drug)** ที่แยกด้วยตาเปล่าไม่ได้\n\n**ลักษณะที่ใช้ระบุ:**\n- **Calcium oxalate crystals** (รูปแบบ: prism, rosette, raphide, cluster) – ช่วยแยกชนิดพืช\n- **Stomata** (รูปแบบ + **stomatal index/number**)\n- **Trichomes** (ขน – covering vs glandular)\n- **Starch grains, stone cells (sclereids), fibers, vessels**\n\n**ค่าวัดเชิงปริมาณ (quantitative microscopy):**\n- **Stomatal index, palisade ratio, vein-islet number, vein termination number** – ใช้ระบุเอกลักษณ์ใบยาและตรวจสอบการปลอมปน"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Chromatography: TLC, HPLC, GC",
+          "body_md": "เทคนิคโครมาโทกราฟีใช้แยก/ระบุ/วัดปริมาณสารสำคัญ:\n\n**TLC (Thin Layer Chromatography):**\n- เร็ว ถูก ใช้ตรวจ **เอกลักษณ์ (fingerprint)** และคัดกรองการปลอมปน\n- เปรียบเทียบ **Rf value** กับสารมาตรฐาน → ได้ \"chemical fingerprint\"\n\n**HPLC (High Performance Liquid Chromatography):**\n- **มาตรฐานทองคำสำหรับ assay เชิงปริมาณ** ของสารสำคัญ (เช่น curcumin, andrographolide)\n- แม่นยำ ทำซ้ำได้ดี\n\n**GC (Gas Chromatography):**\n- เหมาะกับ **สารระเหยได้ (volatile oils)** และวิเคราะห์ตัวทำละลายตกค้าง\n\n**LC-MS/GC-MS:** ยืนยันโครงสร้างและตรวจสิ่งปนเปื้อน"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Physical/Chemical assays และค่ามาตรฐาน",
+          "body_md": "**ค่าทางกายภาพ-เคมีที่ใช้ควบคุมคุณภาพ (ออกข้อสอบ):**\n\n- **Moisture content / Loss on drying:** ความชื้นสูงเสี่ยงเชื้อรา/สลายตัว (วัดด้วย oven หรือ Karl Fischer)\n- **Ash value:**\n  - **Total ash** = สารอนินทรีย์ทั้งหมด\n  - **Acid-insoluble ash** = บอกการปนเปื้อน **ดิน/ทราย/ซิลิเกต** (สูง = ปลอมปนดิน)\n- **Extractive value:** ปริมาณสารที่สกัดได้ (water-soluble / alcohol-soluble) – บ่งบอกคุณภาพ/การสกัดของแท้\n- **Foreign organic matter:** สิ่งแปลกปลอม (ส่วนอื่นของพืช/พืชอื่น)\n- **Volatile oil content:** วัดด้วยการกลั่น\n- **Swelling index, bitterness value, foaming index** (สำหรับสารเฉพาะกลุ่ม)"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "การปลอมปน (Adulteration) และสิ่งปนเปื้อน",
+          "body_md": "**Adulteration** = การปลอมปน/ใช้สิ่งทดแทนเครื่องยาแท้ ทั้งโดยตั้งใจและไม่ตั้งใจ\n\n**รูปแบบการปลอมปน:**\n- ใช้พืชชนิดอื่น/ส่วนอื่นที่หน้าตาคล้าย (substitution)\n- เติม **ดิน ทราย หิน** เพิ่มน้ำหนัก → **acid-insoluble ash สูง**\n- ใช้เครื่องยาที่หมดฤทธิ์แล้ว (exhausted drug) หรือเก่าเก็บ\n- **ลักลอบผสมยาแผนปัจจุบัน** (เช่น steroid, NSAIDs, sildenafil ในยาสมุนไพร) – อันตรายมาก\n\n**สิ่งปนเปื้อน (contaminants):**\n- **โลหะหนัก** (Pb, As, Cd, Hg), **aflatoxin (เชื้อรา)**, ยาฆ่าแมลงตกค้าง, เชื้อจุลินทรีย์ (microbial limit test)\n\n**ตรวจจับ:** microscopic, TLC fingerprint, ash value, heavy metal test, AAS/ICP"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำขั้นตอน QC: \"3 I + Fingerprint\"",
+          "body_md": "ลำดับการควบคุมคุณภาพเครื่องยา:\n\n**3 I (เป้าหมาย):**\n- **I**dentity → organoleptic, macroscopic, **microscopic**, TLC\n- **I**mpurity/Purity → ash value (acid-insoluble = ดินทราย), foreign matter, heavy metals, moisture\n- (Content =) **I**ngredient assay → **HPLC** (gold standard เชิงปริมาณ)\n\n**Fingerprint = TLC** (เอกลักษณ์), **HPLC = ปริมาณ**, **GC = สารระเหย**\n\nคำช่วยจำค่า ash: **\"Acid-insoluble ash สูง = ปลอมปนดินทราย\"** และ **\"ความชื้นสูง = เชื้อรา/aflatoxin\"**"
         }
       ]
     }

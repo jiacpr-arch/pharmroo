@@ -2,60 +2,450 @@
   "subject": "PublicHealth",
   "unit": {
     "title_th": "เภสัชสาธารณสุข",
-    "description_th": "ระบาดวิทยาเบื้องต้น การสร้างเสริมภูมิคุ้มกัน และบทบาทเภสัชกรชุมชนในการดูแลสุขภาพประชาชน",
-    "icon": "🏥"
+    "description_th": "คอร์สครบวงจรสำหรับสอบใบประกอบวิชาชีพเภสัชกรรม ครอบคลุมระบาดวิทยา ชีวสถิติ ระดับการป้องกันโรคและการคัดกรอง การควบคุมโรคติดต่อและการสร้างเสริมภูมิคุ้มกัน โรคไม่ติดต่อและการส่งเสริมสุขภาพ การเฝ้าระวังความปลอดภัยด้านยาในระดับประชากร การช่วยเลิกบุหรี่ และการสอบสวนการระบาดและอนามัยสิ่งแวดล้อม",
+    "icon": "🌍"
   },
   "lessons": [
     {
-      "title_th": "ระบาดวิทยาเบื้องต้น",
-      "subtitle_th": "Incidence, Prevalence และตัวชี้วัด",
+      "title_th": "ระบาดวิทยาเบื้องต้นและรูปแบบการศึกษา",
+      "subtitle_th": "Incidence vs prevalence, morbidity/mortality, study designs",
       "icon": "📊",
-      "est_minutes": 6,
-      "xp_reward": 10,
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "ระบาดวิทยา",
+        "epidemiology",
+        "incidence",
+        "prevalence",
+        "cohort",
+        "case-control",
+        "RCT",
+        "cross-sectional",
+        "อุบัติการณ์",
+        "ความชุก"
+      ],
       "cards": [
         {
           "card_type": "concept",
           "title_th": "Incidence vs Prevalence",
-          "body_md": "**Incidence (อุบัติการณ์)** = ผู้ป่วย**รายใหม่**ในช่วงเวลาหนึ่ง / ประชากรเสี่ยง → วัดความเร็วเกิดโรค\n\n**Prevalence (ความชุก)** = ผู้ป่วย**ทั้งหมด** (เก่า+ใหม่) ณ จุดเวลา / ประชากรทั้งหมด → วัดภาระโรค\n\nความสัมพันธ์: Prevalence ≈ Incidence × ระยะเวลาของโรค"
+          "body_md": "**Incidence (อุบัติการณ์)** = ผู้ป่วย**รายใหม่**ในช่วงเวลาหนึ่ง / ประชากรเสี่ยง (population at risk) → วัด **ความเร็วในการเกิดโรค** (rate of new disease)\n\n**Prevalence (ความชุก)** = ผู้ป่วย**ทั้งหมด** (รายเก่า + รายใหม่) ณ จุดเวลา / ประชากรทั้งหมด → วัด **ภาระโรค** (disease burden)\n\nความสัมพันธ์โดยประมาณเมื่อโรคคงที่:\n\n**Prevalence ≈ Incidence × ระยะเวลาของโรค (duration)**\n\n- โรคเรื้อรัง (เบาหวาน, HIV) → duration ยาว → prevalence สูง\n- โรคที่หายเร็วหรือตายเร็ว → prevalence ต่ำแม้ incidence สูง"
         },
         {
-          "card_type": "example",
-          "title_th": "ตัวอย่างคำนวณ",
-          "body_md": "ชุมชน 1,000 คน ปีหนึ่งมีผู้ป่วยเบาหวานรายใหม่ 20 คน และมีผู้ป่วยเดิมอยู่แล้ว 80 คน\n\n- **Incidence** = 20 / 1000 = 2% ต่อปี\n- **Prevalence** = (80 + 20) / 1000 = 10%\n\nโรคเรื้อรังมักมี prevalence สูงเพราะผู้ป่วยอยู่กับโรคนาน"
+          "card_type": "concept",
+          "title_th": "ชนิดของ Incidence: Cumulative Incidence vs Incidence Rate",
+          "body_md": "**Cumulative Incidence (Incidence Risk / Attack rate):**\n= จำนวนผู้ป่วยรายใหม่ / จำนวนประชากรเสี่ยงตอนเริ่มต้น\n- เป็นความน่าจะเป็น (0–1) ไม่มีหน่วยเวลาในตัวหาร ต้องระบุช่วงเวลา\n\n**Incidence Rate (Incidence density):**\n= จำนวนผู้ป่วยรายใหม่ / **person-time** ที่เสี่ยง (person-years)\n- ใช้เมื่อผู้ร่วมการศึกษาติดตามไม่เท่ากัน (เข้า-ออกต่างเวลา)\n- หน่วย: ต่อ person-year เช่น 5 รายต่อ 1,000 person-years\n\n**Attack rate** = cumulative incidence ในการระบาดเฉียบพลัน (มักคิดเป็น %)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ตัวชี้วัด Morbidity และ Mortality",
+          "body_md": "**Mortality rate (อัตราตาย):** จำนวนตายทั้งหมด / ประชากร × 1,000 (ต่อปี)\n\n**Case-fatality rate (CFR):** จำนวนตายจากโรคนั้น / จำนวนผู้ป่วยโรคนั้น × 100 → วัด **ความรุนแรง** ของโรค\n\n**Infant mortality rate (IMR):** ตายอายุ <1 ปี / ทารกเกิดมีชีพ × 1,000 → ตัวชี้วัดสุขภาพของประเทศ\n\n**Maternal mortality ratio (MMR):** มารดาตาย / การเกิดมีชีพ × 100,000\n\n**Crude rate** = ทั้งประชากร; **Specific rate** = เฉพาะกลุ่ม (อายุ/เพศ); **Adjusted/standardized rate** = ปรับเพื่อเปรียบเทียบประชากรต่างโครงสร้าง"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "รูปแบบการศึกษาเชิงสังเกต (Observational)",
+          "body_md": "**Cross-sectional (ภาคตัดขวาง):** วัด exposure และ outcome พร้อมกัน ณ จุดเวลาเดียว → ใช้หา **prevalence**, สร้างสมมุติฐาน บอก temporal ไม่ได้\n\n**Case-control (ย้อนหลัง):** เริ่มจาก **outcome** (มีโรค vs ไม่มีโรค) ย้อนดู exposure → ได้ **Odds Ratio (OR)**, เหมาะกับโรคหายาก / latency ยาว, ราคาถูก เร็ว แต่เสี่ยง **recall bias**\n\n**Cohort (ตามไปข้างหน้า):** เริ่มจาก **exposure** (สัมผัส vs ไม่สัมผัส) ตามดู outcome → ได้ **incidence และ Relative Risk (RR)**, บอก temporal ได้ดี เหมาะกับ exposure หายาก แต่ใช้เวลานานและสูญหายระหว่างทาง (loss to follow-up)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Randomized Controlled Trial (RCT)",
+          "body_md": "**RCT** = การศึกษาเชิงทดลอง สุ่ม (randomization) ผู้เข้าร่วมเข้ากลุ่มทดลองและกลุ่มควบคุม\n\n**จุดแข็ง:**\n- **Randomization** ช่วยกระจาย confounder ทั้งที่รู้และไม่รู้ให้สมดุล\n- **Blinding** (single/double-blind) ลด bias\n- เป็น **gold standard** สำหรับพิสูจน์ causality และประสิทธิภาพยา\n\n**ลำดับความน่าเชื่อถือของหลักฐาน (evidence hierarchy):**\nSystematic review/meta-analysis > RCT > Cohort > Case-control > Cross-sectional > Case series/report > ความเห็นผู้เชี่ยวชาญ\n\nข้อจำกัด RCT: ค่าใช้จ่ายสูง, ประเด็นจริยธรรม, generalizability อาจจำกัด"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำทิศทางของ Study Design",
+          "body_md": "**Case-Control = Outcome ก่อน** → \"C\" มาก่อน คิดถึงผู้ป่วยที่มีโรคแล้วย้อนหา exposure → ได้ **OR**\n\n**Cohort = Cause/exposure ก่อน** → ตามไปหา outcome ข้างหน้า → ได้ **RR + incidence**\n\nจำง่าย:\n- **Case-Control = backward = OR = rare disease**\n- **Cohort = forward = RR = rare exposure**\n- **Cross-sectional = snapshot = prevalence**\n- **RCT = randomize = causality**"
         },
         {
           "card_type": "tip",
-          "title_th": "แยกให้ออก",
-          "body_md": "- **Incidence** = \"new\" → คิดเรื่องการป้องกัน\n- **Prevalence** = \"snapshot\" → คิดเรื่องทรัพยากรดูแล\n- โรคที่รักษาหายเร็วหรือตายเร็ว → prevalence ต่ำแม้ incidence สูง"
+          "title_th": "ข้อสอบชอบถามอะไร",
+          "body_md": "- เห็นคำว่า \"รายใหม่/new cases\" → **Incidence**; \"ทั้งหมด ณ ปัจจุบัน\" → **Prevalence**\n- โรค**หายาก** → เลือก **case-control** (ประหยัด ได้ OR)\n- exposure **หายาก** → เลือก **cohort**\n- ต้องการพิสูจน์เหตุ-ผล → **RCT**\n- ระวัง: case-control คำนวณ incidence โดยตรง**ไม่ได้** (ไม่รู้ population at risk ทั้งหมด)\n- OR ≈ RR เมื่อโรคหายาก (rare disease assumption)"
         }
       ]
     },
     {
-      "title_th": "วัคซีนและบทบาทเภสัชกรชุมชน",
-      "subtitle_th": "การสร้างเสริมภูมิคุ้มกันและการดูแลปฐมภูมิ",
+      "title_th": "ระดับการป้องกันโรคและหลักการคัดกรอง",
+      "subtitle_th": "Primary/secondary/tertiary, sensitivity, specificity, PPV/NPV",
+      "icon": "🛡️",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "การป้องกัน",
+        "prevention",
+        "screening",
+        "การคัดกรอง",
+        "sensitivity",
+        "specificity",
+        "PPV",
+        "NPV",
+        "ความไว",
+        "ความจำเพาะ"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "ระดับการป้องกัน 3 ระดับ",
+          "body_md": "**Primary prevention (ปฐมภูมิ):** ป้องกัน**ก่อนเกิดโรค** ในคนที่ยังไม่ป่วย\n- วัคซีน, สุขศึกษา, ออกกำลังกาย, เลิกบุหรี่, ควบคุมสิ่งแวดล้อม\n\n**Secondary prevention (ทุติยภูมิ):** ตรวจพบโรค**ระยะแรกที่ยังไม่มีอาการ** เพื่อรักษาเร็ว\n- **Screening** เช่น Pap smear, mammogram, วัดความดัน, ตรวจน้ำตาล\n\n**Tertiary prevention (ตติยภูมิ):** ลด**ภาวะแทรกซ้อนและความพิการ**ในผู้ป่วยที่เป็นโรคแล้ว\n- ฟื้นฟูสมรรถภาพ (rehabilitation), คุมเบาหวานเพื่อกันไตวาย, cardiac rehab\n\n(บางตำราเพิ่ม **Primordial prevention** = ป้องกันปัจจัยเสี่ยงไม่ให้เกิดในชุมชน เช่น นโยบายภาษีน้ำตาล)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "หลักการ Wilson & Jungner สำหรับการคัดกรอง",
+          "body_md": "เกณฑ์ที่ดีของโรค/โปรแกรมที่ควรนำมาคัดกรอง:\n\n**เกี่ยวกับโรค:**\n- เป็นปัญหาสาธารณสุขสำคัญ (พบบ่อย/รุนแรง)\n- มีระยะแฝง (latent/asymptomatic) ที่ตรวจพบได้\n- ทราบ natural history ของโรค\n\n**เกี่ยวกับการทดสอบ:**\n- test เหมาะสม ความไว/จำเพาะดี, ปลอดภัย, ยอมรับได้, ราคาเหมาะสม\n\n**เกี่ยวกับการรักษา:**\n- มีการรักษาที่ได้ผล และการรักษาในระยะแรกได้ผลดีกว่าระยะท้าย\n- มีระบบส่งต่อและดูแลต่อเนื่อง คุ้มค่า"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Sensitivity และ Specificity",
+          "body_md": "ตาราง 2×2 (โรคจริง ตามแถว):\n\n| | มีโรค | ไม่มีโรค |\n|---|---|---|\n| Test + | TP | FP |\n| Test − | FN | TN |\n\n**Sensitivity (ความไว)** = TP / (TP + FN) → ความสามารถตรวจ**จับผู้ป่วยจริง**ได้\n- Sensitivity สูง → ผล**ลบ**น่าเชื่อถือ (ตัดโรคออกได้) → จำ **SnNout**\n\n**Specificity (ความจำเพาะ)** = TN / (TN + FP) → ความสามารถบอก**คนปกติว่าปกติ**\n- Specificity สูง → ผล**บวก**น่าเชื่อถือ (ยืนยันโรคได้) → จำ **SpPin**\n\nSensitivity และ specificity เป็นคุณสมบัติของ test เอง **ไม่ขึ้นกับความชุก**"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "PPV และ NPV — ขึ้นกับความชุก",
+          "body_md": "**Positive Predictive Value (PPV)** = TP / (TP + FP) → ผู้ที่ test บวก เป็นโรคจริงกี่ %\n\n**Negative Predictive Value (NPV)** = TN / (TN + FN) → ผู้ที่ test ลบ ไม่เป็นโรคจริงกี่ %\n\n**สำคัญ: PPV/NPV ขึ้นกับ prevalence (ความชุก)**\n- ความชุก**สูง** → **PPV สูง**, NPV ต่ำลง\n- ความชุก**ต่ำ** → **PPV ต่ำ** (แม้ test ดีก็มี false positive มาก), NPV สูง\n\nนี่คือเหตุผลที่การคัดกรองโรคหายากในประชากรทั่วไปได้ผลบวกลวงเยอะ → ต้องมี confirmatory test"
+        },
+        {
+          "card_type": "example",
+          "title_th": "ตัวอย่างคำนวณ Sensitivity/Specificity/PPV",
+          "body_md": "คัดกรอง 1,000 คน ความชุกโรค 10% (มีโรค 100, ไม่มีโรค 900):\n\n| | มีโรค (100) | ไม่มีโรค (900) |\n|---|---|---|\n| Test + | 90 (TP) | 90 (FP) |\n| Test − | 10 (FN) | 810 (TN) |\n\n- **Sensitivity** = 90/(90+10) = **90%**\n- **Specificity** = 810/(810+90) = **90%**\n- **PPV** = 90/(90+90) = **50%** ← test บวก เป็นโรคจริงแค่ครึ่งเดียว!\n- **NPV** = 810/(810+10) = **98.8%**\n\nสังเกต: แม้ sensitivity/specificity = 90% แต่ PPV ต่ำเพราะความชุกไม่สูงมาก"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ SnNout / SpPin",
+          "body_md": "**SnNout** = **Sn**sitivity สูง, ผล **N**egative ใช้ **rule out** (ตัดโรคออก)\n- test ที่ sensitivity สูงเหมาะใช้เป็น screening (ไม่อยากพลาดผู้ป่วย)\n\n**SpPin** = **Sp**ecificity สูง, ผล **P**ositive ใช้ **rule in** (ยืนยันโรค)\n- test ที่ specificity สูงเหมาะใช้เป็น confirmatory test\n\nลำดับใช้งาน: screen ด้วย test ไว (sensitive) ก่อน → ยืนยันด้วย test จำเพาะ (specific)"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "อคติในการคัดกรองที่ต้องระวัง",
+          "body_md": "- **Lead-time bias:** ตรวจพบเร็วขึ้นทำให้ \"ดูเหมือน\" รอดชีวิตนานขึ้น ทั้งที่วันตายเท่าเดิม\n- **Length-time bias:** การคัดกรองมักจับโรคที่ดำเนินช้า (ไม่รุนแรง) ได้มากกว่า → ดูเหมือนผลดีเกินจริง\n- **Selection/volunteer bias:** คนมาคัดกรองมักดูแลสุขภาพดีอยู่แล้ว\n\nการเลือก **cut-off** ของ test: ลด cut-off → sensitivity ขึ้น specificity ลง (และกลับกัน) — เป็น trade-off ที่ดูได้จาก **ROC curve**"
+        }
+      ]
+    },
+    {
+      "title_th": "การควบคุมโรคติดต่อและการสร้างเสริมภูมิคุ้มกัน",
+      "subtitle_th": "Immunization, herd immunity, notifiable diseases",
       "icon": "💉",
-      "est_minutes": 6,
-      "xp_reward": 10,
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "วัคซีน",
+        "vaccine",
+        "immunization",
+        "herd immunity",
+        "ภูมิคุ้มกันหมู่",
+        "โรคติดต่อ",
+        "notifiable disease",
+        "cold chain",
+        "การสร้างเสริมภูมิคุ้มกัน",
+        "EPI"
+      ],
       "cards": [
         {
           "card_type": "concept",
           "title_th": "ชนิดของภูมิคุ้มกัน",
-          "body_md": "**Active immunity (ก่อเอง):** ได้จากวัคซีนหรือติดเชื้อ ภูมิอยู่นาน\n- เชื้อเป็นอ่อนฤทธิ์ (live attenuated) เช่น MMR, BCG\n- เชื้อตาย/toxoid/subunit เช่น DTP, HepB\n\n**Passive immunity (รับมา):** ได้แอนติบอดีสำเร็จ เช่น immunoglobulin, นมแม่ ออกฤทธิ์เร็วแต่อยู่สั้น"
-        },
-        {
-          "card_type": "warning",
-          "title_th": "Cold chain และข้อห้าม",
-          "body_md": "- เก็บวัคซีนทั่วไปที่ **2–8°C** ห้ามแช่แข็ง (ยกเว้นบางชนิดที่ระบุ)\n- วัคซีนเชื้อเป็นห้ามในหญิงตั้งครรภ์และผู้ภูมิคุ้มกันบกพร่อง\n- เฝ้าระวัง anaphylaxis อย่างน้อย 30 นาทีหลังฉีด เตรียม adrenaline"
+          "body_md": "**Active immunity (ก่อขึ้นเอง):** ร่างกายสร้างแอนติบอดีเอง\n- **ตามธรรมชาติ:** ติดเชื้อแล้วหาย\n- **เทียม:** ฉีดวัคซีน → ออกฤทธิ์ช้า (ต้องใช้เวลาสร้าง) แต่ **อยู่นาน** มี memory\n\n**Passive immunity (รับมา):** ได้แอนติบอดีสำเร็จรูป\n- **ตามธรรมชาติ:** ผ่านรก, น้ำนมแม่\n- **เทียม:** immunoglobulin (เช่น HBIG, rabies IG, tetanus IG) → ออกฤทธิ์ **เร็ว** แต่ **อยู่สั้น** ไม่มี memory\n\nใช้ passive เมื่อต้องการป้องกันทันที (สัมผัสเชื้อแล้ว) เช่น โดนสัตว์กัด, สัมผัส HepB"
         },
         {
           "card_type": "concept",
-          "title_th": "บทบาทเภสัชกรชุมชน",
-          "body_md": "- คัดกรองและส่งต่อ (BP, น้ำตาล, BMI)\n- ให้คำปรึกษาการใช้ยาและเลิกบุหรี่\n- เฝ้าระวังอาการไม่พึงประสงค์ (ADR) และรายงาน\n- ส่งเสริมการใช้ยาอย่างสมเหตุผล (RDU)\n- คุมกำเนิดและสุขศึกษาในชุมชน"
+          "title_th": "ชนิดของวัคซีนและข้อควรระวัง",
+          "body_md": "**Live attenuated (เชื้อเป็นอ่อนฤทธิ์):** MMR, BCG, OPV, varicella, rotavirus, ไข้เหลือง\n- ภูมิแรง คงทน มักให้ครั้งเดียว/น้อยครั้ง\n- **ห้ามในหญิงตั้งครรภ์และผู้ภูมิคุ้มกันบกพร่อง** (immunocompromised)\n\n**Inactivated/เชื้อตาย:** IPV, Hepatitis A, rabies, ไข้หวัดใหญ่ (ชนิดฉีด)\n\n**Toxoid:** คอตีบ (diphtheria), บาดทะยัก (tetanus)\n\n**Subunit/conjugate:** HepB, HPV, Hib, pneumococcal (PCV), acellular pertussis\n\n**mRNA / viral vector:** วัคซีน COVID-19 หลายชนิด"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Cold chain และความปลอดภัยของวัคซีน",
+          "body_md": "**Cold chain (ระบบลูกโซ่ความเย็น):**\n- วัคซีนทั่วไปเก็บที่ **+2 ถึง +8°C** ในตู้เย็น\n- **ห้ามแช่แข็ง** วัคซีน toxoid และวัคซีนที่มี adjuvant อะลูมิเนียม (เช่น DTP, HepB, คอตีบ-บาดทะยัก) เพราะ adjuvant เสียสภาพ\n- บางชนิด (OPV, mRNA บางตัว) ต้องแช่แข็ง/อุณหภูมิต่ำพิเศษตามที่ระบุ\n- ใช้ **VVM (Vaccine Vial Monitor)** ตรวจการสัมผัสความร้อน\n\n**ความปลอดภัย:** เฝ้าระวัง **anaphylaxis อย่างน้อย 30 นาที** หลังฉีด, เตรียม **adrenaline (1:1000)** เสมอ, รายงาน **AEFI** (Adverse Events Following Immunization)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Herd Immunity (ภูมิคุ้มกันหมู่)",
+          "body_md": "**Herd immunity** = เมื่อคนในชุมชนมีภูมิเพียงพอ จะตัดวงจรการแพร่เชื้อ ปกป้องแม้คนที่ไม่ได้รับวัคซีน (เด็กเล็ก, ผู้ภูมิคุ้มกันบกพร่อง)\n\n**Herd Immunity Threshold (HIT)** = **1 − 1/R₀**\n- R₀ (basic reproduction number) = จำนวนคนที่ผู้ป่วย 1 คนแพร่เชื้อต่อโดยเฉลี่ยในประชากรที่ยังไม่มีภูมิ\n- โรคที่ติดง่าย (R₀ สูง) ต้องการความครอบคลุมวัคซีนสูง\n\n**ตัวอย่าง:** หัด (measles) R₀ ≈ 12–18 → HIT ≈ 92–95% (ต้องฉีดครอบคลุมสูงมาก)\n\nเมื่อ R (effective) < 1 → การระบาดลดลงและสงบ"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "โรคติดต่อที่ต้องเฝ้าระวัง/แจ้งความ (Notifiable diseases)",
+          "body_md": "ตาม **พ.ร.บ.โรคติดต่อ พ.ศ. 2558** แบ่งเป็น:\n\n**โรคติดต่ออันตราย (dangerous):** ต้องแจ้งทันที เช่น อหิวาตกโรค, กาฬโรค, ไข้ทรพิษ, SARS, MERS, ไข้เลือดออกอีโบลา, ไข้หวัดนกชนิดรุนแรง, COVID-19\n\n**โรคติดต่อที่ต้องเฝ้าระวัง (under surveillance):** เช่น ไข้เลือดออก, วัณโรค, ไข้หวัดใหญ่, หัด, คอตีบ, ไอกรน, ไวรัสตับอักเสบ, โรคเรื้อน, มือเท้าปาก\n\nผู้พบเห็น (รวมเภสัชกร/สถานพยาบาล) มี**หน้าที่แจ้งต่อเจ้าพนักงานควบคุมโรคติดต่อ** ภายในเวลาที่กำหนด เพื่อสอบสวนและควบคุมการระบาด"
         },
         {
           "card_type": "mnemonic",
-          "title_th": "จำหลักป้องกันโรค",
-          "body_md": "**3 ระดับการป้องกัน**\n1. **Primary** = ก่อนเป็น (วัคซีน สุขศึกษา)\n2. **Secondary** = คัดกรองระยะแรก (screening, early detection)\n3. **Tertiary** = ลดความพิการ/ฟื้นฟู\n\nจำ: ป้องกัน → คัดกรอง → ฟื้นฟู"
+          "title_th": "จำหลักการตัดวงจรการระบาด",
+          "body_md": "วงจรการติดเชื้อ (chain of infection) ตัดได้หลายจุด — จำ **\"แหล่ง–ทาง–คน\"**:\n\n1. **แหล่งโรค (reservoir/source):** กำจัด/รักษาผู้ป่วย, แยกกัก (isolation), กักกันผู้สัมผัส (quarantine)\n2. **ทางแพร่ (transmission):** ล้างมือ, สวมหน้ากาก, ฆ่าเชื้อ, ควบคุมพาหะ (ยุง/หนู), น้ำสะอาด\n3. **คน (susceptible host):** สร้างภูมิด้วย **วัคซีน**, ยาป้องกัน (chemoprophylaxis)\n\n**Quarantine** = กักผู้ที่ยังไม่ป่วยแต่สัมผัส; **Isolation** = แยกผู้ที่ป่วยแล้ว"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "EPI ของไทยและจุดที่ออกสอบ",
+          "body_md": "**EPI (Expanded Program on Immunization)** วัคซีนพื้นฐานในเด็กไทย เช่น BCG (แรกเกิด), HepB, DTP-HB-Hib, OPV/IPV, MMR, JE (ไข้สมองอักเสบเจอี), HPV (หญิงป.5)\n\nจุดที่ข้อสอบชอบถาม:\n- **BCG + HepB** ให้ตั้งแต่**แรกเกิด**\n- วัคซีนเชื้อเป็น **ห้าม**ในตั้งครรภ์/ภูมิคุ้มกันต่ำ\n- ให้วัคซีนเชื้อเป็นหลายชนิดพร้อมกันได้ หรือเว้นห่าง **≥28 วัน**\n- หญิงตั้งครรภ์ให้ **Tdap** ได้ (ป้องกันไอกรนในทารก) และวัคซีนไข้หวัดใหญ่ชนิดเชื้อตายได้"
+        }
+      ]
+    },
+    {
+      "title_th": "โรคไม่ติดต่อและการส่งเสริมสุขภาพ",
+      "subtitle_th": "NCDs, risk factors, Ottawa Charter",
+      "icon": "❤️",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "NCD",
+        "โรคไม่ติดต่อ",
+        "risk factor",
+        "ปัจจัยเสี่ยง",
+        "health promotion",
+        "การส่งเสริมสุขภาพ",
+        "Ottawa Charter",
+        "เบาหวาน",
+        "ความดันโลหิตสูง",
+        "obesity"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "โรคไม่ติดต่อ (NCDs) คืออะไร",
+          "body_md": "**NCDs (Non-Communicable Diseases)** = โรคเรื้อรังที่ไม่ติดต่อจากคนสู่คน ดำเนินโรคช้า เป็นสาเหตุการตายอันดับต้นของโลกและไทย\n\n**4 กลุ่มโรคหลัก (ตาม WHO):**\n1. **โรคหัวใจและหลอดเลือด** (cardiovascular: หัวใจขาดเลือด, stroke)\n2. **มะเร็ง** (cancer)\n3. **โรคทางเดินหายใจเรื้อรัง** (COPD, หอบหืด)\n4. **เบาหวาน** (diabetes)\n\nกลุ่ม NCDs ในไทยมักรวม **ความดันโลหิตสูง** และโรคไตเรื้อรังด้วย"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ปัจจัยเสี่ยงของ NCDs",
+          "body_md": "**Modifiable risk factors (ปรับเปลี่ยนได้) — เป้าหมายหลักของการป้องกัน:**\n- **พฤติกรรม:** สูบบุหรี่, ดื่มแอลกอฮอล์, กินอาหารไม่เหมาะสม (หวาน-มัน-เค็ม), ขาดการออกกำลังกาย\n- **Metabolic:** ความดันสูง, น้ำตาลสูง, ไขมันสูง, อ้วน (obesity)\n\n**Non-modifiable (ปรับไม่ได้):** อายุ, เพศ, พันธุกรรม, เชื้อชาติ\n\nWHO เน้น **\"best buys\"** เช่น เก็บภาษีบุหรี่/แอลกอฮอล์, ลดเกลือ, ห้ามไขมันทรานส์, รณรงค์ออกกำลังกาย — คุ้มค่าและได้ผลในระดับประชากร"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Ottawa Charter — 5 ยุทธศาสตร์ส่งเสริมสุขภาพ",
+          "body_md": "**Ottawa Charter (1986)** เป็นกรอบการส่งเสริมสุขภาพของ WHO นิยามการส่งเสริมสุขภาพว่า \"กระบวนการให้ประชาชนเพิ่มความสามารถในการควบคุมและพัฒนาสุขภาพตนเอง\"\n\n**5 ยุทธศาสตร์หลัก:**\n1. **Build healthy public policy** — สร้างนโยบายสาธารณะเพื่อสุขภาพ\n2. **Create supportive environments** — สร้างสิ่งแวดล้อมที่เอื้อต่อสุขภาพ\n3. **Strengthen community action** — เสริมสร้างการมีส่วนร่วมของชุมชน\n4. **Develop personal skills** — พัฒนาทักษะส่วนบุคคล (สุขศึกษา)\n5. **Reorient health services** — ปรับระบบบริการสุขภาพให้เน้นป้องกัน/ส่งเสริม"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ Ottawa Charter 5 ข้อ",
+          "body_md": "จำคำว่า **\"นโยบาย–สิ่งแวดล้อม–ชุมชน–ทักษะ–บริการ\"** หรืออักษรย่ออังกฤษ:\n\n- **B**uild policy\n- **C**reate environments\n- **S**trengthen community\n- **D**evelop skills\n- **R**eorient services\n\nจำ: ระดับใหญ่→เล็ก = **นโยบาย → สิ่งแวดล้อม → ชุมชน → บุคคล → ระบบบริการ**\n\nสังเกตว่า 3 ข้อแรกเป็นระดับสังคม/โครงสร้าง ไม่ใช่แค่ \"สอนให้คนเปลี่ยนพฤติกรรม\" — นี่คือจุดเด่นของ Ottawa Charter"
+        },
+        {
+          "card_type": "example",
+          "title_th": "ตัวอย่างมาตรการในไทย",
+          "body_md": "- **สสส. (สำนักงานกองทุนสนับสนุนการสร้างเสริมสุขภาพ)** ใช้ภาษีบุหรี่/สุราสนับสนุนการรณรงค์ — ตรงกับ \"build healthy public policy\"\n- **ภาษีความหวาน (sugar tax)** เพื่อลดเครื่องดื่มน้ำตาลสูง\n- **เขตปลอดบุหรี่** ตาม พ.ร.บ.ควบคุมผลิตภัณฑ์ยาสูบ — \"supportive environment\"\n- **คลินิก NCD / DPAC** ในโรงพยาบาลส่งเสริมสุขภาพตำบล — \"reorient services\"\n- **อสม. (อาสาสมัครสาธารณสุขประจำหมู่บ้าน)** — \"strengthen community action\""
+        },
+        {
+          "card_type": "tip",
+          "title_th": "บทบาทเภสัชกรใน NCDs",
+          "body_md": "- **คัดกรอง** ความดัน, น้ำตาล, BMI, รอบเอว ในร้านยา/ชุมชน และส่งต่อ\n- **Medication adherence** — ติดตามการกินยาต่อเนื่องในผู้ป่วยเรื้อรัง\n- **ให้คำปรึกษาปรับพฤติกรรม** (อาหาร ออกกำลังกาย เลิกบุหรี่/สุรา)\n- **ส่งเสริมการใช้ยาอย่างสมเหตุผล (RDU)**\n- เฝ้าระวัง **drug-related problems** และ ADR\n\nข้อสอบเน้น: NCDs ป้องกันได้ด้วย **primary prevention** ที่ปัจจัยเสี่ยงพฤติกรรม"
+        }
+      ]
+    },
+    {
+      "title_th": "ชีวสถิติสำหรับเภสัชกร",
+      "subtitle_th": "Central tendency, dispersion, p-value, CI, RR vs OR, NNT",
+      "icon": "🧮",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "biostatistics",
+        "ชีวสถิติ",
+        "p-value",
+        "confidence interval",
+        "relative risk",
+        "odds ratio",
+        "NNT",
+        "mean",
+        "median",
+        "standard deviation"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "การวัดแนวโน้มเข้าสู่ส่วนกลางและการกระจาย",
+          "body_md": "**Central tendency (ค่ากลาง):**\n- **Mean (ค่าเฉลี่ย):** ไวต่อ outlier; ใช้กับข้อมูลกระจายปกติ (normal)\n- **Median (มัธยฐาน):** ค่ากลางเมื่อเรียงลำดับ; ทนต่อ outlier; ใช้กับข้อมูล **skewed**\n- **Mode (ฐานนิยม):** ค่าที่พบบ่อยที่สุด; ใช้กับข้อมูล nominal\n\n**Dispersion (การกระจาย):**\n- **Range:** ค่าสูงสุด − ต่ำสุด\n- **Variance / Standard deviation (SD):** การกระจายรอบ mean\n- **IQR (Interquartile range):** Q3 − Q1 ใช้คู่กับ median\n\nข้อมูลเบ้ขวา (right-skewed, เช่น รายได้/ระยะนอน รพ.) → **mean > median** → ควรรายงาน median"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "p-value และนัยสำคัญทางสถิติ",
+          "body_md": "**p-value** = ความน่าจะเป็นที่จะได้ผลแบบที่สังเกต (หรือสุดโต่งกว่า) **ถ้าสมมุติฐานว่าง (H₀) เป็นจริง**\n\n- โดยทั่วไปกำหนด **α = 0.05**\n- **p < 0.05** → ปฏิเสธ H₀ → \"มีนัยสำคัญทางสถิติ\"\n- p ไม่ได้บอกว่าความแตกต่าง **มีความสำคัญทางคลินิก** หรือบอกขนาดของผล\n\n**ข้อผิดพลาด:**\n- **Type I error (α):** ปฏิเสธ H₀ ที่จริง (false positive)\n- **Type II error (β):** ยอมรับ H₀ ที่ผิด (false negative)\n- **Power = 1 − β** = ความสามารถตรวจพบความแตกต่างที่มีจริง (มักต้องการ ≥0.80)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Confidence Interval (ช่วงความเชื่อมั่น)",
+          "body_md": "**95% CI** = ช่วงค่าที่เราเชื่อมั่น 95% ว่าครอบคลุมค่าจริงของประชากร\n\n**การตีความนัยสำคัญจาก CI:**\n- สำหรับ **ผลต่าง (mean difference):** ถ้า CI **คร่อม 0** → ไม่มีนัยสำคัญ\n- สำหรับ **อัตราส่วน (RR, OR, HR):** ถ้า CI **คร่อม 1** → ไม่มีนัยสำคัญ\n\n- CI **แคบ** = ความแม่นยำสูง (มักมาจาก n มาก)\n- CI ให้ข้อมูลมากกว่า p-value เพราะบอก **ทั้งทิศทาง ขนาดของผล และความแม่นยำ**\n\nสอดคล้องกับ p-value: ถ้า 95% CI ของอัตราส่วนไม่คร่อม 1 → p < 0.05"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Relative Risk (RR) vs Odds Ratio (OR)",
+          "body_md": "**Relative Risk (RR)** = ความเสี่ยงในกลุ่มสัมผัส / ความเสี่ยงในกลุ่มไม่สัมผัส\n- ใช้ใน **cohort และ RCT** (รู้ incidence)\n- RR = 1 ไม่มีผล; >1 เพิ่มความเสี่ยง; <1 ป้องกัน\n\n**Odds Ratio (OR)** = odds ของการสัมผัสในกลุ่มป่วย / ในกลุ่มไม่ป่วย\n- ใช้ใน **case-control** (คำนวณ RR โดยตรงไม่ได้)\n- **OR ≈ RR เมื่อโรคหายาก** (rare disease assumption)\n\n**ตัวชี้วัดเสริม:**\n- **ARR (Absolute Risk Reduction)** = ความเสี่ยงกลุ่มควบคุม − กลุ่มทดลอง\n- **RRR (Relative Risk Reduction)** = ARR / ความเสี่ยงกลุ่มควบคุม"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "NNT และ NNH",
+          "body_md": "**NNT (Number Needed to Treat)** = จำนวนผู้ป่วยที่ต้องรักษาเพื่อป้องกันเหตุการณ์ไม่พึงประสงค์ **1 ราย**\n\n**NNT = 1 / ARR** (ปัดขึ้นเป็นจำนวนเต็มเสมอ)\n\n- NNT **น้อย** = ยามีประสิทธิภาพดี (เช่น NNT = 5 ดีกว่า NNT = 50)\n\n**NNH (Number Needed to Harm)** = 1 / ARI (Absolute Risk Increase) → จำนวนที่ต้องรักษาจึงเกิดอันตราย 1 ราย\n- NNH **มาก** = ยาปลอดภัยกว่า\n\nเปรียบเทียบ NNT กับ NNH ช่วยชั่งน้ำหนักประโยชน์-โทษของยา"
+        },
+        {
+          "card_type": "example",
+          "title_th": "ตัวอย่างคำนวณ ARR, RRR, NNT",
+          "body_md": "RCT ยาลดความเสี่ยง stroke ใน 1 ปี:\n- กลุ่มควบคุม (placebo) เกิด stroke 10% (0.10)\n- กลุ่มได้ยา เกิด stroke 6% (0.06)\n\n**คำนวณ:**\n- **ARR** = 0.10 − 0.06 = 0.04 (4%)\n- **RRR** = 0.04 / 0.10 = 0.40 = **40%**\n- **RR** = 0.06 / 0.10 = 0.6\n- **NNT** = 1 / 0.04 = **25** → ต้องรักษา 25 คน 1 ปี เพื่อป้องกัน stroke 1 ราย\n\nระวัง: RRR (40%) ฟังดูน่าประทับใจกว่า ARR (4%) — ควรดู ARR/NNT เพื่อประเมินผลจริง"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "จุดพลาดที่ออกสอบบ่อย",
+          "body_md": "- ข้อมูล **skewed** → ใช้ **median + IQR** ไม่ใช่ mean ± SD\n- **CI คร่อม 1** (สำหรับ RR/OR) หรือ **คร่อม 0** (สำหรับผลต่าง) = **ไม่มีนัยสำคัญ**\n- p < 0.05 **ไม่ได้แปลว่า** ผลสำคัญทางคลินิก\n- **OR ใช้ใน case-control, RR ใช้ใน cohort/RCT**\n- NNT ยิ่ง**น้อย**ยิ่งดี; NNH ยิ่ง**มาก**ยิ่งดี\n- ระวังการนำเสนอด้วย RRR เพราะดูเกินจริงเมื่อ baseline risk ต่ำ"
+        }
+      ]
+    },
+    {
+      "title_th": "เภสัชระบาดวิทยาและการเฝ้าระวังความปลอดภัยด้านยา",
+      "subtitle_th": "Pharmacovigilance, ADR reporting, drug safety surveillance",
+      "icon": "🔬",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "pharmacovigilance",
+        "เภสัชระบาดวิทยา",
+        "ADR",
+        "อาการไม่พึงประสงค์",
+        "Naranjo",
+        "spontaneous reporting",
+        "signal detection",
+        "post-marketing surveillance",
+        "medication safety",
+        "HPVC"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "Pharmacovigilance คืออะไร",
+          "body_md": "**Pharmacovigilance (PV / การติดตามความปลอดภัยด้านยา)** ตามนิยาม WHO = ศาสตร์และกิจกรรมที่เกี่ยวกับการ **ตรวจจับ ประเมิน เข้าใจ และป้องกัน** อาการไม่พึงประสงค์หรือปัญหาอื่นที่เกี่ยวกับยา\n\n**เป้าหมาย:** ความปลอดภัยของผู้ป่วยและการใช้ยาในระดับประชากร\n\nสำคัญเพราะ **RCT ก่อนขึ้นทะเบียนมีข้อจำกัด:**\n- ผู้เข้าร่วมจำนวนจำกัด → ตรวจไม่พบ ADR ที่**หายาก**\n- ระยะเวลาสั้น → ไม่เห็นผลระยะยาว\n- คัดเด็ก/ผู้สูงอายุ/ตั้งครรภ์/หลายโรคออก → ไม่สะท้อนการใช้จริง\n\nจึงต้องมี **post-marketing surveillance (เฝ้าระวังหลังออกสู่ตลาด)**"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ADR: ชนิดและการจำแนก",
+          "body_md": "**ADR (Adverse Drug Reaction)** = ปฏิกิริยาที่เป็นอันตรายและไม่ได้ตั้งใจจากยาในขนาดปกติ\n\n**จำแนกตาม Rawlins-Thompson:**\n- **Type A (Augmented):** คาดเดาได้ ขึ้นกับขนาดยา จากฤทธิ์ทางเภสัชวิทยา พบบ่อย ตายน้อย (เช่น เลือดออกจาก warfarin, ง่วงจาก antihistamine)\n- **Type B (Bizarre):** คาดเดาไม่ได้ ไม่ขึ้นกับขนาด เช่น แพ้ยา (anaphylaxis), SJS/TEN — พบน้อยแต่รุนแรง/ตายสูง\n- Type C (chronic), D (delayed เช่น teratogen, มะเร็ง), E (end of use, withdrawal), F (failure)\n\n**ต่างจาก side effect:** side effect อาจไม่เป็นอันตราย; ADR = ผลเสีย"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ระบบรายงานและการประเมินความสัมพันธ์",
+          "body_md": "**Spontaneous reporting (การรายงานโดยสมัครใจ):** วิธีหลักของการเฝ้าระวัง — บุคลากร/ผู้ป่วยรายงาน ADR\n- ไทยใช้แบบรายงาน และส่งให้ **HPVC (Health Product Vigilance Center, อย.)**\n- ข้อจำกัด: **under-reporting** (รายงานน้อยกว่าจริง), ไม่รู้ตัวส่วน (denominator)\n\n**การประเมินความสัมพันธ์ยา-อาการ (causality):**\n- **Naranjo algorithm** ให้คะแนนแล้วจัดเป็น definite / probable / possible / doubtful\n- WHO-UMC causality categories\n\nพิจารณา: ความสัมพันธ์ทางเวลา (temporal), **dechallenge** (หยุดยาแล้วดีขึ้น), **rechallenge** (ให้ยาซ้ำแล้วเกิดอีก)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Signal detection และมาตรการระดับประชากร",
+          "body_md": "**Signal** = ข้อมูลที่บ่งชี้ความเป็นไปได้ของความสัมพันธ์ยา-เหตุการณ์ใหม่ ที่ยังไม่ทราบมาก่อน\n\nเครื่องมือระดับประชากร:\n- **Database/pharmacoepidemiology studies** (cohort, case-control บนฐานข้อมูลใหญ่)\n- **WHO VigiBase** ฐานข้อมูลรายงาน ADR ทั่วโลก\n- **PSUR (Periodic Safety Update Report)** จากบริษัทยา\n\n**มาตรการเมื่อพบสัญญาณความเสี่ยง:**\n- เพิ่ม **black box warning**, ปรับฉลาก/เอกสารกำกับยา\n- **REMS / RMP** (แผนจัดการความเสี่ยง)\n- จำกัดข้อบ่งใช้ หรือ **ถอนทะเบียนยา** ออกจากตลาด"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำว่าอะไรควรรายงาน — \"SUSAR/ใหม่/รุนแรง\"",
+          "body_md": "ควรรายงาน ADR โดยเฉพาะเมื่อ:\n- **S**erious (รุนแรง): ตาย, คุกคามชีวิต, ต้องนอน รพ., พิการ, ความผิดปกติแต่กำเนิด\n- **U**nexpected (ไม่เคยรู้/ไม่อยู่ในเอกสารกำกับยา)\n- ยา**ใหม่** (เพิ่งขึ้นทะเบียน) — เฝ้าระวังเข้มเป็นพิเศษ\n- เกี่ยวกับ **vaccine (AEFI)** หรือ **medication error**\n\nหลักคิด: เมื่อสงสัย **\"รายงานไว้ก่อน\"** — ไม่ต้องรอพิสูจน์ความสัมพันธ์แน่ชัด เพราะระบบ spontaneous อาศัยปริมาณรายงานเพื่อตรวจจับสัญญาณ"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Medication error vs ADR — อย่าสับสน",
+          "body_md": "**Medication error (ความคลาดเคลื่อนทางยา):** เหตุการณ์ที่**ป้องกันได้** เกิดจากความผิดพลาดในกระบวนการ (สั่ง จ่าย บริหารยา)\n- เน้นปรับ **ระบบ** ไม่ใช่ลงโทษบุคคล (system approach, no-blame culture)\n- ใช้ **5 Rights**: ถูกคน ถูกยา ถูกขนาด ถูกวิถี ถูกเวลา (บางตำราเพิ่มถูกเอกสาร)\n\n**ADR:** มักเกิดแม้ใช้ยาถูกต้อง (โดยเฉพาะ Type B)\n\n**High-alert drugs** (insulin, warfarin, heparin, KCl เข้มข้น, opioid, เคมีบำบัด) ต้องมีระบบตรวจสอบซ้ำ (double-check) เพราะ error ก่อให้เกิดอันตรายร้ายแรง"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "บทบาทเภสัชกรใน Pharmacovigilance",
+          "body_md": "- **ตรวจจับและรายงาน ADR** ผ่านระบบ HPVC/Thai Vigibase\n- ประเมิน **causality** ด้วย Naranjo และคัดกรอง drug interaction\n- บันทึก **ประวัติแพ้ยา** และแจ้งเตือนทั้งระบบ (เช่น บัตรแพ้ยา)\n- ให้ความรู้ผู้ป่วยเรื่องอาการที่ต้องเฝ้าระวัง\n- ติดตามผู้ป่วยที่ใช้ยา high-alert / ยาใหม่ / ยาที่มี RMP\n\nออกสอบ: เภสัชกรเป็นด่านสำคัญของ spontaneous reporting และการป้องกัน medication error"
+        }
+      ]
+    },
+    {
+      "title_th": "พฤติกรรมสุขภาพและการช่วยเลิกบุหรี่",
+      "subtitle_th": "Health behavior models, 5A's, NRT, varenicline, bupropion",
+      "icon": "🚭",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "smoking cessation",
+        "เลิกบุหรี่",
+        "5A",
+        "NRT",
+        "nicotine",
+        "varenicline",
+        "bupropion",
+        "stages of change",
+        "health belief model",
+        "transtheoretical"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "Health Belief Model (HBM)",
+          "body_md": "**Health Belief Model** อธิบายว่าคนจะปรับพฤติกรรมสุขภาพเมื่อเชื่อใน 4 องค์ประกอบหลัก:\n\n1. **Perceived susceptibility** — รู้สึกว่าตนเองเสี่ยงต่อโรค\n2. **Perceived severity** — รู้สึกว่าโรคนั้นรุนแรง\n3. **Perceived benefits** — เชื่อว่าการปรับพฤติกรรมมีประโยชน์\n4. **Perceived barriers** — อุปสรรค (ต้นทุน/ความยุ่งยาก) ต่ำพอ\n\nเสริมด้วย **cues to action** (สิ่งกระตุ้น เช่น คำแนะนำแพทย์ อาการเตือน) และ **self-efficacy** (ความเชื่อมั่นว่าทำได้)\n\nใช้ออกแบบสุขศึกษา เช่น ทำให้ผู้สูบรู้สึกเสี่ยงและเห็นประโยชน์ของการเลิก"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Transtheoretical Model — ระยะของการเปลี่ยนแปลง",
+          "body_md": "**Stages of Change (Prochaska & DiClemente):**\n1. **Precontemplation** — ยังไม่คิดเปลี่ยน (ไม่เห็นปัญหา)\n2. **Contemplation** — เริ่มคิด ชั่งใจ (มักภายใน 6 เดือน)\n3. **Preparation** — ตั้งใจและวางแผนจะทำ (ภายใน 30 วัน)\n4. **Action** — ลงมือเปลี่ยนพฤติกรรมแล้ว (<6 เดือน)\n5. **Maintenance** — รักษาพฤติกรรมใหม่ (>6 เดือน) ป้องกัน relapse\n\nการแทรกแซงต้อง**เหมาะกับระยะ:** คนใน precontemplation ให้ข้อมูลสร้างความตระหนัก; คนใน preparation/action ให้แผนปฏิบัติและยาช่วยเลิก"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "5A's กรอบการช่วยเลิกบุหรี่",
+          "body_md": "**5A's** เป็นกรอบมาตรฐานสำหรับบุคลากรสุขภาพ:\n\n1. **Ask** — ถามและบันทึกประวัติการสูบบุหรี่ทุกครั้ง\n2. **Advise** — แนะนำให้เลิกอย่างชัดเจน หนักแน่น เฉพาะบุคคล\n3. **Assess** — ประเมินความพร้อม/ความตั้งใจที่จะเลิก\n4. **Assist** — ช่วยเหลือ: กำหนดวันเลิก, ให้คำปรึกษา, จ่ายยาช่วยเลิก\n5. **Arrange** — นัดติดตามผล ป้องกันการกลับไปสูบ\n\nสำหรับผู้ที่**ยังไม่พร้อมเลิก** ใช้ **5R's** (Relevance, Risks, Rewards, Roadblocks, Repetition) เพื่อสร้างแรงจูงใจ"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Nicotine Replacement Therapy (NRT)",
+          "body_md": "**NRT** ให้ nicotine ขนาดต่ำเพื่อลดอาการถอน (withdrawal) โดยไม่มีสารพิษจากควันบุหรี่\n\n**รูปแบบ:**\n- **Patch (แผ่นแปะ):** ออกฤทธิ์ยาว ระดับคงที่ (long-acting)\n- **Gum, lozenge, inhaler, nasal spray:** ออกฤทธิ์เร็ว ใช้ระงับ craving เฉพาะหน้า (short-acting)\n- มักใช้ **patch + short-acting ร่วมกัน (combination NRT)** ได้ผลดีกว่าเดี่ยว\n\n**เทคนิค gum:** เคี้ยวจนรู้สึกซ่า แล้ว **\"chew and park\"** (อมไว้ที่กระพุ้งแก้ม) ไม่เคี้ยวรัว และ**งดอาหาร/เครื่องดื่มเป็นกรด 15 นาทีก่อน** (กาแฟ น้ำอัดลม) เพราะลดการดูดซึม\n\n**ADR:** ระคายเฉพาะที่, นอนไม่หลับ/ฝันแปลก (patch ตอนกลางคืน), คลื่นไส้"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Varenicline และ Bupropion",
+          "body_md": "**Varenicline (Champix):**\n- **Partial agonist ของ α4β2 nicotinic receptor** → ลด craving และลดความสุขจากการสูบ\n- เริ่มยา **1 สัปดาห์ก่อนวันเลิก**, ใช้ต่อ 12 สัปดาห์\n- เป็นยาเดี่ยวที่ได้ผลดีที่สุด\n- **ADR:** คลื่นไส้ (พบบ่อย กินพร้อมอาหาร), ฝันผิดปกติ, นอนไม่หลับ; เฝ้าระวังอาการทางจิต/อารมณ์\n\n**Bupropion (Zyban):**\n- **ยับยั้งการเก็บกลับ dopamine/norepinephrine** (เป็นยาต้านซึมเศร้าด้วย)\n- เริ่มก่อนวันเลิก ~1–2 สัปดาห์\n- **ห้ามในผู้มีประวัติชัก (ลด seizure threshold), eating disorder, ใช้ MAOi**\n- ทางเลือกในผู้ที่มีภาวะซึมเศร้าร่วม"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ 5A's และ 5R's",
+          "body_md": "**5A's (สำหรับผู้พร้อมเลิก):**\n**A**sk → **A**dvise → **A**ssess → **A**ssist → **A**rrange\n\nจำ: \"ถาม–แนะ–ประเมิน–ช่วย–นัด\"\n\n**5R's (สำหรับผู้ยังไม่พร้อมเลิก — สร้างแรงจูงใจ):**\n- **R**elevance — ทำไมการเลิกสำคัญกับเขา\n- **R**isks — โทษของบุหรี่\n- **R**ewards — ประโยชน์ของการเลิก\n- **R**oadblocks — อุปสรรคและวิธีจัดการ\n- **R**epetition — ย้ำซ้ำทุกครั้งที่พบ"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ข้อควรระวังของยาช่วยเลิกบุหรี่",
+          "body_md": "- **Bupropion ห้ามในผู้มีประวัติชักและ eating disorder** — เพราะลด seizure threshold; ห้ามร่วม MAOi (เว้น ≥14 วัน)\n- **Varenicline** ต้องเฝ้าระวังอาการทางจิต-ประสาท (mood change) แม้หลักฐานล่าสุด (EAGLES trial) ความเสี่ยงต่ำกว่าที่กังวลในอดีต\n- **NRT** ในผู้มีโรคหัวใจเฉียบพลัน (MI เพิ่งเกิด, arrhythmia รุนแรง) ใช้อย่างระมัดระวัง แต่โดยรวม**ปลอดภัยกว่าการสูบต่อ**\n- หญิงตั้งครรภ์: เน้น **behavioral counseling ก่อน**; ใช้ยาเมื่อจำเป็นและประเมินความเสี่ยง\n- **การเลิกบุหรี่เพิ่ม serum theophylline และเปลี่ยน clearance ของยาผ่าน CYP1A2** (ควันบุหรี่เป็น CYP1A2 inducer) → ต้องปรับขนาดยาบางชนิดเมื่อเลิกสูบ"
+        }
+      ]
+    },
+    {
+      "title_th": "การสอบสวนการระบาดและอนามัยสิ่งแวดล้อม",
+      "subtitle_th": "Outbreak investigation steps, environmental health, sanitation",
+      "icon": "🦠",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "outbreak investigation",
+        "การสอบสวนโรค",
+        "epidemic curve",
+        "การระบาด",
+        "environmental health",
+        "อนามัยสิ่งแวดล้อม",
+        "sanitation",
+        "น้ำสะอาด",
+        "attack rate",
+        "case definition"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "การระบาดและ Endemic/Epidemic/Pandemic",
+          "body_md": "นิยามระดับการเกิดโรค:\n- **Endemic (โรคประจำถิ่น):** มีอยู่สม่ำเสมอในพื้นที่ตามที่คาดการณ์ได้ (เช่น ไข้เลือดออกในไทย)\n- **Outbreak / Epidemic (การระบาด):** ผู้ป่วย**เกินกว่าที่คาดการณ์ปกติ** ในพื้นที่/ช่วงเวลานั้น (outbreak มักใช้พื้นที่จำกัด)\n- **Pandemic (การระบาดใหญ่):** ระบาดข้ามประเทศ/ทวีปทั่วโลก (เช่น COVID-19, ไข้หวัดใหญ่ 2009)\n\n**Sporadic:** เกิดประปรายไม่สม่ำเสมอ\n\nการระบุว่าเป็น outbreak อาศัยการเปรียบเทียบกับ **baseline ที่คาดหวัง** ของพื้นที่นั้น"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ขั้นตอนการสอบสวนการระบาด (ภาพรวม)",
+          "body_md": "ขั้นตอนหลักของการสอบสวนโรค (อาจไม่เรียงเป๊ะ บางขั้นทำพร้อมกัน):\n1. **ยืนยันว่ามีการระบาดจริง** (เทียบกับ baseline ที่คาด)\n2. **ยืนยันการวินิจฉัย** (lab, clinical)\n3. **สร้าง case definition** และ**ค้นหาผู้ป่วย** (case finding)\n4. **บรรยายข้อมูลด้วย Time–Place–Person** (descriptive epidemiology)\n5. **สร้างสมมุติฐาน** เรื่องแหล่ง/วิธีแพร่\n6. **ทดสอบสมมุติฐาน** ด้วยการศึกษาวิเคราะห์ (cohort/case-control + attack rate)\n7. **มาตรการควบคุมและป้องกัน** (มักเริ่มเร็วระหว่างทาง)\n8. **สื่อสารและเขียนรายงาน** สรุปผล"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Case definition และ Time-Place-Person",
+          "body_md": "**Case definition (นิยามผู้ป่วย):** เกณฑ์มาตรฐานเพื่อนับว่าใครเป็นผู้ป่วย\n- มักแบ่ง **suspected / probable / confirmed** (ความจำเพาะเพิ่มขึ้นตามลำดับ)\n- ประกอบด้วย: อาการทางคลินิก + ผล lab + ข้อจำกัด **บุคคล–สถานที่–เวลา**\n\n**Descriptive epidemiology (Time–Place–Person):**\n- **Time:** สร้าง **epidemic curve** (กราฟจำนวนผู้ป่วยตามเวลาเริ่มป่วย)\n- **Place:** spot map หาการกระจุกตัวเชิงพื้นที่ (เช่น รอบแหล่งน้ำ)\n- **Person:** อายุ เพศ อาชีพ ปัจจัยเสี่ยง — หากลุ่มเสี่ยงร่วม"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Epidemic Curve บอกอะไร",
+          "body_md": "**Epidemic curve (epi curve)** = ฮิสโทแกรมจำนวนผู้ป่วยตามวัน/เวลาที่เริ่มมีอาการ\n\nบอกรูปแบบการแพร่:\n- **Point source (แหล่งเดียว ครั้งเดียว):** ยอดพุ่งเร็ว ลงเร็ว ผู้ป่วยส่วนใหญ่อยู่ใน 1 ช่วง incubation period (เช่น อาหารเป็นพิษจากงานเลี้ยง)\n- **Continuous common source:** สัมผัสแหล่งเดิมต่อเนื่อง → curve ยืดเป็นที่ราบ\n- **Propagated (person-to-person):** มีหลายยอด (waves) ห่างกันประมาณ 1 incubation period\n\nระยะจากการสัมผัสถึงยอด curve ช่วยประมาณ **incubation period** และย้อนหาเวลาสัมผัส"
+        },
+        {
+          "card_type": "example",
+          "title_th": "Attack rate ในอาหารเป็นพิษ",
+          "body_md": "ในการระบาดอาหารเป็นพิษ ใช้ **food-specific attack rate** หาอาหารต้นเหตุ:\n\n**Attack rate** = ผู้ป่วยที่กินอาหารนั้น / ผู้ที่กินอาหารนั้นทั้งหมด\n\n| อาหาร | AR (กิน) | AR (ไม่กิน) | RR |\n|---|---|---|---|\n| สลัด | 80% | 15% | สูง ← สงสัย |\n| ไก่ทอด | 45% | 40% | ~1 |\n\nอาหารต้นเหตุคืออาหารที่ **AR ในกลุ่มกินสูง และ AR ในกลุ่มไม่กินต่ำ** (RR สูง)\n\nในงานเลี้ยงที่รู้รายชื่อผู้ร่วมงานทั้งหมด → ใช้ **retrospective cohort** คำนวณ RR ได้"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "อนามัยสิ่งแวดล้อมและสุขาภิบาล",
+          "body_md": "**Environmental health** ครอบคลุมปัจจัยสิ่งแวดล้อมที่กระทบสุขภาพ:\n\n- **น้ำสะอาด (safe water):** ป้องกันโรคทางน้ำ (อหิวาต์, ไทฟอยด์, ตับอักเสบเอ, ท้องร่วง) — ฆ่าเชื้อด้วย **คลอรีน** หรือต้ม; ตรวจ **coliform/E. coli** เป็นดัชนีปนเปื้อนอุจจาระ\n- **การจัดการสิ่งปฏิกูลและขยะ (sanitation):** ส้วมถูกสุขลักษณะ ตัดวงจร **fecal-oral**\n- **การจัดการขยะติดเชื้อ/ขยะอันตราย:** รวมขยะยาและเข็มฉีดยา (sharps)\n- **คุณภาพอากาศ (PM2.5), เสียง, สารเคมี/โลหะหนัก, สารกำจัดศัตรูพืช**\n- **การควบคุมพาหะ (vector control):** ยุง (ไข้เลือดออก/มาลาเรีย), หนู, แมลงสาบ"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ Fecal-oral และการแก้ด้วย \"F-diagram\"",
+          "body_md": "โรคติดต่อทางอุจจาระ-ปาก (fecal-oral) แพร่ผ่าน **\"5 F\"**:\n- **F**eces (อุจจาระ) → \n- **F**ingers (มือ)\n- **F**lies (แมลงวัน)\n- **F**ields/**F**luids (ดิน/น้ำ)\n- **F**ood (อาหาร) → เข้าปาก\n\nตัดวงจรด้วย: **ส้วมถูกสุขลักษณะ + ล้างมือ + น้ำสะอาด + ควบคุมแมลงวัน + อาหารปลอดภัย**\n\nนี่คือหลักของ **sanitation** ที่ลดโรคท้องร่วงและโรคทางเดินอาหารได้มากที่สุดในระดับชุมชน"
         }
       ]
     }

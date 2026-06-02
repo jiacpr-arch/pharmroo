@@ -1,56 +1,456 @@
 {
   "subject": "Pharmaceutics",
   "unit": {
-    "title_th": "เภสัชเทคโนโลยีและการวิเคราะห์",
-    "description_th": "รูปแบบยาเตรียม ข้อดีข้อเสีย และความคงตัวของยาและการเก็บรักษา",
-    "icon": "🧫"
+    "title_th": "เภสัชภัณฑ์และรูปแบบยาเตรียม",
+    "description_th": "คอร์สครบวงจรด้านเภสัชกรรม (Pharmaceutics) สำหรับสอบใบประกอบวิชาชีพเภสัชกรรม ครอบคลุมรูปแบบยาและวิถีการให้ยา ยาเม็ดและสารช่วย ยาน้ำสารละลาย/แขวนตะกอน/อิมัลชัน ยากึ่งแข็ง ผงและแกรนูล ยาฉีดปราศจากเชื้อ จลนศาสตร์การสลายตัวและอายุยา และบรรจุภัณฑ์/สารกันเสีย",
+    "icon": "⚗️"
   },
   "lessons": [
     {
-      "title_th": "รูปแบบยาเตรียม",
-      "subtitle_th": "Dosage forms และข้อดีข้อเสีย",
+      "title_th": "ภาพรวมรูปแบบยาและวิถีการให้ยา",
+      "subtitle_th": "Dosage forms, routes of administration, excipients",
       "icon": "💊",
-      "est_minutes": 6,
-      "xp_reward": 10,
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "dosage form",
+        "รูปแบบยา",
+        "route of administration",
+        "วิถีการให้ยา",
+        "excipient",
+        "สารช่วย",
+        "bioavailability",
+        "first-pass",
+        "enteral",
+        "parenteral"
+      ],
       "cards": [
         {
           "card_type": "concept",
-          "title_th": "ประเภทรูปแบบยา",
-          "body_md": "**แบ่งตามสถานะ**\n- **ของแข็ง:** ยาเม็ด แคปซูล ผง — คงตัวดี พกพาง่าย ขนาดยาแม่นยำ\n- **ของเหลว:** สารละลาย ยาน้ำแขวนตะกอน อิมัลชัน — กลืนง่าย ปรับขนาดยาได้ เหมาะเด็ก/ผู้สูงอายุ\n- **กึ่งแข็ง:** ครีม ขี้ผึ้ง เจล — ใช้เฉพาะที่\n- **ก๊าซ:** ยาสูดพ่น"
+          "title_th": "นิยามและบทบาทของรูปแบบยา (Dosage Form)",
+          "body_md": "**รูปแบบยา (dosage form)** คือผลิตภัณฑ์สำเร็จที่นำตัวยาสำคัญ (API) มารวมกับ **สารช่วย (excipients)** เพื่อให้สามารถบริหารแก่ผู้ป่วยได้อย่างปลอดภัยและแม่นยำ\n\n**วัตถุประสงค์หลัก:**\n- ส่งตัวยาในขนาดที่ถูกต้องและสม่ำเสมอ (dose accuracy)\n- ปกป้องตัวยาจากการสลายตัว (เช่น enteric coating กันกรดในกระเพาะ)\n- กลบรสและกลิ่นที่ไม่พึงประสงค์\n- ควบคุมการปลดปล่อยยา (immediate vs modified release)\n- กำหนดตำแหน่งและอัตราการดูดซึม\n\nรูปแบบยาเป็นตัวกำหนด **bioavailability** และความร่วมมือในการใช้ยา (adherence) ของผู้ป่วย"
         },
         {
           "card_type": "concept",
-          "title_th": "ของแข็ง vs ของเหลว",
-          "body_md": "**ยาเม็ด/แคปซูล**\n- ข้อดี: คงตัวสูง ขนาดแม่นยำ กลบรสได้\n- ข้อเสีย: เด็ก/ผู้กลืนลำบากใช้ยาก ออกฤทธิ์ช้ากว่า\n\n**ยาน้ำ**\n- ข้อดี: ดูดซึมเร็ว ปรับขนาดได้ เหมาะกลุ่มพิเศษ\n- ข้อเสีย: คงตัวต่ำ ขนส่งยาก ต้องตวงให้แม่นยำ"
+          "title_th": "การจำแนกตามสถานะทางกายภาพ",
+          "body_md": "แบ่งรูปแบบยาตามสถานะได้ 4 กลุ่ม:\n\n| สถานะ | ตัวอย่าง |\n|---|---|\n| **ของแข็ง (solid)** | ยาเม็ด (tablet), แคปซูล (capsule), ผง (powder), แกรนูล, ยาเหน็บ (suppository) |\n| **ของเหลว (liquid)** | สารละลาย (solution), ยาน้ำแขวนตะกอน (suspension), อิมัลชัน (emulsion), ยาน้ำเชื่อม (syrup), ยาหยอด |\n| **กึ่งแข็ง (semisolid)** | ขี้ผึ้ง (ointment), ครีม (cream), เจล (gel), เพสต์ (paste) |\n| **ก๊าซ/ละออง (gas/aerosol)** | ยาสูดพ่น (inhaler), สเปรย์, ก๊าซดมยาสลบ |\n\n**ของแข็ง** คงตัวดีที่สุดและขนาดยาแม่นยำ ส่วน **ของเหลว** ดูดซึมเร็วและปรับขนาดง่ายแต่คงตัวต่ำกว่า"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "วิถีการให้ยา: Enteral vs Parenteral vs Topical",
+          "body_md": "**Enteral (ผ่านทางเดินอาหาร):**\n- Oral (รับประทาน) — สะดวกที่สุด แต่มี first-pass metabolism\n- Sublingual/buccal (ใต้ลิ้น/กระพุ้งแก้ม) — เลี่ยง first-pass, ดูดซึมเร็ว (เช่น GTN, nitroglycerin)\n- Rectal (ทวารหนัก) — เลี่ยง first-pass บางส่วน, ใช้เมื่อผู้ป่วยอาเจียน\n\n**Parenteral (ฉีด):** IV, IM, SC, ID\n- IV ให้ bioavailability 100% และออกฤทธิ์เร็วที่สุด\n\n**Topical/Transdermal:** ทาผิวหนัง, แผ่นแปะ — ออกฤทธิ์เฉพาะที่หรือ systemic ช้า ๆ\n\n**Inhalation/Pulmonary:** สูดเข้าปอด — ออกฤทธิ์เฉพาะที่ระบบหายใจรวดเร็ว"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "บทบาทของสารช่วย (Excipients)",
+          "body_md": "**สารช่วย** คือส่วนประกอบที่ไม่ใช่ตัวยาสำคัญ แต่จำเป็นต่อการผลิตและประสิทธิภาพ ตัวอย่างบทบาท:\n\n- **Diluent/filler:** เพิ่มปริมาตร (lactose, MCC)\n- **Binder:** ยึดเกาะผงให้เป็นเม็ด (PVP, starch paste)\n- **Disintegrant:** ช่วยเม็ดแตกตัว (croscarmellose)\n- **Lubricant:** ลดแรงเสียดทานแม่พิมพ์ (magnesium stearate)\n- **Vehicle/solvent:** ตัวพา (น้ำ, แอลกอฮอล์)\n- **Preservative:** กันเชื้อ (paraben)\n- **Buffer/stabilizer:** คุม pH และความคงตัว\n\nสารช่วยต้อง **เฉื่อย (inert)** ทางเภสัชวิทยา แต่ต้องเข้ากันได้ (compatible) กับตัวยา"
         },
         {
           "card_type": "tip",
-          "title_th": "ยาน้ำแขวนตะกอนต้องเขย่า",
-          "body_md": "**ยาน้ำแขวนตะกอน (suspension)** ตัวยาไม่ละลาย กระจายเป็นอนุภาค\n\n- ต้อง **เขย่าขวดก่อนใช้ทุกครั้ง** เพื่อให้ได้ขนาดยาสม่ำเสมอ\n- ติดฉลากช่วย \"เขย่าขวดก่อนใช้\"\n- ระวัง caking (ตะกอนจับแข็ง) หากเก็บนาน"
+          "title_th": "First-pass effect และการเลือกวิถีให้ยา",
+          "body_md": "**First-pass metabolism** = ยาที่กินถูกดูดซึมผ่านลำไส้เข้าตับ แล้วถูกเมแทบอไลซ์ก่อนเข้าสู่กระแสเลือดทั่วร่างกาย ทำให้ **bioavailability ลดลง**\n\nยาที่มี first-pass สูง (เช่น GTN, propranolol, lidocaine, morphine) → เลือกวิถีที่เลี่ยงตับ:\n- **Sublingual** (GTN อมใต้ลิ้น)\n- **IV/IM**\n- **Transdermal** (แผ่นแปะ fentanyl)\n- **Rectal** (เลี่ยงได้บางส่วน ~50%)\n\nสรุป: ถ้าต้องการออกฤทธิ์เร็วและ bioavailability สูง โดยไม่ผ่านตับ → เลี่ยงทาง oral"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำหน้าที่สารช่วยยาเม็ด: \"BD-LDG\"",
+          "body_md": "สารช่วยหลักในยาเม็ด จำด้วย **BD-LDG**:\n\n**B**inder — สารยึดเกาะ (เช่น PVP)\n**D**iluent — สารเพิ่มปริมาตร (lactose)\n**L**ubricant — สารหล่อลื่น (Mg stearate)\n**D**isintegrant — สารช่วยแตกตัว (croscarmellose)\n**G**lidant — สารช่วยการไหล (colloidal silica)\n\nจำง่าย ๆ: ยาเม็ดต้อง \"เพิ่มปริมาตร–ยึดเกาะ–แตกตัว–ลื่น–ไหลดี\" จึงจะตอกและกลืนได้ดี"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ข้อควรระวังในการเลือกรูปแบบยา",
+          "body_md": "**ข้อพิจารณาสำคัญตามกลุ่มผู้ป่วย:**\n- **เด็ก/ผู้สูงอายุ/ผู้กลืนลำบาก** → เลี่ยงเม็ดใหญ่ ใช้ยาน้ำ, orodispersible หรือ minitablet\n- **ผู้ป่วยเบาหวาน** → ระวัง syrup ที่มีน้ำตาล (เลือก sugar-free)\n- **ยา enteric-coated / modified-release** → **ห้ามบด/เคี้ยว/แบ่งเม็ด** เพราะทำลายระบบควบคุมการปลดปล่อยและอาจเกิด dose dumping\n- **ยาฉีด** → ต้องปราศจากเชื้อและ pyrogen เสมอ\n\nการเลือกรูปแบบยาที่ไม่เหมาะอาจทำให้ขนาดยาคลาดเคลื่อนหรือเกิดพิษได้"
         }
       ]
     },
     {
-      "title_th": "ความคงตัวและการเก็บรักษา",
-      "subtitle_th": "ปฏิกิริยาการสลายตัวและสภาวะการเก็บ",
-      "icon": "🌡️",
-      "est_minutes": 6,
-      "xp_reward": 10,
+      "title_th": "ยาเม็ด: ชนิด สารช่วย และการผลิต",
+      "subtitle_th": "Tablets, granulation, coating, defects",
+      "icon": "⚪",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "tablet",
+        "ยาเม็ด",
+        "granulation",
+        "แกรนูเลชัน",
+        "disintegrant",
+        "binder",
+        "lubricant",
+        "coating",
+        "capping",
+        "enteric coating"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "ชนิดของยาเม็ด",
+          "body_md": "**ยาเม็ด (tablet)** เป็นรูปแบบยาที่ใช้มากที่สุด ชนิดสำคัญ:\n\n- **Compressed tablet:** เม็ดตอกธรรมดา สำหรับกลืน\n- **Film-coated / Sugar-coated:** เคลือบกลบรส กันชื้น กันแสง\n- **Enteric-coated (EC):** เคลือบให้ทนกรด แตกตัวในลำไส้ (ป้องกันยาระคายกระเพาะ/ถูกกรดทำลาย)\n- **Sublingual / Buccal:** อมใต้ลิ้น/กระพุ้งแก้ม เลี่ยง first-pass\n- **Chewable:** เคี้ยว (เช่น ยาลดกรด)\n- **Effervescent:** ฟู่ละลายน้ำก่อนดื่ม\n- **Orodispersible (ODT):** ละลายในปากเร็ว\n- **Modified-release (SR/CR):** ควบคุมการปลดปล่อย"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "สารช่วยในยาเม็ดและหน้าที่",
+          "body_md": "| สารช่วย | หน้าที่ | ตัวอย่าง |\n|---|---|---|\n| **Diluent** | เพิ่มปริมาตร | lactose, microcrystalline cellulose (MCC), mannitol, dicalcium phosphate |\n| **Binder** | ยึดผงเป็นเม็ด | PVP (povidone), starch paste, HPMC, gelatin |\n| **Disintegrant** | ช่วยเม็ดแตกตัว | starch, croscarmellose sodium, sodium starch glycolate, crospovidone |\n| **Lubricant** | ลดเสียดทานแม่พิมพ์/ติด punch | magnesium stearate, stearic acid |\n| **Glidant** | เพิ่มการไหลของผง | colloidal silicon dioxide (Aerosil), talc |\n\n**จำ:** super-disintegrants (croscarmellose, crospovidone, sodium starch glycolate) ใช้ปริมาณน้อยแต่แตกตัวเร็วมาก"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "การเตรียมแกรนูล (Granulation)",
+          "body_md": "การตอกเม็ดต้องการผงที่ **ไหลดีและอัดตัวได้ดี** การทำแกรนูลช่วยแก้ปัญหานี้\n\n**1. Wet granulation (แกรนูลเปียก):**\n- ผสมผง → เติม binder เหลว → นวด → ผ่านตะแกรง → อบแห้ง → ผ่านตะแกรงอีกครั้ง → เติม lubricant → ตอก\n- เหมาะกับยาที่ไม่ไวต่อน้ำ/ความร้อน, ให้แกรนูลแข็งแรง flow ดี\n\n**2. Dry granulation (slugging / roller compaction):**\n- ใช้กับยาที่ **ไวต่อน้ำหรือความร้อน**\n\n**3. Direct compression (ตอกตรง):**\n- ผสมผงแล้วตอกเลย ใช้สารช่วยพิเศษ (MCC) — ง่าย ประหยัด แต่ต้องการผงคุณภาพดี"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "การเคลือบเม็ด (Coating)",
+          "body_md": "**วัตถุประสงค์ของการเคลือบ:** กลบรส/กลิ่น, กันชื้น/แสง/ออกซิเจน, เพิ่มความสวยงาม, ควบคุมการปลดปล่อย\n\n**ชนิดการเคลือบ:**\n- **Film coating:** เคลือบฟิล์มบาง ๆ ด้วยพอลิเมอร์ (HPMC) — นิยมที่สุด เพิ่มน้ำหนักน้อย\n- **Sugar coating:** เคลือบน้ำตาลหลายชั้น — หนา ใช้เวลานาน\n- **Enteric coating:** ใช้พอลิเมอร์ทนกรด (cellulose acetate phthalate, Eudragit L/S) ละลายที่ pH ลำไส้ (>5.5) เพื่อปกป้องยาจากกรดกระเพาะหรือป้องกันการระคายกระเพาะ\n\n**Modified-release coating:** ควบคุมอัตราการปลดปล่อยยา (เช่น ethylcellulose)"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "เลือก disintegrant และ super-disintegrant",
+          "body_md": "**Disintegrant ช่วยให้เม็ดแตกตัวเมื่อสัมผัสน้ำ** กลไก: บวมพองตัว (swelling), wicking (ดึงน้ำเข้า), หรือคืนรูป\n\n**Super-disintegrants** ใช้ความเข้มข้นต่ำ (2–5%) แต่ออกฤทธิ์แรง:\n- **Croscarmellose sodium** (Ac-Di-Sol)\n- **Crospovidone**\n- **Sodium starch glycolate** (Primojel)\n\nเทคนิคใส่ disintegrant แบบ **intragranular + extragranular** (ทั้งในและนอกแกรนูล) ช่วยให้เม็ดแตกแล้วแกรนูลแตกต่อ → ดูดซึมเร็วขึ้น\n\nสำหรับ ODT ต้องการการแตกตัวเร็วมาก จึงเน้น super-disintegrant"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำสารช่วยตอกเม็ด: \"Dr. BIG LAD\"",
+          "body_md": "สารช่วยในการตอกเม็ดและจุดเด่นแต่ละตัว:\n\n**D**iluent — lactose, MCC (เพิ่มปริมาตร)\n**B**inder — PVP (ยึดเกาะ)\n**I**ntragranular disintegrant\n**G**lidant — colloidal silica (ไหลดี)\n**L**ubricant — Mg stearate (ลื่น ไม่ติดแม่พิมพ์)\n**A**nti-adherent — talc\n**D**isintegrant (extragranular) — croscarmellose\n\nหมายเหตุ: **magnesium stearate** เป็น hydrophobic — ถ้าใส่มาก/นวดนานเกินไปจะ **หน่วงการแตกตัวและลดความแข็ง** ของเม็ด"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ข้อบกพร่องของยาเม็ด (Tablet Defects)",
+          "body_md": "ข้อบกพร่องที่ออกสอบบ่อยและสาเหตุ:\n\n- **Capping:** ส่วนยอดเม็ดหลุดเป็นฝา — เกิดจากอากาศค้างในผง/แรงอัดมากเกินไป\n- **Lamination:** เม็ดแตกเป็นชั้น — สาเหตุคล้าย capping\n- **Sticking / Picking:** ผงติดผิว punch — lubricant น้อยหรือผงชื้นเกินไป\n- **Mottling:** สีไม่สม่ำเสมอ — การกระจายสี/ยาไม่ทั่ว\n- **Chipping / Cracking:** ขอบบิ่น/ร้าว — เม็ดเปราะ, แม่พิมพ์สึก\n- **Weight variation:** น้ำหนักไม่สม่ำเสมอ — ผงไหลไม่ดี (flow ไม่ดี)\n\n**แก้ capping/lamination:** ลดความเร็วตอก, เพิ่ม binder, ปรับความชื้นแกรนูล"
+        }
+      ]
+    },
+    {
+      "title_th": "ยาน้ำ: สารละลาย แขวนตะกอน อิมัลชัน",
+      "subtitle_th": "Solutions, suspensions, emulsions, Stokes' law, HLB",
+      "icon": "🧪",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "solution",
+        "suspension",
+        "ยาน้ำแขวนตะกอน",
+        "emulsion",
+        "อิมัลชัน",
+        "Stokes law",
+        "sedimentation",
+        "creaming",
+        "emulsifier",
+        "HLB"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "สารละลาย (Solutions)",
+          "body_md": "**สารละลาย** คือระบบเนื้อเดียว (homogeneous) ที่ตัวยา **ละลายหมด** ในตัวทำละลาย\n\n**ตัวอย่างรูปแบบ:**\n- **Syrup:** สารละลายน้ำตาลเข้มข้น (ปกติ sucrose ~66%) กลบรสได้ดี\n- **Elixir:** สารละลายใส มีแอลกอฮอล์เป็น co-solvent (ละลายยาที่ละลายน้ำยาก)\n- **Aqueous solution / Tincture / Spirit**\n\n**ข้อดี:** ดูดซึมเร็ว (ไม่ต้องละลายก่อน), ขนาดยาสม่ำเสมอ, ปรับขนาดง่าย, เหมาะเด็ก\n\n**ข้อเสีย:** ความคงตัวต่ำ (hydrolysis ง่าย), เสี่ยงเชื้อโต ต้องมีสารกันเสีย, รสขมกลบยาก, ขนส่งหนัก"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ยาน้ำแขวนตะกอน (Suspensions)",
+          "body_md": "**Suspension** = ระบบสองเฟส ตัวยาของแข็ง **ไม่ละลาย** กระจายตัวในของเหลว\n\n**ใช้เมื่อ:** ยาละลายน้ำได้น้อย, ต้องการกลบรสขม, หรือต้องการออกฤทธิ์เนิ่น\n\n**คุณสมบัติของ suspension ที่ดี:**\n- ตกตะกอนช้า และ **เขย่าแล้วกระจายกลับง่าย** (redispersible)\n- ไม่จับแข็งเป็น **cake** (caking)\n- ขนาดอนุภาคสม่ำเสมอ ไหลเทได้\n\n**Flocculated vs Deflocculated:**\n- **Flocculated:** อนุภาคจับกลุ่มหลวม ๆ ตกตะกอนเร็วแต่ฟูและ redisperse ง่าย (ไม่ caking) — มักนิยมกว่า\n- **Deflocculated:** อนุภาคแยกอิสระ ตกช้าแต่แน่นเป็น cake แข็ง — ปัญหา caking"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Stokes' Law และการตกตะกอน",
+          "body_md": "อัตราการตกตะกอน (sedimentation velocity, v) ของอนุภาคใน suspension อธิบายด้วย **Stokes' Law**:\n\n$$v = \\frac{d^2 (\\rho_s - \\rho_l) g}{18 \\eta}$$\n\nโดย d = เส้นผ่านศูนย์กลางอนุภาค, ρs−ρl = ผลต่างความหนาแน่นระหว่างอนุภาคกับของเหลว, η = ความหนืดตัวกลาง\n\n**ทำให้ตกตะกอนช้าลง (suspension คงตัวขึ้น) โดย:**\n- **ลดขนาดอนุภาค (d)** — ผลแรงที่สุดเพราะยกกำลังสอง\n- **เพิ่มความหนืด (η)** ด้วย suspending agent (เช่น CMC, xanthan gum)\n- ลดผลต่างความหนาแน่น\n\nหลักการนี้ใช้กับทั้ง suspension และการแยกชั้นของ emulsion"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "อิมัลชัน (Emulsions) และชนิด O/W, W/O",
+          "body_md": "**อิมัลชัน** = ระบบของเหลวสองชนิดที่ไม่ผสมกัน (น้ำ + น้ำมัน) โดยเฟสหนึ่งกระจายเป็นหยดในอีกเฟส มี **emulsifier** ช่วยคงตัว\n\n**ชนิด:**\n- **O/W (oil-in-water):** หยดน้ำมันในน้ำ — ล้างออกง่าย ไม่เหนียวเหนอะ ใช้รับประทานและครีมทั่วไป\n- **W/O (water-in-oil):** หยดน้ำในน้ำมัน — ให้ความรู้สึกมัน กันน้ำ ใช้เป็น emollient\n\n**ทดสอบชนิด:** \n- Dilution test: เจือจางด้วยน้ำได้ = O/W\n- Dye test: ย้อมด้วยสีละลายน้ำแล้วกระจายทั่ว = O/W\n\n**HLB ของ emulsifier กำหนดชนิด:** HLB ต่ำ → W/O, HLB สูง → O/W"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ความไม่คงตัวของอิมัลชัน",
+          "body_md": "ปรากฏการณ์ความไม่คงตัวของ emulsion (ออกสอบบ่อย):\n\n- **Creaming:** หยดลอยขึ้น (หรือ sedimentation จมลง) แยกเป็นชั้น แต่ **กลับคืนได้ (reversible)** ด้วยการเขย่า — อธิบายด้วย Stokes' law\n- **Flocculation:** หยดจับกลุ่มแต่ยังไม่รวมตัว — reversible\n- **Coalescence:** หยดรวมตัวเป็นหยดใหญ่ขึ้น — นำไปสู่...\n- **Cracking / Breaking:** อิมัลชันแตกแยกชั้นถาวร **(irreversible)**\n- **Phase inversion:** เปลี่ยนชนิด O/W ↔ W/O\n\n**คุมความคงตัว:** เลือก emulsifier และ HLB ที่เหมาะ, ลดขนาดหยด, เพิ่มความหนืดของ continuous phase"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "ระบบ HLB และการเลือก emulsifier",
+          "body_md": "**HLB (Hydrophilic-Lipophilic Balance)** เป็นค่าบ่งบอกความชอบน้ำ/น้ำมันของสารลดแรงตึงผิว (0–20)\n\n| ค่า HLB | การใช้งาน |\n|---|---|\n| 3–6 | emulsifier ของ **W/O** |\n| 7–9 | สารทำให้เปียก (wetting) |\n| 8–18 | emulsifier ของ **O/W** |\n| 13–16 | สารช่วยละลาย/ทำความสะอาด (detergent) |\n| 15–18 | solubilizing agent |\n\n**เทคนิค:** มักผสม surfactant 2 ตัว (ชอบน้ำ + ชอบน้ำมัน) เพื่อให้ได้ HLB รวมตามต้องการ และฟิล์มที่ผิวหยดแน่นขึ้น\n\nตัวอย่าง: Tween (HLB สูง, ชอบน้ำ) + Span (HLB ต่ำ, ชอบน้ำมัน)"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Caking และฉลาก \"เขย่าก่อนใช้\"",
+          "body_md": "**Caking** = ตะกอนใน suspension จับตัวกันแน่นเป็นก้อนแข็งที่ก้นขวด เขย่าแล้วไม่กระจายกลับ → ขนาดยาที่ได้ **ไม่สม่ำเสมอ** (ผู้ป่วยได้ยามากเกินหรือน้อยเกิน)\n\n**ป้องกัน:** ทำเป็น flocculated system, เพิ่มความหนืด, ลดขนาดอนุภาค\n\n**ฉลากบังคับ:**\n- Suspension และ emulsion ต้องติด **\"เขย่าขวดก่อนใช้\" (Shake well before use)**\n- ยาปฏิชีวนะชนิดผงผสมน้ำ (reconstituted) → เก็บตู้เย็น ใช้ภายใน 7–14 วันตามฉลาก\n\n**ห้ามแช่แข็ง** emulsion เพราะทำให้แตก (cracking) ถาวร"
+        }
+      ]
+    },
+    {
+      "title_th": "ยากึ่งแข็ง: ขี้ผึ้ง ครีม เจล เพสต์",
+      "subtitle_th": "Semisolid bases, classification, rheology",
+      "icon": "🧴",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "ointment",
+        "ขี้ผึ้ง",
+        "cream",
+        "ครีม",
+        "gel",
+        "paste",
+        "semisolid base",
+        "rheology",
+        "thixotropy",
+        "absorption base"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "ภาพรวมยากึ่งแข็ง (Semisolids)",
+          "body_md": "**ยากึ่งแข็ง** ใช้ทาเฉพาะที่บนผิวหนังหรือเยื่อเมือก ออกฤทธิ์เฉพาะที่หรือดูดซึมเข้าสู่ร่างกาย (transdermal)\n\n**ชนิดหลัก:**\n- **Ointment (ขี้ผึ้ง):** ฐานน้ำมัน/ไขมัน ไม่มีน้ำหรือมีน้อย เหนียวมัน ให้ความชุ่มชื้น/occlusive\n- **Cream (ครีม):** ระบบ emulsion (O/W หรือ W/O) เนื้อนุ่ม ทาง่าย\n- **Gel (เจล):** ระบบกึ่งแข็งจากพอลิเมอร์พองตัวในน้ำ ใส ไม่มัน ล้างออกง่าย\n- **Paste (เพสต์):** ขี้ผึ้งที่มีผงของแข็งมาก (>20–50%) ข้นแข็ง ปกป้องผิวเป็นชั้นหนา (เช่น zinc oxide paste)\n\nการเลือกฐานขึ้นกับตำแหน่ง สภาพผิว (แห้ง/ชื้น) และการปลดปล่อยยา"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "การจำแนกฐานขี้ผึ้ง (Ointment Bases) — 4 กลุ่ม",
+          "body_md": "| กลุ่มฐาน | คุณสมบัติ | ตัวอย่าง |\n|---|---|---|\n| **Oleaginous (hydrocarbon)** | น้ำมันล้วน occlusive สูง ไม่ผสมน้ำ ล้างยาก | white/yellow petrolatum, paraffin |\n| **Absorption** | ดูดซับน้ำได้ (มี w/o emulsifier) ทาแล้วผสมสารคัดหลั่งได้ | lanolin, hydrophilic petrolatum |\n| **Water-removable (O/W)** | ล้างน้ำออกง่าย ไม่มัน | hydrophilic ointment, vanishing cream |\n| **Water-soluble** | ไม่มีน้ำมัน ละลายน้ำหมด | PEG ointment (polyethylene glycol) |\n\n**จำ:** occlusive/ชุ่มชื้นสุด = oleaginous; ล้างง่ายสุด = water-soluble (PEG)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ครีม เจล และเพสต์",
+          "body_md": "**Cream:**\n- **O/W cream (vanishing cream):** ล้างออกง่าย ซึมไว ไม่เหนอะ — เหมาะผิวมัน/รอยพับ\n- **W/O cream (cold cream):** มัน กันน้ำ ให้ความชุ่มชื้น — เหมาะผิวแห้ง\n\n**Gel:**\n- เกิดจาก gelling agent (carbomer/Carbopol, cellulose derivatives, alginate) พองตัวในน้ำเป็นโครงตาข่าย 3 มิติ\n- ใส เย็น ไม่มัน เหมาะหนังศีรษะ/บริเวณมีขน\n- Carbomer ต้อง **neutralize ด้วยด่าง** (เช่น TEA, NaOH) จึงจะข้นเป็นเจล\n\n**Paste:**\n- ผงของแข็งสูง ดูดซับสารคัดหลั่ง แข็งคงรูป ปกป้องแผล (zinc oxide paste, Lassar's paste)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "รีโอโลยี (Rheology) ของยากึ่งแข็ง",
+          "body_md": "**Rheology** คือการศึกษาการไหลและการเปลี่ยนรูปของสาร สำคัญต่อการทา การบีบหลอด และการคงตัว\n\n**ประเภทการไหล:**\n- **Newtonian:** ความหนืดคงที่ (เช่น น้ำ, น้ำมันใส) — ไม่ขึ้นกับแรงเฉือน\n- **Non-Newtonian:** ความหนืดเปลี่ยนตามแรงเฉือน\n  - **Pseudoplastic (shear-thinning):** หนืดน้อยลงเมื่อเฉือนมาก — ส่วนใหญ่ของเจล/พอลิเมอร์\n  - **Plastic (Bingham):** ต้องมี yield value ก่อนจึงเริ่มไหล\n  - **Dilatant (shear-thickening):** หนืดมากขึ้นเมื่อเฉือนมาก (suspension ผงเข้มข้น)\n\nยากึ่งแข็งที่ดีควร **shear-thinning** คือบีบ/ทาแล้วลื่น แต่อยู่นิ่งแล้วคงรูปไม่ไหลเยิ้ม"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "Thixotropy: ประโยชน์ในเภสัชภัณฑ์",
+          "body_md": "**Thixotropy** = สมบัติที่ความหนืดลดลงเมื่อถูกเขย่า/กวน (เฉือน) และ **ค่อย ๆ กลับมาข้นเมื่อตั้งทิ้งไว้** (time-dependent)\n\n**ประโยชน์:**\n- **Suspension:** ขณะตั้งนิ่งจะข้น → อนุภาคไม่ตกตะกอน; เขย่าแล้วเหลว → เทและตวงได้ง่าย\n- **ครีม/เจล:** บีบจากหลอดได้ง่าย ทาแล้วคงรูป ไม่ไหลเยิ้ม\n- **ยาฉีด IM แบบ depot:** ฉีดผ่านเข็มได้ง่าย แล้วข้นกลับเป็น depot ที่จุดฉีด\n\nThixotropy จึงช่วยทั้ง **ความคงตัวทางกายภาพ** และ **ความสะดวกในการใช้**"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำฐานขี้ผึ้ง: \"Oily Absorbs Water Soluble\"",
+          "body_md": "เรียงฐานขี้ผึ้ง 4 กลุ่มจาก \"มันสุด → ล้างง่ายสุด\":\n\n**O**leaginous — มันสุด, occlusive, ล้างยาก (petrolatum)\n**A**bsorption — ดูดน้ำได้บ้าง (lanolin)\n**W**ater-removable — O/W ล้างน้ำออกง่าย (hydrophilic ointment)\n**S**oluble (water-soluble) — ละลายน้ำหมด ไม่มันเลย (PEG)\n\nยิ่งลงไปด้านล่าง → ชอบน้ำมากขึ้น ล้างออกง่ายขึ้น แต่ occlusive/ชุ่มชื้นน้อยลง"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ข้อควรระวังในการเลือกฐานและการทายา",
+          "body_md": "**หลักการเลือกฐานตามสภาพผิว:**\n- **แผลเปียก/มีสารคัดหลั่ง** → ใช้ฐานที่ดูดซับน้ำ (cream O/W, paste) ไม่ใช้ occlusive ointment (กักความชื้น แผลแฉะ)\n- **ผิวแห้ง/ลอก** → ใช้ ointment หรือ W/O cream (เพิ่มความชุ่มชื้น)\n\n**ข้อควรระวัง:**\n- **Lanolin** อาจก่อภูมิแพ้สัมผัส (contact allergy)\n- **PEG base** อาจดูดน้ำจากแผลและไม่เข้ากับยาบางตัว (เช่น penicillin เสื่อม)\n- ทา **corticosteroid topical** บริเวณกว้าง/occlusion นานเสี่ยงดูดซึมเข้าระบบและผิวบาง (skin atrophy)\n- ปริมาณการทาวัดด้วย **FTU (fingertip unit)** ~0.5 g"
+        }
+      ]
+    },
+    {
+      "title_th": "ผงและแกรนูล: ขนาดอนุภาคและการไหล",
+      "subtitle_th": "Powders, particle size, flow, geometric dilution",
+      "icon": "🥄",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "powder",
+        "ผงยา",
+        "granule",
+        "particle size",
+        "ขนาดอนุภาค",
+        "flow property",
+        "angle of repose",
+        "Carr index",
+        "geometric dilution",
+        "sieve"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "ผงยาและแกรนูล (Powders & Granules)",
+          "body_md": "**Powder (ผง):** ของแข็งแบ่งละเอียด ใช้รับประทาน (ละลายน้ำ), โรยภายนอก (dusting powder), หรือเป็นวัตถุดิบตอกเม็ด/บรรจุแคปซูล\n\n**Granule (แกรนูล):** ผงที่จับรวมเป็นเม็ดเล็กหลายอนุภาค (aggregate) มีขนาดใหญ่กว่าผง\n- **flow และ compressibility ดีกว่าผง** จึงนิยมเป็นขั้นกลางก่อนตอกเม็ด\n- ลดการแยกชั้น (segregation) และฝุ่นฟุ้ง\n- ใช้เป็น effervescent granules, dry syrup (ผสมน้ำก่อนใช้)\n\nการทำแกรนูลช่วยปรับปรุงคุณสมบัติการไหลและความสม่ำเสมอของขนาดยา (content uniformity)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ขนาดอนุภาคและผลต่อยา",
+          "body_md": "**ขนาดอนุภาค (particle size)** มีผลต่อหลายด้าน:\n\n- **การละลายและการดูดซึม:** อนุภาคเล็ก → พื้นที่ผิวมาก → ละลายเร็วขึ้น (ตาม Noyes-Whitney) → bioavailability สูงขึ้น (สำคัญในยาละลายน้ำยาก เช่น griseofulvin micronized)\n- **การไหล:** อนุภาคเล็กเกินไป (ละเอียดมาก) ไหลแย่ลง (cohesive/แรงดึงดูดสูง)\n- **Content uniformity:** ขนาดสม่ำเสมอลดการแยกชั้น\n- **Sedimentation:** อนุภาคเล็กตกช้า (Stokes)\n\n**Micronization** = ลดขนาดให้เล็กมาก (<10 µm) ใช้กับยาสูดพ่นและยาที่ละลายยาก"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "การวัดและคัดขนาดด้วยตะแกรง (Sieving)",
+          "body_md": "**Sieve analysis** เป็นวิธีวัดการกระจายขนาดอนุภาคที่ใช้บ่อยที่สุด\n\n- ใช้ชุดตะแกรงเรียงจากรูใหญ่บน → รูเล็กล่าง เขย่าแล้วชั่งน้ำหนักผงบนแต่ละชั้น\n- ขนาดรูบอกด้วย **mesh number** — **mesh สูง = รูเล็ก = ผงละเอียด** (mesh number แปรผกผันกับขนาดรู)\n\n**วิธีวัดขนาดอื่น ๆ:**\n- Microscopy (ดูรูปร่างได้)\n- Laser diffraction (เร็ว, ช่วงกว้าง)\n- Sedimentation (Andreasen pipette, ใช้ Stokes' law)\n- Coulter counter (electrical sensing)\n\nUSP จัดระดับความละเอียดผง เช่น very fine powder ผ่านตะแกรงเบอร์สูง"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "คุณสมบัติการไหลของผง (Flow Properties)",
+          "body_md": "การไหลของผงสำคัญต่อความสม่ำเสมอของน้ำหนักเม็ด/แคปซูล มีดัชนีวัด:\n\n**1. Angle of repose (มุมกองนิ่ง):** มุมของกองผงที่เทลงพื้น\n- < 30° = ไหลดีเยี่ยม; 30–40° = พอใช้; > 40° = ไหลแย่\n\n**2. Carr's Compressibility Index:**\n$$Carr = \\frac{\\rho_{tapped} - \\rho_{bulk}}{\\rho_{tapped}} \\times 100$$\n- < 15% = ไหลดี; > 25% = ไหลแย่\n\n**3. Hausner ratio = ρtapped / ρbulk:**\n- < 1.25 = ไหลดี; > 1.5 = ไหลแย่\n\n**ปรับปรุงการไหล:** ทำแกรนูล, เพิ่ม glidant (colloidal silica), ลดผงละเอียดที่ cohesive, ควบคุมความชื้น"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Geometric Dilution: การเจือจางแบบเรขาคณิต",
+          "body_md": "**Geometric dilution** เป็นเทคนิคผสมผงเมื่อ **ตัวยาปริมาณน้อยมาก** ต้องกระจายเข้ากับสารช่วยปริมาณมากให้ทั่ว (สำคัญในยา potent เช่น ผงที่มีตัวยา mg เดียวในผงหลายกรัม)\n\n**วิธีทำ:**\n1. นำตัวยาปริมาณน้อยใส่ครก\n2. เติมสารเจือจางในปริมาณ **เท่ากับ** ปริมาณยาที่มีในครก ผสมให้ทั่ว\n3. เติมสารเจือจางเพิ่มเป็น **2 เท่า** ของปริมาณที่มีในครกทุกครั้ง ผสมให้ทั่ว\n4. ทำซ้ำจนหมดสารเจือจาง\n\nเทคนิคนี้ป้องกันการกระจายตัวยาไม่สม่ำเสมอ (ได้ขนาดยาแม่นยำ) เป็นความรู้ที่ออกสอบเรื่องการปรุงยา"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "Eutectic mixture และผงเปียก",
+          "body_md": "**Eutectic mixture:** เมื่อผสมผงบางคู่เข้าด้วยกัน จุดหลอมเหลวรวมลดลงจนกลายเป็น **ของเหลวเหนียวที่อุณหภูมิห้อง**\n\nคู่ที่เกิด eutectic บ่อย: **camphor, menthol, thymol, phenol, aspirin**\n\n**แก้ปัญหา:** บดแยกกัน, ใช้สารดูดซับ (adsorbent เช่น light magnesium oxide, kaolin) แยกผงแต่ละตัว, หรือเปลี่ยนรูปแบบยา\n\n**ประโยชน์:** EMLA cream (lidocaine + prilocaine eutectic) ใช้ผลของ eutectic ทำให้ยาชาความเข้มข้นสูงในเฟสน้ำมัน ซึมผ่านผิวได้ดี"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ข้อควรระวังของผงและการแยกชั้น (Segregation)",
+          "body_md": "**Segregation (demixing):** ผงที่ผสมแล้วแยกชั้นกลับ เกิดเมื่ออนุภาคต่างขนาด/ความหนาแน่นมาก ทำให้ **content uniformity เสีย** (ขนาดยาไม่สม่ำเสมอ)\n\n**ป้องกัน:** ลดผลต่างขนาดอนุภาค, ทำแกรนูล, หลีกเลี่ยงการสั่นสะเทือน/ขนส่งรุนแรง\n\n**ข้อควรระวังอื่น:**\n- ผงดูดความชื้น (hygroscopic เช่น hyoscyamine, ephedrine) → จับก้อน/เสื่อม ต้องบรรจุกันชื้น\n- ผงที่ฟุ้งกระจาย (potent/cytotoxic) → อันตรายต่อผู้ปฏิบัติงาน ต้องใช้ตู้ดูดอากาศ\n- **Dusting powder บนแผลเปิด** ต้องปราศจากเชื้อ และ **ห้ามใช้บนแผลที่มีสารคัดหลั่งมาก** (จับเป็นก้อน)"
+        }
+      ]
+    },
+    {
+      "title_th": "ยาฉีดและผลิตภัณฑ์ปราศจากเชื้อ",
+      "subtitle_th": "Parenterals, sterility, tonicity, pyrogens, aseptic technique",
+      "icon": "💉",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "parenteral",
+        "ยาฉีด",
+        "sterile",
+        "ปราศจากเชื้อ",
+        "tonicity",
+        "isotonic",
+        "pyrogen",
+        "endotoxin",
+        "aseptic technique",
+        "depyrogenation"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "ผลิตภัณฑ์ยาฉีด (Parenterals) และชนิด",
+          "body_md": "**Parenteral** คือยาที่ให้โดยการฉีดผ่านผิวหนัง เลี่ยงทางเดินอาหาร ต้อง **ปราศจากเชื้อ (sterile)** เสมอ\n\n**วิถีฉีดหลัก:**\n- **IV (intravenous):** เข้าหลอดเลือดดำ — ออกฤทธิ์เร็วสุด, bioavailability 100%, ให้ปริมาตรมากได้\n- **IM (intramuscular):** เข้ากล้าม — ดูดซึมปานกลาง, depot ได้, ปริมาตรจำกัด (~2–5 mL)\n- **SC (subcutaneous):** ใต้ผิวหนัง — ดูดซึมช้า สม่ำเสมอ (เช่น insulin, heparin)\n- **ID (intradermal):** ในชั้นหนังแท้ — ปริมาตรน้อยมาก (เช่น TB test, BCG)\n\n**รูปแบบ:** สารละลายฉีด, suspension ฉีด, emulsion (lipid IV), ผง reconstitute, LVP/SVP"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ข้อกำหนดของยาฉีด",
+          "body_md": "ยาฉีดทุกชนิดต้องผ่านข้อกำหนดต่อไปนี้:\n\n1. **Sterility (ปราศจากเชื้อ)** — ต้องไม่มีจุลชีพมีชีวิต\n2. **Free of pyrogens (ไม่มีไพโรเจน)** — โดยเฉพาะ LVP\n3. **Particulate-free** — ไม่มีอนุภาคแขวนลอย (สำหรับสารละลายฉีด)\n4. **Isotonicity / tonicity ที่เหมาะสม** — ใกล้เคียงเลือด (~290 mOsm/kg)\n5. **pH เหมาะสม** — ใกล้เคียง physiologic เพื่อลดการระคายและเพิ่มความคงตัว\n6. **Stability และความเข้ากันได้** (compatibility) เมื่อผสม\n\n**SVP** = Small Volume Parenteral (≤100 mL); **LVP** = Large Volume Parenteral (>100 mL เช่น IV fluid) — LVP ห้ามใส่สารกันเสีย (bacteriostatic) เพราะปริมาตรมาก"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Tonicity: Isotonic, Hypotonic, Hypertonic",
+          "body_md": "**Tonicity** = ความเข้มข้นของสารละลายเทียบกับของเหลวในเซลล์/เลือด มีผลต่อเซลล์เม็ดเลือดแดง:\n\n- **Isotonic** (~0.9% NaCl, 5% dextrose): เซลล์ปกติ — เป้าหมายของยาฉีด\n- **Hypotonic** (เจือจางกว่า): น้ำเข้าเซลล์ → เซลล์บวมและ **แตก (hemolysis)**\n- **Hypertonic** (เข้มข้นกว่า): น้ำออกจากเซลล์ → เซลล์เหี่ยว (**crenation**)\n\n**การปรับ isotonic:** เติม NaCl หรือ dextrose โดยคำนวณด้วย **sodium chloride equivalent (E value)** หรือวิธี freezing-point depression (ทำให้ ΔTf = 0.52°C เท่าน้ำตาเลือด)\n\nสารละลายล้างตา/จมูกควร isotonic เพื่อลดการระคาย"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ไพโรเจนและเอนโดท็อกซิน (Pyrogens)",
+          "body_md": "**Pyrogens** = สารที่ทำให้เกิดไข้เมื่อเข้าสู่กระแสเลือด ที่สำคัญที่สุดคือ **endotoxin** (lipopolysaccharide, LPS) จากผนังเซลล์แบคทีเรียแกรมลบ\n\n**คุณสมบัติ:** ทนความร้อน (autoclave ปกติฆ่าเชื้อได้แต่ไม่ทำลาย endotoxin), ละลายน้ำ, ผ่าน filter ทั่วไปได้\n\n**Depyrogenation (กำจัดไพโรเจน):**\n- **Dry heat 250°C ≥ 30 นาที** (สำหรับแก้ว/โลหะ)\n- Ultrafiltration, reverse osmosis (สำหรับน้ำ)\n- ใช้ WFI (Water for Injection) ที่ปราศจากไพโรเจน\n\n**การทดสอบ:** LAL test (Limulus Amebocyte Lysate) — ไวและนิยม; หรือ rabbit pyrogen test"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "การทำให้ปราศจากเชื้อ (Sterilization)",
+          "body_md": "**วิธีทำให้ปราศจากเชื้อ:**\n- **Moist heat (autoclave):** 121°C, 15 psi, 15 นาที — วิธีหลัก สำหรับสารทนความร้อน/น้ำ\n- **Dry heat:** 160–180°C นานกว่า — สำหรับน้ำมัน ผง แก้ว โลหะ (และ depyrogenation ที่ 250°C)\n- **Filtration (0.22 µm):** สำหรับสารไวความร้อน (heat-labile เช่น โปรตีน, ยาปฏิชีวนะบางตัว) — กรองเชื้อออก แต่ **ไม่กำจัด endotoxin/virus**\n- **Gas (ethylene oxide):** อุปกรณ์พลาสติกไวความร้อน\n- **Radiation (gamma):** อุปกรณ์ใช้ครั้งเดียว\n\n**Terminal sterilization** (ฆ่าเชื้อในภาชนะสุดท้าย) ดีกว่า aseptic filling เมื่อทำได้"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำข้อกำหนดยาฉีด: \"SPF-TIP\"",
+          "body_md": "ข้อกำหนดของยาฉีด จำด้วย **SPF-TIP**:\n\n**S**terile — ปราศจากเชื้อ\n**P**yrogen-free — ไม่มีไพโรเจน\n**F**ree of particulates — ไม่มีอนุภาค\n**T**onicity — isotonic เหมาะสม\n**I**deal pH — ใกล้ physiologic\n**P**ure & stable — บริสุทธิ์และคงตัว\n\nเสริม: LVP **ห้ามใส่สารกันเสีย**; ยาฉีด multiple-dose vial จึงจำเป็นต้องมี preservative ส่วน single-dose ไม่ต้อง"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Aseptic technique และ Clean room",
+          "body_md": "**Aseptic technique** ใช้เมื่อผลิตภัณฑ์ **ไม่สามารถ terminal sterilize** ได้ — ต้องผสม/บรรจุในสภาวะปลอดเชื้อตั้งแต่ต้น\n\n**หลักการสำคัญ:**\n- ทำในตู้ **Laminar Air Flow (LAF)** หรือ Biological Safety Cabinet ภายใน clean room\n- **Horizontal LAF:** อากาศไหลออกหาผู้ปฏิบัติ — สำหรับยาทั่วไป (ปกป้องผลิตภัณฑ์)\n- **Vertical LAF / BSC:** สำหรับยา **cytotoxic/อันตราย** (ปกป้องทั้งผลิตภัณฑ์และผู้ปฏิบัติ)\n- ทำงานห่างจากตัวกรอง HEPA ไม่บังทางลม (first air)\n- ฆ่าเชื้อพื้นผิวด้วย 70% IPA, สวมชุด gown/gloves ปลอดเชื้อ\n\n**ระดับ clean room (ISO):** ISO 5 (Class 100) สำหรับจุด critical filling\n\nการละเลย aseptic technique → ปนเปื้อนเชื้อ เสี่ยง sepsis ถึงชีวิต"
+        }
+      ]
+    },
+    {
+      "title_th": "ความคงตัวและจลนศาสตร์การสลายตัว",
+      "subtitle_th": "Degradation kinetics, t90, Arrhenius, Q10",
+      "icon": "📉",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "stability",
+        "ความคงตัว",
+        "zero order",
+        "first order",
+        "shelf life",
+        "t90",
+        "Arrhenius",
+        "Q10",
+        "hydrolysis",
+        "oxidation"
+      ],
       "cards": [
         {
           "card_type": "concept",
           "title_th": "ปฏิกิริยาการเสื่อมสลายของยา",
-          "body_md": "**กลไกหลักที่ทำให้ยาเสื่อม**\n- **Hydrolysis:** น้ำสลายพันธะ (เช่น aspirin, ester, β-lactam)\n- **Oxidation:** ออกซิเจน/แสงทำปฏิกิริยา (เช่น adrenaline, vitamin C)\n- **Photolysis:** แสงสลายตัว\n\nแก้ไขด้วยการควบคุม pH, ใส่สารกันเสีย/antioxidant, บรรจุภาชนะกันแสง"
+          "body_md": "กลไกหลักที่ทำให้ตัวยาเสื่อมสลาย:\n\n- **Hydrolysis (น้ำสลายพันธะ):** พบมากที่สุด เกิดกับ **ester, amide, lactam (β-lactam)** เช่น aspirin, procaine, penicillin — เร่งโดยน้ำ, pH สุดขั้ว (กรด/ด่าง)\n- **Oxidation:** ออกซิเจน/อนุมูลอิสระทำปฏิกิริยา เช่น adrenaline, vitamin C (ascorbic acid), vitamin A — มักเปลี่ยนสี\n- **Photolysis (แสงสลาย):** UV/แสง เช่น nifedipine, sodium nitroprusside, riboflavin\n- **Isomerization, Polymerization, Decarboxylation**\n\n**การป้องกัน:** ควบคุม pH (buffer), ลดน้ำ/ความชื้น, เติม **antioxidant** (เช่น sodium metabisulfite), ไล่ออกซิเจนด้วยก๊าซเฉื่อย (N₂), chelating agent (EDTA), บรรจุภาชนะกันแสง"
         },
         {
           "card_type": "concept",
-          "title_th": "อุณหภูมิและอัตราการสลายตัว",
-          "body_md": "ตามหลัก Arrhenius **อุณหภูมิสูงขึ้นเร่งการสลายตัว**\n\nนิยามอุณหภูมิเก็บรักษา (ตาม USP):\n- เย็นจัด/แช่แข็ง: ต่ำกว่า -10°C\n- ตู้เย็น: 2-8°C\n- เย็น (cool): 8-15°C\n- อุณหภูมิห้องควบคุม: 20-25°C"
+          "title_th": "อันดับปฏิกิริยา: Zero-order vs First-order",
+          "body_md": "**Zero-order kinetics:** อัตราการสลายตัว **คงที่** ไม่ขึ้นกับความเข้มข้น\n$$C = C_0 - k_0 t$$\n- กราฟ **C vs t เป็นเส้นตรง**, หน่วย k = ความเข้มข้น/เวลา\n- พบใน suspension (ยาส่วนที่ละลายคงที่), controlled-release\n\n**First-order kinetics:** อัตราการสลาย **แปรผันตามความเข้มข้น**\n$$\\ln C = \\ln C_0 - k t$$\n- กราฟ **ln C vs t เป็นเส้นตรง**, หน่วย k = 1/เวลา\n- พบในการสลายตัวของยาในสารละลายส่วนใหญ่\n- **t½ คงที่** ไม่ขึ้นกับความเข้มข้นเริ่มต้น\n\n**จำ:** zero-order → C ตรง; first-order → ln C ตรง"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "อายุยา (Shelf-life) และ t90",
+          "body_md": "**Shelf-life (t90)** = เวลาที่ความเข้มข้นยาเหลือ **90%** ของค่าเริ่มต้น (สลายไป 10% ตามเกณฑ์ที่ยอมรับได้)\n\n**สูตรคำนวณ t90:**\n- **Zero-order:** $$t_{90} = \\frac{0.1 \\, C_0}{k_0}$$ (ขึ้นกับ C₀)\n- **First-order:** $$t_{90} = \\frac{0.105}{k}$$ (มาจาก ln(100/90); ไม่ขึ้นกับ C₀)\n\n**t½ (first-order)** $= 0.693/k$\n\n**ตัวอย่าง:** ยา first-order มี k = 0.0035/เดือน → t90 = 0.105/0.0035 = 30 เดือน\n\nค่าที่ฉลากแสดงคือ expiration date ซึ่งคำนวณจากข้อมูลความคงตัว"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Arrhenius equation และ accelerated stability",
+          "body_md": "**Arrhenius equation** อธิบายผลของอุณหภูมิต่ออัตราการสลายตัว:\n$$k = A \\, e^{-E_a / RT}$$\n\nหรือรูปเส้นตรง: $$\\ln k = \\ln A - \\frac{E_a}{R} \\cdot \\frac{1}{T}$$\n\n- พล็อต **ln k vs 1/T** ได้เส้นตรง ความชัน = −Ea/R\n- **อุณหภูมิสูงขึ้น → k สูงขึ้น → สลายตัวเร็วขึ้น**\n\n**Accelerated stability testing:** เก็บยาที่อุณหภูมิสูง (เช่น 40°C/75%RH) เพื่อเร่งการสลายตัว แล้วใช้ Arrhenius ทำนาย shelf-life ที่อุณหภูมิเก็บปกติ (25°C) — ประหยัดเวลาแทนการรอจริง"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "Q10: กฎอย่างง่ายของอุณหภูมิ",
+          "body_md": "**Q10** = อัตราส่วนการเปลี่ยนแปลงของอัตราการสลายตัวเมื่ออุณหภูมิ **เปลี่ยน 10°C**\n\nโดยทั่วไป **Q10 ≈ 2–4** (อุณหภูมิเพิ่ม 10°C → สลายเร็วขึ้น 2–4 เท่า)\n\n**สูตรประมาณ shelf-life ใหม่:**\n$$t_{90(T_2)} = \\frac{t_{90(T_1)}}{Q_{10}^{\\,\\Delta T/10}}$$\n\n**ตัวอย่าง:** ถ้า Q10 = 3 และยาเก็บที่อุณหภูมิสูงขึ้น 10°C → shelf-life ลดลง 3 เท่า\n\nนี่คือเหตุผลที่ยาหลายชนิดต้องเก็บ **ตู้เย็น (2–8°C)** เพื่อชะลอการสลายตัว — เป็นการประยุกต์ใช้ Arrhenius แบบเร็ว"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำการสลายตัว: \"HOP\" — Hydrolysis, Oxidation, Photolysis",
+          "body_md": "วิถีการสลายตัวหลัก 3 อย่าง จำด้วย **HOP** + วิธีแก้:\n\n**H**ydrolysis (น้ำ) → ลดน้ำ/ความชื้น, ปรับ pH buffer, ทำเป็นผงแห้ง reconstitute\n**O**xidation (O₂) → เติม antioxidant, ไล่ O₂ ด้วย N₂, ใส่ EDTA (จับโลหะเร่งปฏิกิริยา), ปิดแน่น\n**P**hotolysis (แสง) → บรรจุภาชนะกันแสง (amber glass), เก็บในที่มืด\n\nเสริม: ตัวเร่งทั่วไปคือ **อุณหภูมิ (Arrhenius)** → เก็บเย็นชะลอได้ทุกปฏิกิริยา"
         },
         {
           "card_type": "warning",
-          "title_th": "Beyond-use date หลังเปิดใช้",
-          "body_md": "**วันหมดอายุ ≠ วันที่ใช้ได้หลังเปิด**\n\n- ยาน้ำปฏิชีวนะที่ผสมแล้ว มักใช้ได้ **7-14 วัน** ตามฉลาก (มักเก็บตู้เย็น)\n- ยาหยอดตา/หูหลังเปิด มักใช้ได้ไม่เกิน **1 เดือน**\n- insulin ที่ใช้แล้วเก็บอุณหภูมิห้องได้ตามที่ระบุ\n\nบันทึกวันเปิดใช้บนภาชนะเสมอ"
+          "title_th": "สัญญาณการเสื่อมและ Beyond-Use Date",
+          "body_md": "**สัญญาณทางกายภาพที่บ่งชี้ยาเสื่อม:**\n- ยาเม็ดเปลี่ยนสี/แตกร่วน, แคปซูลนิ่ม/ติดกัน\n- ยาน้ำขุ่น/ตกตะกอน/เปลี่ยนสี/มีกลิ่นเปลี่ยน\n- ครีม/อิมัลชันแยกชั้น (cracking)\n- ยาฉีดมีอนุภาค/ขุ่น → **ห้ามใช้**\n- ASA มีกลิ่นน้ำส้มสายชู (acetic acid จาก hydrolysis)\n\n**Expiration date ≠ Beyond-Use Date (BUD):**\n- **Expiration:** วันหมดอายุของผลิตภัณฑ์ที่ยังไม่เปิด\n- **BUD:** วันที่ใช้ได้หลังเปิด/ผสม — ยาน้ำปฏิชีวนะผสมแล้ว 7–14 วัน, ยาหยอดตา ~1 เดือนหลังเปิด\n\n**บันทึกวันเปิดใช้บนภาชนะเสมอ** และเก็บตามสภาวะที่ระบุ"
+        }
+      ]
+    },
+    {
+      "title_th": "บรรจุภัณฑ์และสารกันเสีย",
+      "subtitle_th": "Packaging, preservatives, container types",
+      "icon": "📦",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "packaging",
+        "บรรจุภัณฑ์",
+        "preservative",
+        "สารกันเสีย",
+        "container",
+        "glass type",
+        "antimicrobial preservation",
+        "paraben",
+        "benzalkonium",
+        "light-resistant"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "หน้าที่ของบรรจุภัณฑ์ยา",
+          "body_md": "**บรรจุภัณฑ์ (packaging)** ปกป้องและรักษาคุณภาพยาตลอดอายุการใช้งาน:\n\n**หน้าที่หลัก:**\n- **ปกป้อง (protection):** จากความชื้น แสง ออกซิเจน เชื้อ แรงกระแทก\n- **บรรจุและจ่าย (containment/delivery):** ตวงขนาดยาแม่นยำ\n- **ให้ข้อมูล (information):** ฉลาก ชื่อยา ขนาด วันหมดอายุ\n- **ความปลอดภัย:** child-resistant closure, tamper-evident\n\n**แบ่งระดับ:**\n- **Primary packaging:** สัมผัสยาโดยตรง (ขวด แผง blister vial)\n- **Secondary packaging:** กล่องหุ้มชั้นนอก (เอกสารกำกับยา)\n- **Tertiary:** บรรจุเพื่อขนส่ง"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ประเภทภาชนะตามคำนิยาม USP",
+          "body_md": "**คำนิยามภาชนะ (USP):**\n- **Well-closed container:** ป้องกันสิ่งแปลกปลอม/การสูญเสียยาในการใช้งานปกติ\n- **Tight container:** ป้องกัน **ของเหลว ของแข็ง ไอ ความชื้น** เข้า/ออก, ปิดสนิทใช้ซ้ำได้\n- **Hermetic container:** ปิดสนิท **กันอากาศและก๊าซ** ผ่านไม่ได้ (เช่น ampoule แก้วปิดผนึก, ยาฉีด)\n- **Light-resistant container:** ป้องกันแสง (amber glass หรือทึบแสง) สำหรับยาไวแสง\n- **Single-dose vs Multiple-dose:** ครั้งเดียว vs หลายครั้ง (multiple-dose ต้องมีสารกันเสีย)\n\n**ระดับการปกป้องความแน่น:** hermetic > tight > well-closed"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "วัสดุบรรจุภัณฑ์: แก้ว พลาสติก ยาง",
+          "body_md": "**แก้ว (Glass) — แบ่ง 4 type ตามความทนสารเคมี:**\n- **Type I (borosilicate):** ทนสารเคมีสูงสุด, ปลดปล่อยด่างน้อยมาก — ใช้กับยาฉีดและยาไวต่อ pH\n- **Type II (treated soda-lime):** ผ่านการ dealkalized — ยาฉีด pH กรด\n- **Type III (soda-lime):** ทั่วไป — ผงยา, ยาน้ำที่ไม่ไวต่อด่าง\n- **Type IV / NP:** ใช้ภายนอก/oral\n\n**พลาสติก:** เบา ไม่แตก แต่อาจมี leaching ของ plasticizer, การ permeation ของก๊าซ/ไอน้ำ, sorption ดูดซับตัวยา (เช่น nitroglycerin, insulin เกาะ PVC)\n\n**ยาง (rubber closure):** จุกยาฉีด — ระวัง coring และ leaching"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "สารกันเสียและการกันเชื้อ (Antimicrobial Preservation)",
+          "body_md": "**สารกันเสีย (preservative)** เติมในยาหลายโดส (multi-dose) โดยเฉพาะยาน้ำและยาฉีด multiple-dose เพื่อยับยั้งการเจริญของเชื้อที่ปนเปื้อนระหว่างใช้งาน\n\n**กลุ่มสารกันเสียที่พบบ่อย:**\n- **Parabens** (methyl-, propylparaben): ใช้ในยาน้ำ/กึ่งแข็ง กว้างขวาง\n- **Benzalkonium chloride:** ยาหยอดตา/จมูก (quaternary ammonium)\n- **Benzyl alcohol:** ยาฉีด multiple-dose — **ห้ามในทารกแรกเกิด** (gasping syndrome)\n- **Chlorhexidine, Phenol, Cresol, Thimerosal**\n- **Sorbic acid / Benzoic acid:** ออกฤทธิ์ดีที่ **pH กรด** (<5)\n- **Sodium benzoate**"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "หลักการเลือกและประเมินสารกันเสีย",
+          "body_md": "**คุณสมบัติของสารกันเสียที่ดี:**\n- ออกฤทธิ์กว้าง (แบคทีเรีย รา ยีสต์) ที่ความเข้มข้นต่ำ\n- ละลายและคงตัวในผลิตภัณฑ์, ไม่ทำปฏิกิริยากับตัวยา/บรรจุภัณฑ์\n- ไม่เป็นพิษ/ไม่ระคายต่อผู้ป่วย\n\n**ข้อควรระวังด้าน pH:** ประสิทธิภาพขึ้นกับ **รูปที่ไม่แตกตัว (unionized)** — กรดอ่อน (benzoic, sorbic) ออกฤทธิ์ดีที่ pH ต่ำ\n\n**Antimicrobial Effectiveness Test (AET / preservative challenge test):** ทดสอบความสามารถของระบบกันเสียในการลดเชื้อตามเกณฑ์ USP <51>\n\n**ปรากฏการณ์สำคัญ:** preservative อาจถูก **partition เข้าเฟสน้ำมัน** หรือถูก **ดูดซับโดยภาชนะพลาสติก/ยาง** → ลดความเข้มข้นในเฟสน้ำที่ออกฤทธิ์"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำระดับภาชนะ: \"WTH-L\"",
+          "body_md": "เรียงระดับการปกป้องของภาชนะตาม USP จากน้อย → มาก ด้วย **WTH** + L:\n\n**W**ell-closed — กันสิ่งแปลกปลอมในการใช้ปกติ (ระดับพื้นฐาน)\n**T**ight — กันของเหลว/ของแข็ง/ไอ/ความชื้น\n**H**ermetic — กันอากาศและก๊าซ (แน่นสุด เช่น ampoule)\n\n**L**ight-resistant — เพิ่มเติม: กันแสง (amber/ทึบ) สำหรับยาไวแสง\n\nจำง่าย: \"ปิดดี → แน่น → ผนึกสนิทกันก๊าซ\" และเลือกกันแสงเมื่อยา photolabile"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ข้อควรระวังของสารกันเสียและบรรจุภัณฑ์",
+          "body_md": "**ข้อห้าม/ข้อควรระวังสารกันเสีย:**\n- **Benzyl alcohol ห้ามในทารกแรกเกิด** → gasping syndrome (เสียชีวิตได้)\n- **Benzalkonium chloride** ในยาหยอดตาเรื้อรัง → เสียหายต่อ corneal epithelium และทำให้ contact lens เสีย → ห้ามหยอดขณะใส่คอนแทคเลนส์\n- **Parabens, sulfites** → ก่อภูมิแพ้ในบางคน (sulfite allergy เสี่ยงในผู้ป่วยหอบหืด)\n- **LVP และยาฉีด single-dose ห้ามมีสารกันเสีย**; ยาฉีดเข้าน้ำไขสันหลัง/intrathecal และในตา (intraocular) ต้องปราศจากสารกันเสีย\n\n**บรรจุภัณฑ์:**\n- ยาไวแสง (เช่น nifedipine) ต้องใช้ภาชนะกันแสงเสมอ\n- ระวัง sorption ของยา (insulin, nitroglycerin, diazepam) เข้าสาย/ถุง PVC → ใช้สายพิเศษ (non-PVC)"
         }
       ]
     }

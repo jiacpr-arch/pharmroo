@@ -2,60 +2,453 @@
   "subject": "Psychiatric",
   "unit": {
     "title_th": "จิตเวช",
-    "description_th": "ยารักษาภาวะซึมเศร้าและโรคจิต พร้อมอาการไม่พึงประสงค์ที่ออกสอบบ่อย",
-    "icon": "💊"
+    "description_th": "คอร์สครบวงจรสำหรับสอบใบประกอบวิชาชีพเภสัชกรรม ครอบคลุมยาต้านซึมเศร้า (SSRI, SNRI, TCA, MAOI, atypical), ยารักษาโรคจิต, mood stabilizer (lithium, valproate, lamotrigine), ยาคลายกังวล, ยานอนหลับ, ยา ADHD และการจัดการภาวะติดสารเสพติด พร้อม ADR และ drug interactions ที่ออกสอบบ่อย",
+    "icon": "🧠"
   },
   "lessons": [
     {
-      "title_th": "ภาวะซึมเศร้าและยา Antidepressant",
-      "subtitle_th": "SSRI first-line และ serotonin syndrome",
+      "title_th": "โรคซึมเศร้าและกลุ่มยา Antidepressant",
+      "subtitle_th": "SSRI, SNRI, TCA, MAOI, atypical – กลไก onset และการเลือกยา",
       "icon": "🧠",
-      "est_minutes": 5,
-      "xp_reward": 10,
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "โรคซึมเศร้า",
+        "depression",
+        "SSRI",
+        "SNRI",
+        "TCA",
+        "MAOI",
+        "fluoxetine",
+        "sertraline",
+        "mirtazapine",
+        "bupropion"
+      ],
       "cards": [
         {
           "card_type": "concept",
-          "title_th": "SSRI เป็นยาตัวแรก",
-          "body_md": "**SSRI** (fluoxetine, sertraline, escitalopram) เป็น first-line ในโรคซึมเศร้า เพราะปลอดภัยกว่า TCA เมื่อ overdose\n\n- ออกฤทธิ์เต็มที่ใน **2–4 สัปดาห์**\n- ADR: คลื่นไส้, นอนไม่หลับ, sexual dysfunction\n- ระวัง hyponatremia (SIADH) ในผู้สูงอายุ"
+          "title_th": "Major Depressive Disorder และ monoamine hypothesis",
+          "body_md": "**Major Depressive Disorder (MDD)** วินิจฉัยเมื่อมีอาการ ≥ 5 ข้อ นาน ≥ 2 สัปดาห์ โดยต้องมี **depressed mood** หรือ **anhedonia** (เบื่อหน่ายสิ้นความสนใจ) อย่างน้อย 1 ข้อ\n\nจำด้วย **SIG E CAPS**: **S**leep, **I**nterest, **G**uilt, **E**nergy, **C**oncentration, **A**ppetite, **P**sychomotor, **S**uicidality\n\n**Monoamine hypothesis:** ภาวะซึมเศร้าสัมพันธ์กับการขาด **serotonin (5-HT), norepinephrine (NE), dopamine (DA)** ที่ synapse ยาต้านซึมเศร้าจึงเพิ่มสารสื่อประสาทเหล่านี้\n\nสำคัญ: ระดับสารสื่อประสาทเพิ่มทันที แต่ผลทางคลินิกใช้เวลา **2–4 สัปดาห์** เพราะต้องอาศัย receptor downregulation/neuroadaptation"
         },
         {
-          "card_type": "warning",
-          "title_th": "Serotonin syndrome",
-          "body_md": "เกิดจาก serotonin มากเกินไป (เช่น SSRI + MAOI, tramadol, triptan)\n\nอาการสำคัญ 3 กลุ่ม:\n- **Mental status**: สับสน กระวนกระวาย\n- **Autonomic**: ไข้ หัวใจเต้นเร็ว เหงื่อแตก\n- **Neuromuscular**: clonus, hyperreflexia\n\nหยุดยาทันที + supportive care"
+          "card_type": "concept",
+          "title_th": "SSRI – first-line และเป็นยาที่ใช้บ่อยที่สุด",
+          "body_md": "**SSRI (Selective Serotonin Reuptake Inhibitor)** ยับยั้งการเก็บกลับ 5-HT ที่ presynaptic เป็น **first-line** เพราะปลอดภัยเมื่อ overdose มากกว่า TCA/MAOI\n\n**ตัวยาในกลุ่ม:** fluoxetine, sertraline, paroxetine, escitalopram, citalopram, fluvoxamine\n\n**จุดเด่นแต่ละตัว:**\n- **fluoxetine** – half-life ยาวมาก (active metabolite norfluoxetine), discontinuation syndrome น้อย\n- **sertraline** – ปลอดภัยในโรคหัวใจ, ใช้ได้ขณะให้นมบุตร\n- **escitalopram** – drug interaction น้อย\n- **citalopram/escitalopram** – ระวัง **QT prolongation** (citalopram จำกัด ≤ 40 mg/วัน, ผู้สูงอายุ ≤ 20 mg)\n- **paroxetine** – anticholinergic สูง, discontinuation syndrome รุนแรงสุด, หลีกเลี่ยงในตั้งครรภ์ (cardiac defect)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "SNRI และ TCA",
+          "body_md": "**SNRI (Serotonin-Norepinephrine Reuptake Inhibitor):** venlafaxine, desvenlafaxine, duloxetine\n- เพิ่มทั้ง 5-HT และ NE\n- เด่นในผู้ป่วยที่มี **อาการปวดร่วม** (neuropathic pain, fibromyalgia – duloxetine)\n- **venlafaxine** ขนาดสูงเพิ่ม BP (ติดตามความดัน)\n\n**TCA (Tricyclic Antidepressant):** amitriptyline, nortriptyline, imipramine, clomipramine\n- ยับยั้ง reuptake 5-HT/NE แต่ block muscarinic, H1, alpha-1 receptor ด้วย → ADR มาก\n- **อันตรายเมื่อ overdose** (cardiotoxicity: QRS widening, arrhythmia) → ห้ามในผู้ที่เสี่ยงฆ่าตัวตาย\n- ใช้ในปวดประสาท, ปวดศีรษะไมเกรนป้องกัน, enuresis"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "MAOI และ atypical (mirtazapine, bupropion)",
+          "body_md": "**MAOI (Monoamine Oxidase Inhibitor):** phenelzine, tranylcypromine, isocarboxazid, selegiline\n- ใช้น้อยมาก (last-line) เพราะเสี่ยง **hypertensive crisis** กับอาหาร tyramine และ serotonin syndrome\n- ต้อง washout SSRI ก่อนเริ่ม MAOI (fluoxetine ต้องเว้น 5 สัปดาห์)\n\n**Atypical antidepressants:**\n- **mirtazapine** – block 5-HT2/5-HT3 + alpha-2 antagonist; ทำให้ **ง่วง + เจริญอาหาร น้ำหนักขึ้น** → ดีในผู้สูงวัยที่นอนไม่หลับ/น้ำหนักลด\n- **bupropion** – ยับยั้ง reuptake NE/DA; **ไม่ทำให้ sexual dysfunction และไม่เพิ่มน้ำหนัก**; ช่วยเลิกบุหรี่; แต่ **ลด seizure threshold** (ห้ามในผู้ป่วยลมชัก, bulimia, anorexia)\n- **trazodone** – ใช้ขนาดต่ำเป็นยานอนหลับ; ระวัง priapism"
         },
         {
           "card_type": "tip",
-          "title_th": "ห้ามหยุด SSRI กะทันหัน",
-          "body_md": "หยุดยาทันทีเสี่ยง **discontinuation syndrome**: วิงเวียน คลื่นไส้ เหมือนไข้หวัด ชาแบบไฟช็อต\n\n- **Paroxetine** และ **venlafaxine** ครึ่งชีวิตสั้น → อาการรุนแรงสุด\n- ค่อยๆ ลดยา (taper)"
+          "title_th": "หลักการเลือกยาและการ titrate",
+          "body_md": "**เลือกยาตามผู้ป่วย (patient-specific):**\n- นอนไม่หลับ + น้ำหนักลด → **mirtazapine**\n- กังวลเรื่อง sexual ADR / อยากเลิกบุหรี่ → **bupropion**\n- มีอาการปวดเรื้อรังร่วม → **duloxetine (SNRI)**\n- ผู้สูงอายุ/โรคหัวใจ → **sertraline, escitalopram**\n\n**หลักการรักษา:**\n- ลองยา 1 ตัวเต็มขนาด นาน **4–6 สัปดาห์** ก่อนตัดสินว่าไม่ได้ผล\n- ตอบสนองดีให้รักษาต่อ **6–12 เดือน** หลังหาย(continuation) เพื่อกัน relapse\n- เป็นซ้ำหลายครั้ง → รักษาต่อระยะยาว (maintenance)\n- เริ่ม low dose ค่อย ๆ เพิ่ม โดยเฉพาะผู้สูงอายุ (\"start low, go slow\")"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำกลุ่มยาและกลไก: \"Some Specialists Take Money Always\"",
+          "body_md": "ลำดับกลุ่มยาต้านซึมเศร้า:\n- **S**SRI – first-line, เพิ่ม 5-HT\n- **S**NRI – เพิ่ม 5-HT + NE (เด่นปวด)\n- **T**CA – แรงแต่ ADR มาก, อันตราย OD\n- **M**AOI – last-line, ระวัง tyramine\n- **A**typical – mirtazapine, bupropion, trazodone\n\nจำ onset: **\"4 สัปดาห์กว่าจะได้ผล\"** – เตือนผู้ป่วยอย่าหยุดยาเร็วเพราะคิดว่าไม่ได้ผล และระวังช่วงแรกที่ energy กลับมาก่อน mood ดีขึ้น → **เสี่ยงฆ่าตัวตายเพิ่ม** (โดยเฉพาะอายุ < 25 ปี)"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Black box: ความเสี่ยงฆ่าตัวตายในวัยรุ่น",
+          "body_md": "ยาต้านซึมเศร้าทุกตัวมี **FDA black box warning** เรื่องเพิ่มความคิด/พฤติกรรมฆ่าตัวตายในผู้ป่วยอายุ **< 25 ปี** โดยเฉพาะช่วง **1–2 เดือนแรก** หรือเมื่อปรับขนาดยา\n\n**กลไก:** ในช่วงแรก พลังงานและแรงจูงใจ (psychomotor) ฟื้นก่อนที่อารมณ์จะดีขึ้น → ผู้ป่วยที่เคยเฉื่อยชาอาจมีแรงลงมือทำร้ายตนเอง\n\n**ปฏิบัติ:** ติดตามใกล้ชิดในช่วงต้น, ให้ยาครั้งละน้อย (จำกัดปริมาณในมือ), แนะนำญาติเฝ้าระวังสัญญาณเตือน"
         }
       ]
     },
     {
-      "title_th": "ยารักษาโรคจิต (Antipsychotics)",
-      "subtitle_th": "Typical vs Atypical, EPS และ metabolic ADR",
-      "icon": "💊",
-      "est_minutes": 5,
-      "xp_reward": 10,
+      "title_th": "ADR และข้อควรระวังของยาต้านซึมเศร้า",
+      "subtitle_th": "Serotonin syndrome, discontinuation, bleeding, hyponatremia, sexual ADR",
+      "icon": "⚠️",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "serotonin syndrome",
+        "discontinuation syndrome",
+        "hyponatremia",
+        "SIADH",
+        "bleeding",
+        "sexual dysfunction",
+        "อาการไม่พึงประสงค์",
+        "SSRI",
+        "tramadol"
+      ],
       "cards": [
         {
-          "card_type": "concept",
-          "title_th": "Typical vs Atypical",
-          "body_md": "- **Typical** (haloperidol, chlorpromazine): block D2 แรง → **EPS สูง**\n- **Atypical** (risperidone, olanzapine, quetiapine, clozapine): EPS น้อยกว่า แต่ **metabolic ADR สูง** (น้ำหนักขึ้น, เบาหวาน, ไขมันสูง)"
+          "card_type": "warning",
+          "title_th": "Serotonin syndrome – ภาวะฉุกเฉิน",
+          "body_md": "เกิดจาก **serotonin มากเกินไป** มักจากการใช้ยา serotonergic ร่วมกัน เช่น SSRI/SNRI + **MAOI, tramadol, triptan, linezolid, methylene blue, St. John's wort, dextromethorphan**\n\n**Triad อาการ (Hunter criteria):**\n1. **Mental status** – สับสน กระวนกระวาย agitation\n2. **Autonomic instability** – ไข้สูง หัวใจเต้นเร็ว ความดันแกว่ง เหงื่อแตก ม่านตาขยาย\n3. **Neuromuscular** – **clonus (เด่นที่สุด)**, hyperreflexia, เกร็ง, สั่น\n\n**เริ่มเร็ว** (ภายในชั่วโมง–24 ชม. หลังเพิ่ม/เติมยา)\n\n**รักษา:** หยุดยาทันที + supportive care; รายรุนแรงให้ **cyproheptadine** (5-HT2 antagonist), ลดไข้, benzodiazepine คุม agitation"
         },
         {
           "card_type": "concept",
-          "title_th": "EPS 4 แบบ",
-          "body_md": "อาการนอกพีระมิด (Extrapyramidal symptoms):\n1. **Acute dystonia**: กล้ามเนื้อเกร็ง (เกิดเร็วเป็นชั่วโมง)\n2. **Akathisia**: กระวนกระวาย อยู่ไม่สุข\n3. **Parkinsonism**: สั่น เกร็ง เคลื่อนช้า\n4. **Tardive dyskinesia**: ขยับปาก/ลิ้นซ้ำ (เกิดช้า มักถาวร)"
+          "title_th": "Serotonin syndrome vs NMS",
+          "body_md": "ทั้งคู่มีไข้ + เกร็ง แต่แยกกันได้:\n\n| ลักษณะ | Serotonin syndrome | NMS |\n|---|---|---|\n| สาเหตุ | ยา serotonergic | ยา **dopamine antagonist** (antipsychotic) |\n| เริ่ม | เร็ว (ชม.–วัน) | ช้า (วัน–สัปดาห์) |\n| Neuromuscular | **hyperreflexia, clonus** | **\"lead-pipe\" rigidity**, hyporeflexia |\n| ม่านตา | ขยาย (mydriasis) | ปกติ |\n| ลำไส้ | เสียงลำไส้เพิ่ม | ปกติ/ลด |\n\nกุญแจ: **clonus/hyperreflexia = serotonin**, **rigidity ทื่อ ๆ + bradyreflexia = NMS**"
         },
         {
           "card_type": "warning",
-          "title_th": "Clozapine = agranulocytosis",
-          "body_md": "**Clozapine** ได้ผลดีในรายดื้อยา แต่เสี่ยง **agranulocytosis** (เม็ดเลือดขาวต่ำรุนแรง)\n\n- ต้องตรวจ ANC/CBC สม่ำเสมอ\n- ระวัง myocarditis, seizure, น้ำลายไหลมาก\n\nNMS: ไข้สูง เกร็ง autonomic instability + CK สูง → ภาวะฉุกเฉิน"
+          "title_th": "Discontinuation syndrome – อย่าหยุดกะทันหัน",
+          "body_md": "หยุด SSRI/SNRI กะทันหันหลังใช้ ≥ 6 สัปดาห์ เสี่ยง **discontinuation syndrome**\n\nจำอาการด้วย **FINISH**:\n- **F**lu-like (อ่อนเพลีย ปวดเมื่อย)\n- **I**nsomnia\n- **N**ausea\n- **I**mbalance (วิงเวียน)\n- **S**ensory disturbance (**\"brain zaps\"** ชาแบบไฟช็อต)\n- **H**yperarousal (วิตกกังวล หงุดหงิด)\n\n**เสี่ยงสูงสุด:** ยา half-life สั้น → **paroxetine, venlafaxine**\n**เสี่ยงต่ำสุด:** **fluoxetine** (half-life ยาว)\n\n**ป้องกัน:** ค่อย ๆ ลดยา (taper) ภายในหลายสัปดาห์ ไม่ใช่ภาวะติดยา แต่เป็น physiologic withdrawal"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "SSRI กับเลือดออกและ hyponatremia",
+          "body_md": "**เลือดออกง่าย (bleeding risk):**\n- 5-HT จำเป็นต่อการเกาะกลุ่มของเกล็ดเลือด; SSRI ลด serotonin ในเกล็ดเลือด → เลือดออกง่าย โดยเฉพาะ **GI bleeding**\n- เสี่ยงเพิ่มเมื่อใช้ร่วม **NSAIDs, antiplatelet, anticoagulant** → พิจารณาให้ PPI ร่วม\n\n**Hyponatremia / SIADH:**\n- SSRI/SNRI กระตุ้นการหลั่ง ADH → โซเดียมต่ำ\n- เสี่ยงสูงใน **ผู้สูงอายุ, ใช้ยาขับปัสสาวะ, น้ำหนักตัวน้อย**\n- มักเกิดในไม่กี่สัปดาห์แรก; อาการ: อ่อนเพลีย สับสน ชัก\n- ตรวจ Na baseline และติดตามในผู้สูงอายุ"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Sexual dysfunction และ ADR อื่น",
+          "body_md": "**Sexual dysfunction** เป็น ADR ที่ทำให้ผู้ป่วยหยุดยาบ่อย (≥ 30–50% ของ SSRI/SNRI):\n- ความต้องการลดลง, ถึงจุดสุดยอดยาก (delayed orgasm), แข็งตัวยาก\n- **แก้ไข:** เปลี่ยนเป็น **bupropion** หรือ **mirtazapine** (ทั้งคู่ sexual ADR ต่ำ), ลดขนาด หรือเติม bupropion\n\n**ADR อื่นตามกลุ่ม:**\n- SSRI: คลื่นไส้ (พบบ่อยช่วงแรก มักหายเอง), นอนไม่หลับ/ง่วง, น้ำหนักขึ้นเมื่อใช้นาน\n- TCA: anticholinergic (ปากแห้ง ท้องผูก ปัสสาวะคั่ง), orthostatic hypotension, น้ำหนักขึ้น, **QT/QRS prolongation**\n- mirtazapine: ง่วง, เจริญอาหาร น้ำหนักขึ้น"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "คู่ยาที่ต้องระวัง serotonin syndrome",
+          "body_md": "เภสัชกรต้องคัดกรองคู่ยาเสี่ยงก่อนจ่าย:\n- **SSRI/SNRI + tramadol** – คู่ที่พบบ่อยในเวชปฏิบัติไทย (tramadol เพิ่ม serotonin)\n- **SSRI + triptan** (ยาไมเกรน sumatriptan)\n- **SSRI + linezolid** (เป็น MAOI อ่อน)\n- **SSRI + MAOI** – ห้ามเด็ดขาด ต้อง washout\n- **SSRI + dextromethorphan** (ยาแก้ไอ)\n- **SSRI + St. John's wort** (สมุนไพร)\n\nเมื่อเปลี่ยนจาก fluoxetine ไป MAOI ต้อง **washout 5 สัปดาห์** (เพราะ half-life ยาว); SSRI อื่นเว้น ~2 สัปดาห์"
         },
         {
           "card_type": "mnemonic",
-          "title_th": "จำ EPS: ADAPT",
-          "body_md": "**A**cute **D**ystonia → **A**kathisia → **P**arkinsonism → **T**ardive dyskinesia\n\nเรียงตามเวลาที่เกิด (เร็วไปช้า)\n\nรักษา dystonia/parkinsonism ด้วย anticholinergic (benztropine); akathisia ด้วย beta-blocker (propranolol)"
+          "title_th": "จำ discontinuation: \"FINISH\" และ bleeding",
+          "body_md": "**FINISH** = อาการหยุดยา: **F**lu-like, **I**nsomnia, **N**ausea, **I**mbalance, **S**ensory (brain zaps), **H**yperarousal\n\nจำยาเสี่ยง discontinuation สูง = **\"Par-Ven\"** (**Par**oxetine, **Ven**lafaxine – half-life สั้น)\n\nจำ bleeding: **\"SSRI + NSAID = GI bleed\"** → ให้ PPI ป้องกัน\n\nจำ hyponatremia: ผู้สูงอายุ + thiazide + SSRI = **low sodium** → ตรวจ Na"
+        }
+      ]
+    },
+    {
+      "title_th": "โรควิตกกังวลและยาคลายกังวล",
+      "subtitle_th": "Benzodiazepines, buspirone, SSRI/SNRI เป็น first-line",
+      "icon": "😰",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "โรควิตกกังวล",
+        "anxiety",
+        "benzodiazepine",
+        "diazepam",
+        "lorazepam",
+        "buspirone",
+        "GAD",
+        "flumazenil",
+        "dependence"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "โรควิตกกังวลและการรักษาระยะยาว",
+          "body_md": "**Anxiety disorders** ที่พบบ่อย: Generalized Anxiety Disorder (GAD), Panic Disorder, Social Anxiety Disorder\n\n**First-line ระยะยาว = SSRI หรือ SNRI** (เช่น escitalopram, sertraline, venlafaxine, duloxetine)\n- เหมือนซึมเศร้า ใช้เวลา **2–4 สัปดาห์** จึงได้ผลเต็มที่\n- เริ่มขนาดต่ำเพราะช่วงแรกอาจกระตุ้นให้กังวลมากขึ้น (jitteriness)\n\n**Benzodiazepine** ใช้ **ระยะสั้น/bridge** ระหว่างรอ SSRI ออกฤทธิ์ หรือ panic เฉียบพลัน — ไม่ใช่ยาคุมระยะยาวเพราะติดยา\n\nไม่ลืม: **CBT (psychotherapy)** มีประสิทธิภาพเทียบเท่ายาใน GAD/panic"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Benzodiazepine – กลไกและการจัดกลุ่ม",
+          "body_md": "**กลไก:** จับ **GABA-A receptor** ที่ benzodiazepine site → เพิ่ม **ความถี่** การเปิด Cl⁻ channel → hyperpolarize → ยับยั้งระบบประสาท (ต่างจาก barbiturate ที่เพิ่ม **ระยะเวลา** การเปิด channel)\n\n**ฤทธิ์:** คลายกังวล, ทำให้หลับ, คลายกล้ามเนื้อ, กันชัก\n\n**แบ่งตาม half-life:**\n- **สั้น/กลาง:** alprazolam, lorazepam, oxazepam, temazepam\n- **ยาว:** diazepam, clonazepam, chlordiazepoxide (มี active metabolite)\n\n**\"LOT\"** = lorazepam, oxazepam, temazepam – ไม่ผ่าน CYP (glucuronidation เท่านั้น) → **ปลอดภัยในโรคตับและผู้สูงอายุ**"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Benzodiazepine – การติดยาและถอนยา",
+          "body_md": "**Dependence & tolerance:** ใช้ต่อเนื่อง > 2–4 สัปดาห์ เกิดการพึ่งพา; หยุดกะทันหันเสี่ยง **withdrawal**\n\n**อาการถอน benzodiazepine:** วิตกกังวลรุนแรง (rebound), นอนไม่หลับ, สั่น, เหงื่อแตก, **ชัก (seizure)** — อันตรายถึงชีวิตคล้าย alcohol withdrawal\n- ยา half-life สั้น (alprazolam) ถอนเร็วและรุนแรงกว่า\n- **ต้อง taper ช้า ๆ** ห้ามหยุดทันที\n\n**ADR/ข้อควรระวัง:**\n- ง่วง สับสน ล้ม (โดยเฉพาะผู้สูงอายุ → อยู่ใน Beers list)\n- **กดการหายใจ** เมื่อร่วมกับ **opioid หรือ alcohol** (อันตรายถึงตาย)\n- ความจำเสื่อม (anterograde amnesia)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Flumazenil – ยาแก้พิษ benzodiazepine",
+          "body_md": "**Flumazenil** เป็น **competitive antagonist** ที่ GABA-A benzodiazepine site → กลับฤทธิ์ benzodiazepine (sedation, respiratory depression)\n\n**ข้อควรระวังสำคัญ:**\n- ใช้อย่างระมัดระวังใน overdose เพราะอาจ **กระตุ้นให้ชัก** โดยเฉพาะในผู้ที่ใช้ benzodiazepine เรื้อรัง (เกิด withdrawal seizure) หรือ co-ingest ยาที่ทำให้ชัก (TCA)\n- half-life สั้น → อาจ resedation ต้องให้ซ้ำ\n\nไม่ใช้ flumazenil เป็น routine ใน undifferentiated coma — supportive care (airway, ventilation) เป็นหลัก"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Buspirone – ยาคลายกังวลที่ไม่ติด",
+          "body_md": "**Buspirone** เป็น **5-HT1A partial agonist** ใช้ใน **GAD**\n\n**ข้อดี:**\n- **ไม่ทำให้ติดยา ไม่ง่วง ไม่กดหายใจ** ไม่ทำให้ความจำเสีย\n- ไม่มี withdrawal\n- ไม่เสริมฤทธิ์ alcohol\n\n**ข้อจำกัด:**\n- ออกฤทธิ์ช้า **1–2 สัปดาห์** → ไม่เหมาะกับ panic เฉียบพลันหรือใช้ as-needed\n- ใช้ได้เฉพาะ GAD ไม่ครอบคลุม panic/OCD\n- ห้ามร่วม MAOI; หลีกเลี่ยงน้ำเกรปฟรุต (CYP3A4)\n\nเหมาะกับผู้ป่วย GAD ที่มีประวัติ substance use (เลี่ยง benzodiazepine)"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "เลือกยาคลายกังวลให้เหมาะกับสถานการณ์",
+          "body_md": "- **GAD ระยะยาว** → SSRI/SNRI (first-line), buspirone (ทางเลือกไม่ติดยา)\n- **Panic attack เฉียบพลัน** → benzodiazepine ระยะสั้น (lorazepam, alprazolam) ระหว่างรอ SSRI\n- **มีประวัติติดสารเสพติด** → เลี่ยง benzodiazepine, ใช้ buspirone/SSRI\n- **Performance anxiety** (ตื่นเวที) → **propranolol** (beta-blocker) ลดอาการทางกาย (ใจสั่น มือสั่น)\n- **ผู้สูงอายุ** → เลี่ยง benzodiazepine (Beers); ถ้าจำเป็นใช้ \"LOT\" ขนาดต่ำ ระยะสั้น"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ benzodiazepine ปลอดภัยในตับ: \"LOT\"",
+          "body_md": "**LOT** = **L**orazepam, **O**xazepam, **T**emazepam\n- เมแทบอลิซึมแบบ **glucuronidation (phase II)** เท่านั้น ไม่ผ่าน CYP oxidation\n- ไม่มี active metabolite → **ปลอดภัยในโรคตับและผู้สูงอายุ** (ไม่สะสม)\n\nจำคู่อันตราย: **benzo + opioid + alcohol = respiratory depression / death**\n\nจำ antidote: **flumazenil** แต่ระวัง **seizure** ในคนใช้ benzo เรื้อรัง\n\nจำ buspirone: **\"Bus มาช้า\"** – ออกฤทธิ์ช้า 1–2 สัปดาห์ ใช้ as-needed ไม่ได้"
+        }
+      ]
+    },
+    {
+      "title_th": "โรคอารมณ์สองขั้วและ Mood Stabilizers",
+      "subtitle_th": "Lithium (TDM, toxicity), valproate, lamotrigine, carbamazepine",
+      "icon": "⚖️",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "bipolar",
+        "ไบโพลาร์",
+        "lithium",
+        "ลิเทียม",
+        "valproate",
+        "lamotrigine",
+        "carbamazepine",
+        "TDM",
+        "Stevens-Johnson",
+        "mood stabilizer"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "Bipolar disorder และหลักการรักษา",
+          "body_md": "**Bipolar disorder** มีช่วง **mania/hypomania** สลับกับ **depression**\n- **Bipolar I:** มี manic episode เต็มขั้น (≥ 7 วัน หรือต้องเข้า รพ.)\n- **Bipolar II:** hypomania + major depression (ไม่เคย mania เต็ม)\n\nManic: **DIG FAST** – **D**istractibility, **I**rritability/Insomnia, **G**randiosity, **F**light of ideas, **A**ctivity เพิ่ม, **S**peech (พูดเร็ว), **T**houghtlessness (เสี่ยง)\n\n**หลักการ:** ใช้ **mood stabilizer** หรือ **atypical antipsychotic** เป็นหลัก\n\n**สำคัญ:** **ห้ามให้ antidepressant เดี่ยว** ในผู้ป่วย bipolar → กระตุ้นให้เกิด mania (manic switch) หรือ rapid cycling; ต้องให้คู่กับ mood stabilizer"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Lithium – TDM และการติดตาม",
+          "body_md": "**Lithium** เป็น mood stabilizer มาตรฐาน ลดอัตราฆ่าตัวตายได้ดี **narrow therapeutic index**\n\n**Therapeutic range (serum):**\n- รักษาทั่วไป (maintenance): **0.6–1.0 mEq/L**\n- Acute mania: 0.8–1.2 mEq/L\n- **> 1.5 mEq/L = toxic**\n\n**เก็บระดับยา:** **trough** (12 ชม. หลัง dose สุดท้าย), ตรวจหลังเริ่ม/ปรับยา ~5 วัน แล้วทุก 3–6 เดือน\n\n**ขับทางไต 100% — ไม่เมแทบอลิซึมที่ตับ** → จับคู่กับ sodium/น้ำ: ถ้าขาดน้ำ/Na ต่ำ ไตจะดูดกลับ Li มากขึ้น → toxicity\n\n**Monitoring baseline & ระยะยาว:** การทำงานของไต (Cr, eGFR), **TSH (hypothyroidism)**, แคลเซียม, ECG, การตั้งครรภ์"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Lithium toxicity และ drug interactions",
+          "body_md": "**อาการพิษ lithium ตามระดับ:**\n- **เริ่มต้น (1.5–2.0):** คลื่นไส้ อาเจียน ท้องเสีย **tremor หยาบ** (coarse), อ่อนเพลีย\n- **ปานกลาง (2.0–2.5):** สับสน เดินเซ (ataxia), กล้ามเนื้อกระตุก, ตากระตุก\n- **รุนแรง (> 2.5):** ชัก, ไตวาย, หัวใจเต้นผิดจังหวะ, โคม่า → **hemodialysis**\n\n**ยาที่เพิ่มระดับ Li (ลดการขับ):**\n- **NSAIDs** (ยกเว้น aspirin/sulindac)\n- **ACEI / ARB**\n- **Thiazide diuretics**\n- ภาวะขาดน้ำ, low sodium diet\n\n**ADR เรื้อรัง:** hypothyroidism, **nephrogenic diabetes insipidus** (ปัสสาวะมาก กระหายน้ำ), น้ำหนักขึ้น, สิว, tremor ละเอียด\n\n**ตั้งครรภ์:** เสี่ยง **Ebstein's anomaly** (cardiac)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Valproate (valproic acid)",
+          "body_md": "**Valproate** ใช้ดีใน **acute mania, mixed episode, rapid cycling**\n- Therapeutic level ~50–125 mcg/mL\n\n**ADR สำคัญ:**\n- **Hepatotoxicity** (ตรวจ LFT), **pancreatitis**\n- **Thrombocytopenia**, hyperammonemia (สับสน)\n- น้ำหนักขึ้น, ผมร่วง, tremor, GI\n\n**Teratogen รุนแรง:** ทำให้ **neural tube defect (spina bifida)** และ IQ ลด → **ห้ามในหญิงตั้งครรภ์/วัยเจริญพันธุ์** ที่ไม่คุมกำเนิด\n\n**Interaction:** เป็น enzyme **inhibitor** → เพิ่มระดับ **lamotrigine** (ต้องลดขนาด lamotrigine ครึ่งหนึ่ง) และ phenobarbital; เพิ่มเสี่ยงผื่น SJS"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Lamotrigine และ Carbamazepine",
+          "body_md": "**Lamotrigine:**\n- เด่นใน **bipolar depression** และป้องกัน depressive episode (ไม่ค่อยคุม acute mania)\n- **ADR ร้ายแรง: Stevens-Johnson Syndrome (SJS) / TEN** → ต้อง **titrate ช้ามาก** (ค่อย ๆ เพิ่มหลายสัปดาห์)\n- ถ้าให้ร่วม **valproate** ต้องลดขนาดลงครึ่งหนึ่ง (valproate ยับยั้งการกำจัด lamotrigine)\n\n**Carbamazepine:**\n- ใช้ใน mania; **ADR:** SJS/TEN (เชื้อสายเอเชียตรวจ **HLA-B*1502** ก่อนใช้ – สำคัญในไทย!), agranulocytosis/aplastic anemia, **hyponatremia (SIADH)**, diplopia, ataxia\n- เป็น **CYP3A4 inducer แรง (และ autoinduction)** → ลดระดับยาหลายตัว (ยาคุมกำเนิด, warfarin)"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "เลือก mood stabilizer ตามสถานการณ์",
+          "body_md": "- **Classic euphoric mania / ลดฆ่าตัวตาย** → **lithium**\n- **Mixed/rapid cycling, mania เฉียบพลัน** → **valproate**\n- **Bipolar depression / maintenance ป้องกันซึมเศร้า** → **lamotrigine** หรือ quetiapine\n- **วัยเจริญพันธุ์/วางแผนมีบุตร** → เลี่ยง valproate (NTD), เลี่ยง lithium ไตรมาสแรก (Ebstein) → พิจารณา lamotrigine/antipsychotic\n- **Acute mania รุนแรง/agitation** → atypical antipsychotic (olanzapine, risperidone, quetiapine) ± mood stabilizer\n\nก่อนใช้ carbamazepine ในคนไทย/เอเชีย → ตรวจ **HLA-B*1502**"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ lithium interactions: \"NAACT\" เพิ่มระดับ Li",
+          "body_md": "ยา/ภาวะที่ **เพิ่ม** ระดับ lithium (เสี่ยงพิษ):\n- **N**SAIDs\n- **A**CE inhibitors\n- **A**RB\n- **C** = Ca (dehydration / low sodium)\n- **T**hiazide diuretics\n\nจำ TDM: **lithium 0.6–1.0, toxic > 1.5** เก็บ trough 12 ชม.\n\nจำ teratogen: **\"Valproate = spine (NTD)\", \"Lithium = heart (Ebstein)\", \"Lamotrigine + carbamazepine = skin (SJS)\"**\n\nจำคู่: **valproate ↑ lamotrigine → ลดขนาด lamotrigine ครึ่งหนึ่ง**"
+        }
+      ]
+    },
+    {
+      "title_th": "โรคจิตเภทและยารักษาโรคจิต",
+      "subtitle_th": "Typical vs atypical, positive/negative symptoms, dopamine pathways",
+      "icon": "🧩",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "schizophrenia",
+        "จิตเภท",
+        "antipsychotic",
+        "haloperidol",
+        "risperidone",
+        "olanzapine",
+        "clozapine",
+        "dopamine",
+        "D2",
+        "positive symptoms"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "Schizophrenia: positive vs negative symptoms",
+          "body_md": "**Schizophrenia** วินิจฉัยเมื่อมีอาการ ≥ 6 เดือน\n\n**Positive symptoms** (มีเกินปกติ – จากโดพามีนเกินใน mesolimbic):\n- ประสาทหลอน (hallucination), หลงผิด (delusion), พูด/พฤติกรรมสับสน (disorganized)\n- **ตอบสนองต่อยาต้านโดพามีนดี**\n\n**Negative symptoms** (ขาดหายไป – เชื่อมโยง mesocortical hypodopamine):\n- เฉยเมย (flat affect), พูดน้อย (alogia), ไร้แรงจูงใจ (avolition), เก็บตัว\n- **ตอบสนองต่อยาน้อย**; atypical ช่วยได้บ้าง\n\n**Cognitive symptoms:** สมาธิ ความจำใช้งานบกพร่อง"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Dopamine pathways 4 เส้น – กุญแจของ ADR",
+          "body_md": "การ block D2 ในแต่ละ pathway ให้ผลต่างกัน:\n\n1. **Mesolimbic** – โดพามีนเกิน = positive symptoms; block ที่นี่ = **ผลการรักษา**\n2. **Mesocortical** – โดพามีนต่ำ = negative/cognitive symptoms; block เพิ่ม = **อาการ negative แย่ลง**\n3. **Nigrostriatal** – ควบคุมการเคลื่อนไหว; block = **EPS / tardive dyskinesia**\n4. **Tuberoinfundibular** – โดพามีนยับยั้ง prolactin; block = **hyperprolactinemia** (น้ำนมไหล ประจำเดือนผิดปกติ เสื่อมสมรรถภาพ)\n\nเข้าใจ 4 เส้นนี้ = เข้าใจทั้งผลรักษาและ ADR ของ antipsychotic"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Typical (first-generation) antipsychotics",
+          "body_md": "**Typical = D2 antagonist เป็นหลัก** จัดตามความแรง (potency):\n\n**High potency:** haloperidol, fluphenazine, trifluoperazine\n- **EPS สูง, hyperprolactinemia สูง**\n- anticholinergic/sedation/hypotension ต่ำ\n\n**Low potency:** chlorpromazine, thioridazine\n- EPS ต่ำกว่า แต่ **anticholinergic, sedation, orthostatic hypotension สูง**\n- chlorpromazine: ผิวไวแสง, จอตาเปลี่ยนสี; thioridazine: QT prolongation\n\nจุดเด่น: haloperidol มีรูปฉีด long-acting (decanoate) สำหรับผู้ป่วยที่ไม่ร่วมมือกินยา"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Atypical (second-generation) antipsychotics",
+          "body_md": "**Atypical = block D2 + 5-HT2A** → **EPS น้อยกว่า** แต่ **metabolic ADR สูง**\n\n**ตัวยา:** risperidone, olanzapine, quetiapine, aripiprazole, ziprasidone, clozapine, paliperidone\n\n**จุดเด่นแต่ละตัว:**\n- **risperidone** – EPS และ **prolactin สูงสุดในกลุ่ม atypical** (dose-dependent)\n- **olanzapine** – **น้ำหนักขึ้น/metabolic มากสุด** ร่วมกับ clozapine\n- **quetiapine** – sedation สูง, EPS/prolactin ต่ำ; ใช้ใน bipolar; ระวังในผู้ป่วย Parkinson น้อย\n- **aripiprazole** – D2 **partial agonist** → metabolic/prolactin ต่ำ, akathisia พบได้\n- **ziprasidone** – metabolic ต่ำ แต่ **QT prolongation**\n- **clozapine** – ดีที่สุดในรายดื้อยา แต่ ADR อันตราย (ดูบทถัดไป)"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "การเลือกและใช้ antipsychotic",
+          "body_md": "- **First-episode / ทั่วไป** → atypical (risperidone, aripiprazole) มักเลือกก่อนเพราะ EPS ต่ำ\n- **ดื้อยา (ลองยา ≥ 2 ตัว ไม่ได้ผล)** → **clozapine** (ตัวเดียวที่มีหลักฐานชัดในรายดื้อยาและลดฆ่าตัวตาย)\n- **ไม่ร่วมมือกินยา (non-adherence)** → **LAI (long-acting injectable)** เช่น haloperidol decanoate, paliperidone, risperidone consta\n- **กังวลน้ำหนัก/เมตาบอลิก** → aripiprazole, ziprasidone, lurasidone\n\nผลการรักษา positive symptoms เห็นใน 1–2 สัปดาห์ แต่เต็มที่ใช้ ~4–6 สัปดาห์"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ dopamine pathway ↔ ADR",
+          "body_md": "Block D2 ที่แต่ละเส้น:\n- **Meso-Limbic** → **L** = รักษา positive (Lucky – อยากได้)\n- **Meso-Cortical** → **C** = negative แย่ลง (Can't think)\n- **Nigro-Striatal** → **S** = **EPS** (Stiff/Shaking)\n- **Tubero-infundibular** → **prolactin ↑** (น้ำนมไหล)\n\nจำ atypical = **\"5-HT2A + D2\"** → EPS น้อย, metabolic เยอะ\n\nจำตัวออกสอบ: **risperidone = prolactin, olanzapine = weight, ziprasidone = QT, aripiprazole = partial agonist, clozapine = ดื้อยา**"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ห้ามใช้ typical antipsychotic ใน Lewy body / Parkinson",
+          "body_md": "ผู้ป่วย **dementia with Lewy bodies** และ **Parkinson's disease** ไวต่อยา block D2 มาก\n- typical antipsychotic (haloperidol) ทำให้ **EPS รุนแรง / parkinsonism แย่ลง** และเสี่ยง NMS\n- ถ้าจำเป็นต้องคุม psychosis → ใช้ **quetiapine หรือ clozapine** (affinity D2 ต่ำ)\n\nนอกจากนี้ antipsychotic ทุกตัวมี **black box warning** เพิ่มอัตราตายเมื่อใช้คุมพฤติกรรมในผู้สูงอายุที่มี **dementia** → ใช้เท่าที่จำเป็น"
+        }
+      ]
+    },
+    {
+      "title_th": "ADR ของยารักษาโรคจิต",
+      "subtitle_th": "EPS, NMS, metabolic syndrome, QT, clozapine agranulocytosis",
+      "icon": "🚨",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "EPS",
+        "tardive dyskinesia",
+        "akathisia",
+        "dystonia",
+        "NMS",
+        "neuroleptic malignant syndrome",
+        "clozapine",
+        "agranulocytosis",
+        "metabolic syndrome",
+        "QT prolongation"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "EPS 4 แบบ – เวลาเกิดและการรักษา",
+          "body_md": "Extrapyramidal symptoms จาก block D2 ที่ nigrostriatal เรียงตามเวลาที่เกิด:\n\n1. **Acute dystonia** (ชั่วโมง–วัน): กล้ามเนื้อเกร็งเฉียบพลัน เช่น คอบิด (torticollis), ตาเหลือก (oculogyric crisis), ลิ้นแข็ง → **รักษา: anticholinergic (benztropine, diphenhydramine) IM/IV ทันที**\n2. **Akathisia** (วัน–สัปดาห์): กระวนกระวาย อยู่ไม่สุข ขยับขาตลอด → **รักษา: ลดขนาด, propranolol (beta-blocker), benzodiazepine**\n3. **Parkinsonism** (สัปดาห์–เดือน): สั่น เกร็ง เคลื่อนช้า → **รักษา: anticholinergic, ลดขนาด, เปลี่ยน atypical**\n4. **Tardive dyskinesia** (เดือน–ปี): ขยับปาก ลิ้น ใบหน้าซ้ำ ๆ — **มักถาวร** → **หยุด/ลดยา, เปลี่ยน clozapine, VMAT2 inhibitor (valbenazine, tetrabenazine); ห้ามให้ anticholinergic (ทำให้แย่ลง)**"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Neuroleptic Malignant Syndrome (NMS)",
+          "body_md": "**NMS** เป็นภาวะฉุกเฉินที่อันตรายถึงชีวิต จาก block D2 มากเกินไป (พบบ่อยกับ high-potency typical แต่เกิดได้กับ atypical)\n\n**4 ลักษณะหลัก (FEVER):**\n- **F**ever (ไข้สูงมาก)\n- **E**ncephalopathy (สับสน ระดับสติเปลี่ยน)\n- **V**itals ไม่เสถียร (autonomic: BP/HR แกว่ง เหงื่อแตก)\n- **E**levated CK / enzymes (rhabdomyolysis)\n- **R**igidity (\"lead-pipe\" เกร็งทั้งตัว) + **leukocytosis**\n\n**เกิดช้า** (วัน–สัปดาห์) ต่างจาก serotonin syndrome ที่เร็ว\n\n**รักษา:** หยุดยาทันที, supportive (ลดไข้ ให้สารน้ำ), **dantrolene** (คลายกล้ามเนื้อ), **bromocriptine / amantadine** (dopamine agonist)"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Metabolic syndrome จาก atypical",
+          "body_md": "Atypical antipsychotic (โดยเฉพาะ **olanzapine และ clozapine**) ทำให้:\n- **น้ำหนักขึ้น**\n- **เบาหวาน / น้ำตาลสูง** (อาจถึง DKA)\n- **ไขมันในเลือดสูง** (dyslipidemia)\n\n**\"ความเสี่ยง metabolic\" เรียงจากมากไปน้อย:** clozapine ≈ olanzapine > quetiapine ≈ risperidone > aripiprazole ≈ ziprasidone ≈ lurasidone (ต่ำสุด)\n\n**Monitoring (baseline และเป็นระยะ):** น้ำหนัก/BMI/รอบเอว, **FBS/HbA1c**, lipid profile, ความดันโลหิต\n- baseline → 12 สัปดาห์ → ทุกปี (น้ำหนักบ่อยกว่า)"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Clozapine – ADR อันตรายและการเฝ้าระวัง",
+          "body_md": "**Clozapine** มีประสิทธิภาพสูงสุดในรายดื้อยา แต่มี ADR ร้ายแรงหลายอย่าง:\n\n- **Agranulocytosis** (เม็ดเลือดขาว neutrophil ต่ำรุนแรง) → ต้องตรวจ **ANC สม่ำเสมอ** (ทุกสัปดาห์ 6 เดือนแรก แล้วถี่น้อยลง); หยุดยาถ้า ANC < 1500\n- **Myocarditis / cardiomyopathy** (โดยเฉพาะเดือนแรก)\n- **Seizure** (dose-dependent – ลด seizure threshold)\n- **Severe constipation / ileus** (อันตรายถึงตาย)\n- น้ำลายไหลมาก (sialorrhea), น้ำหนักขึ้น, sedation, **myocarditis**\n\n**ห้ามใช้ร่วมกับยาที่กด bone marrow**; ไม่หยุดยาเองกะทันหัน (rebound psychosis)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "QT prolongation และ ADR อื่น",
+          "body_md": "**QT prolongation** → เสี่ยง torsades de pointes:\n- เด่นใน **ziprasidone, thioridazine, haloperidol IV, pimozide**\n- ระวังร่วมกับยา QT อื่น (macrolide, fluoroquinolone, methadone, ondansetron), hypokalemia/hypomagnesemia\n- ตรวจ ECG และ electrolyte ในผู้เสี่ยง\n\n**ADR อื่นจาก receptor blockade:**\n- **Anticholinergic** (M1): ปากแห้ง ท้องผูก ตาพร่า ปัสสาวะคั่ง สับสน – low-potency typical, olanzapine, clozapine\n- **Antihistamine** (H1): ง่วง น้ำหนักขึ้น\n- **Alpha-1 block:** orthostatic hypotension\n- **Hyperprolactinemia:** risperidone, typical → น้ำนมไหล ประจำเดือนผิดปกติ ภาวะมีบุตรยาก กระดูกพรุน"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "ตารางจับคู่ ADR ↔ ตัวยา (ออกสอบบ่อย)",
+          "body_md": "| ADR | ตัวยาที่ต้องนึกถึง |\n|---|---|\n| EPS / prolactin สูง | haloperidol (typical), **risperidone** |\n| Metabolic / weight | **olanzapine, clozapine** |\n| Agranulocytosis | **clozapine** |\n| QT prolongation | **ziprasidone, thioridazine**, haloperidol IV |\n| Akathisia | **aripiprazole** (partial agonist) |\n| Sedation | quetiapine, chlorpromazine, clozapine |\n| Photosensitivity / จอตา | **chlorpromazine, thioridazine** |\n\nหลักการจัดการ EPS: dystonia/parkinsonism → **anticholinergic**; akathisia → **propranolol**; tardive dyskinesia → **VMAT2 inhibitor / clozapine** (ห้าม anticholinergic)"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ EPS: \"ADAPT\" และ NMS: \"FEVER\"",
+          "body_md": "**ADAPT** = ลำดับ EPS ตามเวลา:\n**A**cute **D**ystonia (เร็วสุด) → **A**kathisia → **P**arkinsonism → **T**ardive dyskinesia (ช้าสุด มักถาวร)\n\n**FEVER** = NMS:\n**F**ever, **E**ncephalopathy, **V**itals unstable, **E**levated CK, **R**igidity (lead-pipe)\n\nแยก NMS vs serotonin syndrome: **NMS = rigidity + bradyreflexia + เกิดช้า** ; **SS = clonus + hyperreflexia + เกิดเร็ว**\n\nรักษา NMS: **dantrolene + bromocriptine**"
+        }
+      ]
+    },
+    {
+      "title_th": "นอนไม่หลับและยานอนหลับกล่อมประสาท",
+      "subtitle_th": "Benzodiazepines, Z-drugs, melatonin agonist, orexin antagonist, sleep hygiene",
+      "icon": "🌙",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "insomnia",
+        "นอนไม่หลับ",
+        "Z-drugs",
+        "zolpidem",
+        "benzodiazepine",
+        "melatonin",
+        "ramelteon",
+        "orexin",
+        "suvorexant",
+        "sleep hygiene"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "Insomnia และหลักการรักษา",
+          "body_md": "**Insomnia** = หลับยาก ตื่นกลางดึก หรือตื่นเช้าเกินไป ร่วมกับมีผลกระทบตอนกลางวัน\n\n**หลักการ:**\n- **First-line = non-pharmacologic:** **sleep hygiene** และ **CBT-I (Cognitive Behavioral Therapy for Insomnia)** มีหลักฐานดีที่สุดและไม่มี ADR\n- ยานอนหลับใช้ **ระยะสั้น** เสริม ไม่ใช่ระยะยาว\n- หาสาเหตุรอง: ซึมเศร้า/วิตกกังวล, ปวด, OSA, คาเฟอีน/แอลกอฮอล์, ยา (steroid, decongestant)\n\n**เลือกยาตามชนิด insomnia:**\n- หลับยาก (sleep onset) → ยา onset เร็ว half-life สั้น (zolpidem, zaleplon, ramelteon)\n- ตื่นกลางดึก (maintenance) → suvorexant, low-dose doxepin, zolpidem CR"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Benzodiazepine และ Z-drugs",
+          "body_md": "**Benzodiazepine hypnotics:** temazepam, triazolam, estazolam, flurazepam\n- เพิ่ม GABA-A activity; ลดเวลาหลับ แต่รบกวนสถาปัตยกรรมการนอน (ลด REM/deep sleep)\n- ติดยา, tolerance, hangover, ล้มในผู้สูงอายุ\n\n**Z-drugs (non-benzodiazepine):** **zolpidem, zaleplon, eszopiclone**\n- จับ GABA-A เฉพาะ **alpha-1 subunit** → เด่นฤทธิ์ sedative (ไม่ค่อยมีฤทธิ์คลายกังวล/กันชัก)\n- ติดยาน้อยกว่า benzodiazepine เล็กน้อย แต่ยังมีได้\n- **ADR เฉพาะ: complex sleep behavior** (เดินละเมอ ขับรถ กินขณะหลับ – FDA boxed warning), amnesia\n- **zolpidem ในผู้หญิงให้ลดขนาด** (clearance ช้ากว่า)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Melatonin agonist และ orexin antagonist",
+          "body_md": "**Melatonin receptor agonist – ramelteon (และ melatonin):**\n- กระตุ้น MT1/MT2 receptor → ปรับ circadian rhythm, ช่วย **sleep onset**\n- **ไม่ติดยา ไม่มี withdrawal ไม่ใช่ controlled substance** → เลือกในผู้มีประวัติติดสาร/ผู้สูงอายุ\n- ระวังร่วม fluvoxamine (CYP1A2 inhibitor เพิ่มระดับ ramelteon)\n\n**Orexin receptor antagonist – suvorexant, lemborexant, daridorexant:**\n- บล็อก orexin (สารกระตุ้นความตื่นตัว) → ลด wakefulness\n- ช่วยทั้ง onset และ maintenance\n- ADR: ง่วงค้าง, ฝันผิดปกติ, รายงาน sleep paralysis; ห้ามใน narcolepsy"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "Sleep hygiene – คำแนะนำที่ต้องให้ทุกราย",
+          "body_md": "**Sleep hygiene** เป็นพื้นฐานก่อนและร่วมกับยา:\n- เข้านอน-ตื่นเวลาเดิมทุกวัน รวมวันหยุด\n- ใช้เตียงเพื่อนอนเท่านั้น (ไม่ดูทีวี/มือถือบนเตียง)\n- ถ้านอนไม่หลับใน ~20 นาที ให้ลุกไปทำกิจกรรมเงียบ ๆ แล้วกลับมาเมื่อง่วง\n- เลี่ยง **คาเฟอีน นิโคติน ช่วงบ่าย-เย็น**, เลี่ยงแอลกอฮอล์ (รบกวนการนอนช่วงท้าย)\n- เลี่ยงงีบกลางวันยาว, ออกกำลังกายแต่ไม่ใกล้เวลานอน\n- ลดแสงสีฟ้า/หน้าจอก่อนนอน, ห้องมืดเย็นเงียบ\n- ไม่กินมื้อหนักก่อนนอน"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ยานอนหลับที่ควรหลีกเลี่ยงและกลุ่มเสี่ยง",
+          "body_md": "**ผู้สูงอายุ (Beers criteria):** หลีกเลี่ยง benzodiazepine, Z-drugs, antihistamine 1G (diphenhydramine, hydroxyzine) และ TCA — เสี่ยง **ล้ม สับสน กระดูกหัก delirium**\n\n**Diphenhydramine/antihistamine** (OTC sleep aid) – tolerance เร็ว, anticholinergic (ปากแห้ง ปัสสาวะคั่ง สับสน) → ไม่แนะนำใช้ประจำ\n\n**คู่อันตราย:** ยานอนหลับ + **opioid / แอลกอฮอล์** → กดการหายใจ\n\n**Complex sleep behavior** จาก Z-drugs/benzodiazepine → หยุดยาถ้าเกิดละเมอขับรถ/ทำกิจกรรมขณะหลับ\n\nหลีกเลี่ยง **triazolam** ร่วม CYP3A4 inhibitor (ketoconazole) – sedation รุนแรง"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ตัวเลือกอื่นและ off-label",
+          "body_md": "- **Trazodone** ขนาดต่ำ (25–100 mg) – ใช้ off-label เป็นยานอนหลับบ่อย โดยเฉพาะเมื่อมีซึมเศร้าร่วม; ระวัง orthostatic hypotension, priapism\n- **Mirtazapine** ขนาดต่ำ – ง่วง + เจริญอาหาร เหมาะผู้สูงวัยที่ซึมเศร้า+นอนไม่หลับ+น้ำหนักลด\n- **Doxepin** ขนาดต่ำมาก (3–6 mg) – TCA ที่ FDA รับรองสำหรับ sleep maintenance (H1 block)\n- **Quetiapine** ขนาดต่ำ – ใช้ off-label แต่ไม่แนะนำเป็น routine เพราะ metabolic/EPS\n\nหลักการ: เลือกยาที่ตรงกับ comorbidity และมี ADR ยอมรับได้"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำกลไกยานอนหลับและจุดเด่น",
+          "body_md": "- **Benzodiazepine/Z-drugs** → **GABA-A** (Z-drugs จับ alpha-1 เด่น sedative) — ติดยา, complex sleep behavior\n- **Ramelteon/melatonin** → **MT1/MT2** — ไม่ติดยา, ไม่ใช่ controlled → เลือกในผู้ติดสาร\n- **Suvorexant** → **บล็อก orexin** — ช่วยทั้ง onset + maintenance\n- **Doxepin/mirtazapine/diphenhydramine** → **block H1** — ง่วง\n\nจำ Z-drugs: \"**Z** = **Z**zz sleep + complex sleep behavior (เดินขับรถละเมอ)\"\n\nจำ first-line จริง ๆ ของ insomnia = **CBT-I + sleep hygiene** (ไม่ใช่ยา)"
+        }
+      ]
+    },
+    {
+      "title_th": "ยา ADHD และการจัดการภาวะติดสารเสพติด",
+      "subtitle_th": "Stimulants, atomoxetine และ withdrawal: alcohol, opioid, nicotine",
+      "icon": "💉",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "ADHD",
+        "methylphenidate",
+        "amphetamine",
+        "atomoxetine",
+        "alcohol withdrawal",
+        "naltrexone",
+        "buprenorphine",
+        "methadone",
+        "varenicline",
+        "naloxone"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "ADHD: stimulants เป็น first-line",
+          "body_md": "**ADHD** รักษาด้วย **stimulant เป็น first-line** ในเด็กและผู้ใหญ่\n\n**Stimulants:**\n- **Methylphenidate** (Ritalin, Concerta) – ยับยั้ง reuptake DA/NE\n- **Amphetamine salts** (Adderall), lisdexamfetamine (prodrug) – ยับยั้ง reuptake + เพิ่มการปล่อย DA/NE\n\n**ADR:** เบื่ออาหาร น้ำหนัก/ส่วนสูงโตช้า, นอนไม่หลับ, หัวใจเต้นเร็ว ความดันขึ้น, หงุดหงิด, **เสี่ยงนำไปใช้ในทางที่ผิด (abuse)** → controlled substance\n- ระวังในโรคหัวใจ; ตรวจ HR/BP; ห้ามร่วม MAOI\n\n**Non-stimulant** (ทางเลือก/มีประวัติ abuse): **atomoxetine** (NRI – ไม่ติด, มี black box เรื่อง suicidality), guanfacine/clonidine (alpha-2 agonist)"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Alcohol withdrawal – จัดการด้วย benzodiazepine",
+          "body_md": "หยุดแอลกอฮอล์กะทันหันในผู้ติดสุราเสี่ยงภาวะถอนรุนแรงถึงชีวิต:\n- **6–24 ชม.:** สั่น เหงื่อแตก กังวล ใจสั่น\n- **12–48 ชม.:** **withdrawal seizure**, alcoholic hallucinosis\n- **48–96 ชม.:** **Delirium Tremens (DTs)** – สับสน ไข้ autonomic instability ภาพหลอน → อัตราตายสูง\n\n**รักษา: benzodiazepine** (diazepam, lorazepam, chlordiazepoxide) — symptom-triggered ตาม **CIWA-Ar**\n- ในโรคตับใช้ **lorazepam/oxazepam (\"LOT\")**\n\n**ให้ thiamine (B1) ก่อน glucose** เสมอ เพื่อป้องกัน **Wernicke encephalopathy** (สับสน ตากระตุก เดินเซ) → ถ้าไม่รักษากลายเป็น Korsakoff (ความจำเสียถาวร)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Alcohol use disorder – ยาช่วยเลิก",
+          "body_md": "ยาช่วยเลิกสุราระยะยาว (maintenance):\n- **Naltrexone** (opioid antagonist) – ลด craving/ความสุขจากการดื่ม; **first-line**; ห้ามในผู้ใช้ opioid (กระตุ้น withdrawal) และตับวายรุนแรง\n- **Acamprosate** – ปรับสมดุล glutamate/GABA; เหมาะในตับไม่ดี (ขับทางไต); ใช้หลังเลิกแล้ว\n- **Disulfiram** – ยับยั้ง aldehyde dehydrogenase → สะสม acetaldehyde เมื่อดื่ม → หน้าแดง คลื่นไส้ อาเจียน ใจสั่น (aversive); ต้องผู้ป่วยมีแรงจูงใจสูง; ระวัง alcohol แฝงในยา/อาหาร\n\nร่วมกับการบำบัดทางจิตสังคมเสมอ"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Opioid use disorder และ overdose",
+          "body_md": "**Opioid withdrawal** ไม่ถึงตาย แต่ทรมาน: น้ำมูก-น้ำตาไหล หาว ม่านตาขยาย ปวดเมื่อย ท้องเสีย ขนลุก กระสับกระส่าย (ตรงข้ามกับ intoxication ที่ม่านตาหด)\n\n**Maintenance/replacement therapy:**\n- **Methadone** – full mu agonist (ให้ในคลินิกควบคุม); ระวัง **QT prolongation**, กดหายใจ\n- **Buprenorphine** (± naloxone = Suboxone) – **partial agonist** → ceiling effect กดหายใจน้อยกว่า, ปลอดภัยกว่า; ให้เมื่อเริ่มมีอาการถอน (ไม่งั้น precipitate withdrawal)\n- **Naltrexone** – antagonist สำหรับ maintenance หลัง detox\n\n**Overdose (กดหายใจ ม่านตาหด ซึม):** **naloxone** (opioid antagonist) IM/IV/intranasal — half-life สั้นกว่า opioid หลายตัว อาจต้องให้ซ้ำ"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Nicotine / เลิกบุหรี่",
+          "body_md": "ยาช่วยเลิกบุหรี่ที่มีหลักฐาน:\n- **NRT (Nicotine Replacement Therapy):** patch (long-acting, ระดับคงที่) + gum/lozenge/inhaler (short-acting, คุม craving เฉียบพลัน) — ใช้ร่วมกันได้\n- **Varenicline** – **alpha4-beta2 nicotinic partial agonist** → ลด craving + ลดความสุขจากการสูบ; **มีประสิทธิภาพสูงสุด**; ADR: คลื่นไส้ ฝันแปลก ๆ; เฝ้าระวังอารมณ์ (เดิมมี boxed warning ภายหลังถอน)\n- **Bupropion SR** – ลด craving และอาการถอน; เลี่ยงในผู้มีประวัติชัก/eating disorder\n\nnicotine withdrawal: หงุดหงิด กระวนกระวาย สมาธิสั้น อยากอาหาร นอนไม่หลับ craving"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "จับคู่สาร ↔ ยารักษา (สรุปออกสอบ)",
+          "body_md": "| สาร | Withdrawal/overdose | ยารักษา |\n|---|---|---|\n| Alcohol | DTs, seizure | **benzodiazepine** + thiamine; เลิก: naltrexone, acamprosate, disulfiram |\n| Opioid | ม่านตาหด (OD), อาการถอนทรมาน | **naloxone** (OD); maintenance: methadone, buprenorphine, naltrexone |\n| Nicotine | หงุดหงิด craving | NRT, **varenicline**, bupropion |\n| Benzodiazepine | seizure (อันตราย) | taper; antidote flumazenil (ระวัง) |\n| Stimulant (ADHD/abuse) | อ่อนเพลีย ซึมเศร้า | supportive |\n\nจำ: **alcohol & benzo withdrawal = ชักได้ (อันตราย)** ; **opioid withdrawal = ทรมานแต่ไม่ตาย**"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ withdrawal และ antidote",
+          "body_md": "**\"Alcohol & Benzo → Brain seizes\"** = ถอนแล้ว **ชัก** อันตรายถึงตาย → รักษา **benzodiazepine (taper)**\n\n**\"Opioid pupils\"**: overdose = **pinpoint (หด)** ให้ **naloxone**; withdrawal = ม่านตา **ขยาย** + น้ำมูกน้ำตาไหล\n\n**\"Wernicke ก่อน glucose\"** = ให้ **thiamine ก่อนน้ำตาล** ในผู้ติดสุราเสมอ\n\nจำ buprenorphine = **partial agonist** (ceiling, ปลอดภัยกว่า methadone), varenicline = **nicotinic partial agonist** (เลิกบุหรี่เก่งสุด)"
         }
       ]
     }

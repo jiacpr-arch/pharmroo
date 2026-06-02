@@ -1,66 +1,456 @@
 {
   "subject": "Musculoskeleton",
   "unit": {
-    "title_th": "กระดูกและข้อ (Rheumatology)",
-    "description_th": "NSAID ข้อควรระวัง และการรักษาเกาต์",
+    "title_th": "ระบบกระดูกและข้อ (Musculoskeletal & Rheumatology)",
+    "description_th": "คอร์สครบวงจรสำหรับสอบใบประกอบวิชาชีพเภสัชกรรม ครอบคลุม NSAIDs และความเสี่ยง GI/Renal/CV, เกาต์เฉียบพลันและการลดกรดยูริก (allopurinol, HLA-B*5801), DMARDs และยาชีวภาพในข้ออักเสบรูมาตอยด์, ข้อเสื่อม, ยาคลายกล้ามเนื้อ และโรคกระดูกพรุน (bisphosphonates, denosumab)",
     "icon": "🦴"
   },
   "lessons": [
     {
-      "title_th": "NSAID และข้อควรระวัง",
-      "subtitle_th": "GI / Renal / CV",
-      "icon": "🦴",
-      "est_minutes": 5,
-      "xp_reward": 10,
+      "title_th": "NSAIDs: การเลือก COX และความเสี่ยง",
+      "subtitle_th": "COX-1/COX-2 selectivity, ADR GI/Renal/CV, GI protection",
+      "icon": "💊",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "NSAID",
+        "COX-1",
+        "COX-2",
+        "celecoxib",
+        "ibuprofen",
+        "naproxen",
+        "diclofenac",
+        "PPI",
+        "peptic ulcer",
+        "เอ็นเสด"
+      ],
       "cards": [
         {
           "card_type": "concept",
-          "title_th": "กลไกและชนิด",
-          "body_md": "NSAID ยับยั้ง COX → ลด prostaglandin\n\n- **Non-selective** (ibuprofen, naproxen, diclofenac): ยับยั้ง COX-1 + COX-2\n- **COX-2 selective** (celecoxib, etoricoxib): GI น้อยกว่า แต่ **CV เสี่ยงมากกว่า**"
+          "title_th": "กลไกการออกฤทธิ์: COX-1 vs COX-2",
+          "body_md": "NSAIDs ยับยั้งเอนไซม์ **cyclooxygenase (COX)** → ลดการสร้าง **prostaglandin** ทำให้ลดปวด ลดอักเสบ ลดไข้\n\n- **COX-1 (constitutive)**: สร้างตลอดเวลา ทำหน้าที่ปกป้องเยื่อบุกระเพาะ (mucus, bicarbonate), ควบคุม renal perfusion และสร้าง **thromboxane A2 (TXA2)** ในเกล็ดเลือด\n- **COX-2 (inducible)**: ถูกกระตุ้นเมื่อมีการอักเสบ และสร้าง **prostacyclin (PGI2)** ที่ผนังหลอดเลือด\n\nการยับยั้ง COX-1 → ADR ทาง GI และ antiplatelet; การยับยั้ง COX-2 → ลดอักเสบแต่เสียสมดุล TXA2/PGI2 → เพิ่มความเสี่ยง thrombosis"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "การจำแนกตามความจำเพาะต่อ COX",
+          "body_md": "**Non-selective (ยับยั้ง COX-1 + COX-2):**\n- ibuprofen, naproxen, diclofenac, indomethacin, piroxicam, mefenamic acid, ketorolac\n- **aspirin** ยับยั้ง COX แบบ irreversible (acetylation)\n\n**COX-2 preferential:** meloxicam, nimesulide\n\n**COX-2 selective (coxibs):** celecoxib, etoricoxib, parecoxib\n- GI ulcer **น้อยกว่า** non-selective\n- แต่ **CV เสี่ยงมากกว่า** (เสียสมดุล PGI2/TXA2)\n\nข้อสอบ: **naproxen** มีโปรไฟล์ CV ปลอดภัยที่สุดในกลุ่ม NSAIDs ส่วน diclofenac และ coxibs เสี่ยง CV สูงสุด"
         },
         {
           "card_type": "warning",
-          "title_th": "ความเสี่ยงสำคัญ",
-          "body_md": "- **GI**: gastritis, peptic ulcer, เลือดออก (COX-1)\n- **Renal**: ลด renal perfusion, AKI, คั่งน้ำ/โซเดียม\n- **CV**: เพิ่มความเสี่ยง MI/stroke, ความดันสูง\n\nระวังในผู้สูงอายุ, ไตเสื่อม, หัวใจล้มเหลว"
+          "title_th": "ADR หลัก 4 ระบบที่ต้องจำ",
+          "body_md": "- **GI**: dyspepsia, gastritis, **peptic ulcer**, GI bleeding, perforation (จากการยับยั้ง COX-1)\n- **Renal**: ลด renal blood flow → **AKI**, คั่งน้ำและโซเดียม (บวม), hyperkalemia, ความดันเลือดสูง, interstitial nephritis\n- **CV**: เพิ่มความเสี่ยง **MI/stroke**, หัวใจล้มเหลวกำเริบ, ความดันสูง (ทุกตัวยกเว้น aspirin ขนาดต่ำ)\n- **Antiplatelet/bleeding**: ยับยั้ง TXA2 → เลือดออกง่าย\n\nกลุ่มเสี่ยงสูง: ผู้สูงอายุ, ไตเสื่อม (eGFR ต่ำ), หัวใจล้มเหลว, ตับแข็ง, ผู้ที่ใช้ anticoagulant"
         },
         {
-          "card_type": "mnemonic",
-          "title_th": "จำ Triple Whammy",
-          "body_md": "**Triple Whammy** = AKI สูง\n\n1. **ACEI/ARB** +\n2. **Diuretic** +\n3. **NSAID**\n\nสามตัวรวมกันทำให้ไตวายเฉียบพลันได้ง่าย"
+          "card_type": "warning",
+          "title_th": "Aspirin–NSAID interaction และข้อห้ามสำคัญ",
+          "body_md": "**Ibuprofen รบกวนฤทธิ์ cardioprotective ของ aspirin** (แย่งจับ COX-1) → ถ้าจำเป็นต้องใช้ร่วม ให้กิน **aspirin ก่อน ibuprofen อย่างน้อย 30 นาที** หรือกิน ibuprofen หลัง aspirin ≥8 ชม.\n\n**ข้อห้าม/ระวังมาก:**\n- **หญิงตั้งครรภ์ไตรมาส 3**: ห้าม (ปิด ductus arteriosus ก่อนกำหนด, oligohydramnios)\n- **Aspirin ในเด็ก/วัยรุ่นที่มีไข้ไวรัส**: เสี่ยง **Reye's syndrome**\n- ประวัติ **peptic ulcer/GI bleed**, NSAID-induced asthma (aspirin-exacerbated respiratory disease)\n- ใช้ร่วม warfarin/DOAC, SSRI → เลือดออกเพิ่ม"
         },
         {
           "card_type": "tip",
-          "title_th": "ลดความเสี่ยง GI",
-          "body_md": "- ใช้ขนาดต่ำสุด ระยะสั้นที่สุด\n- ผู้เสี่ยงสูง: ให้ **PPI** ร่วมด้วย\n- กินพร้อมอาหาร\n- หลีกเลี่ยงใช้ NSAID หลายตัวพร้อมกัน"
+          "title_th": "การป้องกัน GI และการใช้อย่างปลอดภัย",
+          "body_md": "- ใช้ **ขนาดต่ำสุด ระยะสั้นที่สุด** ที่ได้ผล\n- ผู้เสี่ยง GI สูง (อายุ >65, ประวัติ ulcer, ใช้ steroid/anticoagulant/SSRI ร่วม): ให้ **PPI** ร่วมด้วย (เช่น omeprazole) หรือเลือก **COX-2 selective + PPI**\n- กินพร้อมหรือหลังอาหารเพื่อลดอาการ dyspepsia\n- ติดตาม SCr/eGFR, ความดัน, สัญญาณเลือดออก (เมเลนา, อุจจาระดำ)\n- **หลีกเลี่ยงใช้ NSAID หลายตัวพร้อมกัน** (ไม่เพิ่มประสิทธิภาพ แต่เพิ่ม ADR)\n- พิจารณา **paracetamol หรือ topical NSAID** เป็นทางเลือกในผู้เสี่ยงสูง"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ Triple Whammy: ไตวายเฉียบพลัน",
+          "body_md": "**Triple Whammy** = ความเสี่ยง **AKI สูงมาก** เมื่อใช้ 3 กลุ่มนี้ร่วมกัน:\n\n1. **A**CEI / ARB\n2. **D**iuretic\n3. **N**SAID\n\nกลไก: ACEI/ARB ขยาย efferent arteriole + NSAID หด afferent arteriole + diuretic ลดปริมาตรเลือด → **ลด GFR อย่างรุนแรง**\n\nตรวจ SCr และ K⁺ ภายใน 1–2 สัปดาห์ถ้าเลี่ยงไม่ได้"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "เกร็ดเลือกตัวยาตามผู้ป่วย",
+          "body_md": "- **เสี่ยง CV สูง** → เลี่ยง diclofenac/coxib, เลือก **naproxen** (+PPI ถ้าเสี่ยง GI)\n- **เสี่ยง GI สูง, CV ต่ำ** → **COX-2 selective + PPI**\n- **ไตเสื่อม/หัวใจล้มเหลว** → เลี่ยง NSAID ทั้งหมด ใช้ paracetamol\n- **Ketorolac**: ฤทธิ์แรงแต่จำกัดใช้ **ไม่เกิน 5 วัน** (เสี่ยง GI/renal สูง)\n- **Indomethacin**: นิยมในเกาต์เฉียบพลัน แต่ ADR CNS สูง (ปวดหัว)"
         }
       ]
     },
     {
-      "title_th": "โรคเกาต์ (Gout)",
-      "subtitle_th": "Acute vs urate-lowering",
+      "title_th": "เกาต์เฉียบพลัน (Acute Gout)",
+      "subtitle_th": "Colchicine, NSAIDs, corticosteroids — เลือกตัวไหนเมื่อไหร่",
       "icon": "🦵",
-      "est_minutes": 5,
-      "xp_reward": 10,
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "acute gout",
+        "เกาต์เฉียบพลัน",
+        "colchicine",
+        "โคลชิซีน",
+        "indomethacin",
+        "prednisolone",
+        "NSAID",
+        "intra-articular",
+        "uric acid",
+        "tophi"
+      ],
       "cards": [
         {
           "card_type": "concept",
-          "title_th": "Acute gout attack",
-          "body_md": "รักษาการอักเสบเฉียบพลัน เลือกตัวใดตัวหนึ่ง:\n\n1. **NSAID** (เช่น naproxen, indomethacin)\n2. **Colchicine** (ได้ผลดีถ้าให้เร็วใน 24 ชม.)\n3. **Corticosteroid** (เมื่อมีข้อห้าม NSAID/ไตเสื่อม)"
+          "title_th": "พยาธิสภาพและการจับเฉียบพลัน",
+          "body_md": "เกาต์เกิดจาก **กรดยูริกสูง (hyperuricemia)** → ตกผลึก **monosodium urate (MSU)** ในข้อ → กระตุ้น **NLRP3 inflammasome** → ปล่อย IL-1β → อักเสบเฉียบพลัน\n\n**ลักษณะ:** ปวด บวม แดง ร้อนที่ข้อเดียวฉับพลัน มักเริ่มที่ **โคนนิ้วหัวแม่เท้า (1st MTP, podagra)** ตอนกลางคืน\n\n**เป้าหมายการรักษาเฉียบพลัน:** ลดการอักเสบและปวดให้เร็วที่สุด (ไม่ใช่ลดกรดยูริก) — ยิ่งเริ่มเร็ว ยิ่งได้ผลดี"
         },
         {
           "card_type": "concept",
-          "title_th": "Urate-lowering therapy (ULT)",
-          "body_md": "ใช้ป้องกันระยะยาว (ไม่ใช่รักษาการอักเสบเฉียบพลัน):\n\n- **Allopurinol** (xanthine oxidase inhibitor) — ตัวแรก\n- **Febuxostat** — ทางเลือก\n- **Probenecid** — uricosuric เพิ่มการขับกรดยูริก"
+          "title_th": "ตัวเลือกหลัก 3 กลุ่ม: เลือกตัวเดียว",
+          "body_md": "เลือก **monotherapy** ตัวใดตัวหนึ่ง (พิจารณาตามข้อห้ามและโรคร่วม):\n\n1. **NSAID** (เช่น naproxen, indomethacin, etoricoxib) — first-line ในผู้ป่วยที่ไตและหัวใจปกติ\n2. **Colchicine** — ได้ผลดีถ้าเริ่มภายใน **24 ชม.** แรกของการจับ\n3. **Corticosteroid** (oral prednisolone หรือ intra-articular) — เลือกเมื่อมีข้อห้าม NSAID/colchicine\n\nข้อกระตุ้นหลายข้อ/รุนแรง: อาจใช้ **combination** (เช่น colchicine + NSAID หรือ + steroid)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ขนาดยา Colchicine ที่ถูกต้อง (low-dose)",
+          "body_md": "**Regimen low-dose ที่แนะนำ** (ได้ผลเท่า high-dose แต่ ADR น้อยกว่ามาก):\n- เริ่ม **1.0–1.2 mg ทันที** แล้วตามด้วย **0.5–0.6 mg อีก 1 ชม.ถัดมา** (รวมวันแรก ~1.5–1.8 mg)\n- จากนั้น 0.5–0.6 mg วันละ 1–2 ครั้งจนอาการสงบ\n\n**หลีกเลี่ยง high-dose เดิม** (เพิ่มทีละ 0.5 mg จนท้องเสีย) เพราะ ADR สูง\n\n**ADR:** ท้องเสีย คลื่นไส้ อาเจียน (dose-limiting); ขนาดสูง/พิษ: myelosuppression, neuromyopathy\n\n**ปรับขนาดในไตเสื่อม/ตับเสื่อม** และระวัง drug interaction"
         },
         {
           "card_type": "warning",
-          "title_th": "อย่าเริ่ม/หยุด allopurinol ช่วง attack",
-          "body_md": "- **อย่าเริ่ม allopurinol ระหว่างกำลังจับเฉียบพลัน** (กระตุ้นให้แย่ลง)\n- ถ้าใช้อยู่แล้ว **ห้ามหยุด**\n- เริ่ม ULT ต้อง **prophylaxis ด้วย colchicine ขนาดต่ำ** ช่วงแรก\n- Allopurinol เสี่ยง SJS (HLA-B*5801)"
+          "title_th": "Colchicine: drug interaction และพิษ",
+          "body_md": "Colchicine เป็น substrate ของ **CYP3A4** และ **P-glycoprotein** → ระดับสูงขึ้นเมื่อใช้ร่วม:\n- **Clarithromycin, erythromycin** (macrolide)\n- **Ketoconazole, itraconazole** (azole)\n- **Verapamil, diltiazem**, cyclosporine, ยา HIV protease inhibitor\n- **น้ำเกรปฟรุต (grapefruit juice)**\n\nร่วมกับ **statin** → เพิ่มเสี่ยง myopathy/rhabdomyolysis\n\n**พิษ colchicine รุนแรงและไม่มี antidote** — อาการ: ท้องเสียรุนแรง, multi-organ failure, pancytopenia ห้ามใช้เกินขนาดเด็ดขาด ปรับลดขนาดในไต/ตับเสื่อม"
         },
         {
           "card_type": "tip",
-          "title_th": "เคล็ดลับแยกบทบาทยา",
-          "body_md": "จำว่า **Colchicine/NSAID/steroid = ดับไฟ (เฉียบพลัน)** ส่วน **Allopurinol = ลดเชื้อเพลิง (ระยะยาว)**\n\nระวัง allopurinol + azathioprine/6-MP → toxicity เพิ่มมาก"
+          "title_th": "เมื่อไหร่เลือก Corticosteroid",
+          "body_md": "**Oral prednisolone 30–40 mg/วัน** นาน 5–7 วัน (อาจ taper) เป็นทางเลือกที่ดีเมื่อ:\n- **ไตเสื่อม (CKD)** หรือใช้ NSAID/colchicine ไม่ได้\n- ผู้สูงอายุที่เสี่ยง GI/renal จาก NSAID\n\n**Intra-articular steroid** (เช่น triamcinolone) เหมาะเมื่อจับ **1–2 ข้อ** และต้องการเลี่ยงผลทั่วร่างกาย — **ต้องแน่ใจว่าไม่มีการติดเชื้อในข้อ (septic arthritis)** ก่อนฉีด\n\nระวัง: steroid ทำให้น้ำตาลสูงในผู้ป่วยเบาหวาน"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำหลักการ: \"ดับไฟ ไม่ใช่ลดเชื้อเพลิง\"",
+          "body_md": "ในการจับเฉียบพลัน เป้าหมายคือ **ดับไฟ (ต้านการอักเสบ)** ไม่ใช่ลดกรดยูริก:\n\n- **C**olchicine\n- **N**SAID\n- **S**teroid\n\nจำว่า **\"CNS ดับไฟ\"**\n\n**ห้ามเริ่ม allopurinol/febuxostat ระหว่างจับ** (การเปลี่ยนแปลงระดับยูริกฉับพลันกระตุ้นการจับ) — แต่ถ้าผู้ป่วยใช้ ULT อยู่แล้ว **ห้ามหยุด**"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "อย่าลืม: ไม่แตะ ULT ตอนจับ และแยก septic arthritis",
+          "body_md": "- **อย่าเริ่มยาลดกรดยูริก (ULT) ระหว่างการจับเฉียบพลัน** — รอจน inflammation สงบ ~2 สัปดาห์ (แนวทางใหม่อนุญาตเริ่มขณะจับได้พร้อม prophylaxis แต่ข้อสอบไทยมักยึดแบบเดิม)\n- **ถ้าใช้ allopurinol อยู่แล้ว ห้ามหยุด** ระหว่างจับ\n- ข้อบวมแดงร้อน + ไข้ → ต้องแยก **septic arthritis** ด้วยการเจาะข้อตรวจ (gram stain/culture) ก่อนสรุปว่าเป็นเกาต์\n- ประคบเย็น พักข้อร่วมด้วย"
+        }
+      ]
+    },
+    {
+      "title_th": "เกาต์เรื้อรังและยาลดกรดยูริก (ULT)",
+      "subtitle_th": "Allopurinol (HLA-B*5801), febuxostat, probenecid, target urate",
+      "icon": "🧪",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "allopurinol",
+        "อัลโลพูรินอล",
+        "febuxostat",
+        "probenecid",
+        "HLA-B*5801",
+        "xanthine oxidase",
+        "uric acid",
+        "urate-lowering",
+        "SJS",
+        "uricosuric"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "เมื่อไหร่ควรเริ่ม ULT และเป้าหมาย urate",
+          "body_md": "**ข้อบ่งชี้เริ่ม urate-lowering therapy (ULT):**\n- จับ ≥2 ครั้ง/ปี\n- มี **tophi**, นิ่วยูริก (urate nephrolithiasis), หรือ CKD ระยะ ≥2\n- จับครั้งแรกในผู้อายุน้อย/ยูริกสูงมาก\n\n**เป้าหมายระดับ serum urate:**\n- **< 6 mg/dL** ทั่วไป\n- **< 5 mg/dL** ถ้ามี tophi หรือโรครุนแรง\n\nULT ใช้ **ป้องกันระยะยาว** ไม่ใช่รักษาการอักเสบเฉียบพลัน — ค่อย ๆ titrate จนถึงเป้าหมาย (treat-to-target)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Allopurinol: ยาตัวแรก (XO inhibitor)",
+          "body_md": "**Allopurinol** ยับยั้ง **xanthine oxidase (XO)** → ลดการสร้างกรดยูริก เป็น **first-line ULT**\n\n- เริ่มขนาดต่ำ **100 mg/วัน** (50 mg ใน CKD) แล้วค่อย titrate ขึ้นทุก 2–4 สัปดาห์จนถึงเป้าหมาย urate (สูงสุดถึง 800 mg/วัน)\n- การเริ่มต่ำช่วยลดความเสี่ยง **allopurinol hypersensitivity syndrome (AHS)** และลดการกระตุ้นการจับ\n- Metabolite ออกฤทธิ์คือ **oxypurinol** ขับทางไต → **ปรับขนาดในไตเสื่อม**\n- ต้องให้ **colchicine ขนาดต่ำ prophylaxis** ร่วมด้วยช่วง 3–6 เดือนแรก"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "HLA-B*5801 และ allopurinol hypersensitivity",
+          "body_md": "**Allopurinol** เป็นสาเหตุสำคัญของ **SCARs**: **SJS/TEN** และ **DRESS** (allopurinol hypersensitivity syndrome)\n\n- ความเสี่ยงสัมพันธ์กับยีน **HLA-B*5801** ซึ่งพบมากในคนเชื้อสาย **เอเชีย (ไทย, จีนฮั่น, เกาหลี)**\n- **แนะนำตรวจ HLA-B*5801 ก่อนเริ่ม allopurinol** ในประชากรเสี่ยง (ตามแนวทางไทย/CPIC) — ถ้าผลบวก ให้เลี่ยงไปใช้ยาอื่น (เช่น febuxostat)\n- ปัจจัยเสี่ยงเพิ่ม: **CKD** และเริ่มขนาดสูง\n- หยุดยาทันทีถ้ามีผื่น ไข้ เยื่อบุอักเสบ"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Febuxostat: ทางเลือกเมื่อใช้ allopurinol ไม่ได้",
+          "body_md": "**Febuxostat** เป็น **non-purine selective XO inhibitor**\n- ใช้เมื่อแพ้/ทนต่อ allopurinol ไม่ได้ หรือผล HLA-B*5801 บวก\n- metabolize ที่ **ตับ** เป็นหลัก → ใช้ได้ใน CKD เบา-ปานกลางโดยปรับน้อยกว่า allopurinol\n- ขนาด: เริ่ม 40 mg/วัน, เพิ่มเป็น 80 mg ถ้าไม่ถึงเป้า\n\n**คำเตือน CV:** การศึกษา CARES พบ **อัตราตายจาก CV และ all-cause สูงกว่า allopurinol** → ระวัง/เลี่ยงในผู้ป่วยโรคหัวใจและหลอดเลือด (FDA boxed warning)\n\nยังต้องให้ colchicine prophylaxis ช่วงแรกเช่นกัน"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Probenecid และ uricosuric agents",
+          "body_md": "**Probenecid** เป็น **uricosuric** — ยับยั้งการดูดกลับกรดยูริกที่ท่อไต (URAT1) → **เพิ่มการขับยูริกทางปัสสาวะ**\n\n- ใช้ในผู้ที่ **ขับยูริกได้น้อย (underexcretor)** และ **ใช้ XO inhibitor ไม่ได้**\n- **ข้อห้าม/ข้อจำกัด:** ประวัติ **นิ่วไต (urate stones)**, CKD (eGFR < 30 ไม่ได้ผล), ผู้ผลิตยูริกมาก (overproducer)\n- ต้อง **ดื่มน้ำมากและทำให้ปัสสาวะเป็นด่าง** เพื่อป้องกันนิ่ว\n- ลดการขับ penicillin/methotrexate (drug interaction)\n\nยา uricosuric ใหม่: **lesinurad** (ใช้ร่วม XO inhibitor); **pegloticase** (recombinant uricase) สำหรับเกาต์รุนแรงดื้อยา"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Allopurinol + azathioprine/6-MP: อันตรายมาก",
+          "body_md": "**Allopurinol ยับยั้ง xanthine oxidase ซึ่งเป็นเอนไซม์สลาย azathioprine และ 6-mercaptopurine (6-MP)**\n\n→ ระดับ azathioprine/6-MP พุ่งสูง → **myelosuppression รุนแรง (pancytopenia)** อาจถึงชีวิต\n\n- ถ้าจำเป็นต้องใช้ร่วม ต้อง **ลดขนาด azathioprine/6-MP ลงเหลือ ~25–33%** และเฝ้าระวัง CBC ใกล้ชิด\n- ทางเลือกที่ปลอดภัยกว่า: หลีกเลี่ยงคู่นี้ หรือใช้ febuxostat ก็มีปัญหาคล้ายกัน (ยังห้ามใช้ร่วม azathioprine)\n\nนี่เป็น interaction คลาสสิกที่ออกสอบบ่อย"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำบทบาทยา: เฉียบพลัน vs ระยะยาว",
+          "body_md": "**ดับไฟ (เฉียบพลัน):** Colchicine / NSAID / Steroid\n\n**ลดเชื้อเพลิง (ระยะยาว, ULT):**\n- **ลดการสร้าง** = Xanthine Oxidase inhibitor → **A**llopurinol, **F**ebuxostat\n- **เพิ่มการขับ** = uricosuric → **P**robenecid, lesinurad\n\nจำ: **\"AF สร้างน้อย, P ขับมาก\"**\n\nและกฎทอง: **เริ่ม ULT พร้อม colchicine prophylaxis ขนาดต่ำเสมอ** เพื่อกัน flare ช่วงแรก"
+        }
+      ]
+    },
+    {
+      "title_th": "ข้ออักเสบรูมาตอยด์: DMARDs ดั้งเดิม",
+      "subtitle_th": "Methotrexate, sulfasalazine, hydroxychloroquine, leflunomide",
+      "icon": "🖐️",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "rheumatoid arthritis",
+        "ข้ออักเสบรูมาตอยด์",
+        "DMARD",
+        "methotrexate",
+        "folic acid",
+        "sulfasalazine",
+        "hydroxychloroquine",
+        "leflunomide",
+        "folate",
+        "monitoring"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "RA และหลักการรักษาด้วย DMARDs",
+          "body_md": "**Rheumatoid arthritis (RA)** เป็นโรคภูมิคุ้มกันทำลายข้อแบบ **symmetric polyarthritis** (ข้อเล็ก ๆ ของมือ/เท้า), ข้อแข็งตอนเช้า > 1 ชม., มี **RF / anti-CCP** บวก\n\nหลักการ: เริ่ม **DMARD เร็วที่สุด (early aggressive)** เพื่อชะลอการทำลายข้อ — ใช้ NSAID/steroid เพียงคุมอาการระหว่างรอ DMARD ออกฤทธิ์\n\n**Conventional synthetic DMARDs (csDMARDs):** methotrexate (anchor drug), sulfasalazine, hydroxychloroquine, leflunomide\n\nรักษาแบบ **treat-to-target** มุ่งสู่ remission หรือ low disease activity"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Methotrexate: ยาหลัก (anchor drug)",
+          "body_md": "**Methotrexate (MTX)** เป็น **first-line/anchor DMARD** ใน RA\n- กลไก: ยับยั้ง **dihydrofolate reductase** และเพิ่ม adenosine (ต้านการอักเสบ)\n- ขนาด: **รับประทานสัปดาห์ละครั้ง (weekly!)** เริ่ม 7.5–15 mg/สัปดาห์ ปรับขึ้นถึง ~25 mg/สัปดาห์\n- **ให้ folic acid 5 mg/สัปดาห์** (คนละวันกับ MTX) เพื่อลด ADR (stomatitis, GI, myelosuppression)\n- ออกฤทธิ์ช้า ~6–8 สัปดาห์\n\n**ระวังร้ายแรง:** การให้ MTX **รายวันแทนรายสัปดาห์** = พิษถึงตาย (fatal medication error)"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Methotrexate: ADR, monitoring และข้อห้าม",
+          "body_md": "**ADR:** **hepatotoxicity** (ตับ), **myelosuppression**, **pneumonitis** (ไอ หอบ), stomatitis, GI, ผมร่วง, ผื่น\n\n**Monitoring:** **CBC, LFTs, SCr** ทุก 2–4 สัปดาห์ช่วงแรก แล้วทุก 3 เดือน\n\n**ข้อห้าม:**\n- **หญิงตั้งครรภ์/วางแผนตั้งครรภ์** (teratogen — หยุดล่วงหน้า ≥3 เดือนทั้งหญิงและชาย)\n- โรคตับ/ดื่มสุราหนัก, ไตเสื่อมรุนแรง, ภาวะไขกระดูกผิดปกติ\n\n**Interaction:** หลีกเลี่ยง **trimethoprim/co-trimoxazole** (เพิ่มพิษ folate antagonism → pancytopenia), NSAID ขนาดสูง, probenecid (ลด clearance)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Sulfasalazine และ Hydroxychloroquine",
+          "body_md": "**Sulfasalazine (SSZ):**\n- ใช้ใน RA ระดับเบา-ปานกลาง, ใช้ได้ในหญิงตั้งครรภ์ (ค่อนข้างปลอดภัย)\n- ADR: GI, ผื่น, **ปัสสาวะ/น้ำตาสีส้ม**, leukopenia, **ห้ามในผู้แพ้ sulfa และ G6PD deficiency** (hemolysis)\n- Monitoring: CBC, LFTs\n\n**Hydroxychloroquine (HCQ):**\n- ฤทธิ์อ่อน ใช้ใน RA เบาหรือเป็นส่วนของ combination, และใน SLE\n- ADR สำคัญ: **retinal toxicity (maculopathy)** → **ตรวจตา baseline และทุกปี** (โดยเฉพาะใช้ >5 ปี)\n- ค่อนข้างปลอดภัยในการตั้งครรภ์"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Leflunomide",
+          "body_md": "**Leflunomide** ยับยั้ง **dihydroorotate dehydrogenase (DHODH)** → ลดการสังเคราะห์ pyrimidine ใน lymphocyte\n\n- ประสิทธิภาพใกล้เคียง MTX ใช้เมื่อ MTX ไม่ได้ผล/ทนไม่ได้\n- **Half-life ยาวมาก (active metabolite teriflunomide ~2 สัปดาห์)** เพราะ enterohepatic recirculation\n- ADR: ท้องเสีย, **hepatotoxicity**, ความดันสูง, ผมร่วง, myelosuppression\n- **Teratogen รุนแรง** — หญิงวัยเจริญพันธุ์ต้องคุมกำเนิด; ถ้าต้องตั้งครรภ์/มีพิษ ต้องทำ **washout ด้วย cholestyramine** เพื่อเร่งกำจัดยา\n- Monitoring: LFTs, CBC, BP"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ DMARD monitoring: ตับ ไขกระดูก ตา ปอด",
+          "body_md": "**MTX & Leflunomide** → ระวัง **ตับ (LFTs) + ไขกระดูก (CBC)** + MTX เพิ่ม **ปอด (pneumonitis)**\n\n**Hydroxychloroquine** → ระวัง **ตา (จอประสาทตา)** → ตรวจตาประจำปี\n\n**Sulfasalazine** → ระวัง **เม็ดเลือด + ผู้แพ้ sulfa/G6PD**\n\nจำ: **\"MTX-Lef ดูตับเลือด, HCQ ดูตา, SSZ ระวัง sulfa\"**\n\nและ MTX = **สัปดาห์ละครั้ง + folic acid** เสมอ"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "DMARDs และการตั้งครรภ์",
+          "body_md": "**ห้าม/teratogenic ในการตั้งครรภ์:**\n- **Methotrexate** (หยุด ≥3 เดือนก่อนตั้งครรภ์)\n- **Leflunomide** (washout cholestyramine ก่อน)\n\n**ค่อนข้างปลอดภัย/ใช้ได้ในการตั้งครรภ์:**\n- **Sulfasalazine** (เสริม folic acid)\n- **Hydroxychloroquine** (มักใช้ต่อได้, สำคัญใน SLE)\n\nให้คำปรึกษาเรื่องคุมกำเนิดในหญิงวัยเจริญพันธุ์ที่ใช้ MTX/leflunomide ทุกครั้ง"
+        }
+      ]
+    },
+    {
+      "title_th": "ยาชีวภาพและ targeted therapy ใน RA",
+      "subtitle_th": "TNF inhibitors, JAK inhibitors — screening และ ADR",
+      "icon": "🧬",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "biologic",
+        "TNF inhibitor",
+        "etanercept",
+        "adalimumab",
+        "infliximab",
+        "JAK inhibitor",
+        "tofacitinib",
+        "tuberculosis",
+        "rituximab",
+        "ยาชีวภาพ"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "เมื่อไหร่ใช้ biologic/targeted DMARD",
+          "body_md": "ใช้ **biologic DMARDs (bDMARDs)** หรือ **targeted synthetic DMARDs (tsDMARDs)** เมื่อ **csDMARD (เช่น MTX) ไม่สามารถคุมโรคได้** หลังใช้เต็มขนาดเพียงพอ\n\nมักให้ **ร่วมกับ MTX** เพื่อเพิ่มประสิทธิภาพและลด anti-drug antibody\n\n**กลุ่มหลัก:**\n- **TNF-α inhibitors**: etanercept, infliximab, adalimumab, golimumab, certolizumab\n- **Non-TNF biologics**: rituximab (anti-CD20), tocilizumab (anti-IL-6R), abatacept (T-cell costimulation)\n- **JAK inhibitors (tsDMARD, รับประทาน)**: tofacitinib, baricitinib, upadacitinib"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "TNF-α inhibitors: ชนิดและกลไก",
+          "body_md": "ยับยั้ง **TNF-α** ซึ่งเป็น cytokine ตัวขับเคลื่อนการอักเสบใน RA\n\n- **Etanercept**: soluble TNF receptor fusion protein (ฉีด SC สัปดาห์ละครั้ง)\n- **Infliximab**: chimeric monoclonal Ab (ให้ IV infusion ร่วม MTX)\n- **Adalimumab, golimumab**: human/humanized mAb (ฉีด SC)\n- **Certolizumab**: pegylated Fab fragment (ใช้ได้ในการตั้งครรภ์ ผ่านรกน้อย)\n\nออกฤทธิ์เร็วกว่า csDMARD ลดการทำลายข้อได้ดี"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Screening ก่อนเริ่ม biologic (สำคัญที่สุด)",
+          "body_md": "ก่อนเริ่ม **TNF inhibitor/biologic** ต้องคัดกรองการติดเชื้อแฝง:\n\n- **วัณโรคแฝง (latent TB)**: ทำ **TST หรือ IGRA + chest X-ray** — ถ้าบวก ต้องรักษา latent TB ก่อน/พร้อมเริ่ม biologic (TNF inhibitor **กระตุ้น TB กลับเป็นซ้ำ/reactivation** ได้มาก)\n- **Hepatitis B และ C**: ตรวจ HBsAg, anti-HBc (เสี่ยง HBV reactivation)\n- **HIV** ตามข้อบ่งชี้\n- ให้ **วัคซีนที่จำเป็นก่อนเริ่ม** (โดยเฉพาะ live vaccine — **ห้ามให้ live vaccine ระหว่างใช้ biologic**)"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ADR ของ TNF inhibitors",
+          "body_md": "- **การติดเชื้อรุนแรง** (โดยเฉพาะ **TB reactivation**, fungal, opportunistic)\n- **HBV reactivation**\n- เพิ่มความเสี่ยง **มะเร็งต่อมน้ำเหลือง (lymphoma)** และมะเร็งผิวหนัง\n- **ห้ามในผู้ป่วยหัวใจล้มเหลวรุนแรง (NYHA III–IV)** — TNF inhibitor ทำให้แย่ลง\n- ภาวะ demyelinating (คล้าย MS), drug-induced lupus, infusion/injection reaction\n\n**ห้ามให้ live attenuated vaccine** ระหว่างการรักษา หยุดยาชั่วคราวเมื่อมีการติดเชื้อรุนแรงหรือผ่าตัดใหญ่"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "JAK inhibitors: ยารับประทานกลุ่มใหม่",
+          "body_md": "**JAK inhibitors (tsDMARD)** เช่น **tofacitinib, baricitinib, upadacitinib** ยับยั้ง **Janus kinase** → ขัดขวาง JAK-STAT signaling ของหลาย cytokine\n\n- **ข้อดี:** รับประทาน (oral), ออกฤทธิ์เร็ว\n- **ADR:** การติดเชื้อ (รวม **herpes zoster** เด่นชัด), เม็ดเลือดต่ำ, **ไขมันในเลือดสูง**, ตับเอนไซม์ขึ้น\n- **คำเตือนสำคัญ (FDA boxed warning จาก ORAL Surveillance):** เพิ่มความเสี่ยง **MACE (CV events), มะเร็ง, VTE (ลิ่มเลือดดำ/PE) และอัตราตาย** เทียบกับ TNF inhibitor → สงวนใช้หลัง TNF inhibitor ล้มเหลว โดยเฉพาะผู้สูงอายุ/สูบบุหรี่/เสี่ยง CV\n- Screening TB/HBV และฉีดวัคซีน zoster ก่อนเริ่ม"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "Rituximab, tocilizumab, abatacept โดยย่อ",
+          "body_md": "- **Rituximab (anti-CD20)**: ทำลาย B cells; ใช้เมื่อ TNF inhibitor ล้มเหลว; ระวัง **HBV reactivation** และ infusion reaction; คัดกรอง HBV เข้มงวด\n- **Tocilizumab (anti-IL-6R)**: ลด CRP/ESR เด่น (ทำให้ค่าอักเสบไม่สะท้อนการติดเชื้อ), ADR: **ไขมันสูง, neutropenia, ตับเอนไซม์ขึ้น, GI perforation** (ระวังใน diverticulitis)\n- **Abatacept (CTLA-4 Ig)**: ยับยั้ง T-cell costimulation; ADR การติดเชื้อ\n\nทุกตัว: คัดกรอง TB/HBV และเลี่ยง live vaccine"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ pre-biologic screening: \"TB-HBV-Vaccine-Heart\"",
+          "body_md": "ก่อนเริ่ม biologic จำ 4 อย่าง:\n\n- **T**B → TST/IGRA + CXR (รักษา latent TB ก่อน)\n- **H**epatitis B/C → HBsAg, anti-HBc\n- **V**accine → ฉีดให้ครบก่อน, **ห้าม live vaccine** ระหว่างใช้\n- **H**eart failure → TNF inhibitor ห้ามใน HF รุนแรง\n\nและจำ ADR เด่น: **TNF → TB/lymphoma**, **JAK → zoster/VTE/MACE**, **Tocilizumab → CRP ต่ำหลอก + GI perforation**"
+        }
+      ]
+    },
+    {
+      "title_th": "การจัดการข้อเสื่อม (Osteoarthritis)",
+      "subtitle_th": "Paracetamol, topical/oral NSAID, IA steroid, non-pharmacologic",
+      "icon": "🦿",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "osteoarthritis",
+        "ข้อเสื่อม",
+        "paracetamol",
+        "topical NSAID",
+        "diclofenac gel",
+        "intra-articular",
+        "duloxetine",
+        "glucosamine",
+        "weight loss",
+        "non-pharmacologic"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "OA: พยาธิสภาพและการประเมิน",
+          "body_md": "**Osteoarthritis (OA)** คือการเสื่อมของกระดูกอ่อนผิวข้อ + การเปลี่ยนแปลงของกระดูกใต้ผิวข้อ (osteophyte) — เป็น **non-inflammatory** เป็นหลัก\n\n**ลักษณะแยกจาก RA:**\n- ข้อแข็งตอนเช้า **< 30 นาที** (RA > 1 ชม.)\n- ปวดมากเมื่อใช้งาน ดีขึ้นเมื่อพัก\n- มักข้อรับน้ำหนัก (เข่า สะโพก), DIP (Heberden's nodes), PIP (Bouchard's nodes)\n- ไม่มี systemic inflammation, RF/anti-CCP ลบ\n\nเป้าหมายการรักษา: ลดปวด คงการทำงานข้อ ชะลอความพิการ (ไม่มียาหยุดการเสื่อมที่พิสูจน์ชัด)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Non-pharmacologic: รากฐานการรักษา",
+          "body_md": "การรักษาแบบไม่ใช้ยาเป็น **first-line และต้องทำควบคู่ตลอด:**\n- **ลดน้ำหนัก** (สำคัญที่สุดใน OA เข่า — ลดแรงกระทำต่อข้อ)\n- **ออกกำลังกาย** เสริมความแข็งแรงกล้ามเนื้อ (quadriceps), low-impact aerobic, range-of-motion\n- **กายภาพบำบัด**, อุปกรณ์ช่วย (ไม้เท้า, สนับเข่า, แผ่นรองรองเท้า)\n- ให้ความรู้ผู้ป่วย, ปรับกิจกรรม, ประคบร้อน/เย็น\n\nข้อสอบเน้น: **น้ำหนักและการออกกำลังกาย** คือมาตรการพื้นฐานที่มีหลักฐานดีที่สุด"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ลำดับการใช้ยา (pharmacologic ladder)",
+          "body_md": "1. **Topical NSAID** (เช่น diclofenac gel) — **first-line สำหรับ OA เข่า/มือ** โดยเฉพาะผู้สูงอายุ (systemic exposure ต่ำ ADR น้อย)\n2. **Paracetamol** — ได้ผลจำกัด ใช้เสริม/ผู้ที่ใช้ NSAID ไม่ได้ (≤3–4 g/วัน, ระวังในโรคตับ)\n3. **Oral NSAID** — ใช้ขนาดต่ำสุดระยะสั้น เมื่อ topical ไม่พอ (พิจารณา PPI/ความเสี่ยง CV-GI-renal)\n4. **Duloxetine** — สำหรับ OA ที่มี chronic pain (โดยเฉพาะหลายข้อ)\n5. **Intra-articular corticosteroid** — บรรเทาชั่วคราวในการกำเริบ\n\n**Opioid**: เลี่ยง ใช้เฉพาะกรณีจำเป็นจริง ๆ"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "Intra-articular steroid และ hyaluronic acid",
+          "body_md": "**Intra-articular (IA) corticosteroid** (เช่น triamcinolone, methylprednisolone):\n- บรรเทาปวดและบวม **ระยะสั้น (สัปดาห์ถึงไม่กี่เดือน)** ในการกำเริบ\n- **จำกัดความถี่** ไม่เกิน ~3–4 ครั้ง/ปีต่อข้อ (ฉีดบ่อยอาจเร่งการเสื่อมของกระดูกอ่อน)\n- ต้องแยกการติดเชื้อในข้อก่อนฉีด\n\n**IA hyaluronic acid (viscosupplementation):** หลักฐานประโยชน์ไม่ชัดเจน แนวทางหลายฉบับ **ไม่แนะนำเป็น routine**"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Glucosamine/chondroitin และข้อควรระวัง paracetamol",
+          "body_md": "- **Glucosamine และ chondroitin**: หลักฐานประสิทธิภาพ **ไม่ชัดเจน** หลายแนวทาง (เช่น OARSI/ACR) ไม่แนะนำเป็น routine; glucosamine จากกุ้ง/ปู → ระวังผู้แพ้อาหารทะเล และอาจรบกวน warfarin\n- **Paracetamol**: ปลอดภัยกว่า NSAID ด้านไต/GI แต่ **เกินขนาด → ตับวาย (hepatotoxicity)**; ระวังในโรคตับ ดื่มสุรา และยาสูตรผสมที่มี paracetamol ซ้ำซ้อน (ไม่เกิน 4 g/วัน)\n- ผู้สูงอายุ/CKD/CVD → เน้น topical NSAID และ non-pharm มากกว่า oral NSAID"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำลำดับ OA: \"WET-PINS\"",
+          "body_md": "**W**eight loss — ลดน้ำหนัก (พื้นฐาน)\n**E**xercise — ออกกำลังกายเสริมกล้ามเนื้อ\n**T**opical NSAID — first-line ยาเฉพาะที่\n**P**aracetamol — เสริม/ทางเลือก\n**I**ntra-articular steroid — กำเริบเฉียบพลัน\n**N**SAID oral — ขนาดต่ำระยะสั้น (+PPI ตามความเสี่ยง)\n**S**NRI (duloxetine) — chronic pain\n\nเริ่มจาก non-pharm + topical ก่อนเสมอ โดยเฉพาะในผู้สูงอายุ"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "OA vs RA: ตารางเปรียบเทียบเร็ว",
+          "body_md": "| ลักษณะ | OA | RA |\n|---|---|---|\n| ชนิด | เสื่อม (non-inflammatory) | autoimmune inflammatory |\n| ข้อแข็งตอนเช้า | < 30 นาที | > 1 ชม. |\n| รูปแบบข้อ | เข่า สะโพก DIP (asymmetric) | ข้อเล็กมือ MCP/PIP, wrist (symmetric) |\n| systemic | ไม่มี | มี (อ่อนเพลีย ไข้ต่ำ) |\n| Lab | RF/anti-CCP ลบ | RF/anti-CCP บวก, ESR/CRP สูง |\n| ยา | NSAID/paracetamol, non-pharm | DMARDs (MTX), biologics |\n\nความแตกต่างนี้ออกสอบบ่อยเพื่อแยกแนวทางรักษา"
+        }
+      ]
+    },
+    {
+      "title_th": "ยาคลายกล้ามเนื้อและ spasticity",
+      "subtitle_th": "Baclofen, tizanidine, orphenadrine + analgesic adjuvants",
+      "icon": "💪",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "muscle relaxant",
+        "ยาคลายกล้ามเนื้อ",
+        "baclofen",
+        "tizanidine",
+        "orphenadrine",
+        "spasticity",
+        "gabapentin",
+        "pregabalin",
+        "diazepam",
+        "dantrolene"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "Spasticity vs muscle spasm: 2 กลุ่มยา",
+          "body_md": "**Spasticity** (จากรอยโรค upper motor neuron — MS, stroke, spinal cord injury): ใช้ **antispastic agents** เช่น **baclofen, tizanidine, dantrolene, diazepam**\n\n**Muscle spasm/strain** เฉียบพลัน (ปวดหลัง คอเคล็ด): ใช้ **antispasmodics (centrally-acting)** เช่น **orphenadrine, tolperisone, methocarbamol, cyclobenzaprine, eperisone** ระยะสั้น (~2–3 สัปดาห์) ร่วมกับยาแก้ปวด/กายภาพ\n\nหลักร่วม: ยาเหล่านี้มักทำให้ **ง่วงซึม (sedation)** → เตือนเรื่องขับรถ และเลี่ยงร่วมกับ CNS depressant อื่น"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Baclofen: GABA-B agonist",
+          "body_md": "**Baclofen** เป็น **GABA-B receptor agonist** ที่ไขสันหลัง → ลด spasticity\n\n- ใช้ใน MS, spinal cord injury; ให้ทาง oral หรือ **intrathecal** ในรายรุนแรง\n- ADR: **ง่วงซึม, อ่อนแรงกล้ามเนื้อ, เวียนศีรษะ**, สับสน\n- ขับทางไต → **ปรับขนาดในไตเสื่อม**\n- **ห้ามหยุดยากะทันหัน** → withdrawal รุนแรง (ชัก, ภาพหลอน, ไข้สูง, rebound spasticity คล้าย serotonin/NMS) — ต้องค่อย ๆ ลด (taper)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Tizanidine: alpha-2 agonist",
+          "body_md": "**Tizanidine** เป็น **central alpha-2 adrenergic agonist** (คล้าย clonidine) → ลด spasticity\n\n- ADR: **ง่วงซึม, ปากแห้ง, ความดันต่ำ (hypotension), ตับเอนไซม์ขึ้น** → ติดตาม LFTs\n- Metabolize โดย **CYP1A2** → **ห้ามใช้ร่วม ciprofloxacin และ fluvoxamine** (CYP1A2 inhibitor) เพราะระดับยาพุ่งสูง → hypotension/sedation รุนแรง\n- ระวังเมื่อใช้ร่วมยาลดความดัน\n- หยุดกะทันหัน → rebound hypertension/tachycardia (เหมือน clonidine)"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Orphenadrine และ antimuscarinic ในยาคลายกล้ามเนื้อ",
+          "body_md": "**Orphenadrine** (antispasmodic) มีฤทธิ์ **anticholinergic/antihistamine** เด่น:\n- ADR: ปากแห้ง ตาพร่า **ปัสสาวะคั่ง ท้องผูก** ง่วงซึม สับสน (โดยเฉพาะผู้สูงอายุ)\n- **ระวัง/ห้าม:** ต้อหิน narrow-angle, **BPH/ปัสสาวะคั่ง**, myasthenia gravis, GI obstruction\n- เกินขนาด → ฤทธิ์ anticholinergic รุนแรง + เสี่ยง arrhythmia/ชัก\n\n**Cyclobenzaprine** โครงสร้างคล้าย TCA → anticholinergic, sedation; **ห้ามใช้ร่วม MAOi** และระวัง serotonin syndrome\n\nใน **Beers criteria** ยาคลายกล้ามเนื้อ (orphenadrine, cyclobenzaprine, methocarbamol) จัดเป็นยาที่ **ควรเลี่ยงในผู้สูงอายุ**"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Analgesic adjuvants: gabapentinoids และ duloxetine",
+          "body_md": "ยาเสริมสำหรับ **neuropathic pain** และ chronic MSK pain:\n\n- **Gabapentin / pregabalin (gabapentinoids):** จับ **α2δ subunit ของ voltage-gated Ca²⁺ channel** → ลด neuropathic pain; ADR: ง่วง เวียนศีรษะ บวม น้ำหนักขึ้น; **ปรับขนาดในไตเสื่อม** (ขับทางไต); pregabalin ดูดซึมแน่นอนกว่าและออกฤทธิ์เร็วกว่า\n- **Duloxetine (SNRI):** ใช้ใน OA pain, diabetic neuropathy, fibromyalgia, chronic low back pain; ADR: คลื่นไส้ ปากแห้ง; ระวัง serotonin syndrome\n- **TCA (amitriptyline):** ใช้ neuropathic pain ขนาดต่ำ แต่ ADR anticholinergic"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "Diazepam และ dantrolene: บทบาทเฉพาะ",
+          "body_md": "- **Diazepam (benzodiazepine)** เพิ่มฤทธิ์ GABA-A → ลด spasm/spasticity; ใช้ระยะสั้น เพราะ **เสพติด, ง่วง, ทนยา**; เสริมฤทธิ์กดประสาทกับ opioid/alcohol\n- **Dantrolene** ออกฤทธิ์ที่ **กล้ามเนื้อโดยตรง** (ยับยั้งการปล่อย Ca²⁺ จาก sarcoplasmic reticulum) → ลด spasticity โดยไม่กด CNS มาก; ADR สำคัญคือ **hepatotoxicity** → ติดตาม LFTs\n- **Dantrolene เป็นยา first-line รักษา malignant hyperthermia** (ออกสอบบ่อย!)"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำกลไกยาคลายกล้ามเนื้อ: \"BTD\"",
+          "body_md": "**B**aclofen → **GABA-B** agonist (ไขสันหลัง)\n**T**izanidine → **alpha-2** agonist (ระวัง ciprofloxacin/CYP1A2)\n**D**antrolene → ออกฤทธิ์ที่ **กล้ามเนื้อโดยตรง** (Ca²⁺ release) → first-line **malignant hyperthermia**\n\nเพิ่ม: **Diazepam → GABA-A**\n\nคำเตือนร่วม: ทุกตัว (ยกเว้น dantrolene) ทำให้ **ง่วงซึม** — เลี่ยงขับรถ/แอลกอฮอล์, baclofen/tizanidine **ห้ามหยุดกะทันหัน**"
+        }
+      ]
+    },
+    {
+      "title_th": "โรคกระดูกพรุน (Osteoporosis)",
+      "subtitle_th": "Bisphosphonates, denosumab, calcium/vit D, FRAX",
+      "icon": "🦴",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "osteoporosis",
+        "กระดูกพรุน",
+        "bisphosphonate",
+        "alendronate",
+        "denosumab",
+        "calcium",
+        "vitamin D",
+        "FRAX",
+        "ONJ",
+        "T-score"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "การวินิจฉัยและการประเมินความเสี่ยง",
+          "body_md": "**Osteoporosis** = ความหนาแน่นกระดูกลด + โครงสร้างเสื่อม → เสี่ยงกระดูกหัก\n\n**วินิจฉัยด้วย BMD (DEXA), T-score:**\n- **T-score ≤ −2.5** = osteoporosis\n- −1.0 ถึง −2.5 = osteopenia (low bone mass)\n- ≥ −1.0 = ปกติ\n\nหรือวินิจฉัยเมื่อมี **fragility fracture** (สะโพก/กระดูกสันหลัง) แม้ T-score ไม่ถึงเกณฑ์\n\n**FRAX** ประเมินความเสี่ยงกระดูกหักใน 10 ปี (รวมปัจจัยอายุ เพศ BMI ประวัติหัก สูบบุหรี่ สุรา steroid RA) → ใช้ตัดสินเริ่มยาในกลุ่ม osteopenia"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Calcium และ Vitamin D: พื้นฐานสำคัญ",
+          "body_md": "เป็นพื้นฐานที่ต้องให้ **ควบคู่กับยารักษากระดูกพรุนทุกราย:**\n- **Calcium** รวมจากอาหาร+อาหารเสริม ~**1,000–1,200 mg/วัน** (ไม่เกินเพื่อเลี่ยงนิ่ว/CV concern)\n- **Vitamin D** ~**800–1,000 IU/วัน** (ปรับตามระดับ 25-OH-vit D)\n\n**ก่อนเริ่ม bisphosphonate/denosumab ต้องแก้ hypocalcemia และพร่อง vitamin D ก่อน** มิฉะนั้นเสี่ยง hypocalcemia รุนแรง (โดยเฉพาะ denosumab)\n\n**Calcium carbonate** กินพร้อมอาหาร (ต้องการกรด); **calcium citrate** กินตอนท้องว่างได้ เหมาะกับผู้ใช้ PPI/achlorhydria"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Bisphosphonates: กลไกและตัวยา",
+          "body_md": "**Bisphosphonates** เป็น **first-line** — ยับยั้ง **osteoclast** (anti-resorptive) จับกับ hydroxyapatite ในกระดูก\n\n- **Oral:** alendronate (สัปดาห์ละครั้ง), risedronate (สัปดาห์/เดือน), ibandronate (เดือนละครั้ง)\n- **IV:** zoledronic acid (ปีละครั้ง), ibandronate IV\n\n**Bioavailability oral ต่ำมาก (~1%)** และถูกรบกวนง่ายด้วยอาหาร/แคลเซียม → ต้องบริหารยาถูกวิธี (ดูการ์ดถัดไป)\n\nลดความเสี่ยงกระดูกหักที่สะโพกและกระดูกสันหลังได้ชัดเจน"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "การบริหาร bisphosphonate รับประทาน (counseling สำคัญ)",
+          "body_md": "**คำแนะนำการกิน oral bisphosphonate (alendronate/risedronate):**\n1. กิน **ตอนเช้าขณะท้องว่าง** ทันทีที่ตื่น\n2. กลืนพร้อม **น้ำเปล่าเต็มแก้ว (~200–240 mL)** เท่านั้น (ห้ามน้ำแร่/นม/น้ำผลไม้)\n3. **อยู่ในท่านั่ง/ยืนตรงอย่างน้อย 30 นาที** (ibandronate 60 นาที) ห้ามนอน\n4. **งดอาหาร เครื่องดื่ม ยาอื่น (โดยเฉพาะแคลเซียม/ธาตุเหล็ก/ยาลดกรด) อย่างน้อย 30 นาที**\n\nเหตุผล: เพิ่มการดูดซึม + ป้องกัน **esophagitis/esophageal ulcer**\n\n**ห้ามใช้ถ้ามี:** esophageal stricture/achalasia, ผู้ที่นั่งตรงไม่ได้"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ADR ร้ายแรง: ONJ และ atypical femoral fracture",
+          "body_md": "**ADR ของ bisphosphonate/denosumab ที่ต้องจำ:**\n- **GI:** esophagitis, แผลหลอดอาหาร (oral), อาการคล้ายไข้หวัด/acute phase reaction (IV zoledronic acid)\n- **Osteonecrosis of the jaw (ONJ):** พบมากใน IV/ขนาดสูง (มะเร็ง) — **ตรวจสุขภาพช่องปาก/ทำฟันก่อนเริ่ม** และเลี่ยงถอนฟันระหว่างใช้ยา\n- **Atypical femoral fracture (AFF):** จากการใช้ระยะยาว → พิจารณา **drug holiday** หลัง 3–5 ปีในผู้เสี่ยงต่ำ\n- **Hypocalcemia** (โดยเฉพาะถ้าพร่อง vit D)\n- **Zoledronic acid/IV:** ห้ามใน **CrCl < 35 mL/min**"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Denosumab และยากลุ่มอื่น",
+          "body_md": "**Denosumab** เป็น monoclonal Ab ต่อ **RANKL** → ยับยั้ง osteoclast; ฉีด **SC ทุก 6 เดือน** ใช้ได้ในไตเสื่อม (ไม่ขับทางไต)\n- **ห้ามหยุดยาเอง/ห้ามขาดนัด** → **rebound bone loss และกระดูกสันหลังหักหลายตำแหน่ง (rebound vertebral fractures)** ต้องต่อด้วย bisphosphonate ถ้าหยุด\n- ระวัง hypocalcemia, ONJ, AFF, การติดเชื้อ\n\n**ยาอื่น:**\n- **Raloxifene (SERM):** ลดกระดูกหักสันหลัง + ลดเสี่ยงมะเร็งเต้านม แต่ **เพิ่ม VTE** และ hot flushes\n- **Teriparatide (PTH analog, anabolic):** สร้างกระดูก ใช้ในรายรุนแรง; **ห้ามในผู้เสี่ยง osteosarcoma**\n- **Romosozumab:** anabolic; คำเตือน CV"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำการกิน bisphosphonate: \"30 นาที ท้องว่าง น้ำเปล่า นั่งตรง\"",
+          "body_md": "**กฎ bisphosphonate รับประทาน:**\n- **ท้องว่าง** ตอนเช้าทันทีที่ตื่น\n- **น้ำเปล่าเต็มแก้ว** (ห้ามนม/น้ำแร่/น้ำผลไม้)\n- **นั่งหรือยืนตรง ≥ 30 นาที** (ห้ามนอน)\n- **เว้นจากอาหาร/แคลเซียม/ยาอื่น ≥ 30 นาที**\n\nจำ ADR ร้ายแรงด้วย **\"J-F-C\"**: **J**aw osteonecrosis (ONJ), atypical **F**emoral fracture, hypo**C**alcemia\n\nและ **denosumab ห้ามขาดยา** เพราะ rebound fractures"
         }
       ]
     }

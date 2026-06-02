@@ -1,66 +1,455 @@
 {
   "subject": "Pharmacotherapy",
   "unit": {
-    "title_th": "เภสัชกรรมคลินิก",
-    "description_th": "หลักการเลือกยาตาม guideline และการติดตามผลการรักษา",
-    "icon": "💉"
+    "title_th": "เภสัชบำบัดเชิงบูรณาการ",
+    "description_th": "คอร์สเภสัชบำบัดแบบบูรณาการเชิงกรณีศึกษา เน้นการตัดสินใจเลือกยาตาม guideline และโรคร่วม ครอบคลุมความดันโลหิตสูง หัวใจล้มเหลว ไขมันในเลือดผิดปกติ เบาหวานเชิงบูรณาการ การจัดการความปวด ยาต้านการแข็งตัวของเลือด การใช้ยาต้านจุลชีพอย่างสมเหตุผล และเภสัชบำบัดในผู้สูงอายุ",
+    "icon": "📋"
   },
   "lessons": [
     {
-      "title_th": "หลักการเลือกยาในผู้ป่วยเฉพาะกลุ่ม",
-      "subtitle_th": "Patient-specific therapy",
-      "icon": "💉",
-      "est_minutes": 5,
-      "xp_reward": 10,
+      "title_th": "การจัดการความดันโลหิตสูง",
+      "subtitle_th": "BP targets, first-line, compelling indications, combination",
+      "icon": "🩺",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "ความดันโลหิตสูง",
+        "hypertension",
+        "ACEI",
+        "ARB",
+        "CCB",
+        "amlodipine",
+        "thiazide",
+        "hydrochlorothiazide",
+        "compelling indication",
+        "BP target"
+      ],
       "cards": [
         {
           "card_type": "concept",
-          "title_th": "หลักการเลือกยา",
-          "body_md": "พิจารณาตาม:\n\n1. **Guideline / first-line** ตามข้อบ่งใช้\n2. **ลักษณะผู้ป่วย** (อายุ, ไต, ตับ, ครรภ์)\n3. **โรคร่วม / ยาอื่น** (interaction, contraindication)\n4. **ประสิทธิภาพ ความปลอดภัย ราคา และ adherence**"
+          "title_th": "เป้าหมายความดันและการวินิจฉัย",
+          "body_md": "การวินิจฉัย HTN ใช้ค่าเฉลี่ยจากการวัดที่ถูกต้องอย่างน้อย 2 ครั้งต่างวัน\n\n**เป้าหมาย BP (ตามแนวทางปัจจุบัน):**\n- ทั่วไป: **< 130/80 mmHg** (ACC/AHA) หรือ < 140/90 (บางแนวทาง/ไทย)\n- ผู้ป่วยเบาหวาน, CKD, CAD, post-stroke: **< 130/80 mmHg**\n- ผู้สูงอายุเปราะบาง: ระวัง orthostatic hypotension อาจตั้งเป้า SBP < 140\n\n**Stages (ACC/AHA 2017):**\n- Normal < 120/80\n- Elevated 120–129 / < 80\n- Stage 1: 130–139 / 80–89\n- Stage 2: ≥ 140/90"
         },
         {
           "card_type": "concept",
-          "title_th": "การปรับยาตามอวัยวะ",
-          "body_md": "- **ไตเสื่อม**: ปรับขนาดยาที่ขับทางไต (vancomycin, aminoglycoside, DOAC, metformin)\n- **ตับเสื่อม**: ระวังยา metabolize ทางตับ\n- **ผู้สูงอายุ**: เริ่มต่ำ ค่อยปรับ ('start low, go slow'); เลี่ยง Beers list"
+          "title_th": "ยา First-line 4 กลุ่มหลัก",
+          "body_md": "First-line สำหรับ HTN ที่ไม่มี compelling indication มี 4 กลุ่ม (ลด morbidity/mortality):\n\n1. **ACEI** (-pril เช่น enalapril, lisinopril)\n2. **ARB** (-sartan เช่น losartan, valsartan)\n3. **CCB-dihydropyridine** (-dipine เช่น amlodipine)\n4. **Thiazide/thiazide-like** (hydrochlorothiazide, chlorthalidone, indapamide)\n\n**หมายเหตุ:** chlorthalidone/indapamide มีหลักฐาน outcome ดีกว่า HCTZ\n\n**Beta-blocker ไม่ใช่ first-line** สำหรับ HTN ทั่วไป (ยกเว้นมี compelling indication เช่น CAD, HFrEF)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Compelling Indications: เลือกยาตามโรคร่วม",
+          "body_md": "เลือกยาตามโรคร่วมที่มีหลักฐานชัด:\n\n| โรคร่วม | ยาที่เลือก |\n|---|---|\n| เบาหวาน + albuminuria / CKD | **ACEI หรือ ARB** |\n| HFrEF | ACEI/ARB/ARNI + BB + MRA + SGLT2i |\n| Post-MI / CAD | **BB + ACEI/ARB** |\n| AF (rate control) | BB หรือ non-DHP CCB |\n| Stroke prevention | ACEI/ARB + thiazide |\n| หญิงตั้งครรภ์ | **labetalol, methyldopa, nifedipine** |\n\nหลักการ: เลือกยาที่ให้ประโยชน์เสริมกับโรคร่วม (kill two birds)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Combination Therapy: เมื่อไหร่และอย่างไร",
+          "body_md": "**เริ่มยา 2 ตัวพร้อมกัน** เมื่อ BP สูงกว่าเป้า ≥ 20/10 mmHg หรือ Stage 2\n\n**การจับคู่ที่แนะนำ (rational):**\n- **ACEI/ARB + CCB** (เช่น perindopril + amlodipine — ลด edema จาก CCB)\n- **ACEI/ARB + thiazide**\n- **CCB + thiazide**\n\n**ห้ามจับคู่:** ACEI + ARB ร่วมกัน (เพิ่ม hyperkalemia, AKI โดยไม่เพิ่มประโยชน์)\n\nนิยมใช้ single-pill combination เพิ่ม adherence\n\nถ้าคุม 3 ตัวไม่ได้ (ACEI/ARB + CCB + thiazide) = **resistant HTN** → เพิ่ม **spironolactone**"
+        },
+        {
+          "card_type": "example",
+          "title_th": "กรณีศึกษา: เบาหวาน + ความดันสูง",
+          "body_md": "**ผู้ป่วย:** ชายอายุ 58 ปี เบาหวานชนิดที่ 2, BP 148/92 mmHg วัดซ้ำ 150/90, urine ACR 80 mg/g (albuminuria), SCr ปกติ, K 4.2\n\n**คำถาม:** เลือกยาความดันตัวแรก?\n\n**คำตอบ:** **ACEI หรือ ARB** (เช่น losartan, enalapril) เป็น first choice เพราะมี albuminuria — ยากลุ่มนี้ชะลอการเสื่อมของไตและลด proteinuria\n\n**ติดตาม:** SCr และ K ภายใน 1–2 สัปดาห์หลังเริ่ม (ยอม SCr ขึ้น ≤ 30%); แนะนำ SGLT2i เสริมเพื่อ renal/CV protection"
         },
         {
           "card_type": "warning",
-          "title_th": "ยาในหญิงตั้งครรภ์",
-          "body_md": "ยา teratogen ที่ออกข้อสอบบ่อย (ห้ามใช้):\n\n- **Warfarin, isotretinoin, methotrexate, valproate**\n- **ACEI/ARB** (ไตทารกผิดปกติใน 2nd/3rd trimester)\n- **Tetracycline** (ฟัน/กระดูก)\n- เลือกยาที่มีข้อมูลความปลอดภัยชัดเจน"
+          "title_th": "ข้อควรระวังและ ADR สำคัญ",
+          "body_md": "- **ACEI:** ไอแห้ง (จาก bradykinin ~10%), angioedema, hyperkalemia, **ห้ามในหญิงตั้งครรภ์** และ bilateral renal artery stenosis\n- **ARB:** ทางเลือกเมื่อ ACEI ทำให้ไอ; hyperkalemia ได้เช่นกัน; ห้ามในครรภ์\n- **CCB (amlodipine):** ขาบวม (peripheral edema), หน้าแดง, ปวดหัว\n- **Thiazide:** **hypokalemia, hyponatremia, hyperuricemia (gout), hyperglycemia, hypercalcemia**; ประสิทธิภาพลดเมื่อ eGFR < 30 (ใช้ loop แทน)\n\nตรวจ electrolytes และ renal function ก่อนและหลังเริ่มยา"
         },
         {
-          "card_type": "tip",
-          "title_th": "เพิ่ม adherence",
-          "body_md": "- ลดจำนวนครั้งต่อวัน (once-daily)\n- ใช้ combination pill\n- ให้ความรู้ + ทบทวนผลข้างเคียง\n- ใช้ pill organizer / เตือนเวลายา"
+          "card_type": "mnemonic",
+          "title_th": "จำ ADR thiazide: \"hyper-G,C,U,L / hypo-K,Na\"",
+          "body_md": "Thiazide ทำให้ **\"สูง 4 ต่ำ 2\"**:\n\n**สูง (hyper):**\n- **G**lucose (น้ำตาล)\n- **C**alcium (แคลเซียม)\n- **U**ric acid (กรดยูริก → gout)\n- **L**ipid (ไขมัน)\n\n**ต่ำ (hypo):**\n- **K** (โพแทสเซียม)\n- **Na** (โซเดียม)\n\nตรงข้ามกับ loop diuretic ที่ทำให้ **แคลเซียมต่ำ** (loop loses calcium)"
         }
       ]
     },
     {
-      "title_th": "การติดตามผลการรักษา",
-      "subtitle_th": "Therapeutic monitoring",
-      "icon": "📊",
-      "est_minutes": 5,
-      "xp_reward": 10,
+      "title_th": "หัวใจล้มเหลว HFrEF: GDMT 4 เสาหลัก",
+      "subtitle_th": "ARNI/ACEI, beta-blocker, MRA, SGLT2i และการ titrate",
+      "icon": "❤️‍🩹",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "heart failure",
+        "หัวใจล้มเหลว",
+        "HFrEF",
+        "ARNI",
+        "sacubitril",
+        "valsartan",
+        "beta-blocker",
+        "spironolactone",
+        "SGLT2i",
+        "dapagliflozin"
+      ],
       "cards": [
         {
           "card_type": "concept",
-          "title_th": "Therapeutic Drug Monitoring (TDM)",
-          "body_md": "วัดระดับยาในเลือดสำหรับยาที่ **therapeutic index แคบ**:\n\n- **Vancomycin, aminoglycoside** (gentamicin)\n- **Digoxin, lithium, phenytoin, theophylline**\n- **Warfarin** ใช้ INR (วัดผลทางเภสัชพลศาสตร์)"
+          "title_th": "HFrEF และ 4 เสาหลักของ GDMT",
+          "body_md": "**HFrEF** = Heart Failure with reduced Ejection Fraction (LVEF ≤ 40%)\n\n**Guideline-Directed Medical Therapy (GDMT) 4 เสาหลัก** ที่ลดอัตราตาย — เริ่มทั้ง 4 กลุ่มให้เร็วที่สุด:\n\n1. **ARNI** (sacubitril/valsartan) หรือ **ACEI/ARB**\n2. **Beta-blocker** (carvedilol, bisoprolol, metoprolol succinate)\n3. **MRA** (spironolactone, eplerenone)\n4. **SGLT2i** (dapagliflozin, empagliflozin)\n\nแนวคิดใหม่: เริ่มทั้ง 4 กลุ่มขนาดต่ำพร้อมกัน/เร็ว แล้วค่อย titrate ไม่ต้องไล่ทีละกลุ่มจนถึง max"
         },
         {
           "card_type": "concept",
-          "title_th": "ตัวชี้วัดผลการรักษา",
-          "body_md": "- เบาหวาน: **HbA1c** (เป้า <7% ส่วนใหญ่), FBS\n- ความดัน: BP ตามเป้า\n- ไขมัน: LDL\n- ไทรอยด์: TSH\n- ติดตามทั้ง efficacy และ toxicity (เช่น LFT, SCr, K)"
+          "title_th": "เสา 1: ARNI / ACEI / ARB (RAAS inhibition)",
+          "body_md": "**ARNI = sacubitril/valsartan (Entresto)** เป็นที่นิยมที่สุด ลด mortality เหนือกว่า ACEI (PARADIGM-HF)\n\n**กฎสำคัญ — washout 36 ชั่วโมง:**\n- เปลี่ยนจาก ACEI → ARNI ต้องเว้น **อย่างน้อย 36 ชั่วโมง** เพื่อเลี่ยง **angioedema** (ทั้งสองเพิ่ม bradykinin)\n- เปลี่ยนจาก ARB → ARNI ไม่ต้อง washout\n\n**ADR:** hypotension, hyperkalemia, ไตเสื่อม, angioedema\n\nถ้าใช้ ARNI ไม่ได้ → ใช้ ACEI; ถ้า ACEI ทำให้ไอ → ARB"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "เสา 2 & 3: Beta-blocker และ MRA",
+          "body_md": "**Beta-blocker (เฉพาะ 3 ตัวที่มีหลักฐานใน HFrEF):**\n- **carvedilol, bisoprolol, metoprolol succinate (ER)**\n- เริ่มเมื่อผู้ป่วย **euvolemic/stable** (ไม่ใช่ขณะ decompensated)\n- เริ่มต่ำ titrate ช้า ทุก 2 สัปดาห์ (อาจทำให้แย่ลงชั่วคราว)\n\n**MRA (mineralocorticoid receptor antagonist):**\n- spironolactone, eplerenone\n- **ห้ามเริ่มถ้า K > 5.0 หรือ eGFR < 30**\n- ติดตาม K และ SCr ภายใน 1 สัปดาห์, 4 สัปดาห์\n- spironolactone → gynecomastia (eplerenone ไม่มี)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "เสา 4: SGLT2i และยาเสริมอื่น",
+          "body_md": "**SGLT2i (dapagliflozin, empagliflozin):**\n- ลด HF hospitalization และ CV death **แม้ไม่เป็นเบาหวาน** (DAPA-HF, EMPEROR)\n- ADR: genital mycotic infection, volume depletion, **euglycemic DKA (พบน้อย)**\n\n**ยาเสริมตามอาการ/กลุ่ม:**\n- **Loop diuretic (furosemide):** บรรเทาอาการคั่งน้ำ — ไม่ลด mortality แต่จำเป็นสำหรับ congestion\n- **Hydralazine + isosorbide dinitrate:** เพิ่มในผู้ป่วยเชื้อสายแอฟริกัน หรือทน RAAS-i ไม่ได้\n- **Ivabradine:** ถ้า sinus rhythm HR ≥ 70 ทั้งที่ใช้ BB เต็มที่\n- **Digoxin:** ลด hospitalization ไม่ลด mortality"
+        },
+        {
+          "card_type": "example",
+          "title_th": "กรณีศึกษา: เริ่ม GDMT ในผู้ป่วยใหม่",
+          "body_md": "**ผู้ป่วย:** หญิง 65 ปี LVEF 30%, NYHA II, BP 118/72, HR 78, K 4.3, eGFR 55, ไม่เป็นเบาหวาน กำลังกิน lisinopril 10 mg\n\n**คำถาม:** ปรับการรักษาอย่างไร?\n\n**แนวทาง:**\n1. เปลี่ยน lisinopril → **sacubitril/valsartan** (หยุด lisinopril เว้น **36 ชม.** ก่อนเริ่ม ARNI)\n2. เริ่ม **bisoprolol** ขนาดต่ำ (ผู้ป่วย stable)\n3. เพิ่ม **spironolactone 25 mg** (K และไตอยู่ในเกณฑ์)\n4. เพิ่ม **dapagliflozin 10 mg** (มีประโยชน์แม้ไม่เป็นเบาหวาน)\n\nติดตาม BP, K, SCr และ titrate ทุก 2 สัปดาห์"
         },
         {
           "card_type": "warning",
-          "title_th": "Peak vs Trough",
-          "body_md": "- **Trough** (ก่อนให้ dose ถัดไป): ดูความปลอดภัย/สะสม เช่น vancomycin\n- **Peak**: ดูประสิทธิภาพ เช่น aminoglycoside\n\nเจาะผิดเวลา = แปลผลผิด → ปรับขนาดยาผิด"
+          "title_th": "ยาที่ควรหลีกเลี่ยงใน HFrEF",
+          "body_md": "**ยาที่ทำให้ HFrEF แย่ลง — หลีกเลี่ยง:**\n- **NSAIDs** — คั่งโซเดียม/น้ำ, ลดผลขับปัสสาวะ, ไตเสื่อม\n- **Non-DHP CCB (verapamil, diltiazem)** — negative inotrope, ห้ามใน HFrEF\n- **Thiazolidinediones (pioglitazone)** — คั่งน้ำ, edema\n- **Class I antiarrhythmics** และ dronedarone\n- **Saxagliptin** (DPP-4i) — เพิ่ม HF hospitalization\n\n**ระวัง hyperkalemia สะสม** เมื่อใช้ ACEI/ARB + MRA + อาหารโพแทสเซียมสูง"
         },
         {
           "card_type": "mnemonic",
-          "title_th": "จำยา TDM: 'Very Dangerous Lab Tests, Pharmacist Watch'",
-          "body_md": "- **V**ancomycin\n- **D**igoxin\n- **L**ithium\n- **T**heophylline\n- **P**henytoin\n- **W**arfarin (INR)\n\nกลุ่ม narrow therapeutic index ต้องติดตามใกล้ชิด"
+          "title_th": "จำ 4 เสาหลัก: \"ABCS ของ HFrEF\"",
+          "body_md": "**A** — **A**RNI / ACEI / ARB\n**B** — **B**eta-blocker (carvedilol, bisoprolol, metoprolol succinate)\n**C** — mineralo**C**orticoid receptor antagonist (MRA: spironolactone)\n**S** — **S**GLT2 inhibitor (dapa/empa-gliflozin)\n\nทั้ง 4 กลุ่ม **ลดอัตราตาย** — ส่วน loop diuretic เพียงบรรเทาอาการ\n\nจำ BB 3 ตัวใน HF: \"BBM\" = **B**isoprolol, **B**eta carvedilol, **M**etoprolol succinate"
+        }
+      ]
+    },
+    {
+      "title_th": "ไขมันในเลือดผิดปกติและสแตติน",
+      "subtitle_th": "ASCVD risk, statin intensity, LDL target, ezetimibe/PCSK9",
+      "icon": "🧈",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "dyslipidemia",
+        "ไขมันในเลือด",
+        "statin",
+        "atorvastatin",
+        "rosuvastatin",
+        "ASCVD",
+        "LDL",
+        "ezetimibe",
+        "PCSK9",
+        "rhabdomyolysis"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "การประเมิน ASCVD risk และกลุ่ม statin benefit",
+          "body_md": "เป้าหมายหลักคือลดความเสี่ยง **ASCVD** (atherosclerotic CV disease)\n\n**4 กลุ่มที่ได้ประโยชน์จาก statin (ACC/AHA):**\n1. **Clinical ASCVD** (เคยมี MI, stroke, PAD) → secondary prevention\n2. **LDL-C ≥ 190 mg/dL** (familial hypercholesterolemia)\n3. **เบาหวาน อายุ 40–75 ปี**\n4. อายุ 40–75 ปี LDL 70–189 + **10-year ASCVD risk ≥ 7.5%**\n\nใช้ pooled cohort equation ประเมิน 10-year risk"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Statin Intensity: ขนาดและการลด LDL",
+          "body_md": "เลือกความแรงตามระดับความเสี่ยง:\n\n| Intensity | ลด LDL | ตัวอย่าง |\n|---|---|---|\n| **High** | ≥ 50% | atorvastatin 40–80, rosuvastatin 20–40 |\n| **Moderate** | 30–49% | atorvastatin 10–20, rosuvastatin 5–10, simvastatin 20–40 |\n| **Low** | < 30% | simvastatin 10, pravastatin 10–20 |\n\n**ใช้ high-intensity ใน:** clinical ASCVD, LDL ≥ 190, เบาหวานที่มีความเสี่ยงสูง\n\n**Moderate** ในกลุ่มเสี่ยงปานกลาง / ผู้สูงอายุ"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "เป้าหมาย LDL และยา non-statin",
+          "body_md": "**เป้าหมาย LDL (ESC/แนวทางเข้มข้น):**\n- Very high risk (ASCVD): **LDL < 55 mg/dL** และลด ≥ 50% จาก baseline\n- High risk: LDL < 70 mg/dL\n\n**Step-up เมื่อไม่ถึงเป้าทั้งที่ statin เต็มที่:**\n1. เพิ่ม **ezetimibe** (ยับยั้งการดูดซึม cholesterol ที่ลำไส้, ลด LDL อีก ~15–25%)\n2. เพิ่ม **PCSK9 inhibitor** (evolocumab, alirocumab — ฉีดใต้ผิวหนัง, ลด LDL ~50–60%)\n3. **Bempedoic acid, inclisiran** เป็นทางเลือกใหม่\n\nลำดับ: statin → + ezetimibe → + PCSK9i"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Triglyceride สูงและการจัดการ",
+          "body_md": "**TG สูงมาก (≥ 500 mg/dL):** เสี่ยง **acute pancreatitis** → ลด TG เป็นเป้าหลักก่อน\n- **Fibrate (fenofibrate)** เป็นตัวเลือก\n- omega-3 fatty acid (icosapent ethyl) ขนาดสูง\n\n**TG สูงปานกลาง (150–499):** statin ยังเป็นหลัก (ลด ASCVD risk); จัดการ lifestyle, ควบคุมเบาหวาน\n\n**ระวัง:** การใช้ **gemfibrozil + statin** เพิ่มความเสี่ยง myopathy/rhabdomyolysis อย่างมาก — ถ้าต้องใช้ร่วม เลือก **fenofibrate** แทน gemfibrozil"
+        },
+        {
+          "card_type": "example",
+          "title_th": "กรณีศึกษา: หลังกล้ามเนื้อหัวใจตาย",
+          "body_md": "**ผู้ป่วย:** ชาย 60 ปี เพิ่ง post-STEMI 2 เดือนก่อน กิน atorvastatin 40 mg, LDL ล่าสุด 88 mg/dL, ไม่มีอาการปวดกล้ามเนื้อ\n\n**คำถาม:** ปรับยาอย่างไร?\n\n**แนวทาง:** ผู้ป่วย ASCVD = very high risk เป้า **LDL < 55**\n1. เพิ่มเป็น **atorvastatin 80 mg** (high-intensity เต็มที่)\n2. ถ้ายังไม่ถึงเป้า → เพิ่ม **ezetimibe 10 mg**\n3. ถ้ายังไม่ถึง → พิจารณา **PCSK9 inhibitor**\n\nตรวจ lipid panel ซ้ำใน 4–12 สัปดาห์เพื่อประเมินการตอบสนองและ adherence"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ADR และการติดตามสแตติน",
+          "body_md": "**ADR สำคัญของ statin:**\n- **Myalgia / myopathy** — ปวดกล้ามเนื้อ (พบบ่อย)\n- **Rhabdomyolysis** (พบน้อยแต่รุนแรง) — ปวดกล้ามเนื้อรุนแรง + **CK สูงมาก** + ปัสสาวะสีเข้ม → AKI\n- **เอนไซม์ตับสูง** (ALT/AST)\n- เพิ่มความเสี่ยงเบาหวานเล็กน้อย\n\n**ติดตาม:** baseline LFT; ตรวจ CK เมื่อมีอาการปวดกล้ามเนื้อ (ไม่ตรวจ routine)\n\n**ปัจจัยเพิ่มความเสี่ยง myopathy:** ขนาดสูง, ผู้สูงอายุ, ไต/ตับเสื่อม, hypothyroid, ยา **CYP3A4 inhibitor** (เช่น clarithromycin, azole, gemfibrozil)\n\n**simvastatin** ไวต่อ interaction มากที่สุด — ขนาดจำกัด 20 mg เมื่อใช้กับ amlodipine/diltiazem"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำข้อห้าม/ระวังสแตติน: \"MILD\"",
+          "body_md": "ตรวจก่อนและขณะใช้ statin — **MILD**:\n\n**M** — **M**uscle symptoms / CK (rhabdomyolysis)\n**I** — drug **I**nteractions (CYP3A4 inhibitor, gemfibrozil)\n**L** — **L**iver enzymes (LFT)\n**D** — **D**iabetes / pregnancy (statin **ห้ามในหญิงตั้งครรภ์** — category X)\n\nกินตอนเย็น/ก่อนนอนสำหรับ statin half-life สั้น (simvastatin); atorvastatin/rosuvastatin (half-life ยาว) กินเวลาใดก็ได้"
+        }
+      ]
+    },
+    {
+      "title_th": "เบาหวานเชิงบูรณาการ: เลือกยาตามโรคร่วม",
+      "subtitle_th": "CV/renal benefit, individualized A1c, agent selection",
+      "icon": "🩸",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "diabetes",
+        "เบาหวาน",
+        "metformin",
+        "SGLT2i",
+        "GLP-1",
+        "empagliflozin",
+        "liraglutide",
+        "HbA1c",
+        "A1c",
+        "cardiovascular benefit"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "เป้าหมาย A1c แบบ individualized",
+          "body_md": "**เป้าหมาย HbA1c ปรับตามผู้ป่วย:**\n- ทั่วไป: **< 7%**\n- เข้มงวด (< 6.5%): ผู้ป่วยอายุน้อย โรคใหม่ ไม่มีโรคร่วม เสี่ยง hypoglycemia ต่ำ\n- ผ่อนปรน (< 8%): ผู้สูงอายุ มีโรคร่วมมาก คาดหวังชีวิตสั้น มีประวัติ severe hypoglycemia\n\nหลักการ: ยิ่งเปราะบาง/เสี่ยง hypoglycemia สูง → เป้าหมายผ่อนปรน\n\nเสริมด้วยการติดตาม fasting/postprandial glucose และ time-in-range (CGM)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Metformin: ยาตัวแรกและข้อควรระวัง",
+          "body_md": "**Metformin** ยังเป็น first-line สำหรับ T2DM ส่วนใหญ่:\n- กลไก: ลด hepatic gluconeogenesis, เพิ่ม insulin sensitivity\n- **ไม่ทำให้น้ำหนักขึ้น, ไม่ทำให้ hypoglycemia เดี่ยว**\n- ADR: GI (คลื่นไส้ ท้องเสีย — เริ่มต่ำ ค่อยปรับ), **vitamin B12 ต่ำ** (ระยะยาว)\n\n**ข้อควรระวังสำคัญ:**\n- **หยุดเมื่อ eGFR < 30** (เสี่ยง lactic acidosis); ไม่เริ่มใหม่ถ้า eGFR < 45\n- หยุดชั่วคราวก่อนฉีด **contrast media** และในภาวะ acute illness/hypoxia"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "เลือกยาเสริมตาม CV/Renal benefit",
+          "body_md": "หลังหรือพร้อม metformin **เลือกตามโรคร่วม** (ไม่ใช่แค่ลด A1c):\n\n| โรคร่วม | ยาที่เลือก |\n|---|---|\n| **ASCVD / เสี่ยง CV สูง** | **GLP-1 RA** หรือ **SGLT2i** (CV benefit) |\n| **HFrEF / HF** | **SGLT2i** (ลด HF hospitalization) |\n| **CKD (albuminuria)** | **SGLT2i** (renal protection); GLP-1 RA ทางเลือก |\n| **ต้องการลดน้ำหนัก** | **GLP-1 RA** (semaglutide), SGLT2i |\n| **ต้องการต้นทุนต่ำ** | sulfonylurea, pioglitazone |\n\nSGLT2i และ GLP-1 RA มีหลักฐาน outcome ที่แข็งแกร่ง — ให้ความสำคัญแม้ A1c ถึงเป้า"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "กลไกและ ADR ยากลุ่มหลัก",
+          "body_md": "- **SGLT2i (-gliflozin):** ขับ glucose ทางปัสสาวะ; ADR = genital infection, volume depletion, **euglycemic DKA**; หยุดก่อนผ่าตัด\n- **GLP-1 RA (-tide เช่น liraglutide, semaglutide):** ฉีด (semaglutide มีชนิดกิน); ADR = คลื่นไส้/อาเจียน, ลดน้ำหนัก; ระวัง pancreatitis, ประวัติ **medullary thyroid ca/MEN2** = ห้าม\n- **DPP-4i (-gliptin):** เป็นกลาง น้ำหนักไม่เปลี่ยน; saxagliptin เลี่ยงใน HF\n- **Sulfonylurea (glipizide, glibenclamide):** **hypoglycemia + น้ำหนักขึ้น**\n- **Pioglitazone (TZD):** คั่งน้ำ/edema (ห้ามใน HF), กระดูกหัก, น้ำหนักขึ้น"
+        },
+        {
+          "card_type": "example",
+          "title_th": "กรณีศึกษา: เบาหวาน + หัวใจล้มเหลว + CKD",
+          "body_md": "**ผู้ป่วย:** หญิง 67 ปี T2DM A1c 8.2% กิน metformin 1 g BID, มี HFrEF (EF 35%) และ CKD (eGFR 42, ACR 250), น้ำหนักเกิน\n\n**คำถาม:** เพิ่มยาตัวใด?\n\n**คำตอบ:** **SGLT2i (dapagliflozin/empagliflozin)** เป็นตัวเลือกที่ดีที่สุด — ครอบคลุมทั้งสามมิติ: ลด A1c, ลด HF hospitalization, ชะลอ CKD\n\n- metformin ยังใช้ได้ (eGFR > 30 แต่ไม่ปรับเพิ่ม)\n- ถ้าต้องการลด A1c/น้ำหนักเพิ่ม → เสริม **GLP-1 RA**\n- หลีกเลี่ยง pioglitazone (HF) และ saxagliptin (HF)"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Hypoglycemia และยาที่ต้องระวัง",
+          "body_md": "**ยาที่ทำให้ hypoglycemia บ่อย:** insulin, sulfonylurea (โดยเฉพาะ glibenclamide ในผู้สูงอายุ/ไตเสื่อม)\n\n**อาการ hypoglycemia:** ใจสั่น เหงื่อแตก หิว สับสน → รุนแรงถึงชักและหมดสติ\n\n**การแก้ไข:** 15 g คาร์โบไฮเดรตเร็ว (น้ำหวาน/กลูโคส) — ทบทวนใน 15 นาที (rule of 15); ถ้าหมดสติ → IV dextrose หรือ glucagon\n\n**ระวังเป็นพิเศษ:** ผู้สูงอายุ, ไตเสื่อม (ยาสะสม), ดื่มแอลกอฮอล์, beta-blocker บดบังอาการเตือน (mask symptoms)\n\nหลีกเลี่ยง glibenclamide ในผู้สูงอายุ (Beers criteria)"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำยาที่มี CV/renal benefit: \"FLOZINS & TIDES\"",
+          "body_md": "ยา 2 กลุ่มที่มีหลักฐาน outcome เด่น — ใช้ตามโรคร่วม:\n\n**FLOZINS (SGLT2i):**\n- **H**eart failure → ลด HF hospitalization\n- **C**KD → ชะลอไตเสื่อม\n- คิดถึงเมื่อมี HF หรือ CKD\n\n**TIDES (GLP-1 RA):**\n- **A**SCVD → ลด CV events\n- **W**eight loss → ลดน้ำหนักเด่น\n- คิดถึงเมื่อมี ASCVD หรือต้องการลดน้ำหนัก\n\nทั้งสองกลุ่ม **ไม่ทำให้ hypoglycemia เดี่ยว** — ต่างจาก SU/insulin"
+        }
+      ]
+    },
+    {
+      "title_th": "การจัดการความปวด: WHO ladder และ opioid",
+      "subtitle_th": "WHO ladder, equianalgesia, adjuvants for neuropathic pain",
+      "icon": "💉",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "pain",
+        "ความปวด",
+        "WHO ladder",
+        "opioid",
+        "morphine",
+        "equianalgesia",
+        "neuropathic pain",
+        "gabapentin",
+        "tramadol",
+        "paracetamol"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "WHO Analgesic Ladder",
+          "body_md": "**WHO 3-step ladder** สำหรับความปวด (เดิมสำหรับมะเร็ง ใช้เป็นกรอบทั่วไป):\n\n- **Step 1 (mild):** non-opioid — **paracetamol, NSAIDs** ± adjuvant\n- **Step 2 (mild-moderate):** weak opioid — **tramadol, codeine** + non-opioid ± adjuvant\n- **Step 3 (moderate-severe):** strong opioid — **morphine, fentanyl, oxycodone** + non-opioid ± adjuvant\n\nหลักการ: ให้ตามเวลา (by the clock), ทางปากก่อน (by mouth), ตามบันได (by the ladder), ปรับเฉพาะบุคคล\n\nความปวดเฉียบพลันรุนแรงอาจเริ่มที่ step ที่สูงกว่าได้ทันที"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Non-opioid: Paracetamol และ NSAIDs",
+          "body_md": "**Paracetamol (acetaminophen):**\n- ปลอดภัยที่สุดสำหรับ analgesia ทั่วไป\n- **ขนาดสูงสุด 4 g/วัน** (ลดเหลือ 2–3 g ในโรคตับ/ดื่มสุรา)\n- เกินขนาด → **hepatotoxicity** (รักษาด้วย N-acetylcysteine)\n\n**NSAIDs (ibuprofen, naproxen, diclofenac):**\n- ดีสำหรับปวดอักเสบ/กระดูก\n- ADR: **GI bleed/ulcer, ไตเสื่อม/AKI, คั่งน้ำ/BP สูง, CV risk**\n- หลีกเลี่ยงใน CKD, HF, แผลในกระเพาะ, ผู้สูงอายุ (Beers)\n- COX-2 selective (celecoxib) ลด GI risk แต่ CV risk ยังมี"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Opioid และ Equianalgesia (ขนาดเทียบเท่า)",
+          "body_md": "**ขนาด opioid เทียบเท่า (equianalgesic, อ้างอิง morphine):**\n\n| ยา | IV/SC | Oral |\n|---|---|---|\n| **Morphine** | 10 mg | 30 mg |\n| **Oxycodone** | — | 20 mg |\n| **Tramadol** | — | ~300 mg |\n| **Codeine** | — | 200 mg |\n| **Fentanyl** | 100 mcg | (transdermal ต่างหาก) |\n\n**Oral:IV morphine = 3:1**\n\nเมื่อเปลี่ยนยา (opioid rotation) **ลดขนาดที่คำนวณได้ลง 25–50%** เพื่อ incomplete cross-tolerance — ป้องกัน overdose"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Neuropathic Pain และ Adjuvants",
+          "body_md": "ความปวดประสาท (neuropathic) เช่น diabetic neuropathy, post-herpetic neuralgia — **opioid/NSAID ตอบสนองไม่ดี** ต้องใช้ adjuvant:\n\n**First-line adjuvants:**\n- **Gabapentinoids:** gabapentin, **pregabalin** (ปรับขนาดตามไต; ADR = ง่วง เวียน บวม)\n- **TCA:** amitriptyline, nortriptyline (ระวัง anticholinergic, QT, ผู้สูงอายุ)\n- **SNRI:** duloxetine, venlafaxine\n\n**Topical:** lidocaine patch, capsaicin\n\nสำหรับปวดมะเร็งที่มี bone metastasis → เพิ่ม bisphosphonate/corticosteroid; nerve compression → corticosteroid"
+        },
+        {
+          "card_type": "example",
+          "title_th": "กรณีศึกษา: เปลี่ยนจาก morphine IV เป็น oral",
+          "body_md": "**ผู้ป่วย:** มะเร็งระยะลุกลาม ได้ **morphine 10 mg IV ทุก 4 ชม.** คุมปวดได้ดี ตอนนี้กินได้แล้ว ต้องการเปลี่ยนเป็น oral\n\n**คำนวณ:**\n- morphine IV รวม = 10 mg × 6 = **60 mg/วัน IV**\n- เทียบเป็น oral (3:1) = **180 mg/วัน oral**\n- แบ่งเป็น sustained-release morphine ~90 mg BID หรือ ~30 mg ทุก 4 ชม.\n\n**สำคัญ:** เตรียม **breakthrough dose** = 10–15% ของขนาดรวมต่อวัน (~15–25 mg immediate-release) สำหรับปวดแทรก\n\nถ้าเปลี่ยนไป opioid อื่น (rotation) ให้ลดอีก 25–50%"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ADR opioid และความปลอดภัย",
+          "body_md": "**ADR opioid:**\n- **Respiratory depression** (อันตรายสุด) — แก้ด้วย **naloxone**\n- **ท้องผูก (constipation)** — ไม่เกิด tolerance → ให้ laxative ป้องกันเสมอ (stimulant เช่น senna)\n- คลื่นไส้ ง่วง คัน ปัสสาวะคั่ง\n- ระยะยาว: tolerance, dependence, hyperalgesia\n\n**ระวังพิเศษ:**\n- **Tramadol:** ลด seizure threshold, serotonin syndrome (เลี่ยงร่วม SSRI/SNRI/MAOi)\n- **Codeine/tramadol:** ขึ้นกับ CYP2D6 — ผู้ที่เป็น ultra-rapid metabolizer เสี่ยง overdose\n- **Meperidine (pethidine):** metabolite (normeperidine) สะสม → ชัก, เลี่ยงในผู้สูงอายุ/ไตเสื่อม"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ ADR opioid: \"BRAIN-C\"",
+          "body_md": "**B** — **B**radypnea / respiratory depression (naloxone)\n**R** — **R**etention (urinary)\n**A** — **A**nalgesia / **A**ddiction\n**I** — **I**tching (histamine release)\n**N** — **N**ausea / sedation\n**C** — **C**onstipation (ให้ laxative ป้องกัน — ไม่เกิด tolerance)\n\nจำคู่ตรงข้าม: ม่านตา opioid = **pinpoint pupil (miosis)** ส่วน opioid withdrawal = ม่านตาขยาย น้ำมูกไหล ปวดเมื่อย"
+        }
+      ]
+    },
+    {
+      "title_th": "ยาต้านการแข็งตัวของเลือด: เลือกตามข้อบ่งใช้",
+      "subtitle_th": "AF CHA2DS2-VASc, VTE, warfarin vs DOAC",
+      "icon": "🩹",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "anticoagulation",
+        "ยาต้านการแข็งตัวของเลือด",
+        "warfarin",
+        "DOAC",
+        "CHA2DS2-VASc",
+        "atrial fibrillation",
+        "VTE",
+        "rivaroxaban",
+        "apixaban",
+        "INR"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "ข้อบ่งใช้และการประเมินความเสี่ยงใน AF",
+          "body_md": "**Atrial fibrillation (AF)** เพิ่มความเสี่ยง stroke จาก thromboembolism\n\n**CHA₂DS₂-VASc score** ประเมินความเสี่ยง stroke:\n- **C**HF (1), **H**ypertension (1), **A**ge ≥75 (**2**), **D**iabetes (1), **S**troke/TIA ก่อน (**2**), **V**ascular disease (1), **A**ge 65–74 (1), **S**ex female (1)\n\n**การตัดสินใจให้ยา:**\n- ชาย ≥ 2, หญิง ≥ 3 → **แนะนำ anticoagulation**\n- ชาย 1, หญิง 2 → พิจารณา\n- 0 (ชาย) / 1 (หญิงจากเพศอย่างเดียว) → ไม่ให้\n\n**HAS-BLED** ประเมินความเสี่ยงเลือดออก (ไม่ใช่ห้ามให้ยา แต่เพื่อจัดการปัจจัยเสี่ยง)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Warfarin vs DOAC: เลือกอย่างไร",
+          "body_md": "**DOAC เป็น first choice ใน AF ที่ไม่ใช่ valvular** (ปลอดภัย/สะดวกกว่า, ไม่ต้องตรวจ INR):\n- **Dabigatran** (direct thrombin inhibitor)\n- **Rivaroxaban, apixaban, edoxaban** (factor Xa inhibitor)\n\n**ต้องใช้ warfarin (DOAC ห้าม) ใน:**\n- **Mechanical heart valve**\n- **Moderate-severe mitral stenosis (rheumatic)**\n- **Antiphospholipid syndrome (triple positive)**\n- ไตเสื่อมรุนแรง (CrCl < 15–30 — DOAC ต้องระวัง/ห้าม)\n\nDOAC ปรับขนาดตามไต, อายุ, น้ำหนัก — ตรวจ CrCl ก่อนและระหว่างใช้"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Warfarin: INR, monitoring และ reversal",
+          "body_md": "**Warfarin** ยับยั้ง vitamin K-dependent factors (II, VII, IX, X) + protein C, S\n\n**INR target:**\n- AF, VTE, tissue valve: **2.0–3.0**\n- Mechanical valve (mitral หรือ high-risk): **2.5–3.5**\n\n**ช่วงแรกต้องระวัง:** protein C ลดเร็วกว่า → ภาวะ hypercoagulable ชั่วคราว/warfarin-induced skin necrosis → **bridge ด้วย heparin/LMWH** ในผู้ป่วย VTE จนกว่า INR ถึงเป้า 2 วันติด\n\n**Reversal:**\n- INR สูงไม่มีเลือดออก: หยุดยา ± **vitamin K** oral\n- เลือดออกรุนแรง: **4-factor PCC** + vitamin K IV (FFP ถ้าไม่มี PCC)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "DOAC: reversal และ drug interactions",
+          "body_md": "**Reversal agents:**\n- **Dabigatran → idarucizumab** (Praxbind)\n- **Factor Xa inhibitor (rivaroxaban, apixaban) → andexanet alfa** (หรือ 4F-PCC ถ้าไม่มี)\n\n**Drug interactions สำคัญ:**\n- หลีกเลี่ยงร่วมกับ **strong P-gp / CYP3A4 inducer** (rifampicin, carbamazepine — ลดประสิทธิภาพ)\n- ระวัง strong inhibitor (azole, HIV protease inhibitor — เพิ่มเลือดออก)\n\n**การกิน:** rivaroxaban ขนาดสูง **ต้องกินพร้อมอาหาร** เพื่อการดูดซึม; apixaban กินกับ/ไม่กับอาหารก็ได้\n\nหลีกเลี่ยงร่วม NSAID/antiplatelet โดยไม่จำเป็น (เพิ่ม bleeding)"
+        },
+        {
+          "card_type": "example",
+          "title_th": "กรณีศึกษา: เลือกยาต้านการแข็งตัวใน AF",
+          "body_md": "**ผู้ป่วย:** หญิง 78 ปี non-valvular AF, HTN, เบาหวาน, CrCl 50, ไม่มีลิ้นหัวใจเทียม\n\n**คำนวณ CHA₂DS₂-VASc:** Age ≥75 (2) + HTN (1) + DM (1) + female (1) = **5** → ความเสี่ยง stroke สูง ต้อง anticoagulate\n\n**เลือกยา:** **DOAC** (เช่น apixaban) เป็นตัวเลือกแรก — ไม่ต้องตรวจ INR, ปลอดภัยกว่า warfarin โดยเฉพาะ intracranial bleed\n\n**apixaban ลดขนาดเป็น 2.5 mg BID** เมื่อมี ≥ 2 ข้อ: อายุ ≥ 80, น้ำหนัก ≤ 60 kg, SCr ≥ 1.5 — ผู้ป่วยนี้มีอายุ ≥ 80? (78 ปี → ยังไม่เข้า) ใช้ขนาดมาตรฐาน 5 mg BID และติดตามไต"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Warfarin: อาหารและยาที่มีปฏิกิริยา",
+          "body_md": "**Warfarin มี interaction มากมาย — ตรวจ INR บ่อย:**\n\n**เพิ่ม INR (เสี่ยงเลือดออก):**\n- ยาปฏิชีวนะ (metronidazole, fluconazole, cotrimoxazole, macrolide)\n- amiodarone, NSAIDs, SSRI\n\n**ลด INR (เสี่ยงลิ่มเลือด):**\n- rifampicin, carbamazepine, phenytoin (enzyme inducer)\n- **อาหารวิตามิน K สูง** (ผักใบเขียว) — ให้กินคงที่สม่ำเสมอ ไม่ใช่งดเด็ดขาด\n\n**ห้าม warfarin ในหญิงตั้งครรภ์** (teratogen — fetal warfarin syndrome); ใช้ **LMWH** แทน"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ CHA₂DS₂-VASc",
+          "body_md": "**C** — **C**ongestive HF (1)\n**H** — **H**ypertension (1)\n**A₂** — **A**ge ≥ 75 (**2 คะแนน**)\n**D** — **D**iabetes (1)\n**S₂** — prior **S**troke/TIA/thromboembolism (**2 คะแนน**)\n**V** — **V**ascular disease (MI, PAD, aortic plaque) (1)\n**A** — **A**ge 65–74 (1)\n**Sc** — **S**ex **c**ategory female (1)\n\nตัวที่ได้ **2 คะแนน** = Age ≥75 และ prior Stroke (มี ₂ ห้อยท้าย)\n\nให้ยาเมื่อ: ชาย ≥ 2, หญิง ≥ 3"
+        }
+      ]
+    },
+    {
+      "title_th": "การใช้ยาต้านจุลชีพอย่างสมเหตุผล",
+      "subtitle_th": "Stewardship, empiric therapy, de-escalation, IV-to-PO",
+      "icon": "🦠",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "antimicrobial stewardship",
+        "การใช้ยาปฏิชีวนะ",
+        "empiric therapy",
+        "de-escalation",
+        "IV to PO",
+        "culture",
+        "antibiotic resistance",
+        "MDR",
+        "spectrum"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "หลักการ Antimicrobial Stewardship",
+          "body_md": "**Antimicrobial Stewardship (AMS)** = การใช้ยาต้านจุลชีพให้เหมาะสมที่สุด เพื่อผลลัพธ์ที่ดี ลดความเป็นพิษ ลด resistance และลดต้นทุน\n\n**หลัก 5 D (5 Rights):**\n- **Right Drug** — เลือกยาให้ตรงเชื้อ/ตำแหน่ง\n- **Right Dose** — ขนาดเหมาะกับ PK/PD, ไต, ตับ, น้ำหนัก\n- **Right Duration** — สั้นที่สุดที่ได้ผล\n- **Right De-escalation** — ปรับแคบลงตามผลเพาะเชื้อ\n- **Right Route** — เปลี่ยน IV เป็น PO เมื่อเหมาะสม\n\nเก็บ **culture ก่อนเริ่มยาเสมอ** เมื่อเป็นไปได้"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Empiric Therapy: หลักการเลือกแบบครอบคลุม",
+          "body_md": "**Empiric therapy** = ให้ยาก่อนทราบผลเพาะเชื้อ โดยอิงจาก:\n1. **ตำแหน่งการติดเชื้อ** (ทำนายเชื้อที่น่าจะเป็น)\n2. **ข้อมูล local antibiogram** (รูปแบบความไวยาในพื้นที่)\n3. **ความรุนแรง** (sepsis → broad-spectrum เร็ว)\n4. **ปัจจัยเสี่ยงเชื้อดื้อ** (เคยใช้ยา 90 วัน, นอน รพ., ภูมิคุ้มกันต่ำ)\n5. **ประวัติแพ้ยา, ไต/ตับ**\n\nหลักการ: **เริ่มกว้างพอให้ครอบคลุมในผู้ป่วยหนัก** (\"hit hard, hit early\") แล้ว **แคบลงเมื่อทราบผล**"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "De-escalation: ปรับยาตามผลเพาะเชื้อ",
+          "body_md": "**De-escalation** = ลดความกว้างของยาเมื่อมีข้อมูลมากขึ้น (48–72 ชม. หลังเริ่ม):\n\n**ทำได้โดย:**\n- เปลี่ยนจาก broad-spectrum → narrow-spectrum ที่ตรงเชื้อตาม sensitivity\n- หยุดยาที่ครอบคลุมเชื้อที่ไม่พบ (เช่น หยุด vancomycin ถ้าไม่มี MRSA)\n- เปลี่ยน combination → monotherapy เมื่อเหมาะสม\n\n**ประโยชน์:** ลด resistance, ลดพิษ (เช่น C. difficile), ลดต้นทุน\n\n**ทบทวนทุกวัน:** \"antibiotic time-out\" ที่ 48–72 ชม. — ยังจำเป็นไหม? แคบลงได้ไหม? เปลี่ยน PO ได้ไหม?"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "IV-to-PO Switch: เกณฑ์และยาที่ bioavailability สูง",
+          "body_md": "**เปลี่ยน IV เป็น PO** ได้เมื่อผู้ป่วย **stable** ตามเกณฑ์ (COMS):\n- **C**linically improving — อาการดีขึ้น\n- **O**ral route ใช้ได้ (กิน/ดูดซึมได้, ไม่อาเจียน, ไม่มี malabsorption)\n- **M**arkers ดีขึ้น — ไข้ลง 24–48 ชม., WBC ลด, hemodynamically stable\n- **S**pecific infection ไม่ต้องการ IV (ไม่ใช่ endocarditis, meningitis, bacteremia บางชนิด)\n\n**ยาที่ oral bioavailability สูง (เหมาะ switch):**\n- **fluoroquinolone** (levofloxacin, ciprofloxacin), **metronidazole**, **linezolid**, **clindamycin**, **fluconazole**, **doxycycline**, cotrimoxazole\n\nลดต้นทุน, ลด catheter-related infection, ออกจาก รพ. เร็วขึ้น"
+        },
+        {
+          "card_type": "example",
+          "title_th": "กรณีศึกษา: De-escalation ใน pneumonia",
+          "body_md": "**ผู้ป่วย:** ชาย 70 ปี admit ด้วย severe CAP ได้ **piperacillin-tazobactam + vancomycin + azithromycin** (empiric ครอบคลุมกว้างเพราะหนัก)\n\nวันที่ 3: อาการดีขึ้นชัด ไข้ลง กินได้ ผล sputum/blood culture = **S. pneumoniae** ไวต่อ penicillin, MRSA screen ลบ, Legionella antigen ลบ\n\n**De-escalation:**\n1. **หยุด vancomycin** (ไม่มี MRSA)\n2. **หยุด azithromycin** (Legionella ลบ; ครบ atypical coverage)\n3. เปลี่ยน pip-tazo → **amoxicillin oral** (S. pneumoniae ไวต่อ penicillin + ผู้ป่วย stable + IV-to-PO switch)\n\nผลลัพธ์: ลด resistance, ลดพิษ, เตรียมจำหน่าย"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ผลเสียของการใช้ยาปฏิชีวนะไม่เหมาะสม",
+          "body_md": "**ผลเสียจากการใช้ยาเกินจำเป็น / กว้างเกินไป / นานเกินไป:**\n- **Antibiotic resistance** (MDR organisms — MRSA, ESBL, CRE)\n- **Clostridioides difficile colitis** (โดยเฉพาะ clindamycin, fluoroquinolone, cephalosporin ปฏิชีวนะกว้าง)\n- พิษเฉพาะยา (vancomycin/aminoglycoside → nephrotoxicity; fluoroquinolone → tendon, QT)\n- เพิ่มต้นทุน, superinfection (candida)\n\n**ไม่ให้ยาปฏิชีวนะใน:** การติดเชื้อไวรัส (หวัด, ไข้หวัดใหญ่ส่วนใหญ่), asymptomatic bacteriuria (ยกเว้นครรภ์/ก่อนผ่าตัด urology)\n\nระยะการรักษาสั้นมักได้ผลเท่ายาว — \"shorter is better\" ในหลายโรค"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำหลัก stewardship: \"5 D\" และ \"COMS\"",
+          "body_md": "**5 D ของการสั่งยาปฏิชีวนะ:**\n- right **D**rug\n- right **D**ose\n- right **D**uration\n- **D**e-escalation\n- **D**e-livery route (IV → PO)\n\n**COMS — เกณฑ์ IV-to-PO switch:**\n- **C**linically improving\n- **O**ral route tolerated\n- **M**arkers improving (ไข้, WBC)\n- **S**pecific infection ไม่ต้อง IV\n\nหัวใจ: **culture ก่อนยา**, ทบทวนที่ 48–72 ชม. (antibiotic time-out)"
+        }
+      ]
+    },
+    {
+      "title_th": "เภสัชบำบัดผู้สูงอายุและ Polypharmacy",
+      "subtitle_th": "Beers criteria, STOPP/START, deprescribing",
+      "icon": "👵",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "geriatric",
+        "ผู้สูงอายุ",
+        "polypharmacy",
+        "Beers criteria",
+        "STOPP",
+        "START",
+        "deprescribing",
+        "anticholinergic",
+        "benzodiazepine",
+        "falls"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "การเปลี่ยนแปลง PK/PD ในผู้สูงอายุ",
+          "body_md": "ผู้สูงอายุมีการเปลี่ยนแปลงทางสรีรวิทยาที่กระทบ PK/PD:\n\n**PK:**\n- **Distribution:** ไขมันเพิ่ม น้ำลด → ยาละลายไขมัน (เช่น diazepam) สะสมนาน; ยาละลายน้ำ Vd ลด\n- **Metabolism:** การทำงานตับ/เลือดไปตับลด → first-pass ลด\n- **Excretion:** **eGFR ลดตามอายุ** → ยาขับทางไตสะสม (ปรับขนาด)\n- albumin ลด → free drug เพิ่ม (phenytoin, warfarin)\n\n**PD:** ไวต่อยากดประสาท/anticholinergic มากขึ้น → เสี่ยง confusion, falls\n\nหลักการ: **\"Start low, go slow\"** แต่ titrate ให้ถึงผล"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Polypharmacy: ปัญหาและการประเมิน",
+          "body_md": "**Polypharmacy** = ใช้ยาหลายชนิดพร้อมกัน (มักนิยาม ≥ 5 รายการ)\n\n**ปัญหาที่ตามมา:**\n- เพิ่ม drug interactions และ ADR\n- **Prescribing cascade** — ให้ยาใหม่เพื่อรักษา ADR ของยาเดิม (เช่น CCB → ขาบวม → ให้ furosemide)\n- ลด adherence, เพิ่มต้นทุน, เพิ่มความเสี่ยง falls/hospitalization\n\n**การประเมินยาอย่างเป็นระบบ (medication review):**\n- ทบทวนทุกตัว: ยังมีข้อบ่งใช้ไหม? ประโยชน์ > ความเสี่ยงไหม?\n- ใช้เครื่องมือ Beers, STOPP/START\n- ตรวจ duplicate therapy และ interaction"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Beers Criteria: ยาที่ควรหลีกเลี่ยงในผู้สูงอายุ",
+          "body_md": "**Beers Criteria (AGS)** = รายการยา **potentially inappropriate** ในผู้สูงอายุ ≥ 65 ปี\n\n**ตัวอย่างยาที่ควรเลี่ยง:**\n- **First-gen antihistamine** (chlorpheniramine, diphenhydramine) — anticholinergic\n- **Benzodiazepine และ Z-drugs** (zolpidem) — falls, confusion\n- **TCA** (amitriptyline) — anticholinergic\n- **NSAIDs** เรื้อรัง — GI bleed, ไต\n- **Glibenclamide (long-acting SU)** — hypoglycemia นาน\n- **Muscle relaxants** (orphenadrine), **anticholinergics** สำหรับ overactive bladder\n- **PPI** > 8 สัปดาห์โดยไม่มีข้อบ่งใช้"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "STOPP/START Criteria",
+          "body_md": "**STOPP** (Screening Tool of Older Persons' Prescriptions) = ยาที่ **ควรหยุด** (potentially inappropriate)\n- เช่น benzodiazepine ระยะยาว, ยาที่เพิ่มความเสี่ยง falls, duplicate drug class\n\n**START** (Screening Tool to Alert to Right Treatment) = ยาที่ **ควรเริ่ม** แต่มักถูกมองข้าม (under-prescribing)\n- เช่น statin ใน ASCVD, ACEI ใน HFrEF, **bisphosphonate/vitamin D + calcium** ใน osteoporosis, anticoagulant ใน AF ที่มีข้อบ่งใช้\n\n**ต่างจาก Beers:** STOPP/START ครอบคลุมทั้ง over- และ **under-prescribing** (Beers เน้นยาที่ควรเลี่ยง) และอิงระบบอวัยวะ"
+        },
+        {
+          "card_type": "example",
+          "title_th": "กรณีศึกษา: Prescribing cascade และ deprescribing",
+          "body_md": "**ผู้ป่วย:** หญิง 80 ปี กินยา 9 รายการ มาด้วยล้มบ่อยและสับสน\n\nรายการมี: **amlodipine** → ขาบวม → ได้ **furosemide** เพิ่ม; **amitriptyline** (นอนไม่หลับ); **diphenhydramine** (แพ้); **lorazepam** (กังวล)\n\n**ปัญหา:**\n1. **Prescribing cascade:** amlodipine ทำให้บวม แล้วให้ furosemide แทนที่จะปรับ amlodipine\n2. **ยา anticholinergic/sedative ซ้อน 3 ตัว** (amitriptyline + diphenhydramine + lorazepam) → สับสน + ล้ม\n\n**Deprescribing:**\n- ลด/เปลี่ยน amlodipine, หยุด furosemide ที่ไม่จำเป็น\n- หยุด diphenhydramine, ค่อยๆ taper lorazepam และ amitriptyline\n- จัดการนอนไม่หลับด้วยวิธี non-pharmacological ก่อน"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Anticholinergic burden และ fall risk",
+          "body_md": "**Anticholinergic burden** สะสมจากหลายยา → ผลเสียในผู้สูงอายุ:\n- สับสน, **delirium**, ความจำเสื่อม\n- ปากแห้ง ตาพร่า ท้องผูก ปัสสาวะคั่ง\n- เพิ่มความเสี่ยง dementia ระยะยาว\n\n**ยาที่เพิ่ม fall risk (FRIDs — Fall-Risk-Increasing Drugs):**\n- benzodiazepine, Z-drugs, antipsychotics\n- ยาลดความดัน/orthostatic (alpha-blocker, ยาขับปัสสาวะมากเกิน)\n- opioid, anticonvulsant, TCA\n\nประเมิน orthostatic BP และทบทวน FRIDs ในผู้สูงอายุที่ล้มหรือเสี่ยงล้ม"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำหลัก deprescribing และยาเลี่ยง: \"SLOWER\"",
+          "body_md": "หลักการสั่งยาในผู้สูงอายุ — **SLOWER**:\n\n**S** — **S**tart low, go slow (เริ่มต่ำ ปรับช้า)\n**L** — **L**imit anticholinergics & sedatives (ลด antihistamine 1G, benzo, TCA)\n**O** — **O**ne new symptom = พิจารณา ADR ก่อน (กัน prescribing cascade)\n**W** — **W**eigh benefit vs harm ทุกตัว (Beers/STOPP)\n**E** — **E**valuate renal function (ปรับขนาดตามไต)\n**R** — **R**eview & deprescribe สม่ำเสมอ + START ยาที่ขาด\n\nเป้าหมาย: ยาน้อยที่สุดที่ให้ประโยชน์สูงสุด"
         }
       ]
     }

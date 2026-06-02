@@ -2,60 +2,455 @@
   "subject": "Hematologic",
   "unit": {
     "title_th": "โลหิตวิทยา",
-    "description_th": "ภาวะโลหิตจางและยาต้านการแข็งตัวของเลือด",
+    "description_th": "คอร์สครบวงจรสำหรับสอบใบประกอบวิชาชีพเภสัชกรรม ครอบคลุมการจำแนกภาวะโลหิตจาง การเสริมธาตุเหล็ก/B12/folate ยาต้านการแข็งตัวของเลือด (warfarin, DOAC, heparin/LMWH) ยาต้านเกล็ดเลือด การป้องกันและรักษา VTE ยาละลายลิ่มเลือด การจัดการเลือดออกจากยาต้านการแข็งตัว และภาวะพร่อง G6PD",
     "icon": "🩸"
   },
   "lessons": [
     {
-      "title_th": "ภาวะโลหิตจาง (Anemia)",
-      "subtitle_th": "Iron, B12 และ Folate",
+      "title_th": "การจำแนกภาวะโลหิตจางและการวินิจฉัยภาวะขาดธาตุเหล็ก",
+      "subtitle_th": "MCV-based classification, IDA diagnosis (ferritin, TIBC)",
       "icon": "🩸",
-      "est_minutes": 5,
-      "xp_reward": 10,
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "โลหิตจาง",
+        "anemia",
+        "MCV",
+        "microcytic",
+        "macrocytic",
+        "iron deficiency anemia",
+        "ขาดธาตุเหล็ก",
+        "ferritin",
+        "TIBC",
+        "reticulocyte"
+      ],
       "cards": [
         {
           "card_type": "concept",
-          "title_th": "แยกตามขนาดเม็ดเลือด (MCV)",
-          "body_md": "- **Microcytic (MCV ต่ำ)**: ขาดธาตุเหล็ก (พบบ่อยสุด), thalassemia\n- **Macrocytic (MCV สูง)**: ขาด vitamin B12 หรือ folate\n- **Normocytic**: anemia of chronic disease, เสียเลือดเฉียบพลัน"
+          "title_th": "นิยามภาวะโลหิตจางและค่า Hb cut-off",
+          "body_md": "ภาวะโลหิตจาง (anemia) คือภาวะที่มีปริมาณ **hemoglobin (Hb)** หรือ red cell mass ต่ำกว่าปกติ ทำให้ความสามารถในการขนส่งออกซิเจนลดลง\n\n**เกณฑ์ WHO (Hb):**\n- ชายผู้ใหญ่: < 13 g/dL\n- หญิงผู้ใหญ่ (ไม่ตั้งครรภ์): < 12 g/dL\n- หญิงตั้งครรภ์: < 11 g/dL\n\n**อาการ:** อ่อนเพลีย เหนื่อยง่าย ใจสั่น ซีด เวียนศีรษะ ในรายเรื้อรังร่างกายปรับตัวได้จึงอาจไม่มีอาการชัดเจน"
         },
         {
-          "card_type": "tip",
-          "title_th": "กิน iron ให้ดูดซึมดี",
-          "body_md": "Ferrous sulfate ดูดซึมดีตอน **ท้องว่าง** + **vitamin C**\n\n- ADR: ท้องผูก คลื่นไส้ อุจจาระดำ\n- หลีกเลี่ยงกินพร้อม นม, ยาลดกรด, ชา/กาแฟ, แคลเซียม (ลดการดูดซึม)"
+          "card_type": "concept",
+          "title_th": "การจำแนกตามขนาดเม็ดเลือด (MCV)",
+          "body_md": "**MCV (Mean Corpuscular Volume)** ค่าปกติ ~80–100 fL ใช้แบ่งกลุ่มโลหิตจาง:\n\n| ชนิด | MCV | สาเหตุที่พบบ่อย |\n|---|---|---|\n| **Microcytic** | < 80 fL | ขาดธาตุเหล็ก (พบบ่อยสุด), thalassemia, sideroblastic, ภาวะเรื้อรังบางราย |\n| **Normocytic** | 80–100 fL | acute blood loss, anemia of chronic disease, hemolysis, ไตวาย |\n| **Macrocytic** | > 100 fL | ขาด vitamin B12, ขาด folate, alcohol, ยา (methotrexate, hydroxyurea) |\n\nMCV เป็นจุดเริ่มต้นของ workup ที่ออกสอบบ่อยที่สุด"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Reticulocyte count: แยก production vs destruction",
+          "body_md": "**Reticulocyte count** บอกการสร้างเม็ดเลือดของไขกระดูก:\n\n- **Reticulocyte ต่ำ/ปกติ (hypoproliferative):** ไขกระดูกสร้างไม่พอ เช่น ขาดธาตุเหล็ก/B12/folate, ไตวาย (EPO ต่ำ), aplastic anemia\n- **Reticulocyte สูง:** ไขกระดูกตอบสนองดี → เสียเลือดเฉียบพลัน หรือ **hemolysis** (เม็ดเลือดแดงแตก)\n\nใน hemolysis จะพบ: LDH สูง, indirect bilirubin สูง, **haptoglobin ต่ำ**, reticulocyte สูง"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "การวินิจฉัยภาวะขาดธาตุเหล็ก (IDA)",
+          "body_md": "Iron Deficiency Anemia (IDA) เป็นสาเหตุโลหิตจาง microcytic ที่พบบ่อยที่สุด\n\n**ค่าทางห้องปฏิบัติการที่เป็นลักษณะเฉพาะ:**\n- **Serum ferritin ต่ำ** = ตัวบ่งชี้ที่ดีที่สุด (< 30 ng/mL บ่งชี้ขาดเหล็ก; < 15 ng/mL ยืนยัน)\n- **Serum iron ต่ำ**\n- **TIBC สูง** (transferrin สูงเพื่อพยายามจับเหล็ก)\n- **Transferrin saturation ต่ำ** (< 20%)\n- MCV ต่ำ, RDW สูง (ขนาดเม็ดเลือดไม่สม่ำเสมอ)\n\n**ระวัง:** ferritin เป็น acute phase reactant อาจสูงปลอมเมื่อมีการอักเสบ/ติดเชื้อ"
+        },
+        {
+          "card_type": "example",
+          "title_th": "ตัวอย่าง: แยก IDA จาก Thalassemia trait",
+          "body_md": "ทั้ง IDA และ thalassemia trait ให้ภาพ **microcytic anemia** เหมือนกัน แต่แยกได้:\n\n| | IDA | Thalassemia trait |\n|---|---|---|\n| Ferritin | **ต่ำ** | ปกติ/สูง |\n| RDW | สูง | ปกติ |\n| RBC count | ต่ำ | **ปกติ/สูง** |\n| Mentzer index (MCV/RBC) | **> 13** | < 13 |\n\n**ตัวอย่าง:** ผู้ป่วยหญิงไทย MCV 68, RBC 5.8, ferritin ปกติ → คิดถึง **thalassemia trait** ไม่ใช่ IDA → ส่ง Hb typing ไม่ใช่ให้ธาตุเหล็กพร่ำเพรื่อ (การให้เหล็กเกินใน thalassemia เสี่ยง iron overload)"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำสาเหตุ Macrocytic: \"FAT RBC\"",
+          "body_md": "สาเหตุของ **macrocytic anemia**:\n\n**F**olate deficiency\n**A**lcohol / liver disease\n**T**hyroid (hypothyroidism)\n\n**R**eticulocytosis (เม็ดเลือดอ่อนตัวใหญ่)\n**B**12 deficiency\n**C**ytotoxic/antimetabolite drugs (methotrexate, hydroxyurea, azathioprine, zidovudine)\n\nแยก **megaloblastic** (B12/folate – พบ hypersegmented neutrophils) ออกจาก **non-megaloblastic** (alcohol, liver, thyroid)"
         },
         {
           "card_type": "warning",
-          "title_th": "อย่าให้ folate เดี่ยวๆ ถ้าขาด B12",
-          "body_md": "การให้ **folate อย่างเดียว** ในผู้ขาด B12 จะแก้ภาวะซีดได้ แต่ **บดบังและทำให้ neuropathy จาก B12 แย่ลงถาวร**\n\nตรวจระดับ B12 ก่อนเสมอเมื่อมี macrocytic anemia"
+          "title_th": "IDA ในผู้ใหญ่ชาย/หญิงวัยหมดประจำเดือน = สัญญาณเตือน",
+          "body_md": "**IDA ไม่ใช่การวินิจฉัยสุดท้าย — ต้องหาสาเหตุเสมอ**\n\n- ในผู้ชายและหญิงวัยหมดประจำเดือน IDA มักเกิดจาก **เลือดออกในทางเดินอาหารเรื้อรัง** (แผลในกระเพาะ, มะเร็งลำไส้ใหญ่) → ต้องส่องกล้อง\n- ในหญิงวัยเจริญพันธุ์: ประจำเดือนมามาก, ตั้งครรภ์\n- การให้ธาตุเหล็กโดยไม่หาสาเหตุอาจ **บดบังมะเร็งลำไส้** ที่รักษาได้\n\nอย่าลืม: พยาธิปากขอ (hookworm) ยังเป็นสาเหตุสำคัญในบางพื้นที่ของไทย"
         }
       ]
     },
     {
-      "title_th": "ยาต้านการแข็งตัวของเลือด",
-      "subtitle_th": "Heparin vs Warfarin vs DOAC",
+      "title_th": "การเสริมธาตุเหล็กและการรักษาภาวะขาด B12/Folate",
+      "subtitle_th": "Oral/IV iron, counseling, ADR + B12 & folate treatment",
       "icon": "💊",
-      "est_minutes": 6,
-      "xp_reward": 10,
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "ferrous sulfate",
+        "ธาตุเหล็ก",
+        "iron supplement",
+        "IV iron",
+        "ferric carboxymaltose",
+        "vitamin B12",
+        "cyanocobalamin",
+        "folic acid",
+        "folate",
+        "vitamin C"
+      ],
       "cards": [
         {
           "card_type": "concept",
-          "title_th": "กลไกและการติดตาม",
-          "body_md": "- **Heparin (UFH)**: ออกฤทธิ์เร็ว IV ติดตาม **aPTT**\n- **LMWH** (enoxaparin): SC ไม่ต้องตรวจประจำ\n- **Warfarin**: ยับยั้ง vitamin K (factor II, VII, IX, X) ติดตาม **INR**\n- **DOAC** (dabigatran, rivaroxaban): ไม่ต้องตรวจประจำ"
+          "title_th": "ธาตุเหล็กชนิดรับประทาน (oral iron salts)",
+          "body_md": "ยาเม็ดธาตุเหล็กแสดงปริมาณเป็น **elemental iron** ที่แตกต่างกันตามเกลือ:\n\n| เกลือ | ขนาดเม็ด | Elemental iron |\n|---|---|---|\n| **Ferrous sulfate** | 325 mg (300 mg) | ~65 mg (~20%) |\n| **Ferrous fumarate** | 200 mg | ~66 mg (~33%) |\n| **Ferrous gluconate** | 300 mg | ~35 mg (~12%) |\n\n**เป้าหมายการรักษา IDA:** elemental iron ~100–200 mg/วัน\n\nหลักฐานใหม่: การให้ **วันเว้นวัน (alternate-day)** หรือวันละครั้งอาจดูดซึมรวมได้ดีกว่าและทน ADR ได้ดีกว่า (ลดผล hepcidin)"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "Counseling การกินธาตุเหล็กให้ดูดซึมดี",
+          "body_md": "**คำแนะนำสำคัญ:**\n- กินตอน **ท้องว่าง** (1 ชม.ก่อนหรือ 2 ชม.หลังอาหาร) ดูดซึมดีที่สุด แต่ถ้าระคายกระเพาะให้กินพร้อมอาหารได้ (ดูดซึมลดลงบ้าง)\n- **Vitamin C** (กรดทำให้ Fe³⁺ → Fe²⁺) ช่วยเพิ่มการดูดซึม\n- หลีกเลี่ยงกินพร้อม: นม/แคลเซียม, ยาลดกรด/PPI, ชา-กาแฟ (tannin), ยา levothyroxine, quinolone, tetracycline, bisphosphonate → **เว้นห่างอย่างน้อย 2 ชม.**\n\n**การตอบสนอง:** reticulocyte ขึ้นใน 5–10 วัน, Hb ขึ้น ~2 g/dL ใน 3–4 สัปดาห์ → ให้ต่อ **3–6 เดือน** หลัง Hb ปกติเพื่อเติม iron store"
         },
         {
           "card_type": "warning",
-          "title_th": "Antidote ที่ต้องจำ",
-          "body_md": "- Warfarin → **Vitamin K** (+ FFP/PCC ถ้าเลือดออกรุนแรง)\n- Heparin/LMWH → **Protamine sulfate**\n- Dabigatran → **Idarucizumab**\n- Rivaroxaban/apixaban → **Andexanet alfa**"
+          "title_th": "ADR ของธาตุเหล็กและพิษเฉียบพลัน",
+          "body_md": "**ADR ที่พบบ่อย (GI):** ท้องผูก คลื่นไส้ ปวดท้อง **อุจจาระสีดำ** (ปกติ ไม่ใช่เลือดออก) — เป็นสาเหตุหลักที่ผู้ป่วยหยุดยา\n\n**พิษเฉียบพลันจากธาตุเหล็ก (iron overdose):**\n- เป็นสาเหตุการเสียชีวิตจากพิษยาที่พบบ่อยในเด็ก → **เก็บให้พ้นมือเด็ก**\n- ระยะ: GI bleeding → ระยะสงบหลอก → metabolic acidosis, ตับวาย, ช็อก\n- **Antidote: deferoxamine** (iron chelator)\n\nระวัง: ไม่ให้เหล็กเกินจำเป็นใน thalassemia/hemochromatosis (iron overload)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ธาตุเหล็กชนิดฉีด (IV iron)",
+          "body_md": "**ข้อบ่งชี้ IV iron:**\n- ทนยา oral ไม่ได้ หรือดูดซึมไม่ได้ (IBD, post-bariatric, malabsorption)\n- ไตวายเรื้อรังที่ฟอกไต + ESA\n- ต้องการเติมเหล็กเร็ว (ก่อนผ่าตัด, CHF)\n\n**รูปแบบ:** ferric carboxymaltose, iron sucrose, ferric derisomaltose, low-molecular-weight iron dextran\n\n**ADR สำคัญ:**\n- **Hypersensitivity/anaphylaxis** — สังเกตอาการขณะให้\n- **Hypophosphatemia** (พบกับ ferric carboxymaltose)\n- รอยคล้ำผิวหนังถ้ายารั่วออกนอกหลอดเลือด"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "การรักษาภาวะขาด Vitamin B12",
+          "body_md": "**สาเหตุขาด B12:** pernicious anemia (ขาด intrinsic factor – autoimmune), ตัดกระเพาะ/ileum, มังสวิรัติเคร่งครัด, **metformin** ใช้นาน, PPI นาน\n\n**การรักษา:**\n- **IM cyanocobalamin/hydroxocobalamin:** 1,000 mcg ทุกวันหรือวันเว้นวัน 1–2 สัปดาห์ แล้วตามด้วยทุกเดือน (ใน pernicious anemia ต้องให้ **ตลอดชีวิต**)\n- **Oral B12 ขนาดสูง** (1,000–2,000 mcg/วัน) ได้ผลในหลายรายแม้ไม่มี intrinsic factor (ดูดซึมแบบ passive ~1%)\n\n**ติดตาม:** อาการทางระบบประสาท (peripheral neuropathy, subacute combined degeneration) อาจไม่กลับคืนถ้ารักษาช้า"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "การรักษาภาวะขาด Folate และการป้องกัน NTD",
+          "body_md": "**สาเหตุขาด folate:** ทานผักน้อย, alcohol, ตั้งครรภ์, ภาวะ hemolysis เรื้อรัง, ยา (methotrexate, trimethoprim, phenytoin)\n\n**การรักษา:** folic acid **1–5 mg/วัน** รับประทาน นาน ~1–4 เดือน\n\n**การป้องกัน neural tube defect (NTD) ในหญิงตั้งครรภ์:**\n- ทั่วไป: folic acid **400–800 mcg/วัน** ก่อนตั้งครรภ์และไตรมาสแรก\n- ประวัติบุตร NTD หรือใช้ยากันชัก/เบาหวาน: **4–5 mg/วัน**\n\n**Leucovorin (folinic acid):** ใช้ rescue พิษ methotrexate — ไม่ใช่ folic acid ธรรมดา"
         },
         {
           "card_type": "warning",
-          "title_th": "HIT และ warfarin interaction",
-          "body_md": "- **HIT** (heparin-induced thrombocytopenia): เกล็ดเลือดต่ำ + ลิ่มเลือดอุดตัน → หยุด heparin\n- Warfarin มี interaction มาก ผ่าน **CYP2C9/VKORC1** + อาหารวิตามิน K (ผักใบเขียว)"
+          "title_th": "ห้ามให้ Folate เดี่ยว ๆ เมื่อยังไม่ได้แยก B12",
+          "body_md": "**กฎทองที่ออกสอบบ่อย:**\n\nการให้ **folate อย่างเดียว** ในผู้ที่ขาด B12 จะแก้ภาวะซีด (macrocytic) ได้ แต่ **ไม่แก้และอาจทำให้ความผิดปกติทางระบบประสาท (neuropathy) จาก B12 แย่ลงอย่างถาวร** เพราะบดบังการวินิจฉัย\n\n**ดังนั้น:** เมื่อพบ macrocytic anemia ให้ **ตรวจระดับ B12 และ folate พร้อมกันก่อนเริ่มรักษา** และแก้ B12 ก่อน/พร้อมกัน\n\nจำ: \"folate masks B12 neuropathy\""
+        }
+      ]
+    },
+    {
+      "title_th": "Warfarin: กลไก การติดตาม INR และการแก้ฤทธิ์",
+      "subtitle_th": "VKOR, INR, drug/food interactions, vit K, PCC, bridging",
+      "icon": "🟣",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "warfarin",
+        "วาร์ฟาริน",
+        "INR",
+        "vitamin K",
+        "VKOR",
+        "vitamin K antagonist",
+        "PCC",
+        "bridging",
+        "CYP2C9",
+        "drug interaction"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "กลไกของ Warfarin (VKOR inhibition)",
+          "body_md": "Warfarin เป็น **vitamin K antagonist (VKA)**:\n- ยับยั้งเอนไซม์ **VKOR (vitamin K epoxide reductase)** → ลดการสร้างวิตามินเคในรูป reduced form\n- ทำให้สร้าง clotting factor ที่ vitamin K-dependent ลดลง: **factor II, VII, IX, X** + anticoagulant **protein C และ protein S**\n\n**ออกฤทธิ์ช้า** (2–3 วัน) เพราะต้องรอให้ factor ที่มีอยู่หมดอายุไปก่อน — factor VII half-life สั้นสุด (~6 ชม.) จึงทำให้ INR ขึ้นก่อน แต่ฤทธิ์ antithrombotic เต็มที่ต้องรอ factor II (prothrombin, half-life ~60 ชม.)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "การติดตามด้วย INR",
+          "body_md": "Warfarin ติดตามด้วย **INR (International Normalized Ratio)** ซึ่งคำนวณจาก PT\n\n**เป้าหมาย INR:**\n- ส่วนใหญ่ (AF, VTE, bioprosthetic valve): **2.0–3.0**\n- Mechanical mitral valve / mechanical valve เก่า: **2.5–3.5**\n\n**ความถี่:** เริ่มตรวจทุก 2–3 วันช่วงปรับขนาด เมื่อคงที่อาจตรวจทุก 4 สัปดาห์ (สูงสุดถึง 12 สัปดาห์ถ้าคงที่นาน)\n\n**ขนาดเริ่มต้น:** 5 mg/วัน (2.5 mg ในผู้สูงอายุ/น้ำหนักน้อย/ตับเสื่อม) — **ไม่ใช้ loading dose สูง** เพราะเสี่ยง protein C ลดเร็ว"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Drug interactions ของ Warfarin (CYP2C9)",
+          "body_md": "Warfarin เมแทบอลิซึมหลักผ่าน **CYP2C9** (S-warfarin) และ CYP1A2/3A4 (R-warfarin) มี interaction มากมาย:\n\n**เพิ่มฤทธิ์ (INR สูง → เลือดออก):**\n- ยับยั้ง CYP2C9: **metronidazole, fluconazole, amiodarone, fluoroquinolone, TMP-SMX, fluvoxamine**\n- เพิ่ม bleeding risk: NSAIDs, aspirin, SSRIs\n- ลดวิตามินเค: ยาปฏิชีวนะวงกว้าง (ฆ่าแบคทีเรียลำไส้)\n\n**ลดฤทธิ์ (INR ต่ำ → ลิ่มเลือด):**\n- เหนี่ยวนำเอนไซม์: **rifampicin, carbamazepine, phenytoin, phenobarbital, St. John's wort**\n\nตรวจ INR ทุกครั้งที่เพิ่ม/หยุดยาที่มี interaction"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "อาหารและวิตามินเค: counseling",
+          "body_md": "**ผักใบเขียวเข้ม** มีวิตามินเคสูง (ผักคะน้า, บรอกโคลี, ผักโขม, กะหล่ำ) ทำให้ฤทธิ์ warfarin ลดลง\n\n**คำแนะนำที่ถูกต้อง:** ไม่ใช่ให้ \"งดผัก\" แต่ให้ **กินผักในปริมาณสม่ำเสมอ** ทุกวัน เพื่อให้ INR คงที่\n\n**สิ่งที่ต้องระวัง:**\n- **แอลกอฮอล์** มาก/ดื่มหนักเป็นครั้งคราว → INR แกว่ง\n- น้ำมันปลา, ginkgo, กระเทียมขนาดสูง → เพิ่มเลือดออก\n- **Cranberry juice** อาจเพิ่ม INR\n- หลีกเลี่ยงซื้อ NSAID/aspirin เอง"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "การแก้ฤทธิ์ Warfarin (reversal)",
+          "body_md": "การจัดการตาม INR และการมีเลือดออก:\n\n| สถานการณ์ | การจัดการ |\n|---|---|\n| INR สูงแต่ < 4.5, ไม่มีเลือดออก | ลด/งด  1 ครั้ง |\n| INR 4.5–10, ไม่มีเลือดออก | งด warfarin; พิจารณา oral vitamin K 1–2.5 mg ถ้าเสี่ยงสูง |\n| INR > 10, ไม่มีเลือดออก | งด + **oral vitamin K 2.5–5 mg** |\n| **เลือดออกรุนแรง (major bleeding)** | งด + **IV vitamin K 5–10 mg** + **4-factor PCC** (เลือกแรก) หรือ FFP |\n\n**PCC (Prothrombin Complex Concentrate)** ออกฤทธิ์เร็วกว่า FFP มาก ใช้ปริมาตรน้อยกว่า — เป็นตัวเลือกแรกใน life-threatening bleeding"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Bridging therapy",
+          "body_md": "**Bridging** = ใช้ heparin/LMWH ครอบช่วงที่ INR ยังไม่ถึงเป้าหรือช่วงหยุด warfarin รอบผ่าตัด\n\n**เริ่มยา (initiation):** ในผู้ป่วยที่มีลิ่มเลือดเฉียบพลัน (DVT/PE) ต้องให้ heparin/LMWH overlap กับ warfarin **อย่างน้อย 5 วัน และจน INR ≥ 2.0 ติดต่อกัน 24 ชม.** เพราะ warfarin ออกฤทธิ์ช้าและมีช่วง procoagulant\n\n**รอบผ่าตัด (perioperative):** หยุด warfarin ~5 วันก่อนผ่าตัด; bridge ด้วย LMWH **เฉพาะผู้ที่มีความเสี่ยงลิ่มเลือดสูง** (mechanical mitral valve, VTE เพิ่งเกิด, CHA₂DS₂-VASc สูง) — ปัจจุบัน bridging ในผู้เสี่ยงต่ำไม่แนะนำเพราะเพิ่มเลือดออก"
         },
         {
           "card_type": "mnemonic",
-          "title_th": "จำ Warfarin: 1972",
-          "body_md": "Vitamin K-dependent factors = **2, 7, 9, 10** (จำว่า '1972' + factor 10)\n\nช่วงแรก warfarin อาจ **procoagulant** ชั่วคราว (protein C ลดก่อน) → ต้อง bridge ด้วย heparin"
+          "title_th": "จำ Warfarin: \"1972\" และ skin necrosis",
+          "body_md": "**Vitamin K-dependent factors = 2, 7, 9, 10** → จำเป็นเลข **\"1972\"** + factor 10\n(บวก protein C, protein S ที่เป็น anticoagulant)\n\n**Warfarin-induced skin necrosis:** เกิดวันแรก ๆ ของการเริ่มยา เพราะ **protein C (anticoagulant, half-life สั้น) ลดลงเร็วกว่า factor procoagulant** → เกิดภาวะ hypercoagulable ชั่วคราว → ลิ่มเลือดในหลอดเลือดฝอยผิวหนัง พบมากในผู้ขาด protein C\n\nวิธีป้องกัน: **bridge ด้วย heparin** และไม่ใช้ loading dose สูง"
+        }
+      ]
+    },
+    {
+      "title_th": "DOACs: ขนาดยา การปรับตามไต และยาแก้ฤทธิ์",
+      "subtitle_th": "Dabigatran, rivaroxaban, apixaban, edoxaban; reversal",
+      "icon": "🟠",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "DOAC",
+        "dabigatran",
+        "rivaroxaban",
+        "apixaban",
+        "edoxaban",
+        "idarucizumab",
+        "andexanet alfa",
+        "factor Xa inhibitor",
+        "thrombin inhibitor",
+        "CrCl"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "กลุ่มและกลไกของ DOAC",
+          "body_md": "**DOAC (Direct Oral Anticoagulant)** แบ่งตามเป้าหมาย:\n\n- **Direct thrombin inhibitor (IIa):** **dabigatran** (prodrug = dabigatran etexilate)\n- **Direct factor Xa inhibitor (\"-xaban\"):** **rivaroxaban, apixaban, edoxaban**\n\n**ข้อดีเหนือ warfarin:** ออกฤทธิ์เร็ว, ขนาดคงที่, **ไม่ต้องตรวจ INR ประจำ**, food/drug interaction น้อยกว่า\n\n**ข้อบ่งชี้:** non-valvular AF, รักษา/ป้องกัน VTE\n**ห้ามใช้:** mechanical heart valve, moderate-severe mitral stenosis, ตั้งครรภ์ (ใช้ warfarin หรือ LMWH แทน)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "การปรับขนาดตามการทำงานของไต (CrCl)",
+          "body_md": "DOAC ขับออกทางไตต่างกัน ต้องประเมิน **CrCl (Cockcroft-Gault)**:\n\n- **Dabigatran** ขับทางไตมากที่สุด (~80%) → **ห้ามใช้เมื่อ CrCl < 30** mL/min\n- **Rivaroxaban, edoxaban** → หลีกเลี่ยง/ปรับขนาดเมื่อ CrCl < 30 (รายละเอียดต่างตามข้อบ่งชี้)\n- **Apixaban** พึ่งไตน้อยที่สุด (~27%) → ใช้ได้ในไตเสื่อมระดับมากกว่าตัวอื่น (มีข้อมูลถึงผู้ฟอกไตในบางแนวทาง)\n\n**ตัวอย่างการปรับ apixaban ใน AF:** ลดเหลือ 2.5 mg BID เมื่อมี **≥2 ใน 3 ข้อ**: อายุ ≥80 ปี, น้ำหนัก ≤60 kg, SCr ≥1.5 mg/dL\n\n**Edoxaban:** ห้ามใช้ใน AF ถ้า CrCl **สูงเกิน 95** mL/min (ประสิทธิภาพลด)"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "การกินยาและจุดเด่นแต่ละตัว",
+          "body_md": "**การบริหารยา:**\n- **Rivaroxaban** (ขนาดรักษา ≥15 mg) ต้อง **กินพร้อมอาหาร** เพื่อการดูดซึมที่ดี; วันละ 1 ครั้ง\n- **Apixaban** วันละ 2 ครั้ง, กินกับหรือไม่กับอาหารก็ได้\n- **Dabigatran** ห้ามแกะแคปซูล (เพิ่มการดูดซึม 75% เสี่ยงเลือดออก), อาจมี dyspepsia, เก็บในซองเดิมกันความชื้น\n- **Edoxaban, dabigatran** ต้องให้ parenteral anticoagulant นำ 5–10 วันก่อนเริ่ม (lead-in) ในการรักษา VTE\n- **Apixaban, rivaroxaban** เริ่มได้เลยแบบ single-drug (มีช่วง high-dose นำ)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ยาแก้ฤทธิ์ DOAC (reversal agents)",
+          "body_md": "**Idarucizumab (Praxbind):**\n- monoclonal antibody fragment จับ **dabigatran** จำเพาะ\n- ใช้ใน life-threatening bleeding หรือก่อนผ่าตัดฉุกเฉิน\n\n**Andexanet alfa (Andexxa):**\n- recombinant decoy factor Xa จับ **rivaroxaban, apixaban** (และ edoxaban) — แก้ฤทธิ์ factor Xa inhibitor\n\n**ทางเลือกเมื่อไม่มี specific antidote:** **4-factor PCC** (off-label) สำหรับ Xa inhibitor\n\n**Dabigatran** ยังสามารถกำจัดได้ด้วย **hemodialysis** (protein binding ต่ำ) ต่างจาก -xaban (binding สูง ฟอกไม่ออก)"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Drug interactions ของ DOAC",
+          "body_md": "DOAC มี interaction น้อยกว่า warfarin แต่ยังสำคัญผ่าน **P-glycoprotein (P-gp)** และ **CYP3A4** (xaban):\n\n**เพิ่มระดับ DOAC → เลือดออก:** ยับยั้ง P-gp/CYP3A4 เช่น **ketoconazole, itraconazole, ritonavir, clarithromycin, verapamil, amiodarone, dronedarone**\n\n**ลดระดับ DOAC → ลิ่มเลือด:** เหนี่ยวนำ P-gp/CYP3A4 เช่น **rifampicin, carbamazepine, phenytoin, St. John's wort** → ควรหลีกเลี่ยง\n\n**ห้ามรวม** กับ anticoagulant/antiplatelet อื่นโดยไม่จำเป็น และระวัง NSAIDs"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ Antidote: \"Ida-Dabi, Andexa-Xa\"",
+          "body_md": "**Ida**rucizumab → **Dabi**gatran (direct thrombin inhibitor)\n\n**Andexa**net alfa → factor **Xa** inhibitors (rivaroXAban, apiXAban, edoXAban)\n\nจำง่าย: ตัวที่ลงท้าย **\"-xaban\"** = Xa inhibitor → แก้ด้วย **andeXAnet**\n\n**Dabi**gatran เริ่มด้วย D เหมือน **D**ialyzable (ฟอกออกได้)"
+        },
+        {
+          "card_type": "example",
+          "title_th": "ตัวอย่าง: เลือก DOAC ในผู้สูงอายุไตเสื่อม",
+          "body_md": "**ผู้ป่วย:** ชาย 82 ปี, น้ำหนัก 55 kg, SCr 1.6 mg/dL, AF ต้องการ anticoagulation\n\n**วิเคราะห์:**\n- มี **3 ข้อ** สำหรับ apixaban dose reduction (อายุ ≥80, น้ำหนัก ≤60, SCr ≥1.5) → ผ่านเกณฑ์ ≥2 ข้อ\n- เลือก **apixaban 2.5 mg BID** เพราะพึ่งไตน้อยและมีข้อมูลในผู้สูงอายุดี\n- ตรวจ CrCl, การทำงานของตับ, Hb ก่อนเริ่มและติดตามเป็นระยะ\n\n**บทเรียน:** apixaban มักเป็นตัวเลือกที่ปลอดภัยกว่าในผู้สูงอายุ/ไตเสื่อม; หลีกเลี่ยง dabigatran เมื่อ CrCl < 30"
+        }
+      ]
+    },
+    {
+      "title_th": "Heparin (UFH) และ LMWH: การติดตาม HIT และ Protamine",
+      "subtitle_th": "aPTT/anti-Xa monitoring, HIT, protamine reversal",
+      "icon": "🔵",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "heparin",
+        "UFH",
+        "LMWH",
+        "enoxaparin",
+        "aPTT",
+        "anti-Xa",
+        "HIT",
+        "protamine",
+        "เฮพาริน",
+        "thrombocytopenia"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "กลไก UFH เทียบ LMWH",
+          "body_md": "ทั้งคู่ออกฤทธิ์ผ่าน **antithrombin (AT)** ทำให้ AT ยับยั้ง clotting factor เร็วขึ้น:\n\n- **UFH (unfractionated heparin):** สายยาว ยับยั้งทั้ง **factor Xa และ thrombin (IIa)** ในสัดส่วนเท่ากัน (1:1); ออกฤทธิ์เร็วทาง IV; half-life สั้น\n- **LMWH (enoxaparin, dalteparin):** สายสั้น ยับยั้ง **factor Xa เป็นหลัก** (anti-Xa:anti-IIa ~3–4:1); ให้ SC; PK คาดเดาได้ดี\n- **Fondaparinux:** pentasaccharide สังเคราะห์ ยับยั้ง factor Xa ล้วน"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "การติดตาม: aPTT vs anti-Xa",
+          "body_md": "**UFH (therapeutic IV):**\n- ติดตามด้วย **aPTT** (เป้า ~1.5–2.5 เท่าของ baseline) หรือ **anti-Xa**\n- ตรวจ aPTT ทุก 6 ชม.หลังปรับขนาด; ตรวจ platelet baseline และติดตาม\n\n**LMWH:**\n- **ไม่ต้องติดตามประจำ** เพราะ PK คาดเดาได้\n- ตรวจ **anti-Xa level** เฉพาะกลุ่ม: ตั้งครรภ์, อ้วนมาก/น้ำหนักน้อยมาก, ไตเสื่อม, เด็ก (เก็บ peak 4 ชม.หลังฉีด)\n- **aPTT ใช้ไม่ได้กับ LMWH**\n\n**LMWH ปรับขนาดเมื่อ CrCl < 30** mL/min (สะสมเสี่ยงเลือดออก) — UFH เป็นทางเลือกในไตวายรุนแรงเพราะไม่พึ่งไต"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "HIT (Heparin-Induced Thrombocytopenia)",
+          "body_md": "**HIT type II** เป็นปฏิกิริยา immune-mediated ที่อันตราย:\n- เกิดจาก antibody ต่อ **PF4-heparin complex** → กระตุ้นเกล็ดเลือด → **ลิ่มเลือด (thrombosis)** ทั้งที่เกล็ดเลือดต่ำ\n- เกล็ดเลือดลด **> 50%** จาก baseline, มักวันที่ **5–10** หลังเริ่ม heparin\n- พบบ่อยกับ **UFH > LMWH**\n- ใช้ **4T score** ประเมินความน่าจะเป็น\n\n**การจัดการ:**\n1. **หยุด heparin ทุกชนิดทันที** (รวม heparin flush)\n2. เปลี่ยนเป็น non-heparin anticoagulant: **argatroban, fondaparinux, bivalirudin, หรือ DOAC**\n3. **ห้ามให้เกล็ดเลือด** และ **ห้ามเริ่ม warfarin** จนกว่าเกล็ดเลือดฟื้น (เสี่ยง venous limb gangrene)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Protamine sulfate: การแก้ฤทธิ์",
+          "body_md": "**Protamine sulfate** เป็น antidote ของ heparin (โปรตีนประจุบวกจับ heparin ประจุลบ):\n\n- **UFH:** 1 mg protamine แก้ heparin ~100 units (คำนวณจาก heparin ที่ให้ใน ~2–3 ชม.ที่ผ่านมา); max ~50 mg ต่อครั้ง\n- **LMWH (enoxaparin):** protamine แก้ได้ **เพียงบางส่วน (~60%)** เพราะ anti-Xa ไม่ถูก neutralize เต็มที่\n- **Fondaparinux:** protamine **ไม่ได้ผล**\n\n**ADR ของ protamine:** hypotension, bradycardia (ให้ช้า ๆ), แพ้รุนแรงในผู้ที่เคยได้ NPH insulin (มี protamine), แพ้ปลา, ผู้ชายที่ทำหมัน (vasectomy)"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "การใช้ Enoxaparin ในทางปฏิบัติ",
+          "body_md": "**Enoxaparin ขนาดที่ออกสอบบ่อย:**\n- **Prophylaxis (VTE):** 40 mg SC วันละครั้ง (หรือ 30 mg BID)\n- **Treatment (DVT/PE):** **1 mg/kg SC ทุก 12 ชม.** หรือ 1.5 mg/kg วันละครั้ง\n- **CrCl < 30:** ปรับเป็น **1 mg/kg วันละครั้ง** (treatment dose)\n\n**ข้อดีของ LMWH:** ใช้ผู้ป่วยนอกได้ (home therapy), ไม่ต้องเจาะเลือดบ่อย, HIT น้อยกว่า\n\n**ฉีดเข้าชั้นไขมันหน้าท้อง** สลับข้าง, **ไม่ไล่ฟองอากาศ** ในเข็มสำเร็จรูป, ไม่ถูบริเวณฉีด"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ HIT: \"กฎ 4 ตัว T\" (4T score)",
+          "body_md": "**4T score** ประเมิน HIT:\n- **T**hrombocytopenia – เกล็ดเลือดลดมากแค่ไหน (>50%)\n- **T**iming – ลดในวันที่ 5–10\n- **T**hrombosis – มีลิ่มเลือดใหม่หรือไม่\n- o**T**her cause – ไม่มีสาเหตุอื่นอธิบาย\n\nจุดที่นักศึกษามักพลาด: **HIT ทำให้เกิดลิ่มเลือด ไม่ใช่เลือดออก** แม้เกล็ดเลือดต่ำ → จึงต้อง **anticoagulate ต่อ** ด้วยยา non-heparin ไม่ใช่หยุดยาเฉย ๆ"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ข้อควรระวังอื่นของ Heparin",
+          "body_md": "- **Hyperkalemia:** heparin ยับยั้งการสร้าง aldosterone → ระวังในไตเสื่อม/เบาหวาน/ใช้ยา ACEi\n- **Osteoporosis:** ใช้ UFH ระยะยาว (>1 เดือน) เช่นในหญิงตั้งครรภ์\n- **เลือดออก:** ADR หลัก — ติดตาม Hb/Hct, สัญญาณเลือดออก\n- **Heparin ผ่านรกไม่ได้** → ปลอดภัยในหญิงตั้งครรภ์ (ต่างจาก warfarin ที่เป็น teratogen) — LMWH เป็นตัวเลือกหลักของ VTE ในหญิงตั้งครรภ์"
+        }
+      ]
+    },
+    {
+      "title_th": "ยาต้านเกล็ดเลือดและ DAPT",
+      "subtitle_th": "Aspirin, clopidogrel (CYP2C19), ticagrelor, prasugrel",
+      "icon": "🟡",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "aspirin",
+        "แอสไพริน",
+        "clopidogrel",
+        "ticagrelor",
+        "prasugrel",
+        "CYP2C19",
+        "DAPT",
+        "antiplatelet",
+        "P2Y12",
+        "ยาต้านเกล็ดเลือด"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "Aspirin: กลไกและขนาด",
+          "body_md": "**Aspirin (ASA)** ยับยั้ง **COX-1 แบบถาวร (irreversible)** ในเกล็ดเลือด → ลดการสร้าง **thromboxane A₂ (TXA₂)** → ยับยั้งการเกาะกลุ่มเกล็ดเลือด\n\n- ฤทธิ์อยู่ตลอดอายุเกล็ดเลือด (~7–10 วัน) เพราะเกล็ดเลือดไม่มี nucleus สร้าง COX ใหม่ไม่ได้\n- **ขนาดต้านเกล็ดเลือด:** 75–100 mg/วัน (low-dose); loading 162–325 mg ใน ACS\n- **ADR:** เลือดออกทางเดินอาหาร, แผลในกระเพาะ, ระวัง **Reye syndrome** ในเด็ก/ไข้หวัดใหญ่/อีสุกอีใส\n- **ไม่ใช้** aspirin primary prevention พร่ำเพรื่อในผู้สูงอายุ (เสี่ยงเลือดออก > ประโยชน์)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "P2Y12 inhibitors: clopidogrel, prasugrel, ticagrelor",
+          "body_md": "ยับยั้ง **ADP receptor P2Y12** บนเกล็ดเลือด:\n\n| ยา | ลักษณะ | จุดเด่น |\n|---|---|---|\n| **Clopidogrel** | prodrug, irreversible, ต้อง CYP2C19 activate | ราคาถูก, แต่ผลแปรปรวนตามพันธุกรรม |\n| **Prasugrel** | prodrug, irreversible, ออกฤทธิ์แรง/เร็ว | แรงกว่า clopidogrel; เสี่ยงเลือดออกสูง |\n| **Ticagrelor** | ออกฤทธิ์ตรง (ไม่ใช่ prodrug), **reversible** | ให้ BID; ไม่ขึ้นกับ CYP2C19 |\n\n**Cangrelor:** IV, reversible, ออกฤทธิ์/หมดฤทธิ์เร็วมาก ใช้ระหว่าง PCI"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Clopidogrel และ CYP2C19 (pharmacogenomics)",
+          "body_md": "**Clopidogrel เป็น prodrug** ต้องถูกเปลี่ยนเป็นรูปออกฤทธิ์โดย **CYP2C19**\n\n- ผู้ที่เป็น **CYP2C19 poor metabolizer** (พบมากในคนเอเชีย) → activate ยาได้น้อย → **ฤทธิ์ต้านเกล็ดเลือดลดลง → เสี่ยง stent thrombosis**\n- พิจารณาใช้ **prasugrel หรือ ticagrelor** แทนในกลุ่มนี้ (ไม่พึ่ง CYP2C19)\n\n**Drug interaction สำคัญ:** **PPI โดยเฉพาะ omeprazole/esomeprazole** ยับยั้ง CYP2C19 → ลดฤทธิ์ clopidogrel → ถ้าจำเป็นต้องใช้ PPI ให้เลือก **pantoprazole** (ยับยั้ง CYP2C19 น้อยกว่า)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "DAPT (Dual Antiplatelet Therapy)",
+          "body_md": "**DAPT = aspirin + P2Y12 inhibitor** ใช้ป้องกัน stent thrombosis และใน ACS\n\n**ระยะเวลาทั่วไป:**\n- **ACS (มี/ไม่มี PCI):** DAPT **อย่างน้อย 12 เดือน** (ปรับสั้นลงถ้าเสี่ยงเลือดออกสูง)\n- **Elective PCI (stable CAD):** DAPT ~6 เดือน (drug-eluting stent), อาจสั้นกว่าถ้าเสี่ยงเลือดออก\n- หลังครบกำหนด → ต่อด้วย antiplatelet เดี่ยว (ส่วนใหญ่ aspirin หรือ P2Y12 ตลอดชีวิต)\n\n**การเลือก P2Y12 ใน ACS:** prasugrel/ticagrelor เหนือกว่า clopidogrel (ยกเว้นข้อห้าม)"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ข้อห้ามและ ADR เฉพาะตัว",
+          "body_md": "**Prasugrel ห้ามใช้ใน:**\n- ผู้มีประวัติ **stroke/TIA** (เพิ่มเลือดออกในสมองอย่างมาก)\n- ระวังในอายุ ≥75 ปี และน้ำหนัก < 60 kg\n\n**Ticagrelor ADR เฉพาะ:**\n- **Dyspnea** (หายใจลำบาก ~10–20%, มักหายเอง)\n- **ภาวะหยุดหายใจช้า/ventricular pause**\n- ห้ามใช้ aspirin **ขนาดสูง (>100 mg)** ร่วมด้วย เพราะลดประสิทธิภาพ ticagrelor\n- ผ่าน CYP3A4 → ระวัง interaction (strong inhibitor/inducer)\n\nหยุด P2Y12 ก่อนผ่าตัด: clopidogrel/ticagrelor 5 วัน, prasugrel 7 วัน"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ P2Y12: \"Clopi ต้องแปลง, Tica reversible\"",
+          "body_md": "- **Clopi**dogrel + **Pra**sugrel = **prodrug, irreversible** (ต้อง activate) → จำว่ามี \"P\" เหมือน **P**rodrug\n- **Tica**grelor = ตัวเดียวที่ **reversible** + ให้ **BID** + ไม่พึ่ง CYP2C19 → จำว่า **\"T\" = Twice daily, no Transformation needed**\n\n**Prasugrel ห้ามใน prior Stroke** → จำ \"**Pra**sugrel ≠ **P**rior **S**troke\"\n\n**Ticagrelor → dyspnea** → \"**T**ica = **T**rouble breathing\""
+        },
+        {
+          "card_type": "example",
+          "title_th": "ตัวอย่าง: เลือก P2Y12 หลัง PCI",
+          "body_md": "**ผู้ป่วย:** ชายไทย 60 ปี STEMI ทำ PCI ใส่ stent มีประวัติ **TIA เมื่อ 2 ปีก่อน** มีแผลในกระเพาะเดิม ต้องใช้ PPI\n\n**วิเคราะห์:**\n- **ห้าม prasugrel** เพราะมีประวัติ TIA/stroke\n- ถ้าใช้ **clopidogrel** ระวัง PPI: เลือก **pantoprazole** ไม่ใช่ omeprazole\n- **ticagrelor** เป็นทางเลือกที่ดี (ไม่พึ่ง CYP2C19, ไม่มีปัญหา interaction กับ PPI) แต่ต้องคุม aspirin ≤100 mg และเตือนเรื่อง dyspnea\n\n**สรุป:** ในเคสนี้ ticagrelor + aspirin low-dose + pantoprazole เป็นทางเลือกที่เหมาะสม"
+        }
+      ]
+    },
+    {
+      "title_th": "การป้องกันและรักษา VTE (DVT/PE)",
+      "subtitle_th": "VTE prophylaxis/treatment, duration, cancer-associated",
+      "icon": "🦵",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "VTE",
+        "DVT",
+        "PE",
+        "pulmonary embolism",
+        "venous thromboembolism",
+        "prophylaxis",
+        "cancer-associated thrombosis",
+        "provoked",
+        "unprovoked",
+        "ลิ่มเลือดดำ"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "VTE คืออะไรและปัจจัยเสี่ยง (Virchow's triad)",
+          "body_md": "**VTE (Venous Thromboembolism)** ครอบคลุม **DVT (deep vein thrombosis)** และ **PE (pulmonary embolism)**\n\n**Virchow's triad** อธิบายกลไกการเกิดลิ่มเลือด:\n1. **Stasis** – เลือดไหลช้า (นอนนาน, เครื่องบิน, อัมพาต)\n2. **Endothelial injury** – ผนังหลอดเลือดบาดเจ็บ (ผ่าตัด, สายสวน)\n3. **Hypercoagulability** – เลือดแข็งตัวง่าย (มะเร็ง, ตั้งครรภ์, ยาคุม/ฮอร์โมน, thrombophilia)\n\n**อาการ DVT:** ขาบวมข้างเดียว ปวด แดง ร้อน\n**อาการ PE:** หอบเฉียบพลัน เจ็บอกตามการหายใจ ไอเป็นเลือด ใจสั่น (ถ้าใหญ่ → ช็อก)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "VTE prophylaxis (การป้องกัน)",
+          "body_md": "ผู้ป่วยที่นอนโรงพยาบาล/ผ่าตัดเสี่ยงสูงควรได้รับ prophylaxis (ประเมินด้วย Padua/Caprini score):\n\n**Pharmacologic prophylaxis:**\n- **LMWH** (enoxaparin 40 mg SC วันละครั้ง) — มาตรฐาน\n- **UFH** 5,000 units SC ทุก 8–12 ชม. (ในไตวายรุนแรง)\n- **Fondaparinux** หรือ DOAC (บางข้อบ่งชี้ orthopedic)\n\n**Mechanical prophylaxis:** intermittent pneumatic compression (IPC), graduated compression stockings — ใช้เมื่อ **มีข้อห้ามยาต้านการแข็งตัว** (เลือดออก)\n\n**Surgery เสี่ยงสูง** (สะโพก/เข่า, มะเร็ง) อาจให้ extended prophylaxis ต่อหลังออกจากโรงพยาบาล"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "การรักษา VTE เฉียบพลัน",
+          "body_md": "**แนวทางการรักษา DVT/PE:**\n- **DOAC เป็นตัวเลือกแรก** (apixaban, rivaroxaban เริ่มได้เลย; dabigatran/edoxaban ต้อง LMWH นำ 5–10 วัน)\n- **LMWH → warfarin** (overlap จน INR 2–3 อย่างน้อย 5 วัน): ทางเลือกดั้งเดิม\n- **PE ที่มี hemodynamic instability (massive PE)** → พิจารณา **thrombolysis** (alteplase)\n\n**IVC filter:** เฉพาะเมื่อ **มีข้อห้าม anticoagulation** หรือเกิด VTE ซ้ำทั้งที่ได้ยาเต็มที่ — ไม่ใช่ทางเลือกแรก"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ระยะเวลาการรักษา: provoked vs unprovoked",
+          "body_md": "ระยะเวลาขึ้นกับสาเหตุและความเสี่ยงเกิดซ้ำ:\n\n| ชนิด | ตัวอย่าง | ระยะเวลา |\n|---|---|---|\n| **Provoked (มีปัจจัยกระตุ้นชั่วคราว)** | หลังผ่าตัด, ขาหัก, เครื่องบินนาน | **3 เดือน** แล้วหยุด |\n| **Unprovoked (ไม่มีปัจจัยชัดเจน)** | เกิดเอง | พิจารณา **ระยะยาว/ไม่มีกำหนด** ถ้าเสี่ยงเลือดออกต่ำ |\n| **เกิดซ้ำ / thrombophilia รุนแรง** | | มักให้ **ตลอดชีวิต** |\n\nประเมินสมดุลความเสี่ยงเลือดออกเทียบประโยชน์เป็นระยะ (เช่น HAS-BLED, ตรวจซ้ำทุกปี)"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "Cancer-Associated Thrombosis (CAT)",
+          "body_md": "ผู้ป่วยมะเร็งมีภาวะ hypercoagulable สูง การเลือกยาจึงต่างออกไป:\n\n- เดิม: **LMWH** เป็นมาตรฐาน (เหนือกว่า warfarin ในผู้ป่วยมะเร็ง)\n- ปัจจุบัน: **DOAC (apixaban, rivaroxaban, edoxaban)** เป็นทางเลือกที่ยอมรับและสะดวกกว่า\n- **ระวัง DOAC ในมะเร็งทางเดินอาหาร/ทางเดินปัสสาวะ (luminal/GI cancer)** → เพิ่มเลือดออก → อาจเลือก LMWH\n- ให้ยาต่อ **อย่างน้อยตราบที่มะเร็ง active** หรือยังรับเคมีบำบัด\n- ระวัง drug interaction ของ DOAC กับยาเคมีบำบัด/targeted therapy (P-gp, CYP3A4)"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำปัจจัยเสี่ยง VTE: \"THROMBOSIS\"",
+          "body_md": "**T**rauma / surgery\n**H**ospitalization / immobility\n**R**eproductive (ตั้งครรภ์, ยาคุม estrogen, HRT)\n**O**ld age\n**M**alignancy (มะเร็ง)\n**B**ig (obesity)\n**O**peration (orthopedic เสี่ยงสูงสุด)\n**S**moking\n**I**nherited thrombophilia (factor V Leiden, protein C/S deficiency)\n**S**itting นาน (long-haul travel)\n\nจำ Virchow's triad: stasis + endothelial injury + hypercoagulability"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ระวังในหญิงตั้งครรภ์และไตเสื่อม",
+          "body_md": "**หญิงตั้งครรภ์ที่มี VTE:**\n- **LMWH เป็นตัวเลือกหลัก** (ไม่ผ่านรก)\n- **ห้าม warfarin** (teratogen – warfarin embryopathy ไตรมาสแรก, เลือดออกในทารกไตรมาสปลาย)\n- **ห้าม DOAC** (ข้อมูลความปลอดภัยไม่พอ, ผ่านรก/น้ำนม)\n\n**ไตเสื่อมรุนแรง (CrCl < 30):**\n- ระวัง LMWH สะสม → ปรับขนาด หรือใช้ **UFH** (ไม่พึ่งไต)\n- หลีกเลี่ยง dabigatran; พิจารณา apixaban/warfarin"
+        }
+      ]
+    },
+    {
+      "title_th": "ยาละลายลิ่มเลือด การจัดการเลือดออก และภาวะพร่อง G6PD",
+      "subtitle_th": "Thrombolytics, anticoagulant overdose, G6PD drug avoidance",
+      "icon": "🧨",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "thrombolytic",
+        "alteplase",
+        "streptokinase",
+        "tenecteplase",
+        "G6PD",
+        "hemolysis",
+        "bleeding management",
+        "fibrinolytic",
+        "ยาละลายลิ่มเลือด",
+        "พร่องเอนไซม์"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "ยาละลายลิ่มเลือด (Thrombolytics/Fibrinolytics)",
+          "body_md": "**กลไก:** กระตุ้น **plasminogen → plasmin** → ย่อย fibrin → สลายลิ่มเลือด\n\n**ยาในกลุ่ม:**\n- **Alteplase (tPA):** recombinant, fibrin-specific; ใช้ใน acute ischemic stroke, massive PE, STEMI\n- **Tenecteplase, reteplase:** รุ่นใหม่ ให้สะดวก (bolus), fibrin-specific มากกว่า\n- **Streptokinase:** มาจากแบคทีเรีย → กระตุ้นภูมิ (antigenic), ให้ซ้ำไม่ได้ภายในเวลาหนึ่ง, เสี่ยงแพ้/ความดันต่ำ\n\n**ข้อบ่งชี้หลัก:** acute ischemic stroke (ภายใน 4.5 ชม.), STEMI (เมื่อทำ PCI ไม่ได้ทันเวลา), massive PE"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ข้อห้ามของ Thrombolytics (bleeding risk)",
+          "body_md": "ความเสี่ยงหลักคือ **เลือดออก โดยเฉพาะ intracranial hemorrhage**\n\n**ข้อห้ามเด็ดขาด (absolute contraindications):**\n- เคยมี **เลือดออกในสมอง** มาก่อน, ischemic stroke ภายใน 3 เดือน\n- เนื้องอกในสมอง, AV malformation, aneurysm\n- มีเลือดออก active (ไม่รวมประจำเดือน)\n- สงสัย **aortic dissection**\n- บาดเจ็บศีรษะ/ใบหน้ารุนแรงภายใน 3 เดือน\n\n**ข้อห้ามสัมพัทธ์:** ความดันสูงควบคุมไม่ได้ (>180/110), ผ่าตัดใหญ่ภายใน 3 สัปดาห์, ตั้งครรภ์, INR สูง/ใช้ anticoagulant"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "การจัดการ Overdose ยาต้านการแข็งตัว (สรุป antidote)",
+          "body_md": "**ตารางแก้ฤทธิ์ที่ต้องจำ:**\n\n| ยา | Antidote / การจัดการ |\n|---|---|\n| **Warfarin** | Vitamin K (PO/IV) + **4-factor PCC** (หรือ FFP) ใน major bleeding |\n| **Heparin (UFH)** | **Protamine sulfate** (เต็มที่) |\n| **LMWH** | Protamine (แก้ได้บางส่วน ~60%) |\n| **Fondaparinux** | ไม่มี antidote เฉพาะ (พิจารณา PCC/rFVIIa) |\n| **Dabigatran** | **Idarucizumab**; hemodialysis ได้ |\n| **Rivaroxaban/apixaban/edoxaban** | **Andexanet alfa** (หรือ 4-factor PCC) |\n\n**หลักทั่วไป:** หยุดยา, ประคับประคอง (IV fluid/เลือด), หาตำแหน่งเลือดออก, ใช้ antidote ตามชนิดยา"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "การจัดการเลือดออกในทางปฏิบัติ",
+          "body_md": "**ขั้นตอนเมื่อมีเลือดออกจากยาต้านการแข็งตัว:**\n1. ประเมินความรุนแรง (major vs minor bleeding) — major = อวัยวะสำคัญ, ต้องให้เลือด, Hb ลด ≥2 g/dL\n2. **หยุดยา** anticoagulant/antiplatelet\n3. ประคับประคอง: IV fluid, packed red cells, กดห้ามเลือดเฉพาะที่\n4. ให้ **antidote** ตามชนิดยา\n5. ตรวจ lab: INR/aPTT, anti-Xa, CBC, การทำงานของไต\n6. หาและแก้ไขแหล่งเลือดออก (endoscopy, imaging)\n\n**Tranexamic acid (antifibrinolytic)** อาจใช้เสริมในเลือดออกบางตำแหน่ง (mucosal, trauma)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ภาวะพร่องเอนไซม์ G6PD",
+          "body_md": "**G6PD (glucose-6-phosphate dehydrogenase)** ป้องกันเม็ดเลือดแดงจาก oxidative stress (สร้าง NADPH/glutathione)\n\n- เป็นโรคทางพันธุกรรม **X-linked** (พบในผู้ชายมากกว่า), พบบ่อยในไทยและเอเชีย\n- เมื่อสัมผัสตัวกระตุ้น oxidative → **hemolysis เฉียบพลัน** (intravascular)\n- อาการ: ซีดเฉียบพลัน, ดีซ่าน, **ปัสสาวะสีโคล่า/เข้ม** (hemoglobinuria), เหนื่อย\n- เลือด: พบ **Heinz bodies, bite cells**\n\n**สิ่งกระตุ้น:** ยา oxidative, ถั่วปากอ้า (fava beans – favism), การติดเชื้อ, ลูกเหม็น (naphthalene)"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ยาที่ต้องหลีกเลี่ยงในผู้ป่วย G6PD",
+          "body_md": "**ยาที่กระตุ้น hemolysis (ห้าม/หลีกเลี่ยง):**\n- **ยาต้านมาลาเรีย:** **primaquine**, tafenoquine, (chloroquine ระวัง)\n- **Sulfonamides:** **co-trimoxazole (TMP-SMX)**, sulfasalazine, sulfadiazine\n- **Nitrofurantoin**\n- **Dapsone**\n- **Methylene blue** (ห้าม – ใช้รักษา methemoglobinemia แต่ในผู้ G6PD จะกลับเป็นพิษ)\n- **Rasburicase** (ห้ามเด็ดขาด – ทำให้ hemolysis รุนแรง + methemoglobinemia)\n- ยาอื่น: **nalidixic acid**, บางquinolone, ขนาดสูงของ vitamin K, aspirin ขนาดสูง\n\n**การจัดการ hemolysis:** หยุดยาต้นเหตุ, ประคับประคอง, ให้เลือดถ้ารุนแรง, hydration ป้องกันไตวายจาก hemoglobinuria"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำยาห้ามใน G6PD: \"ห้าม สูตร AAA + Primaquine\"",
+          "body_md": "ยาที่กระตุ้น hemolysis ใน G6PD — จำกลุ่ม **\"P-A-N-D-S\"**:\n\n**P**rimaquine (และยา antimalarial กลุ่ม 8-aminoquinoline)\n**A**ntibiotics: sulfonamides (co-trimoxazole), nitrofurantoin, dapsone, nalidixic acid\n**N**aphthalene (ลูกเหม็น)\n**D**ye: methylene blue\n**S**ulfa drugs / aSpirin ขนาดสูง\n\nบวกตัวอันตรายพิเศษ: **Rasburicase** (ห้ามเด็ดขาด)\n\nจำง่าย: \"ยา oxidative ที่ลงท้าย/มี sulfa, primaquine, และของกลิ่นฉุน (mothball)\""
         }
       ]
     }

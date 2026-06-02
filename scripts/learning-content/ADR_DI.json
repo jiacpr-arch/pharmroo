@@ -1,66 +1,456 @@
 {
   "subject": "ADR_DI",
   "unit": {
-    "title_th": "ADR / Drug Interaction / DI",
-    "description_th": "ประเภทของ ADR และ drug interaction สำคัญที่ออกข้อสอบ",
-    "icon": "⚠️"
+    "title_th": "อาการไม่พึงประสงค์จากยา และเภสัชสนเทศ",
+    "description_th": "คอร์สครบวงจรสำหรับสอบใบประกอบวิชาชีพเภสัชกรรม ครอบคลุมการจำแนก ADR (Type A–F), การประเมินความสัมพันธ์ (Naranjo, WHO-UMC), SCAR และ HLA pharmacogenetics, การแพ้ยาและ cross-reactivity, กลไก drug interaction (PK/PD), ยา high-alert, แหล่งข้อมูลยา (DI resources) และการตอบคำถามทางยาอย่างเป็นระบบ",
+    "icon": "💊"
   },
   "lessons": [
     {
-      "title_th": "ประเภทของ ADR",
-      "subtitle_th": "Type A และ Type B",
+      "title_th": "การจำแนกอาการไม่พึงประสงค์จากยา (ADR)",
+      "subtitle_th": "Rawlins–Thompson Type A–F, augmented vs bizarre, dose-related",
       "icon": "⚠️",
-      "est_minutes": 5,
-      "xp_reward": 10,
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "ADR",
+        "adverse drug reaction",
+        "Type A",
+        "Type B",
+        "augmented",
+        "bizarre",
+        "dose-related",
+        "Rawlins",
+        "อาการไม่พึงประสงค์",
+        "idiosyncratic"
+      ],
       "cards": [
         {
           "card_type": "concept",
-          "title_th": "Type A (Augmented)",
-          "body_md": "**Type A** = สัมพันธ์กับฤทธิ์ยา\n\n- **คาดเดาได้**, dose-dependent\n- พบบ่อย, ความรุนแรงต่ำ-ปานกลาง\n- ตัวอย่าง: bleeding จาก warfarin, hypoglycemia จาก insulin\n- จัดการ: ลดขนาดยา"
+          "title_th": "นิยาม ADR, ADE และ side effect",
+          "body_md": "ต้องแยกคำศัพท์ให้ชัดเพราะออกสอบบ่อย:\n\n- **ADR (Adverse Drug Reaction):** ปฏิกิริยาที่เป็นอันตรายและไม่ตั้งใจ เกิดจากยา **ในขนาดปกติที่ใช้รักษา** (WHO definition) — เน้นว่าเกิดจากยาแน่นอน\n- **ADE (Adverse Drug Event):** เหตุการณ์ไม่พึงประสงค์ใด ๆ ที่เกิดระหว่างใช้ยา **ไม่จำเป็นต้องมีความสัมพันธ์เชิงสาเหตุ** (รวม medication error)\n- **Side effect:** ผลที่คาดการณ์ได้จากเภสัชวิทยาของยา อาจดีหรือไม่ดีก็ได้\n- **Toxicity:** ผลจากยาขนาดเกิน therapeutic range\n\nความสัมพันธ์: **ADR ⊂ ADE** (ADR คือ ADE ที่พิสูจน์ความสัมพันธ์กับยาแล้ว)"
         },
         {
           "card_type": "concept",
-          "title_th": "Type B (Bizarre)",
-          "body_md": "**Type B** = ไม่สัมพันธ์กับฤทธิ์ยา\n\n- **คาดเดาไม่ได้**, ไม่ขึ้นกับขนาด\n- พบน้อยแต่รุนแรง (allergy, idiosyncratic)\n- ตัวอย่าง: anaphylaxis จาก penicillin, SJS\n- จัดการ: หยุดยา"
+          "title_th": "Rawlins–Thompson: Type A vs Type B",
+          "body_md": "ระบบจำแนกดั้งเดิมแบ่งเป็น 2 ประเภทหลัก:\n\n| ลักษณะ | **Type A (Augmented)** | **Type B (Bizarre)** |\n|---|---|---|\n| สัมพันธ์กับฤทธิ์ยา | ใช่ (extension ของ pharmacology) | ไม่ |\n| คาดการณ์ได้ | ได้ | ไม่ได้ |\n| dose-dependent | ใช่ | ไม่ |\n| ความถี่ | พบบ่อย (~80%) | พบน้อย |\n| ความรุนแรง/อัตราตาย | ต่ำ-ปานกลาง | สูง |\n| การจัดการ | **ลดขนาดยา** | **หยุดยา** |\n| ตัวอย่าง | bleeding จาก warfarin, hypoglycemia จาก insulin, bradycardia จาก β-blocker | anaphylaxis จาก penicillin, SJS, malignant hyperthermia |"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Type C, D, E, F (ส่วนขยาย)",
+          "body_md": "ระบบขยายเพิ่มอีก 4 ประเภท:\n\n- **Type C (Chronic / Continuous):** สัมพันธ์กับ**ขนาดยาสะสมและระยะเวลา** เช่น osteoporosis จาก corticosteroid ระยะยาว, analgesic nephropathy, tardive dyskinesia\n- **Type D (Delayed):** เกิด**ช้า**หลังใช้ยา เช่น teratogenesis (thalidomide), carcinogenesis, secondary malignancy จาก chemotherapy\n- **Type E (End of use / Withdrawal):** เกิดเมื่อ**หยุดยากะทันหัน** เช่น rebound hypertension จากหยุด clonidine, withdrawal seizure จาก benzodiazepine, adrenal crisis จากหยุด steroid\n- **Type F (Failure):** การ**รักษาล้มเหลว** ที่ไม่คาดคิด มักเกิดจาก drug interaction หรือ dose ต่ำ เช่น failure ของยาคุมเมื่อใช้ร่วม rifampicin/enzyme inducer"
         },
         {
           "card_type": "mnemonic",
-          "title_th": "จำ A กับ B",
-          "body_md": "- **A** = **A**ugmented / **A**nticipated (คาดได้, dose related)\n- **B** = **B**izarre (แปลกประหลาด, คาดไม่ได้)\n\nเสริม: C=Chronic, D=Delayed, E=End of use, F=Failure"
+          "title_th": "จำ Type A–F: \"ABCDEF\"",
+          "body_md": "- **A** = **A**ugmented / **A**nticipated (คาดได้, dose-related, ลดขนาด)\n- **B** = **B**izarre (แปลกประหลาด, คาดไม่ได้, หยุดยา)\n- **C** = **C**hronic / **C**ontinuous (สะสม, ใช้นาน)\n- **D** = **D**elayed (เกิดช้า, teratogen, มะเร็ง)\n- **E** = **E**nd of use (หยุดยา → withdrawal/rebound)\n- **F** = **F**ailure (รักษาล้มเหลว, มักจาก interaction)\n\nจำคู่ตรงข้ามให้แม่น: **A หยุดไม่จำเป็น แค่ลดขนาด / B ต้องหยุดยาเด็ดขาด**"
+        },
+        {
+          "card_type": "example",
+          "title_th": "ตัวอย่างจำแนกประเภท ADR",
+          "body_md": "ลองจำแนกแต่ละกรณี:\n\n- ผู้ป่วยกิน **simvastatin** ขนาดสูงร่วม clarithromycin แล้วเกิด **rhabdomyolysis** → **Type A** (สัมพันธ์ขนาด, จาก interaction ทำระดับยาสูง)\n- ผู้ป่วยได้ **carbamazepine** แล้วเกิด **Stevens-Johnson syndrome** → **Type B** (immunologic, คาดไม่ได้)\n- ใช้ **prednisolone** 6 เดือนแล้วเกิด **Cushingoid + กระดูกพรุน** → **Type C**\n- หญิงกิน **isotretinoin** ขณะตั้งครรภ์ → ทารกพิการ → **Type D**\n- หยุด **propranolol** กะทันหัน → **rebound tachycardia / angina** → **Type E**"
         },
         {
           "card_type": "tip",
-          "title_th": "ประเมินความสัมพันธ์",
-          "body_md": "ใช้ **Naranjo scale** ประเมินว่า ADR เกิดจากยาจริงหรือไม่ (definite/probable/possible/doubtful)\n\nดู: time relationship, dechallenge, rechallenge, สาเหตุอื่น"
+          "title_th": "Idiosyncratic vs Pseudoallergic",
+          "body_md": "ภายใต้ Type B มีกลไกย่อยที่ออกสอบ:\n\n- **Immunologic (true allergy):** ผ่านระบบภูมิคุ้มกัน (IgE หรือ T-cell) ต้องเคยสัมผัสยามาก่อน (sensitization)\n- **Idiosyncratic:** ตอบสนองผิดปกติจาก**ความแปรผันทางพันธุกรรม** เช่น hemolysis จาก G6PD deficiency เมื่อได้ primaquine/dapsone/sulfonamide\n- **Pseudoallergic (anaphylactoid):** อาการเหมือนแพ้แต่**ไม่ผ่าน IgE** เช่น vancomycin **red man syndrome** (histamine release จากการ infuse เร็ว), NSAID-induced (COX inhibition)\n\nความต่างสำคัญ: pseudoallergic อาจเกิด**ครั้งแรก**ที่ได้ยา (ไม่ต้อง sensitize ก่อน)"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Red man syndrome ไม่ใช่การแพ้จริง",
+          "body_md": "**Red man syndrome (vancomycin):**\n- ผื่นแดง คัน บริเวณหน้า คอ ลำตัวส่วนบน ± ความดันตก\n- เกิดจาก **direct histamine release** สัมพันธ์กับ**อัตราการ infuse** ไม่ใช่ IgE-mediated allergy\n- **การจัดการ:** ชะลออัตรา infuse (ให้นานอย่างน้อย 60 นาทีต่อ 1 g), pretreat ด้วย antihistamine — **ไม่จำเป็นต้องเลิกใช้ vancomycin ถาวร**\n\nแตกต่างจาก anaphylaxis จริงที่ต้องหยุดยาและห้ามใช้ซ้ำ การจำแนกผิดทำให้ผู้ป่วยถูกแปะป้ายแพ้ยาโดยไม่จำเป็น"
         }
       ]
     },
     {
-      "title_th": "Drug Interaction สำคัญ",
-      "subtitle_th": "CYP450 และ QT prolongation",
-      "icon": "🔀",
-      "est_minutes": 6,
-      "xp_reward": 10,
+      "title_th": "การประเมินความสัมพันธ์เชิงสาเหตุ (Causality Assessment)",
+      "subtitle_th": "Naranjo algorithm, WHO-UMC scale, การรายงาน HPVC ของไทย",
+      "icon": "🔍",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "Naranjo",
+        "causality",
+        "WHO-UMC",
+        "dechallenge",
+        "rechallenge",
+        "HPVC",
+        "spontaneous reporting",
+        "แบบรายงาน",
+        "ความสัมพันธ์",
+        "pharmacovigilance"
+      ],
       "cards": [
         {
           "card_type": "concept",
-          "title_th": "CYP450 Inhibitor vs Inducer",
-          "body_md": "- **Inhibitor**: ลดการ metabolize → ระดับยาคู่ **สูงขึ้น** (เร็ว, เสี่ยง toxicity)\n- **Inducer**: เพิ่มการ metabolize → ระดับยาคู่ **ลดลง** (ช้า เป็นวัน-สัปดาห์, เสี่ยงรักษาล้มเหลว)"
+          "title_th": "หลักการประเมินความสัมพันธ์ ADR",
+          "body_md": "การประเมิน causality คือการตัดสินว่า **ยาที่สงสัยเป็นสาเหตุของ ADR จริงหรือไม่** องค์ประกอบหลักที่ทุกเครื่องมือใช้:\n\n1. **Temporal relationship (ความสัมพันธ์ด้านเวลา):** อาการเกิดหลังได้ยาในช่วงเวลาที่สมเหตุสมผล\n2. **Dechallenge:** อาการดีขึ้นเมื่อ**หยุดยา/ลดขนาด**\n3. **Rechallenge:** อาการกลับมาเมื่อ**ให้ยาซ้ำ** (หลักฐานแข็งแรงที่สุด แต่มักไม่ทำเพราะเสี่ยง)\n4. **Alternative cause:** มีสาเหตุอื่น (โรค, ยาอื่น) อธิบายได้หรือไม่\n5. **ความรู้เดิม:** เคยมีรายงาน ADR นี้มาก่อน"
         },
         {
-          "card_type": "mnemonic",
-          "title_th": "จำ Inhibitor & Inducer",
-          "body_md": "**Inhibitor (เพิ่มระดับยา):** macrolide (erythro/clarithro), azole antifungal, grapefruit juice, ritonavir, cimetidine\n\n**Inducer (ลดระดับยา):** **'CRAP-S'** — **C**arbamazepine, **R**ifampin, **A**lcohol(chronic)/phenytoin, **P**henobarbital, **S**t. John's wort"
+          "card_type": "concept",
+          "title_th": "Naranjo Algorithm",
+          "body_md": "**Naranjo (APS – Adverse Drug Reaction Probability Scale)** เป็นแบบสอบถาม **10 ข้อ** ให้คะแนน +/− ตามคำตอบ (Yes/No/Don't know) แปลผลรวม:\n\n| คะแนนรวม | ระดับความสัมพันธ์ |\n|---|---|\n| **≥ 9** | Definite (ใช่แน่นอน) |\n| **5–8** | Probable (น่าจะใช่) |\n| **1–4** | Possible (อาจเป็นไปได้) |\n| **≤ 0** | Doubtful (น่าสงสัย/ไม่น่าใช่) |\n\nข้อที่ให้คะแนนสูง: rechallenge ให้ผลบวก (+1), dechallenge ดีขึ้น (+1), มีรายงานมาก่อน (+1), อาการเกิดตามเวลาที่เหมาะสม (+2)"
         },
         {
-          "card_type": "warning",
-          "title_th": "QT prolongation",
-          "body_md": "ยาหลายตัวรวมกัน → **torsades de pointes**\n\nกลุ่มเสี่ยง:\n- **Antiarrhythmic** (amiodarone, sotalol)\n- **Macrolide, fluoroquinolone**\n- **Azole antifungal**\n- **Antipsychotic** (haloperidol), ondansetron, methadone\n\nเลี่ยงใช้ร่วม + แก้ K/Mg ต่ำ"
+          "card_type": "concept",
+          "title_th": "WHO-UMC Causality Categories",
+          "body_md": "องค์การอนามัยโลก (Uppsala Monitoring Centre) แบ่ง **6 ระดับ** เชิงคุณภาพ:\n\n- **Certain:** เวลาเหมาะสม, dechallenge ชัด, rechallenge บวก, อธิบายด้วยสาเหตุอื่นไม่ได้\n- **Probable/Likely:** เวลาเหมาะสม, dechallenge ดีขึ้น, สาเหตุอื่นไม่น่าใช่ (ไม่ต้องมี rechallenge)\n- **Possible:** เวลาเหมาะสม แต่อธิบายด้วยโรค/ยาอื่นได้ หรือข้อมูล dechallenge ไม่ชัด\n- **Unlikely:** เวลาไม่สัมพันธ์ มีสาเหตุอื่นที่น่าเชื่อกว่า\n- **Conditional/Unclassified:** ต้องการข้อมูลเพิ่ม\n- **Unassessable/Unclassifiable:** ข้อมูลไม่พอ ขัดแย้ง ตรวจสอบไม่ได้"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ระบบเฝ้าระวัง HPVC และการรายงานในไทย",
+          "body_md": "**HPVC = Health Product Vigilance Center** (ศูนย์เฝ้าระวังความปลอดภัยด้านผลิตภัณฑ์สุขภาพ) อยู่ภายใต้ **อย. (FDA ไทย)**\n\n- ใช้ระบบ **spontaneous reporting** (รายงานโดยสมัครใจจากบุคลากร)\n- เครื่องมือ: **แบบรายงาน (Adverse Product Reaction form)** เดิมเรียก **แบบรายงาน อ.ย.1** กรอกข้อมูลผู้ป่วย ยาที่สงสัย อาการ ผล dechallenge/rechallenge\n- ส่งเข้าฐานข้อมูล **Thai Vigibase** ซึ่งเชื่อมกับ **WHO VigiBase** ที่ Uppsala\n- HPVC ใช้เกณฑ์ **WHO-UMC** ในการประเมิน causality ของรายงานที่ได้รับ"
         },
         {
           "card_type": "tip",
-          "title_th": "Interaction คลาสสิก",
-          "body_md": "- **Warfarin + rifampin** → INR ลด (ลิ่มเลือด)\n- **Statin + clarithromycin/azole** → rhabdomyolysis\n- **MAOI + SSRI/tramadol** → serotonin syndrome\n- **Allopurinol + azathioprine** → bone marrow toxicity"
+          "title_th": "อะไรควรรายงานเข้า HPVC",
+          "body_md": "ควรรายงานโดยเฉพาะ:\n\n- **ADR ร้ายแรง (serious):** เสียชีวิต, คุกคามชีวิต, ต้องนอน รพ./นานขึ้น, พิการถาวร, ความผิดปกติแต่กำเนิด\n- **ADR ที่ไม่เคยมีรายงานมาก่อน (unexpected)** หรือไม่อยู่ในเอกสารกำกับยา\n- **ยาใหม่** ที่เพิ่งออกสู่ตลาด (เฝ้าระวังเข้มข้น)\n- ADR ที่สงสัยเกิดจาก **ผลิตภัณฑ์สมุนไพร/อาหารเสริม** ก็รายงานได้\n\nหลักการ: เมื่อ**สงสัย**ก็รายงานได้เลย ไม่ต้องรอพิสูจน์ความสัมพันธ์แน่ชัด"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำองค์ประกอบ causality: \"TANDR\"",
+          "body_md": "องค์ประกอบที่ต้องพิจารณาเสมอ:\n\n- **T**iming – อาการเกิดหลังให้ยาในเวลาเหมาะสม\n- **A**lternative – ตัดสาเหตุอื่น (โรค/ยาอื่น) ออก\n- **N**aranjo / known reaction – เคยมีรายงานมาก่อน\n- **D**echallenge – หยุดยาแล้วดีขึ้น\n- **R**echallenge – ให้ยาซ้ำแล้วกลับเป็น (หลักฐานแข็งสุด)\n\nจำ: **rechallenge ให้น้ำหนักมากสุด แต่ทำจริงน้อยเพราะเสี่ยงอันตราย**"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ข้อควรระวังในการทำ Rechallenge",
+          "body_md": "**Rechallenge** ให้หลักฐานความสัมพันธ์ที่แข็งแรงที่สุด แต่:\n\n- **ห้ามทำ rechallenge** ในกรณี ADR ร้ายแรงที่อาจถึงชีวิต เช่น **anaphylaxis, SJS/TEN, DRESS, hepatotoxicity รุนแรง** เพราะการให้ยาซ้ำอาจทำให้ปฏิกิริยารุนแรงขึ้นและเสียชีวิต\n- ในเวชปฏิบัติส่วนใหญ่ causality จึงอาศัย **dechallenge + temporal relationship** เป็นหลัก\n- เมื่อยืนยันแพ้ยาแล้ว ต้อง**บันทึกในประวัติ (allergy alert)** และให้บัตรแพ้ยาแก่ผู้ป่วยเพื่อป้องกัน rechallenge โดยไม่ตั้งใจในอนาคต"
+        }
+      ]
+    },
+    {
+      "title_th": "Severe Cutaneous ADR (SCAR) และเภสัชพันธุศาสตร์ HLA",
+      "subtitle_th": "SJS/TEN, DRESS, AGEP + HLA-B*1502, HLA-B*5801",
+      "icon": "🔥",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "SCAR",
+        "SJS",
+        "TEN",
+        "DRESS",
+        "AGEP",
+        "HLA-B*1502",
+        "HLA-B*5801",
+        "carbamazepine",
+        "allopurinol",
+        "Stevens-Johnson"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "ภาพรวม SCAR (Severe Cutaneous Adverse Reactions)",
+          "body_md": "SCAR คือกลุ่ม ADR ทางผิวหนังที่รุนแรง คุกคามชีวิต เป็น **Type B / delayed T-cell mediated (Type IV hypersensitivity)** ประกอบด้วย:\n\n- **SJS / TEN** (Stevens-Johnson Syndrome / Toxic Epidermal Necrolysis)\n- **DRESS** (Drug Reaction with Eosinophilia and Systemic Symptoms)\n- **AGEP** (Acute Generalized Exanthematous Pustulosis)\n\nหลักการร่วม: **หยุดยาที่สงสัยทันที**, ดูแลแบบประคับประคอง, หลีกเลี่ยงยากลุ่มเดิมตลอดชีวิต ออกสอบเรื่อง **culprit drugs** และ **HLA genetic markers** บ่อยมาก"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "SJS / TEN: แยกตามพื้นที่ผิวหนังที่หลุดลอก",
+          "body_md": "SJS และ TEN เป็น spectrum เดียวกัน แยกด้วย **% body surface area (BSA) ที่หนังกำพร้าหลุดลอก:**\n\n| | **SJS** | **SJS/TEN overlap** | **TEN** |\n|---|---|---|---|\n| BSA หลุดลอก | < 10% | 10–30% | > 30% |\n\n- ลักษณะ: ตุ่มน้ำ, **Nikolsky sign บวก**, แผลที่เยื่อบุ ≥ 2 แห่ง (ปาก ตา อวัยวะเพศ)\n- อัตราตาย: TEN สูง 25–35% (ใช้ **SCORTEN** ประเมิน)\n- **Culprit drugs:** carbamazepine, phenytoin, lamotrigine, **allopurinol**, sulfonamides (cotrimoxazole), nevirapine, oxicam NSAIDs"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "DRESS และ AGEP",
+          "body_md": "**DRESS:**\n- เริ่มช้า **2–8 สัปดาห์** หลังเริ่มยา\n- ผื่นกว้าง + **ไข้ + ต่อมน้ำเหลืองโต + eosinophilia + ตับ/ไตอักเสบ** (อวัยวะภายในเกี่ยวข้อง)\n- **Culprit:** allopurinol, carbamazepine, phenytoin, sulfonamide, vancomycin, dapsone, nevirapine\n- อาจเกี่ยวข้องกับ **HHV-6 reactivation**; อัตราตาย ~10%\n\n**AGEP:**\n- เริ่ม**เร็วมาก** (< 48 ชม.)\n- **ตุ่มหนองเล็ก ๆ (pustules) จำนวนมาก** บนผื่นแดง + ไข้ + neutrophilia\n- **Culprit:** aminopenicillins, macrolide, **diltiazem**, antimalarial — มักหายเร็วเมื่อหยุดยา"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "HLA Pharmacogenetics: marker ที่ต้องจำ",
+          "body_md": "เภสัชพันธุศาสตร์ของ SCAR ออกสอบแน่นอน:\n\n| Allele | ยา | ปฏิกิริยา | ประชากรเสี่ยง |\n|---|---|---|---|\n| **HLA-B\\*1502** | **carbamazepine** (และ phenytoin, oxcarbazepine) | **SJS/TEN** | เอเชีย (ไทย จีนฮั่น) |\n| **HLA-B\\*5801** | **allopurinol** | SJS/TEN, DRESS | เอเชีย (ไทย จีน เกาหลี) |\n| HLA-B\\*5701 | abacavir | hypersensitivity | ทุกเชื้อชาติ |\n| HLA-B\\*1502/A\\*3101 | carbamazepine | A\\*3101 สัมพันธ์ DRESS/ในยุโรป-ญี่ปุ่น | — |\n\n**สำคัญ:** HLA-B\\*1502 → **SJS/TEN เท่านั้น** ไม่ทำนาย DRESS; ส่วน A\\*3101 ทำนาย DRESS ได้กว้างกว่า"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำคู่ HLA: \"15 มาก่อน 58, Carba มาก่อน Allo\"",
+          "body_md": "เรียงเลขจากน้อยไปมากให้ตรงกับตัวอักษรยา (C ก่อน A ตามลำดับเลข):\n\n- **B\\*15**02 → **C**arbamazepine (เลขน้อยกว่า, ตัวอักษร C)\n- **B\\*58**01 → **A**llopurinol (เลขมากกว่า)\n\nเสริม: **B\\*57**01 → A**b**acavir (จำ \"57 = abacavir\" คั่นกลาง)\n\nระวังสลับ! ข้อสอบชอบสลับ carbamazepine กับ allopurinol — ยึดหลัก **15→Carba, 58→Allo**"
+        },
+        {
+          "card_type": "example",
+          "title_th": "แยกแยะ SCAR จากผื่นยาทั่วไป",
+          "body_md": "เปรียบเทียบผื่นยาที่ออกสอบ:\n\n- **Maculopapular / morbilliform rash:** ผื่นแดงราบ-นูนกระจาย ไม่มี mucosa/อวัยวะภายในเกี่ยวข้อง = **ไม่ใช่ SCAR** มักหายเองเมื่อหยุดยา\n- **Fixed drug eruption:** ผื่นกลม คล้ำ เกิด**ตำแหน่งเดิมซ้ำ**ทุกครั้งที่ได้ยา (sulfonamide, NSAID, tetracycline)\n- **Urticaria/angioedema:** Type I, immediate — ระวัง anaphylaxis\n\n**สัญญาณเตือนว่าเป็น SCAR (ต้องหยุดยาทันที):** ไข้สูง, ปวด/แสบผิว, **ผิวหลุดลอก, Nikolsky บวก**, แผลเยื่อบุ (ปาก ตา), หน้าบวม, ต่อมน้ำเหลืองโต, eosinophilia, ตับ/ไตผิดปกติ — เรียกรวมว่า \"red flags\""
+        },
+        {
+          "card_type": "warning",
+          "title_th": "การตรวจ HLA ก่อนสั่งยา (ตามแนวทางไทย)",
+          "body_md": "**ก่อนเริ่ม carbamazepine** ในผู้ป่วยเชื้อชาติเอเชีย:\n- ควรตรวจ **HLA-B\\*1502** ถ้า**บวก → ห้ามใช้ carbamazepine** (และระวัง phenytoin, oxcarbazepine ที่มี cross-risk)\n- ในไทย HLA-B\\*1502 มีความชุกสูง การตรวจคุ้มค่าและบรรจุในสิทธิประโยชน์บางส่วน\n\n**ก่อนเริ่ม allopurinol:**\n- พิจารณาตรวจ **HLA-B\\*5801** โดยเฉพาะผู้ที่มี CKD (เสี่ยงเพิ่ม)\n- ถ้าบวก → หลีกเลี่ยง allopurinol ใช้ febuxostat แทน และเริ่มขนาดต่ำ ปรับตาม CrCl เสมอ\n\nอย่าลืม: ผลตรวจ HLA **เป็นลบไม่ได้แปลว่าปลอดภัย 100%** ยังต้องเฝ้าระวังผื่นในช่วงแรกของการรักษา"
+        }
+      ]
+    },
+    {
+      "title_th": "การแพ้ยา การไม่ทนยา และ Cross-reactivity",
+      "subtitle_th": "Allergy vs intolerance, penicillin–cephalosporin, sulfonamide, desensitization",
+      "icon": "🤧",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "drug allergy",
+        "intolerance",
+        "cross-reactivity",
+        "penicillin",
+        "cephalosporin",
+        "sulfonamide",
+        "desensitization",
+        "anaphylaxis",
+        "Gell and Coombs",
+        "แพ้ยา"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "แพ้ยา (Allergy) ต่างจากไม่ทนยา (Intolerance)",
+          "body_md": "ความเข้าใจผิดที่พบบ่อยในผู้ป่วย:\n\n- **Drug allergy:** เกิดผ่าน**ระบบภูมิคุ้มกัน (immune-mediated)** ต้องเคย sensitize มาก่อน เช่น ผื่นลมพิษ, angioedema, anaphylaxis, SCAR\n- **Drug intolerance:** อาการไม่พึงประสงค์ที่**ไม่ผ่านภูมิคุ้มกัน** มักเป็น Type A เช่น คลื่นไส้จาก metformin, ไอจาก ACEi, ปวดท้องจาก NSAID\n- **Pseudoallergy:** อาการคล้ายแพ้แต่ไม่ใช่ IgE เช่น red man syndrome, NSAID/aspirin reactions\n\nความสำคัญ: การแปะป้าย \"แพ้ยา\" ผิด ทำให้ผู้ป่วยเสียโอกาสใช้ยาที่ดีและถูก โดยเฉพาะ **penicillin label** ที่มักไม่ใช่แพ้จริง"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Gell and Coombs: 4 ชนิดของ Hypersensitivity",
+          "body_md": "| Type | กลไก | ระยะเวลา | ตัวอย่างจากยา |\n|---|---|---|---|\n| **I** | IgE-mediated | นาที-ชม. (immediate) | anaphylaxis, urticaria จาก penicillin |\n| **II** | Antibody (IgG) cytotoxic | หลายวัน | hemolytic anemia, drug-induced thrombocytopenia (heparin/HIT) |\n| **III** | Immune complex | 1–3 สัปดาห์ | serum sickness, vasculitis |\n| **IV** | T-cell delayed | 2–7 วัน+ | contact dermatitis, **SJS/TEN, DRESS, AGEP** |\n\nสำคัญ: **Type I = immediate (IgE)** เสี่ยง anaphylaxis; **Type IV = delayed** ครอบคลุม SCAR ทั้งหมด"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Penicillin–Cephalosporin Cross-reactivity",
+          "body_md": "ความเชื่อเดิมว่า cross-react ~10% นั้น **สูงเกินจริง** ปัจจุบันเข้าใจว่าขึ้นกับ **side chain (R-group)** ไม่ใช่ β-lactam ring เป็นหลัก:\n\n- ภาพรวม cross-reactivity จริง **< 2%** (บางข้อมูล ~1%)\n- เสี่ยงสูงเมื่อ **side chain คล้ายกัน** เช่น amoxicillin ↔ cefadroxil/cefprozil; ampicillin ↔ cephalexin/cefaclor\n- **Cephalosporin รุ่น 3–4 (ceftriaxone, cefepime)** side chain ต่าง → cross-react ต่ำมาก\n- **Carbapenem** cross-react กับ penicillin < 1%; **aztreonam (monobactam)** แทบไม่ cross-react (ยกเว้นกับ ceftazidime ที่ side chain เหมือนกัน)\n\nหลักปฏิบัติ: ถ้าประวัติแพ้ penicillin ไม่รุนแรง อาจใช้ cephalosporin ที่ side chain ต่างได้"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Sulfonamide Cross-reactivity",
+          "body_md": "ต้องแยก sulfonamide สองกลุ่มซึ่ง **ไม่ cross-react กัน:**\n\n- **Sulfonamide antibiotics** (มีหมู่ arylamine ที่ N4 + ring N1): cotrimoxazole (sulfamethoxazole), sulfadiazine — กลุ่มนี้ก่อแพ้บ่อย\n- **Sulfonamide non-antibiotics:** furosemide, hydrochlorothiazide, sulfonylureas (glibenclamide), celecoxib, acetazolamide, sumatriptan\n\n**หลักฐานปัจจุบัน:** การแพ้ sulfonamide antibiotic **ไม่ได้** ทำนายการแพ้ sulfonamide non-antibiotic (โครงสร้าง arylamine ต่างกัน) — การห้ามใช้ furosemide ในผู้แพ้ cotrimoxazole แบบเหมารวมจึงมักไม่จำเป็น แต่ยังต้องประเมินเป็นราย ๆ"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "Desensitization: หลักการ",
+          "body_md": "**Drug desensitization** = การให้ยาที่ผู้ป่วยแพ้แบบ **ค่อย ๆ เพิ่มขนาดอย่างช้า ๆ** จนถึงขนาดรักษา เพื่อเหนี่ยวนำภาวะ **temporary tolerance**\n\n- ใช้เมื่อ**จำเป็นต้องใช้ยานั้นจริง ๆ ไม่มีทางเลือกอื่น** เช่น penicillin ในซิฟิลิสหญิงตั้งครรภ์, cotrimoxazole ใน PCP ในผู้ป่วย HIV, aspirin ใน AERD/CAD\n- ใช้ได้กับปฏิกิริยา **Type I (IgE-mediated)** เป็นหลัก\n- ทำในที่ที่พร้อมกู้ชีพ (มี epinephrine), เฝ้าระวังใกล้ชิด\n- **tolerance อยู่ชั่วคราว** — ถ้าหยุดยาแล้วต้องใช้ใหม่ ต้อง desensitize ซ้ำ"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ Gell-Coombs: \"ACID\"",
+          "body_md": "- **A** (Type I) = **A**naphylaxis / **A**llergy IgE (immediate)\n- **C** (Type II) = **C**ytotoxic (antibody ทำลายเซลล์)\n- **I** (Type III) = **I**mmune complex (serum sickness, vasculitis)\n- **D** (Type IV) = **D**elayed (T-cell, SCAR, contact dermatitis)\n\nจำ \"ACID\" → 1,2,3,4 เรียงตามลำดับพอดี\n\nเสริม: Type I, II, III ใช้ **antibody**; Type IV ใช้ **T-cell** (เป็น cell-mediated เดี่ยว ๆ)"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ห้าม Desensitize ใน SCAR",
+          "body_md": "**ห้ามทำ desensitization** ในผู้ป่วยที่เคยเกิดปฏิกิริยาแบบ **Type IV / SCAR** ได้แก่ **SJS, TEN, DRESS, AGEP** หรือ exfoliative dermatitis\n\n- desensitization เหมาะกับ Type I (IgE) เท่านั้น\n- การให้ยาซ้ำในผู้ที่เคยเป็น SCAR (แม้ขนาดต่ำ) อาจกระตุ้นปฏิกิริยารุนแรงถึงชีวิต\n- ยาเหล่านี้ต้องถูก **ห้ามใช้ตลอดชีวิต (absolute contraindication)** และบันทึกในบัตรแพ้ยา\n\nเช่นเดียวกัน: ห้าม rechallenge ในผู้ที่เคย anaphylaxis รุนแรง — ใช้ desensitization protocol เฉพาะภายใต้การดูแลผู้เชี่ยวชาญเท่านั้น"
+        }
+      ]
+    },
+    {
+      "title_th": "กลไก Drug Interaction: PK และ PD",
+      "subtitle_th": "CYP induction/inhibition, P-gp, absorption, additive/antagonistic",
+      "icon": "🔀",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "drug interaction",
+        "CYP450",
+        "inhibitor",
+        "inducer",
+        "P-glycoprotein",
+        "pharmacokinetic",
+        "pharmacodynamic",
+        "rifampicin",
+        "grapefruit",
+        "อันตรกิริยา"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "PK vs PD Interaction",
+          "body_md": "Drug interaction แบ่งได้ 2 กลุ่มใหญ่:\n\n- **Pharmacokinetic (PK):** ยาตัวหนึ่งเปลี่ยน **ADME** (absorption, distribution, metabolism, excretion) ของอีกตัว → เปลี่ยน**ความเข้มข้น** ของยา\n- **Pharmacodynamic (PD):** ยาออกฤทธิ์ที่ตำแหน่งเดียวกันหรือต่างกันแต่ส่งผลรวม **โดยระดับยาไม่เปลี่ยน** → additive, synergistic หรือ antagonistic\n\nออกสอบเน้น PK โดยเฉพาะ **CYP450** และ **P-glycoprotein** ส่วน PD เน้นเรื่องผลรวมเสริม/ต้านฤทธิ์"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "CYP450 Inhibition vs Induction",
+          "body_md": "| | **Inhibitor** | **Inducer** |\n|---|---|---|\n| ผลต่อ metabolism | ลด | เพิ่ม |\n| ผลต่อระดับ substrate | **สูงขึ้น → toxicity** | **ลดลง → รักษาล้มเหลว** |\n| ระยะเวลาออกฤทธิ์ | **เร็ว** (ภายใน 1–2 วัน) | **ช้า** (1–2 สัปดาห์, ต้องสร้าง enzyme ใหม่) |\n\n**Prodrug ที่ต้อง activate (เช่น clopidogrel, codeine):** inhibitor จะทำให้**ฤทธิ์ลด** (ตรงข้ามกับ active drug) — เช่น CYP2C19 inhibitor (omeprazole) ลดประสิทธิภาพ clopidogrel; CYP2D6 inhibitor ลดการเปลี่ยน codeine→morphine"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ CYP Inhibitor & Inducer",
+          "body_md": "**Inhibitor (เพิ่มระดับยา → toxicity)** — \"GPACMAN\":\n- **G**rapefruit juice (CYP3A4 ที่ลำไส้)\n- **P**rotease inhibitor (ritonavir)\n- **A**zole antifungal (ketoconazole, itraconazole)\n- **C**imetidine, **C**iprofloxacin\n- **M**acrolide (erythromycin, clarithromycin — **ยกเว้น azithromycin**)\n- **A**miodarone\n- **N**efazodone / fluoxetine, fluvoxamine\n\n**Inducer (ลดระดับยา → fail)** — \"CRAP-S\":\n- **C**arbamazepine, **R**ifampicin, **A**lcohol(chronic)/phenytoin, **P**henobarbital, **S**t. John's wort + smoking (CYP1A2)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "P-glycoprotein (P-gp) และ Transporter",
+          "body_md": "**P-glycoprotein (P-gp / MDR1)** เป็น **efflux pump** ขับยาออกจากเซลล์ (ที่ลำไส้, ไต, BBB):\n\n- **P-gp inhibitor** (verapamil, amiodarone, clarithromycin, quinidine) → ลด efflux → **ระดับ substrate สูงขึ้น**\n- **P-gp inducer** (rifampicin) → ระดับ substrate ลดลง\n- **Substrate สำคัญ:** **digoxin** (คลาสสิก!), **dabigatran/apixaban (DOAC)**, ciclosporin\n\nตัวอย่างคลาสสิก: **digoxin + verapamil/amiodarone/clarithromycin** → digoxin level สูง → toxicity (ต้องลดขนาด digoxin)\n\nหลายยาเป็นทั้ง CYP3A4 + P-gp substrate/inhibitor พร้อมกัน ทำให้ interaction รุนแรงขึ้น"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "PK Interaction ระดับ Absorption และ Excretion",
+          "body_md": "**Absorption:**\n- **Chelation/complex:** ยาลด/แคลเซียม, เหล็ก, แมกนีเซียม, antacid จับ **tetracycline, fluoroquinolone, levothyroxine, bisphosphonate** → ดูดซึมลด (แยกเวลาให้ยา ≥ 2 ชม.)\n- **pH:** PPI/H2 blocker ลดกรด → ลดการดูดซึม ketoconazole, atazanavir\n\n**Excretion (ไต):**\n- **probenecid** ยับยั้ง tubular secretion ของ penicillin → ระดับ penicillin สูงขึ้น (ใช้ประโยชน์ในการรักษา)\n- **NSAID + lithium / methotrexate** → ลดการขับ → ระดับสูง → toxicity\n- **Protein binding displacement:** warfarin + sulfonamide/NSAID (ผลมักชั่วคราว มีความสำคัญทางคลินิกน้อยกว่าที่เคยเชื่อ)"
+        },
+        {
+          "card_type": "example",
+          "title_th": "ตัวอย่าง PD Interaction: เสริมและต้านฤทธิ์",
+          "body_md": "**Additive / Synergistic (เสริมฤทธิ์) — มักเสี่ยง ADR:**\n- **Serotonin syndrome:** SSRI + MAOI + tramadol + linezolid\n- **Bleeding:** warfarin + NSAID/antiplatelet (เสริมฤทธิ์ + ผล PK)\n- **QT prolongation:** amiodarone + macrolide + ondansetron\n- **CNS/respiratory depression:** opioid + benzodiazepine + alcohol\n- **Nephrotoxicity:** aminoglycoside + vancomycin + NSAID + contrast (\"triple/quad whammy\")\n\n**Antagonistic (ต้านฤทธิ์) — ลดประสิทธิภาพ:**\n- β-blocker + β-agonist (salbutamol)\n- naloxone ต้าน opioid (ใช้ประโยชน์)\n- vitamin K ต้าน warfarin"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Interaction คลาสสิกที่ต้องจำ",
+          "body_md": "ออกสอบบ่อยมาก:\n\n- **Warfarin + rifampicin** → INR ลด, เสี่ยงลิ่มเลือด (induction)\n- **Warfarin + metronidazole/cotrimoxazole/azole** → INR สูง, เลือดออก (inhibition)\n- **Statin + clarithromycin/azole/gemfibrozil** → **rhabdomyolysis** (เลี่ยง simvastatin/lovastatin; rosuvastatin/pravastatin ปลอดภัยกว่า)\n- **MAOI + tyramine/SSRI/tramadol** → hypertensive crisis / serotonin syndrome\n- **Allopurinol + azathioprine/6-MP** → **bone marrow suppression** (xanthine oxidase inhibition — ต้องลด azathioprine ~75%)\n- **ยาคุมกำเนิด + rifampicin/enzyme inducer** → คุมไม่อยู่ (Type F failure)"
+        }
+      ]
+    },
+    {
+      "title_th": "ยา High-Alert และการป้องกัน ADR",
+      "subtitle_th": "High-alert drugs, common ADR culprits, prevention strategies",
+      "icon": "🚨",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "high-alert",
+        "ยาความเสี่ยงสูง",
+        "insulin",
+        "warfarin",
+        "heparin",
+        "potassium chloride",
+        "ADR prevention",
+        "medication error",
+        "look-alike",
+        "anticoagulant"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "ยา High-Alert คืออะไร",
+          "body_md": "**High-Alert Medications (HAM)** = ยาที่มี**ความเสี่ยงสูงที่จะก่ออันตรายร้ายแรง**ต่อผู้ป่วยเมื่อใช้ผิด (ตามนิยาม **ISMP**) — ไม่ได้แปลว่าเกิดผิดพลาดบ่อยกว่า แต่**ผลที่ตามมารุนแรงกว่า**\n\nกลุ่มที่ ISMP จัดเป็น high-alert (ออกสอบบ่อย):\n- **Anticoagulant** (warfarin, heparin, LMWH, DOAC)\n- **Insulin** และ **oral hypoglycemics**\n- **Opioid / narcotic**\n- **Concentrated electrolytes** (KCl, MgSO4, hypertonic saline 3%)\n- **Chemotherapy / cytotoxic**\n- **Neuromuscular blockers**, **insulin U-500**, **digoxin**"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ตัวอย่างยา High-Alert และอันตรายเด่น",
+          "body_md": "| ยา | อันตรายหลัก | การเฝ้าระวัง |\n|---|---|---|\n| **Warfarin** | เลือดออกรุนแรง | INR, สัญญาณเลือดออก |\n| **Heparin** | เลือดออก, **HIT** | aPTT, platelet count |\n| **Insulin** | hypoglycemia | blood glucose |\n| **KCl เข้มข้น** | **cardiac arrest** ถ้าฉีด IV push | **ห้าม IV push** ต้องเจือจาง |\n| **Methotrexate** (oral) | ให้ทุกวันแทนทุกสัปดาห์ → pancytopenia | ย้ำ \"สัปดาห์ละครั้ง\" |\n| **Opioid** | กดหายใจ | RR, sedation score |\n| **Digoxin** | arrhythmia (narrow TI) | level, K+, ไต"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Common ADR Culprits ในโรงพยาบาล",
+          "body_md": "ยาที่เป็นสาเหตุ ADR/admission บ่อยที่สุด:\n\n- **Anticoagulant/antiplatelet** → bleeding (สาเหตุ ADR admission อันดับต้น ๆ)\n- **Antibiotics** → allergy, C. difficile, nephrotoxicity\n- **NSAIDs** → GI bleeding, AKI, fluid retention\n- **Diuretics** → electrolyte imbalance (hypokalemia, hyponatremia)\n- **Hypoglycemics** → hypoglycemia\n- **Opioids** → constipation, respiratory depression, falls\n- **Digoxin, theophylline, aminoglycoside** → narrow therapeutic index → ต้องทำ **TDM**\n\nกลุ่มเสี่ยงพิเศษ: ผู้สูงอายุ (polypharmacy), เด็ก, ไต/ตับเสื่อม, ตั้งครรภ์"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "กลยุทธ์ป้องกัน ADR และ Medication Error",
+          "body_md": "- **Medication reconciliation** ทุกจุดเปลี่ยนการดูแล (admit/transfer/discharge)\n- ใช้ **5 Rights**: right patient, drug, dose, route, time (+ documentation, indication)\n- **Tall man lettering** สำหรับชื่อยาคล้ายกัน (LASA: vinBLAStine vs vinCRIStine)\n- แยกเก็บ/ติดป้ายยา high-alert; **independent double-check** ก่อนให้\n- **CPOE + clinical decision support** เตือน interaction/allergy/dose\n- ใช้เกณฑ์ **Beers Criteria / STOPP-START** ในผู้สูงอายุ\n- ทบทวนการทำงานไต/ตับเพื่อปรับขนาดยา; ทำ **TDM** ใน narrow-TI drugs"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ High-Alert: \"PINCH\"",
+          "body_md": "กลุ่มยา high-alert ที่จำง่ายด้วย **\"A PINCH\"**:\n\n- **A**nti-infectives (ดื้อยา, ความเข้มข้นสูง)\n- **P**otassium & electrolytes เข้มข้น\n- **I**nsulin\n- **N**arcotics & sedatives (opioid)\n- **C**hemotherapy / cytotoxic\n- **H**eparin & anticoagulants\n\nยึดหลัก: ยาเหล่านี้ \"error น้อยแต่ตายได้\" → ต้องมีระบบป้องกันพิเศษ (double-check, แยกเก็บ)"
+        },
+        {
+          "card_type": "example",
+          "title_th": "ตัวอย่าง LASA และ error ที่ป้องกันได้",
+          "body_md": "**Look-Alike Sound-Alike (LASA)** ที่ก่อ error บ่อย:\n\n- **hydrALAZINE** vs **hydrOXYzine**\n- **vinBLAStine** vs **vinCRIStine** (vincristine ห้ามให้ intrathecal — ถึงตาย)\n- **chlorproMAZINE** vs **chlorproPAMIDE**\n- **DOPamine** vs **DOBUTamine**\n- **insulin glargine** vs **insulin lispro**\n\nการป้องกัน: **Tall man lettering**, แยกที่เก็บ, สั่งด้วยชื่อสามัญ + ข้อบ่งใช้, ใช้ barcode scanning ก่อนจ่าย/ให้ยา และ independent double-check ในยา high-alert"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "KCl เข้มข้นและ MgSO4: ห้าม IV push",
+          "body_md": "**Concentrated KCl (potassium chloride):**\n- **ห้ามฉีด IV push เด็ดขาด** → ทำให้หัวใจหยุดเต้น (fatal arrhythmia/cardiac arrest)\n- ต้อง**เจือจาง**และให้ทาง infusion ช้า ๆ (โดยทั่วไป ≤ 10 mEq/ชม. ทาง peripheral)\n- ISMP แนะนำ **ไม่เก็บ KCl เข้มข้นในหอผู้ป่วยทั่วไป** (ให้เก็บที่ห้องยาเท่านั้น)\n\n**MgSO4 และ hypertonic saline** ก็จัดเป็น high-alert เช่นกัน — ระวัง MgSO4 เกินขนาดในครรภ์เป็นพิษ (เฝ้า DTR, RR, urine output, มี calcium gluconate เป็น antidote)"
+        }
+      ]
+    },
+    {
+      "title_th": "แหล่งข้อมูลทางยา (Drug Information Resources)",
+      "subtitle_th": "Primary, secondary, tertiary: Micromedex, UpToDate, Lexicomp, PubMed",
+      "icon": "📚",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "drug information",
+        "primary literature",
+        "secondary",
+        "tertiary",
+        "Micromedex",
+        "UpToDate",
+        "Lexicomp",
+        "PubMed",
+        "MEDLINE",
+        "แหล่งข้อมูลยา"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "ลำดับชั้นแหล่งข้อมูลยา 3 ระดับ",
+          "body_md": "แบ่งตามความใกล้ชิดกับงานวิจัยต้นฉบับ:\n\n- **Primary (ปฐมภูมิ):** รายงานวิจัยต้นฉบับฉบับเต็ม เช่น RCT, cohort, case report — **ใหม่ที่สุด** แต่ต้องประเมินคุณภาพเอง\n- **Secondary (ทุติยภูมิ):** เครื่องมือ**ค้นหา/index** ชี้ไปยัง primary เช่น **PubMed/MEDLINE, EMBASE, Cochrane, IPA** — ใช้สืบค้น\n- **Tertiary (ตติยภูมิ):** ข้อมูลที่ถูก**สรุป สังเคราะห์แล้ว** เช่น ตำรา, ฐานข้อมูล, แนวทาง — **เข้าถึงคำตอบเร็วที่สุด** แต่ข้อมูลอาจ**ล้าหลัง (lag time)**"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Tertiary Resources ที่ใช้บ่อย",
+          "body_md": "ตติยภูมิคือจุดเริ่มต้นที่ดีสำหรับคำถามส่วนใหญ่:\n\n- **Micromedex:** ครอบคลุม ยา, พิษวิทยา (POISINDEX), **drug interaction** ที่ดีมาก, IV compatibility\n- **Lexicomp:** ข้อมูลยา, ขนาดในเด็ก/ไต, interaction, ใช้ใน point-of-care\n- **UpToDate:** เน้น**แนวทางการรักษาโรค**และ clinical recommendations (อ้างอิงหลักฐาน)\n- **AHFS Drug Information, Martindale:** ตำรามาตรฐาน\n- **Trissel's / Handbook on Injectable Drugs:** IV compatibility\n- **Lactmed, Briggs:** ยาในหญิงตั้งครรภ์/ให้นม\n\nข้อจำกัด: อาจไม่ทันข้อมูลใหม่ → คำถามที่ใหม่มาก/หายากต้องลง primary"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Secondary และ Primary Resources",
+          "body_md": "**Secondary (เครื่องมือสืบค้น):**\n- **PubMed/MEDLINE** (ฟรี, จาก NLM) — ใช้ **MeSH terms** + Boolean (AND/OR/NOT) เพื่อค้นแม่นยำ\n- **EMBASE** (เน้นยุโรป, เภสัชภัณฑ์, ครอบคลุม conference)\n- **Cochrane Library** (systematic reviews)\n- **IPA (International Pharmaceutical Abstracts)** เน้นเภสัชกรรม\n\n**Primary (งานวิจัยต้นฉบับ):**\n- RCT, meta-analysis, cohort, case-control, case report\n- ระดับหลักฐานสูงสุด: **systematic review/meta-analysis of RCTs** > RCT > cohort > case-control > case series/report > expert opinion"
+        },
+        {
+          "card_type": "example",
+          "title_th": "เลือกแหล่งข้อมูลให้ตรงคำถาม",
+          "body_md": "ตัวอย่างการจับคู่:\n\n- \"ยา A กับ B ตีกันไหม?\" → **Micromedex / Lexicomp** (interaction module)\n- \"ผสม drug X กับ Y ใน IV ได้ไหม?\" → **Trissel's / Micromedex IV compatibility**\n- \"แนวทางรักษา community-acquired pneumonia ล่าสุด?\" → **UpToDate / guideline**\n- \"มี RCT ใหม่เรื่องยา X ลด mortality ไหม?\" → **PubMed** แล้วอ่าน **primary RCT**\n- \"ขนาดยาในเด็ก/ไตวาย?\" → **Lexicomp pediatric / renal dosing**\n- \"ยานี้ปลอดภัยในหญิงให้นมไหม?\" → **LactMed**"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำลำดับชั้น: \"PST\" และความเร็ว vs ความใหม่",
+          "body_md": "- **P**rimary = งานวิจัยต้นฉบับ (ใหม่สุด, ต้องประเมินเอง)\n- **S**econdary = เครื่องมือค้นหา (index ชี้ไปหา primary)\n- **T**ertiary = สรุปแล้ว (เร็วสุด แต่ล้าหลัง)\n\n**Trade-off จำง่าย:**\n- เริ่มที่ **Tertiary** (เร็ว) → ถ้าไม่พบ/ต้องการข้อมูลใหม่ → ใช้ **Secondary** ค้น → อ่าน **Primary**\n- ยิ่งเข้าใกล้ primary ยิ่ง**ใหม่และละเอียด** แต่ใช้**เวลาและทักษะประเมิน**มากขึ้น"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "ค้น PubMed อย่างมีประสิทธิภาพ",
+          "body_md": "เทคนิคที่ออกสอบเรื่องการสืบค้น secondary literature:\n\n- ใช้ **MeSH terms** (Medical Subject Headings) เพื่อค้นตามแนวคิด ไม่ใช่แค่คำ\n- **Boolean operators:** `AND` (แคบลง), `OR` (กว้างขึ้น/synonyms), `NOT` (ตัดออก)\n- ใช้ **filters/limits:** ชนิดงานวิจัย (RCT, meta-analysis), ภาษา, ปี, อายุประชากร\n- **Truncation (\\*):** เช่น `diabet*` ครอบคลุม diabetes, diabetic\n- จัด **PICO → search terms** ช่วยให้ค้นตรงเป้า\n\nสำหรับ systematic review ที่มีหลักฐานสรุปแล้ว เริ่มที่ **Cochrane Library** จะประหยัดเวล่ากว่าค้น primary ทีละชิ้น"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ข้อควรระวังในการใช้แต่ละแหล่ง",
+          "body_md": "- **Tertiary มี publication lag** — ข้อมูลความปลอดภัยใหม่ (เช่น black box warning ล่าสุด) อาจยังไม่ปรากฏ\n- อย่าใช้ **abstract เพียงอย่างเดียว** ตัดสินใจ — ต้องอ่าน full text เพื่อประเมิน methodology\n- **ระวังแหล่งที่มี bias/sponsor** (ข้อมูลจากบริษัทยา, เว็บไม่อ้างอิง)\n- **Wikipedia / เว็บทั่วไป** ไม่ใช่แหล่งอ้างอิงทางวิชาการ\n- ตรวจ **วันที่ปรับปรุงล่าสุด** ของฐานข้อมูลเสมอ\n- ใช้หลายแหล่งยืนยันกัน (triangulation) โดยเฉพาะคำถามที่มีผลต่อความปลอดภัยผู้ป่วย"
+        }
+      ]
+    },
+    {
+      "title_th": "การตอบคำถามทางยาอย่างเป็นระบบ + การประเมินวรรณกรรม",
+      "subtitle_th": "Modified systematic approach + critical appraisal เบื้องต้น",
+      "icon": "🧭",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "systematic approach",
+        "DI question",
+        "critical appraisal",
+        "PICO",
+        "p-value",
+        "confidence interval",
+        "NNT",
+        "relative risk",
+        "bias",
+        "level of evidence"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "Modified Systematic Approach: 7 ขั้นตอน",
+          "body_md": "กระบวนการตอบคำถามทางยา (DI) อย่างเป็นระบบ:\n\n1. **Secure demographics** ของผู้ถาม (ใคร, วิชาชีพอะไร)\n2. **Obtain background information** — เก็บข้อมูลพื้นฐาน/บริบทผู้ป่วย\n3. **Determine & categorize ultimate question** — หา**คำถามที่แท้จริง** (มักต่างจากคำถามแรกที่ถาม)\n4. **Develop a search strategy** — สืบค้น tertiary → secondary → primary\n5. **Evaluate / analyze / synthesize** ข้อมูล (critical appraisal)\n6. **Formulate & provide response** — ตอบชัด ตรงประเด็น มีหลักฐาน\n7. **Follow up & documentation** — ติดตามผลและบันทึก"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "หา Ultimate Question ให้เจอ",
+          "body_md": "ขั้นตอนสำคัญที่สุดและถูกมองข้ามบ่อย: **คำถามแรกมักไม่ใช่คำถามจริง**\n\nตัวอย่าง:\n- ถาม: \"ขนาดสูงสุดของ paracetamol คือเท่าไร?\"\n- คำถามจริง (หลังถามต่อ): \"ผู้ป่วยตับแข็งกินยาแก้ปวดตัวนี้ได้ขนาดเท่าไร?\"\n\nต้อง **ถามกลับ (probing questions):** ใครคือผู้ป่วย, ทำไมถึงถาม, มีโรคร่วม/ยาอื่นไหม, เร่งด่วนแค่ไหน\n\nการตอบคำถามผิด (ตอบคำถามที่ถามแต่ไม่ใช่ที่ต้องการ) เป็นข้อผิดพลาดที่พบบ่อยและอาจเป็นอันตราย"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "PICO และการตั้งคำถามวิจัย",
+          "body_md": "กรอบ **PICO** ช่วยแปลงคำถามคลินิกให้ค้นหาได้:\n\n- **P** = Population / Patient / Problem (ผู้ป่วยกลุ่มใด)\n- **I** = Intervention (ยา/หัตถการที่สนใจ)\n- **C** = Comparison (เทียบกับอะไร — placebo, standard of care)\n- **O** = Outcome (ผลลัพธ์ที่วัด — mortality, BP, ADR)\n\n(บางครั้งเพิ่ม **T** = Time/Type of study)\n\nPICO ช่วยกำหนด **search terms** และเลือก study design ที่เหมาะ เช่น คำถาม therapy → หา **RCT**; คำถาม harm/ADR ที่หายาก → **cohort/case-control**"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Critical Appraisal: ค่าสถิติที่ต้องเข้าใจ",
+          "body_md": "- **p-value < 0.05:** มีนัยสำคัญทางสถิติ (โอกาสที่ผลเกิดจากความบังเอิญ < 5%) — **ไม่ได้บอกขนาดผลหรือความสำคัญทางคลินิก**\n- **95% CI (confidence interval):** ช่วงที่น่าจะมีค่าจริง — แคบ = แม่นยำ; ถ้า CI ของ **RR/OR คร่อม 1** หรือ **risk difference คร่อม 0** = **ไม่มีนัยสำคัญ**\n- **RR (relative risk):** อัตราเสี่ยงกลุ่มทดลอง ÷ กลุ่มควบคุม; **RRR = 1 − RR**\n- **ARR (absolute risk reduction):** ความต่างของความเสี่ยงสัมบูรณ์\n- **NNT = 1 / ARR:** จำนวนผู้ป่วยที่ต้องรักษาเพื่อได้ผลดี 1 ราย (ยิ่งน้อยยิ่งดี); **NNH** = number needed to harm"
+        },
+        {
+          "card_type": "example",
+          "title_th": "คำนวณ NNT จากข้อมูลการศึกษา",
+          "body_md": "ตัวอย่าง: ยา A ลดอัตราการเกิด MI จาก **10% (control)** เหลือ **6% (treatment)**\n\n- **ARR** = 10% − 6% = **4% = 0.04**\n- **NNT** = 1 / 0.04 = **25** → ต้องรักษา 25 คนเพื่อป้องกัน MI ได้ 1 ราย\n- **RRR** = ARR / risk_control = 0.04 / 0.10 = **40%**\n\nข้อควรระวัง: บริษัทยาชอบรายงาน **RRR (ดูใหญ่)** แต่ **ARR/NNT สะท้อนประโยชน์จริง** ดีกว่า — RRR 40% ฟังดูดี แต่ถ้า baseline risk ต่ำ ARR อาจเล็กมาก"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำขั้นตอน DI: \"ค้นให้ถูก ตอบให้ตรง\"",
+          "body_md": "ย่อ modified systematic approach:\n\n1. **ใคร**ถาม (demographics)\n2. **บริบท** (background)\n3. **คำถามจริง** (ultimate question) ← หัวใจ\n4. **ค้น** (search: tertiary→secondary→primary)\n5. **ประเมิน** (appraise & synthesize)\n6. **ตอบ** (respond)\n7. **ติดตาม + บันทึก** (follow-up & document)\n\nจำหลัก: **ต้องหาคำถามที่แท้จริงก่อนค้น** และ **ต้องประเมินคุณภาพหลักฐานก่อนตอบ** — ห้ามตอบจากความจำลอย ๆ"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "กับดักในการประเมินวรรณกรรม",
+          "body_md": "ระวังข้อผิดพลาดที่ออกสอบ:\n\n- **p < 0.05 ≠ สำคัญทางคลินิก** — ผลอาจมีนัยสำคัญทางสถิติแต่ effect size เล็กจนไร้ความหมาย\n- **Surrogate endpoint** (เช่น ลด LDL, ลด HbA1c) ไม่เท่ากับ **clinical outcome** (ลด mortality)\n- **Statistical significance** ในงานที่ **กลุ่มตัวอย่างใหญ่มาก** อาจตรวจจับความต่างเล็กน้อยที่ไม่สำคัญ\n- ระวัง **bias:** selection, recall, performance, attrition (loss to follow-up) และ **confounding**\n- **Composite outcome** อาจถูกขับเคลื่อนด้วย component ที่ไม่สำคัญ\n- **Funding bias / conflict of interest** — ตรวจสอบแหล่งทุนเสมอ\n- **Intention-to-treat (ITT)** ให้ผลใกล้ความจริงกว่า per-protocol ในการประเมิน effectiveness"
         }
       ]
     }

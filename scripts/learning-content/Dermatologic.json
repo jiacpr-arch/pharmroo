@@ -1,56 +1,451 @@
 {
   "subject": "Dermatologic",
   "unit": {
-    "title_th": "ผิวหนัง",
-    "description_th": "การใช้ topical corticosteroid และการดูแลสิว/การติดเชื้อผิวหนังเบื้องต้น",
-    "icon": "🩹"
+    "title_th": "ระบบผิวหนัง",
+    "description_th": "คอร์สครบวงจรสำหรับสอบใบประกอบวิชาชีพเภสัชกรรม ครอบคลุม topical corticosteroid และระดับความแรง สิว (retinoid, benzoyl peroxide, isotretinoin) สะเก็ดเงิน เชื้อราผิวหนัง ผื่นภูมิแพ้ผิวหนัง การติดเชื้อแบคทีเรียที่ผิวหนัง การเลือกรูปแบบยาทาและการให้คำแนะนำ รวมถึง ADR ทางผิวหนัง ภาวะไวแสง และการให้คำปรึกษาเรื่องครีมกันแดด",
+    "icon": "🧴"
   },
   "lessons": [
     {
-      "title_th": "Topical Corticosteroid",
-      "subtitle_th": "ความแรงและหลักการใช้ทาผิวหนัง",
+      "title_th": "Topical Corticosteroid: ระดับความแรงและการเลือกใช้",
+      "subtitle_th": "Potency classes, vehicle, fingertip unit, ADR (atrophy, striae)",
       "icon": "🩹",
-      "est_minutes": 5,
-      "xp_reward": 10,
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "topical corticosteroid",
+        "ยาทาสเตียรอยด์",
+        "potency",
+        "clobetasol",
+        "hydrocortisone",
+        "betamethasone",
+        "fingertip unit",
+        "skin atrophy",
+        "ผิวบาง",
+        "triamcinolone"
+      ],
       "cards": [
         {
           "card_type": "concept",
-          "title_th": "ระดับความแรง (potency)",
-          "body_md": "- **อ่อน**: hydrocortisone 1% → ใช้ที่หน้า ข้อพับ เด็ก\n- **ปานกลาง**: triamcinolone, betamethasone valerate\n- **แรง/แรงมาก**: clobetasol, betamethasone dipropionate → รอยโรคหนา ฝ่ามือ ฝ่าเท้า\n\nเลือกตามตำแหน่งและความหนาของรอยโรค"
+          "title_th": "หลักการของ Topical Corticosteroid (TCS)",
+          "body_md": "Topical corticosteroid (TCS) ออกฤทธิ์ **ต้านการอักเสบ (anti-inflammatory)**, ลดอาการคัน (antipruritic), ลดการแบ่งตัวของเซลล์ (antiproliferative) และทำให้หลอดเลือดหดตัว (vasoconstriction)\n\nความแรง (potency) วัดด้วย **vasoconstrictor assay** (McKenzie test) แบ่งเป็น 4 กลุ่มหลัก (ในระบบสหรัฐแบ่งได้ 7 class):\n- Mild (อ่อน)\n- Moderate (ปานกลาง)\n- Potent (แรง)\n- Very potent (แรงมาก)\n\nหลักการ: เลือก **potency ต่ำที่สุดที่ควบคุมโรคได้** และใช้ **ระยะสั้นที่สุด**"
         },
         {
-          "card_type": "warning",
-          "title_th": "ADR จากการใช้นาน",
-          "body_md": "ใช้ steroid แรงนานหรือบริเวณกว้าง เสี่ยง:\n- ผิวบาง (atrophy), striae, telangiectasia\n- **ห้ามใช้ steroid แรงที่หน้า** → perioral dermatitis, steroid acne\n- ดูดซึมเข้าระบบ → HPA suppression (โดยเฉพาะเด็ก/บริเวณกว้าง/ปิดทับ)"
+          "card_type": "concept",
+          "title_th": "การจำแนกระดับความแรง (Potency Classes)",
+          "body_md": "| ระดับ | ตัวอย่างยา |\n|---|---|\n| **Mild** | hydrocortisone 1%, hydrocortisone acetate |\n| **Moderate** | triamcinolone acetonide 0.02–0.1%, clobetasone butyrate, betamethasone valerate 0.025% |\n| **Potent** | betamethasone valerate 0.1%, betamethasone dipropionate 0.05%, mometasone, fluocinolone |\n| **Very potent** | **clobetasol propionate 0.05%**, betamethasone dipropionate (optimized), halobetasol |\n\nหมายเหตุ: ความแรงขึ้นกับทั้ง **molecule และ vehicle** เช่น betamethasone dipropionate ใน ointment แรงกว่าใน cream"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "การเลือกตามตำแหน่งและความหนาของรอยโรค",
+          "body_md": "**เลือก potency ตามตำแหน่ง:**\n- **ใบหน้า, ข้อพับ (flexures), อวัยวะเพศ, เด็ก** → ใช้ **mild** (เช่น hydrocortisone 1%) เพราะผิวบาง ดูดซึมสูง\n- **ลำตัว แขนขา** → moderate–potent\n- **ฝ่ามือ ฝ่าเท้า รอยโรคหนา (lichenified), psoriasis plaque** → **potent–very potent** (clobetasol)\n\n**หลักทั่วไป:** ผิวบางดูดซึมยาได้มาก → ความเสี่ยง ADR สูง จึงเลือกความแรงต่ำ; ผิวหนา (ฝ่ามือ ฝ่าเท้า) ดูดซึมยาก → ต้องใช้ความแรงสูง"
         },
         {
           "card_type": "tip",
-          "title_th": "กฎ Fingertip unit (FTU)",
-          "body_md": "**1 FTU** = ยาที่บีบจากปลายนิ้วชี้ถึงข้อแรก ≈ ทาได้พื้นที่ 2 ฝ่ามือผู้ใหญ่\n\n- ใช้ ointment กับผิวแห้ง/หนา; cream กับรอยโรคเปียก/ข้อพับ\n- เลือก potency ต่ำสุดที่ได้ผล และใช้ระยะสั้น"
+          "title_th": "Vehicle selection: ointment, cream, lotion, gel",
+          "body_md": "เลือก vehicle ตามลักษณะรอยโรค:\n- **Ointment (ขี้ผึ้ง):** ให้ความชุ่มชื้นสูง, occlusive → เพิ่มการดูดซึม เหมาะกับ **ผิวแห้ง หนา lichenified** แต่เหนอะหนะ\n- **Cream (ครีม):** ใช้ได้ทั่วไป เหมาะกับรอยโรค **เปียกชื้นหรือข้อพับ** ล้างออกง่าย\n- **Lotion/solution:** เหมาะกับ **บริเวณมีขน เช่น หนังศีรษะ**\n- **Gel:** แห้งเร็ว เหมาะกับหนังศีรษะและบริเวณมัน\n\nหลักจำ: **\"Wet on wet, dry on dry\"** — รอยโรคเปียกใช้ cream/lotion, รอยโรคแห้งใช้ ointment"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "Fingertip Unit (FTU) และปริมาณการใช้",
+          "body_md": "**1 Fingertip Unit (FTU)** = ปริมาณยาที่บีบจากหลอด (ปลายหัวฉีด 5 มม.) ตลอดความยาวปลายนิ้วชี้ผู้ใหญ่ถึงข้อพับแรก ≈ **0.5 กรัม**\n\n- **1 FTU ทาได้พื้นที่ ≈ 2 ฝ่ามือผู้ใหญ่** (รวมนิ้ว)\n\n**ปริมาณยาทาทั้งตัวผู้ใหญ่ (1 ครั้ง) โดยประมาณ:**\n- ใบหน้าและคอ: 2.5 FTU\n- แขนหนึ่งข้าง: 3 FTU; มือหนึ่งข้าง: 1 FTU\n- ขาหนึ่งข้าง: 6 FTU; เท้าหนึ่งข้าง: 2 FTU\n- ลำตัวด้านหน้า: 7 FTU; ด้านหลัง: 7 FTU\n\nการสอน FTU ช่วยให้ผู้ป่วยใช้ยา **ไม่มากหรือน้อยเกินไป**"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ADR เฉพาะที่และระบบของ TCS",
+          "body_md": "**ADR เฉพาะที่ (local) จากการใช้นาน/ความแรงสูง:**\n- **ผิวบาง (skin atrophy)**, **striae (รอยแตกลาย — ถาวร)**, telangiectasia (เส้นเลือดฝอยขยาย)\n- **Perioral dermatitis, steroid acne, rosacea** (โดยเฉพาะที่ใบหน้า)\n- **Hypopigmentation**, ขนขึ้น (hypertrichosis), แผลหายช้า, ติดเชื้อแฝง (tinea incognito)\n- **Tachyphylaxis** — การตอบสนองลดลงเมื่อใช้ต่อเนื่อง\n\n**ADR ระบบ (systemic):** การดูดซึมเข้าสู่ร่างกายมากขึ้นเมื่อ — บริเวณกว้าง, ปิดทับ (occlusion), ผิวบาง, ใช้ในเด็ก → เสี่ยง **HPA axis suppression**, Cushingoid features"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ ADR ของ TCS: \"ASTRA\"",
+          "body_md": "**A**trophy — ผิวบาง\n**S**triae — รอยแตกลาย (ถาวร)\n**T**elangiectasia — เส้นเลือดฝอยขยาย\n**R**osacea / perioral dermatitis / steroid acne (ที่ใบหน้า)\n**A**xis suppression — HPA suppression (ระบบ)\n\nหลักป้องกัน ADR: ใช้ความแรงต่ำสุดที่ได้ผล, ระยะสั้น, หลีกเลี่ยงใบหน้า/ข้อพับด้วยยาแรง, ระวังการปิดทับและบริเวณกว้างในเด็ก"
         }
       ]
     },
     {
-      "title_th": "สิวและการติดเชื้อผิวหนัง",
-      "subtitle_th": "Acne และ topical antimicrobial เบื้องต้น",
+      "title_th": "สิว (Acne Vulgaris): การรักษาตามความรุนแรง",
+      "subtitle_th": "Topical retinoid, benzoyl peroxide, antibiotic, isotretinoin",
       "icon": "🧴",
-      "est_minutes": 5,
-      "xp_reward": 10,
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "acne",
+        "สิว",
+        "tretinoin",
+        "adapalene",
+        "benzoyl peroxide",
+        "isotretinoin",
+        "doxycycline",
+        "teratogenic",
+        "retinoid",
+        "iPLEDGE"
+      ],
       "cards": [
         {
           "card_type": "concept",
-          "title_th": "การรักษาสิวตามความรุนแรง",
-          "body_md": "- **เล็กน้อย**: topical retinoid (adapalene), benzoyl peroxide\n- **ปานกลาง**: + topical/oral antibiotic (doxycycline)\n- **รุนแรง/ดื้อยา**: oral isotretinoin\n\nใช้ benzoyl peroxide ร่วมกับ antibiotic เพื่อลดการดื้อยา"
+          "title_th": "พยาธิกำเนิดและการรักษาตามความรุนแรง",
+          "body_md": "สิวเกิดจาก 4 ปัจจัย: **(1) การสร้างน้ำมัน (sebum) มากขึ้น (androgen-driven), (2) hyperkeratinization ของรูขุมขน, (3) เชื้อ *Cutibacterium acnes (C. acnes)*, (4) การอักเสบ**\n\n**การรักษาตามความรุนแรง:**\n- **เล็กน้อย (comedones):** topical retinoid และ/หรือ benzoyl peroxide (BPO)\n- **ปานกลาง (papules/pustules):** topical retinoid + BPO + topical antibiotic หรือ + oral antibiotic\n- **รุนแรง (nodulocystic) / ดื้อยา:** **oral isotretinoin**\n\nสิวอักเสบรุนแรงเสี่ยงเป็นแผลเป็น → ควรรักษาเชิงรุก"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Topical Retinoids: tretinoin, adapalene, tazarotene",
+          "body_md": "Retinoid เป็น **อนุพันธ์วิตามินเอ** เป็นยาหลักของสิว (comedolytic + anti-inflammatory) ปรับ keratinization และป้องกัน microcomedone\n\n- **Tretinoin (retinoic acid):** ระคายเคืองง่าย, **สลายตัวเมื่อโดนแสง** → ทากลางคืน; **inactivated โดย BPO** หากทาพร้อมกัน (ใช้ adapalene-BPO combo แทน)\n- **Adapalene:** retinoid รุ่นใหม่ ระคายน้อยกว่า เสถียรต่อแสงและ BPO\n- **Tazarotene:** แรงสุด แต่ระคายมาก, **teratogen — ห้ามในหญิงตั้งครรภ์ (category X)**\n\nADR: ผิวแดง แห้ง ลอก แสบ, **ผิวไวแสง** (photosensitivity) → ต้องกันแดด; ช่วงแรกสิวอาจ \"เห่อ\" (purging) 2–4 สัปดาห์"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Benzoyl Peroxide และยาปฏิชีวนะ",
+          "body_md": "**Benzoyl peroxide (BPO):** ฤทธิ์ฆ่าเชื้อ *C. acnes* แบบ **ไม่เกิดการดื้อยา** + comedolytic อ่อน ๆ — เป็น **partner สำคัญของ antibiotic** เพื่อลดการดื้อยา\n- ADR: ระคายเคือง, **ฟอกสีผ้า/ผม (bleaching)**\n\n**Topical antibiotic:** clindamycin, erythromycin — **ห้ามใช้เดี่ยว** เพราะเกิดการดื้อยา → ใช้ร่วมกับ BPO เสมอ\n\n**Oral antibiotic:** **doxycycline, minocycline** (tetracyclines เป็น first-line) หรือ azithromycin\n- ใช้ในสิวปานกลาง–รุนแรง ระยะจำกัด **(≤3–4 เดือน)** ร่วมกับ topical retinoid + BPO\n- **ห้าม tetracycline ในเด็ก <8 ปี และหญิงตั้งครรภ์** (คราบฟัน, กระดูก)"
         },
         {
           "card_type": "warning",
-          "title_th": "Isotretinoin = teratogen",
-          "body_md": "**Isotretinoin** ก่อความพิการต่อทารกรุนแรง (teratogenic)\n\n- ต้องคุมกำเนิดเข้มงวด, ตรวจการตั้งครรภ์\n- ADR: ปากแห้ง ตาแห้ง ไขมัน/เอนไซม์ตับสูง ปวดกล้ามเนื้อ\n- ห้ามให้ร่วม tetracycline (เสี่ยง pseudotumor cerebri)"
+          "title_th": "Isotretinoin: Teratogenicity และการคุมกำเนิด",
+          "body_md": "**Oral isotretinoin** สำหรับสิวรุนแรง/ดื้อยา เป็น **teratogen ที่รุนแรงมาก (FDA category X)** — ก่อความพิการแต่กำเนิด (CNS, หัวใจ, ใบหน้า) และการแท้ง\n\n**มาตรการคุมกำเนิด (โปรแกรม iPLEDGE):**\n- ต้องคุมกำเนิด **2 วิธีพร้อมกัน** เริ่ม **1 เดือนก่อน** จนถึง **1 เดือนหลัง** หยุดยา\n- ตรวจการตั้งครรภ์ (β-hCG) **ก่อนเริ่ม ระหว่าง และหลังหยุดยา**\n- ห้ามบริจาคเลือดระหว่างใช้ยาและ 1 เดือนหลังหยุด\n\nค่าครึ่งชีวิตสั้น แต่ต้องเว้น 1 เดือนก่อนตั้งครรภ์ได้อย่างปลอดภัย"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Isotretinoin: ADR อื่นและการติดตาม",
+          "body_md": "**ADR ที่พบบ่อย (dose-dependent, mucocutaneous):**\n- **ริมฝีปากแห้งแตก (cheilitis)** — แทบทุกราย, ผิว/ตา/จมูกแห้ง, เลือดกำเดา\n- ผิวไวแสง, ปวดกล้ามเนื้อ/ข้อ\n\n**การตรวจติดตามทางห้องปฏิบัติการ:**\n- **ไขมันในเลือด (triglyceride, cholesterol) สูงขึ้น**\n- **เอนไซม์ตับ (ALT/AST) สูงขึ้น**\n- ตรวจ baseline + ระหว่างการรักษา\n\n**ข้อควรระวัง/ปฏิกิริยา:**\n- **ห้ามใช้ร่วมกับ tetracycline** → เสี่ยง **pseudotumor cerebri** (idiopathic intracranial hypertension)\n- ติดตามอารมณ์ (รายงานเรื่องซึมเศร้า)"
         },
         {
           "card_type": "tip",
-          "title_th": "เชื้อราผิวหนัง",
-          "body_md": "- **Topical azole** (clotrimazole, ketoconazole) สำหรับ tinea เฉพาะที่\n- รอยโรคกว้าง/เล็บ/ศีรษะ → **oral antifungal** (terbinafine, itraconazole)\n- Retinoid ใช้ตอนกลางคืน + กันแดดกลางวัน (ผิวไวแสง)"
+          "title_th": "การให้คำแนะนำผู้ป่วยสิว",
+          "body_md": "- ทา retinoid **ปริมาณเท่าเมล็ดถั่ว (pea-sized)** ทั่วใบหน้า **ตอนกลางคืน** บนผิวแห้ง รอ 20–30 นาทีหลังล้างหน้า\n- **กันแดดทุกวัน** เพราะ retinoid และ doxycycline ทำให้ผิวไวแสง\n- ผลลัพธ์ใช้เวลา **8–12 สัปดาห์** — อย่าหยุดยาเร็ว\n- เริ่ม retinoid วันเว้นวันเพื่อลดการระคาย แล้วค่อยเพิ่มความถี่\n- ใช้มอยส์เจอไรเซอร์แบบ non-comedogenic; อย่าบีบสิว\n- BPO อาจฟอกสีผ้า/ปลอกหมอน — เลือกผ้าสีขาว"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำขั้นบันไดสิว: \"เพิ่มความแรงตามความรุนแรง\"",
+          "body_md": "**เล็กน้อย:** Retinoid ± BPO\n**ปานกลาง:** Retinoid + BPO + Antibiotic (topical/oral)\n**รุนแรง:** Isotretinoin\n\nจำ **\"BPO คู่กับ antibiotic เสมอ\"** เพื่อกันการดื้อยา\n\nจำ teratogen ทางผิวหนัง: **isotretinoin, tazarotene, ทุก oral/systemic retinoid = ห้ามตั้งครรภ์ (category X)** ส่วน topical tretinoin/adapalene ก็ควรหลีกเลี่ยงในการตั้งครรภ์"
+        }
+      ]
+    },
+    {
+      "title_th": "สะเก็ดเงิน (Psoriasis)",
+      "subtitle_th": "Topical, phototherapy, systemic (MTX, cyclosporine, acitretin), biologics",
+      "icon": "🔴",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "psoriasis",
+        "สะเก็ดเงิน",
+        "calcipotriol",
+        "vitamin D analog",
+        "methotrexate",
+        "acitretin",
+        "cyclosporine",
+        "biologic",
+        "coal tar",
+        "phototherapy"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "พยาธิสภาพและหลักการรักษาสะเก็ดเงิน",
+          "body_md": "สะเก็ดเงินเป็นโรคอักเสบเรื้อรังของผิวหนังที่ขับเคลื่อนโดยภูมิคุ้มกัน (**T cell / IL-17, IL-23, TNF-α**) ทำให้เซลล์ผิว (keratinocyte) แบ่งตัวเร็วผิดปกติ เกิด **plaque หนาสีแดง มีสะเก็ดสีเงิน** มักที่ศอก เข่า หนังศีรษะ\n\n**หลักการเลือกตามความรุนแรง:**\n- **เล็กน้อย–ปานกลาง (จำกัดบริเวณ):** ยาทา (topical)\n- **ปานกลาง–รุนแรง / กว้าง:** phototherapy หรือ systemic\n- **รุนแรง / ดื้อยา / psoriatic arthritis:** biologics\n\nหลีกเลี่ยงตัวกระตุ้น: **β-blocker, lithium, ยาต้านมาลาเรีย, การหยุด systemic steroid ทันที (rebound), การติดเชื้อ**"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ยาทา (Topical): Vitamin D analog, steroid, coal tar",
+          "body_md": "- **Vitamin D analog: calcipotriol (calcipotriene), calcitriol** — ปรับการเจริญของ keratinocyte; **first-line ร่วมกับ TCS** (สูตรผสม calcipotriol + betamethasone ได้ผลดีและลด ADR ของแต่ละตัว)\n  - ระวังขนาดสูง → **hypercalcemia**; ระคายเคือง\n- **Topical corticosteroid (potent–very potent):** ลดอักเสบเร็ว แต่ระวัง atrophy และ **rebound เมื่อหยุด**\n- **Coal tar (น้ำมันดิน):** antiproliferative; กลิ่นแรง เปื้อนผ้า ระคาย ผิวไวแสง\n- **Salicylic acid:** keratolytic ลอกสะเก็ด ช่วยให้ยาอื่นซึมดีขึ้น\n- **Tazarotene** (topical retinoid): ใช้ใน plaque; teratogen"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Phototherapy",
+          "body_md": "การฉายแสงอาทิตย์เทียมเพื่อกดภูมิคุ้มกันเฉพาะที่ผิวหนัง:\n- **NB-UVB (narrowband UVB, 311 nm):** first-line phototherapy ปลอดภัย ใช้ในรายกว้างหรือไม่ตอบสนองยาทา\n- **PUVA (Psoralen + UVA):** ให้ psoralen (ไวแสง) แล้วฉาย UVA — ได้ผลแต่เพิ่มความเสี่ยง **มะเร็งผิวหนัง** และต้อกระจกระยะยาว → ต้อง **ใส่แว่นกันแดดหลังรับ psoralen**\n\nเหมาะกับสะเก็ดเงินกว้างที่ไม่ต้องการ systemic; ระวังการสะสมปริมาณ UV"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Systemic: Methotrexate, Cyclosporine, Acitretin",
+          "body_md": "- **Methotrexate (MTX):** ยับยั้ง dihydrofolate reductase; ให้ **สัปดาห์ละครั้ง** + **เสริมกรดโฟลิก**\n  - ADR: **กดไขกระดูก, ตับเป็นพิษ (hepatotoxicity/fibrosis), ปอดอักเสบ**; **teratogen — ห้ามตั้งครรภ์**\n- **Cyclosporine:** กด T-cell (calcineurin inhibitor); ออกฤทธิ์เร็ว ใช้คุมระยะสั้น/flare\n  - ADR: **พิษต่อไต (nephrotoxic), ความดันสูง, เหงือกบวม, ขนดก** → ติดตาม Cr และ BP\n- **Acitretin (oral retinoid):** ดีกับ pustular/erythrodermic; ไม่กดภูมิคุ้มกัน\n  - **teratogen รุนแรง — ห้ามตั้งครรภ์และห้ามตั้งครรภ์นานถึง 3 ปีหลังหยุด**, ห้ามดื่มแอลกอฮอล์ (เปลี่ยนเป็น etretinate), ไขมัน/ตับสูง"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Biologics",
+          "body_md": "ใช้ในสะเก็ดเงินปานกลาง–รุนแรงที่ไม่ตอบสนอง systemic หรือมี psoriatic arthritis เป็นยาฉีด ออกฤทธิ์เจาะจง cytokine:\n- **TNF-α inhibitor:** etanercept, adalimumab, infliximab\n- **IL-12/23 inhibitor:** ustekinumab\n- **IL-17 inhibitor:** secukinumab, ixekizumab\n- **IL-23 inhibitor:** guselkumab, risankizumab\n\n**ข้อควรระวังก่อนเริ่ม biologic:**\n- **คัดกรองวัณโรค (TB) แฝง และไวรัสตับอักเสบ B/C** ก่อนเริ่ม (เสี่ยง reactivation)\n- เพิ่มความเสี่ยงการติดเชื้อ; **หลีกเลี่ยง live vaccine** ระหว่างใช้"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ข้อควรระวัง systemic ในสะเก็ดเงิน",
+          "body_md": "- **ห้ามใช้ systemic corticosteroid รักษาสะเก็ดเงินทั่วไป** เพราะการหยุดยาทำให้เกิด **rebound flare / pustular psoriasis** ที่รุนแรง\n- **MTX + cyclosporine** มีความเสี่ยงสะสมพิษ (ไต/ตับ/ภูมิคุ้มกัน) — ไม่นิยมใช้ร่วมกันยาว\n- **MTX + acitretin** เพิ่มความเป็นพิษต่อตับ\n- **MTX และ retinoid (acitretin) เป็น teratogen** — คุมกำเนิดเข้มงวด\n- ระวัง drug interaction ของ MTX: **NSAIDs, trimethoprim/sulfa, probenecid** เพิ่มระดับ MTX → กดไขกระดูก"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ systemic ของสะเก็ดเงิน: \"MCA\"",
+          "body_md": "**M**ethotrexate — ตับ + ไขกระดูก, ให้สัปดาห์ละครั้ง + folic acid\n**C**yclosporine — ไต (nephrotoxic) + ความดัน, ออกฤทธิ์เร็ว\n**A**citretin — retinoid, teratogen นาน 3 ปี, ห้ามแอลกอฮอล์\n\nจำ **ทั้งสามต้องระวังการตั้งครรภ์ (MTX และ acitretin = teratogen ชัดเจน)** และจำว่า **systemic steroid ห้ามใช้** เพราะ rebound"
+        }
+      ]
+    },
+    {
+      "title_th": "การติดเชื้อราที่ผิวหนัง (Superficial Fungal Infections)",
+      "subtitle_th": "Topical & oral antifungals: azoles, terbinafine, griseofulvin",
+      "icon": "🍄",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "tinea",
+        "เชื้อรา",
+        "clotrimazole",
+        "ketoconazole",
+        "terbinafine",
+        "griseofulvin",
+        "itraconazole",
+        "candida",
+        "onychomycosis",
+        "antifungal"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "ชนิดของการติดเชื้อราผิวหนัง",
+          "body_md": "**Dermatophytes (tinea / กลาก):** ติดเชื้อชั้น keratin\n- **Tinea corporis** (ลำตัว), **tinea cruris** (ขาหนีบ/สังคัง), **tinea pedis** (เท้า/ฮ่องกงฟุต), **tinea capitis** (หนังศีรษะ), **tinea unguium / onychomycosis** (เล็บ)\n\n**Candida (ยีสต์):** ชอบที่อับชื้น/ข้อพับ — intertrigo, ปาก (thrush), ช่องคลอด, ผ้าอ้อม\n\n**Malassezia (yeast):** **Pityriasis (tinea) versicolor** — ผื่นด่างขาว/น้ำตาลที่ลำตัว, **seborrheic dermatitis**\n\nวินิจฉัยยืนยันด้วย **KOH preparation** (เห็น hyphae/spore)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Topical Antifungals",
+          "body_md": "ใช้กับการติดเชื้อ **เฉพาะที่และไม่กว้าง** ที่ผิวหนัง (ไม่ใช้กับเล็บ/หนังศีรษะ):\n- **Azoles:** **clotrimazole, ketoconazole, miconazole, econazole** — ครอบคลุมทั้ง dermatophyte และ **Candida** กลไก: ยับยั้ง 14-α-demethylase → ลดการสร้าง ergosterol\n- **Allylamines:** **terbinafine (topical), naftifine** — เด่นที่ dermatophyte (ฆ่าเชื้อ fungicidal), หายเร็วกว่า แต่คุม Candida ได้น้อยกว่า\n- **อื่น ๆ:** nystatin (เฉพาะ **Candida** ไม่ครอบคลุม dermatophyte), ciclopirox\n\nทาเลยขอบรอยโรค 2 ซม. ต่อเนื่อง **1–4 สัปดาห์** (ทาต่ออีก 1–2 สัปดาห์หลังหาย)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Oral Antifungals",
+          "body_md": "ใช้เมื่อ **รอยโรคกว้าง, หนังศีรษะ (tinea capitis), เล็บ (onychomycosis), หรือดื้อยาทา**:\n- **Terbinafine (oral):** **first-line ของ onychomycosis และ tinea capitis (ในผู้ใหญ่)**; เด่น dermatophyte; เล็บมือ ~6 สัปดาห์ เล็บเท้า ~12 สัปดาห์; ADR: **ตับเป็นพิษ, สูญเสียการรับรส (dysgeusia)**\n- **Itraconazole / fluconazole (azole):** ครอบคลุมกว้าง รวม **Candida**; itraconazole ใช้แบบ pulse ในเล็บ\n- **Griseofulvin:** ยาเก่า, **first-line ของ tinea capitis ในเด็ก** (โดยเฉพาะ Microsporum); ดูดซึมดีขึ้นกับ **อาหารมัน**; เป็น **CYP inducer** (ลดผล warfarin/ยาคุม)"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ข้อควรระวังและ Drug Interaction ของ Azole",
+          "body_md": "**Oral azoles (ketoconazole, itraconazole, fluconazole) เป็น CYP3A4 inhibitor ที่แรง** → เพิ่มระดับยาอื่นมาก:\n- **statins (simvastatin) → rhabdomyolysis**, warfarin, midazolam, ยากันชัก, calcium channel blocker\n- **ห้ามร่วมกับ** ยาที่ทำให้ **QT prolongation**\n\n**Ketoconazole ชนิดรับประทาน: ตับเป็นพิษรุนแรง + กดการสร้างฮอร์โมน** → ปัจจุบัน **ไม่แนะนำให้กินสำหรับเชื้อราผิวหนัง** (ใช้รูปทา/แชมพูแทน)\n\n**Terbinafine, oral azole, griseofulvin** → ตรวจ **เอนไซม์ตับ** ก่อน/ระหว่างใช้ระยะยาว; griseofulvin **ห้ามในตั้งครรภ์และโรคตับ**"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "การเลือกยาและคำแนะนำเฉพาะโรค",
+          "body_md": "- **Tinea corporis/cruris/pedis เฉพาะที่:** topical azole หรือ terbinafine 1–4 สัปดาห์\n- **Tinea capitis:** ต้อง **oral** เสมอ (ยาทาไม่ถึงรากผม) — เด็ก: griseofulvin; ผู้ใหญ่: terbinafine\n- **Onychomycosis:** oral terbinafine first-line; ยืนยันด้วยเชื้อก่อนเริ่มเพราะรักษานาน\n- **Pityriasis versicolor:** ketoconazole shampoo หรือ selenium sulfide; รายกว้างใช้ oral azole\n- **Candida intertrigo:** azole หรือ nystatin + **เก็บบริเวณให้แห้ง**\n\nคำแนะนำทั่วไป: ผึ่งให้แห้ง ใส่ผ้าระบายอากาศ ไม่ใช้ของส่วนตัวร่วม ป้องกันการกลับเป็นซ้ำ"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ spectrum: \"Azole ครอบคลุม Candida, Terbinafine เด่น Dermatophyte\"",
+          "body_md": "**Azole (clotrimazole, ketoconazole, fluconazole, itraconazole):** กว้าง — **dermatophyte + Candida + Malassezia**\n\n**Terbinafine (allylamine):** **dermatophyte เด่นที่สุด** (first-line เล็บ) แต่ Candida อ่อน\n\n**Nystatin:** **Candida เท่านั้น** (ไม่กิน — ไม่ดูดซึม, ใช้เฉพาะที่/ในช่องปาก)\n\n**Griseofulvin:** dermatophyte เท่านั้น, เด็ก tinea capitis, กินกับอาหารมัน"
+        }
+      ]
+    },
+    {
+      "title_th": "ผื่นภูมิแพ้ผิวหนัง (Atopic Dermatitis / Eczema)",
+      "subtitle_th": "Emollients, topical steroid, calcineurin inhibitors, counseling",
+      "icon": "🧷",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "atopic dermatitis",
+        "eczema",
+        "ผื่นภูมิแพ้ผิวหนัง",
+        "emollient",
+        "moisturizer",
+        "tacrolimus",
+        "pimecrolimus",
+        "calcineurin inhibitor",
+        "topical steroid",
+        "คัน"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "ลักษณะและพยาธิสภาพของ Atopic Dermatitis (AD)",
+          "body_md": "Atopic dermatitis (eczema) เป็นโรคผิวหนังอักเสบเรื้อรังที่เป็น ๆ หาย ๆ มี **ผิวแห้ง คัน (pruritus เด่น)** และมักมีประวัติ **atopy** ในครอบครัว (หอบหืด, allergic rhinitis)\n\n**พยาธิสภาพหลัก: skin barrier defect** (เกี่ยวข้อง mutation ของ **filaggrin**) → ผิวสูญเสียน้ำ (TEWL สูง) + แพ้ง่าย + อักเสบ (Th2)\n\nตำแหน่งตามวัย: ทารก—แก้ม/หน้า/ด้านนอกแขนขา; เด็กโต/ผู้ใหญ่—**ข้อพับ (flexures)**\n\nวงจรสำคัญ: **คัน → เกา → barrier เสียมากขึ้น → ติดเชื้อ/อักเสบ (itch-scratch cycle)**"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Emollients / Moisturizers: รากฐานการรักษา",
+          "body_md": "**Emollient เป็นการรักษาพื้นฐานที่สำคัญที่สุด** ของ AD ทุกระดับ — ฟื้นฟู skin barrier ลดการสูญเสียน้ำ ลดความถี่ flare และลดการใช้สเตียรอยด์\n\n**หลักการใช้:**\n- ทา **บ่อย ๆ และปริมาณมาก** (ผู้ใหญ่ ~250–500 g/สัปดาห์) แม้ผิวไม่มีผื่น\n- ทาภายใน **3 นาทีหลังอาบน้ำ** (\"soak and seal\") เพื่อกักความชุ่มชื้น\n- ทาตามแนวขน, อาบน้ำอุ่น (ไม่ร้อน) ระยะสั้น, ใช้สบู่อ่อน/ไม่มีน้ำหอม\n\nส่วนผสม: ointment (occlusive) ดีกว่า cream สำหรับผิวแห้งมาก"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Topical Corticosteroid ใน AD",
+          "body_md": "TCS เป็น **first-line anti-inflammatory** สำหรับ flare ของ AD:\n- เลือก potency ตามตำแหน่งและความรุนแรง: **mild ที่หน้า/ข้อพับ/เด็ก**, moderate–potent ที่ลำตัว/แขนขา\n- ทา **วันละ 1–2 ครั้ง เฉพาะบริเวณที่มีผื่น** ในระยะสั้น แล้วลดลงเมื่อดีขึ้น\n- ใช้ร่วมกับ emollient เสมอ (ทา emollient ก่อน รอซึม แล้วทา TCS หรือเว้นระยะ)\n- **Proactive therapy:** ทา TCS/TCI 2 ครั้ง/สัปดาห์ที่จุดที่เป็นบ่อย เพื่อกัน flare\n\nระวัง ADR เฉพาะที่ (atrophy) เมื่อใช้นาน โดยเฉพาะที่ใบหน้า"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Topical Calcineurin Inhibitors (TCI): tacrolimus, pimecrolimus",
+          "body_md": "**Tacrolimus ointment, pimecrolimus cream** เป็นยากดภูมิคุ้มกันเฉพาะที่ (ยับยั้ง calcineurin → ลด T-cell cytokine)\n\n**ข้อดี: ไม่ทำให้ผิวบาง (no atrophy)** → เหมาะกับ **ใบหน้า เปลือกตา ข้อพับ คอ** และใช้ steroid-sparing\n\n**ADR ที่พบบ่อย:** แสบ/ร้อน (burning) ช่วงแรก, คัน\n\n**ข้อควรระวัง:**\n- **หลีกเลี่ยงแสงแดด / ใช้กันแดด** ระหว่างใช้\n- มี **boxed warning** เรื่องความเสี่ยงมะเร็งเชิงทฤษฎี — ใช้เป็น second-line, ไม่ใช้ในเด็ก <2 ปี, ใช้ระยะสั้น/เป็นช่วง"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "การติดเชื้อแทรกซ้อนและเมื่อไหร่ใช้ systemic",
+          "body_md": "**AD ติดเชื้อแทรกซ้อนได้ง่าย** เพราะ barrier เสียและการเกา:\n- **Staphylococcus aureus** (impetiginization, ผิวมีน้ำเหลือง/สะเก็ดน้ำผึ้ง) → ยาปฏิชีวนะ\n- **Eczema herpeticum (HSV):** ฉุกเฉิน! ตุ่มน้ำ/แผลกระจายเร็ว มีไข้ → **acyclovir ทันที, ห้ามใช้ TCI/steroid เดี่ยวไปกลบ**\n\n**Systemic therapy** เมื่อรุนแรง/ดื้อ:\n- short-course systemic steroid (เลี่ยงระยะยาว — rebound), cyclosporine, **dupilumab (anti-IL-4/IL-13)**, methotrexate\n- antihistamine รุ่นแรก (sedating) ช่วยเรื่องคัน/นอนได้บ้างแต่ไม่รักษาที่ต้นเหตุ"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "การให้คำปรึกษาผู้ป่วย AD",
+          "body_md": "- **ทา moisturizer สม่ำเสมอทุกวัน** แม้ไม่มีผื่น — เป็นหัวใจของการคุมโรค\n- อาบน้ำ **อุ่น ไม่ร้อน** ระยะสั้น, ซับให้หมาด, ทา emollient ทันที (soak & seal)\n- เลี่ยงสิ่งกระตุ้น: สบู่/น้ำหอมแรง, ผ้าขนสัตว์, อากาศแห้ง/ร้อนจัด, เหงื่อ, ความเครียด, สารก่อภูมิแพ้\n- **ตัดเล็บสั้น** ลดการเกา; เด็กอาจใส่ถุงมือกลางคืน\n- ใช้ TCS เฉพาะช่วง flare ตามที่สั่ง อย่ากลัวจนใช้น้อยเกินไป (steroid phobia) แต่ก็ไม่ใช้พร่ำเพรื่อ\n- สังเกตสัญญาณติดเชื้อ (น้ำเหลือง สะเก็ดน้ำผึ้ง ปวดบวมแดง) → พบแพทย์"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำการรักษา AD: \"MTC\"",
+          "body_md": "**M**oisturizer (emollient) — รากฐาน ใช้ทุกวันทุกระดับ\n**T**opical corticosteroid — first-line ของ flare\n**C**alcineurin inhibitor (tacrolimus/pimecrolimus) — steroid-sparing สำหรับหน้า/ข้อพับ\n\nจำเสริม: **TCI ไม่ทำให้ผิวบาง** จึงดีกว่า steroid ที่ใบหน้า; **eczema herpeticum = ฉุกเฉิน ให้ acyclovir**; หลีกเลี่ยง itch-scratch cycle"
+        }
+      ]
+    },
+    {
+      "title_th": "การติดเชื้อแบคทีเรียที่ผิวหนัง",
+      "subtitle_th": "Impetigo, cellulitis, folliculitis — mupirocin & oral antibiotics",
+      "icon": "🦠",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "impetigo",
+        "cellulitis",
+        "folliculitis",
+        "mupirocin",
+        "cephalexin",
+        "dicloxacillin",
+        "MRSA",
+        "Staphylococcus aureus",
+        "Streptococcus",
+        "การติดเชื้อผิวหนัง"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "ภาพรวมและเชื้อก่อโรค",
+          "body_md": "การติดเชื้อแบคทีเรียที่ผิวหนัง (skin and soft tissue infections, SSTIs) ส่วนใหญ่เกิดจาก **Gram-positive cocci**:\n- ***Staphylococcus aureus*** (รวม **MRSA**) — ฝี, ตุ่มหนอง, impetigo แบบ bullous\n- ***Streptococcus pyogenes* (Group A Strep)** — cellulitis, erysipelas, impetigo แบบ non-bullous\n\n**แยกชนิดตามชั้นผิว:**\n- **Impetigo:** ติดเชื้อชั้นตื้น (epidermis)\n- **Folliculitis/furuncle/carbuncle:** รูขุมขน\n- **Erysipelas:** หนังกำพร้า–หนังแท้ตื้น (ขอบชัด นูน)\n- **Cellulitis:** หนังแท้ลึก–ไขมันใต้ผิว (ขอบไม่ชัด)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Impetigo: ตื้น รักษาเฉพาะที่ได้",
+          "body_md": "Impetigo พบบ่อยในเด็ก ติดต่อง่าย:\n- **Non-bullous (พบบ่อยสุด):** สะเก็ดสีน้ำผึ้ง (honey-colored crust) — Strep และ/หรือ Staph\n- **Bullous:** ตุ่มน้ำพอง — *S. aureus* (toxin)\n\n**การรักษา:**\n- **รอยโรคจำกัด:** ยาทา **mupirocin** หรือ **fusidic acid / retapamulin** วันละ 2–3 ครั้ง 5 วัน\n- **รอยโรคกว้าง/หลายจุด/มีไข้:** **oral antibiotic** — cephalexin หรือ dicloxacillin (cloxacillin) คลุม Staph+Strep\n\nรักษาความสะอาด ลอกสะเก็ดเบา ๆ เลี่ยงการแพร่เชื้อ"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Cellulitis และ Erysipelas",
+          "body_md": "**Cellulitis:** ผิวแดง ร้อน บวม กดเจ็บ ขอบไม่ชัด มักที่ขา; **Erysipelas:** ตื้นกว่า ขอบนูนชัด สีแดงสด มักที่หน้า/ขา มีไข้\n\n**เชื้อหลัก:** β-hemolytic Streptococcus (โดยเฉพาะ non-purulent) และ S. aureus (purulent/มีหนอง)\n\n**การรักษา (non-purulent, ไม่ซับซ้อน):** ยา **oral** คลุม Strep + MSSA\n- **cephalexin, dicloxacillin/cloxacillin** หรือ amoxicillin-clavulanate\n- แพ้ penicillin: clindamycin\n\n**Purulent / สงสัย MRSA:** เพิ่ม **clindamycin, doxycycline, หรือ trimethoprim-sulfamethoxazole (cotrimoxazole)**; ฝีต้อง **กรีดระบายหนอง (I&D)** เป็นหลัก\n\n**รุนแรง/ลุกลามเร็ว/มีไข้สูง:** IV antibiotic + ประเมิน necrotizing fasciitis"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Folliculitis, Furuncle, Carbuncle",
+          "body_md": "- **Folliculitis:** อักเสบรูขุมขนตื้น ตุ่มแดง/หนองรอบเส้นขน — มัก *S. aureus*; \"hot tub folliculitis\" จาก *Pseudomonas*\n- **Furuncle (ฝี/boil):** ลามลึกเป็นก้อนหนองในรูขุมขนเดียว\n- **Carbuncle:** หลายฝีรวมกันลึก มีไข้ได้\n\n**การรักษา:**\n- Folliculitis เล็กน้อย: ความสะอาด, **topical (mupirocin/clindamycin)**, ประคบอุ่น\n- Furuncle/carbuncle: **I&D (กรีดระบาย) เป็นหลัก** ± oral antibiotic ถ้าหลายจุด/มีไข้/cellulitis รอบ ๆ\n- สงสัย MRSA → เลือกยาคลุม MRSA"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Mupirocin และยาทาฆ่าเชื้อ",
+          "body_md": "**Mupirocin (topical):** ยับยั้ง bacterial isoleucyl-tRNA synthetase; เด่นต่อ **Staph (รวม MRSA) และ Strep**\n- ใช้รักษา **impetigo จำกัด** และ **กำจัดเชื้อ MRSA ที่จมูก (nasal decolonization)** ทา 2 ครั้ง/วัน 5 วัน\n- ใช้สั้น ๆ เพื่อลดการดื้อยา\n\n**ยาทาอื่น:**\n- **Fusidic acid:** Staph/Strep; เลี่ยงใช้เดี่ยวยาว (ดื้อยา)\n- **Retapamulin:** impetigo\n\n**หลีกเลี่ยง topical neomycin/gentamicin** เป็น routine — เสี่ยง **contact allergy** และดื้อยา"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "MRSA, ภาวะแทรกซ้อน และสัญญาณอันตราย",
+          "body_md": "**สงสัย MRSA เมื่อ:** มีหนอง/ฝี, เคยติด MRSA, ไม่ตอบสนอง β-lactam, อยู่ในสถานพยาบาล\n- ยา oral คลุม MRSA: **doxycycline, cotrimoxazole, clindamycin**; รุนแรง: **vancomycin, linezolid** IV\n- **β-lactam (cephalexin, dicloxacillin) ไม่ครอบคลุม MRSA**\n\n**สัญญาณอันตราย → ส่งต่อด่วน:**\n- ปวดรุนแรงเกินรอยโรค, ผิวเปลี่ยนสีคล้ำ/พุพอง, crepitus, ความดันตก, ไข้สูง → สงสัย **necrotizing fasciitis** (ฉุกเฉินผ่าตัด)\n- cellulitis ที่ใบหน้า/รอบตา (periorbital/orbital) → เสี่ยงลุกลาม\n- ภาวะแทรกซ้อนของ Strep: **post-streptococcal glomerulonephritis**"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำยาเริ่มต้น SSTI: \"Strep+Staph → Cephalexin/Cloxacillin; MRSA → Doxy/Clinda/Cotrim\"",
+          "body_md": "**Non-purulent (Strep เด่น) / ไม่มีหนอง:** **cephalexin** หรือ **dicloxacillin/cloxacillin** (คลุม Strep + MSSA)\n\n**Purulent / มีหนอง / สงสัย MRSA:** **I&D ก่อน** + เลือก **D**oxycycline / **C**lindamycin / **Cotrim**oxazole\n\n**Impetigo จำกัด:** **mupirocin** ทาเฉพาะที่\n\nจำหลัก: **มีหนอง = คิดถึง Staph/MRSA และต้องระบายหนอง; ไม่มีหนองลามแดง = คิดถึง Strep**"
+        }
+      ]
+    },
+    {
+      "title_th": "การเลือกรูปแบบยาทาและการให้คำแนะนำ",
+      "subtitle_th": "Vehicle, ปริมาณ, การทา, occlusion, ใบหน้า/หนังศีรษะ",
+      "icon": "💧",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "topical formulation",
+        "vehicle",
+        "ointment",
+        "cream",
+        "occlusion",
+        "fingertip unit",
+        "การทายา",
+        "หนังศีรษะ",
+        "counseling",
+        "เปอร์เซ็นต์การดูดซึม"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "ปัจจัยที่กำหนดการดูดซึมยาทาผิวหนัง",
+          "body_md": "การดูดซึมยาผ่านผิวหนัง (percutaneous absorption) ขึ้นกับ:\n- **ความหนาของชั้น stratum corneum / ตำแหน่ง:** ดูดซึมมากที่ **ถุงอัณฑะ > ใบหน้า > ข้อพับ** และน้อยที่ **ฝ่ามือ/ฝ่าเท้า**\n- **สภาพผิว:** ผิวที่อักเสบ/แตก barrier เสีย → ดูดซึมมากขึ้น\n- **ความชุ่มชื้น (hydration):** ผิวชุ่มชื้น/ปิดทับ → ดูดซึมมากขึ้น\n- **Vehicle:** ointment > cream > lotion ในการช่วยซึม\n- **ความเข้มข้นและ occlusion**\n\nหลักการ: บริเวณดูดซึมสูง (หน้า ข้อพับ เด็ก) → เลือกยาความแรงต่ำเพื่อลด ADR ระบบ"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Vehicle หลักและการเลือกใช้",
+          "body_md": "| Vehicle | ลักษณะ | เหมาะกับ |\n|---|---|---|\n| **Ointment** | มันมาก, occlusive, ไม่มีสารกันเสียมาก | ผิวแห้ง หนา lichenified; เพิ่มการซึม |\n| **Cream** | ผสมน้ำ+น้ำมัน, ทาง่าย ล้างออกได้ | รอยโรคเปียก, ข้อพับ, ใช้ทั่วไป |\n| **Lotion** | เหลว มีน้ำมาก | บริเวณกว้าง, มีขน |\n| **Gel** | แห้งเร็ว แอลกอฮอล์ | หนังศีรษะ, ผิวมัน, สิว |\n| **Solution/foam** | กระจายง่าย | หนังศีรษะ |\n| **Paste** | ผงในขี้ผึ้ง | ปกป้อง ดูดซับ (เช่น ผื่นผ้าอ้อม) |\n\n**\"Wet on wet, dry on dry\":** รอยโรคชื้นใช้ cream/lotion, รอยโรคแห้งใช้ ointment"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Occlusion: เพิ่มฤทธิ์และเพิ่มความเสี่ยง",
+          "body_md": "**Occlusion (การปิดทับ)** เช่น พลาสติกหุ้ม, ผ้าพันเปียก (wet wrap), แผ่นปิด:\n- **เพิ่มการดูดซึมยาอย่างมาก** (อาจหลายเท่า) → เพิ่มประสิทธิภาพในรอยโรคหนา\n- แต่ **เพิ่ม ADR**: atrophy เฉพาะที่, การดูดซึมเข้าระบบ (HPA suppression), ติดเชื้อ/อับชื้น\n\n**ใช้ occlusion อย่างระวัง:**\n- เฉพาะรอยโรคหนา ดื้อยา และระยะสั้น ตามคำสั่งแพทย์\n- **ห้ามปิดทับยา steroid แรงบริเวณกว้างหรือในเด็กเอง**\n- บริเวณข้อพับ/ผ้าอ้อมถือเป็น occlusion ตามธรรมชาติ → ใช้ความแรงต่ำ"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "ปริมาณและวิธีการทาที่ถูกต้อง",
+          "body_md": "- ใช้หลัก **Fingertip unit (1 FTU ≈ 0.5 g คลุม 2 ฝ่ามือ)** บอกปริมาณให้ผู้ป่วย\n- ทา **บาง ๆ สม่ำเสมอ** เฉพาะรอยโรค ตามแนวขน; ไม่ต้องหนา (ไม่เพิ่มผล)\n- ความถี่ตามที่สั่ง (ส่วนมาก TCS วันละ 1–2 ครั้ง)\n- **ลำดับการทาเมื่อมีหลายยา:** ทายาตัวที่ต้องการให้ออกฤทธิ์เฉพาะที่ก่อน หรือเว้นระยะ ~15–30 นาทีระหว่างยา; โดยทั่วไปทา emollient แล้วรอซึมก่อนทายาออกฤทธิ์ (หรือสลับเวลา)\n- **ล้างมือหลังทา** (โดยเฉพาะ steroid แรง, retinoid)\n- ทา **moisturizer หลังอาบน้ำ** ขณะผิวยังหมาด"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ใบหน้า ข้อพับ หนังศีรษะ และเด็ก: ข้อควรระวัง",
+          "body_md": "- **ใบหน้า/เปลือกตา/ข้อพับ/อวัยวะเพศ:** ผิวบาง ดูดซึมสูง → ใช้ **steroid mild** ระยะสั้น; เลี่ยง potent (เสี่ยง atrophy, perioral dermatitis, glaucoma รอบตา); พิจารณา **TCI (tacrolimus/pimecrolimus)** เป็นทางเลือก\n- **หนังศีรษะ/บริเวณมีขน:** ใช้รูปแบบ **lotion, solution, gel, foam, shampoo** (ไม่ใช่ ointment เหนียว)\n- **เด็กและทารก:** อัตราส่วนพื้นที่ผิวต่อน้ำหนักสูง + ผิวบาง → ดูดซึมมาก เสี่ยง **HPA suppression**; ใช้ความแรงต่ำสุด บริเวณจำกัด ระยะสั้น; **ผ้าอ้อม = occlusion** → เลี่ยง steroid แรง"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "การให้คำปรึกษาเพื่อเพิ่มความร่วมมือในการใช้ยา",
+          "body_md": "- อธิบาย **\"ทาที่ไหน เท่าไร บ่อยแค่ไหน นานเท่าไร\"** ให้ชัดเจน (ใช้ FTU)\n- จัดการ **steroid phobia:** อธิบายว่าใช้ถูกต้องตามขนาด/ระยะปลอดภัย และการไม่ใช้ทำให้โรคคุมไม่ได้\n- เน้นการใช้ emollient ร่วมเสมอใน eczema/psoriasis\n- เตือนเรื่อง **ผิวไวแสง** (retinoid, coal tar, TCI) → กันแดด\n- ระบุสัญญาณที่ต้องกลับมาพบ: ผื่นแย่ลง ติดเชื้อ (หนอง/น้ำเหลือง) แสบระคายมาก\n- ตรวจสอบ vehicle/ตำแหน่งให้เหมาะ เพื่อลดการระคายและเพิ่มความสม่ำเสมอ"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำการเลือก vehicle: \"Wet on Wet, Dry on Dry\"",
+          "body_md": "**รอยโรคเปียก/ข้อพับ → Cream/Lotion** (ระบายได้, ไม่อับชื้น)\n**รอยโรคแห้ง/หนา → Ointment** (occlusive ชุ่มชื้น เพิ่มการซึม)\n**หนังศีรษะ/มีขน → Lotion/Solution/Gel/Foam/Shampoo**\n\nและจำ **ลำดับการดูดซึมตามตำแหน่ง:** อัณฑะ > หน้า > ข้อพับ > ลำตัว/แขนขา > **ฝ่ามือ/ฝ่าเท้า (น้อยสุด)** → ใช้กำหนด potency ให้เหมาะกับตำแหน่ง"
+        }
+      ]
+    },
+    {
+      "title_th": "ADR ทางผิวหนัง ภาวะไวแสง และครีมกันแดด",
+      "subtitle_th": "Photosensitivity, drug-induced skin reactions, sunscreen counseling",
+      "icon": "☀️",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "photosensitivity",
+        "ภาวะไวแสง",
+        "sunscreen",
+        "ครีมกันแดด",
+        "SPF",
+        "Stevens-Johnson",
+        "SJS",
+        "TEN",
+        "DRESS",
+        "drug eruption"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "Photosensitivity: Phototoxic vs Photoallergic",
+          "body_md": "ภาวะไวแสงจากยา (drug-induced photosensitivity) แบ่งเป็น 2 กลไก:\n\n**Phototoxic (พบบ่อยกว่า):**\n- ปฏิกิริยาทางเคมีโดยตรงเมื่อยา+UV → คล้าย **ผิวไหม้แดด (sunburn) เกินจริง** เฉพาะบริเวณโดนแดด\n- เกิดเร็ว (ภายในชั่วโมง), ขึ้นกับขนาดยา, ไม่ต้อง sensitization ก่อน\n\n**Photoallergic (พบน้อยกว่า):**\n- ปฏิกิริยาภูมิคุ้มกัน (type IV) → ผื่น **eczematous คัน** อาจลามนอกบริเวณโดนแดด\n- เกิดช้า (24–72 ชม.), ต้องเคยสัมผัสมาก่อน (sensitization)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ยาที่ทำให้ไวแสงที่พบบ่อย",
+          "body_md": "**ยาที่มักทำให้เกิด photosensitivity (ต้องเตือนผู้ป่วย):**\n- **ยาปฏิชีวนะ:** **doxycycline/tetracyclines, fluoroquinolones (cipro/levofloxacin), sulfonamides**\n- **ยาขับปัสสาวะ:** **thiazide (hydrochlorothiazide), furosemide**\n- **NSAIDs:** piroxicam, ketoprofen (topical)\n- **Amiodarone** (ผิวเป็นสีเทาอมฟ้า, slate-gray)\n- **Retinoid** (isotretinoin, tretinoin topical), **coal tar, psoralen (PUVA)**\n- **Phenothiazines** (chlorpromazine), voriconazole, **St. John's wort, hydrochlorothiazide**\n\nคำแนะนำ: เลี่ยงแดดจัด, กันแดด, สวมเสื้อผ้าปิด ขณะใช้ยาเหล่านี้"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Severe Cutaneous Adverse Reactions (SCARs)",
+          "body_md": "**ผื่นแพ้ยารุนแรงที่ต้องหยุดยาทันทีและส่งต่อ:**\n- **SJS / TEN (Stevens-Johnson / Toxic Epidermal Necrolysis):** ผิวหลุดลอก, **Nikolsky sign บวก**, เยื่อบุ (ปาก ตา อวัยวะเพศ) เป็นแผล; TEN ลอก >30% BSA\n  - ยาที่ก่อบ่อย: **allopurinol, carbamazepine/lamotrigine/phenytoin, sulfonamides, nevirapine, NSAIDs (oxicam)**\n  - **HLA-B*1502** สัมพันธ์กับ carbamazepine-SJS ในคนเอเชีย (คัดกรองก่อนเริ่ม)\n- **DRESS:** ผื่น + ไข้ + **eosinophilia** + อวัยวะภายในอักเสบ (ตับ/ไต), เริ่ม 2–8 สัปดาห์หลังเริ่มยา\n- **AGEP:** ตุ่มหนองเล็ก ๆ จำนวนมากเฉียบพลัน\n\nสัญญาณเตือน: ผิวเจ็บ, ลอก, เยื่อบุเป็นแผล, ไข้ → ฉุกเฉิน"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ผื่นแพ้ยาที่ไม่รุนแรงและ Fixed Drug Eruption",
+          "body_md": "**Maculopapular / morbilliform rash:** ผื่นแพ้ยาที่พบบ่อยที่สุด (type IV) — ผื่นแดงราบ/นูนทั่วตัว เริ่ม ~4–14 วันหลังเริ่มยา; มัก self-limited เมื่อหยุดยา\n\n**Urticaria / angioedema:** ลมพิษ (type I, IgE) — เกิดเร็ว; ระวังลุกลามเป็น **anaphylaxis**\n\n**Fixed drug eruption (FDE):** ผื่นกลม สีคล้ำ/ม่วง **เกิดตำแหน่งเดิมซ้ำทุกครั้งที่ได้ยา** — มัก sulfonamides, NSAIDs, tetracycline\n\n**Acneiform / steroid acne:** จาก systemic corticosteroid, EGFR inhibitor\n\nหลักการ: ระบุและ **หยุดยาที่สงสัย**, บันทึก allergy, รักษาตามอาการ (antihistamine, topical steroid)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ครีมกันแดด: SPF, UVA/UVB, ชนิด",
+          "body_md": "**รังสี UV:** **UVB** (290–320 nm) → ผิวไหม้ (sunBurn) และมะเร็งผิวหนัง; **UVA** (320–400 nm) → ผิวคล้ำ/แก่ (Aging) และทะลุลึกกว่า\n\n**SPF (Sun Protection Factor):** วัดการป้องกัน **UVB** เป็นหลัก\n- SPF 30 กัน UVB ~97%, SPF 50 ~98% — แนะนำ **SPF ≥ 30**\n- ป้องกัน UVA: เลือก **\"broad spectrum\"** (หรือมี PA+++)\n\n**ชนิดสารกันแดด:**\n- **Physical/mineral (zinc oxide, titanium dioxide):** สะท้อน/กระจายแสง, ออกฤทธิ์ทันที, อ่อนโยน เหมาะเด็ก/ผิวแพ้ง่าย\n- **Chemical/organic (avobenzone, octocrylene, oxybenzone):** ดูดซับ UV; oxybenzone อาจระคาย/แพ้"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "การให้คำปรึกษาการใช้ครีมกันแดด",
+          "body_md": "- เลือก **broad-spectrum, SPF ≥ 30**, กันน้ำถ้าทำกิจกรรมเหงื่อออก/ว่ายน้ำ\n- ทา **ปริมาณพอเพียง:** ทั้งตัวผู้ใหญ่ ~ **2 mg/cm² ≈ 1 ออนซ์ (ช้อนโต๊ะ ~1 ช้อน สำหรับใบหน้า+คอ ~½ ช้อนชา)**\n- ทา **15–30 นาทีก่อนออกแดด** และ **ทาซ้ำทุก 2 ชั่วโมง** หรือหลังว่ายน้ำ/เช็ดเหงื่อ\n- ใช้ร่วมมาตรการอื่น: หลีกเลี่ยงแดด 10.00–16.00, สวมหมวก/แว่น/เสื้อแขนยาว\n- ทุกวันแม้มีเมฆ (UVA ทะลุเมฆ/กระจก); ทั้งเด็ก >6 เดือนและผู้ใหญ่; ทารก <6 เดือนเน้นหลบแดด/เสื้อผ้า\n- เน้นย้ำในผู้ใช้ยาไวแสง (doxycycline, retinoid, thiazide, isotretinoin)"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำยาไวแสง: \"TQ-STAR\" และ SCAR ที่ต้องหยุดยา",
+          "body_md": "**ยาไวแสง (photosensitizers):**\n**T**etracyclines (doxycycline)\n**Q**uinolones (fluoroquinolones)\n**S**ulfonamides + **S**t. John's wort\n**T**hiazides (HCTZ)\n**A**miodarone\n**R**etinoids + coal tar/psoralen\n\n**ผื่นแพ้ยารุนแรง (หยุดยาทันที):** **SJS/TEN, DRESS, AGEP** — สัญญาณ: เยื่อบุเป็นแผล, ผิวลอก, ไข้, Nikolsky บวก, eosinophilia\n\nจำ **UVB = Burn, UVA = Aging**; กันแดด **broad-spectrum SPF ≥30 ทาซ้ำทุก 2 ชม.**"
         }
       ]
     }

@@ -1,30 +1,457 @@
 {
   "subject": "Renal",
-  "unit": { "title_th": "ไต/ทางเดินปัสสาวะ", "description_th": "การปรับขนาดยาตามการทำงานของไตและยาที่เป็นพิษต่อไต", "icon": "🫘" },
+  "unit": {
+    "title_th": "ระบบไตและทางเดินปัสสาวะ",
+    "description_th": "คอร์สครบวงจรสำหรับสอบใบประกอบวิชาชีพเภสัชกรรม ครอบคลุมการแบ่งระยะ CKD และ AKI การปรับขนาดยาตามการทำงานของไต ยาที่เป็นพิษต่อไต CKD-MBD ภาวะซีดจาก CKD ความผิดปกติของเกลือแร่และกรด-ด่าง ยาขับปัสสาวะ และการให้ยาในผู้ป่วยล้างไต ตามแนวทาง KDIGO",
+    "icon": "🫘"
+  },
   "lessons": [
     {
-      "title_th": "การปรับขนาดยาตามการทำงานของไต",
-      "subtitle_th": "Renal Dose Adjustment",
-      "icon": "⚖️",
-      "est_minutes": 5,
-      "xp_reward": 10,
+      "title_th": "การแบ่งระยะ CKD และ AKI",
+      "subtitle_th": "CKD: eGFR G1–G5, albuminuria A1–A3 / AKI: KDIGO staging",
+      "icon": "🩺",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "CKD",
+        "โรคไตเรื้อรัง",
+        "eGFR",
+        "albuminuria",
+        "KDIGO",
+        "AKI",
+        "ไตวายเฉียบพลัน",
+        "creatinine",
+        "G3a",
+        "ACR"
+      ],
       "cards": [
-        { "card_type": "concept", "title_th": "ประเมินการทำงานของไต", "body_md": "- คำนวณ **CrCl** ด้วยสูตร **Cockcroft-Gault** สำหรับปรับขนาดยา\n- หรือใช้ **eGFR**\n- ยาที่ขับออกทางไตเป็นหลักและมี therapeutic index แคบต้องปรับขนาดตาม CrCl" },
-        { "card_type": "concept", "title_th": "วิธีปรับขนาด", "body_md": "ทำได้ 2 แบบ:\n1. **ลดขนาดยา** ต่อครั้ง\n2. **ยืดระยะห่าง** การให้ยา\n\nบางกรณีใช้ทั้งสองวิธีร่วมกัน ขึ้นกับชนิดยา" },
-        { "card_type": "tip", "title_th": "ยาที่ต้องปรับตามไต", "body_md": "ตัวอย่างยาที่มักต้องปรับ:\n- Aminoglycoside, vancomycin\n- ยาต้านไวรัส (acyclovir)\n- DOAC, LMWH (enoxaparin)\n- Metformin, gabapentin, digoxin" },
-        { "card_type": "warning", "title_th": "ยาที่ห้าม/เลี่ยงในไตเสื่อม", "body_md": "- **NSAID**: ลด GFR ทำไตแย่ลง\n- **Metformin**: เลี่ยงเมื่อ eGFR < 30\n- **Nitrofurantoin**: เลี่ยงเมื่อ CrCl ต่ำ (ได้ผลไม่ดีและเสี่ยง ADR)" }
+        {
+          "card_type": "concept",
+          "title_th": "นิยามโรคไตเรื้อรัง (CKD)",
+          "body_md": "**CKD (Chronic Kidney Disease)** = ความผิดปกติของโครงสร้างหรือการทำงานของไตที่คงอยู่ **นานกว่า 3 เดือน** โดยมีผลต่อสุขภาพ\n\nเข้าเกณฑ์อย่างน้อย 1 ข้อ (นาน >3 เดือน):\n- **eGFR < 60 mL/min/1.73 m²**\n- มีเครื่องหมายความเสียหายของไต: **albuminuria (ACR ≥ 30 mg/g)**, ความผิดปกติของ sediment ปัสสาวะ, ความผิดปกติของเกลือแร่จาก tubule, พยาธิสภาพจากชิ้นเนื้อ, ความผิดปกติทางภาพถ่าย, หรือเคยปลูกถ่ายไต\n\nKDIGO จัดระยะ CKD ตาม **\"CGA\"** = สาเหตุ (Cause) + ระยะ GFR (G) + ระยะ albuminuria (A)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ระยะ GFR: G1–G5",
+          "body_md": "แบ่งตาม **eGFR (mL/min/1.73 m²)**:\n\n| ระยะ | eGFR | ความหมาย |\n|---|---|---|\n| **G1** | ≥ 90 | ปกติหรือสูง |\n| **G2** | 60–89 | ลดลงเล็กน้อย |\n| **G3a** | 45–59 | ลดลงเล็กน้อย-ปานกลาง |\n| **G3b** | 30–44 | ลดลงปานกลาง-มาก |\n| **G4** | 15–29 | ลดลงมาก |\n| **G5** | < 15 | ไตวายระยะสุดท้าย (kidney failure) |\n\nสำคัญ: **G1 และ G2 ต้องมีเครื่องหมายความเสียหายของไตร่วมด้วย** จึงจะวินิจฉัย CKD (เพราะ eGFR ยังปกติ)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ระยะ Albuminuria: A1–A3",
+          "body_md": "วัดด้วย **ACR (Albumin-to-Creatinine Ratio)** จากปัสสาวะ:\n\n| ระยะ | ACR (mg/g) | ACR (mg/mmol) | ความหมาย |\n|---|---|---|---|\n| **A1** | < 30 | < 3 | ปกติ-เพิ่มเล็กน้อย |\n| **A2** | 30–300 | 3–30 | เพิ่มปานกลาง (เดิมเรียก microalbuminuria) |\n| **A3** | > 300 | > 30 | เพิ่มมาก (เดิมเรียก macroalbuminuria) |\n\nAlbuminuria ที่สูง = ความเสี่ยงโรคไตและหัวใจเพิ่มขึ้น แยกจากระดับ eGFR\n\nKDIGO ใช้ heat map สี (เขียว→เหลือง→ส้ม→แดง) รวม G และ A เพื่อประเมินความเสี่ยงและความถี่ในการติดตาม"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "AKI: นิยามตาม KDIGO",
+          "body_md": "**AKI (Acute Kidney Injury)** วินิจฉัยเมื่อเข้าเกณฑ์ข้อใดข้อหนึ่ง:\n- **SCr เพิ่ม ≥ 0.3 mg/dL ภายใน 48 ชั่วโมง** หรือ\n- **SCr เพิ่ม ≥ 1.5 เท่าของ baseline** ภายใน 7 วัน หรือ\n- **ปริมาณปัสสาวะ < 0.5 mL/kg/ชม. นาน 6 ชั่วโมง**\n\nสาเหตุแบ่งเป็น 3 กลุ่ม:\n- **Prerenal**: เลือดไปเลี้ยงไตลดลง (ขาดน้ำ, NSAID, ACEI/ARB)\n- **Intrinsic**: เนื้อไตเสียหาย (ATN, AIN, GN)\n- **Postrenal**: การอุดกั้นทางเดินปัสสาวะ (นิ่ว, BPH)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "AKI Staging: ระยะ 1–3",
+          "body_md": "**KDIGO AKI Staging:**\n\n| Stage | Serum Creatinine | Urine Output |\n|---|---|---|\n| **1** | เพิ่ม 1.5–1.9 เท่า หรือ ≥0.3 mg/dL | < 0.5 mL/kg/ชม. นาน 6–12 ชม. |\n| **2** | เพิ่ม 2.0–2.9 เท่า | < 0.5 mL/kg/ชม. นาน ≥12 ชม. |\n| **3** | เพิ่ม ≥3 เท่า หรือ SCr ≥4 mg/dL หรือ เริ่ม RRT | < 0.3 mL/kg/ชม. นาน ≥24 ชม. หรือ anuria ≥12 ชม. |\n\nใช้ค่าที่ \"แย่ที่สุด\" จากเกณฑ์ SCr หรือ urine output ในการจัด stage"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำสาเหตุ AKI: \"Pre-In-Post\"",
+          "body_md": "**Pre**renal (เลือดไปเลี้ยงไตลด):\n- ขาดน้ำ, เลือดออก, ช็อก, หัวใจล้มเหลว\n- ยา: **NSAID** (หด afferent), **ACEI/ARB** (ขยาย efferent)\n\n**In**trinsic (เนื้อไตเสียหาย):\n- **ATN**: aminoglycoside, contrast, ischemia\n- **AIN**: penicillin, PPI, NSAID (allergic)\n\n**Post**renal (อุดกั้น):\n- นิ่ว, BPH, มะเร็ง, anticholinergic ทำให้ปัสสาวะคั่ง\n\nเคล็ด: prerenal มี **FENa < 1%**, ATN มี **FENa > 2%**"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ข้อควรระวังในการแปลผล eGFR",
+          "body_md": "**eGFR เชื่อถือได้เฉพาะเมื่อการทำงานไตคงที่ (steady state)**\n\n- ใน **AKI** ที่ SCr กำลังเปลี่ยนแปลง → eGFR ไม่แม่นยำ ห้ามใช้ปรับขนาดยาตรง ๆ\n- มวลกล้ามเนื้อมาก/น้อยผิดปกติ (นักกล้าม, ผู้สูงอายุผอม, ตัดแขนขา) → SCr ไม่สะท้อนการทำงานไตจริง\n- หลังกินเนื้อสัตว์มาก หรือใช้ยา trimethoprim/cimetidine → SCr สูงขึ้นโดยที่ GFR ไม่ได้แย่ลงจริง\n- KDIGO 2024 แนะนำใช้สมการ **CKD-EPI 2021 (ไม่ใช้ตัวแปรเชื้อชาติ)** และพิจารณายืนยันด้วย **cystatin C** เมื่อต้องการความแม่นยำ"
+        }
+      ]
+    },
+    {
+      "title_th": "หลักการปรับขนาดยาตามการทำงานของไต",
+      "subtitle_th": "CrCl (Cockcroft–Gault) vs eGFR และเมื่อใดต้องปรับ",
+      "icon": "⚖️",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "Cockcroft-Gault",
+        "CrCl",
+        "การปรับขนาดยา",
+        "renal dose adjustment",
+        "eGFR",
+        "creatinine clearance",
+        "loading dose",
+        "maintenance dose",
+        "IBW",
+        "BSA"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "ทำไมต้องปรับขนาดยาในไตเสื่อม",
+          "body_md": "ไตเป็นอวัยวะหลักในการขับยาและ metabolite ที่ละลายน้ำ เมื่อ GFR ลด:\n- **ยาและ metabolite ที่ออกฤทธิ์สะสม** → เพิ่มความเสี่ยงพิษ\n- การเปลี่ยนแปลงทาง PK อื่น ๆ: ↓ protein binding (uremia), ↑ Vd (บวมน้ำ), การดูดซึมเปลี่ยน\n\n**ยาที่ต้องระวังเป็นพิเศษ** = ขับทางไตเป็นหลัก + มี **therapeutic index แคบ** เช่น aminoglycoside, vancomycin, digoxin, lithium, DOAC, LMWH"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Cockcroft–Gault: สูตรมาตรฐานสำหรับปรับขนาดยา",
+          "body_md": "**CrCl (mL/min) = [(140 − อายุปี) × น้ำหนัก (kg)] / (72 × SCr mg/dL)**\n\n× **0.85 ในเพศหญิง**\n\nจุดสำคัญที่ออกข้อสอบ:\n- ให้ผลเป็น **mL/min (ไม่ปรับ BSA)** — เป็นค่าที่ข้อมูลการปรับยาส่วนใหญ่อ้างอิง\n- ในคนอ้วน ใช้ **adjusted body weight (AdjBW)** หรือ IBW; ในคนผอม/ใต้น้ำหนักมาตรฐาน ใช้ actual BW\n- SCr ต้อง steady state\n- บางสถาบันกำหนด \"round up\" SCr < 1 เป็น 1 ในผู้สูงอายุ (ระวัง overestimate ในรายผอม)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "eGFR vs CrCl: ใช้ตัวไหนเมื่อไหร่",
+          "body_md": "| | **CrCl (Cockcroft–Gault)** | **eGFR (CKD-EPI/MDRD)** |\n|---|---|---|\n| หน่วย | mL/min | mL/min/**1.73 m²** |\n| ใช้เพื่อ | **ปรับขนาดยา** | จัดระยะ CKD |\n| ปรับ BSA | ไม่ | ปรับแล้ว (normalize) |\n\n- ฉลากยา FDA เดิมอ้างอิง **CrCl (Cockcroft–Gault)** เป็นหลัก\n- eGFR ที่รายงานเป็น mL/min/1.73 m² ต้อง **de-index** (× BSA/1.73) ก่อนใช้ปรับยาในผู้ที่ขนาดตัวต่างจากค่าเฉลี่ยมาก\n- ในผู้ป่วยขนาดตัวปกติ ค่าทั้งสองมักใกล้เคียง"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "วิธีปรับ: ลดขนาด vs ยืดระยะห่าง",
+          "body_md": "ปรับได้ 3 แบบตามเป้าหมาย PK/PD ของยา:\n\n1. **ลดขนาดต่อครั้ง (dose reduction)** — เหมาะกับยาที่ต้องการระดับยาคงที่สม่ำเสมอ (time-dependent เช่น vancomycin คุม trough)\n2. **ยืดระยะห่าง (interval extension)** — เหมาะกับยาที่ฤทธิ์ขึ้นกับ peak สูงและมี post-antibiotic effect เช่น **aminoglycoside** (extended-interval dosing)\n3. **ทั้งสองวิธีร่วมกัน**\n\n**Loading dose มักไม่ต้องปรับ** เพราะขึ้นกับ Vd ไม่ใช่ clearance — ลดเฉพาะ maintenance dose"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "ยาที่พบบ่อยและเกณฑ์ปรับตามไต",
+          "body_md": "- **Metformin**: หยุดเมื่อ eGFR < 30; ลดขนาดที่ 30–45\n- **Gabapentin/pregabalin**: ลดขนาดชัดเจนตาม CrCl (ขับทางไต ~100%)\n- **Enoxaparin**: CrCl < 30 → ลดเป็น 1 mg/kg วันละครั้ง\n- **DOAC**: dabigatran/rivaroxaban/apixaban มีเกณฑ์ตาม CrCl และห้ามใน CrCl ต่ำมาก\n- **Digoxin**: ลด maintenance, ติดตามระดับยา\n- **Allopurinol**: เริ่มขนาดต่ำและไตเตรตตาม CrCl\n- **Acyclovir IV, levofloxacin, cefepime**: ปรับชัดเจน"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำตัวแปร Cockcroft–Gault: \"อายุ-น้ำหนัก-Cr-เพศ\"",
+          "body_md": "**\"140 ลบอายุ คูณกิโล หาร 72 คูณ Cr — หญิงคูณ 0.85\"**\n\n- **(140 − Age)** ↑ อายุมาก → CrCl ต่ำลง\n- **× Weight** ↑ ตัวใหญ่ → CrCl สูงขึ้น (ระวังคนอ้วน ใช้ AdjBW)\n- **÷ (72 × SCr)** ↑ SCr → CrCl ต่ำลง\n- **× 0.85 หญิง** มวลกล้ามเนื้อน้อยกว่า\n\nเช็ก unit: ผลเป็น **mL/min** ไม่ใช่ /1.73 m²"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "อย่าปรับยาด้วย eGFR ที่ไม่ steady state",
+          "body_md": "**ใน AKI ที่ SCr กำลังเปลี่ยน — สูตรประมาณ CrCl/eGFR ไม่แม่นยำ**\n\n- SCr ที่กำลังขึ้น = ยังประเมิน GFR สูงเกินจริง → เสี่ยงให้ยา overdose\n- SCr ที่กำลังลง (ฟื้นตัว) = ประเมินต่ำเกินจริง → underdose ยาสำคัญ เช่น antibiotic\n- ในรายวิกฤต/เปลี่ยนแปลงเร็ว ให้ติดตาม SCr และ urine output ใกล้ชิด และพิจารณา TDM\n- ระวัง **round up SCr** ในผู้สูงอายุผอม → อาจ underdose ยา และทำให้รักษาไม่ได้ผล"
+        }
       ]
     },
     {
       "title_th": "ยาที่เป็นพิษต่อไต",
-      "subtitle_th": "Nephrotoxic Drugs",
+      "subtitle_th": "NSAIDs, aminoglycosides, vancomycin, contrast, ACEI/ARB, amphotericin",
       "icon": "☠️",
-      "est_minutes": 5,
-      "xp_reward": 10,
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "nephrotoxic",
+        "ยาพิษต่อไต",
+        "NSAID",
+        "aminoglycoside",
+        "vancomycin",
+        "contrast nephropathy",
+        "ACEI",
+        "amphotericin B",
+        "ATN",
+        "AIN"
+      ],
       "cards": [
-        { "card_type": "concept", "title_th": "กลุ่มยาพิษต่อไตที่ออกข้อสอบบ่อย", "body_md": "- **NSAID**: ลดการไหลเวียนเลือดไต (prerenal/AIN)\n- **Aminoglycoside**: ATN พิษต่อ tubule\n- **Contrast media**: contrast-induced nephropathy\n- **ACEI/ARB**: ลด GFR โดยเฉพาะใน renal artery stenosis\n- **Vancomycin, amphotericin B**" },
-        { "card_type": "mnemonic", "title_th": "จำง่าย: \"NACAV\"", "body_md": "- **N**SAID\n- **A**minoglycoside\n- **C**ontrast\n- **A**CEI/ARB\n- **V**ancomycin\n\nระวังการใช้หลายตัวพร้อมกัน (additive nephrotoxicity)" },
-        { "card_type": "warning", "title_th": "ป้องกัน contrast nephropathy", "body_md": "- **ให้สารน้ำ (IV hydration)** ก่อน-หลังฉีด contrast\n- หยุดยา nephrotoxic อื่นชั่วคราว (NSAID, metformin)\n- ระวังในผู้ป่วยไตเสื่อม เบาหวาน และผู้สูงอายุ" }
+        {
+          "card_type": "concept",
+          "title_th": "NSAIDs: กลไกพิษต่อไต",
+          "body_md": "NSAID ยับยั้ง **COX → ลด prostaglandin** ที่ขยาย afferent arteriole:\n- **Hemodynamic AKI (prerenal)**: ลดเลือดไปเลี้ยง glomerulus → GFR ลด โดยเฉพาะในผู้ขาดน้ำ, สูงอายุ, ใช้ร่วม ACEI/ARB + diuretic (\"triple whammy\")\n- **Acute interstitial nephritis (AIN)**: แพ้ยา\n- **Sodium/water retention**: บวม, ความดันสูง, หัวใจล้มเหลวแย่ลง\n- **Hyperkalemia**: ลด renin–aldosterone\n\nเลี่ยง NSAID ในผู้ป่วย CKD โดยเฉพาะ eGFR < 30 และเลือก paracetamol แทนเมื่อทำได้"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Aminoglycosides: ATN จาก tubule",
+          "body_md": "Gentamicin, amikacin, tobramycin สะสมใน **proximal tubule** → **ATN (non-oliguric)** มักเกิดหลังใช้ 5–10 วัน\n\nปัจจัยเสี่ยง: ขนาดสะสมสูง, ระยะใช้ยานาน, **trough สูง**, ขาดน้ำ, ใช้ร่วม nephrotoxin อื่น\n\nลดความเสี่ยง:\n- **Extended-interval (once-daily) dosing** — ใช้ peak สูง/trough ต่ำ ลดการสะสมใน tubule\n- ติดตามระดับยา (peak/trough) และ SCr\n- ระยะเวลาให้ยาสั้นที่สุด\n- พิษมักกลับคืนได้ (reversible) แต่ ototoxicity อาจถาวร"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Vancomycin และ Amphotericin B",
+          "body_md": "**Vancomycin:**\n- พิษต่อไตสัมพันธ์กับ **AUC สูง / trough สูง (> 15–20)** โดยเฉพาะใช้ร่วม piperacillin-tazobactam หรือ aminoglycoside\n- ปัจจุบันแนะนำ TDM แบบ **AUC/MIC 400–600** เพื่อลดพิษ\n- ติดตาม SCr; ปรับขนาดตาม CrCl\n\n**Amphotericin B:**\n- พิษต่อไตเด่นมาก: **vasoconstriction + tubular damage**, สูญเสีย **K⁺ และ Mg²⁺** (hypokalemia, hypomagnesemia), RTA, polyuria\n- ลดความเสี่ยง: **ให้สารน้ำ (sodium loading)** ก่อนให้ยา, ใช้ **liposomal amphotericin** (พิษต่อไตน้อยกว่า conventional)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Contrast-Associated AKI และ ACEI/ARB",
+          "body_md": "**Contrast media (สารทึบรังสีไอโอดีน):**\n- เกิด **CA-AKI** จาก vasoconstriction + พิษต่อ tubule, SCr ขึ้นสูงสุด 48–72 ชม.\n- ป้องกัน: **IV isotonic saline hydration** ก่อน-หลัง, ใช้ปริมาณ contrast น้อยสุด, เลี่ยง nephrotoxin อื่น\n\n**ACEI/ARB:**\n- ขยาย **efferent arteriole** → ลดความดันใน glomerulus → SCr อาจขึ้น **≤ 30% ยอมรับได้** (ป้องกันไตระยะยาว)\n- SCr ขึ้น > 30% หรือ K⁺ สูง → ทบทวน/หยุดยา\n- **ห้ามใน bilateral renal artery stenosis** (AKI รุนแรง)\n- เสี่ยง hyperkalemia"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "ลดความเสี่ยงพิษต่อไตในทางปฏิบัติ",
+          "body_md": "- ตรวจ baseline SCr/eGFR และ K⁺ ก่อนเริ่มยากลุ่มเสี่ยง\n- **หลีกเลี่ยงการใช้ nephrotoxin หลายตัวพร้อมกัน** (additive)\n- รักษาปริมาตรน้ำให้เพียงพอ, เลี่ยง hypovolemia\n- ใช้ขนาดต่ำสุดและระยะสั้นสุด\n- พิจารณา TDM (aminoglycoside, vancomycin)\n- ทบทวนรายการยาเป็นระยะ; ระวัง \"triple whammy\" = **ACEI/ARB + diuretic + NSAID**"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำยาพิษต่อไต: \"NAVAAC\"",
+          "body_md": "**N**SAID — hemodynamic + AIN\n**A**minoglycoside — ATN\n**V**ancomycin — AUC/trough สูง\n**A**mphotericin B — tubular + K/Mg loss\n**A**CEI/ARB — ↓GFR ใน RAS, K⁺สูง\n**C**ontrast media — CA-AKI\n\nเสริม: PPI และ penicillin/cephalosporin → **AIN**; cisplatin, calcineurin inhibitor (cyclosporine, tacrolimus) ก็เป็นพิษต่อไต"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "\"Triple Whammy\" ระวังไตวายเฉียบพลัน",
+          "body_md": "**\"Triple Whammy\" = ACEI/ARB + Diuretic + NSAID** ใช้ร่วมกันเพิ่มความเสี่ยง AKI อย่างมาก:\n- **Diuretic** ทำให้ปริมาตรน้ำลด (prerenal)\n- **ACEI/ARB** ขยาย efferent → ลดความดันใน glomerulus\n- **NSAID** หด afferent → ตัดกลไกชดเชยสุดท้าย\n\nผลรวม: GFR ตกฮวบ โดยเฉพาะในผู้สูงอายุที่ขาดน้ำ เป็นไข้ ท้องเสีย\n\nให้คำแนะนำ \"**sick day rules**\": หยุด ACEI/ARB, diuretic, metformin, NSAID ชั่วคราวเมื่อป่วยมีภาวะขาดน้ำ"
+        }
+      ]
+    },
+    {
+      "title_th": "CKD-MBD: ความผิดปกติของแร่ธาตุและกระดูก",
+      "subtitle_th": "Phosphate binders, active vitamin D, calcimimetics",
+      "icon": "🦴",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "CKD-MBD",
+        "phosphate binder",
+        "sevelamer",
+        "lanthanum",
+        "calcium carbonate",
+        "calcitriol",
+        "cinacalcet",
+        "secondary hyperparathyroidism",
+        "PTH",
+        "ฟอสเฟต"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "พยาธิสภาพ CKD-MBD",
+          "body_md": "เมื่อ GFR ลด ไตขับ **ฟอสเฟตได้น้อยลง** และสร้าง **calcitriol (1,25-OH vit D) ลดลง**:\n- **Hyperphosphatemia** → จับ Ca²⁺ → **hypocalcemia**\n- ↓ Calcitriol → ดูดซึม Ca²⁺ จากลำไส้ลดลง → hypocalcemia\n- ↑ **FGF23** และ hypocalcemia + hyperphosphatemia → กระตุ้น **PTH สูง** = **secondary hyperparathyroidism**\n- PTH สูงเรื้อรัง → renal osteodystrophy, หลอดเลือดแข็งจากการสะสมแคลเซียม (vascular calcification)\n\nเป้าหมายการรักษา 3 ขา: **คุมฟอสเฟต — คุม PTH — รักษา Ca²⁺ ให้เหมาะสม**"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Phosphate Binders: กลุ่ม Calcium-based",
+          "body_md": "ให้ **พร้อมอาหาร** เพื่อจับฟอสเฟตในทางเดินอาหาร:\n\n**Calcium-based:**\n- **Calcium carbonate** (จับ P ดีในกรด, ให้ระหว่างมื้อหากต้องเสริม Ca), **calcium acetate** (จับ P ได้ดีกว่า carbonate ต่อ Ca ที่ดูดซึม)\n- ข้อดี: ราคาถูก\n- **ข้อจำกัด: เสี่ยง hypercalcemia และ vascular calcification** — จำกัด elemental calcium รวมจาก binder ≤ ~1,500 mg/วัน\n- เลี่ยงเมื่อมี hypercalcemia หรือ PTH ต่ำ"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Phosphate Binders: Non-calcium",
+          "body_md": "**Sevelamer** (carbonate/HCl):\n- polymer ไม่ดูดซึม ไม่มีแคลเซียม → **ไม่เพิ่ม Ca²⁺**\n- ลด LDL ด้วย; sevelamer carbonate ช่วยเรื่อง metabolic acidosis มากกว่า HCl\n- ADR: ท้องอืด คลื่นไส้\n\n**Lanthanum carbonate:**\n- เคี้ยวพร้อมอาหาร, จับ P ได้ดีแม้ขนาดเม็ดเล็ก, ไม่มีแคลเซียม\n\n**Iron-based** (sucroferric oxyhydroxide, ferric citrate): จับ P และ ferric citrate ยังเสริมธาตุเหล็กได้\n\nกลุ่ม non-calcium เหมาะเมื่อมี **hypercalcemia หรือ vascular calcification**"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Active Vitamin D และ Analogs",
+          "body_md": "ใช้กด PTH ใน secondary hyperparathyroidism:\n- **Calcitriol** (1,25-(OH)₂D₃) — รูปออกฤทธิ์ ไม่ต้องผ่านไตกระตุ้น\n- **Alfacalcidol** (1α-OH-D₃) — ผ่านตับเปลี่ยนเป็น calcitriol\n- **Paricalcitol, doxercalciferol** — vitamin D analog กด PTH โดยเพิ่ม Ca/P น้อยกว่า\n\nกลไก: เพิ่มการดูดซึม Ca, กดการสร้าง/หลั่ง PTH โดยตรง\n\n**ข้อควรระวัง: hypercalcemia และ hyperphosphatemia** — ต้องคุมฟอสเฟตให้ได้ก่อน/ระหว่างใช้ และติดตาม Ca, P, PTH"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Calcimimetics: Cinacalcet / Etelcalcetide",
+          "body_md": "**Calcimimetics** เพิ่มความไวของ **calcium-sensing receptor (CaSR)** ที่ต่อม parathyroid ต่อ Ca²⁺ → **ลดการหลั่ง PTH**\n\n- **Cinacalcet**: รับประทาน, ใช้ใน secondary hyperparathyroidism ของผู้ป่วยฟอกไต\n- **Etelcalcetide**: ฉีดเข้าหลอดเลือดดำหลังฟอกไต (HD)\n\nจุดเด่น: **ลด PTH โดย Ca และ P ลดลงด้วย** (ตรงข้ามกับ active vit D ที่เพิ่ม Ca/P)\n\n**ADR สำคัญ: hypocalcemia** — ติดตาม Ca²⁺ ใกล้ชิด, ระวัง paresthesia, QT prolongation, ชัก; cinacalcet ยังทำให้คลื่นไส้อาเจียน"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำทิศทาง Ca/P/PTH ของยาแต่ละกลุ่ม",
+          "body_md": "**Calcium binder** → P↓, **Ca↑**, PTH↓\n**Sevelamer/Lanthanum** → P↓, Ca→, PTH↓ (ไม่เพิ่ม Ca)\n**Active vit D (calcitriol)** → **Ca↑, P↑**, PTH↓\n**Calcimimetic (cinacalcet)** → **Ca↓, P↓, PTH↓**\n\nเคล็ดเลือกยา:\n- Ca สูงอยู่แล้ว → เลี่ยง Ca binder + active vit D → เลือก **non-calcium binder ± calcimimetic**\n- Ca ต่ำ + PTH สูง → active vit D เหมาะกว่า"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Phosphate binder: เวลาให้ยาและ DDI",
+          "body_md": "- **ต้องให้พร้อมมื้ออาหาร** เพื่อจับฟอสเฟต — ถ้าให้ตอนท้องว่างจะไม่ได้ผลคุมฟอสเฟต\n- binder จับ **ยาอื่นได้ด้วย** → ลดการดูดซึม เช่น levothyroxine, fluoroquinolone, ธาตุเหล็ก/ยาบางชนิด — ให้ห่างกัน 1–2 ชม.\n- **Aluminum-based binder** เลี่ยงใช้ยาว → พิษ aluminum (encephalopathy, osteomalacia)\n- ติดตาม Ca, P, PTH สม่ำเสมอ และระวัง **hypercalcemia** จากการใช้ Ca binder + active vit D ร่วมกัน"
+        }
+      ]
+    },
+    {
+      "title_th": "ภาวะซีดจาก CKD",
+      "subtitle_th": "ESA, iron therapy, เป้าหมายและข้อควรระวัง",
+      "icon": "🩸",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "anemia of CKD",
+        "ESA",
+        "erythropoietin",
+        "epoetin",
+        "darbepoetin",
+        "iron",
+        "ferritin",
+        "TSAT",
+        "Hb target",
+        "ภาวะซีด"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "สาเหตุภาวะซีดใน CKD",
+          "body_md": "สาเหตุหลัก = **ไตสร้าง erythropoietin (EPO) ลดลง** (EPO สร้างจาก peritubular cells ของไต)\n\nปัจจัยร่วม:\n- **การขาดธาตุเหล็ก** (absolute และ functional iron deficiency)\n- การอักเสบเรื้อรัง → **hepcidin สูง** กักธาตุเหล็กไว้ ไม่ปล่อยใช้\n- อายุเม็ดเลือดแดงสั้นลงจาก uremia, การเสียเลือดจากการฟอกไต\n- ขาด folate/B12\n\nลักษณะ: **normocytic normochromic anemia** ประเมินเมื่อ Hb < 12 (หญิง) / < 13 (ชาย) g/dL — แต่ก่อนให้ ESA ต้องแก้สาเหตุอื่นและเติมเหล็กให้พอก่อน"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ประเมินสถานะธาตุเหล็ก: Ferritin และ TSAT",
+          "body_md": "ก่อน/ระหว่างการรักษาซีด ต้องตรวจ iron status:\n- **Ferritin** = แหล่งสะสมเหล็ก (แต่เป็น acute phase reactant สูงขึ้นเมื่ออักเสบ)\n- **TSAT (Transferrin Saturation)** = เหล็กพร้อมใช้\n\nเกณฑ์พิจารณาเสริมเหล็ก (KDIGO) ในผู้ใหญ่ CKD:\n- **TSAT ≤ 30% และ ferritin ≤ 500 ng/mL** → ลองให้เหล็กก่อน (เพื่อเพิ่ม Hb หรือ ลดขนาด ESA)\n\nเป้าหมาย: ทำให้มีเหล็กเพียงพอก่อนเริ่ม/เพิ่ม ESA เพราะ ESA ไม่ได้ผลถ้าขาดเหล็ก"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Iron Therapy: รับประทาน vs ฉีด",
+          "body_md": "**Oral iron** (ferrous sulfate/fumarate/gluconate):\n- ใช้ใน **non-dialysis CKD** เป็นทางเลือกแรกได้\n- ดูดซึมจำกัด (โดยเฉพาะเมื่อ hepcidin สูง), ADR: ท้องผูก คลื่นไส้\n\n**IV iron** (iron sucrose, ferric carboxymaltose, ferric gluconate):\n- เลือกใช้ใน **ผู้ป่วยฟอกไต (HD)** และเมื่อ oral ไม่ได้ผล/ทนไม่ได้\n- ได้ระดับเหล็กเร็วและแน่นอนกว่า\n- ADR: ปฏิกิริยาขณะให้ยา (hypotension, hypersensitivity), **ความเสี่ยงติดเชื้อหากมีการติดเชื้อ active**"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ESA: Erythropoiesis-Stimulating Agents",
+          "body_md": "ทดแทน EPO ที่ไตสร้างได้น้อย:\n- **Epoetin alfa/beta** — ฉีด SC/IV สัปดาห์ละ 1–3 ครั้ง\n- **Darbepoetin alfa** — ดัดแปลงให้ half-life ยาวขึ้น → ให้ห่างขึ้น (ทุก 1–2 สัปดาห์)\n- **Methoxy polyethylene glycol-epoetin beta (CERA)** — ออกฤทธิ์ยาวมาก ให้ทุก 2–4 สัปดาห์\n\nเริ่ม ESA เมื่อ **Hb < 10 g/dL** (หลังแก้เหล็กแล้ว) — ปรับขนาดช้า ๆ ทุก 4 สัปดาห์\n\nหมายเหตุ: ยากลุ่มใหม่ **HIF-PH inhibitors (roxadustat ฯลฯ)** กระตุ้นการสร้าง EPO ภายในร่างกาย ใช้ทางปาก"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "เป้าหมาย Hb: อย่าสูงเกินไป",
+          "body_md": "**เป้าหมาย Hb ขณะใช้ ESA: ประมาณ 10–11.5 g/dL (ไม่เกิน 11.5–12)**\n\n**ห้ามตั้งเป้า Hb > 13 g/dL** — การศึกษา (CHOIR, CREATE, TREAT) พบว่า:\n- เพิ่มความเสี่ยง **stroke, หลอดเลือดหัวใจ, thrombosis (รวม access HD), เสียชีวิต**\n- เพิ่มความดันโลหิต (**HTN เป็น ADR เด่นของ ESA**)\n\nหลักการ: ใช้ ESA ขนาดต่ำสุดที่หลีกเลี่ยงการให้เลือด ไม่ใช่ทำให้ Hb เป็นปกติ\n\nระวัง: ในผู้ป่วยมะเร็ง ESA เพิ่มความเสี่ยง tumor progression"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำลำดับรักษาซีด CKD: \"เติมเหล็กก่อน ESA\"",
+          "body_md": "ลำดับ:\n1. **ตัดสาเหตุอื่น** (เลือดออก, ขาด B12/folate, hemolysis)\n2. **ประเมินและเติมเหล็ก** ให้ TSAT/ferritin พอ (\"Iron first\")\n3. **เริ่ม ESA** เมื่อ Hb < 10 และเหล็กพอแล้ว\n4. **คุมเป้า Hb 10–11.5** ไม่ให้สูงเกิน\n5. **ติดตาม BP** — ESA ทำให้ความดันสูง\n\nเหตุผล: ESA ไม่ทำงานถ้าขาดเหล็ก (hyporesponsiveness)"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ESA hyporesponsiveness: หาสาเหตุ",
+          "body_md": "ถ้าให้ ESA ขนาดสูงแต่ Hb ไม่ขึ้น ให้สงสัย:\n- **ขาดธาตุเหล็ก (พบบ่อยที่สุด)**\n- การอักเสบ/ติดเชื้อเรื้อรัง (hepcidin สูง)\n- ขาด B12/folate, hyperparathyroidism รุนแรง, aluminum toxicity\n- เลือดออกเรื้อรัง, hemolysis, มะเร็ง\n- **PRCA (pure red cell aplasia)** จาก anti-EPO antibody (พบน้อยแต่รุนแรง)\n\nอย่าเพิ่มขนาด ESA สูงเรื่อย ๆ โดยไม่หาสาเหตุ — เสี่ยง ADR หลอดเลือด"
+        }
+      ]
+    },
+    {
+      "title_th": "เกลือแร่และสมดุลกรด-ด่างใน CKD",
+      "subtitle_th": "Hyperkalemia, metabolic acidosis, hyperphosphatemia",
+      "icon": "⚡",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "hyperkalemia",
+        "โพแทสเซียมสูง",
+        "calcium gluconate",
+        "insulin glucose",
+        "sodium bicarbonate",
+        "metabolic acidosis",
+        "patiromer",
+        "SPS",
+        "hyperphosphatemia",
+        "potassium"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "Hyperkalemia: สาเหตุและ ECG",
+          "body_md": "ไตเสื่อมขับ K⁺ ได้น้อย → **hyperkalemia** (K⁺ > 5.0–5.5 mmol/L)\n\nปัจจัยเสริมจากยา: **ACEI/ARB, spironolactone/eplerenone, K-sparing diuretic, NSAID, trimethoprim, heparin, K supplement**\n\n**ECG ที่ต้องจำ (เรียงตามความรุนแรง):**\n- **Peaked T waves** (เริ่มแรก)\n- PR ยาว, P หาย\n- **QRS กว้าง** → sine wave → VF/asystole\n\n**Hyperkalemia ที่มี ECG เปลี่ยน = ภาวะฉุกเฉิน** ต้องรักษาทันที"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "การรักษา Hyperkalemia เฉียบพลัน: 3 ขั้น",
+          "body_md": "**1. Stabilize เยื่อหุ้มเซลล์หัวใจ (เมื่อมี ECG เปลี่ยน):**\n- **Calcium gluconate IV** — ออกฤทธิ์เร็ว, ป้องกัน arrhythmia, **ไม่ลด K⁺** แต่ปกป้องหัวใจ\n\n**2. ดัน K⁺ เข้าเซลล์ (ชั่วคราว):**\n- **Insulin (regular) + glucose** — มาตรฐาน, ระวัง hypoglycemia\n- **Beta-2 agonist (salbutamol) nebulize**\n- **Sodium bicarbonate** — โดยเฉพาะเมื่อมี acidosis ร่วม\n\n**3. ขับ K⁺ ออกจากร่างกาย:**\n- **ยาขับปัสสาวะ (furosemide)** ถ้ายังมีปัสสาวะ\n- **Cation exchanger**: patiromer, sodium zirconium cyclosilicate, SPS\n- **Hemodialysis** — วิธีที่แน่นอนที่สุดในไตวาย"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Potassium Binders: SPS, Patiromer, SZC",
+          "body_md": "ใช้ขับ K⁺ ทางลำไส้ (รักษา chronic หรือ subacute hyperkalemia):\n- **SPS (sodium polystyrene sulfonate)** — เก่า, ออกฤทธิ์ช้า, ระวัง **intestinal necrosis** (โดยเฉพาะกับ sorbitol), เพิ่ม Na load\n- **Patiromer** — จับ K⁺ ในลำไส้, ออกฤทธิ์ช้า (ไม่ใช้ใน emergency), จับ Mg²⁺ ด้วย (hypomagnesemia)\n- **Sodium zirconium cyclosilicate (SZC)** — ออกฤทธิ์เร็วกว่า ใช้ได้กว้าง, เพิ่ม Na\n\nDDI: patiromer/SPS จับยาอื่น → **ให้ห่างยาอื่น ≥ 3 ชม.**"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Metabolic Acidosis ใน CKD",
+          "body_md": "ไตเสื่อมขับกรด (H⁺) และสร้าง bicarbonate ได้น้อย → **metabolic acidosis** (มักเป็น high anion gap เมื่อ CKD รุนแรง)\n\nผลเสียของ acidosis เรื้อรัง:\n- เร่งการสลายกระดูกและกล้ามเนื้อ (catabolism)\n- เร่ง CKD progression, แย่ลงต่อ hyperkalemia\n\n**การรักษา: Sodium bicarbonate (oral)** เมื่อ **serum HCO₃⁻ < 22 mmol/L**\n- เป้าหมายรักษา HCO₃⁻ ≥ 22\n- ระวัง **sodium load → บวมน้ำ, ความดันสูง** ในผู้ป่วยที่มีภาวะน้ำเกิน"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Hyperphosphatemia: การจัดการ",
+          "body_md": "ฟอสเฟตสูงใน CKD (โดยเฉพาะ G4–G5) จัดการด้วย 3 แนวทาง:\n1. **จำกัดฟอสเฟตในอาหาร** (เนื้อสัตว์แปรรูป, นม, น้ำอัดลมสีเข้ม, อาหารที่มี phosphate additive)\n2. **Phosphate binders** ให้พร้อมอาหาร (calcium-based, sevelamer, lanthanum, iron-based)\n3. **เพิ่ม dialysis clearance** ในผู้ป่วยฟอกไต\n\nเป้าหมาย: ลดฟอสเฟตเข้าหาช่วงปกติ — ฟอสเฟตสูงเรื้อรังสัมพันธ์กับ **vascular calcification, secondary hyperparathyroidism และอัตราตายที่สูงขึ้น**"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำลำดับรักษา Hyperkalemia เฉียบพลัน: \"C BIG K Drop\"",
+          "body_md": "**C** — **C**alcium gluconate (ปกป้องหัวใจ ออกเร็วสุด)\n**B** — **B**eta-agonist (salbutamol) ดัน K เข้าเซลล์\n**I** — **I**nsulin + glucose ดัน K เข้าเซลล์\n**G** — **G**lucose (คู่กับ insulin กัน hypoglycemia)\n**K** — **K**ayexalate/binders ขับ K ออก\n**Drop** — **D**ialysis / **D**iuretic ขับออกจริง\n\nจำ: calcium ปกป้อง — insulin/beta/bicarb ย้ายชั่วคราว — binder/diuretic/dialysis ขับออกจริง"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ข้อควรระวังในการรักษา Hyperkalemia",
+          "body_md": "- **Calcium gluconate ไม่ลดระดับ K⁺** — เป็นเพียงการปกป้องหัวใจ ต้องตามด้วยมาตรการลด K⁺ เสมอ\n- ฤทธิ์ insulin/beta-agonist/bicarb เป็นการ **ย้าย K⁺ เข้าเซลล์ชั่วคราว** → K⁺ จะกลับขึ้นได้ ต้องขับออกจริง\n- ระวัง **hypoglycemia** หลังให้ insulin (ติดตามน้ำตาล)\n- **SPS + sorbitol** เสี่ยง colonic necrosis — หลีกเลี่ยงในผู้มีปัญหาลำไส้/post-op\n- ทบทวนและหยุดยาที่ทำให้ K⁺ สูง (ACEI/ARB, K-sparing diuretic, NSAID)"
+        }
+      ]
+    },
+    {
+      "title_th": "ยาขับปัสสาวะ",
+      "subtitle_th": "Loop, thiazide, potassium-sparing — กลไก, การใช้ในไตเสื่อม, resistance",
+      "icon": "💧",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "diuretic",
+        "ยาขับปัสสาวะ",
+        "furosemide",
+        "loop diuretic",
+        "thiazide",
+        "hydrochlorothiazide",
+        "spironolactone",
+        "potassium-sparing",
+        "diuretic resistance",
+        "hypokalemia"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "Loop Diuretics: กลไกและการใช้",
+          "body_md": "**Furosemide, torsemide, bumetanide** ออกฤทธิ์ที่ **thick ascending limb** ของ loop of Henle:\n- ยับยั้ง **Na-K-2Cl cotransporter (NKCC2)** → ขับ Na, K, Cl, น้ำ มาก\n- **ขับปัสสาวะแรงที่สุด (high-ceiling)**\n\nลักษณะเด่น:\n- ออกฤทธิ์ที่ลูเมน ต้องถูกขับเข้าท่อปัสสาวะจึงทำงาน\n- **ยังได้ผลแม้ GFR ต่ำ** (ต่างจาก thiazide) → เป็น diuretic หลักใน CKD/ไตเสื่อม\n- ใช้ใน edema (CHF, ตับแข็ง, nephrotic), ภาวะน้ำเกิน, hyperkalemia, hypercalcemia"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Thiazide Diuretics: กลไกและข้อจำกัดในไตเสื่อม",
+          "body_md": "**Hydrochlorothiazide, chlorthalidone, indapamide, metolazone** ออกฤทธิ์ที่ **distal convoluted tubule**:\n- ยับยั้ง **Na-Cl cotransporter (NCC)**\n- ฤทธิ์ขับปัสสาวะปานกลาง ใช้รักษา **ความดันโลหิตสูง** เป็นหลัก\n\n**ข้อจำกัดสำคัญ: ประสิทธิภาพลดลงเมื่อ eGFR < 30** (ยกเว้น metolazone และ chlorthalidone ยังพอได้ผล)\n- **Chlorthalidone** ออกฤทธิ์นานกว่าและแรงกว่า HCTZ\n- **Metolazone** ใช้เสริม loop ใน diuretic resistance ได้แม้ไตเสื่อม\n\nระวัง: **hyponatremia, hypokalemia, hypercalcemia, hyperuricemia, hyperglycemia**"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Potassium-Sparing Diuretics",
+          "body_md": "ออกฤทธิ์ที่ **collecting duct** → ขับ Na แต่ **เก็บ K⁺** ไว้:\n\n**Aldosterone antagonist (MRA):**\n- **Spironolactone, eplerenone** — ปิดกั้น aldosterone receptor; ใช้ใน CHF, ตับแข็ง, primary hyperaldosteronism, resistant HTN\n- spironolactone → **gynecomastia** (eplerenone selective กว่า เลี่ยงผลนี้)\n\n**ENaC blocker:**\n- **Amiloride, triamterene** — ปิด epithelial Na channel โดยตรง\n\n**ADR เด่น: hyperkalemia** — ระวังใช้ร่วม ACEI/ARB และในไตเสื่อม (มักเลี่ยงเมื่อ eGFR ต่ำ)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "การใช้ยาขับปัสสาวะในไตเสื่อม",
+          "body_md": "- **Loop diuretics เป็นตัวเลือกหลักใน CKD** เพราะยังได้ผลแม้ GFR ต่ำ — แต่ต้อง **เพิ่มขนาด** เพราะการขับยาเข้าท่อลดลงและมี organic acid แข่งขัน\n- **Thiazide เดี่ยวได้ผลไม่ดีเมื่อ eGFR < 30** แต่ใช้ **ร่วมกับ loop (sequential nephron blockade)** เพื่อเสริมฤทธิ์ในรายดื้อยา\n- **K-sparing/MRA: ระวัง hyperkalemia** — โดยทั่วไปเลี่ยงเมื่อ eGFR ต่ำหรือ K⁺ สูง ต้องติดตาม K⁺ และ SCr ใกล้ชิด\n- ติดตามน้ำหนัก, ปริมาณปัสสาวะ, อิเล็กโทรไลต์, การทำงานไต"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "Diuretic Resistance: สาเหตุและวิธีแก้",
+          "body_md": "**Diuretic resistance** = บวมน้ำไม่ลดแม้ให้ยาขนาดมาตรฐาน\n\nสาเหตุ: กินเกลือมาก, การดูดซึมยาลดลง (gut edema), GFR ต่ำ, **braking phenomenon** (distal tubule hypertrophy ดูด Na กลับ), CKD/CHF\n\nแนวทางแก้:\n1. **จำกัดโซเดียม** ในอาหาร\n2. **เพิ่มขนาด loop** ให้ถึง threshold\n3. **ให้บ่อยขึ้นหรือ continuous infusion**\n4. **Sequential nephron blockade**: เพิ่ม thiazide (เช่น metolazone) ก่อน loop 30 นาที\n5. พิจารณาให้ IV เมื่อการดูดซึม oral ไม่แน่นอน"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำตำแหน่งออกฤทธิ์: ไล่ตาม nephron",
+          "body_md": "ไล่ตามท่อไต:\n- **PCT** → acetazolamide (CA inhibitor)\n- **Thick ascending limb** → **Loop** (NKCC2) — แรงสุด\n- **DCT** → **Thiazide** (NCC)\n- **Collecting duct** → **K-sparing** (MRA/ENaC)\n\nจำ ADR โพแทสเซียม:\n- **Loop + Thiazide → K⁺ ต่ำ (hypoKalemia)**\n- **K-sparing → K⁺ สูง (hyperKalemia)**\n\nเคล็ด: \"loop กับ thiazide ทำ K หล่น, sparing เก็บ K ไว้\""
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ADR และข้อควรระวังของยาขับปัสสาวะ",
+          "body_md": "**Loop:**\n- Hypokalemia, hypomagnesemia, hypocalcemia, **hyponatremia, hypovolemia**, metabolic alkalosis\n- **Ototoxicity** (ให้ IV เร็วหรือขนาดสูง, ร่วม aminoglycoside)\n- Hyperuricemia (กระตุ้น gout)\n\n**Thiazide:** hyponatremia (เด่น), hypokalemia, **hyperCa, hyperuricemia, hyperglycemia, dyslipidemia**, แพ้ sulfa\n\n**K-sparing/MRA:** **hyperkalemia** (อันตรายเมื่อร่วม ACEI/ARB/ไตเสื่อม), spironolactone → gynecomastia\n\nติดตามอิเล็กโทรไลต์และการทำงานไตหลังเริ่ม/ปรับขนาด"
+        }
+      ]
+    },
+    {
+      "title_th": "การล้างไตและการกำจัดยา",
+      "subtitle_th": "Dialyzability, dosing ใน HD/PD/CRRT, supplemental dosing",
+      "icon": "🩺",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "dialysis",
+        "การล้างไต",
+        "hemodialysis",
+        "peritoneal dialysis",
+        "CRRT",
+        "dialyzability",
+        "supplemental dose",
+        "protein binding",
+        "volume of distribution",
+        "molecular weight"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "ปัจจัยที่กำหนดว่ายาถูกล้างออกได้หรือไม่",
+          "body_md": "ยาจะถูก **ล้างออกทาง dialysis ได้ดี** เมื่อ:\n- **น้ำหนักโมเลกุลเล็ก** (< ~500 Da สำหรับ HD ทั่วไป; high-flux membrane ล้างได้ใหญ่ขึ้น)\n- **Protein binding ต่ำ** (ยาที่จับโปรตีนสูงล้างออกยาก เพราะ free fraction น้อย)\n- **Volume of distribution เล็ก** (Vd ต่ำ = ยาอยู่ในเลือดมาก ล้างออกง่าย; Vd ใหญ่ = ยาอยู่ในเนื้อเยื่อ ล้างยาก)\n- **Water-soluble** (hydrophilic) มากกว่า lipophilic\n- low protein binding + low Vd + small MW = **ล้างออกได้ดี**"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ตัวอย่างยา: ล้างออกได้ดี vs ไม่ถูกล้าง",
+          "body_md": "**ถูกล้างออกได้ดี (ต้องให้ supplemental dose หลัง HD):**\n- aminoglycosides, vancomycin (high-flux), most beta-lactams, **lithium**, theophylline, levetiracetam, gabapentin, metformin\n\n**ไม่ค่อยถูกล้าง (Vd ใหญ่ หรือ protein binding สูง):**\n- **digoxin** (Vd ใหญ่มาก), **amiodarone**, **warfarin** (protein binding สูง), phenytoin (จับโปรตีนสูง), benzodiazepines, calcium channel blockers\n\nหลักจำ: **Vd ใหญ่หรือจับโปรตีนสูง = dialysis ช่วยไม่ได้** (เช่น พิษ digoxin → ใช้ digoxin-Fab ไม่ใช่ฟอกไต)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Hemodialysis (HD): หลักการให้ยา",
+          "body_md": "HD เป็นแบบ **intermittent** (ทั่วไป ~3–4 ชม. × 3 ครั้ง/สัปดาห์):\n- ยาที่ถูกล้างออกได้ดี → **ให้ supplemental dose หลังฟอก** หรือกำหนดเวลายาให้สัมพันธ์กับรอบฟอก\n- ยาบางตัวให้ **post-dialysis** ในวันที่ฟอก เพื่อหลีกเลี่ยงการสูญเสียยาขณะฟอก\n- **High-flux membrane** กำจัดโมเลกุลกลาง (เช่น vancomycin) ได้มากกว่า low-flux → ต้องเสริมยา\n- พิจารณา TDM ในยา NTI (vancomycin, aminoglycoside, digoxin)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Peritoneal Dialysis (PD) และ CRRT",
+          "body_md": "**PD (Peritoneal Dialysis):**\n- ต่อเนื่อง อ่อนโยน, clearance ต่ำกว่า HD ต่อหน่วยเวลา\n- โดยทั่วไป **ล้างยาออกได้น้อยกว่า HD** → มักไม่ต้อง supplemental dose มากนัก\n- antibiotic บางชนิดให้ **intraperitoneal** ในการรักษา PD peritonitis\n\n**CRRT (Continuous Renal Replacement Therapy):**\n- ใช้ในผู้ป่วยวิกฤต/ไม่เสถียร, ทำต่อเนื่อง 24 ชม.\n- clearance ใกล้เคียง CrCl ~25–50 mL/min ขึ้นกับ effluent rate\n- **ขนาดยา (โดยเฉพาะ antibiotic) มักต้องสูงกว่า intermittent HD** เพราะกำจัดต่อเนื่อง — underdose ทำให้รักษาไม่ได้ผล"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "Supplemental Dosing หลัง HD",
+          "body_md": "หลักการให้ยาเสริมหลังฟอก:\n- ยาที่ถูกล้างออกมาก → **ให้ supplemental dose หลัง HD** เพื่อชดเชยส่วนที่สูญเสีย\n- จัดเวลายา dose ปกติให้ตรงกับ **หลังจบรอบฟอก** ในวันที่ฟอก\n- vancomycin: ให้ตาม level ก่อน/หลังฟอก (high-flux ลด level ได้มาก)\n- aminoglycoside: มักให้หลัง HD\n- ตรวจสอบ drug reference เฉพาะตัวยาเสมอ เพราะ %removal ต่างกัน\n- คำนึงถึงชนิด membrane, ระยะเวลาและ flow ของการฟอก"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำคุณสมบัติยาที่ล้างออกง่าย: \"Small, Free, Tight\"",
+          "body_md": "ยาที่ **ฟอกออกได้ดี** มี:\n- **S**mall molecular weight (โมเลกุลเล็ก)\n- **F**ree (protein binding ต่ำ → free drug มาก)\n- **T**ight distribution = **Vd เล็ก** (อยู่ในเลือด ไม่กระจายเข้าเนื้อเยื่อ)\n\nตรงข้าม: **Big Vd หรือ Bound to protein = ฟอกไม่ออก** (digoxin, warfarin, amiodarone)\n\nเสริม: water-soluble > lipid-soluble ในการถูกล้างออก"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ข้อผิดพลาดที่พบบ่อยในการให้ยาผู้ป่วยฟอกไต",
+          "body_md": "- **ให้ยาที่ถูกล้างออกก่อนฟอก** → สูญเสียยาขณะฟอก ระดับยาต่ำ รักษาไม่ได้ผล (เช่น antibiotic) — ควรให้ **หลัง HD**\n- **Underdose antibiotic ใน CRRT** → CRRT กำจัดยาต่อเนื่องคล้ายไตทำงานปานกลาง ต้องให้ขนาดเพียงพอ\n- ลืมว่า **digoxin/พิษบางอย่างฟอกไม่ออก** → อย่าหวังพึ่ง dialysis ในพิษ digoxin (ใช้ Fab), หรือยา Vd ใหญ่\n- ไม่ทำ TDM ในยา NTI ที่ถูกล้างออก → ปรับขนาดด้วย level จริง\n- ระวังการสะสมของ active metabolite ที่ขับทางไต (เช่น morphine → M6G, meperidine → normeperidine)"
+        }
       ]
     }
   ]

@@ -1,0 +1,458 @@
+{
+  "subject": "PharmCare",
+  "unit": {
+    "title_th": "การบริบาลทางเภสัชกรรม",
+    "description_th": "คอร์สครบวงจรเรื่อง Pharmaceutical care สำหรับสอบใบประกอบวิชาชีพเภสัชกรรม ครอบคลุมปรัชญาและกระบวนการบริบาล (assess–plan–monitor) ปัญหาจากการใช้ยา (DRPs/PCNE) การซักประวัติและทบทวนรายการยา (medication reconciliation) บันทึก SOAP การให้คำปรึกษาและความร่วมมือในการใช้ยา MTM การดูแลประชากรกลุ่มพิเศษ และการติดตามผลลัพธ์การรักษาพร้อมการสื่อสารระหว่างวิชาชีพ (SBAR)",
+    "icon": "🤝"
+  },
+  "lessons": [
+    {
+      "title_th": "แนวคิดและปรัชญาการบริบาลทางเภสัชกรรม",
+      "subtitle_th": "Pharmaceutical care – philosophy, care process, responsibility",
+      "icon": "🤝",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "pharmaceutical care",
+        "การบริบาลทางเภสัชกรรม",
+        "Hepler",
+        "Strand",
+        "care process",
+        "assessment",
+        "care plan",
+        "monitoring",
+        "responsibility",
+        "ผลลัพธ์การรักษา"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "นิยามการบริบาลทางเภสัชกรรม (Pharmaceutical Care)",
+          "body_md": "**Pharmaceutical care** ตามนิยามของ **Hepler & Strand (1990)** คือ:\n\n> \"การให้บริการด้านยาอย่างมีความรับผิดชอบ เพื่อให้ได้ **ผลลัพธ์ที่แน่นอน (definite outcomes)** ซึ่งช่วยพัฒนาคุณภาพชีวิตของผู้ป่วย\"\n\n**ผลลัพธ์ 4 ประการที่มุ่งหวัง:**\n1. หายขาดจากโรค (cure)\n2. กำจัด/ลดอาการ (elimination/reduction of symptoms)\n3. ชะลอหรือหยุดการดำเนินโรค (arresting/slowing disease progression)\n4. ป้องกันโรคหรืออาการ (prevention)\n\nหัวใจสำคัญคือ **ความรับผิดชอบโดยตรง (direct responsibility)** ของเภสัชกรต่อผลลัพธ์การใช้ยาของผู้ป่วย ไม่ใช่เพียงการจ่ายยาให้ถูกต้อง"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ปรัชญาของวิชาชีพ: จากผลิตภัณฑ์สู่ผู้ป่วย",
+          "body_md": "ปรัชญาการบริบาลเปลี่ยนจุดเน้นจาก **product-centered → patient-centered**\n\n| มิติ | Dispensing แบบเดิม | Pharmaceutical Care |\n|---|---|---|\n| จุดเน้น | ตัวยา/ผลิตภัณฑ์ | ผู้ป่วยและผลลัพธ์ |\n| บทบาท | จ่ายยาถูกต้อง | รับผิดชอบผลการรักษา |\n| ความสัมพันธ์ | ครั้งคราว | ต่อเนื่อง (covenant) |\n| ผลลัพธ์ | ส่งมอบยา | คุณภาพชีวิตดีขึ้น |\n\n**Pharmaceutical care** เป็นปรัชญาการปฏิบัติงาน (practice philosophy) ส่วน **MTM** เป็นบริการที่นำปรัชญานี้ไปปฏิบัติจริง"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "กระบวนการบริบาล: Assess – Plan – Monitor",
+          "body_md": "**Pharmacists' Patient Care Process (PPCP)** เป็นวงจรต่อเนื่อง โดยมี **collect** เป็นฐานข้อมูล:\n\n1. **Collect** – รวบรวมข้อมูล (ประวัติยา โรค ค่า lab อาการ)\n2. **Assess** – ประเมินความเหมาะสม ประสิทธิภาพ ความปลอดภัย ความร่วมมือ และระบุ **DRPs**\n3. **Plan** – วางแผนการบริบาล ตั้งเป้าหมายการรักษา (therapeutic goals) ร่วมกับผู้ป่วย\n4. **Implement** – ดำเนินการตามแผน (สั่ง/ปรับยา ให้คำปรึกษา ส่งต่อ)\n5. **Monitor & Follow-up** – ติดตามผลลัพธ์และปรับแผน\n\nกระบวนการนี้ **วนซ้ำต่อเนื่อง (iterative)** ไม่ใช่ทำครั้งเดียวจบ"
+        },
+        {
+          "card_type": "example",
+          "title_th": "ตัวอย่าง: บทบาทเภสัชกรในการบริบาล",
+          "body_md": "**กรณีศึกษา:** คุณสมศรี อายุ 58 ปี เป็นเบาหวานชนิดที่ 2 มารับยาที่ร้านยา HbA1c ล่าสุด 9.2% แม้ได้ metformin 1000 mg วันละ 2 ครั้ง\n\n**การจ่ายยาแบบเดิม:** จ่าย metformin ตามใบสั่งให้ครบถ้วน\n\n**การบริบาลทางเภสัชกรรม:**\n- **Collect/Assess:** ซักพบว่าผู้ป่วยลืมกินมื้อเย็นบ่อย (adherence ~60%) และไม่ทราบเป้าหมาย HbA1c\n- ระบุ **DRP:** ปัญหาความร่วมมือในการใช้ยา → ทำให้ effectiveness ต่ำ\n- **Plan:** ตั้งเป้า HbA1c <7%, ใช้ pill organizer, สอน teach-back\n- **Monitor:** นัดติดตาม adherence และ HbA1c ใน 3 เดือน\n\nเภสัชกร**รับผิดชอบต่อผลลัพธ์** ไม่ใช่แค่ส่งมอบยา"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "ความสัมพันธ์เชิงพันธสัญญา (Therapeutic relationship)",
+          "body_md": "การบริบาลที่ดีต้องสร้าง **therapeutic relationship** กับผู้ป่วย ซึ่งเป็นความสัมพันธ์เชิงพันธสัญญา (covenant):\n\n- เภสัชกรให้คำมั่นว่าจะดูแลผลประโยชน์ของผู้ป่วยเป็นอันดับแรก\n- ผู้ป่วยให้ความไว้วางใจ ให้ข้อมูล และมีส่วนร่วมในการตัดสินใจ (**shared decision-making**)\n\nหลักการสำคัญ:\n- **เคารพในศักดิ์ศรีและสิทธิ** ของผู้ป่วย (patient autonomy)\n- รักษา **ความลับ** (confidentiality)\n- ทำงานเชิงรุก (proactive) ค้นหาและป้องกันปัญหายาก่อนเกิด"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำกระบวนการบริบาล: \"CAP-IM\"",
+          "body_md": "**C**ollect – รวบรวมข้อมูลผู้ป่วยและยา\n**A**ssess – ประเมินและระบุ DRPs\n**P**lan – วางแผน ตั้งเป้าหมายการรักษา\n**I**mplement – ดำเนินการตามแผน\n**M**onitor – ติดตามและปรับแผน (follow-up)\n\nจำง่าย: ต้อง **CAP** หัวก่อน (เก็บข้อมูล–ประเมิน–วางแผน) แล้วจึง **IM**plement & Monitor\n\nวงจรนี้เป็นแกนของทั้ง **PPCP** และ **MTM** และวนซ้ำต่อเนื่อง"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ข้อพึงระวัง: บริบาลไม่ใช่แค่ให้ข้อมูล",
+          "body_md": "ข้อสอบมักหลอกให้สับสนระหว่าง **drug information** กับ **pharmaceutical care**:\n\n- **การให้ข้อมูลยา (drug information)** = ตอบคำถามเรื่องยา ไม่จำเป็นต้องผูกกับผู้ป่วยเฉพาะราย\n- **การบริบาลทางเภสัชกรรม** = ประเมินผู้ป่วยเฉพาะราย ระบุ DRP วางแผน **และรับผิดชอบต่อผลลัพธ์**\n\nสิ่งที่ทำให้เป็น \"care\" คือ:\n1. มี **ความรับผิดชอบโดยตรงต่อผลลัพธ์**\n2. มีการ **ติดตามต่อเนื่อง** (continuity)\n3. มุ่ง **ผลลัพธ์เชิงคลินิก** ของผู้ป่วยรายบุคคล\n\nการจ่ายยาถูกต้องเป็น **necessary แต่ไม่ sufficient** สำหรับการบริบาล"
+        }
+      ]
+    },
+    {
+      "title_th": "ปัญหาจากการใช้ยา (DRPs) และ PCNE",
+      "subtitle_th": "Drug-related problems – indication, effectiveness, safety, adherence",
+      "icon": "🧩",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "DRP",
+        "drug-related problem",
+        "ปัญหาจากการใช้ยา",
+        "PCNE",
+        "indication",
+        "effectiveness",
+        "safety",
+        "adherence",
+        "untreated indication",
+        "adverse drug reaction"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "DRP คืออะไร (นิยาม PCNE)",
+          "body_md": "**Drug-Related Problem (DRP)** ตามนิยาม **PCNE (Pharmaceutical Care Network Europe)**:\n\n> \"เหตุการณ์หรือสถานการณ์ที่เกี่ยวข้องกับการรักษาด้วยยา ซึ่ง **เกิดขึ้นจริงหรืออาจเกิดขึ้น** และรบกวนผลลัพธ์ด้านสุขภาพที่ต้องการ\"\n\nคำสำคัญ: **actual (เกิดแล้ว)** หรือ **potential (มีโอกาสเกิด)** → เภสัชกรต้องป้องกัน potential DRP เชิงรุก\n\nโครงสร้าง PCNE V9 แบ่งเป็น:\n- **Problems (P)** – ปัญหาที่เกิด\n- **Causes (C)** – สาเหตุ\n- **Interventions (I)** – การแก้ไข\n- **Outcomes (O)** – ผลลัพธ์ของการแก้ไข"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "การจำแนก DRP ตาม 4 หมวดหลัก",
+          "body_md": "DRP สามารถจัดกลุ่มตามคำถามเชิงคลินิก 4 ด้าน (สอดคล้องกับแนวคิด Cipolle/Strand และ PCNE):\n\n1. **Indication (ข้อบ่งใช้)**\n   - มีโรคแต่ไม่ได้รับยา (untreated indication)\n   - ได้รับยาโดยไม่มีข้อบ่งใช้ (no indication / unnecessary drug)\n2. **Effectiveness (ประสิทธิผล)**\n   - ยาไม่ได้ผล / เลือกยาไม่เหมาะ\n   - ขนาดยาต่ำเกินไป (subtherapeutic dose)\n3. **Safety (ความปลอดภัย)**\n   - เกิด ADR / อาการไม่พึงประสงค์\n   - ขนาดยาสูงเกินไป / drug interaction\n4. **Adherence (ความร่วมมือ)**\n   - ผู้ป่วยไม่ใช้ยาตามสั่ง"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ตัวอย่าง DRP แต่ละหมวด",
+          "body_md": "**Indication:**\n- ผู้ป่วย post-MI ไม่ได้รับ statin → *untreated indication*\n- ได้ PPI ต่อเนื่องโดยไม่มีข้อบ่งใช้แล้ว → *unnecessary drug*\n\n**Effectiveness:**\n- ใช้ amoxicillin รักษา atypical pneumonia (เชื้อไม่ครอบคลุม) → *wrong drug*\n- levothyroxine ขนาดต่ำ TSH ยังสูง → *subtherapeutic dose*\n\n**Safety:**\n- warfarin + NSAID → เสี่ยงเลือดออก (*interaction*)\n- gentamicin ขนาดสูงในผู้ป่วยไตเสื่อม → *dose too high*\n\n**Adherence:**\n- ไม่ใช้ ICS เพราะกลัวสเตียรอยด์ → *non-adherence*"
+        },
+        {
+          "card_type": "example",
+          "title_th": "ตัวอย่าง: ระบุและจัดหมวด DRP",
+          "body_md": "**กรณีศึกษา:** คุณวิชัย อายุ 65 ปี HTN + เพิ่งวินิจฉัย gout เฉียบพลัน\nยาเดิม: hydrochlorothiazide 25 mg/วัน, enalapril 10 mg/วัน\nวันนี้ได้รับ: indomethacin สำหรับ gout\n\n**DRP ที่เภสัชกรควรระบุ:**\n1. **Safety:** HCTZ เพิ่มกรดยูริก → อาจกระตุ้น gout ซ้ำ (drug-induced)\n2. **Safety:** NSAID (indomethacin) + ACEI + diuretic = **\"triple whammy\"** เสี่ยง acute kidney injury\n3. **Indication:** ยังไม่มี urate-lowering therapy ในระยะยาว (พิจารณาภายหลัง พ้นระยะเฉียบพลัน)\n\n**Intervention:** เสนอเปลี่ยน HCTZ เป็นยาลดความดันชนิดอื่น, ติดตาม SCr/eGFR, ให้คำแนะนำเรื่อง gout"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "เชื่อมโยง Cause กับ Intervention",
+          "body_md": "การระบุ DRP ที่ดีต้องเชื่อม **สาเหตุ (cause)** กับ **การแก้ไข (intervention)** ให้ตรงกัน:\n\n| ปัญหา | สาเหตุที่เป็นไปได้ | Intervention |\n|---|---|---|\n| ยาไม่ได้ผล | dose ต่ำ | ปรับเพิ่มขนาด |\n| ADR | dose สูง/interaction | ลดขนาด/เปลี่ยนยา |\n| Non-adherence | ลืม/กลัว ADR/ค่ายา | pill box/ให้ความรู้/หา generic |\n| Untreated | ขาดยาตาม guideline | เสนอเริ่มยา |\n\nระดับ intervention ตาม PCNE: ระดับผู้สั่งยา (prescriber), ระดับผู้ป่วย (patient), ระดับตัวยา (drug)"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำหมวด DRP: \"I-E-S-A\"",
+          "body_md": "**I** – **I**ndication (ข้อบ่งใช้): มีโรคไม่มียา / มียาไม่มีโรค\n**E** – **E**ffectiveness (ประสิทธิผล): ยาผิด / dose ต่ำเกิน\n**S** – **S**afety (ความปลอดภัย): ADR / dose สูงเกิน / interaction\n**A** – **A**dherence (ความร่วมมือ): ไม่ใช้ยาตามสั่ง\n\nจำลำดับการประเมิน: ถามก่อนว่า **\"ต้องมียาหรือไม่ (I)\" → \"ยาได้ผลไหม (E)\" → \"ปลอดภัยไหม (S)\" → \"ผู้ป่วยใช้จริงไหม (A)\"**\n\nนี่คือลำดับการประเมินยาแต่ละตัวอย่างเป็นระบบ"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "อย่าสับสน DRP, ADR, ADE, ME",
+          "body_md": "ข้อสอบชอบถามความต่างของคำเหล่านี้:\n\n- **DRP** = ปัญหาที่เกี่ยวกับยา (ครอบคลุมกว้างที่สุด รวมทั้ง potential)\n- **ADR (Adverse Drug Reaction)** = ผลไม่พึงประสงค์ที่เกิดจากยาในขนาดปกติ (เป็น DRP ด้าน safety)\n- **ADE (Adverse Drug Event)** = อันตรายใด ๆ ที่เกิดระหว่างใช้ยา (รวม ADR + harm จาก medication error)\n- **ME (Medication Error)** = ความคลาดเคลื่อนที่ป้องกันได้ อาจก่อ ADE หรือไม่ก็ได้\n\nความสัมพันธ์: ME ที่ก่อให้เกิดอันตราย → ADE; ADR เป็น subset ของ ADE; ทั้งหมดเป็น DRP ได้\n\n**ADR ที่ไม่ป้องกันได้ (type A/B) ไม่ใช่ ME** — อย่าจัดเป็นความคลาดเคลื่อน"
+        }
+      ]
+    },
+    {
+      "title_th": "การซักประวัติยาและ Medication Reconciliation",
+      "subtitle_th": "Medication history & reconciliation – admission/transfer/discharge",
+      "icon": "📋",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "medication reconciliation",
+        "การปรับเทียบรายการยา",
+        "medication history",
+        "ซักประวัติยา",
+        "BPMH",
+        "admission",
+        "discharge",
+        "transfer",
+        "discrepancy",
+        "best possible medication history"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "การซักประวัติยา (Medication History Taking)",
+          "body_md": "การซักประวัติยาที่สมบูรณ์ต้องครอบคลุม:\n\n- **ยาตามใบสั่งแพทย์** (ชื่อ ขนาด ความถี่ วิธีใช้ ระยะเวลา)\n- **ยาที่ซื้อเอง (OTC)** และยาแก้ปวด\n- **ผลิตภัณฑ์สมุนไพร/อาหารเสริม** (มัก underreport)\n- **วัคซีน**\n- **ประวัติแพ้ยา/อาหาร** (allergy vs intolerance — ต้องระบุอาการ)\n- ADR ในอดีต, ความร่วมมือในการใช้ยา\n- สังคม: สูบบุหรี่ แอลกอฮอล์ สารเสพติด\n\nใช้ **คำถามปลายเปิด** และตรวจสอบจากหลายแหล่ง (ผู้ป่วย ญาติ ฉลากยา บันทึกเดิม ร้านยา)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "BPMH: Best Possible Medication History",
+          "body_md": "**BPMH** = รายการยาที่ถูกต้องที่สุดเท่าที่จะรวบรวมได้ เป็น **ฐาน (gold standard)** ของการทำ reconciliation\n\nต่างจากการซักประวัติยาทั่วไปตรงที่ BPMH:\n- ใช้ **อย่างน้อย 2 แหล่งข้อมูล** (ผู้ป่วย + แหล่งอื่น เช่น ขวดยา ฐานข้อมูลร้านยา)\n- ตรวจสอบยืนยันแบบเป็นระบบ\n- บันทึกยาที่ใช้ **จริง** (actual use) ไม่ใช่แค่ที่สั่ง\n\nBPMH ที่แม่นยำช่วยลด **discrepancy** และ ME ในจุดเปลี่ยนผ่านการดูแล (care transitions)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Medication Reconciliation คืออะไร",
+          "body_md": "**Medication Reconciliation (การปรับเทียบรายการยา)** = กระบวนการเปรียบเทียบรายการยาที่ผู้ป่วยใช้ กับยาที่สั่งใหม่ ณ จุดเปลี่ยนผ่าน เพื่อหาและแก้ไข **discrepancy**\n\n**5 ขั้นตอน:**\n1. รวบรวม BPMH\n2. ยืนยันความถูกต้องของรายการ\n3. เปรียบเทียบกับยาที่สั่งใหม่ (identify discrepancies)\n4. แก้ไข/สื่อสารกับทีม\n5. บันทึกและส่งต่อรายการที่ถูกต้อง\n\nทำที่ **3 จุดสำคัญ:** admission, transfer, discharge"
+        },
+        {
+          "card_type": "example",
+          "title_th": "ตัวอย่าง: พบ discrepancy ตอน admission",
+          "body_md": "**กรณีศึกษา:** คุณมานี อายุ 72 ปี admit ด้วย pneumonia\nใบ admission order สั่ง: ceftriaxone, paracetamol\n\nเภสัชกรทำ BPMH โดยโทรสอบถามร้านยาและดูขวดยาที่ผู้ป่วยนำมา พบยาเดิม:\n- warfarin 3 mg/วัน (AF)\n- metoprolol 50 mg วันละ 2 ครั้ง\n- levothyroxine 50 mcg/วัน\n\n**Discrepancy:** ยา 3 ตัวนี้ **ไม่ได้ถูกสั่งต่อ** (unintentional omission)\n\n**Intervention:** เภสัชกรแจ้งแพทย์ → warfarin หยุดโดยตั้งใจ (จะให้ enoxaparin แทนช่วง admit) แต่ metoprolol และ levothyroxine ถูกลืม → สั่งต่อ\n\nบทเรียน: ต้องแยก **intentional vs unintentional discrepancy**"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "จุดเปลี่ยนผ่าน 3 จุดที่ต้องทำ Reconciliation",
+          "body_md": "**1. Admission (แรกรับ):**\n- รวบรวม BPMH เทียบกับ admission orders\n- จุดเสี่ยงสูงสุดต่อ omission\n\n**2. Transfer (ย้ายหน่วย/แผนก):**\n- เช่น ICU → ward; ยาที่เริ่มใน ICU อาจไม่จำเป็นต่อ\n- ระวังยาที่ \"หลุด\" หรือ \"ค้าง\" ระหว่างย้าย\n\n**3. Discharge (จำหน่าย):**\n- เทียบยา pre-admission + ยาที่ปรับระหว่างนอน → รายการ discharge ที่ชัดเจน\n- ให้ **discharge counseling** และรายการยาที่อ่านเข้าใจง่าย\n\nจุดเปลี่ยนผ่านคือจุดที่เกิด ME มากที่สุด — reconciliation จึงสำคัญที่สุดที่นี่"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำประเภท Discrepancy: \"ODDC\"",
+          "body_md": "ความคลาดเคลื่อนของรายการยา (medication discrepancies) ที่พบบ่อย:\n\n**O** – **O**mission: ลืมสั่งยาเดิมที่ควรได้ต่อ\n**D** – **D**uplication: สั่งซ้ำ (เช่น brand + generic ตัวเดียวกัน)\n**D** – **D**ose/frequency error: ขนาด/ความถี่ผิดจากเดิม\n**C** – **C**ommission: สั่งยาที่ผู้ป่วยไม่ได้ใช้/ไม่ควรได้\n\nแยกเสมอว่า discrepancy นั้นเป็น:\n- **Intentional documented** (ตั้งใจและบันทึก) — ไม่เป็นปัญหา\n- **Intentional undocumented** หรือ **Unintentional** — ต้องสอบถามและแก้ไข"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ระวังกลุ่มยาที่มักถูกลืมและจุดเสี่ยง",
+          "body_md": "**ยาที่มัก omission ตอน admission/transfer:**\n- ยาตา/ยาสูดพ่น/ยาทา (ไม่ใช่ยากิน → มองข้าม)\n- ยาจิตเวช, ยากันชัก, ยาพาร์กินสัน (หยุดกะทันหันอันตราย)\n- levothyroxine, ยา DM, ยา HTN\n- สมุนไพร/อาหารเสริม (ผู้ป่วยไม่ถือว่าเป็น \"ยา\")\n\n**ข้อควรระวัง:**\n- ผู้ป่วยสูงอายุ/polypharmacy เสี่ยง discrepancy สูง\n- **อย่าเชื่อแหล่งเดียว** — ต้อง cross-check\n- ยาหยุดกะทันหันที่อันตราย: beta-blocker (rebound), clonidine, corticosteroid, benzodiazepine, antiepileptics\n\nการ reconcile ที่ไม่ครบ = สาเหตุสำคัญของ adverse event หลังจำหน่าย"
+        }
+      ]
+    },
+    {
+      "title_th": "บันทึก SOAP และการวางแผนการบริบาล",
+      "subtitle_th": "SOAP documentation, care plan & therapeutic goals",
+      "icon": "📝",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "SOAP",
+        "subjective",
+        "objective",
+        "assessment",
+        "plan",
+        "care plan",
+        "แผนการบริบาล",
+        "therapeutic goal",
+        "เป้าหมายการรักษา",
+        "SMART goal"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "โครงสร้างบันทึก SOAP",
+          "body_md": "**SOAP note** เป็นรูปแบบบันทึกทางคลินิกที่ใช้แพร่หลาย:\n\n- **S – Subjective:** ข้อมูลจากผู้ป่วย/ญาติ ที่วัดไม่ได้โดยตรง เช่น อาการ ความรู้สึก ประวัติ chief complaint\n- **O – Objective:** ข้อมูลที่วัดได้/สังเกตได้ เช่น สัญญาณชีพ ค่า lab ผล imaging รายการยา\n- **A – Assessment:** การประเมินของเภสัชกร — ระบุ **DRPs** ประเมินความเหมาะสมของยา\n- **P – Plan:** แผน — การปรับยา การติดตาม การให้ความรู้ การส่งต่อ\n\nหลักการ: ข้อมูลแต่ละชิ้นต้องอยู่ถูกหมวด และ Plan ต้องสอดคล้องกับ Assessment"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "แยก Subjective vs Objective ให้ถูก",
+          "body_md": "ข้อสอบมักถามให้จัดประเภทข้อมูล:\n\n**Subjective (S) — ผู้ป่วยบอก/รู้สึก:**\n- \"ปวดหัวมา 3 วัน\", \"คลื่นไส้หลังกินยา\"\n- ประวัติแพ้ยา (ที่ผู้ป่วยเล่า)\n- การรับรู้/ความเชื่อเรื่องยา\n\n**Objective (O) — วัด/ตรวจได้:**\n- BP 150/95, HR 88, อุณหภูมิ 38.5°C\n- SCr 1.8 mg/dL, K⁺ 5.5, HbA1c 9%\n- รายการยาปัจจุบัน, น้ำหนัก, ผล culture\n\nเคล็ดลับ: ถ้าเป็น \"ตัวเลขหรือผลตรวจ\" → O; ถ้าเป็น \"คำบอกเล่า/ความรู้สึก\" → S"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "การตั้งเป้าหมายการรักษา (Therapeutic Goals)",
+          "body_md": "เป้าหมายการรักษาที่ดีควรเป็น **SMART**:\n- **S**pecific – เจาะจง\n- **M**easurable – วัดได้\n- **A**chievable – ทำได้จริง\n- **R**elevant – ตรงกับผู้ป่วย\n- **T**ime-bound – มีกรอบเวลา\n\n**ตัวอย่างเป้าหมายที่ดี:**\n- \"ลด BP < 130/80 mmHg ภายใน 3 เดือน\"\n- \"HbA1c < 7% ใน 3–6 เดือน โดยไม่มี hypoglycemia\"\n- \"ผู้ป่วยใช้ ICS ถูกเทคนิคและสม่ำเสมอภายใน 2 สัปดาห์\"\n\nเป้าหมายควรครอบคลุมทั้ง **clinical, humanistic (คุณภาพชีวิต) และ economic outcomes (ECHO model)**"
+        },
+        {
+          "card_type": "example",
+          "title_th": "ตัวอย่าง: เขียน SOAP note",
+          "body_md": "**กรณีศึกษา:** คุณสมพงษ์ อายุ 60 ปี DM type 2 มาตามนัด\n\n**S:** บ่นเวียนหัว ใจสั่นช่วงสาย บางวันเหงื่อออก หิวบ่อย; ใช้ glipizide 10 mg เช้า + metformin\n\n**O:** FBS เช้านี้ 65 mg/dL, HbA1c 6.3%, น้ำหนักลด 2 กก., SCr ปกติ\n\n**A:** อาการเข้าได้กับ **hypoglycemia จาก glipizide** (DRP ด้าน safety — dose สูงเกิน เมื่อเทียบกับ HbA1c ที่ต่ำอยู่แล้ว)\n\n**P:**\n1. เสนอแพทย์ลด glipizide เป็น 5 mg หรือพิจารณาหยุด\n2. สอนผู้ป่วยรู้จักอาการ hypoglycemia และการแก้ไข (น้ำตาล 15 g)\n3. ติดตาม SMBG และนัด HbA1c ใน 3 เดือน (เป้า <7% โดยไม่มี hypo)\n\nสังเกต: P ทุกข้อตอบโจทย์ A"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "ลำดับความสำคัญของ DRP ใน Plan",
+          "body_md": "เมื่อมีหลาย DRP ต้องจัดลำดับความสำคัญใน plan:\n\n1. **อันตรายเฉียบพลัน/คุกคามชีวิตก่อน** เช่น hyperkalemia จากยา, เลือดออกจาก interaction\n2. ปัญหาที่กระทบ effectiveness ของโรคหลัก\n3. ปัญหาที่ป้องกันได้ระยะยาว (preventive)\n\nในแต่ละ plan ควรระบุ:\n- **What** จะทำอะไร (เปลี่ยนยา/ปรับ dose/ให้ความรู้)\n- **Monitoring parameters** ตัวชี้วัดติดตาม + ความถี่\n- **Follow-up** เมื่อไร และใครรับผิดชอบ\n\nเขียนให้ทีมอื่นอ่านแล้วทำต่อได้ทันที (actionable)"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำองค์ประกอบ Plan: \"GMT-E\"",
+          "body_md": "แผนการบริบาล (care plan) ที่ครบควรมี:\n\n**G** – **G**oals: เป้าหมายการรักษา (SMART)\n**M** – **M**edication actions: เริ่ม/หยุด/ปรับ/เปลี่ยนยา\n**T** – **T**herapeutic monitoring: พารามิเตอร์ที่ติดตาม (efficacy + safety) และความถี่\n**E** – **E**ducation & follow-up: ให้ความรู้ผู้ป่วย + นัดติดตาม\n\nแต่ละ DRP ควรมี plan ของตัวเอง และทุก plan ต้อง **ผูกกับ assessment** เสมอ — ห้ามมี plan ลอยที่ไม่มี A รองรับ"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ข้อผิดพลาดที่พบบ่อยในการเขียน SOAP",
+          "body_md": "**ข้อควรระวัง:**\n- **วางข้อมูลผิดหมวด** เช่น เอาค่า lab ไปไว้ใน S หรือเอาคำบ่นของผู้ป่วยไว้ใน O\n- **Assessment ที่เป็นแค่การวินิจฉัยโรค** — เภสัชกรควรประเมิน **ความเหมาะสมของยา/DRP** ไม่ใช่แค่ลอกชื่อโรค\n- **Plan ที่ไม่ actionable** เช่น \"ติดตามอาการ\" โดยไม่ระบุพารามิเตอร์/ความถี่\n- **Plan ไม่สอดคล้องกับ Assessment**\n\nหลักจริยธรรม/กฎหมาย:\n- บันทึกต้อง **ถูกต้อง ครบถ้วน และเป็นความจริง**\n- ห้ามแก้ไขย้อนหลังแบบปกปิด (ต้องมี audit trail)\n- เป็นเอกสารทางกฎหมาย — \"ไม่ได้บันทึก = ถือว่าไม่ได้ทำ\""
+        }
+      ]
+    },
+    {
+      "title_th": "การให้คำปรึกษาและความร่วมมือในการใช้ยา",
+      "subtitle_th": "Counseling skills & adherence – Morisky, teach-back",
+      "icon": "🗣️",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "patient counseling",
+        "การให้คำปรึกษา",
+        "adherence",
+        "ความร่วมมือในการใช้ยา",
+        "teach-back",
+        "Morisky",
+        "MMAS",
+        "Indian Health Service",
+        "open-ended question",
+        "compliance"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "หลักการให้คำปรึกษาด้านยา",
+          "body_md": "การให้คำปรึกษา (patient counseling) มุ่งให้ผู้ป่วยใช้ยาได้ **ถูกต้อง ปลอดภัย และร่วมมือ**\n\nเนื้อหาหลักที่ต้องครอบคลุม (อ้างอิง OBRA '90):\n- ชื่อยาและข้อบ่งใช้ (ใช้ทำอะไร)\n- วิธีและเวลาในการใช้ ขนาด ระยะเวลา\n- ข้อควรระวัง อาหาร/ยาที่ต้องเลี่ยง\n- ADR ที่พบบ่อยและการจัดการ\n- การเก็บรักษา และทำอย่างไรเมื่อลืมยา\n- การติดตามผลและเมื่อไรต้องกลับมาพบ\n\nใช้ภาษาที่เข้าใจง่าย หลีกเลี่ยงศัพท์เทคนิค คำนึงถึง **health literacy** ของผู้ป่วย"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Prime Questions (Indian Health Service)",
+          "body_md": "เทคนิค **3 Prime Questions** ของ Indian Health Service ใช้คำถามปลายเปิดเพื่อประเมินความเข้าใจ (ยาใหม่):\n\n1. **\"แพทย์บอกว่ายานี้ใช้ทำอะไร?\"** (purpose)\n2. **\"แพทย์บอกวิธีใช้ยานี้อย่างไร?\"** (how to use)\n3. **\"แพทย์บอกว่าคาดหวังผลอะไรจากยานี้?\"** (expected results/ADR)\n\nสำหรับ **ยาเดิม (refill)** ใช้ **Show-and-Tell:**\n- \"คุณใช้ยานี้อย่างไร?\"\n- \"คุณใช้ยานี้ไปทำไม?\"\n- \"มีปัญหาอะไรจากการใช้ยาไหม?\"\n\nคำถามปลายเปิดช่วยเผยช่องว่างความเข้าใจมากกว่าคำถามใช่/ไม่ใช่"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Teach-back: ยืนยันความเข้าใจ",
+          "body_md": "**Teach-back method** = ให้ผู้ป่วย **เล่ากลับด้วยภาษาของตัวเอง** ว่าจะใช้ยาอย่างไร เพื่อยืนยันว่าเข้าใจจริง\n\nหลักการ:\n- ไม่ใช่การทดสอบผู้ป่วย แต่เป็นการ **ทดสอบว่าเราอธิบายชัดหรือไม่**\n- ถ้าผู้ป่วยเล่ากลับผิด → อธิบายใหม่ด้วยวิธีอื่น แล้ว teach-back ซ้ำ (closing the loop)\n\nตัวอย่างประโยค:\n> \"เพื่อให้แน่ใจว่าดิฉันอธิบายครบ ช่วยเล่าให้ฟังหน่อยว่าคุณจะกินยานี้อย่างไรเมื่อกลับถึงบ้าน?\"\n\nเป็นวิธีที่มีหลักฐานว่าเพิ่มความเข้าใจและ adherence โดยเฉพาะผู้ป่วย health literacy ต่ำ"
+        },
+        {
+          "card_type": "example",
+          "title_th": "ตัวอย่าง: ประเมินและปรับ adherence",
+          "body_md": "**กรณีศึกษา:** คุณอำพร อายุ 55 ปี HTN BP ยังสูง 158/96 แม้ได้ amlodipine + losartan\n\nเภสัชกรประเมินด้วย **Morisky (MMAS):**\n- ลืมกินยาบ้าง? — \"บ่อย ช่วงทำงานยุ่ง\"\n- หยุดยาเองเมื่อรู้สึกดี? — \"ใช่ เพราะไม่มีอาการ\"\n\n**สาเหตุ non-adherence:** ลืม (unintentional) + ความเชื่อว่าไม่มีอาการ=หาย (intentional)\n\n**Intervention:**\n1. อธิบายว่า HTN มัก \"ไม่มีอาการ\" แต่ทำลายอวัยวะเงียบ ๆ\n2. ตั้งเตือนผ่านมือถือ + ผูกกับกิจวัตร (กินพร้อมแปรงฟันเช้า)\n3. พิจารณายารวมเม็ด (single-pill combination) ลดจำนวนเม็ด\n4. Teach-back และนัดติดตาม BP\n\nต้องแก้ให้ตรงกับ **ชนิดของ non-adherence**"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "Intentional vs Unintentional non-adherence",
+          "body_md": "การแยกชนิดของการไม่ร่วมมือช่วยเลือกวิธีแก้ที่ตรงจุด:\n\n**Unintentional (ไม่ตั้งใจ):**\n- ลืม, สับสนวิธีใช้, ข้อจำกัดทางกาย (เปิดขวดไม่ได้, มองฉลากไม่เห็น)\n- แก้ด้วย: pill organizer, การเตือน, simplify regimen, ฉลากตัวใหญ่\n\n**Intentional (ตั้งใจ):**\n- เชื่อว่าไม่จำเป็น, กลัว ADR, ค่ายาสูง, ไม่เห็นผล\n- แก้ด้วย: ให้ความรู้, จัดการความเชื่อ (motivational interviewing), หา generic/ลดราคา, จัดการ ADR\n\nเครื่องมือวัด adherence: **Morisky (MMAS-8)**, pill count, refill records (MPR/PDC), การถามแบบไม่ตัดสิน"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำเทคนิคสื่อสาร: \"OARS\"",
+          "body_md": "เทคนิคจาก **Motivational Interviewing** เพื่อสร้างความร่วมมือ:\n\n**O** – **O**pen-ended questions: ถามปลายเปิด (\"คุณรู้สึกอย่างไรกับการใช้ยานี้?\")\n**A** – **A**ffirmations: ชื่นชมความพยายาม (\"ดีมากที่คุณพยายามกินให้ตรงเวลา\")\n**R** – **R**eflective listening: สะท้อนสิ่งที่ผู้ป่วยพูด\n**S** – **S**ummarize: สรุปประเด็นร่วมกัน\n\nหลักการ: **ไม่ตัดสิน (non-judgmental)** และให้ผู้ป่วยมีส่วนตัดสินใจ\n\nเริ่มและจบการให้คำปรึกษาด้วยคำถามปลายเปิดเสมอ เพื่อเปิดและปิด loop ความเข้าใจ"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "อุปสรรคและข้อพึงระวังในการให้คำปรึกษา",
+          "body_md": "**อุปสรรคที่พบบ่อย:**\n- **Health literacy ต่ำ** — ใช้ศัพท์เทคนิคมากเกินไป\n- กำแพงภาษา/วัฒนธรรม — ใช้ล่ามที่เป็นกลาง ไม่ใช่ลูกหลานเสมอไป\n- ผู้สูงอายุ: การได้ยิน/สายตา/ความจำ\n- เวลาจำกัด → ตัด teach-back ออก (อันตราย)\n\n**ข้อพึงระวัง:**\n- อย่าถามแบบชี้นำ/ตัดสิน เช่น \"คุณกินยาครบใช่ไหม?\" → ผู้ป่วยมักตอบ \"ใช่\" แม้ไม่จริง\n- ควรถามแบบเปิดและให้ permission: \"หลายคนมีปัญหาลืมกินยาบ้าง คุณเป็นบ้างไหม?\"\n- รักษาความเป็นส่วนตัว (privacy) และความลับ\n- ตรวจสอบความเข้าใจด้วย **teach-back เสมอ** ไม่ใช่แค่ถาม \"เข้าใจไหม?\""
+        }
+      ]
+    },
+    {
+      "title_th": "Medication Therapy Management (MTM)",
+      "subtitle_th": "MTM, comprehensive medication review & interventions",
+      "icon": "🔍",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "MTM",
+        "medication therapy management",
+        "CMR",
+        "comprehensive medication review",
+        "MAP",
+        "PML",
+        "personal medication record",
+        "intervention",
+        "polypharmacy",
+        "deprescribing"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "MTM คืออะไร และองค์ประกอบหลัก",
+          "body_md": "**Medication Therapy Management (MTM)** คือบริการที่เภสัชกรให้แก่ผู้ป่วยเพื่อ optimize การใช้ยาและผลลัพธ์การรักษา เป็นรูปธรรมของปรัชญา pharmaceutical care\n\n**5 องค์ประกอบหลักของ MTM (core elements):**\n1. **MTR** – Medication Therapy Review (ทบทวนการใช้ยา)\n2. **PMR** – Personal Medication Record (บันทึกยาส่วนบุคคล)\n3. **MAP** – Medication-related Action Plan (แผนปฏิบัติของผู้ป่วย)\n4. **Intervention &/or Referral** – การแก้ไข/ส่งต่อ\n5. **Documentation & Follow-up** – บันทึกและติดตาม"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "CMR: Comprehensive Medication Review",
+          "body_md": "**CMR (Comprehensive Medication Review)** คือการทบทวนยา **ทั้งหมด** ของผู้ป่วยอย่างเป็นระบบ (ยาตามใบสั่ง OTC สมุนไพร อาหารเสริม)\n\n**ขั้นตอน:**\n- สัมภาษณ์ผู้ป่วยแบบ interactive (ควรเป็น person-to-person)\n- ประเมินทุกตัวยาตามหลัก **indication–effectiveness–safety–adherence**\n- ระบุและจัดลำดับ DRPs\n- จัดทำ **PMR** และ **MAP** ให้ผู้ป่วย\n\nต่างจาก **TMR (Targeted Medication Review)** ที่เน้นเฉพาะปัญหาใดปัญหาหนึ่ง\n\nCMR ควรทำอย่างน้อยปีละครั้งในผู้ป่วยที่มีคุณสมบัติ (เช่น polypharmacy, หลายโรคเรื้อรัง, ค่ายาสูง)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "PMR และ MAP: เครื่องมือส่งมอบให้ผู้ป่วย",
+          "body_md": "**PMR (Personal Medication Record):**\n- รายการยา **ครบทุกตัว** ที่ผู้ป่วยถือไว้เอง\n- ระบุ ชื่อยา ข้อบ่งใช้ ขนาด วิธีใช้ ผู้สั่ง\n- ใช้ปรับปรุงเมื่อมีการเปลี่ยนแปลง และพกไปทุกครั้งที่พบบุคลากรสุขภาพ\n\n**MAP (Medication-related Action Plan):**\n- รายการสิ่งที่ **ผู้ป่วยต้องลงมือทำ** เขียนด้วยภาษาที่ผู้ป่วยเข้าใจ\n- เน้นเฉพาะเรื่องที่ผู้ป่วยจัดการได้เอง (ไม่ใส่เรื่องที่ต้องให้แพทย์ตัดสิน)\n- มีช่องบันทึกความก้าวหน้า\n\nทั้งสองเป็น **ผลลัพธ์ที่จับต้องได้** ที่ผู้ป่วยได้รับหลัง CMR"
+        },
+        {
+          "card_type": "example",
+          "title_th": "ตัวอย่าง: CMR ในผู้ป่วย polypharmacy",
+          "body_md": "**กรณีศึกษา:** คุณบุญมา อายุ 78 ปี ใช้ยา 11 รายการ (HTN, DM, OA, นอนไม่หลับ, GERD)\n\nเภสัชกรทำ **CMR** พบ:\n- **diazepam** กลางคืน — เสี่ยง falls ในผู้สูงอายุ (Beers list) → เสนอ deprescribe\n- **omeprazole** ใช้ต่อเนื่อง 3 ปีโดยไม่มีข้อบ่งใช้แล้ว → unnecessary drug\n- **glibenclamide** — เสี่ยง hypoglycemia ยาวนานในผู้สูงอายุ → เสนอเปลี่ยน\n- NSAID (OA) + ACEI + diuretic → เสี่ยงไต\n\n**Intervention:** ส่ง recommendation ให้แพทย์ + จัดทำ PMR ฉบับปรับปรุง + MAP (เช่น \"ค่อย ๆ ลด diazepam ตามแพทย์สั่ง, ใช้พาราเซตามอลแทน NSAID\")\n\nนี่คือ deprescribing ที่เป็นหัวใจของ MTM ในผู้สูงอายุ"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "Deprescribing: ลดยาที่ไม่จำเป็นอย่างเป็นระบบ",
+          "body_md": "**Deprescribing** = กระบวนการลด/หยุดยาที่ไม่จำเป็นหรือเสี่ยงมากกว่าประโยชน์ อย่างมีแบบแผนและดูแลใกล้ชิด\n\nขั้นตอน:\n1. ทบทวนยาทั้งหมดและข้อบ่งใช้ปัจจุบัน\n2. ประเมิน harm/benefit ของแต่ละตัว (ใช้ **Beers Criteria**, **STOPP/START**)\n3. จัดลำดับยาที่ควรหยุดก่อน (เสี่ยงสูงสุด)\n4. **ค่อย ๆ ลด (taper)** เมื่อจำเป็น (เช่น benzodiazepine, PPI, beta-blocker)\n5. ติดตามอาการ withdrawal/กลับเป็นซ้ำ\n\nเครื่องมือ: **STOPP** (ยาที่ควรหยุด) / **START** (ยาที่ควรเริ่มแต่ขาด) ใช้คู่กันในผู้สูงอายุ"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำองค์ประกอบ MTM: \"My Patient Makes Informed Decisions\"",
+          "body_md": "5 core elements ของ MTM:\n\n**M**TR – **My** = Medication Therapy Review\n**P**MR – **Patient** = Personal Medication Record\n**M**AP – **Makes** = Medication-related Action Plan\n**I**ntervention/Referral – **Informed** = แก้ไข/ส่งต่อ\n**D**ocumentation/follow-up – **Decisions** = บันทึก & ติดตาม\n\nลำดับการทำงาน: ทบทวนยา (MTR) → สร้างเอกสารให้ผู้ป่วย (PMR, MAP) → แก้ไข/ส่งต่อ → บันทึกและนัดติดตาม"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ข้อพึงระวังในการทำ Intervention",
+          "body_md": "**เมื่อเภสัชกรเสนอ intervention ต่อแพทย์:**\n- ต้องมี **หลักฐาน/เหตุผลทางคลินิก** สนับสนุน (guideline, ค่า lab, interaction)\n- สื่อสารชัดเจน เป็นรูปธรรม และให้ทางเลือก ไม่ใช่แค่ชี้ปัญหา\n- เคารพการตัดสินใจสุดท้ายของผู้สั่งยา แต่บันทึกคำแนะนำไว้เสมอ\n\n**ข้อควรระวัง:**\n- **อย่าหยุดยาเองโดยไม่ปรึกษา** สำหรับยาที่ต้อง taper\n- ระวัง **prescribing cascade** — การเพิ่มยาใหม่เพื่อรักษา ADR ของยาเดิม (เช่น เพิ่มยา HTN เพราะ NSAID ทำ BP สูง) — ควรแก้ที่ต้นเหตุ\n- บันทึก intervention และ **outcome** ทุกครั้งเพื่อแสดงคุณค่าของบริการ (และเพื่อ follow-up)"
+        }
+      ]
+    },
+    {
+      "title_th": "การบริบาลในประชากรกลุ่มพิเศษ",
+      "subtitle_th": "Pregnancy/lactation, pediatrics, geriatrics, renal/hepatic",
+      "icon": "👶",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "pregnancy",
+        "ตั้งครรภ์",
+        "lactation",
+        "ให้นมบุตร",
+        "pediatrics",
+        "geriatrics",
+        "ผู้สูงอายุ",
+        "renal impairment",
+        "hepatic impairment",
+        "Beers criteria"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "การใช้ยาในหญิงตั้งครรภ์",
+          "body_md": "หลักการใช้ยาในหญิงตั้งครรภ์: ใช้เมื่อ **ประโยชน์ > ความเสี่ยง** ขนาดต่ำสุดที่ได้ผล ระยะสั้นที่สุด\n\n**ความเสี่ยงตามไตรมาส:**\n- **ไตรมาส 1:** organogenesis → เสี่ยง teratogen สูงสุด\n- **ไตรมาส 2–3:** ผลต่อการเจริญเติบโตและการทำงานของอวัยวะ\n\n**ยาที่ห้าม (teratogens สำคัญ):**\n- **Warfarin** (fetal warfarin syndrome), **ACEI/ARB** (ไตรมาส 2–3, renal dysgenesis)\n- **Isotretinoin** (รุนแรงมาก), **valproate, phenytoin**\n- **Methotrexate, thalidomide, tetracycline** (ฟัน/กระดูก)\n\nหมายเหตุ: FDA ยกเลิกระบบ A/B/C/D/X แล้ว ใช้ **PLLR (Pregnancy and Lactation Labeling Rule)** เป็นข้อความบรรยายความเสี่ยงแทน"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "การใช้ยาในหญิงให้นมบุตร",
+          "body_md": "**ปัจจัยที่ทำให้ยาผ่านน้ำนมมาก:** โมเลกุลเล็ก, lipophilic สูง, protein binding ต่ำ, half-life ยาว, เป็นเบสอ่อน\n\n**หลักปฏิบัติ:**\n- เลือกยาที่มี **RID (Relative Infant Dose) < 10%** ถือว่าค่อนข้างปลอดภัย\n- เลือกยา half-life สั้น และให้ยา**ทันทีหลังให้นม**เพื่อลด exposure\n- เลือกยาที่มีข้อมูลความปลอดภัยในเด็ก\n\n**ยาที่ควรเลี่ยง/ระวังในให้นม:**\n- **codeine** (CYP2D6 ultra-rapid metabolizer → morphine สูงในทารก), **amiodarone, lithium, ยาเคมีบำบัด, ergotamine, สารกัมมันตรังสี**\n\nแหล่งอ้างอิงมาตรฐาน: **LactMed**"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "การใช้ยาในเด็ก (Pediatrics)",
+          "body_md": "เด็ก **ไม่ใช่ผู้ใหญ่ตัวเล็ก** — PK/PD ต่างกันตามวัย\n\n**หลักการคำนวณขนาดยา:**\n- ส่วนใหญ่ใช้ **mg/kg/วัน** (ระวังไม่ให้เกินขนาดผู้ใหญ่)\n- บางกรณีใช้ **BSA (body surface area)** เช่นยาเคมีบำบัด\n\n**ข้อควรระวังเฉพาะ:**\n- **Chloramphenicol** → gray baby syndrome (ตับ immature)\n- **Tetracycline** < 8 ปี → ฟันเปลี่ยนสี\n- **Aspirin** ในไข้/ไวรัส → **Reye's syndrome** → ห้าม\n- **Codeine** < 12 ปี → ห้าม (FDA)\n- เลือก dosage form ที่เหมาะ (ยาน้ำ, ปริมาตรที่ตวงได้)\n\nNeonates: ตับ/ไต immature → clearance ช้า ต้องปรับขนาดและความถี่"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "การใช้ยาในผู้สูงอายุ (Geriatrics)",
+          "body_md": "การเปลี่ยนแปลงตามวัยที่กระทบ PK/PD:\n\n- **Absorption:** เปลี่ยนแปลงน้อย\n- **Distribution:** ไขมัน↑ น้ำ↓ → ยา lipophilic (เช่น diazepam) สะสมนานขึ้น; albumin↓ → free drug↑\n- **Metabolism:** ตับเลือดไหล↓ → first-pass↓, CYP↓\n- **Excretion:** **GFR ลดลง** → ยาขับทางไตสะสม (ต้องปรับขนาด)\n- **PD:** ไวต่อ CNS depressant และ anticholinergic มากขึ้น\n\nเครื่องมือสำคัญ:\n- **Beers Criteria** — ยาที่ควรเลี่ยงในผู้สูงอายุ (benzodiazepine, ยา anticholinergic แรง, NSAID เรื้อรัง, sulfonylurea long-acting)\n- **STOPP/START** — ยาที่ควรหยุด/ควรเริ่ม"
+        },
+        {
+          "card_type": "example",
+          "title_th": "ตัวอย่าง: ปรับยาในผู้ป่วยไตเสื่อม",
+          "body_md": "**กรณีศึกษา:** คุณสุดา อายุ 70 ปี น้ำหนัก 50 กก. SCr 2.0 mg/dL ติดเชื้อทางเดินปัสสาวะ แพทย์จะให้ ciprofloxacin\n\n**คำนวณ CrCl (Cockcroft-Gault):**\nCrCl = [(140−อายุ) × น้ำหนัก × 0.85(หญิง)] / (72 × SCr)\n= [(140−70) × 50 × 0.85] / (72 × 2.0)\n= 2975 / 144 ≈ **20.7 mL/min**\n\n**Assessment (DRP):** CrCl ต่ำ → ciprofloxacin ขนาดปกติจะสะสม\n\n**Plan:**\n1. ลดขนาด ciprofloxacin ตาม renal dosing (เช่น ยืดช่วงห่าง/ลดขนาด)\n2. หลีกเลี่ยง/ปรับยาขับไตอื่น, ระวัง NSAID\n3. ติดตาม SCr และอาการ ADR\n\nหลักการ: ยาที่ขับทางไตต้องปรับตาม **CrCl/eGFR**"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "การปรับยาในผู้ป่วยตับเสื่อม",
+          "body_md": "ตับเสื่อมไม่มีตัวชี้วัดเดียวเหมือน CrCl ของไต — ใช้ **Child-Pugh score** ประเมินความรุนแรง\n\n**หลักปฏิบัติ:**\n- ระวังยาที่ผ่าน **first-pass metabolism สูง** (bioavailability เพิ่มมากในตับเสื่อม เช่น propranolol, morphine)\n- ระวังยา **prodrug** ที่ต้องอาศัยตับ activate (เช่น clopidogrel, enalapril → อาจได้ผลน้อยลง)\n- หลีกเลี่ยงยา **hepatotoxic** (paracetamol ขนาดสูง, methotrexate, isoniazid)\n- ระวัง **sedative/opioid** → กระตุ้น hepatic encephalopathy\n- ลด protein binding → free drug เพิ่ม (เช่น phenytoin)\n\nติดตาม LFTs, INR, อาการ encephalopathy และภาวะบวมน้ำ"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำยาห้ามในตั้งครรภ์: \"W-A-V-I-T\"",
+          "body_md": "Teratogens สำคัญที่ออกข้อสอบบ่อย:\n\n**W** – **W**arfarin (fetal warfarin syndrome; ใช้ heparin/LMWH แทน)\n**A** – **A**CEI/ARB (renal dysgenesis ไตรมาส 2–3)\n**V** – **V**alproate / phenytoin (neural tube/craniofacial defects)\n**I** – **I**sotretinoin (retinoid embryopathy รุนแรง)\n**T** – **T**etracycline / **T**halidomide / **M**ethotrexate\n\nจำยา**ปลอดภัยกว่า**ที่มักเป็นคำตอบ: paracetamol (ลดไข้/ปวด), methyldopa/labetalol (HTN), insulin (DM), penicillin/cephalosporin (ติดเชื้อ)"
+        }
+      ]
+    },
+    {
+      "title_th": "การติดตามผลลัพธ์และการสื่อสารระหว่างวิชาชีพ",
+      "subtitle_th": "Monitoring outcomes, follow-up & SBAR communication",
+      "icon": "📈",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "monitoring",
+        "การติดตาม",
+        "therapeutic outcome",
+        "follow-up",
+        "SBAR",
+        "inter-professional communication",
+        "การสื่อสารระหว่างวิชาชีพ",
+        "ECHO model",
+        "endpoint",
+        "documentation"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "การติดตามผลลัพธ์การรักษา (Monitoring)",
+          "body_md": "การติดตามต้องวัดทั้ง **ประสิทธิผล (efficacy)** และ **ความปลอดภัย (safety)** ของแต่ละยา\n\n**ตัวอย่าง monitoring parameters:**\n| ยา | Efficacy | Safety |\n|---|---|---|\n| warfarin | INR (2–3) | เลือดออก |\n| metformin | HbA1c, FBS | lactic acidosis, B12 |\n| ACEI | BP | K⁺, SCr, ไอ |\n| statin | LDL | LFTs, อาการกล้ามเนื้อ (CK) |\n| aminoglycoside | culture/อาการ | SCr, การได้ยิน (TDM) |\n\nกำหนด **ความถี่** และ **ค่าเป้าหมาย** ให้ชัด และระบุว่าจะทำอย่างไรหากผลไม่ถึงเป้า/เกิด ADR"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ECHO Model: มิติของผลลัพธ์",
+          "body_md": "ผลลัพธ์ทางการบริบาลประเมินตาม **ECHO model**:\n\n- **E – Economic:** ต้นทุน (ค่ายา ค่ารักษา การนอนโรงพยาบาล) — cost-effectiveness\n- **C – Clinical:** ผลทางคลินิก (โรคหาย ค่า lab อาการ ADR)\n- **HO – Humanistic Outcomes:** คุณภาพชีวิต (QoL), ความพึงพอใจ, การทำกิจวัตร\n\nการบริบาลที่ดีต้องสมดุลทั้งสามมิติ ไม่ใช่มองแค่ตัวเลขทางคลินิก\n\n**Surrogate endpoint** (เช่น LDL, BP, HbA1c) ใช้ติดตามได้เร็ว แต่เป้าหมายสุดท้ายคือ **clinical endpoint** (ลด MI, stroke, การตาย)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "การนัดติดตาม (Follow-up)",
+          "body_md": "**Follow-up** เป็นขั้นปิด loop ของกระบวนการบริบาล (เป็นจุดที่วน assess–plan–monitor ใหม่)\n\n**กำหนดการติดตามขึ้นกับ:**\n- ความเร็วในการออกฤทธิ์ของยา (เช่น BP ปรับ 2–4 สัปดาห์, HbA1c 3 เดือน)\n- ความเสี่ยง ADR (เช่นเริ่ม warfarin → INR ถี่ในช่วงแรก)\n- ความรุนแรงของโรค/ความร่วมมือของผู้ป่วย\n\nในแต่ละครั้งประเมินซ้ำว่า:\n1. ถึงเป้าหมายการรักษาหรือยัง? (effectiveness)\n2. เกิด ADR/ปัญหาใหม่หรือไม่? (safety)\n3. ผู้ป่วยใช้ยาตามแผนหรือไม่? (adherence)\n4. มี DRP ใหม่เกิดขึ้นหรือไม่?\n\nถ้ายังไม่ถึงเป้า → ปรับแผน (step-up/down) แล้วนัดติดตามต่อ"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "SBAR: กรอบการสื่อสารทางคลินิก",
+          "body_md": "**SBAR** เป็นกรอบสื่อสารที่กระชับ ชัดเจน ลดความผิดพลาด ใช้ส่งต่อข้อมูล/ปรึกษาแพทย์:\n\n- **S – Situation:** สถานการณ์/ปัญหาขณะนี้ (ใคร เรื่องอะไร)\n- **B – Background:** ข้อมูลภูมิหลังที่เกี่ยวข้อง (โรค ยา ค่า lab ประวัติแพ้)\n- **A – Assessment:** การประเมินของคุณ (คิดว่าปัญหาคืออะไร)\n- **R – Recommendation:** ข้อเสนอแนะ/สิ่งที่ต้องการ (ชัดเจน เป็นรูปธรรม)\n\nจุดเด่น: บังคับให้ผู้สื่อสาร **มีข้อเสนอ (R)** ไม่ใช่แค่รายงานปัญหา"
+        },
+        {
+          "card_type": "example",
+          "title_th": "ตัวอย่าง: ปรึกษาแพทย์ด้วย SBAR",
+          "body_md": "**กรณีศึกษา:** เภสัชกรพบ interaction ในผู้ป่วยและโทรปรึกษาแพทย์\n\n**S (Situation):** \"สวัสดีค่ะ ดิฉันเภสัชกร โทรเรื่องคุณสมชาย เตียง 5 พบปัญหายาที่อาจอันตรายค่ะ\"\n\n**B (Background):** \"ผู้ป่วยได้ warfarin อยู่เดิม INR 2.5 วันนี้แพทย์สั่ง clarithromycin สำหรับ pneumonia\"\n\n**A (Assessment):** \"clarithromycin ยับยั้ง CYP3A4 และ P-gp จะเพิ่มระดับ warfarin เสี่ยง INR สูงและเลือดออกค่ะ\"\n\n**R (Recommendation):** \"ขอเสนอเปลี่ยนเป็น doxycycline หรือ levofloxacin ที่มี interaction น้อยกว่า หรือถ้าจำเป็นต้องใช้ ขอติดตาม INR ถี่ขึ้นและลดขนาด warfarin ค่ะ\"\n\nสังเกต: จบด้วย **ข้อเสนอที่ชัดเจน**"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "การทำงานเป็นทีมสหวิชาชีพ (Inter-professional)",
+          "body_md": "เภสัชกรเป็นส่วนหนึ่งของ **healthcare team** การสื่อสารที่ดีช่วยให้ผู้ป่วยปลอดภัย\n\nหลักการ:\n- **เคารพบทบาท** ของแต่ละวิชาชีพ (แพทย์ พยาบาล เภสัชกร นักโภชนาการ)\n- สื่อสารด้วยข้อมูลและหลักฐาน ไม่ใช่ความเห็นส่วนตัว\n- ใช้กรอบมาตรฐาน (**SBAR**) ในการส่งต่อ/รายงาน\n- **Closed-loop communication** — ผู้รับสารทวนกลับเพื่อยืนยันความเข้าใจ (โดยเฉพาะคำสั่งทางวาจา/โทรศัพท์)\n- บันทึกการสื่อสาร/คำแนะนำทุกครั้ง\n\nจุดส่งต่อที่สำคัญ: ตอนจำหน่าย ต้องสื่อสารกับผู้ป่วย ร้านยา และทีมปฐมภูมิ (care transition / continuity of care)"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ข้อพึงระวังในการบันทึกและสื่อสาร",
+          "body_md": "**การบันทึก (documentation):**\n- บันทึก intervention, การติดตาม และ outcome ทุกครั้ง — \"ไม่ได้บันทึก = ถือว่าไม่ได้ทำ\"\n- ใช้ภาษาที่เป็นกลาง อิงข้อเท็จจริง ไม่ตำหนิวิชาชีพอื่น\n- รักษา **ความลับ (confidentiality)** ของข้อมูลผู้ป่วย\n\n**ข้อควรระวังในการสื่อสาร:**\n- **คำสั่งทางวาจา/โทรศัพท์** เสี่ยงผิดพลาดสูง → ต้อง **read-back/verify** เสมอ\n- เลี่ยงตัวย่อที่อันตราย (error-prone abbreviations เช่น \"U\" แทน unit, ตามรายการ ISMP)\n- รายงานเหตุการณ์ไม่พึงประสงค์/ME ในระบบ **non-punitive** เพื่อพัฒนาคุณภาพ ไม่ใช่ลงโทษบุคคล\n\nเป้าหมายสูงสุด: ความปลอดภัยของผู้ป่วย (patient safety) และผลลัพธ์การรักษาที่ดีอย่างต่อเนื่อง"
+        }
+      ]
+    }
+  ]
+}

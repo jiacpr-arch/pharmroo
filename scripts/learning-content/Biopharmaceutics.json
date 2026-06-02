@@ -2,55 +2,455 @@
   "subject": "Biopharmaceutics",
   "unit": {
     "title_th": "ชีวเภสัชศาสตร์",
-    "description_th": "BCS classification ชีวประสิทธิผล/ชีวสมมูล และปัจจัยที่มีผลต่อการดูดซึมยา",
-    "icon": "💊"
+    "description_th": "คอร์สครบวงจรสำหรับสอบใบประกอบวิชาชีพเภสัชกรรม ครอบคลุม LADME ชีวประสิทธิผล (bioavailability) การจำแนก BCS การละลายยา (dissolution) ชีวสมมูล (bioequivalence) การเปลี่ยนแปลงครั้งแรกที่ตับ (first-pass) รูปแบบยาออกฤทธิ์นาน (modified-release) ผลของอาหารและการเคลื่อนผ่านทางเดินอาหาร และ IVIVC สำหรับการคัดเลือกผลิตภัณฑ์ยา",
+    "icon": "🧪"
   },
   "lessons": [
     {
-      "title_th": "BCS และชีวประสิทธิผล",
-      "subtitle_th": "การจำแนกตามการละลายและการซึมผ่าน",
+      "title_th": "LADME และชีวประสิทธิผล (Bioavailability)",
+      "subtitle_th": "Liberation–Absorption–Distribution–Metabolism–Excretion, AUC, F absolute vs relative",
       "icon": "🔬",
-      "est_minutes": 6,
-      "xp_reward": 10,
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "LADME",
+        "bioavailability",
+        "ชีวประสิทธิผล",
+        "AUC",
+        "absolute bioavailability",
+        "relative bioavailability",
+        "F",
+        "Cmax",
+        "Tmax",
+        "biopharmaceutics"
+      ],
       "cards": [
         {
           "card_type": "concept",
-          "title_th": "BCS Classification",
-          "body_md": "**Biopharmaceutics Classification System** แบ่งตามการละลาย (solubility) และการซึมผ่าน (permeability)\n- **Class I:** ละลายสูง ซึมผ่านสูง (ดูดซึมดี)\n- **Class II:** ละลายต่ำ ซึมผ่านสูง (dissolution เป็นตัวจำกัด)\n- **Class III:** ละลายสูง ซึมผ่านต่ำ (permeability เป็นตัวจำกัด)\n- **Class IV:** ละลายต่ำ ซึมผ่านต่ำ (ดูดซึมแย่)"
+          "title_th": "ชีวเภสัชศาสตร์คืออะไรและ LADME",
+          "body_md": "**ชีวเภสัชศาสตร์ (Biopharmaceutics)** ศึกษาความสัมพันธ์ระหว่างคุณสมบัติทางเคมีกายภาพของตัวยาและตำรับยา (formulation) กับ **อัตราและปริมาณการเข้าสู่ระบบไหลเวียนเลือด** (systemic availability)\n\n**ลำดับเหตุการณ์หลังให้ยา = LADME:**\n- **L**iberation – การปลดปล่อยตัวยาออกจากตำรับ (แตกตัว + ละลาย)\n- **A**bsorption – การดูดซึมเข้าสู่กระแสเลือด\n- **D**istribution – การกระจายไปยังเนื้อเยื่อ\n- **M**etabolism – การเปลี่ยนแปลงยา (ส่วนใหญ่ที่ตับ)\n- **E**xcretion – การขับยาออก (ไต/น้ำดี)\n\nชีวเภสัชศาสตร์เน้นที่ **L และ A** เป็นหลัก เพราะเป็นขั้นที่ตำรับยาควบคุมได้"
         },
         {
           "card_type": "concept",
-          "title_th": "Bioavailability และ Bioequivalence",
-          "body_md": "**Bioavailability (F):** สัดส่วนและอัตราที่ตัวยาเข้าสู่ระบบไหลเวียนเลือด\n- ยาฉีดเข้าหลอดเลือดดำ F = 100% (อ้างอิง)\n\n**Bioequivalence:** ยา 2 ตำรับให้ค่า AUC, Cmax, Tmax ไม่แตกต่างทางสถิติ\n- เกณฑ์ทั่วไป: 90% CI ของ AUC และ Cmax อยู่ในช่วง **80-125%**"
+          "title_th": "Bioavailability (F): นิยามและองค์ประกอบ",
+          "body_md": "**Bioavailability (F)** = สัดส่วน (extent) และอัตรา (rate) ที่ตัวยาในรูปไม่เปลี่ยนแปลงเข้าสู่ระบบไหลเวียนเลือด\n\n**สององค์ประกอบที่ต้องแยกให้ออก:**\n- **Extent (ปริมาณ)** วัดด้วย **AUC** (area under the curve)\n- **Rate (อัตรา)** วัดด้วย **Cmax** และ **Tmax**\n\nยาฉีดเข้าหลอดเลือดดำ (IV bolus) มี **F = 1 (100%)** เสมอ เพราะเข้าสู่กระแสเลือดทั้งหมดโดยตรง จึงใช้เป็น **มาตรฐานอ้างอิง**\n\nยารับประทานมักมี F < 1 จากการดูดซึมไม่สมบูรณ์และ first-pass metabolism"
         },
         {
-          "card_type": "tip",
-          "title_th": "Biowaiver",
-          "body_md": "**ยา BCS Class I (และบางกรณี Class III)** อาจขอยกเว้นการศึกษา bioequivalence ในคน (biowaiver) ได้ หากตำรับละลายเร็ว (rapidly dissolving)\n\nเพราะการละลายและการซึมผ่านดีอยู่แล้ว จึงพิสูจน์ความเท่าเทียมด้วยข้อมูล in vitro dissolution ได้"
+          "card_type": "concept",
+          "title_th": "Absolute vs Relative Bioavailability",
+          "body_md": "**Absolute bioavailability (F_abs):** เทียบกับ **IV** (มาตรฐาน F=100%)\n\n$$F_{abs} = \\frac{AUC_{oral}/Dose_{oral}}{AUC_{IV}/Dose_{IV}}$$\n\n**Relative bioavailability (F_rel):** เทียบระหว่าง **สองตำรับที่ให้ทางเดียวกัน** (เช่น generic เทียบกับ original, หรือ tablet เทียบกับ suspension) — ไม่ใช้ IV\n\n$$F_{rel} = \\frac{AUC_{test}/Dose_{test}}{AUC_{reference}/Dose_{reference}}$$\n\n| ประเภท | ตัวอ้างอิง | ใช้เมื่อ |\n|---|---|---|\n| Absolute | IV | ต้องการค่า F จริง |\n| Relative | ตำรับอื่น (oral) | เทียบ generic, รูปแบบยา |"
+        },
+        {
+          "card_type": "example",
+          "title_th": "ตัวอย่างคำนวณ Absolute Bioavailability",
+          "body_md": "ยา A ให้ **IV 100 mg** ได้ AUC = 20 mg·hr/L\nและให้ **oral 200 mg** ได้ AUC = 30 mg·hr/L\n\n**คำนวณ F_abs:**\n\n$$F = \\frac{AUC_{oral} \\times Dose_{IV}}{AUC_{IV} \\times Dose_{oral}} = \\frac{30 \\times 100}{20 \\times 200} = \\frac{3000}{4000} = 0.75$$\n\n**F = 75%** หมายความว่ามีตัวยาเพียง 75% ของขนาดที่รับประทานเข้าสู่กระแสเลือด\n\nสังเกต: ต้อง **normalize ด้วยขนาดยา (dose)** เสมอเมื่อขนาดยาทั้งสองทางต่างกัน"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "AUC, Cmax, Tmax: ความหมายของกราฟ",
+          "body_md": "จากกราฟ **ความเข้มข้นยาในพลาสมา–เวลา (concentration–time curve):**\n\n- **AUC** = พื้นที่ใต้กราฟ → สะท้อน **ปริมาณยารวม** ที่เข้าสู่ระบบ (extent of absorption)\n- **Cmax** = ความเข้มข้นสูงสุด → สะท้อน **อัตราการดูดซึม** และความเสี่ยงพิษ\n- **Tmax** = เวลาที่ถึง Cmax → ยิ่งสั้น = ดูดซึมเร็ว\n\nคำนวณ AUC ด้วยกฎ **trapezoidal rule**\n\nความสัมพันธ์ของ extent: $AUC = \\dfrac{F \\times Dose}{CL}$ เมื่อ CL = clearance\n\nดังนั้นถ้า clearance คงที่ AUC แปรผันตรงกับ F × Dose"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำองค์ประกอบ F: \"RATE + EXTENT\"",
+          "body_md": "Bioavailability มี **2 มิติ** ที่ต้องประเมินเสมอ:\n\n**EXTENT (ปริมาณ) → AUC**\n- \"How much\" ตัวยาเข้าสู่ระบบทั้งหมด\n\n**RATE (อัตรา) → Cmax & Tmax**\n- \"How fast\" ตัวยาเข้าสู่ระบบ\n\nจำง่าย: **\"AUC บอกเท่าไร, Cmax/Tmax บอกเร็วแค่ไหน\"**\n\nสองตำรับอาจมี AUC เท่ากัน (extent เท่ากัน) แต่ Cmax/Tmax ต่างกัน → ดูดซึมเร็ว-ช้าต่างกัน เช่น IR เทียบกับ SR"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "อย่าสับสน Absolute กับ Relative",
+          "body_md": "**ข้อผิดพลาดที่พบบ่อยในข้อสอบ:**\n\n- **Absolute** ต้องเทียบกับ **IV เท่านั้น** — ถ้าโจทย์ไม่มีข้อมูล IV จะคำนวณ absolute ไม่ได้\n- **Relative** เทียบกับตำรับ/ทางให้ยาอื่นที่ **ไม่ใช่ IV**\n- ค่า F_rel **อาจมากกว่า 100%** ได้ (ถ้า test ดูดซึมดีกว่า reference) แต่ F_abs ไม่ควรเกิน 100%\n- ต้อง **หารด้วยขนาดยา** เมื่อขนาดยาต่างกัน มิฉะนั้นจะคำนวณผิด\n\nจำ: IV = absolute, oral-vs-oral = relative"
         }
       ]
     },
     {
-      "title_th": "ปัจจัยที่มีผลต่อการดูดซึม",
-      "subtitle_th": "Dissolution, first-pass และอาหาร",
+      "title_th": "การจำแนก BCS (Class I–IV)",
+      "subtitle_th": "Solubility × Permeability, biowaiver และผลต่อการพัฒนาตำรับ",
       "icon": "🧬",
-      "est_minutes": 6,
-      "xp_reward": 10,
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "BCS",
+        "Biopharmaceutics Classification System",
+        "solubility",
+        "permeability",
+        "การละลาย",
+        "การซึมผ่าน",
+        "biowaiver",
+        "Class II",
+        "Class IV",
+        "high solubility"
+      ],
       "cards": [
         {
           "card_type": "concept",
-          "title_th": "Dissolution เป็นขั้นจำกัดอัตรา",
-          "body_md": "สำหรับยารับประทานรูปแบบของแข็ง ขั้นตอนคือ\n**แตกตัว (disintegration) → ละลาย (dissolution) → ดูดซึม (absorption)**\n\nตามสมการ Noyes-Whitney การละลายเพิ่มขึ้นเมื่อ\n- พื้นที่ผิวมาก (ลดขนาดอนุภาค)\n- การละลายของยาสูง\n- คนสารละลายดี (เพิ่มความต่างความเข้มข้น)"
+          "title_th": "BCS คืออะไรและเกณฑ์การแบ่ง",
+          "body_md": "**Biopharmaceutics Classification System (BCS)** จำแนกตัวยาตาม **2 คุณสมบัติ:**\n- **Solubility (การละลายน้ำ)**\n- **Permeability (การซึมผ่านเยื่อบุลำไส้)**\n\n**เกณฑ์ High Solubility:** ขนาดยาสูงสุด (highest dose strength) ละลายได้หมดใน **น้ำ ≤ 250 mL** ที่ช่วง pH 1.0–6.8 (37°C)\n\n**เกณฑ์ High Permeability:** ดูดซึมได้ **≥ 85% (FDA)** ของขนาดที่ให้ (อ้างอิง mass balance หรือเทียบ IV)\n\nตัวยาที่ไม่ผ่านเกณฑ์ = low solubility หรือ low permeability ตามลำดับ"
         },
         {
           "card_type": "concept",
-          "title_th": "First-pass metabolism",
-          "body_md": "ยารับประทานถูกดูดซึมผ่านลำไส้ → ตับ ผ่านระบบ portal vein อาจถูกเปลี่ยนแปลงก่อนเข้าสู่ระบบ → **ลด bioavailability**\n\nหลีกเลี่ยง first-pass ได้โดยให้ทาง:\n- ใต้ลิ้น (sublingual)\n- ทวารหนัก (บางส่วน)\n- ฉีด, ผ่านผิวหนัง (transdermal)"
+          "title_th": "ตาราง 4 Class และตัวจำกัด",
+          "body_md": "| Class | Solubility | Permeability | ตัวจำกัดการดูดซึม |\n|---|---|---|---|\n| **I** | สูง | สูง | ไม่มี (ดูดซึมดี) — gastric emptying |\n| **II** | **ต่ำ** | สูง | **Dissolution** |\n| **III** | สูง | **ต่ำ** | **Permeability** |\n| **IV** | **ต่ำ** | **ต่ำ** | ทั้งคู่ (ดูดซึมแย่) |\n\n**ตัวอย่างยา:**\n- Class I: metoprolol, paracetamol, propranolol\n- Class II: ibuprofen, ketoconazole, glibenclamide, carbamazepine\n- Class III: atenolol, ranitidine, metformin, acyclovir\n- Class IV: furosemide, hydrochlorothiazide, ritonavir"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Class II: Dissolution คือขั้นจำกัด",
+          "body_md": "**Class II (ละลายต่ำ ซึมผ่านสูง):** เมื่อยาละลายแล้วจะดูดซึมได้ดี แต่ **อัตราการละลาย (dissolution) เป็นขั้นจำกัดอัตรา (rate-limiting step)**\n\n**กลยุทธ์เพิ่มการละลายเพื่อเพิ่ม F:**\n- ลดขนาดอนุภาค / micronization / nanocrystal → เพิ่มพื้นที่ผิว\n- ใช้รูป **salt** ที่ละลายดีกว่า\n- ใช้ **solid dispersion / amorphous form**\n- เติม surfactant, complexation (cyclodextrin)\n- self-emulsifying drug delivery system (SEDDS)\n\nสำหรับ Class II มักพบ **IVIVC ดี** เพราะ dissolution ในหลอดทดลองสะท้อนการดูดซึมในร่างกาย"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Class III และ IV: ปัญหาการซึมผ่าน",
+          "body_md": "**Class III (ละลายสูง ซึมผ่านต่ำ):** ยาละลายเร็ว แต่ **permeability เป็นขั้นจำกัด**\n- กลยุทธ์: ใช้ **permeation enhancer**, prodrug, หรือใช้ประโยชน์จาก transporter\n- การดูดซึมไวต่อ **เวลาที่ยาอยู่บริเวณดูดซึม (residence time)**\n\n**Class IV (ละลายต่ำ ซึมผ่านต่ำ):** ปัญหาทั้งคู่ — ดูดซึมทางปากแย่และคาดเดายาก\n- มักเลือกเปลี่ยน **ทางให้ยา** (เช่น IV) หรือออกแบบ delivery system พิเศษ\n- ตัวอย่าง: furosemide, hydrochlorothiazide"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "Biowaiver: ยกเว้นการศึกษาในคน",
+          "body_md": "**Biowaiver** = การอนุมัติชีวสมมูลโดยใช้ข้อมูล **in vitro dissolution** แทนการศึกษาในมนุษย์\n\n**ใครได้ biowaiver (BCS-based):**\n- **Class I** — ถ้าตำรับ **ละลายเร็วมาก (very rapidly dissolving, ≥85% ใน 15 นาที)** หรือ rapidly dissolving (≥85% ใน 30 นาที) และไม่มี excipient ที่กระทบการดูดซึม\n- **Class III** — ได้ในบางกรณี ถ้าละลาย **เร็วมาก (very rapidly, ≥85% ใน 15 นาที)** ทั้ง test และ reference\n\n**Class II และ IV โดยทั่วไป \"ไม่ได้\" biowaiver** เพราะการดูดซึมขึ้นกับ dissolution/permeability ที่คาดเดายาก"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ BCS: \"SP Grid\" และ \"1234 = ดีไปแย่\"",
+          "body_md": "เรียงลำดับจาก S (solubility) ก่อน P (permeability):\n\n- **Class I = S↑ P↑** → ดีที่สุด (\"ดี-ดี\")\n- **Class II = S↓ P↑** → ละลายเป็นปัญหา (\"ละลายแย่\")\n- **Class III = S↑ P↓** → ซึมผ่านเป็นปัญหา (\"ซึมแย่\")\n- **Class IV = S↓ P↓** → แย่ที่สุด (\"แย่-แย่\")\n\nจำคู่: **\"2 ละลาย, 3 ซึม\"** (Class 2 ปัญหาละลาย, Class 3 ปัญหาซึมผ่าน)\n\nBiowaiver ได้ที่ **Class I (และ III บางกรณี)** — ตัวที่ละลายสูง"
         },
         {
           "card_type": "warning",
-          "title_th": "อาหารและการดูดซึม",
-          "body_md": "**อาหารเปลี่ยนการดูดซึมได้มาก**\n\n- นม/ยาลดกรด (Ca, Mg, Al) จับ tetracycline, fluoroquinolone เกิด chelation → ดูดซึมลดลง ต้องเว้นระยะ 2 ชม.\n- อาหารไขมันสูงเพิ่มการดูดซึมยาละลายในไขมัน (เช่น griseofulvin)\n- ตรวจสอบคำแนะนำ \"ก่อน/หลังอาหาร\" เสมอ"
+          "title_th": "ข้อควรระวังเรื่องเกณฑ์และ excipient",
+          "body_md": "**ข้อผิดพลาดที่พบบ่อย:**\n\n- เกณฑ์ high solubility ใช้ **ปริมาตร 250 mL** (ไม่ใช่ค่าอื่น) เทียบกับ **ขนาดยาสูงสุด**\n- ช่วง pH ที่พิจารณาคือ **1.0–6.8** ครอบคลุมทั้งกระเพาะและลำไส้\n- เกณฑ์ high permeability ของ FDA = **≥ 85%** (บางตำราเก่าใช้ 90%)\n\n**ระวัง biowaiver:** แม้เป็น Class I/III หากตำรับมี **excipient ที่เปลี่ยน motility หรือ permeability** (เช่น sorbitol, surfactant ปริมาณมาก) อาจ **ถูกปฏิเสธ** biowaiver\n\nยาที่มี **narrow therapeutic index** มักไม่อนุญาต biowaiver"
+        }
+      ]
+    },
+    {
+      "title_th": "การละลายยาและปัจจัยต่อการดูดซึม",
+      "subtitle_th": "Noyes–Whitney, pH-partition, particle size, salt form, polymorphism",
+      "icon": "💧",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "dissolution",
+        "Noyes-Whitney",
+        "pH-partition",
+        "particle size",
+        "polymorphism",
+        "salt form",
+        "การละลาย",
+        "ขนาดอนุภาค",
+        "surface area",
+        "disintegration"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "ลำดับขั้นการดูดซึมยาเม็ดและขั้นจำกัดอัตรา",
+          "body_md": "ยารับประทานรูปของแข็งต้องผ่านลำดับ:\n\n**ยาเม็ด → แตกตัว (disintegration) → เม็ดเล็ก (granules) → ละลาย (dissolution) → ตัวยาในสารละลาย → ดูดซึม (absorption)**\n\n**ขั้นจำกัดอัตรา (rate-limiting step):**\n- ยาละลายน้ำได้น้อย (Class II) → **dissolution** เป็นขั้นจำกัด\n- ยาละลายดี (Class I/III) → **gastric emptying / permeability** เป็นขั้นจำกัด\n\nสำหรับยาส่วนใหญ่ที่ปัญหา การ **เพิ่มอัตราการละลาย** คือกุญแจเพิ่มชีวประสิทธิผล"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "สมการ Noyes–Whitney",
+          "body_md": "อัตราการละลายอธิบายด้วย **สมการ Noyes–Whitney:**\n\n$$\\frac{dC}{dt} = \\frac{D \\cdot A \\cdot (C_s - C)}{h}$$\n\n- **D** = diffusion coefficient\n- **A** = พื้นที่ผิวสัมผัส (surface area)\n- **C_s** = ความเข้มข้นอิ่มตัว (saturation solubility) ที่ผิวยา\n- **C** = ความเข้มข้นในสารละลายรวม (bulk)\n- **h** = ความหนาของ diffusion layer\n\n**อัตราการละลายเพิ่มขึ้นเมื่อ:**\n- เพิ่มพื้นที่ผิว A (ลดขนาดอนุภาค)\n- เพิ่ม C_s (เปลี่ยน salt/polymorph, เพิ่มอุณหภูมิ)\n- เพิ่ม (C_s − C) คือคน/รักษา sink condition\n- ลด h (เพิ่มการกวน/agitation)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ทฤษฎี pH-Partition Hypothesis",
+          "body_md": "**pH-partition hypothesis:** เยื่อบุเซลล์ดูดซึมเฉพาะ **รูปไม่แตกตัว (unionized, lipophilic)** ผ่าน passive diffusion ได้ดี ส่วนรูปแตกตัว (ionized) ผ่านยาก\n\nสัดส่วน ionized/unionized คำนวณจาก **Henderson–Hasselbalch:**\n- กรดอ่อน: $pH = pKa + \\log\\dfrac{[A^-]}{[HA]}$\n- เบสอ่อน: $pH = pKa + \\log\\dfrac{[B]}{[BH^+]}$\n\n**สรุปกฎ:**\n- **กรดอ่อน** ดูดซึมดีใน **กระเพาะ (pH ต่ำ)** เพราะ unionized มาก\n- **เบสอ่อน** ดูดซึมดีใน **ลำไส้ (pH สูงกว่า)** เพราะ unionized มาก\n\nแต่ในความจริง **ลำไส้เล็กดูดซึมยาส่วนใหญ่** เพราะพื้นที่ผิวมหาศาล (villi/microvilli)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Polymorphism, Salt Form และ Hydrate",
+          "body_md": "คุณสมบัติของแข็งมีผลต่อการละลายและ F:\n\n- **Polymorphism:** ผลึกต่างรูป (form) มีพลังงานต่างกัน — **amorphous > metastable > stable** ในด้านการละลาย แต่ amorphous อาจไม่เสถียร (เปลี่ยนกลับเมื่อเก็บนาน)\n- **Salt form:** เปลี่ยนเป็นเกลือ (เช่น sodium, hydrochloride) เพิ่ม C_s — เช่น penicillin salt ละลายดีกว่า acid form\n- **Hydrate vs anhydrous:** โดยทั่วไป **anhydrous ละลายเร็วกว่า hydrate** (เช่น ampicillin anhydrous > trihydrate)\n\n**คดีคลาสสิก:** chloramphenicol palmitate รูป polymorph B ออกฤทธิ์ดี แต่รูป A แทบไม่ดูดซึม"
+        },
+        {
+          "card_type": "example",
+          "title_th": "ตัวอย่าง: ขนาดอนุภาคและ griseofulvin",
+          "body_md": "**Griseofulvin** เป็นยา **Class II** (ละลายต่ำ ซึมผ่านสูง) — การลดขนาดอนุภาคเพิ่ม F ได้ชัดเจน\n\n- **Microsize griseofulvin** ต้องใช้ขนาด ~500 mg\n- **Ultramicrosize griseofulvin** ใช้เพียง ~330–375 mg ให้ผลเทียบเท่า\n\nเพราะอนุภาคเล็กลง → **พื้นที่ผิว A เพิ่ม** → dissolution เร็วขึ้น (ตาม Noyes–Whitney) → ดูดซึมมากขึ้น\n\nอีกตัวอย่าง: digoxin, nitrofurantoin (macrocrystalline) ก็เป็นยาที่ขนาดอนุภาคมีผลต่อ F และความปลอดภัย"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำเพิ่ม dissolution: \"SSAP\"",
+          "body_md": "ปัจจัยที่ **เพิ่มอัตราการละลาย** (ตาม Noyes–Whitney):\n\n**S**urface area ↑ — ลดขนาดอนุภาค (micronize)\n**S**olubility ↑ (C_s) — เปลี่ยน salt, amorphous/metastable polymorph, anhydrous\n**A**gitation ↑ — ลด diffusion layer h\n**P**article wetting — เติม surfactant ลดแรงตึงผิว\n\nจำกรด-เบส: **\"กรดชอบกระเพาะ เบสชอบลำไส้\"** (unionized ดูดซึมดี)"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ระวัง: ตำรับเปลี่ยน → F เปลี่ยน",
+          "body_md": "**การเปลี่ยนแปลงตำรับเล็กน้อยอาจเปลี่ยน F อย่างมีนัยสำคัญ โดยเฉพาะยา narrow TI:**\n\n- เปลี่ยน polymorph ระหว่างเก็บ → ละลายช้าลง → **F ลดลง** (เช่นกรณีคลาสสิก phenytoin/digoxin ในอดีต)\n- amorphous form อาจ **เปลี่ยนกลับเป็น crystalline** ระหว่างอายุยา → ฤทธิ์ลดลง\n- excipient (เช่นการเปลี่ยน filler จาก calcium sulfate → lactose ในคดี phenytoin ออสเตรเลีย) ทำให้เกิด **toxicity**\n\nดังนั้นการเปลี่ยน supplier/ตำรับยา narrow-TI **ต้องพิสูจน์ bioequivalence ใหม่เสมอ**"
+        }
+      ]
+    },
+    {
+      "title_th": "ชีวสมมูลและการใช้ยาทดแทน (Bioequivalence)",
+      "subtitle_th": "Cmax, Tmax, AUC, 90% CI ภายใน 80–125%, crossover design",
+      "icon": "⚖️",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "bioequivalence",
+        "ชีวสมมูล",
+        "90% CI",
+        "80-125%",
+        "Cmax",
+        "AUC",
+        "generic substitution",
+        "crossover",
+        "narrow therapeutic index",
+        "reference product"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "นิยาม Bioequivalence",
+          "body_md": "**Bioequivalence (BE):** ผลิตภัณฑ์ยา 2 ตำรับ (เช่น generic เทียบ reference/innovator) ที่มี **อัตราและปริมาณการดูดซึม (rate & extent) ไม่แตกต่างกันอย่างมีนัยสำคัญ** เมื่อให้ในขนาดยาเท่ากันภายใต้เงื่อนไขเดียวกัน\n\n**คำที่ต้องแยก:**\n- **Pharmaceutical equivalent:** มีตัวยาสำคัญ ขนาด รูปแบบ ทางให้เหมือนกัน (ไม่รับประกัน F เท่ากัน)\n- **Bioequivalent:** พิสูจน์แล้วว่า F เท่ากันในเชิงสถิติ\n- **Therapeutic equivalent:** pharmaceutical equivalent **+** bioequivalent → ใช้แทนกันได้ (substitutable)\n\nBE คือพื้นฐานของการอนุมัติ **ยาสามัญ (generic)**"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "พารามิเตอร์และเกณฑ์ 80–125%",
+          "body_md": "**พารามิเตอร์หลักที่วัด:**\n- **AUC** → extent of absorption\n- **Cmax** → rate of absorption\n- (Tmax รายงานแต่มักไม่ใช้เป็นเกณฑ์ทางสถิติหลัก)\n\n**เกณฑ์ตัดสิน BE:**\n- คำนวณ **90% confidence interval (CI)** ของอัตราส่วน **test/reference** ของค่า **log-transformed** AUC และ Cmax\n- ทั้ง AUC และ Cmax ต้องมี 90% CI อยู่ใน **80.00–125.00%**\n\nสังเกตว่าช่วงไม่สมมาตร (80–125) เพราะใช้ **log scale**: 1/0.80 = 1.25 จึงสมมาตรบน log scale"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "การออกแบบการศึกษา BE",
+          "body_md": "**Design มาตรฐาน:** **two-period, two-sequence crossover** ในอาสาสมัครสุขภาพดี\n\n- อาสาสมัครแต่ละคนได้รับ **ทั้ง test และ reference** (เป็น self-control ลดความแปรปรวนระหว่างคน)\n- มีระยะ **washout** ≥ 5 half-lives เพื่อล้างยาตัวก่อนหมด\n- มักเป็น single-dose, fasting (และ/หรือ fed study)\n- จำนวนอาสาสมัครคำนวณจาก within-subject variability\n\n**Replicate / partial replicate design** ใช้กับยา **highly variable (CV > 30%)** เพื่อทำ scaled BE\n\n**Steady-state study** ใช้กับยา modified-release หรือ nonlinear PK"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Narrow Therapeutic Index (NTI) และยาที่ต้องระวัง",
+          "body_md": "**ยา narrow therapeutic index (NTI)** ใช้เกณฑ์ BE **เข้มงวดกว่า** ปกติ\n\n- หลายหน่วยงาน (เช่น FDA) ใช้ช่วงแคบลง เช่น **90.00–111.11%** สำหรับ NTI\n- ตัวอย่างยา NTI: **warfarin, digoxin, phenytoin, levothyroxine, lithium, theophylline, carbamazepine, ciclosporin, tacrolimus**\n\n**ทำไมต้องระวังการสลับ generic ของยา NTI:**\n- ความต่างของ F แม้เล็กน้อยอาจทำให้เกิดพิษ (เกิน) หรือล้มเหลวการรักษา (ขาด)\n- แนะนำให้ผู้ป่วยใช้ **ผลิตภัณฑ์เดิม** อย่างสม่ำเสมอ และตรวจระดับยาเมื่อต้องเปลี่ยน"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "การใช้ยาทดแทน (Generic Substitution)",
+          "body_md": "**หลักการ generic substitution:**\n- ยาสามัญที่ได้รับการรับรองว่า **therapeutically equivalent** สามารถใช้แทน innovator ได้ ช่วยลดค่าใช้จ่าย\n- ในสหรัฐฯ ใช้ **Orange Book** (รหัส **AB** = therapeutically equivalent, **BX** = ข้อมูลไม่พอ)\n\n**ข้อควรพิจารณาก่อนสับเปลี่ยน:**\n- ยา NTI → ระวัง, ติดตามระดับยา/อาการ\n- modified-release products ของต่างผู้ผลิตอาจ **ไม่ substitutable** กัน แม้ตัวยาเท่ากัน\n- ให้คำปรึกษาผู้ป่วยเรื่องการเปลี่ยนรูปลักษณ์เม็ดยา (เพื่อ adherence)"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำเกณฑ์ BE: \"AC ใน 80–125, log ทำให้สมมาตร\"",
+          "body_md": "**A**UC + **C**max → ต้องผ่านทั้งคู่ (Tmax ไม่ใช่เกณฑ์ทางสถิติหลัก)\n\n**90% CI** ของอัตราส่วน test/reference ต้องอยู่ใน **80–125%**\n\nจำว่าช่วง **80–125 ไม่สมมาตร** เพราะ:\n- $0.80 = 1/1.25$ → บน **log scale** สมมาตรรอบ 100%\n\nและจำ **NTI ใช้ 90–111%** (แคบลง)\n\nเลขสำคัญ: **80 / 125 / 90% CI** — ท่องให้ขึ้นใจ"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ความเข้าใจผิดที่ทำให้สอบตก",
+          "body_md": "**สิ่งที่ต้องไม่เข้าใจผิด:**\n\n- BE **ไม่ได้** หมายความว่าค่าเฉลี่ยต้องต่างกันไม่เกิน 20% ของแต่ละคน — แต่เป็นเรื่อง **90% CI ของค่าเฉลี่ย** อยู่ใน 80–125%\n- เกณฑ์ใช้กับค่า **log-transformed** ไม่ใช่ค่าดิบ\n- **Bioequivalent ≠ identical** — ยังมีความแปรปรวนได้ภายในขอบเขต\n- pharmaceutical equivalent **ไม่เท่ากับ** therapeutic equivalent (ต้องผ่าน BE เพิ่ม)\n\n**ยา NTI** ห้ามสลับ generic พร่ำเพรื่อ — เกณฑ์เข้มกว่าและความเสี่ยงสูงกว่า"
+        }
+      ]
+    },
+    {
+      "title_th": "First-Pass Metabolism และทางให้ยา",
+      "subtitle_th": "Hepatic/gut first-pass, sublingual, rectal, transdermal และผลต่อ F",
+      "icon": "🔁",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "first-pass metabolism",
+        "first-pass effect",
+        "presystemic metabolism",
+        "sublingual",
+        "transdermal",
+        "rectal",
+        "portal vein",
+        "nitroglycerin",
+        "bioavailability",
+        "route of administration"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "First-Pass Metabolism คืออะไร",
+          "body_md": "**First-pass (presystemic) metabolism:** ยารับประทานถูกดูดซึมจากลำไส้ → เข้า **hepatic portal vein → ตับ** → ถูกเปลี่ยนแปลงบางส่วน **ก่อนเข้าสู่ระบบไหลเวียนทั่วร่างกาย**\n\nผลคือ **ลด bioavailability**\n\n**ตำแหน่งที่เกิด first-pass:**\n- **ผนังลำไส้ (gut wall):** CYP3A4, P-glycoprotein efflux\n- **ตับ (liver):** เป็นตำแหน่งหลัก\n- (ปอด, เลือดบางส่วน)\n\nยาที่มี **high hepatic extraction ratio (E สูง)** → first-pass มาก → F ทางปากต่ำมาก"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Extraction Ratio และความสัมพันธ์กับ F",
+          "body_md": "**Hepatic extraction ratio (E)** = สัดส่วนของยาที่ตับกำจัดในการผ่านครั้งเดียว\n\n$$F_{H} = 1 - E$$\n\nโดย F ทางปากรวม: $F = F_{abs} \\times F_{G} \\times F_{H}$\n(F_abs = ดูดซึมจากลำไส้, F_G = รอดจาก gut wall, F_H = รอดจากตับ)\n\n**High extraction drugs (E > 0.7):** F ทางปากต่ำ, **clearance ไวต่อ blood flow** — เช่น propranolol, lidocaine, morphine, verapamil, GTN\n\n**Low extraction drugs (E < 0.3):** clearance ไวต่อ enzyme/protein binding — เช่น warfarin, diazepam, phenytoin"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ทางให้ยาที่เลี่ยง First-Pass",
+          "body_md": "| ทางให้ยา | First-pass | หมายเหตุ |\n|---|---|---|\n| **IV** | เลี่ยงทั้งหมด | F = 100% |\n| **Sublingual / buccal** | เลี่ยง | ดูดซึมเข้า systemic vein โดยตรง |\n| **Transdermal** | เลี่ยง | ดูดซึมผ่านผิวเข้าเลือดทั่วร่างกาย |\n| **Rectal** | **เลี่ยงบางส่วน (~50%)** | เส้นเลือด rectum ส่วนล่างเลี่ยงตับ, ส่วนบนเข้า portal |\n| **Inhalation** | เลี่ยง (ตับ) | |\n| **Oral** | **ผ่านเต็มที่** | F ต่ำสุดในยา high-E |\n\n**Sublingual GTN (nitroglycerin)** เป็นตัวอย่างคลาสสิก: ทางปาก F ต่ำมากจาก first-pass เกือบสมบูรณ์ จึงต้องให้ใต้ลิ้น"
+        },
+        {
+          "card_type": "example",
+          "title_th": "ตัวอย่าง: Propranolol และ Nitroglycerin",
+          "body_md": "**Propranolol:**\n- ทางปาก F ~ 25–30% (high first-pass)\n- ขนาดยา **oral สูงกว่า IV มาก** (เช่น oral 40–80 mg เทียบ IV 1–3 mg) เพราะถูกตับกำจัด\n\n**Nitroglycerin (GTN):**\n- ทางปาก F แทบ 0% (first-pass เกือบสมบูรณ์)\n- จึงให้ **sublingual** (รักษา angina เฉียบพลัน) หรือ **transdermal patch** (ป้องกัน)\n\n**Lidocaine:**\n- ห้ามให้ทางปากเพื่อ antiarrhythmic เพราะ first-pass สูง → ให้ **IV**\n\nบทเรียน: ยา high-E เลือกทางให้ยาที่ **เลี่ยงตับ**"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "ผลของโรคตับและ interaction ต่อ First-Pass",
+          "body_md": "**ปัจจัยที่ลด first-pass → เพิ่ม F อย่างมาก (เสี่ยงพิษ):**\n- **โรคตับแข็ง (cirrhosis):** ลดมวลตับและ portosystemic shunt → F ของยา high-E เพิ่มขึ้นมาก\n- **Enzyme inhibitor:** เช่น ketoconazole, grapefruit juice (ยับยั้ง CYP3A4 ที่ gut wall) → เพิ่ม F ของ felodipine, simvastatin\n\n**ปัจจัยที่เพิ่ม first-pass → ลด F:**\n- **Enzyme inducer:** rifampicin, carbamazepine → ลด F\n\n**สำคัญ:** ยา high-E ที่ให้ทางปากไวต่อ interaction และโรคตับมากที่สุด — ต้องปรับขนาด"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำทางเลี่ยง First-Pass: \"SIT-R\"",
+          "body_md": "ทางให้ยาที่ **เลี่ยง** first-pass (เลี่ยงตับ):\n\n**S**ublingual / buccal — ใต้ลิ้น\n**I**ntravenous (และ IM/SC) — ฉีด\n**T**ransdermal — แผ่นแปะผิว\n**R**ectal (เลี่ยง **บางส่วน** ~50%)\n\nและ **I**nhalation\n\nจำยา high first-pass คลาสสิก: **\"PLViM-G\"** — **P**ropranolol, **L**idocaine, **V**erapamil, **i**mipramine, **M**orphine, **G**TN (nitroglycerin)"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ระวังขนาดยา oral vs parenteral ต่างกันมาก",
+          "body_md": "**อันตรายในทางปฏิบัติ:**\n\n- ยา high first-pass มี **ขนาดทางปากสูงกว่าขนาดฉีดหลายเท่า** — เช่น propranolol, morphine\n- **ห้ามใช้ขนาด oral เมื่อสลับเป็น IV** (และในทางกลับกัน) โดยไม่ปรับ → เสี่ยง **overdose ร้ายแรง**\n- ตัวอย่าง morphine: oral:IV ~ 3:1 — ให้ขนาด oral ทาง IV = overdose\n\n**โรคตับ** ทำให้ first-pass ลด → ยา high-E สะสมได้ ต้อง **ลดขนาด** และติดตามใกล้ชิด"
+        }
+      ]
+    },
+    {
+      "title_th": "รูปแบบยาออกฤทธิ์ดัดแปลง (Modified-Release)",
+      "subtitle_th": "SR/ER/CR, DR/enteric-coated, หลักการและเหตุผลทางคลินิก",
+      "icon": "⏱️",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "modified-release",
+        "sustained-release",
+        "extended-release",
+        "delayed-release",
+        "enteric-coated",
+        "SR",
+        "ER",
+        "ออกฤทธิ์นาน",
+        "dose dumping",
+        "controlled-release"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "ประเภทของ Modified-Release",
+          "body_md": "**Modified-release (MR)** = ตำรับที่ออกแบบให้ปลดปล่อยยา **ต่างจาก immediate-release (IR)**\n\n| ประเภท | กลไก | จุดประสงค์ |\n|---|---|---|\n| **Delayed-release (DR)** | ปล่อยยาช้าลง ณ ตำแหน่ง/เวลาที่ต้องการ (เช่น enteric) | เลี่ยงกระเพาะ/เป้าหมายลำไส้ |\n| **Extended-release (ER/XR/XL)** | ปล่อยช้าและต่อเนื่อง | ลดความถี่การให้ยา |\n| **Sustained-release (SR)** | ปล่อยเริ่มต้น + คงระดับ | คงระดับยา |\n| **Controlled-release (CR)** | ปล่อยตามอัตราคงที่ (zero-order) | ระดับยาสม่ำเสมอ |\n\n**ER เป็นคำกว้างครอบคลุม SR และ CR** ในนิยาม USP"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "เหตุผลทางคลินิกของ ER/SR",
+          "body_md": "**ข้อดีของ extended/sustained-release:**\n- **ลดความถี่การให้ยา** (เช่น วันละ 1 ครั้งแทน 3 ครั้ง) → เพิ่ม adherence\n- **ลดการแกว่งของระดับยา (peak–trough fluctuation)** → ลด ADR จาก peak สูง และลดการต่ำกว่า therapeutic ระหว่างมื้อ\n- เหมาะกับยา **half-life สั้น** ที่ต้องให้บ่อย\n\n**ยาที่เหมาะกับ ER:** ยา half-life สั้น, therapeutic window กว้างพอ, ขนาดยาไม่สูงเกินจนเม็ดใหญ่\n\n**ยาที่ไม่เหมาะ:** half-life ยาวอยู่แล้ว, ขนาดยาสูงมาก, ดูดซึมเฉพาะส่วนต้นลำไส้ (narrow absorption window)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "กลไกควบคุมการปลดปล่อย",
+          "body_md": "**กลไกที่ใช้สร้าง ER:**\n- **Matrix system:** ตัวยาฝังในเมทริกซ์ (hydrophilic gel เช่น HPMC, หรือ insoluble/wax) → ปลดปล่อยด้วยการ diffusion/erosion\n- **Reservoir / membrane-coated:** เคลือบฟิล์มควบคุมอัตรา diffusion\n- **Osmotic pump (OROS):** น้ำซึมเข้าดันยาออกทางรู laser ด้วย **zero-order kinetics** (เช่น nifedipine GITS)\n- **Ion-exchange resin, multiparticulate (pellets/beads)**\n\n**Multiparticulate (pellets)** มักให้การปลดปล่อยที่สม่ำเสมอกว่าและ **เสี่ยง dose dumping น้อยกว่า** single-unit matrix"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Delayed-Release และ Enteric Coating",
+          "body_md": "**Enteric-coated (EC) = delayed-release ชนิดหนึ่ง** เคลือบด้วยพอลิเมอร์ที่ **ทนกรดในกระเพาะ** (ไม่ละลายที่ pH ต่ำ) แต่ละลายเมื่อถึง **ลำไส้เล็ก (pH สูงขึ้น ~5.5–7)**\n\n**จุดประสงค์ของ enteric coating:**\n- ป้องกันตัวยาจากกรด/เอนไซม์ในกระเพาะ (เช่น omeprazole, pancreatin)\n- ป้องกันกระเพาะจากการระคายเคืองของยา (เช่น enteric-coated aspirin, diclofenac)\n- ปล่อยยา ณ ตำแหน่งเป้าหมาย (เช่น mesalazine ในลำไส้)\n\nพอลิเมอร์ที่ใช้: cellulose acetate phthalate, Eudragit (methacrylic acid copolymer)"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "หลักการให้คำปรึกษา MR products",
+          "body_md": "**คำแนะนำสำคัญสำหรับผู้ป่วยที่ใช้ MR:**\n- **ห้ามบด เคี้ยว หรือหัก** ยาเม็ด ER/SR/EC ส่วนใหญ่ — ทำลายกลไกควบคุม\n- บางตำรับ **multiparticulate** เปิดแคปซูลโรยอาหารอ่อนได้ (ตรวจฉลากก่อน เช่น บาง PPI)\n- enteric-coated ห้ามให้ร่วมกับยาลดกรด/นมในเวลาเดียวกัน (pH สูงขึ้นในกระเพาะอาจทำให้เคลือบละลายเร็ว)\n- เม็ดเปล่า (ghost tablet/shell ของ OROS) ในอุจจาระเป็นเรื่อง **ปกติ** — ตัวยาถูกดูดซึมหมดแล้ว\n\nอักษรย่อบนชื่อการค้า: SR, ER, XR, XL, CR, CD, LA, MR, Retard, GITS, OROS"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำชนิด MR: \"DECR\" และ \"อย่าบด ER\"",
+          "body_md": "**D**elayed — ปล่อยช้าลง/เลื่อนเวลา (รวม **E**nteric)\n**E**xtended — ปล่อยยาวต่อเนื่อง (รวม SR, CR)\n**C**ontrolled — อัตราคงที่ zero-order\n**R**epeat action — ปล่อยเป็นช่วง ๆ ซ้ำ\n\nกฎทอง: **\"ER/SR/EC = ห้ามบดเคี้ยวหัก\"**\n\nจำเป้าหมายแต่ละแบบ: **DR เลือกตำแหน่ง, ER ลดความถี่, CR ทำให้นิ่ง**"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Dose Dumping: อันตรายร้ายแรง",
+          "body_md": "**Dose dumping** = การปลดปล่อยตัวยาจำนวนมากในตำรับ ER ออกมาทันทีโดยไม่ตั้งใจ → **ระดับยาพุ่งสูงเฉียบพลัน → พิษ**\n\n**สาเหตุที่ทำให้เกิด:**\n- **บด/เคี้ยว/หัก** เม็ด ER (ผิดวิธี)\n- **แอลกอฮอล์** ละลายเมทริกซ์บางชนิด (alcohol-induced dose dumping) — เคยทำให้ถอน opioid ER บางตัวออกจากตลาด\n- อาหารบางชนิดเปลี่ยนการปลดปล่อย\n\n**ยาที่อันตรายมากเมื่อ dose dump:** ER opioids (morphine, oxycodone), ER CCB, ER theophylline\n\n**เตือนผู้ป่วยเสมอ:** ห้ามบดยา ER และระวังแอลกอฮอล์กับยา ER"
+        }
+      ]
+    },
+    {
+      "title_th": "อาหาร การเคลื่อนผ่าน GI และปัจจัยตำรับ",
+      "subtitle_th": "Food effects, gastric emptying, GI transit, chelation, formulation factors",
+      "icon": "🍽️",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "food effect",
+        "gastric emptying",
+        "GI transit",
+        "ผลของอาหาร",
+        "การเคลื่อนผ่าน",
+        "chelation",
+        "absorption window",
+        "grapefruit juice",
+        "formulation factors",
+        "high-fat meal"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "Gastric Emptying และผลต่อการดูดซึม",
+          "body_md": "ยาส่วนใหญ่ดูดซึมที่ **ลำไส้เล็ก** (พื้นที่ผิวมาก) ดังนั้น **อัตราการบีบตัวของกระเพาะออกสู่ลำไส้ (gastric emptying rate, GER)** มักเป็นตัวกำหนดความเร็วการดูดซึม\n\n**สิ่งที่ทำให้ gastric emptying ช้าลง → ดูดซึมช้าลง (Tmax ยาว, Cmax ต่ำลง):**\n- อาหาร (โดยเฉพาะไขมันสูง, ปริมาณมาก)\n- ยา anticholinergic, opioids\n- โรคเบาหวาน (gastroparesis)\n\n**สิ่งที่เร่ง gastric emptying → ดูดซึมเร็วขึ้น:**\n- ท้องว่าง, metoclopramide (prokinetic)\n\nโดยทั่วไป **gastric emptying เร็ว = ยาถึงตำแหน่งดูดซึมเร็ว**"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ผลของอาหารต่อ Bioavailability",
+          "body_md": "**อาหารมีผลต่อ F ได้หลายทิศทาง:**\n\n**อาหารเพิ่มการดูดซึม (positive food effect):**\n- ยาละลายไขมัน/Class II เช่น **griseofulvin, isotretinoin, atovaquone, saquinavir** → อาหารไขมันสูงเพิ่ม F ผ่านการกระตุ้นน้ำดี (bile) และชะลอ emptying\n\n**อาหารลดการดูดซึม (negative food effect):**\n- **ยาปฏิชีวนะหลายตัว** เช่น rifampicin, ampicillin, captopril, levothyroxine, bisphosphonate → ให้ **ท้องว่าง**\n\n**อาหารไม่มีผลชัด:** ให้ได้ทั้งสองแบบ\n\nหลักจำ: ตรวจคำสั่ง **\"ก่อน/พร้อม/หลังอาหาร\"** ทุกครั้ง"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Chelation และ Complexation",
+          "body_md": "**Chelation** = ไอออนโลหะหลายประจุจับกับยาเกิดสารเชิงซ้อนที่ **ดูดซึมไม่ได้** → ลด F อย่างมาก\n\n**คู่ที่ต้องจำ:**\n- **Tetracyclines, fluoroquinolones** จับกับ **Ca²⁺ (นม), Mg²⁺, Al³⁺ (ยาลดกรด), Fe²⁺ (ธาตุเหล็ก), Zn²⁺**\n- **Levothyroxine** จับกับ calcium, iron, antacid\n- **Bisphosphonate** จับกับ Ca ในนม/อาหาร\n\n**การจัดการ:** เว้นระยะ **2–4 ชั่วโมง** ระหว่างยาเหล่านี้กับผลิตภัณฑ์ที่มีโลหะ/นม/ยาลดกรด\n\nนี่คือ **interaction การดูดซึม** ที่ออกสอบบ่อยมาก"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Absorption Window และ GI Transit",
+          "body_md": "**Absorption window (narrow absorption window):** ยาบางตัวดูดซึมได้เฉพาะ **ส่วนต้นของลำไส้เล็ก (duodenum/jejunum)** เท่านั้น เช่น **riboflavin, levodopa, gabapentin, furosemide, captopril**\n\n- ยาเหล่านี้ **ไม่เหมาะทำ ER** ทั่วไป เพราะเลื่อนผ่าน window เร็ว\n- ต้องใช้ **gastroretentive system** (floating, mucoadhesive) เพื่อยืดเวลาบริเวณดูดซึม\n\n**GI transit time:**\n- กระเพาะ: ผันแปร (ขึ้นกับอาหาร)\n- ลำไส้เล็ก: ค่อนข้างคงที่ **~3–4 ชั่วโมง** (สำคัญต่อการออกแบบ ER)\n- ลำไส้ใหญ่: ยาวและผันแปรมาก"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "Grapefruit Juice และ Gut Wall Metabolism",
+          "body_md": "**Grapefruit juice** ยับยั้ง **CYP3A4 ที่ผนังลำไส้ (gut wall)** อย่างถาวร (irreversible) เป็นเวลาหลายชั่วโมง\n\n→ ลด first-pass ที่ลำไส้ → **เพิ่ม F ของยา substrate CYP3A4** อย่างมาก:\n- felodipine, nifedipine (CCB)\n- simvastatin, atorvastatin\n- ciclosporin, tacrolimus\n\n**ผล:** ระดับยาสูงขึ้นเสี่ยงพิษ — แนะนำผู้ป่วย **หลีกเลี่ยงน้ำเกรปฟรุต** กับยาเหล่านี้\n\nต่างจาก enzyme inhibitor ทั่วไปตรงที่ออกฤทธิ์ **เฉพาะที่ลำไส้** เป็นหลัก (ไม่ค่อยกระทบ IV)"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ chelation: \"นม/เหล็ก/ลดกรด เว้น 2 ชม.\"",
+          "body_md": "ยาที่ **โดน chelation** (จับโลหะ → ดูดซึมลด):\n\nจำ **\"TQ-LB\"**:\n**T**etracycline\n**Q**uinolone (fluoroquinolone)\n**L**evothyroxine\n**B**isphosphonate\n\nโลหะที่จับ: **\"Ca, Mg, Al, Fe, Zn\"** (นม, ยาลดกรด, ธาตุเหล็ก, วิตามินรวม)\n\n→ **เว้นระยะ 2–4 ชั่วโมง** เสมอ\n\nและจำ: **\"อาหารไขมันช่วย griseofulvin\"** (positive food effect ตัวอย่างคลาสสิก)"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ปัจจัยตำรับและความผิดพลาดด้านอาหาร",
+          "body_md": "**ปัจจัยตำรับ (formulation factors) ที่กระทบ F:**\n- ชนิดและปริมาณ **disintegrant, lubricant** (เช่น magnesium stearate มากเกินทำให้ละลายช้า)\n- แรงอัดเม็ด (compression force) สูงเกิน → แตกตัวช้า\n- ชนิด excipient/coating\n\n**คำเตือนทางคลินิก:**\n- **Bisphosphonate** ต้องกินตอนท้องว่างพร้อมน้ำเปล่าเต็มแก้ว และ **นั่ง/ยืน 30 นาที** (เลี่ยง esophagitis และเพิ่ม F)\n- **Levothyroxine** ให้ตอนท้องว่างก่อนอาหาร 30–60 นาที — อาหาร/กาแฟ/แคลเซียมลด F\n- การให้ enteric-coated พร้อมยาลดกรดทำให้เคลือบเสียหายก่อนเวลา\n\nเสมอ: **อ่านคำสั่งเรื่องอาหารและระยะเว้นยา**"
+        }
+      ]
+    },
+    {
+      "title_th": "IVIVC และการคัดเลือกผลิตภัณฑ์ยา",
+      "subtitle_th": "In vitro–in vivo correlation, dissolution testing, product selection",
+      "icon": "📈",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "IVIVC",
+        "in vitro in vivo correlation",
+        "dissolution testing",
+        "Level A correlation",
+        "product selection",
+        "USP apparatus",
+        "การละลายในหลอดทดลอง",
+        "biopharmaceutic",
+        "quality control",
+        "Class II"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "IVIVC คืออะไรและประโยชน์",
+          "body_md": "**IVIVC (In Vitro–In Vivo Correlation):** แบบจำลองความสัมพันธ์ทางคณิตศาสตร์ระหว่าง **การละลายในหลอดทดลอง (in vitro dissolution)** กับ **การตอบสนองในร่างกาย (in vivo response เช่น plasma concentration / fraction absorbed)**\n\n**ประโยชน์:**\n- ใช้ dissolution เป็น **surrogate (ตัวแทน)** ของ bioequivalence → ลดความจำเป็นต้องทำ BE study ในคนเมื่อมีการเปลี่ยนแปลงเล็กน้อย (scale-up, post-approval changes / SUPAC)\n- ตั้ง **dissolution specification** ที่มีความหมายทางคลินิก\n- ใช้เป็นเครื่องมือ **quality control** ระหว่างการผลิต"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ระดับของ IVIVC (Level A–C)",
+          "body_md": "| Level | ความสัมพันธ์ | ความแข็งแรง |\n|---|---|---|\n| **Level A** | จุดต่อจุด: % dissolved vs % absorbed (เส้นตรง) | **ดีที่สุด** — ทำนาย plasma curve ได้ |\n| **Level B** | ค่าสถิติเฉลี่ย (mean dissolution time vs MRT) | ปานกลาง — ไม่ unique |\n| **Level C** | จุดเดียว (single point เช่น % dissolved ที่เวลาหนึ่ง vs Cmax/AUC) | อ่อนสุด |\n| **Multiple Level C** | หลายจุดเวลา | ใกล้เคียง Level A |\n\n**Level A เป็นเป้าหมายที่ต้องการมากที่สุด** เพราะให้การทำนายแบบจุดต่อจุดและสนับสนุน biowaiver ได้ดีที่สุด"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Dissolution Testing: USP Apparatus",
+          "body_md": "**เครื่องมือทดสอบการละลาย (USP dissolution apparatus):**\n- **Apparatus 1 = Basket** (ตะกร้าหมุน) — เหมาะกับแคปซูล, ยาที่ลอย\n- **Apparatus 2 = Paddle** (ใบพายหมุน) — ใช้บ่อยที่สุดสำหรับยาเม็ด\n- **Apparatus 3 = Reciprocating cylinder** — ER, เปลี่ยน pH ได้\n- **Apparatus 4 = Flow-through cell** — ยาละลายต่ำ, sink condition ดี\n\n**ปัจจัยที่ควบคุม:** ชนิด/ปริมาตร media (เลียนแบบ pH ทางเดินอาหาร), อุณหภูมิ 37°C, ความเร็วการหมุน (เช่น 50–100 rpm)\n\nต้องรักษา **sink condition** (media มากพอให้ยาละลายได้อิสระ)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "BCS กับโอกาสได้ IVIVC",
+          "body_md": "**ความน่าจะได้ IVIVC ขึ้นกับ BCS class:**\n\n- **Class I (S↑ P↑):** dissolution เร็วมาก → IVIVC มัก **จำกัด** (gastric emptying เป็นตัวคุม ไม่ใช่ dissolution) เว้นแต่ทำให้ปลดปล่อยช้าลง\n- **Class II (S↓ P↑):** **โอกาสได้ IVIVC ดีที่สุด** — dissolution เป็นขั้นจำกัด จึงสะท้อนการดูดซึมได้ตรง\n- **Class III (S↑ P↓):** permeability คุม → IVIVC มักไม่ดี\n- **Class IV (S↓ P↓):** คาดเดายาก → IVIVC แย่\n\n**สรุป:** ยา **Class II + ตำรับ extended-release** = สถานการณ์ที่ IVIVC มีประโยชน์และทำได้ดีที่สุด"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "การคัดเลือกผลิตภัณฑ์ยาเชิงชีวเภสัชศาสตร์",
+          "body_md": "**หลักพิจารณาเลือก/สับเปลี่ยนผลิตภัณฑ์ (biopharmaceutic product selection):**\n- เลือกผลิตภัณฑ์ที่มีหลักฐาน **therapeutic equivalence** (เช่น Orange Book code AB)\n- ยา **NTI** → ยึดผลิตภัณฑ์เดิม, ระวังการสับเปลี่ยน, ติดตามระดับยา\n- **MR products** ของต่างผู้ผลิต **อาจไม่เทียบเท่ากัน** แม้ตัวยาเท่า — ระบุชื่อการค้าเมื่อจำเป็น\n- พิจารณา excipient (เช่น lactose ในผู้แพ้, แอลกอฮอล์ในยาน้ำเด็ก)\n- ผลของอาหาร/การให้ยาที่ต่างกันระหว่างผลิตภัณฑ์\n\nเภสัชกรมีบทบาทสำคัญในการให้คำแนะนำ generic substitution อย่างปลอดภัย"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ IVIVC: \"A-B-C = ดี-กลาง-อ่อน\" และ Apparatus",
+          "body_md": "**ระดับ IVIVC:**\n- **A** = point-to-point → **ดีที่สุด** (เป้าหมาย, สนับสนุน biowaiver)\n- **B** = statistical moments → กลาง\n- **C** = single point → อ่อนสุด\n\n**USP Apparatus จำ \"BP-RC\":**\n- 1 = **B**asket\n- 2 = **P**addle (ใช้บ่อยสุด)\n- 3 = **R**eciprocating cylinder\n- 4 = flow-through **C**ell\n\nและจำ: **\"Class II ได้ IVIVC ดีที่สุด\"** (dissolution-limited)"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ข้อจำกัดและความเข้าใจผิดเรื่อง IVIVC",
+          "body_md": "**สิ่งที่ต้องระวัง:**\n\n- IVIVC ที่ดี (Level A) **ใช้ได้เฉพาะตำรับและวิธี dissolution ที่ validate แล้ว** — เปลี่ยนกลไกปลดปล่อยต้องสร้างใหม่\n- **dissolution profile เหมือนกัน ไม่รับประกัน bioequivalent เสมอ** ถ้าไม่มี IVIVC ที่พิสูจน์แล้ว (โดยเฉพาะ Class III/IV)\n- ในทางกลับกัน **bioequivalent ไม่จำเป็นต้องมี dissolution เหมือนกันเป๊ะ**\n- การเปรียบเทียบ dissolution profile ใช้ค่า **similarity factor f2 (≥ 50 = คล้าย)** และ difference factor f1\n\n**อย่าเหมารวม:** IVIVC ไม่ได้มีในทุกยา — ยาที่ดูดซึมเร็วกว่าการละลาย (Class I/III) มักสร้าง IVIVC ที่มีความหมายไม่ได้"
         }
       ]
     }
