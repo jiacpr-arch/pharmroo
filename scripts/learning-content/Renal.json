@@ -1,0 +1,31 @@
+{
+  "subject": "Renal",
+  "unit": { "title_th": "ไต/ทางเดินปัสสาวะ", "description_th": "การปรับขนาดยาตามการทำงานของไตและยาที่เป็นพิษต่อไต", "icon": "🫘" },
+  "lessons": [
+    {
+      "title_th": "การปรับขนาดยาตามการทำงานของไต",
+      "subtitle_th": "Renal Dose Adjustment",
+      "icon": "⚖️",
+      "est_minutes": 5,
+      "xp_reward": 10,
+      "cards": [
+        { "card_type": "concept", "title_th": "ประเมินการทำงานของไต", "body_md": "- คำนวณ **CrCl** ด้วยสูตร **Cockcroft-Gault** สำหรับปรับขนาดยา\n- หรือใช้ **eGFR**\n- ยาที่ขับออกทางไตเป็นหลักและมี therapeutic index แคบต้องปรับขนาดตาม CrCl" },
+        { "card_type": "concept", "title_th": "วิธีปรับขนาด", "body_md": "ทำได้ 2 แบบ:\n1. **ลดขนาดยา** ต่อครั้ง\n2. **ยืดระยะห่าง** การให้ยา\n\nบางกรณีใช้ทั้งสองวิธีร่วมกัน ขึ้นกับชนิดยา" },
+        { "card_type": "tip", "title_th": "ยาที่ต้องปรับตามไต", "body_md": "ตัวอย่างยาที่มักต้องปรับ:\n- Aminoglycoside, vancomycin\n- ยาต้านไวรัส (acyclovir)\n- DOAC, LMWH (enoxaparin)\n- Metformin, gabapentin, digoxin" },
+        { "card_type": "warning", "title_th": "ยาที่ห้าม/เลี่ยงในไตเสื่อม", "body_md": "- **NSAID**: ลด GFR ทำไตแย่ลง\n- **Metformin**: เลี่ยงเมื่อ eGFR < 30\n- **Nitrofurantoin**: เลี่ยงเมื่อ CrCl ต่ำ (ได้ผลไม่ดีและเสี่ยง ADR)" }
+      ]
+    },
+    {
+      "title_th": "ยาที่เป็นพิษต่อไต",
+      "subtitle_th": "Nephrotoxic Drugs",
+      "icon": "☠️",
+      "est_minutes": 5,
+      "xp_reward": 10,
+      "cards": [
+        { "card_type": "concept", "title_th": "กลุ่มยาพิษต่อไตที่ออกข้อสอบบ่อย", "body_md": "- **NSAID**: ลดการไหลเวียนเลือดไต (prerenal/AIN)\n- **Aminoglycoside**: ATN พิษต่อ tubule\n- **Contrast media**: contrast-induced nephropathy\n- **ACEI/ARB**: ลด GFR โดยเฉพาะใน renal artery stenosis\n- **Vancomycin, amphotericin B**" },
+        { "card_type": "mnemonic", "title_th": "จำง่าย: \"NACAV\"", "body_md": "- **N**SAID\n- **A**minoglycoside\n- **C**ontrast\n- **A**CEI/ARB\n- **V**ancomycin\n\nระวังการใช้หลายตัวพร้อมกัน (additive nephrotoxicity)" },
+        { "card_type": "warning", "title_th": "ป้องกัน contrast nephropathy", "body_md": "- **ให้สารน้ำ (IV hydration)** ก่อน-หลังฉีด contrast\n- หยุดยา nephrotoxic อื่นชั่วคราว (NSAID, metformin)\n- ระวังในผู้ป่วยไตเสื่อม เบาหวาน และผู้สูงอายุ" }
+      ]
+    }
+  ]
+}

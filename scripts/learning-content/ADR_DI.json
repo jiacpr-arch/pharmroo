@@ -1,0 +1,68 @@
+{
+  "subject": "ADR_DI",
+  "unit": {
+    "title_th": "ADR / Drug Interaction / DI",
+    "description_th": "ประเภทของ ADR และ drug interaction สำคัญที่ออกข้อสอบ",
+    "icon": "⚠️"
+  },
+  "lessons": [
+    {
+      "title_th": "ประเภทของ ADR",
+      "subtitle_th": "Type A และ Type B",
+      "icon": "⚠️",
+      "est_minutes": 5,
+      "xp_reward": 10,
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "Type A (Augmented)",
+          "body_md": "**Type A** = สัมพันธ์กับฤทธิ์ยา\n\n- **คาดเดาได้**, dose-dependent\n- พบบ่อย, ความรุนแรงต่ำ-ปานกลาง\n- ตัวอย่าง: bleeding จาก warfarin, hypoglycemia จาก insulin\n- จัดการ: ลดขนาดยา"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Type B (Bizarre)",
+          "body_md": "**Type B** = ไม่สัมพันธ์กับฤทธิ์ยา\n\n- **คาดเดาไม่ได้**, ไม่ขึ้นกับขนาด\n- พบน้อยแต่รุนแรง (allergy, idiosyncratic)\n- ตัวอย่าง: anaphylaxis จาก penicillin, SJS\n- จัดการ: หยุดยา"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ A กับ B",
+          "body_md": "- **A** = **A**ugmented / **A**nticipated (คาดได้, dose related)\n- **B** = **B**izarre (แปลกประหลาด, คาดไม่ได้)\n\nเสริม: C=Chronic, D=Delayed, E=End of use, F=Failure"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "ประเมินความสัมพันธ์",
+          "body_md": "ใช้ **Naranjo scale** ประเมินว่า ADR เกิดจากยาจริงหรือไม่ (definite/probable/possible/doubtful)\n\nดู: time relationship, dechallenge, rechallenge, สาเหตุอื่น"
+        }
+      ]
+    },
+    {
+      "title_th": "Drug Interaction สำคัญ",
+      "subtitle_th": "CYP450 และ QT prolongation",
+      "icon": "🔀",
+      "est_minutes": 6,
+      "xp_reward": 10,
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "CYP450 Inhibitor vs Inducer",
+          "body_md": "- **Inhibitor**: ลดการ metabolize → ระดับยาคู่ **สูงขึ้น** (เร็ว, เสี่ยง toxicity)\n- **Inducer**: เพิ่มการ metabolize → ระดับยาคู่ **ลดลง** (ช้า เป็นวัน-สัปดาห์, เสี่ยงรักษาล้มเหลว)"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ Inhibitor & Inducer",
+          "body_md": "**Inhibitor (เพิ่มระดับยา):** macrolide (erythro/clarithro), azole antifungal, grapefruit juice, ritonavir, cimetidine\n\n**Inducer (ลดระดับยา):** **'CRAP-S'** — **C**arbamazepine, **R**ifampin, **A**lcohol(chronic)/phenytoin, **P**henobarbital, **S**t. John's wort"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "QT prolongation",
+          "body_md": "ยาหลายตัวรวมกัน → **torsades de pointes**\n\nกลุ่มเสี่ยง:\n- **Antiarrhythmic** (amiodarone, sotalol)\n- **Macrolide, fluoroquinolone**\n- **Azole antifungal**\n- **Antipsychotic** (haloperidol), ondansetron, methadone\n\nเลี่ยงใช้ร่วม + แก้ K/Mg ต่ำ"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "Interaction คลาสสิก",
+          "body_md": "- **Warfarin + rifampin** → INR ลด (ลิ่มเลือด)\n- **Statin + clarithromycin/azole** → rhabdomyolysis\n- **MAOI + SSRI/tramadol** → serotonin syndrome\n- **Allopurinol + azathioprine** → bone marrow toxicity"
+        }
+      ]
+    }
+  ]
+}

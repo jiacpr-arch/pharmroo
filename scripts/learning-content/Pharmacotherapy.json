@@ -1,0 +1,68 @@
+{
+  "subject": "Pharmacotherapy",
+  "unit": {
+    "title_th": "เภสัชกรรมคลินิก",
+    "description_th": "หลักการเลือกยาตาม guideline และการติดตามผลการรักษา",
+    "icon": "💉"
+  },
+  "lessons": [
+    {
+      "title_th": "หลักการเลือกยาในผู้ป่วยเฉพาะกลุ่ม",
+      "subtitle_th": "Patient-specific therapy",
+      "icon": "💉",
+      "est_minutes": 5,
+      "xp_reward": 10,
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "หลักการเลือกยา",
+          "body_md": "พิจารณาตาม:\n\n1. **Guideline / first-line** ตามข้อบ่งใช้\n2. **ลักษณะผู้ป่วย** (อายุ, ไต, ตับ, ครรภ์)\n3. **โรคร่วม / ยาอื่น** (interaction, contraindication)\n4. **ประสิทธิภาพ ความปลอดภัย ราคา และ adherence**"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "การปรับยาตามอวัยวะ",
+          "body_md": "- **ไตเสื่อม**: ปรับขนาดยาที่ขับทางไต (vancomycin, aminoglycoside, DOAC, metformin)\n- **ตับเสื่อม**: ระวังยา metabolize ทางตับ\n- **ผู้สูงอายุ**: เริ่มต่ำ ค่อยปรับ ('start low, go slow'); เลี่ยง Beers list"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ยาในหญิงตั้งครรภ์",
+          "body_md": "ยา teratogen ที่ออกข้อสอบบ่อย (ห้ามใช้):\n\n- **Warfarin, isotretinoin, methotrexate, valproate**\n- **ACEI/ARB** (ไตทารกผิดปกติใน 2nd/3rd trimester)\n- **Tetracycline** (ฟัน/กระดูก)\n- เลือกยาที่มีข้อมูลความปลอดภัยชัดเจน"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "เพิ่ม adherence",
+          "body_md": "- ลดจำนวนครั้งต่อวัน (once-daily)\n- ใช้ combination pill\n- ให้ความรู้ + ทบทวนผลข้างเคียง\n- ใช้ pill organizer / เตือนเวลายา"
+        }
+      ]
+    },
+    {
+      "title_th": "การติดตามผลการรักษา",
+      "subtitle_th": "Therapeutic monitoring",
+      "icon": "📊",
+      "est_minutes": 5,
+      "xp_reward": 10,
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "Therapeutic Drug Monitoring (TDM)",
+          "body_md": "วัดระดับยาในเลือดสำหรับยาที่ **therapeutic index แคบ**:\n\n- **Vancomycin, aminoglycoside** (gentamicin)\n- **Digoxin, lithium, phenytoin, theophylline**\n- **Warfarin** ใช้ INR (วัดผลทางเภสัชพลศาสตร์)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ตัวชี้วัดผลการรักษา",
+          "body_md": "- เบาหวาน: **HbA1c** (เป้า <7% ส่วนใหญ่), FBS\n- ความดัน: BP ตามเป้า\n- ไขมัน: LDL\n- ไทรอยด์: TSH\n- ติดตามทั้ง efficacy และ toxicity (เช่น LFT, SCr, K)"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Peak vs Trough",
+          "body_md": "- **Trough** (ก่อนให้ dose ถัดไป): ดูความปลอดภัย/สะสม เช่น vancomycin\n- **Peak**: ดูประสิทธิภาพ เช่น aminoglycoside\n\nเจาะผิดเวลา = แปลผลผิด → ปรับขนาดยาผิด"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำยา TDM: 'Very Dangerous Lab Tests, Pharmacist Watch'",
+          "body_md": "- **V**ancomycin\n- **D**igoxin\n- **L**ithium\n- **T**heophylline\n- **P**henytoin\n- **W**arfarin (INR)\n\nกลุ่ม narrow therapeutic index ต้องติดตามใกล้ชิด"
+        }
+      ]
+    }
+  ]
+}

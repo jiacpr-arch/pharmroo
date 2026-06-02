@@ -1,0 +1,58 @@
+{
+  "subject": "Pharmacognosy",
+  "unit": {
+    "title_th": "สมุนไพรและเภสัชเวท",
+    "description_th": "สมุนไพรสำคัญ สารสำคัญ และข้อควรระวังอันตรกิริยาสมุนไพร-ยาแผนปัจจุบัน",
+    "icon": "🌿"
+  },
+  "lessons": [
+    {
+      "title_th": "สมุนไพรสำคัญและสารออกฤทธิ์",
+      "subtitle_th": "Active constituents ที่ออกข้อสอบบ่อย",
+      "icon": "🍃",
+      "est_minutes": 6,
+      "xp_reward": 10,
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "กลุ่มสารสำคัญในพืช",
+          "body_md": "**กลุ่มสารออกฤทธิ์หลัก**\n- **Alkaloids:** มีไนโตรเจน ฤทธิ์แรง เช่น morphine, quinine, atropine\n- **Glycosides:** เช่น cardiac glycoside (digoxin จาก Digitalis)\n- **Flavonoids/Tannins:** ต้านอนุมูลอิสระ ฝาดสมาน\n- **Volatile oils (น้ำมันหอมระเหย):** เช่น menthol, eugenol\n- **Saponins:** ฟองคล้ายสบู่"
+        },
+        {
+          "card_type": "example",
+          "title_th": "สมุนไพรไทยในบัญชียาหลัก",
+          "body_md": "**ตัวอย่างที่ออกบ่อย**\n- **ฟ้าทะลายโจร** (Andrographis) — สาร andrographolide บรรเทาหวัด เจ็บคอ\n- **ขมิ้นชัน** (Curcuma) — curcumin บรรเทาท้องอืด\n- **ขิง** (Ginger) — gingerol แก้คลื่นไส้\n- **ชุมเห็ดเทศ/มะขามแขก** — anthraquinone ระบาย"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ Alkaloid ลงท้าย -ine",
+          "body_md": "**\"Alkaloid มักลงท้าย -ine\"**\n\nmorph**ine**, caffe**ine**, atrop**ine**, quin**ine**, nicot**ine**, codeine\n\nและมักมีรสขม ตอบสนองต่อกรด-เบส (เป็นเบสอ่อน) สกัดได้ด้วยการปรับ pH"
+        }
+      ]
+    },
+    {
+      "title_th": "อันตรกิริยาสมุนไพร-ยา",
+      "subtitle_th": "Herb-drug interactions ที่ต้องระวัง",
+      "icon": "⚠️",
+      "est_minutes": 6,
+      "xp_reward": 10,
+      "cards": [
+        {
+          "card_type": "warning",
+          "title_th": "St. John's Wort เหนี่ยวนำเอนไซม์",
+          "body_md": "**St. John's Wort (เซนต์จอห์นเวิร์ต)** เป็น **enzyme inducer (CYP3A4, P-gp)** ที่สำคัญ\n\nลดระดับยา:\n- ยาคุมกำเนิด → คุมไม่อยู่\n- warfarin, cyclosporine, ยาต้านไวรัส\n\nหลีกเลี่ยงการใช้ร่วมกับยาที่มี therapeutic index แคบ"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "สมุนไพรกับเลือดออก",
+          "body_md": "**กลุ่ม \"G\" เพิ่มความเสี่ยงเลือดออก** เมื่อใช้ร่วม warfarin/ยาต้านเกล็ดเลือด\n- **Ginkgo** (แปะก๊วย)\n- **Garlic** (กระเทียม)\n- **Ginger** (ขิง)\n- **Ginseng** (โสม)\n\nควรหยุดก่อนผ่าตัดและเฝ้าระวังอาการเลือดออก"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "ซักประวัติการใช้สมุนไพร",
+          "body_md": "**ผู้ป่วยมักไม่บอกว่าใช้สมุนไพร** เพราะคิดว่าปลอดภัย\n\n- ถามตรง ๆ ว่าใช้ผลิตภัณฑ์เสริมอาหาร/สมุนไพรอะไรบ้าง\n- ระวังในผู้ป่วยโรคไต/ตับ และหญิงตั้งครรภ์\n- \"ธรรมชาติ\" ไม่ได้แปลว่าปลอดภัยเสมอไป"
+        }
+      ]
+    }
+  ]
+}
