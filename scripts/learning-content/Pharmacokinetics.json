@@ -1,0 +1,335 @@
+{
+  "subject": "Pharmacokinetics",
+  "unit": {
+    "title_th": "เภสัชวิทยาและเภสัชจลนศาสตร์",
+    "description_th": "หลักการเคลื่อนที่ของยาในร่างกาย (ADME) ค่าพารามิเตอร์ทางเภสัชจลนศาสตร์ การคำนวณขนาดยา เภสัชพลศาสตร์ และระบบประสาทอัตโนมัติ สำหรับสอบใบประกอบวิชาชีพเภสัชกรรม",
+    "icon": "💊"
+  },
+  "lessons": [
+    {
+      "title_th": "ภาพรวม ADME และการดูดซึมยา (Absorption)",
+      "subtitle_th": "เส้นทางการให้ยา ปัจจัยการดูดซึม และการกระจายตัวข้ามเยื่อหุ้มเซลล์",
+      "icon": "🚪",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": ["ADME", "absorption", "การดูดซึม", "passive diffusion", "pH partition", "first-order", "route of administration"],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "4 ขั้นตอนของเภสัชจลนศาสตร์ (ADME)",
+          "body_md": "เภสัชจลนศาสตร์ศึกษา \"สิ่งที่ร่างกายทำกับยา\" ผ่าน 4 ขั้น:\n- **A – Absorption** การดูดซึมเข้าสู่กระแสเลือด\n- **D – Distribution** การกระจายไปยังเนื้อเยื่อ\n- **M – Metabolism** การเปลี่ยนสภาพ (ส่วนใหญ่ที่ตับ)\n- **E – Excretion** การขับออก (ส่วนใหญ่ทางไต)\n\nต่างจาก **เภสัชพลศาสตร์** ที่ศึกษา \"สิ่งที่ยาทำกับร่างกาย\""
+        },
+        {
+          "card_type": "concept",
+          "title_th": "การผ่านเยื่อหุ้มเซลล์",
+          "body_md": "กลไกหลักที่ยาผ่านเยื่อหุ้มเซลล์:\n- **Passive diffusion** จากความเข้มข้นสูงไปต่ำ ไม่ใช้พลังงาน พบบ่อยที่สุด ยาที่ละลายในไขมัน (lipophilic) และไม่แตกตัว (non-ionized) ผ่านได้ดี\n- **Facilitated diffusion** อาศัยตัวพา ไม่ใช้พลังงาน\n- **Active transport** ใช้พลังงาน ผ่านได้แม้ทวนระดับความเข้มข้น\n- **Pinocytosis** สำหรับโมเลกุลใหญ่"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "หลัก pH partition และการแตกตัว",
+          "body_md": "ยาที่ **ไม่แตกตัว (non-ionized)** ละลายในไขมันได้ดีจึงดูดซึมผ่านเยื่อหุ้มเซลล์ได้\n- **กรดอ่อน** แตกตัวน้อยในที่เป็นกรด → ดูดซึมได้ดีในกระเพาะ (pH ต่ำ)\n- **ด่างอ่อน** แตกตัวน้อยในที่เป็นด่าง → ดูดซึมได้ดีในลำไส้เล็ก\n\nใช้สมการ Henderson–Hasselbalch อธิบายสัดส่วนแตกตัว เมื่อ pH = pKa จะแตกตัว 50%"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ปัจจัยที่มีผลต่อการดูดซึม",
+          "body_md": "ปัจจัยสำคัญ:\n- **เส้นทางการให้ยา** (IV ดูดซึม 100%, oral มี first-pass)\n- **พื้นที่ผิวดูดซึม** ลำไส้เล็กมากที่สุด\n- **เลือดไปเลี้ยง** บริเวณดูดซึม\n- **การบีบตัว/การเคลื่อนของกระเพาะ (gastric emptying)**\n- **อาหารและ pH** ในทางเดินอาหาร\n- **รูปแบบยา (formulation)** และขนาดอนุภาค"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "เปรียบเทียบเส้นทางการให้ยา",
+          "body_md": "- **IV:** ออกฤทธิ์เร็วสุด bioavailability = 100% ไม่มี absorption phase\n- **IM/SC:** ดูดซึมขึ้นกับเลือดที่ไปเลี้ยง\n- **Oral (PO):** สะดวกแต่มี first-pass effect\n- **Sublingual/Rectal:** เลี่ยง first-pass บางส่วน (เช่น nitroglycerin อมใต้ลิ้น)\n\n**Tip:** ยาที่ถูกทำลายมากที่ตับด่านแรกมักให้ทางที่เลี่ยง first-pass"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ข้อควรระวังการดูดซึมที่เปลี่ยนไป",
+          "body_md": "- ยาลดกรด/แคลเซียม/เหล็ก จับกับ **tetracycline, fluoroquinolone** ทำให้ดูดซึมลดลง (chelation) — ต้องเว้นเวลาให้ห่างกัน\n- อาหารอาจเพิ่ม (griseofulvin) หรือลดการดูดซึม\n- ผู้ป่วยที่อาเจียน/ลำไส้บีบตัวเร็ว ดูดซึมยาทางปากไม่แน่นอน"
+        }
+      ]
+    },
+    {
+      "title_th": "Bioavailability และ First-pass effect",
+      "subtitle_th": "ชีวปริมาณออกฤทธิ์ การคำนวณ และความเทียบเท่าทางชีวภาพ",
+      "icon": "📊",
+      "est_minutes": 6,
+      "xp_reward": 13,
+      "quiz_keywords": ["bioavailability", "ชีวปริมาณออกฤทธิ์", "first-pass", "AUC", "bioequivalence", "F", "nitroglycerin", "propranolol"],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "Bioavailability (F) คืออะไร",
+          "body_md": "**Bioavailability (F)** คือสัดส่วนของยาที่ให้เข้าไปแล้วเข้าสู่กระแสเลือดในรูปที่ออกฤทธิ์ได้\n- ยาให้ทาง **IV: F = 1 (100%)** เป็นมาตรฐานอ้างอิง\n- ยาทางปาก F มักน้อยกว่า 1 เพราะดูดซึมไม่หมด + first-pass\n\nมีผลต่อขนาดยา: ยาตัวเดียวกันขนาดทางปากมักต้องสูงกว่าขนาด IV"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "First-pass effect (เมแทบอลิซึมด่านแรก)",
+          "body_md": "ยาที่ดูดซึมจากทางเดินอาหารจะผ่าน **ตับด่านแรก** ทาง portal vein ก่อนเข้าสู่ระบบไหลเวียนทั่วร่างกาย ทำให้ถูกเปลี่ยนสภาพและลดปริมาณยาที่ออกฤทธิ์\n\nยาที่มี first-pass สูง เช่น **propranolol, lidocaine, morphine, nitroglycerin, verapamil** จึงมี F ทางปากต่ำและต้องใช้ขนาดสูงกว่าทาง IV มาก"
+        },
+        {
+          "card_type": "example",
+          "title_th": "ตัวอย่างคำนวณ Absolute bioavailability",
+          "body_md": "**F = (AUC_oral / AUC_IV) × (Dose_IV / Dose_oral)**\n\nให้ยาทาง IV 50 mg ได้ AUC = 100 mg·h/L\nให้ยาเดิมทางปาก 100 mg ได้ AUC = 80 mg·h/L\n\nF = (80/100) × (50/100) = 0.8 × 0.5 = **0.4 หรือ 40%**\n\nแปลว่ายาทางปากเข้าสู่กระแสเลือดในรูปออกฤทธิ์เพียง 40%"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Bioequivalence (ความเทียบเท่าทางชีวภาพ)",
+          "body_md": "ยาสองตำรับ (เช่น generic vs original) ถือว่า **bioequivalent** เมื่อพารามิเตอร์หลักไม่ต่างกันอย่างมีนัยสำคัญ:\n- **AUC** (ปริมาณยาทั้งหมดที่ดูดซึม)\n- **Cmax** (ความเข้มข้นสูงสุด)\n- **Tmax** (เวลาที่ถึง Cmax)\n\nเกณฑ์ทั่วไป: ช่วงความเชื่อมั่น 90% ของอัตราส่วนอยู่ในช่วง **80–125%**"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำยา first-pass สูง",
+          "body_md": "ยา first-pass effect สูงจำด้วย **\"PLM-NV\"**:\n- **P** ropranolol\n- **L** idocaine\n- **M** orphine\n- **N** itroglycerin\n- **V** erapamil\n\n**Tip:** เหตุนี้ lidocaine จึงไม่ให้ทางปากเพื่อรักษาภาวะหัวใจเต้นผิดจังหวะ แต่ให้ทาง IV"
+        }
+      ]
+    },
+    {
+      "title_th": "การกระจายตัว Vd และการจับโปรตีน",
+      "subtitle_th": "Volume of distribution ปริมาตรการกระจาย และ protein binding",
+      "icon": "🌐",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": ["Vd", "volume of distribution", "ปริมาตรการกระจาย", "protein binding", "albumin", "warfarin", "free drug", "distribution"],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "Volume of distribution (Vd)",
+          "body_md": "**Vd** คือปริมาตรสมมติที่ยากระจายไป ถ้าทั้งร่างกายมีความเข้มข้นเท่าในพลาสมา\n\n**Vd = ปริมาณยาในร่างกาย / ความเข้มข้นในพลาสมา (C)**\n\n- Vd ต่ำ (~5 L) = อยู่ในเลือดเป็นหลัก (เช่น warfarin, heparin)\n- Vd สูงมาก (>100 L) = กระจายไปเนื้อเยื่อมาก (เช่น digoxin ~500 L, chloroquine)\n\nยา lipophilic และจับเนื้อเยื่อมากจะมี Vd สูง"
+        },
+        {
+          "card_type": "example",
+          "title_th": "ตัวอย่างคำนวณ Vd",
+          "body_md": "ให้ยาทาง IV 500 mg แล้ววัดความเข้มข้นในพลาสมาเริ่มต้น (C0) = 10 mg/L\n\n**Vd = Dose / C0 = 500 mg / 10 mg/L = 50 L**\n\nค่า Vd นี้นำไปใช้คำนวณ loading dose ต่อไป ยิ่ง Vd สูง ยิ่งต้องใช้ loading dose มากเพื่อให้ได้ความเข้มข้นเป้าหมาย"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "การจับกับโปรตีนในพลาสมา (Protein binding)",
+          "body_md": "ยาในเลือดมี 2 รูป:\n- **Bound (จับโปรตีน)** = ไม่ออกฤทธิ์ เป็นแหล่งสะสม\n- **Free (อิสระ)** = ออกฤทธิ์ ถูกเมแทบอไลซ์และขับออกได้\n\nโปรตีนหลัก:\n- **Albumin** จับยา **กรด** (warfarin, phenytoin, NSAIDs)\n- **α1-acid glycoprotein** จับยา **ด่าง** (lidocaine, propranolol)\n\nเฉพาะยาอิสระเท่านั้นที่ออกฤทธิ์ทางเภสัชวิทยา"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Drug displacement และภาวะ albumin ต่ำ",
+          "body_md": "เมื่อให้ยาจับโปรตีนสูง 2 ตัวพร้อมกัน อาจเกิดการ **แย่งจับ (displacement)** ทำให้ยาอิสระเพิ่มขึ้นชั่วคราว\n- **Warfarin + NSAIDs/sulfonamides** → เพิ่มฤทธิ์ต้านการแข็งตัว เสี่ยงเลือดออก\n- **Phenytoin** ในผู้ป่วย **albumin ต่ำ** (เช่น ตับ/ไตวาย) ยาอิสระสูงขึ้น แม้ระดับยารวมปกติ → ต้องแปลผลด้วยความระวัง"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ปัจจัยที่มีผลต่อการกระจายตัว",
+          "body_md": "- **เลือดที่ไปเลี้ยงอวัยวะ** อวัยวะเลือดเลี้ยงมากได้ยาเร็ว\n- **ความสามารถละลายในไขมัน** ยา lipophilic ผ่าน BBB และรกได้\n- **การจับโปรตีน/เนื้อเยื่อ**\n- **อุปสรรคทางกายภาพ** เช่น Blood-Brain Barrier (BBB), รก (placenta)\n\nยาที่ผ่าน BBB ได้ต้องไม่แตกตัวและละลายไขมันได้ดี"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "ค่าน้ำในร่างกายที่ควรจำ",
+          "body_md": "ค่าโดยประมาณในผู้ใหญ่ 70 kg:\n- **Plasma:** ~3 L\n- **Blood volume:** ~5 L\n- **Extracellular fluid:** ~14 L\n- **Total body water:** ~42 L (≈0.6 L/kg)\n\n**Tip:** Vd ที่ใกล้ค่าเหล่านี้บอกใบ้ว่ายาอยู่ใน compartment ใด แต่ Vd ไม่ใช่ปริมาตรจริงทางกายวิภาค"
+        }
+      ]
+    },
+    {
+      "title_th": "เมแทบอลิซึมและระบบ CYP450",
+      "subtitle_th": "ปฏิกิริยา Phase I/II, enzyme inducer และ inhibitor",
+      "icon": "🧬",
+      "est_minutes": 7,
+      "xp_reward": 15,
+      "quiz_keywords": ["metabolism", "CYP450", "CYP3A4", "phase I", "enzyme inducer", "enzyme inhibitor", "rifampin", "grapefruit"],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "เป้าหมายของเมแทบอลิซึม",
+          "body_md": "เมแทบอลิซึมเปลี่ยนยาให้มี **ขั้วมากขึ้น (polar)** ละลายน้ำได้ดีขึ้น เพื่อขับออกทางไตง่ายขึ้น แหล่งหลักคือ **ตับ**\n\nผลลัพธ์อาจเป็น:\n- **Inactive metabolite** (ส่วนใหญ่)\n- **Active metabolite** (เช่น codeine → morphine)\n- **Prodrug → active** (เช่น enalapril → enalaprilat)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Phase I vs Phase II",
+          "body_md": "- **Phase I (functionalization):** oxidation, reduction, hydrolysis เพิ่มหมู่ฟังก์ชัน ส่วนใหญ่ผ่าน **CYP450** มักทำให้ยาออกฤทธิ์ลดลง\n- **Phase II (conjugation):** จับกับโมเลกุล เช่น glucuronidation, sulfation, acetylation, methylation ทำให้ละลายน้ำดีและขับออกง่าย\n\nยาบางตัวผ่าน Phase II โดยตรง (เช่น lorazepam) จึงปลอดภัยกว่าในผู้ป่วยตับ"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Enzyme inducer (ตัวกระตุ้น)",
+          "body_md": "**Inducer** เพิ่มการสร้าง CYP450 → เมแทบอไลซ์ยาอื่นเร็วขึ้น → **ระดับยาอื่นลดลง** (ออกฤทธิ์ค่อยเป็นค่อยไป ใช้เวลาเป็นวัน)\n\nจำด้วย **\"CRAP-GPS\"**: **C**arbamazepine, **R**ifampin, **A**lcohol(chronic), **P**henytoin, **G**riseofulvin, **P**henobarbital, **S**t. John's wort\n\nผลตัวอย่าง: rifampin ลดประสิทธิภาพยาคุมกำเนิดและ warfarin"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Enzyme inhibitor (ตัวยับยั้ง)",
+          "body_md": "**Inhibitor** ยับยั้ง CYP450 → เมแทบอไลซ์ยาอื่นช้าลง → **ระดับยาอื่นสูงขึ้น** เสี่ยงพิษ (ออกฤทธิ์เร็วภายในชั่วโมง–วัน)\n\nจำด้วย **\"SICKFACES.COM\"** ตัวเด่น: **S**odium valproate, **I**soniazid, **C**imetidine, **K**etoconazole(azoles), **F**luconazole, **E**rythromycin/clarithromycin, **G**rapefruit juice, **O**meprazole\n\n**Grapefruit juice** ยับยั้ง CYP3A4 ที่ลำไส้ → เพิ่มระดับ statins, CCBs"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ความหลากหลายทางพันธุกรรม (Pharmacogenetics)",
+          "body_md": "- **CYP2D6:** มีทั้ง poor และ ultrarapid metabolizer → codeine ใน ultrarapid metabolizer เปลี่ยนเป็น morphine มาก เสี่ยงกดการหายใจ\n- **NAT2 (acetylation):** slow acetylator เสี่ยง isoniazid-induced neuropathy/hepatotoxicity\n- **G6PD deficiency:** เสี่ยง hemolysis จาก primaquine, sulfonamides, dapsone"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "CYP3A4 คือเอนไซม์ที่ออกข้อสอบบ่อย",
+          "body_md": "**CYP3A4** เมแทบอไลซ์ยามากที่สุด (~50%) และพบทั้งที่ตับและลำไส้\n\n**Tip:** เมื่อเจอ statins (ยกเว้น pravastatin), CCBs, ยากดภูมิ (cyclosporine, tacrolimus), macrolides, azoles ในข้อสอบ ให้นึกถึงอันตรกิริยาผ่าน CYP3A4 ทันที"
+        }
+      ]
+    },
+    {
+      "title_th": "การขับยา ค่าครึ่งชีวิต และ Clearance",
+      "subtitle_th": "Renal excretion, half-life, clearance และ steady state",
+      "icon": "🧪",
+      "est_minutes": 8,
+      "xp_reward": 16,
+      "quiz_keywords": ["clearance", "half-life", "ครึ่งชีวิต", "steady state", "renal excretion", "GFR", "t1/2", "elimination"],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "การขับยาทางไต",
+          "body_md": "ไตขับยาผ่าน 3 กระบวนการ:\n1. **Glomerular filtration** กรองเฉพาะยาอิสระ (ไม่จับโปรตีน)\n2. **Tubular secretion** หลั่งออกแบบ active transport (เช่น penicillin) แข่งกันได้\n3. **Tubular reabsorption** ดูดกลับ ขึ้นกับ pH ปัสสาวะ\n\nการทำปัสสาวะให้เป็นด่างเร่งขับยากรด (เช่น aspirin overdose ให้ sodium bicarbonate)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Clearance (CL)",
+          "body_md": "**Clearance** คือปริมาตรพลาสมาที่ถูกกำจัดยาออกหมดต่อหน่วยเวลา (เช่น mL/min)\n\n**CL = Rate of elimination / C** และ **CL_total = CL_renal + CL_hepatic + อื่นๆ**\n\nClearance เป็นตัวกำหนด **maintenance dose** และไม่เปลี่ยนตามขนาดยาใน first-order kinetics ค่าคงที่นี้สำคัญที่สุดในการคำนวณขนาดยาต่อเนื่อง"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ค่าครึ่งชีวิต (Half-life, t½)",
+          "body_md": "**t½** คือเวลาที่ความเข้มข้นยาในพลาสมาลดลงครึ่งหนึ่ง สัมพันธ์กับ Vd และ CL:\n\n**t½ = 0.693 × Vd / CL**\n\n- t½ เพิ่มเมื่อ Vd เพิ่ม หรือ CL ลด (เช่น ไต/ตับเสื่อม)\n- ใช้ทำนายเวลาเข้าสู่ steady state และเวลายาถูกขับหมด"
+        },
+        {
+          "card_type": "example",
+          "title_th": "ตัวอย่างคำนวณ t½ และเวลายาหมด",
+          "body_md": "ยาตัวหนึ่ง Vd = 50 L, CL = 5 L/h\n\n**t½ = 0.693 × 50 / 5 = 6.93 ชั่วโมง ≈ 7 ชม.**\n\nกฎ **\"4–5 half-lives\"**: หลังหยุดยา ยาจะถูกขับเกือบหมด (>94%) ใน 4–5 เท่าของ t½\n→ ประมาณ 7 × 5 = **35 ชั่วโมง** ยาจึงเกือบหมดจากร่างกาย"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Steady state (สภาวะคงตัว)",
+          "body_md": "**Steady state** คือเมื่ออัตราการให้ยา = อัตราการกำจัดยา ระดับยาในเลือดคงที่\n\nหลักสำคัญ:\n- เข้าสู่ steady state ใน **4–5 half-lives** (ไม่ขึ้นกับขนาดยา)\n- **ขนาดยา** กำหนดระดับ steady state ที่สูง/ต่ำ\n- **ความถี่และ t½** กำหนดความผันผวน (fluctuation)\n\nต้องการระดับยาเร็วกว่านี้ → ให้ loading dose"
+        },
+        {
+          "card_type": "example",
+          "title_th": "ตัวอย่างคำนวณ CrCl (Cockcroft-Gault)",
+          "body_md": "ปรับขนาดยาที่ขับทางไตต้องประเมิน creatinine clearance:\n\n**CrCl = [(140 − อายุ) × น้ำหนัก(kg)] / (72 × SCr) × 0.85 (ถ้าเพศหญิง)**\n\nชายอายุ 60 ปี น้ำหนัก 70 kg, SCr = 1.0 mg/dL\nCrCl = [(140−60) × 70] / (72 × 1.0) = 5600/72 = **77.8 mL/min**"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "การปรับขนาดยาในผู้ป่วยไต/ตับเสื่อม",
+          "body_md": "- **ไตเสื่อม:** ลดขนาด/เพิ่มช่วงห่างยา ที่ขับทางไต เช่น aminoglycosides, vancomycin, digoxin\n- **ตับเสื่อม:** ระวังยาที่ถูกเมแทบอไลซ์ที่ตับสูง (first-pass สูง) และเลือกยา Phase II\n- t½ ที่ยาวขึ้นทำให้ใช้เวลาเข้าสู่ steady state นานขึ้น เสี่ยงสะสมเป็นพิษ"
+        }
+      ]
+    },
+    {
+      "title_th": "Loading/Maintenance dose และจลนศาสตร์",
+      "subtitle_th": "การคำนวณขนาดยา zero-order vs first-order kinetics",
+      "icon": "💉",
+      "est_minutes": 7,
+      "xp_reward": 15,
+      "quiz_keywords": ["loading dose", "maintenance dose", "zero-order", "first-order", "kinetics", "phenytoin", "ethanol", "saturation"],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "Loading dose (ขนาดยาเริ่มต้น)",
+          "body_md": "**Loading dose** ใช้เพื่อให้ถึงระดับยาเป้าหมายเร็วโดยไม่ต้องรอ 4–5 half-lives\n\n**Loading dose = (Css เป้าหมาย × Vd) / F**\n\n- ขึ้นกับ **Vd** เป็นหลัก ไม่ขึ้นกับ clearance/ไต\n- จึงมักไม่ต้องปรับ loading dose ในผู้ป่วยไตเสื่อม (แต่ปรับ maintenance)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Maintenance dose (ขนาดยาคงระดับ)",
+          "body_md": "**Maintenance dose** ชดเชยยาที่ถูกกำจัด เพื่อรักษาระดับ steady state\n\n**Dosing rate = (Css × CL) / F**\n\n- ขึ้นกับ **clearance** เป็นหลัก\n- ในผู้ป่วยไต/ตับเสื่อมที่ CL ลด ต้อง **ลด maintenance dose** หรือเพิ่มช่วงห่าง"
+        },
+        {
+          "card_type": "example",
+          "title_th": "ตัวอย่างคำนวณ Loading dose",
+          "body_md": "ต้องการ Css = 15 mg/L, Vd = 50 L, ให้ยาทาง IV (F = 1)\n\n**Loading dose = (15 mg/L × 50 L) / 1 = 750 mg**\n\nถ้าให้ทางปาก F = 0.75:\nLoading dose = 750 / 0.75 = **1000 mg** (ต้องให้มากขึ้นเพราะดูดซึมไม่หมด)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "First-order kinetics",
+          "body_md": "**First-order:** อัตราการกำจัดยา **แปรผันตามความเข้มข้น** ของยา\n- กำจัดสัดส่วนคงที่ต่อหน่วยเวลา (เช่น 50% ทุก t½)\n- **t½ และ clearance คงที่** ไม่ขึ้นกับขนาดยา\n- ยาส่วนใหญ่เป็นแบบนี้\n- กราฟ ln(C) ต่อเวลาเป็นเส้นตรง"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Zero-order kinetics",
+          "body_md": "**Zero-order:** กำจัดยา **ปริมาณคงที่ต่อหน่วยเวลา** (เอนไซม์อิ่มตัว, saturation)\n- ไม่มี t½ คงที่ — t½ เพิ่มขึ้นเมื่อขนาดยาเพิ่ม\n- เพิ่มขนาดยาเล็กน้อยอาจทำให้ระดับยาพุ่งสูงผิดสัดส่วน เสี่ยงพิษ\n\nยาตัวอย่าง: **ethanol, phenytoin (ขนาดสูง), aspirin (ขนาดสูง), theophylline**"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำยา zero-order",
+          "body_md": "ยา zero-order (capacity-limited) จำด้วย **\"PEA\"** + theophylline:\n- **P** henytoin (ขนาดสูง)\n- **E** thanol\n- **A** spirin (salicylate ขนาดสูง)\n- (Theophylline)\n\n**Warning:** phenytoin มี nonlinear kinetics จึงต้อง TDM และปรับขนาดอย่างระมัดระวัง เพราะเพิ่มขนาดเล็กน้อยอาจเป็นพิษ"
+        }
+      ]
+    },
+    {
+      "title_th": "เภสัชพลศาสตร์และตัวรับยา (Pharmacodynamics)",
+      "subtitle_th": "Receptor, agonist/antagonist, EC50, potency vs efficacy, TI",
+      "icon": "🎯",
+      "est_minutes": 7,
+      "xp_reward": 15,
+      "quiz_keywords": ["pharmacodynamics", "เภสัชพลศาสตร์", "agonist", "antagonist", "EC50", "potency", "efficacy", "therapeutic index"],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "ตัวรับยาและการตอบสนอง (Receptors)",
+          "body_md": "ยาออกฤทธิ์โดยจับ **ตัวรับ (receptor)** ชนิดหลัก:\n- **G-protein coupled receptors (GPCR)**\n- **Ligand-gated ion channels** (เร็วที่สุด เช่น nicotinic)\n- **Enzyme-linked receptors** (เช่น tyrosine kinase, insulin)\n- **Intracellular/nuclear receptors** (ช้าสุด เช่น steroid, thyroid)\n\n**Affinity** = ความสามารถจับตัวรับ"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Agonist vs Antagonist",
+          "body_md": "- **Full agonist:** จับและกระตุ้นเต็มที่ (intrinsic activity = 1)\n- **Partial agonist:** กระตุ้นได้บางส่วน (เช่น buprenorphine)\n- **Antagonist:** จับแต่ไม่กระตุ้น (intrinsic activity = 0)\n  - **Competitive (แข่งขัน):** เพิ่ม agonist เอาชนะได้ → กราฟเลื่อนขวา Emax คงเดิม\n  - **Noncompetitive (ไม่แข่งขัน):** เอาชนะไม่ได้ → ลด Emax\n- **Inverse agonist:** ให้ผลตรงข้าม baseline"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "EC50, Emax, Potency vs Efficacy",
+          "body_md": "- **EC50:** ความเข้มข้นที่ให้ผล 50% ของผลสูงสุด — ค่ายิ่งต่ำยิ่ง **potent**\n- **Emax:** ผลสูงสุดที่ยาทำได้ — สะท้อน **efficacy**\n\n**Potency ≠ Efficacy:**\n- **Potency** = ใช้ขนาดน้อยก็ออกฤทธิ์ (ตำแหน่งกราฟ)\n- **Efficacy** = ออกฤทธิ์สูงสุดได้แค่ไหน (ความสูงกราฟ)\n\nยา efficacy สูงสำคัญกว่า potency ทางคลินิก"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Therapeutic Index (TI)",
+          "body_md": "**TI = TD50 / ED50** (หรือ LD50/ED50 ในสัตว์ทดลอง)\n\n- TI สูง = ปลอดภัย ช่วงระหว่างขนาดรักษากับขนาดพิษกว้าง\n- **TI แคบ** = อันตราย ต้องเฝ้าระวัง/TDM\n\nยา TI แคบที่ออกข้อสอบบ่อย: **warfarin, digoxin, phenytoin, lithium, theophylline, aminoglycosides**"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Tolerance, Tachyphylaxis และ Desensitization",
+          "body_md": "- **Tolerance:** ต้องเพิ่มขนาดยาเพื่อให้ได้ผลเท่าเดิม (ค่อยเป็นค่อยไป เช่น opioids)\n- **Tachyphylaxis:** การตอบสนองลดลงอย่างรวดเร็วเมื่อให้ยาซ้ำถี่ (เช่น ephedrine)\n- **Up-regulation:** ตัวรับเพิ่มเมื่อถูก antagonist นานๆ → หยุดยาทันทีเสี่ยง rebound (เช่น beta-blocker)"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "การจำตัวรับ antagonist สำคัญ",
+          "body_md": "**Tip:** เมื่อหยุดยาที่ทำให้ตัวรับ up-regulate ห้ามหยุดทันที\n- หยุด **beta-blocker** ทันที → rebound tachycardia/hypertension/angina\n- หยุด **clonidine** ทันที → rebound hypertension รุนแรง\n\nต้อง **ค่อยๆ ลดขนาด (taper)** เสมอ"
+        }
+      ]
+    },
+    {
+      "title_th": "ระบบประสาทอัตโนมัติและยา (ANS)",
+      "subtitle_th": "Cholinergic / Adrenergic ตัวรับและยาที่ออกข้อสอบ",
+      "icon": "⚡",
+      "est_minutes": 8,
+      "xp_reward": 16,
+      "quiz_keywords": ["autonomic", "ระบบประสาทอัตโนมัติ", "cholinergic", "adrenergic", "muscarinic", "atropine", "beta-blocker", "epinephrine"],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "ภาพรวมระบบประสาทอัตโนมัติ",
+          "body_md": "- **Sympathetic (ซิมพาเทติก):** \"fight or flight\" สารสื่อ **norepinephrine** ที่ effector (ยกเว้นต่อมเหงื่อใช้ ACh)\n- **Parasympathetic (พาราซิมพาเทติก):** \"rest and digest\" สารสื่อ **acetylcholine (ACh)**\n\nทั้งสองระบบใช้ **ACh ที่ ganglia (nicotinic)** เหมือนกัน ความต่างอยู่ที่สารสื่อปลายทาง"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ตัวรับ Cholinergic",
+          "body_md": "- **Muscarinic (M1–M5):** GPCR ที่อวัยวะ parasympathetic\n  - M2 = หัวใจ (ลดอัตราเต้น), M3 = กล้ามเนื้อเรียบ/ต่อม\n- **Nicotinic:** ion channel\n  - **Nn** ที่ ganglia, **Nm** ที่ neuromuscular junction\n\nกระตุ้น muscarinic = **\"DUMBBELS\"**: Diarrhea, Urination, Miosis, Bradycardia, Bronchospasm, Emesis, Lacrimation, Salivation"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ยา Cholinergic (Parasympathetic)",
+          "body_md": "- **Cholinergic agonist:** pilocarpine (รักษาต้อหิน), bethanechol (กระตุ้นกระเพาะปัสสาวะ)\n- **Cholinesterase inhibitor:** neostigmine, pyridostigmine (myasthenia gravis), donepezil (Alzheimer), organophosphate (สารพิษ)\n- **Antimuscarinic (anticholinergic):** **atropine** (bradycardia, แก้พิษ organophosphate), ipratropium (หอบหืด), oxybutynin (กระเพาะปัสสาวะไวเกิน)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ตัวรับ Adrenergic",
+          "body_md": "- **α1:** หลอดเลือดหดตัว (vasoconstriction), ↑BP, mydriasis\n- **α2:** ยับยั้ง presynaptic (ลด NE), ลดความดัน (clonidine)\n- **β1:** หัวใจ — เพิ่มอัตราและแรงบีบ, renin\n- **β2:** ขยายหลอดลม/หลอดเลือด, มดลูกคลายตัว\n- **β3:** สลายไขมัน, กระเพาะปัสสาวะคลายตัว\n\nEpinephrine กระตุ้นทั้ง α และ β; norepinephrine เน้น α1 และ β1"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ยา Adrenergic (Sympathetic)",
+          "body_md": "- **β2-agonist:** salbutamol/albuterol, terbutaline (ขยายหลอดลม)\n- **β-blocker:** propranolol (ไม่เลือก), metoprolol/atenolol (เลือก β1)\n- **α1-blocker:** prazosin, doxazosin, tamsulosin (BPH)\n- **α2-agonist:** clonidine, methyldopa (ลดความดัน)\n- **Nonselective:** epinephrine (anaphylaxis), norepinephrine (shock), dopamine"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ข้อควรระวังยา ANS ที่ออกข้อสอบ",
+          "body_md": "- **Nonselective β-blocker (propranolol)** ห้ามในผู้ป่วยหอบหืด เสี่ยง bronchospasm\n- **Atropine** ทำให้ปากแห้ง ตาพร่า ปัสสาวะคั่ง ท้องผูก ใจสั่น — ระวังในผู้สูงอายุและต้อหินมุมปิด\n- **Antidote organophosphate:** atropine + pralidoxime\n- **β-blocker** บดบังอาการ hypoglycemia ในเบาหวาน"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำผล Adrenergic receptor",
+          "body_md": "จำหน้าที่ตัวรับ:\n- **\"1 หัวใจ, 2 ปอด\"** → **β1 = heart, β2 = lungs**\n- **α1 = บีบ (constrict)** หลอดเลือด ↑ความดัน\n- **α2 = เบรก (brake)** ยับยั้งการหลั่ง NE\n\n**Tip:** ใช้ epinephrine ใน anaphylaxis เพราะกระตุ้น α1 (↑BP) + β1 (หัวใจ) + β2 (ขยายหลอดลม) พร้อมกัน"
+        }
+      ]
+    }
+  ]
+}

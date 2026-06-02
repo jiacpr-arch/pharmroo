@@ -1,31 +1,138 @@
 {
   "subject": "Infectious",
-  "unit": { "title_th": "โรคติดเชื้อ", "description_th": "หลักการเลือกใช้ยาปฏิชีวนะและข้อควรระวังของยาปฏิชีวนะสำคัญ", "icon": "🦠" },
+  "unit": {
+    "title_th": "โรคติดเชื้อและยาปฏิชีวนะ",
+    "description_th": "หลักการเลือกใช้ยาปฏิชีวนะตามกลุ่มยาและการใช้ทางคลินิก ครอบคลุม beta-lactams, macrolides, fluoroquinolones, aminoglycosides, glycopeptides, tetracyclines/sulfonamides, ยาต้านวัณโรค ยาต้านเชื้อรา และการเลือกยาในโรคติดเชื้อที่พบบ่อย พร้อมข้อควรระวังด้านความปลอดภัยสำหรับการสอบใบประกอบวิชาชีพเภสัชกรรม",
+    "icon": "🦠"
+  },
   "lessons": [
     {
       "title_th": "หลักการเลือกยาปฏิชีวนะ",
-      "subtitle_th": "Spectrum และ Empiric therapy",
+      "subtitle_th": "Empiric vs definitive, spectrum, PK/PD",
       "icon": "🎯",
-      "est_minutes": 5,
-      "xp_reward": 10,
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": ["ยาปฏิชีวนะ", "empiric", "definitive", "ดื้อยา", "spectrum", "bactericidal", "PK/PD", "MIC"],
       "cards": [
-        { "card_type": "concept", "title_th": "Empiric vs Definitive", "body_md": "- **Empiric therapy**: เลือกยาตามเชื้อที่คาดว่าน่าจะเป็น ก่อนผล culture\n- **Definitive therapy**: ปรับยาให้แคบลง (de-escalation) ตามผลเพาะเชื้อและ susceptibility\n\nควรเก็บ culture **ก่อน** เริ่มยาปฏิชีวนะเสมอ" },
-        { "card_type": "concept", "title_th": "Bactericidal vs Bacteriostatic", "body_md": "- **Bactericidal** (ฆ่าเชื้อ): beta-lactam, aminoglycoside, fluoroquinolone, vancomycin\n- **Bacteriostatic** (ยับยั้ง): macrolide, tetracycline, clindamycin, sulfonamide\n\nในผู้ป่วยภูมิคุ้มกันต่ำหรือติดเชื้อรุนแรง (เช่น เยื่อหุ้มสมองอักเสบ) นิยม bactericidal" },
-        { "card_type": "tip", "title_th": "PK/PD ของยา", "body_md": "- **Time-dependent** (beta-lactam): ประสิทธิภาพขึ้นกับเวลาที่ระดับยาเหนือ MIC → ให้บ่อยครั้ง/infusion\n- **Concentration-dependent** (aminoglycoside, fluoroquinolone): ขึ้นกับความเข้มข้นสูงสุด → ให้ขนาดสูงวันละครั้ง" },
-        { "card_type": "mnemonic", "title_th": "เชื้อที่ครอบคลุมยาก", "body_md": "จำเชื้อดื้อยาที่ต้องระวัง **\"ESKAPE\"**:\n- **E**nterococcus\n- **S**. aureus (MRSA)\n- **K**lebsiella\n- **A**cinetobacter\n- **P**seudomonas\n- **E**nterobacter\n\nเป็นกลุ่มที่มักดื้อยาและต้องเลือกยาเฉพาะ" }
+        { "card_type": "concept", "title_th": "Empiric vs Definitive", "body_md": "- **Empiric therapy**: เลือกยาตามเชื้อที่คาดว่าน่าจะเป็นตามตำแหน่งและอาการ ก่อนได้ผล culture มักเป็น broad-spectrum\n- **Definitive therapy**: ปรับยาให้แคบลง (**de-escalation**) ตามผลเพาะเชื้อและ susceptibility\n\nเก็บ culture **ก่อน** เริ่มยาปฏิชีวนะเสมอ เพื่อไม่ให้ผลเพาะเชื้อผิดพลาด" },
+        { "card_type": "concept", "title_th": "Spectrum และ Gram stain", "body_md": "เลือกยาตาม **gram-positive / gram-negative / atypical / anaerobe**\n- **Narrow-spectrum**: ครอบคลุมเชื้อจำเพาะ ลดการดื้อยา\n- **Broad-spectrum**: ครอบคลุมกว้าง ใช้เมื่อยังไม่ทราบเชื้อหรือผู้ป่วยรุนแรง\n\nหลักการ antibiotic stewardship: ใช้แคบที่สุดเท่าที่จะทำได้" },
+        { "card_type": "concept", "title_th": "Bactericidal vs Bacteriostatic", "body_md": "- **Bactericidal** (ฆ่าเชื้อ): beta-lactam, aminoglycoside, fluoroquinolone, vancomycin, metronidazole\n- **Bacteriostatic** (ยับยั้ง): macrolide, tetracycline, clindamycin, sulfonamide, linezolid\n\nในผู้ป่วยภูมิคุ้มกันต่ำ เยื่อหุ้มสมองอักเสบ เยื่อบุหัวใจอักเสบ นิยม **bactericidal**" },
+        { "card_type": "tip", "title_th": "PK/PD ของยา", "body_md": "- **Time-dependent** (beta-lactam): ประสิทธิภาพขึ้นกับ **%T>MIC** (เวลาที่ระดับยาเหนือ MIC) → ให้ถี่ขึ้น/extended infusion\n- **Concentration-dependent** (aminoglycoside, fluoroquinolone): ขึ้นกับ **Cmax/MIC** และ **AUC/MIC** → ให้ขนาดสูงวันละครั้ง\n- **Vancomycin**: AUC/MIC เป้าหมาย ~400-600" },
+        { "card_type": "mnemonic", "title_th": "เชื้อดื้อยา ESKAPE", "body_md": "จำเชื้อดื้อยาที่ต้องระวัง **\"ESKAPE\"**:\n- **E**nterococcus (VRE)\n- **S**. aureus (MRSA)\n- **K**lebsiella (ESBL/CRE)\n- **A**cinetobacter\n- **P**seudomonas\n- **E**nterobacter\n\nกลุ่มนี้มักดื้อยาหลายขนาน ต้องเลือกยาเฉพาะตาม susceptibility" },
+        { "card_type": "example", "title_th": "ตัวอย่าง de-escalation", "body_md": "ผู้ป่วย sepsis เริ่ม empiric **piperacillin/tazobactam + vancomycin**\n\nผล culture: *E. coli* ไวต่อ ceftriaxone\n\n→ ปรับเป็น **ceftriaxone** ตัวเดียว (de-escalate) หยุด vancomycin เพราะไม่พบ gram-positive ดื้อยา ช่วยลดการดื้อยาและ ADR" }
       ]
     },
     {
-      "title_th": "ข้อควรระวังยาปฏิชีวนะสำคัญ",
-      "subtitle_th": "ADR ของ Aminoglycoside, FQ, Macrolide",
-      "icon": "⚠️",
-      "est_minutes": 6,
-      "xp_reward": 10,
+      "title_th": "Beta-lactams",
+      "subtitle_th": "Penicillins, cephalosporins, carbapenems",
+      "icon": "💊",
+      "est_minutes": 8,
+      "xp_reward": 16,
+      "quiz_keywords": ["penicillin", "amoxicillin", "ceftriaxone", "carbapenem", "แพ้ยา", "cephalosporin", "ESBL", "beta-lactam"],
       "cards": [
-        { "card_type": "warning", "title_th": "Aminoglycoside", "body_md": "Gentamicin, amikacin มีพิษสำคัญ 2 อย่าง:\n- **Nephrotoxicity** (พิษต่อไต มักกลับคืนได้)\n- **Ototoxicity** (พิษต่อหู อาจถาวร)\n\nต้องติดตามค่าไตและระดับยา และปรับขนาดตาม CrCl" },
-        { "card_type": "warning", "title_th": "Fluoroquinolone", "body_md": "Ciprofloxacin, levofloxacin มีข้อควรระวัง:\n- **เอ็นอักเสบ/เอ็นฉีกขาด** (tendon rupture) โดยเฉพาะ Achilles\n- **QT prolongation**\n- ห้าม/ระวังในเด็กและหญิงตั้งครรภ์ (กระทบกระดูกอ่อน)\n- ลดการดูดซึมเมื่อกินคู่กับ antacid, Ca, Fe, Mg → เว้นระยะ" },
-        { "card_type": "warning", "title_th": "Macrolide", "body_md": "Erythromycin, clarithromycin, azithromycin:\n- **QT prolongation**\n- **ยับยั้ง CYP3A4** (clarithromycin, erythromycin) → drug interaction มาก เช่น กับ statin, warfarin\n- azithromycin interaction น้อยกว่าเพราะไม่ยับยั้ง CYP มาก" },
-        { "card_type": "tip", "title_th": "Allergy cross-reactivity", "body_md": "- ผู้แพ้ **penicillin** มีโอกาสแพ้ข้ามกับ cephalosporin ได้บ้าง (รุ่นเก่า/sidechain คล้ายกัน) แต่ต่ำกว่าที่เคยเชื่อ\n- ถ้าแพ้รุนแรง (anaphylaxis) ต่อ penicillin ให้หลีกเลี่ยง beta-lactam และเลือกกลุ่มอื่น เช่น macrolide" }
+        { "card_type": "concept", "title_th": "กลไกและกลุ่มย่อย", "body_md": "Beta-lactam ยับยั้งการสร้างผนังเซลล์ (จับ PBP) เป็น **bactericidal time-dependent**\n\nกลุ่มหลัก:\n- **Penicillins**\n- **Cephalosporins** รุ่น 1-5\n- **Carbapenems**\n- **Monobactam** (aztreonam)\n\nเชื้อดื้อด้วยเอนไซม์ **beta-lactamase** → แก้ด้วยตัวยับยั้ง (clavulanate, tazobactam, sulbactam)" },
+        { "card_type": "concept", "title_th": "Penicillins", "body_md": "- **Penicillin G/V**: streptococci, syphilis\n- **Aminopenicillin** (amoxicillin, ampicillin): กว้างขึ้น gram-neg บางตัว, *Enterococcus*, *Listeria*\n- **Anti-staph** (cloxacillin, dicloxacillin): MSSA\n- **Antipseudomonal** (piperacillin): + tazobactam ครอบคลุม *Pseudomonas*, anaerobe\n- **Co-amoxiclav**: เพิ่ม coverage เชื้อสร้าง beta-lactamase" },
+        { "card_type": "concept", "title_th": "Cephalosporins รุ่น 1-5", "body_md": "- **รุ่น 1** (cefazolin, cephalexin): gram-pos ดี ใช้ surgical prophylaxis, skin\n- **รุ่น 2** (cefuroxime): + gram-neg, respiratory\n- **รุ่น 3** (ceftriaxone, cefotaxime, ceftazidime): gram-neg กว้าง; ceftazidime ครอบ *Pseudomonas*\n- **รุ่น 4** (cefepime): กว้างทั้ง gram-pos/neg + *Pseudomonas*\n- **รุ่น 5** (ceftaroline): ครอบคลุม **MRSA**" },
+        { "card_type": "concept", "title_th": "Carbapenems & monobactam", "body_md": "- **Carbapenems** (imipenem, meropenem, ertapenem): broad-spectrum สุด ครอบคลุม **ESBL**; ertapenem ไม่ครอบ *Pseudomonas*\n- ใช้สงวนสำหรับเชื้อดื้อยา\n- **Aztreonam**: ครอบเฉพาะ gram-neg ไม่ cross-react กับ penicillin (ใช้ในผู้แพ้ penicillin ได้)" },
+        { "card_type": "warning", "title_th": "การแพ้ penicillin & cross-reactivity", "body_md": "- แพ้ penicillin มีโอกาส **cross-react กับ cephalosporin** จริง แต่ต่ำกว่าที่เคยเชื่อ (~1-2%) สัมพันธ์กับ **side chain** ที่คล้ายกันมากกว่า ring\n- หากเคย **anaphylaxis** ต่อ penicillin → หลีกเลี่ยง cephalosporin/carbapenem ที่ side chain คล้าย; เลือก aztreonam หรือกลุ่มอื่น\n- imipenem อาจลดเกณฑ์ชัก (seizure)" },
+        { "card_type": "tip", "title_th": "เคล็ดการใช้", "body_md": "- ส่วนใหญ่ขับทางไต → ปรับขนาดตาม CrCl (ยกเว้น ceftriaxone ขับทางน้ำดี)\n- **Ceftriaxone** ห้ามผสม/ให้คู่กับสารละลายที่มีแคลเซียมในทารกแรกเกิด (ตกตะกอน)\n- amoxicillin ดูดซึมดีกว่า ampicillin ทางปาก" }
+      ]
+    },
+    {
+      "title_th": "Macrolides & Lincosamides",
+      "subtitle_th": "Azithromycin, clarithromycin, clindamycin",
+      "icon": "🔄",
+      "est_minutes": 6,
+      "xp_reward": 12,
+      "quiz_keywords": ["azithromycin", "clarithromycin", "clindamycin", "atypical", "QT prolongation", "CYP3A4", "C. difficile", "macrolide"],
+      "cards": [
+        { "card_type": "concept", "title_th": "Macrolides", "body_md": "Erythromycin, clarithromycin, azithromycin ยับยั้งการสร้างโปรตีน (50S) เป็น **bacteriostatic**\n\nครอบคลุม: gram-pos, **atypical** (*Mycoplasma*, *Chlamydophila*, *Legionella*), บางส่วนของ *H. influenzae*\n\nใช้บ่อยใน CAP, pertussis, และทางเลือกในผู้แพ้ penicillin" },
+        { "card_type": "concept", "title_th": "Clindamycin (lincosamide)", "body_md": "ยับยั้ง 50S เช่นกัน ครอบคลุม **gram-pos** (รวม MSSA, บาง MRSA ในชุมชน) และ **anaerobe เหนือกะบังลม**\n\nใช้ใน skin/soft tissue infection, aspiration pneumonia, ลด toxin ใน necrotizing infection (เสริม)\n\nไม่ครอบคลุม gram-negative aerobe" },
+        { "card_type": "warning", "title_th": "Clindamycin & C. difficile", "body_md": "Clindamycin เป็นยาที่สัมพันธ์กับ **C. difficile-associated diarrhea / pseudomembranous colitis** อย่างเด่นชัด\n\nระวังอาการท้องเสียรุนแรง มีไข้ หลังใช้ยา → หยุดยาและรักษาด้วย oral vancomycin หรือ fidaxomicin (ไม่ใช้ยาหยุดถ่าย)" },
+        { "card_type": "warning", "title_th": "QT & drug interaction", "body_md": "- Macrolide ทำให้ **QT prolongation** (เสี่ยง torsades) โดยเฉพาะ erythromycin, clarithromycin\n- **Clarithromycin/erythromycin ยับยั้ง CYP3A4** → เพิ่มระดับ statin (rhabdomyolysis), warfarin, calcium channel blocker\n- **Azithromycin** interaction น้อยกว่ามากเพราะไม่ยับยั้ง CYP" },
+        { "card_type": "tip", "title_th": "เลือกใช้อย่างไร", "body_md": "- **Azithromycin** กินวันละครั้ง คอร์สสั้น (เช่น 3-5 วัน) สะดวก ใช้ CAP, STI (chlamydia)\n- ถ้าผู้ป่วยกินยาที่ผ่าน CYP3A4 มาก → เลี่ยง clarithromycin เลือก azithromycin\n- รับประทาน erythromycin อาจคลื่นไส้จากฤทธิ์ motilin" },
+        { "card_type": "example", "title_th": "ตัวอย่างทางคลินิก", "body_md": "ผู้ป่วย CAP นอก รพ. แพ้ penicillin แบบ rash เล็กน้อย ไม่มีโรคร่วม\n\n→ ให้ **azithromycin** หรือ doxycycline เป็น empiric สำหรับเชื้อ atypical และ pneumococcus ตามแนวทาง outpatient CAP" }
+      ]
+    },
+    {
+      "title_th": "Fluoroquinolones",
+      "subtitle_th": "Ciprofloxacin, levofloxacin และ ADR สำคัญ",
+      "icon": "🧬",
+      "est_minutes": 6,
+      "xp_reward": 13,
+      "quiz_keywords": ["ciprofloxacin", "levofloxacin", "tendon rupture", "QT prolongation", "เด็ก", "antacid", "fluoroquinolone", "UTI"],
+      "cards": [
+        { "card_type": "concept", "title_th": "กลไกและสเปกตรัม", "body_md": "Fluoroquinolone ยับยั้ง **DNA gyrase และ topoisomerase IV** เป็น **bactericidal concentration-dependent**\n\n- **Ciprofloxacin**: gram-neg เด่น รวม *Pseudomonas*; ใช้ UTI, GI infection\n- **Levofloxacin/moxifloxacin** (respiratory FQ): + gram-pos/pneumococcus และ atypical; ใช้ CAP\n- moxifloxacin ครอบ anaerobe แต่ระดับในปัสสาวะต่ำ (ไม่ใช้ UTI)" },
+        { "card_type": "warning", "title_th": "Tendon & musculoskeletal", "body_md": "- เสี่ยง **เอ็นอักเสบ/เอ็นฉีกขาด** (tendinitis/rupture) โดยเฉพาะ **Achilles**; เสี่ยงมากในผู้สูงอายุ ผู้ใช้ corticosteroid ผู้ปลูกถ่ายอวัยวะ\n- กระทบ **กระดูกอ่อน** → หลีกเลี่ยงในเด็กและหญิงตั้งครรภ์/ให้นม (ใช้เมื่อจำเป็นจริง)\n- อาจเกิด peripheral neuropathy" },
+        { "card_type": "warning", "title_th": "QT, glucose, CNS", "body_md": "- **QT prolongation** (moxifloxacin เด่น) → ระวังร่วมกับยาอื่นที่ยืด QT\n- **น้ำตาลผิดปกติ** ทั้งสูง/ต่ำ โดยเฉพาะผู้ป่วยเบาหวานที่ใช้ยาลดน้ำตาล\n- ผลต่อ **CNS**: นอนไม่หลับ สับสน ชัก; ระวังในผู้มีประวัติชัก" },
+        { "card_type": "tip", "title_th": "การดูดซึมและ interaction", "body_md": "- **ลดการดูดซึมมาก** เมื่อกินคู่กับ antacid, ยาที่มี **Ca, Mg, Al, Fe, Zn** และนม → เว้นระยะ (กิน FQ ก่อน 2 ชม. หรือหลัง 6 ชม.)\n- เพิ่มระดับ **theophylline** และเสริมฤทธิ์ warfarin\n- ciprofloxacin ยับยั้ง CYP1A2" },
+        { "card_type": "concept", "title_th": "ข้อบ่งใช้สำคัญ", "body_md": "- **UTI/pyelonephritis** (ciprofloxacin, levofloxacin)\n- **CAP** (respiratory FQ เมื่อมีโรคร่วมหรือแพ้ยาอื่น)\n- **GI**: traveler's diarrhea, typhoid (ระวังการดื้อยา)\n- ครอบ *Pseudomonas* (cipro, levo)" },
+        { "card_type": "mnemonic", "title_th": "จำ ADR ด้วย \"FLOXED\"", "body_md": "ผลข้างเคียงเด่นของ FQ:\n- **T**endon rupture\n- **Q**T prolongation\n- **C**NS (ชัก/สับสน)\n- **G**lucose dysregulation\n- **C**artilage (เด็ก/ตั้งครรภ์)\n\nองค์การยาหลายประเทศแนะนำสงวน FQ สำหรับเมื่อไม่มีทางเลือกอื่นที่เหมาะสม" }
+      ]
+    },
+    {
+      "title_th": "Aminoglycosides & Glycopeptides",
+      "subtitle_th": "Gentamicin, amikacin, vancomycin + TDM",
+      "icon": "🩸",
+      "est_minutes": 7,
+      "xp_reward": 15,
+      "quiz_keywords": ["gentamicin", "amikacin", "vancomycin", "nephrotoxicity", "ototoxicity", "red man syndrome", "TDM", "MRSA"],
+      "cards": [
+        { "card_type": "concept", "title_th": "Aminoglycosides", "body_md": "Gentamicin, amikacin, tobramycin ยับยั้ง 30S เป็น **bactericidal concentration-dependent**\n\n- ครอบคลุม **gram-negative aerobe** รวม *Pseudomonas* (amikacin/tobramycin)\n- มัก **เสริมฤทธิ์ (synergy)** กับ beta-lactam ใน enterococcal endocarditis\n- ไม่ออกฤทธิ์ในภาวะไร้ออกซิเจน (anaerobe ไม่ครอบ)" },
+        { "card_type": "warning", "title_th": "Nephro- & ototoxicity", "body_md": "- **Nephrotoxicity**: ไตวายแบบ non-oliguric มัก**กลับคืนได้** ติดตาม SCr/urine output\n- **Ototoxicity**: พิษต่อหูชั้นในทั้งการได้ยินและการทรงตัว มัก**ถาวร**\n- เสี่ยงมากเมื่อใช้นาน ขนาดสูง ร่วมยาพิษไต (vancomycin, NSAID, contrast) และผู้สูงอายุ" },
+        { "card_type": "tip", "title_th": "Once-daily & TDM", "body_md": "- **Extended-interval (once-daily) dosing**: ใช้ Cmax/MIC สูง ลดการสะสมที่ไต/หู เหมาะกับผู้ป่วยไตปกติส่วนใหญ่\n- ติดตาม **peak** (ประสิทธิภาพ) และ **trough** (ความปลอดภัย ต้องต่ำ)\n- ปรับขนาดตาม CrCl เสมอ" },
+        { "card_type": "concept", "title_th": "Vancomycin", "body_md": "Glycopeptide ยับยั้งการสร้างผนังเซลล์ เป็น **bactericidal time/AUC-dependent**\n\n- ครอบคลุม **gram-positive** รวม **MRSA**, *Enterococcus*, และ oral form ใช้ **C. difficile**\n- IV ไม่ดูดซึมทางปาก / oral ไม่ดูดซึมเข้ากระแสเลือด (ใช้คนละข้อบ่งใช้)\n- ติดตาม **AUC/MIC ~400-600** (หรือ trough ตามแนวทางเดิม)" },
+        { "card_type": "warning", "title_th": "Red man & nephrotoxicity", "body_md": "- **Red man syndrome**: หน้า/คอแดง คันจากการหลั่ง histamine เมื่อ **infuse เร็วเกินไป** → ไม่ใช่การแพ้จริง แก้โดย **ลดความเร็ว infusion** และให้ antihistamine\n- **Nephrotoxicity** เพิ่มขึ้นเมื่อใช้ร่วม aminoglycoside หรือ piperacillin/tazobactam\n- ติดตามการทำงานของไต" },
+        { "card_type": "example", "title_th": "ตัวอย่าง TDM", "body_md": "ผู้ป่วย MRSA bacteremia ได้ vancomycin IV\n\n→ คำนวณขนาดตามน้ำหนักและไต ติดตามระดับยาเพื่อให้ **AUC/MIC** อยู่ในเป้าหมาย หลีกเลี่ยงระดับสูงเกินที่เพิ่มพิษต่อไต ปรับขนาดเมื่อ SCr เปลี่ยน" }
+      ]
+    },
+    {
+      "title_th": "Tetracyclines & Sulfonamides",
+      "subtitle_th": "Doxycycline, co-trimoxazole, metronidazole",
+      "icon": "🟡",
+      "est_minutes": 6,
+      "xp_reward": 12,
+      "quiz_keywords": ["doxycycline", "co-trimoxazole", "metronidazole", "photosensitivity", "G6PD", "เด็ก", "tetracycline", "Stevens-Johnson"],
+      "cards": [
+        { "card_type": "concept", "title_th": "Tetracyclines", "body_md": "Doxycycline, tetracycline, minocycline ยับยั้ง 30S เป็น **bacteriostatic**\n\nครอบคลุม **atypical**, *Rickettsia* (scrub typhus), *Vibrio*, leptospira, acne, CAP, และบาง MRSA ในชุมชน\n\nDoxycycline เป็นยาหลักของ **scrub typhus** และ leptospirosis ที่พบในไทย" },
+        { "card_type": "warning", "title_th": "ข้อห้าม tetracycline", "body_md": "- หลีกเลี่ยงใน **เด็ก < 8 ปี และหญิงตั้งครรภ์**: คราบฟันเหลือง (tooth discoloration) และกระทบการเจริญกระดูก\n- **Photosensitivity**: ระวังแดด ใช้ครีมกันแดด\n- ระวัง esophagitis → กินพร้อมน้ำมากๆ และอยู่ในท่าตั้งตรง" },
+        { "card_type": "tip", "title_th": "การดูดซึม tetracycline", "body_md": "เช่นเดียวกับ FQ ยา **จับกับ cation** (Ca, Mg, Al, Fe) และนม/antacid → **ลดการดูดซึม**\n\nเว้นระยะการกิน; doxycycline ได้รับผลกระทบน้อยกว่า tetracycline ดั้งเดิมและไม่ต้องปรับขนาดตามไตมาก" },
+        { "card_type": "concept", "title_th": "Sulfonamides (co-trimoxazole)", "body_md": "**Co-trimoxazole** = trimethoprim/sulfamethoxazole ยับยั้งการสร้าง folate\n\nครอบคลุม: UTI, *Pneumocystis jirovecii* (PCP รักษา/ป้องกัน), บาง MRSA ในชุมชน, *Stenotrophomonas*\n\nเป็นยาหลักของ **PCP** ในผู้ป่วย HIV" },
+        { "card_type": "warning", "title_th": "ความปลอดภัย sulfonamide", "body_md": "- เสี่ยง **ผื่นแพ้รุนแรง Stevens-Johnson/TEN**\n- **ภาวะเม็ดเลือดแดงแตกใน G6PD deficiency** (สำคัญในไทย)\n- เพิ่มฤทธิ์ warfarin, เพิ่ม K (ระวังกับ ACEI), เพิ่ม SCr\n- หลีกเลี่ยงช่วงปลายการตั้งครรภ์ (kernicterus ในทารก)" },
+        { "card_type": "concept", "title_th": "Metronidazole", "body_md": "ครอบคลุม **anaerobe ใต้กะบังลม** และโปรโตซัว (*Giardia*, *Trichomonas*, amoeba), C. difficile (กรณีไม่รุนแรง)\n\n**Disulfiram-like reaction**: ห้ามดื่มแอลกอฮอล์ระหว่างและหลังใช้ยา 3 วัน อาจมีรสโลหะในปาก และ peripheral neuropathy เมื่อใช้นาน" }
+      ]
+    },
+    {
+      "title_th": "ยาต้านวัณโรค",
+      "subtitle_th": "RIPE และ ADR เด่น",
+      "icon": "🫁",
+      "est_minutes": 7,
+      "xp_reward": 15,
+      "quiz_keywords": ["วัณโรค", "rifampicin", "isoniazid", "pyrazinamide", "ethambutol", "hepatotoxicity", "TB", "DOTS"],
+      "cards": [
+        { "card_type": "concept", "title_th": "สูตร RIPE", "body_md": "การรักษาวัณโรคระยะเริ่ม 2 เดือนแรกใช้ 4 ยา **RIPE**:\n- **R**ifampicin\n- **I**soniazid (INH)\n- **P**yrazinamide\n- **E**thambutol\n\nตามด้วยระยะต่อเนื่อง (continuation) ด้วย **rifampicin + isoniazid** อีก 4 เดือน รวม ~6 เดือน เน้น **DOTS** เพื่อกินยาครบ" },
+        { "card_type": "warning", "title_th": "Hepatotoxicity", "body_md": "**Isoniazid, rifampicin, pyrazinamide** ล้วน **เป็นพิษต่อตับ** → ติดตามอาการตัว/ตาเหลือง คลื่นไส้ เบื่ออาหาร และค่าตับ\n\nหยุดยาและประเมินเมื่อ ALT สูงมีอาการ หรือ ALT > 3-5 เท่า แนะนำงดแอลกอฮอล์ตลอดการรักษา" },
+        { "card_type": "concept", "title_th": "ADR เฉพาะรายตัว", "body_md": "- **Isoniazid**: peripheral neuropathy (เสริม **vitamin B6/pyridoxine** ป้องกัน), hepatitis\n- **Rifampicin**: ปัสสาวะ/น้ำตา/เหงื่อ **สีส้มแดง**, **CYP inducer** เด่น\n- **Pyrazinamide**: **hyperuricemia/gout**, hepatotoxicity\n- **Ethambutol**: **optic neuritis** (ตาพร่า ตาบอดสี) → ตรวจตาเป็นระยะ" },
+        { "card_type": "warning", "title_th": "Rifampicin drug interaction", "body_md": "Rifampicin เป็น **enzyme inducer ที่แรง** (CYP3A4 ฯลฯ) → ลดระดับยาหลายชนิด:\n- **ยาคุมกำเนิด** (ล้มเหลว → แนะวิธีคุมเสริม)\n- warfarin, ยาต้าน HIV (PI), corticosteroid, sulfonylurea\n\nต้องทบทวนยาทั้งหมดของผู้ป่วยก่อนเริ่ม" },
+        { "card_type": "mnemonic", "title_th": "จำ ADR เด่น", "body_md": "- **R**ifampicin → **R**ed/orange secretions + inducer\n- **I**soniazid → **I** = neuropathy (give B6)\n- **P**yrazinamide → **P** = Plasma uric acid (gout)\n- **E**thambutol → **E** = **E**ye (optic neuritis)\n\nและ R-I-P ทั้งสาม = **ตับ**" },
+        { "card_type": "tip", "title_th": "คำแนะนำผู้ป่วย", "body_md": "- กินยาให้ครบทุกวันตามแผน อย่าหยุดเองเพราะเสี่ยง **MDR-TB**\n- แจ้งผู้ป่วยว่าปัสสาวะสีส้มจาก rifampicin เป็นปกติ ไม่ต้องตกใจ และอาจย้อม contact lens\n- งดแอลกอฮอล์ มาตรวจตามนัดเพื่อติดตามตับและตา" }
+      ]
+    },
+    {
+      "title_th": "ยาต้านเชื้อราและการเลือกยาในโรคพบบ่อย",
+      "subtitle_th": "Azole, amphotericin, UTI/CAP/sepsis",
+      "icon": "🍄",
+      "est_minutes": 8,
+      "xp_reward": 16,
+      "quiz_keywords": ["fluconazole", "amphotericin B", "azole", "UTI", "CAP", "sepsis", "nephrotoxicity", "CYP"],
+      "cards": [
+        { "card_type": "concept", "title_th": "Azoles", "body_md": "Fluconazole, itraconazole, voriconazole, posaconazole ยับยั้งการสร้าง **ergosterol** (CYP51)\n\n- **Fluconazole**: candidiasis, cryptococcal meningitis; ดูดซึมดี ผ่านเข้าน้ำไขสันหลัง\n- **Voriconazole**: invasive aspergillosis\n- **Itraconazole**: dimorphic fungi, ต้องการกรดในการดูดซึม (capsule)" },
+        { "card_type": "warning", "title_th": "Azole interactions & ADR", "body_md": "- Azole เป็น **CYP inhibitor** (โดยเฉพาะ CYP3A4) → เพิ่มระดับ statin, warfarin, calcineurin inhibitor; เสี่ยง **QT prolongation**\n- ห้ามใช้กับยาที่ยืด QT รุนแรงร่วมกัน\n- **Hepatotoxicity** ติดตามค่าตับ\n- หลีกเลี่ยงในตั้งครรภ์ (teratogen โดยเฉพาะขนาดสูง)" },
+        { "card_type": "warning", "title_th": "Amphotericin B", "body_md": "ยาต้านเชื้อราออกฤทธิ์กว้างสำหรับเชื้อรุนแรง แต่พิษมาก:\n- **Nephrotoxicity** (เด่น) + เสีย **K/Mg** ทาง renal wasting\n- **Infusion reaction**: ไข้ หนาวสั่น (\"shake and bake\") → premedicate\n\nสูตร **liposomal** ลดพิษต่อไต ให้ NS hydration ก่อนให้ยา" },
+        { "card_type": "concept", "title_th": "UTI – การเลือกยา", "body_md": "- **Uncomplicated cystitis**: nitrofurantoin, co-trimoxazole, fosfomycin (ตามรูปแบบการดื้อยาในพื้นที่)\n- **Pyelonephritis**: fluoroquinolone หรือ ceftriaxone\n- เชื้อหลักคือ ***E. coli***\n- nitrofurantoin หลีกเลี่ยงเมื่อ CrCl ต่ำและใน pyelonephritis (ระดับในเนื้อไตไม่พอ)" },
+        { "card_type": "concept", "title_th": "CAP – การเลือกยา", "body_md": "ปอดอักเสบชุมชน (เชื้อเด่น *S. pneumoniae*, atypical):\n- **Outpatient สุขภาพดี**: amoxicillin (สูง) หรือ doxycycline/macrolide\n- **มีโรคร่วม**: beta-lactam + macrolide หรือ respiratory FQ เดี่ยว\n- **Inpatient**: ceftriaxone + macrolide หรือ respiratory FQ" },
+        { "card_type": "tip", "title_th": "Sepsis – หลักการ", "body_md": "- ให้ **empiric broad-spectrum เร็วที่สุด** (ภายใน 1 ชม.) หลังเก็บ culture\n- ปรับตามแหล่งติดเชื้อและความเสี่ยงเชื้อดื้อ (เช่น + vancomycin หาก MRSA เสี่ยง)\n- **de-escalate** เมื่อทราบผล และควบคุมแหล่งติดเชื้อ (source control)" },
+        { "card_type": "example", "title_th": "ตัวอย่างผสาน", "body_md": "หญิงเบาหวานมีไข้ ปัสสาวะแสบขัด ปวดสีข้าง ความดันต่ำเล็กน้อย\n\n→ วินิจฉัย **pyelonephritis/urosepsis** เก็บ urine+blood culture แล้วเริ่ม **ceftriaxone IV** ทันที ให้สารน้ำ ติดตามไต แล้วปรับยาตามผลเพาะเชื้อ" }
       ]
     }
   ]

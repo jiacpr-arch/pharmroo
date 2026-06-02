@@ -1,31 +1,153 @@
 {
   "subject": "Cardiovascular",
-  "unit": { "title_th": "หัวใจและหลอดเลือด", "description_th": "การจัดการความดันโลหิตสูง ภาวะหัวใจล้มเหลว และยาต้านการแข็งตัวของเลือด", "icon": "❤️" },
+  "unit": {
+    "title_th": "หัวใจและหลอดเลือด",
+    "description_th": "คอร์สครบวงจรสำหรับสอบใบประกอบวิชาชีพเภสัชกรรม ครอบคลุมความดันโลหิตสูง ภาวะหัวใจล้มเหลว โรคหลอดเลือดหัวใจและ ACS ภาวะหัวใจเต้นผิดจังหวะ ยาต้านการแข็งตัวของเลือด ยาลดไขมัน ยาขับปัสสาวะ และ digoxin",
+    "icon": "❤️"
+  },
   "lessons": [
     {
-      "title_th": "ความดันโลหิตสูง",
-      "subtitle_th": "Hypertension และยาลดความดันแนวแรก",
+      "title_th": "ความดันโลหิตสูง: เป้าหมายและการวินิจฉัย",
+      "subtitle_th": "Hypertension – goals, classification, lifestyle",
       "icon": "🩺",
-      "est_minutes": 5,
-      "xp_reward": 10,
+      "est_minutes": 6,
+      "xp_reward": 12,
+      "quiz_keywords": ["ความดันโลหิตสูง", "hypertension", "blood pressure", "เป้าหมายความดัน", "lifestyle modification", "white coat"],
       "cards": [
-        { "card_type": "concept", "title_th": "ยาแนวแรก 4 กลุ่ม", "body_md": "ยาลดความดันแนวแรก ได้แก่\n- **ACEI** (เช่น enalapril) หรือ **ARB** (เช่น losartan)\n- **CCB** กลุ่ม dihydropyridine (เช่น amlodipine)\n- **Thiazide diuretic** (เช่น HCTZ, chlorthalidone)\n\nเลือกตามโรคร่วม เช่น เบาหวาน/โรคไต ให้ ACEI/ARB" },
-        { "card_type": "warning", "title_th": "ห้ามใช้ ACEI/ARB ร่วมกัน", "body_md": "**ห้ามใช้ ACEI ร่วมกับ ARB** เพราะเพิ่มความเสี่ยง hyperkalemia, ไตวาย, ความดันต่ำ\n\nACEI/ARB **ห้ามใช้ในหญิงตั้งครรภ์** (teratogenic)" },
-        { "card_type": "mnemonic", "title_th": "จำ ADR ของ ACEI", "body_md": "ACEI ทำให้เกิด **\"CAPTOPRIL\"**:\n- **C**ough (ไอแห้งจาก bradykinin)\n- **A**ngioedema\n- **P**otassium เพิ่ม (hyperkalemia)\n- **T**aste change\n\nถ้าไอจาก ACEI ให้เปลี่ยนเป็น ARB ซึ่งไม่ทำให้ไอ" },
-        { "card_type": "tip", "title_th": "เลือกยาตามโรคร่วม", "body_md": "- เบาหวาน + ไตเสื่อม (มี albuminuria) → **ACEI/ARB**\n- หลังกล้ามเนื้อหัวใจตาย/หัวใจล้มเหลว → **beta-blocker + ACEI**\n- ผู้สูงอายุ/ผิวดำ → **CCB หรือ thiazide** ตอบสนองดี" }
+        { "card_type": "concept", "title_th": "การแบ่งระดับความดัน", "body_md": "ตามแนวทาง ACC/AHA แบ่งเป็น\n- **Normal**: <120/<80\n- **Elevated**: 120–129/<80\n- **Stage 1**: 130–139 หรือ 80–89\n- **Stage 2**: ≥140 หรือ ≥90\n\nวินิจฉัยจากค่าเฉลี่ยหลายครั้ง ไม่ใช่ครั้งเดียว และควรยืนยันด้วยการวัดที่บ้านหรือ ABPM เพื่อแยก white coat hypertension" },
+        { "card_type": "concept", "title_th": "เป้าหมายการรักษา", "body_md": "เป้าหมายทั่วไป **<130/80 mmHg** ในผู้ป่วยส่วนใหญ่ที่ทนได้ โดยเฉพาะผู้ที่มีความเสี่ยงสูง เบาหวาน โรคไตเรื้อรัง หรือโรคหลอดเลือดหัวใจ\n\nในผู้สูงอายุที่เปราะบางอาจตั้งเป้าผ่อนปรนกว่า เพื่อลดความเสี่ยงล้มและความดันต่ำเมื่อเปลี่ยนท่า" },
+        { "card_type": "concept", "title_th": "ปรับพฤติกรรมก่อน/ควบคู่ยา", "body_md": "Lifestyle modification ลดความดันได้จริง:\n- ลดเกลือโซเดียม (<2 g โซเดียม/วัน)\n- ลดน้ำหนัก, ออกกำลังกายแอโรบิก\n- จำกัดแอลกอฮอล์, เลิกบุหรี่\n- รับประทานอาหารแบบ **DASH** (ผัก ผลไม้ ธัญพืช ไขมันต่ำ)\n\nStage 1 ที่ความเสี่ยงต่ำอาจเริ่มด้วยการปรับพฤติกรรมก่อน" },
+        { "card_type": "tip", "title_th": "เทคนิควัดความดันให้แม่น", "body_md": "นั่งพักอย่างน้อย 5 นาที เท้าราบพื้น หลังพิงพนัก แขนวางระดับหัวใจ ใช้ cuff ขนาดเหมาะสม งดกาแฟ/บุหรี่ก่อนวัด 30 นาที และวัด 2–3 ครั้งหาค่าเฉลี่ย" },
+        { "card_type": "mnemonic", "title_th": "จำสาเหตุ secondary HTN: ABCDE", "body_md": "**A**ldosteronism / Apnea (sleep)\n**B**ruit (renal artery stenosis) / Bad kidney\n**C**ushing / Coarctation\n**D**rugs (NSAID, steroid, ยาคุม) / Diet\n**E**ndocrine (pheochromocytoma, thyroid)\n\nสงสัยเมื่อ HTN เกิดอายุน้อย รุนแรง หรือดื้อยา" },
+        { "card_type": "warning", "title_th": "Hypertensive emergency", "body_md": "ความดันสูงมาก (มักเช่น >180/120) **ร่วมกับ** อาการอวัยวะเป้าหมายเสียหาย (เจ็บอก, หายใจลำบาก, ชัก, ตามัว, สับสน) คือภาวะฉุกเฉิน ต้องลดความดันด้วยยาฉีดในโรงพยาบาล **ห้ามลดเร็วเกินไป** เพราะเสี่ยงสมองขาดเลือด" }
       ]
     },
     {
-      "title_th": "หัวใจล้มเหลวและยาต้านการแข็งตัวของเลือด",
-      "subtitle_th": "Heart Failure และ Anticoagulant",
+      "title_th": "ยาลดความดันแนวแรก 4 กลุ่ม",
+      "subtitle_th": "ACEI/ARB, CCB, Thiazide – เลือกตามโรคร่วม",
       "icon": "💊",
-      "est_minutes": 6,
-      "xp_reward": 10,
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": ["ACEI", "ARB", "enalapril", "losartan", "amlodipine", "thiazide", "hydrochlorothiazide", "ยาลดความดัน"],
       "cards": [
-        { "card_type": "concept", "title_th": "ยาหลักใน HFrEF", "body_md": "ยาที่ช่วยลดอัตราตายในหัวใจล้มเหลว (ejection fraction ต่ำ):\n- **ACEI/ARB หรือ ARNI**\n- **Beta-blocker** (carvedilol, bisoprolol, metoprolol succinate)\n- **MRA** (spironolactone)\n- **SGLT2 inhibitor**\n\nDiuretic ใช้บรรเทาอาการบวมน้ำ แต่ไม่ลดอัตราตาย" },
-        { "card_type": "concept", "title_th": "Warfarin vs DOAC", "body_md": "- **Warfarin**: ยับยั้งการสร้าง vitamin K-dependent factors (II, VII, IX, X) ต้องตรวจ **INR**\n- **DOAC** (dabigatran, rivaroxaban, apixaban): ไม่ต้องตรวจ INR ประจำ แต่ต้องปรับตามการทำงานของไต" },
-        { "card_type": "tip", "title_th": "เป้าหมาย INR", "body_md": "- AF / DVT-PE / ลิ้นหัวใจเทียมชนิด tissue: **INR 2-3**\n- ลิ้นหัวใจเทียมชนิดโลหะ (mechanical): **INR 2.5-3.5**\n\nยาแก้ฤทธิ์ warfarin คือ **vitamin K** (และ PCC/FFP เมื่อเลือดออกรุนแรง)" },
-        { "card_type": "warning", "title_th": "อันตรกิริยาของ Warfarin", "body_md": "Warfarin มี drug interaction สูงมาก\n- ยาที่**เพิ่ม INR**: metronidazole, fluconazole, amiodarone, cotrimoxazole\n- หลีกเลี่ยง **NSAID** (เพิ่มเลือดออก)\n- อาหารผัก vitamin K สูงให้รับประทานสม่ำเสมอ ไม่ใช่งด" }
+        { "card_type": "concept", "title_th": "ยาแนวแรก 4 กลุ่ม", "body_md": "ยาลดความดันแนวแรก:\n- **ACEI** เช่น enalapril, lisinopril, ramipril\n- **ARB** เช่น losartan, valsartan, telmisartan\n- **CCB** กลุ่ม dihydropyridine เช่น amlodipine, nifedipine\n- **Thiazide** เช่น hydrochlorothiazide, chlorthalidone, indapamide\n\nเลือกใช้ได้ตามโรคร่วม และมักใช้ร่วมกันเมื่อตัวเดียวคุมไม่ได้" },
+        { "card_type": "concept", "title_th": "กลไก ACEI vs ARB", "body_md": "- **ACEI** ยับยั้ง angiotensin-converting enzyme ลดการสร้าง angiotensin II และเพิ่ม bradykinin (จึงเกิดไอ)\n- **ARB** บล็อกตัวรับ AT1 โดยตรง ไม่เพิ่ม bradykinin จึง **ไม่ทำให้ไอ**\n\nทั้งสองกลุ่มลด proteinuria และปกป้องไตในเบาหวาน" },
+        { "card_type": "tip", "title_th": "เลือกยาตามโรคร่วม (compelling indication)", "body_md": "- เบาหวาน + albuminuria / โรคไตเรื้อรัง → **ACEI/ARB**\n- หลังกล้ามเนื้อหัวใจตาย / HFrEF → **ACEI + beta-blocker**\n- ผู้สูงอายุ / เชื้อสายแอฟริกัน → **CCB หรือ thiazide** ตอบสนองดี\n- หญิงตั้งครรภ์ → labetalol, nifedipine, methyldopa" },
+        { "card_type": "warning", "title_th": "ห้ามใช้ ACEI ร่วมกับ ARB", "body_md": "**ห้ามใช้ ACEI ร่วมกับ ARB** (หรือร่วมกับ aliskiren) เพราะเพิ่ม hyperkalemia, ไตวายเฉียบพลัน และความดันต่ำ โดยไม่ได้ประโยชน์เพิ่ม\n\nทั้ง ACEI และ ARB **ห้ามใช้ในหญิงตั้งครรภ์** (teratogenic)" },
+        { "card_type": "mnemonic", "title_th": "ADR ของ ACEI: \"CAPTOPRIL\"", "body_md": "**C**ough (ไอแห้งจาก bradykinin)\n**A**ngioedema (บวมหน้า/ลิ้น – อันตราย)\n**P**otassium เพิ่ม (hyperkalemia)\n**T**aste change\n**P**regnancy contraindicated\n**R**enal impairment (Cr ขึ้นได้)\n\nถ้าไอจาก ACEI → เปลี่ยนเป็น ARB" },
+        { "card_type": "warning", "title_th": "ADR เด่นแต่ละกลุ่ม", "body_md": "- **CCB (DHP)**: บวมข้อเท้า (peripheral edema), หน้าแดง, ปวดหัว, หัวใจเต้นเร็ว\n- **Thiazide**: hypokalemia, hyponatremia, hyperuricemia (เกาต์), น้ำตาล/ไขมันสูงขึ้น\n- **ACEI/ARB**: hyperkalemia, Cr ขึ้น\n\nระวัง non-DHP (verapamil/diltiazem) + beta-blocker → หัวใจเต้นช้า/บล็อก" }
+      ]
+    },
+    {
+      "title_th": "ภาวะหัวใจล้มเหลว HFrEF",
+      "subtitle_th": "4 Pillars – ACEI/ARNI, BB, MRA, SGLT2i",
+      "icon": "🫀",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": ["หัวใจล้มเหลว", "heart failure", "HFrEF", "ARNI", "sacubitril", "spironolactone", "dapagliflozin", "carvedilol"],
+      "cards": [
+        { "card_type": "concept", "title_th": "4 เสาหลักลดอัตราตายใน HFrEF", "body_md": "ผู้ป่วยหัวใจล้มเหลว ejection fraction ต่ำ (HFrEF, EF ≤40%) ควรได้ยาทั้ง 4 กลุ่มที่พิสูจน์ว่าลดอัตราตาย:\n1. **ACEI/ARB หรือ ARNI** (sacubitril/valsartan)\n2. **Beta-blocker** ที่มีหลักฐาน\n3. **MRA** (spironolactone, eplerenone)\n4. **SGLT2 inhibitor** (dapagliflozin, empagliflozin)\n\nค่อย ๆ ปรับขนาดขึ้นตามที่ทนได้" },
+        { "card_type": "concept", "title_th": "Beta-blocker ที่ใช้ได้", "body_md": "ใช้เฉพาะ 3 ตัวที่มีหลักฐานลดอัตราตายใน HFrEF:\n- **carvedilol**\n- **bisoprolol**\n- **metoprolol succinate** (ออกฤทธิ์นาน)\n\nเริ่มขนาดต่ำเมื่อผู้ป่วย **euvolemic/คงที่** แล้วค่อย ๆ titrate ห้ามเริ่มตอน decompensated เฉียบพลัน" },
+        { "card_type": "concept", "title_th": "ARNI และยาบรรเทาอาการ", "body_md": "- **ARNI** (sacubitril/valsartan) เหนือกว่า ACEI ในการลดอัตราตาย ใช้แทน ACEI/ARB ได้\n- **Loop diuretic** (furosemide) บรรเทาบวมน้ำ/หอบ แต่**ไม่ลดอัตราตาย**\n- พิจารณา digoxin หรือ ivabradine เป็น add-on ในบางราย" },
+        { "card_type": "warning", "title_th": "เปลี่ยน ACEI เป็น ARNI ต้อง washout", "body_md": "**ห้ามให้ ARNI ร่วมกับ ACEI** และต้องหยุด ACEI อย่างน้อย **36 ชั่วโมง** ก่อนเริ่ม ARNI เพื่อลดความเสี่ยง angioedema\n\nMRA + ACEI/ARB เพิ่มความเสี่ยง hyperkalemia ต้องติดตามโพแทสเซียมและการทำงานของไต" },
+        { "card_type": "tip", "title_th": "ติดตามอาการ congestion", "body_md": "ประเมินภาวะคั่งน้ำด้วย: น้ำหนักตัวรายวัน, บวมขา, JVP สูง, หอบนอนราบไม่ได้ (orthopnea), PND\n\nสอนผู้ป่วยชั่งน้ำหนักทุกวัน หากขึ้นเร็ว >2 กก. ใน 2–3 วันให้รีบพบแพทย์/ปรับ diuretic" },
+        { "card_type": "mnemonic", "title_th": "จำ 4 pillars: \"ABCD\"", "body_md": "**A** – ACEI/ARB/**A**RNI\n**B** – **B**eta-blocker\n**C** – mineralo**C**orticoid receptor antagonist (MRA)\n**D** – SGLT2i (\"**d**iabetes drug\" ที่ช่วยหัวใจ เช่น **d**apagliflozin)\n\nครบ 4 = ลดตาย ลดนอนโรงพยาบาล" }
+      ]
+    },
+    {
+      "title_th": "โรคหลอดเลือดหัวใจและ ACS",
+      "subtitle_th": "Antiplatelet, statin, nitrate, MONA",
+      "icon": "🚑",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": ["ACS", "กล้ามเนื้อหัวใจตาย", "aspirin", "clopidogrel", "nitroglycerin", "MONA", "DAPT", "STEMI"],
+      "cards": [
+        { "card_type": "concept", "title_th": "Acute coronary syndrome คืออะไร", "body_md": "ACS เกิดจาก plaque แตกและลิ่มเลือดอุดหลอดเลือดหัวใจ แบ่งเป็น:\n- **STEMI** – ST ยกขึ้น, ต้อง reperfusion ด่วน (PCI/fibrinolysis)\n- **NSTEMI** – troponin ขึ้นแต่ไม่ ST ยก\n- **Unstable angina** – เจ็บอกขณะพักหรือมากขึ้น troponin ปกติ" },
+        { "card_type": "mnemonic", "title_th": "การดูแลเบื้องต้น: \"MONA\"", "body_md": "**M**orphine (เมื่อปวดมาก/ไม่ตอบ nitrate)\n**O**xygen (ให้เมื่อ SpO2 <90% เท่านั้น)\n**N**itroglycerin (อมใต้ลิ้นบรรเทาเจ็บอก)\n**A**spirin (เคี้ยว 162–325 mg ทันที)\n\nจำว่า ASA สำคัญสุด ส่วน O2 ไม่ให้พร่ำเพรื่อในผู้ที่ออกซิเจนปกติ" },
+        { "card_type": "concept", "title_th": "Dual antiplatelet therapy (DAPT)", "body_md": "หลัง ACS / ใส่ขดลวด ให้ **aspirin + P2Y12 inhibitor** ร่วมกัน:\n- **clopidogrel**, **ticagrelor**, หรือ **prasugrel**\n\nโดยทั่วไปให้ DAPT นาน ~12 เดือน จากนั้นเหลือ aspirin ตลอดชีวิต (ปรับตามความเสี่ยงเลือดออก)" },
+        { "card_type": "concept", "title_th": "ยาระยะยาวหลัง MI", "body_md": "ยาที่ลดอัตราตายหลังกล้ามเนื้อหัวใจตาย:\n- **High-intensity statin** (atorvastatin 40–80, rosuvastatin 20–40)\n- **Beta-blocker**\n- **ACEI/ARB** (โดยเฉพาะถ้ามี LV dysfunction/เบาหวาน)\n- **Antiplatelet** ตามข้างต้น" },
+        { "card_type": "tip", "title_th": "การใช้ nitrate ที่ถูกต้อง", "body_md": "SL nitroglycerin: อมใต้ลิ้น 1 เม็ด ทุก 5 นาที ได้ไม่เกิน 3 ครั้ง หากไม่ดีขึ้นให้รีบไปโรงพยาบาล\n\nยา nitrate ออกฤทธิ์นานต้องมี **nitrate-free interval** ~10–12 ชม./วัน เพื่อกัน tolerance" },
+        { "card_type": "warning", "title_th": "Nitrate + PDE5 inhibitor = ห้าม", "body_md": "**ห้ามให้ nitrate ร่วมกับ sildenafil/tadalafil** (ยารักษาหย่อนสมรรถภาพ) เพราะทำให้ความดันตกรุนแรง อาจถึงแก่ชีวิต\n\nเว้นระยะอย่างน้อย 24 ชม. (sildenafil) หรือ 48 ชม. (tadalafil)" }
+      ]
+    },
+    {
+      "title_th": "หัวใจเต้นผิดจังหวะและ AF",
+      "subtitle_th": "Rate vs rhythm, CHA₂DS₂-VASc",
+      "icon": "📈",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": ["atrial fibrillation", "หัวใจเต้นผิดจังหวะ", "CHA2DS2-VASc", "rate control", "amiodarone", "metoprolol", "diltiazem", "anticoagulation"],
+      "cards": [
+        { "card_type": "concept", "title_th": "Atrial fibrillation (AF)", "body_md": "AF คือหัวใจห้องบนสั่นพลิ้ว ทำให้ชีพจรเต้นเร็วและไม่สม่ำเสมอ เสี่ยงเกิดลิ่มเลือดที่ห้องบนซ้ายและหลุดไปอุดตันสมอง (stroke)\n\nการจัดการมี 2 แกน: ควบคุมอัตรา/จังหวะ และป้องกันลิ่มเลือด" },
+        { "card_type": "concept", "title_th": "Rate control vs Rhythm control", "body_md": "- **Rate control**: ควบคุมอัตราการเต้นหัวใจด้วย **beta-blocker** (metoprolol), **non-DHP CCB** (diltiazem, verapamil) หรือ digoxin\n- **Rhythm control**: คืนจังหวะปกติด้วยยา (amiodarone, flecainide, sotalol) หรือ cardioversion/ablation\n\nผู้ป่วยส่วนใหญ่ rate control เพียงพอ" },
+        { "card_type": "concept", "title_th": "CHA₂DS₂-VASc ประเมินเสี่ยง stroke", "body_md": "ให้คะแนน: **C**HF 1, **H**TN 1, **A**ge ≥75 = 2, **D**M 1, **S**troke/TIA ก่อน = 2, **V**ascular disease 1, **A**ge 65–74 = 1, **Sc** = เพศหญิง 1\n\nคะแนน ≥2 (ชาย) / ≥3 (หญิง) → แนะนำ **anticoagulant**" },
+        { "card_type": "tip", "title_th": "ประเมินเลือดออกด้วย HAS-BLED", "body_md": "ใช้ **HAS-BLED** ประเมินความเสี่ยงเลือดออก (HTN, ไต/ตับผิดปกติ, stroke, bleeding, INR ไม่คงที่, อายุมาก, ยา/แอลกอฮอล์)\n\nคะแนนสูงไม่ได้แปลว่าห้ามให้ยากันเลือดแข็ง แต่ให้แก้ปัจจัยเสี่ยงที่ปรับได้และติดตามใกล้ชิด" },
+        { "card_type": "warning", "title_th": "ADR ของ amiodarone", "body_md": "Amiodarone มีพิษสะสมหลายระบบ ต้องติดตาม:\n- **ปอด** (pulmonary fibrosis)\n- **ไทรอยด์** (hypo/hyperthyroid – มีไอโอดีน)\n- **ตับ** (LFT ขึ้น)\n- ตา (corneal deposit), ผิวสีเทา\n\nและเพิ่มระดับ warfarin และ digoxin (ต้องลดขนาด)" },
+        { "card_type": "warning", "title_th": "non-DHP CCB + beta-blocker", "body_md": "**ระวัง verapamil/diltiazem ร่วมกับ beta-blocker** เพราะกดการนำไฟฟ้าและการบีบตัวของหัวใจรวมกัน เสี่ยง bradycardia รุนแรง, heart block และหัวใจล้มเหลว" }
+      ]
+    },
+    {
+      "title_th": "ยาต้านการแข็งตัวของเลือด",
+      "subtitle_th": "Warfarin vs DOAC, INR, antidote, interaction",
+      "icon": "🩸",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": ["warfarin", "INR", "DOAC", "dabigatran", "rivaroxaban", "apixaban", "vitamin K", "heparin"],
+      "cards": [
+        { "card_type": "concept", "title_th": "Warfarin vs DOAC", "body_md": "- **Warfarin**: ยับยั้งการสร้าง vitamin K-dependent factors (II, VII, IX, X) ต้องตรวจ **INR** สม่ำเสมอ มี interaction และผลจากอาหารมาก\n- **DOAC**: dabigatran (ยับยั้ง thrombin), rivaroxaban/apixaban/edoxaban (ยับยั้ง factor Xa) – ไม่ต้องตรวจ INR ประจำ แต่ปรับตามการทำงานของไต" },
+        { "card_type": "concept", "title_th": "เป้าหมาย INR", "body_md": "- AF / DVT-PE / ลิ้นหัวใจเทียมชนิดเนื้อเยื่อ (tissue): **INR 2–3**\n- ลิ้นหัวใจเทียมชนิดโลหะ (mechanical): **INR 2.5–3.5**\n\n**DOAC ห้ามใช้ในลิ้นหัวใจกลและ moderate-severe mitral stenosis** ต้องใช้ warfarin เท่านั้น" },
+        { "card_type": "concept", "title_th": "ยาแก้ฤทธิ์ (antidote)", "body_md": "- **Warfarin** → **vitamin K** (phytonadione); เลือดออกรุนแรงให้ **PCC** หรือ FFP\n- **Dabigatran** → **idarucizumab**\n- **Factor Xa inhibitor** (rivaroxaban/apixaban) → **andexanet alfa** (หรือ PCC)\n- **Heparin/LMWH** → **protamine sulfate**" },
+        { "card_type": "warning", "title_th": "อันตรกิริยาของ warfarin", "body_md": "Warfarin มี drug interaction สูงมาก\n- **เพิ่ม INR/เลือดออก**: metronidazole, fluconazole, amiodarone, cotrimoxazole, ciprofloxacin\n- **ลด INR**: rifampicin, carbamazepine, อาหารผัก vitamin K สูง\n- หลีกเลี่ยง **NSAID** (เพิ่มเลือดออก)\n\nผักใบเขียวให้กินสม่ำเสมอ ไม่ใช่งดเด็ดขาด" },
+        { "card_type": "tip", "title_th": "Heparin: UFH vs LMWH", "body_md": "- **UFH** (unfractionated): ติดตามด้วย **aPTT**, ออกฤทธิ์สั้น, ใช้ในไตเสื่อมหรือก่อนผ่าตัด\n- **LMWH** (enoxaparin): ฉีดใต้ผิวหนัง ไม่ต้องตรวจประจำ ปรับตามไต\n\nทั้งคู่เสี่ยง **HIT** (heparin-induced thrombocytopenia) – ติดตามเกล็ดเลือด" },
+        { "card_type": "mnemonic", "title_th": "จำ vitamin K factors: \"1972\"", "body_md": "Vitamin K-dependent clotting factors = **II, VII, IX, X** (จำเลข **2-7-9-10** หรือ \"**1972**\")\n\nWarfarin ลดทั้งหมดนี้ จึงต้องใช้เวลาหลายวันกว่าจะออกฤทธิ์เต็มที่ ช่วงแรกต้อง bridge ด้วย heparin ในผู้ป่วยลิ่มเลือดเฉียบพลัน" }
+      ]
+    },
+    {
+      "title_th": "ยาลดไขมันในเลือด",
+      "subtitle_th": "Statin, ezetimibe, PCSK9 – ADR & monitoring",
+      "icon": "🧈",
+      "est_minutes": 6,
+      "xp_reward": 12,
+      "quiz_keywords": ["statin", "atorvastatin", "rosuvastatin", "ไขมันในเลือดสูง", "LDL", "myopathy", "ezetimibe", "CYP3A4"],
+      "cards": [
+        { "card_type": "concept", "title_th": "Statin คือยาแกนหลัก", "body_md": "Statin (HMG-CoA reductase inhibitor) ลด **LDL** ได้มากที่สุดและลดเหตุการณ์หัวใจ-หลอดเลือด\n- **High-intensity**: atorvastatin 40–80, rosuvastatin 20–40 (ลด LDL ≥50%)\n- **Moderate-intensity**: atorvastatin 10–20, rosuvastatin 5–10, simvastatin 20–40\n\nให้ในผู้มี ASCVD, LDL ≥190, เบาหวานอายุ 40–75 หรือความเสี่ยงสูง" },
+        { "card_type": "concept", "title_th": "ยาเสริมเมื่อ statin ไม่พอ", "body_md": "เมื่อ statin ขนาดสูงสุดที่ทนได้ยังไม่ถึงเป้า LDL:\n- **Ezetimibe** (ยับยั้งการดูดซึมคอเลสเตอรอลที่ลำไส้)\n- **PCSK9 inhibitor** (evolocumab, alirocumab) ฉีด ลด LDL ได้มาก\n- **Bempedoic acid**\n\nFibrate/omega-3 ใช้เมื่อ triglyceride สูงมาก (ป้องกันตับอ่อนอักเสบ)" },
+        { "card_type": "warning", "title_th": "ADR: myopathy และตับ", "body_md": "Statin ที่ต้องระวัง:\n- **Myalgia/myopathy** จนถึง **rhabdomyolysis** (ปวดกล้ามเนื้อ + CK สูง + ปัสสาวะสีเข้ม)\n- **ตับ**: transaminase ขึ้น (มักไม่รุนแรง)\n- เพิ่มน้ำตาลเล็กน้อย\n\nหากปวดกล้ามเนื้อรุนแรงให้หยุดยาและตรวจ CK" },
+        { "card_type": "warning", "title_th": "Statin + CYP3A4 inhibitor", "body_md": "**Simvastatin และ atorvastatin** ถูกเปลี่ยนแปลงผ่าน **CYP3A4** หากใช้ร่วมกับสารยับยั้ง (clarithromycin, itraconazole, น้ำเกรปฟรุต, บาง HIV PI) จะเพิ่มระดับยาและเสี่ยง rhabdomyolysis\n\n**Rosuvastatin/pravastatin** พึ่ง CYP3A4 น้อย เป็นทางเลือกที่ปลอดภัยกว่า" },
+        { "card_type": "tip", "title_th": "การติดตาม (monitoring)", "body_md": "- ตรวจ **lipid panel** ก่อนเริ่มและ ~4–12 สัปดาห์หลังเริ่ม/ปรับขนาด แล้วทุก 3–12 เดือน\n- ตรวจ **baseline LFT**; ตรวจ CK เมื่อมีอาการกล้ามเนื้อ ไม่จำเป็นต้องตรวจ CK ทุกราย\n- statin ส่วนใหญ่ให้ตอนเย็น/ก่อนนอน (ยกเว้นชนิดออกฤทธิ์นานเช่น atorvastatin/rosuvastatin ให้เวลาใดก็ได้)" },
+        { "card_type": "mnemonic", "title_th": "Statin ห้ามในตั้งครรภ์", "body_md": "Statin จัดเป็น **ห้ามใช้ในหญิงตั้งครรภ์/ให้นมบุตร** เพราะคอเลสเตอรอลจำเป็นต่อการพัฒนาทารก จำว่า \"**no statin for the pregnant**\" และให้คุมกำเนิดในหญิงวัยเจริญพันธุ์ที่ใช้ยา" }
+      ]
+    },
+    {
+      "title_th": "ยาขับปัสสาวะและสมดุลเกลือแร่",
+      "subtitle_th": "Loop, thiazide, K-sparing – electrolytes",
+      "icon": "🚽",
+      "est_minutes": 6,
+      "xp_reward": 12,
+      "quiz_keywords": ["furosemide", "diuretic", "thiazide", "spironolactone", "hypokalemia", "hyperkalemia", "ขับปัสสาวะ", "potassium"],
+      "cards": [
+        { "card_type": "concept", "title_th": "3 กลุ่มหลักและตำแหน่งออกฤทธิ์", "body_md": "- **Loop** (furosemide, torsemide, bumetanide) – ออกฤทธิ์ที่ thick ascending limb แรงที่สุด ใช้ในภาวะบวมน้ำ/หัวใจล้มเหลว\n- **Thiazide** (HCTZ, chlorthalidone, indapamide) – distal tubule ใช้ลดความดัน\n- **K-sparing/MRA** (spironolactone, eplerenone, amiloride) – collecting duct เก็บโพแทสเซียม" },
+        { "card_type": "concept", "title_th": "ผลต่อเกลือแร่", "body_md": "- **Loop & thiazide**: ทำให้ **hypokalemia**, hypomagnesemia\n  - Loop → hypo**calcemia** (ขับ Ca ออก)\n  - Thiazide → hyper**calcemia** (เก็บ Ca)\n- **K-sparing/MRA**: ทำให้ **hyperkalemia**\n\nThiazide ยังทำให้ hyperuricemia, hyperglycemia, hyponatremia" },
+        { "card_type": "warning", "title_th": "MRA + ACEI/ARB = ระวัง hyperkalemia", "body_md": "การใช้ **spironolactone ร่วมกับ ACEI/ARB** (พบบ่อยใน HFrEF) เพิ่มความเสี่ยง **hyperkalemia** อย่างมาก ต้องติดตามโพแทสเซียมและการทำงานของไต และระวังในผู้ป่วยไตเสื่อม" },
+        { "card_type": "tip", "title_th": "Spironolactone ADR เฉพาะ", "body_md": "Spironolactone ต้านฮอร์โมนเพศได้ ทำให้\n- ผู้ชาย: **gynecomastia** (เต้านมโต), เสื่อมสมรรถภาพ\n- ผู้หญิง: ประจำเดือนผิดปกติ\n\nหากเกิดปัญหาเหล่านี้ อาจเปลี่ยนเป็น **eplerenone** ซึ่งจำเพาะกว่า" },
+        { "card_type": "concept", "title_th": "การใช้ใน edema/หัวใจล้มเหลว", "body_md": "Loop diuretic เป็นหลักในการลดบวมน้ำ ปรับขนาดตามอาการและน้ำหนักตัว\n\nในไตเสื่อมต้องใช้ขนาดสูงขึ้น; thiazide เดี่ยวมักไม่พอเมื่อ eGFR ต่ำ แต่ใช้ **เสริม loop** (sequential blockade) ได้ในภาวะดื้อ diuretic" },
+        { "card_type": "mnemonic", "title_th": "จำผล Ca: \"Loop Loses, Thiazide Takes\"", "body_md": "**Loop Loses calcium** → hypocalcemia (จึงใช้รักษา hypercalcemia ได้)\n**Thiazide Takes/keeps calcium** → hypercalcemia (จึงช่วยลด kidney stone ชนิด calcium)\n\nทั้งคู่เสีย K และ Mg เหมือนกัน ต้องเสริมโพแทสเซียมเมื่อจำเป็น" }
+      ]
+    },
+    {
+      "title_th": "Digoxin และยาเสริมในหัวใจล้มเหลว",
+      "subtitle_th": "Digoxin, ivabradine, hydralazine/nitrate",
+      "icon": "⚠️",
+      "est_minutes": 6,
+      "xp_reward": 12,
+      "quiz_keywords": ["digoxin", "digoxin toxicity", "hypokalemia", "ivabradine", "hydralazine", "isosorbide", "หัวใจล้มเหลว", "therapeutic range"],
+      "cards": [
+        { "card_type": "concept", "title_th": "Digoxin คืออะไร", "body_md": "Digoxin ยับยั้ง Na⁺/K⁺-ATPase เพิ่มแคลเซียมในเซลล์ → เพิ่มแรงบีบตัว (positive inotrope) และลดอัตราการเต้นหัวใจ\n\nใช้ใน HFrEF ที่ยังมีอาการแม้ได้ยา 4 pillars แล้ว และช่วยควบคุมอัตราการเต้นใน AF — **ลดการนอนโรงพยาบาลแต่ไม่ลดอัตราตาย**" },
+        { "card_type": "warning", "title_th": "Digoxin toxicity", "body_md": "Digoxin มี **therapeutic index แคบ** อาการพิษ:\n- คลื่นไส้ อาเจียน เบื่ออาหาร\n- **มองเห็นเป็นสีเหลือง-เขียว** (xanthopsia), เห็นรัศมี\n- หัวใจเต้นผิดจังหวะ, AV block\n\nยาแก้พิษคือ **digoxin immune Fab (DigiFab)**" },
+        { "card_type": "warning", "title_th": "Hypokalemia เพิ่มพิษ digoxin", "body_md": "**โพแทสเซียมต่ำเพิ่มความเสี่ยงพิษ digoxin** เพราะ digoxin และ K⁺ แย่งจับ Na⁺/K⁺-ATPase\n\nระวังเมื่อใช้ร่วม **loop/thiazide diuretic** (ทำให้ K ต่ำ) ต้องติดตามและแก้โพแทสเซียม รวมถึงระวังไตเสื่อมที่ทำให้ digoxin คั่ง" },
+        { "card_type": "concept", "title_th": "ยาเสริมอื่น ๆ", "body_md": "- **Ivabradine**: ลดอัตราการเต้นหัวใจผ่าน If channel ใช้เมื่อ HR ยังสูง (≥70) แม้ได้ beta-blocker เต็มที่และยังเป็น sinus rhythm\n- **Hydralazine + isosorbide dinitrate**: ทางเลือกในผู้ที่ใช้ ACEI/ARB ไม่ได้ หรือเสริมในผู้ป่วยบางกลุ่ม" },
+        { "card_type": "tip", "title_th": "อันตรกิริยาที่เพิ่มระดับ digoxin", "body_md": "ยาที่เพิ่มระดับ digoxin ในเลือด (ต้องลดขนาด/ติดตาม):\n- **amiodarone**, **verapamil**, quinidine, propafenone\n- clarithromycin\n\nเมื่อเริ่ม amiodarone ในผู้ใช้ digoxin มักลดขนาด digoxin ลงประมาณครึ่งหนึ่ง" },
+        { "card_type": "mnemonic", "title_th": "จำพิษ digoxin: \"ตา-ท้อง-ใจ\"", "body_md": "**ตา** – เห็นเหลือง/เขียว, เห็นรัศมี (visual)\n**ท้อง** – คลื่นไส้ อาเจียน เบื่ออาหาร (GI)\n**ใจ** – หัวใจเต้นผิดจังหวะ, AV block (cardiac)\n\nร่วมกับปัจจัยเสี่ยง: **K ต่ำ, Mg ต่ำ, Ca สูง, ไตเสื่อม**" }
       ]
     }
   ]
