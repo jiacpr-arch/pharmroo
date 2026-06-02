@@ -1,0 +1,32 @@
+{
+  "subject": "Cardiovascular",
+  "unit": { "title_th": "หัวใจและหลอดเลือด", "description_th": "การจัดการความดันโลหิตสูง ภาวะหัวใจล้มเหลว และยาต้านการแข็งตัวของเลือด", "icon": "❤️" },
+  "lessons": [
+    {
+      "title_th": "ความดันโลหิตสูง",
+      "subtitle_th": "Hypertension และยาลดความดันแนวแรก",
+      "icon": "🩺",
+      "est_minutes": 5,
+      "xp_reward": 10,
+      "cards": [
+        { "card_type": "concept", "title_th": "ยาแนวแรก 4 กลุ่ม", "body_md": "ยาลดความดันแนวแรก ได้แก่\n- **ACEI** (เช่น enalapril) หรือ **ARB** (เช่น losartan)\n- **CCB** กลุ่ม dihydropyridine (เช่น amlodipine)\n- **Thiazide diuretic** (เช่น HCTZ, chlorthalidone)\n\nเลือกตามโรคร่วม เช่น เบาหวาน/โรคไต ให้ ACEI/ARB" },
+        { "card_type": "warning", "title_th": "ห้ามใช้ ACEI/ARB ร่วมกัน", "body_md": "**ห้ามใช้ ACEI ร่วมกับ ARB** เพราะเพิ่มความเสี่ยง hyperkalemia, ไตวาย, ความดันต่ำ\n\nACEI/ARB **ห้ามใช้ในหญิงตั้งครรภ์** (teratogenic)" },
+        { "card_type": "mnemonic", "title_th": "จำ ADR ของ ACEI", "body_md": "ACEI ทำให้เกิด **\"CAPTOPRIL\"**:\n- **C**ough (ไอแห้งจาก bradykinin)\n- **A**ngioedema\n- **P**otassium เพิ่ม (hyperkalemia)\n- **T**aste change\n\nถ้าไอจาก ACEI ให้เปลี่ยนเป็น ARB ซึ่งไม่ทำให้ไอ" },
+        { "card_type": "tip", "title_th": "เลือกยาตามโรคร่วม", "body_md": "- เบาหวาน + ไตเสื่อม (มี albuminuria) → **ACEI/ARB**\n- หลังกล้ามเนื้อหัวใจตาย/หัวใจล้มเหลว → **beta-blocker + ACEI**\n- ผู้สูงอายุ/ผิวดำ → **CCB หรือ thiazide** ตอบสนองดี" }
+      ]
+    },
+    {
+      "title_th": "หัวใจล้มเหลวและยาต้านการแข็งตัวของเลือด",
+      "subtitle_th": "Heart Failure และ Anticoagulant",
+      "icon": "💊",
+      "est_minutes": 6,
+      "xp_reward": 10,
+      "cards": [
+        { "card_type": "concept", "title_th": "ยาหลักใน HFrEF", "body_md": "ยาที่ช่วยลดอัตราตายในหัวใจล้มเหลว (ejection fraction ต่ำ):\n- **ACEI/ARB หรือ ARNI**\n- **Beta-blocker** (carvedilol, bisoprolol, metoprolol succinate)\n- **MRA** (spironolactone)\n- **SGLT2 inhibitor**\n\nDiuretic ใช้บรรเทาอาการบวมน้ำ แต่ไม่ลดอัตราตาย" },
+        { "card_type": "concept", "title_th": "Warfarin vs DOAC", "body_md": "- **Warfarin**: ยับยั้งการสร้าง vitamin K-dependent factors (II, VII, IX, X) ต้องตรวจ **INR**\n- **DOAC** (dabigatran, rivaroxaban, apixaban): ไม่ต้องตรวจ INR ประจำ แต่ต้องปรับตามการทำงานของไต" },
+        { "card_type": "tip", "title_th": "เป้าหมาย INR", "body_md": "- AF / DVT-PE / ลิ้นหัวใจเทียมชนิด tissue: **INR 2-3**\n- ลิ้นหัวใจเทียมชนิดโลหะ (mechanical): **INR 2.5-3.5**\n\nยาแก้ฤทธิ์ warfarin คือ **vitamin K** (และ PCC/FFP เมื่อเลือดออกรุนแรง)" },
+        { "card_type": "warning", "title_th": "อันตรกิริยาของ Warfarin", "body_md": "Warfarin มี drug interaction สูงมาก\n- ยาที่**เพิ่ม INR**: metronidazole, fluconazole, amiodarone, cotrimoxazole\n- หลีกเลี่ยง **NSAID** (เพิ่มเลือดออก)\n- อาหารผัก vitamin K สูงให้รับประทานสม่ำเสมอ ไม่ใช่งด" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "subject": "Immunologic",
+  "unit": {
+    "title_th": "การแพ้และภูมิคุ้มกันวิทยา",
+    "description_th": "ปฏิกิริยาภูมิแพ้ยาตาม Gell-Coombs และการจัดการ anaphylaxis",
+    "icon": "🛡️"
+  },
+  "lessons": [
+    {
+      "title_th": "ปฏิกิริยาภูมิแพ้ยา (Gell-Coombs)",
+      "subtitle_th": "Type I–IV และตัวอย่างยา",
+      "icon": "🛡️",
+      "est_minutes": 5,
+      "xp_reward": 10,
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "Type I–II",
+          "body_md": "- **Type I (IgE, immediate)**: anaphylaxis, urticaria, angioedema เกิดในนาที–ชั่วโมง (เช่น penicillin)\n- **Type II (cytotoxic, IgG/IgM)**: ทำลายเซลล์ เช่น hemolytic anemia, thrombocytopenia"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Type III–IV",
+          "body_md": "- **Type III (immune complex)**: serum sickness, vasculitis\n- **Type IV (delayed, T-cell)**: เกิดช้า 48–72 ชม. เช่น contact dermatitis, SJS/TEN, DRESS"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ ACID",
+          "body_md": "**A**naphylaxis (I) → **C**ytotoxic (II) → **I**mmune complex (III) → **D**elayed (IV)\n\nType I–III ใช้ **antibody**; Type IV ใช้ **T-cell** (cell-mediated)"
+        }
+      ]
+    },
+    {
+      "title_th": "การจัดการ Anaphylaxis",
+      "subtitle_th": "Adrenaline IM เป็นอันดับแรก",
+      "icon": "💉",
+      "est_minutes": 5,
+      "xp_reward": 10,
+      "cards": [
+        {
+          "card_type": "warning",
+          "title_th": "Adrenaline IM ก่อนเสมอ",
+          "body_md": "ใน anaphylaxis ยาตัวแรกคือ **adrenaline (epinephrine) IM** ที่ต้นขาด้านนอก (vastus lateralis)\n\n- ผู้ใหญ่: 0.5 mg ของ 1:1000\n- ฉีดซ้ำได้ทุก 5–15 นาที\n- **ห้ามรอ** ให้ antihistamine/steroid ออกฤทธิ์ก่อน"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ยาเสริม (second-line)",
+          "body_md": "ใช้เสริม **ไม่ใช่แทน** adrenaline:\n- **Antihistamine** (chlorpheniramine): บรรเทาผื่น/คัน\n- **Corticosteroid**: ป้องกัน biphasic reaction (ออกฤทธิ์ช้า)\n- ให้สารน้ำ IV ถ้า hypotension"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "Antihistamine รุ่น 1 vs 2",
+          "body_md": "- **รุ่น 1** (chlorpheniramine, diphenhydramine): ผ่าน BBB → ง่วง, anticholinergic\n- **รุ่น 2** (loratadine, cetirizine, fexofenadine): ง่วงน้อย เลือกใช้ในผู้ป่วยทั่วไป/allergic rhinitis"
+        }
+      ]
+    }
+  ]
+}

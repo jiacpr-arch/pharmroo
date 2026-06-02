@@ -1,0 +1,68 @@
+{
+  "subject": "Musculoskeleton",
+  "unit": {
+    "title_th": "กระดูกและข้อ (Rheumatology)",
+    "description_th": "NSAID ข้อควรระวัง และการรักษาเกาต์",
+    "icon": "🦴"
+  },
+  "lessons": [
+    {
+      "title_th": "NSAID และข้อควรระวัง",
+      "subtitle_th": "GI / Renal / CV",
+      "icon": "🦴",
+      "est_minutes": 5,
+      "xp_reward": 10,
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "กลไกและชนิด",
+          "body_md": "NSAID ยับยั้ง COX → ลด prostaglandin\n\n- **Non-selective** (ibuprofen, naproxen, diclofenac): ยับยั้ง COX-1 + COX-2\n- **COX-2 selective** (celecoxib, etoricoxib): GI น้อยกว่า แต่ **CV เสี่ยงมากกว่า**"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ความเสี่ยงสำคัญ",
+          "body_md": "- **GI**: gastritis, peptic ulcer, เลือดออก (COX-1)\n- **Renal**: ลด renal perfusion, AKI, คั่งน้ำ/โซเดียม\n- **CV**: เพิ่มความเสี่ยง MI/stroke, ความดันสูง\n\nระวังในผู้สูงอายุ, ไตเสื่อม, หัวใจล้มเหลว"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ Triple Whammy",
+          "body_md": "**Triple Whammy** = AKI สูง\n\n1. **ACEI/ARB** +\n2. **Diuretic** +\n3. **NSAID**\n\nสามตัวรวมกันทำให้ไตวายเฉียบพลันได้ง่าย"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "ลดความเสี่ยง GI",
+          "body_md": "- ใช้ขนาดต่ำสุด ระยะสั้นที่สุด\n- ผู้เสี่ยงสูง: ให้ **PPI** ร่วมด้วย\n- กินพร้อมอาหาร\n- หลีกเลี่ยงใช้ NSAID หลายตัวพร้อมกัน"
+        }
+      ]
+    },
+    {
+      "title_th": "โรคเกาต์ (Gout)",
+      "subtitle_th": "Acute vs urate-lowering",
+      "icon": "🦵",
+      "est_minutes": 5,
+      "xp_reward": 10,
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "Acute gout attack",
+          "body_md": "รักษาการอักเสบเฉียบพลัน เลือกตัวใดตัวหนึ่ง:\n\n1. **NSAID** (เช่น naproxen, indomethacin)\n2. **Colchicine** (ได้ผลดีถ้าให้เร็วใน 24 ชม.)\n3. **Corticosteroid** (เมื่อมีข้อห้าม NSAID/ไตเสื่อม)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Urate-lowering therapy (ULT)",
+          "body_md": "ใช้ป้องกันระยะยาว (ไม่ใช่รักษาการอักเสบเฉียบพลัน):\n\n- **Allopurinol** (xanthine oxidase inhibitor) — ตัวแรก\n- **Febuxostat** — ทางเลือก\n- **Probenecid** — uricosuric เพิ่มการขับกรดยูริก"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "อย่าเริ่ม/หยุด allopurinol ช่วง attack",
+          "body_md": "- **อย่าเริ่ม allopurinol ระหว่างกำลังจับเฉียบพลัน** (กระตุ้นให้แย่ลง)\n- ถ้าใช้อยู่แล้ว **ห้ามหยุด**\n- เริ่ม ULT ต้อง **prophylaxis ด้วย colchicine ขนาดต่ำ** ช่วงแรก\n- Allopurinol เสี่ยง SJS (HLA-B*5801)"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "เคล็ดลับแยกบทบาทยา",
+          "body_md": "จำว่า **Colchicine/NSAID/steroid = ดับไฟ (เฉียบพลัน)** ส่วน **Allopurinol = ลดเชื้อเพลิง (ระยะยาว)**\n\nระวัง allopurinol + azathioprine/6-MP → toxicity เพิ่มมาก"
+        }
+      ]
+    }
+  ]
+}

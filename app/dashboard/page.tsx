@@ -12,6 +12,7 @@ import {
   ArrowRight, Lock, CheckCircle,
 } from "lucide-react";
 import GoodyEmbed from "@/components/GoodyEmbed";
+import LearnDashboardCard from "@/components/learn/LearnDashboardCard";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -333,6 +334,9 @@ export default function DashboardPage() {
           </div>
         )}
       </div>
+
+      {/* ── Continue learning (microlearning) ──────────────────────── */}
+      <LearnDashboardCard weakSubjectIds={weakAreas.map((s) => s.subject_id)} />
 
       {/* ── Wandee (ข้อความวันดี) ───────────────────────────────────── */}
       <div className="mb-4 overflow-hidden rounded-xl border bg-white">

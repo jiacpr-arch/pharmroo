@@ -1,0 +1,32 @@
+{
+  "subject": "Gastrointestinal",
+  "unit": { "title_th": "ทางเดินอาหาร", "description_th": "การจัดการ PUD/GERD การกำจัด H. pylori และยาแก้คลื่นไส้ ท้องเสีย ท้องผูก", "icon": "🫁" },
+  "lessons": [
+    {
+      "title_th": "PUD และ GERD",
+      "subtitle_th": "PPI, H2RA และการกำจัด H. pylori",
+      "icon": "🔥",
+      "est_minutes": 5,
+      "xp_reward": 10,
+      "cards": [
+        { "card_type": "concept", "title_th": "PPI vs H2RA", "body_md": "- **PPI** (omeprazole, pantoprazole): ยับยั้ง H+/K+ ATPase อย่างถาวร ลดกรดได้แรงสุด เป็นยาหลักใน GERD/PUD\n- **H2RA** (famotidine): ยับยั้ง histamine H2 receptor ออกฤทธิ์เร็วแต่อ่อนกว่าและเกิด tolerance\n\nPPI ควรกิน **ก่อนอาหาร 30-60 นาที**" },
+        { "card_type": "concept", "title_th": "การกำจัด H. pylori", "body_md": "สูตร **Triple therapy** 14 วัน:\n1. **PPI** (วันละ 2 ครั้ง)\n2. **Clarithromycin**\n3. **Amoxicillin** (หรือ metronidazole ถ้าแพ้ penicillin)\n\nพื้นที่ดื้อ clarithromycin สูง ใช้ **bismuth quadruple therapy**" },
+        { "card_type": "warning", "title_th": "ผลข้างเคียง PPI ระยะยาว", "body_md": "การใช้ PPI นานๆ สัมพันธ์กับ:\n- **Hypomagnesemia**, ขาด **B12** และ **Ca** (เสี่ยงกระดูกหัก)\n- เพิ่มความเสี่ยง **C. difficile** และปอดอักเสบ\n\nใช้ขนาดต่ำสุดที่จำเป็นและทบทวนการใช้เป็นระยะ" },
+        { "card_type": "tip", "title_th": "ปรับพฤติกรรมใน GERD", "body_md": "- ลดน้ำหนัก งดบุหรี่ แอลกอฮอล์\n- หลีกเลี่ยงอาหารมัน ช็อกโกแลต กาแฟ อาหารรสจัด\n- ยกหัวเตียงสูง ไม่นอนทันทีหลังอาหาร (เว้น 3 ชม.)" }
+      ]
+    },
+    {
+      "title_th": "คลื่นไส้ ท้องเสีย ท้องผูก",
+      "subtitle_th": "Antiemetic, Antidiarrheal, Laxative",
+      "icon": "🤢",
+      "est_minutes": 5,
+      "xp_reward": 10,
+      "cards": [
+        { "card_type": "concept", "title_th": "ยาแก้คลื่นไส้อาเจียน", "body_md": "เลือกตามสาเหตุ:\n- **5-HT3 antagonist** (ondansetron): เคมีบำบัด, หลังผ่าตัด\n- **Dopamine antagonist** (metoclopramide, domperidone): gastroparesis\n- **Antihistamine** (dimenhydrinate): เมารถ/เมาเรือ\n\nmetoclopramide เสี่ยง **extrapyramidal symptoms**" },
+        { "card_type": "warning", "title_th": "ORS สำคัญกว่ายาหยุดถ่าย", "body_md": "ในท้องเสียเฉียบพลัน หัวใจคือ **ทดแทนน้ำและเกลือแร่ (ORS)**\n\n**ห้ามใช้ยาหยุดถ่าย (loperamide)** ในกรณี:\n- ถ่ายเป็นมูกเลือด/ไข้สูง (suspected invasive/dysentery)\n- เด็กเล็ก" },
+        { "card_type": "concept", "title_th": "กลุ่มยาระบาย", "body_md": "- **Bulk-forming** (psyllium): เพิ่มกาก ปลอดภัย ใช้ระยะยาว\n- **Osmotic** (lactulose, PEG, milk of magnesia)\n- **Stimulant** (senna, bisacodyl): ใช้ระยะสั้น\n- **Stool softener** (docusate)\n\nเริ่มจากปรับอาหาร ใยอาหาร และน้ำก่อน" },
+        { "card_type": "mnemonic", "title_th": "loperamide vs bismuth", "body_md": "จำง่ายๆ\n- **Loperamide** = opioid agonist ที่ลำไส้ ลดการเคลื่อนไหว → หยุดถ่าย\n- **Bismuth subsalicylate** = antisecretory + เคลือบ ทำให้**ลิ้น/อุจจาระดำ** (ไม่อันตราย แต่ต้องรู้เพื่อไม่สับสนกับเลือดออก)" }
+      ]
+    }
+  ]
+}

@@ -7,7 +7,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { Shield, Loader2, BookOpen, CreditCard, Users } from "lucide-react";
+import { Shield, Loader2, BookOpen, CreditCard, Users, GraduationCap } from "lucide-react";
 
 export default function AdminDashboard() {
   const { data: session, status } = useSession();
@@ -144,6 +144,19 @@ export default function AdminDashboard() {
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground">เพิ่ม แก้ไข ลบข้อสอบ MCQ</p>
+            </CardContent>
+          </Card>
+        </Link>
+        <Link href="/admin/learn">
+          <Card className="hover:shadow-md transition-shadow cursor-pointer h-full">
+            <CardHeader className="pb-2">
+              <div className="flex items-center gap-2">
+                <GraduationCap className="h-5 w-5 text-brand" />
+                <h3 className="font-bold">จัดการบทเรียน</h3>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <p className="text-sm text-muted-foreground">สร้างยูนิต บทเรียน การ์ดความรู้ และแนบ quiz (microlearning)</p>
             </CardContent>
           </Card>
         </Link>

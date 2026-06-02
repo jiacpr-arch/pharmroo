@@ -1,0 +1,58 @@
+{
+  "subject": "Biopharmaceutics",
+  "unit": {
+    "title_th": "ชีวเภสัชศาสตร์",
+    "description_th": "BCS classification ชีวประสิทธิผล/ชีวสมมูล และปัจจัยที่มีผลต่อการดูดซึมยา",
+    "icon": "💊"
+  },
+  "lessons": [
+    {
+      "title_th": "BCS และชีวประสิทธิผล",
+      "subtitle_th": "การจำแนกตามการละลายและการซึมผ่าน",
+      "icon": "🔬",
+      "est_minutes": 6,
+      "xp_reward": 10,
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "BCS Classification",
+          "body_md": "**Biopharmaceutics Classification System** แบ่งตามการละลาย (solubility) และการซึมผ่าน (permeability)\n- **Class I:** ละลายสูง ซึมผ่านสูง (ดูดซึมดี)\n- **Class II:** ละลายต่ำ ซึมผ่านสูง (dissolution เป็นตัวจำกัด)\n- **Class III:** ละลายสูง ซึมผ่านต่ำ (permeability เป็นตัวจำกัด)\n- **Class IV:** ละลายต่ำ ซึมผ่านต่ำ (ดูดซึมแย่)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Bioavailability และ Bioequivalence",
+          "body_md": "**Bioavailability (F):** สัดส่วนและอัตราที่ตัวยาเข้าสู่ระบบไหลเวียนเลือด\n- ยาฉีดเข้าหลอดเลือดดำ F = 100% (อ้างอิง)\n\n**Bioequivalence:** ยา 2 ตำรับให้ค่า AUC, Cmax, Tmax ไม่แตกต่างทางสถิติ\n- เกณฑ์ทั่วไป: 90% CI ของ AUC และ Cmax อยู่ในช่วง **80-125%**"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "Biowaiver",
+          "body_md": "**ยา BCS Class I (และบางกรณี Class III)** อาจขอยกเว้นการศึกษา bioequivalence ในคน (biowaiver) ได้ หากตำรับละลายเร็ว (rapidly dissolving)\n\nเพราะการละลายและการซึมผ่านดีอยู่แล้ว จึงพิสูจน์ความเท่าเทียมด้วยข้อมูล in vitro dissolution ได้"
+        }
+      ]
+    },
+    {
+      "title_th": "ปัจจัยที่มีผลต่อการดูดซึม",
+      "subtitle_th": "Dissolution, first-pass และอาหาร",
+      "icon": "🧬",
+      "est_minutes": 6,
+      "xp_reward": 10,
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "Dissolution เป็นขั้นจำกัดอัตรา",
+          "body_md": "สำหรับยารับประทานรูปแบบของแข็ง ขั้นตอนคือ\n**แตกตัว (disintegration) → ละลาย (dissolution) → ดูดซึม (absorption)**\n\nตามสมการ Noyes-Whitney การละลายเพิ่มขึ้นเมื่อ\n- พื้นที่ผิวมาก (ลดขนาดอนุภาค)\n- การละลายของยาสูง\n- คนสารละลายดี (เพิ่มความต่างความเข้มข้น)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "First-pass metabolism",
+          "body_md": "ยารับประทานถูกดูดซึมผ่านลำไส้ → ตับ ผ่านระบบ portal vein อาจถูกเปลี่ยนแปลงก่อนเข้าสู่ระบบ → **ลด bioavailability**\n\nหลีกเลี่ยง first-pass ได้โดยให้ทาง:\n- ใต้ลิ้น (sublingual)\n- ทวารหนัก (บางส่วน)\n- ฉีด, ผ่านผิวหนัง (transdermal)"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "อาหารและการดูดซึม",
+          "body_md": "**อาหารเปลี่ยนการดูดซึมได้มาก**\n\n- นม/ยาลดกรด (Ca, Mg, Al) จับ tetracycline, fluoroquinolone เกิด chelation → ดูดซึมลดลง ต้องเว้นระยะ 2 ชม.\n- อาหารไขมันสูงเพิ่มการดูดซึมยาละลายในไขมัน (เช่น griseofulvin)\n- ตรวจสอบคำแนะนำ \"ก่อน/หลังอาหาร\" เสมอ"
+        }
+      ]
+    }
+  ]
+}

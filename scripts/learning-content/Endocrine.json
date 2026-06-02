@@ -1,0 +1,31 @@
+{
+  "subject": "Endocrine",
+  "unit": { "title_th": "ต่อมไร้ท่อ", "description_th": "การจัดการเบาหวานชนิดที่ 2 และโรคไทรอยด์เบื้องต้น", "icon": "🧪" },
+  "lessons": [
+    {
+      "title_th": "เบาหวานชนิดที่ 2",
+      "subtitle_th": "Type 2 Diabetes Mellitus",
+      "icon": "🩸",
+      "est_minutes": 5,
+      "xp_reward": 10,
+      "cards": [
+        { "card_type": "concept", "title_th": "Metformin first-line", "body_md": "**Metformin** เป็นยาตัวแรก:\n- ลดการสร้างกลูโคสที่ตับ เพิ่มความไวต่ออินซูลิน\n- ไม่ทำให้ hypoglycemia เดี่ยว ๆ และไม่เพิ่มน้ำหนัก\n- ADR: คลื่นไส้/ท้องเสีย, ขาด **B12**, เสี่ยง **lactic acidosis**" },
+        { "card_type": "concept", "title_th": "กลุ่มยาและ ADR เด่น", "body_md": "- **SU** (glipizide): hypoglycemia, น้ำหนักขึ้น\n- **DPP-4i** (sitagliptin): เป็นกลาง\n- **SGLT2i** (-gliflozin): ลด CV/ไต, เสี่ยง UTI/genital infection, **euglycemic DKA**\n- **GLP-1 RA** (-tide): ลดน้ำหนัก, คลื่นไส้\n- **TZD** (pioglitazone): บวมน้ำ, หัวใจล้มเหลว" },
+        { "card_type": "warning", "title_th": "Metformin & ไต", "body_md": "หยุด/หลีกเลี่ยง metformin เมื่อ **eGFR < 30**\nหยุดชั่วคราวก่อนทำ **contrast (CT)** และในภาวะเจ็บป่วยเฉียบพลัน/ขาดน้ำ เพื่อลดเสี่ยง lactic acidosis" },
+        { "card_type": "tip", "title_th": "เลือกยาตามโรคร่วม", "body_md": "- มีโรคหัวใจ/ไต → เลือก **SGLT2i** หรือ **GLP-1 RA**\n- เป้าหมาย **HbA1c โดยทั่วไป < 7%** (ปรับตามผู้ป่วย)" }
+      ]
+    },
+    {
+      "title_th": "โรคไทรอยด์",
+      "subtitle_th": "Thyroid Disorders",
+      "icon": "🦋",
+      "est_minutes": 5,
+      "xp_reward": 10,
+      "cards": [
+        { "card_type": "concept", "title_th": "Hypothyroidism", "body_md": "รักษาด้วย **levothyroxine (LT4)**\n- กิน **ตอนท้องว่าง** ก่อนอาหารเช้า ~30–60 นาที\n- เลี่ยงกินพร้อม **แคลเซียม/เหล็ก/ยาลดกรด** (ลดการดูดซึม)\n- ติดตามด้วย **TSH**" },
+        { "card_type": "concept", "title_th": "Hyperthyroidism", "body_md": "ยาต้านไทรอยด์ (thionamide):\n- **Methimazole (MMI)**: ตัวเลือกแรกทั่วไป\n- **PTU**: เลือกใน **ไตรมาสแรกของการตั้งครรภ์** และ thyroid storm\n- เสริม **beta-blocker** (propranolol) คุมอาการใจสั่น/มือสั่น" },
+        { "card_type": "warning", "title_th": "ADR ยาต้านไทรอยด์", "body_md": "- **Agranulocytosis** (เม็ดเลือดขาวต่ำรุนแรง) — มีไข้/เจ็บคอให้หยุดยาและตรวจเลือด\n- **PTU**: เสี่ยง **hepatotoxicity** มากกว่า MMI\n- MMI เป็น teratogen ในไตรมาสแรก" }
+      ]
+    }
+  ]
+}

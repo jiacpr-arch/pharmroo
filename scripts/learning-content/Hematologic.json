@@ -1,0 +1,63 @@
+{
+  "subject": "Hematologic",
+  "unit": {
+    "title_th": "โลหิตวิทยา",
+    "description_th": "ภาวะโลหิตจางและยาต้านการแข็งตัวของเลือด",
+    "icon": "🩸"
+  },
+  "lessons": [
+    {
+      "title_th": "ภาวะโลหิตจาง (Anemia)",
+      "subtitle_th": "Iron, B12 และ Folate",
+      "icon": "🩸",
+      "est_minutes": 5,
+      "xp_reward": 10,
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "แยกตามขนาดเม็ดเลือด (MCV)",
+          "body_md": "- **Microcytic (MCV ต่ำ)**: ขาดธาตุเหล็ก (พบบ่อยสุด), thalassemia\n- **Macrocytic (MCV สูง)**: ขาด vitamin B12 หรือ folate\n- **Normocytic**: anemia of chronic disease, เสียเลือดเฉียบพลัน"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "กิน iron ให้ดูดซึมดี",
+          "body_md": "Ferrous sulfate ดูดซึมดีตอน **ท้องว่าง** + **vitamin C**\n\n- ADR: ท้องผูก คลื่นไส้ อุจจาระดำ\n- หลีกเลี่ยงกินพร้อม นม, ยาลดกรด, ชา/กาแฟ, แคลเซียม (ลดการดูดซึม)"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "อย่าให้ folate เดี่ยวๆ ถ้าขาด B12",
+          "body_md": "การให้ **folate อย่างเดียว** ในผู้ขาด B12 จะแก้ภาวะซีดได้ แต่ **บดบังและทำให้ neuropathy จาก B12 แย่ลงถาวร**\n\nตรวจระดับ B12 ก่อนเสมอเมื่อมี macrocytic anemia"
+        }
+      ]
+    },
+    {
+      "title_th": "ยาต้านการแข็งตัวของเลือด",
+      "subtitle_th": "Heparin vs Warfarin vs DOAC",
+      "icon": "💊",
+      "est_minutes": 6,
+      "xp_reward": 10,
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "กลไกและการติดตาม",
+          "body_md": "- **Heparin (UFH)**: ออกฤทธิ์เร็ว IV ติดตาม **aPTT**\n- **LMWH** (enoxaparin): SC ไม่ต้องตรวจประจำ\n- **Warfarin**: ยับยั้ง vitamin K (factor II, VII, IX, X) ติดตาม **INR**\n- **DOAC** (dabigatran, rivaroxaban): ไม่ต้องตรวจประจำ"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Antidote ที่ต้องจำ",
+          "body_md": "- Warfarin → **Vitamin K** (+ FFP/PCC ถ้าเลือดออกรุนแรง)\n- Heparin/LMWH → **Protamine sulfate**\n- Dabigatran → **Idarucizumab**\n- Rivaroxaban/apixaban → **Andexanet alfa**"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "HIT และ warfarin interaction",
+          "body_md": "- **HIT** (heparin-induced thrombocytopenia): เกล็ดเลือดต่ำ + ลิ่มเลือดอุดตัน → หยุด heparin\n- Warfarin มี interaction มาก ผ่าน **CYP2C9/VKORC1** + อาหารวิตามิน K (ผักใบเขียว)"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ Warfarin: 1972",
+          "body_md": "Vitamin K-dependent factors = **2, 7, 9, 10** (จำว่า '1972' + factor 10)\n\nช่วงแรก warfarin อาจ **procoagulant** ชั่วคราว (protein C ลดก่อน) → ต้อง bridge ด้วย heparin"
+        }
+      ]
+    }
+  ]
+}

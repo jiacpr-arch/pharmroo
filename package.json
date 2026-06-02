@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "seed:learning": "node scripts/seed-learning.js"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.80.0",

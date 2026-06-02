@@ -1,0 +1,102 @@
+{
+  "subject": "Pharmacokinetics",
+  "unit": {
+    "title_th": "เภสัชวิทยาและเภสัชจลนศาสตร์เบื้องต้น",
+    "description_th": "หลักการสำคัญที่ต้องแม่นก่อนสอบ: ADME, เภสัชพลศาสตร์ และระบบประสาทอัตโนมัติ",
+    "icon": "💊"
+  },
+  "lessons": [
+    {
+      "title_th": "เภสัชจลนศาสตร์ (ADME)",
+      "subtitle_th": "ร่างกายทำอะไรกับยา",
+      "icon": "🔄",
+      "est_minutes": 5,
+      "xp_reward": 10,
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "ADME คืออะไร",
+          "body_md": "เภสัชจลนศาสตร์ (Pharmacokinetics) คือการศึกษาว่า **ร่างกายทำอะไรกับยา** ประกอบด้วย 4 ขั้น:\n- **A**bsorption การดูดซึม\n- **D**istribution การกระจาย\n- **M**etabolism การเปลี่ยนแปลง\n- **E**xcretion การขับออก"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Bioavailability (F)",
+          "body_md": "ชีวปริมาณออกฤทธิ์ = สัดส่วนของยาที่เข้าสู่ระบบไหลเวียนในรูปไม่เปลี่ยนแปลง\n- ยาฉีดเข้าหลอดเลือดดำ (IV) มี **F = 1 (100%)** เสมอ\n- ยากิน F มักลดลงจาก **first-pass metabolism** ที่ตับและผนังลำไส้"
+        },
+        {
+          "card_type": "example",
+          "title_th": "ตัวอย่าง first-pass",
+          "body_md": "Propranolol และ morphine ถูก first-pass สูง จึงต้องใช้ขนาดกินสูงกว่าขนาดฉีดมาก\n\nยาที่ให้ใต้ลิ้น (เช่น GTN) หรือทางทวารหนัก ช่วย **เลี่ยง first-pass** ได้บางส่วน"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "ค่าครึ่งชีวิต (t½)",
+          "body_md": "ยาจะถูกกำจัดเกือบหมด (~97%) หลังผ่านไปประมาณ **5 เท่าของ t½** และเข้าสู่ steady state หลังให้ยาซ้ำประมาณ 5 t½ เช่นกัน"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ ADME",
+          "body_md": "**\"แอ๊ด-มี\" (ADME)** = ยา **แอ๊ด** (เข้า=Absorption,Distribution) แล้ว **มี** การจัดการ (Metabolism, Excretion)"
+        }
+      ]
+    },
+    {
+      "title_th": "เภสัชพลศาสตร์",
+      "subtitle_th": "ยาทำอะไรกับร่างกาย",
+      "icon": "🎯",
+      "est_minutes": 5,
+      "xp_reward": 10,
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "Pharmacodynamics",
+          "body_md": "เภสัชพลศาสตร์ = **ยาทำอะไรกับร่างกาย** ส่วนใหญ่ผ่านการจับกับ **receptor** แล้วเกิดผลตอบสนอง"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Agonist vs Antagonist",
+          "body_md": "- **Agonist**: จับ receptor แล้ว**กระตุ้น**ให้เกิดผล (มีทั้ง affinity และ efficacy)\n- **Antagonist**: จับ receptor แต่**ไม่กระตุ้น** เพียงบล็อกไม่ให้ agonist จับ (มี affinity แต่ efficacy = 0)\n- **Partial agonist**: กระตุ้นได้บางส่วน (efficacy ต่ำกว่า full agonist)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "EC50 และ potency",
+          "body_md": "**EC50** = ความเข้มข้นที่ให้ผล 50% ของผลสูงสุด\n- EC50 ต่ำ → ยา **potent** มาก (ใช้ขนาดน้อยก็ได้ผล)\n- **Efficacy** = ผลสูงสุดที่ยาทำได้ (Emax) คนละเรื่องกับ potency"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Therapeutic Index (TI)",
+          "body_md": "TI = TD50/ED50 ยิ่งสูงยิ่งปลอดภัย\n\n⚠️ ยา **TI แคบ** เช่น warfarin, digoxin, phenytoin, theophylline, lithium ต้องเฝ้าระวังระดับยาในเลือดอย่างใกล้ชิด"
+        }
+      ]
+    },
+    {
+      "title_th": "ระบบประสาทอัตโนมัติ",
+      "subtitle_th": "Cholinergic & Adrenergic",
+      "icon": "🧠",
+      "est_minutes": 6,
+      "xp_reward": 12,
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "ภาพรวม ANS",
+          "body_md": "- **Sympathetic** (สู้หรือหนี): สารสื่อหลัก **norepinephrine** ออกฤทธิ์ที่ adrenergic receptor (α, β)\n- **Parasympathetic** (พักและย่อย): สารสื่อ **acetylcholine** ที่ muscarinic/nicotinic receptor"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Adrenergic receptors",
+          "body_md": "- **β1**: เพิ่มอัตรา/แรงบีบหัวใจ (หัวใจ)\n- **β2**: ขยายหลอดลม ขยายหลอดเลือด (ปอด)\n- **α1**: หดหลอดเลือด เพิ่มความดัน"
+        },
+        {
+          "card_type": "example",
+          "title_th": "ยาที่ออกฤทธิ์",
+          "body_md": "- **Salbutamol** = β2-agonist → ขยายหลอดลม รักษาหอบหืด\n- **Atenolol/metoprolol** = β1-selective blocker → ลดความดัน/อัตราหัวใจ\n- **Atropine** = muscarinic antagonist → เพิ่มอัตราหัวใจ ลดสารคัดหลั่ง"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ β receptor",
+          "body_md": "**\"1 หัวใจ 2 ปอด\"** → β**1** = h**eart** (มี 1 หัวใจ), β**2** = l**ungs** (มี 2 ปอด)"
+        }
+      ]
+    }
+  ]
+}
