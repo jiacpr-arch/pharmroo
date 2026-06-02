@@ -1,0 +1,63 @@
+{
+  "subject": "Psychiatric",
+  "unit": {
+    "title_th": "จิตเวช",
+    "description_th": "ยารักษาภาวะซึมเศร้าและโรคจิต พร้อมอาการไม่พึงประสงค์ที่ออกสอบบ่อย",
+    "icon": "💊"
+  },
+  "lessons": [
+    {
+      "title_th": "ภาวะซึมเศร้าและยา Antidepressant",
+      "subtitle_th": "SSRI first-line และ serotonin syndrome",
+      "icon": "🧠",
+      "est_minutes": 5,
+      "xp_reward": 10,
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "SSRI เป็นยาตัวแรก",
+          "body_md": "**SSRI** (fluoxetine, sertraline, escitalopram) เป็น first-line ในโรคซึมเศร้า เพราะปลอดภัยกว่า TCA เมื่อ overdose\n\n- ออกฤทธิ์เต็มที่ใน **2–4 สัปดาห์**\n- ADR: คลื่นไส้, นอนไม่หลับ, sexual dysfunction\n- ระวัง hyponatremia (SIADH) ในผู้สูงอายุ"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Serotonin syndrome",
+          "body_md": "เกิดจาก serotonin มากเกินไป (เช่น SSRI + MAOI, tramadol, triptan)\n\nอาการสำคัญ 3 กลุ่ม:\n- **Mental status**: สับสน กระวนกระวาย\n- **Autonomic**: ไข้ หัวใจเต้นเร็ว เหงื่อแตก\n- **Neuromuscular**: clonus, hyperreflexia\n\nหยุดยาทันที + supportive care"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "ห้ามหยุด SSRI กะทันหัน",
+          "body_md": "หยุดยาทันทีเสี่ยง **discontinuation syndrome**: วิงเวียน คลื่นไส้ เหมือนไข้หวัด ชาแบบไฟช็อต\n\n- **Paroxetine** และ **venlafaxine** ครึ่งชีวิตสั้น → อาการรุนแรงสุด\n- ค่อยๆ ลดยา (taper)"
+        }
+      ]
+    },
+    {
+      "title_th": "ยารักษาโรคจิต (Antipsychotics)",
+      "subtitle_th": "Typical vs Atypical, EPS และ metabolic ADR",
+      "icon": "💊",
+      "est_minutes": 5,
+      "xp_reward": 10,
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "Typical vs Atypical",
+          "body_md": "- **Typical** (haloperidol, chlorpromazine): block D2 แรง → **EPS สูง**\n- **Atypical** (risperidone, olanzapine, quetiapine, clozapine): EPS น้อยกว่า แต่ **metabolic ADR สูง** (น้ำหนักขึ้น, เบาหวาน, ไขมันสูง)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "EPS 4 แบบ",
+          "body_md": "อาการนอกพีระมิด (Extrapyramidal symptoms):\n1. **Acute dystonia**: กล้ามเนื้อเกร็ง (เกิดเร็วเป็นชั่วโมง)\n2. **Akathisia**: กระวนกระวาย อยู่ไม่สุข\n3. **Parkinsonism**: สั่น เกร็ง เคลื่อนช้า\n4. **Tardive dyskinesia**: ขยับปาก/ลิ้นซ้ำ (เกิดช้า มักถาวร)"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Clozapine = agranulocytosis",
+          "body_md": "**Clozapine** ได้ผลดีในรายดื้อยา แต่เสี่ยง **agranulocytosis** (เม็ดเลือดขาวต่ำรุนแรง)\n\n- ต้องตรวจ ANC/CBC สม่ำเสมอ\n- ระวัง myocarditis, seizure, น้ำลายไหลมาก\n\nNMS: ไข้สูง เกร็ง autonomic instability + CK สูง → ภาวะฉุกเฉิน"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ EPS: ADAPT",
+          "body_md": "**A**cute **D**ystonia → **A**kathisia → **P**arkinsonism → **T**ardive dyskinesia\n\nเรียงตามเวลาที่เกิด (เร็วไปช้า)\n\nรักษา dystonia/parkinsonism ด้วย anticholinergic (benztropine); akathisia ด้วย beta-blocker (propranolol)"
+        }
+      ]
+    }
+  ]
+}

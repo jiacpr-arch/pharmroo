@@ -1,0 +1,58 @@
+{
+  "subject": "Dermatologic",
+  "unit": {
+    "title_th": "ผิวหนัง",
+    "description_th": "การใช้ topical corticosteroid และการดูแลสิว/การติดเชื้อผิวหนังเบื้องต้น",
+    "icon": "🩹"
+  },
+  "lessons": [
+    {
+      "title_th": "Topical Corticosteroid",
+      "subtitle_th": "ความแรงและหลักการใช้ทาผิวหนัง",
+      "icon": "🩹",
+      "est_minutes": 5,
+      "xp_reward": 10,
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "ระดับความแรง (potency)",
+          "body_md": "- **อ่อน**: hydrocortisone 1% → ใช้ที่หน้า ข้อพับ เด็ก\n- **ปานกลาง**: triamcinolone, betamethasone valerate\n- **แรง/แรงมาก**: clobetasol, betamethasone dipropionate → รอยโรคหนา ฝ่ามือ ฝ่าเท้า\n\nเลือกตามตำแหน่งและความหนาของรอยโรค"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ADR จากการใช้นาน",
+          "body_md": "ใช้ steroid แรงนานหรือบริเวณกว้าง เสี่ยง:\n- ผิวบาง (atrophy), striae, telangiectasia\n- **ห้ามใช้ steroid แรงที่หน้า** → perioral dermatitis, steroid acne\n- ดูดซึมเข้าระบบ → HPA suppression (โดยเฉพาะเด็ก/บริเวณกว้าง/ปิดทับ)"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "กฎ Fingertip unit (FTU)",
+          "body_md": "**1 FTU** = ยาที่บีบจากปลายนิ้วชี้ถึงข้อแรก ≈ ทาได้พื้นที่ 2 ฝ่ามือผู้ใหญ่\n\n- ใช้ ointment กับผิวแห้ง/หนา; cream กับรอยโรคเปียก/ข้อพับ\n- เลือก potency ต่ำสุดที่ได้ผล และใช้ระยะสั้น"
+        }
+      ]
+    },
+    {
+      "title_th": "สิวและการติดเชื้อผิวหนัง",
+      "subtitle_th": "Acne และ topical antimicrobial เบื้องต้น",
+      "icon": "🧴",
+      "est_minutes": 5,
+      "xp_reward": 10,
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "การรักษาสิวตามความรุนแรง",
+          "body_md": "- **เล็กน้อย**: topical retinoid (adapalene), benzoyl peroxide\n- **ปานกลาง**: + topical/oral antibiotic (doxycycline)\n- **รุนแรง/ดื้อยา**: oral isotretinoin\n\nใช้ benzoyl peroxide ร่วมกับ antibiotic เพื่อลดการดื้อยา"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Isotretinoin = teratogen",
+          "body_md": "**Isotretinoin** ก่อความพิการต่อทารกรุนแรง (teratogenic)\n\n- ต้องคุมกำเนิดเข้มงวด, ตรวจการตั้งครรภ์\n- ADR: ปากแห้ง ตาแห้ง ไขมัน/เอนไซม์ตับสูง ปวดกล้ามเนื้อ\n- ห้ามให้ร่วม tetracycline (เสี่ยง pseudotumor cerebri)"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "เชื้อราผิวหนัง",
+          "body_md": "- **Topical azole** (clotrimazole, ketoconazole) สำหรับ tinea เฉพาะที่\n- รอยโรคกว้าง/เล็บ/ศีรษะ → **oral antifungal** (terbinafine, itraconazole)\n- Retinoid ใช้ตอนกลางคืน + กันแดดกลางวัน (ผิวไวแสง)"
+        }
+      ]
+    }
+  ]
+}

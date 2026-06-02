@@ -1,0 +1,31 @@
+{
+  "subject": "Pulmonary",
+  "unit": { "title_th": "ปอด", "description_th": "การจัดการโรคหอบหืดและ COPD ด้วยยาสูดพ่นและหลักการ stepwise", "icon": "🫧" },
+  "lessons": [
+    {
+      "title_th": "โรคหอบหืด",
+      "subtitle_th": "Asthma Management",
+      "icon": "🌬️",
+      "est_minutes": 5,
+      "xp_reward": 10,
+      "cards": [
+        { "card_type": "concept", "title_th": "Reliever vs Controller", "body_md": "- **Reliever**: SABA (salbutamol) บรรเทาอาการเฉียบพลัน\n- **Controller**: **ICS** (budesonide, fluticasone) เป็นหลักของการควบคุมระยะยาว\n- ปัจจุบันแนะนำ **ICS-formoterol** เป็นยาบรรเทา/ควบคุม ลดการใช้ SABA เดี่ยว" },
+        { "card_type": "concept", "title_th": "Stepwise approach", "body_md": "เพิ่มยาเป็นขั้นตามการควบคุม:\n1. ICS ขนาดต่ำ (± formoterol prn)\n2. ICS ต่ำ + LABA\n3. ICS ขนาดกลาง/สูง + LABA\n4. เพิ่ม LAMA / ส่งต่อ\n\n**LABA ห้ามใช้เดี่ยว** ต้องคู่กับ ICS เสมอ" },
+        { "card_type": "tip", "title_th": "บ้วนปากหลังพ่น ICS", "body_md": "หลังพ่น ICS ให้ **บ้วนปาก** เพื่อลด **เชื้อราในช่องปาก (oral candidiasis)** และเสียงแหบ\nใช้ **spacer** ช่วยเพิ่มการนำส่งยาและลด ADR เฉพาะที่" },
+        { "card_type": "warning", "title_th": "สัญญาณควบคุมไม่ดี", "body_md": "ใช้ SABA **บ่อยเกินไป** (เช่น >2 ครั้ง/สัปดาห์) บ่งชี้การควบคุมไม่ดี ต้องทบทวน controller\nระวังการใช้ SABA เกินขนาดทำให้ **มือสั่น ใจสั่น hypokalemia**" }
+      ]
+    },
+    {
+      "title_th": "COPD เบื้องต้น",
+      "subtitle_th": "COPD Basics",
+      "icon": "🚬",
+      "est_minutes": 5,
+      "xp_reward": 10,
+      "cards": [
+        { "card_type": "concept", "title_th": "หลักการรักษา COPD", "body_md": "ยาหลักคือ **bronchodilator ออกฤทธิ์ยาว**:\n- **LAMA** (tiotropium)\n- **LABA** (formoterol, salmeterol)\n\nต่างจากหอบหืดตรงที่ **ICS ไม่ใช่ยาแรก** ใช้เฉพาะรายมี exacerbation บ่อยหรือ eosinophil สูง" },
+        { "card_type": "tip", "title_th": "เลิกบุหรี่สำคัญที่สุด", "body_md": "**การเลิกบุหรี่** เป็นมาตรการเดียวที่ชะลอการเสื่อมของสมรรถภาพปอดได้ชัดเจน\nร่วมกับ **วัคซีนไข้หวัดใหญ่และปอดอักเสบ** และการฟื้นฟูสมรรถภาพปอด" },
+        { "card_type": "warning", "title_th": "ออกซิเจนใน COPD", "body_md": "ให้ออกซิเจนระวัง **CO2 retention** ในผู้ป่วยบางราย — ควบคุมเป้า SpO2 ประมาณ **88–92%**\nไม่ให้ออกซิเจนความเข้มข้นสูงโดยไม่จำเป็น" }
+      ]
+    }
+  ]
+}

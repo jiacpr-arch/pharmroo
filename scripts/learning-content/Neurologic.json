@@ -1,0 +1,32 @@
+{
+  "subject": "Neurologic",
+  "unit": { "title_th": "ระบบประสาท", "description_th": "การจัดการโรคลมชัก พาร์กินสัน และไมเกรน", "icon": "🧠" },
+  "lessons": [
+    {
+      "title_th": "โรคลมชัก",
+      "subtitle_th": "ยากันชัก (AED) และข้อควรระวัง",
+      "icon": "⚡",
+      "est_minutes": 6,
+      "xp_reward": 10,
+      "cards": [
+        { "card_type": "concept", "title_th": "เลือก AED ตามชนิดชัก", "body_md": "- **Focal seizure**: carbamazepine, lamotrigine, levetiracetam\n- **Generalized tonic-clonic**: valproate, lamotrigine, levetiracetam\n- **Absence**: ethosuximide, valproate\n\n**Valproate** ครอบคลุมกว้าง แต่เลี่ยงในหญิงวัยเจริญพันธุ์" },
+        { "card_type": "warning", "title_th": "Valproate ในหญิงตั้งครรภ์", "body_md": "**Valproate ทำให้ทารกพิการ (neural tube defects)** และกระทบพัฒนาการสมอง\n\nหลีกเลี่ยงในหญิงตั้งครรภ์/วัยเจริญพันธุ์ที่ไม่คุมกำเนิด ระวัง **hepatotoxicity** และ thrombocytopenia ด้วย" },
+        { "card_type": "warning", "title_th": "ผื่นรุนแรงจาก AED", "body_md": "Carbamazepine, lamotrigine, phenytoin เสี่ยง **SJS/TEN**\n- ตรวจ **HLA-B*1502** ก่อนเริ่ม carbamazepine (พบมากในคนไทย/เอเชีย)\n- lamotrigine ต้อง **titrate ช้าๆ** เพื่อลดความเสี่ยงผื่น" },
+        { "card_type": "tip", "title_th": "Enzyme inducer", "body_md": "Carbamazepine, phenytoin, phenobarbital เป็น **CYP inducer** → ลดระดับยาอื่น เช่น ยาคุมกำเนิด, warfarin\n\nValproate ตรงข้าม เป็น **inhibitor** → เพิ่มระดับ lamotrigine" }
+      ]
+    },
+    {
+      "title_th": "พาร์กินสันและไมเกรน",
+      "subtitle_th": "Parkinson และ Migraine เบื้องต้น",
+      "icon": "🧓",
+      "est_minutes": 5,
+      "xp_reward": 10,
+      "cards": [
+        { "card_type": "concept", "title_th": "ยาหลักในพาร์กินสัน", "body_md": "พาร์กินสันเกิดจากการขาด **dopamine**\n- **Levodopa/carbidopa**: ได้ผลดีที่สุด (carbidopa กันการสลาย levodopa นอกสมอง ลด N/V)\n- Dopamine agonist (pramipexole), MAO-B inhibitor (selegiline), COMT inhibitor (entacapone)" },
+        { "card_type": "warning", "title_th": "ระวังยาต้าน dopamine", "body_md": "ยาที่ **ปิดกั้น dopamine** ทำให้อาการพาร์กินสันแย่ลง:\n- Antipsychotics (haloperidol)\n- **Metoclopramide**\n\nในผู้ป่วยพาร์กินสันที่คลื่นไส้ ให้เลือก **domperidone** (ผ่าน BBB น้อย)" },
+        { "card_type": "concept", "title_th": "การรักษาไมเกรน", "body_md": "- **Acute (เฉียบพลัน)**: NSAID/paracetamol, **triptan** (sumatriptan) สำหรับปานกลาง-รุนแรง\n- **Prophylaxis (ป้องกัน)** เมื่อปวดบ่อย: propranolol, amitriptyline, topiramate, valproate" },
+        { "card_type": "tip", "title_th": "ข้อควรระวัง Triptan", "body_md": "Triptan ทำให้หลอดเลือดหดตัว → **ห้ามใช้ในโรคหัวใจขาดเลือด/CAD และความดันสูงคุมไม่ได้**\n\nระวัง **serotonin syndrome** เมื่อใช้ร่วมกับ SSRI/SNRI" }
+      ]
+    }
+  ]
+}

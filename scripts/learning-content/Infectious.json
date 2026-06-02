@@ -1,0 +1,32 @@
+{
+  "subject": "Infectious",
+  "unit": { "title_th": "โรคติดเชื้อ", "description_th": "หลักการเลือกใช้ยาปฏิชีวนะและข้อควรระวังของยาปฏิชีวนะสำคัญ", "icon": "🦠" },
+  "lessons": [
+    {
+      "title_th": "หลักการเลือกยาปฏิชีวนะ",
+      "subtitle_th": "Spectrum และ Empiric therapy",
+      "icon": "🎯",
+      "est_minutes": 5,
+      "xp_reward": 10,
+      "cards": [
+        { "card_type": "concept", "title_th": "Empiric vs Definitive", "body_md": "- **Empiric therapy**: เลือกยาตามเชื้อที่คาดว่าน่าจะเป็น ก่อนผล culture\n- **Definitive therapy**: ปรับยาให้แคบลง (de-escalation) ตามผลเพาะเชื้อและ susceptibility\n\nควรเก็บ culture **ก่อน** เริ่มยาปฏิชีวนะเสมอ" },
+        { "card_type": "concept", "title_th": "Bactericidal vs Bacteriostatic", "body_md": "- **Bactericidal** (ฆ่าเชื้อ): beta-lactam, aminoglycoside, fluoroquinolone, vancomycin\n- **Bacteriostatic** (ยับยั้ง): macrolide, tetracycline, clindamycin, sulfonamide\n\nในผู้ป่วยภูมิคุ้มกันต่ำหรือติดเชื้อรุนแรง (เช่น เยื่อหุ้มสมองอักเสบ) นิยม bactericidal" },
+        { "card_type": "tip", "title_th": "PK/PD ของยา", "body_md": "- **Time-dependent** (beta-lactam): ประสิทธิภาพขึ้นกับเวลาที่ระดับยาเหนือ MIC → ให้บ่อยครั้ง/infusion\n- **Concentration-dependent** (aminoglycoside, fluoroquinolone): ขึ้นกับความเข้มข้นสูงสุด → ให้ขนาดสูงวันละครั้ง" },
+        { "card_type": "mnemonic", "title_th": "เชื้อที่ครอบคลุมยาก", "body_md": "จำเชื้อดื้อยาที่ต้องระวัง **\"ESKAPE\"**:\n- **E**nterococcus\n- **S**. aureus (MRSA)\n- **K**lebsiella\n- **A**cinetobacter\n- **P**seudomonas\n- **E**nterobacter\n\nเป็นกลุ่มที่มักดื้อยาและต้องเลือกยาเฉพาะ" }
+      ]
+    },
+    {
+      "title_th": "ข้อควรระวังยาปฏิชีวนะสำคัญ",
+      "subtitle_th": "ADR ของ Aminoglycoside, FQ, Macrolide",
+      "icon": "⚠️",
+      "est_minutes": 6,
+      "xp_reward": 10,
+      "cards": [
+        { "card_type": "warning", "title_th": "Aminoglycoside", "body_md": "Gentamicin, amikacin มีพิษสำคัญ 2 อย่าง:\n- **Nephrotoxicity** (พิษต่อไต มักกลับคืนได้)\n- **Ototoxicity** (พิษต่อหู อาจถาวร)\n\nต้องติดตามค่าไตและระดับยา และปรับขนาดตาม CrCl" },
+        { "card_type": "warning", "title_th": "Fluoroquinolone", "body_md": "Ciprofloxacin, levofloxacin มีข้อควรระวัง:\n- **เอ็นอักเสบ/เอ็นฉีกขาด** (tendon rupture) โดยเฉพาะ Achilles\n- **QT prolongation**\n- ห้าม/ระวังในเด็กและหญิงตั้งครรภ์ (กระทบกระดูกอ่อน)\n- ลดการดูดซึมเมื่อกินคู่กับ antacid, Ca, Fe, Mg → เว้นระยะ" },
+        { "card_type": "warning", "title_th": "Macrolide", "body_md": "Erythromycin, clarithromycin, azithromycin:\n- **QT prolongation**\n- **ยับยั้ง CYP3A4** (clarithromycin, erythromycin) → drug interaction มาก เช่น กับ statin, warfarin\n- azithromycin interaction น้อยกว่าเพราะไม่ยับยั้ง CYP มาก" },
+        { "card_type": "tip", "title_th": "Allergy cross-reactivity", "body_md": "- ผู้แพ้ **penicillin** มีโอกาสแพ้ข้ามกับ cephalosporin ได้บ้าง (รุ่นเก่า/sidechain คล้ายกัน) แต่ต่ำกว่าที่เคยเชื่อ\n- ถ้าแพ้รุนแรง (anaphylaxis) ต่อ penicillin ให้หลีกเลี่ยง beta-lactam และเลือกกลุ่มอื่น เช่น macrolide" }
+      ]
+    }
+  ]
+}
