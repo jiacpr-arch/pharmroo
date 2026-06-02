@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { ArrowRight, BookOpen, Shuffle, Target, UserPlus, Package, Sparkles } from "lucide-react";
+import { ArrowRight, BookOpen, Shuffle, Target, UserPlus, Package, Sparkles, GraduationCap } from "lucide-react";
 import { getQuestionSets } from "@/lib/db/queries-mcq";
 import JsonLd from "@/components/JsonLd";
 import { getMcqSubjects, getMcqSubjectCounts, getNewQuestionsStats } from "@/lib/db/queries-mcq";
@@ -122,7 +122,26 @@ export default async function NursingPage() {
         </div>
       )}
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <Card className="group hover:shadow-lg hover:border-emerald-300 transition-all">
+          <CardHeader className="pb-3">
+            <div className="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center mb-3">
+              <GraduationCap className="h-6 w-6 text-emerald-600" />
+            </div>
+            <h2 className="text-xl font-bold">เรียนรู้ (Learn)</h2>
+            <p className="text-muted-foreground text-sm">
+              บทเรียนสั้น ๆ ทบทวนเนื้อหาก่อนสอบ พร้อมแบบทดสอบท้ายบท
+            </p>
+          </CardHeader>
+          <CardContent>
+            <Link href="/learn">
+              <Button className="w-full bg-emerald-600 hover:bg-emerald-700 text-white gap-2">
+                เริ่มเรียนรู้ <ArrowRight className="h-4 w-4" />
+              </Button>
+            </Link>
+          </CardContent>
+        </Card>
+
         <Card className="group hover:shadow-lg hover:border-rose-300 transition-all">
           <CardHeader className="pb-3">
             <div className="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center mb-3">
