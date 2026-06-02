@@ -367,6 +367,143 @@ export const appSettings = pgTable("app_settings", {
 });
 
 // ========================================
+// 20. Learning Units (microlearning — one per subject / topic group)
+// ========================================
+export const learningUnits = pgTable("learning_units", {
+  id: text("id")
+    .primaryKey()
+    .default(sql`generate_hex_id()`),
+  subject_id: text("subject_id").references(() => mcqSubjects.id, {
+    onDelete: "cascade",
+  }),
+  title_th: text("title_th").notNull(),
+  description_th: text("description_th"),
+  icon: text("icon").notNull().default("📘"),
+  sort_order: integer("sort_order").notNull().default(0),
+  status: text("status", { enum: ["draft", "published"] })
+    .notNull()
+    .default("draft"),
+  created_at: text("created_at")
+    .notNull()
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+});
+
+// ========================================
+// 21. Learning Lessons
+// ========================================
+export const learningLessons = pgTable("learning_lessons", {
+  id: text("id")
+    .primaryKey()
+    .default(sql`generate_hex_id()`),
+  unit_id: text("unit_id")
+    .notNull()
+    .references(() => learningUnits.id, { onDelete: "cascade" }),
+  title_th: text("title_th").notNull(),
+  subtitle_th: text("subtitle_th"),
+  icon: text("icon").notNull().default("⭐"),
+  sort_order: integer("sort_order").notNull().default(0),
+  est_minutes: integer("est_minutes").notNull().default(5),
+  xp_reward: integer("xp_reward").notNull().default(10),
+  // ordered array of mcq_questions.id used for the lesson quiz
+  quiz_question_ids: jsonb("quiz_question_ids")
+    .notNull()
+    .default(sql`'[]'::jsonb`),
+  // fallback: when quiz_question_ids is empty, pull N active questions by subject
+  quiz_count: integer("quiz_count").notNull().default(3),
+  status: text("status", { enum: ["draft", "published"] })
+    .notNull()
+    .default("draft"),
+  created_at: text("created_at")
+    .notNull()
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+});
+
+// ========================================
+// 22. Lesson Cards (ordered content steps)
+// ========================================
+export const lessonCards = pgTable("lesson_cards", {
+  id: text("id")
+    .primaryKey()
+    .default(sql`generate_hex_id()`),
+  lesson_id: text("lesson_id")
+    .notNull()
+    .references(() => learningLessons.id, { onDelete: "cascade" }),
+  card_type: text("card_type", {
+    enum: ["concept", "example", "tip", "mnemonic", "warning", "qa"],
+  })
+    .notNull()
+    .default("concept"),
+  title_th: text("title_th"),
+  body_md: text("body_md").notNull().default(""),
+  image_url: text("image_url"),
+  sort_order: integer("sort_order").notNull().default(0),
+  // "authored" = written by team / Claude Code; "student_qa" = auto-appended from a student question
+  source: text("source", { enum: ["authored", "student_qa"] })
+    .notNull()
+    .default("authored"),
+  created_at: text("created_at")
+    .notNull()
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+});
+
+// ========================================
+// 23. Lesson Progress (per user per lesson)
+// ========================================
+export const lessonProgress = pgTable(
+  "lesson_progress",
+  {
+    id: text("id")
+      .primaryKey()
+      .default(sql`generate_hex_id()`),
+    user_id: text("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    lesson_id: text("lesson_id")
+      .notNull()
+      .references(() => learningLessons.id, { onDelete: "cascade" }),
+    status: text("status", {
+      enum: ["not_started", "in_progress", "completed"],
+    })
+      .notNull()
+      .default("in_progress"),
+    score: integer("score").notNull().default(0),
+    quiz_total: integer("quiz_total").notNull().default(0),
+    last_card_index: integer("last_card_index").notNull().default(0),
+    completed_at: text("completed_at"),
+    created_at: text("created_at")
+      .notNull()
+      .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+  },
+  (t) => [uniqueIndex("uq_user_lesson").on(t.user_id, t.lesson_id)]
+);
+
+// ========================================
+// 24. Lesson Questions (student Q&A — answered via API, auto-appended as a qa card)
+// ========================================
+export const lessonQuestions = pgTable("lesson_questions", {
+  id: text("id")
+    .primaryKey()
+    .default(sql`generate_hex_id()`),
+  user_id: text("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
+  lesson_id: text("lesson_id")
+    .notNull()
+    .references(() => learningLessons.id, { onDelete: "cascade" }),
+  question: text("question").notNull(),
+  answer_md: text("answer_md"),
+  card_id: text("card_id").references(() => lessonCards.id, {
+    onDelete: "set null",
+  }),
+  status: text("status", { enum: ["answered", "failed"] })
+    .notNull()
+    .default("answered"),
+  created_at: text("created_at")
+    .notNull()
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+});
+
+// ========================================
 // Types
 // ========================================
 export type Invoice = typeof invoices.$inferSelect;
@@ -381,4 +518,9 @@ export type PaymentOrder = typeof paymentOrders.$inferSelect;
 export type Referral = typeof referrals.$inferSelect;
 export type LineLinkCode = typeof lineLinkCodes.$inferSelect;
 export type BlogPost = typeof blogPosts.$inferSelect;
+export type LearningUnit = typeof learningUnits.$inferSelect;
+export type LearningLesson = typeof learningLessons.$inferSelect;
+export type LessonCard = typeof lessonCards.$inferSelect;
+export type LessonProgress = typeof lessonProgress.$inferSelect;
+export type LessonQuestion = typeof lessonQuestions.$inferSelect;
 export type AppSetting = typeof appSettings.$inferSelect;

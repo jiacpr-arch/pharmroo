@@ -1,0 +1,68 @@
+{
+  "subject": "pharma_care",
+  "unit": {
+    "title_th": "เภสัชกรรมบริบาล",
+    "description_th": "กระบวนการดูแลผู้ป่วยและการจัดการปัญหาจากการใช้ยา (DRPs)",
+    "icon": "🏥"
+  },
+  "lessons": [
+    {
+      "title_th": "กระบวนการบริบาลทางเภสัชกรรม",
+      "subtitle_th": "Pharmaceutical Care Process",
+      "icon": "📋",
+      "est_minutes": 5,
+      "xp_reward": 10,
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "Pharmaceutical Care คืออะไร",
+          "body_md": "การบริบาลทางเภสัชกรรม = การดูแลผู้ป่วยอย่างรับผิดชอบเพื่อให้ได้ **ผลลัพธ์การรักษาที่ดีและคุณภาพชีวิตที่ดีขึ้น** โดยเภสัชกรร่วมรับผิดชอบผลของการใช้ยา"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ขั้นตอนหลัก",
+          "body_md": "1. **เก็บข้อมูล** ผู้ป่วย (ประวัติ ยา โรค แพ้ยา)\n2. **ประเมิน** หาปัญหาจากการใช้ยา (DRPs)\n3. **วางแผน** การดูแล/แก้ไข\n4. **ติดตามผล** (monitoring) และปรับแผน"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "ใช้กรอบ SOAP",
+          "body_md": "บันทึกการบริบาลด้วย **SOAP**:\n- **S**ubjective อาการที่ผู้ป่วยบอก\n- **O**bjective ผลตรวจ/ค่าที่วัดได้\n- **A**ssessment การประเมินปัญหา\n- **P**lan แผนการดูแล"
+        },
+        {
+          "card_type": "example",
+          "title_th": "ตัวอย่างการติดตาม",
+          "body_md": "ผู้ป่วยเบาหวานได้ metformin → ติดตาม **HbA1c, ระดับน้ำตาล, การทำงานของไต (eGFR)** และอาการข้างเคียงทางเดินอาหาร"
+        }
+      ]
+    },
+    {
+      "title_th": "ปัญหาจากการใช้ยา (DRPs)",
+      "subtitle_th": "Drug-Related Problems",
+      "icon": "🔍",
+      "est_minutes": 6,
+      "xp_reward": 12,
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "DRP คืออะไร",
+          "body_md": "Drug-Related Problem = เหตุการณ์เกี่ยวกับการรักษาด้วยยา ที่ **ขัดขวางผลลัพธ์การรักษาที่พึงประสงค์** เภสัชกรมีหน้าที่ค้นหา ป้องกัน และแก้ไข"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ประเภทของ DRP",
+          "body_md": "- ได้รับยาโดย**ไม่มีข้อบ่งใช้** / มีข้อบ่งใช้แต่**ไม่ได้รับยา**\n- ได้ยา**ผิดชนิด** / **ขนาดสูงหรือต่ำเกินไป**\n- เกิด **ADR** หรือ **drug interaction**\n- **ไม่ให้ความร่วมมือ** ในการใช้ยา (non-adherence)"
+        },
+        {
+          "card_type": "example",
+          "title_th": "ตัวอย่าง DRP",
+          "body_md": "ผู้ป่วยได้ NSAID ร่วมกับ warfarin โดยไม่มีการเฝ้าระวัง → DRP ชนิด **drug interaction** เสี่ยงเลือดออก เภสัชกรควรแจ้งแพทย์และเสนอทางเลือก"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำหมวด DRP",
+          "body_md": "คิดเป็น **\"Indication – Effectiveness – Safety – Adherence\"**: มีข้อบ่งใช้ไหม? ได้ผลไหม? ปลอดภัยไหม? ใช้ยาถูกต้องสม่ำเสมอไหม?"
+        }
+      ]
+    }
+  ]
+}
