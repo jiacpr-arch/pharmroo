@@ -1,31 +1,406 @@
 {
   "subject": "Neurologic",
-  "unit": { "title_th": "ระบบประสาท", "description_th": "การจัดการโรคลมชัก พาร์กินสัน และไมเกรน", "icon": "🧠" },
+  "unit": {
+    "title_th": "ระบบประสาทวิทยา",
+    "description_th": "โรคลมชัก พาร์กินสัน อัลไซเมอร์ ไมเกรน โรคหลอดเลือดสมอง ยา opioid และความผิดปกติในการนอนหลับ",
+    "icon": "🧠"
+  },
   "lessons": [
     {
-      "title_th": "โรคลมชัก",
-      "subtitle_th": "ยากันชัก (AED) และข้อควรระวัง",
+      "title_th": "โรคลมชัก: การแบ่งชนิดและยาแนวแรก",
+      "subtitle_th": "Focal vs Generalized seizure และกลไกยากันชัก",
       "icon": "⚡",
-      "est_minutes": 6,
-      "xp_reward": 10,
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "focal seizure", "generalized seizure", "phenytoin", "carbamazepine",
+        "valproate", "levetiracetam", "absence seizure", "ethosuximide",
+        "teratogenicity", "sodium channel"
+      ],
       "cards": [
-        { "card_type": "concept", "title_th": "เลือก AED ตามชนิดชัก", "body_md": "- **Focal seizure**: carbamazepine, lamotrigine, levetiracetam\n- **Generalized tonic-clonic**: valproate, lamotrigine, levetiracetam\n- **Absence**: ethosuximide, valproate\n\n**Valproate** ครอบคลุมกว้าง แต่เลี่ยงในหญิงวัยเจริญพันธุ์" },
-        { "card_type": "warning", "title_th": "Valproate ในหญิงตั้งครรภ์", "body_md": "**Valproate ทำให้ทารกพิการ (neural tube defects)** และกระทบพัฒนาการสมอง\n\nหลีกเลี่ยงในหญิงตั้งครรภ์/วัยเจริญพันธุ์ที่ไม่คุมกำเนิด ระวัง **hepatotoxicity** และ thrombocytopenia ด้วย" },
-        { "card_type": "warning", "title_th": "ผื่นรุนแรงจาก AED", "body_md": "Carbamazepine, lamotrigine, phenytoin เสี่ยง **SJS/TEN**\n- ตรวจ **HLA-B*1502** ก่อนเริ่ม carbamazepine (พบมากในคนไทย/เอเชีย)\n- lamotrigine ต้อง **titrate ช้าๆ** เพื่อลดความเสี่ยงผื่น" },
-        { "card_type": "tip", "title_th": "Enzyme inducer", "body_md": "Carbamazepine, phenytoin, phenobarbital เป็น **CYP inducer** → ลดระดับยาอื่น เช่น ยาคุมกำเนิด, warfarin\n\nValproate ตรงข้าม เป็น **inhibitor** → เพิ่มระดับ lamotrigine" }
+        {
+          "card_type": "concept",
+          "title_th": "การแบ่งชนิดของโรคลมชัก",
+          "body_md": "## การแบ่งชนิดชักตาม ILAE 2017\n\n**Focal onset** (เริ่มที่สมองส่วนใดส่วนหนึ่ง)\n- Focal aware seizure (เดิม: simple partial)\n- Focal impaired awareness (เดิม: complex partial)\n- Focal to bilateral tonic-clonic\n\n**Generalized onset** (เริ่มทั้งสองซีกพร้อมกัน)\n- Tonic-clonic (grand mal)\n- Absence (petit mal) — จ้องเหม่อ 5–30 วินาที ไม่มี aura\n- Myoclonic, Atonic\n\n**Unknown onset**: เมื่อไม่ทราบจุดเริ่มต้น"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ยาแนวแรกตามชนิดชัก",
+          "body_md": "| ชนิดชัก | ยาแนวแรก |\n|---|---|\n| Focal (ทุกชนิด) | **Carbamazepine**, Lamotrigine, Levetiracetam |\n| Generalized tonic-clonic | **Valproate**, Levetiracetam, Lamotrigine |\n| Absence | **Ethosuximide**, Valproate |\n| Myoclonic | Valproate, Levetiracetam |\n| Mixed/Unknown | Valproate, Levetiracetam |\n\n**Levetiracetam**: broad-spectrum, ปลอดภัยในหญิงตั้งครรภ์มากกว่า valproate"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "กลไกยากันชักหลัก",
+          "body_md": "**Sodium channel blockers** (ลด repetitive firing)\n- Phenytoin, Carbamazepine, Lamotrigine, Oxcarbazepine\n\n**GABA enhancers** (เพิ่มการยับยั้ง)\n- Benzodiazepine → จับ GABA-A (allosteric modulator)\n- Phenobarbital → ยืด Cl⁻ channel opening duration\n\n**Multiple mechanisms (Valproate)**\n- ปิดกั้น Na⁺ channel + เพิ่ม GABA + ลด T-type Ca²⁺ channel\n\n**Levetiracetam**: จับ SV2A (synaptic vesicle protein) → ลด neurotransmitter release\n\n**Ethosuximide**: ปิดกั้น T-type Ca²⁺ channel ใน thalamus (เฉพาะ absence)"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำยา Focal vs Generalized",
+          "body_md": "**\"FOCAL ใช้ C-L-L\"**\n- **C**arbamazepine\n- **L**amotrigine\n- **L**evetiracetam\n\n**\"GENERAL ใช้ V-L-L\"**\n- **V**alproate (ครอบคลุมกว้างที่สุด)\n- **L**amotrigine\n- **L**evetiracetam\n\n**ข้อควรจำ**: Carbamazepine อาจทำให้ Absence/Myoclonic แย่ลง — ห้ามใช้ใน Generalized"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Valproate และ Teratogenicity",
+          "body_md": "## ⚠️ Valproate: ความเสี่ยงสูงสุดในหญิงตั้งครรภ์\n\n**ความเสี่ยงทารก:**\n- **Neural tube defects** (spina bifida) เพิ่มขึ้น 1–2%\n- IQ ต่ำกว่า (neurodevelopmental delay)\n- Autism spectrum disorder ↑\n- Craniofacial defects, limb defects\n\n**แนวทาง:**\n- หลีกเลี่ยงในหญิงวัยเจริญพันธุ์ที่ไม่คุมกำเนิดอย่างเคร่งครัด\n- หากจำเป็น: ให้ folic acid 5 mg/วัน (ไม่ใช่ 0.4 mg)\n- ใน EU: ต้องมีแบบฟอร์ม Pregnancy Prevention Programme\n\n**Carbamazepine** ก็มี teratogenicity (cleft palate, neural tube defects) แต่น้อยกว่า"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "HLA-B*1502 และ SJS/TEN",
+          "body_md": "## ⚠️ ผื่นรุนแรงจาก Carbamazepine\n\n**Stevens-Johnson Syndrome (SJS) / Toxic Epidermal Necrolysis (TEN)** พบมากในคนไทย/เอเชียที่มียีน **HLA-B\\*1502**\n\n**ยาที่เสี่ยง**: Carbamazepine, Phenytoin, Lamotrigine, Oxcarbazepine\n\n**คำแนะนำ:**\n- **ตรวจ HLA-B\\*1502 ก่อนเริ่ม carbamazepine ในคนไทย**\n- Lamotrigine ต้อง titrate ช้าๆ (เพิ่มทีละ 2 สัปดาห์) เพื่อลดผื่น\n- หากเกิดผื่น: หยุดยาทันที ส่งต่อผู้เชี่ยวชาญด่วน"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "Drug Interactions: Enzyme Inducers vs Inhibitors",
+          "body_md": "**CYP Inducers** (ลดระดับยาอื่น):\n- Carbamazepine, Phenytoin, Phenobarbital\n- ลด: ยาคุมกำเนิด (OCP), Warfarin, Cyclosporine, Lamotrigine\n\n**CYP Inhibitor:**\n- **Valproate** → เพิ่มระดับ Lamotrigine (ต้องลดขนาด lamotrigine ลงครึ่งหนึ่ง)\n\n**Levetiracetam**: ไม่มีผลต่อ CYP → drug interaction น้อยที่สุด เหมาะในผู้ป่วยที่ใช้ยาหลายชนิด"
+        }
       ]
     },
     {
-      "title_th": "พาร์กินสันและไมเกรน",
-      "subtitle_th": "Parkinson และ Migraine เบื้องต้น",
-      "icon": "🧓",
-      "est_minutes": 5,
-      "xp_reward": 10,
+      "title_th": "TDM ยากันชัก",
+      "subtitle_th": "Phenytoin zero-order kinetics และการปรับขนาดยา",
+      "icon": "📊",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "TDM", "phenytoin", "zero-order kinetics", "Michaelis-Menten",
+        "therapeutic range", "valproate monitoring", "carbamazepine",
+        "free phenytoin", "hypoalbuminemia", "saturable metabolism"
+      ],
       "cards": [
-        { "card_type": "concept", "title_th": "ยาหลักในพาร์กินสัน", "body_md": "พาร์กินสันเกิดจากการขาด **dopamine**\n- **Levodopa/carbidopa**: ได้ผลดีที่สุด (carbidopa กันการสลาย levodopa นอกสมอง ลด N/V)\n- Dopamine agonist (pramipexole), MAO-B inhibitor (selegiline), COMT inhibitor (entacapone)" },
-        { "card_type": "warning", "title_th": "ระวังยาต้าน dopamine", "body_md": "ยาที่ **ปิดกั้น dopamine** ทำให้อาการพาร์กินสันแย่ลง:\n- Antipsychotics (haloperidol)\n- **Metoclopramide**\n\nในผู้ป่วยพาร์กินสันที่คลื่นไส้ ให้เลือก **domperidone** (ผ่าน BBB น้อย)" },
-        { "card_type": "concept", "title_th": "การรักษาไมเกรน", "body_md": "- **Acute (เฉียบพลัน)**: NSAID/paracetamol, **triptan** (sumatriptan) สำหรับปานกลาง-รุนแรง\n- **Prophylaxis (ป้องกัน)** เมื่อปวดบ่อย: propranolol, amitriptyline, topiramate, valproate" },
-        { "card_type": "tip", "title_th": "ข้อควรระวัง Triptan", "body_md": "Triptan ทำให้หลอดเลือดหดตัว → **ห้ามใช้ในโรคหัวใจขาดเลือด/CAD และความดันสูงคุมไม่ได้**\n\nระวัง **serotonin syndrome** เมื่อใช้ร่วมกับ SSRI/SNRI" }
+        {
+          "card_type": "concept",
+          "title_th": "ทำไม Phenytoin ถึงพิเศษ: Zero-order Kinetics",
+          "body_md": "ยากันชักส่วนใหญ่ใช้ **First-order kinetics** (ครึ่งชีวิตคงที่)\n\n**Phenytoin** ใช้ **Michaelis-Menten (saturable) kinetics**:\n- ที่ระดับยาต่ำ → first-order (เพิ่มขนาดยา → ระดับยาเพิ่มตาม)\n- ที่ระดับยาสูงใกล้ therapeutic range → **zero-order** (เพิ่มขนาดยาเล็กน้อย → ระดับยาพุ่งสูงมาก)\n\n**ผลทางคลินิก**: ปรับขนาดยา phenytoin ได้ยาก → เสี่ยง toxicity ง่าย → ต้องติดตาม TDM อย่างใกล้ชิด"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Therapeutic Range ยากันชัก",
+          "body_md": "| ยา | Therapeutic Range | Timing |\n|---|---|---|\n| **Phenytoin** | 10–20 mcg/mL (total) | Trough (ก่อนให้ยา) |\n| **Free Phenytoin** | 1–2 mcg/mL | ใช้เมื่อ albumin ต่ำ |\n| **Valproate** | 50–100 mcg/mL | Trough |\n| **Carbamazepine** | 4–12 mcg/mL | Trough |\n| **Phenobarbital** | 15–40 mcg/mL | Trough |\n| **Levetiracetam** | 12–46 mcg/mL | ไม่จำเป็นต้อง TDM routine |"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Phenytoin ใน Hypoalbuminemia",
+          "body_md": "Phenytoin จับ albumin ~90% → ระดับที่วัดได้ = **total** (bound + free)\n\n**ปัญหา**: ผู้ป่วย albumin ต่ำ (CKD, ตับแข็ง, ขาดสารอาหาร) → free phenytoin สูงกว่าที่ expected แม้ total ดูปกติ\n\n**สูตรปรับค่า (Sheiner-Tozer):**\n\n```\nPhenytoin (adjusted) = Total measured ÷ [(0.2 × albumin) + 0.1]\n```\n*(albumin ปกติ = 4.4 g/dL)*\n\n**ใน CKD รุนแรง (CrCl < 10 mL/min):** ใช้ 0.1 แทน 0.2 ในสูตร\n\nควรวัด **free phenytoin** โดยตรงในกรณีที่คาดว่า protein binding เปลี่ยนแปลง"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "การปรับขนาด Phenytoin อย่างปลอดภัย",
+          "body_md": "เนื่องจาก zero-order kinetics → ปรับขีละน้อย:\n\n- ระดับ < 7 mcg/mL → เพิ่มได้ **100 mg/วัน**\n- ระดับ 7–12 mcg/mL → เพิ่ม **50 mg/วัน**\n- ระดับ > 12 mcg/mL → เพิ่มเพียง **30 mg/วัน**\n\n**ระยะเวลาถึง steady state**: 7–28 วัน (เพราะ t½ เปลี่ยนตามระดับยา)\n\n**วัดระดับยาใหม่หลังปรับขนาด**: รอ 5 t½ → แต่ phenytoin ต้องรออย่างน้อย 2–4 สัปดาห์"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Valproate และ Carbamazepine Monitoring",
+          "body_md": "**Valproate:**\n- Therapeutic range: 50–100 mcg/mL (บางรายต้องสูงถึง 125)\n- ติดตาม: LFT (hepatotoxicity), CBC (thrombocytopenia), น้ำหนัก\n- Auto-induction: carbamazepine มี auto-induction → ระดับยาลดลงหลัง 4–6 สัปดาห์แรก\n\n**Carbamazepine:**\n- **Autoinduction**: เหนี่ยวนำการสลายตัวเองผ่าน CYP3A4 → เริ่มยาต้อง titrate ขึ้นช้าๆ และตรวจระดับยาซ้ำหลัง 4 สัปดาห์\n- ติดตาม: CBC (agranulocytosis, aplastic anemia), Na⁺ (SIADH → hyponatremia)\n- Carbamazepine-10,11-epoxide: active metabolite ทำให้เกิด toxicity แม้ระดับ parent drug ปกติ"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "อาการ Phenytoin Toxicity",
+          "body_md": "## ⚠️ Phenytoin Toxicity ตามระดับยา\n\n| ระดับ (mcg/mL) | อาการ |\n|---|---|\n| > 20 | Nystagmus (กลอกตา) |\n| > 30 | Ataxia (เดินเซ), สับสน |\n| > 40 | Seizure, Encephalopathy |\n\n**Chronic Toxicity:**\n- Gingival hyperplasia (เหงือกงอก)\n- Hirsutism (ขนดก)\n- Peripheral neuropathy\n- Osteomalacia (ขาด Vit D จาก enzyme induction)\n- Folate deficiency\n\n**IV Phenytoin**: ให้ช้าๆ ไม่เกิน 50 mg/min → เสี่ยง hypotension, cardiac arrhythmia"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำอาการพิษ Phenytoin: SNAP",
+          "body_md": "**SNAP**\n- **S**lurred speech + **S**edation\n- **N**ystagmus (ตากระตุก — แรกสุด)\n- **A**taxia (เดินเซ)\n- **P**aralysis / encephaloPathy\n\nเรียงจากน้อยไปมากตามระดับยาที่สูงขึ้น"
+        }
+      ]
+    },
+    {
+      "title_th": "โรคพาร์กินสัน",
+      "subtitle_th": "Levodopa/Carbidopa กลไก ADR และยาเสริม",
+      "icon": "🧓",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "levodopa", "carbidopa", "dopamine agonist", "MAO-B inhibitor",
+        "COMT inhibitor", "wearing-off", "dyskinesia", "pramipexole",
+        "selegiline", "entacapone", "substantia nigra"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "พยาธิสภาพและเป้าหมายการรักษา",
+          "body_md": "**พาร์กินสัน** เกิดจากการตาย/เสื่อมของ dopaminergic neurons ใน **Substantia nigra pars compacta** → ขาด dopamine ใน nigrostriatal pathway\n\n**4 อาการหลัก (TRAP):**\n- **T**remor (at rest, pill-rolling)\n- **R**igidity (cogwheel/lead-pipe)\n- **A**kinesia/Bradykinesia\n- **P**ostural instability\n\n**เป้าหมายรักษา**: เพิ่ม dopamine ในสมอง หรือกระตุ้น dopamine receptor"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Levodopa/Carbidopa: กลไกและประสิทธิภาพ",
+          "body_md": "**Levodopa (L-DOPA)**\n- สาร precursor ที่ผ่าน blood-brain barrier (BBB) ได้ → เปลี่ยนเป็น dopamine ในสมอง\n- dopamine เองผ่าน BBB ไม่ได้\n\n**Carbidopa**\n- ยับยั้ง **DOPA decarboxylase** นอก BBB\n- ผล: ลด peripheral conversion → ลด N/V, ลด cardiovascular SE, เพิ่มปริมาณ levodopa เข้าสมอง\n- ขนาดที่ saturate peripheral DDC: **75 mg/วัน** (ต้องให้ carbidopa ≥75 mg/วัน)\n\n**ประสิทธิภาพ**: ดีที่สุดในทุกยาพาร์กินสัน แต่ประสิทธิภาพลดลงเมื่อเวลาผ่านไป"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Wearing-off และ Dyskinesia",
+          "body_md": "**Wearing-off (end-of-dose deterioration)**\n- ยาออกฤทธิ์สั้นลงเรื่อยๆ → อาการกลับมาก่อนถึงเวลาให้ยาครั้งต่อไป\n- แนวทางแก้: เพิ่มความถี่ (TID→QID), เพิ่มขนาดยา, เพิ่ม COMT inhibitor/MAO-B inhibitor, ใช้ controlled-release formulation\n\n**Dyskinesia (peak-dose dyskinesia)**\n- การขยับโดยไม่ได้ตั้งใจ ในช่วงที่ยาออกฤทธิ์สูงสุด\n- แนวทางแก้: **ลด** ขนาด levodopa แต่ละครั้ง + เพิ่มความถี่, เพิ่ม amantadine\n\n**On-Off fluctuations**: เปลี่ยนสลับอย่างรวดเร็วและไม่สัมพันธ์กับเวลาให้ยา"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Dopamine Agonists, MAO-B, COMT Inhibitors",
+          "body_md": "**Dopamine Agonists** (กระตุ้น D receptor โดยตรง)\n- Pramipexole (D3 agonist), Ropinirole, Rotigotine (patch)\n- เริ่มใช้ได้ในผู้ป่วยอายุน้อย เพื่อชะลอการเริ่ม levodopa\n- SE: hallucination, impulse control disorder (gambling, hypersexuality), somnolence\n\n**MAO-B Inhibitors** (ยับยั้งการสลาย dopamine ในสมอง)\n- Selegiline, Rasagiline\n- ใช้ mono หรือเสริม levodopa\n- หลีกเลี่ยงร่วมกับ SSRI, Meperidine (เสี่ยง serotonin syndrome)\n\n**COMT Inhibitors** (ยับยั้ง COMT → ลด levodopa metabolism → ยืดฤทธิ์)\n- Entacapone (ให้พร้อม levodopa ทุกครั้ง), Tolcapone (ตับแข็งแรง—ต้อง monitor LFT)\n- SE: ปัสสาวะสีส้ม-น้ำตาล (ปกติ), ท้องเสีย"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำลำดับยาพาร์กินสัน: LMCD",
+          "body_md": "**\"LMCD: เลวร้ายมาช่วยด่วน\"**\n- **L**evodopa/carbidopa — Gold standard\n- **M**AO-B inhibitor — ยับยั้งการสลาย dopamine\n- **C**OMT inhibitor — ยืดฤทธิ์ levodopa\n- **D**opamine agonist — กระตุ้น receptor โดยตรง\n\nยาในช่วงแรก (early Parkinson): dopamine agonist หรือ MAO-B inhibitor ในคนอายุน้อย\nยาหลัก: levodopa/carbidopa"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ยาที่ห้ามใช้ในพาร์กินสัน",
+          "body_md": "## ⚠️ ยาที่ทำให้พาร์กินสันแย่ลง\n\n**ยาที่ปิดกั้น Dopamine Receptor:**\n- Antipsychotics: Haloperidol, Chlorpromazine (เลี่ยงทุกชนิดที่ block D2)\n- Atypical ที่ปลอดภัยกว่า: Quetiapine, Clozapine\n- **Metoclopramide** (ยาแก้คลื่นไส้) → ปิดกั้น D2 ในสมอง\n\n**แทน Metoclopramide ด้วย:**\n- **Domperidone** → ปิดกั้น D2 เฉพาะนอก BBB (ระวัง QT prolongation)\n\n**ยาต้าน dopamine ทำให้เกิด Drug-induced Parkinsonism** ซึ่งส่วนมากกลับได้หลังหยุดยา"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "ADR สำคัญของ Levodopa",
+          "body_md": "**ระยะต้น (Peripheral SE):**\n- Nausea/Vomiting (จาก D2 ใน CTZ) → แก้ด้วย carbidopa เพียงพอ หรือ domperidone\n- Orthostatic hypotension\n- Cardiac arrhythmia (พบน้อยหากใช้ carbidopa)\n\n**ระยะยาว (Central SE):**\n- Dyskinesia (peak-dose)\n- Hallucination, Psychosis (โดยเฉพาะในผู้สูงอายุ)\n- Wearing-off, On-Off fluctuation\n- Impulse control disorder (พบมากกว่าใน dopamine agonist)"
+        }
+      ]
+    },
+    {
+      "title_th": "โรคอัลไซเมอร์",
+      "subtitle_th": "Cholinesterase Inhibitors และ Memantine กลไกและข้อจำกัด",
+      "icon": "🧩",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "donepezil", "rivastigmine", "galantamine", "memantine",
+        "cholinesterase inhibitor", "NMDA antagonist", "Alzheimer",
+        "acetylcholine", "GI side effect", "moderate-to-severe"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "พยาธิสภาพของอัลไซเมอร์",
+          "body_md": "**Alzheimer's disease (AD)** = โรคสมองเสื่อมชนิดพบบ่อยที่สุด\n\n**ลักษณะเฉพาะ:**\n- Amyloid plaques (β-amyloid protein สะสม)\n- Neurofibrillary tangles (tau protein ผิดปกติ)\n- การสูญเสีย cholinergic neurons ใน nucleus basalis of Meynert → ขาด **acetylcholine (ACh)**\n\n**Cholinergic Hypothesis**: เพิ่ม ACh ในสมอง → ชะลอการเสื่อมของความจำ\n\n**Glutamate excitotoxicity**: ใน moderate-severe AD → NMDA receptor ถูกกระตุ้นมากเกิน → neurotoxicity"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Cholinesterase Inhibitors: กลไกและความแตกต่าง",
+          "body_md": "## กลไก: ยับยั้ง acetylcholinesterase → เพิ่มระดับ ACh ใน synapse\n\n| ยา | กลไกพิเศษ | รูปแบบ |\n|---|---|---|\n| **Donepezil** | Selective AChE inhibitor | เม็ด, oral dissolving |\n| **Rivastigmine** | ยับยั้งทั้ง AChE และ BuChE | เม็ด, **patch** (ลด GI SE) |\n| **Galantamine** | AChE inhibitor + กระตุ้น nicotinic receptor (allosteric modulator) | เม็ด, ER capsule |\n\n**Donepezil**: ให้ครั้งเดียวก่อนนอน (ครึ่งชีวิตยาว ~70 ชั่วโมง)\n\n**Rivastigmine patch**: ลด GI side effects ได้มาก เหมาะเมื่อผู้ป่วยทนยาปากไม่ได้"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Memantine: กลไกและข้อบ่งชี้",
+          "body_md": "**Memantine** = NMDA receptor antagonist (uncompetitive, low-affinity)\n\n**กลไก**: ปิดกั้น NMDA receptor → ลด glutamate excitotoxicity → ป้องกัน neuronal damage\n\n**ข้อบ่งชี้**: Moderate-to-severe AD (MMSE 3–14)\n\n**Combination**: Donepezil + Memantine → ได้ผลดีกว่าในระยะ moderate-severe\n\n**ข้อจำกัดในไตเสีย**: Memantine ขับออกทาง renal → ลดขนาดใน CrCl 5–29 mL/min (ลดขนาดครึ่งหนึ่ง)\n\n**SE**: Dizziness, headache, confusion (พบน้อย)"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "GI Side Effects ของ Cholinesterase Inhibitors",
+          "body_md": "## ⚠️ GI SE จาก Cholinomimetic Effect\n\n**อาการ** (พบบ่อยที่สุด):\n- **Nausea/Vomiting** — พบในช่วงเพิ่มขนาดยา\n- **Diarrhea**\n- Anorexia, น้ำหนักลด\n- Muscle cramps, bradycardia (จาก excessive cholinergic stimulation)\n\n**วิธีลด SE:**\n- ให้ยาพร้อมอาหาร\n- Titrate ช้าๆ (เพิ่มขนาดทุก 4–6 สัปดาห์)\n- เปลี่ยนจาก oral rivastigmine → patch\n\n**ระวัง**: ผู้ป่วยหัวใจ — bradycardia, AV block จาก cholinergic effect"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ข้อจำกัดของยา Alzheimer",
+          "body_md": "**สิ่งสำคัญที่ต้องแจ้งผู้ป่วย/ญาติ:**\n\n1. **ยาไม่รักษาให้หาย** — เพียงชะลอการดำเนินโรค\n2. **ประสิทธิภาพจำกัด** — cognitive improvement เล็กน้อย (MMSE ดีขึ้น 1–3 คะแนน)\n3. **ยาอาจดูไม่ได้ผล** เพราะเป้าหมายคือชะลอ ไม่ใช่ฟื้นฟู\n4. Cholinesterase inhibitor ใช้ใน **mild-to-severe** AD\n5. Memantine ใช้ใน **moderate-to-severe** AD\n6. **ไม่มียาหยุดโรคได้** (disease-modifying therapy ยังอยู่ในการวิจัย — lecanemab/donanemab)\n\n**ยาใหม่** (2023–2024): Anti-amyloid antibody (lecanemab, donanemab) — สำหรับ early AD"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "เปรียบเทียบ Mild vs Moderate-Severe AD",
+          "body_md": "| ระยะ AD | MMSE | ยาที่เลือก |\n|---|---|---|\n| Mild | 21–26 | Cholinesterase inhibitor |\n| Moderate | 11–20 | Cholinesterase inhibitor ± Memantine |\n| Severe | 0–10 | Donepezil 23 mg หรือ Cholinesterase inhibitor + Memantine |\n\n**Donepezil 23 mg**: อนุมัติสำหรับ moderate-to-severe โดยเฉพาะ\n\n**หยุดยา**: พิจารณาเมื่อ MMSE < 1–2 หรือผู้ป่วยไม่สามารถกลืนยาได้ หรือ quality of life ไม่ดีขึ้น"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำยา Alzheimer: DRG MemAN",
+          "body_md": "**DRG** สำหรับ Cholinesterase Inhibitors:\n- **D**onepezil\n- **R**ivastigmine (Patch)\n- **G**alantamine\n\n**MemAN** สำหรับ NMDA antagonist:\n- **Mem**antine → moderate-to-**A**dvanced-to-severe → NMDA antagonist\n\n**จำ**: \"DRG ชะลอ, Mem ยับยั้ง excitotoxicity\""
+        }
+      ]
+    },
+    {
+      "title_th": "ปวดศีรษะไมเกรน",
+      "subtitle_th": "Triptans กลไก/ข้อห้าม และการป้องกัน",
+      "icon": "🤕",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "sumatriptan", "triptan", "ergotamine", "serotonin receptor",
+        "5-HT1B/1D", "propranolol", "topiramate", "amitriptyline",
+        "migraine prophylaxis", "medication overuse headache"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "กลไกไมเกรนและเป้าหมายการรักษา",
+          "body_md": "**ไมเกรน**: ปวดหัวข้างเดียว (ส่วนมาก) ตุบๆ ปานกลาง-รุนแรง มี nausea/photophobia/phonophobia\n\n**กลไก:**\n- Cortical Spreading Depression (CSD) → aura\n- Trigeminal nerve activation → release CGRP และ substance P → vasodilation + neurogenic inflammation\n- Serotonin dysregulation\n\n**การรักษา:**\n1. **Acute/Abortive**: หยุดอาการที่เกิดขึ้นแล้ว\n2. **Prophylaxis**: ป้องกันในผู้ที่ปวดบ่อย (≥4 ครั้ง/เดือน หรือ disability สูง)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Triptans: กลไกและการใช้",
+          "body_md": "**กลไก**: Selective serotonin **5-HT₁B/1D receptor agonist**\n- 5-HT₁B: หดหลอดเลือด intracranial\n- 5-HT₁D: ยับยั้ง trigeminal nerve firing + ลด CGRP/substance P release\n\n**ยาในกลุ่ม**: Sumatriptan (SC, oral, nasal), Zolmitriptan, Rizatriptan, Almotriptan\n\n**ข้อบ่งชี้**: ไมเกรนปานกลาง-รุนแรง หรือ mild-moderate ที่ไม่ตอบสนองต่อ NSAID\n\n**Sumatriptan SC** (subcutaneous): ออกฤทธิ์เร็วที่สุด ~10 นาที เหมาะสำหรับ severe migraine\n\n**การใช้ที่ถูกต้อง**: ให้เร็วที่สุดเมื่อเริ่มปวด → ไม่ควรรอให้ปวดมาก"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ข้อห้ามและ Drug Interactions ของ Triptans",
+          "body_md": "## ⚠️ ข้อห้ามใช้ Triptans\n\n**ห้ามใช้เด็ดขาด:**\n- **โรคหัวใจขาดเลือด (IHD/CAD)** หรือเคยเป็น MI\n- **Uncontrolled hypertension**\n- Hemiplegic migraine / Basilar migraine\n- ประวัติ stroke หรือ TIA\n- Peripheral vascular disease\n- Ergotamine ใน 24 ชั่วโมงที่ผ่านมา (vasospasm ซ้อน)\n\n**Drug interactions:**\n- **MAO inhibitor + Sumatriptan** → ห้าม (เพิ่มระดับ sumatriptan)\n- **SSRI/SNRI + Triptan** → เสี่ยง **Serotonin Syndrome**\n- Ergotamine + Triptan → vasoconstriction ซ้อน → ห้ามใช้ร่วมกัน"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Ergotamine และยาเฉียบพลันอื่น",
+          "body_md": "**Ergotamine** (Ergotamine + Caffeine = Cafergot®)\n- กลไก: 5-HT agonist + partial dopamine agonist + alpha agonist → vasoconstriction\n- ใช้เฉพาะเมื่อ triptan ไม่ได้ผลหรือไม่มี\n- **ข้อห้าม**: CVD, PVD, ตั้งครรภ์ (oxytocic effect), ไตวาย, Ergo + Macrolide (CYP3A4 inhibition → ergotism)\n\n**ยา Acute อื่น:**\n- **NSAIDs**: Ibuprofen, Naproxen — ใช้เป็น first-line ใน mild-moderate\n- **Paracetamol**: ใช้ได้แต่ประสิทธิภาพน้อยกว่า\n- **Antiemetics**: Metoclopramide/Prochlorperazine — ลด nausea และเพิ่มประสิทธิภาพ NSAID"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Migraine Prophylaxis",
+          "body_md": "**ข้อบ่งชี้การให้ยาป้องกัน:**\n- ไมเกรน ≥4 วัน/เดือน\n- Acute therapy ไม่ได้ผล\n- Quality of life ลดลงมาก\n- Hemiplegic migraine\n\n| ยา | กลไก | หมายเหตุ |\n|---|---|---|\n| **Propranolol** | β-blocker | First-line ทั่วไป, ห้ามในหอบหืด |\n| **Topiramate** | Na channel + GABA | ลดน้ำหนัก, teratogenic |\n| **Amitriptyline** | TCA | เหมาะถ้ามี comorbid depression/นอนไม่หลับ |\n| **Valproate** | Multiple | ห้ามในหญิงตั้งครรภ์ |\n| **Candesartan/Lisinopril** | ARB/ACEI | ทางเลือกเมื่อ β-blocker ไม่ได้ |\n| **CGRP monoclonal Ab** | Anti-CGRP | Erenumab, Fremanezumab — ยาใหม่ |\n\n**ระยะเวลา**: ประเมินผลหลัง 2–3 เดือน และพิจารณาหยุดหลัง 6–12 เดือน"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Medication Overuse Headache (MOH)",
+          "body_md": "## ⚠️ ปวดหัวจากใช้ยามากเกินไป\n\n**เกิดขึ้นเมื่อ:**\n- ใช้ยาเฉียบพลัน ≥10–15 วัน/เดือน นานเกิน 3 เดือน\n- Triptan/Ergotamine: ≥10 วัน/เดือน\n- NSAID/Paracetamol: ≥15 วัน/เดือน\n\n**อาการ**: ปวดหัวทุกวัน มักปวดตอนเช้า คล้ายปวดหัวจาก withdrawal\n\n**การแก้ไข**: หยุดยาเฉียบพลัน (อาจเกิด withdrawal headache ชั่วคราว) + เพิ่ม prophylaxis\n\n**ป้องกัน**: แนะนำให้ใช้ยาเฉียบพลันไม่เกิน 2–3 วัน/สัปดาห์"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "Step-care ในการรักษาไมเกรนเฉียบพลัน",
+          "body_md": "**Stratified care ตาม severity:**\n\n**Mild-Moderate:**\n1. Paracetamol 1 g หรือ NSAID (ibuprofen 400–600 mg)\n2. เพิ่ม antiemetic หากมี nausea\n\n**Moderate-Severe หรือ Mild ที่ไม่ตอบสนอง:**\n1. **Triptan** (sumatriptan 50–100 mg oral หรือ 6 mg SC)\n2. สามารถซ้ำได้ใน 2 ชั่วโมง ไม่เกิน 2 ครั้ง/วัน\n\n**ห้ามขับรถ/ทำงานเสี่ยง** เมื่อใช้ยาที่ทำให้ง่วง (opioid, antiemetic)"
+        }
+      ]
+    },
+    {
+      "title_th": "โรคหลอดเลือดสมอง (Stroke)",
+      "subtitle_th": "tPA ข้อบ่งชี้/ข้อห้าม และการป้องกันรอง",
+      "icon": "🩸",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "tPA", "alteplase", "ischemic stroke", "thrombolysis",
+        "aspirin", "clopidogrel", "antiplatelet", "NIH Stroke Scale",
+        "hemorrhagic stroke", "secondary prevention"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "การแบ่งชนิด Stroke และการวินิจฉัย",
+          "body_md": "**Ischemic Stroke** (~85%): ลิ่มเลือดอุดตันหลอดเลือดสมอง\n- Cardioembolic (AF, valve disease)\n- Large artery atherosclerosis\n- Small vessel disease (lacunar)\n\n**Hemorrhagic Stroke** (~15%): เลือดออกในสมอง\n- Intracerebral hemorrhage (ICH)\n- Subarachnoid hemorrhage (SAH)\n\n**วินิจฉัย**: CT brain ฉุกเฉิน → แยก hemorrhagic ก่อน เพราะการรักษาต่างกันสิ้นเชิง\n\n**FAST**: **F**ace drooping, **A**rm weakness, **S**peech difficulty, **T**ime to call"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "tPA (Alteplase): กลไกและ Time Window",
+          "body_md": "**กลไก**: Tissue Plasminogen Activator → เปลี่ยน plasminogen → plasmin → ละลายลิ่มเลือด (fibrinolysis)\n\n**ข้อบ่งชี้ IV Alteplase:**\n- Ischemic stroke ที่ได้รับการยืนยัน (CT ไม่พบเลือด)\n- **Onset-to-treatment ≤ 4.5 ชั่วโมง**\n- อายุ ≥ 18 ปี\n- ไม่มีข้อห้าม\n\n**ขนาดยา**: 0.9 mg/kg IV (max 90 mg)\n- 10% ให้เป็น bolus 1 นาที\n- 90% ที่เหลือให้เป็น infusion ใน 60 นาที\n\n**\"Time is Brain\"**: neuron หายไป 1.9 ล้านเซลล์/นาที ในช่วง ischemic stroke"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ข้อห้ามของ tPA ใน Ischemic Stroke",
+          "body_md": "## ⚠️ ข้อห้ามเด็ดขาด (Absolute Contraindications)\n\n**เวลา:**\n- Onset > 4.5 ชั่วโมง หรือไม่ทราบเวลา onset\n\n**เลือดออก:**\n- ประวัติ ICH\n- CT พบ hemorrhage\n- Stroke/head trauma รุนแรงใน 3 เดือน\n\n**ความดัน:**\n- BP > **185/110 mmHg** (ต้องลด BP ก่อนให้ tPA)\n\n**ยาต้านการแข็งตัวของเลือด:**\n- ใช้ Heparin IV ใน 48 ชม. + APTT ยาวกว่าปกติ\n- Warfarin + INR > 1.7\n- NOAC ใน 48 ชม.\n\n**อื่นๆ:**\n- Platelet < 100,000/mm³\n- Blood glucose < 50 หรือ > 400 mg/dL\n- เนื้องอกสมองที่ตกเลือด, endocarditis, aortic dissection"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "การป้องกัน Stroke รอง: Antiplatelet",
+          "body_md": "**Secondary Prevention หลัง Non-cardioembolic Ischemic Stroke:**\n\n| ยา | ขนาด | หมายเหตุ |\n|---|---|---|\n| **Aspirin** | 75–325 mg/วัน | เริ่มได้หลัง 24–48 ชม. หลัง tPA |\n| **Clopidogrel** | 75 mg/วัน | เหนือกว่า aspirin ใน high-risk |\n| **Aspirin + Clopidogrel** | Dual | ใช้ 21 วันแรก (high-risk TIA/minor stroke) แล้วเปลี่ยนเป็น monotherapy |\n| **Ticagrelor + Aspirin** | THALES regimen | ทางเลือก |\n\n**Cardioembolic Stroke (จาก AF):**\n- **Anticoagulation** ไม่ใช่ antiplatelet\n- NOACs (apixaban, rivaroxaban) หรือ Warfarin\n- เริ่มหลัง 4–14 วัน ขึ้นกับขนาด infarct"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "Blood Pressure Management ใน Acute Stroke",
+          "body_md": "**ใน Ischemic Stroke (ก่อน tPA):**\n- ลด BP เฉพาะถ้า > **185/110 mmHg** (เพื่อ tPA eligibility)\n- ลดให้ < 185/110 ก่อน → แล้วรักษา < 180/105 ระหว่าง/หลัง tPA\n\n**ใน Ischemic Stroke (ไม่ได้ tPA):**\n- ยอมรับ BP สูง ≤ 220/120 mmHg ใน 24–48 ชม. แรก\n- \"Permissive hypertension\" — เพื่อ maintain cerebral perfusion ใน penumbra\n- ลด BP หาก > 220/120 หรือมี end-organ damage\n\n**ใน Hemorrhagic Stroke:**\n- ลด BP ถ้า SBP > 150–180 mmHg → เป้าหมาย SBP < 140–160 mmHg"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Timing ของการให้ยาหลัง Stroke",
+          "body_md": "**หลัง IV tPA:**\n- ห้ามให้ Aspirin หรือ Anticoagulant ใน **24 ชั่วโมงแรก**\n- เริ่ม antiplatelet หลัง 24 ชม. (CT ซ้ำยืนยันไม่มีเลือด)\n\n**TIA และ Minor Stroke:**\n- เริ่ม Dual antiplatelet (DAPT) ทันที ใน 24 ชม.\n- ให้ต่อ 21 วัน → เปลี่ยนเป็น monotherapy\n\n**Anticoagulation ใน AF:**\n- Minor stroke (NIHSS ≤ 8): เริ่มได้ day 2–3\n- Moderate stroke (NIHSS 8–15): วัน 6–7\n- Major stroke (NIHSS > 15 หรือ infarct ใหญ่): วัน 12–14\n\n**จำ**: \"1-3-6-12\" rule สำหรับ anticoagulation ใน AF stroke"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำข้อห้าม tPA ด้วย \"BLOOD\"",
+          "body_md": "**BLOOD** = ข้อห้ามใช้ tPA\n- **B**leeding history (hemorrhagic stroke, recent surgery ≥ 14 วัน)\n- **L**ate (Onset > 4.5 ชั่วโมง)\n- **O**ver 185/110 BP (ลด BP ก่อน → ถ้าลดไม่ได้ → ห้ามใช้)\n- **O**ral anticoagulant (INR > 1.7, NOAC ≥ 48 ชม.)\n- **D**epressed glucose/platelet (glucose < 50 หรือ > 400, plt < 100K)"
+        }
+      ]
+    },
+    {
+      "title_th": "ยา Opioid: กลไกและการจัดการความเจ็บปวด",
+      "subtitle_th": "Morphine ปรับขนาด Equianalgesic และ Naloxone",
+      "icon": "💊",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "morphine", "opioid receptor", "naloxone", "equianalgesic",
+        "opioid-induced constipation", "respiratory depression",
+        "opioid rotation", "mu receptor", "tolerance", "dependence"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "กลไกของ Opioids และตัวรับ",
+          "body_md": "**Opioid Receptors (กลุ่ม GPCR):**\n\n| ตัวรับ | ผลหลัก |\n|---|---|\n| **μ (Mu)** | Analgesia, euphoria, respiratory depression, constipation, dependence |\n| **κ (Kappa)** | Analgesia, sedation, dysphoria |\n| **δ (Delta)** | Analgesia, mood, การควบคุม μ receptor |\n\n**ยา Opioid หลัก:**\n- **Full agonist**: Morphine, Codeine, Oxycodone, Fentanyl, Methadone\n- **Partial agonist**: Buprenorphine (agonist μ + antagonist κ)\n- **Antagonist**: Naloxone, Naltrexone\n\n**กลไก**: จับ μ receptor → ลด cAMP → เปิด K⁺ channel → hyperpolarization → ลด neurotransmitter release"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Equianalgesic Dose Table",
+          "body_md": "**Equianalgesic dose**: ขนาดยาที่ให้ระงับปวดเท่ากัน\n\n| ยา | IV/SC | Oral |\n|---|---|---|\n| **Morphine** | 10 mg | 30 mg |\n| Oxycodone | — | 20 mg |\n| Hydromorphone | 1.5 mg | 7.5 mg |\n| Codeine | 130 mg | 200 mg |\n| Fentanyl | 0.1 mg (100 mcg) | — |\n\n**Oral:IV Morphine Ratio = 3:1** (oral bioavailability ต่ำจาก first-pass)\n\n**Opioid Rotation**: เมื่อเปลี่ยนยา ให้ลดขนาด equianalgesic ลง **25–30%** เพื่อ cross-tolerance ที่ไม่สมบูรณ์"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "การปรับขนาด Morphine ในความเจ็บปวดมะเร็ง",
+          "body_md": "**WHO Pain Ladder:**\n- Step 1: Non-opioid (NSAID, Paracetamol)\n- Step 2: Weak opioid (Codeine, Tramadol)\n- Step 3: Strong opioid (Morphine, Fentanyl, Oxycodone)\n\n**การให้ Morphine:**\n- ATC (Around-the-clock): regular dose ทุก 4 ชม. (ยา IR) หรือ q12h (SR)\n- PRN (rescue dose): 10–15% ของ total daily dose ทุก 1–2 ชม.\n\n**การปรับขนาด:**\n- ปวดยังไม่คุม: เพิ่ม **25–50%** จาก total daily dose\n- นับ rescue dose ที่ใช้ใน 24 ชม. → เพิ่ม ATC dose ตาม\n- ประเมินซ้ำทุก 24 ชม. ช่วงแรก"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Opioid-Induced Constipation (OIC) และการป้องกัน",
+          "body_md": "## ⚠️ อาการข้างเคียงที่ไม่เกิด Tolerance\n\n**OIC เป็น SE เดียวที่ไม่เกิด tolerance!**\n→ ผู้ป่วยทุกรายที่ได้ opioid ต้องได้ laxative เสมอ\n\n**การรักษา OIC:**\n- ยาแนวแรก: **Stimulant laxative** (Senna, Bisacodyl) ± Osmotic (Lactulose)\n- ยาสอง: **Peripherally-acting μ-opioid receptor antagonist (PAMORA)**\n  - Methylnaltrexone (SC)\n  - Naloxegol (oral)\n  - Naldemedine (oral)\n\n**SE อื่น:**\n- Nausea/vomiting: พบในช่วงแรก → tolerance เกิดใน 1–2 สัปดาห์\n- Sedation: tolerance เกิดใน 5–7 วัน\n- **Respiratory depression**: tolerance เกิด แต่ต้องระวังในผู้ไม่เคยใช้ opioid"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Naloxone: Antidote ของ Opioid Overdose",
+          "body_md": "**Naloxone (Narcan)**\n- Competitive opioid antagonist (ทุก receptor)\n- ครึ่งชีวิต: **30–80 นาที** (สั้นกว่า opioid ส่วนใหญ่)\n\n**อาการ Opioid Overdose Triad:**\n- **Miosis** (รูม่านตาหรี่)\n- **Respiratory depression** (RR < 12/min)\n- **Coma/Unconsciousness**\n\n**ขนาด Naloxone:**\n- 0.4–2 mg IV/IM/SC/intranasal\n- ซ้ำได้ทุก 2–3 นาที max 10 mg\n- หากไม่ตอบสนองหลัง 10 mg → อาจไม่ใช่ opioid toxicity\n\n**สำคัญ**: t½ naloxone สั้น → ต้อง **monitor อย่างน้อย 4–6 ชม.** และอาจต้องให้ซ้ำหากใช้ long-acting opioid (methadone)"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Opioid Tolerance, Dependence และการพึ่งพา",
+          "body_md": "## ⚠️ ความแตกต่างที่สำคัญ\n\n**Tolerance**: ต้องการขนาดยามากขึ้นเพื่อผลเท่าเดิม (pharmacologic)\n\n**Physical Dependence**: withdrawal symptoms เมื่อหยุดยาหรือได้ antagonist\n- ไม่ใช่ addiction — พบได้ในผู้ป่วยที่รักษาอย่างถูกต้อง\n- Withdrawal: ปวดกล้ามเนื้อ, ท้องเสีย, น้ำมูก, agitation, goosebumps\n\n**Addiction (Substance Use Disorder)**: พฤติกรรมแสวงหายา compulsively แม้มีผลเสีย\n\n**การหยุดยา opioid**: ค่อยๆ ลด 10–20%/สัปดาห์ เพื่อป้องกัน withdrawal\n\n**ระวัง Pseudoaddiction**: ผู้ป่วยมีพฤติกรรมคล้าย addiction แต่เกิดจาก **undertreatment ของความเจ็บปวด**"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "Opioid ใน Renal/Hepatic Impairment",
+          "body_md": "**ไตเสีย (Renal Impairment):**\n- **Morphine**: สะสม active metabolite M6G → ระวัง accumulation → respiratory depression\n- เลือกใช้: **Fentanyl** หรือ **Hydromorphone** (metabolite น้อยกว่า)\n- ลด dose หรือเพิ่ม dosing interval\n\n**ตับเสีย (Hepatic Impairment):**\n- Morphine และ opioids ส่วนใหญ่ metabolize ที่ตับ → ลด clearance → เพิ่ม t½\n- ระวัง: Oxycodone, Codeine ต้อง CYP2D6 activate → codeine ไม่ได้ผลใน poor metabolizer\n\n**ผู้สูงอายุ**: เริ่มขนาดต่ำ titrate ช้า (\"Start low, go slow\")"
+        }
+      ]
+    },
+    {
+      "title_th": "นอนไม่หลับและยากล่อมประสาท",
+      "subtitle_th": "Benzodiazepine ข้อห้าม/การพึ่งพา และยาทางเลือก",
+      "icon": "😴",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "benzodiazepine", "GABA-A", "Z-drugs", "zolpidem", "melatonin",
+        "ramelteon", "sleep hygiene", "tolerance", "GABA receptor",
+        "insomnia CBT-I"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "การประเมิน Insomnia และ Sleep Hygiene",
+          "body_md": "**โรคนอนไม่หลับ (Insomnia Disorder):**\n- หลับยาก, หลับไม่สนิท, หรือตื่นเร็วกว่าที่ต้องการ\n- เกิด ≥ 3 คืน/สัปดาห์ นาน ≥ 3 เดือน\n- ส่งผลต่อ daytime function\n\n**ประเมิน**: ระยะเวลา, สาเหตุ (ความเครียด, ยา, โรค), comorbidity (ซึมเศร้า, ปวด, apnea)\n\n**การรักษาแนวแรก: CBT-I (Cognitive Behavioral Therapy for Insomnia)**\n- Sleep restriction, Stimulus control, Sleep hygiene\n- ประสิทธิภาพสูงกว่ายาในระยะยาว และไม่มีผลข้างเคียง\n\n**Sleep Hygiene**: นอน-ตื่นเวลาเดิม, ห้องนอนมืด-เย็น-เงียบ, ไม่ดูมือถือก่อนนอน"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Benzodiazepines: กลไกและการแบ่งกลุ่ม",
+          "body_md": "**กลไก**: จับที่ GABA-A receptor (benzodiazepine binding site) → เพิ่ม frequency of Cl⁻ channel opening → hyperpolarization → CNS depression\n\n**การแบ่งตาม Half-life:**\n\n| กลุ่ม | ยา | t½ |\n|---|---|---|\n| Short-acting | Triazolam, Midazolam | < 6 ชม. |\n| Intermediate | Temazepam, Lorazepam | 6–24 ชม. |\n| Long-acting | Diazepam, Clonazepam | > 24 ชม. |\n\n**สำหรับนอนไม่หลับ**: เลือก short-to-intermediate acting (triazolam, temazepam)\n\n**ยาที่ใช้บ่อย**: Estazolam, Nitrazepam (ใช้เฉพาะนอนไม่หลับ)"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ข้อห้ามและความเสี่ยงของ Benzodiazepine",
+          "body_md": "## ⚠️ ข้อห้ามและความเสี่ยงสำคัญ\n\n**ข้อห้ามเด็ดขาด:**\n- **Sleep apnea** (กดการหายใจ → อันตราย)\n- **COPD รุนแรง** / Respiratory failure\n- **ตั้งครรภ์** (teratogenic, neonatal withdrawal, floppy infant)\n- **Myasthenia gravis** (กล้ามเนื้ออ่อนแรง)\n- ใช้ร่วมกับ **alcohol/opioid** (CNS depression ซ้อน → respiratory depression)\n\n**ความเสี่ยงในผู้สูงอายุ:**\n- ล้ม, กระดูกหัก\n- ความจำและ cognition แย่ลง\n- **Beers Criteria**: หลีกเลี่ยงใน elderly\n\n**Paradoxical reaction**: ความก้าวร้าว, 興奮 (พบในเด็ก/ผู้สูงอายุ)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Tolerance, Dependence และการหยุด Benzodiazepine",
+          "body_md": "**Tolerance:**\n- ผล hypnotic ลดลงภายใน 2–4 สัปดาห์\n- ผล anxiolytic มักคงอยู่นานกว่า\n\n**Physical Dependence:**\n- เกิดได้แม้ใช้ขนาดรักษาตามแพทย์สั่ง\n- Withdrawal symptoms: anxiety, insomnia rebound, tremor, seizure (กรณีรุนแรง)\n\n**การหยุดยาอย่างปลอดภัย:**\n- ค่อยๆ ลด 10% ทุก 1–2 สัปดาห์ (หรือช้ากว่าในผู้ที่ใช้มานาน)\n- เปลี่ยนจาก short-acting → long-acting (เช่น diazepam) ก่อน taper\n- **ห้ามหยุดทันที** ในผู้ที่ใช้มานาน → seizure\n\n**Antidote**: Flumazenil (benzodiazepine antagonist) — ระวัง: ออกฤทธิ์สั้น → ต้อง monitor"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Z-Drugs: Zolpidem, Zaleplon, Eszopiclone",
+          "body_md": "**Z-drugs** (Non-benzodiazepine GABA-A agonist):\n- ออกฤทธิ์คล้าย BZD แต่จับ **GABA-A receptor subtype เฉพาะกว่า** (α1 subunit)\n- ผล sedative/hypnotic มากกว่า anxiolytic/anticonvulsant\n\n| ยา | t½ | จุดเด่น |\n|---|---|---|\n| **Zolpidem** | 2–3 ชม. | หลับยาก (sleep onset) |\n| **Zaleplon** | 1 ชม. | สั้นมาก ใช้ตื่นกลางดึก |\n| **Eszopiclone** | 5–7 ชม. | ช่วยทั้ง onset และ maintenance |\n\n**SE**: parasomnias (sleep-walking, sleep-driving — Zolpidem), next-day sedation\n\n**ยังเสี่ยง dependence** แม้น้อยกว่า BZD → ไม่ควรใช้ > 4 สัปดาห์ติดต่อกัน"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Melatonin Receptor Agonist และยาทางเลือก",
+          "body_md": "**Ramelteon (MT₁/MT₂ agonist)**\n- ออกฤทธิ์ที่ melatonin receptor ในสมอง (suprachiasmatic nucleus)\n- ช่วย **sleep onset** โดยปรับ circadian rhythm\n- ไม่ทำให้ติด/พึ่งพา, ไม่มี withdrawal\n- ปลอดภัยใน sleep apnea, COPD, ผู้สูงอายุ\n\n**Melatonin (OTC):**\n- ประสิทธิภาพปานกลาง\n- เหมาะใน jet lag, circadian rhythm disorder\n- ขนาด 0.5–5 mg ก่อนนอน 30 นาที\n\n**Doxylamine (Antihistamine H1):**\n- OTC สำหรับนอนไม่หลับ\n- Tolerance เกิดเร็ว (1–3 วัน)\n- ระวัง: anticholinergic SE, ง่วงค้างวันรุ่งขึ้น\n\n**Suvorexant (Orexin receptor antagonist):**\n- ปิดกั้น orexin (wake-promoting) → ง่วงหลับ\n- ใหม่ ปลอดภัยกว่า BZD"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "การเลือกยานอนหลับตามผู้ป่วย",
+          "body_md": "**สรุปการเลือกยา:**\n\n| กรณี | ยาที่เลือก |\n|---|---|\n| ทั่วไป | CBT-I ก่อนยา |\n| Sleep onset problem | Zolpidem 5–10 mg หรือ Ramelteon |\n| Sleep maintenance | Eszopiclone หรือ BZD intermediate |\n| ผู้สูงอายุ | Ramelteon, Suvorexant (ไม่ใช่ BZD/Z-drug) |\n| Sleep apnea | ห้าม BZD, Z-drug → Ramelteon |\n| Comorbid anxiety | BZD หรือ Hydroxyzine |\n| Circadian disorder / Jet lag | Melatonin |\n\n**ยาระยะสั้น**: BZD/Z-drug ≤ 4 สัปดาห์\n\n**ยาระยะยาว**: Ramelteon, Suvorexant, หรือ low-dose Doxepin (TCA ขนาดต่ำ — approved สำหรับ sleep maintenance)"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ Z-drugs vs BZD: ZAPS ไม่ติด",
+          "body_md": "**Z-drugs** = **Z**olpidem, **Z**aleplon, e**S**zopiclone\n\n**จำข้อดีของ Z-drug เหนือ BZD:**\n- **Z**ero anticonvulsant effect (ไม่ใช้กันชัก)\n- **A**lpha-1 selective (subunit เฉพาะ)\n- **P**arasomnias (sleep-walking — แตกต่างจาก BZD)\n- **S**horter t½ → ง่วงค้างน้อยกว่า\n\n**แต่ยังเสี่ยง dependence!** — ไม่ใช่ \"ปลอดภัยสมบูรณ์\""
+        }
       ]
     }
   ]

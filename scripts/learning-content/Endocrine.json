@@ -1,30 +1,393 @@
 {
   "subject": "Endocrine",
-  "unit": { "title_th": "ต่อมไร้ท่อ", "description_th": "การจัดการเบาหวานชนิดที่ 2 และโรคไทรอยด์เบื้องต้น", "icon": "🧪" },
+  "unit": {
+    "title_th": "ต่อมไร้ท่อ",
+    "description_th": "โรคเบาหวาน ไทรอยด์ ต่อมหมวกไต และกระดูกพรุน ครอบคลุมการวินิจฉัย การรักษา และการติดตาม",
+    "icon": "🩺"
+  },
   "lessons": [
     {
-      "title_th": "เบาหวานชนิดที่ 2",
-      "subtitle_th": "Type 2 Diabetes Mellitus",
+      "title_th": "โรคเบาหวานชนิดที่ 1 และ 2: การวินิจฉัยและเป้าหมาย",
+      "subtitle_th": "T1DM vs T2DM, Diagnostic Criteria & Glycemic Targets",
       "icon": "🩸",
-      "est_minutes": 5,
-      "xp_reward": 10,
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "เบาหวาน", "HbA1c", "FPG", "OGTT", "T1DM", "T2DM",
+        "วินิจฉัย", "เป้าหมาย", "prediabetes", "hyperglycemia"
+      ],
       "cards": [
-        { "card_type": "concept", "title_th": "Metformin first-line", "body_md": "**Metformin** เป็นยาตัวแรก:\n- ลดการสร้างกลูโคสที่ตับ เพิ่มความไวต่ออินซูลิน\n- ไม่ทำให้ hypoglycemia เดี่ยว ๆ และไม่เพิ่มน้ำหนัก\n- ADR: คลื่นไส้/ท้องเสีย, ขาด **B12**, เสี่ยง **lactic acidosis**" },
-        { "card_type": "concept", "title_th": "กลุ่มยาและ ADR เด่น", "body_md": "- **SU** (glipizide): hypoglycemia, น้ำหนักขึ้น\n- **DPP-4i** (sitagliptin): เป็นกลาง\n- **SGLT2i** (-gliflozin): ลด CV/ไต, เสี่ยง UTI/genital infection, **euglycemic DKA**\n- **GLP-1 RA** (-tide): ลดน้ำหนัก, คลื่นไส้\n- **TZD** (pioglitazone): บวมน้ำ, หัวใจล้มเหลว" },
-        { "card_type": "warning", "title_th": "Metformin & ไต", "body_md": "หยุด/หลีกเลี่ยง metformin เมื่อ **eGFR < 30**\nหยุดชั่วคราวก่อนทำ **contrast (CT)** และในภาวะเจ็บป่วยเฉียบพลัน/ขาดน้ำ เพื่อลดเสี่ยง lactic acidosis" },
-        { "card_type": "tip", "title_th": "เลือกยาตามโรคร่วม", "body_md": "- มีโรคหัวใจ/ไต → เลือก **SGLT2i** หรือ **GLP-1 RA**\n- เป้าหมาย **HbA1c โดยทั่วไป < 7%** (ปรับตามผู้ป่วย)" }
+        {
+          "card_type": "concept",
+          "title_th": "เกณฑ์วินิจฉัยเบาหวาน (ADA 2024)",
+          "body_md": "วินิจฉัย **เบาหวาน** เมื่อพบ **อย่างน้อย 1** ใน 4 ข้อต่อไปนี้:\n\n| เกณฑ์ | ค่า |\n|---|---|\n| FPG (อดอาหาร ≥8h) | **≥ 126 mg/dL** |\n| 2hPG (OGTT 75g) | **≥ 200 mg/dL** |\n| HbA1c | **≥ 6.5%** |\n| Random plasma glucose + อาการ | **≥ 200 mg/dL** |\n\n- กรณีไม่มีอาการ: ต้องยืนยัน **2 ครั้ง** (วันเดียวกันหรือต่างวัน)\n- กรณีมีอาการ (polyuria, polydipsia, น้ำหนักลด): ครั้งเดียวเพียงพอ"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Prediabetes — ภาวะก่อนเบาหวาน",
+          "body_md": "| ภาวะ | FPG | 2hPG | HbA1c |\n|---|---|---|---|\n| **IFG** (Impaired Fasting Glucose) | 100–125 mg/dL | - | - |\n| **IGT** (Impaired Glucose Tolerance) | - | 140–199 mg/dL | - |\n| **Prediabetes** (HbA1c) | - | - | 5.7–6.4% |\n\n- ความเสี่ยงต่อ T2DM สูง — แนะนำเปลี่ยนพฤติกรรมและ **Metformin** ในรายที่เสี่ยงสูง"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "T1DM vs T2DM: ความแตกต่างหลัก",
+          "body_md": "| คุณสมบัติ | T1DM | T2DM |\n|---|---|---|\n| กลไก | Autoimmune β-cell destruction | Insulin resistance + relative insulin deficiency |\n| อายุเริ่มต้น | เด็ก/วัยรุ่น (แต่พบในผู้ใหญ่ได้) | ผู้ใหญ่ (อ้วน) |\n| C-peptide | ต่ำ/ไม่มี | ปกติหรือสูง |\n| Autoantibodies | **GAD65, IA-2, IAA, ZnT8** (บวก) | ลบ |\n| DKA | เสี่ยงสูง | น้อย (ยกเว้น SGLT2i) |\n| การรักษา | **อินซูลินตลอดชีวิต** | ยาชนิดรับประทาน ± อินซูลิน |"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "เป้าหมาย HbA1c และการปรับให้เหมาะกับผู้ป่วย",
+          "body_md": "**มาตรฐาน:** HbA1c **< 7%** (ADA/TES)\n\n**เข้มข้นขึ้น (< 6.5%):** ผู้ป่วยอายุน้อย ไม่มีโรคร่วม ทนต่อยาได้ดี ไม่เสี่ยง hypoglycemia\n\n**ผ่อนปรน (< 8% หรือสูงกว่า):** ผู้สูงอายุ / ประวัติ hypoglycemia รุนแรง / อายุขัยสั้น / โรคร่วมมาก / Dementia\n\n**เป้าหมายอื่น:**\n- FPG: 80–130 mg/dL\n- PPG (peak): < 180 mg/dL\n- BP: < 130/80 mmHg\n- LDL-C: < 100 mg/dL (< 70 ถ้ามี ASCVD)"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำเกณฑ์ FPG ง่ายๆ — '126/100'",
+          "body_md": "**'126/100'** — สองตัวเลขสำคัญ\n\n- **≥ 126** = เบาหวาน (Diabetes)\n- **100–125** = IFG / Prediabetes\n- **< 100** = ปกติ\n\nจำ: \"**หนึ่งร้อยยี่สิบหก** คือเส้นเบาหวาน, **หนึ่งร้อย** คือเส้นเริ่มระวัง\""
+        },
+        {
+          "card_type": "tip",
+          "title_th": "ข้อจำกัดของ HbA1c",
+          "body_md": "**ใช้ HbA1c ไม่ได้ หรือไม่แม่นยำ ใน:**\n\n- **Hemolytic anemia** / ภาวะที่ RBC อายุสั้น → HbA1c ต่ำเทียม\n- **Iron deficiency anemia** → HbA1c สูงเทียม\n- **Hemoglobinopathy** (Thalassemia, HbS, HbC) → อ่านค่าผิดพลาด\n- **ตั้งครรภ์ไตรมาส 2–3**: HbA1c ต่ำเทียม (เม็ดเลือดแดงหมุนเวียนเร็ว)\n\n→ ในกรณีเหล่านี้ ใช้ **FPG หรือ 2hPG** แทน"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "LADA — เบาหวานแฝงชนิดออโตอิมมูนในผู้ใหญ่",
+          "body_md": "**LADA (Latent Autoimmune Diabetes in Adults):**\n\n- เริ่มต้นคล้าย T2DM แต่ Autoantibody บวก (**GAD65** พบบ่อย)\n- ควบคุมน้ำตาลด้วย OAD ได้ช่วงสั้น → จำเป็นต้องใช้อินซูลินเร็ว\n- **อย่าเข้าใจผิด**ว่าเป็น T2DM ล้วน เพราะจะใช้ยากลุ่ม sulfonylurea ต่อไป ซึ่งเร่งการเสื่อมของ β-cell"
+        }
       ]
     },
     {
-      "title_th": "โรคไทรอยด์",
-      "subtitle_th": "Thyroid Disorders",
-      "icon": "🦋",
-      "est_minutes": 5,
-      "xp_reward": 10,
+      "title_th": "ยาลดน้ำตาลกลุ่มที่ 1: Metformin, Sulfonylurea, Meglitinide",
+      "subtitle_th": "Traditional Oral Antidiabetics",
+      "icon": "💊",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "metformin", "sulfonylurea", "glipizide", "glyburide", "glimepiride",
+        "meglitinide", "repaglinide", "lactic acidosis", "hypoglycemia", "biguanide"
+      ],
       "cards": [
-        { "card_type": "concept", "title_th": "Hypothyroidism", "body_md": "รักษาด้วย **levothyroxine (LT4)**\n- กิน **ตอนท้องว่าง** ก่อนอาหารเช้า ~30–60 นาที\n- เลี่ยงกินพร้อม **แคลเซียม/เหล็ก/ยาลดกรด** (ลดการดูดซึม)\n- ติดตามด้วย **TSH**" },
-        { "card_type": "concept", "title_th": "Hyperthyroidism", "body_md": "ยาต้านไทรอยด์ (thionamide):\n- **Methimazole (MMI)**: ตัวเลือกแรกทั่วไป\n- **PTU**: เลือกใน **ไตรมาสแรกของการตั้งครรภ์** และ thyroid storm\n- เสริม **beta-blocker** (propranolol) คุมอาการใจสั่น/มือสั่น" },
-        { "card_type": "warning", "title_th": "ADR ยาต้านไทรอยด์", "body_md": "- **Agranulocytosis** (เม็ดเลือดขาวต่ำรุนแรง) — มีไข้/เจ็บคอให้หยุดยาและตรวจเลือด\n- **PTU**: เสี่ยง **hepatotoxicity** มากกว่า MMI\n- MMI เป็น teratogen ในไตรมาสแรก" }
+        {
+          "card_type": "concept",
+          "title_th": "Metformin: กลไกและตำแหน่งการรักษา",
+          "body_md": "**กลุ่ม:** Biguanide\n\n**กลไก:**\n- ยับยั้ง **Complex I** ของ mitochondrial respiratory chain → ↓ ATP/AMP ratio\n- → กระตุ้น **AMPK** → ↓ gluconeogenesis ที่ตับ (หลัก)\n- เพิ่ม peripheral glucose uptake, ↓ intestinal glucose absorption\n\n**ประโยชน์:**\n- **First-line** สำหรับ T2DM ทุกราย (ถ้าทนได้และไตปกติ)\n- ไม่ทำให้ hypoglycemia เดี่ยวๆ\n- น้ำหนักตัวเป็นกลาง/ลดเล็กน้อย\n- ลด CV events (UKPDS)\n- ราคาถูก"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Metformin: ADR และข้อห้ามใช้",
+          "body_md": "**ADR:**\n- GI: คลื่นไส้ ท้องเสีย อาหารไม่ย่อย (ลดโดยกินพร้อมอาหาร เริ่มขนาดต่ำ)\n- ขาด **Vitamin B12** (ระยะยาว) → ติดตาม B12 ทุก 1–2 ปี\n- **Lactic acidosis** (หายาก แต่รุนแรง)\n\n**ข้อห้ามและการหยุดยา:**\n| สถานการณ์ | การจัดการ |\n|---|---|\n| eGFR < 30 | **ห้ามใช้** |\n| eGFR 30–45 | ลดขนาด, ระวัง |\n| ก่อนฉีด iodinated contrast | หยุดล่วงหน้า / หลังทำหัตถการ 48h |\n| ภาวะเจ็บป่วยเฉียบพลัน / ขาดน้ำ | หยุดชั่วคราว |\n| ตับวาย / ดื่มสุราจัด | หลีกเลี่ยง |"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Sulfonylurea (SU): กลไกและตัวยา",
+          "body_md": "**กลไก:** จับ **SUR1 receptor** บน β-cell → ปิด K⁺-ATP channel → depolarization → Ca²⁺ influx → กระตุ้น insulin secretion (ไม่ขึ้นกับระดับน้ำตาล)\n\n**ตัวยา (Generation):**\n\n| ยา | รุ่น | ข้อพิเศษ |\n|---|---|---|\n| Glibenclamide (Glyburide) | 2nd | ระยะยาว, เสี่ยง hypo สูง |\n| Glipizide | 2nd | ออกฤทธิ์สั้น, ปลอดภัยกว่าในผู้สูงอายุ |\n| Gliclazide | 2nd | Cardioprotective effect |\n| Glimepiride | 3rd | ขนาดต่ำ, เสี่ยง hypo น้อยกว่า glibenclamide |\n\n**ADR:** Hypoglycemia (สำคัญสุด), น้ำหนักเพิ่ม"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Meglitinide (Glinide): กลไกและการใช้",
+          "body_md": "**กลไก:** คล้าย SU แต่จับ **SUR1 ต่างตำแหน่ง** → ออกฤทธิ์เร็ว ระยะสั้น\n\n**ตัวยา:**\n- **Repaglinide** (Prandin): ออกฤทธิ์เร็ว 30 นาที, กินก่อนอาหาร 0–30 นาที\n- **Nateglinide**: ออกฤทธิ์เร็วกว่า ระยะสั้นกว่า\n\n**ข้อดีเทียบ SU:**\n- ควบคุม **postprandial hyperglycemia** ได้ดี\n- ถ้าข้ามมื้ออาหาร → **ข้ามขนาดยา** (ลดเสี่ยง hypo)\n\n**ข้อเสีย:** กินหลายครั้ง, เสี่ยง hypo (แต่น้อยกว่า SU), ราคาสูง"
+        },
+        {
+          "card_type": "example",
+          "title_th": "กรณีตัวอย่าง: ป้องกัน Lactic Acidosis จาก Metformin",
+          "body_md": "**สถานการณ์:** ผู้ป่วยชาย 65 ปี เบาหวาน T2DM ใช้ Metformin 1000 mg bid นัดทำ CT scan with contrast พรุ่งนี้\n\n**ควรทำอย่างไร?**\n1. **หยุด Metformin** ก่อนทำ CT (หรือวันที่ทำ)\n2. ทำ CT เสร็จ → ดื่มน้ำมากๆ ติดตามการทำงานของไต\n3. รอ **48 ชั่วโมง** หลังทำ → ตรวจ SCr/eGFR\n4. ถ้าไตปกติ → เริ่ม Metformin ใหม่\n\n**เหตุผล:** Contrast อาจทำให้ไตเสื่อมชั่วคราว → Metformin คั่ง → เสี่ยง **lactic acidosis** (pH ต่ำ, lactate > 5 mmol/L)"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "เลือก SU ให้ปลอดภัยในผู้สูงอายุ",
+          "body_md": "**ผู้สูงอายุ:** หลีกเลี่ยง **Glibenclamide (Glyburide)**\n- ออกฤทธิ์นาน (T½ = 16–24h) + active metabolite → เสี่ยง hypoglycemia รุนแรงและยาวนาน\n\n**แนะนำ:**\n- **Glipizide** (T½ = 2–4h) หรือ **Gliclazide MR** — ปลอดภัยกว่าในผู้สูงอายุ\n- ผู้สูงอายุที่ไตบกพร่อง: พิจารณา DPP-4i แทน SU"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Hypoglycemia จาก SU: อาการและการจัดการ",
+          "body_md": "**อาการ Hypoglycemia (plasma glucose < 70 mg/dL):**\n- ระดับเบา: เหงื่อออก ใจสั่น หัวใจเต้นเร็ว หิว มือสั่น\n- ระดับรุนแรง: สับสน ชัก หมดสติ\n\n**Rule of 15 (ถ้ารู้สึกตัว):**\n→ กิน carbohydrate **15 กรัม** (น้ำหวาน 150 mL หรือน้ำตาล 3 ช้อนชา)\n→ รอ **15 นาที** ตรวจซ้ำ\n→ ทำซ้ำถ้ายังต่ำ\n\n**ถ้าหมดสติ:** IV Dextrose 50% 50 mL หรือ Glucagon IM/SC/IN\n\n⚠️ **SU-induced hypoglycemia อาจกลับมาซ้ำ** เพราะออกฤทธิ์นาน — ต้อง **admit ดูแล 24–48h** ในรายที่รุนแรง"
+        }
+      ]
+    },
+    {
+      "title_th": "ยาลดน้ำตาลกลุ่มที่ 2: GLP-1RA, DPP-4i, SGLT2i",
+      "subtitle_th": "Incretin-Based & SGLT2 Inhibitor Therapies",
+      "icon": "💉",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "GLP-1", "semaglutide", "liraglutide", "DPP-4i", "sitagliptin", "SGLT2i",
+        "empagliflozin", "dapagliflozin", "euglycemic DKA", "cardiovascular benefit"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "GLP-1 Receptor Agonist (GLP-1RA): กลไกและตัวยา",
+          "body_md": "**กลไก:**\n- กระตุ้น GLP-1 receptor → เพิ่ม insulin secretion (glucose-dependent)\n- ยับยั้ง glucagon, ชะลอการเคลื่อนตัวของกระเพาะ (↓ postprandial glucose)\n- ลดความอยากอาหาร (CNS) → **ลดน้ำหนัก**\n\n**ตัวยา:**\n| ยา | ความถี่ | ข้อเด่น |\n|---|---|---|\n| Semaglutide | สัปดาห์ละครั้ง | ลดน้ำหนักดีสุด, มีรูปแบบรับประทาน |\n| Liraglutide | วันละครั้ง | CV benefit (LEADER trial) |\n| Dulaglutide | สัปดาห์ละครั้ง | CV benefit (REWIND trial) |\n| Exenatide | วันละ 2 ครั้ง / สัปดาห์ละครั้ง | |\n\n**ADR:** คลื่นไส้/อาเจียน (พบบ่อย, หายเองในไม่กี่สัปดาห์), ท้องผูก\n**ข้อห้าม:** ประวัติ **Medullary Thyroid Cancer** หรือ MEN2"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "DPP-4 Inhibitor (Gliptin): กลไกและตัวยา",
+          "body_md": "**กลไก:** ยับยั้งเอนไซม์ **DPP-4** → ↑ GLP-1 และ GIP ภายในร่างกาย → เพิ่ม insulin (glucose-dependent), ↓ glucagon\n\n**ตัวยา:** Sitagliptin, Saxagliptin, Vildagliptin, Alogliptin, Linagliptin\n\n**ข้อดี:**\n- ผลต่อน้ำตาลเป็น glucose-dependent → **เสี่ยง hypoglycemia น้อย**\n- ผลกลางๆ ต่อน้ำหนัก\n- **Linagliptin**: ไม่ต้องปรับขนาดในไตบกพร่อง (ขับผ่านน้ำดี)\n\n**ADR:** ปวดข้อ, nasopharyngitis, ตับอ่อนอักเสบ (หายาก)\n⚠️ **Saxagliptin/Alogliptin**: เพิ่มเสี่ยง **heart failure hospitalization** (SAVOR-TIMI, EXAMINE)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "SGLT2 Inhibitor (Gliflozin): กลไกและประโยชน์ CV/ไต",
+          "body_md": "**กลไก:** ยับยั้ง **SGLT2** ที่ proximal tubule → ↓ glucose reabsorption → ขับ glucose ทางปัสสาวะ (**glucosuria**)\n\n**ตัวยา:** Empagliflozin, Dapagliflozin, Canagliflozin, Ertugliflozin\n\n**ประโยชน์ที่พิสูจน์แล้ว:**\n\n| ยา | Trial | ผลลัพธ์ |\n|---|---|---|\n| Empagliflozin | EMPA-REG | ↓ CV death, HF hospitalization |\n| Canagliflozin | CANVAS | ↓ CV events, ↑ amputation risk |\n| Dapagliflozin | DECLARE, DAPA-HF, DAPA-CKD | ↓ HF, ↓ renal progression |\n\n**ADR:**\n- Genital mycotic infection (หญิง > ชาย)\n- UTI\n- Polyuria\n- ↓ BP (orthostatic hypotension)\n- ↑ LDL เล็กน้อย"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "SGLT2i: Euglycemic DKA — อันตรายที่ไม่คาดคิด",
+          "body_md": "**Euglycemic DKA:** DKA ที่ plasma glucose **ปกติ หรือ < 250 mg/dL** (ผิดปกติจาก DKA ทั่วไป)\n\n**กลไก:** SGLT2i → glucosuria → ↓ insulin need → relative insulinopenia → ketogenesis\n\n**ปัจจัยเสี่ยง:**\n- ลดอินซูลินเร็วเกินไป\n- Low carbohydrate diet / การอดอาหาร\n- ดื่มแอลกอฮอล์\n- ผ่าตัด / เจ็บป่วยเฉียบพลัน\n- T1DM (off-label)\n\n**อาการ:** คลื่นไส้ อาเจียน ปวดท้อง หายใจเร็ว Kussmaul\n**วินิจฉัย:** AG metabolic acidosis + ketonemia/ketonuria แม้ glucose ไม่สูง\n\n⚠️ **หยุด SGLT2i ก่อนผ่าตัด** (อย่างน้อย 3–4 วัน) เพื่อป้องกัน euglycemic DKA"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "เลือกยาตาม Complication ของผู้ป่วย",
+          "body_md": "**Algorithm การเลือกยา T2DM (ADA 2024):**\n\n- **Metformin** → First-line ทุกราย\n- มี **ASCVD หรือ HF หรือ CKD** → เพิ่ม **SGLT2i** หรือ **GLP-1RA** (มีหลักฐาน CV/renal benefit)\n  - ASCVD ชัดเจน: **GLP-1RA** หรือ SGLT2i (ขึ้นกับ GFR)\n  - HFrEF หรือ CKD: **SGLT2i** (Dapagliflozin/Empagliflozin)\n- ต้องการ **ลดน้ำหนัก**: GLP-1RA (Semaglutide ดีสุด)\n- ต้องการ **ลด hypoglycemia**: DPP-4i, GLP-1RA, SGLT2i\n- ต้องการ **ราคาถูก**: SU, Metformin"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ ADR กลุ่ม SGLT2i — '3U + DKA'",
+          "body_md": "**'3U + DKA':**\n- **U**TI (การติดเชื้อทางเดินปัสสาวะ)\n- **U**rogenital fungal infection (เชื้อราอวัยวะเพศ)\n- **U**rine glucose เพิ่ม (glucosuria)\n- **DKA** (euglycemic — ระวัง!)\n\nโบนัส: **U**ration ลด (ฉี่บ่อย → BP ลด → orthostasis)"
+        },
+        {
+          "card_type": "example",
+          "title_th": "กรณีตัวอย่าง: T2DM + Heart Failure",
+          "body_md": "**ผู้ป่วย:** ชาย 62 ปี T2DM HbA1c 8.2%, มี HFrEF (EF 35%), eGFR 48 mL/min\nยาเดิม: Metformin 1000 mg bid\n\n**ควรเพิ่มยาอะไร?**\n\n✅ **Dapagliflozin 10 mg/day** หรือ **Empagliflozin 10 mg/day**\n- มีหลักฐาน ↓ HF hospitalization และ ↓ renal progression\n- eGFR 48 → ยังใช้ได้ (เริ่มได้ที่ eGFR ≥ 20 สำหรับ HF/CKD)\n\n❌ ไม่ควรเพิ่ม **Saxagliptin/Alogliptin** → เพิ่มเสี่ยง HF hospitalization\n\n**ติดตาม:** eGFR, electrolytes, อาการ genital infection"
+        }
+      ]
+    },
+    {
+      "title_th": "อินซูลิน: ชนิด ระยะออกฤทธิ์ และการใช้",
+      "subtitle_th": "Insulin Types, Regimens & Safe Administration",
+      "icon": "🔬",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "insulin", "rapid-acting", "NPH", "glargine", "detemir", "degludec",
+        "premixed", "hypoglycemia", "Somogyi", "dawn phenomenon", "basal-bolus"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "ชนิดอินซูลินและระยะออกฤทธิ์",
+          "body_md": "| ชนิด | ตัวยา | Onset | Peak | Duration |\n|---|---|---|---|---|\n| **Rapid-acting** | Lispro, Aspart, Glulisine | 5–15 min | 1–2h | 3–5h |\n| **Short-acting** (Regular) | Regular insulin | 30–60 min | 2–4h | 6–8h |\n| **Intermediate** | NPH | 1–3h | 4–10h | 12–18h |\n| **Long-acting** | Glargine U100/U300, Detemir | 1–4h | Peakless | 20–24h / >24h |\n| **Ultra-long** | Degludec | 1h | Peakless | >42h |\n| **Premixed** | 70/30 NPH/Reg, 75/25 Lispro | Mixed | Dual | Mixed |\n\n**Rapid-acting:** ฉีดก่อนอาหาร 0–15 นาที\n**Regular:** ฉีดก่อนอาหาร 30 นาที"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "รูปแบบการให้อินซูลิน (Regimens)",
+          "body_md": "**1. Basal-only:** Long-acting 1 ครั้ง/วัน → ใช้ใน T2DM เริ่มต้น\n\n**2. Basal-Bolus (MDI):** Long-acting 1 ครั้ง + Rapid-acting 3 ครั้ง (ก่อนอาหาร)\n- ควบคุมน้ำตาลดีสุด, ยืดหยุ่น\n- มาตรฐานสำหรับ **T1DM**\n\n**3. Premixed:** ฉีด 2 ครั้ง/วัน (เช้า-เย็น)\n- สะดวก แต่ควบคุมน้ำตาลไม่ละเอียด\n\n**4. CSII (Insulin Pump):** ให้ basal ต่อเนื่อง + bolus ตามมื้ออาหาร\n- ดีที่สุดสำหรับ T1DM ที่ควบคุมยาก\n\n**เริ่มต้น Basal Insulin ใน T2DM:**\n- เริ่ม **Glargine 10 units** หรือ **0.1–0.2 units/kg/day** ก่อนนอน\n- ปรับขึ้น 2 units ทุก 3 วัน ถ้า FPG > 130 mg/dL"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Somogyi Effect vs Dawn Phenomenon",
+          "body_md": "| | Somogyi Effect | Dawn Phenomenon |\n|---|---|---|\n| **กลไก** | Rebound hyperglycemia หลัง nocturnal hypoglycemia | ↑ GH/Cortisol ตี 3–8 โมย → ↑ glucose |\n| **เวลาน้ำตาลสูง** | ตอนเช้า | ตอนเช้า |\n| **น้ำตาลช่วงดึก (ตี 2–3)** | **ต่ำ** (hypoglycemia) | **ปกติ หรือสูง** |\n| **การแก้ไข** | ลดขนาด insulin ช่วงดึก | เพิ่มขนาด insulin ช่วงดึก |\n\n**วินิจฉัยแยก:** ตรวจ SMBG เวลา **ตี 3** เพื่อดูว่า glucose ต่ำ (Somogyi) หรือปกติ/สูง (Dawn)\n\n⚠️ ถ้าเข้าใจผิด → รักษากลับด้าน → อาการแย่ลง"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "เทคนิคฉีดอินซูลินที่ถูกต้อง",
+          "body_md": "**ตำแหน่งฉีด (ดูดซึมเร็ว → ช้า):**\n**ท้อง > แขน > ต้นขา > สะโพก**\n\n**คำแนะนำ:**\n- หมุนเวียนตำแหน่ง (rotation) ในบริเวณเดิม\n- ห่างจากสะดือ > 2 นิ้ว\n- ไม่ฉีดซ้ำจุดเดิม → ป้องกัน **lipohypertrophy** (ก้อนไขมันแข็ง → ดูดซึมไม่สม่ำเสมอ)\n- ใช้เข็มใหม่ทุกครั้ง\n- Rapid-acting: ท้อง (ดูดซึมเร็ว = ทันมื้ออาหาร)\n- Long-acting: ต้นขา/สะโพก (ดูดซึมช้า = คงระดับนาน)\n\n**เก็บรักษา:**\n- ขวดเปิดแล้ว: อุณหภูมิห้อง ≤ 30°C นาน 28–30 วัน\n- ยังไม่เปิด: ตู้เย็น 2–8°C"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำลำดับความเร็วดูดซึม — 'ท้อง-แขน-ขา-สะโพก'",
+          "body_md": "**'ท-แ-ขา-สะ'** = ท้อง → แขน → ต้นขา → สะโพก\n\nเร็วที่สุด ← [ท้อง] → [แขน] → [ขา] → [สะโพก] → ช้าที่สุด\n\nจำง่าย: \"**ท**ำ**แ**บ่ง**ขา**ย**สะ**อาด\" (เร็วไปช้า)"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Insulin: ข้อระวังสำคัญในการใช้",
+          "body_md": "⚠️ **ห้ามผสมอินซูลิน:**\n- **Glargine** (pH 4) ห้ามผสมกับ insulin อื่น → จะตกตะกอน, เปลี่ยนโปรไฟล์ออกฤทธิ์\n- Detemir: ห้ามผสมกับชนิดอื่น\n\n⚠️ **Hypoglycemia รุนแรง:**\n- Risk สูงในผู้สูงอายุ ไตบกพร่อง ไม่สม่ำเสมอในการกิน\n- เป้าหมาย glucose ผู้สูงอายุเปราะบาง: **HbA1c < 8–9%** (ไม่ควรเข้มข้นเกิน)\n\n⚠️ **Insulin overdose:**\n- ถ้าฉีดขนาดผิด → **ไม่ควรล้วงเข็มออก** ถ้าฉีดเข้าไปแล้ว\n- ให้ glucose ทันที, ติดตาม glucose ทุก 30–60 นาที นาน 4–6h"
+        },
+        {
+          "card_type": "example",
+          "title_th": "กรณีตัวอย่าง: คำนวณขนาดอินซูลิน Basal-Bolus",
+          "body_md": "**ผู้ป่วย:** T1DM น้ำหนัก 60 kg, เริ่มต้น MDI\n\n**คำนวณ Total Daily Dose (TDD):**\n- เริ่มต้น: **0.5 units/kg/day** = 0.5 × 60 = **30 units/day**\n\n**แบ่ง Basal : Bolus = 50:50**\n- **Basal (Glargine):** 15 units ฉีดก่อนนอน\n- **Bolus (Rapid-acting):** 15 units ÷ 3 มื้อ = **5 units/มื้อ**\n\n**ปรับ Bolus ตาม Carbohydrate Ratio (ICR):**\n- ICR = 500/TDD = 500/30 = **~17** (insulin 1 unit ต่อ carb 17 g)\n- ถ้ากินข้าว carb 60g → Bolus = 60/17 ≈ **3.5 ≈ 4 units**\n\n**Correction Factor (ISF):**\n- ISF = 1800/TDD = 1800/30 = **60** (glucose ลด 60 mg/dL ต่อ insulin 1 unit)"
+        }
+      ]
+    },
+    {
+      "title_th": "ภาวะแทรกซ้อนเฉียบพลัน: DKA และ HHS",
+      "subtitle_th": "Diabetic Ketoacidosis vs Hyperglycemic Hyperosmolar State",
+      "icon": "🚨",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "DKA", "HHS", "ketoacidosis", "hyperglycemic hyperosmolar",
+        "bicarbonate", "potassium replacement", "insulin infusion", "anion gap", "osmolality"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "DKA vs HHS: ความแตกต่างหลัก",
+          "body_md": "| | **DKA** | **HHS** |\n|---|---|---|\n| พบใน | T1DM (พบใน T2DM ได้) | T2DM (ผู้สูงอายุ) |\n| Glucose | 250–600 mg/dL | **> 600 mg/dL** |\n| pH | **< 7.3** | ปกติ หรือ เล็กน้อย |\n| Bicarbonate | **< 18 mEq/L** | > 15 mEq/L |\n| Ketone | **บวกมาก** | เล็กน้อย/ลบ |\n| Anion Gap | **> 12** | ปกติ |\n| Osmolality | สูงปานกลาง | **> 320 mOsm/kg** |\n| Mortality | ~5% | **15–20%** (สูงกว่า) |\n| Onset | ชั่วโมง | วัน–สัปดาห์ |"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "DKA: กลไกการเกิดและสาเหตุ",
+          "body_md": "**กลไก:**\n- Insulin ขาดอย่างรุนแรง → ↑ Glucagon\n- ↑ Lipolysis → Free Fatty Acids (FFA) → **Ketone bodies** (β-hydroxybutyrate, acetoacetate, acetone)\n- → **Metabolic acidosis** (Anion Gap ↑)\n- ↑ Gluconeogenesis + ↓ glucose uptake → **Hyperglycemia** → Osmotic diuresis\n\n**สาเหตุ (6I):**\n- **I**nfection (พบบ่อยสุด, 30–40%)\n- **I**nsulin omission (ลืมฉีด, หยุดยาเอง)\n- **I**nfarction (MI, CVA)\n- **I**ntoxication\n- **I**atrogen\n- **I**diopathic"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "การรักษา DKA: IV Fluid + Insulin + Potassium",
+          "body_md": "**3 เสาหลักของการรักษา DKA:**\n\n**1. IV Fluid (สำคัญสุด):**\n- เริ่ม **0.9% NaCl** 1 L ใน 1h แรก → ตาม hydration status\n- เมื่อ glucose < 200 mg/dL → เปลี่ยนเป็น **D5W + 0.45% NaCl**\n\n**2. Insulin:**\n- เริ่ม IV **Regular insulin** 0.1 units/kg bolus → 0.1 units/kg/h infusion\n- (หรือ ไม่ bolus → 0.14 units/kg/h)\n- เป้าหมาย: ↓ glucose 50–75 mg/dL/h\n- **อย่าเริ่ม insulin ถ้า K⁺ < 3.5 mEq/L** (ต้องแก้ K ก่อน!)\n\n**3. Potassium Replacement:**\n- K⁺ < 3.5: ให้ K 20–40 mEq/h → เริ่ม insulin หลัง K > 3.5\n- K⁺ 3.5–5.5: ให้ K 20–30 mEq ต่อ 1L fluid\n- K⁺ > 5.5: ยังไม่ให้ K, ติดตาม EKG"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "เกณฑ์ resolution DKA และการ transition to SC insulin",
+          "body_md": "**DKA resolved เมื่อ (ต้องครบทั้ง 3):**\n1. Blood glucose **< 200–250 mg/dL**\n2. Serum bicarbonate **≥ 15 mEq/L**\n3. Venous pH **> 7.3**\n\n**(และ ผู้ป่วยกินได้แล้ว)**\n\n**Transition to SC insulin:**\n- ฉีด SC rapid-acting insulin **30–60 นาที ก่อน** หยุด IV insulin infusion\n- (ถ้าหยุด IV ก่อน → glucose จะขึ้น! เพราะ T½ IV insulin สั้นมาก)\n- กลับมาใช้ขนาด basal-bolus เดิม หรือคำนวณจาก TDD ที่ต้องการใน ICU"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "Bicarbonate ใน DKA: ใช้เมื่อไหร่?",
+          "body_md": "**ADA ไม่แนะนำ bicarbonate ทั่วไปใน DKA** เพราะ:\n- ไม่ได้ช่วยลด mortality\n- อาจทำให้ **paradoxical CNS acidosis**\n- เร่ง hypokalemia\n\n**พิจารณาให้ NaHCO₃ เฉพาะ:**\n- pH **< 6.9** (acidosis รุนแรงมาก)\n- Hyperkalemia รุนแรง (K⁺ > 6.5) + cardiac arrhythmia\n\n**วิธี:** NaHCO₃ 100 mEq ใน 400 mL sterile water + KCl 20 mEq ให้ใน 2h"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "อันตราย: ให้ Insulin ก่อนแก้ Hypokalemia",
+          "body_md": "⚠️ **Insulin ขับ K⁺ เข้าเซลล์** → K⁺ นอกเซลล์ลดลงอีก\n\n**ผู้ป่วย DKA มักมี Total body K⁺ ขาดแม้ serum K⁺ ปกติ/สูง:**\n- Serum K⁺ สูง = K⁺ ออกจากเซลล์เพราะ acidosis\n- เมื่อ insulin และ fluid ทำให้ K⁺ กลับเข้าเซลล์ → serum K⁺ ดิ่ง\n\n**กฎ:**\n> ถ้า K⁺ < 3.5 mEq/L → ให้ K ก่อน **อย่าเพิ่งเริ่ม insulin**\n\n**ภาวะแทรกซ้อนถ้าไม่แก้ K:** Cardiac arrhythmia, Respiratory muscle weakness, Cardiac arrest"
+        },
+        {
+          "card_type": "example",
+          "title_th": "กรณีตัวอย่าง: คำนวณ Anion Gap",
+          "body_md": "**ผู้ป่วย DKA:** Na 135, Cl 95, HCO₃ 10 mEq/L\n\n**Anion Gap = Na − (Cl + HCO₃)**\n= 135 − (95 + 10) = 135 − 105 = **30 mEq/L**\n\n**ค่าปกติ:** 8–12 mEq/L (ถ้าไม่รวม albumin)\n\n**ค่าในตัวอย่าง = 30** → **Elevated Anion Gap** → บ่งชี้ HAGMA\n→ DDx: DKA, Lactic acidosis, Uremia, Toxic (MUDPILES)\n\n**MUDPILES:** Methanol, Uremia, DKA, Propylene glycol, Isoniazid, Lactic acidosis, Ethylene glycol, Salicylates"
+        }
+      ]
+    },
+    {
+      "title_th": "โรคต่อมไทรอยด์: Hypothyroid และ Hyperthyroid",
+      "subtitle_th": "Thyroid Disorders: Levothyroxine, PTU, Methimazole & Thyroid Storm",
+      "icon": "🦋",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "levothyroxine", "TSH", "hypothyroid", "hyperthyroid", "methimazole",
+        "PTU", "propylthiouracil", "thyroid storm", "Graves disease", "agranulocytosis"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "Hypothyroidism: การวินิจฉัยและการรักษา",
+          "body_md": "**วินิจฉัย:**\n- TSH **สูง** + Free T4 **ต่ำ** = **Primary hypothyroidism** (พบบ่อยสุด; Hashimoto's)\n- TSH **ต่ำ** + Free T4 **ต่ำ** = Secondary/Central hypothyroidism (ปัญหา pituitary/hypothalamus)\n\n**การรักษา: Levothyroxine (LT4)**\n- ขนาดเต็ม: **1.6–1.7 μg/kg/day** ผู้ใหญ่สุขภาพดี\n- ผู้สูงอายุ / โรคหัวใจ: เริ่มต่ำ 25–50 μg/day แล้วปรับขึ้นช้าๆ\n\n**วิธีกิน:**\n- กิน **ตอนท้องว่าง** ก่อนอาหารเช้า **30–60 นาที** (หรือก่อนนอน)\n- ห่างจาก Ca²⁺, Fe, Mg, ยาลดกรด, Sucralfate **อย่างน้อย 4h** (ลดการดูดซึม)\n\n**ติดตาม:** TSH ทุก **6–8 สัปดาห์** หลังปรับขนาด จนคงที่ → ทุก 6–12 เดือน"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Hyperthyroidism: สาเหตุและยาต้านไทรอยด์",
+          "body_md": "**สาเหตุบ่อย:** Graves' disease (TSI/TSHR-Ab บวก), Toxic MNG, Toxic Adenoma\n\n**ยาต้านไทรอยด์ (Thionamide):**\n\n| | **Methimazole (MMI)** | **PTU (Propylthiouracil)** |\n|---|---|---|\n| กลไก | ยับยั้ง TPO | ยับยั้ง TPO + ยับยั้ง T4→T3 conversion |\n| ความถี่ | วันละ 1–2 ครั้ง | วันละ 3 ครั้ง |\n| เลือกใน | ทั่วไป | ไตรมาสแรกของการตั้งครรภ์, Thyroid storm |\n| Hepatotoxicity | น้อย | สูงกว่า (มี Black box warning) |\n| Teratogenicity | **ใช่ (ไตรมาส 1)** → Aplasia cutis, choanal atresia | น้อยกว่าในไตรมาส 1 |"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Thyroid Storm: การวินิจฉัยและการรักษา",
+          "body_md": "**Thyroid Storm** = hyperthyroid รุนแรง, อัตราตายสูง (~10–30%)\n\n**ทริกเกอร์:** การผ่าตัด, ติดเชื้อ, หยุดยาต้านไทรอยด์\n\n**Burch-Wartofsky Score (≥ 45 คะแนน = Thyroid storm):**\n- ไข้ > 40°C = 30 คะแนน\n- หัวใจเต้นเร็ว > 130 bpm = 25 คะแนน\n- สับสน, ชัก = 30 คะแนน\n- ภาวะตับล้มเหลว, ท้องเสียรุนแรง = คะแนนสูง\n\n**การรักษา (จำ PTU-SSKI-BB-Steroid-Support):**\n1. **PTU** 500–1000 mg loading → 250 mg q4h (ห้ามชนิดรับประทาน → NG tube)\n2. **Iodide** (SSKI) 1h หลัง PTU (ห้ามให้ก่อน — Wolff-Chaikoff effect)\n3. **Beta-blocker** (Propranolol IV)\n4. **Dexamethasone/Hydrocortisone** (ยับยั้ง T4→T3 + adrenal crisis coverage)\n5. Supportive care (cooling, IV fluid)"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "Levothyroxine ในการตั้งครรภ์",
+          "body_md": "**TSH เป้าหมายในการตั้งครรภ์ (TES/ATA 2023):**\n- ไตรมาส 1: **< 2.5 mIU/L**\n- ไตรมาส 2–3: **< 3.0 mIU/L**\n\n**ข้อสำคัญ:**\n- Hypothyroidism ที่รักษาไม่ดีในตั้งครรภ์ → IQ ต่ำของทารก, แท้ง, ครรภ์เป็นพิษ\n- ความต้องการ LT4 ในตั้งครรภ์ **เพิ่ม 25–50%** → ปรับขนาดทันที\n- ตรวจ TSH ทุก 4–6 สัปดาห์ในไตรมาสแรก"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำการใช้ PTU vs MMI — 'PTU ให้ในสาม P'",
+          "body_md": "**'PTU ให้ใน 3P':**\n- **P**regnancy ไตรมาสแรก (1st trimester)\n- **P**recipitant storm = Thyroid storm\n- **P**TU inhibits T4→T3 Peripherally\n\n**MMI** ใช้ทั่วไป (สะดวกกว่า วันละ 1–2 ครั้ง)\nเปลี่ยนจาก PTU → MMI เมื่อเข้าไตรมาส 2 (เพราะ MMI hepatotoxicity น้อยกว่า PTU)"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Agranulocytosis จากยาต้านไทรอยด์",
+          "body_md": "⚠️ **Agranulocytosis (เม็ดเลือดขาวต่ำรุนแรง):**\n- พบ **0.1–0.5%** ของผู้ใช้ thionamide\n- อาการ: **ไข้สูงเฉียบพลัน, เจ็บคอ, ปวดหัว** ภายใน 3 เดือนแรก\n- **WBC < 500 cells/μL** = agranulocytosis\n\n**การจัดการ:**\n1. **หยุดยาต้านไทรอยด์ทันที**\n2. ตรวจ CBC ทันที\n3. ห้ามให้ thionamide อีกทั้ง MMI และ PTU (cross-reaction ได้)\n4. รักษาตามอาการ, G-CSF อาจพิจารณา\n5. ทางเลือก: Radioactive iodine หรือ ผ่าตัด\n\n**ก่อนใช้ยา:** แนะนำ Baseline CBC และให้ผู้ป่วยทราบอาการเตือน"
+        },
+        {
+          "card_type": "example",
+          "title_th": "กรณีตัวอย่าง: ผู้ป่วยตั้งครรภ์ + Hyperthyroidism",
+          "body_md": "**ผู้ป่วย:** หญิง 28 ปี Graves' disease อายุครรภ์ 8 สัปดาห์ (ไตรมาส 1)\nปัจจุบันใช้ MMI 20 mg/day\n\n**ควรทำอย่างไร?**\n1. **เปลี่ยนจาก MMI → PTU** 100 mg TID\n   - MMI: teratogenic (aplasia cutis, choanal/esophageal atresia ในไตรมาส 1)\n   - PTU: ปลอดภัยกว่าในไตรมาส 1\n\n2. เมื่ออายุครรภ์ **13–16 สัปดาห์** (เข้าไตรมาส 2)\n   → เปลี่ยนกลับเป็น **MMI** (เพราะ PTU มี hepatotoxicity มากกว่าระยะยาว)\n\n3. ติดตาม: TSH/FT4 ทุก 4 สัปดาห์, WBC ของมารดา\n\n4. ทารกแรกเกิด: ตรวจ TSH + thyroid function (thionamide ผ่านรก)"
+        }
+      ]
+    },
+    {
+      "title_th": "โรคต่อมหมวกไต: Cushing Syndrome และ Addison Disease",
+      "subtitle_th": "Adrenal Disorders, Glucocorticoid Replacement & Crisis Management",
+      "icon": "🔴",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "Cushing", "Addison", "cortisol", "hydrocortisone", "dexamethasone",
+        "adrenal crisis", "sick day rules", "steroid", "HPA axis", "aldosterone"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "Cushing Syndrome: ลักษณะและการวินิจฉัย",
+          "body_md": "**Cushing Syndrome** = ภาวะ cortisol สูงเรื้อรัง\n\n**สาเหตุ:**\n- **ACTH-dependent:** Cushing disease (pituitary adenoma, พบบ่อยสุด), Ectopic ACTH (small cell lung ca)\n- **ACTH-independent:** Adrenal adenoma/carcinoma, **Exogenous steroid** (พบบ่อยที่สุดในทางปฏิบัติ)\n\n**อาการ:** Moon face, buffalo hump, central obesity, violaceous striae, proximal myopathy, thin skin, easy bruising, osteoporosis, HTN, DM\n\n**การวินิจฉัย:**\n1. 24h Urine Free Cortisol ↑\n2. Late-night salivary cortisol ↑ (× 2 ครั้ง)\n3. Overnight **1 mg Dexamethasone suppression test**: cortisol ≥ 1.8 μg/dL = ผิดปกติ"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Addison Disease: Primary Adrenal Insufficiency",
+          "body_md": "**กลไก:** ต่อมหมวกไตถูกทำลาย → ขาด **Cortisol + Aldosterone** (ต่างจาก secondary ที่ขาดแต่ cortisol)\n\n**สาเหตุ:** Autoimmune (พบบ่อยสุด), TB, Metastasis, Hemorrhage (Waterhouse-Friderichsen)\n\n**อาการ:**\n- ออ่อนล้า น้ำหนักลด คลื่นไส้\n- ความดันต่ำ (Orthostatic hypotension) — เพราะขาด aldosterone → Na wasting\n- **Hyperpigmentation** (ACTH สูง กระตุ้น melanocyte)\n- Hyponatremia + Hyperkalemia (ขาด aldosterone)\n\n**การรักษา:**\n- **Hydrocortisone** 15–20 mg/day (เช้า 10 mg + กลางวัน 5 mg + เย็น 5 mg)\n- **Fludrocortisone** 0.1 mg/day (ทดแทน aldosterone)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Sick Day Rules: เพิ่มขนาด Steroid ในวันเจ็บป่วย",
+          "body_md": "**ผู้ป่วย Adrenal Insufficiency** ต้องเพิ่มขนาด glucocorticoid ในภาวะ stress:\n\n| สถานการณ์ | การปรับขนาด |\n|---|---|\n| ไข้เล็กน้อย / ไม่สบาย | 2–3× ขนาดปกติ |\n| ไข้ > 38°C / อาเจียน | EM visit / IV hydrocortisone |\n| ผ่าตัดเล็ก | Hydrocortisone 25–50 mg IV perioperatively |\n| ผ่าตัดใหญ่ | Hydrocortisone 50–100 mg IV q8h × 24–48h |\n\n**สิ่งที่ผู้ป่วยต้องมี:**\n- **Medical alert bracelet** \"Adrenal Insufficiency\"\n- **Emergency injection kit** (Hydrocortisone 100 mg IM) พกติดตัว\n- บัตรระบุโรคและขนาดยาฉุกเฉิน"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Adrenal Crisis: การรักษาฉุกเฉิน",
+          "body_md": "**Adrenal Crisis** = อาการรุนแรงเฉียบพลันจาก cortisol ขาดสมบูรณ์\n\n**อาการ:** Shock, ไข้, ปวดท้อง, อาเจียน, ชัก, หมดสติ\n\n**การรักษา (ต้องรีบ ไม่รอผล lab):**\n\n1. **Hydrocortisone 100 mg IV bolus ทันที**\n2. Normal saline 1–2 L ใน 1h แรก (fluid resuscitation)\n3. Dextrose IV ถ้า glucose ต่ำ\n4. ต่อด้วย Hydrocortisone 50–100 mg IV q6–8h × 24h\n5. ลดขนาดลงอย่างช้าๆ เมื่อผู้ป่วยดีขึ้น\n6. ค้นหาและรักษา precipitating cause (infection, etc.)\n\n> ถ้าไม่มี Hydrocortisone → **Dexamethasone 4 mg IV** ก็ได้ (ไม่รบกวน cortisol assay)"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "ผลข้างเคียงของ Steroid ระยะยาว",
+          "body_md": "**การใช้ Glucocorticoid ระยะยาว (> 3 เดือน) ทำให้:**\n\n| ระบบ | ผลข้างเคียง |\n|---|---|\n| กระดูก | Osteoporosis → **แนะนำ Ca + Vit D ทุกราย**, bisphosphonate ถ้าเสี่ยงสูง |\n| ต่อมหมวกไต | **HPA suppression** → ห้ามหยุดยาเร็ว |\n| เมตาบอลิก | Hyperglycemia, Hypertension, Dyslipidemia, Hypokalemia |\n| กล้ามเนื้อ | Proximal myopathy |\n| ตา | Cataract, Glaucoma |\n| ภูมิคุ้มกัน | ↑ ความเสี่ยง infection |\n| ผิวหนัง | Thin skin, Acne, Striae |\n\n**การหยุดยา Steroid:**\n- ถ้าใช้ < 3 สัปดาห์ → หยุดได้เลย\n- ถ้าใช้ > 3 สัปดาห์ → **ต้อง taper ลดขนาดอย่างช้าๆ**"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำอาการ Addison's — 'ABCDE'",
+          "body_md": "**'ABCDE' ของ Addison's:**\n- **A**ddison's/Anorexia, Asthenia (อ่อนล้า)\n- **B**lood pressure ต่ำ (hypotension)\n- **C**ortisol ต่ำ + **C**raving for salt (อยากกินเค็ม — ขาด aldosterone)\n- **D**ark skin (Hyperpigmentation)\n- **E**lectrolytes: ↓Na, ↑K (hyponatremia + hyperkalemia)"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Steroid-Induced Adrenal Suppression: อย่าหยุดยาเร็ว",
+          "body_md": "⚠️ **ผู้ป่วยที่ใช้ Prednisolone ≥ 5 mg/day นาน > 3–4 สัปดาห์:**\n→ HPA axis ถูก suppress → ต่อมหมวกไตฝ่อลง ผลิต cortisol ไม่ได้\n\n**ถ้าหยุดยาเร็ว/เฉียบพลัน:**\n→ **Adrenal crisis** → Shock, ไข้ หมดสติ ตายได้\n\n**การ taper:** ลดขนาดลงช้าๆ (โดยทั่วไป ลด 10–25% ทุก 1–4 สัปดาห์)\n\n**ตัวอย่าง:**\n- ใช้ Prednisolone 30 mg/day นาน 6 เดือน\n- ไม่หยุดทันที → ลดลง 5 mg ทุก 2 สัปดาห์\n- เมื่อถึง 5–7.5 mg → ลดช้าลงมาก เนื่องจาก HPA recovery ช้า\n\n**แจ้งผู้ป่วยและบันทึกในเวชระเบียนเสมอ**"
+        }
+      ]
+    },
+    {
+      "title_th": "โรคกระดูกพรุน: แคลเซียม วิตามิน D และ Bisphosphonate",
+      "subtitle_th": "Osteoporosis: Ca, Vitamin D, Bisphosphonates & RANK-L Inhibitor",
+      "icon": "🦴",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": [
+        "osteoporosis", "bisphosphonate", "alendronate", "denosumab", "RANK-L",
+        "calcium", "vitamin D", "osteonecrosis jaw", "DEXA", "T-score"
+      ],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "การวินิจฉัยโรคกระดูกพรุน: T-score และ FRAX",
+          "body_md": "**วินิจฉัยด้วย DXA (Dual-energy X-ray Absorptiometry):**\n\n| T-score | การแปลผล |\n|---|---|\n| ≥ −1.0 | ปกติ |\n| −1.0 ถึง −2.5 | **Osteopenia** (กระดูกบาง) |\n| ≤ −2.5 | **Osteoporosis** |\n| ≤ −2.5 + กระดูกหัก | **Severe Osteoporosis** |\n\n**FRAX:** เครื่องมือคำนวณความเสี่ยงกระดูกหัก 10 ปี (WHO)\n- ถ้า FRAX hip fracture risk ≥ 3% หรือ major fracture ≥ 20% → แนะนำรักษา\n\n**ตรวจเมื่อ:** ผู้หญิงอายุ ≥ 65 ปี, ผู้ชาย ≥ 70 ปี, หรือผู้ที่มีปัจจัยเสี่ยง"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "แคลเซียมและวิตามิน D: ปริมาณที่ต้องการ",
+          "body_md": "**แคลเซียม:**\n- ผู้ใหญ่ 19–50 ปี: **1,000 mg/day**\n- ผู้ชาย 51–70 ปี: 1,000 mg/day\n- ผู้หญิง 51–70 ปี + ทุกคน > 70 ปี: **1,200 mg/day**\n\n**ชนิดของ Calcium Supplement:**\n| ชนิด | % Ca | กิน |\n|---|---|---|\n| Calcium carbonate | 40% | **พร้อมอาหาร** (ต้องการกรด) |\n| Calcium citrate | 21% | กินเวลาใดก็ได้ (เหมาะในผู้ป่วย achlorhydria, PPI) |\n\n**วิตามิน D:**\n- เป้าหมาย serum 25(OH)D: **≥ 30 ng/mL** (บางแนวทาง ≥ 20)\n- ปริมาณ: **600–800 IU/day** (อาจต้องสูงกว่าในผู้ขาดรุนแรง)\n- D3 (cholecalciferol) ดีกว่า D2 (ergocalciferol) ในการเพิ่ม 25(OH)D"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Bisphosphonate: กลไกและการใช้",
+          "body_md": "**กลไก:** จับ hydroxyapatite บนกระดูก → ยับยั้ง **farnesyl pyrophosphate synthase** ใน osteoclast → osteoclast apoptosis → ↓ bone resorption\n\n**ตัวยา:**\n| ยา | ขนาด/ความถี่ |\n|---|---|\n| Alendronate | 70 mg PO สัปดาห์ละครั้ง |\n| Risedronate | 35 mg PO สัปดาห์ละครั้ง / 150 mg เดือนละครั้ง |\n| Ibandronate | 150 mg PO เดือนละครั้ง / IV ทุก 3 เดือน |\n| Zoledronic acid | 5 mg IV ปีละครั้ง |\n\n**วิธีกิน Oral bisphosphonate:**\n- กินตอน **ท้องว่างในตอนเช้า** ด้วยน้ำเปล่า ≥ 240 mL\n- **อย่านอน ≥ 30–60 นาที** หลังกิน (ป้องกัน esophageal ulcer)\n- งดอาหาร/ยาอื่น ≥ 30 นาที"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Denosumab และ RANK-L Pathway",
+          "body_md": "**RANK-L Pathway:**\n- Osteoblast → ผลิต **RANK-L** → จับ RANK บน osteoclast precursor → กระตุ้น osteoclast maturation → bone resorption\n- **OPG (Osteoprotegerin):** decoy receptor ยับยั้ง RANK-L ตามธรรมชาติ\n\n**Denosumab (Prolia):**\n- **Monoclonal antibody** ต่อ RANK-L → ยับยั้ง osteoclast formation\n- ขนาด: **60 mg SC ทุก 6 เดือน**\n- ข้อดี: ใช้ได้ในไตบกพร่อง (ต่างจาก bisphosphonate)\n- ข้อเสีย: ถ้า **หยุดยาจะเกิด rebound bone loss** อย่างรวดเร็ว → ต้อง transition ไป bisphosphonate\n- **Hypocalcemia** ก่อนฉีดต้องแก้ให้ปกติก่อน"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "การเลือกยาในกลุ่มพิเศษ",
+          "body_md": "**ยาอื่นๆ ในการรักษา Osteoporosis:**\n\n- **Teriparatide (PTH 1-34):** Anabolic → กระตุ้น osteoblast → เพิ่มมวลกระดูก\n  - ใช้ในรายรุนแรง/ล้มเหลวต่อ antiresorptive therapy\n  - ฉีด SC วันละครั้ง, ไม่เกิน **2 ปี** (เพิ่มเสี่ยง osteosarcoma ใน animal studies)\n\n- **Raloxifene (SERM):** กระดูก = estrogen agonist → ↓ vertebral fracture\n  - ป้องกัน breast cancer, แต่เพิ่มเสี่ยง **DVT/PE**\n  - ไม่ลด hip fracture\n\n- **Romosozumab:** Sclerostin antibody → anabolic + antiresorptive\n  - ข้อระวัง: ↑ CV risk (ห้ามใช้ใน recent MI/stroke)"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Osteonecrosis of the Jaw (ONJ) และ Atypical Femur Fracture",
+          "body_md": "**Osteonecrosis of the Jaw (ONJ):**\n- กระดูกขากรรไกรตายจากเนื้อเยื่อไม่ได้รับเลือด\n- เสี่ยงสูงใน: ขนาด IV bisphosphonate สูง (รักษา bone metastasis), ระยะเวลาใช้ยานาน\n- ปัจจัยเพิ่มเสี่ยง: ถอนฟัน, ฟันปลอม, ติดเชื้อในช่องปาก\n\n**การป้องกัน:**\n- ตรวจฟันก่อนเริ่ม bisphosphonate\n- พิจารณาหยุดยา **2–3 เดือนก่อนทำทันตกรรมรุกราน**\n\n**Atypical Femur Fracture (AFF):**\n- กระดูกต้นขาหักในตำแหน่งผิดปกติ (subtrochanteric/diaphyseal)\n- พบเมื่อใช้ bisphosphonate นาน **> 3–5 ปี**\n- อาการเตือน: ปวดต้นขา/ขาหนีบก่อนหัก\n\n**Drug holiday:**\n- หลังใช้ bisphosphonate 3–5 ปี → พิจารณาหยุดยา 1–2 ปีในผู้ที่เสี่ยงต่ำ"
+        },
+        {
+          "card_type": "example",
+          "title_th": "กรณีตัวอย่าง: ผู้ป่วย Steroid-Induced Osteoporosis",
+          "body_md": "**ผู้ป่วย:** หญิง 55 ปี SLE ใช้ Prednisolone 10 mg/day มา 2 ปี\nDXA: T-score spine = −2.8 SD, hip = −2.2 SD\n\n**ควรทำอย่างไร?**\n\n1. **Calcium 1,200 mg/day + Vitamin D 800 IU/day** ทุกราย\n\n2. เนื่องจาก:\n   - T-score ≤ −2.5 (ที่ spine) = Osteoporosis\n   - ใช้ steroid ระยะยาว = เสี่ยงสูง\n   → **เริ่ม Alendronate 70 mg PO สัปดาห์ละครั้ง**\n   (หรือ Zoledronic acid 5 mg IV ปีละครั้ง)\n\n3. ตรวจ DXA ซ้ำทุก **1–2 ปี**\n4. ตรวจ 25(OH)D ก่อนเริ่มและ 3 เดือนหลัง\n5. แนะนำออกกำลังกาย (weight-bearing), งด smoking/alcohol\n6. ตรวจสอบ fall risk"
+        }
       ]
     }
   ]

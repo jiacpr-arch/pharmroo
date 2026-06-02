@@ -1,31 +1,374 @@
 {
   "subject": "Gastrointestinal",
-  "unit": { "title_th": "ทางเดินอาหาร", "description_th": "การจัดการ PUD/GERD การกำจัด H. pylori และยาแก้คลื่นไส้ ท้องเสีย ท้องผูก", "icon": "🫁" },
+  "unit": {
+    "title_th": "ระบบทางเดินอาหาร",
+    "description_th": "ยาสำหรับ GERD, PUD, ท้องเสีย, ท้องผูก, IBD, คลื่นไส้อาเจียน, ตับแข็ง และตับอ่อนอักเสบ สำหรับการสอบใบประกอบวิชาชีพเภสัชกรรม",
+    "icon": "🫁"
+  },
   "lessons": [
     {
-      "title_th": "PUD และ GERD",
-      "subtitle_th": "PPI, H2RA และการกำจัด H. pylori",
+      "title_th": "GERD และยาลดกรด",
+      "subtitle_th": "PPI, H2RA, Antacid — กลไก ข้อแตกต่าง และ ADR สำคัญ",
       "icon": "🔥",
-      "est_minutes": 5,
-      "xp_reward": 10,
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": ["PPI", "H2RA", "omeprazole", "pantoprazole", "famotidine", "hypomagnesemia", "C. difficile", "GERD", "ลดกรด", "antacid"],
       "cards": [
-        { "card_type": "concept", "title_th": "PPI vs H2RA", "body_md": "- **PPI** (omeprazole, pantoprazole): ยับยั้ง H+/K+ ATPase อย่างถาวร ลดกรดได้แรงสุด เป็นยาหลักใน GERD/PUD\n- **H2RA** (famotidine): ยับยั้ง histamine H2 receptor ออกฤทธิ์เร็วแต่อ่อนกว่าและเกิด tolerance\n\nPPI ควรกิน **ก่อนอาหาร 30-60 นาที**" },
-        { "card_type": "concept", "title_th": "การกำจัด H. pylori", "body_md": "สูตร **Triple therapy** 14 วัน:\n1. **PPI** (วันละ 2 ครั้ง)\n2. **Clarithromycin**\n3. **Amoxicillin** (หรือ metronidazole ถ้าแพ้ penicillin)\n\nพื้นที่ดื้อ clarithromycin สูง ใช้ **bismuth quadruple therapy**" },
-        { "card_type": "warning", "title_th": "ผลข้างเคียง PPI ระยะยาว", "body_md": "การใช้ PPI นานๆ สัมพันธ์กับ:\n- **Hypomagnesemia**, ขาด **B12** และ **Ca** (เสี่ยงกระดูกหัก)\n- เพิ่มความเสี่ยง **C. difficile** และปอดอักเสบ\n\nใช้ขนาดต่ำสุดที่จำเป็นและทบทวนการใช้เป็นระยะ" },
-        { "card_type": "tip", "title_th": "ปรับพฤติกรรมใน GERD", "body_md": "- ลดน้ำหนัก งดบุหรี่ แอลกอฮอล์\n- หลีกเลี่ยงอาหารมัน ช็อกโกแลต กาแฟ อาหารรสจัด\n- ยกหัวเตียงสูง ไม่นอนทันทีหลังอาหาร (เว้น 3 ชม.)" }
+        {
+          "card_type": "concept",
+          "title_th": "กลไก PPI (Proton Pump Inhibitor)",
+          "body_md": "PPI ยับยั้ง **H⁺/K⁺-ATPase** (proton pump) บนเซลล์ parietal ของกระเพาะอาหารอย่างถาวร (irreversible covalent binding)\n\n**ยาในกลุ่ม PPI:**\n- Omeprazole, Lansoprazole, Pantoprazole\n- Rabeprazole, Esomeprazole, Dexlansoprazole\n\n**จุดเด่น:** ลดกรดได้มากที่สุด เหมาะกับ GERD, PUD, Zollinger-Ellison syndrome\n\n**วิธีกิน:** กินก่อนอาหาร **30–60 นาที** เพื่อให้ยาออกฤทธิ์เมื่อ proton pump ถูกกระตุ้น"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "กลไก H2RA และ Antacid",
+          "body_md": "**H2 Receptor Antagonist (H2RA):**\n- ยับยั้ง histamine ที่ H2 receptor บนเซลล์ parietal → ลดการหลั่งกรด\n- ยาในกลุ่ม: **Famotidine, Ranitidine, Cimetidine**\n- ออกฤทธิ์เร็วกว่า PPI แต่ประสิทธิภาพน้อยกว่า และเกิด **tachyphylaxis** (tolerance) ได้\n\n**Antacid:**\n- ออกฤทธิ์ต่อเนื่องลดกรด (Al(OH)₃, Mg(OH)₂, CaCO₃)\n- ใช้บรรเทาอาการเฉียบพลัน ผลเร็วแต่สั้น\n- **Al** → ท้องผูก, **Mg** → ท้องเสีย จำง่ายว่า 'AlMa' (Al=ผูก, Mg=ถ่าย)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ข้อแตกต่าง PPI vs H2RA",
+          "body_md": "| ลักษณะ | PPI | H2RA |\n|---|---|---|\n| กลไก | H⁺/K⁺-ATPase (irreversible) | H2 receptor |\n| ประสิทธิภาพ | สูงกว่า | ต่ำกว่า |\n| เวลาออกฤทธิ์ | ช้ากว่า | เร็วกว่า |\n| Tolerance | ไม่เกิด | เกิดได้ (tachyphylaxis) |\n| การใช้ | GERD ระยะยาว, PUD, H. pylori | On-demand, nocturnal acid |\n| ราคา | สูงกว่า | ถูกกว่า |"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ADR สำคัญจากการใช้ PPI ระยะยาว",
+          "body_md": "**ระวัง! การใช้ PPI นานๆ เสี่ยงต่อ:**\n\n1. **Hypomagnesemia** → กล้ามเนื้อกระตุก, อาการทางหัวใจ (QT prolongation)\n2. **ขาด Vitamin B12** → โลหิตจาง, ชาปลายมือ\n3. **ภาวะกระดูกพรุน** (hypocalcemia, ลด Ca absorption)\n4. **Clostridium difficile infection** เพิ่มขึ้นเพราะกรดในกระเพาะลดลง\n5. **Hyponatremia** และ interstitial nephritis (รายงานกรณี)\n\n**หลักการ:** ใช้ขนาดต่ำสุด-ระยะสั้นที่สุดที่จำเป็น ทบทวนทุก 3-6 เดือน"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ ADR ของ PPI ด้วย 'MAGIC B'",
+          "body_md": "**M** – Magnesium (hypomagnesemia)\n**A** – Atrophic gastritis (การใช้นาน)\n**G** – GI infections (C. diff, SIBO)\n**I** – Iron/B12 malabsorption\n**C** – Ca/Bone fracture risk\n**B** – Bioavailability ยาอื่นลดลง (clopidogrel)\n\nจำ: **'MAGIC B' ของ PPI ระยะยาว**"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "การเลือกใช้ยาลดกรดในสถานการณ์ต่างๆ",
+          "body_md": "- **GERD เรื้อรัง/ระยะยาว** → PPI เป็นหลัก\n- **บรรเทาอาการเฉียบพลัน (heartburn)** → Antacid หรือ H2RA\n- **Nocturnal acid breakthrough** → เพิ่ม H2RA ตอนกลางคืน\n- **ผู้ป่วย renal impairment** → ปรับขนาด H2RA (famotidine), PPI ปลอดภัยกว่า\n- **Clopidogrel interaction** → หลีกเลี่ยง omeprazole/esomeprazole (CYP2C19); เลือก pantoprazole แทน"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Rebound Acid Hypersecretion เมื่อหยุด PPI",
+          "body_md": "เมื่อหยุด PPI อย่างกะทันหัน อาจเกิด **rebound acid hypersecretion** ทำให้อาการกลับมาแย่กว่าเดิม\n\n**วิธีแก้:** ค่อยๆ ลดขนาดยา (taper) หรือสลับเป็น H2RA ก่อนหยุด ไม่ควรหยุดทันทีหลังใช้มานาน"
+        }
       ]
     },
     {
-      "title_th": "คลื่นไส้ ท้องเสีย ท้องผูก",
-      "subtitle_th": "Antiemetic, Antidiarrheal, Laxative",
-      "icon": "🤢",
-      "est_minutes": 5,
-      "xp_reward": 10,
+      "title_th": "แผลกระเพาะอาหาร PUD",
+      "subtitle_th": "H. pylori eradication, NSAIDs-induced ulcer, Misoprostol",
+      "icon": "🦠",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": ["H. pylori", "triple therapy", "quadruple therapy", "clarithromycin", "amoxicillin", "bismuth", "misoprostol", "NSAIDs", "PUD", "แผลกระเพาะ"],
       "cards": [
-        { "card_type": "concept", "title_th": "ยาแก้คลื่นไส้อาเจียน", "body_md": "เลือกตามสาเหตุ:\n- **5-HT3 antagonist** (ondansetron): เคมีบำบัด, หลังผ่าตัด\n- **Dopamine antagonist** (metoclopramide, domperidone): gastroparesis\n- **Antihistamine** (dimenhydrinate): เมารถ/เมาเรือ\n\nmetoclopramide เสี่ยง **extrapyramidal symptoms**" },
-        { "card_type": "warning", "title_th": "ORS สำคัญกว่ายาหยุดถ่าย", "body_md": "ในท้องเสียเฉียบพลัน หัวใจคือ **ทดแทนน้ำและเกลือแร่ (ORS)**\n\n**ห้ามใช้ยาหยุดถ่าย (loperamide)** ในกรณี:\n- ถ่ายเป็นมูกเลือด/ไข้สูง (suspected invasive/dysentery)\n- เด็กเล็ก" },
-        { "card_type": "concept", "title_th": "กลุ่มยาระบาย", "body_md": "- **Bulk-forming** (psyllium): เพิ่มกาก ปลอดภัย ใช้ระยะยาว\n- **Osmotic** (lactulose, PEG, milk of magnesia)\n- **Stimulant** (senna, bisacodyl): ใช้ระยะสั้น\n- **Stool softener** (docusate)\n\nเริ่มจากปรับอาหาร ใยอาหาร และน้ำก่อน" },
-        { "card_type": "mnemonic", "title_th": "loperamide vs bismuth", "body_md": "จำง่ายๆ\n- **Loperamide** = opioid agonist ที่ลำไส้ ลดการเคลื่อนไหว → หยุดถ่าย\n- **Bismuth subsalicylate** = antisecretory + เคลือบ ทำให้**ลิ้น/อุจจาระดำ** (ไม่อันตราย แต่ต้องรู้เพื่อไม่สับสนกับเลือดออก)" }
+        {
+          "card_type": "concept",
+          "title_th": "H. pylori Eradication — Triple Therapy",
+          "body_md": "**สูตรมาตรฐาน Triple Therapy (14 วัน):**\n- **PPI** (วันละ 2 ครั้ง)\n- **Clarithromycin** 500 mg วันละ 2 ครั้ง\n- **Amoxicillin** 1 g วันละ 2 ครั้ง\n\n**ถ้าแพ้ penicillin:** แทน amoxicillin ด้วย **Metronidazole** 500 mg วันละ 2 ครั้ง\n\n**อัตราสำเร็จ:** 70–85% (ขึ้นกับการดื้อยา clarithromycin ในพื้นที่)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Bismuth Quadruple Therapy",
+          "body_md": "ใช้เมื่อดื้อ clarithromycin หรือในพื้นที่ที่ดื้อยาสูง:\n\n**Bismuth Quadruple Therapy (14 วัน):**\n- **Bismuth subcitrate/subsalicylate** 120 mg วันละ 4 ครั้ง\n- **Tetracycline** 500 mg วันละ 4 ครั้ง\n- **Metronidazole** 500 mg วันละ 3 ครั้ง\n- **PPI** วันละ 2 ครั้ง\n\n**ข้อดี:** อัตราสำเร็จสูงกว่า ใช้ได้แม้ดื้อ clarithromycin\n**ข้อเสีย:** กินยาหลายเม็ด compliance ยาก"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "NSAIDs-Induced Ulcer — กลไกและป้องกัน",
+          "body_md": "**กลไก:** NSAIDs ยับยั้ง COX-1 → ลด prostaglandin → เยื่อบุกระเพาะสูญเสียการปกป้อง → เกิดแผล\n\n**ปัจจัยเสี่ยงที่ต้องป้องกัน GI:**\n- อายุ > 65 ปี\n- ประวัติแผลกระเพาะ/เลือดออก GI\n- ใช้ยาหลายตัวพร้อมกัน (corticosteroid, anticoagulant)\n- NSAIDs ขนาดสูงหรือระยะยาว\n\n**การป้องกัน:**\n- ใช้ **PPI** ร่วม (gastroprotection)\n- เลือก **selective COX-2 inhibitor** (celecoxib) — เสี่ยง GI น้อยกว่า\n- ใช้ **Misoprostol** (prostaglandin analog)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Misoprostol — กลไกและการใช้",
+          "body_md": "**Misoprostol** เป็น **PGE1 analog** ทำงานโดย:\n- กระตุ้น prostaglandin receptor → เพิ่ม mucus และ bicarbonate\n- ลดการหลั่งกรด\n\n**ข้อบ่งใช้:**\n- ป้องกัน NSAIDs-induced ulcer ในผู้ป่วยเสี่ยงสูง\n- ใช้ร่วมกับ NSAIDs (เช่น diclofenac+misoprostol)\n\n**ADR สำคัญ:**\n- ท้องเสีย (dose-related), ปวดท้อง\n- **ห้ามใช้ในหญิงมีครรภ์** (กระตุ้นมดลูก → แท้ง)"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "ยืนยันผลการรักษา H. pylori",
+          "body_md": "**การตรวจยืนยันการกำจัด H. pylori หลังรักษา:**\n- หยุดยา PPI อย่างน้อย **2 สัปดาห์** และ antibiotics อย่างน้อย **4 สัปดาห์** ก่อนตรวจ\n- วิธีที่แนะนำ: **Urea Breath Test (UBT)** หรือ **Stool antigen test**\n- ไม่แนะนำ serology (IgG ยังบวกได้หลังรักษา)\n\nตรวจยืนยันหลังการรักษา **4–6 สัปดาห์**"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำสูตร Triple Therapy ด้วย 'PCA'",
+          "body_md": "**P** = PPI\n**C** = Clarithromycin\n**A** = Amoxicillin\n\nจำว่า **PCA** (เหมือน Patient-Controlled Analgesia แต่คนละเรื่อง!)\n\n**ถ้าแพ้ A:** เปลี่ยน A → **M** (Metronidazole) → สูตรกลายเป็น **PCM**\n\n**Bismuth quad = PPI + B(ismuth) + T(etracycline) + M(etronidazole)** = 'PBTM'"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ระวัง! Clarithromycin Drug Interactions",
+          "body_md": "Clarithromycin เป็น **CYP3A4 inhibitor** → เพิ่มระดับยาหลายชนิด:\n\n- **Statins** (simvastatin, lovastatin) → เสี่ยง myopathy/rhabdomyolysis\n- **Warfarin** → INR สูงขึ้น\n- **Colchicine** → พิษเพิ่ม\n- **QT-prolonging drugs** → เสี่ยง arrhythmia\n\n**ควรทบทวนยาทั้งหมดก่อนสั่ง clarithromycin**"
+        }
+      ]
+    },
+    {
+      "title_th": "ท้องผูก ท้องเสีย และ IBS",
+      "subtitle_th": "ยาระบาย, Loperamide, IBS-C vs IBS-D",
+      "icon": "💊",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": ["loperamide", "ท้องผูก", "ท้องเสีย", "IBS-C", "IBS-D", "psyllium", "lactulose", "senna", "bisacodyl", "ORS"],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "กลุ่มยาระบาย — แบ่งตามกลไก",
+          "body_md": "**1. Bulk-forming:** Psyllium, Methylcellulose\n- ดูดน้ำ → อุจจาระนิ่มและปริมาณมากขึ้น\n- ปลอดภัย ใช้ระยะยาวได้ → **เลือกใช้ก่อน**\n- ต้องดื่มน้ำมากพอ มิฉะนั้นอุดตัน\n\n**2. Osmotic:** Lactulose, PEG (Polyethylene glycol), Mg(OH)₂\n- ดึงน้ำเข้า lumen → อุจจาระนิ่ม\n\n**3. Stimulant:** Senna, Bisacodyl\n- กระตุ้นการเคลื่อนไหวลำไส้\n- ใช้ระยะสั้นเท่านั้น (ใช้นาน → laxative dependence)\n\n**4. Stool softener:** Docusate\n- ทำให้อุจจาระนิ่ม (ลด surface tension)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Loperamide — กลไกและข้อห้ามใช้",
+          "body_md": "**Loperamide** เป็น **opioid agonist** ที่ลำไส้ (ไม่ผ่าน BBB จึงไม่มีฤทธิ์ต่อ CNS)\n- ลดการเคลื่อนไหวของลำไส้ (motility)\n- เพิ่มการดูดซึมน้ำและอิเล็กโทรไลต์\n- ลดการหลั่ง (antisecretory)\n\n**ข้อห้ามใช้ Loperamide:**\n- ถ่ายเป็นมูกเลือด หรือมีไข้สูง (dysentery/invasive diarrhea)\n- สงสัย C. difficile colitis\n- เด็กอายุ < 2 ปี\n- ผู้ป่วย IBD เฉียบพลัน (เสี่ยง toxic megacolon)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "IBS — ประเภทและยาที่เลือก",
+          "body_md": "**IBS (Irritable Bowel Syndrome)** แบ่งตามลักษณะการถ่าย:\n\n**IBS-C (Constipation predominant):**\n- Fiber supplement, PEG\n- **Lubiprostone** (chloride channel activator → เพิ่มน้ำใน lumen)\n- **Linaclotide, Plecanatide** (guanylate cyclase agonist)\n- **Tegaserod** (5-HT4 agonist — จำกัดการใช้)\n\n**IBS-D (Diarrhea predominant):**\n- **Loperamide** (ลด motility)\n- **Rifaximin** (ยาปฏิชีวนะ non-systemic สำหรับ IBS-D ที่มี SIBO)\n- **Alosetron** (5-HT3 antagonist — เฉพาะหญิง IBS-D รุนแรง)"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "ORS สำคัญที่สุดในท้องเสียเฉียบพลัน",
+          "body_md": "**หลักการรักษาท้องเสียเฉียบพลัน:**\n\n**อันดับ 1:** ทดแทนน้ำและเกลือแร่ด้วย **ORS (Oral Rehydration Solution)**\n- สูตร WHO: Na 75 mEq/L, K 20 mEq/L, Glucose 75 mmol/L\n- ดีกว่าน้ำเกลือธรรมดาเพราะมี glucose ช่วย co-transport Na\n\n**อันดับ 2:** ค่อยพิจารณายาหยุดถ่ายหรือ antibiotics ตามสาเหตุ\n\n**Zinc supplement** ในเด็ก (อายุ < 5 ปี) ลดความรุนแรงและความถี่ได้"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ Al vs Mg ใน antacid ด้วย 'AlMa'",
+          "body_md": "**Al**uminum → **ผูก** (ท้องผูก)\n**Ma**gnesium → **ถ่าย** (ท้องเสีย)\n\nจำว่า **Al-Ma**: Al ไม่ปล่อยออก (ผูก), Ma ปล่อยออก (ถ่าย)\n\nในยาที่ผสมทั้งคู่ (เช่น Maalox, Amphojel) ฤทธิ์จะสมดุล ไม่ค่อยท้องผูกหรือท้องเสีย"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Bisacodyl และ Stimulant Laxative — ระวังการใช้เกิน",
+          "body_md": "**ห้ามใช้ Stimulant laxative ระยะยาว** เพราะ:\n- เกิด **laxative dependence** — ลำไส้เสพติดการกระตุ้น\n- ลำไส้สูญเสียความสามารถบีบตัวเอง (**cathartic colon**)\n- เสีย electrolyte (hypokalemia, hyponatremia)\n\n**ใช้เพื่อเตรียมลำไส้ก่อนตรวจ หรือท้องผูกเฉียบพลันระยะสั้นเท่านั้น**"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Bisacodyl — ห้ามบดเม็ดยาเคลือบ",
+          "body_md": "Bisacodyl ชนิดรับประทานเป็น **enteric-coated tablet** ออกแบบให้ละลายในลำไส้เล็ก\n\n**ห้าม:**\n- บดหรือเคี้ยว (จะระคายเคืองกระเพาะ)\n- กินร่วมกับนม/antacid (ทำให้ enteric coat ละลายเร็วในกระเพาะ)\n\n**Bisacodyl suppository** ออกฤทธิ์เร็วกว่า (15-60 นาที) เหมาะกับท้องผูกเฉียบพลัน"
+        }
+      ]
+    },
+    {
+      "title_th": "โรคลำไส้อักเสบ IBD",
+      "subtitle_th": "Crohn's Disease และ Ulcerative Colitis — 5-ASA, Steroid, Biologic",
+      "icon": "🦠",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": ["5-ASA", "mesalamine", "azathioprine", "infliximab", "adalimumab", "Crohn", "Ulcerative Colitis", "corticosteroid", "biologic", "anti-TNF"],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "UC vs Crohn's Disease — ความแตกต่างหลัก",
+          "body_md": "| ลักษณะ | Ulcerative Colitis (UC) | Crohn's Disease |\n|---|---|---|\n| บริเวณ | Colon และ rectum (continuous) | ทุกส่วน GI (skip lesion) |\n| ชั้นที่อักเสบ | Mucosa เท่านั้น | Full-thickness (transmural) |\n| อาการ | ถ่ายเป็นเลือด mucus | ปวดท้อง ท้องเสีย ไม่มี mucus |\n| ภาวะแทรกซ้อน | Toxic megacolon | Fistula, stricture, abscess |\n| ตอบสนองต่อ 5-ASA | ดี | น้อยกว่า (Crohn ลำไส้เล็กไม่ค่อยตอบ) |"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "5-ASA (Aminosalicylate) — กลไกและการใช้",
+          "body_md": "**5-Aminosalicylic acid (5-ASA)** หรือ Mesalamine:\n- กลไก: ยับยั้ง COX และ LOX → ลดการสร้าง prostaglandin และ leukotriene ในเยื่อบุลำไส้\n- **ยาหลักใน UC** ทั้ง induction และ maintenance of remission\n- ใน Crohn's มีบทบาทน้อยกว่า\n\n**รูปแบบยา:**\n- Mesalamine oral (ชนิด pH-dependent, time-dependent release)\n- Mesalamine enema/suppository (สำหรับ distal UC/proctitis)\n- Sulfasalazine (5-ASA + sulfapyridine): ราคาถูก แต่ ADR จาก sulfapyridine มาก (headache, oligospermia)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Corticosteroid และ Steroid-Sparing Agents",
+          "body_md": "**Corticosteroid:**\n- Prednisone, Methylprednisolone: ใช้ช่วง **flare/induction** เท่านั้น\n- **Budesonide**: ผ่านตับ first-pass สูง ผลข้างเคียง systemic น้อยกว่า เหมาะ Crohn ลำไส้เล็ก/ขึ้น-ลง\n- **ห้ามใช้ steroid ระยะยาวเพื่อ maintenance** (เสี่ยง adrenal suppression, osteoporosis)\n\n**Steroid-Sparing (Immunomodulators):**\n- **Azathioprine (AZA) / 6-Mercaptopurine (6-MP):** กด immune, ใช้ maintenance\n  - ต้องตรวจ **TPMT activity** ก่อนใช้ (ถ้า TPMT ต่ำ → ยาสะสม → myelosuppression)\n- **Methotrexate:** Crohn's ที่ไม่ตอบสนอง AZA"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Biologic Therapy — Anti-TNF และอื่นๆ",
+          "body_md": "**Anti-TNF-α:**\n- **Infliximab** (IV): Crohn's และ UC ปานกลาง-รุนแรง\n- **Adalimumab** (SC): ทั้ง Crohn's และ UC\n- **Certolizumab pegol**: Crohn's\n- **Golimumab**: UC\n\n**ยา Biologic อื่น:**\n- **Vedolizumab** (anti-integrin α4β7): selective GI action ปลอดภัยกว่า\n- **Ustekinumab** (anti-IL-12/23): Crohn's ที่ดื้อ anti-TNF\n\n**ก่อนเริ่ม Biologic:** ต้องคัดกรอง TB (TST/IGRA), Hepatitis B, ตรวจ CBC"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ระวัง! Azathioprine/6-MP — TPMT และ Myelosuppression",
+          "body_md": "**Azathioprine → 6-MP → 6-Thioguanine nucleotides (6-TGN)** โดยเอนไซม์ TPMT\n\n**TPMT (Thiopurine Methyltransferase):**\n- ถ้า TPMT **ต่ำ/ไม่มี** → 6-TGN สะสมมาก → **myelosuppression รุนแรง**\n- ต้องตรวจ TPMT ก่อนเริ่มยา หรือเริ่มขนาดต่ำมากๆ\n\n**ติดตาม CBC ทุก 1-3 เดือน**\n\nยังเพิ่มเสี่ยง **lymphoma** และ **non-melanoma skin cancer** จากการกด immune ระยะยาว"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "Strategy 'Step-Up' vs 'Top-Down' ใน IBD",
+          "body_md": "**Step-Up (traditional):**\n5-ASA → Steroid → Immunomodulator → Biologic\n- เริ่มง่ายสุด ปรับขึ้นถ้าไม่ตอบ\n\n**Top-Down (aggressive):**\nเริ่ม Biologic ± Immunomodulator ทันทีในรายที่รุนแรง\n- ป้องกัน complication และ damage ได้ดีกว่า\n- ใช้ใน Crohn's ที่รุนแรง หรือมี poor prognostic factors\n\n**Combination therapy (biologic + immunomodulator)** ลด immunogenicity (anti-drug antibody) และผลดีกว่า monotherapy"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ IBD Therapy Pyramid ด้วย '5-S-I-B'",
+          "body_md": "**5** = **5-ASA** (mesalamine) — ฐานสำหรับ UC\n**S** = **Steroid** (induction เท่านั้น ไม่ใช้ maintenance)\n**I** = **Immunomodulator** (Azathioprine/6-MP — maintenance, steroid-sparing)\n**B** = **Biologic** (anti-TNF, vedolizumab, ustekinumab — รายรุนแรง/ดื้อยา)\n\nจำ **5-SIB** (Five Step Into Biologic) = บันได 4 ขั้นของการรักษา IBD\n\n**TPMT ก่อนเริ่ม I**, **TB screen ก่อนเริ่ม B**"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ข้อห้ามใช้ Anti-TNF",
+          "body_md": "**ห้ามใช้ Anti-TNF ในกรณีต่อไปนี้:**\n- **Active TB** หรือ untreated latent TB\n- **Active serious infection** (sepsis)\n- **ภาวะหัวใจล้มเหลว NYHA class III-IV** (infliximab)\n- มะเร็งที่ยังรักษาไม่หาย\n- **Demyelinating disease** (MS)\n\nต้องฉีดวัคซีนให้ครบ (live vaccine ห้ามให้ขณะใช้ยา) ก่อนเริ่ม biologic"
+        }
+      ]
+    },
+    {
+      "title_th": "คลื่นไส้อาเจียนและ CINV",
+      "subtitle_th": "Antiemetic: Metoclopramide, Ondansetron, Dexamethasone และการป้องกัน CINV",
+      "icon": "🤢",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": ["metoclopramide", "ondansetron", "dexamethasone", "CINV", "aprepitant", "5-HT3 antagonist", "NK1 antagonist", "คลื่นไส้", "antiemetic", "dopamine antagonist"],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "กลไก Antiemetic แบ่งตามประเภท",
+          "body_md": "| กลุ่ม | ยา | กลไก | ข้อบ่งใช้ |\n|---|---|---|---|\n| 5-HT3 antagonist | Ondansetron, Granisetron | ยับยั้ง 5-HT3 receptor | CINV, PONV |\n| Dopamine antagonist | Metoclopramide, Domperidone | ยับยั้ง D2 receptor | Gastroparesis, GERD |\n| NK1 antagonist | Aprepitant, Fosaprepitant | ยับยั้ง Substance P/NK1 | CINV (highly emetogenic) |\n| Antihistamine | Dimenhydrinate, Promethazine | ยับยั้ง H1 | Motion sickness |\n| Corticosteroid | Dexamethasone | หลายกลไก | CINV (ร่วม) |\n| Cannabinoid | Dronabinol | CB1 agonist | CINV refractory |"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Metoclopramide — ADR สำคัญ",
+          "body_md": "**Metoclopramide** เป็น **dopamine D2 antagonist** และ 5-HT4 agonist:\n- เพิ่ม GI motility (prokinetic)\n- ลดคลื่นไส้\n\n**ADR สำคัญ:**\n- **Extrapyramidal symptoms (EPS):** akathisia, dystonia, tardive dyskinesia\n  - พบในผู้สูงอายุ, เด็ก, หรือขนาดสูง\n  - รักษา acute dystonia ด้วย diphenhydramine IV\n- **Hyperprolactinemia** → galactorrhea, gynecomastia\n\n**ระวัง:** ห้ามใช้เกิน 3 เดือน (เสี่ยง tardive dyskinesia ถาวร)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "การป้องกัน CINV — ตามระดับความเสี่ยง",
+          "body_md": "**CINV (Chemotherapy-Induced Nausea and Vomiting)** แบ่งเป็น:\n- Acute: 0-24 ชม. หลังให้ยา\n- Delayed: 24-120 ชม. หลังให้ยา\n- Anticipatory: ก่อนรับยา (conditioned response)\n\n**High emetic risk (เช่น cisplatin):**\n→ **Triple therapy:** 5-HT3 antagonist + NK1 antagonist (aprepitant) + Dexamethasone\n\n**Moderate emetic risk (เช่น carboplatin):**\n→ **Double therapy:** 5-HT3 antagonist + Dexamethasone\n\n**Low risk:** Dexamethasone หรือ metoclopramide"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Ondansetron — การใช้และข้อควรระวัง",
+          "body_md": "**Ondansetron** (5-HT3 antagonist) ใช้กว้างขวางที่สุดใน:\n- CINV, PONV (postoperative N&V)\n- N&V จากยาหรือสาเหตุอื่น\n\n**ข้อควรระวัง:**\n- ยืด **QT interval** → ระวังในผู้ที่ใช้ยา QT-prolonging ร่วม\n- ขนาดสูง IV → เสี่ยง **serotonin syndrome** (ถ้าใช้ร่วม serotonergic drugs)\n- **Constipation** เป็น ADR ที่พบบ่อย\n\n**ปฏิกิริยายา:** apomorphine — ห้ามใช้ร่วม (hypotension รุนแรง)"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "Dexamethasone — บทบาทใน CINV",
+          "body_md": "**Dexamethasone** เป็นส่วนสำคัญของ CINV protocol ทุกระดับ\n- กลไกยังไม่ชัดเจน แต่เพิ่มประสิทธิภาพ 5-HT3 antagonist อย่างมีนัยสำคัญ\n- ให้ก่อนเคมีบำบัด 30 นาที และ delayed phase\n- ขนาด: 8–20 mg วันแรก, 4–8 mg วันถัดมา\n\n**ระวัง:** ผู้ป่วย DM (น้ำตาลขึ้น), ติดเชื้อ (กดภูมิ), และผู้ป่วยที่ใช้ยา steroid อยู่แล้ว"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ CINV Triple Therapy ด้วย 'A-5-D'",
+          "body_md": "**A** = Aprepitant (NK1 antagonist)\n**5** = 5-HT3 antagonist (Ondansetron)\n**D** = Dexamethasone\n\nใน **highly emetogenic** เคมีบำบัด → ต้องครบ **A-5-D**\n\nถ้า moderate → ตัด A ออก → **5-D** ก็พอ\nถ้า low → **D** อย่างเดียวพอ"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Metoclopramide กับ EPS ในผู้สูงอายุ",
+          "body_md": "**ผู้สูงอายุเสี่ยง EPS สูงมาก** จากการใช้ metoclopramide\n\n**อาการ EPS:**\n- Akathisia: กระสับกระส่าย นั่งนิ่งไม่ได้\n- Dystonia: กล้ามเนื้อเกร็งกะทันหัน\n- Parkinsonism: อาการคล้าย Parkinson\n- Tardive dyskinesia (ถ้าใช้นาน): การเคลื่อนไหวซ้ำๆ ที่ควบคุมไม่ได้\n\n**ใน Beers Criteria (AGS):** metoclopramide ระวังใช้ในผู้สูงอายุ\n**ทางเลือกในผู้สูงอายุ:** Ondansetron, Domperidone (ผ่าน BBB น้อยกว่า)"
+        }
+      ]
+    },
+    {
+      "title_th": "ตับแข็งและภาวะแทรกซ้อน",
+      "subtitle_th": "Ascites, Hepatic Encephalopathy, Variceal Bleeding",
+      "icon": "🫀",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": ["lactulose", "spironolactone", "furosemide", "propranolol", "hepatic encephalopathy", "ascites", "variceal bleeding", "rifaximin", "ตับแข็ง", "albumin"],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "Ascites — การรักษาด้วยยา",
+          "body_md": "**Ascites** เกิดจากความดันในพอร์ทัลสูง + hypoalbuminemia + ไตกักเก็บ Na/น้ำ\n\n**การรักษา:**\n1. **จำกัด Na** < 2 g/วัน (2000 mg)\n2. **Spironolactone** (aldosterone antagonist): ยาหลัก เพราะตับแข็งมี hyperaldosteronism\n   - ขนาด: เริ่ม 100 mg/วัน สูงสุด 400 mg/วัน\n3. **Furosemide** (loop diuretic): ใช้ร่วมกับ spironolactone\n   - อัตราส่วน **spironolactone:furosemide = 100:40** (เพื่อรักษาสมดุล K)\n4. **Large Volume Paracentesis (LVP):** ถ้าน้ำมาก ต้องให้ **albumin IV 6–8 g/L ที่ระบาย** ป้องกัน paracentesis-induced circulatory dysfunction"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Hepatic Encephalopathy — Lactulose และ Rifaximin",
+          "body_md": "**Hepatic Encephalopathy (HE)** เกิดจาก NH₃ สะสม (จากแบคทีเรียใน colon)\n\n**Lactulose:**\n- Non-absorbable disaccharide → ลด pH ใน colon\n- NH₃ เปลี่ยนเป็น NH₄⁺ (ไม่ถูกดูดซึม) → ขับออกทางอุจจาระ\n- ปรับขนาดให้ถ่าย **2–3 ครั้ง/วัน** (ถ่ายมากเกิน → hypokalemia, dehydration)\n\n**Rifaximin 550 mg วันละ 2 ครั้ง:**\n- ยาปฏิชีวนะที่ไม่ถูกดูดซึม → ลดแบคทีเรียใน colon\n- ใช้ร่วมกับ lactulose เพื่อป้องกัน HE recurrence"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Variceal Bleeding — การป้องกันและรักษา",
+          "body_md": "**Primary Prevention (ป้องกันครั้งแรก):**\n- **Propranolol** หรือ Carvedilol (non-selective beta-blocker)\n- กลไก: ลด cardiac output (β1) + vasodilation splanchnic (β2) → ลด portal pressure\n- เป้าหมาย: heart rate 55–60 bpm\n\n**Acute Variceal Bleeding:**\n- **Octreotide** หรือ **Terlipressin** (vasoconstrictor ลด splanchnic blood flow)\n- Endoscopic band ligation (EVL)\n- Antibiotics (norfloxacin/ceftriaxone) ป้องกัน SBP\n\n**Secondary Prevention:** Propranolol + EVL"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "Spontaneous Bacterial Peritonitis (SBP) — การวินิจฉัยและรักษา",
+          "body_md": "**SBP** = การติดเชื้อในน้ำท้องโดยไม่มีสาเหตุชัดเจน\n\n**วินิจฉัย:** PMN ≥ **250 cells/mm³** จาก ascitic fluid\n\n**รักษา:** Cefotaxime IV 5–10 วัน\n**ป้องกัน SBP recurrence:** Norfloxacin 400 mg/วัน\n\n**ให้ albumin IV** ร่วมกับ antibiotic (1.5 g/kg วันที่ 1, 1 g/kg วันที่ 3) → ลด hepatorenal syndrome\n\n**ป้องกันครั้งแรก:** ผู้ป่วยตับแข็งที่ protein ในน้ำท้อง < 1.5 g/dL + มีความเสี่ยง → ให้ prophylactic norfloxacin"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำอัตราส่วน Spironolactone:Furosemide = 100:40",
+          "body_md": "จำง่ายๆ ว่า **'สอง ห้า'** หรือ **100:40**\n\n- เหตุผล: spironolactone กัก K, furosemide สูญเสีย K → สมดุล\n- ถ้าให้ furosemide มากเกิน → hypokalemia\n- ถ้าให้ spironolactone มากเกิน → hyperkalemia\n\n**ติดตาม:** Electrolyte, creatinine ทุก 1–2 สัปดาห์แรก"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ห้ามใช้ NSAIDs และ aminoglycosides ในตับแข็ง",
+          "body_md": "**ยาที่อันตรายในตับแข็ง:**\n\n**NSAIDs:**\n- ลด renal prostaglandin → ไตหดตัว → precipitate hepatorenal syndrome (HRS)\n- ห้ามใช้โดยเด็ดขาดในตับแข็งที่มี ascites\n\n**Aminoglycoside antibiotics:**\n- Nephrotoxic → เสี่ยง AKI และ HRS\n\n**Sedatives/Opioids:** สะสมได้ง่าย → precipitate HE\n\n**Acetaminophen:** ใช้ได้แต่ต้องลดขนาด ≤ 2 g/วัน ในตับแข็ง"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Terlipressin — ADR และข้อควรระวัง",
+          "body_md": "**Terlipressin** (vasopressin analog) ใช้ใน:\n- Acute variceal bleeding\n- Hepatorenal syndrome type 1\n\n**ADR สำคัญ:**\n- Vasoconstriction ทั่วร่างกาย → ischaemia (หัวใจ, นิ้ว, ลำไส้)\n- Hyponatremia (ADH-like effect)\n- Bradycardia, hypertension\n\n**ระวัง:** ผู้ป่วยโรคหัวใจ, หลอดเลือดส่วนปลาย, ความดันโลหิตสูงที่คุมไม่ได้"
+        }
+      ]
+    },
+    {
+      "title_th": "ยาระบายและ Opioid-Induced Constipation",
+      "subtitle_th": "PEG, Lactulose, Lubiprostone, Methylnaltrexone, Naloxegol",
+      "icon": "💉",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": ["polyethylene glycol", "PEG", "lubiprostone", "methylnaltrexone", "naloxegol", "opioid-induced constipation", "OIC", "linaclotide", "ท้องผูก", "PAMORA"],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "Opioid-Induced Constipation (OIC) — กลไกและปัญหา",
+          "body_md": "Opioid จับ **μ-opioid receptor ใน GI tract** → ลด intestinal motility, เพิ่ม absorption น้ำ → ท้องผูก\n\n**OIC ต่างจากท้องผูกทั่วไป:**\n- ไม่ค่อยตอบสนองต่อ bulk-forming หรือ osmotic laxative เพียงอย่างเดียว\n- ยาระบาย stimulant (senna) อาจช่วยได้บ้าง แต่ไม่พอสำหรับรายรุนแรง\n- จำเป็นต้องใช้ **PAMORA (Peripherally Acting Mu-Opioid Receptor Antagonist)**\n\n**OIC ที่ไม่รักษา:** ลด adherence ต่อ opioid therapy ส่งผลเสียต่อ pain control"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "PAMORA — Methylnaltrexone และ Naloxegol",
+          "body_md": "**PAMORA** ยับยั้ง μ-receptor ใน GI โดยไม่ผ่าน BBB → ไม่ลดผล analgesic ของ opioid\n\n**Methylnaltrexone (Relistor):**\n- SC injection\n- ใช้ใน OIC ในผู้ป่วย palliative care ที่ตอบสนองไม่ดีต่อ laxative\n- ออกฤทธิ์เร็ว (ใน 4 ชั่วโมง)\n\n**Naloxegol (Movantik):**\n- รับประทาน (oral)\n- PEGylated naloxone → ผ่าน BBB น้อยมาก\n- ใช้ใน OIC ในผู้ป่วยที่ใช้ opioid เรื้อรัง ไม่ใช่ cancer pain\n\n**Naldemedine:** อีกทางเลือก oral PAMORA"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Polyethylene Glycol (PEG) — ยาระบาย Osmotic",
+          "body_md": "**PEG (Macrogol)** เป็น osmotic laxative ที่ไม่ถูกดูดซึม:\n- ดึงน้ำเข้า lumen → อุจจาระนิ่มและปริมาณเพิ่ม\n- ปลอดภัย ใช้ระยะยาวได้ ไม่เกิด electrolyte imbalance (ที่ขนาดรักษา)\n- เหมาะสำหรับเด็ก ผู้สูงอายุ และหญิงมีครรภ์\n\n**PEG ขนาดสูง (GoLYTELY/NuLYTELY):** ใช้เตรียมลำไส้ก่อนส่องกล้อง colonoscopy\n\n**Lactulose** ต่างจาก PEG:\n- Lactulose ถูก ferment โดยแบคทีเรีย → gas, bloating เป็น ADR ที่พบบ่อย\n- PEG gas/bloating น้อยกว่า"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Lubiprostone และ Linaclotide — Secretagogue",
+          "body_md": "**Lubiprostone:**\n- กลไก: กระตุ้น **ClC-2 chloride channel** ใน epithelial cell → เพิ่มการหลั่ง Cl⁻ และน้ำ → อุจจาระนิ่ม\n- ข้อบ่งใช้: **IBS-C**, chronic idiopathic constipation, OIC จาก non-cancer\n- ADR: คลื่นไส้ (ลดได้โดยกินพร้อมอาหาร), ท้องเสีย\n- **ห้ามใช้ในหญิงมีครรภ์** (คล้าย misoprostol — กระตุ้น smooth muscle)\n\n**Linaclotide/Plecanatide:**\n- กลไก: กระตุ้น **guanylate cyclase-C (GC-C)** → เพิ่ม cGMP → เพิ่มการหลั่ง Cl⁻ และ HCO₃⁻ → ลด visceral pain + ระบาย\n- ใช้ใน IBS-C และ chronic constipation"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "เลือกยาระบายตาม Algorithm",
+          "body_md": "**ท้องผูกทั่วไป (Chronic Idiopathic Constipation):**\n1. ปรับ lifestyle: fiber, น้ำ, ออกกำลังกาย\n2. Bulk-forming (psyllium)\n3. Osmotic (PEG หรือ lactulose)\n4. ถ้าไม่ตอบ: Stimulant (senna, bisacodyl) ระยะสั้น\n5. Secretagogue (lubiprostone, linaclotide)\n\n**Opioid-Induced Constipation (OIC):**\n1. Stimulant laxative (senna ± docusate) — ให้พร้อม opioid เลย\n2. ถ้าไม่ตอบ: เพิ่ม osmotic\n3. ถ้ายังไม่ตอบ: PAMORA (methylnaltrexone หรือ naloxegol)"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำกลไก Secretagogue ด้วย 'ClG'",
+          "body_md": "**Cl**C-2 → **Lubiprostone** (คล้าย Cl = lubiprostone)\n**G**C-C → **Linaclotide/Plecanatide** (G = guanylate cyclase)\n\nหรือจำว่า:\n- **'Lubi'** = ช่อง **Cl**อไรด์\n- **'Lina'** = กระตุ้น **guanylate** cyclase\n\nทั้งคู่เพิ่มน้ำใน lumen → ระบาย ลด visceral pain"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ระวัง! PAMORA อาจทำให้เกิด Opioid Withdrawal",
+          "body_md": "แม้ PAMORA ออกแบบให้ไม่ผ่าน BBB แต่ในผู้ป่วยที่ **BBB บกพร่อง** (เช่น brain tumor, meningitis, septic encephalopathy) อาจเกิด opioid withdrawal ได้\n\n**อาการ Opioid Withdrawal:**\n- ปวด, กระสับกระส่าย, ท้องเสีย, เหงื่อออก, ขนลุก\n\n**ระวังเพิ่มเติม:**\n- ห้ามใช้ methylnaltrexone ในผู้ป่วย GI obstruction (ระบายแล้วเจ็บได้)\n- ติดตามอาการ pain control ว่าไม่ลดลงหลังให้ PAMORA"
+        }
+      ]
+    },
+    {
+      "title_th": "Pancreatitis เฉียบพลัน",
+      "subtitle_th": "การรักษาประคับประคอง, Pain Control, การป้องกัน",
+      "icon": "🩺",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": ["pancreatitis", "ตับอ่อนอักเสบ", "IV fluid", "morphine", "meperidine", "enzyme", "amylase", "lipase", "ERCP", "fasting"],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "Pancreatitis เฉียบพลัน — สาเหตุและพยาธิสภาพ",
+          "body_md": "**สาเหตุหลัก (จำ 'GET SMASHED'):**\n- **G**allstones (นิ่วในถุงน้ำดี) — พบมากที่สุด\n- **E**thanol (แอลกอฮอล์) — อันดับ 2\n- **T**rauma\n- **S**teroids\n- **M**umps/infections\n- **A**utoimmune\n- **S**corpion sting\n- **H**yperlipidemia (TG > 1000 mg/dL), Hypercalcemia\n- **E**RCP (post-ERCP pancreatitis)\n- **D**rugs (azathioprine, didanosine, valproic acid, furosemide, tetracycline)\n\n**พยาธิสภาพ:** activation ของ trypsin ภายในตับอ่อน → autodigestion → inflammation"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "การรักษาประคับประคอง — หลักสำคัญ",
+          "body_md": "**Acute Pancreatitis ไม่มียาลด enzyme จำเพาะ!** (somatostatin, octreotide ไม่ได้ผลในการศึกษา)\n\n**การรักษาหลักคือประคับประคอง:**\n\n1. **IV fluid resuscitation** (Lactated Ringer's ดีกว่า NSS)\n   - เริ่มเร็วและเพียงพอ (aggressive fluid resuscitation ใน 24-48 ชม.แรก)\n   - เป้าหมาย: urine output > 0.5 mL/kg/hr\n\n2. **Fasting (NPO):** งดอาหารทางปากขณะ pain และ nausea\n   - Resuming oral feeding เร็วเมื่อ pain ลดและ tolerate ได้\n   - Early enteral nutrition (ทาง nasojejunal tube) ดีกว่า TPN ในรายรุนแรง\n\n3. **Pain control**\n\n4. **Monitoring** และรักษาภาวะแทรกซ้อน"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Pain Control ใน Pancreatitis",
+          "body_md": "**Opioid analgesic** เป็นยาหลักในการระงับปวด pancreatitis:\n\n**Morphine vs Meperidine:**\n- เดิมเชื่อว่า **morphine** เพิ่ม sphincter of Oddi pressure → ห้ามใช้\n- หลักฐานปัจจุบัน: ไม่มีความแตกต่างทางคลินิกชัดเจน morphine ปลอดภัยใช้ได้\n- **Meperidine** มี metabolite (normeperidine) สะสม → seizure → ไม่แนะนำระยะยาว\n\n**ยาที่ใช้ปัจจุบัน:**\n- **Hydromorphone** หรือ **morphine** IV/IM\n- **Ketorolac** (NSAID IV) ในรายที่ไม่รุนแรง\n- **Epidural analgesia** ในรายรุนแรงที่ ICU"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ภาวะแทรกซ้อนและการจัดการ",
+          "body_md": "**Infected Pancreatic Necrosis:**\n- ภาวะแทรกซ้อนรุนแรง อัตราตายสูง\n- Antibiotics: Imipenem หรือ Meropenem (ครอบคลุมและผ่านเนื้อตับอ่อนได้ดี)\n- อาจต้องการ necrosectomy\n\n**Gallstone Pancreatitis:**\n- ERCP ± sphincterotomy สำหรับ bile duct stone ที่ยังค้างอยู่\n- Cholecystectomy หลัง pancreatitis หายดี (ป้องกันกลับซ้ำ)\n\n**Pancreatic Pseudocyst:**\n- ส่วนใหญ่หายเอง ถ้า > 6 cm หรือมีอาการ → drainage"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "Nutrition ใน Pancreatitis รุนแรง",
+          "body_md": "**Nutritional support สำคัญมาก:**\n\n**Early Enteral Nutrition (EEN) ดีกว่า TPN เพราะ:**\n- ลดการติดเชื้อ, ลดการรั่วจาก gut mucosal barrier\n- ลด mortality ในรายรุนแรง\n\n**Nasojejunal feeding** (past the ligament of Treitz) ลด pancreatic stimulation ดีกว่า nasogastric\n\n**TPN สำรอง** สำหรับรายที่ไม่สามารถ tolerate enteral nutrition\n\n**เริ่ม oral อีกครั้ง** เมื่อ pain ลง, nausea หาย, bowel sounds กลับมา — ไม่ต้องรอ amylase/lipase ปกติ"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำสาเหตุ Pancreatitis ด้วย 'GET SMASHED'",
+          "body_md": "**G** – Gallstones\n**E** – Ethanol\n**T** – Trauma\n**S** – Steroids\n**M** – Mumps (Viral)\n**A** – Autoimmune\n**S** – Scorpion sting\n**H** – Hyperlipidemia/Hypercalcemia\n**E** – ERCP\n**D** – Drugs\n\nจำคำว่า **GET SMASHED** = เมาแล้วได้รับการกระทบ → pancreatitis!"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ยาที่ทำให้เกิด Pancreatitis — ต้องหยุดทันที",
+          "body_md": "**Drug-induced pancreatitis — ยาที่พบบ่อย:**\n\n**Class I (หลักฐานชัดเจน):**\n- Azathioprine/6-MP\n- Didanosine (ddI)\n- Valproic acid\n- Pentamidine\n\n**Class II (หลักฐานปานกลาง):**\n- Furosemide, Hydrochlorothiazide\n- Tetracycline\n- Sulfonamides\n- Metronidazole\n- Estrogen\n\n**เมื่อสงสัย drug-induced pancreatitis → หยุดยาต้องสงสัยทันที** และไม่ให้ซ้ำอีก"
+        }
       ]
     }
   ]
