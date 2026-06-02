@@ -1,0 +1,269 @@
+{
+  "subject": "NursingGeriatric",
+  "unit": {
+    "title_th": "การพยาบาลผู้สูงอายุ",
+    "description_th": "Geriatric syndromes, polypharmacy, fall prevention, dementia/delirium และ end-of-life care",
+    "icon": "👴"
+  },
+  "lessons": [
+    {
+      "title_th": "Geriatric Syndromes & Fall Prevention",
+      "subtitle_th": "5 Geriatric Giants และการป้องกันการล้ม",
+      "icon": "🦴",
+      "est_minutes": 10,
+      "xp_reward": 18,
+      "cards": [
+        { "card_type": "concept", "title_th": "Geriatric Giants (5 I's)", "body_md": "**5 I's ของผู้สูงอายุ:**\n- **I**mmobility (เคลื่อนไหวลำบาก)\n- **I**nstability (ล้มบ่อย)\n- **I**ncontinence (กลั้นปัสสาวะ/อุจจาระไม่ได้)\n- **I**ntellectual impairment (dementia, delirium)\n- **I**atrogenic (จากการรักษา — polypharmacy, falls in hospital)\n\nเพิ่ม: malnutrition, depression, frailty, pressure ulcer" },
+        { "card_type": "concept", "title_th": "Frailty — Fried criteria", "body_md": "เกณฑ์ ≥ 3 ใน 5:\n1. น้ำหนักลด > 4.5 kg / 1 ปี\n2. อ่อนเพลีย (self-report)\n3. แรงบีบมือลดลง (grip strength)\n4. เดินช้า (gait speed < 0.8 m/s)\n5. กิจกรรมทางกายต่ำ\n\n3+ = frail, 1-2 = pre-frail" },
+        { "card_type": "tip", "title_th": "Fall risk assessment — Morse Fall Scale", "body_md": "**6 รายการ:**\n1. History of fall (25 คะแนน)\n2. Secondary diagnosis (15)\n3. Ambulatory aid (0/15/30)\n4. IV / saline lock (20)\n5. Gait (0/10/20)\n6. Mental status (0/15)\n\n**คะแนน:**\n- < 25 = low risk\n- 25-50 = moderate\n- **≥ 51 = high risk** → bed alarm, ใกล้ nurse station, side rails up, call bell ใกล้มือ" },
+        { "card_type": "warning", "title_th": "Fall prevention — สิ่งแวดล้อม", "body_md": "**ปัจจัยเสี่ยงจากสิ่งแวดล้อม:**\n- พื้นเปียก / ลื่น\n- แสงไม่พอ (โดยเฉพาะกลางคืน)\n- พรมไม่ติดพื้น\n- รองเท้าหลวม / ไม่มี non-slip\n- เตียงสูง / ไม่ล็อกล้อ\n\n**การพยาบาล:**\n- เตียงต่ำสุด ล็อกล้อ side rail up x 2 (ไม่ใช่ 4 = restraint)\n- รองเท้ากันลื่น\n- ไฟกลางคืน\n- ระวังหลัง diuretic, sedative, antihypertensive (orthostatic)\n- Toileting schedule ทุก 2 ชม." },
+        { "card_type": "concept", "title_th": "Urinary Incontinence — 4 ชนิด", "body_md": "**Stress:** หัวเราะ ไอ จาม → ปัสสาวะเล็ด (pelvic floor weak)\n→ Kegel exercise, surgery\n\n**Urge:** ปวดปุบ ปัสสาวะปัป (overactive bladder)\n→ Bladder training, anticholinergic (oxybutynin)\n\n**Overflow:** กระเพาะปัสสาวะเต็มล้น (BPH, DM neuropathy)\n→ ใส่ Foley, รักษาสาเหตุ\n\n**Functional:** กระเพาะปัสสาวะปกติแต่ไปห้องน้ำไม่ทัน (mobility, cognition)\n→ ปรับสิ่งแวดล้อม, scheduled voiding" },
+        { "card_type": "concept", "title_th": "Pressure Ulcer (Bedsore) — Stages", "body_md": "**Stage 1:** Non-blanchable erythema, intact skin\n**Stage 2:** Partial thickness — เปิด epidermis/dermis (พุพอง)\n**Stage 3:** Full thickness — เห็น subcutaneous fat\n**Stage 4:** Full thickness ถึง muscle/bone/tendon\n**Unstageable:** ปกคลุมด้วย eschar/slough\n**Deep Tissue Injury:** purple intact skin, blood-filled blister" },
+        { "card_type": "tip", "title_th": "Pressure ulcer prevention", "body_md": "**Braden scale** ≤ 18 = at risk\n\n**Prevention:**\n- พลิกตัวทุก 2 ชม.\n- ใช้ pressure-relief mattress\n- ผิวแห้ง สะอาด\n- โภชนาการ — protein, calorie, vitamin C, zinc\n- ห้ามนวด red area\n- ห้ามใช้ donut ring\n- Heel — floating pillows\n\n**Wound care โดยตำแหน่ง:**\n- Stage 1-2: hydrocolloid, transparent film\n- Stage 3-4: foam, alginate (exudate มาก), debridement" },
+        { "card_type": "warning", "title_th": "Restraint — เหตุผลและทางเลือก", "body_md": "**Restraint** ใช้เมื่อ:\n- เป็นอันตรายต่อตนเอง/ผู้อื่น\n- ทางเลือกอื่นไม่ได้ผล\n- มีคำสั่งแพทย์ time-limited\n\n**ทางเลือกก่อน restraint:**\n- เพื่อน/ญาตินั่งเฝ้า\n- จัดเตียงต่ำ + bed alarm\n- Music / TV calm\n- Toileting schedule\n- รักษาอาการปวด / ขาดน้ำ / nicotine withdrawal\n\n**ถ้าจำเป็น:**\n- เลือก least restrictive\n- ปล่อยทุก 2 ชม. (ROM, toilet, ดื่มน้ำ)\n- ตรวจ skin, circulation, mental ทุก 30 นาที\n- Documentation ครบ" },
+        { "card_type": "qa", "title_th": "ตัวอย่างข้อสอบ — Polypharmacy", "body_md": "**Q:** ผู้สูงอายุ 78 ปี ใช้ยา 10 ชนิด หกล้มในห้องน้ำ ยาใดเสี่ยงทำให้ล้มมากที่สุด?\n\n**A:** **Benzodiazepine** (diazepam, lorazepam) — sedation + orthostatic + balance ลด ตาม **Beers Criteria** ห้ามใช้ในผู้สูงอายุ\n\nรองลงมา: **antihistamine 1st gen** (diphenhydramine), **anticholinergic**, **alpha-blocker** (terazosin), **TCA**" }
+      ],
+      "quiz_questions": [
+        {
+          "scenario": "ผู้สูงอายุ 80 ปี admit ICU 5 วัน พบ red area ที่ก้นกบ ไม่ขาวเมื่อกด ผิวยังไม่เปิด ระดับ pressure ulcer และการดูแลเริ่มต้นที่เหมาะสมคือ",
+          "choices": [
+            { "label": "A", "text": "Stage 1 → เปลี่ยนท่าทุก 2 ชม. + protect skin (transparent film/hydrocolloid)" },
+            { "label": "B", "text": "Stage 2 → debridement ทันที" },
+            { "label": "C", "text": "Stage 3 → ทำ wet-to-dry dressing" },
+            { "label": "D", "text": "Unstageable → ส่งผ่าตัด" },
+            { "label": "E", "text": "Stage 1 → นวด red area เพื่อกระตุ้นเลือดไหลเวียน" }
+          ],
+          "correct_answer": "A",
+          "difficulty": "easy",
+          "explanation": "Non-blanchable erythema + ผิว intact = Stage 1 ดูแลด้วย pressure relief + protective dressing ห้ามนวด",
+          "detailed_explanation": {
+            "summary": "Stage 1 = non-blanchable red intact skin → pressure relief + protect",
+            "reason": "Stage 1 ผิวยังไม่เปิด แค่กดทับนาน เปลี่ยนท่า + บรรเทา pressure + film protective dressing เพื่อกัน friction",
+            "choices": [
+              { "label": "A", "text": "Stage 1 + พลิกตัว + film", "is_correct": true, "explanation": "ถูก" },
+              { "label": "B", "text": "Stage 2 debridement", "is_correct": false, "explanation": "Stage 2 = partial thickness ผิวเปิดแล้ว ไม่ใช่นี่" },
+              { "label": "C", "text": "Stage 3 wet-to-dry", "is_correct": false, "explanation": "ผิวยังไม่เปิด ไม่ใช่ Stage 3" },
+              { "label": "D", "text": "Unstageable ผ่าตัด", "is_correct": false, "explanation": "Unstageable มี eschar/slough ปกคลุม" },
+              { "label": "E", "text": "Stage 1 นวด", "is_correct": false, "explanation": "ห้ามนวด red area — ทำให้ tissue damage มากขึ้น" }
+            ],
+            "key_takeaway": "Pressure ulcer staging: 1=red intact, 2=partial open, 3=full sub-Q, 4=bone/muscle. ห้ามนวด!"
+          }
+        },
+        {
+          "scenario": "ผู้สูงอายุ Morse Fall Scale 65 คะแนน อยู่หอผู้ป่วยทั่วไป การพยาบาลข้อใดถูกต้อง",
+          "choices": [
+            { "label": "A", "text": "ใส่ restraint แขนทันทีเพื่อกัน fall" },
+            { "label": "B", "text": "Side rail ทั้ง 4 ข้าง เพื่อความปลอดภัยสูงสุด" },
+            { "label": "C", "text": "เตียงต่ำสุด ล็อกล้อ side rail 2 ข้าง bed alarm รองเท้ากันลื่น" },
+            { "label": "D", "text": "ให้ ambulate ตัวเองอย่างอิสระ" },
+            { "label": "E", "text": "ให้ sedative ทุกคืน" }
+          ],
+          "correct_answer": "C",
+          "difficulty": "medium",
+          "explanation": "High fall risk = environmental modification ไม่ใช่ restraint Side rail 4 ข้าง = restraint, sedative ทำให้ล้มมากขึ้น",
+          "detailed_explanation": {
+            "summary": "Fall prevention = environment > restraint",
+            "reason": "Restraint และ side rail 4 ข้างถือเป็น restraint ตามนิยาม CMS เพิ่มความเสี่ยงบาดเจ็บไม่ใช่ลด การจัดสิ่งแวดล้อมที่ปลอดภัยคือมาตรฐาน",
+            "choices": [
+              { "label": "A", "text": "Restraint แขน", "is_correct": false, "explanation": "Last resort เท่านั้น มีคำสั่งแพทย์" },
+              { "label": "B", "text": "Side rail 4", "is_correct": false, "explanation": "ถือเป็น restraint" },
+              { "label": "C", "text": "Environment modification", "is_correct": true, "explanation": "ถูก — มาตรฐาน fall prevention" },
+              { "label": "D", "text": "เดินอิสระ", "is_correct": false, "explanation": "High risk ต้องช่วย" },
+              { "label": "E", "text": "Sedative", "is_correct": false, "explanation": "เพิ่ม fall ตาม Beers" }
+            ],
+            "key_takeaway": "Fall prevention: เตียงต่ำ ล็อกล้อ side rail 2 alarm shoes ไฟกลางคืน toileting schedule"
+          }
+        },
+        {
+          "scenario": "ผู้สูงอายุ urinary incontinence ลักษณะ ปัสสาวะเล็ดเมื่อไอจาม น่าจะเป็นชนิดใดและการพยาบาลข้อใดเหมาะที่สุด",
+          "choices": [
+            { "label": "A", "text": "Urge → bladder training + anticholinergic" },
+            { "label": "B", "text": "Overflow → ใส่ Foley catheter" },
+            { "label": "C", "text": "Stress → Kegel exercise (pelvic floor)" },
+            { "label": "D", "text": "Functional → scheduled toileting" },
+            { "label": "E", "text": "Mixed → ส่งผ่าตัดทันที" }
+          ],
+          "correct_answer": "C",
+          "difficulty": "easy",
+          "explanation": "Incontinence ตอนไอจามหัวเราะ = stress UI จาก pelvic floor weak รักษาด้วย Kegel ก่อน",
+          "detailed_explanation": {
+            "summary": "Stress UI (ไอจาม) = Kegel; Urge = bladder training+anticholinergic",
+            "reason": "เพิ่ม intra-abdominal pressure ทำให้น้ำปัสสาวะเล็ดผ่าน weak sphincter Kegel เพิ่มความแข็งแรง pelvic floor",
+            "choices": [
+              { "label": "A", "text": "Urge", "is_correct": false, "explanation": "Urge = ปวดปุบปั๊บ ไม่ใช่ไอจาม" },
+              { "label": "B", "text": "Overflow Foley", "is_correct": false, "explanation": "Overflow = retention, ไม่ใช่นี่" },
+              { "label": "C", "text": "Stress + Kegel", "is_correct": true, "explanation": "ถูก" },
+              { "label": "D", "text": "Functional", "is_correct": false, "explanation": "Functional = mobility limitation" },
+              { "label": "E", "text": "Surgery ทันที", "is_correct": false, "explanation": "ลอง conservative ก่อน 3-6 เดือน" }
+            ],
+            "key_takeaway": "Stress=Kegel, Urge=BladderTraining+Antichol, Overflow=Cath, Functional=Schedule"
+          }
+        }
+      ]
+    },
+    {
+      "title_th": "Dementia & Delirium",
+      "subtitle_th": "แยกความต่าง สาเหตุ และการพยาบาล",
+      "icon": "🧠",
+      "est_minutes": 10,
+      "xp_reward": 18,
+      "cards": [
+        { "card_type": "concept", "title_th": "Dementia vs Delirium — ตารางเปรียบเทียบ", "body_md": "| ลักษณะ | Dementia | Delirium |\n|---|---|---|\n| เริ่มอาการ | ค่อยเป็น (เดือน-ปี) | เฉียบพลัน (ชม.-วัน) |\n| ระยะเวลา | ถาวร progressive | ชั่วคราว reversible |\n| Consciousness | clear | clouded fluctuate |\n| Attention | ปกติช่วงแรก | impaired |\n| Sleep-wake | ปกติช่วงแรก | disturbed (sundowning) |\n| Hallucination | rare ใน early | common (visual) |\n\nDelirium = medical emergency หาสาเหตุ" },
+        { "card_type": "concept", "title_th": "Delirium — สาเหตุ DELIRIUM", "body_md": "- **D**rugs (BZD, anticholinergic, opioid, ATB)\n- **E**lectrolytes (hypo/hypernatremia)\n- **L**ack of fluid (dehydration), Lack of nutrition\n- **I**nfection (UTI, pneumonia พบบ่อยที่สุดในผู้สูงอายุ)\n- **R**educed sensory (no glasses/hearing aid)\n- **I**ntracranial (stroke, hemorrhage)\n- **U**rinary retention, fecal impaction\n- **M**yocardial (AMI, HF, hypoxia), Metabolic (uremia, liver, hypo/hyperglycemia)" },
+        { "card_type": "tip", "title_th": "การพยาบาล Delirium — non-pharm", "body_md": "**Reorientation:**\n- บอกชื่อ วันเวลา สถานที่ ทุกครั้ง\n- นาฬิกา ปฏิทินในห้อง\n- รูปครอบครัว\n\n**Sensory:**\n- ให้แว่น hearing aid ฟันปลอม\n- แสงสว่างกลางวัน, มืดกลางคืน\n- ลดเสียงรบกวน\n\n**Routine:**\n- ตารางกินยา/อาหาร/นอนคงที่\n- ญาติเฝ้า familiar caregiver\n- หลีกเลี่ยง room change\n\n**Last resort:** Haloperidol low dose (0.25-0.5 mg) — ไม่ใช่ BZD (ยกเว้น alcohol withdrawal)" },
+        { "card_type": "warning", "title_th": "ห้ามใช้ BZD ใน delirium ผู้สูงอายุ", "body_md": "**BZD ทำให้:**\n- Delirium แย่ลง / นานขึ้น\n- Paradoxical agitation (โดยเฉพาะผู้สูงอายุ)\n- เพิ่ม fall risk\n- Respiratory depression\n\n**ยกเว้น:**\n- Alcohol withdrawal delirium tremens (lorazepam IV)\n- BZD withdrawal\n- Seizure-related\n\n**Beers Criteria** ห้าม long-acting BZD (diazepam, chlordiazepoxide), short-acting ระวังด้วย" },
+        { "card_type": "concept", "title_th": "Alzheimer's Disease — ระยะ", "body_md": "**Stage 1 — Mild (2-4 ปี):**\n- Recent memory ลด (ลืมชื่อ ลืมนัด)\n- Mood swings\n- ทำกิจวัตรได้\n\n**Stage 2 — Moderate (2-10 ปี):**\n- ลืมญาติใกล้\n- Wandering, sundowning\n- ต้องช่วย ADL\n\n**Stage 3 — Severe (1-3 ปี):**\n- พูดไม่ได้\n- กลั้นปัสสาวะ/อุจจาระไม่ได้\n- Bedridden, dysphagia\n\n**ยา:** Cholinesterase inhibitor (donepezil, rivastigmine), Memantine ใน moderate-severe" },
+        { "card_type": "tip", "title_th": "Wandering & Sundowning", "body_md": "**Wandering:**\n- ใส่ ID bracelet\n- ล็อคประตูสูง / ออกซ่อน door alarm\n- แต่งห้องคุ้นเคย\n- ออกกำลังกายระหว่างวัน\n\n**Sundowning (สับสนช่วงเย็น-กลางคืน):**\n- เปิดไฟตอนเย็นก่อนมืด\n- กิจกรรมเงียบช่วงบ่าย\n- หลีกเลี่ยง caffeine ช่วงบ่าย-เย็น\n- ลด nap กลางวัน > 30 นาที\n- งดยา stimulant ตอนเย็น" },
+        { "card_type": "concept", "title_th": "Communication กับ dementia", "body_md": "**Do:**\n- พูดช้า เสียงต่ำ ประโยคสั้น\n- พบหน้า ตา-ตาเดียวกัน\n- One question at a time, ปิด choice 2 option\n- Validation therapy (รับฟังอารมณ์ ไม่โต้แย้ง reality)\n- Use cue cards / รูป\n\n**Don't:**\n- ถามทดสอบความจำซ้ำ ๆ\n- โต้แย้ง / แก้ไข\n- พูดต่อหน้าเหมือนไม่อยู่\n- พูดเร็ว เปลี่ยนหัวข้อบ่อย" },
+        { "card_type": "mnemonic", "title_th": "CAM — Confusion Assessment Method (delirium)", "body_md": "**CAM positive ต้องมี 1+2 และ 3 หรือ 4:**\n1. **A**cute onset + **f**luctuating\n2. **I**nattention (สมาธิไม่จดจ่อ)\n3. **D**isorganized thinking\n4. **A**ltered LOC\n\nSensitivity > 90%, ใช้ screen ผู้สูงอายุทุก shift ใน ICU" },
+        { "card_type": "qa", "title_th": "ตัวอย่างข้อสอบ — Hospital delirium", "body_md": "**Q:** ผู้สูงอายุ admit pneumonia วันที่ 2 เริ่มซึมสลับสับสน เห็นภาพหลอน หาสาเหตุไม่ได้นอกจาก infection พยาบาลควรทำสิ่งใดก่อน?\n\n**A:** **Reorientation** + ให้แว่น/hearing aid + ญาติเฝ้า + รักษา infection + เช็ค electrolyte/glucose/medication review **ไม่ใช่** ให้ BZD/lorazepam ทันที (จะแย่ลง)" }
+      ],
+      "quiz_questions": [
+        {
+          "scenario": "ผู้สูงอายุ 82 ปี Alzheimer's moderate stage admit เพราะ pneumonia วันแรกหลัง admit สับสน เห็นภาพหลอน นอนกลางวันตื่นกลางคืน การพยาบาลข้อใดเหมาะที่สุด",
+          "choices": [
+            { "label": "A", "text": "ให้ lorazepam 1 mg PO HS เพื่อช่วยนอน" },
+            { "label": "B", "text": "Reorientation + แสงสว่างกลางวัน + ญาติเฝ้า + รักษา pneumonia" },
+            { "label": "C", "text": "Restraint แขนกัน wandering" },
+            { "label": "D", "text": "Side rail 4 ข้าง" },
+            { "label": "E", "text": "Diazepam 5 mg IM ทันที" }
+          ],
+          "correct_answer": "B",
+          "difficulty": "medium",
+          "explanation": "Acute confusion + hallucination + sleep-wake reversal ใน demented = delirium superimposed on dementia non-pharm + รักษา cause ก่อน",
+          "detailed_explanation": {
+            "summary": "Delirium ใน dementia: non-pharm + fix cause; ห้าม BZD",
+            "reason": "BZD ทำให้ delirium แย่ลงในผู้สูงอายุ Reorientation + sensory + familiar people + treat underlying = มาตรฐาน Last resort = haloperidol low dose",
+            "choices": [
+              { "label": "A", "text": "Lorazepam", "is_correct": false, "explanation": "ห้าม BZD ใน delirium (ยกเว้น alcohol withdrawal)" },
+              { "label": "B", "text": "Reorientation + treat cause", "is_correct": true, "explanation": "ถูก" },
+              { "label": "C", "text": "Restraint", "is_correct": false, "explanation": "เพิ่ม agitation, last resort" },
+              { "label": "D", "text": "Side rail 4", "is_correct": false, "explanation": "ถือเป็น restraint" },
+              { "label": "E", "text": "Diazepam IM", "is_correct": false, "explanation": "Long-acting BZD ใน Beers list" }
+            ],
+            "key_takeaway": "Delirium = หา cause + non-pharm; BZD เฉพาะ alcohol withdrawal"
+          }
+        },
+        {
+          "scenario": "ผู้ป่วยเริ่ม sundowning ทุกวันช่วง 17:00-21:00 พยาบาลควรวางแผนข้อใดเป็นอันดับแรก",
+          "choices": [
+            { "label": "A", "text": "ปิดไฟแต่หัวค่ำให้คล้ายกลางคืน" },
+            { "label": "B", "text": "เปิดไฟสว่างช่วงเย็นก่อนมืด + ลดเสียงรบกวน + ลด nap กลางวัน" },
+            { "label": "C", "text": "ให้ caffeine ช่วงบ่ายเพื่อให้ตื่นและไม่สับสน" },
+            { "label": "D", "text": "Restraint ทุกเย็น" },
+            { "label": "E", "text": "ให้ haloperidol PRN ตั้งแต่ 16:00" }
+          ],
+          "correct_answer": "B",
+          "difficulty": "medium",
+          "explanation": "Sundowning จัดการด้วย environmental cues — แสง+กิจกรรมสม่ำเสมอ ลด nap กลางวัน",
+          "detailed_explanation": {
+            "summary": "Sundowning: bright light evening + calm activity + no afternoon nap",
+            "reason": "Circadian disruption ใน dementia ทำให้สับสนช่วงพลบค่ำ แสงสว่าง maintain circadian, ลด nap > 30 นาที กลางวัน",
+            "choices": [
+              { "label": "A", "text": "ปิดไฟแต่หัวค่ำ", "is_correct": false, "explanation": "ทำให้แย่ลง" },
+              { "label": "B", "text": "Bright light + no nap", "is_correct": true, "explanation": "ถูก" },
+              { "label": "C", "text": "Caffeine บ่าย", "is_correct": false, "explanation": "Stimulant ทำให้นอนไม่หลับ + สับสน" },
+              { "label": "D", "text": "Restraint", "is_correct": false, "explanation": "Last resort" },
+              { "label": "E", "text": "Haloperidol PRN", "is_correct": false, "explanation": "ใช้เมื่อ severe agitation, non-pharm first" }
+            ],
+            "key_takeaway": "Sundowning = environmental modification first"
+          }
+        },
+        {
+          "scenario": "ผู้สูงอายุ admit ICU 3 วัน CAM positive สาเหตุที่ควรประเมินก่อนเป็นอันดับแรก",
+          "choices": [
+            { "label": "A", "text": "Brain MRI หา stroke ทันที" },
+            { "label": "B", "text": "ประเมิน UTI + เช็ค medications + electrolytes + dehydration" },
+            { "label": "C", "text": "เริ่ม cholinesterase inhibitor (donepezil)" },
+            { "label": "D", "text": "ส่งจิตเวชประเมิน" },
+            { "label": "E", "text": "ให้ haloperidol IV ก่อน" }
+          ],
+          "correct_answer": "B",
+          "difficulty": "medium",
+          "explanation": "Delirium ในผู้สูงอายุ ICU: หาเหตุที่พบบ่อย (DELIRIUM mnemonic) — UTI, drugs, electrolyte, dehydration, hypoxia ก่อนทำ neuroimaging",
+          "detailed_explanation": {
+            "summary": "Delirium = treatable medical cause first, neuroimaging เมื่อมี focal sign",
+            "reason": "Bedside workup ก่อน — สาเหตุที่พบบ่อยและรักษาได้ ส่ง imaging เมื่อมี neurological deficit",
+            "choices": [
+              { "label": "A", "text": "MRI ทันที", "is_correct": false, "explanation": "ทำเมื่อมี focal sign / suspect stroke" },
+              { "label": "B", "text": "UTI/drugs/lytes/dehydration", "is_correct": true, "explanation": "ถูก — DELIRIUM mnemonic" },
+              { "label": "C", "text": "Donepezil", "is_correct": false, "explanation": "ใช้ใน dementia ไม่ใช่ delirium acute" },
+              { "label": "D", "text": "จิตเวช", "is_correct": false, "explanation": "Medical workup ก่อน" },
+              { "label": "E", "text": "Haloperidol", "is_correct": false, "explanation": "Symptomatic แต่ไม่ใช่ priority" }
+            ],
+            "key_takeaway": "Delirium workup: UTI > meds > electrolytes > dehydration > hypoxia > imaging (ถ้ามี focal sign)"
+          }
+        }
+      ]
+    },
+    {
+      "title_th": "End-of-Life Care & Palliative",
+      "subtitle_th": "Pain management, advance directive, การดูแลผู้ป่วยระยะสุดท้าย",
+      "icon": "🕊️",
+      "est_minutes": 8,
+      "xp_reward": 15,
+      "cards": [
+        { "card_type": "concept", "title_th": "Palliative vs Hospice", "body_md": "**Palliative care:**\n- ทุกระยะของโรคร้ายแรง\n- ใช้ร่วมกับการรักษาหลักได้\n- ไม่จำกัด prognosis\n\n**Hospice:**\n- ระยะท้าย ~6 เดือนสุดท้าย\n- หยุดการรักษาหายขาด เน้น comfort\n- ที่บ้าน / hospice center" },
+        { "card_type": "concept", "title_th": "WHO Pain Ladder", "body_md": "**Step 1 — Mild (NRS 1-3):**\n- Non-opioid: Paracetamol, NSAID\n\n**Step 2 — Moderate (NRS 4-6):**\n- Weak opioid: Tramadol, codeine\n- ± non-opioid + adjuvant\n\n**Step 3 — Severe (NRS 7-10):**\n- Strong opioid: Morphine, fentanyl, oxycodone\n- ± non-opioid + adjuvant\n\n**Adjuvant:** TCA/gabapentin (neuropathic), corticosteroid, bisphosphonate (bone)" },
+        { "card_type": "tip", "title_th": "Opioid — การบริหาร", "body_md": "- ให้ตามเวลา (ATC) ไม่ใช่ PRN ในผู้ป่วย chronic pain\n- Breakthrough dose = 10-20% ของ daily dose, PRN q1h\n- เพิ่มขนาดเมื่อ pain ไม่คุม > 25-50%\n- หลีกเลี่ยง meperidine (สะสม metabolite, seizure)\n- ผู้สูงอายุ start low, go slow\n\n**ADR — จัดการ:**\n- **Constipation** (ไม่หาย tolerance) → laxative ทุกราย\n- N/V → metoclopramide, ondansetron\n- Sedation → tolerance ใน 3-5 วัน\n- **Respiratory depression** → naloxone 0.04-0.2 mg IV (low dose, titrate)" },
+        { "card_type": "concept", "title_th": "Signs of imminent death (ใน 1-2 สัปดาห์ก่อน)", "body_md": "- กิจกรรมลดลง, นอนมาก, ไม่กินไม่ดื่ม\n- หายใจไม่สม่ำเสมอ — Cheyne-Stokes, apnea\n- **Death rattle** (เสียงครืดคราดในคอ — ไม่ทรมานผู้ป่วย)\n- ผิวซีด, ลายม่วงที่ขา (mottling)\n- Mandibular breathing — หายใจเอาคางลง\n- Cyanosis ปลายมือเท้า, ตัวเย็น\n- ปัสสาวะลด, ปัสสาวะเข้ม\n- เริ่ม comatose / minimally responsive" },
+        { "card_type": "tip", "title_th": "การพยาบาล active dying", "body_md": "**ความสุขสบาย > vital signs:**\n- ปากแห้ง → oral swab ชุบน้ำ, ลิปบาล์ม\n- Death rattle → ปรับท่า, glycopyrrolate, ไม่ suction บ่อยๆ\n- Dyspnea → opioid low dose (morphine 2.5-5 mg SC), fan ไปที่หน้า, head up\n- ปวด → continue/uptitrate opioid\n- Restlessness → midazolam SC/IV PRN\n\n**ครอบครัว:**\n- บอกความจริงด้วยความเมตตา\n- ให้พูดกับผู้ป่วย (การได้ยินคงอยู่นานสุด)\n- พิธีกรรมตามศาสนา" },
+        { "card_type": "concept", "title_th": "Advance Directive — Living Will", "body_md": "**กฎหมายไทย (พรบ.สุขภาพแห่งชาติ ม.12):**\nผู้ป่วยมีสิทธิ์ทำหนังสือแสดงเจตนาปฏิเสธการรักษาเพื่อยืดความตาย / ยุติชีวิตในวาระสุดท้าย\n\n**Living will ระบุ:**\n- ปฏิเสธ CPR (DNR)\n- ปฏิเสธ intubate, ventilator\n- ปฏิเสธ feeding tube\n- ปฏิเสธ dialysis\n\n**พยาบาลต้อง:**\n- เคารพเจตนา\n- ปรึกษาทีม + ครอบครัว\n- เอกสารใส่ chart ชัดเจน\n- ไม่ละทิ้งการดูแล comfort care" },
+        { "card_type": "warning", "title_th": "Morphine ใน end-of-life — ความเชื่อผิด", "body_md": "**ความเชื่อผิด:** ให้ morphine แล้วผู้ป่วยจะเสียเร็วขึ้น\n\n**ความจริง:** Morphine ลด dyspnea + pain โดยไม่เร่งความตาย ใน dose ที่ถูกต้อง การไม่ให้ = ทรมานผู้ป่วยโดยใช่เหตุ\n\n**Double effect doctrine:** ถ้าเจตนาคือ relieve suffering และ side effect อาจสั้นชีวิต ก็ทำได้ทั้งทางการแพทย์และจริยศาสตร์\n\n**Start low, go slow:**\n- Opioid-naive: morphine 2.5-5 mg SC q4h PRN\n- Titrate ตาม pain/dyspnea" },
+        { "card_type": "qa", "title_th": "ตัวอย่างข้อสอบ — DNR", "body_md": "**Q:** ผู้ป่วย cancer end-stage มี living will DNR ครอบครัวขอให้ทีมแพทย์ \"ทำทุกอย่าง\" ตอน arrest พยาบาลควรทำอย่างไร?\n\n**A:** เคารพ **living will ของผู้ป่วย** (มีผลทางกฎหมาย) ไม่ใช่ความเห็นครอบครัว ให้ comfort care + family meeting คุยกับครอบครัวด้วยความเมตตา ปรึกษาแพทย์/ทีม palliative" }
+      ],
+      "quiz_questions": [
+        {
+          "scenario": "ผู้ป่วย cancer ระยะสุดท้าย NRS 8 มีหนังสือแสดงเจตนาปฏิเสธ CPR + intubate ครอบครัวกังวลว่า morphine จะทำให้เสียชีวิตเร็ว ขอให้พยาบาลงดยา พยาบาลควรทำอย่างไร",
+          "choices": [
+            { "label": "A", "text": "งด morphine ตามที่ครอบครัวขอ" },
+            { "label": "B", "text": "อธิบายให้ครอบครัวเข้าใจว่า morphine ใช้ลดความทรมาน ไม่เร่งความตาย + continue ยาตามแผน" },
+            { "label": "C", "text": "ลด dose ลง 50% เพื่อประนีประนอม" },
+            { "label": "D", "text": "เปลี่ยน morphine เป็น paracetamol" },
+            { "label": "E", "text": "ยกเลิก DNR ตามคำขอครอบครัว" }
+          ],
+          "correct_answer": "B",
+          "difficulty": "medium",
+          "explanation": "Double effect doctrine: opioid ใน end-of-life ลด suffering, ไม่เร่งความตายในขนาดที่ถูกต้อง อธิบายครอบครัวด้วยเมตตา ทำตาม living will ของผู้ป่วย",
+          "detailed_explanation": {
+            "summary": "Family education + respect patient's living will",
+            "reason": "Living will ของผู้ป่วยมีผลทางกฎหมาย พยาบาลและแพทย์ต้องเคารพ ครอบครัวอาจมี grief/denial — บทบาทพยาบาลคือ educate ไม่ใช่งดการรักษา comfort",
+            "choices": [
+              { "label": "A", "text": "งด morphine", "is_correct": false, "explanation": "ทำให้ผู้ป่วยทรมาน" },
+              { "label": "B", "text": "Educate + continue", "is_correct": true, "explanation": "ถูก — มาตรฐาน palliative" },
+              { "label": "C", "text": "ลด dose 50%", "is_correct": false, "explanation": "Inadequate pain control" },
+              { "label": "D", "text": "Paracetamol", "is_correct": false, "explanation": "NRS 8 ต้อง strong opioid" },
+              { "label": "E", "text": "ยกเลิก DNR", "is_correct": false, "explanation": "Living will = ผู้ป่วยเท่านั้นยกเลิก" }
+            ],
+            "key_takeaway": "Palliative: respect patient's wishes, educate family, opioid ≠ killing"
+          }
+        },
+        {
+          "scenario": "ผู้ป่วย active dying มี death rattle (เสียงครืดคราดในคอ) ครอบครัวร้องไห้ขอให้ suction พยาบาลควรทำอย่างไร",
+          "choices": [
+            { "label": "A", "text": "Suction deep ทุก 30 นาทีตามที่ขอ" },
+            { "label": "B", "text": "ปรับท่า + ให้ glycopyrrolate / hyoscine SC + อธิบายว่า death rattle ไม่ทรมานผู้ป่วย" },
+            { "label": "C", "text": "ใส่ ET tube เพื่อ suction ได้สะดวก" },
+            { "label": "D", "text": "ให้ furosemide IV ขับน้ำ" },
+            { "label": "E", "text": "เพิกเฉยและปล่อยทิ้งไว้" }
+          ],
+          "correct_answer": "B",
+          "difficulty": "medium",
+          "explanation": "Death rattle เป็นเสียงสารคัดหลั่งในลำคอที่ผู้ป่วยกลืน/ไอออกไม่ได้ — ไม่ทรมานผู้ป่วยเพราะ LOC ลด Suction บ่อยทำให้ trauma ครอบครัวต้องการ education",
+          "detailed_explanation": {
+            "summary": "Death rattle: reposition + antisecretory + educate family",
+            "reason": "ผู้ป่วยใน active dying LOC ลด ไม่รับรู้ death rattle — ทรมานครอบครัวมากกว่าผู้ป่วย จัดการด้วย position + glycopyrrolate / hyoscine / atropine drops",
+            "choices": [
+              { "label": "A", "text": "Deep suction", "is_correct": false, "explanation": "Trauma + ไม่จำเป็น" },
+              { "label": "B", "text": "Reposition + glycopyrrolate", "is_correct": true, "explanation": "ถูก" },
+              { "label": "C", "text": "ET tube", "is_correct": false, "explanation": "ขัดกับ comfort care + อาจขัด living will" },
+              { "label": "D", "text": "Furosemide", "is_correct": false, "explanation": "ไม่เกี่ยวกับ secretion" },
+              { "label": "E", "text": "เพิกเฉย", "is_correct": false, "explanation": "ขาดความเอาใจใส่ครอบครัว" }
+            ],
+            "key_takeaway": "Death rattle = ครอบครัว distress, ไม่ทรมานผู้ป่วย → antisecretory + education"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -123,20 +123,54 @@ async function run() {
       continue;
     }
 
-    // Active questions for this subject → used to seed each lesson's quiz.
+    // Active questions for this subject → fallback when a lesson doesn't
+    // author its own inline quiz_questions.
     const qRes = await client.query(
       "SELECT id FROM mcq_questions WHERE subject_id = $1 AND status = 'active' LIMIT 50",
       [subject.id]
     );
-    const questionIds = qRes.rows.map((r) => r.id);
+    const fallbackQuestionIds = qRes.rows.map((r) => r.id);
 
     for (let li = 0; li < c.lessons.length; li++) {
       const lesson = c.lessons[li];
       const lessonId = randomUUID();
       const quizCount = lesson.quiz_count ?? 3;
-      // Give each lesson a distinct slice of question ids when available.
-      const start = li * quizCount;
-      const quizIds = questionIds.slice(start, start + quizCount);
+
+      // Prefer inline quiz_questions authored alongside the lesson — these
+      // are inserted into mcq_questions and bound to the lesson 1:1.
+      let quizIds;
+      const inlineQuiz = Array.isArray(lesson.quiz_questions)
+        ? lesson.quiz_questions
+        : [];
+      if (inlineQuiz.length > 0) {
+        quizIds = [];
+        for (let qi = 0; qi < inlineQuiz.length; qi++) {
+          const q = inlineQuiz[qi];
+          const qid = randomUUID();
+          await client.query(
+            `INSERT INTO mcq_questions
+               (id, subject_id, exam_type, scenario, choices, correct_answer,
+                explanation, detailed_explanation, difficulty, status)
+             VALUES ($1,$2,$3,$4,$5::jsonb,$6,$7,$8::jsonb,$9,'active')`,
+            [
+              qid,
+              subject.id,
+              q.exam_type ?? "NLE",
+              q.scenario,
+              JSON.stringify(q.choices),
+              q.correct_answer,
+              q.explanation ?? null,
+              q.detailed_explanation ? JSON.stringify(q.detailed_explanation) : null,
+              q.difficulty ?? "medium",
+            ]
+          );
+          quizIds.push(qid);
+        }
+      } else {
+        // Fallback: distinct slice of pre-existing question ids per lesson.
+        const start = li * quizCount;
+        quizIds = fallbackQuestionIds.slice(start, start + quizCount);
+      }
 
       await client.query(
         `INSERT INTO learning_lessons
@@ -152,7 +186,7 @@ async function run() {
           lesson.est_minutes ?? 5,
           lesson.xp_reward ?? 10,
           JSON.stringify(quizIds),
-          quizCount,
+          quizIds.length || quizCount,
         ]
       );
       lessonsCreated++;

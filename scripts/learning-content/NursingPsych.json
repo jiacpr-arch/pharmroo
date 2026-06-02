@@ -1,0 +1,200 @@
+{
+  "subject": "NursingPsych",
+  "unit": {
+    "title_th": "การพยาบาลสุขภาพจิตและจิตเวชศาสตร์",
+    "description_th": "Schizophrenia, mood disorders, anxiety, suicide assessment และ psychiatric emergencies",
+    "icon": "🧠"
+  },
+  "lessons": [
+    {
+      "title_th": "Schizophrenia & Mood Disorders",
+      "subtitle_th": "อาการ ยาจิตเวช ADR และการพยาบาล",
+      "icon": "💊",
+      "est_minutes": 11,
+      "xp_reward": 18,
+      "cards": [
+        { "card_type": "concept", "title_th": "Schizophrenia — Positive vs Negative", "body_md": "**Positive symptoms** (เพิ่ม):\n- **H**allucinations (auditory พบบ่อยสุด)\n- **D**elusions (paranoid, grandiose, reference)\n- **D**isorganized speech (loose association, word salad)\n- **D**isorganized behavior\n\n**Negative symptoms** (ลด — รักษายาก):\n- **A**ffective flattening\n- **A**logia (พูดน้อย)\n- **A**volition (ขาดแรงจูงใจ)\n- **A**nhedonia (ไม่ enjoy)\n- **A**sociality (แยกตัว)\n\n**Cognitive:** attention, memory, executive function ลด\n\n**Diagnosis:** อาการ ≥ 6 เดือน, ≥ 1 เดือน active phase, รวมอาการหลัก ≥ 2 อย่าง" },
+        { "card_type": "concept", "title_th": "Antipsychotic — Typical vs Atypical", "body_md": "**Typical (1st gen) — D2 block:**\n- Haloperidol, chlorpromazine, fluphenazine\n- รักษา positive ดี, negative แย่\n- **EPS, NMS, TD บ่อย**\n\n**Atypical (2nd gen) — D2 + 5HT2A:**\n- Risperidone, olanzapine, quetiapine, aripiprazole, clozapine\n- รักษา negative ดีขึ้น\n- **Metabolic syndrome** (น้ำหนักขึ้น, DM, dyslipidemia)\n- **Clozapine** — agranulocytosis (CBC weekly), seizure, myocarditis\n\n**Long-acting injection (LAI):**\n- Haloperidol decanoate, risperidone Consta, paliperidone\n- ใช้กรณี compliance ต่ำ" },
+        { "card_type": "warning", "title_th": "EPS — Extrapyramidal Symptoms", "body_md": "**4 ประเภท:**\n\n1. **Dystonia** (เฉียบพลัน ชั่วโมง-วัน):\n- เกร็งกล้ามเนื้อตา (oculogyric crisis), คอ (torticollis), ลำตัว\n- รักษา: **diphenhydramine 50 mg IM/IV** หรือ benztropine\n\n2. **Akathisia** (วัน-สัปดาห์):\n- กระวนกระวาย เดินไปมา\n- รักษา: ลด dose / propranolol / BZD\n\n3. **Pseudoparkinsonism** (สัปดาห์-เดือน):\n- Tremor, rigidity, mask face\n- รักษา: anticholinergic (benztropine), reduce dose\n\n4. **Tardive Dyskinesia** (เดือน-ปี — **มักไม่หาย**):\n- การเคลื่อนไหวเป็นจังหวะของปาก ลิ้น หน้า\n- เปลี่ยนเป็น atypical / clozapine, valbenazine" },
+        { "card_type": "warning", "title_th": "Neuroleptic Malignant Syndrome (NMS)", "body_md": "**Triad + Hyperthermia + AMS** = LIFE-THREATENING\n\n**FALTER:**\n- **F**ever (> 38.5°C, อาจถึง 41°C)\n- **A**utonomic instability (BP swing, HR ↑, sweating)\n- **L**eukocytosis\n- **T**remor / rigidity (**lead-pipe**)\n- **E**levated CK (> 1000)\n- **R**igidity\n+ **AMS** (confusion → coma)\n\n**Management:**\n1. **หยุดยา antipsychotic ทันที**\n2. ICU, IV fluid, cooling\n3. **Dantrolene** (muscle relaxant) หรือ **Bromocriptine** (dopamine agonist)\n4. Benzodiazepine\n5. Renal protection (rhabdomyolysis → AKI)\n\nMortality 10-20%" },
+        { "card_type": "concept", "title_th": "Bipolar Disorder", "body_md": "**Bipolar I:** ≥ 1 manic episode (≥ 1 wk หรือ require hospitalization)\n**Bipolar II:** ≥ 1 hypomanic + ≥ 1 major depressive (no full mania)\n\n**Mania — DIGFAST:**\n- **D**istractibility\n- **I**rresponsibility / risky\n- **G**randiosity\n- **F**light of ideas\n- **A**ctivity ↑ / agitation\n- **S**leep ↓ (no need)\n- **T**alkativeness (pressured speech)\n\n**Treatment:**\n- **Acute mania:** Lithium / valproate / atypical (olanzapine, risperidone, quetiapine, aripiprazole)\n- **Maintenance:** Lithium (gold standard), lamotrigine (depression)\n- **Acute bipolar depression:** Quetiapine, lurasidone, lithium" },
+        { "card_type": "warning", "title_th": "Lithium — narrow therapeutic + toxicity", "body_md": "**Therapeutic:** 0.6-1.2 mEq/L (acute 0.8-1.2)\n\n**Pre-treatment:** TFT, renal, ECG, hCG (avoid pregnancy — Ebstein anomaly)\n\n**Toxicity signs:**\n- 1.5-2.0: GI upset, tremor coarse, ataxia, confusion\n- > 2.0: seizure, AMS, arrhythmia, AKI\n- > 3.0: coma, **dialysis indicated**\n\n**Trigger toxicity:** dehydration, NSAID, ACEI/ARB, thiazide, low Na intake\n\n**Patient education:**\n- ดื่มน้ำสม่ำเสมอ\n- กิน Na ปกติ (ลด Na = ↑ Li)\n- หลีกเลี่ยง NSAID\n- ตรวจ level Q3-6 mo, TSH, Cr\n- หยุดยา 24 ชม. ก่อนผ่าตัด" },
+        { "card_type": "concept", "title_th": "Major Depressive Disorder — SIGECAPS", "body_md": "DSM-5: ≥ 5 อาการ ≥ 2 สัปดาห์ (1 ใน 2 ต้องมี: depressed mood OR anhedonia)\n\n- **S**leep change (insomnia / hypersomnia)\n- **I**nterest loss (anhedonia)\n- **G**uilt / worthlessness\n- **E**nergy ↓ (fatigue)\n- **C**oncentration ↓\n- **A**ppetite / weight change\n- **P**sychomotor agitation / retardation\n- **S**uicide ideation\n\n**Treatment:**\n- **SSRI** (sertraline, fluoxetine, escitalopram) — 1st line\n- ใช้เวลา 4-6 สัปดาห์เห็นผล\n- Black box: **suicidality** เพิ่มในเด็ก/วัยรุ่น 2-4 สัปดาห์แรก\n- **Serotonin syndrome** ถ้าใช้ร่วม MAOI, tramadol, linezolid" },
+        { "card_type": "warning", "title_th": "Serotonin Syndrome", "body_md": "**Triad:**\n1. **AMS** (agitation, confusion)\n2. **Autonomic instability** (HR↑, BP swing, sweating, hyperthermia)\n3. **Neuromuscular** (hyperreflexia, clonus, tremor, rigidity)\n\n**Trigger:** SSRI + MAOI/tramadol/linezolid/triptan/SJW\n\n**Management:**\n- หยุดยา\n- Supportive (BZD for agitation, cooling)\n- **Cyproheptadine** (5HT antagonist) ถ้ารุนแรง\n\n**ต่างจาก NMS:** SS — onset เร็ว ชม., hyperreflexia/clonus; NMS — onset วัน, lead-pipe rigidity" },
+        { "card_type": "qa", "title_th": "ตัวอย่างข้อสอบ — Acute dystonia", "body_md": "**Q:** ผู้ป่วยรับ haloperidol 5 mg IM 2 ชม.ก่อน มีอาการกลอกตาขึ้นเอง ขากรรไกรเกร็ง พูดไม่ได้ การพยาบาลทำอันดับแรก?\n\n**A:** **Diphenhydramine 50 mg IM/IV** หรือ benztropine 1-2 mg IM/IV หาย ในไม่กี่นาที + reassure (ผู้ป่วยกลัวมาก) + แจ้งแพทย์เพื่อพิจารณายา" }
+      ],
+      "quiz_questions": [
+        {
+          "scenario": "ผู้ป่วย schizophrenia ใช้ haloperidol 10 mg/day มา 5 วัน มีไข้ 39.5°C BP 160/100 แล้ว 90/60 กล้ามเนื้อแข็ง lead-pipe CK 2500 confusion พยาบาลควรทำอันดับแรก",
+          "choices": [
+            { "label": "A", "text": "ให้ diphenhydramine IV" },
+            { "label": "B", "text": "หยุด haloperidol ทันที + ICU + IV fluid + cooling + dantrolene/bromocriptine" },
+            { "label": "C", "text": "เพิ่มขนาด haloperidol" },
+            { "label": "D", "text": "ให้ benztropine PO" },
+            { "label": "E", "text": "เปลี่ยนเป็น chlorpromazine" }
+          ],
+          "correct_answer": "B",
+          "difficulty": "hard",
+          "explanation": "NMS = FALTER + AMS — life-threatening หยุดยา + ICU + dantrolene/bromocriptine",
+          "detailed_explanation": {
+            "summary": "NMS = STOP antipsychotic + ICU support + dantrolene/bromocriptine",
+            "reason": "Fever + autonomic instability + lead-pipe rigidity + ↑CK + AMS = NMS classic ห้ามให้ antipsychotic เพิ่ม",
+            "choices": [
+              { "label": "A", "text": "Diphenhydramine", "is_correct": false, "explanation": "ใช้ใน dystonia ไม่ใช่ NMS" },
+              { "label": "B", "text": "หยุด + ICU + dantrolene", "is_correct": true, "explanation": "ถูก" },
+              { "label": "C", "text": "เพิ่ม dose", "is_correct": false, "explanation": "อันตรายถึงตาย" },
+              { "label": "D", "text": "Benztropine", "is_correct": false, "explanation": "ไม่ใช่ NMS treatment" },
+              { "label": "E", "text": "Chlorpromazine", "is_correct": false, "explanation": "ยังเป็น antipsychotic" }
+            ],
+            "key_takeaway": "NMS: STOP antipsychotic, ICU, dantrolene/bromocriptine"
+          }
+        },
+        {
+          "scenario": "ผู้ป่วย bipolar I ใช้ lithium 1200 mg/day มา 1 ปี ปัจจุบันท้องเสีย 3 วัน ไม่ดื่มน้ำพอ บ่นมือสั่น คลื่นไส้ ataxia สับสน Li level 2.3 mEq/L ควรทำอันดับแรก",
+          "choices": [
+            { "label": "A", "text": "เพิ่มขนาด lithium" },
+            { "label": "B", "text": "หยุด lithium + IV NSS hydration + monitor neurolog + ถ้า Li > 3.0 หรืออาการรุนแรง → hemodialysis" },
+            { "label": "C", "text": "เพิ่ม NSAID แก้ปวด" },
+            { "label": "D", "text": "ให้ thiazide diuretic" },
+            { "label": "E", "text": "ลด Na intake" }
+          ],
+          "correct_answer": "B",
+          "difficulty": "medium",
+          "explanation": "Li toxicity 2.3 + neuro symptoms → หยุด Li, hydrate, dialysis ถ้ารุนแรง",
+          "detailed_explanation": {
+            "summary": "Li toxicity: stop drug + IV fluid + dialysis if severe (Li>3 or neuro/cardiac)",
+            "reason": "Trigger dehydration (diarrhea) — Li reabsorb มาก ↑ level NSAID/thiazide/ACEI ยิ่ง ↑ Li",
+            "choices": [
+              { "label": "A", "text": "เพิ่ม dose", "is_correct": false, "explanation": "อันตราย — toxic อยู่แล้ว" },
+              { "label": "B", "text": "หยุด + hydrate + ?dialysis", "is_correct": true, "explanation": "ถูก" },
+              { "label": "C", "text": "NSAID", "is_correct": false, "explanation": "เพิ่ม Li level" },
+              { "label": "D", "text": "Thiazide", "is_correct": false, "explanation": "เพิ่ม Li level" },
+              { "label": "E", "text": "ลด Na", "is_correct": false, "explanation": "เพิ่ม Li reabsorption" }
+            ],
+            "key_takeaway": "Li toxicity trigger: dehydration, NSAID, thiazide, ACEI/ARB, low Na"
+          }
+        },
+        {
+          "scenario": "ผู้ป่วย depression รับ sertraline 100 mg/day มา 2 สัปดาห์ ปวดหลังกินยา tramadol เพิ่มเอง 3 วัน วันนี้สับสน HR 130 BP 170/100 hyperreflexia + clonus ที่ขา ตัวร้อน 39°C ควรคิดถึง",
+          "choices": [
+            { "label": "A", "text": "NMS" },
+            { "label": "B", "text": "Serotonin syndrome → หยุดยา + supportive + พิจารณา cyproheptadine" },
+            { "label": "C", "text": "Heat stroke ธรรมดา" },
+            { "label": "D", "text": "Alcohol withdrawal" },
+            { "label": "E", "text": "Anxiety attack" }
+          ],
+          "correct_answer": "B",
+          "difficulty": "medium",
+          "explanation": "SSRI + tramadol → serotonin syndrome (hyperreflexia + clonus + autonomic + hyperthermia)",
+          "detailed_explanation": {
+            "summary": "Serotonin syndrome: SSRI/SNRI + tramadol/MAOI/triptan → hyperreflexia, clonus",
+            "reason": "SS differs from NMS: SS=fast onset, hyperreflexia/clonus; NMS=days onset, lead-pipe rigidity",
+            "choices": [
+              { "label": "A", "text": "NMS", "is_correct": false, "explanation": "NMS = lead-pipe ไม่ใช่ hyperreflexia" },
+              { "label": "B", "text": "Serotonin syndrome", "is_correct": true, "explanation": "ถูก" },
+              { "label": "C", "text": "Heat stroke", "is_correct": false, "explanation": "ไม่อธิบาย neuro findings" },
+              { "label": "D", "text": "Alcohol withdrawal", "is_correct": false, "explanation": "ไม่มี history" },
+              { "label": "E", "text": "Anxiety", "is_correct": false, "explanation": "ไม่อธิบาย hyperthermia + clonus" }
+            ],
+            "key_takeaway": "SS: SSRI + tramadol/MAOI → hyperreflexia + clonus + autonomic; antidote = cyproheptadine"
+          }
+        }
+      ]
+    },
+    {
+      "title_th": "Anxiety, Suicide & Psychiatric Emergencies",
+      "subtitle_th": "Anxiety disorders, suicide risk, de-escalation",
+      "icon": "🆘",
+      "est_minutes": 10,
+      "xp_reward": 18,
+      "cards": [
+        { "card_type": "concept", "title_th": "Anxiety Disorders — Overview", "body_md": "**GAD:** กังวล excessive > 6 เดือน หลายเรื่อง, restlessness, fatigue, irritable, muscle tension, insomnia\n\n**Panic Disorder:** sudden intense fear < 10 นาที + ≥ 4 อาการ (palpitation, sweat, dyspnea, choking, chest pain, derealization, fear of dying)\n\n**Phobia:** fear specific\n\n**Social Anxiety:** ในที่สาธารณะ\n\n**Treatment:**\n- **SSRI/SNRI** — 1st line (long-term)\n- **BZD** — short-term acute attack (เสี่ยง dependence)\n- **CBT** — exposure therapy\n- Beta-blocker (propranolol) — performance anxiety" },
+        { "card_type": "concept", "title_th": "PTSD — Criteria", "body_md": "**Exposure to traumatic event** + ≥ 1 month:\n\n**4 cluster symptoms:**\n1. **Intrusion** — flashback, nightmare, intrusive thought\n2. **Avoidance** — หลีกเลี่ยง reminder\n3. **Negative cognition/mood** — guilt, fear, anhedonia\n4. **Arousal** — hypervigilance, startle, irritability, sleep\n\n**Acute Stress Disorder:** อาการคล้าย < 1 เดือน\n\n**Treatment:**\n- SSRI (sertraline, paroxetine) — FDA approved\n- Trauma-focused CBT\n- EMDR\n- Prazosin — nightmares\n- **หลีกเลี่ยง BZD** (ทำให้ PTSD แย่ลง long-term)" },
+        { "card_type": "concept", "title_th": "Suicide Risk Assessment — SAD PERSONS", "body_md": "- **S**ex (male > female completed; female > male attempt)\n- **A**ge (< 19, > 45)\n- **D**epression\n- **P**revious attempt (strongest predictor!)\n- **E**thanol/drug abuse\n- **R**ational thinking loss (psychosis)\n- **S**ocial support lack\n- **O**rganized plan\n- **N**o spouse\n- **S**ickness chronic\n\n**คะแนน:**\n- 0-2: minimal\n- 3-4: low\n- 5-6: moderate (close follow)\n- 7-10: high (admit)" },
+        { "card_type": "tip", "title_th": "Suicidal patient — การพยาบาล", "body_md": "**1. ถามตรง — ถามชัด:**\n- \"คุณคิดอยากตายไหม?\"\n- \"คุณวางแผนอย่างไร? เมื่อไหร่?\"\n- ถามไม่ทำให้เพิ่มความเสี่ยง (เป็น myth)\n\n**2. Safety contract** (verbal, written — แต่ไม่ใช้แทน clinical judgment)\n\n**3. Safety in ward:**\n- 1:1 sitter / continuous observation\n- Remove sharp, belt, rope, cord, plastic bag, glass\n- เช็คห้องน้ำใช้ไม่ได้\n- Medication ดูแลโดยพยาบาล\n- ที่นอน low, no high windows\n\n**4. Family education** + restrict means (lock medications, weapons)" },
+        { "card_type": "warning", "title_th": "Violent / Agitated Patient — De-escalation", "body_md": "**Step 1 — Verbal de-escalation (always first):**\n- Calm tone, ระยะห่าง 2 arm's length\n- ไม่ touch patient\n- Active listening\n- เสนอ choices (\"คุณอยากนั่งตรงไหน?\")\n- ใช้ first name\n- ไม่หันหลังให้\n- มีทางออก\n\n**Step 2 — Show of force:** หลายคนเข้าไป (อาจ deter)\n\n**Step 3 — Medication:** Haloperidol 5 mg + lorazepam 2 mg IM (\"5+2\") หรือ olanzapine IM\n\n**Step 4 — Physical restraint** (last resort):\n- Doctor order + time limit\n- 4-point restraint\n- Check Q15min: circulation, skin, breathing, ROM\n- Toilet, fluid, food\n- Documentation\n\n**Step 5 — Seclusion** (alternative to restraint)" },
+        { "card_type": "concept", "title_th": "Eating Disorders", "body_md": "**Anorexia Nervosa:**\n- BMI < 18.5 / restrict intake\n- Fear of gaining weight\n- Body image distortion\n- Amenorrhea (3+ consecutive)\n- **Refeeding syndrome:** hypoP, hypoK, hypoMg, thiamine deficiency, edema, arrhythmia → start refeeding **slow** + supplement\n\n**Bulimia Nervosa:**\n- BMI usually normal\n- Binge + compensatory (vomit, laxative, exercise)\n- Russell's sign (knuckle callus)\n- Dental erosion\n- Electrolyte (hypoK from vomit), Mallory-Weiss\n\n**Treatment:**\n- CBT, family-based therapy (Maudsley) — adolescent AN\n- Fluoxetine — bulimia (avoid bupropion: seizure)" },
+        { "card_type": "concept", "title_th": "Substance Use — Withdrawal", "body_md": "**Alcohol withdrawal:**\n- 6-12 hr: tremor, anxiety, nausea\n- 12-48 hr: hallucinations (often visual), seizure\n- 48-96 hr: **Delirium tremens (DT)** — AMS + autonomic instability + hallucination — **mortality 5%**\n- **Treatment:** Benzodiazepine (lorazepam, diazepam) — CIWA protocol\n- + Thiamine 100 mg before glucose (prevent Wernicke)\n- + Folate, multivitamin, electrolyte\n\n**Opioid withdrawal:**\n- Yawning, lacrimation, rhinorrhea, sweating, GI cramp, diarrhea, dilated pupil\n- **ไม่อันตรายถึงตาย** (ตรงข้ามกับ alcohol)\n- Treatment: **Methadone** / **Buprenorphine** / clonidine + symptomatic\n\n**Benzodiazepine withdrawal:**\n- Similar to alcohol — seizure-risk\n- **อันตราย** — taper gradually, ห้ามหยุด abruptly" },
+        { "card_type": "concept", "title_th": "Therapeutic communication — DOs/DON'Ts", "body_md": "**DOs:**\n- Open-ended Q (\"คุณรู้สึกอย่างไร?\")\n- Reflection (\"คุณกำลังโกรธอยู่\")\n- Silence — ใช้พื้นที่ให้คิด\n- Validation\n- Empathy (\"ฉันเข้าใจว่ามันยาก\")\n- Restate / clarify\n\n**DON'Ts:**\n- Yes/No Q (ปิด conversation)\n- Why Q (\"ทำไมคิดแบบนั้น?\" — defensive)\n- False reassurance (\"ไม่ต้องห่วง ทุกอย่างจะดี\")\n- Giving advice prematurely\n- Changing subject\n- Judging / agreeing-disagreeing with delusion\n- Touching agitated patient" },
+        { "card_type": "qa", "title_th": "ตัวอย่างข้อสอบ — Suicidal patient", "body_md": "**Q:** ผู้ป่วยซึมเศร้าบอกว่า \"ฉันมียาเก็บอยู่ที่บ้าน 30 เม็ด คืนพรุ่งนี้ที่บ้านไม่มีใคร\" พยาบาลควรประเมินและทำอย่างไร?\n\n**A:** **HIGH RISK** (specific plan + means + opportunity + isolation) — admit ทันที, 1:1 observation, remove means (call family เอายาออก), psych referral STAT — **ห้ามปล่อยกลับบ้าน**" }
+      ],
+      "quiz_questions": [
+        {
+          "scenario": "ผู้ป่วย agitated ในแผนกฉุกเฉิน กำลังตะโกน ขู่ทำร้ายเจ้าหน้าที่ ถือเก้าอี้ พยาบาลควรทำอันดับแรก",
+          "choices": [
+            { "label": "A", "text": "Physical restraint ทันที" },
+            { "label": "B", "text": "Verbal de-escalation (calm tone, ระยะปลอดภัย, ไม่ต้านตรง, เสนอ choices) พร้อมเรียกความช่วยเหลือ" },
+            { "label": "C", "text": "ฉีด haloperidol IM ทันทีโดยไม่บอก" },
+            { "label": "D", "text": "ตะโกนกลับเพื่อแสดงอำนาจ" },
+            { "label": "E", "text": "ปล่อยให้ผู้ป่วยอยู่คนเดียว" }
+          ],
+          "correct_answer": "B",
+          "difficulty": "medium",
+          "explanation": "Verbal de-escalation = first line; physical/chemical restraint = last resort",
+          "detailed_explanation": {
+            "summary": "Agitation: verbal → show of force → medication → restraint (last)",
+            "reason": "Verbal de-escalation มี evidence ลด restraint use; restraint เพิ่ม injury + trauma",
+            "choices": [
+              { "label": "A", "text": "Restraint ทันที", "is_correct": false, "explanation": "Last resort" },
+              { "label": "B", "text": "Verbal de-escalation", "is_correct": true, "explanation": "ถูก — first line" },
+              { "label": "C", "text": "IM ทันที", "is_correct": false, "explanation": "ลอง verbal ก่อน + บอกผู้ป่วยถ้าให้ยา" },
+              { "label": "D", "text": "ตะโกน", "is_correct": false, "explanation": "Escalate" },
+              { "label": "E", "text": "ปล่อยคนเดียว", "is_correct": false, "explanation": "ไม่ปลอดภัย" }
+            ],
+            "key_takeaway": "Agitation: verbal de-escalation ก่อน, restraint เป็นทางเลือกสุดท้าย"
+          }
+        },
+        {
+          "scenario": "ผู้ป่วยติดสุรา admit hospitalization day 2 หลัง stop alcohol อาการ tremor, agitation, BP 180/100 HR 130 hallucinate ภาพแมงมุม การพยาบาลที่เหมาะที่สุด",
+          "choices": [
+            { "label": "A", "text": "ให้ haloperidol IM ทันที" },
+            { "label": "B", "text": "Lorazepam IV ตาม CIWA protocol + thiamine 100 mg IV ก่อน glucose + folate + electrolyte" },
+            { "label": "C", "text": "ให้ alcohol ดื่มเล็กน้อย" },
+            { "label": "D", "text": "ปล่อยให้ผู้ป่วยพักผ่อน" },
+            { "label": "E", "text": "Restraint + glucose IV first" }
+          ],
+          "correct_answer": "B",
+          "difficulty": "medium",
+          "explanation": "Alcohol withdrawal → BZD + thiamine ก่อน glucose (Wernicke prevention)",
+          "detailed_explanation": {
+            "summary": "Alcohol withdrawal: BZD + thiamine BEFORE glucose",
+            "reason": "BZD ป้องกัน DT + seizure; ให้ glucose ก่อน thiamine อาจกระตุ้น Wernicke encephalopathy ในผู้ติดสุราที่ B1 พร่อง",
+            "choices": [
+              { "label": "A", "text": "Haloperidol", "is_correct": false, "explanation": "ลดเกณฑ์ชัก, ไม่ใช่ 1st line" },
+              { "label": "B", "text": "BZD + thiamine ก่อน glucose", "is_correct": true, "explanation": "ถูก" },
+              { "label": "C", "text": "ให้ alcohol", "is_correct": false, "explanation": "ไม่ใช่มาตรฐาน" },
+              { "label": "D", "text": "ปล่อยพัก", "is_correct": false, "explanation": "เสี่ยง DT" },
+              { "label": "E", "text": "Restraint + glucose first", "is_correct": false, "explanation": "Glucose ก่อน thiamine = Wernicke" }
+            ],
+            "key_takeaway": "Alcohol withdrawal: CIWA + BZD + thiamine BEFORE glucose"
+          }
+        },
+        {
+          "scenario": "ผู้ป่วย anorexia nervosa BMI 14 admit เริ่ม refeeding day 2 ฟอสฟอรัสลดลงเหลือ 1.5 mg/dL หายใจเหนื่อย ขาบวม ECG: PR prolonged ภาวะใดและจัดการอย่างไร",
+          "choices": [
+            { "label": "A", "text": "Refeeding syndrome → ชะลอ refeeding + replace phosphorus/K/Mg + thiamine + monitor cardiac" },
+            { "label": "B", "text": "เพิ่ม calorie ทันที 2 เท่า" },
+            { "label": "C", "text": "ให้ furosemide ลดบวม" },
+            { "label": "D", "text": "หยุดอาหารทั้งหมด" },
+            { "label": "E", "text": "TPN high glucose ทันที" }
+          ],
+          "correct_answer": "A",
+          "difficulty": "hard",
+          "explanation": "Refeeding syndrome — hypoP, hypoK, hypoMg, thiamine deficiency, fluid overload — start slow + supplement",
+          "detailed_explanation": {
+            "summary": "Refeeding: slow + electrolyte/thiamine; avoid rapid calorie",
+            "reason": "Insulin response to refeeding shifts electrolytes intracellular → severe hypoP/K/Mg, B1 demand ↑ → cardiac arrhythmia/HF",
+            "choices": [
+              { "label": "A", "text": "Slow + replace + B1", "is_correct": true, "explanation": "ถูก" },
+              { "label": "B", "text": "เพิ่ม calorie 2 เท่า", "is_correct": false, "explanation": "ทำให้แย่ลง" },
+              { "label": "C", "text": "Furosemide", "is_correct": false, "explanation": "บวมจาก fluid shift ไม่ใช่ HF" },
+              { "label": "D", "text": "หยุดอาหาร", "is_correct": false, "explanation": "ต้อง refeed แต่ slow" },
+              { "label": "E", "text": "TPN high glucose", "is_correct": false, "explanation": "ทำให้แย่ลง" }
+            ],
+            "key_takeaway": "Refeeding syndrome: hypoP/K/Mg + B1, start LOW go SLOW"
+          }
+        }
+      ]
+    }
+  ]
+}

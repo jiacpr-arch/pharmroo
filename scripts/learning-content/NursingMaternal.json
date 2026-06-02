@@ -1,0 +1,199 @@
+{
+  "subject": "NursingMaternal",
+  "unit": {
+    "title_th": "การพยาบาลมารดาและทารก",
+    "description_th": "Antenatal care, postpartum, breastfeeding, newborn assessment และ high-risk pregnancy",
+    "icon": "🤱"
+  },
+  "lessons": [
+    {
+      "title_th": "Antenatal Care & High-Risk Pregnancy",
+      "subtitle_th": "ANC visits, GDM, PIH/preeclampsia",
+      "icon": "🤰",
+      "est_minutes": 11,
+      "xp_reward": 18,
+      "cards": [
+        { "card_type": "concept", "title_th": "ANC Schedule (Thai MOH)", "body_md": "**8 ครั้ง (WHO 2016 recommendation):**\n- ก่อน 12 wk: ครั้งที่ 1 (booking)\n- 20, 26, 30, 34, 36, 38, 40 wk\n\n**Routine ทุก visit:**\n- BW, BP, urine (protein, sugar)\n- Fundal height, FHS, fetal movement\n- Edema, danger signs\n\n**Lab booking:**\n- CBC, blood group + Rh, VDRL, HIV, HBsAg\n- Urinalysis, OGTT (24-28 wk)\n- Thalassemia screen, rubella titer" },
+        { "card_type": "concept", "title_th": "Pregnancy danger signs", "body_md": "**Pre-eclampsia warning:**\n- ปวดศีรษะรุนแรง / vision change\n- Edema กดบุ๋ม (รวม face/hand)\n- Epigastric pain (HELLP)\n\n**Bleeding:**\n- < 20 wk: abortion, ectopic, molar\n- > 20 wk: placenta previa (ไม่เจ็บ), abruption (เจ็บมาก)\n\n**Preterm labor:**\n- ปวดท้องเป็นพัก\n- น้ำเดิน\n- มีมูกเลือด\n\n**Fetal:**\n- Quickening ลด/หายไป\n- DFM (decreased fetal movement) < 10 ครั้ง/2 ชม." },
+        { "card_type": "concept", "title_th": "GDM — Gestational Diabetes", "body_md": "**Screening 24-28 wk:**\n- 75g OGTT (1 step):\n  - FBS ≥ 92 หรือ 1hr ≥ 180 หรือ 2hr ≥ 153 = GDM\n\n**ความเสี่ยงต่อแม่:**\n- Preeclampsia, polyhydramnios\n- Birth canal injury\n- Future DM 50% ใน 10 ปี\n\n**ความเสี่ยงต่อทารก:**\n- Macrosomia, shoulder dystocia\n- Hypoglycemia แรกเกิด\n- RDS, jaundice\n- Future obesity/DM\n\n**รักษา:**\n- Diet + exercise first\n- ไม่คุม → **insulin** (metformin/glyburide ตามแพทย์)\n- BG target: FBS < 95, 1hr PP < 140, 2hr PP < 120" },
+        { "card_type": "concept", "title_th": "Pregnancy-Induced Hypertension (PIH)", "body_md": "**Gestational HT:** BP ≥ 140/90 หลัง 20 wk **ไม่มี** proteinuria\n\n**Preeclampsia:** BP ≥ 140/90 **+ proteinuria ≥ 300 mg/24h** หรือ end-organ damage\n- **Severe features:** BP ≥ 160/110, plt < 100k, AST/ALT 2× ULN, Cr > 1.1, pulmonary edema, neurologic symptom\n\n**Eclampsia:** Preeclampsia + **seizure**\n\n**HELLP syndrome:**\n- **H**emolysis\n- **E**levated **L**iver enzymes\n- **L**ow **P**latelet" },
+        { "card_type": "tip", "title_th": "การพยาบาล Preeclampsia / Eclampsia", "body_md": "**Severe preeclampsia / Eclampsia management:**\n\n**1. MgSO₄ — anticonvulsant แรกเลือก:**\n- Loading: 4-6 g IV ใน 15-20 นาที\n- Maintenance: 1-2 g/hr × 24 ชม. หลังคลอด\n- ระดับ therapeutic: 4-7 mg/dL\n\n**Monitor toxicity:**\n- DTR หาย (first sign) → Mg 8-12\n- RR < 12, urine < 100 mL/4hr\n- Cardiac arrest > 25\n\n**Antidote:** Calcium gluconate 1 g IV\n\n**2. BP control:** Labetalol IV หรือ hydralazine IV (target SBP < 160)\n\n**3. Delivery** — ทางออกของโรค (term: induce; preterm severe: deliver after steroid)\n\n**4. Seizure precaution:** ห้องเงียบ มืด ข้างเตียง suction + O₂ + Ca gluconate" },
+        { "card_type": "warning", "title_th": "Placenta previa vs Abruption", "body_md": "| | Previa | Abruption |\n|---|---|---|<\n| Bleeding | **painless** สดแดง | **painful** เลือดดำ |\n| Onset | gradual, recurrent | sudden |\n| Uterus | soft | rigid, board-like |\n| Fetal HS | usually normal | distress / absent |\n| US | placenta ปิด os | retroplacental clot |\n| Coagulopathy | rare | common (DIC) |\n\n**Previa:** ห้าม PV exam! CS เกือบเสมอ ถ้า bleed มาก\n\n**Abruption:** Emergency CS ถ้า fetal distress / unstable mom" },
+        { "card_type": "concept", "title_th": "Anemia of pregnancy", "body_md": "**Definition:**\n- Hb < 11 g/dL (1st & 3rd trimester)\n- Hb < 10.5 g/dL (2nd trimester)\n\n**Iron deficiency** พบบ่อยที่สุด (ต้องการ Fe 30-60 mg/day)\n\n**Folic acid:**\n- 400 μg ก่อนตั้งครรภ์ + 1st trimester (ป้องกัน NTD)\n- 4 mg ถ้าเคยมี NTD\n\n**Thalassemia screening** ในไทย (high prevalence):\n- MCV < 80 → DCIP / Hb typing คู่สามี-ภรรยา\n- ถ้าทั้งคู่มีพาหะ → genetic counseling + prenatal diagnosis" },
+        { "card_type": "qa", "title_th": "ตัวอย่างข้อสอบ — MgSO₄ toxicity", "body_md": "**Q:** หญิงตั้งครรภ์ severe preeclampsia ได้ MgSO₄ drip 2 g/hr ประเมินพบ DTR หายไป RR 10 ครั้ง/นาที พยาบาลควรทำอย่างไรอันดับแรก?\n\n**A:** **หยุด MgSO₄ ทันที** + ให้ **Calcium gluconate 1 g IV slow push** + แจ้งแพทย์ + monitor closely (RR, urine, ECG) ส่ง Mg level" }
+      ],
+      "quiz_questions": [
+        {
+          "scenario": "หญิงครรภ์ 32 wk BP 165/110 mmHg ปวดศีรษะ vision blurred protein 3+ Plt 80,000 AST 250 พยาบาลควรทำสิ่งใดอันดับแรก",
+          "choices": [
+            { "label": "A", "text": "Discharge home with anti-HT" },
+            { "label": "B", "text": "เริ่ม MgSO₄ loading 4-6 g IV + BP control + เตรียมส่งคลอด" },
+            { "label": "C", "text": "ให้ furosemide IV ลดบวม" },
+            { "label": "D", "text": "ให้ aspirin 81 mg PO" },
+            { "label": "E", "text": "รอ observation 24 ชม." }
+          ],
+          "correct_answer": "B",
+          "difficulty": "medium",
+          "explanation": "Severe preeclampsia + HELLP features → MgSO₄ seizure prophylaxis + BP control + delivery",
+          "detailed_explanation": {
+            "summary": "Severe preeclampsia/HELLP = MgSO₄ + BP control + delivery",
+            "reason": "Severe features (BP ≥ 160/110, Plt < 100k, AST 2× ULN, neuro symptom) = HELLP component → ต้อง deliver หลังเตรียมตัว",
+            "choices": [
+              { "label": "A", "text": "Discharge", "is_correct": false, "explanation": "อันตรายอย่างยิ่ง" },
+              { "label": "B", "text": "MgSO₄ + BP control + delivery", "is_correct": true, "explanation": "ถูก" },
+              { "label": "C", "text": "Furosemide", "is_correct": false, "explanation": "ไม่ใช่ first line, อาจทำให้ volume drop" },
+              { "label": "D", "text": "ASA", "is_correct": false, "explanation": "ASA ใช้ prevent ที่ < 16 wk ใน high risk; severe นี้ไม่ใช่ time" },
+              { "label": "E", "text": "Observe 24h", "is_correct": false, "explanation": "ต้อง intervene ทันที" }
+            ],
+            "key_takeaway": "Severe preeclampsia = MgSO₄ + control BP + plan delivery"
+          }
+        },
+        {
+          "scenario": "หญิงครรภ์ 34 wk มา ER เลือดออกทางช่องคลอด สีแดงสด ไม่มีอาการปวดท้อง มดลูกนุ่ม FHS ปกติ การพยาบาลข้อใดห้าม",
+          "choices": [
+            { "label": "A", "text": "เปิด IV NSS large bore" },
+            { "label": "B", "text": "ส่ง U/S ดูตำแหน่ง placenta" },
+            { "label": "C", "text": "PV examination (digital) เพื่อประเมิน cervix" },
+            { "label": "D", "text": "Monitor FHS continuous" },
+            { "label": "E", "text": "เตรียมเลือดและ informed consent" }
+          ],
+          "correct_answer": "C",
+          "difficulty": "easy",
+          "explanation": "Placenta previa (painless bleeding + soft uterus + normal FHS) ห้าม PV exam (digital) เพราะอาจกระตุ้น massive bleed",
+          "detailed_explanation": {
+            "summary": "Placenta previa = ห้าม PV digital exam",
+            "reason": "Digital exam อาจไปสัมผัส placenta ที่ปิด os → massive bleeding ตรวจด้วย U/S แทน ถ้าจำเป็นทำ speculum ดูได้เท่านั้น",
+            "choices": [
+              { "label": "A", "text": "IV NSS", "is_correct": false, "explanation": "ถูก ทำได้" },
+              { "label": "B", "text": "U/S", "is_correct": false, "explanation": "ถูก สิ่งที่ควรทำ" },
+              { "label": "C", "text": "PV digital", "is_correct": true, "explanation": "ห้าม! ตอบข้อนี้เพราะถาม \"ห้าม\"" },
+              { "label": "D", "text": "Monitor FHS", "is_correct": false, "explanation": "ถูก ทำได้" },
+              { "label": "E", "text": "เตรียมเลือด", "is_correct": false, "explanation": "ถูก ทำได้" }
+            ],
+            "key_takeaway": "Placenta previa: painless bleed → U/S ก่อน, ห้าม PV digital"
+          }
+        },
+        {
+          "scenario": "หญิงตั้งครรภ์ GDM diet-controlled BG 1-hr PP = 165 mg/dL ครั้งที่ 3 พยาบาลควรแนะนำต่อข้อใด",
+          "choices": [
+            { "label": "A", "text": "ลด carb เพิ่ม + ออกกำลังกายเดินหลังอาหาร 30 นาที + นัดแพทย์พิจารณา insulin" },
+            { "label": "B", "text": "หยุดวัด BG ที่บ้าน เพราะ stress" },
+            { "label": "C", "text": "เริ่ม metformin เอง" },
+            { "label": "D", "text": "งด CHO ทั้งหมด" },
+            { "label": "E", "text": "ไม่ต้องทำอะไร 165 ปกติ" }
+          ],
+          "correct_answer": "A",
+          "difficulty": "medium",
+          "explanation": "GDM target 1-hr PP < 140 ค่า 165 × 3 = ไม่คุม ต้อง intensify ลด carb + exercise + พิจารณา insulin",
+          "detailed_explanation": {
+            "summary": "GDM target 1-hr PP < 140, 2-hr PP < 120, FBS < 95",
+            "reason": "ไม่คุมแล้ว 3 ครั้ง = failed lifestyle, ต้อง medication insulin เป็น first line ใน pregnancy",
+            "choices": [
+              { "label": "A", "text": "Intensify + รพ.พิจารณา insulin", "is_correct": true, "explanation": "ถูก" },
+              { "label": "B", "text": "หยุดวัด BG", "is_correct": false, "explanation": "อันตราย" },
+              { "label": "C", "text": "Metformin เอง", "is_correct": false, "explanation": "ต้องปรึกษาแพทย์" },
+              { "label": "D", "text": "งด CHO ทั้งหมด", "is_correct": false, "explanation": "Ketosis เสี่ยง" },
+              { "label": "E", "text": "ปกติ", "is_correct": false, "explanation": "165 > 140 = ผิดปกติ" }
+            ],
+            "key_takeaway": "GDM target: FBS<95, 1h<140, 2h<120; failed diet → insulin"
+          }
+        }
+      ]
+    },
+    {
+      "title_th": "Postpartum, Breastfeeding & Newborn Care",
+      "subtitle_th": "การพยาบาลหลังคลอด ให้นมแม่ และดูแลทารกแรกเกิด",
+      "icon": "👶",
+      "est_minutes": 10,
+      "xp_reward": 18,
+      "cards": [
+        { "card_type": "concept", "title_th": "Postpartum Assessment — BUBBLE-HE", "body_md": "**B**reast — engorgement, nipple crack\n**U**terus — fundus firm, midline, level\n**B**ladder — distention (gives boggy uterus)\n**B**owel — passing gas, BM\n**L**ochia — rubra (1-3d) → serosa (4-10d) → alba (10-14d)\n**E**pisiotomy — REEDA (Redness, Edema, Ecchymosis, Discharge, Approximation)\n**H**oman's sign / homeostasis — DVT\n**E**motion — postpartum blues vs depression" },
+        { "card_type": "warning", "title_th": "Postpartum Hemorrhage (PPH)", "body_md": "**Definition:** Blood loss > 500 mL (vaginal) / 1000 mL (CS) ใน 24 ชม.\n\n**สาเหตุ — 4 T's:**\n- **T**one — uterine atony (พบบ่อยที่สุด 80%)\n- **T**rauma — laceration\n- **T**issue — retained placenta\n- **T**hrombin — coagulopathy\n\n**การพยาบาล atony — ลำดับ:**\n1. **Fundal massage** (firm) — first action!\n2. เปิด IV 2 large bore\n3. **Oxytocin 20-40 U** in NSS 1 L IV drip\n4. **Methylergonovine** 0.2 mg IM (avoid in HT)\n5. **Carboprost** (PGF2α) 0.25 mg IM (avoid in asthma)\n6. **Misoprostol** 800-1000 μg PR\n7. Tamponade balloon → surgery (uterine artery ligation, hysterectomy)" },
+        { "card_type": "concept", "title_th": "Lochia — assessment", "body_md": "**Lochia rubra:** วัน 1-3 สีแดง (เลือดมาก)\n**Lochia serosa:** วัน 4-10 สีชมพู-น้ำตาล\n**Lochia alba:** วัน 10-14+ สีเหลือง-ขาว\n\n**Amount:**\n- Scant: < 2.5 cm pad stain\n- Light: < 10 cm\n- Moderate: < 15 cm\n- **Heavy: > 15 cm หรือ saturated pad < 1 hr → notify!**\n\n**Abnormal:**\n- Foul smell → endometritis\n- Lochia rubra > 4 วัน / กลับมา → retained tissue\n- Clot ใหญ่กว่า lemon → atony / retained\n- Pad full < 15 นาที = massive PPH" },
+        { "card_type": "concept", "title_th": "Breastfeeding — LATCH score", "body_md": "**L**atch — รวมถึง areola\n**A**udible swallowing\n**T**ype of nipple (everted/flat/inverted)\n**C**omfort (breast/nipple)\n**H**old (positioning)\n\nคะแนน 0-2 ต่อข้อ รวม 0-10 ≥ 7 ดี\n\n**Position:** Cradle, cross-cradle, football, side-lying\n\n**Sign of good latch:**\n- ปากเปิดกว้าง\n- ริมฝีปากม้วนออก\n- คางชิดเต้านม\n- ได้ยินกลืน rhythmic\n- ไม่เจ็บแม่" },
+        { "card_type": "tip", "title_th": "Breastfeeding — common problems", "body_md": "**Engorgement (วัน 3-5):**\n- ให้นมบ่อย ทุก 2-3 ชม.\n- ประคบอุ่นก่อน เย็นหลัง\n- Manual / pump expression เล็กน้อย\n\n**Mastitis:**\n- ไข้ + เต้านมแดงร้อน เจ็บ\n- **ให้นมต่อ** (ไม่หยุด) + นวด + ATB (dicloxacillin)\n\n**Sore nipple:**\n- แก้ latch (ก่อนแก้ครีม)\n- Lanolin / น้ำนมตัวเองทาหลังให้\n- ไม่ใช้สบู่ที่หัวนม\n\n**Insufficient supply:**\n- ให้บ่อยขึ้น\n- Skin-to-skin\n- กิน-ดื่มพอ\n- หลีกเลี่ยง pacifier ใน 4-6 สัปดาห์แรก" },
+        { "card_type": "concept", "title_th": "Newborn assessment", "body_md": "**Vital signs newborn:**\n- HR 120-160\n- RR 30-60\n- Temp axillary 36.5-37.5°C\n\n**Reflex:**\n- **Rooting** — แตะแก้ม หันหา (หาย 3-4 mo)\n- **Sucking** (หาย 4-7 mo)\n- **Moro** (startle) (หาย 6 mo)\n- **Palmar/plantar grasp** (palmar หาย 6 mo, plantar 9 mo)\n- **Babinski** — แบ่งนิ้ว (ปกติถึง 1-2 ปี)\n- **Step** (หาย 2 mo)\n- **Tonic neck** (หาย 4-6 mo)\n\nReflex หายช้าหรือไม่มี = neurological problem" },
+        { "card_type": "warning", "title_th": "Neonatal jaundice", "body_md": "**Physiologic:**\n- เริ่มหลัง 24 ชม.\n- Peak วัน 3-5\n- หายภายใน 1 สัปดาห์ (term), 2 สัปดาห์ (preterm)\n- Bilirubin < 12 (term)\n\n**Pathologic — danger signs:**\n- **Jaundice ภายใน 24 ชม.แรก** = ABO/Rh incompatibility, hemolysis\n- Total bilirubin > 15 (term) / > 10 (preterm)\n- Rate of rise > 5 mg/dL/day\n- Direct bilirubin > 2 (biliary atresia, sepsis)\n- > 2 สัปดาห์ ยังไม่หาย\n\n**Phototherapy:** ตา/อวัยวะสืบพันธุ์ปกปิด, hydration, monitor temp + bili Q4-6h" },
+        { "card_type": "tip", "title_th": "Newborn care — first 24 hr", "body_md": "**Immediate (golden hour):**\n- Skin-to-skin + breastfeeding ใน 30-60 นาที\n- Delayed cord clamping 1-3 นาที (ถ้า stable)\n- Vit K 1 mg IM (ป้องกัน HDN)\n- Eye ointment (tetracycline/erythromycin) ป้องกัน gonococcal\n- HBV1 ภายใน 24 ชม. (BCG ก่อนกลับบ้าน)\n\n**Routine:**\n- Bath หลัง temp stable (≥ 6 ชม.)\n- Cord care — แห้ง สะอาด (ไม่ต้องใช้ alcohol routine)\n- Screen: TSH, PKU heel prick (วัน 2-3)\n- Hearing screen ก่อนกลับบ้าน" },
+        { "card_type": "qa", "title_th": "ตัวอย่างข้อสอบ — PPH atony", "body_md": "**Q:** หลังคลอด 30 นาที พบ uterus soft, boggy, อยู่เหนือ umbilicus, lochia rubra heavy พยาบาลควรทำสิ่งใดอันดับแรก?\n\n**A:** **Fundal massage** (firm circular motion) — first action เสมอใน atony พร้อมขอความช่วยเหลือ + เปิด IV + oxytocin + ประเมิน bladder (boggy uterus มักจากกระเพาะปัสสาวะเต็ม)" }
+      ],
+      "quiz_questions": [
+        {
+          "scenario": "หลังคลอด 2 ชั่วโมง uterus soft, boggy, อยู่เหนือ umbilicus 2 cm ค่อนไป R lochia heavy พยาบาลควรทำสิ่งใดอันดับแรก",
+          "choices": [
+            { "label": "A", "text": "ให้ Methylergonovine 0.2 mg IM ทันที" },
+            { "label": "B", "text": "Fundal massage และให้ผู้ป่วยปัสสาวะ (ประเมินกระเพาะปัสสาวะเต็ม)" },
+            { "label": "C", "text": "ส่ง OR hysterectomy" },
+            { "label": "D", "text": "ให้ ATB IV" },
+            { "label": "E", "text": "Hold uterus + รออาการดีขึ้น" }
+          ],
+          "correct_answer": "B",
+          "difficulty": "easy",
+          "explanation": "Boggy uterus deviated = bladder distention ดัน uterus first action = fundal massage + bladder empty",
+          "detailed_explanation": {
+            "summary": "Boggy + deviated = bladder full → massage + void",
+            "reason": "กระเพาะปัสสาวะเต็มดัน uterus ไม่ให้ contract → atony pattern แก้ด้วย empty bladder ก่อน (catheter ถ้าจำเป็น) + massage",
+            "choices": [
+              { "label": "A", "text": "Methylergonovine", "is_correct": false, "explanation": "Step 2 หลัง oxytocin + ห้ามใน HT" },
+              { "label": "B", "text": "Massage + empty bladder", "is_correct": true, "explanation": "ถูก" },
+              { "label": "C", "text": "Hysterectomy", "is_correct": false, "explanation": "Last resort" },
+              { "label": "D", "text": "ATB", "is_correct": false, "explanation": "ไม่ใช่ infection" },
+              { "label": "E", "text": "รอ", "is_correct": false, "explanation": "PPH ต้องจัดการทันที" }
+            ],
+            "key_takeaway": "PPH atony: Massage → Bladder → Oxytocin → Methergine → PGF2α → Misoprostol → Surgery"
+          }
+        },
+        {
+          "scenario": "ทารกแรกเกิดอายุ 18 ชั่วโมง พบ jaundice ที่ใบหน้า + อก ลำตัวเริ่มเหลือง bilirubin 14 mg/dL เลือดแม่ O Rh+, ทารก A Rh+ พยาบาลควรประเมินอะไรเป็นสำคัญ",
+          "choices": [
+            { "label": "A", "text": "Physiologic ปกติ ไม่ต้องทำอะไร" },
+            { "label": "B", "text": "Pathologic (jaundice < 24 ชม. + ABO incompatibility) — เตรียม phototherapy, ตรวจ Coombs, monitor bili Q4-6h" },
+            { "label": "C", "text": "เปลี่ยนนมแม่เป็น formula" },
+            { "label": "D", "text": "งดให้นม 24 ชั่วโมง" },
+            { "label": "E", "text": "ให้ Vit K ซ้ำ" }
+          ],
+          "correct_answer": "B",
+          "difficulty": "medium",
+          "explanation": "Jaundice ภายใน 24 ชม.แรก = pathologic + แม่ O ทารก A = ABO incompatibility → phototherapy + Coombs test",
+          "detailed_explanation": {
+            "summary": "Jaundice < 24h = pathologic; แม่O ลูก A/B = ABO incompatibility",
+            "reason": "Physiologic เริ่มหลัง 24 ชม. < 24 ชม. = hemolysis (ABO/Rh/G6PD/sepsis) ABO incompatibility (mother type O, infant A or B) เป็นสาเหตุพบบ่อย",
+            "choices": [
+              { "label": "A", "text": "Physiologic", "is_correct": false, "explanation": "< 24h = pathologic" },
+              { "label": "B", "text": "ABO incompat workup", "is_correct": true, "explanation": "ถูก" },
+              { "label": "C", "text": "เปลี่ยนเป็น formula", "is_correct": false, "explanation": "Breastfeeding ดีต่อ bilirubin clearance" },
+              { "label": "D", "text": "งดนม 24h", "is_correct": false, "explanation": "อันตราย dehydration" },
+              { "label": "E", "text": "Vit K ซ้ำ", "is_correct": false, "explanation": "ไม่เกี่ยวกับ jaundice" }
+            ],
+            "key_takeaway": "Jaundice in < 24h = pathologic, ต้อง workup hemolysis"
+          }
+        },
+        {
+          "scenario": "มารดาให้นมลูก วันที่ 4 หลังคลอด บ่นเต้านมแข็งคัด เจ็บ ไม่มีไข้ ลูกดูดได้ดี การพยาบาลที่เหมาะสมที่สุด",
+          "choices": [
+            { "label": "A", "text": "หยุดให้นมและให้ formula" },
+            { "label": "B", "text": "ATB ทันที + bromocriptine หยุดน้ำนม" },
+            { "label": "C", "text": "Engorgement → ให้นมบ่อยขึ้น (q2-3h) + ประคบอุ่นก่อน เย็นหลัง + express เล็กน้อย" },
+            { "label": "D", "text": "หยุดให้นมข้างที่คัด" },
+            { "label": "E", "text": "งดน้ำเด็ดขาด" }
+          ],
+          "correct_answer": "C",
+          "difficulty": "easy",
+          "explanation": "Engorgement (วัน 3-5 ไม่มีไข้) = ให้นมบ่อย + warm before / cold after + manual express",
+          "detailed_explanation": {
+            "summary": "Engorgement = feed often + warm before + cold after",
+            "reason": "การหยุดให้นมยิ่งทำให้แย่ลง (มีนมคั่ง → mastitis) ให้บ่อย, warm พักก่อน, cold ลดบวมหลัง",
+            "choices": [
+              { "label": "A", "text": "หยุดให้นม", "is_correct": false, "explanation": "ทำให้แย่ลง" },
+              { "label": "B", "text": "ATB + bromocriptine", "is_correct": false, "explanation": "ไม่มีไข้ — ไม่ใช่ mastitis" },
+              { "label": "C", "text": "Feed often + warm/cold", "is_correct": true, "explanation": "ถูก" },
+              { "label": "D", "text": "หยุดข้างที่คัด", "is_correct": false, "explanation": "ผิด — ต้องเอาออก" },
+              { "label": "E", "text": "งดน้ำ", "is_correct": false, "explanation": "ไม่เกี่ยวข้อง" }
+            ],
+            "key_takeaway": "Engorgement: empty breast (feed often) + warm pre + cold post"
+          }
+        }
+      ]
+    }
+  ]
+}
