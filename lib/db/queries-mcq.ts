@@ -453,6 +453,27 @@ function parseJsonbField(value: unknown): unknown {
   return value;
 }
 
+/**
+ * Some legacy rows store `choices` as `["text1", "text2", ...]` instead of
+ * `[{label, text}, ...]`. The UI reads `choice.label` / `choice.text`, so a
+ * raw string array renders as blank buttons. Coerce by position → A/B/C/D…
+ */
+function normalizeChoices(raw: unknown): { label: string; text: string }[] {
+  if (!Array.isArray(raw)) return [];
+  return raw.map((c, i) => {
+    const label = String.fromCharCode(65 + i);
+    if (typeof c === "string") return { label, text: c };
+    if (c && typeof c === "object") {
+      const o = c as { label?: unknown; text?: unknown };
+      return {
+        label: typeof o.label === "string" && o.label ? o.label : label,
+        text: typeof o.text === "string" ? o.text : "",
+      };
+    }
+    return { label, text: "" };
+  });
+}
+
 // ---- mappers ----
 
 function toMcqSubject(row: typeof mcqSubjects.$inferSelect): McqSubject {
@@ -480,7 +501,7 @@ function toMcqQuestion(
     question_number: row.question_number,
     scenario: row.scenario,
     image_url: row.image_url,
-    choices: parseJsonbField(row.choices) as McqQuestion["choices"],
+    choices: normalizeChoices(parseJsonbField(row.choices)),
     correct_answer: row.correct_answer,
     explanation: row.explanation,
     detailed_explanation: parseJsonbField(row.detailed_explanation) as McqQuestion["detailed_explanation"],
