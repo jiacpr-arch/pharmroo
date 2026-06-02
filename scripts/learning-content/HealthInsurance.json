@@ -384,7 +384,7 @@
         {
           "card_type": "concept",
           "title_th": "ICER และ WTP Threshold",
-          "body_md": "**ICER (Incremental Cost-Effectiveness Ratio):** ต้นทุนส่วนเพิ่มต่อผลลัพธ์ส่วนเพิ่มของยาใหม่เทียบกับยาเดิม\n\n$$ICER = \\frac{Cost_{ใหม่} - Cost_{เดิม}}{Outcome_{ใหม่} - Outcome_{เดิม}}$$\n\n- หน่วยมักเป็น **บาทต่อ QALY ที่เพิ่มขึ้น**\n\n**Willingness-to-Pay (WTP) threshold:** เพดานที่สังคมยอมจ่ายต่อ 1 QALY\n- ของไทยปัจจุบันใช้ราว **160,000 บาท/QALY** (เคยใช้ ~120,000)\n- **ICER < WTP → คุ้มค่า (cost-effective)** ควรบรรจุ/สนับสนุน\n- **ICER > WTP → ไม่คุ้มค่า** ต้องต่อรองราคาให้ต่ำลงก่อน"
+          "body_md": "**ICER (Incremental Cost-Effectiveness Ratio):** ต้นทุนส่วนเพิ่มต่อผลลัพธ์ส่วนเพิ่มของยาใหม่เทียบกับยาเดิม\n\n**ICER = (ต้นทุนยาใหม่ − ต้นทุนยาเดิม) ÷ (ผลลัพธ์ยาใหม่ − ผลลัพธ์ยาเดิม)**\n\n- หน่วยมักเป็น **บาทต่อ QALY ที่เพิ่มขึ้น**\n\n**Willingness-to-Pay (WTP) threshold:** เพดานที่สังคมยอมจ่ายต่อ 1 QALY\n- ของไทยปัจจุบันใช้ราว **160,000 บาท/QALY** (เคยใช้ ~120,000)\n- **ICER < WTP → คุ้มค่า (cost-effective)** ควรบรรจุ/สนับสนุน\n- **ICER > WTP → ไม่คุ้มค่า** ต้องต่อรองราคาให้ต่ำลงก่อน"
         },
         {
           "card_type": "example",
