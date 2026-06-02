@@ -134,7 +134,7 @@ export default async function NursingPage() {
             </p>
           </CardHeader>
           <CardContent>
-            <Link href="/learn">
+            <Link href="/learn?category=nursing">
               <Button className="w-full bg-emerald-600 hover:bg-emerald-700 text-white gap-2">
                 เริ่มเรียนรู้ <ArrowRight className="h-4 w-4" />
               </Button>

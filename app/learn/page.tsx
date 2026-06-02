@@ -17,17 +17,28 @@ export const metadata: Metadata = {
     "บทเรียนสั้น ๆ แบบ microlearning เตรียมสอบใบประกอบวิชาชีพเภสัชกรรม เรียนทีละนิดพร้อมแบบทดสอบ",
 };
 
-export default async function LearnPage() {
+export default async function LearnPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ category?: string }>;
+}) {
   const session = await auth();
+  const { category } = await searchParams;
   if (!session?.user?.id) {
-    redirect("/login?callbackUrl=/learn");
+    const callback = category
+      ? `/learn?category=${encodeURIComponent(category)}`
+      : "/learn";
+    redirect(`/login?callbackUrl=${encodeURIComponent(callback)}`);
   }
 
-  const examCategory = (session.user as { exam_category?: string | null })
+  const sessionCategory = (session.user as { exam_category?: string | null })
     .exam_category as ExamCategory | null | undefined;
+  const overrideCategory: ExamCategory | undefined =
+    category === "nursing" || category === "pharmacy" ? category : undefined;
+  const examCategory = overrideCategory ?? sessionCategory ?? undefined;
 
   const [units, continueLesson] = await Promise.all([
-    getLearningPath(session.user.id, examCategory ?? undefined),
+    getLearningPath(session.user.id, examCategory),
     getContinueLesson(session.user.id),
   ]);
 
