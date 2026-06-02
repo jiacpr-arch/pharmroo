@@ -47,8 +47,21 @@ function blockFor(data) {
   const lessons = Array.isArray(data.lessons) ? data.lessons : [];
   const lines = [];
 
+  // Outer DO block must use a tagged dollar-quote: card bodies may contain bare
+  // "$$" (e.g. LaTeX display math), which would otherwise prematurely close a
+  // "DO $$ ... $$" block. Pick a tag that doesn't collide with any body text.
+  let doTag = "do";
+  const allBodies = lessons
+    .flatMap((l) => (Array.isArray(l.cards) ? l.cards : []))
+    .map((c) => String(c.body_md ?? ""))
+    .join("\n");
+  while (allBodies.includes("$" + doTag + "$")) doTag += "x";
+
+  const doOpen = "DO $" + doTag + "$";
+  const doClose = "END $" + doTag + "$;";
+
   lines.push(`-- ===== ${subject} =====`);
-  lines.push(`DO $$`);
+  lines.push(doOpen);
   lines.push(
     `DECLARE v_subject text; v_unit text; v_qids text[]; l_qids text[]; l_id text;`
   );
@@ -115,7 +128,7 @@ function blockFor(data) {
     });
   });
 
-  lines.push(`END $$;`);
+  lines.push(doClose);
   return lines.join("\n");
 }
 
