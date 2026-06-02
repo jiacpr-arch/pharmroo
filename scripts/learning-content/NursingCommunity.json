@@ -1,0 +1,199 @@
+{
+  "subject": "NursingCommunity",
+  "unit": {
+    "title_th": "การพยาบาลอนามัยชุมชนและการรักษาพยาบาลขั้นต้น",
+    "description_th": "Primary health care, EPI, communicable disease control, primary medical care, NCDs in community",
+    "icon": "🏘️"
+  },
+  "lessons": [
+    {
+      "title_th": "Primary Health Care & Disease Surveillance",
+      "subtitle_th": "PHC principles, EPI, communicable disease control",
+      "icon": "🌾",
+      "est_minutes": 10,
+      "xp_reward": 18,
+      "cards": [
+        { "card_type": "concept", "title_th": "Primary Health Care (PHC) — Alma-Ata", "body_md": "**5 Principles:**\n1. **Equitable distribution** (ทุกคนเข้าถึง)\n2. **Community participation** (ชุมชนมีส่วนร่วม)\n3. **Intersectoral coordination** (หลายภาคส่วน)\n4. **Appropriate technology**\n5. **Health promotion focus**\n\n**8 Essential elements (ELEMENTS):**\n- **E**ducation\n- **L**ocally endemic disease prevention\n- **E**PI (วัคซีน)\n- **M**aternal & child health + family planning\n- **E**ssential drugs\n- **N**utrition\n- **T**reatment of common diseases/injuries\n- **S**afe water & sanitation" },
+        { "card_type": "concept", "title_th": "Levels of Prevention", "body_md": "**Primary** (ก่อนเกิดโรค):\n- Immunization, health education\n- Smoking cessation, healthy diet\n- Helmet, condom\n\n**Secondary** (ระยะแรกของโรค — screen early):\n- Pap smear, mammogram\n- BP screening, FBS screening\n- TB sputum screening\n\n**Tertiary** (มีโรคแล้ว — ลด complication):\n- Rehabilitation post-stroke\n- DM foot care\n- Cardiac rehabilitation\n\n**Quaternary** (ลดการให้การรักษาที่ไม่จำเป็น):\n- Avoid over-medication, over-screening" },
+        { "card_type": "tip", "title_th": "Family Folder & Family APGAR", "body_md": "**Family folder** — sustained record:\n- Genogram (3 generations)\n- Family medical history\n- Family planning\n- Vaccine record\n- Chronic disease\n\n**Family APGAR:**\n- **A**daptation\n- **P**artnership\n- **G**rowth\n- **A**ffection\n- **R**esolve\n\n0-3 ต่อข้อ รวม 0-10\n- 7-10: highly functional\n- 4-6: moderate\n- 0-3: severely dysfunctional" },
+        { "card_type": "concept", "title_th": "Communicable Disease Surveillance", "body_md": "**Notifiable diseases (Thailand DDC):**\n- **กลุ่ม 1:** อาหารและน้ำ — cholera, typhoid\n- **กลุ่ม 2:** Vector-borne — dengue, malaria\n- **กลุ่ม 3:** Contact — leprosy\n- **กลุ่ม 4:** Respiratory — TB, measles, influenza, COVID-19\n- **กลุ่ม 5:** STD/blood — HIV, HBV, syphilis\n- **กลุ่ม 6:** Zoonotic — rabies, leptospirosis\n\n**รายงานทันที (24 ชม.):** cholera, plague, yellow fever, viral hemorrhagic fever, polio, SARS, MERS, COVID, measles outbreak\n\n**Report ภายใน 7 วัน:** TB, leprosy, HIV/AIDS, dengue, malaria, etc." },
+        { "card_type": "concept", "title_th": "Dengue Fever — Stages & Warning Signs", "body_md": "**Febrile phase (วัน 1-3):**\n- ไข้สูง 39-40°C\n- ปวดเมื่อย retro-orbital pain\n- Petechiae, tourniquet test +\n\n**Critical phase (วัน 4-6, plasma leakage):**\n- ไข้ลด แต่ผู้ป่วยแย่ลง\n- **Warning signs:**\n  - ปวดท้องรุนแรง\n  - อาเจียนต่อเนื่อง\n  - Mucosal bleed\n  - Lethargy\n  - Liver enlarge > 2 cm\n  - **Hct ↑ พร้อม Plt ↓**\n\n**DHF/DSS:** Plasma leak + bleeding + thrombocytopenia + shock\n\n**Recovery (วัน 7-10):** Hct ลง Plt เพิ่ม polyuria — **ระวัง fluid overload!**" },
+        { "card_type": "tip", "title_th": "การพยาบาล Dengue", "body_md": "**Febrile phase:**\n- Paracetamol — **ห้าม NSAID/aspirin** (เลือดออก)\n- เช็ดตัว\n- ดื่มน้ำ ORS\n- Monitor V/S Q4-6h\n- Daily CBC (Hct, Plt)\n\n**Critical phase:**\n- IV fluid ตาม Hct + clinical\n- ระวัง overload — เริ่ม **5 mL/kg/hr** ไม่ใช่ bolus\n- Monitor urine output ≥ 0.5 mL/kg/hr\n- V/S Q1-2h\n- Hct Q4-6h\n\n**ห้าม:**\n- Aspirin, NSAID\n- IM injection (เลือดออก)\n- Over-hydrate (pulmonary edema, ascites)" },
+        { "card_type": "concept", "title_th": "TB DOTS — Directly Observed Treatment", "body_md": "**WHO DOTS strategy:**\n1. **Political commitment**\n2. **Case detection** by sputum smear\n3. **Standard treatment under direct observation** — กิน ATB ต่อหน้าเจ้าหน้าที่/อสม.\n4. **Drug supply uninterrupted**\n5. **Monitoring + reporting**\n\n**Regimen 6 เดือน:**\n- 2HRZE / 4HR\n\n**Monitor:**\n- Sputum AFB เดือน 2, 5, 6 (เสร็จ)\n- LFT baseline + ถ้ามีอาการ\n- Visual acuity (EMB)\n- เน้น compliance — drop out → drug resistance" },
+        { "card_type": "concept", "title_th": "Outbreak investigation — 10 steps", "body_md": "1. ยืนยันการระบาด (compare baseline)\n2. ยืนยัน diagnosis\n3. นิยาม case\n4. หา cases\n5. **Descriptive epidemiology** (Time-Place-Person)\n6. ตั้ง hypothesis สาเหตุ\n7. ทดสอบ hypothesis (case-control / cohort)\n8. **Attack rate** = cases / population at risk\n9. ควบคุมโรค + ป้องกัน\n10. **รายงาน + เผยแพร่**\n\n**Epidemic curve:**\n- Common source: peak เดียว\n- Propagated (person-to-person): หลาย peak (incubation periods)" },
+        { "card_type": "qa", "title_th": "ตัวอย่างข้อสอบ — Dengue warning signs", "body_md": "**Q:** ผู้ป่วย dengue วันที่ 4 ไข้ลดแล้ว แต่ปวดท้องรุนแรงขึ้น มีอาเจียน CBC: Hct 47% (เพิ่มจาก 38%) Plt 50,000 พยาบาลควรประเมินและทำอย่างไร?\n\n**A:** **Critical phase + warning signs + plasma leakage** — admit, IV crystalloid 5 mL/kg/hr ค่อย adjust ตาม Hct + clinical, NPO/อาหารอ่อน, monitor V/S Q1-2h + Hct Q4-6h, ห้าม NSAID, แจ้งแพทย์" }
+      ],
+      "quiz_questions": [
+        {
+          "scenario": "พยาบาลออกหน่วยอนามัยบ้านหาผู้ป่วย DM ไม่กินยาสม่ำเสมอ ครอบครัวขาดการดูแล Family APGAR = 3 พยาบาลควรเริ่มจัดการอย่างไร",
+          "choices": [
+            { "label": "A", "text": "ส่งต่อจิตเวชทันที" },
+            { "label": "B", "text": "ปรับยาเพิ่มขนาด" },
+            { "label": "C", "text": "วิเคราะห์ family dysfunction + intervention หลายระดับ (counseling, support group, social worker, อสม. ช่วยเตือนยา)" },
+            { "label": "D", "text": "พบครอบครัวเพื่อบอกให้ดูแลดีขึ้นเฉยๆ" },
+            { "label": "E", "text": "ไม่ต้องทำอะไร โทษคนป่วย" }
+          ],
+          "correct_answer": "C",
+          "difficulty": "medium",
+          "explanation": "Family APGAR 0-3 = severe dysfunction ต้อง intervention หลายระดับ + social support + อสม.",
+          "detailed_explanation": {
+            "summary": "Family APGAR ≤ 3 = severe dysfunction — multi-level intervention",
+            "reason": "Compliance ใน chronic disease เกี่ยวข้องกับ family function โดยตรง การ intervene ต้อง holistic",
+            "choices": [
+              { "label": "A", "text": "จิตเวช", "is_correct": false, "explanation": "ไม่ใช่ first step" },
+              { "label": "B", "text": "เพิ่มขนาด", "is_correct": false, "explanation": "ไม่แก้ root cause" },
+              { "label": "C", "text": "Multi-level intervention", "is_correct": true, "explanation": "ถูก" },
+              { "label": "D", "text": "บอกเฉยๆ", "is_correct": false, "explanation": "ไม่ effective" },
+              { "label": "E", "text": "ไม่ทำอะไร", "is_correct": false, "explanation": "ละเลยหน้าที่" }
+            ],
+            "key_takeaway": "Community nursing: family-centered, multi-disciplinary intervention"
+          }
+        },
+        {
+          "scenario": "ผู้ป่วยมีไข้ ปวดศีรษะ ปวดเมื่อย เกิดผื่นจุดเลือดออกที่ขา 2 วัน CBC: Hct 45% Plt 80,000 WBC 3,500 vital stable การพยาบาลและการให้คำแนะนำที่เหมาะสม",
+          "choices": [
+            { "label": "A", "text": "ให้ aspirin ลดไข้" },
+            { "label": "B", "text": "ให้ paracetamol PRN + เช็ดตัว + ORS + งด NSAID/aspirin + นัด CBC daily + เตือน warning signs (ปวดท้อง อาเจียน เลือดออก ซึม)" },
+            { "label": "C", "text": "ให้ ibuprofen ลดไข้และลดบวม" },
+            { "label": "D", "text": "Admit ICU ทันที" },
+            { "label": "E", "text": "ATB amoxicillin" }
+          ],
+          "correct_answer": "B",
+          "difficulty": "easy",
+          "explanation": "Dengue febrile phase — supportive + ห้าม NSAID + monitor warning signs + daily CBC",
+          "detailed_explanation": {
+            "summary": "Dengue: paracetamol only, NO NSAID/aspirin, monitor warning signs",
+            "reason": "NSAID/aspirin = bleeding risk + Reye's; paracetamol max 60 mg/kg/day; ORS prevent dehydration",
+            "choices": [
+              { "label": "A", "text": "Aspirin", "is_correct": false, "explanation": "ห้ามใน dengue" },
+              { "label": "B", "text": "Paracetamol + monitor", "is_correct": true, "explanation": "ถูก" },
+              { "label": "C", "text": "Ibuprofen", "is_correct": false, "explanation": "NSAID ห้าม" },
+              { "label": "D", "text": "ICU", "is_correct": false, "explanation": "Vital stable, ไม่จำเป็น" },
+              { "label": "E", "text": "ATB", "is_correct": false, "explanation": "Dengue = viral" }
+            ],
+            "key_takeaway": "Dengue: paracetamol only, NO NSAID/IM, monitor critical phase warning signs"
+          }
+        },
+        {
+          "scenario": "ในชุมชนพบเด็กป่วย acute diarrhea + vomiting 25 คน ใน 3 วัน 5 คน admit หาเหตุพบดื่มน้ำจากสระชุมชน พยาบาลควรทำเป็นอันดับแรกหลังแจ้ง DDC",
+          "choices": [
+            { "label": "A", "text": "หยุดให้ใช้น้ำจากแหล่งนั้น + ตรวจน้ำ + ORS + สุขศึกษา + ค้นหา case เพิ่มเติม" },
+            { "label": "B", "text": "ปิดชุมชน 14 วัน" },
+            { "label": "C", "text": "ATB ทุกคนในชุมชน" },
+            { "label": "D", "text": "ฉีดวัคซีน cholera ทุกคน" },
+            { "label": "E", "text": "ไม่ต้องทำอะไร รอผลตรวจ" }
+          ],
+          "correct_answer": "A",
+          "difficulty": "medium",
+          "explanation": "Outbreak investigation: stop source + case finding + ORS + health education + sample testing",
+          "detailed_explanation": {
+            "summary": "Outbreak: stop source + active case finding + supportive + report",
+            "reason": "Common source outbreak — single peak; ต้องตัด source ก่อน + treat case + monitor curve",
+            "choices": [
+              { "label": "A", "text": "Stop source + ORS + case find", "is_correct": true, "explanation": "ถูก" },
+              { "label": "B", "text": "ปิดชุมชน", "is_correct": false, "explanation": "เกินจำเป็น" },
+              { "label": "C", "text": "ATB ทุกคน", "is_correct": false, "explanation": "Mass ATB ไม่ใช่ first step" },
+              { "label": "D", "text": "วัคซีน cholera ทุกคน", "is_correct": false, "explanation": "ยังไม่ทราบ pathogen" },
+              { "label": "E", "text": "ไม่ทำ", "is_correct": false, "explanation": "Outbreak ต้อง intervene ทันที" }
+            ],
+            "key_takeaway": "Outbreak: ตัด source, ค้นหา case, supportive, report DDC, prevent spread"
+          }
+        }
+      ]
+    },
+    {
+      "title_th": "Primary Medical Care & NCDs in Community",
+      "subtitle_th": "การรักษาพยาบาลขั้นต้น 36 อาการ และ NCDs",
+      "icon": "💊",
+      "est_minutes": 9,
+      "xp_reward": 15,
+      "cards": [
+        { "card_type": "concept", "title_th": "ขอบเขตการรักษาพยาบาลขั้นต้นของพยาบาล", "body_md": "**ตาม พรบ.วิชาชีพการพยาบาล + ระเบียบกระทรวงสาธารณสุข:**\n- รักษาโรคในข่ายที่กำหนด (36 อาการพื้นฐาน) ภายใต้แนวทาง\n- ให้ยาในบัญชีที่กำหนด\n- ส่งต่อ (refer) เมื่อเกินขอบเขต\n\n**36 อาการสำคัญ ได้แก่:** ไข้, ปวดศีรษะ, เจ็บคอ, ไอ, หวัด, ตาแดง, ปวดหู, เจ็บฟัน, ปวดหลัง, ผื่น, แผลถลอก, ท้องเสีย, ปวดท้อง, อาเจียน, แมลงสัตว์กัดต่อย, การคุมกำเนิด ฯลฯ\n\n**ห้ามทำ:**\n- รักษาโรคร้ายแรง / ผ่าตัด\n- จ่ายยาควบคุมเข้มงวด\n- วินิจฉัยโรคที่ต้องใช้ specialty" },
+        { "card_type": "concept", "title_th": "Common acute conditions — ส่งต่อทันที", "body_md": "**Refer ทันที — Red flag:**\n\n**ปวดศีรษะ:** thunderclap, focal deficit, neck stiff + fever, post-trauma, > 50 ใหม่\n\n**เจ็บอก:** crushing, radiation jaw/arm, dyspnea, diaphoresis\n\n**ปวดท้อง:** rigid abdomen, rebound, severe constant, hematemesis, melena\n\n**Dyspnea:** SpO₂ < 92%, accessory muscle, cyanosis, AMS\n\n**ไข้:** > 39.5°C nuchal rigidity, petechiae, infant < 3 mo, immunocompromised\n\n**Skin:** rapidly spreading erythema, crepitus (necrotizing fasciitis)\n\n**ตา:** sudden vision loss, severe pain, foreign body in cornea" },
+        { "card_type": "concept", "title_th": "NCDs in community — DM, HT, dyslipidemia", "body_md": "**Screening (Thai guideline):**\n- DM: FBS อายุ ≥ 35 ปี ทุก 3 ปี (ทุกปี high-risk)\n- HT: BP อายุ ≥ 35 ปี ทุก 2 ปี\n- Cholesterol: lipid panel อายุ ≥ 35 ปี ทุก 5 ปี\n\n**DM diagnosis:**\n- FBS ≥ 126 (× 2 confirmatory)\n- HbA1c ≥ 6.5%\n- 2-hr OGTT ≥ 200\n- Random ≥ 200 + symptoms\n\n**HT diagnosis:**\n- BP ≥ 140/90 × 2 visits\n\n**Lifestyle modification first 3-6 เดือน** in mild cases\n- Weight ↓ 5-10%\n- Mediterranean / DASH diet\n- Exercise ≥ 150 min/wk moderate\n- Smoking cessation\n- Alcohol limit" },
+        { "card_type": "tip", "title_th": "DM Foot Care — Education", "body_md": "**Daily:**\n- ตรวจเท้าทุกวัน (เห็น/ใช้กระจก)\n- ล้างเท้า น้ำอุ่น (ทดสอบด้วยข้อศอก ไม่ใช่เท้า)\n- เช็ดให้แห้งสนิท โดยเฉพาะระหว่างนิ้ว\n- ทา moisturizer (ไม่ใส่ระหว่างนิ้ว)\n\n**Don't:**\n- เดินเท้าเปล่า\n- ใส่รองเท้าใหม่ไม่ break-in (ทีละ 1-2 ชม.)\n- น้ำร้อน / heating pad\n- ตัดเล็บโค้ง (ตัดตรง)\n- ตัดตาปลาเอง\n- ใส่ถุงเท้ารัด\n\n**ASAP report:** แผล, แดง, บวม, ปวด, สีเปลี่ยน, ชา" },
+        { "card_type": "warning", "title_th": "ABCs of Burn — Rule of 9", "body_md": "**Rule of 9 (% TBSA — adult):**\n- Head: 9% (4.5 หน้า + 4.5 หลัง)\n- Each arm: 9%\n- Each leg: 18%\n- Trunk front: 18%\n- Trunk back: 18%\n- Perineum: 1%\n\n**Child:** Head 18%, Leg 14%\n\n**Burn severity:**\n- **1st degree:** epidermis, ปวด แดง (sunburn)\n- **2nd degree:** dermis, blister, ปวดมาก\n- **3rd degree:** full thickness, ไม่ปวด (ตาย), ขาว/ดำ\n\n**Parkland formula:** 4 mL × kg × % TBSA / 24 hr (LR)\n- ครึ่งหนึ่งใน 8 ชม.แรก (นับจาก burn time)\n- ครึ่งที่เหลือใน 16 ชม.ต่อมา\n\n**Indication transfer burn unit:**\n- 2nd-3rd degree > 10% (any age)\n- มือ เท้า หน้า perineum joint\n- Electrical/chemical/inhalation\n- Comorbidity" },
+        { "card_type": "concept", "title_th": "Snakebite — Thailand", "body_md": "**Neurotoxic (Cobra, krait, king cobra):**\n- Ptosis, dysphagia, dysarthria, respiratory paralysis\n- ภายใน 30 min - 2 hr\n\n**Hematotoxic (Russell's viper, green pit viper, malayan pit viper):**\n- Bleeding, hematuria, DIC\n- ภายใน 4-12 hr\n\n**First aid:**\n- Reassure, keep still, immobilize bitten limb (below heart)\n- **ห้าม:** tourniquet, ดูดเลือด, กรีดแผล, น้ำมัน, น้ำมันแร่\n- รพ. ASAP\n\n**Hospital:**\n- Specific antivenom (ตาม species)\n- Tetanus prophylaxis\n- ATB ถ้ามี wound infection\n- Monitor 24 ชม. แม้ไม่มีอาการ" },
+        { "card_type": "concept", "title_th": "EPI Outreach in community", "body_md": "**Cold chain (2-8°C):**\n- Ice pack ใน vaccine carrier\n- Indicator card vaccine vial monitor (VVM)\n- ห้าม freeze: DTP, Hib, HepB, TT, IPV (denature)\n- OK to freeze: BCG, MMR, OPV, varicella, JE (live)\n\n**6 มาตรการ:**\n1. ปลอดภัย (vial integrity, ไม่ expired)\n2. Right vaccine, dose, route, site\n3. หลัง vaccine สังเกต 30 นาที (anaphylaxis)\n4. บันทึก lot number\n5. AEFI report\n6. Cold chain monitoring" },
+        { "card_type": "qa", "title_th": "ตัวอย่างข้อสอบ — Burn fluid", "body_md": "**Q:** ผู้ป่วยไฟไหม้ น้ำหนัก 60 kg burn 30% TBSA Parkland formula คำนวณ fluid 24 hr ได้เท่าไร และให้อย่างไร?\n\n**A:** **4 × 60 × 30 = 7200 mL LR / 24 hr**\n- ครึ่งหนึ่ง 3600 mL ใน 8 ชม.แรก (จาก burn time) = 450 mL/hr\n- 3600 mL ใน 16 ชม.ต่อมา = 225 mL/hr\n\nMonitor urine 0.5 mL/kg/hr (30 mL/hr) — titrate fluid ตาม urine + clinical" }
+      ],
+      "quiz_questions": [
+        {
+          "scenario": "ผู้ป่วยถูกงูกัดที่ขา 1 ชั่วโมงก่อน บอกว่าตามองภาพซ้อน หนังตาตก พูดไม่ชัด การพยาบาลข้อใดถูกที่สุด",
+          "choices": [
+            { "label": "A", "text": "รัด tourniquet เหนือแผลแน่นๆ + กรีดแผลดูดเลือด" },
+            { "label": "B", "text": "Immobilize ขา + นอนนิ่ง + ส่ง รพ. ทันที + ABC + เตรียม specific antivenom (neurotoxic snake)" },
+            { "label": "C", "text": "ทาน้ำมัน + พันแผลให้แน่น" },
+            { "label": "D", "text": "ให้ผู้ป่วยเดินไป รพ.เอง" },
+            { "label": "E", "text": "รอที่บ้าน 4-6 ชม. ก่อนตัดสินใจ" }
+          ],
+          "correct_answer": "B",
+          "difficulty": "medium",
+          "explanation": "Neurotoxic snake (ptosis, dysphagia, dysarthria) → respiratory paralysis เร็ว → immobilize + STAT รพ. + ABC + antivenom",
+          "detailed_explanation": {
+            "summary": "Snakebite: immobilize + rapid transfer + antivenom; ห้าม tourniquet/incision",
+            "reason": "Neurotoxic = respiratory paralysis เสี่ยง intubate; tourniquet เพิ่ม necrosis local",
+            "choices": [
+              { "label": "A", "text": "Tourniquet + กรีด", "is_correct": false, "explanation": "ห้าม — เพิ่ม necrosis + ติดเชื้อ" },
+              { "label": "B", "text": "Immobilize + STAT", "is_correct": true, "explanation": "ถูก" },
+              { "label": "C", "text": "น้ำมัน", "is_correct": false, "explanation": "ไม่มี evidence" },
+              { "label": "D", "text": "เดินเอง", "is_correct": false, "explanation": "เพิ่ม venom spread" },
+              { "label": "E", "text": "รอ 4-6 ชม.", "is_correct": false, "explanation": "Respiratory failure เกิดเร็ว" }
+            ],
+            "key_takeaway": "Snakebite: NO tourniquet/incision/suck, immobilize + rapid transport + antivenom"
+          }
+        },
+        {
+          "scenario": "พยาบาลให้สุขศึกษาเรื่อง DM foot care ที่ รพ.สต. คำแนะนำใดผิด",
+          "choices": [
+            { "label": "A", "text": "ตรวจเท้าด้วยตัวเองทุกวัน" },
+            { "label": "B", "text": "ตัดเล็บโค้งให้สั้นเข้าเนื้อ เพื่อกันสะดุด" },
+            { "label": "C", "text": "ใส่รองเท้าใหม่ทีละ 1-2 ชม.ค่อยๆ break-in" },
+            { "label": "D", "text": "ทดสอบความร้อนของน้ำด้วยข้อศอก ไม่ใช่เท้า" },
+            { "label": "E", "text": "ทา moisturizer แต่ไม่ทาระหว่างนิ้ว" }
+          ],
+          "correct_answer": "B",
+          "difficulty": "easy",
+          "explanation": "ตัดเล็บ DM ต้องตัดตรง ไม่โค้งเข้าเนื้อ — กัน ingrown nail + infection",
+          "detailed_explanation": {
+            "summary": "DM nail: cut STRAIGHT, not curved; avoid ingrown",
+            "reason": "Curved/ingrown nail = portal entry สู่ infection ที่ neuropathic foot เห็นช้า → diabetic foot",
+            "choices": [
+              { "label": "A", "text": "ตรวจเท้า daily", "is_correct": false, "explanation": "ถูก แต่โจทย์ถาม \"ผิด\"" },
+              { "label": "B", "text": "ตัดเล็บโค้งเข้าเนื้อ", "is_correct": true, "explanation": "ผิด — ต้องตัดตรง" },
+              { "label": "C", "text": "Break-in รองเท้า", "is_correct": false, "explanation": "ถูก" },
+              { "label": "D", "text": "ทดสอบน้ำด้วยศอก", "is_correct": false, "explanation": "ถูก เพราะ neuropathy" },
+              { "label": "E", "text": "Moisturizer ไม่ระหว่างนิ้ว", "is_correct": false, "explanation": "ถูก กัน fungal" }
+            ],
+            "key_takeaway": "DM foot: ตรวจ daily, ตัดเล็บตรง, ไม่เดินเท้าเปล่า, ทดสอบน้ำด้วยศอก"
+          }
+        },
+        {
+          "scenario": "ผู้ป่วยอุบัติเหตุไฟไหม้ทั้งตัวหน้า + แขนซ้ายทั้งสองแผ่น (2nd degree) น้ำหนัก 70 kg Parkland fluid 24 hr คือ",
+          "choices": [
+            { "label": "A", "text": "4 × 70 × 18 = 5040 mL / 24 hr (head 9% + arm 9% = 18%)" },
+            { "label": "B", "text": "2 × 70 × 18 = 2520 mL" },
+            { "label": "C", "text": "4 × 70 × 36 = 10080 mL" },
+            { "label": "D", "text": "70 × 18 = 1260 mL" },
+            { "label": "E", "text": "ไม่ต้องให้ fluid" }
+          ],
+          "correct_answer": "A",
+          "difficulty": "medium",
+          "explanation": "Rule of 9: head 9% + arm 9% = 18% TBSA Parkland = 4 mL × kg × %TBSA",
+          "detailed_explanation": {
+            "summary": "Parkland = 4 × kg × %TBSA / 24h; ½ ใน 8h แรก ½ ใน 16h ถัดมา",
+            "reason": "Head 9% + 1 arm 9% = 18%; 4 × 70 × 18 = 5040 mL LR",
+            "choices": [
+              { "label": "A", "text": "5040 mL", "is_correct": true, "explanation": "ถูก" },
+              { "label": "B", "text": "2 × คำนวณ", "is_correct": false, "explanation": "Coefficient = 4 ไม่ใช่ 2" },
+              { "label": "C", "text": "%TBSA × 2", "is_correct": false, "explanation": "%TBSA = 18 ไม่ใช่ 36" },
+              { "label": "D", "text": "70 × 18", "is_correct": false, "explanation": "ลืม coefficient 4" },
+              { "label": "E", "text": "ไม่ต้อง", "is_correct": false, "explanation": "Burn > 10% ต้อง IV fluid" }
+            ],
+            "key_takeaway": "Parkland 4×kg×%TBSA: ½ ใน 8h แรก (จาก burn time)"
+          }
+        }
+      ]
+    }
+  ]
+}

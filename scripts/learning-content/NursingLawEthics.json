@@ -1,0 +1,173 @@
+{
+  "subject": "NursingLawEthics",
+  "unit": {
+    "title_th": "กฎหมายและจรรยาบรรณวิชาชีพ",
+    "description_th": "พรบ.วิชาชีพการพยาบาล, จรรยาบรรณ, สิทธิผู้ป่วย, การให้ความยินยอม, documentation",
+    "icon": "⚖️"
+  },
+  "lessons": [
+    {
+      "title_th": "พรบ.วิชาชีพการพยาบาล & ขอบเขตวิชาชีพ",
+      "subtitle_th": "Scope of practice, ใบประกอบวิชาชีพ และการกระทำผิด",
+      "icon": "📜",
+      "est_minutes": 9,
+      "xp_reward": 15,
+      "cards": [
+        { "card_type": "concept", "title_th": "พรบ.วิชาชีพการพยาบาลและการผดุงครรภ์ พ.ศ. 2528 (และฉบับแก้ไข)", "body_md": "**นิยาม \"การประกอบวิชาชีพการพยาบาล\":**\n- การกระทำต่อบุคคลในด้าน\n  - การพยาบาล (รักษา promote prevent rehabilitate)\n  - การสอน + การแนะนำ\n  - การให้คำปรึกษา\n  - การช่วยเหลือผู้ประกอบวิชาชีพ\n\n**สภาการพยาบาล** เป็นหน่วยกำกับ\n- ออกใบประกอบวิชาชีพ\n- รับรองมาตรฐาน\n- ลงโทษผู้กระทำผิด\n\n**ห้าม** ผู้ไม่มีใบประกอบฯ ประกอบวิชาชีพ\n- โทษจำคุก ≤ 3 ปี ปรับ ≤ 30,000 บาท หรือทั้งจำทั้งปรับ" },
+        { "card_type": "concept", "title_th": "ใบประกอบวิชาชีพ (License)", "body_md": "**ชั้น 1 (ชั้นหนึ่ง):**\n- จบปริญญาตรีพยาบาลศาสตร์\n- สอบ NLE 8 รายวิชาผ่าน\n- อายุ 5 ปี — ต่ออายุ\n\n**ต่ออายุใบประกอบ:**\n- CNEU ≥ 50 หน่วยใน 5 ปี\n- ไม่ถูกพักใช้/เพิกถอน\n\n**การพักใช้ / เพิกถอน — เหตุ:**\n- ขาดคุณสมบัติ\n- ทำผิดข้อบังคับ/จรรยาบรรณ\n- กระทำผิดอาญาเกี่ยวกับวิชาชีพ\n\n**ขั้นตอน:**\n1. ตักเตือน\n2. ภาคทัณฑ์\n3. พักใช้ ≤ 2 ปี\n4. เพิกถอน" },
+        { "card_type": "concept", "title_th": "Scope of Practice — ขอบเขต", "body_md": "**พยาบาลทำได้:**\n- ประเมิน, วินิจฉัยทางการพยาบาล\n- ให้ยาตามคำสั่งแพทย์\n- หัตถการในขอบเขต (IV, NG, Foley, dressing, suctioning)\n- รักษาพยาบาลเบื้องต้น (36 อาการ) ตามแนวทาง\n- ให้คำแนะนำ + สุขศึกษา\n\n**ห้ามทำ (เกินขอบเขต):**\n- วินิจฉัยโรค (medical diagnosis)\n- สั่งยานอกบัญชี / ยาควบคุม\n- ผ่าตัด\n- ทำแท้ง (ยกเว้นแพทย์สั่งและตามกฎหมาย)\n\n**ฝ่าฝืน:**\n- ผิดกฎหมาย (ประกอบโรคศิลปะโดยไม่ได้รับอนุญาต)\n- ผิดวิชาชีพ (พักใช้/เพิกถอน)" },
+        { "card_type": "concept", "title_th": "ความผิดทางกฎหมายของพยาบาล", "body_md": "**1. อาญา (Criminal):**\n- เจตนา / ประมาท\n- เช่น: ให้ยาผิด → ผู้ป่วยตาย = ประมาทเป็นเหตุให้ผู้อื่นถึงแก่ความตาย (มาตรา 291)\n- โทษ: จำคุก / ปรับ\n\n**2. แพ่ง (Civil) — ละเมิด (tort):**\n- ชดใช้ค่าเสียหาย\n- ผู้ป่วย/ญาติฟ้องเอง\n\n**3. วิชาชีพ (Professional):**\n- สภาการพยาบาลพิจารณา\n- โทษ: ตักเตือน → ภาคทัณฑ์ → พักใช้ → เพิกถอน\n\n**4. ระเบียบราชการ (ถ้าเป็น รพ.รัฐ):**\n- ตักเตือน, ภาคทัณฑ์, ตัดเงินเดือน, ลดขั้น, ไล่ออก\n\n**ความผิด 1 ครั้ง อาจโดน 4 ทาง พร้อมกัน**" },
+        { "card_type": "warning", "title_th": "ความประมาท (Negligence) — 4 องค์ประกอบ", "body_md": "**4 D's of negligence:**\n1. **D**uty — มีหน้าที่ดูแล\n2. **D**ereliction (breach of duty) — ทำหน้าที่ผิดพลาด\n3. **D**amage — เกิดความเสียหาย\n4. **D**irect cause — การกระทำเป็นเหตุโดยตรง\n\n**Standard of care:** เปรียบกับพยาบาลทั่วไปในสถานการณ์เดียวกัน\n\n**ตัวอย่างประมาท:**\n- ไม่ตรวจ ID band ก่อนให้ยา → ให้ผิดคน\n- ไม่ตรวจ allergy → anaphylaxis\n- Side rail ไม่ขึ้น → ผู้ป่วยตก\n- ไม่ document → ถือว่าไม่ได้ทำ" },
+        { "card_type": "concept", "title_th": "Medication Errors — 6/10 Rights", "body_md": "**10 Rights of Medication:**\n1. Right **patient** (2 identifiers — name + DOB/HN; ไม่ใช้เลขเตียง)\n2. Right **drug** (ชื่อ generic + brand)\n3. Right **dose**\n4. Right **route**\n5. Right **time**\n6. Right **documentation**\n7. Right **reason / indication**\n8. Right **response** (monitor effect)\n9. Right to **refuse** (ผู้ป่วย refuse ได้)\n10. Right **assessment** + **education**\n\n**Triple check:**\n- เมื่อหยิบยา\n- เมื่อเตรียมยา\n- เมื่อให้ที่ข้างเตียง\n\n**High-alert medications:** Insulin, heparin, KCl, opioid, chemo, concentrated electrolyte → double-check + verification" },
+        { "card_type": "concept", "title_th": "เกิด medication error — ทำอย่างไร?", "body_md": "**Step 1:** ประเมินสภาพผู้ป่วยทันที (V/S, อาการ)\n**Step 2:** แจ้งแพทย์ + พยาบาลหัวหน้า\n**Step 3:** จัดการรักษาทันที (antidote ถ้ามี)\n**Step 4:** แจ้งผู้ป่วย/ญาติด้วยความซื่อสัตย์\n**Step 5:** Documentation ใน chart\n**Step 6:** **Incident report** (เป็นเอกสารแยก — ไม่ใช่ใน chart ผู้ป่วย)\n**Step 7:** Root cause analysis — system improvement\n\n**ห้าม:**\n- ปกปิด / ลบบันทึก\n- โทษบุคคลก่อนวิเคราะห์ system\n- ลงโทษโดยไม่ proper process\n\n**Just Culture:** Human error / At-risk behavior / Reckless — ตอบสนองต่างกัน" },
+        { "card_type": "qa", "title_th": "ตัวอย่างข้อสอบ — Scope of practice", "body_md": "**Q:** พยาบาลใน รพ.สต. พบผู้ป่วยปวดท้องรุนแรง 6 ชม. abdominal rigidity จะทำอย่างไร?\n\n**A:** **เกินขอบเขตการรักษาเบื้องต้น** (acute abdomen = surgical emergency) → ประเมิน V/S, IV, NPO, refer ต่อ รพ.อำเภอ/จังหวัด ทันที + รายงานแพทย์ — ห้ามให้ยาแก้ปวด opioid / ATB เอง" }
+      ],
+      "quiz_questions": [
+        {
+          "scenario": "พยาบาลให้ยา insulin ผิดราย เพราะไม่ตรวจ ID band ผู้ป่วยเกิด hypoglycemia ต้องรับการรักษา ความรับผิดของพยาบาลข้อใดถูกต้องที่สุด",
+          "choices": [
+            { "label": "A", "text": "ไม่มีความผิดเพราะแค่ผิดพลาด ไม่ตั้งใจ" },
+            { "label": "B", "text": "ผิดได้หลายทาง: อาญา (ประมาท), แพ่ง (ละเมิด), วิชาชีพ (สภา), ระเบียบราชการ — พร้อมกันได้" },
+            { "label": "C", "text": "ผิดเฉพาะวิชาชีพ" },
+            { "label": "D", "text": "ผิดเฉพาะระเบียบ" },
+            { "label": "E", "text": "ผู้ป่วยต้องรับผิดเอง" }
+          ],
+          "correct_answer": "B",
+          "difficulty": "medium",
+          "explanation": "Negligence + harm = อาจผิดทั้ง 4 ทาง: criminal, civil, professional, administrative",
+          "detailed_explanation": {
+            "summary": "ผิด 1 ครั้ง อาจรับผิด 4 ทาง: อาญา + แพ่ง + วิชาชีพ + ระเบียบ",
+            "reason": "Negligence (4 D's): duty + breach + damage + direct cause; insulin error เป็น high-alert medication ต้อง triple check + 10 rights",
+            "choices": [
+              { "label": "A", "text": "ไม่ผิดเพราะไม่ตั้งใจ", "is_correct": false, "explanation": "ประมาทไม่ต้องเจตนา" },
+              { "label": "B", "text": "ผิด 4 ทาง", "is_correct": true, "explanation": "ถูก" },
+              { "label": "C", "text": "เฉพาะวิชาชีพ", "is_correct": false, "explanation": "ไม่ครบ" },
+              { "label": "D", "text": "เฉพาะระเบียบ", "is_correct": false, "explanation": "ไม่ครบ" },
+              { "label": "E", "text": "ผู้ป่วยรับผิดเอง", "is_correct": false, "explanation": "พยาบาลมี duty of care" }
+            ],
+            "key_takeaway": "Negligence: 4D + 4 ทางความผิด (criminal/civil/professional/admin)"
+          }
+        },
+        {
+          "scenario": "พยาบาลในชุมชน รพ.สต. เห็นผู้ป่วยปวดท้องน้อยขวารุนแรง 8 ชม. ไข้ 38.5°C abdominal rigidity guarding + rebound การจัดการที่ถูกต้องตาม scope of practice",
+          "choices": [
+            { "label": "A", "text": "ให้ยา morphine + ATB IV เอง" },
+            { "label": "B", "text": "วินิจฉัย acute appendicitis + ให้ ATB" },
+            { "label": "C", "text": "ประเมิน V/S, NPO, IV access (ถ้ามี), refer ต่อ รพ.อำเภอ/จังหวัด ทันที + รายงานแพทย์, ห้ามให้ opioid/ATB เอง" },
+            { "label": "D", "text": "ให้ paracetamol แล้วนัดวันรุ่งขึ้น" },
+            { "label": "E", "text": "ทำ surgery เอง" }
+          ],
+          "correct_answer": "C",
+          "difficulty": "easy",
+          "explanation": "Acute abdomen = surgical emergency เกินขอบเขตพยาบาลในชุมชน → refer ทันที + supportive",
+          "detailed_explanation": {
+            "summary": "เกินขอบเขต → supportive + refer ทันที; ไม่วินิจฉัย/รักษาเอง",
+            "reason": "Acute abdomen เป็น surgical emergency ต้อง surgeon ประเมิน; พยาบาลในชุมชนทำได้เฉพาะ supportive + refer",
+            "choices": [
+              { "label": "A", "text": "Morphine + ATB", "is_correct": false, "explanation": "เกินขอบเขต + บดบังอาการ" },
+              { "label": "B", "text": "วินิจฉัย appendicitis", "is_correct": false, "explanation": "วินิจฉัยโรค = แพทย์เท่านั้น" },
+              { "label": "C", "text": "Supportive + refer", "is_correct": true, "explanation": "ถูก" },
+              { "label": "D", "text": "Paracetamol + นัดพรุ่งนี้", "is_correct": false, "explanation": "อันตราย delay" },
+              { "label": "E", "text": "Surgery เอง", "is_correct": false, "explanation": "ผิดกฎหมายมหันต์" }
+            ],
+            "key_takeaway": "เกินขอบเขต = stabilize + refer; ห้ามวินิจฉัยโรค / ผ่าตัดเอง"
+          }
+        }
+      ]
+    },
+    {
+      "title_th": "Ethics, Patient Rights & Documentation",
+      "subtitle_th": "หลักจริยศาสตร์ 4 ข้อ, สิทธิผู้ป่วย 10 ประการ, informed consent",
+      "icon": "🤝",
+      "est_minutes": 9,
+      "xp_reward": 15,
+      "cards": [
+        { "card_type": "concept", "title_th": "Bioethics — 4 หลักการ", "body_md": "**1. Autonomy** (อิสระในการตัดสินใจ):\n- ผู้ป่วยมีสิทธิ์ตัดสินใจเกี่ยวกับตนเอง\n- Informed consent / refuse\n- Living will / Advance directive\n\n**2. Beneficence** (ทำดี):\n- กระทำเพื่อผลดีต่อผู้ป่วย\n\n**3. Non-maleficence** (ไม่ทำร้าย):\n- \"First do no harm\"\n- ระวัง side effect, complication\n\n**4. Justice** (เป็นธรรม):\n- จัดสรรทรัพยากรเท่าเทียม\n- ไม่เลือกปฏิบัติ (เพศ ศาสนา ชาติพันธุ์ ฐานะ)\n\n**Conflict:** Autonomy vs Beneficence เช่น ผู้ป่วยปฏิเสธการรักษาที่ช่วยชีวิต — เคารพ autonomy ถ้ามี capacity" },
+        { "card_type": "concept", "title_th": "สิทธิผู้ป่วย 10 ประการ (กระทรวงสาธารณสุขไทย)", "body_md": "1. ได้รับบริการด้วยความเสมอภาค\n2. ได้รับข้อมูลที่เพียงพอ\n3. **Informed consent** (ยินยอมโดยได้รับข้อมูล)\n4. ปฏิเสธการรักษาได้\n5. ได้รับการเก็บรักษาความลับ (**confidentiality**)\n6. ได้รับการบริการตามมาตรฐานวิชาชีพ\n7. ขอความเห็นแพทย์อื่น (second opinion)\n8. รู้ชื่อ-ตำแหน่งของผู้ให้บริการ\n9. ขอดูเวชระเบียน + ขอสำเนา\n10. เด็ก / ผู้ไร้ความสามารถ — ผู้แทนตัดสินใจแทน\n\n**สิทธิเสริม:** ผู้ป่วยระยะสุดท้าย — ทำหนังสือแสดงเจตนา (มาตรา 12 พรบ.สุขภาพแห่งชาติ)" },
+        { "card_type": "concept", "title_th": "Informed Consent — องค์ประกอบ", "body_md": "**ต้องมี 5 องค์ประกอบ:**\n1. **Competence / Capacity** — เข้าใจ ตัดสินใจได้\n2. **Disclosure** — แพทย์ให้ข้อมูล (โรค, แผนรักษา, ทางเลือก, ความเสี่ยง, prognosis ไม่ทำ)\n3. **Understanding** — ผู้ป่วยเข้าใจ (ตรวจสอบด้วย teach-back)\n4. **Voluntariness** — ไม่ถูกบังคับ\n5. **Decision** — ตัดสินใจชัดเจน\n\n**Exception:**\n- **Emergency** — ช่วยชีวิตได้ (implied consent)\n- **เด็ก < 18 ปี** — ผู้ปกครองยินยอม\n- **ไร้ความสามารถ** — ผู้แทน (proxy)\n- **Therapeutic privilege** — เมื่อข้อมูลทำร้ายผู้ป่วย (rare, controversial)\n\n**บทบาทพยาบาล:**\n- ตรวจสอบ consent ก่อนหัตถการ\n- เป็นพยาน (witness)\n- ไม่ใช่ผู้อธิบาย (เป็นหน้าที่แพทย์)" },
+        { "card_type": "warning", "title_th": "Confidentiality — ข้อยกเว้น", "body_md": "**ห้ามเปิดเผยข้อมูลผู้ป่วย** — ผิด พรบ.สุขภาพแห่งชาติ มาตรา 7\n\n**ยกเว้น (เปิดเผยได้/ต้อง):**\n- ผู้ป่วยยินยอมเป็นลายลักษณ์อักษร\n- คำสั่งศาล\n- รายงานโรคติดต่อตาม พรบ.โรคติดต่อ\n- รายงานความรุนแรง — สงสัยทำร้ายเด็ก / ผู้สูงอายุ / IPV\n- Public health threat\n- Mandatory reporting (HIV partner notification ในบางกรณี)\n- เพื่อความปลอดภัยตามที่กฎหมายกำหนด\n\n**Tarasoff duty:** ถ้าผู้ป่วยจะทำร้ายบุคคลที่ระบุได้ มีหน้าที่เตือน + แจ้งตำรวจ" },
+        { "card_type": "concept", "title_th": "Advance Directive & DNR", "body_md": "**พรบ.สุขภาพแห่งชาติ มาตรา 12:**\n\"บุคคลมีสิทธิทำหนังสือแสดงเจตนาไม่ประสงค์จะรับบริการสาธารณสุขที่เป็นไปเพียงเพื่อยืดการตายในวาระสุดท้าย หรือเพื่อยุติการทรมานจากการเจ็บป่วย\"\n\n**Living Will ที่ถูกต้อง:**\n- ทำขณะมีสติสัมปชัญญะ\n- เป็นลายลักษณ์อักษร / ระบุชัดเจน\n- พยาน 2 คน\n- ระบุ specific intervention ที่ปฏิเสธ\n\n**Healthcare Proxy:**\n- แต่งตั้งคนตัดสินใจแทน\n- ใช้เมื่อผู้ป่วยไม่มี capacity\n\n**บทบาทพยาบาล:**\n- เก็บใน chart\n- แจ้งทีม\n- เคารพเจตนา\n- ไม่ใช่ครอบครัวยกเลิกได้ ถ้าผู้ป่วยเขียนชัดเจน" },
+        { "card_type": "tip", "title_th": "Documentation — Legal aspects", "body_md": "**Principles:**\n- **Factual** — ข้อเท็จจริง ไม่ใช่ความเห็น (\"ผู้ป่วยบอกว่า...\" ใช้ quote)\n- **Accurate, complete, timely**\n- **Chronological**\n- **Legible** + ลงชื่อ + ตำแหน่ง + วันเวลา\n- **No erasure** (line through + initial)\n\n**Do:**\n- บันทึก objective findings\n- Quote subjective statements\n- บันทึก interventions + responses\n- บันทึก notification (ใคร, เมื่อไหร่, response)\n\n**Don't:**\n- เว้นบรรทัด\n- ลบ / ใช้ correction fluid\n- บันทึกล่วงหน้า\n- โทษเพื่อนร่วมงาน\n- เขียนความเห็นทางกฎหมาย\n- เขียน \"incident report filed\" ใน chart\n\n**ภาษิต:** *\"Not documented = not done\"*" },
+        { "card_type": "concept", "title_th": "Mandatory Reporting — Thailand", "body_md": "**กฎหมายบังคับรายงาน:**\n- **เด็กถูกทำร้าย/ละเลย** (พรบ.คุ้มครองเด็ก 2546)\n- **ผู้สูงอายุถูกทำร้าย** (พรบ.ผู้สูงอายุ 2546)\n- **ผู้ป่วยจิตเวชเสี่ยงทำร้ายตน/ผู้อื่น** (พรบ.สุขภาพจิต 2551)\n- **IPV / GBV** — ไม่ใช่ mandatory ใน adult competent, แต่ encourage แจ้ง\n- **โรคติดต่อ** (พรบ.โรคติดต่อ 2558)\n- **อุบัติเหตุ / บาดเจ็บจากอาวุธ** (อาจต้องแจ้งตำรวจ)\n\n**Non-reporting** = ผิดกฎหมาย + จรรยาบรรณ" },
+        { "card_type": "qa", "title_th": "ตัวอย่างข้อสอบ — Refuse treatment", "body_md": "**Q:** ผู้ป่วย Jehovah's Witness อายุ 30 ปี รู้สึกตัวดี ปฏิเสธการรับเลือดทั้งที่ Hb 5 g/dL เสี่ยงเสียชีวิต ทีมแพทย์ทำอย่างไร?\n\n**A:** **เคารพ autonomy** ของผู้ป่วยที่มี capacity — ห้ามให้เลือด ใช้ทางเลือกอื่น (EPO, IV iron, blood salvage), ทีมต้อง document, family meeting, ปรึกษา ethics committee ถ้าจำเป็น" }
+      ],
+      "quiz_questions": [
+        {
+          "scenario": "ผู้ป่วย DM พลัดตกเตียงกลางคืน หัวฟกช้ำ พยาบาลควรบันทึกในเวชระเบียนอย่างไร",
+          "choices": [
+            { "label": "A", "text": "\"ผู้ป่วยตกเตียงเพราะพยาบาลผลัด ไม่ดู\"" },
+            { "label": "B", "text": "\"พบผู้ป่วยอยู่ที่พื้นข้างเตียง เวลา 02:15 น. ฟกช้ำที่ขมับขวา 2x3 cm V/S BP 140/90 HR 88 GCS 15 ไม่อาเจียน แจ้ง พญ. X ที่ 02:20 น. คำสั่งทำ CT brain\"" },
+            { "label": "C", "text": "\"Incident report has been filed\"" },
+            { "label": "D", "text": "บันทึกย้อนหลังตอนเช้า" },
+            { "label": "E", "text": "ลบบันทึกเดิมแล้วเขียนใหม่" }
+          ],
+          "correct_answer": "B",
+          "difficulty": "medium",
+          "explanation": "Documentation: factual, objective, timely, chronological, ไม่โทษคน, ไม่อ้าง incident report ใน chart",
+          "detailed_explanation": {
+            "summary": "Documentation = factual + objective + timely + ลายเซ็น",
+            "reason": "บันทึกข้อเท็จจริงตามที่พบ ไม่ใช่ความเห็น/โทษคน Incident report เป็นเอกสารแยกไม่กล่าวใน chart",
+            "choices": [
+              { "label": "A", "text": "โทษคน", "is_correct": false, "explanation": "ไม่ factual + เปิดความรับผิด" },
+              { "label": "B", "text": "Objective + ครบ + ลงเวลา", "is_correct": true, "explanation": "ถูก" },
+              { "label": "C", "text": "อ้าง incident report", "is_correct": false, "explanation": "ห้าม — เป็น risk management document แยก" },
+              { "label": "D", "text": "ย้อนหลัง", "is_correct": false, "explanation": "Timely = ทำทันที" },
+              { "label": "E", "text": "ลบเขียนใหม่", "is_correct": false, "explanation": "ห้าม — ใช้ line through + initial" }
+            ],
+            "key_takeaway": "Documentation: factual, objective, timely; ห้ามลบ, ไม่อ้าง incident report"
+          }
+        },
+        {
+          "scenario": "ผู้ป่วย breast cancer วัย 65 ปี รู้สึกตัวดี ปฏิเสธ chemotherapy ครอบครัวยืนยันให้ทำ พยาบาลควรทำอย่างไร",
+          "choices": [
+            { "label": "A", "text": "ทำ chemo ตามที่ครอบครัวขอ" },
+            { "label": "B", "text": "เคารพ autonomy ของผู้ป่วย (capacity intact) → ตรวจสอบ understanding, document refusal, ให้ information และ supportive care; ครอบครัวอาจ family meeting แต่ไม่ override" },
+            { "label": "C", "text": "บอกผู้ป่วยว่าต้องทำเท่านั้น" },
+            { "label": "D", "text": "แจ้งศาลขอให้ทำ chemo บังคับ" },
+            { "label": "E", "text": "ปล่อยให้กลับบ้าน ไม่บันทึกอะไร" }
+          ],
+          "correct_answer": "B",
+          "difficulty": "medium",
+          "explanation": "Autonomy ของ adult ที่มี capacity = สูงสุด ครอบครัวไม่สามารถ override; family meeting + supportive",
+          "detailed_explanation": {
+            "summary": "Adult competent = autonomy supreme; ครอบครัวไม่ override",
+            "reason": "หลัก autonomy: ผู้ป่วยมี capacity มีสิทธิ์ refuse แม้ life-saving บทบาทพยาบาล = ensure understanding + document + support",
+            "choices": [
+              { "label": "A", "text": "ตามครอบครัว", "is_correct": false, "explanation": "ละเมิด autonomy" },
+              { "label": "B", "text": "เคารพ + document", "is_correct": true, "explanation": "ถูก" },
+              { "label": "C", "text": "บังคับ", "is_correct": false, "explanation": "ผิดกฎหมาย" },
+              { "label": "D", "text": "ศาลบังคับ", "is_correct": false, "explanation": "ผู้ใหญ่มี capacity ศาลไม่บังคับ" },
+              { "label": "E", "text": "ไม่บันทึก", "is_correct": false, "explanation": "ต้อง document refusal" }
+            ],
+            "key_takeaway": "Adult competent refuse = honor autonomy; family input ≠ override"
+          }
+        },
+        {
+          "scenario": "พยาบาลพบเด็ก 5 ปีตามมาด้วยแม่ ตัวมีรอยฟกช้ำหลายระยะ แม่บอก \"ลูกซน\" แต่เด็กเศร้า ไม่กล้ามองตา ตอบคำถามไม่ตรง พยาบาลควรทำอย่างไร",
+          "choices": [
+            { "label": "A", "text": "เชื่อแม่ ปล่อยกลับบ้าน" },
+            { "label": "B", "text": "บอกแม่ว่า สงสัย abuse" },
+            { "label": "C", "text": "ประเมิน injury อย่างละเอียด + รายงาน multidisciplinary team + แจ้งหน่วยคุ้มครองเด็ก (mandatory reporting ตาม พรบ.คุ้มครองเด็ก) — ห้ามเผชิญหน้าผู้ต้องสงสัย" },
+            { "label": "D", "text": "ไม่ทำอะไร เพราะไม่ใช่หน้าที่" },
+            { "label": "E", "text": "ส่งกลับบ้าน + นัด follow-up" }
+          ],
+          "correct_answer": "C",
+          "difficulty": "medium",
+          "explanation": "สงสัย child abuse = mandatory reporting ตาม พรบ.คุ้มครองเด็ก 2546",
+          "detailed_explanation": {
+            "summary": "Suspected child abuse = mandatory report; ห้าม confront ผู้ต้องสงสัย",
+            "reason": "พยาบาลเป็น mandatory reporter; injury หลายระยะ + behavior change = red flag; confront ทำให้เด็กตกอันตรายมากขึ้น",
+            "choices": [
+              { "label": "A", "text": "เชื่อแม่", "is_correct": false, "explanation": "ละเลย duty" },
+              { "label": "B", "text": "บอกแม่", "is_correct": false, "explanation": "อันตรายต่อเด็ก" },
+              { "label": "C", "text": "Document + report", "is_correct": true, "explanation": "ถูก" },
+              { "label": "D", "text": "ไม่ใช่หน้าที่", "is_correct": false, "explanation": "Mandatory reporter" },
+              { "label": "E", "text": "Follow-up", "is_correct": false, "explanation": "Delay ทำให้เด็กไม่ปลอดภัย" }
+            ],
+            "key_takeaway": "Suspected abuse: document objectively, report to authority, don't confront perpetrator"
+          }
+        }
+      ]
+    }
+  ]
+}

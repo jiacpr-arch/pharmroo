@@ -1,0 +1,199 @@
+{
+  "subject": "NursingMidwifery",
+  "unit": {
+    "title_th": "การผดุงครรภ์",
+    "description_th": "Stages of labor, fetal monitoring, intrapartum complications และ obstetric emergencies",
+    "icon": "🤰"
+  },
+  "lessons": [
+    {
+      "title_th": "Stages of Labor & Fetal Monitoring",
+      "subtitle_th": "Latent/active phase, FHR pattern, partograph",
+      "icon": "📈",
+      "est_minutes": 11,
+      "xp_reward": 18,
+      "cards": [
+        { "card_type": "concept", "title_th": "Stages of Labor", "body_md": "**Stage 1 — Cervical dilatation:**\n- **Latent:** 0-6 cm (slow)\n- **Active:** 6-10 cm (rapid, ~1 cm/hr nullipara, 1.5 multipara)\n\n**Stage 2 — Pushing/birth:**\n- Full dilatation → delivery of baby\n- Nullipara ≤ 3 ชม. (with epidural), multipara ≤ 2 ชม.\n\n**Stage 3 — Placenta:**\n- After baby → placenta delivery\n- ≤ 30 นาที (active management ลดเหลือ 5-10 นาที)\n- Active management = oxytocin + controlled cord traction + uterine massage\n\n**Stage 4 — Recovery 1-2 ชม.:**\n- Monitor V/S, fundus, lochia, bladder Q15 min" },
+        { "card_type": "concept", "title_th": "Signs of true vs false labor", "body_md": "| | True | False (Braxton-Hicks) |\n|---|---|---|\n| Contraction | regular ↑ intensity/duration | irregular ไม่เพิ่ม |\n| Interval | สั้นลง | ไม่เปลี่ยน |\n| Pain | ปวดร้าวจาก back ไปหน้าท้อง | ปวดท้องน้อย |\n| Effect of walk | เพิ่มขึ้น | บรรเทาลง |\n| Cervical change | dilate + efface | ไม่เปลี่ยน |\n| Bloody show | yes | no |\n| Rupture membrane | may | no |" },
+        { "card_type": "tip", "title_th": "Partograph — การพยาบาล", "body_md": "**บันทึก:**\n- Cervical dilatation Q4hr ใน active phase\n- FHR Q30min (stage 1) / Q5min (stage 2)\n- Contraction Q30min: frequency, duration, intensity\n- Maternal V/S Q4hr\n- Urine Q2-4hr\n\n**Alert line:** 1 cm/hr ใน active phase\n**Action line:** 4 ชม.หลัง alert line\n\n**ข้าม alert line:** ประเมิน — augmentation, ARM\n**ข้าม action line:** review for obstruction → consider CS" },
+        { "card_type": "concept", "title_th": "FHR Pattern — Baseline & Variability", "body_md": "**Baseline (10 min average):**\n- **Normal:** 110-160 bpm\n- **Tachycardia:** > 160 (maternal fever, hypoxia, drug)\n- **Bradycardia:** < 110 (hypoxia, drug, congenital block)\n\n**Variability (beat-to-beat):**\n- **Absent:** 0 → ominous\n- **Minimal:** ≤ 5 bpm → sleep / drug / acidosis\n- **Moderate:** 6-25 → reassuring (good!)\n- **Marked:** > 25 → hypoxia\n\n**Acceleration:** ↑ ≥ 15 bpm × 15 sec → reassuring fetal well-being" },
+        { "card_type": "warning", "title_th": "Decelerations — VEAL CHOP", "body_md": "**V**ariable - **C**ord compression\n**E**arly - **H**ead compression\n**A**cceleration - **O**K\n**L**ate - **P**lacental insufficiency (most worrisome)\n\n**Early:** mirror contraction → physiologic\n**Variable:** abrupt drop, V/U shape → cord compression\n**Late:** ↓ after contraction peak → uteroplacental insufficiency = **bad**\n\n**Late/severe variable → จัดการ:**\n1. Left lateral position\n2. O₂ mask 8-10 LPM\n3. IV fluid\n4. หยุด oxytocin\n5. PV exam (cord prolapse?)\n6. Notify OB → consider CS" },
+        { "card_type": "tip", "title_th": "การพยาบาล Stage 1", "body_md": "**Latent phase:**\n- เดิน นั่ง ลุก\n- หายใจ slow deep\n- ห้องเงียบ\n- กิน-ดื่ม light หรือ NPO ตาม protocol\n- ปัสสาวะ Q2-4hr\n\n**Active phase:**\n- ปวดมาก → analgesia (PCA / epidural)\n- FHR Q15-30 min\n- VE Q2-4 hr (sterile)\n- Comfort: massage, position, breathing\n- ห้อง warm, calm\n\n**Hydrate IV** ถ้า NPO หรือ epidural" },
+        { "card_type": "concept", "title_th": "Epidural anesthesia — การพยาบาล", "body_md": "**Pre:**\n- Informed consent\n- IV bolus NSS 500-1000 mL\n- Bladder empty\n- V/S baseline\n\n**During/Post:**\n- Side-lying / sitting curl\n- Position F/U\n\n**Monitor:**\n- **Hypotension** (พบบ่อยที่สุด) → IV fluid + left lateral + ephedrine\n- ขาชา\n- ปัสสาวะคั่ง (อาจต้อง catheter)\n- Itching, fever (จาก opioid)\n- Headache (post-dural puncture)\n- ระดับ block (T10 พอ; T4 อันตราย respiratory)" },
+        { "card_type": "concept", "title_th": "Episiotomy & laceration", "body_md": "**Episiotomy:**\n- **Median (midline)** — bleed น้อย heal ดี แต่เสี่ยง extension 3rd-4th degree\n- **Mediolateral** — bleed มากกว่า แต่หลีกเลี่ยง anal sphincter\n\n**Laceration degree:**\n- **1st:** skin, vaginal mucosa\n- **2nd:** + perineal muscle\n- **3rd:** + anal sphincter\n- **4th:** + rectal mucosa\n\n**Post-care:**\n- REEDA assessment\n- Ice 24 ชม.แรก → warm sitz bath\n- Front-to-back wipe\n- Kegel exercise\n- Stool softener (3rd-4th degree)" },
+        { "card_type": "qa", "title_th": "ตัวอย่างข้อสอบ — Late deceleration", "body_md": "**Q:** หญิงคลอดที่ 38 wk active labor cervix 7 cm FHR pattern พบ late deceleration ซ้ำ 3 รอบ พยาบาลควรทำสิ่งใดอันดับแรก?\n\n**A:** **จัดท่า left lateral** ทันที (relieve aortocaval compression) + ให้ O₂ mask 8-10 LPM + IV fluid + **หยุด oxytocin** ถ้ามี + แจ้งแพทย์เตรียม possible CS — เพราะ late decel = uteroplacental insufficiency" }
+      ],
+      "quiz_questions": [
+        {
+          "scenario": "หญิงคลอด 6 cm dilated contraction strong q3min FHR baseline 145, variability minimal, late deceleration ซ้ำ 3 รอบ การพยาบาลข้อใดถูกต้องที่สุด",
+          "choices": [
+            { "label": "A", "text": "เร่ง oxytocin เพื่อให้คลอดเร็ว" },
+            { "label": "B", "text": "Left lateral + O₂ mask 8-10 LPM + IV fluid + หยุด oxytocin + แจ้งแพทย์" },
+            { "label": "C", "text": "Supine + ฝึก breathing exercise" },
+            { "label": "D", "text": "ให้ผู้ป่วยเดินรอบเตียง" },
+            { "label": "E", "text": "ให้ pain medication" }
+          ],
+          "correct_answer": "B",
+          "difficulty": "medium",
+          "explanation": "Late deceleration = uteroplacental insufficiency → intrauterine resuscitation",
+          "detailed_explanation": {
+            "summary": "Late decel = LION: Left lateral + IV fluid + Oxygen + Notify",
+            "reason": "Late decel เกิดจาก placental insufficiency = fetal hypoxia ต้อง resuscitate intrauterine + เตรียม emergency CS ถ้าไม่ดีขึ้น",
+            "choices": [
+              { "label": "A", "text": "เร่ง oxytocin", "is_correct": false, "explanation": "อันตราย — ทำให้ hypoxia แย่ลง" },
+              { "label": "B", "text": "LION + หยุด oxytocin", "is_correct": true, "explanation": "ถูก" },
+              { "label": "C", "text": "Supine + breathing", "is_correct": false, "explanation": "Supine เพิ่ม aortocaval compression" },
+              { "label": "D", "text": "เดินรอบเตียง", "is_correct": false, "explanation": "ไม่ใช่ resuscitation" },
+              { "label": "E", "text": "Pain med", "is_correct": false, "explanation": "ไม่ใช่ priority" }
+            ],
+            "key_takeaway": "Late decel = LION (Left lateral, IV, O₂, Notify) + stop oxytocin"
+          }
+        },
+        {
+          "scenario": "หญิงคลอด rupture of membrane พบ FHR drop เป็น 60 bpm ต่อเนื่อง 2 นาที PV exam พบ cord prolapse พยาบาลควรทำอันดับแรก",
+          "choices": [
+            { "label": "A", "text": "พยายาม push cord กลับเข้าไป" },
+            { "label": "B", "text": "ยก hip / knee-chest position + จับ presenting part ดันออกจาก cord + ห้ามเอามือออก + เรียก emergency CS" },
+            { "label": "C", "text": "ให้ oxytocin เพื่อเร่งคลอด" },
+            { "label": "D", "text": "รอ 15 นาที สังเกตอาการ" },
+            { "label": "E", "text": "ให้แม่นั่งกึ่งนั่ง" }
+          ],
+          "correct_answer": "B",
+          "difficulty": "hard",
+          "explanation": "Cord prolapse = obstetric emergency → relieve cord compression + emergency CS",
+          "detailed_explanation": {
+            "summary": "Cord prolapse: knee-chest + lift presenting part + STAT CS",
+            "reason": "Cord compress = fetal hypoxia ภายในนาที พยาบาลต้องเอามือเข้า PV ดัน presenting part ออก + ท่าให้ pelvis สูง (knee-chest หรือ Trendelenburg) + เตรียม CS ทันที — ห้ามเอามือออกจนกว่าจะคลอด",
+            "choices": [
+              { "label": "A", "text": "Push cord กลับ", "is_correct": false, "explanation": "อันตราย — ทำให้ cord injury / clot" },
+              { "label": "B", "text": "Knee-chest + lift + STAT CS", "is_correct": true, "explanation": "ถูก" },
+              { "label": "C", "text": "Oxytocin", "is_correct": false, "explanation": "เพิ่ม cord compression" },
+              { "label": "D", "text": "รอ 15 นาที", "is_correct": false, "explanation": "Fetal death" },
+              { "label": "E", "text": "นั่งกึ่งนั่ง", "is_correct": false, "explanation": "เพิ่ม compression" }
+            ],
+            "key_takeaway": "Cord prolapse = knee-chest + lift presenting part + STAT CS"
+          }
+        },
+        {
+          "scenario": "หญิงคลอดได้รับ epidural 10 นาทีก่อน V/S BP drop 80/50 mmHg HR 110 ทารก FHR 110 ลด คุณจะทำอย่างไรอันดับแรก",
+          "choices": [
+            { "label": "A", "text": "ปิด epidural infusion + ให้ NSS bolus 500-1000 mL + left lateral position + ephedrine ถ้าจำเป็น" },
+            { "label": "B", "text": "ส่ง CS ทันที" },
+            { "label": "C", "text": "เพิ่มขนาด epidural" },
+            { "label": "D", "text": "ให้ furosemide ลด BP" },
+            { "label": "E", "text": "Supine flat" }
+          ],
+          "correct_answer": "A",
+          "difficulty": "medium",
+          "explanation": "Maternal hypotension post-epidural → IV fluid + left lateral + vasopressor (ephedrine/phenylephrine) — restore placental perfusion",
+          "detailed_explanation": {
+            "summary": "Post-epidural hypotension: fluid + left lateral + ephedrine",
+            "reason": "Sympathetic block จาก epidural → vasodilate → maternal hypotension → uteroplacental hypoperfusion ผลที่ทารก",
+            "choices": [
+              { "label": "A", "text": "Fluid + LL + ephedrine", "is_correct": true, "explanation": "ถูก" },
+              { "label": "B", "text": "CS", "is_correct": false, "explanation": "แก้ที่ต้นเหตุก่อน" },
+              { "label": "C", "text": "เพิ่ม epidural", "is_correct": false, "explanation": "เพิ่ม hypotension" },
+              { "label": "D", "text": "Furosemide", "is_correct": false, "explanation": "ผิด — ต้องเพิ่ม volume" },
+              { "label": "E", "text": "Supine", "is_correct": false, "explanation": "เพิ่ม aortocaval compression" }
+            ],
+            "key_takeaway": "Post-epidural hypotension = fluid + left lateral + ephedrine"
+          }
+        }
+      ]
+    },
+    {
+      "title_th": "Obstetric Emergencies & Postpartum complications",
+      "subtitle_th": "Shoulder dystocia, uterine rupture, PPH, embolism",
+      "icon": "⚠️",
+      "est_minutes": 9,
+      "xp_reward": 15,
+      "cards": [
+        { "card_type": "warning", "title_th": "Shoulder Dystocia — McRoberts", "body_md": "**Risk:** macrosomia (DM), prolonged 2nd stage, instrumental delivery\n\n**Sign:** **\"Turtle sign\"** — หัวออกแล้วถอยกลับ\n\n**HELPERR mnemonic:**\n- **H**elp — เรียกทีม\n- **E**piostomy (consider)\n- **L**egs — McRoberts (hyper-flex hips)\n- **P**ressure — suprapubic\n- **E**nter — internal rotation (Woods/Rubin)\n- **R**emove posterior arm\n- **R**oll over (Gaskin all-fours)\n\n**ห้าม fundal pressure!** (เพิ่ม impaction)" },
+        { "card_type": "warning", "title_th": "Uterine Rupture", "body_md": "**Risk:** Prior CS (esp. classical), trauma, oxytocin overstim, grand multipara\n\n**Sign:**\n- **Sudden severe abdominal pain** (\"tearing\")\n- Loss of FHR / fetal distress\n- Recession of presenting part\n- Vaginal bleeding + maternal shock\n- หยุด contraction\n\n**Management:**\n- Emergency laparotomy\n- Massive transfusion\n- Repair vs hysterectomy" },
+        { "card_type": "concept", "title_th": "Amniotic Fluid Embolism (AFE)", "body_md": "**Rare แต่ death สูง > 60%**\n\n**Triad (sudden onset):**\n1. **Respiratory failure** (acute dyspnea, cyanosis)\n2. **Cardiovascular collapse** (hypotension, arrest)\n3. **DIC** (massive bleeding)\n\n**Trigger:** Strong contractions, ARM, rapid labor\n\n**Management:**\n- ABC — intubate + ventilate\n- IV fluid + vasopressor\n- Massive transfusion + DIC management (PRC, FFP, plt, cryo, fibrinogen)\n- Perimortem C-section ถ้า arrest > 4 นาที" },
+        { "card_type": "concept", "title_th": "VTE in Pregnancy", "body_md": "**Pregnancy = hypercoagulable** (4-5× risk DVT/PE)\n\n**DVT:**\n- Calf pain (Homan's sign), unilateral leg swelling, redness\n- Confirm: compression U/S\n- ขาซ้ายพบบ่อยกว่า (กดจาก uterus)\n\n**PE:**\n- Dyspnea, pleuritic chest pain, hemoptysis\n- Sudden hypoxia, tachypnea\n- Confirm: CTPA / V/Q scan\n\n**Treatment:**\n- **LMWH** (enoxaparin) — ไม่ผ่าน placenta\n- ห้าม warfarin (teratogenic, 1st trimester)\n- หลังคลอด → switch to warfarin OK (compatible with breastfeeding)" },
+        { "card_type": "concept", "title_th": "Postpartum Depression vs Blues", "body_md": "**Baby blues:**\n- 50-80% of moms\n- เริ่ม 3-5 วันหลังคลอด\n- หาย ภายใน 2 สัปดาห์\n- ร้องไห้ง่าย mood swing\n- **Treatment:** support, reassurance\n\n**Postpartum depression:**\n- 10-20%\n- เริ่ม 2 สัปดาห์-1 ปี\n- > 2 สัปดาห์, ทำให้รบกวน function\n- คิดทำร้ายตัวเอง/ลูก, ไม่เชื่อมโยงกับลูก\n- **Edinburgh Postnatal Depression Scale**\n- **Treatment:** SSRI (sertraline safe breastfeeding), counseling\n\n**Postpartum psychosis:**\n- 0.1-0.2% — **EMERGENCY**\n- เริ่ม 1-4 สัปดาห์, hallucination, delusion\n- High suicide / infanticide risk\n- Admit จิตเวช ทันที" },
+        { "card_type": "tip", "title_th": "Discharge Education", "body_md": "**Warning signs — ให้ผู้ป่วยมาทันที:**\n- Heavy bleeding (saturate pad < 1 hr) หรือ clot ใหญ่\n- Fever > 38°C\n- Foul lochia\n- Severe headache / vision change\n- Leg pain/swelling (DVT)\n- Dyspnea / chest pain (PE)\n- Suicidal thought / harm baby\n- Severe perineal pain\n\n**Routine:**\n- ANC 6 wk follow-up\n- Contraception (avoid pregnancy < 18 mo)\n- Pelvic rest 4-6 wk (no intercourse, tampons)\n- Iron + multivitamin continue" },
+        { "card_type": "concept", "title_th": "Maternal mortality — leading causes (Thailand)", "body_md": "**Top causes:**\n1. **Hemorrhage** (PPH > APH)\n2. **Hypertensive disorders** (preeclampsia/eclampsia)\n3. **Sepsis** (postpartum endometritis, septic abortion)\n4. **VTE / Embolism**\n5. **Indirect** — pre-existing disease (heart, DM)\n\n**Prevention strategies:**\n- ANC ครบ\n- Skilled birth attendant\n- Active management 3rd stage (oxytocin)\n- Magnesium sulfate ใน severe preeclampsia\n- ATB prophylaxis CS\n- VTE prophylaxis high-risk" },
+        { "card_type": "qa", "title_th": "ตัวอย่างข้อสอบ — Shoulder dystocia", "body_md": "**Q:** หลังคลอดศีรษะ ทารกชี้กลับไม่หมุน (turtle sign) คุณจะทำอันดับแรก?\n\n**A:** เรียกความช่วยเหลือ + **McRoberts maneuver** (hyperflex hip ผู้ป่วยถึงหน้าท้อง) + **suprapubic pressure** ห้าม fundal pressure (เพิ่ม impaction) เตรียม episiotomy / internal maneuvers (Woods/Rubin) ตาม HELPERR" }
+      ],
+      "quiz_questions": [
+        {
+          "scenario": "หลังคลอดศีรษะ ทารกถอยกลับ (turtle sign) ไหล่ไม่ออก พยาบาลควรทำสิ่งใดอันดับแรก",
+          "choices": [
+            { "label": "A", "text": "Fundal pressure แรงๆ" },
+            { "label": "B", "text": "เรียกความช่วยเหลือ + McRoberts (hyperflex hip) + suprapubic pressure" },
+            { "label": "C", "text": "ดึงศีรษะแรงๆ" },
+            { "label": "D", "text": "ให้ oxytocin เพิ่ม" },
+            { "label": "E", "text": "ส่ง CS ทันที" }
+          ],
+          "correct_answer": "B",
+          "difficulty": "medium",
+          "explanation": "Shoulder dystocia → McRoberts + suprapubic ก่อน internal maneuver ห้าม fundal pressure",
+          "detailed_explanation": {
+            "summary": "Shoulder dystocia: HELPERR; ห้าม fundal pressure",
+            "reason": "McRoberts (hyperflex hip) ทำให้ pelvis แบนลง + suprapubic pressure ดัน anterior shoulder ผ่าน symphysis ไม่ใช้ fundal เพราะเพิ่ม impaction",
+            "choices": [
+              { "label": "A", "text": "Fundal pressure", "is_correct": false, "explanation": "ห้าม — เพิ่ม impaction" },
+              { "label": "B", "text": "McRoberts + suprapubic", "is_correct": true, "explanation": "ถูก — first maneuver" },
+              { "label": "C", "text": "ดึงแรง", "is_correct": false, "explanation": "Brachial plexus injury" },
+              { "label": "D", "text": "Oxytocin", "is_correct": false, "explanation": "ไม่ช่วยใน mechanical issue" },
+              { "label": "E", "text": "CS", "is_correct": false, "explanation": "หัวออกแล้วทำไม่ได้" }
+            ],
+            "key_takeaway": "Shoulder dystocia: HELPERR (Help, Episiotomy, Legs/McRoberts, Pressure suprapubic, Enter, Remove arm, Roll)"
+          }
+        },
+        {
+          "scenario": "หญิงหลังคลอด 30 นาที หายใจหอบ ขึ้นเขียวแล้ว BP 70/40 มี profuse vaginal bleeding labs DIC pattern คิดถึงโรคใดมากที่สุด",
+          "choices": [
+            { "label": "A", "text": "Endometritis" },
+            { "label": "B", "text": "Amniotic fluid embolism" },
+            { "label": "C", "text": "Mastitis" },
+            { "label": "D", "text": "Pre-eclampsia" },
+            { "label": "E", "text": "Anxiety attack" }
+          ],
+          "correct_answer": "B",
+          "difficulty": "hard",
+          "explanation": "Sudden respiratory + CV collapse + DIC postpartum/intrapartum = AFE classic triad",
+          "detailed_explanation": {
+            "summary": "AFE triad: sudden respiratory + CV collapse + DIC",
+            "reason": "Amniotic fluid + fetal cells เข้า maternal circulation → anaphylactoid reaction; rare แต่ mortality สูง",
+            "choices": [
+              { "label": "A", "text": "Endometritis", "is_correct": false, "explanation": "ไม่มี respiratory collapse + DIC ใน early postpartum" },
+              { "label": "B", "text": "AFE", "is_correct": true, "explanation": "ถูก" },
+              { "label": "C", "text": "Mastitis", "is_correct": false, "explanation": "ไม่ทำให้ collapse" },
+              { "label": "D", "text": "Pre-eclampsia", "is_correct": false, "explanation": "BP สูงไม่ใช่ต่ำ" },
+              { "label": "E", "text": "Anxiety", "is_correct": false, "explanation": "ไม่อธิบาย DIC" }
+            ],
+            "key_takeaway": "AFE = sudden respiratory + CV + DIC, mortality > 60%"
+          }
+        },
+        {
+          "scenario": "หญิงหลังคลอด 3 สัปดาห์มา ANC ตอบ EPDS score 18 ร้องไห้ทุกวัน คิดทำร้ายตัวเอง น้ำหนักลด นอนไม่หลับ การจัดการที่ถูกที่สุด",
+          "choices": [
+            { "label": "A", "text": "Reassurance baby blues, กลับบ้านได้" },
+            { "label": "B", "text": "Postpartum depression with suicidal ideation → urgent psychiatric consult + safety plan + consider SSRI (sertraline)" },
+            { "label": "C", "text": "หยุดให้นมเพราะ stress" },
+            { "label": "D", "text": "เริ่ม benzodiazepine PRN" },
+            { "label": "E", "text": "นัด follow up 1 เดือน" }
+          ],
+          "correct_answer": "B",
+          "difficulty": "medium",
+          "explanation": "EPDS ≥ 13 + suicidal ideation > 2 สัปดาห์ = PPD ต้อง urgent psych referral + safety + treatment",
+          "detailed_explanation": {
+            "summary": "PPD + SI = urgent psych referral, safety plan, sertraline (lactation safe)",
+            "reason": "Baby blues หาย < 2 wk; PPD > 2 wk + functional impairment + SI = needs intervention sertraline เป็น SSRI ที่ปลอดภัยใน breastfeeding",
+            "choices": [
+              { "label": "A", "text": "Baby blues", "is_correct": false, "explanation": "3 สัปดาห์ + SI ≠ blues" },
+              { "label": "B", "text": "PPD + urgent psych", "is_correct": true, "explanation": "ถูก" },
+              { "label": "C", "text": "หยุดนม", "is_correct": false, "explanation": "ไม่จำเป็น sertraline OK" },
+              { "label": "D", "text": "BZD PRN", "is_correct": false, "explanation": "ไม่ใช่ first line" },
+              { "label": "E", "text": "Follow 1 เดือน", "is_correct": false, "explanation": "SI = urgent ไม่รอ" }
+            ],
+            "key_takeaway": "Baby blues < 2 wk; PPD > 2 wk; PP psychosis = emergency"
+          }
+        }
+      ]
+    }
+  ]
+}

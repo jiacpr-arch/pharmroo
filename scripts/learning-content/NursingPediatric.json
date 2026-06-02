@@ -1,0 +1,200 @@
+{
+  "subject": "NursingPediatric",
+  "unit": {
+    "title_th": "การพยาบาลเด็กและวัยรุ่น",
+    "description_th": "Growth & development, vaccination, common pediatric illnesses, pediatric emergencies",
+    "icon": "🧒"
+  },
+  "lessons": [
+    {
+      "title_th": "Growth, Development & Vaccination",
+      "subtitle_th": "Milestones, EPI vaccines และ pediatric assessment",
+      "icon": "📏",
+      "est_minutes": 11,
+      "xp_reward": 18,
+      "cards": [
+        { "card_type": "concept", "title_th": "Developmental Milestones (DDST/key)", "body_md": "**2 เดือน:** ยิ้ม social smile, ชันคอ\n**4 เดือน:** ชันคอ 90°, หัวเราะดัง\n**6 เดือน:** พลิกตัว, นั่งเอนตัว, จับของย้ายมือ\n**9 เดือน:** นั่งเอง, คลาน, pincer grasp\n**12 เดือน:** ยืนเอง, เดิน 1-2 ก้าว, พูด 1-2 คำ\n**18 เดือน:** เดินคล่อง, ขึ้นบันไดจับ, พูด 10-20 คำ\n**2 ปี:** วิ่ง, ปั้นบันไดข้างละขั้น, พูด 2 word phrases\n**3 ปี:** ขี่จักรยาน 3 ล้อ, พูดประโยค 3 คำ" },
+        { "card_type": "concept", "title_th": "EPI Thailand — แผนสร้างเสริมภูมิคุ้มกัน", "body_md": "**แรกเกิด:** BCG, HBV1\n**1, 2, 4, 6 เดือน:** HBV, DTP-HB-Hib, OPV, IPV\n**6 เดือน:** Influenza (และทุกปี)\n**9 เดือน:** MMR1, JE1\n**12 เดือน:** JE2, MMR2\n**18 เดือน:** DTP-HB-Hib booster, OPV\n**2½ ปี:** JE3 (live attenuated)\n**4 ปี:** DTP, OPV, MMR\n**11-12 ปี:** dT, HPV (หญิง ป.5)\n**ทุก 10 ปี:** dT booster" },
+        { "card_type": "warning", "title_th": "Vaccination contraindications", "body_md": "**Absolute (เสมอ):**\n- Anaphylaxis ต่อ component\n\n**Live vaccines (BCG, MMR, OPV, JE, varicella):**\n- Pregnancy\n- Severe immunocompromise (HIV CD4<200, chemo, steroid > 2 wk)\n- Recent IVIG / blood (รอ 3-11 เดือน)\n\n**Defer (ชั่วคราว):**\n- Moderate-severe illness with fever\n- ไม่ defer ถ้า mild URI, low fever\n\n**Pertussis (DTP):**\n- Encephalopathy ภายใน 7 วันหลังโดส = หยุด pertussis" },
+        { "card_type": "tip", "title_th": "Vital signs ในเด็ก (โดยอายุ)", "body_md": "| อายุ | HR | RR | SBP |\n|---|---|---|---|\n| <1 ปี | 100-160 | 30-60 | 70-90 |\n| 1-3 ปี | 90-150 | 24-40 | 80-100 |\n| 3-6 ปี | 80-140 | 22-34 | 80-110 |\n| 6-12 ปี | 70-120 | 18-30 | 85-120 |\n| > 12 ปี | 60-100 | 12-20 | 95-140 |\n\n**Hypotension เด็ก** = SBP < (70 + 2×อายุปี) ใน 1-10 ปี\n\nสัญญาณ shock เด็ก: capillary refill > 2 sec, weak pulse, cool extremity, tachycardia (BP drop = late sign)" },
+        { "card_type": "concept", "title_th": "Fluid management — เด็ก", "body_md": "**Maintenance (Holliday-Segar):**\n- 0-10 kg: 100 mL/kg/day\n- 11-20 kg: 1000 + 50 mL/kg (ทุก kg ที่เกิน 10)\n- > 20 kg: 1500 + 20 mL/kg (ทุก kg ที่เกิน 20)\n\n**ตัวอย่าง 25 kg:** 1500 + 5×20 = 1600 mL/day = 67 mL/hr\n\n**Dehydration replacement:**\n- Mild (3-5%) → ORS 50 mL/kg / 4 ชม.\n- Moderate (6-9%) → ORS 100 mL/kg / 4 ชม.\n- Severe (≥ 10% shock) → NSS bolus 20 mL/kg IV/IO ซ้ำได้ 2-3 รอบ" },
+        { "card_type": "concept", "title_th": "Apgar score (แรกเกิด 1 และ 5 นาที)", "body_md": "**APGAR** — แต่ละข้อ 0-2 คะแนน:\n- **A**ppearance (สี): blue/pink\n- **P**ulse: 0 / <100 / >100\n- **G**rimace (reflex): no / grimace / cry\n- **A**ctivity (tone): limp / some flex / active\n- **R**espiration: no / weak cry / strong cry\n\n**Total:**\n- 7-10: ปกติ\n- 4-6: moderately depressed (need stimulation, O₂)\n- 0-3: severely depressed (need resuscitation)" },
+        { "card_type": "tip", "title_th": "Neonatal resuscitation (NRP)", "body_md": "**Initial steps (30 sec):**\n- Warm, dry, stimulate, position airway\n- Suction ปาก-จมูก (ปากก่อน เพราะกระตุ้น gag → aspirate)\n\n**ถ้า HR < 100 / apnea / gasping:**\n- PPV bag-mask 40-60/min × 30 sec\n\n**ถ้า HR < 60 หลัง PPV:**\n- Chest compression 3:1 (90 compressions + 30 breaths/min)\n\n**ถ้า HR < 60 หลัง 30 sec CPR:**\n- Epinephrine IV/IO/ET\n- Volume expansion (NSS 10 mL/kg)" },
+        { "card_type": "concept", "title_th": "Pediatric pain assessment", "body_md": "**< 3 ปี:** FLACC scale\n- **F**ace, **L**egs, **A**ctivity, **C**ry, **C**onsolability — แต่ละข้อ 0-2 รวม 0-10\n\n**3-7 ปี:** Wong-Baker FACES (6 หน้ายิ้ม-ร้องไห้)\n\n**> 7 ปี:** NRS 0-10\n\n**Neonates:** NIPS, PIPP\n\nPain underrated ในเด็ก — ใช้ scale + non-pharm (sucrose, swaddle, parent hold) + medication" },
+        { "card_type": "qa", "title_th": "ตัวอย่างข้อสอบ — Vaccine catch-up", "body_md": "**Q:** เด็ก 18 เดือนยังไม่เคยรับวัคซีนใดเลย พยาบาลควรเริ่มอย่างไร?\n\n**A:** เริ่ม catch-up ทันที — ให้ BCG, HBV, DTP-Hib-IPV, OPV, MMR, JE ในวันแรกที่เป็นไปได้ (ฉีดได้หลายเข็มพร้อมกันคนละข้าง / live หลายชนิดในวันเดียวกัน) ตามตาราง catch-up ของกรมควบคุมโรค" }
+      ],
+      "quiz_questions": [
+        {
+          "scenario": "เด็กชาย 18 เดือน น้ำหนัก 12 kg ท้องเสีย 2 วัน ตาลึก ปากแห้ง ดูดน้ำลำบาก capillary refill 3 วินาที พลังงานช้า การจัดการที่เหมาะสมที่สุด",
+          "choices": [
+            { "label": "A", "text": "ให้ ORS 1200 mL ใน 4 ชั่วโมง" },
+            { "label": "B", "text": "NSS 20 mL/kg IV bolus + เตรียม IV maintenance" },
+            { "label": "C", "text": "ให้ glucose 5% IV drip ช้าๆ" },
+            { "label": "D", "text": "ให้ NPO 6 ชั่วโมง" },
+            { "label": "E", "text": "Loperamide PO หยุดท้องเสีย" }
+          ],
+          "correct_answer": "B",
+          "difficulty": "medium",
+          "explanation": "Severe dehydration / impending shock (CRT > 2 sec, lethargy) → NSS 20 mL/kg IV bolus ทันที (ในรายนี้ = 240 mL) ซ้ำได้ 2-3 รอบ",
+          "detailed_explanation": {
+            "summary": "Severe dehydration เด็ก = NSS 20 mL/kg IV bolus",
+            "reason": "CRT > 2 sec + lethargy + ดูดน้ำลำบาก = severe (≥ 10%) ORS ไม่พอเพราะดูดเองไม่ได้ + ต้อง restore perfusion เร็ว",
+            "choices": [
+              { "label": "A", "text": "ORS 1200 mL", "is_correct": false, "explanation": "Severe + ดื่มไม่ได้ — ORS ไม่ทัน" },
+              { "label": "B", "text": "NSS 20 mL/kg IV", "is_correct": true, "explanation": "ถูก" },
+              { "label": "C", "text": "D5W drip ช้า", "is_correct": false, "explanation": "ไม่ใช่ bolus + low Na" },
+              { "label": "D", "text": "NPO 6 ชม.", "is_correct": false, "explanation": "อันตราย" },
+              { "label": "E", "text": "Loperamide", "is_correct": false, "explanation": "ห้ามใน acute diarrhea เด็ก" }
+            ],
+            "key_takeaway": "เด็ก dehydration: mild/mod = ORS, severe/shock = NSS 20 mL/kg IV bolus"
+          }
+        },
+        {
+          "scenario": "ทารกแรกเกิด 1 นาทีหลังคลอด ตัวเขียว HR 80 หายใจอ่อนแรง tone ลด ร้องไม่ออก Apgar score ประมาณเท่าใดและการจัดการอันดับแรก",
+          "choices": [
+            { "label": "A", "text": "Apgar 7 → ดูดเสมหะ + รอสังเกต" },
+            { "label": "B", "text": "Apgar 3-4 → PPV bag-mask 40-60/min หลังจาก warm, dry, stimulate, suction" },
+            { "label": "C", "text": "Apgar 9 → ปกติ" },
+            { "label": "D", "text": "Apgar 0 → CPR + epinephrine ทันที" },
+            { "label": "E", "text": "รอ 5 นาที ค่อยประเมิน" }
+          ],
+          "correct_answer": "B",
+          "difficulty": "medium",
+          "explanation": "ตัวเขียว 2 (A=1) + HR 80 (1) + grimace weak (1) + tone low (1) + RR weak cry (1) = ~4 → PPV หลัง initial step",
+          "detailed_explanation": {
+            "summary": "Apgar 4-6 + HR < 100 = PPV หลัง initial step",
+            "reason": "ตาม NRP: warm/dry/stimulate/suction → ถ้า HR < 100 หรือ apnea/gasping → PPV bag-mask 30 sec",
+            "choices": [
+              { "label": "A", "text": "Apgar 7 รอสังเกต", "is_correct": false, "explanation": "ผิด score, ผิด action" },
+              { "label": "B", "text": "Apgar 3-4 PPV", "is_correct": true, "explanation": "ถูก" },
+              { "label": "C", "text": "Apgar 9 ปกติ", "is_correct": false, "explanation": "Score ผิด" },
+              { "label": "D", "text": "Apgar 0 CPR", "is_correct": false, "explanation": "HR > 60 ยังไม่ใช่ CPR; CPR เริ่มเมื่อ HR<60 หลัง PPV" },
+              { "label": "E", "text": "รอ 5 นาที", "is_correct": false, "explanation": "รอไม่ได้ — เริ่ม resuscitation ทันที" }
+            ],
+            "key_takeaway": "NRP: warm/dry/stim → HR<100 = PPV → HR<60 = CPR 3:1 → HR<60 ยัง = epi"
+          }
+        },
+        {
+          "scenario": "แม่พาเด็ก 9 เดือนมาฉีดวัคซีน เด็กมีไข้ต่ำ 37.5°C คัดจมูก เล็กน้อย วัคซีนใดควรเลื่อน",
+          "choices": [
+            { "label": "A", "text": "เลื่อนทั้งหมด เพราะมีอาการ" },
+            { "label": "B", "text": "ฉีดได้ทุกตัวตามตาราง (MMR, JE) เพราะ mild URI ไม่ contraindicate" },
+            { "label": "C", "text": "ฉีดเฉพาะ live vaccine งด killed" },
+            { "label": "D", "text": "ให้ paracetamol ก่อน 24 ชม. ค่อยฉีด" },
+            { "label": "E", "text": "เปลี่ยนเป็น vaccine คนละชนิด" }
+          ],
+          "correct_answer": "B",
+          "difficulty": "easy",
+          "explanation": "Mild illness / low-grade fever / URI ไม่ใช่ contraindication สำหรับวัคซีน — defer เฉพาะ moderate-severe illness with fever",
+          "detailed_explanation": {
+            "summary": "Mild URI / low fever ≠ contraindication วัคซีน",
+            "reason": "CDC/Thai EPI: defer เฉพาะ moderate-severe acute illness mild URI + low fever ฉีดได้ — เลื่อนทำให้พลาด protection",
+            "choices": [
+              { "label": "A", "text": "เลื่อนทั้งหมด", "is_correct": false, "explanation": "Mild URI ไม่ defer" },
+              { "label": "B", "text": "ฉีดได้ตามตาราง", "is_correct": true, "explanation": "ถูก" },
+              { "label": "C", "text": "แยก live/killed", "is_correct": false, "explanation": "ไม่มีหลักเกณฑ์นี้" },
+              { "label": "D", "text": "Paracetamol ก่อน", "is_correct": false, "explanation": "ไม่จำเป็น, อาจลด antibody response" },
+              { "label": "E", "text": "เปลี่ยนชนิด", "is_correct": false, "explanation": "ไม่ใช่เหตุ" }
+            ],
+            "key_takeaway": "Defer วัคซีนเฉพาะ moderate-severe illness; mild URI/low fever = ฉีดได้"
+          }
+        }
+      ]
+    },
+    {
+      "title_th": "Common Pediatric Illnesses & Emergencies",
+      "subtitle_th": "Croup, Bronchiolitis, Febrile seizure, Dehydration",
+      "icon": "🚑",
+      "est_minutes": 11,
+      "xp_reward": 18,
+      "cards": [
+        { "card_type": "concept", "title_th": "Croup (Laryngotracheobronchitis)", "body_md": "**สาเหตุ:** Parainfluenza virus, 6 เดือน-3 ปี\n\n**อาการ:**\n- ไอเสียง **\"barking cough\"** (เห่า)\n- **Inspiratory stridor**\n- เสียงแหบ\n- ไข้ต่ำ\n- เลวลงตอนกลางคืน\n\n**CXR:** **Steeple sign** (subglottic narrow)\n\n**การรักษา:**\n- Mild: humidified air, cool air, dexamethasone PO\n- Moderate-severe: **nebulized epinephrine** (racemic หรือ L-epinephrine) + dexamethasone IM/IV\n- ระวัง rebound 2 ชม. หลัง epi → สังเกตอาการ" },
+        { "card_type": "warning", "title_th": "Epiglottitis vs Croup", "body_md": "| | Croup | Epiglottitis |\n|---|---|---|\n| สาเหตุ | virus | bacteria (H. influenzae) |\n| Onset | gradual | sudden + toxic |\n| Cough | barking | minimal |\n| Drool | no | **yes** (กลืนเจ็บ) |\n| Posture | normal | **tripod** + neck ext |\n| Voice | hoarse | muffled (\"hot potato\") |\n| Fever | low | high |\n\n**Epiglottitis = airway emergency** — ห้ามตรวจปาก/คอ! ห้ามให้นอนราบ — เรียก OR ทันที intubation + cef + vancomycin" },
+        { "card_type": "concept", "title_th": "Bronchiolitis", "body_md": "**สาเหตุ:** RSV (พบบ่อยที่สุด), ไข้หวัดใหญ่, hMPV — < 2 ปี\n\n**อาการ:**\n- หายใจเร็ว, retraction, nasal flaring\n- **Wheeze + crackles** ทั่วปอด\n- หายใจ apnea ใน young infant\n- น้ำลายไหล นิ่งดื่ม\n\n**การรักษา (supportive):**\n- O₂ keep SpO₂ ≥ 92%\n- IV fluid maintenance\n- **ไม่ตอบสนอง** ต่อ bronchodilator/steroid ส่วนใหญ่\n- ไม่ต้อง ATB (viral)\n- Severe → high-flow NC, NIV\n\n**Prevention:** Palivizumab (high-risk preterm)" },
+        { "card_type": "concept", "title_th": "Febrile Seizure", "body_md": "**ลักษณะ:**\n- อายุ 6 เดือน - 5 ปี\n- ไข้ ≥ 38°C\n- ไม่มี CNS infection / metabolic / previous afebrile seizure\n\n**Simple (typical):**\n- Generalized tonic-clonic\n- < 15 นาที\n- ไม่ซ้ำใน 24 ชม.\n- Recovery ปกติ\n\n**Complex (atypical):**\n- Focal\n- > 15 นาที\n- ซ้ำใน 24 ชม.\n- Post-ictal neurodeficit\n\n**Simple = good prognosis** — ส่วนใหญ่ไม่ต้องตรวจเพิ่ม / ไม่ต้องให้ AED" },
+        { "card_type": "tip", "title_th": "การพยาบาล febrile seizure", "body_md": "**ระหว่างชัก:**\n- จัด lateral position\n- ห้ามใส่ของในปาก\n- ห้าม restrain\n- จับเวลา + บันทึกลักษณะ\n- ลดไข้ — เช็ดตัว, paracetamol PR\n\n**สอนผู้ปกครอง:**\n- ไม่เร่งลดไข้ป้องกัน seizure (ไม่ช่วย)\n- ให้ paracetamol/ibuprofen เมื่อไข้\n- ส่ง รพ. ถ้า > 5 นาที / ซ้ำ / focal / not recover\n- โอกาส recurrence 30-40% ใน 1-2 ปี\n- ความเสี่ยง epilepsy เพิ่ม 2-7% เทียบ baseline 1%" },
+        { "card_type": "concept", "title_th": "Asthma เด็ก — severity", "body_md": "**Mild:**\n- ไอเล็กน้อย\n- SpO₂ > 95%\n- PEF > 80% predicted\n\n**Moderate:**\n- Wheezing dyspnea\n- SpO₂ 91-95%\n- PEF 50-80%\n\n**Severe:**\n- Tripod, accessory muscle\n- พูดเป็นคำ\n- SpO₂ < 91%\n- PEF < 50%\n\n**Impending failure:**\n- Cyanosis, AMS\n- Silent chest\n- **Paradoxical breathing**\n→ เตรียม intubate" },
+        { "card_type": "tip", "title_th": "Asthma เด็ก — รักษา acute", "body_md": "**ลำดับ:**\n1. O₂ keep SpO₂ ≥ 94%\n2. **Salbutamol nebulize** 0.15 mg/kg (min 2.5 mg) q20min × 3 doses\n3. **Ipratropium** nebulize ถ้า severe\n4. **Prednisolone PO 1-2 mg/kg** หรือ methylprednisolone IV\n5. **MgSO₄ IV** 25-50 mg/kg ใน severe ไม่ตอบสนอง\n6. **Aminophylline / terbutaline** drip ใน ICU\n7. NIV / intubate ถ้า impending failure" },
+        { "card_type": "warning", "title_th": "Foreign body aspiration", "body_md": "**อายุ 6 เดือน - 3 ปี เสี่ยงสุด** (เม็ดถั่ว ของเล่น เหรียญ)\n\n**อาการ:**\n- Choking + sudden cough\n- Stridor / wheeze ข้างเดียว\n- Decreased breath sound asymmetric\n\n**จัดการ:**\n- **< 1 ปี:** Back blow 5 + chest thrust 5 (ห้าม abdominal thrust!)\n- **≥ 1 ปี:** Heimlich (abdominal thrust)\n- **Unconscious:** CPR, ดูปาก suction visible obstruction\n- **ห้ามใช้นิ้วเขี่ยลึกแบบ blind sweep** (ดันลึกลง)" },
+        { "card_type": "qa", "title_th": "ตัวอย่างข้อสอบ — Epiglottitis", "body_md": "**Q:** เด็ก 4 ปี ไข้สูง 39.5°C น้ำลายไหล นั่ง tripod ไม่ยอมนอน เสียงพูดเบา (muffled) พยาบาลควรทำอย่างไรอันดับแรก?\n\n**A:** **อย่า** ตรวจคอ/ใส่ tongue depressor/วาง supine — เสี่ยง complete obstruction ให้ O₂ via blow-by, ให้นั่งกับแม่, เรียก ENT/anesthesia เตรียม **OR intubation** + IV cef + vancomycin หลัง secure airway" }
+      ],
+      "quiz_questions": [
+        {
+          "scenario": "เด็ก 18 เดือน barking cough + inspiratory stridor + ไข้ต่ำ ฟัง air entry พอใช้ ไม่ toxic นั่งทานน้ำได้ การจัดการเหมาะสมที่สุด",
+          "choices": [
+            { "label": "A", "text": "Intubate ทันทีเพราะ stridor" },
+            { "label": "B", "text": "Nebulized epinephrine + dexamethasone IM และสังเกตอาการ 2-4 ชม." },
+            { "label": "C", "text": "ATB IV ทันที (epiglottitis)" },
+            { "label": "D", "text": "Bronchodilator nebulize เพราะคล้าย asthma" },
+            { "label": "E", "text": "Tracheostomy emergent" }
+          ],
+          "correct_answer": "B",
+          "difficulty": "medium",
+          "explanation": "Moderate croup → nebulized epi + dexamethasone observe rebound 2 ชม.หลัง epi",
+          "detailed_explanation": {
+            "summary": "Croup moderate = nebulized epi + dex; observe 2 ชม. rebound",
+            "reason": "Barking cough + stridor + low fever ไม่ toxic = croup ไม่ใช่ epiglottitis (ไม่มี drool/tripod/toxic) Treatment = nebulized epi + steroid",
+            "choices": [
+              { "label": "A", "text": "Intubate", "is_correct": false, "explanation": "Reserve สำหรับ severe failure" },
+              { "label": "B", "text": "Nebulized epi + dex", "is_correct": true, "explanation": "ถูก" },
+              { "label": "C", "text": "ATB", "is_correct": false, "explanation": "Croup = viral" },
+              { "label": "D", "text": "Bronchodilator", "is_correct": false, "explanation": "Stridor inspiratory = upper airway ไม่ใช่ bronchospasm" },
+              { "label": "E", "text": "Tracheostomy", "is_correct": false, "explanation": "Last resort, ไม่ใช่ first line" }
+            ],
+            "key_takeaway": "Croup mod = nebulized epi + steroid, observe rebound 2-4 ชม."
+          }
+        },
+        {
+          "scenario": "ทารก 6 เดือน wheeze + retraction + RR 65 SpO₂ 89% room air ทาน formula ไม่ลง พ่อแม่บอกพี่เป็น URI การพยาบาลข้อใดสำคัญที่สุด",
+          "choices": [
+            { "label": "A", "text": "ให้ O₂ keep SpO₂ ≥ 92% + IV fluid + monitor + contact precaution (RSV)" },
+            { "label": "B", "text": "Nebulize salbutamol q20min × 3 doses" },
+            { "label": "C", "text": "ATB IV ceftriaxone + admission" },
+            { "label": "D", "text": "Steroid PO 2 mg/kg ทันที" },
+            { "label": "E", "text": "ส่งกลับบ้านพร้อม inhaler" }
+          ],
+          "correct_answer": "A",
+          "difficulty": "medium",
+          "explanation": "Bronchiolitis (RSV ในทารก) — supportive (O₂, fluid, monitor) + contact/droplet precaution ไม่ตอบสนอง bronchodilator/steroid ใน trial",
+          "detailed_explanation": {
+            "summary": "Bronchiolitis = supportive + contact precaution; ไม่ตอบสนอง bronchodilator/steroid",
+            "reason": "RSV viral แม้ wheeze คล้าย asthma แต่ pathology ต่าง (inflammation + mucus plug)",
+            "choices": [
+              { "label": "A", "text": "Supportive + isolation", "is_correct": true, "explanation": "ถูก" },
+              { "label": "B", "text": "Salbutamol", "is_correct": false, "explanation": "Routine ไม่แนะนำ; trial เลือกรายที่ตอบสนอง" },
+              { "label": "C", "text": "ATB", "is_correct": false, "explanation": "Viral" },
+              { "label": "D", "text": "Steroid", "is_correct": false, "explanation": "ไม่ช่วยใน bronchiolitis" },
+              { "label": "E", "text": "กลับบ้าน", "is_correct": false, "explanation": "SpO₂ ต่ำ ต้อง admit" }
+            ],
+            "key_takeaway": "Bronchiolitis: supportive only + isolation; bronchodilator/steroid not routine"
+          }
+        },
+        {
+          "scenario": "เด็ก 2 ปี simple febrile seizure 5 นาทีหยุดเอง ไข้ 39.5°C ฟื้นเป็นปกติ แม่ตกใจมาก คำแนะนำที่ถูกต้องที่สุด",
+          "choices": [
+            { "label": "A", "text": "ต้องเริ่มยา phenobarbital ป้องกันชักซ้ำ" },
+            { "label": "B", "text": "เด็กจะเป็น epilepsy แน่นอน" },
+            { "label": "C", "text": "Simple FS prognosis ดี ไม่ต้องตรวจ EEG/CT ในรายนี้ ลดไข้ตามปกติ ส่ง รพ.เมื่อชัก > 5 นาที หรือ recur ใน 24 ชม. หรือ focal" },
+            { "label": "D", "text": "ให้ paracetamol ทุก 4 ชม.ตลอด 24 ชม. ป้องกันชัก" },
+            { "label": "E", "text": "งดวัคซีนทั้งหมดในอนาคต" }
+          ],
+          "correct_answer": "C",
+          "difficulty": "easy",
+          "explanation": "Simple FS prognosis ดี ไม่ต้องทำ EEG/CT/AED; antipyretics ไม่ป้องกัน recurrence; วัคซีนปกติยังให้ได้",
+          "detailed_explanation": {
+            "summary": "Simple FS = benign, ไม่ต้อง workup เพิ่ม, ไม่ต้อง AED",
+            "reason": "Simple FS เกิดในเด็ก 6 เดือน-5 ปี ที่สุขภาพปกติ — recurrence 30-40% แต่ไม่เพิ่ม epilepsy risk มากนัก antipyretics ไม่ป้องกันชัก",
+            "choices": [
+              { "label": "A", "text": "Phenobarb", "is_correct": false, "explanation": "ไม่จำเป็น + ADR > benefit" },
+              { "label": "B", "text": "Epilepsy แน่นอน", "is_correct": false, "explanation": "เพิ่มเล็กน้อย ไม่ใช่ \"แน่นอน\"" },
+              { "label": "C", "text": "Reassure + warning signs", "is_correct": true, "explanation": "ถูก" },
+              { "label": "D", "text": "Paracetamol ATC", "is_correct": false, "explanation": "ไม่ป้องกัน FS" },
+              { "label": "E", "text": "งดวัคซีน", "is_correct": false, "explanation": "วัคซีนยังให้ได้" }
+            ],
+            "key_takeaway": "Simple FS: benign, no workup, no AED, antipyretic for comfort not prevention"
+          }
+        }
+      ]
+    }
+  ]
+}

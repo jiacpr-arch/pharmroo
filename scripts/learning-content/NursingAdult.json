@@ -1,0 +1,417 @@
+{
+  "subject": "NursingAdult",
+  "unit": {
+    "title_th": "การพยาบาลผู้ใหญ่",
+    "description_th": "ครอบคลุมระบบหัวใจ-หลอดเลือด ระบบหายใจ ระบบทางเดินอาหาร-ไต ระบบต่อมไร้ท่อ และระบบประสาท ตามขอบเขต NLE",
+    "icon": "🧑‍⚕️"
+  },
+  "lessons": [
+    {
+      "title_th": "ระบบหัวใจและหลอดเลือด",
+      "subtitle_th": "AMI, HF, HT — การพยาบาลที่ออกข้อสอบบ่อย",
+      "icon": "❤️",
+      "est_minutes": 12,
+      "xp_reward": 20,
+      "cards": [
+        { "card_type": "concept", "title_th": "Acute Myocardial Infarction (AMI)", "body_md": "กล้ามเนื้อหัวใจขาดเลือดเฉียบพลัน — แบ่งเป็น **STEMI** (มี ST elevation) กับ **NSTEMI** (ไม่มี)\n\n**อาการเด่น:** เจ็บแน่นหน้าอก > 20 นาที ร้าวไปกราม/แขนซ้าย เหงื่อแตก คลื่นไส้ ไม่ดีขึ้นเมื่อพัก\n\n**Diagnosis:**\n- ECG ภายใน 10 นาที\n- Cardiac biomarker: **Troponin** เพิ่ม (sensitive ที่สุด)" },
+        { "card_type": "tip", "title_th": "MONA — การพยาบาลเบื้องต้น AMI", "body_md": "**M**orphine — แก้ปวด ลด preload\n**O**xygen — ให้เมื่อ SpO₂ < 90%\n**N**itroglycerin SL — ขยายหลอดเลือด (ห้ามให้ถ้า SBP < 90 หรือใช้ sildenafil ภายใน 24 ชม.)\n**A**spirin 162-325 mg เคี้ยว — antiplatelet\n\nจัดท่า semi-Fowler, monitor ECG, เปิด IV line, เตรียมส่ง cath lab" },
+        { "card_type": "warning", "title_th": "ห้ามให้ Nitrate เมื่อ RV infarct", "body_md": "**RV infarction** (inferior wall MI พบบ่อย) ทำให้ preload-dependent\n\nให้ nitrate → **BP ตกรุนแรง**\n\nสังเกต: ECG inferior STEMI (II, III, aVF) + JVP สูง + lung clear → คิดถึง RV infarct ทำ V4R เพิ่ม\n\nการรักษา: **ให้ IV fluid** เพิ่ม preload (ไม่ใช่ diuretic)" },
+        { "card_type": "concept", "title_th": "Heart Failure (HF) — Left vs Right", "body_md": "**Left-sided HF:** น้ำคั่งในปอด\n- หายใจลำบาก, orthopnea, PND\n- crackles ที่ปอด, pink frothy sputum\n\n**Right-sided HF:** น้ำคั่งในระบบ\n- ขาบวมกดบุ๋ม (pitting edema)\n- JVP สูง, hepatomegaly, ascites\n\nLeft-sided ไม่ได้รักษา → กลายเป็น biventricular failure" },
+        { "card_type": "tip", "title_th": "การพยาบาล HF เฉียบพลัน (acute pulmonary edema)", "body_md": "ท่องลำดับ **LMNOP**:\n- **L**asix (furosemide IV) — ลดน้ำ\n- **M**orphine — ลด preload, ลด anxiety\n- **N**itrates — vasodilator\n- **O**xygen — high flow / NIV\n- **P**osition: นั่งห้อยขา (high Fowler's, legs dependent) ลด venous return\n\nMonitor: I/O ชั่วโมงต่อชั่วโมง, ชั่งน้ำหนักทุกวัน (เพิ่ม 1 kg = น้ำ 1 L)" },
+        { "card_type": "concept", "title_th": "Hypertension — เป้าหมายและกลุ่มยา", "body_md": "**เป้าหมาย BP:**\n- ทั่วไป < 140/90\n- ผู้ป่วย DM/CKD < 130/80\n- ผู้สูงอายุ ≥ 65 ปี < 130/80 (ตาม Thai HT 2019)\n\n**ยาแนวแรก 4 กลุ่ม (A-B-C-D):**\n- **A**CEI / ARB\n- **B**eta-blocker (เฉพาะ compelling indication)\n- **C**CB\n- **D**iuretic (thiazide)" },
+        { "card_type": "warning", "title_th": "Hypertensive Crisis", "body_md": "**Hypertensive urgency:** BP ≥ 180/120 **ไม่มี** end-organ damage → ลดภายใน 24-48 ชม. ด้วยยากิน\n\n**Hypertensive emergency:** BP ≥ 180/120 **มี** end-organ damage (chest pain, AMS, blurred vision, oliguria) → ICU, IV nicardipine/labetalol\n\n**ห้ามลดเร็วเกิน** — ลด MAP ไม่เกิน 20-25% ใน 1 ชม.แรก เพื่อป้องกัน cerebral ischemia" },
+        { "card_type": "mnemonic", "title_th": "จำ Beta-blocker contraindications", "body_md": "**\"ABCDE\" ห้ามใช้ beta-blocker:**\n- **A**sthma severe / COPD with bronchospasm\n- **B**radycardia (HR < 50)\n- **C**ardiogenic shock\n- **D**ecompensated HF (acute)\n- **E**xtremity ischemia (severe PAD)\n\nระวัง mask hypoglycemia ใน DM" },
+        { "card_type": "tip", "title_th": "การพยาบาลผู้ป่วย Warfarin", "body_md": "**Monitor INR:**\n- AF, DVT, PE, lung valve tissue: **INR 2-3**\n- Mechanical valve: **INR 2.5-3.5**\n\n**Antidote:** Vitamin K (oral/IV); PCC/FFP เมื่อเลือดออกรุนแรง\n\n**Patient education:**\n- กินผักใบเขียวสม่ำเสมอ (ไม่ใช่งด)\n- หลีกเลี่ยง NSAID, aspirin (ยกเว้นแพทย์สั่ง)\n- สังเกต bleeding: เหงือก, ปัสสาวะ, อุจจาระดำ\n- พกบัตรเตือน ระวังการล้ม" },
+        { "card_type": "qa", "title_th": "ตัวอย่างข้อสอบ AMI", "body_md": "**Q:** ผู้ป่วยชาย 60 ปี เจ็บแน่นหน้าอก 30 นาที ECG พบ ST elevation ใน leads II, III, aVF การพยาบาลใดสำคัญที่สุดก่อนส่ง cath lab?\n\n**A:** ทำ V4R เพื่อดู RV infarct + เปิด IV 2 เส้น + ให้ ASA 300 mg เคี้ยว\n\n**เหตุผล:** Inferior STEMI สัมพันธ์กับ RV infarct สูง → ต้องระวังไม่ให้ nitrate ก่อน rule out" }
+      ],
+      "quiz_questions": [
+        {
+          "scenario": "ผู้ป่วยชาย 65 ปี เจ็บแน่นหน้าอกร้าวไปกรามซ้าย 45 นาที BP 88/60 mmHg HR 50 ครั้ง/นาที ECG: ST elevation ที่ leads II, III, aVF การพยาบาลข้อใดสำคัญที่สุด",
+          "choices": [
+            { "label": "A", "text": "ให้ Nitroglycerin SL ทันทีและประเมินอาการเจ็บอก" },
+            { "label": "B", "text": "เปิดเส้นเลือดดำให้สารน้ำ NSS และทำ ECG V4R เพิ่มเติม" },
+            { "label": "C", "text": "ให้ Morphine 5 mg IV ทันทีเพื่อลดความเจ็บปวด" },
+            { "label": "D", "text": "ให้ Furosemide 40 mg IV เพื่อลด preload" },
+            { "label": "E", "text": "จัดท่านอนราบและให้ออกซิเจน 10 LPM mask" }
+          ],
+          "correct_answer": "B",
+          "difficulty": "medium",
+          "explanation": "Inferior STEMI (II, III, aVF) พร้อม BP ต่ำ + HR ช้า ชี้ RV infarction ห้ามให้ nitrate/morphine ก่อนเพราะจะ drop BP ต้องให้ IV fluid และทำ V4R เพื่อยืนยัน",
+          "detailed_explanation": {
+            "summary": "Inferior STEMI + hypotension + bradycardia → คิดถึง RV infarct",
+            "reason": "RV infarction ทำให้ preload-dependent — vasodilator (nitrate, morphine) จะทำให้ BP ตกรุนแรง การพยาบาลที่ถูกคือเปิด IV ให้ fluid + ทำ V4R ยืนยัน",
+            "choices": [
+              { "label": "A", "text": "ให้ Nitroglycerin SL", "is_correct": false, "explanation": "Contraindication เพราะ BP ต่ำ + สงสัย RV infarct" },
+              { "label": "B", "text": "เปิด IV + V4R", "is_correct": true, "explanation": "ถูก — RV infarct ต้อง preload สูง และต้องยืนยันด้วย right-sided ECG" },
+              { "label": "C", "text": "Morphine IV", "is_correct": false, "explanation": "ลด preload ห้ามใน RV infarct + BP ต่ำ" },
+              { "label": "D", "text": "Furosemide", "is_correct": false, "explanation": "ลด preload + ไม่มี pulmonary edema = ทำให้แย่ลง" },
+              { "label": "E", "text": "นอนราบ + O₂ 10 LPM", "is_correct": false, "explanation": "O₂ ให้เมื่อ SpO₂ < 90% เท่านั้น (2024 guideline) และ position ไม่ใช่ priority" }
+            ],
+            "key_takeaway": "Inferior STEMI + hypotension = สงสัย RV infarct เสมอ — fluid first, no vasodilator"
+          }
+        },
+        {
+          "scenario": "ผู้ป่วย HFrEF acute pulmonary edema มาด้วยหายใจลำบาก SpO₂ 84% room air ฟัง crackles ทั่วปอด BP 160/95 การจัดท่านอนข้อใดเหมาะสมที่สุด",
+          "choices": [
+            { "label": "A", "text": "Supine flat เพื่อช่วยการไหลเวียน" },
+            { "label": "B", "text": "Trendelenburg เพื่อเพิ่ม venous return" },
+            { "label": "C", "text": "High Fowler's นั่งห้อยขา (legs dependent)" },
+            { "label": "D", "text": "Lateral decubitus ข้างซ้าย" },
+            { "label": "E", "text": "Prone position" }
+          ],
+          "correct_answer": "C",
+          "difficulty": "easy",
+          "explanation": "Acute pulmonary edema จัด high Fowler's + ห้อยขา เพื่อลด venous return → ลด preload → ลดน้ำคั่งในปอด",
+          "detailed_explanation": {
+            "summary": "Pulmonary edema → นั่งห้อยขา (high Fowler's, legs dependent)",
+            "reason": "ท่านี้ทำให้เลือดคั่งที่ขาด้วยแรงโน้มถ่วง ลด venous return กลับหัวใจ → ลด preload → ลดน้ำในปอดทันที",
+            "choices": [
+              { "label": "A", "text": "Supine flat", "is_correct": false, "explanation": "เพิ่ม venous return → แย่ลง" },
+              { "label": "B", "text": "Trendelenburg", "is_correct": false, "explanation": "เพิ่ม preload รุนแรง อันตรายมาก" },
+              { "label": "C", "text": "High Fowler's ห้อยขา", "is_correct": true, "explanation": "ถูก — ลด preload ทันที" },
+              { "label": "D", "text": "Lateral decubitus", "is_correct": false, "explanation": "ไม่ลด preload" },
+              { "label": "E", "text": "Prone", "is_correct": false, "explanation": "ผู้ป่วยหายใจลำบากนอนคว่ำไม่ได้" }
+            ],
+            "key_takeaway": "Pulmonary edema = LMNOP, position = นั่งห้อยขา"
+          }
+        },
+        {
+          "scenario": "ผู้ป่วยใช้ Warfarin มา 6 เดือน วันนี้ INR = 5.2 ไม่มี active bleeding การจัดการที่เหมาะสมคือ",
+          "choices": [
+            { "label": "A", "text": "ให้ Vitamin K 10 mg IV push ทันที" },
+            { "label": "B", "text": "ให้ FFP 2 units ทันที" },
+            { "label": "C", "text": "งด Warfarin 1-2 dose และตรวจ INR ซ้ำ" },
+            { "label": "D", "text": "เพิ่มขนาด Warfarin เป็น 2 เท่า" },
+            { "label": "E", "text": "เปลี่ยนเป็น Heparin IV ทันที" }
+          ],
+          "correct_answer": "C",
+          "difficulty": "medium",
+          "explanation": "INR 4.5-10 ไม่มี bleeding → งด warfarin 1-2 dose ไม่จำเป็นต้องให้ vitamin K (ตาม CHEST guideline)",
+          "detailed_explanation": {
+            "summary": "INR สูงโดยไม่มี bleeding → จัดการตามระดับ INR",
+            "reason": "ตาม CHEST guideline: INR < 4.5 (no bleed) → ลด/งด dose; INR 4.5-10 (no bleed) → งด 1-2 dose; INR > 10 (no bleed) → vitamin K oral; bleeding ใดๆ → PCC + vitamin K IV",
+            "choices": [
+              { "label": "A", "text": "Vitamin K IV 10 mg", "is_correct": false, "explanation": "Over-correction — ใช้เฉพาะ major bleeding" },
+              { "label": "B", "text": "FFP 2 units", "is_correct": false, "explanation": "ใช้เฉพาะ active major bleeding" },
+              { "label": "C", "text": "งด 1-2 dose", "is_correct": true, "explanation": "ถูก — เหมาะสมที่สุดสำหรับ INR 4.5-10 ไม่มี bleeding" },
+              { "label": "D", "text": "เพิ่มขนาด 2 เท่า", "is_correct": false, "explanation": "อันตราย — ทำให้ bleeding" },
+              { "label": "E", "text": "เปลี่ยนเป็น Heparin", "is_correct": false, "explanation": "ไม่ใช่ตัวเลือกใน over-anticoagulation" }
+            ],
+            "key_takeaway": "INR สูงไม่มี bleed = งด dose; มี bleed = vitamin K ± PCC/FFP"
+          }
+        },
+        {
+          "scenario": "ผู้ป่วย Hypertensive emergency BP 220/130 mmHg มาด้วยอาการปวดศีรษะรุนแรงและสับสน เป้าหมายการลด BP ใน 1 ชั่วโมงแรกคือ",
+          "choices": [
+            { "label": "A", "text": "ลด BP ให้ปกติ (< 120/80) ทันที" },
+            { "label": "B", "text": "ลด MAP ลง 50% ภายใน 1 ชม." },
+            { "label": "C", "text": "ลด MAP ลง 20-25% ภายใน 1 ชม.แรก" },
+            { "label": "D", "text": "คง BP เดิมไว้ก่อนจนกว่าจะส่ง ICU" },
+            { "label": "E", "text": "ให้ยากินก่อนแล้วค่อยพิจารณา IV" }
+          ],
+          "correct_answer": "C",
+          "difficulty": "hard",
+          "explanation": "Hypertensive emergency ลด BP เร็วเกิน → cerebral hypoperfusion, ischemic stroke ลด MAP 20-25% ใน 1 ชม. ต่อมาค่อยลด เป็น 160/100 ใน 2-6 ชม.",
+          "detailed_explanation": {
+            "summary": "Hypertensive emergency = ลด MAP 20-25% ใน 1 ชม.แรก",
+            "reason": "Autoregulation ของสมองปรับตัวกับ BP สูงเรื้อรัง ลดเร็วเกินจะเกิด watershed infarct ใช้ IV drip (nicardipine, labetalol) ที่ titrate ได้",
+            "choices": [
+              { "label": "A", "text": "ลดเป็นปกติทันที", "is_correct": false, "explanation": "อันตรายมาก ทำให้ stroke" },
+              { "label": "B", "text": "ลด 50%", "is_correct": false, "explanation": "เร็วเกิน → ischemia" },
+              { "label": "C", "text": "ลด MAP 20-25% ใน 1 ชม.", "is_correct": true, "explanation": "ถูก — ตาม JNC 8 / Thai HT guideline" },
+              { "label": "D", "text": "คง BP เดิม", "is_correct": false, "explanation": "End-organ damage จะเลวลง" },
+              { "label": "E", "text": "ยากินก่อน", "is_correct": false, "explanation": "Emergency = IV titratable" }
+            ],
+            "key_takeaway": "Emergency ≠ ลดเร็ว — ลด MAP 20-25% ใน 1 ชม.แรก เสมอ"
+          }
+        }
+      ]
+    },
+    {
+      "title_th": "ระบบหายใจ",
+      "subtitle_th": "Pneumonia, COPD, Asthma, TB — และการพยาบาลทางเดินหายใจ",
+      "icon": "🫁",
+      "est_minutes": 12,
+      "xp_reward": 20,
+      "cards": [
+        { "card_type": "concept", "title_th": "Pneumonia — Community vs Hospital", "body_md": "**CAP (Community-acquired):** เชื้อบ่อย Streptococcus pneumoniae, Mycoplasma, viral\n\n**HAP/VAP (Hospital/Ventilator):** เริ่มอาการ ≥ 48 ชม. หลัง admit/intubate เชื้อ MDR (Pseudomonas, MRSA, Acinetobacter)\n\n**CURB-65:** Confusion, Urea > 7, RR ≥ 30, BP < 90/60, age ≥ 65 — ≥ 2 ต้อง admit, ≥ 3 ICU" },
+        { "card_type": "tip", "title_th": "การพยาบาล Pneumonia", "body_md": "- Position: **high Fowler's** ช่วยขยายปอด\n- Chest physiotherapy + percussion + postural drainage\n- Suction PRN, encourage cough + deep breathing\n- Incentive spirometer ทุก 1-2 ชม.\n- O₂ keep SpO₂ ≥ 92% (COPD keep 88-92%)\n- ATB ใน 4 ชม. แรก, sputum C/S ก่อนให้ ATB\n- Hydration 2-3 L/day ละลายเสมหะ" },
+        { "card_type": "concept", "title_th": "COPD — Pink Puffer vs Blue Bloater", "body_md": "**Pink puffer (Emphysema):**\n- ผอม, หายใจเร็ว purse-lip\n- Barrel chest, hyperresonance\n- PaO₂ ปกติ-ต่ำเล็กน้อย, PaCO₂ ปกติ\n\n**Blue bloater (Chronic bronchitis):**\n- อ้วน, ไอเสมหะมาก ≥ 3 เดือน/ปี ≥ 2 ปี\n- Cyanosis, peripheral edema\n- PaO₂ ต่ำ, PaCO₂ สูง (CO₂ retainer)" },
+        { "card_type": "warning", "title_th": "ออกซิเจนใน COPD", "body_md": "**ห้ามให้ O₂ สูง** ใน COPD retainer\n\nผู้ป่วยใช้ hypoxic drive แทน CO₂ drive — ถ้า PaO₂ สูงเกินไป → หยุดหายใจ\n\n**เป้าหมาย SpO₂ 88-92%** (ไม่ใช่ 95-100%)\n\nเริ่ม nasal cannula 1-2 L/min ค่อยปรับ Venturi mask 24-28%" },
+        { "card_type": "concept", "title_th": "Asthma — ระดับความรุนแรง", "body_md": "**Mild:** พูดเป็นประโยค HR < 100, RR < 25, PEF > 50-75%, SpO₂ ≥ 95%\n\n**Severe:** พูดเป็นคำ HR > 110, RR > 25, PEF 33-50%, SpO₂ < 92%\n\n**Life-threatening (ต้องระวังที่สุด):**\n- **Silent chest** (ไม่ได้ยิน wheeze เพราะอากาศไหลน้อย)\n- Cyanosis, exhaustion, AMS\n- PEF < 33%, SpO₂ < 92%, normal/high PaCO₂\n\nสัญญาณ silent chest = severe ไม่ใช่ดีขึ้น" },
+        { "card_type": "tip", "title_th": "Acute asthma exacerbation — การพยาบาล", "body_md": "**O-SHIT:**\n- **O**xygen high flow, keep SpO₂ 93-95%\n- **S**ABA (salbutamol) MDI + spacer หรือ nebulize\n- **H**ydrocortisone IV / prednisolone PO\n- **I**pratropium add ใน severe\n- **T**heophylline / Mg sulfate ใน life-threatening\n\nMonitor PEF ก่อน-หลังพ่นยา, ABG" },
+        { "card_type": "concept", "title_th": "Tuberculosis (TB)", "body_md": "**Active pulmonary TB:**\n- ไอเรื้อรัง ≥ 2 สัปดาห์, ไอเป็นเลือด\n- น้ำหนักลด, ไข้ต่ำเย็น, เหงื่อออกตอนกลางคืน\n- CXR: cavity ใน upper lobe\n- Sputum AFB × 3 (เช้า 3 วัน)\n\n**Standard regimen 6 เดือน:**\n- **Intensive 2 เดือน:** HRZE\n- **Continuation 4 เดือน:** HR" },
+        { "card_type": "warning", "title_th": "Anti-TB drugs ADR", "body_md": "**I**soniazid (H) — Hepatotoxicity, peripheral neuropathy (ให้ B6 ป้องกัน)\n**R**ifampicin (R) — สีปัสสาวะแดง-ส้ม, hepatotoxic, drug interaction (induce CYP)\n**P**yrazinamide (Z) — Hepatotoxic, hyperuricemia, gout\n**E**thambutol (E) — Optic neuritis (ดูตา + Snellen test ก่อนเริ่ม)\n**S**treptomycin — Nephrotoxic, ototoxic (CN 8)" },
+        { "card_type": "tip", "title_th": "Airborne isolation — TB", "body_md": "- **N95 mask** ทุกครั้งที่เข้าห้อง (ผู้ป่วยใส่ surgical mask)\n- ห้อง **negative pressure**, แลกอากาศ ≥ 6-12 ครั้ง/ชม.\n- ปิดประตูเสมอ\n- จำกัดการเคลื่อนย้าย\n- แยกจนกว่า sputum AFB negative × 3 + อาการดีขึ้น + รับยา ≥ 2 สัปดาห์\n\nเทียบกับ Droplet precaution (มาส์กธรรมดา) สำหรับ influenza, meningococcus" },
+        { "card_type": "qa", "title_th": "ตัวอย่างข้อสอบ — Silent chest", "body_md": "**Q:** ผู้ป่วยหญิง 25 ปี asthma มาด้วยหายใจหอบเหนื่อยมาก 1 ชม. ฟัง breath sound เบามากแทบไม่ได้ยิน wheeze SpO₂ 88% room air ควรประเมินอย่างไร?\n\n**A:** สัญญาณ life-threatening (silent chest) — ไม่ใช่ดีขึ้น เตรียม intubate ให้ Mg sulfate IV และเรียกแพทย์ทันที" }
+      ],
+      "quiz_questions": [
+        {
+          "scenario": "ผู้ป่วย COPD CO₂ retainer SpO₂ 86% on room air พยาบาลควรเริ่มต้นให้ O₂ อย่างไร",
+          "choices": [
+            { "label": "A", "text": "Mask with bag 10 LPM keep SpO₂ 100%" },
+            { "label": "B", "text": "Nasal cannula 1-2 LPM keep SpO₂ 88-92%" },
+            { "label": "C", "text": "Simple mask 8 LPM keep SpO₂ 95%" },
+            { "label": "D", "text": "Non-rebreather 15 LPM" },
+            { "label": "E", "text": "ไม่ต้องให้ออกซิเจน รอ ABG ก่อน" }
+          ],
+          "correct_answer": "B",
+          "difficulty": "medium",
+          "explanation": "COPD retainer ใช้ hypoxic drive — O₂ สูงเกินทำให้ CO₂ คั่ง หยุดหายใจ เป้าหมาย SpO₂ 88-92%",
+          "detailed_explanation": {
+            "summary": "COPD = SpO₂ 88-92% (ไม่ใช่ 95-100%)",
+            "reason": "ผู้ป่วย COPD CO₂ retain อาศัย hypoxic drive ในการกระตุ้นการหายใจ การให้ O₂ สูงทำให้หายใจช้าลง CO₂ narcosis",
+            "choices": [
+              { "label": "A", "text": "Mask bag 10 LPM", "is_correct": false, "explanation": "O₂ สูงเกินใน COPD = CO₂ narcosis" },
+              { "label": "B", "text": "NC 1-2 LPM keep 88-92%", "is_correct": true, "explanation": "ถูก — เริ่มต่ำ titrate ขึ้น" },
+              { "label": "C", "text": "Simple mask 8 LPM", "is_correct": false, "explanation": "สูงเกินสำหรับ COPD" },
+              { "label": "D", "text": "NRB 15 LPM", "is_correct": false, "explanation": "ใช้เฉพาะ critical hypoxia non-COPD" },
+              { "label": "E", "text": "ไม่ให้ O₂", "is_correct": false, "explanation": "SpO₂ 86% ต้องให้ทันที — ไม่รอ ABG" }
+            ],
+            "key_takeaway": "COPD = SpO₂ target 88-92%, low flow, titrate ขึ้นตามอาการ"
+          }
+        },
+        {
+          "scenario": "ผู้ป่วยรับยา Anti-TB regimen HRZE มา 1 เดือน บ่นชาปลายเท้าและรู้สึกอ่อนแรง สาเหตุที่น่าจะเป็นไปได้มากที่สุดและการพยาบาลคือ",
+          "choices": [
+            { "label": "A", "text": "Rifampicin → หยุดยาทันที" },
+            { "label": "B", "text": "Isoniazid peripheral neuropathy → ให้ Pyridoxine (B6)" },
+            { "label": "C", "text": "Ethambutol → ตรวจตา" },
+            { "label": "D", "text": "Pyrazinamide → ตรวจ uric acid" },
+            { "label": "E", "text": "อาการของ TB เอง ไม่ต้องทำอะไร" }
+          ],
+          "correct_answer": "B",
+          "difficulty": "medium",
+          "explanation": "Isoniazid (H) ทำให้ peripheral neuropathy จาก B6 deficiency รักษา/ป้องกันด้วย vitamin B6 (pyridoxine) ไม่ต้องหยุดยา",
+          "detailed_explanation": {
+            "summary": "INH = peripheral neuropathy → ให้ B6",
+            "reason": "INH แย่งกับ pyridoxine ทำให้ขาด B6 ป้องกัน/รักษาด้วย pyridoxine 10-50 mg/day โดยเฉพาะกลุ่มเสี่ยง (DM, alcoholic, malnutrition, pregnant)",
+            "choices": [
+              { "label": "A", "text": "หยุด Rifampicin", "is_correct": false, "explanation": "RIF ไม่ทำให้ neuropathy — ทำให้สีปัสสาวะแดง" },
+              { "label": "B", "text": "INH neuropathy + B6", "is_correct": true, "explanation": "ถูก" },
+              { "label": "C", "text": "Ethambutol ตรวจตา", "is_correct": false, "explanation": "EMB = optic neuritis ไม่ใช่ peripheral" },
+              { "label": "D", "text": "PZA uric acid", "is_correct": false, "explanation": "PZA = hyperuricemia/gout ไม่ใช่ neuropathy" },
+              { "label": "E", "text": "ไม่ทำอะไร", "is_correct": false, "explanation": "อาการ ADR ต้องจัดการ" }
+            ],
+            "key_takeaway": "HRZE: H=neuropathy(B6), R=red urine, Z=uric acid, E=optic"
+          }
+        },
+        {
+          "scenario": "ผู้ป่วย active pulmonary TB sputum AFB positive admit เพื่อรักษา การจัดสิ่งแวดล้อมข้อใดเหมาะสมที่สุด",
+          "choices": [
+            { "label": "A", "text": "ห้องเดี่ยว ปกติ ใส่ surgical mask เวลาเข้าห้อง" },
+            { "label": "B", "text": "ห้อง negative pressure, ใส่ N95, ผู้ป่วยใส่ surgical mask" },
+            { "label": "C", "text": "ห้อง positive pressure, ใส่ surgical mask" },
+            { "label": "D", "text": "ห้องรวม ใช้ม่านกั้น ใส่ gown + glove" },
+            { "label": "E", "text": "ห้อง standard precaution พอ" }
+          ],
+          "correct_answer": "B",
+          "difficulty": "easy",
+          "explanation": "TB = airborne precaution → ห้อง negative pressure + N95 (พยาบาล) + surgical mask (ผู้ป่วย)",
+          "detailed_explanation": {
+            "summary": "Airborne (TB, varicella, measles) = negative pressure + N95",
+            "reason": "TB ส่ง droplet nuclei < 5 μm ลอยอยู่ได้นาน ต้อง airborne isolation",
+            "choices": [
+              { "label": "A", "text": "ห้องเดี่ยวปกติ + surgical", "is_correct": false, "explanation": "ไม่พอ — ต้อง negative pressure + N95" },
+              { "label": "B", "text": "Negative + N95", "is_correct": true, "explanation": "ถูก" },
+              { "label": "C", "text": "Positive pressure", "is_correct": false, "explanation": "Positive ใช้ป้องกันผู้ป่วย immunocompromised ไม่ใช่ TB" },
+              { "label": "D", "text": "ห้องรวม", "is_correct": false, "explanation": "อันตราย แพร่กระจาย" },
+              { "label": "E", "text": "Standard precaution", "is_correct": false, "explanation": "ไม่พอสำหรับ airborne" }
+            ],
+            "key_takeaway": "TB = airborne = negative pressure + N95"
+          }
+        }
+      ]
+    },
+    {
+      "title_th": "ระบบทางเดินอาหารและไต",
+      "subtitle_th": "GI bleed, Cirrhosis, AKI, CKD, Dialysis",
+      "icon": "🩻",
+      "est_minutes": 11,
+      "xp_reward": 18,
+      "cards": [
+        { "card_type": "concept", "title_th": "Upper GI Bleeding", "body_md": "**สาเหตุบ่อย:** Peptic ulcer (PUD), Esophageal varices, Mallory-Weiss tear\n\n**อาการ:**\n- Hematemesis (อาเจียนเป็นเลือดสดแดง / กากกาแฟ)\n- Melena (อุจจาระดำเหนียว เหม็นมาก)\n- ซีด เหงื่อแตก HR > 100, BP ต่ำ\n\n**Blatchford score:** ประเมินความเสี่ยง ต้อง intervene" },
+        { "card_type": "tip", "title_th": "การพยาบาล Upper GI bleed", "body_md": "1. **ABC** — secure airway ถ้า massive bleed\n2. เปิด IV 2 large-bore (16-18G), เก็บ blood for type/crossmatch\n3. IV crystalloid bolus, blood transfusion ถ้า Hb < 7 (หรือ < 8 ใน CAD)\n4. NPO, NG tube ใส่ระวัง esophageal varices\n5. PPI IV (omeprazole) high dose\n6. ใน varices: octreotide IV + endoscopy band ligation\n7. Monitor V/S, I/O, CVP, urine output ≥ 0.5 mL/kg/hr" },
+        { "card_type": "warning", "title_th": "ภาวะแทรกซ้อน Cirrhosis", "body_md": "**4 ภาวะแทรกซ้อนสำคัญ:**\n1. **Variceal bleeding** — Esophageal varices\n2. **Ascites** — Spironolactone + furosemide (4:1), low Na diet, paracentesis\n3. **Hepatic encephalopathy** — Lactulose (ขับ NH₃), Rifaximin\n4. **Spontaneous Bacterial Peritonitis (SBP)** — ปวดท้อง ไข้ ใน ascites; ATB ceftriaxone\n\nระวัง **hepatorenal syndrome** (AKI ใน cirrhosis)" },
+        { "card_type": "concept", "title_th": "AKI — สาเหตุ 3 ประเภท", "body_md": "**Pre-renal (60%):** ขาดน้ำ, hypovolemia, sepsis, HF\n- BUN/Cr ratio > 20:1\n- FENa < 1%\n- รักษาด้วย IV fluid\n\n**Intra-renal (35%):** ATN จากยา (aminoglycoside, contrast, NSAID), glomerulonephritis\n- FENa > 2%\n- Granular cast in urine\n\n**Post-renal (5%):** Obstruction (BPH, stone, tumor)\n- Bladder distension\n- ทำ KUB / U/S → ใส่ Foley/NSS irrigation" },
+        { "card_type": "tip", "title_th": "การพยาบาล AKI", "body_md": "- Strict I/O hourly\n- Daily weight (1 kg = 1 L)\n- จำกัดน้ำตามการขับ urine + 500 mL insensible loss\n- จำกัด K (< 2 g/day), Na, phosphate\n- หลีกเลี่ยง nephrotoxic drugs (NSAID, contrast, AG)\n- ปรับขนาดยาตาม CrCl\n- เตรียม dialysis indication: **AEIOU**\n  - **A**cidosis severe\n  - **E**lectrolyte (K > 6.5)\n  - **I**ntoxication\n  - **O**verload (pulmonary edema)\n  - **U**remic symptoms (encephalopathy, pericarditis)" },
+        { "card_type": "concept", "title_th": "Hemodialysis vs Peritoneal Dialysis", "body_md": "**HD:**\n- 3-4 ชม. × 3 ครั้ง/สัปดาห์ ที่ศูนย์\n- ใช้ AV fistula (ดูแล ห้าม IV/วัด BP ที่แขนนั้น คลำ thrill ฟัง bruit)\n- ภาวะแทรกซ้อน: hypotension, disequilibrium syndrome, cramp\n\n**PD:**\n- ทำที่บ้านทุกวัน\n- ใช้ Tenckhoff catheter\n- ภาวะแทรกซ้อน: **peritonitis** (น้ำขุ่น ปวดท้อง ไข้) — เพาะเชื้อ + ATB intraperitoneal" },
+        { "card_type": "warning", "title_th": "AV Fistula care", "body_md": "**ห้าม** ที่แขน fistula:\n- วัด BP\n- เจาะเลือด / ใส่ IV\n- รัด tourniquet\n- ใส่นาฬิกา / สวมเสื้อแขนรัด\n\n**ตรวจทุก shift:**\n- คลำ **thrill** (สั่นใต้ฝ่ามือ)\n- ฟัง **bruit** ด้วย stethoscope\n- ถ้าไม่มี → fistula ตัน รีบแจ้งแพทย์ทันที" },
+        { "card_type": "concept", "title_th": "Electrolyte emergencies", "body_md": "**Hyperkalemia (K > 6.5):**\n- ECG: peak T → wide QRS → sine wave\n- รักษา: **C-BIG-K**\n  - **C**a gluconate IV (stabilize cardiac membrane)\n  - **B**eta-agonist nebulize\n  - **I**nsulin + Glucose (shift K เข้าเซลล์)\n  - **K**ayexalate / dialysis (remove K)\n\n**Hyponatremia (Na < 135):**\n- AMS, seizure ถ้า < 120\n- ห้ามแก้เร็วเกิน 0.5 mEq/L/hr → osmotic demyelination" },
+        { "card_type": "qa", "title_th": "ตัวอย่างข้อสอบ — Cirrhosis encephalopathy", "body_md": "**Q:** ผู้ป่วย cirrhosis ซึมลง confused คิดถึง hepatic encephalopathy การพยาบาลข้อใดสำคัญ?\n\n**A:** ให้ **Lactulose** เพื่อขับ NH₃ ทางลำไส้ (เป้าหมาย อุจจาระ 2-3 ครั้ง/วัน) + จำกัด protein ชั่วคราว + หาสาเหตุ (GI bleed, infection, electrolyte)" }
+      ],
+      "quiz_questions": [
+        {
+          "scenario": "ผู้ป่วย AKI K+ = 6.8 mEq/L ECG พบ peaked T wave การพยาบาลที่ต้องทำเป็นอันดับแรกคือ",
+          "choices": [
+            { "label": "A", "text": "ให้ Kayexalate (sodium polystyrene) per rectum" },
+            { "label": "B", "text": "ให้ Insulin + Glucose IV" },
+            { "label": "C", "text": "ให้ Calcium gluconate 10% 10 mL IV slow push" },
+            { "label": "D", "text": "ส่งผู้ป่วยทำ hemodialysis ทันที" },
+            { "label": "E", "text": "ให้ Salbutamol nebulize" }
+          ],
+          "correct_answer": "C",
+          "difficulty": "hard",
+          "explanation": "Hyperkalemia ที่มี ECG change ต้องให้ Ca gluconate ก่อนเพื่อ stabilize cardiac membrane (ไม่ลด K แต่ป้องกัน arrhythmia) จากนั้นค่อย shift และ remove",
+          "detailed_explanation": {
+            "summary": "Hyperkalemia + ECG change → Ca gluconate FIRST",
+            "reason": "ลำดับการรักษา hyperkalemia ที่อันตราย: (1) Stabilize → Ca gluconate IV (2) Shift K เข้าเซลล์ → insulin/glucose, beta-agonist, bicarb (3) Remove → Kayexalate, furosemide, dialysis",
+            "choices": [
+              { "label": "A", "text": "Kayexalate", "is_correct": false, "explanation": "Remove K — ช้า ใช้ทีหลัง" },
+              { "label": "B", "text": "Insulin + Glucose", "is_correct": false, "explanation": "Shift — ทำหลัง stabilize" },
+              { "label": "C", "text": "Ca gluconate", "is_correct": true, "explanation": "ถูก — stabilize cardiac membrane ทันที" },
+              { "label": "D", "text": "Hemodialysis", "is_correct": false, "explanation": "Definitive แต่ใช้เวลา ต้อง stabilize ก่อน" },
+              { "label": "E", "text": "Salbutamol neb", "is_correct": false, "explanation": "Shift — ทำหลัง stabilize" }
+            ],
+            "key_takeaway": "Hyperkalemia ECG change: Stabilize (Ca) → Shift (insulin/beta) → Remove (Kayexalate/dialysis)"
+          }
+        },
+        {
+          "scenario": "ผู้ป่วย HD ผ่าตัด AV fistula แขนซ้าย พยาบาลพบเพื่อนพยาบาลกำลังจะวัด BP ที่แขนซ้าย ควรทำอย่างไร",
+          "choices": [
+            { "label": "A", "text": "ปล่อยให้วัด เพราะ fistula สมบูรณ์แล้ว" },
+            { "label": "B", "text": "หยุด — เปลี่ยนไปวัดที่แขนขวาแทน เพราะวัด BP ที่แขน fistula ทำให้ fistula ตัน" },
+            { "label": "C", "text": "ใช้ Doppler ช่วย" },
+            { "label": "D", "text": "วัดได้แต่ใช้เครื่อง manual เท่านั้น" },
+            { "label": "E", "text": "วัดที่ขาแทน" }
+          ],
+          "correct_answer": "B",
+          "difficulty": "easy",
+          "explanation": "ห้ามวัด BP / เจาะเลือด / IV ที่แขน fistula เพราะรัดแรงทำให้ fistula thrombose",
+          "detailed_explanation": {
+            "summary": "ห้ามวัด BP / IV / เจาะเลือดที่แขน AV fistula",
+            "reason": "Fistula เป็น lifeline ของผู้ป่วย HD ถ้าตันต้องผ่าทำใหม่ ใช้ catheter ชั่วคราว (เสี่ยง infection)",
+            "choices": [
+              { "label": "A", "text": "ปล่อยให้วัด", "is_correct": false, "explanation": "อันตราย — fistula อาจตัน" },
+              { "label": "B", "text": "หยุด ใช้แขนตรงข้าม", "is_correct": true, "explanation": "ถูก — มาตรฐาน fistula care" },
+              { "label": "C", "text": "Doppler ช่วย", "is_correct": false, "explanation": "ไม่เกี่ยว — ห้ามรัด" },
+              { "label": "D", "text": "Manual", "is_correct": false, "explanation": "ก็รัดเหมือนกัน" },
+              { "label": "E", "text": "ขา", "is_correct": false, "explanation": "วัดที่ขาไม่แม่นยำ ใช้แขนตรงข้าม" }
+            ],
+            "key_takeaway": "AV fistula = ห้ามรัด, ห้าม IV, ห้ามเจาะ — ตรวจ thrill+bruit ทุก shift"
+          }
+        },
+        {
+          "scenario": "ผู้ป่วย liver cirrhosis ascites ได้ spironolactone 100 mg/day + furosemide 25 mg/day มา 1 สัปดาห์ น้ำหนักไม่ลด อาการบวมยังมาก พยาบาลควรประเมินเรื่องใดก่อน",
+          "choices": [
+            { "label": "A", "text": "ส่ง paracentesis ทันที" },
+            { "label": "B", "text": "เพิ่มยา diuretic เป็น 2 เท่า" },
+            { "label": "C", "text": "ประเมินการกินอาหารและการจำกัด Na (< 2 g/day)" },
+            { "label": "D", "text": "งดน้ำเด็ดขาด" },
+            { "label": "E", "text": "ให้ albumin IV ทันที" }
+          ],
+          "correct_answer": "C",
+          "difficulty": "medium",
+          "explanation": "ก่อนเพิ่มยา/intervention ต้องประเมิน compliance การจำกัด Na — สาเหตุพบบ่อยที่ ascites ไม่ตอบสนอง",
+          "detailed_explanation": {
+            "summary": "Ascites ไม่ตอบสนอง → check Na intake first",
+            "reason": "Spironolactone+furosemide ratio 4:1 ใช้ใน cirrhotic ascites การจำกัด Na < 2 g/day สำคัญที่สุด ถ้ายังบวม → titrate dose ก่อน paracentesis",
+            "choices": [
+              { "label": "A", "text": "Paracentesis ทันที", "is_correct": false, "explanation": "เป็น step หลัง เมื่อ refractory" },
+              { "label": "B", "text": "เพิ่มยา 2 เท่า", "is_correct": false, "explanation": "ต้องประเมินสาเหตุก่อน" },
+              { "label": "C", "text": "ประเมิน Na intake", "is_correct": true, "explanation": "ถูก — common cause" },
+              { "label": "D", "text": "งดน้ำ", "is_correct": false, "explanation": "จำกัดน้ำเฉพาะ Na < 125" },
+              { "label": "E", "text": "Albumin IV", "is_correct": false, "explanation": "ใช้หลัง large-volume paracentesis ไม่ใช่ตอนนี้" }
+            ],
+            "key_takeaway": "Ascites refractory → Na compliance > dose titration > paracentesis > TIPS"
+          }
+        }
+      ]
+    },
+    {
+      "title_th": "ระบบต่อมไร้ท่อและประสาท",
+      "subtitle_th": "DM/DKA, Thyroid, Stroke, Seizure",
+      "icon": "🧠",
+      "est_minutes": 12,
+      "xp_reward": 20,
+      "cards": [
+        { "card_type": "concept", "title_th": "Diabetic Ketoacidosis (DKA)", "body_md": "**เกณฑ์วินิจฉัย:**\n- BG > 250 mg/dL\n- Anion gap metabolic acidosis (pH < 7.3, HCO₃ < 18)\n- Ketones positive\n\n**อาการ:** หายใจหอบลึก (Kussmaul), กลิ่นปากผลไม้สุก, ปวดท้อง คลื่นไส้, เริ่มซึม\n\n**ตัวกระตุ้น:** Infection, missed insulin, AMI, stroke, pancreatitis" },
+        { "card_type": "tip", "title_th": "การพยาบาล DKA — ลำดับ", "body_md": "1. **IV fluid first** — NSS 1 L/hr ใน 1 ชม.แรก แล้วปรับ\n2. **Insulin** regular IV drip 0.1 U/kg/hr (หลังประเมิน K+)\n3. **Replace K** — DKA จะ shift K → ถ้า K < 5.3 ให้ replace, K < 3.3 หยุด insulin ก่อน\n4. เมื่อ BG ลง ~200-250 → เปลี่ยน fluid เป็น D5W/NSS\n5. ตามด้วย bicarbonate **ต่อเมื่อ pH < 6.9**\n6. หาสาเหตุ + รักษา infection" },
+        { "card_type": "warning", "title_th": "Hypoglycemia — Rule of 15", "body_md": "**BG < 70 mg/dL** ในผู้ป่วยตื่นรู้สึกตัว:\n\n**15-15 rule:**\n- ให้ carb 15 g (น้ำหวาน 1/2 แก้ว, ลูกอม 3-4 เม็ด, glucose tab 3 เม็ด)\n- รอ 15 นาที ตรวจ BG ซ้ำ\n- ถ้ายัง < 70 ให้ซ้ำ\n- เมื่อปกติ ให้กินอาหารหรือ snack ที่มี complex carb + protein\n\n**Unconscious / ห้ามให้ทางปาก:**\n- D50W 50 mL IV หรือ glucagon 1 mg IM" },
+        { "card_type": "concept", "title_th": "Thyroid storm", "body_md": "**Triad:**\n- Hyperthermia > 38.5°C\n- Tachycardia > 130 (AF บ่อย)\n- AMS / agitation\n\n**ตัวกระตุ้น:** Infection, surgery, RAI, iodine load, DKA\n\n**Burch-Wartofsky score** ≥ 45 = highly suggestive\n\n**การรักษา (4 P):**\n- **P**TU (block synthesis + peripheral conversion)\n- **P**ropranolol (block T4→T3, symptom)\n- **P**otassium iodide / Lugol's (ให้หลัง PTU 1 ชม.)\n- **P**rednisolone / hydrocortisone" },
+        { "card_type": "concept", "title_th": "Acute Stroke — FAST + onset time", "body_md": "**FAST:**\n- **F**ace droop\n- **A**rm weakness\n- **S**peech slurred\n- **T**ime (last known well — สำคัญที่สุด)\n\n**Window:**\n- IV thrombolytic (rtPA): ภายใน **4.5 ชม.**\n- Mechanical thrombectomy: ภายใน **24 ชม.** (LVO)\n\nต้องทำ **non-contrast CT** ทันทีเพื่อแยก hemorrhagic vs ischemic" },
+        { "card_type": "tip", "title_th": "การพยาบาล stroke เฉียบพลัน", "body_md": "1. ABC + ประเมิน NIHSS\n2. NPO จนกว่าจะประเมิน swallow\n3. **Head elevation 30°** (ลด ICP)\n4. ห้ามให้ aspirin ก่อน CT (อาจเป็น hemorrhagic)\n5. **Ischemic stroke BP target:**\n   - ก่อน rtPA: < 185/110\n   - หลัง rtPA: < 180/105\n   - ไม่ได้ rtPA: permissive < 220/120\n6. **Hemorrhagic stroke:** SBP < 140\n7. รักษา hyperglycemia (target 140-180), hypothermia\n8. **NIHSS** ประเมินทุก 15 นาที × 2 ชม. หลัง rtPA" },
+        { "card_type": "warning", "title_th": "Seizure precautions", "body_md": "**ระหว่างชัก:**\n- ห้าม restrain แขน-ขา\n- ห้ามใส่ของในปาก (ไม้กดลิ้น)\n- จัด lateral position ป้องกัน aspiration\n- เอาของแข็ง/ของมีคมออก, vatchใส่หมอนรองศีรษะ\n- จับเวลา + บรรยายลักษณะ\n\n**Status epilepticus** = ชัก > 5 นาที หรือ ชักซ้ำไม่กลับตัว → ICU\n- 1st line: **Lorazepam** 4 mg IV (หรือ diazepam)\n- 2nd line: **Phenytoin** / levetiracetam\n- 3rd line: intubate + propofol/midazolam drip" },
+        { "card_type": "mnemonic", "title_th": "Increased ICP — Cushing's triad", "body_md": "**Cushing's triad** = ICP สูงรุนแรง (impending herniation):\n- **B**radycardia\n- **B**reathing irregular (Cheyne-Stokes)\n- **B**P widened pulse pressure (SBP สูง DBP ต่ำ)\n\nMonitor: GCS, pupil (anisocoria), motor response\n\n**Position:** Head up 30°, head midline (ห้ามหันคอ)\nหลีกเลี่ยง: hypoxia, hypercarbia, hyperthermia, hyperglycemia" },
+        { "card_type": "qa", "title_th": "ตัวอย่างข้อสอบ — DKA + K", "body_md": "**Q:** ผู้ป่วย DKA แรกรับ K+ = 3.0 mEq/L ถัดไปการพยาบาลข้อใดควรทำเป็นอันดับแรก?\n\n**A:** **ห้ามเริ่ม insulin** จนกว่า K ≥ 3.3 — เพราะ insulin จะ shift K เข้าเซลล์เพิ่ม → arrhythmia เริ่มด้วย IV fluid + KCl replacement ก่อน" }
+      ],
+      "quiz_questions": [
+        {
+          "scenario": "ผู้ป่วย stroke onset 2 ชั่วโมง CT brain ไม่พบ hemorrhage NIHSS = 12 BP 195/110 mmHg ก่อนให้ rtPA พยาบาลควรทำอย่างไร",
+          "choices": [
+            { "label": "A", "text": "ให้ rtPA ทันที เพราะอยู่ใน window 4.5 ชม." },
+            { "label": "B", "text": "ลด BP ให้ < 185/110 ด้วยยา IV ก่อน แล้วจึงให้ rtPA" },
+            { "label": "C", "text": "เลื่อนการให้ rtPA ออกไป 24 ชม." },
+            { "label": "D", "text": "ให้ ASA 300 mg แทน" },
+            { "label": "E", "text": "ไม่ต้องลด BP ปล่อย permissive" }
+          ],
+          "correct_answer": "B",
+          "difficulty": "medium",
+          "explanation": "Ischemic stroke ก่อน rtPA: BP ต้อง < 185/110 มิฉะนั้น hemorrhagic risk สูง ใช้ labetalol/nicardipine IV titrate",
+          "detailed_explanation": {
+            "summary": "rtPA: BP < 185/110 ก่อน, < 180/105 หลังให้ × 24 ชม.",
+            "reason": "ค่า cutoff เคร่งครัดเพราะ rtPA เพิ่มความเสี่ยง intracranial hemorrhage โดยเฉพาะที่ BP สูง",
+            "choices": [
+              { "label": "A", "text": "ให้ทันที", "is_correct": false, "explanation": "BP สูงเกิน — ห้ามให้" },
+              { "label": "B", "text": "ลด BP ก่อน", "is_correct": true, "explanation": "ถูก — ตาม guideline" },
+              { "label": "C", "text": "เลื่อน 24 ชม.", "is_correct": false, "explanation": "เกิน window ใช้ rtPA ไม่ได้แล้ว" },
+              { "label": "D", "text": "ASA 300 mg", "is_correct": false, "explanation": "ใช้กรณีไม่ได้ rtPA" },
+              { "label": "E", "text": "Permissive", "is_correct": false, "explanation": "Permissive ใช้เมื่อ NOT ใช้ rtPA" }
+            ],
+            "key_takeaway": "rtPA = BP < 185/110 (pre), < 180/105 (post 24h)"
+          }
+        },
+        {
+          "scenario": "ผู้ป่วย DKA แรกรับ BG 480 mg/dL pH 7.10 HCO₃ 8 K+ 3.0 mEq/L พยาบาลควรเริ่มต้นการรักษาอย่างไร",
+          "choices": [
+            { "label": "A", "text": "เริ่ม regular insulin IV drip 0.1 U/kg/hr ทันที" },
+            { "label": "B", "text": "ให้ NaHCO₃ IV ทันทีเพื่อแก้ acidosis" },
+            { "label": "C", "text": "ให้ NSS IV + KCl replacement ก่อน ค่อยเริ่ม insulin เมื่อ K ≥ 3.3" },
+            { "label": "D", "text": "ให้ D5W IV เพื่อป้องกัน hypoglycemia" },
+            { "label": "E", "text": "ส่ง dialysis ทันที" }
+          ],
+          "correct_answer": "C",
+          "difficulty": "hard",
+          "explanation": "DKA + K < 3.3 → ห้ามเริ่ม insulin เพราะจะ shift K เข้าเซลล์ → severe hypokalemia → arrhythmia ต้อง replace K ก่อน",
+          "detailed_explanation": {
+            "summary": "DKA: ถ้า K < 3.3 → replace K ก่อน, ห้าม insulin",
+            "reason": "Insulin shift K เข้าเซลล์ ถ้า K ต่ำอยู่แล้วจะ drop ลงอีก เกิด arrhythmia/respiratory paralysis ลำดับมาตรฐาน: fluid → check K → insulin (เมื่อ K ≥ 3.3)",
+            "choices": [
+              { "label": "A", "text": "Insulin ทันที", "is_correct": false, "explanation": "อันตราย — K < 3.3" },
+              { "label": "B", "text": "NaHCO₃", "is_correct": false, "explanation": "ให้เฉพาะ pH < 6.9" },
+              { "label": "C", "text": "NSS + KCl ก่อน", "is_correct": true, "explanation": "ถูก — มาตรฐาน DKA + hypokalemia" },
+              { "label": "D", "text": "D5W", "is_correct": false, "explanation": "ใช้เมื่อ BG ลง < 250" },
+              { "label": "E", "text": "Dialysis", "is_correct": false, "explanation": "ไม่มี indication" }
+            ],
+            "key_takeaway": "DKA: Fluid → check K (< 3.3 = replace, hold insulin) → Insulin → Bicarb (pH<6.9)"
+          }
+        },
+        {
+          "scenario": "ผู้ป่วย status epilepticus ชักต่อเนื่อง 8 นาที ยังไม่หยุด ยา 1st line ที่ควรให้คือ",
+          "choices": [
+            { "label": "A", "text": "Phenytoin 20 mg/kg IV" },
+            { "label": "B", "text": "Lorazepam 4 mg IV" },
+            { "label": "C", "text": "Propofol drip" },
+            { "label": "D", "text": "Levetiracetam 60 mg/kg IV" },
+            { "label": "E", "text": "Valproate IV" }
+          ],
+          "correct_answer": "B",
+          "difficulty": "easy",
+          "explanation": "Status epilepticus 1st line = Benzodiazepine (lorazepam IV หรือ diazepam IV หรือ midazolam IM)",
+          "detailed_explanation": {
+            "summary": "Status epilepticus: 1st = BZD, 2nd = phenytoin/LEV, 3rd = anesthesia",
+            "reason": "BZD ออกฤทธิ์เร็วผ่าน GABA-A receptor หยุดชักเฉียบพลัน",
+            "choices": [
+              { "label": "A", "text": "Phenytoin", "is_correct": false, "explanation": "2nd line — หลัง BZD" },
+              { "label": "B", "text": "Lorazepam IV", "is_correct": true, "explanation": "ถูก — 1st line" },
+              { "label": "C", "text": "Propofol", "is_correct": false, "explanation": "3rd line — refractory" },
+              { "label": "D", "text": "Levetiracetam", "is_correct": false, "explanation": "2nd line" },
+              { "label": "E", "text": "Valproate", "is_correct": false, "explanation": "2nd line" }
+            ],
+            "key_takeaway": "Status: BZD first (lorazepam 4 mg IV), repeat once, then 2nd line"
+          }
+        }
+      ]
+    }
+  ]
+}
