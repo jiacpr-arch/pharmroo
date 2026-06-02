@@ -1,30 +1,364 @@
 {
   "subject": "Pulmonary",
-  "unit": { "title_th": "ปอด", "description_th": "การจัดการโรคหอบหืดและ COPD ด้วยยาสูดพ่นและหลักการ stepwise", "icon": "🫧" },
+  "unit": {
+    "title_th": "ระบบทางเดินหายใจ",
+    "description_th": "คอร์สครบวงจรสำหรับสอบใบประกอบวิชาชีพเภสัชกรรม ครอบคลุมโรคหอบหืด COPD ปอดอักเสบ ยาสูดพ่น theophylline สเตียรอยด์สูดพ่น ยาแก้ไอ และการบริหารยาอย่างถูกต้องตามแนวทาง GINA/GOLD",
+    "icon": "🫁"
+  },
   "lessons": [
     {
-      "title_th": "โรคหอบหืด",
-      "subtitle_th": "Asthma Management",
+      "title_th": "โรคหอบหืด: การจำแนกและยาควบคุม",
+      "subtitle_th": "Asthma – GINA steps, ICS, ICS/LABA, SABA rescue",
       "icon": "🌬️",
-      "est_minutes": 5,
-      "xp_reward": 10,
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": ["โรคหอบหืด", "asthma", "GINA", "ICS", "budesonide", "fluticasone", "SABA", "salbutamol", "ICS/LABA", "controller"],
       "cards": [
-        { "card_type": "concept", "title_th": "Reliever vs Controller", "body_md": "- **Reliever**: SABA (salbutamol) บรรเทาอาการเฉียบพลัน\n- **Controller**: **ICS** (budesonide, fluticasone) เป็นหลักของการควบคุมระยะยาว\n- ปัจจุบันแนะนำ **ICS-formoterol** เป็นยาบรรเทา/ควบคุม ลดการใช้ SABA เดี่ยว" },
-        { "card_type": "concept", "title_th": "Stepwise approach", "body_md": "เพิ่มยาเป็นขั้นตามการควบคุม:\n1. ICS ขนาดต่ำ (± formoterol prn)\n2. ICS ต่ำ + LABA\n3. ICS ขนาดกลาง/สูง + LABA\n4. เพิ่ม LAMA / ส่งต่อ\n\n**LABA ห้ามใช้เดี่ยว** ต้องคู่กับ ICS เสมอ" },
-        { "card_type": "tip", "title_th": "บ้วนปากหลังพ่น ICS", "body_md": "หลังพ่น ICS ให้ **บ้วนปาก** เพื่อลด **เชื้อราในช่องปาก (oral candidiasis)** และเสียงแหบ\nใช้ **spacer** ช่วยเพิ่มการนำส่งยาและลด ADR เฉพาะที่" },
-        { "card_type": "warning", "title_th": "สัญญาณควบคุมไม่ดี", "body_md": "ใช้ SABA **บ่อยเกินไป** (เช่น >2 ครั้ง/สัปดาห์) บ่งชี้การควบคุมไม่ดี ต้องทบทวน controller\nระวังการใช้ SABA เกินขนาดทำให้ **มือสั่น ใจสั่น hypokalemia**" }
+        {
+          "card_type": "concept",
+          "title_th": "นิยามและพยาธิสภาพของโรคหอบหืด",
+          "body_md": "โรคหอบหืดคือภาวะอักเสบเรื้อรังของหลอดลม ทำให้เกิด **bronchospasm แบบ reversible** โดยมีลักษณะสำคัญ:\n- หายใจมีเสียงหวีด (wheeze), แน่นหน้าอก, ไอเรื้อรัง โดยเฉพาะตอนกลางคืน\n- Airflow obstruction ที่กลับคืนได้เองหรือเมื่อรับยา\n- Airway hyperresponsiveness ต่อสิ่งกระตุ้น\n\nพยาธิสภาพหลักคือ **การอักเสบของเยื่อบุหลอดลม** (eosinophilic inflammation) ซึ่งต้องใช้ **ICS เป็นยาหลัก** ในการควบคุม"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "การจำแนกตามการควบคุมโรค (GINA)",
+          "body_md": "GINA แบ่งระดับการควบคุมตาม 4 เกณฑ์ในช่วง 4 สัปดาห์ที่ผ่านมา:\n\n| เกณฑ์ | Well-controlled | Partly controlled | Uncontrolled |\n|---|---|---|---|\n| อาการกลางวัน >2×/สัปดาห์ | ไม่ | พบ 1–2 อย่าง | ≥3 อย่าง |\n| ตื่นกลางคืนจากอาการ | ไม่ | | |\n| ใช้ SABA >2×/สัปดาห์ | ไม่ | | |\n| จำกัดกิจกรรม | ไม่ | | |\n\nประเมินทุก 1–3 เดือนเพื่อ step-up หรือ step-down"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "GINA Steps: บันไดยา 5 ขั้น",
+          "body_md": "**Step 1:** อาการน้อยมาก – SABA as-needed (หรือ low-dose ICS/formoterol as-needed)\n\n**Step 2:** Low-dose ICS รายวัน + SABA as-needed (ICS คือยาหลักขั้นแรก)\n\n**Step 3:** Low-dose **ICS/LABA** รายวัน + SABA as-needed\n\n**Step 4:** Medium-dose ICS/LABA รายวัน + พิจารณา LAMA\n\n**Step 5:** High-dose ICS/LABA + LAMA ± tiotropium ± biologic (anti-IL5, anti-IgE)\n\n**ICS คือ cornerstone ของการรักษา** ในทุก step ที่มีการรักษาแบบ controller"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "จำ ICS ที่ใช้บ่อยในหอบหืด",
+          "body_md": "**ICS รุ่นหลัก:**\n- **budesonide** (Pulmicort) – DPI/MDI/nebulizer\n- **fluticasone propionate** (Flixotide) – MDI/DPI\n- **beclomethasone** (Becotide) – MDI\n- **fluticasone furoate** (Arnuity) – DPI once daily\n\n**ICS/LABA combo ที่ใช้บ่อย:**\n- budesonide/formoterol (Symbicort) – SMART therapy ได้\n- fluticasone/salmeterol (Seretide)\n- fluticasone furoate/vilanterol (Relvar)"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ Controller vs Reliever: \"CALM vs FAST\"",
+          "body_md": "**CALM** = Controller (ใช้ทุกวัน)\n- **C**orticosteroid สูดพ่น (ICS)\n- **A**dd-on LABA/LAMA/biologic\n- **L**ong-acting bronchodilator\n- **M**aintenance ต่อเนื่อง\n\n**FAST** = Rescue (ใช้เมื่อมีอาการ)\n- **F**ast-acting\n- **A**s-needed\n- **S**hort-acting beta-2 agonist\n- **T**emporary relief\n\nSABA (salbutamol/albuterol) = ยา rescue หลัก ไม่ใช้เพียงอย่างเดียวใน controller"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ADR ของสเตียรอยด์สูดพ่น (ICS)",
+          "body_md": "**ADR เฉพาะที่ (local):**\n- **Oropharyngeal candidiasis** (เชื้อราในปาก) – ป้องกันด้วยการ **บ้วนปากหลังใช้ยาทุกครั้ง**\n- **Dysphonia** (เสียงแหบ)\n- ไอหลังสูดพ่น\n\n**ADR ระบบ (systemic) – พบน้อยกว่า oral steroid:**\n- กดการทำงานของต่อมหมวกไต (doses สูงมาก, ระยะยาว)\n- ผลต่อความหนาแน่นกระดูก, ต้อกระจก\n- ในเด็ก: อาจชะลอการเจริญเติบโตชั่วคราว\n\n**ห้ามหยุด ICS เองโดยไม่ปรึกษาแพทย์** แม้อาการดีขึ้น"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "LABA ห้ามใช้ลำพังโดยไม่มี ICS ในหอบหืด",
+          "body_md": "**LABA (salmeterol, formoterol) ห้ามใช้เดี่ยว** ในโรคหอบหืด เพราะเพิ่มความเสี่ยงการเสียชีวิตจากหอบหืด (FDA Black Box Warning)\n\nต้องใช้ร่วมกับ **ICS เสมอ** ในรูป combination product หรือแยกกระป๋องแต่ใช้พร้อมกัน\n\n**SABA** (salbutamol) ใช้ as-needed ได้ แต่ถ้าต้องใช้ >2 วัน/สัปดาห์ → แสดงว่าโรคยังควบคุมไม่ได้ ต้อง step-up"
+        }
       ]
     },
     {
-      "title_th": "COPD เบื้องต้น",
-      "subtitle_th": "COPD Basics",
-      "icon": "🚬",
-      "est_minutes": 5,
-      "xp_reward": 10,
+      "title_th": "ยา Inhaler: เทคนิคและอุปกรณ์",
+      "subtitle_th": "MDI vs DPI, spacer, nebulizer, วิธีสูดที่ถูกต้อง",
+      "icon": "💨",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": ["MDI", "DPI", "spacer", "nebulizer", "inhaler technique", "การสูดพ่น", "budesonide", "salbutamol", "turbuhaler", "accuhaler"],
       "cards": [
-        { "card_type": "concept", "title_th": "หลักการรักษา COPD", "body_md": "ยาหลักคือ **bronchodilator ออกฤทธิ์ยาว**:\n- **LAMA** (tiotropium)\n- **LABA** (formoterol, salmeterol)\n\nต่างจากหอบหืดตรงที่ **ICS ไม่ใช่ยาแรก** ใช้เฉพาะรายมี exacerbation บ่อยหรือ eosinophil สูง" },
-        { "card_type": "tip", "title_th": "เลิกบุหรี่สำคัญที่สุด", "body_md": "**การเลิกบุหรี่** เป็นมาตรการเดียวที่ชะลอการเสื่อมของสมรรถภาพปอดได้ชัดเจน\nร่วมกับ **วัคซีนไข้หวัดใหญ่และปอดอักเสบ** และการฟื้นฟูสมรรถภาพปอด" },
-        { "card_type": "warning", "title_th": "ออกซิเจนใน COPD", "body_md": "ให้ออกซิเจนระวัง **CO2 retention** ในผู้ป่วยบางราย — ควบคุมเป้า SpO2 ประมาณ **88–92%**\nไม่ให้ออกซิเจนความเข้มข้นสูงโดยไม่จำเป็น" }
+        {
+          "card_type": "concept",
+          "title_th": "MDI (Metered-Dose Inhaler) คืออะไร",
+          "body_md": "MDI หรือ pressurized MDI (pMDI) คืออุปกรณ์สูดพ่นชนิดกระป๋องแรงดัน บรรจุยาผสมใน propellant (HFA)\n\n**ข้อดี:** พกพาสะดวก, ใช้ได้ทุกอายุ (ถ้าใช้ spacer)\n\n**ข้อเสีย:** ต้องประสานมือ-ปอด (hand-lung coordination) ซึ่งยากในเด็กและผู้สูงอายุ\n\n**วิธีใช้ MDI ที่ถูกต้อง:**\n1. เขย่ากระป๋องก่อนใช้\n2. หายใจออกช้า ๆ จนสุด\n3. อมปากกระป๋อง กดพร้อมหายใจเข้าช้า ๆ ลึก\n4. กลั้นหายใจ 10 วินาที\n5. รอ ≥30 วินาทีก่อนพ่นครั้งต่อไป"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "DPI (Dry Powder Inhaler) และอุปกรณ์ที่พบบ่อย",
+          "body_md": "DPI ขับเคลื่อนด้วยการหายใจเข้าของผู้ป่วย **ไม่ต้องประสานมือ-ปอด** แต่ต้องหายใจเข้าแรงพอ (inspiratory flow rate สูงพอ)\n\n**อุปกรณ์ที่พบบ่อย:**\n- **Turbuhaler** (Pulmicort, Symbicort) – หมุนส่วนล่างเพื่อโหลดยา\n- **Accuhaler/Diskus** (Seretide, Flixotide) – ดึงคันโยก\n- **Handihaler** (Spiriva tiotropium) – ใส่แคปซูลและกด\n- **Ellipta** (Relvar, Breo, Trelegy) – เลื่อนฝาเปิด\n\n**ข้อจำกัด:** ผู้ป่วยที่มี peak flow ต่ำหรือ COPD รุนแรงอาจสูดแรงไม่พอ ควรตรวจสอบ inspiratory flow"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Spacer: ทำไมต้องใช้และใครควรใช้",
+          "body_md": "**Spacer** (ห้องพักยา) คือท่อพลาสติกที่ต่อระหว่าง MDI กับปาก ช่วย:\n- ลด oropharyngeal deposition (ยาตกค้างในปากและคอ)\n- เพิ่ม lung deposition\n- ไม่ต้องประสานมือ-ปอด\n- ลด ADR จาก ICS (candidiasis, dysphonia)\n\n**ควรแนะนำ spacer ใน:**\n- เด็กเล็กและผู้สูงอายุ\n- ผู้ที่ใช้ MDI technique ไม่ดี\n- ทุกคนที่ใช้ **ICS ผ่าน MDI**\n\nทำความสะอาด spacer ด้วยน้ำอุ่นสัปดาห์ละครั้ง ปล่อยแห้งเอง (ไม่เช็ด)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Nebulizer: เมื่อไหร่จึงเหมาะ",
+          "body_md": "Nebulizer แปลงยาน้ำเป็นละอองฝอยที่สูดพ่นได้ เหมาะสำหรับ:\n- ผู้ป่วยวิกฤต/เฉียบพลัน (ER, ICU) ที่ไม่สามารถสูด inhaler ได้\n- เด็กทารกที่ใช้ mask\n- ผู้ที่ต้องการยาขนาดสูงใน exacerbation\n\n**ข้อเสียของ nebulizer:**\n- ใช้เวลานาน (10–20 นาที)\n- ต้องทำความสะอาดทุกวัน (เสี่ยงปนเปื้อนเชื้อ)\n- ต้องพึ่งไฟฟ้า/แบตเตอรี่\n\nในภาวะปกติ **MDI + spacer มีประสิทธิภาพเทียบเท่า nebulizer**"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "ล้างปากทุกครั้งหลังสูด ICS",
+          "body_md": "**คำแนะนำสำคัญสำหรับผู้ป่วย ICS:**\n\nหลังสูดพ่น ICS (ทั้ง MDI และ DPI) ให้:\n1. **บ้วนปากด้วยน้ำสะอาดและบ้วนทิ้ง** (อย่ากลืน) 2–3 ครั้ง\n2. หรือ **บ้วนปากและกลั้วคอ** เพื่อกำจัดยาที่ตกค้าง\n\nวิธีนี้ป้องกัน:\n- **Oral candidiasis** (เชื้อราในปาก)\n- **Dysphonia** (เสียงแหบ)\n\nหากใช้ spacer กับ MDI – ล้างปากก็ยังจำเป็น"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำขั้นตอน MDI: \"SMART\"",
+          "body_md": "**S**hake – เขย่ากระป๋อง\n**M**outh exhale – หายใจออกจนสุด\n**A**ctivate & inhale slowly – กดพร้อมหายใจเข้าช้า ๆ\n**R**etain – กลั้นหายใจ 10 วินาที\n**T**ime – รอ 30–60 วินาทีก่อนพ่นครั้งต่อไป\n\nข้อผิดพลาดที่พบบ่อยที่สุด: หายใจเข้าเร็วเกินไปและไม่กลั้นหายใจ → ยาเข้าปอดน้อย"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ตรวจสอบ dose counter และอย่าใช้ยาหมด",
+          "body_md": "**MDI ที่ไม่มี dose counter** – ให้ทดสอบโดยจุ่มน้ำ: ถ้าลอยนอนขนาน = **หมด**, ลอยตั้ง = เหลือน้อย, จม = **ยังเต็ม**\n\n**อย่า** ใช้ MDI จนหมดโดยไม่สำรองยา โดยเฉพาะยา rescue SABA – ให้เตรียมสำรองไว้เสมอ\n\n**ห้ามเจาะ/ทำลาย** กระป๋อง MDI เพราะมีแรงดันสูง"
+        }
+      ]
+    },
+    {
+      "title_th": "โรคปอดอุดกั้นเรื้อรัง COPD",
+      "subtitle_th": "GOLD stages A/B/E, LAMA, LABA, ICS เฉพาะกรณี",
+      "icon": "🫁",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": ["COPD", "GOLD", "LAMA", "tiotropium", "LABA", "salmeterol", "ICS/LABA", "FEV1", "exacerbation", "ปอดอุดกั้นเรื้อรัง"],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "COPD คืออะไรและวินิจฉัยอย่างไร",
+          "body_md": "COPD (Chronic Obstructive Pulmonary Disease) คือโรคทางเดินหายใจที่มี **airflow limitation แบบ persistent และ irreversible** เป็นส่วนใหญ่\n\n**สาเหตุหลัก:** การสูบบุหรี่ (>90%), มลพิษทางอากาศ, ฝุ่นควัน\n\n**วินิจฉัย:** spirometry ยืนยัน **FEV1/FVC < 0.70** หลังให้ bronchodilator\n\n**ต่างจากหอบหืด:** airflow limitation ใน COPD reversibility น้อยกว่า, เริ่มในผู้สูงอายุ/สูบบุหรี่, ไม่ค่อยมี allergy"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "GOLD grading และ ABE classification",
+          "body_md": "**GOLD grading (ตาม FEV1 % predicted):**\n- GOLD 1 (Mild): FEV1 ≥ 80%\n- GOLD 2 (Moderate): 50–79%\n- GOLD 3 (Severe): 30–49%\n- GOLD 4 (Very Severe): < 30%\n\n**ABE group (ตามอาการ + exacerbation history):**\n- **Group A:** อาการน้อย, exacerbation ≤1 ครั้ง/ปี (ไม่นำไปโรงพยาบาล)\n- **Group B:** อาการมาก (mMRC ≥2 หรือ CAT ≥10), exacerbation ≤1 ครั้ง\n- **Group E:** exacerbation ≥2 ครั้ง/ปี หรือ ≥1 ครั้งที่ต้องนอนโรงพยาบาล"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ยาตาม GOLD group",
+          "body_md": "**Group A:** LAMA หรือ LABA ตัวเดียว (short-acting SAMA/SABA ก็ได้)\n\n**Group B:** **LAMA + LABA** dual bronchodilator เป็นหลัก\n\n**Group E:** **LAMA + LABA** เป็น base ± พิจารณา ICS เพิ่ม\n- เพิ่ม **ICS** เมื่อ: eosinophils ≥300 cells/µL, หรือมี overlap กับ asthma\n- ไม่แนะนำ ICS เป็น monotherapy ใน COPD\n\n**LAMA ที่ใช้บ่อย:** tiotropium (Spiriva), umeclidinium, aclidinium, glycopyrronium\n**LABA ที่ใช้บ่อย:** salmeterol, formoterol, indacaterol, olodaterol"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "Tiotropium (Spiriva): จุดสำคัญที่ต้องรู้",
+          "body_md": "Tiotropium เป็น **LAMA** ที่ใช้กว้างขวางที่สุดใน COPD:\n- **ขนาด:** Handihaler 18 mcg วันละ 1 ครั้ง หรือ Respimat 2.5 mcg×2 puffs วันละ 1 ครั้ง\n- **ADR:** ปากแห้ง (anticholinergic), ท้องผูก, ตาพร่า, ปัสสาวะลำบาก\n- **ข้อควรระวัง:** ต้อหิน (narrow-angle glaucoma), BPH\n- **ห้าม** ให้ยาเข้าตา – ระวังขณะใช้ Respimat\n\nLAMA ลด **exacerbation** ได้ดีกว่า LABA ในบางการศึกษา → จึงเป็น preferred agent ใน COPD"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ COPD vs Asthma: \"COPD Smokes OLD\"",
+          "body_md": "**C**igarette smoking – สาเหตุหลักของ COPD\n**O**ld age onset – มักเริ่มหลัง 40–50 ปี\n**P**rogressive, not reversible – ไม่กลับคืนสู่ปกติ\n**D**yspnea on exertion – หอบเวลาออกแรงเป็นอาการเด่น\n\n**Asthma:** อายุน้อย, allergy, ไอกลางคืน, reversible, สนองต่อ ICS ดี\n\nข้อสำคัญ: COPD อาจ **overlap** กับ asthma (ACOS) ได้"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ICS ใน COPD ไม่ใช้พร่ำเพรื่อ",
+          "body_md": "ICS ใน COPD **ไม่ได้ช่วยลดอัตราตายและไม่ชะลอการเสื่อมของ FEV1** (ต่างจากหอบหืด)\n\n**ใช้ ICS ใน COPD เมื่อ:**\n- eosinophil ≥ 300 cells/µL\n- มี asthma overlap\n- exacerbation ถี่แม้ใช้ dual bronchodilator แล้ว\n\n**ข้อเสียของ ICS ใน COPD:**\n- เพิ่มความเสี่ยง **pneumonia** (โดยเฉพาะ fluticasone propionate ขนาดสูง)\n- oral candidiasis\n- ถ้า eosinophil < 100 cells/µL – ICS อาจไม่ได้ประโยชน์\n\nพิจารณาหยุด ICS เมื่อความเสี่ยงมากกว่าประโยชน์"
+        }
+      ]
+    },
+    {
+      "title_th": "COPD Exacerbation เฉียบพลัน",
+      "subtitle_th": "Systemic corticosteroid, antibiotics, SABA/SAMA เข้มข้น",
+      "icon": "🚨",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": ["COPD exacerbation", "prednisolone", "amoxicillin-clavulanate", "azithromycin", "SABA", "SAMA", "ipratropium", "oxygen therapy", "NIV"],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "นิยามและความรุนแรง COPD Exacerbation",
+          "body_md": "COPD Exacerbation คือ **อาการหายใจลำบากที่แย่ลงเฉียบพลัน** ร่วมกับไอและ/หรือเสมหะเพิ่มขึ้น ที่ต้องเปลี่ยนแผนการรักษา\n\n**ความรุนแรง:**\n- **Mild:** รักษาด้วย SABA/SAMA เท่านั้น\n- **Moderate:** ต้องการ systemic corticosteroid ± antibiotic\n- **Severe:** ต้องนอนโรงพยาบาล/ER\n- **Very severe:** ต้อง ICU/mechanical ventilation\n\n**สาเหตุที่พบบ่อย:** ติดเชื้อไวรัส (50%), แบคทีเรีย (25%), มลภาวะ, หยุดยา"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Bronchodilator ใน Exacerbation",
+          "body_md": "**SABA ขนาดสูง** เป็นยาหลักใน exacerbation:\n- **salbutamol** (albuterol) 2.5–5 mg nebulize ทุก 20–30 นาที (3 ครั้งแรก) แล้วปรับตามอาการ\n- หรือ MDI + spacer: 4–8 puffs ทุก 15–20 นาที\n\n**SAMA (ipratropium)** เพิ่มร่วมกับ SABA:\n- ipratropium 0.5 mg nebulize ทุก 6–8 ชม.\n- เพิ่ม bronchodilation โดยกลไกต่างกัน (antimuscarinic)\n\n**ยาทั้งสองสามารถผสมใน nebulizer เดียวกันได้** (Combivent)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Systemic Corticosteroid ใน Exacerbation",
+          "body_md": "**Prednisolone** 40 mg/วัน per oral นาน **5 วัน** (GOLD recommendation)\n- เทียบเท่า methylprednisolone 32 mg/วัน หรือ dexamethasone ขนาดเทียบเท่า\n- ลดระยะนอนโรงพยาบาล เพิ่ม FEV1 เร็วขึ้น ลด treatment failure\n- **ไม่จำเป็นต้อง taper** หากใช้ ≤14 วัน\n- ระวัง: น้ำตาลสูงในผู้ป่วยเบาหวาน\n\nIV methylprednisolone สำหรับผู้ป่วย NPO หรือ severe"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Antibiotic ใน COPD Exacerbation: ให้เมื่อไหร่",
+          "body_md": "**ให้ antibiotic เมื่อมี Anthonisen criteria ≥2 อย่าง:**\n1. เสมหะเพิ่มขึ้น\n2. เสมหะมีหนองมากขึ้น (purulent)\n3. หายใจลำบากมากขึ้น\n\nหรือผู้ป่วยที่ต้อง mechanical ventilation\n\n**Empiric antibiotic:**\n- ไม่มีความเสี่ยง Pseudomonas: **amoxicillin-clavulanate**, azithromycin, levofloxacin, doxycycline\n- มีความเสี่ยง Pseudomonas (FEV1 <30%, บ่อยหรือ steroid ใช้บ่อย): ciprofloxacin หรือ antipseudomonal beta-lactam\n\nระยะรักษา **5–7 วัน**"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "Oxygen therapy ใน COPD ต้องระวังพิเศษ",
+          "body_md": "**เป้าหมาย SpO2 ใน COPD exacerbation: 88–92%**\n\nทำไมไม่ตั้งเป้าสูงกว่า?\n- ผู้ป่วย COPD บางรายพึ่งพา **hypoxic drive** ในการหายใจ\n- ออกซิเจนสูงเกินไปอาจทำให้ **hypoventilation และ CO2 คั่ง**\n- Haldane effect: O2 สูงเพิ่ม dead space ventilation\n\nใช้ **Venturi mask** เพื่อควบคุม FiO2 แม่นยำ (24%, 28%, 35%)\n\n**ไม่ใช่** ให้ O2 100% ในทุกราย – ติดตาม ABG สม่ำเสมอ"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำการรักษา Exacerbation: \"SOAP\"",
+          "body_md": "**S**ABA + SAMA – bronchodilator ทันที\n**O**xygen – ควบคุม SpO2 88–92%\n**A**ntibiotic – เมื่อมีข้อบ่งชี้\n**P**rednisolone – systemic steroid 5 วัน\n\nเพิ่มเติม:\n- NIV (Non-invasive ventilation) เมื่อมี **respiratory acidosis** (pH <7.35, pCO2 สูง)\n- ติดตาม ABG, ยา comorbid\n- ระวัง DVT prophylaxis ในผู้ที่นอนโรงพยาบาล"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "หลีกเลี่ยง sedative และ opioid ใน COPD exacerbation",
+          "body_md": "**ห้ามใช้ benzodiazepine และ opioid** ใน COPD exacerbation (ยกเว้นมีข้อบ่งชี้ชัดเจน) เพราะ:\n- กดการหายใจ (respiratory depression)\n- ทำให้ CO2 คั่งแย่ลง\n- เพิ่มความต้องการ mechanical ventilation\n\nถ้าผู้ป่วยกระสับกระส่ายมาก → ปรับ ventilation ก่อน ไม่ใช่ให้ sedative"
+        }
+      ]
+    },
+    {
+      "title_th": "Pneumonia: ชุมชนและในโรงพยาบาล",
+      "subtitle_th": "CAP vs HAP, CURB-65, empiric antibiotics, atypical coverage",
+      "icon": "🦠",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": ["pneumonia", "CAP", "HAP", "CURB-65", "amoxicillin", "azithromycin", "levofloxacin", "ceftriaxone", "atypical", "Mycoplasma"],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "CAP vs HAP vs VAP",
+          "body_md": "**CAP (Community-Acquired Pneumonia):** ติดเชื้อในชุมชน ก่อนนอนโรงพยาบาล >48 ชม.\n- เชื้อที่พบบ่อย: *Streptococcus pneumoniae*, *Haemophilus influenzae*, Atypical (*Mycoplasma*, *Chlamydophila*, *Legionella*)\n\n**HAP (Hospital-Acquired Pneumonia):** ติดเชื้อหลังนอนโรงพยาบาล ≥48 ชม.\n- เชื้อดื้อยามากกว่า: *Pseudomonas aeruginosa*, MRSA, *Klebsiella*\n\n**VAP (Ventilator-Associated Pneumonia):** HAP ที่เกิดในผู้ป่วยใส่ท่อ endotracheal"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "CURB-65: ประเมินความรุนแรง CAP",
+          "body_md": "**CURB-65** แต่ละเกณฑ์ = 1 คะแนน:\n- **C**onfusion (สับสน)\n- **U**rea > 7 mmol/L (BUN > 20 mg/dL)\n- **R**espiratory rate ≥ 30 ครั้ง/นาที\n- **B**lood pressure: SBP <90 หรือ DBP ≤60 mmHg\n- **6**5 ปี หรือมากกว่า\n\n**การตัดสินใจ:**\n- 0–1: รักษาผู้ป่วยนอก (low risk)\n- 2: พิจารณานอนโรงพยาบาลระยะสั้น\n- 3–5: นอน ICU (mortality สูง ~22%+)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Empiric Antibiotic ใน CAP",
+          "body_md": "**CAP ไม่รุนแรง (ผู้ป่วยนอก, CURB-65 0–1):**\n- ไม่มี comorbidity: **amoxicillin** 500 mg TID 5–7 วัน\n- หรือ **doxycycline** / **azithromycin** (atypical coverage)\n- มี comorbidity (COPD, เบาหวาน, ภูมิคุ้มกันต่ำ): **amoxicillin-clavulanate** + azithromycin หรือ **respiratory fluoroquinolone** (levofloxacin, moxifloxacin)\n\n**CAP รุนแรง (นอนโรงพยาบาล):**\n- **ceftriaxone** (anti-pneumococcal) + **azithromycin** (atypical)\n- หรือ **respiratory fluoroquinolone** เดี่ยว\n\n**CAP ที่ต้อง ICU:** beta-lactam + azithromycin หรือ fluoroquinolone"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Atypical Pneumonia: เชื้อและยารักษา",
+          "body_md": "**เชื้อ atypical** ไม่ตอบสนองต่อ beta-lactam เพราะไม่มีผนังเซลล์แบบปกติ:\n- *Mycoplasma pneumoniae* – พบบ่อยในคนหนุ่มสาว\n- *Chlamydophila pneumoniae* – community spread\n- *Legionella pneumophila* – น้ำปนเปื้อน, รุนแรง, ต้อง urine antigen test\n\n**ยารักษา atypical:**\n- **Macrolide:** azithromycin 500 mg วันที่ 1 แล้ว 250 mg×4 วัน\n- **Tetracycline:** doxycycline 100 mg BID × 7–14 วัน\n- **Fluoroquinolone:** levofloxacin, moxifloxacin (ครอบคลุม atypical + pneumococcus)\n\n*Legionella* ที่รุนแรง → **levofloxacin** หรือ azithromycin"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "HAP และ VAP: เชื้อดื้อยาต้องคิดถึง",
+          "body_md": "**HAP empiric therapy** ต้องครอบคลุมเชื้อดื้อยา:\n- **Pseudomonas:** piperacillin-tazobactam, cefepime, imipenem, meropenem\n- **MRSA:** vancomycin, linezolid\n\n**ปัจจัยเสี่ยงเชื้อดื้อ:**\n- เคยใช้ antibiotics ใน 90 วัน\n- นอนโรงพยาบาลนาน\n- Immunocompromised\n- มีประวัติ MDR organisms\n\nส่ง sputum culture + blood culture **ก่อนเริ่มยา** แล้วปรับตาม sensitivity"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำเชื้อ CAP: \"SHAKE\"",
+          "body_md": "**S**treptococcus pneumoniae – เชื้อที่พบบ่อยที่สุด ครอบคลุมด้วย beta-lactam\n**H**aemophilus influenzae – พบในผู้ป่วย COPD\n**A**typical (Mycoplasma, Chlamydophila, Legionella) – ต้องการ macrolide/fluoroquinolone\n**K**lebsiella pneumoniae – ผู้ป่วยเบาหวาน, alcoholism\n**E**lderly – Gram-negative มากขึ้น, aspiration เสี่ยง\n\nCoverage tip: **beta-lactam + macrolide** = ครอบคลุมทั้ง typical + atypical"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ระวัง Fluoroquinolone ในบางกลุ่ม",
+          "body_md": "**Respiratory fluoroquinolone** (levofloxacin, moxifloxacin) มีประสิทธิภาพสูงใน CAP แต่:\n- **ห้ามใช้** เป็น monotherapy ในผู้ที่เสี่ยง TB (อาจปิดบัง TB และเกิด resistance)\n- เพิ่มความเสี่ยง QT prolongation – ระวังใน hypokalemia, ร่วมกับยา QT-prolonging อื่น\n- ADR: เอ็นอักเสบ (tendinopathy), ฉีกขาดของเอ็น Achilles\n- ห้ามในเด็กและหญิงตั้งครรภ์ (ผลต่อกระดูกอ่อน)\n\nบันทึก allergy และประวัติการใช้ยา TB ทุกครั้งก่อนสั่ง fluoroquinolone"
+        }
+      ]
+    },
+    {
+      "title_th": "Severe Asthma และ Status Asthmaticus",
+      "subtitle_th": "IV magnesium sulfate, aminophylline, กลไกและพิษ",
+      "icon": "⚠️",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": ["status asthmaticus", "magnesium sulfate", "aminophylline", "methylprednisolone", "heliox", "severe asthma", "หอบหืดรุนแรง", "SABA nebulize"],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "นิยาม Severe Asthma และ Status Asthmaticus",
+          "body_md": "**Severe Acute Asthma:** หอบหืดที่ไม่ตอบสนองต่อ initial bronchodilator ใน ER\n- PEF <40% of best, SpO2 <92%, พูดเป็นคำ ๆ ไม่ได้\n\n**Status Asthmaticus:** หอบหืดรุนแรงที่ **ไม่ตอบสนองต่อการรักษามาตรฐาน** (SABA + corticosteroid) เป็นภาวะฉุกเฉินที่คุกคามชีวิต\n\n**สัญญาณเตือน near-fatal:**\n- หายใจเข้าไม่ได้เสียง (silent chest)\n- ไม่มี wheeze เพราะอากาศเข้าน้อยมาก\n- cyanosis, exhaustion, confusion\n- pulsus paradoxus > 25 mmHg"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "การรักษาเบื้องต้น Severe Asthma",
+          "body_md": "**ขั้นตอนการรักษาด่วน:**\n1. **SABA nebulize ต่อเนื่อง** (continuous nebulization) – salbutamol 5–10 mg/ชม.\n2. **Ipratropium** 0.5 mg nebulize ทุก 20 นาที × 3 ครั้ง\n3. **Systemic corticosteroid** ทันที: IV methylprednisolone 1–2 mg/kg (หรือ oral prednisolone)\n4. **Oxygen:** เป้าหมาย SpO2 ≥ 93–95%\n5. ไม่ตอบสนอง → พิจารณา **IV magnesium sulfate** และ/หรือ **heliox**\n\nประเมิน PEF ทุก 20–30 นาที ตรวจ ABG ถ้า severe"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "IV Magnesium Sulfate ใน Status Asthmaticus",
+          "body_md": "**กลไก:** Mg²⁺ เป็น physiologic calcium antagonist ยับยั้ง smooth muscle contraction → bronchodilation\n\n**ขนาดใน status asthmaticus:**\n- **IV magnesium sulfate 2 g** (20 mL of 10% solution) ใน 15–30 นาที\n- ให้เมื่อไม่ตอบสนองต่อ SABA + corticosteroid ใน 1 ชม.\n\n**ประสิทธิภาพ:** ลดการรับ ICU, ปรับปรุง FEV1 และ PEF\n\n**ติดตาม:** BP, deep tendon reflex (DTR), respiratory rate\n- **Mg toxicity:** DTR หาย → ถ้าไม่มี DTR ห้ามให้ต่อ, respiratory depression, cardiac arrest"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Aminophylline: กลไกและการใช้ใน Severe Asthma",
+          "body_md": "**Aminophylline = theophylline + ethylenediamine** (salt ที่ละลายน้ำได้)\n\n**กลไก bronchodilation:**\n- ยับยั้ง phosphodiesterase (PDE) → เพิ่ม cAMP → smooth muscle relax\n- บล็อก adenosine receptor (เพิ่ม catecholamine release)\n- ฤทธิ์กระตุ้นระบบประสาทส่วนกลาง → เพิ่ม respiratory drive\n\n**การใช้ใน severe asthma:**\n- Loading dose: **5 mg/kg** IV ใน 20–30 นาที (ถ้าไม่เคยใช้ theophylline)\n- Maintenance: 0.5–0.9 mg/kg/ชม. continuous infusion\n- ติดตาม **serum theophylline level** (therapeutic 10–20 mcg/mL)\n\nบทบาทลดลงเพราะพิษสูง แต่ยังใช้ใน resource-limited settings"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "พิษ Aminophylline/Theophylline",
+          "body_md": "**Theophylline มี narrow therapeutic index (TI)** – พิษเกิดได้ง่าย:\n\n**อาการพิษตามระดับยา:**\n- >20 mcg/mL: คลื่นไส้, อาเจียน, ปวดหัว, ใจสั่น\n- >30 mcg/mL: **tachyarrhythmia** (SVT, VT), hypotension\n- >40 mcg/mL: **seizure** ที่รักษายาก, อาจเสียชีวิต\n\n**ปัจจัยที่เพิ่มระดับยา (ลด clearance):**\n- โรคตับ, หัวใจล้มเหลว\n- Drug interactions: ciprofloxacin, erythromycin, cimetidine (CYP1A2/3A4 inhibitor)\n- ผู้สูงอายุ\n\n**ปัจจัยที่ลดระดับยา (เพิ่ม clearance):**\n- สูบบุหรี่ (CYP1A2 inducer), phenytoin, rifampicin"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "Heliox และ NIV ใน Severe Asthma",
+          "body_md": "**Heliox** (helium:oxygen 70:30 หรือ 80:20):\n- ลด airway resistance เพราะ helium เบากว่าอากาศ\n- ให้ยา nebulize ผ่าน heliox เพิ่มการกระจายยาเข้าหลอดลมที่อุดตัน\n- ใช้เป็น bridge ในขณะรอยารักษาออกฤทธิ์\n\n**NIV (Non-invasive Ventilation):**\n- BiPAP อาจพิจารณาใน severe case เพื่อลด work of breathing\n- ลดความต้องการ intubation\n\n**Intubation** เป็น last resort เพราะ:\n- ยาก, เสี่ยง barotrauma\n- ผู้ป่วยหอบหืด intubated มีการพยากรณ์โรคแย่"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำการรักษา Status Asthmaticus: \"SMART-H\"",
+          "body_md": "**S**ABA – salbutamol nebulize ต่อเนื่อง\n**M**agnesium sulfate IV – เมื่อไม่ตอบสนอง\n**A**ntimuscarinic – ipratropium เสริม\n**R**espiratory support – O2, NIV, intubate ถ้าจำเป็น\n**T**heophylline/aminophylline – add-on ระวัง TDM\n**H**ydrocortisone/methylprednisolone – IV steroid ทันที\n\nหัวใจสำคัญ: ไม่ประเมินต่ำ – **silent chest = อาการแย่สุด** ไม่ใช่ดีขึ้น"
+        }
+      ]
+    },
+    {
+      "title_th": "Theophylline: PK/PD และ TDM",
+      "subtitle_th": "Narrow TI, CYP interactions, พิษ, การคำนวณขนาด",
+      "icon": "⚗️",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": ["theophylline", "TDM", "CYP1A2", "narrow therapeutic index", "aminophylline", "loading dose", "theophylline toxicity", "drug interaction", "เมทิลแซนทีน"],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "Pharmacokinetics ของ Theophylline",
+          "body_md": "**Theophylline (methylxanthine)** มีคุณสมบัติ PK ที่สำคัญ:\n\n- **Bioavailability oral:** ~100% (absorbed ดีมาก)\n- **Vd:** 0.5 L/kg\n- **Protein binding:** ~40%\n- **Metabolism:** ตับ โดย **CYP1A2** (หลัก) และ **CYP3A4** (รอง)\n- **Half-life:** ผู้ใหญ่ที่ไม่สูบบุหรี่ ~8–9 ชม., ผู้สูบบุหรี่ ~4–5 ชม., ทารก ~20–30 ชม.\n- **Elimination:** zero-order kinetics ที่ระดับสูง (saturatable)\n\nสำคัญ: ทารกและเด็กเล็กเมทาบอลิซึมช้ากว่ามาก"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "ช่วงการรักษาและการติดตาม TDM",
+          "body_md": "**Therapeutic range:** 10–20 mcg/mL (สำหรับ asthma/COPD)\n- ในการรักษา apnea of prematurity: 6–13 mcg/mL\n\n**เก็บเลือดตรวจ:**\n- **Trough level:** ก่อนให้ยา dose ถัดไป\n- **Peak level:** 1–2 ชม. หลังให้ยาออกฤทธิ์ช้า (SR formulation)\n- หลัง loading dose IV: เก็บหลังให้ยาเสร็จ 30 นาที\n\n**ข้อบ่งชี้ TDM:**\n- เมื่อเริ่มยา, เปลี่ยนขนาด, มี interaction\n- มีอาการพิษ (คลื่นไส้, ใจสั่น)\n- เปลี่ยนยา/โรคประจำตัว (ตับ, หัวใจ)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Drug Interactions ที่สำคัญของ Theophylline",
+          "body_md": "**ยาที่ลด theophylline clearance (ระดับยาสูงขึ้น → เสี่ยงพิษ):**\n- **Ciprofloxacin** (CYP1A2 inhibitor) – ระดับ theophylline ขึ้น 30–50%\n- **Erythromycin, clarithromycin** – CYP3A4 inhibitor\n- **Cimetidine** – H2 blocker, inhibit CYP\n- **Fluvoxamine** – ระดับขึ้นอย่างมีนัยสำคัญ\n- โรคตับ, หัวใจล้มเหลว, ไข้สูง\n\n**ยาที่เพิ่ม theophylline clearance (ระดับยาต่ำลง → ประสิทธิภาพลด):**\n- **Rifampicin** (CYP inducer)\n- **Phenytoin, carbamazepine** (CYP inducer)\n- **การสูบบุหรี่** (CYP1A2 inducer) – ต้องเพิ่มขนาดยาในผู้สูบบุหรี่"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "การคำนวณ Loading Dose และ Maintenance",
+          "body_md": "**Loading dose (IV aminophylline):**\n\nLDose = Vd × (C_desired - C_current)\n\nVd = 0.5 L/kg, C_desired = 10 mcg/mL\n\n**ตัวอย่าง:** ผู้ป่วย 60 kg ไม่เคยใช้ theophylline\n= 0.5 L/kg × 60 kg × 10 mcg/mL = 300 mg theophylline\n\n**Aminophylline = theophylline × 1.25** (เพราะ aminophylline เป็น theophylline เพียง 80%)\n= 300/0.8 = **375 mg aminophylline** ให้ใน 20–30 นาที\n\n**Maintenance rate:**\n- ผู้ใหญ่ไม่สูบบุหรี่: 0.5 mg/kg/ชม.\n- ผู้สูบบุหรี่: 0.8–0.9 mg/kg/ชม.\n- โรคตับ/หัวใจล้มเหลว: 0.2–0.3 mg/kg/ชม."
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ Drug Interactions: \"CREAM\" เพิ่มระดับ theophylline",
+          "body_md": "ยาที่ **เพิ่ม** ระดับ theophylline (inhibitor) → เสี่ยงพิษ:\n\n**C**iprofloxacin\n**R**oxithromycin / erythromycin\n**E**rythromycin (macrolide ทั่วไป)\n**A**llopurinol (ขนาดสูง)\n**M**ethotrexate / cimetidine\n\nยาที่ **ลด** ระดับ (inducer): \"RPF\" – **R**ifampicin, **P**henytoin, **F**lumes (cigarette smoke)\n\nจำง่าย: สูบบุหรี่ = ต้องใช้ยามากขึ้น, หยุดสูบ = ต้องลดขนาดยา"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "อาการพิษ Theophylline และการรักษา",
+          "body_md": "**อาการพิษตามลำดับความรุนแรง:**\n\n**ระดับ >20 mcg/mL (mild-moderate toxicity):**\n- คลื่นไส้ อาเจียน (GI symptoms เป็นสัญญาณแรก)\n- ปวดหัว กระสับกระส่าย ใจสั่น\n\n**ระดับ >30–40 mcg/mL (severe toxicity):**\n- **Ventricular arrhythmia** (VT, VF)\n- **Seizure** ที่รักษายาก (refractory)\n- Hypokalemia, hyperglycemia\n- อาจถึงแก่ชีวิต\n\n**การรักษา:**\n- หยุดยาทันที\n- Activated charcoal (ถ้า <4 ชม.) – multiple dose charcoal ลดระดับยา\n- ชัก: benzodiazepine, phenobarbital\n- Arrhythmia: ตามแนวทาง ACLS\n- **Hemodialysis** ถ้าระดับ >80–100 mcg/mL หรืออาการรุนแรง"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "Theophylline vs Caffeine: รู้ความสัมพันธ์",
+          "body_md": "Theophylline และ caffeine เป็น **methylxanthine** ด้วยกัน:\n- ทั้งสองยับยั้ง PDE และบล็อก adenosine receptor\n- Caffeine (จากกาแฟ ชา เครื่องดื่มชูกำลัง) อาจเพิ่ม ADR ของ theophylline ได้\n- **แนะนำให้ผู้ป่วยจำกัดกาแฟ** ขณะใช้ theophylline\n\n**Caffeine citrate** ใช้รักษา **apnea of prematurity** ในทารกแรกเกิด (therapeutic range 8–20 mcg/mL)\n\nทั้งสองยาผ่าน placenta และน้ำนมได้ → ระวังในหญิงตั้งครรภ์/ให้นมบุตร"
+        }
+      ]
+    },
+    {
+      "title_th": "ยาแก้ไอและยาลดคัดจมูก",
+      "subtitle_th": "Dextromethorphan vs codeine, guaifenesin, pseudoephedrine, antihistamine",
+      "icon": "💊",
+      "est_minutes": 7,
+      "xp_reward": 14,
+      "quiz_keywords": ["dextromethorphan", "codeine", "guaifenesin", "pseudoephedrine", "antihistamine", "chlorpheniramine", "loratadine", "ยาแก้ไอ", "ยาลดคัดจมูก"],
+      "cards": [
+        {
+          "card_type": "concept",
+          "title_th": "ยาระงับไอ: Antitussives",
+          "body_md": "**Dextromethorphan (DXM):**\n- กลไก: ยับยั้ง cough center ใน medulla ผ่าน NMDA receptor antagonism\n- **ไม่ใช่ opioid** แต่โครงสร้างคล้าย → ไม่ทำให้เสพติด ไม่กดหายใจในขนาดปกติ\n- ขนาด: 10–20 mg ทุก 4–8 ชม.\n- ADR ขนาดสูง (misuse): dissociation, hallucination (\"DXM trip\")\n- **ห้าม** ร่วมกับ MAOi (serotonin syndrome)\n\n**Codeine:**\n- Opioid agonist ที่มีฤทธิ์ระงับไอ\n- เมทาบอลิซึมโดย CYP2D6 → morphine\n- ทำให้เสพติด, กดหายใจ, ท้องผูก\n- **ห้ามในเด็ก <12 ปี** และหลังผ่าตัดทอนซิล/อะดีนอยด์ (FDA)\n- ต้องใบสั่งแพทย์ (controlled substance)"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Guaifenesin: Expectorant",
+          "body_md": "**Guaifenesin** คือ expectorant ที่ใช้บ่อยที่สุด:\n- กลไก: ลดความหนืดของเสมหะ เพิ่ม ciliary action → ไอเอาเสมหะออกง่ายขึ้น\n- **ขนาด:** 200–400 mg ทุก 4 ชม. (IR) หรือ 600–1200 mg ทุก 12 ชม. (ER)\n- ต้องดื่มน้ำมาก ๆ ร่วมด้วยเพื่อให้เสมหะบางลง\n- ADR น้อย: คลื่นไส้, ปวดหัว\n\n**ข้อควรทราบ:** guaifenesin ร่วมกับ antitussive เช่น DXM ขัดแย้งกัน – expectorant ต้องการให้ไอ แต่ antitussive กด → ไม่ควรใช้ร่วมกัน"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "Pseudoephedrine: กลไก ข้อห้าม และข้อควรระวัง",
+          "body_md": "**Pseudoephedrine** – sympathomimetic กระตุ้น alpha-adrenergic → หลอดเลือดจมูกหดตัว\n- ขนาด: 30–60 mg ทุก 4–6 ชม.\n- Phenylephrine (oral): ประสิทธิภาพต่ำกว่ามาก\n- Xylometazoline (nasal spray): ระวัง **rhinitis medicamentosa** (rebound congestion) ถ้าใช้ >3–5 วัน\n\n**ห้ามใช้ pseudoephedrine ใน:**\n- **HTN, arrhythmia, โรคหัวใจ** – เพิ่ม HR, BP\n- **BPH** – เสี่ยง urinary retention\n- **ต้อหิน narrow-angle** – เพิ่ม IOP\n- **MAOi** – hypertensive crisis\n- **Hyperthyroidism** และ **หญิงตั้งครรภ์ไตรมาสแรก**\n\nในไทย pseudoephedrine เป็นสารตั้งต้น meth → ต้องบันทึกในสมุดทะเบียนควบคุม"
+        },
+        {
+          "card_type": "concept",
+          "title_th": "Antihistamine 1G vs 2G: ความแตกต่างที่สำคัญ",
+          "body_md": "**1st Generation (Sedating) Antihistamine:**\n- ตัวอย่าง: **chlorpheniramine (CPM)**, diphenhydramine, promethazine\n- ผ่าน blood-brain barrier → **ง่วงซึม** (sedation)\n- ฤทธิ์ anticholinergic: ปากแห้ง ตาพร่า ท้องผูก ปัสสาวะลำบาก\n- ใช้ใน อาการแพ้เฉียบพลัน, motion sickness, อาการไอจาก upper airway\n\n**2nd Generation (Non-sedating) Antihistamine:**\n- ตัวอย่าง: **loratadine, cetirizine, fexofenadine, desloratadine**\n- ผ่าน BBB น้อยกว่า → ง่วงน้อยหรือไม่มี\n- เลือกใช้ในอาการแพ้เรื้อรัง, urticaria, allergic rhinitis\n- **Cetirizine** อาจง่วงในบางคน (intermediate)"
+        },
+        {
+          "card_type": "tip",
+          "title_th": "เลือก Antitussive ให้ถูกตามชนิดไอ",
+          "body_md": "**ไอแห้ง (Dry/Nonproductive cough):**\n→ ใช้ **antitussive** (ระงับไอ) เช่น dextromethorphan, codeine\n→ เป้าหมาย: ลดการไอที่รบกวนชีวิต\n\n**ไอมีเสมหะ (Productive cough):**\n→ ใช้ **expectorant** (guaifenesin) + ดื่มน้ำมาก\n→ **ไม่ควรระงับไอ** เพราะไอช่วยขับเสมหะออก\n\n**ไอจาก ACE inhibitor:**\n→ เปลี่ยนเป็น ARB (ไม่ใช่ให้ยาแก้ไอ)\n\n**ไอเรื้อรัง >3 สัปดาห์:**\n→ หาสาเหตุ (asthma, GERD, post-nasal drip, ACEi) ก่อนรักษาอาการ"
+        },
+        {
+          "card_type": "mnemonic",
+          "title_th": "จำ ADR antihistamine 1G: \"Can't See, Spit, Pee, or Poo\"",
+          "body_md": "Anticholinergic effects ของ antihistamine รุ่นแรก:\n\n**\"Can't See\"** – ตาพร่า (mydriasis, cycloplegia)\n**\"Can't Spit\"** – ปากแห้ง คอแห้ง (dry mouth)\n**\"Can't Pee\"** – ปัสสาวะลำบาก ปัสสาวะไม่ออก (urinary retention)\n**\"Can't Poo\"** – ท้องผูก (constipation)\n**+ ง่วงซึม (sedation)**\n\n**ข้อห้ามหลัก 1G antihistamine:**\n- ต้อหิน narrow-angle\n- BPH / urinary retention\n- ผู้สูงอายุ (เสี่ยง falls, confusion)\n- ห้ามขับรถหรือทำงานกับเครื่องจักร"
+        },
+        {
+          "card_type": "warning",
+          "title_th": "ยาแก้ไอในเด็กและหญิงตั้งครรภ์",
+          "body_md": "**เด็กอายุ < 2 ปี:**\n- **ห้ามใช้** OTC cough/cold preparations (FDA 2008)\n- ห้ามใช้ antihistamine 1G (เสี่ยงกดหายใจ)\n- ห้ามใช้ codeine < 12 ปี\n\n**เด็ก 2–12 ปี:**\n- ระวัง – ปรึกษาแพทย์/เภสัชกรก่อนใช้ยาแก้ไอ\n\n**หญิงตั้งครรภ์:**\n- Dextromethorphan: FDA Category C – ใช้ได้ถ้าจำเป็น ไตรมาส 2–3\n- **ห้าม codeine** ใกล้คลอด (neonatal opioid withdrawal)\n- Guaifenesin: ระวังไตรมาสแรก\n- Pseudoephedrine: ห้ามไตรมาสแรก\n\nเลือก loratadine หรือ cetirizine สำหรับ allergic rhinitis ในหญิงตั้งครรภ์ (ปลอดภัยกว่า)"
+        }
       ]
     }
   ]
