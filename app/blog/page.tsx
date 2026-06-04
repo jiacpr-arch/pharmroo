@@ -10,9 +10,9 @@ export default async function BlogPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="max-w-4xl mx-auto px-4 py-12">
-        <h1 className="text-3xl font-bold mb-2">บทความ PharmRoo</h1>
+        <h1 className="text-3xl font-bold mb-2">บทความสุขภาพ PharmRu</h1>
         <p className="text-gray-500 mb-8">
-          ความรู้เภสัชกรรม เทคนิคการสอบ และข่าวสารวงการ
+          ความรู้สุขภาพและการใช้ยา เข้าใจง่าย สำหรับทุกคน — อัปเดตใหม่ทุกวัน
         </p>
 
         <section className="mb-10">
@@ -35,15 +35,16 @@ export default async function BlogPage() {
                 className="bg-white rounded-xl shadow-sm hover:shadow-md transition p-6 block"
               >
                 {post.cover_image && (
+                  // eslint-disable-next-line @next/next/no-img-element
                   <img
                     src={post.cover_image}
                     alt={post.title}
-                    className="w-full h-40 object-cover rounded-lg mb-4"
+                    className="w-full aspect-[1200/630] object-cover rounded-lg mb-4"
                   />
                 )}
                 <div className="flex items-center gap-2 text-sm text-gray-400 mb-2">
                   {post.category && (
-                    <span className="bg-blue-50 text-blue-600 px-2 py-0.5 rounded-full text-xs">
+                    <span className="bg-brand/10 text-brand font-medium px-2 py-0.5 rounded-full text-xs">
                       {post.category}
                     </span>
                   )}

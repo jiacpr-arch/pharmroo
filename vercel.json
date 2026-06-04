@@ -18,7 +18,7 @@
     },
     {
       "path": "/api/blog/generate",
-      "schedule": "0 19 * * 1,4"
+      "schedule": "0 1 * * *"
     }
   ],
   "functions": {
