@@ -6,6 +6,7 @@ import { eq } from "drizzle-orm";
 import { randomUUID } from "crypto";
 import { getExistingTitles, getAllSlugs } from "@/lib/blog";
 import { postToFacebook } from "@/lib/facebook";
+import { lineNotifyAdmin } from "@/lib/notifications";
 
 export const runtime = "nodejs";
 export const maxDuration = 120;
@@ -147,7 +148,13 @@ export async function GET(request: NextRequest) {
   // Pick distinct random categories for this run.
   const shuffled = [...PUBLIC_CATEGORIES].sort(() => Math.random() - 0.5);
 
-  const created: { postId: string; title: string; slug: string }[] = [];
+  const created: {
+    title: string;
+    slug: string;
+    url: string;
+    fbOk: boolean;
+    fbError?: string;
+  }[] = [];
   const errors: string[] = [];
 
   for (let i = 0; i < ARTICLES_PER_RUN; i++) {
@@ -181,8 +188,6 @@ export async function GET(request: NextRequest) {
         cover_image: cover,
       });
 
-      created.push({ postId, title: data.title, slug });
-
       // Post to Facebook as a photo (branded cover) with caption + link.
       const url = `${SITE_URL()}/blog/${slug}`;
       const tag = category.name.replace(/\s+/g, "");
@@ -192,7 +197,7 @@ export async function GET(request: NextRequest) {
         `อ่านต่อ 👉 ${url}\n\n` +
         `#PharmRu #ฟาร์มรู้ #สุขภาพ #ความรู้เรื่องยา #${tag}`;
 
-      await postToFacebook({
+      const fb = await postToFacebook({
         message,
         imageUrl: cover,
         getUserToken: async () => {
@@ -216,11 +221,48 @@ export async function GET(request: NextRequest) {
               set: { value: token, updated_at: new Date().toISOString() },
             });
         },
-      }).catch((err) => console.error("[blog] Facebook post failed:", err));
+      }).catch((err) => {
+        console.error("[blog] Facebook post failed:", err);
+        return { ok: false, error: String(err) } as const;
+      });
+
+      if (!fb.ok) console.error("[blog] Facebook post error:", fb.error);
+      created.push({
+        title: data.title,
+        slug,
+        url,
+        fbOk: fb.ok,
+        fbError: fb.error,
+      });
     } catch (err) {
       console.error(`[blog-generate] article ${i} error:`, err);
       errors.push(String(err));
     }
+  }
+
+  // Notify admin via LINE so you know the auto-post ran (and FB status).
+  try {
+    if (created.length > 0) {
+      const body = created
+        .map(
+          (c, i) =>
+            `${i + 1}. ${c.title}\n   🔗 ${c.url}\n   FB: ${
+              c.fbOk ? "✅ โพสต์แล้ว" : "❌ " + (c.fbError || "ล้มเหลว")
+            }`
+        )
+        .join("\n\n");
+      let msg = `🤖 PharmRu Auto-Blog\nสร้างบทความสุขภาพใหม่ ${created.length} บทความ\n\n${body}`;
+      if (errors.length) msg += `\n\n⚠️ มีข้อผิดพลาดระหว่างสร้าง ${errors.length} รายการ`;
+      await lineNotifyAdmin(msg);
+    } else {
+      await lineNotifyAdmin(
+        `🤖 PharmRu Auto-Blog\n❌ วันนี้สร้างบทความไม่สำเร็จ\n${
+          errors.slice(0, 3).join("; ") || "ไม่ทราบสาเหตุ"
+        }`
+      );
+    }
+  } catch (err) {
+    console.error("[blog-generate] LINE notify failed:", err);
   }
 
   return NextResponse.json({
