@@ -1,6 +1,6 @@
 export const dynamic = "force-dynamic";
 import { Suspense } from "react";
-import { getMcqSubjects, getMcqQuestions } from "@/lib/db/queries-mcq";
+import { getMcqSubjects, getMcqQuestions, getMcqDayBreakdown } from "@/lib/db/queries-mcq";
 import McqPractice from "@/components/McqPractice";
 import { Badge } from "@/components/ui/badge";
 import GoodyEmbed from "@/components/GoodyEmbed";
@@ -20,7 +20,7 @@ async function PracticeContent({
   subjectId?: string;
   day?: 1 | 2;
 }) {
-  const [subjects, questions] = await Promise.all([
+  const [subjects, questions, breakdown] = await Promise.all([
     getMcqSubjects({ examCategory: "pharmacy" }),
     getMcqQuestions({
       subjectId,
@@ -29,6 +29,7 @@ async function PracticeContent({
       limit: 200,
       randomize: true,
     }),
+    getMcqDayBreakdown({ subjectId, examType: "PLE-CC1" }),
   ]);
 
   const currentSubject = subjectId
@@ -54,7 +55,7 @@ async function PracticeContent({
                 !day ? "bg-brand text-white" : "hover:bg-brand/10"
               }`}
             >
-              ทุกวัน
+              ทุกวัน ({breakdown.total})
             </Badge>
           </Link>
           <Link href={subjectId ? `/ple/practice?day=1&subject=${subjectId}` : "/ple/practice?day=1"}>
@@ -62,9 +63,9 @@ async function PracticeContent({
               variant={day === 1 ? "default" : "secondary"}
               className={`cursor-pointer ${
                 day === 1 ? "bg-teal-600 text-white" : "hover:bg-teal-50"
-              }`}
+              } ${breakdown.day1 === 0 && day !== 1 ? "opacity-40" : ""}`}
             >
-              Day 1
+              Day 1 ({breakdown.day1})
             </Badge>
           </Link>
           <Link href={subjectId ? `/ple/practice?day=2&subject=${subjectId}` : "/ple/practice?day=2"}>
@@ -72,9 +73,9 @@ async function PracticeContent({
               variant={day === 2 ? "default" : "secondary"}
               className={`cursor-pointer ${
                 day === 2 ? "bg-blue-600 text-white" : "hover:bg-blue-50"
-              }`}
+              } ${breakdown.day2 === 0 && day !== 2 ? "opacity-40" : ""}`}
             >
-              Day 2
+              Day 2 ({breakdown.day2})
             </Badge>
           </Link>
         </div>
@@ -133,6 +134,46 @@ async function PracticeContent({
       {/* Practice Component */}
       {questions.length > 0 ? (
         <McqPractice questions={questions} />
+      ) : breakdown.total > 0 ? (
+        // Questions exist for this selection, just not on the chosen day —
+        // guide the user to the day that has them instead of dead-ending.
+        <div className="text-center py-16 text-muted-foreground space-y-4">
+          <p className="text-lg">
+            {currentSubject
+              ? `หมวดนี้ยังไม่มีข้อสอบใน Day ${day}`
+              : `ยังไม่มีข้อสอบใน Day ${day}`}
+          </p>
+          <div className="flex flex-col items-center gap-2">
+            {day === 1 && breakdown.day2 > 0 && (
+              <Link
+                href={subjectId ? `/ple/practice?day=2&subject=${subjectId}` : "/ple/practice?day=2"}
+                className="text-brand hover:underline font-medium"
+              >
+                ดูข้อสอบ Day 2 ({breakdown.day2} ข้อ)
+              </Link>
+            )}
+            {day === 2 && breakdown.day1 > 0 && (
+              <Link
+                href={subjectId ? `/ple/practice?day=1&subject=${subjectId}` : "/ple/practice?day=1"}
+                className="text-brand hover:underline font-medium"
+              >
+                ดูข้อสอบ Day 1 ({breakdown.day1} ข้อ)
+              </Link>
+            )}
+            <Link
+              href={subjectId ? `/ple/practice?subject=${subjectId}` : "/ple/practice"}
+              className="text-brand hover:underline"
+            >
+              ดูแบบทุกวัน ({breakdown.total} ข้อ)
+            </Link>
+            <Link
+              href="/ple/practice"
+              className="text-sm text-muted-foreground hover:underline"
+            >
+              ดูหมวดอื่น
+            </Link>
+          </div>
+        </div>
       ) : (
         <div className="text-center py-16 text-muted-foreground">
           <p className="text-lg">ยังไม่มีข้อสอบในหมวดนี้</p>
