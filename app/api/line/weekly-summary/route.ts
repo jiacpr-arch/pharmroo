@@ -21,7 +21,12 @@ export async function GET(request: NextRequest) {
 
   // Get LINE-linked users
   const linkedUsers = await db
-    .select({ id: users.id, name: users.name, line_user_id: users.line_user_id })
+    .select({
+      id: users.id,
+      name: users.name,
+      line_user_id: users.line_user_id,
+      exam_category: users.exam_category,
+    })
     .from(users)
     .where(isNotNull(users.line_user_id));
 
@@ -51,6 +56,11 @@ export async function GET(request: NextRequest) {
       const correct = Number(stats?.correct ?? 0);
       const accuracy = total > 0 ? Math.round((correct / total) * 100) : 0;
 
+      const practiceUrl =
+        user.exam_category === "nursing"
+          ? "https://pharmroo.com/nursing/practice"
+          : "https://pharmroo.com/ple/practice";
+
       await sendLineMessage(
         user.line_user_id,
         [
@@ -60,7 +70,7 @@ export async function GET(request: NextRequest) {
           `ถูกต้อง: ${correct} ข้อ (${accuracy}%)`,
           ``,
           `💪 สู้ต่อไปนะ! ทำข้อสอบเพิ่มได้ที่`,
-          `👉 https://pharmroo.com/ple/practice`,
+          `👉 ${practiceUrl}`,
         ].join("\n")
       );
       sent++;
