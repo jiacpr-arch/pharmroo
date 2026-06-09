@@ -16,8 +16,9 @@ import type { QuestionSet } from "@/lib/types-mcq";
 
 const BANK_INFO = {
   bank: "ธนาคารกสิกรไทย",
-  accountNumber: "134-3-11564-0",
-  accountName: "บริษัท โรจน์รุ่งธุรกิจ จำกัด",
+  branch: "สาขาอ้อมน้อย",
+  accountNumber: "439-2-76394-0",
+  accountName: "บจก. เจี่ยรักษา",
 };
 
 export default function PaymentSetPage({ params }: { params: Promise<{ id: string }> }) {
@@ -47,7 +48,7 @@ export default function PaymentSetPage({ params }: { params: Promise<{ id: strin
   }, [id, router]);
 
   const copyAccountNumber = () => {
-    navigator.clipboard.writeText("1343115640");
+    navigator.clipboard.writeText("4392763940");
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -178,6 +179,7 @@ export default function PaymentSetPage({ params }: { params: Promise<{ id: strin
           <CardContent className="space-y-4">
             <div className="rounded-lg bg-green-50 border border-green-200 p-4 space-y-3">
               <div className="flex items-center justify-between"><span className="text-sm text-muted-foreground">ธนาคาร</span><span className="font-medium text-green-800">{BANK_INFO.bank}</span></div>
+              <div className="flex items-center justify-between"><span className="text-sm text-muted-foreground">สาขา</span><span className="font-medium text-green-800">{BANK_INFO.branch}</span></div>
               <div className="flex items-center justify-between">
                 <span className="text-sm text-muted-foreground">เลขที่บัญชี</span>
                 <div className="flex items-center gap-2">
