@@ -3,11 +3,16 @@ import { Sarabun } from "next/font/google";
 import { Geist_Mono } from "next/font/google";
 import { SessionProvider } from "next-auth/react";
 import { Analytics } from "@vercel/analytics/next";
+import { Suspense } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
 import AdBanner from "@/components/AdBanner";
+import MetaPixel from "@/components/MetaPixel";
+import FloatingLineButton from "@/components/FloatingLineButton";
 import "./globals.css";
+
+const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID;
 
 const sarabun = Sarabun({
   variable: "--font-sarabun",
@@ -88,6 +93,20 @@ export default function RootLayout({
       className={`${sarabun.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <Suspense fallback={null}>
+          <MetaPixel />
+        </Suspense>
+        {META_PIXEL_ID && (
+          <noscript>
+            <img
+              height="1"
+              width="1"
+              style={{ display: "none" }}
+              src={`https://www.facebook.com/tr?id=${META_PIXEL_ID}&ev=PageView&noscript=1`}
+              alt=""
+            />
+          </noscript>
+        )}
         <JsonLd data={organizationLd} />
         <JsonLd data={websiteLd} />
         <SessionProvider>
@@ -95,6 +114,9 @@ export default function RootLayout({
           <AdBanner />
           <main className="flex-1">{children}</main>
           <Footer />
+          <Suspense fallback={null}>
+            <FloatingLineButton />
+          </Suspense>
         </SessionProvider>
         <Analytics />
       </body>

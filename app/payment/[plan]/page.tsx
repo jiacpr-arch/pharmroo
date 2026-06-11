@@ -12,6 +12,7 @@ import {
   Loader2, CheckCircle, AlertCircle, CreditCard,
 } from "lucide-react";
 import InvoiceForm, { defaultInvoiceData, type InvoiceData } from "@/components/invoice-form";
+import { trackInitiateCheckout } from "@/lib/analytics/conversions";
 
 const PLANS: Record<string, { name: string; price: number; period: string }> = {
   monthly: { name: "รายเดือน", price: 249, period: "/ เดือน" },
@@ -64,6 +65,7 @@ export default function PaymentPage({ params }: { params: Promise<{ plan: string
   const handleStripeCheckout = async () => {
     setStripeLoading(true);
     setError("");
+    trackInitiateCheckout({ value: planInfo?.price, currency: "THB" });
     try {
       const res = await fetch("/api/billing/checkout", {
         method: "POST",

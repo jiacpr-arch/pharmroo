@@ -1,8 +1,9 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
+import { trackPurchase } from "@/lib/analytics/conversions";
 
 type VerifyStatus = "verifying" | "ok" | "pending" | "error";
 
@@ -12,6 +13,8 @@ export default function SuccessContent() {
   const [status, setStatus] = useState<VerifyStatus>(() =>
     sessionId ? "verifying" : "ok"
   );
+  // Guard so the Purchase pixel event fires at most once per page mount.
+  const purchaseTracked = useRef(false);
 
   useEffect(() => {
     if (!sessionId) return;
@@ -24,6 +27,13 @@ export default function SuccessContent() {
       .then((res) => res.json())
       .then((data) => {
         if (data.status === "ok" || data.alreadyProcessed) {
+          if (!purchaseTracked.current && typeof data.amount === "number") {
+            purchaseTracked.current = true;
+            trackPurchase({
+              value: data.amount,
+              currency: data.currency || "THB",
+            });
+          }
           setStatus("ok");
         } else if (data.status === "pending") {
           setStatus("pending");
