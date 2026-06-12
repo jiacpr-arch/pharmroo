@@ -4,6 +4,7 @@ import { users } from "@/lib/db/schema";
 import { eq } from "drizzle-orm";
 import bcrypt from "bcryptjs";
 import { randomUUID } from "crypto";
+import { sendWelcomeEmail } from "@/lib/email";
 
 export async function POST(req: NextRequest) {
   const { email, password, name } = await req.json();
@@ -38,6 +39,11 @@ export async function POST(req: NextRequest) {
     role: "user",
     membership_type: "free",
   });
+
+  // Fire-and-forget welcome email — never block / fail registration on it.
+  sendWelcomeEmail({ email, name }).catch((err) =>
+    console.error("[register] welcome email error:", err)
+  );
 
   return NextResponse.json({ success: true });
 }

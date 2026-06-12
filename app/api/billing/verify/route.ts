@@ -55,9 +55,13 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    // amount_total is in the smallest currency unit (satang for THB).
+    const amountTotal = stripeSession.amount_total ?? 0;
     return NextResponse.json({
       status: "ok",
       alreadyProcessed: result.alreadyProcessed,
+      amount: amountTotal / 100,
+      currency: (stripeSession.currency ?? "thb").toUpperCase(),
     });
   } catch (err) {
     console.error("[verify] error:", err);
