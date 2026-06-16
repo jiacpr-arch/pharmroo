@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { ArrowRight, BookOpen, Shuffle, Target } from "lucide-react";
-import { getMcqSubjects, getMcqSubjectCounts } from "@/lib/db/queries-mcq";
+import { getMcqSubjects, getMcqSubjectDayCounts } from "@/lib/db/queries-mcq";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -16,10 +16,10 @@ export const dynamic = "force-dynamic";
 export default async function PLEPage() {
   const [subjects, counts] = await Promise.all([
     getMcqSubjects({ examCategory: "pharmacy" }),
-    getMcqSubjectCounts("pharmacy"),
+    getMcqSubjectDayCounts("pharmacy"),
   ]);
 
-  const totalQuestions = Object.values(counts).reduce((a, b) => a + b, 0);
+  const totalQuestions = Object.values(counts).reduce((a, b) => a + b.total, 0);
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
@@ -84,7 +84,16 @@ export default async function PLEPage() {
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
           {subjects.map((subject) => {
-            const count = counts[subject.id] || 0;
+            const dc = counts[subject.id];
+            const count = dc?.total || 0;
+            const dayLabel =
+              dc && dc.day1 > 0 && dc.day2 > 0
+                ? "Day 1 · Day 2"
+                : dc && dc.day1 > 0
+                  ? "Day 1"
+                  : dc && dc.day2 > 0
+                    ? "Day 2"
+                    : null;
             return (
               <Link
                 key={subject.id}
@@ -99,6 +108,14 @@ export default async function PLEPage() {
                     <p className="text-xs text-muted-foreground">
                       {count} ข้อ
                     </p>
+                    {dayLabel && (
+                      <Badge
+                        variant="secondary"
+                        className="mt-2 text-[10px] font-normal text-muted-foreground"
+                      >
+                        {dayLabel}
+                      </Badge>
+                    )}
                   </CardContent>
                 </Card>
               </Link>

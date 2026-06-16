@@ -229,6 +229,70 @@ export async function getMcqSubjectCounts(
   return counts;
 }
 
+export type DayBreakdown = { total: number; day1: number; day2: number };
+
+/** Active-question counts split by exam day for an optional subject + exam type. */
+export async function getMcqDayBreakdown(options?: {
+  subjectId?: string;
+  examType?: string;
+}): Promise<DayBreakdown> {
+  const conditions = [eq(mcqQuestions.status, "active")];
+  if (options?.subjectId) conditions.push(eq(mcqQuestions.subject_id, options.subjectId));
+  if (options?.examType)
+    conditions.push(eq(mcqQuestions.exam_type, options.examType as "PLE-PC" | "PLE-CC1" | "NLE"));
+
+  const rows = await db
+    .select({ exam_day: mcqQuestions.exam_day })
+    .from(mcqQuestions)
+    .where(and(...conditions));
+
+  let day1 = 0;
+  let day2 = 0;
+  for (const row of rows) {
+    if (row.exam_day === 1) day1++;
+    else if (row.exam_day === 2) day2++;
+  }
+  return { total: rows.length, day1, day2 };
+}
+
+/** Per-subject active-question counts split by exam day (for the landing grid). */
+export async function getMcqSubjectDayCounts(
+  examCategory?: ExamCategory
+): Promise<Record<string, DayBreakdown>> {
+  const baseConditions = [eq(mcqQuestions.status, "active")];
+
+  const rows = examCategory
+    ? await db
+        .select({ subject_id: mcqQuestions.subject_id, exam_day: mcqQuestions.exam_day })
+        .from(mcqQuestions)
+        .innerJoin(mcqSubjects, eq(mcqQuestions.subject_id, mcqSubjects.id))
+        .where(
+          and(
+            ...baseConditions,
+            inArray(
+              mcqSubjects.exam_type,
+              examCategory === "pharmacy"
+                ? [...PHARMACY_SUBJECT_EXAM_TYPES]
+                : [...NURSING_SUBJECT_EXAM_TYPES]
+            )
+          )
+        )
+    : await db
+        .select({ subject_id: mcqQuestions.subject_id, exam_day: mcqQuestions.exam_day })
+        .from(mcqQuestions)
+        .where(eq(mcqQuestions.status, "active"));
+
+  const counts: Record<string, DayBreakdown> = {};
+  for (const row of rows) {
+    if (!row.subject_id) continue;
+    const c = counts[row.subject_id] ?? (counts[row.subject_id] = { total: 0, day1: 0, day2: 0 });
+    c.total++;
+    if (row.exam_day === 1) c.day1++;
+    else if (row.exam_day === 2) c.day2++;
+  }
+  return counts;
+}
+
 // ========================================
 // Student Stats Queries
 // ========================================
