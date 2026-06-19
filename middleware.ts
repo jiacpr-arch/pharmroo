@@ -16,6 +16,7 @@ export default auth((req) => {
     "/api",
     "/privacy",
     "/terms",
+    "/liff",
   ];
   if (skipPaths.some((p) => pathname.startsWith(p))) {
     return undefined;

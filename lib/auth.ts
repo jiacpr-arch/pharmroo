@@ -6,6 +6,7 @@ import { db } from "@/lib/db";
 import { users } from "@/lib/db/schema";
 import { eq } from "drizzle-orm";
 import bcrypt from "bcryptjs";
+import { upsertLineUser, verifyLineIdToken } from "@/lib/auth-line";
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
   session: { strategy: "jwt" },
@@ -53,6 +54,35 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         };
       },
     }),
+    Credentials({
+      id: "line-liff",
+      name: "LINE LIFF",
+      credentials: {
+        idToken: { type: "text" },
+      },
+      async authorize(credentials) {
+        const idToken = credentials?.idToken;
+        if (!idToken || typeof idToken !== "string") return null;
+
+        try {
+          const payload = await verifyLineIdToken(idToken);
+          const user = await upsertLineUser(payload.sub, {
+            name: payload.name ?? null,
+            email: payload.email ?? null,
+            picture: payload.picture ?? null,
+          });
+          return {
+            id: user.id,
+            email: user.email,
+            name: user.name,
+            image: user.image,
+          };
+        } catch (err) {
+          console.error("[line-liff] authorize failed:", err);
+          return null;
+        }
+      },
+    }),
   ],
   callbacks: {
     async signIn({ user, account, profile }) {
@@ -84,53 +114,16 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         const lineUserId = account.providerAccountId;
         if (!lineUserId) return false;
 
-        let existing = await db
-          .select()
-          .from(users)
-          .where(eq(users.line_user_id, lineUserId))
-          .then(rows => rows[0]);
-
-        if (!existing && user.email) {
-          existing = await db
-            .select()
-            .from(users)
-            .where(eq(users.email, user.email))
-            .then(rows => rows[0]);
-
-          if (existing) {
-            await db
-              .update(users)
-              .set({
-                line_user_id: lineUserId,
-                line_linked_at: new Date().toISOString(),
-              })
-              .where(eq(users.id, existing.id));
-          }
-        }
-
-        if (!existing) {
-          const newId = crypto.randomUUID();
-          const userEmail =
-            user.email || `line_${lineUserId}@line.pharmroo.com`;
-          const userName =
+        const upserted = await upsertLineUser(lineUserId, {
+          name:
             user.name ||
             (profile as { name?: string } | undefined)?.name ||
-            "LINE User";
-          await db.insert(users).values({
-            id: newId,
-            email: userEmail,
-            name: userName,
-            membership_type: "free",
-            role: "user",
-            line_user_id: lineUserId,
-            line_linked_at: new Date().toISOString(),
-          });
-          user.id = newId;
-          user.email = userEmail;
-        } else {
-          user.id = existing.id;
-          user.email = existing.email;
-        }
+            null,
+          email: user.email ?? null,
+          picture: (profile as { picture?: string } | undefined)?.picture ?? null,
+        });
+        user.id = upserted.id;
+        user.email = upserted.email;
       }
 
       return true;

@@ -22,6 +22,7 @@ export default function Navbar() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
   const { data: session } = useSession();
+  if (pathname?.startsWith("/liff")) return null;
   const user = session?.user;
   const role = (user as { role?: string } | undefined)?.role;
   const adminLink =

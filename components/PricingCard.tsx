@@ -13,6 +13,7 @@ interface PricingCardProps {
   cta: string;
   popular: boolean;
   type: string;
+  paymentBasePath?: string;
 }
 
 export default function PricingCard({
@@ -24,8 +25,9 @@ export default function PricingCard({
   cta,
   popular,
   type,
+  paymentBasePath = "/payment",
 }: PricingCardProps) {
-  const href = type === "free" ? "/register" : `/payment/${type}`;
+  const href = type === "free" ? "/register" : `${paymentBasePath}/${type}`;
   return (
     <Card
       className={`relative flex flex-col overflow-visible ${

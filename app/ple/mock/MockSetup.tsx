@@ -34,7 +34,7 @@ const SHORT_OPTIONS = [
   { count: 50, label: "50 ข้อ", time: "50 นาที", description: "ซ้อมกลาง" },
 ];
 
-export default function MockSetup() {
+export default function MockSetup({ basePath = "/ple/mock" }: { basePath?: string } = {}) {
   const router = useRouter();
 
   return (
@@ -54,7 +54,7 @@ export default function MockSetup() {
             <Card
               key={opt.day}
               className={`group transition-all cursor-pointer ${opt.color}`}
-              onClick={() => router.push(`/ple/mock?day=${opt.day}&count=120`)}
+              onClick={() => router.push(`${basePath}?day=${opt.day}&count=120`)}
             >
               <CardContent className="p-5">
                 <div className="flex items-start justify-between mb-3">
@@ -95,7 +95,7 @@ export default function MockSetup() {
             <Card
               key={opt.count}
               className="group hover:shadow-md hover:border-brand/30 transition-all cursor-pointer"
-              onClick={() => router.push(`/ple/mock?count=${opt.count}`)}
+              onClick={() => router.push(`${basePath}?count=${opt.count}`)}
             >
               <CardContent className="p-4 text-center">
                 <p className="text-2xl font-bold text-brand mb-1">
