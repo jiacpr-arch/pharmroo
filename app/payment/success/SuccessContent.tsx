@@ -32,6 +32,7 @@ export default function SuccessContent() {
             trackPurchase({
               value: data.amount,
               currency: data.currency || "THB",
+              eventId: sessionId ?? undefined,
             });
           }
           setStatus("ok");

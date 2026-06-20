@@ -2,6 +2,10 @@ import { NextRequest, NextResponse } from "next/server";
 import Stripe from "stripe";
 import { fulfillCheckoutSession } from "@/lib/billing/fulfill-checkout";
 import { sendFulfillmentNotifications } from "@/lib/billing/send-fulfillment-notifications";
+import { reportPurchaseConversion } from "@/lib/analytics/meta-capi";
+
+const SUCCESS_URL = () =>
+  `${process.env.NEXT_PUBLIC_SITE_URL || "https://pharmru.com"}/payment/success`;
 
 export const runtime = "nodejs";
 
@@ -52,6 +56,22 @@ export async function POST(request: NextRequest) {
         const notify = result.notify;
         sendFulfillmentNotifications(notify).catch((err) =>
           console.error("[webhook] notification error:", err)
+        );
+
+        // Server-side Purchase → Meta CAPI. Guarded by `notify` so it fires
+        // exactly once (only on the first fulfillment of this session), and
+        // de-duplicates with the browser pixel via eventId = session id.
+        reportPurchaseConversion({
+          sessionId: notify.stripeSessionId,
+          value: notify.totalAmount,
+          currency: "THB",
+          email: notify.invoiceEmail,
+          userId: notify.userId,
+          fbp: session.metadata?.fbp,
+          fbc: session.metadata?.fbc,
+          eventSourceUrl: SUCCESS_URL(),
+        }).catch((err) =>
+          console.error("[webhook] meta capi error:", err)
         );
       }
     }

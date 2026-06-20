@@ -17,9 +17,19 @@ function fbq(...args: unknown[]): void {
   window.fbq(...args);
 }
 
-/** Fire after a successful account registration. */
-export function trackCompleteRegistration(): void {
-  fbq("track", "CompleteRegistration");
+/**
+ * Fire after a successful account registration.
+ *
+ * Pass the `eventId` returned by the register API so this browser event
+ * de-duplicates with the server-side Conversions API copy (same action,
+ * counted once by Meta).
+ */
+export function trackCompleteRegistration(eventId?: string): void {
+  if (eventId) {
+    fbq("track", "CompleteRegistration", {}, { eventID: eventId });
+  } else {
+    fbq("track", "CompleteRegistration");
+  }
 }
 
 /** Fire when the user starts a Stripe checkout from the payment page. */
@@ -35,13 +45,24 @@ export function trackInitiateCheckout(opts?: {
   );
 }
 
-/** Fire on the payment success page once payment is confirmed. */
+/**
+ * Fire on the payment success page once payment is confirmed.
+ *
+ * Pass `eventId` (the Stripe Checkout Session id) so this browser event
+ * de-duplicates with the server-side Conversions API Purchase fired from the
+ * Stripe webhook — Meta counts the purchase once even though it arrives twice.
+ */
 export function trackPurchase(opts: {
   value: number;
   currency?: string;
+  eventId?: string;
 }): void {
-  const { value, currency = "THB" } = opts;
-  fbq("track", "Purchase", { value, currency });
+  const { value, currency = "THB", eventId } = opts;
+  if (eventId) {
+    fbq("track", "Purchase", { value, currency }, { eventID: eventId });
+  } else {
+    fbq("track", "Purchase", { value, currency });
+  }
 }
 
 /** Fire when a visitor expresses intent (e.g. taps the LINE OA button). */

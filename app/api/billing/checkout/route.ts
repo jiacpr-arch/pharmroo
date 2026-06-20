@@ -136,6 +136,12 @@ export async function POST(request: NextRequest) {
 
   const stripe = getStripe();
 
+  // Carry the Meta browser-cookie identifiers through Stripe so the
+  // server-side Purchase event (fired from the webhook) can be matched to the
+  // ad click with high quality.
+  const fbp = request.cookies.get("_fbp")?.value;
+  const fbc = request.cookies.get("_fbc")?.value;
+
   const checkoutSession = await stripe.checkout.sessions.create({
     mode: "payment",
     currency: "thb",
@@ -153,6 +159,8 @@ export async function POST(request: NextRequest) {
       invoiceTaxId: invoiceData?.taxId ?? "",
       invoiceAddress: invoiceData?.address ?? "",
       invoiceEmail: session.user.email,
+      ...(fbp ? { fbp } : {}),
+      ...(fbc ? { fbc } : {}),
     },
   });
 

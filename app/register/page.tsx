@@ -47,7 +47,8 @@ function RegisterForm() {
     }
 
     // Registration succeeded — fire the Meta Pixel conversion before sign-in.
-    trackCompleteRegistration();
+    // Pass the server's eventId so it de-duplicates with the CAPI copy.
+    trackCompleteRegistration(data.eventId);
 
     const result = await signIn("credentials", {
       email,
