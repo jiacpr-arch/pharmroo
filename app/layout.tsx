@@ -10,6 +10,7 @@ import JsonLd from "@/components/JsonLd";
 import AdBanner from "@/components/AdBanner";
 import MetaPixel from "@/components/MetaPixel";
 import FloatingLineButton from "@/components/FloatingLineButton";
+import PostHogProvider from "@/components/PostHogProvider";
 import "./globals.css";
 
 const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID;
@@ -109,6 +110,7 @@ export default function RootLayout({
         )}
         <JsonLd data={organizationLd} />
         <JsonLd data={websiteLd} />
+        <PostHogProvider>
         <SessionProvider>
           <Navbar />
           <AdBanner />
@@ -118,6 +120,7 @@ export default function RootLayout({
             <FloatingLineButton />
           </Suspense>
         </SessionProvider>
+        </PostHogProvider>
         <Analytics />
       </body>
     </html>

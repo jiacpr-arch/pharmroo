@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { trackPurchase } from "@/lib/analytics/conversions";
+import { phPurchase } from "@/lib/analytics/posthog";
 
 type VerifyStatus = "verifying" | "ok" | "pending" | "error";
 
@@ -33,6 +34,11 @@ export default function SuccessContent() {
               value: data.amount,
               currency: data.currency || "THB",
               eventId: sessionId ?? undefined,
+            });
+            phPurchase({
+              value: data.amount,
+              currency: data.currency || "THB",
+              sessionId: sessionId ?? undefined,
             });
           }
           setStatus("ok");
