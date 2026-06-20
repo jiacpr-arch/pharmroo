@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import InvoiceForm, { defaultInvoiceData, type InvoiceData } from "@/components/invoice-form";
 import { trackInitiateCheckout } from "@/lib/analytics/conversions";
+import { phCheckoutStart } from "@/lib/analytics/posthog";
 
 const PLANS: Record<string, { name: string; price: number; period: string }> = {
   monthly: { name: "รายเดือน", price: 249, period: "/ เดือน" },
@@ -66,6 +67,7 @@ export default function PaymentPage({ params }: { params: Promise<{ plan: string
     setStripeLoading(true);
     setError("");
     trackInitiateCheckout({ value: planInfo?.price, currency: "THB" });
+    phCheckoutStart({ plan, value: planInfo?.price });
     try {
       const res = await fetch("/api/billing/checkout", {
         method: "POST",

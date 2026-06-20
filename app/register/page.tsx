@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, Suspense } from "react";
+import { useState, useRef, Suspense } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { signIn } from "next-auth/react";
@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { trackCompleteRegistration } from "@/lib/analytics/conversions";
+import { phRegisterStart, phRegisterSuccess } from "@/lib/analytics/posthog";
 
 function RegisterForm() {
   const router = useRouter();
@@ -20,6 +21,13 @@ function RegisterForm() {
   const [referralCode, setReferralCode] = useState(refCode);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+  const registerStartFired = useRef(false);
+
+  const handleRegisterStart = () => {
+    if (registerStartFired.current) return;
+    registerStartFired.current = true;
+    phRegisterStart();
+  };
 
   const handleRegister = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -47,7 +55,9 @@ function RegisterForm() {
     }
 
     // Registration succeeded — fire the Meta Pixel conversion before sign-in.
-    trackCompleteRegistration();
+    // Pass the server's eventId so it de-duplicates with the CAPI copy.
+    trackCompleteRegistration(data.eventId);
+    phRegisterSuccess({ userId: data.eventId });
 
     const result = await signIn("credentials", {
       email,
@@ -82,7 +92,7 @@ function RegisterForm() {
           </p>
         </CardHeader>
         <CardContent className="space-y-4">
-          <form onSubmit={handleRegister} className="space-y-4">
+          <form onSubmit={handleRegister} onFocus={handleRegisterStart} className="space-y-4">
             <div className="space-y-2">
               <Label htmlFor="name">ชื่อ-นามสกุล</Label>
               <Input

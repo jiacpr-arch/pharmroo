@@ -1,11 +1,12 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import PricingCard from "@/components/PricingCard";
 import { PRICING_PLANS } from "@/lib/types";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Package, CheckCircle, Sparkles } from "lucide-react";
+import { phViewPricing } from "@/lib/analytics/posthog";
 
 const PHARMACY_SETS = [
   { name: "PLE-CC1 Day 1 (120 ข้อ)", price: 390, id: "ple-cc1-day1" },
@@ -26,6 +27,10 @@ type NursingSet = {
 
 export default function PricingClient({ nursingSets = [] }: { nursingSets?: NursingSet[] }) {
   const [track, setTrack] = useState<Track>("pharmacy");
+
+  useEffect(() => {
+    phViewPricing();
+  }, []);
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">

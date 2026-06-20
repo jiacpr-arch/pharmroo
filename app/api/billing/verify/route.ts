@@ -3,6 +3,7 @@ import Stripe from "stripe";
 import { auth } from "@/lib/auth";
 import { fulfillCheckoutSession } from "@/lib/billing/fulfill-checkout";
 import { sendFulfillmentNotifications } from "@/lib/billing/send-fulfillment-notifications";
+import { reportPurchaseConversion } from "@/lib/analytics/meta-capi";
 
 export const runtime = "nodejs";
 
@@ -49,14 +50,30 @@ export async function POST(request: NextRequest) {
 
     const result = await fulfillCheckoutSession(stripeSession);
 
-    if (result.notify) {
-      sendFulfillmentNotifications(result.notify).catch((err) =>
-        console.error("[verify] notification error:", err)
-      );
-    }
-
     // amount_total is in the smallest currency unit (satang for THB).
     const amountTotal = stripeSession.amount_total ?? 0;
+
+    if (result.notify) {
+      const notify = result.notify;
+      sendFulfillmentNotifications(notify).catch((err) =>
+        console.error("[verify] notification error:", err)
+      );
+
+      // Server-side Purchase → Meta CAPI, in case the user reaches the success
+      // page before the Stripe webhook arrives. Same eventId as the webhook /
+      // browser pixel (session id), so Meta still counts it once.
+      reportPurchaseConversion({
+        sessionId: notify.stripeSessionId,
+        value: notify.totalAmount,
+        currency: "THB",
+        email: notify.invoiceEmail,
+        userId: notify.userId,
+        fbp: stripeSession.metadata?.fbp,
+        fbc: stripeSession.metadata?.fbc,
+        eventSourceUrl: request.headers.get("referer") ?? undefined,
+      }).catch((err) => console.error("[verify] meta capi error:", err));
+    }
+
     return NextResponse.json({
       status: "ok",
       alreadyProcessed: result.alreadyProcessed,
