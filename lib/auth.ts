@@ -6,6 +6,7 @@ import { db } from "@/lib/db";
 import { users } from "@/lib/db/schema";
 import { eq } from "drizzle-orm";
 import bcrypt from "bcryptjs";
+import { grantWelcomeCredits } from "@/lib/db/queries-credits";
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
   session: { strategy: "jwt" },
@@ -74,6 +75,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
             membership_type: "free",
             role: "user",
           });
+          await grantWelcomeCredits(newId);
           user.id = newId;
         } else {
           user.id = existing.id;
@@ -125,6 +127,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
             line_user_id: lineUserId,
             line_linked_at: new Date().toISOString(),
           });
+          await grantWelcomeCredits(newId);
           user.id = newId;
           user.email = userEmail;
         } else {

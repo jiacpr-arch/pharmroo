@@ -11,20 +11,27 @@ import {
   RotateCcw,
   ChevronDown,
   ChevronUp,
+  Coins,
 } from "lucide-react";
 import type { McqQuestion } from "@/lib/types-mcq";
 import { useSession } from "next-auth/react";
+import { track } from "@vercel/analytics";
 import Link from "next/link";
 import { Lock } from "lucide-react";
+import CreditUnlockConfirm from "@/components/CreditUnlockConfirm";
+
+type DetailedExplanation = NonNullable<McqQuestion["detailed_explanation"]>;
 
 interface McqPracticeProps {
   questions: McqQuestion[];
   examType?: "PLE-PC" | "PLE-CC1" | "NLE";
+  initialCreditBalance?: number;
 }
 
 export default function McqPractice({
   questions,
   examType = "PLE-CC1",
+  initialCreditBalance = 0,
 }: McqPracticeProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
@@ -36,8 +43,14 @@ export default function McqPractice({
   // eslint-disable-next-line react-hooks/purity
   const questionStartTime = useRef<number>(Date.now());
   const { data: authSession } = useSession();
-  const membershipType = (authSession?.user as { membership_type?: string })?.membership_type;
-  const isPaid = membershipType === "monthly" || membershipType === "yearly";
+
+  // Credit-based unlocking of detailed explanations
+  const [creditBalance, setCreditBalance] = useState(initialCreditBalance);
+  const [unlockedContent, setUnlockedContent] = useState<
+    Record<string, DetailedExplanation>
+  >({});
+  const [confirmOpen, setConfirmOpen] = useState(false);
+  const [unlocking, setUnlocking] = useState(false);
 
   // Get user on mount and create session
   useEffect(() => {
@@ -126,6 +139,42 @@ export default function McqPractice({
     setStats({ correct: 0, total: 0 });
   }, []);
 
+  const handleUnlock = useCallback(async () => {
+    if (unlocking || !question) return;
+    setUnlocking(true);
+    try {
+      const res = await fetch(`/api/mcq/questions/${question.id}/unlock`, {
+        method: "POST",
+      });
+      const data = await res.json().catch(() => ({}));
+
+      if (res.status === 402) {
+        setCreditBalance(data.credit_balance ?? 0);
+        track("out_of_credits", { question_id: question.id });
+        setConfirmOpen(false);
+        return;
+      }
+      if (!res.ok || !data.detailed_explanation) {
+        setConfirmOpen(false);
+        return;
+      }
+
+      setUnlockedContent((prev) => ({
+        ...prev,
+        [question.id]: data.detailed_explanation as DetailedExplanation,
+      }));
+      if (typeof data.credit_balance === "number") {
+        setCreditBalance(data.credit_balance);
+      }
+      track("credit_unlock", { question_id: question.id });
+      setConfirmOpen(false);
+    } catch {
+      setConfirmOpen(false);
+    } finally {
+      setUnlocking(false);
+    }
+  }, [unlocking, question]);
+
   const isFinished = showResult && currentIndex === questions.length - 1;
   const percentage =
     stats.total > 0 ? Math.round((stats.correct / stats.total) * 100) : 0;
@@ -153,6 +202,15 @@ export default function McqPractice({
       </div>
     );
   }
+
+  // Merged detailed explanation: paid members and pre-unlocked questions arrive
+  // with full content in props; freshly unlocked ones come from unlockedContent.
+  const detail: DetailedExplanation | null =
+    unlockedContent[question.id] ?? question.detailed_explanation ?? null;
+  const detailLocked =
+    question.detailed_locked === true && !unlockedContent[question.id];
+  const answeredWrong =
+    showResult && selectedAnswer !== question.correct_answer;
 
   return (
     <div className="space-y-6">
@@ -305,16 +363,16 @@ export default function McqPractice({
                 </CardContent>
               </Card>
 
-              {/* Detailed explanation — paid members only */}
-              {question.detailed_explanation && (
-                isPaid ? (
+              {/* Detailed explanation — unlocked (paid or bought with a credit) */}
+              {detail && (
+                !detailLocked ? (
                   <>
                     {/* Detailed reason */}
                     <Card className="border-blue-200 bg-blue-50/30">
                       <CardContent className="p-4">
                         <h4 className="font-bold text-blue-800 mb-2">เหตุผลโดยละเอียด</h4>
                         <p className="text-sm leading-relaxed whitespace-pre-line text-foreground/80">
-                          {question.detailed_explanation.reason}
+                          {detail.reason}
                         </p>
                       </CardContent>
                     </Card>
@@ -323,7 +381,7 @@ export default function McqPractice({
                     <div>
                       <h4 className="font-bold text-sm mb-3">อธิบายแต่ละตัวเลือก</h4>
                       <div className="space-y-2">
-                        {question.detailed_explanation.choices?.map((ce) => (
+                        {detail.choices?.map((ce) => (
                           <div
                             key={ce.label}
                             className={`p-3 rounded-lg border text-sm ${
@@ -360,50 +418,48 @@ export default function McqPractice({
                     </div>
 
                     {/* Calculation Steps */}
-                    {question.detailed_explanation.calculation_steps &&
-                      question.detailed_explanation.calculation_steps.length > 0 && (
+                    {detail.calculation_steps &&
+                      detail.calculation_steps.length > 0 && (
                       <Card className="border-purple-200 bg-purple-50/30">
                         <CardContent className="p-4">
                           <h4 className="font-bold text-purple-800 mb-2 text-sm">ขั้นตอนคำนวณ</h4>
                           <ol className="list-decimal pl-5 space-y-1">
-                            {question.detailed_explanation.calculation_steps.map(
-                              (step, i) => (
-                                <li
-                                  key={i}
-                                  className="text-sm leading-relaxed text-purple-900"
-                                >
-                                  {step}
-                                </li>
-                              )
-                            )}
+                            {detail.calculation_steps.map((step, i) => (
+                              <li
+                                key={i}
+                                className="text-sm leading-relaxed text-purple-900"
+                              >
+                                {step}
+                              </li>
+                            ))}
                           </ol>
                         </CardContent>
                       </Card>
                     )}
 
                     {/* Key takeaway */}
-                    {question.detailed_explanation.key_takeaway && (
+                    {detail.key_takeaway && (
                       <Card className="border-amber-200 bg-amber-50/30">
                         <CardContent className="p-4">
                           <h4 className="font-bold text-amber-800 mb-1 text-sm">สรุปจุดสำคัญ</h4>
                           <p className="text-sm leading-relaxed text-amber-900">
-                            {question.detailed_explanation.key_takeaway}
+                            {detail.key_takeaway}
                           </p>
                         </CardContent>
                       </Card>
                     )}
                   </>
                 ) : (
-                  /* Free user: blurred preview + upgrade CTA */
+                  /* Locked: blurred preview + unlock-with-credit / subscribe CTA */
                   <div className="relative">
                     <div className="select-none pointer-events-none blur-[6px] opacity-60 space-y-4">
                       <Card className="border-blue-200 bg-blue-50/30">
                         <CardContent className="p-4">
                           <h4 className="font-bold text-blue-800 mb-2">เหตุผลโดยละเอียด</h4>
                           <p className="text-sm leading-relaxed text-foreground/80">
-                            {question.detailed_explanation.reason || (examType === "NLE"
+                            {examType === "NLE"
                               ? "เหตุผลโดยละเอียดสำหรับคำตอบที่ถูกต้อง อธิบายกลไกทางการพยาบาลและการดูแลผู้ป่วย..."
-                              : "เหตุผลโดยละเอียดสำหรับคำตอบที่ถูกต้อง อธิบายกลไกทางเภสัชวิทยา...")}
+                              : "เหตุผลโดยละเอียดสำหรับคำตอบที่ถูกต้อง อธิบายกลไกทางเภสัชวิทยา..."}
                           </p>
                         </CardContent>
                       </Card>
@@ -419,20 +475,69 @@ export default function McqPractice({
                         </CardContent>
                       </Card>
                     </div>
-                    {/* Upgrade overlay */}
+                    {/* Unlock overlay */}
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="bg-white/95 backdrop-blur-sm border-2 border-brand/30 rounded-2xl p-6 text-center shadow-lg max-w-sm">
-                        <Lock className="h-8 w-8 text-brand mx-auto mb-3" />
-                        <h4 className="font-bold text-lg mb-1">เฉลยละเอียด</h4>
+                      <div
+                        className={`bg-white/95 backdrop-blur-sm border-2 rounded-2xl p-6 text-center shadow-lg max-w-sm ${
+                          answeredWrong ? "border-red-300" : "border-brand/30"
+                        }`}
+                      >
+                        <Lock
+                          className={`h-8 w-8 mx-auto mb-3 ${
+                            answeredWrong ? "text-red-500" : "text-brand"
+                          }`}
+                        />
+                        <h4 className="font-bold text-lg mb-1">
+                          {answeredWrong
+                            ? "อยากรู้ว่าทำไมผิด?"
+                            : "เฉลยละเอียด"}
+                        </h4>
                         <p className="text-sm text-muted-foreground mb-4">
-                          สมัครสมาชิกเพื่อดูเหตุผลโดยละเอียด คำอธิบายทุกตัวเลือก และสรุปจุดสำคัญ
+                          ดูเหตุผลโดยละเอียด คำอธิบายทุกตัวเลือก และสรุปจุดสำคัญ
                         </p>
-                        <Link
-                          href="/pricing"
-                          className="inline-flex items-center gap-2 bg-brand hover:bg-brand-light text-white px-6 py-2.5 rounded-lg font-medium text-sm transition-colors"
-                        >
-                          สมัครสมาชิก
-                        </Link>
+
+                        {creditBalance >= 1 ? (
+                          <>
+                            <Button
+                              onClick={() => setConfirmOpen(true)}
+                              className={`w-full gap-2 text-white ${
+                                answeredWrong
+                                  ? "bg-red-500 hover:bg-red-600"
+                                  : "bg-brand hover:bg-brand-light"
+                              }`}
+                            >
+                              <Coins className="h-4 w-4" />
+                              ปลดล็อกเฉลย (1 เครดิต)
+                            </Button>
+                            <p className="text-xs text-muted-foreground mt-2">
+                              เครดิตคงเหลือ {creditBalance} •{" "}
+                              <Link href="/pricing" className="text-brand hover:underline">
+                                สมาชิกรายเดือนดูได้ไม่อั้น
+                              </Link>
+                            </p>
+                          </>
+                        ) : (
+                          <>
+                            <p className="text-sm font-medium text-red-600 mb-3">
+                              เครดิตของคุณหมดแล้ว
+                            </p>
+                            <div className="flex flex-col gap-2">
+                              <Link
+                                href="/credits"
+                                className="inline-flex items-center justify-center gap-2 bg-brand hover:bg-brand-light text-white px-6 py-2.5 rounded-lg font-medium text-sm transition-colors"
+                              >
+                                <Coins className="h-4 w-4" />
+                                เติมเครดิต
+                              </Link>
+                              <Link
+                                href="/pricing"
+                                className="text-sm text-brand hover:underline"
+                              >
+                                หรือสมัครสมาชิกดูได้ไม่อั้น (คุ้มกว่า)
+                              </Link>
+                            </div>
+                          </>
+                        )}
                       </div>
                     </div>
                   </div>
@@ -481,6 +586,16 @@ export default function McqPractice({
             </div>
           )}
         </div>
+      )}
+
+      {/* Confirm spending 1 credit */}
+      {confirmOpen && (
+        <CreditUnlockConfirm
+          creditBalance={creditBalance}
+          loading={unlocking}
+          onConfirm={handleUnlock}
+          onCancel={() => setConfirmOpen(false)}
+        />
       )}
     </div>
   );

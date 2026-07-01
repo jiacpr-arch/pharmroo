@@ -1,6 +1,9 @@
 export const dynamic = "force-dynamic";
 import { Suspense } from "react";
 import { getMcqSubjects, getMcqQuestions } from "@/lib/db/queries-mcq";
+import { auth } from "@/lib/auth";
+import { getUserCreditBalance, getUserUnlockedQuestionIds } from "@/lib/db/queries-credits";
+import { gateQuestionsForViewer } from "@/lib/credits-gate";
 import McqPractice from "@/components/McqPractice";
 import { Badge } from "@/components/ui/badge";
 import GoodyEmbed from "@/components/GoodyEmbed";
@@ -20,7 +23,13 @@ async function PracticeContent({
   subjectId?: string;
   day?: 1 | 2;
 }) {
-  const [subjects, questions] = await Promise.all([
+  const session = await auth();
+  const userId = (session?.user as { id?: string })?.id;
+  const membershipType = (session?.user as { membership_type?: string })
+    ?.membership_type;
+  const isPaid = membershipType === "monthly" || membershipType === "yearly";
+
+  const [subjects, rawQuestions, unlockedIds, creditBalance] = await Promise.all([
     getMcqSubjects({ examCategory: "pharmacy" }),
     getMcqQuestions({
       subjectId,
@@ -29,7 +38,11 @@ async function PracticeContent({
       limit: 200,
       randomize: true,
     }),
+    userId && !isPaid ? getUserUnlockedQuestionIds(userId) : Promise.resolve([]),
+    userId ? getUserCreditBalance(userId) : Promise.resolve(0),
   ]);
+
+  const questions = gateQuestionsForViewer(rawQuestions, { isPaid, unlockedIds });
 
   const currentSubject = subjectId
     ? subjects.find((s) => s.id === subjectId)
@@ -132,7 +145,7 @@ async function PracticeContent({
 
       {/* Practice Component */}
       {questions.length > 0 ? (
-        <McqPractice questions={questions} />
+        <McqPractice questions={questions} initialCreditBalance={creditBalance} />
       ) : (
         <div className="text-center py-16 text-muted-foreground">
           <p className="text-lg">ยังไม่มีข้อสอบในหมวดนี้</p>

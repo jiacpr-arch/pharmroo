@@ -46,6 +46,9 @@ export interface McqQuestion {
   created_at: string;
   // joined
   mcq_subjects?: McqSubject;
+  // set true by server-side gating when a detailed explanation exists but its
+  // content has been withheld (user is not a paid member and hasn't unlocked it)
+  detailed_locked?: boolean;
 }
 
 export interface McqAttempt {

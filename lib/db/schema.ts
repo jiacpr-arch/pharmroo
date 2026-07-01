@@ -26,6 +26,7 @@ export const users = pgTable("users", {
     .default("free"),
   membership_expires_at: text("membership_expires_at"),
   onboarding_done: boolean("onboarding_done").notNull().default(false),
+  credit_balance: integer("credit_balance").notNull().default(0),
   daily_goal: integer("daily_goal").notNull().default(20),
   target_exam: text("target_exam"),
   exam_category: text("exam_category", { enum: ["pharmacy", "nursing"] }),
@@ -219,7 +220,7 @@ export const paymentOrders = pgTable("payment_orders", {
     .primaryKey()
     .default(sql`generate_hex_id()`),
   user_id: text("user_id").references(() => users.id, { onDelete: "cascade" }),
-  order_type: text("order_type", { enum: ["subscription", "set"] })
+  order_type: text("order_type", { enum: ["subscription", "set", "credit"] })
     .notNull()
     .default("subscription"),
   plan_type: text("plan_type", { enum: ["monthly", "yearly"] }),
@@ -275,7 +276,7 @@ export const invoices = pgTable("invoices", {
   payment_method: text("payment_method").notNull().default("stripe"),
   stripe_session_id: text("stripe_session_id"),
   plan_type: text("plan_type"),
-  order_type: text("order_type", { enum: ["subscription", "set"] }),
+  order_type: text("order_type", { enum: ["subscription", "set", "credit"] }),
   set_name: text("set_name"),
   amount: real("amount").notNull(),
   vat_amount: real("vat_amount").notNull(),
@@ -318,6 +319,88 @@ export const referrals = pgTable("referrals", {
     .notNull()
     .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
 });
+
+// ========================================
+// 13. Credit Packs (top-up catalog)
+// ========================================
+export const creditPacks = pgTable("credit_packs", {
+  id: text("id")
+    .primaryKey()
+    .default(sql`generate_hex_id()`),
+  name_th: text("name_th").notNull(),
+  amount_credits: integer("amount_credits").notNull(),
+  price: real("price").notNull(),
+  is_active: boolean("is_active").notNull().default(true),
+  sort_order: integer("sort_order").notNull().default(0),
+  created_at: text("created_at")
+    .notNull()
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+});
+
+// ========================================
+// 14. Credit Purchases (one row per top-up)
+// ========================================
+export const creditPurchases = pgTable("credit_purchases", {
+  id: text("id")
+    .primaryKey()
+    .default(sql`generate_hex_id()`),
+  user_id: text("user_id").references(() => users.id, { onDelete: "cascade" }),
+  pack_id: text("pack_id").references(() => creditPacks.id),
+  payment_order_id: text("payment_order_id"),
+  status: text("status", { enum: ["pending", "active", "refunded"] })
+    .notNull()
+    .default("pending"),
+  amount_credits: integer("amount_credits").notNull(),
+  purchased_at: text("purchased_at"),
+  created_at: text("created_at")
+    .notNull()
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+});
+
+// ========================================
+// 15. Credit Ledger (audit trail of every balance change)
+// ========================================
+export const creditLedger = pgTable("credit_ledger", {
+  id: text("id")
+    .primaryKey()
+    .default(sql`generate_hex_id()`),
+  user_id: text("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
+  type: text("type", {
+    enum: ["welcome", "purchase", "spend", "refund", "admin"],
+  }).notNull(),
+  amount: integer("amount").notNull(), // signed: +credits added, -credits spent
+  balance_after: integer("balance_after").notNull(),
+  related_id: text("related_id"), // payment_order_id / question_id
+  note: text("note"),
+  created_at: text("created_at")
+    .notNull()
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+});
+
+// ========================================
+// 16. Question Unlocks (a question whose detailed explanation a user bought)
+// ========================================
+export const questionUnlocks = pgTable(
+  "question_unlocks",
+  {
+    id: text("id")
+      .primaryKey()
+      .default(sql`generate_hex_id()`),
+    user_id: text("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    question_id: text("question_id")
+      .notNull()
+      .references(() => mcqQuestions.id, { onDelete: "cascade" }),
+    credit_ledger_id: text("credit_ledger_id"),
+    created_at: text("created_at")
+      .notNull()
+      .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+  },
+  (t) => [uniqueIndex("uq_user_question_unlock").on(t.user_id, t.question_id)]
+);
 
 // ========================================
 // 17. LINE Link Codes (for OA linking)
@@ -515,6 +598,10 @@ export type McqSession = typeof mcqSessions.$inferSelect;
 export type QuestionSet = typeof questionSets.$inferSelect;
 export type SetPurchase = typeof setPurchases.$inferSelect;
 export type PaymentOrder = typeof paymentOrders.$inferSelect;
+export type CreditPack = typeof creditPacks.$inferSelect;
+export type CreditPurchase = typeof creditPurchases.$inferSelect;
+export type CreditLedgerEntry = typeof creditLedger.$inferSelect;
+export type QuestionUnlock = typeof questionUnlocks.$inferSelect;
 export type Referral = typeof referrals.$inferSelect;
 export type LineLinkCode = typeof lineLinkCodes.$inferSelect;
 export type BlogPost = typeof blogPosts.$inferSelect;

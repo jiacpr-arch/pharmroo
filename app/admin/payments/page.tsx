@@ -106,7 +106,12 @@ export default function AdminPaymentsPage() {
         <div className="space-y-4">
           {orders.map((order) => {
             const statusInfo = statusConfig[order.status] || statusConfig.pending;
-            const label = order.order_type === "set" ? "ชุดข้อสอบ" : planLabels[order.plan_type || ""] || order.plan_type;
+            const label =
+              order.order_type === "set"
+                ? "ชุดข้อสอบ"
+                : order.order_type === "credit"
+                  ? "เติมเครดิต"
+                  : planLabels[order.plan_type || ""] || order.plan_type;
             return (
               <Card key={order.id} className={order.status === "pending" ? "border-yellow-300" : ""}>
                 <CardHeader className="pb-3">

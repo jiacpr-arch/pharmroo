@@ -4,6 +4,7 @@ import {
   paymentOrders,
   users,
   setPurchases,
+  creditPurchases,
   invoices,
   questionSets,
   referrals,
@@ -11,6 +12,7 @@ import {
 import { eq, sql } from "drizzle-orm";
 import { randomUUID } from "crypto";
 import { STRIPE_PRICES } from "@/lib/stripe";
+import { addCredits, getCreditPack } from "@/lib/db/queries-credits";
 
 export interface FulfillmentResult {
   alreadyProcessed: boolean;
@@ -50,12 +52,18 @@ export async function fulfillCheckoutSession(
 ): Promise<FulfillmentResult> {
   const metadata = session.metadata ?? {};
   const userId = metadata.userId ?? metadata.user_id;
-  const planType = metadata.planType ?? metadata.plan;
+  const planType = metadata.planType ?? metadata.plan ?? "";
   const orderType = metadata.type ?? "subscription";
   const setId = metadata.set_id;
+  const packId = metadata.pack_id;
+  const amountCredits = Number(metadata.amount_credits ?? 0);
 
-  if (!userId || !planType) {
-    console.error("[fulfill] missing metadata on session:", session.id);
+  if (!userId) {
+    console.error("[fulfill] missing userId on session:", session.id);
+    return { alreadyProcessed: false };
+  }
+  if (orderType === "subscription" && !planType) {
+    console.error("[fulfill] missing planType on subscription session:", session.id);
     return { alreadyProcessed: false };
   }
 
@@ -96,8 +104,9 @@ export async function fulfillCheckoutSession(
   await db.insert(paymentOrders).values({
     id: orderId,
     user_id: userId,
-    order_type: orderType as "subscription" | "set",
-    plan_type: planType as "monthly" | "yearly",
+    order_type: orderType as "subscription" | "set" | "credit",
+    plan_type:
+      orderType === "subscription" ? (planType as "monthly" | "yearly") : null,
     set_id: setId ?? null,
     amount: totalAmount,
     status: "approved",
@@ -139,6 +148,25 @@ export async function fulfillCheckoutSession(
       .where(eq(questionSets.id, setId))
       .then((rows) => rows[0]);
     productName = setRow?.name_th || setRow?.name || `ชุดข้อสอบ ${setId}`;
+  } else if (orderType === "credit" && packId) {
+    await db.insert(creditPurchases).values({
+      id: randomUUID(),
+      user_id: userId,
+      pack_id: packId,
+      payment_order_id: orderId,
+      status: "active",
+      amount_credits: amountCredits,
+      purchased_at: now.toISOString(),
+    });
+
+    await addCredits(userId, amountCredits, {
+      type: "purchase",
+      relatedId: orderId,
+      note: "stripe top-up",
+    });
+
+    const packRow = await getCreditPack(packId);
+    productName = packRow?.name_th || `${amountCredits} เครดิต`;
   }
 
   // Create invoice record
@@ -156,8 +184,8 @@ export async function fulfillCheckoutSession(
       order_id: orderId,
       payment_method: "stripe",
       stripe_session_id: session.id,
-      plan_type: planType,
-      order_type: orderType as "subscription" | "set",
+      plan_type: orderType === "subscription" ? planType : null,
+      order_type: orderType as "subscription" | "set" | "credit",
       set_name: orderType === "set" ? productName : null,
       amount: amountBeforeVat,
       vat_amount: vatAmount,
