@@ -77,12 +77,15 @@ export async function createCashInvoice(
 ): Promise<FlowAccountResult> {
   const token = await getToken();
 
-  const product = input.planType
-    ? PLAN_PRODUCT[input.planType] ?? {
-        code: "PHARMROO-OTHER",
-        name: input.productName,
-      }
-    : { code: "PHARMROO-SET", name: input.productName };
+  const product =
+    input.planType === "credit"
+      ? { code: "PHARMROO-CREDIT", name: input.productName }
+      : input.planType
+        ? PLAN_PRODUCT[input.planType] ?? {
+            code: "PHARMROO-OTHER",
+            name: input.productName,
+          }
+        : { code: "PHARMROO-SET", name: input.productName };
 
   // ราคา Stripe รวม VAT 7% แล้ว — ถอยหลัง
   const grandTotal = Math.round(input.totalAmount * 100) / 100;

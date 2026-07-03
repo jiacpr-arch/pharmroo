@@ -2,13 +2,15 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Coins } from "lucide-react";
 import { useSession } from "next-auth/react";
 
 /**
  * Small navbar chip showing the user's credit balance, linking to the top-up
- * page. Balance is fetched from the API (not the JWT) so it stays fresh after
- * a purchase or an unlock without needing to re-issue the session token.
+ * page. Balance is fetched from the API (not the JWT) so it doesn't require
+ * re-issuing the session token; it refreshes on navigation and instantly when
+ * anything dispatches a `credits:changed` event (e.g. after an unlock).
  */
 export default function CreditBalance({
   className = "",
@@ -16,6 +18,7 @@ export default function CreditBalance({
   className?: string;
 }) {
   const { status } = useSession();
+  const pathname = usePathname();
   const [balance, setBalance] = useState<number | null>(null);
 
   useEffect(() => {
@@ -30,7 +33,16 @@ export default function CreditBalance({
     return () => {
       active = false;
     };
-  }, [status]);
+  }, [status, pathname]);
+
+  useEffect(() => {
+    const onChanged = (e: Event) => {
+      const detail = (e as CustomEvent<number>).detail;
+      if (typeof detail === "number") setBalance(detail);
+    };
+    window.addEventListener("credits:changed", onChanged);
+    return () => window.removeEventListener("credits:changed", onChanged);
+  }, []);
 
   if (status !== "authenticated" || balance === null) return null;
 

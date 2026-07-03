@@ -165,6 +165,10 @@ export default function McqPractice({
       }));
       if (typeof data.credit_balance === "number") {
         setCreditBalance(data.credit_balance);
+        // Let the navbar badge (and anything else) refresh immediately.
+        window.dispatchEvent(
+          new CustomEvent("credits:changed", { detail: data.credit_balance })
+        );
       }
       track("credit_unlock", { question_id: question.id });
       setConfirmOpen(false);
@@ -496,7 +500,24 @@ export default function McqPractice({
                           ดูเหตุผลโดยละเอียด คำอธิบายทุกตัวเลือก และสรุปจุดสำคัญ
                         </p>
 
-                        {creditBalance >= 1 ? (
+                        {!authSession?.user ? (
+                          /* Guest — invite to sign in / subscribe (never claim
+                             their credits ran out) */
+                          <div className="flex flex-col gap-2">
+                            <Link
+                              href="/register"
+                              className="inline-flex items-center justify-center gap-2 bg-brand hover:bg-brand-light text-white px-6 py-2.5 rounded-lg font-medium text-sm transition-colors"
+                            >
+                              สมัครฟรี รับ 3 เครดิตทดลอง
+                            </Link>
+                            <Link
+                              href="/login"
+                              className="text-sm text-brand hover:underline"
+                            >
+                              มีบัญชีแล้ว? เข้าสู่ระบบ
+                            </Link>
+                          </div>
+                        ) : creditBalance >= 1 ? (
                           <>
                             <Button
                               onClick={() => setConfirmOpen(true)}

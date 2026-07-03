@@ -5,11 +5,14 @@ import {
   creditLedger,
   questionUnlocks,
 } from "./schema";
-import { and, eq, gte, sql } from "drizzle-orm";
+import { and, eq, gte, inArray, sql } from "drizzle-orm";
 import { randomUUID } from "crypto";
 import type { CreditPack } from "./schema";
 
 export type CreditLedgerType = "welcome" | "purchase" | "spend" | "refund" | "admin";
+
+/** `db` or a transaction handle — both expose the same query/transaction API. */
+type DbExecutor = typeof db | Parameters<Parameters<typeof db.transaction>[0]>[0];
 
 export type UnlockResult =
   | { status: "unlocked"; balance: number }
@@ -18,6 +21,12 @@ export type UnlockResult =
 
 class InsufficientCreditsError extends Error {}
 
+/** drizzle wraps driver errors (DrizzleQueryError); the pg code sits on `cause`. */
+function isUniqueViolation(err: unknown): boolean {
+  const e = err as { code?: string; cause?: { code?: string } };
+  return e?.code === "23505" || e?.cause?.code === "23505";
+}
+
 /** Active credit packs, cheapest first. */
 export async function getCreditPacks(): Promise<CreditPack[]> {
   return db
@@ -25,14 +34,6 @@ export async function getCreditPacks(): Promise<CreditPack[]> {
     .from(creditPacks)
     .where(eq(creditPacks.is_active, true))
     .orderBy(creditPacks.sort_order);
-}
-
-export async function getCreditPack(id: string): Promise<CreditPack | null> {
-  return db
-    .select()
-    .from(creditPacks)
-    .where(and(eq(creditPacks.id, id), eq(creditPacks.is_active, true)))
-    .then((rows) => rows[0] ?? null);
 }
 
 export async function getUserCreditBalance(userId: string): Promise<number> {
@@ -44,41 +45,40 @@ export async function getUserCreditBalance(userId: string): Promise<number> {
   return row?.balance ?? 0;
 }
 
-export async function getUserUnlockedQuestionIds(userId: string): Promise<string[]> {
+/**
+ * Question ids the user has unlocked. Pass the ids being served to keep the
+ * result bounded — without it the row count grows with every unlock the user
+ * ever made.
+ */
+export async function getUserUnlockedQuestionIds(
+  userId: string,
+  questionIds?: string[]
+): Promise<string[]> {
+  if (questionIds && questionIds.length === 0) return [];
+  const conditions = [eq(questionUnlocks.user_id, userId)];
+  if (questionIds) {
+    conditions.push(inArray(questionUnlocks.question_id, questionIds));
+  }
   const rows = await db
     .select({ question_id: questionUnlocks.question_id })
     .from(questionUnlocks)
-    .where(eq(questionUnlocks.user_id, userId));
+    .where(and(...conditions));
   return rows.map((r) => r.question_id);
-}
-
-export async function isQuestionUnlocked(
-  userId: string,
-  questionId: string
-): Promise<boolean> {
-  const row = await db
-    .select({ id: questionUnlocks.id })
-    .from(questionUnlocks)
-    .where(
-      and(
-        eq(questionUnlocks.user_id, userId),
-        eq(questionUnlocks.question_id, questionId)
-      )
-    )
-    .then((rows) => rows[0]);
-  return !!row;
 }
 
 /**
  * Add credits to a user and record a ledger entry, atomically.
  * Used by top-up fulfillment (Stripe + manual approval) and welcome grants.
+ * Pass a transaction as `executor` to compose with an enclosing transaction
+ * (runs as a savepoint).
  */
 export async function addCredits(
   userId: string,
   amount: number,
-  opts: { type: CreditLedgerType; relatedId?: string | null; note?: string | null }
+  opts: { type: CreditLedgerType; relatedId?: string | null; note?: string | null },
+  executor: DbExecutor = db
 ): Promise<number> {
-  return db.transaction(async (tx) => {
+  return executor.transaction(async (tx) => {
     const upd = await tx
       .update(users)
       .set({ credit_balance: sql`${users.credit_balance} + ${amount}` })
@@ -122,7 +122,8 @@ export async function grantWelcomeCredits(
  *
  * Correctness guarantees:
  *  - The unique index on (user_id, question_id) means a question is charged at
- *    most once, even under concurrent requests.
+ *    most once, even under concurrent requests — the loser's insert fails with
+ *    a unique violation, mapped to "already".
  *  - The balance is decremented with a `>= 1` guard so it can never go negative.
  *  - Claiming the unlock row and decrementing happen in one transaction, so a
  *    failed decrement rolls back the claim (no free unlocks, no lost credits).
@@ -131,20 +132,16 @@ export async function spendCreditForUnlock(
   userId: string,
   questionId: string
 ): Promise<UnlockResult> {
-  // Fast path — already owned, never charge again.
-  if (await isQuestionUnlocked(userId, questionId)) {
-    return { status: "already", balance: await getUserCreditBalance(userId) };
-  }
-
   try {
     return await db.transaction(async (tx) => {
-      const unlockId = randomUUID();
+      const ledgerId = randomUUID();
 
-      // Claim the unlock first; the unique index rejects concurrent duplicates.
+      // Claim the unlock first; the unique index rejects duplicates.
       await tx.insert(questionUnlocks).values({
-        id: unlockId,
+        id: randomUUID(),
         user_id: userId,
         question_id: questionId,
+        credit_ledger_id: ledgerId,
       });
 
       // Decrement guarded by balance >= 1.
@@ -159,7 +156,6 @@ export async function spendCreditForUnlock(
       }
 
       const balance = dec[0].balance;
-      const ledgerId = randomUUID();
 
       await tx.insert(creditLedger).values({
         id: ledgerId,
@@ -171,19 +167,14 @@ export async function spendCreditForUnlock(
         note: "unlock question",
       });
 
-      await tx
-        .update(questionUnlocks)
-        .set({ credit_ledger_id: ledgerId })
-        .where(eq(questionUnlocks.id, unlockId));
-
       return { status: "unlocked" as const, balance };
     });
   } catch (err) {
     if (err instanceof InsufficientCreditsError) {
       return { status: "insufficient", balance: await getUserCreditBalance(userId) };
     }
-    // Unique-violation → another concurrent request already unlocked it.
-    if ((err as { code?: string })?.code === "23505") {
+    if (isUniqueViolation(err)) {
+      // A concurrent (or earlier) request already unlocked it — no charge.
       return { status: "already", balance: await getUserCreditBalance(userId) };
     }
     throw err;

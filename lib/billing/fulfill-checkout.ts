@@ -4,15 +4,16 @@ import {
   paymentOrders,
   users,
   setPurchases,
+  creditPacks,
   creditPurchases,
   invoices,
   questionSets,
   referrals,
 } from "@/lib/db/schema";
-import { eq, sql } from "drizzle-orm";
+import { and, eq, sql } from "drizzle-orm";
 import { randomUUID } from "crypto";
 import { STRIPE_PRICES } from "@/lib/stripe";
-import { addCredits, getCreditPack } from "@/lib/db/queries-credits";
+import { addCredits } from "@/lib/db/queries-credits";
 
 export interface FulfillmentResult {
   alreadyProcessed: boolean;
@@ -67,20 +68,58 @@ export async function fulfillCheckoutSession(
     return { alreadyProcessed: false };
   }
 
-  // ★ IDEMPOTENCY GUARD
-  const existing = await db
-    .select({ id: paymentOrders.id })
-    .from(paymentOrders)
-    .where(eq(paymentOrders.stripe_session_id, session.id))
-    .then((rows) => rows[0]);
-
-  if (existing) {
-    return { alreadyProcessed: true };
-  }
-
   const totalAmount = (session.amount_total ?? 0) / 100;
   const now = new Date();
   const publishedOn = now.toISOString().slice(0, 10);
+
+  // ★ IDEMPOTENCY GUARD — atomically claim the pending order that checkout
+  // pre-created for this session. Only one caller (webhook / verify /
+  // reconcile) can flip pending → approved; the rest see alreadyProcessed.
+  const claimed = await db
+    .update(paymentOrders)
+    .set({
+      status: "approved",
+      reviewed_at: now.toISOString(),
+      payment_method: "stripe",
+    })
+    .where(
+      and(
+        eq(paymentOrders.stripe_session_id, session.id),
+        eq(paymentOrders.status, "pending")
+      )
+    )
+    .returning({ id: paymentOrders.id });
+
+  let orderId: string;
+  if (claimed.length > 0) {
+    orderId = claimed[0].id;
+  } else {
+    const existing = await db
+      .select({ id: paymentOrders.id })
+      .from(paymentOrders)
+      .where(eq(paymentOrders.stripe_session_id, session.id))
+      .then((rows) => rows[0]);
+    if (existing) {
+      return { alreadyProcessed: true };
+    }
+    // No pre-created order for this session (legacy flow) — record one now.
+    orderId = randomUUID();
+    await db.insert(paymentOrders).values({
+      id: orderId,
+      user_id: userId,
+      order_type: orderType as "subscription" | "set" | "credit",
+      plan_type:
+        orderType === "subscription"
+          ? (planType as "monthly" | "yearly")
+          : null,
+      set_id: setId ?? null,
+      amount: totalAmount,
+      status: "approved",
+      reviewed_at: now.toISOString(),
+      stripe_session_id: session.id,
+      payment_method: "stripe",
+    });
+  }
 
   // Calculate VAT (7%)
   const amountBeforeVat = Math.round((totalAmount / 1.07) * 100) / 100;
@@ -98,22 +137,6 @@ export async function fulfillCheckoutSession(
 
   let productName = "";
   let expiresAt: string | null = null;
-
-  // Create payment order
-  const orderId = randomUUID();
-  await db.insert(paymentOrders).values({
-    id: orderId,
-    user_id: userId,
-    order_type: orderType as "subscription" | "set" | "credit",
-    plan_type:
-      orderType === "subscription" ? (planType as "monthly" | "yearly") : null,
-    set_id: setId ?? null,
-    amount: totalAmount,
-    status: "approved",
-    reviewed_at: now.toISOString(),
-    stripe_session_id: session.id,
-    payment_method: "stripe",
-  });
 
   // Fulfillment based on type
   if (orderType === "subscription") {
@@ -149,23 +172,51 @@ export async function fulfillCheckoutSession(
       .then((rows) => rows[0]);
     productName = setRow?.name_th || setRow?.name || `ชุดข้อสอบ ${setId}`;
   } else if (orderType === "credit" && packId) {
-    await db.insert(creditPurchases).values({
-      id: randomUUID(),
-      user_id: userId,
-      pack_id: packId,
-      payment_order_id: orderId,
-      status: "active",
-      amount_credits: amountCredits,
-      purchased_at: now.toISOString(),
+    // Activate the pending purchase created at checkout and top up the
+    // balance in one transaction (fall back to metadata for legacy sessions
+    // that predate the pending creditPurchases row).
+    await db.transaction(async (tx) => {
+      const activated = await tx
+        .update(creditPurchases)
+        .set({ status: "active", purchased_at: now.toISOString() })
+        .where(
+          and(
+            eq(creditPurchases.payment_order_id, orderId),
+            eq(creditPurchases.status, "pending")
+          )
+        )
+        .returning({ amount_credits: creditPurchases.amount_credits });
+
+      let credits = activated.reduce((s, r) => s + r.amount_credits, 0);
+      if (credits === 0 && amountCredits > 0) {
+        credits = amountCredits;
+        await tx.insert(creditPurchases).values({
+          id: randomUUID(),
+          user_id: userId,
+          pack_id: packId,
+          payment_order_id: orderId,
+          status: "active",
+          amount_credits: credits,
+          purchased_at: now.toISOString(),
+        });
+      }
+
+      if (credits > 0) {
+        await addCredits(
+          userId,
+          credits,
+          { type: "purchase", relatedId: orderId, note: "stripe top-up" },
+          tx
+        );
+      }
     });
 
-    await addCredits(userId, amountCredits, {
-      type: "purchase",
-      relatedId: orderId,
-      note: "stripe top-up",
-    });
-
-    const packRow = await getCreditPack(packId);
+    // Unfiltered lookup — a since-deactivated pack should still name the invoice.
+    const packRow = await db
+      .select({ name_th: creditPacks.name_th })
+      .from(creditPacks)
+      .where(eq(creditPacks.id, packId))
+      .then((rows) => rows[0]);
     productName = packRow?.name_th || `${amountCredits} เครดิต`;
   }
 
@@ -198,15 +249,19 @@ export async function fulfillCheckoutSession(
     })
     .catch((err) => console.error("[fulfill] invoice insert error:", err));
 
-  // Check referral reward
+  // Check referral reward — subscriptions only. A ฿49 credit pack (or a set
+  // purchase) must not consume the referral or pay out the full reward.
   let referrerLineUserId: string | null = null;
   let referrerRewardDays = 0;
 
-  const referral = await db
-    .select()
-    .from(referrals)
-    .where(eq(referrals.referred_id, userId))
-    .then((rows) => rows.find((r) => r.status === "pending"));
+  const referral =
+    orderType === "subscription"
+      ? await db
+          .select()
+          .from(referrals)
+          .where(eq(referrals.referred_id, userId))
+          .then((rows) => rows.find((r) => r.status === "pending"))
+      : undefined;
 
   if (referral) {
     referrerRewardDays = referral.reward_days;
@@ -250,7 +305,7 @@ export async function fulfillCheckoutSession(
     notify: {
       sessionId: session.id,
       userId,
-      planType,
+      planType: orderType === "credit" ? "credit" : planType,
       planLabel: productName,
       totalAmount,
       amountBeforeVat,

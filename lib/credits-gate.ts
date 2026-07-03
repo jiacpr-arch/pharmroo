@@ -1,4 +1,31 @@
 import type { McqQuestion } from "@/lib/types-mcq";
+import {
+  getUserCreditBalance,
+  getUserUnlockedQuestionIds,
+} from "@/lib/db/queries-credits";
+
+/** Single source of truth for which membership types count as paid. */
+export function isPaidMember(
+  membershipType: string | null | undefined
+): boolean {
+  return membershipType === "monthly" || membershipType === "yearly";
+}
+
+export interface ViewerGate {
+  userId: string | null;
+  isPaid: boolean;
+}
+
+/** Extract viewer identity + paid status from a NextAuth session. */
+export function getViewerGate(session: unknown): ViewerGate {
+  const user = (
+    session as { user?: { id?: string; membership_type?: string } } | null
+  )?.user;
+  return {
+    userId: user?.id ?? null,
+    isPaid: isPaidMember(user?.membership_type),
+  };
+}
 
 /**
  * Server-side gating for detailed explanations.
@@ -15,16 +42,12 @@ export function gateQuestionsForViewer(
   questions: McqQuestion[],
   opts: { isPaid: boolean; unlockedIds: Iterable<string> }
 ): McqQuestion[] {
-  if (opts.isPaid) {
-    return questions.map((q) => ({ ...q, detailed_locked: false }));
-  }
+  if (opts.isPaid) return questions;
 
   const unlocked = new Set(opts.unlockedIds);
 
   return questions.map((q) => {
-    if (!q.detailed_explanation || unlocked.has(q.id)) {
-      return { ...q, detailed_locked: false };
-    }
+    if (!q.detailed_explanation || unlocked.has(q.id)) return q;
     return {
       ...q,
       detailed_locked: true,
@@ -37,4 +60,45 @@ export function gateQuestionsForViewer(
       },
     };
   });
+}
+
+/**
+ * One-call viewer gating for server pages that render question components:
+ * resolves the viewer from the session, fetches their unlocks (bounded to the
+ * served questions) and credit balance, and returns the gated questions.
+ * Server-only (touches the database).
+ */
+export async function gateQuestionsForSession(
+  session: unknown,
+  questions: McqQuestion[]
+): Promise<{ questions: McqQuestion[]; creditBalance: number; isPaid: boolean }> {
+  const { userId, isPaid } = getViewerGate(session);
+
+  if (isPaid) {
+    return { questions, creditBalance: 0, isPaid };
+  }
+  if (!userId) {
+    return {
+      questions: gateQuestionsForViewer(questions, {
+        isPaid: false,
+        unlockedIds: [],
+      }),
+      creditBalance: 0,
+      isPaid,
+    };
+  }
+
+  const [unlockedIds, creditBalance] = await Promise.all([
+    getUserUnlockedQuestionIds(
+      userId,
+      questions.map((q) => q.id)
+    ),
+    getUserCreditBalance(userId),
+  ]);
+
+  return {
+    questions: gateQuestionsForViewer(questions, { isPaid, unlockedIds }),
+    creditBalance,
+    isPaid,
+  };
 }

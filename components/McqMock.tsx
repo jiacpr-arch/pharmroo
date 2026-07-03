@@ -48,8 +48,6 @@ export default function McqMock({
   const [timeLeft, setTimeLeft] = useState(timeLimitMinutes * 60); // seconds
   const [showConfirmSubmit, setShowConfirmSubmit] = useState(false);
   const { data: authSession } = useSession();
-  const membershipType = (authSession?.user as { membership_type?: string })?.membership_type;
-  const isPaid = membershipType === "monthly" || membershipType === "yearly";
   const [reviewIndex, setReviewIndex] = useState(0);
   const [showExplanation, setShowExplanation] = useState(false);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
@@ -632,9 +630,10 @@ export default function McqMock({
                   </CardContent>
                 </Card>
 
-                {/* Detailed — paid only */}
+                {/* Detailed — server-gated: locked questions arrive with the
+                    content already stripped and detailed_locked set */}
                 {reviewQuestion.detailed_explanation && (
-                  isPaid ? (
+                  !reviewQuestion.detailed_locked ? (
                     <>
                       <Card className="border-blue-200 bg-blue-50/30">
                         <CardContent className="p-4">

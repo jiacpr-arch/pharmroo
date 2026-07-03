@@ -2,11 +2,12 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { useSession } from "next-auth/react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { track } from "@vercel/analytics";
+import { trackInitiateCheckout } from "@/lib/analytics/conversions";
+import type { CreditPack } from "@/lib/db/schema";
 import {
   ArrowLeft,
   Coins,
@@ -21,12 +22,7 @@ import {
   CheckCircle,
 } from "lucide-react";
 
-interface Pack {
-  id: string;
-  name_th: string;
-  amount_credits: number;
-  price: number;
-}
+type Pack = Pick<CreditPack, "id" | "name_th" | "amount_credits" | "price">;
 
 const BANK_INFO = {
   bank: "ธนาคารกสิกรไทย",
@@ -44,7 +40,6 @@ export default function CreditsClient({
   loggedIn: boolean;
 }) {
   const router = useRouter();
-  const { status } = useSession();
   const [loadingId, setLoadingId] = useState<string | null>(null);
   const [error, setError] = useState("");
 
@@ -56,7 +51,7 @@ export default function CreditsClient({
   const [copied, setCopied] = useState(false);
 
   const requireLogin = () => {
-    if (!loggedIn && status !== "authenticated") {
+    if (!loggedIn) {
       router.push("/login?redirect=/credits");
       return true;
     }
@@ -67,7 +62,8 @@ export default function CreditsClient({
     if (requireLogin()) return;
     setLoadingId(pack.id);
     setError("");
-    track("credit_purchase", {
+    trackInitiateCheckout({ value: pack.price, currency: "THB" });
+    track("credit_checkout_started", {
       pack_id: pack.id,
       credits: pack.amount_credits,
       method: "stripe",
@@ -125,7 +121,7 @@ export default function CreditsClient({
         setSubmitting(false);
         return;
       }
-      track("credit_purchase", { pack_id: slipPackId, method: "slip" });
+      track("credit_checkout_started", { pack_id: slipPackId, method: "slip" });
       setSubmitted(true);
     } catch {
       setError("เกิดข้อผิดพลาด กรุณาลองใหม่");

@@ -2,7 +2,12 @@ import { NextRequest, NextResponse } from "next/server";
 import Stripe from "stripe";
 import { auth } from "@/lib/auth";
 import { db } from "@/lib/db";
-import { paymentOrders, questionSets, creditPacks } from "@/lib/db/schema";
+import {
+  paymentOrders,
+  questionSets,
+  creditPacks,
+  creditPurchases,
+} from "@/lib/db/schema";
 import { eq } from "drizzle-orm";
 import { randomUUID } from "crypto";
 import { STRIPE_PRICES } from "@/lib/stripe";
@@ -51,6 +56,12 @@ export async function POST(request: NextRequest) {
   const orderId = randomUUID();
   const invoiceData = body.invoiceData;
   let packAmountCredits = 0;
+  let orderFields: {
+    order_type: "subscription" | "set" | "credit";
+    plan_type?: "monthly" | "yearly";
+    set_id?: string;
+    amount: number;
+  };
 
   if (body.type === "subscription" && body.plan) {
     const priceInfo =
@@ -70,26 +81,11 @@ export async function POST(request: NextRequest) {
       },
     ];
     cancelUrl = `${SITE_URL()}/payment/${body.plan}`;
-
-    await db.insert(paymentOrders).values({
-      id: orderId,
-      user_id: session.user.id,
+    orderFields = {
       order_type: "subscription",
       plan_type: body.plan as "monthly" | "yearly",
       amount: priceInfo.amount / 100,
-      slip_url: "stripe",
-      status: "pending",
-      stripe_session_id: null,
-      payment_method: "stripe",
-      ...(invoiceData?.requested && {
-        invoice_requested: true,
-        invoice_type: invoiceData.type as "personal" | "company",
-        invoice_name: invoiceData.name,
-        invoice_tax_id: invoiceData.taxId,
-        invoice_address: invoiceData.address,
-        invoice_branch: invoiceData.branch || null,
-      }),
-    });
+    };
   } else if (body.type === "set" && body.setId) {
     const set = await db
       .select()
@@ -112,26 +108,7 @@ export async function POST(request: NextRequest) {
       },
     ];
     cancelUrl = `${SITE_URL()}/payment/set/${body.setId}`;
-
-    await db.insert(paymentOrders).values({
-      id: orderId,
-      user_id: session.user.id,
-      order_type: "set",
-      set_id: body.setId,
-      amount: set.price,
-      slip_url: "stripe",
-      status: "pending",
-      stripe_session_id: null,
-      payment_method: "stripe",
-      ...(invoiceData?.requested && {
-        invoice_requested: true,
-        invoice_type: invoiceData.type as "personal" | "company",
-        invoice_name: invoiceData.name,
-        invoice_tax_id: invoiceData.taxId,
-        invoice_address: invoiceData.address,
-        invoice_branch: invoiceData.branch || null,
-      }),
-    });
+    orderFields = { order_type: "set", set_id: body.setId, amount: set.price };
   } else if (body.type === "credit" && body.packId) {
     const pack = await db
       .select()
@@ -155,27 +132,40 @@ export async function POST(request: NextRequest) {
       },
     ];
     cancelUrl = `${SITE_URL()}/credits`;
-
-    await db.insert(paymentOrders).values({
-      id: orderId,
-      user_id: session.user.id,
-      order_type: "credit",
-      amount: pack.price,
-      slip_url: "stripe",
-      status: "pending",
-      stripe_session_id: null,
-      payment_method: "stripe",
-      ...(invoiceData?.requested && {
-        invoice_requested: true,
-        invoice_type: invoiceData.type as "personal" | "company",
-        invoice_name: invoiceData.name,
-        invoice_tax_id: invoiceData.taxId,
-        invoice_address: invoiceData.address,
-        invoice_branch: invoiceData.branch || null,
-      }),
-    });
+    orderFields = { order_type: "credit", amount: pack.price };
   } else {
     return NextResponse.json({ error: "invalid params" }, { status: 400 });
+  }
+
+  await db.insert(paymentOrders).values({
+    id: orderId,
+    user_id: session.user.id,
+    ...orderFields,
+    slip_url: "stripe",
+    status: "pending",
+    stripe_session_id: null,
+    payment_method: "stripe",
+    ...(invoiceData?.requested && {
+      invoice_requested: true,
+      invoice_type: invoiceData.type as "personal" | "company",
+      invoice_name: invoiceData.name,
+      invoice_tax_id: invoiceData.taxId,
+      invoice_address: invoiceData.address,
+      invoice_branch: invoiceData.branch || null,
+    }),
+  });
+
+  // Pre-create the pending purchase (like the slip flow) so a lost webhook can
+  // still be resolved by manual admin approval.
+  if (body.type === "credit" && body.packId) {
+    await db.insert(creditPurchases).values({
+      id: randomUUID(),
+      user_id: session.user.id,
+      pack_id: body.packId,
+      payment_order_id: orderId,
+      status: "pending",
+      amount_credits: packAmountCredits,
+    });
   }
 
   const stripe = getStripe();

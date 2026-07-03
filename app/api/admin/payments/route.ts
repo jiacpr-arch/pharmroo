@@ -64,27 +64,32 @@ export async function PATCH(req: NextRequest) {
         .set({ status: "active", purchased_at: new Date().toISOString() })
         .where(eq(setPurchases.payment_order_id, orderId));
     } else if (order.order_type === "credit") {
-      // Activate credit purchase(s) for this order and top up the balance.
-      // Guard on status "pending" so re-approving never double-credits.
-      const pending = await db
-        .update(creditPurchases)
-        .set({ status: "active", purchased_at: new Date().toISOString() })
-        .where(
-          and(
-            eq(creditPurchases.payment_order_id, orderId),
-            eq(creditPurchases.status, "pending")
+      // Activate credit purchase(s) and top up the balance in ONE transaction.
+      // The "pending" guard makes re-approval a no-op (no double credits), and
+      // atomicity means a failure rolls back the activation so approve can be
+      // retried safely.
+      await db.transaction(async (tx) => {
+        const pending = await tx
+          .update(creditPurchases)
+          .set({ status: "active", purchased_at: new Date().toISOString() })
+          .where(
+            and(
+              eq(creditPurchases.payment_order_id, orderId),
+              eq(creditPurchases.status, "pending")
+            )
           )
-        )
-        .returning({ amount_credits: creditPurchases.amount_credits });
+          .returning({ amount_credits: creditPurchases.amount_credits });
 
-      const totalCredits = pending.reduce((s, r) => s + r.amount_credits, 0);
-      if (totalCredits > 0) {
-        await addCredits(order.user_id, totalCredits, {
-          type: "purchase",
-          relatedId: orderId,
-          note: "manual slip top-up",
-        });
-      }
+        const totalCredits = pending.reduce((s, r) => s + r.amount_credits, 0);
+        if (totalCredits > 0) {
+          await addCredits(
+            order.user_id!,
+            totalCredits,
+            { type: "purchase", relatedId: orderId, note: "manual slip top-up" },
+            tx
+          );
+        }
+      });
     } else {
       // Update subscription membership
       const expiresAt = new Date();
