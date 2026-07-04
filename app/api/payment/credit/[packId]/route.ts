@@ -31,7 +31,7 @@ export async function POST(
   }
 
   const { packId } = await params;
-  const { slipBase64 } = await req.json();
+  const { slipBase64, invoiceData } = await req.json();
 
   const pack = await db
     .select()
@@ -51,6 +51,14 @@ export async function POST(
     amount: pack.price,
     slip_url: slipBase64 || "pending",
     status: "pending",
+    ...(invoiceData?.requested && {
+      invoice_requested: true,
+      invoice_type: invoiceData.type,
+      invoice_name: invoiceData.name,
+      invoice_tax_id: invoiceData.taxId,
+      invoice_address: invoiceData.address,
+      invoice_branch: invoiceData.branch || null,
+    }),
   });
 
   await db.insert(creditPurchases).values({

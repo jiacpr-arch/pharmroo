@@ -8,17 +8,11 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import {
-  ArrowLeft, Building2, Copy, Check, Upload, ImageIcon,
-  Loader2, CheckCircle, AlertCircle, Package, CreditCard,
+  ArrowLeft, Loader2, CheckCircle, AlertCircle, Package, CreditCard,
 } from "lucide-react";
 import InvoiceForm, { defaultInvoiceData, type InvoiceData } from "@/components/invoice-form";
+import BankTransferCard from "@/components/payment/BankTransferCard";
 import type { QuestionSet } from "@/lib/types-mcq";
-
-const BANK_INFO = {
-  bank: "ธนาคารกสิกรไทย",
-  accountNumber: "134-3-11564-0",
-  accountName: "บริษัท โรจน์รุ่งธุรกิจ จำกัด",
-};
 
 export default function PaymentSetPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = use(params);
@@ -29,9 +23,6 @@ export default function PaymentSetPage({ params }: { params: Promise<{ id: strin
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState("");
-  const [copied, setCopied] = useState(false);
-  const [slipFile, setSlipFile] = useState<File | null>(null);
-  const [slipPreview, setSlipPreview] = useState<string | null>(null);
   const [stripeLoading, setStripeLoading] = useState(false);
   const [invoiceData, setInvoiceData] = useState<InvoiceData>(defaultInvoiceData);
 
@@ -45,24 +36,6 @@ export default function PaymentSetPage({ params }: { params: Promise<{ id: strin
       .then((data) => { if (data) setSet(data); else router.push("/sets"); setLoading(false); })
       .catch(() => { router.push("/sets"); });
   }, [id, router]);
-
-  const copyAccountNumber = () => {
-    navigator.clipboard.writeText("1343115640");
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
-
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (!file) return;
-    if (!file.type.startsWith("image/")) { setError("กรุณาเลือกไฟล์รูปภาพเท่านั้น"); return; }
-    if (file.size > 5 * 1024 * 1024) { setError("ไฟล์ต้องมีขนาดไม่เกิน 5MB"); return; }
-    setError("");
-    setSlipFile(file);
-    const reader = new FileReader();
-    reader.onload = (ev) => setSlipPreview(ev.target?.result as string);
-    reader.readAsDataURL(file);
-  };
 
   const handleStripeCheckout = async () => {
     if (!set) return;
@@ -83,15 +56,15 @@ export default function PaymentSetPage({ params }: { params: Promise<{ id: strin
     }
   };
 
-  const handleSubmit = async () => {
-    if (!slipFile || !set) return;
+  const handleSubmit = async (slipBase64: string) => {
+    if (!set) return;
     setSubmitting(true);
     setError("");
 
     const res = await fetch(`/api/payment/set/${id}`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ slipBase64: slipPreview, invoiceData }),
+      body: JSON.stringify({ slipBase64, invoiceData }),
     });
 
     if (!res.ok) {
@@ -173,53 +146,12 @@ export default function PaymentSetPage({ params }: { params: Promise<{ id: strin
           </CardContent>
         </Card>
 
-        <Card className="border-brand/20">
-          <CardHeader><h2 className="font-semibold flex items-center gap-2"><Building2 className="h-5 w-5 text-brand" />ข้อมูลการโอนเงิน</h2></CardHeader>
-          <CardContent className="space-y-4">
-            <div className="rounded-lg bg-green-50 border border-green-200 p-4 space-y-3">
-              <div className="flex items-center justify-between"><span className="text-sm text-muted-foreground">ธนาคาร</span><span className="font-medium text-green-800">{BANK_INFO.bank}</span></div>
-              <div className="flex items-center justify-between">
-                <span className="text-sm text-muted-foreground">เลขที่บัญชี</span>
-                <div className="flex items-center gap-2">
-                  <span className="font-mono font-bold text-lg text-green-800">{BANK_INFO.accountNumber}</span>
-                  <Button variant="ghost" size="icon" className="h-8 w-8" onClick={copyAccountNumber}>
-                    {copied ? <Check className="h-4 w-4 text-green-600" /> : <Copy className="h-4 w-4" />}
-                  </Button>
-                </div>
-              </div>
-              <div className="flex items-center justify-between"><span className="text-sm text-muted-foreground">ชื่อบัญชี</span><span className="font-medium text-green-800">{BANK_INFO.accountName}</span></div>
-              <div className="flex items-center justify-between pt-2 border-t border-green-200"><span className="text-sm font-medium text-green-700">ยอดที่ต้องโอน</span><span className="text-xl font-bold text-green-800">฿{set.price.toLocaleString()}.00</span></div>
-            </div>
-            <div className="rounded-lg bg-amber-50 border border-amber-200 p-3">
-              <p className="text-sm text-amber-800"><strong>สำคัญ:</strong> กรุณาโอนตามยอดที่ระบุ แล้วแนบสลิปด้านล่าง</p>
-            </div>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardHeader><h2 className="font-semibold flex items-center gap-2"><Upload className="h-5 w-5 text-brand" />แนบสลิปการโอนเงิน</h2></CardHeader>
-          <CardContent className="space-y-4">
-            {slipPreview ? (
-              <div className="space-y-3">
-                <div className="relative rounded-lg overflow-hidden border bg-muted">
-                  <img src={slipPreview} alt="สลิป" className="w-full max-h-80 object-contain" />
-                </div>
-                <Button variant="outline" size="sm" onClick={() => { setSlipFile(null); setSlipPreview(null); }}>เปลี่ยนรูป</Button>
-              </div>
-            ) : (
-              <label className="flex flex-col items-center justify-center h-48 rounded-lg border-2 border-dashed border-muted-foreground/30 bg-muted/30 cursor-pointer hover:bg-muted/50 transition-colors">
-                <ImageIcon className="h-10 w-10 text-muted-foreground/50 mb-2" />
-                <span className="text-sm font-medium text-muted-foreground">คลิกเพื่อเลือกรูปสลิป</span>
-                <span className="text-xs text-muted-foreground/60 mt-1">PNG, JPG ขนาดไม่เกิน 5MB</span>
-                <input type="file" accept="image/*" className="hidden" onChange={handleFileChange} />
-              </label>
-            )}
-            {error && <div className="flex items-center gap-2 text-sm text-destructive"><AlertCircle className="h-4 w-4" />{error}</div>}
-            <Button className="w-full bg-brand hover:bg-brand-light text-white" size="lg" disabled={!slipFile || submitting} onClick={handleSubmit}>
-              {submitting ? <><Loader2 className="h-4 w-4 mr-2 animate-spin" />กำลังส่ง...</> : "ยืนยันการชำระเงิน"}
-            </Button>
-          </CardContent>
-        </Card>
+        <BankTransferCard
+          amount={set.price}
+          onSubmit={handleSubmit}
+          submitting={submitting}
+          error={error}
+        />
       </div>
     </div>
   );

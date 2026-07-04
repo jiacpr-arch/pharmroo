@@ -6,7 +6,7 @@ import { db } from "@/lib/db";
 import { users } from "@/lib/db/schema";
 import { eq } from "drizzle-orm";
 import bcrypt from "bcryptjs";
-import { grantWelcomeCredits } from "@/lib/db/queries-credits";
+import { createUser } from "@/lib/db/create-user";
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
   session: { strategy: "jwt" },
@@ -67,16 +67,10 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
           .then(rows => rows[0]);
 
         if (!existing) {
-          const newId = crypto.randomUUID();
-          await db.insert(users).values({
-            id: newId,
+          user.id = await createUser({
             email: user.email,
             name: user.name || user.email.split("@")[0],
-            membership_type: "free",
-            role: "user",
           });
-          await grantWelcomeCredits(newId);
-          user.id = newId;
         } else {
           user.id = existing.id;
         }
@@ -111,24 +105,17 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         }
 
         if (!existing) {
-          const newId = crypto.randomUUID();
           const userEmail =
             user.email || `line_${lineUserId}@line.pharmroo.com`;
           const userName =
             user.name ||
             (profile as { name?: string } | undefined)?.name ||
             "LINE User";
-          await db.insert(users).values({
-            id: newId,
+          user.id = await createUser({
             email: userEmail,
             name: userName,
-            membership_type: "free",
-            role: "user",
             line_user_id: lineUserId,
-            line_linked_at: new Date().toISOString(),
           });
-          await grantWelcomeCredits(newId);
-          user.id = newId;
           user.email = userEmail;
         } else {
           user.id = existing.id;
