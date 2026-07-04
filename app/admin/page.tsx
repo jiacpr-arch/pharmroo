@@ -7,7 +7,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { Shield, Loader2, BookOpen, CreditCard, Users, GraduationCap } from "lucide-react";
+import { Shield, Loader2, BookOpen, CreditCard, Users, GraduationCap, Coins } from "lucide-react";
 
 export default function AdminDashboard() {
   const { data: session, status } = useSession();
@@ -190,6 +190,19 @@ export default function AdminDashboard() {
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground">ดูข้อมูลสมาชิก แก้ไขสมาชิกภาพ และกำหนดสิทธิ์</p>
+            </CardContent>
+          </Card>
+        </Link>
+        <Link href="/admin/credits">
+          <Card className="hover:shadow-md transition-shadow cursor-pointer h-full">
+            <CardHeader className="pb-2">
+              <div className="flex items-center gap-2">
+                <Coins className="h-5 w-5 text-brand" />
+                <h3 className="font-bold">สรุปเครดิต</h3>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <p className="text-sm text-muted-foreground">ยอดขาย ยอดใช้ และเครดิตค้างในระบบ สำหรับปิดบัญชีรายเดือน</p>
             </CardContent>
           </Card>
         </Link>
