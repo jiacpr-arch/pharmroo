@@ -3,6 +3,7 @@ import { Sarabun } from "next/font/google";
 import { Geist_Mono } from "next/font/google";
 import { SessionProvider } from "next-auth/react";
 import { Analytics } from "@vercel/analytics/next";
+import PostHogAnalytics from "@/components/PostHogAnalytics";
 import { Suspense } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -117,6 +118,7 @@ export default function RootLayout({
           <Suspense fallback={null}>
             <FloatingLineButton />
           </Suspense>
+          <PostHogAnalytics />
         </SessionProvider>
         <Analytics />
       </body>

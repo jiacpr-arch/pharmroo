@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { track } from "@vercel/analytics";
+import { trackEvent } from "@/lib/analytics/events";
 import { trackInitiateCheckout } from "@/lib/analytics/conversions";
 import InvoiceForm, {
   defaultInvoiceData,
@@ -58,7 +58,7 @@ export default function CreditsClient({
     setLoadingId(pack.id);
     setError("");
     trackInitiateCheckout({ value: pack.price, currency: "THB" });
-    track("credit_checkout_started", {
+    trackEvent("credit_checkout_started", {
       pack_id: pack.id,
       credits: pack.amount_credits,
       method: "stripe",
@@ -99,7 +99,7 @@ export default function CreditsClient({
         setSubmitting(false);
         return;
       }
-      track("credit_checkout_started", { pack_id: slipPackId, method: "slip" });
+      trackEvent("credit_checkout_started", { pack_id: slipPackId, method: "slip" });
       setSubmitted(true);
     } catch {
       setError("เกิดข้อผิดพลาด กรุณาลองใหม่");
