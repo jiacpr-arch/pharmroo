@@ -11,6 +11,7 @@ import {
 import { eq } from "drizzle-orm";
 import { randomUUID } from "crypto";
 import { STRIPE_PRICES } from "@/lib/stripe";
+import { promptpayEnabled } from "@/lib/promptpay";
 
 export const runtime = "nodejs";
 
@@ -173,6 +174,10 @@ export async function POST(request: NextRequest) {
   const checkoutSession = await stripe.checkout.sessions.create({
     mode: "payment",
     currency: "thb",
+    // Requires PromptPay activated in the Stripe dashboard before enabling.
+    ...(promptpayEnabled() && {
+      payment_method_types: ["promptpay", "card"] as const,
+    }),
     customer_email: session.user.email,
     line_items: lineItems,
     success_url: `${SITE_URL()}/payment/success?session_id={CHECKOUT_SESSION_ID}`,

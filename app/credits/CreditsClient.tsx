@@ -12,6 +12,7 @@ import InvoiceForm, {
   type InvoiceData,
 } from "@/components/invoice-form";
 import BankTransferCard from "@/components/payment/BankTransferCard";
+import { promptpayEnabled } from "@/lib/promptpay";
 import type { CreditPack } from "@/lib/db/schema";
 import {
   ArrowLeft,
@@ -207,7 +208,7 @@ export default function CreditsClient({
                   ) : (
                     <>
                       <Coins className="h-4 w-4" />
-                      ซื้อด้วยบัตร
+                      {promptpayEnabled() ? "ซื้อ (PromptPay / บัตร)" : "ซื้อด้วยบัตร"}
                     </>
                   )}
                 </Button>
