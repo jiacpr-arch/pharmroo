@@ -7,6 +7,11 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { track } from "@vercel/analytics";
 import { trackInitiateCheckout } from "@/lib/analytics/conversions";
+import InvoiceForm, {
+  defaultInvoiceData,
+  type InvoiceData,
+} from "@/components/invoice-form";
+import BankTransferCard from "@/components/payment/BankTransferCard";
 import type { CreditPack } from "@/lib/db/schema";
 import {
   ArrowLeft,
@@ -15,20 +20,10 @@ import {
   AlertCircle,
   Crown,
   Check,
-  Building2,
-  Copy,
-  Upload,
-  ImageIcon,
   CheckCircle,
 } from "lucide-react";
 
 type Pack = Pick<CreditPack, "id" | "name_th" | "amount_credits" | "price">;
-
-const BANK_INFO = {
-  bank: "ธนาคารกสิกรไทย",
-  accountNumber: "134-3-11564-0",
-  accountName: "บริษัท โรจน์รุ่งธุรกิจ จำกัด",
-};
 
 export default function CreditsClient({
   packs,
@@ -45,10 +40,9 @@ export default function CreditsClient({
 
   // Manual bank-transfer state
   const [slipPackId, setSlipPackId] = useState<string | null>(null);
-  const [slipPreview, setSlipPreview] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
-  const [copied, setCopied] = useState(false);
+  const [invoiceData, setInvoiceData] = useState<InvoiceData>(defaultInvoiceData);
 
   const requireLogin = () => {
     if (!loggedIn) {
@@ -72,7 +66,7 @@ export default function CreditsClient({
       const res = await fetch("/api/billing/checkout", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ type: "credit", packId: pack.id }),
+        body: JSON.stringify({ type: "credit", packId: pack.id, invoiceData }),
       });
       const data = await res.json();
       if (!res.ok) {
@@ -87,25 +81,8 @@ export default function CreditsClient({
     }
   };
 
-  const handleSlipFile = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (!file) return;
-    if (!file.type.startsWith("image/")) {
-      setError("กรุณาเลือกไฟล์รูปภาพเท่านั้น");
-      return;
-    }
-    if (file.size > 5 * 1024 * 1024) {
-      setError("ไฟล์ต้องมีขนาดไม่เกิน 5MB");
-      return;
-    }
-    setError("");
-    const reader = new FileReader();
-    reader.onload = (ev) => setSlipPreview(ev.target?.result as string);
-    reader.readAsDataURL(file);
-  };
-
-  const handleSlipSubmit = async () => {
-    if (!slipPackId || !slipPreview) return;
+  const handleSlipSubmit = async (slipBase64: string) => {
+    if (!slipPackId) return;
     if (requireLogin()) return;
     setSubmitting(true);
     setError("");
@@ -113,7 +90,7 @@ export default function CreditsClient({
       const res = await fetch(`/api/payment/credit/${slipPackId}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ slipBase64: slipPreview }),
+        body: JSON.stringify({ slipBase64, invoiceData }),
       });
       if (!res.ok) {
         const d = await res.json();
@@ -237,7 +214,6 @@ export default function CreditsClient({
                 <button
                   onClick={() => {
                     setSlipPackId(pack.id);
-                    setSlipPreview(null);
                     setError("");
                   }}
                   className="w-full text-xs text-muted-foreground hover:text-brand hover:underline"
@@ -272,117 +248,28 @@ export default function CreditsClient({
         </CardContent>
       </Card>
 
+      {/* Tax invoice request — applies to both Stripe and bank-transfer purchases */}
+      <div className="mt-6">
+        <InvoiceForm value={invoiceData} onChange={setInvoiceData} />
+      </div>
+
       {/* Manual bank transfer */}
       {selectedPack && (
-        <Card className="mt-6 border-brand/20">
-          <CardHeader>
-            <h2 className="font-semibold flex items-center gap-2">
-              <Building2 className="h-5 w-5 text-brand" />
+        <div className="mt-6 space-y-6">
+          <div className="flex items-center gap-3">
+            <div className="flex-1 border-t" />
+            <span className="text-sm text-muted-foreground">
               โอนผ่านธนาคาร — {selectedPack.name_th}
-            </h2>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <div className="rounded-lg bg-green-50 border border-green-200 p-4 space-y-3">
-              <div className="flex items-center justify-between">
-                <span className="text-sm text-muted-foreground">ธนาคาร</span>
-                <span className="font-medium text-green-800">{BANK_INFO.bank}</span>
-              </div>
-              <div className="flex items-center justify-between">
-                <span className="text-sm text-muted-foreground">เลขที่บัญชี</span>
-                <div className="flex items-center gap-2">
-                  <span className="font-mono font-bold text-green-800">
-                    {BANK_INFO.accountNumber}
-                  </span>
-                  <Button
-                    variant="ghost"
-                    size="icon"
-                    className="h-8 w-8"
-                    onClick={() => {
-                      navigator.clipboard.writeText("1343115640");
-                      setCopied(true);
-                      setTimeout(() => setCopied(false), 2000);
-                    }}
-                  >
-                    {copied ? (
-                      <Check className="h-4 w-4 text-green-600" />
-                    ) : (
-                      <Copy className="h-4 w-4" />
-                    )}
-                  </Button>
-                </div>
-              </div>
-              <div className="flex items-center justify-between">
-                <span className="text-sm text-muted-foreground">ชื่อบัญชี</span>
-                <span className="font-medium text-green-800">
-                  {BANK_INFO.accountName}
-                </span>
-              </div>
-              <div className="flex items-center justify-between pt-2 border-t border-green-200">
-                <span className="text-sm font-medium text-green-700">
-                  ยอดที่ต้องโอน
-                </span>
-                <span className="text-xl font-bold text-green-800">
-                  ฿{selectedPack.price.toLocaleString()}.00
-                </span>
-              </div>
-            </div>
-
-            {slipPreview ? (
-              <div className="space-y-3">
-                <div className="relative rounded-lg overflow-hidden border bg-muted">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={slipPreview}
-                    alt="สลิปการโอนเงิน"
-                    className="w-full max-h-80 object-contain"
-                  />
-                </div>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={() => setSlipPreview(null)}
-                >
-                  เปลี่ยนรูป
-                </Button>
-              </div>
-            ) : (
-              <label className="flex flex-col items-center justify-center h-40 rounded-lg border-2 border-dashed border-muted-foreground/30 bg-muted/30 cursor-pointer hover:bg-muted/50 transition-colors">
-                <ImageIcon className="h-10 w-10 text-muted-foreground/50 mb-2" />
-                <span className="text-sm font-medium text-muted-foreground">
-                  คลิกเพื่อเลือกรูปสลิป
-                </span>
-                <span className="text-xs text-muted-foreground/60 mt-1">
-                  PNG, JPG ขนาดไม่เกิน 5MB
-                </span>
-                <input
-                  type="file"
-                  accept="image/*"
-                  className="hidden"
-                  onChange={handleSlipFile}
-                />
-              </label>
-            )}
-
-            <Button
-              className="w-full gap-2 bg-brand hover:bg-brand-light text-white"
-              size="lg"
-              disabled={!slipPreview || submitting}
-              onClick={handleSlipSubmit}
-            >
-              {submitting ? (
-                <>
-                  <Loader2 className="h-4 w-4 animate-spin" />
-                  กำลังส่ง...
-                </>
-              ) : (
-                <>
-                  <Upload className="h-4 w-4" />
-                  ยืนยันการชำระเงิน
-                </>
-              )}
-            </Button>
-          </CardContent>
-        </Card>
+            </span>
+            <div className="flex-1 border-t" />
+          </div>
+          <BankTransferCard
+            amount={selectedPack.price}
+            onSubmit={handleSlipSubmit}
+            submitting={submitting}
+            error={error}
+          />
+        </div>
       )}
     </div>
   );

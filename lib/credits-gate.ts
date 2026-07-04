@@ -38,6 +38,25 @@ export function getViewerGate(session: unknown): ViewerGate {
  * `summary` is kept because the free tier already shows it, and `detailed_locked`
  * tells the client to render the "unlock with 1 credit" prompt.
  */
+/**
+ * Strip the paid parts of a question's detailed explanation, keeping only the
+ * free summary, and mark it locked. No-op for questions without one.
+ */
+export function stripDetailedContent(q: McqQuestion): McqQuestion {
+  if (!q.detailed_explanation) return q;
+  return {
+    ...q,
+    detailed_locked: true,
+    detailed_explanation: {
+      summary: q.detailed_explanation.summary ?? "",
+      reason: "",
+      choices: [],
+      key_takeaway: "",
+      calculation_steps: [],
+    },
+  };
+}
+
 export function gateQuestionsForViewer(
   questions: McqQuestion[],
   opts: { isPaid: boolean; unlockedIds: Iterable<string> }
@@ -46,20 +65,9 @@ export function gateQuestionsForViewer(
 
   const unlocked = new Set(opts.unlockedIds);
 
-  return questions.map((q) => {
-    if (!q.detailed_explanation || unlocked.has(q.id)) return q;
-    return {
-      ...q,
-      detailed_locked: true,
-      detailed_explanation: {
-        summary: q.detailed_explanation.summary ?? "",
-        reason: "",
-        choices: [],
-        key_takeaway: "",
-        calculation_steps: [],
-      },
-    };
-  });
+  return questions.map((q) =>
+    unlocked.has(q.id) ? q : stripDetailedContent(q)
+  );
 }
 
 /**
