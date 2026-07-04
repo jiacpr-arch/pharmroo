@@ -63,6 +63,13 @@ CREATE UNIQUE INDEX IF NOT EXISTS uq_user_question_unlock
 CREATE INDEX IF NOT EXISTS idx_credit_ledger_user ON credit_ledger(user_id);
 CREATE INDEX IF NOT EXISTS idx_credit_purchases_user ON credit_purchases(user_id);
 
+-- Match the RLS posture of the rest of the schema: the app connects directly
+-- as postgres (bypasses RLS); enabling RLS with no policies blocks anon access.
+ALTER TABLE credit_packs ENABLE ROW LEVEL SECURITY;
+ALTER TABLE credit_purchases ENABLE ROW LEVEL SECURITY;
+ALTER TABLE credit_ledger ENABLE ROW LEVEL SECURITY;
+ALTER TABLE question_unlocks ENABLE ROW LEVEL SECURITY;
+
 -- 7. Seed the three launch packs (entry / main / pre-subscription ceiling)
 INSERT INTO credit_packs (name_th, amount_credits, price, sort_order)
 SELECT * FROM (VALUES
