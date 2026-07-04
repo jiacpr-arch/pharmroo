@@ -13,6 +13,7 @@ import {
 import InvoiceForm, { defaultInvoiceData, type InvoiceData } from "@/components/invoice-form";
 import BankTransferCard from "@/components/payment/BankTransferCard";
 import { trackInitiateCheckout } from "@/lib/analytics/conversions";
+import { promptpayEnabled } from "@/lib/promptpay";
 
 const PLANS: Record<string, { name: string; price: number; period: string }> = {
   monthly: { name: "รายเดือน", price: 249, period: "/ เดือน" },
@@ -120,9 +121,9 @@ export default function PaymentPage({ params }: { params: Promise<{ plan: string
 
         {/* Stripe Payment */}
         <Card className="border-purple-200 bg-purple-50/30">
-          <CardHeader><h2 className="font-semibold flex items-center gap-2"><CreditCard className="h-5 w-5 text-purple-600" />ชำระด้วยบัตรเครดิต / เดบิต</h2></CardHeader>
+          <CardHeader><h2 className="font-semibold flex items-center gap-2"><CreditCard className="h-5 w-5 text-purple-600" />{promptpayEnabled() ? "ชำระผ่าน PromptPay / บัตรเครดิต" : "ชำระด้วยบัตรเครดิต / เดบิต"}</h2></CardHeader>
           <CardContent className="space-y-3">
-            <p className="text-sm text-muted-foreground">ชำระผ่าน Stripe — ปลอดภัย เปิดใช้งานทันที รองรับ Visa, Mastercard</p>
+            <p className="text-sm text-muted-foreground">{promptpayEnabled() ? "สแกน QR PromptPay หรือจ่ายด้วยบัตร — ปลอดภัย เปิดใช้งานทันที" : "ชำระผ่าน Stripe — ปลอดภัย เปิดใช้งานทันที รองรับ Visa, Mastercard"}</p>
             {error && <div className="flex items-center gap-2 text-sm text-destructive"><AlertCircle className="h-4 w-4" />{error}</div>}
             <Button
               className="w-full bg-purple-600 hover:bg-purple-700 text-white"
