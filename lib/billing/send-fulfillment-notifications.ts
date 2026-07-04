@@ -11,11 +11,18 @@ export async function sendFulfillmentNotifications(
   data: FulfillmentNotifyPayload
 ): Promise<void> {
   // 1. LINE notify referrer (if applicable)
-  if (data.referrerLineUserId && data.referrerRewardDays > 0) {
+  if (
+    data.referrerLineUserId &&
+    (data.referrerRewardDays > 0 || data.referrerRewardCredits > 0)
+  ) {
     try {
+      const rewardText =
+        data.referrerRewardCredits > 0
+          ? `+${data.referrerRewardCredits} เครดิต`
+          : `+${data.referrerRewardDays} วัน`;
       await sendLineMessage(
         data.referrerLineUserId,
-        `🎉 เพื่อนที่คุณชวนสมัครแล้ว! คุณได้รับสิทธิ์เพิ่ม +${data.referrerRewardDays} วัน`
+        `🎉 เพื่อนที่คุณชวนสมัครแล้ว! คุณได้รับสิทธิ์เพิ่ม ${rewardText}`
       );
     } catch (err) {
       console.error("[notify] referrer LINE failed:", err);

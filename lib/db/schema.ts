@@ -313,7 +313,11 @@ export const referrals = pgTable("referrals", {
   status: text("status", { enum: ["pending", "rewarded"] })
     .notNull()
     .default("pending"),
+  reward_type: text("reward_type", { enum: ["days", "credits"] })
+    .notNull()
+    .default("days"),
   reward_days: integer("reward_days").notNull().default(30),
+  reward_credits: integer("reward_credits").notNull().default(0),
   rewarded_at: text("rewarded_at"),
   created_at: text("created_at")
     .notNull()
@@ -368,7 +372,7 @@ export const creditLedger = pgTable("credit_ledger", {
     .notNull()
     .references(() => users.id, { onDelete: "cascade" }),
   type: text("type", {
-    enum: ["welcome", "purchase", "spend", "refund", "admin"],
+    enum: ["welcome", "purchase", "spend", "refund", "admin", "referral"],
   }).notNull(),
   amount: integer("amount").notNull(), // signed: +credits added, -credits spent
   balance_after: integer("balance_after").notNull(),

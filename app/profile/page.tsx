@@ -249,7 +249,8 @@ function ReferralSection() {
     return (
       <div className="space-y-3">
         <p className="text-sm text-muted-foreground">
-          ชวนเพื่อนสมัคร PharmRoo เมื่อเพื่อนจ่ายเงิน คุณได้ +30 วันฟรี!
+          ชวนเพื่อนสมัคร PharmRoo — เพื่อนได้ +5 เครดิตทันที
+          และเมื่อเพื่อนจ่ายเงิน คุณได้ +30 วันฟรี!
         </p>
         <Button onClick={generateLink} disabled={loading} variant="outline" className="w-full">
           {loading ? "กำลังสร้างลิงก์..." : "สร้างลิงก์เชิญเพื่อน"}
@@ -261,7 +262,8 @@ function ReferralSection() {
   return (
     <div className="space-y-3">
       <p className="text-sm text-muted-foreground">
-        แชร์ลิงก์นี้ให้เพื่อน เมื่อเพื่อนสมัครและจ่ายเงิน คุณได้ +30 วันฟรี!
+        แชร์ลิงก์นี้ให้เพื่อน — เพื่อนได้ +5 เครดิตทันที
+        และเมื่อเพื่อนสมัครแล้วจ่ายเงิน คุณได้ +30 วันฟรี!
       </p>
       <div className="flex items-center gap-2">
         <code className="flex-1 bg-muted px-3 py-2 rounded-lg text-xs truncate">

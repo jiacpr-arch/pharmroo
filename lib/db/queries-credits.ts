@@ -9,7 +9,13 @@ import { and, eq, gte, inArray, sql } from "drizzle-orm";
 import { randomUUID } from "crypto";
 import type { CreditPack } from "./schema";
 
-export type CreditLedgerType = "welcome" | "purchase" | "spend" | "refund" | "admin";
+export type CreditLedgerType =
+  | "welcome"
+  | "purchase"
+  | "spend"
+  | "refund"
+  | "admin"
+  | "referral";
 
 /** `db` or a transaction handle — both expose the same query/transaction API. */
 type DbExecutor = typeof db | Parameters<Parameters<typeof db.transaction>[0]>[0];

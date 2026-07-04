@@ -39,6 +39,7 @@ export interface FulfillmentNotifyPayload {
   buyerLineUserId: string | null;
   referrerLineUserId: string | null;
   referrerRewardDays: number;
+  referrerRewardCredits: number;
   productName: string;
   stripeSessionId: string;
 }
@@ -253,6 +254,7 @@ export async function fulfillCheckoutSession(
   // purchase) must not consume the referral or pay out the full reward.
   let referrerLineUserId: string | null = null;
   let referrerRewardDays = 0;
+  let referrerRewardCredits = 0;
 
   const referral =
     orderType === "subscription"
@@ -264,9 +266,6 @@ export async function fulfillCheckoutSession(
       : undefined;
 
   if (referral) {
-    referrerRewardDays = referral.reward_days;
-
-    // Extend referrer's membership
     const referrer = await db
       .select()
       .from(users)
@@ -275,16 +274,29 @@ export async function fulfillCheckoutSession(
 
     if (referrer) {
       referrerLineUserId = referrer.line_user_id ?? null;
-      const currentExpiry = referrer.membership_expires_at
-        ? new Date(referrer.membership_expires_at)
-        : new Date();
-      const base = currentExpiry > new Date() ? currentExpiry : new Date();
-      base.setDate(base.getDate() + referral.reward_days);
 
-      await db
-        .update(users)
-        .set({ membership_expires_at: base.toISOString() })
-        .where(eq(users.id, referral.referrer_id));
+      if (referral.reward_type === "credits" && referral.reward_credits > 0) {
+        // Reward in unlock credits
+        referrerRewardCredits = referral.reward_credits;
+        await addCredits(referral.referrer_id, referral.reward_credits, {
+          type: "referral",
+          relatedId: referral.id,
+          note: "referral reward",
+        });
+      } else {
+        // Reward in membership days (original behavior)
+        referrerRewardDays = referral.reward_days;
+        const currentExpiry = referrer.membership_expires_at
+          ? new Date(referrer.membership_expires_at)
+          : new Date();
+        const base = currentExpiry > new Date() ? currentExpiry : new Date();
+        base.setDate(base.getDate() + referral.reward_days);
+
+        await db
+          .update(users)
+          .set({ membership_expires_at: base.toISOString() })
+          .where(eq(users.id, referral.referrer_id));
+      }
 
       await db
         .update(referrals)
@@ -321,6 +333,7 @@ export async function fulfillCheckoutSession(
       buyerLineUserId: buyer?.line_user_id ?? null,
       referrerLineUserId,
       referrerRewardDays,
+      referrerRewardCredits,
       productName,
       stripeSessionId: session.id,
     },

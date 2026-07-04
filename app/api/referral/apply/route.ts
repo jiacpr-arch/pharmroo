@@ -1,13 +1,20 @@
 import { NextRequest, NextResponse } from "next/server";
 import { auth } from "@/lib/auth";
 import { db } from "@/lib/db";
-import { users, referrals } from "@/lib/db/schema";
-import { eq } from "drizzle-orm";
+import { users, referrals, appSettings } from "@/lib/db/schema";
+import { eq, inArray } from "drizzle-orm";
 import { randomUUID } from "crypto";
+import { addCredits } from "@/lib/db/queries-credits";
+
+/** Signup bonus for the referred friend — free unlocks to try the product. */
+const REFERRED_BONUS_CREDITS = 5;
 
 /**
  * Apply a referral code to the logged-in user.
- * Creates a pending referral → rewarded when user pays.
+ * Creates a pending referral → rewarded when user pays (subscription).
+ * The reward type/amount is stamped at apply time from app_settings
+ * (`referral_reward_type`: 'days' | 'credits', `referral_reward_credits`),
+ * defaulting to the original 30-days reward.
  */
 export async function POST(request: NextRequest) {
   const session = await auth();
@@ -53,6 +60,24 @@ export async function POST(request: NextRequest) {
     );
   }
 
+  // Reward configuration (admin-tunable via app_settings; defaults preserved)
+  const settings = await db
+    .select()
+    .from(appSettings)
+    .where(
+      inArray(appSettings.key, [
+        "referral_reward_type",
+        "referral_reward_credits",
+      ])
+    );
+  const settingMap = Object.fromEntries(settings.map((s) => [s.key, s.value]));
+  const rewardType =
+    settingMap["referral_reward_type"] === "credits" ? "credits" : "days";
+  const rewardCredits =
+    rewardType === "credits"
+      ? Math.max(0, Number(settingMap["referral_reward_credits"] ?? 0)) || 25
+      : 0;
+
   // Create pending referral
   await db.insert(referrals).values({
     id: randomUUID(),
@@ -60,7 +85,9 @@ export async function POST(request: NextRequest) {
     referred_id: session.user.id,
     code,
     status: "pending",
+    reward_type: rewardType,
     reward_days: 30,
+    reward_credits: rewardCredits,
   });
 
   // Mark user as referred
@@ -69,5 +96,17 @@ export async function POST(request: NextRequest) {
     .set({ referred_by: code })
     .where(eq(users.id, session.user.id));
 
-  return NextResponse.json({ ok: true, message: "Referral applied" });
+  // Signup bonus for the referred friend (once — the 409 above guarantees a
+  // user can only ever apply one code).
+  await addCredits(session.user.id, REFERRED_BONUS_CREDITS, {
+    type: "referral",
+    relatedId: code,
+    note: "referred signup bonus",
+  }).catch((err) => console.error("[referral] bonus grant failed:", err));
+
+  return NextResponse.json({
+    ok: true,
+    message: "Referral applied",
+    bonus_credits: REFERRED_BONUS_CREDITS,
+  });
 }
