@@ -149,6 +149,9 @@ export default function CreditsClient({
         <p className="text-muted-foreground text-sm mt-1">
           1 เครดิต = ปลดล็อกเฉลยละเอียดของข้อสอบ 1 ข้อ (ดูซ้ำได้ตลอด)
         </p>
+        <p className="text-xs text-muted-foreground mt-1">
+          เครดิตไม่มีวันหมดอายุ • ซื้อแล้วไม่สามารถขอคืนเงินได้
+        </p>
         {loggedIn && (
           <div className="mt-3 inline-flex items-center gap-2 rounded-full border border-amber-200 bg-amber-50 px-4 py-1.5 text-sm font-medium text-amber-700">
             <Coins className="h-4 w-4" />
