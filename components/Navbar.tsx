@@ -6,6 +6,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, User, LogOut, Shield } from "lucide-react";
 import { useSession, signOut } from "next-auth/react";
+import CreditBalance from "@/components/CreditBalance";
 
 const navLinks = [
   { href: "/", label: "หน้าแรก" },
@@ -65,6 +66,7 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-3">
           {user ? (
             <>
+              <CreditBalance />
               {adminLink && (
                 <Link href={adminLink.href}>
                   <Button variant="ghost" size="sm" className={`gap-2 ${adminLink.className}`}>
@@ -147,6 +149,13 @@ export default function Navbar() {
                       🛡️ {adminLink.label}
                     </Link>
                   )}
+                  <Link
+                    href="/credits"
+                    onClick={() => setMobileOpen(false)}
+                    className="block rounded-md px-3 py-2 text-sm font-medium text-amber-700 hover:bg-muted"
+                  >
+                    💰 เครดิตของฉัน
+                  </Link>
                   <Link
                     href="/profile"
                     onClick={() => setMobileOpen(false)}

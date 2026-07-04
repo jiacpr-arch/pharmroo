@@ -1,8 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import { auth } from "@/lib/auth";
 import { db } from "@/lib/db";
-import { paymentOrders, users, setPurchases } from "@/lib/db/schema";
-import { eq, desc } from "drizzle-orm";
+import { paymentOrders, users, setPurchases, creditPurchases } from "@/lib/db/schema";
+import { eq, desc, and } from "drizzle-orm";
+import { addCredits } from "@/lib/db/queries-credits";
 
 export async function GET() {
   const session = await auth();
@@ -62,6 +63,33 @@ export async function PATCH(req: NextRequest) {
         .update(setPurchases)
         .set({ status: "active", purchased_at: new Date().toISOString() })
         .where(eq(setPurchases.payment_order_id, orderId));
+    } else if (order.order_type === "credit") {
+      // Activate credit purchase(s) and top up the balance in ONE transaction.
+      // The "pending" guard makes re-approval a no-op (no double credits), and
+      // atomicity means a failure rolls back the activation so approve can be
+      // retried safely.
+      await db.transaction(async (tx) => {
+        const pending = await tx
+          .update(creditPurchases)
+          .set({ status: "active", purchased_at: new Date().toISOString() })
+          .where(
+            and(
+              eq(creditPurchases.payment_order_id, orderId),
+              eq(creditPurchases.status, "pending")
+            )
+          )
+          .returning({ amount_credits: creditPurchases.amount_credits });
+
+        const totalCredits = pending.reduce((s, r) => s + r.amount_credits, 0);
+        if (totalCredits > 0) {
+          await addCredits(
+            order.user_id!,
+            totalCredits,
+            { type: "purchase", relatedId: orderId, note: "manual slip top-up" },
+            tx
+          );
+        }
+      });
     } else {
       // Update subscription membership
       const expiresAt = new Date();

@@ -1,6 +1,8 @@
 export const dynamic = "force-dynamic";
 import { Suspense } from "react";
 import { getMcqQuestions, getNewQuestionsStats } from "@/lib/db/queries-mcq";
+import { auth } from "@/lib/auth";
+import { gateQuestionsForSession } from "@/lib/credits-gate";
 import McqMock from "@/components/McqMock";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
@@ -13,11 +15,15 @@ export const metadata: Metadata = {
 };
 
 async function MockExamContent({ count }: { count: number }) {
-  const questions = await getMcqQuestions({
-    examType: "NLE",
-    limit: count,
-    randomize: true,
-  });
+  const [session, rawQuestions] = await Promise.all([
+    auth(),
+    getMcqQuestions({
+      examType: "NLE",
+      limit: count,
+      randomize: true,
+    }),
+  ]);
+  const { questions } = await gateQuestionsForSession(session, rawQuestions);
 
   const timeLimitMinutes = count;
 

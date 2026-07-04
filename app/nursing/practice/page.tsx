@@ -1,6 +1,8 @@
 export const dynamic = "force-dynamic";
 import { Suspense } from "react";
 import { getMcqSubjects, getMcqQuestions } from "@/lib/db/queries-mcq";
+import { auth } from "@/lib/auth";
+import { gateQuestionsForSession } from "@/lib/credits-gate";
 import McqPractice from "@/components/McqPractice";
 import { Badge } from "@/components/ui/badge";
 import GoodyEmbed from "@/components/GoodyEmbed";
@@ -14,7 +16,8 @@ export const metadata: Metadata = {
 };
 
 async function PracticeContent({ subjectId }: { subjectId?: string }) {
-  const [subjects, questions] = await Promise.all([
+  const [session, subjects, rawQuestions] = await Promise.all([
+    auth(),
     getMcqSubjects({ examCategory: "nursing" }),
     getMcqQuestions({
       subjectId,
@@ -23,6 +26,11 @@ async function PracticeContent({ subjectId }: { subjectId?: string }) {
       randomize: true,
     }),
   ]);
+
+  const { questions, creditBalance } = await gateQuestionsForSession(
+    session,
+    rawQuestions
+  );
 
   const currentSubject = subjectId
     ? subjects.find((s) => s.id === subjectId)
@@ -76,7 +84,11 @@ async function PracticeContent({ subjectId }: { subjectId?: string }) {
       </div>
 
       {questions.length > 0 ? (
-        <McqPractice questions={questions} examType="NLE" />
+        <McqPractice
+          questions={questions}
+          examType="NLE"
+          initialCreditBalance={creditBalance}
+        />
       ) : (
         <div className="text-center py-16 text-muted-foreground">
           <p className="text-lg">ยังไม่มีข้อสอบในสาขานี้</p>

@@ -287,6 +287,24 @@ export async function getLessonForPlayer(
     });
   }
 
+  // The lesson quiz UI only shows the short summary — strip the paid detailed
+  // content before it leaves the server so it can't be read from page props.
+  questions = questions.map((q) =>
+    q.detailed_explanation
+      ? {
+          ...q,
+          detailed_locked: true,
+          detailed_explanation: {
+            summary: q.detailed_explanation.summary ?? "",
+            reason: "",
+            choices: [],
+            key_takeaway: "",
+            calculation_steps: [],
+          },
+        }
+      : q
+  );
+
   let progress: LessonForPlayer["progress"] = null;
   if (userId) {
     const p = await db

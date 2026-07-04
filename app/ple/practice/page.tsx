@@ -1,6 +1,8 @@
 export const dynamic = "force-dynamic";
 import { Suspense } from "react";
 import { getMcqSubjects, getMcqQuestions } from "@/lib/db/queries-mcq";
+import { auth } from "@/lib/auth";
+import { gateQuestionsForSession } from "@/lib/credits-gate";
 import McqPractice from "@/components/McqPractice";
 import { Badge } from "@/components/ui/badge";
 import GoodyEmbed from "@/components/GoodyEmbed";
@@ -20,7 +22,8 @@ async function PracticeContent({
   subjectId?: string;
   day?: 1 | 2;
 }) {
-  const [subjects, questions] = await Promise.all([
+  const [session, subjects, rawQuestions] = await Promise.all([
+    auth(),
     getMcqSubjects({ examCategory: "pharmacy" }),
     getMcqQuestions({
       subjectId,
@@ -30,6 +33,11 @@ async function PracticeContent({
       randomize: true,
     }),
   ]);
+
+  const { questions, creditBalance } = await gateQuestionsForSession(
+    session,
+    rawQuestions
+  );
 
   const currentSubject = subjectId
     ? subjects.find((s) => s.id === subjectId)
@@ -132,7 +140,7 @@ async function PracticeContent({
 
       {/* Practice Component */}
       {questions.length > 0 ? (
-        <McqPractice questions={questions} />
+        <McqPractice questions={questions} initialCreditBalance={creditBalance} />
       ) : (
         <div className="text-center py-16 text-muted-foreground">
           <p className="text-lg">ยังไม่มีข้อสอบในหมวดนี้</p>

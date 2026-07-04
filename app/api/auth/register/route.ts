@@ -5,6 +5,7 @@ import { eq } from "drizzle-orm";
 import bcrypt from "bcryptjs";
 import { randomUUID } from "crypto";
 import { sendWelcomeEmail } from "@/lib/email";
+import { grantWelcomeCredits } from "@/lib/db/queries-credits";
 
 export async function POST(req: NextRequest) {
   const { email, password, name } = await req.json();
@@ -31,14 +32,18 @@ export async function POST(req: NextRequest) {
 
   const password_hash = await bcrypt.hash(password, 10);
 
+  const newId = randomUUID();
   await db.insert(users).values({
-    id: randomUUID(),
+    id: newId,
     email,
     name,
     password_hash,
     role: "user",
     membership_type: "free",
   });
+
+  // Grant one-time welcome credits so new users can try detailed explanations.
+  await grantWelcomeCredits(newId);
 
   // Fire-and-forget welcome email — never block / fail registration on it.
   sendWelcomeEmail({ email, name }).catch((err) =>

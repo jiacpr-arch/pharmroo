@@ -5,7 +5,7 @@ import PricingCard from "@/components/PricingCard";
 import { PRICING_PLANS } from "@/lib/types";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Package, CheckCircle, Sparkles } from "lucide-react";
+import { Package, CheckCircle, Sparkles, Coins } from "lucide-react";
 
 const PHARMACY_SETS = [
   { name: "PLE-CC1 Day 1 (120 ข้อ)", price: 390, id: "ple-cc1-day1" },
@@ -173,6 +173,30 @@ export default function PricingClient({ nursingSets = [] }: { nursingSets?: Nurs
             </div>
           </div>
         )}
+      </div>
+
+      {/* Pay-per-question credits — secondary, low-commitment option */}
+      <div className="mt-10 max-w-4xl mx-auto">
+        <div className="rounded-xl border border-amber-200 bg-amber-50/50 p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div className="flex items-start gap-3">
+            <Coins className="h-6 w-6 text-amber-500 flex-shrink-0 mt-0.5" />
+            <div>
+              <h3 className="font-semibold">ยังไม่พร้อมสมัคร? จ่ายทีละข้อด้วยเครดิต</h3>
+              <p className="text-sm text-muted-foreground mt-1">
+                เติมเครดิตแล้วปลดล็อกเฉลยละเอียดเฉพาะข้อที่อยากดู เริ่มต้น ฿49
+                <span className="block text-xs mt-0.5">
+                  * ทำข้อสอบเยอะ สมาชิกรายเดือนคุ้มกว่า
+                </span>
+              </p>
+            </div>
+          </div>
+          <Link href="/credits">
+            <Button variant="outline" className="gap-2 whitespace-nowrap border-amber-300 text-amber-800 hover:bg-amber-100">
+              <Coins className="h-4 w-4" />
+              เติมเครดิต
+            </Button>
+          </Link>
+        </div>
       </div>
 
       {/* FAQ */}
