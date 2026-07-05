@@ -5,12 +5,14 @@ import { usePathname } from "next/navigation";
 import { useSession } from "next-auth/react";
 import posthog from "posthog-js";
 
-const KEY = process.env.NEXT_PUBLIC_POSTHOG_KEY;
+// Publishable client token (safe in browser JS by design); the env var
+// overrides it, e.g. to point staging at a different PostHog project.
+const DEFAULT_KEY = "phc_zYMrFeM7HEGEBUdgeyixzNw24pt5XUom38QAAJfAwgLr";
+const KEY = process.env.NEXT_PUBLIC_POSTHOG_KEY || DEFAULT_KEY;
 
 /**
  * PostHog bootstrap: init once, manual pageviews on route change, and identify
  * logged-in users by id + membership tier (no name/email — keep PII out).
- * A no-op when NEXT_PUBLIC_POSTHOG_KEY is unset.
  */
 export default function PostHogAnalytics() {
   const pathname = usePathname();
