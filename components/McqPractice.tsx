@@ -15,7 +15,7 @@ import {
 } from "lucide-react";
 import type { McqQuestion } from "@/lib/types-mcq";
 import { useSession } from "next-auth/react";
-import { track } from "@vercel/analytics";
+import { trackEvent } from "@/lib/analytics/events";
 import Link from "next/link";
 import { Lock } from "lucide-react";
 import CreditUnlockConfirm from "@/components/CreditUnlockConfirm";
@@ -150,7 +150,7 @@ export default function McqPractice({
 
       if (res.status === 402) {
         setCreditBalance(data.credit_balance ?? 0);
-        track("out_of_credits", { question_id: question.id });
+        trackEvent("out_of_credits", { question_id: question.id });
         setConfirmOpen(false);
         return;
       }
@@ -170,7 +170,7 @@ export default function McqPractice({
           new CustomEvent("credits:changed", { detail: data.credit_balance })
         );
       }
-      track("credit_unlock", { question_id: question.id });
+      trackEvent("credit_unlock", { question_id: question.id });
       setConfirmOpen(false);
     } catch {
       setConfirmOpen(false);
