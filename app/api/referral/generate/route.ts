@@ -24,7 +24,7 @@ export async function POST() {
   if (user?.referral_code) {
     return NextResponse.json({
       code: user.referral_code,
-      link: `${process.env.NEXT_PUBLIC_SITE_URL || "https://pharmroo.com"}/register?ref=${user.referral_code}`,
+      link: `${process.env.NEXT_PUBLIC_SITE_URL || "https://pharmru.com"}/register?ref=${user.referral_code}`,
     });
   }
 
@@ -39,6 +39,6 @@ export async function POST() {
 
   return NextResponse.json({
     code,
-    link: `${process.env.NEXT_PUBLIC_SITE_URL || "https://pharmroo.com"}/register?ref=${code}`,
+    link: `${process.env.NEXT_PUBLIC_SITE_URL || "https://pharmru.com"}/register?ref=${code}`,
   });
 }

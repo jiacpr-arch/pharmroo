@@ -1,5 +1,5 @@
 /**
- * FlowAccount API — สำหรับ pharmroo.com
+ * FlowAccount API — สำหรับ pharmru.com
  * สร้างใบกำกับภาษี/ใบเสร็จอัตโนมัติเมื่อลูกค้าชำระเงินผ่าน Stripe
  *
  * Endpoint: POST /cash-invoices/inline/with-payment

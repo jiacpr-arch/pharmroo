@@ -9,4 +9,4 @@ export function getResend() {
   return _resend;
 }
 
-export const fromEmail = process.env.RESEND_FROM_EMAIL || "PharmRoo <noreply@pharmroo.com>";
+export const fromEmail = process.env.RESEND_FROM_EMAIL || "PharmRoo <noreply@pharmru.com>";
