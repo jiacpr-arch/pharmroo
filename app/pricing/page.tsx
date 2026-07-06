@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getQuestionSets } from "@/lib/db/queries-mcq";
+import { getCreditPacks } from "@/lib/db/queries-credits";
 import JsonLd from "@/components/JsonLd";
 import PricingClient from "./PricingClient";
 
@@ -46,11 +47,19 @@ const faqLd = {
         text: "ได้เลย ยกเลิกได้ทุกเมื่อ สมาชิกจะยังใช้งานได้จนกว่าจะหมดรอบบิล",
       },
     },
+    {
+      "@type": "Question",
+      name: "เครดิตคืออะไร ใช้อย่างไร?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "เติมเครดิตแล้วใช้ 1 เครดิตปลดล็อกเฉลยละเอียดของข้อสอบ 1 ข้อแบบถาวร กลับมาดูซ้ำได้ตลอด เหมาะสำหรับคนที่ยังไม่พร้อมสมัครสมาชิก สมัครบัญชีใหม่รับฟรี 3 เครดิต เครดิตไม่มีวันหมดอายุ",
+      },
+    },
   ],
 };
 
 export default async function PricingPage() {
-  const sets = await getQuestionSets();
+  const [sets, packs] = await Promise.all([getQuestionSets(), getCreditPacks()]);
   const nursingSets = sets
     .filter((s) => s.exam_type === "NLE")
     .map((s) => ({
@@ -59,10 +68,16 @@ export default async function PricingPage() {
       price: s.price,
       highlight: s.is_bundle,
     }));
+  const creditPacks = packs.map((p) => ({
+    id: p.id,
+    name_th: p.name_th,
+    amount_credits: p.amount_credits,
+    price: p.price,
+  }));
   return (
     <>
       <JsonLd data={faqLd} />
-      <PricingClient nursingSets={nursingSets} />
+      <PricingClient nursingSets={nursingSets} creditPacks={creditPacks} />
     </>
   );
 }
