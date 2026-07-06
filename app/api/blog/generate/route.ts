@@ -20,7 +20,7 @@ const BLOG_CATEGORIES = [
 ];
 
 const SITE_URL = () =>
-  process.env.NEXT_PUBLIC_SITE_URL || "https://pharmroo.com";
+  process.env.NEXT_PUBLIC_SITE_URL || "https://pharmru.com";
 
 function isAuthorized(request: NextRequest): boolean {
   const bearer = request.headers.get("authorization")?.replace("Bearer ", "");

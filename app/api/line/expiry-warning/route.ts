@@ -51,7 +51,7 @@ export async function GET(request: NextRequest) {
           `วันที่: ${expiryDate.toLocaleDateString("th-TH")}`,
           ``,
           `ต่ออายุตอนนี้เพื่อไม่พลาดข้อสอบใหม่ทุกวัน!`,
-          `👉 https://pharmroo.com/pricing`,
+          `👉 https://pharmru.com/pricing`,
         ].join("\n")
       );
       sent++;

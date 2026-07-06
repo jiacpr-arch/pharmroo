@@ -25,7 +25,7 @@ function getStripe(): Stripe {
 const SITE_URL = () =>
   process.env.NEXT_PUBLIC_SITE_URL ||
   process.env.NEXTAUTH_URL ||
-  "https://pharmroo.com";
+  "https://pharmru.com";
 
 /**
  * Unified checkout — handles both subscription and set purchases.

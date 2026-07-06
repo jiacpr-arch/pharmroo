@@ -60,7 +60,7 @@ export async function GET(request: NextRequest) {
           `ถูกต้อง: ${correct} ข้อ (${accuracy}%)`,
           ``,
           `💪 สู้ต่อไปนะ! ทำข้อสอบเพิ่มได้ที่`,
-          `👉 https://pharmroo.com/ple/practice`,
+          `👉 https://pharmru.com/ple/practice`,
         ].join("\n")
       );
       sent++;
