@@ -171,13 +171,9 @@ export async function POST(request: NextRequest) {
 
   const stripe = getStripe();
 
-  const checkoutSession = await stripe.checkout.sessions.create({
+  const sessionParams: Stripe.Checkout.SessionCreateParams = {
     mode: "payment",
     currency: "thb",
-    // Requires PromptPay activated in the Stripe dashboard before enabling.
-    ...(promptpayEnabled() && {
-      payment_method_types: ["promptpay", "card"] as const,
-    }),
     customer_email: session.user.email,
     line_items: lineItems,
     success_url: `${SITE_URL()}/payment/success?session_id={CHECKOUT_SESSION_ID}`,
@@ -195,7 +191,28 @@ export async function POST(request: NextRequest) {
       invoiceAddress: invoiceData?.address ?? "",
       invoiceEmail: session.user.email,
     },
-  });
+  };
+
+  let checkoutSession: Stripe.Checkout.Session;
+  if (promptpayEnabled()) {
+    // Requires PromptPay activated in the Stripe dashboard. If it isn't
+    // (still pending approval, or toggled off), fall back to card-only
+    // instead of taking every checkout down.
+    try {
+      checkoutSession = await stripe.checkout.sessions.create({
+        ...sessionParams,
+        payment_method_types: ["promptpay", "card"],
+      });
+    } catch (err) {
+      console.error(
+        "[checkout] promptpay session failed, retrying card-only:",
+        err
+      );
+      checkoutSession = await stripe.checkout.sessions.create(sessionParams);
+    }
+  } else {
+    checkoutSession = await stripe.checkout.sessions.create(sessionParams);
+  }
 
   // Save Stripe session ID to payment order for idempotency
   if (checkoutSession.id) {
