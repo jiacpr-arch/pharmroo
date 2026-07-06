@@ -24,7 +24,20 @@ type NursingSet = {
   highlight?: boolean;
 };
 
-export default function PricingClient({ nursingSets = [] }: { nursingSets?: NursingSet[] }) {
+type CreditPackInfo = {
+  id: string;
+  name_th: string;
+  amount_credits: number;
+  price: number;
+};
+
+export default function PricingClient({
+  nursingSets = [],
+  creditPacks = [],
+}: {
+  nursingSets?: NursingSet[];
+  creditPacks?: CreditPackInfo[];
+}) {
   const [track, setTrack] = useState<Track>("pharmacy");
 
   return (
@@ -175,27 +188,70 @@ export default function PricingClient({ nursingSets = [] }: { nursingSets?: Nurs
         )}
       </div>
 
-      {/* Pay-per-question credits — secondary, low-commitment option */}
+      {/* Pay-per-question credits — low-commitment entry point */}
       <div className="mt-10 max-w-4xl mx-auto">
-        <div className="rounded-xl border border-amber-200 bg-amber-50/50 p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-          <div className="flex items-start gap-3">
-            <Coins className="h-6 w-6 text-amber-500 flex-shrink-0 mt-0.5" />
-            <div>
-              <h3 className="font-semibold">ยังไม่พร้อมสมัคร? จ่ายทีละข้อด้วยเครดิต</h3>
-              <p className="text-sm text-muted-foreground mt-1">
-                เติมเครดิตแล้วปลดล็อกเฉลยละเอียดเฉพาะข้อที่อยากดู เริ่มต้น ฿49
-                <span className="block text-xs mt-0.5">
-                  * ทำข้อสอบเยอะ สมาชิกรายเดือนคุ้มกว่า
-                </span>
-              </p>
+        <div className="rounded-xl border border-amber-200 bg-gradient-to-br from-amber-50 to-orange-50 p-8">
+          <div className="flex items-center gap-3 mb-2">
+            <Coins className="h-6 w-6 text-amber-600" />
+            <h2 className="text-2xl font-bold text-amber-900">
+              ยังไม่พร้อมสมัคร? จ่ายทีละข้อด้วยเครดิต
+            </h2>
+          </div>
+          <p className="text-amber-800 mb-1">
+            <strong>1 เครดิต = ปลดล็อกเฉลยละเอียด 1 ข้อ แบบถาวร</strong> กลับมาดูซ้ำได้ตลอด
+          </p>
+          <p className="text-sm text-amber-700 mb-6">
+            สมัครบัญชีใหม่รับฟรี 3 เครดิต • เครดิตไม่มีวันหมดอายุ
+          </p>
+
+          {creditPacks.length > 0 && (
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6">
+              {creditPacks.map((pack) => (
+                <Link key={pack.id} href="/credits">
+                  <div className="rounded-lg border border-amber-200 bg-white p-4 text-center cursor-pointer transition-shadow hover:shadow-md">
+                    <div className="flex items-center justify-center gap-1.5">
+                      <Coins className="h-4 w-4 text-amber-500" />
+                      <span className="text-xl font-bold">{pack.amount_credits}</span>
+                      <span className="text-sm text-muted-foreground">เครดิต</span>
+                    </div>
+                    <p className="text-lg font-bold text-amber-700 mt-1">
+                      ฿{pack.price.toLocaleString()}
+                    </p>
+                    <p className="text-xs text-muted-foreground">
+                      ~฿{(pack.price / pack.amount_credits).toFixed(1)} / ข้อ
+                    </p>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          )}
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6 text-sm text-amber-800">
+            <div className="flex items-start gap-2">
+              <span className="font-bold text-amber-600">1.</span>
+              เติมเครดิต (บัตร / PromptPay / โอน)
+            </div>
+            <div className="flex items-start gap-2">
+              <span className="font-bold text-amber-600">2.</span>
+              ทำข้อสอบตามปกติ ฟรีทุกข้อ
+            </div>
+            <div className="flex items-start gap-2">
+              <span className="font-bold text-amber-600">3.</span>
+              กด &quot;ปลดล็อกเฉลย&quot; เฉพาะข้อที่อยากดูละเอียด
             </div>
           </div>
-          <Link href="/credits">
-            <Button variant="outline" className="gap-2 whitespace-nowrap border-amber-300 text-amber-800 hover:bg-amber-100">
-              <Coins className="h-4 w-4" />
-              เติมเครดิต
-            </Button>
-          </Link>
+
+          <div className="flex flex-col sm:flex-row gap-3 items-start sm:items-center justify-between">
+            <p className="text-sm text-amber-700">
+              ทำข้อสอบเยอะ (เกิน ~60 ข้อ) สมาชิกรายเดือน ฿249 คุ้มกว่า
+            </p>
+            <Link href="/credits">
+              <Button className="gap-2 whitespace-nowrap bg-amber-600 hover:bg-amber-700 text-white shrink-0">
+                <Coins className="h-4 w-4" />
+                เติมเครดิต
+              </Button>
+            </Link>
+          </div>
         </div>
       </div>
 
@@ -221,6 +277,10 @@ export default function PricingClient({ nursingSets = [] }: { nursingSets?: Nurs
             {
               q: "สมัครแล้วยกเลิกได้ไหม?",
               a: "ได้เลย ยกเลิกได้ทุกเมื่อ สมาชิกจะยังใช้งานได้จนกว่าจะหมดรอบบิล",
+            },
+            {
+              q: "เครดิตคืออะไร ใช้อย่างไร?",
+              a: "เติมเครดิตแล้วใช้ 1 เครดิตปลดล็อกเฉลยละเอียดของข้อสอบ 1 ข้อแบบถาวร กลับมาดูซ้ำได้ตลอด เหมาะถ้ายังไม่พร้อมสมัครสมาชิก สมัครบัญชีใหม่รับฟรี 3 เครดิต และเครดิตไม่มีวันหมดอายุ",
             },
             {
               q: "ข้อสอบมีรูปประกอบไหม?",
