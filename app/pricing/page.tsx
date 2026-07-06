@@ -20,7 +20,7 @@ const faqLd = {
       name: "สมาชิกฟรีทำอะไรได้บ้าง?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "ทำข้อสอบได้ 10 ข้อต่อวัน ดูโจทย์ได้ทุกข้อ แต่ไม่เห็นเฉลยละเอียด",
+        text: "ทำข้อสอบและดูเฉลยย่อได้ฟรีทุกข้อ ส่วนเฉลยละเอียดปลดล็อกด้วยเครดิต (สมัครใหม่รับฟรี 3 เครดิต) หรือสมัครสมาชิกเพื่อดูได้ไม่อั้น",
       },
     },
     {
@@ -60,14 +60,14 @@ const faqLd = {
 
 export default async function PricingPage() {
   const [sets, packs] = await Promise.all([getQuestionSets(), getCreditPacks()]);
-  const nursingSets = sets
-    .filter((s) => s.exam_type === "NLE")
-    .map((s) => ({
-      id: s.id,
-      name: s.name_th,
-      price: s.price,
-      highlight: s.is_bundle,
-    }));
+  const toSetInfo = (s: (typeof sets)[number]) => ({
+    id: s.id,
+    name: s.name_th,
+    price: s.price,
+    highlight: s.is_bundle,
+  });
+  const nursingSets = sets.filter((s) => s.exam_type === "NLE").map(toSetInfo);
+  const pharmacySets = sets.filter((s) => s.exam_type !== "NLE").map(toSetInfo);
   const creditPacks = packs.map((p) => ({
     id: p.id,
     name_th: p.name_th,
@@ -77,7 +77,11 @@ export default async function PricingPage() {
   return (
     <>
       <JsonLd data={faqLd} />
-      <PricingClient nursingSets={nursingSets} creditPacks={creditPacks} />
+      <PricingClient
+        pharmacySets={pharmacySets}
+        nursingSets={nursingSets}
+        creditPacks={creditPacks}
+      />
     </>
   );
 }

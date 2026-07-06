@@ -7,17 +7,9 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Package, CheckCircle, Sparkles, Coins } from "lucide-react";
 
-const PHARMACY_SETS = [
-  { name: "PLE-CC1 Day 1 (120 ข้อ)", price: 390, id: "ple-cc1-day1" },
-  { name: "PLE-CC1 Day 2 (120 ข้อ)", price: 390, id: "ple-cc1-day2" },
-  { name: "PLE-CC1 ครบ 2 วัน (240 ข้อ)", price: 590, highlight: true, id: "ple-cc1-bundle" },
-  { name: "PLE-PC1 (120 ข้อ)", price: 490, id: "ple-pc1" },
-  { name: "Bundle ทุกชุด", price: 990, highlight: true, id: "bundle-all" },
-];
-
 type Track = "pharmacy" | "nursing";
 
-type NursingSet = {
+type SetInfo = {
   id: string;
   name: string;
   price: number;
@@ -32,10 +24,12 @@ type CreditPackInfo = {
 };
 
 export default function PricingClient({
+  pharmacySets = [],
   nursingSets = [],
   creditPacks = [],
 }: {
-  nursingSets?: NursingSet[];
+  pharmacySets?: SetInfo[];
+  nursingSets?: SetInfo[];
   creditPacks?: CreditPackInfo[];
 }) {
   const [track, setTrack] = useState<Track>("pharmacy");
@@ -92,42 +86,71 @@ export default function PricingClient({
           <div className="rounded-xl border bg-gradient-to-br from-teal-50 to-emerald-50 border-teal-200 p-8">
             <div className="flex items-center gap-3 mb-2">
               <Package className="h-6 w-6 text-teal-700" />
-              <h2 className="text-2xl font-bold text-teal-900">ชุดข้อสอบเภสัช — ซื้อครั้งเดียว</h2>
+              <h2 className="text-2xl font-bold text-teal-900">
+                ชุดข้อสอบเภสัช {pharmacySets.length === 0 && "— เร็วๆ นี้"}
+              </h2>
             </div>
             <p className="text-teal-700 mb-6">
-              ไม่ต้องสมัคร Subscription — จ่ายครั้งเดียว เข้าถึงชุดข้อสอบนั้นได้ตลอดไม่มีวันหมดอายุ
+              {pharmacySets.length > 0
+                ? "ไม่ต้องสมัคร Subscription — จ่ายครั้งเดียว เข้าถึงชุดข้อสอบนั้นได้ตลอดไม่มีวันหมดอายุ"
+                : "ชุดข้อสอบเภสัชแบบซื้อครั้งเดียวกำลังจัดเตรียม — ระหว่างนี้ใช้เครดิตปลดล็อกเฉลยรายข้อ หรือสมัครสมาชิกเพื่อดูไม่อั้นได้ทันที"}
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-6">
-              {PHARMACY_SETS.map((s) => (
-                <Link key={s.name} href={`/sets/${s.id}`}>
-                  <div
-                    className={`rounded-lg border p-4 flex items-center justify-between cursor-pointer transition-opacity hover:opacity-80 ${
-                      s.highlight
-                        ? "bg-teal-600 text-white border-teal-600"
-                        : "bg-white border-teal-200"
-                    }`}
-                  >
-                    <div className="flex items-center gap-2">
-                      <CheckCircle className={`h-4 w-4 shrink-0 ${s.highlight ? "text-teal-200" : "text-teal-500"}`} />
-                      <span className="text-sm font-medium">{s.name}</span>
-                    </div>
-                    <span className={`font-bold text-sm ml-2 shrink-0 ${s.highlight ? "text-white" : "text-teal-700"}`}>
-                      ฿{s.price}
-                    </span>
-                  </div>
-                </Link>
-              ))}
-            </div>
-            <div className="flex flex-col sm:flex-row gap-3 items-start sm:items-center justify-between">
-              <p className="text-sm text-teal-700">
-                ถูกกว่าคอร์สติว 10 เท่า — ติวออนไลน์ทั่วไปราคา ฿8,000–10,000
-              </p>
-              <Link href="/sets">
-                <Button className="bg-teal-600 hover:bg-teal-700 text-white shrink-0">
-                  ดูชุดข้อสอบทั้งหมด
-                </Button>
-              </Link>
-            </div>
+
+            {pharmacySets.length > 0 ? (
+              <>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-6">
+                  {pharmacySets.map((s) => (
+                    <Link key={s.id} href={`/sets/${s.id}`}>
+                      <div
+                        className={`rounded-lg border p-4 flex items-center justify-between cursor-pointer transition-opacity hover:opacity-80 ${
+                          s.highlight
+                            ? "bg-teal-600 text-white border-teal-600"
+                            : "bg-white border-teal-200"
+                        }`}
+                      >
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className={`h-4 w-4 shrink-0 ${s.highlight ? "text-teal-200" : "text-teal-500"}`} />
+                          <span className="text-sm font-medium">{s.name}</span>
+                        </div>
+                        <span className={`font-bold text-sm ml-2 shrink-0 ${s.highlight ? "text-white" : "text-teal-700"}`}>
+                          ฿{s.price.toLocaleString()}
+                        </span>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+                <div className="flex flex-col sm:flex-row gap-3 items-start sm:items-center justify-between">
+                  <p className="text-sm text-teal-700">
+                    ถูกกว่าคอร์สติว 10 เท่า — ติวออนไลน์ทั่วไปราคา ฿8,000–10,000
+                  </p>
+                  <Link href="/sets">
+                    <Button className="bg-teal-600 hover:bg-teal-700 text-white shrink-0">
+                      ดูชุดข้อสอบทั้งหมด
+                    </Button>
+                  </Link>
+                </div>
+              </>
+            ) : (
+              <div className="rounded-lg border-2 border-dashed border-teal-300 bg-white/60 p-6 text-center">
+                <p className="text-sm text-teal-700 mb-4">
+                  อยากดูเฉลยละเอียดตอนนี้เลย? เริ่มจากเครดิต (ฟรี 3 เครดิตเมื่อสมัคร)
+                  หรือสมาชิกรายเดือน ฿249 ดูได้ทุกข้อ
+                </p>
+                <div className="flex flex-wrap gap-3 justify-center">
+                  <Link href="/credits">
+                    <Button variant="outline" className="gap-2 border-teal-300 text-teal-800 hover:bg-teal-50">
+                      <Coins className="h-4 w-4" />
+                      เติมเครดิต
+                    </Button>
+                  </Link>
+                  <Link href="/payment/monthly">
+                    <Button className="bg-teal-600 hover:bg-teal-700 text-white">
+                      สมัครรายเดือน ฿249
+                    </Button>
+                  </Link>
+                </div>
+              </div>
+            )}
           </div>
         ) : (
           <div className="rounded-xl border bg-gradient-to-br from-rose-50 to-pink-50 border-rose-200 p-8">
@@ -264,7 +287,7 @@ export default function PricingClient({
           {[
             {
               q: "สมาชิกฟรีทำอะไรได้บ้าง?",
-              a: "ทำข้อสอบได้ 10 ข้อต่อวัน ดูโจทย์ได้ทุกข้อ แต่ไม่เห็นเฉลยละเอียด",
+              a: "ทำข้อสอบและดูเฉลยย่อได้ฟรีทุกข้อ ส่วนเฉลยละเอียดปลดล็อกด้วยเครดิต (สมัครใหม่รับฟรี 3 เครดิต) หรือสมัครสมาชิกเพื่อดูได้ไม่อั้น",
             },
             {
               q: "สมาชิกรายเดือน/รายปี ใช้ได้ทั้ง PLE และ NLE ไหม?",
