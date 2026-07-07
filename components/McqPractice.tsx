@@ -14,6 +14,7 @@ import {
   Coins,
 } from "lucide-react";
 import type { McqQuestion } from "@/lib/types-mcq";
+import type { PlayAllowance } from "@/lib/play-limit";
 import { useSession } from "next-auth/react";
 import { trackEvent } from "@/lib/analytics/events";
 import Link from "next/link";
@@ -26,12 +27,87 @@ interface McqPracticeProps {
   questions: McqQuestion[];
   examType?: "PLE-PC" | "PLE-CC1" | "NLE";
   initialCreditBalance?: number;
+  playAllowance?: PlayAllowance;
+}
+
+function guestPlayedStorageKey(): string {
+  const d = new Date();
+  const day = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(
+    d.getDate()
+  ).padStart(2, "0")}`;
+  return `pharmroo:guestPlayed:${day}`;
+}
+
+function readGuestPlayed(): number {
+  if (typeof window === "undefined") return 0;
+  const raw = window.localStorage.getItem(guestPlayedStorageKey());
+  return raw ? parseInt(raw, 10) || 0 : 0;
+}
+
+function incrementGuestPlayed(): void {
+  if (typeof window === "undefined") return;
+  window.localStorage.setItem(
+    guestPlayedStorageKey(),
+    String(readGuestPlayed() + 1)
+  );
+}
+
+function DailyLimitWall({
+  isGuest,
+  dailyLimit,
+}: {
+  isGuest: boolean;
+  dailyLimit: number;
+}) {
+  return (
+    <Card className="border-brand/20 bg-brand/5">
+      <CardContent className="p-8 text-center">
+        <Lock className="h-8 w-8 mx-auto mb-3 text-brand" />
+        <h3 className="text-lg font-bold mb-2">
+          {isGuest
+            ? `เล่นครบ ${dailyLimit} ข้อวันนี้แล้ว`
+            : `วันนี้เล่นครบ ${dailyLimit} ข้อแล้ว`}
+        </h3>
+        <p className="text-sm text-muted-foreground mb-6">
+          {isGuest
+            ? "สมัครฟรี รับ 3 เครดิตทดลอง แล้วเล่นต่อได้เลย"
+            : "กลับมาเล่นต่อได้พรุ่งนี้ หรือสมัครสมาชิก Premium เพื่อเล่นไม่จำกัด"}
+        </p>
+        {isGuest ? (
+          <div className="flex flex-col gap-2 max-w-xs mx-auto">
+            <Link
+              href="/register"
+              className="inline-flex items-center justify-center gap-2 bg-brand hover:bg-brand-light text-white px-6 py-2.5 rounded-lg font-medium text-sm transition-colors"
+            >
+              สมัครฟรี รับ 3 เครดิตทดลอง
+            </Link>
+            <Link
+              href="/login"
+              className="text-sm text-brand hover:underline"
+            >
+              มีบัญชีแล้ว? เข้าสู่ระบบ
+            </Link>
+          </div>
+        ) : (
+          <div className="flex flex-col gap-2 max-w-xs mx-auto">
+            <Link
+              href="/pricing"
+              className="inline-flex items-center justify-center gap-2 bg-brand hover:bg-brand-light text-white px-6 py-2.5 rounded-lg font-medium text-sm transition-colors"
+            >
+              สมัครสมาชิก Premium
+            </Link>
+          </div>
+        )}
+      </CardContent>
+    </Card>
+  );
 }
 
 export default function McqPractice({
   questions,
   examType = "PLE-CC1",
   initialCreditBalance = 0,
+  playAllowance,
 }: McqPracticeProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
@@ -51,6 +127,26 @@ export default function McqPractice({
   >({});
   const [confirmOpen, setConfirmOpen] = useState(false);
   const [unlocking, setUnlocking] = useState(false);
+
+  // Daily question-play quota (independent of the credit/explanation gate above)
+  const isGuest = playAllowance?.isGuest ?? false;
+  const dailyLimit = playAllowance?.dailyLimit ?? null;
+  const serverPlayedToday = playAllowance?.playedToday ?? 0;
+  const [guestPriorPlayed, setGuestPriorPlayed] = useState(0);
+  const [limitWallVisible, setLimitWallVisible] = useState(false);
+
+  useEffect(() => {
+    if (isGuest) setGuestPriorPlayed(readGuestPlayed());
+  }, [isGuest]);
+
+  const priorPlayed = isGuest ? guestPriorPlayed : serverPlayedToday;
+  const totalPlayed = priorPlayed + stats.total;
+
+  useEffect(() => {
+    if (dailyLimit !== null && stats.total === 0 && priorPlayed >= dailyLimit) {
+      setLimitWallVisible(true);
+    }
+  }, [dailyLimit, priorPlayed, stats.total]);
 
   // Get user on mount and create session
   useEffect(() => {
@@ -98,6 +194,10 @@ export default function McqPractice({
         total: prev.total + 1,
       }));
 
+      if (isGuest) {
+        incrementGuestPlayed();
+      }
+
       // Save attempt to DB if logged in
       if (userId) {
         const timeSpent = Math.round(
@@ -119,17 +219,21 @@ export default function McqPractice({
         });
       }
     },
-    [showResult, question, userId, sessionId]
+    [showResult, question, userId, sessionId, isGuest]
   );
 
   const handleNext = useCallback(() => {
+    if (dailyLimit !== null && totalPlayed >= dailyLimit) {
+      setLimitWallVisible(true);
+      return;
+    }
     if (currentIndex < questions.length - 1) {
       setCurrentIndex((prev) => prev + 1);
       setSelectedAnswer(null);
       setShowResult(false);
       setShowExplanation(false);
     }
-  }, [currentIndex, questions.length]);
+  }, [currentIndex, questions.length, dailyLimit, totalPlayed]);
 
   const handleRestart = useCallback(() => {
     setCurrentIndex(0);
@@ -205,6 +309,10 @@ export default function McqPractice({
         <p className="text-lg text-muted-foreground">ไม่มีข้อสอบ</p>
       </div>
     );
+  }
+
+  if (limitWallVisible && dailyLimit !== null) {
+    return <DailyLimitWall isGuest={isGuest} dailyLimit={dailyLimit} />;
   }
 
   // Merged detailed explanation: paid members and pre-unlocked questions arrive

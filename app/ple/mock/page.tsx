@@ -2,8 +2,9 @@ export const dynamic = "force-dynamic";
 import { Suspense } from "react";
 import { getMcqQuestions } from "@/lib/db/queries-mcq";
 import { auth } from "@/lib/auth";
-import { gateQuestionsForSession } from "@/lib/credits-gate";
+import { gateQuestionsForSession, getViewerGate } from "@/lib/credits-gate";
 import McqMock from "@/components/McqMock";
+import MockExamPaywall from "@/components/MockExamPaywall";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import type { Metadata } from "next";
@@ -30,6 +31,12 @@ async function MockExamContent({
       randomize: true,
     }),
   ]);
+
+  const { isPaid } = getViewerGate(session);
+  if (!isPaid) {
+    return <MockExamPaywall />;
+  }
+
   const { questions } = await gateQuestionsForSession(session, rawQuestions);
 
   const timeLimitMinutes = count; // 1 min per question

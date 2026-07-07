@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import { getMcqSubjects, getMcqQuestions } from "@/lib/db/queries-mcq";
 import { auth } from "@/lib/auth";
 import { gateQuestionsForSession } from "@/lib/credits-gate";
+import { getPlayAllowance } from "@/lib/play-limit";
 import McqPractice from "@/components/McqPractice";
 import { Badge } from "@/components/ui/badge";
 import GoodyEmbed from "@/components/GoodyEmbed";
@@ -34,10 +35,10 @@ async function PracticeContent({
     }),
   ]);
 
-  const { questions, creditBalance } = await gateQuestionsForSession(
-    session,
-    rawQuestions
-  );
+  const [{ questions, creditBalance }, playAllowance] = await Promise.all([
+    gateQuestionsForSession(session, rawQuestions),
+    getPlayAllowance(session),
+  ]);
 
   const currentSubject = subjectId
     ? subjects.find((s) => s.id === subjectId)
@@ -140,7 +141,11 @@ async function PracticeContent({
 
       {/* Practice Component */}
       {questions.length > 0 ? (
-        <McqPractice questions={questions} initialCreditBalance={creditBalance} />
+        <McqPractice
+          questions={questions}
+          initialCreditBalance={creditBalance}
+          playAllowance={playAllowance}
+        />
       ) : (
         <div className="text-center py-16 text-muted-foreground">
           <p className="text-lg">ยังไม่มีข้อสอบในหมวดนี้</p>

@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import { getMcqSubjects, getMcqQuestions } from "@/lib/db/queries-mcq";
 import { auth } from "@/lib/auth";
 import { gateQuestionsForSession } from "@/lib/credits-gate";
+import { getPlayAllowance } from "@/lib/play-limit";
 import McqPractice from "@/components/McqPractice";
 import { Badge } from "@/components/ui/badge";
 import GoodyEmbed from "@/components/GoodyEmbed";
@@ -27,10 +28,10 @@ async function PracticeContent({ subjectId }: { subjectId?: string }) {
     }),
   ]);
 
-  const { questions, creditBalance } = await gateQuestionsForSession(
-    session,
-    rawQuestions
-  );
+  const [{ questions, creditBalance }, playAllowance] = await Promise.all([
+    gateQuestionsForSession(session, rawQuestions),
+    getPlayAllowance(session),
+  ]);
 
   const currentSubject = subjectId
     ? subjects.find((s) => s.id === subjectId)
@@ -88,6 +89,7 @@ async function PracticeContent({ subjectId }: { subjectId?: string }) {
           questions={questions}
           examType="NLE"
           initialCreditBalance={creditBalance}
+          playAllowance={playAllowance}
         />
       ) : (
         <div className="text-center py-16 text-muted-foreground">

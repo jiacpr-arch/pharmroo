@@ -323,6 +323,18 @@ export async function getStudentRecentSessions(userId: string, limit = 10) {
   }));
 }
 
+/** Count of questions the user has answered today (used for the free daily play quota). */
+export async function getTodayAttemptCount(userId: string): Promise<number> {
+  const result = await db.execute(sql`
+    SELECT COUNT(*)::int AS count
+    FROM mcq_attempts
+    WHERE user_id = ${userId}
+      AND DATE(created_at::timestamp) = CURRENT_DATE
+  `);
+  const row = result.rows[0] as { count: number } | undefined;
+  return Number(row?.count ?? 0);
+}
+
 export async function getStudentStreak(userId: string): Promise<number> {
   const result = await db.execute(sql`
     WITH daily AS (
