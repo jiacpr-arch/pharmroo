@@ -1,11 +1,22 @@
 import { auth } from "@/lib/auth";
 import { saveMcqAttempt } from "@/lib/db/mutations-mcq";
+import { getTodayAttemptCount } from "@/lib/db/queries-mcq";
+import { getViewerGate } from "@/lib/credits-gate";
+import { FREE_DAILY_QUESTION_LIMIT } from "@/lib/limits";
 import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {
   const session = await auth();
   if (!session?.user?.id) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
+
+  const { isPaid } = getViewerGate(session);
+  if (!isPaid) {
+    const playedToday = await getTodayAttemptCount(session.user.id);
+    if (playedToday >= FREE_DAILY_QUESTION_LIMIT) {
+      return NextResponse.json({ error: "daily_limit" }, { status: 429 });
+    }
   }
 
   const body = await req.json();
