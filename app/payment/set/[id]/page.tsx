@@ -18,7 +18,7 @@ import type { QuestionSet } from "@/lib/types-mcq";
 export default function PaymentSetPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = use(params);
   const router = useRouter();
-  const { data: session, status } = useSession();
+  const { status } = useSession();
   const [set, setSet] = useState<QuestionSet | null>(null);
   const [loading, setLoading] = useState(true);
   const [submitting, setSubmitting] = useState(false);

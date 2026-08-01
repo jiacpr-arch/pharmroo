@@ -9,7 +9,6 @@ import { getNewQuestionsStats } from "@/lib/db/queries-mcq";
 import {
   BookOpen,
   Clock,
-  CheckCircle,
   ArrowRight,
   Sparkles,
   Users,

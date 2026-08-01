@@ -59,7 +59,10 @@ const faqLd = {
 };
 
 export default async function PricingPage() {
-  const [sets, packs] = await Promise.all([getQuestionSets(), getCreditPacks()]);
+  const [sets, packs] = await Promise.all([
+    getQuestionSets().catch(() => []),
+    getCreditPacks().catch(() => []),
+  ]);
   const toSetInfo = (s: (typeof sets)[number]) => ({
     id: s.id,
     name: s.name_th,

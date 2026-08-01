@@ -116,7 +116,6 @@ export default function McqPractice({
   const [stats, setStats] = useState({ correct: 0, total: 0 });
   const [userId, setUserId] = useState<string | null>(null);
   const [sessionId, setSessionId] = useState<string | null>(null);
-  // eslint-disable-next-line react-hooks/purity
   const questionStartTime = useRef<number>(Date.now());
   const { data: authSession } = useSession();
 
