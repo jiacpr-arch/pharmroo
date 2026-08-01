@@ -13,7 +13,7 @@ export function createClient() {
         signUp: async () => ({ data: { user: null, session: null }, error: { message: "Supabase ยังไม่ได้ตั้งค่า กรุณาตั้งค่า .env.local" } }),
         signInWithOAuth: async () => ({ data: { url: null, provider: null }, error: { message: "Supabase ยังไม่ได้ตั้งค่า" } }),
         signOut: async () => ({ error: null }),
-        onAuthStateChange: (_event: string, _callback: unknown) => ({
+        onAuthStateChange: () => ({
           data: { subscription: { unsubscribe: () => {} } },
         }),
       },

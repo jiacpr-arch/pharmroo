@@ -1,6 +1,6 @@
 import { db } from "./index";
 import { mcqAttempts, mcqSessions } from "./schema";
-import { eq, sql } from "drizzle-orm";
+import { eq } from "drizzle-orm";
 import type { McqAttempt, McqSession } from "../types-mcq";
 
 export async function saveMcqAttempt(attempt: {

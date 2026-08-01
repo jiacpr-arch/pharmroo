@@ -15,8 +15,8 @@ export const dynamic = "force-dynamic";
 
 export default async function PLEPage() {
   const [subjects, counts] = await Promise.all([
-    getMcqSubjects({ examCategory: "pharmacy" }),
-    getMcqSubjectCounts("pharmacy"),
+    getMcqSubjects({ examCategory: "pharmacy" }).catch(() => []),
+    getMcqSubjectCounts("pharmacy").catch((): Record<string, number> => ({})),
   ]);
 
   const totalQuestions = Object.values(counts).reduce((a, b) => a + b, 0);

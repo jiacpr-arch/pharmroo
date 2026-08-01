@@ -23,7 +23,7 @@ const PLANS: Record<string, { name: string; price: number; period: string }> = {
 export default function PaymentPage({ params }: { params: Promise<{ plan: string }> }) {
   const { plan } = use(params);
   const router = useRouter();
-  const { data: session, status } = useSession();
+  const { status } = useSession();
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState("");

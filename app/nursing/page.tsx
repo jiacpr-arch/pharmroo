@@ -32,8 +32,8 @@ export const dynamic = "force-dynamic";
 export default async function NursingPage() {
   const [session, subjects, counts, stats, allSets] = await Promise.all([
     auth(),
-    getMcqSubjects({ examCategory: "nursing" }),
-    getMcqSubjectCounts("nursing"),
+    getMcqSubjects({ examCategory: "nursing" }).catch(() => []),
+    getMcqSubjectCounts("nursing").catch((): Record<string, number> => ({})),
     getNewQuestionsStats({ examCategory: "nursing" }).catch(() => ({
       totalActive: 0,
       newThisWeek: 0,

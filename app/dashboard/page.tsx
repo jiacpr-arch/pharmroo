@@ -7,9 +7,9 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import {
-  Loader2, Zap, AlertTriangle, Trophy, Star,
+  Loader2, Zap, AlertTriangle,
   CheckSquare, Plus, Trash2, ChevronRight, Flame,
-  ArrowRight, Lock, CheckCircle,
+  ArrowRight, CheckCircle,
 } from "lucide-react";
 import GoodyEmbed from "@/components/GoodyEmbed";
 import LearnDashboardCard from "@/components/learn/LearnDashboardCard";

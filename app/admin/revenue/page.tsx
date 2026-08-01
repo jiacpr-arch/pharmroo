@@ -2,7 +2,7 @@ import { auth } from "@/lib/auth";
 import { redirect } from "next/navigation";
 import { db } from "@/lib/db";
 import { paymentOrders, users } from "@/lib/db/schema";
-import { eq, gte, sql } from "drizzle-orm";
+import { eq, sql } from "drizzle-orm";
 
 export default async function RevenueDashboardPage() {
   const session = await auth();

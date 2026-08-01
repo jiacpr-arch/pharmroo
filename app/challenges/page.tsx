@@ -334,7 +334,7 @@ export default function ChallengesPage() {
       setClaiming(null);
       setTimeout(() => setClaimMsg(null), 3000);
     }
-  }, []);
+  }, [all]);
 
   if (status === "loading" || loading) {
     return (

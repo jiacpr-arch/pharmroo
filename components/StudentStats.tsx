@@ -85,14 +85,6 @@ export default function StudentStats() {
 
   const { overall, subjects, weakAreas, recentSessions } = data;
 
-  const formatTime = (seconds: number) => {
-    if (seconds < 60) return `${seconds} วินาที`;
-    const m = Math.floor(seconds / 60);
-    if (m < 60) return `${m} นาที`;
-    const h = Math.floor(m / 60);
-    return `${h} ชม. ${m % 60} นาที`;
-  };
-
   return (
     <div className="space-y-6">
       {/* Overall Stats Cards */}

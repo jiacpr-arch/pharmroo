@@ -14,8 +14,8 @@ export default async function CreditsPage() {
   const userId = (session?.user as { id?: string })?.id;
 
   const [packs, balance] = await Promise.all([
-    getCreditPacks(),
-    userId ? getUserCreditBalance(userId) : Promise.resolve(0),
+    getCreditPacks().catch(() => []),
+    userId ? getUserCreditBalance(userId).catch(() => 0) : Promise.resolve(0),
   ]);
 
   return (

@@ -27,7 +27,7 @@ export async function generateMetadata({
   params: Promise<{ id: string }>;
 }): Promise<Metadata> {
   const { id } = await params;
-  const set = await getQuestionSet(id);
+  const set = await getQuestionSet(id).catch(() => null);
   if (!set) return { title: "ไม่พบชุดข้อสอบ" };
   return {
     title: `${set.name_th} — PharmRoo`,
