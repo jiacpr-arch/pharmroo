@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { use } from "react";
+import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -42,12 +43,14 @@ export default function InvoiceRequestPage({
   params: Promise<{ orderId: string }>;
 }) {
   const { orderId } = use(params);
+  const router = useRouter();
   const [loading, setLoading] = useState(true);
   const [submitting, setSubmitting] = useState(false);
   const [invoice, setInvoice] = useState<InvoiceInfo | null>(null);
   const [error, setError] = useState("");
   const [success, setSuccess] = useState(false);
   const [alreadyFilled, setAlreadyFilled] = useState(false);
+  const [needsLogin, setNeedsLogin] = useState(false);
 
   // Form fields
   const [buyerName, setBuyerName] = useState("");
@@ -59,9 +62,18 @@ export default function InvoiceRequestPage({
     async function loadInvoice() {
       try {
         const res = await fetch(`/api/invoice-request/${orderId}`);
+        if (res.status === 401) {
+          setNeedsLogin(true);
+          setLoading(false);
+          return;
+        }
         if (!res.ok) {
           const data = await res.json();
-          setError(data.error ?? "ไม่พบข้อมูลคำสั่งซื้อ");
+          setError(
+            data.error === "unauthenticated"
+              ? "กรุณาเข้าสู่ระบบ"
+              : (data.error ?? "ไม่พบข้อมูลคำสั่งซื้อ")
+          );
           setLoading(false);
           return;
         }
@@ -108,6 +120,10 @@ export default function InvoiceRequestPage({
         }),
       });
 
+      if (res.status === 401) {
+        setNeedsLogin(true);
+        return;
+      }
       if (!res.ok) {
         const data = await res.json();
         setError(data.error ?? "เกิดข้อผิดพลาด");
@@ -126,6 +142,34 @@ export default function InvoiceRequestPage({
     return (
       <div className="min-h-screen flex items-center justify-center">
         <Loader2 className="h-8 w-8 animate-spin text-emerald-600" />
+      </div>
+    );
+  }
+
+  if (needsLogin) {
+    return (
+      <div className="min-h-screen flex items-center justify-center p-4">
+        <Card className="max-w-md w-full">
+          <CardContent className="pt-6 text-center">
+            <AlertCircle className="h-12 w-12 text-amber-500 mx-auto mb-4" />
+            <p className="text-lg font-medium">กรุณาเข้าสู่ระบบ</p>
+            <p className="text-sm text-gray-500 mt-2 mb-4">
+              เข้าสู่ระบบด้วยบัญชีที่ใช้ซื้อ เพื่อขอใบกำกับภาษี
+            </p>
+            <Button
+              onClick={() =>
+                router.push(
+                  `/login?callbackUrl=${encodeURIComponent(
+                    `/invoice-request/${orderId}`
+                  )}`
+                )
+              }
+              className="bg-emerald-600 hover:bg-emerald-700 text-white"
+            >
+              เข้าสู่ระบบ
+            </Button>
+          </CardContent>
+        </Card>
       </div>
     );
   }

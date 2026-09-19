@@ -6,13 +6,21 @@ import { sendLineMessage } from "@/lib/line";
 
 export const runtime = "nodejs";
 
+function isAuthorized(request: NextRequest): boolean {
+  // Vercel Cron auto-injects Authorization: Bearer $CRON_SECRET
+  const bearer = request.headers.get("authorization")?.replace("Bearer ", "");
+  if (bearer && bearer === process.env.CRON_SECRET) return true;
+
+  // Fallback: query param
+  const secret = request.nextUrl.searchParams.get("secret");
+  return !!secret && secret === process.env.CRON_SECRET;
+}
+
 /**
  * Cron: Send weekly stats summary to LINE-linked users.
  */
 export async function GET(request: NextRequest) {
-  const secret = request.nextUrl.searchParams.get("secret");
-  const bearer = request.headers.get("authorization")?.replace("Bearer ", "");
-  if (secret !== process.env.CRON_SECRET && bearer !== process.env.CRON_SECRET) {
+  if (!isAuthorized(request)) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 

@@ -1,6 +1,6 @@
 import { db } from "./index";
 import { mcqAttempts, mcqSessions } from "./schema";
-import { eq } from "drizzle-orm";
+import { and, eq } from "drizzle-orm";
 import type { McqAttempt, McqSession } from "../types-mcq";
 
 export async function saveMcqAttempt(attempt: {
@@ -56,12 +56,19 @@ export async function createMcqSession(session: {
   return toMcqSession(row);
 }
 
+/**
+ * Updates a session, scoped to its owner — `userId` must match the
+ * session's `user_id` or the update (and the read-back) is a no-op that
+ * returns null, so one user can never touch another user's session.
+ */
 export async function updateMcqSession(
   id: string,
+  userId: string,
   updates: { correct_count?: number; completed_at?: string }
 ): Promise<McqSession | null> {
-  await db.update(mcqSessions).set(updates).where(eq(mcqSessions.id, id));
-  const row = await db.select().from(mcqSessions).where(eq(mcqSessions.id, id)).then(rows => rows[0]);
+  const ownedRow = and(eq(mcqSessions.id, id), eq(mcqSessions.user_id, userId));
+  await db.update(mcqSessions).set(updates).where(ownedRow);
+  const row = await db.select().from(mcqSessions).where(ownedRow).then(rows => rows[0]);
   if (!row) return null;
   return toMcqSession(row);
 }

@@ -41,13 +41,16 @@ export async function PATCH(req: Request) {
     return NextResponse.json({ error: "Missing session id" }, { status: 400 });
   }
 
-  const result = await updateMcqSession(body.id, {
+  const result = await updateMcqSession(body.id, session.user.id, {
     correct_count: body.correct_count,
     completed_at: body.completed_at,
   });
 
   if (!result) {
-    return NextResponse.json({ error: "Failed to update session" }, { status: 500 });
+    return NextResponse.json(
+      { error: "Session not found" },
+      { status: 404 }
+    );
   }
   return NextResponse.json(result);
 }
