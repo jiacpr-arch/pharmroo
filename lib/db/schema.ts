@@ -591,6 +591,28 @@ export const lessonQuestions = pgTable("lesson_questions", {
 });
 
 // ========================================
+// AI Chat Logs (rate-limiting for /api/ai/mcq-chat)
+// ========================================
+export const aiChatLogs = pgTable("ai_chat_logs", {
+  id: text("id")
+    .primaryKey()
+    .default(sql`generate_hex_id()`),
+  user_id: text("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
+  question_id: text("question_id").references(() => mcqQuestions.id, {
+    onDelete: "set null",
+  }),
+  user_question: text("user_question").notNull(),
+  status: text("status", { enum: ["answered", "failed"] })
+    .notNull()
+    .default("answered"),
+  created_at: text("created_at")
+    .notNull()
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+});
+
+// ========================================
 // Types
 // ========================================
 export type Invoice = typeof invoices.$inferSelect;
@@ -615,3 +637,4 @@ export type LessonCard = typeof lessonCards.$inferSelect;
 export type LessonProgress = typeof lessonProgress.$inferSelect;
 export type LessonQuestion = typeof lessonQuestions.$inferSelect;
 export type AppSetting = typeof appSettings.$inferSelect;
+export type AiChatLog = typeof aiChatLogs.$inferSelect;

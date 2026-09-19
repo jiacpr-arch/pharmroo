@@ -1,18 +1,25 @@
 import { NextRequest, NextResponse } from "next/server";
+import { auth } from "@/lib/auth";
 import { db } from "@/lib/db";
 import { invoices } from "@/lib/db/schema";
 import { eq } from "drizzle-orm";
 import { createCashInvoice } from "@/lib/flowaccount";
 
-// GET — ดึงข้อมูล invoice สำหรับแสดงในฟอร์ม
+// GET — ดึงข้อมูล invoice สำหรับแสดงในฟอร์ม (เจ้าของคำสั่งซื้อเท่านั้น)
 export async function GET(
   _request: NextRequest,
   { params }: { params: Promise<{ orderId: string }> }
 ) {
+  const session = await auth();
+  if (!session?.user?.id) {
+    return NextResponse.json({ error: "unauthenticated" }, { status: 401 });
+  }
+
   const { orderId } = await params;
 
   const invoice = await db
     .select({
+      user_id: invoices.user_id,
       invoice_number: invoices.invoice_number,
       plan_type: invoices.plan_type,
       order_type: invoices.order_type,
@@ -28,14 +35,16 @@ export async function GET(
     .where(eq(invoices.order_id, orderId))
     .then((rows) => rows[0]);
 
-  if (!invoice) {
+  if (!invoice || invoice.user_id !== session.user.id) {
     return NextResponse.json(
       { error: "ไม่พบข้อมูลคำสั่งซื้อ" },
       { status: 404 }
     );
   }
 
-  return NextResponse.json(invoice);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const { user_id, ...invoiceInfo } = invoice;
+  return NextResponse.json(invoiceInfo);
 }
 
 // POST — รับข้อมูลจากลูกค้า → อัพเดท invoice → สร้าง FlowAccount (ถ้ามี credentials)
@@ -43,6 +52,11 @@ export async function POST(
   request: NextRequest,
   { params }: { params: Promise<{ orderId: string }> }
 ) {
+  const session = await auth();
+  if (!session?.user?.id) {
+    return NextResponse.json({ error: "unauthenticated" }, { status: 401 });
+  }
+
   const { orderId } = await params;
 
   const body = (await request.json()) as {
@@ -63,6 +77,7 @@ export async function POST(
   const invoice = await db
     .select({
       id: invoices.id,
+      user_id: invoices.user_id,
       invoice_number: invoices.invoice_number,
       plan_type: invoices.plan_type,
       order_type: invoices.order_type,
@@ -77,7 +92,7 @@ export async function POST(
     .where(eq(invoices.order_id, orderId))
     .then((rows) => rows[0]);
 
-  if (!invoice) {
+  if (!invoice || invoice.user_id !== session.user.id) {
     return NextResponse.json(
       { error: "ไม่พบข้อมูลคำสั่งซื้อ" },
       { status: 404 }
