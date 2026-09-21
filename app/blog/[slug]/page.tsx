@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getBlogPost } from "@/lib/blog";
 import { ArrowLeft, ArrowRight, Bookmark, Brain, CheckCircle2, Clock3, Lightbulb, Share2, Sparkles, Target } from "lucide-react";
+import ACEInhibitorReview from "@/components/ACEInhibitorReview";
 
 export const revalidate=3600;
 
