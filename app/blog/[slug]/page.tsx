@@ -8,6 +8,7 @@ export const revalidate=3600;
 
 export default async function BlogPostPage({params}:{params:Promise<{slug:string}>}){
  const {slug}=await params; const post=await getBlogPost(slug); if(!post) notFound();
+ if(slug==="ace-inhibitors-exam-review") return <ACEInhibitorReview/>;
  return <div className="min-h-screen bg-white">
   <header className="border-b bg-gradient-to-br from-rose-50 via-white to-emerald-50">
    <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
