@@ -11,6 +11,7 @@ import JsonLd from "@/components/JsonLd";
 import AdBanner from "@/components/AdBanner";
 import MetaPixel from "@/components/MetaPixel";
 import FloatingLineButton from "@/components/FloatingLineButton";
+import { CONTACT_INFO } from "@/lib/contact-info";
 import "./globals.css";
 
 const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID;
@@ -64,9 +65,11 @@ const organizationLd = {
   url: "https://pharmru.com",
   description:
     "แพลตฟอร์มข้อสอบใบประกอบวิชาชีพเภสัชกรรม (PLE) และพยาบาล (NLE) ออนไลน์",
+  sameAs: [CONTACT_INFO.lineUrl],
   contactPoint: {
     "@type": "ContactPoint",
-    email: "jiacpr@gmail.com",
+    email: CONTACT_INFO.email,
+    url: CONTACT_INFO.lineUrl,
     contactType: "customer support",
     availableLanguage: ["Thai", "English"],
   },

@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { trackPurchase } from "@/lib/analytics/conversions";
+import { CONTACT_INFO } from "@/lib/contact-info";
 
 type VerifyStatus = "verifying" | "ok" | "pending" | "error";
 
@@ -95,7 +96,8 @@ export default function SuccessContent() {
             <h1 className="text-2xl font-bold mb-2">เกิดข้อผิดพลาด</h1>
             <p className="text-gray-500 mb-6">
               ไม่สามารถตรวจสอบการชำระเงินได้ กรุณาลองอีกครั้ง
-              หากยังมีปัญหาติดต่อ LINE @pharmroo
+              หากยังมีปัญหา{" "}
+              <a href={CONTACT_INFO.lineUrl} target="_blank" rel="noopener noreferrer" className="text-[#06C755] font-medium hover:underline">{CONTACT_INFO.lineLabel}</a>
             </p>
             <div className="flex gap-3 justify-center">
               <button

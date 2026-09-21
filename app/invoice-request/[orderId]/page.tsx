@@ -8,6 +8,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Loader2, CheckCircle, AlertCircle, FileText } from "lucide-react";
+import { CONTACT_INFO } from "@/lib/contact-info";
 
 interface InvoiceInfo {
   invoice_number: string;
@@ -182,7 +183,8 @@ export default function InvoiceRequestPage({
             <AlertCircle className="h-12 w-12 text-red-500 mx-auto mb-4" />
             <p className="text-lg font-medium">{error}</p>
             <p className="text-sm text-gray-500 mt-2">
-              กรุณาตรวจสอบลิงก์อีกครั้ง หรือติดต่อเราทาง LINE
+              กรุณาตรวจสอบลิงก์อีกครั้ง หรือ{" "}
+              <a href={CONTACT_INFO.lineUrl} target="_blank" rel="noopener noreferrer" className="text-[#06C755] font-medium hover:underline">{CONTACT_INFO.lineLabel}</a>
             </p>
           </CardContent>
         </Card>

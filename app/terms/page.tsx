@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { CONTACT_INFO } from "@/lib/contact-info";
 
 export const metadata: Metadata = {
   title: "นโยบายการซื้อสินค้าและบริการ",
@@ -29,9 +30,9 @@ export default function TermsPage() {
               <div className="bg-gray-50 rounded-xl p-4 text-sm space-y-1">
                 <p><span className="font-semibold">ชื่อบริการ:</span> ภ.รู้ (PharmRoo)</p>
                 <p><span className="font-semibold">ดำเนินงานโดย:</span> Morroo</p>
-                <p><span className="font-semibold">เว็บไซต์:</span> pharma.morroo.com</p>
+                <p><span className="font-semibold">เว็บไซต์:</span> pharmru.com</p>
                 <p><span className="font-semibold">อีเมล:</span> jiacpr@gmail.com</p>
-                <p><span className="font-semibold">Line:</span> @jiacpr</p>
+                <p><span className="font-semibold">LINE:</span> <a href={CONTACT_INFO.lineUrl} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">{CONTACT_INFO.lineLabel}</a></p>
               </div>
             </section>
 
@@ -224,7 +225,7 @@ export default function TermsPage() {
               <div className="bg-emerald-50 border border-emerald-100 rounded-xl p-4 text-sm space-y-1">
                 <p className="font-semibold text-emerald-900">ภ.รู้ (PharmRoo) Customer Support</p>
                 <p>📧 <a href="mailto:jiacpr@gmail.com" className="text-blue-600 hover:underline">jiacpr@gmail.com</a></p>
-                <p>📱 Line: @jiacpr</p>
+                <p>📱 <a href={CONTACT_INFO.lineUrl} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">{CONTACT_INFO.lineLabel}</a></p>
                 <p className="text-gray-500 text-xs mt-2">เวลาทำการ: วันจันทร์–ศุกร์ 09:00–18:00 น.</p>
               </div>
             </section>

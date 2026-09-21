@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { CONTACT_INFO } from "@/lib/contact-info";
 
 export const metadata: Metadata = {
   title: "นโยบายความเป็นส่วนตัว (PDPA)",
@@ -197,7 +198,7 @@ export default function PrivacyPage() {
                 <p className="font-semibold text-blue-900">เจ้าหน้าที่คุ้มครองข้อมูลส่วนบุคคล (DPO)</p>
                 <p>ภ.รู้ (PharmRoo) / Morroo</p>
                 <p>📧 <a href="mailto:jiacpr@gmail.com" className="text-blue-600 hover:underline">jiacpr@gmail.com</a></p>
-                <p>📱 Line: @jiacpr</p>
+                <p>📱 <a href={CONTACT_INFO.lineUrl} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">{CONTACT_INFO.lineLabel}</a></p>
               </div>
             </section>
 
