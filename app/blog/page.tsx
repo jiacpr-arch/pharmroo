@@ -6,18 +6,18 @@ import { ArrowRight, BookOpen, Brain, Clock3, Flame, Search, ShieldCheck, Sparkl
 export const dynamic = "force-dynamic";
 
 const clinicalSystems = [
-  { icon: "❤️", name: "หัวใจและหลอดเลือด", desc: "HF • ACS • AF • Arrhythmia", tone: "bg-rose-50 border-rose-100" },
-  { icon: "🩸", name: "ความดันโลหิตสูง", desc: "ACEI • ARB • CCB • Diuretics", tone: "bg-red-50 border-red-100" },
-  { icon: "🍬", name: "เบาหวาน", desc: "Insulin • Metformin • SGLT2i • GLP-1", tone: "bg-amber-50 border-amber-100" },
-  { icon: "🫘", name: "ไตและอิเล็กโทรไลต์", desc: "CKD • AKI • K⁺ • Na⁺ • Renal dose", tone: "bg-sky-50 border-sky-100" },
-  { icon: "🦴", name: "กระดูกและข้อ", desc: "Osteoporosis • Gout • OA • RA", tone: "bg-violet-50 border-violet-100" },
-  { icon: "🫀", name: "ไขมันในเลือด", desc: "Statin • Ezetimibe • Fibrate • PCSK9", tone: "bg-pink-50 border-pink-100" },
-  { icon: "🦠", name: "โรคติดเชื้อ", desc: "Antibiotics • Spectrum • Resistance", tone: "bg-emerald-50 border-emerald-100" },
-  { icon: "🫁", name: "ทางเดินหายใจ", desc: "Asthma • COPD • Inhalers", tone: "bg-cyan-50 border-cyan-100" },
-  { icon: "🧠", name: "ประสาทและจิตเวช", desc: "Stroke • Epilepsy • Depression", tone: "bg-indigo-50 border-indigo-100" },
-  { icon: "🍽️", name: "ทางเดินอาหาร", desc: "GERD • PUD • GI bleed", tone: "bg-orange-50 border-orange-100" },
-  { icon: "🧬", name: "ต่อมไร้ท่อ", desc: "Thyroid • Adrenal • Steroid", tone: "bg-teal-50 border-teal-100" },
-  { icon: "💊", name: "หัวข้ออื่น ๆ", desc: "PK • ADR • Interaction • Calculation", tone: "bg-slate-50 border-slate-200" },
+  { slug: "cardiovascular", icon: "❤️", name: "หัวใจและหลอดเลือด", desc: "HF • ACS • AF • Arrhythmia", tone: "bg-rose-50 border-rose-100" },
+  { slug: "hypertension", icon: "🩸", name: "ความดันโลหิตสูง", desc: "ACEI • ARB • CCB • Diuretics", tone: "bg-red-50 border-red-100" },
+  { slug: "diabetes", icon: "🍬", name: "เบาหวาน", desc: "Insulin • Metformin • SGLT2i • GLP-1", tone: "bg-amber-50 border-amber-100" },
+  { slug: "renal-electrolytes", icon: "🫘", name: "ไตและอิเล็กโทรไลต์", desc: "CKD • AKI • K⁺ • Na⁺ • Renal dose", tone: "bg-sky-50 border-sky-100" },
+  { slug: "bone-joint", icon: "🦴", name: "กระดูกและข้อ", desc: "Osteoporosis • Gout • OA • RA", tone: "bg-violet-50 border-violet-100" },
+  { slug: "dyslipidemia", icon: "🫀", name: "ไขมันในเลือด", desc: "Statin • Ezetimibe • Fibrate • PCSK9", tone: "bg-pink-50 border-pink-100" },
+  { slug: "infectious-disease", icon: "🦠", name: "โรคติดเชื้อ", desc: "Antibiotics • Spectrum • Resistance", tone: "bg-emerald-50 border-emerald-100" },
+  { slug: "respiratory", icon: "🫁", name: "ทางเดินหายใจ", desc: "Asthma • COPD • Inhalers", tone: "bg-cyan-50 border-cyan-100" },
+  { slug: "neuro-psych", icon: "🧠", name: "ประสาทและจิตเวช", desc: "Stroke • Epilepsy • Depression", tone: "bg-indigo-50 border-indigo-100" },
+  { slug: "gastrointestinal", icon: "🍽️", name: "ทางเดินอาหาร", desc: "GERD • PUD • GI bleed", tone: "bg-orange-50 border-orange-100" },
+  { slug: "endocrine", icon: "🧬", name: "ต่อมไร้ท่อ", desc: "Thyroid • Adrenal • Steroid", tone: "bg-teal-50 border-teal-100" },
+  { slug: "other", icon: "💊", name: "หัวข้ออื่น ๆ", desc: "PK • ADR • Interaction • Calculation", tone: "bg-slate-50 border-slate-200" },
 ];
 
 const topics = ["ACE Inhibitors & ARBs","Antibiotics","Diuretics","Drug Interaction","Anticoagulants","Pharmacokinetics","Drug Law","Endocrine","CNS","Calculation"];
@@ -47,7 +47,7 @@ export default async function BlogPage() {
     <main className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
       <section className="mb-14">
   <div className="mb-6"><div className="text-sm font-semibold text-emerald-700">Clinical Review Map</div><h2 className="mt-1 text-3xl font-bold text-slate-900">เลือกทบทวนตามโรคและระบบ</h2><p className="mt-2 text-slate-500">เริ่มจากโรคที่อยากอ่าน แล้วค่อยเจาะไปยังยา กลไก จุดหลอก และข้อสอบที่เกี่ยวข้อง</p></div>
-  <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">{clinicalSystems.map(s=><div key={s.name} className={`group rounded-2xl border p-5 transition hover:-translate-y-0.5 hover:shadow-md ${s.tone}`}><div className="text-3xl">{s.icon}</div><h3 className="mt-3 font-bold text-slate-900">{s.name}</h3><p className="mt-1 text-xs leading-5 text-slate-500">{s.desc}</p><div className="mt-4 flex items-center text-sm font-semibold text-emerald-700">ดูบททบทวน <ArrowRight className="ml-1.5 h-4 w-4"/></div></div>)}</div>
+  <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">{clinicalSystems.map(s=><Link key={s.name} href={`/blog/system/${s.slug}`} className={`group rounded-2xl border p-5 transition hover:-translate-y-0.5 hover:shadow-md ${s.tone}`}><div className="text-3xl">{s.icon}</div><h3 className="mt-3 font-bold text-slate-900">{s.name}</h3><p className="mt-1 text-xs leading-5 text-slate-500">{s.desc}</p><div className="mt-4 flex items-center text-sm font-semibold text-emerald-700">ดูบททบทวน <ArrowRight className="ml-1.5 h-4 w-4"/></div></Link>)}</div>
 </section>
 <div className="grid gap-8 lg:grid-cols-[1fr_280px]">
         <div>
