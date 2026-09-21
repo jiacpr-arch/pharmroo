@@ -5,6 +5,7 @@
  * unset, so dev / preview environments don't crash on send.
  */
 import { Resend } from "resend";
+import { CONTACT_INFO } from "@/lib/contact-info";
 
 const fromEmail =
   process.env.RESEND_FROM_EMAIL || "ฟาร์มรู้ <noreply@pharmru.com>";
@@ -56,7 +57,7 @@ function welcomeEmailHtml(name: string): string {
     </a>
   </p>
   <p style="color:#6b7280;font-size:14px">มีคำถามหรืออยากปรึกษา? แอดไลน์เรามาได้เลยที่
-  <a href="https://line.me/R/ti/p/@jiacpr" style="color:#16a34a">@jiacpr</a></p>
+  <a href="${CONTACT_INFO.lineUrl}" style="color:#16a34a">${CONTACT_INFO.lineLabel}</a></p>
   <hr style="border:none;border-top:1px solid #e5e7eb;margin:24px 0" />
   <p style="color:#9ca3af;font-size:12px;text-align:center">
     ฟาร์มรู้ PharmRu — แพลตฟอร์มข้อสอบใบประกอบวิชาชีพเภสัชและพยาบาล

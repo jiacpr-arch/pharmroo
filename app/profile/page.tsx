@@ -9,6 +9,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { User, Mail, Crown, Calendar, LogOut, BarChart3, ArrowRight, Share2, MessageCircle, Copy, Check } from "lucide-react";
 import StudentStats from "@/components/StudentStats";
+import LineContactCard from "@/components/LineContactCard";
 
 const membershipLabels: Record<string, string> = {
   free: "ฟรี",
@@ -205,7 +206,7 @@ function LineLinkSection() {
   return (
     <div className="space-y-3">
       <p className="text-sm text-muted-foreground">
-        คัดลอกรหัสด้านล่าง แล้วส่งในแชท LINE OA @pharmroo
+        คัดลอกรหัสด้านล่าง แล้วส่งในแชท LINE ฟาร์มรู้
       </p>
       <div className="flex items-center gap-2">
         <code className="flex-1 bg-muted px-4 py-2 rounded-lg text-center font-mono font-bold text-lg">
@@ -216,6 +217,7 @@ function LineLinkSection() {
         </Button>
       </div>
       <p className="text-xs text-muted-foreground">รหัสหมดอายุใน 24 ชั่วโมง</p>
+      <LineContactCard size="md" className="pt-2" />
     </div>
   );
 }

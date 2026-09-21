@@ -1,4 +1,5 @@
 import Link from "next/link";
+import LineContactCard from "@/components/LineContactCard";
 
 export default function Footer() {
   return (
@@ -45,9 +46,8 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-white/70">
               <li><Link href="/login" className="hover:text-white transition-colors">เข้าสู่ระบบ</Link></li>
               <li><Link href="/register" className="hover:text-white transition-colors">สมัครสมาชิก</Link></li>
-              <li>📧 jiacpr@gmail.com</li>
-              <li>📱 Line: @jiacpr</li>
             </ul>
+            <LineContactCard size="sm" tone="light" className="mt-4" />
           </div>
         </div>
 
