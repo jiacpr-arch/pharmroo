@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400">
+<defs><linearGradient id="bg" x1="0" x2="1"><stop stop-color="#f8fffd"/><stop offset="1" stop-color="#ecfbf7"/></linearGradient><filter id="s"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-opacity=".12"/></filter></defs>
+<rect width="720" height="400" rx="34" fill="url(#bg)"/>
+<!-- sticky note -->
+<g transform="translate(92 36) rotate(-5 105 55)" filter="url(#s)"><rect width="210" height="110" rx="12" fill="#fff9df"/><text x="105" y="36" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#17243d">Good Pharmacists</text><text x="105" y="62" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#17243d">Create Healthier</text><text x="105" y="88" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#17243d">Tomorrows. ♡</text></g>
+<!-- plant -->
+<g transform="translate(45 188)" filter="url(#s)"><path d="M54 75C45 45 48 20 61 0" stroke="#27795e" stroke-width="5" fill="none"/><ellipse cx="34" cy="34" rx="25" ry="11" transform="rotate(-30 34 34)" fill="#66ad68"/><ellipse cx="71" cy="29" rx="25" ry="11" transform="rotate(30 71 29)" fill="#4e9a5a"/><ellipse cx="40" cy="59" rx="23" ry="10" transform="rotate(15 40 59)" fill="#78b96d"/><ellipse cx="72" cy="58" rx="22" ry="10" transform="rotate(-18 72 58)" fill="#5ca45f"/><path d="M20 78h72l-9 70H30z" fill="#fff" stroke="#d9e4e1" stroke-width="3"/><ellipse cx="56" cy="78" rx="36" ry="9" fill="#eef5f3"/></g>
+<!-- books -->
+<g transform="translate(155 160)" filter="url(#s)" font-family="Arial,sans-serif" font-weight="800" text-anchor="middle">
+<g><rect x="0" y="0" width="245" height="52" rx="8" fill="#f58c93"/><rect x="8" y="7" width="229" height="38" rx="5" fill="#f8a6aa"/><text x="122" y="33" font-size="17" fill="#17243d">PHARMACOLOGY</text></g>
+<g transform="translate(8 47)"><rect width="245" height="52" rx="8" fill="#4f99c9"/><rect x="8" y="7" width="229" height="38" rx="5" fill="#69add8"/><text x="122" y="33" font-size="17" fill="white">PHARMACOTHERAPY</text></g>
+<g transform="translate(0 94)"><rect width="245" height="52" rx="8" fill="#36a88b"/><rect x="8" y="7" width="229" height="38" rx="5" fill="#57bda3"/><text x="122" y="33" font-size="17" fill="white">PHARMACEUTICS</text></g>
+<g transform="translate(10 141)"><rect width="245" height="52" rx="8" fill="#e8b63f"/><rect x="8" y="7" width="229" height="38" rx="5" fill="#f2c85b"/><text x="122" y="33" font-size="16" fill="#17243d">CLINICAL PHARMACY</text></g></g>
+<!-- pen -->
+<g transform="translate(85 346) rotate(8)" filter="url(#s)"><rect width="175" height="17" rx="8" fill="#389b93"/><rect x="20" y="3" width="110" height="5" rx="3" fill="#75c8bd"/><path d="M175 0l30 8.5-30 8.5z" fill="#20394c"/></g>
+<!-- green panel -->
+<g transform="translate(440 55)" filter="url(#s)"><rect width="245" height="280" rx="26" fill="#07845f"/><text x="28" y="50" font-family="Arial,sans-serif" font-size="28" font-weight="800" fill="white">เรียนรู้</text><text x="28" y="86" font-family="Arial,sans-serif" font-size="28" font-weight="800" fill="white">จากข้อสอบจริง</text>
+<g font-family="Arial,sans-serif" font-size="17" fill="white"><text x="28" y="132">✓  สรุปกระชับ</text><text x="28" y="169">✓  ตรงประเด็น</text><text x="28" y="206">✓  มีตัวอย่างข้อสอบ</text></g><rect x="20" y="225" width="205" height="42" rx="13" fill="white"/><text x="122" y="252" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="800" fill="#087b5b">เลือกหมวดบทความ →</text></g>
+</svg>
