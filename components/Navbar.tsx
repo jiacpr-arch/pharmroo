@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname, useSearchParams } from "next/navigation";
-import { useState } from "react";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, User, LogOut, Shield } from "lucide-react";
 import { useSession, signOut } from "next-auth/react";
@@ -21,9 +21,13 @@ const navLinks = [
 
 export default function Navbar() {
   const pathname = usePathname();
-  const searchParams = useSearchParams();
-  const pleTrack = searchParams.get("track") || "cc1";
+  const [pleTrack, setPleTrack] = useState("cc1");
   const showPleSubnav = pathname.startsWith("/ple");
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    setPleTrack(params.get("track") || "cc1");
+  }, [pathname]);
   const [mobileOpen, setMobileOpen] = useState(false);
   const { data: session } = useSession();
   const user = session?.user;
