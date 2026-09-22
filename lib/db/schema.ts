@@ -638,3 +638,25 @@ export type LessonProgress = typeof lessonProgress.$inferSelect;
 export type LessonQuestion = typeof lessonQuestions.$inferSelect;
 export type AppSetting = typeof appSettings.$inferSelect;
 export type AiChatLog = typeof aiChatLogs.$inferSelect;
+
+// ========================================
+// 27. Game Runs — เกมร้านยา (/game) หนึ่งแถว = เล่นจบ 1 รอบ
+// ========================================
+export const gameRuns = pgTable("game_runs", {
+  id: text("id").primaryKey().default(sql`generate_hex_id()`),
+  user_id: text("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
+  scenario_slug: text("scenario_slug").notNull(),
+  difficulty: text("difficulty", { enum: ["easy", "normal", "hard"] }).notNull(),
+  won: boolean("won").notNull(),
+  grade: text("grade", { enum: ["S", "A", "B", "C"] }).notNull(),
+  score: integer("score").notNull().default(0),
+  wrong_count: integer("wrong_count").notNull().default(0),
+  duration_sec: integer("duration_sec").notNull().default(0),
+  xp: integer("xp").notNull().default(0),
+  metrics: jsonb("metrics").notNull().default(sql`'{}'::jsonb`),
+  created_at: text("created_at")
+    .notNull()
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+});

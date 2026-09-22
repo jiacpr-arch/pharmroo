@@ -321,6 +321,43 @@ export default async function HomePage() {
       </section>
 
       <section className="bg-slate-50 py-12">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="relative overflow-hidden rounded-3xl bg-[#0d1a24] px-6 py-10 text-white sm:px-10">
+            <div
+              className="pointer-events-none absolute inset-0 opacity-70"
+              style={{
+                background:
+                  "radial-gradient(ellipse 120% 60% at 10% -10%, rgba(242,193,78,.28), transparent 55%), radial-gradient(ellipse 120% 60% at 90% 120%, rgba(13,148,136,.4), transparent 55%)",
+              }}
+            />
+            <div className="relative grid items-center gap-6 lg:grid-cols-[1.2fr_0.8fr]">
+              <div>
+                <Badge className="mb-3 border-amber-400/40 bg-amber-400/15 text-amber-300 hover:bg-amber-400/15">
+                  ใหม่ · เกมจำลองร้านยา
+                </Badge>
+                <h2 className="text-3xl font-black sm:text-4xl">
+                  เกม<span className="text-amber-400">ร้านยา</span> — ซักประวัติ จ่ายยา ตัดสินใจจริง
+                </h2>
+                <p className="mt-3 max-w-xl text-sm leading-7 text-slate-300">
+                  รับลูกค้าที่เดินเข้าร้าน ซักประวัติแบบ WWHAM คัดกรอง red flag
+                  เลือกยาให้ถูกคนภายใต้เวลากดดัน ตัดสินใจผิด ผู้ป่วยแย่ลงจริง
+                  เล่นฟรีทุกเคส ไม่ต้องล็อกอิน
+                </p>
+              </div>
+              <div className="flex flex-col gap-3 lg:items-end">
+                <Link href="/game">
+                  <Button size="lg" className="w-full gap-2 bg-amber-400 text-slate-900 hover:bg-amber-300 lg:w-auto">
+                    เริ่มรับลูกค้า <ArrowRight className="h-4 w-4" />
+                  </Button>
+                </Link>
+                <p className="text-xs text-slate-400">3 เคสตัวอย่าง · เก็บ XP และ badge เมื่อล็อกอิน</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-slate-50 py-12">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <h2 className="mb-4 text-center text-2xl font-bold">ข่าวสารสุขภาพ</h2>
           <div className="overflow-hidden rounded-2xl border bg-white shadow-sm">

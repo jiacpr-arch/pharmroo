@@ -13,6 +13,7 @@ const navLinks = [
   { href: "/ple", label: "PLE Exam" },
   { href: "/nursing", label: "NLE Exam" },
   { href: "/learn", label: "เรียนรู้" },
+  { href: "/game", label: "เกมร้านยา" },
   { href: "/sets", label: "ชุดข้อสอบ" },
   { href: "/pricing", label: "แพ็กเกจ" },
   { href: "/blog", label: "บทความ" },

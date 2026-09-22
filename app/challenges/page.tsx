@@ -142,6 +142,41 @@ const PHARMACY_SPECIAL: ChallengeDef[] = [
   },
 ];
 
+// เกมร้านยา (/game) — ให้ทั้งสอง track เพราะเล่นได้ทุกคน; ปลดล็อกอัตโนมัติจาก
+// /api/game/run และตรวจซ้ำได้ผ่าน checkEligible ใน /api/challenges
+const GAME_SPECIAL: ChallengeDef[] = [
+  {
+    id: "game_first_win",
+    title: "จ่ายยาสำเร็จครั้งแรก",
+    description: "เล่นเกมร้านยาจนจบเคสสำเร็จ 1 ครั้ง",
+    icon: "🏪",
+    type: "special",
+    xp: 200,
+    href: "/game",
+    condition: "ชนะ 1 เคส",
+  },
+  {
+    id: "game_grade_s",
+    title: "เภสัชกรเกรด S",
+    description: "จบเคสในเกมร้านยาโดยไม่พลาดเลย (เกรด S)",
+    icon: "⭐",
+    type: "special",
+    xp: 500,
+    href: "/game",
+    condition: "เกรด S 1 เคส",
+  },
+  {
+    id: "game_no_mistake",
+    title: "ไร้ที่ติ — ไม่พลาดสักข้อ",
+    description: "จบเคสโดยไม่ตัดสินใจพลาดเลย ในโหมดปกติหรือยาก",
+    icon: "🎯",
+    type: "special",
+    xp: 400,
+    href: "/game",
+    condition: "0 พลาด · โหมดปกติ/ยาก",
+  },
+];
+
 const NURSING_SPECIAL: ChallengeDef[] = [
   {
     id: "nle_adult_master",
@@ -192,7 +227,7 @@ function buildChallenges(category: string | null | undefined) {
   const mock = isNursing ? "/nursing/mock" : "/ple/mock";
   const daily = DAILY_CHALLENGES_BASE(practice, mock);
   const weekly = WEEKLY_CHALLENGES_BASE(practice);
-  const special = isNursing ? NURSING_SPECIAL : PHARMACY_SPECIAL;
+  const special = [...(isNursing ? NURSING_SPECIAL : PHARMACY_SPECIAL), ...GAME_SPECIAL];
   return { daily, weekly, special, all: [...daily, ...weekly, ...special] };
 }
 
