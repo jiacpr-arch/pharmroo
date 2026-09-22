@@ -81,22 +81,38 @@ function whyWrong(text:string,caseIndex:number){
  if(text.includes("หยุด")) return "การหยุดยาโดยอัตโนมัติโดยไม่ประเมิน severity, indication และ reversible factors อาจทำให้สูญเสียประโยชน์ของการรักษา";
  return "แม้ดูเป็นทางเลือกที่เป็นไปได้บางบริบท แต่ไม่ตอบ key clinical problem ของผู้ป่วยรายนี้ได้ดีที่สุดเมื่อเทียบกับคำตอบที่ถูก";
 }
-export const PC1_PILOT_032:McqQuestion[]=C.flatMap((c,ci)=>c.q.map((q,qi)=>({
- id:`pc1pilot${String(ci*4+qi+1).padStart(3,"0")}`,
- subject_id:"pc1",exam_type:"PLE-PC",exam_source:"PharmRU PC1 Pilot 032",exam_day:null,question_number:ci*4+qi+1,
- scenario:`Case ${ci+1}/8 — ${c.t}\n${c.s}\n\nคำถาม ${qi+1}/4: ${q.p}`,
- image_url:null,
- choices:q.o.map((text,i)=>({label:"ABCDE"[i],text})),
- correct_answer:"ABCDE"[q.a],
- explanation:`เหตุผลหลัก: ${q.r}\n\nKey clue: ${clues[ci]}\n\nClinical application: คำตอบต้องเลือกจากสิ่งที่เหมาะสมที่สุดสำหรับผู้ป่วยรายนี้ ไม่ใช่เพียงสิ่งที่ “ทำได้” ในทางทฤษฎี\n\nMonitoring / Follow-up: ${monitoring[ci]}\n\nReference used for review: ${refs[ci]}`,
+const answerPositions=[2,0,4,1,3, 1,3,0,4,2, 4,2,1,3,0, 0,4,2,1,3, 3,1,4,0,2, 2,4,0,3,1, 1,3];
+function wrongReason(text:string,ci:number,qi:number){
+ const t=text.toLowerCase();
+ if(t.includes("nsaid")) return "ไม่เลือก เพราะ NSAID อาจเพิ่มความเสี่ยงไต เลือดออก หรือ cardiovascular risk โดยเฉพาะในผู้ป่วยที่มีโรคร่วม/ใช้ antithrombotic; ต้องประเมินข้อบ่งใช้และทางเลือกที่ปลอดภัยกว่า";
+ if(t.includes("อย่างเดียว")) return "ไม่เลือก เพราะโจทย์ PC1 ต้องประเมินผู้ป่วยแบบองค์รวม การใช้ตัวแปรเดียวไม่เพียงพอที่จะตัดสิน efficacy และ safety";
+ if(t.includes("หยุด")) return "ไม่เลือก เพราะการหยุดยาแบบอัตโนมัติโดยไม่ประเมินข้อบ่งใช้ ความรุนแรง และ reversible factors อาจทำให้เสียประโยชน์ของการรักษา";
+ if(t.includes("ทุก")||t.includes("เสมอ")) return "ไม่เลือก เพราะเป็น absolute statement ที่กว้างเกินหลักฐาน การรักษาต้อง individualized ตามข้อบ่งใช้ ความเสี่ยง และข้อมูลของผู้ป่วย";
+ if(t.includes("ไม่ต้อง")||t.includes("ไม่มี")) return "ไม่เลือก เพราะละเลยการติดตามหรือความเสี่ยงสำคัญที่โจทย์ให้มา และไม่สอดคล้องกับหลัก medication safety";
+ return `ไม่เลือก เพราะแม้ตัวเลือกนี้อาจใช้ได้ในบางบริบท แต่ไม่แก้ clinical priority ของ Case ${ci+1} ได้ตรงเท่าคำตอบที่ถูก ต้องชั่ง efficacy, safety, comorbidity และ interaction ร่วมกัน`;
+}
+export const PC1_PILOT_032:McqQuestion[]=C.flatMap((c,ci)=>c.q.map((q,qi)=>{
+ const qn=ci*4+qi;
+ const correctText=q.o[q.a];
+ const distractors=q.o.filter((_,i)=>i!==q.a);
+ const pos=answerPositions[qn];
+ const arranged=[...distractors]; arranged.splice(pos,0,correctText);
+ const labels=["A","B","C","D","E"];
+ const answer=labels[pos];
+ return {
+ id:`pc1pilot${String(qn+1).padStart(3,"0")}`,subject_id:"pc1",exam_type:"PLE-PC",exam_source:"PharmRU PC1 Pilot 032",exam_day:null,question_number:qn+1,
+ scenario:`Case ${ci+1}/8 — ${c.t}\n${c.s}\n\nคำถาม ${qi+1}/4: ${q.p}`,image_url:null,
+ choices:arranged.map((text,i)=>({label:labels[i],text})),correct_answer:answer,
+ explanation:`วิเคราะห์โจทย์:\n${clues[ci]}\n\nClinical reasoning:\n${q.r} ประเด็นสำคัญคือไม่ได้เลือกยาหรือการจัดการจาก diagnosis เพียงอย่างเดียว แต่ต้องนำข้อมูลผู้ป่วยรายนี้มาชั่งประโยชน์และความเสี่ยง รวมถึงโรคร่วม การทำงานของไต/ตับ ยาร่วม และเป้าหมายการรักษา\n\nการนำไปใช้จริง:\nหากเลือกแนวทางนี้ ต้องประเมิน baseline ที่เกี่ยวข้องและติดตาม response หลังเริ่มหรือปรับการรักษา ไม่ควรตีความผลตรวจเพียงค่าเดียวโดยไม่ดูอาการและแนวโน้ม\n\nMonitoring / Follow-up:\n${monitoring[ci]}\n\nReference สำหรับตรวจเฉลย:\n${refs[ci]}`,
  detailed_explanation:{
-  summary:`เฉลย ${"ABCDE"[q.a]}: ${q.o[q.a]}`,
-  reason:`【วิเคราะห์โจทย์】 ${clues[ci]}\n\n【เหตุผลที่คำตอบนี้ดีที่สุด】 ${q.r} การตัดสินใจต้องพิจารณาประสิทธิผล ความปลอดภัย โรคร่วม ยาร่วม และข้อมูลติดตามของผู้ป่วยร่วมกัน\n\n【Monitoring / Practical point】 ${monitoring[ci]}\n\n【แหล่งอ้างอิงสำหรับตรวจเฉลย】 ${refs[ci]}`,
-  choices:q.o.map((text,i)=>({label:"ABCDE"[i],text,is_correct:i===q.a,explanation:i===q.a?`ถูก — ${q.r}`:whyWrong(text,ci)})),
-  key_takeaway:`Exam Pearl: ${q.r} | จำ key clue ของเคส: ${clues[ci]}`
+  summary:`เฉลย ${answer}: ${correctText}`,
+  reason:`【1. จับ Key clue】\n${clues[ci]}\n\n【2. Clinical reasoning】\n${q.r} ข้อนี้วัดการเชื่อมข้อมูลผู้ป่วยกับเป้าหมายการรักษา ไม่ใช่การจำชื่อยาอย่างเดียว ต้องพิจารณาทั้ง efficacy + safety + comorbidity + concomitant medications ก่อนเลือก single best answer\n\n【3. สิ่งที่ต้องทำต่อในเวชปฏิบัติ】\n${monitoring[ci]}\n\n【4. จุดที่มักพลาดในข้อสอบ】\nอย่าเลือกคำตอบเพราะเป็นสิ่งที่ “ทำได้” ให้เลือกสิ่งที่แก้ปัญหาสำคัญที่สุดของผู้ป่วย ณ เวลานั้น และระวังตัวเลือกที่ใช้คำว่า ทุกคน/เสมอ/ทันที โดยไม่มีเงื่อนไข\n\n【5. Reference】\n${refs[ci]}`,
+  choices:arranged.map((text,i)=>({label:labels[i],text,is_correct:i===pos,explanation:i===pos?`ถูก — ${q.r} โดยข้อมูลสำคัญคือ ${clues[ci]}`:wrongReason(text,ci,qi)})),
+  key_takeaway:`Exam Pearl: ${q.r}\nKey clue ที่ควรจำ: ${clues[ci]}\nติดตาม: ${monitoring[ci]}`
  },
  difficulty:qi<2?"medium":"hard",is_ai_enhanced:true,
- ai_notes:`PharmRU original PC1 pilot. Reference review: ${refs[ci]}. Editorial/clinical review recommended before commercial publication.`,
+ ai_notes:`PharmRU original PC1 pilot. Reference review: ${refs[ci]}. Clinical/editorial review recommended before commercial publication.`,
  status:"active",created_at:"2026-09-22 12:00:00",
  mcq_subjects:{id:"pc1",name:"PC1",name_th:"บริบาลเภสัชกรรม PC1",icon:"🩺",exam_type:"PLE-PC",question_count:32,created_at:"2026-09-22 12:00:00"}
-})));
+ };
+}));
