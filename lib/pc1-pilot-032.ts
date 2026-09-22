@@ -47,13 +47,9 @@ const extraCases=[
 ];
 const labels=["A","B","C","D","E"];
 
-type ExtraQ=readonly [string,readonly string[],number,string];
-type ExtraCase={title:string;base:string;q:readonly ExtraQ[]};
-const typedExtraCases=extraCases as readonly ExtraCase[];
-
 const allCases=[
 {title:caseTitle,items:qs.map(q=>({stage:q.stage,p:q.p,o:q.o,a:q.a,r:q.r,wrong:q.wrong,ref:"ADA Standards of Care in Diabetes 2026; KDIGO 2024 CKD Guideline"}))},
-...typedExtraCases.map(c=>({title:c.title,items:c.q.map(q=>({stage:c.base,p:q[0],o:q[1],a:q[2],r:q[3],wrong:q[1].map((x,j)=>j===q[2]?`ถูก — ${q[3]}`:`ไม่ใช่ single best answer: ${x} อาจมีบทบาทในบางบริบท แต่ไม่ตอบ clinical priority ของเคสนี้ได้ดีที่สุด`),ref:"Current disease-specific guideline / official drug information; verify version at editorial review"}))}))
+...(extraCases as any[]).map((c:any)=>({title:c.title,items:(c.q as any[]).map((q:any)=>({stage:c.base,p:q[0],o:q[1],a:q[2],r:q[3],wrong:(q[1] as string[]).map((x:string,j:number)=>j===q[2]?`ถูก — ${q[3]}`:`ไม่ใช่ single best answer: ${x} อาจมีบทบาทในบางบริบท แต่ไม่ตอบ clinical priority ของเคสนี้ได้ดีที่สุด`),ref:"Current disease-specific guideline / official drug information; verify version at editorial review"}))}))
 ];
 const answerCycle=[2,3,1,4,0];
 export const PC1_PILOT_032:McqQuestion[]=allCases.flatMap((c,ci)=>c.items.map((q:any,qi:number)=>{
