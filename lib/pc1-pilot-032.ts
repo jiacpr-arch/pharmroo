@@ -54,6 +54,12 @@ const trapPools:Record<string,string[][]>={
 ["ติดตาม K⁺ และ renal function หลังเริ่ม/ปรับ MRA","ติดตาม BNP อย่างเดียวเพื่อปรับ spironolactone","ตรวจ INR เพื่อ titrate MRA","ติดตาม uric acid เป็น primary safety parameter","ไม่ต้องตรวจ lab หาก K baseline ปกติ"],
 ["ชั่งน้ำหนักทุกวันและเฝ้าระวัง dyspnea/edema พร้อมแผนเมื่ออาการแย่ลง","จำกัดน้ำ <500 mL/day ในผู้ป่วย HFrEF ทุกคน","เพิ่มเกลือเมื่อรู้สึกเวียนศีรษะโดยไม่วัด BP","หยุด diureticเองเมื่อน้ำหนักลด 1 kg","ใช้ NSAID PRN เมื่อแน่นหน้าอก"]
 ],
+"Atrial fibrillation + CKD":[
+["ประเมินและให้ oral anticoagulation ตาม thromboembolic risk แม้วันนี้ไม่มีอาการ AF","ให้ aspirin 81 mg/day เพราะ bleeding risk ต่ำกว่า anticoagulant","ทำ rhythm control ให้สำเร็จก่อนแล้วค่อยพิจารณา anticoagulation","ให้ dual antiplatelet therapy แทน anticoagulation เพราะเคย ischemic stroke","รอให้ AF burden สูงกว่า 24 ชั่วโมงก่อนเริ่ม stroke prevention"],
+["อายุ น้ำหนัก และ SCr ตามเกณฑ์ dose reduction ของ apixaban ใน NVAF","eGFR อย่างเดียวโดยไม่ดู age/weight/SCr criteria","CHA2DS2-VASc score ใช้กำหนดขนาด apixaban","HAS-BLED score ใช้ลด dose apixabanโดยตรง","INR baseline ใช้เลือก 5 หรือ 2.5 mg BID"],
+["หยุด naproxen ที่ใช้ประจำ ประเมิน OA pain และพิจารณา analgesic ที่ปลอดภัยกว่า โดยคง apixaban ตามข้อบ่งใช้","ใช้ naproxen ต่อและเพิ่ม PPI เพราะชดเชย bleeding risk ได้ทั้งหมด","ลด apixaban เป็น 2.5 mg BID เพื่อให้ใช้ naproxen ต่อได้","เปลี่ยนเป็น celecoxib แล้วใช้ต่อได้โดยไม่ประเมิน bleeding/CV/renal risk","หยุด apixaban เฉพาะวันที่ใช้ naproxen"],
+["ติดตาม CBC, renal/hepatic function ตามความเหมาะสม, bleeding/thrombosis, adherence และยาร่วม โดยไม่ใช้ INR titrate dose","ตรวจ anti-Xa level routine ทุก visit เพื่อปรับ dose","ตรวจ PT/INR ทุก 4 สัปดาห์และปรับ apixaban ให้ INR 2–3","หาก SCr คงที่สามารถงดทบทวน renal function และ interaction","หยุด apixaban เมื่อ ECG ครั้งหนึ่งเป็น sinus rhythm"]
+],
 "Community-acquired pneumonia":[
 ["เลือก regimen ตาม severity, comorbidity, local resistance และ MRSA/Pseudomonas risk","ให้ antipseudomonal + anti-MRSA ทุกคนที่อายุ >65 ปี","เลือก fluoroquinoloneเพียงเพราะรับประทานวันละครั้งโดยไม่ดู risk","รอ sputum culture ก่อนเริ่มยาทุกราย","ใช้ procalcitonin ต่ำเพียงค่าเดียวเพื่อปฏิเสธ bacterial CAP"],
 ["ประเมิน renal dose adjustment แบบ drug-specific ตาม kidney function","ลด antibiotic ทุกชนิด 50% เมื่อ eGFR <60","ใช้ SCr เพียงค่าเดียวโดยไม่ประเมิน renal function","คง full dose ทุกยาเพราะ infectionรุนแรง","ปรับ dose ตามอายุอย่างเดียว"],
