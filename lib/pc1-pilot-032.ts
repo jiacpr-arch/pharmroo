@@ -10,7 +10,7 @@ const C:C[]=[
 {t:"ACS + PCI",s:"ชาย 70 ปี NSTEMI ได้ PCI ใส่ DES ไม่มี active bleeding และไม่มีข้อบ่งใช้ anticoagulation ระยะยาว",q:[
 {p:"default antiplatelet strategy หลัง ACS ในผู้ป่วยที่ bleeding risk ไม่สูงคือข้อใด?",o:["Aspirin เดี่ยวทันที","DAPT aspirin + P2Y12 inhibitor","Warfarin เดี่ยว","หยุด antithrombotic","Triple therapy 12 เดือนทุกคน"],a:1,r:"DAPT เป็น default strategy หลัง ACS เมื่อไม่มีข้อจำกัด"},
 {p:"หากผู้ป่วยมีความเสี่ยง GI bleeding ระหว่าง DAPT ควรพิจารณาอะไร?",o:["เพิ่ม NSAID","PPI gastroprotection","หยุด statin","เพิ่ม aspirin dose","ให้ vitamin K"],a:1,r:"PPI แนะนำในผู้ป่วย ACS ที่มี GI bleeding risk"},
-{p:"ข้อใดเป็น medication reconciliation issue สำคัญก่อนจำหน่าย?",o:["ใช้ ibuprofen ทุกวันแก้ปวดข้อ","รับ high-intensity lipid lowering ตามข้อบ่งใช้","เข้ cardiac rehabilitation","ติดตาม lipid","เลิกบุหรี่"],a:0,r:"NSAID เพิ่ม bleeding/ischemic/renal risk และควรถูกทบทวน"},
+{p:"ก่อนจำหน่าย ผู้ป่วยแจ้งว่าเป็น osteoarthritis และใช้ ibuprofen 400 mg วันละ 2–3 ครั้งเกือบทุกวัน ขณะนี้หลัง PCI ได้ aspirin ร่วมกับ P2Y12 inhibitor เภสัชกรควรจัดการเรื่องยาแก้ปวดอย่างไรจึงเหมาะสมที่สุด?",o:["หลีกเลี่ยง ibuprofen ใช้ประจำ และประเมินทางเลือก analgesia ที่มี bleeding/CV/renal risk ต่ำกว่า","รับ high-intensity lipid lowering ตามข้อบ่งใช้","เข้ cardiac rehabilitation","ติดตาม lipid","เลิกบุหรี่"],a:0,r:"ในผู้ป่วย ACS หลัง PCI ที่ใช้ DAPT การใช้ systemic NSAID เป็นประจำเพิ่มความเสี่ยง bleeding และ cardiovascular/renal adverse events จึงควรทบทวนและเลือก analgesic strategy ที่ปลอดภัยกว่า"},
 {p:"การติดตาม secondary prevention ใดเหมาะสม?",o:["ไม่ต้องตรวจ lipid อีก","ติดตาม lipid หลังเริ่ม/ปรับ lipid-lowering therapy","หยุด statinเมื่อ LDL ลด","งด cardiac rehab","เน้น supplement แทนยา"],a:1,r:"ACS guideline เน้น lipid follow-up และ cardiac rehabilitation"}]},
 {t:"Atrial fibrillation",s:"หญิง 78 ปี AF, HTN, DM, prior TIA, eGFR 55 ไม่มี active bleeding",q:[
 {p:"เป้าหมายสำคัญในการจัดการ AF นอกเหนือจาก symptom control คืออะไร?",o:["ป้องกัน stroke/thromboembolism","ให้ aspirin ทุกคนแทน OAC","หยุดยาความดัน","ให้ antibiotic","ลด HbA1c ต่ำที่สุด"],a:0,r:"AF management ต้องประเมินและป้องกัน thromboembolism"},
@@ -89,7 +89,7 @@ const altDistractors=[
 ["ติดตาม HbA1c และ fasting glucose เท่านั้น","ติดตาม eGFR และ potassium แต่ไม่ต้อง UACR","ติดตาม UACR ปีละครั้งโดยไม่ดู BP","ติดตามเฉพาะ adverse effects ของ SGLT2 inhibitor"],
 ["Aspirin monotherapy","Clopidogrel monotherapy","Oral anticoagulant + aspirin","Triple antithrombotic therapy"],
 ["H2-receptor antagonist","Sucralfate","เพิ่ม aspirin dose แล้วให้ antacid","เปลี่ยน P2Y12 inhibitor เป็น aspirin เดี่ยว"],
-["Celecoxib PRN ขนาดต่ำ","Diclofenac topical อย่างเดียวโดยไม่ประเมิน","Acetaminophen ตามขนาดเหมาะสมและประเมินสาเหตุปวด","Naproxen ร่วม PPI"],
+["เปลี่ยนเป็น celecoxib PRN โดยไม่ประเมิน cardiovascular risk เพิ่มเติม","ใช้ diclofenac topical สำหรับข้อเข่า พร้อมประเมินความเหมาะสมและติดตามอาการ","ใช้ acetaminophen ในขนาดที่เหมาะสมเป็นทางเลือกหนึ่ง พร้อมประเมินความรุนแรง/สาเหตุของอาการปวด","ใช้ naproxen ร่วม PPI เพื่อป้องกัน GI bleeding"],
 ["ตรวจ lipid ที่ 4–8 สัปดาห์หลังปรับยา","รอ 1 ปีค่อยตรวจ lipid","ใช้ LDL baseline อย่างเดียว","ตรวจ CK routine ทุก visit แม้ไม่มีอาการ"],
 ["Aspirin เพราะ prior TIA","Clopidogrel monotherapy","DOAC/warfarin ตาม stroke-risk assessment","No antithrombotic หาก sinus rhythm วันนี้"],
 ["ใช้ eGFR อย่างเดียวเลือก OAC","ใช้ bleeding score เป็นเหตุห้าม OAC โดยอัตโนมัติ","ประเมิน renal function, interactions และ adherence ร่วมกัน","เลือก aspirin ถ้าอายุ >75"],
