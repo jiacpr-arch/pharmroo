@@ -179,6 +179,9 @@ function getChallenges(category: string | null | undefined): Challenge[] {
     { id: "week_all_subjects", title: "ครบทุกสาขา",             icon: "🌐", xp: 500,  href: practice },
     { id: "week_100",          title: "100 ข้อในสัปดาห์",       icon: "💯", xp: 400,  href: practice },
     { id: "special_mock_pass", title: "ผ่าน Mock ครั้งแรก",     icon: "🏅", xp: 800,  href: mock },
+    { id: "game_first_win",    title: "จ่ายยาสำเร็จครั้งแรก",   icon: "🏪", xp: 200,  href: "/game" },
+    { id: "game_grade_s",      title: "เภสัชกรเกรด S",          icon: "⭐", xp: 500,  href: "/game" },
+    { id: "game_no_mistake",   title: "ไร้ที่ติ — ไม่พลาดสักข้อ", icon: "🎯", xp: 400,  href: "/game" },
   ];
 
   const trackSpecific: Challenge[] = isNursing

@@ -3,6 +3,7 @@ import { db } from "@/lib/db";
 import { userChallenges, mcqAttempts, mcqSessions } from "@/lib/db/schema";
 import { eq, and, gte, sql } from "drizzle-orm";
 import { NextResponse } from "next/server";
+import { countGameRuns } from "@/lib/db/queries-game";
 
 // GET /api/challenges — returns completed challenge IDs for current user
 export async function GET() {
@@ -222,6 +223,14 @@ async function checkEligible(userId: string, challengeId: string): Promise<boole
         .where(eq(mcqAttempts.user_id, userId));
       return Number(row?.cnt ?? 0) >= 500;
     }
+
+    // ── เกมร้านยา (/game) — นับจาก game_runs ─────────────────────────────
+    case "game_first_win":
+      return (await countGameRuns(userId, "won")) >= 1;
+    case "game_grade_s":
+      return (await countGameRuns(userId, "grade_s")) >= 1;
+    case "game_no_mistake":
+      return (await countGameRuns(userId, "no_mistake")) >= 1;
 
     default:
       return false;
