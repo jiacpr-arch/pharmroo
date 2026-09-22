@@ -81,33 +81,52 @@ function whyWrong(text:string,caseIndex:number){
  if(text.includes("หยุด")) return "การหยุดยาโดยอัตโนมัติโดยไม่ประเมิน severity, indication และ reversible factors อาจทำให้สูญเสียประโยชน์ของการรักษา";
  return "แม้ดูเป็นทางเลือกที่เป็นไปได้บางบริบท แต่ไม่ตอบ key clinical problem ของผู้ป่วยรายนี้ได้ดีที่สุดเมื่อเทียบกับคำตอบที่ถูก";
 }
-const answerPositions=[2,0,4,1,3, 1,3,0,4,2, 4,2,1,3,0, 0,4,2,1,3, 3,1,4,0,2, 2,4,0,3,1, 1,3];
+const answerPositions=[2,0,4,1,3,1,3,0,4,2,4,2,1,3,0,0,4,2,1,3,3,1,4,0,2,2,4,0,3,1,1,3];
+const altDistractors=[
+["GLP-1 receptor agonist ที่มี CV benefit","Finerenone เมื่อ potassium และข้อบ่งใช้เหมาะสม","เพิ่ม metformin โดยไม่เปลี่ยนยาอื่น","DPP-4 inhibitor"],
+["ติดตามซ้ำใน 1–2 สัปดาห์และประเมิน volume status","ลด ACEI ครึ่งหนึ่งทันทีแม้ไม่มี hypotension","เปลี่ยน ACEI เป็น ARB เพื่อป้องกัน creatinine rise","หยุด RAAS blockade ถาวร"],
+["หยุดเฉพาะเช้าวันผ่าตัด","ให้ต่อจน NPO แล้วหยุดหลังผ่าตัด","เปลี่ยนเป็น DPP-4 inhibitor 1 วันก่อนผ่าตัด","เพิ่ม carbohydrate intake โดยไม่หยุดยา"],
+["ติดตาม HbA1c และ fasting glucose เท่านั้น","ติดตาม eGFR และ potassium แต่ไม่ต้อง UACR","ติดตาม UACR ปีละครั้งโดยไม่ดู BP","ติดตามเฉพาะ adverse effects ของ SGLT2 inhibitor"],
+["Aspirin monotherapy","Clopidogrel monotherapy","Oral anticoagulant + aspirin","Triple antithrombotic therapy"],
+["H2-receptor antagonist","Sucralfate","เพิ่ม aspirin dose แล้วให้ antacid","เปลี่ยน P2Y12 inhibitor เป็น aspirin เดี่ยว"],
+["Celecoxib PRN ขนาดต่ำ","Diclofenac topical อย่างเดียวโดยไม่ประเมิน","Acetaminophen ตามขนาดเหมาะสมและประเมินสาเหตุปวด","Naproxen ร่วม PPI"],
+["ตรวจ lipid ที่ 4–8 สัปดาห์หลังปรับยา","รอ 1 ปีค่อยตรวจ lipid","ใช้ LDL baseline อย่างเดียว","ตรวจ CK routine ทุก visit แม้ไม่มีอาการ"],
+["Aspirin เพราะ prior TIA","Clopidogrel monotherapy","DOAC/warfarin ตาม stroke-risk assessment","No antithrombotic หาก sinus rhythm วันนี้"],
+["ใช้ eGFR อย่างเดียวเลือก OAC","ใช้ bleeding score เป็นเหตุห้าม OAC โดยอัตโนมัติ","ประเมิน renal function, interactions และ adherence ร่วมกัน","เลือก aspirin ถ้าอายุ >75"],
+["เปลี่ยน NSAID เป็น COX-2 inhibitor แล้วใช้ต่อ","เพิ่ม PPI แล้วไม่ต้องทบทวน NSAID","หลีกเลี่ยง NSAID หากเป็นไปได้และหาทางเลือก analgesia","ลด OAC dose เองเพื่อให้ใช้ NSAID"],
+["หยุด OAC เมื่อไม่มี AF symptom","ประเมิน comorbidity/stroke prevention/symptoms ซ้ำเป็นระยะ","ใช้ rhythm control แทน stroke prevention","ใช้ aspirin หลัง cardioversion ทุกคน"],
+["SABA PRN อย่างเดียว","Low-dose ICS-formoterol ตาม Track 1","LABA monotherapy","Daily oral corticosteroid"],
+["SABA","ICS-formoterol","Ipratropium","Oral theophylline"],
+["เพิ่ม ICS dose ทันที","ตรวจ adherence/technique/trigger ก่อน step-up","เพิ่ม LABA โดยไม่ใช้ ICS","ให้ prednisolone maintenance"],
+["Peak-flow diary อย่างเดียว","Written action plan + inhaler education","หลีกเลี่ยง exercise ทั้งหมด","ใช้ antibiotic rescue pack ทุกครั้ง"],
+["Piperacillin-tazobactam โดยไม่ดู susceptibility","Carbapenem ที่ active ตาม severity/site","Nitrofurantoin สำหรับ bacteremia","Oral fosfomycin สำหรับ bacteremia"],
+["ต่อ IV therapy จนครบ course ทุกกรณี","พิจารณา oral step-down เมื่อ stable และมี active oral agent","หยุดทันทีเมื่อ afebrile 24 ชม.","เปลี่ยนเป็น oral agent ที่ไม่ susceptible"],
+["ติดตาม creatinine อย่างเดียว","ติดตาม clinical response + renal function + adverse effects","ติดตาม CRP อย่างเดียว","repeat culture ทุกวันทุกคน"],
+["คง broad spectrum จนครบแม้ culture ชัด","de-escalate ตาม susceptibility/response","เพิ่ม second agent เพื่อป้องกัน resistance","ยืด duration ทุกคน"],
+["IV calcium เมื่อมี ECG change","Insulin/glucose อย่างเดียวโดยไม่ stabilize myocardium","Loop diuretic อย่างเดียว","Sodium bicarbonate ทุกคน"],
+["หยุด ACEI/MRA ถาวรทันที","ทบทวน RAASi/MRA, K intake, supplements และ renal function","เพิ่ม potassium binder โดยไม่หาสาเหตุ","ลด dietary sodium อย่างเดียว"],
+["Potassium-containing salt substitute","Calcium carbonate","Psyllium","Topical diclofenac"],
+["หยุด RAASi ถาวรทุกคน","แก้ reversible causes และประเมิน cardiorenal benefit ก่อนตัดสินใจ","เพิ่ม MRA ทันที","ให้ potassium supplement"],
+["Methotrexate toxicity","RA flare","Felty syndrome โดยไม่ประเมินยา","Iron deficiency anemia"],
+["CBC + creatinine/eGFR + liver tests","ESR/CRP อย่างเดียว","ANA/RF ซ้ำ","Lipid profile"],
+["Amoxicillin","TMP-SMX","Azithromycin","Doxycycline"],
+["ย้ำ weekly dosing + folate plan + interaction check","แบ่ง methotrexate เป็น daily dose","หยุด folate","เพิ่ม dose เมื่อ joint pain"],
+["Diclofenac","Spironolactone","Lactulose","Carvedilol"],
+["น้ำหนัก + renal function + Na/K + BP","abdominal girth อย่างเดียว","LFT อย่างเดียว","serum ammonia routine อย่างเดียว"],
+["Hepatic encephalopathy และค้น precipitant","progression of dementia","opioid withdrawal","isolated hyponatremia โดยไม่ประเมินอื่น"],
+["หลีกเลี่ยง NSAID และรู้ red flags","จำกัดน้ำทุกคนแม้ Na ปกติ","เพิ่ม sodium เพื่อป้องกัน AKI","ใช้สมุนไพรแทนยา"]
+];
 function wrongReason(text:string,ci:number,qi:number){
  const t=text.toLowerCase();
- if(t.includes("nsaid")) return "ไม่เลือก เพราะ NSAID อาจเพิ่มความเสี่ยงไต เลือดออก หรือ cardiovascular risk โดยเฉพาะในผู้ป่วยที่มีโรคร่วม/ใช้ antithrombotic; ต้องประเมินข้อบ่งใช้และทางเลือกที่ปลอดภัยกว่า";
- if(t.includes("อย่างเดียว")) return "ไม่เลือก เพราะโจทย์ PC1 ต้องประเมินผู้ป่วยแบบองค์รวม การใช้ตัวแปรเดียวไม่เพียงพอที่จะตัดสิน efficacy และ safety";
- if(t.includes("หยุด")) return "ไม่เลือก เพราะการหยุดยาแบบอัตโนมัติโดยไม่ประเมินข้อบ่งใช้ ความรุนแรง และ reversible factors อาจทำให้เสียประโยชน์ของการรักษา";
- if(t.includes("ทุก")||t.includes("เสมอ")) return "ไม่เลือก เพราะเป็น absolute statement ที่กว้างเกินหลักฐาน การรักษาต้อง individualized ตามข้อบ่งใช้ ความเสี่ยง และข้อมูลของผู้ป่วย";
- if(t.includes("ไม่ต้อง")||t.includes("ไม่มี")) return "ไม่เลือก เพราะละเลยการติดตามหรือความเสี่ยงสำคัญที่โจทย์ให้มา และไม่สอดคล้องกับหลัก medication safety";
- return `ไม่เลือก เพราะแม้ตัวเลือกนี้อาจใช้ได้ในบางบริบท แต่ไม่แก้ clinical priority ของ Case ${ci+1} ได้ตรงเท่าคำตอบที่ถูก ต้องชั่ง efficacy, safety, comorbidity และ interaction ร่วมกัน`;
-}
-const caseTeaching=[
-"ผู้ป่วยมี T2DM ร่วม CKD G3a และ albuminuria ระดับ A3 (UACR 620 mg/g) จึงเป็นผู้ป่วยที่มีความเสี่ยงต่อ CKD progression และ cardiovascular events สูง การเลือกยาต้องมองทั้ง glycemic control และ organ protection ไม่ใช่ HbA1c เพียงอย่างเดียว ยาที่ออกฤทธิ์ต่อ RAAS ต้องติดตาม creatinine และ potassium ส่วน SGLT2 inhibitor ต้องประเมิน eGFR, volume status และความเสี่ยง ketoacidosis โดยเฉพาะช่วงอดอาหารหรือผ่าตัด",
-"NSTEMI หลัง PCI มีความเสี่ยง 2 ด้านพร้อมกัน: recurrent ischemic/stent thrombosis และ bleeding. DAPT ลด ischemic events แต่เพิ่ม bleeding ดังนั้นการเพิ่ม PPI ไม่ได้มีเป้าหมายรักษา ACS โดยตรง แต่เป็น gastroprotection ในผู้ที่มี GI bleeding risk. 2025 ACC/AHA ACS guideline ระบุว่า PPI ลด GI bleeding ในผู้ใช้ aspirin/DAPT/OAC และแนะนำ PPI เมื่อ ACS มี elevated bleeding risk. ขณะเดียวกันต้องคง secondary prevention เช่น lipid lowering และหลีกเลี่ยง NSAID ที่เพิ่ม bleeding/renal/CV risk",
-"AF ต้องแยกโจทย์เป็น stroke prevention, symptom control และ comorbidity management. อายุสูง HTN DM และ prior TIA เป็นตัวชี้ว่าความเสี่ยง thromboembolism สูง จึงต้องประเมิน anticoagulation อย่างจริงจัง การเลือกและติดตาม OAC ต้องดู renal function, bleeding factors, adherence และ drug interactions; การไม่มี palpitation ไม่ได้แปลว่าความเสี่ยง stroke หายไป",
-"การใช้ SABA บ่อยและ nocturnal symptoms บ่งชี้ asthma control ไม่ดี. แนวทาง GINA เน้น ICS-containing treatment เพื่อลด severe exacerbation risk และ Track 1 ใช้ ICS-formoterol เป็น reliever strategy ในผู้ใหญ่/วัยรุ่นที่เหมาะสม ก่อน step-up ต้องตรวจ diagnosis, adherence, inhaler technique, exposure/trigger และ comorbidity เพราะการเพิ่มยาโดยไม่แก้สาเหตุเหล่านี้อาจไม่ช่วย",
-"ESBL pyelonephritis ที่มี bacteremia เป็น invasive infection การเลือก definitive therapy ต้องใช้ susceptibility ร่วมกับตำแหน่งติดเชื้อ ความรุนแรง PK/PD และ renal function ไม่ใช่เลือกยาที่ spectrum กว้างที่สุดโดยอัตโนมัติ เมื่อผู้ป่วย stable และมี active oral agent ที่เหมาะสมจึงค่อยพิจารณา oral step-down พร้อมกำหนด duration และติดตาม response",
-"Potassium 6.3 mEq/L ร่วม peaked T waves หมายถึง hyperkalemia ที่มี cardiac electrophysiologic effect จึงต้องจัดการฉุกเฉิน เป้าหมายระยะแรกคือป้องกัน arrhythmia และลด serum potassium จากนั้นจึงหาสาเหตุและทบทวน ACEI, MRA, potassium supplement, salt substitute และ renal function การตัดสินใจเรื่อง RAAS inhibitor ระยะยาวต้องชั่ง cardiorenal benefit กับ recurrent hyperkalemia",
-"Oral ulcers + pancytopenia ในผู้ใช้ methotrexate เป็น toxicity signal โดยเฉพาะเมื่อมี TMP-SMX ซึ่งเพิ่มความเสี่ยง marrow suppression/folate antagonism. ต้องตรวจ CBC, renal function และ liver tests พร้อมทบทวน dosing error เพราะ methotrexate สำหรับ RA ใช้สัปดาห์ละครั้ง ไม่ใช่ทุกวัน การ counseling เรื่องวันกินยาและยาร่วมจึงเป็น medication-safety intervention สำคัญ",
-"Cirrhosis with ascites มี effective arterial volume ลดลงและไวต่อ renal hypoperfusion. NSAID ยับยั้ง renal prostaglandins ทำให้ renal perfusion แย่ลง เพิ่ม AKI และ sodium/water retention จึงควรหลีกเลี่ยง. การใช้ spironolactone/furosemide ต้องติดตามน้ำหนัก renal function Na/K และ BP; หากมี confusion ใหม่ต้องประเมิน hepatic encephalopathy พร้อมค้น precipitant เช่น infection, GI bleeding, constipation, dehydration หรือยา"
-];
-function detailedClinical(ci:number,qi:number,answer:string){
- return `คำตอบที่เหมาะสมที่สุดคือ “${answer}” เพราะ ${C[ci].q[qi].r}.\n\n${caseTeaching[ci]}\n\nในข้อสอบลักษณะนี้ให้เริ่มจากระบุปัญหาหลักของผู้ป่วยก่อน แล้วถามว่า intervention ใดเปลี่ยน clinical outcome หรือแก้ safety problem ที่สำคัญที่สุด ณ เวลานั้น หากตัวเลือกหนึ่งเพียงช่วยตัวเลขทางห้องปฏิบัติการ แต่ไม่ตอบ organ protection/acute risk/medication safety ตามบริบท ก็ไม่ใช่ single best answer.\n\nหลังเลือกคำตอบ ต้องคิดต่อเสมอว่า “ต้องติดตามอะไร” — ${monitoring[ci]}. นี่เป็นส่วนหนึ่งของคำตอบแบบ pharmaceutical care ไม่ใช่ส่วนเสริมหลังการรักษา`;
+ if(t.includes("monotherapy")||t.includes("อย่างเดียว")) return "ตัวเลือกนี้แก้เพียงส่วนหนึ่งของปัญหา แต่ไม่ครอบคลุมเป้าหมายหลักและความเสี่ยงของผู้ป่วยรายนี้ จึงด้อยกว่าคำตอบที่ถูก";
+ if(t.includes("ทันที")||t.includes("ถาวร")||t.includes("ทุกคน")||t.includes("ทุกกรณี")) return "เป็นการตัดสินใจแบบ absolute โดยไม่ใช้ข้อมูลผู้ป่วยเพื่อ stratify risk/benefit จึงไม่ใช่ single best answer";
+ if(t.includes("nsaid")||t.includes("naproxen")||t.includes("diclofenac")) return "ต้องระวัง renal, bleeding และ cardiovascular toxicity; ในบริบทนี้มีทางเลือกที่ตอบเป้าหมายและปลอดภัยกว่า";
+ return `เป็น distractor ที่มีเหตุผลได้ในบางสถานการณ์ แต่ไม่เหมาะที่สุดใน Case ${ci+1}: ต้องเทียบ indication, outcome benefit, organ function, interaction และ monitoring กับคำตอบที่ถูก`;
 }
 export const PC1_PILOT_032:McqQuestion[]=C.flatMap((c,ci)=>c.q.map((q,qi)=>{
  const qn=ci*4+qi;
  const correctText=q.o[q.a];
- const distractors=q.o.filter((_,i)=>i!==q.a);
+ const distractors=altDistractors[qn];
  const pos=answerPositions[qn];
  const arranged=[...distractors]; arranged.splice(pos,0,correctText);
  const labels=["A","B","C","D","E"];
