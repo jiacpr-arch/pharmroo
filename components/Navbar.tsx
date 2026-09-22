@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, User, LogOut, Shield } from "lucide-react";
@@ -21,6 +21,9 @@ const navLinks = [
 
 export default function Navbar() {
   const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const pleTrack = searchParams.get("track") || "cc1";
+  const showPleSubnav = pathname.startsWith("/ple");
   const [mobileOpen, setMobileOpen] = useState(false);
   const { data: session } = useSession();
   const user = session?.user;
@@ -118,6 +121,35 @@ export default function Navbar() {
           {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
       </div>
+
+      {showPleSubnav && (
+        <div className="border-t bg-white/95">
+          <div className="mx-auto flex max-w-7xl gap-2 overflow-x-auto px-4 py-2 sm:px-6 lg:px-8">
+            {[
+              { key: "cc1", label: "ปี 4 · CC1", href: "/ple/practice" },
+              { key: "pc1", label: "ปี 6 · PC1", href: "/ple/practice?track=pc1" },
+              { key: "ip1", label: "ปี 6 · IP1", href: "/ple/practice?track=ip1" },
+              { key: "phcp1", label: "ปี 6 · PHCP1", href: "/ple/practice?track=phcp1" },
+            ].map((item) => {
+              const active = pathname.startsWith("/ple/practice") && pleTrack === item.key;
+              return (
+                <Link
+                  key={item.key}
+                  href={item.href}
+                  className={
+                    "whitespace-nowrap rounded-lg px-4 py-2 text-sm font-semibold transition " +
+                    (active
+                      ? "bg-brand text-white shadow-sm"
+                      : "bg-slate-50 text-slate-600 hover:bg-brand/10 hover:text-brand")
+                  }
+                >
+                  {item.label}
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      )}
 
       {/* Mobile nav */}
       {mobileOpen && (
