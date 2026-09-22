@@ -47,9 +47,47 @@ const extraCases=[
 ];
 const labels=["A","B","C","D","E"];
 
+const trapPools:Record<string,string[][]>={
+"Acute decompensated HFrEF":[
+["เพิ่ม IV loop diuretic และประเมิน urine output/น้ำหนัก/renal function","เพิ่ม oral furosemide ขนาดเดิมและรอดู 48 ชั่วโมง","ให้ IV fluid challenge เพราะ creatinine อาจสูงขึ้นจาก diuretic","หยุด carvedilol ทันทีแม้ไม่มี shock","เพิ่ม thiazolidinedioneเพื่อเพิ่ม cardiac output"],
+["ทบทวนและ optimize ARNI/ACEI/ARB, evidence-based beta-blocker, MRA และ SGLT2i ตาม tolerance","คงเฉพาะ loop diuretic เพราะอาการหอบดีแล้ว","เพิ่ม verapamilเพื่อควบคุม HR แม้ HFrEF","หยุด beta-blockerก่อนจำหน่ายเพื่อป้องกัน decompensation","เริ่ม digoxinแทน foundational therapyทั้งหมด"],
+["ติดตาม K⁺ และ renal function หลังเริ่ม/ปรับ MRA","ติดตาม BNP อย่างเดียวเพื่อปรับ spironolactone","ตรวจ INR เพื่อ titrate MRA","ติดตาม uric acid เป็น primary safety parameter","ไม่ต้องตรวจ lab หาก K baseline ปกติ"],
+["ชั่งน้ำหนักทุกวันและเฝ้าระวัง dyspnea/edema พร้อมแผนเมื่ออาการแย่ลง","จำกัดน้ำ <500 mL/day ในผู้ป่วย HFrEF ทุกคน","เพิ่มเกลือเมื่อรู้สึกเวียนศีรษะโดยไม่วัด BP","หยุด diureticเองเมื่อน้ำหนักลด 1 kg","ใช้ NSAID PRN เมื่อแน่นหน้าอก"]
+],
+"Community-acquired pneumonia":[
+["เลือก regimen ตาม severity, comorbidity, local resistance และ MRSA/Pseudomonas risk","ให้ antipseudomonal + anti-MRSA ทุกคนที่อายุ >65 ปี","เลือก fluoroquinoloneเพียงเพราะรับประทานวันละครั้งโดยไม่ดู risk","รอ sputum culture ก่อนเริ่มยาทุกราย","ใช้ procalcitonin ต่ำเพียงค่าเดียวเพื่อปฏิเสธ bacterial CAP"],
+["ประเมิน renal dose adjustment แบบ drug-specific ตาม kidney function","ลด antibiotic ทุกชนิด 50% เมื่อ eGFR <60","ใช้ SCr เพียงค่าเดียวโดยไม่ประเมิน renal function","คง full dose ทุกยาเพราะ infectionรุนแรง","ปรับ dose ตามอายุอย่างเดียว"],
+["de-escalate เมื่อข้อมูล microbiology/clinical response สนับสนุนและกำหนด duration ตาม stability","คง broad spectrum จนครบ 14 วันเพื่อป้องกัน relapse","หยุด antibiotic ทันทีเมื่อ afebrile 24 ชม.","เพิ่ม second agent แม้ culture susceptible ต่อ regimen เดิม","เปลี่ยน antibiotic ทุก 48 ชม.เพื่อป้องกัน resistance"],
+["ประเมิน clinical stability, oral intake, oxygen need, adherence และ red flags ก่อนจำหน่าย","รอ CXR กลับปกติก่อนจำหน่ายทุกคน","จำหน่ายเมื่อไข้ลดโดยไม่ดู oxygen/hemodynamics","ให้ antibioticสำรองอีกชุดเพื่อใช้เอง","หยุด maintenance COPD inhalerจน pneumoniaหาย"]
+],
+"Gout + CKD":[
+["ให้ allopurinolต่อ และรักษา flare ด้วย anti-inflammatory ที่เหมาะกับ CKD","หยุด allopurinolระหว่าง flareเพื่อไม่ให้ urateแกว่ง","เพิ่ม allopurinolเป็นสองเท่าระหว่าง acute pain","เปลี่ยนเป็น probenecidเพราะ eGFRต่ำ","ใช้ aspirinขนาดสูงเป็น first-line flare therapy"],
+["เลือก colchicine/NSAID/corticosteroid โดยดู CKD, interaction และข้อห้ามรายบุคคล","ใช้ indomethacinเป็น first-lineทุกคนเพราะ goutตอบสนองดี","ใช้ colchicineขนาดปกติซ้ำบ่อยโดยไม่ดู renal function/interactions","หลีกเลี่ยง corticosteroidทุกกรณีใน CKD","ใช้ opioidแทน anti-inflammatoryเป็น routine"],
+["ใช้ treat-to-target urate และ titrate ULT อย่างค่อยเป็นค่อยไปพร้อม monitoring","คง allopurinol 200 mgตลอดเพราะ CKDห้าม titrate","หยุด ULTเมื่อไม่มี flare 6 เดือน","เปลี่ยน ULTทุกครั้งที่ urateยังสูงหลังตรวจครั้งเดียว","ใช้ chronic NSAIDแทนการปรับ ULT"],
+["อธิบาย adherence, flare prophylaxis/expectation และไม่หยุด ULTเองเมื่อ flare","หยุด allopurinolทันทีเมื่อปวดข้อ","งดน้ำเพื่อไม่ให้ข้อบวม","หลีกเลี่ยงอาหาร purineอย่างเดียวเพียงพอไม่ต้องใช้ ULT","เพิ่ม allopurinolเองเมื่อกินอาหาร purineสูง"]
+],
+"Major depression + medication safety":[
+["ประเมิน adherence, tolerability, suicidality และให้ adequate trial ก่อนสรุป nonresponse","เปลี่ยน antidepressantทันทีเพราะ 2 สัปดาห์ยังเศร้า","เพิ่ม sertralineเป็น maximum doseทันทีโดยไม่ประเมิน tolerability","หยุดยาเพราะ nauseaเล็กน้อย","เพิ่ม benzodiazepine monotherapyแทน antidepressant"],
+["ทบทวน dextromethorphan เพราะเพิ่ม serotonergic burden ร่วม SSRI","แนะนำ tramadolแทนเพราะไม่เกี่ยวกับ serotonin","ให้ linezolidได้โดยไม่ต้องทบทวน SSRI","หยุด sertralineเพื่อให้ใช้ dextromethorphanทุกครั้ง","ถือว่า OTC cough medicineไม่มี interactionสำคัญ"],
+["agitation + inducible/spontaneous clonus หรือ hyperreflexiaร่วม autonomic features เป็น red flag","nauseaอย่างเดียวหลังเริ่ม SSRI คือ serotonin syndrome","sedationอย่างเดียวเท่ากับ serotonin toxicity","ต้องมีไข้ >40°Cก่อนจึงวินิจฉัยได้","รอ CKสูงก่อนส่งประเมิน"],
+["ไม่หยุด/เพิ่ม sertralineเอง ติดตาม mood, suicidality, adverse effects และ interaction","หยุดทันทีเมื่ออารมณ์ดีขึ้น 24 ชม.","ใช้ alcoholช่วย insomniaแทนการประเมิน","เพิ่ม doseเองเมื่อมีวันที่อารมณ์ตก","ไม่ต้องติดตาม suicidalityหลังเริ่มยาแล้ว"]
+],
+"Methotrexate toxicity in RA":[
+["สงสัย methotrexate toxicity with myelosuppression/mucositis","วินิจฉัย RA flareเพราะมีไข้และอ่อนเพลีย","สรุปเป็น iron deficiencyจาก plateletต่ำ","ให้ methotrexate doseถัดไปก่อนแล้วค่อยตรวจ CBC","ถือว่า oral ulcerเป็น adverse effectเล็กน้อยไม่เกี่ยวกับ cytopenia"],
+["ประเมิน CBC, renal/hepatic function, infection และ medication historyอย่างเร่งด่วน","ตรวจ ESR/CRPอย่างเดียวเพื่อแยก RA flare","ตรวจ folateอย่างเดียวแล้วให้กลับบ้าน","รอ CBCซ้ำเดือนหน้าเพราะ methotrexateเป็น low dose","ตรวจ RF/anti-CCPซ้ำเพื่อประเมิน toxicity"],
+["TMP-SMX เป็น interactionสำคัญที่เพิ่ม antifolate/myelosuppression risk","amoxicillinทุกขนาดเป็นสาเหตุจำเพาะที่สุดโดยไม่ดูบริบท","calcium carbonateเป็น interactionหลัก","topical moisturizerเพิ่ม methotrexate level","normal salineทำให้ marrow suppression"],
+["ย้ำ once-weekly dosing, folate plan, lab monitoring และแจ้งก่อนเริ่ม antibiotic/OTC","แบ่ง weekly doseเป็น dailyเพื่อให้ระดับยาคงที่","หยุด folic acidเพื่อเพิ่ม efficacy","เพิ่ม methotrexateเองเมื่อข้อปวด","ไม่ต้อง CBCหากใช้มานาน"]
+],
+"COPD exacerbation":[
+["ให้ controlled oxygen โดย target saturationเหมาะสมและประเมิน hypercapnia risk","ให้ออกซิเจน 100% ต่อเนื่องทุกคนจน SpO₂ 100%","งด oxygenเพราะกลัว CO₂ retention","ให้ NIVแทน oxygenทันทีทุกราย","ใช้ bronchodilatorแทนการแก้ hypoxemia"],
+["ใช้ short-acting bronchodilator เช่น SABA ± SAMA เป็น initial therapy","เพิ่ม LABA monotherapyเป็น rescue","ใช้ IV theophylline routineก่อน inhaled bronchodilator","ใช้ ICSอย่างเดียวเพื่อ reliefทันที","หยุด bronchodilatorเพราะ tachycardia risk"],
+["พิจารณา antibiotic เมื่อมี cardinal symptoms โดยเฉพาะ purulenceและตาม severity","ให้ antibioticทุก exacerbationแม้ไม่มี purulence/ventilation indication","หลีกเลี่ยง antibioticเสมอเพราะ COPDเป็น inflammatory disease","รอ sputum cultureก่อนเริ่มยาทุกราย","ให้ macrolide prophylaxisทันทีระหว่าง acute episodeแทน courseรักษา"],
+["ทบทวน maintenance regimen, inhaler technique, smoking cessation, vaccination และ prevention","ให้ oral steroidระยะยาวเพื่อป้องกัน exacerbationทุกคน","หยุด maintenance inhalerเมื่อพ้น acute episode","ใช้ SABA-onlyระยะยาวแม้มี exacerbationบ่อย","ไม่ต้อง follow-upหาก SpO₂กลับ baseline"]
+]
+};
 const allCases=[
-{title:caseTitle,items:qs.map(q=>({stage:q.stage,p:q.p,o:q.o,a:q.a,r:q.r,wrong:q.wrong,ref:"ADA Standards of Care in Diabetes 2026; KDIGO 2024 CKD Guideline"}))},
-...(extraCases as any[]).map((c:any)=>({title:c.title,items:(c.q as any[]).map((q:any)=>({stage:c.base,p:q[0],o:q[1],a:q[2],r:q[3],wrong:(q[1] as string[]).map((x:string,j:number)=>j===q[2]?`ถูก — ${q[3]}`:`ไม่ใช่ single best answer: ${x} อาจมีบทบาทในบางบริบท แต่ไม่ตอบ clinical priority ของเคสนี้ได้ดีที่สุด`),ref:"Current disease-specific guideline / official drug information; verify version at editorial review"}))}))
+{title:caseTitle,items:qs.map(q=>({stage:q.stage,p:q.p,o:q.o,a:q.a,r:q.r,ref:"ADA Standards of Care in Diabetes 2026; KDIGO 2024 CKD Guideline"}))},
+...(extraCases as any[]).map((c:any)=>({title:c.title,items:(c.q as any[]).map((q:any,qi:number)=>{const pool=trapPools[c.title]?.[qi];return {stage:c.base,p:q[0],o:pool??q[1],a:0,r:q[3],ref:"Current disease-specific guideline / official drug information; verify version at editorial review"};})}))
 ];
 const answerCycle=[2,3,1,4,0];
 export const PC1_PILOT_032:McqQuestion[]=allCases.flatMap((c,ci)=>c.items.map((q:any,qi:number)=>{
