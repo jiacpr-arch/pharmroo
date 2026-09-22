@@ -19,9 +19,11 @@ export const metadata: Metadata = {
 async function PracticeContent({
   subjectId,
   day,
+  track,
 }: {
   subjectId?: string;
   day?: 1 | 2;
+  track: "cc1" | "pc1" | "ip1" | "phcp1";
 }) {
   const [session, subjects, rawQuestions] = await Promise.all([
     auth(),
@@ -50,61 +52,58 @@ async function PracticeContent({
 
   return (
     <div>
-      {/* Exam structure */}
-      <div className="mb-8 space-y-5">
-        <div>
-          <div className="mb-3 flex items-center gap-2">
-            <span className="rounded-full bg-teal-100 px-3 py-1 text-xs font-bold text-teal-700">ปี 4</span>
-            <h2 className="text-lg font-bold">CC1 — สอบพื้นฐานร่วม</h2>
-          </div>
-          <div className="rounded-2xl border border-teal-200 bg-gradient-to-r from-teal-50 to-emerald-50 p-5">
-            <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-              <div>
-                <div className="flex items-center gap-2 font-bold text-teal-900">
-                  <BookOpen className="h-5 w-5" />
-                  CC1
-                </div>
-                <p className="mt-1 text-sm text-teal-800">รวม 240 ข้อ · สอบ 2 วัน · วันละ 120 ข้อ</p>
-              </div>
-              <div className="grid grid-cols-2 gap-2 text-center text-xs sm:w-64">
-                <div className="rounded-xl bg-white p-3 shadow-sm">
-                  <div className="font-bold text-teal-800">Day 1</div>
-                  <div className="text-muted-foreground">120 ข้อ</div>
-                </div>
-                <div className="rounded-xl bg-white p-3 shadow-sm">
-                  <div className="font-bold text-blue-800">Day 2</div>
-                  <div className="text-muted-foreground">120 ข้อ</div>
-                </div>
-              </div>
-            </div>
-          </div>
+      {/* Primary exam tabs */}
+      <div className="mb-8">
+        <div className="grid grid-cols-2 gap-2 rounded-2xl border bg-slate-50 p-2 sm:grid-cols-4">
+          {[
+            { key: "cc1", label: "ปี 4 · CC1", href: "/ple/practice" },
+            { key: "pc1", label: "ปี 6 · PC1", href: "/ple/practice?track=pc1" },
+            { key: "ip1", label: "ปี 6 · IP1", href: "/ple/practice?track=ip1" },
+            { key: "phcp1", label: "ปี 6 · PHCP1", href: "/ple/practice?track=phcp1" },
+          ].map((tab) => (
+            <Link
+              key={tab.key}
+              href={tab.href}
+              className={`rounded-xl px-3 py-3 text-center text-sm font-bold transition ${
+                track === tab.key
+                  ? "bg-brand text-white shadow-sm"
+                  : "bg-white text-slate-700 hover:bg-brand/5"
+              }`}
+            >
+              {tab.label}
+            </Link>
+          ))}
         </div>
 
-        <div>
-          <div className="mb-3 flex items-center gap-2">
-            <span className="rounded-full bg-violet-100 px-3 py-1 text-xs font-bold text-violet-700">ปี 6</span>
-            <h2 className="text-lg font-bold">เลือกสอบตามสายวิชาชีพ — เลือก 1 สาย</h2>
+        {track !== "cc1" && (
+          <div className="mt-5 rounded-2xl border bg-white p-6">
+            {track === "pc1" && (
+              <div>
+                <div className="flex items-center gap-2 text-xl font-bold"><HeartPulse className="h-6 w-6 text-rose-500" /> PC1 — บริบาลเภสัชกรรม</div>
+                <p className="mt-2 text-sm text-muted-foreground">Pharmaceutical Care · 120 ข้อ</p>
+                <Link href="/sets?exam=PLE-PC1" className="mt-5 inline-flex rounded-xl bg-brand px-5 py-3 text-sm font-bold text-white">ดูชุดข้อสอบ PC1 →</Link>
+              </div>
+            )}
+            {track === "ip1" && (
+              <div>
+                <div className="flex items-center gap-2 text-xl font-bold"><Factory className="h-6 w-6 text-amber-500" /> IP1 — เภสัชกรรมอุตสาหการ</div>
+                <p className="mt-2 text-sm text-muted-foreground">Industrial Pharmacy · 120 ข้อ</p>
+                <Link href="/sets?exam=PLE-IP1" className="mt-5 inline-flex rounded-xl bg-brand px-5 py-3 text-sm font-bold text-white">ดูชุดข้อสอบ IP1 →</Link>
+              </div>
+            )}
+            {track === "phcp1" && (
+              <div>
+                <div className="flex items-center gap-2 text-xl font-bold"><ShieldCheck className="h-6 w-6 text-emerald-600" /> PHCP1 — คุ้มครองผู้บริโภคด้านยาและสุขภาพ</div>
+                <p className="mt-2 text-sm text-muted-foreground">Public Health & Consumer Protection · 120 ข้อ</p>
+                <Link href="/sets?exam=PLE-PHCP1" className="mt-5 inline-flex rounded-xl bg-brand px-5 py-3 text-sm font-bold text-white">ดูชุดข้อสอบ PHCP1 →</Link>
+              </div>
+            )}
           </div>
-          <div className="grid gap-3 md:grid-cols-3">
-            <Link href="/sets?exam=PLE-PC1" className="rounded-2xl border bg-white p-4 transition hover:border-rose-200 hover:shadow-sm">
-              <div className="flex items-center gap-2 font-bold"><HeartPulse className="h-5 w-5 text-rose-500" /> PC1</div>
-              <p className="mt-1 text-sm font-medium">บริบาลเภสัชกรรม</p>
-              <p className="mt-2 text-xs text-muted-foreground">Pharmaceutical Care · 120 ข้อ</p>
-            </Link>
-            <Link href="/sets?exam=PLE-IP1" className="rounded-2xl border bg-white p-4 transition hover:border-amber-200 hover:shadow-sm">
-              <div className="flex items-center gap-2 font-bold"><Factory className="h-5 w-5 text-amber-500" /> IP1</div>
-              <p className="mt-1 text-sm font-medium">เภสัชกรรมอุตสาหการ</p>
-              <p className="mt-2 text-xs text-muted-foreground">Industrial Pharmacy · 120 ข้อ</p>
-            </Link>
-            <Link href="/sets?exam=PLE-PHCP1" className="rounded-2xl border bg-white p-4 transition hover:border-emerald-200 hover:shadow-sm">
-              <div className="flex items-center gap-2 font-bold"><ShieldCheck className="h-5 w-5 text-emerald-600" /> PHCP1</div>
-              <p className="mt-1 text-sm font-medium">คุ้มครองผู้บริโภคด้านยาและสุขภาพ</p>
-              <p className="mt-2 text-xs text-muted-foreground">Public Health & Consumer Protection · 120 ข้อ</p>
-            </Link>
-          </div>
-        </div>
+        )}
       </div>
 
+      {track === "cc1" && (
+        <>
       <div className="mb-2 border-t pt-6">
         <h2 className="text-lg font-bold">ฝึกข้อสอบ CC1</h2>
         <p className="text-sm text-muted-foreground">เลือกวันสอบและหมวดวิชาที่ต้องการฝึก</p>
@@ -217,6 +216,8 @@ async function PracticeContent({
           </Link>
         </div>
       )}
+        </>
+      )}
     </div>
   );
 }
@@ -224,10 +225,14 @@ async function PracticeContent({
 export default async function PracticePage({
   searchParams,
 }: {
-  searchParams: Promise<{ subject?: string; day?: string }>;
+  searchParams: Promise<{ subject?: string; day?: string; track?: string }>;
 }) {
   const params = await searchParams;
   const { subject } = params;
+  const track =
+    params.track === "pc1" || params.track === "ip1" || params.track === "phcp1"
+      ? params.track
+      : "cc1";
 
   const dayParam = params.day ? Number(params.day) : null;
   const day = dayParam === 1 || dayParam === 2 ? dayParam : undefined;
@@ -251,7 +256,7 @@ export default async function PracticePage({
       <Suspense
         fallback={<div className="text-center py-8">กำลังโหลดข้อสอบ...</div>}
       >
-        <PracticeContent subjectId={subject} day={day} />
+        <PracticeContent subjectId={subject} day={day} track={track} />
       </Suspense>
 
       <section className="mt-12">
