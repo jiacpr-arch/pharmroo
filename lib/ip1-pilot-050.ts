@@ -1434,6 +1434,553 @@ const D3: Draft[] = [
   }
 ];
 
+
+const D3: Draft[] = [
+  {
+    topic:"Monograph interpretation / back titration",
+    prompt:"Monograph ของ Drug A ระบุ: ชั่งตัวอย่างประมาณ 1.50 g เติม 50.0 mL ของ 0.500 N NaOH ต้ม 10 นาที แล้วไทเทรต NaOH ส่วนเกินด้วย 0.500 N H2SO4 พร้อมทำ blank. ข้อใดอธิบายชนิดการไทเทรตได้ถูกต้องที่สุด?",
+    options:["Residual (back) titration เพราะเติม reagent เกินก่อนแล้วไทเทรตส่วนที่เหลือ","Direct acid-base titration เพราะ titrantสัมผัสตัวอย่างโดยตรงตั้งแต่แรก","Complexometric titration เพราะมีการต้ม","Redox titration เพราะใช้กรดและด่างสองชนิด","Non-aqueous titration เพราะมี blank"],
+    rationale:"หลักของ back/residual titration คือเติม reagent ที่ทราบปริมาณเกินพอให้ทำปฏิกิริยากับ analyte แล้ววัด reagent ส่วนเกินด้วย titrant อีกชนิด; blank ใช้แก้ reagent consumption ที่ไม่เกิดจาก analyte.",
+    traps:["Direct titrationต้องไทเทรต analyteโดยตรงด้วยtitrantหลัก ไม่ใช่วัด reagentส่วนเกิน","การต้มไม่ทำให้เป็นcomplexometric","กรด-ด่างไม่ได้หมายถึงredox","การมีblankไม่ทำให้เป็นnon-aqueous titration"],
+    difficulty:"hard",
+    ref:"Compendial titrimetric assay principles"
+  },
+  {
+    topic:"Monograph interpretation / blank correction",
+    prompt:"Back-titration assay: sample ใช้ H2SO4 18.60 mL เพื่อไทเทรต NaOH ส่วนเกิน ส่วน blank ใช้ 32.40 mL. หาก 1 mL ของ 0.500 N NaOH เทียบเท่า Drug A 45.04 mg ปริมาณ Drug A ในตัวอย่างเท่าใด?",
+    options:["621.6 mg","837.7 mg","1,459.3 mg","1,081.0 mg","310.8 mg"],
+    rationale:"ปริมาณ NaOH ที่ถูก analyte ใช้ = blank−sample = 32.40−18.60 =13.80 mL. Drug A =13.80×45.04=621.55 mg.",
+    traps:["837.7 mgใช้sample titrant volumeโดยตรง","1,459.3 mgใช้blank volumeโดยตรง","1,081.0 mgคำนวณจากผลต่างผิด","310.8 mgหารสองโดยไม่มีเหตุผล"],
+    difficulty:"hard",
+    ref:"Compendial back-titration calculations",
+    calc:["ΔV = 32.40−18.60 = 13.80 mL","Amount = 13.80×45.04 = 621.6 mg"]
+  },
+  {
+    topic:"Monograph interpretation / normality factor",
+    prompt:"Monographกำหนดว่า 1 mL ของ 0.500 N NaOH เทียบเท่า Drug A 45.04 mg. หาก titrantถูกstandardizeจริงที่0.487 N และใช้volume difference 14.20 mL ปริมาณ Drug A ที่ถูกต้องใกล้เคียงเท่าใด?",
+    options:["622.9 mg","639.6 mg","583.1 mg","655.8 mg","700.4 mg"],
+    rationale:"Equivalent factor 45.04 mg/mLอิง0.500 N จึงต้องแก้ด้วย0.487/0.500. Amount=14.20×45.04×0.487/0.500≈622.9 mg.",
+    traps:["639.6 mgไม่แก้actual normality","583.1 mgแก้factorผิดทิศ/ขนาด","655.8 mgเกินจากnormalityที่ต่ำกว่าnominal","700.4 mgไม่สัมพันธ์"],
+    difficulty:"hard",
+    ref:"Volumetric standardization and assay-factor correction",
+    calc:["Nominal amount=14.20×45.04=639.57 mg","Correction=0.487/0.500=0.974","Corrected≈622.9 mg"]
+  },
+  {
+    topic:"Monograph interpretation / indicator selection",
+    prompt:"Back titration หลัง hydrolysis เหลือ strong base excess และไทเทรตด้วย strong acid. หาก equivalence region อยู่ใกล้ pH 7 ข้อใดเป็นหลักเลือก indicator ที่ถูกต้องที่สุด?",
+    options:["เลือก indicatorที่transition rangeอยู่ในช่วง steep pH changeรอบequivalence point ไม่ใช่เลือกจากชื่อกรด/ด่างเพียงอย่างเดียว","เลือก methyl orangeเสมอเพราะใช้กรดเป็นtitrant","เลือก phenolphthaleinเสมอเพราะมีNaOHในflask","เลือก indicatorที่มีpKaเท่ากับpHเริ่มต้น","indicatorไม่มีผลต่อendpointของvisual titration"],
+    rationale:"Indicatorต้องเปลี่ยนสีภายในบริเวณที่pHเปลี่ยนชันใกล้ equivalence point; choiceขึ้นกับ titration curve ไม่ใช่ชนิดสารเพียงคำเดียว.",
+    traps:["ชนิดtitrantอย่างเดียวไม่พอ","การมีNaOHไม่ได้บังคับphenolphthalein","pHเริ่มต้นไม่ใช่criterionหลัก","Visual endpointขึ้นกับindicatorอย่างชัดเจน"],
+    difficulty:"hard",
+    ref:"Acid-base titration theory"
+  },
+  {
+    topic:"Monograph interpretation / ion-pair LC",
+    prompt:"Assay monograph ใช้ C18 (L1) และ mobile phaseมี sodium alkylsulfonate ร่วมกับ acetonitrile/water ที่pH≈3.4. บทบาทหลักของ alkylsulfonate สำหรับ basic analyteคือข้อใด?",
+    options:["ทำหน้าที่เป็น ion-pair reagent ช่วยปรับretention/selectivityของcharged analyteบนreversed-phase column","ทำหน้าที่เป็น UV chromophoreให้analyteดูดกลืนที่280 nm","ทำหน้าที่เป็น chelating agentจับโลหะในcolumn","ทำให้C18กลายเป็นsize-exclusion packing","ทำหน้าที่เป็น internal standard"],
+    rationale:"Anionic alkylsulfonateสามารถสร้างion pairกับprotonated basic analyte เพิ่มhydrophobic characterและเปลี่ยนretention/selectivityบนRP column.",
+    traps:["ไม่ได้ใช้เพื่อสร้างUV chromophoreหลัก","ไม่ใช่chelatorโดยหน้าที่หลัก","ไม่เปลี่ยนกลไกเป็นsize exclusion","ไม่ใช่internal standard"],
+    difficulty:"hard",
+    ref:"Ion-pair reversed-phase chromatography principles"
+  },
+  {
+    topic:"Monograph interpretation / chromatographic mode",
+    prompt:"ระบบ LC ใช้ packing L1 (C18), mobile phaseน้ำ/organic และมี ion-pair reagent. หากต้องเลือกกลไกที่อธิบายการแยกได้ดีที่สุด ข้อใดเหมาะสมที่สุด?",
+    options:["Ion-pair reversed-phase chromatography","Ion-exchange chromatographyแบบfixed charged resin","Size-exclusion chromatography","Normal-phase adsorption chromatography","Supercritical fluid chromatography"],
+    rationale:"แม้stationary phaseเป็นC18 แต่การเติมion-pair reagentเพื่อควบคุมretentionของionic analyteจัดเป็นion-pair RP chromatography ไม่ใช่ion-exchange resin.",
+    traps:["Ion-exchangeต้องอาศัยcharged stationary phaseเป็นหลัก","Size exclusionแยกตามhydrodynamic size","Normal phaseใช้polar stationary/nonpolar mobile","SFCใช้supercritical fluid"],
+    difficulty:"hard",
+    ref:"Chromatographic separation mechanisms"
+  },
+  {
+    topic:"Monograph interpretation / sample-stock concentration",
+    prompt:"Monographระบุ sample stock nominally 5 mg/mL โดยชั่งผงยาปริมาณเทียบเท่า API 100 mg แล้วเติม diluent 20.0 mL. ข้อใดถูกต้องที่สุด?",
+    options:["100 mg/20.0 mL = 5.0 mg/mL จึงสอดคล้องกับmonograph","ต้องเติม50 mLจึงจะได้5 mg/mL","ต้องชั่ง500 mgจึงจะได้5 mg/mLใน20 mL","ค่าที่ได้จริงคือ0.5 mg/mL","ข้อมูลไม่พอเพราะไม่ทราบinjection volume"],
+    rationale:"Concentrationเป็นmass/volumeโดยตรง:100/20=5 mg/mL; injection volumeไม่เกี่ยวกับstock concentration.",
+    traps:["50mLให้2mg/mL","500mg/20mL=25mg/mL","0.5mg/mLต่ำสิบเท่า","Injection volumeไม่จำเป็นต่อการคำนวณstock"],
+    difficulty:"hard",
+    ref:"Compendial sample preparation calculations"
+  },
+  {
+    topic:"Monograph interpretation / sample dilution",
+    prompt:"จาก stock 5.0 mg/mL ต้องเตรียม sample solution 0.50 mg/mL. หากต้องการfinal volume 25.0 mL ควรดูด stockกี่mL?",
+    options:["2.50 mL","0.25 mL","5.00 mL","10.0 mL","12.5 mL"],
+    rationale:"C1V1=C2V2:5.0×V1=0.50×25.0 →V1=2.50mL.",
+    traps:["0.25mLต่ำสิบเท่า","5mLให้1mg/mL","10mLให้2mg/mL","12.5mLให้2.5mg/mL"],
+    difficulty:"hard",
+    ref:"Pharmaceutical dilution calculations",
+    calc:["V1=(0.50×25.0)/5.0=2.50 mL"]
+  },
+  {
+    topic:"Monograph interpretation / standard vs sample concentration",
+    prompt:"Monograph standard solution=0.50 mg/mL และ sample solution=0.50 mg/mL. เหตุผลเชิงanalyticalที่ดีของการเตรียมให้ใกล้กันคือข้อใด?",
+    options:["ลดการพึ่งพาextrapolationและทำให้response comparisonอยู่ในช่วงใกล้เคียงกันของvalidated calibration/linearity","ทำให้retention timeเท่ากันเสมอ","ทำให้impuritiesหายไป","ทำให้tailing factorเป็น1.0โดยอัตโนมัติ","ทำให้ไม่ต้องทราบstandard potency"],
+    rationale:"Matched concentrationsทำให้responseอยู่ในcomparable rangeและลดbiasจากnonlinearity/response-range differences; ยังต้องcorrect potencyตามcertificate.",
+    traps:["Retentionขึ้นกับchromatographyไม่ใช่เพียงconcentration","Impuritiesไม่หาย","Tailingไม่ถูกบังคับ","Potency standardยังจำเป็น"],
+    difficulty:"hard",
+    ref:"Compendial assay quantitation principles"
+  },
+  {
+    topic:"Monograph interpretation / column designation",
+    prompt:"Monographระบุ column packing L1. ข้อใดอธิบายได้ถูกต้องที่สุด?",
+    options:["L1เป็นUSP packing classificationโดยทั่วไปสื่อถึงoctadecylsilane-bonded silica แต่columnsในclassเดียวกันอาจมีselectivityต่างกันได้","L1หมายถึงcolumn length1 cm","L1หมายถึงLC grade1และทุกmanufacturerต้องให้retentionเหมือนกัน","L1คือion-exchange resinชนิดstrong cation","L1บอกparticle size5 µmเสมอ"],
+    rationale:"USP L1เป็นpacking classificationสำหรับC18-type bonded silica; surface chemistry/end-capping/pore/particle differencesยังทำให้selectivityต่างได้.",
+    traps:["ไม่ใช่length code","Classเดียวกันไม่รับประกันidentical selectivity","ไม่ใช่strong cation exchanger","ไม่ได้กำหนดparticle sizeตายตัว"],
+    difficulty:"hard",
+    ref:"USP <621> Chromatography column classifications"
+  },
+  {
+    topic:"Monograph interpretation / detector wavelength",
+    prompt:"Monographใช้ UV detector 280 nm. หาก analystเปลี่ยนเป็น254 nmเพราะAPIยังดูดกลืนได้ดี ข้อใดเหมาะสมที่สุด?",
+    options:["ถือเป็นmethod changeที่อาจกระทบresponse/selectivityต่อimpuritiesและต้องประเมิน/validateตามความเหมาะสม ไม่ควรเปลี่ยนเองเพียงเพราะAPIดูดกลืน","เปลี่ยนได้อิสระเพราะUV wavelengthไม่มีผลquantitation","ต้องเปลี่ยนเป็น254 nmเสมอเพราะsensitivityสูงกว่า","retention timeจะเปลี่ยนจึงห้ามเด็ดขาด","wavelengthมีผลเฉพาะtailing factor"],
+    rationale:"Detection wavelengthกระทบrelative responses, specificity, sensitivityและRRFของimpurities แม้ไม่เปลี่ยนchromatographicretention.",
+    traps:["Wavelengthมีผลquantitation/selectivityทางspectral","254ไม่จำเป็นต้องดีกว่า","Retentionโดยทั่วไปไม่เปลี่ยนจากUV wavelength","ไม่ได้มีผลเฉพาะtailing"],
+    difficulty:"hard",
+    ref:"ICH Q2(R2); compendial method-change principles"
+  },
+  {
+    topic:"Monograph interpretation / flow-rate change",
+    prompt:"Monographกำหนดflow2.0 mL/minบนcolumn4.0 mm ID. Analystใช้1.0 mL/minโดยไม่เปลี่ยนcolumn. ผลที่คาดโดยหลักคือข้อใด?",
+    options:["Retention timesโดยทั่วไปยาวขึ้นประมาณใกล้สองเท่าและsystem suitabilityอาจเปลี่ยน จึงต้องยืนยันก่อนใช้","Retention timesลดครึ่งหนึ่ง","Peak areasลดครึ่งหนึ่งเสมอ","Selectivityต้องเป็นศูนย์","ไม่มีผลต่อanalysisเพราะflowไม่ใช่method parameter"],
+    rationale:"เมื่อcolumn/solventคงเดิม การลดflowลดlinear velocityและเพิ่มretention timeโดยประมาณ; efficiency/resolution/pressureอาจเปลี่ยน.",
+    traps:["ทิศทางตรงข้าม","Peak areaไม่จำเป็นต้องลดครึ่งในconcentration-sensitive detector","Selectivityไม่ได้เป็นศูนย์","Flowเป็นcritical method parameterได้"],
+    difficulty:"hard",
+    ref:"USP <621>; chromatographic flow effects"
+  },
+  {
+    topic:"Monograph interpretation / injection volume",
+    prompt:"Monographกำหนดinjection10 µL. Analystเพิ่มเป็น50 µLเพื่อเพิ่มsensitivityแล้วพบfronting. ข้อใดอธิบายได้ดีที่สุด?",
+    options:["Injection mass/solvent loadอาจเกินcolumn capacityหรือเกิดsolvent mismatch ทำให้peak shapeเสีย","UV wavelengthผิดแน่นอน","Columnกลายเป็นion-exchange","Sample potencyต่ำ","Flow rateสูงเกินเพราะinjection volumeเพิ่ม"],
+    rationale:"Injection volumeมากขึ้นเพิ่มsample massและsolvent plug; overloadหรือstrong-solvent effectทำให้fronting/distortionได้.",
+    traps:["Wavelengthไม่ทำให้fronting","Stationary phaseไม่เปลี่ยนกลไก","Potencyไม่อธิบายshape changeจากvolume","Injection volumeไม่ทำให้pump flowสูงขึ้น"],
+    difficulty:"hard",
+    ref:"Chromatographic injection-volume effects"
+  },
+  {
+    topic:"Monograph interpretation / tailing-factor limit",
+    prompt:"System suitabilityกำหนด tailing factor NMT2.0. ได้ค่า1.98, 2.02, 1.95จากstandard injections. ข้อใดเหมาะสมที่สุด?",
+    options:["มีอย่างน้อยหนึ่งค่าที่เกินเกณฑ์ ต้องใช้วิธีประเมินตามSST procedure/monograph ไม่ควรเฉลี่ยเพื่อกลบfailureหากเกณฑ์ใช้ต่อinjection","เฉลี่ยได้1.98จึงผ่านแน่นอน","ใช้ค่าต่ำสุด1.95เพราะดีที่สุด","ตัด2.02ออกเพราะต่างเล็กน้อย","tailing factorไม่ใช่SSTจริง"],
+    rationale:"Acceptance criterionต้องใช้ตามวิธีที่กำหนด; ถ้ากำหนดindividual requirement การเฉลี่ยเพื่อทำให้ผ่านไม่เหมาะสมและต้องinvestigate.",
+    traps:["Averageอาจไม่ใช่defined criterion","เลือกbest resultเป็นbias","ห้ามตัดข้อมูลโดยไม่มีassignable cause","Tailing factorเป็นcommonSST parameter"],
+    difficulty:"hard",
+    ref:"USP <621>; GMP system-suitability principles"
+  },
+  {
+    topic:"Monograph interpretation / RSD system suitability",
+    prompt:"MonographกำหนดRSD peak areaของstandard replicate NMT2.0%. Areas: 500,000; 491,000; 509,000; 495,000; 505,000. ข้อใดเป็นข้อสรุปที่เหมาะสมที่สุด?",
+    options:["ต้องคำนวณ%RSDจากreplicatesก่อนตัดสิน ไม่ควรใช้range/meanเพียงอย่างเดียว","ผ่านแน่นอนเพราะทุกareaอยู่±2%จาก500,000","failแน่นอนเพราะrange18,000","ใช้ค่าเฉลี่ย500,000จึงRSD=0","ตัดค่าต่ำสุดและสูงสุดก่อนคำนวณ"],
+    rationale:"SST RSDต้องคำนวณstandard deviationเทียบmeanจากชุดreplicateตามprocedure; rangeไม่ใช่RSDและห้ามตัดoutlierโดยไม่มีเหตุผล.",
+    traps:["±2%จากค่ากลางไม่เท่ากับRSD criterion","Rangeไม่ใช่RSD","Meanเท่ากลางไม่ได้ทำSDเป็น0","ห้ามtrim dataเพื่อpass"],
+    difficulty:"hard",
+    ref:"USP <621> system suitability"
+  },
+  {
+    topic:"Monograph interpretation / RSD calculation",
+    prompt:"Standard peak areas 100.0, 101.0, 99.0, 100.5, 99.5 (×10^3). ค่า%RSDโดยประมาณใกล้ข้อใดที่สุด?",
+    options:["0.79%","1.58%","0.32%","2.24%","5.00%"],
+    rationale:"Mean=100.0; sample SD≈0.79; %RSD≈0.79%.",
+    traps:["1.58%ประมาณสองเท่า","0.32%ต่ำเกิน","2.24%ไม่ตรงSD","5%ไม่สัมพันธ์"],
+    difficulty:"hard",
+    ref:"System-suitability precision calculations",
+    calc:["Mean=100.0","SD≈0.79","%RSD≈0.79/100×100=0.79%"]
+  },
+  {
+    topic:"Monograph interpretation / asymmetry vs tailing",
+    prompt:"ข้อใดอธิบายความสัมพันธ์ระหว่าง asymmetry factorและtailing factorได้เหมาะสมที่สุด?",
+    options:["ทั้งสองวัดpeak asymmetryแต่ใช้นิยาม/ตำแหน่งความสูงต่างกัน จึงไม่ควรใช้ค่าแทนกันโดยอัตโนมัติ","เป็นค่าเดียวกันทุกกรณี","Asymmetryวัดretention ส่วนtailingวัดarea","Tailing factorใช้เฉพาะGC","Asymmetry factorไม่มีหน่วยแต่tailingมีหน่วยนาที"],
+    rationale:"ทั้งสองเป็นdimensionless peak-shape metricsแต่สูตร/measurement heightต่างกัน; acceptance criteriaต้องอิงdefinitionที่methodกำหนด.",
+    traps:["ค่าอาจใกล้แต่ไม่identicalโดยนิยาม","ไม่ได้วัดretention/area","Tailingใช้LCได้ทั่วไป","ทั้งคู่dimensionless"],
+    difficulty:"hard",
+    ref:"USP <621>; chromatographic peak-shape metrics"
+  },
+  {
+    topic:"Monograph interpretation / assay equation",
+    prompt:"Assay equationแบบexternal standardใช้ (rU/rS)×(CS/CU)×P×100. หาก rU/rS=0.980, CS=0.500 mg/mL, CU=0.490 mg/mL และP=0.995 ค่าassayโดยประมาณเท่าใด?",
+    options:["99.5%","98.0%","100.0%","101.5%","97.5%"],
+    rationale:"0.980×(0.500/0.490)×0.995×100 ≈99.5%.",
+    traps:["98.0ละเลยconcentration/potency corrections","100ไม่ตรงตัวเลข","101.5แก้ทิศผิด","97.5ต่ำเกิน"],
+    difficulty:"hard",
+    ref:"Compendial external-standard assay equations",
+    calc:["0.500/0.490=1.02041","0.980×1.02041×0.995×100≈99.5%"]
+  },
+  {
+    topic:"Monograph interpretation / nominal vs exact concentration",
+    prompt:"Monographระบุstandard 'about 0.5 mg/mL'. Analystชั่ง49.20 mg เติมเป็น100.0 mL. ในassay calculationควรใช้ค่าใด?",
+    options:["ใช้exact concentrationจากน้ำหนักจริงและpotency ไม่ใช่สมมติ0.500 mg/mL","ใช้0.500 mg/mLเสมอเพราะmonographเขียนabout","ปัด49.20เป็น50.00mgก่อน","ใช้concentrationของsampleแทนstandard","ไม่ต้องทราบconcentrationถ้าareaใกล้กัน"],
+    rationale:"คำว่าaboutกำหนดtarget preparation แต่quantitationต้องใช้actual accurately weighed amount/assigned potencyตามสมการmethod.",
+    traps:["Nominal targetไม่แทนactual quantitative value","ห้ามเปลี่ยนraw weightด้วยการปัดเพื่อให้ตรงtarget","Sample concentrationเป็นคนละตัวแปร","Areaใกล้กันไม่ลบneed forconcentration correction"],
+    difficulty:"hard",
+    ref:"Compendial quantitative preparation principles"
+  },
+  {
+    topic:"Monograph interpretation / finely powdered tablets",
+    prompt:"Monographระบุใช้ผงจาก NLT20 finely powdered tablets ก่อนชั่งportionสำหรับassay. เหตุผลหลักคือข้อใด?",
+    options:["สร้างrepresentative compositeของbatch/tablet populationและลดผลจากtablet-to-tablet variabilityต่อassay sample","เพิ่มdissolution rateของAPIในร่างกาย","ทำให้content uniformityผ่านอัตโนมัติ","ลดtailing factor","ทำให้ไม่ต้องทราบaverage tablet weight"],
+    rationale:"การรวมหลายเม็ดและบดละเอียดช่วยให้sample portionเป็นrepresentative compositeสำหรับaverage assay; ไม่ได้แทนCU test.",
+    traps:["เป็นsample preparationไม่ใช่bioavailability intervention","Assay compositeไม่ทำให้CUผ่าน","ไม่เกี่ยวpeak tailing","Average tablet weightยังอาจจำเป็นตามcalculation/monograph"],
+    difficulty:"hard",
+    ref:"Compendial tablet assay sampling principles"
+  },
+  {
+    topic:"Monograph interpretation / glass beads",
+    prompt:"Sample preparationระบุเติมglass beadsแล้วshake vigorously. บทบาทที่มีเหตุผลที่สุดคือข้อใด?",
+    options:["ช่วยmechanical disintegration/dispersionของtablet powderและเพิ่มประสิทธิภาพextraction","ทำหน้าที่เป็นinternal standard","ปรับpHของdiluent","เป็นdesiccantดูดน้ำทั้งหมด","ทำหน้าที่เป็นion-pair reagent"],
+    rationale:"Glass beadsเพิ่มmechanical agitationช่วยแตกagglomeratesและfacilitate extractionจากtablet matrix.",
+    traps:["ไม่ได้ถูกquantitateเป็นIS","ไม่ใช่buffer","ไม่ใช่desiccantหลัก","ไม่ละลายเป็นion-pair reagent"],
+    difficulty:"hard",
+    ref:"Compendial sample-extraction techniques"
+  },
+  {
+    topic:"Monograph interpretation / centrifugation",
+    prompt:"เหตุผลหลักของขั้นcentrifugeหลังshake sample stockคือข้อใด?",
+    options:["แยกinsoluble excipients/particulatesออกจากsupernatantก่อนนำไปวิเคราะห์","เพิ่มAPI concentration","ทำให้APIกลายเป็นunionized","เพิ่มUV absorptivity","ทำให้standard potencyสูงขึ้น"],
+    rationale:"Centrifugationแยกsolid matrixลดparticulate injectionและinterferenceโดยไม่ควรเปลี่ยนanalyte chemically.",
+    traps:["ไม่ได้concentrateโดยหลัก","ไม่ควบคุมionizationโดยตัวมันเอง","ไม่เพิ่มmolar absorptivity","ไม่เกี่ยวstandard potency"],
+    difficulty:"hard",
+    ref:"Sample preparation for LC"
+  },
+  {
+    topic:"Monograph interpretation / diluent mismatch",
+    prompt:"Mobile phaseเป็นaqueous-rich แต่diluentของsampleมีorganicสูงมาก. ข้อใดเป็นเหตุผลที่monographอาจยังออกแบบเช่นนี้ได้?",
+    options:["Diluentอาจจำเป็นต่อsolubility/extractionของAPI แต่ต้องพิสูจน์ว่าinjection volumeไม่ทำให้peak distortion","Diluentต้องเหมือนmobile phaseเสมอ100%","Organic-rich diluentทำให้retentionไม่เปลี่ยนเสมอ","Diluentไม่มีผลchromatographyเลย","Organic-rich diluentใช้เพื่อเพิ่มtailing"],
+    rationale:"Sample solventเลือกจากsolubility/stabilityและchromatographic compatibility; strong diluentใช้ได้ถ้าinjection volume/conditionsผ่านsystem suitabilityและpeak shape.",
+    traps:["ไม่จำเป็นต้องidenticalเสมอ","Strong solventอาจทำให้distortionได้","Diluentมีผลต่อfocusing","ไม่ได้ใช้เพื่อเพิ่มtailing"],
+    difficulty:"hard",
+    ref:"HPLC sample-solvent compatibility principles"
+  },
+  {
+    topic:"Monograph interpretation / pH adjustment",
+    prompt:"Mobile phaseกำหนดปรับpHด้วยglacial acetic acid 'to pH 3.4'. Analystเติมกรดตามvolumeสูตรเดิมทุกครั้งแต่ไม่วัดpHจริง. ข้อใดเหมาะสมที่สุด?",
+    options:["ไม่เหมาะ เพราะpHเป็นdefined endpointและreagent/buffer variabilityอาจทำให้actual pHต่าง ส่งผลselectivity","เหมาะเสมอเพราะvolumeกรดคงที่รับประกันpH","pHไม่กระทบion-pair LC","ควรวัดpHหลังเติมorganicเท่านั้นโดยไม่สนmethod definition","ใช้สีของmobile phaseแทนpH meterได้"],
+    rationale:"เมื่อmonographกำหนดpHต้องปรับถึงactual measured pHตามprocedure; small pH shiftsอาจเปลี่ยนionizationและretention.",
+    traps:["Fixed acid volumeไม่รับประกันfinal pHทุกlot","pHมีผลต่อionic analytes/ion pair","Measurement conventionต้องตามmethod/pharmacopeia","สีไม่ใช่validated pH measurement"],
+    difficulty:"hard",
+    ref:"USP <621>; chromatographic buffer preparation"
+  },
+  {
+    topic:"Monograph interpretation / order of pH adjustment",
+    prompt:"Mobile phaseสูตรหนึ่งระบุผสมน้ำกับbuffer ปรับpHก่อนเติมacetonitrile. หากanalystวัดและปรับpHหลังเติมorganicโดยใช้aqueous-calibrated pH meter อาจเกิดประเด็นใด?",
+    options:["Apparent pHในhydro-organic solventอาจไม่เทียบเท่าaqueous pHที่methodกำหนดและทำให้selectivityเปลี่ยน","ไม่มีผลเพราะpHนิยามเหมือนกันทุกsolvent","ทำให้column particle sizeเปลี่ยน","ทำให้UV wavelengthshiftอัตโนมัติ","ทำให้standard potencyลด"],
+    rationale:"pH measurementในmixed solventมีjunction/activity effects; ต้องทำตามdefined preparation orderเพื่อreproducibility.",
+    traps:["pH scale/measurementมีsolvent effects","Particle sizeไม่เปลี่ยน","Detector wavelengthไม่ได้shiftจากขั้นเตรียม","ไม่เกี่ยวpotency"],
+    difficulty:"hard",
+    ref:"Chromatographic mobile-phase preparation principles"
+  },
+  {
+    topic:"Monograph interpretation / ion-pair equilibration",
+    prompt:"Ion-pair RP methodหลังเปลี่ยนcolumnใหม่ retentionยังdriftเป็นชั่วโมงแม้pressureปกติ. ข้อใดเป็นสาเหตุที่มีเหตุผล?",
+    options:["Ion-pair reagentอาจต้องเวลาequilibrate/adsorbกับstationary phaseจนsurface conditionคงที่","Detector lampต้องwarm upหลายชั่วโมงเสมอ","APIกำลังpolymerizeในcolumn","Autosampler volumeเพิ่มเองตามเวลา","Column IDกำลังหด"],
+    rationale:"Ion-pair methodsมักต้องlonger equilibrationเพื่อสร้างsteady-state distributionของion-pair reagentกับstationary phase.",
+    traps:["Lamp warm-upไม่อธิบายretention driftเฉพาะion-pair method","ไม่มีข้อมูลpolymerization","Autosampler volumeไม่สร้างsystematic retention equilibration pattern","Column dimensionsไม่หดแบบนี้"],
+    difficulty:"hard",
+    ref:"Ion-pair chromatography equilibration principles"
+  },
+  {
+    topic:"Monograph interpretation / column washing",
+    prompt:"หลังใช้ion-pair reagentต่อเนื่อง ต้องการเปลี่ยนcolumnไปใช้methodทั่วไปทันที. ข้อใดควรระวัง?",
+    options:["Ion-pair reagentอาจpersistบนstationary phaseและเปลี่ยนselectivityของmethodถัดไป จึงต้องมีvalidated washing/dedicated-column strategy","ไม่มีcarryoverบนcolumnเพราะion-pair reagentละลายน้ำ","ล้างด้วยน้ำอย่างเดียว1column volumeพอเสมอ","ion-pair reagentมีผลเฉพาะdetector","เปลี่ยนwavelengthก็แก้ได้"],
+    rationale:"Ion-pair reagentsโดยเฉพาะhydrophobic speciesอาจadsorbและmemory effectบนC18; labsมักใช้dedicated columnsหรือextensive cleaning.",
+    traps:["Persistenceเป็นknown practical issue","หนึ่งCVไม่รับประกันremoval","ผลหลักอยู่stationary phase/selectivity","Wavelengthไม่ล้างcolumn"],
+    difficulty:"hard",
+    ref:"Ion-pair LC column-care principles"
+  },
+  {
+    topic:"Monograph interpretation / system suitability purpose",
+    prompt:"ข้อใดอธิบายsystem suitabilityได้ถูกต้องที่สุด?",
+    options:["เป็นการยืนยันก่อน/ระหว่างrunว่าระบบวิเคราะห์มีperformanceเพียงพอต่อmethodที่กำหนด แต่ไม่แทนmethod validation","เป็นการvalidate methodใหม่ทุกครั้งที่run","เป็นการพิสูจน์batchผ่านspecification","เป็นการcalibrate detectorโดยอัตโนมัติ","เป็นการตรวจเฉพาะstandard purity"],
+    rationale:"SSTเป็นongoing system-performance check เช่นprecision, peak shape, resolution; method validationเป็นคนละระดับ.",
+    traps:["SSTไม่เท่ากับfull validation","Batch dispositionต้องอาศัยsample resultsด้วย","ไม่ได้calibrateทั้งหมดอัตโนมัติ","ไม่ใช่standard purity test"],
+    difficulty:"hard",
+    ref:"USP <621>; ICH Q2(R2)"
+  },
+  {
+    topic:"Monograph interpretation / SST failure after samples",
+    prompt:"Sequenceเริ่มด้วยSSTผ่าน แต่bracketing standardท้ายrunมีRSD/response driftเกินacceptance. Samplesระหว่างกลางทั้งหมดดูปกติ. ข้อใดเหมาะสมที่สุด?",
+    options:["ประเมินrun validityตามpredefined procedureและtime window; อาจต้องinvestigate/reinject affected samples ไม่ควรถือว่าทั้งrun validอัตโนมัติ","ถือว่าทุกsample validเพราะinitial SSTผ่าน","ทิ้งfinal standardแล้วรายงานsamples","เฉลี่ยinitialและfinal standardเพื่อให้ผ่าน","เปลี่ยนacceptance criterionหลังrun"],
+    rationale:"System performanceต้องคงacceptableตลอดช่วงที่sample dataถูกสร้าง; bracketing failureอาจจำกัดvalid time interval.",
+    traps:["Initial passไม่ค้ำประกันทั้งrun","ห้ามdiscardfailed controlโดยไม่มีinvestigation","Averaging controlsเพื่อpassอาจไม่ตรงprocedure","ห้ามpost-hoc change criterion"],
+    difficulty:"hard",
+    ref:"GMP chromatographic run validity / bracketing principles"
+  },
+  {
+    topic:"Monograph interpretation / relative retention",
+    prompt:"Monographระบุrelative retention time (RRT) impurity≈0.75เทียบAPI. API tR=8.00 min. Impurityควรออกใกล้เวลาใด?",
+    options:["6.00 min","10.67 min","8.75 min","2.00 min","0.75 min"],
+    rationale:"RRT=tR impurity/tR API; tR impurity=0.75×8=6min.",
+    traps:["10.67เป็นการหารกลับ","8.75เป็นการบวก","2ไม่ตรง","0.75คือRRTไม่ใช่minutes"],
+    difficulty:"hard",
+    ref:"Chromatographic relative-retention calculations",
+    calc:["tR,impurity=0.75×8.00=6.00 min"]
+  },
+  {
+    topic:"Monograph interpretation / resolution requirement",
+    prompt:"Monographกำหนดresolutionระหว่างimpurity AกับAPI NLT2.0. ได้tR 5.20และ5.80 min; baseline widths0.22และ0.26min. Rsประมาณเท่าใดและผ่านหรือไม่?",
+    options:["Rs≈2.50 ผ่าน","Rs≈1.25 ไม่ผ่าน","Rs≈5.00 ผ่าน","Rs≈2.00 ผ่านพอดี","Rs≈0.60 ไม่ผ่าน"],
+    rationale:"Rs=2(0.60)/(0.22+0.26)=1.20/0.48=2.50.",
+    traps:["1.25ลืมfactor2","5.0ใช้denominatorผิด","2.0ไม่ตรงcalculation","0.6ใช้เพียงretention difference"],
+    difficulty:"hard",
+    ref:"USP <621> resolution calculation",
+    calc:["ΔtR=0.60","Wsum=0.48","Rs=2×0.60/0.48=2.50"]
+  },
+  {
+    topic:"Monograph interpretation / tailing mechanism",
+    prompt:"Basic analyteในion-pair RP-LCยังtailมากแม้เติมion-pair reagent. การลดmobile-phase pHจาก4.5เป็น3.0ทำให้tailingดีขึ้น. กลไกใดอธิบายได้ดีที่สุด?",
+    options:["ลดionizationของresidual silanolบนsilicaจึงลดsecondary interactionกับprotonated base","ทำให้basic analyteunionizedมากขึ้น","ทำให้C18ละลายออกจากsilica","ทำให้UV detectorเร็วขึ้น","ทำให้ion-pair reagentหายไป"],
+    rationale:"Low pH suppresses silanol deprotonationและลดionic secondary interaction; weak baseกลับprotonatedมากขึ้น.",
+    traps:["Weak baseที่pHต่ำionizedมากขึ้น","C18ไม่ได้ละลายจากการลดpHในช่วงใช้งานปกติ","Detector speedไม่เกี่ยวpeak chemistry","Ion-pair reagentยังอยู่"],
+    difficulty:"hard",
+    ref:"Silica-based RP-LC peak-tail troubleshooting"
+  },
+  {
+    topic:"Monograph interpretation / capacity factor",
+    prompt:"Void time=1.5 min; API tR=7.5 min. k'เท่าใด และถ้าk'ของimpurity=3.0 selectivity α(API/impurity)เมื่อAPI retainedมากกว่าเท่าใด?",
+    options:["k'=4.0 และ α=1.33","k'=5.0 และ α=1.67","k'=4.0 และ α=0.75","k'=6.0 และ α=2.0","k'=3.0 และ α=1.0"],
+    rationale:"k'API=(7.5−1.5)/1.5=4.0; α=4.0/3.0=1.33.",
+    traps:["k'=5คือtR/t0และalphaผิด","alphaต้อง>1ตามdefinitionเมื่อAPI retainedกว่า","6ไม่ตรงสูตร","k'ไม่ใช่impurity value"],
+    difficulty:"hard",
+    ref:"Chromatographic retention/selectivity theory",
+    calc:["k'API=(7.5−1.5)/1.5=4.0","α=4.0/3.0=1.33"]
+  },
+  {
+    topic:"Monograph interpretation / resolution levers",
+    prompt:"Critical pairมีRs1.2. หากต้องเลือกการเปลี่ยนแปลงที่มีศักยภาพเพิ่มresolutionมากที่สุดเชิงselectivity โดยไม่เพียงยืดrun time ข้อใดเหมาะสมที่สุด?",
+    options:["ปรับmobile-phase pH/organic compositionหรือstationary-phase chemistryเพื่อเปลี่ยนα","ลดflow rateเล็กน้อยอย่างเดียว","เพิ่มcolumn length10%อย่างเดียว","เพิ่มinjection volume","เพิ่มdetector sampling rate"],
+    rationale:"Resolutionขึ้นกับefficiency, retentionและselectivity; αมักเป็นleverที่ทรงพลังที่สุดในการแก้critical pair.",
+    traps:["Flow/lengthช่วยผ่านNแต่ผลต่อRsจำกัดเมื่อselectivityต่ำ","Injection volumeอาจทำshapeแย่","Detector samplingไม่เปลี่ยนactual separation"],
+    difficulty:"hard",
+    ref:"Chromatographic resolution theory"
+  },
+  {
+    topic:"Monograph interpretation / assay acceptance",
+    prompt:"Product specification assay=95.0–105.0%. Resultได้104.8% แต่standard potency certificateถูกใส่ผิดจาก99.0%เป็น100.0%ในcalculation. หากแก้ถูก resultควรเปลี่ยนทิศใด?",
+    options:["ลดลงประมาณ1% relative เพราะcorrect potencyต่ำกว่า100%","เพิ่มขึ้นประมาณ1%","ไม่เปลี่ยนเพราะpotencyยกเลิกกัน","ลดลง10%","เพิ่มขึ้น10%"],
+    rationale:"ถ้าcalculationเดิมสมมติP=1.000 แต่จริงP=0.990 ผลcorrectedประมาณ104.8×0.99≈103.75%.",
+    traps:["ทิศทางกลับ","Potencyไม่ยกเลิกเมื่อstandard assigned contentต่าง","Magnitudeไม่ถึง10%"],
+    difficulty:"hard",
+    ref:"Reference-standard potency correction",
+    calc:["104.8×0.990≈103.75%"]
+  },
+  {
+    topic:"Monograph interpretation / standard degradation",
+    prompt:"Standard solutionใหม่ area500k; หลัง8ชั่วโมงarea480k แต่sampleareaแทบคงเดิม. หากใช้aged standardคำนวณsampleโดยไม่รู้ว่าstandard degraded ผลassayมีแนวโน้มอย่างไร?",
+    options:["Biasสูง เพราะstandard responseต่ำลงทำให้sample/standard ratioสูงขึ้น","Biasต่ำ","ไม่bias","retention timeเพิ่มอย่างเดียว","เฉพาะRSDเปลี่ยนแต่meanไม่เปลี่ยน"],
+    rationale:"External-standard equationมีrU/rS; rSลดจากdegradationทำให้ratioสูงและoverestimate sample assay.",
+    traps:["ทิศทางตรงข้าม","มีbiasชัด","ไม่จำเป็นต้องเปลี่ยนretention","Meanถูกbiasไม่ใช่แค่RSD"],
+    difficulty:"hard",
+    ref:"Standard-solution stability in quantitative chromatography"
+  },
+  {
+    topic:"Monograph interpretation / sample degradation",
+    prompt:"Sample solution degradeเร็วกว่าstandard. หากวิเคราะห์sampleช้าเกินvalidated hold time แต่standardสด ผลassayมีแนวโน้มอย่างไร?",
+    options:["Biasต่ำและอาจมีdegradant peaksเพิ่ม","Biasสูง","ไม่biasเพราะstandardสด","tailing factorลดเสมอ","RSDของstandardจะfailแน่นอน"],
+    rationale:"Sample analyteสูญเสียระหว่างhold timeทำให้sample responseลดเทียบstandard.",
+    traps:["ทิศทางกลับ","Fresh standardไม่แก้sample instability","Peak shapeไม่จำเป็นต้องดีขึ้น","StandardRSDอาจปกติ"],
+    difficulty:"hard",
+    ref:"Analytical solution-stability principles"
+  },
+  {
+    topic:"Monograph interpretation / sample extraction completeness",
+    prompt:"Monographให้shake10min. Analystshake2minแต่solutionดูใสและassayได้96%. เมื่อshake10minได้100%. ข้อใดถูกต้องที่สุด?",
+    options:["Visual clarityไม่พิสูจน์complete extraction; extraction timeเป็นcritical sample-preparation parameter","2minเพียงพอเพราะsolutionใส","10minทำให้APIสร้างเพิ่ม","ใช้ค่าเฉลี่ย96และ100","เพิ่มstandard concentrationแทนการshake"],
+    rationale:"APIอาจยังไม่ถูกextractครบแม้ไม่มีvisible solids; method-defined extraction timeต้องถูกทำตาม/validated.",
+    traps:["Clarityไม่เท่ากับquantitative recovery","APIไม่ควรสร้างเพิ่มจากshake","Averagingคนละpreparation conditionไม่แก้bias","Standardไม่แก้sample recovery"],
+    difficulty:"hard",
+    ref:"ICH Q14 sample-preparation development"
+  },
+  {
+    topic:"Monograph interpretation / centrifuge speed",
+    prompt:"Monographระบุcentrifugeแต่ไม่ระบุrpmในข้อความย่อที่ห้องแล็บใช้. Analyst Aใช้3,000g; Bใช้500gและsupernatantขุ่น. ผลBสูงกว่าจากscattering/interference. ข้อใดเหมาะสมที่สุด?",
+    options:["ต้องกำหนด/อ้างอิงcentrifugation conditionที่ให้clear supernatantและvalidated recovery ไม่ควรปล่อยให้analystเลือกอิสระ","ใช้500gเพราะแรงน้อยทำลายAPIน้อยกว่าเสมอ","ใช้3000gเพราะเลขสูงกว่าเสมอ","เฉลี่ยผลAและB","ปรับUV wavelengthจนขุ่นไม่เห็น"],
+    rationale:"Sample-preparation conditionsที่กระทบclarity/recoveryต้องถูกcontrolledและfit for purpose; relative centrifugal force/timeมีผล.",
+    traps:["แรงต่ำไม่ได้ปลอดภัยกว่าในเชิงanalyticalเสมอ","แรงสูงต้องappropriateไม่ใช่เลือกเพราะสูง","Averagingไม่แก้method variability","Wavelengthไม่แก้particulate matrixอย่างเป็นหลัก"],
+    difficulty:"hard",
+    ref:"Analytical sample-preparation robustness"
+  },
+  {
+    topic:"Monograph interpretation / column dimension transfer",
+    prompt:"Monographใช้4.0×300 mm column flow2.0mL/min. ต้องย้ายไป4.6×150 mm column chemistry/particleใกล้เคียงโดยต้องรักษาlinear velocity. Flowใหม่ควรประมาณเท่าใด?",
+    options:["ประมาณ2.65 mL/min","1.00 mL/min","2.30 mL/min","4.60 mL/min","0.87 mL/min"],
+    rationale:"Linear velocity scalingตามID²:2.0×(4.6/4.0)²≈2.645mL/min. Lengthไม่กำหนดflowเพื่อรักษาlinear velocity.",
+    traps:["1.0เอาlengthมาหารผิด","2.30ใช้ID ratioเชิงเส้น","4.60สูงเกิน","0.87กลับratio"],
+    difficulty:"hard",
+    ref:"Chromatographic geometrical scaling principles",
+    calc:["F2=2.0×(4.6/4.0)²≈2.65 mL/min"]
+  },
+  {
+    topic:"Monograph interpretation / run time scaling",
+    prompt:"จากcolumnเดิม300 mm เปลี่ยนเป็น150 mm โดยรักษาlinear velocityและselectivityใกล้เดิม. Retention timesโดยประมาณมีแนวโน้มอย่างไร?",
+    options:["ลดลงประมาณครึ่งหนึ่งเพราะcolumn lengthครึ่งหนึ่ง","เพิ่มสองเท่า","คงเดิมเสมอ","ลดลงตามID²เท่านั้น","ขึ้นกับdetector wavelength"],
+    rationale:"ที่linear velocityคงเดิม residence timeโดยประมาณแปรกับcolumn length.",
+    traps:["ทิศทางตรงข้าม","Length changeมีผล","IDถูกชดเชยผ่านflow","Wavelengthไม่กำหนดretention"],
+    difficulty:"hard",
+    ref:"Column scaling theory"
+  },
+  {
+    topic:"Monograph interpretation / efficiency trade-off",
+    prompt:"ลดcolumn lengthครึ่งหนึ่งโดยparticle sizeคงเดิม. ผลที่คาดต่อtheoretical plates Nคือข้อใด?",
+    options:["Nลดลงประมาณตามcolumn length จึงอาจลดresolutionแม้runเร็วขึ้น","Nเพิ่มสองเท่าเสมอ","Nไม่เปลี่ยนเพราะparticleเท่าเดิม","Nเป็นศูนย์","Nขึ้นกับUV wavelengthเท่านั้น"],
+    rationale:"N≈L/H; เมื่อHใกล้เดิม ลดLครึ่งหนึ่งทำNประมาณครึ่ง ทำresolutionลดตามsqrt(N).",
+    traps:["ทิศทางผิด","Particleเท่าไม่ได้ทำNคงที่เมื่อLเปลี่ยน","ไม่เป็นศูนย์","Detectorไม่กำหนดcolumn efficiencyหลัก"],
+    difficulty:"hard",
+    ref:"Chromatographic plate theory"
+  },
+  {
+    topic:"Monograph interpretation / resolution scaling",
+    prompt:"ถ้าselectivityและretentionคงเดิม แต่Nลดเหลือครึ่งจากการใช้columnสั้นลง Rsจะเปลี่ยนโดยประมาณอย่างไร?",
+    options:["ลดเหลือประมาณ0.707เท่าของเดิม","ลดครึ่งหนึ่งตรง ๆ","เพิ่ม1.414เท่า","ไม่เปลี่ยน","เพิ่มสองเท่า"],
+    rationale:"Rs∝√N; √0.5≈0.707.",
+    traps:["Rsไม่แปรเชิงเส้นกับN","ทิศทางกลับ","Nมีผลต่อRs","สองเท่าไม่ถูก"],
+    difficulty:"hard",
+    ref:"Chromatographic resolution equation",
+    calc:["Rs2/Rs1≈√(N2/N1)=√0.5≈0.707"]
+  },
+  {
+    topic:"Monograph interpretation / detector response",
+    prompt:"APIและimpurity co-eluteเล็กน้อยที่280nm แต่spectraต่างกันมาก. เปลี่ยนwavelengthอาจช่วยquantitationอย่างไร?",
+    options:["อาจเพิ่มspectral selectivity/relative responseแต่ไม่แก้physical chromatographic co-elution จึงต้องประเมินทั้งseparationและdetection","ทำให้Rsเพิ่มโดยตรง","ทำให้retention timeแยกเสมอ","ทำให้column efficiencyเพิ่ม","ทำให้impurityหายทางเคมี"],
+    rationale:"Wavelengthเลือกช่วยลด/เพิ่มrelative signalของแต่ละspeciesแต่ไม่เปลี่ยนactual separationในcolumn.",
+    traps:["Rsเป็นchromatographic parameter","Retentionไม่เปลี่ยนจากUV detector setting","Efficiencyไม่เพิ่ม","ไม่ทำลายimpurity"],
+    difficulty:"hard",
+    ref:"Chromatographic vs spectral selectivity"
+  },
+  {
+    topic:"Monograph interpretation / placebo interference",
+    prompt:"Placebo peakออกที่API tRแต่มีresponseเพียง0.8%ของtarget assay. Assay spec95–105%. ข้อใดเป็นการประเมินที่เหมาะสมที่สุด?",
+    options:["แม้interferenceดูเล็ก แต่ต้องประเมินspecificityและbiasตามintended accuracy; 0.8%อาจมีนัยสำคัญเมื่อผลใกล้spec limit","ละเลยได้เสมอเพราะ<1%","หัก0.8%จากทุกresultโดยไม่validate","เปลี่ยนspecเป็น94–106%","ใช้RSDแทนspecificity"],
+    rationale:"Matrix biasคงที่0.8%อาจเปลี่ยนbatch disposition near limit; ต้องvalidate/selectivityหรือapplyvalidated correction.",
+    traps:["ไม่มีuniversal<1% rule","Correctionต้องscientifically validated","ห้ามปรับspecเพื่อinterference","Precisionไม่แทนspecificity"],
+    difficulty:"hard",
+    ref:"ICH Q2(R2) specificity/accuracy"
+  },
+  {
+    topic:"Monograph interpretation / standard purity basis",
+    prompt:"Reference standard potency=99.5% on dried basis; water=1.0%. ถ้าต้องใช้as-is active fractionสำหรับชั่งโดยตรง ค่าใกล้เคียงเท่าใด?",
+    options:["98.5%","99.5%","100.5%","98.0%","101.0%"],
+    rationale:"As-is active fraction≈0.995×0.990=0.98505=98.5%.",
+    traps:["99.5เป็นdried basis","100.5เกิน","98.0ต่ำเกิน","101ไม่ถูก"],
+    difficulty:"hard",
+    ref:"Reference-standard basis correction",
+    calc:["0.995×(1−0.010)=0.98505≈98.5%"]
+  },
+  {
+    topic:"Monograph interpretation / potency double-correction",
+    prompt:"Analystใช้standard certificate potencyที่ถูกcorrectเป็นdried basisแล้ว แต่ยังหารด้วย(1−water)ซ้ำอีกครั้งในการคำนวณ. ผลassayจะมีแนวโน้มอย่างไร?",
+    options:["Biasสูงจากการdouble-correct potency","Biasต่ำ","ไม่bias","มีผลเฉพาะretention","มีผลเฉพาะRSD"],
+    rationale:"การเพิ่มeffective standard potencyเกินจริงในequationทำreported sample assayสูงเกิน.",
+    traps:["ทิศทางกลับ","Double correctionมีผล","ไม่เกี่ยวretention/RSDหลัก"],
+    difficulty:"hard",
+    ref:"Basis-correction calculation principles"
+  },
+  {
+    topic:"Monograph interpretation / equivalence factor",
+    prompt:"Monographระบุ 1 mL titrant ≡45.04 mg C9H8O4. ค่าequivalence factorนี้มีความหมายใด?",
+    options:["ภายใต้normalityที่ระบุ ปริมาตรtitrant1mLสอดคล้องstoichiometricallyกับanalyte45.04mg","titrant1mLมีมวล45.04mg","analyteละลายได้45.04mg/mL","standardต้องมี45.04mg/mL","ทุกnormalityใช้factorเดียวกัน"],
+    rationale:"Factorเป็นstoichiometric assay equivalenceผูกกับspecified titrant strengthและreaction stoichiometry.",
+    traps:["ไม่ใช่มวลtitrant","ไม่ใช่solubility","ไม่ใช่standard concentration","เปลี่ยนnormalityต้องปรับfactor"],
+    difficulty:"hard",
+    ref:"Volumetric assay equivalence factors"
+  },
+  {
+    topic:"Monograph interpretation / blank purpose",
+    prompt:"ในback titrationเหตุใดต้องทำblankด้วยreagentsเดียวกันแต่ไม่มีsample?",
+    options:["หาปริมาณreagent/titrantที่ถูกใช้จากกระบวนการหรือmatrix-independent reactions เพื่อหักออกจากsample result","เพิ่มsample size","วัดAPI impurityโดยตรง","ทำให้endpointเปลี่ยนสีชัดขึ้นเท่านั้น","ใช้แทนstandardizationของtitrantได้"],
+    rationale:"Blank corrects background consumptionจากreagents/heating/container/indicator effects.",
+    traps:["ไม่เพิ่มsample size","ไม่ได้quantifyimpurityโดยตรง","สีไม่ใช่purposeหลัก","Titrantยังต้องstandardize"],
+    difficulty:"hard",
+    ref:"Blank correction in volumetric analysis"
+  },
+  {
+    topic:"Monograph interpretation / blank anomaly",
+    prompt:"Historical blankใช้32.5±0.2mL แต่วันนี้ blank=29.0mL ขณะที่sample resultsดูผ่าน. ข้อใดควรทำ?",
+    options:["Investigate blank anomaly/reagent strength/procedureก่อนยอมรับassay เพราะblankเป็นส่วนหนึ่งของcalculation","ใช้sample resultต่อเพราะยังผ่านspec","แทนblankด้วยhistorical mean","เฉลี่ยblankวันนี้กับเมื่อวาน","เพิ่มsample titrantจนผลเหมือนเดิม"],
+    rationale:"Blank shiftมากอาจสะท้อนtitrant/reagent concentrationหรือprocedural errorและbias assayทั้งหมด.",
+    traps:["Passing sampleไม่ลบcontrol anomaly","ห้ามแทนraw controlด้วยhistorical mean","Averagingไม่แก้root cause","ห้ามปรับvolumeเพื่อfitexpected result"],
+    difficulty:"hard",
+    ref:"GMP laboratory control / volumetric assay validity"
+  },
+  {
+    topic:"Monograph interpretation / titrant standardization",
+    prompt:"0.500 N titrant actual factor=0.972. Analystลืมใช้factor. ถ้าassayคำนวณจากtitrant consumptionโดยตรง ผลที่รายงานจะเป็นอย่างไร?",
+    options:["สูงเกินจริงประมาณ2.9% relative ถ้าสมมติ0.500Nแทนactual0.486N","ต่ำประมาณ2.9%","ไม่เปลี่ยน","สูง50%","ต่ำ50%"],
+    rationale:"สมมติstrengthสูงกว่าจริงทำให้แต่ละmLถูกแปลงเป็นanalyteมากเกิน; 1/0.972−1≈2.88% relative.",
+    traps:["ทิศทางกลับ","Factorมีผล","Magnitudeไม่ถึง50%"],
+    difficulty:"hard",
+    ref:"Volumetric solution factor corrections"
+  },
+  {
+    topic:"Monograph interpretation / endpoint overshoot",
+    prompt:"Visual back titrationถูกovershootด้วยacid titrant ทำให้recorded acid volumeสูงกว่าจริง. หากassayคำนวณจาก(blank−sample acid volume) ผลassayจะbiasทิศใด?",
+    options:["ต่ำ เพราะsample acid volumeสูงเกินทำให้blank−sampleเล็กลง","สูง","ไม่เปลี่ยน","ขึ้นกับinjection volume","มีผลเฉพาะRSD"],
+    rationale:"Back-titration amountสัมพันธ์กับdifference blank−sample; overshoot sample volumeเพิ่มจึงdifferenceลดและassayต่ำ.",
+    traps:["ทิศทางกลับ","มีbiasโดยตรง","ไม่เกี่ยวLC injection","Meanถูกbiasไม่ใช่แค่RSD"],
+    difficulty:"hard",
+    ref:"Back-titration endpoint error"
+  },
+  {
+    topic:"Monograph interpretation / incomplete hydrolysis",
+    prompt:"Assayอาศัยhydrolysisด้วยNaOHก่อนback titration. หากต้มไม่ครบเวลาและhydrolysisไม่สมบูรณ์ ผลassayโดยทั่วไปมีแนวโน้มอย่างไร?",
+    options:["ต่ำ เพราะanalyteใช้NaOHน้อยกว่าที่stoichiometryคาด ทำให้เหลือbaseมากขึ้นและต้องใช้acidกลับมากขึ้น","สูง","ไม่เปลี่ยน","เฉพาะtailingเพิ่ม","เฉพาะblankลด"],
+    rationale:"Incomplete reactionทำให้reagent consumptionโดยanalyteต่ำ → residual baseสูง → back-titrantสูง → blank−sampleต่ำ → assayต่ำ.",
+    traps:["ทิศทางกลับ","Reaction completenessมีผล","ไม่เกี่ยวchromatographic tailing","Blankไม่มีsampleจึงไม่สะท้อนhydrolysis completenessของanalyte"],
+    difficulty:"hard",
+    ref:"Reaction-completeness effects in back titration"
+  },
+  {
+    topic:"Monograph interpretation / overboiling loss",
+    prompt:"หากanalyteหรือreaction productระเหยได้และboiling stepรุนแรงเกินไปจนสูญเสียanalyteก่อนreactionครบ ผลassayมีแนวโน้มใด?",
+    options:["ต่ำจากloss of analyteก่อนquantitative reaction","สูงเสมอ","ไม่เปลี่ยนถ้ามีblank","RSDเป็นศูนย์","standard potencyเพิ่ม"],
+    rationale:"Loss of analyteทำให้reagent consumptionต่ำและquantitated amountต่ำ; blankไม่correct analyte-specific volatility.",
+    traps:["ไม่จำเป็นสูง","Blankไม่มีanalyteจึงไม่แก้volatility","RSDไม่เป็นศูนย์","Potencystandardไม่เปลี่ยน"],
+    difficulty:"hard",
+    ref:"Sample handling errors in titrimetric assays"
+  },
+  {
+    topic:"Monograph interpretation / monograph qualification",
+    prompt:"ห้องQCต้องนำcompendial monograph methodมาใช้กับผลิตภัณฑ์ของตน. แนวทางใดเหมาะสมที่สุด?",
+    options:["ทำverification/qualificationตามpharmacopeialและquality-system requirementsเพื่อยืนยันว่าวิธีเหมาะกับmatrix/conditionsของห้อง ไม่ใช่สมมติว่าใช้ได้ทันทีทุกกรณี","ไม่ต้องทำอะไรเพราะmonographคือvalidated universal method","ต้องfull revalidateเหมือนnew methodทุกcharacteristicเสมอ","ใช้system suitabilityครั้งเดียวพอ","เปลี่ยนmethodได้อิสระถ้าเครื่องผ่านIQ/OQ"],
+    rationale:"Compendial methodsได้รับvalidationในบริบทของmonograph แต่user laboratoryต้องdemonstrate suitability/verificationตามข้อกำหนดที่เกี่ยวข้อง.",
+    traps:["Matrix/instrument/lab implementationยังต้องverify","Full revalidationอาจไม่จำเป็นทุกกรณี","SSTอย่างเดียวไม่เท่ากับmethod verificationทั้งหมด","Equipment qualificationไม่แทนmethod suitability"],
+    difficulty:"hard",
+    ref:"USP <1226> Verification of Compendial Procedures; GMP"
+  },
+  {
+    topic:"Monograph interpretation / equipment qualification",
+    prompt:"LC instrumentผ่านIQ/OQล่าสุดแล้ว. ข้อใดถูกต้องที่สุดเกี่ยวกับการใช้monograph method?",
+    options:["IQ/OQยืนยันเครื่องมือแต่ไม่แทนmethod verification, calibration, SSTและsample-specific suitability","IQ/OQทำให้ทุกmonograph methodใช้ได้ทันที","ไม่ต้องSSTอีก","ไม่ต้องcalibratepump/UV detector","ไม่ต้องverifysample preparation"],
+    rationale:"Equipment qualificationและanalytical procedure controlเป็นคนละlayerของassurance.",
+    traps:["Qualificationไม่ครอบคลุมทุกmethod","SSTยังจำเป็นตามmethod","Calibration/maintenanceยังต้องทำ","Sample prepยังต้องfit for purpose"],
+    difficulty:"hard",
+    ref:"GMP analytical lifecycle / equipment qualification"
+  },
+  {
+    topic:"Monograph interpretation / change from compendial method",
+    prompt:"QCเปลี่ยนcolumn chemistryจากL1เป็นphenylเพื่อให้runสั้นลงและยังได้assayใกล้เดิม. ข้อใดเหมาะสมที่สุด?",
+    options:["เป็นmethod modificationที่อาจเปลี่ยนselectivity ต้องevaluate/validateและจัดการregulatory/quality impactตามความเหมาะสม","ทำได้ทันทีถ้าassaydifference<1%","ถือว่าequivalentเพราะทั้งคู่RP column","เปลี่ยนได้ถ้าpressureต่ำลง","ไม่ต้องดูimpuritiesเพราะเป็นassay method"],
+    rationale:"Different stationary-phase chemistryสามารถเปลี่ยนseparation/interferenceแม้assay meanใกล้เดิม; specificityและsystem suitabilityต้องประเมิน.",
+    traps:["Mean differenceอย่างเดียวไม่พิสูจน์equivalence","RPเหมือนกันแต่selectivityต่าง","Pressureไม่ใช่equivalence proof","Impurities/co-elutionยังสำคัญต่อassay specificity"],
+    difficulty:"hard",
+    ref:"ICH Q14 / compendial method modification principles"
+  },
+  {
+    topic:"Monograph interpretation / placebo extraction",
+    prompt:"ในการverify assay monographกับtablet matrix ข้อใดเป็นชุดทดลองที่มีคุณค่าต่อspecificity/extractionมากที่สุด?",
+    options:["Blank, placebo, API standard, spiked placeboและfinished-product sampleภายใต้sample-prepเดียวกัน","standardอย่างเดียวหลายreplicates","sampleอย่างเดียว5ครั้ง","mobile phaseอย่างเดียว","system suitability solutionอย่างเดียว"],
+    rationale:"ชุดนี้ช่วยแยกbackground, matrix interference, recoveryจากmatrixและperformanceกับfinished product.",
+    traps:["Standardอย่างเดียวไม่ทดสอบmatrix","Samplereplicatesเน้นprecisionไม่ครบspecificity","Mobile phaseไม่แทนplacebo","SSTไม่แทนmatrix verification"],
+    difficulty:"hard",
+    ref:"ICH Q2(R2) / compendial method verification"
+  },
+  {
+    topic:"Monograph interpretation / dilution integrity",
+    prompt:"Sample stock5mg/mLถูกเจือจางเป็น0.5mg/mLด้วยsingle 1:10 dilution. หากpipette uncertaintyที่aliquotเป็น±1%และflask±0.2% ข้อใดถูกต้องที่สุด?",
+    options:["Dilution stepมีส่วนต่อoverall assay uncertaintyและต้องใช้Class A/qualified volumetric techniqueให้เหมาะกับmethod performance","Uncertaintyยกเลิกกันเสมอ","Flask uncertaintyไม่สำคัญเพราะใหญ่กว่าpipette","Pipette uncertaintyไม่มีผลเมื่อใช้HPLC","ควรใช้graduated cylinderแทนเพื่อเร็วขึ้น"],
+    rationale:"Volumetric errors propagate intoconcentration uncertainty; quantitative assayต้องใช้suitable calibrated volumetric ware.",
+    traps:["Errorsไม่ได้ยกเลิกเสมอ","ทั้งสองมีส่วน","HPLCไม่แก้sample concentration error","Cylinderมักprecisionต่ำกว่า"],
+    difficulty:"hard",
+    ref:"Analytical measurement uncertainty / volumetric preparation"
+  }
+];
+
 function buildQuestion(d: Draft, index: number): McqQuestion {
   const pos = answerPositions[index % answerPositions.length];
   const correct = d.options[0];
