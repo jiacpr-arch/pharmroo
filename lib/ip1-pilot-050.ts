@@ -89,13 +89,13 @@ const D: Draft[] = [
   },
   {
     topic:"Enteric coating troubleshooting",
-    prompt:"Core tablet ให้ dissolution 94%. หลัง enteric coating พบว่า acid stage ผ่าน แต่ใน buffer stage ปลดปล่อยยาเพียง 61%. ข้อมูลใดควรตรวจสอบเป็นลำดับต้น ๆ?",
-    options:["Coating weight gain, curing และ pH-solubility ของ enteric polymer","Assay ของ API ก่อน granulation","Blend uniformity ก่อน compression","Particle size ของ API เพียงอย่างเดียว","ความหนาแน่น bulk ของ excipient ก่อนผสม"],
-    rationale:"Core ก่อนเคลือบละลายดี แต่ปัญหาเกิดหลัง coating และ acid resistance ผ่านแล้ว จึงต้องโฟกัส coat ที่อาจหนาเกิน/curing มากเกิน หรือ polymer เปิดที่ pH สูงเกิน ทำให้ release ใน buffer ล่าช้า.",
-    traps:["Assay ไม่อธิบายความต่างก่อน/หลัง coating","Blend uniformity ถ้ามีปัญหาควรสะท้อนตั้งแต่ core","Particle size อาจมีผลต่อ intrinsic dissolution แต่ core test 94% ชี้ว่าไม่ใช่ root cause แรก","Bulk density ของ excipient ไม่สัมพันธ์โดยตรงกับความผิดปกติที่เกิดหลัง coating"],
+    prompt:"Delayed-release tablet รุ่นหนึ่งมีผลดังนี้: uncoated core Q30 = 96%; หลังเคลือบ acid stage 2 ชั่วโมงปลดปล่อย 1.5%; buffer pH 6.8 ที่ 45 นาทีปลดปล่อย 58% (เกณฑ์ ≥80%). Coating weight gain อยู่ใน target และ SEM ไม่พบ crack. Batch record พบว่า curing time เพิ่มจาก validated 60 นาทีเป็น 4 ชั่วโมง ขณะที่ inlet temperature เดิม. ข้อใดเป็นสมมติฐานและการยืนยันที่เหมาะสมที่สุด?",
+    options:["สงสัย over-curing ทำให้ polymer coalescence มากขึ้นและ film permeability ลดลง; ทำ comparative dissolution/film study ตาม curing time","สงสัย disintegrant ใน core ต่ำ; เพิ่ม disintegrant แล้วตัดประเด็น coating ออก","สงสัย coat บางเกินไป; เพิ่ม coating weight gain เพื่อให้ acid resistance สูงขึ้น","สงสัย API particle size ใหญ่; micronize API แล้วทำ dissolution เฉพาะ core","สงสัย assay ต่ำ; เพิ่ม sample size ของ assay โดยไม่ทบทวน coating process"],
+    rationale:"ข้อมูลแยกสาเหตุได้ค่อนข้างชัด: core ละลายดี, acid resistance ผ่าน, coat thickness อยู่ใน target และไม่มี crack แต่ buffer release ช้าเฉพาะหลังมี curing time นานกว่าช่วง validated. Over-curing สามารถเพิ่ม polymer coalescence/ลด permeability และชะลอการเปิดของ enteric film จึงควรยืนยันด้วย study ที่เปรียบเทียบ curing time กับ dissolution/film properties.",
+    traps:["Core Q30 96% ทำให้ disintegrant ต่ำไม่ใช่สมมติฐานแรก","Acid stage ผ่านอยู่แล้ว; เพิ่ม coat อาจยิ่งชะลอ buffer release","Micronization ไม่อธิบายความต่างก่อน/หลัง coating เมื่อ core ผ่านดี","Assay ไม่ได้ตอบ mechanism ของ delayed buffer release และไม่ใช่ root-cause test"],
     difficulty:"hard",
-    ref:"Aulton’s Pharmaceutics; USP delayed-release performance testing"
-  },
+    ref:"Aulton’s Pharmaceutics; enteric coating process-development principles; USP delayed-release performance concepts"
+  }
   {
     topic:"Preformulation / DSC",
     prompt:"ต้องการศึกษาว่า API เกิดการเปลี่ยนแปลงทางความร้อนหรือมี drug–excipient interaction ที่สะท้อนจาก melting endotherm เครื่องมือใดเหมาะสมที่สุด?",
@@ -125,32 +125,32 @@ const D: Draft[] = [
   },
   {
     topic:"Chromatographic resolution",
-    prompt:"HPLC ให้ Peak 1: tR 5.2 min, baseline width 0.40 min และ Peak 2: tR 5.8 min, baseline width 0.42 min. ค่า resolution (Rs) โดยประมาณเท่าใด?",
-    options:["1.46","0.73","1.02","2.93","3.66"],
-    rationale:"ใช้ Rs = 2(tR2−tR1)/(W1+W2) = 2(0.6)/(0.40+0.42) = 1.2/0.82 ≈ 1.46.",
-    traps:["0.73 เกิดจากลืม factor 2","1.02 ไม่ตรงสูตร baseline-width resolution","2.93 ใกล้ค่าที่เกิดจากใช้ denominator ผิดครึ่งหนึ่ง","3.66 ไม่สอดคล้องกับ peak spacing/width ที่ให้"],
+    prompt:"Critical pair ใน HPLC ให้ tR1 = 7.40 min, W1 = 0.44 min และ tR2 = 8.06 min, W2 = 0.47 min. Method specification กำหนด Rs ≥1.50. หากผลอื่นของ system suitability ผ่านทั้งหมด ข้อใดเป็นข้อสรุปและแนวทางปรับ method ที่เหมาะสมที่สุด?",
+    options:["Rs ≈1.45 จึงไม่ผ่านแบบ marginal; ควรปรับ selectivity เช่น mobile-phase composition/pH ก่อนพิจารณาเพิ่ม run time อย่างเดียว","Rs ≈1.50 จึงผ่านพอดีและไม่ต้องประเมิน robustness","Rs ≈2.90 จึงผ่านมาก สามารถเพิ่ม injection volume เพื่อเพิ่ม sensitivity","Rs ≈1.45 แต่ถือว่าผ่านได้เพราะ peak area ของ API มากกว่า impurity","Rs ≈0.73 และควรลด flow rateลงครึ่งหนึ่งซึ่งรับประกันว่า Rs จะเพิ่มเป็นสองเท่า"],
+    rationale:"Rs = 2(8.06−7.40)/(0.44+0.47) = 1.32/0.91 ≈1.45 จึงต่ำกว่าเกณฑ์ 1.50 แม้เพียงเล็กน้อย. การเพิ่ม selectivity (α) ผ่าน pH/organic composition/chemistry มักมี leverage ต่อ resolution มากกว่าการยืด retention timeอย่างเดียว และต้องยืนยัน robustness.",
+    traps:["คำนวณคลาดเคลื่อนและไม่ควรถือ thresholdแบบปัดขึ้นโดยไม่มีหลัก","Rs ไม่ได้เท่ากับ 2.90; injection volumeสูงยังอาจทำให้ peak broadening/overload","Peak areaไม่ใช่เกณฑ์ทดแทน chromatographic resolution","0.73เกิดจากลืม factor 2 และการลด flow rateไม่ได้ทำให้ Rs เพิ่มเป็นสองเท่าโดยอัตโนมัติ"],
     difficulty:"hard",
-    ref:"USP <621> Chromatography",
-    calc:["ΔtR = 5.8 − 5.2 = 0.6 min","W1 + W2 = 0.40 + 0.42 = 0.82 min","Rs = 2(0.6)/0.82 ≈ 1.46"]
-  },
+    ref:"USP <621> Chromatography; chromatographic method-development principles",
+    calc:["ΔtR = 8.06 − 7.40 = 0.66 min","W1 + W2 = 0.44 + 0.47 = 0.91 min","Rs = 2(0.66)/0.91 ≈ 1.45","เทียบเกณฑ์: 1.45 < 1.50 → fail marginally"]
+  }
   {
     topic:"HPLC peak tailing",
-    prompt:"วิเคราะห์ weakly basic API ด้วย silica-based C18 column พบ peak tailing เด่น ทั้งที่ detector และ injection volume ปกติ สาเหตุใดมีความเป็นไปได้มากที่สุด?",
-    options:["Secondary interaction ระหว่าง basic analyte กับ residual silanol groups","UV wavelength อยู่ใกล้ λmax","Flow rate ต่ำทำให้ detector non-linear","Organic solvent ทำลาย chromophore ของ API","Injection volume ต่ำทำให้ overload"],
-    rationale:"Residual silanol sites บน silica สามารถเกิด secondary ionic interaction กับ protonated basic analytes ทำให้ retention ไม่เป็นเนื้อเดียวและเกิด tailing.",
-    traps:["การวัดใกล้ λmax เพิ่ม sensitivity ไม่ใช่สาเหตุจำเพาะของ tailing","Flow rate ต่ำไม่ทำให้ detector non-linear โดยอัตโนมัติ","Organic solvent ไม่ได้ทำลาย chromophoreเป็นคำอธิบายทั่วไป","Overload มักสัมพันธ์กับ sample mass/volume สูง ไม่ใช่ต่ำ"],
+    prompt:"Weakly basic API (pKa 8.3) วิเคราะห์ด้วย silica-based C18. ที่ mobile-phase pH 6.8 พบ tailing factor 2.4; เมื่อปรับ pH เป็น 3.0 โดยคง organic ratio ใกล้เดิม tailing factor ลดเป็น 1.2 และ efficiency ดีขึ้น. ข้อใดอธิบายผลนี้ได้เหมาะสมที่สุด?",
+    options:["ที่ pH ต่ำ residual silanol บน silica ถูก ionize น้อยลง จึงลด secondary ionic interaction กับ basic analyte","ที่ pH ต่ำ API กลายเป็น unionized มากขึ้นจึงไม่เกิด tailing","ที่ pH ต่ำ C18 ligand เปลี่ยนเป็น charged stationary phase ทำให้ peak symmetric","ที่ pH ต่ำ UV detector มี selectivity สูงขึ้นจึงลด peak tailing","ที่ pH ต่ำ viscosity ลดลงเสมอจึงทำให้ silanol interaction หายไป"],
+    rationale:"Basic analytes มัก tail จาก secondary interaction กับ deprotonated residual silanol sites. การลด pH suppress silanol ionization จึงลด ionic interaction แม้ API จะ protonated มากขึ้นก็ตาม. นี่เป็นเหตุผลเชิง surface chemistry ไม่ใช่ detector effect.",
+    traps:["Weak base ที่ pH 3 จะ protonated มากขึ้น ไม่ใช่ unionized มากขึ้น","C18 ligandไม่ได้เปลี่ยนเป็น charged phaseเพียงเพราะ pHต่ำ","Detector ไม่ได้เปลี่ยน chromatographic peak shape ที่เกิดจาก column interaction","Viscosityอาจเปลี่ยนตาม solvent composition/temperature แต่ไม่ใช่คำอธิบายจำเพาะของ silanol suppression"],
     difficulty:"hard",
-    ref:"USP <621>; HPLC method-development principles"
-  },
+    ref:"USP <621>; silica-based RP-HPLC selectivity and silanol-interaction principles"
+  }
   {
     topic:"Stability-indicating HPLC",
-    prompt:"Forced degradation ภายใต้ oxidative condition เกิด impurity peak ใกล้ API และ PDA รายงานว่า API peak purity fail ข้อสรุปใดเหมาะสมที่สุด?",
-    options:["วิธีอาจยังไม่มี specificity เพียงพอ เพราะอาจมี co-elution ของ degradation product","วิธีผ่าน specificity แล้วเพราะ retention time API คงเดิม","ใช้วิธีต่อได้ถ้า assay API ยังมากกว่า 90%","ตัด impurity peak ออกจากการประเมินได้ถ้า area ต่ำ","เพิ่มความเข้มข้น standard เพื่อแก้ peak purity"],
-    rationale:"Peak purity fail เป็นสัญญาณว่าภายใน API peak อาจมี spectral heterogeneity/co-elution จึงยังไม่ควรสรุปว่า method เป็น stability-indicating จนกว่าจะแยก/พิสูจน์ specificity ได้.",
-    traps:["Retention time คงเดิมไม่พิสูจน์ว่าไม่มี co-elution","Assay recovery ไม่ทดแทน specificity","Area ต่ำก็ยังรบกวน critical peak ได้","เพิ่ม standard concentration ไม่แก้ separation/selectivity"],
+    prompt:"Forced degradation ของ Drug X ให้ผล: unstressed assay 99.4%; acid stress assay 87.0% และมี degradant D = 11.8%. D elutes ที่ shoulder ของ API. PDA รายงาน peak purity 'pass' แต่ D และ API มี UV spectra คล้ายกันมาก. ข้อใดเป็นข้อสรุปที่เหมาะสมที่สุดก่อนประกาศว่าวิธีเป็น stability-indicating?",
+    options:["ยังสรุปไม่ได้; ต้องยืนยัน separation/selectivity เพิ่มด้วยการปรับ chromatographic conditions หรือ orthogonal evidence เพราะ PDA peak-purity อาจพลาด co-elution ของสาร spectra คล้ายกัน","ถือว่าผ่าน specificity แล้วเพราะ PDA peak purity pass เป็นหลักฐานเด็ดขาด","ถือว่าผ่านเพราะ mass balance 98.8% ใกล้ 100% แม้ critical pair ยังเป็น shoulder","ลด acid stress จน degradant ต่ำกว่า 5% แล้วถือว่า specificity ผ่านโดยไม่ต้องเปลี่ยน method","ใช้ area normalization ของ API+D เป็น 100% แล้วไม่ต้องแยก D ออกจาก API"],
+    rationale:"Peak-purity tools มีข้อจำกัด โดยเฉพาะเมื่อ co-eluting species มี spectra คล้ายกัน. Shoulder ของ known degradant ที่ critical API peak ทำให้ต้องมีหลักฐานเพิ่มว่า method แยก analyte จาก degradants ได้จริง; mass balanceดีไม่ได้พิสูจน์ specificity.",
+    traps:["PDA passไม่ใช่หลักฐานเด็ดขาดเมื่อ spectra คล้ายและมี chromatographic shoulder","Mass balanceสนับสนุน degradation accounting แต่ไม่ยืนยัน resolution/selectivity","ลด stressเพียงเพื่อทำให้ impurityน้อยลงไม่แก้ข้อจำกัด method","Area normalizationไม่แทน chromatographic separationของ critical impurity"],
     difficulty:"hard",
-    ref:"ICH Q2(R2); ICH Q14; stability-indicating method principles"
-  },
+    ref:"ICH Q2(R2); ICH Q14; stability-indicating method-development principles"
+  }
   {
     topic:"Gradient HPLC",
     prompt:"ตัวอย่างมี impurities ตั้งแต่ polar มากจนถึง hydrophobic มาก. Isocratic RP-HPLC ทำให้ early peaks ออกใกล้ solvent front แต่ hydrophobic impurity ออกหลัง 35 นาทีและ peak กว้าง วิธีใดเหมาะสมที่สุด?",
@@ -280,14 +280,14 @@ const D: Draft[] = [
   },
   {
     topic:"Stability kinetics",
-    prompt:"ตัวยาเริ่มต้น 100% หลังเก็บ 12 เดือนเหลือ 94%. หาก degradation เป็น first-order และอัตราคงที่ ค่า t90 โดยประมาณเท่าใด?",
-    options:["20 เดือน","12 เดือน","16 เดือน","24 เดือน","30 เดือน"],
-    rationale:"k = −ln(0.94)/12 ≈ 0.00516 month⁻¹ และ t90 = −ln(0.90)/k ≈ 20.4 เดือน.",
-    traps:["12 เดือนคือเวลาที่วัด 94% ไม่ใช่ t90","16 เดือนได้จากการประมาณเชิงเส้นที่ไม่ตรง first-order","24 เดือนไม่ตรงสมการ exponential","30 เดือนสูงเกินจาก k ที่คำนวณได้"],
+    prompt:"ผลิตภัณฑ์มี labeled claim 100 mg/tablet แต่ initial assay = 102.0% label claim. หลัง 12 เดือน assay = 95.0% label claim. สมมติ first-order degradation และไม่มี assay bias. หาก specification shelf life คือ assay ≥90.0% label claim ค่าเวลาที่คาดว่าจะถึง 90.0% ใกล้เคียงข้อใดที่สุด?",
+    options:["ประมาณ 21 เดือน","ประมาณ 17 เดือน","ประมาณ 24 เดือน","ประมาณ 30 เดือน","ประมาณ 12 เดือน เพราะ assay ลด 7% ใน 12 เดือน"],
+    rationale:"First-order ต้องใช้สัดส่วน concentration จริง: k = ln(102/95)/12 ≈0.00592 month⁻¹. เวลาจาก initial 102% ไปถึง 90% คือ ln(102/90)/k ≈21.1 เดือน. จุดหลอกคือ t90 ที่นี่อิง specification 90% label claim ไม่ใช่ 90% ของ initial assay.",
+    traps:["17 เดือนได้จากการตีความ 90% ของ initialหรือประมาณเชิงเส้นบางแบบ","24 เดือนไม่ตรง exponential fit จากข้อมูลสองจุด","30 เดือนสูงเกินจาก estimated k","ใช้การลดแบบ linear 7%/12เดือนขัดกับ assumption first-order"],
     difficulty:"hard",
     ref:"ICH Q1A(R2) concepts; pharmaceutical stability kinetics",
-    calc:["k = −ln(0.94)/12 ≈ 0.00516 month⁻¹","t90 = −ln(0.90)/0.00516","t90 ≈ 20.4 months"]
-  },
+    calc:["k = ln(102/95) / 12 ≈ 0.00592 month⁻¹","t = ln(102/90) / 0.00592","t ≈ 21.1 months"]
+  }
   {
     topic:"Forced degradation",
     prompt:"วัตถุประสงค์สำคัญของ forced degradation ในการพัฒนา analytical method คือข้อใด?",
@@ -317,13 +317,13 @@ const D: Draft[] = [
   },
   {
     topic:"OOS reinjection",
-    prompt:"ตัวอย่าง OOS ได้ assay 92.0% แต่ reinjection จาก vial เดิมได้ 99.1%. System suitability ผ่านทั้งสองครั้ง การดำเนินการใดเหมาะสมที่สุด?",
-    options:["Investigate ต่อและไม่ invalidate 92.0% จนกว่าจะมีหลักฐาน assignable cause","ใช้ 99.1% เป็น final resultทันทีเพราะ reinjectionผ่าน","เฉลี่ย 92.0 และ 99.1%","เตรียมใหม่หลายครั้งจนค่าเฉลี่ยผ่าน","สรุปว่า instrument malfunction โดยอัตโนมัติ"],
-    rationale:"Passing reinjection บอกเพียงว่าผลสามารถต่างกันได้ แต่ยังไม่พิสูจน์สาเหตุของผลเดิม ต้องสืบสวน injection event, vial integrity, preparation, instrument logs และกำหนด scientifically justified disposition.",
-    traps:["ผลใหม่ไม่ invalidate ผลเดิมโดยอัตโนมัติ","การเฉลี่ย OOS กับ passing resultเพื่อ compliance ไม่ถูกหลัก","Resampling/retestingต้องถูกกำหนดใน investigation plan ไม่ใช่ทำจนผ่าน","Instrument malfunction ต้องมี objective evidence"],
+    prompt:"Assay sample preparation เดียวกันให้ injection แรก 92.0% (OOS). Reinjection จาก vial เดิมได้ 99.1%. System suitability ผ่านทั้งสองครั้ง. Audit trail ไม่พบ aborted run, detector error หรือ autosampler alarm; chromatograms ไม่มี integration anomaly. ขั้นตอนใดเหมาะสมที่สุดตามหลัก OOS?",
+    options:["คงผล 92.0% ไว้ใน investigation และดำเนิน laboratory investigation/Phase II ตาม SOP; reinjection ที่ผ่านเพียงอย่างเดียวยังไม่เป็น assignable cause","invalidate 92.0% เพราะ reinjection จาก vialเดียวกันพิสูจน์ว่า instrument ผิดพลาด","เฉลี่ย 92.0% กับ 99.1% แล้วใช้ mean เป็น reportable result","เตรียมตัวอย่างใหม่อย่างน้อย 6 ชุดและใช้ค่าเฉลี่ยหากผ่านโดยไม่ต้องอธิบายผลเดิม","เลือก 99.1% เป็นผลสุดท้ายเพราะ system suitability ผ่านและใกล้ historical mean"],
+    rationale:"เมื่อไม่มี objective evidence ของ assignable laboratory error ผล reinjection ที่ผ่านไม่ลบ OOS เดิม. ต้องสืบสวนอย่างเป็นระบบและหาก Phase I ไม่พบสาเหตุ อาจขยายไป manufacturing/Phase II ตาม SOP โดย retesting plan ต้อง pre-defined/scientifically justified.",
+    traps:["Passing reinjectionไม่พิสูจน์ instrument errorเมื่อไม่มี supporting evidence","การเฉลี่ยผล OOSกับ passing resultเพื่อให้ผ่านไม่ถูกหลัก","Retestจำนวนมากโดยไม่มี protocolเป็น testing into compliance","Historical meanไม่ใช่เหตุผล invalidate valid OOS result"],
     difficulty:"hard",
-    ref:"FDA OOS Guidance; GMP data integrity principles"
-  },
+    ref:"FDA Guidance for Industry: Investigating OOS Test Results for Pharmaceutical Production; GMP data-integrity principles"
+  }
   {
     topic:"CAPA",
     prompt:"ข้อใดเป็นตัวอย่างของ Corrective Action มากที่สุด?",
@@ -443,41 +443,40 @@ const D: Draft[] = [
   },
   {
     topic:"Root cause / CAPA",
-    prompt:"Deviation เกิด tablet weight ต่ำเป็นช่วง ๆ เฉพาะหลัง hopper level ลดต่ำกว่า 20%. Operator training, balance calibration และ raw-material assay ปกติ. Historian พบ feeder speed oscillationเมื่อ hopper ต่ำ. CAPA ใดมีเหตุผลเชิง root cause มากที่สุด?",
-    options:["กำหนด/ควบคุม minimum hopper level และแก้ feeder control พร้อม verify effectiveness","อบรม operator ซ้ำทุกคนแม้ไม่พบ human error","เพิ่ม finished-product sampling อย่างเดียว","เปลี่ยน API supplier โดยไม่พบ material trend","ปรับ specification ของ tablet weight ให้กว้างขึ้น"],
-    rationale:"หลักฐานเชื่อม failure กับ process condition (low hopper level → feeder oscillation → underfill) จึงควร corrective action ที่กำจัดสาเหตุเครื่อง/process และกำหนด control limit พร้อม effectiveness check.",
-    traps:["Trainingเป็น CAPAได้เมื่อ root causeเกี่ยวกับ knowledge/behavior แต่ข้อมูลนี้ไม่สนับสนุน","Samplingมากขึ้นตรวจพบปัญหาได้แต่ไม่กำจัดสาเหตุ","ไม่มีหลักฐาน supplierเป็นสาเหตุ","ขยาย specเพื่อให้ผ่านคือการหลบปัญหา ไม่ใช่ corrective action"],
+    prompt:"Tablet press เกิด weight excursion เฉพาะช่วงท้าย batch. Data review พบ: hopper level <18% เกิด feeder torque oscillation; weight CV เพิ่มจาก 1.1% เป็น 4.8%; เมื่อ operator เติม blend ให้ hopper >30% ค่า CV กลับปกติภายใน 2 นาที. Raw-material PSD, blend assay, balance calibration และ compression force อยู่ใน trend. CAPA package ใดตอบ root cause และ effectiveness verification ได้ดีที่สุด?",
+    options:["ตั้ง validated minimum hopper-level control/interlock ร่วมกับแก้ feeder-control logic แล้วติดตาม weight-CV trendหลาย batchesเพื่อยืนยัน effectiveness","เพิ่ม end-product sampling เป็นสองเท่าและอบรม operatorให้เฝ้าดูหน้าจอ","ลด tablet-weight specification ให้กว้างขึ้นและเพิ่ม reconciliation","เปลี่ยน excipient supplierพร้อมทำ incoming testเพิ่ม แม้ material trendปกติ","เพิ่ม compression forceช่วงท้าย batchเพื่อชดเชย underfill"],
+    rationale:"ข้อมูลแสดง causal chain ที่ทำซ้ำได้ระหว่าง low hopper level → feeder instability → weight variability และ reversal หลังเติม hopper. CAPA ที่ดีต้องกำจัด/ควบคุมสาเหตุเชิง process และมี effectiveness check จาก process metric ที่สัมพันธ์โดยตรง ไม่ใช่เพียงเพิ่ม detection.",
+    traps:["Sampling/trainingเพิ่ม detectionแต่ไม่แก้ feeder/hopper mechanism","การขยาย specเป็นการยอมรับปัญหา ไม่ใช่แก้สาเหตุ","ไม่มี evidence ชี้ supplierและจะสร้าง uncontrolled changeใหม่","Compression forceมีผลต่อ compact properties ไม่แก้ die-fill mass variabilityจาก feeder"],
     difficulty:"hard",
-    ref:"ICH Q9(R1); ICH Q10; GMP deviation/CAPA principles"
-  },
+    ref:"ICH Q9(R1); ICH Q10; FDA Process Validation lifecycle principles"
+  }
   {
     topic:"Quality risk management / FMEA",
-    prompt:"ในการทำ FMEA ทีมให้คะแนน Severity=9, Occurrence=4, Detectability=3. หากใช้ RPN = S×O×D ค่า RPN เท่าใด และการตีความใดเหมาะสมที่สุด?",
-    options:["108; ใช้เป็นเครื่องมือจัดลำดับความเสี่ยงร่วมกับบริบท ไม่ควรใช้ threshold แบบกลไกเพียงอย่างเดียว","16; ค่าไม่สูงจึงปิด risk ได้ทันที","27; severityสูงแต่ occurrenceต่ำจึงไม่ต้องควบคุม","36; detectabilityต่ำแปลว่าตรวจได้ยากที่สุด","108; ค่าเดียวเพียงพอที่จะตัดสินใจ release batch"],
-    rationale:"RPN=9×4×3=108. ICH Q9(R1) เน้นว่า risk scoring tools สนับสนุนการตัดสินใจ แต่ไม่ควรแทน scientific judgment; high severity อาจต้อง attention แม้ RPNไม่สูงสุด.",
-    traps:["คำนวณผิดและสรุปเร็วเกิน","คำนวณผิด; severityสูงยังต้องพิจารณา","คำนวณผิดและความหมาย detectabilityขึ้นกับ scoring conventionที่กำหนด","RPNไม่ใช่ release criterion โดยอัตโนมัติ"],
+    prompt:"FMEA มี 2 failure modes: A = cross-contamination ของ highly potent API (S=10,O=2,D=2) และ B = cosmetic tablet mottling (S=4,O=5,D=2). ทั้งสองมี RPN=40. ข้อใดเป็นการตีความที่เหมาะสมที่สุดตามหลัก Quality Risk Management?",
+    options:["ไม่ควรถือว่าความเสี่ยงเท่ากันเพียงเพราะ RPN เท่ากัน; failure mode A ควรได้รับ attention สูงจาก severity/ผลต่อผู้ป่วยและต้องพิจารณาร่วมกับ controls/uncertainty","ความเสี่ยงเท่ากันทุกประการเพราะ RPN เท่ากับ 40 เหมือนกัน","ควรจัดการ B ก่อนเสมอเพราะ occurrence สูงกว่า A","ควรจัดการ A และ B เหมือนกันโดยใช้ CAPA แบบเดียวกันเพื่อความสม่ำเสมอ","RPN ต่ำกว่า 100 หมายความว่าปิด risk ได้ทั้งสองโดยไม่ต้อง mitigation"],
+    rationale:"ICH Q9(R1) เตือนข้อจำกัดของ scoring/RPN: ผลคูณเดียวกันอาจซ่อน profile ที่ต่างกันมาก. Severity สูงมาก โดยเฉพาะ patient-safety/cross-contamination ต้องได้รับการพิจารณาเด่น แม้ occurrence ต่ำและ RPNเท่ากับเหตุการณ์เชิง cosmetic.",
+    traps:["RPNเท่ากันไม่ได้แปล risk profileเท่ากัน","Occurrenceสูงอย่างเดียวไม่ชนะ severityสูงเสมอ","Mitigationต้อง risk-specific ไม่ใช่ one-size-fits-all","ไม่มี universal RPN cutoffที่ใช้ปิด riskโดยอัตโนมัติ"],
     difficulty:"hard",
-    ref:"ICH Q9(R1) Quality Risk Management",
-    calc:["RPN = Severity × Occurrence × Detectability","9 × 4 × 3 = 108","พิจารณา score ร่วมกับ severity, uncertainty และ control strategy"]
-  },
+    ref:"ICH Q9(R1) Quality Risk Management"
+  }
   {
     topic:"Blend uniformity / segregation",
-    prompt:"Blend uniformity หลัง blender ผ่านทุกตำแหน่ง แต่ tablet content uniformity เริ่ม fail เฉพาะปลาย batch ขณะที่ tablet weight ยังผ่าน สาเหตุใดควรสงสัยมากที่สุด?",
-    options:["Segregation ระหว่าง transfer/feed ทำให้ API distribution เปลี่ยนแม้น้ำหนักเม็ดยาคงที่","Assay method มี bias คงที่ทั้ง batch","Compression forceสูงทำให้ API สลายตัวเฉพาะปลาย batch","Lubricantทำให้ tablet weightต่ำทุกเม็ด","Coating weight gainไม่สม่ำเสมอแม้เป็น uncoated core"],
-    rationale:"Blend ตอนจบ blenderสม่ำเสมอแต่ CU เสียเฉพาะปลาย run และ weightปกติ ชี้ dynamic segregation ระหว่าง discharge/transport/hopper เช่น size/density differences มากกว่าปัญหา die fill.",
-    traps:["Analytical biasคงที่ควรกระทบทุกช่วง ไม่เฉพาะปลาย batch","Compression forceไม่ควรเปลี่ยน API amount per tabletโดยตรงและต้องมี degradation evidence","ถ้า weightต่ำทุกเม็ดจะเห็น weight variation/mean shift","Coatingไม่เกี่ยวหากทดสอบ core/uncoated stage"],
+    prompt:"Low-dose direct-compression tablet: blend uniformity ที่ blender discharge ผ่าน (RSD 2.1%). ระหว่าง compression tablet weight RSD คงที่ 1.2% แต่ content uniformity ของ 20 เม็ดช่วงต้นผ่านและ 20 เม็ดท้าย batch มีแนวโน้มต่ำลงต่อเนื่อง. API d50 = 18 µm, major diluent d50 = 160 µm และมี pneumatic transfer ก่อนเข้า hopper. การศึกษาต่อใดแยก 'segregation ระหว่าง transfer/feed' ออกจาก 'analytical variability' ได้ดีที่สุด?",
+    options:["ทำ stratified sampling ตามตำแหน่ง/เวลา ณ transfer line-hopper-tablet sequence แล้ววิเคราะห์ API concentration พร้อม particle-size/segregation mapping","ทำ assay composite sample ของทั้ง batchเพิ่มอีก 3 ครั้ง","เพิ่มจำนวน replicate injectionsจาก tablet ปลาย batchโดยไม่เก็บ sampleตามตำแหน่ง","วัด tablet hardnessต้นและปลาย batchเท่านั้น","ทำ dissolution ของ composite sampleโดยไม่แยกช่วงเวลา"],
+    rationale:"Hypothesis คือ spatial/temporal segregation หลัง blender. ต้องออกแบบ sampling ที่รักษาข้อมูลตำแหน่งและเวลาเพื่อดู concentration gradient และเชื่อมกับ particle-size difference/transfer step; composite assayหรือ replicate analytical injectionsจะลบข้อมูล segregation pattern.",
+    traps:["Composite assayเฉลี่ยสัญญาณและอาจซ่อน gradient","Replicate injectionช่วยประเมิน analytical precisionแต่ไม่บอกว่าความเข้มข้นเปลี่ยนตาม process locationหรือไม่","Hardnessไม่วัด API distribution","Composite dissolutionไม่แยก process segregationจาก analytical variability"],
     difficulty:"hard",
-    ref:"FDA blend/content uniformity principles; ICH Q8 process understanding"
-  },
+    ref:"ICH Q8(R2); process-understanding and stratified content-uniformity principles"
+  }
   {
     topic:"OOT vs OOS / continued verification",
-    prompt:"Assay specification 95–105%. ผล 10 batches ล่าสุดคือ 100.2, 100.1, 99.9, 99.7, 99.5, 99.2, 98.9, 98.6, 98.3, 98.0% ทุก batch ยังอยู่ใน spec. การดำเนินการใดเหมาะสมที่สุด?",
-    options:["ถือเป็น adverse trend/OOT signal ที่ควร trend-investigate ก่อนกลายเป็น OOS","ไม่ต้องทำอะไรจนกว่าจะต่ำกว่า 95%","รีลีสไม่ได้ทุก batch เพราะแนวโน้มลดลง","เฉลี่ยทั้งหมดแล้วใช้ค่าเฉลี่ยแทนผลแต่ละ batch","ปรับ specificationลงเป็น 90–105% เพื่อรองรับ trend"],
-    rationale:"ทุกผลยัง within specification แต่มี monotonic downward trend ซึ่งเป็นสัญญาณ process drift. Continued process verification/trending ควรตรวจสอบก่อนเกิด failureจริง.",
-    traps:["การรอ OOSทำให้เสียโอกาส proactive control","Trendอย่างเดียวไม่ได้ทำให้ทุก batch unreleasableโดยอัตโนมัติ ต้องประเมินคุณภาพและสาเหตุ","ห้ามใช้ค่าเฉลี่ยข้าม batchแทน individual release data","เปลี่ยน specเพื่อรองรับ driftโดยไม่มี scientific/regulatory basisไม่ถูกต้อง"],
+    prompt:"Assay specification 95–105%. 12 batches ล่าสุดยังผ่านทั้งหมด แต่ค่าเฉลี่ยลดจากประมาณ 100.1% เหลือ 97.9% อย่างต่อเนื่อง. จุดเปลี่ยนเริ่มพร้อมกันกับ (1) การเปลี่ยน reference-standard lot และ (2) การเพิ่ม granulation endpoint time 15%. ไม่มี deviation เปิดอยู่. การดำเนินการใดเหมาะสมที่สุดเป็นลำดับแรก?",
+    options:["เปิด trend/OOT investigation และแยกประเมิน analytical shift จาก reference-standard change กับ process driftจาก granulation change โดยใช้ retained samples/bridging data และ process trends","สรุปทันทีว่าเป็น process drift เพราะ granulation time เปลี่ยน","สรุปทันทีว่าเป็น analytical bias เพราะ reference standard เปลี่ยน","ไม่ต้อง investigate จนกว่าจะมี OOS ต่ำกว่า 95%","หยุด release ทุก batchย้อนหลังทั้งหมดโดยไม่ประเมิน individual batch quality"],
+    rationale:"มีสอง contemporaneous changes ที่ต่างสามารถสร้าง apparent trend ได้. Scientific investigation ต้อง discriminate analytical system shift ออกจาก true process drift โดย bridging/retained-sample reanalysisที่มี justificationและ process data ไม่ควรเลือกสาเหตุจากเวลาเกิดร่วมกันเพียงอย่างเดียว.",
+    traps:["Temporal associationกับ process changeยังไม่พิสูจน์ causationเมื่อ analytical changeเกิดพร้อมกัน","Reference-standard changeเป็น plausible causeแต่ยังต้องยืนยันด้วย bridging/traceability","การรอ OOSขัดกับ proactive continued process verification","Trend signalไม่ทำให้ทุก released/within-spec batch invalidโดยอัตโนมัติ"],
     difficulty:"hard",
-    ref:"ICH Q10; FDA Process Validation lifecycle / continued process verification"
-  },
+    ref:"ICH Q10; FDA Process Validation lifecycle; GMP OOT/trending and laboratory-control principles"
+  }
 ];
 
 function buildQuestion(d: Draft, index: number): McqQuestion {
