@@ -5,6 +5,7 @@ import { auth } from "@/lib/auth";
 import { gateQuestionsForSession } from "@/lib/credits-gate";
 import { getPlayAllowance } from "@/lib/play-limit";
 import McqPractice from "@/components/McqPractice";
+import { IP1_PILOT_050 } from "@/lib/ip1-pilot-050";
 import { Badge } from "@/components/ui/badge";
 import GoodyEmbed from "@/components/GoodyEmbed";
 import Link from "next/link";
@@ -37,8 +38,10 @@ async function PracticeContent({
     }),
   ]);
 
+  const selectedQuestions = track === "ip1" ? IP1_PILOT_050 : rawQuestions;
+
   const [{ questions, creditBalance }, playAllowance] = await Promise.all([
-    gateQuestionsForSession(session, rawQuestions),
+    gateQuestionsForSession(session, selectedQuestions),
     getPlayAllowance(session),
   ]);
 
@@ -64,8 +67,8 @@ async function PracticeContent({
           {track === "ip1" && (
             <div>
               <div className="flex items-center gap-2 text-xl font-bold"><Factory className="h-6 w-6 text-amber-500" /> IP1 — เภสัชกรรมอุตสาหการ</div>
-              <p className="mt-2 text-sm text-muted-foreground">Industrial Pharmacy · 120 ข้อ</p>
-              <Link href="/sets?exam=PLE-IP1" className="mt-5 inline-flex rounded-xl bg-brand px-5 py-3 text-sm font-bold text-white">ดูชุดข้อสอบ IP1 →</Link>
+              <p className="mt-2 text-sm text-muted-foreground">Industrial Pharmacy · Mock Set 1 จำนวน 50 ข้อ · Easy / Medium / Hard</p>
+              <p className="mt-1 text-xs text-muted-foreground">Formulation · Manufacturing · Chromatography · Stability · Sterile · QA/QC · GMP · Validation</p>
             </div>
           )}
           {track === "phcp1" && (
@@ -75,6 +78,15 @@ async function PracticeContent({
               <Link href="/sets?exam=PLE-PHCP1" className="mt-5 inline-flex rounded-xl bg-brand px-5 py-3 text-sm font-bold text-white">ดูชุดข้อสอบ PHCP1 →</Link>
             </div>
           )}
+        </div>
+      )}
+      {track === "ip1" && (
+        <div className="mt-6">
+          <McqPractice
+            questions={questions}
+            initialCreditBalance={creditBalance}
+            playAllowance={playAllowance}
+          />
         </div>
       )}
       {track === "cc1" && (
