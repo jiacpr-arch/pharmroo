@@ -1170,7 +1170,7 @@ function buildQuestion(d: Draft, index: number): McqQuestion {
       name_th: "เภสัชกรรมอุตสาหการ IP1",
       icon: "🏭",
       exam_type: "PLE-CC1",
-      question_count: 50,
+      question_count: 100,
       created_at: "2026-09-22 16:00:00",
     },
   };
