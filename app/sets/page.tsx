@@ -35,11 +35,12 @@ function isNursingExamType(examType: string | null | undefined): boolean {
   return examType === "NLE";
 }
 
-async function SetsContent() {
+async function SetsContent({ exam }: { exam?: string }) {
   const session = await auth();
   const userId = (session?.user as { id?: string } | undefined)?.id;
 
-  const sets = await getQuestionSets(userId);
+  const allSets = await getQuestionSets(userId);
+  const sets = exam ? allSets.filter((s) => s.exam_type === exam) : allSets;
 
   const bundles = sets.filter((s) => s.is_bundle);
   const singles = sets.filter((s) => !s.is_bundle);
@@ -108,7 +109,7 @@ async function SetsContent() {
       {sets.length === 0 && (
         <div className="text-center py-16 text-muted-foreground">
           <Package className="h-12 w-12 mx-auto mb-4 opacity-30" />
-          <p>กำลังเตรียมชุดข้อสอบ — เร็วๆ นี้</p>
+          <p>{exam && EXAM_TYPE_LABEL[exam] ? `กำลังเตรียมชุดข้อสอบ ${EXAM_TYPE_LABEL[exam]} — เร็วๆ นี้` : "กำลังเตรียมชุดข้อสอบ — เร็วๆ นี้"}</p>
         </div>
       )}
 
@@ -225,11 +226,12 @@ function SetCard({ set }: { set: QuestionSet }) {
   );
 }
 
-export default function SetsPage() {
+export default async function SetsPage({ searchParams }: { searchParams: Promise<{ exam?: string }> }) {
+  const { exam } = await searchParams;
   return (
     <div className="mx-auto max-w-5xl px-4 py-8 sm:px-6">
       <div className="mb-8">
-        <h1 className="text-3xl font-bold">ชุดข้อสอบ PLE และ NLE</h1>
+        <h1 className="text-3xl font-bold">{exam && EXAM_TYPE_LABEL[exam] ? `ชุดข้อสอบ ${EXAM_TYPE_LABEL[exam]}` : "ชุดข้อสอบ PLE และ NLE"}</h1>
         <p className="text-muted-foreground mt-2">
           ซื้อครั้งเดียว เข้าถึงได้ตลอด — เหมาะกับทั้งสายเภสัชและพยาบาล
         </p>
@@ -237,7 +239,7 @@ export default function SetsPage() {
       <Suspense
         fallback={<div className="text-center py-8">กำลังโหลด...</div>}
       >
-        <SetsContent />
+        <SetsContent exam={exam} />
       </Suspense>
     </div>
   );
