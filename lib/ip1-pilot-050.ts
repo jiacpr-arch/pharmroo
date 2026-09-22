@@ -1142,7 +1142,7 @@ const D3: Draft[] = [
     prompt:"Paddle methodพบ coningของdense particlesใต้shaftและQต่ำ. เพิ่มrpmจาก50เป็น75ทำให้Qผ่านแต่method monographกำหนด50rpm. ขั้นตอนที่เหมาะสมที่สุดคืออะไร?",
     options:["Investigate hydrodynamic artifactและformulation behaviorภายใต้official condition; ห้ามปรับrpmเพื่อให้ผ่านโดยไม่มีmethod change justification","รายงาน75rpmเป็นผลofficialเพราะผ่าน","ใช้ค่าเฉลี่ย50และ75rpm","เพิ่มsurfactantโดยไม่validate","เปลี่ยนเป็นbasketทุกbatchโดยไม่change control"],
     rationale:"Compendial/validated conditionsต้องถูกปฏิบัติ. Observationที่75rpmช่วยinvestigationแต่ไม่สามารถแทนofficial conditionเพื่อrescue resultโดยพลการ.",
-    traps:["Passing alternate conditionไม่invalidateofficial failure","การเฉลี่ยต่างconditionsไม่มีความหมายcompendial","Surfactant/change apparatusเป็นmethod changesต้องjustify/validate"],
+    traps:["Passing alternate conditionไม่invalidateofficial failure","การเฉลี่ยต่างconditionsไม่มีความหมายcompendial","เพิ่มsurfactantเป็นmethod changeต้องjustify/validateก่อน ไม่ใช่ทางแก้ทันที","เปลี่ยนเป็นbasketก็เป็นmethod changeที่ต้องมีchange controlเช่นกัน"],
     difficulty:"hard",
     ref:"USP dissolution method control / OOS principles"
   },
@@ -1258,7 +1258,7 @@ const D3: Draft[] = [
     prompt:"SEC chromatogramมีpeakหนึ่งออกใกล้void volumeและเพิ่มขึ้นหลังheat stressของprotein. Peakนี้น่าจะสอดคล้องกับอะไร?",
     options:["Large aggregates/HMWSที่ถูกexcludeจากporesมาก","Monomerที่เล็กที่สุด","Free amino acids","Buffer salts","Detector noiseเท่านั้น"],
     rationale:"Speciesขนาดใหญ่มากเข้าถึงpore volumeน้อยและeluteใกล้void volume; heat stressมักเพิ่มaggregates.",
-    traps:["Monomerretainsผ่านpore volumeมากกว่าaggregate","Amino acidsและsaltsเล็กมากออกช้ากว่า/total volume","Patternstress-dependentสนับสนุนreal species"],
+    traps:["Monomerretainsผ่านpore volumeมากกว่าaggregate","Free amino acidsเล็กมากelutionช้ากว่า/near total volume ไม่ใช่ใกล้void","Buffer saltsก็elutionช้าเช่นกันไม่ตรงกับpeakใกล้void","Patternstress-dependentสนับสนุนreal species ไม่ใช่detector artifact"],
     difficulty:"hard",
     ref:"SEC aggregate analysis"
   },
@@ -1410,7 +1410,7 @@ const D3: Draft[] = [
     prompt:"HPLCพบunknown degradation peakและต้องการข้อมูลmolecular massเพื่อช่วยidentify ขั้นต่อไปใดเหมาะสมที่สุด?",
     options:["LC–MS","เพิ่มUV wavelengthเพียงอย่างเดียว","Friability test","PXRDของtabletทั้งเม็ดอย่างเดียว","Tapped density"],
     rationale:"LC-MSเชื่อมchromatographic separationกับmass-to-charge informationของunknown speciesและช่วยstructural elucidation.",
-    traps:["UV spectraให้chromophore infoจำกัดไม่ใช่molecular mass","Friability/flowไม่เกี่ยวchemical identity","PXRDไม่เหมาะidentifytrace solution degradantโดยตรง"],
+    traps:["UV spectraให้chromophore infoจำกัดไม่ใช่molecular mass","Friability testวัดmechanical strengthไม่เกี่ยวchemical identity","PXRDไม่เหมาะidentifytrace solution degradantโดยตรง","Tapped densityวัดpowder flow/packing ไม่เกี่ยวmolecular mass"],
     difficulty:"hard",
     ref:"Analytical identification strategies"
   },
