@@ -43,4 +43,60 @@ const C:C[]=[
 {p:"หากมี confusion ใหม่ ควรคิดถึงอะไร?",o:["hepatic encephalopathy และ precipitating factors","เพิ่ม NSAID","หยุดประเมิน infection","ถือว่าเป็น aging","เพิ่ม sedative"],a:0,r:"new confusion ใน cirrhosis ต้องประเมิน encephalopathy และ triggers"},
 {p:"คำแนะนำใดเหมาะสม?",o:["หลีกเลี่ยง NSAID ใช้เองและมาตรวจเมื่อมี red flags","ดื่ม alcohol เพื่อเพิ่ม appetite","เพิ่มเกลือมากๆ","หยุดยาทั้งหมดเอง","ใช้สมุนไพรไม่จำกัด"],a:0,r:"OTC counseling และ red-flag education สำคัญ"}]}
 ];
-export const PC1_PILOT_032:McqQuestion[]=C.flatMap((c,ci)=>c.q.map((q,qi)=>({id:`pc1pilot${String(ci*4+qi+1).padStart(3,"0")}`,subject_id:"pc1",exam_type:"PLE-PC",exam_source:"PharmRU PC1 Pilot 032",exam_day:null,question_number:ci*4+qi+1,scenario:`Case ${ci+1}/8 — ${c.t}\n${c.s}\n\nคำถาม ${qi+1}/4: ${q.p}`,image_url:null,choices:q.o.map((text,i)=>({label:"ABCDE"[i],text})),correct_answer:"ABCDE"[q.a],explanation:q.r,detailed_explanation:{summary:`เฉลย ${"ABCDE"[q.a]}: ${q.o[q.a]}`,reason:q.r,choices:q.o.map((text,i)=>({label:"ABCDE"[i],text,is_correct:i===q.a,explanation:i===q.a?q.r:"ไม่ใช่ single best answer เมื่อพิจารณาข้อมูลของเคสและความปลอดภัย"})),key_takeaway:q.r},difficulty:qi<2?"medium":"hard",is_ai_enhanced:true,ai_notes:"PharmRU original PC1 pilot; guideline-informed; editorial review before commercial publication.",status:"active",created_at:"2026-09-22 12:00:00",mcq_subjects:{id:"pc1",name:"PC1",name_th:"บริบาลเภสัชกรรม PC1",icon:"🩺",exam_type:"PLE-PC",question_count:32,created_at:"2026-09-22 12:00:00"}})));
+const refs=[
+"ADA Standards of Care in Diabetes 2026; KDIGO 2024 CKD Guideline",
+"2025 ACC/AHA/ACEP/NAEMSP/SCAI Acute Coronary Syndromes Guideline",
+"2024 ESC Atrial Fibrillation Guideline",
+"GINA 2025 Global Strategy for Asthma Management and Prevention",
+"IDSA 2026 Guidance on Antimicrobial-Resistant Gram-Negative Infections",
+"KDIGO 2024 CKD Guideline",
+"Current methotrexate safety/monitoring guidance; verify local RA protocol",
+"AASLD guidance for outpatient management of cirrhosis with ascites"
+];
+const clues=[
+"eGFR 46 และ UACR 620 mg/g เป็น key clues ว่าต้องคิด beyond HbA1c และเน้น cardiorenal protection",
+"ผู้ป่วยเป็น ACS หลัง PCI จึงต้องชั่ง ischemic benefit กับ bleeding risk และวาง secondary prevention",
+"AF ร่วมกับอายุสูง HTN DM และ prior TIA ทำให้ stroke prevention เป็นแกนสำคัญของการรักษา",
+"การใช้ SABA บ่อยและมี nocturnal symptoms สะท้อน poor asthma control และต้องมี ICS-containing strategy",
+"เป็น pyelonephritis ร่วม bacteremia จาก ESBL-E จึงต้องใช้ site/severity, susceptibility และ PK/PD ตัดสินใจ",
+"K 6.3 mEq/L ร่วม peaked T waves คือ severe hyperkalemia ที่มี cardiac toxicity ไม่ใช่ lab abnormality ธรรมดา",
+"oral ulcers + pancytopenia ในผู้ใช้ weekly methotrexate และมี TMP-SMX ใหม่ เป็น pattern ที่ต้องสงสัย toxicity",
+"decompensated cirrhosis + ascites ร่วม NSAID use เพิ่มความเสี่ยง renal hypoperfusion, AKI และควบคุม ascites ยาก"
+];
+const monitoring=[
+"ติดตาม eGFR, UACR, serum K, BP, volume status และ adverse effects ของยาที่เพิ่ม",
+"ติดตาม bleeding, adherence, lipid response, recurrent ischemia และการเข้าร่วม cardiac rehabilitation",
+"ติดตาม bleeding, renal function, adherence, drug interactions และ reassess stroke/rhythm/rate strategy",
+"ติดตาม symptom control, exacerbations, reliever use, inhaler technique และ adherence",
+"ติดตาม fever/hemodynamics, culture response, renal function, adverse effects และความเหมาะสมของ oral step-down",
+"ติดตาม ECG, serum K ซ้ำ, renal function, acid-base/volume status และยาที่เพิ่ม potassium",
+"ติดตาม CBC, renal function, liver tests, mucositis/infection และตรวจ medication errors/interactions",
+"ติดตามน้ำหนัก, ascites/edema, renal function, Na/K, BP และอาการ hepatic encephalopathy"
+];
+function whyWrong(text:string,caseIndex:number){
+ if(text.includes("ทุก")||text.includes("เสมอ")) return "เป็นคำตอบแบบเหมารวมเกินไปและไม่สอดคล้องกับการดูแลแบบ individualized; ต้องพิจารณาข้อบ่งใช้ ความเสี่ยง และข้อมูลผู้ป่วยรายนี้";
+ if(text.includes("อย่างเดียว")) return "ใช้ข้อมูลเพียงมิติเดียว ไม่เพียงพอสำหรับ pharmaceutical care ซึ่งต้องประเมิน efficacy, safety, comorbidity, interaction และ monitoring ร่วมกัน";
+ if(text.includes("ไม่ต้อง")||text.includes("งด")) return "ละเลยการติดตาม/มาตรการความปลอดภัยที่จำเป็นในบริบทของเคสนี้";
+ if(text.includes("NSAID")) return "NSAID อาจเพิ่ม renal, bleeding, cardiovascular หรือ disease-specific risk ในผู้ป่วยกลุ่มนี้ จึงไม่ใช่ตัวเลือกที่เหมาะสมที่สุด";
+ if(text.includes("หยุด")) return "การหยุดยาโดยอัตโนมัติโดยไม่ประเมิน severity, indication และ reversible factors อาจทำให้สูญเสียประโยชน์ของการรักษา";
+ return "แม้ดูเป็นทางเลือกที่เป็นไปได้บางบริบท แต่ไม่ตอบ key clinical problem ของผู้ป่วยรายนี้ได้ดีที่สุดเมื่อเทียบกับคำตอบที่ถูก";
+}
+export const PC1_PILOT_032:McqQuestion[]=C.flatMap((c,ci)=>c.q.map((q,qi)=>({
+ id:`pc1pilot${String(ci*4+qi+1).padStart(3,"0")}`,
+ subject_id:"pc1",exam_type:"PLE-PC",exam_source:"PharmRU PC1 Pilot 032",exam_day:null,question_number:ci*4+qi+1,
+ scenario:`Case ${ci+1}/8 — ${c.t}\n${c.s}\n\nคำถาม ${qi+1}/4: ${q.p}`,
+ image_url:null,
+ choices:q.o.map((text,i)=>({label:"ABCDE"[i],text})),
+ correct_answer:"ABCDE"[q.a],
+ explanation:`เหตุผลหลัก: ${q.r}\n\nKey clue: ${clues[ci]}\n\nClinical application: คำตอบต้องเลือกจากสิ่งที่เหมาะสมที่สุดสำหรับผู้ป่วยรายนี้ ไม่ใช่เพียงสิ่งที่ “ทำได้” ในทางทฤษฎี\n\nMonitoring / Follow-up: ${monitoring[ci]}\n\nReference used for review: ${refs[ci]}`,
+ detailed_explanation:{
+  summary:`เฉลย ${"ABCDE"[q.a]}: ${q.o[q.a]}`,
+  reason:`【วิเคราะห์โจทย์】 ${clues[ci]}\n\n【เหตุผลที่คำตอบนี้ดีที่สุด】 ${q.r} การตัดสินใจต้องพิจารณาประสิทธิผล ความปลอดภัย โรคร่วม ยาร่วม และข้อมูลติดตามของผู้ป่วยร่วมกัน\n\n【Monitoring / Practical point】 ${monitoring[ci]}\n\n【แหล่งอ้างอิงสำหรับตรวจเฉลย】 ${refs[ci]}`,
+  choices:q.o.map((text,i)=>({label:"ABCDE"[i],text,is_correct:i===q.a,explanation:i===q.a?`ถูก — ${q.r}`:whyWrong(text,ci)})),
+  key_takeaway:`Exam Pearl: ${q.r} | จำ key clue ของเคส: ${clues[ci]}`
+ },
+ difficulty:qi<2?"medium":"hard",is_ai_enhanced:true,
+ ai_notes:`PharmRU original PC1 pilot. Reference review: ${refs[ci]}. Editorial/clinical review recommended before commercial publication.`,
+ status:"active",created_at:"2026-09-22 12:00:00",
+ mcq_subjects:{id:"pc1",name:"PC1",name_th:"บริบาลเภสัชกรรม PC1",icon:"🩺",exam_type:"PLE-PC",question_count:32,created_at:"2026-09-22 12:00:00"}
+})));
