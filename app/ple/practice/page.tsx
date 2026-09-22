@@ -52,56 +52,31 @@ async function PracticeContent({
 
   return (
     <div>
-      {/* Primary exam tabs */}
-      <div className="mb-8">
-        <div className="grid grid-cols-2 gap-2 rounded-2xl border bg-slate-50 p-2 sm:grid-cols-4">
-          {[
-            { key: "cc1", label: "ปี 4 · CC1", href: "/ple/practice" },
-            { key: "pc1", label: "ปี 6 · PC1", href: "/ple/practice?track=pc1" },
-            { key: "ip1", label: "ปี 6 · IP1", href: "/ple/practice?track=ip1" },
-            { key: "phcp1", label: "ปี 6 · PHCP1", href: "/ple/practice?track=phcp1" },
-          ].map((tab) => (
-            <Link
-              key={tab.key}
-              href={tab.href}
-              className={`rounded-xl px-3 py-3 text-center text-sm font-bold transition ${
-                track === tab.key
-                  ? "bg-brand text-white shadow-sm"
-                  : "bg-white text-slate-700 hover:bg-brand/5"
-              }`}
-            >
-              {tab.label}
-            </Link>
-          ))}
+      {track !== "cc1" && (
+        <div className="mb-8 rounded-2xl border bg-white p-6">
+          {track === "pc1" && (
+            <div>
+              <div className="flex items-center gap-2 text-xl font-bold"><HeartPulse className="h-6 w-6 text-rose-500" /> PC1 — บริบาลเภสัชกรรม</div>
+              <p className="mt-2 text-sm text-muted-foreground">Pharmaceutical Care · 120 ข้อ</p>
+              <Link href="/sets?exam=PLE-PC1" className="mt-5 inline-flex rounded-xl bg-brand px-5 py-3 text-sm font-bold text-white">ดูชุดข้อสอบ PC1 →</Link>
+            </div>
+          )}
+          {track === "ip1" && (
+            <div>
+              <div className="flex items-center gap-2 text-xl font-bold"><Factory className="h-6 w-6 text-amber-500" /> IP1 — เภสัชกรรมอุตสาหการ</div>
+              <p className="mt-2 text-sm text-muted-foreground">Industrial Pharmacy · 120 ข้อ</p>
+              <Link href="/sets?exam=PLE-IP1" className="mt-5 inline-flex rounded-xl bg-brand px-5 py-3 text-sm font-bold text-white">ดูชุดข้อสอบ IP1 →</Link>
+            </div>
+          )}
+          {track === "phcp1" && (
+            <div>
+              <div className="flex items-center gap-2 text-xl font-bold"><ShieldCheck className="h-6 w-6 text-emerald-600" /> PHCP1 — คุ้มครองผู้บริโภคด้านยาและสุขภาพ</div>
+              <p className="mt-2 text-sm text-muted-foreground">Public Health & Consumer Protection · 120 ข้อ</p>
+              <Link href="/sets?exam=PLE-PHCP1" className="mt-5 inline-flex rounded-xl bg-brand px-5 py-3 text-sm font-bold text-white">ดูชุดข้อสอบ PHCP1 →</Link>
+            </div>
+          )}
         </div>
-
-        {track !== "cc1" && (
-          <div className="mt-5 rounded-2xl border bg-white p-6">
-            {track === "pc1" && (
-              <div>
-                <div className="flex items-center gap-2 text-xl font-bold"><HeartPulse className="h-6 w-6 text-rose-500" /> PC1 — บริบาลเภสัชกรรม</div>
-                <p className="mt-2 text-sm text-muted-foreground">Pharmaceutical Care · 120 ข้อ</p>
-                <Link href="/sets?exam=PLE-PC1" className="mt-5 inline-flex rounded-xl bg-brand px-5 py-3 text-sm font-bold text-white">ดูชุดข้อสอบ PC1 →</Link>
-              </div>
-            )}
-            {track === "ip1" && (
-              <div>
-                <div className="flex items-center gap-2 text-xl font-bold"><Factory className="h-6 w-6 text-amber-500" /> IP1 — เภสัชกรรมอุตสาหการ</div>
-                <p className="mt-2 text-sm text-muted-foreground">Industrial Pharmacy · 120 ข้อ</p>
-                <Link href="/sets?exam=PLE-IP1" className="mt-5 inline-flex rounded-xl bg-brand px-5 py-3 text-sm font-bold text-white">ดูชุดข้อสอบ IP1 →</Link>
-              </div>
-            )}
-            {track === "phcp1" && (
-              <div>
-                <div className="flex items-center gap-2 text-xl font-bold"><ShieldCheck className="h-6 w-6 text-emerald-600" /> PHCP1 — คุ้มครองผู้บริโภคด้านยาและสุขภาพ</div>
-                <p className="mt-2 text-sm text-muted-foreground">Public Health & Consumer Protection · 120 ข้อ</p>
-                <Link href="/sets?exam=PLE-PHCP1" className="mt-5 inline-flex rounded-xl bg-brand px-5 py-3 text-sm font-bold text-white">ดูชุดข้อสอบ PHCP1 →</Link>
-              </div>
-            )}
-          </div>
-        )}
-      </div>
-
+      )}
       {track === "cc1" && (
         <>
       <div className="mb-2 border-t pt-6">
