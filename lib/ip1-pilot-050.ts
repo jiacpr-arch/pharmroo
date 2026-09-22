@@ -1499,4 +1499,6 @@ function buildQuestion(d: Draft, index: number): McqQuestion {
   };
 }
 
-export const IP1_PILOT_050: McqQuestion[] = [...D, ...D2, ...D3].map(buildQuestion);
+const IP1_ALL_DRAFTS: Draft[] = [...D, ...D2, ...D3];
+
+export const IP1_PILOT_050: McqQuestion[] = IP1_ALL_DRAFTS.map(buildQuestion);
