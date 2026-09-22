@@ -5,7 +5,7 @@ import Anthropic from "@anthropic-ai/sdk";
 export interface SubjectConfig {
   name: string;
   name_th: string;
-  exam_type: "PLE-CC1" | "PLE-PC1" | "NLE";
+  exam_type: "PLE-CC1" | "PLE-PC" | "NLE";
   exam_day?: 1 | 2;
   topic_areas: string[];
 }
@@ -311,17 +311,21 @@ export const SUBJECT_CONFIGS: SubjectConfig[] = [
   },
   {
     name: "PharmCare",
-    name_th: "การบริบาลทางเภสัชกรรม",
-    exam_type: "PLE-CC1",
-    exam_day: 2,
+    name_th: "บริบาลเภสัชกรรม PC1",
+    exam_type: "PLE-PC",
     topic_areas: [
-      "Medication therapy management (MTM): comprehensive medication review",
-      "Drug-related problems (DRP): identification, classification",
-      "Therapeutic drug monitoring: goals, parameters",
-      "Adherence assessment: barriers, strategies",
-      "Pharmacist-managed clinics: anticoagulation, DM, HTN",
-      "SOAP note documentation",
-      "Interprofessional collaboration in patient care",
+      "Cardiorenal syndrome: HFrEF/HFpEF ร่วมกับ CKD — การปรับยา GDMT และติดตาม volume/renal function",
+      "Acute coronary syndrome & atrial fibrillation: antiplatelet, anticoagulation, rate/rhythm control ในผู้ป่วยโรคร่วม",
+      "CKD & electrolyte emergency: hyperkalemia management, RAAS blockade monitoring, renal dose adjustment",
+      "Community-acquired infection: empiric antibiotic selection, PK/PD, de-escalation, renal/hepatic dosing",
+      "Asthma/COPD: stepwise therapy, inhaler technique, adherence และ exacerbation management",
+      "Rheumatologic therapy: methotrexate/DMARD monitoring, toxicity, drug interactions",
+      "Hepatic impairment: Child-Pugh-based drug selection และการปรับขนาดยา",
+      "Narrow therapeutic index drugs: lithium, digoxin, phenytoin — toxicity recognition และการจัดการ",
+      "Polypharmacy & geriatric medication review: deprescribing, fall risk, potentially inappropriate medications",
+      "Anaphylaxis & emergency drug therapy: epinephrine, resuscitation, patient education",
+      "Medication therapy management (MTM): comprehensive medication review, drug-related problems (DRP)",
+      "SOAP note documentation และ interprofessional collaboration ในการบริบาลผู้ป่วย",
     ],
   },
   {
@@ -665,7 +669,7 @@ export async function generateMcqBatch(
   const prompt = buildPrompt(subject, count, batchIndex);
 
   const message = await client.messages.create({
-    model: "claude-sonnet-4-6",
+    model: "claude-sonnet-5",
     max_tokens: 8000,
     messages: [{ role: "user", content: prompt }],
   });
