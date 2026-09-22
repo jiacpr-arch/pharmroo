@@ -951,8 +951,491 @@ const D2: Draft[] = [
 
 ];
 
+
+const D3: Draft[] = [
+  // Case 11 — Back titration assay
+  {
+    topic:"Monograph interpretation / back titration classification",
+    prompt:"อ่าน Assay procedure ต่อไปนี้: ชั่ง Drug E ประมาณ 1.20 g เติม 50.0 mL ของ 0.500 N NaOH ต้มเบา ๆ 10 นาที ปล่อยเย็น แล้วไทเทรต NaOH ส่วนเกินด้วย 0.500 N HCl พร้อมทำ blank determination ภายใต้เงื่อนไขเดียวกัน. วิธีนี้จัดเป็นการไทเทรตชนิดใดได้เหมาะสมที่สุด?",
+    options:["Residual (back) titration","Direct acidimetry","Complexometric titration","Redox titration","Precipitation titration"],
+    rationale:"เติม NaOH ปริมาณเกินให้ทำปฏิกิริยากับ analyte ก่อน แล้ววัด reagent ส่วนเกินด้วยกรดมาตรฐาน จึงเป็น residual/back titration ไม่ใช่ direct titration.",
+    traps:["Direct titrationต้องไทเทรต analyteโดยตรงด้วยtitrantหลัก ไม่ใช่เติมreagentเกินแล้ววัดส่วนเหลือ","ไม่มีmetal-chelate endpoint","ไม่มีoxidation-state changeเป็นbasis","ไม่มีprecipitate-equivalence reactionเป็นbasis"],
+    difficulty:"hard",
+    ref:"Pharmaceutical volumetric analysis; compendial assay principles"
+  },
+  {
+    topic:"Monograph interpretation / blank in back titration",
+    prompt:"จาก procedure เดิม Drug E ใช้ NaOH เกินแล้ว back-titrate ด้วย HCl. เหตุผลสำคัญที่สุดของ blank determination คือข้อใด?",
+    options:["หาปริมาณ NaOH ที่ถูกใช้/สูญเสียจาก reagent, solvent และขั้นตอน heating ที่ไม่เกี่ยวกับ analyte เพื่อให้คำนวณ consumption ของ analyte ได้ถูกต้อง","ยืนยันว่า HCl มีสีเดียวกับ sample","ใช้แทน standardization ของ HCl ทุกครั้ง","เพิ่ม sensitivity โดยทำให้ endpointช้าลง","แก้ผลจาก sample weight ที่ชั่งผิด"],
+    rationale:"Blankผ่านทุกขั้นตอนโดยไม่มีanalyte ช่วยวัดbackground consumption/neutralization; ความต่างระหว่างblankและsampleสะท้อนequivalentsที่analyteใช้.",
+    traps:["สีไม่ใช่หน้าที่หลักของblank","Blankไม่แทนการstandardize titrant","Blankไม่ได้มีวัตถุประสงค์เพิ่มsensitivity","Blankไม่สามารถแก้weighing errorของsample"],
+    difficulty:"hard",
+    ref:"Volumetric assay blank-correction principles"
+  },
+  {
+    topic:"Back titration / assay calculation",
+    prompt:"Drug E assay: blank ใช้ 48.60 mL ของ 0.500 N HCl, sample ใช้ 22.40 mL. Monograph ระบุว่า HCl 0.500 N แต่ละ 1.00 mL ที่ต่างกันเทียบเท่า Drug E 41.20 mg. หากชั่ง sample 1.100 g ปริมาณ Drug E และ assay โดยประมาณเท่าใด?",
+    options:["1.079 g และ 98.1%","0.922 g และ 83.8%","1.001 g และ 91.0%","1.100 g และ 100.0%","0.540 g และ 49.1%"],
+    rationale:"Corrected volume =48.60−22.40=26.20 mL; Drug E=26.20×41.20=1079.44 mg; assay=1079.44/1100×100≈98.13%.",
+    traps:["0.922gมาจากใช้sample titration volumeแทนblank difference","1.001gไม่ตรงequivalent factor","100%เป็นnominalไม่ใช่measured","0.540gเกิดจากhalve equivalentsผิด"],
+    difficulty:"hard",
+    ref:"Compendial back-titration calculations",
+    calc:["ΔV = 48.60 − 22.40 = 26.20 mL","Amount = 26.20 × 41.20 = 1079.44 mg","Assay = 1079.44/1100 ×100 ≈ 98.1%"]
+  },
+  {
+    topic:"Back titration / endpoint selection",
+    prompt:"Drug E back titration ใช้ strong baseส่วนเกินและ back-titrateด้วย strong acid. หาก procedure ใช้ visual indicator เหตุผลใดสำคัญที่สุดในการเลือก indicator?",
+    options:["ช่วงเปลี่ยนสีต้องครอบคลุมบริเวณ pH ใกล้ equivalence ของ back-titration matrixจริง โดยไม่ถูกรบกวนจาก sample color/solvent","เลือก indicator ที่มี pKa เท่ากับ pKa ของ Drug E เสมอ","เลือก indicator ที่ให้สีเข้มที่สุดโดยไม่สนendpoint","ใช้ methyl orangeได้ทุกacid–base titrationโดยอัตโนมัติ","indicatorไม่มีผลเพราะคำนวณจากnormalityอย่างเดียว"],
+    rationale:"Indicator errorขึ้นกับตำแหน่งtransition rangeเทียบกับtitration curveในmatrix; ต้องเหมาะกับactual endpointและsample characteristics ไม่ใช่จำชื่อindicatorแบบตายตัว.",
+    traps:["pKa analyteไม่จำเป็นต้องเท่ากับindicator pKaในback titration","สีเข้มไม่ใช่criterionหลัก","ไม่มีindicatorสากลสำหรับทุกacid-base system","Endpoint detectionมีผลต่อmeasured volumeโดยตรง"],
+    difficulty:"hard",
+    ref:"Acid–base titration endpoint theory"
+  },
+  {
+    topic:"Back titration / reagent standardization",
+    prompt:"ใน assay แบบ back titrationเดียวกัน หาก NaOH ดูด CO₂ ระหว่างเก็บจน actual normalityลดลง แต่ analystยังใช้ nominal 0.500 N ในการคำนวณ ข้อใดเป็นความเสี่ยงที่ถูกต้องที่สุด?",
+    options:["Stoichiometric equivalenceอาจถูกคำนวณผิด จึงต้องใช้ standardized titrant/reagentตามprocedureและfactorจริง","ไม่มีผลเพราะมีblankแล้วทุกกรณี","Blankทำให้ไม่ต้องstandardizeทั้งNaOHและHCl","ผลจะต่ำเสมอในทิศทางเดียวโดยไม่ขึ้นกับสูตรคำนวณ","แก้ได้ด้วยเพิ่มindicator"],
+    rationale:"Blankช่วยbackground correctionแต่ไม่แทนknowledgeของactual concentration/equivalence factor. CarbonationของNaOHเปลี่ยนeffective normalityและทำให้stoichiometryผิดหากใช้nominal value.",
+    traps:["Blankไม่สามารถแก้concentration factorทุกกรณีโดยเฉพาะเมื่อequivalent factorคำนวณจากnormality","ยังต้องstandardizeตามcompendial procedure","ทิศทางbiasขึ้นกับcalculation designและwhich reagent factor used","Indicatorไม่แก้titrant concentration"],
+    difficulty:"hard",
+    ref:"Compendial titrant standardization principles"
+  },
+
+  // Case 12 — Ion-pair RP-HPLC monograph
+  {
+    topic:"Monograph LC / separation mode identification",
+    prompt:"อ่าน LC monograph: Mobile phase = 3 g/L sodium octanesulfonate in water : acetonitrile (82:18), ปรับ pH 3.2 ด้วย phosphoric acid; column 4.6×250 mm, packing L1; UV 272 nm. สำหรับ basic drug ที่วิเคราะห์ ระบบนี้อธิบายกลไก separationได้เหมาะสมที่สุดอย่างไร?",
+    options:["Reversed-phase ion-pair chromatography โดย anionic alkylsulfonateช่วยเพิ่มretention/selectivityของcationic analyteบนC18","Classical cation-exchange chromatographyบนcharged resin","Size-exclusion chromatography","Normal-phase adsorption chromatography","Micellar electrokinetic chromatography"],
+    rationale:"L1คือC18 reversed-phase และalkylsulfonate anionทำหน้าที่ion-pair reagentกับprotonated basic analyte จึงเป็นion-pair RP-LC.",
+    traps:["Stationary phaseไม่ใช่ion-exchange resin","ไม่มีpore-size molecular sievingเป็นกลไกหลัก","Mobile phaseเป็นaqueous-richและcolumnC18ไม่ใช่normal-phase silica","เป็นLCไม่ใช่capillary electrophoresis"],
+    difficulty:"hard",
+    ref:"USP <621> Chromatography; ion-pair RP-HPLC principles"
+  },
+  {
+    topic:"Ion-pair LC / reagent role",
+    prompt:"จาก monograph เดิม เหตุผลหลักของ sodium octanesulfonate คือข้อใด?",
+    options:["สร้าง hydrophobic ion-pair/ปรับsurface interactionกับ protonated basic analyte เพื่อเพิ่มและควบคุมretention/selectivity","ทำหน้าที่เป็นUV chromophoreของanalyte","ลดviscosityของmobile phaseเป็นหลัก","เป็นbufferชนิดเดียวที่คงpH3.2ได้","ใช้เป็นinternal standard"],
+    rationale:"Alkylsulfonateมีanionic headและhydrophobic alkyl chain ช่วยmodify retentionของcationic/basic speciesในRP-LCผ่านion-pair/dynamic surface mechanisms.",
+    traps:["ไม่ได้เพิ่มchromophoreของanalyte","เกลือมักเพิ่มionic contentไม่ใช่ลดviscosityเป็นprimary role","pH controlมาจากacid/buffer systemไม่ใช่octanesulfonateเพียงอย่างเดียว","ไม่ได้ถูกเติมในknown amountเพื่อเป็นIS"],
+    difficulty:"hard",
+    ref:"Ion-pair chromatography theory"
+  },
+  {
+    topic:"Ion-pair LC / pH failure",
+    prompt:"Basic drug มี pKa 8.7. Mobile phase monographกำหนด pH 3.2 แต่ analystเตรียมได้ pH 5.2 ขณะที่ organic ratioเท่าเดิม. ผลกระทบใดควรกังวลที่สุดต่อ ion-pair methodนี้?",
+    options:["Ionization stateของanalyteและsilanol/reagent interactionsเปลี่ยน ทำให้retention/selectivityของcritical peaksอาจเปลี่ยนอย่างมีนัยสำคัญ","APIจะunionizedทั้งหมดที่pH5.2","C18จะกลายเป็นanion-exchange resinเต็มรูปแบบ","UV detectorจะเปลี่ยนwavelengthอัตโนมัติ","ไม่มีผลเพราะpHยังต่ำกว่า7"],
+    rationale:"แม้weak baseยังprotonatedมากที่ทั้งสองpH แต่degree of ionizationของsurface sitesและion-pair equilibriumสามารถเปลี่ยนselectivityได้มาก; ion-pair methodsมักไวต่อpH/ionic conditions.",
+    traps:["pH5.2ยังต่ำกว่าpKa8.7มาก จึงไม่unionizedทั้งหมด","C18ไม่ได้เปลี่ยนchemistryเป็นion-exchange resin","Detector wavelengthไม่เปลี่ยนอัตโนมัติ","neutral pHไม่ได้เป็นเส้นแบ่งของchromatographic effect"],
+    difficulty:"hard",
+    ref:"Ion-pair LC robustness; ICH Q14"
+  },
+  {
+    topic:"LC monograph / sample dilution reading",
+    prompt:"Monographกำหนด sample stock nominally 4.0 mg/mL. Sample solution ต้อง nominally 0.40 mg/mL จาก stock โดยใช้ diluentเดิม. หากต้องเตรียม sample solution 25.0 mL ควรดูด stockกี่mL?",
+    options:["2.50 mL","1.00 mL","4.00 mL","10.0 mL","0.40 mL"],
+    rationale:"C1V1=C2V2; V1=(0.40×25.0)/4.0=2.50mL.",
+    traps:["1mLให้0.16mg/mL","4mLให้0.64mg/mL","10mLให้1.6mg/mL","0.4mLให้0.064mg/mL"],
+    difficulty:"hard",
+    ref:"Analytical sample-preparation calculations",
+    calc:["V1=(0.40 mg/mL×25.0 mL)/(4.0 mg/mL)=2.50 mL"]
+  },
+  {
+    topic:"LC monograph / system suitability interpretation",
+    prompt:"Monographกำหนด tailing factor NMT 2.0 และ %RSD ของ 6 standard injections NMT 2.0%. ผลจริง: tailing=1.85, standard areas 502100, 497900, 501800, 498500, 500600, 499100. ข้อใดเหมาะสมที่สุด?",
+    options:["Tailingผ่าน และ %RSDประมาณ0.36%จึงผ่าน system suitability ทั้งสองเกณฑ์","Tailingไม่ผ่านเพราะต้อง≤1.5","%RSDประมาณ2.6%จึงfail","ผ่านเฉพาะRSDแต่tailingfail","สรุปไม่ได้เพราะต้องมีsample injectionก่อน"],
+    rationale:"Mean≈500,000 และSDประมาณ1,800 ทำให้RSD≈0.36%; tailing1.85≤2.0. จึงผ่านcriteriaที่ให้.",
+    traps:["เกณฑ์ที่โจทย์ให้คือ2.0ไม่ใช่1.5","ข้อมูลareasมีspreadต่ำมากไม่ถึง2.6%","tailingผ่าน","SSTตามเกณฑ์ที่ให้ประเมินstandardได้โดยไม่ต้องsampleก่อน"],
+    difficulty:"hard",
+    ref:"USP <621> system suitability",
+    calc:["Mean area ≈ 500,000","SD ≈ 1,800","%RSD ≈ (1800/500000)×100 ≈0.36%","Tailing 1.85 ≤2.0"]
+  },
+
+  // Case 13 — Gradient related-substances monograph
+  {
+    topic:"Related substances / gradient table reading",
+    prompt:"Related-substances LC gradient: 0 min B=10%, 10 min B=10%, 30 min B=70%, 35 min B=70%, 36 min B=10%, stop 45 min. เหตุผลสำคัญที่สุดของช่วง36–45 minคือข้อใด?",
+    options:["Re-equilibrate columnกลับสู่initial compositionก่อนinjectionถัดไป","เพิ่มresolutionของlate peaksด้วยBสูง","ใช้ล้างdetector flow cellด้วยน้ำบริสุทธิ์","ทำให้ทุกimpurityออกที่เวลาเดียวกัน","ใช้คำนวณdead volume"],
+    rationale:"หลังgradientสูงต้องกลับinitial compositionและให้column/stationary phase equilibrateเพียงพอเพื่อreproducible retentionในrunถัดไป.",
+    traps:["ช่วง36–45คือB10%ไม่ใช่Bสูง","ไม่ได้ระบุwater flushของdetector","เป้าหมายไม่ใช่ทำให้peaks co-elute","Dead volumeไม่ได้คำนวณจากช่วงนี้โดยตรง"],
+    difficulty:"hard",
+    ref:"Gradient HPLC method lifecycle principles"
+  },
+  {
+    topic:"Related substances / corrected impurity",
+    prompt:"Impurity P มี peak area 18,000; API reference solutionที่เทียบเท่า0.20%ให้ area 20,000. RRF(P)=1.50 (response P/response API). หากใช้single-point comparison ค่าประมาณ impurity P เท่าใด?",
+    options:["0.12%","0.18%","0.20%","0.27%","0.30%"],
+    rationale:"Apparent = (18000/20000)×0.20%=0.18%; corrected forRRF=0.18/1.50=0.12%.",
+    traps:["0.18ยังไม่แก้RRF","0.20คือstandard level","0.27คือคูณRRFผิดทิศ","0.30ไม่ตรงarea ratio"],
+    difficulty:"hard",
+    ref:"ICH Q2(R2); impurity RRF quantitation",
+    calc:["Apparent=0.9×0.20%=0.18%","Corrected=0.18/1.50=0.12%"]
+  },
+  {
+    topic:"Related substances / critical pair SST",
+    prompt:"Related-substances methodกำหนด Rs ระหว่าง impurity A/API NLT1.5 และ standard RSD NMT5%. ผล: RSD1.1% แต่ Rs=1.31. ข้อใดถูกต้องที่สุด?",
+    options:["System suitability failเพราะcritical separationไม่ผ่าน แม้precision criterionผ่าน","System suitabilityผ่านเพราะRSDเป็นcriterionสำคัญกว่า","เฉลี่ยRsกับRSDแล้วถ้าต่ำกว่า5ถือว่าผ่าน","ใช้sampleได้ถ้าAPI assayอยู่ในspec","ปรับintegrationเพื่อให้Rsเพิ่ม"],
+    rationale:"SST criteriaเป็นindependent acceptance requirements; failureของcritical resolutionทำให้methodไม่พร้อมใช้งานตามprocedure.",
+    traps:["ไม่มีhierarchyที่ให้RSDลบล้างRs","ห้ามเฉลี่ยคนละmetric","Assay specไม่แทนSSTของrelated substances","Integrationไม่ได้เพิ่มtrue chromatographic resolution"],
+    difficulty:"hard",
+    ref:"USP <621>; GMP laboratory controls"
+  },
+  {
+    topic:"Related substances / disregard limit vs LOQ",
+    prompt:"Monographระบุ disregard/reporting threshold 0.05%, LOQ validatedที่0.02%, specification total impurities NMT1.0%. พบunknown peaks 0.03%, 0.04%, 0.06%, 0.20%. ตามprocedureที่ให้ disregard peaks <0.05%. Total impuritiesที่ต้องนำมารวมตามruleนี้เท่าใด?",
+    options:["0.26%","0.33%","0.23%","0.20%","0.06%"],
+    rationale:"ตามdisregard ruleให้ไม่นับ0.03และ0.04; นับ0.06+0.20=0.26%. LOQต่ำกว่าthresholdไม่ได้หมายความว่าทุกpeakเหนือLOQต้องรวมถ้าmonographกำหนดdisregard ruleชัด.",
+    traps:["0.33รวมทุกpeakที่quantifiableแต่ขัดrule","0.23รวม0.03ผิดและตัด0.06","0.20ตัด0.06ผิด","0.06ตัดmain impurity0.20"],
+    difficulty:"hard",
+    ref:"Compendial related-substances reporting/disregard principles",
+    calc:["Count only ≥0.05%: 0.06+0.20=0.26%"]
+  },
+  {
+    topic:"Related substances / unknown impurity identification threshold",
+    prompt:"Stability sampleพบunknown impurity0.18%ซ้ำหลายlot. Specification individual unknown NMT0.20%, แต่ regulatory identification thresholdสำหรับผลิตภัณฑ์นี้ตามข้อมูลที่ให้คือ0.10%. ข้อใดเหมาะสมที่สุด?",
+    options:["แม้ยังไม่OOSตามspec0.20% แต่เกินidentification threshold จึงต้องดำเนินการidentify/assessตามregulatory framework","ไม่ต้องทำอะไรจนเกิน0.20%","ถือว่าOOSทันทีเพราะเกิน0.10%","ลบpeakออกเพราะยังต่ำspec","รวมกับAPI assayแทน"],
+    rationale:"Specification limitกับqualification/identification thresholdsตอบคนละคำถาม; impurityอาจwithin release specแต่ยังtrigger regulatory identification requirement.",
+    traps:["รอrelease limitอย่างเดียวอาจพลาดidentification obligation","Identification thresholdไม่จำเป็นต้องเท่ากับrelease spec จึงไม่ใช่OOSโดยอัตโนมัติ","ห้ามลบreal peak","ไม่รวมimpurityกลับเข้าAPI assay"],
+    difficulty:"hard",
+    ref:"ICH Q3B(R2) concepts"
+  },
+
+  // Case 14 — Delayed-release dissolution monograph
+  {
+    topic:"Delayed-release dissolution / stage logic",
+    prompt:"Delayed-release tablet monograph: Acid stage 0.1 N HCl 2 h, acceptance = NMT10% dissolved; Buffer stage pH6.8 ต่ออีก45 min, Q=80%. Batchหนึ่ง acid stage=6%, buffer stage=82%. ข้อใดถูกต้องที่สุด?",
+    options:["ผ่านcriteriaที่ให้ทั้ง acid resistanceและbuffer release","Fail acid stageเพราะต้อง0%","Fail buffer stageเพราะต้องมากกว่า90%","ผ่านเฉพาะacid stage","สรุปไม่ได้จนทำassay"],
+    rationale:"Acid6%≤10% และbuffer82%≥Q80ตามcriteriaที่โจทย์กำหนด. Qไม่ใช่90%โดยอัตโนมัติ.",
+    traps:["MonographอนุญาตNMT10ไม่ใช่0","Qระบุ80","ทั้งสองผ่าน","Dissolution acceptanceประเมินจากcriteriaนี้โดยตรง ไม่ต้องassayก่อนเพื่อสรุปตามข้อมูล"],
+    difficulty:"hard",
+    ref:"USP <711>/<724> delayed-release concepts"
+  },
+  {
+    topic:"Dissolution / cumulative correction multi-sampling",
+    prompt:"Vessel900 mLและแทนmediumทุกครั้ง. เก็บ10mLที่10,20,30min. Concentrationsในvessel ณแต่ละเวลา=20,50,80 µg/mL. ปริมาณสะสมที่ละลายถึง30minเท่าใด?",
+    options:["72.7 mg","72.0 mg","73.5 mg","80.0 mg","69.3 mg"],
+    rationale:"Amount present30min=80×900=72,000µg. Drug removedก่อนหน้า=20×10 +50×10=700µg. Total=72,700µg=72.7mg.",
+    traps:["72.0ไม่แก้withdrawals","73.5บวกcurrent aliquotซ้ำ","80สับสนconcentration","69.3ผิดทิศvolume correction"],
+    difficulty:"hard",
+    ref:"Dissolution serial-sampling mass balance",
+    calc:["At30min in vessel=80×900=72,000µg","Removed earlier=20×10+50×10=700µg","Cumulative=72,700µg=72.7mg"]
+  },
+  {
+    topic:"Dissolution / medium pH sensitivity",
+    prompt:"Enteric productผ่านacid stageแต่buffer releaseที่pH6.8=85%; robustnessลองpH6.6ได้62%และpH7.0ได้94%. ข้อใดเป็นข้อสรุปที่เหมาะสมที่สุด?",
+    options:["ReleaseมีpH sensitivityสูงใกล้polymer dissolution threshold; ต้องควบคุมbuffer pH/ionic conditionsและเข้าใจpolymer trigger","Product robustเพราะpH6.8ผ่าน","ควรเลือกpH7.0เป็นofficial methodทันทีโดยไม่change control","pHไม่เกี่ยวกับenteric polymer","เพิ่มpaddle speedแทนการศึกษาพีเอช"],
+    rationale:"Enteric polymersมีpH-dependent ionization/dissolution; small pH shiftสร้างlarge release changeจึงเป็นcritical test conditionและอาจสะท้อนproduct sensitivity.",
+    traps:["Nominal passไม่เท่ากับrobustness","เปลี่ยนofficial methodต้องscientific/regulatory justification","pHเป็นกลไกหลักของenteric release","เพิ่มagitationอาจmask pH effectและไม่ใช่คำตอบแรก"],
+    difficulty:"hard",
+    ref:"Enteric polymer dissolution and method robustness principles"
+  },
+  {
+    topic:"Dissolution / deaeration artifact",
+    prompt:"Immediate-release tabletบางlotให้dissolutionต่ำและแปรปรวนเฉพาะเมื่อmediumไม่ได้deaerate; เห็นair bubblesเกาะใต้tabletและbasket. เมื่อdeaerateผลกลับปกติ. คำอธิบายใดเหมาะสมที่สุด?",
+    options:["Dissolved/entrained gasสร้างbubblesที่รบกวนwetting/hydrodynamics ทำให้apparent dissolutionต่ำและvariable","APIเกิดoxidationทันทีจากoxygenจึงลดassay","Tablet hardnessลดจากair bubble","Detector saturationจากoxygen","Medium pHเพิ่ม2unitsเพราะbubble"],
+    rationale:"Bubblesสามารถเกาะsurface/basketและเปลี่ยนeffective wetting/hydrodynamics เป็นartifactทางphysical testing; deaerationจึงสำคัญเมื่อmethod sensitive.",
+    traps:["ผลย้อนกลับทันทีด้วยdeaerationชี้physical artifactมากกว่าchemical oxidation","Hardnessไม่ได้เปลี่ยนจากbubbleในvessel","Detectorไม่เกี่ยวกับphysical dissolution stage","Gasไม่ได้ทำให้pHเพิ่ม2unitsโดยทั่วไป"],
+    difficulty:"hard",
+    ref:"USP dissolution apparatus operational considerations"
+  },
+  {
+    topic:"Dissolution / coning diagnosis",
+    prompt:"Paddle methodพบ coningของdense particlesใต้shaftและQต่ำ. เพิ่มrpmจาก50เป็น75ทำให้Qผ่านแต่method monographกำหนด50rpm. ขั้นตอนที่เหมาะสมที่สุดคืออะไร?",
+    options:["Investigate hydrodynamic artifactและformulation behaviorภายใต้official condition; ห้ามปรับrpmเพื่อให้ผ่านโดยไม่มีmethod change justification","รายงาน75rpmเป็นผลofficialเพราะผ่าน","ใช้ค่าเฉลี่ย50และ75rpm","เพิ่มsurfactantโดยไม่validate","เปลี่ยนเป็นbasketทุกbatchโดยไม่change control"],
+    rationale:"Compendial/validated conditionsต้องถูกปฏิบัติ. Observationที่75rpmช่วยinvestigationแต่ไม่สามารถแทนofficial conditionเพื่อrescue resultโดยพลการ.",
+    traps:["Passing alternate conditionไม่invalidateofficial failure","การเฉลี่ยต่างconditionsไม่มีความหมายcompendial","Surfactant/change apparatusเป็นmethod changesต้องjustify/validate"],
+    difficulty:"hard",
+    ref:"USP dissolution method control / OOS principles"
+  },
+
+  // Case 15 — Nonaqueous titration monograph
+  {
+    topic:"Nonaqueous assay / method identification",
+    prompt:"Monographของ weak organic base: dissolve sampleในglacial acetic acid, add acetic anhydride, titrateด้วย0.1 M perchloric acid, determine endpoint potentiometrically. วิธีนี้จัดเป็นอะไร?",
+    options:["Nonaqueous acidimetric titration","Aqueous alkalimetry","Redox titration","Complexometry","Argentometric titration"],
+    rationale:"Weak baseถูกไทเทรตด้วยstrong acid(HClO₄)ในnonaqueous acidic solvent จึงเป็นnonaqueous acidimetry.",
+    traps:["ไม่ใช่aqueous base titration","ไม่มีelectron transfer","ไม่มีmetal chelate","ไม่มีAg⁺ precipitation"],
+    difficulty:"hard",
+    ref:"Pharmaceutical nonaqueous titration principles"
+  },
+  {
+    topic:"Nonaqueous titration / acetic anhydride role",
+    prompt:"ใน procedure weak base + glacial acetic acid + acetic anhydride เหตุผลสำคัญของacetic anhydrideคือข้อใด?",
+    options:["ช่วยกำจัดtrace waterโดยทำปฏิกิริยาเป็นacetic acid ลดผลของน้ำต่อnonaqueous titration","ทำหน้าที่เป็นindicator","เป็นprimary standardของperchloric acid","เพิ่มUV absorbanceของdrug","ตกตะกอนchloride ion"],
+    rationale:"Waterทำให้solvent systemเปลี่ยนและทำให้endpointของnonaqueous acid-base titrationไม่คม; acetic anhydrideช่วยscavenge water.",
+    traps:["ไม่ใช่visual indicator","ไม่ใช่standardของtitrant","ไม่มีหน้าที่spectrophotometric","ไม่ใช่precipitating reagent"],
+    difficulty:"hard",
+    ref:"Nonaqueous titration solvent chemistry"
+  },
+  {
+    topic:"Nonaqueous titration / water contamination",
+    prompt:"ถ้าglacial acetic acidมีwaterสูงกว่าปกติอย่างมีนัยสำคัญและไม่ได้แก้ไข ผลใดน่ากังวลที่สุด?",
+    options:["Endpoint sharpnessและapparent basicityของanalyteอาจเปลี่ยน ทำให้titration bias/precisionแย่ลง","Perchloric acidจะกลายเป็นbase","Drugจะเปลี่ยนเป็นmetal complexเสมอ","ไม่มีผลเพราะwaterเป็นneutral","Potentiometric electrodeจะอ่าน0 mVเสมอ"],
+    rationale:"Nonaqueous titrationอาศัยsolvent leveling/differentiating effects; waterเปลี่ยนacid-base equilibriaและendpoint behavior.",
+    traps:["HClO₄ไม่กลายเป็นbase","ไม่มีmetal source","Waterไม่inertต่อacid-base solvent system","Electrodeไม่ได้ถูกบังคับเป็น0mV"],
+    difficulty:"hard",
+    ref:"Nonaqueous acid-base equilibria"
+  },
+  {
+    topic:"Nonaqueous titration / stoichiometric calculation",
+    prompt:"Drug B เป็นmonobasic compound MW 321.4. ใช้0.1000 M HClO₄ ปริมาตร15.60 mL. หากstoichiometry1:1 ปริมาณDrug Bเท่าใด?",
+    options:["501.4 mg","321.4 mg","156.0 mg","50.14 mg","1002.8 mg"],
+    rationale:"Moles=0.1000 mol/L×0.01560L=0.001560mol; mass=0.001560×321.4=0.5014g.",
+    traps:["321.4mgคือ1mmolไม่ใช่1.56mmol","156mgสับสนvolume/molarity","50.14mgfactor10ผิด","1002.8mgfactor2ผิด"],
+    difficulty:"hard",
+    ref:"Volumetric stoichiometric calculations",
+    calc:["n=0.1000×0.01560=0.001560 mol","m=0.001560×321.4=0.5014 g=501.4 mg"]
+  },
+  {
+    topic:"Nonaqueous titration / potentiometric endpoint",
+    prompt:"เหตุใด potentiometric endpointจึงมักมีประโยชน์ในnonaqueous assayของcolored/opaque sample?",
+    options:["ไม่พึ่งการมองสีindicatorโดยตรงและสามารถหาจุดinflectionของpotential–volume curve","ทำให้titrantไม่ต้องstandardize","กำจัดmatrixทั้งหมดก่อนtitration","ทำให้stoichiometryเปลี่ยนเป็น2:1","ทำให้ไม่ต้องทำblank"],
+    rationale:"Electrometric endpointช่วยลดvisual indicator interferenceจากสี/turbidityและให้objective signal แต่ยังต้องควบคุมtitrant/blank/stoichiometry.",
+    traps:["ยังต้องstandardize","ไม่ได้remove matrix","ไม่เปลี่ยนreaction stoichiometry","Blankอาจยังจำเป็นตามprocedure"],
+    difficulty:"hard",
+    ref:"Potentiometric titration endpoint principles"
+  },
+
+  // Case 16 — Headspace GC monograph advanced
+  {
+    topic:"Headspace GC / salting-out",
+    prompt:"Residual-solvent headspace GC methodเติมsodium chlorideปริมาณคงที่ในทุกvial. จุดประสงค์ที่สมเหตุสมผลที่สุดคือข้อใด?",
+    options:["เพิ่มionic strengthเพื่อลดsolubilityของorganic volatilesในaqueous phaseและเพิ่มpartitionสู่headspaceอย่างreproducible","ทำหน้าที่เป็นflame-ionization fuel","เป็นinternal standard","ลดheadspace volumeเป็นศูนย์","ทำให้solvents nonvolatile"],
+    rationale:"Salting-outลดactivity/solubilityของorganic volatilesในliquid phaseและเพิ่มheadspace response; ต้องคงเงื่อนไขให้สม่ำเสมอ.",
+    traps:["FID fuelเป็นH₂/airไม่ใช่NaCl","NaClไม่ได้เป็นquantitativeIS","ไม่ได้กำจัดheadspace","ทำให้volatile partitionไปgasมากขึ้นไม่ใช่nonvolatile"],
+    difficulty:"hard",
+    ref:"Headspace GC partition principles"
+  },
+  {
+    topic:"Headspace GC / vial fill-volume effect",
+    prompt:"Method validateที่ sample solution5 mLใน20 mL vial. Analystเผลอใช้10 mLใน20 mL vial โดยamount analyteเท่ากัน. เหตุใดresponseอาจเปลี่ยนแม้total analyteเท่าเดิม?",
+    options:["Phase ratio (headspace/liquid volume) เปลี่ยน จึงเปลี่ยนpartition equilibriumและgas-phase concentration","FID responseไม่ขึ้นกับheadspace","Moles analyteเพิ่มสองเท่าโดยอัตโนมัติ","Column polarityเปลี่ยนตามfill volume","Carrier gas compositionเปลี่ยนเอง"],
+    rationale:"Static headspace responseขึ้นกับpartition coefficientและphase ratio β; liquid/headspace volumesจึงเป็นcritical conditions.",
+    traps:["Headspace samplingขึ้นกับgas concentrationอย่างมาก","โจทย์บอกtotal analyteเท่าเดิม","Column chemistryไม่เปลี่ยน","Carrier gasไม่ได้ปรับอัตโนมัติจากfill volume"],
+    difficulty:"hard",
+    ref:"Static headspace quantitative theory"
+  },
+  {
+    topic:"Headspace GC / vial leak diagnosis",
+    prompt:"Replicate headspace vialsบางใบให้areaของทั้งanalyteและinternal standardต่ำพร้อมกันมาก แต่area ratioยังใกล้เดิม. Crimp inspectionพบcapหลวม. ข้อใดเหมาะสมที่สุด?",
+    options:["Vial leakทำให้volatile headspaceสูญเสีย; IS ratioอาจชดเชยบางส่วนแต่ต้องinvestigate vial integrityและacceptance","Analyte degradationเฉพาะตัว","Detector saturation","Column bleed","RRFผิด"],
+    rationale:"Common-mode lossของanalyteและISพร้อมphysical evidenceของcapหลวมชี้headspace leak; ratioอาจmask absolute lossแต่ไม่ได้ทำให้sample preparation valid.",
+    traps:["Selective degradationควรเปลี่ยนratio","Saturationให้high signal problem","Column bleedให้backgroundไม่ใช่lowall peaks","RRFไม่ทำให้absolute areasตกจากvialหนึ่ง"],
+    difficulty:"hard",
+    ref:"Headspace GC system/sample integrity principles"
+  },
+  {
+    topic:"Headspace GC / standard addition calculation",
+    prompt:"Matrix headspace responseสงสัยsuppression. Unspiked sample area ratio=0.40; เมื่อspikeเพิ่ม solvent 50 µg/g ratio=0.65. สมมติlinearและinterceptจากmatrix constant. Estimated original solvent concentrationโดยstandard additionเท่าใด?",
+    options:["80 µg/g","20 µg/g","50 µg/g","130 µg/g","32.5 µg/g"],
+    rationale:"Response increment0.25เกิดจาก50µg/g; slope=0.25/50=0.005 perµg/g. Original response0.40/slope=80µg/g.",
+    traps:["20เกิดจากกลับratio","50คือspike amount","130คือบวกspikeผิด","32.5คือmultiply ratioผิด"],
+    difficulty:"hard",
+    ref:"Standard-addition quantitative analysis",
+    calc:["Slope=(0.65−0.40)/50=0.005","Coriginal=0.40/0.005=80 µg/g"]
+  },
+  {
+    topic:"Headspace GC / matrix mismatch",
+    prompt:"Residual solvent standardเตรียมในwater แต่sampleเป็นhigh-salt viscous matrix. Standard curvelinearมากแต่spike recoveryในsample=135%. ข้อใดเป็นสมมติฐานที่ดีที่สุด?",
+    options:["Matrix partitioningต่างจากaqueous standards ทำให้headspace response factorไม่matched; ต้องmatrix-matchหรือใช้appropriate calibration strategy","Sampleมีsolventเพิ่มจากcolumn bleedแน่นอน","Linearityสูงพิสูจน์accuracyแล้ว","ลดdetector temperatureจะแก้matrix effect","ใช้retention timeแทนarea"],
+    rationale:"Headspace responseขึ้นกับpartition coefficientและphase ratio; matrix salt/viscosity/compositionสามารถเปลี่ยนpartitioning ทำให้external aqueous calibration biasแม้linear.",
+    traps:["Column bleedไม่ได้อธิบาย135% spike recoveryจำเพาะ","Linearityไม่เท่ากับaccuracyในmatrix","Detector temperatureไม่แก้sample partitioningโดยตรง","Retention timeไม่ใช่quantitative response"],
+    difficulty:"hard",
+    ref:"Headspace GC matrix-effect principles"
+  },
+
+  // Case 17 — Size-exclusion chromatography biologic
+  {
+    topic:"SEC / separation principle",
+    prompt:"Protein drug monographใช้SEC columnสำหรับวัดhigh-molecular-weight species (HMWS). กลไกหลักของSECคือข้อใด?",
+    options:["แยกตามhydrodynamic sizeจากการเข้าถึงpore volumeต่างกัน โดยspeciesใหญ่กว่ามักออกก่อน","แยกตามchargeด้วยion-exchange sites","แยกตามhydrophobicityด้วยC18","แยกตามchirality","แยกตามboiling point"],
+    rationale:"SECไม่มีideal strong adsorption; large moleculesเข้าถึงporesได้น้อยจึงtravel pathสั้นและeluteก่อนsmall species.",
+    traps:["Chargeเป็นIEX","Hydrophobicityเป็นRP-HPLC","Chiralityเป็นchiral LC","Boiling pointเป็นGC"],
+    difficulty:"hard",
+    ref:"Size-exclusion chromatography theory"
+  },
+  {
+    topic:"SEC / void volume interpretation",
+    prompt:"SEC chromatogramมีpeakหนึ่งออกใกล้void volumeและเพิ่มขึ้นหลังheat stressของprotein. Peakนี้น่าจะสอดคล้องกับอะไร?",
+    options:["Large aggregates/HMWSที่ถูกexcludeจากporesมาก","Monomerที่เล็กที่สุด","Free amino acids","Buffer salts","Detector noiseเท่านั้น"],
+    rationale:"Speciesขนาดใหญ่มากเข้าถึงpore volumeน้อยและeluteใกล้void volume; heat stressมักเพิ่มaggregates.",
+    traps:["Monomerretainsผ่านpore volumeมากกว่าaggregate","Amino acidsและsaltsเล็กมากออกช้ากว่า/total volume","Patternstress-dependentสนับสนุนreal species"],
+    difficulty:"hard",
+    ref:"SEC aggregate analysis"
+  },
+  {
+    topic:"SEC / nonspecific interaction",
+    prompt:"Protein SEC peakมีtailingและretentionเปลี่ยนเมื่อionic strengthลดลง ทั้งที่molecular sizeไม่เปลี่ยน. ข้อใดควรสงสัย?",
+    options:["Secondary electrostatic interactionระหว่างproteinกับstationary phaseนอกเหนือจากsize-exclusion mechanism","Proteinทุกตัวต้องเปลี่ยนMWเมื่อsaltลด","UV detector drift","Autosampler carryoverเท่านั้น","Void volumeเพิ่มเพราะtemperatureคงที่"],
+    rationale:"Ideal SECต้องminimize non-size interactions. Ionic-strength dependenceของretention/shapeบ่งชี้electrostatic adsorption/secondary interactions.",
+    traps:["Saltไม่ได้เปลี่ยนcovalent MWโดยอัตโนมัติ","Detector driftไม่อธิบายretention dependenceon ionic strength","Carryoverไม่สร้างsystematic ionic-strength effect","Void volumeไม่ได้เพิ่มเองจากsaltแบบคำอธิบายหลัก"],
+    difficulty:"hard",
+    ref:"SEC method development for proteins"
+  },
+  {
+    topic:"SEC / aggregate quantitation limitation",
+    prompt:"HMWSและmonomerมีUV extinction coefficientsไม่เท่ากันเล็กน้อย. หากคำนวณaggregate%ด้วยarea normalizationโดยสมมติresponseเท่ากัน ข้อใดเหมาะสมที่สุด?",
+    options:["อาจเกิดbiasในmass fractionและควรประเมินresponse equivalence/RRFตามintended accuracy","Area%เท่ากับmass%เสมอในSEC","Retention timeแก้response differenceอัตโนมัติ","ต้องใช้GCแทนSEC","ให้ปรับareaให้รวม100%แล้วbiasหาย"],
+    rationale:"Area normalization assumes equal response per mass/mole; differenceในabsorptivityทำให้area fractionไม่เท่ากับmass fraction.",
+    traps:["ไม่ใช่สัจพจน์","Retentionไม่แก้detector response factor","GCไม่เหมาะกับintact proteins","Normalizationเพียงบังคับsum ไม่แก้RRF bias"],
+    difficulty:"hard",
+    ref:"Quantitative SEC response-factor principles"
+  },
+  {
+    topic:"SEC / system suitability",
+    prompt:"SEC SSTกำหนด resolutionระหว่างdimerและmonomer NLT1.5. Standard monomerบริสุทธิ์ไม่มีdimerเพียงพอให้วัดRs. แนวทางใดสมเหตุสมผลที่สุด?",
+    options:["ใช้system suitability mixture/ stressed or spiked sampleที่มีทั้งสองspeciesในระดับเหมาะสมตามvalidated procedure","คำนวณRsจากmonomer peakเดียว","ยกเลิกRs criterionทุกrun","ใช้tailing factorของmonomerแทนRsโดยอัตโนมัติ","เพิ่มinjection volumeจนmonomerแตกเป็นสองpeak"],
+    rationale:"Resolutionต้องมีสองpeaksที่represent critical pair; SST materialควรถูกdesignedให้challenge separationอย่างเหมาะสม.",
+    traps:["Rsต้องใช้สองretention positions/widths","ห้ามลบcritical SSTโดยไม่มีlifecycle justification","Tailingไม่เทียบเท่าcritical pair resolution","Overloadเพื่อสร้างartificial splitไม่ใช่solution"],
+    difficulty:"hard",
+    ref:"ICH Q14; SEC system suitability design"
+  },
+
+  // Case 18 — Chiral HPLC
+  {
+    topic:"Chiral LC / purpose",
+    prompt:"Racemic drugมีR-enantiomerเป็นactiveและS-enantiomerเป็นspecified impurity. เหตุผลที่ achiral C18 methodทั่วไปไม่เพียงพอสำหรับenantiomeric purityคือข้อใด?",
+    options:["Enantiomersมีphysical propertiesเกือบเหมือนกันในachiral environment จึงต้องมีchiral recognition/selectivityเพื่อแยก","EnantiomersมีMWต่างกันมาก","UV wavelengthของสองenantiomerต่างกันเสมอ","C18แยกได้เพราะRจะออกก่อนเสมอ","S-enantiomerไม่ดูดUV"],
+    rationale:"Enantiomersต่างinteractionเมื่ออยู่ในchiral environment; achiral stationary/mobile phaseมักให้retentionเหมือนกัน.",
+    traps:["Enantiomersมีsame formula/MW","UV spectraในachiral mediumมักเหมือนกัน","ไม่มีuniversal R-first rule","ทั้งสองมักมีchromophoreเดียวกัน"],
+    difficulty:"hard",
+    ref:"Chiral chromatography principles"
+  },
+  {
+    topic:"Chiral LC / enantiomeric excess",
+    prompt:"Chiral HPLC (response factorsเท่ากัน) ให้ R area=97.0% และ S area=3.0%. Enantiomeric excess (ee) ของRประมาณเท่าใด?",
+    options:["94% ee R","97% ee R","3% ee R","100% ee R","91% ee R"],
+    rationale:"ee=|%R−%S|=97−3=94%.",
+    traps:["97%คือenantiomer fractionไม่ใช่ee","3%คือminor fraction","ไม่ใช่enantiopure","91%คำนวณผิด"],
+    difficulty:"hard",
+    ref:"Stereochemical purity calculations",
+    calc:["ee=97%−3%=94% R"]
+  },
+  {
+    topic:"Chiral LC / racemate spike suitability",
+    prompt:"Assay sampleปกติมีS-enantiomerต่ำมากจนไม่เห็นcritical separationชัด. เหตุผลที่ใช้racemate-spiked SST solutionมีประโยชน์คืออะไร?",
+    options:["สร้างทั้งRและS peaksในระดับเหมาะสมเพื่อยืนยันresolutionของcritical enantiomer pair","เพิ่มassay potencyของsample","ทำให้columnกลายเป็นachiral","ใช้แทนreference standardทั้งหมด","ลดretention timeของRเป็นศูนย์"],
+    rationale:"SSTควรchallenge chiral separation; racemate/spikeช่วยให้minor enantiomerมีsignalเพียงพอวัดRs.",
+    traps:["ไม่ได้เพิ่มtrue potency","ไม่เปลี่ยนstationary phase chirality","ยังต้องcharacterized standardsตามmethod","ไม่ได้ทำให้tRเป็นศูนย์"],
+    difficulty:"hard",
+    ref:"Chiral LC system suitability"
+  },
+  {
+    topic:"Chiral LC / temperature selectivity",
+    prompt:"Chiral method Rs=1.7ที่20°Cแต่1.2ที่30°C ขณะที่pressureและefficiencyแทบไม่เปลี่ยน. ข้อใดน่าจะถูกต้องที่สุด?",
+    options:["Chiral recognition/selectivityมีtemperature dependence แม้column efficiencyใกล้เดิม จึงtemperatureเป็นcritical method parameter","Rsลดเพราะdetector wavelengthเปลี่ยนอัตโนมัติ","Pressureคงที่พิสูจน์ว่าRsต้องคงที่","เพิ่มsample concentrationจะแก้selectivity","Temperatureไม่มีผลต่อthermodynamic interactions"],
+    rationale:"Chiral separationมักไวต่อenthalpy/entropyของdiastereomeric interactions; αเปลี่ยนตามtemperatureได้มากโดยpressure/Nเปลี่ยนน้อย.",
+    traps:["Detector wavelengthไม่ได้เปลี่ยนอัตโนมัติ","Resolutionขึ้นกับselectivityด้วยไม่ใช่pressure/Nเท่านั้น","Concentrationไม่แก้thermodynamic selectivityและอาจoverload","Temperatureมีผลต่อequilibriaชัด"],
+    difficulty:"hard",
+    ref:"Chiral chromatography thermodynamics"
+  },
+  {
+    topic:"Chiral LC / RRF and minor enantiomer",
+    prompt:"S-enantiomer response factorเทียบR =0.80. Area normalizationที่ไม่แก้RRFให้S=2.0%. Corrected S fractionโดยประมาณ (เมื่อSมีสัดส่วนต่ำมาก) ใกล้ข้อใด?",
+    options:["ประมาณ2.5%","1.6%","2.0%","0.8%","4.0%"],
+    rationale:"Minor impurityที่responseต่ำกว่าR จะถูกunderestimate; first-order correction≈2.0/0.80=2.5%. สำหรับexact normalizationอาจต่างเล็กน้อยแต่2.5%ใกล้สุด.",
+    traps:["1.6คือคูณRRFผิดทิศ","2.0คือไม่แก้","0.8คือRRF","4.0ไม่มีbasis"],
+    difficulty:"hard",
+    ref:"Chiral impurity response-factor concepts",
+    calc:["Approx corrected S≈2.0/0.80=2.5%"]
+  },
+
+  // Case 19 — LC assay with monograph suitability/qualification logic
+  {
+    topic:"Compendial method / verification vs validation",
+    prompt:"QC labนำofficial pharmacopoeial assay methodมาใช้กับproductที่ตรงmonographโดยไม่ดัดแปลง. แนวทางใดเหมาะสมที่สุด?",
+    options:["ทำcompendial method verificationว่าสามารถปฏิบัติmethodได้เหมาะสมในlab/product matrixตามcharacteristicsที่เกี่ยวข้อง; ไม่จำเป็นต้องrevalidateทุกparameterแบบmethodใหม่โดยอัตโนมัติ","ไม่ต้องทำอะไรเพราะเป็นofficial method","ต้องfull validationทุกparameterเหมือนnovel methodเสมอ","ทำเฉพาะinstrument qualificationก็พอ","เปลี่ยนmobile phaseให้เหมาะกับlabโดยไม่ประเมินผล"],
+    rationale:"Compendial proceduresยังต้องdemonstrate suitabilityภายใต้actual conditions of use; extentเป็นverificationตามapplicable pharmacopoeial/regulatory expectations ไม่ใช่zero workหรือfull revalidationทุกครั้ง.",
+    traps:["Official statusไม่ลบresponsibilityของlab","Full revalidationอาจเกินจำเป็นถ้าไม่modified","Instrument qualificationไม่พิสูจน์method performanceในmatrix","Modificationอาจtrigger additional validation/change control"],
+    difficulty:"hard",
+    ref:"USP <1226> Verification of Compendial Procedures; ICH Q2(R2)"
+  },
+  {
+    topic:"Compendial LC / instrument qualification",
+    prompt:"เครื่องHPLCผ่านinstallation/operational/performance qualificationแล้ว. ข้อใดถูกต้องที่สุดเกี่ยวกับการใช้official monograph method?",
+    options:["Instrument qualificationเป็นnecessary infrastructureแต่ไม่แทนsystem suitabilityของแต่ละrunหรือmethod verificationในactual use","Qualificationทำให้ไม่ต้องsystem suitabilityอีก","Qualificationพิสูจน์specificityของทุกmethod","Qualificationทำให้reference standardไม่ต้องมีpotency","Qualificationแทนanalyst trainingได้"],
+    rationale:"Qualificationแสดงว่าequipmentเหมาะและทำงานตามdesign แต่run-specific performanceและmethod suitabilityยังต้องประเมินตามprocedure.",
+    traps:["SSTยังต้องตามmonograph","Specificityเป็นmethod/matrix property","Reference standardต้องcharacterized","Training/competencyเป็นคนละcontrol"],
+    difficulty:"hard",
+    ref:"GMP equipment qualification; USP <621>/<1226>"
+  },
+  {
+    topic:"Compendial LC / allowed adjustment",
+    prompt:"Labต้องการลดrun timeของofficial LC monographโดยเปลี่ยนcolumn lengthและparticle size. ก่อนทำควรพิจารณาอะไรสำคัญที่สุด?",
+    options:["ขอบเขต allowable adjustmentsตามpharmacopoeia, preservation of chromatographic performance/SST และneed for additional verification/validation","ลดrun timeได้เสมอถ้าAPI retentionยังเห็น","เปลี่ยนได้โดยไม่documentเพราะsameL1","ใช้areaอย่างเดียวพิสูจน์equivalence","ถ้าpressureต่ำลงถือว่าequivalent"],
+    rationale:"Compendial chromatographyมีกรอบallowed adjustmentsแต่ต้องรักษาselectivity/system suitabilityและdocument impact; บางchangesเกินขอบเขตและเป็นmethod modification.",
+    traps:["RetentionของAPIอย่างเดียวไม่พอ","SameL1ไม่รับประกันsameperformance","Areaไม่ประเมินcritical separation","Pressureไม่ใช่equivalence criterion"],
+    difficulty:"hard",
+    ref:"USP <621> allowable adjustments; analytical lifecycle"
+  },
+  {
+    topic:"Compendial LC / asymmetry vs tailing",
+    prompt:"Monographกำหนด tailing factor NMT2.0 แต่software reportให้ asymmetry factor As=1.6 ที่10% peak height ไม่ใช่USP tailing factorที่5% height. ข้อใดเหมาะสมที่สุด?",
+    options:["ห้ามนำAs=1.6ไปเทียบกับUSP tailing limitโดยตรงโดยไม่ยืนยันนิยาม/algorithmเดียวกัน","ถือว่าผ่านเพราะ1.6<2.0","คูณAsด้วย2แล้วเทียบ","Asและtailing factorเหมือนกันทุกsoftware","ใช้peak areaแทนทั้งสอง"],
+    rationale:"Peak asymmetry metricsมีนิยามและmeasurement heightต่างกัน; acceptance criterionต้องใช้metricตามmonograph/validated calculation.",
+    traps:["ตัวเลขต่ำกว่าlimitไม่ได้พอถ้าmetricคนละนิยาม","ไม่มีuniversalfactor2 conversion","Software namingไม่ทำให้นิยามเท่ากัน","Areaไม่แทนshape metric"],
+    difficulty:"hard",
+    ref:"USP <621> peak symmetry/tailing definitions"
+  },
+  {
+    topic:"Compendial LC / SST failure after sample",
+    prompt:"Initial SSTผ่าน. หลังsample 20 injections bracketing standardพบtailing2.3 (limit2.0) และRSDยังผ่าน. Sample resultsก่อนbracketควรจัดการอย่างไรเหมาะสมที่สุด?",
+    options:["ประเมินrun validityตามSOP/monographและinvestigateเมื่อSST/bracketingไม่ผ่าน; ไม่ควรถือsampleทั้งหมดvalidโดยอัตโนมัติ","ถือvalidทั้งหมดเพราะinitial SSTผ่าน","ตัดbracketing standardออก","เปลี่ยนtailing limitเป็น2.5","เฉลี่ยtailingต้นกับท้ายแล้วถ้า≤2ถือว่าผ่าน"],
+    rationale:"Bracketing/end SSTใช้ยืนยันsystem performanceตลอดsequence; failureอาจinvalidate affected intervalและต้องinvestigateตามpredefined rules.",
+    traps:["Initial passไม่รับประกันlate-run performance","ห้ามลบfailed control","Spec changeต้องformal science/regulatory basis","Averagingpass/fail checkpointsไม่ใช่usual acceptance logic"],
+    difficulty:"hard",
+    ref:"GMP chromatographic sequence control; USP <621>"
+  },
+
+  // Case 20 — Multi-technique analytical decision
+  {
+    topic:"Analytical technique selection / polymorph",
+    prompt:"ต้องแยกคำถามว่า API lotสองlotมีchemical purityเท่ากันแต่ต่างcrystal formหรือไม่ เทคนิคใดให้หลักฐานโดยตรงที่สุด?",
+    options:["PXRD","HPLC assay","UV absorbance","Acid-base titration","Headspace GC"],
+    rationale:"PXRD fingerprintสะท้อนcrystal latticeและแยกpolymorphsได้โดยตรงมากกว่าassay/solution techniques.",
+    traps:["HPLCในsolutionมักสูญเสียsolid-state information","UVไม่บอกlattice","Titrationวัดequivalents","HS-GCวัดvolatiles"],
+    difficulty:"hard",
+    ref:"ICH Q6A solid-state characterization"
+  },
+  {
+    topic:"Analytical technique selection / amorphous fraction",
+    prompt:"ต้องติดตามการเพิ่มamorphous contentเล็กน้อยในpredominantly crystalline APIหลังmilling. ชุดเทคนิคใดมีเหตุผลมากที่สุดสำหรับorthogonal assessment?",
+    options:["PXRDร่วมกับDSC","GC-FIDร่วมกับKarl Fischer","Titrationร่วมกับUV","SECร่วมกับELISA","Headspace GCร่วมกับviscometer"],
+    rationale:"PXRDให้crystallinity patternและDSCให้thermal transitions/glass transition/melting changes จึงorthogonalต่อsolid-state change.",
+    traps:["GC/KFเน้นvolatile/water","Titration/UVเน้นchemical amount","SEC/ELISAเหมาะmacromolecules","HS-GC/viscosityไม่directต่อcrystallinity"],
+    difficulty:"hard",
+    ref:"Solid-state pharmaceutical characterization"
+  },
+  {
+    topic:"Analytical technique selection / degradation identity",
+    prompt:"HPLCพบunknown degradation peakและต้องการข้อมูลmolecular massเพื่อช่วยidentify ขั้นต่อไปใดเหมาะสมที่สุด?",
+    options:["LC–MS","เพิ่มUV wavelengthเพียงอย่างเดียว","Friability test","PXRDของtabletทั้งเม็ดอย่างเดียว","Tapped density"],
+    rationale:"LC-MSเชื่อมchromatographic separationกับmass-to-charge informationของunknown speciesและช่วยstructural elucidation.",
+    traps:["UV spectraให้chromophore infoจำกัดไม่ใช่molecular mass","Friability/flowไม่เกี่ยวchemical identity","PXRDไม่เหมาะidentifytrace solution degradantโดยตรง"],
+    difficulty:"hard",
+    ref:"Analytical identification strategies"
+  },
+  {
+    topic:"Analytical technique selection / trace metals",
+    prompt:"ต้องวิเคราะห์elemental impurity Pb, Cd, As, Hg ระดับtraceในAPI เทคนิคใดเหมาะสมที่สุดโดยทั่วไป?",
+    options:["ICP-MS","HPLC-UV","DSC","FTIR","Dissolution apparatus"],
+    rationale:"ICP-MSให้multi-element trace sensitivityและเป็นเทคนิคหลักสำหรับelemental impuritiesหลายชนิด.",
+    traps:["HPLC-UVไม่วัดelementsโดยตรง","DSCวัดthermal","FTIRวัดvibrational functional groups","Dissolutionวัดrelease"],
+    difficulty:"hard",
+    ref:"ICH Q3D elemental impurities; pharmacopeial elemental analysis"
+  },
+  {
+    topic:"Analytical technique selection / volatile impurity",
+    prompt:"Unknown impurityมีboiling pointต่ำและสูญหายเมื่อsample solutionเปิดฝาทิ้งไว้. เทคนิคใดควรพิจารณาเป็นลำดับต้น?",
+    options:["Headspace GC-MS","SEC-UV","PXRD","Potentiometric titration","Dissolution UV"],
+    rationale:"Volatile unknownเหมาะกับheadspace samplingเพื่อลดloss/matrixและMSช่วยidentity.",
+    traps:["SECใช้sizeของmacromolecules","PXRD solid-state lattice","Titrationไม่identifyvolatile species","Dissolutionไม่ใช่identity technique"],
+    difficulty:"hard",
+    ref:"Volatile impurity analysis principles"
+  }
+];
+
 function buildQuestion(d: Draft, index: number): McqQuestion {
-  const pos = answerPositions[index];
+  const pos = answerPositions[index % answerPositions.length];
   const correct = d.options[0];
   const distractors = d.options.slice(1);
   const shuffled = [...distractors];
@@ -1007,10 +1490,10 @@ function buildQuestion(d: Draft, index: number): McqQuestion {
       name_th: "เภสัชกรรมอุตสาหการ IP1",
       icon: "🏭",
       exam_type: "PLE-CC1",
-      question_count: 100,
+      question_count: 150,
       created_at: "2026-09-22 16:00:00",
     },
   };
 }
 
-export const IP1_PILOT_050: McqQuestion[] = [...D, ...D2].map(buildQuestion);
+export const IP1_PILOT_050: McqQuestion[] = [...D, ...D2, ...D3].map(buildQuestion);
