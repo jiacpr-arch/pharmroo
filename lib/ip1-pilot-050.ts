@@ -95,7 +95,7 @@ const D: Draft[] = [
     traps:["Core Q30 96% ทำให้ disintegrant ต่ำไม่ใช่สมมติฐานแรก","Acid stage ผ่านอยู่แล้ว; เพิ่ม coat อาจยิ่งชะลอ buffer release","Micronization ไม่อธิบายความต่างก่อน/หลัง coating เมื่อ core ผ่านดี","Assay ไม่ได้ตอบ mechanism ของ delayed buffer release และไม่ใช่ root-cause test"],
     difficulty:"hard",
     ref:"Aulton’s Pharmaceutics; enteric coating process-development principles; USP delayed-release performance concepts"
-  }
+  },
   {
     topic:"Preformulation / DSC",
     prompt:"ต้องการศึกษาว่า API เกิดการเปลี่ยนแปลงทางความร้อนหรือมี drug–excipient interaction ที่สะท้อนจาก melting endotherm เครื่องมือใดเหมาะสมที่สุด?",
@@ -132,7 +132,7 @@ const D: Draft[] = [
     difficulty:"hard",
     ref:"USP <621> Chromatography; chromatographic method-development principles",
     calc:["ΔtR = 8.06 − 7.40 = 0.66 min","W1 + W2 = 0.44 + 0.47 = 0.91 min","Rs = 2(0.66)/0.91 ≈ 1.45","เทียบเกณฑ์: 1.45 < 1.50 → fail marginally"]
-  }
+  },
   {
     topic:"HPLC peak tailing",
     prompt:"Weakly basic API (pKa 8.3) วิเคราะห์ด้วย silica-based C18. ที่ mobile-phase pH 6.8 พบ tailing factor 2.4; เมื่อปรับ pH เป็น 3.0 โดยคง organic ratio ใกล้เดิม tailing factor ลดเป็น 1.2 และ efficiency ดีขึ้น. ข้อใดอธิบายผลนี้ได้เหมาะสมที่สุด?",
@@ -141,7 +141,7 @@ const D: Draft[] = [
     traps:["Weak base ที่ pH 3 จะ protonated มากขึ้น ไม่ใช่ unionized มากขึ้น","C18 ligandไม่ได้เปลี่ยนเป็น charged phaseเพียงเพราะ pHต่ำ","Detector ไม่ได้เปลี่ยน chromatographic peak shape ที่เกิดจาก column interaction","Viscosityอาจเปลี่ยนตาม solvent composition/temperature แต่ไม่ใช่คำอธิบายจำเพาะของ silanol suppression"],
     difficulty:"hard",
     ref:"USP <621>; silica-based RP-HPLC selectivity and silanol-interaction principles"
-  }
+  },
   {
     topic:"Stability-indicating HPLC",
     prompt:"Forced degradation ของ Drug X ให้ผล: unstressed assay 99.4%; acid stress assay 87.0% และมี degradant D = 11.8%. D elutes ที่ shoulder ของ API. PDA รายงาน peak purity 'pass' แต่ D และ API มี UV spectra คล้ายกันมาก. ข้อใดเป็นข้อสรุปที่เหมาะสมที่สุดก่อนประกาศว่าวิธีเป็น stability-indicating?",
@@ -150,7 +150,7 @@ const D: Draft[] = [
     traps:["PDA passไม่ใช่หลักฐานเด็ดขาดเมื่อ spectra คล้ายและมี chromatographic shoulder","Mass balanceสนับสนุน degradation accounting แต่ไม่ยืนยัน resolution/selectivity","ลด stressเพียงเพื่อทำให้ impurityน้อยลงไม่แก้ข้อจำกัด method","Area normalizationไม่แทน chromatographic separationของ critical impurity"],
     difficulty:"hard",
     ref:"ICH Q2(R2); ICH Q14; stability-indicating method-development principles"
-  }
+  },
   {
     topic:"Gradient HPLC",
     prompt:"ตัวอย่างมี impurities ตั้งแต่ polar มากจนถึง hydrophobic มาก. Isocratic RP-HPLC ทำให้ early peaks ออกใกล้ solvent front แต่ hydrophobic impurity ออกหลัง 35 นาทีและ peak กว้าง วิธีใดเหมาะสมที่สุด?",
@@ -287,7 +287,7 @@ const D: Draft[] = [
     difficulty:"hard",
     ref:"ICH Q1A(R2) concepts; pharmaceutical stability kinetics",
     calc:["k = ln(102/95) / 12 ≈ 0.00592 month⁻¹","t = ln(102/90) / 0.00592","t ≈ 21.1 months"]
-  }
+  },
   {
     topic:"Forced degradation",
     prompt:"วัตถุประสงค์สำคัญของ forced degradation ในการพัฒนา analytical method คือข้อใด?",
@@ -323,7 +323,7 @@ const D: Draft[] = [
     traps:["Passing reinjectionไม่พิสูจน์ instrument errorเมื่อไม่มี supporting evidence","การเฉลี่ยผล OOSกับ passing resultเพื่อให้ผ่านไม่ถูกหลัก","Retestจำนวนมากโดยไม่มี protocolเป็น testing into compliance","Historical meanไม่ใช่เหตุผล invalidate valid OOS result"],
     difficulty:"hard",
     ref:"FDA Guidance for Industry: Investigating OOS Test Results for Pharmaceutical Production; GMP data-integrity principles"
-  }
+  },
   {
     topic:"CAPA",
     prompt:"ข้อใดเป็นตัวอย่างของ Corrective Action มากที่สุด?",
@@ -449,7 +449,7 @@ const D: Draft[] = [
     traps:["Sampling/trainingเพิ่ม detectionแต่ไม่แก้ feeder/hopper mechanism","การขยาย specเป็นการยอมรับปัญหา ไม่ใช่แก้สาเหตุ","ไม่มี evidence ชี้ supplierและจะสร้าง uncontrolled changeใหม่","Compression forceมีผลต่อ compact properties ไม่แก้ die-fill mass variabilityจาก feeder"],
     difficulty:"hard",
     ref:"ICH Q9(R1); ICH Q10; FDA Process Validation lifecycle principles"
-  }
+  },
   {
     topic:"Quality risk management / FMEA",
     prompt:"FMEA มี 2 failure modes: A = cross-contamination ของ highly potent API (S=10,O=2,D=2) และ B = cosmetic tablet mottling (S=4,O=5,D=2). ทั้งสองมี RPN=40. ข้อใดเป็นการตีความที่เหมาะสมที่สุดตามหลัก Quality Risk Management?",
@@ -458,7 +458,7 @@ const D: Draft[] = [
     traps:["RPNเท่ากันไม่ได้แปล risk profileเท่ากัน","Occurrenceสูงอย่างเดียวไม่ชนะ severityสูงเสมอ","Mitigationต้อง risk-specific ไม่ใช่ one-size-fits-all","ไม่มี universal RPN cutoffที่ใช้ปิด riskโดยอัตโนมัติ"],
     difficulty:"hard",
     ref:"ICH Q9(R1) Quality Risk Management"
-  }
+  },
   {
     topic:"Blend uniformity / segregation",
     prompt:"Low-dose direct-compression tablet: blend uniformity ที่ blender discharge ผ่าน (RSD 2.1%). ระหว่าง compression tablet weight RSD คงที่ 1.2% แต่ content uniformity ของ 20 เม็ดช่วงต้นผ่านและ 20 เม็ดท้าย batch มีแนวโน้มต่ำลงต่อเนื่อง. API d50 = 18 µm, major diluent d50 = 160 µm และมี pneumatic transfer ก่อนเข้า hopper. การศึกษาต่อใดแยก 'segregation ระหว่าง transfer/feed' ออกจาก 'analytical variability' ได้ดีที่สุด?",
@@ -467,7 +467,7 @@ const D: Draft[] = [
     traps:["Composite assayเฉลี่ยสัญญาณและอาจซ่อน gradient","Replicate injectionช่วยประเมิน analytical precisionแต่ไม่บอกว่าความเข้มข้นเปลี่ยนตาม process locationหรือไม่","Hardnessไม่วัด API distribution","Composite dissolutionไม่แยก process segregationจาก analytical variability"],
     difficulty:"hard",
     ref:"ICH Q8(R2); process-understanding and stratified content-uniformity principles"
-  }
+  },
   {
     topic:"OOT vs OOS / continued verification",
     prompt:"Assay specification 95–105%. 12 batches ล่าสุดยังผ่านทั้งหมด แต่ค่าเฉลี่ยลดจากประมาณ 100.1% เหลือ 97.9% อย่างต่อเนื่อง. จุดเปลี่ยนเริ่มพร้อมกันกับ (1) การเปลี่ยน reference-standard lot และ (2) การเพิ่ม granulation endpoint time 15%. ไม่มี deviation เปิดอยู่. การดำเนินการใดเหมาะสมที่สุดเป็นลำดับแรก?",
