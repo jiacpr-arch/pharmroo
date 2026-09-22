@@ -131,7 +131,7 @@ export default function Navbar() {
           <div className="mx-auto flex max-w-7xl gap-2 overflow-x-auto px-4 py-2 sm:px-6 lg:px-8">
             {[
               { key: "cc1", label: "ปี 4 · CC1", href: "/ple/practice" },
-              { key: "pc1", label: "ปี 6 · PC1", href: "/ple/practice?track=pc1" },
+              { key: "pc1", label: "ปี 6 · PC1", href: "/ple/pc1-pilot" },
               { key: "ip1", label: "ปี 6 · IP1", href: "/ple/practice?track=ip1" },
               { key: "phcp1", label: "ปี 6 · PHCP1", href: "/ple/practice?track=phcp1" },
             ].map((item) => {
