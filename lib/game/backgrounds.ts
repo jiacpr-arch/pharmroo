@@ -12,7 +12,7 @@ export const GAME_BACKGROUNDS: Record<string, { name: string }> = {
 };
 
 /** ฉากที่มีไฟล์รูปแล้ว — เพิ่ม id ที่นี่เมื่อวางรูปใน public/images/game/backgrounds/ */
-const GAME_BG_READY = new Set(["opd_room"]);
+const GAME_BG_READY = new Set(["opd_room", "drugstore_counter"]);
 
 export const DEFAULT_BG = "drugstore_counter";
 /** ฉากที่ใช้แทนเมื่อฉากที่ขอยังไม่มีรูป */
