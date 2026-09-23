@@ -10,6 +10,7 @@ import {
   recordWrong,
   scoreFor,
   shuffled,
+  takeLabelDraft,
 } from "./engine";
 import { isValidScenario, parseEmphasis } from "./types";
 import type { StoryNode } from "./types";
@@ -21,6 +22,7 @@ describe("createInitialState", () => {
     expect(easy.maxHp).toBe(7);
     expect(easy.referred).toBe(false);
     expect(easy.dispensed).toBe(0);
+    expect(easy.labelDraft).toEqual([]);
     const unknown = createInitialState("nope");
     expect(unknown.difficulty).toBe("normal");
     expect(unknown.hp).toBe(getDifficulty("normal").hp);
@@ -64,6 +66,26 @@ describe("record + grade + score", () => {
     expect(st.simTime).toBe(8);
     expect(st.queue).toEqual(then);
     expect(st.timeline[0].ok).toBe(true);
+  });
+
+  it("correct answers with onLabel push a line into labelDraft", () => {
+    const st = createInitialState();
+    recordCorrect(st, { tgt: "เขียนฉลาก", label: "ok", ok: true });
+    expect(st.labelDraft).toEqual([]);
+    recordCorrect(st, {
+      tgt: "เขียนฉลาก", label: "ok2", ok: true,
+      onLabel: { heading: "ขนาดรับประทาน", text: "1 เม็ด ทุก 6 ชม." },
+    });
+    expect(st.labelDraft).toEqual([{ heading: "ขนาดรับประทาน", text: "1 เม็ด ทุก 6 ชม." }]);
+  });
+
+  it("takeLabelDraft returns the accumulated lines and clears the draft", () => {
+    const st = createInitialState();
+    recordCorrect(st, { tgt: "เขียนฉลาก", label: "a", ok: true, onLabel: { heading: "H1", text: "T1" } });
+    recordCorrect(st, { tgt: "เขียนฉลาก", label: "b", ok: true, onLabel: { heading: "H2", text: "T2" } });
+    const taken = takeLabelDraft(st);
+    expect(taken).toEqual([{ heading: "H1", text: "T1" }, { heading: "H2", text: "T2" }]);
+    expect(st.labelDraft).toEqual([]);
   });
 
   it("wrong answers cost hp and time; hp floors at 0", () => {
@@ -139,5 +161,13 @@ describe("parseEmphasis / isValidScenario", () => {
     expect(isValidScenario({ slug: "x", title: "t", story: [{ choice: { q: "q", options: [{ ok: false }] } }] })).toBe(false);
     expect(isValidScenario({ slug: "x", title: "t", story: [{ skip: "s" }] })).toBe(false);
     expect(isValidScenario({ slug: "x", title: "t", story: [{ say: { who: "a", text: "b" } }, { end: true }] })).toBe(true);
+  });
+
+  it("accepts a well-formed labelPreview node and rejects a malformed one", () => {
+    expect(isValidScenario({
+      slug: "x", title: "t",
+      story: [{ labelPreview: { drugName: "Paracetamol", patientLabel: "คนไข้" } }, { end: true }],
+    })).toBe(true);
+    expect(isValidScenario({ slug: "x", title: "t", story: [{ labelPreview: { drugName: "Paracetamol" } }] })).toBe(false);
   });
 });
