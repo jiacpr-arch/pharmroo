@@ -104,7 +104,9 @@ export function GenericPlaceholder({ pose, mouthOpen }: FaceProps) {
 }
 
 export const GAME_CHARACTERS: Record<string, GameCharacter> = {
-  // เภสัชกรพี่เลี้ยง — เสียงของ "ครู" ตอนตอบผิด/สรุปท้ายเคส (SVG ล้วน ไม่มีรูป)
+  // เภสัชกรพี่เลี้ยง — เสียงของ "ครู" ตอนตอบผิด/สรุปท้ายเคส
+  // มีรูปจริงที่ public/images/game/characters/pharmacist_mentor/{idle,talk,stern,happy}.webp
+  // (Placeholder ด้านล่างเป็น SVG fallback เผื่อรูปโหลดไม่ขึ้น)
   pharmacist_mentor: {
     name: "ภก.พี่เก่ง",
     role: "เภสัชกรพี่เลี้ยง",
