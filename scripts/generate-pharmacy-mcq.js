@@ -220,7 +220,7 @@ function sleep(ms) {
   return new Promise((r) => setTimeout(r, ms));
 }
 
-async function callClaude(prompt, maxTokens = 8000) {
+async function callClaude(prompt, maxTokens = 16000) {
   for (let attempt = 0; attempt < 3; attempt++) {
     try {
       const controller = new AbortController();
@@ -393,7 +393,7 @@ async function generateForSubject(subject, subjectId, targetCount) {
     process.stdout.write(`  Batch ${b + 1}/${numBatches} (${thisBatch} ข้อ)... `);
 
     const prompt = buildGenerationPrompt(subject, subject.topic_areas, thisBatch, b);
-    const text = await callClaude(prompt, 8000);
+    const text = await callClaude(prompt, 16000);
 
     if (!text) {
       console.log("FAIL (no response)");
