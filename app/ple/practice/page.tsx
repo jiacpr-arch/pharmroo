@@ -99,17 +99,9 @@ async function PracticeContent({
       )}
       {track === "cc1" && (
         <>
-      <div className="mb-2 border-t pt-6">
-        <h2 className="text-lg font-bold">ฝึกข้อสอบ CC1</h2>
-        <p className="text-sm text-muted-foreground">เลือกวันสอบและหมวดวิชาที่ต้องการฝึก</p>
-      </div>
-
       {/* Day Filter */}
-      <div className="mb-4">
-        <h3 className="text-sm font-medium mb-2 text-muted-foreground">
-          วันสอบ
-        </h3>
-        <div className="flex gap-2">
+      <div className="mb-3">
+        <div className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-1 [scrollbar-width:none] sm:mx-0 sm:flex-wrap sm:overflow-visible sm:px-0">
           <Link href={subjectId ? `/ple/practice?subject=${subjectId}` : "/ple/practice"}>
             <Badge
               variant={!day ? "default" : "secondary"}
@@ -143,12 +135,9 @@ async function PracticeContent({
         </div>
       </div>
 
-      {/* Subject Filter */}
-      <div className="mb-6">
-        <h3 className="text-sm font-medium mb-2 text-muted-foreground">
-          หมวดวิชา
-        </h3>
-        <div className="flex flex-wrap gap-2">
+      {/* Subject Filter — แถวเดียวเลื่อนซ้ายขวาบนมือถือ จะได้ไม่ดันข้อสอบลงไปไกล */}
+      <div className="mb-3">
+        <div className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-1 [scrollbar-width:none] sm:mx-0 sm:flex-wrap sm:overflow-visible sm:px-0">
           <Link href={basePath}>
             <Badge
               variant={!subjectId ? "default" : "secondary"}
@@ -180,7 +169,7 @@ async function PracticeContent({
       </div>
 
       {/* Info */}
-      <div className="mb-6 text-sm text-muted-foreground">
+      <div className="mb-4 text-sm text-muted-foreground">
         {currentSubject ? (
           <span>
             {currentSubject.icon} {currentSubject.name_th}
@@ -233,19 +222,17 @@ export default async function PracticePage({
   const day = dayParam === 1 || dayParam === 2 ? dayParam : undefined;
 
   return (
-    <div className="mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
+    <div className="mx-auto max-w-4xl px-4 py-4 sm:px-6 sm:py-8 lg:px-8">
       {/* Header */}
-      <div className="mb-6">
+      <div className="mb-4 flex items-center gap-3">
         <Link
           href="/ple"
-          className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-brand mb-4"
+          aria-label="กลับหน้า PLE"
+          className="text-muted-foreground hover:text-brand"
         >
-          <ArrowLeft className="h-4 w-4" /> กลับหน้า PLE
+          <ArrowLeft className="h-5 w-5" />
         </Link>
-        <h1 className="text-2xl font-bold">ฝึกทำข้อสอบ PLE</h1>
-        <p className="text-muted-foreground text-sm mt-1">
-          เลือกตอบแล้วดูเฉลยทันที
-        </p>
+        <h1 className="text-xl font-bold sm:text-2xl">ฝึกทำข้อสอบ PLE</h1>
       </div>
 
       <Suspense
