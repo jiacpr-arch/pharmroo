@@ -51,6 +51,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
           role: user.role,
           membership_type: user.membership_type,
           membership_expires_at: user.membership_expires_at,
+          line_trial_expires_at: user.line_trial_expires_at,
         };
       },
     }),
@@ -125,17 +126,20 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
 
       return true;
     },
-    async jwt({ token, user, account }) {
+    async jwt({ token, user, account, trigger }) {
       if (user) {
         token.id = user.id;
         token.role = (user as { role?: string }).role;
         token.membership_type = (user as { membership_type?: string }).membership_type;
         token.membership_expires_at = (user as { membership_expires_at?: string | null }).membership_expires_at;
+        token.line_trial_expires_at = (user as { line_trial_expires_at?: string | null }).line_trial_expires_at;
         token.exam_category = (user as { exam_category?: string | null }).exam_category;
       }
-      // For OAuth providers, fetch fresh user data from DB
+      // For OAuth providers, fetch fresh user data from DB. A client-side
+      // `update()` also refreshes, e.g. after the LINE webhook granted a trial.
       if (
-        (account?.provider === "google" || account?.provider === "line") &&
+        ((account?.provider === "google" || account?.provider === "line") ||
+          trigger === "update") &&
         token.email
       ) {
         const dbUser = await db
@@ -148,6 +152,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
           token.role = dbUser.role;
           token.membership_type = dbUser.membership_type;
           token.membership_expires_at = dbUser.membership_expires_at;
+          token.line_trial_expires_at = dbUser.line_trial_expires_at;
           token.exam_category = dbUser.exam_category;
         }
       }
@@ -159,6 +164,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         (session.user as { role?: string }).role = token.role as string;
         (session.user as { membership_type?: string }).membership_type = token.membership_type as string;
         (session.user as { membership_expires_at?: string | null }).membership_expires_at = token.membership_expires_at as string | null;
+        (session.user as { line_trial_expires_at?: string | null }).line_trial_expires_at = token.line_trial_expires_at as string | null;
         (session.user as { exam_category?: string | null }).exam_category = token.exam_category as string | null;
       }
       return session;

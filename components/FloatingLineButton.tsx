@@ -6,6 +6,7 @@ import { X } from "lucide-react";
 import { trackLead } from "@/lib/analytics/conversions";
 import { CONTACT_INFO } from "@/lib/contact-info";
 import LineIcon from "@/components/LineIcon";
+import { LINE_TRIAL_DAYS } from "@/lib/limits";
 
 const LINE_OA_URL = CONTACT_INFO.lineUrl;
 const DISMISS_KEY = "pharmroo_line_fab_dismissed";
@@ -49,12 +50,14 @@ export default function FloatingLineButton() {
         href={LINE_OA_URL}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="แอด LINE ฟาร์มรู้ — ปรึกษาและรับข้อสอบฟรี"
+        aria-label={`แอด LINE ฟาร์มรู้ — รับสิทธิ์ทำข้อสอบ Premium ฟรี ${LINE_TRIAL_DAYS} วัน`}
         onClick={() => trackLead({ source: "line_fab" })}
         className="group flex items-center gap-2 rounded-full bg-[#06C755] py-2.5 pl-3 pr-4 text-white shadow-lg transition-all hover:bg-[#05b34c] hover:scale-105 active:scale-95"
       >
         <LineIcon className="h-6 w-6 shrink-0" />
-        <span className="text-sm font-semibold">แอด LINE รับข้อสอบฟรี</span>
+        <span className="text-sm font-semibold">
+          แอด LINE ทำข้อสอบฟรี {LINE_TRIAL_DAYS} วัน
+        </span>
       </a>
       <button
         type="button"

@@ -2,7 +2,20 @@ import { NextRequest, NextResponse } from "next/server";
 import { verifyLineSignature, replyLineMessage } from "@/lib/line";
 import { db } from "@/lib/db";
 import { lineLinkCodes, users } from "@/lib/db/schema";
-import { eq, and, gt } from "drizzle-orm";
+import { eq, and, gt, ne } from "drizzle-orm";
+import { claimLineTrial } from "@/lib/line-trial";
+import { LINE_TRIAL_DAYS } from "@/lib/limits";
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://pharmru.com";
+
+function formatThaiDate(iso: string): string {
+  return new Date(iso).toLocaleDateString("th-TH", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    timeZone: "Asia/Bangkok",
+  });
+}
 
 export const runtime = "nodejs";
 
@@ -31,7 +44,7 @@ export async function POST(request: NextRequest) {
       // New follower welcome message
       await replyLineMessage(
         event.replyToken,
-        "สวัสดีครับ! 🎉\nยินดีต้อนรับสู่ PharmRoo\n\nส่งรหัสเชื่อมต่อจากหน้า Profile เพื่อรับแจ้งเตือนผ่าน LINE"
+        `สวัสดีครับ! 🎉 ยินดีต้อนรับสู่ฟาร์มรู้\n\n🎁 รับสิทธิ์ทำข้อสอบ Premium ฟรี ${LINE_TRIAL_DAYS} วัน\n1) เข้าสู่ระบบแล้วไปที่หน้าโปรไฟล์\n${SITE_URL}/profile\n2) กด "สร้างรหัสเชื่อมต่อ"\n3) ส่งรหัส PHARMROO-XXXXXX ในแชทนี้\n\nระบบจะเปิดสิทธิ์ให้ทันที`
       );
     } else if (
       event.type === "message" &&
@@ -54,7 +67,25 @@ export async function POST(request: NextRequest) {
         )
         .then((rows) => rows[0]);
 
-      if (linkCode) {
+      const linkedElsewhere = linkCode
+        ? await db
+            .select({ id: users.id })
+            .from(users)
+            .where(
+              and(
+                eq(users.line_user_id, lineUserId),
+                ne(users.id, linkCode.user_id)
+              )
+            )
+            .then((rows) => rows[0])
+        : undefined;
+
+      if (linkCode && linkedElsewhere) {
+        await replyLineMessage(
+          event.replyToken,
+          "⚠️ LINE นี้เชื่อมต่อกับบัญชีฟาร์มรู้อื่นอยู่แล้ว\nหากต้องการความช่วยเหลือ พิมพ์บอกแอดมินในแชทนี้ได้เลย"
+        );
+      } else if (linkCode) {
         // Link the account
         await db
           .update(users)
@@ -67,9 +98,16 @@ export async function POST(request: NextRequest) {
         // Delete used code
         await db.delete(lineLinkCodes).where(eq(lineLinkCodes.id, linkCode.id));
 
+        const trial = await claimLineTrial(linkCode.user_id, lineUserId);
+        const trialLine = trial.granted
+          ? `\n\n🎁 เปิดสิทธิ์ Premium ฟรี ${LINE_TRIAL_DAYS} วันแล้ว!\nทำข้อสอบได้ไม่จำกัด + ดูเฉลยละเอียดทุกข้อ ถึง ${formatThaiDate(trial.expiresAt)}\n\nเริ่มทำข้อสอบ 👉 ${SITE_URL}/ple`
+          : trial.reason === "already_claimed"
+            ? "\n\n(สิทธิ์ Premium ฟรีใช้ได้ครั้งเดียวต่อบัญชี และได้รับไปแล้ว)"
+            : "";
+
         await replyLineMessage(
           event.replyToken,
-          "✅ เชื่อมต่อบัญชีสำเร็จ!\nคุณจะได้รับแจ้งเตือนผ่าน LINE แล้ว"
+          `✅ เชื่อมต่อบัญชีสำเร็จ!\nคุณจะได้รับแจ้งเตือนผ่าน LINE แล้ว${trialLine}`
         );
       } else {
         await replyLineMessage(

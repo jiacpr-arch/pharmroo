@@ -33,6 +33,8 @@ export const users = pgTable("users", {
   weak_subjects: jsonb("weak_subjects").default(sql`'[]'::jsonb`),
   line_user_id: text("line_user_id"),
   line_linked_at: text("line_linked_at"),
+  /** End of the one-time free Premium trial granted for linking LINE OA. */
+  line_trial_expires_at: text("line_trial_expires_at"),
   referral_code: text("referral_code").unique(),
   referred_by: text("referred_by"),
   created_at: text("created_at")
@@ -409,6 +411,19 @@ export const questionUnlocks = pgTable(
 // ========================================
 // 17. LINE Link Codes (for OA linking)
 // ========================================
+/**
+ * One row per LINE userId that has already claimed the link-LINE Premium
+ * trial, so the same LINE account can't farm trials across multiple web
+ * accounts. Deliberately not FK'd to users: the claim outlives the account.
+ */
+export const lineTrialClaims = pgTable("line_trial_claims", {
+  line_user_id: text("line_user_id").primaryKey(),
+  user_id: text("user_id").notNull(),
+  claimed_at: text("claimed_at")
+    .notNull()
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+});
+
 export const lineLinkCodes = pgTable("line_link_codes", {
   id: text("id")
     .primaryKey()

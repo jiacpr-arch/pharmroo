@@ -10,6 +10,18 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { User, Mail, Crown, Calendar, LogOut, BarChart3, ArrowRight, Share2, MessageCircle, Copy, Check } from "lucide-react";
 import StudentStats from "@/components/StudentStats";
 import LineContactCard from "@/components/LineContactCard";
+import { isTrialActive } from "@/lib/trial";
+import { LINE_TRIAL_DAYS } from "@/lib/limits";
+
+const LINK_POLL_MS = 4000;
+
+function formatThaiDate(iso: string): string {
+  return new Date(iso).toLocaleDateString("th-TH", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+}
 
 const membershipLabels: Record<string, string> = {
   free: "ฟรี",
@@ -47,9 +59,12 @@ export default function ProfilePage() {
     role?: string;
     membership_type?: string;
     membership_expires_at?: string | null;
+    line_trial_expires_at?: string | null;
   };
 
   const membershipType = user.membership_type || "free";
+  const onTrial =
+    membershipType === "free" && isTrialActive(user.line_trial_expires_at);
 
   return (
     <div className="mx-auto max-w-2xl px-4 py-8 sm:px-6 lg:px-8">
@@ -82,10 +97,26 @@ export default function ProfilePage() {
           <CardContent className="space-y-4">
             <div className="flex items-center justify-between">
               <span className="text-muted-foreground">แพ็กเกจ</span>
-              <Badge className={membershipColors[membershipType] || membershipColors.free}>
-                {membershipLabels[membershipType] || membershipType}
-              </Badge>
+              {onTrial ? (
+                <Badge className="bg-[#06C755]/10 text-[#06C755]">
+                  Premium ทดลองฟรี
+                </Badge>
+              ) : (
+                <Badge className={membershipColors[membershipType] || membershipColors.free}>
+                  {membershipLabels[membershipType] || membershipType}
+                </Badge>
+              )}
             </div>
+            {onTrial && user.line_trial_expires_at && (
+              <div className="flex items-center justify-between">
+                <span className="text-muted-foreground flex items-center gap-1">
+                  <Calendar className="h-4 w-4" /> สิทธิ์ทดลองถึง
+                </span>
+                <span className="text-sm font-medium">
+                  {formatThaiDate(user.line_trial_expires_at)}
+                </span>
+              </div>
+            )}
             {user.membership_expires_at && (
               <div className="flex items-center justify-between">
                 <span className="text-muted-foreground flex items-center gap-1">
@@ -115,10 +146,17 @@ export default function ProfilePage() {
           <CardHeader>
             <h3 className="font-semibold flex items-center gap-2">
               <MessageCircle className="h-5 w-5 text-[#06C755]" /> เชื่อมต่อ LINE
+              {!user.line_trial_expires_at && membershipType === "free" && (
+                <Badge className="bg-[#06C755] text-white">
+                  ฟรี Premium {LINE_TRIAL_DAYS} วัน
+                </Badge>
+              )}
             </h3>
           </CardHeader>
           <CardContent>
-            <LineLinkSection />
+            <LineLinkSection
+              offerTrial={!user.line_trial_expires_at && membershipType === "free"}
+            />
           </CardContent>
         </Card>
 
@@ -161,10 +199,13 @@ export default function ProfilePage() {
   );
 }
 
-function LineLinkSection() {
+function LineLinkSection({ offerTrial }: { offerTrial: boolean }) {
+  const { update } = useSession();
   const [code, setCode] = useState<string | null>(null);
+  const [codeCreatedAt, setCodeCreatedAt] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [linked, setLinked] = useState<{ trialExpiresAt: string | null } | null>(null);
 
   const generateCode = async () => {
     setLoading(true);
@@ -172,11 +213,61 @@ function LineLinkSection() {
       const res = await fetch("/api/line/generate-code", { method: "POST" });
       const data = await res.json();
       setCode(data.code);
+      setCodeCreatedAt(data.createdAt);
     } catch {
       // ignore
     }
     setLoading(false);
   };
+
+  // Wait for the webhook to link the account, then refresh the session so an
+  // unlocked trial takes effect without signing in again.
+  useEffect(() => {
+    if (!code || !codeCreatedAt || linked) return;
+    let cancelled = false;
+    const timer = setInterval(async () => {
+      try {
+        const res = await fetch("/api/line/status");
+        if (!res.ok) return;
+        const data: { linkedAt: string | null; trialExpiresAt: string | null } =
+          await res.json();
+        if (cancelled || !data.linkedAt || data.linkedAt < codeCreatedAt) return;
+        clearInterval(timer);
+        setLinked({ trialExpiresAt: data.trialExpiresAt });
+        await update();
+      } catch {
+        // keep polling
+      }
+    }, LINK_POLL_MS);
+    return () => {
+      cancelled = true;
+      clearInterval(timer);
+    };
+  }, [code, codeCreatedAt, linked, update]);
+
+  if (linked) {
+    const trialOn = isTrialActive(linked.trialExpiresAt);
+    return (
+      <div className="space-y-3">
+        <p className="text-sm font-medium text-[#06C755] flex items-center gap-1">
+          <Check className="h-4 w-4" /> เชื่อมต่อ LINE สำเร็จ
+        </p>
+        {offerTrial && trialOn && linked.trialExpiresAt && (
+          <>
+            <p className="text-sm text-muted-foreground">
+              เปิดสิทธิ์ Premium ฟรี {LINE_TRIAL_DAYS} วันแล้ว — ทำข้อสอบได้ไม่จำกัด
+              และดูเฉลยละเอียดทุกข้อ ถึง {formatThaiDate(linked.trialExpiresAt)}
+            </p>
+            <Link href="/ple">
+              <Button className="w-full bg-brand hover:bg-brand-light text-white">
+                เริ่มทำข้อสอบ
+              </Button>
+            </Link>
+          </>
+        )}
+      </div>
+    );
+  }
 
   const copyCode = () => {
     if (code) {
@@ -190,7 +281,9 @@ function LineLinkSection() {
     return (
       <div className="space-y-3">
         <p className="text-sm text-muted-foreground">
-          เชื่อมต่อ LINE เพื่อรับแจ้งเตือนสรุปผลสัปดาห์ และเตือนก่อนหมดอายุ
+          {offerTrial
+            ? `เชื่อมต่อ LINE รับสิทธิ์ Premium ฟรี ${LINE_TRIAL_DAYS} วัน ทำข้อสอบได้ไม่จำกัด + ดูเฉลยละเอียดทุกข้อ พร้อมรับแจ้งเตือนสรุปผลสัปดาห์`
+            : "เชื่อมต่อ LINE เพื่อรับแจ้งเตือนสรุปผลสัปดาห์ และเตือนก่อนหมดอายุ"}
         </p>
         <Button
           onClick={generateCode}
@@ -216,7 +309,9 @@ function LineLinkSection() {
           {copied ? <Check className="h-4 w-4 text-green-500" /> : <Copy className="h-4 w-4" />}
         </Button>
       </div>
-      <p className="text-xs text-muted-foreground">รหัสหมดอายุใน 24 ชั่วโมง</p>
+      <p className="text-xs text-muted-foreground">
+        รหัสหมดอายุใน 24 ชั่วโมง — ยังไม่ได้แอด LINE? แอดก่อนแล้วส่งรหัสได้เลย
+      </p>
       <LineContactCard size="md" className="pt-2" />
     </div>
   );
