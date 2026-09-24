@@ -329,6 +329,48 @@ export function buildStreakNudgeFlex(data: StreakNudgeData): LineMessage {
   };
 }
 
+// ─── Blog digest broadcast ──────────────────────────────────────────────────
+
+export interface BlogDigestPost {
+  slug: string;
+  title: string;
+  description: string | null;
+  cover_image: string | null;
+}
+
+function blogBubble(post: BlogDigestPost) {
+  return {
+    type: "bubble" as const,
+    size: "kilo" as const,
+    hero: post.cover_image
+      ? { type: "image" as const, url: post.cover_image, size: "full" as const, aspectRatio: "20:13" as const, aspectMode: "cover" as const }
+      : undefined,
+    body: {
+      type: "box" as const,
+      layout: "vertical" as const,
+      spacing: "sm" as const,
+      paddingAll: "lg" as const,
+      contents: [
+        { type: "text" as const, text: truncate(post.title, 60), weight: "bold" as const, size: "sm" as const, wrap: true },
+        ...(post.description
+          ? [{ type: "text" as const, text: truncate(post.description, 80), size: "xs" as const, color: "#666666", wrap: true }]
+          : []),
+      ],
+    },
+    footer: footerButton("อ่านต่อ", `${siteUrl()}/blog/${post.slug}`),
+  };
+}
+
+/** Up to 10 posts (LINE's carousel limit) as a horizontally-scrollable digest. */
+export function buildBlogDigestCarousel(posts: BlogDigestPost[]): LineMessage {
+  const bubbles = posts.slice(0, 10).map(blogBubble);
+  return {
+    type: "flex",
+    altText: `บทความใหม่จาก PharmRoo ${posts.length} เรื่อง 📚`,
+    contents: { type: "carousel", contents: bubbles },
+  };
+}
+
 // ─── Chatbot CTA cards ──────────────────────────────────────────────────────
 
 const CHATBOT_CARD_COPY: Record<string, { title: string; body: string; buttonLabel: string; path: string }> = {

@@ -542,6 +542,8 @@ export const blogPosts = pgTable("blog_posts", {
   published_at: text("published_at")
     .notNull()
     .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+  line_broadcast_at: text("line_broadcast_at"),
+  line_last_error: text("line_last_error"),
 });
 
 // ========================================

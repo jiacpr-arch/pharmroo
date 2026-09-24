@@ -11,6 +11,7 @@ export default defineConfig({
       "lib/line.test.ts",
       "lib/daily-mcq-line.test.ts",
       "lib/bot-intent.test.ts",
+      "lib/line-links.test.ts",
     ],
     exclude: ["node_modules/**", ".next/**"],
   },
