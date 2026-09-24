@@ -655,6 +655,10 @@ const CASES: Case[] = [
 ];
 
 const labels = ["A", "B", "C", "D", "E"];
+// ต่อท้าย PC1 Pilot 032 (8 เคส, 32 ข้อ) ในชุด PC1 เดียวกัน
+const CASE_OFFSET = 8;
+const Q_OFFSET = 32;
+const CASE_TOTAL = CASE_OFFSET + CASES.length;
 const POS = [3, 0, 4, 1, 2, 0, 3, 1, 4];
 const total = CASES.reduce((s, c) => s + c.qs.length, 0);
 
@@ -674,10 +678,10 @@ export const PC1_SCENARIO_001: McqQuestion[] = CASES.flatMap((c, ci) =>
       id: `pc1sc001q${String(n).padStart(3, "0")}`,
       subject_id: "pc1",
       exam_type: "PLE-PC",
-      exam_source: "PharmRU PC1 Scenario Set 001",
+      exam_source: "PharmRU PC1 Progressive Cases",
       exam_day: null,
-      question_number: n,
-      scenario: `สถานการณ์ที่ ${ci + 1}/${CASES.length} — ${c.title}\n${c.base}\n\nข้อ ${qi + 1}/${c.qs.length}: ${q.p}`,
+      question_number: Q_OFFSET + n,
+      scenario: `Case ${CASE_OFFSET + ci + 1}/${CASE_TOTAL} — ${c.title}\n${c.base}\n\nคำถาม ${qi + 1}/${c.qs.length}: ${q.p}`,
       image_url: null,
       choices: o.map((text, j) => ({ label: labels[j], text })),
       correct_answer: ans,
@@ -694,7 +698,7 @@ export const PC1_SCENARIO_001: McqQuestion[] = CASES.flatMap((c, ci) =>
       ai_notes: "PC1 scenario-style (1 case, multiple items) modeled on past-exam format; clinical/editorial verification required before commercial publication.",
       status: "active",
       created_at: "2026-09-24 09:00:00",
-      mcq_subjects: { id: "pc1", name: "PC1", name_th: "บริบาลเภสัชกรรม PC1", icon: "🩺", exam_type: "PLE-PC", question_count: total, created_at: "2026-09-24 09:00:00" },
+      mcq_subjects: { id: "pc1", name: "PC1", name_th: "บริบาลเภสัชกรรม PC1", icon: "🩺", exam_type: "PLE-PC", question_count: Q_OFFSET + total, created_at: "2026-09-24 09:00:00" },
     };
   })
 );
