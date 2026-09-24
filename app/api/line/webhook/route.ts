@@ -1,8 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
-import { verifyLineSignature, replyLineMessage } from "@/lib/line";
+import { verifyLineSignature, replyOrPushLineMessage, replyLineMessage } from "@/lib/line";
 import { LINE_BONUS_DAYS, grantLineBonus, lineBonusMessage } from "@/lib/line-bonus";
 import { buildFollowGreetingFlex } from "@/lib/line-flex-templates";
 import { buildNonTextGreeting, isNonTextMessage } from "@/lib/line-greeting";
+import { handleDailyMcqPostback } from "@/lib/daily-mcq-line";
 import { db } from "@/lib/db";
 import { lineLinkCodes, lineUnfollowEvents, users } from "@/lib/db/schema";
 import { eq, and, gt } from "drizzle-orm";
@@ -14,6 +15,7 @@ interface LineEvent {
   replyToken?: string;
   source: { userId: string; type: string };
   message?: { type: string; text?: string };
+  postback?: { data: string };
 }
 
 /**
@@ -34,6 +36,8 @@ export async function POST(request: NextRequest) {
       await handleFollow(event);
     } else if (event.type === "unfollow") {
       await handleUnfollow(event);
+    } else if (event.type === "postback") {
+      await handlePostback(event);
     } else if (event.type === "message" && event.message?.type === "text") {
       await handleTextMessage(event);
     } else if (event.type === "message" && isNonTextMessage(event.message?.type)) {
@@ -70,6 +74,39 @@ async function handleUnfollow(event: LineEvent) {
   await db.insert(lineUnfollowEvents).values({
     line_user_id: event.source.userId,
   });
+}
+
+async function handlePostback(event: LineEvent) {
+  const data = event.postback?.data;
+  if (!data) return;
+
+  const params = new URLSearchParams(data);
+  if (params.get("action") !== "daily_answer") return; // reserved for future postback actions
+
+  const date = params.get("d");
+  const label = params.get("a");
+  if (!date || !label) return;
+
+  const lineUserId = event.source.userId;
+  const user = await db
+    .select({ id: users.id, exam_category: users.exam_category })
+    .from(users)
+    .where(eq(users.line_user_id, lineUserId))
+    .then((rows) => rows[0]);
+
+  const category = user?.exam_category ?? (params.get("c") === "nursing" ? "nursing" : "pharmacy");
+  const isHard = params.get("h") === "1";
+
+  const result = await handleDailyMcqPostback({
+    lineUserId,
+    userId: user?.id ?? null,
+    date,
+    category,
+    selectedLabel: label,
+    isHard,
+  });
+
+  await replyOrPushLineMessage(lineUserId, event.replyToken, [result]);
 }
 
 async function handleTextMessage(event: LineEvent) {

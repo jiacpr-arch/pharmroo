@@ -460,6 +460,30 @@ export const lineMessagesSent = pgTable(
 );
 
 // ========================================
+// 17d. Daily Quiz Answers (LINE daily MCQ — one row per user per quiz day)
+// ========================================
+export const dailyQuizAnswers = pgTable(
+  "daily_quiz_answers",
+  {
+    id: text("id")
+      .primaryKey()
+      .default(sql`generate_hex_id()`),
+    line_user_id: text("line_user_id").notNull(),
+    user_id: text("user_id").references(() => users.id, { onDelete: "set null" }),
+    question_id: text("question_id")
+      .notNull()
+      .references(() => mcqQuestions.id, { onDelete: "cascade" }),
+    quiz_date: text("quiz_date").notNull(), // YYYY-MM-DD in Asia/Bangkok
+    selected_answer: text("selected_answer").notNull(),
+    is_correct: boolean("is_correct").notNull(),
+    created_at: text("created_at")
+      .notNull()
+      .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+  },
+  (t) => [uniqueIndex("uq_daily_quiz_answers").on(t.line_user_id, t.quiz_date)]
+);
+
+// ========================================
 // 18. Blog Posts (AI auto-generated)
 // ========================================
 export const blogPosts = pgTable("blog_posts", {
@@ -668,6 +692,7 @@ export type Referral = typeof referrals.$inferSelect;
 export type LineLinkCode = typeof lineLinkCodes.$inferSelect;
 export type LineUnfollowEvent = typeof lineUnfollowEvents.$inferSelect;
 export type LineMessageSent = typeof lineMessagesSent.$inferSelect;
+export type DailyQuizAnswer = typeof dailyQuizAnswers.$inferSelect;
 export type BlogPost = typeof blogPosts.$inferSelect;
 export type LearningUnit = typeof learningUnits.$inferSelect;
 export type LearningLesson = typeof learningLessons.$inferSelect;
