@@ -425,6 +425,107 @@ export const lineLinkCodes = pgTable("line_link_codes", {
 });
 
 // ========================================
+// 17b. LINE Unfollow Events (audit trail — when a user blocks the OA)
+// ========================================
+export const lineUnfollowEvents = pgTable("line_unfollow_events", {
+  id: text("id")
+    .primaryKey()
+    .default(sql`generate_hex_id()`),
+  line_user_id: text("line_user_id").notNull(),
+  unfollowed_at: text("unfollowed_at")
+    .notNull()
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+});
+
+// ========================================
+// 17c. LINE Messages Sent (dedupe log for cron notifications, e.g. expiry warnings)
+// ========================================
+export const lineMessagesSent = pgTable(
+  "line_messages_sent",
+  {
+    id: text("id")
+      .primaryKey()
+      .default(sql`generate_hex_id()`),
+    user_id: text("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    kind: text("kind").notNull(), // e.g. "expiry_warning"
+    ref: text("ref").notNull(), // e.g. "7" / "3" / "1" days-before-expiry, dedupe key within `kind`
+    channel: text("channel", { enum: ["line", "email"] }).notNull().default("line"),
+    sent_at: text("sent_at")
+      .notNull()
+      .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+  },
+  (t) => [uniqueIndex("uq_line_messages_sent").on(t.user_id, t.kind, t.ref)]
+);
+
+// ========================================
+// 17d. Daily Quiz Answers (LINE daily MCQ — one row per user per quiz day)
+// ========================================
+export const dailyQuizAnswers = pgTable(
+  "daily_quiz_answers",
+  {
+    id: text("id")
+      .primaryKey()
+      .default(sql`generate_hex_id()`),
+    line_user_id: text("line_user_id").notNull(),
+    user_id: text("user_id").references(() => users.id, { onDelete: "set null" }),
+    question_id: text("question_id")
+      .notNull()
+      .references(() => mcqQuestions.id, { onDelete: "cascade" }),
+    quiz_date: text("quiz_date").notNull(), // YYYY-MM-DD in Asia/Bangkok
+    selected_answer: text("selected_answer").notNull(),
+    is_correct: boolean("is_correct").notNull(),
+    created_at: text("created_at")
+      .notNull()
+      .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+  },
+  (t) => [uniqueIndex("uq_daily_quiz_answers").on(t.line_user_id, t.quiz_date)]
+);
+
+// ========================================
+// 17e. Leads (chatbot conversations that haven't necessarily registered yet)
+// ========================================
+export const leads = pgTable("leads", {
+  id: text("id")
+    .primaryKey()
+    .default(sql`generate_hex_id()`),
+  line_user_id: text("line_user_id").unique(),
+  email: text("email"),
+  user_id: text("user_id").references(() => users.id, { onDelete: "set null" }),
+  stage: text("stage", {
+    enum: ["new", "interested", "trial_granted", "registered"],
+  })
+    .notNull()
+    .default("new"),
+  source: text("source").notNull().default("line_oa"),
+  created_at: text("created_at")
+    .notNull()
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+  updated_at: text("updated_at")
+    .notNull()
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+});
+
+// ========================================
+// 17f. Chat Messages (LINE chatbot history — also drives rate limiting)
+// ========================================
+export const chatMessages = pgTable("chat_messages", {
+  id: text("id")
+    .primaryKey()
+    .default(sql`generate_hex_id()`),
+  channel: text("channel", { enum: ["line"] }).notNull().default("line"),
+  channel_user_id: text("channel_user_id").notNull(),
+  user_id: text("user_id").references(() => users.id, { onDelete: "set null" }),
+  lead_id: text("lead_id").references(() => leads.id, { onDelete: "set null" }),
+  role: text("role", { enum: ["user", "assistant"] }).notNull(),
+  content: text("content").notNull(),
+  created_at: text("created_at")
+    .notNull()
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+});
+
+// ========================================
 // 18. Blog Posts (AI auto-generated)
 // ========================================
 export const blogPosts = pgTable("blog_posts", {
@@ -441,6 +542,8 @@ export const blogPosts = pgTable("blog_posts", {
   published_at: text("published_at")
     .notNull()
     .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+  line_broadcast_at: text("line_broadcast_at"),
+  line_last_error: text("line_last_error"),
 });
 
 // ========================================
@@ -631,6 +734,11 @@ export type CreditLedgerEntry = typeof creditLedger.$inferSelect;
 export type QuestionUnlock = typeof questionUnlocks.$inferSelect;
 export type Referral = typeof referrals.$inferSelect;
 export type LineLinkCode = typeof lineLinkCodes.$inferSelect;
+export type LineUnfollowEvent = typeof lineUnfollowEvents.$inferSelect;
+export type LineMessageSent = typeof lineMessagesSent.$inferSelect;
+export type DailyQuizAnswer = typeof dailyQuizAnswers.$inferSelect;
+export type Lead = typeof leads.$inferSelect;
+export type ChatMessage = typeof chatMessages.$inferSelect;
 export type BlogPost = typeof blogPosts.$inferSelect;
 export type LearningUnit = typeof learningUnits.$inferSelect;
 export type LearningLesson = typeof learningLessons.$inferSelect;

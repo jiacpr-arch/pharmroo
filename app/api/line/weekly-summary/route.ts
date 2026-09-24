@@ -2,7 +2,8 @@ import { NextRequest, NextResponse } from "next/server";
 import { db } from "@/lib/db";
 import { users, mcqAttempts } from "@/lib/db/schema";
 import { isNotNull, and, gte, eq, sql } from "drizzle-orm";
-import { sendLineMessage } from "@/lib/line";
+import { sendLineMessage, checkLineQuota } from "@/lib/line";
+import { buildWeeklySummaryFlex } from "@/lib/line-flex-templates";
 
 export const runtime = "nodejs";
 
@@ -26,6 +27,12 @@ export async function GET(request: NextRequest) {
 
   const sevenDaysAgo = new Date();
   sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+
+  // This is a bulk send across every linked user — check quota headroom first.
+  const quota = await checkLineQuota();
+  if (quota.throttled) {
+    return NextResponse.json({ ok: true, sent: 0, skipped: "quota_throttled" });
+  }
 
   // Get LINE-linked users
   const linkedUsers = await db
@@ -59,18 +66,14 @@ export async function GET(request: NextRequest) {
       const correct = Number(stats?.correct ?? 0);
       const accuracy = total > 0 ? Math.round((correct / total) * 100) : 0;
 
-      await sendLineMessage(
-        user.line_user_id,
-        [
-          `📊 สรุปผลสัปดาห์ของ ${user.name}`,
-          ``,
-          `ทำข้อสอบ: ${total} ข้อ`,
-          `ถูกต้อง: ${correct} ข้อ (${accuracy}%)`,
-          ``,
-          `💪 สู้ต่อไปนะ! ทำข้อสอบเพิ่มได้ที่`,
-          `👉 https://pharmru.com/ple/practice`,
-        ].join("\n")
-      );
+      await sendLineMessage(user.line_user_id, [
+        buildWeeklySummaryFlex({
+          userName: user.name,
+          totalQuestions: total,
+          correctCount: correct,
+          accuracy,
+        }),
+      ]);
       sent++;
     } catch (err) {
       console.error(`[weekly-summary] failed for user ${user.id}:`, err);

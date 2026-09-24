@@ -3,6 +3,7 @@ import { auth } from "@/lib/auth";
 import { db } from "@/lib/db";
 import { paymentOrders } from "@/lib/db/schema";
 import { randomUUID } from "crypto";
+import { lineNotifyAdmin } from "@/lib/notifications";
 
 const PLANS: Record<string, { price: number }> = {
   monthly: { price: 249 },
@@ -38,6 +39,10 @@ export async function POST(req: NextRequest) {
       invoice_branch: invoiceData.branch || null,
     }),
   });
+
+  lineNotifyAdmin(
+    `🧾 สลิปใหม่รออนุมัติ\nสมาชิก${plan === "yearly" ? "รายปี" : "รายเดือน"} ฿${PLANS[plan].price}\n${session.user.email ?? session.user.id}`
+  ).catch((err) => console.error("[payment] admin LINE notify failed:", err));
 
   return NextResponse.json({ success: true });
 }

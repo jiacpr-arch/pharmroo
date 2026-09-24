@@ -4,6 +4,14 @@ import { db } from "@/lib/db";
 import { paymentOrders, users, setPurchases, creditPurchases } from "@/lib/db/schema";
 import { eq, desc, and } from "drizzle-orm";
 import { addCredits } from "@/lib/db/queries-credits";
+import { sendLineMessage } from "@/lib/line";
+
+function orderLabel(order: { order_type: string; plan_type: string | null }): string {
+  if (order.order_type === "set") return "ชุดข้อสอบ";
+  if (order.order_type === "credit") return "แพ็กเครดิต";
+  if (order.plan_type === "yearly") return "สมาชิกรายปี";
+  return "สมาชิกรายเดือน";
+}
 
 export async function GET() {
   const session = await auth();
@@ -104,6 +112,28 @@ export async function PATCH(req: NextRequest) {
           membership_expires_at: expiresAt.toISOString(),
         })
         .where(eq(users.id, order.user_id));
+    }
+  }
+
+  // Notify the buyer — best-effort, never blocks the admin action.
+  if (order.user_id) {
+    try {
+      const buyer = await db
+        .select({ line_user_id: users.line_user_id })
+        .from(users)
+        .where(eq(users.id, order.user_id))
+        .then((rows) => rows[0]);
+
+      if (buyer?.line_user_id) {
+        const label = orderLabel(order);
+        const message =
+          action === "approved"
+            ? `✅ อนุมัติคำสั่งซื้อแล้ว!\n${label}\nการชำระเงินของคุณได้รับการยืนยันเรียบร้อย`
+            : `❌ คำสั่งซื้อไม่ผ่านการตรวจสอบ\n${label}\nกรุณาตรวจสอบสลิปและส่งใหม่อีกครั้ง หรือติดต่อแอดมิน`;
+        await sendLineMessage(buyer.line_user_id, message);
+      }
+    } catch (err) {
+      console.error("[admin/payments] buyer LINE notify failed:", err);
     }
   }
 

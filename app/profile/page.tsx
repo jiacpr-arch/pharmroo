@@ -190,8 +190,15 @@ function LineLinkSection() {
     return (
       <div className="space-y-3">
         <p className="text-sm text-muted-foreground">
-          เชื่อมต่อ LINE เพื่อรับแจ้งเตือนสรุปผลสัปดาห์ และเตือนก่อนหมดอายุ
+          เชื่อมต่อ LINE เพื่อรับแจ้งเตือนสรุปผลสัปดาห์ ข้อสอบประจำวัน และเตือนก่อนหมดอายุ
         </p>
+        {process.env.NEXT_PUBLIC_LIFF_ID && (
+          <Link href="/line/liff?next=/profile" className="block">
+            <Button variant="outline" className="w-full gap-2 border-[#06C755] text-[#06C755] hover:bg-[#06C755]/5">
+              เชื่อมต่ออัตโนมัติผ่าน LINE
+            </Button>
+          </Link>
+        )}
         <Button
           onClick={generateCode}
           disabled={loading}
