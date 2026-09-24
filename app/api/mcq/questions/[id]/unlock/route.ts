@@ -47,9 +47,11 @@ export async function POST(
     return NextResponse.json({ error: "No detailed explanation" }, { status: 400 });
   }
 
-  const membershipType = (session.user as { membership_type?: string })
-    .membership_type;
-  if (isPaidMember(membershipType)) {
+  const { membership_type, membership_expires_at } = session.user as {
+    membership_type?: string;
+    membership_expires_at?: string | null;
+  };
+  if (isPaidMember(membership_type, membership_expires_at)) {
     return NextResponse.json({
       status: "member",
       credit_balance: await getUserCreditBalance(session.user.id),
