@@ -2,7 +2,8 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import PricingCard from "@/components/PricingCard";
-import GoodyEmbed from "@/components/GoodyEmbed";
+import { Suspense } from "react";
+import PharmacyNews, { PharmacyNewsSkeleton } from "@/components/PharmacyNews";
 import { CATEGORIES, PRICING_PLANS } from "@/lib/types";
 import { getNewQuestionsStats } from "@/lib/db/queries-mcq";
 import {
@@ -359,9 +360,11 @@ export default async function HomePage() {
 
       <section className="bg-slate-50 py-12">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <h2 className="mb-4 text-center text-2xl font-bold">ข่าวสารสุขภาพ</h2>
+          <h2 className="mb-4 text-center text-2xl font-bold">ข่าวการสอบ & วงการเภสัช</h2>
           <div className="overflow-hidden rounded-2xl border bg-white shadow-sm">
-            <GoodyEmbed site="health" type="news" title="ข่าวสารสุขภาพ" />
+            <Suspense fallback={<PharmacyNewsSkeleton />}>
+              <PharmacyNews />
+            </Suspense>
           </div>
         </div>
       </section>
