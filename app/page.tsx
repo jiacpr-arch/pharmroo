@@ -350,7 +350,7 @@ export default async function HomePage() {
                     เริ่มรับลูกค้า <ArrowRight className="h-4 w-4" />
                   </Button>
                 </Link>
-                <p className="text-xs text-slate-400">3 เคสตัวอย่าง · เก็บ XP และ badge เมื่อล็อกอิน</p>
+                <p className="text-xs text-slate-400">7 เคสตัวอย่าง · เก็บ XP และ badge เมื่อล็อกอิน</p>
               </div>
             </div>
           </div>
