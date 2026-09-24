@@ -4,11 +4,19 @@ import {
   getUserUnlockedQuestionIds,
 } from "@/lib/db/queries-credits";
 
-/** Single source of truth for which membership types count as paid. */
+/**
+ * Single source of truth for which members count as paid. A paid type with a
+ * past expiry (lapsed subscription, ended LINE bonus) no longer counts; a null
+ * expiry means no end date.
+ */
 export function isPaidMember(
-  membershipType: string | null | undefined
+  membershipType: string | null | undefined,
+  membershipExpiresAt?: string | null
 ): boolean {
-  return membershipType === "monthly" || membershipType === "yearly";
+  if (membershipType !== "monthly" && membershipType !== "yearly") return false;
+  if (!membershipExpiresAt) return true;
+  const expires = new Date(membershipExpiresAt);
+  return Number.isNaN(expires.getTime()) || expires > new Date();
 }
 
 export interface ViewerGate {
@@ -19,11 +27,17 @@ export interface ViewerGate {
 /** Extract viewer identity + paid status from a NextAuth session. */
 export function getViewerGate(session: unknown): ViewerGate {
   const user = (
-    session as { user?: { id?: string; membership_type?: string } } | null
+    session as {
+      user?: {
+        id?: string;
+        membership_type?: string;
+        membership_expires_at?: string | null;
+      };
+    } | null
   )?.user;
   return {
     userId: user?.id ?? null,
-    isPaid: isPaidMember(user?.membership_type),
+    isPaid: isPaidMember(user?.membership_type, user?.membership_expires_at),
   };
 }
 

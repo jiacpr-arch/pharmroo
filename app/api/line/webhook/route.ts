@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { verifyLineSignature, replyLineMessage } from "@/lib/line";
+import { LINE_BONUS_DAYS, grantLineBonus, lineBonusMessage } from "@/lib/line-bonus";
 import { db } from "@/lib/db";
 import { lineLinkCodes, users } from "@/lib/db/schema";
 import { eq, and, gt } from "drizzle-orm";
@@ -28,10 +29,20 @@ export async function POST(request: NextRequest) {
 
   for (const event of payload.events) {
     if (event.type === "follow") {
-      // New follower welcome message
+      // Accounts created via LINE login already carry this LINE userId, so
+      // following the OA is enough to claim the new-member bonus.
+      const existing = await db
+        .select({ id: users.id })
+        .from(users)
+        .where(eq(users.line_user_id, event.source.userId))
+        .then((rows) => rows[0]);
+      const bonusExpiresAt = existing ? await grantLineBonus(existing.id) : null;
+
       await replyLineMessage(
         event.replyToken,
-        "สวัสดีครับ! 🎉\nยินดีต้อนรับสู่ PharmRoo\n\nส่งรหัสเชื่อมต่อจากหน้า Profile เพื่อรับแจ้งเตือนผ่าน LINE"
+        bonusExpiresAt
+          ? `สวัสดีครับ! 🎉\nยินดีต้อนรับสู่ PharmRoo\n\n${lineBonusMessage(bonusExpiresAt)}`
+          : `สวัสดีครับ! 🎉\nยินดีต้อนรับสู่ PharmRoo\n\nส่งรหัสเชื่อมต่อจากหน้า Profile เพื่อรับแจ้งเตือนผ่าน LINE\n\n🎁 สมาชิกใหม่เชื่อมต่อ LINE รับ Premium ฟรี ${LINE_BONUS_DAYS} วัน!`
       );
     } else if (
       event.type === "message" &&
@@ -67,9 +78,13 @@ export async function POST(request: NextRequest) {
         // Delete used code
         await db.delete(lineLinkCodes).where(eq(lineLinkCodes.id, linkCode.id));
 
+        const bonusExpiresAt = await grantLineBonus(linkCode.user_id);
+
         await replyLineMessage(
           event.replyToken,
-          "✅ เชื่อมต่อบัญชีสำเร็จ!\nคุณจะได้รับแจ้งเตือนผ่าน LINE แล้ว"
+          bonusExpiresAt
+            ? `✅ เชื่อมต่อบัญชีสำเร็จ!\nคุณจะได้รับแจ้งเตือนผ่าน LINE แล้ว\n\n${lineBonusMessage(bonusExpiresAt)}`
+            : "✅ เชื่อมต่อบัญชีสำเร็จ!\nคุณจะได้รับแจ้งเตือนผ่าน LINE แล้ว"
         );
       } else {
         await replyLineMessage(

@@ -33,6 +33,7 @@ export const users = pgTable("users", {
   weak_subjects: jsonb("weak_subjects").default(sql`'[]'::jsonb`),
   line_user_id: text("line_user_id"),
   line_linked_at: text("line_linked_at"),
+  line_bonus_granted_at: text("line_bonus_granted_at"),
   referral_code: text("referral_code").unique(),
   referred_by: text("referred_by"),
   created_at: text("created_at")
