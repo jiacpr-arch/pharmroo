@@ -5,7 +5,14 @@ export default defineConfig({
   test: {
     environment: "node",
     // เริ่มจากเทสต์ของเกมก่อน — __tests__/ เดิมยังไม่เคยมี runner จึงยังไม่รวมเข้ามา
-    include: ["lib/game/**/*.test.ts", "lib/line-bonus.test.ts"],
+    include: [
+      "lib/game/**/*.test.ts",
+      "lib/line-bonus.test.ts",
+      "lib/line.test.ts",
+      "lib/daily-mcq-line.test.ts",
+      "lib/bot-intent.test.ts",
+      "lib/line-links.test.ts",
+    ],
     exclude: ["node_modules/**", ".next/**"],
   },
   resolve: {

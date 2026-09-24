@@ -61,7 +61,9 @@ export async function sendFulfillmentNotifications(
       sendLineMessage(
         lineTargetId,
         `🛒 ออเดอร์ใหม่\n${data.planLabel} ฿${data.totalAmount}\n${data.invoiceEmail}\n${data.invoiceNumber}`
-      ).catch((err) => console.error("[notify] admin LINE failed:", err))
+      )
+        .then(() => {})
+        .catch((err) => console.error("[notify] admin LINE failed:", err))
     );
   }
 

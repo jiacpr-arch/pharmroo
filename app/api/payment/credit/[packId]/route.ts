@@ -4,6 +4,7 @@ import { db } from "@/lib/db";
 import { paymentOrders, creditPurchases, creditPacks } from "@/lib/db/schema";
 import { eq } from "drizzle-orm";
 import { randomUUID } from "crypto";
+import { lineNotifyAdmin } from "@/lib/notifications";
 
 export async function GET(
   _req: NextRequest,
@@ -69,6 +70,10 @@ export async function POST(
     status: "pending",
     amount_credits: pack.amount_credits,
   });
+
+  lineNotifyAdmin(
+    `🧾 สลิปใหม่รออนุมัติ\nแพ็กเครดิต: ${pack.name_th} ฿${pack.price}\n${session.user.email ?? session.user.id}`
+  ).catch((err) => console.error("[payment/credit] admin LINE notify failed:", err));
 
   return NextResponse.json({ success: true });
 }

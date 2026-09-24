@@ -267,9 +267,16 @@ function LineLinkSection({ offerBonus }: { offerBonus: boolean }) {
       <div className="space-y-3">
         <p className="text-sm text-muted-foreground">
           {offerBonus
-            ? `สมาชิกใหม่เชื่อมต่อ LINE รับสิทธิ์ Premium ฟรี ${LINE_BONUS_DAYS} วัน ทำข้อสอบได้ไม่จำกัด + ดูเฉลยละเอียดทุกข้อ พร้อมรับแจ้งเตือนสรุปผลสัปดาห์`
-            : "เชื่อมต่อ LINE เพื่อรับแจ้งเตือนสรุปผลสัปดาห์ และเตือนก่อนหมดอายุ"}
+            ? `สมาชิกใหม่เชื่อมต่อ LINE รับสิทธิ์ Premium ฟรี ${LINE_BONUS_DAYS} วัน ทำข้อสอบได้ไม่จำกัด + ดูเฉลยละเอียดทุกข้อ พร้อมรับแจ้งเตือนสรุปผลสัปดาห์และข้อสอบประจำวัน`
+            : "เชื่อมต่อ LINE เพื่อรับแจ้งเตือนสรุปผลสัปดาห์ ข้อสอบประจำวัน และเตือนก่อนหมดอายุ"}
         </p>
+        {process.env.NEXT_PUBLIC_LIFF_ID && (
+          <Link href="/line/liff?next=/profile" className="block">
+            <Button variant="outline" className="w-full gap-2 border-[#06C755] text-[#06C755] hover:bg-[#06C755]/5">
+              เชื่อมต่ออัตโนมัติผ่าน LINE
+            </Button>
+          </Link>
+        )}
         <Button
           onClick={generateCode}
           disabled={loading}
