@@ -484,6 +484,48 @@ export const dailyQuizAnswers = pgTable(
 );
 
 // ========================================
+// 17e. Leads (chatbot conversations that haven't necessarily registered yet)
+// ========================================
+export const leads = pgTable("leads", {
+  id: text("id")
+    .primaryKey()
+    .default(sql`generate_hex_id()`),
+  line_user_id: text("line_user_id").unique(),
+  email: text("email"),
+  user_id: text("user_id").references(() => users.id, { onDelete: "set null" }),
+  stage: text("stage", {
+    enum: ["new", "interested", "trial_granted", "registered"],
+  })
+    .notNull()
+    .default("new"),
+  source: text("source").notNull().default("line_oa"),
+  created_at: text("created_at")
+    .notNull()
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+  updated_at: text("updated_at")
+    .notNull()
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+});
+
+// ========================================
+// 17f. Chat Messages (LINE chatbot history — also drives rate limiting)
+// ========================================
+export const chatMessages = pgTable("chat_messages", {
+  id: text("id")
+    .primaryKey()
+    .default(sql`generate_hex_id()`),
+  channel: text("channel", { enum: ["line"] }).notNull().default("line"),
+  channel_user_id: text("channel_user_id").notNull(),
+  user_id: text("user_id").references(() => users.id, { onDelete: "set null" }),
+  lead_id: text("lead_id").references(() => leads.id, { onDelete: "set null" }),
+  role: text("role", { enum: ["user", "assistant"] }).notNull(),
+  content: text("content").notNull(),
+  created_at: text("created_at")
+    .notNull()
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+});
+
+// ========================================
 // 18. Blog Posts (AI auto-generated)
 // ========================================
 export const blogPosts = pgTable("blog_posts", {
@@ -693,6 +735,8 @@ export type LineLinkCode = typeof lineLinkCodes.$inferSelect;
 export type LineUnfollowEvent = typeof lineUnfollowEvents.$inferSelect;
 export type LineMessageSent = typeof lineMessagesSent.$inferSelect;
 export type DailyQuizAnswer = typeof dailyQuizAnswers.$inferSelect;
+export type Lead = typeof leads.$inferSelect;
+export type ChatMessage = typeof chatMessages.$inferSelect;
 export type BlogPost = typeof blogPosts.$inferSelect;
 export type LearningUnit = typeof learningUnits.$inferSelect;
 export type LearningLesson = typeof learningLessons.$inferSelect;

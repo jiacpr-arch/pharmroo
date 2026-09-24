@@ -1,12 +1,18 @@
 import { NextRequest, NextResponse } from "next/server";
-import { verifyLineSignature, replyOrPushLineMessage, replyLineMessage } from "@/lib/line";
+import { verifyLineSignature, replyOrPushLineMessage, replyLineMessage, type LineMessage } from "@/lib/line";
 import { LINE_BONUS_DAYS, grantLineBonus, lineBonusMessage } from "@/lib/line-bonus";
-import { buildFollowGreetingFlex } from "@/lib/line-flex-templates";
+import { buildChatbotCard, buildFollowGreetingFlex } from "@/lib/line-flex-templates";
 import { buildNonTextGreeting, isNonTextMessage } from "@/lib/line-greeting";
 import { handleDailyMcqPostback } from "@/lib/daily-mcq-line";
+import { generateChatbotReply, trimHistory, type ChatMessage as ChatbotMessage } from "@/lib/chatbot";
+import { detectTrialIntent, handleBotIntent, handleEmailCapture } from "@/lib/bot-intent";
+import { getOrCreateLeadFromLine } from "@/lib/lead-channel";
 import { db } from "@/lib/db";
-import { lineLinkCodes, lineUnfollowEvents, users } from "@/lib/db/schema";
-import { eq, and, gt } from "drizzle-orm";
+import { chatMessages, lineLinkCodes, lineUnfollowEvents, users } from "@/lib/db/schema";
+import { eq, and, gt, gte } from "drizzle-orm";
+
+/** Per-LINE-user cap on chatbot turns, to keep AI spend and spam under control. */
+const CHATBOT_RATE_LIMIT_PER_HOUR = 30;
 
 export const runtime = "nodejs";
 
@@ -111,7 +117,12 @@ async function handlePostback(event: LineEvent) {
 
 async function handleTextMessage(event: LineEvent) {
   const text = event.message?.text?.trim() ?? "";
-  if (!text.startsWith("PHARMROO-")) return; // no chatbot yet — ignore other text
+  if (!text) return;
+
+  if (!text.startsWith("PHARMROO-")) {
+    await handleChatbotMessage(event, text);
+    return;
+  }
 
   // Link code attempt
   const lineUserId = event.source.userId;
@@ -152,4 +163,73 @@ async function handleTextMessage(event: LineEvent) {
         : "✅ เชื่อมต่อบัญชีสำเร็จ!\nคุณจะได้รับแจ้งเตือนผ่าน LINE แล้ว"
     );
   }
+}
+
+async function handleChatbotMessage(event: LineEvent, text: string) {
+  const lineUserId = event.source.userId;
+
+  const oneHourAgo = new Date(Date.now() - 60 * 60 * 1000).toISOString();
+  const recentCount = await db
+    .select({ id: chatMessages.id })
+    .from(chatMessages)
+    .where(
+      and(
+        eq(chatMessages.channel_user_id, lineUserId),
+        eq(chatMessages.role, "user"),
+        gte(chatMessages.created_at, oneHourAgo)
+      )
+    )
+    .then((rows) => rows.length);
+
+  if (recentCount >= CHATBOT_RATE_LIMIT_PER_HOUR) {
+    if (event.replyToken) {
+      await replyLineMessage(event.replyToken, "ถามครบจำนวนต่อชั่วโมงแล้วนะครับ ลองใหม่อีกครั้งภายหลังครับ 🙏");
+    }
+    return;
+  }
+
+  const leadId = await getOrCreateLeadFromLine(lineUserId);
+
+  // A bare email address is data capture, not a question — handle it and stop.
+  const emailAck = await handleEmailCapture(leadId, text);
+  if (emailAck) {
+    await db.insert(chatMessages).values({ channel_user_id: lineUserId, lead_id: leadId, role: "user", content: text });
+    await db.insert(chatMessages).values({ channel_user_id: lineUserId, lead_id: leadId, role: "assistant", content: emailAck });
+    await replyOrPushLineMessage(lineUserId, event.replyToken, emailAck);
+    return;
+  }
+
+  await db.insert(chatMessages).values({ channel_user_id: lineUserId, lead_id: leadId, role: "user", content: text });
+
+  const priorRows = await db
+    .select({ role: chatMessages.role, content: chatMessages.content })
+    .from(chatMessages)
+    .where(eq(chatMessages.channel_user_id, lineUserId))
+    .orderBy(chatMessages.created_at)
+    .limit(40);
+  const history = trimHistory(priorRows as ChatbotMessage[]);
+
+  const result = await generateChatbotReply(history);
+  if (!result.ok) {
+    console.error("[webhook] chatbot reply failed:", result.error);
+    if (event.replyToken) {
+      await replyLineMessage(event.replyToken, "ขออภัยครับ ตอบคำถามไม่สำเร็จ ลองพิมพ์ใหม่อีกครั้งนะครับ 🙏");
+    }
+    return;
+  }
+
+  await db.insert(chatMessages).values({ channel_user_id: lineUserId, lead_id: leadId, role: "assistant", content: result.reply });
+
+  // Fallback net: catch clear commercial intent the model's own marker missed.
+  const effectiveIntent = result.intent ?? (detectTrialIntent(text) ? "trial" : undefined);
+  const intentMessage = effectiveIntent ? await handleBotIntent(lineUserId, leadId, effectiveIntent) : null;
+  if (intentMessage) {
+    await db.insert(chatMessages).values({ channel_user_id: lineUserId, lead_id: leadId, role: "assistant", content: intentMessage });
+  }
+
+  const messages: LineMessage[] = [{ type: "text", text: result.reply }];
+  if (result.card) messages.push(buildChatbotCard(result.card));
+  if (intentMessage) messages.push({ type: "text", text: intentMessage });
+
+  await replyOrPushLineMessage(lineUserId, event.replyToken, messages);
 }

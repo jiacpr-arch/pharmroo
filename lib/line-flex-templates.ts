@@ -329,6 +329,52 @@ export function buildStreakNudgeFlex(data: StreakNudgeData): LineMessage {
   };
 }
 
+// ─── Chatbot CTA cards ──────────────────────────────────────────────────────
+
+const CHATBOT_CARD_COPY: Record<string, { title: string; body: string; buttonLabel: string; path: string }> = {
+  pricing: {
+    title: "💳 ดูแพ็กเกจ PharmRoo",
+    body: "รายเดือน ฿249 หรือรายปี ฿1,490 ดูเฉลยละเอียดได้ไม่อั้นทุกข้อ",
+    buttonLabel: "ดูแพ็กเกจ",
+    path: "/pricing",
+  },
+  register: {
+    title: "🎉 สมัคร PharmRoo ฟรี",
+    body: "สมัครฟรี 30 วินาที เริ่มฝึกข้อสอบได้ทันที",
+    buttonLabel: "สมัครเลย",
+    path: "/register",
+  },
+  practice: {
+    title: "📝 เริ่มฝึกข้อสอบ",
+    body: "ฝึกข้อสอบ PLE/NLE พร้อมเฉลยและ AI ช่วยอธิบาย",
+    buttonLabel: "ฝึกข้อสอบ",
+    path: "/ple/practice",
+  },
+};
+
+export function buildChatbotCard(card: "pricing" | "register" | "practice"): LineMessage {
+  const copy = CHATBOT_CARD_COPY[card];
+  return {
+    type: "flex",
+    altText: copy.title,
+    contents: {
+      type: "bubble",
+      size: "kilo",
+      body: {
+        type: "box",
+        layout: "vertical",
+        spacing: "md",
+        paddingAll: "lg",
+        contents: [
+          { type: "text", text: copy.title, weight: "bold", size: "md", wrap: true },
+          { type: "text", text: copy.body, size: "sm", color: "#666666", wrap: true },
+        ],
+      },
+      footer: footerButton(copy.buttonLabel, `${siteUrl()}${copy.path}`),
+    },
+  };
+}
+
 export function buildFollowGreetingFlex(bonusMessage?: string): LineMessage {
   const lines = bonusMessage
     ? [bonusMessage]

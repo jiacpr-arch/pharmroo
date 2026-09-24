@@ -10,6 +10,7 @@ export default defineConfig({
       "lib/line-bonus.test.ts",
       "lib/line.test.ts",
       "lib/daily-mcq-line.test.ts",
+      "lib/bot-intent.test.ts",
     ],
     exclude: ["node_modules/**", ".next/**"],
   },
