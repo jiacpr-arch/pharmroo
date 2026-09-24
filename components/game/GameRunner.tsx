@@ -132,7 +132,7 @@ export default function GameRunner({
   const [dlgSegments, setDlgSegments] = useState<TextSegment[]>([]);
   const [dlgCount, setDlgCount] = useState(0);
   const [typing, setTyping] = useState(false);
-  const [choice, setChoice] = useState<{ q: string; options: ChoiceOption[]; hintTgt: string | null; tried: Set<string> } | null>(null);
+  const [choice, setChoice] = useState<{ q: string; options: ChoiceOption[]; hintTgt: string | null; tried: Set<string>; shelf: boolean } | null>(null);
   const [decisionLeft, setDecisionLeft] = useState(getDifficulty(difficulty).decisionTime);
   const [drama, setDrama] = useState<"red" | "white" | null>(null);
   const [inter, setInter] = useState<{ text: string; green: boolean } | null>(null);
@@ -284,7 +284,7 @@ export default function GameRunner({
     const hintTgt = diff.hints && hintUsedRef.current
       ? (c.options.find((o) => o.ok)?.tgt || null)
       : null;
-    setChoice({ q: c.q, options: shuffled(c.options), hintTgt, tried: new Set(wrongPicksRef.current) });
+    setChoice({ q: c.q, options: shuffled(c.options), hintTgt, tried: new Set(wrongPicksRef.current), shelf: !!c.shelf });
     setDecisionLeft(diff.decisionTime);
     if (timers.current.dec) clearInterval(timers.current.dec);
     let left = diff.decisionTime;
@@ -744,23 +744,45 @@ export default function GameRunner({
               {choice.hintTgt && (
                 <div className="cbs-hint">💡 ลองใช้แนวทาง <b>{choice.hintTgt}</b> ดูสิ</div>
               )}
-              {choice.options.map((o, i) => {
-                const tried = choice.tried.has(o.label);
-                const dim = !tried && choice.hintTgt && o.tgt !== choice.hintTgt;
-                const glow = choice.hintTgt && o.tgt === choice.hintTgt;
-                return (
-                  <button
-                    key={i}
-                    type="button"
-                    disabled={tried}
-                    className={`cbs-choice ${tried ? "cbs-choice-tried" : ""} ${dim ? "cbs-choice-dim" : ""} ${glow ? "cbs-choice-hint" : ""}`}
-                    onClick={() => pick(o)}
-                  >
-                    <span className="cbs-choice-tgt">▸ {o.tgt}</span>
-                    {o.label}
-                  </button>
-                );
-              })}
+              {choice.shelf ? (
+                <div className="cbs-shelf-grid">
+                  {choice.options.map((o, i) => {
+                    const tried = choice.tried.has(o.label);
+                    const dim = !tried && choice.hintTgt && o.tgt !== choice.hintTgt;
+                    const glow = choice.hintTgt && o.tgt === choice.hintTgt;
+                    return (
+                      <button
+                        key={i}
+                        type="button"
+                        disabled={tried}
+                        className={`cbs-shelf-item ${tried ? "cbs-choice-tried" : ""} ${dim ? "cbs-choice-dim" : ""} ${glow ? "cbs-choice-hint" : ""}`}
+                        onClick={() => pick(o)}
+                      >
+                        <span className="cbs-shelf-icon" aria-hidden>💊</span>
+                        <span className="cbs-shelf-name">{o.label}</span>
+                      </button>
+                    );
+                  })}
+                </div>
+              ) : (
+                choice.options.map((o, i) => {
+                  const tried = choice.tried.has(o.label);
+                  const dim = !tried && choice.hintTgt && o.tgt !== choice.hintTgt;
+                  const glow = choice.hintTgt && o.tgt === choice.hintTgt;
+                  return (
+                    <button
+                      key={i}
+                      type="button"
+                      disabled={tried}
+                      className={`cbs-choice ${tried ? "cbs-choice-tried" : ""} ${dim ? "cbs-choice-dim" : ""} ${glow ? "cbs-choice-hint" : ""}`}
+                      onClick={() => pick(o)}
+                    >
+                      <span className="cbs-choice-tgt">▸ {o.tgt}</span>
+                      {o.label}
+                    </button>
+                  );
+                })
+              )}
               <div className="cbs-choice-timer">
                 <div
                   className={`cbs-choice-timer-fill ${timerPct < 30 ? "cbs-low" : ""}`}

@@ -10,8 +10,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { User, Mail, Crown, Calendar, LogOut, BarChart3, ArrowRight, Share2, MessageCircle, Copy, Check } from "lucide-react";
 import StudentStats from "@/components/StudentStats";
 import LineContactCard from "@/components/LineContactCard";
-import { isTrialActive } from "@/lib/trial";
-import { LINE_TRIAL_DAYS } from "@/lib/limits";
+import { LINE_BONUS_DAYS } from "@/lib/limits";
 
 const LINK_POLL_MS = 4000;
 
@@ -59,12 +58,9 @@ export default function ProfilePage() {
     role?: string;
     membership_type?: string;
     membership_expires_at?: string | null;
-    line_trial_expires_at?: string | null;
   };
 
   const membershipType = user.membership_type || "free";
-  const onTrial =
-    membershipType === "free" && isTrialActive(user.line_trial_expires_at);
 
   return (
     <div className="mx-auto max-w-2xl px-4 py-8 sm:px-6 lg:px-8">
@@ -97,26 +93,10 @@ export default function ProfilePage() {
           <CardContent className="space-y-4">
             <div className="flex items-center justify-between">
               <span className="text-muted-foreground">แพ็กเกจ</span>
-              {onTrial ? (
-                <Badge className="bg-[#06C755]/10 text-[#06C755]">
-                  Premium ทดลองฟรี
-                </Badge>
-              ) : (
-                <Badge className={membershipColors[membershipType] || membershipColors.free}>
-                  {membershipLabels[membershipType] || membershipType}
-                </Badge>
-              )}
+              <Badge className={membershipColors[membershipType] || membershipColors.free}>
+                {membershipLabels[membershipType] || membershipType}
+              </Badge>
             </div>
-            {onTrial && user.line_trial_expires_at && (
-              <div className="flex items-center justify-between">
-                <span className="text-muted-foreground flex items-center gap-1">
-                  <Calendar className="h-4 w-4" /> สิทธิ์ทดลองถึง
-                </span>
-                <span className="text-sm font-medium">
-                  {formatThaiDate(user.line_trial_expires_at)}
-                </span>
-              </div>
-            )}
             {user.membership_expires_at && (
               <div className="flex items-center justify-between">
                 <span className="text-muted-foreground flex items-center gap-1">
@@ -146,16 +126,16 @@ export default function ProfilePage() {
           <CardHeader>
             <h3 className="font-semibold flex items-center gap-2">
               <MessageCircle className="h-5 w-5 text-[#06C755]" /> เชื่อมต่อ LINE
-              {!user.line_trial_expires_at && membershipType === "free" && (
+              {membershipType === "free" && (
                 <Badge className="bg-[#06C755] text-white">
-                  ฟรี Premium {LINE_TRIAL_DAYS} วัน
+                  สมาชิกใหม่ ฟรี Premium {LINE_BONUS_DAYS} วัน
                 </Badge>
               )}
             </h3>
           </CardHeader>
           <CardContent>
             <LineLinkSection
-              offerTrial={!user.line_trial_expires_at && membershipType === "free"}
+              offerBonus={membershipType === "free"}
             />
           </CardContent>
         </Card>
@@ -199,13 +179,14 @@ export default function ProfilePage() {
   );
 }
 
-function LineLinkSection({ offerTrial }: { offerTrial: boolean }) {
+function LineLinkSection({ offerBonus }: { offerBonus: boolean }) {
   const { update } = useSession();
   const [code, setCode] = useState<string | null>(null);
   const [codeCreatedAt, setCodeCreatedAt] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const [copied, setCopied] = useState(false);
-  const [linked, setLinked] = useState<{ trialExpiresAt: string | null } | null>(null);
+  // bonusUntil is set when this link granted the new-member LINE bonus.
+  const [linked, setLinked] = useState<{ bonusUntil: string | null } | null>(null);
 
   const generateCode = async () => {
     setLoading(true);
@@ -221,7 +202,7 @@ function LineLinkSection({ offerTrial }: { offerTrial: boolean }) {
   };
 
   // Wait for the webhook to link the account, then refresh the session so an
-  // unlocked trial takes effect without signing in again.
+  // unlocked bonus takes effect without signing in again.
   useEffect(() => {
     if (!code || !codeCreatedAt || linked) return;
     let cancelled = false;
@@ -229,11 +210,16 @@ function LineLinkSection({ offerTrial }: { offerTrial: boolean }) {
       try {
         const res = await fetch("/api/line/status");
         if (!res.ok) return;
-        const data: { linkedAt: string | null; trialExpiresAt: string | null } =
-          await res.json();
+        const data: {
+          linkedAt: string | null;
+          bonusGrantedAt: string | null;
+          membershipExpiresAt: string | null;
+        } = await res.json();
         if (cancelled || !data.linkedAt || data.linkedAt < codeCreatedAt) return;
         clearInterval(timer);
-        setLinked({ trialExpiresAt: data.trialExpiresAt });
+        const bonusNow =
+          !!data.bonusGrantedAt && data.bonusGrantedAt >= codeCreatedAt;
+        setLinked({ bonusUntil: bonusNow ? data.membershipExpiresAt : null });
         await update();
       } catch {
         // keep polling
@@ -246,17 +232,16 @@ function LineLinkSection({ offerTrial }: { offerTrial: boolean }) {
   }, [code, codeCreatedAt, linked, update]);
 
   if (linked) {
-    const trialOn = isTrialActive(linked.trialExpiresAt);
     return (
       <div className="space-y-3">
         <p className="text-sm font-medium text-[#06C755] flex items-center gap-1">
           <Check className="h-4 w-4" /> เชื่อมต่อ LINE สำเร็จ
         </p>
-        {offerTrial && trialOn && linked.trialExpiresAt && (
+        {linked.bonusUntil && (
           <>
             <p className="text-sm text-muted-foreground">
-              เปิดสิทธิ์ Premium ฟรี {LINE_TRIAL_DAYS} วันแล้ว — ทำข้อสอบได้ไม่จำกัด
-              และดูเฉลยละเอียดทุกข้อ ถึง {formatThaiDate(linked.trialExpiresAt)}
+              เปิดสิทธิ์ Premium ฟรี {LINE_BONUS_DAYS} วันแล้ว — ทำข้อสอบได้ไม่จำกัด
+              และดูเฉลยละเอียดทุกข้อ ถึง {formatThaiDate(linked.bonusUntil)}
             </p>
             <Link href="/ple">
               <Button className="w-full bg-brand hover:bg-brand-light text-white">
@@ -281,8 +266,8 @@ function LineLinkSection({ offerTrial }: { offerTrial: boolean }) {
     return (
       <div className="space-y-3">
         <p className="text-sm text-muted-foreground">
-          {offerTrial
-            ? `เชื่อมต่อ LINE รับสิทธิ์ Premium ฟรี ${LINE_TRIAL_DAYS} วัน ทำข้อสอบได้ไม่จำกัด + ดูเฉลยละเอียดทุกข้อ พร้อมรับแจ้งเตือนสรุปผลสัปดาห์`
+          {offerBonus
+            ? `สมาชิกใหม่เชื่อมต่อ LINE รับสิทธิ์ Premium ฟรี ${LINE_BONUS_DAYS} วัน ทำข้อสอบได้ไม่จำกัด + ดูเฉลยละเอียดทุกข้อ พร้อมรับแจ้งเตือนสรุปผลสัปดาห์`
             : "เชื่อมต่อ LINE เพื่อรับแจ้งเตือนสรุปผลสัปดาห์ และเตือนก่อนหมดอายุ"}
         </p>
         <Button

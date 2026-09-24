@@ -1,21 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
 import { verifyLineSignature, replyLineMessage } from "@/lib/line";
+import { LINE_BONUS_DAYS, grantLineBonus, lineBonusMessage } from "@/lib/line-bonus";
 import { db } from "@/lib/db";
 import { lineLinkCodes, users } from "@/lib/db/schema";
 import { eq, and, gt, ne } from "drizzle-orm";
-import { claimLineTrial } from "@/lib/line-trial";
-import { LINE_TRIAL_DAYS } from "@/lib/limits";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://pharmru.com";
-
-function formatThaiDate(iso: string): string {
-  return new Date(iso).toLocaleDateString("th-TH", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-    timeZone: "Asia/Bangkok",
-  });
-}
 
 export const runtime = "nodejs";
 
@@ -41,24 +31,22 @@ export async function POST(request: NextRequest) {
 
   for (const event of payload.events) {
     if (event.type === "follow") {
-      // Already signed in with LINE Login? Then we know who this is: grant the
-      // trial straight away, no link code needed.
-      const account = await db
+      // Accounts created via LINE login already carry this LINE userId, so
+      // following the OA is enough to claim the new-member bonus.
+      const existing = await db
         .select({ id: users.id })
         .from(users)
         .where(eq(users.line_user_id, event.source.userId))
         .then((rows) => rows[0]);
-      const trial = account
-        ? await claimLineTrial(account.id, event.source.userId)
-        : null;
+      const bonusExpiresAt = existing ? await grantLineBonus(existing.id) : null;
 
       await replyLineMessage(
         event.replyToken,
-        trial?.granted
-          ? `สวัสดีครับ! 🎉 ยินดีต้อนรับสู่ฟาร์มรู้\n\n🎁 เปิดสิทธิ์ Premium ฟรี ${LINE_TRIAL_DAYS} วันให้แล้ว!\nทำข้อสอบได้ไม่จำกัด + ดูเฉลยละเอียดทุกข้อ ถึง ${formatThaiDate(trial.expiresAt)}\n\nเริ่มทำข้อสอบ 👉 ${SITE_URL}/ple`
-          : account
-            ? `สวัสดีครับ! 🎉 ยินดีต้อนรับกลับสู่ฟาร์มรู้\n\nทำข้อสอบต่อ 👉 ${SITE_URL}/ple`
-            : `สวัสดีครับ! 🎉 ยินดีต้อนรับสู่ฟาร์มรู้\n\n🎁 รับสิทธิ์ทำข้อสอบ Premium ฟรี ${LINE_TRIAL_DAYS} วัน\nกด "เข้าสู่ระบบด้วย LINE" ที่ ${SITE_URL}/login\nระบบจะเปิดสิทธิ์ให้อัตโนมัติ\n\nสมัครด้วยอีเมลไว้แล้ว? ไปที่ ${SITE_URL}/profile กด "สร้างรหัสเชื่อมต่อ" แล้วส่งรหัส PHARMROO-XXXXXX ในแชทนี้`
+        bonusExpiresAt
+          ? `สวัสดีครับ! 🎉\nยินดีต้อนรับสู่ PharmRoo\n\n${lineBonusMessage(bonusExpiresAt)}`
+          : existing
+            ? `สวัสดีครับ! 🎉\nยินดีต้อนรับกลับสู่ PharmRoo\n\nทำข้อสอบต่อ 👉 ${SITE_URL}/ple`
+            : `สวัสดีครับ! 🎉\nยินดีต้อนรับสู่ PharmRoo\n\n🎁 สมาชิกใหม่รับ Premium ฟรี ${LINE_BONUS_DAYS} วัน!\nกด "เข้าสู่ระบบด้วย LINE" ที่ ${SITE_URL}/login ระบบจะเปิดสิทธิ์ให้อัตโนมัติ\n\nสมัครด้วยอีเมลไว้แล้ว? ไปที่ ${SITE_URL}/profile กด "สร้างรหัสเชื่อมต่อ" แล้วส่งรหัส PHARMROO-XXXXXX ในแชทนี้`
       );
     } else if (
       event.type === "message" &&
@@ -95,6 +83,8 @@ export async function POST(request: NextRequest) {
         : undefined;
 
       if (linkCode && linkedElsewhere) {
+        // users.line_user_id is unique: linking would fail, and it would let
+        // one LINE account claim the bonus on several web accounts.
         await replyLineMessage(
           event.replyToken,
           "⚠️ LINE นี้เชื่อมต่อกับบัญชีฟาร์มรู้อื่นอยู่แล้ว\nหากต้องการความช่วยเหลือ พิมพ์บอกแอดมินในแชทนี้ได้เลย"
@@ -112,16 +102,13 @@ export async function POST(request: NextRequest) {
         // Delete used code
         await db.delete(lineLinkCodes).where(eq(lineLinkCodes.id, linkCode.id));
 
-        const trial = await claimLineTrial(linkCode.user_id, lineUserId);
-        const trialLine = trial.granted
-          ? `\n\n🎁 เปิดสิทธิ์ Premium ฟรี ${LINE_TRIAL_DAYS} วันแล้ว!\nทำข้อสอบได้ไม่จำกัด + ดูเฉลยละเอียดทุกข้อ ถึง ${formatThaiDate(trial.expiresAt)}\n\nเริ่มทำข้อสอบ 👉 ${SITE_URL}/ple`
-          : trial.reason === "already_claimed"
-            ? "\n\n(สิทธิ์ Premium ฟรีใช้ได้ครั้งเดียวต่อบัญชี และได้รับไปแล้ว)"
-            : "";
+        const bonusExpiresAt = await grantLineBonus(linkCode.user_id);
 
         await replyLineMessage(
           event.replyToken,
-          `✅ เชื่อมต่อบัญชีสำเร็จ!\nคุณจะได้รับแจ้งเตือนผ่าน LINE แล้ว${trialLine}`
+          bonusExpiresAt
+            ? `✅ เชื่อมต่อบัญชีสำเร็จ!\nคุณจะได้รับแจ้งเตือนผ่าน LINE แล้ว\n\n${lineBonusMessage(bonusExpiresAt)}`
+            : "✅ เชื่อมต่อบัญชีสำเร็จ!\nคุณจะได้รับแจ้งเตือนผ่าน LINE แล้ว"
         );
       } else {
         await replyLineMessage(

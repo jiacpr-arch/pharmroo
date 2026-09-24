@@ -7,7 +7,7 @@ import { X } from "lucide-react";
 import { trackLead } from "@/lib/analytics/conversions";
 import { CONTACT_INFO } from "@/lib/contact-info";
 import LineIcon from "@/components/LineIcon";
-import { LINE_TRIAL_DAYS } from "@/lib/limits";
+import { LINE_BONUS_DAYS } from "@/lib/limits";
 
 const LINE_OA_URL = CONTACT_INFO.lineUrl;
 const DISMISS_KEY = "pharmroo_line_fab_dismissed";
@@ -29,8 +29,8 @@ function getDismissed() {
  * Meta Pixel Lead event on click.
  *
  * Logged-out visitors go through LINE Login, whose consent screen offers
- * adding the OA (pre-checked); signing in as a friend grants the free trial.
- * Logged-in users open the OA directly; the follow webhook grants the trial,
+ * adding the OA (pre-checked); signing in as a friend grants the new-member
+ * bonus. Logged-in users open the OA directly; the follow webhook grants it,
  * and the session is refreshed when they come back to the tab.
  */
 export default function FloatingLineButton() {
@@ -70,11 +70,9 @@ export default function FloatingLineButton() {
   if (pathname?.startsWith("/admin") || dismissed) return null;
 
   const user = session?.user as
-    | { membership_type?: string; line_trial_expires_at?: string | null }
+    | { membership_type?: string }
     | undefined;
-  const offerTrial =
-    !user ||
-    (user.membership_type === "free" && !user.line_trial_expires_at);
+  const offerBonus = !user || user.membership_type === "free";
 
   return (
     <div className="fixed bottom-5 left-5 z-50 flex items-center">
@@ -83,8 +81,8 @@ export default function FloatingLineButton() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label={
-          offerTrial
-            ? `แอด LINE ฟาร์มรู้ — รับสิทธิ์ทำข้อสอบ Premium ฟรี ${LINE_TRIAL_DAYS} วัน`
+          offerBonus
+            ? `แอด LINE ฟาร์มรู้ — รับสิทธิ์ทำข้อสอบ Premium ฟรี ${LINE_BONUS_DAYS} วัน`
             : "แอด LINE ฟาร์มรู้"
         }
         onClick={handleClick}
@@ -92,8 +90,8 @@ export default function FloatingLineButton() {
       >
         <LineIcon className="h-6 w-6 shrink-0" />
         <span className="text-sm font-semibold">
-          {offerTrial
-            ? `แอด LINE ทำข้อสอบฟรี ${LINE_TRIAL_DAYS} วัน`
+          {offerBonus
+            ? `แอด LINE ทำข้อสอบฟรี ${LINE_BONUS_DAYS} วัน`
             : "แอด LINE ฟาร์มรู้"}
         </span>
       </a>

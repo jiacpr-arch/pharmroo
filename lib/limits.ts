@@ -4,5 +4,5 @@ export const GUEST_DAILY_QUESTION_LIMIT = 10;
 /** Daily question-play quota for logged-in free (non-paid) members. */
 export const FREE_DAILY_QUESTION_LIMIT = 20;
 
-/** Days of free Premium granted once for linking an account to the LINE OA. */
-export const LINE_TRIAL_DAYS = 7;
+/** Free premium days granted once to a new member who adds the LINE OA. */
+export const LINE_BONUS_DAYS = 7;

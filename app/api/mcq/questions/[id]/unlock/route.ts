@@ -7,7 +7,7 @@ import {
   getUserCreditBalance,
   spendCreditForUnlock,
 } from "@/lib/db/queries-credits";
-import { getViewerGate } from "@/lib/credits-gate";
+import { isPaidMember } from "@/lib/credits-gate";
 
 /**
  * Spend 1 credit to unlock a question's detailed explanation.
@@ -47,7 +47,11 @@ export async function POST(
     return NextResponse.json({ error: "No detailed explanation" }, { status: 400 });
   }
 
-  if (getViewerGate(session).isPaid) {
+  const { membership_type, membership_expires_at } = session.user as {
+    membership_type?: string;
+    membership_expires_at?: string | null;
+  };
+  if (isPaidMember(membership_type, membership_expires_at)) {
     return NextResponse.json({
       status: "member",
       credit_balance: await getUserCreditBalance(session.user.id),

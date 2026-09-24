@@ -65,7 +65,12 @@ export interface ChoiceOption {
 }
 
 export interface ChoiceNode {
-  choice: { q: string; options: ChoiceOption[] };
+  choice: {
+    q: string;
+    options: ChoiceOption[];
+    /** true = แสดงตัวเลือกเป็น "ชั้นยา" (grid หลายตัว) แทนปุ่มเรียงแนวตั้งปกติ — ใช้กับคำถามเลือกยาที่อยากให้มีตัวหลอกเยอะๆ เหมือนยืนหน้าชั้นจริง */
+    shelf?: boolean;
+  };
 }
 
 /** สรุปฉลากยาที่ผู้เล่นเขียนไว้ (จาก onLabel ของตัวเลือกที่ตอบถูกก่อนหน้า) */

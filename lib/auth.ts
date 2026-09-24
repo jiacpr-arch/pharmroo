@@ -8,7 +8,9 @@ import { eq } from "drizzle-orm";
 import bcrypt from "bcryptjs";
 import { createUser } from "@/lib/db/create-user";
 import { isLineOaFriend } from "@/lib/line";
-import { claimLineTrial } from "@/lib/line-trial";
+import { grantLineBonus } from "@/lib/line-bonus";
+
+const SESSION_DB_SYNC_MS = 5 * 60 * 1000;
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
   session: { strategy: "jwt" },
@@ -24,7 +26,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       clientId: process.env.LINE_LOGIN_CHANNEL_ID!,
       clientSecret: process.env.LINE_LOGIN_CHANNEL_SECRET!,
       // Show the "add LINE OA as friend" option, pre-checked, on the LINE
-      // consent screen. Adding it unlocks the free Premium trial.
+      // consent screen. Adding it unlocks the new-member LINE bonus.
       authorization: { params: { bot_prompt: "aggressive" } },
     }),
     Credentials({
@@ -56,7 +58,6 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
           role: user.role,
           membership_type: user.membership_type,
           membership_expires_at: user.membership_expires_at,
-          line_trial_expires_at: user.line_trial_expires_at,
         };
       },
     }),
@@ -129,14 +130,14 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         }
 
         // Added the OA as a friend (e.g. via the consent-screen checkbox)?
-        // Grant the link-LINE trial right away — no link code needed.
+        // Grant the new-member LINE bonus right away — no link code needed.
         if (user.id && account.access_token) {
           try {
             if (await isLineOaFriend(account.access_token)) {
-              await claimLineTrial(user.id, lineUserId);
+              await grantLineBonus(user.id);
             }
           } catch (err) {
-            console.error("[auth] LINE trial grant failed", err);
+            console.error("[auth] LINE bonus grant failed", err);
           }
         }
       }
@@ -149,16 +150,23 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         token.role = (user as { role?: string }).role;
         token.membership_type = (user as { membership_type?: string }).membership_type;
         token.membership_expires_at = (user as { membership_expires_at?: string | null }).membership_expires_at;
-        token.line_trial_expires_at = (user as { line_trial_expires_at?: string | null }).line_trial_expires_at;
         token.exam_category = (user as { exam_category?: string | null }).exam_category;
       }
-      // For OAuth providers, fetch fresh user data from DB. A client-side
-      // `update()` also refreshes, e.g. after the LINE webhook granted a trial.
+      // Fetch fresh user data from DB for OAuth sign-ins, on a client-side
+      // `update()`, and every few minutes otherwise, so membership changes made
+      // server-side (e.g. the LINE webhook granting the bonus) reach the
+      // session without signing out and in again.
+      const stale =
+        Date.now() - ((token.db_synced_at as number | undefined) ?? 0) >
+        SESSION_DB_SYNC_MS;
       if (
-        ((account?.provider === "google" || account?.provider === "line") ||
-          trigger === "update") &&
+        (account?.provider === "google" ||
+          account?.provider === "line" ||
+          trigger === "update" ||
+          stale) &&
         token.email
       ) {
+        token.db_synced_at = Date.now();
         const dbUser = await db
           .select()
           .from(users)
@@ -169,7 +177,6 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
           token.role = dbUser.role;
           token.membership_type = dbUser.membership_type;
           token.membership_expires_at = dbUser.membership_expires_at;
-          token.line_trial_expires_at = dbUser.line_trial_expires_at;
           token.exam_category = dbUser.exam_category;
         }
       }
@@ -181,7 +188,6 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         (session.user as { role?: string }).role = token.role as string;
         (session.user as { membership_type?: string }).membership_type = token.membership_type as string;
         (session.user as { membership_expires_at?: string | null }).membership_expires_at = token.membership_expires_at as string | null;
-        (session.user as { line_trial_expires_at?: string | null }).line_trial_expires_at = token.line_trial_expires_at as string | null;
         (session.user as { exam_category?: string | null }).exam_category = token.exam_category as string | null;
       }
       return session;
