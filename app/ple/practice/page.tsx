@@ -11,7 +11,7 @@ import { IP1_SET2_DAY02 } from "@/lib/ip1-set2-day02";
 import { IP1_SET2_DAY03 } from "@/lib/ip1-set2-day03";
 import { IP1_SET2_DAY04 } from "@/lib/ip1-set2-day04";
 import { Badge } from "@/components/ui/badge";
-import PharmacyNews, { PharmacyNewsSkeleton } from "@/components/PharmacyNews";
+import ExamNews, { ExamNewsSkeleton } from "@/components/ExamNews";
 import Link from "next/link";
 import { ArrowLeft, BookOpen, Factory, HeartPulse, ShieldCheck } from "lucide-react";
 import type { Metadata } from "next";
@@ -257,8 +257,8 @@ export default async function PracticePage({
       <section className="mt-12">
         <h2 className="text-lg font-semibold mb-3">ข่าวการสอบ & วงการเภสัช</h2>
         <div className="overflow-hidden rounded-xl border bg-white">
-          <Suspense fallback={<PharmacyNewsSkeleton />}>
-            <PharmacyNews />
+          <Suspense fallback={<ExamNewsSkeleton />}>
+            <ExamNews track="pharmacy" />
           </Suspense>
         </div>
       </section>

@@ -1,9 +1,20 @@
-import { getPharmacyNews, type NewsTopic } from "@/lib/pharmacy-news";
+import { getExamNews, type NewsTopic, type NewsTrack } from "@/lib/exam-news";
 import { ExternalLink } from "lucide-react";
 
-const TOPIC_LABEL: Record<NewsTopic, { label: string; className: string }> = {
-  exam: { label: "การสอบ", className: "bg-amber-100 text-amber-800" },
-  pharmacy: { label: "เภสัช & ยา", className: "bg-emerald-100 text-emerald-800" },
+const TOPIC_LABEL: Record<NewsTrack, Record<NewsTopic, { label: string; className: string }>> = {
+  pharmacy: {
+    exam: { label: "การสอบ", className: "bg-amber-100 text-amber-800" },
+    profession: { label: "เภสัช & ยา", className: "bg-emerald-100 text-emerald-800" },
+  },
+  nursing: {
+    exam: { label: "การสอบ", className: "bg-amber-100 text-amber-800" },
+    profession: { label: "พยาบาล & ยา", className: "bg-sky-100 text-sky-800" },
+  },
+};
+
+const EMPTY_TEXT: Record<NewsTrack, string> = {
+  pharmacy: "ยังไม่มีข่าวการสอบหรือข่าวเภสัชใหม่ในช่วงนี้",
+  nursing: "ยังไม่มีข่าวการสอบหรือข่าวพยาบาลใหม่ในช่วงนี้",
 };
 
 function formatDate(iso: string | null) {
@@ -16,13 +27,19 @@ function formatDate(iso: string | null) {
   });
 }
 
-export default async function PharmacyNews({ limit = 6 }: { limit?: number }) {
-  const news = await getPharmacyNews(limit);
+export default async function ExamNews({
+  track,
+  limit = 6,
+}: {
+  track: NewsTrack;
+  limit?: number;
+}) {
+  const news = await getExamNews(track, limit);
 
   if (news.length === 0) {
     return (
       <p className="px-4 py-8 text-center text-sm text-slate-400">
-        ยังไม่มีข่าวการสอบหรือข่าวเภสัชใหม่ในช่วงนี้
+        {EMPTY_TEXT[track]}
       </p>
     );
   }
@@ -30,7 +47,7 @@ export default async function PharmacyNews({ limit = 6 }: { limit?: number }) {
   return (
     <ul className="divide-y">
       {news.map((item) => {
-        const topic = TOPIC_LABEL[item.topic];
+        const topic = TOPIC_LABEL[track][item.topic];
         return (
           <li key={item.link}>
             <a
@@ -60,7 +77,7 @@ export default async function PharmacyNews({ limit = 6 }: { limit?: number }) {
   );
 }
 
-export function PharmacyNewsSkeleton() {
+export function ExamNewsSkeleton() {
   return (
     <p className="px-4 py-8 text-center text-sm text-slate-400">กำลังโหลดข่าว...</p>
   );

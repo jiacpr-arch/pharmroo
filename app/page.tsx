@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import PricingCard from "@/components/PricingCard";
 import { Suspense } from "react";
-import PharmacyNews, { PharmacyNewsSkeleton } from "@/components/PharmacyNews";
+import ExamNews, { ExamNewsSkeleton } from "@/components/ExamNews";
 import { CATEGORIES, PRICING_PLANS } from "@/lib/types";
 import { getNewQuestionsStats } from "@/lib/db/queries-mcq";
 import {
@@ -362,8 +362,8 @@ export default async function HomePage() {
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <h2 className="mb-4 text-center text-2xl font-bold">ข่าวการสอบ & วงการเภสัช</h2>
           <div className="overflow-hidden rounded-2xl border bg-white shadow-sm">
-            <Suspense fallback={<PharmacyNewsSkeleton />}>
-              <PharmacyNews />
+            <Suspense fallback={<ExamNewsSkeleton />}>
+              <ExamNews track="pharmacy" />
             </Suspense>
           </div>
         </div>
