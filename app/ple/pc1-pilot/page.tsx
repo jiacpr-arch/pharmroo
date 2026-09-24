@@ -16,6 +16,7 @@ export default async function Page(){
    <div className="flex items-center gap-2 text-2xl font-bold"><HeartPulse className="h-7 w-7 text-rose-500"/>PC1 Pilot 032</div>
    <p className="mt-2 text-sm text-muted-foreground">8 ระบบ/สถานการณ์ × 4 ข้อ = 32 ข้อ · Medium–Hard</p>
    <p className="mt-1 text-xs text-muted-foreground">Cardiorenal · ACS · AF · Asthma · Infection · CKD/Electrolyte · Rheumatology · Hepatology</p>
+   <Link href="/ple/pc1-scenario" className="mt-4 inline-flex rounded-xl bg-brand px-4 py-2 text-sm font-bold text-white">ลองชุดแนวสถานการณ์ (Scenario Set 001) →</Link>
   </div>
   <McqPractice questions={gated.questions} initialCreditBalance={gated.creditBalance} playAllowance={allowance}/>
  </div>
