@@ -25,6 +25,13 @@ export const authConfig = {
         password: { type: "password" },
       },
     }),
+    Credentials({
+      id: "line-liff",
+      name: "LINE (LIFF)",
+      credentials: {
+        idToken: { type: "text" },
+      },
+    }),
   ],
   callbacks: {
     async session({ session, token }) {
