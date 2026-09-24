@@ -38,9 +38,21 @@ const LINE_QUOTA_ALERT_KEY = "line_quota_alert_sent_at";
 const QUOTA_CACHE_TTL_MS = 15 * 60_000;
 const ALERT_DEDUPE_MS = 24 * 60 * 60_000;
 
-/** Reserve kept off-limits to bulk sends, so critical single-recipient sends still get through. */
+/**
+ * Reserve kept off-limits to bulk sends, so critical single-recipient sends
+ * still get through: 5% of the quota, but at least LINE_QUOTA_RESERVE_MIN —
+ * capped at LINE_QUOTA_RESERVE_MAX_FRACTION of the quota so a small plan
+ * (the free OA plan's ~300/month) isn't reserved in full and every bulk
+ * send permanently throttled.
+ */
 export const LINE_QUOTA_RESERVE_MIN = 300;
 export const LINE_QUOTA_RESERVE_FRACTION = 0.05;
+export const LINE_QUOTA_RESERVE_MAX_FRACTION = 0.2;
+
+export function lineQuotaReserve(limit: number): number {
+  const floor = Math.min(LINE_QUOTA_RESERVE_MIN, Math.ceil(limit * LINE_QUOTA_RESERVE_MAX_FRACTION));
+  return Math.max(floor, Math.ceil(limit * LINE_QUOTA_RESERVE_FRACTION));
+}
 
 export interface LineQuotaStatus {
   /** null when the plan is unlimited ("none") or unknown — never throttles. */
@@ -60,11 +72,7 @@ export function computeLineQuotaStatus(
     return { limit, used, remaining: null, throttled: false };
   }
   const remaining = limit - used;
-  const reserve = Math.max(
-    LINE_QUOTA_RESERVE_MIN,
-    Math.ceil(limit * LINE_QUOTA_RESERVE_FRACTION)
-  );
-  return { limit, used, remaining, throttled: remaining <= reserve };
+  return { limit, used, remaining, throttled: remaining <= lineQuotaReserve(limit) };
 }
 
 let inFlightQuotaCheck: Promise<LineQuotaStatus> | null = null;

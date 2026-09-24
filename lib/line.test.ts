@@ -12,10 +12,25 @@ vi.mock("@/lib/email/resend", () => ({
 
 import {
   computeLineQuotaStatus,
-  LINE_QUOTA_RESERVE_MIN,
-  LINE_QUOTA_RESERVE_FRACTION,
+  lineQuotaReserve,
   verifyLineSignature,
 } from "./line";
+
+describe("lineQuotaReserve", () => {
+  it("uses 5% on a large plan", () => {
+    expect(lineQuotaReserve(15000)).toBe(750);
+  });
+
+  it("applies the 300 floor on a mid-size plan", () => {
+    expect(lineQuotaReserve(5000)).toBe(300);
+  });
+
+  it("caps the floor at 20% on a small plan so bulk sends aren't blocked outright", () => {
+    // Free OA plan: reserving all 300 would throttle every bulk send forever.
+    expect(lineQuotaReserve(300)).toBe(60);
+    expect(lineQuotaReserve(1000)).toBe(200);
+  });
+});
 
 describe("computeLineQuotaStatus", () => {
   it("never throttles an unlimited or unknown plan", () => {
@@ -28,18 +43,17 @@ describe("computeLineQuotaStatus", () => {
   });
 
   it("throttles once remaining drops to the reserve", () => {
-    const limit = 1000;
-    const reserve = Math.max(LINE_QUOTA_RESERVE_MIN, Math.ceil(limit * LINE_QUOTA_RESERVE_FRACTION));
-    const usedAtEdge = limit - reserve;
+    const limit = 15000;
+    const usedAtEdge = limit - lineQuotaReserve(limit);
 
     expect(computeLineQuotaStatus(limit, usedAtEdge - 1).throttled).toBe(false);
     expect(computeLineQuotaStatus(limit, usedAtEdge).throttled).toBe(true);
   });
 
-  it("applies the minimum reserve floor on a small quota", () => {
-    // 5% of 1000 = 50, below LINE_QUOTA_RESERVE_MIN (300) — the floor wins.
-    const status = computeLineQuotaStatus(1000, 1000 - LINE_QUOTA_RESERVE_MIN);
-    expect(status.throttled).toBe(true);
+  it("lets a fresh free plan send in bulk", () => {
+    expect(computeLineQuotaStatus(300, 0).throttled).toBe(false);
+    expect(computeLineQuotaStatus(300, 239).throttled).toBe(false);
+    expect(computeLineQuotaStatus(300, 240).throttled).toBe(true);
   });
 });
 
