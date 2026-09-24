@@ -9,7 +9,9 @@ import { detectTrialIntent, handleBotIntent, handleEmailCapture } from "@/lib/bo
 import { getOrCreateLeadFromLine } from "@/lib/lead-channel";
 import { db } from "@/lib/db";
 import { chatMessages, lineLinkCodes, lineUnfollowEvents, users } from "@/lib/db/schema";
-import { eq, and, gt, gte } from "drizzle-orm";
+import { eq, and, gt, gte, ne } from "drizzle-orm";
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://pharmru.com";
 
 /** Per-LINE-user cap on chatbot turns, to keep AI spend and spam under control. */
 const CHATBOT_RATE_LIMIT_PER_HOUR = 30;
@@ -71,7 +73,9 @@ async function handleFollow(event: LineEvent) {
     buildFollowGreetingFlex(
       bonusExpiresAt
         ? lineBonusMessage(bonusExpiresAt)
-        : `ส่งรหัสเชื่อมต่อจากหน้า Profile เพื่อรับแจ้งเตือนผ่าน LINE\n\n🎁 สมาชิกใหม่เชื่อมต่อ LINE รับ Premium ฟรี ${LINE_BONUS_DAYS} วัน!`
+        : existing
+          ? `ทำข้อสอบต่อ 👉 ${SITE_URL}/ple`
+          : `🎁 สมาชิกใหม่รับ Premium ฟรี ${LINE_BONUS_DAYS} วัน!\nกด "เข้าสู่ระบบด้วย LINE" ที่ ${SITE_URL}/login ระบบจะเปิดสิทธิ์ให้อัตโนมัติ\n\nสมัครด้วยอีเมลไว้แล้ว? ส่งรหัสเชื่อมต่อจากหน้า Profile ในแชทนี้`
     ),
   ]);
 }
@@ -139,6 +143,23 @@ async function handleTextMessage(event: LineEvent) {
       await replyLineMessage(
         event.replyToken,
         "❌ รหัสไม่ถูกต้องหรือหมดอายุ\nกรุณาสร้างรหัสใหม่จากหน้า Profile"
+      );
+    }
+    return;
+  }
+
+  // users.line_user_id is unique: linking a LINE already bound to another
+  // account would fail, and would let one LINE claim the bonus repeatedly.
+  const linkedElsewhere = await db
+    .select({ id: users.id })
+    .from(users)
+    .where(and(eq(users.line_user_id, lineUserId), ne(users.id, linkCode.user_id)))
+    .then((rows) => rows[0]);
+  if (linkedElsewhere) {
+    if (event.replyToken) {
+      await replyLineMessage(
+        event.replyToken,
+        "⚠️ LINE นี้เชื่อมต่อกับบัญชีฟาร์มรู้อื่นอยู่แล้ว\nหากต้องการความช่วยเหลือ พิมพ์บอกแอดมินในแชทนี้ได้เลย"
       );
     }
     return;

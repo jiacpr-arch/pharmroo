@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Loader2 } from "lucide-react";
+import { LINE_BONUS_DAYS } from "@/lib/limits";
 
 function LoginForm() {
   const router = useRouter();
@@ -170,6 +171,9 @@ function LoginForm() {
             )}
             เข้าสู่ระบบด้วย LINE
           </Button>
+          <p className="text-center text-xs text-[#06C755]">
+            🎁 สมาชิกใหม่ เพิ่มเพื่อน LINE ฟาร์มรู้ตอนเข้าสู่ระบบ รับ Premium ฟรี {LINE_BONUS_DAYS} วัน
+          </p>
         </CardContent>
         <CardFooter className="justify-center">
           <p className="text-sm text-muted-foreground">

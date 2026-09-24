@@ -2,8 +2,10 @@ import { db } from "@/lib/db";
 import { users } from "@/lib/db/schema";
 import { and, eq, isNull } from "drizzle-orm";
 
-/** Free premium days granted once to a new member who adds the LINE OA. */
-export const LINE_BONUS_DAYS = 7;
+import { LINE_BONUS_DAYS } from "@/lib/limits";
+
+// Lives in lib/limits so client components can show it without importing db.
+export { LINE_BONUS_DAYS };
 
 /** Only accounts created within this many days count as "new members". */
 export const LINE_BONUS_NEW_MEMBER_WINDOW_DAYS = 7;
@@ -83,5 +85,5 @@ export function lineBonusMessage(expiresAt: Date): string {
     month: "long",
     day: "numeric",
   });
-  return `🎁 ของขวัญสมาชิกใหม่!\nรับ Premium ฟรี ${LINE_BONUS_DAYS} วัน\nใช้งานได้ถึง ${date}\n\n(ออกจากระบบแล้วเข้าใหม่ 1 ครั้งเพื่อเริ่มใช้งาน)`;
+  return `🎁 ของขวัญสมาชิกใหม่!\nรับ Premium ฟรี ${LINE_BONUS_DAYS} วัน\nใช้งานได้ถึง ${date}\n\nกลับไปที่เว็บได้เลย ระบบจะเปิดสิทธิ์ให้ภายในไม่กี่นาที`;
 }

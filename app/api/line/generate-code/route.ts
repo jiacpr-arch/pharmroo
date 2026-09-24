@@ -24,7 +24,8 @@ export async function POST() {
   const suffix = randomUUID().slice(0, 6).toUpperCase();
   const code = `PHARMROO-${suffix}`;
 
-  const expiresAt = new Date();
+  const createdAt = new Date();
+  const expiresAt = new Date(createdAt);
   expiresAt.setHours(expiresAt.getHours() + 24);
 
   await db.insert(lineLinkCodes).values({
@@ -33,5 +34,9 @@ export async function POST() {
     expires_at: expiresAt.toISOString(),
   });
 
-  return NextResponse.json({ code, expiresAt: expiresAt.toISOString() });
+  return NextResponse.json({
+    code,
+    createdAt: createdAt.toISOString(),
+    expiresAt: expiresAt.toISOString(),
+  });
 }
