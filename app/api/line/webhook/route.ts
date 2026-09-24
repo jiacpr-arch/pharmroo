@@ -41,10 +41,24 @@ export async function POST(request: NextRequest) {
 
   for (const event of payload.events) {
     if (event.type === "follow") {
-      // New follower welcome message
+      // Already signed in with LINE Login? Then we know who this is: grant the
+      // trial straight away, no link code needed.
+      const account = await db
+        .select({ id: users.id })
+        .from(users)
+        .where(eq(users.line_user_id, event.source.userId))
+        .then((rows) => rows[0]);
+      const trial = account
+        ? await claimLineTrial(account.id, event.source.userId)
+        : null;
+
       await replyLineMessage(
         event.replyToken,
-        `สวัสดีครับ! 🎉 ยินดีต้อนรับสู่ฟาร์มรู้\n\n🎁 รับสิทธิ์ทำข้อสอบ Premium ฟรี ${LINE_TRIAL_DAYS} วัน\n1) เข้าสู่ระบบแล้วไปที่หน้าโปรไฟล์\n${SITE_URL}/profile\n2) กด "สร้างรหัสเชื่อมต่อ"\n3) ส่งรหัส PHARMROO-XXXXXX ในแชทนี้\n\nระบบจะเปิดสิทธิ์ให้ทันที`
+        trial?.granted
+          ? `สวัสดีครับ! 🎉 ยินดีต้อนรับสู่ฟาร์มรู้\n\n🎁 เปิดสิทธิ์ Premium ฟรี ${LINE_TRIAL_DAYS} วันให้แล้ว!\nทำข้อสอบได้ไม่จำกัด + ดูเฉลยละเอียดทุกข้อ ถึง ${formatThaiDate(trial.expiresAt)}\n\nเริ่มทำข้อสอบ 👉 ${SITE_URL}/ple`
+          : account
+            ? `สวัสดีครับ! 🎉 ยินดีต้อนรับกลับสู่ฟาร์มรู้\n\nทำข้อสอบต่อ 👉 ${SITE_URL}/ple`
+            : `สวัสดีครับ! 🎉 ยินดีต้อนรับสู่ฟาร์มรู้\n\n🎁 รับสิทธิ์ทำข้อสอบ Premium ฟรี ${LINE_TRIAL_DAYS} วัน\nกด "เข้าสู่ระบบด้วย LINE" ที่ ${SITE_URL}/login\nระบบจะเปิดสิทธิ์ให้อัตโนมัติ\n\nสมัครด้วยอีเมลไว้แล้ว? ไปที่ ${SITE_URL}/profile กด "สร้างรหัสเชื่อมต่อ" แล้วส่งรหัส PHARMROO-XXXXXX ในแชทนี้`
       );
     } else if (
       event.type === "message" &&

@@ -89,3 +89,21 @@ export async function getLineProfile(
     pictureUrl?: string;
   }>;
 }
+
+/**
+ * Whether the LINE Login user has added the OA linked to the Login channel as
+ * a friend. Uses the user's LINE Login access token (needs `profile` scope).
+ * Returns false on any error so sign-in is never blocked by it.
+ */
+export async function isLineOaFriend(loginAccessToken: string): Promise<boolean> {
+  try {
+    const res = await fetch("https://api.line.me/friendship/v1/status", {
+      headers: { Authorization: `Bearer ${loginAccessToken}` },
+    });
+    if (!res.ok) return false;
+    const data = (await res.json()) as { friendFlag?: boolean };
+    return data.friendFlag === true;
+  } catch {
+    return false;
+  }
+}

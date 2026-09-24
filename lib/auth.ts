@@ -7,6 +7,8 @@ import { users } from "@/lib/db/schema";
 import { eq } from "drizzle-orm";
 import bcrypt from "bcryptjs";
 import { createUser } from "@/lib/db/create-user";
+import { isLineOaFriend } from "@/lib/line";
+import { claimLineTrial } from "@/lib/line-trial";
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
   session: { strategy: "jwt" },
@@ -21,6 +23,9 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
     LINE({
       clientId: process.env.LINE_LOGIN_CHANNEL_ID!,
       clientSecret: process.env.LINE_LOGIN_CHANNEL_SECRET!,
+      // Show the "add LINE OA as friend" option, pre-checked, on the LINE
+      // consent screen. Adding it unlocks the free Premium trial.
+      authorization: { params: { bot_prompt: "aggressive" } },
     }),
     Credentials({
       credentials: {
@@ -121,6 +126,18 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         } else {
           user.id = existing.id;
           user.email = existing.email;
+        }
+
+        // Added the OA as a friend (e.g. via the consent-screen checkbox)?
+        // Grant the link-LINE trial right away — no link code needed.
+        if (user.id && account.access_token) {
+          try {
+            if (await isLineOaFriend(account.access_token)) {
+              await claimLineTrial(user.id, lineUserId);
+            }
+          } catch (err) {
+            console.error("[auth] LINE trial grant failed", err);
+          }
         }
       }
 
