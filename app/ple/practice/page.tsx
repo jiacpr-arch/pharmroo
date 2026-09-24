@@ -8,6 +8,7 @@ import McqPractice from "@/components/McqPractice";
 import { IP1_PILOT_050 } from "@/lib/ip1-pilot-050";
 import { IP1_SET2_DAY01 } from "@/lib/ip1-set2-day01";
 import { IP1_SET2_DAY02 } from "@/lib/ip1-set2-day02";
+import { IP1_SET2_DAY03 } from "@/lib/ip1-set2-day03";
 import { Badge } from "@/components/ui/badge";
 import GoodyEmbed from "@/components/GoodyEmbed";
 import Link from "next/link";
@@ -42,7 +43,7 @@ async function PracticeContent({
 
   const selectedQuestions =
     track === "ip1"
-      ? [...IP1_PILOT_050, ...IP1_SET2_DAY01, ...IP1_SET2_DAY02]
+      ? [...IP1_PILOT_050, ...IP1_SET2_DAY01, ...IP1_SET2_DAY02, ...IP1_SET2_DAY03]
       : rawQuestions;
 
   const [{ questions, creditBalance }, playAllowance] = await Promise.all([
@@ -74,7 +75,7 @@ async function PracticeContent({
               <div className="flex items-center gap-2 text-xl font-bold"><Factory className="h-6 w-6 text-amber-500" /> IP1 — เภสัชกรรมอุตสาหการ</div>
               <p className="mt-2 text-sm text-muted-foreground">Industrial Pharmacy · Mock Set 1 จำนวน 150 ข้อ · ข้อ 101–150 เน้นอ่าน Monograph / Assay / Chromatography ระดับ Very Hard</p>
               <p className="mt-1 text-xs text-muted-foreground">Formulation · Manufacturing · Chromatography · Stability · Sterile · QA/QC · GMP · Validation</p>
-              <p className="mt-1 text-xs text-muted-foreground">+ Daily Set 2 (ทยอยอัปเดตวันละ 10 ข้อ) · ตอนนี้มี {IP1_SET2_DAY01.length + IP1_SET2_DAY02.length} ข้อ — Day 1: Cleanroom/HVAC/GMP Grade · Day 2: Impurity/Cleaning/Elemental/Scale-up calculations</p>
+              <p className="mt-1 text-xs text-muted-foreground">+ Daily Set 2 (ทยอยอัปเดตวันละ 10 ข้อ) · ตอนนี้มี {IP1_SET2_DAY01.length + IP1_SET2_DAY02.length + IP1_SET2_DAY03.length} ข้อ — Day 1: Cleanroom/HVAC/GMP Grade · Day 2: Impurity/Cleaning/Elemental/Scale-up calculations · Day 3: Sterilization/Aseptic processing validation</p>
             </div>
           )}
           {track === "phcp1" && (
