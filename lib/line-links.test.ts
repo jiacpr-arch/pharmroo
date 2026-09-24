@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it } from "vitest";
-import { liffDeepLink, toLiffUri } from "./line-links";
+import { liffDeepLink, resolveLiffNext, toLiffUri } from "./line-links";
 
 const ORIGINAL_LIFF_ID = process.env.NEXT_PUBLIC_LIFF_ID;
 const ORIGINAL_SITE_URL = process.env.NEXT_PUBLIC_SITE_URL;
@@ -46,5 +46,29 @@ describe("toLiffUri", () => {
   it("leaves an unparseable URL unchanged", () => {
     process.env.NEXT_PUBLIC_LIFF_ID = "1234567890-abcdefgh";
     expect(toLiffUri("not a url")).toBe("not a url");
+  });
+});
+
+describe("resolveLiffNext", () => {
+  it("prefers an explicit same-site ?next=", () => {
+    expect(resolveLiffNext("/pricing", ["ple"])).toBe("/pricing");
+  });
+
+  it("falls back to the LIFF deep-link path", () => {
+    expect(resolveLiffNext(null, ["ple", "practice"])).toBe("/ple/practice");
+    expect(resolveLiffNext(null, "pricing")).toBe("/pricing");
+  });
+
+  it("defaults to /profile", () => {
+    expect(resolveLiffNext(null, undefined)).toBe("/profile");
+    expect(resolveLiffNext("", [])).toBe("/profile");
+  });
+
+  it("rejects open-redirect attempts", () => {
+    expect(resolveLiffNext("https://evil.example", undefined)).toBe("/profile");
+    expect(resolveLiffNext("//evil.example", undefined)).toBe("/profile");
+    expect(resolveLiffNext("/\\evil.example", undefined)).toBe("/profile");
+    // A path segment can't smuggle in a second slash or scheme.
+    expect(resolveLiffNext(null, ["", "evil.example"])).not.toMatch(/^\/\//);
   });
 });
