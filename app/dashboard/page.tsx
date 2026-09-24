@@ -11,7 +11,7 @@ import {
   CheckSquare, Plus, Trash2, ChevronRight, Flame,
   ArrowRight, CheckCircle,
 } from "lucide-react";
-import GoodyEmbed from "@/components/GoodyEmbed";
+import ExamNewsClient from "@/components/ExamNewsClient";
 import LearnDashboardCard from "@/components/learn/LearnDashboardCard";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
@@ -341,9 +341,12 @@ export default function DashboardPage() {
       {/* ── Continue learning (microlearning) ──────────────────────── */}
       <LearnDashboardCard weakSubjectIds={weakAreas.map((s) => s.subject_id)} />
 
-      {/* ── Wandee (ข้อความวันดี) ───────────────────────────────────── */}
+      {/* ── ข่าวการสอบ & วิชาชีพ ─────────────────────────────────────── */}
       <div className="mb-4 overflow-hidden rounded-xl border bg-white">
-        <GoodyEmbed site="jiacpr" type="wandee" title="ข้อความวันดี" />
+        <p className="border-b px-4 py-2.5 text-sm font-semibold">
+          {isNursing ? "ข่าวการสอบ & วงการพยาบาล" : "ข่าวการสอบ & วงการเภสัช"}
+        </p>
+        <ExamNewsClient track={isNursing ? "nursing" : "pharmacy"} />
       </div>
 
       {/* ── Quick Quiz Banner ───────────────────────────────────────── */}
