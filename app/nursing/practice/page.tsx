@@ -6,7 +6,7 @@ import { gateQuestionsForSession } from "@/lib/credits-gate";
 import { getPlayAllowance } from "@/lib/play-limit";
 import McqPractice from "@/components/McqPractice";
 import { Badge } from "@/components/ui/badge";
-import GoodyEmbed from "@/components/GoodyEmbed";
+import ExamNews, { ExamNewsSkeleton } from "@/components/ExamNews";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import type { Metadata } from "next";
@@ -136,9 +136,11 @@ export default async function NursingPracticePage({
       </Suspense>
 
       <section className="mt-12">
-        <h2 className="text-lg font-semibold mb-3">ข่าวสารสุขภาพ</h2>
+        <h2 className="text-lg font-semibold mb-3">ข่าวการสอบ & วงการพยาบาล</h2>
         <div className="overflow-hidden rounded-xl border bg-white">
-          <GoodyEmbed site="health" type="news" title="ข่าวสารสุขภาพ" />
+          <Suspense fallback={<ExamNewsSkeleton />}>
+            <ExamNews track="nursing" />
+          </Suspense>
         </div>
       </section>
     </div>
