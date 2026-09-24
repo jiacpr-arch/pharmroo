@@ -17,6 +17,9 @@ export const authConfig = {
     LINE({
       clientId: process.env.LINE_LOGIN_CHANNEL_ID!,
       clientSecret: process.env.LINE_LOGIN_CHANNEL_SECRET!,
+      // Show the "add LINE OA as friend" option, pre-checked, on the LINE
+      // consent screen. Adding it unlocks the new-member LINE bonus.
+      authorization: { params: { bot_prompt: "aggressive" } },
     }),
     // Credentials listed here for middleware awareness, but authorize runs in Node runtime via auth.ts
     Credentials({
@@ -30,6 +33,7 @@ export const authConfig = {
       name: "LINE (LIFF)",
       credentials: {
         idToken: { type: "text" },
+        accessToken: { type: "text" },
       },
     }),
   ],

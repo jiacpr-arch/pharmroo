@@ -7,9 +7,12 @@ import { users } from "@/lib/db/schema";
 import { eq } from "drizzle-orm";
 import bcrypt from "bcryptjs";
 import { createUser } from "@/lib/db/create-user";
+import { isLineOaFriend } from "@/lib/line";
+import { grantLineBonus } from "@/lib/line-bonus";
 import { resolveOrCreateLineUser } from "@/lib/line-auth";
 import { verifyLineIdToken } from "@/lib/line-id-token";
-import { grantLineBonus } from "@/lib/line-bonus";
+
+const SESSION_DB_SYNC_MS = 5 * 60 * 1000;
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
   session: { strategy: "jwt" },
@@ -24,6 +27,9 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
     LINE({
       clientId: process.env.LINE_LOGIN_CHANNEL_ID!,
       clientSecret: process.env.LINE_LOGIN_CHANNEL_SECRET!,
+      // Show the "add LINE OA as friend" option, pre-checked, on the LINE
+      // consent screen. Adding it unlocks the new-member LINE bonus.
+      authorization: { params: { bot_prompt: "aggressive" } },
     }),
     Credentials({
       credentials: {
@@ -65,6 +71,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       name: "LINE (LIFF)",
       credentials: {
         idToken: { type: "text" },
+        accessToken: { type: "text" },
       },
       async authorize(credentials) {
         const idToken = credentials?.idToken;
@@ -80,9 +87,17 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
           name: payload.name,
         });
 
-        // Same new-member bonus the OA follow / link-code flows grant; no-op
-        // when not eligible. Re-read so the session carries the new expiry.
-        const bonus = await grantLineBonus(resolved.id);
+        // Same rule as LINE Login: the new-member bonus needs the OA added as
+        // a friend. Re-read so the session carries the new expiry.
+        const accessToken = credentials?.accessToken;
+        let bonus: Date | null = null;
+        if (typeof accessToken === "string" && accessToken) {
+          try {
+            if (await isLineOaFriend(accessToken)) bonus = await grantLineBonus(resolved.id);
+          } catch (err) {
+            console.error("[auth] LIFF LINE bonus grant failed", err);
+          }
+        }
         const user = bonus
           ? (await db.select().from(users).where(eq(users.id, resolved.id)).then((rows) => rows[0])) ?? resolved
           : resolved;
@@ -131,11 +146,23 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         });
         user.id = resolved.id;
         user.email = resolved.email;
+
+        // Added the OA as a friend (e.g. via the consent-screen checkbox)?
+        // Grant the new-member LINE bonus right away — no link code needed.
+        if (user.id && account.access_token) {
+          try {
+            if (await isLineOaFriend(account.access_token)) {
+              await grantLineBonus(user.id);
+            }
+          } catch (err) {
+            console.error("[auth] LINE bonus grant failed", err);
+          }
+        }
       }
 
       return true;
     },
-    async jwt({ token, user, account }) {
+    async jwt({ token, user, account, trigger }) {
       if (user) {
         token.id = user.id;
         token.role = (user as { role?: string }).role;
@@ -143,11 +170,21 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         token.membership_expires_at = (user as { membership_expires_at?: string | null }).membership_expires_at;
         token.exam_category = (user as { exam_category?: string | null }).exam_category;
       }
-      // For OAuth providers, fetch fresh user data from DB
+      // Fetch fresh user data from DB for OAuth sign-ins, on a client-side
+      // `update()`, and every few minutes otherwise, so membership changes made
+      // server-side (e.g. the LINE webhook granting the bonus) reach the
+      // session without signing out and in again.
+      const stale =
+        Date.now() - ((token.db_synced_at as number | undefined) ?? 0) >
+        SESSION_DB_SYNC_MS;
       if (
-        (account?.provider === "google" || account?.provider === "line") &&
+        (account?.provider === "google" ||
+          account?.provider === "line" ||
+          trigger === "update" ||
+          stale) &&
         token.email
       ) {
+        token.db_synced_at = Date.now();
         const dbUser = await db
           .select()
           .from(users)

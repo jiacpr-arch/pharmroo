@@ -10,6 +10,17 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { User, Mail, Crown, Calendar, LogOut, BarChart3, ArrowRight, Share2, MessageCircle, Copy, Check } from "lucide-react";
 import StudentStats from "@/components/StudentStats";
 import LineContactCard from "@/components/LineContactCard";
+import { LINE_BONUS_DAYS } from "@/lib/limits";
+
+const LINK_POLL_MS = 4000;
+
+function formatThaiDate(iso: string): string {
+  return new Date(iso).toLocaleDateString("th-TH", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+}
 
 const membershipLabels: Record<string, string> = {
   free: "ฟรี",
@@ -115,10 +126,17 @@ export default function ProfilePage() {
           <CardHeader>
             <h3 className="font-semibold flex items-center gap-2">
               <MessageCircle className="h-5 w-5 text-[#06C755]" /> เชื่อมต่อ LINE
+              {membershipType === "free" && (
+                <Badge className="bg-[#06C755] text-white">
+                  สมาชิกใหม่ ฟรี Premium {LINE_BONUS_DAYS} วัน
+                </Badge>
+              )}
             </h3>
           </CardHeader>
           <CardContent>
-            <LineLinkSection />
+            <LineLinkSection
+              offerBonus={membershipType === "free"}
+            />
           </CardContent>
         </Card>
 
@@ -161,10 +179,14 @@ export default function ProfilePage() {
   );
 }
 
-function LineLinkSection() {
+function LineLinkSection({ offerBonus }: { offerBonus: boolean }) {
+  const { update } = useSession();
   const [code, setCode] = useState<string | null>(null);
+  const [codeCreatedAt, setCodeCreatedAt] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const [copied, setCopied] = useState(false);
+  // bonusUntil is set when this link granted the new-member LINE bonus.
+  const [linked, setLinked] = useState<{ bonusUntil: string | null } | null>(null);
 
   const generateCode = async () => {
     setLoading(true);
@@ -172,11 +194,65 @@ function LineLinkSection() {
       const res = await fetch("/api/line/generate-code", { method: "POST" });
       const data = await res.json();
       setCode(data.code);
+      setCodeCreatedAt(data.createdAt);
     } catch {
       // ignore
     }
     setLoading(false);
   };
+
+  // Wait for the webhook to link the account, then refresh the session so an
+  // unlocked bonus takes effect without signing in again.
+  useEffect(() => {
+    if (!code || !codeCreatedAt || linked) return;
+    let cancelled = false;
+    const timer = setInterval(async () => {
+      try {
+        const res = await fetch("/api/line/status");
+        if (!res.ok) return;
+        const data: {
+          linkedAt: string | null;
+          bonusGrantedAt: string | null;
+          membershipExpiresAt: string | null;
+        } = await res.json();
+        if (cancelled || !data.linkedAt || data.linkedAt < codeCreatedAt) return;
+        clearInterval(timer);
+        const bonusNow =
+          !!data.bonusGrantedAt && data.bonusGrantedAt >= codeCreatedAt;
+        setLinked({ bonusUntil: bonusNow ? data.membershipExpiresAt : null });
+        await update();
+      } catch {
+        // keep polling
+      }
+    }, LINK_POLL_MS);
+    return () => {
+      cancelled = true;
+      clearInterval(timer);
+    };
+  }, [code, codeCreatedAt, linked, update]);
+
+  if (linked) {
+    return (
+      <div className="space-y-3">
+        <p className="text-sm font-medium text-[#06C755] flex items-center gap-1">
+          <Check className="h-4 w-4" /> เชื่อมต่อ LINE สำเร็จ
+        </p>
+        {linked.bonusUntil && (
+          <>
+            <p className="text-sm text-muted-foreground">
+              เปิดสิทธิ์ Premium ฟรี {LINE_BONUS_DAYS} วันแล้ว — ทำข้อสอบได้ไม่จำกัด
+              และดูเฉลยละเอียดทุกข้อ ถึง {formatThaiDate(linked.bonusUntil)}
+            </p>
+            <Link href="/ple">
+              <Button className="w-full bg-brand hover:bg-brand-light text-white">
+                เริ่มทำข้อสอบ
+              </Button>
+            </Link>
+          </>
+        )}
+      </div>
+    );
+  }
 
   const copyCode = () => {
     if (code) {
@@ -190,7 +266,9 @@ function LineLinkSection() {
     return (
       <div className="space-y-3">
         <p className="text-sm text-muted-foreground">
-          เชื่อมต่อ LINE เพื่อรับแจ้งเตือนสรุปผลสัปดาห์ ข้อสอบประจำวัน และเตือนก่อนหมดอายุ
+          {offerBonus
+            ? `สมาชิกใหม่เชื่อมต่อ LINE รับสิทธิ์ Premium ฟรี ${LINE_BONUS_DAYS} วัน ทำข้อสอบได้ไม่จำกัด + ดูเฉลยละเอียดทุกข้อ พร้อมรับแจ้งเตือนสรุปผลสัปดาห์และข้อสอบประจำวัน`
+            : "เชื่อมต่อ LINE เพื่อรับแจ้งเตือนสรุปผลสัปดาห์ ข้อสอบประจำวัน และเตือนก่อนหมดอายุ"}
         </p>
         {process.env.NEXT_PUBLIC_LIFF_ID && (
           <Link href="/line/liff?next=/profile" className="block">
@@ -223,7 +301,9 @@ function LineLinkSection() {
           {copied ? <Check className="h-4 w-4 text-green-500" /> : <Copy className="h-4 w-4" />}
         </Button>
       </div>
-      <p className="text-xs text-muted-foreground">รหัสหมดอายุใน 24 ชั่วโมง</p>
+      <p className="text-xs text-muted-foreground">
+        รหัสหมดอายุใน 24 ชั่วโมง — ยังไม่ได้แอด LINE? แอดก่อนแล้วส่งรหัสได้เลย
+      </p>
       <LineContactCard size="md" className="pt-2" />
     </div>
   );

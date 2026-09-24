@@ -52,11 +52,13 @@ export default function LiffLinkContent() {
 
         const idToken = liff.getIDToken();
         if (!idToken) throw new Error("missing LIFF id token");
+        // Lets the server check OA friendship before granting the LINE bonus.
+        const accessToken = liff.getAccessToken() ?? "";
         if (cancelled) return;
 
         if (status === "unauthenticated") {
           setPhase("signing-in");
-          const result = await signIn("line-liff", { idToken, redirect: false });
+          const result = await signIn("line-liff", { idToken, accessToken, redirect: false });
           if (cancelled) return;
           if (!result || result.error) {
             setPhase("error");
@@ -74,7 +76,7 @@ export default function LiffLinkContent() {
         const res = await fetch("/api/auth/line/liff-link", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ idToken }),
+          body: JSON.stringify({ idToken, accessToken }),
         });
         const data = await res.json();
         if (cancelled) return;
