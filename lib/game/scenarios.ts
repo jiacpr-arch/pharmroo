@@ -2758,7 +2758,7 @@ export const pharyngitisCentorReferral: GameScenario = {
                     },
                     { tgt: "จ่ายยา", label: "Dextromethorphan lozenge", ok: false, why: "เป็นยาแก้ไอ ไม่ได้ช่วยลดอาการเจ็บคอโดยตรง และคนไข้ไม่มีอาการไอเลย" },
                     { tgt: "จ่ายยา", label: "Chlorpheniramine 4 mg", ok: false, why: "เป็นยาแก้แพ้ที่ทำให้ง่วง ไม่มีข้อบ่งชี้สำหรับอาการเจ็บคอ" },
-                    { tgt: "จ่ายยา", label: "Amoxicillin lozenge", ok: false, why: "การพิจารณายาปฏิชีวนะควรทำโดยแพทย์หลังตรวจยืนยันเชื้อ ไม่ใช่หน้าที่ของร้านยาที่จะจ่ายเอง", worsen: true },
+                    { tgt: "จ่ายยา", label: "Amoxicillin 500 mg", ok: false, why: "การพิจารณายาปฏิชีวนะควรทำโดยแพทย์หลังตรวจยืนยันเชื้อ ไม่ใช่หน้าที่ของร้านยาที่จะจ่ายเอง อีกทั้งยานี้ไม่มีรูปแบบยาอมด้วย", worsen: true },
                     { tgt: "จ่ายยา", label: "Omeprazole 20 mg", ok: false, why: "เป็นยาลดกรดในกระเพาะ ไม่เกี่ยวข้องกับอาการเจ็บคอเลย" },
                   ],
                 },
