@@ -1,409 +1,464 @@
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import PricingCard from "@/components/PricingCard";
 import { Suspense } from "react";
-import ExamNews, { ExamNewsSkeleton } from "@/components/ExamNews";
-import { CATEGORIES, PRICING_PLANS } from "@/lib/types";
-import { getNewQuestionsStats } from "@/lib/db/queries-mcq";
 import {
+  ArrowUpRight,
   ArrowRight,
-  BarChart3,
   BookOpen,
   Brain,
-  Calculator,
-  CheckCircle2,
+  Check,
   Clock3,
   FlaskConical,
-  Image as ImageIcon,
-  ShieldCheck,
+  GraduationCap,
+  Pill,
   Sparkles,
+  Stethoscope,
   Target,
-  Trophy,
 } from "lucide-react";
+import ExamNews, { ExamNewsSkeleton } from "@/components/ExamNews";
+import { CATEGORIES, PRICING_PLANS } from "@/lib/types";
+import { getMcqSubjects } from "@/lib/db/queries-mcq";
+import styles from "./home.module.css";
+import HomeGamePreview from "@/components/game/HomeGamePreview";
+import { headacheWarfarin } from "@/lib/game/scenarios";
 
 export const revalidate = 60;
 
-const coreSubjects = [
-  { name: "Pharmacology", count: "1,250 ข้อ", icon: "💊", href: "/ple/practice?subject=pharmacology" },
-  { name: "Pharmacotherapy", count: "980 ข้อ", icon: "🩺", href: "/ple/practice?subject=pharmacotherapy" },
-  { name: "Pharmaceutics", count: "620 ข้อ", icon: "🧪", href: "/ple/practice?subject=pharmaceutics" },
-  { name: "Calculation", count: "380 ข้อ", icon: "🧮", href: "/ple/practice?subject=calculation" },
-  { name: "Drug Law", count: "310 ข้อ", icon: "⚖️", href: "/ple/practice?subject=law" },
-  { name: "Pharmacokinetics", count: "420 ข้อ", icon: "📈", href: "/ple/practice?subject=pharmacokinetics" },
+const benefits = [
+  {
+    icon: Brain,
+    title: "เข้าใจ มากกว่าจำ",
+    text: "ทบทวนแนวคิดจากเฉลยละเอียด พร้อมขั้นตอนคำนวณที่ช่วยให้มองเห็นวิธีคิด",
+  },
+  {
+    icon: Target,
+    title: "รู้จุดที่ต้องฝึกต่อ",
+    text: "ติดตามผลการทำข้อสอบ แล้วกลับมาทบทวนหมวดที่ยังไม่มั่นใจได้ทุกเมื่อ",
+  },
+  {
+    icon: Clock3,
+    title: "ซ้อมก่อนสนามจริง",
+    text: "เปลี่ยนจากการฝึกทีละข้อ เป็นการจำลองสอบพร้อมจับเวลาใน Mock Exam",
+  },
 ];
 
-const featureItems = [
-  { icon: BookOpen, title: "ข้อสอบคุณภาพ", desc: "โจทย์ครอบคลุม PLE-PC และ PLE-CC1" },
-  { icon: Brain, title: "เฉลยละเอียด", desc: "อธิบายเหตุผลและแนวคิดสำคัญทีละขั้น" },
-  { icon: ImageIcon, title: "ภาพประกอบชัดเจน", desc: "โครงสร้างยา กราฟ และ diagram ในโจทย์" },
-  { icon: BarChart3, title: "วิเคราะห์จุดอ่อน", desc: "ดู accuracy และหัวข้อที่ควรทบทวนเพิ่ม" },
-  { icon: Target, title: "ฝึกตรงจุด", desc: "Practice Mode และ Mock Exam พร้อมใช้งาน" },
-  { icon: ShieldCheck, title: "ใช้ได้ทุกอุปกรณ์", desc: "รองรับคอมพิวเตอร์ แท็บเล็ต และมือถือ" },
-];
-
-export default async function HomePage() {
-  const stats = await getNewQuestionsStats().catch(() => ({
-    totalActive: 5712,
-    newThisWeek: 0,
-    newBySubject: [] as { icon: string; name_th: string; count: number }[],
-    nextReleaseAt: null as string | null,
-  }));
-
-  const totalQuestions = stats.totalActive || 5712;
-
+function SubjectGrid({
+  subjects,
+}: {
+  subjects: { key: string; name: string; icon: string; href: string }[];
+}) {
   return (
-    <>
-      <section className="relative overflow-hidden border-b bg-gradient-to-br from-emerald-50 via-white to-teal-50">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(16,185,129,0.10),transparent_34%),radial-gradient(circle_at_85%_25%,rgba(13,148,136,0.10),transparent_28%)]" />
-        <div className="relative mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 sm:py-18 lg:grid-cols-[1.15fr_0.85fr] lg:px-8 lg:py-20">
-          <div className="flex flex-col justify-center">
-            <Badge className="mb-5 w-fit border-emerald-200 bg-emerald-50 text-emerald-700 hover:bg-emerald-50">
-              <Sparkles className="mr-1.5 h-3.5 w-3.5" />
-              Pharmacy Exam Platform
-            </Badge>
+    <div className={styles.subjects}>
+      {subjects.map((subject, i) => (
+        <Link href={subject.href} key={subject.key} className={styles.subject}>
+          <span className={styles.subjectNumber}>
+            {String(i + 1).padStart(2, "0")}
+          </span>
+          <span className={styles.subjectIcon} aria-hidden="true">
+            {subject.icon}
+          </span>
+          <h3>{subject.name}</h3>
+          <ArrowUpRight size={18} />
+        </Link>
+      ))}
+    </div>
+  );
+}
 
-            <h1 className="max-w-3xl text-4xl font-bold leading-tight tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
-              เตรียมสอบใบประกอบ
+const fallbackSubjects = CATEGORIES.map((cat) => ({
+  key: cat.slug,
+  name: cat.name,
+  icon: cat.icon,
+  href: "/ple",
+}));
+
+async function Subjects() {
+  const subjects = await getMcqSubjects({ examCategory: "pharmacy" }).catch(
+    () => [],
+  );
+  return (
+    <SubjectGrid
+      subjects={
+        subjects.length
+          ? subjects.map((subject) => ({
+              key: subject.id,
+              name: subject.name_th,
+              icon: subject.icon || "💊",
+              href: `/ple/practice?subject=${encodeURIComponent(subject.id)}`,
+            }))
+          : fallbackSubjects
+      }
+    />
+  );
+}
+
+// Reuse the opening and first decision from the full game without shipping its whole story.
+function GamePreview() {
+  const opening = headacheWarfarin.story.find((node) => "say" in node);
+  const decision = headacheWarfarin.story.find((node) => "choice" in node);
+  if (!opening || !("say" in opening) || !decision || !("choice" in decision))
+    return null;
+  const plain = (text: string) => text.replace(/\*\*/g, "");
+  return (
+    <HomeGamePreview
+      title={headacheWarfarin.title}
+      opening={plain(opening.say.text)}
+      question={decision.choice.q}
+      options={decision.choice.options.map((option) => {
+        const response = option.then?.find((node) => "say" in node);
+        return {
+          label: option.label,
+          correct: option.ok,
+          feedback: plain(
+            option.why ||
+              (response && "say" in response
+                ? response.say.text
+                : "ลองซักประวัติต่อในเคสเต็ม"),
+          ),
+        };
+      })}
+      href={`/game/${headacheWarfarin.slug}?start=1`}
+    />
+  );
+}
+
+export default function HomePage() {
+  return (
+    <div className={styles.home}>
+      <section className={styles.hero} aria-labelledby="hero-title">
+        <div className={styles.heroGrid}>
+          <div className={styles.heroCopy}>
+            <div className={styles.eyebrow}>
+              <span /> YOUR PLE JOURNEY STARTS HERE
+            </div>
+            <h1 id="hero-title">
+              เตรียมสอบ PLE
               <br />
-              <span className="text-emerald-700">วิชาชีพเภสัชกรรม</span>
+              สู่การเป็น<span className={styles.highlight}>เภสัชกร</span>
+              <br />
+              อย่างมั่นใจ
             </h1>
-
-            <p className="mt-5 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg">
-              PLE-PC • PLE-CC1 • NLE พร้อมคลังข้อสอบกว่า{" "}
-              <span className="font-semibold text-emerald-700">{totalQuestions.toLocaleString()} ข้อ</span>{" "}
-              เฉลยละเอียด โครงสร้างเคมี ภาพประกอบ และโจทย์คำนวณแบบ step-by-step
+            <p className={styles.heroDescription}>
+              คลังข้อสอบใบประกอบวิชาชีพเภสัชกรรม PLE-PC และ PLE-CC1
+              <br className={styles.desktopBreak} /> ฝึกให้เข้าใจ ทบทวนให้ตรงจุด
+              ก้าวสู่สนามสอบอย่างมั่นใจ
             </p>
-
-            <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-              <Link href="/ple/practice">
-                <Button size="lg" className="w-full bg-emerald-700 px-7 text-base text-white hover:bg-emerald-800 sm:w-auto">
-                  เริ่มทำข้อสอบ
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
+            <div className={styles.actions}>
+              <Link href="/ple/practice" className={styles.primary}>
+                เริ่มฝึกข้อสอบ PLE <ArrowUpRight size={20} />
               </Link>
-              <Link href="/ple/mock">
-                <Button size="lg" variant="outline" className="w-full border-slate-300 bg-white px-7 text-base sm:w-auto">
-                  <Clock3 className="mr-2 h-4 w-4" />
-                  จำลองสอบจริง
-                </Button>
+              <Link href="/ple/mock" className={styles.secondary}>
+                จำลองสอบ PLE <Clock3 size={18} />
               </Link>
             </div>
-
-            <div className="mt-8 grid max-w-2xl grid-cols-2 gap-3 sm:grid-cols-4">
-              {[
-                ["ข้อสอบอัปเดต", "ล่าสุด"],
-                ["เฉลยละเอียด", "ทุกข้อ"],
-                ["ภาพประกอบ", "ชัดเจน"],
-                ["วิเคราะห์ผล", "รายหัวข้อ"],
-              ].map(([title, value]) => (
-                <div key={title} className="rounded-2xl border border-white/70 bg-white/80 p-4 shadow-sm backdrop-blur">
-                  <div className="text-xs text-slate-500">{title}</div>
-                  <div className="mt-1 text-sm font-semibold text-slate-900">{value}</div>
-                </div>
-              ))}
+            <div className={styles.heroNote}>
+              <Check size={15} /> เริ่มต้นฟรี <span>·</span> เรียนรู้ได้ทุกที่
+              ทุกอุปกรณ์
             </div>
           </div>
-
-          <div className="relative flex items-center justify-center">
-            <div className="w-full max-w-md rounded-3xl border border-emerald-100 bg-white p-6 shadow-xl shadow-emerald-100/60">
-              <div className="flex items-start justify-between gap-4">
+          <div
+            className={styles.visual}
+            aria-label="ภาพประกอบเส้นทางการเรียนรู้"
+          >
+            <div className={styles.orbit} aria-hidden="true" />
+            <div className={styles.orbitTwo} aria-hidden="true" />
+            <div className={styles.floatIcon} aria-hidden="true">
+              <FlaskConical size={28} />
+            </div>
+            <div className={styles.pillShape} aria-hidden="true">
+              <span />
+              <span />
+            </div>
+            <div className={styles.studyCard}>
+              <div className={styles.cardTop}>
+                <span className={styles.miniLogo}>
+                  <Pill size={19} /> ฟาร์มรู้
+                </span>
+                <span className={styles.cardTag}>PLE LEARNING JOURNEY</span>
+              </div>
+              <div className={styles.cardHeading}>
+                อีกก้าวของคุณ
+                <br />
+                <strong>ใกล้เป็นเภสัชกรขึ้นทุกวัน</strong>
+              </div>
+              <div className={styles.journey}>
                 <div>
-                  <div className="text-sm font-medium text-slate-500">PLE Readiness</div>
-                  <div className="mt-2 text-4xl font-bold text-slate-900">72%</div>
+                  <span>
+                    <BookOpen size={19} />
+                  </span>
+                  <p>
+                    <b>ฝึกทำข้อสอบ</b>
+                    <small>เริ่มจากหมวดที่อยากทบทวน</small>
+                  </p>
+                  <Check size={17} />
                 </div>
-                <div className="flex h-16 w-16 items-center justify-center rounded-full border-[7px] border-emerald-100 text-lg font-bold text-emerald-700">
-                  72
+                <div>
+                  <span>
+                    <Brain size={19} />
+                  </span>
+                  <p>
+                    <b>เข้าใจเหตุผล</b>
+                    <small>เรียนรู้จากเฉลยทีละขั้นตอน</small>
+                  </p>
+                  <Check size={17} />
+                </div>
+                <div>
+                  <span>
+                    <GraduationCap size={21} />
+                  </span>
+                  <p>
+                    <b>พร้อมสู่สนามจริง</b>
+                    <small>ทดสอบตัวเองด้วย Mock Exam</small>
+                  </p>
+                  <ArrowUpRight size={18} />
                 </div>
               </div>
-
-              <div className="mt-6 space-y-4">
-                {[
-                  ["Pharmacology", 82],
-                  ["Pharmacotherapy", 71],
-                  ["Pharmaceutics", 64],
-                  ["Drug Law", 90],
-                ].map(([name, value]) => (
-                  <div key={name as string}>
-                    <div className="mb-1.5 flex items-center justify-between text-sm">
-                      <span className="font-medium text-slate-700">{name}</span>
-                      <span className="text-slate-500">{value}%</span>
-                    </div>
-                    <div className="h-2 overflow-hidden rounded-full bg-slate-100">
-                      <div className="h-full rounded-full bg-emerald-600" style={{ width: `${value}%` }} />
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              <div className="mt-6 rounded-2xl bg-emerald-50 p-4">
-                <div className="flex items-center gap-2 text-sm font-semibold text-emerald-800">
-                  <Trophy className="h-4 w-4" />
-                  วันนี้แนะนำให้ฝึกต่อ
-                </div>
-                <p className="mt-1 text-sm leading-6 text-emerald-900/70">
-                  Pharmacotherapy 10 ข้อ เพื่อเพิ่มความพร้อมก่อนสอบ
-                </p>
-                <Link href="/ple/practice">
-                  <Button className="mt-3 w-full bg-emerald-700 text-white hover:bg-emerald-800">
-                    ทำต่อ 10 ข้อ
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-white py-14 sm:py-16">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-8 flex flex-col justify-between gap-3 sm:flex-row sm:items-end">
-            <div>
-              <h2 className="text-3xl font-bold tracking-tight text-slate-900">วันนี้อยากฝึกอะไร?</h2>
-              <p className="mt-2 text-slate-500">เลือกหมวดข้อสอบแล้วเริ่มทำได้ทันที</p>
-            </div>
-            <Link href="/ple/practice" className="text-sm font-medium text-emerald-700 hover:text-emerald-800">
-              ดูหมวดทั้งหมด →
-            </Link>
-          </div>
-
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
-            {coreSubjects.map((subject) => (
-              <Link
-                key={subject.name}
-                href={subject.href}
-                className="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-emerald-200 hover:shadow-md"
-              >
-                <div className="text-3xl">{subject.icon}</div>
-                <div className="mt-4 font-semibold text-slate-900">{subject.name}</div>
-                <div className="mt-1 text-sm text-slate-500">{subject.count}</div>
-                <div className="mt-5 flex items-center text-sm font-medium text-emerald-700">
-                  เริ่มทำ
-                  <ArrowRight className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </div>
+              <Link href="/learn" className={styles.cardLink}>
+                เปิดเส้นทางการเรียนรู้ <ArrowRight size={17} />
               </Link>
-            ))}
-          </div>
-
-          <div className="mt-4 flex flex-wrap gap-2">
-            {CATEGORIES.slice(0, 8).map((cat) => (
-              <Link
-                key={cat.slug}
-                href={`/ple/practice?subject=${cat.slug}`}
-                className="rounded-full border border-slate-200 bg-slate-50 px-3.5 py-2 text-sm text-slate-700 hover:border-emerald-200 hover:bg-emerald-50"
-              >
-                {cat.icon} {cat.name}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="border-y bg-slate-50/70 py-14 sm:py-16">
-        <div className="mx-auto grid max-w-7xl gap-6 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.2fr_0.9fr] lg:px-8">
-          <div className="rounded-3xl border bg-white p-6 shadow-sm">
-            <div className="text-sm font-medium text-emerald-700">ภาพรวมการฝึก</div>
-            <h3 className="mt-2 text-2xl font-bold text-slate-900">พร้อมฝึกต่อไหม?</h3>
-            <div className="mt-6 flex items-center gap-5">
-              <div className="flex h-24 w-24 items-center justify-center rounded-full border-[9px] border-emerald-100 text-2xl font-bold text-emerald-700">
-                72%
-              </div>
-              <div className="space-y-2 text-sm">
-                <p className="text-slate-500">ทำแล้ว</p>
-                <p className="text-lg font-semibold text-slate-900">1,284 / {totalQuestions.toLocaleString()} ข้อ</p>
-                <p className="text-slate-500">Accuracy 76%</p>
-              </div>
             </div>
-            <Link href="/dashboard">
-              <Button className="mt-6 w-full bg-emerald-700 text-white hover:bg-emerald-800">
-                ดูผลการเรียน
-              </Button>
-            </Link>
-          </div>
-
-          <div className="rounded-3xl border bg-white p-6 shadow-sm">
-            <div className="mb-4 flex items-center justify-between">
+            <div className={styles.floatingLabel}>
+              <Sparkles size={22} />
               <div>
-                <div className="text-sm font-medium text-emerald-700">ตัวอย่างข้อสอบ</div>
-                <h3 className="mt-1 text-xl font-bold text-slate-900">ลองทำฟรี 1 ข้อ</h3>
+                <b>Small steps. Big dreams.</b>
+                <span>ทีละข้อ ทีละก้าว ไปด้วยกัน</span>
               </div>
-              <Badge variant="outline">Pharmacotherapy</Badge>
             </div>
+            <div className={styles.visualCaption}>LEARN · PRACTICE · GROW</div>
+          </div>
+        </div>
+        <div className={styles.heroBottom}>
+          <span>
+            <Pill size={17} /> PLE-PC / PLE-CC1
+          </span>
+          <span>
+            <FlaskConical size={17} /> ทบทวนวิชาเภสัช
+          </span>
+          <span>
+            <BookOpen size={17} /> เฉลยพร้อมแนวคิด
+          </span>
+          <span>
+            <Clock3 size={17} /> จำลองสอบจริง
+          </span>
+        </div>
+      </section>
 
-            <p className="text-base font-medium leading-7 text-slate-800">
-              ผู้ป่วยได้รับ ACE inhibitor ยากลุ่มใดควรหลีกเลี่ยงเนื่องจากเพิ่มความเสี่ยง Hyperkalemia?
+      <section
+        className={styles.section}
+        id="choose-track"
+        aria-labelledby="track-title"
+      >
+        <div className={styles.sectionHeading}>
+          <div>
+            <p className={styles.kicker}>CHOOSE YOUR PLE PRACTICE</p>
+            <h2 id="track-title">เตรียมสอบ PLE ในแบบของคุณ</h2>
+          </div>
+          <p>
+            เริ่มจากทบทวนทีละข้อ
+            <br />
+            แล้ววัดความพร้อมก่อนลงสนามจริง
+          </p>
+        </div>
+        <div className={styles.trackGrid}>
+          <Link
+            href="/ple/practice?track=cc1"
+            className={`${styles.track} ${styles.pharmacy}`}
+          >
+            <div className={styles.trackTop}>
+              <Pill size={29} />
+              <span>YEAR 4 / PLE-CC</span>
+              <ArrowUpRight size={26} />
+            </div>
+            <h3>
+              ฝึกทำข้อสอบ ปี 4<span>PLE-CC</span>
+            </h3>
+            <p>
+              ทบทวนพื้นฐานวิชาชีพเภสัชกรรม
+              <br />
+              ฝึกข้อสอบ PLE-CC ให้พร้อมก่อนลงสนามจริง
             </p>
-
-            <div className="mt-5 space-y-3">
-              {[
-                "A. Thiazide diuretics",
-                "B. Potassium-sparing diuretics",
-                "C. Loop diuretics",
-                "D. Calcium channel blockers",
-              ].map((answer, index) => (
-                <div
-                  key={answer}
-                  className={`rounded-xl border px-4 py-3 text-sm ${index === 1 ? "border-emerald-300 bg-emerald-50 text-emerald-900" : "border-slate-200 text-slate-700"}`}
-                >
-                  {index === 1 ? "✓ " : "○ "}
-                  {answer}
-                </div>
-              ))}
+            <div className={styles.trackFooter}>
+              <span>เริ่มฝึก PLE-CC</span>
+              <ArrowRight size={20} />
             </div>
+          </Link>
+          <article className={`${styles.track} ${styles.mock}`}>
+            <div className={styles.trackTop}>
+              <GraduationCap size={29} />
+              <span>YEAR 6 / PLE-PC · IP · PHCP</span>
+            </div>
+            <h3>
+              ฝึกทำข้อสอบ ปี 6<span>PLE-PC · IP · PHCP</span>
+            </h3>
+            <p>
+              เตรียมความพร้อมในสายวิชาชีพที่เลือก
+              <br />
+              เลือกกลุ่มข้อสอบ แล้วเริ่มฝึกได้ทันที
+            </p>
+            <div className={styles.trackChoices}>
+              <Link href="/ple/pc1-pilot">
+                PLE-PC <ArrowUpRight size={16} />
+              </Link>
+              <Link href="/ple/practice?track=ip1">
+                IP <ArrowUpRight size={16} />
+              </Link>
+              <Link href="/ple/practice?track=phcp1">
+                PHCP <ArrowUpRight size={16} />
+              </Link>
+            </div>
+          </article>
+        </div>
+      </section>
 
-            <div className="mt-5 rounded-2xl border border-emerald-100 bg-emerald-50 p-4">
-              <div className="flex items-center gap-2 font-semibold text-emerald-800">
-                <CheckCircle2 className="h-4 w-4" />
-                เฉลย B. Potassium-sparing diuretics
-              </div>
-              <p className="mt-2 text-sm leading-6 text-emerald-900/75">
-                ACE inhibitor ลด aldosterone ทำให้ขับ K⁺ ลดลง เมื่อใช้ร่วมกับ potassium-sparing diuretic
-                จึงเพิ่มความเสี่ยง hyperkalemia
+      <section
+        className={styles.subjectSection}
+        aria-labelledby="subject-title"
+      >
+        <div className={styles.section}>
+          <div className={styles.sectionHeading}>
+            <div>
+              <p className={styles.kicker}>A LITTLE PRACTICE, EVERY DAY</p>
+              <h2 id="subject-title">วันนี้อยากฝึกอะไร?</h2>
+              <p className={styles.sectionSubtitle}>
+                เลือกหมวดข้อสอบแล้วเริ่มทำได้ทันที
               </p>
             </div>
-
-            <Link href="/ple/practice">
-              <Button className="mt-5 w-full bg-emerald-700 text-white hover:bg-emerald-800">
-                ไปทำข้อสอบจริง
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
+            <Link href="/ple" className={styles.textLink}>
+              เลือกหมวดแล้วเริ่มฝึก <ArrowUpRight size={19} />
             </Link>
           </div>
-
-          <div className="rounded-3xl border bg-gradient-to-br from-emerald-900 to-teal-800 p-6 text-white shadow-sm">
-            <div className="text-sm font-medium text-emerald-100">Mock Exam</div>
-            <h3 className="mt-2 text-2xl font-bold">จำลองสนามสอบจริง</h3>
-            <p className="mt-3 text-sm leading-6 text-white/75">
-              เลือก 50 หรือ 100 ข้อ จับเวลาเหมือนสอบจริง และดูผลแยกตามหมวดทันที
+          <Suspense fallback={<SubjectGrid subjects={fallbackSubjects} />}>
+            <Subjects />
+          </Suspense>
+          <div className={styles.statStrip}>
+            <div>
+              <strong>PLE-PC / PLE-CC1</strong>
+              <span>ทบทวนองค์ความรู้เภสัชกรรม พร้อมสู่สนามสอบ</span>
+            </div>
+            <p>
+              เปลี่ยนเวลาว่าง
+              <br />
+              <b>ให้เป็นความพร้อมครั้งต่อไป</b>
             </p>
-            <div className="mt-6 space-y-3 text-sm">
-              {[
-                "จับเวลาเหมือนสนามจริง",
-                "เลือกจำนวนข้อได้",
-                "สรุปคะแนนหลังส่งข้อสอบ",
-                "ดูจุดอ่อนเพื่อฝึกซ้ำ",
-              ].map((item) => (
-                <div key={item} className="flex items-center gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-emerald-300" />
-                  {item}
-                </div>
-              ))}
-            </div>
-            <Link href="/ple/mock">
-              <Button className="mt-7 w-full bg-white text-emerald-900 hover:bg-emerald-50">
-                เริ่มจำลองสอบ
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
+            <Link href="/ple/practice" className={styles.darkButton}>
+              เริ่มฝึกวันนี้ <ArrowRight size={18} />
             </Link>
           </div>
         </div>
       </section>
 
-      <section className="bg-white py-14 sm:py-16">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-8">
-            <h2 className="text-3xl font-bold text-slate-900">ทำไมต้อง PharmRU?</h2>
-            <p className="mt-2 text-slate-500">ออกแบบให้การฝึกข้อสอบง่ายขึ้น และเห็นจุดที่ควรทบทวนได้เร็วขึ้น</p>
+      <section className={styles.section} aria-labelledby="benefits-title">
+        <div className={styles.sectionHeading}>
+          <div>
+            <p className={styles.kicker}>BUILT FOR YOUR NEXT STEP</p>
+            <h2 id="benefits-title">เพื่อนคู่คิด ก่อนวันสอบจริง</h2>
           </div>
-
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {featureItems.map((item) => (
-              <div key={item.title} className="rounded-2xl border border-slate-200 bg-white p-5">
-                <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-50">
-                  <item.icon className="h-5 w-5 text-emerald-700" />
-                </div>
-                <h3 className="mt-4 font-semibold text-slate-900">{item.title}</h3>
-                <p className="mt-1.5 text-sm leading-6 text-slate-500">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-slate-50 py-12">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="relative overflow-hidden rounded-3xl bg-[#0d1a24] px-6 py-10 text-white sm:px-10">
-            <div
-              className="pointer-events-none absolute inset-0 opacity-70"
-              style={{
-                background:
-                  "radial-gradient(ellipse 120% 60% at 10% -10%, rgba(242,193,78,.28), transparent 55%), radial-gradient(ellipse 120% 60% at 90% 120%, rgba(13,148,136,.4), transparent 55%)",
-              }}
-            />
-            <div className="relative grid items-center gap-6 lg:grid-cols-[1.2fr_0.8fr]">
-              <div>
-                <Badge className="mb-3 border-amber-400/40 bg-amber-400/15 text-amber-300 hover:bg-amber-400/15">
-                  ใหม่ · เกมจำลองร้านยา
-                </Badge>
-                <h2 className="text-3xl font-black sm:text-4xl">
-                  เกม<span className="text-amber-400">ร้านยา</span> — ซักประวัติ จ่ายยา ตัดสินใจจริง
-                </h2>
-                <p className="mt-3 max-w-xl text-sm leading-7 text-slate-300">
-                  รับลูกค้าที่เดินเข้าร้าน ซักประวัติแบบ WWHAM คัดกรอง red flag
-                  เลือกยาให้ถูกคนภายใต้เวลากดดัน ตัดสินใจผิด ผู้ป่วยแย่ลงจริง
-                  เล่นฟรีทุกเคส ไม่ต้องล็อกอิน
-                </p>
-              </div>
-              <div className="flex flex-col gap-3 lg:items-end">
-                <Link href="/game">
-                  <Button size="lg" className="w-full gap-2 bg-amber-400 text-slate-900 hover:bg-amber-300 lg:w-auto">
-                    เริ่มรับลูกค้า <ArrowRight className="h-4 w-4" />
-                  </Button>
-                </Link>
-                <p className="text-xs text-slate-400">10 เคสตัวอย่าง · เก็บ XP และ badge เมื่อล็อกอิน</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-slate-50 py-12">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <h2 className="mb-4 text-center text-2xl font-bold">ข่าวการสอบ & วงการเภสัช</h2>
-          <div className="overflow-hidden rounded-2xl border bg-white shadow-sm">
-            <Suspense fallback={<ExamNewsSkeleton />}>
-              <ExamNews track="pharmacy" />
-            </Suspense>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-white py-16" id="pricing">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-12 text-center">
-            <h2 className="text-3xl font-bold">แพ็กเกจราคา</h2>
-            <p className="mt-2 text-slate-500">เลือกแพ็กเกจที่เหมาะกับคุณ</p>
-          </div>
-          <div className="mx-auto grid max-w-4xl grid-cols-1 items-start gap-6 sm:grid-cols-3">
-            {PRICING_PLANS.map((plan) => (
-              <PricingCard key={plan.name} {...plan} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-emerald-950 py-16 text-white">
-        <div className="mx-auto max-w-4xl px-4 text-center">
-          <Badge className="mb-4 border-white/20 bg-white/10 text-white">พร้อมเริ่มแล้วหรือยัง?</Badge>
-          <h2 className="text-3xl font-bold sm:text-4xl">ฝึกวันนี้ ให้พร้อมกว่าวันสอบจริง</h2>
-          <p className="mx-auto mt-4 max-w-2xl text-white/70">
-            เริ่มจาก 10 ข้อ แล้วให้ PharmRU ช่วยบอกว่าควรทบทวนอะไรต่อ
+          <p>
+            ออกแบบให้การทบทวนมีความหมาย
+            <br />
+            ตั้งแต่ข้อแรก จนถึงสนามสอบ
           </p>
-          <div className="mt-7 flex flex-col justify-center gap-3 sm:flex-row">
-            <Link href="/ple/practice">
-              <Button size="lg" className="w-full bg-emerald-500 text-emerald-950 hover:bg-emerald-400 sm:w-auto">
-                เริ่มทำข้อสอบ
-              </Button>
-            </Link>
-            <Link href="/register">
-              <Button size="lg" variant="outline" className="w-full border-white/30 bg-transparent text-white hover:bg-white/10 sm:w-auto">
-                สมัครสมาชิก
-              </Button>
-            </Link>
+        </div>
+        <div className={styles.benefits}>
+          {benefits.map((item, i) => (
+            <article key={item.title}>
+              <div className={styles.benefitTop}>
+                <item.icon size={26} />
+                <span>0{i + 1}</span>
+              </div>
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
+            </article>
+          ))}
+        </div>
+        <GamePreview />
+      </section>
+
+      <section
+        className={styles.pricingSection}
+        id="pricing"
+        aria-labelledby="pricing-title"
+      >
+        <div className={styles.section}>
+          <div className={styles.centerHeading}>
+            <p className={styles.kicker}>INVEST IN YOUR FUTURE</p>
+            <h2 id="pricing-title">ความพร้อมที่เลือกได้</h2>
+            <p>เริ่มฝึกฟรี แล้วเลือกแพ็กเกจที่เหมาะกับจังหวะของคุณ</p>
+          </div>
+          <div className={styles.pricingGrid}>
+            {PRICING_PLANS.map((plan) => (
+              <article
+                key={plan.type}
+                className={`${styles.priceCard} ${plan.popular ? styles.featuredPrice : ""}`}
+              >
+                <div className={styles.priceTop}>
+                  <h3>{plan.name}</h3>
+                  {plan.popular && <span>แนะนำ</span>}
+                </div>
+                <p>{plan.description}</p>
+                <div className={styles.price}>
+                  {plan.price === 0
+                    ? "ฟรี"
+                    : `฿${plan.price.toLocaleString("th-TH")}`}
+                  <small>{plan.period}</small>
+                </div>
+                <Link
+                  href={
+                    plan.type === "free" ? "/register" : `/payment/${plan.type}`
+                  }
+                  className={plan.popular ? styles.primary : styles.darkButton}
+                >
+                  {plan.cta}
+                  <ArrowUpRight size={18} />
+                </Link>
+                <ul>
+                  {plan.features.map((feature) => (
+                    <li key={feature}>
+                      <Check size={16} />
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ))}
           </div>
         </div>
       </section>
-    </>
+
+      <section className={styles.section} aria-labelledby="news-title">
+        <div className={styles.sectionHeading}>
+          <div>
+            <p className={styles.kicker}>STAY CURIOUS</p>
+            <h2 id="news-title">อัปเดตความรู้ ไม่หยุดเรียน</h2>
+          </div>
+          <Link href="/blog" className={styles.textLink}>
+            อ่านบทความ <ArrowUpRight size={19} />
+          </Link>
+        </div>
+        <div className={styles.news}>
+          <Suspense fallback={<ExamNewsSkeleton />}>
+            <ExamNews track="pharmacy" />
+          </Suspense>
+        </div>
+      </section>
+      <aside className={styles.nursingNote}>
+        <Stethoscope size={20} />
+        <span>สำหรับนักศึกษาพยาบาล เรามีข้อสอบ NLE เช่นกัน</span>
+        <Link href="/nursing">
+          ไปหน้า NLE <ArrowUpRight size={16} />
+        </Link>
+      </aside>
+      <section className={styles.finalCta}>
+        <span className={styles.kicker}>YOUR FUTURE IS WORTH IT</span>
+        <h2>
+          วันสอบที่มั่นใจ
+          <br />
+          เริ่มได้จาก<span>วันนี้</span>
+        </h2>
+        <p>ให้ฟาร์มรู้เป็นเพื่อนคู่คิด บนเส้นทางสู่วิชาชีพเภสัชกรรม</p>
+        <Link href="/register" className={styles.primary}>
+          เริ่มต้นเส้นทางของคุณ ฟรี <ArrowUpRight size={21} />
+        </Link>
+      </section>
+    </div>
   );
 }

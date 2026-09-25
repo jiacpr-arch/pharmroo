@@ -1,0 +1,1011 @@
+.home {
+  --ink: #153e35;
+  --muted: #65756d;
+  --lime: #d8f88b;
+  background: #fffef9;
+  color: var(--ink);
+}
+.home a {
+  transition:
+    background 0.2s,
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+.home a:focus-visible {
+  outline: 3px solid #c1832d;
+  outline-offset: 5px;
+}
+.home h2 {
+  font-size: clamp(27px, 3.1vw, 39px);
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -1px;
+}
+.home p {
+  line-height: 1.8;
+}
+.hero {
+  background: #103e34;
+  color: #fffef4;
+  position: relative;
+  overflow: hidden;
+  background-image: radial-gradient(
+    ellipse at 83% 36%,
+    #28664d 0,
+    transparent 48%
+  );
+}
+.heroGrid {
+  max-width: 1280px;
+  margin: auto;
+  padding: 74px 40px 58px;
+  display: grid;
+  grid-template-columns: 1.08fr 1fr;
+  gap: 38px;
+  align-items: center;
+}
+.eyebrow {
+  font-size: 10px;
+  letter-spacing: 2.2px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #d5e2d6;
+}
+.eyebrow > span {
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background: var(--lime);
+  box-shadow: 0 0 0 5px #d8f88b12;
+}
+.hero h1 {
+  font-size: clamp(42px, 4.7vw, 66px);
+  line-height: 1.32;
+  letter-spacing: -1.8px;
+  font-weight: 700;
+  margin: 25px 0;
+}
+.highlight {
+  color: var(--lime);
+  position: relative;
+}
+.highlight:after {
+  content: "";
+  height: 3px;
+  background: var(--lime);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  transform: rotate(-3deg);
+}
+.heroDescription {
+  font-size: 16px;
+  color: #c8d9cf;
+  max-width: 520px;
+}
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  margin-top: 30px;
+}
+.primary,
+.secondary,
+.darkButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  font-weight: 600;
+  font-size: 14px;
+  min-height: 50px;
+  padding: 13px 22px;
+  border-radius: 9px;
+}
+.primary {
+  background: var(--lime);
+  color: #173c2d;
+}
+.primary:hover {
+  background: #e6ffb2;
+  transform: translateY(-2px);
+}
+.secondary {
+  color: #e0eade;
+  border: 1px solid #668577;
+}
+.secondary:hover {
+  background: #ffffff10;
+}
+.darkButton {
+  background: var(--ink);
+  color: white;
+}
+.darkButton:hover {
+  background: #285849;
+  transform: translateY(-2px);
+}
+.heroNote {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #b2c9bd;
+  margin-top: 18px;
+}
+.heroNote > span {
+  margin: 0 5px;
+}
+.visual {
+  height: 470px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+}
+.orbit,
+.orbitTwo {
+  position: absolute;
+  width: 440px;
+  height: 440px;
+  border: 1px solid #acc99230;
+  border-radius: 50%;
+  transform: rotate(-25deg);
+}
+.orbit:after {
+  content: "";
+  position: absolute;
+  top: 70px;
+  left: 46px;
+  width: 12px;
+  height: 12px;
+  background: var(--lime);
+  border-radius: 50%;
+  box-shadow: 0 0 22px #d8f88b80;
+}
+.orbitTwo {
+  width: 540px;
+  height: 340px;
+  transform: rotate(-42deg);
+  border-style: dashed;
+  opacity: 0.5;
+}
+.studyCard {
+  width: 345px;
+  background: #fffef8;
+  border: 1px solid #ffffff80;
+  color: var(--ink);
+  border-radius: 19px;
+  padding: 25px;
+  transform: rotate(-5deg);
+  box-shadow: 0 28px 70px #021b3850;
+  z-index: 1;
+}
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.miniLogo {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.cardTag {
+  font-size: 7px;
+  letter-spacing: 1.1px;
+  color: #6f8174;
+}
+.cardHeading {
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 25px 0 19px;
+  color: #738077;
+}
+.cardHeading strong {
+  font-size: 22px;
+  letter-spacing: -0.7px;
+  color: var(--ink);
+}
+.journey {
+  display: grid;
+  gap: 10px;
+}
+.journey > div {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  border: 1px solid #e4e9dc;
+  background: #f5f7ef;
+  border-radius: 10px;
+  padding: 12px;
+}
+.journey > div > span {
+  background: #e4edcf;
+  padding: 9px;
+  border-radius: 8px;
+}
+.journey p {
+  flex: 1;
+  line-height: 1.5;
+  margin: 0;
+}
+.journey b {
+  font-size: 12px;
+  display: block;
+}
+.journey small {
+  font-size: 10px;
+  color: #647267;
+  display: block;
+  margin-top: 3px;
+}
+.journey > div:last-child {
+  background: #eaf4d4;
+  border-color: #cfdfb1;
+}
+.cardLink {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 600;
+  padding-top: 20px;
+}
+.floatingLabel {
+  position: absolute;
+  z-index: 2;
+  bottom: 20px;
+  right: 0;
+  background: #e8bbaa;
+  color: #52392e;
+  padding: 17px 20px;
+  border-radius: 12px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  box-shadow: 0 12px 30px #12221a30;
+  transform: rotate(4deg);
+}
+.floatingLabel b {
+  display: block;
+  font-size: 13px;
+}
+.floatingLabel span {
+  font-size: 11px;
+  display: block;
+  margin-top: 3px;
+}
+.floatIcon {
+  position: absolute;
+  right: 12px;
+  top: 16px;
+  z-index: 2;
+  background: var(--lime);
+  color: var(--ink);
+  border-radius: 17px;
+  padding: 20px;
+  transform: rotate(12deg);
+}
+.pillShape {
+  position: absolute;
+  left: 6px;
+  bottom: 55px;
+  display: flex;
+  transform: rotate(-35deg);
+  z-index: 2;
+  filter: drop-shadow(0 15px 10px #10261a30);
+}
+.pillShape span {
+  height: 47px;
+  width: 44px;
+  border-radius: 40px 0 0 40px;
+  background: linear-gradient(#faffee, #bfc5a7);
+}
+.pillShape span + span {
+  border-radius: 0 40px 40px 0;
+  background: linear-gradient(#ddfaa8, #8fb553);
+}
+.visualCaption {
+  position: absolute;
+  bottom: -16px;
+  color: #9cbaa4;
+  font-size: 9px;
+  letter-spacing: 4px;
+}
+.heroBottom {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  border-top: 1px solid #ffffff24;
+  padding: 23px 0;
+  color: #c4d5c6;
+  font-size: 12px;
+}
+.heroBottom span {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.section {
+  max-width: 1280px;
+  margin: auto;
+  padding: 75px 40px;
+}
+.sectionHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+.kicker {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #58734f;
+  margin: 0 0 12px;
+}
+.sectionHeading > p,
+.centerHeading > p:last-child {
+  font-size: 14px;
+  color: var(--muted);
+}
+.trackGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+.track {
+  padding: 29px 32px;
+  border-radius: 18px;
+  position: relative;
+  overflow: hidden;
+}
+.track:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 35px #24423212;
+}
+.pharmacy {
+  background: #eaf0dd;
+}
+.mock {
+  background: #e2ece7;
+  color: #244c41;
+}
+.trackTop {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.trackTop > span {
+  font-size: 10px;
+  letter-spacing: 1.7px;
+  flex: 1;
+  font-weight: 600;
+}
+.track h3 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 25px;
+  line-height: 1.45;
+}
+.track h3 span {
+  font-size: 15px;
+  display: block;
+  font-weight: 400;
+  margin-top: 4px;
+  opacity: 0.75;
+}
+.track p {
+  font-size: 14px;
+  margin: 16px 0 24px;
+  opacity: 0.8;
+}
+.trackFooter {
+  border-top: 1px solid #153e3525;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.subjectSection {
+  background: #f5f5eb;
+  border-block: 1px solid #e9eddf;
+}
+.textLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.subjects {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+.subject {
+  background: #fffef9;
+  border: 1px solid #e4e8da;
+  border-radius: 12px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 18px;
+}
+.subject:hover {
+  background: #edf5d7;
+  border-color: #b6c79c;
+}
+.subjectNumber {
+  font-size: 10px;
+  color: #7b8876;
+}
+.subjectIcon {
+  font-size: 27px;
+  grid-row: 2;
+  grid-column: 1/-1;
+}
+.subject h3 {
+  font-size: 14px;
+  font-weight: 600;
+}
+.subject > svg {
+  grid-column: 2;
+}
+.statStrip {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+  padding: 30px 0 0;
+  margin-top: 30px;
+  border-top: 1px solid #d9dfcd;
+}
+.statStrip > div {
+  flex: 1;
+}
+.statStrip strong {
+  font-size: 37px;
+  letter-spacing: -1px;
+  display: block;
+  font-weight: 700;
+}
+.statStrip span {
+  font-size: 12px;
+  color: var(--muted);
+}
+.statStrip p {
+  font-size: 14px;
+  color: var(--muted);
+}
+.statStrip b {
+  color: var(--ink);
+  font-weight: 500;
+}
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 34px;
+}
+.benefits article {
+  padding: 12px 0 25px;
+  border-bottom: 1px solid #dce4d3;
+}
+.benefitTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #537446;
+}
+.benefitTop > span {
+  font-size: 11px;
+  color: #87967c;
+}
+.benefits h3 {
+  font-size: 21px;
+  font-weight: 600;
+  margin: 22px 0 10px;
+}
+.benefits p {
+  font-size: 14px;
+  color: var(--muted);
+}
+.gameBanner {
+  margin-top: 65px;
+  border-radius: 17px;
+  background: #193f35;
+  color: #fbfff0;
+  padding: 33px;
+  display: flex;
+  gap: 26px;
+  align-items: center;
+}
+.gameBanner > div:nth-child(2) {
+  flex: 1;
+}
+.gameBanner h2 {
+  font-size: 28px;
+}
+.gameBanner .kicker {
+  color: #c8df91;
+  font-size: 8px;
+}
+.gameBanner p:last-child {
+  font-size: 12px;
+  color: #c3d0c5;
+  margin-top: 8px;
+}
+.gameIcon {
+  color: var(--lime);
+  border: 1px solid #8baf723f;
+  border-radius: 50%;
+  padding: 22px;
+}
+.pricingSection {
+  background: #f2f4e9;
+}
+.centerHeading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.centerHeading > p:last-child {
+  margin-top: 12px;
+}
+.pricingGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: stretch;
+}
+.priceCard {
+  padding: 30px;
+  background: #fffef9;
+  border: 1px solid #dfe5d2;
+  border-radius: 17px;
+}
+.priceTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.priceTop h3 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.priceTop > span {
+  background: var(--lime);
+  color: var(--ink);
+  font-size: 10px;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+.priceCard > p {
+  color: var(--muted);
+  font-size: 13px;
+  margin-top: 6px;
+}
+.price {
+  font-size: 43px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin: 24px 0;
+}
+.price small {
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0;
+  margin-left: 6px;
+}
+.priceCard > a {
+  width: 100%;
+}
+.priceCard ul {
+  display: grid;
+  gap: 14px;
+  margin-top: 26px;
+}
+.priceCard li {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  font-size: 12px;
+  line-height: 1.6;
+}
+.priceCard li svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.featuredPrice {
+  background: #204b3e;
+  color: #fffef9;
+  border-color: #204b3e;
+  box-shadow: 0 17px 30px #27462c20;
+}
+.featuredPrice > p {
+  color: #c4d4c8;
+}
+.featuredPrice li svg {
+  color: var(--lime);
+}
+.news {
+  border: 1px solid #e0e7d5;
+  border-radius: 15px;
+  overflow: hidden;
+  background: white;
+}
+.finalCta {
+  text-align: center;
+  background: #dff0bb;
+  padding: 72px 24px 80px;
+  background-image: radial-gradient(
+    ellipse at 0 100%,
+    #c2d99e,
+    transparent 45%
+  );
+}
+.finalCta h2 {
+  font-size: clamp(36px, 5vw, 58px);
+  line-height: 1.4;
+  margin-top: 20px;
+}
+.finalCta h2 span {
+  color: #698c38;
+}
+.finalCta > p {
+  margin: 18px 0 26px;
+  color: #566946;
+  font-size: 14px;
+}
+.finalCta .primary {
+  background: #183f32;
+  color: #fff;
+}
+.finalCta .primary:hover {
+  background: #2a5744;
+}
+@media (min-width: 1000px) and (prefers-reduced-motion: no-preference) {
+  .studyCard {
+    animation: arrive 0.8s ease-out both;
+  }
+  .floatingLabel {
+    animation: float 6s ease-in-out infinite;
+  }
+  .floatIcon {
+    animation: float 7s ease-in-out infinite reverse;
+  }
+  @keyframes float {
+    50% {
+      translate: 0 -9px;
+    }
+  }
+  @keyframes arrive {
+    from {
+      opacity: 0;
+      translate: 0 20px;
+    }
+    to {
+      opacity: 1;
+      translate: 0 0;
+    }
+  }
+}
+@media (max-width: 1100px) {
+  .heroGrid {
+    gap: 15px;
+    padding-inline: 28px;
+  }
+  .heroBottom {
+    margin-inline: 28px;
+  }
+  .studyCard {
+    width: 310px;
+    padding: 21px;
+  }
+  .floatIcon {
+    right: 0;
+  }
+  .floatingLabel {
+    right: 0;
+    padding: 14px;
+  }
+  .pillShape {
+    left: 0;
+  }
+  .section {
+    padding: 60px 28px;
+  }
+  .gameBanner {
+    flex-wrap: wrap;
+  }
+  .gameBanner > a {
+    margin-left: auto;
+  }
+  .visual {
+    height: 455px;
+  }
+  .hero h1 {
+    font-size: 52px;
+  }
+}
+@media (max-width: 800px) {
+  .heroGrid {
+    grid-template-columns: 1fr;
+    padding-top: 48px;
+    gap: 20px;
+  }
+  .heroCopy {
+    max-width: 570px;
+  }
+  .hero h1 {
+    font-size: 55px;
+  }
+  .visual {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    height: 470px;
+  }
+  .studyCard {
+    width: 345px;
+    padding: 25px;
+  }
+  .heroBottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 17px;
+    font-size: 11px;
+  }
+  .sectionHeading {
+    align-items: start;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .sectionHeading > p br {
+    display: none;
+  }
+  .subjects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .benefits {
+    gap: 20px;
+  }
+  .benefits h3 {
+    font-size: 18px;
+  }
+  .pricingGrid {
+    grid-template-columns: 1fr;
+    max-width: 470px;
+    margin: auto;
+  }
+  .priceCard {
+    padding: 28px;
+  }
+  .statStrip {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .statStrip > div {
+    min-width: 50%;
+  }
+  .gameIcon {
+    display: none;
+  }
+  .gameBanner {
+    gap: 22px;
+  }
+  .track {
+    padding: 25px;
+  }
+  .track h3 {
+    font-size: 26px;
+  }
+  .orbitTwo {
+    max-width: 110%;
+  }
+}
+@media (max-width: 520px) {
+  .heroGrid {
+    padding: 38px 22px 35px;
+  }
+  .eyebrow {
+    font-size: 8px;
+    letter-spacing: 1.6px;
+  }
+  .hero h1 {
+    font-size: clamp(39px, 11vw, 53px);
+    letter-spacing: -1px;
+  }
+  .heroDescription {
+    font-size: 14px;
+  }
+  .desktopBreak {
+    display: none;
+  }
+  .actions {
+    flex-direction: column;
+  }
+  .primary,
+  .secondary,
+  .darkButton {
+    min-height: 50px;
+  }
+  .heroNote {
+    font-size: 11px;
+  }
+  .visual {
+    height: 435px;
+    margin-top: 10px;
+  }
+  .studyCard {
+    width: calc(100% - 32px);
+    padding: 20px;
+    transform: rotate(-3deg);
+  }
+  .cardTag {
+    font-size: 6px;
+  }
+  .cardHeading strong {
+    font-size: 20px;
+  }
+  .journey > div {
+    padding: 10px;
+    gap: 8px;
+  }
+  .journey small {
+    font-size: 9px;
+  }
+  .floatingLabel {
+    right: 0;
+    bottom: 0;
+    padding: 12px;
+  }
+  .floatingLabel b {
+    font-size: 11px;
+  }
+  .floatingLabel span {
+    font-size: 10px;
+  }
+  .floatIcon {
+    top: 0;
+    padding: 13px;
+    right: 4px;
+  }
+  .pillShape {
+    left: -5px;
+    bottom: 35px;
+    scale: 0.8;
+  }
+  .orbit {
+    width: 360px;
+    height: 360px;
+  }
+  .visualCaption {
+    display: none;
+  }
+  .heroBottom {
+    margin-inline: 22px;
+    gap: 17px 10px;
+  }
+  .section {
+    padding: 46px 22px;
+  }
+  .trackGrid,
+  .benefits {
+    grid-template-columns: 1fr;
+  }
+  .track {
+    padding: 25px;
+  }
+  .track h3 {
+    font-size: 29px;
+  }
+  .sectionHeading {
+    margin-bottom: 23px;
+  }
+  .subject {
+    padding: 17px;
+    gap: 13px;
+  }
+  .subject h3 {
+    font-size: 12px;
+    overflow-wrap: anywhere;
+  }
+  .subject svg {
+    width: 15px;
+  }
+  .statStrip p {
+    font-size: 12px;
+  }
+  .statStrip strong {
+    font-size: 31px;
+  }
+  .statStrip > a {
+    width: 100%;
+  }
+  .benefits article {
+    padding: 12px 0 22px;
+  }
+  .gameBanner {
+    padding: 25px;
+    margin-top: 38px;
+  }
+  .gameBanner h2 {
+    font-size: 25px;
+  }
+  .gameBanner > a {
+    width: 100%;
+  }
+  .finalCta {
+    padding: 55px 22px;
+  }
+  .finalCta > p {
+    font-size: 13px;
+  }
+  .heroBottom svg {
+    width: 15px;
+    flex-shrink: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .home a {
+    transition: none;
+  }
+}
+
+.nursingNote {
+  max-width: 1200px;
+  margin: 0 auto 36px;
+  padding: 20px 24px;
+  border-top: 1px solid #e0e7d5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 13px;
+  color: #65756d;
+}
+.nursingNote a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #153e35;
+  font-weight: 600;
+}
+
+.trackChoices {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  border-top: 1px solid #153e3525;
+  padding-top: 18px;
+}
+.trackChoices a {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  border-radius: 8px;
+  padding: 10px 14px;
+  background: #fffef9;
+  font-size: 13px;
+  font-weight: 600;
+}
+.trackChoices a:hover {
+  background: #d8f88b;
+}
+.sectionSubtitle {
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--muted);
+}

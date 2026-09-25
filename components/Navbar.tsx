@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { usePathname, useSearchParams } from "next/navigation";
+import { Suspense, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, User, LogOut, Shield } from "lucide-react";
 import { useSession, signOut } from "next-auth/react";
@@ -21,14 +21,18 @@ const navLinks = [
 ];
 
 export default function Navbar() {
-  const pathname = usePathname();
-  const [pleTrack, setPleTrack] = useState("cc1");
-  const showPleSubnav = pathname.startsWith("/ple");
+  return (
+    <Suspense fallback={<div className="h-16 border-b bg-white" />}>
+      <NavbarContent />
+    </Suspense>
+  );
+}
 
-  useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    setPleTrack(params.get("track") || "cc1");
-  }, [pathname]);
+function NavbarContent() {
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const pleTrack = searchParams.get("track") || "cc1";
+  const showPleSubnav = pathname.startsWith("/ple");
   const [mobileOpen, setMobileOpen] = useState(false);
   const { data: session } = useSession();
   const user = session?.user;
@@ -37,8 +41,12 @@ export default function Navbar() {
     role === "admin"
       ? { href: "/admin", label: "Admin", className: "text-red-600" }
       : role === "nursing_admin"
-      ? { href: "/nursing/admin", label: "NLE Admin", className: "text-rose-600" }
-      : null;
+        ? {
+            href: "/nursing/admin",
+            label: "NLE Admin",
+            className: "text-rose-600",
+          }
+        : null;
 
   const handleLogout = async () => {
     await signOut({ callbackUrl: "/" });
@@ -54,15 +62,13 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop nav */}
-        <div className="hidden md:flex items-center gap-6">
+        <div className="hidden xl:flex items-center gap-4">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               className={`text-sm font-medium transition-colors hover:text-brand ${
-                pathname === link.href
-                  ? "text-brand"
-                  : "text-muted-foreground"
+                pathname === link.href ? "text-brand" : "text-muted-foreground"
               }`}
             >
               {link.label}
@@ -71,13 +77,17 @@ export default function Navbar() {
         </div>
 
         {/* Auth buttons */}
-        <div className="hidden md:flex items-center gap-3">
+        <div className="hidden xl:flex items-center gap-3">
           {user ? (
             <>
               <CreditBalance />
               {adminLink && (
                 <Link href={adminLink.href}>
-                  <Button variant="ghost" size="sm" className={`gap-2 ${adminLink.className}`}>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className={`gap-2 ${adminLink.className}`}
+                  >
                     <Shield className="h-4 w-4" />
                     {adminLink.label}
                   </Button>
@@ -120,10 +130,17 @@ export default function Navbar() {
 
         {/* Mobile menu button */}
         <button
-          className="md:hidden"
+          className="xl:hidden"
+          aria-label={mobileOpen ? "ปิดเมนู" : "เปิดเมนู"}
+          aria-expanded={mobileOpen}
+          aria-controls="mobile-navigation"
           onClick={() => setMobileOpen(!mobileOpen)}
         >
-          {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          {mobileOpen ? (
+            <X className="h-6 w-6" />
+          ) : (
+            <Menu className="h-6 w-6" />
+          )}
         </button>
       </div>
 
@@ -133,10 +150,19 @@ export default function Navbar() {
             {[
               { key: "cc1", label: "ปี 4 · CC1", href: "/ple/practice" },
               { key: "pc1", label: "ปี 6 · PC1", href: "/ple/pc1-pilot" },
-              { key: "ip1", label: "ปี 6 · IP1", href: "/ple/practice?track=ip1" },
-              { key: "phcp1", label: "ปี 6 · PHCP1", href: "/ple/practice?track=phcp1" },
+              {
+                key: "ip1",
+                label: "ปี 6 · IP1",
+                href: "/ple/practice?track=ip1",
+              },
+              {
+                key: "phcp1",
+                label: "ปี 6 · PHCP1",
+                href: "/ple/practice?track=phcp1",
+              },
             ].map((item) => {
-              const active = pathname.startsWith("/ple/practice") && pleTrack === item.key;
+              const active =
+                pathname.startsWith("/ple/practice") && pleTrack === item.key;
               return (
                 <Link
                   key={item.key}
@@ -158,7 +184,7 @@ export default function Navbar() {
 
       {/* Mobile nav */}
       {mobileOpen && (
-        <div className="border-t bg-white md:hidden">
+        <div id="mobile-navigation" className="border-t bg-white xl:hidden">
           <div className="space-y-1 px-4 py-3">
             {navLinks.map((link) => (
               <Link
