@@ -1,13 +1,10 @@
 import type { McqQuestion } from "@/lib/types-mcq";
+import { buildPc1Cases, type Pc1Case } from "@/lib/pc1-case-builder";
 
 // PC1 Scenario Set 001 — ข้อสอบแนว "สถานการณ์" (1 เคส หลายข้อ) ระดับปี 6
 // โครงเดียวกับข้อสอบจริง: คำนวณ (CrCl/PK/dose) → กลไก/สาเหตุ → การจัดการ → ยาทางเลือก
-// o = ตัวเลือก 5 ข้อตามลำดับ A–E, a = index คำตอบ, w = เหตุผลรายตัวเลือก, c = ขั้นตอนคำนวณ (ถ้ามี)
 
-type Q = { p: string; o: string[]; a: number; r: string; w: string[]; c?: string[]; k: string };
-type Case = { title: string; base: string; ref: string; qs: Q[] };
-
-const CASES: Case[] = [
+const CASES: Pc1Case[] = [
   {
     title: "Warfarin + co-trimoxazole + digoxin ในผู้สูงอายุ",
     base:
@@ -654,51 +651,10 @@ const CASES: Case[] = [
   },
 ];
 
-const labels = ["A", "B", "C", "D", "E"];
-// ต่อท้าย PC1 Pilot 032 (8 เคส, 32 ข้อ) ในชุด PC1 เดียวกัน
-const CASE_OFFSET = 8;
-const Q_OFFSET = 32;
-const CASE_TOTAL = CASE_OFFSET + CASES.length;
-const POS = [3, 0, 4, 1, 2, 0, 3, 1, 4];
-const total = CASES.reduce((s, c) => s + c.qs.length, 0);
-
-export const PC1_SCENARIO_001: McqQuestion[] = CASES.flatMap((c, ci) =>
-  c.qs.map((q, qi) => {
-    const n = CASES.slice(0, ci).reduce((s, x) => s + x.qs.length, 0) + qi + 1;
-    // ตัวเลือกเชิงตัวเลขคงลำดับจากน้อยไปมาก; ตัวเลือกข้อความสลับตำแหน่งคำตอบเพื่อกระจาย key
-    const numeric = q.o.every((t) => /^[\d.,]+ /.test(t));
-    const order = q.o.map((_, j) => j).filter((j) => j !== q.a);
-    if (numeric) order.splice(q.a, 0, q.a);
-    else order.splice(POS[(n - 1) % POS.length], 0, q.a);
-    const o = order.map((j) => q.o[j]);
-    const w = order.map((j) => q.w[j]);
-    const ai = order.indexOf(q.a);
-    const ans = labels[ai];
-    return {
-      id: `pc1sc001q${String(n).padStart(3, "0")}`,
-      subject_id: "pc1",
-      exam_type: "PLE-PC",
-      exam_source: "PharmRU PC1 Progressive Cases",
-      exam_day: null,
-      question_number: Q_OFFSET + n,
-      scenario: `Case ${CASE_OFFSET + ci + 1}/${CASE_TOTAL} — ${c.title}\n${c.base}\n\nคำถาม ${qi + 1}/${c.qs.length}: ${q.p}`,
-      image_url: null,
-      choices: o.map((text, j) => ({ label: labels[j], text })),
-      correct_answer: ans,
-      explanation: `${q.r}\n\nReference: ${c.ref}`,
-      detailed_explanation: {
-        summary: `เฉลย ${ans}: ${o[ai]}`,
-        reason: q.r,
-        choices: o.map((text, j) => ({ label: labels[j], text, is_correct: j === ai, explanation: w[j] })),
-        key_takeaway: q.k,
-        ...(q.c ? { calculation_steps: q.c } : {}),
-      },
-      difficulty: "hard",
-      is_ai_enhanced: true,
-      ai_notes: "PC1 scenario-style (1 case, multiple items) modeled on past-exam format; clinical/editorial verification required before commercial publication.",
-      status: "active",
-      created_at: "2026-09-24 09:00:00",
-      mcq_subjects: { id: "pc1", name: "PC1", name_th: "บริบาลเภสัชกรรม PC1", icon: "🩺", exam_type: "PLE-PC", question_count: Q_OFFSET + total, created_at: "2026-09-24 09:00:00" },
-    };
-  })
-);
+// ต่อท้าย PC1 Pilot 032 (8 เคส, 32 ข้อ) ในชุด PC1 เดียวกัน → Case 9–14, ข้อ 33–64
+export const PC1_SCENARIO_001: McqQuestion[] = buildPc1Cases(CASES, {
+  idPrefix: "pc1sc001q",
+  caseOffset: 8,
+  qOffset: 32,
+  createdAt: "2026-09-24 09:00:00",
+});
