@@ -7,8 +7,12 @@ import { getPlayAllowance } from "@/lib/play-limit";
 import McqPractice from "@/components/McqPractice";
 import { IP1_PILOT_050 } from "@/lib/ip1-pilot-050";
 import { IP1_SET2_DAY01 } from "@/lib/ip1-set2-day01";
+import { IP1_SET2_DAY02 } from "@/lib/ip1-set2-day02";
+import { IP1_SET2_DAY03 } from "@/lib/ip1-set2-day03";
+import { IP1_SET2_DAY04 } from "@/lib/ip1-set2-day04";
+import { IP1_SET2_DAY05 } from "@/lib/ip1-set2-day05";
 import { Badge } from "@/components/ui/badge";
-import GoodyEmbed from "@/components/GoodyEmbed";
+import ExamNews, { ExamNewsSkeleton } from "@/components/ExamNews";
 import Link from "next/link";
 import { ArrowLeft, BookOpen, Factory, HeartPulse, ShieldCheck } from "lucide-react";
 import type { Metadata } from "next";
@@ -40,7 +44,9 @@ async function PracticeContent({
   ]);
 
   const selectedQuestions =
-    track === "ip1" ? [...IP1_PILOT_050, ...IP1_SET2_DAY01] : rawQuestions;
+    track === "ip1"
+      ? [...IP1_PILOT_050, ...IP1_SET2_DAY01, ...IP1_SET2_DAY02, ...IP1_SET2_DAY03, ...IP1_SET2_DAY04, ...IP1_SET2_DAY05]
+      : rawQuestions;
 
   const [{ questions, creditBalance }, playAllowance] = await Promise.all([
     gateQuestionsForSession(session, selectedQuestions),
@@ -71,7 +77,7 @@ async function PracticeContent({
               <div className="flex items-center gap-2 text-xl font-bold"><Factory className="h-6 w-6 text-amber-500" /> IP1 — เภสัชกรรมอุตสาหการ</div>
               <p className="mt-2 text-sm text-muted-foreground">Industrial Pharmacy · Mock Set 1 จำนวน 150 ข้อ · ข้อ 101–150 เน้นอ่าน Monograph / Assay / Chromatography ระดับ Very Hard</p>
               <p className="mt-1 text-xs text-muted-foreground">Formulation · Manufacturing · Chromatography · Stability · Sterile · QA/QC · GMP · Validation</p>
-              <p className="mt-1 text-xs text-muted-foreground">+ Daily Set 2 (ทยอยอัปเดตวันละ 10 ข้อ) · ตอนนี้มี {IP1_SET2_DAY01.length} ข้อ — Day 1: Cleanroom/HVAC/GMP Grade</p>
+              <p className="mt-1 text-xs text-muted-foreground">+ Daily Set 2 (ทยอยอัปเดตวันละ 10 ข้อ) · ตอนนี้มี {IP1_SET2_DAY01.length + IP1_SET2_DAY02.length + IP1_SET2_DAY03.length + IP1_SET2_DAY04.length + IP1_SET2_DAY05.length} ข้อ — Day 1: Cleanroom/HVAC/GMP Grade · Day 2: Impurity/Cleaning/Elemental/Scale-up calculations · Day 3: Sterilization/Aseptic processing validation · Day 4: Process capability/Sampling/Qualification/Tech transfer · Day 5: Physical pharmacy/Biopharmaceutics/Packaging calculations</p>
             </div>
           )}
           {track === "phcp1" && (
@@ -94,17 +100,9 @@ async function PracticeContent({
       )}
       {track === "cc1" && (
         <>
-      <div className="mb-2 border-t pt-6">
-        <h2 className="text-lg font-bold">ฝึกข้อสอบ CC1</h2>
-        <p className="text-sm text-muted-foreground">เลือกวันสอบและหมวดวิชาที่ต้องการฝึก</p>
-      </div>
-
       {/* Day Filter */}
-      <div className="mb-4">
-        <h3 className="text-sm font-medium mb-2 text-muted-foreground">
-          วันสอบ
-        </h3>
-        <div className="flex gap-2">
+      <div className="mb-3">
+        <div className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-1 [scrollbar-width:none] sm:mx-0 sm:flex-wrap sm:overflow-visible sm:px-0">
           <Link href={subjectId ? `/ple/practice?subject=${subjectId}` : "/ple/practice"}>
             <Badge
               variant={!day ? "default" : "secondary"}
@@ -138,12 +136,9 @@ async function PracticeContent({
         </div>
       </div>
 
-      {/* Subject Filter */}
-      <div className="mb-6">
-        <h3 className="text-sm font-medium mb-2 text-muted-foreground">
-          หมวดวิชา
-        </h3>
-        <div className="flex flex-wrap gap-2">
+      {/* Subject Filter — แถวเดียวเลื่อนซ้ายขวาบนมือถือ จะได้ไม่ดันข้อสอบลงไปไกล */}
+      <div className="mb-3">
+        <div className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-1 [scrollbar-width:none] sm:mx-0 sm:flex-wrap sm:overflow-visible sm:px-0">
           <Link href={basePath}>
             <Badge
               variant={!subjectId ? "default" : "secondary"}
@@ -175,7 +170,7 @@ async function PracticeContent({
       </div>
 
       {/* Info */}
-      <div className="mb-6 text-sm text-muted-foreground">
+      <div className="mb-4 text-sm text-muted-foreground">
         {currentSubject ? (
           <span>
             {currentSubject.icon} {currentSubject.name_th}
@@ -228,19 +223,17 @@ export default async function PracticePage({
   const day = dayParam === 1 || dayParam === 2 ? dayParam : undefined;
 
   return (
-    <div className="mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
+    <div className="mx-auto max-w-4xl px-4 py-4 sm:px-6 sm:py-8 lg:px-8">
       {/* Header */}
-      <div className="mb-6">
+      <div className="mb-4 flex items-center gap-3">
         <Link
           href="/ple"
-          className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-brand mb-4"
+          aria-label="กลับหน้า PLE"
+          className="text-muted-foreground hover:text-brand"
         >
-          <ArrowLeft className="h-4 w-4" /> กลับหน้า PLE
+          <ArrowLeft className="h-5 w-5" />
         </Link>
-        <h1 className="text-2xl font-bold">ฝึกทำข้อสอบ PLE</h1>
-        <p className="text-muted-foreground text-sm mt-1">
-          เลือกตอบแล้วดูเฉลยทันที
-        </p>
+        <h1 className="text-xl font-bold sm:text-2xl">ฝึกทำข้อสอบ PLE</h1>
       </div>
 
       <Suspense
@@ -250,9 +243,11 @@ export default async function PracticePage({
       </Suspense>
 
       <section className="mt-12">
-        <h2 className="text-lg font-semibold mb-3">ข่าวสารสุขภาพ</h2>
+        <h2 className="text-lg font-semibold mb-3">ข่าวการสอบ & วงการเภสัช</h2>
         <div className="overflow-hidden rounded-xl border bg-white">
-          <GoodyEmbed site="health" type="news" title="ข่าวสารสุขภาพ" />
+          <Suspense fallback={<ExamNewsSkeleton />}>
+            <ExamNews track="pharmacy" />
+          </Suspense>
         </div>
       </section>
     </div>

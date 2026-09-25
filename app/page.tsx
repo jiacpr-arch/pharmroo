@@ -2,7 +2,8 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import PricingCard from "@/components/PricingCard";
-import GoodyEmbed from "@/components/GoodyEmbed";
+import { Suspense } from "react";
+import ExamNews, { ExamNewsSkeleton } from "@/components/ExamNews";
 import { CATEGORIES, PRICING_PLANS } from "@/lib/types";
 import { getNewQuestionsStats } from "@/lib/db/queries-mcq";
 import {
@@ -350,7 +351,7 @@ export default async function HomePage() {
                     เริ่มรับลูกค้า <ArrowRight className="h-4 w-4" />
                   </Button>
                 </Link>
-                <p className="text-xs text-slate-400">3 เคสตัวอย่าง · เก็บ XP และ badge เมื่อล็อกอิน</p>
+                <p className="text-xs text-slate-400">7 เคสตัวอย่าง · เก็บ XP และ badge เมื่อล็อกอิน</p>
               </div>
             </div>
           </div>
@@ -359,9 +360,11 @@ export default async function HomePage() {
 
       <section className="bg-slate-50 py-12">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <h2 className="mb-4 text-center text-2xl font-bold">ข่าวสารสุขภาพ</h2>
+          <h2 className="mb-4 text-center text-2xl font-bold">ข่าวการสอบ & วงการเภสัช</h2>
           <div className="overflow-hidden rounded-2xl border bg-white shadow-sm">
-            <GoodyEmbed site="health" type="news" title="ข่าวสารสุขภาพ" />
+            <Suspense fallback={<ExamNewsSkeleton />}>
+              <ExamNews track="pharmacy" />
+            </Suspense>
           </div>
         </div>
       </section>

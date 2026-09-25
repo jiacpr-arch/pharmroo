@@ -14,7 +14,7 @@ import CharacterSprite from "@/components/game/CharacterSprite";
 import {
   DEFAULT_DIFFICULTY, DIFFICULTY, applyFx, createInitialState, fmtTime,
   getDifficulty, gradeFor, nextNode, recordCorrect, recordWrong,
-  scoreFor, shuffled,
+  scoreFor, shuffled, takeLabelDraft,
 } from "@/lib/game/engine";
 import { initAudio, playBeep, playSuccessSound, playWarningBeep } from "@/lib/game/sound";
 import { claimPendingLocalRuns, recordGameRun, type RecordedRun } from "@/lib/game/record";
@@ -49,6 +49,11 @@ function snapshot(st: GameState): GameState {
 
 interface Speaker { who: string; pose: Pose; popN: number }
 interface Result { won: boolean; grade: string; score: number; isHiscore: boolean }
+interface LabelCard {
+  drugName: string;
+  patientLabel: string;
+  entries: { heading: string; text: string }[];
+}
 type ChoiceData = ChoiceNode["choice"];
 
 /** บทพูดที่พิมพ์ทีละตัว — reveal ตามจำนวนตัวอักษร ไม่มี HTML */
@@ -127,10 +132,11 @@ export default function GameRunner({
   const [dlgSegments, setDlgSegments] = useState<TextSegment[]>([]);
   const [dlgCount, setDlgCount] = useState(0);
   const [typing, setTyping] = useState(false);
-  const [choice, setChoice] = useState<{ q: string; options: ChoiceOption[]; hintTgt: string | null; tried: Set<string> } | null>(null);
+  const [choice, setChoice] = useState<{ q: string; options: ChoiceOption[]; hintTgt: string | null; tried: Set<string>; shelf: boolean } | null>(null);
   const [decisionLeft, setDecisionLeft] = useState(getDifficulty(difficulty).decisionTime);
   const [drama, setDrama] = useState<"red" | "white" | null>(null);
   const [inter, setInter] = useState<{ text: string; green: boolean } | null>(null);
+  const [labelCard, setLabelCard] = useState<LabelCard | null>(null);
   const [flashN, setFlashN] = useState(0);
   const [redN, setRedN] = useState(0);
   const [shaking, setShaking] = useState(false);
@@ -264,6 +270,7 @@ export default function GameRunner({
     setResult({ won, grade, score, isHiscore });
     setChoice(null);
     setInter(null);
+    setLabelCard(null);
     setScreen("debrief");
     if (isBrowser) window.scrollTo(0, 0);
   }
@@ -277,7 +284,7 @@ export default function GameRunner({
     const hintTgt = diff.hints && hintUsedRef.current
       ? (c.options.find((o) => o.ok)?.tgt || null)
       : null;
-    setChoice({ q: c.q, options: shuffled(c.options), hintTgt, tried: new Set(wrongPicksRef.current) });
+    setChoice({ q: c.q, options: shuffled(c.options), hintTgt, tried: new Set(wrongPicksRef.current), shelf: !!c.shelf });
     setDecisionLeft(diff.decisionTime);
     if (timers.current.dec) clearInterval(timers.current.dec);
     let left = diff.decisionTime;
@@ -352,6 +359,16 @@ export default function GameRunner({
 
     if ("choice" in node) {
       showChoice(node.choice);
+      return;
+    }
+
+    if ("labelPreview" in node) {
+      busyRef.current = true;
+      setDrama(null);
+      setAwaitTap(false);
+      const entries = takeLabelDraft(st);
+      setLabelCard({ drugName: node.labelPreview.drugName, patientLabel: node.labelPreview.patientLabel, entries });
+      syncView();
       return;
     }
 
@@ -441,6 +458,12 @@ export default function GameRunner({
     advance();
   }
 
+  function onLabelCardTap() {
+    setLabelCard(null);
+    busyRef.current = false;
+    advance();
+  }
+
   function startGame() {
     clearAllTimers();
     if (!mutedRef.current) initAudio(); // ปลดล็อก AudioContext ตอนผู้ใช้แตะปุ่ม
@@ -456,6 +479,7 @@ export default function GameRunner({
     setReward(null);
     setChoice(null);
     setInter(null);
+    setLabelCard(null);
     setDrama(null);
     setSpeaker(null);
     setPlate(null);
@@ -720,23 +744,45 @@ export default function GameRunner({
               {choice.hintTgt && (
                 <div className="cbs-hint">💡 ลองใช้แนวทาง <b>{choice.hintTgt}</b> ดูสิ</div>
               )}
-              {choice.options.map((o, i) => {
-                const tried = choice.tried.has(o.label);
-                const dim = !tried && choice.hintTgt && o.tgt !== choice.hintTgt;
-                const glow = choice.hintTgt && o.tgt === choice.hintTgt;
-                return (
-                  <button
-                    key={i}
-                    type="button"
-                    disabled={tried}
-                    className={`cbs-choice ${tried ? "cbs-choice-tried" : ""} ${dim ? "cbs-choice-dim" : ""} ${glow ? "cbs-choice-hint" : ""}`}
-                    onClick={() => pick(o)}
-                  >
-                    <span className="cbs-choice-tgt">▸ {o.tgt}</span>
-                    {o.label}
-                  </button>
-                );
-              })}
+              {choice.shelf ? (
+                <div className="cbs-shelf-grid">
+                  {choice.options.map((o, i) => {
+                    const tried = choice.tried.has(o.label);
+                    const dim = !tried && choice.hintTgt && o.tgt !== choice.hintTgt;
+                    const glow = choice.hintTgt && o.tgt === choice.hintTgt;
+                    return (
+                      <button
+                        key={i}
+                        type="button"
+                        disabled={tried}
+                        className={`cbs-shelf-item ${tried ? "cbs-choice-tried" : ""} ${dim ? "cbs-choice-dim" : ""} ${glow ? "cbs-choice-hint" : ""}`}
+                        onClick={() => pick(o)}
+                      >
+                        <span className="cbs-shelf-icon" aria-hidden>💊</span>
+                        <span className="cbs-shelf-name">{o.label}</span>
+                      </button>
+                    );
+                  })}
+                </div>
+              ) : (
+                choice.options.map((o, i) => {
+                  const tried = choice.tried.has(o.label);
+                  const dim = !tried && choice.hintTgt && o.tgt !== choice.hintTgt;
+                  const glow = choice.hintTgt && o.tgt === choice.hintTgt;
+                  return (
+                    <button
+                      key={i}
+                      type="button"
+                      disabled={tried}
+                      className={`cbs-choice ${tried ? "cbs-choice-tried" : ""} ${dim ? "cbs-choice-dim" : ""} ${glow ? "cbs-choice-hint" : ""}`}
+                      onClick={() => pick(o)}
+                    >
+                      <span className="cbs-choice-tgt">▸ {o.tgt}</span>
+                      {o.label}
+                    </button>
+                  );
+                })
+              )}
               <div className="cbs-choice-timer">
                 <div
                   className={`cbs-choice-timer-fill ${timerPct < 30 ? "cbs-low" : ""}`}
@@ -790,6 +836,38 @@ export default function GameRunner({
           <div className="cbs-inter-burst" />
           <div className={`cbs-inter-bubble ${inter.green ? "cbs-green-bubble" : ""}`}>
             <span className="cbs-inter-text">{inter.text}</span>
+          </div>
+        </div>
+      )}
+      {labelCard && (
+        <div
+          className="cbs-label-overlay"
+          onClick={onLabelCardTap}
+          role="button"
+          tabIndex={0}
+          aria-label="ปิดฉลากยา แล้วไปต่อ"
+          onKeyDown={(e) => {
+            if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onLabelCardTap(); }
+          }}
+        >
+          <div className="cbs-label-card" onClick={(e) => e.stopPropagation()}>
+            <div className="cbs-label-head">
+              <span className="cbs-label-pharmacy">ร้านยาฟาร์มรู้</span>
+              <span className="cbs-label-rx">ฉลากยา</span>
+            </div>
+            <div className="cbs-label-drug">{labelCard.drugName}</div>
+            <div className="cbs-label-patient">{labelCard.patientLabel}</div>
+            <div className="cbs-label-rows">
+              {labelCard.entries.map((e, i) => (
+                <div key={i} className="cbs-label-row">
+                  <span className="cbs-label-row-h">{e.heading}</span>
+                  <span className="cbs-label-row-t">{e.text}</span>
+                </div>
+              ))}
+            </div>
+            <button type="button" className="cbs-label-close" onClick={onLabelCardTap}>
+              ติดฉลาก แล้วไปต่อ
+            </button>
           </div>
         </div>
       )}

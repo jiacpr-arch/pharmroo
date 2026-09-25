@@ -23,6 +23,8 @@ const CATEGORY_LABEL: Record<string, { label: string; className: string }> = {
   otc: { label: "จ่ายยา OTC", className: "bg-teal-100 text-teal-700" },
   interaction: { label: "Drug Interaction", className: "bg-rose-100 text-rose-700" },
   referral: { label: "ส่งต่อแพทย์", className: "bg-amber-100 text-amber-700" },
+  chronic: { label: "โรคเรื้อรัง · จ่ายยาหลายตัว", className: "bg-indigo-100 text-indigo-700" },
+  allergy: { label: "แพ้/ภูมิแพ้", className: "bg-sky-100 text-sky-700" },
 };
 
 const GRADE_STYLE: Record<string, string> = {

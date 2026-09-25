@@ -42,6 +42,7 @@ export function createInitialState(difficultyId: string = DEFAULT_DIFFICULTY): G
     referred: false,
     dispensed: 0,
     counseled: false,
+    labelDraft: [],
   };
 }
 
@@ -64,7 +65,15 @@ export function nextNode(state: GameState, story: StoryNode[]): StoryNode | null
 export function recordCorrect(state: GameState, option: ChoiceOption): void {
   state.timeline.push({ t: state.simTime, ok: true, text: option.label });
   state.simTime += 8;
+  if (option.onLabel) state.labelDraft.push(option.onLabel);
   state.queue.push(...(option.then || []));
+}
+
+/** ดึงฉลากที่สะสมไว้ออกมาแสดง แล้วเคลียร์ร่างทิ้ง — กันบรรทัดเก่าค้างข้ามฉลากถัดไป */
+export function takeLabelDraft(state: GameState): { heading: string; text: string }[] {
+  const draft = state.labelDraft;
+  state.labelDraft = [];
+  return draft;
 }
 
 export function recordWrong(state: GameState, option: ChoiceOption): void {

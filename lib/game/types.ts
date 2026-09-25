@@ -56,17 +56,38 @@ export interface ChoiceOption {
   then?: StoryNode[];
   /** ใส่โดย engine เมื่อหมดเวลา ไม่ได้มาจากข้อมูลโจทย์ */
   timeout?: boolean;
+  /**
+   * เฉพาะตัวเลือกถูกของคำถามเขียนฉลากยา — บรรทัดที่จะไปโผล่บนฉลากจริง
+   * เมื่อเลือกถูก engine จะเก็บเข้า state.labelDraft ให้ node แบบ labelPreview
+   * นำไปแสดงผลรวมทีเดียว
+   */
+  onLabel?: { heading: string; text: string };
 }
 
 export interface ChoiceNode {
-  choice: { q: string; options: ChoiceOption[] };
+  choice: {
+    q: string;
+    options: ChoiceOption[];
+    /** true = แสดงตัวเลือกเป็น "ชั้นยา" (grid หลายตัว) แทนปุ่มเรียงแนวตั้งปกติ — ใช้กับคำถามเลือกยาที่อยากให้มีตัวหลอกเยอะๆ เหมือนยืนหน้าชั้นจริง */
+    shelf?: boolean;
+  };
+}
+
+/** สรุปฉลากยาที่ผู้เล่นเขียนไว้ (จาก onLabel ของตัวเลือกที่ตอบถูกก่อนหน้า) */
+export interface LabelPreviewNode {
+  labelPreview: {
+    /** ชื่อยา/ความแรงที่โชว์บนหัวฉลาก */
+    drugName: string;
+    /** บรรทัดผู้ป่วย/ข้อบ่งใช้ที่โชว์ใต้ชื่อยา */
+    patientLabel: string;
+  };
 }
 
 export interface EndNode {
   end: true;
 }
 
-export type StoryNode = SayNode | InterNode | SkipNode | ChoiceNode | EndNode;
+export type StoryNode = SayNode | InterNode | SkipNode | ChoiceNode | LabelPreviewNode | EndNode;
 
 export interface GameScenario {
   slug: string;
@@ -100,6 +121,8 @@ export interface GameState {
   referred: boolean;
   dispensed: number;
   counseled: boolean;
+  /** บรรทัดฉลากยาที่สะสมไว้จากตัวเลือกถูกของคำถามเขียนฉลาก รอ labelPreview นำไปแสดง */
+  labelDraft: { heading: string; text: string }[];
 }
 
 export interface TextSegment {
@@ -129,6 +152,10 @@ export function isValidScenario(x: unknown): x is GameScenario {
     if (node.end === true) return true;
     if (typeof node.inter === "string") return true;
     if (typeof node.skip === "string") return typeof node.t === "number";
+    if (node.labelPreview && typeof node.labelPreview === "object") {
+      const lp = node.labelPreview as Record<string, unknown>;
+      return typeof lp.drugName === "string" && typeof lp.patientLabel === "string";
+    }
     if (node.say && typeof node.say === "object") {
       const say = node.say as Record<string, unknown>;
       return typeof say.who === "string" && typeof say.text === "string";
