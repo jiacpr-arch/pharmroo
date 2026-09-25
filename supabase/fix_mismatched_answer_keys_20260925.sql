@@ -12,7 +12,74 @@
 
 begin;
 
--- 1) Re-key: set correct_answer, sync is_correct flags and the summary line.
+-- 0) Backup the touched rows so this can be rolled back.
+create table if not exists mcq_questions_backup_20260925 as
+  select * from mcq_questions where id in (
+    '05cd984afe04097695604fd80317832e',
+    '0ccbaf92c97a535a5bf96987961380ed',
+    '1c7bca7b28a72a91b57e3aba271e0675',
+    '1e2a1a3902b23de1141b37016ced8cde',
+    '2bb7fddefb2c2544afc252f141135f94',
+    '2ed5408bf0b09d0cd98b45a16f742daa',
+    '319d9055ab5bf53127d1f932a7aeb634',
+    '32020b3d6a55f1d2b14af0a066019a03',
+    '35797415e2ec85853d1e2de576c4df0a',
+    '3a191d85db0f11b3871d6c1d12c1e5fa',
+    '3af8c9eca27ddf5c2e111341a8eb9313',
+    '3f31d23e2ec00fcf6f4a42b834254921',
+    '46a6dbaab5c6c8f91f5d84958fdeae38',
+    '529a86fadf34f226d87a644f28855949',
+    '54e0a6df1e5d2652eb15b88e29ed4393',
+    '5e00b82a3fe450bbaf86a97e6804ce45',
+    '63a086fc2ab9b98a18b043257727f6dc',
+    '7907d12f7b3aeb1a6a5dc0c9129e307e',
+    '8390075b91e8a6d083ff9b946f209558',
+    '8cbe8552f544eb3da8c337999043523c',
+    '8cffca3273382760f566f0e1768e5779',
+    '9ff6bc8632d887c7cee12eff6d589a33',
+    'abaed991957572ab1edeaafc88828d7c',
+    'c4e6a56256f0f137e13e3599a2d49bb5',
+    'c73098552c8808345dd418eabe8d9832',
+    'c8563637ee890bc37749910ba25d8359',
+    'cf4d0e757275d275e19918887849872e',
+    'dab2d2783b7589602ece6212b8c36d2e',
+    'ed06f37b0d01f86e1aa141e45820c0eb',
+    'edc47ad3264b3fdf4d7c26220196c8fb',
+    'ef935501bdddcd96406923f6a15d0a86',
+    'f603665baebb2a71afe24a173703e50d',
+    'fd393eae9d5cf674559f2ed3deae7dbb',
+    'f768277ad9259e831af380e002b71ebd',
+    '066dda36cea615d0bf25c02b2f719f36',
+    '08d09e5db463d7655ca5ecc736cdf532',
+    '12da9c4149a4d850fc6898ea10e7adb3',
+    '449b5d56b70301ee19accbc6842cb810',
+    'c74bc6723ddb607e1e67ccd577513a63');
+
+alter table mcq_questions_backup_20260925 enable row level security;
+revoke all on mcq_questions_backup_20260925 from anon, authenticated;
+
+-- 1) Choice text whose parenthetical reasoning contradicted the (correct) value.
+update mcq_questions set choices = (
+  select jsonb_agg(case c->>'label'
+    when 'A' then jsonb_build_object('label','A','text','F = 37.5% (คำนวณจาก (AUC oral / AUC IV) × (Dose IV / Dose oral) = (150/200) × (50/100))')
+    when 'B' then jsonb_build_object('label','B','text','F = 75% (คำนวณจาก AUC oral / AUC IV โดยไม่ปรับ dose)')
+    else c end order by c->>'label') from jsonb_array_elements(choices) c)
+where id = '319d9055ab5bf53127d1f932a7aeb634';
+
+update mcq_questions set choices = (
+  select jsonb_agg(case c->>'label'
+    when 'A' then jsonb_build_object('label','A','text','F = 40% (คำนวณจาก [AUC(oral)/Dose(oral)] ÷ [AUC(IV)/Dose(IV)] × 100)')
+    when 'B' then jsonb_build_object('label','B','text','F = 80% (คำนวณจาก AUC(oral)/AUC(IV) โดยตรงโดยไม่ปรับขนาดยา)')
+    else c end order by c->>'label') from jsonb_array_elements(choices) c)
+where id = '8cffca3273382760f566f0e1768e5779';
+
+update mcq_questions set choices = (
+  select jsonb_agg(case c->>'label'
+    when 'B' then jsonb_build_object('label','B','text','เริ่ม apixaban 2.5 mg BID เพราะผู้ป่วยมีเกณฑ์ dose reduction ≥2 ข้อ (SCr ≥1.5 mg/dL + น้ำหนัก ≤60 กก.) จึงต้องใช้ขนาดต่ำ')
+    else c end order by c->>'label') from jsonb_array_elements(choices) c)
+where id = '2bb7fddefb2c2544afc252f141135f94';
+
+-- 2) Re-key: set correct_answer, sync is_correct flags and the summary line.
 with fix(id, ans) as (values
   ('05cd984afe04097695604fd80317832e','A'), -- PPV 90/150=60%, NPV 810/850=95.3%
   ('0ccbaf92c97a535a5bf96987961380ed','B'), -- BSA √(160×58/3600)=1.60 → 96 mg
@@ -24,7 +91,7 @@ with fix(id, ans) as (values
   ('32020b3d6a55f1d2b14af0a066019a03','D'), -- 308 + 80×2 = 468 mOsm/L
   ('35797415e2ec85853d1e2de576c4df0a','D'), -- RR 2.5, NNH 1/0.012 ≈ 83, balanced policy
   ('3a191d85db0f11b3871d6c1d12c1e5fa','A'), -- 45 L × 6 / 513 = 527 mL
-  ('3af8c9ec2e111341a8eb9313',             'A'), -- placeholder, replaced below
+  ('3af8c9eca27ddf5c2e111341a8eb9313','A'), -- AUC = 0.4 × 200 × (500/50) = 800
   ('3f31d23e2ec00fcf6f4a42b834254921','A'), -- (400/100)/(500/50) = 40%
   ('46a6dbaab5c6c8f91f5d84958fdeae38','A'), -- NE 70 kg → 26.25 mL/hr = 26.25 gtt/min
   ('529a86fadf34f226d87a644f28855949','D'), -- 5×70×60/800 = 26.25 mL/hr
@@ -62,38 +129,17 @@ set correct_answer = f.ans,
 from fix f
 where q.id = f.id;
 
--- 2) Choice text whose parenthetical reasoning contradicted the (correct) value.
-update mcq_questions set choices = (
-  select jsonb_agg(case c->>'label'
-    when 'A' then jsonb_build_object('label','A','text','F = 37.5% (คำนวณจาก (AUC oral / AUC IV) × (Dose IV / Dose oral) = (150/200) × (50/100))')
-    when 'B' then jsonb_build_object('label','B','text','F = 75% (คำนวณจาก AUC oral / AUC IV โดยไม่ปรับ dose)')
-    else c end order by c->>'label') from jsonb_array_elements(choices) c)
-where id = '319d9055ab5bf53127d1f932a7aeb634';
-
-update mcq_questions set choices = (
-  select jsonb_agg(case c->>'label'
-    when 'A' then jsonb_build_object('label','A','text','F = 40% (คำนวณจาก [AUC(oral)/Dose(oral)] ÷ [AUC(IV)/Dose(IV)] × 100)')
-    when 'B' then jsonb_build_object('label','B','text','F = 80% (คำนวณจาก AUC(oral)/AUC(IV) โดยตรงโดยไม่ปรับขนาดยา)')
-    else c end order by c->>'label') from jsonb_array_elements(choices) c)
-where id = '8cffca3273382760f566f0e1768e5779';
-
-update mcq_questions set choices = (
-  select jsonb_agg(case c->>'label'
-    when 'B' then jsonb_build_object('label','B','text','เริ่ม apixaban 2.5 mg BID เพราะผู้ป่วยมีเกณฑ์ dose reduction ≥2 ข้อ (SCr ≥1.5 mg/dL + น้ำหนัก ≤60 กก.) จึงต้องใช้ขนาดต่ำ')
-    else c end order by c->>'label') from jsonb_array_elements(choices) c)
-where id = '2bb7fddefb2c2544afc252f141135f94';
-
 -- 3) Rewrite the explanation where it argued for the wrong answer.
 update mcq_questions set detailed_explanation = jsonb_build_object(
   'reason', E'1) ความเข้มข้น = 4,000 mcg ÷ 250 mL = 16 mcg/mL\n2) Dose = 0.1 mcg/kg/min × 70 kg = 7 mcg/min = 420 mcg/hr\n3) อัตรา = 420 ÷ 16 = 26.25 mL/hr',
   'summary', 'คำตอบที่ถูกต้อง: A — 26.25 mL/hr',
   'key_takeaway', 'Rate (mL/hr) = Dose (mcg/kg/min) × น้ำหนัก (kg) × 60 ÷ ความเข้มข้น (mcg/mL)',
   'choices', jsonb_build_array(
-    jsonb_build_object('label','A','text','26.25 mL/hr','is_correct',true,'explanation','ถูกต้อง: 7 mcg/min × 60 ÷ 16 mcg/mL = 26.25 mL/hr'),
-    jsonb_build_object('label','B','text','10.5 mL/hr','is_correct',false,'explanation','ตัวเลขนี้ไม่ได้มาจากสูตรที่ถูกต้อง — ได้ต่ำกว่าความจริง 2.5 เท่า'),
-    jsonb_build_object('label','C','text','6.3 mL/hr','is_correct',false,'explanation','ผิด — ไม่ได้คูณน้ำหนักผู้ป่วยให้ถูกต้อง'),
-    jsonb_build_object('label','D','text','10.5 mL/hr + แนะนำ 8 mg/250 mL','is_correct',false,'explanation','อัตรา 10.5 mL/hr ผิด (ที่ 16 mcg/mL ต้องเป็น 26.25 mL/hr) แม้การเพิ่มความเข้มข้นเพื่อจำกัด fluid จะทำได้ในทางปฏิบัติ'),
-    jsonb_build_object('label','E','text','21 mL/hr','is_correct',false,'explanation','ผิด — 21 mL/hr จะได้เมื่อความเข้มข้นเป็น 20 mcg/mL ไม่ใช่ 16 mcg/mL')))
+    jsonb_build_object('label','A','text',(select c->>'text' from jsonb_array_elements(choices) c where c->>'label'='A'),'is_correct',true,'explanation','ถูกต้อง: 7 mcg/min × 60 ÷ 16 mcg/mL = 26.25 mL/hr'),
+    jsonb_build_object('label','B','text',(select c->>'text' from jsonb_array_elements(choices) c where c->>'label'='B'),'is_correct',false,'explanation','ตัวเลขนี้ไม่ได้มาจากสูตรที่ถูกต้อง — ได้ต่ำกว่าความจริง 2.5 เท่า'),
+    jsonb_build_object('label','C','text',(select c->>'text' from jsonb_array_elements(choices) c where c->>'label'='C'),'is_correct',false,'explanation','ผิด — ไม่ได้คูณน้ำหนักผู้ป่วยให้ถูกต้อง'),
+    jsonb_build_object('label','D','text',(select c->>'text' from jsonb_array_elements(choices) c where c->>'label'='D'),'is_correct',false,'explanation','อัตรา 10.5 mL/hr ผิด (ที่ 16 mcg/mL ต้องเป็น 26.25 mL/hr) แม้การเพิ่มความเข้มข้นเพื่อจำกัด fluid จะทำได้ในทางปฏิบัติ'),
+    jsonb_build_object('label','E','text',(select c->>'text' from jsonb_array_elements(choices) c where c->>'label'='E'),'is_correct',false,'explanation','ผิด — 21 mL/hr จะได้เมื่อความเข้มข้นเป็น 20 mcg/mL ไม่ใช่ 16 mcg/mL')))
 where id = 'fd393eae9d5cf674559f2ed3deae7dbb';
 
 update mcq_questions set detailed_explanation = jsonb_build_object(
