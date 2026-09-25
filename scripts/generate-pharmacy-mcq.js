@@ -190,6 +190,26 @@ const SUBJECTS = [
       "Clinical evidence สมุนไพรไทย: systematic review, RCT data",
     ],
   },
+  {
+    name: "PharmCare",
+    name_th: "บริบาลเภสัชกรรม PC1",
+    exam_type: "PLE-PC",
+    batch_size: 10,
+    topic_areas: [
+      "Cardiorenal syndrome: HFrEF/HFpEF ร่วมกับ CKD — การปรับยา GDMT และติดตาม volume/renal function",
+      "Acute coronary syndrome & atrial fibrillation: antiplatelet, anticoagulation, rate/rhythm control ในผู้ป่วยโรคร่วม",
+      "CKD & electrolyte emergency: hyperkalemia management, RAAS blockade monitoring, renal dose adjustment",
+      "Community-acquired infection: empiric antibiotic selection, PK/PD, de-escalation, renal/hepatic dosing",
+      "Asthma/COPD: stepwise therapy, inhaler technique, adherence และ exacerbation management",
+      "Rheumatologic therapy: methotrexate/DMARD monitoring, toxicity, drug interactions",
+      "Hepatic impairment: Child-Pugh-based drug selection และการปรับขนาดยา",
+      "Narrow therapeutic index drugs: lithium, digoxin, phenytoin — toxicity recognition และการจัดการ",
+      "Polypharmacy & geriatric medication review: deprescribing, fall risk, potentially inappropriate medications",
+      "Anaphylaxis & emergency drug therapy: epinephrine, resuscitation, patient education",
+      "Medication therapy management (MTM): comprehensive medication review, drug-related problems (DRP)",
+      "SOAP note documentation และ interprofessional collaboration ในการบริบาลผู้ป่วย",
+    ],
+  },
 ];
 
 // ============================================================
@@ -200,7 +220,7 @@ function sleep(ms) {
   return new Promise((r) => setTimeout(r, ms));
 }
 
-async function callClaude(prompt, maxTokens = 8000) {
+async function callClaude(prompt, maxTokens = 16000) {
   for (let attempt = 0; attempt < 3; attempt++) {
     try {
       const controller = new AbortController();
@@ -214,7 +234,7 @@ async function callClaude(prompt, maxTokens = 8000) {
           "anthropic-version": "2023-06-01",
         },
         body: JSON.stringify({
-          model: "claude-sonnet-4-6",
+          model: "claude-sonnet-5",
           max_tokens: maxTokens,
           messages: [{ role: "user", content: prompt }],
         }),
@@ -373,7 +393,7 @@ async function generateForSubject(subject, subjectId, targetCount) {
     process.stdout.write(`  Batch ${b + 1}/${numBatches} (${thisBatch} ข้อ)... `);
 
     const prompt = buildGenerationPrompt(subject, subject.topic_areas, thisBatch, b);
-    const text = await callClaude(prompt, 8000);
+    const text = await callClaude(prompt, 16000);
 
     if (!text) {
       console.log("FAIL (no response)");
@@ -432,7 +452,7 @@ async function main() {
   console.log("=".repeat(55));
   console.log("  PharmRoo — Generate Pharmacy MCQ Questions");
   console.log("=".repeat(55));
-  console.log(`  Model:    claude-sonnet-4-6`);
+  console.log(`  Model:    claude-sonnet-5`);
   console.log(`  Count:    ${COUNT_PER_SUBJECT} ข้อ/subject`);
   console.log(`  Exam:     ${EXAM_TYPE_FILTER}`);
   console.log(`  Dry run:  ${DRY_RUN}`);
