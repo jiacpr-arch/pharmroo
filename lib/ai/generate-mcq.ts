@@ -654,6 +654,31 @@ function parseQuestions(text: string): unknown[] | null {
   }
 }
 
+/**
+ * The model sometimes "self-corrects" inside the explanation (e.g. works out
+ * 26.25 mL/hr and flags choice A as correct) while leaving `correct_answer`
+ * on the original wrong letter. Reject any question whose explanation does
+ * not agree with its answer key.
+ */
+export function explanationMatchesAnswer(
+  correctAnswer: string,
+  detailed: unknown
+): boolean {
+  const de = detailed as { summary?: unknown; choices?: unknown } | null;
+  if (!de || !Array.isArray(de.choices)) return false;
+
+  const marked = (de.choices as { label?: unknown; is_correct?: unknown }[])
+    .filter((c) => c?.is_correct === true)
+    .map((c) => c.label);
+  if (marked.length !== 1 || marked[0] !== correctAnswer) return false;
+
+  if (typeof de.summary === "string") {
+    const m = de.summary.match(/คำตอบที่ถูกต้อง\s*[:：]?\s*(?:ข้อ\s*)?([A-E])\b/);
+    if (m && m[1] !== correctAnswer) return false;
+  }
+  return true;
+}
+
 // ─── Main export ───────────────────────────────────────────────────────────────
 
 /**
@@ -692,7 +717,7 @@ export async function generateMcqBatch(
       (item.choices as unknown[]).length === expectedChoices &&
       typeof item.correct_answer === "string" &&
       validAnswers.includes(item.correct_answer as string) &&
-      item.detailed_explanation
+      explanationMatchesAnswer(item.correct_answer as string, item.detailed_explanation)
     ) {
       questions.push({
         subject_id: subjectId,
