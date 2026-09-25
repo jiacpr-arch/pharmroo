@@ -15,7 +15,7 @@ export default async function Page(){
   <div className="mb-6 rounded-2xl border bg-gradient-to-r from-rose-50 to-white p-6">
    <div className="flex items-center gap-2 text-2xl font-bold"><HeartPulse className="h-7 w-7 text-rose-500"/>PC1 บริบาลเภสัชกรรม</div>
    <p className="mt-2 text-sm text-muted-foreground">{PC1_CASE_COUNT} สถานการณ์ · {PC1_ALL.length} ข้อ · Medium–Hard</p>
-   <p className="mt-1 text-xs text-muted-foreground">Cardiorenal · ACS · AF · Asthma · Infection · CKD/Electrolyte · Rheumatology · Hepatology · Warfarin/Digoxin · TB/HIV · Vancomycin · Phenytoin · DKA · Pediatric AOM · STEMI/DAPT · PE/Heparin/HIT · Aortic dissection · HFrEF GDMT · Dyslipidemia/SAMS · VTE in pregnancy</p>
+   <p className="mt-1 text-xs text-muted-foreground">Cardiorenal · ACS · AF · Asthma · Infection · CKD/Electrolyte · Rheumatology · Hepatology · Warfarin/Digoxin · TB/HIV · Vancomycin · Phenytoin · DKA · Pediatric AOM · STEMI/DAPT · PE/Heparin/HIT · Aortic dissection · HFrEF GDMT · Dyslipidemia/SAMS · VTE in pregnancy · Septic shock/Aminoglycoside · Meningitis</p>
   </div>
   <McqPractice questions={gated.questions} initialCreditBalance={gated.creditBalance} playAllowance={allowance}/>
  </div>
