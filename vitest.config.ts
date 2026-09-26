@@ -9,6 +9,7 @@ export default defineConfig({
       "lib/game/**/*.test.ts",
       "lib/line-bonus.test.ts",
       "lib/line.test.ts",
+      "lib/ai/generate-mcq.test.ts",
       "lib/daily-mcq-line.test.ts",
       "lib/bot-intent.test.ts",
       "lib/line-links.test.ts",
