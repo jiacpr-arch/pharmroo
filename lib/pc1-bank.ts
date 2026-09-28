@@ -5,9 +5,10 @@ import { PC1_DAY02 } from "@/lib/pc1-day02";
 import { PC1_DAY03 } from "@/lib/pc1-day03";
 import { PC1_DAY04 } from "@/lib/pc1-day04";
 import { PC1_DAY05 } from "@/lib/pc1-day05";
+import { PC1_DAY06 } from "@/lib/pc1-day06";
 
 // ชุด PC1 ทั้งหมดเรียงต่อกัน (เพิ่มชุดรายวันใหม่ต่อท้าย array นี้)
-const parts: McqQuestion[] = [...PC1_PILOT_032, ...PC1_SCENARIO_001, ...PC1_DAY02, ...PC1_DAY03, ...PC1_DAY04, ...PC1_DAY05];
+const parts: McqQuestion[] = [...PC1_PILOT_032, ...PC1_SCENARIO_001, ...PC1_DAY02, ...PC1_DAY03, ...PC1_DAY04, ...PC1_DAY05, ...PC1_DAY06];
 
 export const PC1_ALL: McqQuestion[] = parts.map((q) =>
   q.mcq_subjects ? { ...q, mcq_subjects: { ...q.mcq_subjects, question_count: parts.length } } : q
