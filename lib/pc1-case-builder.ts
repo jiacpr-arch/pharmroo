@@ -10,17 +10,18 @@ const POS = [3, 0, 4, 1, 2, 0, 3, 1, 4];
 
 export function buildPc1Cases(
   cases: Pc1Case[],
-  opts: { idPrefix: string; caseOffset: number; qOffset: number; createdAt: string }
+  opts: { idPrefix: string; caseOffset: number; qOffset: number; createdAt: string; posShift?: number }
 ): McqQuestion[] {
   const total = cases.reduce((s, c) => s + c.qs.length, 0);
   return cases.flatMap((c, ci) =>
     c.qs.map((q, qi) => {
       const n = cases.slice(0, ci).reduce((s, x) => s + x.qs.length, 0) + qi + 1;
       // ตัวเลือกเชิงตัวเลขคงลำดับจากน้อยไปมาก; ตัวเลือกข้อความสลับตำแหน่งคำตอบเพื่อกระจาย key
+      // posShift (ใช้เลขวัน) ทำให้แต่ละวันได้ลำดับ key ต่างกัน; ชุดเก่าไม่ส่ง = 0 เพื่อคงคำตอบเดิม
       const numeric = q.o.every((t) => /^[\d.,]+ /.test(t));
       const order = q.o.map((_, j) => j).filter((j) => j !== q.a);
       if (numeric) order.splice(q.a, 0, q.a);
-      else order.splice(POS[(n - 1) % POS.length], 0, q.a);
+      else order.splice(POS[(n - 1 + (opts.posShift ?? 0)) % POS.length], 0, q.a);
       const o = order.map((j) => q.o[j]);
       const w = order.map((j) => q.w[j]);
       const ai = order.indexOf(q.a);

@@ -232,5 +232,6 @@ export const PC1_DAY07: McqQuestion[] = buildPc1Cases(CASES, {
   idPrefix: "pc1d07q",
   caseOffset: 24,
   qOffset: 117,
+  posShift: 7,
   createdAt: "2026-09-29 09:00:00",
 });
