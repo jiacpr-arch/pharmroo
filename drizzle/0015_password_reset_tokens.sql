@@ -10,3 +10,6 @@ CREATE TABLE IF NOT EXISTS password_reset_tokens (
 );
 
 CREATE INDEX IF NOT EXISTS password_reset_tokens_user_id_idx ON password_reset_tokens(user_id);
+
+-- Match the other tables: RLS on with no policies (the app connects directly via DATABASE_URL; PostgREST gets no access).
+ALTER TABLE password_reset_tokens ENABLE ROW LEVEL SECURITY;
