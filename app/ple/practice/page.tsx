@@ -13,6 +13,7 @@ import { IP1_SET2_DAY04 } from "@/lib/ip1-set2-day04";
 import { IP1_SET2_DAY05 } from "@/lib/ip1-set2-day05";
 import { IP1_SET2_DAY06 } from "@/lib/ip1-set2-day06";
 import { IP1_SET2_DAY07 } from "@/lib/ip1-set2-day07";
+import { PHCP1_DAY01 } from "@/lib/phcp1-day01";
 import { Badge } from "@/components/ui/badge";
 import ExamNews, { ExamNewsSkeleton } from "@/components/ExamNews";
 import Link from "next/link";
@@ -48,7 +49,9 @@ async function PracticeContent({
   const selectedQuestions =
     track === "ip1"
       ? [...IP1_PILOT_050, ...IP1_SET2_DAY01, ...IP1_SET2_DAY02, ...IP1_SET2_DAY03, ...IP1_SET2_DAY04, ...IP1_SET2_DAY05, ...IP1_SET2_DAY06, ...IP1_SET2_DAY07]
-      : rawQuestions;
+      : track === "phcp1"
+        ? PHCP1_DAY01
+        : rawQuestions;
 
   const [{ questions, creditBalance }, playAllowance] = await Promise.all([
     gateQuestionsForSession(session, selectedQuestions),
@@ -86,12 +89,13 @@ async function PracticeContent({
             <div>
               <div className="flex items-center gap-2 text-xl font-bold"><ShieldCheck className="h-6 w-6 text-emerald-600" /> PHCP1 — คุ้มครองผู้บริโภคด้านยาและสุขภาพ</div>
               <p className="mt-2 text-sm text-muted-foreground">Public Health & Consumer Protection · 120 ข้อ</p>
+              <p className="mt-1 text-xs text-muted-foreground">+ Daily (ทยอยอัปเดต) · ตอนนี้มี {PHCP1_DAY01.length} ข้อ — Day 1: กฎหมายยา/ยาเสพติด/เครื่องสำอาง/อาหาร · ความรับผิดต่อสินค้า · ระบาดวิทยา · RDU</p>
               <Link href="/sets?exam=PLE-PHCP1" className="mt-5 inline-flex rounded-xl bg-brand px-5 py-3 text-sm font-bold text-white">ดูชุดข้อสอบ PHCP1 →</Link>
             </div>
           )}
         </div>
       )}
-      {track === "ip1" && (
+      {(track === "ip1" || track === "phcp1") && (
         <div className="mt-6">
           <McqPractice
             questions={questions}
