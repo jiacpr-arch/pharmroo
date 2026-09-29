@@ -1,26 +1,14 @@
 import type { McqQuestion } from "@/lib/types-mcq";
+import { buildPhcp1Day, type Phcp1Draft } from "@/lib/phcp1-builder";
 
 // PHCP1 Daily — Day 1 (20 ข้อ) · กฎหมายยา/วัตถุเสพติด/เครื่องสำอาง/อาหาร, ความปลอดภัยผู้บริโภค,
 // ระบาดวิทยาและสาธารณสุขเบื้องต้น, การใช้ยาอย่างสมเหตุผล
 // ข้อสอบต้นฉบับเขียนใหม่ ไม่ได้คัดลอกจากข้อสอบจริง — ควรให้ผู้เชี่ยวชาญตรวจทานกฎหมาย/ประกาศล่าสุดก่อนเผยแพร่เชิงพาณิชย์
 
-type Draft = {
-  p: string;
-  o: [string, string, string, string, string]; // คำตอบที่ถูกอยู่ตัวแรก
-  w: [string, string, string, string]; // เหตุผลของตัวเลือกผิด เรียงตาม o[1..4]
-  r: string;
-  k: string;
-  ref: string;
-  difficulty: "medium" | "hard";
-  c?: string[];
-};
-
-const labels = ["A", "B", "C", "D", "E"] as const;
-
 // กระจายตำแหน่งคำตอบให้แต่ละตัวเลือกได้ 4 ข้อจาก 20 ข้อ
 const POS = [2, 0, 4, 1, 3, 3, 1, 0, 2, 4, 4, 2, 1, 3, 0, 0, 3, 4, 1, 2];
 
-const D: Draft[] = [
+const D: Phcp1Draft[] = [
   {
     p: "ผู้ป่วยขอซื้อยาอันตรายที่ร้านขายยาแผนปัจจุบัน (ขย.1) ข้อใดถูกต้องตามพระราชบัญญัติยา พ.ศ. 2510?",
     o: [
@@ -427,50 +415,4 @@ const D: Draft[] = [
   },
 ];
 
-function build(d: Draft, i: number): McqQuestion {
-  const n = i + 1;
-  const pos = POS[i];
-  const wrong = d.o.slice(1);
-  const wrongW = d.w;
-  const order = [...wrong.map((_, j) => j)];
-  const opts: { text: string; ok: boolean; why: string }[] = order.map((j) => ({ text: wrong[j], ok: false, why: wrongW[j] }));
-  opts.splice(pos, 0, { text: d.o[0], ok: true, why: "ถูก" });
-  const ans = labels[pos];
-  return {
-    id: `phcp1d01q${String(n).padStart(3, "0")}`,
-    subject_id: "phcp1",
-    exam_type: "PLE-PC",
-    exam_source: "PharmRU PHCP1 Daily",
-    exam_day: null,
-    question_number: n,
-    scenario: d.p,
-    image_url: null,
-    choices: opts.map((o, j) => ({ label: labels[j], text: o.text })),
-    correct_answer: ans,
-    explanation: `${d.r}\n\nReference: ${d.ref}`,
-    detailed_explanation: {
-      summary: `เฉลย ${ans}: ${d.o[0]}`,
-      reason: d.r,
-      choices: opts.map((o, j) => ({ label: labels[j], text: o.text, is_correct: o.ok, explanation: o.why })),
-      key_takeaway: d.k,
-      ...(d.c ? { calculation_steps: d.c } : {}),
-    },
-    difficulty: d.difficulty,
-    is_ai_enhanced: true,
-    ai_notes:
-      "PHCP1 Daily Day 1 — original item; legal content must be verified against the latest Thai regulations/announcements before commercial publication.",
-    status: "review",
-    created_at: "2026-09-29 12:00:00",
-    mcq_subjects: {
-      id: "phcp1",
-      name: "PHCP1",
-      name_th: "คุ้มครองผู้บริโภคด้านยาและสุขภาพ PHCP1",
-      icon: "🛡️",
-      exam_type: "PLE-PC",
-      question_count: D.length,
-      created_at: "2026-09-29 12:00:00",
-    },
-  };
-}
-
-export const PHCP1_DAY01: McqQuestion[] = D.map(build);
+export const PHCP1_DAY01: McqQuestion[] = buildPhcp1Day(D, { day: 1, pos: POS, createdAt: "2026-09-29 12:00:00" });
