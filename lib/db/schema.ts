@@ -769,3 +769,19 @@ export const gameRuns = pgTable("game_runs", {
     .notNull()
     .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
 });
+
+// ========================================
+// 28. Password Reset Tokens — ลืมรหัสผ่าน (เก็บเฉพาะ hash ของ token)
+// ========================================
+export const passwordResetTokens = pgTable("password_reset_tokens", {
+  id: text("id").primaryKey().default(sql`generate_hex_id()`),
+  user_id: text("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
+  token_hash: text("token_hash").notNull().unique(),
+  expires_at: text("expires_at").notNull(),
+  used_at: text("used_at"),
+  created_at: text("created_at")
+    .notNull()
+    .default(sql`to_char(now(), 'YYYY-MM-DD HH24:MI:SS')`),
+});

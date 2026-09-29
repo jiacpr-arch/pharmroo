@@ -11,6 +11,8 @@ export default auth((req) => {
   const skipPaths = [
     "/login",
     "/register",
+    "/forgot-password",
+    "/reset-password",
     "/onboarding",
     "/auth",
     "/api",
