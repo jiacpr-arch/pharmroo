@@ -31,3 +31,19 @@ export async function getExistingTitles() {
     .from(blogPosts)
     .then((rows) => rows.map((r) => r.title));
 }
+
+// Fetch only index metadata, not full article bodies.
+export async function getBlogIndexPosts() {
+  return db
+    .select({
+      id: blogPosts.id,
+      slug: blogPosts.slug,
+      title: blogPosts.title,
+      description: blogPosts.description,
+      category: blogPosts.category,
+      cover_image: blogPosts.cover_image,
+      reading_time: blogPosts.reading_time,
+    })
+    .from(blogPosts)
+    .orderBy(desc(blogPosts.published_at));
+}
