@@ -110,9 +110,8 @@ export const mcqAttempts = pgTable("mcq_attempts", {
     .primaryKey()
     .default(sql`generate_hex_id()`),
   user_id: text("user_id").references(() => users.id, { onDelete: "cascade" }),
-  question_id: text("question_id").references(() => mcqQuestions.id, {
-    onDelete: "cascade",
-  }),
+  // No FK: static PLE banks (lib/pc1-bank.ts, lib/ip1-*.ts) use ids that aren't in mcq_questions
+  question_id: text("question_id"),
   selected_answer: text("selected_answer").notNull(),
   is_correct: boolean("is_correct").notNull(),
   time_spent_seconds: integer("time_spent_seconds"),
