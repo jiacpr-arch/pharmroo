@@ -2,7 +2,8 @@ import type { McqQuestion } from "@/lib/types-mcq";
 
 // ตัวสร้างข้อสอบ PC1 แบบ "สถานการณ์" (1 เคส หลายข้อ) ใช้ร่วมกันทุกชุดที่ต่อท้าย PC1 หลัก
 // o = ตัวเลือก 5 ข้อ, a = index คำตอบ, w = เหตุผลรายตัวเลือก, c = ขั้นตอนคำนวณ (ถ้ามี), k = key takeaway
-export type Pc1Q = { p: string; o: string[]; a: number; r: string; w: string[]; c?: string[]; k: string };
+// d = ระดับความยาก (ไม่ระบุ = hard ตามชุดเดิม)
+export type Pc1Q = { p: string; o: string[]; a: number; r: string; w: string[]; c?: string[]; k: string; d?: "easy" | "medium" | "hard" };
 export type Pc1Case = { title: string; base: string; ref: string; qs: Pc1Q[] };
 
 const labels = ["A", "B", "C", "D", "E"];
@@ -45,7 +46,7 @@ export function buildPc1Cases(
           key_takeaway: q.k,
           ...(q.c ? { calculation_steps: q.c } : {}),
         },
-        difficulty: "hard",
+        difficulty: q.d ?? "hard",
         is_ai_enhanced: true,
         ai_notes: "PC1 scenario-style (1 case, multiple items) modeled on past-exam format; clinical/editorial verification required before commercial publication.",
         status: "active",
