@@ -14,10 +14,12 @@ async function sendEmail({
   to,
   subject,
   html,
+  text,
 }: {
   to: string;
   subject: string;
   html: string;
+  text?: string;
 }): Promise<{ id: string | null }> {
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) {
@@ -31,6 +33,7 @@ async function sendEmail({
     to,
     subject,
     html,
+    ...(text ? { text } : {}),
   });
 
   if (error) {
@@ -81,11 +84,10 @@ function passwordResetEmailHtml(name: string, resetUrl: string): string {
   const greeting = name ? `สวัสดีคุณ ${name}` : "สวัสดีค่ะ";
   return `
 <div style="font-family:'Sarabun',Arial,sans-serif;max-width:560px;margin:0 auto;padding:24px;color:#1f2937;line-height:1.7">
-  <div style="text-align:center;font-size:40px">🔑</div>
-  <h1 style="text-align:center;font-size:22px;margin:8px 0 4px">ตั้งรหัสผ่านใหม่</h1>
+  <h1 style="font-size:20px;margin:0 0 12px">ตั้งรหัสผ่านใหม่ — ฟาร์มรู้</h1>
   <p>${greeting}</p>
-  <p>เราได้รับคำขอตั้งรหัสผ่านใหม่สำหรับบัญชีฟาร์มรู้ของคุณ กดปุ่มด้านล่างเพื่อตั้งรหัสผ่านใหม่
-  ลิงก์นี้ใช้ได้ภายใน 1 ชั่วโมง และใช้ได้เพียงครั้งเดียว</p>
+  <p>มีการขอตั้งรหัสผ่านใหม่สำหรับบัญชีฟาร์มรู้ (pharmru.com) ที่ใช้อีเมลนี้
+  กดปุ่มด้านล่างเพื่อตั้งรหัสผ่านใหม่ ลิงก์ใช้ได้ภายใน 1 ชั่วโมง และใช้ได้เพียงครั้งเดียว</p>
   <p style="text-align:center;margin:28px 0">
     <a href="${resetUrl}"
        style="display:inline-block;background:#16a34a;color:#fff;text-decoration:none;
@@ -93,12 +95,29 @@ function passwordResetEmailHtml(name: string, resetUrl: string): string {
       ตั้งรหัสผ่านใหม่
     </a>
   </p>
+  <p style="font-size:14px">หากกดปุ่มไม่ได้ ให้คัดลอกลิงก์นี้ไปวางในเบราว์เซอร์:<br />
+  <a href="${resetUrl}" style="color:#16a34a;word-break:break-all">${resetUrl}</a></p>
   <p style="color:#6b7280;font-size:14px">ถ้าคุณไม่ได้เป็นผู้ขอ สามารถเพิกเฉยอีเมลนี้ได้ รหัสผ่านเดิมจะไม่ถูกเปลี่ยนแปลง</p>
   <hr style="border:none;border-top:1px solid #e5e7eb;margin:24px 0" />
   <p style="color:#9ca3af;font-size:12px;text-align:center">
     ฟาร์มรู้ PharmRu — แพลตฟอร์มข้อสอบใบประกอบวิชาชีพเภสัชและพยาบาล
   </p>
 </div>`.trim();
+}
+
+function passwordResetEmailText(name: string, resetUrl: string): string {
+  return [
+    name ? `สวัสดีคุณ ${name}` : "สวัสดีค่ะ",
+    "",
+    "มีการขอตั้งรหัสผ่านใหม่สำหรับบัญชีฟาร์มรู้ (pharmru.com) ที่ใช้อีเมลนี้",
+    "เปิดลิงก์ด้านล่างเพื่อตั้งรหัสผ่านใหม่ (ใช้ได้ภายใน 1 ชั่วโมง และใช้ได้เพียงครั้งเดียว):",
+    "",
+    resetUrl,
+    "",
+    "ถ้าคุณไม่ได้เป็นผู้ขอ สามารถเพิกเฉยอีเมลนี้ได้ รหัสผ่านเดิมจะไม่ถูกเปลี่ยนแปลง",
+    "",
+    "ฟาร์มรู้ PharmRu",
+  ].join("\n");
 }
 
 /** Send the password-reset link email. */
@@ -111,5 +130,6 @@ export async function sendPasswordResetEmail(opts: {
     to: opts.email,
     subject: "ตั้งรหัสผ่านใหม่ — ฟาร์มรู้",
     html: passwordResetEmailHtml(opts.name ?? "", opts.resetUrl),
+    text: passwordResetEmailText(opts.name ?? "", opts.resetUrl),
   });
 }
