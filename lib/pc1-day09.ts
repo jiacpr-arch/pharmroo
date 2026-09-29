@@ -16,7 +16,7 @@ const CASES: Pc1Case[] = [
     qs: [
       {
         d: "easy",
-        p: "ยาที่ควรเพิ่มมากที่สุด โดยคำนึงถึงประวัติ MI และน้ำหนักตัว คือข้อใด?",
+        p: "ตามแนวทาง ADA Standards of Care และแนวทางเวชปฏิบัติสำหรับโรคเบาหวานของประเทศไทย ยาที่ควรเพิ่มมากที่สุด โดยคำนึงถึงประวัติ MI และน้ำหนักตัว คือข้อใด?",
         o: [
           "Pioglitazone 30 mg OD",
           "เพิ่ม glipizide เป็น 10 mg BID",
@@ -25,7 +25,7 @@ const CASES: Pc1Case[] = [
           "Acarbose 50 mg TID",
         ],
         a: 2,
-        r: "T2DM + established ASCVD → เลือกยาที่มีหลักฐานลด MACE (GLP-1 RA หรือ SGLT2i) โดยไม่ขึ้นกับ HbA1c; GLP-1 RA ยังช่วยลดน้ำหนักได้มาก เหมาะกับผู้ป่วยอ้วน",
+        r: "T2DM + established ASCVD → เลือกยาที่มีหลักฐานลด MACE (GLP-1 RA หรือ SGLT2i) โดยไม่ขึ้นกับ HbA1c หรือการได้ metformin. SGLT2i ก็เป็นทางเลือกที่มีหลักฐานด้าน CV เช่นกัน แต่ผู้ป่วยรายนี้อ้วน (BMI 33) และไม่มี HF/CKD ซึ่งเป็นข้อบ่งใช้เด่นของ SGLT2i → GLP-1 RA เหมาะกว่าเพราะลดน้ำหนักได้มากกว่า (ถ้ามี HFrEF หรือ CKD + albuminuria จะเลือก SGLT2i ก่อน)",
         w: [
           "ทำให้น้ำหนักขึ้น บวมน้ำ",
           "เพิ่ม hypoglycemia และน้ำหนัก ไม่มีประโยชน์ต่อ CV",
@@ -33,7 +33,7 @@ const CASES: Pc1Case[] = [
           "DPP-4i ไม่ลด CV events และ saxagliptin เพิ่ม HF hospitalization",
           "ลด HbA1c ได้น้อย ไม่มีหลักฐานด้าน CV",
         ],
-        k: "ASCVD → GLP-1 RA หรือ SGLT2i (มีหลักฐาน CV benefit); HF/CKD → SGLT2i",
+        k: "ASCVD → GLP-1 RA หรือ SGLT2i (มีหลักฐาน CV benefit); เน้นลดน้ำหนัก → GLP-1 RA; HF/CKD → SGLT2i",
       },
       {
         d: "easy",
