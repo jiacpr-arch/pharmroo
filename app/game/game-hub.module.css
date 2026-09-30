@@ -25,16 +25,16 @@
   color: #66887b;
 }
 .hero {
-  max-width: 1440px;
-  margin: auto;
+  width: 100%;
   display: grid;
-  grid-template-columns: 0.9fr 1.2fr;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.2fr);
   min-height: 530px;
   background: #edf3e7;
   overflow: hidden;
 }
 .heroCopy {
-  padding: 54px 35px 42px max(32px, calc((100vw - 1160px) / 2));
+  padding: 54px 35px 42px clamp(32px, 5vw, 96px);
+  min-width: 0;
   position: relative;
   z-index: 1;
 }
@@ -872,3 +872,4 @@
     scroll-behavior: auto !important;
   }
 }
+
