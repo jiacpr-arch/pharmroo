@@ -33,7 +33,10 @@
   overflow: hidden;
 }
 .heroCopy {
-  padding: 54px 35px 42px clamp(32px, 5vw, 96px);
+  width: 100%;
+  max-width: 480px;
+  justify-self: end;
+  padding: 54px 40px 42px 32px;
   min-width: 0;
   position: relative;
   z-index: 1;
@@ -169,14 +172,14 @@
   width: 42%;
   height: 62%;
   bottom: 28px;
-  left: 6%;
+  left: 2%;
   filter: drop-shadow(0 12px 14px #183f3c30);
 }
 .speech {
   position: absolute;
   z-index: 3;
   top: 23%;
-  left: 8%;
+  left: 4%;
   background: #fffef7;
   padding: 18px 22px;
   border-radius: 17px 17px 17px 3px;
@@ -680,6 +683,7 @@
     grid-template-columns: 1fr;
   }
   .heroCopy {
+    max-width: none;
     padding: 32px 24px 30px;
   }
   .eyebrow {
