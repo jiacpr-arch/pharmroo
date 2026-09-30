@@ -1,7 +1,7 @@
 import type { Pc1MockItem } from "@/lib/pc1-mock-builder";
 
 // PC1 Mock Set 2 — ข้อใหม่ชุดที่ 2: จิตเวช (10) + ระบบหายใจ (10)
-// แต่ละหมวด: ง่าย 3–5 · ปานกลาง 3–4 · ยาก 2–3 (หัวข้อไม่ซ้ำกับเซต 1)
+// ใช้ชื่อยา/รูปแบบยาที่มีใช้ในประเทศไทยเป็นหลัก และอธิบายเหตุผลเชิงลึกสำหรับเภสัชกร
 
 export const MOCK2_DAY02: Record<string, Pc1MockItem[]> = {
   psych: [
@@ -9,7 +9,7 @@ export const MOCK2_DAY02: Record<string, Pc1MockItem[]> = {
       title: "Schizophrenia: antipsychotic adverse effects and clozapine",
       base:
         "ชายไทยอายุ 24 ปี น้ำหนัก 68 kg วินิจฉัยโรคจิตเภทครั้งแรก มีหูแว่ว หลงผิดว่ามีคนปองร้าย ไม่มีโรคประจำตัว สูบบุหรี่วันละ 20 มวน",
-      ref: "APA Practice Guideline for the Treatment of Patients with Schizophrenia 2020; ADA/APA Consensus on Antipsychotic Drugs and Obesity/Diabetes; Maudsley Prescribing Guidelines",
+      ref: "APA Practice Guideline for the Treatment of Patients with Schizophrenia 2020; ADA/APA Consensus on Antipsychotic Drugs and Obesity/Diabetes; Maudsley Prescribing Guidelines 14th ed.",
       qs: [
         {
           d: "easy",
@@ -22,9 +22,19 @@ export const MOCK2_DAY02: Record<string, Pc1MockItem[]> = {
             "ระดับ TSH ทุก 3 เดือน",
           ],
           a: 0,
-          r: "Olanzapine (และ clozapine) ทำให้น้ำหนักขึ้นและเกิด metabolic syndrome สูงที่สุดในกลุ่ม SGA ต้องติดตามน้ำหนัก/BMI รอบเอว BP fasting glucose/HbA1c และไขมันที่ baseline, 12 สัปดาห์ และทุกปี (น้ำหนักทุกเดือนใน 3 เดือนแรก)",
-          w: ["ถูก", "ไม่จำเป็นในการใช้ทั่วไป", "ไม่เกี่ยวข้อง", "เป็นการติดตามของ clozapine", "ไม่ใช่การติดตามหลักของ olanzapine"],
-          k: "SGA (โดยเฉพาะ olanzapine, clozapine): ติดตาม metabolic — น้ำหนัก รอบเอว BP glucose lipid",
+          r:
+            "กลไกของ ADR: Olanzapine ต้าน H1 (เพิ่มความอยากอาหาร ง่วง) และ 5-HT2C (ลดการยับยั้งความอยากอาหาร) ทำให้น้ำหนักขึ้นมาก และยังทำให้เกิด insulin resistance และไขมันสูงโดยตรง อาจเกิดเบาหวานได้แม้น้ำหนักไม่ขึ้นมาก. ความเสี่ยง metabolic ของ SGA เรียงจากมากไปน้อย: clozapine ≈ olanzapine > quetiapine ≈ risperidone > aripiprazole ≈ ziprasidone ≈ lurasidone\n\n" +
+            "ตารางติดตาม (ADA/APA consensus): น้ำหนัก/BMI ที่ baseline, ทุกเดือนใน 3 เดือนแรก แล้วทุก 3 เดือน; รอบเอว ความดัน fasting glucose/HbA1c และไขมัน ที่ baseline, 12 สัปดาห์ แล้วทุกปี; ถามประวัติครอบครัวเรื่องเบาหวานและโรคหัวใจ\n\n" +
+            "การจัดการเมื่อพบปัญหา: ถ้าน้ำหนักขึ้น ≥5% ของ baseline ให้พิจารณาเปลี่ยนเป็นยาที่มีผล metabolic น้อย (aripiprazole) หรือเสริม metformin ร่วมกับการปรับพฤติกรรม\n\n" +
+            "ข้อควรรู้สำหรับเภสัชกร: ผู้ป่วยจิตเภทมีอายุขัยสั้นกว่าประชากรทั่วไป 15–20 ปี สาเหตุหลักคือโรคหัวใจและหลอดเลือด การติดตาม metabolic จึงสำคัญพอๆ กับการคุมอาการทางจิต; บุหรี่เร่งการทำลาย olanzapine (CYP1A2) ผู้ที่สูบบุหรี่อาจต้องการขนาดสูงกว่า",
+          w: [
+            "ถูก",
+            "ไม่จำเป็นในการใช้ทั่วไป ตรวจเฉพาะเมื่อสงสัย adherence หรือพิษ",
+            "Olanzapine ไม่มีผลต่อ INR",
+            "เป็นการติดตามของ clozapine (agranulocytosis)",
+            "ไม่ใช่การติดตามหลักของ olanzapine",
+          ],
+          k: "SGA (โดยเฉพาะ olanzapine, clozapine): ติดตาม metabolic — น้ำหนัก รอบเอว BP glucose lipid ที่ baseline, 12 สัปดาห์ แล้วทุกปี",
         },
         {
           d: "medium",
@@ -37,9 +47,19 @@ export const MOCK2_DAY02: Record<string, Pc1MockItem[]> = {
             "เพิ่ม metoclopramide",
           ],
           a: 0,
-          r: "Risperidone/paliperidone ต้าน D2 ใน tuberoinfundibular pathway ทำให้ hyperprolactinemia มากที่สุดใน SGA (galactorrhea, sexual dysfunction, กระดูกบาง). จัดการโดยลดขนาดหรือเปลี่ยนเป็นยาที่กระทบ prolactin น้อย เช่น aripiprazole (partial D2 agonist) หรือเสริม aripiprazole ขนาดต่ำ",
-          w: ["ถูก", "ทำให้ prolactin สูงขึ้นอีก", "FGA ก็เพิ่ม prolactin มาก", "ไม่แก้สาเหตุ และไม่แก้ galactorrhea", "D2 antagonist เพิ่ม prolactin"],
-          k: "Risperidone → hyperprolactinemia; เปลี่ยน/เสริม aripiprazole",
+          r:
+            "กลไก: Dopamine จาก tuberoinfundibular pathway ยับยั้งการหลั่ง prolactin จาก anterior pituitary. Risperidone และ paliperidone (active metabolite) ต้าน D2 แรงและผ่าน BBB ได้น้อยกว่า จึงมีความเข้มข้นที่ pituitary (ซึ่งอยู่นอก BBB) สูง ทำให้ prolactin สูงมากที่สุดใน SGA\n\n" +
+            "อาการของ hyperprolactinemia: ผู้หญิง — ประจำเดือนขาด น้ำนมไหล มีบุตรยาก; ผู้ชาย — gynecomastia, galactorrhea, libido ลด, erectile dysfunction; ระยะยาว — กระดูกบาง (ขาด sex hormone)\n\n" +
+            "การจัดการ: ตรวจ prolactin ยืนยัน (และตัดสาเหตุอื่น เช่น การตั้งครรภ์ hypothyroidism prolactinoma ถ้าระดับสูงมาก) แล้ว (1) ลดขนาด (2) เปลี่ยนเป็นยาที่กระทบ prolactin น้อย: aripiprazole (partial D2 agonist ลด prolactin ได้), quetiapine, clozapine หรือ (3) เสริม aripiprazole ขนาดต่ำ 5 mg/วัน\n\n" +
+            "ข้อควรรู้สำหรับเภสัชกร: sexual dysfunction เป็นสาเหตุสำคัญของการหยุดยาเองในผู้ป่วยชาย ควรถามอย่างเป็นธรรมชาติเมื่อทำ medication review; ยาอื่นที่เพิ่ม prolactin: metoclopramide, domperidone, FGA",
+          w: [
+            "ถูก",
+            "ทำให้ prolactin สูงขึ้นอีก",
+            "FGA (haloperidol) ก็เพิ่ม prolactin มาก และเสี่ยง EPS สูง",
+            "ไม่แก้สาเหตุ และไม่แก้ galactorrhea",
+            "Metoclopramide เป็น D2 antagonist เพิ่ม prolactin และเสี่ยง EPS",
+          ],
+          k: "Risperidone/paliperidone → hyperprolactinemia มากที่สุดใน SGA; จัดการ: ลดขนาด เปลี่ยนหรือเสริม aripiprazole",
         },
         {
           d: "hard",
@@ -52,24 +72,44 @@ export const MOCK2_DAY02: Record<string, Pc1MockItem[]> = {
             "ให้ paracetamol ลดไข้อย่างเดียว",
           ],
           a: 0,
-          r: "อาการเข้าได้กับ neuroleptic malignant syndrome (ไข้สูง lead-pipe rigidity สับสน autonomic instability CK สูงมาก) เป็นภาวะฉุกเฉิน: หยุดยาต้าน dopamine ทันที supportive care (สารน้ำป้องกัน rhabdomyolysis/AKI ลดอุณหภูมิ) benzodiazepine และรายรุนแรงให้ dantrolene และ/หรือ bromocriptine",
-          w: ["ถูก", "ทำให้ NMS แย่ลง อาจถึงชีวิต", "Cyproheptadine ใช้ใน serotonin syndrome", "Anticholinergic รักษา acute dystonia ไม่ใช่ NMS", "ไข้ใน NMS ไม่ได้เกิดจาก hypothalamic set point ยาลดไข้ได้ผลน้อย"],
-          k: "NMS: ไข้ + rigidity + สับสน + autonomic instability + CK สูง → หยุด antipsychotic, supportive, dantrolene/bromocriptine",
+          r:
+            "การวินิจฉัย: Neuroleptic malignant syndrome (NMS) — tetrad: ไข้สูง, rigidity แบบ lead-pipe, การรู้สติเปลี่ยนแปลง, autonomic instability (BP แกว่ง หัวใจเต้นเร็ว เหงื่อออก) ร่วมกับ CK สูงมาก เม็ดเลือดขาวสูง. มักเกิดใน 1–2 สัปดาห์แรกหลังเริ่ม/เพิ่มขนาด โดยเฉพาะ high-potency FGA ทาง IM ขนาดสูงหรือเพิ่มขนาดเร็ว ร่วมกับขาดน้ำและกระสับกระส่าย\n\n" +
+            "กลไก: การต้าน D2 อย่างรุนแรงใน hypothalamus (ควบคุมอุณหภูมิ) และ nigrostriatal pathway (rigidity) กล้ามเนื้อเกร็งผลิตความร้อนและสลายตัว (rhabdomyolysis)\n\n" +
+            "การรักษา: (1) หยุด antipsychotic และยาต้าน dopamine ทุกตัวทันที (2) supportive: สารน้ำปริมาณมากป้องกัน AKI จาก myoglobin, cooling blanket, แก้ electrolyte (3) benzodiazepine (lorazepam) ลดความกระวนกระวาย (4) รายปานกลางถึงรุนแรง: dantrolene (ลด calcium release จาก sarcoplasmic reticulum คลายกล้ามเนื้อ) และ/หรือ bromocriptine (dopamine agonist) (5) รายดื้อยาอาจทำ ECT\n\n" +
+            "ข้อควรรู้สำหรับเภสัชกร: แยกจาก serotonin syndrome (เกิดเร็วในชั่วโมง, clonus/hyperreflexia, ท้องเสีย, จากยา serotonergic); การเริ่ม antipsychotic ใหม่ควรรออย่างน้อย 2 สัปดาห์หลังหาย ใช้ low-potency และเพิ่มขนาดช้าๆ",
+          w: [
+            "ถูก",
+            "ทำให้ NMS แย่ลง อาจถึงชีวิต",
+            "Cyproheptadine (5-HT2A antagonist) ใช้ใน serotonin syndrome",
+            "Anticholinergic รักษา acute dystonia/parkinsonism ไม่ใช่ NMS และลดการระบายความร้อน",
+            "ไข้ใน NMS เกิดจากกล้ามเนื้อผลิตความร้อนและ hypothalamic dysfunction ยาลดไข้ได้ผลน้อย",
+          ],
+          k: "NMS: ไข้ + lead-pipe rigidity + สับสน + autonomic instability + CK สูง → หยุด antipsychotic, สารน้ำ, cooling, BZD, dantrolene/bromocriptine",
         },
         {
           d: "hard",
-          p: "หลังล้มเหลวจาก antipsychotic 2 ชนิด ผู้ป่วยได้ clozapine 300 mg/day อาการคงที่ ต่อมาผู้ป่วยเลิกบุหรี่ได้ (ใช้แผ่นนิโคติน) ควรทำอย่างไร?",
+          p: "หลังล้มเหลวจาก antipsychotic 2 ชนิด ผู้ป่วยได้ clozapine 300 mg/day อาการคงที่ ต่อมาผู้ป่วยเลิกบุหรี่ได้ (ใช้หมากฝรั่งนิโคติน) ควรทำอย่างไร?",
           o: [
             "ลดขนาด clozapine ประมาณ 30–40% ใน 1–2 สัปดาห์ และติดตามระดับยาและอาการง่วง/ชัก",
             "เพิ่มขนาด clozapine เพราะนิโคตินเร่งการทำลายยา",
-            "ใช้ขนาดเดิมเพราะแผ่นนิโคตินให้ผลเหมือนการสูบบุหรี่",
+            "ใช้ขนาดเดิมเพราะหมากฝรั่งนิโคตินให้ผลเหมือนการสูบบุหรี่",
             "หยุด clozapine ชั่วคราวจนเลิกบุหรี่สำเร็จ",
             "ไม่ต้องทำอะไรเพราะบุหรี่ไม่มีผลต่อ clozapine",
           ],
           a: 0,
-          r: "Polycyclic aromatic hydrocarbons ในควันบุหรี่ (ไม่ใช่นิโคติน) กระตุ้น CYP1A2 ซึ่งทำลาย clozapine/olanzapine. เมื่อเลิกบุหรี่ ฤทธิ์กระตุ้นหายไปใน 1–2 สัปดาห์ ระดับ clozapine อาจเพิ่ม ~50% เสี่ยงง่วงซึม hypotension ชัก จึงควรลดขนาดล่วงหน้า 30–40% และตรวจระดับยา. แผ่นนิโคตินไม่กระตุ้น CYP1A2",
-          w: ["ถูก", "นิโคตินไม่ใช่ตัวกระตุ้นเอนไซม์ และทิศทางผิด", "แผ่นนิโคตินไม่มีสาร PAH จึงไม่กระตุ้น CYP1A2", "เสี่ยงอาการกำเริบ และถ้าจะเริ่มใหม่ต้อง titrate ใหม่", "การสูบบุหรี่มีผลต่อระดับ clozapine อย่างมาก"],
-          k: "เลิกบุหรี่ → CYP1A2 induction หาย → clozapine/olanzapine ↑ → ลดขนาด 30–40% + ตรวจระดับ",
+          r:
+            "กลไก: Polycyclic aromatic hydrocarbons (PAH) ในควันบุหรี่ ไม่ใช่นิโคติน กระตุ้นการสร้าง CYP1A2 ซึ่งเป็นเอนไซม์หลักที่ทำลาย clozapine และ olanzapine ผู้ที่สูบบุหรี่จึงมีระดับ clozapine ต่ำกว่าผู้ไม่สูบถึง ~50% ที่ขนาดเท่ากัน\n\n" +
+            "เมื่อเลิกบุหรี่: เอนไซม์ที่ถูกกระตุ้นค่อยๆ ลดลง (half-life ของการ induction ~3 วัน) ระดับ clozapine เพิ่มขึ้นชัดเจนใน 1–2 สัปดาห์ อาจเพิ่ม 50–70% เสี่ยงพิษ: ง่วงซึม น้ำลายไหล ความดันต่ำ หัวใจเต้นเร็ว และชัก (seizure threshold ลดตามขนาดยา) Maudsley แนะนำลดขนาดล่วงหน้า ~25–40% ภายในสัปดาห์แรกและตรวจระดับยาซ้ำ\n\n" +
+            "ทิศทางตรงข้าม: ถ้าผู้ป่วยกลับมาสูบบุหรี่ ระดับยาจะลดลง อาการอาจกำเริบ ต้องเพิ่มขนาดกลับ. นิโคตินทดแทน (หมากฝรั่ง แผ่นแปะ) ไม่มี PAH จึงไม่กระตุ้น CYP1A2\n\n" +
+            "ข้อควรรู้สำหรับเภสัชกร: CYP1A2 inhibitor ที่เพิ่มระดับ clozapine: fluvoxamine, ciprofloxacin; ยาอื่นที่ได้รับผลจากการเลิก/เริ่มสูบบุหรี่: olanzapine, theophylline, warfarin (R-enantiomer); ทบทวนยาทุกครั้งที่ผู้ป่วยเปลี่ยนพฤติกรรมการสูบบุหรี่ รวมถึงช่วงนอนโรงพยาบาลที่ห้ามสูบ",
+          w: [
+            "ถูก",
+            "นิโคตินไม่ใช่ตัวกระตุ้นเอนไซม์ และทิศทางผิด",
+            "หมากฝรั่งนิโคตินไม่มีสาร PAH จึงไม่กระตุ้น CYP1A2",
+            "เสี่ยงอาการกำเริบ และถ้าหยุดเกิน 48 ชั่วโมงต้อง titrate ใหม่ตั้งแต่ขนาดต่ำ",
+            "การสูบบุหรี่มีผลต่อระดับ clozapine อย่างมาก",
+          ],
+          k: "เลิกบุหรี่ → CYP1A2 induction หาย → clozapine/olanzapine ↑ 50% → ลดขนาด 25–40% + ตรวจระดับ; NRT ไม่กระตุ้น CYP1A2",
         },
       ],
     },
@@ -78,16 +118,26 @@ export const MOCK2_DAY02: Record<string, Pc1MockItem[]> = {
       base:
         "หญิงไทยอายุ 35 ปี มีอาการใจสั่น หายใจไม่อิ่ม กลัวจะตายเป็นพักๆ สัปดาห์ละหลายครั้งมา 6 เดือน ตรวจร่างกายและ ECG ปกติ TSH ปกติ. " +
         "ได้ alprazolam 0.5 mg TID จากคลินิกมา 6 เดือน",
-      ref: "APA Practice Guideline for the Treatment of Patients with Panic Disorder; NICE CG113 Generalised Anxiety Disorder and Panic Disorder in Adults",
+      ref: "APA Practice Guideline for the Treatment of Patients with Panic Disorder; NICE CG113 Generalised Anxiety Disorder and Panic Disorder in Adults; Ashton Manual",
       qs: [
         {
           d: "easy",
           p: "ยาที่เหมาะสมที่สุดสำหรับการรักษาระยะยาวของโรคนี้คือข้อใด?",
-          o: ["Sertraline เริ่ม 25 mg/day", "Alprazolam ใช้ต่อเนื่องระยะยาว", "Propranolol 40 mg TID", "Quetiapine 100 mg ก่อนนอน", "Diphenhydramine 50 mg ก่อนนอน"],
+          o: ["Sertraline เริ่ม 25 mg/day", "Alprazolam ใช้ต่อเนื่องระยะยาว", "Propranolol 40 mg TID", "Quetiapine 100 mg ก่อนนอน", "Hydroxyzine 25 mg ก่อนนอน"],
           a: 0,
-          r: "SSRI (หรือ SNRI) เป็นยาหลักระยะยาวของ panic disorder ควรเริ่มขนาดต่ำ (sertraline 25 mg) เพราะช่วงแรกอาจเกิด jitteriness/วิตกกังวลมากขึ้น แล้วค่อยเพิ่มขนาด. Benzodiazepine ใช้ระยะสั้นระหว่างรอ SSRI ออกฤทธิ์เท่านั้น",
-          w: ["ถูก", "เสี่ยงติดยาและดื้อยา ไม่แนะนำระยะยาว", "ลดเฉพาะอาการทางกาย ไม่รักษาโรค", "ไม่ใช่ยาหลัก มี metabolic ADR", "ไม่ใช่ยารักษาโรควิตกกังวล"],
-          k: "Panic disorder: SSRI/SNRI เริ่มขนาดต่ำ; BZD ระยะสั้นเท่านั้น",
+          r:
+            "หลักการ: Panic disorder เป็นโรคเรื้อรัง ยาหลักระยะยาวคือ SSRI (sertraline, escitalopram, fluoxetine, paroxetine) หรือ SNRI (venlafaxine) ร่วมกับ cognitive behavioral therapy ซึ่งได้ผลใกล้เคียงยาและลดการกลับเป็นซ้ำ\n\n" +
+            "ทำไมเริ่มขนาดต่ำ: ผู้ป่วย panic ไวต่ออาการทางกายมาก SSRI ช่วงแรกอาจทำให้เกิด activation/jitteriness (กระวนกระวาย ใจสั่น นอนไม่หลับ) ซึ่งผู้ป่วยตีความว่าเป็น panic attack และหยุดยา จึงเริ่มที่ครึ่งหนึ่งของขนาดปกติ (sertraline 25 mg) 1 สัปดาห์แล้วค่อยเพิ่มเป็น 50–200 mg\n\n" +
+            "บทบาทของ benzodiazepine: ได้ผลเร็วแต่มีปัญหา tolerance, dependence, rebound anxiety, ความจำ และอุบัติเหตุ จึงใช้เป็น bridging ระยะสั้น 2–4 สัปดาห์ระหว่างรอ SSRI ออกฤทธิ์ หลีกเลี่ยงในผู้มีประวัติใช้สารเสพติด\n\n" +
+            "ข้อควรรู้สำหรับเภสัชกร: ก่อนวินิจฉัยต้องตัดสาเหตุทางกาย (hyperthyroidism, arrhythmia, hypoglycemia) และสารกระตุ้น (กาแฟ เครื่องดื่มชูกำลัง ยาแก้คัดจมูก pseudoephedrine) ซึ่งในไทยมีขายในร้านยา",
+          w: [
+            "ถูก",
+            "เสี่ยงติดยา ดื้อยา และ rebound ไม่แนะนำระยะยาว",
+            "ลดเฉพาะอาการใจสั่น ไม่รักษาโรค และไม่มีหลักฐานใน panic disorder",
+            "ไม่ใช่ยาหลัก มี metabolic ADR",
+            "Antihistamine มีบทบาทน้อยใน panic disorder",
+          ],
+          k: "Panic disorder: SSRI/SNRI เริ่มครึ่งขนาด (ลด jitteriness) + CBT; BZD เป็น bridging ระยะสั้นเท่านั้น",
         },
         {
           d: "medium",
@@ -100,24 +150,44 @@ export const MOCK2_DAY02: Record<string, Pc1MockItem[]> = {
             "ห้ามทานร่วมกับอาหารทุกชนิด",
           ],
           a: 0,
-          r: "SSRI ใช้ต่อเนื่องทุกวัน ต้องใช้เวลาหลายสัปดาห์ถึงจะได้ผล ช่วงแรกอาจมีคลื่นไส้ นอนไม่หลับ หรือวิตกกังวลเพิ่มขึ้นชั่วคราว การหยุดยากะทันหันทำให้เกิด discontinuation syndrome ควรใช้ต่ออย่างน้อย 12 เดือนหลังอาการดีขึ้น",
-          w: ["ถูก", "SSRI ต้องใช้ต่อเนื่องทุกวัน", "ต้องใช้เวลาหลายสัปดาห์", "ไม่ควรปรับขนาดเองและเร็วเกินไป", "ทานพร้อมอาหารได้ ช่วยลดคลื่นไส้"],
-          k: "SSRI: onset 2–4 สัปดาห์, เต็มที่ 8–12 สัปดาห์; ช่วงแรกอาจ jittery; ห้ามหยุดเอง",
+          r:
+            "เหตุผลที่ต้องรอ: ฤทธิ์รักษาของ SSRI ไม่ได้มาจากการเพิ่ม serotonin ทันที แต่มาจากการปรับตัวของ receptor (5-HT1A autoreceptor desensitization) และ neuroplasticity ซึ่งใช้เวลาหลายสัปดาห์ ใน anxiety disorders มักต้องใช้ขนาดสูงกว่าและนานกว่าในภาวะซึมเศร้า\n\n" +
+            "ประเด็น counseling ที่ครบถ้วน: (1) ใช้ทุกวันเวลาเดิม ไม่ใช่ใช้เมื่อมีอาการ (2) ผลเต็มที่ 8–12 สัปดาห์ (3) ADR ช่วงแรก: คลื่นไส้ (ทานหลังอาหารช่วยได้) ท้องเสีย นอนไม่หลับ กระวนกระวาย มักดีขึ้นใน 1–2 สัปดาห์ (4) ADR ระยะยาว: sexual dysfunction, hyponatremia ในผู้สูงอายุ, เลือดออกง่ายเมื่อใช้ร่วม NSAID/antiplatelet (5) ห้ามหยุดยาเอง — การหยุดทันทีทำให้เกิด discontinuation syndrome (FINISH: flu-like, insomnia, nausea, imbalance, sensory disturbance, hyperarousal)\n\n" +
+            "ระยะเวลาการรักษา: หลังอาการหายควรใช้ต่ออย่างน้อย 12 เดือนแล้วค่อยๆ ลดขนาด\n\n" +
+            "ข้อควรรู้สำหรับเภสัชกร: ในผู้อายุ <25 ปี ต้องเตือนเรื่องความคิดฆ่าตัวตายช่วงแรก (boxed warning); ระวังยาที่เป็น serotonergic ร่วม เช่น tramadol, dextromethorphan ในยาแก้ไอ",
+          w: [
+            "ถูก",
+            "SSRI ต้องใช้ต่อเนื่องทุกวัน ไม่ใช่ยาแบบ as-needed",
+            "ต้องใช้เวลาหลายสัปดาห์",
+            "ไม่ควรปรับขนาดเองและเร็วเกินไป",
+            "ทานพร้อมอาหารได้ ช่วยลดคลื่นไส้",
+          ],
+          k: "SSRI: onset 2–4 สัปดาห์, เต็มที่ 8–12 สัปดาห์; ช่วงแรกอาจ jittery; ใช้ต่อ ≥12 เดือน; ห้ามหยุดเอง (discontinuation syndrome)",
         },
         {
           d: "medium",
           p: "เมื่อ sertraline ได้ผลดีแล้ว ผู้ป่วยต้องการหยุด alprazolam ที่ใช้มา 6 เดือน วิธีใดเหมาะสมที่สุด?",
           o: [
-            "ค่อยๆ ลดขนาดครั้งละประมาณ 10–25% ทุก 1–2 สัปดาห์ และช้าลงช่วงท้าย",
+            "ค่อยๆ ลดขนาดครั้งละประมาณ 10–25% ทุก 1–2 สัปดาห์ และช้าลงช่วงท้าย (อาจเปลี่ยนเป็น clonazepam หรือ diazepam ก่อน)",
             "หยุดทันทีเพราะมี sertraline แล้ว",
-            "หยุดทันทีแล้วใช้ diphenhydramine แทน",
+            "หยุดทันทีแล้วใช้ chlorpheniramine แทน",
             "ลดเหลือครึ่งหนึ่งในวันแรก แล้วหยุดในวันที่สาม",
             "เปลี่ยนเป็น zolpidem แทน alprazolam",
           ],
           a: 0,
-          r: "การใช้ benzodiazepine ต่อเนื่องหลายสัปดาห์ทำให้เกิด physical dependence การหยุดทันทีเสี่ยง withdrawal (วิตกกังวลรุนแรง นอนไม่หลับ ชัก) โดยเฉพาะยาครึ่งชีวิตสั้นอย่าง alprazolam จึงต้อง taper ช้าๆ ประมาณ 10–25% ทุก 1–2 สัปดาห์ (อาจเปลี่ยนเป็นยาครึ่งชีวิตยาวอย่าง diazepam ก่อน taper)",
-          w: ["ถูก", "SSRI ไม่ป้องกัน BZD withdrawal", "ไม่ป้องกัน withdrawal", "ลดเร็วเกินไป เสี่ยงชัก", "Z-drug ออกฤทธิ์ที่ GABA-A เช่นกัน เป็นการแทนที่ไม่ใช่การหยุด"],
-          k: "หยุด BZD ที่ใช้นาน: taper 10–25% ทุก 1–2 สัปดาห์; alprazolam เสี่ยง withdrawal สูง",
+          r:
+            "กลไกของ dependence: การใช้ benzodiazepine ต่อเนื่องทำให้ GABA-A receptor ปรับตัว (downregulation, เปลี่ยน subunit) เมื่อหยุดยาทันที ระบบยับยั้งไม่พอ เกิด withdrawal: วิตกกังวลรุนแรง นอนไม่หลับ ใจสั่น มือสั่น ไวต่อแสงเสียง และรุนแรงถึงชักหรือ delirium\n\n" +
+            "ทำไม alprazolam เสี่ยงสูง: ครึ่งชีวิตสั้น (~11 ชั่วโมง) และ potency สูง ระดับยาลดลงเร็วระหว่างมื้อ เกิด interdose withdrawal และหยุดยาได้ยากที่สุดในกลุ่ม\n\n" +
+            "วิธี taper: ลดครั้งละ 10–25% ของขนาดปัจจุบันทุก 1–2 สัปดาห์ (ช่วงท้ายลดช้าลง) ระยะเวลารวมหลายสัปดาห์ถึงหลายเดือนตามระยะเวลาที่ใช้ หลายแนวทาง (Ashton Manual) แนะนำเปลี่ยนเป็นยาครึ่งชีวิตยาว (diazepam หรือ clonazepam ซึ่งมีในไทย) ในขนาดเทียบเท่าก่อนแล้วค่อยลด — alprazolam 0.5 mg ≈ diazepam 5–10 mg ≈ clonazepam 0.25–0.5 mg\n\n" +
+            "ข้อควรรู้สำหรับเภสัชกร: SSRI ไม่ป้องกัน withdrawal จาก BZD; ติดตามอาการ withdrawal ทุกครั้งที่ลดขนาด ถ้ารุนแรงให้คงขนาดไว้ก่อนแล้วลดช้าลง; alprazolam เป็นวัตถุออกฤทธิ์ต่อจิตและประสาทประเภท 2 ในไทย ต้องจ่ายตามระเบียบ",
+          w: [
+            "ถูก",
+            "SSRI ไม่ป้องกัน BZD withdrawal",
+            "Antihistamine ไม่ป้องกัน withdrawal",
+            "ลดเร็วเกินไป เสี่ยงชัก",
+            "Z-drug ออกฤทธิ์ที่ GABA-A เช่นกัน เป็นการแทนที่ไม่ใช่การหยุด",
+          ],
+          k: "หยุด BZD ที่ใช้นาน: taper 10–25% ทุก 1–2 สัปดาห์ ± เปลี่ยนเป็น diazepam/clonazepam ก่อน; alprazolam หยุดยากที่สุด",
         },
       ],
     },
@@ -126,7 +196,7 @@ export const MOCK2_DAY02: Record<string, Pc1MockItem[]> = {
       qs: [
         {
           d: "easy",
-          p: "เด็กชายอายุ 9 ปี ADHD เริ่ม methylphenidate IR 5 mg เช้าและเที่ยง อาการไม่พึงประสงค์ที่พบบ่อยที่สุดและควรแนะนำผู้ปกครองคือข้อใด?",
+          p: "เด็กชายอายุ 9 ปี ADHD เริ่ม methylphenidate IR (Ritalin) 5 mg เช้าและเที่ยง อาการไม่พึงประสงค์ที่พบบ่อยที่สุดและควรแนะนำผู้ปกครองคือข้อใด?",
           o: [
             "เบื่ออาหารและนอนไม่หลับ ควรให้ยาหลังอาหารและไม่ให้ยาช่วงเย็น",
             "ง่วงซึมมาก ควรให้ยาก่อนนอน",
@@ -135,29 +205,49 @@ export const MOCK2_DAY02: Record<string, Pc1MockItem[]> = {
             "ท้องผูก ควรให้ยาระบายทุกวัน",
           ],
           a: 0,
-          r: "Stimulant ทำให้เบื่ออาหาร น้ำหนักลด นอนไม่หลับ ปวดศีรษะ ปวดท้อง และเพิ่ม HR/BP เล็กน้อย จึงให้ยาหลังอาหารเช้า/กลางวัน หลีกเลี่ยงช่วงบ่ายแก่–เย็น และติดตามน้ำหนัก ส่วนสูง และความดัน",
-          w: ["ถูก", "เป็นยากระตุ้น ทำให้นอนไม่หลับ", "มักทำให้น้ำหนักลด", "มักเพิ่มความดันเล็กน้อย", "ไม่ใช่ ADR ที่พบบ่อย"],
-          k: "Methylphenidate: เบื่ออาหาร นอนไม่หลับ ↑HR/BP; ให้หลังอาหาร ไม่ให้ช่วงเย็น; ติดตามการเจริญเติบโต",
+          r:
+            "กลไก: Methylphenidate ยับยั้ง dopamine transporter และ norepinephrine transporter เพิ่ม DA/NE ใน prefrontal cortex ช่วยสมาธิและการควบคุมตนเอง ฤทธิ์เดียวกันนี้ทำให้เกิดผลกระตุ้นระบบประสาทซิมพาเทติกและลดความอยากอาหาร\n\n" +
+            "ADR ที่พบบ่อย: เบื่ออาหาร น้ำหนักลด (อาจชะลอการเจริญเติบโตเล็กน้อย) นอนไม่หลับ ปวดศีรษะ ปวดท้อง หงุดหงิดช่วงยาหมดฤทธิ์ (rebound) และเพิ่ม HR/BP เล็กน้อย; ADR ที่พบน้อยแต่สำคัญ: tic แย่ลง, อาการทางจิต, priapism, Raynaud\n\n" +
+            "การใช้ยา: IR ออกฤทธิ์ 3–4 ชั่วโมง ให้หลังอาหารเช้าและกลางวัน หลีกเลี่ยงหลังบ่าย 2–4 โมง; รูปแบบออกฤทธิ์ยาว (Concerta) ให้ครั้งเดียวตอนเช้า กลืนทั้งเม็ดห้ามหัก เพิ่มขนาดทุกสัปดาห์จนได้ผล\n\n" +
+            "ข้อควรรู้สำหรับเภสัชกร: ติดตามน้ำหนัก ส่วนสูง (plot growth chart) ความดันและชีพจร; ซักประวัติโรคหัวใจ/sudden death ในครอบครัวก่อนเริ่มยา; methylphenidate เป็นวัตถุออกฤทธิ์ประเภท 2 ในไทย ต้องเก็บรักษาและจ่ายตามกฎหมาย และเตือนเรื่องการนำไปใช้ผิดวัตถุประสงค์",
+          w: [
+            "ถูก",
+            "เป็นยากระตุ้น ทำให้นอนไม่หลับ ห้ามให้ก่อนนอน",
+            "มักทำให้น้ำหนักลด ไม่ใช่เพิ่ม",
+            "มักเพิ่มความดันเล็กน้อย",
+            "ไม่ใช่ ADR ที่พบบ่อย",
+          ],
+          k: "Methylphenidate: เบื่ออาหาร นอนไม่หลับ ↑HR/BP; ให้หลังอาหาร ไม่ให้ช่วงเย็น; ติดตาม growth, BP; วัตถุออกฤทธิ์ประเภท 2",
         },
       ],
     },
     {
-      ref: "FDA Drug Safety Communication: Revised recommendations for citalopram (2012)",
+      ref: "Escitalopram prescribing information (EMA SmPC); Maudsley Prescribing Guidelines (QT prolongation)",
       qs: [
         {
           d: "medium",
-          p: "หญิงอายุ 72 ปี ภาวะซึมเศร้า ใช้ citalopram 40 mg/day ECG พบ QTc 480 ms ข้อใดเหมาะสมที่สุด?",
+          p: "หญิงอายุ 72 ปี ภาวะซึมเศร้า ใช้ escitalopram 20 mg/day และ ondansetron บางครั้งเมื่อคลื่นไส้ ECG พบ QTc 480 ms K 3.3 mmol/L ข้อใดเหมาะสมที่สุด?",
           o: [
-            "ลด citalopram เหลือไม่เกิน 20 mg/day หรือเปลี่ยนเป็น sertraline และตรวจ K/Mg",
-            "เพิ่ม citalopram เป็น 60 mg/day",
+            "ลด escitalopram เหลือไม่เกิน 10 mg/day หรือเปลี่ยนเป็น sertraline หยุด ondansetron และแก้ K/Mg",
+            "เพิ่ม escitalopram เป็น 30 mg/day",
             "ใช้ขนาดเดิมเพราะ QTc ยังไม่ถึง 500 ms",
-            "เพิ่ม ondansetron เพื่อลดคลื่นไส้",
-            "เปลี่ยนเป็น escitalopram 20 mg/day",
+            "เพิ่ม domperidone แทน ondansetron",
+            "เปลี่ยนเป็น citalopram 40 mg/day",
           ],
           a: 0,
-          r: "Citalopram ทำให้ QT ยาวตามขนาดยา ขนาดสูงสุดในผู้ที่อายุ >60 ปีคือ 20 mg/day (ทั่วไป 40 mg/day). ผู้ป่วยได้ขนาดเกินและ QTc ยาวแล้ว ควรลดขนาดหรือเปลี่ยนเป็น SSRI ที่มีผลต่อ QT น้อย เช่น sertraline และแก้ K/Mg ต่ำ",
-          w: ["ถูก", "เกินขนาดสูงสุดและเพิ่มความเสี่ยง torsades", "เกินขนาดสูงสุดสำหรับอายุ >60 และ QTc ยาวแล้ว", "Ondansetron ทำให้ QT ยาวขึ้นอีก", "ขนาดสูงสุดของ escitalopram ในผู้สูงอายุคือ 10 mg/day และยังมีผลต่อ QT"],
-          k: "Citalopram: max 20 mg/day เมื่ออายุ >60 ปี (QT prolongation); escitalopram max 10 mg",
+          r:
+            "หลักการ: Citalopram และ escitalopram ทำให้ QT ยาวตามขนาดยา (ยับยั้ง hERG potassium channel) เพิ่มความเสี่ยง torsades de pointes โดยเฉพาะผู้สูงอายุ ผู้หญิง K/Mg ต่ำ หัวใจเต้นช้า และใช้ยาที่ทำให้ QT ยาวร่วม. ขนาดสูงสุดของ escitalopram ในผู้อายุ ≥65 ปีคือ 10 mg/วัน (citalopram 20 mg/วัน)\n\n" +
+            "การประเมินความเสี่ยงผู้ป่วยรายนี้: QTc 480 ms (หญิงปกติ <460) + อายุมาก + K ต่ำ + ใช้ ondansetron (ทำให้ QT ยาวเช่นกัน) + escitalopram เกินขนาดที่แนะนำ = หลายปัจจัยเสริมกัน\n\n" +
+            "การจัดการ: ลดขนาดหรือเปลี่ยนเป็น SSRI ที่มีผลต่อ QT น้อย (sertraline มีข้อมูลความปลอดภัยทางหัวใจดีที่สุด แม้ใน post-MI) หยุดยาเสริมที่ทำให้ QT ยาว แก้ K ให้ >4.0 และ Mg >2.0 แล้วตรวจ ECG ซ้ำ; ถ้า QTc >500 ms หรือเพิ่มจาก baseline >60 ms ต้องหยุดยาที่เป็นสาเหตุ\n\n" +
+            "ข้อควรรู้สำหรับเภสัชกร: ยาที่ทำให้ QT ยาวที่พบบ่อยในไทย: domperidone, ondansetron, macrolide, fluoroquinolone, haloperidol, antifungal azole, methadone, hydroxychloroquine — ควรใช้ฐานข้อมูล (เช่น CredibleMeds) ตรวจสอบเมื่อใช้ร่วมกันหลายตัว",
+          w: [
+            "ถูก",
+            "เกินขนาดสูงสุดและเพิ่มความเสี่ยง torsades",
+            "เกินขนาดสำหรับอายุ ≥65 ปี และมีหลายปัจจัยเสี่ยงร่วม ไม่ควรรอให้ถึง 500 ms",
+            "Domperidone ทำให้ QT ยาวเช่นกัน",
+            "Citalopram ทำให้ QT ยาวมากกว่า และขนาดนี้เกินขนาดในผู้สูงอายุ",
+          ],
+          k: "Escitalopram max 10 mg/วัน เมื่ออายุ ≥65 (citalopram 20 mg); QT ยาว → ลด/เปลี่ยนเป็น sertraline, หยุดยาเสริม, แก้ K/Mg",
         },
       ],
     },
@@ -167,11 +257,21 @@ export const MOCK2_DAY02: Record<string, Pc1MockItem[]> = {
         {
           d: "hard",
           p: "หญิงอายุ 30 ปี bipolar I disorder ขณะนี้อยู่ในภาวะซึมเศร้ารุนแรง ไม่ได้ใช้ยาใดอยู่ ยาใดเหมาะสมที่สุด?",
-          o: ["Quetiapine", "Sertraline อย่างเดียว", "Venlafaxine อย่างเดียว", "Amitriptyline อย่างเดียว", "Haloperidol"],
+          o: ["Quetiapine", "Fluoxetine อย่างเดียว", "Venlafaxine อย่างเดียว", "Amitriptyline อย่างเดียว", "Haloperidol"],
           a: 0,
-          r: "Bipolar depression รักษาด้วยยาที่มีหลักฐาน เช่น quetiapine, lurasidone, cariprazine, lithium หรือ lamotrigine. ห้ามใช้ antidepressant เดี่ยวๆ ใน bipolar I เพราะเสี่ยง switch เป็น mania/rapid cycling (TCA และ SNRI เสี่ยงสูงสุด)",
-          w: ["ถูก", "Antidepressant monotherapy เสี่ยงเกิด mania", "SNRI เสี่ยง switch สูง", "TCA เสี่ยง switch สูงที่สุด", "ไม่มีหลักฐานใน bipolar depression"],
-          k: "Bipolar depression: quetiapine, lurasidone, cariprazine, lithium, lamotrigine; ห้าม antidepressant monotherapy",
+          r:
+            "หลักการ: Bipolar depression ต่างจาก major depressive disorder ทั้งการตอบสนองและความเสี่ยงจากยา การใช้ antidepressant เดี่ยวๆ ใน bipolar I ไม่ได้ผลดีกว่ายาหลอกในหลายการศึกษา และเสี่ยง treatment-emergent mania/hypomania และ rapid cycling\n\n" +
+            "ยาที่มีหลักฐาน (CANMAT/ISBD first-line): quetiapine (IR หรือ XR 300 mg/วัน), lurasidone, lithium, lamotrigine (ได้ผลช้าเพราะต้อง titrate แต่ดีในระยะคงที่ป้องกันซึมเศร้า), cariprazine. ถ้าจำเป็นต้องใช้ antidepressant ให้ใช้ร่วมกับ mood stabilizer เสมอ และเลือก SSRI หรือ bupropion ซึ่งเสี่ยง switch น้อยกว่า\n\n" +
+            "ความเสี่ยงการ switch เรียงจากมากไปน้อย: TCA > SNRI (venlafaxine) > SSRI/bupropion\n\n" +
+            "ข้อควรรู้สำหรับเภสัชกร: quetiapine ทำให้ง่วง น้ำหนักขึ้น metabolic และ orthostatic hypotension; lamotrigine ต้อง titrate ช้า (25 mg/วัน 2 สัปดาห์) เพื่อลด SJS/TEN โดยเฉพาะเมื่อใช้ร่วม valproate (ต้องลดขนาดครึ่งหนึ่ง); ผู้ป่วยหญิงวัยเจริญพันธุ์ควรหลีกเลี่ยง valproate",
+          w: [
+            "ถูก",
+            "Antidepressant monotherapy ใน bipolar I เสี่ยงเกิด mania และไม่มีประสิทธิภาพชัดเจน",
+            "SNRI เสี่ยง switch สูง",
+            "TCA เสี่ยง switch สูงที่สุด",
+            "ไม่มีหลักฐานใน bipolar depression และเสี่ยง EPS",
+          ],
+          k: "Bipolar depression: quetiapine, lurasidone, lithium, lamotrigine, cariprazine; ห้าม antidepressant monotherapy (TCA > SNRI > SSRI เสี่ยง switch)",
         },
       ],
     },
@@ -182,16 +282,26 @@ export const MOCK2_DAY02: Record<string, Pc1MockItem[]> = {
       base:
         "ชายไทยอายุ 62 ปี สูบบุหรี่วันละ 1 ซองมา 40 ปี เหนื่อยเมื่อเดินขึ้นเนินหรือเดินเร็ว (mMRC 2) post-bronchodilator FEV1/FVC 0.62, FEV1 58% predicted. " +
         "ไม่เคยมีอาการกำเริบ blood eosinophil 150 cells/µL มีข้อนิ้วมืออักเสบ (rheumatoid arthritis) มือไม่ค่อยมีแรง",
-      ref: "GOLD 2024 Global Strategy for COPD; Varenicline prescribing information",
+      ref: "GOLD 2024 Global Strategy for COPD; แนวทางเวชปฏิบัติการบำบัดโรคเสพยาสูบในประเทศไทย; Cytisine (องค์การเภสัชกรรม) product information",
       qs: [
         {
           d: "easy",
           p: "ตามแนวทาง GOLD ยาเริ่มต้นที่เหมาะสมที่สุดคือข้อใด?",
           o: ["LABA + LAMA", "ICS + LABA", "SABA เมื่อมีอาการเท่านั้น", "ICS อย่างเดียว", "Oral prednisolone ขนาดต่ำระยะยาว"],
           a: 0,
-          r: "ผู้ป่วย GOLD group B (อาการมาก mMRC ≥2 ไม่มีประวัติกำเริบ) เริ่มด้วย LABA + LAMA ในอุปกรณ์เดียวถ้าทำได้. ไม่แนะนำ ICS ใน COPD ที่ไม่มีอาการกำเริบและ eosinophil ต่ำ",
-          w: ["ถูก", "ไม่แนะนำ LABA/ICS ใน COPD", "ไม่พอสำหรับผู้ที่มีอาการมาก", "ICS เดี่ยวไม่ใช้ใน COPD และเพิ่มความเสี่ยงปอดอักเสบ", "ไม่แนะนำ ADR มาก"],
-          k: "COPD group B → LABA + LAMA; ICS เฉพาะผู้ที่กำเริบบ่อย + eosinophil สูง",
+          r:
+            "การจัดกลุ่ม GOLD 2024: ประเมินจากอาการ (mMRC/CAT) และประวัติกำเริบในปีที่ผ่านมา — group A (อาการน้อย ไม่กำเริบ), group B (อาการมาก mMRC ≥2 หรือ CAT ≥10 ไม่กำเริบ), group E (กำเริบปานกลาง ≥2 ครั้ง หรือนอนโรงพยาบาล ≥1 ครั้ง). ผู้ป่วยรายนี้เป็น group B\n\n" +
+            "การรักษาเริ่มต้น: group B → LABA + LAMA (ในอุปกรณ์เดียวถ้าทำได้) เพราะให้ bronchodilation ดีกว่ายาเดี่ยว ลดอาการเหนื่อยได้มากกว่าโดยไม่เพิ่ม ADR ชัดเจน; ตัวอย่างในไทย: tiotropium/olodaterol (Spiolto Respimat), umeclidinium/vilanterol (Anoro Ellipta), indacaterol/glycopyrronium (Ultibro Breezhaler)\n\n" +
+            "บทบาทของ ICS: ICS ไม่แนะนำใน COPD ที่ไม่มีการกำเริบ เพราะเพิ่มความเสี่ยงปอดอักเสบ เชื้อราในปาก และประโยชน์ขึ้นกับ eosinophil — ใช้เมื่อกำเริบบ่อยและ eosinophil ≥300 (หรือ ≥100 ในผู้ที่ยังกำเริบขณะใช้ LABA/LAMA); ICS/LABA ไม่แนะนำใน COPD แล้ว\n\n" +
+            "ข้อควรรู้สำหรับเภสัชกร: การรักษาที่สำคัญที่สุดที่เปลี่ยนการดำเนินโรคคือการเลิกบุหรี่ ร่วมกับวัคซีน pulmonary rehabilitation และสอนเทคนิคการใช้ยาพ่นทุกครั้งที่ติดตาม",
+          w: [
+            "ถูก",
+            "GOLD ไม่แนะนำ LABA/ICS ใน COPD แล้ว",
+            "ไม่พอสำหรับผู้ที่มีอาการมาก (group B)",
+            "ICS เดี่ยวไม่ใช้ใน COPD และเพิ่มความเสี่ยงปอดอักเสบ",
+            "Systemic steroid ระยะยาวไม่แนะนำ ADR มาก (กล้ามเนื้ออ่อนแรง กระดูกพรุน)",
+          ],
+          k: "COPD group B → LABA + LAMA; ICS เฉพาะผู้ที่กำเริบบ่อย + eosinophil สูง; ไม่ใช้ ICS/LABA ใน COPD",
         },
         {
           d: "easy",
@@ -204,39 +314,68 @@ export const MOCK2_DAY02: Record<string, Pc1MockItem[]> = {
             "BCG กระตุ้นซ้ำ",
           ],
           a: 0,
-          r: "GOLD แนะนำให้ผู้ป่วย COPD ทุกรายได้วัคซีนไข้หวัดใหญ่ทุกปี วัคซีนนิวโมคอคคัส (PCV20 หรือ PCV15 ตามด้วย PPSV23) COVID-19 และพิจารณา RSV (อายุ ≥60), Tdap และงูสวัด เพื่อลดการกำเริบและการติดเชื้อรุนแรง",
-          w: ["ถูก", "ต้องฉีดทุกปีตามฤดูกาล", "วัคซีนช่วยป้องกันการกำเริบ ควรฉีดทุกราย", "ไม่เกี่ยวข้อง", "ไม่มีข้อบ่งใช้"],
-          k: "COPD: influenza ทุกปี + pneumococcal + COVID-19 ± RSV, Tdap, zoster",
+          r:
+            "หลักการ: การติดเชื้อทางเดินหายใจเป็นสาเหตุหลักของ COPD exacerbation ซึ่งทำให้สมรรถภาพปอดลดลงถาวรและเพิ่มการเสียชีวิต วัคซีนจึงเป็นส่วนสำคัญของการรักษาทุกกลุ่ม ไม่ว่าจะเคยกำเริบหรือไม่\n\n" +
+            "วัคซีนที่ GOLD 2024 แนะนำ: (1) ไข้หวัดใหญ่ทุกปี (ในไทยฉีดช่วงก่อนฤดูฝน พ.ค.–มิ.ย.; ผู้ป่วยโรคปอดเรื้อรังเป็นกลุ่มเสี่ยงที่ได้รับวัคซีนฟรีตามสิทธิ) ลดการกำเริบรุนแรงและการเสียชีวิต (2) นิวโมคอคคัส: PCV20 ครั้งเดียว หรือ PCV15 ตามด้วย PPSV23 (3) COVID-19 ตามคำแนะนำปัจจุบัน (4) RSV ในผู้อายุ ≥60 ปี (5) Tdap ในผู้ที่ไม่เคยได้ตอนวัยรุ่น (6) งูสวัดในผู้อายุ ≥50 ปี\n\n" +
+            "ข้อควรรู้สำหรับเภสัชกร: ผู้ป่วยรายนี้เป็น RA ถ้าได้ยากดภูมิคุ้มกัน (methotrexate, biologics) ต้องหลีกเลี่ยงวัคซีนเชื้อเป็น (live attenuated) และควรฉีดวัคซีนก่อนเริ่มยากดภูมิ; วัคซีนไข้หวัดใหญ่ชนิดฉีด (inactivated) และวัคซีนนิวโมคอคคัสใช้ได้",
+          w: [
+            "ถูก",
+            "ต้องฉีดทุกปีตามฤดูกาล ไม่ใช่เฉพาะช่วงระบาด",
+            "วัคซีนช่วยป้องกันการกำเริบ ควรฉีดทุกราย",
+            "ไม่มีข้อบ่งใช้ และเป็นวัคซีนเชื้อเป็น",
+            "ไม่มีข้อบ่งใช้ในผู้ใหญ่",
+          ],
+          k: "COPD: influenza ทุกปี + pneumococcal (PCV20 หรือ PCV15→PPSV23) + COVID-19 ± RSV (≥60), Tdap, zoster",
         },
         {
           d: "medium",
-          p: "ผู้ป่วยต้องการเลิกบุหรี่และเลือกใช้ varenicline วิธีใช้ยาข้อใดถูกต้อง?",
+          p: "ผู้ป่วยต้องการเลิกบุหรี่และเลือกใช้ยาเม็ด cytisine 1.5 mg ขององค์การเภสัชกรรม คำแนะนำข้อใดถูกต้อง?",
           o: [
-            "0.5 mg วันละครั้ง 3 วัน → 0.5 mg วันละ 2 ครั้ง 4 วัน → 1 mg วันละ 2 ครั้ง รวม 12 สัปดาห์ กำหนดวันเลิกหลังเริ่มยา 1 สัปดาห์",
-            "1 mg วันละ 2 ครั้งตั้งแต่วันแรก ใช้ 2 สัปดาห์",
-            "ใช้เฉพาะเมื่ออยากสูบบุหรี่",
-            "2 mg ก่อนนอนวันละครั้ง 4 สัปดาห์",
-            "ต้องหยุดบุหรี่ให้ได้ก่อนเริ่มยา 1 เดือน",
+            "ใช้ยาตามตารางลดขนาดรวม 25 วัน (เริ่ม 1 เม็ดทุก 2 ชั่วโมง วันละ 6 เม็ด) และต้องหยุดสูบบุหรี่ให้ได้ภายในวันที่ 5",
+            "ทานวันละ 1 เม็ดก่อนนอน 12 สัปดาห์",
+            "ทานเฉพาะเวลาที่อยากสูบบุหรี่",
+            "ต้องหยุดสูบบุหรี่ให้ได้ 1 เดือนก่อนเริ่มยา",
+            "ใช้ร่วมกับการสูบบุหรี่ตามปกติตลอดการรักษาได้",
           ],
           a: 0,
-          r: "Varenicline (partial agonist ที่ α4β2 nicotinic receptor) ต้อง titrate เพื่อลดคลื่นไส้ ทานหลังอาหารพร้อมน้ำ ตั้งวันเลิกบุหรี่ในวันที่ 8–35 หลังเริ่มยา ใช้ 12 สัปดาห์ (ต่ออีก 12 สัปดาห์ได้ถ้าเลิกสำเร็จ) ปรับขนาดเมื่อ CrCl <30",
-          w: ["ถูก", "ไม่ titrate ทำให้คลื่นไส้มาก และระยะเวลาสั้นเกินไป", "ต้องใช้ต่อเนื่องทุกวัน", "ขนาดและวิธีใช้ไม่ถูกต้อง", "เริ่มยาก่อนวันเลิกบุหรี่ 1 สัปดาห์"],
-          k: "Varenicline: titrate 0.5 mg OD ×3 วัน → 0.5 BID ×4 วัน → 1 mg BID; quit date สัปดาห์ที่ 2; 12 สัปดาห์",
+          r:
+            "กลไก: Cytisine เป็นสารจากพืชที่เป็น partial agonist ที่ α4β2 nicotinic acetylcholine receptor (โครงสร้างต้นแบบของ varenicline) — ฤทธิ์ agonist บรรเทาอาการอยากและถอนนิโคติน ฤทธิ์ antagonist ลดความพึงพอใจเมื่อสูบบุหรี่. องค์การเภสัชกรรมผลิตในไทย ราคาถูกและเข้าถึงง่าย\n\n" +
+            "ตารางการใช้ยา 25 วัน: วันที่ 1–3: 1 เม็ดทุก 2 ชั่วโมง (6 เม็ด/วัน); วันที่ 4–12: ทุก 2.5 ชั่วโมง (5 เม็ด/วัน); วันที่ 13–16: ทุก 3 ชั่วโมง (4 เม็ด/วัน); วันที่ 17–20: ทุก 5 ชั่วโมง (3 เม็ด/วัน); วันที่ 21–25: 1–2 เม็ด/วัน. ต้องหยุดสูบบุหรี่ให้ได้ภายในวันที่ 5 ถ้าไม่สำเร็จควรหยุดยาและเริ่มใหม่ใน 2–3 เดือน\n\n" +
+            "ทางเลือกอื่นในไทย: nicotine replacement therapy (หมากฝรั่ง แผ่นแปะ), nortriptyline (บัญชียาหลัก เริ่ม 10–28 วันก่อนวันเลิก), varenicline, bupropion; การรวมยากับการให้คำปรึกษาเพิ่มอัตราความสำเร็จมากที่สุด\n\n" +
+            "ข้อควรรู้สำหรับเภสัชกร: ADR ของ cytisine: คลื่นไส้ ปวดท้อง ปากแห้ง นอนไม่หลับ ใจสั่น; ข้อควรระวัง: โรคหัวใจขาดเลือดรุนแรง ความดันสูงที่คุมไม่ได้ ตั้งครรภ์/ให้นมบุตร. การสูบบุหรี่ต่อระหว่างใช้ยาเพิ่มความเสี่ยงพิษนิโคติน",
+          w: [
+            "ถูก",
+            "ไม่ใช่ขนาดและระยะเวลาที่ถูกต้อง",
+            "ต้องใช้ตามตารางต่อเนื่อง ไม่ใช่เมื่ออยากสูบ",
+            "เริ่มยาขณะยังสูบบุหรี่ แล้วหยุดสูบภายในวันที่ 5",
+            "ต้องหยุดสูบบุหรี่ภายในวันที่ 5 การสูบต่อเสี่ยงพิษนิโคติน",
+          ],
+          k: "Cytisine (อภ.): 25 วัน ลดขนาดตามตาราง (เริ่ม 6 เม็ด/วัน), เลิกบุหรี่ภายในวันที่ 5; ทางเลือก: NRT, nortriptyline, varenicline",
         },
         {
           d: "hard",
           p: "ประเมินพบว่าผู้ป่วยมีแรงสูดหายใจเข้าสูงสุด (peak inspiratory flow) เพียง 25 L/min และมือไม่มีแรงกดหลอดยา อุปกรณ์ใดเหมาะสมที่สุดสำหรับ LABA + LAMA?",
           o: [
-            "Soft mist inhaler หรือ pMDI ร่วมกับ spacer (มีผู้ช่วยกดหลอดยา)",
-            "Dry powder inhaler ชนิดแคปซูล",
-            "Dry powder inhaler ชนิด multi-dose",
+            "Soft mist inhaler (Respimat) หรือ pMDI ร่วมกับ spacer โดยมีผู้ดูแลช่วยกด",
+            "Dry powder inhaler ชนิดแคปซูล (Breezhaler)",
+            "Dry powder inhaler ชนิด multi-dose (Ellipta)",
             "pMDI กดเองโดยไม่ใช้ spacer",
             "ใช้ยาชนิดรับประทานแทนยาพ่น",
           ],
           a: 0,
-          r: "DPI ต้องอาศัยแรงสูดที่เพียงพอ (โดยทั่วไป ≥30–60 L/min) เพื่อให้ผงยาแตกตัวเข้าปอด ผู้ที่ PIF ต่ำจึงไม่เหมาะ. Soft mist inhaler หรือ pMDI + spacer ไม่ต้องใช้แรงสูดมาก และ spacer ลดปัญหาการประสานมือกับการหายใจ (ผู้ดูแลช่วยกดได้) หรือใช้ nebulizer",
-          w: ["ถูก", "แรงสูดไม่พอให้ยาแตกตัว", "แรงสูดไม่พอให้ยาแตกตัว", "ต้องประสานการกดกับการหายใจ และมือไม่มีแรง", "LABA/LAMA ชนิดรับประทานไม่มีใช้ใน COPD"],
-          k: "PIF <30 L/min → หลีกเลี่ยง DPI; ใช้ SMI, pMDI + spacer หรือ nebulizer",
+          r:
+            "หลักการเลือกอุปกรณ์: ต้องพิจารณา 3 ด้าน — แรงสูดหายใจ (PIF), ความสามารถประสานการกดกับการหายใจ (coordination), และความแข็งแรง/ทักษะของมือ รวมถึงการรู้คิดของผู้ป่วย\n\n" +
+            "DPI: ต้องอาศัยแรงสูดของผู้ป่วยเองในการทำให้ผงยาแตกตัว (de-aggregation) เป็นอนุภาคเล็กพอเข้าปอด โดยทั่วไปต้องการ PIF ≥30 L/min (อุปกรณ์ความต้านทานสูงอาจต้อง ≥60 L/min) ผู้ป่วย PIF 25 L/min จึงได้ยาเข้าปอดน้อยมาก พบบ่อยในผู้สูงอายุและ COPD รุนแรง\n\n" +
+            "ทางเลือกที่เหมาะ: Soft mist inhaler (Respimat) ปล่อยละอองช้าและนาน ไม่ต้องใช้แรงสูดมาก แต่ต้องหมุนฐานก่อนใช้ (อาจยากสำหรับมือไม่มีแรง ผู้ดูแลช่วยได้); pMDI + spacer ไม่ต้องใช้แรงสูดมากและลดปัญหาการประสานกดกับหายใจ ผู้ดูแลช่วยกดได้; nebulizer เป็นทางเลือกเมื่อใช้อุปกรณ์อื่นไม่ได้\n\n" +
+            "ข้อควรรู้สำหรับเภสัชกร: ประเมิน PIF ด้วยเครื่อง In-Check DIAL ได้ในคลินิก; ความผิดพลาดของเทคนิคการใช้ยาพ่นพบได้ถึง 50–80% และเป็นสาเหตุหลักของการควบคุมโรคไม่ได้ ควรให้ผู้ป่วยสาธิตให้ดูทุกครั้ง (teach-back)",
+          w: [
+            "ถูก",
+            "แรงสูดไม่พอให้ผงยาแตกตัวเข้าปอด",
+            "แรงสูดไม่พอให้ผงยาแตกตัวเข้าปอด",
+            "ต้องประสานการกดกับการหายใจ และมือไม่มีแรง ยาส่วนใหญ่ตกที่คอ",
+            "LABA/LAMA ชนิดรับประทานไม่มีใช้ใน COPD และยาพ่นให้ผลดีกว่า ADR น้อยกว่า",
+          ],
+          k: "PIF <30 L/min → หลีกเลี่ยง DPI; ใช้ soft mist inhaler, pMDI + spacer หรือ nebulizer; ประเมิน PIF/มือ/coordination ก่อนเลือกอุปกรณ์",
         },
       ],
     },
@@ -244,22 +383,32 @@ export const MOCK2_DAY02: Record<string, Pc1MockItem[]> = {
       title: "Acute severe asthma in the emergency department",
       base:
         "หญิงไทยอายุ 30 ปี เป็นโรคหืด มาห้องฉุกเฉินด้วยหอบมาก พูดได้เป็นคำๆ RR 30/min HR 124/min SpO₂ 90% room air PEF 40% ของค่าที่ดีที่สุด ไม่มีภาวะหมดสติ",
-      ref: "GINA 2024 Global Strategy for Asthma Management and Prevention (management of exacerbations)",
+      ref: "GINA 2024 Global Strategy for Asthma Management and Prevention (management of exacerbations); แนวทางการวินิจฉัยและรักษาโรคหืดในประเทศไทย สำหรับผู้ใหญ่",
       qs: [
         {
           d: "easy",
           p: "การรักษาเบื้องต้นที่เหมาะสมที่สุดคือข้อใด?",
           o: [
-            "ให้ออกซิเจนเป้าหมาย SpO₂ 93–95% และ salbutamol พ่นฝอยละอองซ้ำทุก 20 นาทีร่วมกับ ipratropium",
+            "ให้ออกซิเจนเป้าหมาย SpO₂ 93–95% และ salbutamol พ่นฝอยละอองซ้ำทุก 20 นาทีร่วมกับ ipratropium (หรือ Berodual)",
             "ให้ montelukast 10 mg รับประทานทันที",
             "ให้ salmeterol/fluticasone 2 puffs",
-            "ให้ theophylline รับประทาน",
+            "ให้ theophylline SR รับประทาน",
             "ให้ยานอนหลับเพื่อลดความกังวล",
           ],
           a: 0,
-          r: "Acute severe asthma: ออกซิเจนให้ SpO₂ 93–95%, SABA ขนาดสูงซ้ำ (ทุก 20 นาทีในชั่วโมงแรกหรือต่อเนื่อง) ร่วมกับ ipratropium ลดการนอนโรงพยาบาล และให้ systemic corticosteroid เร็ว. ห้ามให้ยากดประสาท",
-          w: ["ถูก", "ไม่ใช่ยาบรรเทาอาการเฉียบพลัน", "LABA ออกฤทธิ์ช้า (salmeterol) ไม่ใช้ในภาวะเฉียบพลัน", "ไม่แนะนำ ประสิทธิภาพต่ำ ADR มาก", "กดการหายใจ อันตราย"],
-          k: "Acute severe asthma: O₂ (SpO₂ 93–95%) + SABA ซ้ำ + ipratropium + systemic steroid; ห้ามยากดประสาท",
+          r:
+            "การประเมินความรุนแรง: พูดได้เป็นคำๆ RR >30 HR >120 SpO₂ <90% PEF ≤50% = severe exacerbation (GINA) ต้องรักษาเร่งด่วนและพิจารณาส่งต่อ\n\n" +
+            "ขั้นตอนการรักษา: (1) ออกซิเจน titrate ให้ SpO₂ 93–95% (ไม่ให้ออกซิเจนสูงเกินเพราะอาจเพิ่ม PaCO₂) (2) SABA ขนาดสูง: salbutamol nebulized 2.5–5 mg ทุก 20 นาทีในชั่วโมงแรก หรือ pMDI + spacer 4–10 puffs ซ้ำ (3) ipratropium bromide ร่วมกับ SABA ในอาการรุนแรง ลดการนอนโรงพยาบาล — ในไทยใช้ Berodual (fenoterol + ipratropium) พ่นฝอยละอองบ่อย (4) systemic corticosteroid ภายใน 1 ชั่วโมง (5) ประเมินซ้ำทุก 1 ชั่วโมง\n\n" +
+            "ข้อห้าม: ยานอนหลับหรือยาคลายกังวลกดการหายใจ ห้ามใช้ในหืดกำเริบ; ไม่แนะนำ antibiotic เป็นประจำถ้าไม่มีหลักฐานการติดเชื้อแบคทีเรีย\n\n" +
+            "ข้อควรรู้สำหรับเภสัชกร: ADR ของ SABA ขนาดสูง: หัวใจเต้นเร็ว มือสั่น hypokalemia hyperglycemia และ lactic acidosis ควรติดตาม K; สัญญาณอันตรายที่ต้องส่ง ICU: ซึม สับสน silent chest หัวใจเต้นช้า PaCO₂ ปกติหรือสูง",
+          w: [
+            "ถูก",
+            "ไม่ใช่ยาบรรเทาอาการเฉียบพลัน ออกฤทธิ์ช้า",
+            "Salmeterol ออกฤทธิ์ช้า ไม่ใช้บรรเทาอาการเฉียบพลัน",
+            "ออกฤทธิ์ช้า ไม่แนะนำในภาวะเฉียบพลัน",
+            "กดการหายใจ อันตรายถึงชีวิต",
+          ],
+          k: "Severe asthma exacerbation: O₂ (SpO₂ 93–95%) + SABA ซ้ำทุก 20 นาที + ipratropium + systemic steroid ภายใน 1 ชม.; ห้ามยากดประสาท",
         },
         {
           d: "medium",
@@ -272,9 +421,19 @@ export const MOCK2_DAY02: Record<string, Pc1MockItem[]> = {
             "ไม่ต้องให้ steroid ถ้าตอบสนองต่อ salbutamol",
           ],
           a: 0,
-          r: "GINA แนะนำ prednisolone 40–50 mg/day (หรือเทียบเท่า) นาน 5–7 วันในผู้ใหญ่ ให้ภายใน 1 ชั่วโมงแรก ลดการกลับเป็นซ้ำและการนอนโรงพยาบาล. ใช้ไม่เกิน 2 สัปดาห์หยุดได้โดยไม่ต้อง taper และควรเริ่ม/ปรับ ICS ต่อเมื่อกลับบ้าน",
-          w: ["ถูก", "ขนาดต่ำและสั้นเกินไป", "นานเกินจำเป็น เพิ่ม ADR", "ไม่ใช่การรักษาหืด", "Exacerbation รุนแรงต้องให้ systemic steroid เสมอ"],
-          k: "Asthma exacerbation (ผู้ใหญ่): prednisolone 40–50 mg/day 5–7 วัน ไม่ต้อง taper",
+          r:
+            "กลไก: Corticosteroid ลดการอักเสบของหลอดลม (ลด cytokine, eosinophil, บวมของเยื่อบุ) และเพิ่มการตอบสนองของ β2 receptor ออกฤทธิ์ชัดเจนหลัง 4–6 ชั่วโมง จึงต้องให้เร็วตั้งแต่ชั่วโมงแรก\n\n" +
+            "ขนาดยา (GINA): ผู้ใหญ่ prednisolone 40–50 mg/วัน (1 mg/kg สูงสุด 50 mg) นาน 5–7 วัน; เด็ก 1–2 mg/kg/วัน สูงสุด 40 mg นาน 3–5 วัน. ยาทางปากได้ผลเท่ายาฉีดถ้าผู้ป่วยกลืนได้ (ฉีด hydrocortisone/methylprednisolone เมื่อทานไม่ได้หรืออาการรุนแรงมาก). Dexamethasone ทางปาก 1–2 วันเป็นทางเลือก\n\n" +
+            "ไม่ต้อง taper: การใช้ steroid น้อยกว่า 2 สัปดาห์ยังไม่กด HPA axis จนมีนัยสำคัญ หยุดได้ทันที\n\n" +
+            "ข้อควรรู้สำหรับเภสัชกร: ก่อนกลับบ้านต้องเริ่มหรือเพิ่ม ICS-containing controller ทุกราย (steroid ทางปากไม่ใช่การรักษาระยะยาว), ตรวจเทคนิคการพ่นยา, ทำ written action plan และนัดติดตามใน 2–7 วัน; ผู้ที่ได้ oral steroid ≥2 ครั้ง/ปีควรส่งประเมิน severe asthma",
+          w: [
+            "ถูก",
+            "ขนาดต่ำและสั้นเกินไป",
+            "นานเกินจำเป็น เพิ่ม ADR และกด HPA axis",
+            "ไม่ใช่การรักษาหืด",
+            "Exacerbation รุนแรงต้องให้ systemic steroid เสมอ ลดการกลับมารักษาซ้ำ",
+          ],
+          k: "Asthma exacerbation (ผู้ใหญ่): prednisolone 40–50 mg/day 5–7 วัน ไม่ต้อง taper; เริ่ม/เพิ่ม ICS ก่อนกลับบ้าน",
         },
         {
           d: "hard",
@@ -287,23 +446,43 @@ export const MOCK2_DAY02: Record<string, Pc1MockItem[]> = {
             "Propranolol IV เพื่อลด heart rate",
           ],
           a: 0,
-          r: "Magnesium sulfate IV (2 g ใน 20 นาที) ช่วยคลายกล้ามเนื้อหลอดลม ลดการนอนโรงพยาบาลในผู้ที่มีอาการรุนแรงหรือไม่ตอบสนองต่อการรักษาเบื้องต้น. Aminophylline ไม่แนะนำเพราะได้ผลไม่ต่างและ ADR มาก. ประเมินความจำเป็นเข้า ICU/ใส่ท่อช่วยหายใจ",
-          w: ["ถูก", "ไม่แนะนำ ประสิทธิภาพต่ำ ADR มาก", "ไม่ใช้ในภาวะเฉียบพลัน", "ไม่มีบทบาทในภาวะรุนแรงเฉียบพลัน", "Beta-blocker ทำให้หลอดลมหดเกร็ง อันตรายมาก"],
-          k: "Severe asthma ไม่ตอบสนอง → MgSO₄ 2 g IV ใน 20 นาที; ไม่แนะนำ aminophylline",
+          r:
+            "กลไก: Magnesium ยับยั้ง calcium channel ในกล้ามเนื้อเรียบของหลอดลม ทำให้คลายตัว และลดการหลั่ง acetylcholine และ histamine\n\n" +
+            "หลักฐานและข้อบ่งใช้: GINA แนะนำ MgSO₄ 2 g IV หยดใน 20 นาที (เด็ก 40 mg/kg สูงสุด 2 g) ในผู้ที่มีอาการรุนแรงเมื่อมาถึง (FEV1/PEF <25–30%) หรือไม่ตอบสนองต่อการรักษาเบื้องต้น ลดการนอนโรงพยาบาลในผู้ใหญ่บางกลุ่ม ADR: หน้าแดง ร้อนวูบวาบ ความดันต่ำ (ถ้าหยดเร็ว)\n\n" +
+            "ยาที่ไม่แนะนำ: aminophylline/theophylline IV ได้ผลไม่ต่างจากการรักษามาตรฐานแต่ ADR สูง (คลื่นไส้ arrhythmia ชัก) และมี therapeutic index แคบ; beta-blocker ทุกชนิด (รวม cardioselective ในภาวะเฉียบพลัน) ทำให้หลอดลมหดเกร็งรุนแรง\n\n" +
+            "ข้อควรรู้สำหรับเภสัชกร: ต้องประเมินความจำเป็นเข้า ICU (ซึม PaCO₂ สูง เหนื่อยล้า) และใส่ท่อช่วยหายใจ; ระวังการคำนวณขนาดยาเพราะ MgSO₄ มีหลายความเข้มข้นในไทย (10%, 50%) — 2 g = 50% MgSO₄ 4 mL ต้องเจือจางก่อนหยด เป็นยา high-alert",
+          w: [
+            "ถูก",
+            "ไม่แนะนำ ประสิทธิภาพไม่เพิ่ม ADR มาก",
+            "LABA ไม่ใช้ในภาวะเฉียบพลัน",
+            "ไม่มีบทบาทในภาวะรุนแรงเฉียบพลัน",
+            "Beta-blocker ทำให้หลอดลมหดเกร็ง อันตรายมาก",
+          ],
+          k: "Severe asthma ไม่ตอบสนอง → MgSO₄ 2 g IV ใน 20 นาที (ระวังความเข้มข้น 50% = high-alert); ไม่แนะนำ aminophylline",
         },
       ],
     },
     {
-      ref: "ACCP Guideline: Cough due to ACE inhibitors; ACEI prescribing information",
+      ref: "ACCP Guideline: Cough due to ACE inhibitors; แนวทางการรักษาโรคความดันโลหิตสูงในเวชปฏิบัติทั่วไป สมาคมความดันโลหิตสูงแห่งประเทศไทย 2567",
       qs: [
         {
           d: "easy",
           p: "ผู้ป่วยความดันโลหิตสูงใช้ enalapril 10 mg BID มา 2 เดือน มีไอแห้งๆ เรื้อรัง ไม่มีไข้ CXR ปกติ ข้อใดเหมาะสมที่สุด?",
-          o: ["เปลี่ยนเป็น losartan", "เพิ่ม dextromethorphan และใช้ enalapril ต่อ", "เปลี่ยนเป็น lisinopril", "เพิ่ม amoxicillin", "เพิ่ม salbutamol MDI"],
+          o: ["เปลี่ยนเป็น losartan", "เพิ่ม dextromethorphan และใช้ enalapril ต่อ", "เปลี่ยนเป็น ramipril", "เพิ่ม amoxicillin", "เพิ่ม salbutamol MDI"],
           a: 0,
-          r: "ACEI ยับยั้งการทำลาย bradykinin และ substance P ทำให้ไอแห้งได้ 5–20% (พบมากในคนเอเชีย) เป็น class effect จึงควรเปลี่ยนเป็น ARB ซึ่งไม่มีผลต่อ bradykinin อาการไอมักหายใน 1–4 สัปดาห์",
-          w: ["ถูก", "ยาแก้ไอไม่ได้ผลกับไอจาก ACEI", "ACEI ทุกตัวทำให้ไอได้ (class effect)", "ไม่ใช่การติดเชื้อ", "ไม่ใช่หลอดลมหดเกร็ง"],
-          k: "ACEI cough (bradykinin) = class effect → เปลี่ยนเป็น ARB",
+          r:
+            "กลไก: ACE (kininase II) นอกจากเปลี่ยน angiotensin I เป็น II แล้วยังทำลาย bradykinin และ substance P. การยับยั้ง ACE ทำให้สารเหล่านี้สะสมในทางเดินหายใจ กระตุ้น cough reflex (ผ่าน prostaglandin) เกิดไอแห้ง ระคายคอ\n\n" +
+            "ระบาดวิทยา: พบ 5–35% พบบ่อยในคนเอเชียและผู้หญิง เกิดได้ตั้งแต่ไม่กี่ชั่วโมงถึงหลายเดือนหลังเริ่มยา ไม่ขึ้นกับขนาด และเป็น class effect ทุกตัวในกลุ่ม ACEI\n\n" +
+            "การจัดการ: เปลี่ยนเป็น ARB (losartan ในบัญชียาหลักแห่งชาติ) ซึ่งกั้น AT1 receptor โดยตรงไม่มีผลต่อ bradykinin อาการไอมักหายใน 1–4 สัปดาห์ (บางรายถึง 3 เดือน) หลังหยุดยา\n\n" +
+            "ข้อควรรู้สำหรับเภสัชกร: ต้องแยก angioedema (bradykinin เช่นกัน) ซึ่งอันตรายกว่า — ถ้าเกิด angioedema จาก ACEI ต้องหยุดยาถาวร และระวังการใช้ ARB/ARNI (sacubitril/valsartan ห้ามใช้ในผู้มีประวัติ angioedema จาก ACEI); ร้านยามักพบผู้ป่วยซื้อยาแก้ไอกินเองโดยไม่รู้ว่าเกิดจากยาลดความดัน",
+          w: [
+            "ถูก",
+            "ยาแก้ไอไม่ได้ผลกับไอจาก ACEI เพราะไม่แก้สาเหตุ",
+            "ACEI ทุกตัวทำให้ไอได้ (class effect)",
+            "ไม่ใช่การติดเชื้อ ไม่มีไข้และ CXR ปกติ",
+            "ไม่ใช่หลอดลมหดเกร็ง",
+          ],
+          k: "ACEI cough (bradykinin) = class effect → เปลี่ยนเป็น ARB; แยก angioedema ซึ่งต้องหยุดยาถาวร",
         },
       ],
     },
@@ -318,21 +497,31 @@ export const MOCK2_DAY02: Record<string, Pc1MockItem[]> = {
             "ใช้ต่อเพราะเป็นอาการของโรคหืด",
             "เปลี่ยนเวลาให้ยาเป็นตอนเช้าแล้วใช้ต่อได้เลย",
             "เพิ่มขนาดเป็น 10 mg",
-            "เพิ่ม diphenhydramine ก่อนนอน",
+            "เพิ่ม chlorpheniramine ก่อนนอน",
           ],
           a: 0,
-          r: "Montelukast มี boxed warning เรื่อง neuropsychiatric events: ฝันร้าย นอนไม่หลับ ซึมเศร้า ก้าวร้าว จนถึงความคิดฆ่าตัวตาย ควรหยุดยาและประเมิน ไม่ใช่ยาตัวแรกสำหรับภูมิแพ้จมูกเมื่อมีทางเลือกอื่น",
-          w: ["ถูก", "เป็น ADR ที่มี boxed warning", "ยังคงเสี่ยงอาการทางจิตประสาท", "เพิ่มความเสี่ยง และเกินขนาดของเด็กอายุนี้", "ไม่แก้สาเหตุ และทำให้ง่วงซึม"],
-          k: "Montelukast: boxed warning neuropsychiatric (ฝันร้าย ก้าวร้าว ความคิดฆ่าตัวตาย)",
+          r:
+            "หลักการ: Montelukast เป็น leukotriene receptor antagonist (CysLT1) ใช้ในหืดและภูมิแพ้จมูก ในปี 2020 FDA เพิ่ม boxed warning เรื่อง neuropsychiatric events จากรายงานผลข้างเคียงจำนวนมาก ทั้งในเด็กและผู้ใหญ่ อาจเกิดระหว่างใช้ยาหรือหลังหยุดยา\n\n" +
+            "อาการที่ต้องเฝ้าระวัง: ฝันร้าย/ฝันชัดเจน นอนไม่หลับ ละเมอ หงุดหงิด ก้าวร้าว กระวนกระวาย ซึมเศร้า สมาธิสั้นลง ย้ำคิดย้ำทำ ภาพหลอน จนถึงความคิดหรือพฤติกรรมฆ่าตัวตาย\n\n" +
+            "การจัดการ: หยุดยาและประเมิน อาการมักดีขึ้นหลังหยุดยา; ในโรคหืดใช้ ICS เป็นหลักแทน. FDA แนะนำให้สงวน montelukast สำหรับภูมิแพ้จมูกไว้ในผู้ที่ใช้ยาอื่นไม่ได้หรือไม่ได้ผล เพราะ intranasal steroid และ antihistamine มีประสิทธิภาพดีกว่าและปลอดภัยกว่า\n\n" +
+            "ข้อควรรู้สำหรับเภสัชกร: ต้องแจ้งผู้ปกครองทุกครั้งที่จ่าย montelukast ให้สังเกตอารมณ์และพฤติกรรม และมีเอกสารแนะนำ (Medication Guide); ผู้ปกครองมักไม่เชื่อมโยงอาการกับยา",
+          w: [
+            "ถูก",
+            "เป็น ADR ที่มี boxed warning ไม่ใช่อาการของโรคหืด",
+            "ยังคงเสี่ยงอาการทางจิตประสาท ไม่ได้ขึ้นกับเวลาให้ยา",
+            "เพิ่มความเสี่ยง และเกินขนาดของเด็กอายุ 6–14 ปี (5 mg)",
+            "ไม่แก้สาเหตุ และ first-gen antihistamine ทำให้ง่วง ซึม หรือกระวนกระวายในเด็ก",
+          ],
+          k: "Montelukast: boxed warning neuropsychiatric (ฝันร้าย ก้าวร้าว ความคิดฆ่าตัวตาย) → หยุดยา; สงวนไว้สำหรับ AR เมื่อยาอื่นไม่ได้ผล",
         },
       ],
     },
     {
-      ref: "ARIA 2019/2020 Guideline for Allergic Rhinitis; Intranasal corticosteroid patient information",
+      ref: "ARIA 2019/2020 Guideline for Allergic Rhinitis; แนวทางเวชปฏิบัติโรคจมูกอักเสบภูมิแพ้ สมาคมโรคภูมิแพ้ โรคหืด และวิทยาภูมิคุ้มกันแห่งประเทศไทย",
       qs: [
         {
           d: "easy",
-          p: "ผู้ป่วยโรคจมูกอักเสบจากภูมิแพ้ต่อเนื่อง เริ่มใช้ fluticasone พ่นจมูก คำแนะนำใดถูกต้องที่สุด?",
+          p: "ผู้ป่วยโรคจมูกอักเสบจากภูมิแพ้ต่อเนื่อง เริ่มใช้ fluticasone furoate พ่นจมูก คำแนะนำใดถูกต้องที่สุด?",
           o: [
             "พ่นทุกวันต่อเนื่อง หันหัวพ่นออกจากผนังกั้นจมูก ยาเริ่มได้ผลใน 1–2 วันและเต็มที่ใน 1–2 สัปดาห์",
             "พ่นเฉพาะวันที่มีอาการ",
@@ -341,9 +530,19 @@ export const MOCK2_DAY02: Record<string, Pc1MockItem[]> = {
             "สูดยาเข้าลึกให้ยาลงคอ",
           ],
           a: 0,
-          r: "Intranasal corticosteroid เป็นยาหลักของ persistent allergic rhinitis ได้ผลดีที่สุดเมื่อใช้สม่ำเสมอ พ่นโดยใช้มือข้างตรงข้าม หันหัวพ่นออกจากผนังกั้นจมูก ลดเลือดกำเดาและผนังจมูกทะลุ. อาการจมูกบวมซ้ำ (rhinitis medicamentosa) เกิดกับ decongestant ไม่ใช่ steroid",
-          w: ["ถูก", "ได้ผลน้อยเมื่อใช้เป็นครั้งคราว", "เสี่ยงเลือดกำเดาและผนังกั้นจมูกทะลุ", "เป็นข้อควรระวังของ decongestant พ่นจมูก", "ยาควรอยู่ในโพรงจมูก ไม่ใช่ลงคอ"],
-          k: "INCS: ใช้ทุกวัน, หันออกจาก septum, onset 1–2 วัน เต็มที่ 1–2 สัปดาห์; rebound = decongestant",
+          r:
+            "หลักการ: Intranasal corticosteroid (INCS) เป็นยาที่มีประสิทธิภาพสูงสุดของ allergic rhinitis ระดับปานกลาง–รุนแรงหรือเป็นต่อเนื่อง ลดทั้งคัดจมูก น้ำมูก จาม คัน และอาการทางตา โดยลดการอักเสบและ mast cell/eosinophil ในเยื่อบุ\n\n" +
+            "เทคนิคการพ่นที่ถูกต้อง: (1) สั่งน้ำมูกก่อน เขย่าขวด (2) ก้มหน้าเล็กน้อย (3) ใช้มือข้างตรงข้ามพ่น (มือขวาพ่นรูจมูกซ้าย) ปลายหัวพ่นชี้ไปทางหางตาด้านนอก ห่างจากผนังกั้นจมูก (4) สูดเบาๆ ไม่ต้องสูดแรงให้ยาลงคอ\n\n" +
+            "ระยะเวลาออกฤทธิ์: เริ่มได้ผลในหลายชั่วโมงถึง 1–2 วัน ผลเต็มที่ 1–2 สัปดาห์ จึงต้องใช้ทุกวันสม่ำเสมอ ผู้ป่วยมักหยุดเองเพราะคิดว่าไม่ได้ผลในวันแรก\n\n" +
+            "ข้อควรรู้สำหรับเภสัชกร: ADR เฉพาะที่: เลือดกำเดา ระคายจมูก (ลดได้ด้วยการพ่นให้ห่างผนังกั้นจมูก) ผนังกั้นจมูกทะลุพบน้อย; systemic effect ต่ำมากโดยเฉพาะ fluticasone furoate/mometasone. แยกจาก decongestant พ่นจมูก (oxymetazoline) ซึ่งห้ามใช้เกิน 3–5 วันเพราะเกิด rhinitis medicamentosa — ในไทยพบผู้ติดยาพ่นกลุ่มนี้บ่อย",
+          w: [
+            "ถูก",
+            "ได้ผลน้อยเมื่อใช้เป็นครั้งคราว ควรใช้ทุกวัน",
+            "เสี่ยงเลือดกำเดาและผนังกั้นจมูกทะลุ",
+            "เป็นข้อควรระวังของ decongestant พ่นจมูก ไม่ใช่ steroid",
+            "ยาควรอยู่ในโพรงจมูก ไม่ใช่ลงคอ",
+          ],
+          k: "INCS: ใช้ทุกวัน, มือข้างตรงข้าม หันออกจาก septum, onset 1–2 วัน เต็มที่ 1–2 สัปดาห์; rebound congestion = decongestant พ่นจมูก",
         },
       ],
     },
