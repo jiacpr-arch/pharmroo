@@ -64,7 +64,8 @@ export default function McqMock({
       const isCorrect = userAnswer === q.correct_answer;
       if (isCorrect) correct++;
 
-      const subjectId = q.subject_id;
+      // จัดกลุ่มตามหมวดย่อยใน mcq_subjects (เช่น 12 หมวดของ PC1 Mock) ถ้ามี
+      const subjectId = q.mcq_subjects?.id ?? q.subject_id;
       const subjectName = q.mcq_subjects?.name_th || "ไม่ระบุ";
       const icon = q.mcq_subjects?.icon || "📝";
 
