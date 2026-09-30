@@ -1,30 +1,71 @@
 import type { McqQuestion } from "@/lib/types-mcq";
 import type { Pc1Q } from "@/lib/pc1-case-builder";
+import { PC1_ALL } from "@/lib/pc1-bank";
 
 // ตัวสร้างข้อสอบ PC1 Mock (ชุดละ 120 ข้อ, 12 หมวด × 10 ข้อ)
-// item ที่มี base = เคสต่อเนื่องหลายข้อ; item ที่ไม่มี base = ข้อเดี่ยว
-// ใช้ Pc1Q แบบเดียวกับชุดรายวัน (d ไม่ระบุ = medium)
-export type Pc1MockItem = { title?: string; base?: string; ref: string; qs: Pc1Q[] };
+// - item ที่มี base = เคสต่อเนื่องหลายข้อ; ไม่มี base = ข้อเดี่ยว (ใช้ Pc1Q แบบชุดรายวัน, d ไม่ระบุ = medium)
+// - { reuse: N } = ดึง Case N ทั้งเคสจากคลัง PC1 เดิม (ตัวเลือก/เฉลยคงเดิม เปลี่ยนเฉพาะเลขข้อ เลขเคส และหมวด)
+export type Pc1MockNewItem = { title?: string; base?: string; ref: string; qs: Pc1Q[] };
+export type Pc1MockItem = Pc1MockNewItem | { reuse: number };
 export type Pc1MockDomain = { key: string; name_th: string; icon: string; items: Pc1MockItem[] };
 
+// 12 หมวดของ PC1 ตามลำดับในชุดข้อสอบ
+export const PC1_MOCK_DOMAINS: Omit<Pc1MockDomain, "items">[] = [
+  { key: "cardio", name_th: "หัวใจและหลอดเลือด", icon: "❤️" },
+  { key: "infection", name_th: "โรคติดเชื้อ", icon: "🦠" },
+  { key: "renal", name_th: "ไตและอิเล็กโทรไลต์", icon: "🫘" },
+  { key: "endocrine", name_th: "ต่อมไร้ท่อ", icon: "🩸" },
+  { key: "neuro", name_th: "ระบบประสาท", icon: "🧠" },
+  { key: "psych", name_th: "จิตเวช", icon: "💭" },
+  { key: "resp", name_th: "ระบบหายใจ", icon: "🫁" },
+  { key: "gi", name_th: "ทางเดินอาหารและตับ", icon: "🍽️" },
+  { key: "heme", name_th: "โลหิตวิทยาและมะเร็ง", icon: "🧬" },
+  { key: "rheum", name_th: "ข้อ กระดูก และความปวด", icon: "🦴" },
+  { key: "special", name_th: "กลุ่มประชากรพิเศษ", icon: "👶" },
+  { key: "critical", name_th: "ภาวะวิกฤตและพิษวิทยา", icon: "🚨" },
+];
+
 const labels = ["A", "B", "C", "D", "E"];
-// แต่ละ 10 ข้อมีคำตอบ A–E ตำแหน่งละ 2 ข้อ → ชุด 120 ข้อได้ A–E ละ 24 ข้อ (ยกเว้นตัวเลือกเชิงตัวเลข)
+// แต่ละ 10 ข้อใหม่มีคำตอบ A–E ตำแหน่งละ 2 ข้อ (ยกเว้นตัวเลือกเชิงตัวเลขที่คงลำดับจากน้อยไปมาก)
 const KEY = [2, 0, 3, 1, 4, 1, 3, 0, 4, 2];
 
 export function buildPc1Mock(
   domains: Pc1MockDomain[],
-  opts: { setNo: number; qOffset: number; caseOffset: number; createdAt: string }
+  opts: { setNo: number; createdAt: string }
 ): McqQuestion[] {
   const out: McqQuestion[] = [];
-  let n = opts.qOffset;
-  let caseNo = opts.caseOffset;
+  let n = 0;
+  let caseNo = 0;
+  const subject = (dom: Pc1MockDomain) => ({
+    id: `pc1-${dom.key}`, name: "PC1", name_th: dom.name_th, icon: dom.icon,
+    exam_type: "PLE-PC" as const, question_count: 120, created_at: opts.createdAt,
+  });
+  const id = () => `pc1m${opts.setNo}q${String(n).padStart(3, "0")}`;
+  const source = `PharmRU PC1 Mock Set ${opts.setNo}`;
+
   for (const dom of domains) {
     for (const item of dom.items) {
+      if ("reuse" in item) {
+        const src = PC1_ALL.filter((q) => q.scenario.startsWith(`Case ${item.reuse} —`));
+        if (!src.length) throw new Error(`PC1 case ${item.reuse} not found`);
+        caseNo++;
+        for (const q of src) {
+          n++;
+          out.push({
+            ...q,
+            id: id(),
+            exam_source: source,
+            question_number: n,
+            scenario: q.scenario.replace(/^Case \d+ — /, `Case ${caseNo} — `),
+            mcq_subjects: subject(dom),
+          });
+        }
+        continue;
+      }
       const isCase = !!item.base;
       if (isCase) caseNo++;
       item.qs.forEach((q, qi) => {
         n++;
-        // ตัวเลือกเชิงตัวเลขคงลำดับจากน้อยไปมาก; ตัวเลือกข้อความวางคำตอบตาม KEY
         const numeric = q.o.every((t) => /^[\d.,]+ /.test(t));
         const order = q.o.map((_, j) => j).filter((j) => j !== q.a);
         order.splice(numeric ? q.a : KEY[(n - 1) % KEY.length], 0, q.a);
@@ -32,17 +73,16 @@ export function buildPc1Mock(
         const w = order.map((j) => q.w[j]);
         const ai = order.indexOf(q.a);
         const ans = labels[ai];
-        const stem = isCase
-          ? `Case ${caseNo} — ${item.title}\n${item.base}\n\nคำถาม ${qi + 1}/${item.qs.length}: ${q.p}`
-          : q.p;
         out.push({
-          id: `pc1m${opts.setNo}q${String(n).padStart(3, "0")}`,
+          id: id(),
           subject_id: "pc1",
           exam_type: "PLE-PC",
-          exam_source: `PharmRU PC1 Mock Set ${opts.setNo}`,
+          exam_source: source,
           exam_day: null,
           question_number: n,
-          scenario: stem,
+          scenario: isCase
+            ? `Case ${caseNo} — ${item.title}\n${item.base}\n\nคำถาม ${qi + 1}/${item.qs.length}: ${q.p}`
+            : q.p,
           image_url: null,
           choices: o.map((text, j) => ({ label: labels[j], text })),
           correct_answer: ans,
@@ -59,7 +99,7 @@ export function buildPc1Mock(
           ai_notes: "PC1 mock exam item (12-domain blueprint); clinical/editorial verification required before commercial publication.",
           status: "active",
           created_at: opts.createdAt,
-          mcq_subjects: { id: `pc1-${dom.key}`, name: "PC1", name_th: dom.name_th, icon: dom.icon, exam_type: "PLE-PC", question_count: 120, created_at: opts.createdAt },
+          mcq_subjects: subject(dom),
         });
       });
     }
