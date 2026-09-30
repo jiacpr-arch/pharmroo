@@ -13,6 +13,7 @@ import { IP1_SET2_DAY04 } from "@/lib/ip1-set2-day04";
 import { IP1_SET2_DAY05 } from "@/lib/ip1-set2-day05";
 import { IP1_SET2_DAY06 } from "@/lib/ip1-set2-day06";
 import { IP1_SET2_DAY07 } from "@/lib/ip1-set2-day07";
+import { IP1_SET2_DAY08 } from "@/lib/ip1-set2-day08";
 import { PHCP1_DAY01 } from "@/lib/phcp1-day01";
 import { PHCP1_DAY02 } from "@/lib/phcp1-day02";
 import { Badge } from "@/components/ui/badge";
@@ -49,7 +50,7 @@ async function PracticeContent({
 
   const selectedQuestions =
     track === "ip1"
-      ? [...IP1_PILOT_050, ...IP1_SET2_DAY01, ...IP1_SET2_DAY02, ...IP1_SET2_DAY03, ...IP1_SET2_DAY04, ...IP1_SET2_DAY05, ...IP1_SET2_DAY06, ...IP1_SET2_DAY07]
+      ? [...IP1_PILOT_050, ...IP1_SET2_DAY01, ...IP1_SET2_DAY02, ...IP1_SET2_DAY03, ...IP1_SET2_DAY04, ...IP1_SET2_DAY05, ...IP1_SET2_DAY06, ...IP1_SET2_DAY07, ...IP1_SET2_DAY08]
       : track === "phcp1"
         ? [...PHCP1_DAY01, ...PHCP1_DAY02]
         : rawQuestions;
@@ -83,7 +84,7 @@ async function PracticeContent({
               <div className="flex items-center gap-2 text-xl font-bold"><Factory className="h-6 w-6 text-amber-500" /> IP1 — เภสัชกรรมอุตสาหการ</div>
               <p className="mt-2 text-sm text-muted-foreground">Industrial Pharmacy · Mock Set 1 จำนวน 150 ข้อ · ข้อ 101–150 เน้นอ่าน Monograph / Assay / Chromatography ระดับ Very Hard</p>
               <p className="mt-1 text-xs text-muted-foreground">Formulation · Manufacturing · Chromatography · Stability · Sterile · QA/QC · GMP · Validation</p>
-              <p className="mt-1 text-xs text-muted-foreground">+ Daily Set 2 (ทยอยอัปเดตวันละ 10 ข้อ) · ตอนนี้มี {IP1_SET2_DAY01.length + IP1_SET2_DAY02.length + IP1_SET2_DAY03.length + IP1_SET2_DAY04.length + IP1_SET2_DAY05.length + IP1_SET2_DAY06.length + IP1_SET2_DAY07.length} ข้อ — Day 1: Cleanroom/HVAC/GMP Grade · Day 2: Impurity/Cleaning/Elemental/Scale-up calculations · Day 3: Sterilization/Aseptic processing validation · Day 4: Process capability/Sampling/Qualification/Tech transfer · Day 5: Physical pharmacy/Biopharmaceutics/Packaging calculations · Day 6: Compaction physics/Stability design/DOE/Analytical technique · Day 7: Water systems/GDP/SPC/Manufacturing troubleshooting</p>
+              <p className="mt-1 text-xs text-muted-foreground">+ Daily Set 2 (ทยอยอัปเดตวันละ 10 ข้อ) · ตอนนี้มี {IP1_SET2_DAY01.length + IP1_SET2_DAY02.length + IP1_SET2_DAY03.length + IP1_SET2_DAY04.length + IP1_SET2_DAY05.length + IP1_SET2_DAY06.length + IP1_SET2_DAY07.length + IP1_SET2_DAY08.length} ข้อ — Day 1: Cleanroom/HVAC/GMP Grade · Day 2: Impurity/Cleaning/Elemental/Scale-up calculations · Day 3: Sterilization/Aseptic processing validation · Day 4: Process capability/Sampling/Qualification/Tech transfer · Day 5: Physical pharmacy/Biopharmaceutics/Packaging calculations · Day 6: Compaction physics/Stability design/DOE/Analytical technique · Day 7: Water systems/GDP/SPC/Manufacturing troubleshooting · Day 8: Suppository/Filter integrity/D-value/Biopharmaceutics</p>
             </div>
           )}
           {track === "phcp1" && (
