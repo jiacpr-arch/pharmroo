@@ -16,6 +16,7 @@ import { IP1_SET2_DAY07 } from "@/lib/ip1-set2-day07";
 import { IP1_SET2_DAY08 } from "@/lib/ip1-set2-day08";
 import { PHCP1_DAY01 } from "@/lib/phcp1-day01";
 import { PHCP1_DAY02 } from "@/lib/phcp1-day02";
+import { PHCP1_DAY03 } from "@/lib/phcp1-day03";
 import { Badge } from "@/components/ui/badge";
 import ExamNews, { ExamNewsSkeleton } from "@/components/ExamNews";
 import Link from "next/link";
@@ -52,7 +53,7 @@ async function PracticeContent({
     track === "ip1"
       ? [...IP1_PILOT_050, ...IP1_SET2_DAY01, ...IP1_SET2_DAY02, ...IP1_SET2_DAY03, ...IP1_SET2_DAY04, ...IP1_SET2_DAY05, ...IP1_SET2_DAY06, ...IP1_SET2_DAY07, ...IP1_SET2_DAY08]
       : track === "phcp1"
-        ? [...PHCP1_DAY01, ...PHCP1_DAY02]
+        ? [...PHCP1_DAY01, ...PHCP1_DAY02, ...PHCP1_DAY03]
         : rawQuestions;
 
   const [{ questions, creditBalance }, playAllowance] = await Promise.all([
@@ -91,7 +92,7 @@ async function PracticeContent({
             <div>
               <div className="flex items-center gap-2 text-xl font-bold"><ShieldCheck className="h-6 w-6 text-emerald-600" /> PHCP1 — คุ้มครองผู้บริโภคด้านยาและสุขภาพ</div>
               <p className="mt-2 text-sm text-muted-foreground">Public Health & Consumer Protection · 120 ข้อ</p>
-              <p className="mt-1 text-xs text-muted-foreground">+ Daily (ทยอยอัปเดต) · ตอนนี้มี {PHCP1_DAY01.length + PHCP1_DAY02.length} ข้อ — Day 1: กฎหมายยา/ยาเสพติด/เครื่องสำอาง/อาหาร · ความรับผิดต่อสินค้า · ระบาดวิทยา · RDU · Day 2 (ปานกลาง–ยาก): สอบสวนการระบาด · สถิติ/EBM · ICER · พิษวิทยา · วัคซีน · PDC · ยาปนเปื้อนสเตียรอยด์</p>
+              <p className="mt-1 text-xs text-muted-foreground">+ Daily (ทยอยอัปเดต) · ตอนนี้มี {PHCP1_DAY01.length + PHCP1_DAY02.length + PHCP1_DAY03.length} ข้อ — Day 1: กฎหมายยา/ยาเสพติด/เครื่องสำอาง/อาหาร · ความรับผิดต่อสินค้า · ระบาดวิทยา · RDU · Day 2 (ปานกลาง–ยาก): สอบสวนการระบาด · สถิติ/EBM · ICER · พิษวิทยา · วัคซีน · PDC · ยาปนเปื้อนสเตียรอยด์ · Day 3 (ปานกลาง–ยาก): confounding/NNT/person-time · DDD/WHO-UMC/PRR · NCC MERP · พิษ CO/salicylate · พิษสุนัขบ้า/ไข้เลือดออก</p>
               <Link href="/sets?exam=PLE-PHCP1" className="mt-5 inline-flex rounded-xl bg-brand px-5 py-3 text-sm font-bold text-white">ดูชุดข้อสอบ PHCP1 →</Link>
             </div>
           )}
