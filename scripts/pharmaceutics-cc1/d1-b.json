@@ -1,0 +1,1971 @@
+[
+  {
+    "scenario": "สูตรตำรับยาเม็ด Paracetamol 500 mg (wet granulation) ประกอบด้วย Paracetamol 500 mg, Lactose monohydrate 60 mg, Povidone K30 15 mg, Croscarmellose sodium 18 mg, Colloidal silicon dioxide 2 mg และ Magnesium stearate 5 mg สาร Croscarmellose sodium ในตำรับนี้ทำหน้าที่ใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Binder"
+      },
+      {
+        "label": "B",
+        "text": "Diluent (filler)"
+      },
+      {
+        "label": "C",
+        "text": "Superdisintegrant"
+      },
+      {
+        "label": "D",
+        "text": "Lubricant"
+      },
+      {
+        "label": "E",
+        "text": "Glidant"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Croscarmellose sodium เป็น cross-linked sodium carboxymethylcellulose ที่ใช้เป็น superdisintegrant ความเข้มข้นต่ำ (ประมาณ 0.5–5%) ช่วยให้เม็ดยาแตกตัวเร็ว",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. Superdisintegrant — Croscarmellose sodium คือ superdisintegrant ที่ทำให้เม็ดยาแตกตัวโดยการพองตัวและดูดน้ำ (wicking)",
+      "reason": "Croscarmellose sodium (เช่น Ac-Di-Sol) เป็นอนุพันธ์ของ carboxymethylcellulose ที่ผ่านการ cross-link ทำให้ไม่ละลายน้ำแต่ดูดน้ำและพองตัวได้หลายเท่าอย่างรวดเร็ว กลไกหลักคือ swelling ร่วมกับ wicking (capillary action) เนื่องจากเป็นเส้นใย ทำให้แรงยึดระหว่างอนุภาคในเม็ดยาถูกทำลายและเม็ดยาแตกเป็นแกรนูล/อนุภาคเล็ก เรียกว่า superdisintegrant เพราะใช้ในความเข้มข้นต่ำ (ประมาณ 0.5–5% w/w) แต่มีประสิทธิภาพสูงกว่าแป้งข้าวโพดแบบดั้งเดิม (ที่ต้องใช้ 5–15%) ในตำรับนี้ใช้ 18 mg จากน้ำหนักรวม 600 mg = 3% ซึ่งอยู่ในช่วงปกติ superdisintegrant อื่นที่ควรรู้คือ sodium starch glycolate (2–8%) และ crospovidone (2–5%) ใน wet granulation มักแบ่งใส่ทั้ง intragranular และ extragranular เพื่อให้เม็ดแตกเป็นแกรนูลแล้วแกรนูลแตกต่อเป็นผงละเอียด ส่วนตัวอื่นในตำรับ: Povidone K30 = binder, Lactose = diluent, Colloidal SiO2 = glidant, Mg stearate = lubricant",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Binder",
+          "is_correct": false,
+          "explanation": "Binder ในตำรับนี้คือ Povidone K30 (PVP) ซึ่งละลายในน้ำ/แอลกอฮอล์และสร้างสะพานยึดอนุภาคระหว่าง wet granulation ส่วน Croscarmellose เป็นสาร cross-linked ไม่ละลายน้ำ จึงไม่ทำหน้าที่ยึดเกาะ"
+        },
+        {
+          "label": "B",
+          "text": "Diluent (filler)",
+          "is_correct": false,
+          "explanation": "Diluent ในตำรับนี้คือ Lactose monohydrate ใช้เพิ่มน้ำหนักเม็ดให้ได้ขนาดที่ตอกได้ Croscarmellose ใช้ปริมาณน้อยและมีหน้าที่ช่วยแตกตัว ไม่ใช่สารเพิ่มปริมาณ"
+        },
+        {
+          "label": "C",
+          "text": "Superdisintegrant",
+          "is_correct": true,
+          "explanation": "ถูกต้อง Croscarmellose sodium เป็น superdisintegrant ที่ดูดน้ำ พองตัว และนำน้ำเข้าเม็ดยาด้วย wicking ใช้เพียง 0.5–5%"
+        },
+        {
+          "label": "D",
+          "text": "Lubricant",
+          "is_correct": false,
+          "explanation": "Lubricant ในตำรับนี้คือ Magnesium stearate ซึ่งลดแรงเสียดทานระหว่างเม็ดยากับผนัง die ขณะ ejection Croscarmellose ไม่มีคุณสมบัติหล่อลื่น"
+        },
+        {
+          "label": "E",
+          "text": "Glidant",
+          "is_correct": false,
+          "explanation": "Glidant ในตำรับนี้คือ Colloidal silicon dioxide ซึ่งช่วยการไหลของแกรนูลลง die Croscarmellose ไม่ได้ใช้เพื่อปรับการไหล"
+        }
+      ],
+      "key_takeaway": "Superdisintegrant 3 ตัวหลัก: Croscarmellose sodium (cross-linked CMC), Sodium starch glycolate (Explotab/Primojel), Crospovidone (cross-linked PVP) — ใช้ความเข้มข้นต่ำเพียงไม่กี่ %"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "ในการผลิตยาเม็ดด้วยเครื่องตอกความเร็วสูง พบว่าแกรนูลไหลลง die ไม่สม่ำเสมอ ผู้ผลิตจึงเติม Colloidal silicon dioxide (เช่น Aerosil 200) ปริมาณ 0.2% w/w ในขั้นตอน final blending สารนี้ทำหน้าที่หลักใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Glidant"
+      },
+      {
+        "label": "B",
+        "text": "Disintegrant"
+      },
+      {
+        "label": "C",
+        "text": "Binder"
+      },
+      {
+        "label": "D",
+        "text": "Wetting agent"
+      },
+      {
+        "label": "E",
+        "text": "Sweetening agent"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Colloidal silicon dioxide เป็น glidant ที่ใช้ความเข้มข้นต่ำ (ประมาณ 0.1–0.5%) ช่วยเพิ่มการไหลของผง/แกรนูลโดยลดแรงยึดระหว่างอนุภาค",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. Glidant — Colloidal silicon dioxide คือ glidant ช่วยให้ผง/แกรนูลไหลลง die สม่ำเสมอ",
+      "reason": "Colloidal silicon dioxide มีขนาดอนุภาคระดับนาโน (primary particle ประมาณ 10–20 nm) และพื้นที่ผิวสูงมาก เมื่อผสมกับแกรนูลจะเคลือบบนผิวอนุภาคที่ใหญ่กว่า ทำให้ระยะห่างระหว่างอนุภาคเพิ่มขึ้นและลดแรง van der Waals/แรงยึดระหว่างอนุภาค ลด interparticulate friction จึงไหลได้ดีขึ้น ใช้ความเข้มข้นต่ำประมาณ 0.1–0.5% w/w (Handbook of Pharmaceutical Excipients) การไหลที่ดีทำให้การบรรจุผงลง die (die filling) สม่ำเสมอ ซึ่งสำคัญมากกับเครื่องตอกความเร็วสูงที่ dwell time ของการ fill สั้น ผลที่ได้คือ weight variation ลดลง และมักเติมในขั้นตอน final blending พร้อม lubricant (extragranular) นอกจากนี้ยังดูดความชื้นได้บ้างจึงช่วยลดการเกาะกันของผง ตัวอย่าง glidant อื่นได้แก่ talc (มักใช้ 1–10%) และ magnesium trisilicate",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Glidant",
+          "is_correct": true,
+          "explanation": "ถูกต้อง Colloidal SiO2 เป็น glidant ที่ใช้ปริมาณต่ำ ลดแรงเสียดทานและแรงยึดระหว่างอนุภาคเพื่อให้ไหลลง die สม่ำเสมอ"
+        },
+        {
+          "label": "B",
+          "text": "Disintegrant",
+          "is_correct": false,
+          "explanation": "Disintegrant เช่น croscarmellose, sodium starch glycolate หรือแป้ง ทำงานโดยพองตัว/wicking Colloidal SiO2 ไม่พองตัวในน้ำและใช้ปริมาณน้อยเกินกว่าจะช่วยแตกตัว"
+        },
+        {
+          "label": "C",
+          "text": "Binder",
+          "is_correct": false,
+          "explanation": "Binder เช่น PVP, HPMC, pregelatinized starch ทำหน้าที่ยึดอนุภาค การเติม Colloidal SiO2 extragranular ที่ 0.2% ไม่ได้มีผลยึดเกาะ"
+        },
+        {
+          "label": "D",
+          "text": "Wetting agent",
+          "is_correct": false,
+          "explanation": "Wetting agent คือ surfactant เช่น sodium lauryl sulfate หรือ polysorbate 80 ที่ลด interfacial tension Colloidal SiO2 ไม่ใช่ surfactant"
+        },
+        {
+          "label": "E",
+          "text": "Sweetening agent",
+          "is_correct": false,
+          "explanation": "Sweetener เช่น aspartame, sucralose, mannitol ใช้ในยาเม็ดเคี้ยว Colloidal SiO2 ไม่มีรสหวาน"
+        }
+      ],
+      "key_takeaway": "Glidant = ช่วยไหล (Colloidal SiO2 0.1–0.5%, talc), Lubricant = ลดแรงเสียดทานกับผนัง die (Mg stearate), Antiadherent = กันติดหน้า punch (talc, colloidal SiO2)"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "ยาเม็ดตัวยาสำคัญที่ไม่ชอบน้ำมาก (hydrophobic, BCS class II) ผลิตโดย wet granulation พบว่าเม็ดยาแตกตัวได้ตามเกณฑ์แต่อัตราการละลาย (dissolution) ต่ำ ผู้ตั้งตำรับจึงเติม Sodium lauryl sulfate 1% w/w ลงในน้ำยา binder สารนี้ทำหน้าที่ใดเป็นหลัก",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Lubricant"
+      },
+      {
+        "label": "B",
+        "text": "Glidant"
+      },
+      {
+        "label": "C",
+        "text": "Antiadherent"
+      },
+      {
+        "label": "D",
+        "text": "Superdisintegrant"
+      },
+      {
+        "label": "E",
+        "text": "Wetting agent"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "Sodium lauryl sulfate เป็น anionic surfactant ที่ใช้เป็น wetting agent ลด contact angle ระหว่างผิวผงยา hydrophobic กับน้ำ ทำให้ medium ซึมเข้าและยาละลายเร็วขึ้น",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. Wetting agent — SLS ในตำรับนี้เป็น wetting agent ที่เพิ่มการเปียกของผงยา hydrophobic จึงเพิ่ม dissolution rate",
+      "reason": "ยาที่ไม่ชอบน้ำมี contact angle กับน้ำสูง ผิวผงจึงไม่เปียก ถึงเม็ดยาจะแตกตัวเป็นแกรนูลแล้ว อนุภาคยาก็อาจลอยหรือเกาะกลุ่มทำให้พื้นที่ผิวที่สัมผัส medium น้อยและละลายช้า Sodium lauryl sulfate (SLS) เป็น anionic surfactant ที่ดูดซับบนผิว solid–liquid interface ลด interfacial tension และ contact angle ทำให้น้ำแทรกเข้าสู่ผิวอนุภาคและ pore ของเม็ดยาได้ดีขึ้น ตามสมการ Noyes–Whitney พื้นที่ผิวที่เปียกได้จริงเพิ่มขึ้นจึงทำให้ dissolution rate เพิ่ม การใส่ SLS ในน้ำยา binder ทำให้สารกระจายบนผิวผงยาอย่างใกล้ชิดระหว่าง wet massing ซึ่งได้ผลดีกว่าการผสมแห้ง ความเข้มข้นที่ใช้เป็น wetting agent ในยาเม็ดมักประมาณ 1–2% SLS ยังมีคุณสมบัติหล่อลื่นได้บ้าง (ใช้เป็น lubricant แบบละลายน้ำในบางตำรับ) แต่บทบาทในโจทย์นี้ซึ่งปัญหาคือ dissolution ต่ำ คือ wetting agent",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Lubricant",
+          "is_correct": false,
+          "explanation": "Lubricant หลักคือ Mg stearate ใส่ในขั้น final blending ส่วน SLS แม้มีฤทธิ์หล่อลื่นอ่อน ๆ แต่ในโจทย์ใส่ในน้ำยา binder เพื่อแก้ปัญหา dissolution ไม่ใช่เพื่อลดแรง ejection"
+        },
+        {
+          "label": "B",
+          "text": "Glidant",
+          "is_correct": false,
+          "explanation": "Glidant เช่น colloidal SiO2 หรือ talc ใช้ปรับการไหลของแกรนูล ไม่เกี่ยวข้องกับการเปียกน้ำของผงยา"
+        },
+        {
+          "label": "C",
+          "text": "Antiadherent",
+          "is_correct": false,
+          "explanation": "Antiadherent เช่น talc ใช้ป้องกันการติดหน้า punch (sticking/picking) SLS ไม่ได้ใส่เพื่อจุดประสงค์นี้"
+        },
+        {
+          "label": "D",
+          "text": "Superdisintegrant",
+          "is_correct": false,
+          "explanation": "Superdisintegrant เช่น croscarmellose พองตัวทำให้เม็ดแตก โจทย์ระบุว่าเม็ดแตกตัวได้ตามเกณฑ์แล้ว ปัญหาคือการละลายของอนุภาคยา และ SLS ไม่พองตัว"
+        },
+        {
+          "label": "E",
+          "text": "Wetting agent",
+          "is_correct": true,
+          "explanation": "ถูกต้อง SLS เป็น surfactant ที่ลด contact angle ทำให้ผงยา hydrophobic เปียกน้ำได้ดี จึงเพิ่ม dissolution rate"
+        }
+      ],
+      "key_takeaway": "เม็ดแตกดีแต่ละลายช้าในยา hydrophobic → เติม wetting agent (SLS, polysorbate 80, docusate sodium) ประมาณ 1–2%"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ลำดับขั้นตอนการผลิตยาเม็ดด้วยวิธี wet granulation แบบดั้งเดิมข้อใดถูกต้อง",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ชั่งและผสมผงแห้ง → เติม lubricant → wet massing → อบแห้ง → ร่อนแห้ง → ตอกเม็ด"
+      },
+      {
+        "label": "B",
+        "text": "ชั่งและผสมผงแห้ง → wet massing ด้วยน้ำยา binder → ร่อนเปียก (wet screening) → อบแห้ง → ร่อนแห้ง (dry screening) → ผสม lubricant/glidant → ตอกเม็ด"
+      },
+      {
+        "label": "C",
+        "text": "ชั่งและผสมผงแห้ง → slugging → ร่อนแห้ง → wet massing → อบแห้ง → ตอกเม็ด"
+      },
+      {
+        "label": "D",
+        "text": "ชั่งและผสมผงแห้ง → wet massing → อบแห้ง → ผสม lubricant → ร่อนเปียก → ตอกเม็ด"
+      },
+      {
+        "label": "E",
+        "text": "ชั่งและผสมผงแห้ง → ร่อนแห้ง → wet massing → ผสม lubricant → อบแห้ง → ตอกเม็ด"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Wet granulation: ผสมผงแห้ง → เติม binder ทำ wet mass → ร่อนเปียก → อบแห้ง → ร่อนแห้งให้ได้ขนาดแกรนูล → ผสม lubricant/glidant (และ extragranular disintegrant) → ตอก",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. ชั่งและผสมผงแห้ง → wet massing ด้วยน้ำยา binder → ร่อนเปียก (wet screening) → อบแห้ง → ร่อนแห้ง (dry screening) → ผสม lubricant/glidant → ตอกเม็ด — ลำดับที่ถูกคือ ผสมแห้ง → wet massing → wet screening → drying → dry screening → lubrication → compression",
+      "reason": "ขั้นแรกคือชั่งและผสมตัวยา diluent และ disintegrant ส่วน intragranular ให้เข้ากัน จากนั้นเติมน้ำยา binder (หรือเติม binder แห้งแล้วเติมตัวทำละลาย) เพื่อทำ wet massing จนได้ความชื้นเหมาะสม แล้วนำ wet mass ผ่านตะแกรงหยาบ (เช่น mesh 6–12) เพื่อให้ได้แกรนูลเปียกขนาดสม่ำเสมอซึ่งช่วยให้แห้งเร็วและทั่วถึง จากนั้นอบแห้ง (tray dryer หรือ fluid bed dryer) จนความชื้น (LOD) ได้ตามที่กำหนด แล้วนำแกรนูลแห้งมาร่อน/บดผ่านตะแกรงละเอียดกว่า (dry screening/milling เช่น mesh 14–20) เพื่อทำลายก้อนที่เกาะกันขณะอบให้ได้ particle size distribution ที่ต้องการ ขั้นสุดท้ายผสม extragranular excipients ได้แก่ disintegrant ส่วนนอก glidant และ lubricant โดย lubricant (Mg stearate) ต้องใส่หลังสุดและผสมระยะสั้น (ประมาณ 2–5 นาที) เพราะการผสมนานเกินจะเคลือบผิวอนุภาคด้วยฟิล์มไม่ชอบน้ำ ทำให้เม็ดอ่อนและ dissolution ช้า ในเครื่อง high-shear mixer ร่วมกับ fluid bed dryer บางขั้นตอนอาจรวมกัน แต่หลักการลำดับยังคงเดิม",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ชั่งและผสมผงแห้ง → เติม lubricant → wet massing → อบแห้ง → ร่อนแห้ง → ตอกเม็ด",
+          "is_correct": false,
+          "explanation": "ผิด เพราะใส่ lubricant ก่อน wet massing ทำให้ Mg stearate ซึ่งไม่ชอบน้ำไปขัดขวางการยึดเกาะของ binder และขาดขั้นร่อนเปียก lubricant ต้องเติมหลังสุดก่อนตอก"
+        },
+        {
+          "label": "B",
+          "text": "ชั่งและผสมผงแห้ง → wet massing ด้วยน้ำยา binder → ร่อนเปียก (wet screening) → อบแห้ง → ร่อนแห้ง (dry screening) → ผสม lubricant/glidant → ตอกเม็ด",
+          "is_correct": true,
+          "explanation": "ถูกต้อง เป็นลำดับมาตรฐานของ wet granulation โดย lubricant/glidant เติมในขั้น final blending ก่อนตอก"
+        },
+        {
+          "label": "C",
+          "text": "ชั่งและผสมผงแห้ง → slugging → ร่อนแห้ง → wet massing → อบแห้ง → ตอกเม็ด",
+          "is_correct": false,
+          "explanation": "ผิด เพราะ slugging เป็นขั้นตอนของ dry granulation ไม่ใช้ร่วมกับ wet massing ในกระบวนการปกติ"
+        },
+        {
+          "label": "D",
+          "text": "ชั่งและผสมผงแห้ง → wet massing → อบแห้ง → ผสม lubricant → ร่อนเปียก → ตอกเม็ด",
+          "is_correct": false,
+          "explanation": "ผิด เพราะร่อนเปียกต้องทำทันทีหลัง wet massing ก่อนอบแห้ง ไม่ใช่หลังผสม lubricant ซึ่งแกรนูลแห้งแล้ว"
+        },
+        {
+          "label": "E",
+          "text": "ชั่งและผสมผงแห้ง → ร่อนแห้ง → wet massing → ผสม lubricant → อบแห้ง → ตอกเม็ด",
+          "is_correct": false,
+          "explanation": "ผิด เพราะผสม lubricant ก่อนอบแห้ง และไม่มีขั้น dry screening หลังอบ ทำให้ได้แกรนูลจับก้อน ขนาดไม่สม่ำเสมอ"
+        }
+      ],
+      "key_takeaway": "Wet granulation จำว่า Mix → Wet mass → Wet screen → Dry → Dry screen → Lubricate (สุดท้ายเสมอ, ผสมสั้น) → Compress"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ในการทำ wet granulation ด้วยเครื่อง high-shear mixer granulator ขนาดผลิตจริง ฝ่ายผลิตต้องการพารามิเตอร์แบบ in-line ที่สะท้อนการเปลี่ยนแปลงความหนาแน่นและความแข็งแรงของ wet mass เพื่อใช้กำหนดจุดสิ้นสุด (granulation endpoint) อย่างเป็นวัตถุประสงค์และทำซ้ำได้ พารามิเตอร์ใดเหมาะสมที่สุด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "อุณหภูมิของอากาศขาเข้า (inlet air temperature)"
+      },
+      {
+        "label": "B",
+        "text": "ค่า loss on drying ของแกรนูลหลังอบแห้ง"
+      },
+      {
+        "label": "C",
+        "text": "ค่า bulk density ของผงก่อนเติมน้ำยา binder"
+      },
+      {
+        "label": "D",
+        "text": "การวัด power consumption ของมอเตอร์ impeller หรือ torque"
+      },
+      {
+        "label": "E",
+        "text": "เวลาที่ใช้ในการ dry screening"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "Power consumption/torque ของ impeller เพิ่มขึ้นตามการเกิด liquid bridge และ densification ของ wet mass จึงใช้ติดตาม endpoint ของ high-shear granulation แบบ in-line",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. การวัด power consumption ของมอเตอร์ impeller หรือ torque — Power consumption (หรือ torque) ของมอเตอร์ impeller คือพารามิเตอร์มาตรฐานสำหรับกำหนด endpoint ของ high-shear wet granulation",
+      "reason": "เมื่อเติมของเหลวลงในผง ความชื้นจะเปลี่ยนสถานะ liquid bridge จาก pendular → funicular → capillary ทำให้แรงยึดระหว่างอนุภาคและความหนาแน่นของ wet mass เพิ่มขึ้น แรงต้านต่อการหมุนของ impeller จึงสูงขึ้น ซึ่งสะท้อนเป็น power consumption หรือ torque ที่เพิ่มขึ้น กราฟ power consumption เทียบกับเวลา/ปริมาณของเหลวมักมีช่วงเพิ่มขึ้นแล้วเข้าสู่ plateau ช่วง plateau คือบริเวณที่ได้แกรนูลเหมาะสมและเป็นจุดที่ใช้กำหนด endpoint หากเลยไปถึงสถานะ droplet/slurry จะ over-wet และค่ากลับลดลงหรือแกว่ง การวัดนี้เป็นแบบ in-line ทำซ้ำได้ และใช้ในการ scale-up ได้ (เช่นร่วมกับ specific energy) ต่างจากวิธีดั้งเดิมคือ ‘squeeze test/ball test’ ที่ใช้มือบีบ wet mass ซึ่งขึ้นกับผู้ปฏิบัติ แกรนูลที่ over-granulate จะแข็งเกิน ตอกแล้วเม็ดแตกตัวและละลายช้า ส่วน under-granulate จะมี fines มาก ไหลไม่ดีและเกิด capping ได้ เทคนิค PAT อื่นที่ใช้ได้ เช่น NIR หรือ FBRM แต่ power consumption/torque เป็นคำตอบคลาสสิกในการสอบ",
+      "choices": [
+        {
+          "label": "A",
+          "text": "อุณหภูมิของอากาศขาเข้า (inlet air temperature)",
+          "is_correct": false,
+          "explanation": "Inlet air temperature เป็นพารามิเตอร์ของขั้นตอนอบแห้งใน fluid bed dryer ไม่ได้สะท้อนการเกิดแกรนูลใน high-shear mixer"
+        },
+        {
+          "label": "B",
+          "text": "ค่า loss on drying ของแกรนูลหลังอบแห้ง",
+          "is_correct": false,
+          "explanation": "LOD ใช้เป็น endpoint ของขั้นตอน drying ไม่ใช่ wet massing และวัดได้หลังกระบวนการ ไม่ใช่ in-line ระหว่างการ granulate"
+        },
+        {
+          "label": "C",
+          "text": "ค่า bulk density ของผงก่อนเติมน้ำยา binder",
+          "is_correct": false,
+          "explanation": "Bulk density ของผงก่อนเติม binder เป็นคุณสมบัติของวัตถุดิบตั้งต้น ไม่บอกความคืบหน้าของ granulation"
+        },
+        {
+          "label": "D",
+          "text": "การวัด power consumption ของมอเตอร์ impeller หรือ torque",
+          "is_correct": true,
+          "explanation": "ถูกต้อง Power consumption/torque เพิ่มตามการเกิด liquid bridge และ densification ของ wet mass ช่วง plateau ใช้เป็น endpoint ที่ทำซ้ำได้"
+        },
+        {
+          "label": "E",
+          "text": "เวลาที่ใช้ในการ dry screening",
+          "is_correct": false,
+          "explanation": "เวลา dry screening เป็นขั้นตอนหลังอบแห้ง ไม่เกี่ยวกับการกำหนดจุดสิ้นสุดการทำ wet mass"
+        }
+      ],
+      "key_takeaway": "High-shear granulation endpoint = power consumption/torque (in-line); วิธีดั้งเดิม = squeeze/ball test; drying endpoint = LOD"
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "ตัวยาสำคัญขนาด 300 mg ต่อเม็ด สลายตัวได้ง่ายเมื่อสัมผัสความชื้นและความร้อน (hydrolysis) ผงยามีการไหลไม่ดีและมี bulk density ต่ำ แต่สามารถถูกอัดเป็นก้อนได้ วิธีเตรียมยาเม็ดที่เหมาะสมที่สุดคือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Dry granulation ด้วย roller compaction (หรือ slugging) แล้วบดเป็นแกรนูลก่อนตอก"
+      },
+      {
+        "label": "B",
+        "text": "Wet granulation โดยใช้น้ำเป็นตัวทำละลาย binder และอบที่ 60 °C"
+      },
+      {
+        "label": "C",
+        "text": "Direct compression โดยผสมตัวยากับ Mg stearate อย่างเดียว"
+      },
+      {
+        "label": "D",
+        "text": "Wet granulation ใน fluid bed granulator โดยพ่นน้ำยา PVP ในน้ำ"
+      },
+      {
+        "label": "E",
+        "text": "Melt granulation ด้วย PEG 6000 ที่อุณหภูมิ 70 °C"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "ยาที่ไวต่อความชื้น/ความร้อน ขนาดสูง และไหลไม่ดี เหมาะกับ dry granulation (slugging หรือ roller compaction) ซึ่งเพิ่มขนาดอนุภาคและความหนาแน่นโดยไม่ใช้ของเหลวและไม่ต้องอบ",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. Dry granulation ด้วย roller compaction (หรือ slugging) แล้วบดเป็นแกรนูลก่อนตอก — Dry granulation (roller compaction/slugging) เหมาะกับยาที่ไวต่อความชื้นและความร้อนแต่ไหลไม่ดี",
+      "reason": "Dry granulation ทำโดยอัดผงให้เป็นก้อน ได้แก่ slugging (ตอกเป็นเม็ดใหญ่ด้วยเครื่องตอกหนัก) หรือ roller compaction (ผ่านลูกกลิ้งคู่ได้แผ่น ribbon/compact) แล้วบด (milling) และร่อนให้ได้แกรนูล ข้อดีคือไม่ใช้น้ำหรือตัวทำละลายและไม่มีขั้นตอนอบแห้ง จึงเหมาะกับยาที่ hydrolysis หรือสลายด้วยความร้อน เช่น aspirin และยาบางชนิดที่ไวต่อความชื้น อีกทั้งยังเพิ่มขนาดอนุภาคและ bulk density ทำให้ไหลดีขึ้นและบรรจุ die สม่ำเสมอ ซึ่งแก้ปัญหาการไหลไม่ดีของผงยา ในโจทย์นี้ยาขนาด 300 mg (dose สูง) จึงทำ direct compression ได้ยากเพราะคุณสมบัติของตัวยาจะครอบงำการไหลและการอัดตัวของ blend ข้อควรระวังของ dry granulation คือ work hardening — วัสดุที่ถูกอัดครั้งแรกจะสูญเสียความสามารถในการอัดตัวบางส่วน ทำให้เม็ดยาสุดท้ายอาจแข็งน้อยลง และมีฝุ่น/fines มากกว่า wet granulation ปัจจุบันนิยม roller compaction มากกว่า slugging เพราะควบคุมได้ดี ต่อเนื่อง และ scale-up ง่าย",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Dry granulation ด้วย roller compaction (หรือ slugging) แล้วบดเป็นแกรนูลก่อนตอก",
+          "is_correct": true,
+          "explanation": "ถูกต้อง Dry granulation ไม่ใช้น้ำและไม่ต้องอบแห้ง จึงหลีกเลี่ยง hydrolysis และการสลายด้วยความร้อน พร้อมทั้งเพิ่มขนาดและความหนาแน่นของอนุภาคให้ไหลดีขึ้น"
+        },
+        {
+          "label": "B",
+          "text": "Wet granulation โดยใช้น้ำเป็นตัวทำละลาย binder และอบที่ 60 °C",
+          "is_correct": false,
+          "explanation": "ผิด Wet granulation ด้วยน้ำและอบที่ 60 °C ทำให้ยาที่ไวต่อความชื้นและความร้อนสลายตัว"
+        },
+        {
+          "label": "C",
+          "text": "Direct compression โดยผสมตัวยากับ Mg stearate อย่างเดียว",
+          "is_correct": false,
+          "explanation": "ผิด ผงยามีการไหลไม่ดีและ bulk density ต่ำ และเป็นยาขนาดสูง การตอกตรงโดยไม่มี DC excipient จะเกิด weight variation และเม็ดไม่แข็งแรง"
+        },
+        {
+          "label": "D",
+          "text": "Wet granulation ใน fluid bed granulator โดยพ่นน้ำยา PVP ในน้ำ",
+          "is_correct": false,
+          "explanation": "ผิด Fluid bed granulation ยังคงใช้น้ำยา binder ในน้ำและใช้ลมร้อนอบ จึงเสี่ยงต่อ hydrolysis เช่นเดียวกับ wet granulation อื่น"
+        },
+        {
+          "label": "E",
+          "text": "Melt granulation ด้วย PEG 6000 ที่อุณหภูมิ 70 °C",
+          "is_correct": false,
+          "explanation": "ผิด Melt granulation หลีกเลี่ยงน้ำได้ แต่ต้องใช้ความร้อนหลอม binder (PEG 6000 หลอมที่ประมาณ 55–63 °C) จึงไม่เหมาะกับยาที่ไวต่อความร้อน"
+        }
+      ],
+      "key_takeaway": "ไวความชื้น/ความร้อน + ไหลไม่ดี + dose สูง → Dry granulation (roller compaction ได้ ribbon; slugging ได้ slug); ระวัง work hardening"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ผู้ตั้งตำรับต้องการผลิตยาเม็ดด้วยวิธี direct compression สารเพิ่มปริมาณ (diluent) ข้อใดไม่เหมาะสมที่จะใช้เป็นสารหลักในการตอกตรง",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Microcrystalline cellulose (Avicel PH102)"
+      },
+      {
+        "label": "B",
+        "text": "Spray-dried lactose"
+      },
+      {
+        "label": "C",
+        "text": "Lactose monohydrate ชนิดบดละเอียด (milled, ขนาดเล็กกว่า 75 µm)"
+      },
+      {
+        "label": "D",
+        "text": "Dibasic calcium phosphate dihydrate ชนิด DC grade (เช่น Emcompress)"
+      },
+      {
+        "label": "E",
+        "text": "Pregelatinized starch (Starch 1500)"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Lactose monohydrate ชนิดบดละเอียดมีอนุภาคเล็ก ไหลไม่ดี และอัดตัวได้น้อย จึงเหมาะกับ wet granulation มากกว่า ส่วนตัวเลือกอื่นเป็น DC grade ที่ไหลดีและอัดตัวได้ดี",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. Lactose monohydrate ชนิดบดละเอียด (milled, ขนาดเล็กกว่า 75 µm) — Milled lactose monohydrate ไม่เหมาะกับ direct compression เพราะไหลไม่ดีและ compressibility ต่ำ",
+      "reason": "Direct compression ต้องการ blend ที่มีสองคุณสมบัติหลักคือ flowability ดี (เพื่อ die filling สม่ำเสมอ) และ compressibility/compactability ดี (อัดแล้วได้เม็ดแข็งแรง) เนื่องจากไม่มีขั้นตอน granulation มาปรับปรุงคุณสมบัติ ดังนั้นจึงต้องใช้ DC excipients ที่ผ่านการดัดแปลงทางกายภาพ เช่น spray-dried lactose (อนุภาคกลม มีส่วน amorphous ช่วยยึดเกาะ ไหลดี), anhydrous lactose, MCC PH102 (อนุภาคใหญ่กว่า PH101 จึงไหลดีกว่า และเกิด plastic deformation ให้เม็ดแข็ง), DCP dihydrate DC grade (แกรนูลหยาบ ไหลดี fragment ภายใต้แรงอัด) และ Starch 1500 (ช่วยทั้งไหล อัดตัว และแตกตัว) ส่วน lactose monohydrate แบบบดละเอียด (เช่น 200 mesh) มี cohesiveness สูง ไหลไม่ดี และ compactability ต่ำ จึงใช้เป็น diluent ใน wet granulation ซึ่งการทำแกรนูลจะแก้ไขข้อด้อยเหล่านี้ ข้อดีของ direct compression คือขั้นตอนน้อย ไม่ใช้ความร้อน/ความชื้น และ dissolution มักเร็ว ข้อจำกัดคือ excipient ราคาแพง ปัญหา segregation และไม่เหมาะกับยาขนาดสูงที่อัดตัวไม่ดี",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Microcrystalline cellulose (Avicel PH102)",
+          "is_correct": false,
+          "explanation": "MCC PH102 เป็น DC excipient ที่ดีที่สุดตัวหนึ่ง อัดตัวด้วย plastic deformation ให้เม็ดแข็ง และ PH102 มีอนุภาคใหญ่ไหลดีกว่า PH101"
+        },
+        {
+          "label": "B",
+          "text": "Spray-dried lactose",
+          "is_correct": false,
+          "explanation": "Spray-dried lactose ผ่านการพ่นแห้งให้อนุภาคกลม ไหลดี และมีส่วน amorphous ช่วยยึดเกาะ จึงออกแบบมาสำหรับ direct compression"
+        },
+        {
+          "label": "C",
+          "text": "Lactose monohydrate ชนิดบดละเอียด (milled, ขนาดเล็กกว่า 75 µm)",
+          "is_correct": true,
+          "explanation": "ถูกต้อง Lactose monohydrate บดละเอียดมีอนุภาคเล็ก cohesive ไหลไม่ดีและอัดตัวได้ไม่ดี จึงเหมาะกับ wet granulation ไม่ใช่ direct compression"
+        },
+        {
+          "label": "D",
+          "text": "Dibasic calcium phosphate dihydrate ชนิด DC grade (เช่น Emcompress)",
+          "is_correct": false,
+          "explanation": "DCP dihydrate DC grade (Emcompress) เป็นแกรนูลหยาบ ไหลดี และเกิด brittle fracture ภายใต้แรงอัด ใช้ตอกตรงได้ดี (แต่เป็นสารไม่ละลายน้ำ)"
+        },
+        {
+          "label": "E",
+          "text": "Pregelatinized starch (Starch 1500)",
+          "is_correct": false,
+          "explanation": "Starch 1500 เป็นแป้งดัดแปลงบางส่วนที่ไหลและอัดตัวได้ดีกว่าแป้งธรรมดา และยังช่วยแตกตัว ใช้ใน direct compression ได้"
+        }
+      ],
+      "key_takeaway": "DC excipients: MCC PH102, spray-dried/anhydrous lactose, DCP (Emcompress), Starch 1500, mannitol DC grade — ต้อง ‘ไหลดี + อัดตัวดี’"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ยาเม็ดขนาด 100 mg มีตัวยาสำคัญเพียง 0.5 mg ต่อเม็ด ผลิตด้วยวิธี direct compression โดยผสมตัวยาผงละเอียดมาก (D50 ประมาณ 5 µm) กับ spray-dried lactose (D50 ประมาณ 120 µm) ปัญหาคุณภาพที่ต้องกังวลมากที่สุดคือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ความแข็งของเม็ดยาสูงเกินไปจนไม่แตกตัว"
+      },
+      {
+        "label": "B",
+        "text": "การเกิด mottling จากการเคลื่อนที่ของสีขณะอบแห้ง"
+      },
+      {
+        "label": "C",
+        "text": "การเกิด hydrolysis ของตัวยาระหว่าง wet massing"
+      },
+      {
+        "label": "D",
+        "text": "Friability สูงเนื่องจากใช้ spray-dried lactose"
+      },
+      {
+        "label": "E",
+        "text": "ความไม่สม่ำเสมอของปริมาณตัวยา (content uniformity) จากการผสมไม่ทั่วและ segregation"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "ยาขนาดต่ำที่มีขนาดอนุภาคต่างจาก excipient มาก เสี่ยงต่อการผสมไม่ทั่วและแยกชั้น (segregation) ระหว่างการขนส่ง/ไหลลง hopper ทำให้ content uniformity ไม่ผ่าน",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. ความไม่สม่ำเสมอของปริมาณตัวยา (content uniformity) จากการผสมไม่ทั่วและ segregation — ปัญหาหลักคือ content uniformity เพราะยาขนาดต่ำมากและขนาดอนุภาคต่างกันมาก ทำให้ผสมไม่ทั่วและเกิด segregation",
+      "reason": "ใน direct compression ไม่มีขั้น granulation ที่ ‘ล็อก’ ตัวยาไว้ในแกรนูล อนุภาคของยาและ excipient จึงเคลื่อนที่อิสระ เมื่อขนาด รูปร่าง หรือความหนาแน่นต่างกันมาก (ที่นี่ 5 µm เทียบ 120 µm) จะเกิด segregation ผ่านกลไก percolation/sifting ระหว่างการเท สั่นสะเทือน หรือไหลใน hopper ยาขนาดต่ำ (0.5 mg ใน 100 mg = 0.5% w/w) ยิ่งไวต่อความไม่สม่ำเสมอ ผงยาละเอียดมากยังเกาะกลุ่ม (agglomerate) จาก cohesive force และอาจเกาะผนังเครื่อง ทำให้แต่ละเม็ดได้ตัวยาไม่เท่ากัน จึงต้องทดสอบด้วย content uniformity (USP <905>) ไม่ใช่ weight variation (เพราะยา <25 mg และ <25% w/w) วิธีแก้ เช่น geometric dilution (ผสมทีละน้อยเพิ่มเป็นเท่าตัว), ใช้ excipient ขนาดใกล้ยา, ordered mixing โดยใช้ carrier ที่ยาเกาะติดผิว, ลดการสั่นสะเทือนในการขนถ่าย หรือเปลี่ยนเป็น wet granulation โดยละลายยาในน้ำยา binder ซึ่งช่วยให้ content uniformity ดีมากสำหรับยาขนาดต่ำ",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ความแข็งของเม็ดยาสูงเกินไปจนไม่แตกตัว",
+          "is_correct": false,
+          "explanation": "Spray-dried lactose ให้เม็ดที่มีความแข็งปานกลางและแตกตัวได้ ความแข็งสูงเกินไม่ใช่ปัญหาเด่นที่เกี่ยวกับยาขนาดต่ำ และปรับได้ด้วยแรงตอก"
+        },
+        {
+          "label": "B",
+          "text": "การเกิด mottling จากการเคลื่อนที่ของสีขณะอบแห้ง",
+          "is_correct": false,
+          "explanation": "Mottling เกิดจากสีละลายน้ำเคลื่อนที่ขณะอบแห้งใน wet granulation วิธี direct compression ไม่มีขั้นอบแห้งและโจทย์ไม่ได้ใช้สี"
+        },
+        {
+          "label": "C",
+          "text": "การเกิด hydrolysis ของตัวยาระหว่าง wet massing",
+          "is_correct": false,
+          "explanation": "Direct compression ไม่มี wet massing จึงไม่มีความเสี่ยง hydrolysis ระหว่างกระบวนการ (ข้อนี้คือข้อดีของการตอกตรง)"
+        },
+        {
+          "label": "D",
+          "text": "Friability สูงเนื่องจากใช้ spray-dried lactose",
+          "is_correct": false,
+          "explanation": "Spray-dried lactose อัดตัวได้ดีพอ friability สูงไม่ใช่ปัญหาหลักของตำรับนี้ และไม่เกี่ยวข้องกับขนาดยาที่ต่ำ"
+        },
+        {
+          "label": "E",
+          "text": "ความไม่สม่ำเสมอของปริมาณตัวยา (content uniformity) จากการผสมไม่ทั่วและ segregation",
+          "is_correct": true,
+          "explanation": "ถูกต้อง ยาขนาดต่ำ 0.5% w/w และขนาดอนุภาคต่างจาก carrier มาก เสี่ยงต่อการผสมไม่ทั่วและ segregation ทำให้ content uniformity ไม่ผ่าน"
+        }
+      ],
+      "key_takeaway": "Direct compression + ยาขนาดต่ำ + ขนาดอนุภาคต่างกันมาก = segregation → content uniformity ล้มเหลว; แก้ด้วย geometric dilution/ordered mixing หรือ wet granulation"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "นักวิจัยศึกษาผลของเวลาผสม Magnesium stearate (0.5% w/w) ต่อความแข็งของเม็ดยาที่ใช้สารเพิ่มปริมาณต่างชนิดกัน พบว่าเมื่อเพิ่มเวลาผสมจาก 2 เป็น 30 นาที ความแข็งของเม็ดยาสูตรหนึ่งแทบไม่เปลี่ยนแปลง สารเพิ่มปริมาณในสูตรนั้นน่าจะเป็นข้อใด และเพราะเหตุใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Microcrystalline cellulose เพราะเกิด plastic deformation และสร้างพันธะกว้างระหว่างอนุภาค"
+      },
+      {
+        "label": "B",
+        "text": "Dibasic calcium phosphate เพราะเกิด brittle fracture ได้ผิวใหม่ที่สะอาดไม่มี lubricant เคลือบระหว่างการอัด"
+      },
+      {
+        "label": "C",
+        "text": "Pregelatinized starch เพราะเกิด elastic deformation มาก"
+      },
+      {
+        "label": "D",
+        "text": "Microcrystalline cellulose เพราะดูด Mg stearate เข้าไปในรูพรุน"
+      },
+      {
+        "label": "E",
+        "text": "Corn starch เพราะเกิด plastic deformation และไม่ทำปฏิกิริยากับ lubricant"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "สารที่อัดตัวด้วย brittle fracture (เช่น DCP) แตกเป็นชิ้นเล็กระหว่างอัดและเกิดผิวใหม่ที่ไม่มีฟิล์ม lubricant จึงไวต่อเวลาผสม lubricant น้อย ต่างจาก MCC/starch ที่ deform แบบ plastic ซึ่งไวมาก",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. Dibasic calcium phosphate เพราะเกิด brittle fracture ได้ผิวใหม่ที่สะอาดไม่มี lubricant เคลือบระหว่างการอัด — Dibasic calcium phosphate อัดตัวด้วย brittle fracture ทำให้เกิดผิวสะอาดใหม่ระหว่างอัด ความแข็งจึงแทบไม่ขึ้นกับเวลาผสม lubricant",
+      "reason": "กลไกการอัดตัว (consolidation) ของผงแบ่งเป็น elastic deformation (คืนรูปเมื่อปลดแรง), plastic deformation (เปลี่ยนรูปถาวร เช่น MCC, starch บางส่วน) และ brittle fracture/fragmentation (แตกเป็นชิ้นเล็ก เช่น DCP, lactose ผลึก, sucrose) Magnesium stearate เมื่อผสมนานจะ delaminate เป็นแผ่นบางเคลือบผิวอนุภาค ฟิล์มนี้ขัดขวางการเกิดพันธะระหว่างอนุภาค สำหรับวัสดุ plastic อนุภาคไม่แตก พื้นที่ที่สัมผัสกันจึงเป็นผิวเดิมที่ถูกเคลือบด้วย lubricant ความแข็งจึงลดลงมากเมื่อผสมนาน (lubricant sensitivity สูง) แต่สำหรับวัสดุ brittle เมื่อถูกอัดจะแตกเป็นชิ้นใหม่ เกิดผิวใหม่จำนวนมากที่ไม่มี lubricant เคลือบ จึงสร้างพันธะได้ดี ความแข็งแทบไม่เปลี่ยน นี่คือเหตุผลที่ DCP และ lactose ‘lubricant insensitive’ ส่วน MCC และ starch ‘lubricant sensitive’ ในทางปฏิบัติจึงต้องควบคุมเวลาผสม lubricant อย่างเข้มงวด (มักประมาณ 2–5 นาที) โดยเฉพาะตำรับที่มี MCC สูง ผลเสียของ over-lubrication ได้แก่ ความแข็งลด เวลาแตกตัวและ dissolution ช้าลง",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Microcrystalline cellulose เพราะเกิด plastic deformation และสร้างพันธะกว้างระหว่างอนุภาค",
+          "is_correct": false,
+          "explanation": "MCC เกิด plastic deformation จริง แต่เพราะไม่แตกเป็นผิวใหม่ ผิวที่สัมผัสกันถูกเคลือบด้วย Mg stearate ความแข็งจึงลดลงมากเมื่อผสมนาน (lubricant sensitive) ไม่ใช่แทบไม่เปลี่ยน"
+        },
+        {
+          "label": "B",
+          "text": "Dibasic calcium phosphate เพราะเกิด brittle fracture ได้ผิวใหม่ที่สะอาดไม่มี lubricant เคลือบระหว่างการอัด",
+          "is_correct": true,
+          "explanation": "ถูกต้อง DCP เป็น brittle material แตกเป็นชิ้นเล็กขณะอัด ได้ผิวใหม่ที่ปลอด lubricant จึงยึดเกาะได้ดีแม้ผสม Mg stearate นาน"
+        },
+        {
+          "label": "C",
+          "text": "Pregelatinized starch เพราะเกิด elastic deformation มาก",
+          "is_correct": false,
+          "explanation": "Pregelatinized starch มี elastic/plastic behavior และไว (sensitive) ต่อ lubricant ไม่ได้เกิด fragmentation ที่ทำให้ไม่ไวต่อ lubricant"
+        },
+        {
+          "label": "D",
+          "text": "Microcrystalline cellulose เพราะดูด Mg stearate เข้าไปในรูพรุน",
+          "is_correct": false,
+          "explanation": "Mg stearate ไม่ได้ถูกดูดเข้ารูพรุนของ MCC แต่ไปเคลือบผิว MCC จึงไวต่อเวลาผสม lubricant มาก"
+        },
+        {
+          "label": "E",
+          "text": "Corn starch เพราะเกิด plastic deformation และไม่ทำปฏิกิริยากับ lubricant",
+          "is_correct": false,
+          "explanation": "Corn starch มีพฤติกรรม elastic/plastic และไวต่อ lubricant สูง ความแข็งของเม็ดลดลงมากเมื่อผสมนาน"
+        }
+      ],
+      "key_takeaway": "Brittle (DCP, lactose, sucrose) → lubricant insensitive; Plastic (MCC, starch) → lubricant sensitive; Elastic สูง (paracetamol, starch) → เสี่ยง capping"
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "ยาเม็ด Paracetamol 500 mg ผลิตด้วยเครื่องตอกแบบหมุน (rotary press) ความเร็วสูง พบว่าเม็ดยาจำนวนมากเกิดส่วนบน (crown) หลุดออกเป็นฝาเมื่อทดสอบความแข็งหรือแม้ทันทีหลัง ejection โดยแกรนูลมีความชื้นตามเกณฑ์และมีปริมาณ fines ปกติ การแก้ไขข้อใดเหมาะสมที่สุดและตรงกับกลไกการเกิดปัญหา",
+    "choices": [
+      {
+        "label": "A",
+        "text": "เพิ่มปริมาณ Magnesium stearate จาก 0.5% เป็น 2%"
+      },
+      {
+        "label": "B",
+        "text": "เพิ่มแรงตอกหลัก (main compression force) ให้สูงขึ้นอีก"
+      },
+      {
+        "label": "C",
+        "text": "อบแกรนูลให้แห้งขึ้นจนความชื้นใกล้ 0%"
+      },
+      {
+        "label": "D",
+        "text": "ลดความเร็วเครื่องตอกเพื่อเพิ่ม dwell time ใช้ precompression และเพิ่มสารที่ deform แบบ plastic เช่น MCC"
+      },
+      {
+        "label": "E",
+        "text": "เปลี่ยน punch เป็นแบบ deep concave เพื่อเพิ่มความหนาของขอบเม็ด"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "Capping ของ paracetamol เกิดจาก elastic recovery สูงและอากาศค้างเมื่อปลดแรง การลดความเร็ว (เพิ่ม dwell time), precompression และเพิ่ม plastic binder เช่น MCC ช่วยลด elastic recovery",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. ลดความเร็วเครื่องตอกเพื่อเพิ่ม dwell time ใช้ precompression และเพิ่มสารที่ deform แบบ plastic เช่น MCC — แก้ capping ของ paracetamol ด้วยการเพิ่ม dwell time, ใช้ precompression และเพิ่มวัสดุ plastic เช่น MCC เพื่อลด elastic recovery",
+      "reason": "Capping คือการที่ส่วนบนหรือล่างของเม็ดยา (crown) แยกออกจากตัวเม็ดในแนวขนานกับผิวหน้า ส่วน lamination คือการแยกเป็นหลายชั้น Paracetamol เป็นวัสดุที่มี elastic deformation สูงและ plastic deformation ต่ำ เมื่อปลดแรงอัด (decompression) และระหว่าง ejection เม็ดยาจะคืนรูปแบบ elastic (elastic recovery) ทำให้เกิด stress ภายในซึ่งทำลายพันธะที่อ่อน นอกจากนี้อากาศที่ถูกอัดค้างในเม็ด (air entrapment) ที่ความเร็วสูงก็ขยายตัวเมื่อปลดแรง ความเร็วสูงทำให้ dwell time สั้น วัสดุมีเวลาเกิด plastic flow และไล่อากาศน้อย วิธีแก้ที่ตรงกลไก: (1) ลดความเร็วเครื่องเพื่อเพิ่ม dwell time (2) ใช้ precompression เพื่อไล่อากาศและจัดเรียงอนุภาคก่อนแรงหลัก (3) เพิ่มวัสดุ plastic deformation เช่น MCC หรือเพิ่ม binder ที่เหมาะสม (4) อาจใช้ tapered die ช่วยลดแรงกดขณะ ejection และปรับความชื้นให้เหมาะ (ความชื้นช่วยเป็น plasticizer) สาเหตุอื่นของ capping ได้แก่ fines มากเกิน แกรนูลแห้งเกิน binder น้อย และ punch สึกหรอ/deep concave การเพิ่มแรงตอกมักทำให้ capping แย่ลง เพราะเก็บ elastic energy มากขึ้น",
+      "choices": [
+        {
+          "label": "A",
+          "text": "เพิ่มปริมาณ Magnesium stearate จาก 0.5% เป็น 2%",
+          "is_correct": false,
+          "explanation": "การเพิ่ม Mg stearate เป็น 2% ทำให้ over-lubrication ลดพันธะระหว่างอนุภาค เม็ดอ่อนลงและอาจ capping มากขึ้น ไม่แก้ปัญหา elastic recovery"
+        },
+        {
+          "label": "B",
+          "text": "เพิ่มแรงตอกหลัก (main compression force) ให้สูงขึ้นอีก",
+          "is_correct": false,
+          "explanation": "การเพิ่มแรงตอกสำหรับวัสดุ elastic มักทำให้เก็บ elastic energy มากขึ้นและ capping แย่ลง"
+        },
+        {
+          "label": "C",
+          "text": "อบแกรนูลให้แห้งขึ้นจนความชื้นใกล้ 0%",
+          "is_correct": false,
+          "explanation": "แกรนูลที่แห้งเกินไปเป็นสาเหตุหนึ่งของ capping เพราะความชื้นช่วยการยึดเกาะและ plasticity การอบให้แห้งจนเกือบ 0% จะทำให้แย่ลง"
+        },
+        {
+          "label": "D",
+          "text": "ลดความเร็วเครื่องตอกเพื่อเพิ่ม dwell time ใช้ precompression และเพิ่มสารที่ deform แบบ plastic เช่น MCC",
+          "is_correct": true,
+          "explanation": "ถูกต้อง เพิ่ม dwell time ให้เกิด plastic flow และไล่อากาศ precompression ลดอากาศค้าง และ MCC ช่วยเพิ่ม plastic bonding ลด elastic recovery ซึ่งตรงสาเหตุ capping ของ paracetamol"
+        },
+        {
+          "label": "E",
+          "text": "เปลี่ยน punch เป็นแบบ deep concave เพื่อเพิ่มความหนาของขอบเม็ด",
+          "is_correct": false,
+          "explanation": "Punch แบบ deep concave เป็นปัจจัยเสี่ยงที่ทำให้เกิด capping มากขึ้น การเปลี่ยนไปใช้ shallow concave หรือ flat face ต่างหากที่ช่วยลดปัญหา"
+        }
+      ],
+      "key_takeaway": "Capping = crown หลุด (elastic recovery + air entrapment) → ลดความเร็ว/เพิ่ม dwell time, precompression, เพิ่ม plastic binder (MCC), ลด fines, tapered die; เพิ่มแรงตอกมักแย่ลง"
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "ยาเม็ดที่มีการปั๊มตัวอักษรนูนต่ำบนผิวหน้าเป็นคำว่า “PARA” ระหว่างการผลิตพบว่าเนื้อยาบริเวณภายในวงของตัวอักษร P, A และ R หลุดหายไป และมีผงยาสะสมติดอยู่ในร่องตัวอักษรบนหน้า punch ปัญหานี้คืออะไรและควรแก้ไขอย่างไร",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Capping — ลดปริมาณ fines และใช้ precompression"
+      },
+      {
+        "label": "B",
+        "text": "Lamination — ลดแรงตอกและเปลี่ยนเป็น flat-faced punch"
+      },
+      {
+        "label": "C",
+        "text": "Picking — อบแกรนูลให้ความชื้นได้ตามเกณฑ์ เพิ่ม antiadherent (เช่น colloidal silicon dioxide หรือ talc) และขัดผิว/เคลือบ chrome หน้า punch หรือออกแบบตัวอักษรให้ใหญ่ขึ้น"
+      },
+      {
+        "label": "D",
+        "text": "Binding — เพิ่มปริมาณ lubricant เพื่อลดแรง ejection จากผนัง die"
+      },
+      {
+        "label": "E",
+        "text": "Chipping — ลดความเร็วของ turret และปรับ ejection cam"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "การที่เนื้อยาหลุดติดออกไปกับหน้า punch โดยเฉพาะในร่องตัวอักษร คือ picking แก้โดยลดความชื้นแกรนูล เพิ่ม antiadherent ปรับผิว punch และออกแบบ embossing ให้เหมาะ",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. Picking — อบแกรนูลให้ความชื้นได้ตามเกณฑ์ เพิ่ม antiadherent (เช่น colloidal silicon dioxide หรือ talc) และขัดผิว/เคลือบ chrome หน้า punch หรือออกแบบตัวอักษรให้ใหญ่ขึ้น — อาการนี้คือ picking ซึ่งแก้ด้วยการลดความชื้นแกรนูล เพิ่ม antiadherent และปรับปรุงผิวหน้า punch/การออกแบบตัวอักษร",
+      "reason": "Picking เป็นรูปแบบหนึ่งของ sticking ที่เนื้อเม็ดยาส่วนเล็ก ๆ ถูกดึงหลุดออกไปติดกับหน้า punch มักเกิดตรงตัวอักษร/โลโก้ที่มีพื้นที่ปิดล้อม เช่น A, B, O, P, R เพราะผงอัดแน่นในส่วนนั้นและแรงยึดกับโลหะมากกว่าแรงยึดกับเนื้อเม็ด สาเหตุหลัก ได้แก่ แกรนูลชื้นเกิน, lubricant/antiadherent ไม่พอ, ตัวยาหรือสารที่มีจุดหลอมเหลวต่ำซึ่งอ่อนตัวจากความร้อนขณะตอก, และผิวหน้า punch ขรุขระหรือสึก การแก้ไข: อบแกรนูลให้ได้ LOD ตามเกณฑ์, เพิ่ม antiadherent เช่น colloidal silicon dioxide หรือ talc, ขัดเงาหรือชุบ chrome หน้า punch, ออกแบบตัวอักษรให้ใหญ่และร่องตื้น/มุมมนขึ้น หรือลดอุณหภูมิในห้องตอก ความแตกต่างกับ sticking คือ sticking เป็นการติดของเนื้อยาเป็นวงกว้างบนหน้า punch ทำให้ผิวเม็ดหยาบด้านทั้งหน้า ส่วน binding เป็นการติดกับผนัง die",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Capping — ลดปริมาณ fines และใช้ precompression",
+          "is_correct": false,
+          "explanation": "Capping คือส่วน crown ของเม็ดแยกออกเป็นฝา เกิดจาก elastic recovery/อากาศค้าง ไม่ใช่การหลุดของเนื้อยาเฉพาะในร่องตัวอักษร"
+        },
+        {
+          "label": "B",
+          "text": "Lamination — ลดแรงตอกและเปลี่ยนเป็น flat-faced punch",
+          "is_correct": false,
+          "explanation": "Lamination คือเม็ดแยกเป็นหลายชั้นในแนวนอน ไม่ใช่เนื้อยาติดหน้า punch ในร่องตัวอักษร"
+        },
+        {
+          "label": "C",
+          "text": "Picking — อบแกรนูลให้ความชื้นได้ตามเกณฑ์ เพิ่ม antiadherent (เช่น colloidal silicon dioxide หรือ talc) และขัดผิว/เคลือบ chrome หน้า punch หรือออกแบบตัวอักษรให้ใหญ่ขึ้น",
+          "is_correct": true,
+          "explanation": "ถูกต้อง เนื้อยาในวงตัวอักษรหลุดติดหน้า punch คือ picking แก้ด้วยการควบคุมความชื้น เพิ่ม antiadherent ปรับผิว punch และการออกแบบตัวอักษร"
+        },
+        {
+          "label": "D",
+          "text": "Binding — เพิ่มปริมาณ lubricant เพื่อลดแรง ejection จากผนัง die",
+          "is_correct": false,
+          "explanation": "Binding คือเม็ดยาติดผนัง die ejection ยาก ผิวข้างเม็ดมีรอยขูด ไม่ใช่การหลุดบนผิวหน้าเม็ดยา"
+        },
+        {
+          "label": "E",
+          "text": "Chipping — ลดความเร็วของ turret และปรับ ejection cam",
+          "is_correct": false,
+          "explanation": "Chipping คือขอบเม็ดบิ่นแตกจากการกระแทกหรือ punch สึก ไม่ใช่การดึงเนื้อยาบนผิวหน้าในร่องตัวอักษร"
+        }
+      ],
+      "key_takeaway": "Picking = เนื้อยาหลุดในร่องตัวอักษร (A, B, O, P, R) ติดหน้า punch; Sticking = ติดหน้า punch ทั้งหน้า; Binding = ติดผนัง die"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ระหว่างตอกยาเม็ด พบว่าเครื่องมีเสียงดังผิดปกติขณะดันเม็ดออก ค่าแรง ejection (ejection force) สูงขึ้นเรื่อย ๆ และด้านข้าง (ขอบ) ของเม็ดยามีรอยขีดข่วนตามแนวดิ่งและผิวด้าน โดยผิวหน้าบนล่างของเม็ดยาเรียบปกติ ปัญหาและการแก้ไขที่เหมาะสมคือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Binding — เพิ่มปริมาณหรือประสิทธิภาพของ lubricant (เช่น Magnesium stearate) และตรวจสอบการสึกของ die"
+      },
+      {
+        "label": "B",
+        "text": "Picking — เพิ่ม antiadherent และขัดหน้า punch"
+      },
+      {
+        "label": "C",
+        "text": "Capping — เพิ่มความชื้นของแกรนูล"
+      },
+      {
+        "label": "D",
+        "text": "Weight variation — เพิ่ม glidant เพื่อให้ไหลลง die สม่ำเสมอ"
+      },
+      {
+        "label": "E",
+        "text": "Mottling — เปลี่ยนสีเป็น lake pigment"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "เม็ดยาติดผนัง die ทำให้ ejection force สูงและขอบเม็ดมีรอยขูด คือ binding แก้ด้วยการเพิ่ม lubricant หรือแก้ die ที่สึก",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. Binding — เพิ่มปริมาณหรือประสิทธิภาพของ lubricant (เช่น Magnesium stearate) และตรวจสอบการสึกของ die — อาการนี้คือ binding (die-wall adhesion) ซึ่งแก้ด้วยการเพิ่ม lubrication และตรวจ/เปลี่ยน die ที่สึก",
+      "reason": "Binding เกิดเมื่อแรงเสียดทานระหว่างผนังด้านข้างของเม็ดยากับผนัง die สูง ทำให้ต้องใช้แรงมากในการดันเม็ดออก (ejection force สูง) เกิดเสียงเสียดสี และขอบเม็ดมีรอยขูดตามแนวการเคลื่อนที่ขึ้น (vertical scoring) สาเหตุหลักคือ lubricant ไม่เพียงพอหรือกระจายไม่ทั่ว แกรนูลชื้นเกิน die สึกเป็นวง (die ring) หรือผิว die ขรุขระ หน้าที่หลักของ lubricant แบบ boundary เช่น Magnesium stearate (ปกติ 0.25–1%) คือสร้างฟิล์มบางระหว่างเม็ดยากับผนัง die ลดแรงเสียดทานขณะ ejection การแก้ไขจึงเป็นการเพิ่มปริมาณ lubricant หรือปรับการผสมให้กระจายทั่ว (แต่ไม่ผสมนานเกินจนเม็ดอ่อน), ลดความชื้นแกรนูล, ใช้ die ที่เคลือบผิวแข็ง (เช่น carbide/chrome) หรือเปลี่ยน die ที่สึก, และอาจใช้ tapered die ในตำรับที่ไวต่อ lubricant ปัญหาที่เกี่ยวข้องกับหน้า punch (picking/sticking) ต่างจาก binding ที่เกิดกับผนัง die",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Binding — เพิ่มปริมาณหรือประสิทธิภาพของ lubricant (เช่น Magnesium stearate) และตรวจสอบการสึกของ die",
+          "is_correct": true,
+          "explanation": "ถูกต้อง Ejection force สูงและรอยขูดด้านข้างเม็ดบ่งชี้ binding กับผนัง die แก้ด้วย lubricant ที่พอเพียงและตรวจสอบ die"
+        },
+        {
+          "label": "B",
+          "text": "Picking — เพิ่ม antiadherent และขัดหน้า punch",
+          "is_correct": false,
+          "explanation": "Picking เกิดบนผิวหน้าเม็ดที่สัมผัส punch แต่โจทย์ระบุว่าผิวหน้าเรียบปกติ ปัญหาอยู่ที่ขอบเม็ด"
+        },
+        {
+          "label": "C",
+          "text": "Capping — เพิ่มความชื้นของแกรนูล",
+          "is_correct": false,
+          "explanation": "Capping คือส่วน crown แยกออก โจทย์ไม่ได้กล่าวถึงเม็ดแยกชั้น และการเพิ่มความชื้นอาจทำให้ binding แย่ลง"
+        },
+        {
+          "label": "D",
+          "text": "Weight variation — เพิ่ม glidant เพื่อให้ไหลลง die สม่ำเสมอ",
+          "is_correct": false,
+          "explanation": "Weight variation เกี่ยวกับการไหลและการบรรจุ die ไม่ได้ทำให้ ejection force สูงหรือมีรอยขูดข้างเม็ด"
+        },
+        {
+          "label": "E",
+          "text": "Mottling — เปลี่ยนสีเป็น lake pigment",
+          "is_correct": false,
+          "explanation": "Mottling คือสีไม่สม่ำเสมอบนเม็ดยา ไม่เกี่ยวกับแรง ejection หรือรอยขูด"
+        }
+      ],
+      "key_takeaway": "Lubricant ทำงานที่ ‘ผนัง die’ (แก้ binding); Antiadherent ทำงานที่ ‘หน้า punch’ (แก้ sticking/picking); Glidant ทำงานที่ ‘การไหลระหว่างอนุภาค’"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ยาเม็ดสีเหลืองผลิตโดย wet granulation โดยละลายสีชนิดละลายน้ำ (water-soluble dye) ในน้ำยา binder แล้วอบแกรนูลใน tray dryer ที่ 70 °C พบว่าเม็ดยามีสีไม่สม่ำเสมอ เป็นจุดสีเข้มและสีอ่อนกระจายทั่วผิวเม็ด ปัญหานี้คืออะไรและควรแก้ไขอย่างไรเหมาะสมที่สุด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Picking — เพิ่ม antiadherent"
+      },
+      {
+        "label": "B",
+        "text": "Capping — ใช้ precompression"
+      },
+      {
+        "label": "C",
+        "text": "Orange peel — เพิ่มแรงดันลม atomizing"
+      },
+      {
+        "label": "D",
+        "text": "Twinning — ลดอัตราการพ่น"
+      },
+      {
+        "label": "E",
+        "text": "Mottling — เปลี่ยนเป็นสีชนิดไม่ละลายน้ำ (lake pigment) หรือลดอุณหภูมิอบแห้งเพื่อลดการเคลื่อนที่ของสี"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "Mottling เกิดจากสีละลายน้ำเคลื่อนที่ (migrate) ไปกับตัวทำละลายสู่ผิวแกรนูลขณะอบแห้ง แก้โดยใช้ lake/pigment ไม่ละลายน้ำ อบที่อุณหภูมิต่ำลง หรือเปลี่ยนวิธีใส่สี",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. Mottling — เปลี่ยนเป็นสีชนิดไม่ละลายน้ำ (lake pigment) หรือลดอุณหภูมิอบแห้งเพื่อลดการเคลื่อนที่ของสี — ปัญหานี้คือ mottling จาก dye migration ระหว่างอบแห้ง แก้โดยใช้ lake pigment หรือลดอุณหภูมิอบแห้ง",
+      "reason": "Mottling คือการกระจายของสีไม่สม่ำเสมอบนผิวเม็ดยา มีบริเวณเข้มอ่อนสลับกัน สาเหตุสำคัญคือการใช้สีละลายน้ำในน้ำยา binder ระหว่างการอบแห้ง ตัวทำละลายจะระเหยจากผิวแกรนูล ของเหลวภายในจึงเคลื่อนที่ออกสู่ผิวพร้อมพาสีไปด้วย (solute/dye migration) ทำให้ผิวแกรนูลมีสีเข้มกว่าภายใน เมื่อร่อนแห้ง (dry screening) แกรนูลแตกได้ทั้งชิ้นสีเข้มและสีอ่อน ตอกแล้วจึงเป็นจุด การอบที่อุณหภูมิสูงและการอบแบบ tray dryer (แกรนูลอยู่นิ่งและไอระเหยจากผิวด้านบน) ยิ่งเพิ่ม migration สาเหตุอื่นของ mottling ได้แก่ ตัวยามีสีต่างจาก excipient หรือมีสารสลายตัวที่มีสี วิธีแก้: ใช้ aluminum lake หรือ pigment ที่ไม่ละลาย (เช่น iron oxide) ผสมแห้งกับผง, ลดอุณหภูมิอบ, ใช้ fluid bed dryer ที่แกรนูลเคลื่อนที่ตลอดเวลา, ทำแกรนูลให้เล็กสม่ำเสมอ หรือเปลี่ยน binder/ตัวทำละลาย หรือเปลี่ยนไปใช้ film coating แต่งสีแทน",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Picking — เพิ่ม antiadherent",
+          "is_correct": false,
+          "explanation": "Picking คือเนื้อยาหลุดติดหน้า punch ในร่องตัวอักษร ไม่ใช่สีไม่สม่ำเสมอ"
+        },
+        {
+          "label": "B",
+          "text": "Capping — ใช้ precompression",
+          "is_correct": false,
+          "explanation": "Capping คือ crown แยกออก ไม่เกี่ยวกับการกระจายของสี"
+        },
+        {
+          "label": "C",
+          "text": "Orange peel — เพิ่มแรงดันลม atomizing",
+          "is_correct": false,
+          "explanation": "Orange peel เป็นข้อบกพร่องของการเคลือบฟิล์มที่ผิวขรุขระคล้ายผิวส้ม เม็ดยาในโจทย์ไม่ได้เคลือบ"
+        },
+        {
+          "label": "D",
+          "text": "Twinning — ลดอัตราการพ่น",
+          "is_correct": false,
+          "explanation": "Twinning คือเม็ดยาสองเม็ดติดกันระหว่างการเคลือบ ไม่ใช่ปัญหาสีด่างในเม็ดยาเปลือย"
+        },
+        {
+          "label": "E",
+          "text": "Mottling — เปลี่ยนเป็นสีชนิดไม่ละลายน้ำ (lake pigment) หรือลดอุณหภูมิอบแห้งเพื่อลดการเคลื่อนที่ของสี",
+          "is_correct": true,
+          "explanation": "ถูกต้อง สีละลายน้ำเคลื่อนที่ขณะอบแห้งทำให้เกิด mottling แก้โดยใช้ lake pigment อบที่อุณหภูมิต่ำลง หรือใช้ fluid bed dryer"
+        }
+      ],
+      "key_takeaway": "Mottling = สีด่าง จาก dye migration ขณะอบแห้ง (wet granulation + สีละลายน้ำ) → ใช้ lake/pigment, อบอุณหภูมิต่ำ"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ในการควบคุมระหว่างการผลิต (IPC) ยาเม็ด พบว่าน้ำหนักเม็ดยาแกว่งมาก (weight variation สูง) ตรวจสอบแกรนูลพบว่ามี particle size distribution กว้าง มีผงละเอียด (fines) มาก และค่า Carr’s index เท่ากับ 28% สาเหตุและแนวทางแก้ไขที่เหมาะสมที่สุดคือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Lubricant มากเกินไป — ลด Magnesium stearate"
+      },
+      {
+        "label": "B",
+        "text": "การไหลไม่ดีและบรรจุ die ไม่สม่ำเสมอ — ทำแกรนูลให้ขนาดสม่ำเสมอ ลด fines และเติม glidant"
+      },
+      {
+        "label": "C",
+        "text": "Disintegrant น้อยเกินไป — เพิ่ม croscarmellose sodium"
+      },
+      {
+        "label": "D",
+        "text": "แรงตอกสูงเกินไป — ลดแรงตอก"
+      },
+      {
+        "label": "E",
+        "text": "ความชื้นของแกรนูลต่ำเกินไป — เพิ่มความชื้นเป็น 10%"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Carr’s index 28% แสดงการไหลไม่ดี ร่วมกับ fines มากและ PSD กว้าง ทำให้บรรจุ die ไม่สม่ำเสมอ จึงต้องปรับขนาดแกรนูลและเติม glidant",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. การไหลไม่ดีและบรรจุ die ไม่สม่ำเสมอ — ทำแกรนูลให้ขนาดสม่ำเสมอ ลด fines และเติม glidant — Weight variation เกิดจากการไหลไม่ดีและบรรจุ die ไม่สม่ำเสมอ แก้ด้วยการทำแกรนูลให้ขนาดสม่ำเสมอ ลด fines และเติม glidant",
+      "reason": "น้ำหนักเม็ดยาถูกกำหนดโดยปริมาตรของ die (ตำแหน่ง lower punch) คูณกับความหนาแน่นของผงที่ไหลเข้าไป ดังนั้นหากผงไหลไม่สม่ำเสมอหรือความหนาแน่นต่างกันในแต่ละ die น้ำหนักจะแกว่ง Carr’s (compressibility) index = (tapped density − bulk density)/tapped density × 100 ค่า ≤10% ไหลดีเยี่ยม, 11–15% ดี, 16–20% พอใช้, 21–25% ผ่านได้ (passable), 26–31% ไม่ดี (poor), 32–37% ไม่ดีมาก (ตาม USP <1174>) ค่า 28% จึงจัดว่าไหลไม่ดี PSD ที่กว้างและ fines มากยังทำให้เกิด segregation (fines แทรกลงล่าง) และความหนาแน่นแตกต่างในแต่ละช่วงการตอก วิธีแก้: ปรับกระบวนการ granulation/milling ให้ได้แกรนูลขนาดสม่ำเสมอ ร่อน fines ออก, เติม glidant เช่น colloidal silicon dioxide, ลดความเร็วเครื่องหรือใช้ force feeder, และตรวจสอบ punch ที่ความยาวไม่เท่ากัน (สาเหตุทางเครื่องจักร)",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Lubricant มากเกินไป — ลด Magnesium stearate",
+          "is_correct": false,
+          "explanation": "Lubricant มากเกินจะทำให้เม็ดอ่อนและแตกตัวช้า ไม่ใช่สาเหตุหลักของน้ำหนักแกว่ง และโจทย์ชี้ไปที่ fines และ Carr’s index สูง"
+        },
+        {
+          "label": "B",
+          "text": "การไหลไม่ดีและบรรจุ die ไม่สม่ำเสมอ — ทำแกรนูลให้ขนาดสม่ำเสมอ ลด fines และเติม glidant",
+          "is_correct": true,
+          "explanation": "ถูกต้อง Carr’s index 28% = ไหลไม่ดี ร่วมกับ fines มาก ทำให้ die filling ไม่สม่ำเสมอ แก้ด้วยการปรับขนาดแกรนูลและเติม glidant"
+        },
+        {
+          "label": "C",
+          "text": "Disintegrant น้อยเกินไป — เพิ่ม croscarmellose sodium",
+          "is_correct": false,
+          "explanation": "Disintegrant มีผลต่อการแตกตัว ไม่มีผลต่อน้ำหนักเม็ดยา"
+        },
+        {
+          "label": "D",
+          "text": "แรงตอกสูงเกินไป — ลดแรงตอก",
+          "is_correct": false,
+          "explanation": "แรงตอกมีผลต่อความแข็งและความหนา แต่ไม่ได้กำหนดน้ำหนักเม็ด ซึ่งขึ้นกับปริมาณผงที่บรรจุใน die"
+        },
+        {
+          "label": "E",
+          "text": "ความชื้นของแกรนูลต่ำเกินไป — เพิ่มความชื้นเป็น 10%",
+          "is_correct": false,
+          "explanation": "ความชื้นแกรนูล 10% สูงเกินไป ทำให้ไหลไม่ดี เกิด sticking และปัญหาความคงตัว ไม่ใช่วิธีแก้ weight variation"
+        }
+      ],
+      "key_takeaway": "Weight variation ↔ การไหล/die filling; Carr’s index >25% = poor flow → ลด fines + เติม glidant; Hardness ↔ แรงตอก"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "ทดสอบ friability ของยาเม็ดเปลือยน้ำหนักเม็ดละ 250 mg ตามวิธี USP <1216> โดยใช้ตัวอย่าง 26 เม็ด ซึ่งปัดฝุ่นแล้วชั่งได้ 6.540 g หมุนใน drum 100 รอบ (25 rpm, 4 นาที) จากนั้นปัดฝุ่นแล้วชั่งได้ 6.468 g ไม่มีเม็ดใดแตก ร้าว หรือบิ่น ข้อใดสรุปผลได้ถูกต้องที่สุด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "น้ำหนักหายไป 0.72% ผ่านเกณฑ์"
+      },
+      {
+        "label": "B",
+        "text": "น้ำหนักหายไป 1.10% ไม่ผ่านเกณฑ์ ต้อง reject รุ่นการผลิตทันที"
+      },
+      {
+        "label": "C",
+        "text": "น้ำหนักหายไป 1.10% ผ่านเกณฑ์ เพราะเกณฑ์คือไม่เกิน 2.0%"
+      },
+      {
+        "label": "D",
+        "text": "น้ำหนักหายไป 1.10% เกินค่าเป้าหมาย 1.0% ต้องทดสอบซ้ำอีก 2 ครั้ง และตัดสินจากค่าเฉลี่ยของ 3 ครั้งซึ่งต้องไม่เกิน 1.0%"
+      },
+      {
+        "label": "E",
+        "text": "น้ำหนักหายไป 1.11% ไม่ผ่านเกณฑ์ ต้องทดสอบใหม่โดยใช้ 10 เม็ด"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "% loss = (6.540 − 6.468)/6.540 × 100 = 1.10% ซึ่งเกินเป้าหมาย 1.0% ตาม USP <1216> ให้ทดสอบซ้ำอีก 2 ครั้ง และค่าเฉลี่ยของ 3 ครั้งต้องไม่เกิน 1.0%",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. น้ำหนักหายไป 1.10% เกินค่าเป้าหมาย 1.0% ต้องทดสอบซ้ำอีก 2 ครั้ง และตัดสินจากค่าเฉลี่ยของ 3 ครั้งซึ่งต้องไม่เกิน 1.0% — % weight loss = 1.10% เกินค่าเป้าหมาย จึงต้องทดสอบซ้ำอีก 2 ครั้งและใช้ค่าเฉลี่ย 3 ครั้งตัดสิน (NMT 1.0%)",
+      "reason": "USP <1216> Tablet Friability: สำหรับเม็ดยาน้ำหนักต่อเม็ด ≤650 mg ใช้ตัวอย่างเม็ดยาทั้งเม็ดที่มีน้ำหนักรวมใกล้เคียง 6.5 g ที่สุด ส่วนเม็ดยา >650 mg ใช้ 10 เม็ด ปัดฝุ่นก่อนชั่ง หมุนใน drum ที่ 25 ± 1 rpm จำนวน 100 รอบ แล้วปัดฝุ่นและชั่งใหม่ คำนวณ % weight loss เทียบกับน้ำหนักเริ่มต้น โดยทั่วไปทดสอบครั้งเดียว แต่ถ้าผลน่าสงสัยหรือ weight loss เกินค่าเป้าหมาย ให้ทดสอบซ้ำอีก 2 ครั้งและหาค่าเฉลี่ยของ 3 ครั้ง สำหรับผลิตภัณฑ์ส่วนใหญ่ ค่าเฉลี่ย weight loss สูงสุดไม่เกิน 1.0% และหากหลังหมุนพบเม็ดที่แตก ร้าว หรือบิ่นอย่างชัดเจน ถือว่าไม่ผ่าน ในโจทย์นี้ 26 เม็ด × 250 mg ≈ 6.5 g ถูกต้องตามวิธี ผลการทดสอบครั้งแรกได้ 1.10% ซึ่งเกินเป้าหมายเล็กน้อย จึงยังไม่ควรสรุปว่าไม่ผ่านทันที ต้องทดสอบซ้ำอีก 2 ครั้งแล้วตัดสินจากค่าเฉลี่ย ข้อควรระวังในการคำนวณคือใช้น้ำหนักเริ่มต้นเป็นตัวหาร ไม่ใช่น้ำหนักหลังทดสอบ",
+      "choices": [
+        {
+          "label": "A",
+          "text": "น้ำหนักหายไป 0.72% ผ่านเกณฑ์",
+          "is_correct": false,
+          "explanation": "ผิด เป็นการคำนวณผิดตำแหน่งทศนิยม น้ำหนักที่หายไป 0.072 g จาก 6.540 g คิดเป็น 1.10% ไม่ใช่ 0.72%"
+        },
+        {
+          "label": "B",
+          "text": "น้ำหนักหายไป 1.10% ไม่ผ่านเกณฑ์ ต้อง reject รุ่นการผลิตทันที",
+          "is_correct": false,
+          "explanation": "ผิด แม้ผลเกิน 1.0% แต่ USP กำหนดให้ทดสอบซ้ำอีก 2 ครั้งเมื่อผลเกินค่าเป้าหมาย ไม่ใช่ reject ทันทีจากการทดสอบครั้งเดียว (ยกเว้นพบเม็ดแตก/ร้าวชัดเจน)"
+        },
+        {
+          "label": "C",
+          "text": "น้ำหนักหายไป 1.10% ผ่านเกณฑ์ เพราะเกณฑ์คือไม่เกิน 2.0%",
+          "is_correct": false,
+          "explanation": "ผิด เกณฑ์ friability ของ USP สำหรับผลิตภัณฑ์ส่วนใหญ่คือ weight loss เฉลี่ยไม่เกิน 1.0% ไม่ใช่ 2.0%"
+        },
+        {
+          "label": "D",
+          "text": "น้ำหนักหายไป 1.10% เกินค่าเป้าหมาย 1.0% ต้องทดสอบซ้ำอีก 2 ครั้ง และตัดสินจากค่าเฉลี่ยของ 3 ครั้งซึ่งต้องไม่เกิน 1.0%",
+          "is_correct": true,
+          "explanation": "ถูกต้อง คำนวณได้ 1.10% เกินเป้าหมาย จึงต้องทดสอบซ้ำอีก 2 ครั้ง และค่าเฉลี่ยของ 3 ครั้งต้องไม่เกิน 1.0%"
+        },
+        {
+          "label": "E",
+          "text": "น้ำหนักหายไป 1.11% ไม่ผ่านเกณฑ์ ต้องทดสอบใหม่โดยใช้ 10 เม็ด",
+          "is_correct": false,
+          "explanation": "ผิด 1.11% เกิดจากใช้น้ำหนักหลังทดสอบ (6.468 g) เป็นตัวหาร ซึ่งไม่ถูกต้อง และการใช้ 10 เม็ดใช้กับเม็ดยาที่หนักเกิน 650 mg เท่านั้น"
+        }
+      ],
+      "key_takeaway": "Friability (USP <1216>): ≤650 mg/เม็ด ใช้ ≈6.5 g; >650 mg ใช้ 10 เม็ด; 25 rpm × 100 รอบ; mean loss NMT 1.0%; เกินเป้า → ทำซ้ำอีก 2 ครั้ง",
+      "calculation_steps": [
+        "ขั้นที่ 1: น้ำหนักที่หายไป = 6.540 g − 6.468 g = 0.072 g",
+        "ขั้นที่ 2: % weight loss = (0.072 g ÷ 6.540 g) × 100 = 1.10%",
+        "ขั้นที่ 3: เทียบเกณฑ์ USP <1216>: 1.10% > 1.0% (ค่าเป้าหมาย) → ทดสอบซ้ำอีก 2 ครั้ง",
+        "ขั้นที่ 4: ตัดสินจากค่าเฉลี่ยของการทดสอบ 3 ครั้ง ต้อง ≤ 1.0% และไม่มีเม็ดแตก/ร้าว/บิ่น"
+      ]
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "โรงงานต้องทดสอบ friability ตาม USP <1216> ของยาเม็ด 2 ผลิตภัณฑ์ ได้แก่ ผลิตภัณฑ์ X น้ำหนักเม็ดละ 320 mg และผลิตภัณฑ์ Y น้ำหนักเม็ดละ 800 mg จำนวนเม็ดที่ควรใช้เป็นตัวอย่างของผลิตภัณฑ์ X และ Y ตามลำดับคือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "20 เม็ด และ 8 เม็ด"
+      },
+      {
+        "label": "B",
+        "text": "21 เม็ด และ 10 เม็ด"
+      },
+      {
+        "label": "C",
+        "text": "10 เม็ด และ 10 เม็ด"
+      },
+      {
+        "label": "D",
+        "text": "20 เม็ด และ 20 เม็ด"
+      },
+      {
+        "label": "E",
+        "text": "20 เม็ด และ 10 เม็ด"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "เม็ดยา ≤650 mg ใช้จำนวนเม็ดที่น้ำหนักรวมใกล้ 6.5 g ที่สุด: 20 × 0.320 = 6.40 g (ใกล้กว่า 21 เม็ด = 6.72 g) ส่วนเม็ดยา >650 mg ใช้ 10 เม็ด",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. 20 เม็ด และ 10 เม็ด — X ใช้ 20 เม็ด (6.40 g ใกล้ 6.5 g ที่สุด) และ Y ใช้ 10 เม็ด เพราะหนักเกิน 650 mg",
+      "reason": "USP <1216> กำหนดขนาดตัวอย่างตามน้ำหนักต่อเม็ด: ถ้าน้ำหนักต่อเม็ดไม่เกิน 650 mg ให้ใช้เม็ดยาทั้งเม็ดจำนวนที่น้ำหนักรวมใกล้เคียง 6.5 g มากที่สุด เพื่อให้มวลตัวอย่างในการทดสอบใกล้เคียงกันและผลเทียบกันได้ ถ้าน้ำหนักต่อเม็ดมากกว่า 650 mg ให้ใช้ 10 เม็ด สำหรับ X: 6.5 g ÷ 0.320 g = 20.3 เม็ด จึงพิจารณา 20 เม็ด (6.40 g, ต่างจาก 6.5 g = 0.10 g) และ 21 เม็ด (6.72 g, ต่าง 0.22 g) 20 เม็ดใกล้กว่า สำหรับ Y: 800 mg > 650 mg จึงใช้ 10 เม็ด (ไม่ต้องคำนวณจาก 6.5 g) จากนั้นหมุน drum 100 รอบที่ 25 rpm และเกณฑ์ weight loss เฉลี่ยไม่เกิน 1.0% เม็ดยาขนาดใหญ่ ถ้าใช้ 8 เม็ดตาม 6.5 g จะผิดวิธี หากรูปร่างหรือขนาดเม็ดทำให้กลิ้งไม่สม่ำเสมอ USP ให้ปรับฐาน drum ให้เอียงประมาณ 10° จากแนวราบ",
+      "choices": [
+        {
+          "label": "A",
+          "text": "20 เม็ด และ 8 เม็ด",
+          "is_correct": false,
+          "explanation": "ผิด X ถูกต้อง (20 เม็ด) แต่ Y หนักเกิน 650 mg ต้องใช้ 10 เม็ด ไม่ใช่คำนวณ 6.5/0.8 ≈ 8 เม็ด"
+        },
+        {
+          "label": "B",
+          "text": "21 เม็ด และ 10 เม็ด",
+          "is_correct": false,
+          "explanation": "ผิด 21 เม็ดของ X หนัก 6.72 g ห่างจาก 6.5 g มากกว่า 20 เม็ด (6.40 g)"
+        },
+        {
+          "label": "C",
+          "text": "10 เม็ด และ 10 เม็ด",
+          "is_correct": false,
+          "explanation": "ผิด X หนักไม่เกิน 650 mg จึงต้องใช้จำนวนที่ได้น้ำหนักรวมใกล้ 6.5 g ไม่ใช่ 10 เม็ด"
+        },
+        {
+          "label": "D",
+          "text": "20 เม็ด และ 20 เม็ด",
+          "is_correct": false,
+          "explanation": "ผิด Y หนักเกิน 650 mg ใช้ 10 เม็ด ไม่ใช่ 20 เม็ด"
+        },
+        {
+          "label": "E",
+          "text": "20 เม็ด และ 10 เม็ด",
+          "is_correct": true,
+          "explanation": "ถูกต้อง X ใช้ 20 เม็ด (6.40 g ใกล้ 6.5 g ที่สุด) และ Y ใช้ 10 เม็ด"
+        }
+      ],
+      "key_takeaway": "Friability sample: ≤650 mg → รวม ≈6.5 g; >650 mg → 10 เม็ด",
+      "calculation_steps": [
+        "ขั้นที่ 1: ผลิตภัณฑ์ X 320 mg ≤ 650 mg → ใช้น้ำหนักรวมใกล้ 6.5 g",
+        "ขั้นที่ 2: 6.5 g ÷ 0.320 g/เม็ด = 20.3 เม็ด",
+        "ขั้นที่ 3: 20 เม็ด = 6.40 g (ต่าง 0.10 g); 21 เม็ด = 6.72 g (ต่าง 0.22 g) → เลือก 20 เม็ด",
+        "ขั้นที่ 4: ผลิตภัณฑ์ Y 800 mg > 650 mg → ใช้ 10 เม็ด"
+      ]
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "ทดสอบ disintegration ของยาเม็ดเปลือยตาม USP <701> โดยใช้ 6 เม็ด ใน basket-rack assembly ในน้ำที่ 37 ± 2 °C เมื่อครบเวลาที่กำหนดในมอโนกราฟ พบว่า 4 เม็ดแตกตัวสมบูรณ์ แต่ 2 เม็ดยังไม่แตกตัว ข้อใดคือการดำเนินการและเกณฑ์ที่ถูกต้อง",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ไม่ผ่านทันที เพราะต้องแตกตัวทั้ง 6 เม็ด"
+      },
+      {
+        "label": "B",
+        "text": "ทดสอบเพิ่มอีก 12 เม็ด โดยรวมทั้งหมดต้องแตกตัวสมบูรณ์ไม่น้อยกว่า 16 จาก 18 เม็ด ซึ่งในกรณีนี้หมายความว่าทั้ง 12 เม็ดที่เพิ่มต้องแตกตัวทั้งหมด"
+      },
+      {
+        "label": "C",
+        "text": "ทดสอบเพิ่มอีก 6 เม็ด โดยรวมต้องแตกตัวไม่น้อยกว่า 10 จาก 12 เม็ด"
+      },
+      {
+        "label": "D",
+        "text": "ทดสอบเพิ่มอีก 12 เม็ด โดยรวมต้องแตกตัวไม่น้อยกว่า 15 จาก 18 เม็ด"
+      },
+      {
+        "label": "E",
+        "text": "ผ่าน เพราะแตกตัวได้มากกว่าครึ่งหนึ่งของเม็ดที่ทดสอบ"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "USP <701>: ถ้า 1 หรือ 2 เม็ดไม่แตกตัว ให้ทดสอบเพิ่มอีก 12 เม็ด และต้องแตกตัวรวมไม่น้อยกว่า 16 จาก 18 เม็ด กรณีนี้ล้มเหลวแล้ว 2 เม็ด จึงต้องผ่านครบทั้ง 12 เม็ด",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. ทดสอบเพิ่มอีก 12 เม็ด โดยรวมทั้งหมดต้องแตกตัวสมบูรณ์ไม่น้อยกว่า 16 จาก 18 เม็ด ซึ่งในกรณีนี้หมายความว่าทั้ง 12 เม็ดที่เพิ่มต้องแตกตัวทั้งหมด — ทดสอบเพิ่ม 12 เม็ด เกณฑ์รวม NLT 16/18 — เมื่อมี 2 เม็ดไม่แตกตัวแล้ว 12 เม็ดที่เพิ่มต้องแตกตัวทั้งหมด",
+      "reason": "USP <701> Disintegration ใช้ basket-rack assembly 6 หลอด ขยับขึ้นลง 29–32 รอบต่อนาที ใน immersion fluid ที่ 37 ± 2 °C (ยาเม็ดเปลือยใช้น้ำ เว้นแต่มอโนกราฟกำหนดอื่น) เมื่อครบเวลา ‘แตกตัวสมบูรณ์’ หมายถึงไม่มีเศษของเม็ดยาเหลือบนตะแกรง ยกเว้นเศษเปลือก coating หรือเปลือกแคปซูล หรือเหลือเป็นก้อนนุ่มที่ไม่มีแกนแข็งที่สัมผัสได้ เกณฑ์: ถ้าทั้ง 6 เม็ดแตกตัว ผ่าน; ถ้า 1 หรือ 2 เม็ดไม่แตกตัว ให้ทดสอบซ้ำกับเม็ดยาอีก 12 เม็ด ต้องแตกตัวรวมไม่น้อยกว่า 16 จากทั้งหมด 18 เม็ด (คือล้มเหลวได้รวมไม่เกิน 2 เม็ด) ในโจทย์ล้มเหลวไปแล้ว 2 เม็ด จึงเหลือโควตาเป็นศูนย์ ทั้ง 12 เม็ดที่เพิ่มต้องแตกตัวทั้งหมด ถ้ามี 3 เม็ดขึ้นไปไม่แตกตัวในรอบแรก ถือว่าไม่ผ่าน (เพราะไม่มีทางได้ 16/18) หลักการ retest แบบ 6 + 12 ยังใช้กับ dissolution stage เพิ่มจำนวนในลักษณะต่างกัน ซึ่งไม่ควรสับสน เวลาแตกตัวกำหนดไว้ในมอโนกราฟแต่ละตัว",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ไม่ผ่านทันที เพราะต้องแตกตัวทั้ง 6 เม็ด",
+          "is_correct": false,
+          "explanation": "ผิด USP ให้โอกาสทดสอบเพิ่มเมื่อมี 1 หรือ 2 เม็ดไม่แตกตัว จะไม่ผ่านทันทีเมื่อมี 3 เม็ดขึ้นไปที่ไม่แตกตัวเท่านั้น"
+        },
+        {
+          "label": "B",
+          "text": "ทดสอบเพิ่มอีก 12 เม็ด โดยรวมทั้งหมดต้องแตกตัวสมบูรณ์ไม่น้อยกว่า 16 จาก 18 เม็ด ซึ่งในกรณีนี้หมายความว่าทั้ง 12 เม็ดที่เพิ่มต้องแตกตัวทั้งหมด",
+          "is_correct": true,
+          "explanation": "ถูกต้อง ทดสอบเพิ่ม 12 เม็ด เกณฑ์ NLT 16/18 และเนื่องจากล้มเหลวแล้ว 2 เม็ด ทั้ง 12 เม็ดใหม่ต้องแตกตัวทั้งหมด"
+        },
+        {
+          "label": "C",
+          "text": "ทดสอบเพิ่มอีก 6 เม็ด โดยรวมต้องแตกตัวไม่น้อยกว่า 10 จาก 12 เม็ด",
+          "is_correct": false,
+          "explanation": "ผิด จำนวนเม็ดที่ทดสอบเพิ่มคือ 12 เม็ด (รวม 18) ไม่ใช่ 6 เม็ด"
+        },
+        {
+          "label": "D",
+          "text": "ทดสอบเพิ่มอีก 12 เม็ด โดยรวมต้องแตกตัวไม่น้อยกว่า 15 จาก 18 เม็ด",
+          "is_correct": false,
+          "explanation": "ผิด เกณฑ์คือ NLT 16 จาก 18 เม็ด ไม่ใช่ 15 จาก 18"
+        },
+        {
+          "label": "E",
+          "text": "ผ่าน เพราะแตกตัวได้มากกว่าครึ่งหนึ่งของเม็ดที่ทดสอบ",
+          "is_correct": false,
+          "explanation": "ผิด USP ไม่มีเกณฑ์ ‘มากกว่าครึ่ง’ 4/6 ยังไม่ผ่านและต้องทดสอบเพิ่มตามเกณฑ์ 16/18"
+        }
+      ],
+      "key_takeaway": "USP <701>: 6 เม็ด → ถ้า 1–2 เม็ดไม่แตก ทดสอบเพิ่ม 12 → NLT 16/18; ≥3 เม็ดไม่แตกในรอบแรก = fail"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ตามเกณฑ์ disintegration test ของ British Pharmacopoeia/European Pharmacopoeia (Ph. Eur. 2.9.1) เวลาแตกตัวสูงสุดของยาเม็ดเปลือย (uncoated tablets), ยาเม็ดเคลือบฟิล์ม (film-coated tablets) และยาเม็ดเคลือบน้ำตาล (sugar-coated tablets) ตามลำดับ ข้อใดถูกต้อง",
+    "choices": [
+      {
+        "label": "A",
+        "text": "15 นาที, 30 นาที, 60 นาที"
+      },
+      {
+        "label": "B",
+        "text": "30 นาที, 15 นาที, 60 นาที"
+      },
+      {
+        "label": "C",
+        "text": "15 นาที, 60 นาที, 30 นาที"
+      },
+      {
+        "label": "D",
+        "text": "5 นาที, 15 นาที, 30 นาที"
+      },
+      {
+        "label": "E",
+        "text": "15 นาที, 30 นาที, 120 นาที"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Ph. Eur./BP: uncoated tablets 15 นาที, film-coated tablets 30 นาที, coated tablets อื่น (เช่น sugar-coated) 60 นาที",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. 15 นาที, 30 นาที, 60 นาที — เวลาแตกตัวตาม Ph. Eur.: uncoated 15 นาที, film-coated 30 นาที, sugar-coated 60 นาที",
+      "reason": "Ph. Eur./BP กำหนดเวลาแตกตัวสำหรับรูปแบบยาเม็ดต่าง ๆ ไว้ใน monograph ทั่วไปของ Tablets: ยาเม็ดเปลือยไม่เกิน 15 นาที (ในน้ำ 37 °C), ยาเม็ดเคลือบฟิล์มไม่เกิน 30 นาที, ยาเม็ดเคลือบแบบอื่น เช่น sugar-coated ไม่เกิน 60 นาที (อาจใช้ 0.1 M HCl หากไม่แตกในน้ำ), effervescent tablets ปล่อยก๊าซและแตกตัว/ละลายใน 200 mL น้ำที่ 15–25 °C ภายใน 5 นาที, soluble และ dispersible tablets ภายใน 3 นาที (น้ำ 15–25 °C), orodispersible tablets ภายใน 3 นาที, gastro-resistant tablets ต้องไม่แตกตัวหรือร้าวใน 0.1 M HCl 2 ชั่วโมง (หรือตามที่ระบุ) แล้วแตกตัวใน phosphate buffer pH 6.8 ภายใน 60 นาที การเรียงลำดับเวลาสะท้อนความหนาของชั้นเคลือบ: ฟิล์มบางเพิ่มน้ำหนักเพียง 2–5% ส่วนเคลือบน้ำตาลอาจเพิ่มน้ำหนัก 50–100% จึงใช้เวลานานกว่า ส่วน USP <701> ไม่ระบุเวลาใน general chapter แต่ให้ใช้เวลาตามมอโนกราฟแต่ละตัว",
+      "choices": [
+        {
+          "label": "A",
+          "text": "15 นาที, 30 นาที, 60 นาที",
+          "is_correct": true,
+          "explanation": "ถูกต้อง uncoated 15 นาที, film-coated 30 นาที, sugar-coated 60 นาที ตาม Ph. Eur./BP"
+        },
+        {
+          "label": "B",
+          "text": "30 นาที, 15 นาที, 60 นาที",
+          "is_correct": false,
+          "explanation": "ผิด สลับเวลาของยาเม็ดเปลือยกับเคลือบฟิล์ม ยาเม็ดเปลือยต้องแตกตัวเร็วกว่า (15 นาที)"
+        },
+        {
+          "label": "C",
+          "text": "15 นาที, 60 นาที, 30 นาที",
+          "is_correct": false,
+          "explanation": "ผิด สลับเวลาของ film-coated กับ sugar-coated ชั้นเคลือบน้ำตาลหนากว่าจึงได้เวลามากกว่า (60 นาที)"
+        },
+        {
+          "label": "D",
+          "text": "5 นาที, 15 นาที, 30 นาที",
+          "is_correct": false,
+          "explanation": "ผิด 5 นาทีเป็นเกณฑ์ของ effervescent tablets ไม่ใช่ uncoated tablets"
+        },
+        {
+          "label": "E",
+          "text": "15 นาที, 30 นาที, 120 นาที",
+          "is_correct": false,
+          "explanation": "ผิด 120 นาทีคือช่วงเวลาที่ gastro-resistant tablets ต้องไม่แตกตัวใน 0.1 M HCl ไม่ใช่เกณฑ์ของ sugar-coated tablets"
+        }
+      ],
+      "key_takeaway": "Ph. Eur. DT: Uncoated 15′ | Film 30′ | Sugar/other coated 60′ | Effervescent 5′ | Soluble/Dispersible/ODT 3′ | Enteric: 0.1 M HCl 2 h ไม่แตก → pH 6.8 ภายใน 60′"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "ตาม USP <905> Uniformity of Dosage Units ผลิตภัณฑ์ใดต่อไปนี้สามารถใช้วิธี weight variation แทน content uniformity ได้",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ยาเม็ดเปลือยมีตัวยา 20 mg ในเม็ดยาน้ำหนัก 60 mg"
+      },
+      {
+        "label": "B",
+        "text": "ยาเม็ดเคลือบฟิล์มมีตัวยา 100 mg ในเม็ดยาน้ำหนัก 500 mg"
+      },
+      {
+        "label": "C",
+        "text": "ยาเม็ดเคลือบน้ำตาลมีตัวยา 50 mg ในเม็ดยาน้ำหนัก 100 mg (ไม่รวมชั้นเคลือบ)"
+      },
+      {
+        "label": "D",
+        "text": "ยาเม็ดเปลือยมีตัวยา 50 mg ในเม็ดยาน้ำหนัก 150 mg"
+      },
+      {
+        "label": "E",
+        "text": "แคปซูลนิ่มบรรจุยาแขวนตะกอน (suspension) ที่มีตัวยา 50 mg ต่อแคปซูล"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "Weight variation ใช้ได้กับยาเม็ดเปลือยหรือเคลือบฟิล์มที่มีตัวยา ≥25 mg และ ≥25% ของน้ำหนักเม็ด — 50 mg ใน 150 mg = 33.3% จึงเข้าเงื่อนไข",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. ยาเม็ดเปลือยมีตัวยา 50 mg ในเม็ดยาน้ำหนัก 150 mg — ยาเม็ดเปลือย 50 mg ในเม็ด 150 mg (33.3%) เข้าเงื่อนไข ≥25 mg และ ≥25% จึงใช้ weight variation ได้",
+      "reason": "USP <905> กำหนดให้ใช้ content uniformity (CU) เป็นหลัก แต่อนุญาตให้ใช้ weight variation (WV) ได้ในกรณีที่ปริมาณตัวยามากพอจนความแปรปรวนของน้ำหนักสะท้อนความแปรปรวนของตัวยาได้ สำหรับยาเม็ด เงื่อนไขคือ (1) เป็นยาเม็ดเปลือยหรือเคลือบฟิล์ม และ (2) มีตัวยา ≥25 mg และตัวยานั้นมีสัดส่วน ≥25% ของน้ำหนักหน่วยยา ทั้งสองเงื่อนไขต้องครบ ตัวอย่างอื่นที่ใช้ WV ได้ เช่น แคปซูลแข็งที่เข้าเงื่อนไขเดียวกัน, ยาเม็ด/แคปซูลนิ่มที่บรรจุสารละลายเป็นเนื้อเดียวกัน (solution) และผงแห้งบรรจุภาชนะเดี่ยวที่ไม่มีสารอื่นเติม ส่วนยาเม็ดเคลือบแบบอื่นที่ไม่ใช่ฟิล์ม (เช่น เคลือบน้ำตาล) และแคปซูลนิ่มที่บรรจุ suspension/emulsion ต้องใช้ CU การตรวจด้วย WV ต้องทราบ assay ของ lot แล้วคำนวณปริมาณยาของแต่ละหน่วยจากน้ำหนัก (สมมุติยากระจายสม่ำเสมอ) แล้วคำนวณ acceptance value เช่นเดียวกับ CU",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ยาเม็ดเปลือยมีตัวยา 20 mg ในเม็ดยาน้ำหนัก 60 mg",
+          "is_correct": false,
+          "explanation": "ผิด สัดส่วนตัวยา 20/60 = 33% ผ่านเงื่อนไข ≥25% แต่ปริมาณตัวยา 20 mg น้อยกว่า 25 mg จึงต้องใช้ CU"
+        },
+        {
+          "label": "B",
+          "text": "ยาเม็ดเคลือบฟิล์มมีตัวยา 100 mg ในเม็ดยาน้ำหนัก 500 mg",
+          "is_correct": false,
+          "explanation": "ผิด ตัวยา 100 mg มากกว่า 25 mg แต่คิดเป็น 100/500 = 20% ต่ำกว่า 25% ของน้ำหนักเม็ด จึงต้องใช้ CU"
+        },
+        {
+          "label": "C",
+          "text": "ยาเม็ดเคลือบน้ำตาลมีตัวยา 50 mg ในเม็ดยาน้ำหนัก 100 mg (ไม่รวมชั้นเคลือบ)",
+          "is_correct": false,
+          "explanation": "ผิด แม้ปริมาณและสัดส่วนตัวยาเข้าเงื่อนไข แต่ยาเม็ดเคลือบน้ำตาล (coated tablets อื่นที่ไม่ใช่ฟิล์ม) ต้องใช้ CU"
+        },
+        {
+          "label": "D",
+          "text": "ยาเม็ดเปลือยมีตัวยา 50 mg ในเม็ดยาน้ำหนัก 150 mg",
+          "is_correct": true,
+          "explanation": "ถูกต้อง ยาเม็ดเปลือย ตัวยา 50 mg (≥25 mg) คิดเป็น 50/150 = 33.3% (≥25%) จึงใช้ weight variation ได้"
+        },
+        {
+          "label": "E",
+          "text": "แคปซูลนิ่มบรรจุยาแขวนตะกอน (suspension) ที่มีตัวยา 50 mg ต่อแคปซูล",
+          "is_correct": false,
+          "explanation": "ผิด แคปซูลนิ่มที่ใช้ WV ได้ต้องบรรจุสารละลาย (solution) ส่วน suspension อาจมีการกระจายตัวยาไม่สม่ำเสมอจึงต้องใช้ CU"
+        }
+      ],
+      "key_takeaway": "WV ใช้ได้เมื่อ: เม็ดเปลือยหรือเคลือบฟิล์ม + ตัวยา ≥25 mg + ≥25% w/w (ครบทั้งคู่); เคลือบน้ำตาล / soft capsule suspension → CU"
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "ทดสอบ content uniformity ของยาเม็ดตาม USP <905> จำนวน 10 เม็ด (target T = 100% ของ label claim) ได้ค่าเฉลี่ย (X̄) = 96.0% และส่วนเบี่ยงเบนมาตรฐาน (s) = 4.5% ค่า acceptance value (AV) และการแปลผลในขั้นแรก (L1 = 15.0) ข้อใดถูกต้อง",
+    "choices": [
+      {
+        "label": "A",
+        "text": "AV = 10.8 ผ่านเกณฑ์"
+      },
+      {
+        "label": "B",
+        "text": "AV = 11.5 ผ่านเกณฑ์"
+      },
+      {
+        "label": "C",
+        "text": "AV = 13.3 ผ่านเกณฑ์"
+      },
+      {
+        "label": "D",
+        "text": "AV = 14.8 ผ่านเกณฑ์"
+      },
+      {
+        "label": "E",
+        "text": "AV = 13.3 ไม่ผ่าน ต้องทดสอบเพิ่มอีก 20 เม็ด"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "เนื่องจาก X̄ < 98.5% จึงใช้ M = 98.5%; AV = |M − X̄| + ks = |98.5 − 96.0| + 2.4 × 4.5 = 2.5 + 10.8 = 13.3 ซึ่ง ≤ L1 (15.0) จึงผ่าน",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. AV = 13.3 ผ่านเกณฑ์ — AV = 13.3 ≤ 15.0 จึงผ่านเกณฑ์ขั้นแรก (n = 10, k = 2.4, M = 98.5%)",
+      "reason": "Acceptance value ตาม USP <905> คำนวณจาก AV = |M − X̄| + ks โดย k = 2.4 เมื่อทดสอบ 10 หน่วย และ k = 2.0 เมื่อทดสอบ 30 หน่วย ค่า reference value M (กรณี T ≤ 101.5%) กำหนดดังนี้: ถ้า 98.5% ≤ X̄ ≤ 101.5% ให้ M = X̄ (ส่วนแรกเป็นศูนย์), ถ้า X̄ < 98.5% ให้ M = 98.5%, ถ้า X̄ > 101.5% ให้ M = 101.5% ในโจทย์ X̄ = 96.0% ต่ำกว่า 98.5% จึงใช้ M = 98.5 ไม่ใช่ 100 ส่วนแรก = 2.5 ส่วนที่สอง ks = 2.4 × 4.5 = 10.8 รวม AV = 13.3 เกณฑ์ขั้นที่ 1 (L1) คือ AV ≤ 15.0 จึงผ่าน หาก AV > 15.0 จะต้องทดสอบเพิ่มอีก 20 หน่วย (รวม 30) แล้วคำนวณ AV ใหม่ด้วย k = 2.0 ซึ่งต้อง ≤ L1 และไม่มีหน่วยใดมีปริมาณยาต่ำกว่า (1 − L2 × 0.01)M หรือสูงกว่า (1 + L2 × 0.01)M โดย L2 = 25.0 ข้อสังเกตคือ ค่า s ที่สูงมีผลต่อ AV มากกว่าการคลาดของค่าเฉลี่ย เพราะคูณด้วย k",
+      "choices": [
+        {
+          "label": "A",
+          "text": "AV = 10.8 ผ่านเกณฑ์",
+          "is_correct": false,
+          "explanation": "ผิด 10.8 คือค่า ks อย่างเดียว ลืมบวกส่วน |M − X̄| = 2.5 ซึ่งต้องนำมารวมเมื่อ X̄ อยู่นอกช่วง 98.5–101.5%"
+        },
+        {
+          "label": "B",
+          "text": "AV = 11.5 ผ่านเกณฑ์",
+          "is_correct": false,
+          "explanation": "ผิด 11.5 เกิดจากใช้ k = 2.0 (2.5 + 2.0 × 4.5) ซึ่ง k = 2.0 ใช้เมื่อทดสอบ 30 หน่วย ไม่ใช่ 10 หน่วย"
+        },
+        {
+          "label": "C",
+          "text": "AV = 13.3 ผ่านเกณฑ์",
+          "is_correct": true,
+          "explanation": "ถูกต้อง M = 98.5 (เพราะ X̄ < 98.5) AV = 2.5 + 2.4 × 4.5 = 13.3 ≤ 15.0 จึงผ่าน"
+        },
+        {
+          "label": "D",
+          "text": "AV = 14.8 ผ่านเกณฑ์",
+          "is_correct": false,
+          "explanation": "ผิด 14.8 เกิดจากใช้ M = 100 (|100 − 96| + 10.8 = 14.8) ซึ่งไม่ถูกต้อง เพราะเมื่อ X̄ < 98.5% ต้องใช้ M = 98.5%"
+        },
+        {
+          "label": "E",
+          "text": "AV = 13.3 ไม่ผ่าน ต้องทดสอบเพิ่มอีก 20 เม็ด",
+          "is_correct": false,
+          "explanation": "ผิด คำนวณ AV ได้ถูก (13.3) แต่แปลผลผิด เพราะ 13.3 ≤ L1 = 15.0 จึงผ่านแล้ว ไม่ต้องทดสอบเพิ่มอีก 20 เม็ด"
+        }
+      ],
+      "key_takeaway": "AV = |M − X̄| + ks; k = 2.4 (n=10), 2.0 (n=30); M = X̄ ถ้า 98.5–101.5% มิฉะนั้นใช้ขอบที่ใกล้ (98.5 หรือ 101.5); L1 = 15.0, L2 = 25.0",
+      "calculation_steps": [
+        "ขั้นที่ 1: X̄ = 96.0% < 98.5% → M = 98.5% (กรณี T ≤ 101.5%)",
+        "ขั้นที่ 2: |M − X̄| = |98.5 − 96.0| = 2.5%",
+        "ขั้นที่ 3: n = 10 → k = 2.4; ks = 2.4 × 4.5% = 10.8%",
+        "ขั้นที่ 4: AV = 2.5 + 10.8 = 13.3",
+        "ขั้นที่ 5: เทียบ L1 = 15.0 → 13.3 ≤ 15.0 → ผ่านขั้นที่ 1"
+      ]
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "ผู้ตั้งตำรับยาเม็ดเคี้ยว (chewable tablet) ยาลดกรด สำหรับเด็ก ต้องการสารเพิ่มปริมาณหลักที่มีรสหวาน ให้ความรู้สึกเย็นในปาก (cooling effect) ละลายในปากได้และไม่ดูดความชื้น สารใดเหมาะสมที่สุด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Dibasic calcium phosphate"
+      },
+      {
+        "label": "B",
+        "text": "Microcrystalline cellulose"
+      },
+      {
+        "label": "C",
+        "text": "Sorbitol"
+      },
+      {
+        "label": "D",
+        "text": "Mannitol"
+      },
+      {
+        "label": "E",
+        "text": "Corn starch"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "Mannitol มีรสหวาน มี negative heat of solution ให้ความรู้สึกเย็น และไม่ดูดความชื้น จึงเป็น diluent มาตรฐานของยาเม็ดเคี้ยว",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. Mannitol — Mannitol เป็น diluent ที่เหมาะที่สุดของยาเม็ดเคี้ยว เพราะหวาน เย็น และ non-hygroscopic",
+      "reason": "ยาเม็ดเคี้ยวต้องมีรสชาติและความรู้สึกในปาก (mouthfeel) ที่ดี เพราะผู้ป่วยเคี้ยวแตกในปากก่อนกลืน ไม่จำเป็นต้องมี disintegrant มาก แต่ต้องไม่สากหรือติดฟัน Mannitol เป็น sugar alcohol ที่มีความหวานประมาณครึ่งหนึ่งของ sucrose มี heat of solution เป็นลบ (ดูดความร้อนเมื่อละลาย) จึงให้ความรู้สึกเย็นสดชื่นในปาก ละลายน้ำได้ดีจึงไม่สาก และที่สำคัญคือ non-hygroscopic ทำให้เม็ดยาคงตัวดีและเหมาะกับยาที่ไวต่อความชื้น มี grade สำหรับ direct compression (เช่น granular/spray-dried mannitol) ยาเม็ดเคี้ยวที่พบบ่อย เช่น ยาลดกรด (aluminium hydroxide/magnesium hydroxide), วิตามินเด็ก และ montelukast chewable นอกจาก diluent แล้วตำรับมักมี sweetener (aspartame, sucralose), flavor และ lubricant ในปริมาณที่ไม่ทำให้รสขม/เคลือบปาก ความแข็งของยาเม็ดเคี้ยวมักต่ำกว่ายาเม็ดกลืนเพื่อให้เคี้ยวง่าย",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Dibasic calcium phosphate",
+          "is_correct": false,
+          "explanation": "DCP ไม่ละลายน้ำ ให้ความรู้สึกสากเป็นทรายในปาก และไม่มีรสหวาน จึงไม่เหมาะเป็นสารเพิ่มปริมาณหลักของยาเม็ดเคี้ยว"
+        },
+        {
+          "label": "B",
+          "text": "Microcrystalline cellulose",
+          "is_correct": false,
+          "explanation": "MCC ไม่ละลายน้ำและไม่มีรสหวาน ให้ความรู้สึกเป็นเยื่อ/สากในปาก ใช้เป็นสารช่วยเพียงบางส่วนได้"
+        },
+        {
+          "label": "C",
+          "text": "Sorbitol",
+          "is_correct": false,
+          "explanation": "Sorbitol มีรสหวานและเย็นเช่นกัน แต่ดูดความชื้นสูง (hygroscopic) ทำให้เม็ดยาเหนียวและมีปัญหาความคงตัว จึงด้อยกว่า mannitol ตามเงื่อนไขโจทย์"
+        },
+        {
+          "label": "D",
+          "text": "Mannitol",
+          "is_correct": true,
+          "explanation": "ถูกต้อง Mannitol หวาน เย็น (negative heat of solution) ละลายในปาก และไม่ดูดความชื้น"
+        },
+        {
+          "label": "E",
+          "text": "Corn starch",
+          "is_correct": false,
+          "explanation": "Corn starch ไม่มีรสหวาน ให้ความรู้สึกเป็นแป้งในปาก ใช้เป็น disintegrant/binder มากกว่า"
+        }
+      ],
+      "key_takeaway": "Chewable tablet diluent = Mannitol (หวาน + เย็น + non-hygroscopic); Sorbitol หวานเย็นแต่ hygroscopic"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "ตำรับยาเม็ดฟู่ (effervescent tablet) วิตามินซี ประกอบด้วย Ascorbic acid, Citric acid anhydrous, Sodium bicarbonate, Sorbitol, Sucralose และ L-leucine ผู้ตั้งตำรับเลือกใช้ L-leucine แทน Magnesium stearate เพราะเหตุใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "L-leucine เป็น lubricant ที่ละลายน้ำได้ จึงได้สารละลายใสไม่มีฝ้าหรือคราบลอยบนผิวน้ำเมื่อละลายเม็ดยา"
+      },
+      {
+        "label": "B",
+        "text": "L-leucine เป็นกรดที่ทำปฏิกิริยากับ sodium bicarbonate ให้ก๊าซ CO2 มากขึ้น"
+      },
+      {
+        "label": "C",
+        "text": "L-leucine ทำหน้าที่เป็น superdisintegrant ที่พองตัวในน้ำ"
+      },
+      {
+        "label": "D",
+        "text": "L-leucine เป็น binder ที่เพิ่มความแข็งของเม็ดยา"
+      },
+      {
+        "label": "E",
+        "text": "L-leucine เป็นสารกันเสียป้องกันการเจริญของจุลชีพ"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "ยาเม็ดฟู่ต้องละลายในน้ำเป็นสารละลายใส Mg stearate ไม่ละลายน้ำจะเกิดฝ้าลอยและชะลอการแตกตัว จึงใช้ lubricant ละลายน้ำ เช่น L-leucine, PEG 6000 หรือ sodium benzoate",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. L-leucine เป็น lubricant ที่ละลายน้ำได้ จึงได้สารละลายใสไม่มีฝ้าหรือคราบลอยบนผิวน้ำเมื่อละลายเม็ดยา — L-leucine เป็น water-soluble lubricant ทำให้เม็ดฟู่ละลายได้สารละลายใสไม่มีคราบ",
+      "reason": "ยาเม็ดฟู่ประกอบด้วยกรด (citric acid, tartaric acid) และเบส/คาร์บอเนต (sodium bicarbonate, sodium carbonate) ซึ่งเมื่อสัมผัสน้ำจะทำปฏิกิริยาให้ CO2 ทำให้เม็ดแตกตัวและละลายเร็ว ผู้ป่วยละลายเม็ดยาในน้ำก่อนดื่ม จึงต้องได้สารละลายใสและไม่มีคราบลอย Magnesium stearate เป็นสารไม่ชอบน้ำและไม่ละลายน้ำ จะลอยเป็นฝ้า (scum) บนผิวน้ำ และฟิล์มไม่ชอบน้ำบนผิวอนุภาคยังชะลอการเปียกน้ำและปฏิกิริยาฟู่ จึงนิยมใช้ water-soluble lubricants เช่น L-leucine, PEG 4000/6000, sodium benzoate, sodium stearyl fumarate (ละลายได้บางส่วน) หรือ adipic acid ข้อควรระวังสำคัญอื่นของยาเม็ดฟู่คือการผลิตต้องควบคุมความชื้นสัมพัทธ์ให้ต่ำมาก (มักราว 20–25% RH หรือต่ำกว่า) และอุณหภูมิควบคุม เพราะความชื้นจะกระตุ้นปฏิกิริยากรด–เบสก่อนเวลา บรรจุในหลอดหรือฟอยล์กันชื้นพร้อมสารดูดความชื้น เกณฑ์ Ph. Eur.: เม็ดฟู่ต้องแตกตัว/ละลายใน 200 mL น้ำที่ 15–25 °C ภายใน 5 นาที",
+      "choices": [
+        {
+          "label": "A",
+          "text": "L-leucine เป็น lubricant ที่ละลายน้ำได้ จึงได้สารละลายใสไม่มีฝ้าหรือคราบลอยบนผิวน้ำเมื่อละลายเม็ดยา",
+          "is_correct": true,
+          "explanation": "ถูกต้อง L-leucine เป็น lubricant ที่ละลายน้ำ จึงไม่เกิดฝ้าลอยบนผิวน้ำและไม่ชะลอการเปียก/ปฏิกิริยาฟู่ ต่างจาก Mg stearate"
+        },
+        {
+          "label": "B",
+          "text": "L-leucine เป็นกรดที่ทำปฏิกิริยากับ sodium bicarbonate ให้ก๊าซ CO2 มากขึ้น",
+          "is_correct": false,
+          "explanation": "ผิด L-leucine เป็นกรดอะมิโนที่มีสมบัติ zwitterion ไม่ได้ใช้เป็นแหล่งกรดในปฏิกิริยาฟู่ แหล่งกรดในตำรับคือ citric acid (และ ascorbic acid)"
+        },
+        {
+          "label": "C",
+          "text": "L-leucine ทำหน้าที่เป็น superdisintegrant ที่พองตัวในน้ำ",
+          "is_correct": false,
+          "explanation": "ผิด L-leucine ไม่พองตัว ยาเม็ดฟู่อาศัยการเกิด CO2 เป็นกลไกแตกตัวหลัก ไม่ใช้ superdisintegrant"
+        },
+        {
+          "label": "D",
+          "text": "L-leucine เป็น binder ที่เพิ่มความแข็งของเม็ดยา",
+          "is_correct": false,
+          "explanation": "ผิด L-leucine ใช้เป็น lubricant ไม่ได้เพิ่มการยึดเกาะ การใช้ในปริมาณมากกลับลดความแข็งได้"
+        },
+        {
+          "label": "E",
+          "text": "L-leucine เป็นสารกันเสียป้องกันการเจริญของจุลชีพ",
+          "is_correct": false,
+          "explanation": "ผิด L-leucine ไม่มีฤทธิ์กันเสีย และยาเม็ดฟู่เป็นรูปแบบแห้งที่โดยทั่วไปไม่ต้องใช้สารกันเสีย"
+        }
+      ],
+      "key_takeaway": "Effervescent: กรด + NaHCO3 → CO2; lubricant ต้องละลายน้ำ (L-leucine, PEG 6000, sodium benzoate); ผลิตที่ RH ต่ำ; Ph. Eur. แตกตัว ≤5 นาที"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ตาม US FDA Guidance for Industry: Orally Disintegrating Tablets (2008) ยาเม็ดที่จะจัดเป็น orally disintegrating tablet (ODT) ควรมีเวลาแตกตัวในหลอดทดลอง (in vitro disintegration time) ตามข้อแนะนำเท่าใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ไม่เกิน 3 นาที"
+      },
+      {
+        "label": "B",
+        "text": "ไม่เกิน 15 นาที"
+      },
+      {
+        "label": "C",
+        "text": "ไม่เกิน 5 นาที"
+      },
+      {
+        "label": "D",
+        "text": "ไม่เกิน 60 วินาที"
+      },
+      {
+        "label": "E",
+        "text": "ประมาณ 30 วินาทีหรือน้อยกว่า"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "FDA แนะนำให้ ODT มี in vitro disintegration time ประมาณ 30 วินาทีหรือน้อยกว่า (ใช้ USP disintegration test หรือวิธีทางเลือก) และน้ำหนักเม็ดไม่เกิน 500 mg",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. ประมาณ 30 วินาทีหรือน้อยกว่า — FDA guidance กำหนด ODT ควรแตกตัวในหลอดทดลองประมาณ 30 วินาทีหรือน้อยกว่า",
+      "reason": "ODT คือยาเม็ดที่แตกตัวอย่างรวดเร็วบนลิ้นภายในไม่กี่วินาทีโดยไม่ต้องดื่มน้ำ เหมาะกับเด็ก ผู้สูงอายุ ผู้ป่วยกลืนลำบาก ผู้ป่วยจิตเวช หรือผู้ป่วยที่มีอาการคลื่นไส้ US FDA Guidance (2008) แนะนำว่า ODT ควรมี in vitro disintegration time ประมาณ 30 วินาทีหรือน้อยกว่า ตามวิธี USP <701> หรือวิธีทางเลือกที่เทียบเท่า และน้ำหนักเม็ดไม่ควรเกิน 500 mg ส่วน Ph. Eur. กำหนดให้ orodispersible tablets แตกตัวภายใน 3 นาที ซึ่งหลวมกว่ามาก ข้อนี้จึงมักใช้แยกความต่างระหว่าง FDA กับ Ph. Eur. เทคโนโลยีการผลิต ODT ได้แก่ lyophilization/freeze-drying (เช่น Zydis ให้เม็ดพรุนมาก แตกตัวในไม่กี่วินาทีแต่เปราะ ต้องใช้ blister พิเศษ), molding, การตอกตรงด้วย superdisintegrant ร่วมกับ mannitol/co-processed excipients, sublimation และ spray drying ต้องคำนึงถึงการกลบรส (taste masking) และความรู้สึกในปาก ยาที่ดูดซึมจาก ODT ส่วนใหญ่ยังถูกกลืนลงทางเดินอาหาร (ไม่ใช่ดูดซึมผ่านกระพุ้งแก้มเป็นหลัก)",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ไม่เกิน 3 นาที",
+          "is_correct": false,
+          "explanation": "ผิด ไม่เกิน 3 นาทีเป็นเกณฑ์ของ Ph. Eur. สำหรับ orodispersible tablets ไม่ใช่ข้อแนะนำของ FDA"
+        },
+        {
+          "label": "B",
+          "text": "ไม่เกิน 15 นาที",
+          "is_correct": false,
+          "explanation": "ผิด 15 นาทีเป็นเกณฑ์ยาเม็ดเปลือยของ Ph. Eur. ช้าเกินไปสำหรับยาที่ต้องแตกตัวบนลิ้น"
+        },
+        {
+          "label": "C",
+          "text": "ไม่เกิน 5 นาที",
+          "is_correct": false,
+          "explanation": "ผิด 5 นาทีเป็นเกณฑ์ effervescent tablets ตาม Ph. Eur."
+        },
+        {
+          "label": "D",
+          "text": "ไม่เกิน 60 วินาที",
+          "is_correct": false,
+          "explanation": "ผิด 60 วินาทีไม่ใช่ค่าที่ FDA guidance ระบุ FDA แนะนำเวลาที่สั้นกว่านี้ คือประมาณ 30 วินาที"
+        },
+        {
+          "label": "E",
+          "text": "ประมาณ 30 วินาทีหรือน้อยกว่า",
+          "is_correct": true,
+          "explanation": "ถูกต้อง FDA แนะนำ in vitro disintegration ประมาณ 30 วินาทีหรือน้อยกว่า และน้ำหนักเม็ด ≤500 mg"
+        }
+      ],
+      "key_takeaway": "ODT: FDA ≈ ≤30 วินาที, น้ำหนัก ≤500 mg; Ph. Eur. orodispersible ≤3 นาที"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ยาเม็ดติดกระพุ้งแก้ม (buccal tablet) สูตรหนึ่งประกอบด้วยตัวยาสำคัญ, Carbomer 974P, Hydroxypropyl methylcellulose (HPMC K4M), Mannitol และ Magnesium stearate โดยมีชั้น Ethylcellulose เป็น backing layer ด้านหนึ่ง Carbomer 974P และ HPMC K4M ในตำรับนี้ทำหน้าที่หลักใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "สารช่วยแตกตัว ให้เม็ดยาแตกตัวภายใน 30 วินาทีใต้ลิ้น"
+      },
+      {
+        "label": "B",
+        "text": "สาร mucoadhesive ที่ยึดเกาะเยื่อบุกระพุ้งแก้มและควบคุมการปลดปล่อยยา"
+      },
+      {
+        "label": "C",
+        "text": "สาร enteric coating ป้องกันยาจากกรดในกระเพาะอาหาร"
+      },
+      {
+        "label": "D",
+        "text": "สารหล่อลื่นลดแรงเสียดทานกับผนัง die"
+      },
+      {
+        "label": "E",
+        "text": "สารแต่งรสหวานกลบรสขมของยา"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Carbomer และ HPMC เป็น mucoadhesive polymers ที่พองตัวและสร้างพันธะ (เช่น hydrogen bond, chain entanglement) กับ mucin ทำให้เม็ดยาติดกระพุ้งแก้มนานและปลดปล่อยยาแบบควบคุม",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. สาร mucoadhesive ที่ยึดเกาะเยื่อบุกระพุ้งแก้มและควบคุมการปลดปล่อยยา — Carbomer และ HPMC เป็น mucoadhesive polymers ที่ทำให้เม็ดยาเกาะเยื่อบุกระพุ้งแก้มและปลดปล่อยยาอย่างควบคุม",
+      "reason": "Buccal tablet วางไว้ระหว่างเหงือกกับกระพุ้งแก้ม ยาดูดซึมผ่านเยื่อบุช่องปากเข้าสู่ระบบไหลเวียนโดยตรงผ่าน internal jugular vein จึงหลีกเลี่ยง hepatic first-pass metabolism และการสลายในทางเดินอาหาร เม็ดยาประเภทนี้ต้องติดอยู่กับเยื่อบุได้นาน (mucoadhesion) โดยอาศัยพอลิเมอร์ที่ชอบน้ำและมีน้ำหนักโมเลกุลสูง เช่น carbomer (polyacrylic acid ซึ่งมีหมู่ –COOH สร้าง hydrogen bond กับ mucin), HPMC, sodium CMC, chitosan เมื่อพองตัวด้วยน้ำลาย สายโซ่พอลิเมอร์จะแทรกและพันกับสาย mucin (interpenetration/entanglement) พร้อมสร้างพันธะทุติยภูมิ เจลที่เกิดขึ้นยังเป็น matrix ที่ควบคุมการแพร่ของยา backing layer เช่น ethylcellulose ซึ่งไม่ละลายน้ำ ทำให้ยาปลดปล่อยไปทางเยื่อบุทางเดียว (unidirectional) และลดการสูญเสียยาไปกับน้ำลาย ต่างจาก sublingual tablet (เช่น nitroglycerin) ที่ต้องละลาย/แตกตัวเร็วใต้ลิ้นเพื่อออกฤทธิ์ทันที",
+      "choices": [
+        {
+          "label": "A",
+          "text": "สารช่วยแตกตัว ให้เม็ดยาแตกตัวภายใน 30 วินาทีใต้ลิ้น",
+          "is_correct": false,
+          "explanation": "ผิด การแตกตัวเร็วใต้ลิ้นเป็นลักษณะของ sublingual tablet/ODT แต่ buccal tablet ต้องค้างอยู่ที่กระพุ้งแก้มนาน Carbomer และ HPMC ทำให้เกิดเจลซึ่งชะลอการแตกตัว"
+        },
+        {
+          "label": "B",
+          "text": "สาร mucoadhesive ที่ยึดเกาะเยื่อบุกระพุ้งแก้มและควบคุมการปลดปล่อยยา",
+          "is_correct": true,
+          "explanation": "ถูกต้อง Carbomer และ HPMC เป็น mucoadhesive polymers ที่ยึดกับ mucin และเกิดเจลควบคุมการปลดปล่อยยา"
+        },
+        {
+          "label": "C",
+          "text": "สาร enteric coating ป้องกันยาจากกรดในกระเพาะอาหาร",
+          "is_correct": false,
+          "explanation": "ผิด enteric polymers คือ CAP, HPMCP, Eudragit L/S ซึ่งละลายที่ pH สูง และ buccal tablet ไม่ได้ถูกกลืนลงกระเพาะ"
+        },
+        {
+          "label": "D",
+          "text": "สารหล่อลื่นลดแรงเสียดทานกับผนัง die",
+          "is_correct": false,
+          "explanation": "ผิด Lubricant ในตำรับนี้คือ Magnesium stearate"
+        },
+        {
+          "label": "E",
+          "text": "สารแต่งรสหวานกลบรสขมของยา",
+          "is_correct": false,
+          "explanation": "ผิด สารแต่งรสหวานในตำรับนี้คือ Mannitol (ร่วมกับเป็น diluent) Carbomer และ HPMC ไม่มีรสหวาน"
+        }
+      ],
+      "key_takeaway": "Buccal = mucoadhesive (carbomer, HPMC, Na CMC, chitosan) + backing layer, เลี่ยง first-pass; Sublingual = แตก/ละลายเร็วใต้ลิ้น (nitroglycerin)"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "สารละลายเคลือบฟิล์มแบบน้ำ (aqueous film coating) ประกอบด้วย HPMC E5 10% w/w, Polyethylene glycol 400 1.5% w/w, Titanium dioxide 2% w/w, Yellow iron oxide 0.5% w/w และ Purified water ให้ครบ 100% Polyethylene glycol 400 ทำหน้าที่ใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Film-forming polymer"
+      },
+      {
+        "label": "B",
+        "text": "Opacifier"
+      },
+      {
+        "label": "C",
+        "text": "Plasticizer"
+      },
+      {
+        "label": "D",
+        "text": "Colorant"
+      },
+      {
+        "label": "E",
+        "text": "Anti-tacking agent"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "PEG 400 เป็น plasticizer ที่แทรกระหว่างสายโซ่ HPMC ลด glass transition temperature ทำให้ฟิล์มยืดหยุ่น ไม่เปราะแตก",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. Plasticizer — PEG 400 คือ plasticizer ที่ลด Tg ของ HPMC ทำให้ฟิล์มยืดหยุ่นและไม่แตก",
+      "reason": "สูตรเคลือบฟิล์มมาตรฐานประกอบด้วย (1) film-forming polymer เช่น HPMC (E5/E15 viscosity ต่ำ) สำหรับฟิล์มละลายเร็ว (2) plasticizer เช่น PEG 400/6000, propylene glycol, glycerin, triethyl citrate, dibutyl sebacate มักใช้ประมาณ 10–30% ของน้ำหนักพอลิเมอร์ (ในโจทย์ 1.5/10 = 15%) (3) opacifier เช่น titanium dioxide ช่วยให้ฟิล์มทึบแสง ป้องกันแสงและช่วยให้สีสม่ำเสมอ (4) colorant เช่น iron oxide หรือ aluminum lake (5) ตัวทำละลาย/vehicle คือน้ำ และอาจมี anti-tacking agent เช่น talc Plasticizer ทำงานโดยแทรกระหว่างสายโซ่พอลิเมอร์ ลดแรงยึดระหว่างสายโซ่ ทำให้ glass transition temperature (Tg) ลดลง ฟิล์มจึงยืดหยุ่น (flexible) ลดความเปราะ ลดการแตกร้าว (cracking) และขอบลอก (edge splitting) และเพิ่มการยึดเกาะกับผิวเม็ด การใส่ plasticizer น้อยเกินไปทำให้ฟิล์มแตกร้าวหรือ bridging ของโลโก้ ส่วนมากเกินทำให้ฟิล์มเหนียว เม็ดติดกัน (sticking/twinning)",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Film-forming polymer",
+          "is_correct": false,
+          "explanation": "ผิด Film-forming polymer ในสูตรนี้คือ HPMC E5 ซึ่งเป็นโครงสร้างหลักของฟิล์ม"
+        },
+        {
+          "label": "B",
+          "text": "Opacifier",
+          "is_correct": false,
+          "explanation": "ผิด Opacifier คือ Titanium dioxide ซึ่งกระเจิงแสงทำให้ฟิล์มทึบ"
+        },
+        {
+          "label": "C",
+          "text": "Plasticizer",
+          "is_correct": true,
+          "explanation": "ถูกต้อง PEG 400 เป็น plasticizer ลด Tg ของ HPMC เพิ่มความยืดหยุ่นของฟิล์ม"
+        },
+        {
+          "label": "D",
+          "text": "Colorant",
+          "is_correct": false,
+          "explanation": "ผิด Colorant คือ Yellow iron oxide ซึ่งให้สีเหลือง"
+        },
+        {
+          "label": "E",
+          "text": "Anti-tacking agent",
+          "is_correct": false,
+          "explanation": "ผิด Anti-tacking agent ที่ใช้บ่อยคือ talc หรือ glyceryl monostearate PEG 400 เป็นของเหลวที่หากใช้มากกลับเพิ่มความเหนียว"
+        }
+      ],
+      "key_takeaway": "Film coat = Polymer (HPMC) + Plasticizer (PEG, TEC, PG) + Opacifier (TiO2) + Colorant (iron oxide/lake) + Solvent (น้ำ)"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "การเคลือบ enteric ด้วย aqueous polymeric dispersion (latex) ของ methacrylic acid–ethyl acrylate copolymer (Eudragit L 30 D-55) โดยไม่เติม plasticizer พบว่าชั้นเคลือบมีลักษณะขุ่น เป็นผงร่วน มีรอยแตกร้าว และเม็ดยาไม่ผ่านการทดสอบในกรด เมื่อเติม triethyl citrate ปัญหานี้หายไป เหตุผลที่ถูกต้องที่สุดคือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Triethyl citrate เพิ่ม Tg ของพอลิเมอร์ ทำให้ฟิล์มแข็งแรงขึ้น"
+      },
+      {
+        "label": "B",
+        "text": "Triethyl citrate เป็นสารลดแรงตึงผิวช่วยให้ latex กระจายตัวในน้ำได้ดี"
+      },
+      {
+        "label": "C",
+        "text": "Triethyl citrate ทำให้พอลิเมอร์ละลายในน้ำได้ดีขึ้นเป็นสารละลายใส"
+      },
+      {
+        "label": "D",
+        "text": "Triethyl citrate ลด glass transition temperature และ minimum film-forming temperature (MFT) ทำให้อนุภาค latex เสียรูปและหลอมรวม (coalescence) เป็นฟิล์มต่อเนื่องที่อุณหภูมิของการเคลือบ"
+      },
+      {
+        "label": "E",
+        "text": "Triethyl citrate ทำปฏิกิริยา cross-link กับหมู่ carboxyl ของพอลิเมอร์"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "ฟิล์มจาก latex เกิดได้เมื่ออุณหภูมิผิวเม็ดสูงกว่า MFT; plasticizer ลด Tg และ MFT ทำให้อนุภาคพอลิเมอร์เสียรูปและ coalesce เป็นฟิล์มต่อเนื่อง ไม่แตกร้าว",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. Triethyl citrate ลด glass transition temperature และ minimum film-forming temperature (MFT) ทำให้อนุภาค latex เสียรูปและหลอมรวม (coalescence) เป็นฟิล์มต่อเนื่องที่อุณหภูมิของการเคลือบ — Plasticizer ลด Tg และ MFT ให้ต่ำกว่าอุณหภูมิผลิตภัณฑ์ อนุภาค latex จึง coalesce เป็นฟิล์มต่อเนื่องที่ป้องกันกรดได้",
+      "reason": "Aqueous polymeric dispersion (latex/pseudolatex) ประกอบด้วยอนุภาคพอลิเมอร์ขนาดเล็กกระจายในน้ำ ไม่ได้ละลายเป็นสารละลาย การเกิดฟิล์มมี 3 ขั้น: (1) น้ำระเหย อนุภาคเรียงชิดกัน (2) แรง capillary และแรงตึงผิวบีบให้อนุภาคเสียรูป (deformation) (3) สายโซ่พอลิเมอร์แพร่ข้ามขอบอนุภาค (interdiffusion) เกิดฟิล์มต่อเนื่อง (coalescence) ขั้นตอนนี้เกิดได้เมื่ออุณหภูมิสูงกว่า minimum film-forming temperature (MFT) ซึ่งสัมพันธ์กับ Tg ของพอลิเมอร์ หาก MFT สูงกว่าอุณหภูมิผิวเม็ดขณะเคลือบ อนุภาคจะไม่หลอมรวม ได้ชั้นเคลือบขุ่น เป็นผง มีรูพรุน/รอยแตก กรดซึมผ่านได้ จึงไม่ผ่านการทดสอบ gastro-resistance Plasticizer เช่น triethyl citrate (TEC), dibutyl sebacate, PEG แทรกระหว่างสายโซ่ ลด Tg และ MFT จึงเกิดฟิล์มต่อเนื่อง ยืดหยุ่น ไม่ร้าว ปริมาณ plasticizer สำหรับ enteric latex มักประมาณ 10–20% ของน้ำหนักพอลิเมอร์แห้ง นอกจากนี้หลังเคลือบมักต้องมี curing (อบต่อที่อุณหภูมิสูงกว่า MFT ระยะหนึ่ง) เพื่อให้ coalescence สมบูรณ์ ผลิตภัณฑ์ Eudragit L 30 D-55 ละลายที่ pH มากกว่า 5.5",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Triethyl citrate เพิ่ม Tg ของพอลิเมอร์ ทำให้ฟิล์มแข็งแรงขึ้น",
+          "is_correct": false,
+          "explanation": "ผิด Plasticizer ลด Tg ไม่ใช่เพิ่ม การเพิ่ม Tg จะทำให้ฟิล์มเปราะและเกิดฟิล์มยากขึ้น"
+        },
+        {
+          "label": "B",
+          "text": "Triethyl citrate เป็นสารลดแรงตึงผิวช่วยให้ latex กระจายตัวในน้ำได้ดี",
+          "is_correct": false,
+          "explanation": "ผิด TEC ไม่ได้ทำหน้าที่หลักเป็น surfactant ของ dispersion ระบบ latex ทางการค้ามี surfactant/stabilizer อยู่แล้ว ปัญหาคือการไม่ coalesce ของอนุภาค"
+        },
+        {
+          "label": "C",
+          "text": "Triethyl citrate ทำให้พอลิเมอร์ละลายในน้ำได้ดีขึ้นเป็นสารละลายใส",
+          "is_correct": false,
+          "explanation": "ผิด Eudragit L 30 D-55 ไม่ละลายในน้ำที่ pH ต่ำ (จึงเป็น enteric) การเติม TEC ไม่ได้ทำให้พอลิเมอร์ละลายเป็นสารละลาย"
+        },
+        {
+          "label": "D",
+          "text": "Triethyl citrate ลด glass transition temperature และ minimum film-forming temperature (MFT) ทำให้อนุภาค latex เสียรูปและหลอมรวม (coalescence) เป็นฟิล์มต่อเนื่องที่อุณหภูมิของการเคลือบ",
+          "is_correct": true,
+          "explanation": "ถูกต้อง TEC ลด Tg และ MFT ทำให้อนุภาค latex เสียรูปและ coalesce เป็นฟิล์มต่อเนื่อง ไม่ร้าวและกันกรดได้"
+        },
+        {
+          "label": "E",
+          "text": "Triethyl citrate ทำปฏิกิริยา cross-link กับหมู่ carboxyl ของพอลิเมอร์",
+          "is_correct": false,
+          "explanation": "ผิด TEC เป็น ester ที่ทำหน้าที่ plasticizer ทางกายภาพ ไม่ได้เกิดปฏิกิริยา cross-link ทางเคมีกับพอลิเมอร์"
+        }
+      ],
+      "key_takeaway": "Latex coating: ฟิล์มเกิดเมื่อ T(product) > MFT; plasticizer (TEC, DBS, PEG) ↓Tg ↓MFT → coalescence; มักต้อง curing หลังเคลือบ"
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "ลำดับขั้นตอนการเคลือบน้ำตาล (sugar coating) ยาเม็ดในหม้อเคลือบ (coating pan) แบบดั้งเดิมข้อใดถูกต้อง",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Sealing → Subcoating → Smoothing (syrup coating) → Coloring → Polishing → Printing"
+      },
+      {
+        "label": "B",
+        "text": "Subcoating → Sealing → Coloring → Smoothing → Polishing → Printing"
+      },
+      {
+        "label": "C",
+        "text": "Sealing → Coloring → Subcoating → Smoothing → Printing → Polishing"
+      },
+      {
+        "label": "D",
+        "text": "Polishing → Sealing → Subcoating → Coloring → Smoothing → Printing"
+      },
+      {
+        "label": "E",
+        "text": "Subcoating → Smoothing → Sealing → Polishing → Coloring → Printing"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Sugar coating: sealing (กันน้ำ) → subcoating (เพิ่มขนาด ปิดขอบ) → smoothing (ทำผิวเรียบ) → coloring (แต่งสี) → polishing (ขัดเงาด้วย wax) → printing",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. Sealing → Subcoating → Smoothing (syrup coating) → Coloring → Polishing → Printing — ลำดับถูกต้องคือ Sealing → Subcoating → Smoothing → Coloring → Polishing → Printing",
+      "reason": "การเคลือบน้ำตาลเป็นกระบวนการหลายขั้นที่ใช้เวลานานและเพิ่มน้ำหนักเม็ดมาก (อาจ 50–100%) (1) Sealing: เคลือบชั้นบางด้วยพอลิเมอร์กันน้ำ เช่น shellac, cellulose acetate phthalate, zein หรือ PVAP เพื่อกันไม่ให้น้ำจากน้ำเชื่อมในขั้นต่อไปซึมเข้าแกนเม็ดยา (ระวังใช้ shellac มากหรือเก็บนานจะทำให้แตกตัวช้า) (2) Subcoating: เคลือบน้ำเชื่อมผสม gelatin/acacia สลับกับโรยผง (เช่น calcium carbonate, talc) เพื่อเพิ่มขนาด ปัดขอบเม็ดให้มน และเป็นฐานให้ชั้นต่อไป (3) Smoothing/syrup coating: เคลือบด้วยน้ำเชื่อมเข้มข้น (อาจมี titanium dioxide) เพื่อปิดรอยขรุขระให้ผิวเรียบ (4) Coloring: เคลือบน้ำเชื่อมผสมสีหลายชั้นเพื่อให้ได้สีสม่ำเสมอ (5) Polishing: ขัดเงาด้วย wax เช่น carnauba wax หรือ beeswax ในหม้อขัดที่บุผ้าใบ (6) Printing: พิมพ์ตัวอักษรด้วยหมึก edible ink ข้อดีของ sugar coating คือรูปลักษณ์สวย กลบรส ป้องกันแสง/ความชื้น ข้อเสียคือใช้เวลานาน ต้องใช้ทักษะ เม็ดใหญ่ขึ้นมาก และ disintegration ยาว (Ph. Eur. ≤60 นาที) ปัจจุบันนิยม film coating มากกว่า",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Sealing → Subcoating → Smoothing (syrup coating) → Coloring → Polishing → Printing",
+          "is_correct": true,
+          "explanation": "ถูกต้อง เป็นลำดับมาตรฐานของการเคลือบน้ำตาล โดย sealing ต้องมาก่อนเพื่อกันน้ำจาก syrup"
+        },
+        {
+          "label": "B",
+          "text": "Subcoating → Sealing → Coloring → Smoothing → Polishing → Printing",
+          "is_correct": false,
+          "explanation": "ผิด Subcoating ก่อน sealing ทำให้น้ำในน้ำเชื่อมซึมเข้าแกนเม็ด ทำให้ยาเสื่อมหรือเม็ดบวม/อ่อน"
+        },
+        {
+          "label": "C",
+          "text": "Sealing → Coloring → Subcoating → Smoothing → Printing → Polishing",
+          "is_correct": false,
+          "explanation": "ผิด Coloring ต้องทำหลัง subcoating และ smoothing เพราะต้องมีพื้นผิวเรียบก่อนจึงจะได้สีสม่ำเสมอ และ polishing ต้องทำก่อน printing"
+        },
+        {
+          "label": "D",
+          "text": "Polishing → Sealing → Subcoating → Coloring → Smoothing → Printing",
+          "is_correct": false,
+          "explanation": "ผิด Polishing เป็นขั้นตอนเกือบสุดท้าย การขัดเงาด้วย wax ตั้งแต่แรกจะทำให้ชั้นถัดไปไม่ยึดเกาะ"
+        },
+        {
+          "label": "E",
+          "text": "Subcoating → Smoothing → Sealing → Polishing → Coloring → Printing",
+          "is_correct": false,
+          "explanation": "ผิด Sealing ต้องเป็นขั้นแรก และ coloring ต้องทำก่อน polishing"
+        }
+      ],
+      "key_takeaway": "Sugar coating ‘SS-SCPP’: Sealing → Subcoating → Smoothing → Coloring → Polishing → Printing"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ผู้ตั้งตำรับต้องการเคลือบยาเม็ด mesalamine เพื่อให้ปลดปล่อยยาบริเวณลำไส้เล็กส่วนปลาย (terminal ileum) และลำไส้ใหญ่ ซึ่งมี pH ประมาณ 7 โดยไม่ปลดปล่อยในกระเพาะอาหารและลำไส้เล็กส่วนต้น พอลิเมอร์ใดเหมาะสมที่สุด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Eudragit E 100 (aminoalkyl methacrylate copolymer)"
+      },
+      {
+        "label": "B",
+        "text": "Hydroxypropyl methylcellulose phthalate (HP-55)"
+      },
+      {
+        "label": "C",
+        "text": "Eudragit L 100-55"
+      },
+      {
+        "label": "D",
+        "text": "Cellulose acetate phthalate"
+      },
+      {
+        "label": "E",
+        "text": "Eudragit S 100 (methacrylic acid–methyl methacrylate copolymer 1:2)"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "Eudragit S 100 ละลายที่ pH มากกว่า 7.0 จึงปลดปล่อยยาที่ terminal ileum/ลำไส้ใหญ่ ส่วน HPMCP HP-55, Eudragit L 100-55 และ CAP ละลายที่ pH ประมาณ 5.5–6.2 ในลำไส้เล็กส่วนต้น",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. Eudragit S 100 (methacrylic acid–methyl methacrylate copolymer 1:2) — Eudragit S 100 ละลายที่ pH > 7 จึงเหมาะกับการนำส่งยาสู่ terminal ileum และลำไส้ใหญ่",
+      "reason": "Enteric/pH-dependent polymers มีหมู่ carboxylic acid ที่ไม่แตกตัวในกรด (กระเพาะ pH 1–3) จึงไม่ละลาย แต่เมื่อ pH สูงกว่า pKa/threshold หมู่ –COOH แตกตัวเป็น –COO⁻ พอลิเมอร์จึงละลาย การเลือกพอลิเมอร์จึงขึ้นกับตำแหน่งที่ต้องการให้ยาปลดปล่อย: HPMCP HP-50 ละลายที่ pH ≥5.0, HP-55 ที่ pH ≥5.5; Eudragit L 100-55 / L 30 D-55 ที่ pH >5.5 (duodenum); cellulose acetate phthalate ประมาณ pH ≥6.0–6.2; Eudragit L 100 ที่ pH >6.0 (jejunum); Eudragit S 100 และ FS 30 D ที่ pH >7.0 (terminal ileum/colon) ยา mesalamine (5-ASA) สำหรับ ulcerative colitis ต้องออกฤทธิ์เฉพาะที่ในลำไส้ใหญ่ ผลิตภัณฑ์ทางการค้าบางชนิดจึงเคลือบด้วย Eudragit S หรือผสม L/S ข้อจำกัดคือ pH ในทางเดินอาหารแปรปรวนระหว่างบุคคล และ pH ในลำไส้ใหญ่ส่วนต้นอาจลดลงเหลือ ~6 จากกรดไขมันสายสั้น จึงมีการพัฒนาระบบผสม pH + enzyme-triggered ส่วน Eudragit E ละลายที่ pH <5 ใช้กลบรสหรือป้องกันความชื้น ไม่ใช่ enteric",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Eudragit E 100 (aminoalkyl methacrylate copolymer)",
+          "is_correct": false,
+          "explanation": "ผิด Eudragit E 100 มีหมู่ dimethylaminoethyl ที่เป็นเบส ละลายในกรดที่ pH <5 จึงละลายในกระเพาะ ใช้สำหรับ taste masking/moisture protection"
+        },
+        {
+          "label": "B",
+          "text": "Hydroxypropyl methylcellulose phthalate (HP-55)",
+          "is_correct": false,
+          "explanation": "ผิด HPMCP HP-55 ละลายที่ pH ≥5.5 ซึ่งจะปลดปล่อยยาตั้งแต่ duodenum ก่อนถึงลำไส้ใหญ่"
+        },
+        {
+          "label": "C",
+          "text": "Eudragit L 100-55",
+          "is_correct": false,
+          "explanation": "ผิด Eudragit L 100-55 ละลายที่ pH >5.5 ปลดปล่อยยาที่ลำไส้เล็กส่วนต้น"
+        },
+        {
+          "label": "D",
+          "text": "Cellulose acetate phthalate",
+          "is_correct": false,
+          "explanation": "ผิด CAP ละลายที่ pH ประมาณ 6.0–6.2 ยังปลดปล่อยในลำไส้เล็กก่อนถึงตำแหน่งเป้าหมาย"
+        },
+        {
+          "label": "E",
+          "text": "Eudragit S 100 (methacrylic acid–methyl methacrylate copolymer 1:2)",
+          "is_correct": true,
+          "explanation": "ถูกต้อง Eudragit S 100 ละลายที่ pH >7.0 จึงเหมาะกับการนำส่งยาสู่ terminal ileum และ colon"
+        }
+      ],
+      "key_takeaway": "pH threshold: HPMCP HP-50 5.0 | HP-55 & Eudragit L100-55 5.5 | CAP ~6.0–6.2 | Eudragit L100 6.0 | Eudragit S100/FS 30 D 7.0 | Eudragit E <5 (ละลายในกระเพาะ)"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ระหว่างการเคลือบฟิล์มด้วย HPMC ใน perforated coating pan พบว่าผิวเม็ดยาที่เคลือบเสร็จมีลักษณะขรุขระเป็นรอยบุ๋มคล้ายผิวเปลือกส้ม ไม่เรียบเงา ตรวจสอบพบว่าสารละลายเคลือบมีความหนืดสูงและแรงดันลม atomizing ต่ำกว่าปกติ ปัญหานี้คืออะไรและควรแก้ไขอย่างไร",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Twinning — ลดความเร็วการหมุนของ pan"
+      },
+      {
+        "label": "B",
+        "text": "Blistering — เพิ่มอุณหภูมิลมขาเข้า"
+      },
+      {
+        "label": "C",
+        "text": "Orange peel — ลดความหนืดหรือปริมาณของแข็งในสารละลายเคลือบ และเพิ่มแรงดันลม atomizing เพื่อให้ได้หยดละอองเล็กลง"
+      },
+      {
+        "label": "D",
+        "text": "Picking — เพิ่มอัตราการพ่นสารละลายเคลือบ"
+      },
+      {
+        "label": "E",
+        "text": "Bridging of logo — ลดปริมาณ plasticizer"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Orange peel เกิดจากหยดละอองใหญ่/หนืดที่แห้งก่อนแผ่ราบ (poor spreading) แก้โดยลดความหนืด เพิ่มแรงดัน atomizing และปรับไม่ให้แห้งเร็วเกิน",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. Orange peel — ลดความหนืดหรือปริมาณของแข็งในสารละลายเคลือบ และเพิ่มแรงดันลม atomizing เพื่อให้ได้หยดละอองเล็กลง — ปัญหาคือ orange peel แก้โดยลดความหนืด/ปริมาณของแข็งของสารเคลือบและเพิ่มแรงดันลม atomizing",
+      "reason": "Orange peel (roughness) คือผิวฟิล์มที่ขรุขระเป็นรอยบุ๋มเหมือนผิวส้ม เกิดจากหยดละอองของสารเคลือบไม่สามารถแผ่และไหลรวมเป็นผิวเรียบก่อนแห้ง สาเหตุหลัก: (1) สารละลายเคลือบหนืดเกิน (polymer หรือ solid content สูง) ทำให้แผ่ตัวไม่ดี (2) atomization ไม่ดีจากแรงดันลม atomizing ต่ำ ได้หยดใหญ่ (3) การแห้งเร็วเกิน เช่น อุณหภูมิลมขาเข้าสูงหรือระยะ spray gun ไกลเกิน หยดจึงแห้งบางส่วนก่อนถึงผิวเม็ด วิธีแก้: ลดความหนืดหรือ solid content (เติมตัวทำละลาย/ใช้ HPMC เกรด viscosity ต่ำ), เพิ่มแรงดันลม atomizing ให้หยดเล็กสม่ำเสมอ, ลดอุณหภูมิลมขาเข้าหรือปรับระยะ spray gun ให้เหมาะ ข้อควรระวัง: เพิ่มแรงดัน atomizing มากเกินหรือแห้งเร็วเกินจะเกิด spray drying ของหยด ได้ฝุ่นและผิวด้าน ส่วนการพ่นเปียกเกินทำให้เกิด twinning หรือ picking การควบคุม coating process เป็นสมดุลระหว่าง spray rate, atomizing pressure, inlet air temperature/volume และ pan speed",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Twinning — ลดความเร็วการหมุนของ pan",
+          "is_correct": false,
+          "explanation": "ผิด Twinning คือเม็ดยาสองเม็ดติดกัน เกิดจากพ่นเปียกเกินหรือรูปทรงเม็ดแบน การลด pan speed กลับทำให้แย่ลง"
+        },
+        {
+          "label": "B",
+          "text": "Blistering — เพิ่มอุณหภูมิลมขาเข้า",
+          "is_correct": false,
+          "explanation": "ผิด Blistering คือฟิล์มพองเป็นตุ่มจากตัวทำละลายระเหยติดอยู่ใต้ฟิล์มเนื่องจากความร้อนสูงเกิน การเพิ่มอุณหภูมิจะทำให้เกิด blistering มากขึ้น"
+        },
+        {
+          "label": "C",
+          "text": "Orange peel — ลดความหนืดหรือปริมาณของแข็งในสารละลายเคลือบ และเพิ่มแรงดันลม atomizing เพื่อให้ได้หยดละอองเล็กลง",
+          "is_correct": true,
+          "explanation": "ถูกต้อง ผิวขรุขระคล้ายเปลือกส้มจากสารเคลือบหนืดและ atomization ไม่ดีคือ orange peel แก้โดยลดความหนืดและเพิ่มแรงดัน atomizing"
+        },
+        {
+          "label": "D",
+          "text": "Picking — เพิ่มอัตราการพ่นสารละลายเคลือบ",
+          "is_correct": false,
+          "explanation": "ผิด Picking ในการเคลือบเกิดจากผิวเม็ดเปียกเกินจนเม็ดติดกันหรือติดผนังแล้วฟิล์มหลุด การเพิ่ม spray rate ทำให้แย่ลง และไม่ตรงกับอาการผิวเปลือกส้ม"
+        },
+        {
+          "label": "E",
+          "text": "Bridging of logo — ลดปริมาณ plasticizer",
+          "is_correct": false,
+          "explanation": "ผิด Bridging คือฟิล์มขึงข้ามร่องโลโก้ แก้โดยเพิ่ม plasticizer ไม่ใช่ลด และไม่ตรงกับอาการในโจทย์"
+        }
+      ],
+      "key_takeaway": "Orange peel = หยดใหญ่/หนืด/แห้งเร็ว → ลดความหนืด, ↑ atomizing pressure, ↓ inlet temp; Twinning/picking = เปียกเกิน → ↓ spray rate"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ยาเม็ดเคลือบฟิล์มที่มีโลโก้แกะร่อง (intagliated logo) บนผิวหน้า หลังเคลือบพบว่าฟิล์มไม่แนบลงในร่องโลโก้ แต่ยกตัวขึ้นขึงข้ามร่องเป็นสะพาน ทำให้โลโก้มองเห็นไม่ชัด ปัญหานี้คืออะไรและวิธีแก้ไขที่เหมาะสมที่สุดคือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Logo infilling — ลดปริมาณ plasticizer ในสูตรเคลือบ"
+      },
+      {
+        "label": "B",
+        "text": "Bridging — เพิ่มปริมาณ plasticizer หรือใช้พอลิเมอร์ที่มีน้ำหนักโมเลกุลต่ำลงเพื่อลด internal stress และเพิ่มการยึดเกาะของฟิล์มกับผิวเม็ด"
+      },
+      {
+        "label": "C",
+        "text": "Orange peel — ลดอัตราการพ่นและเพิ่มอุณหภูมิลมขาเข้า"
+      },
+      {
+        "label": "D",
+        "text": "Picking — เพิ่ม anti-tacking agent และลดความเร็ว pan"
+      },
+      {
+        "label": "E",
+        "text": "Twinning — เพิ่มความเร็ว pan และเปลี่ยนรูปทรงเม็ด"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Bridging เกิดเมื่อ internal stress ของฟิล์มมากกว่าแรงยึดเกาะกับผิวเม็ด ฟิล์มจึงดึงตัวออกจากร่อง แก้โดยเพิ่ม plasticizer/ใช้พอลิเมอร์น้ำหนักโมเลกุลต่ำ และเพิ่ม adhesion",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. Bridging — เพิ่มปริมาณ plasticizer หรือใช้พอลิเมอร์ที่มีน้ำหนักโมเลกุลต่ำลงเพื่อลด internal stress และเพิ่มการยึดเกาะของฟิล์มกับผิวเม็ด — ปัญหาคือ bridging ของโลโก้ แก้โดยเพิ่ม plasticizer หรือใช้พอลิเมอร์น้ำหนักโมเลกุลต่ำเพื่อลด internal stress และเพิ่มการยึดเกาะ",
+      "reason": "Bridging (logo bridging) คือฟิล์มเคลือบไม่ตามรูปร่างร่องโลโก้หรือร่องหัก (score line) แต่ขึงข้ามร่องเหมือนสะพาน ทำให้โลโก้เลือนหาย กลไกคือขณะฟิล์มแห้ง ตัวทำละลายระเหยทำให้ฟิล์มหดตัวเกิด internal stress หากแรงนี้มากกว่าแรงยึดเกาะระหว่างฟิล์มกับผิวเม็ดยา (film–tablet adhesion) ฟิล์มจะดึงตัวออกจากร่องที่เป็นมุม ปัจจัยส่งเสริม: plasticizer น้อยเกิน, พอลิเมอร์มีน้ำหนักโมเลกุลหรือความแข็งแรง (modulus) สูง, ผิวเม็ดยามีสาร hydrophobic มาก (เช่น Mg stearate สูง) ลดการยึดเกาะ และการออกแบบโลโก้ที่ร่องแคบลึกมุมแหลม วิธีแก้: เพิ่มปริมาณ plasticizer เพื่อลด Tg/modulus และ internal stress, ใช้พอลิเมอร์เกรดน้ำหนักโมเลกุลต่ำกว่า, ลดปริมาณ pigment ที่เพิ่ม stress, ปรับปรุง adhesion และออกแบบโลโก้ให้ร่องกว้างและมุมมน ต่างจาก logo infilling ซึ่งร่องถูกเติมเต็มด้วยฟองหรือผงสารเคลือบที่แห้งเป็นละออง (spray drying) แก้โดยลดแรงดัน atomizing/ลดฟอง",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Logo infilling — ลดปริมาณ plasticizer ในสูตรเคลือบ",
+          "is_correct": false,
+          "explanation": "ผิด Logo infilling คือร่องโลโก้ถูกอุดด้วยฟองหรือผงสารเคลือบจาก spray drying ไม่ใช่ฟิล์มขึงข้ามร่อง และการลด plasticizer จะเพิ่ม internal stress ทำให้ bridging แย่ลง"
+        },
+        {
+          "label": "B",
+          "text": "Bridging — เพิ่มปริมาณ plasticizer หรือใช้พอลิเมอร์ที่มีน้ำหนักโมเลกุลต่ำลงเพื่อลด internal stress และเพิ่มการยึดเกาะของฟิล์มกับผิวเม็ด",
+          "is_correct": true,
+          "explanation": "ถูกต้อง ฟิล์มขึงข้ามร่องคือ bridging จาก internal stress สูงกว่าแรงยึดเกาะ แก้โดยเพิ่ม plasticizer ใช้พอลิเมอร์น้ำหนักโมเลกุลต่ำ และเพิ่ม adhesion"
+        },
+        {
+          "label": "C",
+          "text": "Orange peel — ลดอัตราการพ่นและเพิ่มอุณหภูมิลมขาเข้า",
+          "is_correct": false,
+          "explanation": "ผิด Orange peel คือผิวขรุขระคล้ายผิวส้ม ไม่ใช่ปัญหาเฉพาะที่ร่องโลโก้"
+        },
+        {
+          "label": "D",
+          "text": "Picking — เพิ่ม anti-tacking agent และลดความเร็ว pan",
+          "is_correct": false,
+          "explanation": "ผิด Picking คือฟิล์มหลุดเป็นจุดจากการที่เม็ดเปียกติดกันแล้วแยกออก ไม่ใช่ฟิล์มขึงข้ามร่อง"
+        },
+        {
+          "label": "E",
+          "text": "Twinning — เพิ่มความเร็ว pan และเปลี่ยนรูปทรงเม็ด",
+          "is_correct": false,
+          "explanation": "ผิด Twinning คือเม็ดสองเม็ดติดกันจากพ่นเปียกเกิน มักพบในเม็ดรูปแคปซูลที่ด้านแบน ไม่เกี่ยวกับร่องโลโก้"
+        }
+      ],
+      "key_takeaway": "Bridging (ฟิล์มขึงข้ามร่อง) → ↑ plasticizer, ↓ MW polymer, ↑ adhesion; Infilling (ร่องถูกอุดด้วยฟอง/ผง) → ลดฟองและ spray drying"
+    },
+    "difficulty": "hard"
+  }
+]
