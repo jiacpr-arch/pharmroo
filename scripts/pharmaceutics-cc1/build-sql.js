@@ -14,6 +14,7 @@ const SUBJECT_ID = "0a7f8e61-3786-494c-9c54-b6edc17b03b6"; // Pharmaceutics
 const BLOCKS = ["d1-a", "d1-b", "d1-c", "d1-d", "d2-a", "d2-b", "d2-c", "d2-d"];
 const LABELS = ["A", "B", "C", "D", "E"];
 const DIR = __dirname;
+const CHUNK = Number(process.env.CHUNK) || 10;
 
 function validate(block, q, i) {
   const where = `${block}#${i + 1}`;
@@ -77,15 +78,15 @@ for (const block of BLOCKS) {
       `'pharmaceutics-cc1:${block}:${i + 1}'`, `'active'`,
     ].join(", ")})`;
   });
-  // Chunks of 10 rows keep each statement small enough for the Supabase SQL tool.
+  // Chunks (10 rows by default, CHUNK=5 to halve) keep each statement small enough for the Supabase SQL tool.
   let sql = "";
-  for (let k = 0; k < values.length; k += 10) {
-    const tags = values.slice(k, k + 10).map((_, j) => `'pharmaceutics-cc1:${block}:${k + j + 1}'`);
+  for (let k = 0; k < values.length; k += CHUNK) {
+    const tags = values.slice(k, k + CHUNK).map((_, j) => `'pharmaceutics-cc1:${block}:${k + j + 1}'`);
     const chunk =
       `delete from mcq_questions where ai_notes in (${tags.join(", ")});\n` +
       `insert into mcq_questions (subject_id, exam_type, exam_day, question_number, scenario, choices, correct_answer, explanation, detailed_explanation, difficulty, is_ai_enhanced, ai_notes, status) values\n` +
-      values.slice(k, k + 10).join(",\n") + ";\n";
-    fs.writeFileSync(path.join(outDir, `${block}-${k / 10 + 1}.sql`), chunk);
+      values.slice(k, k + CHUNK).join(",\n") + ";\n";
+    fs.writeFileSync(path.join(outDir, `${block}-${k / CHUNK + 1}.sql`), chunk);
     sql += chunk;
   }
 
