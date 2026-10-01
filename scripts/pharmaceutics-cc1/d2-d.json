@@ -1,0 +1,1995 @@
+[
+  {
+    "scenario": "ผู้ป่วยหอบหืดสูงอายุใช้ pressurized metered-dose inhaler (pMDI) ที่มี beclomethasone dipropionate ในสารขับดัน HFA-134a แต่กดพ่นกับการสูดหายใจไม่สัมพันธ์กัน และเริ่มมีเชื้อราในช่องปาก (oral candidiasis) เภสัชกรแนะนำให้ใช้ spacer (valved holding chamber) ร่วมด้วย ข้อใดคือประโยชน์หลักของ spacer ในกรณีนี้",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ลดความเร็วของละอองและให้อนุภาคขนาดใหญ่ไปติดที่ผนัง spacer แทนคอหอย จึงลด oropharyngeal deposition และลดความจำเป็นต้องประสานการกดกับการสูด"
+      },
+      {
+        "label": "B",
+        "text": "เพิ่มขนาด MMAD ของละอองให้ใหญ่กว่า 10 µm เพื่อให้ยาตกค้างในหลอดลมใหญ่นานขึ้น"
+      },
+      {
+        "label": "C",
+        "text": "เพิ่มความดันไอของ HFA-134a ทำให้ได้ขนาดยาต่อการกดมากขึ้นเป็นสองเท่า"
+      },
+      {
+        "label": "D",
+        "text": "ทำหน้าที่เป็นตัวพา lactose ช่วยแยกตัวยาออกจากผงเหมือน dry powder inhaler"
+      },
+      {
+        "label": "E",
+        "text": "ทำให้ยาเปลี่ยนจาก suspension เป็น solution จึงไม่ต้องเขย่าก่อนใช้"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Spacer ชะลอความเร็วละอองและเปิดเวลาให้สารขับดันระเหย อนุภาคใหญ่ติดผนัง spacer แทนคอหอย จึงลดยาที่ตกค้างในปาก (ลด candidiasis) และลดปัญหาการประสานการกดกับการหายใจ",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. ลดความเร็วของละอองและให้อนุภาคขนาดใหญ่ไปติดที่ผนัง spacer แทนคอหอย จึงลด oropharyngeal deposition และลดความจำเป็นต้องประสานการกดกับการสูด — spacer ลดการตกค้างของยาที่คอหอยและแก้ปัญหา hand–breath coordination",
+      "reason": "pMDI ปล่อยละอองออกมาด้วยความเร็วสูง ละอองช่วงแรกยังมีสารขับดันที่ยังไม่ระเหยจึงมีขนาดใหญ่ ผลคือยาส่วนใหญ่ (มักมากกว่าครึ่ง) ชนคอหอยด้วย inertial impaction แล้วถูกกลืน เมื่อเป็น inhaled corticosteroid จะเพิ่มความเสี่ยง oral candidiasis และเสียงแหบ Spacer หรือ valved holding chamber เพิ่มระยะทางและปริมาตรให้ละอองชะลอความเร็ว สารขับดัน HFA ระเหยต่อจนละอองเล็กลง อนุภาคใหญ่ที่เหลือจะไปกระทบผนัง spacer แทนคอหอย ส่วนวาล์วทางเดียวทำให้ผู้ป่วยสูดจาก chamber ได้หลังกดโดยไม่ต้องจับจังหวะพอดี จึงเหมาะกับเด็ก ผู้สูงอายุ และผู้ที่ประสานการกดกับการสูดไม่ได้ ควรกดพ่นทีละครั้งแล้วสูดทันที และบ้วนปากหลังใช้ ICS ส่วน HFA-134a (norflurane) และ HFA-227ea มาแทน CFC ตาม Montreal Protocol เพราะไม่ทำลายโอโซน",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ลดความเร็วของละอองและให้อนุภาคขนาดใหญ่ไปติดที่ผนัง spacer แทนคอหอย จึงลด oropharyngeal deposition และลดความจำเป็นต้องประสานการกดกับการสูด",
+          "is_correct": true,
+          "explanation": "ถูกต้อง: spacer ชะลอความเร็ว ให้สารขับดันระเหย ดักอนุภาคใหญ่ไว้ที่ผนัง และวาล์วช่วยแก้ปัญหาการประสานการกดกับการสูด"
+        },
+        {
+          "label": "B",
+          "text": "เพิ่มขนาด MMAD ของละอองให้ใหญ่กว่า 10 µm เพื่อให้ยาตกค้างในหลอดลมใหญ่นานขึ้น",
+          "is_correct": false,
+          "explanation": "ผิด: spacer ทำให้สัดส่วนอนุภาคใหญ่ที่ถึงผู้ป่วยลดลง ไม่ได้ทำให้ MMAD ใหญ่ขึ้น อนุภาคใหญ่กว่า 10 µm ไปไม่ถึงปอดและจะตกที่คอหอย"
+        },
+        {
+          "label": "C",
+          "text": "เพิ่มความดันไอของ HFA-134a ทำให้ได้ขนาดยาต่อการกดมากขึ้นเป็นสองเท่า",
+          "is_correct": false,
+          "explanation": "ผิด: spacer ไม่ได้เปลี่ยนความดันไอของสารขับดันหรือขนาดยาที่ metering valve ปล่อยออกมา ขนาดยาต่อการกดกำหนดด้วยปริมาตรของ metering chamber"
+        },
+        {
+          "label": "D",
+          "text": "ทำหน้าที่เป็นตัวพา lactose ช่วยแยกตัวยาออกจากผงเหมือน dry powder inhaler",
+          "is_correct": false,
+          "explanation": "ผิด: lactose carrier เป็นส่วนประกอบของ DPI ไม่ใช่หน้าที่ของ spacer ซึ่งเป็นท่อหรือ chamber ที่ว่างเปล่า"
+        },
+        {
+          "label": "E",
+          "text": "ทำให้ยาเปลี่ยนจาก suspension เป็น solution จึงไม่ต้องเขย่าก่อนใช้",
+          "is_correct": false,
+          "explanation": "ผิด: spacer ไม่ได้เปลี่ยนสถานะของสูตร pMDI ชนิด suspension ยังต้องเขย่าก่อนใช้ทุกครั้งเพื่อให้ยากระจายสม่ำเสมอก่อนตวงขนาดยา"
+        }
+      ],
+      "key_takeaway": "pMDI + spacer: ลด oropharyngeal deposition, ไม่ต้องจับจังหวะกด–สูด, เหมาะกับเด็ก/ผู้สูงอายุ; สารขับดันปัจจุบันคือ HFA-134a/HFA-227ea"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "Dry powder inhaler (DPI) สูตรหนึ่งประกอบด้วย micronized salmeterol xinafoate (MMAD ประมาณ 2 µm) ผสมกับ coarse lactose monohydrate ขนาด 60–90 µm ผู้ป่วย COPD สูงอายุรายหนึ่งมี peak inspiratory flow ผ่านอุปกรณ์เพียงประมาณ 20 L/min และตอบสนองต่อยาไม่ดี สาเหตุทางเภสัชกรรมที่เป็นไปได้มากที่สุดคือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Lactose ละลายในทางเดินหายใจไม่ทัน จึงไปอุดหลอดลมฝอย"
+      },
+      {
+        "label": "B",
+        "text": "สารขับดันในอุปกรณ์มีแรงดันไม่พอจะผลักผงยาออกจากอุปกรณ์"
+      },
+      {
+        "label": "C",
+        "text": "แรงสูดหายใจต่ำทำให้เกิด turbulence ไม่พอจะแยกยาออกจาก lactose carrier (de-agglomeration) ยาจึงยังเกาะกับอนุภาคใหญ่และตกที่คอหอย"
+      },
+      {
+        "label": "D",
+        "text": "แรงสูดต่ำทำให้อนุภาคยามีขนาดเล็กลงจน <0.5 µm และถูกหายใจออกทั้งหมด"
+      },
+      {
+        "label": "E",
+        "text": "Lactose เกิด Maillard reaction กับ salmeterol ระหว่างการสูด ทำให้ยาเสื่อมสภาพ"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "DPI เป็นอุปกรณ์ที่อาศัยพลังงานจากแรงสูดของผู้ป่วย (breath-actuated) แรงสูดต่ำทำให้ยาไม่หลุดจาก lactose carrier อนุภาคที่ยังใหญ่จึงตกที่คอหอยด้วย impaction",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. แรงสูดหายใจต่ำทำให้เกิด turbulence ไม่พอจะแยกยาออกจาก lactose carrier (de-agglomeration) ยาจึงยังเกาะกับอนุภาคใหญ่และตกที่คอหอย — DPI ต้องอาศัยแรงสูดของผู้ป่วยในการ de-agglomerate ยาออกจาก carrier",
+      "reason": "DPI ไม่มีสารขับดัน พลังงานที่ทำให้ผงฟุ้งและแตกตัวมาจากลมหายใจเข้าของผู้ป่วยทั้งหมด ยา micronized ขนาด 1–5 µm มีพลังงานพื้นผิวสูง เกาะกลุ่มกันเองและไหลไม่ดี จึงผสมกับ coarse lactose (ประมาณ 50–100 µm) เป็น interactive (ordered) mixture เพื่อช่วยการไหลและการตวงขนาดยา ขณะสูด กระแสลมปั่นป่วน (turbulent) ภายในอุปกรณ์ต้องมีแรงมากพอที่จะดึงยาออกจากผิว lactose ถ้าแรงสูดต่ำ (DPI ส่วนใหญ่ต้องการอย่างน้อยประมาณ 30 L/min และหลายรุ่นทำงานดีที่ประมาณ 60 L/min ขึ้นไป ขึ้นกับความต้านทานของอุปกรณ์) ยาจะยังเกาะกับ carrier ขนาดใหญ่ซึ่งชนคอหอยด้วย inertial impaction แล้วถูกกลืน fine particle dose จึงลดลง ผู้ป่วยแบบนี้อาจเหมาะกับ pMDI + spacer, soft mist inhaler หรือ nebulizer มากกว่า นอกจากนี้ DPI ไวต่อความชื้น จึงไม่ควรเป่าลมหายใจออกเข้าอุปกรณ์",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Lactose ละลายในทางเดินหายใจไม่ทัน จึงไปอุดหลอดลมฝอย",
+          "is_correct": false,
+          "explanation": "ผิด: lactose ส่วนใหญ่ตกที่คอหอยแล้วถูกกลืน ปริมาณที่เข้าปอดไม่พอจะอุดหลอดลม และไม่อธิบายว่าทำไมยาไม่ได้ผลในผู้ป่วยที่สูดแรงไม่พอ"
+        },
+        {
+          "label": "B",
+          "text": "สารขับดันในอุปกรณ์มีแรงดันไม่พอจะผลักผงยาออกจากอุปกรณ์",
+          "is_correct": false,
+          "explanation": "ผิด: DPI ไม่มีสารขับดัน ใช้แรงสูดของผู้ป่วย อุปกรณ์ที่มีสารขับดันคือ pMDI"
+        },
+        {
+          "label": "C",
+          "text": "แรงสูดหายใจต่ำทำให้เกิด turbulence ไม่พอจะแยกยาออกจาก lactose carrier (de-agglomeration) ยาจึงยังเกาะกับอนุภาคใหญ่และตกที่คอหอย",
+          "is_correct": true,
+          "explanation": "ถูกต้อง: แรงสูดต่ำทำให้ยาแยกออกจาก carrier ได้น้อย fine particle fraction ลดลง ยาตกที่ oropharynx"
+        },
+        {
+          "label": "D",
+          "text": "แรงสูดต่ำทำให้อนุภาคยามีขนาดเล็กลงจน <0.5 µm และถูกหายใจออกทั้งหมด",
+          "is_correct": false,
+          "explanation": "ผิด: แรงสูดต่ำทำให้อนุภาคที่ออกมามีขนาดใหญ่ขึ้น (ยังเกาะกลุ่ม) ไม่ใช่เล็กลง"
+        },
+        {
+          "label": "E",
+          "text": "Lactose เกิด Maillard reaction กับ salmeterol ระหว่างการสูด ทำให้ยาเสื่อมสภาพ",
+          "is_correct": false,
+          "explanation": "ผิด: Maillard reaction เกิดกับยาที่มี primary/secondary amine ระหว่างการเก็บรักษาระยะยาว ไม่ได้เกิดภายในไม่กี่วินาทีที่สูดยา และไม่เกี่ยวกับแรงสูด"
+        }
+      ],
+      "key_takeaway": "DPI = breath-actuated ไม่มี propellant ต้องสูดเร็วแรง (≥30–60 L/min ตามอุปกรณ์); แรงสูดต่ำ → ยาไม่หลุดจาก lactose → FPF ลด"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "โรงพยาบาลต้องการเลือก nebulizer สำหรับพ่น budesonide suspension และยาโปรตีน dornase alfa ให้ผู้ป่วยเด็ก อุปกรณ์ชนิดใดไม่เหมาะสมที่สุด เพราะกลไกการทำงานทำให้ของเหลวร้อนขึ้นซึ่งอาจทำให้โปรตีนเสียสภาพ และพ่นอนุภาคยาแขวนตะกอนได้ไม่มีประสิทธิภาพ",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Jet nebulizer ที่ใช้อากาศอัดผ่านรูแคบตามหลัก Bernoulli/Venturi"
+      },
+      {
+        "label": "B",
+        "text": "Vibrating mesh nebulizer"
+      },
+      {
+        "label": "C",
+        "text": "Breath-enhanced jet nebulizer ที่มีวาล์ว"
+      },
+      {
+        "label": "D",
+        "text": "Soft mist inhaler ที่ใช้สปริงอัดสารละลายผ่าน nozzle"
+      },
+      {
+        "label": "E",
+        "text": "Ultrasonic nebulizer ที่ใช้ piezoelectric crystal สั่นความถี่สูง"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "Ultrasonic nebulizer ถ่ายพลังงานคลื่นเสียงความถี่สูงเข้าสู่ของเหลว ทำให้ของเหลวร้อนขึ้น (เสี่ยงต่อโปรตีน) และพ่นยาแขวนตะกอนได้ไม่ดีเพราะอนุภาคยามักค้างอยู่ในกระเปาะ",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. Ultrasonic nebulizer ที่ใช้ piezoelectric crystal สั่นความถี่สูง — ultrasonic nebulizer ทำให้ยาร้อนและไม่เหมาะกับ suspension/โปรตีน",
+      "reason": "nebulizer มี 3 แบบหลัก (1) Jet nebulizer ใช้อากาศหรือออกซิเจนอัดไหลผ่านรูแคบ เกิดความดันต่ำดึงของเหลวขึ้นมาแตกเป็นละออง (Bernoulli/Venturi) ละอองใหญ่ชน baffle แล้วตกกลับไปพ่นซ้ำ ใช้ได้ทั้ง solution และ suspension แต่เสียงดังและมี residual (dead) volume มาก ของเหลวจะเย็นลงจากการระเหย (2) Ultrasonic nebulizer ใช้ piezoelectric crystal สั่นที่ความถี่ระดับ MHz สร้างคลื่นบนผิวของเหลว ได้ละอองเร็ว แต่ของเหลวร้อนขึ้นได้หลายองศาจนโปรตีนอาจเสียสภาพ และพ่น suspension ได้ไม่ดีเพราะอนุภาคยาไม่ขึ้นไปในละอองและค้างในกระเปาะ ฉลาก budesonide inhalation suspension จึงไม่แนะนำให้ใช้กับ ultrasonic nebulizer (3) Vibrating mesh nebulizer ดันของเหลวผ่านแผ่นตาข่ายที่มีรูขนาดไมครอน ได้ละอองขนาดสม่ำเสมอ residual volume ต่ำ เงียบ พกพาได้ และให้ความร้อนน้อย จึงเหมาะกับยาโปรตีน ข้อจำกัดคือรูตาข่ายอาจอุดตันและต้องทำความสะอาดตามที่ผู้ผลิตกำหนด ส่วน soft mist inhaler (เช่น Respimat) เป็นอุปกรณ์พกพาสำหรับสารละลาย ไม่ใช่ nebulizer",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Jet nebulizer ที่ใช้อากาศอัดผ่านรูแคบตามหลัก Bernoulli/Venturi",
+          "is_correct": false,
+          "explanation": "ผิด: jet nebulizer ใช้ได้ทั้ง solution และ suspension ของเหลวจะเย็นลงจากการระเหย ไม่ได้ร้อนขึ้น จึงเป็นทางเลือกมาตรฐานสำหรับ budesonide suspension"
+        },
+        {
+          "label": "B",
+          "text": "Vibrating mesh nebulizer",
+          "is_correct": false,
+          "explanation": "ผิด: mesh nebulizer ให้ความร้อนกับยาน้อย เหมาะกับยาโปรตีน ข้อเสียคือต้องดูแลไม่ให้รูตาข่ายอุดตัน"
+        },
+        {
+          "label": "C",
+          "text": "Breath-enhanced jet nebulizer ที่มีวาล์ว",
+          "is_correct": false,
+          "explanation": "ผิด: breath-enhanced jet nebulizer เป็นแบบ jet ที่เพิ่มการปล่อยละอองขณะหายใจเข้า ไม่ได้ทำให้ยาร้อน"
+        },
+        {
+          "label": "D",
+          "text": "Soft mist inhaler ที่ใช้สปริงอัดสารละลายผ่าน nozzle",
+          "is_correct": false,
+          "explanation": "ผิด: soft mist inhaler ใช้แรงสปริงดันสารละลายผ่าน nozzle ได้ละอองที่ช้าและนาน (ประมาณ 1.5 วินาที) ไม่ได้อาศัยความร้อน แต่เป็นอุปกรณ์มือถือที่ใช้กับสูตรเฉพาะของผู้ผลิต ไม่ใช่ nebulizer"
+        },
+        {
+          "label": "E",
+          "text": "Ultrasonic nebulizer ที่ใช้ piezoelectric crystal สั่นความถี่สูง",
+          "is_correct": true,
+          "explanation": "ถูกต้อง: ultrasonic nebulizer ทำให้ของเหลวร้อนขึ้นและพ่น suspension ได้ไม่มีประสิทธิภาพ จึงไม่เหมาะทั้งสองกรณี"
+        }
+      ],
+      "key_takeaway": "Jet = ใช้ได้กว้างแต่เสียงดัง/dead volume สูง; Ultrasonic = ร้อน ไม่เหมาะ suspension/โปรตีน; Mesh = เงียบ residual ต่ำ เหมาะโปรตีน"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ยาสูดพ่นชนิดหนึ่งให้ละอองที่มี aerodynamic diameter ประมาณ 8–10 µm เป็นส่วนใหญ่ กลไกหลักที่ทำให้อนุภาคขนาดนี้ไปตกอยู่ที่ oropharynx และหลอดลมใหญ่คือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Brownian diffusion"
+      },
+      {
+        "label": "B",
+        "text": "Inertial impaction"
+      },
+      {
+        "label": "C",
+        "text": "Gravitational sedimentation ในถุงลม"
+      },
+      {
+        "label": "D",
+        "text": "Electrostatic precipitation ในถุงลม"
+      },
+      {
+        "label": "E",
+        "text": "Interception ของอนุภาครูปเส้นใย"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "อนุภาคขนาดใหญ่ (มากกว่าประมาณ 5 µm) ที่เคลื่อนที่เร็วมีโมเมนตัมสูง เมื่อทางเดินหายใจเลี้ยวหรือแตกแขนงจะไม่เลี้ยวตามกระแสลมแต่พุ่งชนผนัง (inertial impaction) ที่คอหอยและหลอดลมใหญ่",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. Inertial impaction — อนุภาค >5 µm ตกที่ทางเดินหายใจส่วนบนด้วย inertial impaction",
+      "reason": "การตกของอนุภาคในทางเดินหายใจขึ้นกับ aerodynamic diameter เป็นหลัก มีกลไกสำคัญ 3 แบบ (1) Inertial impaction เกิดกับอนุภาคใหญ่ (ประมาณ >5 µm) ที่เคลื่อนที่เร็ว ตำแหน่งหลักคือคอหอย กล่องเสียง และจุดแตกแขนงของหลอดลมใหญ่ และเพิ่มขึ้นเมื่อสูดเร็ว (2) Gravitational sedimentation เกิดกับอนุภาคประมาณ 1–5 µm ในหลอดลมเล็กและถุงลมซึ่งกระแสลมช้า ขึ้นกับเวลา การกลั้นหายใจประมาณ 5–10 วินาทีหลังสูดจึงเพิ่มการตกตะกอนแบบนี้ (3) Brownian diffusion เกิดกับอนุภาคเล็กมาก (ประมาณ <0.5–1 µm) ในถุงลม แต่อนุภาคขนาดนี้จำนวนมากถูกหายใจออก ช่วง MMAD ที่เหมาะกับยาที่ต้องการให้ออกฤทธิ์ในปอดจึงเป็นประมาณ 1–5 µm ซึ่งเป็นเหตุผลที่เภสัชตำรับกำหนดให้วัด aerodynamic particle size distribution ด้วย cascade impactor (ACI หรือ NGI)",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Brownian diffusion",
+          "is_correct": false,
+          "explanation": "ผิด: Brownian diffusion สำคัญกับอนุภาคที่เล็กกว่าประมาณ 0.5–1 µm ในถุงลม ไม่ใช่อนุภาค 8–10 µm"
+        },
+        {
+          "label": "B",
+          "text": "Inertial impaction",
+          "is_correct": true,
+          "explanation": "ถูกต้อง: อนุภาคใหญ่มีโมเมนตัมมาก ชนผนังทางเดินหายใจส่วนบนเมื่อทางลมเปลี่ยนทิศ"
+        },
+        {
+          "label": "C",
+          "text": "Gravitational sedimentation ในถุงลม",
+          "is_correct": false,
+          "explanation": "ผิด: sedimentation เด่นในอนุภาค 1–5 µm ที่ไปถึงหลอดลมเล็กและถุงลม อนุภาค 8–10 µm ส่วนใหญ่ไปไม่ถึงถุงลม"
+        },
+        {
+          "label": "D",
+          "text": "Electrostatic precipitation ในถุงลม",
+          "is_correct": false,
+          "explanation": "ผิด: ประจุไฟฟ้าสถิตมีผลบ้าง โดยเฉพาะกับผนัง spacer พลาสติก แต่ไม่ใช่กลไกหลักของการตกในทางเดินหายใจส่วนบน"
+        },
+        {
+          "label": "E",
+          "text": "Interception ของอนุภาครูปเส้นใย",
+          "is_correct": false,
+          "explanation": "ผิด: interception สำคัญกับอนุภาครูปเส้นใยยาว เช่น แร่ใยหิน ไม่ใช่ละอองยาทั่วไป"
+        }
+      ],
+      "key_takeaway": ">5 µm = impaction (คอ/หลอดลมใหญ่); 1–5 µm = sedimentation (หลอดลมเล็ก/ถุงลม, กลั้นหายใจช่วย); <1 µm = diffusion/หายใจออก"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "ทดสอบ pMDI ที่ระบุขนาดยา 100 µg ต่อการกด ด้วย Next Generation Impactor (NGI) ได้ผลเฉลี่ยต่อการกดดังนี้: ยาที่ค้างใน actuator 10 µg, ยาที่ induction port (throat) 38 µg, ยาบน pre-separator และ stage ที่มี cut-off มากกว่า 5 µm รวม 16 µg และยาบน stage ที่มี aerodynamic diameter น้อยกว่า 5 µm (รวม filter) 36 µg ค่า fine particle fraction (FPF) เมื่อคิดเทียบกับ emitted dose เท่ากับเท่าใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "36%"
+      },
+      {
+        "label": "B",
+        "text": "90%"
+      },
+      {
+        "label": "C",
+        "text": "64%"
+      },
+      {
+        "label": "D",
+        "text": "40%"
+      },
+      {
+        "label": "E",
+        "text": "69%"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "Emitted dose = ยาที่ออกจาก actuator = 38 + 16 + 36 = 90 µg; fine particle dose (<5 µm) = 36 µg; FPF = 36/90 × 100 = 40%",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. 40% — FPF = fine particle dose ÷ emitted dose = 36/90 = 40%",
+      "reason": "cascade impactor (เช่น Andersen Cascade Impactor หรือ NGI) แยกอนุภาคตาม aerodynamic diameter โดยให้ลมพาอนุภาคผ่าน nozzle ที่เล็กลงเรื่อย ๆ อนุภาคใหญ่ที่มีโมเมนตัมมากจะชน collection cup ในชั้นต้น ๆ อนุภาคเล็กจะไปถึงชั้นท้าย ๆ แล้ววิเคราะห์ยาในแต่ละชั้นด้วย HPLC ค่าสำคัญได้แก่ (1) Emitted (delivered) dose คือยาที่ออกจากอุปกรณ์ เท่ากับผลรวมของยาที่ induction port, pre-separator และทุก stage รวม filter โดยไม่นับยาที่ค้างใน actuator (2) Fine particle dose (FPD) คือมวลยาที่มี aerodynamic diameter น้อยกว่า 5 µm (3) FPF คือ FPD หารด้วย emitted dose (บางแห่งใช้ metered dose เป็นตัวหาร จึงต้องระบุให้ชัด) (4) MMAD และ GSD คำนวณจากกราฟ cumulative distribution ในกรณีนี้ยา 38 µg ที่ throat แสดงว่ามีการตกที่คอหอยมาก ซึ่งเป็นลักษณะทั่วไปของ pMDI ที่ไม่ได้ใช้ spacer และควรตรวจ mass balance ว่ายาทั้งหมดอยู่ในช่วงที่ยอมรับได้ของ label claim",
+      "choices": [
+        {
+          "label": "A",
+          "text": "36%",
+          "is_correct": false,
+          "explanation": "ผิด: 36% คือ FPD หารด้วย label claim (36/100) ไม่ใช่ FPF เทียบกับ emitted dose ตามที่โจทย์ถาม"
+        },
+        {
+          "label": "B",
+          "text": "90%",
+          "is_correct": false,
+          "explanation": "ผิด: 90% คือ emitted dose คิดเป็นร้อยละของ label claim (90/100) ไม่ใช่ FPF"
+        },
+        {
+          "label": "C",
+          "text": "64%",
+          "is_correct": false,
+          "explanation": "ผิด: 64% คือผลรวมยาที่ค้างใน actuator, throat และส่วนที่มีขนาดใหญ่ (10 + 38 + 16) เทียบกับ label claim ไม่ใช่ FPF"
+        },
+        {
+          "label": "D",
+          "text": "40%",
+          "is_correct": true,
+          "explanation": "ถูกต้อง: FPF = 36 µg ÷ 90 µg × 100 = 40%"
+        },
+        {
+          "label": "E",
+          "text": "69%",
+          "is_correct": false,
+          "explanation": "ผิด: 69% ได้จากการนำ 36 หารด้วย 52 (เฉพาะยาที่ผ่าน throat ไปแล้ว) ซึ่งไม่ใช่นิยามมาตรฐานของ FPF"
+        }
+      ],
+      "key_takeaway": "Emitted dose = ทุกอย่างที่ออกจาก device (throat + pre-separator + stages + filter); FPD = มวล <5 µm; FPF = FPD/ED",
+      "calculation_steps": [
+        "ขั้นที่ 1: Emitted dose = throat 38 µg + pre-separator/stages >5 µm 16 µg + stages <5 µm 36 µg = 90 µg (ไม่นับยา 10 µg ที่ค้างใน actuator)",
+        "ขั้นที่ 2: Fine particle dose (<5 µm) = 36 µg",
+        "ขั้นที่ 3: FPF = 36 µg ÷ 90 µg × 100 = 40%",
+        "ตรวจสอบ: mass balance = 10 + 38 + 16 + 36 = 100 µg = 100% ของ label claim"
+      ]
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "ในการพัฒนา nasal spray ชนิด metered-dose pump ของ corticosteroid เพื่อออกฤทธิ์เฉพาะที่ในโพรงจมูก ข้อกำหนดการควบคุมคุณภาพข้อใดมีเหตุผลเพื่อป้องกันไม่ให้ยาเข้าไปถึงปอด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ควบคุมปริมาตรต่อการพ่นให้อยู่ที่ประมาณ 1 mL เพื่อให้ยาเคลือบโพรงจมูกได้ทั่ว"
+      },
+      {
+        "label": "B",
+        "text": "จำกัดสัดส่วนละอองที่มีขนาดเล็กกว่าประมาณ 10 µm ให้น้อยที่สุด"
+      },
+      {
+        "label": "C",
+        "text": "กำหนดให้ละอองมี MMAD 1–3 µm เพื่อให้ผ่านเยื่อบุจมูกได้ดี"
+      },
+      {
+        "label": "D",
+        "text": "ใช้ benzalkonium chloride ความเข้มข้นสูงเพื่อเพิ่มการซึมผ่าน"
+      },
+      {
+        "label": "E",
+        "text": "ปรับ pH ของสูตรเป็น 2.0 เพื่อลด mucociliary clearance"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "ละอองที่เล็กกว่าประมาณ 10 µm อาจผ่านโพรงจมูกลงไปถึงทางเดินหายใจส่วนล่าง จึงต้องทดสอบ droplet size distribution (เช่น laser diffraction) และจำกัดสัดส่วนละออง <10 µm",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. จำกัดสัดส่วนละอองที่มีขนาดเล็กกว่าประมาณ 10 µm ให้น้อยที่สุด — nasal spray ต้องจำกัดละออง <10 µm เพื่อให้ยาตกในจมูกไม่ใช่ในปอด",
+      "reason": "nasal spray สำหรับการออกฤทธิ์เฉพาะที่ควรให้ละอองตกในโพรงจมูกส่วนหน้าและส่วนกลาง ละอองที่ปล่อยจาก nasal pump มักมีขนาดเฉลี่ยหลายสิบไมครอน (ประมาณ 30–100 µm) และตกในจมูกด้วย impaction ส่วนละอองที่เล็กกว่าประมาณ 10 µm มีโอกาสผ่านไปถึงทางเดินหายใจส่วนล่าง แนวทางของ FDA สำหรับ nasal spray จึงกำหนดการทดสอบ droplet size distribution ด้วย laser diffraction, spray pattern, plume geometry, shot weight และ dose uniformity และให้รายงานสัดส่วนของละออง <10 µm ซึ่งควรต่ำ ปริมาตรต่อการพ่นมักอยู่ที่ประมาณ 50–140 µL (ส่วนใหญ่ประมาณ 100 µL) เพราะโพรงจมูกรับของเหลวได้จำกัด ถ้ามากกว่านี้ยาจะไหลออกทางจมูกหรือลงคอ โพรงจมูกมี mucociliary clearance ที่พายาออกไปทาง nasopharynx ภายในประมาณ 15–20 นาที ส่วน benzalkonium chloride เป็นสารกันเสียที่ใช้ความเข้มข้นต่ำ (ประมาณ 0.01–0.02%) เพราะความเข้มข้นสูงเป็นพิษต่อขนกวัด (ciliotoxic)",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ควบคุมปริมาตรต่อการพ่นให้อยู่ที่ประมาณ 1 mL เพื่อให้ยาเคลือบโพรงจมูกได้ทั่ว",
+          "is_correct": false,
+          "explanation": "ผิด: โพรงจมูกรับของเหลวได้เพียงประมาณ 100–150 µL ต่อข้าง ปริมาตร 1 mL ทำให้ยาไหลออกหรือลงคอ"
+        },
+        {
+          "label": "B",
+          "text": "จำกัดสัดส่วนละอองที่มีขนาดเล็กกว่าประมาณ 10 µm ให้น้อยที่สุด",
+          "is_correct": true,
+          "explanation": "ถูกต้อง: ละออง <10 µm อาจเข้าสู่ปอด จึงต้องจำกัดสัดส่วนนี้ในข้อกำหนด droplet size distribution"
+        },
+        {
+          "label": "C",
+          "text": "กำหนดให้ละอองมี MMAD 1–3 µm เพื่อให้ผ่านเยื่อบุจมูกได้ดี",
+          "is_correct": false,
+          "explanation": "ผิด: MMAD 1–3 µm เป็นเป้าหมายของยาสูดเข้าปอด ไม่ใช่ nasal spray ละอองขนาดนี้จะผ่านจมูกลงสู่ปอด"
+        },
+        {
+          "label": "D",
+          "text": "ใช้ benzalkonium chloride ความเข้มข้นสูงเพื่อเพิ่มการซึมผ่าน",
+          "is_correct": false,
+          "explanation": "ผิด: BAK ใช้เป็นสารกันเสียที่ความเข้มข้นต่ำ ความเข้มข้นสูงเป็นพิษต่อ cilia และไม่เกี่ยวกับการป้องกันยาลงปอด"
+        },
+        {
+          "label": "E",
+          "text": "ปรับ pH ของสูตรเป็น 2.0 เพื่อลด mucociliary clearance",
+          "is_correct": false,
+          "explanation": "ผิด: pH ของผลิตภัณฑ์พ่นจมูกควรอยู่ประมาณ 4.5–6.5 เพื่อลดการระคายเคือง pH 2 ระคายเคืองมากและไม่ได้ป้องกันยาลงปอด"
+        }
+      ],
+      "key_takeaway": "Nasal spray: ละอองส่วนใหญ่ >10 µm, จำกัด %<10 µm; ประมาณ 100 µL/spray; ทดสอบ DSD, spray pattern, plume geometry, shot weight"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "สูตร liposome สำหรับฉีดเข้าหลอดเลือดดำประกอบด้วย hydrogenated soy phosphatidylcholine (HSPC), cholesterol, DSPE-PEG2000 และ doxorubicin ที่บรรจุในแกนน้ำด้วยวิธี ammonium sulfate gradient หน้าที่หลักของ cholesterol ในสูตรนี้คือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ทำให้ผิว liposome มีประจุบวกเพื่อจับกับเซลล์มะเร็ง"
+      },
+      {
+        "label": "B",
+        "text": "สร้างชั้น hydrophilic รอบ liposome เพื่อหลบเลี่ยงการจับกินของ macrophage"
+      },
+      {
+        "label": "C",
+        "text": "เป็นตัวสร้าง pH gradient ระหว่างภายในและภายนอก liposome"
+      },
+      {
+        "label": "D",
+        "text": "ลด phase transition temperature (Tm) ทำให้เยื่อหุ้มยืดหยุ่นและปล่อยยาเร็วขึ้น"
+      },
+      {
+        "label": "E",
+        "text": "แทรกตัวระหว่างสาย acyl ของ phospholipid ทำให้ bilayer แน่นขึ้น ลดการรั่วของยาและเพิ่มความคงตัวในเลือด"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "Cholesterol แทรกตัวใน bilayer ทำให้สาย acyl เคลื่อนไหวได้น้อยลง bilayer จึงแน่นขึ้น การซึมผ่านและการรั่วของยาลดลง และทนต่อการดึง phospholipid ออกโดย lipoprotein ในเลือดได้ดีขึ้น",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. แทรกตัวระหว่างสาย acyl ของ phospholipid ทำให้ bilayer แน่นขึ้น ลดการรั่วของยาและเพิ่มความคงตัวในเลือด — cholesterol ทำให้ bilayer แน่นและลดการรั่วของยา",
+      "reason": "liposome เป็น vesicle ที่มี phospholipid bilayer ล้อมรอบแกนน้ำ ยาที่ชอบน้ำบรรจุในแกนน้ำ ส่วนยาที่ชอบไขมันอยู่ใน bilayer Cholesterol เป็นส่วนประกอบที่ใช้บ่อยที่สุด (มักประมาณ 30–50 mol%) โดยแทรกตัวระหว่างโมเลกุล phospholipid ทำให้เกิด liquid-ordered phase คือ ที่อุณหภูมิสูงกว่า Tm จะทำให้ bilayer แน่นขึ้น ที่อุณหภูมิต่ำกว่า Tm จะลดความแข็งเปราะ ผลรวมคือ phase transition ไม่ชัดเจน การซึมผ่านต่ำลง ยารั่วน้อยลง และลดการดึง phospholipid ออกโดย HDL ในพลาสมา ในสูตรตัวอย่างซึ่งคล้าย PEGylated liposomal doxorubicin นั้น HSPC มี Tm สูง (ประมาณ 52°C) ทำให้ bilayer อยู่ในสภาพ gel ที่อุณหภูมิร่างกาย, DSPE-PEG2000 ให้ steric stabilization (stealth), ammonium sulfate gradient ใช้ทำ remote (active) loading ให้ doxorubicin ตกผลึกเป็น doxorubicin sulfate ภายในแกนน้ำ ส่วนประจุบวกได้จากสาร เช่น stearylamine หรือ DOTAP",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ทำให้ผิว liposome มีประจุบวกเพื่อจับกับเซลล์มะเร็ง",
+          "is_correct": false,
+          "explanation": "ผิด: cholesterol ไม่มีประจุ ประจุบวกได้จาก cationic lipid เช่น stearylamine, DOTAP ส่วนประจุลบได้จาก phosphatidylglycerol หรือ dicetyl phosphate"
+        },
+        {
+          "label": "B",
+          "text": "สร้างชั้น hydrophilic รอบ liposome เพื่อหลบเลี่ยงการจับกินของ macrophage",
+          "is_correct": false,
+          "explanation": "ผิด: ชั้น hydrophilic ที่ช่วยหลบเลี่ยงการจับกินมาจาก DSPE-PEG2000 (PEGylation) ไม่ใช่ cholesterol"
+        },
+        {
+          "label": "C",
+          "text": "เป็นตัวสร้าง pH gradient ระหว่างภายในและภายนอก liposome",
+          "is_correct": false,
+          "explanation": "ผิด: gradient มาจาก ammonium sulfate ภายใน liposome ซึ่งใช้ใน remote loading"
+        },
+        {
+          "label": "D",
+          "text": "ลด phase transition temperature (Tm) ทำให้เยื่อหุ้มยืดหยุ่นและปล่อยยาเร็วขึ้น",
+          "is_correct": false,
+          "explanation": "ผิด: cholesterol ทำให้ phase transition ไม่ชัดเจนและ bilayer แน่นขึ้น ผลคือยารั่วน้อยลง ไม่ใช่ปล่อยยาเร็วขึ้น"
+        },
+        {
+          "label": "E",
+          "text": "แทรกตัวระหว่างสาย acyl ของ phospholipid ทำให้ bilayer แน่นขึ้น ลดการรั่วของยาและเพิ่มความคงตัวในเลือด",
+          "is_correct": true,
+          "explanation": "ถูกต้อง: cholesterol เพิ่ม packing ของ bilayer ลด permeability และเพิ่มความคงตัวในพลาสมา"
+        }
+      ],
+      "key_takeaway": "Liposome: phospholipid = bilayer; cholesterol = ทำให้ bilayer แน่น/ลดรั่ว; PEG-lipid = stealth; charged lipid = ให้ประจุ ลดการเกาะกลุ่ม"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "เมื่อเปรียบเทียบ conventional liposomal doxorubicin กับ PEGylated liposomal doxorubicin พบว่าสูตร PEGylated มีครึ่งชีวิตในเลือดยาวกว่ามาก กลไกหลักที่อธิบายผลนี้คือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ชั้น PEG ที่จับน้ำสร้าง steric barrier ลดการเกาะของ opsonin จึงลดการจับกินโดย mononuclear phagocyte system (MPS/RES)"
+      },
+      {
+        "label": "B",
+        "text": "PEG ยับยั้งเอนไซม์ CYP3A4 ที่ตับทำให้ doxorubicin ถูก metabolize ช้าลง"
+      },
+      {
+        "label": "C",
+        "text": "PEG ทำให้ liposome มีขนาดใหญ่กว่า 5 µm จึงไม่ถูกกรองที่ไต"
+      },
+      {
+        "label": "D",
+        "text": "PEG จับกับ receptor บนเซลล์มะเร็งโดยตรงเป็น active targeting"
+      },
+      {
+        "label": "E",
+        "text": "PEG ทำให้ liposome มีประจุบวกสูง จึงจับกับ albumin และหมุนเวียนในเลือดนานขึ้น"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "PEG สร้างชั้นน้ำล้อมรอบผิว (hydrated steric layer) ซึ่งขัดขวางการเกาะของ opsonin เช่น complement และ IgG ทำให้ macrophage ในตับและม้ามจับกินน้อยลง liposome จึงอยู่ในเลือดนานขึ้น (stealth liposome)",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. ชั้น PEG ที่จับน้ำสร้าง steric barrier ลดการเกาะของ opsonin จึงลดการจับกินโดย mononuclear phagocyte system (MPS/RES) — PEGylation ลด opsonization และการจับกินโดย MPS ทำให้ liposome อยู่ในเลือดนานขึ้น",
+      "reason": "liposome ทั่วไปเมื่อเข้าสู่กระแสเลือดจะถูกโปรตีน opsonin เกาะ แล้วถูก Kupffer cell ในตับและ macrophage ในม้ามจับกินอย่างรวดเร็ว การต่อ PEG (มักใช้ DSPE-PEG2000 ประมาณ 5 mol%) ทำให้เกิดชั้นสายพอลิเมอร์ที่จับน้ำและเคลื่อนไหวได้บนผิว เกิด steric hindrance ที่กันการเข้าใกล้ของโปรตีนและเซลล์ เรียกว่า stealth หรือ sterically stabilized liposome ครึ่งชีวิตในเลือดจึงยาวขึ้นจากระดับชั่วโมงเป็นหลายสิบชั่วโมง ทำให้มีเวลาสะสมในเนื้องอกผ่าน EPR effect (passive targeting) ข้อควรรู้เพิ่มเติม ได้แก่ การให้ซ้ำอาจเกิด accelerated blood clearance (ABC) phenomenon จาก anti-PEG IgM และ PEGylated liposomal doxorubicin มีรูปแบบพิษต่างจาก doxorubicin อิสระ คือพิษต่อหัวใจลดลงแต่เกิด hand-foot syndrome (palmar-plantar erythrodysesthesia) มากขึ้น",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ชั้น PEG ที่จับน้ำสร้าง steric barrier ลดการเกาะของ opsonin จึงลดการจับกินโดย mononuclear phagocyte system (MPS/RES)",
+          "is_correct": true,
+          "explanation": "ถูกต้อง: PEG ให้ steric stabilization ลด opsonization และการจับกินโดย MPS"
+        },
+        {
+          "label": "B",
+          "text": "PEG ยับยั้งเอนไซม์ CYP3A4 ที่ตับทำให้ doxorubicin ถูก metabolize ช้าลง",
+          "is_correct": false,
+          "explanation": "ผิด: PEG ไม่ได้ออกฤทธิ์ยับยั้ง CYP กลไกที่ทำให้ครึ่งชีวิตยาวขึ้นคือการหลบเลี่ยง MPS"
+        },
+        {
+          "label": "C",
+          "text": "PEG ทำให้ liposome มีขนาดใหญ่กว่า 5 µm จึงไม่ถูกกรองที่ไต",
+          "is_correct": false,
+          "explanation": "ผิด: stealth liposome มีขนาดประมาณ 80–120 nm ถ้าใหญ่กว่า 5 µm จะติดในหลอดเลือดฝอยของปอดและถูกจับกินมากขึ้น"
+        },
+        {
+          "label": "D",
+          "text": "PEG จับกับ receptor บนเซลล์มะเร็งโดยตรงเป็น active targeting",
+          "is_correct": false,
+          "explanation": "ผิด: PEG เองไม่จับกับ receptor การทำ active targeting ต้องต่อ ligand เช่น antibody หรือ folate ที่ปลายสาย PEG"
+        },
+        {
+          "label": "E",
+          "text": "PEG ทำให้ liposome มีประจุบวกสูง จึงจับกับ albumin และหมุนเวียนในเลือดนานขึ้น",
+          "is_correct": false,
+          "explanation": "ผิด: PEG เป็นพอลิเมอร์ที่ไม่มีประจุ และการมีประจุบวกสูงกลับเพิ่มการจับโปรตีนและการถูกกำจัด"
+        }
+      ],
+      "key_takeaway": "PEGylation = stealth: ลด opsonin → ลด MPS uptake → long circulation → EPR; ระวัง ABC phenomenon และ hand-foot syndrome"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "Lipid nanoparticle (LNP) สำหรับ mRNA vaccine ประกอบด้วยไขมัน 4 ชนิด คือ ionizable cationic lipid (pKa ประมาณ 6–7), DSPC, cholesterol และ PEG-lipid โดยผสมเฟส mRNA ใน acetate buffer pH 4 กับเฟสไขมันในเอทานอลผ่าน microfluidic mixer หน้าที่สำคัญที่สุดของ ionizable lipid คือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ให้ประจุบวกถาวรที่ทุก pH เพื่อให้จับกับเยื่อหุ้มเซลล์ได้แน่นตลอดเวลา"
+      },
+      {
+        "label": "B",
+        "text": "เป็น helper lipid ที่สร้างโครงสร้าง bilayer และควบคุม phase ของอนุภาค"
+      },
+      {
+        "label": "C",
+        "text": "มีประจุบวกที่ pH 4 เพื่อจับและห่อหุ้ม mRNA ที่มีประจุลบ มีประจุใกล้เป็นกลางที่ pH 7.4 ช่วยลดพิษ และเมื่อถูก protonate ใน endosome จะช่วยให้ mRNA หลุดออกสู่ cytoplasm"
+      },
+      {
+        "label": "D",
+        "text": "ควบคุมขนาดอนุภาคและป้องกันการเกาะกลุ่มระหว่างเก็บรักษา"
+      },
+      {
+        "label": "E",
+        "text": "เป็นสารช่วยแช่เยือกแข็ง (cryoprotectant) ป้องกันอนุภาคเสียหายเมื่อเก็บที่ −20°C"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "ionizable lipid มีประจุบวกเฉพาะที่ pH ต่ำกว่า pKa จึงจับ mRNA ได้ขณะผลิตที่ pH 4 มีประจุใกล้เป็นกลางในเลือด (พิษน้อยกว่า permanently cationic lipid) และกลับมามีประจุบวกใน endosome ที่เป็นกรด ทำให้ทำปฏิกิริยากับไขมันประจุลบของ endosome และเกิด endosomal escape",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. มีประจุบวกที่ pH 4 เพื่อจับและห่อหุ้ม mRNA ที่มีประจุลบ มีประจุใกล้เป็นกลางที่ pH 7.4 ช่วยลดพิษ และเมื่อถูก protonate ใน endosome จะช่วยให้ mRNA หลุดออกสู่ cytoplasm — ionizable lipid ทำหน้าที่ห่อหุ้ม mRNA และทำให้เกิด endosomal escape โดยอาศัยประจุที่เปลี่ยนตาม pH",
+      "reason": "LNP รุ่นปัจจุบันมีองค์ประกอบ 4 ส่วน (1) Ionizable cationic lipid (เช่น SM-102, ALC-0315) มี tertiary amine ที่ pKa ประมาณ 6–7 ขณะผสมใน buffer pH 4 lipid มีประจุบวกจึงจับ phosphate backbone ของ mRNA ด้วยแรง electrostatic และห่อหุ้มได้ประสิทธิภาพสูง เมื่อทำ buffer exchange เป็น pH 7.4 อนุภาคจะใกล้เป็นกลาง ลดพิษและการจับโปรตีนในเลือดเมื่อเทียบกับ permanently cationic lipid เช่น DOTAP หลังเซลล์รับเข้าทาง endocytosis pH ใน endosome ลดลงจน lipid ถูก protonate จับกับ anionic phospholipid ของ endosome เกิดโครงสร้าง non-bilayer (inverted hexagonal, HII) ทำให้เยื่อ endosome เสียสภาพและ mRNA หลุดสู่ cytoplasm (2) DSPC เป็น helper phospholipid ช่วยสร้างโครงสร้าง (3) Cholesterol เติมช่องว่างและเพิ่มความคงตัว (4) PEG-lipid (ประมาณ 1.5 mol%) ควบคุมขนาดระหว่างการก่อตัว ป้องกันการเกาะกลุ่ม และมีผลต่อการไหลเวียน LNP ต้องเก็บแช่แข็งหรือแช่เย็นเพราะ mRNA ไวต่อ hydrolysis และสูตรมักมี sucrose เป็น cryoprotectant",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ให้ประจุบวกถาวรที่ทุก pH เพื่อให้จับกับเยื่อหุ้มเซลล์ได้แน่นตลอดเวลา",
+          "is_correct": false,
+          "explanation": "ผิด: นั่นคือคุณสมบัติของ permanently cationic lipid (quaternary ammonium เช่น DOTAP) ซึ่งเป็นพิษมากกว่าและถูกกำจัดเร็ว ionizable lipid มีประจุบวกเฉพาะที่ pH ต่ำ"
+        },
+        {
+          "label": "B",
+          "text": "เป็น helper lipid ที่สร้างโครงสร้าง bilayer และควบคุม phase ของอนุภาค",
+          "is_correct": false,
+          "explanation": "ผิด: หน้าที่ helper lipid ที่ช่วยสร้างโครงสร้างเป็นของ DSPC"
+        },
+        {
+          "label": "C",
+          "text": "มีประจุบวกที่ pH 4 เพื่อจับและห่อหุ้ม mRNA ที่มีประจุลบ มีประจุใกล้เป็นกลางที่ pH 7.4 ช่วยลดพิษ และเมื่อถูก protonate ใน endosome จะช่วยให้ mRNA หลุดออกสู่ cytoplasm",
+          "is_correct": true,
+          "explanation": "ถูกต้อง: ประจุที่เปลี่ยนตาม pH ทำให้ห่อหุ้ม mRNA ได้ พิษต่ำในเลือด และช่วย endosomal escape"
+        },
+        {
+          "label": "D",
+          "text": "ควบคุมขนาดอนุภาคและป้องกันการเกาะกลุ่มระหว่างเก็บรักษา",
+          "is_correct": false,
+          "explanation": "ผิด: การควบคุมขนาดและป้องกันการเกาะกลุ่มเป็นหน้าที่หลักของ PEG-lipid"
+        },
+        {
+          "label": "E",
+          "text": "เป็นสารช่วยแช่เยือกแข็ง (cryoprotectant) ป้องกันอนุภาคเสียหายเมื่อเก็บที่ −20°C",
+          "is_correct": false,
+          "explanation": "ผิด: cryoprotectant ในสูตร LNP คือน้ำตาล เช่น sucrose ไม่ใช่ ionizable lipid"
+        }
+      ],
+      "key_takeaway": "LNP 4 ส่วน: ionizable lipid (ห่อ mRNA + endosomal escape), DSPC (โครงสร้าง), cholesterol (ความคงตัว), PEG-lipid (ขนาด/กันเกาะกลุ่ม)"
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "ยาต้านมะเร็งที่ละลายน้ำได้น้อยถูกเตรียมเป็น micelle ของ surfactant ที่มีค่า critical micelle concentration (CMC) ค่อนข้างสูง ในหลอดทดลองสารละลายใสดี แต่เมื่อฉีดเข้าหลอดเลือดดำพบว่ายาตกตะกอนและถูกปล่อยออกจาก micelle เร็วกว่าที่คาด คำอธิบายที่เหมาะสมที่สุดคือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "อุณหภูมิร่างกายสูงกว่า cloud point จึงทำให้ micelle ใหญ่ขึ้นและกักยาได้ดีขึ้น"
+      },
+      {
+        "label": "B",
+        "text": "ค่า HLB ของ surfactant เปลี่ยนเป็นค่าต่ำมากในเลือด"
+      },
+      {
+        "label": "C",
+        "text": "micelle มีขนาดใหญ่เกิน 1 µm จึงถูกกรองที่ปอด"
+      },
+      {
+        "label": "D",
+        "text": "เมื่อถูกเจือจางในเลือด ความเข้มข้นของ surfactant ลดลงต่ำกว่า CMC ทำให้ micelle แตกตัวเป็น monomer และยาที่ละลายอยู่ตกตะกอน"
+      },
+      {
+        "label": "E",
+        "text": "micelle เกิด Ostwald ripening เพราะเป็นระบบที่ไม่สมดุลทางอุณหพลศาสตร์"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "micelle คงอยู่ได้เฉพาะเมื่อความเข้มข้นของ surfactant สูงกว่า CMC การเจือจางมากในเลือดทำให้ความเข้มข้นต่ำกว่า CMC micelle จึงแตกตัว และความสามารถในการละลายยาที่ได้จาก micellar solubilization หายไป",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. เมื่อถูกเจือจางในเลือด ความเข้มข้นของ surfactant ลดลงต่ำกว่า CMC ทำให้ micelle แตกตัวเป็น monomer และยาที่ละลายอยู่ตกตะกอน — การเจือจางลงต่ำกว่า CMC ทำให้ micelle สลายตัวและยาตกตะกอน",
+      "reason": "micelle เกิดจาก surfactant หรือ amphiphilic block copolymer ที่รวมตัวกันเองเมื่อความเข้มข้นสูงกว่า CMC โดยหันส่วนที่ไม่ชอบน้ำเข้าเป็นแกนซึ่งใช้ละลายยาที่ไม่ชอบน้ำ (micellar solubilization) ขนาดมักอยู่ที่ประมาณ 10–100 nm micelle อยู่ในสมดุลแบบ dynamic กับ monomer เมื่อฉีดเข้าหลอดเลือด สูตรจะถูกเจือจางหลายสิบถึงหลายร้อยเท่า ถ้า CMC สูง (เช่น surfactant โมเลกุลเล็ก) ความเข้มข้นจะต่ำกว่า CMC ได้ง่าย micelle สลายตัว ยาอาจตกตะกอนหรือย้ายไปจับกับ albumin/lipoprotein อย่างรวดเร็ว ด้วยเหตุนี้ polymeric micelle จาก block copolymer (เช่น PEG-PLA, PEG-poly(amino acid)) ซึ่งมี CMC ต่ำมาก (ระดับ µM หรือต่ำกว่า) และมีแกนที่เคลื่อนไหวช้า (slow dissociation kinetics) จึงคงตัวในร่างกายดีกว่า แนวทางแก้ไขได้แก่ ใช้พอลิเมอร์ที่ CMC ต่ำ ทำ core cross-linking หรือเพิ่มความเข้ากันได้ระหว่างยากับแกน micelle",
+      "choices": [
+        {
+          "label": "A",
+          "text": "อุณหภูมิร่างกายสูงกว่า cloud point จึงทำให้ micelle ใหญ่ขึ้นและกักยาได้ดีขึ้น",
+          "is_correct": false,
+          "explanation": "ผิด: cloud point เป็นปรากฏการณ์ของ nonionic surfactant ที่ขุ่นและแยกเฟสเมื่ออุณหภูมิสูง ไม่ได้ทำให้กักยาได้ดีขึ้น และไม่อธิบายการปล่อยยาเร็วหลังเจือจาง"
+        },
+        {
+          "label": "B",
+          "text": "ค่า HLB ของ surfactant เปลี่ยนเป็นค่าต่ำมากในเลือด",
+          "is_correct": false,
+          "explanation": "ผิด: HLB เป็นค่าที่ขึ้นกับโครงสร้างโมเลกุล ไม่ได้เปลี่ยนเป็นค่าต่ำมากเมื่ออยู่ในเลือด"
+        },
+        {
+          "label": "C",
+          "text": "micelle มีขนาดใหญ่เกิน 1 µm จึงถูกกรองที่ปอด",
+          "is_correct": false,
+          "explanation": "ผิด: micelle มีขนาดประมาณ 10–100 nm ไม่ใช่ >1 µm"
+        },
+        {
+          "label": "D",
+          "text": "เมื่อถูกเจือจางในเลือด ความเข้มข้นของ surfactant ลดลงต่ำกว่า CMC ทำให้ micelle แตกตัวเป็น monomer และยาที่ละลายอยู่ตกตะกอน",
+          "is_correct": true,
+          "explanation": "ถูกต้อง: การเจือจางลงต่ำกว่า CMC ทำให้ micelle แตกตัว ยาที่อาศัย solubilization จึงตกตะกอน"
+        },
+        {
+          "label": "E",
+          "text": "micelle เกิด Ostwald ripening เพราะเป็นระบบที่ไม่สมดุลทางอุณหพลศาสตร์",
+          "is_correct": false,
+          "explanation": "ผิด: micelle เป็นระบบที่สมดุลทางอุณหพลศาสตร์ (เกิดขึ้นเองเหนือ CMC) Ostwald ripening เป็นปัญหาของ emulsion, nanosuspension และ suspension"
+        }
+      ],
+      "key_takeaway": "micelle คงอยู่เมื่อ [surfactant] > CMC; polymeric micelle (CMC ต่ำ) ทนการเจือจางในเลือดได้ดีกว่า surfactant micelle"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "Phenytoin sodium injection แบบดั้งเดิมต้องใช้ propylene glycol 40% และ ethanol 10% และปรับ pH ประมาณ 12 เพื่อให้ยาละลาย จึงมีปัญหาปวด ระคายเคืองหลอดเลือด และ purple glove syndrome จึงพัฒนา fosphenytoin ขึ้นมาแทน หลักการออกแบบ fosphenytoin ทางเภสัชกรรมคือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "เป็น phosphate ester prodrug ที่ละลายน้ำได้ดี จึงเตรียมเป็นสารละลายน้ำโดยไม่ต้องใช้ cosolvent และถูก phosphatase ในร่างกายเปลี่ยนเป็น phenytoin"
+      },
+      {
+        "label": "B",
+        "text": "เป็นเกลือ hydrochloride ของ phenytoin ที่ละลายได้ดีที่ pH ต่ำ"
+      },
+      {
+        "label": "C",
+        "text": "เป็น liposomal phenytoin ที่ห่อหุ้มยาไว้เพื่อลดการสัมผัสหลอดเลือด"
+      },
+      {
+        "label": "D",
+        "text": "เป็น lipophilic ester prodrug ที่ทำเป็น depot injection เข้ากล้ามเนื้อเพื่อปล่อยยาช้า"
+      },
+      {
+        "label": "E",
+        "text": "เป็น cyclodextrin inclusion complex ของ phenytoin"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "การต่อหมู่ phosphate (ผ่าน methylene linker) เพิ่มการละลายน้ำได้มาก จึงไม่ต้องใช้ cosolvent และ pH สูง เมื่อเข้าสู่ร่างกาย phosphatase จะตัดหมู่ phosphate ได้ phenytoin",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. เป็น phosphate ester prodrug ที่ละลายน้ำได้ดี จึงเตรียมเป็นสารละลายน้ำโดยไม่ต้องใช้ cosolvent และถูก phosphatase ในร่างกายเปลี่ยนเป็น phenytoin — fosphenytoin คือ water-soluble phosphate ester prodrug ของ phenytoin",
+      "reason": "phenytoin เป็นกรดอ่อน (pKa ประมาณ 8.3) ที่ละลายน้ำได้น้อยมาก การทำเป็นเกลือโซเดียมในสารละลายต้องอาศัย pH สูงและ cosolvent ถ้าเจือจางหรือ pH ลดลง ยาอาจตกตะกอนในหลอดเลือดหรือในสายน้ำเกลือ และทำให้เกิด phlebitis และ purple glove syndrome Fosphenytoin เป็น prodrug ที่ต่อ phosphate ester ผ่าน N-hydroxymethyl linker หมู่ phosphate ที่แตกตัวเป็นไอออนทำให้ละลายน้ำได้ดีมาก เตรียมเป็นสารละลายน้ำ pH ประมาณ 8.6–9 ได้โดยไม่ต้องใช้ propylene glycol จึงให้ทางหลอดเลือดดำได้เร็วกว่า (สูงสุดประมาณ 150 mg PE/นาที เทียบกับ phenytoin 50 mg/นาที) และให้เข้ากล้ามได้ ในร่างกายเอนไซม์ phosphatase ตัดหมู่ phosphate (half-life ของการเปลี่ยนประมาณ 8–15 นาที) ได้ intermediate ที่สลายตัวเองปล่อย formaldehyde และ phenytoin ขนาดยาระบุเป็น phenytoin sodium equivalent (PE) นี่คือตัวอย่างการใช้ prodrug แก้ปัญหาทางเภสัชกรรมด้านการละลาย เช่นเดียวกับ dexamethasone sodium phosphate และ hydrocortisone sodium succinate ขณะที่ lipophilic ester prodrug (เช่น fluphenazine decanoate) ใช้ทำ depot injection",
+      "choices": [
+        {
+          "label": "A",
+          "text": "เป็น phosphate ester prodrug ที่ละลายน้ำได้ดี จึงเตรียมเป็นสารละลายน้ำโดยไม่ต้องใช้ cosolvent และถูก phosphatase ในร่างกายเปลี่ยนเป็น phenytoin",
+          "is_correct": true,
+          "explanation": "ถูกต้อง: phosphate ester prodrug เพิ่มการละลายน้ำ เตรียมเป็นสารละลายน้ำได้โดยไม่ต้องใช้ cosolvent แล้วถูก phosphatase เปลี่ยนเป็นยาออกฤทธิ์"
+        },
+        {
+          "label": "B",
+          "text": "เป็นเกลือ hydrochloride ของ phenytoin ที่ละลายได้ดีที่ pH ต่ำ",
+          "is_correct": false,
+          "explanation": "ผิด: phenytoin เป็นกรดอ่อน ไม่เกิดเกลือ HCl ที่ละลายได้ดี และ fosphenytoin ไม่ใช่เกลือแต่เป็นโมเลกุล prodrug"
+        },
+        {
+          "label": "C",
+          "text": "เป็น liposomal phenytoin ที่ห่อหุ้มยาไว้เพื่อลดการสัมผัสหลอดเลือด",
+          "is_correct": false,
+          "explanation": "ผิด: fosphenytoin เป็นโมเลกุลใหม่ (prodrug) ไม่ใช่ liposome"
+        },
+        {
+          "label": "D",
+          "text": "เป็น lipophilic ester prodrug ที่ทำเป็น depot injection เข้ากล้ามเนื้อเพื่อปล่อยยาช้า",
+          "is_correct": false,
+          "explanation": "ผิด: lipophilic ester (เช่น decanoate, enanthate) ใช้ทำ IM depot แต่ fosphenytoin เป็น ester ที่ชอบน้ำ จุดประสงค์คือเพิ่มการละลาย"
+        },
+        {
+          "label": "E",
+          "text": "เป็น cyclodextrin inclusion complex ของ phenytoin",
+          "is_correct": false,
+          "explanation": "ผิด: cyclodextrin complexation เป็นอีกวิธีหนึ่งในการเพิ่มการละลาย แต่ไม่ใช่หลักการของ fosphenytoin"
+        }
+      ],
+      "key_takeaway": "Prodrug เพิ่มการละลายน้ำ = phosphate/succinate ester (fosphenytoin, dexamethasone sodium phosphate); prodrug ทำ depot = lipophilic ester (decanoate)"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "นาโนพาร์ติเคิลขนาดประมาณ 100 nm ที่ไม่มี ligand บนผิวแต่เคลือบด้วย PEG พบว่าสะสมในก้อนเนื้องอกได้มากกว่าในเนื้อเยื่อปกติหลังฉีดเข้าหลอดเลือดดำ กลไกนี้เรียกว่าอะไร",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Active targeting ผ่าน receptor-mediated endocytosis"
+      },
+      {
+        "label": "B",
+        "text": "Magnetic targeting"
+      },
+      {
+        "label": "C",
+        "text": "Stimuli-responsive (pH-triggered) release"
+      },
+      {
+        "label": "D",
+        "text": "Enhanced permeability and retention (EPR) effect ซึ่งเป็น passive targeting"
+      },
+      {
+        "label": "E",
+        "text": "First-pass targeting ผ่าน portal circulation"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "หลอดเลือดในเนื้องอกมีรอยรั่วกว้างและระบบน้ำเหลืองระบายได้ไม่ดี นาโนพาร์ติเคิลที่ไหลเวียนในเลือดนานจึงซึมออกและค้างอยู่ในเนื้องอก เรียกว่า EPR effect ซึ่งเป็น passive targeting เพราะไม่ต้องอาศัย ligand",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. Enhanced permeability and retention (EPR) effect ซึ่งเป็น passive targeting — การสะสมในเนื้องอกโดยไม่มี ligand เกิดจาก EPR effect (passive targeting)",
+      "reason": "EPR effect ถูกอธิบายครั้งแรกโดย Matsumura และ Maeda ประกอบด้วย 2 ส่วน (1) Enhanced permeability: เนื้องอกที่โตเร็วสร้างหลอดเลือดใหม่ที่ผิดปกติ endothelium มีช่องรอยต่อกว้าง (ระดับหลายร้อย nm) อนุภาคขนาดประมาณ 10–200 nm จึงซึมผ่านออกนอกหลอดเลือดได้ ขณะที่หลอดเลือดปกติซึ่งมีรอยต่อแน่นไม่ยอมให้ผ่าน (2) Retention: เนื้องอกมีระบบน้ำเหลืองที่ระบายได้ไม่ดี อนุภาคที่ซึมออกมาจึงค้างอยู่นาน การจะใช้ EPR ได้ อนุภาคต้องอยู่ในเลือดนานพอ จึงต้องมีขนาดเหมาะสม (ใหญ่กว่าขนาดที่ถูกกรองที่ไตประมาณ 6–8 nm แต่ไม่ใหญ่จนถูก MPS จับกินเร็ว) และมักเคลือบ PEG ส่วน active targeting คือการต่อ ligand (antibody, folate, transferrin, peptide) เพื่อจับ receptor ที่เซลล์เป้าหมายแสดงออกมาก ซึ่งช่วยเพิ่มการเข้าเซลล์ แต่ยังต้องอาศัย EPR ในการไปถึงเนื้องอกก่อน ข้อจำกัดคือ EPR แตกต่างกันมากระหว่างชนิดเนื้องอกและผู้ป่วยแต่ละราย",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Active targeting ผ่าน receptor-mediated endocytosis",
+          "is_correct": false,
+          "explanation": "ผิด: active targeting ต้องมี ligand จับ receptor แต่อนุภาคในโจทย์ไม่มี ligand"
+        },
+        {
+          "label": "B",
+          "text": "Magnetic targeting",
+          "is_correct": false,
+          "explanation": "ผิด: magnetic targeting ใช้อนุภาค iron oxide ร่วมกับสนามแม่เหล็กภายนอกนำอนุภาคไปยังตำแหน่ง ซึ่งไม่ได้กล่าวถึงในโจทย์"
+        },
+        {
+          "label": "C",
+          "text": "Stimuli-responsive (pH-triggered) release",
+          "is_correct": false,
+          "explanation": "ผิด: pH-triggered release เป็นกลไกการปล่อยยาเมื่อพบสภาพแวดล้อมที่เป็นกรด ไม่ใช่กลไกที่ทำให้อนุภาคไปสะสมที่เนื้องอก"
+        },
+        {
+          "label": "D",
+          "text": "Enhanced permeability and retention (EPR) effect ซึ่งเป็น passive targeting",
+          "is_correct": true,
+          "explanation": "ถูกต้อง: EPR = หลอดเลือดรั่ว + การระบายน้ำเหลืองไม่ดี เป็น passive targeting ของนาโนพาร์ติเคิลที่ไหลเวียนได้นาน"
+        },
+        {
+          "label": "E",
+          "text": "First-pass targeting ผ่าน portal circulation",
+          "is_correct": false,
+          "explanation": "ผิด: portal circulation เกี่ยวกับยาที่ดูดซึมจากทางเดินอาหารเข้าสู่ตับ ไม่เกี่ยวกับยาที่ฉีดเข้าหลอดเลือดดำแล้วไปสะสมที่เนื้องอก"
+        }
+      ],
+      "key_takeaway": "Passive targeting = EPR (ขนาดประมาณ 10–200 nm + long circulation); Active = ligand–receptor; Physical = magnet/heat/ultrasound"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "บริษัทยาในประเทศไทยวางแผนการศึกษาความคงตัวระยะยาว (long-term stability study) ของยาเม็ดที่เก็บที่อุณหภูมิห้องเพื่อขึ้นทะเบียน ตาม ICH/ASEAN guideline ประเทศไทยอยู่ใน climatic zone IVb สภาวะ long-term ที่เหมาะสมคือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "25°C ± 2°C / 60% RH ± 5% RH"
+      },
+      {
+        "label": "B",
+        "text": "30°C ± 2°C / 75% RH ± 5% RH"
+      },
+      {
+        "label": "C",
+        "text": "30°C ± 2°C / 65% RH ± 5% RH"
+      },
+      {
+        "label": "D",
+        "text": "40°C ± 2°C / 75% RH ± 5% RH"
+      },
+      {
+        "label": "E",
+        "text": "5°C ± 3°C"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Zone IVb (ร้อนและชื้นมาก) ซึ่งครอบคลุมประเทศไทยและประเทศ ASEAN ส่วนใหญ่ ใช้สภาวะ long-term 30°C/75% RH",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. 30°C ± 2°C / 75% RH ± 5% RH — zone IVb ใช้ long-term 30°C/75% RH",
+      "reason": "ICH และ WHO แบ่งภูมิอากาศเป็น climatic zone เพื่อกำหนดสภาวะการศึกษาความคงตัว ได้แก่ Zone I (temperate) และ Zone II (subtropical/Mediterranean) ใช้ long-term 25°C/60% RH, Zone III (ร้อนแห้ง) และ Zone IVa (ร้อนชื้น) ใช้ 30°C/65% RH และ Zone IVb (ร้อนและชื้นมาก) ใช้ 30°C/75% RH ตามที่ WHO และ ASEAN Guideline on Stability Study กำหนด ประเทศไทยจึงต้องใช้ 30°C/75% RH สำหรับผลิตภัณฑ์ที่เก็บที่อุณหภูมิห้อง ส่วน accelerated condition ใช้ 40°C/75% RH นาน 6 เดือน (ทดสอบอย่างน้อยที่ 0, 3, 6 เดือน) ความถี่การทดสอบ long-term คือทุก 3 เดือนในปีแรก ทุก 6 เดือนในปีที่สอง และทุกปีหลังจากนั้น ผลิตภัณฑ์ที่เก็บในตู้เย็นใช้ long-term 5°C ± 3°C ข้อมูลสำหรับยื่นทะเบียนยาใหม่โดยทั่วไปต้องมีข้อมูล long-term อย่างน้อย 12 เดือนและ accelerated 6 เดือน จากอย่างน้อย 3 batch (ยาสามัญอาจมีข้อกำหนดต่างกันตามหน่วยงาน) ในภาชนะบรรจุที่จะจำหน่าย",
+      "choices": [
+        {
+          "label": "A",
+          "text": "25°C ± 2°C / 60% RH ± 5% RH",
+          "is_correct": false,
+          "explanation": "ผิด: 25°C/60% RH เป็น long-term สำหรับ Zone I/II (เช่น ยุโรป ญี่ปุ่น สหรัฐอเมริกา)"
+        },
+        {
+          "label": "B",
+          "text": "30°C ± 2°C / 75% RH ± 5% RH",
+          "is_correct": true,
+          "explanation": "ถูกต้อง: Zone IVb ใช้ long-term 30°C/75% RH"
+        },
+        {
+          "label": "C",
+          "text": "30°C ± 2°C / 65% RH ± 5% RH",
+          "is_correct": false,
+          "explanation": "ผิด: 30°C/65% RH เป็น long-term สำหรับ Zone III/IVa และเป็นสภาวะ intermediate เมื่อ long-term คือ 25°C/60% RH"
+        },
+        {
+          "label": "D",
+          "text": "40°C ± 2°C / 75% RH ± 5% RH",
+          "is_correct": false,
+          "explanation": "ผิด: 40°C/75% RH เป็นสภาวะ accelerated ไม่ใช่ long-term"
+        },
+        {
+          "label": "E",
+          "text": "5°C ± 3°C",
+          "is_correct": false,
+          "explanation": "ผิด: 5°C ± 3°C เป็น long-term ของผลิตภัณฑ์ที่ต้องเก็บในตู้เย็น ไม่ใช่ยาเม็ดที่เก็บที่อุณหภูมิห้อง"
+        }
+      ],
+      "key_takeaway": "Long-term: I/II = 25/60; III/IVa = 30/65; IVb (ไทย/ASEAN) = 30/75; Accelerated = 40/75 × 6 เดือน; ตู้เย็น = 5 ± 3°C"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "ยาเม็ดชนิดหนึ่งที่ยื่นทะเบียนในภูมิภาคที่ใช้ long-term condition 25°C/60% RH ตาม ICH Q1A(R2) พบว่าที่ 3 เดือนของ accelerated condition (40°C/75% RH) ปริมาณตัวยาลดลง 6% จากค่าเริ่มต้น แต่ยังอยู่ในข้อกำหนด 90.0–110.0% การดำเนินการที่ถูกต้องตาม ICH Q1A(R2) คือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ไม่ต้องทำอะไรเพิ่มเติม เพราะผลยังอยู่ในข้อกำหนด"
+      },
+      {
+        "label": "B",
+        "text": "ขยายระยะเวลา accelerated เป็น 12 เดือนเพื่อยืนยันผล"
+      },
+      {
+        "label": "C",
+        "text": "กำหนดอายุยาเป็น 3 เดือนทันทีโดยไม่ต้องรอข้อมูล long-term"
+      },
+      {
+        "label": "D",
+        "text": "เปลี่ยน long-term condition เป็น 40°C/75% RH"
+      },
+      {
+        "label": "E",
+        "text": "ถือว่าเกิด significant change จึงต้องศึกษาที่ intermediate condition 30°C/65% RH เพิ่มเติม และประเมินอายุยาจากข้อมูล long-term ประกอบ"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "ICH Q1A(R2) นิยาม significant change ของ drug product ว่ารวมถึงการที่ assay เปลี่ยนไป 5% จากค่าเริ่มต้น การลดลง 6% จึงเป็น significant change แม้ยังอยู่ในข้อกำหนด และเมื่อ long-term คือ 25°C/60% RH ต้องทดสอบที่ intermediate 30°C/65% RH เพิ่ม",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. ถือว่าเกิด significant change จึงต้องศึกษาที่ intermediate condition 30°C/65% RH เพิ่มเติม และประเมินอายุยาจากข้อมูล long-term ประกอบ — assay เปลี่ยน 5% ขึ้นไปที่ accelerated = significant change → ต้องทำ intermediate 30°C/65% RH",
+      "reason": "ตาม ICH Q1A(R2) significant change ของ drug product ได้แก่ (1) assay เปลี่ยนไป 5% จากค่าเริ่มต้น (หรือไม่ผ่านเกณฑ์ potency สำหรับวิธีทางชีวภาพ) (2) degradation product ใดเกินเกณฑ์ (3) ไม่ผ่านเกณฑ์ลักษณะภายนอก คุณสมบัติทางกายภาพ และ functionality เช่น สี การแยกชั้น ความแข็ง (4) pH ไม่ผ่านเกณฑ์ (5) dissolution ไม่ผ่านเกณฑ์สำหรับ 12 หน่วย จะเห็นว่าเกณฑ์ 5% วัดจากการเปลี่ยนแปลงจากค่าเริ่มต้น ไม่ได้วัดจากข้อกำหนด ถ้า long-term คือ 25°C/60% RH และเกิด significant change ในช่วง 6 เดือนของ accelerated ต้องทดสอบเพิ่มที่ intermediate 30°C/65% RH และประเมินตามเกณฑ์ significant change โดยการยื่นทะเบียนครั้งแรกต้องมีข้อมูลอย่างน้อย 6 เดือนจากการศึกษา intermediate ที่วางแผนไว้ 12 เดือน ถ้าเกิด significant change ที่ intermediate ด้วย การกำหนดอายุยาจะยึดข้อมูล long-term และอาจต้องกำหนดสภาวะเก็บรักษาที่เข้มงวดขึ้นบนฉลาก ส่วนกรณีที่ long-term คือ 30°C/65% RH หรือ 30°C/75% RH จะไม่มี intermediate condition",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ไม่ต้องทำอะไรเพิ่มเติม เพราะผลยังอยู่ในข้อกำหนด",
+          "is_correct": false,
+          "explanation": "ผิด: significant change วัดจากการเปลี่ยนแปลง 5% จากค่าเริ่มต้น ไม่ได้ดูว่ายังอยู่ในข้อกำหนดหรือไม่ จึงต้องดำเนินการเพิ่ม"
+        },
+        {
+          "label": "B",
+          "text": "ขยายระยะเวลา accelerated เป็น 12 เดือนเพื่อยืนยันผล",
+          "is_correct": false,
+          "explanation": "ผิด: ICH ไม่ได้กำหนดให้ขยาย accelerated เป็น 12 เดือน การดำเนินการที่ถูกต้องคือศึกษาที่ intermediate"
+        },
+        {
+          "label": "C",
+          "text": "กำหนดอายุยาเป็น 3 เดือนทันทีโดยไม่ต้องรอข้อมูล long-term",
+          "is_correct": false,
+          "explanation": "ผิด: อายุยาประเมินจากข้อมูล long-term (และ intermediate) ไม่ได้กำหนดเท่ากับเวลาที่เกิด significant change ในสภาวะเร่ง"
+        },
+        {
+          "label": "D",
+          "text": "เปลี่ยน long-term condition เป็น 40°C/75% RH",
+          "is_correct": false,
+          "explanation": "ผิด: 40°C/75% RH เป็นสภาวะเร่ง ไม่ใช้เป็น long-term"
+        },
+        {
+          "label": "E",
+          "text": "ถือว่าเกิด significant change จึงต้องศึกษาที่ intermediate condition 30°C/65% RH เพิ่มเติม และประเมินอายุยาจากข้อมูล long-term ประกอบ",
+          "is_correct": true,
+          "explanation": "ถูกต้อง: เกิด significant change จึงต้องทดสอบที่ intermediate 30°C/65% RH ตาม ICH Q1A(R2)"
+        }
+      ],
+      "key_takeaway": "Significant change = assay เปลี่ยน 5% จาก initial, degradant เกิน spec, ลักษณะ/pH/dissolution (12 units) ไม่ผ่าน → ถ้า long-term 25/60 ต้องทำ intermediate 30/65"
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "ในการทดสอบ confirmatory photostability ของ drug product ตาม ICH Q1B ตัวอย่างต้องได้รับการฉายแสงอย่างน้อยเท่าใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "แสงขาว 200 lux·h และ near UV 1.2 W·h/m²"
+      },
+      {
+        "label": "B",
+        "text": "แสงขาว 1.2 ล้าน lux·h เท่านั้น ไม่ต้องทดสอบ UV"
+      },
+      {
+        "label": "C",
+        "text": "แสง visible อย่างน้อย 1.2 ล้าน lux·h และ near UV อย่างน้อย 200 W·h/m²"
+      },
+      {
+        "label": "D",
+        "text": "UV-C 254 nm อย่างน้อย 24 ชั่วโมง"
+      },
+      {
+        "label": "E",
+        "text": "แสงแดดธรรมชาติกลางแจ้งเป็นเวลา 30 วัน"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "ICH Q1B กำหนดให้ confirmatory study ได้รับแสง visible รวมอย่างน้อย 1.2 million lux hours และ near UV (320–400 nm) อย่างน้อย 200 watt hours/m²",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. แสง visible อย่างน้อย 1.2 ล้าน lux·h และ near UV อย่างน้อย 200 W·h/m² — ICH Q1B: ≥1.2 million lux·h (visible) และ ≥200 W·h/m² (near UV)",
+      "reason": "ICH Q1B เป็นแนวทางทดสอบความคงตัวต่อแสงของสารและผลิตภัณฑ์ยาใหม่ แบ่งเป็น forced degradation (เพื่อศึกษากลไกการสลายและพัฒนาวิธีวิเคราะห์) และ confirmatory testing ซึ่งต้องได้รับแสงอย่างน้อย 1.2 million lux hours สำหรับแสง visible และ 200 W·h/m² สำหรับ near UV แหล่งกำเนิดแสงมี 2 option คือ Option 1 ใช้หลอดที่ให้สเปกตรัมคล้าย D65/ID65 (เช่น xenon หรือ metal halide) และ Option 2 ใช้หลอด cool white fluorescent ร่วมกับหลอด near-UV fluorescent (320–400 nm ความเข้มสูงสุดที่ 350–370 nm) ต้องมี dark control ที่ห่อด้วย aluminium foil วางคู่กัน เพื่อแยกผลของความร้อนออกจากผลของแสง ลำดับการทดสอบคือ ทดสอบผลิตภัณฑ์ที่ไม่มีภาชนะ แล้วทดสอบในภาชนะปฐมภูมิ และในบรรจุภัณฑ์จำหน่ายตามลำดับ จนพิสูจน์ได้ว่าบรรจุภัณฑ์ป้องกันแสงได้เพียงพอ ผลที่ได้ใช้ตัดสินว่าต้องใช้ภาชนะกันแสงหรือต้องมีข้อความบนฉลาก เช่น \"เก็บให้พ้นแสง\"",
+      "choices": [
+        {
+          "label": "A",
+          "text": "แสงขาว 200 lux·h และ near UV 1.2 W·h/m²",
+          "is_correct": false,
+          "explanation": "ผิด: ตัวเลขสลับหน่วยและผิดลำดับขนาด ค่าที่ถูกคือ 1.2 million lux·h และ 200 W·h/m²"
+        },
+        {
+          "label": "B",
+          "text": "แสงขาว 1.2 ล้าน lux·h เท่านั้น ไม่ต้องทดสอบ UV",
+          "is_correct": false,
+          "explanation": "ผิด: ต้องทดสอบทั้ง visible และ near UV เพราะยาหลายชนิดดูดกลืนแสงในช่วง UVA"
+        },
+        {
+          "label": "C",
+          "text": "แสง visible อย่างน้อย 1.2 ล้าน lux·h และ near UV อย่างน้อย 200 W·h/m²",
+          "is_correct": true,
+          "explanation": "ถูกต้อง: เป็นปริมาณแสงขั้นต่ำตาม ICH Q1B สำหรับ confirmatory study"
+        },
+        {
+          "label": "D",
+          "text": "UV-C 254 nm อย่างน้อย 24 ชั่วโมง",
+          "is_correct": false,
+          "explanation": "ผิด: UV-C 254 nm ไม่ใช่แสงที่ยาสัมผัสในสภาพจริง (ถูกชั้นบรรยากาศและกระจกกรองออก) และไม่ใช่สภาวะตาม Q1B"
+        },
+        {
+          "label": "E",
+          "text": "แสงแดดธรรมชาติกลางแจ้งเป็นเวลา 30 วัน",
+          "is_correct": false,
+          "explanation": "ผิด: แสงแดดธรรมชาติควบคุมปริมาณและทำซ้ำไม่ได้ Q1B ใช้แหล่งแสงที่ควบคุมได้ตาม Option 1 หรือ 2"
+        }
+      ],
+      "key_takeaway": "ICH Q1B: 1.2 × 10⁶ lux·h + 200 W·h/m² near UV (320–400 nm); มี dark control ห่อ foil; ทดสอบจาก ไม่มีภาชนะ → ภาชนะปฐมภูมิ → บรรจุภัณฑ์จำหน่าย"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "สารละลายยาชนิดหนึ่งสลายตัวตาม first-order kinetics ที่อุณหภูมิเก็บรักษา ผลวิเคราะห์ได้ความแรงเริ่มต้น 100.0% ของ label claim และหลังเก็บ 6 เดือนเหลือ 97.0% ถ้าเกณฑ์อายุยาคือความแรงต้องไม่ต่ำกว่า 90% ระยะเวลา t90 โดยประมาณคือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "13.7 เดือน"
+      },
+      {
+        "label": "B",
+        "text": "20.0 เดือน"
+      },
+      {
+        "label": "C",
+        "text": "136.5 เดือน"
+      },
+      {
+        "label": "D",
+        "text": "47.8 เดือน"
+      },
+      {
+        "label": "E",
+        "text": "20.8 เดือน"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "k = ln(100/97)/6 = 0.00508 ต่อเดือน; t90 = ln(100/90)/k = 0.1054/0.00508 ≈ 20.8 เดือน",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. 20.8 เดือน — first-order: k = 0.00508 เดือน⁻¹ จึงได้ t90 ≈ 20.8 เดือน",
+      "reason": "สำหรับปฏิกิริยา first-order ln(C0/C) = kt จึงคำนวณ k จากข้อมูลสองจุดได้ และ t90 = ln(100/90)/k = 0.105/k ซึ่งไม่ขึ้นกับความเข้มข้นเริ่มต้น จุดที่ต้องระวังคือห้ามใช้บัญญัติไตรยางศ์แบบเส้นตรง (ลด 3% ใน 6 เดือน จึงลด 10% ใน 20 เดือน) เพราะเป็นการคิดแบบ zero-order ซึ่งใช้กับระบบที่อัตราคงที่ เช่น suspension ที่ยาในสารละลายถูกเติมจากส่วนที่เป็นของแข็งตลอดเวลา (apparent zero-order) ในกรณี first-order อัตราการสลายจะลดลงเมื่อยาเหลือน้อยลง t90 จึงยาวกว่าค่าที่คิดแบบ zero-order เล็กน้อย ในทางปฏิบัติ ICH Q1E แนะนำให้หาอายุยาจากจุดที่ 95% one-sided confidence limit ของเส้น regression ตัดกับเกณฑ์ โดยใช้ข้อมูลหลายจุดและหลาย batch และมักปัดลงเป็นค่าที่ใช้ได้จริง เช่น 18 เดือน นอกจากนี้ยังใช้ Arrhenius equation ทำนาย k ที่อุณหภูมิต่าง ๆ จากข้อมูลสภาวะเร่งได้",
+      "choices": [
+        {
+          "label": "A",
+          "text": "13.7 เดือน",
+          "is_correct": false,
+          "explanation": "ผิด: 13.7 เดือนได้จากการใช้ 0.0693 (สับสนกับ ln2) แทน ln(100/90) = 0.105 ในการหา t90"
+        },
+        {
+          "label": "B",
+          "text": "20.0 เดือน",
+          "is_correct": false,
+          "explanation": "ผิด: 20.0 เดือนเป็นผลจากการคิดแบบ zero-order (เส้นตรง 0.5% ต่อเดือน) ซึ่งไม่ถูกต้องเมื่อโจทย์ระบุว่าเป็น first-order"
+        },
+        {
+          "label": "C",
+          "text": "136.5 เดือน",
+          "is_correct": false,
+          "explanation": "ผิด: 136.5 เดือนคือ t½ = 0.693/k ซึ่งเป็นเวลาที่ยาเหลือ 50% ไม่ใช่ 90%"
+        },
+        {
+          "label": "D",
+          "text": "47.8 เดือน",
+          "is_correct": false,
+          "explanation": "ผิด: 47.8 เดือนเกิดจากใช้ log ฐาน 10 หา k (0.002205 เดือน⁻¹) แต่ใช้ ln ในสูตร t90 ต้องใช้ลอการิทึมฐานเดียวกัน (ถ้าใช้ log10 ต้องคูณ 2.303 เพื่อแปลงเป็น k)"
+        },
+        {
+          "label": "E",
+          "text": "20.8 เดือน",
+          "is_correct": true,
+          "explanation": "ถูกต้อง: t90 = 0.10536 ÷ 0.005077 เดือน⁻¹ ≈ 20.8 เดือน"
+        }
+      ],
+      "key_takeaway": "First-order: k = ln(C0/C)/t; t90 = 0.105/k; t½ = 0.693/k; Zero-order: t90 = 0.1C0/k0 — ห้ามใช้ linear extrapolation กับ first-order",
+      "calculation_steps": [
+        "ขั้นที่ 1: k = ln(C0/C)/t = ln(100.0/97.0)/6 เดือน = 0.030459/6 = 0.005077 เดือน⁻¹",
+        "ขั้นที่ 2: t90 = ln(100/90)/k = 0.10536/0.005077 เดือน⁻¹",
+        "ขั้นที่ 3: t90 = 20.75 ≈ 20.8 เดือน",
+        "ตรวจสอบ: C ที่ 20.75 เดือน = 100 × e^(−0.005077 × 20.75) = 100 × e^(−0.10535) = 90.0%"
+      ]
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "เภสัชกรผสมยาน้ำแขวนตะกอนสำหรับรับประทาน (nonsterile compounding) จากยาเม็ดบดผสมกับ vehicle ที่มีน้ำเป็นส่วนประกอบหลักและไม่มีสารกันเสีย เก็บในตู้เย็น 2–8°C และไม่มีข้อมูลความคงตัวเฉพาะของสูตรนี้ ตาม USP <795> ฉบับปัจจุบัน beyond-use date (BUD) ที่กำหนดได้นานที่สุดคือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "14 วัน"
+      },
+      {
+        "label": "B",
+        "text": "35 วัน"
+      },
+      {
+        "label": "C",
+        "text": "90 วัน"
+      },
+      {
+        "label": "D",
+        "text": "180 วัน"
+      },
+      {
+        "label": "E",
+        "text": "เท่ากับวันหมดอายุของยาเม็ดต้นแบบ"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "USP <795> กำหนด BUD เริ่มต้น (เมื่อไม่มีข้อมูลความคงตัวเฉพาะ) สำหรับ aqueous dosage form ที่ไม่มีสารกันเสียไว้ที่ 14 วันเมื่อเก็บในตู้เย็น",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. 14 วัน — ยาน้ำที่มีน้ำและไม่มีสารกันเสีย เก็บในตู้เย็น ได้ BUD 14 วัน",
+      "reason": "BUD ต่างจาก expiration date (shelf-life) คือ expiration date ผู้ผลิตกำหนดจากการศึกษาความคงตัวในบรรจุภัณฑ์ที่ปิดสนิท ส่วน BUD ผู้ผสมยากำหนดนับจากวันที่ผสม สำหรับยาผสมเฉพาะราย โดยพิจารณาความคงตัวทางเคมี กายภาพ และความเสี่ยงต่อการปนเปื้อนจุลินทรีย์ (โดยเฉพาะสูตรที่มีน้ำซึ่งมี water activity สูง) USP <795> ฉบับปรับปรุงที่มีผลตั้งแต่ปี 2023 กำหนด BUD เริ่มต้นเมื่อไม่มีข้อมูลความคงตัวเฉพาะไว้ดังนี้: aqueous dosage form ที่ไม่มีสารกันเสีย 14 วัน (เก็บตู้เย็น), aqueous dosage form ที่มีสารกันเสีย 35 วัน, nonaqueous liquid dosage form 90 วัน และ solid dosage form 180 วัน ทั้งนี้ BUD ต้องไม่เกินวันหมดอายุของส่วนประกอบใดในสูตร หากมีข้อมูลความคงตัวของสูตรเดียวกันจากการศึกษาด้วย stability-indicating method อาจกำหนด BUD ยาวขึ้นตามข้อมูลนั้นได้ (แต่ไม่เกิน 180 วัน) และควรให้คำแนะนำผู้ป่วยเรื่องการเขย่าก่อนใช้และการเก็บในตู้เย็น",
+      "choices": [
+        {
+          "label": "A",
+          "text": "14 วัน",
+          "is_correct": true,
+          "explanation": "ถูกต้อง: nonpreserved aqueous dosage form ได้ BUD 14 วันเมื่อเก็บในตู้เย็น"
+        },
+        {
+          "label": "B",
+          "text": "35 วัน",
+          "is_correct": false,
+          "explanation": "ผิด: 35 วันใช้กับ aqueous dosage form ที่มีสารกันเสีย ซึ่งสูตรในโจทย์ไม่มี"
+        },
+        {
+          "label": "C",
+          "text": "90 วัน",
+          "is_correct": false,
+          "explanation": "ผิด: 90 วันใช้กับ nonaqueous liquid (เช่น ยาในน้ำมัน) ซึ่งไม่มี water activity สูง"
+        },
+        {
+          "label": "D",
+          "text": "180 วัน",
+          "is_correct": false,
+          "explanation": "ผิด: 180 วันใช้กับ solid dosage form เช่น แคปซูลหรือผงยา"
+        },
+        {
+          "label": "E",
+          "text": "เท่ากับวันหมดอายุของยาเม็ดต้นแบบ",
+          "is_correct": false,
+          "explanation": "ผิด: เมื่อนำยาเม็ดมาบดและผสมกับ vehicle สภาพแวดล้อมของยาเปลี่ยนไป expiration date ของผู้ผลิตจึงใช้ไม่ได้ ต้องกำหนด BUD ใหม่ และ BUD ต้องไม่เกินวันหมดอายุของส่วนประกอบ"
+        }
+      ],
+      "key_takeaway": "USP <795> BUD เริ่มต้น: aqueous ไม่มีสารกันเสีย 14 วัน (ตู้เย็น); aqueous มีสารกันเสีย 35 วัน; nonaqueous liquid 90 วัน; solid 180 วัน"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ห้อง QC ได้รับขวดแก้วสำหรับบรรจุยาฉีด ผลทดสอบ hydrolytic resistance ด้วย surface glass test ตาม USP <660> ผ่านเกณฑ์ระดับ high hydrolytic resistance ซึ่งเป็นเกณฑ์ร่วมของ Type I และ Type II ถ้าต้องการยืนยันว่าแก้วนี้เป็น Type I (borosilicate) ไม่ใช่ Type II (soda-lime ที่ผ่าน surface treatment) ควรทดสอบเพิ่มด้วยวิธีใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Spectral transmission test ในช่วง 290–450 nm"
+      },
+      {
+        "label": "B",
+        "text": "Thermal shock test"
+      },
+      {
+        "label": "C",
+        "text": "Glass grains (powdered glass) test ซึ่งวัดความทนต่อน้ำของเนื้อแก้วทั้งหมด"
+      },
+      {
+        "label": "D",
+        "text": "Container closure integrity test ด้วยวิธี dye ingress"
+      },
+      {
+        "label": "E",
+        "text": "การตรวจ arsenic ที่ละลายออกมาเพียงอย่างเดียว"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Type II มี high hydrolytic resistance เฉพาะที่ผิวด้านในจากการทำ dealkalization แต่เนื้อแก้วเป็น soda-lime การบดแก้วเป็นเม็ดเล็กจะเปิดเนื้อแก้วให้สัมผัสน้ำ Type I จะผ่านเกณฑ์ ส่วน Type II จะปล่อยด่างออกมามากกว่าจึงไม่ผ่าน",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. Glass grains (powdered glass) test ซึ่งวัดความทนต่อน้ำของเนื้อแก้วทั้งหมด — glass grains test แยก Type I (borosilicate ทั้งเนื้อ) ออกจาก Type II (ผิวผ่านการบำบัดเท่านั้น)",
+      "reason": "แก้วสำหรับบรรจุภัณฑ์ยาแบ่งเป็น Type I: borosilicate glass มี hydrolytic resistance สูงจากองค์ประกอบของเนื้อแก้ว เหมาะกับยาฉีดเกือบทุกชนิดรวมถึงสารละลายที่เป็นด่างหรือไม่มีบัฟเฟอร์ Type II: soda-lime glass ที่ผ่าน surface treatment (เช่น ใช้ sulfur dioxide หรือ ammonium sulfate ทำ dealkalization) จนผิวด้านในทนน้ำสูง เหมาะกับยาน้ำที่เป็นกรดหรือเป็นกลาง และไม่ควรนำมาใช้ซ้ำเพราะผิวที่บำบัดแล้วจะเสื่อม Type III: soda-lime glass ที่ไม่ผ่านการบำบัด มี hydrolytic resistance ปานกลาง ใช้กับยาผงแห้งและของเหลวที่ไม่มีน้ำ (หรือกรณีที่พิสูจน์ความเหมาะสมแล้ว) ส่วน Type NP ใช้กับยาที่ไม่ใช่ยาฉีด การทดสอบตาม USP <660> มี (1) Glass grains test: บดแก้วเป็นเม็ด แล้ว autoclave ในน้ำ ไทเทรตด่างที่ปล่อยออกมา ใช้แยก Type I ออกจาก Type II/III (2) Surface glass test: เติมน้ำในภาชนะแล้ว autoclave วัดผิวด้านใน ใช้แยก Type I/II ออกจาก Type III (3) Surface etching test: ใช้เมื่อต้องการตรวจว่าความทนน้ำสูงมาจากการบำบัดผิว ดังนั้นการทดสอบ glass grains จึงเป็นคำตอบสำหรับการยืนยัน Type I",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Spectral transmission test ในช่วง 290–450 nm",
+          "is_correct": false,
+          "explanation": "ผิด: spectral transmission test ใช้ประเมินคุณสมบัติกันแสงของแก้วสีชา ไม่ได้บอกชนิดของ hydrolytic resistance"
+        },
+        {
+          "label": "B",
+          "text": "Thermal shock test",
+          "is_correct": false,
+          "explanation": "ผิด: thermal shock test วัดความทนต่อการเปลี่ยนแปลงอุณหภูมิ ไม่ใช่การทดสอบที่ใช้แยกชนิดแก้วตามเภสัชตำรับ"
+        },
+        {
+          "label": "C",
+          "text": "Glass grains (powdered glass) test ซึ่งวัดความทนต่อน้ำของเนื้อแก้วทั้งหมด",
+          "is_correct": true,
+          "explanation": "ถูกต้อง: glass grains test วัดความทนน้ำของเนื้อแก้วทั้งหมด Type I ผ่าน Type II ไม่ผ่าน"
+        },
+        {
+          "label": "D",
+          "text": "Container closure integrity test ด้วยวิธี dye ingress",
+          "is_correct": false,
+          "explanation": "ผิด: CCI test ทดสอบการรั่วของระบบภาชนะและจุก ไม่เกี่ยวกับชนิดเนื้อแก้ว"
+        },
+        {
+          "label": "E",
+          "text": "การตรวจ arsenic ที่ละลายออกมาเพียงอย่างเดียว",
+          "is_correct": false,
+          "explanation": "ผิด: การตรวจ arsenic เป็นการทดสอบสารที่ละลายออกมาจากแก้ว ไม่ได้แยก Type I จาก Type II"
+        }
+      ],
+      "key_takeaway": "Glass grains → แยก I ออกจาก II/III; Surface glass → แยก I/II ออกจาก III; Type I = ยาฉีดทั่วไป; II = ยาน้ำกรด/กลาง; III = ผงแห้ง/ไม่มีน้ำ"
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "ยาเม็ดฟู่ (effervescent tablet) ที่ดูดความชื้นสูงมากจะวางจำหน่ายในประเทศไทย (zone IVb) และต้องการบรรจุในแผงบลิสเตอร์ วัสดุบลิสเตอร์ข้อใดป้องกันความชื้นได้ดีที่สุด (moisture vapour transmission rate ต่ำที่สุด)",
+    "choices": [
+      {
+        "label": "A",
+        "text": "PVC (polyvinyl chloride) 250 µm"
+      },
+      {
+        "label": "B",
+        "text": "Cold-form aluminium/aluminium (Alu/Alu)"
+      },
+      {
+        "label": "C",
+        "text": "PVC/PVDC"
+      },
+      {
+        "label": "D",
+        "text": "PVC/Aclar (PCTFE)"
+      },
+      {
+        "label": "E",
+        "text": "PET (polyethylene terephthalate)"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Cold-form Alu/Alu มีชั้นอะลูมิเนียมทั้งแผ่นขึ้นรูปและแผ่นปิด ซึ่งแทบไม่ให้ไอน้ำ ออกซิเจน และแสงผ่าน จึงป้องกันความชื้นได้ดีที่สุด",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. Cold-form aluminium/aluminium (Alu/Alu) — cold-form Alu/Alu มี MVTR ต่ำที่สุด เหมาะกับยาที่ไวต่อความชื้นมาก",
+      "reason": "บลิสเตอร์ประกอบด้วยแผ่นขึ้นรูป (forming web) และแผ่นปิด (lidding foil ซึ่งมักเป็นอะลูมิเนียม) ความสามารถกันความชื้นจึงขึ้นกับแผ่นขึ้นรูปเป็นหลัก เรียงจาก MVTR สูงไปต่ำได้คร่าว ๆ ดังนี้: PVC ล้วน (กันความชื้นได้น้อย) > PVC/PVDC (PVDC ช่วยกันไอน้ำและออกซิเจนได้ดีขึ้น ยิ่งเคลือบหนามาก g/m² ยิ่งดี) > PVC/Aclar (PCTFE เป็นพลาสติกใสที่กันไอน้ำได้ดีที่สุด) > cold-form Alu/Alu (แทบไม่มีการซึมผ่าน) Cold-form Alu/Alu ใช้ laminate ของ OPA/Al/PVC ขึ้นรูปด้วยแรงกดที่อุณหภูมิห้อง ข้อเสียคือมองไม่เห็นเม็ดยา ต้นทุนสูง และใช้พื้นที่แผงมากกว่า แต่กันแสงได้สมบูรณ์ด้วย สำหรับยาที่ดูดความชื้นสูงมากในภูมิอากาศ zone IVb เช่น ยาเม็ดฟู่ วัสดุนี้ หรือหลอด/ขวดที่มีสารดูดความชื้น (desiccant) เป็นทางเลือกที่เหมาะสม ส่วน strip packaging (อะลูมิเนียมประกบสองด้าน) ก็กันความชื้นได้ดีและใช้กับยาเม็ดฟู่บ่อย",
+      "choices": [
+        {
+          "label": "A",
+          "text": "PVC (polyvinyl chloride) 250 µm",
+          "is_correct": false,
+          "explanation": "ผิด: PVC ล้วนมี MVTR สูงที่สุดในกลุ่ม ไม่เหมาะกับยาที่ไวต่อความชื้น"
+        },
+        {
+          "label": "B",
+          "text": "Cold-form aluminium/aluminium (Alu/Alu)",
+          "is_correct": true,
+          "explanation": "ถูกต้อง: อะลูมิเนียมทั้งสองด้านเป็นกำแพงกันความชื้นที่ดีที่สุด"
+        },
+        {
+          "label": "C",
+          "text": "PVC/PVDC",
+          "is_correct": false,
+          "explanation": "ผิด: PVDC ช่วยลด MVTR ได้มากกว่า PVC ล้วน แต่ยังด้อยกว่า Aclar และ Alu/Alu"
+        },
+        {
+          "label": "D",
+          "text": "PVC/Aclar (PCTFE)",
+          "is_correct": false,
+          "explanation": "ผิด: Aclar (PCTFE) เป็นพลาสติกใสที่กันความชื้นได้ดีที่สุด แต่ยังสู้ cold-form aluminium ไม่ได้"
+        },
+        {
+          "label": "E",
+          "text": "PET (polyethylene terephthalate)",
+          "is_correct": false,
+          "explanation": "ผิด: PET กันความชื้นได้ไม่ดีนักและไม่ใช่วัสดุบลิสเตอร์ที่เลือกใช้กับยาที่ไวต่อความชื้นมาก"
+        }
+      ],
+      "key_takeaway": "MVTR: PVC > PVC/PVDC > PVC/Aclar (PCTFE) > Alu/Alu (cold-form) ≈ 0; Alu/Alu กันแสงด้วยแต่มองไม่เห็นเม็ดยา"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ยาน้ำเชื่อมชนิดหนึ่งไวต่อแสงจึงต้องบรรจุใน light-resistant container ตามเภสัชตำรับ ขวดแก้วสีชาที่จะนำมาใช้ต้องผ่านการทดสอบ spectral (light) transmission ช่วงความยาวคลื่นที่ USP กำหนดให้วัดเพื่อประเมินการกันแสงคือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "200–280 nm"
+      },
+      {
+        "label": "B",
+        "text": "450–700 nm"
+      },
+      {
+        "label": "C",
+        "text": "700–1,000 nm"
+      },
+      {
+        "label": "D",
+        "text": "290–450 nm"
+      },
+      {
+        "label": "E",
+        "text": "1,000–2,500 nm"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "USP กำหนดให้วัดการส่งผ่านแสงของภาชนะกันแสงในช่วง 290–450 nm ซึ่งเป็นช่วง UV และแสงสีม่วงถึงน้ำเงินที่มีพลังงานสูงและเป็นสาเหตุหลักของ photodegradation",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. 290–450 nm — light-resistant container ทดสอบการส่งผ่านแสงที่ 290–450 nm",
+      "reason": "light-resistant container ตามเภสัชตำรับคือภาชนะที่ป้องกันยาจากผลของแสงด้วยคุณสมบัติของวัสดุ รวมถึงสารเคลือบ ยาส่วนใหญ่ดูดกลืนแสงในช่วง UV และแสงความยาวคลื่นสั้น จึงเกิด photolysis หรือ photo-oxidation ได้ (เช่น nifedipine, riboflavin, furosemide, sodium nitroprusside) การทดสอบ spectral transmission ของ USP วัดเปอร์เซ็นต์แสงที่ผ่านผนังภาชนะในช่วง 290–450 nm โดยมีเกณฑ์สูงสุดที่ขึ้นกับขนาดและชนิดของภาชนะ แก้วสีชา (amber) ได้สีจากการเติม iron oxide ร่วมกับ sulfur/carbon และดูดกลืนแสงช่วงนี้ได้ดี ข้อควรระวังคือแก้วสีชาอาจปล่อยไอออนเหล็กซึ่งเร่ง oxidation ของยาบางชนิดได้ ภาชนะพลาสติกอาจเติมสีหรือ UV absorber หรือใช้ภาชนะใสร่วมกับกล่องกระดาษทึบ (secondary packaging) โดยต้องมีฉลากให้เก็บไว้ในกล่องจนกว่าจะใช้",
+      "choices": [
+        {
+          "label": "A",
+          "text": "200–280 nm",
+          "is_correct": false,
+          "explanation": "ผิด: 200–280 nm เป็น UV-C ที่ถูกชั้นบรรยากาศและกระจกกรองออกเกือบทั้งหมด ไม่ใช่ช่วงที่ USP กำหนด"
+        },
+        {
+          "label": "B",
+          "text": "450–700 nm",
+          "is_correct": false,
+          "explanation": "ผิด: 450–700 nm เป็นแสง visible ช่วงยาว ก่อปัญหาน้อยกว่าและแก้วสีชาก็ยอมให้ผ่านมากกว่า"
+        },
+        {
+          "label": "C",
+          "text": "700–1,000 nm",
+          "is_correct": false,
+          "explanation": "ผิด: 700–1,000 nm เป็น near infrared ที่มีพลังงานต่ำ ไม่ใช่สาเหตุหลักของ photodegradation"
+        },
+        {
+          "label": "D",
+          "text": "290–450 nm",
+          "is_correct": true,
+          "explanation": "ถูกต้อง: USP วัด spectral transmission ในช่วง 290–450 nm"
+        },
+        {
+          "label": "E",
+          "text": "1,000–2,500 nm",
+          "is_correct": false,
+          "explanation": "ผิด: 1,000–2,500 nm เป็นช่วง NIR ที่ใช้ในการวิเคราะห์ (NIR spectroscopy) ไม่ใช่การทดสอบภาชนะกันแสง"
+        }
+      ],
+      "key_takeaway": "Light-resistant: ทดสอบ spectral transmission 290–450 nm; amber glass = iron oxide (อาจปล่อย Fe เร่ง oxidation); ICH Q1B ใช้พิสูจน์ความจำเป็นของการกันแสง"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ก่อนเริ่มบรรจุยาเม็ด Amlodipine 5 mg รุ่นผลิตใหม่บนสายบรรจุแผงที่เพิ่งใช้บรรจุ Amlodipine 10 mg เสร็จ พนักงานต้องตรวจและนำเม็ดยา แผงฟอยล์ กล่อง ฉลาก และเอกสารของรุ่นก่อนออกจากสายบรรจุทั้งหมด แล้วให้ผู้ควบคุมลงนามยืนยันก่อนเริ่มงาน ตามหลัก GMP/PIC/S ขั้นตอนนี้เรียกว่าอะไร และมีวัตถุประสงค์หลักเพื่ออะไร",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Cleaning validation เพื่อพิสูจน์ว่าสารตกค้างต่ำกว่าเกณฑ์ MACO"
+      },
+      {
+        "label": "B",
+        "text": "In-process control เพื่อตรวจน้ำหนักเม็ดยาระหว่างการบรรจุ"
+      },
+      {
+        "label": "C",
+        "text": "Line clearance เพื่อป้องกันการปะปน (mix-up) ของผลิตภัณฑ์ วัสดุบรรจุ และฉลากระหว่างรุ่นผลิต"
+      },
+      {
+        "label": "D",
+        "text": "Reconciliation เพื่อกระทบยอดจำนวนฉลากที่ใช้กับจำนวนที่เบิก"
+      },
+      {
+        "label": "E",
+        "text": "Change control เพื่อควบคุมการเปลี่ยนแปลงสายการผลิต"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Line clearance คือการตรวจว่าพื้นที่และเครื่องจักรปราศจากผลิตภัณฑ์ วัสดุ และเอกสารของรุ่นก่อนก่อนเริ่มงานใหม่ เพื่อป้องกัน mix-up ซึ่งเป็นความเสี่ยงสำคัญเมื่อบรรจุยาตัวเดียวกันต่างความแรงต่อกัน",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. Line clearance เพื่อป้องกันการปะปน (mix-up) ของผลิตภัณฑ์ วัสดุบรรจุ และฉลากระหว่างรุ่นผลิต — line clearance ป้องกัน mix-up ระหว่างรุ่นผลิต/ความแรง",
+      "reason": "หลักการพื้นฐานของ GMP (PIC/S GMP Guide ซึ่งประเทศไทยใช้เป็นมาตรฐานตั้งแต่เข้าเป็นสมาชิก PIC/S ในปี 2016) คือป้องกัน contamination, cross-contamination และ mix-up การบรรจุยาตัวเดียวกันแต่ต่างความแรงต่อเนื่องกันมีความเสี่ยงสูงมาก เพราะเม็ดยาและวัสดุบรรจุคล้ายกัน หากมีเม็ด 10 mg หรือกล่อง/ฉลากของรุ่นก่อนหลงเหลือ อาจทำให้ผู้ป่วยได้ยาผิดขนาด Line clearance จึงต้องทำก่อนเริ่มงานทุกครั้งตาม checklist ที่กำหนด ได้แก่ ตรวจเครื่องจักร hopper ราง feeder พื้น ถังขยะ เอกสาร ฉลาก และวัสดุพิมพ์ทั้งหมด แล้วบันทึกและลงนามโดยผู้ปฏิบัติและผู้ตรวจสอบอิสระ มาตรการอื่นที่ช่วยป้องกัน mix-up ได้แก่ การแยกสายบรรจุทางกายภาพ การติดป้ายสถานะ (status labelling) การใช้ระบบตรวจรหัสอิเล็กทรอนิกส์ (barcode/vision system) และการกระทบยอด (reconciliation) วัสดุพิมพ์เมื่อสิ้นสุดการบรรจุ หลัก GMP อีกข้อคือ quality ต้องสร้างเข้าไปในกระบวนการ ไม่ใช่อาศัยการทดสอบผลิตภัณฑ์สุดท้ายเพียงอย่างเดียว",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Cleaning validation เพื่อพิสูจน์ว่าสารตกค้างต่ำกว่าเกณฑ์ MACO",
+          "is_correct": false,
+          "explanation": "ผิด: cleaning validation เป็นการพิสูจน์ด้วยข้อมูลว่าวิธีทำความสะอาดลดสารตกค้างได้ต่ำกว่าเกณฑ์อย่างสม่ำเสมอ ทำเป็นโครงการ ไม่ใช่การตรวจก่อนเริ่มงานทุกรุ่น และเป้าหมายคือ cross-contamination ไม่ใช่ mix-up ของวัสดุ"
+        },
+        {
+          "label": "B",
+          "text": "In-process control เพื่อตรวจน้ำหนักเม็ดยาระหว่างการบรรจุ",
+          "is_correct": false,
+          "explanation": "ผิด: IPC คือการตรวจระหว่างการผลิต เช่น น้ำหนัก การรั่วของแผง ไม่ใช่การเคลียร์สายก่อนเริ่มงาน"
+        },
+        {
+          "label": "C",
+          "text": "Line clearance เพื่อป้องกันการปะปน (mix-up) ของผลิตภัณฑ์ วัสดุบรรจุ และฉลากระหว่างรุ่นผลิต",
+          "is_correct": true,
+          "explanation": "ถูกต้อง: line clearance ทำก่อนเริ่มรุ่นใหม่เพื่อป้องกัน mix-up และต้องบันทึกและลงนาม"
+        },
+        {
+          "label": "D",
+          "text": "Reconciliation เพื่อกระทบยอดจำนวนฉลากที่ใช้กับจำนวนที่เบิก",
+          "is_correct": false,
+          "explanation": "ผิด: reconciliation ทำเมื่อสิ้นสุดการบรรจุ เพื่อกระทบยอดวัสดุพิมพ์ที่เบิก ใช้ ทำลาย และคืน เป็นมาตรการเสริม ไม่ใช่ขั้นตอนที่อธิบายในโจทย์"
+        },
+        {
+          "label": "E",
+          "text": "Change control เพื่อควบคุมการเปลี่ยนแปลงสายการผลิต",
+          "is_correct": false,
+          "explanation": "ผิด: change control ใช้เมื่อมีการเปลี่ยนแปลงที่อาจกระทบคุณภาพ เช่น เปลี่ยนเครื่องจักร วิธีการ หรือผู้ขาย ไม่ใช่การเปลี่ยนรุ่นผลิตตามปกติ"
+        }
+      ],
+      "key_takeaway": "GMP ป้องกัน 3 อย่าง: contamination, cross-contamination, mix-up; line clearance = ก่อนเริ่มงาน, reconciliation = หลังจบงาน"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "หลังติดตั้งเครื่องตอกยาเม็ดแบบหมุน (rotary tablet press) ใหม่และตรวจว่าการติดตั้ง ระบบไฟฟ้า และเอกสารคู่มือถูกต้องตามแบบแล้ว ทีมวิศวกรรมทดสอบเดินเครื่องเปล่า (ไม่มีผงยา) ที่ความเร็วต่ำสุดถึงสูงสุด ทดสอบระบบ interlock, emergency stop และสัญญาณเตือนต่าง ๆ ว่าทำงานในช่วงที่กำหนด ขั้นตอนนี้คือ qualification ขั้นใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Operational qualification (OQ)"
+      },
+      {
+        "label": "B",
+        "text": "Installation qualification (IQ)"
+      },
+      {
+        "label": "C",
+        "text": "Design qualification (DQ)"
+      },
+      {
+        "label": "D",
+        "text": "Performance qualification (PQ)"
+      },
+      {
+        "label": "E",
+        "text": "Process performance qualification (PPQ) ของผลิตภัณฑ์"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "OQ คือการพิสูจน์ด้วยเอกสารว่าเครื่องทำงานตามที่ออกแบบไว้ตลอดช่วงการทำงานที่คาดว่าจะใช้ รวมถึงสภาวะขอบบนและขอบล่าง (worst case) และระบบความปลอดภัย/สัญญาณเตือน โดยยังไม่ใช้ผลิตภัณฑ์จริง",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. Operational qualification (OQ) — การทดสอบการทำงานตลอดช่วงพารามิเตอร์โดยไม่ใช้ผลิตภัณฑ์ = OQ",
+      "reason": "การรับรองเครื่องจักรและระบบ (equipment qualification) ตาม PIC/S GMP Annex 15 มีลำดับดังนี้ (1) DQ: พิสูจน์ด้วยเอกสารว่าการออกแบบหรือข้อกำหนดของเครื่องที่จะซื้อตรงตาม User Requirement Specification (URS) และหลัก GMP (2) IQ: ตรวจว่าเครื่องที่ส่งมาและการติดตั้งถูกต้องตามแบบ เช่น รุ่น วัสดุสัมผัสผลิตภัณฑ์ ระบบไฟฟ้า สาธารณูปโภค คู่มือ แบบ as-built การสอบเทียบเครื่องมือวัด (3) OQ: ทดสอบการทำงานของแต่ละฟังก์ชันตลอดช่วงพารามิเตอร์ที่จะใช้ รวมถึง upper/lower operating limits, alarms, interlocks, emergency stop และ software ซึ่งมักทำโดยไม่มีผลิตภัณฑ์หรือใช้ placebo (4) PQ: พิสูจน์ว่าเครื่องทำงานได้สม่ำเสมอภายใต้สภาวะการผลิตจริงด้วยผลิตภัณฑ์หรือวัสดุทดแทน เป็นเวลาหรือจำนวนรอบที่เพียงพอ หลังจากนั้นจึงทำ process validation ของผลิตภัณฑ์ (PPQ) ทั้งนี้อาจมี FAT/SAT ที่ผู้ผลิตเครื่องและที่ไซต์ ซึ่งบางส่วนนำมาใช้แทน IQ/OQ ได้ถ้าเอกสารครบ",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Operational qualification (OQ)",
+          "is_correct": true,
+          "explanation": "ถูกต้อง: การทดสอบการทำงานตลอดช่วงความเร็ว ระบบ interlock และ alarm โดยไม่มีผลิตภัณฑ์คือ OQ"
+        },
+        {
+          "label": "B",
+          "text": "Installation qualification (IQ)",
+          "is_correct": false,
+          "explanation": "ผิด: IQ คือการตรวจการติดตั้งตามแบบและเอกสาร ซึ่งโจทย์บอกว่าทำเสร็จแล้วก่อนขั้นตอนนี้"
+        },
+        {
+          "label": "C",
+          "text": "Design qualification (DQ)",
+          "is_correct": false,
+          "explanation": "ผิด: DQ ทำก่อนซื้อ/ติดตั้ง เป็นการตรวจว่าการออกแบบตรงตาม URS"
+        },
+        {
+          "label": "D",
+          "text": "Performance qualification (PQ)",
+          "is_correct": false,
+          "explanation": "ผิด: PQ ต้องทดสอบภายใต้สภาวะการผลิตจริงด้วยผลิตภัณฑ์หรือวัสดุทดแทน ไม่ใช่การเดินเครื่องเปล่า"
+        },
+        {
+          "label": "E",
+          "text": "Process performance qualification (PPQ) ของผลิตภัณฑ์",
+          "is_correct": false,
+          "explanation": "ผิด: PPQ เป็นขั้นตอนของ process validation ที่ผลิตผลิตภัณฑ์จริงหลายรุ่นหลังเครื่องผ่าน qualification แล้ว"
+        }
+      ],
+      "key_takeaway": "DQ (ออกแบบตรง URS) → IQ (ติดตั้งถูก) → OQ (ทำงานถูกตลอดช่วง/ไม่มีผลิตภัณฑ์) → PQ (สม่ำเสมอกับผลิตภัณฑ์จริง) → PPQ"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "โรงงานผลิตยาเม็ด metformin ผ่านการทำ process performance qualification (PPQ) 3 รุ่นติดต่อกันและได้รับอนุมัติให้ผลิตเชิงพาณิชย์แล้ว หลังจากนั้นทีม QA เก็บข้อมูล critical quality attributes เช่น ความแข็ง dissolution และ content uniformity ของทุกรุ่นผลิตมาวิเคราะห์ด้วย control chart และ process capability (Cpk) อย่างต่อเนื่อง ตาม FDA Process Validation Guidance (2011) กิจกรรมนี้จัดอยู่ใน stage ใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Stage 1: Process design"
+      },
+      {
+        "label": "B",
+        "text": "Stage 2a: Design of facility and qualification of equipment and utilities"
+      },
+      {
+        "label": "C",
+        "text": "Stage 2b: Process performance qualification (PPQ)"
+      },
+      {
+        "label": "D",
+        "text": "Retrospective validation"
+      },
+      {
+        "label": "E",
+        "text": "Stage 3: Continued process verification (CPV)"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "Stage 3 (CPV) คือการติดตามข้อมูลการผลิตประจำอย่างต่อเนื่องด้วยเครื่องมือทางสถิติ เพื่อยืนยันว่ากระบวนการยังอยู่ใน state of control ตลอดอายุผลิตภัณฑ์",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. Stage 3: Continued process verification (CPV) — การเฝ้าติดตามข้อมูลการผลิตประจำด้วย SPC หลังผ่าน PPQ = Stage 3 CPV",
+      "reason": "FDA Process Validation Guidance (2011) ใช้แนวคิด lifecycle แบ่งเป็น 3 stage (1) Stage 1 Process design: ใช้ความรู้จากการพัฒนา การทดลองแบบ DoE และการประเมินความเสี่ยง เพื่อระบุ critical quality attributes (CQA) และ critical process parameters (CPP) และกำหนด control strategy (2) Stage 2 Process qualification: แบ่งเป็น 2a การออกแบบอาคารสถานที่และ qualification ของเครื่องจักรและระบบสนับสนุน (DQ/IQ/OQ/PQ) และ 2b PPQ คือการผลิตในขนาดเชิงพาณิชย์ภายใต้ protocol ที่อนุมัติ ด้วยการสุ่มตัวอย่างที่เข้มข้นกว่าการผลิตปกติ เพื่อพิสูจน์ว่ากระบวนการทำซ้ำได้ (3) Stage 3 Continued process verification: เก็บและวิเคราะห์ข้อมูลระหว่างการผลิตประจำ (เช่น control chart, trend analysis, Cpk) เพื่อตรวจจับความแปรปรวนที่ไม่พึงประสงค์ (process drift) และนำไปสู่การปรับปรุง ซึ่งเชื่อมโยงกับ annual product quality review (PQR) ของ PIC/S และ ICH Q10 แนวคิดเดิมเรื่อง retrospective validation (ใช้ข้อมูลรุ่นที่ผลิตไปแล้วแทนการทำ validation) ไม่ได้รับการยอมรับในแนวทางปัจจุบัน",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Stage 1: Process design",
+          "is_correct": false,
+          "explanation": "ผิด: Stage 1 เป็นช่วงพัฒนาเพื่อออกแบบกระบวนการและกำหนด control strategy ก่อนผลิตเชิงพาณิชย์"
+        },
+        {
+          "label": "B",
+          "text": "Stage 2a: Design of facility and qualification of equipment and utilities",
+          "is_correct": false,
+          "explanation": "ผิด: Stage 2a คือการ qualification ของอาคาร เครื่องจักร และระบบสนับสนุน"
+        },
+        {
+          "label": "C",
+          "text": "Stage 2b: Process performance qualification (PPQ)",
+          "is_correct": false,
+          "explanation": "ผิด: PPQ คือการผลิตรุ่นยืนยันภายใต้ protocol ซึ่งโจทย์ระบุว่าผ่านไปแล้ว"
+        },
+        {
+          "label": "D",
+          "text": "Retrospective validation",
+          "is_correct": false,
+          "explanation": "ผิด: retrospective validation เป็นแนวคิดเดิมที่ใช้ข้อมูลในอดีตแทนการ validate ไม่ใช่การติดตามต่อเนื่องหลัง PPQ และไม่ได้รับการยอมรับในแนวทางปัจจุบัน"
+        },
+        {
+          "label": "E",
+          "text": "Stage 3: Continued process verification (CPV)",
+          "is_correct": true,
+          "explanation": "ถูกต้อง: การติดตามด้วย SPC อย่างต่อเนื่องระหว่างการผลิตประจำคือ Stage 3 CPV"
+        }
+      ],
+      "key_takeaway": "FDA PV lifecycle: Stage 1 Design → Stage 2 Qualification (2a equipment, 2b PPQ) → Stage 3 Continued process verification (SPC/Cpk/trend)"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ในการกำหนดเกณฑ์ cleaning validation ของเครื่องผสมที่ใช้ร่วมกัน ผลิตภัณฑ์ A (ผลิตก่อน) มีขนาดยารักษาต่อวันต่ำสุด 10 mg ผลิตภัณฑ์ B (ผลิตต่อ) มีขนาดรับประทานสูงสุดต่อวันคิดเป็นน้ำหนักผลิตภัณฑ์ 1,000 mg และขนาดรุ่นผลิตต่ำสุด (minimum batch size) 100 kg ใช้ safety factor 1/1,000 พื้นที่ผิวสัมผัสผลิตภัณฑ์ของอุปกรณ์ทั้งหมด 40,000 cm² เกณฑ์สารตกค้าง A ต่อพื้นที่ผิว (surface limit) ควรเป็นเท่าใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "2.5 µg/cm²"
+      },
+      {
+        "label": "B",
+        "text": "250 µg/cm²"
+      },
+      {
+        "label": "C",
+        "text": "50 µg/cm²"
+      },
+      {
+        "label": "D",
+        "text": "25 µg/cm²"
+      },
+      {
+        "label": "E",
+        "text": "625 µg/cm²"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "MACO = (10 mg × 100,000,000 mg) ÷ (1,000 × 1,000 mg) = 1,000 mg; surface limit = 1,000,000 µg ÷ 40,000 cm² = 25 µg/cm²",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. 25 µg/cm² — MACO = 1 g จึงได้เกณฑ์ต่อพื้นที่ = 25 µg/cm²",
+      "reason": "เกณฑ์ cleaning validation ตามแนวทางดั้งเดิม (dose-based criterion) คำนวณ Maximum Allowable Carryover (MACO) จาก MACO = (TDD ต่ำสุดของผลิตภัณฑ์ก่อน × MBS ของผลิตภัณฑ์ถัดไป) ÷ (SF × TDD สูงสุดของผลิตภัณฑ์ถัดไป) แนวคิดคือผู้ป่วยที่รับประทานผลิตภัณฑ์ถัดไปในขนาดสูงสุดต่อวัน ต้องได้รับสาร A ปนเปื้อนไม่เกิน 1/1,000 ของขนาดยารักษาต่ำสุดของ A (ยารับประทานมักใช้ SF 1/1,000; ยาทาภายนอกอาจใช้ 1/100–1/1,000; ยาฉีดอาจใช้ 1/10,000) ต้องใช้หน่วยของ TDD และ MBS ให้สอดคล้องกัน (มวลผลิตภัณฑ์) จากนั้นแปลง MACO เป็นเกณฑ์ต่อพื้นที่ผิวโดยหารด้วยพื้นที่ผิวสัมผัสร่วมทั้งหมด และนำไปคำนวณปริมาณที่ยอมรับได้ต่อ swab (เช่น swab 25 cm² จะได้ 625 µg/swab) โดยมักเลือกเกณฑ์ที่เข้มงวดที่สุดระหว่าง dose criterion, 10 ppm criterion และ visually clean ปัจจุบัน PIC/S และ EMA แนะนำให้ใช้ health-based exposure limits (PDE/ADE) เป็นพื้นฐาน ส่วนการ sampling ใช้ swab สำหรับพื้นที่เข้าถึงได้และ rinse สำหรับท่อหรือส่วนที่เข้าถึงยาก ต้องทำ recovery study ด้วย",
+      "choices": [
+        {
+          "label": "A",
+          "text": "2.5 µg/cm²",
+          "is_correct": false,
+          "explanation": "ผิด: 2.5 µg/cm² ได้จากการใช้ safety factor 1/10,000 ซึ่งเข้มงวดเกินกว่าที่โจทย์กำหนด"
+        },
+        {
+          "label": "B",
+          "text": "250 µg/cm²",
+          "is_correct": false,
+          "explanation": "ผิด: 250 µg/cm² ได้จากการใช้ safety factor 1/100"
+        },
+        {
+          "label": "C",
+          "text": "50 µg/cm²",
+          "is_correct": false,
+          "explanation": "ผิด: 50 µg/cm² ได้จากการใช้ขนาดยาสูงสุดต่อวันของ B เป็น 500 mg หรือคำนวณผิดพลาดจากตัวเลขในโจทย์"
+        },
+        {
+          "label": "D",
+          "text": "25 µg/cm²",
+          "is_correct": true,
+          "explanation": "ถูกต้อง: MACO 1,000 mg = 1,000,000 µg ÷ 40,000 cm² = 25 µg/cm²"
+        },
+        {
+          "label": "E",
+          "text": "625 µg/cm²",
+          "is_correct": false,
+          "explanation": "ผิด: 625 µg คือปริมาณที่ยอมรับได้ต่อ swab ขนาด 25 cm² (25 µg/cm² × 25 cm²) ไม่ใช่เกณฑ์ต่อ cm²"
+        }
+      ],
+      "key_takeaway": "MACO = (TDDprev × MBSnext)/(SF × TDDnext); surface limit = MACO/shared area; per swab = limit × swab area; ปัจจุบันเน้น PDE-based",
+      "calculation_steps": [
+        "ขั้นที่ 1: แปลงหน่วย MBS = 100 kg = 100,000,000 mg",
+        "ขั้นที่ 2: MACO = (10 mg × 100,000,000 mg) ÷ (1,000 × 1,000 mg) = 1,000,000,000 ÷ 1,000,000 = 1,000 mg",
+        "ขั้นที่ 3: แปลงหน่วย 1,000 mg = 1,000,000 µg",
+        "ขั้นที่ 4: Surface limit = 1,000,000 µg ÷ 40,000 cm² = 25 µg/cm²",
+        "ขั้นที่ 5 (ประยุกต์): ถ้า swab 25 cm² เกณฑ์ต่อ swab = 25 µg/cm² × 25 cm² = 625 µg"
+      ]
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "ผลวิเคราะห์ assay ยาเม็ดรุ่นหนึ่งได้ 93.1% (ข้อกำหนด 95.0–105.0%) นักวิเคราะห์และหัวหน้าห้องปฏิบัติการได้ทำ Phase I laboratory investigation แล้ว ไม่พบความผิดพลาดที่ระบุได้ (การคำนวณ สารมาตรฐาน system suitability เครื่องมือ และการเตรียมตัวอย่างถูกต้อง) ตามแนวทาง FDA guidance on OOS results ขั้นตอนต่อไปที่เหมาะสมที่สุดคือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ทดสอบซ้ำ 7 ครั้งแล้วรายงานค่าเฉลี่ยที่รวมทุกค่าเพื่อให้ผ่านข้อกำหนด"
+      },
+      {
+        "label": "B",
+        "text": "ขยายเป็น full-scale (Phase II) investigation ที่ครอบคลุมการทบทวนบันทึกการผลิต กระบวนการ และรุ่นอื่นที่อาจเกี่ยวข้อง"
+      },
+      {
+        "label": "C",
+        "text": "ใช้ outlier test ตัดค่า 93.1% ทิ้ง เพราะเป็นค่าเดียวที่ต่ำ"
+      },
+      {
+        "label": "D",
+        "text": "สุ่มตัวอย่างใหม่จากรุ่นเดียวกันแล้วใช้เฉพาะผลใหม่ในการปล่อยผ่าน"
+      },
+      {
+        "label": "E",
+        "text": "ปล่อยผ่านรุ่นผลิต เพราะไม่พบความผิดพลาดในห้องปฏิบัติการ"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "เมื่อ Phase I ไม่พบ assignable laboratory error ผล OOS ถือว่าอาจสะท้อนคุณภาพจริงของรุ่นผลิต จึงต้องขยายการสอบสวนไปยังการผลิต (full-scale investigation) แทนการทดสอบซ้ำจนผ่าน (testing into compliance)",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. ขยายเป็น full-scale (Phase II) investigation ที่ครอบคลุมการทบทวนบันทึกการผลิต กระบวนการ และรุ่นอื่นที่อาจเกี่ยวข้อง — ไม่พบความผิดพลาดใน lab → ขยายเป็น Phase II full-scale investigation",
+      "reason": "FDA Guidance \"Investigating Out-of-Specification (OOS) Test Results for Pharmaceutical Production\" แบ่งการสอบสวนเป็น Phase I: การตรวจสอบในห้องปฏิบัติการโดยนักวิเคราะห์และหัวหน้า เช่น การคำนวณ เครื่องมือ สารมาตรฐาน การเตรียมสารละลาย ถ้าพบความผิดพลาดที่ระบุได้ชัด (assignable cause) จึงจะยกเลิกผลเดิมและทดสอบใหม่ได้ Phase II: ถ้าไม่พบ assignable laboratory error ต้องขยายการสอบสวนไปยังฝ่ายผลิต ได้แก่ ทบทวน batch record, deviation, การเปลี่ยนแปลงวัตถุดิบ เครื่องจักร และประเมินรุ่นอื่นที่อาจได้รับผลกระทบ อาจรวมการทดสอบซ้ำ (retest) ภายใต้ protocol ที่กำหนดล่วงหน้าโดยนักวิเคราะห์อีกคน จำนวนครั้งต้องกำหนดไว้ก่อนตามหลักสถิติ การ resample ทำได้เมื่อมีหลักฐานว่าการสุ่มตัวอย่างเดิมไม่เป็นตัวแทน สิ่งที่ห้ามทำคือ testing into compliance (ทดสอบซ้ำไปเรื่อย ๆ จนได้ค่าผ่าน), การเฉลี่ยค่า OOS กับค่าผ่านเพื่อซ่อนความแปรปรวน และการใช้ outlier test กับ chemical assay ที่มีความแม่นยำสูง เมื่อยืนยันว่าเป็น OOS จริง รุ่นนั้นต้องถูกปฏิเสธ (reject) และเปิด CAPA",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ทดสอบซ้ำ 7 ครั้งแล้วรายงานค่าเฉลี่ยที่รวมทุกค่าเพื่อให้ผ่านข้อกำหนด",
+          "is_correct": false,
+          "explanation": "ผิด: การทดสอบซ้ำหลายครั้งแล้วเฉลี่ยเพื่อให้ผ่านคือ testing into compliance ซึ่ง FDA ห้าม และการเฉลี่ยจะซ่อนค่า OOS"
+        },
+        {
+          "label": "B",
+          "text": "ขยายเป็น full-scale (Phase II) investigation ที่ครอบคลุมการทบทวนบันทึกการผลิต กระบวนการ และรุ่นอื่นที่อาจเกี่ยวข้อง",
+          "is_correct": true,
+          "explanation": "ถูกต้อง: เมื่อ Phase I ไม่พบ assignable cause ต้องขยายเป็น full-scale investigation ที่รวมฝ่ายผลิต"
+        },
+        {
+          "label": "C",
+          "text": "ใช้ outlier test ตัดค่า 93.1% ทิ้ง เพราะเป็นค่าเดียวที่ต่ำ",
+          "is_correct": false,
+          "explanation": "ผิด: FDA ระบุว่า outlier test ไม่เหมาะกับ chemical assay ที่มีความแม่นยำสูงและไม่ใช้ตัดผล OOS ทิ้ง"
+        },
+        {
+          "label": "D",
+          "text": "สุ่มตัวอย่างใหม่จากรุ่นเดียวกันแล้วใช้เฉพาะผลใหม่ในการปล่อยผ่าน",
+          "is_correct": false,
+          "explanation": "ผิด: การ resample ต้องมีเหตุผลว่าการสุ่มเดิมไม่เป็นตัวแทน และไม่สามารถใช้เฉพาะผลใหม่แทนผล OOS เดิมโดยไม่สอบสวน"
+        },
+        {
+          "label": "E",
+          "text": "ปล่อยผ่านรุ่นผลิต เพราะไม่พบความผิดพลาดในห้องปฏิบัติการ",
+          "is_correct": false,
+          "explanation": "ผิด: การไม่พบความผิดพลาดในห้องปฏิบัติการกลับเพิ่มน้ำหนักว่าผล OOS สะท้อนคุณภาพจริงของรุ่น จึงปล่อยผ่านไม่ได้"
+        }
+      ],
+      "key_takeaway": "OOS: Phase I (lab) → ไม่พบ assignable cause → Phase II (production); ห้าม testing into compliance, ห้ามเฉลี่ยซ่อน OOS, ห้าม outlier test กับ chemical assay"
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "ระหว่างตอกยาเม็ด พบว่าน้ำหนักเม็ดยาแปรปรวนเกินเกณฑ์ (deviation) การสอบสวนหาสาเหตุราก (root cause analysis) พบว่าเกิดจากสาก (punch) ล่างสึกหรอ ทีมงานจึงดำเนินการหลายอย่าง ข้อใดเป็น preventive action ตามแนวคิด CAPA",
+    "choices": [
+      {
+        "label": "A",
+        "text": "กักกันและคัดแยกเม็ดยาที่ผลิตในช่วงที่มีปัญหา"
+      },
+      {
+        "label": "B",
+        "text": "เปลี่ยนสากชุดที่สึกหรอบนเครื่องที่เกิดปัญหาทันที"
+      },
+      {
+        "label": "C",
+        "text": "ทำลายเม็ดยาที่น้ำหนักไม่ผ่านเกณฑ์และบันทึกใน batch record"
+      },
+      {
+        "label": "D",
+        "text": "จัดทำโปรแกรมตรวจวัดและบันทึกการสึกหรอของสากตามรอบเวลาสำหรับเครื่องตอกทุกเครื่องในโรงงาน แม้เครื่องอื่นยังไม่เคยเกิดปัญหา"
+      },
+      {
+        "label": "E",
+        "text": "ปิด deviation โดยไม่ต้องติดตามประสิทธิผล"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "Preventive action คือการขจัดสาเหตุของปัญหาที่อาจเกิดขึ้น (potential nonconformity) ก่อนที่จะเกิด การขยายโปรแกรมตรวจสากไปยังเครื่องอื่นที่ยังไม่เกิดปัญหาจึงเป็น preventive action",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. จัดทำโปรแกรมตรวจวัดและบันทึกการสึกหรอของสากตามรอบเวลาสำหรับเครื่องตอกทุกเครื่องในโรงงาน แม้เครื่องอื่นยังไม่เคยเกิดปัญหา — การป้องกันปัญหาเดียวกันในเครื่องอื่นที่ยังไม่เกิดปัญหา = preventive action",
+      "reason": "ระบบ CAPA (Corrective and Preventive Action) เป็นองค์ประกอบหลักของ pharmaceutical quality system ตาม ICH Q10 และ PIC/S GMP ควรแยกความแตกต่างของแต่ละการกระทำ (1) Correction: การแก้ไขปัญหาเฉพาะหน้าที่เกิดขึ้นแล้ว เช่น กักกัน คัดแยก ทำลาย หรือ rework ผลิตภัณฑ์ (2) Corrective action: การขจัดสาเหตุรากของปัญหาที่เกิดขึ้นแล้วเพื่อไม่ให้เกิดซ้ำ เช่น เปลี่ยนสากที่สึก และแก้ไขวิธีปฏิบัติของเครื่องนั้น (3) Preventive action: การขจัดสาเหตุของปัญหาที่อาจเกิดขึ้นในอนาคต เช่น ใช้ข้อมูลจากเหตุการณ์นี้ไปจัดทำโปรแกรมตรวจสากเชิงป้องกัน หรือวิเคราะห์ trend เพื่อเตือนก่อนเกิดปัญหา ขั้นตอนของ CAPA ได้แก่ บันทึก deviation → ประเมินผลกระทบและความเสี่ยง → root cause analysis (เช่น 5-Why, fishbone/Ishikawa) → กำหนด CAPA และผู้รับผิดชอบ → ดำเนินการ → ตรวจสอบประสิทธิผล (effectiveness check) → ปิดเรื่อง โดย deviation ที่กระทบคุณภาพต้องได้รับการพิจารณาก่อนตัดสินปล่อยผ่านรุ่นผลิตนั้น",
+      "choices": [
+        {
+          "label": "A",
+          "text": "กักกันและคัดแยกเม็ดยาที่ผลิตในช่วงที่มีปัญหา",
+          "is_correct": false,
+          "explanation": "ผิด: การกักกันและคัดแยกเป็น correction (การจัดการผลิตภัณฑ์ที่ได้รับผลกระทบ) ไม่ได้ขจัดสาเหตุ"
+        },
+        {
+          "label": "B",
+          "text": "เปลี่ยนสากชุดที่สึกหรอบนเครื่องที่เกิดปัญหาทันที",
+          "is_correct": false,
+          "explanation": "ผิด: การเปลี่ยนสากที่สึกบนเครื่องที่เกิดปัญหาคือ corrective action (ขจัดสาเหตุของปัญหาที่เกิดแล้ว)"
+        },
+        {
+          "label": "C",
+          "text": "ทำลายเม็ดยาที่น้ำหนักไม่ผ่านเกณฑ์และบันทึกใน batch record",
+          "is_correct": false,
+          "explanation": "ผิด: การทำลายผลิตภัณฑ์ที่ไม่ผ่านเกณฑ์เป็น correction"
+        },
+        {
+          "label": "D",
+          "text": "จัดทำโปรแกรมตรวจวัดและบันทึกการสึกหรอของสากตามรอบเวลาสำหรับเครื่องตอกทุกเครื่องในโรงงาน แม้เครื่องอื่นยังไม่เคยเกิดปัญหา",
+          "is_correct": true,
+          "explanation": "ถูกต้อง: การป้องกันปัญหาเดียวกันในเครื่องที่ยังไม่เกิดปัญหาเป็น preventive action"
+        },
+        {
+          "label": "E",
+          "text": "ปิด deviation โดยไม่ต้องติดตามประสิทธิผล",
+          "is_correct": false,
+          "explanation": "ผิด: ระบบ CAPA ต้องมีการตรวจสอบประสิทธิผลก่อนปิดเรื่อง การปิดโดยไม่ติดตามขัดกับหลัก ICH Q10"
+        }
+      ],
+      "key_takeaway": "Correction = แก้ผลิตภัณฑ์ที่เสีย; Corrective = ขจัดสาเหตุรากของปัญหาที่เกิดแล้ว; Preventive = ขจัดสาเหตุของปัญหาที่อาจเกิด; ต้องมี effectiveness check"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "คลังวัตถุดิบได้รับ lactose monohydrate จากผู้ขายที่ผ่านการรับรอง (approved supplier) จำนวน 64 ถุง ในรุ่นผลิตเดียวกัน ตามหลักการสุ่มตัวอย่างแบบ √n + 1 จะต้องสุ่มตัวอย่างอย่างน้อยกี่ถุง",
+    "choices": [
+      {
+        "label": "A",
+        "text": "8 ถุง"
+      },
+      {
+        "label": "B",
+        "text": "9 ถุง"
+      },
+      {
+        "label": "C",
+        "text": "12 ถุง"
+      },
+      {
+        "label": "D",
+        "text": "33 ถุง"
+      },
+      {
+        "label": "E",
+        "text": "64 ถุง"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "จำนวนภาชนะที่สุ่ม = √64 + 1 = 8 + 1 = 9 ถุง",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. 9 ถุง — √64 + 1 = 9 ถุง",
+      "reason": "หลัก √n + 1 เป็นแผนการสุ่มตัวอย่างวัตถุดิบที่ใช้กันแพร่หลาย (อ้างอิงใน WHO guidelines for sampling of pharmaceutical products) ใช้เมื่อวัตถุดิบมาจากผู้ขายที่ผ่านการรับรอง มีประวัติคุณภาพดี และภาชนะมาจากรุ่นเดียวกันและมีความสม่ำเสมอ โดย n คือจำนวนภาชนะทั้งหมด ถ้าผลลัพธ์ไม่เป็นจำนวนเต็มให้ปัดขึ้น ตัวอย่างจากแต่ละภาชนะมักใช้ทำ identification test ทุกภาชนะ (หรือรวมเป็น composite sample สำหรับการทดสอบเต็มรูปแบบตามข้อกำหนด) PIC/S GMP Annex 8 กำหนดว่าการทดสอบเอกลักษณ์ควรทำกับตัวอย่างจากทุกภาชนะ เว้นแต่จะมีขั้นตอนที่ผ่านการ validate แล้วที่ทำให้มั่นใจว่าทุกภาชนะมีฉลากถูกต้อง แผนอื่นใน WHO ได้แก่ p-plan (0.4√n) สำหรับวัตถุดิบที่สม่ำเสมอและใช้ทดสอบลักษณะทั่วไป และ r-plan (1.5√n) สำหรับวัตถุดิบที่อาจไม่สม่ำเสมอหรือผู้ขายที่ยังไม่ผ่านการรับรอง",
+      "choices": [
+        {
+          "label": "A",
+          "text": "8 ถุง",
+          "is_correct": false,
+          "explanation": "ผิด: 8 คือ √64 โดยลืมบวก 1"
+        },
+        {
+          "label": "B",
+          "text": "9 ถุง",
+          "is_correct": true,
+          "explanation": "ถูกต้อง: √64 + 1 = 9 ถุง"
+        },
+        {
+          "label": "C",
+          "text": "12 ถุง",
+          "is_correct": false,
+          "explanation": "ผิด: 12 ถุงมาจาก r-plan (1.5√n = 1.5 × 8 = 12) ซึ่งใช้กับวัตถุดิบที่อาจไม่สม่ำเสมอหรือผู้ขายที่ยังไม่ผ่านการรับรอง ไม่ใช่สูตร √n + 1"
+        },
+        {
+          "label": "D",
+          "text": "33 ถุง",
+          "is_correct": false,
+          "explanation": "ผิด: 33 ได้จากการคิด n/2 + 1 ซึ่งไม่ใช่สูตร √n + 1"
+        },
+        {
+          "label": "E",
+          "text": "64 ถุง",
+          "is_correct": false,
+          "explanation": "ผิด: การสุ่มทุกภาชนะใช้กับวัตถุดิบจากผู้ขายที่ไม่ผ่านการรับรอง หรือกรณีเฉพาะ (เช่น identification test ทุกภาชนะ) ไม่ใช่ผลจากสูตร √n + 1"
+        }
+      ],
+      "key_takeaway": "Sampling (WHO): √n + 1 (ทั่วไป, ปัดขึ้น); p-plan = 0.4√n; r-plan = 1.5√n",
+      "calculation_steps": [
+        "ขั้นที่ 1: n = 64 ถุง",
+        "ขั้นที่ 2: √n = √64 = 8",
+        "ขั้นที่ 3: จำนวนที่ต้องสุ่ม = 8 + 1 = 9 ถุง"
+      ]
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "ต้องการเตรียมขี้ผึ้ง salicylic acid 10% w/w จำนวน 400 g โดยผสมขี้ผึ้ง salicylic acid 25% w/w กับขี้ผึ้ง salicylic acid 5% w/w ต้องใช้ขี้ผึ้ง 25% w/w กี่กรัม",
+    "choices": [
+      {
+        "label": "A",
+        "text": "100 g"
+      },
+      {
+        "label": "B",
+        "text": "300 g"
+      },
+      {
+        "label": "C",
+        "text": "160 g"
+      },
+      {
+        "label": "D",
+        "text": "240 g"
+      },
+      {
+        "label": "E",
+        "text": "133.3 g"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Alligation: ส่วนของ 25% = 10 − 5 = 5 ส่วน, ส่วนของ 5% = 25 − 10 = 15 ส่วน รวม 20 ส่วน; 25% ที่ต้องใช้ = 400 × 5/20 = 100 g",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. 100 g — alligation 5 : 15 = 1 : 3 จึงได้ 25% w/w = 100 g",
+      "reason": "Alligation alternate ใช้หาสัดส่วนของสองความเข้มข้นที่นำมาผสมเพื่อให้ได้ความเข้มข้นที่ต้องการ โดยเขียนความเข้มข้นสูง (25%) และต่ำ (5%) ไว้ด้านซ้าย ความเข้มข้นที่ต้องการ (10%) อยู่กลาง แล้วลบทแยง ส่วนของความเข้มข้นสูง = ความเข้มข้นที่ต้องการ − ความเข้มข้นต่ำ = 10 − 5 = 5 ส่วน ส่วนของความเข้มข้นต่ำ = ความเข้มข้นสูง − ความเข้มข้นที่ต้องการ = 25 − 10 = 15 ส่วน อัตราส่วนจึงเป็น 5 : 15 = 1 : 3 รวม 4 ส่วน (หรือ 20 ส่วน) เมื่อต้องการ 400 g ใช้ 25% = 400 × 1/4 = 100 g และ 5% = 300 g ความเข้มข้นที่ต้องการต้องอยู่ระหว่างสองความเข้มข้นที่นำมาผสมเสมอ สำหรับ % w/w สามารถบวกมวลได้โดยตรง ส่วน % v/v ของของเหลวบางชนิด (เช่น เอทานอลกับน้ำ) อาจเกิด volume contraction ทำให้ต้องปรับปริมาตรสุดท้าย (q.s.) ตรวจสอบ: (100 × 0.25) + (300 × 0.05) = 25 + 15 = 40 g ใน 400 g = 10% ถูกต้อง",
+      "choices": [
+        {
+          "label": "A",
+          "text": "100 g",
+          "is_correct": true,
+          "explanation": "ถูกต้อง: 400 × 5/20 = 100 g ของ 25% ผสมกับ 300 g ของ 5%"
+        },
+        {
+          "label": "B",
+          "text": "300 g",
+          "is_correct": false,
+          "explanation": "ผิด: 300 g คือปริมาณของขี้ผึ้ง 5% ไม่ใช่ 25% (สลับส่วนกัน)"
+        },
+        {
+          "label": "C",
+          "text": "160 g",
+          "is_correct": false,
+          "explanation": "ผิด: 160 g ได้จากการคิด 400 × 10/25 ซึ่งเป็นการเจือจาง 25% ด้วยฐานที่ไม่มียา (0%) ไม่ใช่ผสมกับ 5%"
+        },
+        {
+          "label": "D",
+          "text": "240 g",
+          "is_correct": false,
+          "explanation": "ผิด: 240 g ได้จากการคิด 400 × 15/25 คือใช้ตัวหารเป็นความเข้มข้นสูงแทนผลรวมของส่วน (20 ส่วน)"
+        },
+        {
+          "label": "E",
+          "text": "133.3 g",
+          "is_correct": false,
+          "explanation": "ผิด: 133.3 g ได้จากการคิดสัดส่วนผิด เช่น 400 × 10/30"
+        }
+      ],
+      "key_takeaway": "Alligation: ส่วนของสูง = (ต้องการ − ต่ำ), ส่วนของต่ำ = (สูง − ต้องการ); ตรวจด้วย mass balance เสมอ",
+      "calculation_steps": [
+        "ขั้นที่ 1: ส่วนของ 25% w/w = 10 − 5 = 5 ส่วน",
+        "ขั้นที่ 2: ส่วนของ 5% w/w = 25 − 10 = 15 ส่วน; รวม = 20 ส่วน",
+        "ขั้นที่ 3: ขี้ผึ้ง 25% = 400 g × 5/20 = 100 g; ขี้ผึ้ง 5% = 400 g × 15/20 = 300 g",
+        "ตรวจสอบ: salicylic acid = 100 × 0.25 + 300 × 0.05 = 25 + 15 = 40 g; 40/400 × 100 = 10% w/w"
+      ]
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ต้องการเตรียมสารละลาย benzalkonium chloride 1:2,500 (w/v) จำนวน 500 mL สำหรับใช้ภายนอก จาก stock solution benzalkonium chloride 10% w/v ต้องใช้ stock solution กี่มิลลิลิตร",
+    "choices": [
+      {
+        "label": "A",
+        "text": "20 mL"
+      },
+      {
+        "label": "B",
+        "text": "0.2 mL"
+      },
+      {
+        "label": "C",
+        "text": "5 mL"
+      },
+      {
+        "label": "D",
+        "text": "4 mL"
+      },
+      {
+        "label": "E",
+        "text": "2 mL"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "ปริมาณ BAK ที่ต้องการ = 500 mL × (1 g/2,500 mL) = 0.2 g; stock 10% w/v = 0.1 g/mL จึงใช้ 0.2 ÷ 0.1 = 2 mL",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. 2 mL — BAK ที่ต้องการ 0.2 g ÷ 0.1 g/mL = 2 mL",
+      "reason": "Ratio strength 1:2,500 (w/v) หมายถึงตัวยา 1 g ในสารละลาย 2,500 mL ซึ่งเท่ากับ 0.04% w/v (1/2,500 × 100) วิธีคำนวณมี 2 แบบ แบบแรกหามวลตัวยาที่ต้องการก่อน 500 mL × 1/2,500 = 0.2 g แล้วหารด้วยความเข้มข้นของ stock (10% w/v = 10 g/100 mL = 0.1 g/mL) ได้ 2 mL แบบที่สองใช้ C1V1 = C2V2 โดยแปลงเป็นหน่วยเดียวกัน 10% × V1 = 0.04% × 500 mL จะได้ V1 = 2 mL จากนั้นเติมน้ำบริสุทธิ์จนครบ 500 mL (q.s.) ไม่ใช่เติมน้ำ 500 mL ข้อควรระวังคือการแปลง ratio strength ซึ่งตัวเลขยิ่งมากความเข้มข้นยิ่งต่ำ และ benzalkonium chloride เป็น cationic surfactant ที่ไม่เข้ากันกับ anionic surfactant (เช่น สบู่) จึงต้องล้างสบู่ออกก่อนใช้ทาผิว",
+      "choices": [
+        {
+          "label": "A",
+          "text": "20 mL",
+          "is_correct": false,
+          "explanation": "ผิด: 20 mL เกิดจากการเลื่อนจุดทศนิยมผิด (เช่น คิด stock เป็น 1% w/v) จะได้สารละลายเข้มข้นกว่าที่ต้องการ 10 เท่า"
+        },
+        {
+          "label": "B",
+          "text": "0.2 mL",
+          "is_correct": false,
+          "explanation": "ผิด: 0.2 mL เกิดจากการนำมวลตัวยา 0.2 g มาใช้เป็นปริมาตรโดยไม่หารด้วยความเข้มข้นของ stock"
+        },
+        {
+          "label": "C",
+          "text": "5 mL",
+          "is_correct": false,
+          "explanation": "ผิด: 5 mL ได้จากการคิด 500/100 โดยไม่ใช้ ratio strength ที่กำหนด"
+        },
+        {
+          "label": "D",
+          "text": "4 mL",
+          "is_correct": false,
+          "explanation": "ผิด: 4 mL เกิดจากการคิดความเข้มข้นเป้าหมายผิดเป็น 1:1,250 (0.08%)"
+        },
+        {
+          "label": "E",
+          "text": "2 mL",
+          "is_correct": true,
+          "explanation": "ถูกต้อง: 0.2 g ÷ 0.1 g/mL = 2 mL แล้วเติมน้ำจนครบ 500 mL"
+        }
+      ],
+      "key_takeaway": "1:x (w/v) = 1 g ใน x mL = (100/x)% w/v; 1:2,500 = 0.04%; ใช้ C1V1 = C2V2 เมื่อหน่วยตรงกัน",
+      "calculation_steps": [
+        "ขั้นที่ 1: แปลง ratio strength 1:2,500 w/v = 1 g/2,500 mL = 0.04% w/v",
+        "ขั้นที่ 2: มวล BAK ที่ต้องการ = 500 mL × 1 g/2,500 mL = 0.2 g",
+        "ขั้นที่ 3: stock 10% w/v = 10 g/100 mL = 0.1 g/mL",
+        "ขั้นที่ 4: ปริมาตร stock = 0.2 g ÷ 0.1 g/mL = 2 mL",
+        "ตรวจสอบ: C1V1 = C2V2 → 10% × V1 = 0.04% × 500 mL → V1 = 20/10 = 2 mL แล้วเติมน้ำจนครบ 500 mL"
+      ]
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "แพทย์สั่ง calcium chloride injection 10% w/v ขนาด 10 mL ทางหลอดเลือดดำ โดยผลิตภัณฑ์อยู่ในรูป calcium chloride dihydrate (CaCl2·2H2O, MW 147) ผู้ป่วยจะได้รับ Ca²⁺ กี่ mEq (Ca = 40, Cl = 35.5)",
+    "choices": [
+      {
+        "label": "A",
+        "text": "6.8 mEq"
+      },
+      {
+        "label": "B",
+        "text": "18.0 mEq"
+      },
+      {
+        "label": "C",
+        "text": "13.6 mEq"
+      },
+      {
+        "label": "D",
+        "text": "9.0 mEq"
+      },
+      {
+        "label": "E",
+        "text": "27.2 mEq"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "10 mL × 10% w/v = 1 g CaCl2·2H2O = 1,000 mg ÷ 147 = 6.80 mmol; Ca²⁺ มี valence 2 จึงได้ 6.80 × 2 = 13.6 mEq",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. 13.6 mEq — 1 g ÷ 147 × 2 = 13.6 mEq Ca²⁺",
+      "reason": "การคำนวณ mEq ใช้สูตร mEq = (mg × valence) ÷ MW โดยต้องใช้ MW ของรูปเกลือที่อยู่ในผลิตภัณฑ์จริง รวมน้ำผลึก (water of hydration) ด้วย CaCl2·2H2O มี MW = 40 + 2(35.5) + 2(18) = 147 สารละลาย 10% w/v มี 10 g ใน 100 mL ดังนั้น 10 mL มีเกลือ 1 g = 1,000 mg คิดเป็น 1,000 ÷ 147 = 6.80 mmol ของ CaCl2·2H2O ซึ่งให้ Ca²⁺ 6.80 mmol (หรือ 272 mg ของ Ca ธาตุ) เนื่องจาก Ca²⁺ มีประจุ 2 จึงเท่ากับ 13.6 mEq และให้ Cl⁻ 13.6 mEq ด้วย (2 × 6.80 mmol × 1) ในทางคลินิก calcium chloride 10% ให้ Ca ธาตุประมาณ 27.2 mg/mL หรือ 1.36 mEq/mL ซึ่งมากกว่า calcium gluconate 10% ประมาณ 3 เท่า (ประมาณ 0.465 mEq/mL) จึงต้องระวังการสับสนระหว่างสองผลิตภัณฑ์ และ CaCl2 ระคายเคืองหลอดเลือดมาก ควรให้ทางหลอดเลือดดำใหญ่ ห้ามให้เข้ากล้ามหรือใต้ผิวหนัง",
+      "choices": [
+        {
+          "label": "A",
+          "text": "6.8 mEq",
+          "is_correct": false,
+          "explanation": "ผิด: 6.8 คือ mmol ไม่ใช่ mEq (ลืมคูณ valence 2 ของ Ca²⁺)"
+        },
+        {
+          "label": "B",
+          "text": "18.0 mEq",
+          "is_correct": false,
+          "explanation": "ผิด: 18.0 mEq ได้จากการใช้ MW ของ CaCl2 anhydrous (111) แทนรูป dihydrate (1,000/111 × 2 = 18.0) ซึ่งไม่ถูกเพราะผลิตภัณฑ์เป็น dihydrate"
+        },
+        {
+          "label": "C",
+          "text": "13.6 mEq",
+          "is_correct": true,
+          "explanation": "ถูกต้อง: 1,000 mg ÷ 147 mg/mmol × 2 mEq/mmol = 13.6 mEq"
+        },
+        {
+          "label": "D",
+          "text": "9.0 mEq",
+          "is_correct": false,
+          "explanation": "ผิด: 9.0 คือ mmol ที่คำนวณด้วย MW anhydrous และลืมคูณ valence"
+        },
+        {
+          "label": "E",
+          "text": "27.2 mEq",
+          "is_correct": false,
+          "explanation": "ผิด: 27.2 mEq ได้จากการนับประจุซ้ำ (เช่น นับทั้ง Ca²⁺ และ Cl⁻ รวมกัน) หรือสับสนกับ 27.2 mg ของ Ca ธาตุต่อ mL"
+        }
+      ],
+      "key_takeaway": "mEq = mg × valence ÷ MW (ใช้ MW รวมน้ำผลึก); CaCl2·2H2O 10% = 1.36 mEq Ca²⁺/mL ≈ 3 เท่าของ calcium gluconate 10%",
+      "calculation_steps": [
+        "ขั้นที่ 1: MW CaCl2·2H2O = 40 + 2(35.5) + 2(18) = 147 g/mol",
+        "ขั้นที่ 2: มวลเกลือ = 10% w/v × 10 mL = 10 g/100 mL × 10 mL = 1 g = 1,000 mg",
+        "ขั้นที่ 3: mmol = 1,000 mg ÷ 147 mg/mmol = 6.80 mmol (ได้ Ca²⁺ 6.80 mmol)",
+        "ขั้นที่ 4: mEq Ca²⁺ = 6.80 mmol × 2 = 13.6 mEq"
+      ]
+    },
+    "difficulty": "hard"
+  }
+]

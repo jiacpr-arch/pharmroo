@@ -40,7 +40,7 @@ function validate(block, q, i) {
     });
     if (d.calculation_steps !== undefined && !Array.isArray(d.calculation_steps)) errs.push("calculation_steps");
   }
-  if (/รูป|ภาพ(?!รวม)|โครงสร้างที่แสดง|ตารางด้านล่าง/.test(q.scenario)) errs.push("refers to a figure/table");
+  if (/รูปที่|(?<!คุณ)ภาพที่|ดังรูป|ดังภาพ|ในภาพ|โครงสร้างที่แสดง|ตารางด้านล่าง|ตารางต่อไปนี้/.test(q.scenario)) errs.push("refers to a figure/table");
   return errs.map((e) => `${where}: ${e}`);
 }
 
@@ -77,11 +77,17 @@ for (const block of BLOCKS) {
       `'pharmaceutics-cc1:${block}:${i + 1}'`, `'active'`,
     ].join(", ")})`;
   });
-  const sql =
-    `delete from mcq_questions where ai_notes like 'pharmaceutics-cc1:${block}:%';\n` +
-    `insert into mcq_questions (subject_id, exam_type, exam_day, question_number, scenario, choices, correct_answer, explanation, detailed_explanation, difficulty, is_ai_enhanced, ai_notes, status) values\n` +
-    values.join(",\n") + ";\n";
-  fs.writeFileSync(path.join(outDir, `${block}.sql`), sql);
+  // Chunks of 10 rows keep each statement small enough for the Supabase SQL tool.
+  let sql = "";
+  for (let k = 0; k < values.length; k += 10) {
+    const tags = values.slice(k, k + 10).map((_, j) => `'pharmaceutics-cc1:${block}:${k + j + 1}'`);
+    const chunk =
+      `delete from mcq_questions where ai_notes in (${tags.join(", ")});\n` +
+      `insert into mcq_questions (subject_id, exam_type, exam_day, question_number, scenario, choices, correct_answer, explanation, detailed_explanation, difficulty, is_ai_enhanced, ai_notes, status) values\n` +
+      values.slice(k, k + 10).join(",\n") + ";\n";
+    fs.writeFileSync(path.join(outDir, `${block}-${k / 10 + 1}.sql`), chunk);
+    sql += chunk;
+  }
 
   const ans = Object.fromEntries(LABELS.map((l) => [l, qs.filter((q) => q.correct_answer === l).length]));
   const diff = ["easy", "medium", "hard"].map((d) => qs.filter((q) => q.difficulty === d).length).join("/");

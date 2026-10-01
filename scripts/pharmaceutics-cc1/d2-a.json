@@ -1134,67 +1134,67 @@
     "difficulty": "medium"
   },
   {
-    "scenario": "Amoxicillin for oral suspension จำหน่ายในรูปผงแห้ง (dry powder for reconstitution) ซึ่งเภสัชกรต้องเติมน้ำก่อนส่งมอบให้ผู้ป่วย และกำหนดให้ใช้ภายใน 14 วันหลังผสม เหตุผลหลักของการผลิตในรูปแบบนี้คือข้อใด",
+    "scenario": "Cefalexin for oral suspension 250 mg/5 mL (ผงแห้งสำหรับผสมน้ำ) มีส่วนประกอบดังนี้: Cefalexin monohydrate, Sucrose, Xanthan gum, Sodium citrate, Colloidal silicon dioxide, Sodium benzoate, Strawberry flavor และ Erythrosine (สี) สารใดทำหน้าที่หลักในการชะลอการตกตะกอนของอนุภาคยาหลังผสมน้ำแล้ว",
     "choices": [
       {
         "label": "A",
-        "text": "Amoxicillin ละลายน้ำได้ดีเกินไปจนไม่สามารถทำเป็นยาแขวนตะกอนได้"
+        "text": "Sucrose"
       },
       {
         "label": "B",
-        "text": "เพื่อลดขนาดบรรจุภัณฑ์และน้ำหนักในการขนส่งเป็นหลัก"
+        "text": "Sodium citrate"
       },
       {
         "label": "C",
-        "text": "Amoxicillin ไม่คงตัวทางเคมีเมื่ออยู่ในน้ำเป็นเวลานาน (เกิด hydrolysis ของ β-lactam ring)"
+        "text": "Xanthan gum"
       },
       {
         "label": "D",
-        "text": "ป้องกันไม่ให้อนุภาคตกตะกอนในระหว่างเก็บรักษา"
+        "text": "Colloidal silicon dioxide"
       },
       {
         "label": "E",
-        "text": "เพื่อกลบรสขมของยาให้ดีขึ้น"
+        "text": "Sodium benzoate"
       }
     ],
     "correct_answer": "C",
-    "explanation": "Amoxicillin มี β-lactam ring ที่ถูก hydrolyze ได้ในน้ำ จึงเก็บในรูปผงแห้งเพื่อให้มีอายุการเก็บ (shelf-life) ยาว และกำหนด beyond-use date สั้นหลังผสมน้ำ",
+    "explanation": "Xanthan gum เป็น suspending agent ชนิด anionic polysaccharide ที่เพิ่มความหนืดและมี yield value/pseudoplastic flow ทำให้อนุภาคตกตะกอนช้าลงเมื่อตั้งทิ้งไว้ และยังเทได้ง่ายเมื่อเขย่า",
     "detailed_explanation": {
-      "summary": "คำตอบที่ถูกต้อง: C. Amoxicillin ไม่คงตัวทางเคมีเมื่ออยู่ในน้ำเป็นเวลานาน (เกิด hydrolysis ของ β-lactam ring) — ทำเป็นผงแห้งเพราะยาไม่คงตัวทางเคมีในน้ำ (β-lactam hydrolysis) เมื่อผสมแล้วจึงมีอายุใช้ได้สั้น",
-      "reason": "Dry powder for oral suspension (reconstitutable suspension) ใช้กับยาที่ไม่คงตัวทางเคมีในตัวกลางที่เป็นน้ำ โดยเฉพาะ β-lactam antibiotics เช่น amoxicillin, amoxicillin–clavulanate, cefalexin เพราะ β-lactam ring ถูก hydrolyze ได้ง่ายในน้ำ ผงแห้งจึงมีอายุการเก็บได้นานหลายปี ส่วนหลังผสมน้ำจะเก็บได้ช่วงสั้น amoxicillin 14 วัน (เก็บในตู้เย็นจะดีกว่า) ส่วน amoxicillin–clavulanate ใช้ภายใน 7 วันและต้องเก็บในตู้เย็นเพราะ clavulanate ไม่คงตัว ผงประกอบด้วยตัวยา suspending agent (เช่น xanthan gum, MCC–CMC) sweetener (sucrose, ซึ่งอาจเป็นส่วนใหญ่ของผง) buffer flavor preservative และ anticaking/glidant ผงต้องกระจายตัวเร็วและสม่ำเสมอเมื่อเติมน้ำ ขั้นตอนการผสม: เคาะขวดให้ผงร่วน เติมน้ำประมาณครึ่งหนึ่ง เขย่าแรง แล้วเติมน้ำส่วนที่เหลือจนถึงขีดและเขย่าอีกครั้ง ต้องติดฉลาก \"เขย่าก่อนใช้\" และวันหมดอายุหลังผสม",
+      "summary": "คำตอบที่ถูกต้อง: C. Xanthan gum — suspending agent ที่เพิ่มความหนืดของตัวกลาง ชะลอการตกตะกอนตาม Stokes' law",
+      "reason": "ตาม Stokes' law อัตราการตกตะกอน v = d²(ρs − ρ0)g / 18η แปรผกผันกับความหนืดของตัวกลาง (η) suspending agent จึงเป็นสารหลักที่ใช้ชะลอการตกตะกอนในยาแขวนตะกอน Xanthan gum เป็น high-molecular-weight anionic polysaccharide จากการหมักของ Xanthomonas campestris ใช้ที่ความเข้มข้นประมาณ 0.1–0.5% ให้สารละลายที่มีความหนืดสูงที่อัตราเฉือนต่ำ และมีพฤติกรรม pseudoplastic (shear-thinning) พร้อม yield value เล็กน้อย เมื่อตั้งทิ้งไว้ ความหนืดสูงจะพยุงอนุภาคไว้ แต่เมื่อเขย่าหรือเท ความหนืดลดลงทำให้เทและตวงได้ง่าย นอกจากนี้ xanthan gum ทนต่อ pH และอุณหภูมิในช่วงกว้าง และเข้ากันได้กับเกลือ จึงเหมาะกับ dry powder for reconstitution ที่ต้องกระจายตัวเร็วเมื่อเติมน้ำ สารอื่นในตำรับมีหน้าที่ต่างกัน: sucrose เป็นสารให้ความหวานและเพิ่มปริมาณ, sodium citrate เป็น buffer ปรับ pH ให้ยาคงตัวที่สุดหลังผสม, colloidal silicon dioxide เป็น glidant/anticaking ของผงแห้ง (ช่วยการไหลขณะบรรจุและป้องกันการจับเป็นก้อน), sodium benzoate เป็นสารกันเสียสำหรับช่วงใช้ยาหลังผสม (ได้ผลดีที่ pH ต่ำกว่า ~4.5–5 เพราะรูป unionized benzoic acid เป็นรูปที่ออกฤทธิ์)",
       "choices": [
         {
           "label": "A",
-          "text": "Amoxicillin ละลายน้ำได้ดีเกินไปจนไม่สามารถทำเป็นยาแขวนตะกอนได้",
+          "text": "Sucrose",
           "is_correct": false,
-          "explanation": "Amoxicillin trihydrate ละลายน้ำได้น้อย (ประมาณ 1 ส่วนในน้ำ 370 ส่วน หรือ ~3 mg/mL) และหลังผสมยังเป็นยาแขวนตะกอน การละลายไม่ใช่เหตุผลของรูปแบบผงแห้ง"
+          "explanation": "ผิด — Sucrose ทำหน้าที่ให้ความหวาน กลบรส และเป็น diluent ของผงแห้ง เมื่อผสมน้ำจะเพิ่มความหนืดได้เพียงเล็กน้อยที่ความเข้มข้นในตำรับ ไม่ใช่สารหลักในการพยุงอนุภาค"
         },
         {
           "label": "B",
-          "text": "เพื่อลดขนาดบรรจุภัณฑ์และน้ำหนักในการขนส่งเป็นหลัก",
+          "text": "Sodium citrate",
           "is_correct": false,
-          "explanation": "การลดน้ำหนักขนส่งเป็นผลพลอยได้ แต่ไม่ใช่เหตุผลหลัก เหตุผลหลักคือความคงตัวทางเคมี"
+          "explanation": "ผิด — Sodium citrate (ร่วมกับ citric acid ถ้ามี) เป็น buffer ปรับ pH ของยาหลังผสมให้อยู่ในช่วงที่ยาคงตัวและรสชาติยอมรับได้ ไม่ได้เพิ่มความหนืด (citrate ยังใช้เป็น flocculating agent ได้ในบางตำรับ แต่ไม่ใช่หน้าที่หลักที่นี่)"
         },
         {
           "label": "C",
-          "text": "Amoxicillin ไม่คงตัวทางเคมีเมื่ออยู่ในน้ำเป็นเวลานาน (เกิด hydrolysis ของ β-lactam ring)",
+          "text": "Xanthan gum",
           "is_correct": true,
-          "explanation": "ถูกต้อง β-lactam ring ถูก hydrolyze ในน้ำ จึงต้องเก็บเป็นผงแห้งและผสมก่อนจ่าย ใช้ภายใน 14 วัน"
+          "explanation": "ถูก — Xanthan gum เป็น suspending agent เพิ่มความหนืดและให้ pseudoplastic flow ชะลอการตกตะกอนตาม Stokes' law และทำให้เขย่ากลับเป็นเนื้อเดียวได้ง่าย"
         },
         {
           "label": "D",
-          "text": "ป้องกันไม่ให้อนุภาคตกตะกอนในระหว่างเก็บรักษา",
+          "text": "Colloidal silicon dioxide",
           "is_correct": false,
-          "explanation": "ยาที่ผสมแล้วยังตกตะกอนได้ตามปกติต้องเขย่าก่อนใช้ รูปแบบผงแห้งไม่ได้มีจุดประสงค์หลักเพื่อป้องกันการตกตะกอน"
+          "explanation": "ผิด — Colloidal silicon dioxide (Aerosil) ในผงแห้งทำหน้าที่เป็น glidant และ anticaking agent ช่วยการไหลของผงขณะบรรจุและป้องกันผงจับเป็นก้อนเมื่อชื้น แม้ที่ความเข้มข้นสูงจะเพิ่มความหนืดในระบบน้ำมันได้ แต่ในตำรับนี้ไม่ใช่สารชะลอการตกตะกอนหลัก"
         },
         {
           "label": "E",
-          "text": "เพื่อกลบรสขมของยาให้ดีขึ้น",
+          "text": "Sodium benzoate",
           "is_correct": false,
-          "explanation": "การกลบรสทำได้ด้วย sweetener และ flavor ในตำรับ ไม่ใช่เหตุผลที่ต้องเตรียมเป็นผงแห้ง"
+          "explanation": "ผิด — Sodium benzoate เป็นสารกันเสียป้องกันการเจริญของจุลชีพระหว่างใช้ยาหลังผสม (multi-dose) ออกฤทธิ์ได้ดีในสภาวะกรดเมื่ออยู่ในรูป benzoic acid ไม่เกี่ยวกับการตกตะกอน"
         }
       ],
-      "key_takeaway": "Reconstitutable suspension = ยาไม่คงตัวในน้ำ (β-lactam); amoxicillin ใช้ 14 วัน, amoxicillin–clavulanate 7 วันในตู้เย็น"
+      "key_takeaway": "Stokes' law: v ∝ 1/η → suspending agent (xanthan gum, CMC, MCC–CMC, tragacanth, bentonite) ชะลอการตกตะกอน; ในผงแห้งสำหรับผสมน้ำ: sucrose = หวาน, citrate = buffer, Aerosil = glidant/anticaking, benzoate = preservative"
     },
     "difficulty": "easy"
   },
