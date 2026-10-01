@@ -13,6 +13,8 @@ export default defineConfig({
       "lib/daily-mcq-line.test.ts",
       "lib/bot-intent.test.ts",
       "lib/line-links.test.ts",
+      "lib/exam-countdown.test.ts",
+      "__tests__/exam-countdown-route.test.ts",
     ],
     exclude: ["node_modules/**", ".next/**"],
   },
