@@ -6,7 +6,10 @@ import { PC1_ALL } from "@/lib/pc1-bank";
 // - item ที่มี base = เคสต่อเนื่องหลายข้อ; ไม่มี base = ข้อเดี่ยว (ใช้ Pc1Q แบบชุดรายวัน, d ไม่ระบุ = medium)
 // - { reuse: N } = ดึง Case N ทั้งเคสจากคลัง PC1 เดิม (ตัวเลือก/เฉลยคงเดิม เปลี่ยนเฉพาะเลขข้อ เลขเคส และหมวด)
 export type Pc1MockNewItem = { title?: string; base?: string; ref: string; qs: Pc1Q[] };
-export type Pc1MockItem = Pc1MockNewItem | { reuse: number };
+// คำอธิบายใหม่สำหรับเคสเดิม (ใช้เฉพาะในชุด Mock): key = ลำดับข้อในเคส (0-based), w = คำอธิบายรายตัวเลือกตาม label เดิม
+export type Pc1ReuseExplain = { r: string; w: Record<string, string>; k: string };
+export type Pc1MockReuse = { reuse: number; ref?: string; explain?: Record<number, Pc1ReuseExplain> };
+export type Pc1MockItem = Pc1MockNewItem | Pc1MockReuse;
 export type Pc1MockDomain = { key: string; name_th: string; icon: string; items: Pc1MockItem[] };
 
 // 12 หมวดของ PC1 ตามลำดับในชุดข้อสอบ
@@ -49,8 +52,15 @@ export function buildPc1Mock(
         const src = PC1_ALL.filter((q) => q.scenario.startsWith(`Case ${item.reuse} —`));
         if (!src.length) throw new Error(`PC1 case ${item.reuse} not found`);
         caseNo++;
-        for (const q of src) {
+        src.forEach((q, qi) => {
           n++;
+          const ex = item.explain?.[qi];
+          const d = q.detailed_explanation;
+          if (ex && d) {
+            const labelsInQ = q.choices.map((c) => c.label);
+            const missing = labelsInQ.filter((l) => !(l in ex.w));
+            if (missing.length) throw new Error(`Case ${item.reuse} Q${qi + 1}: missing explanation for ${missing.join(",")}`);
+          }
           out.push({
             ...q,
             id: id(),
@@ -58,8 +68,19 @@ export function buildPc1Mock(
             question_number: n,
             scenario: q.scenario.replace(/^Case \d+ — /, `Case ${caseNo} — `),
             mcq_subjects: subject(dom),
+            ...(ex && d
+              ? {
+                  explanation: `${ex.r}${item.ref ? `\n\nReference: ${item.ref}` : ""}`,
+                  detailed_explanation: {
+                    ...d,
+                    reason: ex.r,
+                    key_takeaway: ex.k,
+                    choices: d.choices.map((c) => ({ ...c, explanation: ex.w[c.label] })),
+                  },
+                }
+              : {}),
           });
-        }
+        });
         continue;
       }
       const isCase = !!item.base;
