@@ -1,0 +1,2038 @@
+[
+  {
+    "scenario": "ยา X เป็น weak base ที่เตรียมเป็นเกลือ hydrochloride (X·HCl) เมื่อนำไปทดสอบความละลาย พบว่าความละลายของ X·HCl ใน 0.1 N HCl (pH ประมาณ 1.2) ต่ำกว่าใน phosphate/citrate buffer pH 3.0 ที่ไม่มี chloride อย่างชัดเจน ทั้งที่ pH 1.2 ควรทำให้ยาอยู่ในรูป ionized มากกว่า ปรากฏการณ์นี้อธิบายได้ดีที่สุดด้วยข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Salting-in ของ chloride ion ที่ทำให้ยาละลายน้อยลง"
+      },
+      {
+        "label": "B",
+        "text": "ยาเกิด hydrolysis ใน 0.1 N HCl จึงวัดความละลายได้ต่ำ"
+      },
+      {
+        "label": "C",
+        "text": "Common ion effect จาก chloride ion ที่กดผลคูณการละลาย (Ksp) ของเกลือ hydrochloride"
+      },
+      {
+        "label": "D",
+        "text": "ยาเปลี่ยนเป็น free base ที่ pH 1.2 จึงตกตะกอน"
+      },
+      {
+        "label": "E",
+        "text": "Dielectric constant ของ 0.1 N HCl สูงกว่า buffer จึงละลายสารมีขั้วได้น้อยลง"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "ใน 0.1 N HCl มี Cl⁻ ปริมาณมาก ทำให้ [BH⁺][Cl⁻] เกิน Ksp ของเกลือได้ง่าย ความละลายของเกลือ HCl จึงลดลงตาม common ion effect",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. Common ion effect จาก chloride ion ที่กดผลคูณการละลาย (Ksp) ของเกลือ hydrochloride — chloride ion ในตัวกลางกดความละลายของเกลือ hydrochloride ตามหลัก Ksp",
+      "reason": "เกลือ hydrochloride ของ weak base (BH⁺Cl⁻) เมื่ออยู่ในสภาวะอิ่มตัวจะมีสมดุล BH⁺Cl⁻(s) ⇌ BH⁺ + Cl⁻ โดยมี Ksp = [BH⁺][Cl⁻] ที่ pH ต่ำกว่า pHmax ความละลายถูกควบคุมด้วย Ksp ของเกลือ ไม่ใช่ intrinsic solubility ของ free base เมื่อตัวกลางมี Cl⁻ จากภายนอกมาก เช่น 0.1 N HCl (Cl⁻ ≈ 0.1 M) หรือสารละลายที่มี NaCl ค่า [BH⁺] ที่ทำให้ถึง Ksp จะลดลง ความละลายของเกลือจึงต่ำลงแม้ยาจะอยู่ในรูป ionized เกือบทั้งหมด ปรากฏการณ์นี้เรียก common ion effect ซึ่งพบได้กับเกลือ HCl หลายชนิด และมีผลต่อการละลายในกระเพาะอาหารที่มี HCl ในทางปฏิบัติ preformulation จึงอาจเลือก counterion อื่น (เช่น mesylate, sulfate) หากยาไวต่อ common ion effect รุนแรง และต้องระวังการใช้ NaCl เป็น tonicity agent ในสูตรยาฉีดของเกลือ HCl ที่ละลายยาก",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Salting-in ของ chloride ion ที่ทำให้ยาละลายน้อยลง",
+          "is_correct": false,
+          "explanation": "Salting-in หมายถึงการเพิ่มความละลายเมื่อเติมเกลือบางชนิด ซึ่งตรงข้ามกับที่สังเกตได้ สิ่งที่ลดความละลายของ nonelectrolyte เมื่อเติมเกลือคือ salting-out แต่กรณีนี้เป็นเกลือของยาที่มี ion ร่วมกันโดยตรง"
+        },
+        {
+          "label": "B",
+          "text": "ยาเกิด hydrolysis ใน 0.1 N HCl จึงวัดความละลายได้ต่ำ",
+          "is_correct": false,
+          "explanation": "โจทย์ไม่ได้บ่งชี้การสลายตัว และ hydrolysis ไม่ได้อธิบายความจำเพาะต่อการมี chloride ปัญหาคือขีดจำกัดสมดุลการละลาย ไม่ใช่การสลายตัวทางเคมี"
+        },
+        {
+          "label": "C",
+          "text": "Common ion effect จาก chloride ion ที่กดผลคูณการละลาย (Ksp) ของเกลือ hydrochloride",
+          "is_correct": true,
+          "explanation": "ถูกต้อง Cl⁻ ที่มีอยู่ในตัวกลางเป็น ion ร่วมกับเกลือ X·HCl จึงกดความละลายตาม Ksp = [BH⁺][Cl⁻] เป็นเหตุผลที่เกลือ HCl บางตัวละลายใน 0.1 N HCl ได้น้อยกว่าที่คาด"
+        },
+        {
+          "label": "D",
+          "text": "ยาเปลี่ยนเป็น free base ที่ pH 1.2 จึงตกตะกอน",
+          "is_correct": false,
+          "explanation": "ที่ pH 1.2 weak base จะถูก protonate เกือบสมบูรณ์ จึงไม่เปลี่ยนเป็น free base การตกตะกอนเป็น free base จะเกิดเมื่อ pH สูงกว่า pHmax"
+        },
+        {
+          "label": "E",
+          "text": "Dielectric constant ของ 0.1 N HCl สูงกว่า buffer จึงละลายสารมีขั้วได้น้อยลง",
+          "is_correct": false,
+          "explanation": "0.1 N HCl ยังเป็นตัวกลางที่เป็นน้ำเกือบทั้งหมด dielectric constant ใกล้เคียงกับ buffer pH 3 จึงไม่ใช่ปัจจัยที่อธิบายความต่างนี้"
+        }
+      ],
+      "key_takeaway": "เกลือ HCl + ตัวกลางที่มี Cl⁻ (0.1 N HCl, NaCl) → ความละลายลดลง = common ion effect (Ksp = [BH⁺][Cl⁻])"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ยา Y เป็น weak acid มีค่า pKa = 4.4 เมื่ออยู่ใน plasma ที่ pH 7.4 อัตราส่วนความเข้มข้นของรูป ionized ต่อรูป unionized ของยา Y เป็นเท่าใด (ใช้สมการ Henderson–Hasselbalch)",
+    "choices": [
+      {
+        "label": "A",
+        "text": "1000 : 1"
+      },
+      {
+        "label": "B",
+        "text": "1 : 1000"
+      },
+      {
+        "label": "C",
+        "text": "3 : 1"
+      },
+      {
+        "label": "D",
+        "text": "100 : 1"
+      },
+      {
+        "label": "E",
+        "text": "1 : 3"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "สำหรับ weak acid: log([A⁻]/[HA]) = pH − pKa = 7.4 − 4.4 = 3 ดังนั้น ionized : unionized = 10³ : 1 = 1000 : 1",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. 1000 : 1 — pH สูงกว่า pKa 3 หน่วย weak acid จึงอยู่ในรูป ionized มากกว่า unionized 1000 เท่า",
+      "reason": "สมการ Henderson–Hasselbalch สำหรับ weak acid คือ pH = pKa + log([A⁻]/[HA]) โดย A⁻ คือรูป ionized และ HA คือรูป unionized เมื่อแทนค่า pH 7.4 และ pKa 4.4 จะได้ log([A⁻]/[HA]) = 3 อัตราส่วนจึงเท่ากับ 1000 : 1 หรือมีรูป unionized เพียงประมาณ 0.1% หลักจำง่ายคือ weak acid จะ ionize มากขึ้นเมื่อ pH สูงกว่า pKa และทุก ๆ 1 หน่วย pH ที่ต่างกันจะเปลี่ยนอัตราส่วนไป 10 เท่า ผลในทางเภสัชกรรมคือ weak acid ละลายดีขึ้นใน pH สูง แต่ผ่านเยื่อหุ้มเซลล์ได้น้อยลงเพราะรูป unionized ซึ่งชอบไขมันมีน้อย (pH-partition hypothesis) ความรู้นี้ใช้ในการเลือก pH ของสูตรตำรับ การทำนายการดูดซึม และการตีความ pH-solubility profile",
+      "choices": [
+        {
+          "label": "A",
+          "text": "1000 : 1",
+          "is_correct": true,
+          "explanation": "ถูกต้อง pH − pKa = 3 สำหรับ weak acid หมายถึงรูป ionized มากกว่ารูป unionized 10³ = 1000 เท่า"
+        },
+        {
+          "label": "B",
+          "text": "1 : 1000",
+          "is_correct": false,
+          "explanation": "เป็นการกลับอัตราส่วน ซึ่งจะเป็นจริงหากเป็น weak base ที่มี pKa 10.4 หรือ weak acid ที่อยู่ใน pH 1.4 ความผิดพลาดที่พบบ่อยคือใช้สูตรของ weak base กับ weak acid"
+        },
+        {
+          "label": "C",
+          "text": "3 : 1",
+          "is_correct": false,
+          "explanation": "เป็นการนำผลต่าง pH − pKa = 3 มาใช้เป็นอัตราส่วนตรง ๆ โดยลืมว่าเป็นสเกล log ต้องยกกำลัง 10 ก่อน"
+        },
+        {
+          "label": "D",
+          "text": "100 : 1",
+          "is_correct": false,
+          "explanation": "อัตราส่วน 100 : 1 จะเกิดเมื่อ pH − pKa = 2 เท่านั้น ไม่ใช่ 3"
+        },
+        {
+          "label": "E",
+          "text": "1 : 3",
+          "is_correct": false,
+          "explanation": "เป็นทั้งการลืมยกกำลัง 10 และกลับทิศของอัตราส่วน จึงผิดสองชั้น"
+        }
+      ],
+      "key_takeaway": "Weak acid: log(ionized/unionized) = pH − pKa; weak base: log(ionized/unionized) = pKa − pH; ต่าง 1 หน่วย = 10 เท่า",
+      "calculation_steps": [
+        "ขั้นที่ 1: weak acid ใช้ pH = pKa + log([A⁻]/[HA])",
+        "ขั้นที่ 2: log([A⁻]/[HA]) = 7.4 − 4.4 = 3.0",
+        "ขั้นที่ 3: [A⁻]/[HA] = 10³ = 1000",
+        "ขั้นที่ 4: ionized : unionized = 1000 : 1 (unionized ≈ 1/1001 ≈ 0.1%)"
+      ]
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "ยา Z เป็น weak acid (monoprotic) มี intrinsic solubility (S₀ ของรูป unionized) = 0.01 mg/mL และ pKa = 5.0 จงคำนวณ total solubility (Sₜ) ของยา Z ใน buffer pH 7.0 ที่ 25 °C (สมมติว่ายังไม่ถึง pHmax ของเกลือ)",
+    "choices": [
+      {
+        "label": "A",
+        "text": "0.01 mg/mL"
+      },
+      {
+        "label": "B",
+        "text": "0.02 mg/mL"
+      },
+      {
+        "label": "C",
+        "text": "0.10 mg/mL"
+      },
+      {
+        "label": "D",
+        "text": "1.01 mg/mL"
+      },
+      {
+        "label": "E",
+        "text": "100 mg/mL"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "Sₜ = S₀(1 + 10^(pH − pKa)) = 0.01 × (1 + 10²) = 0.01 × 101 = 1.01 mg/mL",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. 1.01 mg/mL — ความละลายรวมของ weak acid เพิ่มขึ้นตาม 10^(pH − pKa) จึงได้ 0.01 × 101 = 1.01 mg/mL",
+      "reason": "สำหรับ weak acid ความละลายรวมคือผลรวมของรูป unionized ที่อิ่มตัว (S₀ ซึ่งคงที่) กับรูป ionized ที่อยู่ในสมดุลกับรูป unionized ตาม Henderson–Hasselbalch ได้สมการ Sₜ = S₀[1 + 10^(pH − pKa)] เมื่อ pH เพิ่มขึ้นเหนือ pKa ทุก 1 หน่วย ความละลายรวมจะเพิ่มขึ้นประมาณ 10 เท่า จึงเป็นเส้นตรงชันในกราฟ log S vs pH ที่ pH 7.0 ซึ่งสูงกว่า pKa 2 หน่วย ค่า 10^(pH − pKa) = 100 จึงได้ Sₜ = 0.01 × 101 = 1.01 mg/mL ความสัมพันธ์นี้ใช้ได้จนถึง pHmax เท่านั้น เมื่อเกินจุดนั้น ความละลายจะถูกจำกัดด้วย Ksp ของเกลือ กราฟจะแบนราบ ใน preformulation จะใช้ pH-solubility profile เพื่อเลือก pH ของยาฉีดหรือยาน้ำ และทำนายการละลายในทางเดินอาหาร (ลำไส้ pH 6–7.5 ช่วยให้ weak acid ละลายดีขึ้น)",
+      "choices": [
+        {
+          "label": "A",
+          "text": "0.01 mg/mL",
+          "is_correct": false,
+          "explanation": "0.01 mg/mL คือ S₀ ซึ่งเป็นความละลายของรูป unionized เท่านั้น ใช้ได้เมื่อ pH ต่ำกว่า pKa มาก ๆ (ยาไม่ ionize) ไม่ใช่ที่ pH 7.0"
+        },
+        {
+          "label": "B",
+          "text": "0.02 mg/mL",
+          "is_correct": false,
+          "explanation": "0.02 mg/mL เป็นความละลายที่ pH = pKa (Sₜ = 2S₀) เป็นตัวลวงสำหรับผู้ที่ลืมใช้ค่า pH จริง"
+        },
+        {
+          "label": "C",
+          "text": "0.10 mg/mL",
+          "is_correct": false,
+          "explanation": "0.10 mg/mL ใกล้เคียงค่าที่ได้เมื่อ pH − pKa = 1 (0.01 × 11 = 0.11) หรือเมื่อคูณ 10 แทน 100 ผิดจากการคำนวณกำลังของ 10"
+        },
+        {
+          "label": "D",
+          "text": "1.01 mg/mL",
+          "is_correct": true,
+          "explanation": "ถูกต้อง Sₜ = 0.01 × (1 + 10^(7.0 − 5.0)) = 0.01 × 101 = 1.01 mg/mL"
+        },
+        {
+          "label": "E",
+          "text": "100 mg/mL",
+          "is_correct": false,
+          "explanation": "100 mg/mL เกิดจากสับสนกับอัตราส่วน ionized/unionized (= 100) ซึ่งไม่ใช่ความละลาย หรือคูณ S₀ ผิด"
+        }
+      ],
+      "key_takeaway": "Weak acid: Sₜ = S₀(1 + 10^(pH − pKa)); Weak base: Sₜ = S₀(1 + 10^(pKa − pH)); ใช้ได้ถึง pHmax",
+      "calculation_steps": [
+        "ขั้นที่ 1: weak acid ใช้ Sₜ = S₀ × [1 + 10^(pH − pKa)]",
+        "ขั้นที่ 2: pH − pKa = 7.0 − 5.0 = 2.0 → 10² = 100",
+        "ขั้นที่ 3: Sₜ = 0.01 mg/mL × (1 + 100) = 0.01 × 101",
+        "ขั้นที่ 4: Sₜ = 1.01 mg/mL"
+      ]
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "ทีม preformulation ต้องการเตรียมเกลือของยาที่เป็น weak base ซึ่งมี pKa (ของ conjugate acid) = 4.0 เพื่อให้ได้เกลือที่เสถียรและไม่เกิด disproportionation กลับเป็น free base ได้ง่าย กรดข้อใดเหมาะสมที่สุดที่จะใช้เป็น counterion",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Acetic acid (pKa 4.76)"
+      },
+      {
+        "label": "B",
+        "text": "Methanesulfonic acid (pKa ประมาณ −1.9)"
+      },
+      {
+        "label": "C",
+        "text": "Succinic acid (pKa₁ 4.2)"
+      },
+      {
+        "label": "D",
+        "text": "Citric acid (pKa₁ 3.1)"
+      },
+      {
+        "label": "E",
+        "text": "Tartaric acid (pKa₁ 3.0)"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "กฎ ΔpKa: pKa(base) − pKa(acid) ควร ≥ 2–3 หน่วย ยาเบสที่ pKa 4.0 ต้องใช้กรดแก่ เช่น methanesulfonic acid (ΔpKa ≈ 6) จึงเกิดเกลือที่เสถียร",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. Methanesulfonic acid (pKa ประมาณ −1.9) — เฉพาะกรดแก่ที่ pKa ต่ำกว่า pKa ของเบสอย่างน้อย 2–3 หน่วยจึงให้เกลือที่เสถียร ซึ่งในตัวเลือกคือ methanesulfonic acid",
+      "reason": "การเกิดเกลือ (proton transfer ที่สมบูรณ์) ระหว่างยาเบสกับกรด ใช้หลัก 'ΔpKa rule' คือ pKa ของ conjugate acid ของเบส ควรสูงกว่า pKa ของกรด counterion อย่างน้อย 2–3 หน่วย ถ้า ΔpKa น้อยกว่านี้ อาจได้ cocrystal หรือเกลือที่ไม่เสถียร เกิด disproportionation คืนเป็น free base เมื่อสัมผัสความชื้นหรือ excipient ที่เป็นด่าง ยาที่เป็น weak base อ่อนมาก (pKa 4.0) จึงต้องใช้กรดแก่ เช่น HCl, H₂SO₄, methanesulfonic acid (mesylate), benzenesulfonic acid (besylate) หรือ p-toluenesulfonic acid ในกรณีนี้ methanesulfonic acid ให้ ΔpKa ≈ 4.0 − (−1.9) ≈ 5.9 สูงเพียงพอ ส่วนกรดอินทรีย์อ่อนอื่น ๆ ให้ ΔpKa เพียง −0.8 ถึง 1.0 จึงไม่เพียงพอ นอกจากความเสถียรแล้ว การเลือกเกลือยังพิจารณาความละลาย, hygroscopicity, crystallinity, ความเป็นพิษของ counterion และ processability ด้วย",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Acetic acid (pKa 4.76)",
+          "is_correct": false,
+          "explanation": "Acetic acid มี pKa 4.76 สูงกว่า pKa ของเบส ΔpKa เป็นค่าลบ (−0.76) จึงไม่เกิด proton transfer ที่สมบูรณ์ ไม่ได้เกลือที่เสถียร acetate เหมาะกับเบสที่ pKa สูง ๆ เช่น 8–10"
+        },
+        {
+          "label": "B",
+          "text": "Methanesulfonic acid (pKa ประมาณ −1.9)",
+          "is_correct": true,
+          "explanation": "ถูกต้อง methanesulfonic acid เป็นกรดแก่ ΔpKa ≈ 5.9 ทำให้ได้เกลือ mesylate ที่เสถียร ตัวอย่างยาที่ใช้ mesylate เช่น imatinib mesylate, doxazosin mesylate"
+        },
+        {
+          "label": "C",
+          "text": "Succinic acid (pKa₁ 4.2)",
+          "is_correct": false,
+          "explanation": "Succinic acid pKa₁ 4.2 สูงกว่า pKa ของเบส ΔpKa ≈ −0.2 จึงไม่เกิดเกลือที่เสถียร"
+        },
+        {
+          "label": "D",
+          "text": "Citric acid (pKa₁ 3.1)",
+          "is_correct": false,
+          "explanation": "Citric acid pKa₁ 3.1 ให้ ΔpKa เพียง 0.9 ต่ำกว่าเกณฑ์ 2–3 อาจได้เกลือที่เกิด disproportionation ง่ายหรือได้ cocrystal"
+        },
+        {
+          "label": "E",
+          "text": "Tartaric acid (pKa₁ 3.0)",
+          "is_correct": false,
+          "explanation": "Tartaric acid pKa₁ 3.0 ให้ ΔpKa เพียง 1.0 ยังไม่ถึงเกณฑ์ เหมาะกับเบสที่มี pKa สูงกว่า เช่น metoprolol tartrate (pKa ≈ 9.7)"
+        }
+      ],
+      "key_takeaway": "ΔpKa rule: pKa(base) − pKa(acid) ≥ 2–3 → เกลือเสถียร; เบสอ่อนมากต้องใช้กรดแก่ (HCl, sulfate, mesylate, besylate, tosylate)"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ยาชนิดหนึ่งมี 2 polymorphs คือ Form I (stable form) และ Form II (metastable form) ซึ่งมีความสัมพันธ์แบบ monotropic ข้อใดกล่าวถึง Form II ได้ถูกต้องที่สุด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "มีจุดหลอมเหลวสูงกว่า Form I และละลายน้ำได้น้อยกว่า"
+      },
+      {
+        "label": "B",
+        "text": "มี free energy ต่ำกว่า Form I จึงไม่เปลี่ยนรูประหว่างเก็บรักษา"
+      },
+      {
+        "label": "C",
+        "text": "มีความละลายและอัตราการละลายเท่ากับ Form I เพราะเป็นสารเคมีชนิดเดียวกัน"
+      },
+      {
+        "label": "D",
+        "text": "เป็นรูป amorphous ที่ไม่มีโครงสร้างผลึก"
+      },
+      {
+        "label": "E",
+        "text": "มีความละลายและอัตราการละลายสูงกว่า Form I แต่อาจเปลี่ยนเป็น Form I ได้ระหว่างการผลิตหรือเก็บรักษา"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "Metastable polymorph มี free energy สูงกว่า จึงละลายได้มากกว่าและเร็วกว่า stable form แต่มีแนวโน้มเปลี่ยนเป็น stable form เมื่อเวลาผ่านไป",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. มีความละลายและอัตราการละลายสูงกว่า Form I แต่อาจเปลี่ยนเป็น Form I ได้ระหว่างการผลิตหรือเก็บรักษา — metastable form มีพลังงานสูงกว่า จึงละลายดีกว่าแต่ไม่เสถียรทางกายภาพ",
+      "reason": "Polymorphism คือการที่สารเคมีชนิดเดียวกันตกผลึกได้มากกว่าหนึ่งรูปแบบการจัดเรียงโมเลกุลในผลึก แต่ละรูปมีสมบัติทางกายภาพต่างกัน เช่น จุดหลอมเหลว ความหนาแน่น ความแข็ง ความละลาย และอัตราการละลาย ในระบบ monotropic รูปที่เสถียรกว่าจะเสถียรที่ทุกอุณหภูมิจนถึงจุดหลอมเหลว และมีจุดหลอมเหลวสูงกว่า ความละลายต่ำกว่า ส่วน metastable form มี free energy (chemical potential) สูงกว่า จึงละลายได้มากกว่า (มักต่างกันไม่เกิน 2–3 เท่า) ซึ่งอาจเพิ่ม bioavailability ของยาที่ละลายยาก อย่างไรก็ตาม metastable form อาจเปลี่ยนเป็น stable form ระหว่าง milling, granulation (โดยเฉพาะ wet granulation), การอัดเม็ด หรือการเก็บในที่ชื้น/ร้อน ทำให้ dissolution เปลี่ยนไป จึงต้องติดตามด้วย XRPD, DSC หรือ IR และพิจารณากำหนด polymorph ใน specification ตาม ICH Q6A",
+      "choices": [
+        {
+          "label": "A",
+          "text": "มีจุดหลอมเหลวสูงกว่า Form I และละลายน้ำได้น้อยกว่า",
+          "is_correct": false,
+          "explanation": "เป็นลักษณะของ stable form (Form I) ไม่ใช่ metastable form ใน monotropic system รูปที่เสถียรกว่ามีจุดหลอมเหลวสูงกว่าและละลายน้อยกว่า"
+        },
+        {
+          "label": "B",
+          "text": "มี free energy ต่ำกว่า Form I จึงไม่เปลี่ยนรูประหว่างเก็บรักษา",
+          "is_correct": false,
+          "explanation": "ผิด metastable form มี free energy สูงกว่า stable form จึงมีแนวโน้มเปลี่ยนรูปไปเป็น stable form ระหว่างเก็บรักษา"
+        },
+        {
+          "label": "C",
+          "text": "มีความละลายและอัตราการละลายเท่ากับ Form I เพราะเป็นสารเคมีชนิดเดียวกัน",
+          "is_correct": false,
+          "explanation": "แม้เป็นสารเคมีเดียวกัน แต่การจัดเรียงผลึกต่างกันทำให้ lattice energy ต่างกัน ความละลายและอัตราการละลายจึงต่างกัน ซึ่งเป็นเหตุผลที่ต้องควบคุม polymorph"
+        },
+        {
+          "label": "D",
+          "text": "เป็นรูป amorphous ที่ไม่มีโครงสร้างผลึก",
+          "is_correct": false,
+          "explanation": "Polymorph ทุกรูปเป็นผลึก (crystalline) ส่วน amorphous ไม่มี long-range order และไม่ถือเป็น polymorph ที่แท้จริง"
+        },
+        {
+          "label": "E",
+          "text": "มีความละลายและอัตราการละลายสูงกว่า Form I แต่อาจเปลี่ยนเป็น Form I ได้ระหว่างการผลิตหรือเก็บรักษา",
+          "is_correct": true,
+          "explanation": "ถูกต้อง metastable form ละลายได้มากกว่าและเร็วกว่า แต่มีความเสี่ยงต่อการเปลี่ยนรูป (polymorphic transformation) เป็น stable form"
+        }
+      ],
+      "key_takeaway": "Stable form: mp สูง, ละลายน้อย, เสถียร | Metastable: mp ต่ำกว่า (monotropic), ละลายมาก/เร็วกว่า, เปลี่ยนเป็น stable ได้ | ตรวจด้วย XRPD/DSC"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "จากการศึกษาคลาสสิกของ chloramphenicol palmitate oral suspension พบว่าผลิตภัณฑ์ที่ใช้ polymorph ต่างกันให้ระดับยา chloramphenicol ในเลือดแตกต่างกันมาก ข้อใดถูกต้อง",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Polymorph A (stable form) ให้ระดับยาในเลือดสูงกว่า เพราะเสถียรต่อกรดในกระเพาะ"
+      },
+      {
+        "label": "B",
+        "text": "Polymorph B (metastable form) ให้ระดับยาในเลือดสูงกว่า เพราะละลายได้ดีกว่าและถูก esterase ไฮโดรไลซ์เป็น chloramphenicol ได้มากกว่า"
+      },
+      {
+        "label": "C",
+        "text": "ทั้งสอง polymorph ให้ระดับยาในเลือดเท่ากัน เพราะเป็น prodrug ชนิดเดียวกัน"
+      },
+      {
+        "label": "D",
+        "text": "Polymorph A ให้ระดับยาในเลือดสูงกว่า เพราะมีจุดหลอมเหลวสูงกว่า"
+      },
+      {
+        "label": "E",
+        "text": "ความแตกต่างเกิดจากขนาดอนุภาคเท่านั้น ไม่เกี่ยวกับ polymorph"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Chloramphenicol palmitate polymorph B (metastable) ละลายได้ดีกว่าและถูกไฮโดรไลซ์โดย pancreatic esterase ได้ดีกว่า จึงให้ระดับยาในเลือดสูงกว่า polymorph A มาก",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. Polymorph B (metastable form) ให้ระดับยาในเลือดสูงกว่า เพราะละลายได้ดีกว่าและถูก esterase ไฮโดรไลซ์เป็น chloramphenicol ได้มากกว่า — polymorph B เป็นรูป metastable ที่ละลายได้ดีกว่า ให้ bioavailability สูงกว่า polymorph A",
+      "reason": "Chloramphenicol palmitate เป็น ester prodrug ที่ไม่มีรสขม ใช้ในยาน้ำแขวนตะกอนสำหรับเด็ก ต้องถูก esterase ในลำไส้ไฮโดรไลซ์ให้เป็น chloramphenicol อิสระก่อนดูดซึม การไฮโดรไลซ์เกิดกับยาที่ละลายแล้วเป็นหลัก polymorph B ซึ่งเป็น metastable form มีความละลายสูงกว่า จึงมียาที่พร้อมถูก esterase ย่อยมากกว่า ส่งผลให้ระดับ chloramphenicol ในเลือดสูงกว่า polymorph A ซึ่งเป็น stable form แทบไม่ถูกดูดซึม การศึกษาพบว่าระดับยาในเลือดเพิ่มขึ้นตามสัดส่วนของ polymorph B ในตำรับ ด้วยเหตุนี้ pharmacopoeia จึงกำหนดให้ควบคุมปริมาณ polymorph A ใน chloramphenicol palmitate (limit of inactive polymorph) กรณีนี้เป็นตัวอย่างสำคัญที่แสดงว่า polymorphism มีผลต่อ bioavailability และเป็นเหตุผลที่ต้องทำ polymorph screening ใน preformulation",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Polymorph A (stable form) ให้ระดับยาในเลือดสูงกว่า เพราะเสถียรต่อกรดในกระเพาะ",
+          "is_correct": false,
+          "explanation": "Polymorph A เป็น stable form ละลายได้น้อยและถูก esterase ไฮโดรไลซ์ได้น้อย ให้ระดับยาในเลือดต่ำมาก ความเสถียรต่อกรดไม่ใช่ปัจจัยหลัก"
+        },
+        {
+          "label": "B",
+          "text": "Polymorph B (metastable form) ให้ระดับยาในเลือดสูงกว่า เพราะละลายได้ดีกว่าและถูก esterase ไฮโดรไลซ์เป็น chloramphenicol ได้มากกว่า",
+          "is_correct": true,
+          "explanation": "ถูกต้อง polymorph B (metastable) ละลายได้ดีกว่า จึงถูกไฮโดรไลซ์และดูดซึมได้มากกว่า เป็นตัวอย่างคลาสสิกของผล polymorphism ต่อ bioavailability"
+        },
+        {
+          "label": "C",
+          "text": "ทั้งสอง polymorph ให้ระดับยาในเลือดเท่ากัน เพราะเป็น prodrug ชนิดเดียวกัน",
+          "is_correct": false,
+          "explanation": "แม้เป็นสารเคมีชนิดเดียวกัน แต่ polymorph ต่างกันให้ความละลายต่างกัน ส่งผลให้ระดับยาในเลือดต่างกันอย่างมีนัยสำคัญ"
+        },
+        {
+          "label": "D",
+          "text": "Polymorph A ให้ระดับยาในเลือดสูงกว่า เพราะมีจุดหลอมเหลวสูงกว่า",
+          "is_correct": false,
+          "explanation": "จุดหลอมเหลวสูงสัมพันธ์กับ lattice energy สูงและความละลายต่ำ ซึ่งยิ่งทำให้ดูดซึมได้น้อยลง ไม่ใช่มากขึ้น"
+        },
+        {
+          "label": "E",
+          "text": "ความแตกต่างเกิดจากขนาดอนุภาคเท่านั้น ไม่เกี่ยวกับ polymorph",
+          "is_correct": false,
+          "explanation": "การศึกษาแสดงชัดเจนว่าความแตกต่างสัมพันธ์กับสัดส่วน polymorph B ในผลิตภัณฑ์ ขนาดอนุภาคมีผลได้แต่ไม่ใช่สาเหตุหลักในกรณีนี้"
+        }
+      ],
+      "key_takeaway": "Chloramphenicol palmitate: Form B (metastable) = bioavailable; Form A (stable) = inactive → ตำรายาจำกัดปริมาณ Form A"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "ผงยาที่ได้จากกระบวนการ spray drying ถูกนำไปวิเคราะห์ ผล X-ray powder diffraction (XRPD) แสดงเป็น broad halo ไม่มี sharp peak และ DSC thermogram แสดงการเปลี่ยนแปลงแบบขั้นบันได (step change ของ baseline) ที่ 65 °C ตามด้วย exothermic peak ที่ 110 °C และ endothermic peak ที่ 168 °C ข้อใดอธิบายผลนี้ได้ถูกต้อง",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ผงยาเป็น stable crystalline form ที่มีจุดหลอมเหลว 65 °C"
+      },
+      {
+        "label": "B",
+        "text": "ผงยาเป็น hydrate ที่สูญเสียน้ำผลึกที่ 65 °C"
+      },
+      {
+        "label": "C",
+        "text": "ผงยาเป็นของผสม eutectic ระหว่าง 2 polymorphs"
+      },
+      {
+        "label": "D",
+        "text": "ผงยาอยู่ในรูป amorphous มี glass transition (Tg) ที่ 65 °C แล้วเกิด recrystallization ที่ 110 °C และผลึกที่เกิดขึ้นหลอมเหลวที่ 168 °C"
+      },
+      {
+        "label": "E",
+        "text": "ผงยาเป็น solvate ที่มีการสลายตัวทางเคมีที่ 110 °C"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "XRPD halo = ไม่มี long-range order (amorphous); DSC step = Tg, exotherm = cold crystallization, endotherm = melting ของผลึกที่เพิ่งเกิด",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. ผงยาอยู่ในรูป amorphous มี glass transition (Tg) ที่ 65 °C แล้วเกิด recrystallization ที่ 110 °C และผลึกที่เกิดขึ้นหลอมเหลวที่ 168 °C — รูปแบบ halo ใน XRPD ร่วมกับ Tg, crystallization exotherm และ melting endotherm ใน DSC เป็นลายเซ็นของ amorphous solid",
+      "reason": "ของแข็ง amorphous ไม่มีการจัดเรียงโมเลกุลแบบ long-range order จึงไม่ให้ diffraction peak ที่คมใน XRPD แต่ให้เป็น broad halo กระบวนการที่ทำให้ตัวทำละลายระเหยเร็วมาก เช่น spray drying, freeze drying หรือ melt quench cooling มักได้ผลิตภัณฑ์ amorphous ใน DSC จะเห็น glass transition (Tg) เป็นการเปลี่ยน heat capacity ทำให้ baseline เลื่อนเป็นขั้น ไม่ใช่ peak เมื่ออุณหภูมิสูงกว่า Tg โมเลกุลเคลื่อนที่ได้มากขึ้น จึงเกิด cold crystallization ซึ่งเป็น exothermic peak จากนั้นผลึกที่เกิดขึ้นจะหลอมเหลวเป็น endothermic peak รูป amorphous มีพลังงานสูง ละลายได้ดีกว่ารูปผลึกมาก แต่ไม่เสถียรทางกายภาพ ความชื้นทำหน้าที่เป็น plasticizer ลด Tg และเร่ง recrystallization จึงควรเก็บที่อุณหภูมิต่ำกว่า Tg มาก ๆ (แนวทางทั่วไปประมาณ 50 °C) และป้องกันความชื้น",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ผงยาเป็น stable crystalline form ที่มีจุดหลอมเหลว 65 °C",
+          "is_correct": false,
+          "explanation": "ผลึก (crystalline) จะให้ sharp peaks ใน XRPD และจุดหลอมเหลวใน DSC เป็น endothermic peak ไม่ใช่ step change ที่ 65 °C"
+        },
+        {
+          "label": "B",
+          "text": "ผงยาเป็น hydrate ที่สูญเสียน้ำผลึกที่ 65 °C",
+          "is_correct": false,
+          "explanation": "การสูญเสียน้ำผลึกของ hydrate ใน DSC จะเป็น endothermic peak (มักกว้าง) พร้อมน้ำหนักลดใน TGA และ hydrate ยังให้ sharp peaks ใน XRPD"
+        },
+        {
+          "label": "C",
+          "text": "ผงยาเป็นของผสม eutectic ระหว่าง 2 polymorphs",
+          "is_correct": false,
+          "explanation": "Eutectic mixture ของผลึกยังให้ XRPD peaks ของผลึก และ DSC จะเห็น endotherm ที่ eutectic temperature ไม่ใช่ halo และ Tg"
+        },
+        {
+          "label": "D",
+          "text": "ผงยาอยู่ในรูป amorphous มี glass transition (Tg) ที่ 65 °C แล้วเกิด recrystallization ที่ 110 °C และผลึกที่เกิดขึ้นหลอมเหลวที่ 168 °C",
+          "is_correct": true,
+          "explanation": "ถูกต้อง halo + Tg (step change) + cold crystallization exotherm + melting endotherm เป็นรูปแบบคลาสสิกของ amorphous material"
+        },
+        {
+          "label": "E",
+          "text": "ผงยาเป็น solvate ที่มีการสลายตัวทางเคมีที่ 110 °C",
+          "is_correct": false,
+          "explanation": "Solvate เป็นผลึกที่มีตัวทำละลายในโครงผลึก จะให้ sharp XRPD peaks และ desolvation endotherm ไม่ใช่ broad halo"
+        }
+      ],
+      "key_takeaway": "Amorphous: XRPD = halo, DSC = Tg (step) → cold crystallization (exo) → melting (endo); ละลายดีแต่ไม่เสถียร เก็บต่ำกว่า Tg และกันชื้น"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ผู้ผลิตยาสามัญพิจารณาเปลี่ยนวัตถุดิบ ampicillin ในแคปซูลจาก anhydrous ampicillin เป็น ampicillin trihydrate โดยใช้ปริมาณเทียบเท่า ampicillin เท่ากัน ข้อใดเป็นการคาดการณ์ที่ถูกต้องที่สุด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Ampicillin trihydrate ละลายในน้ำได้ช้าและน้อยกว่า anhydrous form อาจทำให้ dissolution และ bioavailability ลดลง"
+      },
+      {
+        "label": "B",
+        "text": "Ampicillin trihydrate ละลายได้เร็วกว่าเพราะมีน้ำอยู่ในโครงผลึกแล้ว"
+      },
+      {
+        "label": "C",
+        "text": "ไม่มีความแตกต่างเพราะ hydrate จะเปลี่ยนเป็น anhydrous ทันทีในทางเดินอาหาร"
+      },
+      {
+        "label": "D",
+        "text": "Trihydrate จะดูดความชื้นได้มากกว่าจึงต้องเพิ่ม desiccant"
+      },
+      {
+        "label": "E",
+        "text": "Trihydrate เป็น polymorph ที่แท้จริงของ ampicillin จึงมี lattice energy เท่ากับ anhydrous form"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "โดยทั่วไป hydrate มีความละลายในน้ำต่ำกว่า anhydrous form เพราะมี free energy ต่ำกว่าในตัวกลางที่เป็นน้ำ anhydrous ampicillin จึงละลายเร็วกว่าและให้ระดับยาในเลือดสูงกว่า trihydrate",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. Ampicillin trihydrate ละลายในน้ำได้ช้าและน้อยกว่า anhydrous form อาจทำให้ dissolution และ bioavailability ลดลง — hydrate มักละลายในน้ำได้น้อยกว่ารูป anhydrous จึงอาจทำให้ dissolution ลดลง",
+      "reason": "Hydrate คือ pseudopolymorph (solvate ที่ตัวทำละลายเป็นน้ำ) ซึ่งมีโมเลกุลน้ำอยู่ในโครงผลึก ในตัวกลางที่เป็นน้ำ รูป hydrate อยู่ในสภาวะที่ 'อิ่มตัวด้วยน้ำ' แล้ว จึงมี thermodynamic activity ต่ำกว่ารูป anhydrous ผลคือความละลายในน้ำและอัตราการละลายของ hydrate มักต่ำกว่า anhydrous ตัวอย่างที่รู้จักดีคือ ampicillin anhydrous ละลายได้มากกว่า ampicillin trihydrate และให้ระดับยาในเลือดสูงกว่า เช่นเดียวกับ theophylline anhydrous กับ theophylline monohydrate ในทางกลับกัน หาก anhydrous form สัมผัสน้ำ (เช่นระหว่าง wet granulation หรือใน dissolution medium) อาจเปลี่ยนเป็น hydrate ทำให้ dissolution ลดลง จึงต้องศึกษา hydrate formation ด้วย dynamic vapor sorption, TGA, DSC และ XRPD การเปลี่ยน solid form ของวัตถุดิบจึงถือเป็นการเปลี่ยนแปลงที่ต้องประเมินผลต่อ dissolution และ bioequivalence",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Ampicillin trihydrate ละลายในน้ำได้ช้าและน้อยกว่า anhydrous form อาจทำให้ dissolution และ bioavailability ลดลง",
+          "is_correct": true,
+          "explanation": "ถูกต้อง trihydrate มีความละลายในน้ำต่ำกว่า anhydrous ampicillin จึงอาจทำให้ dissolution และ bioavailability ลดลง"
+        },
+        {
+          "label": "B",
+          "text": "Ampicillin trihydrate ละลายได้เร็วกว่าเพราะมีน้ำอยู่ในโครงผลึกแล้ว",
+          "is_correct": false,
+          "explanation": "การมีน้ำในโครงผลึกไม่ได้ช่วยให้ละลายเร็วขึ้น ตรงกันข้าม hydrate มี free energy ต่ำกว่าในน้ำ จึงละลายน้อยและช้ากว่า"
+        },
+        {
+          "label": "C",
+          "text": "ไม่มีความแตกต่างเพราะ hydrate จะเปลี่ยนเป็น anhydrous ทันทีในทางเดินอาหาร",
+          "is_correct": false,
+          "explanation": "การเปลี่ยนรูปของ hydrate ในทางเดินอาหารไม่เกิดขึ้นทันที และโดยทั่วไปทิศทางที่เกิดในน้ำคือ anhydrous → hydrate ไม่ใช่กลับกัน"
+        },
+        {
+          "label": "D",
+          "text": "Trihydrate จะดูดความชื้นได้มากกว่าจึงต้องเพิ่ม desiccant",
+          "is_correct": false,
+          "explanation": "Hydrate ที่เสถียรมักดูดความชื้นน้อยกว่า anhydrous form เพราะมีน้ำในโครงผลึกแล้ว ปัญหาการดูดความชื้นมักเกิดกับ anhydrous หรือ amorphous มากกว่า"
+        },
+        {
+          "label": "E",
+          "text": "Trihydrate เป็น polymorph ที่แท้จริงของ ampicillin จึงมี lattice energy เท่ากับ anhydrous form",
+          "is_correct": false,
+          "explanation": "Hydrate มีองค์ประกอบทางเคมีต่างจาก anhydrous (มีน้ำ) จึงเรียก pseudopolymorph ไม่ใช่ true polymorph และมี lattice energy ต่างกัน"
+        }
+      ],
+      "key_takeaway": "ในน้ำ: anhydrous > hydrate (ความละลาย/อัตราการละลาย) เช่น ampicillin, theophylline; hydrate/solvate = pseudopolymorph"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ในการหาค่า partition coefficient ของยาชนิดหนึ่ง (ยาไม่ ionize ในสภาวะการทดลอง) นำสารละลายยาในน้ำ 50 mL ที่มียาทั้งหมด 100 mg มาเขย่ากับ n-octanol 10 mL จนถึงสมดุล (น้ำและ octanol อิ่มตัวซึ่งกันและกันแล้ว) วิเคราะห์ชั้นน้ำพบยาเหลืออยู่ 20 mg ค่า log P (octanol/water) ของยานี้ใกล้เคียงข้อใดมากที่สุด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "0.60"
+      },
+      {
+        "label": "B",
+        "text": "0.90"
+      },
+      {
+        "label": "C",
+        "text": "−0.60"
+      },
+      {
+        "label": "D",
+        "text": "4.00"
+      },
+      {
+        "label": "E",
+        "text": "1.30"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "C(octanol) = 80 mg/10 mL = 8 mg/mL; C(water) = 20 mg/50 mL = 0.4 mg/mL; P = 8/0.4 = 20; log P = 1.30",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. 1.30 — P คืออัตราส่วนความเข้มข้น (ไม่ใช่ปริมาณ) = 8/0.4 = 20 จึงได้ log P ≈ 1.30",
+      "reason": "Partition coefficient (P) นิยามเป็นอัตราส่วนความเข้มข้นของยารูป unionized ในชั้น octanol ต่อชั้นน้ำที่สมดุล P = C(octanol)/C(water) จึงต้องแปลงปริมาณยาเป็นความเข้มข้นโดยหารด้วยปริมาตรของแต่ละชั้นเสมอ ในโจทย์นี้ ยาเคลื่อนเข้าชั้น octanol 100 − 20 = 80 mg ใน 10 mL จึงได้ 8 mg/mL ส่วนชั้นน้ำเหลือ 20 mg ใน 50 mL เท่ากับ 0.4 mg/mL P จึงเท่ากับ 20 และ log P = 1.30 ค่า log P บอกความชอบไขมัน (lipophilicity) ซึ่งสัมพันธ์กับการซึมผ่านเยื่อหุ้มเซลล์ ยาที่ดูดซึมทางปากได้ดีมักมี log P ประมาณ 1–3 (ตาม Lipinski's rule of five ไม่ควรเกิน 5) ถ้ายาเป็นกรดหรือเบสอ่อน การทดลองต้องทำที่ pH ที่ยาเป็น unionized หรือรายงานเป็น log D ที่ pH นั้น วิธีมาตรฐานคือ shake-flask method และสามารถประมาณด้วย HPLC retention time",
+      "choices": [
+        {
+          "label": "A",
+          "text": "0.60",
+          "is_correct": false,
+          "explanation": "0.60 คือ log(80/20) = log 4 ซึ่งใช้ปริมาณยา (mg) โดยไม่หารด้วยปริมาตรของแต่ละชั้น เป็นข้อผิดพลาดที่พบบ่อยที่สุดเมื่อปริมาตรสองชั้นไม่เท่ากัน"
+        },
+        {
+          "label": "B",
+          "text": "0.90",
+          "is_correct": false,
+          "explanation": "0.90 ไม่สอดคล้องกับการคำนวณที่ถูกต้องแบบใด เป็นตัวลวงที่อยู่ระหว่างค่าที่ไม่แก้ปริมาตรกับค่าที่ถูก"
+        },
+        {
+          "label": "C",
+          "text": "−0.60",
+          "is_correct": false,
+          "explanation": "−0.60 คือ log(20/80) ซึ่งกลับเศษและส่วน และไม่แก้ปริมาตร ผิดสองชั้น"
+        },
+        {
+          "label": "D",
+          "text": "4.00",
+          "is_correct": false,
+          "explanation": "4.00 คือค่า P ที่ไม่แก้ปริมาตร (80/20 = 4) ไม่ใช่ log P"
+        },
+        {
+          "label": "E",
+          "text": "1.30",
+          "is_correct": true,
+          "explanation": "ถูกต้อง P = (80/10)/(20/50) = 8/0.4 = 20 และ log 20 = 1.30"
+        }
+      ],
+      "key_takeaway": "P = C(octanol)/C(water) — ต้องใช้ 'ความเข้มข้น' ไม่ใช่ปริมาณ; log P 1–3 เหมาะกับการดูดซึมทางปาก",
+      "calculation_steps": [
+        "ขั้นที่ 1: ยาในชั้น octanol = 100 mg − 20 mg = 80 mg",
+        "ขั้นที่ 2: C(octanol) = 80 mg ÷ 10 mL = 8 mg/mL",
+        "ขั้นที่ 3: C(water) = 20 mg ÷ 50 mL = 0.4 mg/mL",
+        "ขั้นที่ 4: P = 8 ÷ 0.4 = 20",
+        "ขั้นที่ 5: log P = log 20 = 1.30"
+      ]
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "ยา NSAID ชนิดหนึ่งเป็น weak acid มี log P (ของรูป unionized) = 3.0 และ pKa = 4.0 ค่า distribution coefficient (log D) ที่ pH 7.0 ใกล้เคียงข้อใดมากที่สุด (สมมติว่าเฉพาะรูป unionized เท่านั้นที่แบ่งเข้าชั้น octanol)",
+    "choices": [
+      {
+        "label": "A",
+        "text": "3.0"
+      },
+      {
+        "label": "B",
+        "text": "6.0"
+      },
+      {
+        "label": "C",
+        "text": "0.0"
+      },
+      {
+        "label": "D",
+        "text": "−3.0"
+      },
+      {
+        "label": "E",
+        "text": "1.0"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "log D = log P − log(1 + 10^(pH − pKa)) = 3.0 − log(1 + 1000) = 3.0 − 3.0 ≈ 0.0",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. 0.0 — ที่ pH 7.0 ยาเกือบทั้งหมด ionized ทำให้ log D ลดลงจาก log P ประมาณ 3 หน่วย เหลือ ≈ 0",
+      "reason": "Distribution coefficient (D) คืออัตราส่วนความเข้มข้นของยาทุกรูป (ionized + unionized) ในชั้น octanol ต่อชั้นน้ำที่ pH หนึ่ง ๆ ถ้าสมมติว่าเฉพาะรูป unionized แบ่งเข้าสู่ octanol จะได้ D = P × f(unionized) สำหรับ weak acid f(unionized) = 1/(1 + 10^(pH − pKa)) จึงได้ log D = log P − log(1 + 10^(pH − pKa)) ที่ pH 7.0 ซึ่งสูงกว่า pKa 3 หน่วย 10^(pH − pKa) = 1000 ทำให้ log(1001) ≈ 3.0 และ log D ≈ 3.0 − 3.0 ≈ 0 (D ≈ 1) ความหมายคือแม้ยาจะชอบไขมันมาก (log P 3) แต่ที่ pH ของลำไส้เล็กหรือ plasma ความชอบไขมันจริงลดลงอย่างมาก เมื่อ pH < pKa มาก ๆ log D จะเข้าใกล้ log P สำหรับ weak base สูตรคือ log D = log P − log(1 + 10^(pKa − pH)) log D จึงเป็นค่าที่มีความหมายกว่าสำหรับทำนายการดูดซึมของยาที่ ionize ได้",
+      "choices": [
+        {
+          "label": "A",
+          "text": "3.0",
+          "is_correct": false,
+          "explanation": "3.0 คือ log P ซึ่งเท่ากับ log D เฉพาะเมื่อยาไม่ ionize (pH ต่ำกว่า pKa มาก ๆ) ที่ pH 7.0 ยา ionize ถึง 99.9%"
+        },
+        {
+          "label": "B",
+          "text": "6.0",
+          "is_correct": false,
+          "explanation": "6.0 เกิดจากบวก log(1 + 10^(pH − pKa)) แทนการลบ ซึ่งผิดทิศ เพราะการ ionize ลดความชอบไขมัน"
+        },
+        {
+          "label": "C",
+          "text": "0.0",
+          "is_correct": true,
+          "explanation": "ถูกต้อง log D = 3.0 − log(1001) = 3.0 − 3.0004 ≈ 0.0"
+        },
+        {
+          "label": "D",
+          "text": "−3.0",
+          "is_correct": false,
+          "explanation": "−3.0 เกิดจากคำนวณ log(fraction unionized) อย่างเดียวโดยลืมบวก log P"
+        },
+        {
+          "label": "E",
+          "text": "1.0",
+          "is_correct": false,
+          "explanation": "1.0 ไม่สอดคล้องกับสูตร เป็นตัวลวงสำหรับผู้ที่คำนวณกำลังของ 10 หรือ log ผิดพลาด"
+        }
+      ],
+      "key_takeaway": "Weak acid: log D = log P − log(1 + 10^(pH − pKa)); weak base: log D = log P − log(1 + 10^(pKa − pH)); pH ต่างจาก pKa n หน่วย (ฝั่ง ionize) → log D ลด ≈ n",
+      "calculation_steps": [
+        "ขั้นที่ 1: weak acid → log D = log P − log(1 + 10^(pH − pKa))",
+        "ขั้นที่ 2: pH − pKa = 7.0 − 4.0 = 3.0 → 10³ = 1000",
+        "ขั้นที่ 3: log(1 + 1000) = log 1001 ≈ 3.0004",
+        "ขั้นที่ 4: log D = 3.0 − 3.0004 ≈ 0.0 (D ≈ 1)"
+      ]
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "ยาชนิดหนึ่งไวต่อความร้อน (thermolabile) ต้องการลดขนาดอนุภาคให้เล็กกว่า 5 µm เพื่อใช้ใน dry powder inhaler เครื่องลดขนาดอนุภาค (mill) ข้อใดเหมาะสมที่สุด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Fluid energy mill (jet mill / micronizer)"
+      },
+      {
+        "label": "B",
+        "text": "Hammer mill"
+      },
+      {
+        "label": "C",
+        "text": "Roller mill"
+      },
+      {
+        "label": "D",
+        "text": "Cutter mill"
+      },
+      {
+        "label": "E",
+        "text": "Oscillating granulator"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Jet mill ใช้อากาศหรือไนโตรเจนความดันสูงทำให้อนุภาคชนกันเอง ได้อนุภาคขนาดประมาณ 1–5 µm และการขยายตัวของแก๊สทำให้เย็นลง จึงเหมาะกับยาที่ไวต่อความร้อน",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. Fluid energy mill (jet mill / micronizer) — jet mill ลดขนาดได้ถึงระดับไมครอนโดยแทบไม่เกิดความร้อน",
+      "reason": "Fluid energy mill หรือ jet mill (micronizer) ทำงานโดยฉีดแก๊สความดันสูงผ่าน nozzle เข้าไปในห้องบด อนุภาคถูกเร่งความเร็วสูงจนชนกันเองและชนผนัง (particle–particle impact และ attrition) อนุภาคที่เล็กพอจะถูกพาออกไปยัง classifier/cyclone ส่วนอนุภาคใหญ่จะวนกลับมาบดซ้ำ จึงได้อนุภาคขนาดเล็กมากและกระจายขนาดแคบ (ประมาณ 1–20 µm โดยปรับให้ได้ < 5 µm สำหรับยาสูดพ่น ซึ่งต้องการ aerodynamic diameter ประมาณ 1–5 µm) แก๊สที่ขยายตัวออกจาก nozzle จะเย็นลง (Joule–Thomson effect) จึงไม่เกิดความร้อนสะสม เหมาะกับยาที่ไวต่อความร้อนหรือมีจุดหลอมเหลวต่ำ ข้อเสียคือใช้พลังงานสูง อาจเกิดประจุไฟฟ้าสถิตและบริเวณ amorphous บนผิวผลึก ซึ่งอาจต้อง conditioning หลังบด ส่วนเครื่องบดชนิดอื่นมักให้อนุภาคหยาบกว่าและเกิดความร้อนมากกว่า",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Fluid energy mill (jet mill / micronizer)",
+          "is_correct": true,
+          "explanation": "ถูกต้อง jet mill ให้อนุภาคระดับไมครอน (< 5 µm) และไม่เกิดความร้อนสะสม เป็นมาตรฐานในการผลิตยาสำหรับสูดพ่น"
+        },
+        {
+          "label": "B",
+          "text": "Hammer mill",
+          "is_correct": false,
+          "explanation": "Hammer mill ใช้แรงกระแทก (impact) ของค้อนหมุนเร็ว ได้อนุภาคประมาณ 10 µm ขึ้นไปถึงหลายร้อยไมครอน และเกิดความร้อนได้มาก ไม่เหมาะกับยาไวต่อความร้อนที่ต้องการขนาด < 5 µm"
+        },
+        {
+          "label": "C",
+          "text": "Roller mill",
+          "is_correct": false,
+          "explanation": "Roller mill ใช้แรงบีบอัด (compression) ระหว่างลูกกลิ้ง เหมาะกับการบดหยาบถึงปานกลาง ไม่สามารถลดขนาดถึงระดับ < 5 µm"
+        },
+        {
+          "label": "D",
+          "text": "Cutter mill",
+          "is_correct": false,
+          "explanation": "Cutter mill ใช้ใบมีดตัด เหมาะกับวัสดุเหนียว เป็นเส้นใย เช่น สมุนไพร ได้อนุภาคหยาบ"
+        },
+        {
+          "label": "E",
+          "text": "Oscillating granulator",
+          "is_correct": false,
+          "explanation": "Oscillating granulator ใช้ในการทำ granule ให้มีขนาดสม่ำเสมอ (sizing ผ่านตะแกรง) ไม่ใช่การลดขนาดอนุภาคระดับไมครอน"
+        }
+      ],
+      "key_takeaway": "Jet mill = 1–5 µm, ไม่ร้อน (เหมาะ thermolabile/inhalation) | Ball mill = impact+attrition | Hammer = impact | Roller = compression | Cutter = cutting"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "ผงผสมสำหรับตอกเม็ด 60 g เทลงกระบอกตวงได้ปริมาตร (bulk volume) 100 mL เมื่อนำไปเคาะ (tapping) จนปริมาตรคงที่ได้ปริมาตร (tapped volume) 75 mL ข้อใดแสดง Carr's compressibility index, Hausner ratio และการแปลผลความสามารถในการไหลตามเกณฑ์ USP <1174> ได้ถูกต้อง",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Carr's index 33%, Hausner ratio 1.33 — poor flow"
+      },
+      {
+        "label": "B",
+        "text": "Carr's index 20%, Hausner ratio 1.25 — fair flow"
+      },
+      {
+        "label": "C",
+        "text": "Carr's index 25%, Hausner ratio 1.33 — passable flow (อาจต้องเติม glidant)"
+      },
+      {
+        "label": "D",
+        "text": "Carr's index 25%, Hausner ratio 0.75 — good flow"
+      },
+      {
+        "label": "E",
+        "text": "Carr's index 25%, Hausner ratio 1.33 — excellent flow"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "ρbulk = 60/100 = 0.60 g/mL, ρtapped = 60/75 = 0.80 g/mL; CI = (0.80 − 0.60)/0.80 × 100 = 25%; HR = 0.80/0.60 = 1.33 → passable (CI 21–25, HR 1.26–1.34)",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. Carr's index 25%, Hausner ratio 1.33 — passable flow (อาจต้องเติม glidant) — CI = 25% และ HR = 1.33 อยู่ในช่วง passable ตาม USP",
+      "reason": "Bulk density คือมวลผงหารด้วยปริมาตรผงรวมช่องว่างระหว่างอนุภาค ส่วน tapped density วัดหลังเคาะจนปริมาตรคงที่ ผงที่ไหลยากมักมีแรงยึดเหนี่ยวระหว่างอนุภาคสูง จึงจัดเรียงหลวม ๆ ตอนเทและยุบตัวมากเมื่อเคาะ ทำให้ค่าความต่างระหว่าง bulk และ tapped density สูง Carr's compressibility index = 100 × (ρtapped − ρbulk)/ρtapped หรือ 100 × (V₀ − Vf)/V₀ และ Hausner ratio = ρtapped/ρbulk = V₀/Vf สองค่านี้สัมพันธ์กัน (HR = 100/(100 − CI)) เกณฑ์ USP <1174>: CI ≤ 10 (HR 1.00–1.11) excellent, 11–15 (1.12–1.18) good, 16–20 (1.19–1.25) fair, 21–25 (1.26–1.34) passable, 26–31 (1.35–1.45) poor, 32–37 (1.46–1.59) very poor, ≥ 38 (≥ 1.60) very, very poor ผงที่ passable อาจไหลได้แต่อาจมีปัญหา weight variation ในการตอกเม็ดความเร็วสูง จึงควรพิจารณาเติม glidant เช่น colloidal silicon dioxide 0.1–0.5% หรือทำ granulation",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Carr's index 33%, Hausner ratio 1.33 — poor flow",
+          "is_correct": false,
+          "explanation": "CI 33% เกิดจากใช้ bulk density เป็นตัวหาร ((0.80 − 0.60)/0.60) ซึ่งผิดสูตร สูตรที่ถูกต้องใช้ tapped density เป็นตัวหาร"
+        },
+        {
+          "label": "B",
+          "text": "Carr's index 20%, Hausner ratio 1.25 — fair flow",
+          "is_correct": false,
+          "explanation": "ค่า 20% และ 1.25 ไม่ได้มาจากข้อมูลนี้ จะได้ค่านี้เมื่อ tapped volume = 80 mL"
+        },
+        {
+          "label": "C",
+          "text": "Carr's index 25%, Hausner ratio 1.33 — passable flow (อาจต้องเติม glidant)",
+          "is_correct": true,
+          "explanation": "ถูกต้อง CI = (0.80 − 0.60)/0.80 × 100 = 25% และ HR = 0.80/0.60 = 1.33 ซึ่งอยู่ในช่วง passable"
+        },
+        {
+          "label": "D",
+          "text": "Carr's index 25%, Hausner ratio 0.75 — good flow",
+          "is_correct": false,
+          "explanation": "Hausner ratio = ρtapped/ρbulk ต้องมีค่า ≥ 1 เสมอ ค่า 0.75 เกิดจากกลับเศษและส่วน (ρbulk/ρtapped)"
+        },
+        {
+          "label": "E",
+          "text": "Carr's index 25%, Hausner ratio 1.33 — excellent flow",
+          "is_correct": false,
+          "explanation": "ค่าคำนวณถูก แต่แปลผลผิด excellent ต้องมี CI ≤ 10% และ HR 1.00–1.11"
+        }
+      ],
+      "key_takeaway": "CI = (ρt − ρb)/ρt × 100; HR = ρt/ρb; USP: ≤10 excellent / 11–15 good / 16–20 fair / 21–25 passable / 26–31 poor (HR 1.11 / 1.18 / 1.25 / 1.34 / 1.45)",
+      "calculation_steps": [
+        "ขั้นที่ 1: ρbulk = 60 g ÷ 100 mL = 0.60 g/mL",
+        "ขั้นที่ 2: ρtapped = 60 g ÷ 75 mL = 0.80 g/mL",
+        "ขั้นที่ 3: Carr's index = (0.80 − 0.60) ÷ 0.80 × 100 = 25%",
+        "ขั้นที่ 4: Hausner ratio = 0.80 ÷ 0.60 = 1.33",
+        "ขั้นที่ 5: เทียบเกณฑ์ USP <1174>: CI 21–25% และ HR 1.26–1.34 = passable"
+      ]
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ผงยาชนิดหนึ่งมี bulk density 0.60 g/cm³ และ true density 1.50 g/cm³ ค่า porosity ของผงยา (bed porosity) เป็นเท่าใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "40%"
+      },
+      {
+        "label": "B",
+        "text": "90%"
+      },
+      {
+        "label": "C",
+        "text": "25%"
+      },
+      {
+        "label": "D",
+        "text": "250%"
+      },
+      {
+        "label": "E",
+        "text": "60%"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "Porosity (ε) = 1 − (ρbulk/ρtrue) = 1 − (0.60/1.50) = 1 − 0.40 = 0.60 = 60%",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. 60% — porosity = 1 − 0.40 = 0.60 หรือ 60% ของปริมาตรผงเป็นช่องว่าง",
+      "reason": "Porosity (ε) คือสัดส่วนปริมาตรช่องว่าง (void) ต่อปริมาตรรวม (bulk volume) ของผง คำนวณได้จาก ε = (Vbulk − Vtrue)/Vbulk = 1 − ρbulk/ρtrue True density วัดปริมาตรของเนื้อของแข็งเพียงอย่างเดียว ไม่รวมช่องว่างระหว่างและภายในอนุภาค มักวัดด้วย helium pycnometer ส่วน bulk density รวมทั้งช่องว่างระหว่างอนุภาคและรูพรุนภายใน ในโจทย์นี้ ρbulk/ρtrue = 0.40 หมายความว่าเนื้อของแข็งจริงครอบครองเพียง 40% ของปริมาตรผง ที่เหลือ 60% เป็นช่องว่าง ค่า porosity มีความสำคัญต่อการไหล การอัดตัว และการแตกตัว/การละลายของยาเม็ด ยาเม็ดที่มี porosity สูงน้ำซึมเข้าได้เร็ว แตกตัวเร็ว แต่อาจมีความแข็งต่ำและ friability สูง ในทางปฏิบัติยาเม็ดทั่วไปมี porosity ประมาณ 5–30% ขึ้นกับแรงอัด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "40%",
+          "is_correct": false,
+          "explanation": "40% คือค่า ρbulk/ρtrue ซึ่งเป็นสัดส่วนของเนื้อของแข็ง (solid fraction หรือ relative density) ไม่ใช่ porosity"
+        },
+        {
+          "label": "B",
+          "text": "90%",
+          "is_correct": false,
+          "explanation": "90% ไม่สอดคล้องกับสูตรใด เป็นตัวลวง"
+        },
+        {
+          "label": "C",
+          "text": "25%",
+          "is_correct": false,
+          "explanation": "25% ไม่ได้มาจากการคำนวณที่ถูกต้อง"
+        },
+        {
+          "label": "D",
+          "text": "250%",
+          "is_correct": false,
+          "explanation": "250% คือ ρtrue/ρbulk × 100 ซึ่งกลับเศษส่วน และ porosity ไม่สามารถเกิน 100% ได้"
+        },
+        {
+          "label": "E",
+          "text": "60%",
+          "is_correct": true,
+          "explanation": "ถูกต้อง ε = 1 − 0.60/1.50 = 0.60 = 60%"
+        }
+      ],
+      "key_takeaway": "ε = 1 − ρbulk/ρtrue (หรือ 1 − ρapparent/ρtrue สำหรับยาเม็ด); ρbulk/ρtrue = solid fraction",
+      "calculation_steps": [
+        "ขั้นที่ 1: ε = 1 − (ρbulk ÷ ρtrue)",
+        "ขั้นที่ 2: ρbulk ÷ ρtrue = 0.60 g/cm³ ÷ 1.50 g/cm³ = 0.40",
+        "ขั้นที่ 3: ε = 1 − 0.40 = 0.60 = 60%"
+      ]
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "ในการวัด angle of repose ของ granule โดยวิธี fixed funnel ปล่อยให้ granule ไหลผ่านกรวยลงบนพื้นราบจนเกิดกองรูปกรวย วัดความสูงของกองได้ 2.5 cm และเส้นผ่านศูนย์กลางฐานกอง 8.0 cm ข้อใดแสดงค่า angle of repose และการแปลผลตาม USP <1174> ได้ถูกต้อง",
+    "choices": [
+      {
+        "label": "A",
+        "text": "17.4° — excellent flow"
+      },
+      {
+        "label": "B",
+        "text": "32.0° — good flow"
+      },
+      {
+        "label": "C",
+        "text": "32.0° — poor flow"
+      },
+      {
+        "label": "D",
+        "text": "58.0° — very poor flow"
+      },
+      {
+        "label": "E",
+        "text": "38.7° — fair flow"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "tan θ = h/r = 2.5/4.0 = 0.625 → θ = 32.0° ซึ่งอยู่ในช่วง 31–35° = good flow",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. 32.0° — good flow — ใช้รัศมี (ไม่ใช่เส้นผ่านศูนย์กลาง) ได้ tan θ = 0.625 → θ ≈ 32° = good",
+      "reason": "Angle of repose คือมุมสูงสุดที่ผิวของกองผงทำกับแนวราบ สะท้อนแรงเสียดทานและแรงยึดเหนี่ยวระหว่างอนุภาค คำนวณจาก tan θ = h/r โดย h คือความสูงกอง และ r คือรัศมีฐาน (ครึ่งหนึ่งของเส้นผ่านศูนย์กลาง) ในโจทย์ r = 8.0/2 = 4.0 cm ได้ tan θ = 0.625 และ θ = arctan(0.625) ≈ 32.0° เกณฑ์ USP <1174>: 25–30° excellent, 31–35° good, 36–40° fair (ไม่ต้องใช้ aid), 41–45° passable (อาจค้าง), 46–55° poor (ต้องเขย่า/vibrate), 56–65° very poor, > 66° very, very poor โดยทั่วไป angle of repose ต่ำกว่า 40° ถือว่าไหลได้ดีพอสำหรับการผลิต ค่านี้ขึ้นกับวิธีวัด จึงควรรายงานวิธีและใช้ร่วมกับ Carr's index/Hausner ratio การเพิ่มขนาดหรือความกลมของอนุภาค ลดความชื้น และเติม glidant ช่วยลด angle of repose",
+      "choices": [
+        {
+          "label": "A",
+          "text": "17.4° — excellent flow",
+          "is_correct": false,
+          "explanation": "17.4° เกิดจากใช้เส้นผ่านศูนย์กลางแทนรัศมี (tan θ = 2.5/8.0 = 0.3125) ซึ่งผิดสูตร"
+        },
+        {
+          "label": "B",
+          "text": "32.0° — good flow",
+          "is_correct": true,
+          "explanation": "ถูกต้อง tan θ = 2.5/4.0 = 0.625 → θ = 32.0° อยู่ในช่วง 31–35° = good flow"
+        },
+        {
+          "label": "C",
+          "text": "32.0° — poor flow",
+          "is_correct": false,
+          "explanation": "ค่ามุมถูกแต่แปลผลผิด poor flow ตาม USP คือ 46–55°"
+        },
+        {
+          "label": "D",
+          "text": "58.0° — very poor flow",
+          "is_correct": false,
+          "explanation": "58.0° เกิดจากกลับ h และ r (tan θ = 4.0/2.5 = 1.6) ซึ่งเป็นมุมของยอดกรวย ไม่ใช่มุมกับแนวราบ"
+        },
+        {
+          "label": "E",
+          "text": "38.7° — fair flow",
+          "is_correct": false,
+          "explanation": "38.7° ไม่สอดคล้องกับข้อมูล เป็นตัวลวง หากได้ค่านี้จริงจะแปลผลเป็น fair"
+        }
+      ],
+      "key_takeaway": "tan θ = h/r (r = รัศมี); USP: 25–30 excellent / 31–35 good / 36–40 fair / 41–45 passable / 46–55 poor / 56–65 very poor",
+      "calculation_steps": [
+        "ขั้นที่ 1: r = เส้นผ่านศูนย์กลาง ÷ 2 = 8.0 cm ÷ 2 = 4.0 cm",
+        "ขั้นที่ 2: tan θ = h ÷ r = 2.5 cm ÷ 4.0 cm = 0.625",
+        "ขั้นที่ 3: θ = arctan(0.625) ≈ 32.0°",
+        "ขั้นที่ 4: เทียบเกณฑ์ USP <1174>: 31–35° = good flow"
+      ]
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ตามสมการ Noyes–Whitney: dM/dt = D·A·(Cs − C)/h การเปลี่ยนแปลงข้อใดจะทำให้อัตราการละลาย (dissolution rate) ของยาลดลง",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ลดขนาดอนุภาคยาด้วยการ micronization"
+      },
+      {
+        "label": "B",
+        "text": "เพิ่มความเร็วรอบการกวนของ dissolution apparatus"
+      },
+      {
+        "label": "C",
+        "text": "เปลี่ยนจากยารูปกรดอิสระที่ละลายยากเป็นรูปเกลือโซเดียม"
+      },
+      {
+        "label": "D",
+        "text": "เติมสารเพิ่มความหนืด เช่น HPMC ลงในตัวกลางที่ใช้ละลาย"
+      },
+      {
+        "label": "E",
+        "text": "รักษา sink condition โดยใช้ปริมาตรตัวกลางมากกว่า 3 เท่าของปริมาตรที่ทำให้อิ่มตัว"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "ความหนืดที่เพิ่มขึ้นทำให้ diffusion coefficient (D) ลดลงตามสมการ Stokes–Einstein จึงลดอัตราการละลาย",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. เติมสารเพิ่มความหนืด เช่น HPMC ลงในตัวกลางที่ใช้ละลาย — การเพิ่มความหนืดของตัวกลางทำให้ D ลดลง อัตราการละลายจึงลดลง",
+      "reason": "สมการ Noyes–Whitney (รูปแบบของ Nernst–Brunner) อธิบายว่าอัตราการละลายขึ้นกับ D (diffusion coefficient ของยาในชั้น diffusion layer), A (พื้นที่ผิวที่สัมผัสตัวกลาง), Cs − C (ความต่างระหว่างความเข้มข้นอิ่มตัวที่ผิวอนุภาคกับความเข้มข้นในตัวกลาง) และ h (ความหนาของ diffusion layer) D แปรผกผันกับความหนืดของตัวกลางตาม Stokes–Einstein (D = kT/6πηr) ดังนั้นการเติมสารเพิ่มความหนืดจะลดอัตราการละลาย ปัจจัยที่เพิ่มอัตราการละลาย ได้แก่ ลดขนาดอนุภาค (เพิ่ม A), เพิ่มการกวน (ลด h), เพิ่ม Cs (ใช้เกลือ, polymorph ที่ไม่เสถียร, amorphous, เปลี่ยน pH) และรักษา sink condition (ให้ C ต่ำ) หลักการนี้ใช้อธิบายทั้งการออกแบบสูตรตำรับและการเลือกสภาวะ dissolution test เช่น การเติม surfactant (เช่น SLS) ใน medium สำหรับยาละลายยาก",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ลดขนาดอนุภาคยาด้วยการ micronization",
+          "is_correct": false,
+          "explanation": "การ micronization เพิ่มพื้นที่ผิว (A) จึงเพิ่มอัตราการละลาย ไม่ใช่ลด"
+        },
+        {
+          "label": "B",
+          "text": "เพิ่มความเร็วรอบการกวนของ dissolution apparatus",
+          "is_correct": false,
+          "explanation": "การกวนแรงขึ้นทำให้ diffusion layer บางลง (h ลดลง) จึงเพิ่มอัตราการละลาย"
+        },
+        {
+          "label": "C",
+          "text": "เปลี่ยนจากยารูปกรดอิสระที่ละลายยากเป็นรูปเกลือโซเดียม",
+          "is_correct": false,
+          "explanation": "รูปเกลือโซเดียมของกรดอ่อนมีความละลายที่ผิวอนุภาค (Cs) สูงขึ้นจาก microenvironment pH ที่สูง จึงเพิ่มอัตราการละลาย"
+        },
+        {
+          "label": "D",
+          "text": "เติมสารเพิ่มความหนืด เช่น HPMC ลงในตัวกลางที่ใช้ละลาย",
+          "is_correct": true,
+          "explanation": "ถูกต้อง ความหนืดเพิ่มขึ้น → D ลดลง → อัตราการละลายลดลง นอกจากนี้ HPMC ยังเป็นหลักการของ matrix ยาออกฤทธิ์นาน"
+        },
+        {
+          "label": "E",
+          "text": "รักษา sink condition โดยใช้ปริมาตรตัวกลางมากกว่า 3 เท่าของปริมาตรที่ทำให้อิ่มตัว",
+          "is_correct": false,
+          "explanation": "Sink condition ทำให้ C ต่ำ ความต่าง (Cs − C) จึงคงสูง อัตราการละลายสูงและคงที่ ไม่ใช่ลดลง"
+        }
+      ],
+      "key_takeaway": "Noyes–Whitney: ↑A (อนุภาคเล็ก), ↑Cs (เกลือ/amorphous), ↓h (กวนแรง), sink (C ต่ำ) → ละลายเร็ว; ↑ความหนืด → ↓D → ละลายช้า"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "ยาที่ละลายน้ำยากชนิดหนึ่งถูก micronize จากอนุภาคทรงกลมขนาดเส้นผ่านศูนย์กลาง 20 µm เป็น 5 µm ถ้ามวลยาเท่าเดิม และพิจารณาอัตราการละลายเริ่มต้นภายใต้ sink condition โดยสมมติว่า D, Cs และ h คงที่ อัตราการละลายเริ่มต้นจะเพิ่มขึ้นประมาณกี่เท่า",
+    "choices": [
+      {
+        "label": "A",
+        "text": "2 เท่า"
+      },
+      {
+        "label": "B",
+        "text": "16 เท่า"
+      },
+      {
+        "label": "C",
+        "text": "64 เท่า"
+      },
+      {
+        "label": "D",
+        "text": "0.25 เท่า (ลดลง)"
+      },
+      {
+        "label": "E",
+        "text": "4 เท่า"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "สำหรับมวลคงที่ พื้นที่ผิวรวม (specific surface area) ∝ 1/d เมื่อ d ลดลง 4 เท่า (20 → 5 µm) พื้นที่ผิวเพิ่ม 4 เท่า อัตราการละลายจึงเพิ่ม 4 เท่า",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. 4 เท่า — พื้นที่ผิวรวมต่อมวลแปรผกผันกับเส้นผ่านศูนย์กลาง ลด d 4 เท่า → A และ dissolution rate เพิ่ม 4 เท่า",
+      "reason": "สำหรับอนุภาคทรงกลม specific surface area (Sw) = 6/(ρ·d) แปรผกผันกับเส้นผ่านศูนย์กลาง ข้อผิดพลาดที่พบบ่อยคือคิดจากพื้นที่ผิวของอนุภาคเดี่ยว (∝ d²) แต่เมื่อมวลยาคงที่ จำนวนอนุภาคจะเพิ่มขึ้นตาม (d₁/d₂)³ = 64 เท่า ขณะที่พื้นที่ผิวต่ออนุภาคลดลง (d₂/d₁)² = 1/16 เท่า พื้นที่ผิวรวมจึงเพิ่มขึ้น 64/16 = 4 เท่า ตามสมการ Noyes–Whitney เมื่อ D, Cs, h คงที่และอยู่ใน sink condition อัตราการละลายแปรผันตรงกับ A จึงเพิ่มขึ้น 4 เท่า ในความเป็นจริง สำหรับอนุภาคเล็กมาก h อาจลดลงตามขนาดอนุภาคด้วย ซึ่งยิ่งเพิ่มอัตราการละลาย แต่การ micronization อาจทำให้อนุภาคเกาะกลุ่มและเปียกน้ำยาก (hydrophobic) ทำให้พื้นที่ผิวที่ใช้จริง (effective surface area) ไม่เพิ่มตามทฤษฎี จึงมักใช้ร่วมกับ wetting agent การลดขนาดอนุภาคมีประโยชน์ชัดเจนสำหรับยา BCS class II ที่ dissolution rate-limited เช่น griseofulvin, fenofibrate",
+      "choices": [
+        {
+          "label": "A",
+          "text": "2 เท่า",
+          "is_correct": false,
+          "explanation": "2 เท่าไม่สอดคล้องกับความสัมพันธ์ใด อาจเกิดจากคิดว่าพื้นที่ผิวแปรผันกับ √d"
+        },
+        {
+          "label": "B",
+          "text": "16 เท่า",
+          "is_correct": false,
+          "explanation": "16 เท่าคือการเปลี่ยนแปลงของพื้นที่ผิวต่ออนุภาคเดี่ยว (d²) ซึ่งคิดกลับทิศ และไม่ได้คำนึงถึงมวลรวมคงที่"
+        },
+        {
+          "label": "C",
+          "text": "64 เท่า",
+          "is_correct": false,
+          "explanation": "64 เท่าคือการเพิ่มขึ้นของจำนวนอนุภาค (d³) ไม่ใช่พื้นที่ผิวรวม"
+        },
+        {
+          "label": "D",
+          "text": "0.25 เท่า (ลดลง)",
+          "is_correct": false,
+          "explanation": "อนุภาคเล็กลงทำให้พื้นที่ผิวรวมเพิ่มขึ้น อัตราการละลายจึงเพิ่มขึ้น ไม่ใช่ลดลง"
+        },
+        {
+          "label": "E",
+          "text": "4 เท่า",
+          "is_correct": true,
+          "explanation": "ถูกต้อง พื้นที่ผิวรวม ∝ 1/d → (20/5) = 4 เท่า อัตราการละลายจึงเพิ่ม 4 เท่า"
+        }
+      ],
+      "key_takeaway": "มวลคงที่: Sw = 6/(ρd) → พื้นที่ผิวรวม ∝ 1/d; จำนวนอนุภาค ∝ 1/d³; พื้นที่ต่ออนุภาค ∝ d²",
+      "calculation_steps": [
+        "ขั้นที่ 1: พื้นที่ผิวรวมของมวลคงที่ (ทรงกลม) Sw = 6/(ρ·d) ∝ 1/d",
+        "ขั้นที่ 2: อัตราส่วน A(ใหม่)/A(เดิม) = d(เดิม)/d(ใหม่) = 20 µm ÷ 5 µm = 4",
+        "ขั้นที่ 3: ตรวจสอบ: จำนวนอนุภาคเพิ่ม (20/5)³ = 64 เท่า × พื้นที่ต่ออนุภาค (5/20)² = 1/16 → 64/16 = 4 เท่า",
+        "ขั้นที่ 4: Noyes–Whitney: dM/dt ∝ A → อัตราการละลายเพิ่ม 4 เท่า"
+      ]
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "Amoxicillin oral suspension ส่วนใหญ่จำหน่ายในรูป dry powder for reconstitution ให้ผู้ป่วยผสมน้ำก่อนใช้ และกำหนดให้ใช้ให้หมดภายในประมาณ 7–14 วันหลังผสม (เก็บในตู้เย็น) เหตุผลหลักของการออกแบบนี้คือการป้องกันการสลายตัวแบบใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Oxidation ของ phenolic group"
+      },
+      {
+        "label": "B",
+        "text": "Hydrolysis ของ β-lactam ring"
+      },
+      {
+        "label": "C",
+        "text": "Photolysis ของ thiazolidine ring"
+      },
+      {
+        "label": "D",
+        "text": "Racemization ที่ α-carbon"
+      },
+      {
+        "label": "E",
+        "text": "Decarboxylation ของ carboxylic acid group"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "β-lactam ring เป็น cyclic amide ที่มีความเครียดสูง จึงถูก hydrolyze ได้ง่ายในน้ำ การทำเป็นผงแห้งแล้วผสมน้ำก่อนใช้ช่วยลดเวลาที่ยาสัมผัสน้ำ",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. Hydrolysis ของ β-lactam ring — ยากลุ่ม penicillin ถูก hydrolysis ที่ β-lactam ring ในน้ำ จึงทำเป็นผงแห้งผสมน้ำก่อนใช้",
+      "reason": "Hydrolysis เป็นการสลายตัวที่พบบ่อยที่สุดของยา เกิดกับหมู่ ester (เช่น aspirin, procaine, benzocaine), amide (เช่น lidocaine ซึ่งเสถียรกว่า ester มาก), lactam, lactone และ imide β-lactam ring ของ penicillin และ cephalosporin เป็นวงสี่เหลี่ยมที่มีความเครียดของวง (ring strain) สูงและ resonance ของ amide ลดลง จึงไวต่อ hydrolysis มากกว่า amide ทั่วไป ผลิตภัณฑ์ที่ได้คือ penicilloic acid ซึ่งไม่มีฤทธิ์ต้านเชื้อ การป้องกัน hydrolysis ทำได้หลายวิธี ได้แก่ ทำเป็นผงแห้งสำหรับผสมน้ำก่อนใช้ (dry powder for reconstitution/injection), ปรับ pH ไปยังจุดที่เสถียรสูงสุดด้วย buffer, ใช้ตัวทำละลายที่ไม่ใช่น้ำหรือลดปริมาณน้ำ, ลดอุณหภูมิในการเก็บ (ตู้เย็นช่วยลด k ตาม Arrhenius), ทำเป็นยาน้ำแขวนตะกอนเพื่อลดยาที่ละลายอยู่ หรือใช้ complexation ป้องกันหมู่ที่ไว ในทางปฏิบัติ เภสัชกรต้องแนะนำผู้ป่วยให้ผสมน้ำตามปริมาตรที่กำหนด เก็บในตู้เย็นและทิ้งส่วนที่เหลือเมื่อพ้นกำหนด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Oxidation ของ phenolic group",
+          "is_correct": false,
+          "explanation": "Amoxicillin มีหมู่ phenol อยู่จริง แต่การสลายตัวหลักที่จำกัดอายุยาหลังผสมน้ำคือ hydrolysis ของ β-lactam ring ไม่ใช่ oxidation"
+        },
+        {
+          "label": "B",
+          "text": "Hydrolysis ของ β-lactam ring",
+          "is_correct": true,
+          "explanation": "ถูกต้อง β-lactam ring ถูก hydrolyze ได้ง่ายในน้ำ ได้ penicilloic acid ที่ไม่มีฤทธิ์ จึงต้องทำเป็นผงแห้งและจำกัดอายุหลังผสม"
+        },
+        {
+          "label": "C",
+          "text": "Photolysis ของ thiazolidine ring",
+          "is_correct": false,
+          "explanation": "Photolysis ไม่ใช่กลไกหลักของการสลายตัวของ penicillin ในยาน้ำ และการแก้ปัญหาแสงใช้ภาชนะทึบแสง ไม่ใช่การทำผงแห้ง"
+        },
+        {
+          "label": "D",
+          "text": "Racemization ที่ α-carbon",
+          "is_correct": false,
+          "explanation": "Racemization ไม่ใช่การสลายตัวหลักที่จำกัดอายุของ amoxicillin suspension ตัวอย่างยาที่มีปัญหา racemization ได้แก่ epinephrine, hyoscyamine"
+        },
+        {
+          "label": "E",
+          "text": "Decarboxylation ของ carboxylic acid group",
+          "is_correct": false,
+          "explanation": "Decarboxylation ไม่ใช่การสลายตัวหลักของ penicillin ในน้ำที่อุณหภูมิปกติ"
+        }
+      ],
+      "key_takeaway": "Hydrolysis: ester > amide; β-lactam ไวมาก → dry powder for reconstitution, buffer ที่ pH เสถียรสูงสุด, เก็บเย็น"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "Epinephrine injection ที่เก็บไว้ระยะหนึ่งเปลี่ยนเป็นสีชมพูและต่อมาเป็นสีน้ำตาล เนื่องจากเกิด adrenochrome และ melanin-like product มาตรการใดเหมาะสมที่สุดในการปรับสูตรตำรับเพื่อป้องกันปัญหานี้",
+    "choices": [
+      {
+        "label": "A",
+        "text": "เติม butylated hydroxytoluene (BHT) และปรับ pH เป็น 8.0"
+      },
+      {
+        "label": "B",
+        "text": "เติม benzalkonium chloride เป็น preservative และใช้ขวดพลาสติกใส"
+      },
+      {
+        "label": "C",
+        "text": "เปลี่ยนเป็นยาน้ำแขวนตะกอนเพื่อลดยาที่ละลายอยู่"
+      },
+      {
+        "label": "D",
+        "text": "เติม sodium metabisulfite และ disodium edetate ปรับ pH ให้อยู่ในช่วงกรด (ประมาณ 3–4) และแทนที่อากาศเหนือสารละลายด้วยไนโตรเจน"
+      },
+      {
+        "label": "E",
+        "text": "เติม sodium chloride เพื่อปรับ tonicity ให้สูงขึ้น"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "สีชมพู–น้ำตาลเกิดจาก oxidation ของ catechol การป้องกันใช้ water-soluble antioxidant ที่ทำงานดีใน pH กรด (sodium metabisulfite), chelating agent (EDTA จับโลหะที่เร่งปฏิกิริยา), pH ต่ำ และไล่ออกซิเจนด้วย N₂",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. เติม sodium metabisulfite และ disodium edetate ปรับ pH ให้อยู่ในช่วงกรด (ประมาณ 3–4) และแทนที่อากาศเหนือสารละลายด้วยไนโตรเจน — ป้องกัน oxidation ด้วย antioxidant + chelator + pH กรด + nitrogen purge",
+      "reason": "Epinephrine มีโครงสร้าง catechol (o-dihydroxybenzene) ซึ่งถูก oxidize ได้ง่าย โดยเฉพาะเมื่อมีออกซิเจน แสง ไอออนโลหะหนัก (Cu²⁺, Fe³⁺) และ pH ที่เป็นกลางถึงด่าง ผลิตภัณฑ์คือ adrenochrome (สีชมพู–แดง) ซึ่งพอลิเมอไรซ์ต่อเป็นสารสีน้ำตาลคล้าย melanin การป้องกัน oxidation ในยาฉีดที่เป็นน้ำประกอบด้วย (1) antioxidant ที่ละลายน้ำและถูก oxidize ได้ง่ายกว่ายา (reducing agent) เช่น sodium metabisulfite หรือ sodium bisulfite ซึ่งเหมาะกับ pH กรด (sodium sulfite เหมาะกับ pH ด่าง) ใช้ประมาณ 0.1% (2) chelating agent เช่น disodium edetate (0.01–0.1%) จับไอออนโลหะที่เป็นตัวเร่ง (3) ปรับ pH ให้ต่ำ (epinephrine injection มี pH ประมาณ 2.2–5.0) (4) ไล่ออกซิเจนด้วยการ purge ไนโตรเจนและบรรจุ headspace ด้วย N₂ (5) บรรจุในภาชนะสีชาหรือกล่องกันแสง ทั้งนี้ต้องระวังว่า bisulfite อาจทำให้เกิดอาการแพ้ในผู้ป่วยบางราย และไม่ควรใช้ยาที่เปลี่ยนสีหรือมีตะกอน",
+      "choices": [
+        {
+          "label": "A",
+          "text": "เติม butylated hydroxytoluene (BHT) และปรับ pH เป็น 8.0",
+          "is_correct": false,
+          "explanation": "BHT เป็น oil-soluble antioxidant ไม่เหมาะกับยาฉีดที่เป็นน้ำ และการปรับ pH เป็น 8 จะเร่ง oxidation ของ catechol ให้รุนแรงขึ้น"
+        },
+        {
+          "label": "B",
+          "text": "เติม benzalkonium chloride เป็น preservative และใช้ขวดพลาสติกใส",
+          "is_correct": false,
+          "explanation": "Benzalkonium chloride เป็นสารกันเสียไม่ได้ป้องกัน oxidation และขวดพลาสติกใสยอมให้แสงและออกซิเจนผ่านมากขึ้น ยิ่งทำให้แย่ลง"
+        },
+        {
+          "label": "C",
+          "text": "เปลี่ยนเป็นยาน้ำแขวนตะกอนเพื่อลดยาที่ละลายอยู่",
+          "is_correct": false,
+          "explanation": "การทำเป็นยาแขวนตะกอนใช้ได้กับ hydrolysis ในบางกรณี แต่ไม่เหมาะกับยาฉีด epinephrine ที่ต้องเป็นสารละลายใสและออกฤทธิ์เร็ว"
+        },
+        {
+          "label": "D",
+          "text": "เติม sodium metabisulfite และ disodium edetate ปรับ pH ให้อยู่ในช่วงกรด (ประมาณ 3–4) และแทนที่อากาศเหนือสารละลายด้วยไนโตรเจน",
+          "is_correct": true,
+          "explanation": "ถูกต้อง การใช้ sodium metabisulfite + EDTA + pH กรด + nitrogen purge เป็นมาตรการมาตรฐานในการป้องกัน oxidation ของ catecholamine injection"
+        },
+        {
+          "label": "E",
+          "text": "เติม sodium chloride เพื่อปรับ tonicity ให้สูงขึ้น",
+          "is_correct": false,
+          "explanation": "การปรับ tonicity ด้วย NaCl ไม่มีผลต่อการป้องกัน oxidation"
+        }
+      ],
+      "key_takeaway": "Oxidation: catechol/phenol/thiol/polyene → antioxidant (metabisulfite: pH กรด; sulfite: pH ด่าง; ascorbic acid; BHT/BHA/tocopherol สำหรับน้ำมัน) + EDTA + N₂ + pH ต่ำ + กันแสง"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "Nifedipine soft capsule ผลิตโดยใช้ gelatin shell ที่มีสีทึบแสง (มี titanium dioxide หรือ iron oxide) และฉลากแนะนำให้เก็บยาไว้ในแผงจนกว่าจะใช้ เหตุผลหลักคือการป้องกันการสลายตัวแบบใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Photolysis (photodegradation) ของ dihydropyridine ring ไปเป็นอนุพันธ์ pyridine"
+      },
+      {
+        "label": "B",
+        "text": "Hydrolysis ของ ester group"
+      },
+      {
+        "label": "C",
+        "text": "Racemization ของ chiral center"
+      },
+      {
+        "label": "D",
+        "text": "การดูดความชื้นของ gelatin shell"
+      },
+      {
+        "label": "E",
+        "text": "Maillard reaction ระหว่างยากับ gelatin"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Nifedipine ไวต่อแสงมาก dihydropyridine ring ถูก oxidize เป็น nitroso/nitrophenylpyridine derivative เมื่อโดนแสง จึงต้องใช้ capsule shell ทึบแสงและบรรจุภัณฑ์กันแสง",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. Photolysis (photodegradation) ของ dihydropyridine ring ไปเป็นอนุพันธ์ pyridine — nifedipine เกิด photodegradation ได้ง่าย จึงต้องป้องกันแสงด้วย opacifier และบรรจุภัณฑ์",
+      "reason": "Photolysis คือการสลายตัวของยาที่เกิดจากการดูดกลืนพลังงานแสง (โดยเฉพาะ UV และแสงสีน้ำเงินในช่วงความยาวคลื่นสั้น) ทำให้โมเลกุลอยู่ในสภาวะกระตุ้นแล้วเกิดปฏิกิริยา เช่น oxidation, ring cleavage หรือ polymerization ยากลุ่ม 1,4-dihydropyridine เช่น nifedipine ไวต่อแสงมาก แสงทำให้ dihydropyridine ring ถูก aromatize เป็น pyridine derivative (เช่น nitrosophenylpyridine) ซึ่งไม่มีฤทธิ์ ยาอื่นที่ไวแสง เช่น sodium nitroprusside, riboflavin, furosemide, phenothiazines, vitamin A และ amphotericin B การป้องกันทำโดยใช้ภาชนะสีชา (amber glass ซึ่งกรองแสงความยาวคลื่นต่ำกว่าประมาณ 470 nm), ภาชนะทึบแสง, เติม opacifier เช่น titanium dioxide หรือ iron oxide ใน film coat หรือ capsule shell, บรรจุใน blister ที่ทึบแสง และเก็บในกล่อง การทดสอบ photostability ทำตาม ICH Q1B ซึ่งกำหนดการฉายแสงอย่างน้อย 1.2 million lux·hours และ near-UV 200 W·h/m²",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Photolysis (photodegradation) ของ dihydropyridine ring ไปเป็นอนุพันธ์ pyridine",
+          "is_correct": true,
+          "explanation": "ถูกต้อง nifedipine เกิด photodegradation ที่ dihydropyridine ring จึงต้องใช้ shell ทึบแสงและบรรจุภัณฑ์กันแสง"
+        },
+        {
+          "label": "B",
+          "text": "Hydrolysis ของ ester group",
+          "is_correct": false,
+          "explanation": "Nifedipine มีหมู่ ester แต่ในยาเม็ดหรือแคปซูลที่ปราศจากน้ำ hydrolysis ไม่ใช่ปัญหาหลัก และ TiO₂ ไม่ได้ป้องกัน hydrolysis"
+        },
+        {
+          "label": "C",
+          "text": "Racemization ของ chiral center",
+          "is_correct": false,
+          "explanation": "Nifedipine ไม่มี chiral center (โมเลกุลสมมาตร) จึงไม่เกิด racemization"
+        },
+        {
+          "label": "D",
+          "text": "การดูดความชื้นของ gelatin shell",
+          "is_correct": false,
+          "explanation": "TiO₂/iron oxide เป็น opacifier ไม่ได้ป้องกันความชื้น ความชื้นป้องกันด้วยบรรจุภัณฑ์ที่กันความชื้นและ desiccant"
+        },
+        {
+          "label": "E",
+          "text": "Maillard reaction ระหว่างยากับ gelatin",
+          "is_correct": false,
+          "explanation": "Maillard reaction เกิดระหว่าง amine กับ reducing sugar ไม่เกี่ยวกับ opacifier ใน gelatin shell"
+        }
+      ],
+      "key_takeaway": "ยาไวแสง: nifedipine (DHP), nitroprusside, riboflavin, furosemide, phenothiazine, vitamin A → amber/opaque, TiO₂, ICH Q1B"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "สารละลาย l-hyoscyamine ที่เก็บไว้นานพบว่าฤทธิ์ทางเภสัชวิทยาลดลงประมาณครึ่งหนึ่ง ทั้งที่การวิเคราะห์ด้วยวิธีที่ไม่จำเพาะต่อ stereoisomer (เช่น UV spectrophotometry) ยังพบปริมาณสารสำคัญรวมใกล้เคียงเดิม การสลายตัวแบบใดอธิบายได้ดีที่สุด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Hydrolysis ของ ester ได้ tropine และ tropic acid"
+      },
+      {
+        "label": "B",
+        "text": "Oxidation ของ tertiary amine เป็น N-oxide"
+      },
+      {
+        "label": "C",
+        "text": "Racemization ของ l-hyoscyamine เป็น atropine (dl-hyoscyamine) ซึ่ง d-isomer มีฤทธิ์ต่ำมาก"
+      },
+      {
+        "label": "D",
+        "text": "Photolysis ของ aromatic ring"
+      },
+      {
+        "label": "E",
+        "text": "Polymerization ได้ dimer ที่ไม่มีฤทธิ์"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Racemization เปลี่ยน l-isomer ที่ออกฤทธิ์เป็นส่วนผสม racemic (atropine) ปริมาณรวมไม่เปลี่ยน แต่ฤทธิ์ลดลงประมาณครึ่งหนึ่ง เพราะ d-isomer แทบไม่มีฤทธิ์",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. Racemization ของ l-hyoscyamine เป็น atropine (dl-hyoscyamine) ซึ่ง d-isomer มีฤทธิ์ต่ำมาก — racemization ทำให้ปริมาณรวมคงเดิมแต่ฤทธิ์ลดลงประมาณครึ่งหนึ่ง",
+      "reason": "Racemization คือการที่ optically active compound (enantiomer เดี่ยว) เปลี่ยนเป็นส่วนผสมของ enantiomer ทั้งสองในสัดส่วนเท่ากัน (racemic mixture) มักเกิดที่ chiral carbon ที่มี hydrogen ซึ่งถูกดึงออกได้ (acidic α-hydrogen) ผ่าน carbanion/enol intermediate ปฏิกิริยาขึ้นกับ pH และอุณหภูมิ เนื่องจากองค์ประกอบทางเคมีไม่เปลี่ยน วิธีวิเคราะห์ที่ไม่จำเพาะต่อ stereochemistry เช่น UV หรือ HPLC แบบ achiral จะตรวจไม่พบการเปลี่ยนแปลง ต้องใช้ polarimetry หรือ chiral HPLC l-hyoscyamine (ซึ่งเป็น active isomer) racemize เป็น atropine (dl-hyoscyamine) ได้ฤทธิ์ประมาณครึ่งหนึ่ง ตัวอย่างอื่นคือ l-epinephrine racemize ในสารละลายที่ pH ต่ำมาก (d-epinephrine มีฤทธิ์ต่ำกว่ามาก) ส่วน pilocarpine เกิด epimerization เป็น isopilocarpine ที่ C-α การป้องกันทำโดยควบคุม pH ให้อยู่ในช่วงเสถียรสูงสุด และลดอุณหภูมิการเก็บ",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Hydrolysis ของ ester ได้ tropine และ tropic acid",
+          "is_correct": false,
+          "explanation": "Hydrolysis ของ ester จะได้ tropine และ tropic acid ซึ่งทำให้ปริมาณสารสำคัญลดลงและตรวจพบได้ ไม่สอดคล้องกับข้อมูลที่ปริมาณรวมคงเดิม"
+        },
+        {
+          "label": "B",
+          "text": "Oxidation ของ tertiary amine เป็น N-oxide",
+          "is_correct": false,
+          "explanation": "Oxidation เป็น N-oxide เปลี่ยนโครงสร้างทางเคมี ทำให้ปริมาณสารเดิมลดลง และมักต้องมีออกซิเจนหรือ peroxide"
+        },
+        {
+          "label": "C",
+          "text": "Racemization ของ l-hyoscyamine เป็น atropine (dl-hyoscyamine) ซึ่ง d-isomer มีฤทธิ์ต่ำมาก",
+          "is_correct": true,
+          "explanation": "ถูกต้อง racemization เปลี่ยน l-hyoscyamine เป็น atropine ปริมาณรวมคงเดิม แต่ฤทธิ์ลดลงเหลือราวครึ่งหนึ่ง"
+        },
+        {
+          "label": "D",
+          "text": "Photolysis ของ aromatic ring",
+          "is_correct": false,
+          "explanation": "Photolysis จะเปลี่ยนโครงสร้างโมเลกุลและลดปริมาณสารสำคัญที่ตรวจได้ ไม่ใช่กรณีนี้"
+        },
+        {
+          "label": "E",
+          "text": "Polymerization ได้ dimer ที่ไม่มีฤทธิ์",
+          "is_correct": false,
+          "explanation": "Polymerization ทำให้ได้สารโมเลกุลใหญ่ ปริมาณ monomer ลดลง ไม่สอดคล้องกับข้อมูล"
+        }
+      ],
+      "key_takeaway": "Racemization: ปริมาณรวมไม่เปลี่ยน แต่ฤทธิ์ลด (ต้องตรวจด้วย polarimetry/chiral HPLC) — l-hyoscyamine → atropine, l-epinephrine → racemic"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ยาน้ำแขวนตะกอนตำรับหนึ่งมีความแรง 250 mg/5 mL (รวมยาทั้งที่ละลายและไม่ละลาย = 50 mg/mL) ยามีความละลายในตัวกลาง (Cs) = 2 mg/mL และยาที่ละลายอยู่สลายตัวแบบ first-order ด้วย k = 0.05 day⁻¹ ที่ 25 °C โดยยาส่วนที่เป็นของแข็งไม่สลายตัวและละลายมาทดแทนได้ทันที อายุการใช้ (t90) ของตำรับนี้ที่ 25 °C ใกล้เคียงข้อใดมากที่สุด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "2.1 วัน"
+      },
+      {
+        "label": "B",
+        "text": "13.9 วัน"
+      },
+      {
+        "label": "C",
+        "text": "25 วัน"
+      },
+      {
+        "label": "D",
+        "text": "50 วัน"
+      },
+      {
+        "label": "E",
+        "text": "500 วัน"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "ยาน้ำแขวนตะกอนสลายตัวแบบ apparent zero-order: k₀ = k·Cs = 0.05 × 2 = 0.1 mg/mL/day; t90 = 0.1·C₀/k₀ = (0.1 × 50)/0.1 = 50 วัน",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. 50 วัน — ใน suspension ความเข้มข้นยาที่ละลายคงที่เท่า Cs จึงสลายตัวแบบ apparent zero-order ได้ t90 = 0.1C₀/(k·Cs) = 50 วัน",
+      "reason": "ในยาน้ำแขวนตะกอน การสลายตัวเกิดกับยาที่ละลายอยู่ในตัวกลางเป็นหลัก เมื่อยาที่ละลายถูกทำลาย ยาส่วนที่เป็นของแข็งจะละลายมาทดแทน ทำให้ความเข้มข้นของยาที่ละลายคงที่เท่ากับ Cs ตลอดช่วงที่ยังมีของแข็งเหลืออยู่ อัตราการสลายตัว = k·Cs ซึ่งคงที่ จึงเป็น apparent (pseudo) zero-order โดย k₀ = k₁ × Cs สำหรับ zero-order ความเข้มข้นลดลงเป็นเส้นตรง C = C₀ − k₀t ดังนั้น t90 = 0.1C₀/k₀ ในโจทย์ k₀ = 0.05 day⁻¹ × 2 mg/mL = 0.1 mg/mL/day และ t90 = 5 mg/mL ÷ 0.1 mg/mL/day = 50 วัน เปรียบเทียบกับถ้ายาทั้งหมดละลายเป็น solution (first-order) t90 จะเป็นเพียง 0.105/0.05 = 2.1 วัน นี่คือเหตุผลที่การทำยาที่ไม่เสถียรในน้ำให้อยู่ในรูป suspension ช่วยยืดอายุยาได้ และการลด Cs (เช่น ใช้รูปเกลือหรืออนุพันธ์ที่ละลายน้อยลง) ช่วยเพิ่มความคงตัวได้",
+      "choices": [
+        {
+          "label": "A",
+          "text": "2.1 วัน",
+          "is_correct": false,
+          "explanation": "2.1 วันคือ t90 แบบ first-order (0.105/k) ซึ่งใช้ได้เมื่อยาทั้งหมดละลายเป็นสารละลาย ไม่ใช่ suspension"
+        },
+        {
+          "label": "B",
+          "text": "13.9 วัน",
+          "is_correct": false,
+          "explanation": "13.9 วันคือ t1/2 แบบ first-order (0.693/k) ทั้งผิด order และผิดนิยามของ shelf-life"
+        },
+        {
+          "label": "C",
+          "text": "25 วัน",
+          "is_correct": false,
+          "explanation": "25 วันคือ t1/2 แบบ zero-order (0.5C₀/k₀) ไม่ใช่ t90"
+        },
+        {
+          "label": "D",
+          "text": "50 วัน",
+          "is_correct": true,
+          "explanation": "ถูกต้อง k₀ = k·Cs = 0.1 mg/mL/day และ t90 = 0.1 × 50/0.1 = 50 วัน"
+        },
+        {
+          "label": "E",
+          "text": "500 วัน",
+          "is_correct": false,
+          "explanation": "500 วันคือ C₀/k₀ ซึ่งเป็นเวลาที่ยาสลายหมด 100% ไม่ใช่เวลาที่เหลือ 90%"
+        }
+      ],
+      "key_takeaway": "Suspension = apparent zero-order: k₀ = k₁·Cs; t90 = 0.1C₀/k₀; t1/2 = 0.5C₀/k₀",
+      "calculation_steps": [
+        "ขั้นที่ 1: C₀ = 250 mg ÷ 5 mL = 50 mg/mL",
+        "ขั้นที่ 2: k₀ = k₁ × Cs = 0.05 day⁻¹ × 2 mg/mL = 0.1 mg/mL/day",
+        "ขั้นที่ 3: ปริมาณที่ยอมให้สลายได้ = 10% × 50 mg/mL = 5 mg/mL",
+        "ขั้นที่ 4: t90 = 5 mg/mL ÷ 0.1 mg/mL/day = 50 วัน"
+      ]
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "สารละลายยาฉีดชนิดหนึ่งสลายตัวแบบ first-order ผลการศึกษาความคงตัวที่ 25 °C พบว่าเมื่อเก็บไว้ 30 วัน ปริมาณยาเหลือ 95.0% ของปริมาณเริ่มต้น อายุยา (t90) ที่ 25 °C ใกล้เคียงข้อใดมากที่สุด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "60 วัน"
+      },
+      {
+        "label": "B",
+        "text": "405 วัน"
+      },
+      {
+        "label": "C",
+        "text": "6.2 วัน"
+      },
+      {
+        "label": "D",
+        "text": "90 วัน"
+      },
+      {
+        "label": "E",
+        "text": "61.6 วัน"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "k = ln(100/95)/30 = 0.05129/30 = 1.71 × 10⁻³ day⁻¹; t90 = 0.1054/k = 0.1054/0.00171 ≈ 61.6 วัน",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. 61.6 วัน — หา k จาก ln(C₀/C)/t แล้วใช้ t90 = 0.105/k ได้ประมาณ 61.6 วัน",
+      "reason": "ปฏิกิริยา first-order มีอัตราการสลายตัวแปรผันตามความเข้มข้นที่เหลืออยู่ สมการคือ ln C = ln C₀ − kt หรือ k = ln(C₀/C)/t ข้อมูลที่เหลือ 95% ที่ 30 วัน ให้ k = ln(1/0.95)/30 = 0.051293/30 = 0.0017098 day⁻¹ จากนั้น t90 = ln(100/90)/k = 0.10536/k ≈ 61.6 วัน (t1/2 = 0.693/k ≈ 405 วัน) ข้อผิดพลาดที่พบบ่อยคือคิดแบบเส้นตรง (zero-order) ว่า 5% ใน 30 วัน ดังนั้น 10% ใน 60 วัน ซึ่งให้ค่าใกล้เคียงแต่ไม่ถูกต้อง เพราะ first-order สลายตัวช้าลงเรื่อย ๆ เมื่อความเข้มข้นลดลง สำหรับการเปลี่ยนแปลงเล็กน้อยค่าทั้งสองจะใกล้กัน แต่จะต่างกันมากขึ้นเมื่อสลายตัวมาก ในทางปฏิบัติ shelf-life ตาม ICH Q1E กำหนดจากการวิเคราะห์ regression ของข้อมูลหลายจุดเวลาและใช้ 95% one-sided confidence limit ตัดกับ specification (มักเป็น 90% ของ label claim)",
+      "choices": [
+        {
+          "label": "A",
+          "text": "60 วัน",
+          "is_correct": false,
+          "explanation": "60 วันเกิดจากการคิดแบบ zero-order (สลาย 5% ทุก 30 วัน) ซึ่งไม่ถูกต้องสำหรับปฏิกิริยา first-order แม้ค่าจะใกล้เคียง"
+        },
+        {
+          "label": "B",
+          "text": "405 วัน",
+          "is_correct": false,
+          "explanation": "405 วันคือ t1/2 (0.693/k) ไม่ใช่ t90"
+        },
+        {
+          "label": "C",
+          "text": "6.2 วัน",
+          "is_correct": false,
+          "explanation": "6.2 วันไม่สอดคล้องกับข้อมูล เกิดจากการคำนวณกำลังของ 10 หรือหน่วยผิดพลาด"
+        },
+        {
+          "label": "D",
+          "text": "90 วัน",
+          "is_correct": false,
+          "explanation": "90 วันไม่สอดคล้องกับการคำนวณใด เป็นตัวลวงสำหรับผู้ที่สับสนระหว่าง 90% กับจำนวนวัน"
+        },
+        {
+          "label": "E",
+          "text": "61.6 วัน",
+          "is_correct": true,
+          "explanation": "ถูกต้อง k = ln(1/0.95)/30 = 1.71 × 10⁻³ day⁻¹ และ t90 = 0.1054/k ≈ 61.6 วัน"
+        }
+      ],
+      "key_takeaway": "First-order: k = ln(C₀/C)/t; t90 = 0.105/k; t1/2 = 0.693/k; t90 ≈ 0.152 × t1/2",
+      "calculation_steps": [
+        "ขั้นที่ 1: k = ln(C₀/C) ÷ t = ln(100/95) ÷ 30 day",
+        "ขั้นที่ 2: ln(1.0526) = 0.05129 → k = 0.05129 ÷ 30 = 0.001710 day⁻¹",
+        "ขั้นที่ 3: t90 = ln(100/90) ÷ k = 0.1054 ÷ 0.001710 day⁻¹",
+        "ขั้นที่ 4: t90 ≈ 61.6 วัน (ตรวจสอบ: t1/2 = 0.693 ÷ 0.001710 ≈ 405 วัน)"
+      ]
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "สารละลายยาความเข้มข้นเริ่มต้น 100 mg/mL สลายตัวแบบ first-order เมื่อเก็บไว้ 30 วันวัดได้ 90 mg/mL ถ้าเก็บต่อในสภาวะเดิมจนครบ 60 วันนับจากวันเริ่มต้น ความเข้มข้นของยาที่คาดว่าจะเหลือคือเท่าใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "81 mg/mL"
+      },
+      {
+        "label": "B",
+        "text": "80 mg/mL"
+      },
+      {
+        "label": "C",
+        "text": "85 mg/mL"
+      },
+      {
+        "label": "D",
+        "text": "45 mg/mL"
+      },
+      {
+        "label": "E",
+        "text": "72.9 mg/mL"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "First-order สลายตัวเป็นสัดส่วนคงที่ต่อช่วงเวลา ทุก 30 วันเหลือ 90% ของที่มีอยู่ ดังนั้น 60 วันเหลือ 100 × 0.9 × 0.9 = 81 mg/mL",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. 81 mg/mL — first-order สลายตัวเป็น 'สัดส่วน' คงที่ต่อช่วงเวลาเท่ากัน จึงเหลือ 100 × 0.9² = 81 mg/mL",
+      "reason": "หัวใจของปฏิกิริยา first-order คือ อัตราการสลายตัวแปรผันตามความเข้มข้นที่เหลืออยู่ ทำให้ในช่วงเวลาเท่ากัน ยาจะสลายตัวไป 'ร้อยละ' เท่ากันเสมอ (ไม่ใช่ปริมาณเท่ากัน) จาก C = C₀e^(−kt) ถ้า 30 วันเหลือ 90% (e^(−30k) = 0.9) แล้ว 60 วันจะเหลือ e^(−60k) = (0.9)² = 0.81 หรือ 81 mg/mL หากเป็น zero-order ปริมาณที่สลายต่อช่วงเวลาจะคงที่ (10 mg/mL ต่อ 30 วัน) จะเหลือ 80 mg/mL ความแตกต่างนี้ใช้แยก order ของปฏิกิริยาจากข้อมูลความคงตัว โดยพล็อต ln C vs t (เส้นตรงสำหรับ first-order) หรือ C vs t (เส้นตรงสำหรับ zero-order) ยาในรูปสารละลายส่วนใหญ่สลายตัวแบบ first-order หรือ pseudo-first-order ขณะที่ยาน้ำแขวนตะกอนมักเป็น apparent zero-order",
+      "choices": [
+        {
+          "label": "A",
+          "text": "81 mg/mL",
+          "is_correct": true,
+          "explanation": "ถูกต้อง first-order: C(60) = C₀ × (0.9)^(60/30) = 100 × 0.81 = 81 mg/mL"
+        },
+        {
+          "label": "B",
+          "text": "80 mg/mL",
+          "is_correct": false,
+          "explanation": "80 mg/mL เป็นคำตอบหากเป็น zero-order (ลดลง 10 mg/mL ทุก 30 วัน) ซึ่งเป็นตัวลวงที่พบบ่อยที่สุด"
+        },
+        {
+          "label": "C",
+          "text": "85 mg/mL",
+          "is_correct": false,
+          "explanation": "85 mg/mL ไม่สอดคล้องกับ kinetic model ใด อาจเกิดจากคิดว่าการสลายตัวช้าลงครึ่งหนึ่งในช่วงที่สอง"
+        },
+        {
+          "label": "D",
+          "text": "45 mg/mL",
+          "is_correct": false,
+          "explanation": "45 mg/mL เกิดจากสับสนกับ t1/2 หรือคิดว่าความเข้มข้นลดครึ่งหนึ่ง ซึ่งไม่ถูกต้อง"
+        },
+        {
+          "label": "E",
+          "text": "72.9 mg/mL",
+          "is_correct": false,
+          "explanation": "72.9 mg/mL คือ 100 × 0.9³ ซึ่งเป็นความเข้มข้นที่ 90 วัน ไม่ใช่ 60 วัน"
+        }
+      ],
+      "key_takeaway": "First-order = สลายเป็น % คงที่ต่อช่วงเวลา (C = C₀·f^(t/t₁)); zero-order = สลายเป็นปริมาณคงที่ต่อช่วงเวลา",
+      "calculation_steps": [
+        "ขั้นที่ 1: First-order: C = C₀ e^(−kt) → ในช่วง 30 วัน C/C₀ = 90/100 = 0.9",
+        "ขั้นที่ 2: ที่ 60 วัน (= 2 ช่วงของ 30 วัน): C/C₀ = (0.9)² = 0.81",
+        "ขั้นที่ 3: C(60 วัน) = 100 mg/mL × 0.81 = 81 mg/mL",
+        "ขั้นที่ 4: ตรวจสอบ: k = ln(100/90)/30 = 0.003512 day⁻¹ → C = 100 × e^(−0.003512 × 60) = 100 × e^(−0.2107) = 81.0 mg/mL"
+      ]
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "ยาน้ำชนิดหนึ่งมีอายุยา (shelf-life) 6 เดือนเมื่อเก็บที่ 25 °C หากเปลี่ยนสภาวะการเก็บเป็นตู้เย็น 5 °C และประมาณการโดยใช้ Q10 = 2 (กลไกการสลายตัวไม่เปลี่ยน) อายุยาที่ 5 °C ใกล้เคียงข้อใดมากที่สุด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "12 เดือน"
+      },
+      {
+        "label": "B",
+        "text": "18 เดือน"
+      },
+      {
+        "label": "C",
+        "text": "24 เดือน"
+      },
+      {
+        "label": "D",
+        "text": "54 เดือน"
+      },
+      {
+        "label": "E",
+        "text": "1.5 เดือน"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "อุณหภูมิลดลง 20 °C = 2 ช่วงของ 10 °C อัตราการสลายตัวลดลง Q10² = 2² = 4 เท่า อายุยาจึงยาวขึ้น 4 เท่า = 6 × 4 = 24 เดือน",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. 24 เดือน — ลดอุณหภูมิ 20 °C ด้วย Q10 = 2 ทำให้อัตราการสลายลด 4 เท่า อายุยาเพิ่มเป็น 24 เดือน",
+      "reason": "Q10 คืออัตราส่วนของค่าคงที่อัตราเร็วเมื่ออุณหภูมิเพิ่มขึ้น 10 °C (Q10 = k(T+10)/k(T)) เป็นการประมาณอย่างง่ายจากสมการ Arrhenius โดยค่า Q10 = 2, 3, 4 สอดคล้องกับ activation energy ต่ำ ปานกลาง และสูงตามลำดับ (ประมาณ 12, 20, 25 kcal/mol ในช่วงอุณหภูมิห้อง) สูตรประมาณ shelf-life ที่อุณหภูมิใหม่คือ t90(T₂) = t90(T₁)/Q10^(ΔT/10) โดย ΔT = T₂ − T₁ เมื่อลดอุณหภูมิจาก 25 °C เป็น 5 °C ΔT = −20 °C จะได้ t90(5 °C) = 6/2^(−2) = 6 × 4 = 24 เดือน เนื่องจาก shelf-life แปรผกผันกับ k วิธีนี้ใช้ประเมินผลของการเก็บยาผิดอุณหภูมิ หรือประมาณอายุยาเมื่อเปลี่ยนสภาวะเก็บ (เช่น ยาผสมเตรียมที่เก็บในตู้เย็น) อย่างไรก็ตาม เป็นเพียงการประมาณ ต้องยืนยันด้วย real-time stability ตามแนวทาง ICH Q1A และใช้ไม่ได้หากกลไกการสลายตัวเปลี่ยนตามอุณหภูมิ หรือเกิดการเปลี่ยนแปลงทางกายภาพ เช่น การตกผลึกที่อุณหภูมิต่ำ",
+      "choices": [
+        {
+          "label": "A",
+          "text": "12 เดือน",
+          "is_correct": false,
+          "explanation": "12 เดือนเกิดจากคูณ Q10 เพียงครั้งเดียว (คิดว่า ΔT = 10 °C) ทั้งที่ลดอุณหภูมิ 20 °C"
+        },
+        {
+          "label": "B",
+          "text": "18 เดือน",
+          "is_correct": false,
+          "explanation": "18 เดือนเกิดจากคูณ 3 (คิดแบบเส้นตรง Q10 × 1.5 หรือสับสนกับ Q10 = 3) ไม่ถูกต้อง"
+        },
+        {
+          "label": "C",
+          "text": "24 เดือน",
+          "is_correct": true,
+          "explanation": "ถูกต้อง Q10^(20/10) = 2² = 4 อายุยาที่ 5 °C = 6 × 4 = 24 เดือน"
+        },
+        {
+          "label": "D",
+          "text": "54 เดือน",
+          "is_correct": false,
+          "explanation": "54 เดือนคือผลจาก Q10 = 3 (6 × 3² = 54) ไม่ตรงกับค่า Q10 ที่โจทย์กำหนด"
+        },
+        {
+          "label": "E",
+          "text": "1.5 เดือน",
+          "is_correct": false,
+          "explanation": "1.5 เดือนเกิดจากคำนวณกลับทิศ (หารด้วย 4) ซึ่งเป็นอายุยาเมื่อเพิ่มอุณหภูมิเป็น 45 °C ไม่ใช่ลดเป็น 5 °C"
+        }
+      ],
+      "key_takeaway": "t90(T₂) = t90(T₁) / Q10^((T₂ − T₁)/10); ลดอุณหภูมิ 10 °C → อายุยาเพิ่ม Q10 เท่า",
+      "calculation_steps": [
+        "ขั้นที่ 1: ΔT = T₂ − T₁ = 5 °C − 25 °C = −20 °C → ΔT/10 = −2",
+        "ขั้นที่ 2: t90(5 °C) = t90(25 °C) ÷ Q10^(ΔT/10) = 6 เดือน ÷ 2^(−2)",
+        "ขั้นที่ 3: 2^(−2) = 0.25 → t90(5 °C) = 6 ÷ 0.25 = 24 เดือน"
+      ]
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "จากการศึกษา accelerated stability พบว่ายาชนิดหนึ่งสลายตัวแบบ first-order มีค่า k ที่ 50 °C = 4.0 × 10⁻³ day⁻¹ และมี activation energy (Ea) = 83.14 kJ/mol (R = 8.314 J/mol·K) อายุยา (t90) ที่ 25 °C ตามสมการ Arrhenius ใกล้เคียงข้อใดมากที่สุด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "26 วัน"
+      },
+      {
+        "label": "B",
+        "text": "353 วัน (ประมาณ 11.8 เดือน)"
+      },
+      {
+        "label": "C",
+        "text": "ประมาณ 10,400 วัน"
+      },
+      {
+        "label": "D",
+        "text": "ประมาณ 2,320 วัน"
+      },
+      {
+        "label": "E",
+        "text": "ประมาณ 149 วัน"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "ln(k25/k50) = −(Ea/R)(1/298.15 − 1/323.15) = −10,000 × 2.595 × 10⁻⁴ = −2.595 → k25 = 4.0 × 10⁻³ × 0.0747 = 2.99 × 10⁻⁴ day⁻¹; t90 = 0.1054/k25 ≈ 353 วัน",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. 353 วัน (ประมาณ 11.8 เดือน) — ใช้ Arrhenius หา k ที่ 25 °C ได้ ≈ 2.99 × 10⁻⁴ day⁻¹ แล้ว t90 = 0.105/k ≈ 353 วัน",
+      "reason": "สมการ Arrhenius k = A·e^(−Ea/RT) แสดงว่า ln k แปรผันเป็นเส้นตรงกับ 1/T โดยมี slope = −Ea/R เมื่อทราบ k ที่อุณหภูมิหนึ่งและ Ea จะหา k ที่อุณหภูมิอื่นได้จาก ln(k₂/k₁) = −(Ea/R)(1/T₂ − 1/T₁) โดยต้องใช้อุณหภูมิเป็น Kelvin และใช้ natural log ในโจทย์ Ea/R = 83,140/8.314 = 10,000 K, 1/298.15 − 1/323.15 = 2.595 × 10⁻⁴ K⁻¹ ได้ ln(k25/k50) = −2.595 หรือ k25/k50 = 0.0747 ดังนั้น k25 = 2.99 × 10⁻⁴ day⁻¹ และ t90 = 0.1054/k25 ≈ 353 วัน (ประมาณ 11.8 เดือน) การศึกษาแบบนี้เป็นพื้นฐานของ accelerated stability testing (เช่น ICH 40 °C/75% RH) ที่ใช้ทำนายอายุยา แต่มีข้อจำกัด คือใช้ได้เฉพาะเมื่อกลไกการสลายตัวไม่เปลี่ยนตามอุณหภูมิ ไม่เหมาะกับยาที่สลายตัวทางกายภาพ (เช่น emulsion แยกชั้น, protein denaturation, suppository หลอม) และต้องยืนยันด้วย real-time data",
+      "choices": [
+        {
+          "label": "A",
+          "text": "26 วัน",
+          "is_correct": false,
+          "explanation": "26 วันคือ t90 ที่ 50 °C (0.1054/0.004) ไม่ได้แปลงค่า k ไปที่ 25 °C"
+        },
+        {
+          "label": "B",
+          "text": "353 วัน (ประมาณ 11.8 เดือน)",
+          "is_correct": true,
+          "explanation": "ถูกต้อง k25 = 4.0 × 10⁻³ × e^(−2.595) ≈ 2.99 × 10⁻⁴ day⁻¹ และ t90 = 0.1054/2.99 × 10⁻⁴ ≈ 353 วัน"
+        },
+        {
+          "label": "C",
+          "text": "ประมาณ 10,400 วัน",
+          "is_correct": false,
+          "explanation": "ประมาณ 10,400 วันเกิดจากใช้ log₁₀ แทน ln ในสมการ Arrhenius (k25/k50 = 10^(−2.595)) ทำให้ได้ k ต่ำเกินจริงมาก"
+        },
+        {
+          "label": "D",
+          "text": "ประมาณ 2,320 วัน",
+          "is_correct": false,
+          "explanation": "ประมาณ 2,320 วันคือ t1/2 ที่ 25 °C (0.693/k25) ไม่ใช่ t90"
+        },
+        {
+          "label": "E",
+          "text": "ประมาณ 149 วัน",
+          "is_correct": false,
+          "explanation": "ประมาณ 149 วันเกิดจากประมาณด้วย Q10 = 2 (k25 = k50/2^2.5) ซึ่งไม่สอดคล้องกับ Ea ที่กำหนด (Ea 83 kJ/mol ให้ Q10 ประมาณ 2.8 ในช่วงนี้)"
+        }
+      ],
+      "key_takeaway": "ln(k₂/k₁) = −(Ea/R)(1/T₂ − 1/T₁) — ใช้ Kelvin และ ln; slope ของ ln k vs 1/T = −Ea/R",
+      "calculation_steps": [
+        "ขั้นที่ 1: T₁ = 50 + 273.15 = 323.15 K; T₂ = 25 + 273.15 = 298.15 K",
+        "ขั้นที่ 2: Ea/R = 83,140 J/mol ÷ 8.314 J/mol·K = 10,000 K",
+        "ขั้นที่ 3: 1/T₂ − 1/T₁ = 0.0033540 − 0.0030945 = 2.595 × 10⁻⁴ K⁻¹",
+        "ขั้นที่ 4: ln(k25/k50) = −10,000 × 2.595 × 10⁻⁴ = −2.595 → k25/k50 = e^(−2.595) = 0.0747",
+        "ขั้นที่ 5: k25 = 4.0 × 10⁻³ day⁻¹ × 0.0747 = 2.99 × 10⁻⁴ day⁻¹",
+        "ขั้นที่ 6: t90 = 0.1054 ÷ 2.99 × 10⁻⁴ day⁻¹ ≈ 353 วัน ≈ 11.8 เดือน"
+      ]
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "ยาเม็ดตำรับหนึ่งประกอบด้วย ยา A (มีหมู่ primary amine) 10 mg, lactose monohydrate 120 mg, microcrystalline cellulose 60 mg, croscarmellose sodium 6 mg และ magnesium stearate 2 mg หลังเก็บที่สภาวะ 40 °C/75% RH 3 เดือน ยาเม็ดเปลี่ยนเป็นสีเหลืองน้ำตาล และ HPLC พบ degradation product ใหม่ แนวทางแก้ไขสูตรตำรับข้อใดเหมาะสมที่สุด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "เปลี่ยน lactose monohydrate เป็น dextrose (glucose)"
+      },
+      {
+        "label": "B",
+        "text": "เติม BHT เป็น antioxidant ในตำรับ"
+      },
+      {
+        "label": "C",
+        "text": "เปลี่ยน lactose monohydrate เป็น mannitol หรือ dibasic calcium phosphate"
+      },
+      {
+        "label": "D",
+        "text": "เพิ่มปริมาณ magnesium stearate เป็น 2%"
+      },
+      {
+        "label": "E",
+        "text": "เปลี่ยนเป็น anhydrous lactose โดยไม่ต้องเปลี่ยนสารอื่น"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "สีน้ำตาลเกิดจาก Maillard reaction ระหว่าง primary amine ของยากับ reducing sugar (lactose) แก้โดยใช้ diluent ที่ไม่ใช่ reducing sugar เช่น mannitol หรือ dibasic calcium phosphate",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. เปลี่ยน lactose monohydrate เป็น mannitol หรือ dibasic calcium phosphate — Maillard reaction ระหว่าง amine กับ lactose แก้ได้ด้วยการเปลี่ยนเป็น diluent ที่ไม่มี reducing group",
+      "reason": "Maillard reaction เป็นปฏิกิริยาระหว่างหมู่ amine (primary และ secondary amine) ของยากับหมู่ carbonyl (aldehyde) ของ reducing sugar เช่น lactose, glucose, maltose เริ่มจากการเกิด glycosylamine (Schiff base) แล้วเกิด Amadori rearrangement และปฏิกิริยาต่อเนื่องได้สาร melanoidin สีเหลือง–น้ำตาล ปฏิกิริยาถูกเร่งด้วยความร้อน ความชื้น และ pH ที่เป็นกลางถึงด่าง ตัวอย่างยาที่รายงานปัญหานี้ เช่น amlodipine, fluoxetine, metoclopramide, gabapentin กับ lactose การแก้ไขที่ดีที่สุดคือเปลี่ยน diluent เป็นสารที่ไม่มีหมู่ reducing เช่น mannitol, microcrystalline cellulose, dibasic calcium phosphate หรือ starch การศึกษา drug–excipient compatibility ใน preformulation (ผสมยากับ excipient 1:1 หรือตามสัดส่วน เก็บที่ 40–50 °C/75% RH แล้ววิเคราะห์ด้วย HPLC/DSC) ช่วยตรวจพบปัญหานี้ก่อนพัฒนาตำรับ ส่วน sucrose เป็น non-reducing sugar แต่อาจถูกไฮโดรไลซ์เป็น glucose และ fructose ในสภาวะกรดจึงยังมีความเสี่ยง",
+      "choices": [
+        {
+          "label": "A",
+          "text": "เปลี่ยน lactose monohydrate เป็น dextrose (glucose)",
+          "is_correct": false,
+          "explanation": "Dextrose (glucose) เป็น reducing sugar ที่มีหมู่ aldehyde อิสระ เกิด Maillard reaction ได้แรงกว่า lactose ด้วยซ้ำ"
+        },
+        {
+          "label": "B",
+          "text": "เติม BHT เป็น antioxidant ในตำรับ",
+          "is_correct": false,
+          "explanation": "BHT เป็น antioxidant ที่ป้องกัน oxidation แบบ free radical ไม่ได้ยับยั้ง Maillard reaction ซึ่งเป็นปฏิกิริยา condensation ระหว่าง amine กับ carbonyl"
+        },
+        {
+          "label": "C",
+          "text": "เปลี่ยน lactose monohydrate เป็น mannitol หรือ dibasic calcium phosphate",
+          "is_correct": true,
+          "explanation": "ถูกต้อง mannitol (sugar alcohol) และ dibasic calcium phosphate ไม่มีหมู่ reducing จึงไม่เกิด Maillard reaction กับยาที่มี amine"
+        },
+        {
+          "label": "D",
+          "text": "เพิ่มปริมาณ magnesium stearate เป็น 2%",
+          "is_correct": false,
+          "explanation": "Magnesium stearate ไม่เกี่ยวกับปฏิกิริยานี้ การเพิ่มปริมาณยังอาจทำให้ dissolution ช้าลงและความแข็งของยาเม็ดลดลง"
+        },
+        {
+          "label": "E",
+          "text": "เปลี่ยนเป็น anhydrous lactose โดยไม่ต้องเปลี่ยนสารอื่น",
+          "is_correct": false,
+          "explanation": "Anhydrous lactose ยังเป็น reducing sugar แม้ความชื้นต่ำกว่าอาจลดอัตราปฏิกิริยาได้บ้าง แต่ไม่ได้แก้สาเหตุของปัญหา"
+        }
+      ],
+      "key_takeaway": "Maillard = amine (1°/2°) + reducing sugar (lactose, glucose) → สีน้ำตาล; แก้: mannitol, MCC, DCP, starch"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ยาเม็ด aspirin 300 mg ตำรับหนึ่งใช้ magnesium stearate 1% เป็น lubricant หลังเก็บที่ 40 °C/75% RH เป็นเวลา 1 เดือน พบว่ามีกลิ่นคล้ายน้ำส้มสายชูเมื่อเปิดขวด และปริมาณ free salicylic acid เกิน specification การแก้ไขสูตรตำรับข้อใดเหมาะสมที่สุด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "เพิ่มปริมาณ magnesium stearate เป็น 2% เพื่อเคลือบผิวผงยาให้กันความชื้น"
+      },
+      {
+        "label": "B",
+        "text": "เปลี่ยนเป็น calcium stearate ซึ่งเป็น lubricant ที่มีประสิทธิภาพใกล้เคียงกัน"
+      },
+      {
+        "label": "C",
+        "text": "ใช้ wet granulation ด้วยน้ำแทน direct compression เพื่อให้เม็ดแข็งขึ้น"
+      },
+      {
+        "label": "D",
+        "text": "เติม sodium bicarbonate เพื่อปรับ pH ให้ยาเสถียรขึ้น"
+      },
+      {
+        "label": "E",
+        "text": "เปลี่ยน lubricant เป็น stearic acid หรือ hydrogenated vegetable oil (หรือ talc) ร่วมกับบรรจุภัณฑ์กันความชื้น"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "Aspirin เกิด hydrolysis ได้ salicylic acid และ acetic acid (กลิ่นน้ำส้มสายชู) alkaline stearate เช่น magnesium stearate เร่ง hydrolysis จึงควรเปลี่ยนเป็น lubricant ที่ไม่เป็นด่าง เช่น stearic acid, hydrogenated vegetable oil หรือ talc",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. เปลี่ยน lubricant เป็น stearic acid หรือ hydrogenated vegetable oil (หรือ talc) ร่วมกับบรรจุภัณฑ์กันความชื้น — magnesium stearate ซึ่งเป็น alkaline lubricant เร่ง hydrolysis ของ aspirin ควรเปลี่ยนเป็น lubricant ที่ไม่เป็นด่าง",
+      "reason": "Aspirin (acetylsalicylic acid) เป็น ester ที่ถูก hydrolyze ได้ง่ายเมื่อมีความชื้น ได้ salicylic acid ซึ่งระคายเคืองกระเพาะ และ acetic acid ซึ่งทำให้มีกลิ่นน้ำส้มสายชู การสลายตัวถูกเร่งด้วยความชื้น อุณหภูมิ และสภาวะด่าง alkaline stearates (magnesium stearate, calcium stearate, zinc stearate) เป็นที่รู้จักว่าไม่เข้ากันกับ aspirin เพราะเพิ่ม pH ของ microenvironment บนผิวผลึก และไอออนโลหะอาจเร่ง hydrolysis นอกจากนี้ยังอาจเกิดปฏิกิริยา transacetylation ด้วย การแก้ไขที่เหมาะสมคือใช้ lubricant ที่ไม่เป็นด่าง เช่น stearic acid, hydrogenated vegetable oil หรือ talc ใช้วิธีผลิตที่หลีกเลี่ยงน้ำ (direct compression หรือ dry granulation/slugging) ควบคุมความชื้นของ excipient และบรรจุในภาชนะกันความชื้นพร้อม desiccant ตำรายากำหนดการทดสอบ limit of free salicylic acid สำหรับยาเม็ด aspirin เพื่อควบคุมการสลายตัวนี้",
+      "choices": [
+        {
+          "label": "A",
+          "text": "เพิ่มปริมาณ magnesium stearate เป็น 2% เพื่อเคลือบผิวผงยาให้กันความชื้น",
+          "is_correct": false,
+          "explanation": "การเพิ่ม magnesium stearate ยิ่งเพิ่มความเป็นด่างและเร่ง hydrolysis มากขึ้น และอาจทำให้ dissolution ช้าลงจากผลความไม่ชอบน้ำ"
+        },
+        {
+          "label": "B",
+          "text": "เปลี่ยนเป็น calcium stearate ซึ่งเป็น lubricant ที่มีประสิทธิภาพใกล้เคียงกัน",
+          "is_correct": false,
+          "explanation": "Calcium stearate เป็น alkaline stearate เช่นเดียวกับ magnesium stearate จึงไม่เข้ากันกับ aspirin เช่นกัน"
+        },
+        {
+          "label": "C",
+          "text": "ใช้ wet granulation ด้วยน้ำแทน direct compression เพื่อให้เม็ดแข็งขึ้น",
+          "is_correct": false,
+          "explanation": "Wet granulation ด้วยน้ำทำให้ aspirin สัมผัสความชื้นและความร้อนระหว่างอบแห้ง จะเร่ง hydrolysis มากขึ้น aspirin นิยมผลิตด้วย dry granulation หรือ direct compression"
+        },
+        {
+          "label": "D",
+          "text": "เติม sodium bicarbonate เพื่อปรับ pH ให้ยาเสถียรขึ้น",
+          "is_correct": false,
+          "explanation": "Sodium bicarbonate ทำให้สภาวะเป็นด่าง ซึ่งเร่ง hydrolysis ของ ester อย่าง aspirin อย่างมาก (ยกเว้นในยาเม็ดฟู่ที่ผลิตและบรรจุแบบแห้งพิเศษ)"
+        },
+        {
+          "label": "E",
+          "text": "เปลี่ยน lubricant เป็น stearic acid หรือ hydrogenated vegetable oil (หรือ talc) ร่วมกับบรรจุภัณฑ์กันความชื้น",
+          "is_correct": true,
+          "explanation": "ถูกต้อง stearic acid, hydrogenated vegetable oil หรือ talc ไม่เป็นด่าง จึงเข้ากันได้กับ aspirin และควรใช้ร่วมกับการป้องกันความชื้น"
+        }
+      ],
+      "key_takeaway": "Aspirin + alkaline stearate (Mg/Ca stearate) = incompatible → hydrolysis (กลิ่นน้ำส้มสายชู, ↑ free salicylic acid) → ใช้ stearic acid/HVO/talc, กระบวนการแห้ง"
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "Voriconazole for injection เป็นผงแห้งที่ใช้ sulfobutylether-β-cyclodextrin (SBE-β-CD) เป็นสารช่วยละลาย เหตุผลหลักที่เลือกใช้ SBE-β-CD (หรือ hydroxypropyl-β-cyclodextrin) แทน β-cyclodextrin ดั้งเดิม (parent β-CD) ในยาฉีดคือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "β-CD ดั้งเดิมมีโพรง (cavity) เล็กเกินไป ไม่สามารถเกิด inclusion complex กับยาใด ๆ ได้"
+      },
+      {
+        "label": "B",
+        "text": "β-CD ดั้งเดิมละลายน้ำได้น้อย (ประมาณ 1.85 g/100 mL) และเป็นพิษต่อไตเมื่อให้ทางหลอดเลือด"
+      },
+      {
+        "label": "C",
+        "text": "β-CD ดั้งเดิมไม่สามารถทำให้ปราศจากเชื้อได้"
+      },
+      {
+        "label": "D",
+        "text": "SBE-β-CD ช่วยปรับ pH ของยาฉีดให้ใกล้เคียงเลือด"
+      },
+      {
+        "label": "E",
+        "text": "SBE-β-CD เป็น preservative ป้องกันการปนเปื้อนเชื้อหลังผสมยา"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Parent β-CD ละลายน้ำต่ำและทำให้เกิด nephrotoxicity เมื่อให้ทาง parenteral อนุพันธ์ SBE-β-CD และ HP-β-CD ละลายน้ำได้ดีมาก (> 50 g/100 mL) และปลอดภัยกว่า จึงใช้ในยาฉีด",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. β-CD ดั้งเดิมละลายน้ำได้น้อย (ประมาณ 1.85 g/100 mL) และเป็นพิษต่อไตเมื่อให้ทางหลอดเลือด — parent β-CD ละลายน้ำน้อยและเป็นพิษต่อไตทางหลอดเลือด จึงใช้อนุพันธ์ SBE-β-CD/HP-β-CD แทน",
+      "reason": "Cyclodextrins เป็น cyclic oligosaccharide ของ glucose (α-CD 6 หน่วย, β-CD 7 หน่วย, γ-CD 8 หน่วย) มีโครงสร้างเป็นวงรูปกรวยตัด ผิวด้านนอกชอบน้ำ ส่วนโพรงด้านในค่อนข้างไม่ชอบน้ำ จึงรับส่วนที่ไม่ชอบน้ำของโมเลกุลยาเข้าไปเกิด inclusion complex แบบ non-covalent ทำให้ยาละลายน้ำได้ดีขึ้น เพิ่มความคงตัว และลดการระคายเคือง β-CD มีขนาดโพรงเหมาะกับยาหลายชนิด แต่ละลายน้ำได้เพียงประมาณ 1.85 g/100 mL ที่ 25 °C เนื่องจากพันธะไฮโดรเจนภายในโมเลกุล และเมื่อให้ทางหลอดเลือดจะถูกกรองที่ไต เกิดตะกอนผลึก/สารเชิงซ้อนกับ cholesterol ทำให้เกิด nephrotoxicity β-CD ดั้งเดิมจึงใช้ได้เฉพาะยารับประทาน การดัดแปลงหมู่ hydroxyl เป็น hydroxypropyl (HP-β-CD) หรือ sulfobutylether (SBE-β-CD, Captisol®) ช่วยทำลายพันธะไฮโดรเจนภายใน ทำให้ละลายน้ำได้ดีมากและปลอดภัยกว่าสำหรับยาฉีด อย่างไรก็ตาม SBE-β-CD ถูกขับทางไต จึงต้องระวังการใช้ voriconazole IV ในผู้ป่วยที่การทำงานของไตบกพร่องรุนแรง (CrCl < 50 mL/min) เพราะอาจเกิดการสะสมของ SBE-β-CD",
+      "choices": [
+        {
+          "label": "A",
+          "text": "β-CD ดั้งเดิมมีโพรง (cavity) เล็กเกินไป ไม่สามารถเกิด inclusion complex กับยาใด ๆ ได้",
+          "is_correct": false,
+          "explanation": "β-CD มีโพรงขนาดปานกลาง (ประมาณ 6.0–6.5 Å) เหมาะกับยาจำนวนมาก และเป็น CD ที่ใช้มากที่สุดในยารับประทาน ปัญหาไม่ได้อยู่ที่ขนาดโพรง"
+        },
+        {
+          "label": "B",
+          "text": "β-CD ดั้งเดิมละลายน้ำได้น้อย (ประมาณ 1.85 g/100 mL) และเป็นพิษต่อไตเมื่อให้ทางหลอดเลือด",
+          "is_correct": true,
+          "explanation": "ถูกต้อง parent β-CD ละลายน้ำได้น้อยและเป็นพิษต่อไตทาง parenteral จึงใช้อนุพันธ์ที่ละลายน้ำดีและปลอดภัยกว่า เช่น SBE-β-CD หรือ HP-β-CD"
+        },
+        {
+          "label": "C",
+          "text": "β-CD ดั้งเดิมไม่สามารถทำให้ปราศจากเชื้อได้",
+          "is_correct": false,
+          "explanation": "β-CD สามารถทำให้ปราศจากเชื้อได้ด้วยวิธีที่เหมาะสม ข้อจำกัดหลักคือความละลายและความเป็นพิษ"
+        },
+        {
+          "label": "D",
+          "text": "SBE-β-CD ช่วยปรับ pH ของยาฉีดให้ใกล้เคียงเลือด",
+          "is_correct": false,
+          "explanation": "SBE-β-CD ไม่ได้ทำหน้าที่เป็น buffer การปรับ pH ใช้กรด/ด่างหรือ buffer system"
+        },
+        {
+          "label": "E",
+          "text": "SBE-β-CD เป็น preservative ป้องกันการปนเปื้อนเชื้อหลังผสมยา",
+          "is_correct": false,
+          "explanation": "Cyclodextrin ไม่มีฤทธิ์ต้านจุลชีพ จึงไม่ใช่ preservative และ voriconazole IV เป็นยาใช้ครั้งเดียวไม่มีสารกันเสีย"
+        }
+      ],
+      "key_takeaway": "Cyclodextrin: นอกชอบน้ำ ในไม่ชอบน้ำ → inclusion complex; parent β-CD: ละลายน้อย + nephrotoxic (ใช้ทางปาก); ยาฉีดใช้ HP-β-CD, SBE-β-CD"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ในการศึกษา phase-solubility ของยากับ HP-β-cyclodextrin (วิธีของ Higuchi–Connors) ได้กราฟเป็นแบบ Aₗ (เส้นตรง) ความละลายของยาเมื่อไม่มี cyclodextrin (S₀) = 0.5 mM และ slope ของกราฟความเข้มข้นยาที่ละลาย (mM) เทียบกับความเข้มข้น cyclodextrin (mM) = 0.20 ค่าคงที่การเกิดสารเชิงซ้อนแบบ 1:1 (K₁:₁) มีค่าเท่าใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "400 M⁻¹"
+      },
+      {
+        "label": "B",
+        "text": "320 M⁻¹"
+      },
+      {
+        "label": "C",
+        "text": "2,500 M⁻¹"
+      },
+      {
+        "label": "D",
+        "text": "500 M⁻¹"
+      },
+      {
+        "label": "E",
+        "text": "2.0 × 10⁻³ M⁻¹"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "K₁:₁ = slope/[S₀(1 − slope)] = 0.20/[0.5 × 10⁻³ M × 0.80] = 0.20/(4.0 × 10⁻⁴ M) = 500 M⁻¹",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. 500 M⁻¹ — ใช้สูตร Higuchi–Connors K₁:₁ = slope/[S₀(1 − slope)] ได้ 500 M⁻¹",
+      "reason": "Phase-solubility study ทำโดยเติมยาเกินพอลงในสารละลาย cyclodextrin ความเข้มข้นต่าง ๆ เขย่าจนถึงสมดุล แล้ววัดยาที่ละลาย นำมาพล็อตความละลายยาเทียบกับความเข้มข้น CD Higuchi–Connors แบ่งกราฟเป็นแบบ A (ความละลายเพิ่มขึ้น เกิดสารเชิงซ้อนที่ละลายได้) และแบบ B (เกิดสารเชิงซ้อนที่ละลายจำกัดหรือตกตะกอน) แบบ Aₗ เป็นเส้นตรงที่ slope < 1 บ่งชี้สารเชิงซ้อน 1:1 (เป็น first order ต่อ CD) จากสมดุล D + CD ⇌ D·CD ได้ K₁:₁ = slope/[S₀(1 − slope)] โดย S₀ คือ intercept หรือความละลายของยาเมื่อไม่มี CD และต้องใช้หน่วยโมลาร์ให้สอดคล้องกัน ในโจทย์ S₀ = 0.5 mM = 5 × 10⁻⁴ M, slope 0.20 จะได้ K = 0.20/(5 × 10⁻⁴ × 0.80) = 500 M⁻¹ ค่า K ที่เหมาะสมสำหรับการใช้งานทางเภสัชกรรมมักอยู่ในช่วงประมาณ 50–2,000 M⁻¹ หาก K ต่ำเกินไปต้องใช้ CD ปริมาณมาก หาก K สูงเกินไปยาอาจปลดปล่อยออกจากสารเชิงซ้อนได้ไม่ดี ค่า complexation efficiency (CE) = slope/(1 − slope) = 0.25 ก็ใช้ประเมินปริมาณ CD ที่ต้องใช้ได้",
+      "choices": [
+        {
+          "label": "A",
+          "text": "400 M⁻¹",
+          "is_correct": false,
+          "explanation": "400 M⁻¹ เกิดจากใช้ slope/S₀ (0.20/5 × 10⁻⁴) โดยลืมหารด้วย (1 − slope)"
+        },
+        {
+          "label": "B",
+          "text": "320 M⁻¹",
+          "is_correct": false,
+          "explanation": "320 M⁻¹ เกิดจากคูณ (1 − slope) แทนการหาร คือ slope × (1 − slope)/S₀ ซึ่งผิดสูตร"
+        },
+        {
+          "label": "C",
+          "text": "2,500 M⁻¹",
+          "is_correct": false,
+          "explanation": "2,500 M⁻¹ คือ 1/[S₀(1 − slope)] ซึ่งลืมคูณด้วย slope"
+        },
+        {
+          "label": "D",
+          "text": "500 M⁻¹",
+          "is_correct": true,
+          "explanation": "ถูกต้อง K₁:₁ = 0.20/[5 × 10⁻⁴ M × (1 − 0.20)] = 0.20/(4 × 10⁻⁴ M) = 500 M⁻¹"
+        },
+        {
+          "label": "E",
+          "text": "2.0 × 10⁻³ M⁻¹",
+          "is_correct": false,
+          "explanation": "2.0 × 10⁻³ M⁻¹ คือส่วนกลับของคำตอบที่ถูก (1/500) เกิดจากกลับเศษส่วน และหน่วยที่ถูกต้องควรเป็น M (ไม่ใช่ M⁻¹) หากเป็นส่วนกลับ"
+        }
+      ],
+      "key_takeaway": "Aₗ phase-solubility: K₁:₁ = slope/[S₀(1 − slope)] (S₀ หน่วย M); slope < 1 → 1:1 complex; CE = slope/(1 − slope)",
+      "calculation_steps": [
+        "ขั้นที่ 1: แปลงหน่วย S₀ = 0.5 mM = 5.0 × 10⁻⁴ M",
+        "ขั้นที่ 2: 1 − slope = 1 − 0.20 = 0.80",
+        "ขั้นที่ 3: S₀(1 − slope) = 5.0 × 10⁻⁴ M × 0.80 = 4.0 × 10⁻⁴ M",
+        "ขั้นที่ 4: K₁:₁ = 0.20 ÷ 4.0 × 10⁻⁴ M = 500 M⁻¹"
+      ]
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "ยา BCS class II ชนิดหนึ่งถูกพัฒนาเป็น amorphous solid dispersion โดยวิธี hot-melt extrusion กับ polymer copovidone (PVP-VA) ได้ dissolution ดีขึ้นมากเมื่อเทียบกับยารูปผลึก ปัญหาด้านความคงตัวที่สำคัญที่สุดที่ต้องเฝ้าระวังระหว่างการเก็บรักษาคืออะไร และควรป้องกันอย่างไร",
+    "choices": [
+      {
+        "label": "A",
+        "text": "การตกผลึกซ้ำ (recrystallization) ของยาจากรูป amorphous ทำให้ dissolution ลดลง ป้องกันโดยเลือก polymer ที่มี Tg สูงและเข้ากันได้กับยา จำกัดปริมาณยาไม่ให้เกินความสามารถละลายใน polymer และบรรจุในภาชนะกันความชื้น"
+      },
+      {
+        "label": "B",
+        "text": "การเกิด Maillard reaction ระหว่างยากับ polymer ป้องกันโดยเติม antioxidant"
+      },
+      {
+        "label": "C",
+        "text": "การที่ polymer ละลายตัวในทางเดินอาหารช้าลง ป้องกันโดยเพิ่ม disintegrant"
+      },
+      {
+        "label": "D",
+        "text": "การเปลี่ยนจาก amorphous เป็น hydrate ทำให้ dissolution เร็วขึ้นเกินไป ป้องกันโดยเก็บในที่ชื้น"
+      },
+      {
+        "label": "E",
+        "text": "การสลายตัวทางเคมีด้วย photolysis ของ polymer ป้องกันโดยใช้ amber bottle เท่านั้น"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Amorphous solid dispersion ไม่เสถียรทางเทอร์โมไดนามิกส์ ยาอาจตกผลึกกลับ (โดยเฉพาะเมื่อชื้น/ร้อนซึ่งลด Tg) ทำให้สูญเสียข้อได้เปรียบด้านการละลาย",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. การตกผลึกซ้ำ (recrystallization) ของยาจากรูป amorphous ทำให้ dissolution ลดลง ป้องกันโดยเลือก polymer ที่มี Tg สูงและเข้ากันได้กับยา จำกัดปริมาณยาไม่ให้เกินความสามารถละลายใน polymer และบรรจุในภาชนะกันความชื้น — ความเสี่ยงหลักของ amorphous solid dispersion คือ recrystallization ซึ่งป้องกันด้วย polymer ที่เหมาะสม drug loading ที่เหมาะสม และการกันความชื้น",
+      "reason": "Solid dispersion คือการกระจายยา (มักเป็นยาละลายน้ำยาก) ใน carrier ที่ชอบน้ำในสถานะของแข็ง carrier ที่ใช้ เช่น PEG, PVP, copovidone, HPMC, HPMCAS, Soluplus® วิธีเตรียม ได้แก่ fusion/melting, hot-melt extrusion, solvent evaporation และ spray drying กลไกการเพิ่มการละลายประกอบด้วย ลดขนาดอนุภาคยาถึงระดับโมเลกุล, ยาอยู่ในรูป amorphous ซึ่งมีพลังงานสูง, ปรับปรุง wettability และ polymer ช่วยยับยั้งการตกตะกอนในทางเดินอาหาร (spring-and-parachute) ข้อเสียหลักคือความไม่เสถียรทางกายภาพ ยา amorphous อาจเกิด phase separation และ recrystallization ระหว่างเก็บรักษา โดยเฉพาะเมื่อมีความชื้น (น้ำเป็น plasticizer ลด Tg ของระบบ) อุณหภูมิสูงใกล้ Tg หรือ drug loading สูงเกินความสามารถละลายของยาใน polymer การป้องกันทำได้โดยเลือก polymer ที่มี Tg สูงและมีอันตรกิริยากับยา (เช่น hydrogen bonding) เก็บที่อุณหภูมิต่ำกว่า Tg มาก บรรจุในภาชนะกันความชื้นพร้อม desiccant และติดตามความเป็นผลึกด้วย XRPD/DSC ระหว่าง stability study ตัวอย่างผลิตภัณฑ์ เช่น itraconazole, lopinavir/ritonavir tablets",
+      "choices": [
+        {
+          "label": "A",
+          "text": "การตกผลึกซ้ำ (recrystallization) ของยาจากรูป amorphous ทำให้ dissolution ลดลง ป้องกันโดยเลือก polymer ที่มี Tg สูงและเข้ากันได้กับยา จำกัดปริมาณยาไม่ให้เกินความสามารถละลายใน polymer และบรรจุในภาชนะกันความชื้น",
+          "is_correct": true,
+          "explanation": "ถูกต้อง recrystallization คือความเสี่ยงหลักของ amorphous solid dispersion ป้องกันด้วยการเลือก polymer, drug loading และการควบคุมความชื้น/อุณหภูมิ"
+        },
+        {
+          "label": "B",
+          "text": "การเกิด Maillard reaction ระหว่างยากับ polymer ป้องกันโดยเติม antioxidant",
+          "is_correct": false,
+          "explanation": "Maillard reaction ต้องมีหมู่ amine และ reducing sugar ซึ่ง copovidone ไม่ใช่ reducing sugar และ antioxidant ไม่ได้ป้องกันปฏิกิริยานี้"
+        },
+        {
+          "label": "C",
+          "text": "การที่ polymer ละลายตัวในทางเดินอาหารช้าลง ป้องกันโดยเพิ่ม disintegrant",
+          "is_correct": false,
+          "explanation": "Copovidone ละลายน้ำได้ดี ปัญหาหลักไม่ใช่การละลายของ polymer แต่เป็นความไม่เสถียรทางกายภาพของยา amorphous"
+        },
+        {
+          "label": "D",
+          "text": "การเปลี่ยนจาก amorphous เป็น hydrate ทำให้ dissolution เร็วขึ้นเกินไป ป้องกันโดยเก็บในที่ชื้น",
+          "is_correct": false,
+          "explanation": "การดูดความชื้นของ amorphous solid dispersion ทำให้เสี่ยงต่อการตกผลึกและ dissolution ลดลง ไม่ใช่เร็วขึ้น การเก็บในที่ชื้นยิ่งทำให้แย่ลง"
+        },
+        {
+          "label": "E",
+          "text": "การสลายตัวทางเคมีด้วย photolysis ของ polymer ป้องกันโดยใช้ amber bottle เท่านั้น",
+          "is_correct": false,
+          "explanation": "Photolysis ไม่ใช่ปัญหาหลักของ solid dispersion ทั่วไป และการใช้ amber bottle อย่างเดียวไม่ได้ป้องกัน recrystallization"
+        }
+      ],
+      "key_takeaway": "Solid dispersion: ↑การละลายด้วย amorphous + ขนาดระดับโมเลกุล + wettability; ความเสี่ยง = recrystallization (ความชื้นลด Tg) → polymer Tg สูง, drug loading เหมาะสม, กันชื้น"
+    },
+    "difficulty": "medium"
+  }
+]
