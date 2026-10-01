@@ -172,6 +172,12 @@ export const GAME_CHARACTERS: Record<string, GameCharacter> = {
     plate: ["#7A8699", "#5B6675"],
     Placeholder: GenericPlaceholder,
   },
+  cust_elderly_male: {
+    name: "คุณตาสมชาย",
+    role: "ลูกค้า",
+    plate: ["#8F9A8A", "#69756A"],
+    Placeholder: GenericPlaceholder,
+  },
 };
 
 /** ตัวละครที่พูดแทน "ครู" ตอนตอบผิด, time-skip และสรุปท้ายเคส */
