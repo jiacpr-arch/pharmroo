@@ -7,6 +7,8 @@ import {
   loadHardQuestion,
   toDailyMcqMessage,
 } from "@/lib/daily-mcq-line";
+import { countdownLine, daysUntil, upcomingRound } from "@/lib/exam-countdown";
+import type { LineMessage } from "@/lib/line";
 
 export const runtime = "nodejs";
 
@@ -69,8 +71,16 @@ export async function GET(request: NextRequest) {
       continue;
     }
 
+    // In the last week before the user's exam, prefix the quiz with a
+    // countdown line — same push, so it costs no extra LINE quota.
+    const messages: LineMessage[] = [];
+    const round = upcomingRound(user.target_exam, date);
+    const countdown = round ? countdownLine(round, daysUntil(round.examDate, date)) : null;
+    if (countdown) messages.push({ type: "text", text: countdown });
+    messages.push(toDailyMcqMessage(question, date, category, isHard));
+
     try {
-      await sendLineMessage(user.line_user_id, [toDailyMcqMessage(question, date, category, isHard)]);
+      await sendLineMessage(user.line_user_id, messages);
       sent++;
     } catch (err) {
       console.error(`[daily-reminder] failed for user ${user.id}:`, err);

@@ -16,6 +16,10 @@
       "schedule": "0 2 * * *"
     },
     {
+      "path": "/api/line/exam-countdown",
+      "schedule": "0 1 * * *"
+    },
+    {
       "path": "/api/line/weekly-summary",
       "schedule": "0 3 * * 0"
     },

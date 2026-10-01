@@ -103,6 +103,7 @@ export interface ActiveAudienceUser {
   name: string;
   line_user_id: string;
   exam_category: ExamCategory;
+  target_exam: string | null;
   line_linked_at: string | null;
 }
 
@@ -114,6 +115,7 @@ export async function getActiveDailyAudience(): Promise<ActiveAudienceUser[]> {
       name: users.name,
       line_user_id: users.line_user_id,
       exam_category: users.exam_category,
+      target_exam: users.target_exam,
       line_linked_at: users.line_linked_at,
     })
     .from(users)
