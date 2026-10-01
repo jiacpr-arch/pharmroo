@@ -329,6 +329,59 @@ export function buildStreakNudgeFlex(data: StreakNudgeData): LineMessage {
   };
 }
 
+// ─── Exam countdown ─────────────────────────────────────────────────────────
+
+export interface ExamCountdownData {
+  examLabel: string;
+  examDate: string; // YYYY-MM-DD
+  daysLeft: number;
+  title: string;
+  body: string;
+  buttonLabel: string;
+  path: string;
+}
+
+export function buildExamCountdownFlex(data: ExamCountdownData): LineMessage {
+  const dateStr = new Date(`${data.examDate}T00:00:00+07:00`).toLocaleDateString("th-TH", {
+    timeZone: "Asia/Bangkok",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+  const urgent = data.daysLeft <= 3;
+
+  return {
+    type: "flex",
+    altText: `เหลืออีก ${data.daysLeft} วันสอบ ${data.examLabel}`,
+    contents: {
+      type: "bubble",
+      size: "kilo",
+      header: {
+        type: "box",
+        layout: "vertical",
+        backgroundColor: urgent ? DANGER_COLOR : BRAND_COLOR,
+        paddingAll: "lg",
+        contents: [
+          { type: "text", text: data.title, color: "#FFFFFF", weight: "bold", size: "lg", wrap: true },
+          { type: "text", text: data.examLabel, color: urgent ? "#FADBD8" : BRAND_LIGHT, size: "xs" },
+        ],
+      },
+      body: {
+        type: "box",
+        layout: "vertical",
+        spacing: "md",
+        paddingAll: "lg",
+        contents: [
+          statRow("วันสอบ", dateStr),
+          statRow("เหลืออีก", `${data.daysLeft} วัน`),
+          { type: "text", text: data.body, size: "sm", color: "#666666", wrap: true, margin: "md" },
+        ],
+      },
+      footer: footerButton(data.buttonLabel, `${siteUrl()}${data.path}`),
+    },
+  };
+}
+
 // ─── Blog digest broadcast ──────────────────────────────────────────────────
 
 export interface BlogDigestPost {
