@@ -1,0 +1,1976 @@
+[
+  {
+    "scenario": "ข้อใดอธิบายคุณสมบัติของ hydrocarbon (oleaginous) ointment base เช่น white petrolatum ได้ถูกต้องที่สุด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Occlusive สูง ลดการระเหยของน้ำจากผิว (ลด transepidermal water loss) เป็น emollient ที่ดี แต่ล้างออกด้วยน้ำยากและรับน้ำเข้าไปได้เพียงเล็กน้อย"
+      },
+      {
+        "label": "B",
+        "text": "ล้างออกด้วยน้ำได้ง่ายและไม่เหนอะหนะ เพราะมีโครงสร้างเป็น o/w emulsion"
+      },
+      {
+        "label": "C",
+        "text": "ดูดซับน้ำปริมาณมากได้โดยยังคงเป็นเนื้อเดียว เพราะมี w/o emulsifier เช่น cholesterol หรือ lanolin alcohols"
+      },
+      {
+        "label": "D",
+        "text": "ละลายน้ำได้ทั้งหมด ไม่มีส่วนที่เป็นไขมันหรือน้ำมันอยู่เลย"
+      },
+      {
+        "label": "E",
+        "text": "ไม่เหมาะกับยาที่ไวต่อ hydrolysis เพราะมีน้ำเป็นองค์ประกอบหลักของ base"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Hydrocarbon base (เช่น white petrolatum, white ointment) ไม่มีน้ำ ไม่ผสมกับน้ำ จึง occlusive สูง เป็น emollient ดี แต่ล้างน้ำออกยากและรับน้ำได้น้อย",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. Occlusive สูง ลดการระเหยของน้ำจากผิว (ลด transepidermal water loss) เป็น emollient ที่ดี แต่ล้างออกด้วยน้ำยากและรับน้ำเข้าไปได้เพียงเล็กน้อย — hydrocarbon base เป็น base ที่ occlusive และ emollient ที่สุด แต่ greasy ล้างน้ำไม่ออก และรับน้ำได้น้อย",
+      "reason": "USP แบ่ง ointment base เป็น 4 กลุ่ม ได้แก่ hydrocarbon (oleaginous) base, absorption base, water-removable base และ water-soluble base โดย hydrocarbon base ประกอบด้วยไฮโดรคาร์บอนล้วน เช่น white/yellow petrolatum, white ointment (white wax 5% ใน white petrolatum) และ mineral oil ซึ่งไม่มีน้ำและไม่มีสารลดแรงตึงผิว จึงผสมน้ำได้เพียงเล็กน้อยเท่านั้น คุณสมบัติเด่นคือเป็นชั้นฟิล์มปิดผิว (occlusive) ลด transepidermal water loss ทำให้ stratum corneum ชุ่มน้ำ (hydration) ซึ่งช่วยเพิ่มการซึมผ่านของยาบางชนิด และให้ผล emollient ที่ดีมากในผิวแห้ง ข้อเสียคือเหนอะหนะ (greasy) ติดเสื้อผ้า ล้างด้วยน้ำไม่ออก และไม่ดูดซับสารคัดหลั่งจากแผลที่มีน้ำเหลือง เนื่องจากไม่มีน้ำ base กลุ่มนี้จึงเหมาะกับยาที่ไม่คงตัวในน้ำ (เช่น bacitracin ที่ไวต่อ hydrolysis) และมี chemical stability ดี ไม่ต้องใส่สารกันเสียเพราะไม่มี water phase ให้จุลชีพเติบโต",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Occlusive สูง ลดการระเหยของน้ำจากผิว (ลด transepidermal water loss) เป็น emollient ที่ดี แต่ล้างออกด้วยน้ำยากและรับน้ำเข้าไปได้เพียงเล็กน้อย",
+          "is_correct": true,
+          "explanation": "ถูกต้อง — เป็นคุณสมบัติหลักของ hydrocarbon base: occlusive, emollient, ไม่มีน้ำ, ล้างน้ำออกยาก และรับน้ำได้เพียงเล็กน้อย"
+        },
+        {
+          "label": "B",
+          "text": "ล้างออกด้วยน้ำได้ง่ายและไม่เหนอะหนะ เพราะมีโครงสร้างเป็น o/w emulsion",
+          "is_correct": false,
+          "explanation": "ผิด — คุณสมบัติล้างน้ำออกง่ายและเป็น o/w emulsion คือ water-removable base เช่น hydrophilic ointment USP หรือ vanishing cream ไม่ใช่ petrolatum"
+        },
+        {
+          "label": "C",
+          "text": "ดูดซับน้ำปริมาณมากได้โดยยังคงเป็นเนื้อเดียว เพราะมี w/o emulsifier เช่น cholesterol หรือ lanolin alcohols",
+          "is_correct": false,
+          "explanation": "ผิด — นี่คือ absorption base ชนิด anhydrous เช่น hydrophilic petrolatum (มี cholesterol, stearyl alcohol, white wax) หรือ anhydrous lanolin ซึ่งรับน้ำได้มากเพราะมี w/o emulsifier"
+        },
+        {
+          "label": "D",
+          "text": "ละลายน้ำได้ทั้งหมด ไม่มีส่วนที่เป็นไขมันหรือน้ำมันอยู่เลย",
+          "is_correct": false,
+          "explanation": "ผิด — base ที่ละลายน้ำได้ทั้งหมดและไม่มีไขมันคือ water-soluble base เช่น PEG ointment (PEG 3350 + PEG 400)"
+        },
+        {
+          "label": "E",
+          "text": "ไม่เหมาะกับยาที่ไวต่อ hydrolysis เพราะมีน้ำเป็นองค์ประกอบหลักของ base",
+          "is_correct": false,
+          "explanation": "ผิด — ตรงกันข้าม hydrocarbon base ไม่มีน้ำ จึงเป็นตัวเลือกที่ดีที่สุดสำหรับยาที่ไวต่อ hydrolysis"
+        }
+      ],
+      "key_takeaway": "ลำดับความ occlusive: hydrocarbon > absorption > water-removable (o/w) > water-soluble (PEG); ความล้างน้ำออกง่ายเรียงกลับกัน"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "เภสัชกรต้องผสมสารละลายยาในน้ำ 5 mL ลงใน ointment base 30 g แพทย์ต้องการให้ base ยังคง occlusive และ emollient สูง ไม่ล้างออกด้วยน้ำ และ base ตั้งต้นต้องไม่มีน้ำ (anhydrous) แต่สามารถรับน้ำได้ ควรเลือก base ใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "White petrolatum"
+      },
+      {
+        "label": "B",
+        "text": "Hydrophilic ointment USP"
+      },
+      {
+        "label": "C",
+        "text": "Hydrophilic petrolatum USP"
+      },
+      {
+        "label": "D",
+        "text": "Polyethylene glycol ointment USP"
+      },
+      {
+        "label": "E",
+        "text": "Light mineral oil"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Hydrophilic petrolatum USP เป็น absorption base ชนิด anhydrous (มี cholesterol, stearyl alcohol, white wax ใน white petrolatum) รับน้ำเกิดเป็น w/o emulsion ได้ และยัง occlusive/ไม่ล้างน้ำ",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. Hydrophilic petrolatum USP — absorption base ชนิด anhydrous รับสารละลายน้ำได้โดยเกิดเป็น w/o emulsion และยังคงความ occlusive",
+      "reason": "Absorption base แบ่งเป็น 2 แบบ คือ (1) anhydrous ที่รับน้ำได้และเกิดเป็น w/o emulsion เช่น hydrophilic petrolatum USP และ anhydrous lanolin และ (2) แบบที่เป็น w/o emulsion อยู่แล้ว เช่น lanolin (hydrous wool fat) และ cold cream สูตร hydrophilic petrolatum USP ประกอบด้วย cholesterol 3%, stearyl alcohol 3%, white wax 8% และ white petrolatum 86% โดย cholesterol ทำหน้าที่เป็น w/o emulsifier ทำให้ผสมสารละลายน้ำปริมาณมากพอสมควรได้โดยไม่แยกชั้น ผลที่ได้คือ w/o emulsion ซึ่ง external phase เป็นน้ำมัน จึงยังคง occlusive และ emollient และล้างน้ำออกยากเหมือน petrolatum ในทางปฏิบัติจะค่อย ๆ เติมสารละลายน้ำทีละน้อยแล้วบดผสม (incorporation) จนเป็นเนื้อเดียว ส่วน white petrolatum เพียงอย่างเดียวรับน้ำได้น้อย หากเติมน้ำ 5 mL ใน 30 g จะเกิดหยดน้ำแยกชั้น",
+      "choices": [
+        {
+          "label": "A",
+          "text": "White petrolatum",
+          "is_correct": false,
+          "explanation": "ผิด — white petrolatum เป็น hydrocarbon base รับน้ำได้เพียงเล็กน้อย การเติมสารละลายน้ำ 5 mL จะเกิดการแยกชั้นเป็นหยดน้ำ"
+        },
+        {
+          "label": "B",
+          "text": "Hydrophilic ointment USP",
+          "is_correct": false,
+          "explanation": "ผิด — hydrophilic ointment USP เป็น o/w (water-removable) base ที่มีน้ำประมาณ 37% อยู่แล้ว (ไม่ใช่ anhydrous) และล้างน้ำออกได้ ไม่ตรงกับความต้องการเรื่อง occlusive"
+        },
+        {
+          "label": "C",
+          "text": "Hydrophilic petrolatum USP",
+          "is_correct": true,
+          "explanation": "ถูกต้อง — เป็น anhydrous absorption base รับน้ำได้โดยเกิด w/o emulsion ยังคง occlusive/emollient และล้างน้ำออกยาก"
+        },
+        {
+          "label": "D",
+          "text": "Polyethylene glycol ointment USP",
+          "is_correct": false,
+          "explanation": "ผิด — PEG ointment เป็น water-soluble base ล้างน้ำออกง่าย ไม่ occlusive และรับน้ำได้จำกัด (ต้องแทน PEG 3350 บางส่วนด้วย stearyl alcohol หากต้องการผสมสารละลายน้ำ 6–25%)"
+        },
+        {
+          "label": "E",
+          "text": "Light mineral oil",
+          "is_correct": false,
+          "explanation": "ผิด — mineral oil เป็นของเหลว ไม่ใช่ ointment base ที่ใช้เดี่ยว ๆ และไม่ผสมกับน้ำ มักใช้เป็น levigating agent สำหรับ oleaginous base"
+        }
+      ],
+      "key_takeaway": "ต้องการรับน้ำ + คงความ occlusive → absorption base (hydrophilic petrolatum, anhydrous lanolin); ต้องการล้างน้ำออกง่าย → o/w base หรือ PEG"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "Ointment base ข้อใดจัดเป็น absorption base ชนิดที่เป็น w/o emulsion อยู่แล้ว (มีน้ำเป็นองค์ประกอบ)",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Anhydrous lanolin (wool fat)"
+      },
+      {
+        "label": "B",
+        "text": "Lanolin (hydrous wool fat)"
+      },
+      {
+        "label": "C",
+        "text": "Hydrophilic petrolatum USP"
+      },
+      {
+        "label": "D",
+        "text": "Hydrophilic ointment USP"
+      },
+      {
+        "label": "E",
+        "text": "Vanishing cream"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Lanolin (hydrous wool fat) มีน้ำประมาณ 25–30% กระจายอยู่ใน wool fat จึงเป็น w/o emulsion type absorption base",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. Lanolin (hydrous wool fat) — lanolin (hydrous) มีน้ำ 25–30% เป็น w/o emulsion ในขณะที่ anhydrous lanolin ไม่มีน้ำ",
+      "reason": "Absorption base มี 2 แบบ: แบบ anhydrous ที่ยังไม่มีน้ำแต่รับน้ำได้ (hydrophilic petrolatum, anhydrous lanolin) และแบบ w/o emulsion ที่มีน้ำอยู่แล้วและยังรับน้ำเพิ่มได้อีกบ้าง (lanolin/hydrous wool fat, cold cream) Lanolin USP ได้จากไขขนแกะ ประกอบด้วย anhydrous lanolin ที่ผสมน้ำ 25–30% โดยมี sterols และ fatty alcohols ตามธรรมชาติเป็น w/o emulsifier เนื่องจาก external phase เป็นไขมัน จึงยังคง emollient และ occlusive ระดับหนึ่ง และล้างน้ำออกยาก ข้อควรระวังของ lanolin คืออาจเกิด allergic contact dermatitis ในบางคน และมีกลิ่นเฉพาะ ส่วน hydrophilic ointment และ vanishing cream เป็น o/w emulsion ซึ่งจัดเป็น water-removable base",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Anhydrous lanolin (wool fat)",
+          "is_correct": false,
+          "explanation": "ผิด — anhydrous lanolin ไม่มีน้ำ (น้ำไม่เกิน 0.25%) จัดเป็น absorption base ชนิด anhydrous ที่รับน้ำได้ประมาณสองเท่าของน้ำหนักตัวเอง"
+        },
+        {
+          "label": "B",
+          "text": "Lanolin (hydrous wool fat)",
+          "is_correct": true,
+          "explanation": "ถูกต้อง — lanolin (hydrous wool fat) มีน้ำ 25–30% เป็น w/o emulsion type absorption base"
+        },
+        {
+          "label": "C",
+          "text": "Hydrophilic petrolatum USP",
+          "is_correct": false,
+          "explanation": "ผิด — hydrophilic petrolatum เป็น anhydrous absorption base (ไม่มีน้ำ) แต่รับน้ำได้"
+        },
+        {
+          "label": "D",
+          "text": "Hydrophilic ointment USP",
+          "is_correct": false,
+          "explanation": "ผิด — hydrophilic ointment USP เป็น o/w emulsion จัดเป็น water-removable base"
+        },
+        {
+          "label": "E",
+          "text": "Vanishing cream",
+          "is_correct": false,
+          "explanation": "ผิด — vanishing cream เป็น o/w emulsion (stearic acid + soap) จัดเป็น water-removable base"
+        }
+      ],
+      "key_takeaway": "Absorption base: anhydrous = hydrophilic petrolatum, anhydrous lanolin | w/o emulsion = lanolin (25–30% water), cold cream"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "สูตร Hydrophilic Ointment USP ประกอบด้วย Methylparaben 0.025%, Propylparaben 0.015%, Sodium lauryl sulfate 1%, Propylene glycol 12%, Stearyl alcohol 25%, White petrolatum 25% และ Purified water 37% หน้าที่หลักของ sodium lauryl sulfate ในสูตรนี้คือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "สารกันเสีย (preservative)"
+      },
+      {
+        "label": "B",
+        "text": "สารดูดความชื้น (humectant)"
+      },
+      {
+        "label": "C",
+        "text": "Stiffening agent เพิ่มความหนืด"
+      },
+      {
+        "label": "D",
+        "text": "Emulsifying agent ชนิด anionic สำหรับ o/w emulsion"
+      },
+      {
+        "label": "E",
+        "text": "Emollient ในวัฏภาคน้ำมัน"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "SLS เป็น anionic surfactant ที่มี HLB สูง (~40) ทำหน้าที่เป็น o/w emulsifier ทำให้ hydrophilic ointment เป็น o/w (water-removable) base",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. Emulsifying agent ชนิด anionic สำหรับ o/w emulsion — SLS เป็น anionic surfactant HLB สูง ทำหน้าที่ emulsifier ให้เกิด o/w emulsion",
+      "reason": "Hydrophilic ointment USP เป็นตัวอย่างคลาสสิกของ water-removable (o/w) base องค์ประกอบแต่ละตัวมีหน้าที่ชัดเจน: sodium lauryl sulfate (SLS) เป็น anionic surfactant ที่ HLB สูงมาก จึงทำให้ได้ o/w emulsion; stearyl alcohol (25%) และ white petrolatum (25%) เป็นวัฏภาคน้ำมัน โดย stearyl alcohol ยังช่วยเป็น stiffening agent และ auxiliary emulsifier ที่สร้างโครงสร้างเจลรอบหยดน้ำมันทำให้เนื้อครีมคงตัว; propylene glycol 12% เป็น humectant ป้องกันการแห้งและช่วยด้านการกันเสีย; methylparaben และ propylparaben เป็นสารกันเสีย (จำเป็นเพราะมีวัฏภาคน้ำ) ในการเตรียม จะหลอม stearyl alcohol กับ white petrolatum ที่ประมาณ 75 °C และละลาย SLS, PG, parabens ในน้ำที่อุณหภูมิใกล้เคียงกัน แล้วเติมวัฏภาคน้ำลงในวัฏภาคน้ำมันพร้อมกวนจนเย็น ข้อควรระวังคือ SLS เป็น anionic จึงอาจ incompatible กับยาหรือสาร cationic (เช่น quaternary ammonium) และอาจระคายเคืองผิวบางคน",
+      "choices": [
+        {
+          "label": "A",
+          "text": "สารกันเสีย (preservative)",
+          "is_correct": false,
+          "explanation": "ผิด — สารกันเสียในสูตรนี้คือ methylparaben และ propylparaben"
+        },
+        {
+          "label": "B",
+          "text": "สารดูดความชื้น (humectant)",
+          "is_correct": false,
+          "explanation": "ผิด — humectant ในสูตรคือ propylene glycol"
+        },
+        {
+          "label": "C",
+          "text": "Stiffening agent เพิ่มความหนืด",
+          "is_correct": false,
+          "explanation": "ผิด — stiffening agent คือ stearyl alcohol ซึ่งเพิ่มความแข็งและช่วยความคงตัวของ emulsion"
+        },
+        {
+          "label": "D",
+          "text": "Emulsifying agent ชนิด anionic สำหรับ o/w emulsion",
+          "is_correct": true,
+          "explanation": "ถูกต้อง — SLS เป็น anionic surfactant HLB สูง ทำหน้าที่ o/w emulsifier"
+        },
+        {
+          "label": "E",
+          "text": "Emollient ในวัฏภาคน้ำมัน",
+          "is_correct": false,
+          "explanation": "ผิด — emollient/วัฏภาคน้ำมันคือ white petrolatum (และ stearyl alcohol) ไม่ใช่ SLS ซึ่งละลายอยู่ในวัฏภาคน้ำ"
+        }
+      ],
+      "key_takeaway": "Hydrophilic ointment: SLS = emulsifier, stearyl alcohol = stiffener/oil, petrolatum = oil, PG = humectant, parabens = preservative"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ผู้ป่วยต้องการยาทาที่ไม่เหนอะหนะ ล้างออกด้วยน้ำได้หมด โดย base ต้องไม่มีน้ำเป็นองค์ประกอบ (anhydrous) และไม่มีไขมันเลย base ใดเหมาะสมที่สุด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "White ointment USP"
+      },
+      {
+        "label": "B",
+        "text": "Hydrophilic petrolatum USP"
+      },
+      {
+        "label": "C",
+        "text": "Cold cream USP"
+      },
+      {
+        "label": "D",
+        "text": "Hydrophilic ointment USP"
+      },
+      {
+        "label": "E",
+        "text": "Polyethylene glycol ointment USP"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "PEG ointment (PEG 3350 40% + PEG 400 60%) เป็น water-soluble base: ไม่มีน้ำ ไม่มีไขมัน ไม่เหนอะหนะ และล้างออกด้วยน้ำได้หมด",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. Polyethylene glycol ointment USP — water-soluble base (PEG ointment) ไม่มีน้ำ ไม่มีไขมัน และล้างน้ำออกได้สมบูรณ์",
+      "reason": "Polyethylene glycol ointment USP ประกอบด้วย PEG 3350 400 g และ PEG 400 600 g ต่อ 1000 g หลอมรวมกันแล้วกวนจนเย็นเป็นเนื้อขี้ผึ้ง PEG เป็น polymer ของ ethylene oxide ที่ละลายน้ำได้ดี จึงจัดเป็น water-soluble base ซึ่งไม่มีทั้งน้ำและไขมัน ไม่เหนอะหนะ ไม่ occlusive และล้างออกด้วยน้ำได้หมด สามารถปรับความแข็งได้โดยเปลี่ยนสัดส่วน PEG น้ำหนักโมเลกุลสูง (ของแข็ง) กับต่ำ (ของเหลว) ข้อจำกัด: PEG ดูดความชื้น อาจดึงน้ำจากผิวทำให้ระคายเคือง, รับน้ำได้จำกัด (หากต้องการผสมสารละลายน้ำ 6–25% ให้แทน PEG 3350 50 g ด้วย stearyl alcohol), และอาจ incompatible หรือลดฤทธิ์ของยาบางตัว เช่น phenolic compounds, penicillin และ bacitracin รวมถึงอาจทำให้พลาสติกบางชนิดอ่อนตัว base กลุ่มนี้เหมาะกับบริเวณที่มีขน หรือผู้ที่ไม่ต้องการความมัน",
+      "choices": [
+        {
+          "label": "A",
+          "text": "White ointment USP",
+          "is_correct": false,
+          "explanation": "ผิด — white ointment (white wax 5% ใน white petrolatum) เป็น hydrocarbon base ที่เหนอะหนะและล้างน้ำไม่ออก"
+        },
+        {
+          "label": "B",
+          "text": "Hydrophilic petrolatum USP",
+          "is_correct": false,
+          "explanation": "ผิด — hydrophilic petrolatum เป็น absorption base ที่มี petrolatum เป็นหลัก จึงมันและล้างน้ำออกยาก"
+        },
+        {
+          "label": "C",
+          "text": "Cold cream USP",
+          "is_correct": false,
+          "explanation": "ผิด — cold cream เป็น w/o emulsion มีทั้งน้ำและไขมัน (mineral oil, beeswax, cetyl esters wax)"
+        },
+        {
+          "label": "D",
+          "text": "Hydrophilic ointment USP",
+          "is_correct": false,
+          "explanation": "ผิด — hydrophilic ointment ล้างน้ำออกได้ แต่มีน้ำ (~37%) และมีไขมัน (white petrolatum, stearyl alcohol)"
+        },
+        {
+          "label": "E",
+          "text": "Polyethylene glycol ointment USP",
+          "is_correct": true,
+          "explanation": "ถูกต้อง — PEG ointment เป็น water-soluble base ไม่มีน้ำ ไม่มีไขมัน ล้างน้ำออกได้หมด"
+        }
+      ],
+      "key_takeaway": "“ไม่มีน้ำ + ไม่มีมัน + ล้างน้ำได้” = PEG ointment (PEG 3350 : PEG 400 = 40 : 60)"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "สูตร vanishing cream ประกอบด้วย Stearic acid 15%, Glycerin 10%, Triethanolamine 1%, Methylparaben 0.1% และ Purified water เติมจนครบ 100% หน้าที่ของ triethanolamine ในสูตรนี้คือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "บัฟเฟอร์ปรับ pH ของครีมให้อยู่ที่ประมาณ 5.5 เท่ากับผิว"
+      },
+      {
+        "label": "B",
+        "text": "ทำปฏิกิริยากับ stearic acid บางส่วนเกิดเป็น triethanolamine stearate ซึ่งเป็น anionic soap ทำหน้าที่ o/w emulsifier แบบ in situ"
+      },
+      {
+        "label": "C",
+        "text": "สารกันเสียร่วมกับ methylparaben"
+      },
+      {
+        "label": "D",
+        "text": "สารดูดความชื้น (humectant) ป้องกันครีมแห้ง"
+      },
+      {
+        "label": "E",
+        "text": "Penetration enhancer เพิ่มการซึมผ่าน stratum corneum"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "TEA (base อ่อน) ทำปฏิกิริยา neutralize stearic acid เพียงบางส่วนเกิด TEA stearate (สบู่) ในตำรับ ทำหน้าที่ o/w emulsifier; stearic acid ส่วนเกินเป็นวัฏภาคน้ำมัน",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. ทำปฏิกิริยากับ stearic acid บางส่วนเกิดเป็น triethanolamine stearate ซึ่งเป็น anionic soap ทำหน้าที่ o/w emulsifier แบบ in situ — TEA + stearic acid → TEA stearate (in situ soap) เป็น o/w emulsifier ของ vanishing cream",
+      "reason": "Vanishing cream เป็น o/w emulsion ที่มีน้ำปริมาณมากและ stearic acid เป็นวัฏภาคน้ำมันหลัก ในการเตรียม จะหลอม stearic acid ที่ประมาณ 70–75 °C และละลาย TEA, glycerin, paraben ในน้ำร้อน เมื่อผสมกัน TEA จะทำปฏิกิริยากับ stearic acid เพียงส่วนน้อย (ปริมาณ TEA ไม่พอ neutralize ทั้งหมด) เกิดเป็น triethanolamine stearate ซึ่งเป็น anionic soap ที่ทำหน้าที่ emulsifier ชนิด o/w แบบเกิดขึ้นในตำรับ (in situ) ส่วน stearic acid ที่เหลือเป็นวัฏภาคภายในและตกผลึกให้เนื้อครีมมีความวาวแบบมุก (pearlescent) เมื่อทาลงผิว น้ำปริมาณมากระเหยไป เหลือเพียงฟิล์มบาง ๆ ของ stearic acid ที่มองไม่เห็น จึงเรียกว่า “vanishing” ครีมนี้ไม่มัน ล้างน้ำออกได้ จัดเป็น water-removable base สามารถใช้ KOH หรือ NaOH แทน TEA ได้เช่นกัน ส่วน glycerin เป็น humectant และ methylparaben เป็นสารกันเสีย ข้อควรระวัง: สบู่ anionic มี pH ค่อนข้างด่างและ incompatible กับกรดแรง เกลือของโลหะหลายประจุ และสาร cationic",
+      "choices": [
+        {
+          "label": "A",
+          "text": "บัฟเฟอร์ปรับ pH ของครีมให้อยู่ที่ประมาณ 5.5 เท่ากับผิว",
+          "is_correct": false,
+          "explanation": "ผิด — TEA เป็น base ทำให้ pH ของตำรับค่อนข้างด่างเล็กน้อย หน้าที่หลักไม่ใช่บัฟเฟอร์ แต่เป็นการสร้างสบู่ emulsifier"
+        },
+        {
+          "label": "B",
+          "text": "ทำปฏิกิริยากับ stearic acid บางส่วนเกิดเป็น triethanolamine stearate ซึ่งเป็น anionic soap ทำหน้าที่ o/w emulsifier แบบ in situ",
+          "is_correct": true,
+          "explanation": "ถูกต้อง — TEA neutralize stearic acid บางส่วนเกิด TEA stearate เป็น anionic o/w emulsifier"
+        },
+        {
+          "label": "C",
+          "text": "สารกันเสียร่วมกับ methylparaben",
+          "is_correct": false,
+          "explanation": "ผิด — สารกันเสียในสูตรคือ methylparaben; TEA ไม่ได้ใช้เพื่อกันเสีย"
+        },
+        {
+          "label": "D",
+          "text": "สารดูดความชื้น (humectant) ป้องกันครีมแห้ง",
+          "is_correct": false,
+          "explanation": "ผิด — humectant ในสูตรคือ glycerin"
+        },
+        {
+          "label": "E",
+          "text": "Penetration enhancer เพิ่มการซึมผ่าน stratum corneum",
+          "is_correct": false,
+          "explanation": "ผิด — TEA ในปริมาณ 1% ไม่ได้ใช้เป็น penetration enhancer"
+        }
+      ],
+      "key_takeaway": "Vanishing cream = o/w, stearic acid + alkali (TEA/KOH) → soap in situ; น้ำระเหยเหลือฟิล์ม stearic acid"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "สูตร Cold Cream ประกอบด้วย Cetyl esters wax 12.5%, White wax (beeswax) 12%, Mineral oil 56%, Sodium borate 0.5% และ Purified water 19% หน้าที่ของ sodium borate (borax) ในสูตรคือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Antioxidant ป้องกันการหืนของ mineral oil"
+      },
+      {
+        "label": "B",
+        "text": "Stiffening agent เพิ่มจุดหลอมเหลวของครีม"
+      },
+      {
+        "label": "C",
+        "text": "ทำปฏิกิริยากับกรดไขมันอิสระใน beeswax เกิดเป็นสบู่โซเดียม (sodium soaps) ทำหน้าที่ emulsifier"
+      },
+      {
+        "label": "D",
+        "text": "Humectant ดูดความชื้นเข้าสู่ผิว"
+      },
+      {
+        "label": "E",
+        "text": "บัฟเฟอร์ปรับ pH ของครีมให้เป็นกรด (pH ~4.5) ใกล้เคียงผิว"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Borax (ด่างอ่อน) ทำปฏิกิริยากับกรดไขมันอิสระ (เช่น cerotic acid) ใน beeswax เกิดสบู่โซเดียมทำหน้าที่ emulsifier ใน cold cream",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. ทำปฏิกิริยากับกรดไขมันอิสระใน beeswax เกิดเป็นสบู่โซเดียม (sodium soaps) ทำหน้าที่ emulsifier — borax + free fatty acids ใน beeswax → sodium soaps ทำหน้าที่ emulsifier",
+      "reason": "Cold cream (rose water ointment) เป็น absorption base ชนิด w/o emulsion ที่มีน้ำมันปริมาณสูง เมื่อทาผิว น้ำในตำรับระเหยทำให้รู้สึกเย็น จึงเรียกว่า cold cream นิยมใช้เป็น emollient และทำความสะอาดผิว ในสูตร beeswax (white wax) มีกรดไขมันอิสระ เช่น cerotic acid เมื่อเติม sodium borate ซึ่งเป็นเกลือด่างอ่อน จะเกิดปฏิกิริยา saponification บางส่วน ได้สบู่โซเดียมซึ่งทำหน้าที่ emulsifier ช่วยให้วัฏภาคน้ำกระจายตัวในน้ำมันได้คงตัว ส่วน cetyl esters wax และ white wax เป็นวัฏภาคน้ำมันที่ให้ความแข็ง (stiffening) และ mineral oil เป็น emollient หลัก การเตรียม: หลอม waxes กับ mineral oil ที่ประมาณ 70 °C ละลาย borax ในน้ำร้อนอุณหภูมิใกล้เคียงกัน แล้วเติมวัฏภาคน้ำลงในวัฏภาคน้ำมันพร้อมกวนจนเย็น ข้อสังเกต: borax เป็นด่าง จึงไม่ได้ทำให้ครีมเป็นกรด และไม่ได้ใช้เป็น antioxidant",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Antioxidant ป้องกันการหืนของ mineral oil",
+          "is_correct": false,
+          "explanation": "ผิด — borax ไม่ใช่ antioxidant; อีกทั้ง mineral oil เป็นไฮโดรคาร์บอนอิ่มตัวซึ่งไม่ค่อยหืน"
+        },
+        {
+          "label": "B",
+          "text": "Stiffening agent เพิ่มจุดหลอมเหลวของครีม",
+          "is_correct": false,
+          "explanation": "ผิด — stiffening agent ในสูตรคือ cetyl esters wax และ white wax"
+        },
+        {
+          "label": "C",
+          "text": "ทำปฏิกิริยากับกรดไขมันอิสระใน beeswax เกิดเป็นสบู่โซเดียม (sodium soaps) ทำหน้าที่ emulsifier",
+          "is_correct": true,
+          "explanation": "ถูกต้อง — borax ทำปฏิกิริยากับกรดไขมันอิสระใน beeswax ได้สบู่โซเดียมซึ่งเป็น emulsifier"
+        },
+        {
+          "label": "D",
+          "text": "Humectant ดูดความชื้นเข้าสู่ผิว",
+          "is_correct": false,
+          "explanation": "ผิด — สูตรนี้ไม่มี humectant (เช่น glycerin) และ borax ไม่ได้ทำหน้าที่นี้"
+        },
+        {
+          "label": "E",
+          "text": "บัฟเฟอร์ปรับ pH ของครีมให้เป็นกรด (pH ~4.5) ใกล้เคียงผิว",
+          "is_correct": false,
+          "explanation": "ผิด — sodium borate เป็นเกลือของด่าง สารละลายมี pH ด่าง (~9) ไม่ทำให้ครีมเป็นกรด"
+        }
+      ],
+      "key_takeaway": "Cold cream = w/o, เย็นเพราะน้ำระเหย; beeswax + borax → soap emulsifier; cetyl esters wax/white wax = stiffener"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ครีมสูตรหนึ่งประกอบด้วย Drug 1%, Cetostearyl alcohol 7.2%, Cetomacrogol 1000 1.8%, White soft paraffin 15%, Liquid paraffin 6%, Chlorocresol 0.1% และ Purified water เติมจนครบ 100% หน้าที่หลักของ cetostearyl alcohol คือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Primary emulsifier ชนิด anionic"
+      },
+      {
+        "label": "B",
+        "text": "สารกันเสีย"
+      },
+      {
+        "label": "C",
+        "text": "Humectant"
+      },
+      {
+        "label": "D",
+        "text": "Stiffening agent (ให้ความหนืด/ความข้นของครีม) และทำหน้าที่ co-emulsifier ร่วมกับ cetomacrogol 1000"
+      },
+      {
+        "label": "E",
+        "text": "Penetration enhancer"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "Cetostearyl alcohol เป็น fatty alcohol ที่ให้ความข้น (stiffening agent) และร่วมกับ nonionic surfactant (cetomacrogol 1000) สร้างโครงข่ายเจลในวัฏภาคน้ำทำให้ครีมคงตัว",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. Stiffening agent (ให้ความหนืด/ความข้นของครีม) และทำหน้าที่ co-emulsifier ร่วมกับ cetomacrogol 1000 — cetostearyl alcohol = stiffening agent + co-emulsifier ที่สร้าง gel network ร่วมกับ cetomacrogol",
+      "reason": "สูตรนี้คือ cetomacrogol cream (BP) ซึ่งใช้ cetomacrogol emulsifying wax (cetostearyl alcohol 80 : cetomacrogol 1000 20) รวม 9% เป็นระบบ emulsifier แบบ nonionic Cetomacrogol 1000 (polyoxyethylene cetostearyl ether) เป็น nonionic surfactant HLB สูง ทำหน้าที่ primary o/w emulsifier ส่วน cetostearyl alcohol เป็น fatty alcohol สายยาว (C16–C18) ซึ่งเมื่ออยู่ร่วมกับ surfactant จะเกิดโครงสร้าง lamellar gel network ในวัฏภาคน้ำภายนอก ทำให้ครีมมีความข้นหนืด (stiffening/consistency) และป้องกันการรวมตัวของหยดน้ำมัน จึงเรียกว่าเป็นทั้ง stiffening agent และ auxiliary/co-emulsifier White soft paraffin และ liquid paraffin เป็นวัฏภาคน้ำมัน (emollient) และ chlorocresol 0.1% เป็นสารกันเสีย ข้อดีของ emulsifier ชนิด nonionic คือ compatible กับยาทั้ง cationic และ anionic และทนต่อ electrolyte และการเปลี่ยน pH ได้ดีกว่าสบู่หรือ SLS",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Primary emulsifier ชนิด anionic",
+          "is_correct": false,
+          "explanation": "ผิด — สูตรนี้ไม่มี anionic emulsifier; primary emulsifier คือ cetomacrogol 1000 ซึ่งเป็น nonionic"
+        },
+        {
+          "label": "B",
+          "text": "สารกันเสีย",
+          "is_correct": false,
+          "explanation": "ผิด — สารกันเสียคือ chlorocresol 0.1%"
+        },
+        {
+          "label": "C",
+          "text": "Humectant",
+          "is_correct": false,
+          "explanation": "ผิด — สูตรนี้ไม่มี humectant เช่น glycerin หรือ propylene glycol"
+        },
+        {
+          "label": "D",
+          "text": "Stiffening agent (ให้ความหนืด/ความข้นของครีม) และทำหน้าที่ co-emulsifier ร่วมกับ cetomacrogol 1000",
+          "is_correct": true,
+          "explanation": "ถูกต้อง — cetostearyl alcohol ให้ความข้นและเป็น co-emulsifier สร้าง gel network ร่วมกับ cetomacrogol"
+        },
+        {
+          "label": "E",
+          "text": "Penetration enhancer",
+          "is_correct": false,
+          "explanation": "ผิด — fatty alcohol ในสูตรนี้มีหน้าที่หลักด้านโครงสร้าง ไม่ได้ใส่เพื่อเพิ่มการซึมผ่าน"
+        }
+      ],
+      "key_takeaway": "Cetyl/stearyl/cetostearyl alcohol ในครีม = stiffening agent + co-emulsifier (สร้าง lamellar gel network)"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "ครีมสูตรหนึ่งประกอบด้วย Triamcinolone acetonide 0.1%, Cetyl alcohol 5%, Stearyl alcohol 5%, Liquid paraffin 10%, White petrolatum 10%, Polysorbate 60 3%, Sorbitan monostearate 2%, Propylene glycol 15%, Methylparaben 0.18%, Propylparaben 0.02% และ Purified water เติมจนครบ 100% สารใดทำหน้าที่เป็นทั้ง humectant และ penetration enhancer/cosolvent ของตัวยา",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Polysorbate 60"
+      },
+      {
+        "label": "B",
+        "text": "Sorbitan monostearate"
+      },
+      {
+        "label": "C",
+        "text": "Cetyl alcohol"
+      },
+      {
+        "label": "D",
+        "text": "Methylparaben"
+      },
+      {
+        "label": "E",
+        "text": "Propylene glycol"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "Propylene glycol 15% เป็น humectant, cosolvent ของ corticosteroid และ penetration enhancer อีกทั้งช่วยเสริมฤทธิ์กันเสียในวัฏภาคน้ำ",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. Propylene glycol — propylene glycol ในครีมทำหน้าที่ humectant + cosolvent + penetration enhancer (และช่วยกันเสียเมื่อ ≥15%)",
+      "reason": "Propylene glycol (PG) เป็น polyol ที่ละลายน้ำได้ มีคุณสมบัติดูดความชื้น จึงป้องกันครีมแห้งเป็นแผ่นแข็งที่ปากหลอดและช่วยให้ผิวชุ่มชื้น (humectant) นอกจากนี้ PG เป็น cosolvent ที่ช่วยละลาย corticosteroid ที่ละลายน้ำได้น้อย ทำให้ยาอยู่ในรูปละลายและเพิ่ม thermodynamic activity และ PG สามารถแทรกเข้าสู่ stratum corneum เปลี่ยนสภาพการละลายของยาในชั้นผิว (เพิ่มค่า partition/solubility ใน SC) จึงจัดเป็น penetration enhancer ที่ใช้บ่อยในตำรับ topical steroid อีกทั้งที่ความเข้มข้นประมาณ 15–30% PG มีฤทธิ์ antimicrobial เสริม parabens ส่วนสารอื่นในสูตร: polysorbate 60 (HLB ~14.9) เป็น o/w emulsifier หลัก, sorbitan monostearate (HLB ~4.7) เป็น lipophilic co-emulsifier ที่จับคู่กับ polysorbate เพื่อให้ได้ required HLB ที่เหมาะสม, cetyl/stearyl alcohol เป็น stiffening agent, liquid paraffin และ white petrolatum เป็น emollient และ parabens เป็นสารกันเสีย ข้อควรระวัง: PG ความเข้มข้นสูงอาจทำให้แสบหรือระคายเคืองในบางคน",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Polysorbate 60",
+          "is_correct": false,
+          "explanation": "ผิด — polysorbate 60 เป็น nonionic surfactant HLB สูง ทำหน้าที่ o/w emulsifier หลัก"
+        },
+        {
+          "label": "B",
+          "text": "Sorbitan monostearate",
+          "is_correct": false,
+          "explanation": "ผิด — sorbitan monostearate (Span 60) HLB ต่ำ ทำหน้าที่ co-emulsifier ร่วมกับ polysorbate เพื่อปรับ HLB"
+        },
+        {
+          "label": "C",
+          "text": "Cetyl alcohol",
+          "is_correct": false,
+          "explanation": "ผิด — cetyl alcohol เป็น stiffening agent/co-emulsifier"
+        },
+        {
+          "label": "D",
+          "text": "Methylparaben",
+          "is_correct": false,
+          "explanation": "ผิด — methylparaben เป็นสารกันเสีย (ใช้คู่กับ propylparaben)"
+        },
+        {
+          "label": "E",
+          "text": "Propylene glycol",
+          "is_correct": true,
+          "explanation": "ถูกต้อง — PG เป็น humectant, cosolvent และ penetration enhancer ของยา"
+        }
+      ],
+      "key_takeaway": "PG ในตำรับ topical = humectant + cosolvent + enhancer + (≥15%) preservative ช่วย; Tween (HLB สูง) + Span (HLB ต่ำ) = คู่ emulsifier"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "เภสัชกรกระจาย Carbomer 940 0.5% w/w ในน้ำ ได้ของเหลวขุ่นเล็กน้อย ความหนืดต่ำ และ pH ประมาณ 3 ขั้นตอนใดทำให้ได้เจลใสที่มีความหนืดสูง",
+    "choices": [
+      {
+        "label": "A",
+        "text": "เติม neutralizing agent เช่น triethanolamine หรือ NaOH จน pH ประมาณ 6–7"
+      },
+      {
+        "label": "B",
+        "text": "เติม HCl เพื่อลด pH ลงเหลือประมาณ 2"
+      },
+      {
+        "label": "C",
+        "text": "ให้ความร้อนที่ 80 °C เพื่อให้เกิด thermal gelation แล้วทิ้งให้เย็น"
+      },
+      {
+        "label": "D",
+        "text": "เติม sodium chloride เพื่อเพิ่ม ionic strength"
+      },
+      {
+        "label": "E",
+        "text": "เติม calcium chloride เพื่อให้เกิด ionic cross-linking แบบ alginate"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Carbomer เป็น polyacrylic acid เมื่อ neutralize ด้วย base หมู่ –COOH แตกตัวเป็น –COO⁻ เกิดแรงผลักทางไฟฟ้าทำให้สายพอลิเมอร์คลายตัว ความหนืดเพิ่มสูงและได้เจลใส",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. เติม neutralizing agent เช่น triethanolamine หรือ NaOH จน pH ประมาณ 6–7 — carbomer ต้อง neutralize (TEA/NaOH) ให้ pH ~6–7 เพื่อให้สายพอลิเมอร์แตกตัวและคลายตัวเกิดเจล",
+      "reason": "Carbomer (carbopol) เป็น cross-linked polyacrylic acid ที่มีหมู่ carboxyl จำนวนมาก (pKa ประมาณ 6) เมื่อกระจายในน้ำ dispersion มี pH ต่ำ (ประมาณ 2.5–3.5) สายพอลิเมอร์ยังม้วนขดอยู่ จึงมีความหนืดต่ำและขุ่น เมื่อเติม neutralizing agent เช่น triethanolamine (TEA), NaOH, หรือ aminomethyl propanol หมู่ –COOH แตกตัวเป็น –COO⁻ เกิดแรงผลักทางไฟฟ้าระหว่างประจุลบบนสายพอลิเมอร์ สายจึงคลายตัวและพองน้ำสูงสุด (uncoiling) ทำให้ความหนืดเพิ่มขึ้นอย่างมากและเจลใส ช่วง pH ที่ให้ความหนืดสูงสุดคือประมาณ 6–7 (ช่วงใช้งานกว้างประมาณ 5–9) ในทางปฏิบัติ ต้องโรย carbomer ลงในน้ำช้า ๆ พร้อมกวนเพื่อป้องกันการเกาะเป็นก้อน ทิ้งให้พองน้ำ แล้วจึง neutralize อย่างช้า ๆ เพื่อลดฟองอากาศ ข้อควรระวัง: ความหนืดลดลงเมื่อมี electrolyte, pH ต่ำหรือสูงเกินไป และ carbomer incompatible กับยา cationic บางตัวและ polyvalent cations",
+      "choices": [
+        {
+          "label": "A",
+          "text": "เติม neutralizing agent เช่น triethanolamine หรือ NaOH จน pH ประมาณ 6–7",
+          "is_correct": true,
+          "explanation": "ถูกต้อง — neutralize ด้วย TEA/NaOH ให้ pH ~6–7 ทำให้หมู่ carboxyl แตกตัว สายพอลิเมอร์คลายตัว เกิดเจลใสหนืด"
+        },
+        {
+          "label": "B",
+          "text": "เติม HCl เพื่อลด pH ลงเหลือประมาณ 2",
+          "is_correct": false,
+          "explanation": "ผิด — การลด pH ยิ่งกดการแตกตัวของ –COOH ทำให้สายพอลิเมอร์ยิ่งขดตัว ความหนืดต่ำลง"
+        },
+        {
+          "label": "C",
+          "text": "ให้ความร้อนที่ 80 °C เพื่อให้เกิด thermal gelation แล้วทิ้งให้เย็น",
+          "is_correct": false,
+          "explanation": "ผิด — carbomer ไม่เกิด thermal gelation; การเกิดเจลจากความร้อนเป็นลักษณะของ methylcellulose/HPMC ซึ่งไม่ใช่กลไกนี้"
+        },
+        {
+          "label": "D",
+          "text": "เติม sodium chloride เพื่อเพิ่ม ionic strength",
+          "is_correct": false,
+          "explanation": "ผิด — electrolyte เช่น NaCl กดประจุ (charge screening) ทำให้ความหนืดของ carbomer ลดลง"
+        },
+        {
+          "label": "E",
+          "text": "เติม calcium chloride เพื่อให้เกิด ionic cross-linking แบบ alginate",
+          "is_correct": false,
+          "explanation": "ผิด — การ cross-link ด้วย Ca²⁺ เป็นกลไกของ sodium alginate; polyvalent cations กลับทำให้ carbomer ตกตะกอน/ความหนืดลดลง"
+        }
+      ],
+      "key_takeaway": "Carbomer: กระจาย → พองน้ำ → neutralize (TEA/NaOH) pH 6–7 = เจลใส; เกลือ/กรด/cation ทำให้ความหนืดลด"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "เจล carbomer 940 0.5% ที่ neutralize ด้วย triethanolamine จนได้เจลใสและหนืดดี ต่อมาเภสัชกรเติม sodium chloride 0.9% w/w ลงไปเพื่อปรับ tonicity พบว่าความหนืดลดลงอย่างมากจนเจลเหลว สาเหตุที่เป็นไปได้มากที่สุดคือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "NaCl ทำให้ pH สูงเกิน 10 จนสายหลักของพอลิเมอร์ถูก hydrolyze"
+      },
+      {
+        "label": "B",
+        "text": "เกิดการปนเปื้อนจุลชีพซึ่งย่อยสลาย carbomer อย่างรวดเร็ว"
+      },
+      {
+        "label": "C",
+        "text": "NaCl ทำให้เกิด thermal gelation แบบย้อนกลับ (reverse thermal gelation)"
+      },
+      {
+        "label": "D",
+        "text": "ไอออนบวก (Na⁺) ไปกดประจุลบของหมู่ –COO⁻ (charge screening) ลดแรงผลักระหว่างสาย พอลิเมอร์จึงขดตัวกลับ ความหนืดลดลง"
+      },
+      {
+        "label": "E",
+        "text": "NaCl ทำให้น้ำในเจลระเหยเร็วขึ้น"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "Electrolyte กดชั้นประจุรอบหมู่ carboxylate (charge screening) แรงผลักทางไฟฟ้าที่ทำให้สาย carbomer คลายตัวหายไป สายจึงขดตัวกลับและความหนืดลดลง",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. ไอออนบวก (Na⁺) ไปกดประจุลบของหมู่ –COO⁻ (charge screening) ลดแรงผลักระหว่างสาย พอลิเมอร์จึงขดตัวกลับ ความหนืดลดลง — carbomer ไวต่อ electrolyte เพราะ cation กดประจุ –COO⁻ ทำให้สายพอลิเมอร์ขดตัว ความหนืดลด",
+      "reason": "ความหนืดของ carbomer gel อาศัยแรงผลักทางไฟฟ้าระหว่างหมู่ –COO⁻ ที่เกิดหลัง neutralize ทำให้สายพอลิเมอร์ที่ cross-link คลายตัวและพองน้ำเต็มที่ เมื่อเติม electrolyte เช่น NaCl ไอออนบวกจะเข้ามาล้อมรอบประจุลบ (ลดความหนาของ electrical double layer) ทำให้แรงผลักลดลง สายพอลิเมอร์จึงหดขดตัว ปริมาตรที่พองน้ำลดลง และความหนืดลดลงอย่างมาก ผลนี้รุนแรงกว่าเมื่อเป็น polyvalent cation เช่น Ca²⁺ Mg²⁺ ซึ่งอาจทำให้ตกตะกอน ยาในรูปเกลือที่ใช้ความเข้มข้นสูงหรือยา cationic ก็ทำให้ความหนืดลดหรือเกิดสารประกอบเชิงซ้อนไม่ละลายได้ แนวทางแก้ไข: ใช้ carbomer เกรดที่ทน electrolyte มากขึ้น, เพิ่มความเข้มข้น carbomer, หรือเปลี่ยนไปใช้สารก่อเจล nonionic เช่น HPMC หรือ hydroxyethylcellulose ซึ่งทนต่อ electrolyte ได้ดีกว่า",
+      "choices": [
+        {
+          "label": "A",
+          "text": "NaCl ทำให้ pH สูงเกิน 10 จนสายหลักของพอลิเมอร์ถูก hydrolyze",
+          "is_correct": false,
+          "explanation": "ผิด — NaCl เป็นเกลือที่เป็นกลาง ไม่ทำให้ pH ขึ้นถึง 10 และ carbomer ไม่ถูก hydrolyze ในสภาวะนี้"
+        },
+        {
+          "label": "B",
+          "text": "เกิดการปนเปื้อนจุลชีพซึ่งย่อยสลาย carbomer อย่างรวดเร็ว",
+          "is_correct": false,
+          "explanation": "ผิด — การปนเปื้อนจุลชีพไม่ทำให้ความหนืดลดทันทีหลังเติมเกลือ และ carbomer ค่อนข้างทนต่อจุลชีพ (แต่ตำรับที่มีน้ำยังต้องใส่สารกันเสีย)"
+        },
+        {
+          "label": "C",
+          "text": "NaCl ทำให้เกิด thermal gelation แบบย้อนกลับ (reverse thermal gelation)",
+          "is_correct": false,
+          "explanation": "ผิด — carbomer ไม่มี thermal gelation และการเติมเกลือไม่ได้เกี่ยวกับอุณหภูมิ"
+        },
+        {
+          "label": "D",
+          "text": "ไอออนบวก (Na⁺) ไปกดประจุลบของหมู่ –COO⁻ (charge screening) ลดแรงผลักระหว่างสาย พอลิเมอร์จึงขดตัวกลับ ความหนืดลดลง",
+          "is_correct": true,
+          "explanation": "ถูกต้อง — charge screening จาก Na⁺ ทำให้สายพอลิเมอร์ขดตัวกลับ ความหนืดลดลง"
+        },
+        {
+          "label": "E",
+          "text": "NaCl ทำให้น้ำในเจลระเหยเร็วขึ้น",
+          "is_correct": false,
+          "explanation": "ผิด — NaCl ไม่ได้เร่งการระเหยของน้ำ และการระเหยจะทำให้ข้นขึ้นมากกว่าเหลวลง"
+        }
+      ],
+      "key_takeaway": "Carbomer “แพ้เกลือ แพ้กรด แพ้ cation”; ต้องการเจลที่ทนเกลือ → HPMC/HEC (nonionic)"
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "เภสัชกรเตรียมสารละลาย Poloxamer 407 ความเข้มข้น 20% w/w สำหรับใช้เป็น in situ gel ข้อใดอธิบายพฤติกรรมของระบบนี้ได้ถูกต้อง",
+    "choices": [
+      {
+        "label": "A",
+        "text": "เป็นเจลเมื่อเก็บในตู้เย็นและกลายเป็นของเหลวเมื่ออุ่นถึงอุณหภูมิร่างกาย คล้าย gelatin"
+      },
+      {
+        "label": "B",
+        "text": "ต้อง neutralize ด้วย triethanolamine จึงจะเกิดเจล"
+      },
+      {
+        "label": "C",
+        "text": "เป็นของเหลวที่อุณหภูมิตู้เย็นและเกิดเจลเมื่ออุ่นถึงอุณหภูมิห้อง/ร่างกาย (thermoreversible) จึงนิยมเตรียมด้วย “cold method”"
+      },
+      {
+        "label": "D",
+        "text": "เกิดเจลจากการ cross-link ด้วย Ca²⁺ ในสารคัดหลั่งของร่างกาย"
+      },
+      {
+        "label": "E",
+        "text": "เมื่อเกิดเจลแล้วจะไม่กลับเป็นของเหลวอีก (irreversible gelation)"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Poloxamer 407 (PEO–PPO–PEO) ที่ความเข้มข้นประมาณ 18–20% ขึ้นไป เป็นของเหลวเมื่อเย็นและเกิดเจลเมื่ออุ่น (reverse thermal gelation) แบบผันกลับได้ จึงเตรียมโดยละลายในน้ำเย็น (cold method)",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. เป็นของเหลวที่อุณหภูมิตู้เย็นและเกิดเจลเมื่ออุ่นถึงอุณหภูมิห้อง/ร่างกาย (thermoreversible) จึงนิยมเตรียมด้วย “cold method” — poloxamer 407 ~20% = sol เมื่อเย็น, gel เมื่ออุ่น (thermoreversible); เตรียมด้วย cold method",
+      "reason": "Poloxamer เป็น triblock copolymer ของ polyoxyethylene–polyoxypropylene–polyoxyethylene (PEO–PPO–PEO) เมื่ออุณหภูมิต่ำ ทั้งบล็อก PEO และ PPO ถูก hydrate ด้วยน้ำ ระบบจึงเป็นสารละลายใส ความหนืดต่ำ เมื่ออุณหภูมิสูงขึ้น บล็อก PPO สูญเสียน้ำ (dehydration) และกลายเป็น hydrophobic มากขึ้น โมเลกุลจึงรวมกันเป็น micelle และเมื่อความเข้มข้นสูงพอ micelle จะเรียงตัวอัดแน่น (packing) จนเกิดเป็นเจล เรียกว่า reverse thermal gelation อุณหภูมิที่เกิดเจล (sol–gel transition) ลดลงเมื่อความเข้มข้นเพิ่มขึ้น สำหรับ poloxamer 407 ที่ประมาณ 20% w/w จะเป็นของเหลวในตู้เย็นและเป็นเจลที่ประมาณอุณหภูมิห้องถึงอุณหภูมิร่างกาย กระบวนการผันกลับได้ เมื่อทำให้เย็นจะกลับเป็นของเหลว การเตรียมจึงใช้ “cold method” คือโรย poloxamer ลงในน้ำเย็น (ประมาณ 4–5 °C) แล้วเก็บในตู้เย็นจนละลายหมด เพราะหากใช้น้ำอุ่นจะเกิดเจลก่อนละลายสมบูรณ์ ระบบนี้ใช้ทำ in situ gel สำหรับ topical, rectal, vaginal และ ophthalmic ที่หยอด/ฉีดเป็นของเหลวแล้วกลายเป็นเจลเมื่อสัมผัสอุณหภูมิร่างกาย ช่วยเพิ่มเวลาคงอยู่ ณ ตำแหน่งให้ยา",
+      "choices": [
+        {
+          "label": "A",
+          "text": "เป็นเจลเมื่อเก็บในตู้เย็นและกลายเป็นของเหลวเมื่ออุ่นถึงอุณหภูมิร่างกาย คล้าย gelatin",
+          "is_correct": false,
+          "explanation": "ผิด — เป็นพฤติกรรมของ gelatin (เจลเมื่อเย็น ละลายเมื่ออุ่น) ซึ่งตรงข้ามกับ poloxamer 407"
+        },
+        {
+          "label": "B",
+          "text": "ต้อง neutralize ด้วย triethanolamine จึงจะเกิดเจล",
+          "is_correct": false,
+          "explanation": "ผิด — การ neutralize เป็นกลไกของ carbomer; poloxamer เป็น nonionic ไม่ต้อง neutralize"
+        },
+        {
+          "label": "C",
+          "text": "เป็นของเหลวที่อุณหภูมิตู้เย็นและเกิดเจลเมื่ออุ่นถึงอุณหภูมิห้อง/ร่างกาย (thermoreversible) จึงนิยมเตรียมด้วย “cold method”",
+          "is_correct": true,
+          "explanation": "ถูกต้อง — sol เมื่อเย็น gel เมื่ออุ่น และผันกลับได้ เตรียมด้วย cold method"
+        },
+        {
+          "label": "D",
+          "text": "เกิดเจลจากการ cross-link ด้วย Ca²⁺ ในสารคัดหลั่งของร่างกาย",
+          "is_correct": false,
+          "explanation": "ผิด — การ cross-link ด้วย Ca²⁺ เป็นกลไกของ alginate หรือ gellan gum (ion-activated in situ gel)"
+        },
+        {
+          "label": "E",
+          "text": "เมื่อเกิดเจลแล้วจะไม่กลับเป็นของเหลวอีก (irreversible gelation)",
+          "is_correct": false,
+          "explanation": "ผิด — gelation ของ poloxamer เป็น physical micellar packing ผันกลับได้ เมื่อเย็นลงจะกลับเป็นของเหลว"
+        }
+      ],
+      "key_takeaway": "In situ gel 3 กลไก: อุณหภูมิ (poloxamer 407), pH (cellulose acetate phthalate latex, carbomer), ไอออน (gellan, alginate)"
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "เภสัชกรต้องการเตรียมเจล HPMC 2% w/w เมื่อโรยผง HPMC ลงในน้ำเย็นทั้งหมดในครั้งเดียว พบว่าเกิดก้อนเป็นวุ้นที่ข้างในยังเป็นผงแห้ง (fish-eyes) วิธีเตรียมที่เหมาะสมคือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "โรย HPMC ลงในน้ำเย็นให้เร็วที่สุดแล้วตั้งทิ้งไว้โดยไม่กวน"
+      },
+      {
+        "label": "B",
+        "text": "กระจาย HPMC ในน้ำร้อน (ประมาณ 80–90 °C) ประมาณหนึ่งในสามของปริมาณน้ำทั้งหมด ซึ่ง HPMC ไม่ละลายแต่กระจายตัวได้ดี แล้วเติมน้ำเย็นส่วนที่เหลือพร้อมกวนจนเย็นเพื่อให้ hydrate และละลาย"
+      },
+      {
+        "label": "C",
+        "text": "เติม triethanolamine เพื่อ neutralize HPMC ก่อน จึงจะละลาย"
+      },
+      {
+        "label": "D",
+        "text": "ต้มเจลให้เดือดตลอดการบรรจุ เพราะ HPMC เป็นเจลได้เฉพาะเมื่อร้อน"
+      },
+      {
+        "label": "E",
+        "text": "เติม calcium chloride เพื่อให้ HPMC เกิดการ cross-link และละลายเร็วขึ้น"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "HPMC ไม่ละลายในน้ำร้อน จึงใช้ hot/cold technique: กระจายผงในน้ำร้อนเพื่อแยกอนุภาคไม่ให้จับก้อน แล้วเติมน้ำเย็นให้ hydrate และละลายเป็นเจลใส",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. กระจาย HPMC ในน้ำร้อน (ประมาณ 80–90 °C) ประมาณหนึ่งในสามของปริมาณน้ำทั้งหมด ซึ่ง HPMC ไม่ละลายแต่กระจายตัวได้ดี แล้วเติมน้ำเย็นส่วนที่เหลือพร้อมกวนจนเย็นเพื่อให้ hydrate และละลาย — HPMC ใช้ hot–cold dispersion technique ป้องกันการเกิด fish-eyes",
+      "reason": "Hydroxypropyl methylcellulose (HPMC) เป็น nonionic cellulose ether ที่ละลายในน้ำเย็นแต่ไม่ละลายในน้ำร้อน (เกิด thermal gelation/flocculation เมื่อร้อน) หากโรยผงลงในน้ำเย็นเร็วเกินไป ผิวนอกของกลุ่มผงจะ hydrate เป็นชั้นเจลหนืดหุ้มผงแห้งด้านใน ทำให้น้ำเข้าไม่ได้ เกิดก้อน fish-eyes ที่ละลายยากมาก วิธีที่เหมาะสมคือ hot–cold technique: กระจายผง HPMC ในน้ำร้อนประมาณ 80–90 °C ปริมาณราวหนึ่งในสามถึงครึ่งหนึ่งของน้ำทั้งหมด ซึ่งในน้ำร้อน HPMC ไม่ละลาย อนุภาคจึงกระจายแยกกันได้โดยไม่จับก้อน จากนั้นเติมน้ำเย็น (หรือน้ำแข็ง) ส่วนที่เหลือพร้อมกวน เมื่ออุณหภูมิลดลง HPMC จะ hydrate และละลายเป็นสารละลายหนืด/เจลใส อีกวิธีคือ pre-wet ผงด้วย non-solvent เช่น glycerin หรือ propylene glycol ก่อนเติมน้ำ ข้อดีของ HPMC คือเป็น nonionic จึงทนต่อ electrolyte และช่วง pH กว้าง (ประมาณ 3–11) และ compatible กับยา cationic ดีกว่า carbomer",
+      "choices": [
+        {
+          "label": "A",
+          "text": "โรย HPMC ลงในน้ำเย็นให้เร็วที่สุดแล้วตั้งทิ้งไว้โดยไม่กวน",
+          "is_correct": false,
+          "explanation": "ผิด — การเทผงลงน้ำเย็นเร็ว ๆ โดยไม่กวนเป็นสาเหตุของการเกิด fish-eyes"
+        },
+        {
+          "label": "B",
+          "text": "กระจาย HPMC ในน้ำร้อน (ประมาณ 80–90 °C) ประมาณหนึ่งในสามของปริมาณน้ำทั้งหมด ซึ่ง HPMC ไม่ละลายแต่กระจายตัวได้ดี แล้วเติมน้ำเย็นส่วนที่เหลือพร้อมกวนจนเย็นเพื่อให้ hydrate และละลาย",
+          "is_correct": true,
+          "explanation": "ถูกต้อง — hot–cold technique: กระจายในน้ำร้อนแล้วเติมน้ำเย็นให้ hydrate"
+        },
+        {
+          "label": "C",
+          "text": "เติม triethanolamine เพื่อ neutralize HPMC ก่อน จึงจะละลาย",
+          "is_correct": false,
+          "explanation": "ผิด — HPMC เป็น nonionic ไม่มีหมู่กรดที่ต้อง neutralize; การ neutralize เป็นของ carbomer"
+        },
+        {
+          "label": "D",
+          "text": "ต้มเจลให้เดือดตลอดการบรรจุ เพราะ HPMC เป็นเจลได้เฉพาะเมื่อร้อน",
+          "is_correct": false,
+          "explanation": "ผิด — HPMC เมื่อร้อนจะไม่ละลาย/flocculate ความหนืดที่ใช้งานเกิดเมื่อเย็นลงที่อุณหภูมิห้อง"
+        },
+        {
+          "label": "E",
+          "text": "เติม calcium chloride เพื่อให้ HPMC เกิดการ cross-link และละลายเร็วขึ้น",
+          "is_correct": false,
+          "explanation": "ผิด — HPMC ไม่ cross-link ด้วย Ca²⁺ (เป็นกลไกของ alginate)"
+        }
+      ],
+      "key_takeaway": "HPMC/MC: ละลายในน้ำเย็น ไม่ละลายในน้ำร้อน → “กระจายในน้ำร้อน แล้วเติมน้ำเย็น”; nonionic ทนเกลือ"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "Zinc Oxide Paste USP ประกอบด้วย Zinc oxide 25%, Starch 25% และ White petrolatum 50% ข้อใดเป็นลักษณะของ paste เมื่อเปรียบเทียบกับ ointment",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ยาซึมผ่านผิวได้ลึกกว่า ointment มากเพราะมีของแข็งช่วยพาเข้าผิว"
+      },
+      {
+        "label": "B",
+        "text": "เหนอะหนะมากกว่า ointment และหลอมเหลวที่อุณหภูมิผิวหนัง"
+      },
+      {
+        "label": "C",
+        "text": "มีของแข็งต่ำกว่า 5% จึงทาได้ลื่นและบาง"
+      },
+      {
+        "label": "D",
+        "text": "ต้องมีน้ำเป็นวัฏภาคภายนอกเสมอ"
+      },
+      {
+        "label": "E",
+        "text": "มีของแข็งสูง (ประมาณ ≥20%) แข็งและหนืดกว่า เกาะติดอยู่ตำแหน่งที่ทาได้ดี เหนอะหนะน้อยกว่า สร้างชั้นป้องกัน และดูดซับสารคัดหลั่งได้"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "Paste มีผงของแข็งปริมาณสูง (≥20%) จึงแข็ง เกาะติดผิวโดยไม่ไหล เหนอะหนะน้อยกว่า ointment ใช้เป็นชั้นป้องกันและดูดซับสารคัดหลั่ง",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. มีของแข็งสูง (ประมาณ ≥20%) แข็งและหนืดกว่า เกาะติดอยู่ตำแหน่งที่ทาได้ดี เหนอะหนะน้อยกว่า สร้างชั้นป้องกัน และดูดซับสารคัดหลั่งได้ — paste = ของแข็ง ≥20% แข็ง เกาะติด เป็น protective barrier และดูดซับสารคัดหลั่ง",
+      "reason": "Paste เป็นตำรับกึ่งแข็งที่มีผงของแข็งไม่ละลายในปริมาณสูง (โดยทั่วไปตั้งแต่ประมาณ 20% ขึ้นไป อาจถึง 50%) กระจายอยู่ใน base ซึ่งมักเป็น petrolatum ลักษณะเด่นคือแข็งและหนืดกว่า ointment มาก เมื่อทาแล้วไม่ไหลหรือเยิ้ม จึงอยู่เฉพาะตำแหน่งที่ทา (เช่น ทารอบแผลเพื่อป้องกันผิวรอบข้าง) ผงของแข็งทำให้เกิดช่องว่างและรูพรุน จึงดูดซับสารคัดหลั่งจากแผลที่มีน้ำเหลืองได้บ้าง และทำให้ occlusive น้อยกว่าและเหนอะหนะน้อยกว่า ointment ที่มี base ชนิดเดียวกัน Paste จึงนิยมใช้เป็น protective barrier เช่น zinc oxide paste สำหรับผื่นผ้าอ้อม (diaper rash) และผิวหนังอักเสบที่มีน้ำเหลือง ในทางกลับกัน การซึมผ่านผิวของยาจาก paste มักต่ำ เพราะ paste ทำหน้าที่ปกป้องผิวมากกว่าส่งยาเข้าสู่ผิว การล้างออกทำได้ยาก มักใช้น้ำมันพืชหรือ mineral oil เช็ดออก การเตรียมนิยม levigate ผงด้วยส่วนหนึ่งของ base หรือ mineral oil ก่อนแล้วจึงผสมกับ base ที่เหลือ",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ยาซึมผ่านผิวได้ลึกกว่า ointment มากเพราะมีของแข็งช่วยพาเข้าผิว",
+          "is_correct": false,
+          "explanation": "ผิด — paste ใช้เป็นชั้นป้องกันและมักให้การซึมผ่านผิวของยาต่ำ ผงของแข็งไม่ได้ช่วยพายาเข้าผิว"
+        },
+        {
+          "label": "B",
+          "text": "เหนอะหนะมากกว่า ointment และหลอมเหลวที่อุณหภูมิผิวหนัง",
+          "is_correct": false,
+          "explanation": "ผิด — paste เหนอะหนะน้อยกว่าและแข็งกว่า ointment ไม่หลอมที่อุณหภูมิผิว"
+        },
+        {
+          "label": "C",
+          "text": "มีของแข็งต่ำกว่า 5% จึงทาได้ลื่นและบาง",
+          "is_correct": false,
+          "explanation": "ผิด — paste มีของแข็งสูง (≥20%) ไม่ใช่ต่ำกว่า 5%"
+        },
+        {
+          "label": "D",
+          "text": "ต้องมีน้ำเป็นวัฏภาคภายนอกเสมอ",
+          "is_correct": false,
+          "explanation": "ผิด — paste ส่วนใหญ่ใช้ base ไขมัน เช่น petrolatum ไม่จำเป็นต้องมีน้ำเป็นวัฏภาคภายนอก"
+        },
+        {
+          "label": "E",
+          "text": "มีของแข็งสูง (ประมาณ ≥20%) แข็งและหนืดกว่า เกาะติดอยู่ตำแหน่งที่ทาได้ดี เหนอะหนะน้อยกว่า สร้างชั้นป้องกัน และดูดซับสารคัดหลั่งได้",
+          "is_correct": true,
+          "explanation": "ถูกต้อง — ของแข็งสูง แข็ง เกาะติด ไม่เยิ้ม เหนอะหนะน้อยกว่า เป็น protective barrier และดูดซับสารคัดหลั่ง"
+        }
+      ],
+      "key_takeaway": "Paste: solids ≥20% → stiff, stays put, less greasy, absorbs exudate; ตัวอย่าง zinc oxide paste (ZnO 25%, starch 25%, petrolatum 50%)"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "เภสัชกรต้องผสมผงยาละเอียดที่ไม่ละลาย 2 g ลงใน Hydrophilic Ointment USP (o/w base) 30 g โดยต้องการ levigate ผงก่อนเพื่อลดความสากและให้อนุภาคกระจายสม่ำเสมอ levigating agent ใดเหมาะสมที่สุด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Glycerin"
+      },
+      {
+        "label": "B",
+        "text": "Mineral oil"
+      },
+      {
+        "label": "C",
+        "text": "Cottonseed oil"
+      },
+      {
+        "label": "D",
+        "text": "Isopropyl myristate"
+      },
+      {
+        "label": "E",
+        "text": "Paraffin wax หลอมเหลว"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Levigating agent ต้องเข้ากันได้กับวัฏภาคภายนอกของ base; o/w base และ PEG base ใช้ glycerin หรือ propylene glycol ส่วน oleaginous/w/o base ใช้ mineral oil",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. Glycerin — o/w (water-removable) และ PEG base ใช้ levigating agent ที่ผสมน้ำได้ เช่น glycerin/propylene glycol",
+      "reason": "Levigation คือการบดผงยากับของเหลวเล็กน้อย (levigating agent) บนแผ่นกระจก (ointment slab) ด้วย spatula เพื่อให้ผงเปียก ลดขนาดอนุภาคที่จับกันเป็นก้อน และได้ smooth paste ก่อนผสมกับ base ซึ่งทำให้ได้ตำรับเนื้อเนียนไม่สาก (no grittiness) และยากระจายสม่ำเสมอ หลักการเลือก levigating agent คือ ต้องมีความเข้ากันได้ (miscible) กับวัฏภาคภายนอกของ base ควรมีความหนืดใกล้เคียงกับ base และใช้ปริมาณน้อยพอที่จะไม่ทำให้ base นิ่มเกินไป (โดยทั่วไปใกล้เคียงหรือน้อยกว่าน้ำหนักผง) สำหรับ base ที่วัฏภาคภายนอกเป็นน้ำ (o/w) หรือเป็น water-soluble (PEG) ใช้ glycerin, propylene glycol หรือ PEG 400 ส่วน hydrocarbon base, absorption base และ w/o emulsion ใช้ mineral oil (light liquid petrolatum), cottonseed oil หรือ castor oil หากใช้น้ำมันกับ o/w base จะผสมเข้ากันได้ไม่ดีและอาจทำให้เนื้อตำรับไม่สม่ำเสมอ",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Glycerin",
+          "is_correct": true,
+          "explanation": "ถูกต้อง — glycerin ผสมน้ำได้ เข้ากันได้กับวัฏภาคภายนอกของ o/w base"
+        },
+        {
+          "label": "B",
+          "text": "Mineral oil",
+          "is_correct": false,
+          "explanation": "ผิด — mineral oil เหมาะกับ oleaginous, absorption และ w/o base แต่ไม่ผสมกับวัฏภาคน้ำภายนอกของ o/w base"
+        },
+        {
+          "label": "C",
+          "text": "Cottonseed oil",
+          "is_correct": false,
+          "explanation": "ผิด — cottonseed oil เป็นน้ำมันพืช ใช้กับ oleaginous/absorption base ไม่เหมาะกับ o/w base"
+        },
+        {
+          "label": "D",
+          "text": "Isopropyl myristate",
+          "is_correct": false,
+          "explanation": "ผิด — isopropyl myristate เป็น emollient ester ที่ไม่ผสมน้ำ ไม่เหมาะเป็น levigating agent สำหรับ o/w base"
+        },
+        {
+          "label": "E",
+          "text": "Paraffin wax หลอมเหลว",
+          "is_correct": false,
+          "explanation": "ผิด — paraffin wax หลอมเหลวไม่ใช่ levigating agent เมื่อเย็นจะแข็งตัว ทำให้ตำรับแข็งและสาก"
+        }
+      ],
+      "key_takeaway": "Levigating agent “like with like”: o/w & PEG → glycerin, PG, PEG 400 | oleaginous, absorption, w/o → mineral oil, vegetable oil"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "เภสัชกรต้องเตรียม ointment ที่มียาออกฤทธิ์แรง 20 mg ใน base 30 g ให้ตัวยากระจายสม่ำเสมอ วิธีผสมที่ถูกต้องตามหลัก geometric dilution คือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "วาง base ทั้งหมด 30 g แล้วโรยยาบนผิว จากนั้นผสมให้นานที่สุด"
+      },
+      {
+        "label": "B",
+        "text": "ผสมยากับ base ปริมาณใกล้เคียงกับปริมาณยาจนเป็นเนื้อเดียว แล้วเติม base ในปริมาณเท่ากับส่วนผสมที่มีอยู่ ผสมให้เข้ากัน ทำซ้ำจนใช้ base หมด"
+      },
+      {
+        "label": "C",
+        "text": "หลอม base ทั้งหมดที่ 90 °C แล้วเทยาลงไปและปล่อยให้เย็นโดยไม่ต้องกวน"
+      },
+      {
+        "label": "D",
+        "text": "ผสมยากับ base ครึ่งหนึ่ง แล้วเติม base อีกครึ่งที่เหลือในครั้งเดียว"
+      },
+      {
+        "label": "E",
+        "text": "ผสม base ให้เนียนก่อน แล้วเติมยาเป็นขั้นตอนสุดท้ายบนผิวหน้า"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Geometric dilution: เริ่มจากยากับ base ปริมาณเท่า ๆ กัน แล้วเพิ่ม base ทีละเท่าของส่วนผสมที่มีอยู่ (1:1 → 2:2 → 4:4 ...) จนครบ ทำให้ยาปริมาณน้อยกระจายสม่ำเสมอ",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. ผสมยากับ base ปริมาณใกล้เคียงกับปริมาณยาจนเป็นเนื้อเดียว แล้วเติม base ในปริมาณเท่ากับส่วนผสมที่มีอยู่ ผสมให้เข้ากัน ทำซ้ำจนใช้ base หมด — geometric dilution = เพิ่ม diluent ทีละเท่าของส่วนผสมเดิม เพื่อกระจายยาปริมาณน้อยให้สม่ำเสมอ",
+      "reason": "Geometric dilution (geometric incorporation) เป็นเทคนิคมาตรฐานเมื่อผสมยาปริมาณน้อย โดยเฉพาะยาออกฤทธิ์แรง ลงใน base หรือ diluent ปริมาณมาก ขั้นตอนคือ นำยามาผสม (หรือ levigate) กับ base ในปริมาณใกล้เคียงกับปริมาณยาจนเป็นเนื้อเดียว จากนั้นเติม base ในปริมาณเท่ากับส่วนผสมที่มีอยู่ ผสมให้สม่ำเสมอ แล้วเติม base เท่ากับส่วนผสมใหม่อีก ทำซ้ำไปเรื่อย ๆ จนใช้ base หมด ปริมาณจึงเพิ่มเป็นลำดับ 2 เท่า (geometric progression) ทำให้ยากระจายสม่ำเสมอ (content uniformity) หากผสมยาปริมาณน้อยกับ base ปริมาณมากในครั้งเดียว ยาจะกระจายไม่ทั่วและบางส่วนของตำรับอาจมีความแรงสูงหรือต่ำเกินไป ซึ่งอันตรายสำหรับยาออกฤทธิ์แรง ในตัวอย่างนี้ ยา 20 mg ในตำรับ 30 g คิดเป็นประมาณ 0.067% จึงต้องใช้เทคนิคนี้ และหากยามีอนุภาคหยาบควร levigate ด้วย levigating agent ที่เหมาะสมก่อน",
+      "choices": [
+        {
+          "label": "A",
+          "text": "วาง base ทั้งหมด 30 g แล้วโรยยาบนผิว จากนั้นผสมให้นานที่สุด",
+          "is_correct": false,
+          "explanation": "ผิด — โรยยาบนผิวของ base ปริมาณมากแล้วผสม ยาจะกระจายไม่สม่ำเสมอ แม้ผสมนานก็ไม่รับประกัน content uniformity"
+        },
+        {
+          "label": "B",
+          "text": "ผสมยากับ base ปริมาณใกล้เคียงกับปริมาณยาจนเป็นเนื้อเดียว แล้วเติม base ในปริมาณเท่ากับส่วนผสมที่มีอยู่ ผสมให้เข้ากัน ทำซ้ำจนใช้ base หมด",
+          "is_correct": true,
+          "explanation": "ถูกต้อง — เป็นขั้นตอน geometric dilution ที่ถูกต้อง"
+        },
+        {
+          "label": "C",
+          "text": "หลอม base ทั้งหมดที่ 90 °C แล้วเทยาลงไปและปล่อยให้เย็นโดยไม่ต้องกวน",
+          "is_correct": false,
+          "explanation": "ผิด — การหลอมแล้วไม่กวนทำให้ยาตกตะกอน/กระจายไม่สม่ำเสมอ และความร้อนสูงอาจทำให้ยาสลายตัว"
+        },
+        {
+          "label": "D",
+          "text": "ผสมยากับ base ครึ่งหนึ่ง แล้วเติม base อีกครึ่งที่เหลือในครั้งเดียว",
+          "is_correct": false,
+          "explanation": "ผิด — การเพิ่ม base ครั้งละมาก ๆ ไม่ใช่ geometric dilution และเสี่ยงต่อการกระจายไม่สม่ำเสมอ"
+        },
+        {
+          "label": "E",
+          "text": "ผสม base ให้เนียนก่อน แล้วเติมยาเป็นขั้นตอนสุดท้ายบนผิวหน้า",
+          "is_correct": false,
+          "explanation": "ผิด — การเติมยาเป็นขั้นสุดท้ายบนผิวหน้าทำให้ยากระจายไม่สม่ำเสมอ"
+        }
+      ],
+      "key_takeaway": "Geometric dilution: ยา + base เท่ากัน → เติมเท่าส่วนผสมเดิม ซ้ำจนหมด (1→2→4→8…) ใช้กับยาปริมาณน้อย/ฤทธิ์แรง"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "ยาชนิดหนึ่งในแผ่นแปะผิวหนังซึมผ่าน stratum corneum ด้วย passive diffusion ภายใต้ sink condition และ steady state กำหนดให้ diffusion coefficient ในชั้น stratum corneum (D) = 1 × 10⁻¹⁰ cm²/s, partition coefficient ระหว่าง stratum corneum กับ vehicle (K) = 5, ความเข้มข้นของยาใน vehicle (Cv) = 10 mg/mL และความหนาของ stratum corneum (h) = 20 µm หากพื้นที่แปะ 10 cm² อัตราการซึมผ่านของยาทั้งแผ่นเท่ากับข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "9 µg/h"
+      },
+      {
+        "label": "B",
+        "text": "0.9 µg/h"
+      },
+      {
+        "label": "C",
+        "text": "900 µg/h"
+      },
+      {
+        "label": "D",
+        "text": "25 µg/h"
+      },
+      {
+        "label": "E",
+        "text": "90 µg/h"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "J = D·K·Cv/h = (1×10⁻¹⁰ × 5 × 10)/(2×10⁻³) = 2.5×10⁻⁶ mg/cm²/s = 9 µg/cm²/h; × 10 cm² = 90 µg/h",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. 90 µg/h — ตาม Fick’s first law flux = 9 µg/cm²/h คูณพื้นที่ 10 cm² ได้ 90 µg/h",
+      "reason": "การซึมผ่านผิวแบบ passive diffusion ที่ steady state อธิบายด้วย Fick’s first law ในรูป J = D·K·ΔC/h โดยภายใต้ sink condition (ความเข้มข้นด้านรับ ≈ 0) ΔC ≈ Cv ซึ่งเป็นความเข้มข้นของยาใน vehicle J คือ flux (ปริมาณยาต่อหน่วยพื้นที่ต่อเวลา), D คือ diffusion coefficient ของยาใน stratum corneum, K คือ partition coefficient ระหว่าง SC กับ vehicle และ h คือความหนาของ SC ซึ่งเป็น rate-limiting barrier (ประมาณ 10–20 µm) ผลคูณ D·K/h คือ permeability coefficient (Kp) อัตราการส่งยาทั้งหมด (dM/dt) = J × A ดังนั้นการเพิ่มพื้นที่แปะจะเพิ่มขนาดยาที่ได้รับแบบสัดส่วนตรง ซึ่งเป็นหลักที่ transdermal patch ใช้กำหนดความแรงตามขนาดแผ่น (เช่น µg/h ต่อพื้นที่) จุดที่มักผิดคือการแปลงหน่วย: 20 µm = 20 × 10⁻⁴ cm = 2 × 10⁻³ cm, 1 mL = 1 cm³ และ 1 h = 3600 s ในการคำนวณนี้ Kp = (1×10⁻¹⁰ × 5)/(2×10⁻³) = 2.5×10⁻⁷ cm/s",
+      "choices": [
+        {
+          "label": "A",
+          "text": "9 µg/h",
+          "is_correct": false,
+          "explanation": "ผิด — 9 µg/h เป็นค่า flux ต่อ 1 cm² (9 µg/cm²/h) ลืมคูณพื้นที่ 10 cm²"
+        },
+        {
+          "label": "B",
+          "text": "0.9 µg/h",
+          "is_correct": false,
+          "explanation": "ผิด — 0.9 µg/h ได้จากแปลงความหนาผิดเป็น 0.02 cm (ใหญ่เกิน 10 เท่า) และลืมคูณพื้นที่"
+        },
+        {
+          "label": "C",
+          "text": "900 µg/h",
+          "is_correct": false,
+          "explanation": "ผิด — 900 µg/h ได้จากแปลงความหนาผิดเป็น 2×10⁻⁴ cm (เล็กเกิน 10 เท่า)"
+        },
+        {
+          "label": "D",
+          "text": "25 µg/h",
+          "is_correct": false,
+          "explanation": "ผิด — 25 µg/h เกิดจากการแปลงหน่วยเวลา/มวลไม่ถูกต้อง ไม่ตรงกับผลคำนวณตาม Fick’s law"
+        },
+        {
+          "label": "E",
+          "text": "90 µg/h",
+          "is_correct": true,
+          "explanation": "ถูกต้อง — J = 9 µg/cm²/h × 10 cm² = 90 µg/h"
+        }
+      ],
+      "key_takeaway": "J = D·K·C/h (sink); Kp = DK/h; อัตราส่งยา = J × A → ขนาดแผ่นแปะแปรผันตรงกับขนาดยา; 1 µm = 10⁻⁴ cm",
+      "calculation_steps": [
+        "ขั้นที่ 1: แปลงหน่วยความหนา h = 20 µm = 20 × 10⁻⁴ cm = 2 × 10⁻³ cm; Cv = 10 mg/mL = 10 mg/cm³",
+        "ขั้นที่ 2: J = D·K·Cv/h = (1 × 10⁻¹⁰ cm²/s × 5 × 10 mg/cm³) / (2 × 10⁻³ cm) = (5 × 10⁻⁹ mg/cm·s) / (2 × 10⁻³ cm) = 2.5 × 10⁻⁶ mg/cm²/s",
+        "ขั้นที่ 3: แปลงเป็น µg/cm²/h: 2.5 × 10⁻⁶ mg/cm²/s × 1000 µg/mg × 3600 s/h = 9 µg/cm²/h",
+        "ขั้นที่ 4: อัตราการซึมผ่านทั้งแผ่น = J × A = 9 µg/cm²/h × 10 cm² = 90 µg/h"
+      ]
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "ตำรับ gel ยาต้านการอักเสบชนิดทาเติม oleic acid 5% และ propylene glycol 20% เพื่อเพิ่มการซึมผ่านผิว กลไกหลักของ oleic acid ในฐานะ chemical penetration enhancer คือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "เพิ่มน้ำหนักโมเลกุลของยาทำให้ซึมผ่านได้ดีขึ้น"
+      },
+      {
+        "label": "B",
+        "text": "ทำลายชั้น viable epidermis และเพิ่มการไหลเวียนเลือดในชั้น dermis"
+      },
+      {
+        "label": "C",
+        "text": "จับกับยาเป็นสารเชิงซ้อนเพื่อลดความเข้มข้นอิสระของยาใน vehicle"
+      },
+      {
+        "label": "D",
+        "text": "แทรกเข้าไปใน intercellular lipid bilayer ของ stratum corneum ทำให้ไขมันที่เรียงตัวเป็นระเบียบเกิดความไม่เป็นระเบียบ (fluidization) เพิ่ม diffusivity ของยา"
+      },
+      {
+        "label": "E",
+        "text": "เพิ่มความหนาของชั้น stratum corneum ทำให้ยาสะสมได้มากขึ้น"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "Oleic acid (unsaturated fatty acid มี cis double bond) แทรกเข้าไปใน lipid bilayer ระหว่างเซลล์ของ SC รบกวนการเรียงตัว (lipid fluidization) จึงเพิ่ม D ของยาผ่าน SC",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. แทรกเข้าไปใน intercellular lipid bilayer ของ stratum corneum ทำให้ไขมันที่เรียงตัวเป็นระเบียบเกิดความไม่เป็นระเบียบ (fluidization) เพิ่ม diffusivity ของยา — enhancer กลุ่ม fatty acid/Azone ทำงานโดยรบกวน (fluidize) intercellular lipids ของ stratum corneum เพิ่ม diffusivity",
+      "reason": "Stratum corneum (SC) เป็น barrier หลักของผิวหนัง โครงสร้างเปรียบเหมือน “brick and mortar” โดย corneocytes เป็นอิฐ และไขมันระหว่างเซลล์ (ceramides, cholesterol, free fatty acids) ที่เรียงตัวเป็น lamellar bilayer อย่างเป็นระเบียบเป็นปูน ยาส่วนใหญ่ซึมผ่านทาง intercellular lipid pathway ที่คดเคี้ยว Chemical penetration enhancers ทำงานได้ 3 แนวทางหลักตาม lipid–protein–partitioning (LPP) theory: (1) รบกวนการเรียงตัวของ intercellular lipids เพิ่ม fluidity ทำให้ D เพิ่ม เช่น oleic acid (cis-unsaturated ทำให้สายหักงอแทรกเข้าไปรบกวน bilayer), Azone (laurocapram), terpenes; (2) ทำปฏิกิริยากับ keratin ภายใน corneocytes เช่น DMSO, surfactants; (3) เพิ่มการละลาย/partition ของยาเข้าสู่ SC (เพิ่ม K) เช่น propylene glycol, ethanol, Transcutol ในตำรับนี้ PG ทำงานเสริม (synergy) กับ oleic acid โดยเพิ่มการละลายของยาใน SC และช่วยพา oleic acid เข้าสู่ชั้นผิว ผลข้างเคียงที่ต้องระวังคือการระคายเคืองผิว ซึ่งสัมพันธ์กับความเข้มข้นของ enhancer",
+      "choices": [
+        {
+          "label": "A",
+          "text": "เพิ่มน้ำหนักโมเลกุลของยาทำให้ซึมผ่านได้ดีขึ้น",
+          "is_correct": false,
+          "explanation": "ผิด — enhancer ไม่เปลี่ยนน้ำหนักโมเลกุลของยา และ MW ที่สูงขึ้นจะยิ่งลดการซึมผ่าน"
+        },
+        {
+          "label": "B",
+          "text": "ทำลายชั้น viable epidermis และเพิ่มการไหลเวียนเลือดในชั้น dermis",
+          "is_correct": false,
+          "explanation": "ผิด — enhancer ที่ดีควรกระทำต่อ SC แบบผันกลับได้ ไม่ทำลาย viable epidermis และ oleic acid ไม่ได้ออกฤทธิ์ผ่านการเพิ่มเลือดไหลเวียน"
+        },
+        {
+          "label": "C",
+          "text": "จับกับยาเป็นสารเชิงซ้อนเพื่อลดความเข้มข้นอิสระของยาใน vehicle",
+          "is_correct": false,
+          "explanation": "ผิด — การจับยาเป็นสารเชิงซ้อนจะลด thermodynamic activity และลดการซึมผ่าน"
+        },
+        {
+          "label": "D",
+          "text": "แทรกเข้าไปใน intercellular lipid bilayer ของ stratum corneum ทำให้ไขมันที่เรียงตัวเป็นระเบียบเกิดความไม่เป็นระเบียบ (fluidization) เพิ่ม diffusivity ของยา",
+          "is_correct": true,
+          "explanation": "ถูกต้อง — oleic acid รบกวน/fluidize intercellular lipid bilayer ของ SC เพิ่ม diffusivity"
+        },
+        {
+          "label": "E",
+          "text": "เพิ่มความหนาของชั้น stratum corneum ทำให้ยาสะสมได้มากขึ้น",
+          "is_correct": false,
+          "explanation": "ผิด — enhancer ไม่ได้เพิ่มความหนาของ SC และตาม Fick’s law ความหนาที่มากขึ้นทำให้ flux ลดลง"
+        }
+      ],
+      "key_takeaway": "Enhancer (LPP theory): Lipid disruption (oleic acid, Azone, terpenes) | Protein interaction (DMSO, surfactants) | Partitioning ↑ (PG, ethanol)"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ในการทดสอบ In Vitro Release Testing (IVRT) ของครีมตาม USP <1724> โดยใช้ vertical diffusion cell (Franz-type cell) ข้อใดถูกต้อง",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ต้องใช้ผิวหนังมนุษย์จากศพ (human cadaver skin) เป็น membrane เสมอ"
+      },
+      {
+        "label": "B",
+        "text": "ควบคุมอุณหภูมิที่ผิว membrane ไว้ที่ 37 ± 0.5 °C สำหรับตำรับทาผิวหนัง"
+      },
+      {
+        "label": "C",
+        "text": "พล็อตปริมาณยาที่ปลดปล่อยสะสมต่อหน่วยพื้นที่ (µg/cm²) กับรากที่สองของเวลา (√t) ได้เส้นตรง ความชันคือ release rate ใช้เปรียบเทียบตำรับเมื่อมีการเปลี่ยนแปลง (SUPAC-SS)"
+      },
+      {
+        "label": "D",
+        "text": "receptor medium ควรมียาอิ่มตัวอยู่ก่อนเพื่อจำลองสภาพในร่างกาย"
+      },
+      {
+        "label": "E",
+        "text": "พล็อต log ปริมาณยาคงเหลือกับเวลาได้เส้นตรงเสมอเพราะเป็น first-order release"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "IVRT ใช้ synthetic inert membrane, receptor ภายใต้ sink, membrane 32 ± 1 °C และพล็อต Q (µg/cm²) vs √t (Higuchi) ความชันคือ release rate",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. พล็อตปริมาณยาที่ปลดปล่อยสะสมต่อหน่วยพื้นที่ (µg/cm²) กับรากที่สองของเวลา (√t) ได้เส้นตรง ความชันคือ release rate ใช้เปรียบเทียบตำรับเมื่อมีการเปลี่ยนแปลง (SUPAC-SS) — IVRT: Q (amount/area) vs √t เป็นเส้นตรงตาม Higuchi ความชัน = release rate",
+      "reason": "IVRT เป็นการทดสอบประสิทธิภาพของตำรับกึ่งแข็ง (product performance test) ตาม USP <1724> โดยใช้ vertical diffusion cell (VDC, Franz-type) ประกอบด้วย donor compartment ที่ใส่ตำรับในปริมาณเกินพอ (infinite dose) บน membrane สังเคราะห์ที่เฉื่อย (เช่น polysulfone, cellulose acetate) ซึ่งทำหน้าที่เพียงรองรับตำรับ ไม่ใช่ rate-limiting barrier และ receptor compartment ที่บรรจุ receptor medium ซึ่งต้องคง sink condition (ยาละลายได้ดี ความเข้มข้นในตัวรับต่ำมากเมื่อเทียบกับ solubility) และกวนตลอด อุณหภูมิที่ผิว membrane ควบคุมที่ 32 ± 1 °C สำหรับตำรับทาผิวหนัง (ใกล้อุณหภูมิผิว) ส่วนตำรับ vaginal/rectal ใช้ประมาณ 37 °C เก็บตัวอย่างหลายเวลา แล้วพล็อตปริมาณยาที่ปลดปล่อยสะสมต่อหน่วยพื้นที่ (Q, µg/cm²) กับรากที่สองของเวลา ซึ่งจะได้เส้นตรงตามแบบจำลอง Higuchi สำหรับยาที่แพร่ออกจาก semisolid matrix ความชันคือ release rate ใช้เปรียบเทียบตำรับก่อนและหลังการเปลี่ยนแปลงระดับ SUPAC-SS (เช่น เปลี่ยนผู้ผลิตวัตถุดิบ ขนาด batch หรือสถานที่ผลิต) โดยเกณฑ์ทางสถิติใช้ช่วงความเชื่อมั่นของอัตราส่วน release rate อยู่ใน 75–133.33% ส่วนการทดสอบด้วยผิวหนังมนุษย์เรียกว่า IVPT (in vitro permeation test) ซึ่งเป็นคนละการทดสอบ",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ต้องใช้ผิวหนังมนุษย์จากศพ (human cadaver skin) เป็น membrane เสมอ",
+          "is_correct": false,
+          "explanation": "ผิด — IVRT ใช้ synthetic inert membrane; การใช้ human cadaver skin เป็น IVPT (permeation test)"
+        },
+        {
+          "label": "B",
+          "text": "ควบคุมอุณหภูมิที่ผิว membrane ไว้ที่ 37 ± 0.5 °C สำหรับตำรับทาผิวหนัง",
+          "is_correct": false,
+          "explanation": "ผิด — สำหรับตำรับทาผิวหนังใช้ 32 ± 1 °C ที่ผิว membrane; 37 °C ใช้กับ vaginal/rectal products"
+        },
+        {
+          "label": "C",
+          "text": "พล็อตปริมาณยาที่ปลดปล่อยสะสมต่อหน่วยพื้นที่ (µg/cm²) กับรากที่สองของเวลา (√t) ได้เส้นตรง ความชันคือ release rate ใช้เปรียบเทียบตำรับเมื่อมีการเปลี่ยนแปลง (SUPAC-SS)",
+          "is_correct": true,
+          "explanation": "ถูกต้อง — Q vs √t (Higuchi) ความชัน = release rate ใช้ในการประเมิน SUPAC-SS"
+        },
+        {
+          "label": "D",
+          "text": "receptor medium ควรมียาอิ่มตัวอยู่ก่อนเพื่อจำลองสภาพในร่างกาย",
+          "is_correct": false,
+          "explanation": "ผิด — receptor ต้องคง sink condition (ยาเจือจาง) หากมียาอิ่มตัวจะไม่มี driving force ให้ยาปลดปล่อย"
+        },
+        {
+          "label": "E",
+          "text": "พล็อต log ปริมาณยาคงเหลือกับเวลาได้เส้นตรงเสมอเพราะเป็น first-order release",
+          "is_correct": false,
+          "explanation": "ผิด — การปลดปล่อยจาก semisolid ใน IVRT มักเป็นไปตาม Higuchi (√t) ไม่ใช่ first-order"
+        }
+      ],
+      "key_takeaway": "IVRT: synthetic membrane + sink + 32 °C (skin) + Q vs √t (Higuchi) → slope = release rate | IVPT = human skin"
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "เภสัชกรเตรียม suppository ที่ใช้ cocoa butter เป็น base โดยให้ความร้อนโดยตรงจน base หลอมใสหมดที่ประมาณ 60 °C แล้วเทลงแม่พิมพ์ พบว่า suppository แข็งตัวช้ามาก และเมื่อนำออกมาแล้วอ่อนนิ่ม หลอมเหลวที่อุณหภูมิห้อง (ประมาณ 25 °C) สาเหตุและวิธีแก้ที่ถูกต้องคือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ความร้อนสูงเกินไปทำลายผลึก β-form ที่คงตัว เมื่อเย็นลงจึงเกิดผลึก metastable (α, γ) ที่มีจุดหลอมเหลวต่ำ ควรหลอม cocoa butter อย่างช้า ๆ บน water bath ที่อุณหภูมิไม่เกินประมาณ 34–35 °C จนมีลักษณะเป็นครีม"
+      },
+      {
+        "label": "B",
+        "text": "cocoa butter เกิด oxidation จนหืนทำให้จุดหลอมเหลวลดลง ควรเติม antioxidant"
+      },
+      {
+        "label": "C",
+        "text": "cocoa butter ดูดซับน้ำจาก water bath ปริมาณมาก ควรใช้ความร้อนโดยตรงต่อไป"
+      },
+      {
+        "label": "D",
+        "text": "ตัวยาทำให้จุดหลอมเหลวของ cocoa butter สูงขึ้น ควรเติมน้ำมันพืชเพื่อลดจุดหลอมเหลว"
+      },
+      {
+        "label": "E",
+        "text": "ไม่ได้ทาสารหล่อลื่นแม่พิมพ์ ควรทาแม่พิมพ์ด้วย mineral oil ก่อนเทเสมอ"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Cocoa butter เป็น polymorphic fat; การหลอมร้อนเกิน (>~36 °C) ทำลายผลึก β ที่คงตัว (mp ~34–35 °C) เมื่อเย็นจะได้ผลึก metastable mp ต่ำ ต้องหลอมช้า ๆ ให้เป็นครีมเพื่อเหลือ seed crystals",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. ความร้อนสูงเกินไปทำลายผลึก β-form ที่คงตัว เมื่อเย็นลงจึงเกิดผลึก metastable (α, γ) ที่มีจุดหลอมเหลวต่ำ ควรหลอม cocoa butter อย่างช้า ๆ บน water bath ที่อุณหภูมิไม่เกินประมาณ 34–35 °C จนมีลักษณะเป็นครีม — overheating cocoa butter → metastable polymorphs (mp ต่ำ) → suppository นิ่มและไม่แข็งตัว; แก้โดยหลอมช้า ๆ ให้เป็นครีม (≤ ~34–35 °C)",
+      "reason": "Cocoa butter (theobroma oil) เป็นไตรกลีเซอไรด์ธรรมชาติ (ส่วนใหญ่เป็น oleopalmitostearin) มีจุดหลอมเหลวประมาณ 30–35 °C จึงแข็งที่อุณหภูมิห้องและหลอมที่อุณหภูมิร่างกาย คุณสมบัติสำคัญคือ polymorphism มีผลึกได้หลายรูป ได้แก่ γ (mp ~18 °C), α (mp ~22–24 °C), β′ (mp ~28–31 °C) และ β ซึ่งเป็นรูปที่คงตัวที่สุด (mp ~34–35 °C) หากหลอม cocoa butter ด้วยความร้อนสูงเกินไป (เกินประมาณ 36 °C หรือหลอมใสจนหมด) ผลึก β ที่คงตัวจะหายไปหมด เมื่อเทแม่พิมพ์และทำให้เย็น จะได้ผลึก metastable ที่จุดหลอมเหลวต่ำ ทำให้ suppository แข็งตัวช้า นิ่ม หรือหลอมที่อุณหภูมิห้อง และอาจต้องใช้เวลาหลายวันกว่าจะเปลี่ยนกลับเป็นรูป β วิธีที่ถูกต้องคือหลอม cocoa butter อย่างช้า ๆ บน water bath อุณหภูมิต่ำ ให้หลอมเพียงบางส่วนจนมีลักษณะเป็นครีมขุ่น (creamy) โดยไม่เกินประมาณ 34–35 °C เพื่อให้ยังเหลือผลึก β เป็น seed crystal ช่วยให้ base ตกผลึกกลับในรูปคงตัว นอกจากนี้ cocoa butter ไม่จำเป็นต้องทาสารหล่อลื่นแม่พิมพ์เพราะหดตัวเมื่อเย็นและหลุดออกง่าย ข้อด้อยอื่น ๆ ของ cocoa butter ได้แก่ รับน้ำได้น้อย หืนได้ และจุดหลอมเหลวลดลงเมื่อผสมยาบางชนิด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ความร้อนสูงเกินไปทำลายผลึก β-form ที่คงตัว เมื่อเย็นลงจึงเกิดผลึก metastable (α, γ) ที่มีจุดหลอมเหลวต่ำ ควรหลอม cocoa butter อย่างช้า ๆ บน water bath ที่อุณหภูมิไม่เกินประมาณ 34–35 °C จนมีลักษณะเป็นครีม",
+          "is_correct": true,
+          "explanation": "ถูกต้อง — เป็นปัญหา polymorphism จากการหลอมร้อนเกินไป แก้โดยหลอมช้า ๆ ที่อุณหภูมิต่ำจนเป็นครีม"
+        },
+        {
+          "label": "B",
+          "text": "cocoa butter เกิด oxidation จนหืนทำให้จุดหลอมเหลวลดลง ควรเติม antioxidant",
+          "is_correct": false,
+          "explanation": "ผิด — การหืนไม่เกิดขึ้นทันทีระหว่างการเตรียมและไม่ใช่สาเหตุของ suppository นิ่มในกรณีนี้"
+        },
+        {
+          "label": "C",
+          "text": "cocoa butter ดูดซับน้ำจาก water bath ปริมาณมาก ควรใช้ความร้อนโดยตรงต่อไป",
+          "is_correct": false,
+          "explanation": "ผิด — water bath ไม่ได้เติมน้ำเข้าไปใน base และการให้ความร้อนโดยตรงคือสาเหตุของปัญหา"
+        },
+        {
+          "label": "D",
+          "text": "ตัวยาทำให้จุดหลอมเหลวของ cocoa butter สูงขึ้น ควรเติมน้ำมันพืชเพื่อลดจุดหลอมเหลว",
+          "is_correct": false,
+          "explanation": "ผิด — ยาบางชนิด (เช่น chloral hydrate) ทำให้จุดหลอมเหลวลดลง ไม่ใช่สูงขึ้น และการเติมน้ำมันพืชจะยิ่งทำให้นิ่ม"
+        },
+        {
+          "label": "E",
+          "text": "ไม่ได้ทาสารหล่อลื่นแม่พิมพ์ ควรทาแม่พิมพ์ด้วย mineral oil ก่อนเทเสมอ",
+          "is_correct": false,
+          "explanation": "ผิด — cocoa butter หดตัวเมื่อเย็นและหลุดจากแม่พิมพ์ได้ง่าย ไม่จำเป็นต้องหล่อลื่น; base ที่ต้องหล่อลื่นแม่พิมพ์ (ด้วย mineral oil) คือ glycerinated gelatin"
+        }
+      ],
+      "key_takeaway": "Cocoa butter: β-form mp ~34–35 °C; ห้ามหลอมเกิน ~36 °C → “melt slowly to a creamy consistency”; ไม่ต้องหล่อลื่นแม่พิมพ์"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "เภสัชกรเตรียม rectal suppository ของ chloral hydrate โดยใช้ cocoa butter เป็น base พบว่า suppository ที่ได้อ่อนนิ่มมากและหลอมที่อุณหภูมิห้อง แม้จะหลอม base อย่างถูกวิธีแล้ว แนวทางแก้ไขที่เหมาะสมที่สุดคือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "หลอม cocoa butter ที่อุณหภูมิสูงขึ้นเป็น 70 °C เพื่อให้ยาละลายหมด"
+      },
+      {
+        "label": "B",
+        "text": "เติม wax ที่มีจุดหลอมเหลวสูงกว่า เช่น white beeswax หรือ cetyl esters wax ในปริมาณเล็กน้อยเพื่อชดเชยจุดหลอมเหลวที่ลดลง (หรือเปลี่ยนไปใช้ base อื่นที่เหมาะสม)"
+      },
+      {
+        "label": "C",
+        "text": "เพิ่มปริมาณ chloral hydrate เพื่อให้ suppository แข็งขึ้น"
+      },
+      {
+        "label": "D",
+        "text": "เติมน้ำเพื่อละลาย chloral hydrate ก่อนผสมลงใน cocoa butter"
+      },
+      {
+        "label": "E",
+        "text": "เก็บ suppository ที่อุณหภูมิ 40 °C เพื่อให้ผลึกคงตัวเร็วขึ้น"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Chloral hydrate ละลายใน cocoa butter และกดจุดหลอมเหลวของ base ลง (melting point depression) แก้โดยเติม wax จุดหลอมเหลวสูงเล็กน้อย เช่น beeswax/cetyl esters wax หรือเปลี่ยน base",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. เติม wax ที่มีจุดหลอมเหลวสูงกว่า เช่น white beeswax หรือ cetyl esters wax ในปริมาณเล็กน้อยเพื่อชดเชยจุดหลอมเหลวที่ลดลง (หรือเปลี่ยนไปใช้ base อื่นที่เหมาะสม) — ยาที่ละลายใน fatty base (เช่น chloral hydrate, camphor, phenol) ลดจุดหลอมเหลว → เติม wax จุดหลอมเหลวสูงเล็กน้อยเพื่อชดเชย",
+      "reason": "ยาบางชนิดที่ละลายได้ดีใน cocoa butter เช่น chloral hydrate, camphor, menthol, phenol และน้ำมันหอมระเหย จะเกิดปรากฏการณ์ melting point depression (คล้ายการเกิด eutectic/การละลายตัวถูกละลายในตัวทำละลาย) ทำให้ suppository อ่อนนิ่มหรือหลอมที่อุณหภูมิห้อง ปัญหานี้แตกต่างจากปัญหา polymorphism ที่เกิดจากการหลอมร้อนเกินไป แนวทางแก้คือเติมสารที่มีจุดหลอมเหลวสูงกว่าในปริมาณเล็กน้อย (เพียงไม่กี่เปอร์เซ็นต์) เช่น white beeswax หรือ cetyl esters wax เพื่อดึงจุดหลอมเหลวของส่วนผสมกลับขึ้นมาในช่วงที่แข็งที่อุณหภูมิห้องแต่ยังหลอมที่อุณหภูมิร่างกาย ต้องระวังไม่เติมมากเกินไป เพราะหากจุดหลอมเหลวสูงกว่า 37 °C suppository จะไม่หลอมในทวารหนักและไม่ปลดปล่อยยา อีกทางเลือกคือเปลี่ยนไปใช้ hard fat (synthetic triglyceride) เกรดที่มีจุดหลอมเหลวสูงกว่า หรือ base ชนิดอื่นที่เหมาะสม",
+      "choices": [
+        {
+          "label": "A",
+          "text": "หลอม cocoa butter ที่อุณหภูมิสูงขึ้นเป็น 70 °C เพื่อให้ยาละลายหมด",
+          "is_correct": false,
+          "explanation": "ผิด — การหลอมร้อนขึ้นไม่ได้แก้ปัญหาจุดหลอมเหลวลดลงจากตัวยา และยังทำให้เกิดปัญหา polymorphism ของ cocoa butter เพิ่มอีก"
+        },
+        {
+          "label": "B",
+          "text": "เติม wax ที่มีจุดหลอมเหลวสูงกว่า เช่น white beeswax หรือ cetyl esters wax ในปริมาณเล็กน้อยเพื่อชดเชยจุดหลอมเหลวที่ลดลง (หรือเปลี่ยนไปใช้ base อื่นที่เหมาะสม)",
+          "is_correct": true,
+          "explanation": "ถูกต้อง — เติม beeswax/cetyl esters wax ปริมาณเล็กน้อยเพื่อเพิ่มจุดหลอมเหลว หรือเปลี่ยน base"
+        },
+        {
+          "label": "C",
+          "text": "เพิ่มปริมาณ chloral hydrate เพื่อให้ suppository แข็งขึ้น",
+          "is_correct": false,
+          "explanation": "ผิด — chloral hydrate เป็นตัวการที่ทำให้จุดหลอมเหลวลดลง การเพิ่มยาจะยิ่งนิ่ม และเปลี่ยนขนาดยาซึ่งยอมรับไม่ได้"
+        },
+        {
+          "label": "D",
+          "text": "เติมน้ำเพื่อละลาย chloral hydrate ก่อนผสมลงใน cocoa butter",
+          "is_correct": false,
+          "explanation": "ผิด — cocoa butter รับน้ำได้น้อย การเติมน้ำทำให้แยกชั้นและไม่ได้แก้ปัญหาจุดหลอมเหลว"
+        },
+        {
+          "label": "E",
+          "text": "เก็บ suppository ที่อุณหภูมิ 40 °C เพื่อให้ผลึกคงตัวเร็วขึ้น",
+          "is_correct": false,
+          "explanation": "ผิด — 40 °C สูงกว่าจุดหลอมเหลวของ cocoa butter suppository จะหลอมละลายหมด"
+        }
+      ],
+      "key_takeaway": "Cocoa butter นิ่ม 2 สาเหตุ: (1) overheating → metastable polymorph (2) ยาละลายใน base เช่น chloral hydrate → mp depression → เติม beeswax/cetyl esters wax เล็กน้อย"
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "ต้องการเตรียม rectal suppository ของยาที่อยู่ในรูปเกลือโซเดียม ซึ่งละลายน้ำได้ดีมากและละลายในไขมันได้น้อย โดยต้องการให้ยาปลดปล่อยออกจาก base อย่างรวดเร็ว ควรเลือก base ใดและด้วยเหตุผลใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "PEG base เพราะยาละลายน้ำและ base ละลายน้ำ จึงปลดปล่อยเร็วที่สุด"
+      },
+      {
+        "label": "B",
+        "text": "Glycerinated gelatin เพราะหลอมเหลวที่อุณหภูมิร่างกายเร็วที่สุด"
+      },
+      {
+        "label": "C",
+        "text": "Fatty base เช่น cocoa butter หรือ hard fat เพราะยามีความชอบ (affinity) ต่อ base ต่ำ เมื่อ base หลอม ยาจึงแยกตัว (partition) ออกสู่ของเหลวในทวารหนักได้เร็ว"
+      },
+      {
+        "label": "D",
+        "text": "เลือก base ใดก็ได้ เพราะความสามารถในการละลายของยาไม่มีผลต่อการปลดปล่อยจาก suppository"
+      },
+      {
+        "label": "E",
+        "text": "เลือก base ที่ยาละลายได้ดีที่สุด เพื่อให้ยาถูกกักไว้ใน base นานขึ้น"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "หลักการเลือก base: ยาละลายน้ำ → fatty base; ยาละลายในไขมัน → water-soluble base (PEG) เพราะยาที่มี affinity ต่อ base ต่ำจะหลุดออกจาก base สู่ของเหลวในทวารหนักได้เร็ว",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. Fatty base เช่น cocoa butter หรือ hard fat เพราะยามีความชอบ (affinity) ต่อ base ต่ำ เมื่อ base หลอม ยาจึงแยกตัว (partition) ออกสู่ของเหลวในทวารหนักได้เร็ว — water-soluble drug + fatty base → release เร็ว เพราะยามี affinity ต่อ base ต่ำ",
+      "reason": "การปลดปล่อยยาจาก suppository ขึ้นกับการกระจายตัว (partition) ของยาระหว่าง base กับของเหลวในทวารหนักซึ่งมีปริมาณน้อยมาก (ประมาณ 1–3 mL) หลักการทั่วไปคือ เลือก base ที่ยามี affinity ต่ำ (opposite solubility) ยาที่ละลายน้ำได้ดี (เช่น เกลือโซเดียมหรือ hydrochloride) ควรใช้ fatty base เช่น cocoa butter หรือ hard fat เมื่อ base หลอมที่อุณหภูมิร่างกาย อนุภาคยาซึ่งไม่ละลายใน base จะตกลงมาสัมผัสเยื่อบุและละลายในของเหลวในทวารหนักได้ทันที ทำให้ปลดปล่อยเร็ว ในทางกลับกัน ยาที่ละลายในไขมันได้ดีถ้าอยู่ใน fatty base จะชอบอยู่ใน base มากกว่า (partition coefficient สูง) จึงปลดปล่อยช้า ควรใช้ water-soluble base เช่น PEG หรือ glycerinated gelatin ซึ่งปลดปล่อยยาโดยการละลายของ base ในของเหลวในทวารหนัก นอกจากนี้ PEG ที่ละลายน้ำและยาที่ละลายน้ำจะเกิด affinity กัน ยาอาจปลดปล่อยช้ากว่าที่คาด และ PEG ต้องอาศัยการละลาย (ไม่ใช่การหลอม) ซึ่งช้ากว่าการหลอมของ fatty base ปัจจัยอื่นที่ต้องพิจารณา ได้แก่ ขนาดอนุภาคยา ความหนืดของ base ที่หลอมแล้ว และสารลดแรงตึงผิว",
+      "choices": [
+        {
+          "label": "A",
+          "text": "PEG base เพราะยาละลายน้ำและ base ละลายน้ำ จึงปลดปล่อยเร็วที่สุด",
+          "is_correct": false,
+          "explanation": "ผิด — ยาละลายน้ำใน PEG มี affinity ต่อ base สูง และ PEG ต้องละลายในของเหลวปริมาณน้อยของทวารหนัก การปลดปล่อยจึงมักช้ากว่า fatty base"
+        },
+        {
+          "label": "B",
+          "text": "Glycerinated gelatin เพราะหลอมเหลวที่อุณหภูมิร่างกายเร็วที่สุด",
+          "is_correct": false,
+          "explanation": "ผิด — glycerinated gelatin ไม่หลอมที่อุณหภูมิร่างกาย แต่ค่อย ๆ ละลาย/dissolve อย่างช้า มักใช้กับ vaginal suppository มากกว่า"
+        },
+        {
+          "label": "C",
+          "text": "Fatty base เช่น cocoa butter หรือ hard fat เพราะยามีความชอบ (affinity) ต่อ base ต่ำ เมื่อ base หลอม ยาจึงแยกตัว (partition) ออกสู่ของเหลวในทวารหนักได้เร็ว",
+          "is_correct": true,
+          "explanation": "ถูกต้อง — ยาละลายน้ำใน fatty base มี affinity ต่ำ เมื่อ base หลอมจึงปลดปล่อยสู่ของเหลวในทวารหนักได้เร็ว"
+        },
+        {
+          "label": "D",
+          "text": "เลือก base ใดก็ได้ เพราะความสามารถในการละลายของยาไม่มีผลต่อการปลดปล่อยจาก suppository",
+          "is_correct": false,
+          "explanation": "ผิด — solubility ของยาและ partition ระหว่าง base กับของเหลวในร่างกายเป็นปัจจัยหลักของการปลดปล่อย"
+        },
+        {
+          "label": "E",
+          "text": "เลือก base ที่ยาละลายได้ดีที่สุด เพื่อให้ยาถูกกักไว้ใน base นานขึ้น",
+          "is_correct": false,
+          "explanation": "ผิด — การเลือก base ที่ยาละลายได้ดีทำให้ยาถูกกักใน base และปลดปล่อยช้า ไม่ตรงกับเป้าหมาย"
+        }
+      ],
+      "key_takeaway": "“Opposites release”: water-soluble drug → fatty base | oil-soluble drug → PEG/glycerinated gelatin"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ต้องเตรียม suppository จำนวน 12 แท่ง แต่ละแท่งมี bismuth subgallate 300 mg โดยใช้ cocoa butter เป็น base แม่พิมพ์ที่ใช้ให้ blank cocoa butter suppository หนักแท่งละ 2.0 g และ displacement value ของ bismuth subgallate เท่ากับ 2.7 (ยา 2.7 g แทนที่ cocoa butter 1 g) ต้องใช้ cocoa butter ทั้งหมดกี่กรัม (ไม่คิดส่วนเผื่อ)",
+    "choices": [
+      {
+        "label": "A",
+        "text": "24.00 g"
+      },
+      {
+        "label": "B",
+        "text": "20.40 g"
+      },
+      {
+        "label": "C",
+        "text": "14.28 g"
+      },
+      {
+        "label": "D",
+        "text": "22.67 g"
+      },
+      {
+        "label": "E",
+        "text": "1.89 g"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "ยารวม 12 × 0.3 = 3.6 g แทนที่ cocoa butter 3.6/2.7 = 1.333 g; cocoa butter = 24.0 − 1.333 = 22.67 g",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. 22.67 g — ใช้ displacement value: base ที่ถูกแทนที่ = น้ำหนักยา/DV แล้วหักออกจากน้ำหนัก blank รวม",
+      "reason": "Displacement value (DV) คือจำนวนกรัมของยาที่แทนที่ปริมาตรของ base 1 g (ตาม BP คิดเทียบกับ cocoa butter) เนื่องจากยาและ base มีความหนาแน่นต่างกัน การใส่ยาลงใน suppository จึงไม่ได้แทนที่ base ด้วยน้ำหนักเท่ากัน ยาที่มีความหนาแน่นสูง เช่น bismuth subgallate (DV ~2.7) แทนที่ base ได้น้อยกว่าน้ำหนักของตัวเอง วิธีคำนวณ: (1) หาน้ำหนัก base หากทำ blank ทั้งหมด = จำนวนแท่ง × น้ำหนัก blank (2) หาน้ำหนักยาทั้งหมด (3) หาน้ำหนัก base ที่ถูกแทนที่ = น้ำหนักยา ÷ DV (4) น้ำหนัก base ที่ต้องใช้ = (1) − (3) ในโจทย์นี้ blank รวม 24.0 g ยารวม 3.6 g แทนที่ base 1.333 g จึงใช้ cocoa butter 22.67 g น้ำหนักแต่ละแท่งที่ได้คือ (22.67 + 3.6)/12 ≈ 2.19 g ซึ่งมากกว่า blank เพราะยามีความหนาแน่นสูงกว่า base ในทางปฏิบัติมักเตรียมเผื่อ (เช่น คำนวณสำหรับ 13–14 แท่ง) เพื่อชดเชยการสูญเสียระหว่างเท",
+      "choices": [
+        {
+          "label": "A",
+          "text": "24.00 g",
+          "is_correct": false,
+          "explanation": "ผิด — 24.00 g คือน้ำหนัก blank ทั้งหมด ยังไม่ได้หักส่วนที่ยาแทนที่"
+        },
+        {
+          "label": "B",
+          "text": "20.40 g",
+          "is_correct": false,
+          "explanation": "ผิด — 20.40 g ได้จาก 24.0 − 3.6 ซึ่งสมมติว่า DV = 1 (ยาแทนที่ base น้ำหนักเท่ากัน) ไม่ถูกต้องสำหรับ bismuth subgallate"
+        },
+        {
+          "label": "C",
+          "text": "14.28 g",
+          "is_correct": false,
+          "explanation": "ผิด — 14.28 g ได้จาก 24.0 − (3.6 × 2.7) ซึ่งนำ DV ไปคูณแทนที่จะหาร"
+        },
+        {
+          "label": "D",
+          "text": "22.67 g",
+          "is_correct": true,
+          "explanation": "ถูกต้อง — 24.0 − 3.6/2.7 = 24.0 − 1.333 = 22.67 g"
+        },
+        {
+          "label": "E",
+          "text": "1.89 g",
+          "is_correct": false,
+          "explanation": "ผิด — 1.89 g คือ cocoa butter ต่อ 1 แท่ง (2.0 − 0.3/2.7) ไม่ใช่ปริมาณรวม 12 แท่ง"
+        }
+      ],
+      "key_takeaway": "Base ที่ใช้ = (N × blank wt) − (total drug ÷ DV); DV สูง (ยาหนาแน่น) → แทนที่ base น้อย",
+      "calculation_steps": [
+        "ขั้นที่ 1: น้ำหนัก blank ทั้งหมด = 12 แท่ง × 2.0 g = 24.0 g",
+        "ขั้นที่ 2: น้ำหนักยาทั้งหมด = 12 × 300 mg = 3,600 mg = 3.6 g",
+        "ขั้นที่ 3: cocoa butter ที่ถูกยาแทนที่ = 3.6 g ÷ 2.7 = 1.333 g",
+        "ขั้นที่ 4: cocoa butter ที่ต้องใช้ = 24.0 g − 1.333 g = 22.67 g",
+        "ตรวจสอบ: ต่อแท่ง base = 2.0 − (0.3/2.7) = 2.0 − 0.111 = 1.889 g × 12 = 22.67 g (ตรงกัน)"
+      ]
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "ในการหา displacement value ของยาชนิดหนึ่งใน cocoa butter พบว่า blank suppository (cocoa butter ล้วน) จากแม่พิมพ์นี้มีน้ำหนักเฉลี่ย 2.00 g ส่วน suppository ที่มียา 20% w/w จากแม่พิมพ์เดียวกันมีน้ำหนักเฉลี่ย 2.25 g displacement value ของยานี้เท่ากับข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "0.44"
+      },
+      {
+        "label": "B",
+        "text": "1.13"
+      },
+      {
+        "label": "C",
+        "text": "4.50"
+      },
+      {
+        "label": "D",
+        "text": "0.20"
+      },
+      {
+        "label": "E",
+        "text": "2.25"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "ยาต่อแท่ง = 0.20 × 2.25 = 0.45 g; base = 1.80 g; base ที่ถูกแทนที่ = 2.00 − 1.80 = 0.20 g; DV = 0.45/0.20 = 2.25",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. 2.25 — DV = น้ำหนักยาต่อแท่ง ÷ น้ำหนัก base ที่ถูกแทนที่ = 0.45/0.20 = 2.25",
+      "reason": "การหา displacement value ทำโดยเตรียม suppository ที่เป็น base ล้วน (blank) และ suppository ที่มียาในสัดส่วนที่ทราบ จากแม่พิมพ์เดียวกัน (ปริมาตรเท่ากัน) แล้วชั่งน้ำหนักเฉลี่ย ในโจทย์นี้ suppository ที่มียา 20% หนัก 2.25 g จึงมียา 0.45 g และ cocoa butter 1.80 g เมื่อเทียบกับ blank ที่มี cocoa butter 2.00 g แสดงว่ายา 0.45 g ไปแทนที่ปริมาตรของ cocoa butter 0.20 g ดังนั้น DV = 0.45/0.20 = 2.25 หมายความว่ายา 2.25 g แทนที่ cocoa butter 1 g (ยาหนาแน่นกว่า cocoa butter ประมาณ 2.25 เท่า) อีกวิธีคือใช้สมการ dosage replacement factor (f) ของ Paddock: f = [100(E − G)/(G × X)] + 1 โดย E = น้ำหนัก blank, G = น้ำหนัก suppository ที่มียา และ X = % ยา ได้ f = [100(2.00 − 2.25)/(2.25 × 20)] + 1 = (−25/45) + 1 = 0.444 ซึ่ง f คือปริมาณ base ที่ถูกแทนที่โดยยา 1 g และ DV = 1/f = 2.25 ตรงกัน",
+      "choices": [
+        {
+          "label": "A",
+          "text": "0.44",
+          "is_correct": false,
+          "explanation": "ผิด — 0.44 คือ dosage replacement factor (f) ซึ่งเป็นส่วนกลับของ DV ไม่ใช่ DV"
+        },
+        {
+          "label": "B",
+          "text": "1.13",
+          "is_correct": false,
+          "explanation": "ผิด — 1.13 ได้จากการหาร 2.25 ด้วย 2 หรือคำนวณผิดขั้นตอน ไม่มีความหมายทางทฤษฎี"
+        },
+        {
+          "label": "C",
+          "text": "4.50",
+          "is_correct": false,
+          "explanation": "ผิด — 4.50 ได้จากการคิดว่า base ถูกแทนที่เพียง 0.10 g ซึ่งคำนวณผิด"
+        },
+        {
+          "label": "D",
+          "text": "0.20",
+          "is_correct": false,
+          "explanation": "ผิด — 0.20 g คือปริมาณ cocoa butter ที่ถูกแทนที่ ไม่ใช่ DV"
+        },
+        {
+          "label": "E",
+          "text": "2.25",
+          "is_correct": true,
+          "explanation": "ถูกต้อง — DV = 0.45 g ÷ 0.20 g = 2.25"
+        }
+      ],
+      "key_takeaway": "DV = drug wt ÷ base displaced; f (replacement factor) = 1/DV = [100(E−G)/(G·X)] + 1",
+      "calculation_steps": [
+        "ขั้นที่ 1: น้ำหนักยาต่อแท่ง = 20% × 2.25 g = 0.45 g",
+        "ขั้นที่ 2: น้ำหนัก cocoa butter ต่อแท่ง = 2.25 g − 0.45 g = 1.80 g",
+        "ขั้นที่ 3: cocoa butter ที่ถูกยาแทนที่ = 2.00 g − 1.80 g = 0.20 g",
+        "ขั้นที่ 4: DV = 0.45 g ÷ 0.20 g = 2.25",
+        "ตรวจสอบด้วยสมการ Paddock: f = [100(2.00 − 2.25)/(2.25 × 20)] + 1 = (−25/45) + 1 = 0.444; DV = 1/0.444 = 2.25"
+      ]
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "แม่พิมพ์ suppository ชุดหนึ่งถูก calibrate ด้วย cocoa butter ได้น้ำหนัก blank เฉลี่ย 2.0 g ต่อช่อง ต่อมาต้องการเตรียม blank suppository จาก PEG base ซึ่งมี density factor เทียบกับ cocoa butter เท่ากับ 1.20 จำนวน 12 แท่ง (ไม่คิดส่วนเผื่อ) ต้องใช้ PEG base กี่กรัม",
+    "choices": [
+      {
+        "label": "A",
+        "text": "28.8 g"
+      },
+      {
+        "label": "B",
+        "text": "24.0 g"
+      },
+      {
+        "label": "C",
+        "text": "20.0 g"
+      },
+      {
+        "label": "D",
+        "text": "2.4 g"
+      },
+      {
+        "label": "E",
+        "text": "34.6 g"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "แม่พิมพ์มีปริมาตรคงที่ น้ำหนักแปรผันตามความหนาแน่น: PEG ต่อช่อง = 2.0 × 1.20 = 2.4 g; 12 แท่ง = 28.8 g",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. 28.8 g — น้ำหนัก base ต่อช่อง = น้ำหนักที่ calibrate ด้วย cocoa butter × density factor ของ base ใหม่",
+      "reason": "Mold calibration คือการหาน้ำหนักจริงของ base ที่แม่พิมพ์แต่ละช่องบรรจุได้ เนื่องจากแม่พิมพ์ผลิตตามปริมาตร (เช่น 1 g หรือ 2 g ตามน้ำหนัก cocoa butter โดยประมาณ) แต่ความจุจริงแต่ละชุดแตกต่างกัน วิธีปฏิบัติคือเท base ล้วนลงในแม่พิมพ์ เมื่อแข็งตัวแล้วตัดแต่ง นำออกมาชั่งน้ำหนักรวมแล้วหารด้วยจำนวนแท่งเพื่อหาค่าเฉลี่ย ค่า calibration นี้ใช้ได้กับ base ชนิดที่ใช้ calibrate เท่านั้น เพราะ base แต่ละชนิดมีความหนาแน่นต่างกัน เช่น PEG และ glycerinated gelatin มีความหนาแน่นสูงกว่า cocoa butter (density factor มากกว่า 1) แม่พิมพ์เดียวกันจึงบรรจุ PEG ได้น้ำหนักมากกว่า หากเปลี่ยน base ต้อง calibrate ใหม่ด้วย base นั้น หรือคำนวณจาก density factor ในโจทย์นี้ PEG ต่อช่อง = 2.0 × 1.20 = 2.4 g และ 12 แท่ง = 28.8 g หากมีตัวยาต้องหักส่วนที่ยาแทนที่ base ด้วย displacement value ที่สอดคล้องกับ base นั้นต่อไป",
+      "choices": [
+        {
+          "label": "A",
+          "text": "28.8 g",
+          "is_correct": true,
+          "explanation": "ถูกต้อง — 2.0 g × 1.20 = 2.4 g ต่อช่อง × 12 = 28.8 g"
+        },
+        {
+          "label": "B",
+          "text": "24.0 g",
+          "is_correct": false,
+          "explanation": "ผิด — 24.0 g ใช้น้ำหนัก cocoa butter โดยไม่ปรับตาม density factor ของ PEG"
+        },
+        {
+          "label": "C",
+          "text": "20.0 g",
+          "is_correct": false,
+          "explanation": "ผิด — 20.0 g ได้จากการนำ density factor ไปหาร (2.0/1.2 = 1.67 g × 12) ซึ่งผิดทิศทาง เพราะ PEG หนาแน่นกว่าจึงต้องหนักกว่า"
+        },
+        {
+          "label": "D",
+          "text": "2.4 g",
+          "is_correct": false,
+          "explanation": "ผิด — 2.4 g เป็นน้ำหนักต่อ 1 ช่องเท่านั้น ยังไม่คูณจำนวน 12 แท่ง"
+        },
+        {
+          "label": "E",
+          "text": "34.6 g",
+          "is_correct": false,
+          "explanation": "ผิด — 34.6 g ได้จากการคูณ density factor ซ้ำสองครั้ง (2.0 × 1.2 × 1.2 × 12)"
+        }
+      ],
+      "key_takeaway": "Calibrate แม่พิมพ์ด้วย base ที่จะใช้จริง; base หนาแน่นกว่า (PEG, glycerinated gelatin) → น้ำหนักต่อช่องมากกว่า cocoa butter",
+      "calculation_steps": [
+        "ขั้นที่ 1: น้ำหนัก PEG ต่อช่อง = น้ำหนัก cocoa butter ต่อช่อง × density factor = 2.0 g × 1.20 = 2.4 g",
+        "ขั้นที่ 2: PEG ที่ต้องใช้ = 2.4 g/แท่ง × 12 แท่ง = 28.8 g"
+      ]
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ผู้ป่วยได้รับ suppository ที่ใช้ polyethylene glycol (PEG) เป็น base เภสัชกรควรให้คำแนะนำหรืออธิบายคุณสมบัติของ base ชนิดนี้ข้อใดถูกต้อง",
+    "choices": [
+      {
+        "label": "A",
+        "text": "PEG base หลอมเหลวที่อุณหภูมิร่างกาย 37 °C เหมือน cocoa butter จึงต้องเก็บในตู้เย็นเสมอ"
+      },
+      {
+        "label": "B",
+        "text": "PEG base มีปัญหา polymorphism จึงห้ามหลอมเกิน 35 °C ระหว่างการผลิต"
+      },
+      {
+        "label": "C",
+        "text": "PEG base ไม่ดูดน้ำ จึงไม่ระคายเคืองเยื่อบุ เหมาะกับผู้ป่วยทุกราย"
+      },
+      {
+        "label": "D",
+        "text": "PEG base ปลดปล่อยยาโดยการละลายในของเหลวของร่างกาย (ไม่ได้หลอม) และดูดความชื้น อาจดึงน้ำจากเยื่อบุทำให้ระคายเคือง จึงควรจุ่มน้ำให้ชื้นก่อนสอด และเก็บที่อุณหภูมิห้องได้"
+      },
+      {
+        "label": "E",
+        "text": "PEG base เป็นตัวเลือกที่ดีที่สุดสำหรับยาที่ละลายน้ำได้ดีเมื่อต้องการให้ปลดปล่อยยาเร็ว"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "PEG suppository มีจุดหลอมเหลวสูงกว่า 37 °C ปลดปล่อยยาโดยละลายในของเหลวในทวารหนัก/ช่องคลอด ดูดความชื้นจึงอาจระคายเคือง แนะนำให้จุ่มน้ำก่อนสอด และไม่จำเป็นต้องแช่เย็น",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. PEG base ปลดปล่อยยาโดยการละลายในของเหลวของร่างกาย (ไม่ได้หลอม) และดูดความชื้น อาจดึงน้ำจากเยื่อบุทำให้ระคายเคือง จึงควรจุ่มน้ำให้ชื้นก่อนสอด และเก็บที่อุณหภูมิห้องได้ — PEG base: dissolve (ไม่ melt), hygroscopic → ระคายเคือง; จุ่มน้ำก่อนใช้; เก็บอุณหภูมิห้องได้",
+      "reason": "PEG suppository base ผลิตจากการผสม PEG ที่มีน้ำหนักโมเลกุลต่างกัน (เช่น PEG 1000 ร่วมกับ PEG 3350 หรือ PEG 6000) เพื่อให้ได้ความแข็งและจุดหลอมเหลวที่ต้องการ ซึ่งโดยทั่วไปสูงกว่าอุณหภูมิร่างกาย PEG base จึงไม่หลอมในร่างกาย แต่ปลดปล่อยยาโดยการค่อย ๆ ละลาย (dissolve) ในของเหลวของทวารหนักหรือช่องคลอด ข้อดีคือคงตัวที่อุณหภูมิห้อง ไม่ต้องแช่เย็น ขนส่งในเขตร้อนได้ดี ไม่มีปัญหา polymorphism และไม่ต้องหล่อลื่นแม่พิมพ์ ข้อเสียสำคัญคือ PEG ดูดความชื้น (hygroscopic) เมื่อสอดเข้าไปจะดึงน้ำจากเยื่อบุ ทำให้รู้สึกแสบหรือระคายเคือง จึงแนะนำให้จุ่มน้ำก่อนสอด หรือผลิตโดยมีน้ำอย่างน้อยประมาณ 20% ในตำรับเพื่อลดการระคายเคือง นอกจากนี้ PEG อาจ incompatible กับยาบางชนิด (เช่น silver salts, tannic acid, aminopyrine, ichthammol, aspirin, benzocaine) และสามารถเกิดการตกผลึกของยาหรือเปราะเมื่อเย็นเร็วเกินไป ในแง่การปลดปล่อย PEG เหมาะกับยาที่ละลายในไขมันมากกว่ายาที่ละลายน้ำ",
+      "choices": [
+        {
+          "label": "A",
+          "text": "PEG base หลอมเหลวที่อุณหภูมิร่างกาย 37 °C เหมือน cocoa butter จึงต้องเก็บในตู้เย็นเสมอ",
+          "is_correct": false,
+          "explanation": "ผิด — PEG base มีจุดหลอมเหลวสูงกว่า 37 °C ไม่หลอมในร่างกายแต่ละลาย และไม่จำเป็นต้องแช่เย็น"
+        },
+        {
+          "label": "B",
+          "text": "PEG base มีปัญหา polymorphism จึงห้ามหลอมเกิน 35 °C ระหว่างการผลิต",
+          "is_correct": false,
+          "explanation": "ผิด — polymorphism และการห้ามหลอมเกิน ~35 °C เป็นปัญหาของ cocoa butter ไม่ใช่ PEG"
+        },
+        {
+          "label": "C",
+          "text": "PEG base ไม่ดูดน้ำ จึงไม่ระคายเคืองเยื่อบุ เหมาะกับผู้ป่วยทุกราย",
+          "is_correct": false,
+          "explanation": "ผิด — PEG ดูดความชื้นสูง จึงอาจดึงน้ำจากเยื่อบุทำให้ระคายเคือง"
+        },
+        {
+          "label": "D",
+          "text": "PEG base ปลดปล่อยยาโดยการละลายในของเหลวของร่างกาย (ไม่ได้หลอม) และดูดความชื้น อาจดึงน้ำจากเยื่อบุทำให้ระคายเคือง จึงควรจุ่มน้ำให้ชื้นก่อนสอด และเก็บที่อุณหภูมิห้องได้",
+          "is_correct": true,
+          "explanation": "ถูกต้อง — dissolve ไม่ใช่ melt, hygroscopic, จุ่มน้ำก่อนสอด, เก็บที่อุณหภูมิห้องได้"
+        },
+        {
+          "label": "E",
+          "text": "PEG base เป็นตัวเลือกที่ดีที่สุดสำหรับยาที่ละลายน้ำได้ดีเมื่อต้องการให้ปลดปล่อยยาเร็ว",
+          "is_correct": false,
+          "explanation": "ผิด — ยาที่ละลายน้ำมี affinity สูงต่อ PEG ปลดปล่อยช้ากว่า; ยาละลายน้ำควรใช้ fatty base"
+        }
+      ],
+      "key_takeaway": "PEG suppository: dissolves, hygroscopic → “moisten before insertion”, no refrigeration, no polymorphism, no mold lubricant"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ข้อใดถูกต้องเกี่ยวกับผลิตภัณฑ์ยาทางช่องคลอด (vaginal products)",
+    "choices": [
+      {
+        "label": "A",
+        "text": "pH ปกติของช่องคลอดในหญิงวัยเจริญพันธุ์ที่สุขภาพดีอยู่ในช่วงประมาณ 7.4–8.0"
+      },
+      {
+        "label": "B",
+        "text": "vaginal suppository (pessary) มีน้ำหนักประมาณ 1 g เท่ากับ rectal suppository สำหรับเด็ก"
+      },
+      {
+        "label": "C",
+        "text": "pH ปกติของช่องคลอดในหญิงวัยเจริญพันธุ์ประมาณ 3.5–4.5 จาก lactic acid ที่สร้างโดย lactobacilli และ vaginal suppository มักใช้ glycerinated gelatin หรือ PEG เป็น base มีน้ำหนักประมาณ 3–5 g"
+      },
+      {
+        "label": "D",
+        "text": "glycerinated gelatin ใช้เป็น base ของ vaginal suppository เพราะหลอมเหลวเร็วที่อุณหภูมิร่างกายเหมือน cocoa butter"
+      },
+      {
+        "label": "E",
+        "text": "ผลิตภัณฑ์ทางช่องคลอดที่มีน้ำไม่จำเป็นต้องใส่สารกันเสีย เพราะ pH ในช่องคลอดเป็นกรด"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "ช่องคลอดปกติมี pH ประมาณ 3.5–4.5 (lactobacilli สร้าง lactic acid) vaginal suppository มักเป็นรูปไข่ หนักประมาณ 3–5 g และใช้ base ที่ละลายน้ำ เช่น glycerinated gelatin หรือ PEG",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. pH ปกติของช่องคลอดในหญิงวัยเจริญพันธุ์ประมาณ 3.5–4.5 จาก lactic acid ที่สร้างโดย lactobacilli และ vaginal suppository มักใช้ glycerinated gelatin หรือ PEG เป็น base มีน้ำหนักประมาณ 3–5 g — vaginal pH 3.5–4.5; vaginal suppository ~3–5 g ใช้ glycerinated gelatin/PEG base",
+      "reason": "ช่องคลอดของหญิงวัยเจริญพันธุ์มีสภาพเป็นกรด pH ประมาณ 3.5–4.5 เพราะ lactobacilli (Döderlein’s bacilli) เปลี่ยน glycogen ในเยื่อบุให้เป็น lactic acid ซึ่งช่วยป้องกันการติดเชื้อก่อโรค การออกแบบตำรับจึงควรคำนึงถึง pH ที่ไม่รบกวน flora ปกติ ผลิตภัณฑ์ทางช่องคลอดมีหลายรูปแบบ ได้แก่ vaginal suppository/pessary, vaginal tablet (insert), cream, gel, foam และ vaginal ring Vaginal suppository มักมีรูปทรงกลมหรือรูปไข่ น้ำหนักประมาณ 3–5 g (ตำรามาตรฐานระบุประมาณ 5 g) ใหญ่กว่า rectal suppository ผู้ใหญ่ (~2 g) base ที่นิยมคือ glycerinated gelatin (เช่น glycerin 70%, gelatin 20%, water 10%) และ PEG ซึ่งค่อย ๆ ละลายหรือกระจายตัวในสารคัดหลั่ง ให้ผลเฉพาะที่ยาวนาน glycerinated gelatin ไม่หลอมแต่ละลายช้า ดูดความชื้น เป็นแหล่งเจริญของจุลชีพจึงต้องใส่สารกันเสีย (เช่น parabens) และควรเก็บในภาชนะปิดสนิท แนะนำผู้ป่วยให้สอดยาขณะนอนก่อนนอนเพื่อลดการไหลย้อนออก",
+      "choices": [
+        {
+          "label": "A",
+          "text": "pH ปกติของช่องคลอดในหญิงวัยเจริญพันธุ์ที่สุขภาพดีอยู่ในช่วงประมาณ 7.4–8.0",
+          "is_correct": false,
+          "explanation": "ผิด — pH 7.4–8.0 เป็นค่าใกล้เคียง pH ของเลือด ช่องคลอดปกติเป็นกรด (pH 3.5–4.5) pH ที่สูงขึ้นมักบ่งชี้ bacterial vaginosis หรือ trichomoniasis"
+        },
+        {
+          "label": "B",
+          "text": "vaginal suppository (pessary) มีน้ำหนักประมาณ 1 g เท่ากับ rectal suppository สำหรับเด็ก",
+          "is_correct": false,
+          "explanation": "ผิด — vaginal suppository มีน้ำหนักประมาณ 3–5 g ส่วน rectal suppository เด็กประมาณ 1 g"
+        },
+        {
+          "label": "C",
+          "text": "pH ปกติของช่องคลอดในหญิงวัยเจริญพันธุ์ประมาณ 3.5–4.5 จาก lactic acid ที่สร้างโดย lactobacilli และ vaginal suppository มักใช้ glycerinated gelatin หรือ PEG เป็น base มีน้ำหนักประมาณ 3–5 g",
+          "is_correct": true,
+          "explanation": "ถูกต้อง — pH 3.5–4.5 จาก lactobacilli; base glycerinated gelatin/PEG; น้ำหนัก ~3–5 g"
+        },
+        {
+          "label": "D",
+          "text": "glycerinated gelatin ใช้เป็น base ของ vaginal suppository เพราะหลอมเหลวเร็วที่อุณหภูมิร่างกายเหมือน cocoa butter",
+          "is_correct": false,
+          "explanation": "ผิด — glycerinated gelatin ไม่หลอมที่อุณหภูมิร่างกาย แต่ละลาย/กระจายช้า ๆ ในสารคัดหลั่ง ให้ผลยาวนาน"
+        },
+        {
+          "label": "E",
+          "text": "ผลิตภัณฑ์ทางช่องคลอดที่มีน้ำไม่จำเป็นต้องใส่สารกันเสีย เพราะ pH ในช่องคลอดเป็นกรด",
+          "is_correct": false,
+          "explanation": "ผิด — ตำรับที่มีน้ำหรือ glycerinated gelatin เป็นแหล่งเจริญของจุลชีพ จึงต้องใส่สารกันเสีย"
+        }
+      ],
+      "key_takeaway": "Vaginal: pH 3.5–4.5 | suppository ~5 g | base = glycerinated gelatin (ต้องมี preservative, ต้องหล่อลื่นแม่พิมพ์) หรือ PEG"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "ผู้ป่วยมะเร็งใช้ fentanyl transdermal patch 25 µg/h มาต่อเนื่อง วันนี้ผู้ป่วยมีไข้ 39 °C และญาติวางแผ่นประคบร้อน (heating pad) ไว้บริเวณที่แปะแผ่นยาเพื่อบรรเทาปวด ข้อใดถูกต้องที่สุด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ความร้อนทำให้การดูดซึมยาลดลง เพราะผิวหนังขับเหงื่อออกมาชะยาออก"
+      },
+      {
+        "label": "B",
+        "text": "ความร้อนเพิ่มการไหลเวียนเลือดที่ผิว เพิ่ม diffusivity และ permeability ของยา ทำให้อัตราการดูดซึม fentanyl เพิ่มขึ้น เสี่ยงต่อการได้รับยาเกินขนาด (เช่น กดการหายใจ) ควรหลีกเลี่ยงแหล่งความร้อนและเฝ้าระวังอาการ"
+      },
+      {
+        "label": "C",
+        "text": "ไม่มีผลใด ๆ เพราะอัตราการปลดปล่อยยาถูกควบคุมโดย patch ทั้งหมด"
+      },
+      {
+        "label": "D",
+        "text": "ความร้อนทำให้ fentanyl ในแผ่นสลายตัว ผู้ป่วยจะได้ยาน้อยลงจนปวดมากขึ้น"
+      },
+      {
+        "label": "E",
+        "text": "ความร้อนเพิ่มเพียงความเหนียวของกาว จึงไม่ต้องให้คำแนะนำเพิ่มเติม"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "ความร้อน (ไข้ แผ่นประคบร้อน ซาวน่า) เพิ่มเลือดไหลเวียนที่ผิวและ diffusion/permeability ทำให้ fentanyl ถูกดูดซึมเพิ่มขึ้น เสี่ยง opioid toxicity",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. ความร้อนเพิ่มการไหลเวียนเลือดที่ผิว เพิ่ม diffusivity และ permeability ของยา ทำให้อัตราการดูดซึม fentanyl เพิ่มขึ้น เสี่ยงต่อการได้รับยาเกินขนาด (เช่น กดการหายใจ) ควรหลีกเลี่ยงแหล่งความร้อนและเฝ้าระวังอาการ — heat exposure เพิ่มการดูดซึมยาจาก transdermal patch (โดยเฉพาะ fentanyl) → เสี่ยงยาเกินขนาด",
+      "reason": "Fentanyl transdermal patch ออกแบบให้ส่งยาในอัตราคงที่ (เช่น 25 µg/h) โดยอาศัยการซึมผ่านผิวแบบ passive diffusion ซึ่งไวต่ออุณหภูมิ เมื่อผิวร้อนขึ้น (มีไข้ ใช้ heating pad, ผ้าห่มไฟฟ้า, อาบน้ำร้อน, ซาวน่า, ตากแดดจัด) จะเกิดผลหลายอย่าง: ค่า diffusion coefficient ของยาในทั้งตำรับและใน stratum corneum เพิ่มขึ้น, ความไหลของไขมันใน SC เพิ่มขึ้นทำให้ permeability สูงขึ้น, และการไหลเวียนเลือดที่ผิว (cutaneous blood flow) เพิ่มขึ้นทำให้ยาถูกพาออกจากชั้นผิวไปสู่ระบบไหลเวียนเร็วขึ้น ข้อมูลระบุว่าที่อุณหภูมิผิว 40 °C ระดับยาในเลือดอาจเพิ่มได้ราวหนึ่งในสาม และรายงานการเสียชีวิตจากภาวะกดการหายใจในผู้ที่ใช้แผ่นยาร่วมกับแหล่งความร้อน ฉลากยาจึงเตือนให้หลีกเลี่ยงการให้ความร้อนบริเวณแผ่นยาและเฝ้าระวังผู้ป่วยที่มีไข้ ข้อแนะนำอื่นที่สำคัญ: ห้ามตัดแผ่นยา (โดยเฉพาะ reservoir system ซึ่งการตัดทำให้ยารั่วออกทั้งหมด เกิด dose dumping), แปะบนผิวที่ไม่มีขน สะอาด แห้ง ไม่มีแผล, เปลี่ยนตำแหน่งแปะทุกครั้ง และพับแผ่นที่ใช้แล้วให้ด้านกาวติดกันก่อนทิ้งเพราะยังมียาเหลืออยู่มาก",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ความร้อนทำให้การดูดซึมยาลดลง เพราะผิวหนังขับเหงื่อออกมาชะยาออก",
+          "is_correct": false,
+          "explanation": "ผิด — ความร้อนเพิ่มการดูดซึม ไม่ใช่ลด และเหงื่อไม่ได้ชะยาออกจนการดูดซึมลดลงอย่างมีนัยสำคัญ (อาจทำให้แผ่นหลุดได้บ้าง)"
+        },
+        {
+          "label": "B",
+          "text": "ความร้อนเพิ่มการไหลเวียนเลือดที่ผิว เพิ่ม diffusivity และ permeability ของยา ทำให้อัตราการดูดซึม fentanyl เพิ่มขึ้น เสี่ยงต่อการได้รับยาเกินขนาด (เช่น กดการหายใจ) ควรหลีกเลี่ยงแหล่งความร้อนและเฝ้าระวังอาการ",
+          "is_correct": true,
+          "explanation": "ถูกต้อง — ความร้อนเพิ่มการดูดซึม เสี่ยงยาเกินขนาด ต้องหลีกเลี่ยงและเฝ้าระวัง"
+        },
+        {
+          "label": "C",
+          "text": "ไม่มีผลใด ๆ เพราะอัตราการปลดปล่อยยาถูกควบคุมโดย patch ทั้งหมด",
+          "is_correct": false,
+          "explanation": "ผิด — แม้ระบบ membrane-controlled ก็ไม่ได้ควบคุมอัตราทั้งหมด ผิวหนังยังมีส่วนต่อการควบคุมอัตรา และความร้อนยังเพิ่มการปลดปล่อยจากตัวแผ่นด้วย"
+        },
+        {
+          "label": "D",
+          "text": "ความร้อนทำให้ fentanyl ในแผ่นสลายตัว ผู้ป่วยจะได้ยาน้อยลงจนปวดมากขึ้น",
+          "is_correct": false,
+          "explanation": "ผิด — อุณหภูมิในช่วงนี้ไม่ทำให้ fentanyl สลายตัว ผลที่สำคัญคือการได้รับยาเพิ่มขึ้น"
+        },
+        {
+          "label": "E",
+          "text": "ความร้อนเพิ่มเพียงความเหนียวของกาว จึงไม่ต้องให้คำแนะนำเพิ่มเติม",
+          "is_correct": false,
+          "explanation": "ผิด — ความร้อนมีผลต่อการดูดซึมยาอย่างมีนัยสำคัญทางคลินิก ต้องให้คำแนะนำ"
+        }
+      ],
+      "key_takeaway": "Transdermal patch: หลีกเลี่ยงความร้อน (ไข้, heating pad, ซาวน่า) → ↑absorption; ห้ามตัด reservoir patch → dose dumping"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "Transdermal patch ชนิด reservoir (membrane-controlled) ประกอบด้วยชั้นต่าง ๆ ได้แก่ backing layer, drug reservoir, rate-controlling membrane, adhesive layer และ release liner ชั้นใดทำหน้าที่ควบคุมอัตราการปลดปล่อยยาจากแผ่นให้คงที่ (zero-order)",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Backing layer"
+      },
+      {
+        "label": "B",
+        "text": "Release liner"
+      },
+      {
+        "label": "C",
+        "text": "Adhesive layer"
+      },
+      {
+        "label": "D",
+        "text": "Drug reservoir"
+      },
+      {
+        "label": "E",
+        "text": "Rate-controlling membrane"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "ใน reservoir system ยาอยู่ใน reservoir และต้องแพร่ผ่าน rate-controlling membrane (เช่น ethylene-vinyl acetate copolymer หรือ microporous polypropylene) ซึ่งกำหนดอัตราการปลดปล่อยคงที่",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. Rate-controlling membrane — rate-controlling membrane (เช่น EVA) ควบคุมอัตราการปลดปล่อยยาใน reservoir patch",
+      "reason": "Transdermal drug delivery system แบ่งเป็น 3 แบบหลัก: (1) reservoir (membrane-controlled) — ยาอยู่ใน reservoir ที่เป็นของเหลวหรือเจล ปิดด้วย rate-controlling membrane เช่น ethylene-vinyl acetate (EVA) copolymer หรือ microporous polypropylene ซึ่งทำให้ปลดปล่อยยาเกือบคงที่ (zero-order) ตัวอย่างคือ scopolamine patch และ fentanyl patch รุ่นเดิม ข้อเสียคือหากแผ่นฉีกขาดหรือถูกตัด ยาจะรั่วออกทั้งหมด (dose dumping); (2) matrix — ยากระจายอยู่ในเมทริกซ์พอลิเมอร์ อัตราการปลดปล่อยลดลงตามเวลา (มักเป็นไปตาม √t) และผิวหนังมีบทบาทควบคุมอัตรามากขึ้น; (3) drug-in-adhesive — ยาผสมอยู่ในชั้นกาวโดยตรง (single หรือ multi-layer) แผ่นบางและยืดหยุ่น เป็นรูปแบบที่ใช้มากในปัจจุบัน เช่น fentanyl matrix patch และ nicotine บางผลิตภัณฑ์ หน้าที่ของชั้นอื่น: backing layer เป็นฟิล์มที่ไม่ให้ยาซึมผ่าน (impermeable/occlusive) ปกป้องแผ่นจากภายนอกและป้องกันยาสูญหาย; adhesive layer (เช่น silicone, polyisobutylene, acrylate) ยึดแผ่นกับผิวและในบางผลิตภัณฑ์มี loading/priming dose; release liner ปกป้องชั้นกาวระหว่างเก็บรักษาและต้องลอกออกก่อนแปะ",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Backing layer",
+          "is_correct": false,
+          "explanation": "ผิด — backing layer เป็นชั้นนอกสุดที่ไม่ให้ยาซึมผ่าน ป้องกันยาสูญหายและปกป้องแผ่น ไม่ได้ควบคุมอัตราการปลดปล่อย"
+        },
+        {
+          "label": "B",
+          "text": "Release liner",
+          "is_correct": false,
+          "explanation": "ผิด — release liner ปกป้องชั้นกาวระหว่างเก็บและลอกทิ้งก่อนแปะ จึงไม่มีบทบาทขณะใช้งาน"
+        },
+        {
+          "label": "C",
+          "text": "Adhesive layer",
+          "is_correct": false,
+          "explanation": "ผิด — adhesive layer ทำหน้าที่ยึดแผ่นกับผิว (อาจมี priming dose) แต่ใน reservoir system ไม่ใช่ชั้นควบคุมอัตราหลัก"
+        },
+        {
+          "label": "D",
+          "text": "Drug reservoir",
+          "is_correct": false,
+          "explanation": "ผิด — drug reservoir เป็นแหล่งเก็บยาที่รักษาความเข้มข้นให้คงที่ (มักอิ่มตัว) แต่ไม่ได้กำหนดอัตรา"
+        },
+        {
+          "label": "E",
+          "text": "Rate-controlling membrane",
+          "is_correct": true,
+          "explanation": "ถูกต้อง — rate-controlling membrane (เช่น EVA) กำหนดอัตราการปลดปล่อยยาให้คงที่"
+        }
+      ],
+      "key_takeaway": "Reservoir = membrane ควบคุมอัตรา (ห้ามตัด) | Matrix = √t | Drug-in-adhesive = ยาในกาว; ชั้นนอก→ใน: backing → reservoir → membrane → adhesive → liner"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "บริษัทยาต้องการพัฒนายาในรูป passive transdermal patch สำหรับใช้วันละ 1 แผ่น ยาที่มีคุณสมบัติข้อใดเหมาะสมที่สุด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ขนาดยาที่ต้องการ 5 mg/วัน, MW 330 Da, log P 2.3, จุดหลอมเหลว 150 °C และไม่ระคายเคืองผิว"
+      },
+      {
+        "label": "B",
+        "text": "ขนาดยาที่ต้องการ 500 mg/วัน, MW 300 Da, log P 2.0"
+      },
+      {
+        "label": "C",
+        "text": "ขนาดยาที่ต้องการ 2 mg/วัน, MW 1,450 Da (peptide), log P −1.0"
+      },
+      {
+        "label": "D",
+        "text": "ขนาดยาที่ต้องการ 10 mg/วัน, MW 280 Da, log P 6.5"
+      },
+      {
+        "label": "E",
+        "text": "ขนาดยาที่ต้องการ 5 mg/วัน, MW 250 Da, log P −2.0 และแตกตัวเป็นไอออนเกือบทั้งหมดที่ pH ผิว"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "ยาที่เหมาะกับ passive transdermal ควรมีขนาดยาต่ำ (≤ ~10–20 mg/วัน), MW < 500 Da, log P ~1–3, จุดหลอมเหลวไม่สูง (< ~200 °C) และไม่ระคายเคือง",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. ขนาดยาที่ต้องการ 5 mg/วัน, MW 330 Da, log P 2.3, จุดหลอมเหลว 150 °C และไม่ระคายเคืองผิว — ยาที่เหมาะสม: low dose, MW < 500 Da, log P 1–3, mp ต่ำ, ไม่ระคายเคือง — ตรงกับข้อ A ทุกข้อ",
+      "reason": "Stratum corneum เป็น barrier ที่จำกัดการซึมผ่านอย่างมาก ทำให้ flux ของยาส่วนใหญ่ต่ำ (ระดับ µg/cm²/h) และพื้นที่แปะที่ยอมรับได้จำกัด (โดยทั่วไปไม่เกินประมาณ 40–50 cm²) ยาที่เหมาะกับ passive transdermal delivery จึงต้องมีคุณสมบัติดังนี้: (1) potent ขนาดยาต่อวันต่ำ (ส่วนใหญ่ไม่เกินประมาณ 10–20 mg/วัน) เพราะส่งยาได้น้อย; (2) น้ำหนักโมเลกุลต่ำกว่า 500 Da (rule of 500) เพราะ diffusivity ลดลงเมื่อโมเลกุลใหญ่ขึ้น; (3) lipophilicity ปานกลาง log P ประมาณ 1–3 ยาต้องละลายในไขมันพอที่จะ partition เข้าสู่ SC แต่ต้องละลายน้ำพอที่จะ partition ออกสู่ viable epidermis ที่เป็นน้ำ ยาที่ lipophilic มากเกินไปจะค้างใน SC ส่วนยาที่ hydrophilic หรือแตกตัวเป็นไอออนจะเข้า SC ได้ยาก; (4) จุดหลอมเหลวต่ำ (ประมาณ < 200 °C) สัมพันธ์กับการละลายที่ดีในไขมัน; (5) ไม่ระคายเคืองหรือก่อภูมิแพ้ผิว และ (6) ควรมี half-life สั้นและไม่ถูก metabolism มากในผิว ตัวอย่างยาที่สำเร็จ ได้แก่ fentanyl, nicotine, nitroglycerin, scopolamine, estradiol, clonidine และ rivastigmine ส่วนยาที่ไม่เข้าเกณฑ์อาจต้องใช้เทคนิค active เช่น iontophoresis, microneedles",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ขนาดยาที่ต้องการ 5 mg/วัน, MW 330 Da, log P 2.3, จุดหลอมเหลว 150 °C และไม่ระคายเคืองผิว",
+          "is_correct": true,
+          "explanation": "ถูกต้อง — ขนาดยาต่ำ, MW < 500, log P อยู่ในช่วง 1–3, mp < 200 °C และไม่ระคายเคือง เข้าเกณฑ์ทุกข้อ"
+        },
+        {
+          "label": "B",
+          "text": "ขนาดยาที่ต้องการ 500 mg/วัน, MW 300 Da, log P 2.0",
+          "is_correct": false,
+          "explanation": "ผิด — แม้ MW และ log P เหมาะสม แต่ขนาดยา 500 mg/วัน สูงเกินกว่าที่ผิวหนังจะส่งได้ด้วยพื้นที่แปะที่ยอมรับได้"
+        },
+        {
+          "label": "C",
+          "text": "ขนาดยาที่ต้องการ 2 mg/วัน, MW 1,450 Da (peptide), log P −1.0",
+          "is_correct": false,
+          "explanation": "ผิด — peptide MW 1,450 Da เกิน 500 Da และ hydrophilic (log P −1) จึงซึมผ่าน SC ได้น้อยมาก"
+        },
+        {
+          "label": "D",
+          "text": "ขนาดยาที่ต้องการ 10 mg/วัน, MW 280 Da, log P 6.5",
+          "is_correct": false,
+          "explanation": "ผิด — log P 6.5 lipophilic มากเกินไป ยาจะสะสมใน SC และ partition ออกสู่ viable epidermis ที่เป็นน้ำได้ไม่ดี"
+        },
+        {
+          "label": "E",
+          "text": "ขนาดยาที่ต้องการ 5 mg/วัน, MW 250 Da, log P −2.0 และแตกตัวเป็นไอออนเกือบทั้งหมดที่ pH ผิว",
+          "is_correct": false,
+          "explanation": "ผิด — log P −2 และแตกตัวเป็นไอออน hydrophilic เกินไป partition เข้าสู่ SC ที่เป็นไขมันได้น้อย"
+        }
+      ],
+      "key_takeaway": "Transdermal candidate: dose ≤ ~10–20 mg/day | MW < 500 Da | log P 1–3 | mp < 200 °C | non-irritant"
+    },
+    "difficulty": "hard"
+  }
+]
