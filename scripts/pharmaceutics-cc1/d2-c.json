@@ -1,0 +1,1991 @@
+[
+  {
+    "scenario": "เภสัชกรต้องการเตรียมยาฉีดสำหรับทดสอบภูมิแพ้ทางผิวหนัง (skin test) ซึ่งฉีดเข้าชั้นหนังแท้ ข้อใดคือวิถีการให้ยาที่มีปริมาตรสูงสุดต่อครั้งน้อยที่สุด (ประมาณ 0.1 mL)",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Intravenous (IV) bolus"
+      },
+      {
+        "label": "B",
+        "text": "Subcutaneous (SC)"
+      },
+      {
+        "label": "C",
+        "text": "Intradermal (ID)"
+      },
+      {
+        "label": "D",
+        "text": "Intramuscular (IM) บริเวณ gluteal"
+      },
+      {
+        "label": "E",
+        "text": "Intramuscular (IM) บริเวณ deltoid"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Intradermal ฉีดเข้าชั้น dermis ซึ่งมีช่องว่างน้อยมาก จึงจำกัดปริมาตรประมาณ 0.1 mL (ไม่เกิน ~0.2 mL) ใช้ใน tuberculin test และ allergy skin test",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. Intradermal (ID) — intradermal รับปริมาตรได้เพียงราว 0.1 mL จึงน้อยที่สุดในบรรดาวิถีที่ให้มา",
+      "reason": "ปริมาตรสูงสุดที่ฉีดได้ขึ้นกับขนาดของเนื้อเยื่อที่รองรับยาและความเจ็บปวด ชั้น dermis เป็นชั้นบางและแน่น จึงรับยาได้ราว 0.1 mL (ไม่เกิน ~0.2 mL) ซึ่งเกิดเป็นตุ่มนูน (wheal/bleb) เห็นได้ชัด เหมาะกับการทดสอบ Mantoux (PPD), allergen skin test และวัคซีนบางชนิด Subcutaneous ฉีดเข้าชั้นไขมันใต้ผิวหนัง ปกติไม่เกินประมาณ 1–2 mL (เช่น insulin, heparin) Intramuscular รับได้มากขึ้น: deltoid ไม่เกินประมาณ 2 mL ส่วน gluteal/vastus lateralis ของผู้ใหญ่ได้ถึงประมาณ 5 mL Intravenous ไม่มีข้อจำกัดด้านปริมาตรจากเนื้อเยื่อ ตั้งแต่ bolus ไม่กี่ mL จนถึง infusion หลายลิตร (LVP) เพราะยาเข้าสู่กระแสเลือดโดยตรง ข้อจำกัดของ IV จึงเป็นเรื่องอัตราการให้ ภาวะน้ำเกิน และ tonicity/อนุภาค แทนปริมาตร",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Intravenous (IV) bolus",
+          "is_correct": false,
+          "explanation": "IV bolus ฉีดเข้าหลอดเลือดดำโดยตรง ทำได้ตั้งแต่ไม่กี่ mL ถึงหลายสิบ mL จึงไม่ใช่วิถีที่ปริมาตรน้อยที่สุด"
+        },
+        {
+          "label": "B",
+          "text": "Subcutaneous (SC)",
+          "is_correct": false,
+          "explanation": "SC รับได้ประมาณ 1–2 mL มากกว่า intradermal ราว 10–20 เท่า ใช้กับ insulin และ enoxaparin"
+        },
+        {
+          "label": "C",
+          "text": "Intradermal (ID)",
+          "is_correct": true,
+          "explanation": "ถูกต้อง ชั้น dermis รับได้ราว 0.1 mL ใช้ทำ skin test และ tuberculin test"
+        },
+        {
+          "label": "D",
+          "text": "Intramuscular (IM) บริเวณ gluteal",
+          "is_correct": false,
+          "explanation": "IM gluteal ในผู้ใหญ่รับได้ถึงประมาณ 5 mL เป็นตำแหน่ง IM ที่รับปริมาตรมากที่สุด"
+        },
+        {
+          "label": "E",
+          "text": "Intramuscular (IM) บริเวณ deltoid",
+          "is_correct": false,
+          "explanation": "IM deltoid รับได้ประมาณ 1–2 mL (ไม่เกิน 2 mL) ใช้ฉีดวัคซีนส่วนใหญ่ ยังมากกว่า ID"
+        }
+      ],
+      "key_takeaway": "ปริมาตรสูงสุดโดยประมาณ: ID 0.1 mL < SC 1–2 mL < IM deltoid 2 mL < IM gluteal 5 mL < IV ไม่จำกัด (bolus ถึง LVP)"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "ยาฉีด Testosterone enanthate 250 mg/mL ใช้ sesame oil เป็น vehicle และมี benzyl benzoate เป็น cosolvent ยาเตรียมนี้ให้ได้ทางวิถีใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Intramuscular (IM) แบบลึกเท่านั้น"
+      },
+      {
+        "label": "B",
+        "text": "Intravenous infusion หลังเจือจางด้วย NSS"
+      },
+      {
+        "label": "C",
+        "text": "Intravenous bolus อย่างช้า ๆ"
+      },
+      {
+        "label": "D",
+        "text": "Intrathecal"
+      },
+      {
+        "label": "E",
+        "text": "Intra-arterial"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Vehicle ที่เป็นน้ำมัน (fixed oil) ไม่ผสมกับเลือด หากเข้าหลอดเลือดจะเกิด oil embolism จึงให้ได้เฉพาะ IM (และบางผลิตภัณฑ์ SC) เพื่อให้เกิด depot ปลดปล่อยยาช้า",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. Intramuscular (IM) แบบลึกเท่านั้น — oily injection ให้ได้เฉพาะ IM แบบลึกเพื่อเป็น depot ห้ามให้เข้าหลอดเลือด",
+      "reason": "Non-aqueous vehicle เช่น sesame oil, cottonseed oil, peanut oil หรือ ethyl oleate ใช้กับยาที่ละลายในไขมันได้ดีอย่าง steroid ester (testosterone enanthate/cypionate, estradiol valerate) และยา antipsychotic ชนิด decanoate น้ำมันไม่ผสมกับน้ำในเลือด เมื่อฉีดเข้ากล้ามเนื้อจะเป็น depot ที่ยาค่อย ๆ partition ออกสู่ของเหลวในเนื้อเยื่อ ฤทธิ์จึงยาวเป็นสัปดาห์ แต่ถ้าเข้าหลอดเลือดจะเกิด oil embolism ที่ปอด (เช่น POME) ซึ่งเป็นอันตราย จึงห้ามให้ IV, intra-arterial หรือเข้าช่องไขสันหลังเด็ดขาด ตำรับมักใช้ benzyl benzoate เป็น cosolvent และ benzyl alcohol เป็น preservative น้ำมันที่ใช้ต้องได้มาตรฐานตามเภสัชตำรับ (เช่น iodine value และ saponification value) และต้องทำให้ปราศจากเชื้อด้วย dry heat หรือ filtration เพราะไอน้ำซึมผ่านน้ำมันไม่ได้ ก่อนฉีดควร aspirate เพื่อตรวจว่าเข็มไม่อยู่ในหลอดเลือด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Intramuscular (IM) แบบลึกเท่านั้น",
+          "is_correct": true,
+          "explanation": "ถูกต้อง oily vehicle ใช้ฉีด IM ลึก (เช่น gluteal) เพื่อสร้าง depot ปลดปล่อยยาช้า"
+        },
+        {
+          "label": "B",
+          "text": "Intravenous infusion หลังเจือจางด้วย NSS",
+          "is_correct": false,
+          "explanation": "เจือจางน้ำมันด้วย NSS ไม่ได้ เพราะน้ำมันกับน้ำแยกชั้นกัน หยดน้ำมันจะไปอุดหลอดเลือด (oil embolism)"
+        },
+        {
+          "label": "C",
+          "text": "Intravenous bolus อย่างช้า ๆ",
+          "is_correct": false,
+          "explanation": "การฉีด IV ช้า ๆ ก็ยังทำให้เกิด oil embolism ยาฉีด IV ต้องเป็นสารละลายในน้ำหรือ emulsion ที่ขนาดหยดเล็กพอ (เช่น lipid emulsion, ขนาดหยดเฉลี่ยน้อยกว่า 0.5 µm)"
+        },
+        {
+          "label": "D",
+          "text": "Intrathecal",
+          "is_correct": false,
+          "explanation": "Intrathecal ต้องใช้สารละลายในน้ำที่ไม่มี preservative และ isotonic ห้ามใช้น้ำมัน"
+        },
+        {
+          "label": "E",
+          "text": "Intra-arterial",
+          "is_correct": false,
+          "explanation": "Intra-arterial ห้ามให้ oily vehicle เพราะอาจเกิดการอุดตันหลอดเลือดแดงจนเนื้อเยื่อขาดเลือด"
+        }
+      ],
+      "key_takeaway": "Oil vehicle = IM (บางกรณี SC) เท่านั้น ห้าม IV/IA/intrathecal; น้ำมันทำให้ปราศจากเชื้อด้วย dry heat ไม่ใช่ autoclave"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "Bacteriostatic Water for Injection ชนิดหนึ่งมีส่วนประกอบดังนี้: Water for Injection และ benzyl alcohol 0.9% w/v หากนำไปใช้ละลายยาฉีดให้ทารกแรกเกิดซ้ำ ๆ อาจทำให้เกิด \"gasping syndrome\" (metabolic acidosis, หายใจเฮือก, กดระบบประสาท) ส่วนประกอบใดเป็นสาเหตุ",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Sodium chloride ที่อาจปนมา"
+      },
+      {
+        "label": "B",
+        "text": "pH ของน้ำที่ต่ำ"
+      },
+      {
+        "label": "C",
+        "text": "Pyrogen ที่ตกค้างใน WFI"
+      },
+      {
+        "label": "D",
+        "text": "Water for Injection ที่ไม่ isotonic"
+      },
+      {
+        "label": "E",
+        "text": "Benzyl alcohol"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "ทารกแรกเกิดกำจัด benzoic acid (metabolite ของ benzyl alcohol) ได้ไม่ดีเพราะ glycine conjugation ยังพัฒนาไม่เต็มที่ benzoic acid จึงสะสมจนเกิด metabolic acidosis และ gasping syndrome",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. Benzyl alcohol — benzyl alcohol ซึ่งเป็น preservative ทำให้เกิด gasping syndrome ในทารกแรกเกิด",
+      "reason": "Benzyl alcohol ใช้เป็น antimicrobial preservative ในยาฉีดแบบ multiple-dose และใน bacteriostatic water/saline ที่ความเข้มข้นประมาณ 0.9–2% และยังมีฤทธิ์ชาเฉพาะที่อ่อน ๆ ในร่างกายถูกออกซิไดซ์เป็น benzoic acid แล้ว conjugate กับ glycine เป็น hippuric acid เพื่อขับทางปัสสาวะ ทารกแรกเกิดโดยเฉพาะทารกคลอดก่อนกำหนดมีเอนไซม์ conjugation ไม่พอ benzoic acid จึงสะสมเกิด metabolic acidosis หายใจเฮือก (gasping) ความดันต่ำ ชัก และอาจเสียชีวิต จึงเกิดคำแนะนำให้ใช้ WFI หรือ NSS ที่ไม่มี preservative สำหรับทารกแรกเกิด และหลีกเลี่ยงยาที่มี benzyl alcohol เมื่อทำได้ ประเด็นนี้ออกสอบบ่อยคู่กับ propylene glycol (พิษต่อทารกเช่นกันแต่เป็นคนละกลุ่มอาการ) และ thimerosal (ปรอท)",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Sodium chloride ที่อาจปนมา",
+          "is_correct": false,
+          "explanation": "Bacteriostatic water ไม่มี NaCl เป็นส่วนผสม และ NaCl ไม่ทำให้เกิด gasping syndrome"
+        },
+        {
+          "label": "B",
+          "text": "pH ของน้ำที่ต่ำ",
+          "is_correct": false,
+          "explanation": "WFI ไม่ได้มี pH ต่ำผิดปกติ และ gasping syndrome ไม่ได้เกิดจาก pH ของตัวทำละลาย"
+        },
+        {
+          "label": "C",
+          "text": "Pyrogen ที่ตกค้างใน WFI",
+          "is_correct": false,
+          "explanation": "WFI ต้องผ่านเกณฑ์ bacterial endotoxin (ไม่เกิน 0.25 EU/mL) pyrogen ทำให้มีไข้ ไม่ใช่ gasping syndrome"
+        },
+        {
+          "label": "D",
+          "text": "Water for Injection ที่ไม่ isotonic",
+          "is_correct": false,
+          "explanation": "WFI ที่ไม่มีตัวถูกละลายเป็น hypotonic และเสี่ยงต่อ hemolysis เมื่อฉีดเข้า IV ปริมาณมาก แต่ไม่เกี่ยวกับ gasping syndrome"
+        },
+        {
+          "label": "E",
+          "text": "Benzyl alcohol",
+          "is_correct": true,
+          "explanation": "ถูกต้อง benzyl alcohol ถูกเปลี่ยนเป็น benzoic acid ที่ทารกกำจัดไม่ทัน จึงเกิด metabolic acidosis"
+        }
+      ],
+      "key_takeaway": "Benzyl alcohol → gasping syndrome ในทารกแรกเกิด; ทารกใช้ WFI/NSS ที่ไม่มี preservative"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "ตำรับยาฉีด Epinephrine 1 mg/mL ประกอบด้วย: Epinephrine (as HCl) 1 mg, Sodium metabisulfite 1 mg, Disodium edetate 0.1 mg, Sodium chloride q.s. isotonic, Hydrochloric acid q.s. pH 3.0, Water for Injection q.s. 1 mL บทบาทของ Disodium edetate ในตำรับนี้คือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Antioxidant ชนิด reducing agent ที่ถูกออกซิไดซ์แทนตัวยา"
+      },
+      {
+        "label": "B",
+        "text": "Chelating agent จับ trace metal ions ที่เร่งปฏิกิริยา oxidation"
+      },
+      {
+        "label": "C",
+        "text": "Tonicity-adjusting agent"
+      },
+      {
+        "label": "D",
+        "text": "Buffer รักษา pH ให้คงที่ที่ 3.0"
+      },
+      {
+        "label": "E",
+        "text": "Antimicrobial preservative สำหรับ multiple-dose"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "EDTA จับไอออนโลหะหนัก (Cu2+, Fe3+) ที่เป็นตัวเร่ง oxidation ของ catechol จึงทำงานเสริม (synergist) กับ antioxidant คือ sodium metabisulfite",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. Chelating agent จับ trace metal ions ที่เร่งปฏิกิริยา oxidation — disodium edetate เป็น chelating agent ที่จับไอออนโลหะซึ่งเร่ง oxidation",
+      "reason": "Epinephrine มีโครงสร้าง catechol ซึ่งถูกออกซิไดซ์ได้ง่ายเป็น adrenochrome (สีชมพูถึงน้ำตาล) ปฏิกิริยานี้ถูกเร่งโดยออกซิเจน แสง pH สูง และไอออนโลหะหนักเช่น Cu2+ และ Fe3+ ตำรับจึงใช้หลายวิธีร่วมกัน (1) sodium metabisulfite เป็น antioxidant ชนิด reducing agent/oxygen scavenger ที่ถูกออกซิไดซ์แทนยา เหมาะกับ pH กรด (2) disodium edetate (EDTA) 0.01–0.1% เป็น chelating agent จับไอออนโลหะให้เป็น complex จนเร่งปฏิกิริยาไม่ได้ จึงช่วยเสริมฤทธิ์ antioxidant (synergist) (3) ปรับ pH เป็นกรด (ประมาณ 2.5–5) ด้วย HCl เพราะ catechol เสถียรในกรด (4) ไล่อากาศด้วย nitrogen ระหว่างบรรจุ และใช้ภาชนะกันแสง NaCl ทำหน้าที่ปรับ tonicity ส่วน HCl ปรับ pH ตำรับนี้ไม่มี buffer system ชัดเจนและไม่มี preservative เพราะเป็นหลอดใช้ครั้งเดียว",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Antioxidant ชนิด reducing agent ที่ถูกออกซิไดซ์แทนตัวยา",
+          "is_correct": false,
+          "explanation": "หน้าที่นี้เป็นของ sodium metabisulfite ซึ่งเป็น reducing agent ที่ถูกออกซิไดซ์แทน epinephrine ส่วน EDTA ไม่ได้ถูกออกซิไดซ์เอง"
+        },
+        {
+          "label": "B",
+          "text": "Chelating agent จับ trace metal ions ที่เร่งปฏิกิริยา oxidation",
+          "is_correct": true,
+          "explanation": "ถูกต้อง EDTA จับ Cu2+/Fe3+ ที่เร่ง oxidation จึงเป็น synergist ของ antioxidant"
+        },
+        {
+          "label": "C",
+          "text": "Tonicity-adjusting agent",
+          "is_correct": false,
+          "explanation": "Tonicity ปรับด้วย sodium chloride ซึ่งระบุไว้ในตำรับว่า q.s. isotonic EDTA 0.01% มีผลต่อ tonicity น้อยมาก"
+        },
+        {
+          "label": "D",
+          "text": "Buffer รักษา pH ให้คงที่ที่ 3.0",
+          "is_correct": false,
+          "explanation": "pH ปรับด้วย HCl EDTA ไม่ได้ทำหน้าที่ buffer ในตำรับนี้"
+        },
+        {
+          "label": "E",
+          "text": "Antimicrobial preservative สำหรับ multiple-dose",
+          "is_correct": false,
+          "explanation": "ตำรับเป็น single-dose และไม่มี preservative EDTA เพียงตัวเดียวมีฤทธิ์ต้านจุลชีพต่ำ แม้จะช่วยเสริมฤทธิ์ benzalkonium chloride ได้ในยาหยอดตา"
+        }
+      ],
+      "key_takeaway": "Oxidation-prone injection: antioxidant (metabisulfite สำหรับ pH กรด) + chelator (EDTA) + pH ที่เหมาะสม + N2 purge + กันแสง"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "แพทย์สั่ง Phenytoin sodium injection (50 mg/mL; มี propylene glycol 40% และ ethanol 10%; pH ประมาณ 12) ขนาด 1,000 mg IV infusion ข้อใดคือวิธีเตรียมและให้ยาที่ถูกต้องที่สุด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "เจือจางใน D5W 250 mL เพราะ dextrose ช่วยให้ยาเสถียร"
+      },
+      {
+        "label": "B",
+        "text": "เจือจางใน Lactated Ringer's แล้วผสมรวมกับ KCl ในถุงเดียวกัน"
+      },
+      {
+        "label": "C",
+        "text": "ผสมลงในถุง Parenteral Nutrition ที่ผู้ป่วยได้รับอยู่"
+      },
+      {
+        "label": "D",
+        "text": "เจือจางใน 0.9% NaCl ใช้ in-line filter 0.22 µm และให้ยาหมดโดยเร็วหลังผสม"
+      },
+      {
+        "label": "E",
+        "text": "เจือจางใน D5W แล้วแช่เย็นไว้ล่วงหน้า 24 ชั่วโมง"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "Phenytoin ละลายได้ที่ pH สูงและใน cosolvent เท่านั้น เมื่อเจือจางใน dextrose (pH ประมาณ 3.5–6.5) pH ลดลงจนยาตกตะกอน จึงต้องเจือจางใน NSS ใช้ in-line filter และให้หมดภายในเวลาสั้น",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. เจือจางใน 0.9% NaCl ใช้ in-line filter 0.22 µm และให้ยาหมดโดยเร็วหลังผสม — phenytoin ต้องเจือจางใน NSS ใช้ in-line filter และให้หมดเร็วเพื่อป้องกันการตกตะกอน",
+      "reason": "Phenytoin เป็นกรดอ่อน (pKa ประมาณ 8.3) ละลายน้ำได้น้อยมากในรูป free acid ยาฉีดจึงเป็นเกลือโซเดียมที่ pH ประมาณ 12 และใช้ cosolvent คือ propylene glycol 40% กับ ethanol 10% เมื่อเจือจางด้วยสารละลาย IV ทั้ง pH และสัดส่วน cosolvent ลดลง ยาจึงตกผลึกได้ (pH-dependent และ dilution-induced precipitation) D5W มี pH ค่อนข้างเป็นกรด (ประมาณ 3.5–6.5) จึงเกิดตะกอนเร็วกว่า ผู้ผลิตแนะนำให้เจือจางใน 0.9% NaCl ที่ความเข้มข้นสุดท้ายตามที่ฉลากกำหนด ใช้ in-line filter 0.22 µm เพื่อดักผลึก และให้ยาให้หมดภายในเวลาสั้น (ประมาณ 1–4 ชั่วโมงตามแหล่งอ้างอิง) อัตราไม่เกิน 50 mg/min ในผู้ใหญ่เพื่อลดความเสี่ยง hypotension และ arrhythmia ซึ่งส่วนหนึ่งเกิดจาก propylene glycol ห้ามผสมกับยาอื่นในถุงเดียวกัน ตัวอย่างนี้แสดงหลัก IV admixture ว่าความเข้ากันได้ขึ้นกับ pH, cosolvent, ความเข้มข้น และเวลา",
+      "choices": [
+        {
+          "label": "A",
+          "text": "เจือจางใน D5W 250 mL เพราะ dextrose ช่วยให้ยาเสถียร",
+          "is_correct": false,
+          "explanation": "ผิด dextrose ทำให้ pH ลดลง phenytoin จะตกตะกอน และ dextrose ไม่ได้ช่วยให้ยาเสถียร"
+        },
+        {
+          "label": "B",
+          "text": "เจือจางใน Lactated Ringer's แล้วผสมรวมกับ KCl ในถุงเดียวกัน",
+          "is_correct": false,
+          "explanation": "ผิด ไม่ควรผสม phenytoin กับยาหรืออิเล็กโทรไลต์อื่นในถุงเดียวกัน และ Lactated Ringer's ไม่ใช่ diluent ที่แนะนำ"
+        },
+        {
+          "label": "C",
+          "text": "ผสมลงในถุง Parenteral Nutrition ที่ผู้ป่วยได้รับอยู่",
+          "is_correct": false,
+          "explanation": "ผิด PN มีส่วนประกอบมาก (amino acids, dextrose, electrolytes) และมี pH ต่ำกว่า phenytoin จะตกตะกอนและอาจทำให้ emulsion แตก ห้ามผสม"
+        },
+        {
+          "label": "D",
+          "text": "เจือจางใน 0.9% NaCl ใช้ in-line filter 0.22 µm และให้ยาหมดโดยเร็วหลังผสม",
+          "is_correct": true,
+          "explanation": "ถูกต้อง NSS, in-line filter 0.22 µm และให้ทันทีหลังผสม เป็นวิธีมาตรฐาน"
+        },
+        {
+          "label": "E",
+          "text": "เจือจางใน D5W แล้วแช่เย็นไว้ล่วงหน้า 24 ชั่วโมง",
+          "is_correct": false,
+          "explanation": "ผิด D5W ทำให้ตกตะกอน และการตั้งทิ้งไว้นานยิ่งเพิ่มโอกาสตกผลึก อุณหภูมิต่ำยังลดการละลายลงอีก"
+        }
+      ],
+      "key_takeaway": "Phenytoin IV: NSS only, ห้าม dextrose, ใช้ in-line filter, ให้ทันที, ไม่เกิน 50 mg/min; ยาที่มี cosolvent สูง (diazepam, phenytoin) ตกตะกอนได้เมื่อเจือจาง"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ตำรับยาฉีด Diazepam 5 mg/mL ประกอบด้วย: Diazepam 5 mg, Propylene glycol 0.4 mL, Ethanol 0.1 mL, Benzyl alcohol 15 mg, Sodium benzoate และ Benzoic acid 50 mg, Water for Injection q.s. 1 mL บทบาทหลักของ propylene glycol คือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Cosolvent เพิ่มการละลายของ diazepam ซึ่งละลายน้ำได้น้อย"
+      },
+      {
+        "label": "B",
+        "text": "Antimicrobial preservative"
+      },
+      {
+        "label": "C",
+        "text": "Buffer system ควบคุม pH"
+      },
+      {
+        "label": "D",
+        "text": "Antioxidant ป้องกันการสลายตัวของยา"
+      },
+      {
+        "label": "E",
+        "text": "Tonicity agent ปรับให้ isotonic"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Diazepam ละลายน้ำได้น้อยมาก จึงต้องใช้ water-miscible cosolvent คือ propylene glycol 40% ร่วมกับ ethanol 10% เพื่อลด polarity ของตัวทำละลาย",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. Cosolvent เพิ่มการละลายของ diazepam ซึ่งละลายน้ำได้น้อย — propylene glycol เป็น cosolvent ที่ช่วยละลาย diazepam",
+      "reason": "Cosolvency เพิ่มการละลายของยาที่ไม่ชอบน้ำด้วยการผสมตัวทำละลายที่ผสมกับน้ำได้ เช่น propylene glycol, ethanol, PEG 300/400 และ glycerin ลงในน้ำ ซึ่งลด dielectric constant/polarity ของระบบลง ตำรับนี้มีส่วนประกอบแต่ละตัวทำหน้าที่ต่างกัน: propylene glycol 40% และ ethanol 10% เป็น cosolvent, benzyl alcohol 1.5% เป็น preservative, sodium benzoate กับ benzoic acid เป็น buffer (ช่วงประมาณ pH 6.2–6.9) ข้อเสียของ cosolvent คือทำให้ปวดและหลอดเลือดดำอักเสบ (phlebitis) ณ ตำแหน่งฉีด, ยาตกตะกอนเมื่อเจือจางด้วยน้ำ (จึงต้องฉีด IV ช้า ๆ เข้าหลอดเลือดใหญ่ หรือเลี่ยงการเจือจาง) และพิษจาก propylene glycol เมื่อได้รับขนาดสูงหรือต่อเนื่อง ได้แก่ hyperosmolality, lactic acidosis และ hypotension ตำรับที่มี cosolvent สูงจะ hypertonic มาก แต่เป้าหมายของการใส่ PG คือการละลาย ไม่ได้ปรับ tonicity",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Cosolvent เพิ่มการละลายของ diazepam ซึ่งละลายน้ำได้น้อย",
+          "is_correct": true,
+          "explanation": "ถูกต้อง PG เป็น cosolvent หลักร่วมกับ ethanol ทำให้ diazepam 5 mg/mL ละลายได้"
+        },
+        {
+          "label": "B",
+          "text": "Antimicrobial preservative",
+          "is_correct": false,
+          "explanation": "Preservative ของตำรับคือ benzyl alcohol แม้ PG ความเข้มข้นสูงจะมีฤทธิ์ต้านจุลชีพบ้าง แต่ไม่ใช่บทบาทหลัก"
+        },
+        {
+          "label": "C",
+          "text": "Buffer system ควบคุม pH",
+          "is_correct": false,
+          "explanation": "Buffer คือ sodium benzoate/benzoic acid ส่วน PG ไม่มีสมบัติ buffer"
+        },
+        {
+          "label": "D",
+          "text": "Antioxidant ป้องกันการสลายตัวของยา",
+          "is_correct": false,
+          "explanation": "PG ไม่ใช่ antioxidant หากต้องการป้องกัน oxidation จะใช้ metabisulfite, ascorbic acid หรือ EDTA"
+        },
+        {
+          "label": "E",
+          "text": "Tonicity agent ปรับให้ isotonic",
+          "is_correct": false,
+          "explanation": "PG ทำให้ตำรับ hypertonic อย่างมาก ไม่ได้ใส่เพื่อปรับให้ isotonic tonicity agent ทั่วไปคือ NaCl หรือ dextrose"
+        }
+      ],
+      "key_takeaway": "Cosolvent ในยาฉีด: PG, ethanol, PEG 400, glycerin; ปัญหาคือปวด/phlebitis, ตกตะกอนเมื่อเจือจาง, พิษจาก PG"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "เกี่ยวกับ Bacterial Endotoxins Test (BET) ด้วย Limulus Amebocyte Lysate (LAL) ข้อใดถูกต้อง",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ตรวจได้ทั้ง endotoxin และ non-endotoxin pyrogen ทุกชนิด จึงแทน rabbit pyrogen test ได้ทุกกรณี"
+      },
+      {
+        "label": "B",
+        "text": "สาร (1→3)-β-D-glucan จากเชื้อราหรือ cellulose filter ไม่รบกวนผล LAL"
+      },
+      {
+        "label": "C",
+        "text": "อาศัย lipid A ของ lipopolysaccharide จากผนังเซลล์แบคทีเรีย Gram-negative กระตุ้น cascade ของเอนไซม์ใน lysate (เริ่มที่ factor C) จนเกิดลิ่มเจลหรือสัญญาณ turbidity/สี"
+      },
+      {
+        "label": "D",
+        "text": "Endotoxin ถูกทำลายหมดด้วย autoclave 121°C 15 นาที จึงไม่ต้องตรวจ BET ในผลิตภัณฑ์ที่ผ่าน terminal sterilization"
+      },
+      {
+        "label": "E",
+        "text": "Lysate ได้จากเม็ดเลือดของกระต่าย"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "LAL ทำจาก amebocyte ของแมงดาทะเล (Limulus polyphemus) โดย LPS (lipid A) ของ Gram-negative กระตุ้น factor C cascade จนได้ coagulin gel; วิธีที่ใช้คือ gel-clot, turbidimetric และ chromogenic",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. อาศัย lipid A ของ lipopolysaccharide จากผนังเซลล์แบคทีเรีย Gram-negative กระตุ้น cascade ของเอนไซม์ใน lysate (เริ่มที่ factor C) จนเกิดลิ่มเจลหรือสัญญาณ turbidity/สี — LAL ทำงานโดย lipid A ของ Gram-negative LPS กระตุ้น factor C cascade จนเกิดเจลหรือสัญญาณที่วัดได้",
+      "reason": "Pyrogen คือสารที่ทำให้เกิดไข้ ชนิดที่สำคัญที่สุดคือ endotoxin (lipopolysaccharide, LPS) จากผนังเซลล์แบคทีเรีย Gram-negative ส่วนที่ออกฤทธิ์คือ lipid A Endotoxin ทนความร้อนสูงมาก ผ่าน autoclave ได้ และมีขนาดเล็กพอจะผ่าน filter 0.22 µm ได้ การกำจัดจึงต้องใช้ dry heat 250°C อย่างน้อย 30 นาที, rinse ด้วย WFI, ultrafiltration/RO หรือ adsorption LAL ทำจาก amebocyte lysate ของแมงดาทะเล Limulus polyphemus (TAL ทำจาก Tachypleus) ซึ่ง LPS จะกระตุ้น factor C → factor B → proclotting enzyme → แปลง coagulogen เป็น coagulin ซึ่งเป็นเจล วิธีตาม USP <85> ได้แก่ (1) gel-clot แบบ limit test หรือ semi-quantitative (2) kinetic/endpoint turbidimetric (3) kinetic/endpoint chromogenic ที่วัด p-nitroaniline ข้อจำกัดคือตรวจได้เฉพาะ endotoxin ไม่ตรวจ pyrogen จาก Gram-positive, เชื้อรา หรือไวรัส (กรณีนี้ใช้ rabbit pyrogen test หรือ Monocyte Activation Test) และ β-glucan กระตุ้น factor G pathway ทำให้ผลบวกปลอม ป้องกันได้ด้วย glucan blocker หรือ recombinant factor C (rFC) นอกจากนี้ต้องทดสอบ inhibition/enhancement (positive product control) ทุกครั้ง",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ตรวจได้ทั้ง endotoxin และ non-endotoxin pyrogen ทุกชนิด จึงแทน rabbit pyrogen test ได้ทุกกรณี",
+          "is_correct": false,
+          "explanation": "ผิด LAL ตรวจได้เฉพาะ endotoxin ไม่ตรวจ non-endotoxin pyrogen กรณีนั้นต้องใช้ rabbit pyrogen test หรือ MAT"
+        },
+        {
+          "label": "B",
+          "text": "สาร (1→3)-β-D-glucan จากเชื้อราหรือ cellulose filter ไม่รบกวนผล LAL",
+          "is_correct": false,
+          "explanation": "ผิด β-glucan กระตุ้น factor G ทำให้ LAL ผลบวกปลอม ต้องใช้ glucan-blocking buffer หรือ rFC"
+        },
+        {
+          "label": "C",
+          "text": "อาศัย lipid A ของ lipopolysaccharide จากผนังเซลล์แบคทีเรีย Gram-negative กระตุ้น cascade ของเอนไซม์ใน lysate (เริ่มที่ factor C) จนเกิดลิ่มเจลหรือสัญญาณ turbidity/สี",
+          "is_correct": true,
+          "explanation": "ถูกต้อง lipid A ของ LPS กระตุ้น factor C cascade จนได้ coagulin gel หรือสัญญาณ turbidity/chromogenic"
+        },
+        {
+          "label": "D",
+          "text": "Endotoxin ถูกทำลายหมดด้วย autoclave 121°C 15 นาที จึงไม่ต้องตรวจ BET ในผลิตภัณฑ์ที่ผ่าน terminal sterilization",
+          "is_correct": false,
+          "explanation": "ผิด endotoxin ทนความร้อนชื้น 121°C ต้องใช้ dry heat ประมาณ 250°C ≥30 นาที จึงทำลายได้ ผลิตภัณฑ์ที่ผ่าน terminal sterilization ก็ยังต้องตรวจ BET"
+        },
+        {
+          "label": "E",
+          "text": "Lysate ได้จากเม็ดเลือดของกระต่าย",
+          "is_correct": false,
+          "explanation": "ผิด lysate ได้จากเลือด (amebocyte) ของแมงดาทะเล กระต่ายใช้ใน rabbit pyrogen test ซึ่งวัดอุณหภูมิร่างกายที่เพิ่มขึ้น"
+        }
+      ],
+      "key_takeaway": "LAL = horseshoe crab, ตรวจ endotoxin (lipid A) เท่านั้น; β-glucan → false positive (factor G); endotoxin ทน autoclave และผ่าน 0.22 µm ได้ → depyrogenate ด้วย dry heat 250°C ≥30 นาที"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ยาฉีด IV ชนิดหนึ่งมีความเข้มข้น 20 mg/mL ขนาดยาสูงสุดที่ผู้ป่วยได้รับใน 1 ชั่วโมงคือ 2 mg/kg กำหนด K = 5 EU/kg และ LAL reagent ที่ใช้มี labeled sensitivity (λ) = 0.125 EU/mL ค่า Maximum Valid Dilution (MVD) คือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "2.5"
+      },
+      {
+        "label": "B",
+        "text": "50"
+      },
+      {
+        "label": "C",
+        "text": "100"
+      },
+      {
+        "label": "D",
+        "text": "200"
+      },
+      {
+        "label": "E",
+        "text": "400"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "Endotoxin limit = K/M = 5/2 = 2.5 EU/mg → limit ต่อ mL = 2.5 × 20 = 50 EU/mL → MVD = 50/0.125 = 400",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. 400 — MVD = (endotoxin limit × ความเข้มข้น)/λ = (2.5 EU/mg × 20 mg/mL)/0.125 EU/mL = 400",
+      "reason": "ตาม USP <85> ค่า endotoxin limit (EL) ของยาฉีด = K/M โดย K คือ threshold pyrogenic dose (5 EU/kg สำหรับยาฉีดทั่วไปที่ไม่ใช่ intrathecal, 0.2 EU/kg สำหรับ intrathecal, ส่วน radiopharmaceutical ใช้ 175/V) และ M คือขนาดยาสูงสุดต่อ kg ที่ให้ภายใน 1 ชั่วโมง ในข้อนี้ EL = 5/2 = 2.5 EU/mg เมื่อคูณกับความเข้มข้น 20 mg/mL ได้ limit 50 EU/mL MVD คือจำนวนเท่าที่เจือจางตัวอย่างได้มากที่สุดโดยยังตรวจ endotoxin ที่ระดับ limit ได้ (MVD = EL × C/λ) = 50/0.125 = 400 เท่า การเจือจางช่วยลดสิ่งรบกวน (inhibition/enhancement) จากตัวยา แต่ห้ามเจือจางเกิน MVD เพราะจะตรวจไม่พบ endotoxin ที่ระดับ limit และให้ผลลบปลอม ค่า λ ของ gel-clot คือความเข้มข้นต่ำสุดที่ทำให้เกิดเจลแน่น ส่วนวิธี kinetic ใช้ค่าต่ำสุดของ standard curve แทน λ",
+      "choices": [
+        {
+          "label": "A",
+          "text": "2.5",
+          "is_correct": false,
+          "explanation": "2.5 คือ endotoxin limit ในหน่วย EU/mg (K/M) ยังไม่ได้คูณความเข้มข้นและหารด้วย λ"
+        },
+        {
+          "label": "B",
+          "text": "50",
+          "is_correct": false,
+          "explanation": "50 คือ endotoxin limit ในหน่วย EU/mL ยังไม่ได้หารด้วย λ = 0.125 EU/mL"
+        },
+        {
+          "label": "C",
+          "text": "100",
+          "is_correct": false,
+          "explanation": "100 ได้จากการคำนวณผิด เช่นหาร 50 EU/mL ด้วย λ = 0.5 EU/mL แทน 0.125 EU/mL"
+        },
+        {
+          "label": "D",
+          "text": "200",
+          "is_correct": false,
+          "explanation": "200 ได้จากการคำนวณผิด เช่นหารด้วย λ = 0.25 EU/mL แทน 0.125 EU/mL"
+        },
+        {
+          "label": "E",
+          "text": "400",
+          "is_correct": true,
+          "explanation": "ถูกต้อง MVD = (2.5 EU/mg × 20 mg/mL)/0.125 EU/mL = 400"
+        }
+      ],
+      "key_takeaway": "EL = K/M (K = 5 EU/kg ทั่วไป, 0.2 EU/kg intrathecal; M ต่อ kg ต่อชั่วโมง); MVD = EL × C/λ",
+      "calculation_steps": [
+        "ขั้นที่ 1: Endotoxin limit (EL) = K/M = 5 EU/kg ÷ 2 mg/kg = 2.5 EU/mg",
+        "ขั้นที่ 2: Limit ต่อ mL = 2.5 EU/mg × 20 mg/mL = 50 EU/mL",
+        "ขั้นที่ 3: MVD = (EL × C)/λ = 50 EU/mL ÷ 0.125 EU/mL = 400",
+        "ขั้นที่ 4: เจือจางตัวอย่างได้ไม่เกิน 1:400 เพื่อทำ BET"
+      ]
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "ผลการตรวจ Particulate matter ตาม USP <788> ด้วยวิธี Light obscuration ของ 0.9% NaCl injection ขนาด 1,000 mL (large-volume parenteral) พบอนุภาค ≥10 µm เฉลี่ย 18 อนุภาค/mL และ ≥25 µm เฉลี่ย 4 อนุภาค/mL ข้อใดสรุปถูกต้อง",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ผ่านทั้งสองขนาด"
+      },
+      {
+        "label": "B",
+        "text": "ไม่ผ่าน เพราะอนุภาค ≥25 µm เกินเกณฑ์ 3 อนุภาค/mL"
+      },
+      {
+        "label": "C",
+        "text": "ไม่ผ่าน เพราะอนุภาค ≥10 µm เกินเกณฑ์ 12 อนุภาค/mL"
+      },
+      {
+        "label": "D",
+        "text": "ต้องใช้เกณฑ์ต่อภาชนะ (≥10 µm ไม่เกิน 6,000 อนุภาค) จึงถือว่าผ่าน"
+      },
+      {
+        "label": "E",
+        "text": "ไม่ผ่านทั้งสองขนาด"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "เกณฑ์ light obscuration สำหรับ LVP (>100 mL): ≥10 µm ไม่เกิน 25/mL และ ≥25 µm ไม่เกิน 3/mL ผล 18/mL ผ่าน แต่ 4/mL ไม่ผ่าน",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. ไม่ผ่าน เพราะอนุภาค ≥25 µm เกินเกณฑ์ 3 อนุภาค/mL — ตัวอย่างไม่ผ่าน เพราะอนุภาค ≥25 µm (4/mL) เกินเกณฑ์ LVP คือ 3/mL",
+      "reason": "USP <788> ควบคุม subvisible particles ในยาฉีด วิธีที่ 1 คือ Light Obscuration Particle Count Test ซึ่งเป็นวิธีหลัก หากไม่ผ่านหรือใช้ไม่ได้ (เช่น emulsion หรือของเหลวหนืด) จึงใช้วิธีที่ 2 Microscopic Particle Count Test เกณฑ์ขึ้นกับปริมาตรภาชนะ: LVP (>100 mL) ใช้เกณฑ์ต่อ mL ส่วน SVP (≤100 mL) ใช้เกณฑ์ต่อภาชนะ สำหรับ light obscuration เกณฑ์ LVP คือ ≥10 µm ไม่เกิน 25/mL และ ≥25 µm ไม่เกิน 3/mL ส่วน SVP คือ ≥10 µm ไม่เกิน 6,000 และ ≥25 µm ไม่เกิน 600 ต่อภาชนะ สำหรับ microscopic เกณฑ์ LVP คือ 12/mL และ 2/mL ส่วน SVP คือ 3,000 และ 300 ต่อภาชนะ ในข้อนี้ 18/mL ไม่เกิน 25/mL จึงผ่าน แต่ 4/mL เกิน 3/mL จึงไม่ผ่าน อนุภาคในยาฉีดอาจทำให้เกิด phlebitis, granuloma และ emboli ในปอด แหล่งที่มาของอนุภาคมีทั้งจุกยาง แก้ว (delamination) การตกตะกอน และสิ่งแวดล้อม การฉีดยาที่เสี่ยงจึงใช้ in-line filter ร่วมด้วย",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ผ่านทั้งสองขนาด",
+          "is_correct": false,
+          "explanation": "ผิด อนุภาค ≥25 µm เท่ากับ 4/mL เกินเกณฑ์ 3/mL"
+        },
+        {
+          "label": "B",
+          "text": "ไม่ผ่าน เพราะอนุภาค ≥25 µm เกินเกณฑ์ 3 อนุภาค/mL",
+          "is_correct": true,
+          "explanation": "ถูกต้อง LVP light obscuration: ≥25 µm ต้องไม่เกิน 3/mL แต่ผลคือ 4/mL"
+        },
+        {
+          "label": "C",
+          "text": "ไม่ผ่าน เพราะอนุภาค ≥10 µm เกินเกณฑ์ 12 อนุภาค/mL",
+          "is_correct": false,
+          "explanation": "ผิด 12/mL เป็นเกณฑ์ของวิธี microscopic เกณฑ์ light obscuration สำหรับ ≥10 µm ของ LVP คือ 25/mL ซึ่งผล 18/mL ผ่าน"
+        },
+        {
+          "label": "D",
+          "text": "ต้องใช้เกณฑ์ต่อภาชนะ (≥10 µm ไม่เกิน 6,000 อนุภาค) จึงถือว่าผ่าน",
+          "is_correct": false,
+          "explanation": "ผิด เกณฑ์ต่อภาชนะ (6,000/600) ใช้กับ SVP ≤100 mL ภาชนะ 1,000 mL เป็น LVP ต้องใช้เกณฑ์ต่อ mL"
+        },
+        {
+          "label": "E",
+          "text": "ไม่ผ่านทั้งสองขนาด",
+          "is_correct": false,
+          "explanation": "ผิด ขนาด ≥10 µm ผ่าน (18 ≤ 25/mL) ไม่ผ่านเฉพาะขนาด ≥25 µm"
+        }
+      ],
+      "key_takeaway": "USP <788> LO: LVP 25/mL (≥10 µm), 3/mL (≥25 µm); SVP 6,000/600 ต่อภาชนะ; Microscopic: LVP 12/2 ต่อ mL, SVP 3,000/300"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ตามแนวทาง USP <797> ยาฉีดชนิด multiple-dose vial ที่มี antimicrobial preservative เมื่อเปิดใช้หรือแทงจุกยางครั้งแรกแล้ว และผู้ผลิตไม่ได้ระบุไว้เป็นอย่างอื่น ควรกำหนดวันหมดอายุหลังเปิด (BUD) เป็นเท่าใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "24 ชั่วโมง"
+      },
+      {
+        "label": "B",
+        "text": "7 วัน"
+      },
+      {
+        "label": "C",
+        "text": "14 วัน"
+      },
+      {
+        "label": "D",
+        "text": "28 วัน"
+      },
+      {
+        "label": "E",
+        "text": "จนถึงวันหมดอายุที่พิมพ์บนฉลาก"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "USP <797> กำหนด BUD ของ multiple-dose container ที่เปิดแล้วไว้ 28 วัน เว้นแต่ผู้ผลิตจะระบุไว้ต่างออกไป",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. 28 วัน — multiple-dose vial ที่เปิดแล้วมี BUD 28 วัน เว้นแต่ผู้ผลิตกำหนดไว้ต่างออกไป",
+      "reason": "Multiple-dose container ถูกออกแบบให้ดูดยาได้หลายครั้ง จึงต้องมี antimicrobial preservative ที่ผ่าน Antimicrobial Effectiveness Test (USP <51>) เช่น benzyl alcohol, phenol, m-cresol, parabens หรือ benzalkonium chloride (ในยาหยอดตา) preservative ช่วยยับยั้งจุลชีพที่อาจปนเปื้อนเข้าไปในจำนวนเล็กน้อยระหว่างใช้ แต่ไม่ได้ทำให้ปลอดเชื้อทันทีและประสิทธิภาพก็จำกัด USP <797> จึงกำหนดให้เมื่อเปิดหรือแทงครั้งแรกแล้ว ใช้ได้ไม่เกิน 28 วัน เว้นแต่ฉลากผู้ผลิตจะระบุไว้ต่างออกไป (เช่น insulin บางชนิดระบุ 28 หรือ 42 วัน) ควรเขียนวันที่เปิดไว้บนขวด ส่วน single-dose container ไม่มี preservative หากเปิดใน ISO Class 5 ใช้ได้ไม่เกิน 12 ชั่วโมง (ตาม USP <797> ฉบับปรับปรุง) และถ้าเปิดนอก ISO 5 ต้องใช้ภายใน 1 ชั่วโมง ยาหยอดตา multi-dose ในทางปฏิบัติก็นิยมทิ้งหลังเปิด 28 วัน (4 สัปดาห์) เช่นกัน",
+      "choices": [
+        {
+          "label": "A",
+          "text": "24 ชั่วโมง",
+          "is_correct": false,
+          "explanation": "24 ชั่วโมงไม่ใช่ BUD ของ multiple-dose vial ที่เปิดแล้วตาม USP <797>"
+        },
+        {
+          "label": "B",
+          "text": "7 วัน",
+          "is_correct": false,
+          "explanation": "7 วันสั้นกว่าเกณฑ์ ไม่ใช่ค่าที่ USP <797> กำหนดสำหรับ multiple-dose vial"
+        },
+        {
+          "label": "C",
+          "text": "14 วัน",
+          "is_correct": false,
+          "explanation": "14 วันไม่ใช่ค่ามาตรฐานของ multiple-dose vial หลังเปิด"
+        },
+        {
+          "label": "D",
+          "text": "28 วัน",
+          "is_correct": true,
+          "explanation": "ถูกต้อง 28 วันหลังเปิดหรือแทงครั้งแรก เว้นแต่ผู้ผลิตระบุไว้ต่างออกไป"
+        },
+        {
+          "label": "E",
+          "text": "จนถึงวันหมดอายุที่พิมพ์บนฉลาก",
+          "is_correct": false,
+          "explanation": "ผิด วันหมดอายุบนฉลากใช้กับภาชนะที่ยังไม่เปิด เมื่อเปิดแล้วความเสี่ยงต่อการปนเปื้อนเพิ่มขึ้น ต้องใช้ BUD"
+        }
+      ],
+      "key_takeaway": "MDV เปิดแล้ว = 28 วัน (เว้นแต่ผู้ผลิตระบุ); SDV เปิดใน ISO 5 = 12 ชม., นอก ISO 5 = 1 ชม."
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "ห้อง QC ต้องทำ Sterility test (USP <71>) ของ Ampicillin sodium for injection ซึ่งมีฤทธิ์ต้านจุลชีพในตัว ข้อใดคือแนวทางที่เหมาะสมที่สุด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Direct inoculation ลงในอาหารเลี้ยงเชื้อโดยไม่ต้องทำให้ฤทธิ์ยาหมดไป เพราะ ampicillin ไม่ฆ่าเชื้อในอาหาร"
+      },
+      {
+        "label": "B",
+        "text": "Membrane filtration ผ่าน membrane ขนาดรูไม่เกิน 0.45 µm แล้ว rinse membrane เพื่อกำจัดยาที่ตกค้าง ก่อนย้ายลงอาหาร FTM และ SCDM แล้วบ่ม 14 วัน"
+      },
+      {
+        "label": "C",
+        "text": "บ่มเชื้อเพียง 7 วันเพราะยาปฏิชีวนะยับยั้งการเจริญของเชื้ออยู่แล้ว"
+      },
+      {
+        "label": "D",
+        "text": "ใช้ rabbit pyrogen test แทน sterility test สำหรับยาปฏิชีวนะ"
+      },
+      {
+        "label": "E",
+        "text": "กรองผ่าน 0.22 µm แล้ว autoclave membrane ก่อนนำไปเพาะเชื้อ"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "ผลิตภัณฑ์ที่มีฤทธิ์ต้านจุลชีพควรใช้ membrane filtration แล้ว rinse เพื่อล้างยาออก (อาจเติม β-lactamase ร่วมได้) จากนั้นเพาะเชื้อใน FTM และ SCDM นาน 14 วัน",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. Membrane filtration ผ่าน membrane ขนาดรูไม่เกิน 0.45 µm แล้ว rinse membrane เพื่อกำจัดยาที่ตกค้าง ก่อนย้ายลงอาหาร FTM และ SCDM แล้วบ่ม 14 วัน — ใช้ membrane filtration (≤0.45 µm) ร่วมกับการ rinse ล้างยาออก แล้วบ่มใน FTM/SCDM 14 วัน",
+      "reason": "USP <71> มี 2 วิธีคือ membrane filtration และ direct inoculation วิธี membrane filtration เป็นวิธีที่แนะนำสำหรับผลิตภัณฑ์ที่กรองได้ โดยเฉพาะผลิตภัณฑ์ที่มี preservative หรือฤทธิ์ต้านจุลชีพ เพราะจุลชีพถูกดักบน membrane (รูไม่เกิน 0.45 µm) และการ rinse ด้วย diluting fluid (เช่น Fluid A) ช่วยล้างตัวยาที่ยับยั้งเชื้อออก สำหรับ β-lactam อาจเติม β-lactamase (penicillinase) เพื่อทำลายฤทธิ์ยาร่วมด้วย จากนั้นแบ่ง membrane ลงอาหาร 2 ชนิด คือ Fluid Thioglycollate Medium (FTM) บ่มที่ 30–35°C สำหรับแบคทีเรีย anaerobe และ aerobe และ Soybean-Casein Digest Medium (SCDM/TSB) บ่มที่ 20–25°C สำหรับเชื้อราและแบคทีเรีย aerobe บ่มอย่างน้อย 14 วัน ต้องทำ Method suitability (bacteriostasis/fungistasis test) เพื่อยืนยันว่าเชื้อทดสอบที่เติมลงไป (ไม่เกิน 100 CFU) ยังเจริญได้ การทดสอบต้องทำใน ISO 5 หรือ isolator เพื่อป้องกันผลบวกปลอม sterility test มีข้อจำกัดทางสถิติ (สุ่มตัวอย่างน้อย) จึงต้องอาศัย process validation ร่วมด้วย",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Direct inoculation ลงในอาหารเลี้ยงเชื้อโดยไม่ต้องทำให้ฤทธิ์ยาหมดไป เพราะ ampicillin ไม่ฆ่าเชื้อในอาหาร",
+          "is_correct": false,
+          "explanation": "ผิด ampicillin ที่ตกค้างในอาหารจะยับยั้งเชื้อ ทำให้ผลลบปลอม ต้องกำจัดหรือทำลายฤทธิ์ยาก่อนและพิสูจน์ด้วย method suitability"
+        },
+        {
+          "label": "B",
+          "text": "Membrane filtration ผ่าน membrane ขนาดรูไม่เกิน 0.45 µm แล้ว rinse membrane เพื่อกำจัดยาที่ตกค้าง ก่อนย้ายลงอาหาร FTM และ SCDM แล้วบ่ม 14 วัน",
+          "is_correct": true,
+          "explanation": "ถูกต้อง membrane filtration และ rinse ช่วยกำจัดฤทธิ์ยา แล้วใช้ FTM กับ SCDM บ่ม 14 วันตาม USP <71>"
+        },
+        {
+          "label": "C",
+          "text": "บ่มเชื้อเพียง 7 วันเพราะยาปฏิชีวนะยับยั้งการเจริญของเชื้ออยู่แล้ว",
+          "is_correct": false,
+          "explanation": "ผิด การบ่มต้องอย่างน้อย 14 วันเสมอ ฤทธิ์ยายิ่งทำให้เชื้อเจริญช้า หากลดเวลาบ่มจะพลาดการตรวจพบ"
+        },
+        {
+          "label": "D",
+          "text": "ใช้ rabbit pyrogen test แทน sterility test สำหรับยาปฏิชีวนะ",
+          "is_correct": false,
+          "explanation": "ผิด rabbit pyrogen test ตรวจไข้ ไม่ได้ตรวจความปราศจากเชื้อ ใช้แทนกันไม่ได้"
+        },
+        {
+          "label": "E",
+          "text": "กรองผ่าน 0.22 µm แล้ว autoclave membrane ก่อนนำไปเพาะเชื้อ",
+          "is_correct": false,
+          "explanation": "ผิด การ autoclave membrane ฆ่าเชื้อที่ดักไว้ ทำให้ผลลบปลอม และ USP กำหนด membrane รูไม่เกิน 0.45 µm"
+        }
+      ],
+      "key_takeaway": "Sterility test: membrane filtration (≤0.45 µm + rinse) สำหรับยาที่มีฤทธิ์ต้านเชื้อ; FTM 30–35°C, SCDM 20–25°C, 14 วัน"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "สภาวะมาตรฐานของการทำให้ปราศจากเชื้อด้วยไอน้ำอิ่มตัว (moist heat/autoclave) สำหรับยาฉีดในน้ำบรรจุในหลอดแก้วปิดสนิทคือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "160°C นาน 2 ชั่วโมง"
+      },
+      {
+        "label": "B",
+        "text": "121°C นาน 5 นาที"
+      },
+      {
+        "label": "C",
+        "text": "100°C นาน 30 นาที"
+      },
+      {
+        "label": "D",
+        "text": "250°C นาน 30 นาที"
+      },
+      {
+        "label": "E",
+        "text": "121°C นาน 15 นาที (ประมาณ 15 psig)"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "Autoclave มาตรฐานคือไอน้ำอิ่มตัว 121°C ที่ความดันประมาณ 15 psig นาน 15 นาที (วัดเวลาที่ตัวผลิตภัณฑ์ถึงอุณหภูมิแล้ว)",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. 121°C นาน 15 นาที (ประมาณ 15 psig) — moist heat มาตรฐานคือ 121°C 15 นาที ด้วยไอน้ำอิ่มตัวที่ประมาณ 15 psig",
+      "reason": "Moist heat ฆ่าเชื้อโดยทำให้โปรตีนและเอนไซม์เสียสภาพ (coagulation/denaturation) ไอน้ำอิ่มตัวให้ latent heat ปริมาณมากเมื่อควบแน่นบนผิววัตถุ จึงฆ่าเชื้อได้ที่อุณหภูมิต่ำกว่าและใช้เวลาน้อยกว่า dry heat มาก ไอน้ำต้องอิ่มตัวและต้องไล่อากาศออก (air removal) เพราะอากาศที่ค้างทำให้อุณหภูมิต่ำกว่าที่ควร เชื้อชี้วัด (biological indicator) คือ spore ของ Geobacillus stearothermophilus ที่ 121°C ใช้เวลา 15 นาที ส่วนอุณหภูมิที่สูงกว่าใช้เวลาสั้นลง เช่น 126°C 10 นาที หรือ 134°C 3 นาที วิธีนี้เหมาะกับสารละลายในน้ำในภาชนะปิดสนิท อุปกรณ์ เสื้อผ้า และตัวกรอง แต่ไม่เหมาะกับน้ำมัน ผงแห้ง หรือยาที่ไม่ทนความร้อน ค่า F0 ของรอบ 121°C 15 นาทีเท่ากับ 15 นาที โดยทั่วไปต้องการ F0 อย่างน้อย 8 นาทีขึ้นกับ bioburden",
+      "choices": [
+        {
+          "label": "A",
+          "text": "160°C นาน 2 ชั่วโมง",
+          "is_correct": false,
+          "explanation": "160°C 2 ชั่วโมงเป็นสภาวะของ dry heat ใช้กับแก้ว น้ำมัน และผงทนความร้อน ไม่ใช่ moist heat"
+        },
+        {
+          "label": "B",
+          "text": "121°C นาน 5 นาที",
+          "is_correct": false,
+          "explanation": "121°C 5 นาทีสั้นเกินไปสำหรับรอบมาตรฐาน (ให้ F0 เพียงประมาณ 5 นาที)"
+        },
+        {
+          "label": "C",
+          "text": "100°C นาน 30 นาที",
+          "is_correct": false,
+          "explanation": "100°C 30 นาที (เดือด/free-flowing steam) ฆ่า spore ไม่ได้ ไม่ถือเป็น sterilization"
+        },
+        {
+          "label": "D",
+          "text": "250°C นาน 30 นาที",
+          "is_correct": false,
+          "explanation": "250°C 30 นาทีเป็นสภาวะ dry heat สำหรับ depyrogenation ของแก้ว"
+        },
+        {
+          "label": "E",
+          "text": "121°C นาน 15 นาที (ประมาณ 15 psig)",
+          "is_correct": true,
+          "explanation": "ถูกต้อง 121°C 15 นาที ไอน้ำอิ่มตัวที่ประมาณ 15 psig เป็นสภาวะมาตรฐาน"
+        }
+      ],
+      "key_takeaway": "Moist heat 121°C/15 นาที (BI: G. stearothermophilus); Dry heat 160–170°C/1–2 ชม. (sterilize), 250°C ≥30 นาที (depyrogenate)"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "โรงงานยาต้องเตรียม glass vial สำหรับบรรจุยาฉีดโดยวิธี aseptic filling vial ต้องทั้งปราศจากเชื้อและปราศจาก endotoxin (depyrogenated) วิธีใดเหมาะสมที่สุด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Dry heat ที่ประมาณ 250°C อย่างน้อย 30 นาที (เช่นใน depyrogenation tunnel)"
+      },
+      {
+        "label": "B",
+        "text": "Autoclave 121°C 15 นาที"
+      },
+      {
+        "label": "C",
+        "text": "Ethylene oxide"
+      },
+      {
+        "label": "D",
+        "text": "Gamma irradiation 25 kGy"
+      },
+      {
+        "label": "E",
+        "text": "ล้างด้วยน้ำที่กรองผ่าน 0.22 µm แล้วผึ่งให้แห้งใน Grade A"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Endotoxin ทนความร้อนชื้นและรังสี การ depyrogenation แก้วที่ใช้กันมาตรฐานคือ dry heat ประมาณ 250°C ≥30 นาที ซึ่งต้องลด endotoxin ได้อย่างน้อย 3 log",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. Dry heat ที่ประมาณ 250°C อย่างน้อย 30 นาที (เช่นใน depyrogenation tunnel) — dry heat ประมาณ 250°C ≥30 นาที ทำให้ vial ทั้งปราศจากเชื้อและปราศจาก endotoxin",
+      "reason": "Dry heat ฆ่าเชื้อด้วยกลไก oxidation และต้องใช้อุณหภูมิสูงกว่า moist heat (เช่น 160°C 2 ชั่วโมง หรือ 170°C 1 ชั่วโมง) แต่ถ้าใช้อุณหภูมิสูงขึ้นไปอีก (ประมาณ 250°C ≥30 นาที) จะทำลาย endotoxin ได้ด้วย USP <1228.1> กำหนดให้ validate โดยลด endotoxin ได้อย่างน้อย 3 log (ใช้ endotoxin indicator ที่ spike ลงไป) ในโรงงานนิยมใช้ depyrogenation tunnel ที่ต่อตรงเข้าสู่ Grade A filling line หลังล้าง vial ด้วย WFI วิธีนี้เหมาะกับแก้ว เครื่องมือโลหะ น้ำมัน และผงที่ทนความร้อน แต่ใช้กับจุกยางหรือพลาสติกไม่ได้ (จุกยางลด endotoxin ด้วยการล้าง WFI หลายรอบแล้วจึง autoclave) Autoclave, EtO และรังสีทำให้ปราศจากเชื้อได้แต่ไม่ทำลาย endotoxin อย่างมีนัยสำคัญ ส่วนการกรอง 0.22 µm ไม่สามารถกำจัด endotoxin ที่อยู่ในรูปอิสระได้",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Dry heat ที่ประมาณ 250°C อย่างน้อย 30 นาที (เช่นใน depyrogenation tunnel)",
+          "is_correct": true,
+          "explanation": "ถูกต้อง dry heat ประมาณ 250°C ≥30 นาที ทั้ง sterilize และ depyrogenate (ลด endotoxin ≥3 log)"
+        },
+        {
+          "label": "B",
+          "text": "Autoclave 121°C 15 นาที",
+          "is_correct": false,
+          "explanation": "Autoclave 121°C ทำให้ปราศจากเชื้อได้แต่ไม่ทำลาย endotoxin ซึ่งทนความร้อนชื้น"
+        },
+        {
+          "label": "C",
+          "text": "Ethylene oxide",
+          "is_correct": false,
+          "explanation": "EtO ใช้กับอุปกรณ์พลาสติกที่ไม่ทนร้อน ไม่ทำลาย endotoxin และมี residue ที่ต้อง aeration"
+        },
+        {
+          "label": "D",
+          "text": "Gamma irradiation 25 kGy",
+          "is_correct": false,
+          "explanation": "Gamma irradiation ทำให้ปราศจากเชื้อได้ แต่ไม่ใช่วิธีมาตรฐานในการ depyrogenate และไม่ลด endotoxin ได้ตามเกณฑ์"
+        },
+        {
+          "label": "E",
+          "text": "ล้างด้วยน้ำที่กรองผ่าน 0.22 µm แล้วผึ่งให้แห้งใน Grade A",
+          "is_correct": false,
+          "explanation": "น้ำที่กรอง 0.22 µm อาจยังมี endotoxin เพราะ endotoxin เล็กกว่ารูกรอง การผึ่งแห้งก็ไม่ใช่ sterilization ที่ validate ได้"
+        }
+      ],
+      "key_takeaway": "Depyrogenation = dry heat ~250°C ≥30 นาที (≥3-log endotoxin reduction); autoclave/EtO/รังสี/0.22 µm ไม่กำจัด endotoxin"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ข้อใดถูกต้องเกี่ยวกับการทำให้ปราศจากเชื้อด้วย Ethylene oxide (EtO)",
+    "choices": [
+      {
+        "label": "A",
+        "text": "เหมาะสำหรับทำให้สารละลายยาฉีดในหลอดแก้วปิดสนิทปราศจากเชื้อ"
+      },
+      {
+        "label": "B",
+        "text": "ทำลายเชื้อด้วยกลไก oxidation คล้าย dry heat และไม่ต้องควบคุมความชื้น"
+      },
+      {
+        "label": "C",
+        "text": "ทำลายเชื้อด้วยกลไก alkylation ต้องควบคุมความชื้นและอุณหภูมิ และต้อง aeration หลังกระบวนการเพื่อกำจัด EtO และ ethylene chlorohydrin ที่ตกค้าง"
+      },
+      {
+        "label": "D",
+        "text": "เป็นก๊าซเฉื่อย ไม่ติดไฟและไม่เป็นพิษ จึงไม่ต้องกำจัด residue"
+      },
+      {
+        "label": "E",
+        "text": "ใช้ biological indicator คือ spore ของ Geobacillus stearothermophilus"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "EtO เป็น alkylating agent ต้องการความชื้นสัมพัทธ์ที่เหมาะสม ใช้กับอุปกรณ์ที่ไม่ทนความร้อน แต่ก๊าซเป็นพิษ ก่อมะเร็ง และติดไฟได้ จึงต้อง aeration เพื่อลด residue",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. ทำลายเชื้อด้วยกลไก alkylation ต้องควบคุมความชื้นและอุณหภูมิ และต้อง aeration หลังกระบวนการเพื่อกำจัด EtO และ ethylene chlorohydrin ที่ตกค้าง — EtO ฆ่าเชื้อด้วย alkylation ต้องควบคุมความชื้น/อุณหภูมิ และต้อง aeration เพื่อกำจัด residue",
+      "reason": "Ethylene oxide เป็นก๊าซที่ alkylate หมู่ -SH, -NH2, -COOH และ -OH ในโปรตีนและ DNA ของจุลชีพ จึงฆ่า spore ได้ที่อุณหภูมิต่ำ (ประมาณ 30–60°C) เหมาะกับวัสดุที่ไม่ทนความร้อน เช่น ชุดให้สารน้ำพลาสติก syringe สายสวน และอุปกรณ์การแพทย์บางชนิด ปัจจัยที่ต้องควบคุมคือความเข้มข้นของก๊าซ อุณหภูมิ ความชื้นสัมพัทธ์ (ประมาณ 40–80% เพราะเชื้อที่แห้งดื้อต่อ EtO) และเวลา ข้อเสียคือ EtO ติดไฟและระเบิดได้ (จึงมักผสมกับ CO2 หรือ N2) เป็นพิษ ก่อมะเร็ง ก่อการกลายพันธุ์ และมี residue คือ EtO, ethylene chlorohydrin (เกิดเมื่อมี chloride) และ ethylene glycol จึงต้องทำ aeration หลายชั่วโมงถึงหลายวัน ก๊าซต้องซึมผ่านบรรจุภัณฑ์ได้ จึงซึมผ่านแก้วปิดสนิทไม่ได้และไม่ใช้กับของเหลว Biological indicator ที่ใช้คือ spore ของ Bacillus atrophaeus",
+      "choices": [
+        {
+          "label": "A",
+          "text": "เหมาะสำหรับทำให้สารละลายยาฉีดในหลอดแก้วปิดสนิทปราศจากเชื้อ",
+          "is_correct": false,
+          "explanation": "ผิด EtO ซึมผ่านแก้วปิดสนิทไม่ได้และไม่ใช้กับสารละลาย ยาฉีดในหลอดแก้วใช้ autoclave หรือ filtration"
+        },
+        {
+          "label": "B",
+          "text": "ทำลายเชื้อด้วยกลไก oxidation คล้าย dry heat และไม่ต้องควบคุมความชื้น",
+          "is_correct": false,
+          "explanation": "ผิด กลไกเป็น alkylation ไม่ใช่ oxidation และความชื้นสำคัญมาก เพราะเชื้อที่แห้งสนิทดื้อต่อ EtO"
+        },
+        {
+          "label": "C",
+          "text": "ทำลายเชื้อด้วยกลไก alkylation ต้องควบคุมความชื้นและอุณหภูมิ และต้อง aeration หลังกระบวนการเพื่อกำจัด EtO และ ethylene chlorohydrin ที่ตกค้าง",
+          "is_correct": true,
+          "explanation": "ถูกต้อง alkylation ต้องควบคุมความชื้น/อุณหภูมิ/ความเข้มข้น/เวลา และต้อง aeration กำจัด residue"
+        },
+        {
+          "label": "D",
+          "text": "เป็นก๊าซเฉื่อย ไม่ติดไฟและไม่เป็นพิษ จึงไม่ต้องกำจัด residue",
+          "is_correct": false,
+          "explanation": "ผิด EtO ติดไฟ ระเบิดได้ เป็นพิษ และก่อมะเร็ง ต้องกำจัด residue ให้ต่ำกว่าเกณฑ์"
+        },
+        {
+          "label": "E",
+          "text": "ใช้ biological indicator คือ spore ของ Geobacillus stearothermophilus",
+          "is_correct": false,
+          "explanation": "ผิด G. stearothermophilus เป็น BI ของ moist heat (และ H2O2 vapor) สำหรับ EtO ใช้ Bacillus atrophaeus"
+        }
+      ],
+      "key_takeaway": "BI: moist heat = G. stearothermophilus; dry heat และ EtO = B. atrophaeus; radiation = B. pumilus; filtration = Brevundimonas diminuta"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "หลังกรองยาฉีดที่ไม่ทนความร้อนผ่าน sterilizing-grade membrane filter ขนาด 0.22 µm ได้ทำ post-use bubble point test ได้ค่า 38 psi ขณะที่ผู้ผลิตกำหนดค่า bubble point ต่ำสุดของ filter ที่เปียกด้วยน้ำไว้ที่ 50 psi ข้อใดสรุปถูกต้อง",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ผ่าน เพราะ bubble point ต่ำแสดงว่ารูกรองเล็กกว่าที่กำหนด"
+      },
+      {
+        "label": "B",
+        "text": "ผ่าน เพราะ bubble point test ทำก่อนใช้งานก็เพียงพอแล้ว"
+      },
+      {
+        "label": "C",
+        "text": "ผ่าน หากผลิตภัณฑ์ผ่าน sterility test ก็ไม่ต้องสนใจผล integrity test"
+      },
+      {
+        "label": "D",
+        "text": "ไม่ผ่าน filter integrity บกพร่อง (รูกรองใหญ่เกินหรือ membrane เสียหาย) จึงไม่ถือว่าผลิตภัณฑ์ปราศจากเชื้อ ต้องสอบสวนและไม่ปล่อย batch ในสภาพนั้น"
+      },
+      {
+        "label": "E",
+        "text": "ไม่ผ่าน แต่แก้ไขได้ด้วยการเพิ่มความดันในการกรองให้สูงขึ้น"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "Bubble point แปรผกผันกับขนาดรูที่ใหญ่ที่สุด ค่าที่ต่ำกว่า spec แสดงว่ามีรูใหญ่เกินหรือ membrane รั่ว filter จึงไม่ผ่าน integrity test",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. ไม่ผ่าน filter integrity บกพร่อง (รูกรองใหญ่เกินหรือ membrane เสียหาย) จึงไม่ถือว่าผลิตภัณฑ์ปราศจากเชื้อ ต้องสอบสวนและไม่ปล่อย batch ในสภาพนั้น — bubble point 38 psi ต่ำกว่า spec 50 psi แสดงว่า filter integrity บกพร่อง batch ยังไม่ถือว่าปราศจากเชื้อ",
+      "reason": "Sterilizing-grade filter (0.2/0.22 µm) ต้อง validate ว่ากรองเชื้อ Brevundimonas diminuta ที่ท้าทาย 10^7 CFU ต่อ cm² ได้หมด (ASTM F838) Integrity test ที่ทำได้โดยไม่ทำลาย filter ได้แก่ bubble point, diffusion (forward flow) และ pressure hold โดยต้องทำก่อนใช้ (pre-use, post-sterilization) และหลังใช้ (post-use) bubble point คือความดันต่ำสุดที่แก๊สดันของเหลวออกจากรูที่ใหญ่ที่สุดของ membrane ที่เปียกจนเกิดฟองแก๊สไหลผ่านต่อเนื่อง ตามสมการ P = 4kγcosθ/d ความดันจึงแปรผกผันกับเส้นผ่านศูนย์กลางรู (d) ค่าที่ต่ำกว่า spec หมายถึงมีรูใหญ่หรือ membrane ฉีกขาด/seal รั่ว หรืออาจเกิดจากการทำให้ membrane เปียกไม่ทั่ว หรือใช้ของเหลวที่มีแรงตึงผิวต่ำกว่าที่ spec กำหนด จึงต้องทดสอบซ้ำให้ถูกวิธี (re-wet ด้วยของเหลวอ้างอิง) หากยังไม่ผ่านแสดงว่าการกรองไม่น่าเชื่อถือ ต้องเปิดการสอบสวน (deviation) และพิจารณากรองซ้ำ (refilter) ตามที่ validate ไว้หรือทำลาย batch Sterility test ที่ผ่านไม่สามารถใช้ทดแทนได้ เพราะมีพลังทางสถิติต่ำ",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ผ่าน เพราะ bubble point ต่ำแสดงว่ารูกรองเล็กกว่าที่กำหนด",
+          "is_correct": false,
+          "explanation": "ผิด bubble point ต่ำหมายถึงรูใหญ่ขึ้นหรือรั่ว ไม่ใช่รูเล็กลง (bubble point แปรผกผันกับขนาดรู)"
+        },
+        {
+          "label": "B",
+          "text": "ผ่าน เพราะ bubble point test ทำก่อนใช้งานก็เพียงพอแล้ว",
+          "is_correct": false,
+          "explanation": "ผิด GMP กำหนดให้ทำ post-use integrity test ด้วย เพื่อยืนยันว่า filter ไม่เสียหายตลอดการกรอง"
+        },
+        {
+          "label": "C",
+          "text": "ผ่าน หากผลิตภัณฑ์ผ่าน sterility test ก็ไม่ต้องสนใจผล integrity test",
+          "is_correct": false,
+          "explanation": "ผิด sterility test สุ่มตัวอย่างน้อยและมีพลังทางสถิติต่ำ ไม่สามารถใช้แทน filter integrity ได้"
+        },
+        {
+          "label": "D",
+          "text": "ไม่ผ่าน filter integrity บกพร่อง (รูกรองใหญ่เกินหรือ membrane เสียหาย) จึงไม่ถือว่าผลิตภัณฑ์ปราศจากเชื้อ ต้องสอบสวนและไม่ปล่อย batch ในสภาพนั้น",
+          "is_correct": true,
+          "explanation": "ถูกต้อง integrity ไม่ผ่าน ต้องสอบสวน และปล่อย batch ในสภาพนี้ไม่ได้"
+        },
+        {
+          "label": "E",
+          "text": "ไม่ผ่าน แต่แก้ไขได้ด้วยการเพิ่มความดันในการกรองให้สูงขึ้น",
+          "is_correct": false,
+          "explanation": "ผิด การเพิ่มความดันกรองไม่ได้แก้ไขรูที่บกพร่อง กลับทำให้เชื้อผ่านได้ง่ายขึ้น และไม่ใช่การแก้ปัญหา integrity"
+        }
+      ],
+      "key_takeaway": "Bubble point ∝ 1/ขนาดรู; ต่ำกว่า spec = fail; ทำทั้ง pre-use และ post-use; challenge organism = B. diminuta 10^7 CFU/cm²"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ยาฉีดชนิดหนึ่งมี bioburden ก่อนทำให้ปราศจากเชื้อ 10^6 CFU ต่อหน่วย เชื้อที่ทนความร้อนมากที่สุดมีค่า D121°C = 1.5 นาที หากต้องการ Sterility Assurance Level (SAL) 10^-6 ต้องใช้เวลา autoclave ที่ 121°C อย่างน้อยกี่นาที",
+    "choices": [
+      {
+        "label": "A",
+        "text": "9.0 นาที"
+      },
+      {
+        "label": "B",
+        "text": "1.5 นาที"
+      },
+      {
+        "label": "C",
+        "text": "12 นาที"
+      },
+      {
+        "label": "D",
+        "text": "6.0 นาที"
+      },
+      {
+        "label": "E",
+        "text": "18 นาที"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "ต้องลดเชื้อจาก 10^6 เป็น 10^-6 คือ 12 log reduction เวลา = D × จำนวน log = 1.5 × 12 = 18 นาที",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. 18 นาที — ต้องลดเชื้อ 12 log จึงใช้เวลา 12 × 1.5 = 18 นาที",
+      "reason": "D-value (decimal reduction time) คือเวลาที่อุณหภูมิหนึ่งที่ทำให้จำนวนเชื้อลดลง 90% (1 log) การตายของเชื้อเป็นไปตาม first-order kinetics: log N = log N0 − t/D หรือ t = D × (log N0 − log N) SAL 10^-6 หมายถึงโอกาสที่หน่วยผลิตภัณฑ์หนึ่งยังมีเชื้อรอดอยู่ไม่เกิน 1 ในล้าน ซึ่งเป็นเกณฑ์มาตรฐานของ terminal sterilization (ส่วน aseptic processing ไม่สามารถอ้าง SAL ระดับนี้ได้) จาก bioburden 10^6 ไปถึง 10^-6 ต้องลดเชื้อ 6 − (−6) = 12 log จึงใช้เวลา 12 × 1.5 = 18 นาที แนวคิดนี้เรียกว่า bioburden-based approach ส่วน overkill approach จะสมมติให้มีเชื้อ BI 10^6 ที่มี D121 ≥1 นาที แล้วให้ความร้อนเพื่อลดเชื้อ 12 log (F0 ≥12 นาที) ข้อผิดพลาดที่พบบ่อยคือคิดเพียง 6 log (ลดเชื้อแค่ถึง 1 CFU) ซึ่งยังไม่ถึง SAL 10^-6",
+      "choices": [
+        {
+          "label": "A",
+          "text": "9.0 นาที",
+          "is_correct": false,
+          "explanation": "9.0 นาทีลดเชื้อได้เพียง 6 log (จาก 10^6 เหลือ 10^0 = 1 CFU) ยังไม่ถึง SAL 10^-6"
+        },
+        {
+          "label": "B",
+          "text": "1.5 นาที",
+          "is_correct": false,
+          "explanation": "1.5 นาทีคือ D-value ลดเชื้อได้เพียง 1 log"
+        },
+        {
+          "label": "C",
+          "text": "12 นาที",
+          "is_correct": false,
+          "explanation": "12 นาทีได้จากการนำจำนวน log มาใช้เป็นเวลาโดยไม่คูณ D-value"
+        },
+        {
+          "label": "D",
+          "text": "6.0 นาที",
+          "is_correct": false,
+          "explanation": "6.0 นาทีไม่ถูก ได้จากการคูณ D ด้วยจำนวน log ที่ผิด (4 log)"
+        },
+        {
+          "label": "E",
+          "text": "18 นาที",
+          "is_correct": true,
+          "explanation": "ถูกต้อง ต้องลด 12 log × 1.5 นาที = 18 นาที"
+        }
+      ],
+      "key_takeaway": "t = D × (log N0 − log N); SAL 10^-6 จาก bioburden 10^6 = 12-log reduction",
+      "calculation_steps": [
+        "ขั้นที่ 1: log N0 = log 10^6 = 6; log N (SAL) = log 10^-6 = −6",
+        "ขั้นที่ 2: จำนวน log ที่ต้องลด = 6 − (−6) = 12 log",
+        "ขั้นที่ 3: t = D × 12 = 1.5 นาที × 12 = 18 นาที"
+      ]
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "Spore ของเชื้อชนิดหนึ่งมีค่า D121°C = 2.0 นาที และ z-value = 10°C หากต้องทำให้ปราศจากเชื้อที่ 115°C เพราะตัวยาไม่ทนต่ออุณหภูมิที่สูงกว่านี้ ค่า D ที่ 115°C ของเชื้อนี้ประมาณเท่าใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "8.0 นาที"
+      },
+      {
+        "label": "B",
+        "text": "0.50 นาที"
+      },
+      {
+        "label": "C",
+        "text": "12 นาที"
+      },
+      {
+        "label": "D",
+        "text": "20 นาที"
+      },
+      {
+        "label": "E",
+        "text": "4.0 นาที"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "D_T = D121 × 10^((121−T)/z) = 2.0 × 10^(6/10) = 2.0 × 3.98 ≈ 8.0 นาที",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. 8.0 นาที — D115 = 2.0 × 10^((121−115)/10) = 2.0 × 3.98 ≈ 8.0 นาที",
+      "reason": "z-value คือจำนวนองศาที่ต้องเปลี่ยนอุณหภูมิเพื่อให้ D-value เปลี่ยนไป 10 เท่า (1 log) สำหรับ spore ทนความร้อนใน moist heat มักใช้ z = 10°C ความสัมพันธ์คือ log(D_T1/D_T2) = (T2 − T1)/z ดังนั้น D_T = D_ref × 10^((T_ref − T)/z) เมื่อลดอุณหภูมิลง 6°C (จาก 121 เป็น 115°C) D จะเพิ่มขึ้น 10^0.6 = 3.98 เท่า ได้ D115 = 2.0 × 3.98 = 7.96 ≈ 8.0 นาที หมายความว่าที่ 115°C ต้องใช้เวลานานขึ้นเกือบ 4 เท่าเพื่อลดเชื้อในจำนวน log เท่าเดิม หลักนี้ใช้เลือกรอบ sterilization สำหรับยาที่ทนร้อนได้น้อย (เช่น 115°C 30 นาที) และใช้คำนวณ F0 จาก lethality ที่อุณหภูมิอื่น จุดที่ต้องระวังคือทิศทาง อุณหภูมิต่ำลงทำให้ D มากขึ้น อุณหภูมิสูงขึ้นทำให้ D น้อยลง",
+      "choices": [
+        {
+          "label": "A",
+          "text": "8.0 นาที",
+          "is_correct": true,
+          "explanation": "ถูกต้อง D115 = 2.0 × 10^0.6 ≈ 8.0 นาที"
+        },
+        {
+          "label": "B",
+          "text": "0.50 นาที",
+          "is_correct": false,
+          "explanation": "0.50 นาทีได้จากการหารแทนการคูณ (2.0/3.98) ซึ่งกลับทิศ อุณหภูมิต่ำลง D ต้องเพิ่มขึ้น"
+        },
+        {
+          "label": "C",
+          "text": "12 นาที",
+          "is_correct": false,
+          "explanation": "12 นาทีได้จากการคูณ D ด้วยจำนวนองศาที่ต่างกัน (2.0 × 6) ซึ่งไม่ใช่ความสัมพันธ์แบบ logarithm"
+        },
+        {
+          "label": "D",
+          "text": "20 นาที",
+          "is_correct": false,
+          "explanation": "20 นาทีคือค่า D ที่ 111°C (ลดลง 10°C = 1 z ทำให้ D เพิ่ม 10 เท่า) ไม่ใช่ที่ 115°C"
+        },
+        {
+          "label": "E",
+          "text": "4.0 นาที",
+          "is_correct": false,
+          "explanation": "4.0 นาทีได้จากการคิดว่า D เพิ่มเพียง 2 เท่า ซึ่งต่ำกว่าค่าจริง (10^0.6 = 3.98)"
+        }
+      ],
+      "key_takeaway": "D_T = D_121 × 10^((121−T)/z); ลด 10°C (z = 10) → D เพิ่ม 10 เท่า; ลด 6°C → D เพิ่มประมาณ 4 เท่า",
+      "calculation_steps": [
+        "ขั้นที่ 1: ΔT = 121 − 115 = 6°C",
+        "ขั้นที่ 2: ตัวคูณ = 10^(ΔT/z) = 10^(6/10) = 10^0.6 = 3.98",
+        "ขั้นที่ 3: D115 = D121 × 3.98 = 2.0 นาที × 3.98 = 7.96 ≈ 8.0 นาที"
+      ]
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "รอบการ autoclave ยาฉีดที่ไม่ทนความร้อนสูงตั้งไว้ที่ 115°C (อุณหภูมิในผลิตภัณฑ์คงที่) นาน 30 นาที กำหนด z = 10°C และอุณหภูมิอ้างอิง 121.1°C ประมาณเป็น 121°C ค่า F0 ของรอบนี้ประมาณเท่าใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "30 นาที"
+      },
+      {
+        "label": "B",
+        "text": "3.0 นาที"
+      },
+      {
+        "label": "C",
+        "text": "15 นาที"
+      },
+      {
+        "label": "D",
+        "text": "7.5 นาที"
+      },
+      {
+        "label": "E",
+        "text": "0.75 นาที"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "Lethal rate L = 10^((T−121)/z) = 10^(−0.6) = 0.251; F0 = 30 × 0.251 ≈ 7.5 นาที",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. 7.5 นาที — F0 = 30 นาที × 10^((115−121)/10) = 30 × 0.251 ≈ 7.5 นาที",
+      "reason": "F0 คือเวลาเทียบเท่า (equivalent time) เป็นนาทีที่ 121°C (z = 10°C) ที่ให้ผลฆ่าเชื้อเท่ากับรอบการให้ความร้อนจริง คำนวณจาก F0 = Σ L × Δt โดย lethal rate L = 10^((T − 121)/z) ที่ 115°C ได้ L = 10^(−0.6) = 0.251 คือทุก 1 นาทีที่ 115°C มีผลฆ่าเชื้อเท่ากับ 0.251 นาทีที่ 121°C รอบ 30 นาทีจึงมี F0 = 30 × 0.251 = 7.54 ≈ 7.5 นาที เทียบกับรอบมาตรฐาน 121°C 15 นาทีที่มี F0 = 15 นาที ในทางปฏิบัติ F0 ขั้นต่ำที่ยอมรับสำหรับสารละลายในน้ำมักกำหนดไว้ที่ 8 นาที (เช่นตาม EMA decision tree ซึ่งรับ F0 ≥8 เมื่อพิสูจน์ได้ว่าได้ SAL ≤10^-6) รอบนี้ได้ 7.5 นาทีจึงอาจต้องเพิ่มเวลา เช่น 115°C นาน 32 นาทีขึ้นไปจะได้ F0 ประมาณ 8 นาที และต้องมีข้อมูล bioburden ต่ำและควบคุมได้ การรู้ F0 และ D-value ทำให้คำนวณจำนวน log ที่ลดได้ = F0/D121",
+      "choices": [
+        {
+          "label": "A",
+          "text": "30 นาที",
+          "is_correct": false,
+          "explanation": "30 นาทีคือเวลาจริงที่ 115°C ยังไม่ได้แปลงเป็นเวลาเทียบเท่าที่ 121°C"
+        },
+        {
+          "label": "B",
+          "text": "3.0 นาที",
+          "is_correct": false,
+          "explanation": "3.0 นาทีได้จากการใช้ L = 10^-1 (คิดเหมือนลดลง 10°C) ซึ่งไม่ถูกต้อง"
+        },
+        {
+          "label": "C",
+          "text": "15 นาที",
+          "is_correct": false,
+          "explanation": "15 นาทีได้จากการหาร 30 ด้วย 2 ซึ่งไม่ใช่ความสัมพันธ์แบบ logarithm ของ z-value"
+        },
+        {
+          "label": "D",
+          "text": "7.5 นาที",
+          "is_correct": true,
+          "explanation": "ถูกต้อง F0 = 30 × 10^(−0.6) = 30 × 0.251 ≈ 7.5 นาที"
+        },
+        {
+          "label": "E",
+          "text": "0.75 นาที",
+          "is_correct": false,
+          "explanation": "0.75 นาทีผิดไปสิบเท่า ได้จากการวางจุดทศนิยมผิด"
+        }
+      ],
+      "key_takeaway": "F0 = Σ 10^((T−121)/10) × Δt; ที่ 115°C L ≈ 0.25; รอบ 121°C/15 นาที มี F0 = 15; เกณฑ์ทั่วไปคือ F0 ≥8 นาที",
+      "calculation_steps": [
+        "ขั้นที่ 1: Lethal rate L = 10^((T − 121)/z) = 10^((115 − 121)/10) = 10^(−0.6)",
+        "ขั้นที่ 2: 10^(−0.6) = 0.251",
+        "ขั้นที่ 3: F0 = L × t = 0.251 × 30 นาที = 7.54 ≈ 7.5 นาที"
+      ]
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "ข้อใดถูกต้องเกี่ยวกับชนิดของแก้วที่ใช้บรรจุยาตามเภสัชตำรับ (USP <660>)",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Type I เป็นแก้ว soda-lime ที่ผ่านการ treat ผิวด้านใน"
+      },
+      {
+        "label": "B",
+        "text": "Type III เป็นแก้ว soda-lime ทั่วไป โดยทั่วไปเหมาะกับผงยาแห้ง (dry powder) หรือยาใน vehicle ที่ไม่ใช่น้ำ (anhydrous/oily) ไม่เหมาะกับสารละลายในน้ำที่ต้อง autoclave"
+      },
+      {
+        "label": "C",
+        "text": "Type II เป็นแก้ว borosilicate ที่ทนสารเคมีได้ดีที่สุด"
+      },
+      {
+        "label": "D",
+        "text": "แก้ว Type NP ใช้บรรจุยาฉีดได้ทุกชนิด"
+      },
+      {
+        "label": "E",
+        "text": "Type III เหมาะที่สุดสำหรับสารละลายในน้ำที่มี pH เป็นด่างและต้อง autoclave"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Type I = borosilicate (ทนสารเคมีสูงสุด ใช้กับยาฉีดทุกชนิด), Type II = soda-lime ที่ treat ผิว (สำหรับสารละลายในน้ำที่เป็นกรดหรือกลาง), Type III = soda-lime ธรรมดา (ผงแห้ง หรือ vehicle ที่ไม่ใช่น้ำ)",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. Type III เป็นแก้ว soda-lime ทั่วไป โดยทั่วไปเหมาะกับผงยาแห้ง (dry powder) หรือยาใน vehicle ที่ไม่ใช่น้ำ (anhydrous/oily) ไม่เหมาะกับสารละลายในน้ำที่ต้อง autoclave — Type III เป็น soda-lime ธรรมดา ใช้กับผงยาแห้งหรือ vehicle ที่ไม่ใช่น้ำ",
+      "reason": "แก้วถูกแบ่งตาม hydrolytic resistance หรือความสามารถในการต้านการละลายของด่าง (alkali เช่น Na2O) ออกมาสู่ยา Type I borosilicate มี boron oxide ทำให้ทนน้ำ กรด ด่าง และความร้อนดีที่สุด (expansion ต่ำ) ใช้ได้กับยาฉีดทุกชนิด รวมถึงสารละลายที่ไวต่อ pH และ autoclave ได้ Type II เป็น soda-lime ที่ผ่าน dealkalization ของผิวด้านใน (เช่น treat ด้วย sulfur หรือ ammonium sulfate) ทนน้ำได้ดีขึ้นเฉพาะที่ผิว เหมาะกับสารละลายในน้ำที่เป็นกรดหรือกลาง Type III เป็น soda-lime ทั่วไป ปล่อยด่างได้มากกว่า จึงใช้กับผงแห้งสำหรับละลายก่อนใช้หรือยาใน vehicle ที่ไม่มีน้ำ เช่น น้ำมัน และสารละลายในน้ำเฉพาะกรณีที่มีข้อมูลความคงตัวรองรับ ส่วน NP (non-parenteral) ใช้กับยาทั่วไปที่ไม่ใช่ยาฉีด ปัญหาที่เกี่ยวข้องคือ ด่างที่ละลายออกมาทำให้ pH ของยาเพิ่มขึ้น, delamination (สะเก็ดแก้ว) และสีของแก้ว (amber ช่วยกันแสงช่วง UV ช่วงประมาณ 290–450 nm)",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Type I เป็นแก้ว soda-lime ที่ผ่านการ treat ผิวด้านใน",
+          "is_correct": false,
+          "explanation": "ผิด Type I คือ borosilicate ส่วน soda-lime ที่ treat ผิวคือ Type II"
+        },
+        {
+          "label": "B",
+          "text": "Type III เป็นแก้ว soda-lime ทั่วไป โดยทั่วไปเหมาะกับผงยาแห้ง (dry powder) หรือยาใน vehicle ที่ไม่ใช่น้ำ (anhydrous/oily) ไม่เหมาะกับสารละลายในน้ำที่ต้อง autoclave",
+          "is_correct": true,
+          "explanation": "ถูกต้อง Type III เป็น soda-lime ธรรมดา ใช้กับผงแห้งและ vehicle ที่ไม่ใช่น้ำ"
+        },
+        {
+          "label": "C",
+          "text": "Type II เป็นแก้ว borosilicate ที่ทนสารเคมีได้ดีที่สุด",
+          "is_correct": false,
+          "explanation": "ผิด Type II เป็น soda-lime ที่ treat ผิว ส่วน borosilicate คือ Type I"
+        },
+        {
+          "label": "D",
+          "text": "แก้ว Type NP ใช้บรรจุยาฉีดได้ทุกชนิด",
+          "is_correct": false,
+          "explanation": "ผิด NP (non-parenteral) ใช้กับยาที่ไม่ใช่ยาฉีด เช่น ยารับประทานหรือยาใช้ภายนอก"
+        },
+        {
+          "label": "E",
+          "text": "Type III เหมาะที่สุดสำหรับสารละลายในน้ำที่มี pH เป็นด่างและต้อง autoclave",
+          "is_correct": false,
+          "explanation": "ผิด สารละลายด่างที่ต้อง autoclave ต้องใช้ Type I เพราะ Type III ปล่อยด่างออกมามากและอาจเกิด delamination"
+        }
+      ],
+      "key_takeaway": "Type I borosilicate (ทุกยาฉีด) > Type II treated soda-lime (aqueous กรด/กลาง) > Type III soda-lime (ผงแห้ง/น้ำมัน) > NP (ไม่ใช่ยาฉีด)"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ในการ validate กระบวนการ aseptic filling ด้วย Media fill (aseptic process simulation) ข้อใดคือสิ่งที่บรรจุแทนผลิตภัณฑ์จริงตามแนวปฏิบัติทั่วไป",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Water for Injection"
+      },
+      {
+        "label": "B",
+        "text": "Sabouraud dextrose broth"
+      },
+      {
+        "label": "C",
+        "text": "Soybean-Casein Digest Medium (Tryptic Soy Broth) ที่ปราศจากเชื้อ"
+      },
+      {
+        "label": "D",
+        "text": "LAL reagent water"
+      },
+      {
+        "label": "E",
+        "text": "ผลิตภัณฑ์จริงที่เติม biological indicator"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Media fill ใช้อาหารเลี้ยงเชื้อเหลวที่หลากหลายวัตถุประสงค์ (general purpose) คือ SCDM/TSB บรรจุผ่านกระบวนการเหมือนผลิตจริง แล้วบ่มอย่างน้อย 14 วันเพื่อตรวจหาการปนเปื้อน",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. Soybean-Casein Digest Medium (Tryptic Soy Broth) ที่ปราศจากเชื้อ — media fill ใช้ SCDM (TSB) ที่ปราศจากเชื้อบรรจุแทนยา เพื่อพิสูจน์ว่ากระบวนการ aseptic ไม่ทำให้เกิดการปนเปื้อน",
+      "reason": "Aseptic processing ใช้กับยาที่ทำ terminal sterilization ไม่ได้ ยาจะถูกกรองให้ปราศจากเชื้อแล้วบรรจุใน Grade A กระบวนการนี้ไม่สามารถพิสูจน์ความปราศจากเชื้อด้วยการวัดการตายของเชื้อได้ จึงต้องทำ media fill ซึ่งจำลองทุกขั้นตอน ทั้งการบรรจุ จำนวนผู้ปฏิบัติงาน การแทรกแซง (interventions) ทั้งแบบปกติและแบบไม่ปกติ ระยะเวลาสูงสุดของการบรรจุ และขนาดภาชนะ โดยใช้ SCDM/TSB ซึ่งรองรับการเจริญของแบคทีเรียและเชื้อราได้กว้าง จากนั้นบ่มอย่างน้อย 14 วัน (นิยมบ่มที่ 20–25°C และ 30–35°C อย่างละประมาณ 7 วัน) แล้วตรวจความขุ่น ต้องทำ growth promotion test ของอาหาร เป้าหมายคือไม่พบภาชนะที่ปนเปื้อนเลย ตามแนวทาง FDA หากบรรจุน้อยกว่า 5,000 หน่วย ต้องไม่พบการปนเปื้อน ส่วนที่ 5,000–10,000 หน่วย การพบ 1 หน่วยต้องสอบสวนและพบ 2 หน่วยต้อง revalidate ทำ initial validation 3 ครั้งติดกัน แล้วทำซ้ำทุก 6 เดือนต่อ line และผู้ปฏิบัติงานทุกคนต้องผ่าน media fill อย่างน้อยปีละครั้ง",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Water for Injection",
+          "is_correct": false,
+          "explanation": "WFI ไม่มีสารอาหาร เชื้อที่ปนเปื้อนจะไม่เจริญจนเห็นได้ จึงใช้ประเมินการปนเปื้อนไม่ได้"
+        },
+        {
+          "label": "B",
+          "text": "Sabouraud dextrose broth",
+          "is_correct": false,
+          "explanation": "Sabouraud dextrose เป็นอาหารเฉพาะสำหรับเชื้อรา ไม่ครอบคลุมแบคทีเรียจึงไม่ใช่อาหารมาตรฐานของ media fill"
+        },
+        {
+          "label": "C",
+          "text": "Soybean-Casein Digest Medium (Tryptic Soy Broth) ที่ปราศจากเชื้อ",
+          "is_correct": true,
+          "explanation": "ถูกต้อง SCDM/TSB เป็นอาหาร general purpose ที่ใช้ใน media fill แล้วบ่มอย่างน้อย 14 วัน"
+        },
+        {
+          "label": "D",
+          "text": "LAL reagent water",
+          "is_correct": false,
+          "explanation": "LAL reagent water ใช้ในการทดสอบ endotoxin ไม่มีสารอาหารสำหรับเชื้อ"
+        },
+        {
+          "label": "E",
+          "text": "ผลิตภัณฑ์จริงที่เติม biological indicator",
+          "is_correct": false,
+          "explanation": "การเติม BI ลงในผลิตภัณฑ์เป็นการทดสอบ terminal sterilization ไม่ใช่การจำลอง aseptic process และผลิตภัณฑ์จริงอาจมีฤทธิ์ยับยั้งเชื้อ"
+        }
+      ],
+      "key_takeaway": "Media fill = TSB/SCDM, จำลอง worst case + interventions, บ่ม ≥14 วัน, เป้าหมายคือ 0 contaminated units, ทำซ้ำทุก 6 เดือน"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ในโรงงานที่ใช้ cleanroom แบบดั้งเดิม (ไม่ใช่ isolator หรือ RABS) ตาม EU/PIC/S GMP Annex 1 ขั้นตอนบรรจุยาปราศจากเชื้อลงใน vial ที่เปิดอยู่ด้วยวิธี aseptic filling ต้องทำในพื้นที่ระดับใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Grade A (unidirectional airflow) ที่มี background เป็น Grade B"
+      },
+      {
+        "label": "B",
+        "text": "Grade B เพียงอย่างเดียว"
+      },
+      {
+        "label": "C",
+        "text": "Grade C"
+      },
+      {
+        "label": "D",
+        "text": "Grade A ที่มี background เป็น Grade D"
+      },
+      {
+        "label": "E",
+        "text": "Grade D"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Aseptic filling และการเปิดภาชนะ/ส่วนประกอบที่ปราศจากเชื้อต้องทำใน Grade A (ISO 5, unidirectional airflow) โดยมี Grade B เป็นพื้นที่ล้อมรอบ (background)",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. Grade A (unidirectional airflow) ที่มี background เป็น Grade B — aseptic filling ต้องทำใน Grade A ที่มี Grade B เป็น background",
+      "reason": "Annex 1 แบ่ง cleanroom เป็น 4 grade: Grade A (critical zone) คือ ISO 5 ทั้ง at rest และ in operation ใช้ unidirectional (laminar) airflow ความเร็วประมาณ 0.36–0.54 m/s สำหรับ aseptic filling, การปิดจุก, การเปิด ampoule/vial และการต่อเชื่อมแบบ aseptic Grade B เป็น background ของ Grade A ใน aseptic processing (ISO 5 at rest, ISO 7 in operation) Grade C (ISO 7 at rest, ISO 8 in operation) และ Grade D (ISO 8 at rest) ใช้กับขั้นตอนที่วิกฤตน้อยกว่า เช่น การเตรียมสารละลายก่อนกรอง การบรรจุผลิตภัณฑ์ที่จะทำ terminal sterilization และการล้างอุปกรณ์ แรงดันอากาศจะสูงจากพื้นที่สะอาดกว่าไปพื้นที่สะอาดน้อยกว่า (ต่างกันประมาณ 10–15 Pa) ต้องเฝ้าระวังอนุภาคและจุลชีพอย่างต่อเนื่อง (เช่น settle plate, air sampling, contact plate, glove print) การใช้ background Grade C หรือ D จะยอมรับได้เฉพาะกรณีเทคโนโลยีแยกพื้นที่อย่าง isolator ซึ่งไม่ใช่กรณีของข้อนี้",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Grade A (unidirectional airflow) ที่มี background เป็น Grade B",
+          "is_correct": true,
+          "explanation": "ถูกต้อง Grade A ใน Grade B background เป็นข้อกำหนดของ conventional aseptic filling"
+        },
+        {
+          "label": "B",
+          "text": "Grade B เพียงอย่างเดียว",
+          "is_correct": false,
+          "explanation": "ผิด Grade B ไม่มี unidirectional airflow และไม่ได้เป็น ISO 5 ขณะทำงาน (in operation เป็น ISO 7) ใช้ได้เพียงเป็น background"
+        },
+        {
+          "label": "C",
+          "text": "Grade C",
+          "is_correct": false,
+          "explanation": "ผิด Grade C ใช้กับการเตรียมสารละลายก่อนกรองหรือการบรรจุยาที่จะ terminal sterilize ต่อ"
+        },
+        {
+          "label": "D",
+          "text": "Grade A ที่มี background เป็น Grade D",
+          "is_correct": false,
+          "explanation": "ผิด สำหรับ cleanroom แบบดั้งเดิม Grade D background ไม่เพียงพอ (ยอมรับได้เฉพาะ closed isolator)"
+        },
+        {
+          "label": "E",
+          "text": "Grade D",
+          "is_correct": false,
+          "explanation": "ผิด Grade D ใช้กับขั้นตอนที่วิกฤตน้อย เช่น การล้างและการจัดการส่วนประกอบก่อน sterilization"
+        }
+      ],
+      "key_takeaway": "A = ISO 5 (UDAF 0.36–0.54 m/s) / B = background ของ A (ISO 5 at rest, ISO 7 operation) / C = ISO 7/8 / D = ISO 8 at rest"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ตาม USP <797> ห้องปลอดเชื้อสำหรับเตรียมยาฉีด (cleanroom suite) ประกอบด้วย ante-room และ buffer room โดยวาง Primary Engineering Control (PEC) เช่น LAFW หรือ BSC ซึ่งให้อากาศ ISO Class 5 ไว้ใน buffer room ข้อกำหนดคุณภาพอากาศขั้นต่ำของ buffer room คือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ISO Class 5"
+      },
+      {
+        "label": "B",
+        "text": "ISO Class 6"
+      },
+      {
+        "label": "C",
+        "text": "ISO Class 8"
+      },
+      {
+        "label": "D",
+        "text": "ISO Class 9"
+      },
+      {
+        "label": "E",
+        "text": "ISO Class 7"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "USP <797> กำหนด PEC = ISO 5, buffer room = ISO 7 และ ante-room = ISO 8 (ต้องเป็น ISO 7 หากเปิดเข้าสู่ buffer room ที่เป็น negative pressure)",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. ISO Class 7 — buffer room ต้องได้ ISO Class 7 เป็นอย่างน้อย",
+      "reason": "USP <797> ใช้ระบบป้องกันการปนเปื้อนเป็นชั้น (1) PEC เช่น LAFW, BSC, CAI/CACI ต้องให้อากาศผ่าน HEPA เป็น ISO Class 5 (ไม่เกิน 3,520 อนุภาค ≥0.5 µm ต่อ m³ ซึ่งเทียบเท่า Class 100 เดิม) ซึ่งเป็นพื้นที่ที่เปิดภาชนะและผสมยาจริง (2) buffer room ที่วาง PEC ต้องเป็นอย่างน้อย ISO Class 7 (≤352,000 อนุภาค/m³) และมี positive pressure เทียบกับ ante-room (ยกเว้นห้องเตรียมยาอันตรายตาม USP <800> ที่ใช้ negative pressure) (3) ante-room เป็นพื้นที่ล้างมือและแต่งกาย ต้องเป็นอย่างน้อย ISO Class 8 แต่ถ้าเปิดเข้าสู่ negative-pressure buffer room ต้องเป็น ISO 7 นอกจากนี้ต้องมีอัตราการเปลี่ยนอากาศ (ACPH) ตามที่กำหนด ทำ certification ทุก 6 เดือน และเฝ้าระวังจุลชีพในอากาศและพื้นผิว ส่วน Segregated Compounding Area (SCA) ที่ไม่ได้อยู่ใน cleanroom suite เตรียมได้เฉพาะ Category 1 CSP ซึ่งมี BUD สั้น",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ISO Class 5",
+          "is_correct": false,
+          "explanation": "ISO 5 เป็นข้อกำหนดของ PEC ภายในเครื่อง ไม่ใช่ข้อกำหนดของห้อง buffer ทั้งห้อง"
+        },
+        {
+          "label": "B",
+          "text": "ISO Class 6",
+          "is_correct": false,
+          "explanation": "ISO 6 ไม่ใช่ระดับที่ USP <797> กำหนดสำหรับ buffer room"
+        },
+        {
+          "label": "C",
+          "text": "ISO Class 8",
+          "is_correct": false,
+          "explanation": "ISO 8 เป็นข้อกำหนดขั้นต่ำของ ante-room ที่เปิดเข้าสู่ positive-pressure buffer room"
+        },
+        {
+          "label": "D",
+          "text": "ISO Class 9",
+          "is_correct": false,
+          "explanation": "ISO 9 เทียบเท่าอากาศห้องทั่วไป ไม่ใช่ cleanroom สำหรับเตรียม CSP"
+        },
+        {
+          "label": "E",
+          "text": "ISO Class 7",
+          "is_correct": true,
+          "explanation": "ถูกต้อง buffer room ต้องเป็นอย่างน้อย ISO Class 7"
+        }
+      ],
+      "key_takeaway": "USP <797>: PEC ISO 5 → buffer ISO 7 → ante ISO 8 (หรือ ISO 7 ถ้าเปิดเข้าห้อง negative pressure); ISO 5 ≈ Class 100"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "หน่วยผสมยาเคมีบำบัดในโรงพยาบาลต้องเลือกอุปกรณ์ PEC สำหรับเตรียม cyclophosphamide และ doxorubicin injection อุปกรณ์ใดเหมาะสมที่สุด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Horizontal laminar airflow workbench (clean bench) เพราะให้อากาศ ISO 5 ไหลผ่านพื้นที่ทำงาน"
+      },
+      {
+        "label": "B",
+        "text": "ตู้ดูดควันเคมี (chemical fume hood) ที่ไม่มี HEPA filter"
+      },
+      {
+        "label": "C",
+        "text": "Class II Biological Safety Cabinet (vertical airflow มี inflow ด้านหน้าและ HEPA-filtered exhaust) ที่ระบายอากาศออกภายนอก"
+      },
+      {
+        "label": "D",
+        "text": "โต๊ะทำงานทั่วไปในห้อง ISO 7 โดยใส่ถุงมือสองชั้น"
+      },
+      {
+        "label": "E",
+        "text": "Vertical laminar airflow workbench ที่ไม่มี inflow ด้านหน้า"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "ยาอันตราย (hazardous drugs) ต้องเตรียมใน C-PEC ที่ปกป้องทั้งผู้ปฏิบัติงาน ผลิตภัณฑ์ และสิ่งแวดล้อม เช่น Class II BSC หรือ CACI ซึ่งต่างจาก horizontal LAFW ที่เป่าลมเข้าหาผู้ปฏิบัติงาน",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. Class II Biological Safety Cabinet (vertical airflow มี inflow ด้านหน้าและ HEPA-filtered exhaust) ที่ระบายอากาศออกภายนอก — Class II BSC ปกป้องทั้งผู้ปฏิบัติงาน ผลิตภัณฑ์ และสิ่งแวดล้อม จึงเหมาะกับการเตรียมยาเคมีบำบัด",
+      "reason": "Horizontal LAFW เป่าอากาศที่ผ่าน HEPA (กรองอนุภาค ≥0.3 µm ได้ 99.97%) จากด้านหลังตู้ไปหาผู้ปฏิบัติงาน ทำให้ผลิตภัณฑ์สะอาดในระดับ ISO 5 แต่ละอองยาจะพัดเข้าหาผู้ปฏิบัติงาน จึงห้ามใช้กับยาอันตราย Class II BSC มี downflow แนวตั้งผ่าน HEPA ลงบนพื้นที่ทำงาน (ปกป้องผลิตภัณฑ์) มี inflow อากาศเข้าทางช่องด้านหน้า (ปกป้องผู้ปฏิบัติงาน) และอากาศขาออกผ่าน HEPA (ปกป้องสิ่งแวดล้อม) USP <800> กำหนดให้เตรียม sterile hazardous drugs ใน C-PEC (Class II BSC หรือ CACI) ที่ระบายอากาศออกภายนอก ตั้งอยู่ใน C-SEC ที่เป็น negative pressure (−0.01 ถึง −0.03 นิ้วน้ำ) และ ISO 7 ร่วมกับ PPE คือถุงมือ chemotherapy สองชั้น เสื้อกาวน์ที่ทดสอบการซึมผ่าน และอาจใช้ CSTD ร่วมด้วย หลักการจัดวางใน BSC คือทำงานห่างจากขอบหน้าเข้าไปอย่างน้อยประมาณ 4 นิ้ว (10 cm) และไม่วางของปิดช่อง grille",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Horizontal laminar airflow workbench (clean bench) เพราะให้อากาศ ISO 5 ไหลผ่านพื้นที่ทำงาน",
+          "is_correct": false,
+          "explanation": "ผิด horizontal LAFW ปกป้องเฉพาะผลิตภัณฑ์ ลมพัดละอองยาเข้าหาผู้ปฏิบัติงาน ห้ามใช้กับยาเคมีบำบัด"
+        },
+        {
+          "label": "B",
+          "text": "ตู้ดูดควันเคมี (chemical fume hood) ที่ไม่มี HEPA filter",
+          "is_correct": false,
+          "explanation": "ผิด fume hood ปกป้องผู้ปฏิบัติงานจากไอสารเคมี แต่ไม่มี HEPA จึงไม่ได้ให้สภาวะ ISO 5 สำหรับยาฉีด"
+        },
+        {
+          "label": "C",
+          "text": "Class II Biological Safety Cabinet (vertical airflow มี inflow ด้านหน้าและ HEPA-filtered exhaust) ที่ระบายอากาศออกภายนอก",
+          "is_correct": true,
+          "explanation": "ถูกต้อง Class II BSC ให้ทั้ง product, personnel และ environmental protection"
+        },
+        {
+          "label": "D",
+          "text": "โต๊ะทำงานทั่วไปในห้อง ISO 7 โดยใส่ถุงมือสองชั้น",
+          "is_correct": false,
+          "explanation": "ผิด การเตรียมยาฉีดต้องทำใน ISO 5 PEC ถุงมือสองชั้นเพียงอย่างเดียวไม่ได้ป้องกันการปนเปื้อนหรือการสัมผัสละอองยา"
+        },
+        {
+          "label": "E",
+          "text": "Vertical laminar airflow workbench ที่ไม่มี inflow ด้านหน้า",
+          "is_correct": false,
+          "explanation": "ผิด vertical LAFW ที่ไม่มี inflow และไม่มี HEPA exhaust ไม่ได้ปกป้องผู้ปฏิบัติงานอย่างเพียงพอ"
+        }
+      ],
+      "key_takeaway": "Horizontal LAFW = product only; Class II BSC/CACI = product + personnel + environment → ใช้กับ hazardous drugs (USP <800>)"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ตำรับยาฉีดแห้งแบบ lyophilized ชนิดหนึ่ง วัด collapse temperature (Tc) ด้วย freeze-drying microscopy ได้ −30°C ระหว่าง primary drying พบว่าอุณหภูมิของผลิตภัณฑ์ (วัดด้วย thermocouple ใน vial) อยู่ที่ประมาณ −26°C ผลิตภัณฑ์ที่ได้มี cake หดตัวยุบ มีความชื้นตกค้างสูง และละลายช้า สาเหตุและแนวทางแก้ไขที่เหมาะสมที่สุดคือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Secondary drying ใช้อุณหภูมิสูงเกินไป ควรลดอุณหภูมิ secondary drying ลง"
+      },
+      {
+        "label": "B",
+        "text": "อุณหภูมิผลิตภัณฑ์ใน primary drying สูงกว่า Tc ควรลด shelf temperature (และ/หรือปรับ chamber pressure) ให้อุณหภูมิผลิตภัณฑ์ต่ำกว่า Tc ประมาณ 2–3°C"
+      },
+      {
+        "label": "C",
+        "text": "ขั้น freezing ช้าเกินไป ควรเปลี่ยนเป็นการแช่แข็งที่ −5°C"
+      },
+      {
+        "label": "D",
+        "text": "Chamber pressure ต่ำเกินไป ควรเพิ่ม pressure จนใกล้ความดันบรรยากาศ"
+      },
+      {
+        "label": "E",
+        "text": "ควรตัด bulking agent ออกเพื่อให้ cake แข็งแรงขึ้น"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Collapse เกิดเมื่อ product temperature ขณะ primary drying สูงกว่า collapse temperature จน matrix อสัณฐานไหลตัวเสียโครงสร้าง ต้องคุมให้อุณหภูมิผลิตภัณฑ์ต่ำกว่า Tc เล็กน้อย",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. อุณหภูมิผลิตภัณฑ์ใน primary drying สูงกว่า Tc ควรลด shelf temperature (และ/หรือปรับ chamber pressure) ให้อุณหภูมิผลิตภัณฑ์ต่ำกว่า Tc ประมาณ 2–3°C — อุณหภูมิผลิตภัณฑ์ (−26°C) สูงกว่า Tc (−30°C) ขณะ primary drying ต้องปรับรอบให้อุณหภูมิผลิตภัณฑ์ต่ำกว่า Tc",
+      "reason": "Lyophilization มี 3 ขั้น (1) Freezing แช่แข็งให้ต่ำกว่า Teu (eutectic temperature ของสารที่ตกผลึก) หรือ Tg' (glass transition ของ maximally freeze-concentrated solute ของสารอสัณฐาน) อาจทำ annealing เพื่อให้ผลึกน้ำแข็งใหญ่ขึ้นและให้ mannitol ตกผลึก (2) Primary drying ลดความดันในห้องให้ต่ำมาก (ประมาณ 50–200 mTorr) แล้วให้ความร้อนจาก shelf เพื่อให้น้ำแข็ง sublime ขั้นนี้ใช้เวลานานที่สุดและกำจัดน้ำได้ประมาณ 90% ข้อกำหนดสำคัญคืออุณหภูมิผลิตภัณฑ์ที่ sublimation front ต้องต่ำกว่า Tc (ซึ่งมักสูงกว่า Tg' เล็กน้อย) เพราะถ้าสูงกว่า matrix อสัณฐานจะหนืดน้อยลงจนไหลตัวและยุบ (collapse) รูพรุนปิด ทำให้น้ำระเหยไม่หมด ความชื้นสูง cake ไม่สวย ละลายช้า และอาจลดความคงตัว (3) Secondary drying เพิ่มอุณหภูมิ (เช่น 20–40°C) เพื่อกำจัดน้ำที่ถูกดูดซับไว้ (bound water) โดย desorption จนความชื้นเหลือประมาณ 1–2% ในข้อนี้ −26°C สูงกว่า Tc −30°C อยู่ 4°C จึงต้องลด shelf temperature หรือปรับ chamber pressure ให้อุณหภูมิผลิตภัณฑ์ประมาณ −32 ถึง −33°C แม้รอบจะยาวขึ้น อีกทางหนึ่งคือปรับสูตรให้มีสารที่เพิ่ม Tc หรือใช้ crystalline bulking agent",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Secondary drying ใช้อุณหภูมิสูงเกินไป ควรลดอุณหภูมิ secondary drying ลง",
+          "is_correct": false,
+          "explanation": "ผิด collapse เกิดในช่วง primary drying ที่ยังมีน้ำแข็งอยู่ secondary drying เกิดหลังน้ำแข็งหมดแล้ว และต้องใช้อุณหภูมิสูงอยู่แล้ว"
+        },
+        {
+          "label": "B",
+          "text": "อุณหภูมิผลิตภัณฑ์ใน primary drying สูงกว่า Tc ควรลด shelf temperature (และ/หรือปรับ chamber pressure) ให้อุณหภูมิผลิตภัณฑ์ต่ำกว่า Tc ประมาณ 2–3°C",
+          "is_correct": true,
+          "explanation": "ถูกต้อง product temperature −26°C สูงกว่า Tc −30°C ต้องลด shelf temperature หรือปรับความดันเพื่อให้ผลิตภัณฑ์ต่ำกว่า Tc"
+        },
+        {
+          "label": "C",
+          "text": "ขั้น freezing ช้าเกินไป ควรเปลี่ยนเป็นการแช่แข็งที่ −5°C",
+          "is_correct": false,
+          "explanation": "ผิด −5°C ยังไม่ทำให้ตำรับแข็งตัวสมบูรณ์ (ต้องต่ำกว่า Tg'/Teu) และอัตราการแช่แข็งไม่ใช่ต้นเหตุหลักของปัญหานี้"
+        },
+        {
+          "label": "D",
+          "text": "Chamber pressure ต่ำเกินไป ควรเพิ่ม pressure จนใกล้ความดันบรรยากาศ",
+          "is_correct": false,
+          "explanation": "ผิด การเพิ่ม pressure จนใกล้บรรยากาศทำให้ sublimation หยุดและน้ำแข็งละลาย ยิ่งทำให้ collapse/meltback แย่ลง"
+        },
+        {
+          "label": "E",
+          "text": "ควรตัด bulking agent ออกเพื่อให้ cake แข็งแรงขึ้น",
+          "is_correct": false,
+          "explanation": "ผิด bulking agent ชนิดผลึก (เช่น mannitol) ช่วยค้ำโครงสร้าง cake การตัดออกจะทำให้ collapse ง่ายขึ้น"
+        }
+      ],
+      "key_takeaway": "Freezing (< Tg'/Teu) → Primary drying = sublimation, Tproduct < Tc → Secondary drying = desorption ของ bound water (ความชื้นสุดท้ายประมาณ 1–2%)"
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "ตำรับ lyophilized monoclonal antibody ประกอบด้วย: Antibody 100 mg, Sucrose, Mannitol, L-Histidine/Histidine HCl และ Polysorbate 80 การจับคู่ส่วนประกอบกับบทบาทข้อใดถูกต้องที่สุด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Sucrose: crystalline bulking agent ที่มี eutectic temperature สูง ช่วยให้ทำ primary drying ได้เร็ว"
+      },
+      {
+        "label": "B",
+        "text": "Polysorbate 80: cryoprotectant หลักที่เกิด glassy matrix แทนน้ำรอบโปรตีน"
+      },
+      {
+        "label": "C",
+        "text": "L-Histidine: tonicity agent หลักของตำรับ"
+      },
+      {
+        "label": "D",
+        "text": "Mannitol: bulking agent ที่ตกผลึก ให้โครงสร้าง cake ที่แข็งแรงและสวยงาม"
+      },
+      {
+        "label": "E",
+        "text": "Mannitol: lyoprotectant ที่ต้องคงสภาพอสัณฐานตลอดอายุผลิตภัณฑ์เพื่อจับกับโปรตีน"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "Mannitol เป็น crystalline bulking agent (Teu ประมาณ −1.5°C) ค้ำโครงสร้าง cake ส่วน sucrose เป็น amorphous lyoprotectant, histidine เป็น buffer และ polysorbate 80 เป็น surfactant ป้องกันการเกาะกลุ่มของโปรตีนที่ผิวสัมผัส",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. Mannitol: bulking agent ที่ตกผลึก ให้โครงสร้าง cake ที่แข็งแรงและสวยงาม — mannitol ทำหน้าที่ crystalline bulking agent ที่ให้โครงสร้าง cake แข็งแรงและสวยงาม",
+      "reason": "ตำรับโปรตีนแห้งแบบ lyophilized ต้องมีสารหลายบทบาท (1) Lyoprotectant/cryoprotectant ชนิดอสัณฐาน เช่น sucrose หรือ trehalose ช่วยรักษาโครงสร้างโปรตีนตามทฤษฎี water replacement (สร้าง hydrogen bond แทนน้ำ) และ vitrification (โปรตีนถูกตรึงใน glassy matrix ที่มี Tg สูง) สารเหล่านี้ต้องคงสภาพอสัณฐานและอยู่ในสัดส่วนที่เหมาะสมกับโปรตีน ข้อเสียคือ Tg' ต่ำ (sucrose ประมาณ −32°C) ทำให้ primary drying ต้องช้า (2) Bulking agent ชนิดผลึก เช่น mannitol และ glycine จะตกผลึกระหว่าง freezing/annealing ให้โครงค้ำ cake ที่แข็งแรง มี eutectic temperature สูง (mannitol ประมาณ −1.5°C) ช่วยกันการยุบตัว แต่ถ้า mannitol ไม่ตกผลึกสมบูรณ์ ส่วนที่อสัณฐานอาจตกผลึกภายหลังระหว่างเก็บ ทำให้ปล่อยน้ำออกมาและโปรตีนเสื่อมสภาพ หรือเกิด vial breakage จาก mannitol hemihydrate (3) Buffer เช่น histidine ซึ่งเหมาะกว่า phosphate เพราะ sodium phosphate ตกผลึกระหว่างแช่แข็งจน pH เปลี่ยนมาก (4) Surfactant เช่น polysorbate 20/80 ลดการเกาะกลุ่มของโปรตีนที่ผิวสัมผัสระหว่างน้ำแข็งกับน้ำ และระหว่างอากาศกับน้ำ ระหว่างเขย่า แช่แข็ง และละลายคืน",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Sucrose: crystalline bulking agent ที่มี eutectic temperature สูง ช่วยให้ทำ primary drying ได้เร็ว",
+          "is_correct": false,
+          "explanation": "ผิด sucrose เป็นสารอสัณฐาน (lyoprotectant) มี Tg' ต่ำประมาณ −32°C ไม่ใช่ crystalline bulking agent ที่มี eutectic สูง"
+        },
+        {
+          "label": "B",
+          "text": "Polysorbate 80: cryoprotectant หลักที่เกิด glassy matrix แทนน้ำรอบโปรตีน",
+          "is_correct": false,
+          "explanation": "ผิด polysorbate 80 เป็น surfactant ป้องกันการเกาะกลุ่มที่ผิวสัมผัส ไม่ได้สร้าง glassy matrix (ซึ่งเป็นบทบาทของ sucrose)"
+        },
+        {
+          "label": "C",
+          "text": "L-Histidine: tonicity agent หลักของตำรับ",
+          "is_correct": false,
+          "explanation": "ผิด histidine เป็น buffer ควบคุม pH ส่วน tonicity มาจาก sucrose และ mannitol เป็นหลัก"
+        },
+        {
+          "label": "D",
+          "text": "Mannitol: bulking agent ที่ตกผลึก ให้โครงสร้าง cake ที่แข็งแรงและสวยงาม",
+          "is_correct": true,
+          "explanation": "ถูกต้อง mannitol ตกผลึกเป็นโครงค้ำ cake มี eutectic สูง และช่วยให้ cake สวยงาม"
+        },
+        {
+          "label": "E",
+          "text": "Mannitol: lyoprotectant ที่ต้องคงสภาพอสัณฐานตลอดอายุผลิตภัณฑ์เพื่อจับกับโปรตีน",
+          "is_correct": false,
+          "explanation": "ผิด mannitol ในบทบาท bulking agent ต้องตกผลึก หากค้างเป็นอสัณฐานจะตกผลึกภายหลังระหว่างเก็บและทำให้ผลิตภัณฑ์ไม่คงตัว"
+        }
+      ],
+      "key_takeaway": "Lyo formulation: sucrose/trehalose = amorphous lyoprotectant; mannitol/glycine = crystalline bulking agent; histidine = buffer (ไม่ใช้ Na phosphate); polysorbate = surfactant"
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "ใบสั่งยา: Pilocarpine HCl 2% w/v ยาหยอดตา 30 mL ปรับให้ isotonic ด้วย NaCl กำหนดค่า Sodium chloride equivalent (E) ของ pilocarpine HCl = 0.24 ต้องใช้ NaCl เท่าใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "270 mg"
+      },
+      {
+        "label": "B",
+        "text": "126 mg"
+      },
+      {
+        "label": "C",
+        "text": "144 mg"
+      },
+      {
+        "label": "D",
+        "text": "414 mg"
+      },
+      {
+        "label": "E",
+        "text": "205 mg"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "NaCl ที่ต้องใช้ทั้งหมด = 0.9% × 30 mL = 270 mg; pilocarpine 600 mg × 0.24 = 144 mg; NaCl ที่ต้องเติม = 270 − 144 = 126 mg",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. 126 mg — NaCl ที่ต้องเติม = 270 mg − (600 mg × 0.24) = 126 mg",
+      "reason": "วิธี Sodium chloride equivalent (E-value) อาศัยหลักว่า E คือปริมาณ NaCl (g) ที่ให้ผลทาง osmotic เท่ากับยา 1 g ขั้นตอนคือ (1) คำนวณ NaCl ที่ทำให้ปริมาตรทั้งหมด isotonic: 0.9 g/100 mL × 30 mL = 0.270 g (2) คำนวณน้ำหนักยา: 2 g/100 mL × 30 mL = 0.600 g (3) แปลงยาเป็น NaCl equivalent: 0.600 × 0.24 = 0.144 g (4) NaCl ที่ต้องเติม = 0.270 − 0.144 = 0.126 g = 126 mg หากต้องใช้สารปรับ tonicity ตัวอื่น เช่น boric acid (E = 0.50) ให้นำ 126 mg ÷ 0.50 = 252 mg ยาหยอดตาควรอยู่ในช่วงที่ตาทนได้ประมาณ 0.6–2.0% NaCl equivalent แต่ควรใกล้ isotonic (0.9%) เพื่อลดการระคายเคืองและการหลั่งน้ำตาที่ชะล้างยา",
+      "choices": [
+        {
+          "label": "A",
+          "text": "270 mg",
+          "is_correct": false,
+          "explanation": "270 mg คือ NaCl ทั้งหมดที่ต้องการถ้าไม่มียา ยังไม่ได้หักส่วนที่ pilocarpine มีส่วนทำให้ isotonic"
+        },
+        {
+          "label": "B",
+          "text": "126 mg",
+          "is_correct": true,
+          "explanation": "ถูกต้อง 270 − (600 × 0.24) = 126 mg"
+        },
+        {
+          "label": "C",
+          "text": "144 mg",
+          "is_correct": false,
+          "explanation": "144 mg คือ NaCl equivalent ของ pilocarpine HCl ไม่ใช่ปริมาณ NaCl ที่ต้องเติม"
+        },
+        {
+          "label": "D",
+          "text": "414 mg",
+          "is_correct": false,
+          "explanation": "414 mg ได้จากการบวก (270 + 144) แทนการลบ ทำให้ตำรับ hypertonic"
+        },
+        {
+          "label": "E",
+          "text": "205 mg",
+          "is_correct": false,
+          "explanation": "205 mg ได้จาก 270 × (1 − 0.24) ซึ่งใช้ E ผิดวิธี (นำ E ไปคูณกับปริมาณ NaCl แทนการคูณกับน้ำหนักยา)"
+        }
+      ],
+      "key_takeaway": "NaCl ที่เติม = (0.009 × V mL) g − Σ(น้ำหนักยา g × E); เปลี่ยนเป็นสารอื่น = NaCl ÷ E ของสารนั้น",
+      "calculation_steps": [
+        "ขั้นที่ 1: NaCl สำหรับ 30 mL isotonic = 0.9 g/100 mL × 30 mL = 0.270 g",
+        "ขั้นที่ 2: Pilocarpine HCl = 2 g/100 mL × 30 mL = 0.600 g",
+        "ขั้นที่ 3: NaCl equivalent ของยา = 0.600 g × 0.24 = 0.144 g",
+        "ขั้นที่ 4: NaCl ที่ต้องเติม = 0.270 − 0.144 = 0.126 g = 126 mg"
+      ]
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "ต้องการเตรียมยาฉีดยา Y 2% w/v ปริมาตร 100 mL ให้ isotonic ด้วย NaCl โดยวิธี freezing point depression กำหนด: สารละลายยา Y 1% w/v มี ΔTf = 0.09°C, สารละลาย NaCl 1% w/v มี ΔTf = 0.58°C และ ΔTf ของซีรั่ม/น้ำตา = 0.52°C ต้องเติม NaCl เท่าใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "897 mg"
+      },
+      {
+        "label": "B",
+        "text": "741 mg"
+      },
+      {
+        "label": "C",
+        "text": "340 mg"
+      },
+      {
+        "label": "D",
+        "text": "586 mg"
+      },
+      {
+        "label": "E",
+        "text": "1,207 mg"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "ยา 2% ลดจุดเยือกแข็ง 0.18°C ต้องลดเพิ่มอีก 0.52 − 0.18 = 0.34°C → NaCl = 0.34/0.58 = 0.586% → ใน 100 mL = 0.586 g ≈ 586 mg",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. 586 mg — NaCl = (0.52 − 2 × 0.09)/0.58 = 0.586 g ต่อ 100 mL ≈ 586 mg",
+      "reason": "ของเหลวในร่างกาย (เลือดและน้ำตา) มีจุดเยือกแข็งต่ำกว่าน้ำบริสุทธิ์ 0.52°C สารละลายใดที่มี ΔTf = 0.52°C จึงถือว่า isotonic (ซึ่งเทียบเท่า NaCl 0.9%) ΔTf เป็น colligative property ที่แปรผันตรงกับความเข้มข้นในช่วงเจือจาง สูตรคือ %NaCl ที่ต้องเติม = (0.52 − a)/b โดย a คือ ΔTf ของยาที่ความเข้มข้นในตำรับ และ b คือ ΔTf ของ NaCl 1% (0.58°C) ในข้อนี้ยา 2% ให้ a = 2 × 0.09 = 0.18°C ต้องการเพิ่มอีก 0.34°C จาก NaCl ได้ 0.34/0.58 = 0.586 g/100 mL ปริมาตร 100 mL จึงต้องใช้ NaCl 0.586 g ≈ 586 mg วิธีนี้ให้ผลสอดคล้องกับวิธี E-value โดย E ≈ ΔTf(1%)/0.58 ซึ่งในกรณีนี้ E ของยา Y ≈ 0.155 ตรวจสอบได้ว่า 0.9 − 2 × 0.155 = 0.59 g ซึ่งใกล้กัน ข้อควรระวังคือต้องคูณ ΔTf ของยาตามความเข้มข้นจริงก่อนนำไปลบ",
+      "choices": [
+        {
+          "label": "A",
+          "text": "897 mg",
+          "is_correct": false,
+          "explanation": "897 mg ได้จาก 0.52/0.58 โดยไม่หักส่วนที่ยามีส่วนทำให้ isotonic"
+        },
+        {
+          "label": "B",
+          "text": "741 mg",
+          "is_correct": false,
+          "explanation": "741 mg ได้จากการใช้ ΔTf ของยา 1% (0.09) แทนยา 2% (0.18) ทำให้ได้ NaCl มากเกินไป"
+        },
+        {
+          "label": "C",
+          "text": "340 mg",
+          "is_correct": false,
+          "explanation": "340 mg ได้จากการนำ ΔTf ที่ขาด (0.34°C) มาใช้เป็นกรัมต่อ 100 mL โดยไม่หารด้วย 0.58"
+        },
+        {
+          "label": "D",
+          "text": "586 mg",
+          "is_correct": true,
+          "explanation": "ถูกต้อง (0.52 − 0.18)/0.58 = 0.586 g ต่อ 100 mL ≈ 586 mg"
+        },
+        {
+          "label": "E",
+          "text": "1,207 mg",
+          "is_correct": false,
+          "explanation": "1,207 mg ได้จากการบวก ΔTf ของยาแทนการลบ (0.52 + 0.18)/0.58 ทำให้ตำรับ hypertonic"
+        }
+      ],
+      "key_takeaway": "%NaCl = (0.52 − a)/0.58; a = ΔTf ของยาที่ความเข้มข้นในตำรับ; ΔTf 0.52°C ≡ NaCl 0.9% ≡ isotonic",
+      "calculation_steps": [
+        "ขั้นที่ 1: ΔTf ของยา Y 2% = 2 × 0.09°C = 0.18°C",
+        "ขั้นที่ 2: ΔTf ที่ยังขาด = 0.52 − 0.18 = 0.34°C",
+        "ขั้นที่ 3: ความเข้มข้น NaCl = 0.34°C ÷ 0.58°C ต่อ 1% = 0.586% w/v",
+        "ขั้นที่ 4: NaCl ใน 100 mL = 0.586 g/100 mL × 100 mL = 0.586 g ≈ 586 mg"
+      ]
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "สารละลาย IV ชนิด 5% Dextrose in 0.45% Sodium chloride (D5 ½NSS) มี osmolarity ตามทฤษฎีประมาณเท่าใด (MW: dextrose = 180, NaCl = 58.5; สมมติว่า NaCl แตกตัวสมบูรณ์)",
+    "choices": [
+      {
+        "label": "A",
+        "text": "432 mOsm/L"
+      },
+      {
+        "label": "B",
+        "text": "355 mOsm/L"
+      },
+      {
+        "label": "C",
+        "text": "586 mOsm/L"
+      },
+      {
+        "label": "D",
+        "text": "308 mOsm/L"
+      },
+      {
+        "label": "E",
+        "text": "278 mOsm/L"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Dextrose 50 g/L ÷ 180 = 277.8 mOsm/L; NaCl 4.5 g/L ÷ 58.5 × 2 = 153.8 mOsm/L; รวมประมาณ 432 mOsm/L",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. 432 mOsm/L — osmolarity = 277.8 (dextrose) + 153.8 (NaCl) ≈ 432 mOsm/L",
+      "reason": "Osmolarity (mOsm/L) = (g/L ÷ MW) × จำนวนอนุภาคที่แตกตัวได้ × 1,000 dextrose ไม่แตกตัว (1 อนุภาค) ส่วน NaCl แตกตัวเป็น Na+ และ Cl− (2 อนุภาค) D5 ½NSS มี dextrose 50 g/L ได้ 50/180 = 0.2778 Osm/L = 277.8 mOsm/L และ NaCl 4.5 g/L ได้ 4.5/58.5 = 0.0769 mol/L × 2 = 153.8 mOsm/L รวมเป็น 431.6 ≈ 432 mOsm/L ซึ่งสูงกว่าพลาสมา (ประมาณ 285–295 mOsm/kg) จึงเป็น hypertonic ในขวด แต่เมื่อเข้าสู่ร่างกาย dextrose ถูก metabolize ไปอย่างรวดเร็ว ผลสุทธิจึงคล้ายการได้รับ ½NSS (hypotonic) สารละลายที่ osmolarity สูงกว่าประมาณ 900 mOsm/L ควรให้ทาง central line เพื่อลดความเสี่ยง phlebitis ค่าที่คำนวณได้เป็นค่าทางทฤษฎี ค่าที่วัดจริง (osmolality) จะต่ำกว่าเล็กน้อยเพราะ osmotic coefficient ของ NaCl ประมาณ 0.93",
+      "choices": [
+        {
+          "label": "A",
+          "text": "432 mOsm/L",
+          "is_correct": true,
+          "explanation": "ถูกต้อง 277.8 + 153.8 = 431.6 ≈ 432 mOsm/L"
+        },
+        {
+          "label": "B",
+          "text": "355 mOsm/L",
+          "is_correct": false,
+          "explanation": "355 mOsm/L ได้จากการลืมคูณ 2 สำหรับการแตกตัวของ NaCl (277.8 + 76.9)"
+        },
+        {
+          "label": "C",
+          "text": "586 mOsm/L",
+          "is_correct": false,
+          "explanation": "586 mOsm/L ได้จากการใช้ NaCl 0.9% (307.7) แทน 0.45% แล้วบวกกับ dextrose"
+        },
+        {
+          "label": "D",
+          "text": "308 mOsm/L",
+          "is_correct": false,
+          "explanation": "308 mOsm/L คือ osmolarity ของ 0.9% NaCl เพียงอย่างเดียว"
+        },
+        {
+          "label": "E",
+          "text": "278 mOsm/L",
+          "is_correct": false,
+          "explanation": "278 mOsm/L คือ osmolarity ของ D5W เพียงอย่างเดียว ยังไม่รวม NaCl"
+        }
+      ],
+      "key_takeaway": "mOsm/L = (g/L ÷ MW) × n × 1000; D5W ≈ 278, NSS ≈ 308, D5 ½NSS ≈ 432 mOsm/L; > 900 mOsm/L → central line",
+      "calculation_steps": [
+        "ขั้นที่ 1: Dextrose 5% = 50 g/L → 50 ÷ 180 = 0.2778 mol/L × 1 = 277.8 mOsm/L",
+        "ขั้นที่ 2: NaCl 0.45% = 4.5 g/L → 4.5 ÷ 58.5 = 0.07692 mol/L",
+        "ขั้นที่ 3: NaCl แตกตัว 2 อนุภาค → 0.07692 × 2 = 0.1538 Osm/L = 153.8 mOsm/L",
+        "ขั้นที่ 4: รวม = 277.8 + 153.8 = 431.6 ≈ 432 mOsm/L"
+      ]
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "ยาหยอดตา Timolol 0.5% ประกอบด้วย: Timolol maleate, Monobasic และ Dibasic sodium phosphate, Sodium hydroxide q.s. pH 6.8–7.2, Benzalkonium chloride 0.01% และ Water for Injection ผู้ป่วยใส่คอนแทคเลนส์ชนิดนิ่ม (soft contact lens) ได้รับคำแนะนำให้ถอดเลนส์ก่อนหยอดยาและรออย่างน้อย 15 นาทีจึงใส่กลับ เป็นเพราะส่วนประกอบใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Monobasic sodium phosphate"
+      },
+      {
+        "label": "B",
+        "text": "Timolol maleate"
+      },
+      {
+        "label": "C",
+        "text": "Sodium hydroxide"
+      },
+      {
+        "label": "D",
+        "text": "Water for Injection"
+      },
+      {
+        "label": "E",
+        "text": "Benzalkonium chloride"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "Benzalkonium chloride (BAK) เป็น quaternary ammonium preservative ที่ถูกดูดซับและสะสมใน soft contact lens และเป็นพิษต่อ corneal epithelium",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. Benzalkonium chloride — benzalkonium chloride สะสมใน soft contact lens และระคายเคืองกระจกตา",
+      "reason": "ยาหยอดตาชนิด multi-dose ต้องปราศจากเชื้อและมี preservative ตัวที่ใช้มากที่สุดคือ benzalkonium chloride (BAK) ความเข้มข้นประมาณ 0.004–0.02% (ทั่วไป 0.01%) BAK เป็น cationic surfactant ที่ออกฤทธิ์เร็วและกว้าง ฤทธิ์ต่อ Pseudomonas aeruginosa จะเสริมขึ้นเมื่อใช้ร่วมกับ disodium edetate ข้อเสียคือ (1) ถูกดูดซับเข้า hydrogel ของ soft contact lens แล้วสัมผัสกระจกตาต่อเนื่องจนระคายเคือง จึงให้ถอดเลนส์ก่อนหยอดและรอ 15 นาที (2) เป็นพิษต่อ corneal epithelium เมื่อใช้ระยะยาว เช่นในต้อหิน จนเกิดภาวะตาแห้งหรือ punctate keratitis จึงมียาแบบ preservative-free หรือที่ใช้ preservative อื่น (เช่น Polyquad, Purite, SofZia) (3) incompatible กับสาร anionic (เช่น sodium salts ของ anionic drugs, fluorescein) และ nitrate และถูกดูดซับบน filter หรือภาชนะบางชนิด ยาหยอดตาที่ใช้ระหว่างการผ่าตัดหรือหยอดในตาที่บาดเจ็บต้องไม่มี preservative",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Monobasic sodium phosphate",
+          "is_correct": false,
+          "explanation": "Phosphate buffer ควบคุม pH ไม่ได้สะสมในเลนส์ในระดับที่เป็นปัญหาทางคลินิก"
+        },
+        {
+          "label": "B",
+          "text": "Timolol maleate",
+          "is_correct": false,
+          "explanation": "Timolol เป็นตัวยาสำคัญ (β-blocker ลดความดันตา) คำแนะนำนี้ไม่ได้เกิดจากตัวยา"
+        },
+        {
+          "label": "C",
+          "text": "Sodium hydroxide",
+          "is_correct": false,
+          "explanation": "NaOH ใช้ปรับ pH เพียงเล็กน้อยระหว่างผลิต และสุดท้ายอยู่ในรูปเกลือ phosphate ไม่ได้สะสมในเลนส์"
+        },
+        {
+          "label": "D",
+          "text": "Water for Injection",
+          "is_correct": false,
+          "explanation": "WFI เป็นตัวทำละลาย ไม่ก่อปัญหากับคอนแทคเลนส์"
+        },
+        {
+          "label": "E",
+          "text": "Benzalkonium chloride",
+          "is_correct": true,
+          "explanation": "ถูกต้อง BAK ถูกดูดซับเข้า soft contact lens และเป็นพิษต่อ corneal epithelium"
+        }
+      ],
+      "key_takeaway": "BAK 0.004–0.02%: ถอด soft lens ก่อนหยอดแล้วรอ 15 นาที; incompatible กับ anionic; EDTA เสริมฤทธิ์ต่อ Pseudomonas; ยาหยอดตา multi-dose ทิ้งหลังเปิด 28 วัน"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "ตำรับยาหยอดตาประกอบด้วย: ตัวยาสำคัญ, Hydroxypropyl methylcellulose (HPMC) 0.5%, Benzalkonium chloride 0.01%, Boric acid/Sodium borate buffer, Sodium chloride q.s. isotonic และ Purified water ที่ทำให้ปราศจากเชื้อ q.s. 100 mL บทบาทของ HPMC คือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Antimicrobial preservative"
+      },
+      {
+        "label": "B",
+        "text": "Buffer รักษา pH"
+      },
+      {
+        "label": "C",
+        "text": "Viscosity-enhancing agent เพิ่มความหนืด ยืดระยะเวลาที่ยาอยู่บนผิวตา"
+      },
+      {
+        "label": "D",
+        "text": "Tonicity-adjusting agent"
+      },
+      {
+        "label": "E",
+        "text": "Chelating agent"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "HPMC เป็น cellulose derivative ที่เพิ่มความหนืดของยาหยอดตา ลดการถูกชะล้างผ่าน nasolacrimal drainage ทำให้ยาอยู่บนผิวตาได้นานขึ้น (precorneal residence time) และช่วยหล่อลื่น",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. Viscosity-enhancing agent เพิ่มความหนืด ยืดระยะเวลาที่ยาอยู่บนผิวตา — HPMC เป็น viscosity-enhancing agent ที่ยืดเวลาที่ยาอยู่บนผิวตา",
+      "reason": "ยาหยอดตาถูกชะล้างออกจากผิวตาเร็วมาก (ภายในไม่กี่นาที) เพราะน้ำตาหลั่งและระบายผ่าน nasolacrimal duct ทำให้ bioavailability ต่ำ (มักน้อยกว่า 5%) การเพิ่มความหนืดด้วย polymer เช่น HPMC, methylcellulose, carboxymethylcellulose, polyvinyl alcohol, povidone หรือ hyaluronate (ความหนืดที่เหมาะสมประมาณ 15–25 cP) จะยืด precorneal residence time ลดการระบาย และช่วยหล่อลื่นแบบ artificial tears ถ้าหนืดเกินไปจะทำให้ตามัวและมีคราบที่ขนตา ส่วนประกอบอื่นของตำรับมีหน้าที่ต่างกัน คือ BAK เป็น preservative, boric acid/sodium borate เป็น buffer (pH ที่ตาทนได้กว้างพอสมควร แต่อุดมคติใกล้ 7.4 ซึ่งต้องพิจารณาร่วมกับความคงตัวและการละลายของยา), NaCl ปรับ tonicity (ช่วงที่ตาทนได้ประมาณ 0.6–2.0% NaCl equivalent) ยาหยอดตาทุกชนิดต้องปราศจากเชื้อ และต้องควบคุมอนุภาคด้วย",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Antimicrobial preservative",
+          "is_correct": false,
+          "explanation": "Preservative ของตำรับคือ benzalkonium chloride HPMC ไม่มีฤทธิ์ต้านจุลชีพ"
+        },
+        {
+          "label": "B",
+          "text": "Buffer รักษา pH",
+          "is_correct": false,
+          "explanation": "Buffer คือ boric acid/sodium borate HPMC ไม่ได้ควบคุม pH"
+        },
+        {
+          "label": "C",
+          "text": "Viscosity-enhancing agent เพิ่มความหนืด ยืดระยะเวลาที่ยาอยู่บนผิวตา",
+          "is_correct": true,
+          "explanation": "ถูกต้อง HPMC เพิ่มความหนืด ยืด precorneal residence time และหล่อลื่นผิวตา"
+        },
+        {
+          "label": "D",
+          "text": "Tonicity-adjusting agent",
+          "is_correct": false,
+          "explanation": "Tonicity ปรับด้วย NaCl HPMC เป็น polymer ที่มีน้ำหนักโมเลกุลสูง จึงมีผลต่อ osmotic pressure น้อยมาก"
+        },
+        {
+          "label": "E",
+          "text": "Chelating agent",
+          "is_correct": false,
+          "explanation": "ตำรับนี้ไม่มี chelating agent (ถ้ามีมักเป็น disodium edetate) HPMC ไม่จับไอออนโลหะ"
+        }
+      ],
+      "key_takeaway": "Ophthalmic: viscosity enhancer = HPMC/MC/CMC/PVA/PVP (15–25 cP); tonicity 0.6–2.0% NaCl eq.; ต้องปราศจากเชื้อ; preservative ทั่วไปคือ BAK"
+    },
+    "difficulty": "easy"
+  }
+]
