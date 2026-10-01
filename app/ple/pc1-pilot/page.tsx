@@ -17,7 +17,7 @@ export default async function Page(){
    <p className="mt-2 text-sm text-muted-foreground">{PC1_CASE_COUNT} สถานการณ์ · {PC1_ALL.length} ข้อ · Medium–Hard</p>
    <p className="mt-1 text-xs text-muted-foreground">Cardiorenal · ACS · AF · Asthma · Infection · CKD/Electrolyte · Rheumatology · Hepatology · Warfarin/Digoxin · TB/HIV · Vancomycin · Phenytoin · DKA · Pediatric AOM · STEMI/DAPT · PE/Heparin/HIT · Aortic dissection · HFrEF GDMT · Dyslipidemia/SAMS · VTE in pregnancy · Septic shock/Aminoglycoside · Meningitis · ESBL pyelonephritis in pregnancy · Candidemia/Azole DDI · C. difficile · HCV/HBV DAA · AKI/Renal dosing · SIADH/Hyponatremia · T2DM GLP-1/Insulin · Graves in pregnancy · CKD anemia/MBD · Adrenal crisis/GIOP</p>
   </div>
-  <Link href="/ple/pc1-mock/1" className="mb-6 flex items-center justify-between rounded-2xl border border-rose-200 bg-rose-50/60 p-4 text-sm font-semibold hover:bg-rose-50">⏱️ จำลองสอบ PC1 Mock Set 1 · 120 ข้อ 12 หมวด จับเวลา<span className="text-rose-600">เริ่มสอบ →</span></Link>
+  <Link href="/ple/pc1-mock" className="mb-6 flex items-center justify-between rounded-2xl border border-rose-200 bg-rose-50/60 p-4 text-sm font-semibold hover:bg-rose-50">⏱️ จำลองสอบ PC1 · เลือกชุด Mock Set 1–2 (ชุดละ 120 ข้อ 12 หมวด จับเวลา)<span className="text-rose-600">เลือกชุด →</span></Link>
   <McqPractice questions={gated.questions} initialCreditBalance={gated.creditBalance} playAllowance={allowance}/>
  </div>
 }
