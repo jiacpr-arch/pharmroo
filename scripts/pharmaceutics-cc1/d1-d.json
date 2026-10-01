@@ -1,0 +1,2014 @@
+[
+  {
+    "scenario": "ในการตั้งตำรับวิธี assay ของยาที่เป็นกรดอ่อนชนิด monoprotic (pKa ประมาณ 4.2) ในรูปสารละลายน้ำ-แอลกอฮอล์ โดยไทเทรตด้วย 0.1 M sodium hydroxide (strong base) ควรเลือกใช้ indicator ใดจึงเหมาะสมที่สุด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Methyl orange (ช่วงเปลี่ยนสี pH 3.1–4.4)"
+      },
+      {
+        "label": "B",
+        "text": "Phenolphthalein (ช่วงเปลี่ยนสี pH 8.2–10.0)"
+      },
+      {
+        "label": "C",
+        "text": "Methyl red (ช่วงเปลี่ยนสี pH 4.4–6.2)"
+      },
+      {
+        "label": "D",
+        "text": "Bromocresol green (ช่วงเปลี่ยนสี pH 3.8–5.4)"
+      },
+      {
+        "label": "E",
+        "text": "Crystal violet ใน glacial acetic acid"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "การไทเทรตกรดอ่อนด้วยเบสแก่ให้ equivalence point อยู่ในช่วงด่าง (pH ประมาณ 8–9) เพราะเกิด conjugate base ของกรดอ่อน จึงต้องใช้ indicator ที่เปลี่ยนสีในช่วงด่าง เช่น phenolphthalein",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. Phenolphthalein (ช่วงเปลี่ยนสี pH 8.2–10.0) — กรดอ่อน + เบสแก่ มีจุดสมมูลในช่วงด่าง จึงใช้ indicator ที่เปลี่ยนสีที่ pH 8–10",
+      "reason": "ที่จุดสมมูลของการไทเทรตกรดอ่อน HA ด้วย NaOH สารในระบบคือเกลือ A⁻ ซึ่งเป็น conjugate base ที่ hydrolyze น้ำให้ OH⁻ ทำให้ pH ที่จุดสมมูลสูงกว่า 7 (โดยทั่วไปประมาณ 8–9 ขึ้นกับ pKa และความเข้มข้น) หลักการเลือก indicator คือช่วงเปลี่ยนสี (pKIn ± 1) ต้องอยู่ในส่วนที่ชันของ titration curve ซึ่งครอบคลุม pH ที่จุดสมมูล Phenolphthalein เปลี่ยนจากไม่มีสีเป็นสีชมพูที่ pH 8.2–10.0 จึงเหมาะที่สุด และเป็น indicator ที่ใช้จริงใน monograph หลายตัว เช่น assay ของ benzoic acid, salicylic acid หรือ aspirin (แบบ back titration) ส่วน indicator ที่เปลี่ยนสีในช่วงกรดจะเปลี่ยนสีก่อนถึงจุดสมมูล ทำให้ได้ผล assay ต่ำกว่าจริง (end point เกิดก่อน) ในทางปฏิบัติอาจเติม ethanol ที่ neutralize แล้วเพื่อช่วยละลายตัวยาที่ละลายน้ำได้น้อย และควรทำ blank หรือ neutralize ตัวทำละลายก่อนด้วย indicator เดียวกัน",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Methyl orange (ช่วงเปลี่ยนสี pH 3.1–4.4)",
+          "is_correct": false,
+          "explanation": "Methyl orange เปลี่ยนสีในช่วงกรด (3.1–4.4) ซึ่งเหมาะกับการไทเทรตเบสอ่อนด้วยกรดแก่ (จุดสมมูลอยู่ในช่วงกรด) เช่น การไทเทรต Na2CO3 จนถึงจุดสมมูลที่สอง ถ้านำมาใช้กับกรดอ่อนจะเปลี่ยนสีเร็วเกินไป"
+        },
+        {
+          "label": "B",
+          "text": "Phenolphthalein (ช่วงเปลี่ยนสี pH 8.2–10.0)",
+          "is_correct": true,
+          "explanation": "ถูกต้อง เพราะช่วงเปลี่ยนสีของ phenolphthalein ครอบคลุม pH ที่จุดสมมูลของกรดอ่อน–เบสแก่ (pH > 7)"
+        },
+        {
+          "label": "C",
+          "text": "Methyl red (ช่วงเปลี่ยนสี pH 4.4–6.2)",
+          "is_correct": false,
+          "explanation": "Methyl red เปลี่ยนสีที่ pH 4.4–6.2 ยังอยู่ในช่วงกรด เหมาะกับการไทเทรตเบสอ่อน (เช่น ammonia) ด้วยกรดแก่ ไม่เหมาะกับกรดอ่อนเพราะจะได้ end point ก่อนถึงจุดสมมูล"
+        },
+        {
+          "label": "D",
+          "text": "Bromocresol green (ช่วงเปลี่ยนสี pH 3.8–5.4)",
+          "is_correct": false,
+          "explanation": "Bromocresol green เปลี่ยนสีที่ pH 3.8–5.4 ซึ่งเป็นช่วงกรด ใช้กับการไทเทรตเบสอ่อนด้วยกรดแก่ ไม่เหมาะในกรณีนี้"
+        },
+        {
+          "label": "E",
+          "text": "Crystal violet ใน glacial acetic acid",
+          "is_correct": false,
+          "explanation": "Crystal violet เป็น indicator สำหรับ non-aqueous titration ของเบสอ่อนด้วย perchloric acid ใน glacial acetic acid ไม่ใช่การไทเทรตกรดอ่อนด้วย NaOH ในน้ำ"
+        }
+      ],
+      "key_takeaway": "กรดอ่อน + เบสแก่ → จุดสมมูล pH > 7 → phenolphthalein; เบสอ่อน + กรดแก่ → จุดสมมูล pH < 7 → methyl orange/methyl red"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "การ assay ยาที่เป็นเกลือ hydrochloride ของ amine (เบสอ่อน) ด้วยวิธี non-aqueous titration ตาม pharmacopoeia ดั้งเดิม ใช้ 0.1 M perchloric acid ใน glacial acetic acid และเติม mercuric acetate ลงในสารละลายตัวอย่างก่อนไทเทรต mercuric acetate มีบทบาทอย่างไร",
+    "choices": [
+      {
+        "label": "A",
+        "text": "เป็น indicator ที่เปลี่ยนสีจากม่วงเป็นเขียวที่ end point"
+      },
+      {
+        "label": "B",
+        "text": "เป็นตัวเร่งปฏิกิริยาให้ perchloric acid แตกตัวได้สมบูรณ์ขึ้น"
+      },
+      {
+        "label": "C",
+        "text": "ดูดน้ำออกจากระบบแทน acetic anhydride"
+      },
+      {
+        "label": "D",
+        "text": "ทำปฏิกิริยากับ chloride ion ให้เป็น HgCl2 ที่ไม่แตกตัว และแทนที่ด้วย acetate ion ซึ่งเป็นเบสแรงในตัวทำละลายนี้และไทเทรตได้"
+      },
+      {
+        "label": "E",
+        "text": "ทำให้ amine ตกตะกอนออกจากสารละลายเพื่อป้องกันการรบกวน"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "Halide ion เป็นเบสที่อ่อนมากใน glacial acetic acid จึงไทเทรตกับ HClO4 ไม่ได้ mercuric acetate จับ Cl⁻ เป็น HgCl2 ที่ไม่แตกตัวและปล่อย acetate ซึ่งเป็นเบสแรงใน acetic acid ออกมาให้ไทเทรตแทนในปริมาณสมมูลกัน",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. ทำปฏิกิริยากับ chloride ion ให้เป็น HgCl2 ที่ไม่แตกตัว และแทนที่ด้วย acetate ion ซึ่งเป็นเบสแรงในตัวทำละลายนี้และไทเทรตได้ — Hg(OAc)2 เปลี่ยน halide ที่ไทเทรตไม่ได้ให้เป็น acetate ที่ไทเทรตได้",
+      "reason": "ใน glacial acetic acid ซึ่งเป็น protogenic solvent ปฏิกิริยาไทเทรตจริงคือ CH3COOH2⁺ (acetonium ion จาก HClO4) กับเบส สำหรับเกลือ R-NH3⁺Cl⁻ ส่วนที่ต้องถูกไทเทรตคือ anion ที่จับกับ proton แต่ Cl⁻ เป็น conjugate base ของ HCl ซึ่งเป็นกรดแก่ใน acetic acid ด้วย จึงแทบไม่มีความเป็นเบส ไทเทรตแล้วไม่ได้ end point ที่ชัดเจน การเติม mercuric acetate (มากเกินพอ) เกิดปฏิกิริยา 2 R-NH3⁺Cl⁻ + Hg(OAc)2 → 2 R-NH3⁺OAc⁻ + HgCl2 โดย HgCl2 เป็นสารที่แตกตัวน้อยมากใน acetic acid และ acetate (CH3COO⁻) เป็นเบสที่แรงที่สุดในตัวทำละลายนี้ จึงไทเทรตกับ HClO4 ได้ end point คมชัด โดยจำนวนโมลของ acetate เท่ากับจำนวนโมลของ halide เดิม สัดส่วนจึงยังเป็น 1:1 กับตัวยา mercuric acetate ที่เหลือไม่รบกวนเพราะแตกตัวน้อย indicator ที่ใช้มักเป็น crystal violet หรือใช้ potentiometric end point ปัจจุบัน Ph. Eur./BP ฉบับใหม่ลดการใช้สารปรอทเนื่องจากความเป็นพิษ โดยเปลี่ยนไปใช้วิธีอื่น เช่น ไทเทรตด้วย ethanolic NaOH แบบ potentiometric หรือไทเทรตใน acetic anhydride",
+      "choices": [
+        {
+          "label": "A",
+          "text": "เป็น indicator ที่เปลี่ยนสีจากม่วงเป็นเขียวที่ end point",
+          "is_correct": false,
+          "explanation": "Indicator ที่เปลี่ยนสีม่วง → น้ำเงิน-เขียว คือ crystal violet ไม่ใช่ mercuric acetate ซึ่งไม่มีสมบัติเป็น indicator"
+        },
+        {
+          "label": "B",
+          "text": "เป็นตัวเร่งปฏิกิริยาให้ perchloric acid แตกตัวได้สมบูรณ์ขึ้น",
+          "is_correct": false,
+          "explanation": "HClO4 แตกตัวและเป็นกรดแรงที่สุดใน acetic acid อยู่แล้ว mercuric acetate ไม่ได้ทำหน้าที่เร่งการแตกตัว"
+        },
+        {
+          "label": "C",
+          "text": "ดูดน้ำออกจากระบบแทน acetic anhydride",
+          "is_correct": false,
+          "explanation": "สารที่ใช้ขจัดน้ำในระบบ non-aqueous คือ acetic anhydride (เติมตอนเตรียม titrant เพื่อทำปฏิกิริยากับน้ำจาก HClO4 70%) ไม่ใช่ mercuric acetate"
+        },
+        {
+          "label": "D",
+          "text": "ทำปฏิกิริยากับ chloride ion ให้เป็น HgCl2 ที่ไม่แตกตัว และแทนที่ด้วย acetate ion ซึ่งเป็นเบสแรงในตัวทำละลายนี้และไทเทรตได้",
+          "is_correct": true,
+          "explanation": "ถูกต้อง Hg(OAc)2 ทำให้ halide อยู่ในรูป HgCl2 ที่ไม่แตกตัว และได้ acetate ที่เป็นเบสแรงซึ่งไทเทรตได้สมมูลกับตัวยา"
+        },
+        {
+          "label": "E",
+          "text": "ทำให้ amine ตกตะกอนออกจากสารละลายเพื่อป้องกันการรบกวน",
+          "is_correct": false,
+          "explanation": "Mercuric acetate ไม่ได้ทำให้ amine ตกตะกอน ตรงกันข้าม amine ต้องอยู่ในสารละลายเพื่อให้ไทเทรตได้ครบ"
+        }
+      ],
+      "key_takeaway": "Non-aqueous titration ของเกลือ HCl/HBr ของเบสอ่อน: เติม mercuric acetate → HgX2 (ไม่แตกตัว) + acetate (ไทเทรตได้) ใช้ crystal violet เป็น indicator"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ยา X เป็นเบสอ่อนมาก (pKb ในน้ำประมาณ 10) เมื่อไทเทรตในน้ำด้วย HCl ไม่ได้ end point ที่ชัดเจน นักวิเคราะห์จึงเปลี่ยนไปไทเทรตด้วย 0.1 M perchloric acid ใน glacial acetic acid ใช้ crystal violet เป็น indicator เหตุผลหลักที่วิธีนี้ได้ end point ชัดเจนกว่าคือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Glacial acetic acid เป็นตัวทำละลายที่มีความเป็นกรด จึงแข่งรับ proton ได้น้อยกว่าน้ำ ทำให้เบสอ่อนแสดงความเป็นเบสแรงขึ้น และ HClO4 ให้ acetonium ion ที่เป็นกรดแรงมาก"
+      },
+      {
+        "label": "B",
+        "text": "Glacial acetic acid มีค่า dielectric constant สูงกว่าน้ำ ทำให้เกลือที่เกิดขึ้นแตกตัวได้ดีขึ้น"
+      },
+      {
+        "label": "C",
+        "text": "Perchloric acid ใน acetic acid เป็นกรดอ่อนกว่า HCl ในน้ำ จึงไทเทรตได้ช้าและแม่นยำกว่า"
+      },
+      {
+        "label": "D",
+        "text": "Crystal violet เป็น indicator ที่เปลี่ยนสีในช่วง pH 8–10 ซึ่งตรงกับจุดสมมูล"
+      },
+      {
+        "label": "E",
+        "text": "ในตัวทำละลายอินทรีย์ ยาจะเปลี่ยนเป็นกรด จึงทำปฏิกิริยากับ perchloric acid ได้ดีขึ้น"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Acetic acid เป็น protogenic solvent ที่รับ proton ได้น้อยกว่าน้ำ จึงไม่ level ความเป็นเบสของเบสอ่อน (เบสอ่อนจึงดูแรงขึ้น) ขณะที่ HClO4 ให้ CH3COOH2⁺ ซึ่งเป็นกรดแรงมาก ปฏิกิริยาจึงสมบูรณ์และได้ end point คม",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. Glacial acetic acid เป็นตัวทำละลายที่มีความเป็นกรด จึงแข่งรับ proton ได้น้อยกว่าน้ำ ทำให้เบสอ่อนแสดงความเป็นเบสแรงขึ้น และ HClO4 ให้ acetonium ion ที่เป็นกรดแรงมาก — ตัวทำละลายกรด (protogenic) เสริมความเป็นเบสของเบสอ่อน และ HClO4 เป็นกรดที่แรงที่สุดในระบบนี้",
+      "reason": "ในน้ำ เบสอ่อนมาก (pKb ~10) มี conjugate acid ที่เป็นกรดค่อนข้างแรง (pKa ~4) จึงเกิด hydrolysis ย้อนกลับ ทำให้ titration curve บริเวณจุดสมมูลไม่ชัน และน้ำเองก็เป็นเบสที่แข่งรับ proton จาก H3O⁺ ได้ ใน glacial acetic acid ซึ่งเป็นตัวทำละลายที่มีความเป็นกรด (protogenic) ความสามารถในการรับ proton ของตัวทำละลายต่ำกว่าน้ำมาก เบสอ่อนจึงแสดงความเป็นเบสได้เต็มที่ (เสมือนแรงขึ้น) ขณะเดียวกัน HClO4 แตกตัวให้ acetonium ion (CH3COOH2⁺) ซึ่งเป็นกรดที่แรงที่สุดในระบบ ปฏิกิริยา B + CH3COOH2⁺ → BH⁺ + CH3COOH จึงเกิดเกือบสมบูรณ์และให้ end point ชัด Crystal violet เปลี่ยนสีจากม่วง (basic) → น้ำเงิน → น้ำเงิน-เขียว/เขียว (acidic) หรือใช้ potentiometric end point ต้องระวังน้ำในระบบเพราะน้ำเป็นเบสที่แรงกว่าใน acetic acid และทำให้ end point ไม่คม จึงเติม acetic anhydride ในการเตรียม titrant นอกจากนี้ acetic acid มี coefficient of expansion สูง ถ้าอุณหภูมิตอนใช้ต่างจากตอน standardize ต้องแก้ค่า normality ตามอุณหภูมิ ตัวอย่างยาที่ assay ด้วยวิธีนี้ ได้แก่ amine, alkaloid, เกลือของกรดอินทรีย์ (เช่น sodium salt ของกรดคาร์บอกซิลิก)",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Glacial acetic acid เป็นตัวทำละลายที่มีความเป็นกรด จึงแข่งรับ proton ได้น้อยกว่าน้ำ ทำให้เบสอ่อนแสดงความเป็นเบสแรงขึ้น และ HClO4 ให้ acetonium ion ที่เป็นกรดแรงมาก",
+          "is_correct": true,
+          "explanation": "ถูกต้อง เป็นหลักของ leveling/differentiating effect: ตัวทำละลาย protogenic เสริมความเป็นเบสของเบสอ่อน และ HClO4 ให้ acetonium ion ที่เป็นกรดแรงมาก"
+        },
+        {
+          "label": "B",
+          "text": "Glacial acetic acid มีค่า dielectric constant สูงกว่าน้ำ ทำให้เกลือที่เกิดขึ้นแตกตัวได้ดีขึ้น",
+          "is_correct": false,
+          "explanation": "ผิด glacial acetic acid มี dielectric constant ต่ำ (ประมาณ 6) ต่ำกว่าน้ำ (ประมาณ 78) มาก เกลือจึงอยู่ในรูป ion pair มากกว่าแตกตัว"
+        },
+        {
+          "label": "C",
+          "text": "Perchloric acid ใน acetic acid เป็นกรดอ่อนกว่า HCl ในน้ำ จึงไทเทรตได้ช้าและแม่นยำกว่า",
+          "is_correct": false,
+          "explanation": "ผิด HClO4 เป็นกรดที่แรงที่สุดในบรรดากรดทั่วไปเมื่ออยู่ใน acetic acid (แรงกว่า HCl ซึ่งใน acetic acid เป็นกรดอ่อน) ความแรงนี้คือเหตุผลที่เลือกใช้"
+        },
+        {
+          "label": "D",
+          "text": "Crystal violet เป็น indicator ที่เปลี่ยนสีในช่วง pH 8–10 ซึ่งตรงกับจุดสมมูล",
+          "is_correct": false,
+          "explanation": "ผิด crystal violet ในระบบ non-aqueous ไม่ได้ใช้สเกล pH ในน้ำ สีเปลี่ยนจากม่วงเป็นน้ำเงิน-เขียวเมื่อมีกรดเกิน ส่วน indicator ช่วง pH 8–10 คือ phenolphthalein"
+        },
+        {
+          "label": "E",
+          "text": "ในตัวทำละลายอินทรีย์ ยาจะเปลี่ยนเป็นกรด จึงทำปฏิกิริยากับ perchloric acid ได้ดีขึ้น",
+          "is_correct": false,
+          "explanation": "ผิด ยายังเป็นเบสและทำหน้าที่รับ proton จาก acetonium ion ตัวทำละลายไม่ได้เปลี่ยนเบสให้เป็นกรด"
+        }
+      ],
+      "key_takeaway": "เบสอ่อน → ไทเทรตในตัวทำละลายกรด (glacial acetic acid) ด้วย HClO4, indicator crystal violet; กรดอ่อน → ไทเทรตในตัวทำละลายเบส (DMF, pyridine) ด้วย tetrabutylammonium hydroxide/sodium methoxide"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "ในการ assay สารออกซิไดซ์ (เช่น copper(II) sulfate) ด้วยวิธี iodometry นักศึกษาเติม potassium iodide มากเกินพอลงในสารละลายตัวอย่าง แล้วไทเทรต iodine ที่เกิดขึ้นด้วย sodium thiosulfate ข้อใดกล่าวถูกต้องเกี่ยวกับวิธีนี้",
+    "choices": [
+      {
+        "label": "A",
+        "text": "เป็นการไทเทรตโดยตรง (direct) ด้วย iodine standard solution จึงเรียกว่า iodimetry"
+      },
+      {
+        "label": "B",
+        "text": "ควรเติม starch ตั้งแต่เริ่มต้นไทเทรต เพื่อให้เห็นการเปลี่ยนสีชัดเจนตลอดการไทเทรต"
+      },
+      {
+        "label": "C",
+        "text": "เป็นวิธีทางอ้อม (indirect) วัด I2 ที่ถูกปลดปล่อยด้วย thiosulfate และควรเติม starch เมื่อใกล้ end point (สีของสารละลายเหลืองจาง) เพราะ starch ที่ I2 เข้มข้นสูงจะจับ iodine แน่นจนปลดปล่อยช้า"
+      },
+      {
+        "label": "D",
+        "text": "End point คือการเกิดสีน้ำเงินเข้มของ starch–iodine complex ที่คงอยู่ 30 วินาที"
+      },
+      {
+        "label": "E",
+        "text": "ควรทำในสารละลายด่างแก่ (pH > 11) เพื่อป้องกัน iodine ระเหย"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Iodometry คือวิธีทางอ้อม: สารออกซิไดซ์ทำปฏิกิริยากับ I⁻ ให้ I2 แล้วไทเทรต I2 ด้วย Na2S2O3 โดยเติม starch เมื่อใกล้ end point และ end point คือสีน้ำเงินหายไป",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. เป็นวิธีทางอ้อม (indirect) วัด I2 ที่ถูกปลดปล่อยด้วย thiosulfate และควรเติม starch เมื่อใกล้ end point (สีของสารละลายเหลืองจาง) เพราะ starch ที่ I2 เข้มข้นสูงจะจับ iodine แน่นจนปลดปล่อยช้า — Iodometry = indirect, ไทเทรต I2 ที่เกิดขึ้นด้วย thiosulfate, เติม starch ใกล้ end point",
+      "reason": "Iodimetry (direct) คือการใช้ iodine standard solution ไทเทรตสารรีดิวซ์โดยตรง เช่น ascorbic acid หรือ sodium thiosulfate ส่วน iodometry (indirect) ใช้กับสารออกซิไดซ์ เช่น Cu²⁺, hypochlorite, H2O2, KIO3 หรือ dichromate โดยให้ทำปฏิกิริยากับ KI มากเกินพอ ปลดปล่อย I2 ในปริมาณสมมูล (เช่น 2Cu²⁺ + 4I⁻ → 2CuI + I2) แล้วไทเทรต I2 ด้วย sodium thiosulfate (I2 + 2S2O3²⁻ → 2I⁻ + S4O6²⁻) KI ที่เกินพอยังช่วยละลาย I2 เป็น I3⁻ ลดการระเหย Starch ควรเติมเมื่อสีของ iodine จางลงเป็นสีเหลืองฟาง เพราะที่ความเข้มข้น I2 สูง starch (amylose) จะจับ iodine แน่นและปลดปล่อยช้า ทำให้ end point ไม่คมและอาจได้ผลคลาดเคลื่อน นอกจากนี้ starch ยังเสื่อม (hydrolyze) ในสภาวะกรดเข้มข้นหากเติมนานเกินไป End point ของ iodometry คือสีน้ำเงินหายไป การไทเทรตต้องทำในสภาวะเป็นกลางถึงกรดอ่อน เพราะในด่าง I2 จะ disproportionate เป็น IO⁻/IO3⁻ และ thiosulfate ถูกออกซิไดซ์เกินเป็น sulfate ส่วนในกรดแก่ thiosulfate สลายตัวเป็น S และ I⁻ ถูก oxidize โดยอากาศได้",
+      "choices": [
+        {
+          "label": "A",
+          "text": "เป็นการไทเทรตโดยตรง (direct) ด้วย iodine standard solution จึงเรียกว่า iodimetry",
+          "is_correct": false,
+          "explanation": "ผิด การไทเทรตด้วย iodine standard solution โดยตรงคือ iodimetry ใช้กับสารรีดิวซ์ ส่วนโจทย์ไทเทรต I2 ที่ถูกปลดปล่อยด้วย thiosulfate จึงเป็น iodometry"
+        },
+        {
+          "label": "B",
+          "text": "ควรเติม starch ตั้งแต่เริ่มต้นไทเทรต เพื่อให้เห็นการเปลี่ยนสีชัดเจนตลอดการไทเทรต",
+          "is_correct": false,
+          "explanation": "ผิด การเติม starch ตั้งแต่ต้นเมื่อ I2 ยังเข้มข้นจะเกิด complex ที่แตกตัวช้า end point ลากยาวและไม่แม่น"
+        },
+        {
+          "label": "C",
+          "text": "เป็นวิธีทางอ้อม (indirect) วัด I2 ที่ถูกปลดปล่อยด้วย thiosulfate และควรเติม starch เมื่อใกล้ end point (สีของสารละลายเหลืองจาง) เพราะ starch ที่ I2 เข้มข้นสูงจะจับ iodine แน่นจนปลดปล่อยช้า",
+          "is_correct": true,
+          "explanation": "ถูกต้อง เป็นวิธีทางอ้อมและเติม starch เมื่อใกล้ end point (สีเหลืองจาง)"
+        },
+        {
+          "label": "D",
+          "text": "End point คือการเกิดสีน้ำเงินเข้มของ starch–iodine complex ที่คงอยู่ 30 วินาที",
+          "is_correct": false,
+          "explanation": "ผิด ใน iodometry ไทเทรตจนสีน้ำเงินหายไป (I2 ถูกใช้หมด) การเกิดสีน้ำเงินคงอยู่เป็น end point ของ iodimetry"
+        },
+        {
+          "label": "E",
+          "text": "ควรทำในสารละลายด่างแก่ (pH > 11) เพื่อป้องกัน iodine ระเหย",
+          "is_correct": false,
+          "explanation": "ผิด ในด่างแก่ I2 จะ disproportionate เป็น hypoiodite/iodate และ thiosulfate ถูกออกซิไดซ์ไปเป็น sulfate ทำให้ stoichiometry ผิด ควรทำในสภาวะกรดอ่อนถึงเป็นกลาง"
+        }
+      ],
+      "key_takeaway": "IodiMetry = direct ด้วย I2 (สีน้ำเงินปรากฏ); IodoMetry = indirect ไทเทรต I2 ที่เกิดด้วย thiosulfate (สีน้ำเงินหาย) — starch ใส่ใกล้ end point"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "QC ของโรงงานต้อง assay สารละลาย hydrogen peroxide ด้วย 0.02 M potassium permanganate นักวิเคราะห์คนใหม่ปรับสภาวะให้เป็นกรดด้วย hydrochloric acid แทน sulfuric acid ตามที่ monograph กำหนด ผลที่คาดว่าจะเกิดขึ้นและเหตุผลคือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ผล assay ไม่เปลี่ยนแปลง เพราะกรดทั้งสองชนิดให้ H⁺ เท่ากัน"
+      },
+      {
+        "label": "B",
+        "text": "ผล assay ต่ำกว่าจริง เพราะ HCl ทำให้ H2O2 สลายตัวก่อนไทเทรต"
+      },
+      {
+        "label": "C",
+        "text": "ต้องเติม indicator เพิ่ม เพราะใน HCl permanganate ไม่เป็น self-indicator"
+      },
+      {
+        "label": "D",
+        "text": "ผล assay ต่ำกว่าจริง เพราะ MnO4⁻ ถูกรีดิวซ์ไปเป็น MnO2 ในกรด HCl"
+      },
+      {
+        "label": "E",
+        "text": "ผล assay สูงกว่าจริง เพราะ Cl⁻ ถูก permanganate ออกซิไดซ์เป็น Cl2 ทำให้สิ้นเปลือง titrant มากขึ้น"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "MnO4⁻ เป็นสารออกซิไดซ์แรงพอที่จะออกซิไดซ์ Cl⁻ เป็น Cl2 ได้ จึงสิ้นเปลือง permanganate เกินส่วนที่ทำปฏิกิริยากับ H2O2 ทำให้ผล assay สูงเกินจริง จึงต้องใช้ H2SO4",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. ผล assay สูงกว่าจริง เพราะ Cl⁻ ถูก permanganate ออกซิไดซ์เป็น Cl2 ทำให้สิ้นเปลือง titrant มากขึ้น — Permanganometry ต้องใช้ H2SO4 เพราะ Cl⁻ จาก HCl ถูก MnO4⁻ ออกซิไดซ์ ทำให้ใช้ titrant เกิน",
+      "reason": "ปฏิกิริยา assay คือ 2MnO4⁻ + 5H2O2 + 6H⁺ → 2Mn²⁺ + 5O2 + 8H2O ในสภาวะกรดแก่ MnO4⁻ ถูกรีดิวซ์ 5 อิเล็กตรอนเป็น Mn²⁺ (ไม่มีสี) จึงใช้ permanganate เป็น self-indicator: end point คือสีชมพูจางที่คงอยู่ประมาณ 30 วินาทีจาก MnO4⁻ ที่เกินมาเล็กน้อย ค่า E° ของ MnO4⁻/Mn²⁺ (ประมาณ 1.51 V) สูงกว่า Cl2/Cl⁻ (ประมาณ 1.36 V) ดังนั้นถ้าทำในกรด HCl จะเกิดปฏิกิริยาข้างเคียง 2MnO4⁻ + 10Cl⁻ + 16H⁺ → 2Mn²⁺ + 5Cl2 + 8H2O (โดยเฉพาะเมื่อมีตัวเร่ง เช่น Fe²⁺ เรียกว่า induced oxidation) ทำให้ใช้ปริมาตร titrant มากเกินกว่าที่สมมูลกับ H2O2 ผล assay จึงสูงกว่าจริง กรดที่เหมาะคือ dilute H2SO4 เพราะ sulfate ไม่ถูกออกซิไดซ์ ส่วน HNO3 ไม่ใช้เพราะเป็นสารออกซิไดซ์เอง ถ้ากรดไม่พอจะเกิดตะกอนสีน้ำตาลของ MnO2 (รีดิวซ์ 3 อิเล็กตรอน) ทำให้ stoichiometry ผิด Permanganate ใช้ assay H2O2, ferrous salts, oxalate, sodium nitrite (แบบ back titration) เป็นต้น และเนื่องจาก KMnO4 ไม่ใช่ primary standard (มี MnO2 ปน สลายตัวด้วยแสง) จึงต้อง standardize กับ sodium oxalate ในกรดที่อุณหภูมิประมาณ 60–70 °C",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ผล assay ไม่เปลี่ยนแปลง เพราะกรดทั้งสองชนิดให้ H⁺ เท่ากัน",
+          "is_correct": false,
+          "explanation": "ผิด แม้ให้ H⁺ เหมือนกัน แต่ Cl⁻ เป็นสารรีดิวซ์ที่ถูก MnO4⁻ ออกซิไดซ์ได้ ขณะที่ SO4²⁻ ไม่ถูกออกซิไดซ์ ผลจึงต่างกัน"
+        },
+        {
+          "label": "B",
+          "text": "ผล assay ต่ำกว่าจริง เพราะ HCl ทำให้ H2O2 สลายตัวก่อนไทเทรต",
+          "is_correct": false,
+          "explanation": "ผิด HCl ไม่ได้ทำให้ H2O2 สลายตัวอย่างมีนัยสำคัญ และความคลาดเคลื่อนจริงทำให้ผลสูง ไม่ใช่ต่ำ"
+        },
+        {
+          "label": "C",
+          "text": "ต้องเติม indicator เพิ่ม เพราะใน HCl permanganate ไม่เป็น self-indicator",
+          "is_correct": false,
+          "explanation": "ผิด MnO4⁻ ยังเป็น self-indicator ได้ (สีม่วงชมพู vs Mn²⁺ ไม่มีสี) ปัญหาอยู่ที่ปฏิกิริยาข้างเคียงกับ Cl⁻ ไม่ใช่การมองเห็น end point"
+        },
+        {
+          "label": "D",
+          "text": "ผล assay ต่ำกว่าจริง เพราะ MnO4⁻ ถูกรีดิวซ์ไปเป็น MnO2 ในกรด HCl",
+          "is_correct": false,
+          "explanation": "ผิด การเกิด MnO2 เป็นผลของสภาวะกรดไม่เพียงพอหรือเป็นกลาง/ด่าง ไม่ได้เกี่ยวกับชนิดกรด HCl และความผิดพลาดหลักกรณีนี้ทำให้ผลสูง"
+        },
+        {
+          "label": "E",
+          "text": "ผล assay สูงกว่าจริง เพราะ Cl⁻ ถูก permanganate ออกซิไดซ์เป็น Cl2 ทำให้สิ้นเปลือง titrant มากขึ้น",
+          "is_correct": true,
+          "explanation": "ถูกต้อง Cl⁻ ถูกออกซิไดซ์เป็น Cl2 ทำให้สิ้นเปลือง KMnO4 มากขึ้น ผล assay สูงกว่าความเป็นจริง"
+        }
+      ],
+      "key_takeaway": "KMnO4: กรด H2SO4 เท่านั้น (ห้าม HCl เพราะ Cl⁻ ถูกออกซิไดซ์, ห้าม HNO3 เพราะเป็น oxidant), self-indicator สีชมพูจาง, standardize กับ sodium oxalate"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ข้อใดกล่าวถูกต้องเกี่ยวกับ cerimetry (การไทเทรตด้วย ceric ammonium sulfate) เมื่อเปรียบเทียบกับ permanganometry ในการ assay ferrous sulfate",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Ce⁴⁺ รับ 5 อิเล็กตรอนต่อโมล จึงมี equivalent weight เท่ากับ MW/5"
+      },
+      {
+        "label": "B",
+        "text": "สารละลาย Ce(IV) ในกรด sulfuric มีความคงตัวดี ใช้ในสภาวะที่มี HCl ได้โดยไม่ออกซิไดซ์ chloride และใช้ ferroin เป็น indicator ซึ่งเปลี่ยนจากสีแดงเป็นสีฟ้าจาง"
+      },
+      {
+        "label": "C",
+        "text": "Ce(IV) เป็น self-indicator เพราะ Ce³⁺ ที่เกิดขึ้นมีสีเหลืองเข้ม"
+      },
+      {
+        "label": "D",
+        "text": "ต้องทำในสภาวะด่างเพื่อป้องกันการตกตะกอนของ ceric hydroxide"
+      },
+      {
+        "label": "E",
+        "text": "สารละลาย Ce(IV) ต้อง standardize ทุกวันเพราะสลายตัวด้วยแสงเร็วกว่า KMnO4"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Ce⁴⁺ + e⁻ → Ce³⁺ (เปลี่ยน 1 อิเล็กตรอน) สารละลายใน H2SO4 คงตัวดีมาก ไม่ออกซิไดซ์ Cl⁻ ในสภาวะไทเทรตทั่วไป จึงใช้ร่วมกับ HCl ได้ และใช้ ferroin เป็น redox indicator (แดง → ฟ้าจาง)",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. สารละลาย Ce(IV) ในกรด sulfuric มีความคงตัวดี ใช้ในสภาวะที่มี HCl ได้โดยไม่ออกซิไดซ์ chloride และใช้ ferroin เป็น indicator ซึ่งเปลี่ยนจากสีแดงเป็นสีฟ้าจาง — Cerimetry: 1 อิเล็กตรอน, คงตัวดี, ใช้ใน HCl ได้, indicator ferroin",
+      "reason": "Ceric ammonium sulfate [Ce(SO4)2·2(NH4)2SO4·2H2O] ในกรด sulfuric เป็นสารออกซิไดซ์แรง (E° ประมาณ 1.44 V ใน 1 M H2SO4) ปฏิกิริยา Ce⁴⁺ + Fe²⁺ → Ce³⁺ + Fe³⁺ เป็นการถ่ายโอน 1 อิเล็กตรอน จึงไม่มีสารตัวกลางที่ซับซ้อนแบบ permanganate และ equivalent weight เท่ากับ MW ข้อได้เปรียบสำคัญ ได้แก่ (1) สารละลายคงตัวนานแม้ต้ม ไม่สลายตัวด้วยแสงเหมือน KMnO4 (2) ไม่ออกซิไดซ์ Cl⁻ ในสภาวะไทเทรตปกติ จึงทำในสารละลายที่มี HCl ได้ (3) ไม่เกิดตะกอน MnO2 เพราะ Ce³⁺ เป็นผลิตภัณฑ์เดียว Ce⁴⁺ มีสีเหลือง Ce³⁺ ไม่มีสี แต่การเปลี่ยนสีไม่ชัดพอ จึงต้องใช้ indicator ferroin (1,10-phenanthroline ferrous complex) ซึ่งรูป reduced มีสีแดง เมื่อถูกออกซิไดซ์โดย Ce⁴⁺ ที่เกินมาเป็น ferriin สีฟ้าจาง USP ใช้ ceric ammonium sulfate ร่วมกับ ortho-phenanthroline (ferroin) assay ferrous sulfate, ferrous fumarate และ ferrous gluconate ต้องทำในกรดเพราะในสภาวะเป็นกลาง/ด่าง Ce(IV) จะ hydrolyze และตกตะกอน สารละลาย Ce(IV) standardize กับ arsenic trioxide (มี osmic acid เป็นตัวเร่ง) หรือ ferrous ammonium sulfate",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Ce⁴⁺ รับ 5 อิเล็กตรอนต่อโมล จึงมี equivalent weight เท่ากับ MW/5",
+          "is_correct": false,
+          "explanation": "ผิด Ce⁴⁺ → Ce³⁺ เป็นการรับ 1 อิเล็กตรอน equivalent weight = MW ส่วนการรับ 5 อิเล็กตรอนคือ MnO4⁻ → Mn²⁺ ในกรด"
+        },
+        {
+          "label": "B",
+          "text": "สารละลาย Ce(IV) ในกรด sulfuric มีความคงตัวดี ใช้ในสภาวะที่มี HCl ได้โดยไม่ออกซิไดซ์ chloride และใช้ ferroin เป็น indicator ซึ่งเปลี่ยนจากสีแดงเป็นสีฟ้าจาง",
+          "is_correct": true,
+          "explanation": "ถูกต้อง เป็นข้อได้เปรียบหลักของ cerimetry และ indicator ferroin เปลี่ยนจากแดงเป็นฟ้าจางเมื่อถึง end point"
+        },
+        {
+          "label": "C",
+          "text": "Ce(IV) เป็น self-indicator เพราะ Ce³⁺ ที่เกิดขึ้นมีสีเหลืองเข้ม",
+          "is_correct": false,
+          "explanation": "ผิด Ce³⁺ ไม่มีสี Ce⁴⁺ มีสีเหลืองแต่การเปลี่ยนสีไม่คมพอ จึงใช้ ferroin ส่วนสารที่เป็น self-indicator คือ KMnO4"
+        },
+        {
+          "label": "D",
+          "text": "ต้องทำในสภาวะด่างเพื่อป้องกันการตกตะกอนของ ceric hydroxide",
+          "is_correct": false,
+          "explanation": "ผิด ในสภาวะเป็นกลางหรือด่าง Ce(IV) จะ hydrolyze และตกตะกอน จึงต้องทำในกรด sulfuric"
+        },
+        {
+          "label": "E",
+          "text": "สารละลาย Ce(IV) ต้อง standardize ทุกวันเพราะสลายตัวด้วยแสงเร็วกว่า KMnO4",
+          "is_correct": false,
+          "explanation": "ผิด ความคงตัวของสารละลาย Ce(IV) เป็นข้อได้เปรียบเหนือ KMnO4 ซึ่งต่างหากที่สลายตัวด้วยแสงและต้องเก็บในขวดสีชา"
+        }
+      ],
+      "key_takeaway": "Cerimetry: Ce⁴⁺ + e⁻ → Ce³⁺, คงตัว, ใช้ใน HCl ได้, indicator ferroin (แดง → ฟ้าจาง), assay ยา ferrous salts"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ในการ assay calcium gluconate ด้วย 0.05 M edetate disodium (EDTA) ตาม monograph เติม sodium hydroxide ลงในสารละลายตัวอย่างให้มี pH ประมาณ 12–13 และใช้ hydroxy naphthol blue เป็น indicator เหตุผลสำคัญของการปรับ pH สูงขนาดนี้คือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "เพื่อให้ magnesium ที่อาจปนอยู่ตกตะกอนเป็น Mg(OH)2 จึงไม่ถูกไทเทรตร่วม และ indicator ให้การเปลี่ยนสีที่คมชัดสำหรับ Ca²⁺ ในช่วง pH นี้"
+      },
+      {
+        "label": "B",
+        "text": "เพื่อให้ calcium ตกตะกอนเป็น Ca(OH)2 ก่อน แล้วค่อยละลายด้วย EDTA"
+      },
+      {
+        "label": "C",
+        "text": "เพื่อทำลาย gluconate ไม่ให้จับ calcium แข่งกับ EDTA"
+      },
+      {
+        "label": "D",
+        "text": "เพราะ EDTA จะอยู่ในรูป H2Y²⁻ ซึ่งเป็นรูปที่จับโลหะได้ดีที่สุดที่ pH นี้"
+      },
+      {
+        "label": "E",
+        "text": "เพื่อให้ calcium–EDTA complex ตกตะกอนออกมาและสังเกต end point ได้ง่าย"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "ที่ pH 12–13 Mg²⁺ ตกตะกอนเป็น Mg(OH)2 จึงไม่รบกวน ทำให้ไทเทรต Ca²⁺ ได้จำเพาะ และ EDTA อยู่ในรูป Y⁴⁻ เกือบทั้งหมดทำให้ Ca–EDTA เกิดได้สมบูรณ์ indicator อย่าง hydroxy naphthol blue/calconcarboxylic acid ออกแบบมาให้เปลี่ยนสีคมในช่วงนี้",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. เพื่อให้ magnesium ที่อาจปนอยู่ตกตะกอนเป็น Mg(OH)2 จึงไม่ถูกไทเทรตร่วม และ indicator ให้การเปลี่ยนสีที่คมชัดสำหรับ Ca²⁺ ในช่วง pH นี้ — pH 12–13 แยก Ca ออกจาก Mg (Mg(OH)2 ตกตะกอน) และให้ EDTA จับ Ca ได้สมบูรณ์",
+      "reason": "EDTA (H4Y) จับไอออนโลหะในอัตราส่วน 1:1 เสมอไม่ว่าประจุเท่าใด รูปที่จับโลหะได้ดีที่สุดคือ Y⁴⁻ ซึ่งมีสัดส่วนสูงเมื่อ pH สูง (pKa4 ประมาณ 10.3) ดังนั้น conditional formation constant ของ Ca–EDTA (log Kf ประมาณ 10.7) จะสูงพอเมื่อ pH ≥ 10 การปรับ pH เป็น 12–13 ด้วย NaOH มีข้อดีเพิ่มเติมคือ Mg²⁺ ซึ่งมักปนอยู่กับเกลือ calcium จะตกตะกอนเป็น Mg(OH)2 (Ksp ต่ำ) จึงไม่ถูกไทเทรต ผลจึงจำเพาะต่อ Ca²⁺ Indicator ที่ใช้ในช่วงนี้ได้แก่ hydroxy naphthol blue (USP), calconcarboxylic acid (Patton–Reeder) หรือ murexide ซึ่งเปลี่ยนเป็นสีน้ำเงินเมื่อ Ca ถูก EDTA ดึงออกจาก indicator หมด ในทางกลับกัน Eriochrome black T ที่ pH 10 ให้ end point ไม่คมกับ Ca²⁺ ถ้าไม่มี Mg ช่วย (จึงมีเทคนิคเติม Mg–EDTA) และถ้ามีทั้ง Ca และ Mg ที่ pH 10 จะได้ผลรวม (total hardness) ต้องเติม NaOH หลังจากเติม EDTA ส่วนหนึ่งแล้วตามบาง monograph เพื่อป้องกัน Ca ตกตะกอนร่วมกับ Mg(OH)2 หรือ CaCO3",
+      "choices": [
+        {
+          "label": "A",
+          "text": "เพื่อให้ magnesium ที่อาจปนอยู่ตกตะกอนเป็น Mg(OH)2 จึงไม่ถูกไทเทรตร่วม และ indicator ให้การเปลี่ยนสีที่คมชัดสำหรับ Ca²⁺ ในช่วง pH นี้",
+          "is_correct": true,
+          "explanation": "ถูกต้อง การตกตะกอน Mg(OH)2 ที่ pH สูงทำให้วิเคราะห์ Ca²⁺ ได้จำเพาะ และ indicator ให้ end point คมในช่วงนี้"
+        },
+        {
+          "label": "B",
+          "text": "เพื่อให้ calcium ตกตะกอนเป็น Ca(OH)2 ก่อน แล้วค่อยละลายด้วย EDTA",
+          "is_correct": false,
+          "explanation": "ผิด Ca(OH)2 ละลายได้พอสมควรที่ pH 12–13 ในความเข้มข้นที่ใช้ assay และจุดประสงค์ไม่ใช่การตกตะกอน calcium"
+        },
+        {
+          "label": "C",
+          "text": "เพื่อทำลาย gluconate ไม่ให้จับ calcium แข่งกับ EDTA",
+          "is_correct": false,
+          "explanation": "ผิด gluconate เป็น ligand ที่อ่อนกว่า EDTA มาก ไม่ต้องทำลาย การเพิ่ม pH ไม่ได้มีจุดประสงค์นี้"
+        },
+        {
+          "label": "D",
+          "text": "เพราะ EDTA จะอยู่ในรูป H2Y²⁻ ซึ่งเป็นรูปที่จับโลหะได้ดีที่สุดที่ pH นี้",
+          "is_correct": false,
+          "explanation": "ผิด ที่ pH 12–13 EDTA อยู่ในรูป Y⁴⁻ เป็นส่วนใหญ่ ซึ่งเป็นรูปที่จับโลหะได้ดีที่สุด ไม่ใช่ H2Y²⁻ (รูปหลักที่ pH ประมาณ 4–6)"
+        },
+        {
+          "label": "E",
+          "text": "เพื่อให้ calcium–EDTA complex ตกตะกอนออกมาและสังเกต end point ได้ง่าย",
+          "is_correct": false,
+          "explanation": "ผิด metal–EDTA complex ละลายน้ำได้ดี end point สังเกตจากการเปลี่ยนสีของ indicator ไม่ใช่ตะกอน"
+        }
+      ],
+      "key_takeaway": "EDTA: Ca → pH 12–13 (NaOH) + hydroxy naphthol blue/calconcarboxylic acid/murexide; Mg, Zn → pH 10 ammonia buffer + Eriochrome black T"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "การ assay zinc sulfate ด้วย 0.05 M EDTA ใน ammonia–ammonium chloride buffer pH 10 ใช้ Eriochrome black T (EBT) เป็น indicator สีของสารละลายที่สังเกตได้ก่อนและที่ end point เป็นอย่างไร และเกิดจากอะไร",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ไม่มีสี → ชมพู เพราะ EDTA ที่เกินทำปฏิกิริยากับ indicator"
+      },
+      {
+        "label": "B",
+        "text": "น้ำเงิน → แดงไวน์ เพราะ Zn²⁺ ที่เกินจับกับ indicator"
+      },
+      {
+        "label": "C",
+        "text": "เหลือง → ม่วง เพราะ pH เปลี่ยนที่ end point"
+      },
+      {
+        "label": "D",
+        "text": "แดงไวน์ (Zn–EBT complex) → น้ำเงิน (free EBT) เพราะ EDTA ดึง Zn²⁺ ออกจาก indicator ได้หมด"
+      },
+      {
+        "label": "E",
+        "text": "ม่วง → เขียว เพราะ Zn–EDTA complex มีสีเขียว"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "ก่อนไทเทรต Zn²⁺ จำนวนเล็กน้อยจับกับ EBT เป็น complex สีแดงไวน์ เมื่อ EDTA (ซึ่งจับ Zn แน่นกว่า) ดึง Zn ออกจาก indicator หมด EBT อิสระที่ pH 10 จะมีสีน้ำเงิน",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. แดงไวน์ (Zn–EBT complex) → น้ำเงิน (free EBT) เพราะ EDTA ดึง Zn²⁺ ออกจาก indicator ได้หมด — Metallochromic indicator: M–In (แดงไวน์) → In อิสระ (น้ำเงิน) เมื่อ EDTA จับโลหะหมด",
+      "reason": "Metallochromic indicator เช่น EBT เป็นสีย้อมที่สามารถจับไอออนโลหะได้ แต่ความแรงในการจับ (Kf ของ M–In) ต้องน้อยกว่า M–EDTA ประมาณ 10–100 เท่า เมื่อเติม indicator ลงในสารละลายตัวอย่างที่มีโลหะเกิน indicator จะอยู่ในรูป M–In ซึ่งมีสีแดงไวน์ ระหว่างไทเทรต EDTA จับ Zn²⁺ อิสระก่อน และที่จุดสมมูล EDTA จะดึง Zn²⁺ ออกจาก Zn–In ทำให้ indicator กลับเป็นรูปอิสระ HIn²⁻ ซึ่งที่ pH 10 มีสีน้ำเงิน สีของ free EBT ขึ้นกับ pH (pH < 6.3 แดง, 6.3–11.6 น้ำเงิน, > 11.6 ส้มเหลือง) จึงต้องใช้ buffer pH 10 เพื่อให้สีของรูปอิสระต่างจาก complex ชัดเจน Ammonia ใน buffer ยังทำหน้าที่เป็น auxiliary complexing agent ป้องกัน Zn(OH)2 ตกตะกอน ข้อควรระวัง: โลหะบางชนิด เช่น Cu²⁺, Ni²⁺, Fe³⁺, Al³⁺ จับ EBT แน่นจนปลดออกไม่ได้ (indicator blocking) ต้องใช้ masking agent เช่น cyanide หรือ triethanolamine นอกจากนี้ zinc ยังอาจ assay ที่ pH 5–6 (hexamine buffer) ด้วย xylenol orange ได้",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ไม่มีสี → ชมพู เพราะ EDTA ที่เกินทำปฏิกิริยากับ indicator",
+          "is_correct": false,
+          "explanation": "ผิด EDTA และ EBT ไม่ได้ทำปฏิกิริยากันโดยตรง และ EBT ไม่ได้ไม่มีสีที่ pH 10 (รูปอิสระเป็นสีน้ำเงิน)"
+        },
+        {
+          "label": "B",
+          "text": "น้ำเงิน → แดงไวน์ เพราะ Zn²⁺ ที่เกินจับกับ indicator",
+          "is_correct": false,
+          "explanation": "ผิด เป็นทิศทางกลับกัน: แดงไวน์ → น้ำเงิน สีแดงไวน์คือ metal–indicator complex ที่มีอยู่ตั้งแต่ต้นเมื่อโลหะยังเกิน"
+        },
+        {
+          "label": "C",
+          "text": "เหลือง → ม่วง เพราะ pH เปลี่ยนที่ end point",
+          "is_correct": false,
+          "explanation": "ผิด buffer คุม pH ไว้ที่ 10 ตลอด การเปลี่ยนสีเกิดจากการจับ/ปล่อยโลหะ ไม่ใช่การเปลี่ยน pH"
+        },
+        {
+          "label": "D",
+          "text": "แดงไวน์ (Zn–EBT complex) → น้ำเงิน (free EBT) เพราะ EDTA ดึง Zn²⁺ ออกจาก indicator ได้หมด",
+          "is_correct": true,
+          "explanation": "ถูกต้อง แดงไวน์ (Zn–EBT) → น้ำเงิน (free EBT ที่ pH 10)"
+        },
+        {
+          "label": "E",
+          "text": "ม่วง → เขียว เพราะ Zn–EDTA complex มีสีเขียว",
+          "is_correct": false,
+          "explanation": "ผิด Zn–EDTA complex ไม่มีสี การเปลี่ยนสีมาจาก indicator เท่านั้น"
+        }
+      ],
+      "key_takeaway": "EBT ที่ pH 10: แดงไวน์ (M–In) → น้ำเงิน (In อิสระ) ที่ end point; Kf(M–In) ต้องน้อยกว่า Kf(M–EDTA)"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "นักวิเคราะห์ไทเทรตหา chloride ใน sodium chloride injection ด้วย silver nitrate โดยวิธี Mohr ใช้ potassium chromate เป็น indicator หากสารละลายตัวอย่างมี pH ประมาณ 3 จะเกิดผลอย่างไร",
+    "choices": [
+      {
+        "label": "A",
+        "text": "End point เร็วกว่าจริง เพราะ AgCl ละลายในกรด"
+      },
+      {
+        "label": "B",
+        "text": "ไม่มีผล เพราะ Mohr method ไม่ขึ้นกับ pH"
+      },
+      {
+        "label": "C",
+        "text": "End point ช้ากว่าจริง (ผลสูงเกิน) เพราะ chromate ถูกเปลี่ยนเป็น HCrO4⁻/Cr2O7²⁻ ทำให้ความเข้มข้น CrO4²⁻ ต่ำ ต้องใช้ Ag⁺ มากขึ้นกว่าจะเกิดตะกอน Ag2CrO4 สีแดงอิฐ"
+      },
+      {
+        "label": "D",
+        "text": "เกิดตะกอน Ag2O สีน้ำตาล ทำให้มองไม่เห็น end point"
+      },
+      {
+        "label": "E",
+        "text": "ต้องเปลี่ยนไปใช้ ferric alum เป็น indicator แทนเพราะ chromate ไม่ทำงานในกรด แต่ยังคงเป็น Mohr method"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Mohr method ต้องทำที่ pH ประมาณ 6.5–10 ในกรด CrO4²⁻ ถูก protonate เป็น HCrO4⁻ และ Cr2O7²⁻ ความเข้มข้น chromate จึงไม่พอให้ Ag2CrO4 ตกตะกอนที่จุดสมมูล end point จึงช้าและใช้ titrant เกิน",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. End point ช้ากว่าจริง (ผลสูงเกิน) เพราะ chromate ถูกเปลี่ยนเป็น HCrO4⁻/Cr2O7²⁻ ทำให้ความเข้มข้น CrO4²⁻ ต่ำ ต้องใช้ Ag⁺ มากขึ้นกว่าจะเกิดตะกอน Ag2CrO4 สีแดงอิฐ — Mohr ต้อง pH เป็นกลาง–ด่างอ่อน; กรด → chromate เปลี่ยนเป็น dichromate → end point ช้า ผลสูง",
+      "reason": "Mohr method เป็น direct argentometric titration: Ag⁺ + Cl⁻ → AgCl (ขาว) เมื่อ Cl⁻ หมด Ag⁺ ส่วนเกินจะรวมกับ CrO4²⁻ เป็น Ag2CrO4 สีแดงอิฐ ซึ่งเป็น end point (fractional precipitation อาศัยความต่างของการละลายของ AgCl และ Ag2CrO4) สมดุล 2CrO4²⁻ + 2H⁺ ⇌ Cr2O7²⁻ + H2O ทำให้ในสภาวะกรด chromate อิสระลดลง ต้องใช้ Ag⁺ เกินมากกว่าปกติจึงจะถึง Ksp ของ Ag2CrO4 end point จึงเกิดช้า ผลคำนวณ chloride สูงกว่าความจริง ในทางกลับกันถ้า pH สูงเกิน (> 10) Ag⁺ จะตกตะกอนเป็น AgOH/Ag2O สีน้ำตาลดำ ดังนั้นต้องควบคุม pH ประมาณ 6.5–10 (มักปรับด้วย NaHCO3 หรือ borax) ห้ามมี ammonia เพราะจะเกิด Ag(NH3)2⁺ ควรทำ indicator blank เพื่อแก้ค่าปริมาตร Ag⁺ ที่ต้องใช้ให้เกิดสีแดงที่สังเกตได้ ถ้าตัวอย่างเป็นกรดควรใช้วิธี Volhard (ทำในกรด HNO3) หรือวิธี Fajans แทน",
+      "choices": [
+        {
+          "label": "A",
+          "text": "End point เร็วกว่าจริง เพราะ AgCl ละลายในกรด",
+          "is_correct": false,
+          "explanation": "ผิด AgCl ไม่ละลายในกรดเจือจาง และความคลาดเคลื่อนหลักทำให้ end point ช้า ไม่ใช่เร็ว"
+        },
+        {
+          "label": "B",
+          "text": "ไม่มีผล เพราะ Mohr method ไม่ขึ้นกับ pH",
+          "is_correct": false,
+          "explanation": "ผิด Mohr method ไวต่อ pH มาก ต้องควบคุมให้อยู่ราว 6.5–10"
+        },
+        {
+          "label": "C",
+          "text": "End point ช้ากว่าจริง (ผลสูงเกิน) เพราะ chromate ถูกเปลี่ยนเป็น HCrO4⁻/Cr2O7²⁻ ทำให้ความเข้มข้น CrO4²⁻ ต่ำ ต้องใช้ Ag⁺ มากขึ้นกว่าจะเกิดตะกอน Ag2CrO4 สีแดงอิฐ",
+          "is_correct": true,
+          "explanation": "ถูกต้อง กรดเปลี่ยน chromate เป็น HCrO4⁻/dichromate ทำให้ end point ช้าและได้ผลสูง"
+        },
+        {
+          "label": "D",
+          "text": "เกิดตะกอน Ag2O สีน้ำตาล ทำให้มองไม่เห็น end point",
+          "is_correct": false,
+          "explanation": "ผิด ตะกอน Ag2O/AgOH เกิดในสภาวะด่างแก่ (pH > 10) ไม่ใช่ที่ pH 3"
+        },
+        {
+          "label": "E",
+          "text": "ต้องเปลี่ยนไปใช้ ferric alum เป็น indicator แทนเพราะ chromate ไม่ทำงานในกรด แต่ยังคงเป็น Mohr method",
+          "is_correct": false,
+          "explanation": "ผิด การใช้ ferric ammonium sulfate เป็น indicator คือ Volhard method (back titration ด้วย thiocyanate ในกรด HNO3) ไม่ใช่ Mohr method"
+        }
+      ],
+      "key_takeaway": "Argentometry: Mohr (K2CrO4, pH 6.5–10, ตะกอนแดงอิฐ), Volhard (Fe³⁺ alum, กรด HNO3, back titration ด้วย SCN⁻), Fajans (adsorption indicator เช่น dichlorofluorescein)"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "การหาปริมาณ chloride ด้วยวิธี Volhard: เติม AgNO3 มาตรฐานที่ทราบปริมาณมากเกินพอในสภาวะกรด nitric แล้วไทเทรต Ag⁺ ที่เหลือด้วย ammonium thiocyanate โดยใช้ ferric ammonium sulfate เป็น indicator นักวิเคราะห์ไม่ได้กรองตะกอน AgCl ออกและไม่ได้เติม nitrobenzene ผลการวิเคราะห์ chloride จะเป็นอย่างไร",
+    "choices": [
+      {
+        "label": "A",
+        "text": "สูงกว่าจริง เพราะ Fe³⁺ ทำปฏิกิริยากับ chloride"
+      },
+      {
+        "label": "B",
+        "text": "ไม่เปลี่ยนแปลง เพราะ AgCl ละลายน้ำได้น้อยกว่า AgSCN"
+      },
+      {
+        "label": "C",
+        "text": "สูงกว่าจริง เพราะ AgCl ดูดซับ Ag⁺ ไว้บนผิว"
+      },
+      {
+        "label": "D",
+        "text": "ต่ำกว่าจริง เพราะสภาวะกรด nitric ทำให้ AgCl ละลาย"
+      },
+      {
+        "label": "E",
+        "text": "ต่ำกว่าจริง เพราะ AgCl ละลายได้มากกว่า AgSCN จึงทำปฏิกิริยากับ SCN⁻ ทำให้ใช้ thiocyanate มากเกิน คำนวณ Ag⁺ ที่ทำปฏิกิริยากับ Cl⁻ ได้น้อยลง"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "Ksp ของ AgCl (≈1.8×10⁻¹⁰) สูงกว่า AgSCN (≈1×10⁻¹²) ใกล้ end point SCN⁻ จะดึง Ag⁺ จาก AgCl (AgCl + SCN⁻ → AgSCN + Cl⁻) ทำให้ใช้ thiocyanate มากเกิน Ag⁺ ส่วนที่คำนวณว่าใช้กับ Cl⁻ จึงน้อยลง ผล chloride ต่ำกว่าจริง",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. ต่ำกว่าจริง เพราะ AgCl ละลายได้มากกว่า AgSCN จึงทำปฏิกิริยากับ SCN⁻ ทำให้ใช้ thiocyanate มากเกิน คำนวณ Ag⁺ ที่ทำปฏิกิริยากับ Cl⁻ ได้น้อยลง — Volhard สำหรับ Cl⁻ ต้องกรอง AgCl หรือเคลือบด้วย nitrobenzene เพราะ AgCl ละลายได้มากกว่า AgSCN",
+      "reason": "Volhard method เป็น back titration: Cl⁻ + Ag⁺(เกิน) → AgCl, จากนั้น Ag⁺(ที่เหลือ) + SCN⁻ → AgSCN (ขาว) และ end point คือ Fe³⁺ + SCN⁻ → FeSCN²⁺ สีแดง ปริมาณ Cl⁻ = Ag⁺ ที่เติมทั้งหมด − Ag⁺ ที่ไทเทรตกลับด้วย SCN⁻ ปัญหาคือ AgCl มีค่าการละลาย (Ksp ประมาณ 1.8×10⁻¹⁰) มากกว่า AgSCN (Ksp ประมาณ 1×10⁻¹²) เมื่อ Ag⁺ อิสระหมดและมี SCN⁻ เกินเล็กน้อย AgCl จะค่อย ๆ เปลี่ยนเป็น AgSCN (metathesis) สีแดงของ FeSCN²⁺ จะจางหายไปเรื่อย ๆ ผู้ไทเทรตจึงเติม SCN⁻ เกินไป ปริมาตร SCN⁻ ที่สูงขึ้นทำให้คำนวณ Ag⁺ ที่ใช้กับ Cl⁻ น้อยลง ผล chloride ต่ำกว่าจริง วิธีแก้คือ (1) กรองตะกอน AgCl ออกก่อนไทเทรตกลับ หรือ (2) เติม nitrobenzene (หรือ dibutyl phthalate ซึ่งเป็นพิษน้อยกว่า) เขย่าให้เคลือบผิวตะกอน AgCl ปัญหานี้ไม่เกิดกับ bromide และ iodide เพราะ AgBr และ AgI ละลายได้น้อยกว่า AgSCN (แต่สำหรับ iodide ต้องเติม indicator หลังเติม Ag⁺ เกินแล้วเพราะ Fe³⁺ ออกซิไดซ์ I⁻) การทำในกรด HNO3 ป้องกันการ hydrolysis ของ Fe³⁺ และป้องกันการรบกวนจาก anion อื่น เช่น carbonate, oxalate",
+      "choices": [
+        {
+          "label": "A",
+          "text": "สูงกว่าจริง เพราะ Fe³⁺ ทำปฏิกิริยากับ chloride",
+          "is_correct": false,
+          "explanation": "ผิด Fe³⁺ ไม่ทำปฏิกิริยากับ Cl⁻ ในลักษณะที่รบกวน (ทำหน้าที่เป็น indicator กับ SCN⁻) และความคลาดเคลื่อนจริงทำให้ผลต่ำ"
+        },
+        {
+          "label": "B",
+          "text": "ไม่เปลี่ยนแปลง เพราะ AgCl ละลายน้ำได้น้อยกว่า AgSCN",
+          "is_correct": false,
+          "explanation": "ผิด ข้อเท็จจริงกลับกัน AgCl ละลายได้มากกว่า AgSCN จึงเกิดการแลกเปลี่ยนและทำให้ผลคลาดเคลื่อน"
+        },
+        {
+          "label": "C",
+          "text": "สูงกว่าจริง เพราะ AgCl ดูดซับ Ag⁺ ไว้บนผิว",
+          "is_correct": false,
+          "explanation": "ผิด การดูดซับ Ag⁺ บนผิว AgCl มีผลเล็กน้อยและไม่ใช่สาเหตุหลัก ความคลาดเคลื่อนหลักมาจาก metathesis ของ AgCl กับ SCN⁻ ทำให้ผลต่ำ"
+        },
+        {
+          "label": "D",
+          "text": "ต่ำกว่าจริง เพราะสภาวะกรด nitric ทำให้ AgCl ละลาย",
+          "is_correct": false,
+          "explanation": "ผิด AgCl ไม่ละลายในกรด nitric เจือจาง สภาวะกรดเป็นข้อกำหนดของวิธีเพื่อป้องกันการ hydrolysis ของ Fe³⁺"
+        },
+        {
+          "label": "E",
+          "text": "ต่ำกว่าจริง เพราะ AgCl ละลายได้มากกว่า AgSCN จึงทำปฏิกิริยากับ SCN⁻ ทำให้ใช้ thiocyanate มากเกิน คำนวณ Ag⁺ ที่ทำปฏิกิริยากับ Cl⁻ ได้น้อยลง",
+          "is_correct": true,
+          "explanation": "ถูกต้อง AgCl + SCN⁻ → AgSCN + Cl⁻ ทำให้สิ้นเปลือง SCN⁻ มากเกินและคำนวณ chloride ได้ต่ำกว่าจริง"
+        }
+      ],
+      "key_takeaway": "Volhard–Cl⁻: AgCl ละลายได้มากกว่า AgSCN → ผลต่ำ → กรอง AgCl หรือเติม nitrobenzene; Br⁻/I⁻ ไม่มีปัญหานี้"
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "หาปริมาณน้ำในผงยาปฏิชีวนะด้วยวิธี Karl Fischer (volumetric) โดย standardize KF reagent ได้ water equivalence factor (F) = 4.85 mg H2O/mL ชั่งตัวอย่าง 0.2500 g ไทเทรตใช้ reagent 2.10 mL (แก้ค่า blank แล้ว) ตัวอย่างนี้มีน้ำร้อยละเท่าใด (w/w)",
+    "choices": [
+      {
+        "label": "A",
+        "text": "4.07%"
+      },
+      {
+        "label": "B",
+        "text": "2.04%"
+      },
+      {
+        "label": "C",
+        "text": "0.41%"
+      },
+      {
+        "label": "D",
+        "text": "4.85%"
+      },
+      {
+        "label": "E",
+        "text": "8.40%"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "ปริมาณน้ำ = 2.10 mL × 4.85 mg/mL = 10.185 mg; %น้ำ = 10.185 mg / 250.0 mg × 100 = 4.07% w/w",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. 4.07% — น้ำ = V × F = 10.185 mg จากตัวอย่าง 250.0 mg",
+      "reason": "Karl Fischer titration เป็นวิธีจำเพาะสำหรับน้ำ (ต่างจาก loss on drying ที่วัดสารระเหยได้ทุกชนิด) อาศัยปฏิกิริยา I2 + SO2 + H2O ในตัวกลาง methanol และเบส (เดิมคือ pyridine ปัจจุบันใช้ imidazole) โดย 1 โมล I2 ทำปฏิกิริยากับ 1 โมล H2O: CH3OH + SO2 + RN → [RNH]SO3CH3 แล้ว [RNH]SO3CH3 + I2 + H2O + 2RN → [RNH]SO4CH3 + 2[RNH]I ค่า water equivalence factor (F) หาได้จากการ standardize กับ sodium tartrate dihydrate (มีน้ำ 15.66%) หรือน้ำบริสุทธิ์ที่ชั่งแน่นอน end point ตรวจด้วย biamperometric/bivoltammetric (dead-stop) เมื่อมี I2 เกิน การคำนวณ: น้ำ (mg) = V × F แล้วหารด้วยน้ำหนักตัวอย่าง (mg) × 100 สิ่งรบกวน ได้แก่ aldehyde/ketone (ทำปฏิกิริยากับ methanol เกิดน้ำ ต้องใช้ reagent ชนิดพิเศษที่ไม่มี methanol), สารออกซิไดซ์/รีดิวซ์ที่ทำปฏิกิริยากับ I2 หรือ I⁻ และ pH ที่ไม่เหมาะสม (ช่วงเหมาะสม pH ประมาณ 5–7) สำหรับปริมาณน้ำต่ำมาก (ระดับ ppm ถึง ~1%) นิยมใช้ coulometric KF ซึ่งสร้าง I2 จาก I⁻ ด้วยไฟฟ้าและไม่ต้อง standardize",
+      "choices": [
+        {
+          "label": "A",
+          "text": "4.07%",
+          "is_correct": true,
+          "explanation": "ถูกต้อง 2.10 × 4.85 = 10.185 mg น้ำ ใน 250.0 mg ตัวอย่าง = 4.07%"
+        },
+        {
+          "label": "B",
+          "text": "2.04%",
+          "is_correct": false,
+          "explanation": "ผิด ได้ค่านี้ถ้าหารด้วยน้ำหนักตัวอย่างผิดเป็น 500 mg (สองเท่า) หรือคิดค่า F ครึ่งหนึ่ง"
+        },
+        {
+          "label": "C",
+          "text": "0.41%",
+          "is_correct": false,
+          "explanation": "ผิด ได้ค่านี้ถ้าหน่วยผิดสิบเท่า (หารด้วย 2500 mg แทน 250 mg)"
+        },
+        {
+          "label": "D",
+          "text": "4.85%",
+          "is_correct": false,
+          "explanation": "ผิด เป็นค่า F (mg H2O/mL) ไม่ใช่ร้อยละของน้ำในตัวอย่าง"
+        },
+        {
+          "label": "E",
+          "text": "8.40%",
+          "is_correct": false,
+          "explanation": "ผิด ได้ค่านี้ถ้าคิด 2.10/0.2500 แล้วไม่คูณด้วย F (mL/g) ซึ่งไม่มีความหมายทางร้อยละ"
+        }
+      ],
+      "key_takeaway": "%H2O (KF) = (V × F) / น้ำหนักตัวอย่าง (mg) × 100; KF จำเพาะต่อน้ำ, coulometric สำหรับน้ำต่ำมาก",
+      "calculation_steps": [
+        "ขั้นที่ 1: ปริมาณน้ำ = V × F = 2.10 mL × 4.85 mg/mL = 10.185 mg",
+        "ขั้นที่ 2: น้ำหนักตัวอย่าง = 0.2500 g = 250.0 mg",
+        "ขั้นที่ 3: %H2O = 10.185 mg / 250.0 mg × 100 = 4.074% ≈ 4.07% w/w"
+      ]
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "Assay วัตถุดิบยาเบสอ่อนชนิดหนึ่งด้วย non-aqueous titration: ชั่งตัวอย่าง 0.3000 g ละลายใน glacial acetic acid ไทเทรตด้วย 0.1 M perchloric acid (factor = 1.020) ใช้ปริมาตร 9.40 mL, blank titration ใช้ 0.10 mL ตาม monograph: 1 mL ของ 0.1 M perchloric acid เทียบเท่ากับตัวยา 31.24 mg ความบริสุทธิ์ของวัตถุดิบ (as is) เท่ากับเท่าใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "96.84%"
+      },
+      {
+        "label": "B",
+        "text": "99.84%"
+      },
+      {
+        "label": "C",
+        "text": "98.78%"
+      },
+      {
+        "label": "D",
+        "text": "100.91%"
+      },
+      {
+        "label": "E",
+        "text": "94.95%"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "ปริมาตรสุทธิ = 9.40 − 0.10 = 9.30 mL; ตัวยา = 9.30 × 1.020 × 31.24 mg = 296.34 mg; %purity = 296.34/300.0 × 100 = 98.78%",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. 98.78% — ใช้ปริมาตรหัก blank คูณ factor ของ titrant และ equivalence factor",
+      "reason": "การคำนวณ assay จากการไทเทรตตาม pharmacopoeia ใช้สูตร %purity = (Vsample − Vblank) × f × E / W × 100 โดย f คือ factor ของ titrant (ความเข้มข้นจริง/ความเข้มข้นที่ระบุ เช่น 0.1020 M/0.1 M = 1.020) และ E คือ equivalence factor (mg ของตัวยาต่อ 1 mL titrant ที่ความเข้มข้นตามระบุ) ซึ่งได้จาก MW × M × (สัดส่วนโมล) ในกรณีนี้ E = 31.24 mg หมายความว่าตัวยามี MW 312.4 และทำปฏิกิริยา 1:1 กับ HClO4 การทำ blank ใน non-aqueous titration สำคัญเพราะตัวทำละลายและ indicator (เช่น crystal violet) ใช้ titrant จำนวนหนึ่งก่อนเกิดการเปลี่ยนสี ในการไทเทรตโดยตรง (direct) ต้องลบ blank ออก ส่วนการไทเทรตแบบย้อนกลับ (back titration) จะคำนวณจาก (Vblank − Vsample) นอกจากนี้หากอุณหภูมิขณะไทเทรตต่างจากตอน standardize ต้องแก้ factor เนื่องจาก acetic acid ขยายตัวมาก (สัมประสิทธิ์ประมาณ 0.0011/°C) ค่าที่ได้ 98.78% เป็นค่า as is ถ้า monograph กำหนดคิดบน dried basis ต้องหารด้วย (1 − LOD/100) อีกครั้ง",
+      "choices": [
+        {
+          "label": "A",
+          "text": "96.84%",
+          "is_correct": false,
+          "explanation": "ผิด ได้จากการลบ blank แต่ลืมคูณ factor 1.020 (9.30 × 31.24 = 290.53 mg)"
+        },
+        {
+          "label": "B",
+          "text": "99.84%",
+          "is_correct": false,
+          "explanation": "ผิด ได้จากการคูณ factor แต่ลืมลบ blank (9.40 × 1.020 × 31.24 = 299.53 mg)"
+        },
+        {
+          "label": "C",
+          "text": "98.78%",
+          "is_correct": true,
+          "explanation": "ถูกต้อง (9.40 − 0.10) × 1.020 × 31.24 = 296.34 mg → 98.78%"
+        },
+        {
+          "label": "D",
+          "text": "100.91%",
+          "is_correct": false,
+          "explanation": "ผิด ได้จากการบวก blank แทนการลบ (9.50 × 1.020 × 31.24 = 302.71 mg) ซึ่งใช้หลักของ back titration ผิดกรณี"
+        },
+        {
+          "label": "E",
+          "text": "94.95%",
+          "is_correct": false,
+          "explanation": "ผิด ได้จากการหารด้วย factor แทนการคูณ (9.30/1.020 × 31.24 = 284.84 mg)"
+        }
+      ],
+      "key_takeaway": "%purity = (Vs − Vb) × f × E / W × 100 (direct titration); back titration ใช้ (Vb − Vs)",
+      "calculation_steps": [
+        "ขั้นที่ 1: ปริมาตรสุทธิ = 9.40 mL − 0.10 mL = 9.30 mL",
+        "ขั้นที่ 2: ปรับเป็นปริมาตร 0.1 M พอดี = 9.30 mL × 1.020 = 9.486 mL",
+        "ขั้นที่ 3: ปริมาณตัวยา = 9.486 mL × 31.24 mg/mL = 296.34 mg",
+        "ขั้นที่ 4: %purity = 296.34 mg / 300.0 mg × 100 = 98.78%"
+      ]
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "เม็ดยา ascorbic acid ฉลากระบุ 100 mg/เม็ด ชั่งยา 20 เม็ดได้ 6.000 g บดละเอียด ชั่งผงยา 0.6000 g ละลายในกรด metaphosphoric–acetic acid แล้วไทเทรตด้วย 0.05 M iodine (factor = 1.000) ใช้ปริมาตร 22.40 mL กำหนดให้ 1 mL ของ 0.05 M iodine เทียบเท่ากับ ascorbic acid 8.806 mg ปริมาณ ascorbic acid คิดเป็นร้อยละของฉลาก (% label claim) เท่าใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "49.3%"
+      },
+      {
+        "label": "B",
+        "text": "98.6%"
+      },
+      {
+        "label": "C",
+        "text": "197.3%"
+      },
+      {
+        "label": "D",
+        "text": "95.6%"
+      },
+      {
+        "label": "E",
+        "text": "88.1%"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "ascorbic acid ในผง 0.6000 g = 22.40 × 8.806 = 197.25 mg; น้ำหนักเฉลี่ย 0.3000 g/เม็ด ผง 0.6000 g จึงเทียบเท่า 2 เม็ด = 98.63 mg/เม็ด = 98.6% LC",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. 98.6% — ผง 0.6000 g = 2 เม็ด (น้ำหนักเฉลี่ย 0.3000 g) มี ascorbic acid 197.25 mg → 98.63 mg/เม็ด",
+      "reason": "Ascorbic acid เป็นสารรีดิวซ์ที่ถูกออกซิไดซ์ด้วย iodine เป็น dehydroascorbic acid ในอัตราส่วน 1:1 (C6H8O6 + I2 → C6H6O6 + 2HI) จึง assay ด้วย iodimetry (direct) โดยใช้ starch เป็น indicator (end point = สีน้ำเงินปรากฏคงที่) ค่า equivalence factor 8.806 mg/mL มาจาก 0.05 mmol I2/mL × 176.12 mg/mmol สารละลาย metaphosphoric/acetic acid ช่วยลดการถูกออกซิไดซ์ของ ascorbic acid โดยอากาศ (ซึ่งเร่งด้วยโลหะหนักและ pH สูง) ระหว่างเตรียมตัวอย่าง การคำนวณ % label claim ของยาเม็ดต้องคำนวณน้ำหนักเฉลี่ยต่อเม็ดก่อน (6.000 g/20 = 0.3000 g) แล้วหาว่าผงที่ชั่งมาเทียบเท่ากี่เม็ด (0.6000/0.3000 = 2 เม็ด) จากนั้นหารปริมาณที่วิเคราะห์ได้ด้วยจำนวนเม็ด แล้วเทียบกับฉลาก USP กำหนดให้ ascorbic acid tablets มีตัวยา 90.0–110.0% ของฉลาก ค่า 98.6% จึงผ่านเกณฑ์",
+      "choices": [
+        {
+          "label": "A",
+          "text": "49.3%",
+          "is_correct": false,
+          "explanation": "ผิด ได้จากการหารด้วย 4 เม็ด หรือคิดผง 0.6000 g ผิดเป็นการเทียบเท่า 4 เม็ด"
+        },
+        {
+          "label": "B",
+          "text": "98.6%",
+          "is_correct": true,
+          "explanation": "ถูกต้อง 197.25 mg/2 เม็ด = 98.63 mg/เม็ด = 98.6% LC"
+        },
+        {
+          "label": "C",
+          "text": "197.3%",
+          "is_correct": false,
+          "explanation": "ผิด ได้จากการนำปริมาณใน 0.6000 g (197.25 mg) มาเทียบกับฉลาก 100 mg โดยไม่หารด้วยจำนวนเม็ดที่เทียบเท่า"
+        },
+        {
+          "label": "D",
+          "text": "95.6%",
+          "is_correct": false,
+          "explanation": "ผิด ไม่ตรงกับการคำนวณที่ถูกต้อง อาจเกิดจากการปัดเศษหรือใช้ equivalence factor ผิด"
+        },
+        {
+          "label": "E",
+          "text": "88.1%",
+          "is_correct": false,
+          "explanation": "ผิด ไม่ตรงกับข้อมูล อาจเกิดจากใช้ MW หรือ factor ไม่ถูกต้อง"
+        }
+      ],
+      "key_takeaway": "%LC ยาเม็ด: (V × f × E) → mg ในผงที่ชั่ง → ÷ (W ผง/น้ำหนักเฉลี่ยต่อเม็ด) → mg/เม็ด → ÷ ฉลาก × 100",
+      "calculation_steps": [
+        "ขั้นที่ 1: น้ำหนักเฉลี่ยต่อเม็ด = 6.000 g / 20 = 0.3000 g",
+        "ขั้นที่ 2: ผงยา 0.6000 g เทียบเท่า 0.6000 / 0.3000 = 2 เม็ด",
+        "ขั้นที่ 3: ascorbic acid ที่ไทเทรตได้ = 22.40 mL × 1.000 × 8.806 mg/mL = 197.25 mg",
+        "ขั้นที่ 4: ต่อเม็ด = 197.25 mg / 2 = 98.63 mg",
+        "ขั้นที่ 5: %LC = 98.63 / 100 × 100 = 98.6%"
+      ]
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "Standardize สารละลาย sodium hydroxide ที่เตรียมไว้ประมาณ 0.1 M ด้วย potassium hydrogen phthalate (KHP, MW 204.22, เป็น monoprotic acid) ชั่ง KHP ได้ 0.5105 g ไทเทรตถึง end point ด้วย phenolphthalein ใช้ NaOH 24.80 mL ความเข้มข้นที่แท้จริงของ NaOH เท่ากับเท่าใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "0.0504 M"
+      },
+      {
+        "label": "B",
+        "text": "0.2016 M"
+      },
+      {
+        "label": "C",
+        "text": "0.1000 M"
+      },
+      {
+        "label": "D",
+        "text": "0.1240 M"
+      },
+      {
+        "label": "E",
+        "text": "0.1008 M"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "โมล KHP = 510.5 mg / 204.22 mg/mmol = 2.4998 mmol ทำปฏิกิริยา 1:1 กับ NaOH; M = 2.4998 mmol / 24.80 mL = 0.1008 M",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. 0.1008 M — M(NaOH) = mmol KHP / mL NaOH = 2.4998/24.80",
+      "reason": "KHP เป็น primary standard ที่นิยมสำหรับ standardize เบส เพราะบริสุทธิ์สูง ไม่ดูดความชื้น คงตัว มี MW สูง (ลดความคลาดเคลื่อนจากการชั่ง) และมี acidic proton 1 ตัว (pKa ประมาณ 5.4) จึงทำปฏิกิริยากับ NaOH 1:1 จุดสมมูลอยู่ในช่วงด่างเล็กน้อย จึงใช้ phenolphthalein NaOH ไม่ใช่ primary standard เพราะดูดความชื้นและดูดซับ CO2 จากอากาศเกิด Na2CO3 จึงต้อง standardize ก่อนใช้ ควรเตรียมด้วยน้ำที่ต้มไล่ CO2 และเก็บในภาชนะที่ป้องกัน CO2 การคำนวณ: mmol KHP = mg/MW, M = mmol/mL ผลที่ได้มักแสดงเป็น factor = M จริง/M ที่ระบุ = 0.1008/0.1 = 1.008 ซึ่งนำไปใช้คูณในการคำนวณ assay ต่อไป",
+      "choices": [
+        {
+          "label": "A",
+          "text": "0.0504 M",
+          "is_correct": false,
+          "explanation": "ผิด ได้ค่านี้ถ้าคิดว่า KHP เป็น diprotic (หาร 2) ซึ่งไม่ถูกต้อง เพราะ KHP มี acidic H เพียง 1 ตัว"
+        },
+        {
+          "label": "B",
+          "text": "0.2016 M",
+          "is_correct": false,
+          "explanation": "ผิด ได้ค่านี้ถ้าคูณ 2 ด้วยการคิด stoichiometry ผิดว่า NaOH 1 โมลต่อ KHP 2 โมล"
+        },
+        {
+          "label": "C",
+          "text": "0.1000 M",
+          "is_correct": false,
+          "explanation": "ผิด เป็นค่าที่ระบุ (nominal) ไม่ใช่ค่าจริงที่ได้จากการ standardize"
+        },
+        {
+          "label": "D",
+          "text": "0.1240 M",
+          "is_correct": false,
+          "explanation": "ผิด ไม่ตรงกับการคำนวณ (อาจเกิดจากใช้ปริมาตรหรือน้ำหนักผิด)"
+        },
+        {
+          "label": "E",
+          "text": "0.1008 M",
+          "is_correct": true,
+          "explanation": "ถูกต้อง 2.4998 mmol / 24.80 mL = 0.10080 M (factor 1.008)"
+        }
+      ],
+      "key_takeaway": "Primary standard: KHP (สำหรับเบส), Na2CO3/THAM (สำหรับกรด), sodium oxalate (สำหรับ KMnO4), KIO3/K2Cr2O7 (สำหรับ thiosulfate); M = mmol standard/mL titrant × อัตราส่วนโมล",
+      "calculation_steps": [
+        "ขั้นที่ 1: mmol KHP = 510.5 mg / 204.22 mg/mmol = 2.4998 mmol",
+        "ขั้นที่ 2: อัตราส่วน KHP : NaOH = 1 : 1 → mmol NaOH = 2.4998 mmol",
+        "ขั้นที่ 3: M(NaOH) = 2.4998 mmol / 24.80 mL = 0.1008 M (factor = 1.008)"
+      ]
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "ยา X มีค่า A(1%, 1 cm) = 715 ที่ λmax ใน 0.1 M NaOH นักวิเคราะห์ชั่งวัตถุดิบ 0.0400 g ละลายและปรับปริมาตรเป็น 500.0 mL ด้วย 0.1 M NaOH จากนั้นปิเปต 10.0 mL มาเจือจางเป็น 100.0 mL วัดค่าการดูดกลืนแสงใน cell 1 cm ได้ 0.560 ความบริสุทธิ์ของวัตถุดิบคือเท่าใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "9.79%"
+      },
+      {
+        "label": "B",
+        "text": "78.3%"
+      },
+      {
+        "label": "C",
+        "text": "102.1%"
+      },
+      {
+        "label": "D",
+        "text": "97.9%"
+      },
+      {
+        "label": "E",
+        "text": "89.5%"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "ความเข้มข้นที่วัดได้ = 0.560/715 g/100 mL = 7.832 µg/mL; ความเข้มข้นตามทฤษฎี = 40 mg/500 mL × 10/100 = 8.000 µg/mL; purity = 7.832/8.000 × 100 = 97.9%",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. 97.9% — C (g/100 mL) = A / A(1%,1cm) เทียบกับความเข้มข้นที่เตรียม 8.0 µg/mL",
+      "reason": "A(1%, 1 cm) หรือ specific absorbance คือค่าการดูดกลืนแสงของสารละลายความเข้มข้น 1% w/v (1 g/100 mL) ใน cell ความยาว 1 cm ตาม Beer–Lambert law: A = A(1%,1cm) × c × b โดย c มีหน่วย g/100 mL ใช้มากใน BP สำหรับ assay ที่ไม่ใช้ reference standard เมื่อได้ c ในหน่วย g/100 mL ให้แปลงเป็น µg/mL โดยคูณ 10⁴ (1 g/100 mL = 10,000 µg/mL) จากนั้นเปรียบเทียบกับความเข้มข้นที่คาดว่าจะได้จากการเตรียม โดยคิด dilution factor ทั้งหมด ค่า absorbance ที่วัดได้ (0.560) อยู่ในช่วงที่เหมาะสม (ประมาณ 0.2–0.8) ซึ่งให้ความคลาดเคลื่อนสัมพัทธ์ต่ำ ข้อสังเกต: การใช้ A(1%,1cm) ต้องวัดภายใต้สภาวะเดียวกับที่กำหนดค่า (ตัวทำละลาย, pH, λ) เพราะสารที่แตกตัวได้จะมี spectrum ต่างกันใน pH ต่างกัน และควรตรวจสอบ wavelength accuracy และ photometric accuracy ของเครื่องตามเภสัชตำรับ (เช่น potassium dichromate สำหรับ absorbance)",
+      "choices": [
+        {
+          "label": "A",
+          "text": "9.79%",
+          "is_correct": false,
+          "explanation": "ผิด ผิดหน่วยสิบเท่า (เช่น แปลง g/100 mL เป็น µg/mL โดยคูณ 10³ แทน 10⁴)"
+        },
+        {
+          "label": "B",
+          "text": "78.3%",
+          "is_correct": false,
+          "explanation": "ผิด อาจเกิดจากคิด dilution factor ผิด (เช่น ใช้ 7.832 เทียบกับ 10 µg/mL)"
+        },
+        {
+          "label": "C",
+          "text": "102.1%",
+          "is_correct": false,
+          "explanation": "ผิด ได้จากการกลับเศษส่วน (8.000/7.832 × 100) ซึ่งผิดหลัก"
+        },
+        {
+          "label": "D",
+          "text": "97.9%",
+          "is_correct": true,
+          "explanation": "ถูกต้อง 7.832/8.000 × 100 = 97.9%"
+        },
+        {
+          "label": "E",
+          "text": "89.5%",
+          "is_correct": false,
+          "explanation": "ผิด ไม่ตรงกับการคำนวณที่ถูกต้อง"
+        }
+      ],
+      "key_takeaway": "A = A(1%,1cm) × c(g/100 mL) × b; 1 g/100 mL = 10,000 µg/mL; ε = A(1%,1cm) × MW / 10",
+      "calculation_steps": [
+        "ขั้นที่ 1: c ที่วัดได้ = A / [A(1%,1cm) × b] = 0.560 / (715 × 1) = 7.832 × 10⁻⁴ g/100 mL",
+        "ขั้นที่ 2: แปลงหน่วย = 7.832 × 10⁻⁴ g/100 mL × 10⁴ = 7.832 µg/mL",
+        "ขั้นที่ 3: ความเข้มข้นที่เตรียม = 40.0 mg/500.0 mL = 0.0800 mg/mL = 80.0 µg/mL; เจือจาง 10 → 100 mL ได้ 8.000 µg/mL",
+        "ขั้นที่ 4: %purity = 7.832 / 8.000 × 100 = 97.9%"
+      ]
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "ในการทำ calibration curve ของยาด้วย UV-Vis spectrophotometer พบว่าที่ความเข้มข้นสูงซึ่งให้ค่า absorbance เกิน 1.5 กราฟโค้งลงเข้าหาแกนความเข้มข้น (negative deviation) ทั้งที่สารไม่เกิดปฏิกิริยาเคมีใด ๆ สาเหตุทางเครื่องมือ (instrumental deviation) ที่น่าจะเป็นมากที่สุดคือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "การวัดที่ λmax โดยใช้ spectral bandwidth แคบ"
+      },
+      {
+        "label": "B",
+        "text": "Stray light ซึ่งมีผลมากเมื่อแสงที่ผ่านตัวอย่าง (transmittance) เหลือน้อย"
+      },
+      {
+        "label": "C",
+        "text": "การใช้สารละลายเจือจางที่ให้ absorbance 0.2–0.8"
+      },
+      {
+        "label": "D",
+        "text": "การใช้ quartz cell คู่ที่ match กัน"
+      },
+      {
+        "label": "E",
+        "text": "การ zero เครื่องด้วย solvent blank ก่อนวัดตัวอย่าง"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Stray light คือแสงที่มาถึง detector โดยไม่ผ่านการดูดกลืนตามที่ควร เมื่อ absorbance สูง แสงที่ผ่านตัวอย่างเหลือน้อย แสงหลงจึงมีสัดส่วนมาก ทำให้ absorbance ที่อ่านได้ต่ำกว่าจริง กราฟโค้งลง",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. Stray light ซึ่งมีผลมากเมื่อแสงที่ผ่านตัวอย่าง (transmittance) เหลือน้อย — Stray light ทำให้ A ที่วัดต่ำกว่าจริงที่ absorbance สูง → negative deviation",
+      "reason": "Beer–Lambert law (A = εbc) เป็นเส้นตรงภายใต้เงื่อนไข: แสงเป็น monochromatic, สารละลายเจือจาง (มักต่ำกว่า ~0.01 M), ไม่มีการทำปฏิกิริยาเคมี การรวมตัว (association/dimerization) หรือการแตกตัวที่ขึ้นกับความเข้มข้นหรือ pH และไม่มีการกระเจิงแสงหรือ fluorescence Deviation แบ่งเป็น (1) real deviation จากความเข้มข้นสูงทำให้โมเลกุลมีปฏิสัมพันธ์กันและดัชนีหักเหเปลี่ยน (2) chemical deviation จากสมดุลเคมี เช่น กรด-เบส, dimerization, complex formation และ (3) instrumental deviation เช่น polychromatic radiation (bandwidth กว้างเทียบกับความกว้างของ absorption band หรือวัดบนไหล่ peak) และ stray light Stray light ทำให้ A(วัด) = log[(P0 + Ps)/(P + Ps)] ซึ่งเมื่อ P มีค่าน้อย (absorbance สูง) Ps จะมีผลมาก ทำให้ค่าอ่านได้ต่ำกว่าจริงและเกิดเพดานของ absorbance ดังนั้นในทางปฏิบัติควรเจือจางให้ absorbance อยู่ประมาณ 0.2–0.8 (หรือไม่เกิน ~1.0) ซึ่งความคลาดเคลื่อนสัมพัทธ์ของความเข้มข้นต่ำที่สุด (ต่ำสุดที่ A ≈ 0.43) เภสัชตำรับกำหนดให้ตรวจ stray light ด้วยสารละลาย potassium chloride (ที่ 198–200 nm) หรือ sodium iodide/sodium nitrite",
+      "choices": [
+        {
+          "label": "A",
+          "text": "การวัดที่ λmax โดยใช้ spectral bandwidth แคบ",
+          "is_correct": false,
+          "explanation": "ผิด การวัดที่ λmax ด้วย bandwidth แคบเป็นการลด polychromatic deviation เพราะที่ λmax ค่า ε เปลี่ยนน้อยในช่วงความยาวคลื่นแคบ ๆ จึงทำให้ได้เส้นตรงดีขึ้น"
+        },
+        {
+          "label": "B",
+          "text": "Stray light ซึ่งมีผลมากเมื่อแสงที่ผ่านตัวอย่าง (transmittance) เหลือน้อย",
+          "is_correct": true,
+          "explanation": "ถูกต้อง stray light มีผลมากที่ absorbance สูง ทำให้ absorbance ที่อ่านได้ต่ำกว่าจริงและกราฟโค้งลงเข้าหาแกนความเข้มข้น"
+        },
+        {
+          "label": "C",
+          "text": "การใช้สารละลายเจือจางที่ให้ absorbance 0.2–0.8",
+          "is_correct": false,
+          "explanation": "ผิด ช่วง absorbance 0.2–0.8 เป็นช่วงที่แนะนำ ให้ความคลาดเคลื่อนต่ำและเป็นไปตาม Beer's law"
+        },
+        {
+          "label": "D",
+          "text": "การใช้ quartz cell คู่ที่ match กัน",
+          "is_correct": false,
+          "explanation": "ผิด matched quartz cell ช่วยลดความคลาดเคลื่อนจาก path length และการดูดกลืนของ cell (จำเป็นในช่วง UV < 320 nm) ไม่ทำให้เกิด deviation"
+        },
+        {
+          "label": "E",
+          "text": "การ zero เครื่องด้วย solvent blank ก่อนวัดตัวอย่าง",
+          "is_correct": false,
+          "explanation": "ผิด การ zero ด้วย blank เป็นขั้นตอนที่ถูกต้อง ใช้หักการดูดกลืนของตัวทำละลายและ cell"
+        }
+      ],
+      "key_takeaway": "Deviation จาก Beer's law: real (ความเข้มข้นสูง), chemical (สมดุล/association/pH), instrumental (polychromatic light, stray light) — ทำงานที่ A 0.2–0.8"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "วิเคราะห์สารผสม 3 ชนิดด้วย reversed-phase HPLC ใช้คอลัมน์ C18 และ mobile phase เป็น methanol : water (60 : 40) สาร P มี log P = 0.5, สาร Q มี log P = 2.5 และสาร R มี log P = 4.5 (ทั้งสามไม่แตกตัวที่ pH ของ mobile phase) ลำดับการออกจากคอลัมน์ (elution order) คือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "P → Q → R"
+      },
+      {
+        "label": "B",
+        "text": "R → Q → P"
+      },
+      {
+        "label": "C",
+        "text": "Q → P → R"
+      },
+      {
+        "label": "D",
+        "text": "P และ R ออกพร้อมกัน ตามด้วย Q"
+      },
+      {
+        "label": "E",
+        "text": "R → P → Q"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "ใน reversed-phase ที่ stationary phase ไม่มีขั้ว (C18) สารที่มีขั้วมากหรือ log P ต่ำจะชอบ mobile phase และออกก่อน สารที่ lipophilic มาก (log P สูง) จะ retain นานกว่า ลำดับจึงเป็น P → Q → R",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. P → Q → R — RP-HPLC: มีขั้วมาก (log P ต่ำ) ออกก่อน, lipophilic (log P สูง) ออกหลัง",
+      "reason": "Reversed-phase HPLC ใช้ stationary phase ที่ไม่มีขั้ว เช่น silica ที่เชื่อมด้วย octadecylsilane (C18, ODS) หรือ C8 ร่วมกับ mobile phase ที่มีขั้ว (น้ำ/buffer ผสม organic modifier เช่น methanol หรือ acetonitrile) กลไกหลักคือ hydrophobic interaction (partition) ระหว่างโมเลกุลยากับสายโซ่ alkyl สารที่มี lipophilicity สูง (log P สูง) จะ partition เข้าสู่ stationary phase มากจึงมีค่า retention factor (k) สูงและออกช้า ส่วนสารมีขั้วจะอยู่ใน mobile phase มากกว่าจึงออกเร็ว การเพิ่มสัดส่วน organic modifier ทำให้ mobile phase มีความแรงในการชะ (elution strength) สูงขึ้นและลด retention ของทุกสาร (เป็นหลักของ gradient elution) acetonitrile มี elution strength มากกว่า methanol ใน RP RP-HPLC เป็นรูปแบบที่ใช้มากที่สุดในงาน assay และ related substances ของยา เพราะ reproducible และใช้กับสารได้หลากหลาย",
+      "choices": [
+        {
+          "label": "A",
+          "text": "P → Q → R",
+          "is_correct": true,
+          "explanation": "ถูกต้อง สาร log P ต่ำ (มีขั้ว) ออกก่อน สาร lipophilic ออกหลัง"
+        },
+        {
+          "label": "B",
+          "text": "R → Q → P",
+          "is_correct": false,
+          "explanation": "ผิด เป็นลำดับของ normal-phase chromatography (stationary phase มีขั้ว เช่น silica) ที่สาร non-polar ออกก่อน"
+        },
+        {
+          "label": "C",
+          "text": "Q → P → R",
+          "is_correct": false,
+          "explanation": "ผิด ไม่สอดคล้องกับความ lipophilicity ของสาร Q มี log P สูงกว่า P จึงต้อง retain นานกว่า P"
+        },
+        {
+          "label": "D",
+          "text": "P และ R ออกพร้อมกัน ตามด้วย Q",
+          "is_correct": false,
+          "explanation": "ผิด สาร P และ R มี log P ต่างกันมาก (4 หน่วย) ไม่น่าจะ co-elute ภายใต้สภาวะ RP"
+        },
+        {
+          "label": "E",
+          "text": "R → P → Q",
+          "is_correct": false,
+          "explanation": "ผิด ลำดับไม่สัมพันธ์กับ log P"
+        }
+      ],
+      "key_takeaway": "RP (C18 + mobile phase มีขั้ว): polar ออกก่อน, เพิ่ม organic → retention ลด; NP (silica + mobile phase ไม่มีขั้ว): non-polar ออกก่อน, เพิ่มขั้ว mobile phase → retention ลด"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "วิเคราะห์ยาที่เป็นกรดคาร์บอกซิลิกอ่อน (pKa 4.4) ด้วย RP-HPLC (C18) ใช้ mobile phase เป็น acetonitrile : phosphate buffer pH 7.0 (40 : 60) พบว่ายาออกจากคอลัมน์ใกล้ void volume (k < 1) และแยกจาก excipient peak ได้ไม่ดี การปรับสภาวะใดเหมาะสมที่สุดเพื่อเพิ่ม retention ของยา",
+    "choices": [
+      {
+        "label": "A",
+        "text": "เพิ่มสัดส่วน acetonitrile เป็น 70%"
+      },
+      {
+        "label": "B",
+        "text": "ปรับ pH ของ buffer เป็น 9.0"
+      },
+      {
+        "label": "C",
+        "text": "เปลี่ยนเป็นคอลัมน์ silica (normal phase) โดยใช้ mobile phase เดิม"
+      },
+      {
+        "label": "D",
+        "text": "เพิ่มอัตราการไหลของ mobile phase"
+      },
+      {
+        "label": "E",
+        "text": "ปรับ pH ของ buffer ลงเป็นประมาณ 2.5 (ต่ำกว่า pKa ประมาณ 2 หน่วย) เพื่อกดการแตกตัว (ion suppression)"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "ที่ pH 7 กรด pKa 4.4 แตกตัวเป็น anion เกือบทั้งหมด จึงมีขั้วสูงและ retain น้อยบน C18 การลด pH ให้ต่ำกว่า pKa ประมาณ 2 หน่วยทำให้ยาอยู่ในรูปไม่แตกตัว (lipophilic) retention จึงเพิ่มขึ้น",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. ปรับ pH ของ buffer ลงเป็นประมาณ 2.5 (ต่ำกว่า pKa ประมาณ 2 หน่วย) เพื่อกดการแตกตัว (ion suppression) — Ion suppression: กรดอ่อนใช้ pH < pKa − 2 เพื่อให้อยู่ในรูปไม่แตกตัวและ retain บน C18 มากขึ้น",
+      "reason": "ใน RP-HPLC รูปที่ไม่แตกตัวของสารมี lipophilicity สูงกว่ารูปไอออนมาก จึงมี retention สูงกว่า ตามสมการ Henderson–Hasselbalch ที่ pH 7.0 กรดที่มี pKa 4.4 จะแตกตัว (pH − pKa = 2.6) มากกว่า 99% ทำให้ retain น้อยมาก การปรับ pH ของ mobile phase ให้ต่ำกว่า pKa อย่างน้อย 2 หน่วย (pH ประมาณ 2.4–2.5) ทำให้มากกว่า 99% อยู่ในรูปไม่แตกตัว เรียกว่า ion suppression ผลคือ retention เพิ่มขึ้น peak shape ดีขึ้น และ retention time คงที่ (robust) เพราะไม่อยู่ใกล้ pKa ซึ่ง retention เปลี่ยนไวต่อ pH ส่วนสารเบสอ่อนจะใช้หลักตรงข้าม (pH สูงกว่า pKa) หรือใช้ ion-pair reagent อย่างไรก็ตามคอลัมน์ silica-based C18 ทั่วไปทนช่วง pH ประมาณ 2–8 (ต่ำกว่า 2 ทำให้ bonded phase hydrolyze, สูงกว่า 8 silica ละลาย) จึงควรเลือก pH 2.5–3 ด้วย phosphate หรือ formate buffer ทางเลือกอื่นในการเพิ่ม retention คือการลดสัดส่วน organic modifier",
+      "choices": [
+        {
+          "label": "A",
+          "text": "เพิ่มสัดส่วน acetonitrile เป็น 70%",
+          "is_correct": false,
+          "explanation": "ผิด การเพิ่ม acetonitrile เพิ่ม elution strength ใน RP ทำให้ retention ลดลงอีก ยาจะออกเร็วขึ้น"
+        },
+        {
+          "label": "B",
+          "text": "ปรับ pH ของ buffer เป็น 9.0",
+          "is_correct": false,
+          "explanation": "ผิด pH 9 ทำให้กรดแตกตัวมากขึ้นและ retain น้อยลง อีกทั้งเกินช่วง pH ที่ silica-based C18 ทั่วไปทนได้"
+        },
+        {
+          "label": "C",
+          "text": "เปลี่ยนเป็นคอลัมน์ silica (normal phase) โดยใช้ mobile phase เดิม",
+          "is_correct": false,
+          "explanation": "ผิด การใช้คอลัมน์ silica กับ mobile phase ที่มีน้ำและ buffer มากไม่ใช่สภาวะ normal phase ที่เหมาะสม และไม่ใช่วิธีแก้ปัญหาที่ตรงจุด"
+        },
+        {
+          "label": "D",
+          "text": "เพิ่มอัตราการไหลของ mobile phase",
+          "is_correct": false,
+          "explanation": "ผิด การเพิ่ม flow rate ลด retention time และไม่เปลี่ยนค่า k อย่างมีนัย ยังคงแยกได้ไม่ดี"
+        },
+        {
+          "label": "E",
+          "text": "ปรับ pH ของ buffer ลงเป็นประมาณ 2.5 (ต่ำกว่า pKa ประมาณ 2 หน่วย) เพื่อกดการแตกตัว (ion suppression)",
+          "is_correct": true,
+          "explanation": "ถูกต้อง ลด pH ต่ำกว่า pKa ประมาณ 2 หน่วยเพื่อ ion suppression ทำให้ retention และ peak shape ดีขึ้น"
+        }
+      ],
+      "key_takeaway": "Ion suppression: กรด → pH ≤ pKa − 2, เบส → pH ≥ pKa + 2 (ระวังช่วง pH 2–8 ของ silica C18); ไม่ควรตั้ง pH ใกล้ pKa"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ในการตรวจ related substances ด้วย HPLC พบ peak ของตัวยามี retention time 8.0 min ความกว้างที่ฐาน (W) 0.48 min และ peak ของ impurity ถัดไปมี retention time 9.0 min ความกว้างที่ฐาน 0.52 min ค่า resolution (Rs) ระหว่างสอง peak เท่ากับเท่าใด และแปลผลอย่างไร",
+    "choices": [
+      {
+        "label": "A",
+        "text": "1.0; แยกกันไม่สมบูรณ์"
+      },
+      {
+        "label": "B",
+        "text": "0.5; peak ซ้อนกันมาก"
+      },
+      {
+        "label": "C",
+        "text": "2.0; แยกกันได้ถึงฐาน (baseline resolution)"
+      },
+      {
+        "label": "D",
+        "text": "4.0; แยกกันดีเกินจำเป็น"
+      },
+      {
+        "label": "E",
+        "text": "1.18; ผ่านเกณฑ์ baseline resolution พอดี"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Rs = 2(tR2 − tR1)/(W1 + W2) = 2(9.0 − 8.0)/(0.48 + 0.52) = 2.0 ซึ่งมากกว่า 1.5 ถือว่าแยกได้ถึงฐาน",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. 2.0; แยกกันได้ถึงฐาน (baseline resolution) — Rs = 2ΔtR/(W1 + W2) = 2(1.0)/1.00 = 2.0",
+      "reason": "Resolution เป็นตัวชี้วัดการแยกระหว่างสอง peak ที่อยู่ติดกัน ตาม USP <621> คำนวณจากความกว้างที่ฐาน (tangent) Rs = 2(tR2 − tR1)/(W1 + W2) หรือจากความกว้างที่ครึ่งความสูง Rs = 1.18(tR2 − tR1)/(W0.5,1 + W0.5,2) ค่า Rs = 1.5 หมายถึงการแยกถึงฐานสำหรับ peak รูป Gaussian ที่มีขนาดใกล้กัน (overlap ประมาณ 0.1%) ในทางปฏิบัติ system suitability มักกำหนด Rs ≥ 2.0 ระหว่างตัวยากับ impurity หรือ internal standard ที่ใกล้ที่สุด เพื่อให้วิธีทนต่อการเปลี่ยนแปลงเล็กน้อย Rs ขึ้นกับสามปัจจัยตาม Purnell equation: efficiency (N), selectivity (α) และ retention (k) โดยการเพิ่ม selectivity (เปลี่ยนชนิด organic modifier, pH, stationary phase) มีผลต่อ Rs มากที่สุด ส่วนการเพิ่ม N ต้องเพิ่มความยาวคอลัมน์ 4 เท่าเพื่อให้ Rs เพิ่มเป็น 2 เท่า (Rs ∝ √N)",
+      "choices": [
+        {
+          "label": "A",
+          "text": "1.0; แยกกันไม่สมบูรณ์",
+          "is_correct": false,
+          "explanation": "ผิด ได้จากการลืมคูณ 2 ในสูตร (1.0/1.00)"
+        },
+        {
+          "label": "B",
+          "text": "0.5; peak ซ้อนกันมาก",
+          "is_correct": false,
+          "explanation": "ผิด ไม่ตรงกับสูตร (เช่น ใช้ (W1+W2)/2 ในตัวเศษผิดตำแหน่ง)"
+        },
+        {
+          "label": "C",
+          "text": "2.0; แยกกันได้ถึงฐาน (baseline resolution)",
+          "is_correct": true,
+          "explanation": "ถูกต้อง Rs = 2 × 1.0 / 1.00 = 2.0 แยกได้ถึงฐาน"
+        },
+        {
+          "label": "D",
+          "text": "4.0; แยกกันดีเกินจำเป็น",
+          "is_correct": false,
+          "explanation": "ผิด ได้จากการคูณ 2 สองครั้ง หรือใช้ความกว้างเฉลี่ยครึ่งหนึ่ง"
+        },
+        {
+          "label": "E",
+          "text": "1.18; ผ่านเกณฑ์ baseline resolution พอดี",
+          "is_correct": false,
+          "explanation": "ผิด ตัวคูณ 1.18 ใช้กับความกว้างที่ครึ่งความสูง (W0.5) ไม่ใช่ความกว้างที่ฐาน และ 1.18 ก็ต่ำกว่า 1.5"
+        }
+      ],
+      "key_takeaway": "Rs = 2ΔtR/(W1+W2) (ฐาน) หรือ 1.18ΔtR/(W0.5,1+W0.5,2); Rs ≥ 1.5 = baseline, system suitability มัก Rs ≥ 2.0",
+      "calculation_steps": [
+        "ขั้นที่ 1: ΔtR = 9.0 − 8.0 = 1.0 min",
+        "ขั้นที่ 2: W1 + W2 = 0.48 + 0.52 = 1.00 min",
+        "ขั้นที่ 3: Rs = 2 × 1.0 min / 1.00 min = 2.0 (ไม่มีหน่วย)",
+        "ขั้นที่ 4: Rs = 2.0 > 1.5 → baseline resolution"
+      ]
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ก่อนวิเคราะห์ตัวอย่างด้วยวิธี HPLC ตาม monograph ซึ่งกำหนด system suitability ว่า: RSD ของ peak area จาก 5 replicate injections ≤ 2.0%, resolution ระหว่างตัวยากับ impurity A ≥ 2.0, tailing factor ของตัวยา ≤ 2.0 และ theoretical plates ≥ 2000 ผลที่ได้คือ RSD = 0.8%, Rs = 1.6, N = 6500 และสำหรับ peak ของตัวยา ความกว้างที่ 5% ของความสูง (W0.05) = 0.30 min ระยะจากขอบหน้าของ peak ถึงเส้นตั้งฉากจากยอด peak ที่ 5% ของความสูง (f) = 0.12 min ข้อใดสรุปถูกต้อง",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ผ่านทุกเกณฑ์ เริ่มวิเคราะห์ตัวอย่างได้"
+      },
+      {
+        "label": "B",
+        "text": "Tailing factor = 2.5 ไม่ผ่าน ส่วนเกณฑ์อื่นผ่าน"
+      },
+      {
+        "label": "C",
+        "text": "RSD ไม่ผ่าน เพราะต้องไม่เกิน 0.5%"
+      },
+      {
+        "label": "D",
+        "text": "Resolution ไม่ผ่าน (tailing factor = 1.25 ผ่าน) จึงยังไม่ควรวิเคราะห์ตัวอย่างจนกว่าจะแก้ไขระบบให้ผ่าน"
+      },
+      {
+        "label": "E",
+        "text": "Theoretical plates ไม่ผ่าน เพราะ N ควรต่ำกว่า 2000"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "T = W0.05/(2f) = 0.30/(2 × 0.12) = 1.25 ผ่าน; RSD 0.8% ผ่าน; N 6500 ผ่าน; แต่ Rs 1.6 ต่ำกว่าเกณฑ์ 2.0 จึงไม่ผ่าน system suitability ต้องแก้ไขก่อนวิเคราะห์ตัวอย่าง",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. Resolution ไม่ผ่าน (tailing factor = 1.25 ผ่าน) จึงยังไม่ควรวิเคราะห์ตัวอย่างจนกว่าจะแก้ไขระบบให้ผ่าน — Tailing factor = W0.05/2f = 1.25 ผ่าน แต่ Rs 1.6 < 2.0 ไม่ผ่าน",
+      "reason": "System suitability test (SST) ตาม USP <621> เป็นการยืนยันว่าระบบโครมาโทกราฟี (เครื่อง คอลัมน์ mobile phase และผู้วิเคราะห์) ทำงานได้เหมาะสม ณ วันที่วิเคราะห์ ต้องผ่านทุกเกณฑ์ก่อนนำผลของตัวอย่างมาใช้ ถ้าไม่ผ่านแม้ข้อเดียวต้องหยุด หาสาเหตุ และแก้ไข เช่น เปลี่ยน/ล้างคอลัมน์ เตรียม mobile phase ใหม่ หรือปรับภายใน allowable adjustments ของ USP <621> (เช่น ปรับ pH ±0.2, สัดส่วน organic ในขอบเขตที่กำหนด, flow rate) Tailing (symmetry) factor ตาม USP คำนวณ T = W0.05/(2f) โดย T = 1 คือ peak สมมาตร T > 1 คือ tailing (มักเกิดจาก silanol interaction ของเบส, คอลัมน์เสื่อม, dead volume) T < 1 คือ fronting (มักจาก overload) Precision (RSD) ประเมินความแม่นยำของการฉีดซ้ำ; theoretical plates N = 16(tR/W)² บอก efficiency ของคอลัมน์ Rs สำคัญที่สุดสำหรับวิธีที่ต้องแยก impurity เพราะถ้าแยกไม่ดีจะทำให้ผล assay และ impurity คลาดเคลื่อน",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ผ่านทุกเกณฑ์ เริ่มวิเคราะห์ตัวอย่างได้",
+          "is_correct": false,
+          "explanation": "ผิด Rs = 1.6 ต่ำกว่าเกณฑ์ 2.0 ที่ monograph กำหนด ระบบจึงไม่ผ่าน"
+        },
+        {
+          "label": "B",
+          "text": "Tailing factor = 2.5 ไม่ผ่าน ส่วนเกณฑ์อื่นผ่าน",
+          "is_correct": false,
+          "explanation": "ผิด ได้จาก W0.05/f = 0.30/0.12 = 2.5 ซึ่งลืมคูณ 2 ที่ตัวส่วน ค่าที่ถูกคือ 1.25"
+        },
+        {
+          "label": "C",
+          "text": "RSD ไม่ผ่าน เพราะต้องไม่เกิน 0.5%",
+          "is_correct": false,
+          "explanation": "ผิด เกณฑ์ที่ monograph ให้คือ ≤ 2.0% ค่า 0.8% จึงผ่าน"
+        },
+        {
+          "label": "D",
+          "text": "Resolution ไม่ผ่าน (tailing factor = 1.25 ผ่าน) จึงยังไม่ควรวิเคราะห์ตัวอย่างจนกว่าจะแก้ไขระบบให้ผ่าน",
+          "is_correct": true,
+          "explanation": "ถูกต้อง T = 0.30/(2×0.12) = 1.25 ผ่าน แต่ Rs 1.6 < 2.0 ไม่ผ่าน ต้องแก้ไขระบบก่อน"
+        },
+        {
+          "label": "E",
+          "text": "Theoretical plates ไม่ผ่าน เพราะ N ควรต่ำกว่า 2000",
+          "is_correct": false,
+          "explanation": "ผิด N ยิ่งสูงยิ่งดี (efficiency สูง) เกณฑ์คือ ≥ 2000 ค่า 6500 จึงผ่าน"
+        }
+      ],
+      "key_takeaway": "USP tailing factor T = W0.05/2f (≤ 2.0 ทั่วไป); N = 16(tR/W)² หรือ 5.54(tR/W0.5)²; SST ไม่ผ่านข้อใดข้อหนึ่ง → ห้ามรายงานผลตัวอย่าง",
+      "calculation_steps": [
+        "ขั้นที่ 1: T = W0.05 / (2f) = 0.30 min / (2 × 0.12 min) = 0.30/0.24 = 1.25",
+        "ขั้นที่ 2: เทียบเกณฑ์: T 1.25 ≤ 2.0 ผ่าน; RSD 0.8% ≤ 2.0% ผ่าน; N 6500 ≥ 2000 ผ่าน",
+        "ขั้นที่ 3: Rs 1.6 < 2.0 → ไม่ผ่าน → system suitability fail"
+      ]
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "ต้องพัฒนาวิธี HPLC สำหรับ assay และ related substances ของสารที่ไม่มี chromophore (ไม่ดูดกลืนแสง UV ที่ความยาวคลื่นมากกว่า 200 nm) และจำเป็นต้องใช้ gradient elution เพื่อแยก impurity ทั้งหมด detector ใดเหมาะสมที่สุด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "UV detector ที่ 254 nm"
+      },
+      {
+        "label": "B",
+        "text": "Refractive index (RI) detector"
+      },
+      {
+        "label": "C",
+        "text": "Fluorescence detector โดยไม่ทำ derivatization"
+      },
+      {
+        "label": "D",
+        "text": "Photodiode array (PDA) detector"
+      },
+      {
+        "label": "E",
+        "text": "Evaporative light scattering detector (ELSD) หรือ charged aerosol detector (CAD)"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "ELSD/CAD เป็น universal detector สำหรับสารที่ระเหยยากกว่า mobile phase ไม่ต้องอาศัย chromophore และใช้กับ gradient elution ได้ (ต้องใช้ mobile phase/buffer ที่ระเหยได้) ขณะที่ RI ไม่เหมาะกับ gradient",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. Evaporative light scattering detector (ELSD) หรือ charged aerosol detector (CAD) — สารไม่มี chromophore + gradient → ELSD หรือ CAD (RI ใช้ได้เฉพาะ isocratic)",
+      "reason": "การเลือก detector ใน HPLC ขึ้นกับสมบัติของสารและสภาวะการแยก UV/PDA เป็น detector ที่ใช้มากที่สุดแต่ต้องอาศัย chromophore (เช่น ระบบ conjugated/aromatic) สารอย่าง aminoglycosides, น้ำตาล, sugar alcohols, lipids, polyethylene glycol หรือ amino acids บางตัวไม่มี chromophore จึงตรวจด้วย UV ไม่ได้หรือได้ไม่ไว RI detector วัดความแตกต่างของดัชนีหักเหระหว่าง eluent กับ reference เป็น universal detector แต่ไวต่ำ ไวต่ออุณหภูมิ และเนื่องจากดัชนีหักเหของ mobile phase เปลี่ยนไปตาม gradient จึงเกิด baseline drift มากจนใช้กับ gradient ไม่ได้ ELSD ทำงานโดยพ่นละออง (nebulize) eluent ระเหย mobile phase แล้ววัดแสงที่กระเจิงจากอนุภาคสาร ส่วน CAD ให้ประจุแก่อนุภาคแล้ววัดประจุ ทั้งสองใช้กับ gradient ได้ ไวกว่า RI และ CAD ให้ response ค่อนข้างสม่ำเสมอระหว่างสาร ข้อจำกัดคือ mobile phase ต้องระเหยได้ (ใช้ formic acid, ammonium acetate แทน phosphate buffer) สารวิเคราะห์ต้องระเหยยาก และ response มักไม่เป็นเส้นตรง (ต้องใช้ log–log หรือ quadratic fit) ทางเลือกอื่นคือ mass spectrometry หรือการทำ derivatization แล้วใช้ UV/fluorescence และสำหรับ aminoglycosides ยังมี pulsed amperometric detection (PAD)",
+      "choices": [
+        {
+          "label": "A",
+          "text": "UV detector ที่ 254 nm",
+          "is_correct": false,
+          "explanation": "ผิด UV 254 nm ต้องอาศัย chromophore สารที่ไม่ดูดกลืนแสงที่ > 200 nm จะไม่ให้สัญญาณ"
+        },
+        {
+          "label": "B",
+          "text": "Refractive index (RI) detector",
+          "is_correct": false,
+          "explanation": "ผิด RI เป็น universal detector แต่ไวต่ำและใช้กับ gradient ไม่ได้เพราะดัชนีหักเหของ mobile phase เปลี่ยนตลอด ทำให้ baseline drift"
+        },
+        {
+          "label": "C",
+          "text": "Fluorescence detector โดยไม่ทำ derivatization",
+          "is_correct": false,
+          "explanation": "ผิด fluorescence ต้องมี fluorophore สารที่ไม่มี chromophore ย่อมไม่เรืองแสงหากไม่ทำ derivatization ก่อน"
+        },
+        {
+          "label": "D",
+          "text": "Photodiode array (PDA) detector",
+          "is_correct": false,
+          "explanation": "ผิด PDA ก็เป็น UV-Vis detector (วัดหลายความยาวคลื่นพร้อมกัน) จึงยังต้องอาศัย chromophore เหมาะกับการตรวจ peak purity"
+        },
+        {
+          "label": "E",
+          "text": "Evaporative light scattering detector (ELSD) หรือ charged aerosol detector (CAD)",
+          "is_correct": true,
+          "explanation": "ถูกต้อง ELSD/CAD ไม่ต้องอาศัย chromophore และใช้กับ gradient ได้ โดยต้องใช้ mobile phase ที่ระเหยได้"
+        }
+      ],
+      "key_takeaway": "UV/PDA ต้องมี chromophore; Fluorescence ต้องมี fluorophore; RI = universal แต่ isocratic เท่านั้น; ELSD/CAD = universal ใช้กับ gradient ได้ (volatile mobile phase)"
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "QC ต้องตรวจหา residual solvents (เช่น methanol, dichloromethane, ethanol) ในวัตถุดิบยาตามแนวทาง ICH Q3C/USP <467> เทคนิคใดเหมาะสมที่สุด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Reversed-phase HPLC กับ UV detector ฉีดสารละลายตัวอย่างโดยตรง"
+      },
+      {
+        "label": "B",
+        "text": "Static headspace gas chromatography กับ flame ionization detector (FID)"
+      },
+      {
+        "label": "C",
+        "text": "Thin-layer chromatography บน silica gel พ่นด้วย iodine vapour"
+      },
+      {
+        "label": "D",
+        "text": "Karl Fischer titration"
+      },
+      {
+        "label": "E",
+        "text": "Loss on drying ที่ 105 °C แล้วรายงานเป็น residual solvents ทั้งหมด"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Residual solvents เป็นสารระเหยง่าย จึงวิเคราะห์ด้วย GC โดยใช้ headspace sampling เพื่อแยกเฉพาะไอระเหยเข้าสู่คอลัมน์ ไม่ต้องฉีดเมทริกซ์ที่ระเหยไม่ได้ และ FID ไวต่อสารอินทรีย์ที่มีพันธะ C–H",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. Static headspace gas chromatography กับ flame ionization detector (FID) — Residual solvents → headspace GC-FID (USP <467>)",
+      "reason": "Gas chromatography เหมาะกับสารที่ระเหยได้และทนความร้อน mobile phase เป็นก๊าซเฉื่อย (carrier gas เช่น He, N2, H2) ทำหน้าที่พาสารเท่านั้น การแยกขึ้นกับ vapour pressure (จุดเดือด) และ interaction กับ stationary phase USP <467> ใช้ static headspace: ละลายหรือแขวนลอยตัวอย่างในน้ำหรือ DMSO/DMF ในขวดปิด ให้ความร้อนจนไอระเหยถึงสมดุลกับ liquid phase แล้วฉีดเฉพาะไอเข้า GC ข้อดีคือไม่มีสารที่ระเหยไม่ได้เข้าไปสกปรก inlet/คอลัมน์ และเพิ่มความไวสำหรับสารระเหยง่าย คอลัมน์ที่ใช้ เช่น G43 (6% cyanopropylphenyl–94% dimethylpolysiloxane) FID ไวต่อสารอินทรีย์ที่เผาไหม้ให้ไอออนได้ มี linear range กว้าง และไม่ตอบสนองต่อน้ำ, CO2, ก๊าซเฉื่อย จึงเหมาะกับตัวอย่างที่มีน้ำ ICH Q3C จัด residual solvents เป็น Class 1 (หลีกเลี่ยง เช่น benzene, carbon tetrachloride), Class 2 (จำกัดตาม PDE เช่น methanol, dichloromethane, acetonitrile) และ Class 3 (พิษต่ำ เช่น ethanol, acetone; ถ้า ≤ 0.5% อาจใช้ loss on drying แทนได้)",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Reversed-phase HPLC กับ UV detector ฉีดสารละลายตัวอย่างโดยตรง",
+          "is_correct": false,
+          "explanation": "ผิด ตัวทำละลายส่วนใหญ่ไม่มี chromophore ที่เหมาะสม และระเหยง่าย ไม่เหมาะกับ HPLC-UV"
+        },
+        {
+          "label": "B",
+          "text": "Static headspace gas chromatography กับ flame ionization detector (FID)",
+          "is_correct": true,
+          "explanation": "ถูกต้อง headspace GC-FID เป็นวิธีมาตรฐานตาม USP <467> สำหรับ residual solvents"
+        },
+        {
+          "label": "C",
+          "text": "Thin-layer chromatography บน silica gel พ่นด้วย iodine vapour",
+          "is_correct": false,
+          "explanation": "ผิด TLC ไม่เหมาะกับสารระเหยง่าย (ระเหยไปจากแผ่นระหว่าง develop) และไม่มีความไว/การหาปริมาณที่เพียงพอ"
+        },
+        {
+          "label": "D",
+          "text": "Karl Fischer titration",
+          "is_correct": false,
+          "explanation": "ผิด Karl Fischer วัดเฉพาะน้ำ ไม่ใช่ตัวทำละลายอินทรีย์"
+        },
+        {
+          "label": "E",
+          "text": "Loss on drying ที่ 105 °C แล้วรายงานเป็น residual solvents ทั้งหมด",
+          "is_correct": false,
+          "explanation": "ผิด LOD วัดน้ำหนักที่หายไปรวมทั้งน้ำและสารระเหยทั้งหมด ไม่จำเพาะต่อชนิดตัวทำละลาย ใช้แทนได้เฉพาะกรณีมีแต่ Class 3 solvents ไม่เกิน 0.5% ไม่ใช่กรณีที่มี Class 2 อย่าง methanol หรือ dichloromethane"
+        }
+      ],
+      "key_takeaway": "GC: สารระเหยได้/ทนร้อน; headspace GC-FID สำหรับ residual solvents; ICH Q3C Class 1 หลีกเลี่ยง, Class 2 จำกัดตาม PDE, Class 3 พิษต่ำ (≤ 0.5% ใช้ LOD ได้)"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ในการทดสอบ identification ด้วย thin-layer chromatography (TLC) จุดสารบนแผ่น silica gel แล้ว develop ระยะทางจากจุดเริ่มต้น (origin) ถึงกึ่งกลางของ spot ตัวยาวัดได้ 4.2 cm และระยะจาก origin ถึง solvent front วัดได้ 12.0 cm ค่า Rf ของตัวยาเท่ากับเท่าใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "2.86"
+      },
+      {
+        "label": "B",
+        "text": "0.42"
+      },
+      {
+        "label": "C",
+        "text": "0.35"
+      },
+      {
+        "label": "D",
+        "text": "0.65"
+      },
+      {
+        "label": "E",
+        "text": "7.8"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Rf = ระยะทางที่สารเคลื่อนที่ / ระยะทางที่ตัวทำละลายเคลื่อนที่ (วัดจาก origin ทั้งคู่) = 4.2/12.0 = 0.35",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. 0.35 — Rf = ระยะ spot/ระยะ solvent front = 4.2/12.0",
+      "reason": "Retardation factor (Rf) เป็นอัตราส่วนระหว่างระยะทางที่สารเคลื่อนที่ (วัดจาก origin ถึงกึ่งกลาง spot) กับระยะทางที่ solvent front เคลื่อนที่ (วัดจาก origin เช่นกัน) ค่า Rf จึงอยู่ระหว่าง 0 ถึง 1 เสมอ ในการทดสอบ identity ตามเภสัชตำรับจะจุด test solution คู่กับ reference solution บนแผ่นเดียวกัน แล้วกำหนดว่า principal spot ของ test solution ต้องมีตำแหน่ง ขนาด และสีสอดคล้องกับของ reference solution เพราะค่า Rf ขึ้นกับหลายปัจจัย เช่น ชนิดและความชื้นของ stationary phase, องค์ประกอบ mobile phase, การ saturate ของ chamber, อุณหภูมิ และความหนาของ layer บน silica gel (normal phase) สารที่มีขั้วมากจะเกาะ silica แน่นและมี Rf ต่ำ การเพิ่มความเป็นขั้วของ mobile phase จะเพิ่ม Rf ค่า Rf ที่เหมาะสมสำหรับการแยกอยู่ประมาณ 0.2–0.8 การ visualize ทำได้ด้วย UV 254 nm บนแผ่นที่มี fluorescent indicator (F254) ซึ่ง spot จะมืด (quenching) หรือพ่นด้วย reagent เช่น iodine, ninhydrin, Dragendorff สำหรับ alkaloid",
+      "choices": [
+        {
+          "label": "A",
+          "text": "2.86",
+          "is_correct": false,
+          "explanation": "ผิด ได้จากการกลับเศษส่วน (12.0/4.2) ค่า Rf ไม่มีทางเกิน 1"
+        },
+        {
+          "label": "B",
+          "text": "0.42",
+          "is_correct": false,
+          "explanation": "ผิด ใช้เลข 4.2 โดยตรงหารด้วย 10 ไม่ใช่สูตรที่ถูก"
+        },
+        {
+          "label": "C",
+          "text": "0.35",
+          "is_correct": true,
+          "explanation": "ถูกต้อง 4.2/12.0 = 0.35"
+        },
+        {
+          "label": "D",
+          "text": "0.65",
+          "is_correct": false,
+          "explanation": "ผิด เป็น 1 − Rf (0.65) ซึ่งไม่มีความหมายในการรายงาน"
+        },
+        {
+          "label": "E",
+          "text": "7.8",
+          "is_correct": false,
+          "explanation": "ผิด เป็นผลต่างของระยะทาง (12.0 − 4.2 cm) ไม่ใช่อัตราส่วน"
+        }
+      ],
+      "key_takeaway": "Rf = d(สาร)/d(solvent front) วัดจาก origin ทั้งคู่ ค่าอยู่ 0–1; normal phase silica: สารมีขั้ว Rf ต่ำ",
+      "calculation_steps": [
+        "ขั้นที่ 1: ระยะทางที่สารเคลื่อนที่ = 4.2 cm; ระยะ solvent front = 12.0 cm (วัดจาก origin)",
+        "ขั้นที่ 2: Rf = 4.2 cm / 12.0 cm = 0.35 (ไม่มีหน่วย)"
+      ]
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "ในการทดสอบ identification วัตถุดิบยาด้วย IR spectroscopy (KBr disc) พบว่า spectrum ของตัวอย่างต่างจาก spectrum ของ reference standard ในช่วง fingerprint (ประมาณ 1500–400 cm⁻¹) ขณะที่ HPLC retention time ตรงกันและ assay ผ่าน ตามแนวทางเภสัชตำรับควรดำเนินการอย่างไรต่อไป",
+    "choices": [
+      {
+        "label": "A",
+        "text": "สงสัยว่าเป็น polymorph ต่างกัน ให้ละลายทั้งตัวอย่างและ reference standard ในตัวทำละลายเดียวกัน ระเหยให้แห้ง (หรือ recrystallize ตามวิธีที่กำหนด) แล้วบันทึก spectrum ใหม่เปรียบเทียบ"
+      },
+      {
+        "label": "B",
+        "text": "สรุปว่าเป็นสารผิดชนิดและ reject ทันที"
+      },
+      {
+        "label": "C",
+        "text": "พิจารณาเฉพาะช่วง functional group (4000–1500 cm⁻¹) และไม่ต้องสนใจช่วง fingerprint"
+      },
+      {
+        "label": "D",
+        "text": "เปลี่ยนไปเตรียมตัวอย่างโดยละลายในน้ำแทน KBr disc"
+      },
+      {
+        "label": "E",
+        "text": "เพิ่มปริมาณตัวอย่างใน KBr disc จน peak อิ่มตัวทั้งหมดเพื่อให้เปรียบเทียบง่าย"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "ความต่างใน fingerprint region ของ solid-state IR อาจเกิดจาก polymorphism หรือ solvate ที่ต่างกัน เภสัชตำรับให้ละลายทั้ง sample และ reference ในตัวทำละลายเดียวกันแล้วระเหย/ตกผลึกใหม่ก่อนบันทึก spectrum ซ้ำ",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. สงสัยว่าเป็น polymorph ต่างกัน ให้ละลายทั้งตัวอย่างและ reference standard ในตัวทำละลายเดียวกัน ระเหยให้แห้ง (หรือ recrystallize ตามวิธีที่กำหนด) แล้วบันทึก spectrum ใหม่เปรียบเทียบ — IR ไม่ตรงในสถานะของแข็ง → นึกถึง polymorphism → recrystallize ทั้งคู่ด้วยวิธีเดียวกันแล้ววัดใหม่",
+      "reason": "IR spectroscopy เป็นวิธี identification ที่มีความจำเพาะสูงที่สุดวิธีหนึ่ง (USP <197>, BP Appendix II A) เพราะช่วง fingerprint (ประมาณ 1500–400 cm⁻¹) มีแถบการสั่นแบบ bending และ skeletal ที่เป็นเอกลักษณ์ของแต่ละโมเลกุล การทดสอบทำโดยเปรียบเทียบ spectrum ของตัวอย่างกับ reference standard ที่เตรียมและวัดภายใต้สภาวะเดียวกัน (เช่น KBr disc, mineral oil mull หรือ ATR) โดยตำแหน่งและความเข้มสัมพัทธ์ของแถบต้องสอดคล้องกัน อย่างไรก็ตามในสถานะของแข็ง polymorph หรือ solvate/hydrate ที่ต่างกันของสารเดียวกันมีการจัดเรียง crystal lattice และ hydrogen bonding ต่างกัน ทำให้ spectrum ต่างกันได้ ขณะที่ HPLC (วัดในสารละลาย) ให้ผลเหมือนกัน เภสัชตำรับจึงระบุว่าถ้า spectrum ในสถานะของแข็งไม่ตรงกัน ให้ละลายทั้งตัวอย่างและ reference ในตัวทำละลายเดียวกัน ระเหยแห้ง แล้ววัดใหม่ หากตรงกันจึงยืนยัน identity ได้ ทั้งนี้ polymorph อาจมีผลต่อ solubility, dissolution และ bioavailability ซึ่งควรควบคุมแยกต่างหาก (เช่น XRPD, DSC) ข้อควรระวังในการเตรียม KBr disc: KBr ต้องแห้ง (น้ำให้แถบกว้างที่ ~3400 cm⁻¹ และ ~1640 cm⁻¹) และแรงอัดอาจทำให้เกิด polymorphic transformation หรือ ion exchange กับเกลือ hydrochloride",
+      "choices": [
+        {
+          "label": "A",
+          "text": "สงสัยว่าเป็น polymorph ต่างกัน ให้ละลายทั้งตัวอย่างและ reference standard ในตัวทำละลายเดียวกัน ระเหยให้แห้ง (หรือ recrystallize ตามวิธีที่กำหนด) แล้วบันทึก spectrum ใหม่เปรียบเทียบ",
+          "is_correct": true,
+          "explanation": "ถูกต้อง เป็นขั้นตอนตามเภสัชตำรับเพื่อตัดผลของ polymorphism/solvate ก่อนสรุป identity"
+        },
+        {
+          "label": "B",
+          "text": "สรุปว่าเป็นสารผิดชนิดและ reject ทันที",
+          "is_correct": false,
+          "explanation": "ผิด ข้อมูลอื่น (HPLC, assay) บ่งว่าเป็นสารเดียวกัน ความต่างใน solid-state IR อาจมาจาก polymorph จึงยังไม่ควรสรุปและ reject ทันที"
+        },
+        {
+          "label": "C",
+          "text": "พิจารณาเฉพาะช่วง functional group (4000–1500 cm⁻¹) และไม่ต้องสนใจช่วง fingerprint",
+          "is_correct": false,
+          "explanation": "ผิด ช่วง fingerprint เป็นช่วงที่ให้ความจำเพาะสูงสุด การละเลยช่วงนี้ทำให้ identification ไม่จำเพาะ"
+        },
+        {
+          "label": "D",
+          "text": "เปลี่ยนไปเตรียมตัวอย่างโดยละลายในน้ำแทน KBr disc",
+          "is_correct": false,
+          "explanation": "ผิด น้ำดูดกลืน IR อย่างแรงและละลาย KBr/NaCl windows จึงไม่ใช้เป็นตัวกลางในการวัด IR ทั่วไป"
+        },
+        {
+          "label": "E",
+          "text": "เพิ่มปริมาณตัวอย่างใน KBr disc จน peak อิ่มตัวทั้งหมดเพื่อให้เปรียบเทียบง่าย",
+          "is_correct": false,
+          "explanation": "ผิด peak ที่อิ่มตัว (transmittance ใกล้ 0) ทำให้เสียข้อมูลความเข้มสัมพัทธ์และรูปร่าง peak การเปรียบเทียบจะแย่ลง"
+        }
+      ],
+      "key_takeaway": "IR identity: เทียบกับ RS ในสภาวะเดียวกัน; fingerprint region ~1500–400 cm⁻¹; spectrum ของแข็งไม่ตรง → สงสัย polymorph → ละลาย/ระเหยทั้งคู่แล้ววัดใหม่"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "ตามแนวทาง ICH Q2 เรื่อง validation of analytical procedures ข้อใดกล่าวถูกต้องเกี่ยวกับ validation characteristics ที่ต้องประเมินสำหรับวิธีวิเคราะห์แต่ละประเภท",
+    "choices": [
+      {
+        "label": "A",
+        "text": "วิธี identification ต้องประเมินทั้ง accuracy และ specificity"
+      },
+      {
+        "label": "B",
+        "text": "วิธี assay ของตัวยาสำคัญต้องประเมิน limit of quantitation (LOQ) ทุกครั้ง"
+      },
+      {
+        "label": "C",
+        "text": "Limit test สำหรับ impurity ต้องประเมิน precision และ linearity เป็นหลัก"
+      },
+      {
+        "label": "D",
+        "text": "วิธีหาปริมาณ impurity (quantitative test) ต้องประเมิน LOQ แต่โดยทั่วไปไม่จำเป็นต้องประเมิน LOD"
+      },
+      {
+        "label": "E",
+        "text": "วิธี assay ไม่จำเป็นต้องประเมิน range เพราะวิเคราะห์ที่ความเข้มข้นเดียว"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "ตามตารางของ ICH Q2 การทดสอบ impurity เชิงปริมาณต้องประเมิน specificity, accuracy, precision, linearity/range และ LOQ ส่วน LOD อาจประเมินในบางกรณีแต่ไม่จำเป็นโดยทั่วไป",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. วิธีหาปริมาณ impurity (quantitative test) ต้องประเมิน LOQ แต่โดยทั่วไปไม่จำเป็นต้องประเมิน LOD — Quantitative impurity test: ต้องมี LOQ (ไม่จำเป็นต้องมี LOD); limit test: specificity + LOD",
+      "reason": "ICH Q2 แบ่งวิธีวิเคราะห์เป็น 4 ประเภทหลัก: (1) identification ต้องการ specificity เพียงอย่างเดียว (ต้องแยกแยะสารเป้าหมายจากสารที่โครงสร้างใกล้เคียงได้) (2) impurity test แบบ quantitative ต้องการ specificity, accuracy, precision (repeatability และ intermediate precision), linearity, range และ LOQ ส่วน LOD 'อาจจำเป็นในบางกรณี' (3) impurity limit test ต้องการ specificity และ LOD เท่านั้น เพราะเพียงบอกว่าเกินหรือไม่เกินเกณฑ์ (4) assay (content/potency และ dissolution) ต้องการ specificity, accuracy, precision, linearity และ range แต่ไม่ต้องการ LOD/LOQ เพราะวิเคราะห์ที่ระดับความเข้มข้นสูง (ช่วงปกติ 80–120% ของ test concentration) reproducibility ประเมินเมื่อต้องการ standardize วิธีระหว่างห้องปฏิบัติการ ส่วน robustness ควรพิจารณาในขั้นพัฒนาวิธี ICH Q2(R2) ฉบับปรับปรุง (2023) ยังคงหลักการเดียวกัน โดยเรียก linearity/range รวมว่า response และ range ซึ่งช่วงต่ำสุดของการหาปริมาณ impurity ต้องอยู่ที่ระดับ LOQ (reporting threshold) LOD และ LOQ หาได้จาก signal-to-noise (3:1 และ 10:1) หรือจาก standard deviation ของ response และ slope (3.3σ/S และ 10σ/S)",
+      "choices": [
+        {
+          "label": "A",
+          "text": "วิธี identification ต้องประเมินทั้ง accuracy และ specificity",
+          "is_correct": false,
+          "explanation": "ผิด identification ต้องการ specificity เท่านั้น ไม่ต้องประเมิน accuracy"
+        },
+        {
+          "label": "B",
+          "text": "วิธี assay ของตัวยาสำคัญต้องประเมิน limit of quantitation (LOQ) ทุกครั้ง",
+          "is_correct": false,
+          "explanation": "ผิด assay ไม่ต้องประเมิน LOD/LOQ เพราะวิเคราะห์ที่ระดับความเข้มข้นสูง (ประมาณ 80–120% ของ test concentration)"
+        },
+        {
+          "label": "C",
+          "text": "Limit test สำหรับ impurity ต้องประเมิน precision และ linearity เป็นหลัก",
+          "is_correct": false,
+          "explanation": "ผิด limit test ต้องการ specificity และ LOD ไม่จำเป็นต้องประเมิน precision หรือ linearity"
+        },
+        {
+          "label": "D",
+          "text": "วิธีหาปริมาณ impurity (quantitative test) ต้องประเมิน LOQ แต่โดยทั่วไปไม่จำเป็นต้องประเมิน LOD",
+          "is_correct": true,
+          "explanation": "ถูกต้อง quantitative impurity test ต้องการ LOQ ส่วน LOD ไม่จำเป็นโดยทั่วไป (อาจต้องในบางกรณี)"
+        },
+        {
+          "label": "E",
+          "text": "วิธี assay ไม่จำเป็นต้องประเมิน range เพราะวิเคราะห์ที่ความเข้มข้นเดียว",
+          "is_correct": false,
+          "explanation": "ผิด assay ต้องประเมิน range (โดยทั่วไป 80–120% ของ test concentration; content uniformity 70–130%; dissolution ±20% ของช่วงที่กำหนด)"
+        }
+      ],
+      "key_takeaway": "ICH Q2: Identification = specificity; Limit test = specificity + LOD; Quantitative impurity = ทุกอย่าง + LOQ (ไม่ต้อง LOD); Assay = ทุกอย่าง ยกเว้น LOD/LOQ"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ในการ validate วิธี HPLC สำหรับหาปริมาณ degradation product นักวิเคราะห์สร้าง calibration curve ที่ระดับความเข้มข้นต่ำ ได้ slope (S) = 0.0500 AU·min ต่อ µg/mL และ standard deviation ของ y-intercept (σ) = 0.0020 AU·min ตามแนวทาง ICH Q2 ค่า LOD และ LOQ โดยประมาณเท่ากับเท่าใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "LOD 0.040 µg/mL, LOQ 0.120 µg/mL"
+      },
+      {
+        "label": "B",
+        "text": "LOD 0.400 µg/mL, LOQ 1.32 µg/mL"
+      },
+      {
+        "label": "C",
+        "text": "LOD 0.066 µg/mL, LOQ 0.200 µg/mL"
+      },
+      {
+        "label": "D",
+        "text": "LOD 0.132 µg/mL, LOQ 0.132 µg/mL"
+      },
+      {
+        "label": "E",
+        "text": "LOD 0.132 µg/mL, LOQ 0.400 µg/mL"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "LOD = 3.3σ/S = 3.3 × 0.0020/0.0500 = 0.132 µg/mL; LOQ = 10σ/S = 10 × 0.0020/0.0500 = 0.400 µg/mL",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. LOD 0.132 µg/mL, LOQ 0.400 µg/mL — LOD = 3.3σ/S, LOQ = 10σ/S",
+      "reason": "ICH Q2 ให้หาค่า LOD (detection limit; ปริมาณต่ำสุดที่ตรวจพบได้แต่ไม่จำเป็นต้องหาปริมาณได้แม่นยำ) และ LOQ (quantitation limit; ปริมาณต่ำสุดที่หาปริมาณได้ด้วย precision และ accuracy ที่ยอมรับได้) ได้หลายวิธี: (1) visual evaluation (2) signal-to-noise ratio โดย LOD ประมาณ S/N 3:1 (หรือ 2:1) และ LOQ ประมาณ S/N 10:1 ซึ่งเหมาะกับวิธีที่มี baseline noise เช่น HPLC (3) จาก standard deviation ของ response และ slope: LOD = 3.3σ/S และ LOQ = 10σ/S โดย σ อาจเป็น SD ของ blank, residual SD ของเส้นถดถอย หรือ SD ของ y-intercept และ S คือ slope ของ calibration curve ในช่วงใกล้ LOD/LOQ ค่าที่คำนวณได้ต้องยืนยันด้วยการวิเคราะห์ตัวอย่างที่ความเข้มข้นใกล้ค่าดังกล่าว (เช่น ฉีด 6 ครั้งที่ระดับ LOQ แล้วดู RSD และ recovery) สำหรับวิธีหาปริมาณ impurity ค่า LOQ ต้องไม่สูงกว่า reporting threshold ของ ICH Q3A/Q3B (เช่น 0.05% สำหรับ maximum daily dose ≤ 2 g) ค่า LOQ จะสูงกว่า LOD ประมาณ 3 เท่าเสมอ (10/3.3)",
+      "choices": [
+        {
+          "label": "A",
+          "text": "LOD 0.040 µg/mL, LOQ 0.120 µg/mL",
+          "is_correct": false,
+          "explanation": "ผิด ได้จาก σ/S × 1 และ × 3 ซึ่งไม่ใช่ตัวคูณที่ ICH กำหนด (σ/S = 0.040)"
+        },
+        {
+          "label": "B",
+          "text": "LOD 0.400 µg/mL, LOQ 1.32 µg/mL",
+          "is_correct": false,
+          "explanation": "ผิด สลับและผิดตัวคูณ: 0.400 คือ LOQ ไม่ใช่ LOD"
+        },
+        {
+          "label": "C",
+          "text": "LOD 0.066 µg/mL, LOQ 0.200 µg/mL",
+          "is_correct": false,
+          "explanation": "ผิด ได้จากการใช้ตัวคูณครึ่งหนึ่ง (1.65 และ 5) ไม่ตรงตาม ICH"
+        },
+        {
+          "label": "D",
+          "text": "LOD 0.132 µg/mL, LOQ 0.132 µg/mL",
+          "is_correct": false,
+          "explanation": "ผิด LOD และ LOQ ไม่สามารถเท่ากันได้ LOQ ต้องใช้ตัวคูณ 10 ซึ่งสูงกว่า LOD"
+        },
+        {
+          "label": "E",
+          "text": "LOD 0.132 µg/mL, LOQ 0.400 µg/mL",
+          "is_correct": true,
+          "explanation": "ถูกต้อง 3.3 × 0.040 = 0.132 µg/mL และ 10 × 0.040 = 0.400 µg/mL"
+        }
+      ],
+      "key_takeaway": "LOD = 3.3σ/S (S/N ≈ 3:1); LOQ = 10σ/S (S/N ≈ 10:1); LOQ ≈ 3 × LOD",
+      "calculation_steps": [
+        "ขั้นที่ 1: σ/S = 0.0020 AU·min / 0.0500 AU·min per µg/mL = 0.040 µg/mL",
+        "ขั้นที่ 2: LOD = 3.3 × 0.040 µg/mL = 0.132 µg/mL",
+        "ขั้นที่ 3: LOQ = 10 × 0.040 µg/mL = 0.400 µg/mL"
+      ]
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "ระหว่างพัฒนาวิธี HPLC สำหรับ assay ยาเม็ด นักวิเคราะห์จงใจปรับสภาวะเล็กน้อย ได้แก่ pH ของ buffer ±0.2, อุณหภูมิคอลัมน์ ±5 °C, อัตราการไหล ±10% และสัดส่วน acetonitrile ±2% แล้วตรวจดูผลต่อ resolution, tailing factor และผล assay การศึกษานี้คือการประเมิน validation characteristic ใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Repeatability"
+      },
+      {
+        "label": "B",
+        "text": "Robustness"
+      },
+      {
+        "label": "C",
+        "text": "Intermediate precision"
+      },
+      {
+        "label": "D",
+        "text": "Reproducibility"
+      },
+      {
+        "label": "E",
+        "text": "Specificity"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Robustness คือความสามารถของวิธีที่จะไม่ได้รับผลกระทบจากการเปลี่ยนแปลงพารามิเตอร์ของวิธีเล็กน้อยโดยจงใจ (deliberate small variations) ซึ่งตรงกับการศึกษานี้",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. Robustness — จงใจเปลี่ยนพารามิเตอร์ของวิธีเล็กน้อย = robustness",
+      "reason": "Robustness เป็นตัวบ่งชี้ความน่าเชื่อถือของวิธีระหว่างการใช้งานปกติ ประเมินในขั้นพัฒนาวิธีโดยเปลี่ยนพารามิเตอร์ที่อาจแปรผันได้ในการใช้งานจริง เช่น pH ของ mobile phase, สัดส่วน organic, อุณหภูมิคอลัมน์, flow rate, lot/ผู้ผลิตคอลัมน์, ความยาวคลื่น, ความคงตัวของสารละลายตัวอย่าง หากพบว่าพารามิเตอร์ใดมีผลมาก ควรควบคุมให้เข้มงวดหรือระบุ system suitability ที่ครอบคลุม (ICH Q2 ระบุว่าผลการศึกษา robustness ควรนำมากำหนด system suitability parameters) ส่วน precision แบ่งเป็น 3 ระดับ: repeatability (ภายในวันเดียว ผู้วิเคราะห์ เครื่อง และห้องปฏิบัติการเดียวกัน ช่วงเวลาสั้น อย่างน้อย 9 determinations ครอบคลุมช่วง หรือ 6 determinations ที่ 100%), intermediate precision (ภายในห้องปฏิบัติการเดียว แต่ต่างวัน ต่างผู้วิเคราะห์ ต่างเครื่อง) และ reproducibility (ระหว่างห้องปฏิบัติการ เช่น collaborative study หรือ method transfer) ข้อแตกต่างสำคัญคือ precision ศึกษาความแปรปรวนสุ่มตามธรรมชาติภายใต้วิธีเดิม ขณะที่ robustness เป็นการเปลี่ยนเงื่อนไขของวิธีโดยเจตนา ใน ICH Q2(R2)/Q14 robustness ถูกเน้นให้เป็นส่วนหนึ่งของการพัฒนาวิธี",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Repeatability",
+          "is_correct": false,
+          "explanation": "ผิด repeatability คือการวิเคราะห์ซ้ำภายใต้สภาวะเดิมทุกอย่างในช่วงเวลาสั้น ไม่มีการเปลี่ยนพารามิเตอร์ของวิธีโดยเจตนา"
+        },
+        {
+          "label": "B",
+          "text": "Robustness",
+          "is_correct": true,
+          "explanation": "ถูกต้อง การจงใจเปลี่ยน pH, อุณหภูมิ, flow rate และองค์ประกอบ mobile phase เล็กน้อยคือการประเมิน robustness"
+        },
+        {
+          "label": "C",
+          "text": "Intermediate precision",
+          "is_correct": false,
+          "explanation": "ผิด intermediate precision ประเมินความแปรปรวนภายในห้องปฏิบัติการจากต่างวัน ต่างผู้วิเคราะห์ ต่างเครื่อง โดยใช้วิธีตามที่กำหนดไม่เปลี่ยนพารามิเตอร์"
+        },
+        {
+          "label": "D",
+          "text": "Reproducibility",
+          "is_correct": false,
+          "explanation": "ผิด reproducibility คือ precision ระหว่างห้องปฏิบัติการ"
+        },
+        {
+          "label": "E",
+          "text": "Specificity",
+          "is_correct": false,
+          "explanation": "ผิด specificity คือความสามารถวัดสารเป้าหมายได้โดยไม่ถูกรบกวนจาก impurity, degradant, excipient (ประเมินด้วย placebo, forced degradation, peak purity)"
+        }
+      ],
+      "key_takeaway": "Precision 3 ระดับ: repeatability (สภาวะเดิม) → intermediate (ต่างวัน/คน/เครื่อง ในแล็บเดียว) → reproducibility (ต่างแล็บ); robustness = จงใจเปลี่ยนพารามิเตอร์เล็กน้อย"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "ข้อใดกล่าวถูกต้องเกี่ยวกับ limit tests และการควบคุม elemental impurities ในวัตถุดิบยาตามเภสัชตำรับปัจจุบัน",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Limit test for chloride ใช้ barium chloride ในสภาวะกรด hydrochloric แล้วเปรียบเทียบความขุ่นกับ standard"
+      },
+      {
+        "label": "B",
+        "text": "Limit test for sulfate ใช้ silver nitrate ในสภาวะกรด nitric แล้วเปรียบเทียบความขุ่นกับ standard"
+      },
+      {
+        "label": "C",
+        "text": "ตาม ICH Q3D ธาตุ Class 1 ได้แก่ As, Cd, Hg และ Pb และ USP <233> ใช้เทคนิคเช่น ICP-OES หรือ ICP-MS ในการตรวจวัด"
+      },
+      {
+        "label": "D",
+        "text": "Heavy metals test แบบเดิม (sulfide precipitation, USP <231>) มีความจำเพาะต่อแต่ละธาตุ จึงยังคงเป็นวิธีหลักที่ USP แนะนำ"
+      },
+      {
+        "label": "E",
+        "text": "Limit test for chloride ต้องทำในสภาวะด่างด้วย ammonia เพื่อป้องกันการตกตะกอนของ anion อื่น"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "ICH Q3D จัด As, Cd, Hg, Pb เป็น Class 1 (พิษสูง ต้องประเมินในทุกแหล่ง) และ USP <232>/<233> ซึ่งแทนที่ heavy metals test <231> ใช้ ICP-OES/ICP-MS ที่จำเพาะต่อธาตุ",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. ตาม ICH Q3D ธาตุ Class 1 ได้แก่ As, Cd, Hg และ Pb และ USP <233> ใช้เทคนิคเช่น ICP-OES หรือ ICP-MS ในการตรวจวัด — Elemental impurities: ICH Q3D Class 1 = As, Cd, Hg, Pb; วัดด้วย ICP-OES/ICP-MS (USP <233>)",
+      "reason": "Limit test เป็นการทดสอบกึ่งปริมาณ (semi-quantitative) เพื่อดูว่าสิ่งเจือปนไม่เกินเกณฑ์ โดยเปรียบเทียบกับ standard ที่เตรียมพร้อมกันภายใต้สภาวะเดียวกัน Limit test for chloride: เติม dilute nitric acid และ silver nitrate เกิดความขุ่น (opalescence) ของ AgCl เปรียบเทียบกับ standard (NaCl) โดย HNO3 ป้องกันการตกตะกอนของ Ag⁺ กับ anion อื่น เช่น carbonate, phosphate และ hydroxide Limit test for sulfate: ใช้ barium chloride ในสภาวะกรด hydrochloric เกิดความขุ่นของ BaSO4 เปรียบเทียบกับ standard (K2SO4) Heavy metals test เดิม (USP <231>) ใช้การตกตะกอนเป็น sulfide สีน้ำตาล-ดำ เทียบกับ lead standard ไม่จำเพาะต่อธาตุ ความไวต่ำ และธาตุบางชนิดสูญหายระหว่างเผา (เช่น Hg) USP จึงยกเลิกและใช้ <232> Elemental Impurities–Limits และ <233> Elemental Impurities–Procedures แทน โดยสอดคล้องกับ ICH Q3D ซึ่งกำหนด PDE (permitted daily exposure) ตามเส้นทางให้ยา (oral, parenteral, inhalation) และจัดกลุ่มธาตุ: Class 1 (As, Cd, Hg, Pb), Class 2A (Co, Ni, V), Class 2B (เช่น Ag, Au, Pd, Pt, Se, Tl ฯลฯ ซึ่งมีโอกาสปนน้อย), Class 3 (เช่น Ba, Cr, Cu, Li, Mo, Sb, Sn — พิษต่ำทางปาก) เทคนิคที่ใช้คือ ICP-OES หรือ ICP-MS หลังย่อยตัวอย่าง (เช่น closed-vessel microwave digestion) การควบคุมใช้หลัก risk assessment ตลอดห่วงโซ่ (API, excipients, เครื่องมือ, ภาชนะ, catalyst)",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Limit test for chloride ใช้ barium chloride ในสภาวะกรด hydrochloric แล้วเปรียบเทียบความขุ่นกับ standard",
+          "is_correct": false,
+          "explanation": "ผิด barium chloride ในกรด HCl เป็น limit test for sulfate ส่วน chloride ใช้ AgNO3 ในกรด HNO3"
+        },
+        {
+          "label": "B",
+          "text": "Limit test for sulfate ใช้ silver nitrate ในสภาวะกรด nitric แล้วเปรียบเทียบความขุ่นกับ standard",
+          "is_correct": false,
+          "explanation": "ผิด silver nitrate ในกรด HNO3 เป็น limit test for chloride ส่วน sulfate ใช้ BaCl2 ในกรด HCl"
+        },
+        {
+          "label": "C",
+          "text": "ตาม ICH Q3D ธาตุ Class 1 ได้แก่ As, Cd, Hg และ Pb และ USP <233> ใช้เทคนิคเช่น ICP-OES หรือ ICP-MS ในการตรวจวัด",
+          "is_correct": true,
+          "explanation": "ถูกต้อง Class 1 = As, Cd, Hg, Pb และ USP <233> ใช้ ICP-OES/ICP-MS"
+        },
+        {
+          "label": "D",
+          "text": "Heavy metals test แบบเดิม (sulfide precipitation, USP <231>) มีความจำเพาะต่อแต่ละธาตุ จึงยังคงเป็นวิธีหลักที่ USP แนะนำ",
+          "is_correct": false,
+          "explanation": "ผิด sulfide precipitation ไม่จำเพาะต่อธาตุ ความไวต่ำ และถูกแทนที่ด้วย <232>/<233> แล้ว"
+        },
+        {
+          "label": "E",
+          "text": "Limit test for chloride ต้องทำในสภาวะด่างด้วย ammonia เพื่อป้องกันการตกตะกอนของ anion อื่น",
+          "is_correct": false,
+          "explanation": "ผิด limit test for chloride ทำในสภาวะกรด nitric (ในด่างที่มี ammonia Ag⁺ จะเกิด complex Ag(NH3)2⁺ และไม่ตกตะกอนเป็น AgCl)"
+        }
+      ],
+      "key_takeaway": "Chloride: AgNO3 + HNO3; Sulfate: BaCl2 + HCl; Elemental impurities: ICH Q3D/USP <232>/<233>, Class 1 = As Cd Hg Pb, วัดด้วย ICP-OES/ICP-MS"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "วัตถุดิบยาชนิดหนึ่ง monograph กำหนดเกณฑ์ assay บน dried basis ทำ loss on drying (LOD) โดยชั่งตัวอย่าง 1.0000 g อบที่ 105 °C จนน้ำหนักคงที่ เหลือ 0.9200 g และผล assay ที่คิดบนน้ำหนักตัวอย่างตามที่ชั่ง (as is) ได้ 91.50% ผล assay บน dried basis เท่ากับเท่าใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "99.46%"
+      },
+      {
+        "label": "B",
+        "text": "84.18%"
+      },
+      {
+        "label": "C",
+        "text": "91.50%"
+      },
+      {
+        "label": "D",
+        "text": "99.50%"
+      },
+      {
+        "label": "E",
+        "text": "92.00%"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "LOD = (1.0000 − 0.9200)/1.0000 × 100 = 8.00%; dried basis = as is/(1 − LOD/100) = 91.50/0.9200 = 99.46%",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. 99.46% — Dried basis = as is ÷ (1 − LOD/100) = 91.50/0.92",
+      "reason": "Loss on drying (USP <731>) วัดน้ำหนักที่หายไปเมื่ออบตัวอย่างภายใต้สภาวะที่กำหนด (อุณหภูมิ เวลา หรือจนน้ำหนักคงที่ ความดัน) ซึ่งรวมทั้งน้ำ (ความชื้นและบางครั้งน้ำผลึก) และสารระเหยอื่น เช่น residual solvents ต่างจาก Karl Fischer ที่จำเพาะต่อน้ำ สูตร LOD (%) = (W ก่อนอบ − W หลังอบ)/W ก่อนอบ × 100 เมื่อ monograph กำหนดเกณฑ์ assay บน dried basis หรือ anhydrous basis ต้องแปลงผล as is โดยหารด้วยสัดส่วนของแห้ง (1 − LOD/100) หรือ (1 − water/100) ตามลำดับ เพราะตัวยาที่ชั่งมาจริง 1 g มีเนื้อสารแห้งเพียง 0.92 g ผลบน dried basis จึงสูงกว่าผล as is เสมอ การบวก LOD เข้าไปตรง ๆ เป็นการประมาณที่ผิดหลักและให้ค่าคลาดเคลื่อน (ยิ่ง LOD สูงยิ่งคลาดมาก) ส่วนการคูณ (1 − LOD) เป็นการแปลงในทิศทางกลับ (จาก dried เป็น as is) ข้อควรรู้: อบใน weighing bottle ที่อบแห้งและชั่งน้ำหนักแล้ว, ปล่อยให้เย็นใน desiccator ก่อนชั่ง, สารที่หลอมเหลวที่อุณหภูมิต่ำกว่าที่กำหนดให้อบที่อุณหภูมิต่ำกว่าจุดหลอมเหลว 5–10 °C ก่อน",
+      "choices": [
+        {
+          "label": "A",
+          "text": "99.46%",
+          "is_correct": true,
+          "explanation": "ถูกต้อง 91.50/0.9200 = 99.46% บน dried basis"
+        },
+        {
+          "label": "B",
+          "text": "84.18%",
+          "is_correct": false,
+          "explanation": "ผิด ได้จากการคูณ 91.50 × 0.92 ซึ่งเป็นการแปลงในทิศทางกลับ (จาก dried basis เป็น as is)"
+        },
+        {
+          "label": "C",
+          "text": "91.50%",
+          "is_correct": false,
+          "explanation": "ผิด เป็นค่า as is ยังไม่ได้แก้ค่าความชื้น"
+        },
+        {
+          "label": "D",
+          "text": "99.50%",
+          "is_correct": false,
+          "explanation": "ผิด ได้จากการบวก LOD (91.50 + 8.00) ซึ่งเป็นการประมาณที่ผิดหลัก"
+        },
+        {
+          "label": "E",
+          "text": "92.00%",
+          "is_correct": false,
+          "explanation": "ผิด เป็นค่าสัดส่วนน้ำหนักแห้ง (92.00%) ไม่ใช่ผล assay"
+        }
+      ],
+      "key_takeaway": "LOD% = (W0 − W1)/W0 × 100; dried basis = as is/(1 − LOD/100); anhydrous basis = as is/(1 − %water/100)",
+      "calculation_steps": [
+        "ขั้นที่ 1: น้ำหนักที่หายไป = 1.0000 g − 0.9200 g = 0.0800 g",
+        "ขั้นที่ 2: LOD = 0.0800/1.0000 × 100 = 8.00%",
+        "ขั้นที่ 3: สัดส่วนน้ำหนักแห้ง = 1 − 0.0800 = 0.9200",
+        "ขั้นที่ 4: dried basis = 91.50% / 0.9200 = 99.46%"
+      ]
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "Assay ยาเม็ดฉลาก 50 mg/เม็ด ด้วย HPLC แบบ external standard: Standard solution เตรียมจาก reference standard (purity 99.5%) ให้ความเข้มข้นตามน้ำหนักที่ชั่ง 0.1000 mg/mL ได้ peak area เฉลี่ย 1,250,000; ยา 20 เม็ดหนัก 4.000 g บดผสม ชั่งผงยา 0.4000 g สกัดและปรับปริมาตรเป็น 100.0 mL กรอง ปิเปต 5.0 mL เจือจางเป็น 50.0 mL ได้ peak area เฉลี่ย 1,225,000 ปริมาณตัวยาคิดเป็นร้อยละของฉลากเท่าใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "98.0%"
+      },
+      {
+        "label": "B",
+        "text": "98.5%"
+      },
+      {
+        "label": "C",
+        "text": "48.8%"
+      },
+      {
+        "label": "D",
+        "text": "97.5%"
+      },
+      {
+        "label": "E",
+        "text": "195.0%"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "Cstd จริง = 0.1000 × 0.995 = 0.0995 mg/mL; Csample = (1,225,000/1,250,000) × 0.0995 = 0.09751 mg/mL; ตัวยาในผง 0.4000 g = 0.09751 × (50/5) × 100 = 97.51 mg ซึ่งเทียบเท่า 2 เม็ด → 48.76 mg/เม็ด = 97.5% LC",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. 97.5% — Csample = (As/Astd) × Cstd(แก้ purity) แล้วคูณ dilution factor และหารจำนวนเม็ดที่เทียบเท่า",
+      "reason": "External standard method เปรียบเทียบ response (peak area) ของตัวอย่างกับ standard ที่ทราบความเข้มข้นแน่นอน โดยสมมติว่า response เป็นสัดส่วนตรงกับความเข้มข้น (ผ่านจุดกำเนิด) ภายในช่วงที่ validate แล้ว สูตร Csample = (Asample/Astd) × Cstd ความเข้มข้นของ standard ต้องแก้ด้วย purity (หรือ assigned content) ของ reference standard และถ้า RS เป็นเกลือต่างจากรูปที่ระบุในฉลากต้องแก้ด้วยอัตราส่วน MW ด้วย จากนั้นย้อนกลับ dilution: ความเข้มข้นในสารละลายแรก = 0.09751 × 10 = 0.9751 mg/mL ในปริมาตร 100 mL = 97.51 mg ผลแล้วเทียบกับจำนวนเม็ดที่ผงเทียบเท่า (0.4000 g/0.2000 g ต่อเม็ด = 2 เม็ด) ได้ 48.76 mg/เม็ด หรือ 97.5% ของฉลาก การออกแบบที่ดีคือให้ความเข้มข้นของตัวอย่างตามทฤษฎี (ที่นี่ 0.1000 mg/mL) ใกล้กับ standard เพื่อลดความคลาดเคลื่อนจาก non-linearity เกณฑ์ทั่วไปของ assay ยาเม็ดตาม USP มักเป็น 90.0–110.0% ของฉลาก ข้อดีของ internal standard method คือชดเชยความคลาดเคลื่อนจากปริมาตรฉีดและการเตรียมตัวอย่าง ซึ่ง external standard ต้องอาศัย autosampler ที่แม่นยำ",
+      "choices": [
+        {
+          "label": "A",
+          "text": "98.0%",
+          "is_correct": false,
+          "explanation": "ผิด ได้จาก area ratio 0.98 โดยไม่แก้ purity ของ reference standard (ใช้ Cstd = 0.1000 mg/mL)"
+        },
+        {
+          "label": "B",
+          "text": "98.5%",
+          "is_correct": false,
+          "explanation": "ผิด ได้จากการหารด้วย purity (0.98/0.995) แทนการคูณ ซึ่งเป็นการแก้ค่าผิดทิศทาง"
+        },
+        {
+          "label": "C",
+          "text": "48.8%",
+          "is_correct": false,
+          "explanation": "ผิด เป็นปริมาณ mg/เม็ด (48.76 mg) ไม่ใช่ร้อยละของฉลาก"
+        },
+        {
+          "label": "D",
+          "text": "97.5%",
+          "is_correct": true,
+          "explanation": "ถูกต้อง 48.76 mg/50 mg × 100 = 97.5% LC"
+        },
+        {
+          "label": "E",
+          "text": "195.0%",
+          "is_correct": false,
+          "explanation": "ผิด ได้จากการเทียบปริมาณในผง 0.4000 g (97.51 mg ซึ่งเทียบเท่า 2 เม็ด) กับฉลาก 50 mg โดยไม่หารด้วยจำนวนเม็ด"
+        }
+      ],
+      "key_takeaway": "External std: Cs = (As/Astd) × Cstd × purity; ย้อน dilution factor; ÷ จำนวนเม็ดที่เทียบเท่า (W ผง/น้ำหนักเฉลี่ย) → %LC",
+      "calculation_steps": [
+        "ขั้นที่ 1: Cstd ที่แก้ purity = 0.1000 mg/mL × 0.995 = 0.0995 mg/mL",
+        "ขั้นที่ 2: Csample = (1,225,000 / 1,250,000) × 0.0995 mg/mL = 0.98 × 0.0995 = 0.09751 mg/mL",
+        "ขั้นที่ 3: Dilution factor = 50.0/5.0 = 10 → สารละลายแรก = 0.9751 mg/mL × 100.0 mL = 97.51 mg ในผง 0.4000 g",
+        "ขั้นที่ 4: น้ำหนักเฉลี่ย = 4.000 g/20 = 0.2000 g → ผง 0.4000 g เทียบเท่า 2 เม็ด",
+        "ขั้นที่ 5: ต่อเม็ด = 97.51 mg / 2 = 48.76 mg → %LC = 48.76/50 × 100 = 97.5%"
+      ]
+    },
+    "difficulty": "hard"
+  }
+]
