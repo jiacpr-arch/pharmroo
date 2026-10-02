@@ -17,6 +17,7 @@ import { IP1_SET2_DAY08 } from "@/lib/ip1-set2-day08";
 import { PHCP1_DAY01 } from "@/lib/phcp1-day01";
 import { PHCP1_DAY02 } from "@/lib/phcp1-day02";
 import { PHCP1_DAY03 } from "@/lib/phcp1-day03";
+import { PC1_ALL, PC1_CASE_COUNT } from "@/lib/pc1-bank";
 import { Badge } from "@/components/ui/badge";
 import ExamNews, { ExamNewsSkeleton } from "@/components/ExamNews";
 import Link from "next/link";
@@ -40,13 +41,15 @@ async function PracticeContent({
   const [session, subjects, rawQuestions] = await Promise.all([
     auth(),
     getMcqSubjects({ examCategory: "pharmacy" }),
-    getMcqQuestions({
-      subjectId,
-      examType: "PLE-CC1",
-      examDay: day,
-      limit: day ? 120 : 240,
-      randomize: true,
-    }),
+    track === "cc1"
+      ? getMcqQuestions({
+          subjectId,
+          examType: "PLE-CC1",
+          examDay: day,
+          limit: day ? 120 : 240,
+          randomize: true,
+        })
+      : Promise.resolve([]),
   ]);
 
   const selectedQuestions =
@@ -54,7 +57,9 @@ async function PracticeContent({
       ? [...IP1_PILOT_050, ...IP1_SET2_DAY01, ...IP1_SET2_DAY02, ...IP1_SET2_DAY03, ...IP1_SET2_DAY04, ...IP1_SET2_DAY05, ...IP1_SET2_DAY06, ...IP1_SET2_DAY07, ...IP1_SET2_DAY08]
       : track === "phcp1"
         ? [...PHCP1_DAY01, ...PHCP1_DAY02, ...PHCP1_DAY03]
-        : rawQuestions;
+        : track === "pc1"
+          ? PC1_ALL
+          : rawQuestions;
 
   const [{ questions, creditBalance }, playAllowance] = await Promise.all([
     gateQuestionsForSession(session, selectedQuestions),
@@ -76,7 +81,8 @@ async function PracticeContent({
           {track === "pc1" && (
             <div>
               <div className="flex items-center gap-2 text-xl font-bold"><HeartPulse className="h-6 w-6 text-rose-500" /> PC1 — บริบาลเภสัชกรรม</div>
-              <p className="mt-2 text-sm text-muted-foreground">Pharmaceutical Care · 120 ข้อ</p>
+              <p className="mt-2 text-sm text-muted-foreground">Pharmaceutical Care · รูปแบบ Case-based (1 เคส หลายข้อ) · ตอนนี้มี {PC1_ALL.length} ข้อ จาก {PC1_CASE_COUNT} เคส</p>
+              <p className="mt-1 text-xs text-muted-foreground">Cardiology · Infectious Disease · Endocrine/Renal · Oncology Supportive Care · Anticoagulation · ทยอยอัปเดตเพิ่มต่อเนื่องสู่เป้าหมาย 4–5 ชุด ชุดละ 120 ข้อ</p>
               <Link href="/sets?exam=PLE-PC1" className="mt-5 inline-flex rounded-xl bg-brand px-5 py-3 text-sm font-bold text-white">ดูชุดข้อสอบ PC1 →</Link>
             </div>
           )}
@@ -98,7 +104,7 @@ async function PracticeContent({
           )}
         </div>
       )}
-      {(track === "ip1" || track === "phcp1") && (
+      {(track === "ip1" || track === "phcp1" || track === "pc1") && (
         <div className="mt-6">
           <McqPractice
             questions={questions}
