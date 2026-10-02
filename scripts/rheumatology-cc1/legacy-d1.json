@@ -36,7 +36,7 @@
           {
             "label": "A",
             "text": "Osteopenia — ให้ calcium + vitamin D และออกกำลังกายเท่านั้น",
-            "explanation": "✗ ผิด — Osteopenia คือ T-score ระหว่าง −1.0 ถึง −2.5 แต่ผู้ป่วยมี T-score −3.3 และมี fragility fracture ซึ่งวินิจฉัยเป็น osteoporosis ได้ทางคลินิกแม้ T-score จะไม่ถึงเกณฑ์ การให้แค่ Ca/vitamin D ไม่ลดกระดูกหักอย่างมีนัยสำคัญ ข้อนี้จะถูกเมื่อผู้ป่วยมี T-score −1.0 ถึง −2.5 ไม่เคยกระดูกหัก และ FRAX ต่ำกว่าเกณฑ์รักษา (hip <3% และ major <20%)"
+            "explanation": "✗ ผิด — Osteopenia คือ T-score ระหว่าง −1.0 ถึง −2.5 แต่ผู้ป่วยมี T-score −3.3 และมี vertebral fragility fracture ซึ่งแต่ละข้อวินิจฉัย osteoporosis ได้ด้วยตัวเอง การให้แค่ Ca/vitamin D ไม่ลดกระดูกหักอย่างมีนัยสำคัญ ข้อนี้จะถูกเมื่อผู้ป่วยมี T-score −1.0 ถึง −2.5 ไม่เคยกระดูกหัก และ FRAX ต่ำกว่าเกณฑ์รักษา (hip <3% และ major <20%)"
           },
           {
             "label": "B",
