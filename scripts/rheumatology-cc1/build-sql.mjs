@@ -1,5 +1,6 @@
 // Validate a rheumatology CC1 batch JSON and emit an idempotent INSERT for mcq_questions.
-// Usage: node scripts/rheumatology-cc1/build-sql.mjs <batch.json> [--check]
+// Usage: node scripts/rheumatology-cc1/build-sql.mjs <batch.json> [--check | --upsert]
+// --upsert overwrites existing rows with the same id (use after editing a batch that was already inserted).
 import { readFileSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { basename } from "node:path";
@@ -7,6 +8,7 @@ import { basename } from "node:path";
 const SUBJECT_ID = "06991a85-412e-476e-89ff-32b0a7b92e6c"; // กระดูกและข้อ (Rheumatology)
 const file = process.argv[2];
 const checkOnly = process.argv.includes("--check");
+const upsert = process.argv.includes("--upsert");
 const batch = JSON.parse(readFileSync(file, "utf8"));
 const name = basename(file, ".json");
 
@@ -56,5 +58,7 @@ const rows = batch.questions.map((q, i) => {
 console.log(
   `INSERT INTO mcq_questions (id, subject_id, exam_type, exam_source, exam_day, scenario, choices, correct_answer, explanation, detailed_explanation, difficulty, is_ai_enhanced, ai_notes, status) VALUES\n` +
     rows.join(",\n") +
-    `\nON CONFLICT (id) DO NOTHING;`
+    (upsert
+      ? `\nON CONFLICT (id) DO UPDATE SET scenario = EXCLUDED.scenario, choices = EXCLUDED.choices, correct_answer = EXCLUDED.correct_answer, explanation = EXCLUDED.explanation, detailed_explanation = EXCLUDED.detailed_explanation, difficulty = EXCLUDED.difficulty, exam_day = EXCLUDED.exam_day;`
+      : `\nON CONFLICT (id) DO NOTHING;`)
 );
