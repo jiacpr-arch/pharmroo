@@ -1,0 +1,60 @@
+// Validate a rheumatology CC1 batch JSON and emit an idempotent INSERT for mcq_questions.
+// Usage: node scripts/rheumatology-cc1/build-sql.mjs <batch.json> [--check]
+import { readFileSync } from "node:fs";
+import { createHash } from "node:crypto";
+import { basename } from "node:path";
+
+const SUBJECT_ID = "06991a85-412e-476e-89ff-32b0a7b92e6c"; // กระดูกและข้อ (Rheumatology)
+const file = process.argv[2];
+const checkOnly = process.argv.includes("--check");
+const batch = JSON.parse(readFileSync(file, "utf8"));
+const name = basename(file, ".json");
+
+const errors = [];
+if (![1, 2].includes(batch.exam_day)) errors.push("exam_day must be 1 or 2");
+if (!Array.isArray(batch.questions) || batch.questions.length === 0) errors.push("questions[] missing");
+
+const LABELS = ["A", "B", "C", "D"];
+const seen = new Set();
+batch.questions.forEach((q, i) => {
+  const at = `#${i + 1}`;
+  if (!q.scenario || q.scenario.length < 20) errors.push(`${at} scenario too short`);
+  if (seen.has(q.scenario)) errors.push(`${at} duplicate scenario`);
+  seen.add(q.scenario);
+  if (!Array.isArray(q.choices) || q.choices.length !== 4) errors.push(`${at} needs exactly 4 choices`);
+  else q.choices.forEach((c, j) => {
+    if (c.label !== LABELS[j]) errors.push(`${at} choice ${j} label must be ${LABELS[j]}`);
+    if (!c.text) errors.push(`${at} choice ${c.label} empty`);
+  });
+  if (!LABELS.includes(q.correct_answer)) errors.push(`${at} correct_answer invalid`);
+  if (!["easy", "medium", "hard"].includes(q.difficulty)) errors.push(`${at} difficulty invalid`);
+  if (!q.explanation) errors.push(`${at} explanation missing`);
+  const de = q.detailed_explanation;
+  if (!de) { errors.push(`${at} detailed_explanation missing`); return; }
+  for (const k of ["summary", "reason", "key_takeaway"]) if (!de[k]) errors.push(`${at} detailed_explanation.${k} missing`);
+  if (!Array.isArray(de.choices) || de.choices.length !== 4) errors.push(`${at} detailed_explanation.choices needs 4`);
+  else de.choices.forEach((c, j) => {
+    if (c.label !== LABELS[j] || c.text !== q.choices[j]?.text) errors.push(`${at} de.choices[${j}] must mirror choices`);
+    const mark = c.label === q.correct_answer ? "✓" : "✗";
+    if (!c.explanation?.startsWith(mark)) errors.push(`${at} de.choices[${j}] explanation must start with ${mark}`);
+  });
+});
+
+if (errors.length) {
+  console.error(`${name}: ${errors.length} error(s)\n` + errors.join("\n"));
+  process.exit(1);
+}
+const dist = Object.fromEntries(LABELS.map((l) => [l, batch.questions.filter((q) => q.correct_answer === l).length]));
+console.error(`${name}: OK — ${batch.questions.length} questions, day ${batch.exam_day}, answers ${JSON.stringify(dist)}`);
+if (checkOnly) process.exit(0);
+
+const lit = (s) => (s == null ? "NULL" : "'" + String(s).replace(/'/g, "''") + "'");
+const rows = batch.questions.map((q, i) => {
+  const id = createHash("md5").update(`rheum-cc1:${name}:${i}`).digest("hex");
+  return `(${lit(id)}, ${lit(SUBJECT_ID)}, 'PLE-CC1', 'AI-draft', ${batch.exam_day}, ${lit(q.scenario)}, ${lit(JSON.stringify(q.choices))}::jsonb, ${lit(q.correct_answer)}, ${lit(q.explanation)}, ${lit(JSON.stringify(q.detailed_explanation))}::jsonb, ${lit(q.difficulty)}, false, 'AI-drafted; rheumatology CC1 top-up', 'active')`;
+});
+console.log(
+  `INSERT INTO mcq_questions (id, subject_id, exam_type, exam_source, exam_day, scenario, choices, correct_answer, explanation, detailed_explanation, difficulty, is_ai_enhanced, ai_notes, status) VALUES\n` +
+    rows.join(",\n") +
+    `\nON CONFLICT (id) DO NOTHING;`
+);
