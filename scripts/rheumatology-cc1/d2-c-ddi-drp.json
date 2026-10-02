@@ -23,33 +23,39 @@
       ],
       "correct_answer": "B",
       "difficulty": "medium",
-      "explanation": "Allopurinol ยับยั้ง xanthine oxidase ซึ่งเป็นเอนไซม์หลักที่ทำลาย 6-MP (active metabolite ของ azathioprine) ทำให้ระดับ 6-thioguanine nucleotide สูงจนกดไขกระดูกรุนแรง จึงต้องลดขนาด azathioprine เหลือ 25–33% และติดตาม CBC",
+      "explanation": "Allopurinol ยับยั้ง xanthine oxidase ซึ่งเป็นทางกำจัดหลักของ 6-mercaptopurine (active metabolite ของ azathioprine) ทำให้ 6-thioguanine nucleotide สะสมจนกดไขกระดูกรุนแรง จึงต้องลด azathioprine เหลือราว 1/4–1/3 ของขนาดเดิมและติดตาม CBC อย่างใกล้ชิด",
       "detailed_explanation": {
-        "summary": "Allopurinol + azathioprine ต้องลด azathioprine เหลือ 1/4–1/3 ของขนาดเดิม และติดตาม CBC เพราะเสี่ยงกดไขกระดูก",
-        "reason": "โจทย์ถามอะไร: การจัดการอันตรกิริยาระหว่าง allopurinol กับ azathioprine ในผู้ป่วยปลูกถ่ายไตที่จำเป็นต้องลดกรดยูริก\n\nหลักการ/กลไกเชิงลึก: azathioprine ถูกเปลี่ยนเป็น 6-mercaptopurine (6-MP) แล้วแยกเป็น 3 ทาง ได้แก่ (1) HGPRT → 6-thioguanine nucleotides (6-TGN, ออกฤทธิ์และเป็นพิษต่อไขกระดูก) (2) TPMT → 6-MMP (3) xanthine oxidase (XO) → 6-thiouric acid ที่ไม่มีฤทธิ์ เมื่อให้ allopurinol ยับยั้ง XO ทางกำจัดหลักจะถูกปิด 6-MP จึงถูกผลักไปสร้าง 6-TGN มากขึ้นหลายเท่า เกิด leukopenia/pancytopenia ที่อาจถึงชีวิตได้\n\nทำไมข้อ B ถูก: ฉลากยาและแนวทางแนะนำว่าหากจำเป็นต้องใช้ร่วมกัน ให้ลดขนาด azathioprine เหลือ 25–33% ของขนาดเดิม (ในที่นี้ 100 mg → ประมาณ 25–33 mg/day) และตรวจ CBC ทุก 1–2 สัปดาห์ในช่วงแรก\n\nการประยุกต์กับผู้ป่วยจริง: เริ่ม allopurinol ขนาดต่ำ (ใน CKD ≤ 50 mg/day) ค่อย ๆ titrate ตาม urate และประสานกับทีมปลูกถ่ายเรื่องลด azathioprine หรือพิจารณาเปลี่ยนเป็น mycophenolate ซึ่งไม่ผ่าน XO\n\nจุดที่มักสับสนและกับดักข้อสอบ: febuxostat ก็ยับยั้ง XO เช่นกัน และฉลากระบุห้ามใช้ร่วมกับ azathioprine/mercaptopurine จึงไม่ใช่ทางออก\n\nสรุปท่องสอบ: XO inhibitor + AZA/6-MP = ลด AZA เหลือ 1/4–1/3 + CBC (febuxostat = ห้ามใช้ร่วม)",
+        "summary": "Allopurinol + azathioprine เป็นอันตรกิริยารุนแรง ถ้าจำเป็นต้องใช้ร่วมให้ลด azathioprine เหลือ 25–33% ของขนาดเดิม และตรวจ CBC ถี่ในช่วงแรก",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วยปลูกถ่ายไตที่ใช้ azathioprine (AZA) ร่วมกับ tacrolimus และ prednisolone มีเกาต์กำเริบบ่อยและ urate สูง จึงมีข้อบ่งใช้ยาลดกรดยูริก โจทย์ต้องการให้เภสัชกรจับอันตรกิริยาระดับอันตรายถึงชีวิตระหว่าง allopurinol กับ AZA และเลือกวิธีจัดการที่ปลอดภัยที่สุด\n\nหลักการ/กลไกเชิงลึก: AZA เป็น prodrug ถูกเปลี่ยนแบบ non-enzymatic (ผ่าน glutathione) เป็น 6-mercaptopurine (6-MP) จากนั้น 6-MP แยกเป็น 3 ทางแข่งกัน (1) xanthine oxidase (XO) → 6-thiouric acid ไม่มีฤทธิ์ เป็นทางกำจัดหลักโดยเฉพาะ first-pass ที่ลำไส้และตับ (2) TPMT → 6-methylmercaptopurine (6-MMP) สัมพันธ์กับพิษต่อตับ (3) HGPRT → 6-thioinosine monophosphate → 6-thioguanine nucleotides (6-TGN) ซึ่งเป็นตัวออกฤทธิ์กดภูมิและเป็นพิษต่อไขกระดูก เมื่อ allopurinol (และ oxypurinol ซึ่งมีครึ่งชีวิตยาว) ปิด XO สาร 6-MP จะถูกผลักไปทาง HGPRT มากขึ้น การศึกษาเภสัชจลนศาสตร์พบว่า AUC ของ 6-MP ชนิดรับประทานเพิ่มได้หลายเท่า จึงเกิด leukopenia, thrombocytopenia จนถึง pancytopenia และติดเชื้อรุนแรงได้ภายในไม่กี่สัปดาห์\n\nทำไมข้อ B ถูก: ฉลากยา AZA ระบุว่าหากต้องใช้ร่วมกับ allopurinol ให้ลดขนาด AZA เหลือประมาณ 1/4–1/3 ของขนาดเดิม ผู้ป่วยรายนี้ใช้ 100 mg/day จึงลดเหลือราว 25–33 mg/day (ในทางปฏิบัติ 25 mg/day) และต้องตรวจ CBC บ่อยในช่วงแรก เป็นข้อเดียวที่ทั้งรักษาเกาต์ได้และควบคุมความเสี่ยงไขกระดูก\n\nหลักฐานและแนวทางเวชปฏิบัติ: ACR Gout Guideline 2020 แนะนำ allopurinol เป็น ULT แรกรวมถึงผู้ป่วย CKD โดยเริ่มขนาดต่ำ (≤100 mg/day และ ≤50 mg/day ใน CKD stage ≥3) แล้วปรับขึ้นจน urate <6 mg/dL และแนะนำตรวจ HLA-B*5801 ในคนเชื้อสายเอเชียตะวันออกเฉียงใต้รวมถึงคนไทย ส่วนฉลาก AZA และฐานข้อมูลอันตรกิริยาจัดคู่นี้เป็น major ต้องลดขนาดเมื่อใช้ร่วม\n\nการประยุกต์กับผู้ป่วยจริง: ประสานทีมปลูกถ่ายก่อนเริ่มยา ตรวจ HLA-B*5801 ก่อน เริ่ม allopurinol ขนาดต่ำตาม eGFR ลด AZA เป็น 25 mg/day ในวันเดียวกัน หรือพิจารณาเปลี่ยน AZA เป็น mycophenolate ซึ่งไม่ผ่าน XO ให้ colchicine ขนาดต่ำป้องกันการกำเริบโดยระวังว่า tacrolimus/cyclosporine เพิ่มระดับ colchicine บอกผู้ป่วยว่า 'ถ้ามีไข้ เจ็บคอ แผลในปาก จ้ำเลือด ให้มาโรงพยาบาลทันที'\n\nการติดตามและสัญญาณอันตราย: CBC ทุก 1–2 สัปดาห์ในเดือนแรกและหลังปรับขนาดยาทุกครั้ง แล้วห่างขึ้นเมื่อคงที่ ติดตาม LFT, SCr, ระดับ tacrolimus และ urate ทุก 2–5 สัปดาห์ระหว่างปรับ allopurinol หาก WBC <3,000/mm³ หรือ platelet <100,000/mm³ ให้หยุด AZA และปรึกษาแพทย์ทันที\n\nจุดที่มักสับสนและกับดักข้อสอบ: (1) febuxostat ไม่ใช่ทางออก เพราะยับยั้ง XO แรงกว่าและฉลากระบุเป็นข้อห้ามใช้ร่วมกับ AZA/6-MP (2) ผู้ที่ขาด TPMT มีความเสี่ยงจาก AZA อยู่แล้ว การเพิ่ม allopurinol ยิ่งอันตราย (3) mycophenolate และ tacrolimus ไม่มีอันตรกิริยาผ่าน XO (4) ทิศทางคือ 'ลด' AZA ไม่ใช่เพิ่ม\n\nสรุปท่องสอบ: AZA → 6-MP → XO ปิด → 6-TGN ล้น → กดไขกระดูก ถ้าต้องใช้ allopurinol ให้ลด AZA เหลือ 1/4–1/3 ตรวจ CBC ถี่ febuxostat ห้ามใช้ร่วม",
         "choices": [
           {
             "label": "A",
             "text": "เริ่ม allopurinol ได้ตามปกติ ไม่ต้องปรับขนาด azathioprine เพราะไม่มีอันตรกิริยาที่สำคัญ",
-            "explanation": "✗ ผิด — เป็นอันตรกิริยาระดับรุนแรง เสี่ยงกดไขกระดูกจนถึงชีวิต"
+            "explanation": "✗ ผิด — คู่ allopurinol กับ azathioprine เป็นอันตรกิริยาระดับรุนแรงที่มีรายงานเสียชีวิตจาก pancytopenia เพราะ XO ซึ่งเป็นทางกำจัดหลักของ 6-MP ถูกปิด การเริ่ม allopurinol โดยไม่ลด AZA จึงไม่ปลอดภัย ข้อความนี้จะถูกต้องก็ต่อเมื่อผู้ป่วยใช้ยากดภูมิที่ไม่ผ่าน XO เช่น mycophenolate หรือ tacrolimus เพียงอย่างเดียว ซึ่งเริ่ม allopurinol ได้ตามปกติ (ยังต้องเริ่มขนาดต่ำตาม eGFR)"
           },
           {
             "label": "B",
             "text": "ลดขนาด azathioprine เหลือประมาณ 1/4–1/3 ของขนาดเดิม และติดตาม CBC อย่างใกล้ชิด",
-            "explanation": "✓ ถูก — ตามฉลากยา ลด azathioprine เหลือ 25–33% เพราะ XO ถูกยับยั้ง ทำให้ 6-TGN สะสม"
+            "explanation": "✓ ถูก — ฉลาก AZA แนะนำลดขนาดเหลือราว 1/4–1/3 ของขนาดเดิมเมื่อใช้ร่วมกับ allopurinol (100 mg → ประมาณ 25 mg/day) เพราะ 6-MP ถูกผลักไปสร้าง 6-TGN มากขึ้น ต้องตรวจ CBC ทุก 1–2 สัปดาห์ในช่วงแรกและหลังปรับยาทุกครั้ง ร่วมกับเริ่ม allopurinol ขนาดต่ำตามการทำงานของไตและตรวจ HLA-B*5801 ก่อนเริ่มในผู้ป่วยไทย"
           },
           {
             "label": "C",
             "text": "เปลี่ยนเป็น febuxostat แทน allopurinol เพราะไม่ยับยั้งการเปลี่ยนแปลงของ azathioprine",
-            "explanation": "✗ ผิด — febuxostat เป็น XO inhibitor ที่แรงกว่าและห้ามใช้ร่วมกับ azathioprine"
+            "explanation": "✗ ผิด — febuxostat เป็น non-purine XO inhibitor ที่ยับยั้ง XO ได้แรงกว่า allopurinol จึงเพิ่มระดับ 6-MP เช่นเดียวกันหรือมากกว่า ฉลากในสหรัฐฯ ระบุเป็นข้อห้ามใช้ร่วมกับ azathioprine และ mercaptopurine การเปลี่ยนเป็น febuxostat จะเหมาะเฉพาะผู้ป่วยที่ไม่ได้ใช้ thiopurine เช่น ผู้ที่ HLA-B*5801 เป็นบวกและไม่ได้ใช้ AZA"
           },
           {
             "label": "D",
             "text": "เพิ่มขนาด azathioprine เพราะ allopurinol เร่งการกำจัด 6-mercaptopurine",
-            "explanation": "✗ ผิด — กลับทิศ allopurinol ลดการกำจัด 6-MP ไม่ใช่เร่ง"
+            "explanation": "✗ ผิด — กลับทิศทางกลไก allopurinol ไม่ได้เร่งการกำจัด 6-MP แต่ยับยั้งการกำจัด การเพิ่มขนาด AZA จะยิ่งเพิ่ม 6-TGN และพิษต่อไขกระดูก การเพิ่มขนาด AZA จะเหมาะเฉพาะเมื่อโรคยังควบคุมไม่ได้ ไม่มี XO inhibitor ร่วม และระดับ 6-TGN ต่ำกว่าช่วงรักษา ซึ่งต้องตัดสินจากการตรวจระดับยาและ CBC"
           }
         ],
-        "key_takeaway": "Allopurinol + azathioprine → ลด AZA เหลือ 1/4–1/3 และเฝ้าระวัง CBC"
+        "key_takeaway": "XO inhibitor + AZA/6-MP: ปิดทาง XO → 6-TGN ล้น → ลด AZA เหลือ 1/4–1/3 + CBC ถี่",
+        "calculation_steps": [
+          "ขนาด azathioprine เดิม = 100 mg/day",
+          "ลดเหลือ 25% → 100 × 0.25 = 25 mg/day",
+          "ลดเหลือ 33% → 100 × 0.33 ≈ 33 mg/day",
+          "ในทางปฏิบัติใช้ 25 mg/day (ครึ่งเม็ดของเม็ด 50 mg) แล้วปรับตาม CBC"
+        ]
       }
     },
     {
@@ -74,33 +80,33 @@
       ],
       "correct_answer": "D",
       "difficulty": "easy",
-      "explanation": "Febuxostat เป็น xanthine oxidase inhibitor ที่ยับยั้งการกำจัด 6-MP ฉลากยาระบุห้ามใช้ร่วมกับ azathioprine และ mercaptopurine เพราะเสี่ยงกดไขกระดูก",
+      "explanation": "Febuxostat ยับยั้ง xanthine oxidase อย่างแรง ทำให้ 6-mercaptopurine ไม่ถูกกำจัดและสะสมเป็น 6-TGN จนกดไขกระดูกรุนแรง ฉลากยาจึงระบุเป็นข้อห้ามใช้ร่วมกับ azathioprine และ mercaptopurine",
       "detailed_explanation": {
-        "summary": "Febuxostat ห้ามใช้ร่วมกับ azathioprine/6-MP (contraindicated) เพราะยับยั้ง XO ที่ทำลาย 6-MP",
-        "reason": "โจทย์ถามอะไร: ความปลอดภัยของการใช้ febuxostat ร่วมกับ thiopurine (6-MP)\n\nหลักการ/กลไกเชิงลึก: 6-MP ถูกทำลายโดย xanthine oxidase (XO) เป็น 6-thiouric acid เมื่อยับยั้ง XO ระดับ 6-MP และ 6-thioguanine nucleotides จะเพิ่มขึ้นมาก นำไปสู่ leukopenia, thrombocytopenia และ pancytopenia febuxostat แม้เป็น non-purine แต่ยับยั้ง XO ได้แรงและเลือกจำเพาะ จึงส่งผลเหมือนหรือมากกว่า allopurinol\n\nทำไมข้อ D ถูก: ฉลาก febuxostat (Uloric/Adenuric) ระบุชัดว่า contraindicated ในผู้ป่วยที่ใช้ azathioprine หรือ mercaptopurine และไม่มีคำแนะนำการปรับขนาดที่ยืนยันความปลอดภัย\n\nการประยุกต์กับผู้ป่วยจริง: ถ้าจำเป็นต้องลดกรดยูริกในผู้ที่ใช้ thiopurine ให้เลือก allopurinol ร่วมกับการลดขนาด thiopurine เหลือ 1/4–1/3 และติดตาม CBC/6-TGN หรือพิจารณายาขับกรดยูริก (เช่น probenecid ถ้าไตดี) หรือปรึกษาเปลี่ยนการรักษา IBD\n\nจุดที่มักสับสนและกับดักข้อสอบ: คำว่า non-purine ทำให้หลายคนคิดว่าไม่ชนกับ purine analog แต่อันตรกิริยาเกิดที่เอนไซม์ XO ไม่ใช่โครงสร้างยา การแยกเวลารับประทานไม่ช่วยเพราะเป็นอันตรกิริยาเชิง metabolism\n\nสรุปท่องสอบ: Febuxostat + AZA/6-MP = ห้ามใช้ร่วม",
+        "summary": "Febuxostat + 6-MP/azathioprine = contraindicated ต้องเลือกวิธีลดกรดยูริกอื่นร่วมกับแพทย์ผู้ดูแล IBD",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วย Crohn's disease ใช้ 6-mercaptopurine (6-MP) เป็นยาคุมโรคระยะยาว แล้วได้รับ febuxostat สำหรับเกาต์ โจทย์ต้องการให้รู้ว่า febuxostat แม้จะเป็น non-purine ก็ยังยับยั้ง xanthine oxidase (XO) และเป็นคู่ที่ฉลากยาระบุว่าห้ามใช้ร่วมกัน\n\nหลักการ/กลไกเชิงลึก: 6-MP ที่รับประทานถูกกำจัดอย่างมากตั้งแต่ first-pass ด้วย XO ที่เยื่อบุลำไส้และตับ ได้ 6-thiouric acid ที่ไม่มีฤทธิ์ ส่วนที่เหลือถูก TPMT เปลี่ยนเป็น 6-MMP หรือถูก HGPRT เปลี่ยนเป็น 6-thioguanine nucleotides (6-TGN) ที่ออกฤทธิ์และเป็นพิษต่อไขกระดูก Febuxostat จับกับ molybdenum-pterin site ของ XO ได้ทั้งรูป oxidized และ reduced จึงยับยั้งได้แรงและสม่ำเสมอกว่า allopurinol การปิดทางนี้ทำให้ bioavailability ของ 6-MP เพิ่มขึ้นมากและ 6-TGN สูงจนเกิด leukopenia, pancytopenia ได้ คำว่า 'non-purine' หมายถึงโครงสร้างไม่ใช่ purine analog เท่านั้น ไม่ได้หมายความว่าไม่ยับยั้ง XO\n\nทำไมข้อ D ถูก: ฉลาก febuxostat (Uloric) ในสหรัฐฯ ระบุชัดว่าห้ามใช้ในผู้ป่วยที่ได้รับ azathioprine หรือ mercaptopurine เพราะไม่มีข้อมูลขนาดที่ลดแล้วปลอดภัย และคาดว่าระดับ 6-MP จะเพิ่มขึ้นมาก จึงเป็นคำตอบที่ถูกและชัดเจนที่สุด\n\nหลักฐานและแนวทางเวชปฏิบัติ: ข้อห้ามนี้อยู่ในข้อมูลผลิตภัณฑ์ febuxostat ส่วนในวงการ IBD มีการใช้ allopurinol ขนาดต่ำ (เช่น 100 mg/day) ร่วมกับ thiopurine ที่ลดเหลือ 25–33% อย่างตั้งใจในผู้ป่วยที่เป็น 'hypermethylator' (6-MMP สูง 6-TGN ต่ำ) ภายใต้การตรวจระดับ metabolite และ CBC ใกล้ชิด แสดงว่าอันตรกิริยานี้แรงจริงและต้องควบคุมขนาดเสมอ ACR 2020 ยังจัด allopurinol เป็น ULT แรก และให้เลือก febuxostat เป็นทางเลือกที่สอง (มีประเด็น CV death จากการศึกษา CARES)\n\nการประยุกต์กับผู้ป่วยจริง: เภสัชกรควรระงับการจ่าย febuxostat แจ้งแพทย์พร้อมเสนอทางเลือก เช่น (1) ใช้ allopurinol ขนาดต่ำ (หลังตรวจ HLA-B*5801 เป็นลบ) ร่วมกับลด 6-MP เหลือ 1/4–1/3 ภายใต้การดูแลของแพทย์ระบบทางเดินอาหาร หรือ (2) ยาขับกรดยูริก (uricosuric) หากไม่มีนิ่วและไตทำงานดี หรือ (3) พิจารณาเปลี่ยนยาคุม Crohn's เป็นกลุ่มที่ไม่ใช่ thiopurine ระหว่างนั้นจัดการ flare ด้วย colchicine หรือ steroid ระยะสั้นตามความเหมาะสม\n\nการติดตามและสัญญาณอันตราย: หากผู้ป่วยได้รับยาคู่นี้ไปแล้ว ให้ตรวจ CBC ทันทีและซ้ำทุกสัปดาห์ เฝ้าระวังไข้ เจ็บคอ แผลในปาก จ้ำเลือด เลือดออกตามไรฟัน และค่าตับผิดปกติ หาก WBC หรือเกล็ดเลือดต่ำให้หยุดยาทั้งสองและส่งพบแพทย์ทันที\n\nจุดที่มักสับสนและกับดักข้อสอบ: (1) 'non-purine' ไม่ได้แปลว่าปลอดภัยกับ thiopurine (2) การลดขนาด febuxostat ไม่ทำให้ใช้ร่วมได้ เพราะแม้ 20–40 mg ก็ยับยั้ง XO ได้มาก (3) อันตรกิริยานี้เป็นแบบเมแทบอลิซึม ไม่ใช่การดูดซึม การรับประทานห่างกันจึงไม่ช่วย (4) mesalamine ก็ยับยั้ง TPMT เพิ่ม 6-TGN ได้เล็กน้อย ควรรู้ไว้เมื่อใช้ร่วม\n\nสรุปท่องสอบ: 6-MP/AZA + febuxostat = contraindicated; ถ้าจำเป็นต้องใช้ XO inhibitor ให้เลือก allopurinol ขนาดต่ำร่วมกับลด thiopurine เหลือ 1/4–1/3 และตรวจ CBC ถี่",
         "choices": [
           {
             "label": "A",
             "text": "ใช้ร่วมกันได้ เพราะ febuxostat เป็น non-purine จึงไม่รบกวน thiopurine",
-            "explanation": "✗ ผิด — แม้โครงสร้าง non-purine แต่ยับยั้ง XO ซึ่งเป็นทางกำจัด 6-MP"
+            "explanation": "✗ ผิด — febuxostat มีโครงสร้างที่ไม่ใช่ purine แต่ยังยับยั้ง xanthine oxidase ได้แรงกว่า allopurinol จึงปิดทางกำจัดหลักของ 6-MP และเพิ่ม 6-TGN จนกดไขกระดูกได้ ข้อความ 'non-purine จึงไม่รบกวน' เป็นความเข้าใจผิด ข้อนี้จะถูกเฉพาะเมื่อพูดถึงผลต่อการสังเคราะห์ purine/pyrimidine ในเซลล์ปกติ ซึ่ง febuxostat ไม่รบกวนเหมือน allopurinol"
           },
           {
             "label": "B",
             "text": "ใช้ร่วมกันได้หากลดขนาด febuxostat เหลือ 20 mg/day",
-            "explanation": "✗ ผิด — ไม่มีขนาดที่ปลอดภัยรับรอง ฉลากห้ามใช้ร่วม"
+            "explanation": "✗ ผิด — ไม่มีขนาด febuxostat ที่พิสูจน์แล้วว่าปลอดภัยเมื่อใช้ร่วมกับ thiopurine แม้ 20 mg ก็ยับยั้ง XO ได้มาก การปรับขนาดที่ถูกต้องในคู่ XO inhibitor + thiopurine คือการลดขนาด thiopurine (ไม่ใช่ลดยาลดกรดยูริก) และทำได้เฉพาะกับ allopurinol ภายใต้การตรวจ CBC ใกล้ชิด"
           },
           {
             "label": "C",
             "text": "ใช้ร่วมกันได้ แต่ต้องให้ห่างกันอย่างน้อย 4 ชั่วโมง",
-            "explanation": "✗ ผิด — อันตรกิริยาเชิง metabolism การแยกเวลาไม่ช่วย"
+            "explanation": "✗ ผิด — อันตรกิริยานี้เกิดที่ระดับเอนไซม์ในลำไส้และตับ และ febuxostat ยับยั้ง XO ต่อเนื่องตลอด 24 ชั่วโมง การให้ห่างกันจึงไม่ลดความเสี่ยง การเว้นระยะห่างจะใช้ได้กับอันตรกิริยาด้านการดูดซึมแบบจับตัวกัน เช่น bisphosphonate หรือ fluoroquinolone กับแคลเซียมหรือยาลดกรด"
           },
           {
             "label": "D",
             "text": "เป็นข้อห้ามใช้ร่วมกัน (contraindicated) เพราะเพิ่มระดับ 6-MP และเสี่ยงกดไขกระดูกรุนแรง",
-            "explanation": "✓ ถูก — ฉลาก febuxostat ระบุ contraindicated กับ azathioprine/mercaptopurine"
+            "explanation": "✓ ถูก — ฉลาก febuxostat ระบุเป็นข้อห้ามใช้ร่วมกับ azathioprine และ mercaptopurine เพราะ 6-MP สะสมและเสี่ยง myelosuppression รุนแรง เภสัชกรควรระงับการจ่าย แจ้งแพทย์ และเสนอทางเลือก เช่น allopurinol ขนาดต่ำร่วมกับลด 6-MP เหลือ 1/4–1/3 พร้อม CBC ถี่ หรือ uricosuric หรือเปลี่ยนยาคุม Crohn's"
           }
         ],
-        "key_takeaway": "Febuxostat + azathioprine/6-MP = contraindicated"
+        "key_takeaway": "Febuxostat + thiopurine = ห้ามใช้ร่วม (non-purine ก็ยังปิด XO)"
       }
     },
     {
@@ -125,33 +131,33 @@
       ],
       "correct_answer": "A",
       "difficulty": "medium",
-      "explanation": "Clarithromycin เป็น strong CYP3A4 และ P-gp inhibitor ทำให้ระดับ colchicine สูงจนเกิดพิษถึงชีวิตได้ ควรหยุด colchicine ชั่วคราวหรือลดขนาดลงอย่างมาก (0.3 mg/day สำหรับ prophylaxis)",
+      "explanation": "Clarithromycin ยับยั้งทั้ง CYP3A4 และ P-glycoprotein อย่างแรง ทำให้ระดับ colchicine สูงจนเกิดพิษถึงชีวิตได้ จึงควรหยุด colchicine ชั่วคราวระหว่างได้ clarithromycin หรือถ้าจำเป็นต้องใช้ป้องกันการกำเริบต่อ ให้ลดเหลือ 0.3 mg วันละครั้งตามฉลาก",
       "detailed_explanation": {
-        "summary": "Colchicine + clarithromycin (strong CYP3A4/P-gp inhibitor) → หยุดชั่วคราวหรือลดขนาด prophylaxis เหลือ 0.3 mg/day",
-        "reason": "โจทย์ถามอะไร: การจัดการอันตรกิริยา colchicine กับ macrolide ที่ยับยั้ง CYP3A4/P-gp\n\nหลักการ/กลไกเชิงลึก: colchicine ถูกเปลี่ยนแปลงโดย CYP3A4 และถูกขับออกจากเซลล์ลำไส้/ตับ/ไตโดย P-glycoprotein clarithromycin ยับยั้งทั้งสองทางอย่างแรง ทำให้ AUC ของ colchicine เพิ่มหลายเท่า มีรายงานผู้ป่วยเสียชีวิตจากพิษ colchicine (ท้องเสียรุนแรง กดไขกระดูก rhabdomyolysis multi-organ failure) โดยเฉพาะในผู้สูงอายุหรือไตบกพร่อง\n\nทำไมข้อ A ถูก: ฉลากยา colchicine แนะนำว่าเมื่อใช้ร่วมกับ strong CYP3A4 inhibitor ในผู้ที่ไตและตับปกติ ให้ลดขนาด prophylaxis จาก 0.6 mg วันละ 2 ครั้ง เหลือ 0.3 mg วันละครั้ง ส่วนในผู้ป่วยไตหรือตับบกพร่องห้ามใช้ร่วมกัน สำหรับการใช้เพียง 14 วัน การหยุด colchicine ชั่วคราวเป็นทางเลือกที่ปลอดภัยและปฏิบัติได้ง่ายที่สุด\n\nการประยุกต์กับผู้ป่วยจริง: แจ้งผู้ป่วยให้หยุด colchicine ตลอดคอร์สยา H. pylori และกลับมาใช้หลังจบยาไม่กี่วัน หากเกิด flare ระหว่างนั้นอาจใช้ NSAID ระยะสั้นร่วมกับ PPI (ซึ่งอยู่ในสูตรอยู่แล้ว) หรือ prednisolone ระยะสั้น\n\nจุดที่มักสับสนและกับดักข้อสอบ: macrolide ไม่ได้เหนี่ยวนำ CYP3A4 แต่ยับยั้ง; azithromycin มีผลน้อยกว่ามาก; การแยกเวลาไม่ช่วยในอันตรกิริยาเชิง metabolism\n\nสรุปท่องสอบ: Colchicine + clarithromycin/ketoconazole/ritonavir = หยุดหรือลดขนาดมาก; ห้ามใช้ร่วมถ้าไต/ตับบกพร่อง",
+        "summary": "Colchicine + clarithromycin (strong CYP3A4 + P-gp inhibitor): งด colchicine ระหว่างใช้ หรือลด prophylaxis เหลือ 0.3 mg/day และเฝ้าระวังพิษ",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วยไตและตับปกติใช้ colchicine 0.6 mg วันละ 2 ครั้งเพื่อป้องกันเกาต์กำเริบช่วงเริ่ม allopurinol แล้วจะได้ clarithromycin-based triple therapy 14 วัน โจทย์ต้องการวิธีจัดการอันตรกิริยาระหว่าง colchicine กับ strong CYP3A4/P-gp inhibitor\n\nหลักการ/กลไกเชิงลึก: colchicine มีดัชนีการรักษาแคบ ถูกขนออกจากเซลล์ลำไส้และขับทางน้ำดี/ไตโดย P-glycoprotein (ABCB1) และถูกเปลี่ยนแปลงที่ตับและลำไส้โดย CYP3A4 เป็น demethylated metabolites Clarithromycin เป็น mechanism-based inhibitor ของ CYP3A4 (จับแบบไม่คืนกลับ ต้องรอเอนไซม์ใหม่หลายวันหลังหยุดยา) และยับยั้ง P-gp ด้วย จึงเพิ่มทั้งการดูดซึมและลดการกำจัด ระดับ colchicine อาจเพิ่มหลายเท่า พิษเริ่มจากท้องเสีย คลื่นไส้อาเจียน แล้วตามด้วย pancytopenia, rhabdomyolysis, neuromyopathy และ multiorgan failure\n\nทำไมข้อ A ถูก: ฉลาก colchicine ของสหรัฐฯ กำหนดว่าเมื่อใช้ร่วมกับ strong CYP3A4 inhibitor ให้ลดขนาด prophylaxis จาก 0.6 mg วันละ 2 ครั้ง เหลือ 0.3 mg วันละครั้ง และห้ามใช้ร่วมเลยในผู้ที่ไตหรือตับบกพร่อง ทางเลือกที่ปลอดภัยที่สุดในการรักษา H. pylori ระยะสั้นคือหยุด colchicine ชั่วคราว (prophylaxis หยุดได้ไม่กี่สัปดาห์โดยไม่เสียหาย) หรือลดขนาดตามฉลาก พร้อมเฝ้าระวังอาการพิษ\n\nหลักฐานและแนวทางเวชปฏิบัติ: ข้อมูลผลิตภัณฑ์ colchicine (Colcrys) ระบุตารางปรับขนาดตามระดับการยับยั้ง: strong CYP3A4 inhibitor (clarithromycin, ketoconazole, ritonavir) prophylaxis 0.3 mg วันละครั้ง, moderate (diltiazem, verapamil, fluconazole) 0.3 mg วันละ 2 ครั้งหรือ 0.6 mg วันละครั้ง, P-gp inhibitor (cyclosporine) 0.3 mg วันละครั้งหรือวันเว้นวัน ส่วนการรักษา flare ร่วมกับ strong inhibitor ใช้ 0.6 mg ตามด้วย 0.3 mg ใน 1 ชั่วโมง และห้ามซ้ำภายใน 3 วัน\n\nการประยุกต์กับผู้ป่วยจริง: แจ้งแพทย์และเสนอทางเลือก 2 ทาง (1) ใช้สูตรกำจัด H. pylori ที่ไม่มี clarithromycin เช่น bismuth quadruple therapy (PPI + bismuth + tetracycline + metronidazole) หรือ (2) หากใช้สูตร clarithromycin ให้หยุด colchicine ระหว่างรักษาและกลับมาเริ่มหลังหยุด clarithromycin อย่างน้อยประมาณ 3–7 วัน ถ้าแพทย์ต้องการป้องกันต่อให้ใช้ 0.3 mg วันละครั้ง คำแนะนำผู้ป่วย: 'ถ้าถ่ายเหลวหรืออาเจียนให้หยุด colchicine และติดต่อเภสัชกรหรือแพทย์ทันที'\n\nการติดตามและสัญญาณอันตราย: อาการทางเดินอาหารเป็นสัญญาณเตือนแรก ตามด้วยกล้ามเนื้ออ่อนแรง ปัสสาวะสีเข้ม ไข้ เลือดออกง่าย ตรวจ CBC, CK, SCr, LFT หากมีอาการ พิษ colchicine ไม่มียาต้านจำเพาะและ dialysis ไม่ช่วย\n\nจุดที่มักสับสนและกับดักข้อสอบ: (1) ระยะเวลาใช้ยาสั้นไม่ได้แปลว่าปลอดภัย พิษเกิดได้ภายในไม่กี่วัน (2) อันตรกิริยาไม่ใช่ด้านการดูดซึมแบบจับตัวกัน การเว้นระยะห่างจึงไม่ช่วย (3) clarithromycin เป็นตัวยับยั้ง ไม่ใช่ตัวเหนี่ยวนำ (4) azithromycin ยับยั้ง CYP3A4 น้อยกว่ามาก แต่ยังต้องระวังผลต่อ P-gp\n\nสรุปท่องสอบ: colchicine = CYP3A4 + P-gp substrate; clarithromycin = strong inhibitor ทั้งคู่ → หยุด colchicine ชั่วคราวหรือลด prophylaxis เหลือ 0.3 mg/day และห้ามใช้ร่วมเลยถ้าไต/ตับบกพร่อง",
         "choices": [
           {
             "label": "A",
             "text": "หยุด colchicine ชั่วคราวระหว่างได้รับ clarithromycin (หากจำเป็นต้องใช้ต่อ ให้ลดเหลือ 0.3 mg วันละครั้ง) และเฝ้าระวังอาการพิษ",
-            "explanation": "✓ ถูก — สอดคล้องกับฉลากยาสำหรับ strong CYP3A4/P-gp inhibitor ในผู้ที่ไตตับปกติ"
+            "explanation": "✓ ถูก — ตามฉลาก colchicine เมื่อใช้ร่วมกับ strong CYP3A4 inhibitor ต้องลด prophylaxis เหลือ 0.3 mg วันละครั้ง หรือหยุดชั่วคราวระหว่างรับยาปฏิชีวนะ 14 วัน ซึ่งปลอดภัยที่สุดเพราะการหยุด prophylaxis ระยะสั้นแทบไม่มีผลเสีย ร่วมกับสอนผู้ป่วยให้สังเกตอาการพิษ (ท้องเสีย อาเจียน กล้ามเนื้ออ่อนแรง) และอาจเสนอสูตร H. pylori ที่ไม่มี clarithromycin"
           },
           {
             "label": "B",
             "text": "ใช้ colchicine ขนาดเดิมต่อได้ เพราะใช้ clarithromycin เพียง 14 วัน",
-            "explanation": "✗ ผิด — พิษ colchicine เกิดได้ภายในไม่กี่วันหลังเริ่ม clarithromycin"
+            "explanation": "✗ ผิด — พิษ colchicine จาก clarithromycin เกิดได้ภายในไม่กี่วัน มีรายงานเสียชีวิตแม้ใช้ยาปฏิชีวนะระยะสั้น ระยะเวลา 14 วันจึงไม่ใช่เหตุผลให้ใช้ขนาดเดิม การใช้ colchicine ขนาดเดิมต่อจะเหมาะเมื่อยาปฏิชีวนะไม่ยับยั้ง CYP3A4/P-gp เช่น amoxicillin หรือ metronidazole ในสูตรที่ไม่มี clarithromycin"
           },
           {
             "label": "C",
             "text": "ใช้ colchicine ขนาดเดิมโดยให้รับประทานห่างจาก clarithromycin 2 ชั่วโมง",
-            "explanation": "✗ ผิด — เป็นการยับยั้ง CYP3A4/P-gp ทั้งระบบ การแยกเวลาไม่ช่วย"
+            "explanation": "✗ ผิด — อันตรกิริยาเกิดจากการยับยั้งเอนไซม์ CYP3A4 และ transporter P-gp ซึ่งออกฤทธิ์ต่อเนื่องทั้งวัน (clarithromycin ยังจับเอนไซม์แบบไม่คืนกลับ) การเว้นระยะ 2 ชั่วโมงจึงไม่ช่วย การเว้นระยะจะได้ผลเฉพาะอันตรกิริยาแบบจับตัวในทางเดินอาหาร เช่น tetracycline/fluoroquinolone กับ antacid, iron หรือ calcium"
           },
           {
             "label": "D",
             "text": "เพิ่มขนาด colchicine เป็น 0.6 mg วันละ 3 ครั้ง เพราะ clarithromycin เหนี่ยวนำ CYP3A4",
-            "explanation": "✗ ผิด — clarithromycin เป็น inhibitor ไม่ใช่ inducer การเพิ่มขนาดอันตรายมาก"
+            "explanation": "✗ ผิด — clarithromycin เป็นตัวยับยั้ง CYP3A4 ไม่ใช่ตัวเหนี่ยวนำ การเพิ่มขนาดจะยิ่งเพิ่มความเสี่ยงพิษ การปรับเพิ่มขนาดยาที่เป็น substrate ของ CYP3A4 จะคิดถึงเมื่อใช้ร่วมกับ inducer เช่น rifampicin, carbamazepine หรือ phenytoin แต่ใน colchicine ก็ไม่แนะนำให้เกินขนาดตามฉลากอยู่ดี"
           }
         ],
-        "key_takeaway": "Colchicine + strong CYP3A4/P-gp inhibitor → หยุด/ลดขนาดมาก; ไตหรือตับเสื่อม = ห้ามใช้ร่วม"
+        "key_takeaway": "Colchicine + clarithromycin = ระเบิดเวลา: หยุดหรือลดเหลือ 0.3 mg/day"
       }
     },
     {
@@ -176,33 +182,33 @@
       ],
       "correct_answer": "C",
       "difficulty": "easy",
-      "explanation": "Allopurinol ไม่ยับยั้ง CYP3A4 หรือ P-gp จึงใช้ร่วมกับ colchicine ได้ตามปกติ ขณะที่ verapamil, ketoconazole และ cyclosporine ยับยั้ง CYP3A4 และ/หรือ P-gp ทำให้ระดับ colchicine สูงขึ้น",
+      "explanation": "Allopurinol ไม่ยับยั้ง CYP3A4 หรือ P-glycoprotein จึงไม่เพิ่มระดับ colchicine และใช้ร่วมกันได้เป็นมาตรฐานช่วงเริ่ม ULT ส่วน verapamil, ketoconazole และ cyclosporine ล้วนเพิ่มระดับ colchicine อย่างมีนัยสำคัญ",
       "detailed_explanation": {
-        "summary": "Allopurinol ไม่มีผลต่อ CYP3A4/P-gp จึงไม่เพิ่มระดับ colchicine ต่างจาก verapamil, ketoconazole, cyclosporine",
-        "reason": "โจทย์ถามอะไร: การจำแนกยาที่เพิ่มระดับ colchicine ผ่านการยับยั้ง CYP3A4 และ P-glycoprotein\n\nหลักการ/กลไกเชิงลึก: colchicine มีดัชนีการรักษาแคบ เป็น substrate ของ CYP3A4 และ P-gp ยาที่ยับยั้งทางใดทางหนึ่งหรือทั้งสองจะเพิ่มระดับยา ได้แก่ strong CYP3A4 inhibitor (ketoconazole, itraconazole, clarithromycin, ritonavir) moderate CYP3A4 inhibitor (verapamil, diltiazem, fluconazole, erythromycin) และ P-gp inhibitor (cyclosporine, ranolazine) cyclosporine ยังเพิ่มความเสี่ยง myopathy/neuromyopathy เพิ่มเติมด้วย\n\nทำไมข้อ C ถูก: allopurinol ยับยั้ง xanthine oxidase เพียงอย่างเดียว ไม่เกี่ยวข้องกับ CYP3A4 หรือ P-gp และการใช้ colchicine ขนาดต่ำร่วมกับการเริ่ม allopurinol เป็นแนวทางมาตรฐาน (ACR 2020) เพื่อป้องกัน flare ช่วง 3–6 เดือนแรก\n\nการประยุกต์กับผู้ป่วยจริง: ผู้ป่วยเกาต์มักมีโรคร่วม (HT, AF, ปลูกถ่ายไต) จึงควรตรวจรายการยาก่อนจ่าย colchicine ทุกครั้ง เช่น ผู้ป่วยปลูกถ่ายไตที่ใช้ cyclosporine ควรลดขนาด colchicine อย่างมาก และผู้ที่ใช้ verapamil/diltiazem ควรลดขนาด prophylaxis เหลือ 0.3 mg วันละ 2 ครั้งหรือ 0.6 mg วันละครั้ง\n\nจุดที่มักสับสนและกับดักข้อสอบ: verapamil มักถูกมองข้ามเพราะคิดว่าเป็นแค่ยาความดัน แต่เป็นทั้ง moderate CYP3A4 และ P-gp inhibitor\n\nสรุปท่องสอบ: Colchicine ชน CYP3A4/P-gp inhibitors (azole, macrolide, verapamil/diltiazem, cyclosporine, ritonavir) แต่ไม่ชน allopurinol",
+        "summary": "ยาที่เพิ่มระดับ colchicine คือ CYP3A4 และ/หรือ P-gp inhibitor (azole, macrolide, verapamil/diltiazem, cyclosporine, protease inhibitor) ส่วน allopurinol ใช้ร่วมได้",
+        "reason": "โจทย์ถามอะไร: ข้อสอบแบบหาข้อยกเว้น ให้เลือกยาที่ 'ไม่' เพิ่มระดับ colchicine อย่างมีนัยสำคัญ ต้องรู้ว่า colchicine อาศัย CYP3A4 และ P-glycoprotein (P-gp) ในการกำจัด และรู้ว่ายาตัวเลือกแต่ละตัวยับยั้งระบบใด\n\nหลักการ/กลไกเชิงลึก: colchicine ดูดซึมทางลำไส้โดยมี P-gp ที่เยื่อบุคอยขับกลับเข้าลำไส้ และถูก CYP3A4 ที่ลำไส้และตับ demethylate ส่วนการขับออกทางน้ำดีและท่อไตก็ผ่าน P-gp เช่นกัน ยาที่ยับยั้งระบบใดระบบหนึ่งจะเพิ่มทั้ง Cmax และ AUC และยังเพิ่มการเข้าสู่เนื้อเยื่อ เช่น กล้ามเนื้อและไขกระดูก Ketoconazole เป็น strong CYP3A4 inhibitor และยับยั้ง P-gp ด้วย Verapamil เป็น moderate CYP3A4 inhibitor และ P-gp inhibitor Cyclosporine เป็น P-gp inhibitor ที่แรงและยับยั้ง CYP3A4 ด้วย มีรายงาน myopathy และ neuromyopathy รุนแรงในผู้ป่วยปลูกถ่ายอวัยวะที่ใช้ cyclosporine ร่วมกับ colchicine ส่วน allopurinol ยับยั้ง xanthine oxidase เท่านั้น ไม่เกี่ยวกับ CYP3A4 หรือ P-gp\n\nทำไมข้อ C ถูก: allopurinol ไม่มีผลต่อเภสัชจลนศาสตร์ของ colchicine และแนวทาง ACR 2020 แนะนำให้ใช้ colchicine ป้องกันการกำเริบในช่วง 3–6 เดือนแรกที่เริ่ม allopurinol เป็นประจำ จึงเป็นข้อยกเว้นที่ถูกต้อง\n\nหลักฐานและแนวทางเวชปฏิบัติ: ฉลาก colchicine จัดกลุ่มยาและการปรับขนาดไว้ ได้แก่ strong CYP3A4 inhibitor (ketoconazole, itraconazole, clarithromycin, ritonavir) ลด prophylaxis เหลือ 0.3 mg วันละครั้ง, moderate CYP3A4 inhibitor (verapamil, diltiazem, fluconazole, erythromycin, grapefruit juice ปริมาณมาก) ลดเหลือ 0.3 mg วันละ 2 ครั้งหรือ 0.6 mg วันละครั้ง, P-gp inhibitor (cyclosporine, ranolazine) ลดเหลือ 0.3 mg วันละครั้งหรือวันเว้นวัน และห้ามใช้ร่วมเลยในผู้ที่ไตหรือตับบกพร่อง\n\nการประยุกต์กับผู้ป่วยจริง: เมื่อรับใบสั่ง colchicine ให้ทบทวนรายการยาทั้งหมดรวมถึงยาฆ่าเชื้อราและยาปฏิชีวนะที่อาจได้จากที่อื่น ถ้าผู้ป่วยใช้ verapamil หรือ diltiazem อยู่ประจำ ให้ลดขนาด colchicine ตามฉลาก ถ้ามี cyclosporine ให้ใช้ขนาดต่ำสุดและเฝ้าระวัง CK ส่วน allopurinol จ่ายร่วมได้ตามปกติ โดยยังต้องปรับ colchicine ตามการทำงานของไต\n\nการติดตามและสัญญาณอันตราย: ผู้ที่ได้ colchicine ร่วมกับ inhibitor ควรติดตามอาการท้องเสีย อาเจียน กล้ามเนื้อต้นแขนต้นขาอ่อนแรง ชาปลายมือปลายเท้า และตรวจ CBC, CK, SCr เป็นระยะ โดยเฉพาะผู้สูงอายุหรือ eGFR ต่ำ\n\nจุดที่มักสับสนและกับดักข้อสอบ: (1) อันตรกิริยาของ colchicine กับ statin/fibrate เป็นแบบ pharmacodynamic (myotoxicity เสริมกัน) มากกว่าแบบระดับยา (2) allopurinol มีอันตรกิริยาสำคัญกับ azathioprine/6-MP, ampicillin/amoxicillin (ผื่น) และ warfarin แต่ไม่ใช่กับ colchicine (3) grapefruit juice ก็เป็น CYP3A4 inhibitor ในลำไส้ที่ควรเลี่ยงปริมาณมาก\n\nสรุปท่องสอบ: เพิ่มระดับ colchicine = CYP3A4 inhibitor และ/หรือ P-gp inhibitor (ketoconazole, clarithromycin, verapamil, diltiazem, cyclosporine) ส่วน allopurinol ใช้ร่วมได้เป็นมาตรฐาน",
         "choices": [
           {
             "label": "A",
             "text": "Verapamil",
-            "explanation": "✗ ผิด — moderate CYP3A4 inhibitor และ P-gp inhibitor เพิ่มระดับ colchicine"
+            "explanation": "✗ ผิด (ข้อนี้เพิ่มระดับ colchicine) — verapamil เป็น moderate CYP3A4 inhibitor และ P-gp inhibitor จึงเพิ่มระดับ colchicine อย่างมีนัยสำคัญ ฉลากแนะนำลด prophylaxis เหลือ 0.3 mg วันละ 2 ครั้งหรือ 0.6 mg วันละครั้ง ยาที่ใช้ทดแทนเพื่อคุมอัตราการเต้นหัวใจหรือความดันโดยไม่มีอันตรกิริยานี้ เช่น beta-blocker หรือ amlodipine จะเป็นตัวเลือกที่ปลอดภัยกว่า"
           },
           {
             "label": "B",
             "text": "Ketoconazole",
-            "explanation": "✗ ผิด — strong CYP3A4 inhibitor (และยับยั้ง P-gp) เพิ่มระดับ colchicine มาก"
+            "explanation": "✗ ผิด (ข้อนี้เพิ่มระดับ colchicine) — ketoconazole เป็น strong CYP3A4 inhibitor และยับยั้ง P-gp ด้วย จึงเป็นหนึ่งในยาที่อันตรายที่สุดเมื่อใช้ร่วมกับ colchicine ต้องลด prophylaxis เหลือ 0.3 mg วันละครั้ง และห้ามใช้ร่วมในผู้ที่ไตหรือตับบกพร่อง ถ้าจำเป็นต้องใช้ยาต้านเชื้อรา ควรพิจารณาหยุด colchicine ชั่วคราว"
           },
           {
             "label": "C",
             "text": "Allopurinol",
-            "explanation": "✓ ถูก — ไม่ยับยั้ง CYP3A4/P-gp ใช้ร่วมกับ colchicine เพื่อป้องกัน flare ได้ตามมาตรฐาน"
+            "explanation": "✓ ถูก — allopurinol ยับยั้ง xanthine oxidase เท่านั้น ไม่มีผลต่อ CYP3A4 หรือ P-gp จึงไม่เพิ่มระดับ colchicine และ ACR 2020 แนะนำให้ใช้ colchicine ป้องกันการกำเริบในช่วงเริ่ม allopurinol เป็นประจำ ขนาด colchicine ยังต้องปรับตามการทำงานของไตและยาอื่นที่ใช้ร่วม"
           },
           {
             "label": "D",
             "text": "Cyclosporine",
-            "explanation": "✗ ผิด — P-gp (และ CYP3A4) inhibitor เพิ่มระดับ colchicine และเสี่ยง myopathy"
+            "explanation": "✗ ผิด (ข้อนี้เพิ่มระดับ colchicine) — cyclosporine เป็น P-gp inhibitor ที่แรงและยับยั้ง CYP3A4 มีรายงาน colchicine neuromyopathy และ rhabdomyolysis ในผู้ป่วยปลูกถ่ายอวัยวะ ฉลากแนะนำลด prophylaxis เหลือ 0.3 mg วันละครั้งหรือวันเว้นวัน และเฝ้าระวัง CK ในผู้ป่วยปลูกถ่ายไตที่เป็นเกาต์ซึ่งพบบ่อย"
           }
         ],
-        "key_takeaway": "Colchicine ระวัง azole, macrolide, verapamil/diltiazem, cyclosporine — allopurinol ใช้ร่วมได้"
+        "key_takeaway": "Colchicine ระวัง 'A-M-V-C' (Azole, Macrolide, Verapamil/diltiazem, Cyclosporine) — allopurinol เป็นคู่หูปกติ"
       }
     },
     {
@@ -227,33 +233,33 @@
       ],
       "correct_answer": "B",
       "difficulty": "hard",
-      "explanation": "อาการกล้ามเนื้ออ่อนแรงร่วมกับชาปลายประสาทและ CK สูงเกือบ 20 เท่า เข้าได้กับ colchicine neuromyopathy เสริมด้วย statin myopathy ในผู้ป่วยไตเสื่อมที่ได้ colchicine ขนาดสูงเกิน จึงต้องหยุดทั้งสองยาและดูแลภาวะ rhabdomyolysis",
+      "explanation": "อาการกล้ามเนื้อต้นแขนต้นขาอ่อนแรงร่วมกับชาปลายเท้าและ CK สูงเกือบ 20 เท่า ในผู้สูงอายุ CKD ที่ใช้ colchicine ขนาดเกินร่วมกับ simvastatin บ่งชี้ colchicine neuromyopathy ร่วมกับ statin myopathy ต้องหยุดยาทั้งสอง ให้สารน้ำ และติดตาม CK กับการทำงานของไต",
       "detailed_explanation": {
-        "summary": "Colchicine neuromyopathy + statin myopathy (CK ~19 เท่า) → หยุดทั้งสองยา ให้สารน้ำ ติดตาม CK/ไต",
-        "reason": "โจทย์ถามอะไร: การรับรู้และจัดการ DRP myopathy จาก colchicine ร่วมกับ statin ในผู้ป่วย CKD\n\nหลักการ/กลไกเชิงลึก: colchicine จับ tubulin ทำให้ microtubule ในเซลล์กล้ามเนื้อและเส้นประสาทผิดปกติ เกิด vacuolar myopathy ร่วมกับ axonal neuropathy (ชาปลายเท้า) colchicine ถูกขับทางไตบางส่วน ใน CrCl < 30–50 ยาจะสะสม ขนาด prophylaxis 0.6 mg วันละ 2 ครั้ง (1.2 mg/day) จึงสูงเกินไป ขณะที่ simvastatin ก่อ myopathy อยู่แล้ว และทั้งสองยาเป็น substrate ของ CYP3A4/P-gp จึงมีความเสี่ยงเสริมกัน คำนวณ CK: 3,800/200 = 19 เท่าของค่าสูงสุดปกติ (> 10 เท่า + อาการ = ต้องหยุด statin)\n\nทำไมข้อ B ถูก: เมื่อ CK > 10×ULN ร่วมกับอาการ ต้องหยุด statin ทันที และต้องหยุด colchicine ซึ่งเป็นสาเหตุหลักของ neuromyopathy ให้สารน้ำเพื่อป้องกัน AKI จาก myoglobin ติดตาม CK, SCr, K อาการมักดีขึ้นใน 1–4 สัปดาห์หลังหยุดยา\n\nการประยุกต์กับผู้ป่วยจริง: เมื่อหายแล้ว prophylaxis ใน CKD ควรใช้ colchicine ขนาดลดลง (เช่น 0.3 mg/day หรือวันเว้นวัน) หรือใช้ prednisolone ขนาดต่ำแทน และเลือก statin ที่ไม่ผ่าน CYP3A4 เช่น pravastatin หรือ rosuvastatin ขนาดต่ำ\n\nจุดที่มักสับสนและกับดักข้อสอบ: atorvastatin ยังผ่าน CYP3A4 การเปลี่ยน statin โดยคง colchicine เดิมไม่แก้สาเหตุ; CoQ10 ไม่มีบทบาทใน CK สูงขนาดนี้\n\nสรุปท่องสอบ: Colchicine + statin + CKD + ชาปลายมือเท้า + CK สูง = neuromyopathy → หยุดทั้งคู่",
+        "summary": "Colchicine (ขนาดไม่ปรับตามไต) + simvastatin → neuromyopathy/rhabdomyolysis: หยุดทั้งคู่ ให้สารน้ำ ติดตาม CK, SCr, K",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วยอายุ 74 ปี CrCl 32 mL/min ใช้ colchicine 0.6 mg วันละ 2 ครั้งต่อเนื่อง 4 เดือน ร่วมกับ simvastatin 40 mg มีกล้ามเนื้อต้นแขนต้นขาอ่อนแรง ชาปลายเท้า และ CK 3,800 U/L โจทย์ต้องการให้วินิจฉัยว่าเป็นพิษต่อกล้ามเนื้อจากยาและเลือกการจัดการเร่งด่วน\n\nหลักการ/กลไกเชิงลึก: colchicine จับ tubulin ยับยั้งการสร้าง microtubule ซึ่งจำเป็นต่อการขนส่งภายในเซลล์กล้ามเนื้อและแอกซอนของเส้นประสาท ทำให้เกิด vacuolar myopathy ร่วมกับ axonal neuropathy (เรียก colchicine neuromyopathy) อาการคือกล้ามเนื้อส่วนต้นอ่อนแรง CK สูง และ reflex ลดลง ภาวะนี้สัมพันธ์กับระดับยาสะสม ซึ่งเกิดง่ายในผู้สูงอายุและ CKD เพราะ colchicine ขับทางไตบางส่วน ส่วน simvastatin ทำให้เกิด myopathy ผ่านการลด coenzyme Q10 และ prenylation ของโปรตีนในกล้ามเนื้อ ทั้งสองยาจึงเสริมพิษต่อกล้ามเนื้อกันแบบ pharmacodynamic และบางรายงานเสนอว่ามีการแย่ง CYP3A4/P-gp ร่วมด้วย\n\nทำไมข้อ B ถูก: CK สูงประมาณ 19 เท่าของค่าปกติร่วมกับอาการอ่อนแรงแสดงว่าเป็น myopathy รุนแรงที่อาจเป็น rhabdomyolysis การหยุดยาที่เป็นสาเหตุทั้งสองตัว ให้สารน้ำเพื่อป้องกัน myoglobin-induced AKI และติดตาม CK, SCr, K เป็นการจัดการที่ถูกต้อง อาการมักดีขึ้นใน 3–4 สัปดาห์หลังหยุด colchicine\n\nหลักฐานและแนวทางเวชปฏิบัติ: ฉลาก colchicine เตือนเรื่อง neuromuscular toxicity และ rhabdomyolysis โดยเฉพาะในผู้ที่ไตบกพร่องและผู้สูงอายุ หรือใช้ร่วมกับ statin, fibrate, cyclosporine หรือ digoxin ในผู้ที่ CrCl <30 mL/min ฉลากแนะนำเริ่ม prophylaxis 0.3 mg/day และ ACR 2020 ให้ลดขนาด colchicine ใน CKD แนวทาง ACC/AHA เรื่อง statin safety แนะนำหยุด statin เมื่อ CK >10 เท่าของค่าปกติร่วมกับอาการ\n\nการประยุกต์กับผู้ป่วยจริง: หยุด colchicine และ simvastatin ทันที ให้ IV fluid ตามสภาพหัวใจและไต ตรวจ CK, SCr, K, Ca, PO4 และ urine myoglobin ซ้ำทุก 24–48 ชั่วโมงจน CK ลดลง เมื่อหายแล้วอาจกลับมาใช้ statin ที่ไม่ผ่าน CYP3A4 เช่น pravastatin หรือ rosuvastatin ขนาดต่ำ และถ้าจำเป็นต้องป้องกันเกาต์กำเริบต่อ ให้ใช้ colchicine ขนาดปรับตามไต (เช่น 0.3 mg/day หรือน้อยกว่า) หรือใช้ prednisolone ขนาดต่ำแทน\n\nการติดตามและสัญญาณอันตราย: ปัสสาวะสีโคล่า ปัสสาวะออกน้อย K สูง หรือ SCr เพิ่ม เป็นสัญญาณของ rhabdomyolysis ที่อาจต้อง dialysis ควรสังเกตไข้ เลือดออกง่าย และท้องเสียซึ่งบ่งบอกพิษ colchicine ต่อระบบอื่น\n\nจุดที่มักสับสนและกับดักข้อสอบ: (1) การลดขนาดยาหรือเสริม CoQ10 ไม่เพียงพอเมื่อ CK สูงร่วมกับอาการอ่อนแรง (2) atorvastatin ก็ผ่าน CYP3A4 การเปลี่ยนเป็น atorvastatin ขนาดเท่ากันไม่ได้ลดความเสี่ยง (3) อาการชาร่วมด้วยช่วยแยก colchicine neuromyopathy จาก statin myopathy เพียงอย่างเดียว (4) ขนาด colchicine ต้องปรับตามไตเสมอ\n\nสรุปท่องสอบ: colchicine + statin + CKD + อ่อนแรง/ชา + CK สูง → หยุดทั้งสอง + สารน้ำ + ติดตาม CK/SCr/K; ป้องกันโดยปรับ colchicine ตามไตและเลือก statin ที่ไม่ผ่าน CYP3A4",
         "choices": [
           {
             "label": "A",
             "text": "ลด colchicine เหลือ 0.6 mg วันเว้นวัน และใช้ simvastatin ต่อ",
-            "explanation": "✗ ผิด — CK > 10×ULN พร้อมอาการต้องหยุดยาที่เป็นเหตุทั้งหมด ไม่ใช่แค่ลดขนาด"
+            "explanation": "✗ ผิด — CK สูงประมาณ 19 เท่าร่วมกับอาการอ่อนแรงและชาเป็นภาวะรุนแรง การลด colchicine โดยยังใช้ simvastatin ต่อไม่ได้แก้สาเหตุทั้งสอง และเสี่ยง rhabdomyolysis การลดขนาด colchicine จะเหมาะเป็นมาตรการ 'ป้องกัน' ในผู้ป่วย CKD ที่ยังไม่มีอาการ เช่น ลดเหลือ 0.3 mg/day เมื่อ CrCl <30 mL/min"
           },
           {
             "label": "B",
             "text": "หยุดทั้ง colchicine และ simvastatin ให้สารน้ำ ติดตาม CK และการทำงานของไต",
-            "explanation": "✓ ถูก — หยุดยาที่เป็นสาเหตุและป้องกัน AKI จาก rhabdomyolysis"
+            "explanation": "✓ ถูก — หยุดยาที่เป็นสาเหตุทั้งสองตัวเป็นหัวใจของการรักษา myopathy จากยา ให้สารน้ำเพื่อป้องกันไตวายจาก myoglobin และติดตาม CK, SCr, K อาการ colchicine neuromyopathy มักดีขึ้นใน 3–4 สัปดาห์ หลังหายอาจเปลี่ยนเป็น pravastatin/rosuvastatin ขนาดต่ำ และใช้ prophylaxis ที่ปรับตามไตหรือ prednisolone ขนาดต่ำแทน"
           },
           {
             "label": "C",
             "text": "เปลี่ยน simvastatin เป็น atorvastatin 40 mg และใช้ colchicine ขนาดเดิมต่อ",
-            "explanation": "✗ ผิด — colchicine ขนาดเกินใน CKD ยังคงอยู่ และ atorvastatin ยังผ่าน CYP3A4"
+            "explanation": "✗ ผิด — atorvastatin ถูกเปลี่ยนแปลงผ่าน CYP3A4 เช่นเดียวกับ simvastatin และยังเป็นพิษต่อกล้ามเนื้อได้ การใช้ colchicine ขนาดเดิมต่อในผู้ที่มี neuromyopathy อยู่ยิ่งอันตราย การเปลี่ยน statin จะเหมาะหลังจาก CK กลับปกติและเลือกตัวที่ไม่ผ่าน CYP3A4 เช่น pravastatin หรือ rosuvastatin ขนาดต่ำ"
           },
           {
             "label": "D",
             "text": "ใช้ยาเดิมต่อและเสริม coenzyme Q10 เพื่อลดอาการปวดกล้ามเนื้อ",
-            "explanation": "✗ ผิด — ไม่แก้สาเหตุ เสี่ยง rhabdomyolysis และไตวาย"
+            "explanation": "✗ ผิด — CoQ10 ยังไม่มีหลักฐานว่าป้องกันหรือรักษา statin myopathy ได้ และไม่มีผลต่อพิษ colchicine การใช้ยาเดิมต่อขณะ CK สูงร่วมกับอ่อนแรงอาจนำไปสู่ rhabdomyolysis และไตวาย CoQ10 อาจถูกพูดถึงเฉพาะในผู้ที่มีอาการปวดเมื่อยเล็กน้อยจาก statin โดย CK ปกติ ซึ่งหลักฐานยังไม่ชัดเจน"
           }
         ],
-        "key_takeaway": "Colchicine ใน CKD + statin → ระวัง neuromyopathy; CK > 10×ULN = หยุดทั้งคู่"
+        "key_takeaway": "Colchicine + statin + CKD + อ่อนแรงต้นแขนขา/ชา + CK สูง = หยุดทั้งคู่ทันที"
       }
     },
     {
@@ -278,33 +284,33 @@
       ],
       "correct_answer": "D",
       "difficulty": "hard",
-      "explanation": "TMP-SMX เสริมฤทธิ์ antifolate (TMP ยับยั้ง DHFR) และลดการขับ MTX ทางไต ทำให้เกิด MTX toxicity กดไขกระดูก ต้องหยุดทั้งสองยาและให้ leucovorin ซึ่งข้ามการยับยั้ง DHFR ได้ ส่วน folic acid ใช้ไม่ได้ผล",
+      "explanation": "Trimethoprim ยับยั้ง dihydrofolate reductase เสริมฤทธิ์ antifolate และ sulfamethoxazole ลดการขับ MTX ทางท่อไตและแย่งจับโปรตีน ในผู้สูงอายุที่ไตเสื่อมจึงเกิดพิษ MTX (mucositis + pancytopenia) ต้องหยุดทั้งสองยาและให้ leucovorin ร่วมกับการดูแลประคับประคอง",
       "detailed_explanation": {
-        "summary": "MTX + TMP-SMX → pancytopenia; หยุดทั้งคู่ ให้ leucovorin (ไม่ใช่ folic acid)",
-        "reason": "โจทย์ถามอะไร: การจัดการพิษ methotrexate จากอันตรกิริยากับ trimethoprim-sulfamethoxazole\n\nหลักการ/กลไกเชิงลึก: (1) trimethoprim ยับยั้ง dihydrofolate reductase (DHFR) ของมนุษย์ได้บ้าง เสริมฤทธิ์ antifolate ของ MTX (2) sulfamethoxazole แย่งจับ albumin ทำให้ free MTX เพิ่ม และ (3) ทั้งคู่ลดการขับ MTX ทาง renal tubular secretion เมื่อรวมกับ CrCl 45 และอายุ 70 ปี จึงเกิด pancytopenia และ mucositis ได้แม้ใช้ MTX ขนาดต่ำ\n\nทำไมข้อ D ถูก: ต้องหยุดยาที่เป็นสาเหตุทั้งสอง และให้ leucovorin (folinic acid, 5-formyl-THF) ซึ่งเป็น reduced folate ที่ไม่ต้องผ่าน DHFR จึงช่วยกู้เซลล์ได้ ขนาดที่ใช้บ่อยคือ 15 mg (หรือ 10–15 mg/m²) ทุก 6 ชั่วโมงจนเม็ดเลือดฟื้น ร่วมกับดูแล febrile neutropenia (เพาะเชื้อ, ยาปฏิชีวนะ broad spectrum) และพิจารณา G-CSF\n\nการประยุกต์กับผู้ป่วยจริง: ผู้ป่วย RA ที่ใช้ MTX หากต้องรักษา UTI ควรเลือกยาอื่น เช่น nitrofurantoin (ถ้า CrCl เหมาะสม) หรือ cephalosporin และต้องให้ความรู้ผู้ป่วยแจ้งทุกครั้งว่าใช้ MTX\n\nจุดที่มักสับสนและกับดักข้อสอบ: folic acid ต้องผ่าน DHFR จึงใช้กู้พิษไม่ได้; ข้อ C ใช้ sulfasalazine ระหว่างมี pancytopenia ไม่เหมาะ\n\nสรุปท่องสอบ: MTX + co-trimoxazole = ห้ามใช้ร่วม; พิษ MTX → leucovorin",
+        "summary": "MTX + TMP-SMX → myelosuppression: หยุดทั้งคู่ ให้ leucovorin (folinic acid ไม่ใช่ folic acid) และดูแลแบบ febrile neutropenia ถ้ามีไข้",
+        "reason": "โจทย์ถามอะไร: หญิงอายุ 70 ปี CrCl 45 mL/min ใช้ methotrexate (MTX) 15 mg/สัปดาห์ ได้ co-trimoxazole ขนาดรักษา (2 เม็ด SS วันละ 2 ครั้ง) 7 วัน แล้วเกิดแผลในปาก ไข้ WBC 1,800 และเกล็ดเลือด 42,000 โจทย์ต้องการให้จำได้ว่าเป็นพิษ MTX จากอันตรกิริยาและรู้ antidote ที่ถูกต้อง\n\nหลักการ/กลไกเชิงลึก: อันตรกิริยาเกิด 3 ทางพร้อมกัน (1) pharmacodynamic: trimethoprim ยับยั้ง dihydrofolate reductase (DHFR) แม้จะเลือกจับเอนไซม์ของแบคทีเรียมากกว่า แต่เมื่อซ้อนกับ MTX ที่ยับยั้ง DHFR ของมนุษย์อยู่แล้ว การสร้าง tetrahydrofolate สำหรับสังเคราะห์ thymidylate และ purine จะลดลงมาก (2) pharmacokinetic ที่ไต: sulfamethoxazole และ trimethoprim แย่ง organic anion/cation transporter ที่ท่อไต ลดการขับ MTX (3) sulfonamide แทนที่ MTX จาก albumin ทำให้ยาอิสระเพิ่ม เซลล์ที่แบ่งตัวเร็ว ได้แก่ ไขกระดูกและเยื่อบุทางเดินอาหาร จึงได้รับผลก่อน เกิด mucositis และ pancytopenia อายุมากและ CrCl ต่ำเป็นปัจจัยเสริม\n\nทำไมข้อ D ถูก: ต้องหยุดยาที่ก่อพิษทั้งสอง และให้ leucovorin (folinic acid, 5-formyl-tetrahydrofolate) ซึ่งเป็นโฟเลตรูป reduced ที่เข้าสู่วงจรได้โดยไม่ต้องผ่าน DHFR จึง 'กู้' เซลล์ปกติได้ ร่วมกับการดูแลประคับประคอง ได้แก่ สารน้ำ ดูแลช่องปาก และรักษาการติดเชื้อ\n\nหลักฐานและแนวทางเวชปฏิบัติ: ฉลาก MTX และฐานข้อมูลอันตรกิริยาจัด TMP-SMX เป็นคู่ที่ควรหลีกเลี่ยง มีรายงาน pancytopenia ถึงแก่ชีวิตแม้กับ MTX ขนาดต่ำ แนวทางดูแลพิษ MTX แนะนำ leucovorin เช่น 15 mg (หรือ 10–15 mg/m²) ทุก 6 ชั่วโมง ทางหลอดเลือดหรือรับประทาน จนกว่า CBC ฟื้นและระดับ MTX ต่ำ ถ้ามีไข้ร่วมกับ ANC <500/mm³ ให้ดูแลแบบ febrile neutropenia ด้วย broad-spectrum antibiotic และอาจใช้ G-CSF ตามดุลยพินิจแพทย์\n\nการประยุกต์กับผู้ป่วยจริง: ส่งโรงพยาบาลทันที ตรวจ CBC, SCr, LFT และระดับ MTX ให้ leucovorin เร็วที่สุดเพราะยิ่งเริ่มช้ายิ่งได้ผลน้อย เมื่อหายแล้วกลับมาใช้ MTX ได้เฉพาะเมื่อแพทย์ประเมินว่าคุ้มค่า โดยปรับขนาดตาม CrCl หากติดเชื้อทางเดินปัสสาวะครั้งต่อไป เลือกยาที่ไม่ใช่ antifolate เช่น nitrofurantoin (เมื่อ CrCl ≥30 mL/min), fosfomycin หรือ cephalexin และแนะนำผู้ป่วยให้แจ้งทุกครั้งว่าใช้ MTX\n\nการติดตามและสัญญาณอันตราย: ตรวจ CBC ทุกวันจน nadir ผ่านไป สังเกตไข้ เลือดออก แผลในปากที่ลุกลาม ถ่ายเหลว และไตทำงานลดลง ซึ่งจะยิ่งลดการขับ MTX\n\nจุดที่มักสับสนและกับดักข้อสอบ: (1) folic acid ใช้ 'ป้องกัน' ผลข้างเคียงของ MTX ขนาดต่ำ แต่ใช้ 'รักษา' พิษไม่ได้เพราะต้องผ่าน DHFR ที่ถูกยับยั้งอยู่ (2) MTX 'ขนาดต่ำ' ไม่ได้ปลอดภัยเมื่อมีอันตรกิริยาซ้อนกับไตเสื่อม (3) sulfasalazine มีโครงสร้าง sulfonamide และกดไขกระดูกได้ ไม่ใช่ยาทดแทนในช่วงนี้\n\nสรุปท่องสอบ: MTX + TMP-SMX = antifolate ซ้อน + ขับออกลดลง → pancytopenia; หยุดทั้งคู่ + leucovorin; folic acid ป้องกัน folinic acid กู้",
         "choices": [
           {
             "label": "A",
             "text": "ใช้ methotrexate ต่อและเพิ่ม folic acid เป็น 5 mg ทุกวัน",
-            "explanation": "✗ ผิด — folic acid ต้องผ่าน DHFR ที่ถูกยับยั้ง จึงกู้พิษไม่ได้ และต้องหยุด MTX"
+            "explanation": "✗ ผิด — folic acid ต้องถูก DHFR เปลี่ยนเป็น tetrahydrofolate ก่อนจึงจะใช้ได้ ขณะที่ DHFR ถูกยับยั้งทั้งจาก MTX และ trimethoprim การเพิ่ม folic acid จึงไม่แก้พิษ และการใช้ MTX ต่อยิ่งทำให้ไขกระดูกถูกกด การเพิ่ม folic acid เป็นทุกวันจะเหมาะกับผู้ที่มีผลข้างเคียงเล็กน้อย เช่น แผลในปากหรือคลื่นไส้ โดยไม่มี cytopenia"
           },
           {
             "label": "B",
             "text": "หยุด co-trimoxazole อย่างเดียว ใช้ methotrexate ต่อเพราะเป็นขนาดต่ำ",
-            "explanation": "✗ ผิด — มี pancytopenia แล้วต้องหยุด MTX ทันที"
+            "explanation": "✗ ผิด — แม้เป็น MTX ขนาดต่ำ แต่ CBC แสดง pancytopenia ร่วมกับ mucositis ซึ่งเป็นพิษ MTX ชัดเจน ยาที่สะสมในเนื้อเยื่อ (MTX polyglutamate) ยังออกฤทธิ์ต่อเนื่อง การหยุดเฉพาะยาปฏิชีวนะไม่พอ การหยุดเฉพาะ TMP-SMX จะเหมาะเมื่อพบปัญหาก่อนเกิดพิษ เช่น เภสัชกรตรวจพบใบสั่งยาคู่นี้ตั้งแต่แรก แล้วเปลี่ยนยาปฏิชีวนะ"
           },
           {
             "label": "C",
             "text": "เปลี่ยน methotrexate เป็น sulfasalazine ทันทีและให้ G-CSF",
-            "explanation": "✗ ผิด — sulfasalazine กดไขกระดูกได้เช่นกัน และไม่ได้ให้ antidote"
+            "explanation": "✗ ผิด — sulfasalazine มีส่วน sulfapyridine ที่เป็น sulfonamide และกดไขกระดูก (agranulocytosis) ได้ จึงไม่ควรเริ่มขณะที่ไขกระดูกถูกกด และการเปลี่ยน DMARD ไม่ได้แก้พิษ MTX ที่ยังค้างอยู่ G-CSF อาจใช้เสริมใน febrile neutropenia รุนแรงตามดุลยพินิจแพทย์ แต่ต้องควบคู่กับ leucovorin และการหยุดยาเสมอ"
           },
           {
             "label": "D",
             "text": "หยุดทั้ง methotrexate และ co-trimoxazole และให้ leucovorin (folinic acid) ร่วมกับการดูแลประคับประคอง",
-            "explanation": "✓ ถูก — หยุดสาเหตุและให้ reduced folate ที่ข้าม DHFR"
+            "explanation": "✓ ถูก — หยุดทั้ง MTX และ TMP-SMX และให้ leucovorin (folinic acid) ซึ่งเข้าสู่วงจรโฟเลตได้โดยไม่ผ่าน DHFR จึงช่วยกู้ไขกระดูกและเยื่อบุ เช่น 15 mg ทุก 6 ชั่วโมงจน CBC ฟื้น ร่วมกับสารน้ำ ดูแลช่องปาก และรักษาแบบ febrile neutropenia เมื่อ ANC ต่ำร่วมกับไข้"
           }
         ],
-        "key_takeaway": "MTX + TMP-SMX = antifolate ซ้อน + ขับช้า → พิษ; แก้ด้วย leucovorin"
+        "key_takeaway": "MTX + Bactrim = antifolate ซ้อน → หยุดทั้งคู่ + leucovorin"
       }
     },
     {
@@ -329,33 +335,33 @@
       ],
       "correct_answer": "C",
       "difficulty": "medium",
-      "explanation": "NSAID และ PPI ลดการขับ MTX ทางไต แต่ผลมีนัยสำคัญทางคลินิกเด่นชัดกับ high-dose MTX ใน RA ที่ใช้ขนาดต่ำและไตปกติใช้ร่วมกันได้ภายใต้การติดตาม SCr/CBC/LFT",
+      "explanation": "MTX ขนาดต่ำสำหรับ RA ใช้ร่วมกับ NSAID และ PPI ได้ในผู้ที่ไตทำงานปกติ โดยติดตาม SCr, CBC และ LFT เป็นระยะ อันตรกิริยารุนแรงที่ทำให้ MTX ค้างในร่างกายส่วนใหญ่รายงานกับ MTX ขนาดสูงในการรักษามะเร็ง",
       "detailed_explanation": {
-        "summary": "Low-dose MTX + NSAID/PPI ใช้ร่วมได้โดยติดตามผลเลือด; หลีกเลี่ยงใน high-dose MTX",
-        "reason": "โจทย์ถามอะไร: การประเมินความสำคัญทางคลินิกของอันตรกิริยา MTX กับ NSAID และ PPI ตามขนาด MTX\n\nหลักการ/กลไกเชิงลึก: NSAID ยับยั้ง prostaglandin ในไต ลด renal blood flow/GFR และแย่ง organic anion transporter (OAT1/OAT3) ที่หลั่ง MTX ออกทาง tubule ส่วน PPI ยับยั้ง H+/K+-ATPase และ transporter BCRP ในท่อไต ทำให้ MTX ถูกขับช้า รายงานพิษรุนแรงส่วนใหญ่มาจาก high-dose MTX (เช่น ≥ 500 mg/m² ในมะเร็ง) ซึ่งระดับยาสูงมากจนการขับช้าเล็กน้อยมีผลรุนแรง\n\nทำไมข้อ C ถูก: แนวทาง EULAR/ACR ยอมรับการใช้ NSAID ร่วมกับ MTX ขนาดต่ำ (7.5–25 mg/สัปดาห์) ใน RA เป็นเรื่องปกติ โดยติดตาม SCr, CBC, LFT ทุก 1–3 เดือน ผู้ป่วยรายนี้ไตปกติ ผลเลือดปกติ จึงใช้ต่อได้ และ PPI ยังจำเป็นเพื่อปกป้องกระเพาะจาก NSAID\n\nการประยุกต์กับผู้ป่วยจริง: ระวังเมื่อไตเสื่อม ขาดน้ำ ผู้สูงอายุ หรือเพิ่มยาที่ลดการขับ MTX หลายตัวพร้อมกัน; ใน high-dose MTX ควรหยุด NSAID/PPI ช่วงที่ให้ยาหรือใช้ H2RA แทน และติดตามระดับ MTX\n\nจุดที่มักสับสนและกับดักข้อสอบ: การท่องว่า MTX + NSAID = ห้าม เป็นการเหมารวม ข้อสอบมักแยกขนาดต่ำกับขนาดสูง\n\nสรุปท่องสอบ: MTX low-dose + NSAID/PPI = ใช้ได้ + monitor; high-dose = เลี่ยง",
+        "summary": "Low-dose MTX + NSAID/PPI: ไม่ใช่ข้อห้าม ใช้ร่วมได้เมื่อไตดี โดยติดตามเลือดตามรอบ; high-dose MTX + NSAID/PPI = ต้องหลีกเลี่ยง",
+        "reason": "โจทย์ถามอะไร: หญิงอายุ 48 ปี ไตปกติ ใช้ MTX 15 mg/สัปดาห์ร่วมกับ naproxen และ omeprazole โจทย์ถามว่าข้อใดถูกเกี่ยวกับอันตรกิริยา เป็นการทดสอบว่าแยกได้หรือไม่ระหว่างอันตรกิริยาของ MTX ขนาดต่ำกับขนาดสูง\n\nหลักการ/กลไกเชิงลึก: MTX ขับทางไตเป็นหลักทั้งการกรองและการหลั่งที่ท่อไตผ่าน OAT1/OAT3 และ efflux transporter เช่น BCRP และ MRP2 NSAID ลด prostaglandin ที่ช่วยรักษาการไหลเวียนเลือดในไต และแย่ง OAT ทำให้ clearance ของ MTX ลดลง ส่วน PPI มีหลักฐานว่ายับยั้ง BCRP และ H+/K+-ATPase ที่ท่อไต ทำให้การขับ MTX ช้าลง ผลเหล่านี้สำคัญทางคลินิกเมื่อใช้ MTX ขนาดสูง (เช่น ≥500 mg/m² ในมะเร็ง) ซึ่งระดับยาสูงมากและพิษขึ้นกับระยะเวลาที่ระดับยาค้าง แต่ในขนาด 7.5–25 mg/สัปดาห์ ระดับยาต่ำและอยู่สั้น การเพิ่มขึ้นเล็กน้อยจาก NSAID/PPI จึงมักไม่มีผลทางคลินิกในผู้ที่ไตปกติ\n\nทำไมข้อ C ถูก: การใช้ NSAID ร่วมกับ MTX ขนาดต่ำเป็นเรื่องปกติในการรักษา RA และอยู่ในการศึกษาทางคลินิกหลายชิ้น การติดตาม SCr, CBC และ LFT ตามรอบมาตรฐานเพียงพอ ข้อความว่าอันตรกิริยารุนแรงส่วนใหญ่เกิดกับ MTX ขนาดสูงจึงถูกต้องที่สุด\n\nหลักฐานและแนวทางเวชปฏิบัติ: ACR แนะนำติดตาม CBC, LFT และ SCr ทุก 2–4 สัปดาห์ในช่วง 3 เดือนแรกหรือหลังปรับขนาด ทุก 8–12 สัปดาห์ในเดือนที่ 3–6 และทุก 12 สัปดาห์หลังจากนั้น US FDA ได้ปรับฉลาก PPI ในปี 2011 ให้เตือนเรื่องการใช้ร่วมกับ MTX ขนาดสูง (อาจพิจารณาหยุด PPI ชั่วคราว) ขณะที่การทบทวนอย่างเป็นระบบเรื่อง NSAID กับ MTX ขนาดต่ำใน RA พบว่าใช้ร่วมกันได้ค่อนข้างปลอดภัยเมื่อติดตามเหมาะสม\n\nการประยุกต์กับผู้ป่วยจริง: ใช้ naproxen ขนาดต่ำสุดเท่าที่จำเป็นและพิจารณาลดหรือหยุดเมื่อโรคสงบด้วย DMARD ใช้ omeprazole ต่อเพื่อป้องกันแผลในกระเพาะ ให้ folic acid ร่วมกับ MTX เน้นผู้ป่วยว่า 'MTX กินสัปดาห์ละครั้ง ไม่กิน NSAID เกินขนาด และแจ้งทุกครั้งเมื่อได้ยาใหม่ เช่น ยาปฏิชีวนะ' หลีกเลี่ยงภาวะขาดน้ำ\n\nการติดตามและสัญญาณอันตราย: หาก SCr เพิ่มขึ้น ขาดน้ำจากท้องเสียหรืออาเจียน หรืออายุมากขึ้นจน CrCl ลด ให้ประเมิน NSAID และขนาด MTX ใหม่ สังเกตแผลในปาก ไข้ จ้ำเลือด ไอแห้ง หอบ ซึ่งเป็นสัญญาณพิษ MTX\n\nจุดที่มักสับสนและกับดักข้อสอบ: (1) 'ห้าม NSAID ทุกขนาด' เป็นข้อความเกินจริงที่มาจากข้อมูลของ MTX ขนาดสูง (2) PPI ไม่ได้ทำให้เกิดพิษ MTX 'ในทุกขนาด' (3) ไม่มียาใดในโจทย์ที่เพิ่มการขับ MTX (4) ยาที่ต้องหลีกเลี่ยงจริงกับ MTX ขนาดต่ำ คือ trimethoprim/co-trimoxazole และ probenecid\n\nสรุปท่องสอบ: MTX ขนาดต่ำ + NSAID/PPI = ใช้ร่วมได้ ติดตาม SCr/CBC/LFT; MTX ขนาดสูง + NSAID/PPI = เลี่ยงหรือหยุด PPI ชั่วคราว; MTX + TMP-SMX หรือ probenecid = เลี่ยงทุกขนาด",
         "choices": [
           {
             "label": "A",
             "text": "ห้ามใช้ NSAID ทุกชนิดร่วมกับ methotrexate ไม่ว่าขนาดใด ต้องหยุด naproxen ทันที",
-            "explanation": "✗ ผิด — ใน RA ใช้ร่วมกันเป็นปกติภายใต้การติดตาม ข้อห้ามเด่นใน high-dose MTX"
+            "explanation": "✗ ผิด — เป็นข้อความเหมารวมเกินจริง NSAID ใช้ร่วมกับ MTX ขนาดต่ำใน RA ได้อย่างแพร่หลาย โดยติดตามการทำงานของไตและเลือด การหยุด NSAID ทันทีจะเหมาะเมื่อผู้ป่วยได้ MTX ขนาดสูงสำหรับมะเร็ง หรือเมื่อมี SCr เพิ่มขึ้น ขาดน้ำ หรือมีสัญญาณพิษ MTX เช่น cytopenia และ mucositis"
           },
           {
             "label": "B",
             "text": "ต้องหยุด omeprazole และเปลี่ยนเป็น H2-blocker เพราะ PPI ทำให้เกิดพิษ MTX ในทุกขนาด",
-            "explanation": "✗ ผิด — อันตรกิริยากับ PPI มีนัยสำคัญใน high-dose MTX เป็นหลัก"
+            "explanation": "✗ ผิด — PPI ยับยั้ง BCRP/H+/K+-ATPase ที่ท่อไตและชะลอการขับ MTX แต่ผลนี้มีความสำคัญทางคลินิกกับ MTX ขนาดสูงเป็นหลัก ไม่ใช่ 'ทุกขนาด' การหยุด PPI ชั่วคราวและใช้ H2-blocker แทนจะเหมาะในช่วงที่ผู้ป่วยมะเร็งได้ MTX ขนาดสูง ตามคำเตือนในฉลาก PPI ที่ US FDA ปรับปรุงในปี 2011"
           },
           {
             "label": "C",
             "text": "ใช้ร่วมกันได้โดยติดตาม SCr, CBC และ LFT เป็นระยะ อันตรกิริยาที่รุนแรงกับ NSAID/PPI ส่วนใหญ่เกิดกับ MTX ขนาดสูงในการรักษามะเร็ง",
-            "explanation": "✓ ถูก — สอดคล้องกับแนวทางการใช้ MTX ขนาดต่ำใน RA"
+            "explanation": "✓ ถูก — MTX ขนาดต่ำร่วมกับ NSAID และ PPI ในผู้ที่ไตปกติใช้ได้โดยติดตาม SCr, CBC และ LFT ตามรอบ ACR (ทุก 2–4 สัปดาห์ช่วงแรก แล้วห่างขึ้น) อันตรกิริยารุนแรงที่ทำให้ระดับ MTX ค้างส่วนใหญ่รายงานกับ MTX ขนาดสูงในการรักษามะเร็ง ควรใช้ NSAID ขนาดต่ำสุดและลดเมื่อโรคสงบ"
           },
           {
             "label": "D",
             "text": "ควรเพิ่มขนาด methotrexate เพราะ omeprazole เพิ่มการขับ MTX ทางไต",
-            "explanation": "✗ ผิด — PPI ลดการขับ MTX ไม่ใช่เพิ่ม"
+            "explanation": "✗ ผิด — omeprazole ไม่ได้เพิ่มการขับ MTX แต่ถ้ามีผลก็จะชะลอการขับ (ทิศตรงข้าม) และการปรับขนาด MTX ต้องดูจากการตอบสนองของโรค ไม่ใช่เพื่อชดเชยอันตรกิริยา การเพิ่มขนาด MTX จะเหมาะเมื่อโรคยังมี activity โดยปรับขึ้นทีละ 2.5–5 mg จนถึง 20–25 mg/สัปดาห์ตามการทน"
           }
         ],
-        "key_takeaway": "MTX + NSAID/PPI: ขนาดต่ำใช้ได้ (monitor) — ขนาดสูงหลีกเลี่ยง"
+        "key_takeaway": "MTX ขนาดต่ำ + NSAID/PPI = ใช้ได้ แต่เฝ้าดู; MTX ขนาดสูง (มะเร็ง) = เลี่ยง"
       }
     },
     {
@@ -363,7 +369,7 @@
       "choices": [
         {
           "label": "A",
-          "text": "หลีกเลี่ยง probenecid เพราะยับยั้งการขับ MTX ทาง tubular secretion เสี่ยงพิษ MTX แนะนำ allopurinol เริ่ม 100 mg/day แล้วค่อยปรับขนาด"
+          "text": "หลีกเลี่ยง probenecid เพราะยับยั้งการขับ MTX ทาง tubular secretion เสี่ยงพิษ MTX แนะนำ allopurinol (หลังตรวจ HLA-B*5801 เป็นลบ) เริ่ม 100 mg/day แล้วค่อยปรับขนาด"
         },
         {
           "label": "B",
@@ -380,84 +386,84 @@
       ],
       "correct_answer": "A",
       "difficulty": "medium",
-      "explanation": "Probenecid ยับยั้ง organic anion transporter (OAT1/3) ที่ท่อไต จึงลดการขับ MTX (เช่นเดียวกับที่ใช้เพิ่มระดับ penicillin) ทำให้ระดับ MTX สูงจนเป็นพิษ ควรเลือก XO inhibitor เช่น allopurinol แทน",
+      "explanation": "Probenecid ยับยั้ง organic anion transporter (OAT1/OAT3) ที่ท่อไต ซึ่งเป็นทางขับ MTX ทำให้ระดับ MTX สูงขึ้นจนเกิดพิษได้ จึงควรหลีกเลี่ยงและใช้ allopurinol (หลังตรวจ HLA-B*5801) เริ่มขนาดต่ำแล้วปรับตามเป้าหมาย urate",
       "detailed_explanation": {
-        "summary": "Probenecid ลด tubular secretion ของ MTX (และ penicillin) → หลีกเลี่ยงร่วมกับ MTX ใช้ allopurinol แทน",
-        "reason": "โจทย์ถามอะไร: การเลือกยาลดกรดยูริกในผู้ที่ใช้ methotrexate โดยรู้ทันอันตรกิริยาของ probenecid\n\nหลักการ/กลไกเชิงลึก: probenecid ยับยั้ง URAT1 ที่ proximal tubule ทำให้ urate ถูกดูดกลับน้อยลง แต่ในขณะเดียวกันยับยั้ง organic anion transporter (OAT1/OAT3) ซึ่งหลั่งกรดอ่อนหลายชนิดลงปัสสาวะ ได้แก่ penicillin, cephalosporin, MTX, NSAID ผลนี้ถูกใช้ประโยชน์โดยตั้งใจกับ penicillin G/amoxicillin (เช่น ในการรักษา neurosyphilis หรือ gonorrhea สูตรเก่า) เพื่อยืดระดับยา แต่กับ MTX จะเพิ่มระดับและ AUC อย่างมาก เสี่ยงกดไขกระดูกและ mucositis\n\nทำไมข้อ A ถูก: ACR 2020 แนะนำ allopurinol เป็นยาลดกรดยูริกตัวแรก เริ่ม ≤ 100 mg/day (ใน CKD ระยะ ≥3 เริ่มต่ำกว่า) และค่อยปรับทุก 2–5 สัปดาห์จนถึงเป้า urate ร่วมกับ colchicine ป้องกัน flare allopurinol ไม่มีอันตรกิริยาสำคัญกับ MTX\n\nการประยุกต์กับผู้ป่วยจริง: ก่อนเริ่ม allopurinol ในคนเชื้อสายเอเชีย (รวมคนไทย) ควรตรวจ HLA-B*5801 เพื่อลดความเสี่ยง SJS/TEN\n\nจุดที่มักสับสนและกับดักข้อสอบ: probenecid เพิ่มการขับ urate แต่ลดการขับ MTX/penicillin; การดื่มน้ำมากหรือทำปัสสาวะเป็นด่างช่วยป้องกันนิ่ว urate แต่ไม่แก้อันตรกิริยากับ MTX\n\nสรุปท่องสอบ: Probenecid ↑ ระดับ penicillin (ตั้งใจ) และ ↑ ระดับ MTX (อันตราย)",
+        "summary": "MTX + probenecid = เลี่ยง (ลดการหลั่ง MTX ที่ท่อไต) — ใช้ allopurinol เป็น ULT แรกตาม ACR 2020 แม้เป็น underexcretor",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วย psoriatic arthritis ใช้ MTX 20 mg/สัปดาห์ มีเกาต์เรื้อรังและเป็น urate underexcretor แพทย์จะเริ่ม probenecid โจทย์ต้องการให้ระบุอันตรกิริยาระหว่าง probenecid กับ MTX และเลือก ULT ที่ปลอดภัยกว่า\n\nหลักการ/กลไกเชิงลึก: probenecid ออกฤทธิ์ขับกรดยูริกโดยยับยั้ง URAT1 ที่ท่อไตส่วนต้น ทำให้ urate ถูกดูดกลับน้อยลง แต่ก็ยับยั้ง OAT1 และ OAT3 ที่ basolateral membrane ซึ่งเป็นทางที่ยากลุ่มกรดอ่อนจำนวนมากถูกหลั่งเข้าสู่ท่อไต MTX เป็นกรดอ่อนที่อาศัย OAT1/OAT3 ในการหลั่ง เมื่อถูกยับยั้ง ระดับและระยะเวลาที่ MTX อยู่ในเลือดจะเพิ่มขึ้น มีรายงานระดับ MTX เพิ่มหลายเท่าและเกิด pancytopenia กลไกเดียวกันนี้คือเหตุที่ probenecid เคยถูกใช้เพื่อ 'ยืด' ระดับ penicillin\n\nทำไมข้อ A ถูก: การหลีกเลี่ยง probenecid ตัดความเสี่ยงพิษ MTX ส่วน allopurinol ไม่รบกวนการขับ MTX และเป็น ULT แรกตาม ACR 2020 ไม่ว่าผู้ป่วยจะเป็น overproducer หรือ underexcretor ขนาดเริ่ม 100 mg/day เหมาะกับ CrCl 75 mL/min แล้วปรับเพิ่มครั้งละ 100 mg ทุก 2–5 สัปดาห์จน urate <6 mg/dL และในคนไทยควรตรวจ HLA-B*5801 ก่อนเริ่ม\n\nหลักฐานและแนวทางเวชปฏิบัติ: ฉลาก MTX ระบุว่า probenecid ลดการขับ MTX และควรหลีกเลี่ยงหรือติดตามใกล้ชิด ACR Gout Guideline 2020 แนะนำ allopurinol เป็นยาแรก (เริ่ม ≤100 mg/day) ร่วมกับ prophylaxis (colchicine, NSAID หรือ prednisolone) 3–6 เดือน และไม่แนะนำให้วัด urine urate เพื่อเลือกยา uricosuric ยังมีข้อจำกัด ได้แก่ ประวัตินิ่ว และประสิทธิภาพลดลงเมื่อ CrCl <50 mL/min\n\nการประยุกต์กับผู้ป่วยจริง: เสนอแพทย์ให้ตรวจ HLA-B*5801 ก่อน หากเป็นลบเริ่ม allopurinol 100 mg/day ร่วมกับ colchicine 0.6 mg วันละ 1–2 ครั้งเพื่อป้องกันการกำเริบ (ไม่ควรใช้ NSAID ระยะยาวซ้อนกับ MTX ถ้าเลี่ยงได้) แนะนำดื่มน้ำมาก หลีกเลี่ยงแอลกอฮอล์ซึ่งเพิ่มทั้ง urate และพิษตับจาก MTX\n\nการติดตามและสัญญาณอันตราย: ตรวจ urate ทุก 2–5 สัปดาห์ระหว่างปรับขนาด ติดตาม CBC, LFT, SCr ตามรอบของ MTX สังเกตผื่น ไข้ แผลในปาก (allopurinol hypersensitivity หรือพิษ MTX) และแนะนำให้หยุดยาและพบแพทย์ทันทีเมื่อมีผื่นร่วมกับไข้\n\nจุดที่มักสับสนและกับดักข้อสอบ: (1) 'underexcretor ต้องใช้ uricosuric' เป็นแนวคิดเก่า ACR 2020 ไม่แนะนำให้ใช้ urine urate กำหนดยาแล้ว (2) probenecid ไม่ได้เพิ่มการขับ MTX แต่ลด (3) การดื่มน้ำและทำปัสสาวะเป็นด่างช่วยลดนิ่วจากยาขับกรดยูริก ไม่ได้แก้อันตรกิริยาที่ transporter (4) ยาอื่นที่ลดการขับ MTX ได้แก่ TMP-SMX, penicillin ขนาดสูง และ NSAID ขนาดสูง\n\nสรุปท่องสอบ: probenecid ยับยั้ง OAT1/3 → MTX ค้าง → เลี่ยง; allopurinol (หลังตรวจ HLA-B*5801) เริ่มต่ำ ปรับจน urate <6 พร้อม prophylaxis",
         "choices": [
           {
             "label": "A",
-            "text": "หลีกเลี่ยง probenecid เพราะยับยั้งการขับ MTX ทาง tubular secretion เสี่ยงพิษ MTX แนะนำ allopurinol เริ่ม 100 mg/day แล้วค่อยปรับขนาด",
-            "explanation": "✓ ถูก — probenecid ยับยั้ง OAT ทำให้ MTX สะสม; allopurinol เป็นทางเลือกแรกตาม ACR 2020"
+            "text": "หลีกเลี่ยง probenecid เพราะยับยั้งการขับ MTX ทาง tubular secretion เสี่ยงพิษ MTX แนะนำ allopurinol (หลังตรวจ HLA-B*5801 เป็นลบ) เริ่ม 100 mg/day แล้วค่อยปรับขนาด",
+            "explanation": "✓ ถูก — probenecid ยับยั้ง OAT1/OAT3 ซึ่งเป็นทางหลั่ง MTX ที่ท่อไต ทำให้ระดับ MTX สูงจนเกิดพิษได้ จึงควรหลีกเลี่ยง allopurinol ไม่รบกวนการขับ MTX และเป็น ULT แรกตาม ACR 2020 เริ่ม 100 mg/day (CrCl 75 mL/min) แล้วปรับเพิ่มทุก 2–5 สัปดาห์จน urate <6 mg/dL โดยตรวจ HLA-B*5801 ก่อนเริ่มในผู้ป่วยไทย"
           },
           {
             "label": "B",
             "text": "ใช้ probenecid ได้ เพราะ probenecid เพิ่มการขับทั้งกรดยูริกและ methotrexate",
-            "explanation": "✗ ผิด — probenecid ลดการขับ MTX (เพิ่มเฉพาะการขับ urate)"
+            "explanation": "✗ ผิด — probenecid เพิ่มการขับกรดยูริกจริงจากการยับยั้ง URAT1 แต่ 'ลด' การขับ MTX เพราะยับยั้ง OAT1/OAT3 ที่ใช้หลั่ง MTX เข้าสู่ท่อไต ข้อความนี้จึงผิดครึ่งหนึ่งที่อันตราย probenecid จะเลือกใช้ได้ในผู้ที่ไม่ได้ใช้ MTX ไม่มีประวัตินิ่ว CrCl ≥50 mL/min และทนหรือใช้ XO inhibitor ไม่ได้"
           },
           {
             "label": "C",
             "text": "ใช้ probenecid ได้ แต่ต้องเพิ่มขนาด methotrexate เป็น 25 mg/สัปดาห์",
-            "explanation": "✗ ผิด — ระดับ MTX จะสูงขึ้นอยู่แล้ว การเพิ่มขนาดยิ่งอันตราย"
+            "explanation": "✗ ผิด — การเพิ่ม MTX ขณะที่ probenecid ลดการขับ MTX จะยิ่งเพิ่มความเสี่ยงพิษ ขนาด MTX ต้องปรับตามการตอบสนองของโรคและความทน ไม่ใช่ตามยาลดกรดยูริก การปรับ MTX เป็น 25 mg/สัปดาห์จะเหมาะเมื่อ psoriatic arthritis ยังมี activity และผู้ป่วยทนยาดี (อาจเปลี่ยนเป็นรูปฉีดใต้ผิวหนัง)"
           },
           {
             "label": "D",
             "text": "ใช้ probenecid ได้ หากให้ผู้ป่วยดื่มน้ำมากกว่า 2 ลิตรต่อวันและทำให้ปัสสาวะเป็นด่าง",
-            "explanation": "✗ ผิด — มาตรการนี้ป้องกันนิ่ว urate แต่ไม่ป้องกันการสะสมของ MTX จากการยับยั้ง OAT"
+            "explanation": "✗ ผิด — การดื่มน้ำมากและทำปัสสาวะเป็นด่างใช้ป้องกันนิ่วกรดยูริกระหว่างใช้ยาขับกรดยูริก (และใช้ช่วยขับ MTX ขนาดสูงในมะเร็ง) แต่ไม่ได้แก้การยับยั้ง OAT โดย probenecid มาตรการนี้จะเหมาะกับผู้ที่ใช้ probenecid หรือ benzbromarone โดยไม่มียาที่ถูกหลั่งผ่าน OAT ร่วม"
           }
         ],
-        "key_takeaway": "Probenecid ยับยั้ง OAT → penicillin และ MTX ระดับสูงขึ้น; ผู้ใช้ MTX เลือก allopurinol"
+        "key_takeaway": "Probenecid ปิดประตู OAT → MTX ค้าง → เลือก allopurinol แทน"
       }
     },
     {
-      "scenario": "ผู้ป่วยหญิงอายุ 69 ปี เป็น AF ใช้ warfarin 3 mg/day (INR 2.6) มีอาการปวดเข่าทั้งสองข้างจาก knee OA ระดับปานกลาง ต้องการยาบรรเทาปวดเพิ่ม ข้อใดเป็นตัวเลือกที่ปลอดภัยที่สุดเมื่อพิจารณาอันตรกิริยากับ warfarin",
+      "scenario": "ผู้ป่วยชายอายุ 76 ปี เป็น polymyalgia rheumatica ใช้ prednisolone 10 mg/day มา 6 เดือน การทำงานของไตปกติ ได้รับการวินิจฉัยเป็นปอดอักเสบติดเชื้อจากชุมชนชนิดไม่รุนแรง รักษาแบบผู้ป่วยนอก ไม่มีประวัติแพ้ยา แพทย์สั่ง levofloxacin 750 mg วันละครั้ง นาน 5 วัน ข้อใดเป็นประเด็นด้านความปลอดภัยที่สำคัญที่สุดที่เภสัชกรควรพิจารณา",
       "choices": [
         {
           "label": "A",
-          "text": "Naproxen 250 mg วันละ 2 ครั้ง ร่วมกับ omeprazole 20 mg"
+          "text": "Levofloxacin เหนี่ยวนำ CYP3A4 ทำให้ระดับ prednisolone ลดลง ต้องเพิ่มขนาด prednisolone เป็น 2 เท่าระหว่างได้ยาปฏิชีวนะ"
         },
         {
           "label": "B",
-          "text": "Celecoxib 200 mg วันละครั้ง"
+          "text": "Prednisolone จับกับ levofloxacin ในทางเดินอาหารและลดการดูดซึม จึงต้องรับประทานห่างกันอย่างน้อย 4 ชั่วโมง"
         },
         {
           "label": "C",
-          "text": "Diclofenac gel 1% ทาบริเวณเข่า วันละ 3–4 ครั้ง"
+          "text": "ผู้สูงอายุที่ใช้ corticosteroid ร่วมมีความเสี่ยงเอ็นร้อยหวายอักเสบและฉีกขาดจาก fluoroquinolone สูงขึ้น ควรพิจารณายาปฏิชีวนะกลุ่มอื่น หรือสอนให้หยุดยาทันทีเมื่อปวดเอ็น"
         },
         {
           "label": "D",
-          "text": "Ibuprofen 400 mg เมื่อปวด ไม่เกินวันละ 3 ครั้ง"
+          "text": "ไม่มีอันตรกิริยาที่มีนัยสำคัญ ใช้ร่วมกันได้โดยไม่ต้องให้คำแนะนำพิเศษ เพราะใช้ levofloxacin เพียง 5 วัน"
         }
       ],
       "correct_answer": "C",
       "difficulty": "easy",
-      "explanation": "Topical NSAID มีระดับยาในเลือดต่ำมาก (ประมาณ 5–10% ของยารับประทาน) จึงมีผลต่อเกล็ดเลือด กระเพาะ และ INR น้อยที่สุด และ ACR 2019 แนะนำอย่างหนักแน่นสำหรับ knee OA",
+      "explanation": "Fluoroquinolone เพิ่มความเสี่ยงเอ็นอักเสบและเอ็นฉีกขาด และความเสี่ยงยิ่งสูงในผู้สูงอายุที่ใช้ corticosteroid ร่วม (boxed warning) จึงควรพิจารณายาปฏิชีวนะกลุ่มอื่นหากทำได้ และสอนผู้ป่วยให้หยุดยาและพักขาทันทีเมื่อปวดหรือบวมบริเวณเอ็น",
       "detailed_explanation": {
-        "summary": "ผู้ใช้ warfarin ที่ปวดเข่าจาก OA ควรเลือก topical NSAID แทน NSAID รับประทาน",
-        "reason": "โจทย์ถามอะไร: การเลือกยาแก้ปวด OA ที่มีอันตรกิริยากับ warfarin น้อยที่สุด\n\nหลักการ/กลไกเชิงลึก: NSAID รับประทานเพิ่มความเสี่ยงเลือดออกร่วมกับ warfarin ผ่าน 3 กลไก (1) ยับยั้ง COX-1 ในเกล็ดเลือด (pharmacodynamic) (2) ทำลายเยื่อบุกระเพาะ (3) บางตัวแย่งจับ albumin หรือยับยั้ง CYP2C9 ทำให้ INR สูง การศึกษาพบความเสี่ยงเลือดออกรุนแรงเพิ่มประมาณ 2–4 เท่า แม้ celecoxib จะไม่ยับยั้งเกล็ดเลือด แต่เป็น CYP2C9 substrate/inhibitor และมีรายงาน INR สูงขึ้นและเลือดออกในทางเดินอาหารได้\n\nทำไมข้อ C ถูก: diclofenac gel 1% มีความเข้มข้นในพลาสมาต่ำมาก ผลต่อเกล็ดเลือดและ INR น้อยมาก ACR/Arthritis Foundation 2019 และ OARSI แนะนำ topical NSAID เป็นตัวเลือกแรก ๆ สำหรับ knee OA โดยเฉพาะผู้สูงอายุหรือผู้มีโรคร่วม\n\nการประยุกต์กับผู้ป่วยจริง: แนะนำทา 2–4 g ต่อเข่า วันละ 3–4 ครั้ง ไม่ทาบนแผล ล้างมือหลังทา ร่วมกับการออกกำลังกายและลดน้ำหนัก แจ้งผู้ป่วยให้หลีกเลี่ยงยาแก้ปวดกลุ่ม NSAID ที่ซื้อเองและสังเกตอาการเลือดออก\n\nจุดที่มักสับสนและกับดักข้อสอบ: การให้ PPI ร่วมช่วยลดเลือดออกจากกระเพาะแต่ไม่แก้ผลต่อเกล็ดเลือด; การใช้ NSAID แบบ prn ก็ยังเพิ่มความเสี่ยง\n\nสรุปท่องสอบ: Warfarin + OA pain → topical NSAID (หรือ paracetamol ขนาดเหมาะสมพร้อมติดตาม INR) เลี่ยง oral NSAID",
+        "summary": "Fluoroquinolone + corticosteroid ในผู้สูงอายุ = เสี่ยงเอ็นร้อยหวายฉีกขาดสูงสุด เลือก β-lactam ± macrolide/doxycycline ถ้าเหมาะสม หรือใช้ต่อพร้อมสอนสัญญาณเตือน",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วยอายุ 76 ปี ใช้ prednisolone 10 mg/day ต่อเนื่องจาก PMR ได้รับ levofloxacin สำหรับปอดอักเสบ โจทย์ต้องการให้รู้จักอันตรกิริยาแบบ pharmacodynamic ที่ทำให้ความเสี่ยงเอ็นอักเสบและเอ็นฉีกขาดจาก fluoroquinolone สูงขึ้นมาก\n\nหลักการ/กลไกเชิงลึก: fluoroquinolone มีพิษต่อ tenocyte โดยจับแมกนีเซียมและไอออนบวกในเนื้อเยื่อ กระตุ้น matrix metalloproteinase ที่ย่อย collagen ลดการสร้าง collagen type I และเหนี่ยวนำ oxidative stress จนเซลล์ตาย เอ็นร้อยหวายมีเลือดมาเลี้ยงน้อยและรับแรงสูงจึงเสียหายง่าย corticosteroid ยับยั้งการสร้าง collagen และการซ่อมแซมเนื้อเยื่อ ผู้สูงอายุมีเอ็นเสื่อมตามวัยอยู่แล้ว ทั้งสามปัจจัยจึงเสริมกัน การศึกษาแบบ case-control พบว่าผู้ที่อายุ ≥60 ปีและใช้ fluoroquinolone ร่วมกับ corticosteroid มีความเสี่ยงเอ็นร้อยหวายฉีกขาดสูงขึ้นหลายเท่าเมื่อเทียบกับผู้ที่ใช้ fluoroquinolone อย่างเดียว อาการอาจเริ่มภายในไม่กี่ชั่วโมงถึงหลายเดือนหลังเริ่มยา เกิดทั้งสองข้าง และเกิดได้แม้หยุดยาแล้ว\n\nทำไมข้อ C ถูก: US FDA ใส่ boxed warning ว่า fluoroquinolone เพิ่มความเสี่ยง tendinitis และ tendon rupture โดยความเสี่ยงสูงขึ้นในผู้อายุ >60 ปี ผู้ที่ใช้ corticosteroid และผู้ที่ปลูกถ่ายไต หัวใจ หรือปอด ผู้ป่วยมีสองปัจจัยพร้อมกัน เภสัชกรจึงควรปรึกษาแพทย์เรื่องยาทางเลือก และให้คำแนะนำสัญญาณเตือนถ้ายังจำเป็นต้องใช้\n\nหลักฐานและแนวทางเวชปฏิบัติ: FDA (2008, 2016) และ EMA (2018) จำกัดการใช้ fluoroquinolone เมื่อมีทางเลือกอื่น ATS/IDSA 2019 สำหรับ CAP ผู้ป่วยนอกที่มีโรคร่วมหรือภูมิคุ้มกันบกพร่อง ให้ทางเลือกเป็น amoxicillin/clavulanate หรือ cephalosporin ร่วมกับ macrolide หรือ doxycycline หรือ respiratory fluoroquinolone เดี่ยว จึงมีทางเลือกที่หลีกเลี่ยง fluoroquinolone ได้\n\nการประยุกต์กับผู้ป่วยจริง: เสนอแพทย์เปลี่ยนเป็น amoxicillin/clavulanate ร่วมกับ azithromycin หรือ doxycycline หากไม่มีข้อห้าม ถ้าแพทย์ยืนยัน levofloxacin ให้สอนว่า 'ถ้าปวด บวม หรือได้ยินเสียงดังที่ส้นเท้า ไหล่ หรือข้อมือ ให้หยุดยา งดเดินหรือออกกำลัง และติดต่อแพทย์ทันที' และย้ำว่าห้ามหยุด prednisolone เอง\n\nการติดตามและสัญญาณอันตราย: ปวดหรือกดเจ็บที่เอ็นร้อยหวาย เดินลงน้ำหนักไม่ได้ ชาหรือแสบร้อนปลายมือปลายเท้า (peripheral neuropathy) สับสน (พบในผู้สูงอายุ) ใจสั่น (QT prolongation) และระดับน้ำตาลแกว่ง ซึ่งเป็นผลข้างเคียงสำคัญอื่นของ fluoroquinolone\n\nจุดที่มักสับสนและกับดักข้อสอบ: (1) อันตรกิริยานี้เป็น pharmacodynamic ไม่ใช่การเปลี่ยนระดับยา (2) fluoroquinolone ไม่ได้เหนี่ยวนำ CYP3A4 ตัวที่ต้องเพิ่ม prednisolone คือ rifampicin (3) การรับประทานห่างกันใช้กับ fluoroquinolone + ไอออนบวก เช่น calcium, iron, antacid ไม่ใช่กับ steroid (4) ระยะใช้ยาสั้นไม่ได้ทำให้ปลอดภัย\n\nสรุปท่องสอบ: fluoroquinolone + อายุ >60 + steroid (± ปลูกถ่ายอวัยวะ) = เสี่ยงเอ็นร้อยหวายฉีกขาดสูง → เลือกยาอื่นถ้าได้ ถ้าจำเป็นให้สอนหยุดยาและพักขาเมื่อปวดเอ็น",
         "choices": [
           {
             "label": "A",
-            "text": "Naproxen 250 mg วันละ 2 ครั้ง ร่วมกับ omeprazole 20 mg",
-            "explanation": "✗ ผิด — PPI ลด GI bleed ได้บางส่วน แต่ยังยับยั้งเกล็ดเลือดและเพิ่มความเสี่ยงเลือดออก"
+            "text": "Levofloxacin เหนี่ยวนำ CYP3A4 ทำให้ระดับ prednisolone ลดลง ต้องเพิ่มขนาด prednisolone เป็น 2 เท่าระหว่างได้ยาปฏิชีวนะ",
+            "explanation": "✗ ผิด — levofloxacin ไม่ได้เหนี่ยวนำ CYP3A4 และไม่ลดระดับ prednisolone การเพิ่ม prednisolone 2 เท่าโดยไม่จำเป็นยังเพิ่มผลข้างเคียงของ steroid และความเสี่ยงต่อเอ็น การเพิ่มขนาด corticosteroid ประมาณ 2 เท่าจะเหมาะเมื่อใช้ร่วมกับ strong CYP3A4 inducer เช่น rifampicin ในการรักษาวัณโรค"
           },
           {
             "label": "B",
-            "text": "Celecoxib 200 mg วันละครั้ง",
-            "explanation": "✗ ผิด — แม้ไม่ยับยั้งเกล็ดเลือด แต่มีรายงาน INR สูงขึ้นและ GI bleed ร่วมกับ warfarin"
+            "text": "Prednisolone จับกับ levofloxacin ในทางเดินอาหารและลดการดูดซึม จึงต้องรับประทานห่างกันอย่างน้อย 4 ชั่วโมง",
+            "explanation": "✗ ผิด — prednisolone ไม่จับกับ fluoroquinolone ในทางเดินอาหาร การดูดซึม levofloxacin จะลดลงเมื่อรับประทานพร้อมไอออนบวกหลายประจุ เช่น calcium, magnesium/aluminium antacid, iron หรือ zinc ซึ่งในกรณีนั้นควรให้ levofloxacin ก่อนอย่างน้อย 2 ชั่วโมงหรือหลังประมาณ 2 ชั่วโมง"
           },
           {
             "label": "C",
-            "text": "Diclofenac gel 1% ทาบริเวณเข่า วันละ 3–4 ครั้ง",
-            "explanation": "✓ ถูก — systemic exposure ต่ำ อันตรกิริยากับ warfarin น้อยที่สุด และแนะนำใน knee OA"
+            "text": "ผู้สูงอายุที่ใช้ corticosteroid ร่วมมีความเสี่ยงเอ็นร้อยหวายอักเสบและฉีกขาดจาก fluoroquinolone สูงขึ้น ควรพิจารณายาปฏิชีวนะกลุ่มอื่น หรือสอนให้หยุดยาทันทีเมื่อปวดเอ็น",
+            "explanation": "✓ ถูก — FDA boxed warning ระบุว่าความเสี่ยงเอ็นอักเสบและเอ็นฉีกขาดจาก fluoroquinolone สูงขึ้นในผู้อายุ >60 ปีและผู้ใช้ corticosteroid ผู้ป่วยมีทั้งสองปัจจัย จึงควรเสนอยาทางเลือก เช่น amoxicillin/clavulanate ร่วมกับ macrolide หรือ doxycycline และถ้าต้องใช้ต่อให้สอนหยุดยาและพักขาทันทีเมื่อปวดหรือบวมบริเวณเอ็น"
           },
           {
             "label": "D",
-            "text": "Ibuprofen 400 mg เมื่อปวด ไม่เกินวันละ 3 ครั้ง",
-            "explanation": "✗ ผิด — oral NSAID แม้ใช้ prn ก็ยังเพิ่มความเสี่ยงเลือดออก"
+            "text": "ไม่มีอันตรกิริยาที่มีนัยสำคัญ ใช้ร่วมกันได้โดยไม่ต้องให้คำแนะนำพิเศษ เพราะใช้ levofloxacin เพียง 5 วัน",
+            "explanation": "✗ ผิด — แม้ไม่มีอันตรกิริยาด้านระดับยา แต่มีอันตรกิริยาแบบ pharmacodynamic ที่สำคัญ และเอ็นฉีกขาดเกิดได้ภายในไม่กี่วันแรกหรือหลังหยุดยา การไม่ให้คำแนะนำเลยจึงไม่เหมาะ ข้อความนี้จะใกล้เคียงความจริงในผู้ป่วยอายุน้อยที่ไม่ได้ใช้ steroid แต่ยังควรสอนสัญญาณเตือนของ fluoroquinolone ทุกครั้ง"
           }
         ],
-        "key_takeaway": "Warfarin + knee OA → topical NSAID ดีกว่า oral NSAID ทุกตัว"
+        "key_takeaway": "สูงวัย + steroid + quinolone = ระวังเอ็นร้อยหวายขาด"
       }
     },
     {
@@ -482,33 +488,33 @@
       ],
       "correct_answer": "D",
       "difficulty": "medium",
-      "explanation": "SSRI ลด serotonin ในเกล็ดเลือดทำให้เกล็ดเลือดเกาะกลุ่มลดลง เมื่อรวมกับ NSAID ความเสี่ยงเลือดออกในทางเดินอาหารส่วนบนเพิ่มขึ้นหลายเท่า โดยเฉพาะผู้สูงอายุ จึงควรให้ PPI ป้องกันและใช้ NSAID ระยะสั้นที่สุด",
+      "explanation": "SSRI ลด serotonin ในเกล็ดเลือดทำให้เกล็ดเลือดเกาะกลุ่มได้น้อยลง เมื่อใช้ร่วมกับ NSAID ซึ่งทำลายเยื่อบุกระเพาะ ความเสี่ยงเลือดออกในทางเดินอาหารส่วนบนจะเพิ่มแบบทวีคูณ โดยเฉพาะผู้สูงอายุ จึงควรใช้ NSAID ระยะสั้นขนาดต่ำร่วมกับ PPI และเฝ้าระวังเลือดออก",
       "detailed_explanation": {
-        "summary": "SSRI + NSAID ในผู้สูงอายุ → เสี่ยง UGIB สูง; ใช้ NSAID สั้นที่สุดร่วมกับ PPI",
-        "reason": "โจทย์ถามอะไร: การจัดการอันตรกิริยาเชิง pharmacodynamic ระหว่าง SSRI และ NSAID\n\nหลักการ/กลไกเชิงลึก: เกล็ดเลือดไม่สร้าง serotonin เองแต่ดูดเก็บผ่าน serotonin transporter (SERT) SSRI ยับยั้ง SERT ทำให้ serotonin ในเกล็ดเลือดลดลงมาก การเกาะกลุ่มของเกล็ดเลือดจึงลดลง เมื่อรวมกับ NSAID ที่ยับยั้ง COX-1 (ลด thromboxane A2 และ prostaglandin ปกป้องเยื่อบุกระเพาะ) ทำให้ความเสี่ยง upper GI bleeding เพิ่มขึ้นมาก การศึกษาเชิงสังเกตพบ OR ประมาณ 4–6 เทียบกับไม่ใช้ยาทั้งสอง (SSRI เดี่ยวประมาณ 1.5–2 เท่า)\n\nทำไมข้อ D ถูก: เมื่อมีข้อบ่งใช้ NSAID จริง ควรใช้ขนาดต่ำที่สุดในระยะสั้นที่สุด และให้ PPI เป็น gastroprotection ในผู้มีความเสี่ยง (อายุ > 65 ปี + ยาที่เพิ่มเลือดออก) ตามแนวทาง ACG และให้ผู้ป่วยสังเกตอาการถ่ายดำ อาเจียนเป็นเลือด อ่อนเพลีย\n\nการประยุกต์กับผู้ป่วยจริง: ทบทวนว่ามี anticoagulant/antiplatelet/steroid ร่วมหรือไม่ ซึ่งจะยิ่งเพิ่มความเสี่ยง พิจารณาทางเลือกที่ไม่ใช่ NSAID ก่อนเสมอ\n\nจุดที่มักสับสนและกับดักข้อสอบ: fluoxetine เป็น SSRI ที่ยับยั้ง SERT ไม่น้อยกว่า sertraline; aspirin ขนาดแก้ปวดก็เป็น NSAID ที่ทำลายกระเพาะและยับยั้งเกล็ดเลือดถาวร\n\nสรุปท่องสอบ: SSRI/SNRI + NSAID = เสี่ยง GI bleed → PPI",
+        "summary": "SSRI + NSAID ในผู้สูงอายุ = เสี่ยง UGIB สูง: ใช้ NSAID สั้นที่สุด ขนาดต่ำสุด + PPI หรือเลี่ยง NSAID ถ้าทำได้",
+        "reason": "โจทย์ถามอะไร: หญิงอายุ 72 ปี ใช้ sertraline และต้องการ naproxen 2 สัปดาห์สำหรับ OA ข้อมือที่ไม่ตอบสนองต่อ paracetamol และยาทา โจทย์ต้องการให้จับความเสี่ยงเลือดออกในทางเดินอาหารจากคู่ SSRI + NSAID และเลือกมาตรการป้องกันที่เหมาะสม\n\nหลักการ/กลไกเชิงลึก: เกล็ดเลือดสร้าง serotonin เองไม่ได้ ต้องเก็บจากพลาสมาผ่าน serotonin transporter (SERT) SSRI ยับยั้ง SERT จึงทำให้ serotonin ในเกล็ดเลือดลดลงมากภายในไม่กี่สัปดาห์ เมื่อเกล็ดเลือดถูกกระตุ้นจะหลั่ง serotonin ได้น้อยลง การเกาะกลุ่มจึงอ่อนลง SSRI ยังอาจเพิ่มการหลั่งกรดในกระเพาะ ส่วน NSAID ยับยั้ง COX-1 ในเยื่อบุกระเพาะ ลด prostaglandin ที่ปกป้องเยื่อบุ (เมือก bicarbonate และการไหลเวียนเลือด) และยับยั้ง thromboxane A2 ในเกล็ดเลือดด้วย ผลรวมคือทั้งเกิดแผลง่ายขึ้นและแผลเลือดออกหยุดยาก การศึกษา meta-analysis พบความเสี่ยงเลือดออกจากคู่นี้สูงกว่าการใช้ยาเดี่ยวหลายเท่า\n\nทำไมข้อ D ถูก: เมื่อจำเป็นต้องใช้ NSAID ระยะสั้นในผู้ที่ใช้ SSRI การใช้ขนาดต่ำสุดในเวลาสั้นที่สุดร่วมกับ PPI ลดความเสี่ยงได้มากที่สุดโดยไม่ต้องหยุดยารักษาโรคซึมเศร้า ผู้ป่วยอายุ >65 ปีร่วมกับ SSRI จัดเป็นความเสี่ยงต่อทางเดินอาหารที่สมควรได้ PPI\n\nหลักฐานและแนวทางเวชปฏิบัติ: ACG แนะนำ gastroprotection (PPI หรือ misoprostol) ในผู้ใช้ NSAID ที่มีปัจจัยเสี่ยง เช่น อายุ >65 ปี หรือใช้ยาที่เพิ่มเลือดออกร่วม American Geriatrics Society Beers Criteria แนะนำหลีกเลี่ยง NSAID ระยะยาวในผู้สูงอายุ หากต้องใช้ให้ร่วมกับ PPI ACR 2019 สำหรับ hand OA แนะนำ topical NSAID และ oral NSAID เมื่อจำเป็น\n\nการประยุกต์กับผู้ป่วยจริง: ให้ naproxen 250 mg วันละ 2 ครั้งพร้อมอาหาร ร่วมกับ omeprazole 20 mg วันละครั้งก่อนอาหารเช้า ไม่เกิน 2 สัปดาห์แล้วประเมินใหม่ บอกผู้ป่วยว่า 'ห้ามซื้อยาแก้ปวดกลุ่ม NSAID หรือ aspirin เพิ่มเอง และไม่หยุด sertraline เอง' ตรวจรายการยาอื่นที่เพิ่มเลือดออก เช่น aspirin, clopidogrel, warfarin, สมุนไพรอย่างแปะก๊วย\n\nการติดตามและสัญญาณอันตราย: ถ่ายดำ อาเจียนเป็นเลือดหรือสีกาแฟ เวียนศีรษะ หน้ามืด อ่อนเพลียผิดปกติ ให้หยุด naproxen และไปโรงพยาบาลทันที ผู้สูงอายุที่ใช้ SSRI ยังเสี่ยง hyponatremia ซึ่ง NSAID อาจทำให้เสียสมดุลน้ำได้เพิ่ม\n\nจุดที่มักสับสนและกับดักข้อสอบ: (1) fluoxetine ก็เป็น SSRI ที่ยับยั้ง SERT แรง ไม่ได้ลดความเสี่ยง (2) aspirin ขนาดแก้ปวดเป็น NSAID ที่ทำลายเยื่อบุและยับยั้งเกล็ดเลือดแบบถาวร ยิ่งเสี่ยงกว่า (3) mirtazapine หรือ bupropion มีผลต่อ SERT น้อย อาจเป็นทางเลือกระยะยาวหากต้องใช้ NSAID บ่อย แต่ต้องประเมินโดยแพทย์ (4) H2RA ขนาดมาตรฐานป้องกันแผลกระเพาะได้ไม่ดีเท่า PPI\n\nสรุปท่องสอบ: SSRI + NSAID = เลือดออกในทางเดินอาหารเพิ่มหลายเท่า → ขนาดต่ำสุด ระยะสั้นที่สุด + PPI ถ้าเลี่ยง NSAID ได้ให้ใช้ topical NSAID หรือ paracetamol",
         "choices": [
           {
             "label": "A",
             "text": "ไม่มีอันตรกิริยาที่สำคัญ ใช้ร่วมกันได้โดยไม่ต้องเพิ่มยาใด",
-            "explanation": "✗ ผิด — เป็นอันตรกิริยาเพิ่มเลือดออกในทางเดินอาหารที่มีนัยสำคัญ"
+            "explanation": "✗ ผิด — SSRI ร่วมกับ NSAID เพิ่มความเสี่ยงเลือดออกในทางเดินอาหารส่วนบนหลายเท่า ยิ่งในผู้สูงอายุ จึงเป็นอันตรกิริยาที่มีนัยสำคัญ ข้อความนี้จะใกล้เคียงความจริงหากเปลี่ยน NSAID เป็นยาที่ไม่กระทบเกล็ดเลือดและเยื่อบุ เช่น paracetamol หรือใช้ topical NSAID ซึ่งระดับยาในเลือดต่ำมาก"
           },
           {
             "label": "B",
             "text": "เปลี่ยน sertraline เป็น fluoxetine เพื่อลดความเสี่ยงเลือดออก",
-            "explanation": "✗ ผิด — fluoxetine เป็น SSRI กลไกเดียวกัน ไม่ลดความเสี่ยง"
+            "explanation": "✗ ผิด — fluoxetine เป็น SSRI ที่ยับยั้ง serotonin transporter แรงเช่นกัน ความเสี่ยงเลือดออกจึงไม่ลดลง และการเปลี่ยนยาต้านซึมเศร้าเพื่อใช้ NSAID 2 สัปดาห์ยังเสี่ยงอาการกำเริบหรือ discontinuation syndrome การเปลี่ยนยาต้านซึมเศร้าเป็นกลุ่มที่กระทบ SERT น้อย เช่น mirtazapine จะเหมาะกับผู้ที่ต้องใช้ NSAID หรือ anticoagulant ระยะยาวและจิตแพทย์เห็นชอบ"
           },
           {
             "label": "C",
             "text": "เปลี่ยน naproxen เป็น aspirin 325 mg วันละ 3 ครั้ง เพราะปลอดภัยต่อกระเพาะกว่า",
-            "explanation": "✗ ผิด — aspirin ขนาดแก้ปวดก็ทำลายกระเพาะและยับยั้งเกล็ดเลือดแบบถาวร"
+            "explanation": "✗ ผิด — aspirin 325 mg วันละ 3 ครั้งเป็น NSAID ที่ยับยั้ง COX-1 แบบไม่คืนกลับ ทำลายเยื่อบุกระเพาะและยับยั้งเกล็ดเลือดถาวร จึงเสี่ยงเลือดออกมากกว่า naproxen เมื่อใช้ร่วมกับ SSRI aspirin ขนาดต่ำ (75–100 mg/day) จะเหมาะเฉพาะข้อบ่งใช้ป้องกันโรคหัวใจและหลอดเลือด ไม่ใช่เพื่อแก้ปวดข้อ"
           },
           {
             "label": "D",
             "text": "ใช้ naproxen ระยะสั้นขนาดต่ำสุดที่ได้ผล ร่วมกับ PPI เช่น omeprazole 20 mg วันละครั้ง และเฝ้าระวังอาการเลือดออกในทางเดินอาหาร",
-            "explanation": "✓ ถูก — ลด exposure และให้ gastroprotection ในผู้มีความเสี่ยงสูง"
+            "explanation": "✓ ถูก — เมื่อจำเป็นต้องใช้ NSAID ในผู้สูงอายุที่ใช้ SSRI ให้ใช้ขนาดต่ำสุดในระยะสั้นที่สุด ร่วมกับ PPI เช่น omeprazole 20 mg วันละครั้ง และสอนสัญญาณเลือดออก (ถ่ายดำ อาเจียนเป็นเลือด หน้ามืด) ตามแนวทาง ACG และ Beers Criteria และทบทวนยาอื่นที่เพิ่มเลือดออกร่วมด้วย"
           }
         ],
-        "key_takeaway": "SSRI + NSAID (โดยเฉพาะผู้สูงอายุ) → PPI ป้องกัน + ใช้ NSAID สั้นที่สุด"
+        "key_takeaway": "SSRI + NSAID = เลือดออกทวีคูณ → ต้องมี PPI คุ้มกัน"
       }
     },
     {
@@ -533,84 +539,84 @@
       ],
       "correct_answer": "B",
       "difficulty": "medium",
-      "explanation": "NSAID ยับยั้ง prostaglandin ในไต ลด renal blood flow และ GFR ร่วมกับเพิ่มการดูดกลับโซเดียมและ lithium ที่ proximal tubule ทำให้ lithium clearance ลดลงและระดับยาสูงขึ้น (ในที่นี้เพิ่ม 87.5%)",
+      "explanation": "NSAID ลดการสร้าง prostaglandin ในไต ทำให้ renal blood flow และ GFR ลดลง ร่างกายจึงดูดกลับโซเดียมและ lithium ที่ท่อไตส่วนต้นมากขึ้น lithium ถูกขับน้อยลงและระดับสูงจนเกิดพิษ",
       "detailed_explanation": {
-        "summary": "NSAID ลด renal PG → ลด GFR และเพิ่มการดูดกลับ Li → ระดับ lithium สูงจนเป็นพิษ",
-        "reason": "โจทย์ถามอะไร: กลไกอันตรกิริยา NSAID–lithium ที่ทำให้เกิดพิษ lithium\n\nหลักการ/กลไกเชิงลึก: lithium ไม่จับโปรตีนและไม่ถูก metabolize ถูกขับทางไตเกือบทั้งหมด และถูกดูดกลับที่ proximal tubule คล้ายโซเดียม prostaglandin (PGE2, PGI2) ช่วยคง renal blood flow และการขับโซเดียม เมื่อ NSAID ยับยั้ง COX ทำให้ GFR ลดและโซเดียม/lithium ถูกดูดกลับมากขึ้น lithium clearance ลดประมาณ 20–40% ระดับยาจึงสูง\n\nคำนวณ: (1.5 − 0.8)/0.8 × 100 = 87.5% ระดับ 1.5 mEq/L เกินช่วงรักษา (0.6–1.2) และเข้ากับอาการพิษระดับเล็กน้อยถึงปานกลาง (มือสั่นหยาบ คลื่นไส้ ท้องเสีย)\n\nทำไมข้อ B ถูก: อธิบายกลไกทางไตได้ครบ lithium ไม่ผ่าน CYP ไม่จับ albumin และ NSAID ไม่เพิ่มการดูดซึม\n\nการประยุกต์กับผู้ป่วยจริง: หยุด ibuprofen งด lithium ชั่วคราว/ปรึกษาแพทย์ ให้สารน้ำ ติดตามระดับ lithium, SCr, electrolyte สำหรับเกาต์กำเริบเลือก colchicine ขนาดต่ำ หรือ prednisolone ระยะสั้น หากจำเป็นต้องใช้ NSAID ต้องวัดระดับ lithium ภายใน 4–5 วันและปรับขนาด ยาอื่นที่เพิ่มระดับ lithium คือ thiazide, ACEi/ARB\n\nจุดที่มักสับสนและกับดักข้อสอบ: aspirin และ sulindac มีผลต่อ lithium น้อยกว่า NSAID อื่น; ผู้ป่วยมักซื้อ NSAID เองจึงต้องให้คำแนะนำ\n\nสรุปท่องสอบ: Lithium + NSAID/thiazide/ACEi = Li ↑ จากการขับทางไตลดลง",
+        "summary": "Lithium + NSAID → ระดับ lithium เพิ่ม (มักราว 20–40% หรือมากกว่า) จากการลดการขับทางไต; เกาต์ในผู้ใช้ lithium เลือก colchicine หรือ corticosteroid",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วยใช้ lithium ระดับคงที่ 0.8 mEq/L ซื้อ ibuprofen กินเอง 7 วัน แล้วมีมือสั่น คลื่นไส้ ท้องเสีย ระดับ lithium 1.5 mEq/L โจทย์ถามกลไกอันตรกิริยา ต้องรู้ว่า lithium ไม่ผ่านตับ ไม่จับโปรตีน และขับทางไตทั้งหมด\n\nหลักการ/กลไกเชิงลึก: lithium เป็นไอออนบวกที่ไตจัดการคล้ายโซเดียม ถูกกรองที่ glomerulus อย่างอิสระ และประมาณ 70–80% ถูกดูดกลับที่ท่อไตส่วนต้นผ่านช่องทางเดียวกับโซเดียม (เช่น Na+/H+ exchanger) Prostaglandin E2 และ I2 ช่วยขยาย afferent arteriole และส่งเสริมการขับโซเดียม เมื่อ NSAID ยับยั้ง COX การไหลเวียนเลือดในไตและ GFR ลดลง ร่างกายจะดูดกลับโซเดียมที่ท่อไตส่วนต้นมากขึ้น lithium จึงถูกดูดกลับตามไปด้วย ผลคือ clearance ของ lithium ลดลงและระดับเพิ่มภายใน 3–7 วัน ผลแรงขึ้นในผู้สูงอายุ ผู้ที่ขาดน้ำ หรือมีโรคไต ยาอื่นที่ทำให้ไตเก็บโซเดียมและ lithium ได้แก่ thiazide, ACE inhibitor และ ARB\n\nทำไมข้อ B ถูก: อธิบายกลไกได้ครบทั้งการลด prostaglandin, การลด renal blood flow/GFR และการดูดกลับ lithium ที่เพิ่มขึ้น ซึ่งสอดคล้องกับข้อเท็จจริงทางเภสัชจลนศาสตร์ของ lithium ที่ขับทางไตเพียงทางเดียว\n\nหลักฐานและแนวทางเวชปฏิบัติ: ฉลาก lithium ระบุว่า NSAID รวม COX-2 inhibitor เพิ่มระดับ lithium ได้ แนะนำติดตามระดับ lithium อย่างใกล้ชิดเมื่อเริ่มหรือหยุด NSAID ช่วงรักษาโดยทั่วไป 0.6–1.0 mEq/L (เก็บเลือด 12 ชั่วโมงหลังมื้อล่าสุด) ระดับ >1.5 mEq/L ถือเป็นพิษระดับปานกลาง แนวทางเกาต์ ACR 2020 ให้ใช้ colchicine, NSAID หรือ corticosteroid ในการรักษา flare โดยเลือกตามโรคร่วมและยาที่ใช้อยู่\n\nการประยุกต์กับผู้ป่วยจริง: หยุด ibuprofen งด lithium ชั่วคราว ให้สารน้ำ ส่งพบแพทย์เพื่อตรวจระดับ lithium ซ้ำ SCr และ electrolyte สำหรับ flare เกาต์ เลือก colchicine (1.2 mg แล้วตามด้วย 0.6 mg ในอีก 1 ชั่วโมง) หรือ prednisolone ระยะสั้น หรือฉีด steroid เข้าข้อ ถ้าจำเป็นต้องใช้ NSAID ต้องลดขนาด lithium และตรวจระดับใน 4–5 วัน สอนผู้ป่วยว่า 'อย่าซื้อยาแก้ปวดกลุ่ม NSAID กินเอง ถ้าท้องเสีย อาเจียน หรือเหงื่อออกมาก ให้ดื่มน้ำและแจ้งแพทย์'\n\nการติดตามและสัญญาณอันตราย: พิษเล็กน้อยคือมือสั่น คลื่นไส้ ท้องเสีย พิษปานกลางถึงรุนแรงคือสั่นหยาบ เดินเซ พูดไม่ชัด สับสน ชัก และหัวใจเต้นผิดจังหวะ ควรติดตาม SCr, Na, TSH และ calcium ตามรอบของ lithium\n\nจุดที่มักสับสนและกับดักข้อสอบ: (1) lithium ไม่ถูกเปลี่ยนแปลงที่ตับ ตัวเลือกเรื่อง CYP จึงผิดทันที (2) lithium ไม่จับ albumin การแย่งจับโปรตีนจึงไม่เกี่ยว (3) lithium ดูดซึมเกือบสมบูรณ์อยู่แล้ว (4) theophylline, caffeine และ acetazolamide เพิ่มการขับ lithium (ทิศตรงข้าม) (5) aspirin ขนาดต่ำและ sulindac มีรายงานผลต่อ lithium น้อยกว่า NSAID อื่น แต่ก็ยังควรติดตาม\n\nสรุปท่องสอบ: NSAID ลด PG ในไต → GFR ลด → ดูดกลับ Na/Li เพิ่ม → lithium สูง; lithium + เกาต์ → colchicine หรือ steroid ดีกว่า NSAID",
         "choices": [
           {
             "label": "A",
             "text": "Ibuprofen ยับยั้งการเปลี่ยนแปลง lithium ที่ตับผ่าน CYP2C9",
-            "explanation": "✗ ผิด — lithium ไม่ถูก metabolize ที่ตับ"
+            "explanation": "✗ ผิด — lithium ไม่ถูกเปลี่ยนแปลงที่ตับเลย ขับออกทางไตในรูปเดิมทั้งหมด การยับยั้ง CYP2C9 จึงไม่เกี่ยวข้อง กลไกผ่าน CYP2C9 จะใช้ได้กับยาที่เป็น substrate ของเอนไซม์นี้ เช่น S-warfarin, phenytoin หรือ sulfonylurea เมื่อใช้ร่วมกับตัวยับยั้ง เช่น fluconazole หรือ amiodarone"
           },
           {
             "label": "B",
             "text": "Ibuprofen ลด prostaglandin ในไต ทำให้ renal blood flow/GFR ลดลงและ lithium ถูกดูดกลับมากขึ้น จึงลดการขับ lithium",
-            "explanation": "✓ ถูก — เป็นกลไกหลักที่ทำให้ lithium clearance ลด 20–40%"
+            "explanation": "✓ ถูก — NSAID ยับยั้ง prostaglandin ที่ขยายหลอดเลือดและช่วยขับโซเดียม ทำให้ renal blood flow และ GFR ลดลง ท่อไตส่วนต้นจึงดูดกลับโซเดียมพร้อม lithium มากขึ้น clearance ลด ระดับ lithium สูงขึ้นภายในไม่กี่วัน จัดการโดยหยุด NSAID งด lithium ชั่วคราว ตรวจระดับซ้ำ และใช้ colchicine หรือ steroid รักษาเกาต์"
           },
           {
             "label": "C",
             "text": "Ibuprofen แย่งจับ albumin ทำให้ free lithium เพิ่มขึ้น",
-            "explanation": "✗ ผิด — lithium แทบไม่จับโปรตีนในพลาสมา"
+            "explanation": "✗ ผิด — lithium แทบไม่จับกับโปรตีนในพลาสมา การแย่งจับ albumin จึงไม่มีผล การแย่งจับโปรตีนมีความหมายกับยาที่จับโปรตีนสูงมากและมีดัชนีการรักษาแคบ เช่น phenytoin หรือ warfarin และแม้ในกรณีนั้นผลทางคลินิกก็มักชั่วคราวเพราะยาอิสระจะถูกกำจัดเพิ่มตาม จนระดับยาอิสระกลับสู่ค่าเดิม"
           },
           {
             "label": "D",
             "text": "Ibuprofen เพิ่มการดูดซึม lithium จากทางเดินอาหาร",
-            "explanation": "✗ ผิด — lithium ดูดซึมเกือบสมบูรณ์อยู่แล้ว NSAID ไม่มีผลต่อการดูดซึม"
+            "explanation": "✗ ผิด — lithium ดูดซึมจากทางเดินอาหารเกือบสมบูรณ์ (ราว 95–100%) อยู่แล้ว NSAID จึงเพิ่มการดูดซึมไม่ได้ กลไกการเพิ่มการดูดซึมจะพบกับยาที่ bioavailability ต่ำและถูกจำกัดด้วย P-gp หรือ first-pass เช่น colchicine เมื่อใช้ร่วมกับ P-gp/CYP3A4 inhibitor เช่น clarithromycin หรือ cyclosporine"
           }
         ],
-        "key_takeaway": "Lithium ขับทางไตล้วน — NSAID/thiazide/ACEi ลดการขับ → พิษ lithium"
+        "key_takeaway": "Lithium เดินตามโซเดียม — NSAID/thiazide/ACEI ทำให้ไตเก็บ lithium"
       }
     },
     {
-      "scenario": "ผู้ป่วยชายอายุ 72 ปี มีภาวะหัวใจล้มเหลว ใช้ enalapril 10 mg วันละ 2 ครั้ง และ furosemide 40 mg/day เดิม SCr 1.0 mg/dL, K 4.6 mEq/L ปวดเข่าจาก OA จึงได้ diclofenac 75 mg วันละ 2 ครั้ง 5 วัน ต่อมาปัสสาวะออกน้อย SCr 2.1 mg/dL, K 5.8 mEq/L ข้อใดเป็นการจัดการที่เหมาะสมที่สุด",
+      "scenario": "ผู้ป่วยหญิงอายุ 38 ปี เป็น SLE (มีอาการข้ออักเสบและผื่น ไม่มีไตอักเสบ) ควบคุมได้ดีด้วย prednisolone 10 mg/day และ hydroxychloroquine 200 mg/day ต่อมาได้รับการวินิจฉัยวัณโรคปอด เริ่มยา isoniazid, rifampicin, pyrazinamide และ ethambutol 3 สัปดาห์ต่อมามีข้ออักเสบและผื่นกำเริบ ทั้งที่รับประทานยาสม่ำเสมอ ข้อใดเป็นการจัดการที่เหมาะสมที่สุด",
       "choices": [
         {
           "label": "A",
-          "text": "หยุด diclofenac พิจารณางด enalapril/furosemide ชั่วคราวตามสภาวะสารน้ำ ติดตาม SCr และ K และใช้ยาแก้ปวดที่ไม่ใช่ NSAID"
+          "text": "อาการกำเริบน่าจะเกิดจาก rifampicin เหนี่ยวนำ CYP3A4 เร่งการกำจัด prednisolone ควรเพิ่มขนาด prednisolone (โดยทั่วไปประมาณ 2 เท่า) ระหว่างใช้ rifampicin และลดกลับเมื่อหยุด rifampicin"
         },
         {
           "label": "B",
-          "text": "เปลี่ยน diclofenac เป็น celecoxib 200 mg/day เพราะไม่มีผลต่อไต"
+          "text": "หยุด rifampicin แล้วรักษาวัณโรคต่อด้วย isoniazid, pyrazinamide และ ethambutol โดยใช้ prednisolone ขนาดเดิม"
         },
         {
           "label": "C",
-          "text": "เพิ่ม spironolactone เพื่อเพิ่มการขับปัสสาวะ"
+          "text": "หยุด prednisolone ทันทีเพราะ corticosteroid ทำให้วัณโรคลุกลาม แล้วคุม SLE ด้วย hydroxychloroquine อย่างเดียว"
         },
         {
           "label": "D",
-          "text": "เพิ่มขนาด furosemide เป็น 80 mg/day และใช้ diclofenac ต่อ"
+          "text": "เพิ่ม hydroxychloroquine เป็น 600 mg/day เพื่อชดเชยฤทธิ์ของ prednisolone ที่ลดลง"
         }
       ],
       "correct_answer": "A",
       "difficulty": "easy",
-      "explanation": "NSAID ร่วมกับ ACEi และยาขับปัสสาวะ (triple whammy) ทำให้เกิด AKI และ hyperkalemia ต้องหยุด NSAID เป็นอันดับแรก และพิจารณางด ACEi/diuretic ชั่วคราวพร้อมติดตาม SCr/K",
+      "explanation": "Rifampicin เป็น strong CYP3A4 inducer ที่เร่งการกำจัด prednisolone ทำให้ระดับยาลดลงมากจนโรคกำเริบ จึงควรเพิ่มขนาด prednisolone ประมาณ 2 เท่าระหว่างใช้ rifampicin และลดกลับเมื่อหยุด rifampicin",
       "detailed_explanation": {
-        "summary": "Triple whammy (ACEi + diuretic + NSAID) → AKI + hyperK; หยุด NSAID, ประเมินงด ACEi/diuretic ชั่วคราว",
-        "reason": "โจทย์ถามอะไร: การรู้จักและจัดการ triple whammy AKI\n\nหลักการ/กลไกเชิงลึก: GFR ขึ้นกับความดันใน glomerulus ซึ่งควบคุมโดย afferent arteriole (ขยายด้วย prostaglandin) และ efferent arteriole (หดด้วย angiotensin II) ยาขับปัสสาวะลด volume, ACEi ทำให้ efferent ขยาย และ NSAID ทำให้ afferent หด เมื่อใช้ร่วมกันทั้งสามกลไก ความดันกรองล่มลง เกิด prerenal AKI นอกจากนี้ NSAID ลด renin/aldosterone (hyporeninemic hypoaldosteronism) ร่วมกับ ACEi ทำให้ K สูง\n\nคำนวณ: SCr เพิ่มจาก 1.0 เป็น 2.1 = 2.1 เท่า เข้าเกณฑ์ KDIGO AKI stage 2 (2.0–2.9 เท่า)\n\nทำไมข้อ A ถูก: หยุด diclofenac ซึ่งเป็นตัวกระตุ้น งด ACEi และปรับ/งดยาขับปัสสาวะชั่วคราวตามสภาวะน้ำ (sick-day rule) แก้ hyperkalemia ตามระดับ และติดตาม SCr/K ทุก 1–2 วัน เมื่อไตฟื้นจึงกลับมาใช้ ACEi\n\nการประยุกต์กับผู้ป่วยจริง: ผู้ป่วย HF/CKD ที่ปวด OA ควรใช้ topical NSAID, paracetamol หรือ intra-articular corticosteroid แทน oral NSAID\n\nจุดที่มักสับสนและกับดักข้อสอบ: COX-2 selective ก็ลด renal prostaglandin เช่นกัน; spironolactone ยิ่งเพิ่ม K; เพิ่ม furosemide ใน prerenal AKI ยิ่งแย่\n\nสรุปท่องสอบ: ACEi/ARB + diuretic + NSAID = triple whammy → หยุด NSAID",
+        "summary": "Rifampicin + corticosteroid: ฤทธิ์ steroid ลดลงราวครึ่งหนึ่ง → เพิ่มขนาด ~2 เท่าระหว่างรักษา TB แล้วลดกลับหลังหยุด rifampicin 2–4 สัปดาห์",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วย SLE ที่คุมโรคได้ด้วย prednisolone 10 mg/day เริ่มสูตรยาวัณโรคที่มี rifampicin แล้วโรคกำเริบภายใน 3 สัปดาห์ แม้กินยาครบ โจทย์ต้องการให้เชื่อมโยงกับอันตรกิริยาแบบเหนี่ยวนำเอนไซม์และเลือกวิธีแก้ที่ไม่กระทบการรักษาวัณโรค\n\nหลักการ/กลไกเชิงลึก: rifampicin จับและกระตุ้น pregnane X receptor (PXR) ในตับและลำไส้ ทำให้มีการสร้าง CYP3A4, CYP2C9, UGT และ P-glycoprotein เพิ่มขึ้น เป็น inducer ที่แรงที่สุดตัวหนึ่ง ผลเริ่มภายในไม่กี่วัน เต็มที่ราว 1–2 สัปดาห์ และหายไปใน 2–4 สัปดาห์หลังหยุดยาเพราะต้องรอเอนไซม์ส่วนเกินสลายไป prednisolone ถูกกำจัดผ่าน CYP3A4 (6β-hydroxylation) เป็นหลัก การศึกษาเภสัชจลนศาสตร์พบว่า rifampicin ทำให้ clearance ของ prednisolone เพิ่มขึ้นมากและ AUC ลดลงประมาณครึ่งหนึ่งหรือมากกว่า ผลคล้ายกันเกิดกับ methylprednisolone และ dexamethasone ระยะเวลาที่โรคกำเริบในผู้ป่วยรายนี้สอดคล้องกับช่วงที่การเหนี่ยวนำเต็มที่\n\nทำไมข้อ A ถูก: การเพิ่มขนาด corticosteroid ราว 2 เท่าระหว่างได้ rifampicin เป็นคำแนะนำที่ใช้กันทั่วไปเพื่อชดเชย clearance ที่เพิ่มขึ้น ทำให้คุมโรคได้โดยไม่ต้องแตะสูตรยาวัณโรค และต้องวางแผนลดกลับเมื่อหยุด rifampicin เพื่อป้องกันการได้ steroid เกิน\n\nหลักฐานและแนวทางเวชปฏิบัติ: ฉลาก rifampicin และแหล่งอ้างอิงอันตรกิริยา (เช่น BNF, Stockley) ระบุว่า rifampicin ลดฤทธิ์ corticosteroid และอาจต้องเพิ่มขนาดประมาณ 2 เท่า มีรายงาน adrenal crisis ในผู้ป่วย Addison และการปฏิเสธอวัยวะในผู้ปลูกถ่ายเมื่อไม่ได้ปรับขนาด แนวทางวัณโรคของประเทศไทยและ WHO ถือ rifampicin เป็นยาหลักของสูตร การตัดออกทำให้ต้องรักษานานขึ้นและเสี่ยงล้มเหลว\n\nการประยุกต์กับผู้ป่วยจริง: แจ้งแพทย์เพื่อปรับ prednisolone เป็นประมาณ 20 mg/day ประเมินอาการภายใน 1–2 สัปดาห์ ใช้ hydroxychloroquine ขนาดเดิม เมื่อจบช่วงที่ใช้ rifampicin ให้ลด prednisolone กลับทีละขั้นในช่วง 2–4 สัปดาห์ บอกผู้ป่วยว่า 'ยาวัณโรคทำให้ยาสเตียรอยด์หมดฤทธิ์เร็ว แพทย์จึงต้องเพิ่มขนาดชั่วคราว ห้ามหยุดยาวัณโรคหรือสเตียรอยด์เอง' และเตือนว่าปัสสาวะ น้ำตา เหงื่อจะเป็นสีส้มจาก rifampicin\n\nการติดตามและสัญญาณอันตราย: ประเมิน disease activity (ข้อ ผื่น CBC, complement, anti-dsDNA ตามแพทย์) ความดัน น้ำตาลในเลือด และอาการตับอักเสบจากยาวัณโรค (ตาเหลือง คลื่นไส้ เบื่ออาหาร) ทบทวนยาอื่นที่ rifampicin ลดระดับ เช่น ยาคุมกำเนิดฮอร์โมน warfarin หรือ tacrolimus\n\nจุดที่มักสับสนและกับดักข้อสอบ: (1) corticosteroid ไม่ใช่ข้อห้ามในวัณโรคที่ได้รับการรักษาแล้ว และการหยุด prednisolone ที่ใช้มา 6 เดือนทันทีเสี่ยง adrenal insufficiency (2) isoniazid ทำให้เกิด drug-induced lupus ได้ แต่มักใช้เวลาหลายเดือนและพบ anti-histone ซึ่งไม่เข้ากับเวลาที่โจทย์ให้ (3) HCQ ขนาดสูงกว่า 5 mg/kg/day เพิ่มพิษต่อจอตา (4) rifabutin เหนี่ยวนำน้อยกว่า อาจเป็นทางเลือกเฉพาะบางกรณีตามดุลยพินิจแพทย์\n\nสรุปท่องสอบ: rifampicin = strong CYP3A4 inducer → prednisolone ลดลงราวครึ่งหนึ่ง → เพิ่ม steroid ~2 เท่าระหว่างใช้ และลดกลับหลังหยุด rifampicin ห้ามตัด rifampicin ออกจากสูตร TB เพื่อแก้ปัญหานี้",
         "choices": [
           {
             "label": "A",
-            "text": "หยุด diclofenac พิจารณางด enalapril/furosemide ชั่วคราวตามสภาวะสารน้ำ ติดตาม SCr และ K และใช้ยาแก้ปวดที่ไม่ใช่ NSAID",
-            "explanation": "✓ ถูก — แก้ที่สาเหตุและลดปัจจัยที่ทำให้ GFR ตก"
+            "text": "อาการกำเริบน่าจะเกิดจาก rifampicin เหนี่ยวนำ CYP3A4 เร่งการกำจัด prednisolone ควรเพิ่มขนาด prednisolone (โดยทั่วไปประมาณ 2 เท่า) ระหว่างใช้ rifampicin และลดกลับเมื่อหยุด rifampicin",
+            "explanation": "✓ ถูก — rifampicin กระตุ้น PXR ทำให้สร้าง CYP3A4 เพิ่ม prednisolone ถูกกำจัดเร็วขึ้นและ AUC ลดลงราวครึ่งหนึ่ง ระยะเวลา 3 สัปดาห์ตรงกับช่วงที่การเหนี่ยวนำเต็มที่ จึงควรเพิ่ม prednisolone ประมาณ 2 เท่า (10 → 20 mg/day) ระหว่างใช้ rifampicin และลดกลับทีละขั้นภายใน 2–4 สัปดาห์หลังหยุด rifampicin"
           },
           {
             "label": "B",
-            "text": "เปลี่ยน diclofenac เป็น celecoxib 200 mg/day เพราะไม่มีผลต่อไต",
-            "explanation": "✗ ผิด — COX-2 inhibitor ก็ลด renal prostaglandin และทำให้เกิด AKI ได้"
+            "text": "หยุด rifampicin แล้วรักษาวัณโรคต่อด้วย isoniazid, pyrazinamide และ ethambutol โดยใช้ prednisolone ขนาดเดิม",
+            "explanation": "✗ ผิด — rifampicin เป็นยาหลักที่ทำให้รักษาวัณโรคหายในระยะสั้น การตัดออกเพื่อแก้อันตรกิริยาที่ปรับขนาด steroid แก้ได้ ทำให้ต้องรักษานานขึ้นและเสี่ยงล้มเหลวหรือดื้อยา การเปลี่ยนสูตรที่ไม่มี rifampicin จะพิจารณาเมื่อมีเหตุจำเป็นจริง เช่น เชื้อดื้อ rifampicin หรือมีอันตรกิริยากับยาที่ปรับขนาดไม่ได้"
           },
           {
             "label": "C",
-            "text": "เพิ่ม spironolactone เพื่อเพิ่มการขับปัสสาวะ",
-            "explanation": "✗ ผิด — K สูงอยู่แล้ว spironolactone ทำให้ hyperkalemia รุนแรงขึ้น"
+            "text": "หยุด prednisolone ทันทีเพราะ corticosteroid ทำให้วัณโรคลุกลาม แล้วคุม SLE ด้วย hydroxychloroquine อย่างเดียว",
+            "explanation": "✗ ผิด — ผู้ป่วยใช้ prednisolone มา 6 เดือน แกน HPA ถูกกด การหยุดทันทีเสี่ยง adrenal insufficiency และ SLE กำเริบหนัก ส่วน corticosteroid ไม่ได้เป็นข้อห้ามเมื่อวัณโรคได้รับการรักษาเต็มที่ การลดขนาด steroid ลงจะเหมาะเมื่อโรคสงบนานพอ และทำแบบค่อยเป็นค่อยไป"
           },
           {
             "label": "D",
-            "text": "เพิ่มขนาด furosemide เป็น 80 mg/day และใช้ diclofenac ต่อ",
-            "explanation": "✗ ผิด — ทำให้ volume depletion และ prerenal AKI แย่ลง"
+            "text": "เพิ่ม hydroxychloroquine เป็น 600 mg/day เพื่อชดเชยฤทธิ์ของ prednisolone ที่ลดลง",
+            "explanation": "✗ ผิด — hydroxychloroquine ขนาด 600 mg/day เกิน 5 mg/kg/day ของน้ำหนักจริงในผู้ใหญ่ส่วนใหญ่ เพิ่มพิษต่อจอตา และ HCQ ออกฤทธิ์ช้าหลายสัปดาห์จึงชดเชยการกำเริบเฉียบพลันไม่ได้ การปรับ HCQ จะเหมาะเมื่อขนาดเดิมต่ำกว่าที่ควรตามน้ำหนัก โดยไม่เกิน 5 mg/kg/day ของน้ำหนักตัวจริง"
           }
         ],
-        "key_takeaway": "Triple whammy: ACEi/ARB + diuretic + NSAID → AKI — หยุด NSAID ก่อน"
+        "key_takeaway": "Rifampicin กิน steroid ครึ่งหนึ่ง → เพิ่ม steroid ×2"
       }
     },
     {
@@ -635,33 +641,33 @@
       ],
       "correct_answer": "C",
       "difficulty": "easy",
-      "explanation": "มีรายงานว่าผู้ที่ใช้ allopurinol ร่วมกับ ampicillin/amoxicillin เกิดผื่นบ่อยขึ้นประมาณ 2–3 เท่า (ราว 14–22% เทียบ 6–8%) กลไกไม่ชัดเจน ผื่นมักเป็น maculopapular ที่ไม่รุนแรง แต่ต้องคัดกรองอาการ SCAR เสมอ",
+      "explanation": "การใช้ ampicillin/amoxicillin ร่วมกับ allopurinol เพิ่มอุบัติการณ์ผื่น maculopapular ที่ไม่รุนแรงเมื่อเทียบกับการใช้ amoxicillin เดี่ยว ผู้ป่วยไม่มีอาการเตือนของ SCAR และใช้ allopurinol มานาน 8 เดือนโดย HLA-B*5801 เป็นลบ",
       "detailed_explanation": {
-        "summary": "Allopurinol + amoxicillin/ampicillin → อุบัติการณ์ผื่น maculopapular เพิ่มขึ้น (กลไกไม่ชัดเจน)",
-        "reason": "โจทย์ถามอะไร: อันตรกิริยาที่รู้จักกันดีระหว่าง allopurinol กับ aminopenicillin และการแยกจาก SCAR\n\nหลักการ/กลไกเชิงลึก: การศึกษา Boston Collaborative Drug Surveillance Program พบผื่นในผู้ใช้ ampicillin + allopurinol ประมาณ 22% เทียบกับ ampicillin เดี่ยวประมาณ 7.5% (amoxicillin มีรายงานคล้ายกัน) กลไกยังไม่ทราบแน่ชัด อาจเกี่ยวกับภาวะ hyperuricemia เอง หรือการเปลี่ยนแปลงภูมิคุ้มกัน ไม่ใช่ IgE-mediated penicillin allergy ที่แท้จริงเสมอไป และไม่เกี่ยวกับ xanthine oxidase หรือ OAT\n\nทำไมข้อ C ถูก: ผู้ป่วยใช้ allopurinol มานาน 8 เดือนโดยไม่มีปัญหา (SCAR จาก allopurinol ส่วนใหญ่เกิดใน 3 เดือนแรก) ผื่นเกิดหลังเริ่ม amoxicillin เป็นแบบ maculopapular ไม่มีไข้ ไม่มี mucosal involvement ไม่มีตุ่มน้ำ และค่าตับไตปกติ เข้าได้กับผื่นจากอันตรกิริยานี้\n\nการประยุกต์กับผู้ป่วยจริง: หยุด amoxicillin เปลี่ยนยาปฏิชีวนะกลุ่มอื่น ให้ antihistamine บรรเทา ติดตามอาการเตือน SJS/TEN/DRESS (ไข้, แผลในปาก/ตา, ผิวลอก, ตับอักเสบ, eosinophilia) หากมีต้องหยุด allopurinol ทันที บันทึกประวัติแพ้ยาอย่างระมัดระวัง\n\nจุดที่มักสับสนและกับดักข้อสอบ: ผื่นทุกชนิดในผู้ใช้ allopurinol ไม่ใช่ SJS เสมอไป แต่ต้องประเมิน red flags\n\nสรุปท่องสอบ: Allopurinol + ampicillin/amoxicillin = ผื่นเพิ่มขึ้น ~3 เท่า",
+        "summary": "Allopurinol + amoxicillin/ampicillin → ผื่น maculopapular เพิ่มขึ้น (ราว 2–3 เท่า) ส่วนใหญ่ไม่รุนแรง ต้องแยกจาก SJS/TEN/DRESS ด้วยอาการเตือน",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วยใช้ allopurinol มา 8 เดือนโดยไม่มีปัญหาและ HLA-B*5801 เป็นลบ ได้ amoxicillin แล้วมีผื่น maculopapular คันในวันที่ 6 โดยไม่มีไข้ แผลในปาก ตุ่มน้ำ และค่าตับไตปกติ โจทย์ต้องการคำอธิบายที่ถูกต้องที่สุดของเหตุการณ์\n\nหลักการ/กลไกเชิงลึก: อันตรกิริยานี้ถูกรายงานโดย Boston Collaborative Drug Surveillance Program พบว่าผู้ที่ได้ ampicillin ร่วมกับ allopurinol มีผื่นราว 20% เทียบกับราว 7–8% ในผู้ที่ได้ ampicillin อย่างเดียว ผลคล้ายกันพบกับ amoxicillin กลไกยังไม่ชัด สมมติฐานได้แก่ ภาวะ hyperuricemia เองหรือโรคร่วมอาจทำให้ไวต่อการแพ้ หรือ oxypurinol กับ aminopenicillin เสริมกันในการกระตุ้น T cell ผื่นส่วนใหญ่เป็น maculopapular exanthem ที่ไม่รุนแรง ไม่ใช่ IgE-mediated และไม่ได้บ่งว่าผู้ป่วยจะแพ้ penicillin ตลอดไป ส่วน allopurinol-induced SCAR (SJS/TEN, DRESS) มักเกิดในช่วง 8 สัปดาห์ถึง 3 เดือนแรก สัมพันธ์กับ HLA-B*5801 ขนาดเริ่มสูง และไตเสื่อม\n\nทำไมข้อ C ถูก: เป็นข้อเท็จจริงทางระบาดวิทยาที่อธิบายผื่นในโจทย์ได้ดีที่สุด เวลาที่เกิด (วันที่ 6 ของ amoxicillin) รูปแบบผื่นที่ไม่มีอาการเตือน และการใช้ allopurinol ที่คงที่มานานเข้ากับอันตรกิริยานี้มากกว่า SCAR\n\nหลักฐานและแนวทางเวชปฏิบัติ: ฉลาก allopurinol ระบุว่าการใช้ร่วมกับ ampicillin/amoxicillin เพิ่มอุบัติการณ์ผื่น ส่วนแนวทาง ACR 2020 และข้อมูลในประเทศไทยเน้นการตรวจ HLA-B*5801 ก่อนเริ่ม allopurinol และให้หยุดยาทันทีเมื่อมีอาการเตือนของ SCAR\n\nการประยุกต์กับผู้ป่วยจริง: ประเมินอาการเตือนก่อนเสมอ (ไข้ เจ็บผิวหนัง ตุ่มน้ำ ผิวลอก แผลในปาก ตาแดง หน้าบวม ต่อมน้ำเหลืองโต eosinophil สูง ค่าตับไตผิดปกติ) ถ้าไม่มี ให้หยุด amoxicillin เปลี่ยนเป็นยาปฏิชีวนะกลุ่มอื่นถ้ายังจำเป็น (เช่น doxycycline) ให้ antihistamine และ topical steroid ใช้ allopurinol ต่อได้โดยนัดติดตาม บอกผู้ป่วยว่า 'ถ้าผื่นลาม พอง มีไข้ หรือแผลในปาก ให้หยุดยาทุกตัวและมาโรงพยาบาลทันที' บันทึกอาการในประวัติแพ้ยาให้ชัดเจนว่าเป็นผื่นจากอันตรกิริยา\n\nการติดตามและสัญญาณอันตราย: ผื่นควรดีขึ้นใน 3–7 วันหลังหยุด amoxicillin ถ้าผื่นลุกลาม มีไข้ หรือค่าตับไตเปลี่ยน ต้องคิดถึง DRESS หรือ SJS และหยุดยาที่สงสัยทั้งหมด\n\nจุดที่มักสับสนและกับดักข้อสอบ: (1) ผื่นทุกชนิดในผู้ใช้ allopurinol ไม่ใช่ SJS เสมอไป ต้องดูลักษณะและอาการร่วม (2) amoxicillin ไม่ได้เพิ่มระดับ oxypurinol (3) amoxicillin ไม่ใช่ substrate ของ xanthine oxidase (4) ผื่นจาก aminopenicillin ยังพบบ่อยในผู้ติดเชื้อ EBV ซึ่งเป็นอีกกลไกที่ข้อสอบชอบออก\n\nสรุปท่องสอบ: allopurinol + amoxicillin/ampicillin → ผื่น maculopapular เพิ่มขึ้นราว 2–3 เท่า; ไม่มีอาการเตือน = หยุด amoxicillin ใช้ allopurinol ต่อและติดตาม; มีอาการเตือน = หยุดทุกตัวและส่งต่อ",
         "choices": [
           {
             "label": "A",
             "text": "เป็น Stevens-Johnson syndrome จาก allopurinol แน่นอน ต้องหยุดยาและห้ามใช้ allopurinol ตลอดชีวิต",
-            "explanation": "✗ ผิด — ไม่มี mucosal involvement ไข้ หรือตุ่มน้ำ จึงไม่เข้าเกณฑ์ SJS"
+            "explanation": "✗ ผิด — SJS มักมีไข้ อาการคล้ายไข้หวัดนำ แผลที่เยื่อบุอย่างน้อย 2 ตำแหน่ง ตุ่มน้ำและผิวหนังหลุดลอก ผู้ป่วยรายนี้ไม่มีอาการเหล่านี้ ใช้ allopurinol มา 8 เดือนและ HLA-B*5801 เป็นลบ จึงไม่ใช่ SJS 'แน่นอน' ข้อนี้จะถูกเมื่อผู้ป่วยเพิ่งเริ่ม allopurinol ไม่กี่สัปดาห์และมีไข้ แผลในปาก ตุ่มน้ำ ซึ่งต้องหยุดยาและห้ามใช้ซ้ำตลอดชีวิต"
           },
           {
             "label": "B",
             "text": "Amoxicillin เพิ่มระดับ oxypurinol ในเลือดผ่านการยับยั้ง OAT ที่ไต",
-            "explanation": "✗ ผิด — ไม่ใช่กลไกที่อธิบายอันตรกิริยานี้"
+            "explanation": "✗ ผิด — amoxicillin ไม่มีหลักฐานว่ายับยั้ง OAT จนเพิ่มระดับ oxypurinol อย่างมีนัยสำคัญ และกลไกของผื่นไม่ได้อธิบายด้วยระดับยา ยาที่มีผลต่อระดับ oxypurinol ได้ชัดคือยาขับปัสสาวะและภาวะไตเสื่อม ซึ่งทำให้ oxypurinol สะสมและเป็นเหตุผลที่ต้องเริ่ม allopurinol ขนาดต่ำในผู้ป่วย CKD"
           },
           {
             "label": "C",
             "text": "การใช้ amoxicillin/ampicillin ร่วมกับ allopurinol เพิ่มอุบัติการณ์ผื่นแบบ maculopapular เมื่อเทียบกับการใช้ amoxicillin เดี่ยว",
-            "explanation": "✓ ถูก — เป็นอันตรกิริยาที่มีรายงานชัดเจน ผื่นพบบ่อยขึ้น 2–3 เท่า"
+            "explanation": "✓ ถูก — ข้อมูลจาก Boston Collaborative Drug Surveillance Program พบผื่นราว 20% เมื่อใช้ ampicillin ร่วมกับ allopurinol เทียบกับราว 7–8% เมื่อใช้ ampicillin เดี่ยว และฉลาก allopurinol ระบุอันตรกิริยานี้ ผื่นมักเป็น maculopapular ไม่รุนแรง จัดการโดยหยุด amoxicillin รักษาตามอาการ ใช้ allopurinol ต่อได้ และเฝ้าระวังอาการเตือนของ SCAR"
           },
           {
             "label": "D",
             "text": "Allopurinol ทำให้ amoxicillin ถูกเปลี่ยนเป็น metabolite ที่ก่อภูมิแพ้ผ่าน xanthine oxidase",
-            "explanation": "✗ ผิด — amoxicillin ไม่ใช่ substrate ของ xanthine oxidase"
+            "explanation": "✗ ผิด — xanthine oxidase เปลี่ยนแปลง purine เช่น hypoxanthine, xanthine และ 6-mercaptopurine ไม่ได้เปลี่ยนแปลง amoxicillin ซึ่งขับทางไตในรูปเดิมเป็นส่วนใหญ่ การที่ XO inhibitor เพิ่มพิษของยาอื่นจะพบกับยาที่เป็น substrate ของ XO ได้แก่ azathioprine/6-MP และ theophylline (ผ่าน metabolite)"
           }
         ],
-        "key_takeaway": "Allopurinol + amoxicillin/ampicillin → ผื่นบ่อยขึ้น แต่ต้องคัดกรอง SJS/DRESS เสมอ"
+        "key_takeaway": "Allopurinol + amoxicillin = ผื่นธรรมดาเพิ่ม ไม่ใช่ SJS โดยอัตโนมัติ — ดูไข้ แผลในปาก ตุ่มน้ำ"
       }
     },
     {
@@ -686,186 +692,186 @@
       ],
       "correct_answer": "D",
       "difficulty": "medium",
-      "explanation": "Bisphosphonate จับกับไอออนบวกสองประจุ (Ca²⁺, Mg²⁺, Al³⁺) เกิด chelate ที่ไม่ดูดซึม ibandronate ชนิดรับประทานต้องรออย่างน้อย 60 นาที (มากกว่า alendronate/risedronate ที่ 30 นาที) ก่อนรับประทานอาหาร calcium หรือยาลดกรด",
+      "explanation": "Ibandronate ชนิดรับประทานดูดซึมได้ต่ำมากและจับกับแคลเซียม/ไอออนบวกในทางเดินอาหาร ต้องรับประทานตอนท้องว่างกับน้ำเปล่าเต็มแก้ว และรออย่างน้อย 60 นาทีก่อนอาหาร เครื่องดื่ม แคลเซียม ยาลดกรด หรือยาอื่น พร้อมอยู่ในท่าตัวตรงช่วงนั้น",
       "detailed_explanation": {
-        "summary": "Ibandronate + Ca/antacid → chelation; กินท้องว่างกับน้ำเปล่า รอ ≥ 60 นาทีก่อนอาหาร/Ca/antacid",
-        "reason": "โจทย์ถามอะไร: อันตรกิริยาด้านการดูดซึมระหว่าง oral bisphosphonate กับ calcium และยาลดกรด โดยเฉพาะ ibandronate\n\nหลักการ/กลไกเชิงลึก: bisphosphonate มี bioavailability ต่ำมาก (< 1%) โครงสร้าง P-C-P จับไอออนบวก Ca²⁺, Mg²⁺, Al³⁺, Fe²⁺ เกิดสารประกอบเชิงซ้อนที่ไม่ละลาย อาหารหรือแม้แต่กาแฟ น้ำผลไม้ น้ำแร่ ลดการดูดซึมได้มาก การรับประทานพร้อม calcium carbonate และ Al/Mg antacid ทำให้แทบไม่ได้ยาเลย ผู้ป่วยจึงอาจไม่ได้ประโยชน์จากการรักษา (therapeutic failure)\n\nทำไมข้อ D ถูก: ฉลาก ibandronate (Boniva/Bonviva) กำหนดให้รับประทานหลังตื่นนอนขณะท้องว่าง กับน้ำเปล่า 180–240 mL นั่งหรือยืนตัวตรง และรอ ≥ 60 นาทีก่อนอาหาร เครื่องดื่ม หรือยาอื่นรวม calcium และ antacid ซึ่งนานกว่า alendronate/risedronate (≥ 30 นาที)\n\nการประยุกต์กับผู้ป่วยจริง: แนะนำให้รับประทาน calcium carbonate พร้อมอาหารกลางวันหรือเย็นในวันอื่น ๆ (ดูดซึมดีเมื่อมีกรด) และย้ายยาลดกรดไปช่วงอื่น ทบทวนว่ามีอาการ GERD ที่ต้องประเมินเพิ่มหรือไม่ เพราะ oral bisphosphonate อาจกระตุ้นอาการ\n\nจุดที่มักสับสนและกับดักข้อสอบ: ตัวเลข 30 นาทีใช้กับ alendronate/risedronate (IR) ส่วน ibandronate คือ 60 นาที; risedronate delayed-release (Atelvia) เป็นข้อยกเว้นที่ให้หลังอาหารเช้า\n\nสรุปท่องสอบ: Bisphosphonate + Ca/Mg/Al/Fe = chelate; ibandronate รอ 60 นาที",
+        "summary": "Oral ibandronate: ท้องว่าง น้ำเปล่า 180–240 mL รอ 60 นาที (ไม่ใช่ 30 นาทีแบบ alendronate/risedronate) ห้ามนอนลง",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วยได้ ibandronate 150 mg เดือนละครั้งแต่กินพร้อม calcium carbonate และยาลดกรด aluminium/magnesium หลังอาหารเช้า ทำให้ยาแทบไม่ถูกดูดซึม โจทย์ต้องการวิธีบริหารยาที่ถูกต้องเฉพาะของ ibandronate\n\nหลักการ/กลไกเชิงลึก: bisphosphonate มีโครงสร้าง P-C-P ที่มีประจุลบสูง จึงผ่านเยื่อบุลำไส้ได้น้อยมาก (bioavailability ของ ibandronate ชนิดรับประทานต่ำกว่า 1%) ทางผ่านหลักคือ paracellular ซึ่งอาหาร กาแฟ น้ำผลไม้ และน้ำแร่ลดได้อย่างมาก และกลุ่ม phosphonate ยังจับกับไอออนบวกหลายประจุ เช่น Ca²⁺, Mg²⁺, Al³⁺, Fe²⁺ เป็นสารเชิงซ้อนที่ไม่ดูดซึม การกินพร้อมอาหารหรือแคลเซียมจึงทำให้ได้รับยาแทบเป็นศูนย์ ส่วนการยืนหรือนั่งตัวตรงช่วยให้เม็ดยาผ่านหลอดอาหารเร็ว ลดความเสี่ยง esophagitis ซึ่งเป็นพิษเฉพาะที่ของ aminobisphosphonate\n\nทำไมข้อ D ถูก: ฉลาก ibandronate กำหนดให้รับประทานหลังอดอาหารข้ามคืน กับน้ำเปล่า 180–240 mL และรออย่างน้อย 60 นาทีก่อนอาหารหรือเครื่องดื่มแรกของวัน ยาอื่น รวมถึงแคลเซียมและยาลดกรด และอยู่ในท่าตัวตรง 60 นาที ระยะเวลานี้ยาวกว่า alendronate และ risedronate ชนิดเม็ดปกติซึ่งกำหนด 30 นาที\n\nหลักฐานและแนวทางเวชปฏิบัติ: ข้อกำหนด 60 นาทีมาจากการศึกษาการดูดซึมที่พบว่าการได้อาหารเร็วกว่านั้นลดการดูดซึม ibandronate อย่างมาก แนวทาง AACE/ACE และ Endocrine Society เน้นว่าความล้มเหลวของ bisphosphonate ชนิดรับประทานส่วนหนึ่งมาจากวิธีกินที่ไม่ถูกต้อง เภสัชกรจึงต้องตรวจสอบการบริหารยาก่อนสรุปว่ายาไม่ได้ผล\n\nการประยุกต์กับผู้ป่วยจริง: เลือกวันที่ตรงกันทุกเดือน ตื่นเช้ากิน ibandronate 1 เม็ดกับน้ำเปล่าเต็มแก้ว กลืนทั้งเม็ด ไม่เคี้ยวหรืออม แล้วนั่งหรือยืน รอ 60 นาทีจึงกินอาหารเช้า กาแฟ หรือยาอื่น calcium carbonate ให้กินพร้อมหรือหลังอาหารมื้ออื่น (ต้องอาศัยกรดในการดูดซึม) ยาลดกรดให้เว้นห่างจาก ibandronate ในวันนั้น ถ้าลืม: หากวันกินครั้งถัดไปห่างเกิน 7 วัน ให้กินเช้าวันถัดไปที่นึกได้ แล้วกลับไปวันเดิม ถ้าเหลือไม่ถึง 7 วันให้รอกินตามกำหนด และไม่กิน 2 เม็ดในสัปดาห์เดียวกัน\n\nการติดตามและสัญญาณอันตราย: กลืนเจ็บ แสบร้อนกลางอกใหม่ ให้หยุดยาและพบแพทย์ ตรวจระดับ calcium และ 25(OH)D ให้เพียงพอก่อนและระหว่างรักษา ระวังปวดต้นขาหรือขาหนีบ (atypical femoral fracture) และปัญหาขากรรไกรหลังทำฟัน\n\nจุดที่มักสับสนและกับดักข้อสอบ: (1) 30 นาทีถูกสำหรับ alendronate และ risedronate IR แต่ไม่พอสำหรับ ibandronate (2) risedronate ชนิด delayed-release กินหลังอาหารเช้าทันทีได้ ข้อสอบชอบสลับกัน (3) แคลเซียมสำคัญต่อการรักษาแต่ต้องแยกเวลา (4) ยาลดกรดที่ใช้บ่อยอาจบ่งชี้ GERD ซึ่งควรประเมินเรื่องความเหมาะสมของ bisphosphonate ชนิดรับประทาน\n\nสรุปท่องสอบ: ibandronate รับประทาน = ท้องว่าง + น้ำเปล่าเต็มแก้ว + ตัวตรง + รอ 60 นาทีก่อนอาหาร แคลเซียม ยาลดกรด และยาอื่น",
         "choices": [
           {
             "label": "A",
             "text": "รับประทาน ibandronate พร้อม calcium ได้ เพราะ calcium ช่วยเพิ่มการสร้างกระดูก",
-            "explanation": "✗ ผิด — calcium จับ ibandronate เป็น chelate ทำให้ไม่ดูดซึม"
+            "explanation": "✗ ผิด — แคลเซียมสำคัญต่อการรักษากระดูกพรุน แต่เมื่อรับประทานพร้อม ibandronate จะจับกับกลุ่ม phosphonate เป็นสารเชิงซ้อนที่ไม่ดูดซึม ทำให้ยาไม่ได้ผล การให้แคลเซียมร่วมจะเหมาะกับ bisphosphonate ชนิดฉีด เช่น ibandronate IV ทุก 3 เดือน หรือ zoledronic acid ซึ่งไม่ผ่านทางเดินอาหาร"
           },
           {
             "label": "B",
             "text": "รับประทาน ibandronate หลังอาหารเช้าทันทีเพื่อลดการระคายเคืองหลอดอาหาร",
-            "explanation": "✗ ผิด — อาหารลดการดูดซึมอย่างมาก ต้องรับประทานขณะท้องว่าง"
+            "explanation": "✗ ผิด — อาหารลดการดูดซึม ibandronate อย่างมากจนแทบเป็นศูนย์ และการกินหลังอาหารไม่ได้ลดการระคายเคืองหลอดอาหาร ที่ลดได้คือการดื่มน้ำเต็มแก้วและอยู่ในท่าตัวตรง การกินหลังอาหารเช้าทันทีจะถูกต้องเฉพาะ risedronate ชนิด delayed-release (Atelvia) ที่ออกแบบให้กินหลังอาหารเช้า"
           },
           {
             "label": "C",
             "text": "รับประทาน ibandronate ขณะท้องว่าง แล้วรอ 30 นาทีก่อนรับประทาน calcium หรือยาลดกรด",
-            "explanation": "✗ ผิด — 30 นาทีเป็นเกณฑ์ของ alendronate/risedronate; ibandronate ต้องรอ 60 นาที"
+            "explanation": "✗ ผิด — การรอ 30 นาทีเป็นข้อกำหนดของ alendronate และ risedronate ชนิดเม็ดปกติ ibandronate ต้องรออย่างน้อย 60 นาทีเพราะการศึกษาการดูดซึมพบว่าการได้อาหารหรือไอออนบวกเร็วกว่านั้นลดการดูดซึมอย่างมาก ข้อนี้จะถูกหากโจทย์เปลี่ยนยาเป็น alendronate 70 mg สัปดาห์ละครั้ง"
           },
           {
             "label": "D",
             "text": "รับประทาน ibandronate ขณะท้องว่างกับน้ำเปล่า 1 แก้ว แล้วรออย่างน้อย 60 นาทีก่อนรับประทานอาหาร calcium ยาลดกรด หรือยาอื่น",
-            "explanation": "✓ ถูก — ตามฉลาก ibandronate รับประทาน"
+            "explanation": "✓ ถูก — ตามฉลาก ibandronate ให้รับประทานหลังอดอาหารข้ามคืน กับน้ำเปล่า 180–240 mL กลืนทั้งเม็ด อยู่ในท่าตัวตรง และรออย่างน้อย 60 นาทีก่อนอาหาร เครื่องดื่ม แคลเซียม ยาลดกรด หรือยาอื่น แคลเซียมคาร์บอเนตให้กินพร้อมอาหารมื้ออื่นแทน และยาลดกรดให้เว้นห่างจาก ibandronate ในวันนั้น"
           }
         ],
-        "key_takeaway": "Bisphosphonate ชน Ca/Mg/Al — ibandronate ต้องรอ 60 นาที (alendronate/risedronate 30 นาที)"
+        "key_takeaway": "Ibandronate = 60 นาที; alendronate/risedronate IR = 30 นาที"
       }
     },
     {
-      "scenario": "ผู้ป่วยชายอายุ 58 ปี เป็นความดันโลหิตสูงใช้ hydrochlorothiazide 25 mg/day เพียงตัวเดียว BP 138/86 mmHg มีเกาต์กำเริบ 2 ครั้งในปีนี้ serum urate 8.6 mg/dL, eGFR 80 mL/min/1.73 m² แพทย์เริ่ม allopurinol แล้ว ข้อใดเป็นการปรับยาความดันที่เหมาะสมที่สุดตาม ACR 2020",
+      "scenario": "ผู้ป่วยหญิงอายุ 46 ปี เป็น SLE ร่วมกับ antiphospholipid syndrome (เคยมี deep vein thrombosis และผลตรวจ antiphospholipid antibody บวกทั้ง 3 ชนิด) ใช้ warfarin 5 mg/day มา 2 ปี INR อยู่ในช่วง 2.0–3.0 สม่ำเสมอ แพทย์เริ่ม azathioprine 50 mg/day แล้วเพิ่มเป็น 100 mg/day (TPMT ปกติ) 4 สัปดาห์ต่อมา INR 1.4 ผู้ป่วยไม่ได้ลืมยา ไม่ได้เปลี่ยนอาหาร และไม่ได้ใช้ยาอื่นเพิ่ม ข้อใดเป็นการจัดการที่เหมาะสมที่สุด",
       "choices": [
         {
           "label": "A",
-          "text": "เปลี่ยน hydrochlorothiazide เป็น losartan 50 mg/day"
+          "text": "Azathioprine ลดฤทธิ์ต้านการแข็งตัวของเลือดของ warfarin ควรปรับเพิ่มขนาด warfarin ตาม INR ติดตาม INR ถี่ขึ้น และเตรียมลดขนาด warfarin เมื่อหยุดหรือลดขนาด azathioprine"
         },
         {
           "label": "B",
-          "text": "เปลี่ยน hydrochlorothiazide เป็น furosemide 40 mg/day"
+          "text": "Azathioprine เพิ่มฤทธิ์ของ warfarin ค่า INR ต่ำครั้งนี้จึงน่าจะเป็นความคลาดเคลื่อนทางห้องปฏิบัติการ ไม่ต้องปรับยา"
         },
         {
           "label": "C",
-          "text": "เพิ่มขนาด hydrochlorothiazide เป็น 50 mg/day เพื่อคุมความดันให้ดีขึ้น"
+          "text": "หยุด azathioprine และเปลี่ยนเป็น methotrexate เพราะ azathioprine เป็นข้อห้ามใช้ร่วมกับ warfarin"
         },
         {
           "label": "D",
-          "text": "เปลี่ยน hydrochlorothiazide เป็น chlorthalidone 12.5 mg/day"
+          "text": "เปลี่ยน warfarin เป็น rivaroxaban เพราะไม่มีอันตรกิริยากับ azathioprine และไม่ต้องติดตาม INR"
         }
       ],
       "correct_answer": "A",
       "difficulty": "medium",
-      "explanation": "Thiazide เพิ่มการดูดกลับ urate ที่ proximal tubule ทำให้ urate สูงและเกาต์กำเริบ ACR 2020 แนะนำให้เปลี่ยน HCTZ เป็นยาความดันอื่นเมื่อทำได้ และเลือก losartan ซึ่งมีฤทธิ์ uricosuric ผ่านการยับยั้ง URAT1",
+      "explanation": "Azathioprine (และ 6-MP) ลดฤทธิ์ของ warfarin อย่างมีนัยสำคัญ INR จึงลดลงหลังเริ่มหรือเพิ่มขนาด ต้องปรับเพิ่ม warfarin ตาม INR และติดตามถี่ขึ้น ส่วนเมื่อหยุด azathioprine INR จะสูงขึ้นจึงต้องลด warfarin ลง",
       "detailed_explanation": {
-        "summary": "เกาต์ + HCTZ → ACR 2020 แนะนำเปลี่ยน HCTZ และเลือก losartan (uricosuric)",
-        "reason": "โจทย์ถามอะไร: การจัดการ DRP ยาความดันที่เพิ่มกรดยูริกในผู้ป่วยเกาต์\n\nหลักการ/กลไกเชิงลึก: thiazide และ loop diuretic แย่ง organic anion transporter (OAT1/3) ที่ใช้หลั่ง urate และทำให้ volume ลดลงจน urate ถูกดูดกลับผ่าน URAT1/GLUT9 มากขึ้น urate จึงเพิ่มประมาณ 0.5–1.5 mg/dL และความเสี่ยง flare สูงขึ้น ส่วน losartan (ARB ตัวเดียวที่มีฤทธิ์นี้ชัด) ยับยั้ง URAT1 ลด urate ได้ประมาณ 0.5–1 mg/dL; amlodipine ก็สัมพันธ์กับความเสี่ยงเกาต์ที่ต่ำกว่า\n\nทำไมข้อ A ถูก: ACR 2020 conditionally recommends เปลี่ยน hydrochlorothiazide เป็นยาลดความดันชนิดอื่นเมื่อทำได้ และ conditionally recommends เลือก losartan เป็นยาลดความดันเมื่อเป็นไปได้ losartan 50 mg/day เป็นขนาดเริ่มต้นมาตรฐาน คุม BP ได้ใกล้เคียง\n\nการประยุกต์กับผู้ป่วยจริง: ติดตาม BP, SCr และ K หลังเปลี่ยน 1–2 สัปดาห์ ปรับ allopurinol ต่อจนถึงเป้า urate และให้ colchicine prophylaxis ช่วงแรก หากผู้ป่วยมีข้อบ่งใช้ thiazide ชัดเจน (เช่น นิ่ว calcium) อาจคงไว้และปรับยาลดกรดยูริกให้เพียงพอแทน\n\nจุดที่มักสับสนและกับดักข้อสอบ: chlorthalidone เป็น thiazide-like ที่เพิ่ม urate เช่นกัน; furosemide ก็เพิ่ม urate; การเพิ่ม HCTZ ยิ่งเพิ่ม urate\n\nสรุปท่องสอบ: เกาต์ + ความดัน → losartan (± amlodipine) ดีกว่า thiazide/loop",
+        "summary": "Azathioprine/6-MP + warfarin → INR ลด (ต้องใช้ warfarin มากขึ้น) และ INR พุ่งเมื่อหยุด AZA; APS high-risk ยังต้องใช้ warfarin ไม่ใช่ DOAC",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วย SLE ร่วมกับ APS ชนิดเสี่ยงสูง (triple-positive) ใช้ warfarin INR คงที่ เมื่อเริ่มและเพิ่ม azathioprine (AZA) INR ลดเหลือ 1.4 โดยไม่มีสาเหตุอื่น โจทย์ต้องการให้รู้จักอันตรกิริยา AZA ลดฤทธิ์ warfarin และเลือกการจัดการที่คงการป้องกันลิ่มเลือดไว้\n\nหลักการ/กลไกเชิงลึก: กลไกยังไม่ชัดเจนทั้งหมด สมมติฐานหลักคือ thiopurine (AZA และ 6-MP) อาจเร่งการเปลี่ยนแปลง warfarin และ/หรือเพิ่มการสร้างหรือการกระตุ้น prothrombin และ clotting factor อื่น ผลขึ้นกับขนาด AZA เริ่มเห็นภายในไม่กี่วันถึงสัปดาห์ และหายไปภายในหลายสัปดาห์หลังหยุด มีรายงานผู้ป่วยที่ต้องใช้ warfarin เพิ่มขึ้นมากกว่า 2 เท่าเพื่อคง INR เดิม และเกิดเลือดออกเมื่อหยุด AZA โดยไม่ลด warfarin ลง เวลาที่ INR ลดลงในผู้ป่วยรายนี้ตรงกับการเริ่มและเพิ่มขนาด AZA และได้ตัดสาเหตุอื่นที่พบบ่อยออกแล้ว\n\nทำไมข้อ A ถูก: การจัดการอันตรกิริยาที่คาดการณ์ได้และจำเป็นต้องใช้ยาทั้งสอง คือการปรับเพิ่ม warfarin ทีละน้อยตาม INR ติดตาม INR ถี่จนคงที่ และวางแผนล่วงหน้าว่าเมื่อลดหรือหยุด AZA ต้องลด warfarin ลง ผู้ป่วยรายนี้ INR 1.4 ใน APS ที่เคยมีลิ่มเลือด จึงเสี่ยงลิ่มเลือดซ้ำและต้องแก้ไขเร็ว\n\nหลักฐานและแนวทางเวชปฏิบัติ: ฐานข้อมูลอันตรกิริยาและฉลาก azathioprine ระบุว่า AZA อาจลดฤทธิ์ warfarin และแนะนำติดตาม INR อย่างใกล้ชิด แนวทาง EULAR 2019 สำหรับ APS แนะนำ warfarin เป้า INR 2–3 สำหรับ venous thrombosis และไม่แนะนำ rivaroxaban ใน triple-positive APS จากการศึกษา TRAPS ที่พบเหตุการณ์ลิ่มเลือดแดงมากกว่ากลุ่ม warfarin\n\nการประยุกต์กับผู้ป่วยจริง: เพิ่ม warfarin ครั้งละประมาณ 10–20% ของขนาดต่อสัปดาห์ (เช่น จาก 35 เป็นประมาณ 40 mg/สัปดาห์) ตรวจ INR ทุก 1 สัปดาห์จนคงที่ 2 ครั้งติดกัน แล้วห่างออก แพทย์อาจพิจารณา heparin bridging ระหว่างที่ INR ต่ำหากความเสี่ยงสูง บันทึกในประวัติว่า 'ทุกครั้งที่ปรับขนาด AZA ให้ตรวจ INR ภายใน 1–2 สัปดาห์' และบอกผู้ป่วยให้แจ้งคลินิก warfarin ทุกครั้งที่แพทย์โรคข้อปรับยา\n\nการติดตามและสัญญาณอันตราย: INR ต่ำ: ขาบวมปวดข้างเดียว เจ็บหน้าอก หอบ แขนขาอ่อนแรง พูดไม่ชัด INR สูงหลังหยุด AZA: จ้ำเลือด เลือดกำเดา ถ่ายดำ ปัสสาวะเป็นเลือด และติดตาม CBC และ LFT ตามรอบของ AZA\n\nจุดที่มักสับสนและกับดักข้อสอบ: (1) ทิศทางของอันตรกิริยาคือ 'ลด' INR ต่างจากยาส่วนใหญ่ที่เพิ่ม INR (2) AZA ไม่ได้เป็นข้อห้ามใช้ร่วมกับ warfarin (3) การเปลี่ยนเป็น DOAC ไม่เหมาะใน APS ความเสี่ยงสูง (4) อย่าลืมแยกสาเหตุอื่นของ INR ลด เช่น ผักใบเขียว วิตามิน K เสริม ลืมยา หรือ rifampicin/carbamazepine\n\nสรุปท่องสอบ: AZA/6-MP + warfarin → INR ลด ต้องเพิ่ม warfarin ตาม INR และลดกลับเมื่อหยุด AZA; APS triple-positive ยังคง warfarin เป้า 2–3",
         "choices": [
           {
             "label": "A",
-            "text": "เปลี่ยน hydrochlorothiazide เป็น losartan 50 mg/day",
-            "explanation": "✓ ถูก — ตาม ACR 2020 losartan ลด urate ผ่าน URAT1 และคุมความดันได้"
+            "text": "Azathioprine ลดฤทธิ์ต้านการแข็งตัวของเลือดของ warfarin ควรปรับเพิ่มขนาด warfarin ตาม INR ติดตาม INR ถี่ขึ้น และเตรียมลดขนาด warfarin เมื่อหยุดหรือลดขนาด azathioprine",
+            "explanation": "✓ ถูก — AZA ลดฤทธิ์ warfarin แบบขึ้นกับขนาด จึงต้องเพิ่ม warfarin ทีละประมาณ 10–20% ของขนาดต่อสัปดาห์ ตรวจ INR ทุกสัปดาห์จนคงที่ และวางแผนลด warfarin เมื่อหยุดหรือลด AZA เพื่อป้องกัน INR สูงและเลือดออก แพทย์อาจพิจารณา heparin bridging ระหว่างที่ INR ต่ำในผู้ป่วย APS ความเสี่ยงสูง"
           },
           {
             "label": "B",
-            "text": "เปลี่ยน hydrochlorothiazide เป็น furosemide 40 mg/day",
-            "explanation": "✗ ผิด — loop diuretic เพิ่ม urate เช่นกัน และไม่ใช่ยาหลักสำหรับ HT"
+            "text": "Azathioprine เพิ่มฤทธิ์ของ warfarin ค่า INR ต่ำครั้งนี้จึงน่าจะเป็นความคลาดเคลื่อนทางห้องปฏิบัติการ ไม่ต้องปรับยา",
+            "explanation": "✗ ผิด — AZA ลดฤทธิ์ warfarin ไม่ใช่เพิ่ม และค่า INR ที่ลดลงสอดคล้องกับเวลาที่เริ่มและเพิ่มขนาด AZA หลังตัดสาเหตุอื่นแล้ว การปล่อยไว้เสี่ยงลิ่มเลือดซ้ำใน APS การตรวจซ้ำเพื่อยืนยันค่าเป็นสิ่งที่ทำได้ แต่การสรุปว่า 'ไม่ต้องปรับยา' จะเหมาะเฉพาะเมื่อพบความผิดพลาดของการเก็บตัวอย่างจริง เช่น หลอดเลือดไม่เต็ม"
           },
           {
             "label": "C",
-            "text": "เพิ่มขนาด hydrochlorothiazide เป็น 50 mg/day เพื่อคุมความดันให้ดีขึ้น",
-            "explanation": "✗ ผิด — ผลต่อ urate ขึ้นกับขนาด ยิ่งเพิ่ม flare"
+            "text": "หยุด azathioprine และเปลี่ยนเป็น methotrexate เพราะ azathioprine เป็นข้อห้ามใช้ร่วมกับ warfarin",
+            "explanation": "✗ ผิด — AZA ไม่ได้เป็นข้อห้ามใช้ร่วมกับ warfarin แค่ต้องติดตามและปรับขนาด และ AZA เป็นยาที่เหมาะสำหรับ SLE ในหญิงวัยเจริญพันธุ์เพราะใช้ได้ระหว่างตั้งครรภ์ ต่างจาก methotrexate ที่ห้ามใช้ในการตั้งครรภ์ การเปลี่ยนยากดภูมิจะพิจารณาเมื่อผู้ป่วยทน AZA ไม่ได้ เช่น cytopenia หรือตับอักเสบ"
           },
           {
             "label": "D",
-            "text": "เปลี่ยน hydrochlorothiazide เป็น chlorthalidone 12.5 mg/day",
-            "explanation": "✗ ผิด — chlorthalidone เป็น thiazide-like ที่เพิ่ม urate ได้เช่นกัน"
+            "text": "เปลี่ยน warfarin เป็น rivaroxaban เพราะไม่มีอันตรกิริยากับ azathioprine และไม่ต้องติดตาม INR",
+            "explanation": "✗ ผิด — ใน APS ที่ antiphospholipid antibody บวกทั้ง 3 ชนิด การศึกษา TRAPS พบว่า rivaroxaban มีเหตุการณ์ลิ่มเลือดแดงมากกว่า warfarin EULAR 2019 จึงไม่แนะนำ DOAC ในกลุ่มนี้ DOAC จะเป็นทางเลือกในผู้ป่วย VTE ทั่วไปที่ไม่มี APS หรือในบางกรณีของ APS ความเสี่ยงต่ำที่ใช้ warfarin ไม่ได้"
           }
         ],
-        "key_takeaway": "Thiazide ในผู้ป่วยเกาต์ → เปลี่ยนเป็น losartan ถ้าทำได้"
+        "key_takeaway": "AZA ดึง INR ลง — เพิ่ม warfarin ตอนเริ่ม AZA และลดตอนหยุด"
       }
     },
     {
-      "scenario": "ผู้ป่วยชายอายุ 64 ปี มีประวัติ myocardial infarction เมื่อ 2 ปีก่อน ใช้ aspirin 81 mg/day, atorvastatin 40 mg และ bisoprolol เป็นเกาต์ serum urate 8.8 mg/dL กำลังเริ่ม allopurinol ผู้ป่วยอ่านพบว่า aspirin ทำให้กรดยูริกสูง จึงถามว่าควรหยุด aspirin หรือไม่ ข้อใดเป็นคำแนะนำที่เหมาะสมที่สุด",
+      "scenario": "ผู้ป่วยหญิงอายุ 66 ปี เป็น atrial fibrillation ใช้ digoxin 0.125 mg/day ร่วมกับ bisoprolol ควบคุมอัตราการเต้นหัวใจได้ดี (HR ขณะพัก 72 ครั้ง/นาที ระดับ digoxin 0.9 ng/mL) การทำงานของไตคงที่ ต่อมาได้รับการวินิจฉัยเป็น rheumatoid arthritis แพทย์เริ่ม sulfasalazine EC 500 mg วันละ 2 ครั้ง และจะค่อย ๆ เพิ่มเป็น 1 g วันละ 2 ครั้ง ข้อใดถูกต้องที่สุดเกี่ยวกับอันตรกิริยาระหว่างยาคู่นี้",
       "choices": [
         {
           "label": "A",
-          "text": "หยุด aspirin และเปลี่ยนเป็น clopidogrel เพราะ aspirin ทุกขนาดเพิ่มกรดยูริก"
+          "text": "Sulfasalazine ยับยั้ง P-glycoprotein ทำให้ระดับ digoxin สูงขึ้นจนเป็นพิษ ต้องลดขนาด digoxin ลงครึ่งหนึ่งตั้งแต่วันแรก"
         },
         {
           "label": "B",
-          "text": "ใช้ aspirin 81 mg ต่อ เพราะประโยชน์ในการป้องกันโรคหัวใจซ้ำมากกว่าผลเพิ่มกรดยูริกเล็กน้อย และปรับยาลดกรดยูริกให้ถึงเป้าหมาย"
+          "text": "Sulfasalazine อาจลดการดูดซึม digoxin ทำให้ระดับ digoxin ต่ำลง ควรติดตามอัตราการเต้นหัวใจและระดับ digoxin หลังเริ่มหรือปรับขนาด sulfasalazine และระวังระดับสูงขึ้นเมื่อหยุด sulfasalazine"
         },
         {
           "label": "C",
-          "text": "เพิ่ม aspirin เป็น 3 g/day เพื่อให้เกิดฤทธิ์ขับกรดยูริก"
+          "text": "ให้รับประทาน digoxin และ sulfasalazine ห่างกัน 4 ชั่วโมงก็ป้องกันอันตรกิริยาได้ทั้งหมด ไม่จำเป็นต้องติดตามเพิ่ม"
         },
         {
           "label": "D",
-          "text": "หยุด aspirin ชั่วคราวจนกว่าระดับกรดยูริกจะต่ำกว่า 6 mg/dL แล้วค่อยกลับมาใช้"
+          "text": "ไม่มีอันตรกิริยาด้านระดับยา แต่ sulfasalazine ทำให้เกิด hyperkalemia ซึ่งเสริมพิษของ digoxin"
         }
       ],
       "correct_answer": "B",
       "difficulty": "medium",
-      "explanation": "Aspirin ขนาดต่ำลดการขับ urate ทางไตเล็กน้อย (เพิ่ม urate ราว 0.3–0.5 mg/dL) ACR 2020 แนะนำไม่ให้หยุด low-dose aspirin ในผู้ที่มีข้อบ่งใช้ทางหัวใจและหลอดเลือด",
+      "explanation": "Sulfasalazine ลดการดูดซึม digoxin จากทางเดินอาหาร (มีรายงานระดับลดลงราว 25%) จึงอาจทำให้คุมอัตราการเต้นหัวใจได้แย่ลง ควรติดตาม HR และระดับ digoxin หลังเริ่มหรือปรับขนาด และระวังระดับ digoxin สูงขึ้นเมื่อหยุด sulfasalazine",
       "detailed_explanation": {
-        "summary": "Low-dose aspirin เพิ่ม urate เล็กน้อย แต่ ACR 2020 แนะนำให้ใช้ต่อในผู้มีข้อบ่งใช้ secondary prevention",
-        "reason": "โจทย์ถามอะไร: การชั่งประโยชน์–ความเสี่ยงของ low-dose aspirin ในผู้ป่วยเกาต์ที่มีโรคหัวใจ\n\nหลักการ/กลไกเชิงลึก: salicylate มีผลสองขั้วต่อ urate (paradoxical effect) ขนาดต่ำ (< 1–2 g/day) salicylate ทำหน้าที่เป็น anion ที่ใช้แลกเปลี่ยนผ่าน URAT1 ทำให้ urate ถูกดูดกลับมากขึ้นและลดการหลั่ง urate จึงเพิ่ม serum urate เล็กน้อย ราว 0.3–0.5 mg/dL ส่วนขนาดสูง (> 3 g/day) ยับยั้ง URAT1 เกิดฤทธิ์ uricosuric แต่มีพิษ (เลือดออก, salicylism) จึงไม่ใช้รักษาเกาต์\n\nทำไมข้อ B ถูก: ACR 2020 conditionally recommends against การหยุด low-dose aspirin ในผู้ป่วยเกาต์ที่ใช้ด้วยข้อบ่งใช้ที่เหมาะสม ผู้ป่วยเคยเป็น MI ประโยชน์ของ aspirin ในการลด MACE ชัดเจนกว่า ผลต่อ urate ชดเชยได้ด้วยการ titrate allopurinol ให้ถึงเป้า\n\nการประยุกต์กับผู้ป่วยจริง: อธิบายผู้ป่วยไม่ให้หยุดเอง เน้นการกิน allopurinol สม่ำเสมอ ติดตาม urate ทุก 2–5 สัปดาห์ช่วงปรับขนาด และ colchicine prophylaxis ตรวจอันตรกิริยาอื่นที่ยังไม่จำเป็น\n\nจุดที่มักสับสนและกับดักข้อสอบ: การหยุด aspirin ชั่วคราวในผู้ป่วย post-MI เพิ่มความเสี่ยงเหตุการณ์ซ้ำ; aspirin ขนาดสูงไม่ใช่ยาลดกรดยูริกที่ใช้จริง\n\nสรุปท่องสอบ: Low-dose aspirin + เกาต์ = ใช้ต่อ (ACR 2020)",
+        "summary": "Sulfasalazine ↓ การดูดซึม digoxin (และ folate) → ติดตาม HR/ระดับ digoxin เมื่อเริ่ม ปรับ หรือหยุด SSZ",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วย AF ที่คุมอัตราการเต้นหัวใจด้วย digoxin (ระดับ 0.9 ng/mL) เริ่ม sulfasalazine (SSZ) สำหรับ RA โจทย์ต้องการให้รู้ทิศทางและกลไกของอันตรกิริยา และวิธีติดตามที่เหมาะสม\n\nหลักการ/กลไกเชิงลึก: SSZ ประกอบด้วย sulfapyridine ต่อกับ 5-aminosalicylic acid ด้วยพันธะ azo ส่วนใหญ่ไม่ถูกดูดซึมที่ลำไส้เล็กและถูกแบคทีเรียในลำไส้ใหญ่ตัดพันธะ การศึกษาในอาสาสมัครพบว่า SSZ ลดการดูดซึม digoxin ทำให้ระดับ digoxin ลดลงราว 25% และผลขึ้นกับขนาด SSZ กลไกที่เสนอคือ SSZ รบกวนการดูดซึมที่เยื่อบุลำไส้ (ยับยั้ง carrier บางชนิด) และอาจจับกับ digoxin ในลำไส้ กลไกเดียวกันนี้อธิบายว่าทำไม SSZ ลดการดูดซึม folate (ยับยั้ง reduced folate carrier และ folate conjugase) จนอาจเกิด megaloblastic anemia digoxin มีดัชนีการรักษาแคบ ครึ่งชีวิตราว 36–48 ชั่วโมงในผู้ที่ไตปกติ จึงต้องรอราว 7–10 วันจึงจะถึง steady state ใหม่หลังการเปลี่ยนแปลง\n\nทำไมข้อ B ถูก: ระบุทิศทางถูก (ระดับ digoxin ลดลง) และระบุการติดตามที่สอดคล้องกับเภสัชจลนศาสตร์ คือตรวจ HR และระดับยาหลังเริ่มหรือปรับขนาด SSZ และระวังด้านกลับเมื่อหยุด SSZ ซึ่งระดับ digoxin จะกลับขึ้นสูง ถ้าเคยเพิ่มขนาด digoxin เพื่อชดเชยไว้ อาจเกิดพิษได้\n\nหลักฐานและแนวทางเวชปฏิบัติ: ข้อมูลผลิตภัณฑ์ SSZ ระบุว่าลดการดูดซึม folic acid และ digoxin แนวทางการใช้ digoxin ใน AF แนะนำระดับยาที่ต่ำ (ประมาณ 0.5–0.9 หรือไม่เกิน 1.0–1.2 ng/mL) และเก็บเลือดอย่างน้อย 6–8 ชั่วโมงหลังมื้อยา ACR 2021 สำหรับ RA ใช้ SSZ เป็นทางเลือกของ csDMARD เมื่อ MTX ไม่เหมาะ\n\nการประยุกต์กับผู้ป่วยจริง: ไม่ต้องปรับ digoxin ล่วงหน้า ติดตาม HR และอาการใจสั่นทุกครั้งที่มาพบ ตรวจระดับ digoxin ประมาณ 1–2 สัปดาห์หลัง SSZ ถึงขนาดคงที่ (2 g/day) ถ้า HR สูงขึ้นหรือระดับลดลงชัด ให้แพทย์ปรับ rate control (เช่น ปรับ bisoprolol) ก่อนเพิ่ม digoxin เสริม folic acid ถ้ามีข้อบ่งชี้ บอกผู้ป่วยว่า 'ปัสสาวะสีเหลืองส้มจากยา sulfasalazine เป็นเรื่องปกติ แต่ถ้ามีไข้ เจ็บคอ ผื่น ตาเหลือง ให้มาพบแพทย์' และ 'ถ้าจะหยุด sulfasalazine ต้องแจ้งเรื่องยา digoxin ด้วย'\n\nการติดตามและสัญญาณอันตราย: ระดับ digoxin ต่ำ: ใจสั่น HR เร็ว อ่อนเพลีย ระดับ digoxin สูง (หลังหยุด SSZ): คลื่นไส้ เบื่ออาหาร มองเห็นสีเหลืองเขียว HR ช้า หัวใจเต้นผิดจังหวะ ติดตาม K, SCr และ CBC/LFT ตามรอบของ SSZ (ทุก 2–4 สัปดาห์ใน 3 เดือนแรก)\n\nจุดที่มักสับสนและกับดักข้อสอบ: (1) ยาที่ยับยั้ง P-gp และเพิ่มระดับ digoxin คือ amiodarone, verapamil, quinidine, clarithromycin ไม่ใช่ SSZ (2) การเว้นระยะห่างยังไม่มีหลักฐานว่าป้องกันอันตรกิริยานี้ได้ จึงยังต้องติดตาม (3) ยาที่ทำให้ hypokalemia (ไม่ใช่ hyperkalemia) เป็นตัวที่เสริมพิษ digoxin เช่น loop/thiazide diuretics และ corticosteroid (4) อันตรกิริยาต้องติดตามทั้งตอนเริ่มและตอนหยุดยา\n\nสรุปท่องสอบ: SSZ ลดการดูดซึม digoxin (~25%) และ folate → ติดตาม HR/ระดับ digoxin เมื่อเริ่ม ปรับ และหยุด SSZ; ตัวที่เพิ่ม digoxin คือ P-gp inhibitor",
         "choices": [
           {
             "label": "A",
-            "text": "หยุด aspirin และเปลี่ยนเป็น clopidogrel เพราะ aspirin ทุกขนาดเพิ่มกรดยูริก",
-            "explanation": "✗ ผิด — ไม่มีเหตุจำเป็นต้องเปลี่ยน และ aspirin ขนาดสูงกลับขับ urate"
+            "text": "Sulfasalazine ยับยั้ง P-glycoprotein ทำให้ระดับ digoxin สูงขึ้นจนเป็นพิษ ต้องลดขนาด digoxin ลงครึ่งหนึ่งตั้งแต่วันแรก",
+            "explanation": "✗ ผิด — sulfasalazine ไม่ใช่ P-gp inhibitor ที่มีความสำคัญทางคลินิก และผลที่รายงานคือระดับ digoxin 'ลดลง' จากการดูดซึมที่ลดลง การลด digoxin ครึ่งหนึ่งล่วงหน้าจะทำให้คุม HR ไม่ได้ การลด digoxin ประมาณครึ่งหนึ่งตั้งแต่เริ่มเป็นคำแนะนำเมื่อเริ่ม P-gp inhibitor ที่แรง เช่น amiodarone หรือ dronedarone"
           },
           {
             "label": "B",
-            "text": "ใช้ aspirin 81 mg ต่อ เพราะประโยชน์ในการป้องกันโรคหัวใจซ้ำมากกว่าผลเพิ่มกรดยูริกเล็กน้อย และปรับยาลดกรดยูริกให้ถึงเป้าหมาย",
-            "explanation": "✓ ถูก — สอดคล้องกับ ACR 2020"
+            "text": "Sulfasalazine อาจลดการดูดซึม digoxin ทำให้ระดับ digoxin ต่ำลง ควรติดตามอัตราการเต้นหัวใจและระดับ digoxin หลังเริ่มหรือปรับขนาด sulfasalazine และระวังระดับสูงขึ้นเมื่อหยุด sulfasalazine",
+            "explanation": "✓ ถูก — มีรายงานว่า SSZ ลดการดูดซึม digoxin ทำให้ระดับลดลงราว 25% และผลขึ้นกับขนาด จึงควรติดตาม HR และตรวจระดับ digoxin ราว 1–2 สัปดาห์หลัง SSZ ถึงขนาดคงที่ และเมื่อหยุด SSZ ระดับ digoxin จะกลับขึ้น ต้องระวังพิษโดยเฉพาะถ้าเคยเพิ่มขนาด digoxin ชดเชยไว้ SSZ ยังลดการดูดซึม folate ด้วย"
           },
           {
             "label": "C",
-            "text": "เพิ่ม aspirin เป็น 3 g/day เพื่อให้เกิดฤทธิ์ขับกรดยูริก",
-            "explanation": "✗ ผิด — ขนาดสูงเสี่ยงเลือดออกและ salicylism ไม่ใช้รักษาเกาต์"
+            "text": "ให้รับประทาน digoxin และ sulfasalazine ห่างกัน 4 ชั่วโมงก็ป้องกันอันตรกิริยาได้ทั้งหมด ไม่จำเป็นต้องติดตามเพิ่ม",
+            "explanation": "✗ ผิด — กลไกที่เสนอเป็นการรบกวนการดูดซึมที่เยื่อบุลำไส้ ซึ่งยังไม่มีหลักฐานว่าการเว้นระยะห่างแก้ได้ และข้อความว่าไม่ต้องติดตามเลยไม่ปลอดภัยสำหรับยาดัชนีการรักษาแคบ การเว้นระยะห่างใช้ได้ผลชัดกับการจับตัวแบบ chelation หรือ resin เช่น digoxin กับ cholestyramine หรือ antacid ซึ่งแนะนำให้กิน digoxin ก่อนอย่างน้อย 2 ชั่วโมง"
           },
           {
             "label": "D",
-            "text": "หยุด aspirin ชั่วคราวจนกว่าระดับกรดยูริกจะต่ำกว่า 6 mg/dL แล้วค่อยกลับมาใช้",
-            "explanation": "✗ ผิด — การหยุด antiplatelet ใน post-MI เพิ่มความเสี่ยงเหตุการณ์หัวใจซ้ำ"
+            "text": "ไม่มีอันตรกิริยาด้านระดับยา แต่ sulfasalazine ทำให้เกิด hyperkalemia ซึ่งเสริมพิษของ digoxin",
+            "explanation": "✗ ผิด — sulfasalazine ไม่ได้ทำให้เกิด hyperkalemia และ hyperkalemia ไม่ได้เสริมพิษ digoxin แต่กลับลดการจับของ digoxin กับ Na+/K+-ATPase สิ่งที่เสริมพิษ digoxin คือ hypokalemia, hypomagnesemia และ hypercalcemia เช่น จากยาขับปัสสาวะกลุ่ม loop หรือ thiazide และ corticosteroid ขนาดสูง"
           }
         ],
-        "key_takeaway": "Low-dose aspirin ↑ urate เล็กน้อย — ไม่ต้องหยุดถ้ามีข้อบ่งใช้หัวใจ"
+        "key_takeaway": "SSZ ขโมยการดูดซึม digoxin และ folate — ติดตามทั้งขาเริ่มและขาหยุด"
       }
     },
     {
-      "scenario": "ผู้ป่วยหญิงอายุ 67 ปี ใช้ omeprazole 40 mg วันละ 2 ครั้งมา 3 ปี จากอาการแสบร้อนกลางอกที่ปัจจุบันไม่มีอาการแล้ว ไม่มี Barrett's esophagus หรือแผลในกระเพาะ ใช้ calcium carbonate 1,250 mg/day ตรวจ BMD พบ T-score −2.1 ที่ femoral neck ข้อใดเป็นการจัดการ DRP ที่เหมาะสมที่สุด",
+      "scenario": "ผู้ป่วยหญิงอายุ 58 ปี เป็นโรคลมชักใช้ phenytoin 300 mg/day มา 12 ปี ควบคุมอาการชักได้ดี มาด้วยปวดกระดูกทั่วไปและกล้ามเนื้อต้นขาอ่อนแรงจนลุกจากเก้าอี้ลำบาก ผลตรวจ: Ca 8.1 mg/dL (albumin ปกติ), PO4 2.2 mg/dL, ALP 320 U/L (ปกติ <120), PTH 135 pg/mL, 25(OH)D 9 ng/mL, eGFR 85 mL/min/1.73 m², BMD T-score −2.3 ที่ lumbar spine ข้อใดเป็นการจัดการที่เหมาะสมที่สุด",
       "choices": [
         {
           "label": "A",
-          "text": "ใช้ omeprazole ขนาดเดิมต่อ และเพิ่ม calcium carbonate เป็น 2,500 mg/day"
+          "text": "เริ่ม alendronate 70 mg สัปดาห์ละครั้งทันที ร่วมกับ calcium 600 mg/day เพื่อป้องกันกระดูกหัก"
         },
         {
           "label": "B",
-          "text": "หยุด omeprazole ทันทีในวันนี้ และเริ่ม alendronate เพื่อป้องกันกระดูกหัก"
+          "text": "ให้ calcitriol 0.25 mcg/day แทน cholecalciferol เพราะ phenytoin ยับยั้ง 1α-hydroxylase ที่ไต"
         },
         {
           "label": "C",
-          "text": "เปลี่ยน omeprazole เป็น esomeprazole 40 mg วันละ 2 ครั้ง ซึ่งไม่มีผลต่อกระดูก"
+          "text": "หยุด phenytoin ทันทีและเปลี่ยนเป็น sodium valproate เพื่อหยุดการสูญเสียมวลกระดูก"
         },
         {
           "label": "D",
-          "text": "ประเมินความจำเป็นของ PPI และค่อย ๆ ลดขนาดลงหรือหยุดถ้าทำได้ (หรือใช้ H2RA/ใช้เมื่อมีอาการ) และเปลี่ยนเป็น calcium citrate"
+          "text": "ให้ vitamin D ขนาดรักษาที่สูงกว่าผู้ป่วยทั่วไป (มักต้องใช้ 2–3 เท่า) ร่วมกับ calcium ติดตาม 25(OH)D, Ca, PO4 และ ALP และปรึกษาแพทย์เรื่องยากันชักที่ไม่เหนี่ยวนำเอนไซม์หากเหมาะสม"
         }
       ],
       "correct_answer": "D",
       "difficulty": "hard",
-      "explanation": "การใช้ PPI ขนาดสูงหรือนานเกิน 1 ปีสัมพันธ์กับกระดูกสะโพก ข้อมือ และกระดูกสันหลังหัก (FDA 2010) ควร deprescribe แบบค่อย ๆ ลดเพื่อเลี่ยง rebound acid hypersecretion และใช้ calcium citrate ที่ดูดซึมได้โดยไม่ต้องอาศัยกรด",
+      "explanation": "Phenytoin เป็น enzyme inducer ที่เร่งการทำลาย vitamin D และลดการดูดซึม calcium ทำให้ขาด vitamin D รุนแรงจนเกิด osteomalacia (Ca/PO4 ต่ำ ALP และ PTH สูง) ต้องแก้ด้วย vitamin D ขนาดสูงกว่าปกติร่วมกับ calcium ก่อนพิจารณายาต้านการสลายกระดูก",
       "detailed_explanation": {
-        "summary": "PPI ขนาดสูงระยะยาวไม่มีข้อบ่งใช้ + มวลกระดูกต่ำ → ค่อย ๆ ลด/หยุด PPI และเปลี่ยนเป็น calcium citrate",
-        "reason": "โจทย์ถามอะไร: การจัดการ DRP จาก PPI ระยะยาวที่เพิ่มความเสี่ยงกระดูกหัก\n\nหลักการ/กลไกเชิงลึก: ภาวะกรดน้อย (hypochlorhydria) จาก PPI ลดการละลายและการดูดซึม calcium carbonate ซึ่งต้องอาศัยกรด (ขณะท้องว่างดูดซึมลดลงได้มาก) อาจมีผลต่อ osteoclast proton pump และเกี่ยวข้องกับ hypomagnesemia FDA (2010) เตือนว่าการใช้ PPI ขนาดสูงหรือนานกว่า 1 ปีสัมพันธ์กับการหักของสะโพก ข้อมือ และกระดูกสันหลัง\n\nทำไมข้อ D ถูก: ผู้ป่วยไม่มีข้อบ่งใช้ PPI ระยะยาว (ไม่มี Barrett's, severe erosive esophagitis หรือแผลเรื้อรัง) และได้ขนาด 80 mg/day ซึ่งสูงเกิน แนวทาง deprescribing PPI แนะนำลดขนาด (เช่น 40 → 20 mg วันละครั้ง) แล้วหยุดหรือใช้เมื่อมีอาการ การหยุดทันทีเสี่ยง rebound acid hypersecretion ส่วน calcium citrate ดูดซึมได้ดีโดยไม่ขึ้นกับกรด (คิดเป็น elemental Ca 21% เทียบกับ carbonate 40%: calcium carbonate 1,250 mg = elemental 500 mg; ต้องใช้ calcium citrate ประมาณ 2,380 mg เพื่อให้ได้ 500 mg เท่ากัน)\n\nการประยุกต์กับผู้ป่วยจริง: ประเมินความเสี่ยงด้วย FRAX ร่วมกับ T-score −2.1 (osteopenia) ตัดสินใจเรื่อง anti-osteoporosis ตามความเสี่ยง ไม่ใช่เริ่มทันที ตรวจวิตามินดีและ Mg ร่วมด้วย\n\nจุดที่มักสับสนและกับดักข้อสอบ: esomeprazole เป็น PPI เหมือนกัน; เพิ่ม calcium carbonate ไม่แก้ปัญหาการดูดซึมและเพิ่มความเสี่ยงนิ่ว\n\nสรุปท่องสอบ: PPI นาน/ขนาดสูง → fracture risk → deprescribe + calcium citrate",
+        "summary": "ยากันชักกลุ่ม enzyme inducer (phenytoin, carbamazepine, phenobarbital) → vitamin D ถูกทำลายเร็ว → osteomalacia; ให้ vitamin D 2–3 เท่าของขนาดปกติ + calcium",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วยใช้ phenytoin ระยะยาว มีปวดกระดูก กล้ามเนื้อส่วนต้นอ่อนแรง Ca และ PO4 ต่ำ ALP และ PTH สูง และ 25(OH)D 9 ng/mL โจทย์ต้องการให้วินิจฉัย osteomalacia จาก drug-induced vitamin D deficiency และรู้ว่าต้องใช้ vitamin D ขนาดสูงกว่าปกติ ไม่ใช่เริ่ม bisphosphonate\n\nหลักการ/กลไกเชิงลึก: phenytoin, carbamazepine, phenobarbital และ primidone กระตุ้น pregnane X receptor (PXR) และ CAR ทำให้สร้าง CYP3A4 และ CYP24A1 เพิ่มขึ้น เอนไซม์เหล่านี้เปลี่ยน 25(OH)D และ 1,25(OH)₂D เป็นสารไม่มีฤทธิ์ ระดับ vitamin D ในร่างกายจึงลดลงเรื่อย ๆ phenytoin ยังยับยั้งการดูดซึม calcium ที่ลำไส้โดยตรง เมื่อ calcium ต่ำ PTH จะเพิ่ม (secondary hyperparathyroidism) ดึง calcium จากกระดูกและขับ phosphate ทางไต ทำให้ PO4 ต่ำ เมื่อ calcium × phosphate ไม่พอ osteoid ที่สร้างใหม่จึงไม่มี mineral เกาะ เกิด osteomalacia ที่มีปวดกระดูก กล้ามเนื้อส่วนต้นอ่อนแรง และ ALP สูง BMD ที่ต่ำในภาวะนี้ไม่ได้หมายถึง osteoporosis\n\nทำไมข้อ D ถูก: ต้องแก้สาเหตุทางชีวเคมีก่อน คือให้ vitamin D ขนาดรักษาที่สูงกว่าผู้ป่วยทั่วไปเพื่อชดเชยการทำลายที่เพิ่มขึ้น ร่วมกับ calcium และติดตามผลทางห้องปฏิบัติการ การปรึกษาแพทย์เรื่องยากันชักที่ไม่เหนี่ยวนำเอนไซม์ (เช่น levetiracetam หรือ lamotrigine) เป็นการแก้ที่ต้นเหตุระยะยาวโดยไม่เสี่ยงต่อการชัก\n\nหลักฐานและแนวทางเวชปฏิบัติ: Endocrine Society Clinical Practice Guideline (2011) ระบุว่าผู้ที่ใช้ยากันชัก glucocorticoid หรือยาต้านไวรัสบางชนิด ต้องการ vitamin D อย่างน้อย 2–3 เท่าของผู้ใหญ่ทั่วไปเพื่อรักษาและคงระดับ 25(OH)D (เช่น รักษาด้วย 6,000–10,000 IU/day แล้วคงที่ 3,000–6,000 IU/day) แนวทางโรคกระดูกพรุนระบุให้แก้ vitamin D deficiency และ osteomalacia ก่อนเริ่ม bisphosphonate\n\nการประยุกต์กับผู้ป่วยจริง: ตัวอย่าง: cholecalciferol 6,000–10,000 IU/day ร่วมกับ elemental calcium 1,000–1,200 mg/day แบ่งให้พร้อมอาหาร ห้ามหยุด phenytoin เอง แจ้งแพทย์ระบบประสาทเรื่องทางเลือกยากันชัก และหากเปลี่ยนยาต้องค่อย ๆ ปรับแบบ cross-taper บอกผู้ป่วยว่า 'อาการปวดและอ่อนแรงจะค่อย ๆ ดีขึ้นในหลายสัปดาห์ถึงเดือนหลังได้วิตามินดีพอ'\n\nการติดตามและสัญญาณอันตราย: ตรวจ Ca, PO4 และ ALP ทุก 1–3 เดือนในช่วงแรก 25(OH)D หลังรักษา 2–3 เดือน (เป้า ≥30 ng/mL) ระวัง hypercalcemia (คลื่นไส้ กระหายน้ำ ปัสสาวะมาก) เมื่อใช้ขนาดสูง ทำ BMD ซ้ำหลัง osteomalacia หายเพื่อประเมินว่ามี osteoporosis ร่วมหรือไม่\n\nจุดที่มักสับสนและกับดักข้อสอบ: (1) bisphosphonate ใน osteomalacia ที่ยังไม่แก้ทำให้ hypocalcemia รุนแรงขึ้นและยิ่งรบกวนการสร้าง mineral (2) calcitriol ไม่ได้เติมคลัง 25(OH)D และเสี่ยง hypercalcemia ใช้ในกรณีที่ไตสร้าง 1,25(OH)₂D ไม่ได้ เช่น CKD ระยะท้าย หรือ hypoparathyroidism (3) การหยุดยากันชักทันทีเสี่ยงต่อการชักต่อเนื่อง (4) เคสขาดแสงแดดใช้ขนาดมาตรฐาน แต่เคส enzyme inducer ต้องใช้ขนาดสูงกว่า\n\nสรุปท่องสอบ: phenytoin/carbamazepine/phenobarbital → CYP24A1/CYP3A4 ทำลาย vitamin D + ลดการดูดซึม Ca → osteomalacia → vitamin D 2–3 เท่า + calcium ก่อน แล้วค่อยประเมิน osteoporosis",
         "choices": [
           {
             "label": "A",
-            "text": "ใช้ omeprazole ขนาดเดิมต่อ และเพิ่ม calcium carbonate เป็น 2,500 mg/day",
-            "explanation": "✗ ผิด — ไม่แก้ DRP และ calcium carbonate ดูดซึมไม่ดีในภาวะกรดน้อย"
+            "text": "เริ่ม alendronate 70 mg สัปดาห์ละครั้งทันที ร่วมกับ calcium 600 mg/day เพื่อป้องกันกระดูกหัก",
+            "explanation": "✗ ผิด — ผู้ป่วยมี osteomalacia จากการขาด vitamin D รุนแรง (Ca/PO4 ต่ำ ALP/PTH สูง) การให้ bisphosphonate ก่อนแก้ vitamin D จะทำให้ hypocalcemia แย่ลงและไม่แก้ปัญหาการสร้าง mineral ข้อนี้จะเหมาะเมื่อ vitamin D และ calcium ถูกแก้จนปกติแล้ว ALP กลับลง และ BMD ซ้ำยังอยู่ในเกณฑ์ osteoporosis หรือมี fragility fracture"
           },
           {
             "label": "B",
-            "text": "หยุด omeprazole ทันทีในวันนี้ และเริ่ม alendronate เพื่อป้องกันกระดูกหัก",
-            "explanation": "✗ ผิด — หยุดทันทีเสี่ยง rebound; T-score −2.1 ต้องประเมิน FRAX ก่อนเริ่มยา"
+            "text": "ให้ calcitriol 0.25 mcg/day แทน cholecalciferol เพราะ phenytoin ยับยั้ง 1α-hydroxylase ที่ไต",
+            "explanation": "✗ ผิด — กลไกหลักของ phenytoin คือเร่งการทำลาย vitamin D ผ่าน CYP24A1/CYP3A4 และลดการดูดซึม calcium ไม่ใช่การยับยั้ง 1α-hydroxylase ที่ไต calcitriol ไม่เติมคลัง 25(OH)D และเสี่ยง hypercalcemia calcitriol จะเหมาะกับผู้ที่ไตสร้าง 1,25(OH)₂D ไม่ได้ เช่น CKD ระยะท้าย hypoparathyroidism หรือ vitamin D-dependent rickets type 1"
           },
           {
             "label": "C",
-            "text": "เปลี่ยน omeprazole เป็น esomeprazole 40 mg วันละ 2 ครั้ง ซึ่งไม่มีผลต่อกระดูก",
-            "explanation": "✗ ผิด — esomeprazole เป็น PPI มีความเสี่ยงเดียวกัน"
+            "text": "หยุด phenytoin ทันทีและเปลี่ยนเป็น sodium valproate เพื่อหยุดการสูญเสียมวลกระดูก",
+            "explanation": "✗ ผิด — การหยุด phenytoin ทันทีเสี่ยงต่อการชักรุนแรงหรือ status epilepticus และ valproate ก็สัมพันธ์กับการสูญเสียมวลกระดูกเช่นกัน การเปลี่ยนยากันชักเป็นการตัดสินใจของแพทย์ระบบประสาท ต้องทำแบบ cross-taper และมักเลือกยาที่ไม่เหนี่ยวนำเอนไซม์ เช่น levetiracetam หรือ lamotrigine ในผู้ป่วยที่มีปัญหากระดูก"
           },
           {
             "label": "D",
-            "text": "ประเมินความจำเป็นของ PPI และค่อย ๆ ลดขนาดลงหรือหยุดถ้าทำได้ (หรือใช้ H2RA/ใช้เมื่อมีอาการ) และเปลี่ยนเป็น calcium citrate",
-            "explanation": "✓ ถูก — deprescribing แบบค่อยเป็นค่อยไป และใช้เกลือ calcium ที่ไม่ขึ้นกับกรด"
+            "text": "ให้ vitamin D ขนาดรักษาที่สูงกว่าผู้ป่วยทั่วไป (มักต้องใช้ 2–3 เท่า) ร่วมกับ calcium ติดตาม 25(OH)D, Ca, PO4 และ ALP และปรึกษาแพทย์เรื่องยากันชักที่ไม่เหนี่ยวนำเอนไซม์หากเหมาะสม",
+            "explanation": "✓ ถูก — enzyme-inducing AED เร่งการทำลาย vitamin D แนวทาง Endocrine Society จึงแนะนำ vitamin D อย่างน้อย 2–3 เท่าของขนาดปกติ (เช่น 6,000–10,000 IU/day ในช่วงรักษา) ร่วมกับ calcium 1,000–1,200 mg/day ติดตาม Ca, PO4, ALP และ 25(OH)D และปรึกษาแพทย์เรื่องยากันชักที่ไม่เหนี่ยวนำเอนไซม์เพื่อแก้ที่ต้นเหตุ"
           }
         ],
-        "key_takeaway": "PPI ระยะยาว → ทบทวน/ลดขนาด และใช้ calcium citrate แทน carbonate"
+        "key_takeaway": "Phenytoin/carbamazepine กิน vitamin D → osteomalacia → เติม D ขนาด 2–3 เท่า ก่อนคิด bisphosphonate"
       }
     },
     {
@@ -890,33 +896,33 @@
       ],
       "correct_answer": "C",
       "difficulty": "easy",
-      "explanation": "การใช้ glucocorticoid ร่วมกับ NSAID เพิ่มความเสี่ยงแผลและเลือดออกในทางเดินอาหารประมาณ 4 เท่า ร่วมกับอายุ ≥ 65 ปี จึงเป็นกลุ่มเสี่ยงที่ควรได้ PPI ป้องกัน",
+      "explanation": "ผู้ป่วยอายุเกิน 65 ปีและใช้ corticosteroid ร่วมกับ NSAID มีปัจจัยเสี่ยงต่อแผลและเลือดออกในทางเดินอาหาร 2 ข้อ (ความเสี่ยงปานกลาง) จึงควรให้ PPI ร่วมตลอดช่วงที่ใช้ NSAID ส่วน sucralfate, antacid ไม่ได้ป้องกันแผลจาก NSAID",
       "detailed_explanation": {
-        "summary": "Corticosteroid + NSAID + อายุ 70 ปี = เสี่ยง GI bleed สูง → ให้ PPI ป้องกัน",
-        "reason": "โจทย์ถามอะไร: การป้องกันภาวะแทรกซ้อนทางเดินอาหารเมื่อใช้ glucocorticoid ร่วมกับ NSAID\n\nหลักการ/กลไกเชิงลึก: glucocorticoid เดี่ยวเพิ่มความเสี่ยงแผลกระเพาะเพียงเล็กน้อย แต่ยับยั้งการซ่อมแซมเยื่อบุและการสร้าง prostaglandin ผ่าน phospholipase A2/COX-2 เมื่อรวมกับ NSAID ที่ยับยั้ง COX-1 ทำให้ความเสี่ยง peptic ulcer complication เพิ่มขึ้นประมาณ 4 เท่าเทียบกับ NSAID เดี่ยว (และสูงกว่านั้นเมื่อเทียบกับผู้ที่ไม่ใช้ยา) นอกจากนี้ steroid อาจบดบังอาการปวดท้องและเยื่อบุช่องท้องอักเสบ\n\nทำไมข้อ C ถูก: ตามแนวทาง ACG/ACR ผู้ใช้ NSAID ที่มีปัจจัยเสี่ยง (อายุ > 65 ปี, ใช้ corticosteroid, anticoagulant, antiplatelet, SSRI, ประวัติแผล) ควรได้ PPI เป็น gastroprotection omeprazole 20 mg วันละครั้งเป็นขนาดมาตรฐาน มีหลักฐานลดแผลจาก NSAID ได้ดี\n\nการประยุกต์กับผู้ป่วยจริง: ผู้ป่วยรายนี้มี 2 ปัจจัยเสี่ยง (อายุ 70 ปี + steroid) จัดเป็น moderate risk พิจารณาทางเลือกที่ไม่ใช่ NSAID ก่อน เช่น topical NSAID หรือ paracetamol และติดตามอาการถ่ายดำ อาเจียนเป็นเลือด\n\nจุดที่มักสับสนและกับดักข้อสอบ: H2RA ขนาดปกติและ antacid ไม่ป้องกันแผลกระเพาะจาก NSAID; sucralfate ไม่มีหลักฐานพอ; misoprostol ได้ผลแต่มีผลข้างเคียงท้องเสีย\n\nสรุปท่องสอบ: NSAID + steroid (หรือ + SSRI/anticoagulant/อายุ > 65) → PPI",
+        "summary": "NSAID + corticosteroid + อายุ >65 = ความเสี่ยง GI ปานกลาง → NSAID + PPI (หรือ misoprostol) ไม่ใช่ sucralfate/antacid",
+        "reason": "โจทย์ถามอะไร: ชายอายุ 70 ปีใช้ prednisolone 15 mg/day สำหรับ PMR และจะได้ naproxen สำหรับ OA เข่า ไม่เคยมีแผล ไม่ใช้ยาต้านเกล็ดเลือดหรือยาต้านการแข็งตัวของเลือด โจทย์ต้องการให้ประเมินปัจจัยเสี่ยงทางเดินอาหารและเลือกยาป้องกันที่มีหลักฐาน\n\nหลักการ/กลไกเชิงลึก: NSAID ยับยั้ง COX-1 ทำให้ prostaglandin ที่ปกป้องเยื่อบุกระเพาะลดลง ทั้งการหลั่งเมือก bicarbonate การไหลเวียนเลือด และการซ่อมแซมเยื่อบุ corticosteroid ใช้เดี่ยวเพิ่มความเสี่ยงแผลเพียงเล็กน้อย แต่ยับยั้งการหายของแผลและการสร้าง granulation tissue เมื่อใช้ร่วมกับ NSAID จึงทำให้ความเสี่ยงแผลและเลือดออกในทางเดินอาหารส่วนบนเพิ่มขึ้นหลายเท่าเมื่อเทียบกับการใช้ NSAID เดี่ยว อายุที่มากขึ้นลดการไหลเวียนเลือดและความสามารถในการซ่อมแซมเยื่อบุ PPI ยับยั้ง H+/K+-ATPase ทำให้ pH ในกระเพาะสูงขึ้น ช่วยลดการเกิดทั้ง gastric และ duodenal ulcer จาก NSAID\n\nทำไมข้อ C ถูก: ตามแนวทาง ACG ผู้ป่วยมีปัจจัยเสี่ยง 2 ข้อ (อายุ >65 ปีและใช้ corticosteroid ร่วม) จัดเป็นความเสี่ยงปานกลาง แนะนำ NSAID ร่วมกับ PPI หรือ misoprostol PPI ทนได้ดีกว่า misoprostol จึงเป็นตัวเลือกที่เหมาะสม และควรใช้ตลอดช่วงที่ได้ NSAID\n\nหลักฐานและแนวทางเวชปฏิบัติ: ACG Guideline (Lanza 2009) แบ่งความเสี่ยง: ต่ำ (ไม่มีปัจจัย) ใช้ NSAID เดี่ยว ปานกลาง (1–2 ปัจจัย: อายุ >65, NSAID ขนาดสูง, เคยมีแผลไม่มีภาวะแทรกซ้อน, ใช้ aspirin, corticosteroid หรือ anticoagulant ร่วม) ใช้ NSAID + PPI/misoprostol สูง (เคยมีแผลมีภาวะแทรกซ้อนหรือ >2 ปัจจัย) เลี่ยง NSAID หรือใช้ COX-2 inhibitor + PPI การศึกษาแสดงว่า H2RA ขนาดมาตรฐานป้องกัน gastric ulcer จาก NSAID ไม่ได้ และ sucralfate ไม่มีหลักฐานป้องกัน\n\nการประยุกต์กับผู้ป่วยจริง: omeprazole 20 mg วันละครั้งก่อนอาหารเช้า 30 นาที naproxen 250 mg วันละ 2 ครั้งพร้อมอาหาร ใช้ระยะสั้นที่สุด พิจารณา topical NSAID สำหรับเข่าแทนถ้าได้ผลพอ ตรวจความดันและ SCr เพราะ NSAID ร่วมกับ steroid ทำให้บวมน้ำและความดันสูงได้ บอกผู้ป่วยว่า 'กินยากระเพาะทุกวันที่ยังกินยาแก้ปวด และห้ามหยุด prednisolone เอง'\n\nการติดตามและสัญญาณอันตราย: ถ่ายดำ อาเจียนเป็นเลือด ปวดท้องรุนแรง หน้ามืด ซีด บวม ความดันสูงขึ้น น้ำตาลในเลือดสูง (steroid) และติดตามการใช้ PPI ระยะยาว (เช่น ขาด B12/magnesium) เมื่อหยุด NSAID แล้วให้ทบทวนความจำเป็นของ PPI\n\nจุดที่มักสับสนและกับดักข้อสอบ: (1) 'ไม่เคยเป็นแผล' ไม่ได้แปลว่าความเสี่ยงต่ำ ต้องนับปัจจัยอื่น (2) steroid เดี่ยวไม่ต้องให้ PPI เป็นประจำ แต่เมื่อมี NSAID ร่วมจึงต้องให้ (3) sucralfate และ antacid ช่วยบรรเทาอาการ ไม่ได้ป้องกันแผล (4) misoprostol เป็นทางเลือกที่มีหลักฐาน แต่ท้องเสียบ่อยและห้ามในหญิงตั้งครรภ์\n\nสรุปท่องสอบ: NSAID + steroid + อายุ >65 = ความเสี่ยงปานกลาง → NSAID + PPI; sucralfate/antacid/H2RA ขนาดปกติไม่พอ",
         "choices": [
           {
             "label": "A",
             "text": "ไม่ต้องให้ยาป้องกันกระเพาะ เพราะผู้ป่วยไม่เคยมีแผลมาก่อน",
-            "explanation": "✗ ผิด — อายุ 70 ปีและใช้ steroid ร่วมก็เป็นปัจจัยเสี่ยงสูงพอ"
+            "explanation": "✗ ผิด — ประวัติไม่เคยเป็นแผลเป็นเพียงปัจจัยหนึ่ง ผู้ป่วยยังมีอายุ >65 ปีและใช้ corticosteroid ร่วม ซึ่งจัดเป็นความเสี่ยงปานกลางที่ ACG แนะนำให้มีการป้องกัน การไม่ให้ยาป้องกันจะเหมาะกับผู้ป่วยความเสี่ยงต่ำ เช่น อายุน้อย ไม่มีปัจจัยเสี่ยงใด และใช้ NSAID ขนาดต่ำระยะสั้น"
           },
           {
             "label": "B",
             "text": "ให้ sucralfate 1 g วันละ 4 ครั้ง เป็นยาป้องกันมาตรฐาน",
-            "explanation": "✗ ผิด — sucralfate ไม่มีหลักฐานป้องกันแผลจาก NSAID ได้ดี"
+            "explanation": "✗ ผิด — sucralfate ไม่มีหลักฐานว่าป้องกันแผลจาก NSAID และต้องกินวันละ 4 ครั้ง ซึ่งยังรบกวนการดูดซึมยาอื่น จึงไม่ใช่ยาป้องกันมาตรฐาน sucralfate อาจใช้ในบริบทอื่น เช่น ป้องกัน stress ulcer ในบางหอผู้ป่วยวิกฤตหรือรักษาแผล duodenum ในผู้ที่ใช้ยากดกรดไม่ได้"
           },
           {
             "label": "C",
             "text": "ให้ PPI เช่น omeprazole 20 mg วันละครั้ง ร่วมด้วยตลอดช่วงที่ใช้ NSAID",
-            "explanation": "✓ ถูก — PPI เป็น gastroprotection มาตรฐานในผู้มีความเสี่ยง"
+            "explanation": "✓ ถูก — อายุ >65 ปีร่วมกับ corticosteroid เป็นปัจจัยเสี่ยง 2 ข้อ (ความเสี่ยงปานกลางตาม ACG) แนะนำ NSAID + PPI เช่น omeprazole 20 mg วันละครั้งก่อนอาหารเช้าตลอดช่วงที่ใช้ NSAID ใช้ NSAID ระยะสั้นที่สุด และพิจารณา topical NSAID ถ้าทำได้ หยุด PPI เมื่อหยุด NSAID หากไม่มีข้อบ่งใช้อื่น"
           },
           {
             "label": "D",
             "text": "ให้ antacid aluminium/magnesium hydroxide หลังอาหารและก่อนนอน",
-            "explanation": "✗ ผิด — antacid บรรเทาอาการแต่ไม่ป้องกันแผลหรือเลือดออก"
+            "explanation": "✗ ผิด — antacid ช่วยบรรเทาอาการแสบร้อนชั่วคราว แต่ไม่ได้ป้องกันแผลหรือเลือดออกจาก NSAID และยังอาจบดบังอาการเตือนของแผล antacid เหมาะสำหรับบรรเทาอาการ dyspepsia เป็นครั้งคราว และต้องให้ห่างจากยาที่จับกับไอออนบวก เช่น fluoroquinolone, tetracycline หรือ bisphosphonate"
           }
         ],
-        "key_takeaway": "NSAID + corticosteroid → GI bleed ~4 เท่า → PPI ป้องกัน"
+        "key_takeaway": "Steroid เดี่ยวเสี่ยงน้อย แต่ steroid + NSAID + สูงวัย = ต้องมี PPI"
       }
     },
     {
@@ -941,84 +947,89 @@
       ],
       "correct_answer": "A",
       "difficulty": "hard",
-      "explanation": "TSH ถูกกด (< 0.1) จาก levothyroxine เกินขนาดเพิ่มการสลายกระดูกและความเสี่ยงกระดูกหักกับ AF ในหญิงวัยหมดประจำเดือน ขนาด 150 mcg สูงกว่าขนาด full replacement ที่คำนวณได้ (1.6 × 55 ≈ 88 mcg) จึงควรลดขนาดและตรวจ TSH ซ้ำ 6–8 สัปดาห์",
+      "explanation": "TSH ถูกกดต่ำร่วมกับ FT4 สูงจาก levothyroxine เกินขนาด (iatrogenic thyrotoxicosis) เร่งการสลายกระดูกและเพิ่มความเสี่ยง AF ในผู้สูงอายุ การจัดการที่แก้ต้นเหตุคือลดขนาด levothyroxine แล้วตรวจ TSH ซ้ำใน 6–8 สัปดาห์",
       "detailed_explanation": {
-        "summary": "Levothyroxine เกินขนาด (TSH ถูกกด) → bone loss/AF; ลดขนาดและตรวจ TSH ซ้ำ 6–8 สัปดาห์",
-        "reason": "โจทย์ถามอะไร: การรู้จัก DRP iatrogenic subclinical hyperthyroidism ที่เป็นสาเหตุมวลกระดูกลดลง (secondary osteoporosis)\n\nหลักการ/กลไกเชิงลึก: thyroid hormone ส่วนเกินเร่ง bone remodeling โดย osteoclast ทำงานมากกว่า osteoblast ช่วงเวลา remodeling สั้นลง จึงสูญเสียมวลกระดูกสุทธิ โดยเฉพาะกระดูก cortical ในหญิงวัยหมดประจำเดือน TSH < 0.1 สัมพันธ์กับความเสี่ยงกระดูกหักและ atrial fibrillation ที่เพิ่มขึ้น\n\nคำนวณ: ขนาด full replacement โดยประมาณ = 1.6 mcg/kg/day × 55 kg = 88 mcg/day (ผู้สูงอายุมักต้องการน้อยกว่านี้) ผู้ป่วยได้ 150 mcg ซึ่งเกินประมาณ 1.7 เท่า\n\nทำไมข้อ A ถูก: ในผู้ป่วยที่ไม่ได้มีข้อบ่งใช้ TSH suppression (เช่นมะเร็งไทรอยด์ความเสี่ยงสูง) ต้องลดขนาดลงทีละ 12.5–25 mcg และตรวจ TSH ซ้ำหลัง 6–8 สัปดาห์ (ประมาณ 5 half-lives, t½ ≈ 7 วัน) ตั้งเป้า TSH ในช่วงปกติ (ผู้สูงอายุอาจยอมรับค่าส่วนบน)\n\nการประยุกต์กับผู้ป่วยจริง: ประเมินความเสี่ยงกระดูกหักด้วย FRAX แนะนำ calcium/vitamin D การออกกำลังกาย และตรวจ ECG หากใจสั่น ทบทวนวิธีกินยา (ท้องว่าง แยกจาก calcium/iron ≥ 4 ชม.)\n\nจุดที่มักสับสนและกับดักข้อสอบ: เริ่มยากระดูกพรุนโดยไม่แก้สาเหตุเป็นการรักษาปลายเหตุ; ใช้ calcium ลดการดูดซึมโดยตั้งใจทำให้ระดับยาไม่แน่นอน; T3 มีความผันผวนสูง\n\nสรุปท่องสอบ: TSH ถูกกดจาก levothyroxine = secondary bone loss → ลดขนาด",
+        "summary": "Levothyroxine เกินขนาด (TSH ถูกกด) → bone loss + AF: ลดขนาดทีละ 12.5–25 mcg ตรวจ TSH ใน 6–8 สัปดาห์ ไม่ใช่เพิ่มยารักษากระดูก",
+        "reason": "โจทย์ถามอะไร: หญิงอายุ 68 ปี น้ำหนัก 55 kg ใช้ levothyroxine 150 mcg/day มีผล TSH 0.03 mIU/L และ FT4 สูงเล็กน้อย ใจสั่นเป็นครั้งคราว และ T-score −2.0 โจทย์ต้องการให้ระบุว่าเป็น drug-related problem จาก levothyroxine เกินขนาดที่ส่งผลต่อกระดูกและหัวใจ และแก้ที่ต้นเหตุ\n\nหลักการ/กลไกเชิงลึก: ฮอร์โมนไทรอยด์ (T3) จับ thyroid hormone receptor บน osteoblast และ osteoclast ระดับที่สูงเกินเพิ่ม bone turnover โดยการสลาย (resorption) มากกว่าการสร้าง ระยะ remodeling cycle สั้นลง ทำให้สูญเสียกระดูกสุทธิ โดยเฉพาะกระดูก cortical นอกจากนี้ TSH ที่ต่ำเองอาจลดการยับยั้ง osteoclast (TSH มีฤทธิ์ปกป้องกระดูกผ่าน TSH receptor) ด้านหัวใจ ฮอร์โมนไทรอยด์เพิ่ม β-adrenergic sensitivity และลด refractory period ของหัวใจห้องบน ผู้สูงอายุที่ TSH <0.1 mIU/L มีความเสี่ยง AF เพิ่มประมาณ 3 เท่า\n\nทำไมข้อ A ถูก: ขนาด 150 mcg/day เท่ากับประมาณ 2.7 mcg/kg/day สูงกว่าขนาด full replacement ทั่วไป (~1.6 mcg/kg/day) มาก การลดขนาดทีละ 12.5–25 mcg แล้วตรวจ TSH ใน 6–8 สัปดาห์ (levothyroxine มีครึ่งชีวิตราว 7 วัน ต้องใช้ 5 ครึ่งชีวิตจึงถึง steady state) เป็นการแก้ต้นเหตุทั้งเรื่องกระดูกและหัวใจ ผู้ป่วยไม่มีมะเร็งไทรอยด์ จึงไม่มีเหตุผลต้องกด TSH\n\nหลักฐานและแนวทางเวชปฏิบัติ: American Thyroid Association (2014) แนะนำปรับ levothyroxine ให้ TSH อยู่ในช่วงอ้างอิง และยอมรับเป้า TSH ที่สูงขึ้นได้ในผู้สูงอายุ ส่วนการกด TSH ใช้เฉพาะมะเร็งไทรอยด์บางกลุ่ม การศึกษาแบบ cohort พบว่า TSH ≤0.03 mIU/L ในผู้ที่ใช้ levothyroxine สัมพันธ์กับกระดูกหักและ AF แนวทางโรคกระดูกพรุนจัด hyperthyroidism (รวม iatrogenic) เป็นสาเหตุทุติยภูมิที่ต้องแก้ก่อน\n\nการประยุกต์กับผู้ป่วยจริง: ลดเป็น 125 mcg/day (หรือ 112 mcg/day) ตรวจ TSH และ FT4 ใน 6–8 สัปดาห์ แล้วปรับต่อทีละ 12.5–25 mcg จน TSH อยู่ในช่วงปกติ ให้กิน levothyroxine ตอนท้องว่าง 30–60 นาทีก่อนอาหารเช้า แยกจาก calcium และ iron อย่างน้อย 4 ชั่วโมง ให้ calcium และ vitamin D อย่างเพียงพอ และประเมินความเสี่ยงกระดูกหักซ้ำ (FRAX/BMD) เมื่อ TSH ปกติแล้ว\n\nการติดตามและสัญญาณอันตราย: ใจสั่น ชีพจรไม่สม่ำเสมอ (ตรวจ ECG หา AF) เจ็บหน้าอก มือสั่น นอนไม่หลับ น้ำหนักลด ถ้าลดขนาดมากเกินจะมีอ่อนเพลีย ขี้หนาว ท้องผูก น้ำหนักขึ้น\n\nจุดที่มักสับสนและกับดักข้อสอบ: (1) การเพิ่ม bisphosphonate โดยไม่แก้ต้นเหตุเป็นการรักษาปลายเหตุ และไม่แก้ความเสี่ยง AF (2) การตั้งใจกินพร้อม calcium เพื่อลดการดูดซึมทำให้ระดับยาไม่แน่นอน (3) liothyronine (T3) มีครึ่งชีวิตสั้น ระดับขึ้นลงมาก ยิ่งเสี่ยงต่อหัวใจและกระดูก (4) T-score −2.0 ยังอยู่ในช่วง osteopenia\n\nสรุปท่องสอบ: levothyroxine เกินขนาด (TSH ถูกกด) → bone loss + AF → ลดขนาดทีละ 12.5–25 mcg ตรวจ TSH ใน 6–8 สัปดาห์; คำนวณ mcg/kg เพื่อจับ over-replacement",
         "choices": [
           {
             "label": "A",
             "text": "ลดขนาด levothyroxine (เช่น เหลือ 125 mcg/day) และตรวจ TSH ซ้ำใน 6–8 สัปดาห์ ตั้งเป้า TSH ให้อยู่ในช่วงปกติ",
-            "explanation": "✓ ถูก — แก้สาเหตุของ bone loss และติดตามตาม half-life ของยา"
+            "explanation": "✓ ถูก — แก้ที่ต้นเหตุของ iatrogenic thyrotoxicosis ซึ่งเร่งการสลายกระดูกและเพิ่มความเสี่ยง AF ขนาดเดิม 2.7 mcg/kg/day สูงเกินความต้องการ ลดเป็นประมาณ 125 mcg/day ตรวจ TSH/FT4 ใน 6–8 สัปดาห์ (ถึง steady state) แล้วปรับต่อทีละ 12.5–25 mcg จน TSH อยู่ในช่วงปกติ ร่วมกับ calcium และ vitamin D ที่เพียงพอ"
           },
           {
             "label": "B",
             "text": "ใช้ levothyroxine ขนาดเดิมต่อ และเริ่ม alendronate 70 mg สัปดาห์ละครั้งเพื่อป้องกันกระดูกพรุน",
-            "explanation": "✗ ผิด — ไม่แก้ DRP ต้นเหตุและยังเสี่ยง AF"
+            "explanation": "✗ ผิด — การเพิ่ม alendronate รักษาปลายเหตุโดยปล่อยให้ thyrotoxicosis ทำลายกระดูกต่อไป และไม่ลดความเสี่ยง AF อีกทั้ง T-score −2.0 ยังเป็น osteopenia การเริ่ม bisphosphonate จะเหมาะเมื่อแก้สาเหตุทุติยภูมิแล้วและยังมี T-score ≤−2.5, มี fragility fracture หรือ FRAX เกินเกณฑ์การรักษา"
           },
           {
             "label": "C",
             "text": "แนะนำให้รับประทาน levothyroxine พร้อม calcium carbonate เพื่อลดการดูดซึมแทนการปรับขนาด",
-            "explanation": "✗ ผิด — ทำให้การดูดซึมไม่แน่นอน ควบคุมระดับยาไม่ได้"
+            "explanation": "✗ ผิด — calcium carbonate ลดการดูดซึม levothyroxine ได้แบบไม่แน่นอนขึ้นกับเวลาและปริมาณอาหาร ทำให้ระดับฮอร์โมนแกว่งและติดตามยาก ไม่ใช่วิธีปรับขนาดที่ถูกต้อง คำแนะนำที่เกี่ยวกับ calcium จริงคือให้แยกเวลารับประทานจาก levothyroxine อย่างน้อย 4 ชั่วโมงในผู้ที่ได้ทั้งสองอย่าง"
           },
           {
             "label": "D",
             "text": "เปลี่ยน levothyroxine เป็น liothyronine (T3) 25 mcg/day",
-            "explanation": "✗ ผิด — T3 ไม่ใช่ยามาตรฐาน ระดับผันผวนและเพิ่มผลต่อหัวใจ"
+            "explanation": "✗ ผิด — liothyronine (T3) ดูดซึมเร็ว ครึ่งชีวิตสั้นประมาณ 1 วัน ทำให้ระดับ T3 พุ่งขึ้นหลังกินยา เพิ่มใจสั่นและผลต่อกระดูก และ 25 mcg T3 มีฤทธิ์ใกล้เคียง levothyroxine ประมาณ 75–100 mcg ซึ่งไม่ได้แก้ปัญหา T3 อาจใช้ระยะสั้นในบางสถานการณ์ เช่น เตรียมผู้ป่วยมะเร็งไทรอยด์ก่อนสแกนด้วยรังสี"
           }
         ],
-        "key_takeaway": "Levothyroxine เกินขนาด (TSH < 0.1) → กระดูกบาง + AF → ลดขนาด"
+        "key_takeaway": "TSH ถูกกดจาก levothyroxine = ลดยา ไม่ใช่เพิ่ม bisphosphonate",
+        "calculation_steps": [
+          "ขนาดเดิม = 150 mcg/day ÷ 55 kg ≈ 2.7 mcg/kg/day",
+          "ขนาด full replacement ทั่วไป ≈ 1.6 mcg/kg/day × 55 kg ≈ 88 mcg/day (ผู้สูงอายุมักต้องการน้อยกว่านี้)",
+          "จึงได้ยาเกินความต้องการ ลดทีละ 12.5–25 mcg → 125 mcg/day แล้วตรวจ TSH ใน 6–8 สัปดาห์และปรับต่อ"
+        ]
       }
     },
     {
-      "scenario": "ผู้ป่วยหญิงอายุ 60 ปี วัยหมดประจำเดือน เป็นมะเร็งเต้านมระยะแรก hormone receptor-positive เริ่มใช้ anastrozole 1 mg/day เป็นเวลา 5 ปี ตรวจ BMD พบ T-score −2.2 ที่ lumbar spine ไม่เคยมีกระดูกหัก การทำงานของไตปกติ ข้อใดเป็นการจัดการด้านกระดูกที่เหมาะสมที่สุด",
+      "scenario": "ผู้ป่วยชายอายุ 68 ปี เป็น COPD ใช้ theophylline SR 200 mg วันละ 2 ครั้ง (ระดับยา 12 mg/L) ร่วมกับยาสูดพ่น เป็นเกาต์มี tophi, eGFR 70 mL/min/1.73 m², HLA-B*5801 เป็นลบ แพทย์เริ่ม allopurinol 100 mg/day และวางแผนปรับเพิ่มจนอาจถึง 600 mg/day เพื่อให้ serum urate <6 mg/dL ข้อใดถูกต้องที่สุดเกี่ยวกับอันตรกิริยาระหว่างยาลดกรดยูริกกลุ่ม xanthine oxidase inhibitor กับ theophylline ในผู้ป่วยรายนี้",
       "choices": [
         {
           "label": "A",
-          "text": "เริ่ม raloxifene 60 mg/day ร่วมกับ anastrozole"
+          "text": "Allopurinol เหนี่ยวนำ CYP1A2 ทำให้ระดับ theophylline ลดลง จึงต้องเพิ่มขนาด theophylline ตั้งแต่เริ่ม allopurinol"
         },
         {
           "label": "B",
-          "text": "ให้ calcium และ vitamin D ร่วมกับ denosumab 60 mg ฉีดใต้ผิวหนังทุก 6 เดือน (หรือ zoledronic acid)"
+          "text": "Allopurinol ขนาดสูง (ประมาณ 600 mg/day) ลด clearance ของ theophylline ได้ จึงควรติดตามระดับ theophylline และอาการพิษ (คลื่นไส้ ใจสั่น มือสั่น ชัก) เมื่อปรับขนาด allopurinol ขึ้นถึงขนาดสูง"
         },
         {
           "label": "C",
-          "text": "ให้ denosumab 120 mg ฉีดใต้ผิวหนังทุก 4 สัปดาห์"
+          "text": "ควรเปลี่ยนเป็น febuxostat เพราะเป็น non-purine จึงไม่มีผลใด ๆ ต่อการเปลี่ยนแปลงของ theophylline และ metabolite"
         },
         {
           "label": "D",
-          "text": "เปลี่ยน anastrozole เป็น letrozole เพื่อหลีกเลี่ยงการสูญเสียมวลกระดูก"
+          "text": "Allopurinol ทุกขนาดเป็นข้อห้ามใช้ร่วมกับ theophylline ต้องหยุด theophylline ก่อนเริ่ม allopurinol"
         }
       ],
       "correct_answer": "B",
       "difficulty": "hard",
-      "explanation": "Aromatase inhibitor ลดเอสโตรเจนจนเกือบหมด ทำให้มวลกระดูกลดลงเร็ว ผู้ที่มี T-score < −2.0 ควรได้ bone-modifying agent ได้แก่ denosumab 60 mg SC ทุก 6 เดือน หรือ zoledronic acid ร่วมกับ calcium/vitamin D",
+      "explanation": "Allopurinol ขนาดสูง (600 mg/day) ลด clearance ของ theophylline ได้ราว 20–25% ทำให้ระดับยาที่มีดัชนีการรักษาแคบสูงขึ้น จึงควรติดตามระดับ theophylline และอาการพิษเมื่อปรับ allopurinol ขึ้นถึงขนาดสูง ส่วนขนาดต่ำมักไม่มีผลสำคัญ",
       "detailed_explanation": {
-        "summary": "AI-associated bone loss + T-score < −2.0 → Ca/vit D + denosumab 60 mg ทุก 6 เดือน หรือ zoledronic acid",
-        "reason": "โจทย์ถามอะไร: การป้องกันการสูญเสียมวลกระดูกจาก aromatase inhibitor (AI) ในมะเร็งเต้านมระยะแรก\n\nหลักการ/กลไกเชิงลึก: ในหญิงวัยหมดประจำเดือน เอสโตรเจนมาจากการเปลี่ยน androgen โดย aromatase ในเนื้อเยื่อไขมัน AI (anastrozole, letrozole, exemestane) ลดเอสโตรเจนลงมากกว่า 90% ทำให้ RANKL เพิ่ม osteoclast ทำงานมาก มวลกระดูกลดลงปีละประมาณ 2–3% ซึ่งเร็วกว่าวัยหมดประจำเดือนตามธรรมชาติ หลักการเดียวกันใช้กับผู้ชายมะเร็งต่อมลูกหมากที่ได้ androgen deprivation therapy (ADT)\n\nทำไมข้อ B ถูก: แนวทาง ASCO/ESMO และ consensus ด้านกระดูกแนะนำให้ใช้ bone-modifying agent เมื่อ T-score < −2.0 หรือมีปัจจัยเสี่ยงตั้งแต่ 2 ข้อ denosumab 60 mg SC ทุก 6 เดือน (ABCSG-18 ลดกระดูกหักได้ประมาณครึ่งหนึ่ง) หรือ zoledronic acid 4 mg IV ทุก 6 เดือน (ใช้ในบริบท adjuvant) หรือ 5 mg ปีละครั้ง ร่วมกับ calcium 1,000–1,200 mg/day และ vitamin D 800–1,000 IU/day\n\nการประยุกต์กับผู้ป่วยจริง: ตรวจฟันก่อนเริ่ม (ONJ) ตรวจ calcium/vitamin D อย่าหยุด denosumab กะทันหันเพราะเกิด rebound vertebral fractures ต้องต่อด้วย bisphosphonate\n\nจุดที่มักสับสนและกับดักข้อสอบ: denosumab 120 mg ทุก 4 สัปดาห์ (Xgeva) เป็นขนาดสำหรับ bone metastasis; raloxifene ไม่ควรใช้ร่วม AI; AI ทุกตัวทำให้กระดูกบาง\n\nสรุปท่องสอบ: AI/ADT bone loss → denosumab 60 mg q6mo หรือ zoledronic acid + Ca/D",
+        "summary": "XO inhibitor + theophylline: allopurinol ≥600 mg/day ลด clearance theophylline ~20–25% → ติดตามระดับยา; febuxostat เปลี่ยน metabolite (1-methylxanthine เพิ่มมาก) ฉลากให้ใช้อย่างระมัดระวัง",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วย COPD ที่ใช้ theophylline ระดับ 12 mg/L เริ่ม allopurinol และอาจปรับถึง 600 mg/day โจทย์ต้องการให้รู้ว่าอันตรกิริยาระหว่าง XO inhibitor กับ theophylline มีจริง ขึ้นกับขนาด และจัดการด้วยการติดตาม ไม่ใช่ข้อห้าม\n\nหลักการ/กลไกเชิงลึก: theophylline (1,3-dimethylxanthine) ถูกเปลี่ยนแปลงที่ตับเป็นหลักโดย CYP1A2 (N-demethylation เป็น 1-methylxanthine และ 3-methylxanthine) และ CYP2E1/CYP1A2 (8-hydroxylation เป็น 1,3-dimethyluric acid) จากนั้น 1-methylxanthine ถูก xanthine oxidase (XO) เปลี่ยนต่อเป็น 1-methyluric acid การศึกษาในอาสาสมัครพบว่า allopurinol 300 mg วันละ 2 ครั้ง (600 mg/day) ทำให้ครึ่งชีวิตและ AUC ของ theophylline เพิ่มราว 25% และ clearance ลดลงราว 20% ขณะที่ขนาด 300 mg/day มักไม่มีผลสำคัญ ส่วน febuxostat 80 mg ไม่เปลี่ยนระดับ theophylline มากนัก แต่ทำให้ 1-methylxanthine ในปัสสาวะเพิ่มขึ้นหลายร้อยเท่าและ 1-methyluric acid ลดลงเกือบหมด ฉลากในสหรัฐฯ จึงให้ใช้อย่างระมัดระวังเพราะไม่ทราบความปลอดภัยระยะยาวของ metabolite ที่สะสม\n\nทำไมข้อ B ถูก: ระบุได้ถูกทั้งทิศทาง (clearance ลด ระดับเพิ่ม) ความสัมพันธ์กับขนาด (เด่นที่ประมาณ 600 mg/day) และการจัดการที่เหมาะสม (ติดตามระดับยาและอาการพิษ) theophylline มีช่วงรักษาแคบ (มักตั้งเป้า 5–15 mg/L) ผู้ป่วยอยู่ที่ 12 mg/L อยู่แล้ว การเพิ่มขึ้น 20–25% อาจทำให้เกิน 15 mg/L\n\nหลักฐานและแนวทางเวชปฏิบัติ: ฉลาก allopurinol ระบุว่าขนาดสูงอาจเพิ่มระดับ theophylline และแนะนำติดตามระดับยา ฉลาก febuxostat (US) ระบุให้ใช้ร่วมกับ theophylline อย่างระมัดระวัง ไม่ใช่ข้อห้าม (ข้อห้ามคือ azathioprine และ mercaptopurine) ACR 2020 แนะนำ allopurinol เป็น ULT แรก เริ่ม ≤100 mg/day แล้วปรับทุก 2–5 สัปดาห์ตามเป้า urate\n\nการประยุกต์กับผู้ป่วยจริง: เริ่ม allopurinol 100 mg/day ร่วมกับ prophylaxis ปรับเพิ่มทีละ 100 mg ทุก 2–5 สัปดาห์ เมื่อถึง 400–600 mg/day ให้ตรวจระดับ theophylline หลังขนาดคงที่ราว 1 สัปดาห์ (ระดับ trough) หากระดับสูงเกินเป้า ให้แพทย์ลดขนาด theophylline เช่น ลดลง 25% บอกผู้ป่วยว่า 'ถ้าคลื่นไส้ อาเจียน ใจสั่น มือสั่น นอนไม่หลับมากขึ้น ให้แจ้งทันที' และทบทวนปัจจัยอื่นที่เปลี่ยนระดับ theophylline เช่น การเลิกบุหรี่ (ระดับเพิ่ม) ciprofloxacin หรือ fluvoxamine (ระดับเพิ่ม)\n\nการติดตามและสัญญาณอันตราย: ระดับ >20 mg/L เริ่มคลื่นไส้อาเจียน หัวใจเต้นเร็ว ระดับสูงกว่านั้นเสี่ยง arrhythmia และชักซึ่งอาจเกิดได้โดยไม่มีอาการนำ\n\nจุดที่มักสับสนและกับดักข้อสอบ: (1) allopurinol ไม่ได้เหนี่ยวนำ CYP1A2 (ตัวเหนี่ยวนำคือการสูบบุหรี่ rifampicin carbamazepine) (2) 'non-purine' ไม่ได้แปลว่าไม่มีผลต่อ methylxanthine (3) ข้อห้ามของ XO inhibitor คือคู่ thiopurine ไม่ใช่ theophylline (4) อันตรกิริยาขึ้นกับขนาด จึงต้องคิดถึงอีกครั้งเมื่อปรับ allopurinol ขึ้น ไม่ใช่เฉพาะวันแรก\n\nสรุปท่องสอบ: allopurinol ≈600 mg/day → theophylline clearance ลด ~20–25% → ตรวจระดับ theophylline; febuxostat = ใช้อย่างระวัง (metabolite สะสม); ห้ามใช้ร่วมจริงคือ XO inhibitor + AZA/6-MP",
         "choices": [
           {
             "label": "A",
-            "text": "เริ่ม raloxifene 60 mg/day ร่วมกับ anastrozole",
-            "explanation": "✗ ผิด — SERM ไม่ควรใช้ร่วมกับ AI อาจลดประสิทธิภาพต้านมะเร็ง"
+            "text": "Allopurinol เหนี่ยวนำ CYP1A2 ทำให้ระดับ theophylline ลดลง จึงต้องเพิ่มขนาด theophylline ตั้งแต่เริ่ม allopurinol",
+            "explanation": "✗ ผิด — allopurinol ไม่ได้เหนี่ยวนำ CYP1A2 และผลที่รายงานคือ clearance ของ theophylline 'ลดลง' ระดับยาจึงเพิ่มขึ้น การเพิ่ม theophylline จะยิ่งเสี่ยงพิษ การเพิ่มขนาด theophylline จะพิจารณาเมื่อมี CYP1A2 inducer เช่น การสูบบุหรี่ที่กลับมาสูบใหม่ rifampicin หรือ carbamazepine โดยอิงระดับยา"
           },
           {
             "label": "B",
-            "text": "ให้ calcium และ vitamin D ร่วมกับ denosumab 60 mg ฉีดใต้ผิวหนังทุก 6 เดือน (หรือ zoledronic acid)",
-            "explanation": "✓ ถูก — bone-modifying agent ตามแนวทางสำหรับ AI-associated bone loss"
+            "text": "Allopurinol ขนาดสูง (ประมาณ 600 mg/day) ลด clearance ของ theophylline ได้ จึงควรติดตามระดับ theophylline และอาการพิษ (คลื่นไส้ ใจสั่น มือสั่น ชัก) เมื่อปรับขนาด allopurinol ขึ้นถึงขนาดสูง",
+            "explanation": "✓ ถูก — allopurinol 600 mg/day ทำให้ clearance ของ theophylline ลดลงราว 20% และ AUC เพิ่มราว 25% ขณะที่ขนาดต่ำมักไม่มีผลสำคัญ theophylline มีช่วงรักษาแคบและผู้ป่วยอยู่ที่ 12 mg/L อยู่แล้ว จึงควรตรวจระดับ theophylline หลังปรับ allopurinol ถึงขนาดสูงและคงที่ราว 1 สัปดาห์ และสอนอาการพิษ"
           },
           {
             "label": "C",
-            "text": "ให้ denosumab 120 mg ฉีดใต้ผิวหนังทุก 4 สัปดาห์",
-            "explanation": "✗ ผิด — เป็นขนาดสำหรับ bone metastasis ไม่ใช่การป้องกันกระดูกพรุน"
+            "text": "ควรเปลี่ยนเป็น febuxostat เพราะเป็น non-purine จึงไม่มีผลใด ๆ ต่อการเปลี่ยนแปลงของ theophylline และ metabolite",
+            "explanation": "✗ ผิด — febuxostat ยับยั้ง XO ที่เปลี่ยน 1-methylxanthine เป็น 1-methyluric acid ทำให้ 1-methylxanthine เพิ่มขึ้นหลายร้อยเท่า ฉลากจึงให้ใช้ร่วมกับ theophylline อย่างระมัดระวัง และ febuxostat เป็นทางเลือกที่สองตาม ACR 2020 febuxostat จะเหมาะเมื่อ HLA-B*5801 เป็นบวกหรือแพ้/ทน allopurinol ไม่ได้ โดยยังต้องติดตาม"
           },
           {
             "label": "D",
-            "text": "เปลี่ยน anastrozole เป็น letrozole เพื่อหลีกเลี่ยงการสูญเสียมวลกระดูก",
-            "explanation": "✗ ผิด — letrozole เป็น AI ทำให้กระดูกบางเช่นเดียวกัน"
+            "text": "Allopurinol ทุกขนาดเป็นข้อห้ามใช้ร่วมกับ theophylline ต้องหยุด theophylline ก่อนเริ่ม allopurinol",
+            "explanation": "✗ ผิด — allopurinol กับ theophylline ไม่ใช่ข้อห้ามใช้ร่วม เป็นอันตรกิริยาที่ขึ้นกับขนาดและจัดการได้ด้วยการติดตามระดับยา การหยุด theophylline ทำให้ COPD อาจแย่ลงโดยไม่จำเป็น คู่ที่เป็นข้อห้ามจริงของ XO inhibitor คือ febuxostat กับ azathioprine/mercaptopurine ส่วน allopurinol กับ thiopurine ใช้ได้เมื่อลด thiopurine เหลือ 1/4–1/3"
           }
         ],
-        "key_takeaway": "AI/ADT → bone loss; T-score < −2.0 → denosumab 60 mg q6mo หรือ zoledronic acid + Ca/D"
+        "key_takeaway": "Allopurinol ขนาดสูง + theophylline → วัดระดับ theophylline"
       }
     }
   ]
