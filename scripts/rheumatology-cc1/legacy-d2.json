@@ -1,0 +1,785 @@
+{
+ "exam_day": 2,
+ "questions": [
+  {
+   "id": "04566e08-74c7-4bc9-9d34-dffbefd471fa",
+   "scenario": "ผู้ป่วยหญิงอายุ 68 ปี เป็น postmenopausal osteoporosis รับประทาน alendronate 70 mg สัปดาห์ละครั้งมาครบ 5 ปี ไม่เคยมีกระดูกหัก ผล DXA ล่าสุด T-score total hip −2.0 (ก่อนเริ่มยา −2.6) ไม่ได้ใช้ glucocorticoid และไม่มีโรคร่วมที่เพิ่มความเสี่ยงกระดูกหัก แพทย์พิจารณาหยุดยาชั่วคราว (drug holiday) ข้อใดอธิบายเหตุผลของการทำ drug holiday ในผู้ป่วยรายนี้ได้ถูกต้องที่สุด",
+   "choices": [
+    {
+     "label": "A",
+     "text": "เพราะ alendronate หมดฤทธิ์หลังใช้ครบ 5 ปี การใช้ต่อจึงไม่มีประโยชน์ใด ๆ"
+    },
+    {
+     "label": "B",
+     "text": "เพราะการหยุดยาทำให้เกิด rebound bone formation ซึ่งเพิ่ม BMD ได้มากกว่าการใช้ยาต่อ"
+    },
+    {
+     "label": "C",
+     "text": "เพราะ bisphosphonate สะสมในกระดูกและยังคงฤทธิ์ต้านการสลายกระดูกหลังหยุดยา ขณะที่ความเสี่ยง atypical femoral fracture และ ONJ เพิ่มตามระยะเวลาใช้ ในผู้ที่ความเสี่ยงกระดูกหักลดลงแล้วจึงหยุดพักได้"
+    },
+    {
+     "label": "D",
+     "text": "เพราะหลังใช้ยา 5 ปี ต้องหยุด bisphosphonate ทุกรายเสมอ ไม่ว่าความเสี่ยงกระดูกหักจะสูงเพียงใด"
+    }
+   ],
+   "correct_answer": "C",
+   "difficulty": "hard",
+   "explanation": "Bisphosphonate สะสมในกระดูกจึงยังมีฤทธิ์หลังหยุด ขณะที่ความเสี่ยง AFF/ONJ เพิ่มตามระยะเวลาใช้ ผู้ที่ใช้ oral ครบ 5 ปี (IV 3 ปี) และความเสี่ยงไม่สูงจึงหยุดพัก 2–3 ปีได้ แต่ผู้ที่ยังเสี่ยงสูงควรใช้ต่อ",
+   "detailed_explanation": {
+    "summary": "Drug holiday ใช้กับ bisphosphonate เท่านั้น เพราะยาค้างในกระดูก — หยุดได้ในผู้ความเสี่ยงต่ำ-ปานกลางหลัง oral 5 ปี/IV 3 ปี เพื่อลด AFF/ONJ; ผู้เสี่ยงสูงใช้ต่อหรือเปลี่ยนยา",
+    "reason": "โจทย์ถามอะไร: ถามเหตุผลเชิงเภสัชวิทยาและหลักฐานของการหยุด alendronate ชั่วคราวหลังใช้ 5 ปี ที่ไม่เคยหักและ hip T-score ดีขึ้นเป็น −2.0 ต้องเข้าใจทั้ง 'ทำไมหยุดได้' (ยาค้างในกระดูก) และ 'ทำไมควรหยุด' (ความเสี่ยงสะสม) รวมถึงรู้ว่าใครไม่ควรหยุด\n\nหลักการ/กลไกเชิงลึก: Bisphosphonate เป็น pyrophosphate analog จับกับ hydroxyapatite บริเวณที่มีการ remodel แล้วถูก osteoclast กลืนเข้าไป ยับยั้ง farnesyl pyrophosphate synthase ใน mevalonate pathway ทำให้ osteoclast ทำงานไม่ได้และตาย ยาที่ฝังในกระดูกถูกปลดปล่อยใหม่ช้า ๆ จึงมี terminal half-life ในกระดูก >10 ปี ฤทธิ์คงอยู่แม้หยุดยา ต่างจาก denosumab ที่ไม่สะสม ในทางกลับกัน การกด remodeling นาน ๆ ทำให้ microdamage สะสม กระดูกเปราะแบบ cortical ที่ต้นขา (AFF) และการหายของแผลในกระดูกขากรรไกรช้าลง (ONJ)\n\nทำไมข้อ C ถูก: เพราะรวมสองแนวคิดถูกต้อง: ฤทธิ์ค้างทำให้หยุดแล้วยังได้การป้องกันบางส่วน และความเสี่ยง AFF สูงขึ้นตามระยะเวลาใช้ (Black 2020 NEJM: ใช้ ≥8 ปีเสี่ยงสูงขึ้นหลายสิบเท่า แม้อัตราสัมบูรณ์ต่ำ) ผู้ป่วยรายนี้ไม่มีเกณฑ์ high risk จึงเป็นผู้ได้ประโยชน์จาก holiday\n\nหลักฐานและแนวทางเวชปฏิบัติ: FLEX trial (Black 2006 JAMA): หญิงที่ใช้ alendronate ~5 ปี สุ่มใช้ต่ออีก 5 ปีหรือ placebo พบว่า non-vertebral fracture ไม่ต่างกัน, morphometric vertebral fracture ไม่ต่าง แต่ clinical vertebral fracture ลดลงในกลุ่มใช้ต่อ (2.4% vs 5.3%) และ post-hoc พบประโยชน์ชัดในผู้ที่ femoral neck T-score ≤ −2.5 หรือมี vertebral fracture เดิม HORIZON-PFT extension (Black 2012 JBMR): zoledronic acid 6 ปีเทียบ 3 ปี ลด morphometric vertebral fracture (3.0% vs 6.2%) แต่ non-vertebral ไม่ต่าง ASBMR 2016 และ AACE 2020: หลัง oral 5 ปี/IV 3 ปี ถ้าเสี่ยงไม่สูงให้ holiday 2–3 ปี ถ้าเสี่ยงสูงใช้ oral ต่อถึง 10 ปี/IV ถึง 6 ปี หรือเปลี่ยนยา\n\nการประยุกต์กับผู้ป่วยจริง: อธิบายผู้ป่วยว่า 'หยุดพัก' ไม่ใช่ 'หายแล้ว' ยังต้องได้ calcium 1,000–1,200 mg/วันจากอาหาร+เสริม และ vitamin D ให้ 25(OH)D ≥30 ng/mL ออกกำลังกายแบบลงน้ำหนัก ป้องกันการหกล้ม งดบุหรี่ จำกัดแอลกอฮอล์ นัด DXA ใน 2–3 ปี ถ้าหักใหม่หรือ BMD ลดเกิน least significant change ให้เริ่มยากลับ\n\nการติดตามและสัญญาณอันตราย: ผู้ที่ 'ไม่ควร' ทำ holiday: เคยมี hip หรือ vertebral fracture (หรือหักหลายตำแหน่ง), หักระหว่างใช้ยา, hip T-score หลังรักษายัง ≤ −2.5, FRAX ยังสูง, ใช้ glucocorticoid ขนาดสูงต่อเนื่อง, หรือมีโรค/ยาที่เร่งการสูญเสียกระดูก (เช่น aromatase inhibitor) ถ้าปวดต้นขา/ขาหนีบ ส่ง X-ray femur ทั้งสองข้าง (AFF); แผลในปากไม่หาย คิดถึง ONJ\n\nจุดที่มักสับสนและกับดักข้อสอบ: (1) Denosumab ไม่มี drug holiday — หยุดต้องต่อด้วย bisphosphonate (2) ระยะเวลาก่อนพิจารณาต่างกัน: oral 5 ปี, IV zoledronic 3 ปี (3) Holiday ไม่ได้ทำเพื่อประหยัดหรือเพราะ BMD สูงสุด (4) FLEX ไม่ได้บอกว่า 'ใช้ต่อไม่มีประโยชน์' แต่บอกว่าประโยชน์ส่วนเพิ่มจำกัดในผู้ความเสี่ยงต่ำ\n\nสรุปท่องสอบ: Bisphosphonate ค้างในกระดูก → หยุดพักได้; AFF/ONJ เพิ่มตามปี → ควรพัก; เสี่ยงสูง (T ≤ −2.5, เคยหัก, หักขณะใช้ยา, steroid) → ใช้ต่อหรือเปลี่ยนยา",
+    "choices": [
+     {
+      "label": "A",
+      "text": "เพราะ alendronate หมดฤทธิ์หลังใช้ครบ 5 ปี การใช้ต่อจึงไม่มีประโยชน์ใด ๆ",
+      "explanation": "✗ ผิด เพราะ bisphosphonate ไม่ได้ 'หมดฤทธิ์' ที่ 5 ปี ยาที่จับ hydroxyapatite ยังคงปลดปล่อยและยับยั้ง osteoclast ต่อไปอีกหลายปีหลังหยุด และ FLEX แสดงว่าการใช้ต่อถึง 10 ปียังลด clinical vertebral fracture ได้ (RR ~0.45) จึงยังมีประโยชน์ในผู้ที่เสี่ยงสูง ข้อนี้จะถูกเฉพาะถ้าเปลี่ยนเป็น 'ยาที่ฤทธิ์หายเร็วเมื่อหยุด' เช่น denosumab ซึ่งเป็นเหตุผลที่ denosumab ห้ามทำ drug holiday"
+     },
+     {
+      "label": "B",
+      "text": "เพราะการหยุดยาทำให้เกิด rebound bone formation ซึ่งเพิ่ม BMD ได้มากกว่าการใช้ยาต่อ",
+      "explanation": "✗ ผิด หลังหยุด alendronate BMD จะค่อย ๆ คงที่หรือลดลงเล็กน้อย (FLEX: total hip ลด ~2.4% เทียบกับกลุ่มใช้ต่อ) ไม่ได้เพิ่มขึ้นจาก rebound การทำ holiday จึงไม่ได้มีเป้าหมายเพื่อเพิ่ม BMD ภาวะที่มีการเปลี่ยนแปลงแบบ rebound จริงคือ rebound bone resorption หลังหยุด denosumab ซึ่งเป็นผลเสีย (multiple vertebral fractures) ไม่ใช่ผลดี"
+     },
+     {
+      "label": "C",
+      "text": "เพราะ bisphosphonate สะสมในกระดูกและยังคงฤทธิ์ต้านการสลายกระดูกหลังหยุดยา ขณะที่ความเสี่ยง atypical femoral fracture และ ONJ เพิ่มตามระยะเวลาใช้ ในผู้ที่ความเสี่ยงกระดูกหักลดลงแล้วจึงหยุดพักได้",
+      "explanation": "✓ ถูก alendronate จับแน่นกับ hydroxyapatite มี skeletal half-life หลายปี ฤทธิ์จึง 'ค้าง' หลังหยุด ส่วน AFF เพิ่มชัดเมื่อใช้ >3–5 ปี และ ONJ สัมพันธ์กับขนาดสะสม ผู้ป่วยรายนี้ใช้ครบ 5 ปี ไม่เคยหัก ไม่ใช้ steroid และ hip T-score ขึ้นมาเป็น −2.0 (> −2.5) จึงเป็นความเสี่ยงต่ำ-ปานกลาง ตรงกับเกณฑ์ ASBMR/AACE ที่ให้หยุดพัก 2–3 ปีแล้วประเมินซ้ำ"
+     },
+     {
+      "label": "D",
+      "text": "เพราะหลังใช้ยา 5 ปี ต้องหยุด bisphosphonate ทุกรายเสมอ ไม่ว่าความเสี่ยงกระดูกหักจะสูงเพียงใด",
+      "explanation": "✗ ผิด drug holiday ไม่ใช่กฎตายตัว ผู้ที่ยังเสี่ยงสูง เช่น hip T-score ≤ −2.5 หลังรักษา เคยมี hip/vertebral fracture หักระหว่างใช้ยา หรือยังใช้ glucocorticoid ขนาดสูง ควรใช้ oral bisphosphonate ต่อได้ถึง 10 ปี (IV ถึง 6 ปี) หรือเปลี่ยนเป็นยาอื่น ข้อนี้จะเป็นจริงเฉพาะกรณีผู้ป่วยความเสี่ยงต่ำทุกข้อเท่านั้น ไม่ใช่ 'ทุกราย'"
+     }
+    ],
+    "key_takeaway": "Oral BP 5 ปี / IV 3 ปี + เสี่ยงไม่สูง = พัก 2–3 ปี; เคยหัก/T ≤ −2.5/steroid = ห้ามพัก"
+   }
+  },
+  {
+   "id": "092d80f2-3401-48d2-9a2f-8cb2c9e68236",
+   "scenario": "ผู้ป่วยชายอายุ 40 ปี พนักงานสำนักงาน ปวดหลังส่วนล่างเฉียบพลันหลังยกของมา 3 วัน ไม่มีปวดร้าวลงขา ไม่มีชา อ่อนแรง หรือปัสสาวะ/อุจจาระผิดปกติ ไม่มีไข้ ไม่มีประวัติมะเร็งหรือบาดเจ็บรุนแรง (ไม่มี red flags) ไม่มีโรคประจำตัว ไม่มีประวัติแผลในกระเพาะอาหาร ตามแนวทาง American College of Physicians (ACP) 2017 ข้อใดเหมาะสมที่สุด",
+   "choices": [
+    {
+     "label": "A",
+     "text": "Ibuprofen 400 mg วันละ 3 ครั้งหลังอาหาร ระยะสั้น ร่วมกับประคบร้อน และแนะนำให้เคลื่อนไหวทำกิจวัตรตามปกติเท่าที่ทนได้"
+    },
+    {
+     "label": "B",
+     "text": "Paracetamol 1,000 mg วันละ 4 ครั้งเพียงอย่างเดียว ร่วมกับนอนพักบนเตียงจนกว่าอาการปวดจะหาย"
+    },
+    {
+     "label": "C",
+     "text": "Tramadol 50 mg ทุก 6 ชั่วโมง เป็นยาตัวแรก"
+    },
+    {
+     "label": "D",
+     "text": "Gabapentin 300 mg วันละ 3 ครั้ง"
+    }
+   ],
+   "correct_answer": "A",
+   "difficulty": "easy",
+   "explanation": "ACP 2017: acute LBP ไม่มี red flags เริ่มด้วยการรักษาที่ไม่ใช้ยา (ประคบร้อน คงการเคลื่อนไหว) ถ้าต้องใช้ยาเลือก NSAID หรือ skeletal muscle relaxant ระยะสั้น ส่วน paracetamol ไม่ได้ผล (PACE trial) และ opioid/gabapentin ไม่ใช่ยาตัวแรก",
+   "detailed_explanation": {
+    "summary": "Acute LBP: ประคบร้อน + เคลื่อนไหว + NSAID ระยะสั้น; paracetamol เดี่ยวไม่ต่างจาก placebo; ห้ามนอนพักนาน",
+    "reason": "โจทย์ถามอะไร: ผู้ป่วย acute non-specific low back pain 3 วัน ไม่มี red flags และไม่มีข้อห้ามของ NSAID ถามการรักษาที่เหมาะสมที่สุดตาม ACP 2017 ซึ่งต้องรู้ทั้งลำดับการรักษาและยาที่ 'ไม่ได้ผล' ตามหลักฐานใหม่\n\nหลักการ/กลไกเชิงลึก: ปวดหลังเฉียบพลันส่วนใหญ่เกิดจากการยืดหรือฉีกขาดเล็กน้อยของกล้ามเนื้อ เอ็น และ facet joint ทำให้เกิดการอักเสบเฉพาะที่ผ่าน prostaglandin และกล้ามเนื้อเกร็งป้องกันตัว NSAID ยับยั้ง COX-1/COX-2 ลด PGE2 ที่ไวต่อ nociceptor จึงได้ผลทั้งปวดและอักเสบ ประคบร้อนเพิ่มเลือดไปเลี้ยงและลดการเกร็งของกล้ามเนื้อ การเคลื่อนไหวช่วยป้องกัน deconditioning และ fear-avoidance ที่ทำให้กลายเป็นปวดเรื้อรัง ส่วน paracetamol มีฤทธิ์ส่วนกลางอ่อนและไม่ต้านการอักเสบ ซึ่งอธิบายได้ว่าทำไมไม่เห็นผลเหนือ placebo ในปวดหลัง ธรรมชาติของโรค 70–90% ดีขึ้นเองใน 4–6 สัปดาห์\n\nทำไมข้อ A ถูก: Ibuprofen 400 mg TID หลังอาหารเป็น NSAID ขนาดต่ำ-ปานกลาง ความเสี่ยง GI และ CV ต่ำในผู้ป่วยอายุ 40 ปีไม่มีโรคร่วม ร่วมกับประคบร้อนและคงกิจวัตร ตรงกับทั้งขั้นที่ 1 (non-drug) และขั้นที่ 2 (NSAID หรือ muscle relaxant) ของ ACP\n\nหลักฐานและแนวทางเวชปฏิบัติ: ACP 2017 (Qaseem, Ann Intern Med): acute/subacute LBP ส่วนใหญ่หายเองได้ แนะนำ non-pharmacologic ก่อน (superficial heat — moderate-quality evidence; massage, acupuncture, spinal manipulation) ถ้าต้องใช้ยาให้ NSAID หรือ skeletal muscle relaxant (strong recommendation, moderate-quality) และระบุว่า paracetamol ไม่ได้ผลดีกว่า placebo ส่วน systemic corticosteroid ไม่แนะนำ PACE trial (Lancet 2014) ยืนยันว่า paracetamol ทั้งแบบประจำและ PRN ไม่ลดเวลาที่หายปวด NICE NG59 ก็ไม่แนะนำ paracetamol เดี่ยวหรือ gabapentinoid\n\nการประยุกต์กับผู้ป่วยจริง: จ่าย ibuprofen 400 mg วันละ 3 ครั้งหลังอาหาร 5–7 วัน ประเมินซ้ำถ้าไม่ดีขึ้นใน 1–2 สัปดาห์ บอกผู้ป่วยว่า 'ปวดหลังแบบนี้ส่วนใหญ่ดีขึ้นเองใน 2–6 สัปดาห์ ยิ่งขยับยิ่งหายเร็ว' แนะนำประคบร้อน 15–20 นาที วันละหลายครั้ง หลีกเลี่ยงยกของหนักหรือบิดตัว ไม่ควรนอนพักนานเกิน 1–2 วัน ห้ามกิน NSAID ชนิดอื่นร่วม (รวมยาชุด/ยาสมุนไพรที่มี NSAID) ถ้ากล้ามเนื้อเกร็งมากอาจเพิ่ม muscle relaxant ระยะสั้นโดยเตือนเรื่องง่วงห้ามขับรถ\n\nการติดตามและสัญญาณอันตราย: Red flags ที่ต้องส่งพบแพทย์ทันที: ชารอบก้น/ฝีเย็บ ปัสสาวะไม่ออกหรือกลั้นไม่ได้ (cauda equina) ขาอ่อนแรงที่แย่ลง ไข้ น้ำหนักลด ประวัติมะเร็ง ใช้ steroid นาน หรือฉีดยาเสพติดเข้าเส้น อาการปวดกลางคืนไม่ทุเลา สำหรับ NSAID ให้หยุดและพบแพทย์ถ้าปวดท้องรุนแรง ถ่ายดำ หรือบวม\n\nจุดที่มักสับสนและกับดักข้อสอบ: (1) ตำราเก่าใส่ paracetamol เป็น first-line แต่หลักฐานปัจจุบันไม่สนับสนุนใน LBP (2) muscle relaxant ก็เป็นตัวเลือกที่ถูกตาม ACP — ข้อสอบที่ดีจึงไม่ควรมีทั้ง NSAID และ muscle relaxant แยกเป็นสองตัวเลือก (3) การนอนพักบนเตียงเป็นกับดัก ยิ่งนอนยิ่งหายช้า (4) chronic LBP ใช้แนวทางต่างจาก acute เช่น duloxetine หรือ tramadol เป็นขั้นหลัง\n\nสรุปท่องสอบ: Acute LBP ไม่มี red flag: ร้อน + ขยับ → NSAID หรือ muscle relaxant ระยะสั้น; paracetamol เดี่ยว ✗, opioid ✗, gabapentin ✗, นอนพัก ✗",
+    "choices": [
+     {
+      "label": "A",
+      "text": "Ibuprofen 400 mg วันละ 3 ครั้งหลังอาหาร ระยะสั้น ร่วมกับประคบร้อน และแนะนำให้เคลื่อนไหวทำกิจวัตรตามปกติเท่าที่ทนได้",
+      "explanation": "✓ ACP 2017 แนะนำให้เริ่มด้วยการรักษาที่ไม่ใช้ยาก่อน (ประคบร้อนมีหลักฐาน moderate-quality, นวด, ฝังเข็ม, spinal manipulation) และถ้าต้องใช้ยาให้เลือก NSAID หรือ skeletal muscle relaxant ผู้ป่วยอายุน้อย ไม่มีความเสี่ยง GI/CV/ไต จึงเหมาะกับ ibuprofen ขนาดต่ำ-ปานกลางระยะสั้น ร่วมกับคงการเคลื่อนไหว ซึ่งดีกว่านอนพัก"
+     },
+     {
+      "label": "B",
+      "text": "Paracetamol 1,000 mg วันละ 4 ครั้งเพียงอย่างเดียว ร่วมกับนอนพักบนเตียงจนกว่าอาการปวดจะหาย",
+      "explanation": "✗ PACE trial (Williams 2014 Lancet, n=1,652) พบว่า paracetamol แบบประจำหรือแบบ PRN ไม่ต่างจาก placebo ต่อเวลาที่หายปวดใน acute LBP และ ACP 2017 ไม่แนะนำ paracetamol สำหรับ acute LBP ส่วนการนอนพักบนเตียงทำให้ฟื้นช้ากว่าการเคลื่อนไหว paracetamol อาจเหมาะเมื่อมีข้อห้ามของ NSAID เช่น ตั้งครรภ์ไตรมาสสาม หรือเลือดออกทางเดินอาหาร โดยแจ้งว่าหวังผลได้จำกัด"
+     },
+     {
+      "label": "C",
+      "text": "Tramadol 50 mg ทุก 6 ชั่วโมง เป็นยาตัวแรก",
+      "explanation": "✗ ACP 2017 ให้ใช้ opioid รวมถึง tramadol เป็นทางเลือกท้ายสุดในอาการปวดหลังเรื้อรังที่ล้มเหลวต่อการรักษาอื่นเท่านั้น และหลังพิจารณาความเสี่ยง (ง่วง เวียน คลื่นไส้ การติดยา serotonin syndrome ชัก) ใน acute LBP ไม่ใช่ยาตัวแรก อาจพิจารณาระยะสั้นมากในผู้ที่ปวดรุนแรงและมีข้อห้ามของ NSAID ทั้งหมดแล้วเท่านั้น"
+     },
+     {
+      "label": "D",
+      "text": "Gabapentin 300 mg วันละ 3 ครั้ง",
+      "explanation": "✗ ไม่มีหลักฐานว่า gabapentinoid ช่วย acute หรือ chronic non-specific LBP และมีผลข้างเคียงง่วงซึม เวียนศีรษะ ผู้ป่วยรายนี้ไม่มีอาการ radicular หรือ neuropathic pain gabapentin/pregabalin จะพิจารณาเมื่อมีอาการปวดประสาท เช่น postherpetic neuralgia หรือ diabetic neuropathy ซึ่งแม้แต่ใน sciatica ก็ยังได้ผลน้อย"
+     }
+    ],
+    "key_takeaway": "Acute LBP = ร้อน + ขยับ + NSAID สั้น ๆ — paracetamol แพ้ placebo (PACE)"
+   }
+  },
+  {
+   "id": "16308786-8fdb-4e47-929d-24bd178d4ad7",
+   "scenario": "ผู้ป่วยหญิงอายุ 66 ปี วัยหมดประจำเดือน เป็น achalasia (หลอดอาหารบีบตัวผิดปกติ กลืนลำบาก อาหารค้างในหลอดอาหาร) ตรวจ DXA พบ T-score total hip −2.7 ไม่เคยกระดูกหัก CrCl 72 mL/min, corrected Ca 9.4 mg/dL, 25(OH)D 34 ng/mL สุขภาพช่องปากดีและไม่มีแผนทำหัตถการทางทันตกรรม แพทย์ต้องการเริ่มยาลดการสลายกระดูกที่มีหลักฐานลดทั้ง vertebral และ hip fracture ข้อใดเหมาะสมที่สุด",
+   "choices": [
+    {
+     "label": "A",
+     "text": "Risedronate delayed-release 35 mg สัปดาห์ละครั้ง รับประทานทันทีหลังอาหารเช้า"
+    },
+    {
+     "label": "B",
+     "text": "Ibandronate 150 mg รับประทานเดือนละครั้ง เพื่อลดจำนวนครั้งที่ยาสัมผัสหลอดอาหาร"
+    },
+    {
+     "label": "C",
+     "text": "Calcitonin nasal spray 200 IU วันละครั้งระยะยาว"
+    },
+    {
+     "label": "D",
+     "text": "Zoledronic acid 5 mg IV ปีละครั้ง (หรือ denosumab 60 mg SC ทุก 6 เดือนเป็นทางเลือก)"
+    }
+   ],
+   "correct_answer": "D",
+   "difficulty": "medium",
+   "explanation": "Achalasia หรือ esophageal stricture เป็นข้อห้ามของ oral bisphosphonate ทุกชนิดรวมสูตร DR และรายเดือน จึงควรเลือกยาที่ไม่ผ่านหลอดอาหารและลด hip fracture ได้ คือ zoledronic acid IV ปีละครั้ง (หรือ denosumab)",
+   "detailed_explanation": {
+    "summary": "หลอดอาหารผิดปกติ (achalasia, stricture) หรือนั่งตัวตรง 30 นาทีไม่ได้ → ข้ามยากิน → zoledronic acid IV หรือ denosumab",
+    "reason": "โจทย์ถามอะไร: ผู้ป่วย postmenopausal osteoporosis ที่ hip T-score −2.7 ต้องได้ยา แต่มี achalasia ถามการเลือกยาลดการสลายกระดูกที่หลีกเลี่ยงข้อห้ามและยังลด hip fracture ได้ เป็นโจทย์ 'เลือกยาตามข้อห้าม' ไม่ใช่วิธีบริหารยา\n\nหลักการ/กลไกเชิงลึก: Oral bisphosphonate (alendronate, risedronate, ibandronate) เป็นสารที่ระคายเยื่อบุโดยตรง ถ้าเม็ดยาค้างในหลอดอาหาร ยาจะสัมผัสเยื่อบุนานจนเกิด esophagitis แผล หรือ stricture ฉลากยาจึงห้ามใช้ในความผิดปกติของหลอดอาหารที่ทำให้การเคลื่อนผ่านช้า (stricture, achalasia) และในผู้ที่นั่งตรง 30 นาทีไม่ได้ achalasia มี LES คลายตัวไม่ได้และไม่มี peristalsis เม็ดยาจึงค้างได้นาน การให้ยาทางหลอดเลือดดำหรือใต้ผิวหนังจะข้ามปัญหานี้ทั้งหมด zoledronic acid มี potency สูง ให้ 5 mg ครั้งเดียวต่อปี ยาจะไปจับกระดูกประมาณ 40–60% ส่วนที่เหลือขับทางไต จึงต้องมี CrCl ≥35 mL/min ส่วน denosumab เป็น anti-RANKL ไม่ขึ้นกับไต\n\nทำไมข้อ D ถูก: Zoledronic acid IV ไม่ผ่านหลอดอาหาร มีหลักฐานลด vertebral, non-vertebral และ hip fracture ผู้ป่วยมี CrCl 72, Ca และ 25(OH)D ปกติ และช่องปากดี จึงเหมาะที่สุด ส่วน denosumab เป็นทางเลือกที่เท่าเทียมด้านประสิทธิภาพ แต่ต้องวางแผนระยะยาวเพราะหยุดแล้วเกิด rebound\n\nหลักฐานและแนวทางเวชปฏิบัติ: HORIZON-PFT (Black 2007 NEJM): zoledronic acid 5 mg ปีละครั้ง 3 ปี ลด morphometric vertebral fracture 70% และ hip fracture 41% FREEDOM (Cummings 2009): denosumab ลด vertebral 68%, hip 40% AACE/ACE 2020 แนะนำ zoledronic acid หรือ denosumab เป็น initial therapy ในผู้ที่ใช้ยากินไม่ได้ (esophageal disorder, malabsorption, adherence ไม่ดี) และ Endocrine Society 2019 ให้ IV bisphosphonate หรือ denosumab เป็นทางเลือกเมื่อ oral ใช้ไม่ได้ ส่วน oral ibandronate ไม่มีหลักฐานลด hip fracture\n\nการประยุกต์กับผู้ป่วยจริง: ก่อนให้: ตรวจ CrCl, corrected Ca และ 25(OH)D ให้ปกติ ตรวจช่องปาก ให้ดื่มน้ำ 2 แก้วก่อนให้ยา หยด 5 mg ใน ≥15 นาที (ห้ามเร็วกว่านี้เพราะเป็นพิษต่อไต) บอกผู้ป่วยว่าวันแรก ๆ อาจมีไข้ ปวดเมื่อยคล้ายไข้หวัด (acute-phase reaction) ใช้ paracetamol ได้ ให้ calcium 1,000–1,200 mg/วันและ vitamin D 800–1,000 IU/วัน ถ้า calcium เม็ดกลืนลำบากในผู้ป่วย achalasia ให้ใช้รูปแบบเม็ดฟู่/ผง หรือเน้นจากอาหาร นัดฉีดปีละครั้งและประเมินที่ 3 ปีเพื่อพิจารณา holiday\n\nการติดตามและสัญญาณอันตราย: ติดตาม SCr ก่อนทุกเข็ม Ca หลังให้ยาในผู้เสี่ยง hypocalcemia ปวดต้นขา/ขาหนีบ (AFF) แผลในปากไม่หาย/กระดูกขากรรไกรโผล่ (ONJ) และตาอักเสบ (พบน้อย) ถ้าเลือก denosumab ต้องเน้นฉีดทุก 6 เดือนตรงเวลา และเมื่อจะหยุดต้องต่อด้วย bisphosphonate\n\nจุดที่มักสับสนและกับดักข้อสอบ: (1) Risedronate DR 'กินหลังอาหาร' แก้แค่ปัญหาอาหารรบกวนการดูดซึม ไม่ได้แก้หลอดอาหารผิดปกติ (2) ยารายเดือนไม่ได้ปลอดภัยต่อหลอดอาหารกว่า (3) ibandronate และ raloxifene ไม่ลด hip fracture (4) calcitonin ไม่ใช่ยาระยะยาวแล้ว\n\nสรุปท่องสอบ: Oral BP ห้าม: achalasia/stricture, นั่งตรง 30 นาทีไม่ได้, hypocalcemia, CrCl <30–35 → หลอดอาหารเสีย = zoledronic IV ปีละครั้ง หรือ denosumab q6mo",
+    "choices": [
+     {
+      "label": "A",
+      "text": "Risedronate delayed-release 35 mg สัปดาห์ละครั้ง รับประทานทันทีหลังอาหารเช้า",
+      "explanation": "✗ แม้ risedronate DR จะกินหลังอาหารได้ แต่ยังเป็น oral bisphosphonate ซึ่งมีข้อห้ามใช้ในผู้ที่มีความผิดปกติของหลอดอาหารที่ทำให้การเคลื่อนผ่านช้า เช่น achalasia หรือ stricture เพราะเม็ดยาค้างแล้วเกิด erosive esophagitis/แผล ข้อนี้จะเหมาะกับผู้ที่หลอดอาหารปกติแต่กินยาก่อนอาหารเช้าไม่ได้ หรือผู้ที่ลืมเว้นระยะก่อนอาหารเป็นประจำ"
+     },
+     {
+      "label": "B",
+      "text": "Ibandronate 150 mg รับประทานเดือนละครั้ง เพื่อลดจำนวนครั้งที่ยาสัมผัสหลอดอาหาร",
+      "explanation": "✗ การลดความถี่ไม่ได้แก้ปัญหาเม็ดยาค้างในหลอดอาหาร ข้อห้ามของ oral bisphosphonate ครอบคลุมทุกตัวรวม ibandronate และ oral ibandronate ไม่มีหลักฐานลด hip fracture (ลดเฉพาะ vertebral) จึงไม่ตรงเป้าหมายที่โจทย์ต้องการ จะพิจารณาได้ในผู้หลอดอาหารปกติที่ความเสี่ยงหลักเป็น vertebral และต้องการกินยาไม่บ่อย"
+     },
+     {
+      "label": "C",
+      "text": "Calcitonin nasal spray 200 IU วันละครั้งระยะยาว",
+      "explanation": "✗ Calcitonin มีฤทธิ์ป้องกันกระดูกหักอ่อน ลดเฉพาะ vertebral fracture เล็กน้อย ไม่มีหลักฐานลด hip fracture และ EMA (2012) พบสัญญาณความเสี่ยงมะเร็งเพิ่มเมื่อใช้ระยะยาว จึงไม่ใช่ยารักษา osteoporosis ระยะยาวอีกต่อไป จะพิจารณาได้เพียงระยะสั้นเพื่อลดปวดจาก acute vertebral fracture หรือใช้ใน hypercalcemia/Paget disease"
+     },
+     {
+      "label": "D",
+      "text": "Zoledronic acid 5 mg IV ปีละครั้ง (หรือ denosumab 60 mg SC ทุก 6 เดือนเป็นทางเลือก)",
+      "explanation": "✓ ผู้ป่วยมีข้อห้ามของ oral bisphosphonate (achalasia) จึงต้องเลี่ยงทางหลอดอาหาร zoledronic acid IV ลดทั้ง vertebral (~70%) และ hip fracture (~41%) ใน HORIZON-PFT CrCl 72 (≥35) Ca และ vitamin D ปกติ ช่องปากดี จึงให้ได้อย่างปลอดภัย denosumab ก็ลด vertebral/hip ได้ (FREEDOM) แต่ต้องฉีดตรงเวลาและห้ามหยุดเฉย ๆ"
+     }
+    ],
+    "key_takeaway": "หลอดอาหารพัง = ข้ามยากิน → zoledronic acid IV (หรือ denosumab)"
+   }
+  },
+  {
+   "id": "2c2d56f8-0040-4be6-a349-05a4b8d2f972",
+   "scenario": "ผู้ป่วยหญิงอายุ 45 ปี วินิจฉัย fibromyalgia ปวดกล้ามเนื้อทั่วร่างกายมานาน 1 ปี อ่อนเพลีย นอนตื่นแล้วไม่สดชื่น ร่วมกับ major depressive disorder ที่ยังไม่ได้รับการรักษา ได้ออกกำลังกายแบบแอโรบิกและทำ CBT แล้วยังปวดมาก BMI 31 kg/m² และกังวลเรื่องน้ำหนักขึ้น ไม่มีโรคตับ ไม่ดื่มสุรา CrCl 95 mL/min ไม่ได้ใช้ยาอื่น ยาข้อใดเหมาะสมที่สุด",
+   "choices": [
+    {
+     "label": "A",
+     "text": "Naproxen 500 mg วันละ 2 ครั้งต่อเนื่อง"
+    },
+    {
+     "label": "B",
+     "text": "Duloxetine 30 mg วันละครั้ง 1 สัปดาห์ แล้วเพิ่มเป็น 60 mg วันละครั้ง"
+    },
+    {
+     "label": "C",
+     "text": "Oxycodone 5 mg ทุก 6 ชั่วโมงเมื่อปวด"
+    },
+    {
+     "label": "D",
+     "text": "Prednisolone 10 mg/วัน ระยะยาว"
+    }
+   ],
+   "correct_answer": "B",
+   "difficulty": "hard",
+   "explanation": "Fibromyalgia ที่ไม่ดีขึ้นด้วยการออกกำลังกายและ CBT และมี major depression ร่วม ยาที่เหมาะที่สุดคือ duloxetine (SNRI ที่ FDA อนุมัติสำหรับ FM) ซึ่งรักษาได้ทั้งปวดและซึมเศร้าโดยไม่ทำให้น้ำหนักขึ้น ส่วน NSAIDs, strong opioids และ steroid ไม่แนะนำ",
+   "detailed_explanation": {
+    "summary": "FM + ซึมเศร้า + กลัวอ้วน → duloxetine 60 mg; FM ไม่ใช่โรคอักเสบ → NSAID/steroid/opioid ไม่ช่วย",
+    "reason": "โจทย์ถามอะไร: ผู้ป่วย fibromyalgia ที่ทำ non-pharmacologic therapy แล้วยังปวด มี major depression ร่วม และกังวลน้ำหนัก ถามยาที่เหมาะสมที่สุด ต้องรู้ว่ายาใดมีหลักฐาน/ได้รับอนุมัติใน FM และเลือกให้ตรงกับโรคร่วม\n\nหลักการ/กลไกเชิงลึก: Fibromyalgia เป็นความผิดปกติของการประมวลผลความปวดในระบบประสาทส่วนกลาง (nociplastic pain/central sensitization) มีการเพิ่ม substance P และ glutamate ในน้ำไขสันหลัง และการทำงานของ descending inhibitory pathway ที่ใช้ serotonin และ norepinephrine ลดลง ผู้ป่วยจึงปวดทั่วตัว ไวต่อสิ่งกระตุ้น อ่อนเพลีย นอนไม่ดี และมักมีซึมเศร้าร่วม Duloxetine ยับยั้ง SERT และ NET (balanced SNRI) เพิ่ม 5-HT และ NE ที่ dorsal horn เสริมการยับยั้งสัญญาณปวด และรักษา depression ที่ขนาด 60 mg Duloxetine ถูกเมแทบอลิซึมผ่าน CYP1A2/2D6\n\nทำไมข้อ B ถูก: Duloxetine เป็นยาเดียวในตัวเลือกที่มีหลักฐานระดับ RCT และ FDA approval สำหรับ FM รักษาโรคซึมเศร้าที่มีร่วมได้ และเป็นกลาง/ลดน้ำหนักเล็กน้อย ต่างจาก pregabalin ที่ทำให้น้ำหนักขึ้นและบวม ผู้ป่วยไม่มีโรคตับหรือดื่มสุรา และ CrCl >30 จึงใช้ได้\n\nหลักฐานและแนวทางเวชปฏิบัติ: US FDA อนุมัติ 3 ยาสำหรับ FM: pregabalin (2007), duloxetine (2008), milnacipran (2009) EULAR revised recommendations 2016 (Macfarlane): exercise เป็น strong for; ยาที่ weak for ได้แก่ amitriptyline ขนาดต่ำ, duloxetine/milnacipran, tramadol, pregabalin, cyclobenzaprine; strong against: strong opioids; weak against: NSAIDs, MAOIs, SSRIs เดี่ยว และไม่แนะนำ corticosteroid RCT (Arnold 2004–2005) พบ duloxetine ลดปวดได้ทั้งผู้ที่มีและไม่มี depression\n\nการประยุกต์กับผู้ป่วยจริง: เริ่ม duloxetine 30 mg วันละครั้งพร้อมอาหาร 1 สัปดาห์ แล้วเพิ่มเป็น 60 mg ผลต่อปวดเห็นใน 1–2 สัปดาห์ ผลต่ออารมณ์ 4–6 สัปดาห์ ประเมินที่ 8–12 สัปดาห์ แนะนำ: คลื่นไส้มักดีขึ้นใน 1–2 สัปดาห์, ปากแห้ง เหงื่อออก นอนไม่หลับ (กินเช้า) ห้ามหยุดยาทันทีเพราะเกิด discontinuation syndrome (เวียนหัว ไฟช็อต หงุดหงิด) ต้องค่อย ๆ ลด ห้ามใช้ร่วม MAOI ระวัง tramadol/linezolid (serotonin syndrome) และ fluvoxamine/ciprofloxacin (CYP1A2) ทำ CBT และออกกำลังกายต่อ\n\nการติดตามและสัญญาณอันตราย: วัด BP เพราะ NE อาจเพิ่มความดันเล็กน้อย ติดตาม LFT ถ้ามีอาการตับ (ห้ามใช้ในตับแข็ง/ดื่มหนัก) Na ต่ำ (SIADH) ในผู้สูงอายุ และที่สำคัญคือความคิดฆ่าตัวตายช่วงเริ่มยา โดยเฉพาะผู้ป่วยซึมเศร้า อาการ serotonin syndrome (สั่น กระตุก ไข้ เหงื่อ) และเลือดออกผิดปกติ เลี่ยงใน CrCl <30\n\nจุดที่มักสับสนและกับดักข้อสอบ: (1) FM ไม่ใช่โรคอักเสบ: NSAID/steroid ไม่ใช่คำตอบ (2) amitriptyline ขนาดต่ำก่อนนอนก็มีหลักฐาน แต่ขนาด 10–25 mg ไม่รักษา depression และมี anticholinergic/น้ำหนักขึ้น (3) pregabalin ก็ FDA-approved แต่ทำน้ำหนักขึ้น/บวม ไม่เหมาะกับผู้ป่วยรายนี้ (4) SSRIs เดี่ยว ได้ผลน้อยกว่า SNRI ต่อปวด\n\nสรุปท่องสอบ: FM approved: Pregabalin – Duloxetine – Milnacipran (P-D-M); + ซึมเศร้า → duloxetine; + นอนไม่หลับ → amitriptyline ขนาดต่ำ/pregabalin; ห้าม strong opioid",
+    "choices": [
+     {
+      "label": "A",
+      "text": "Naproxen 500 mg วันละ 2 ครั้งต่อเนื่อง",
+      "explanation": "✗ Fibromyalgia เป็นภาวะ central sensitization ไม่ใช่โรคอักเสบของเนื้อเยื่อ NSAIDs จึงไม่ต่างจาก placebo และ EULAR 2016 ไม่แนะนำ (weak against) ทั้งยังเพิ่มความเสี่ยง GI/ไต/CV เมื่อใช้ต่อเนื่อง NSAID จะเหมาะเมื่อผู้ป่วยมีโรคร่วมที่เป็นการอักเสบหรือปวดเฉพาะที่ เช่น OA หรือ tendinitis ร่วมด้วย และใช้เป็นช่วงสั้น ๆ"
+     },
+     {
+      "label": "B",
+      "text": "Duloxetine 30 mg วันละครั้ง 1 สัปดาห์ แล้วเพิ่มเป็น 60 mg วันละครั้ง",
+      "explanation": "✓ Duloxetine เป็น SNRI ที่ US FDA อนุมัติสำหรับ fibromyalgia (ร่วมกับ pregabalin และ milnacipran) เพิ่ม serotonin และ norepinephrine ใน descending inhibitory pathway ลดปวด และรักษา major depression ได้ในตัวเดียว ไม่ทำให้น้ำหนักขึ้นเหมือน pregabalin เริ่ม 30 mg เพื่อลดคลื่นไส้แล้วเพิ่มเป็น 60 mg ซึ่งเป็นขนาดที่ได้ผล การเพิ่มเป็น 120 mg ไม่ได้ประโยชน์เพิ่มใน FM"
+     },
+     {
+      "label": "C",
+      "text": "Oxycodone 5 mg ทุก 6 ชั่วโมงเมื่อปวด",
+      "explanation": "✗ Strong opioid ไม่มีหลักฐานใน fibromyalgia และ EULAR 2016 ให้ strong recommendation against อาจทำให้เกิด opioid-induced hyperalgesia การติดยา และง่วงซึม ทำให้อาการแย่ลง ส่วน tramadol (มีฤทธิ์ SNRI ร่วม) มีหลักฐานอ่อนในบางแนวทาง oxycodone จะเหมาะกับปวดเฉียบพลันรุนแรงจากสาเหตุชัดเจน เช่น หลังผ่าตัดหรือมะเร็ง ไม่ใช่ FM"
+     },
+     {
+      "label": "D",
+      "text": "Prednisolone 10 mg/วัน ระยะยาว",
+      "explanation": "✗ ไม่มีการอักเสบที่ตอบสนองต่อ steroid ใน fibromyalgia ESR/CRP ปกติ EULAR ไม่แนะนำ corticosteroid และการใช้ระยะยาวทำให้น้ำหนักขึ้น น้ำตาลสูง กระดูกพรุน ซึ่งขัดกับความกังวลของผู้ป่วย prednisolone จะเหมาะเมื่อวินิจฉัยแยกโรคแล้วพบโรคอักเสบจริง เช่น polymyalgia rheumatica (ปวดไหล่-สะโพก ESR สูง ในผู้สูงอายุ)"
+     }
+    ],
+    "key_takeaway": "FM + ซึมเศร้า → duloxetine (SNRI) ไม่ใช่ NSAID, steroid หรือ opioid"
+   }
+  },
+  {
+   "id": "63a0aad6-7d0c-4a5b-b0a3-51cfbe6380bf",
+   "scenario": "ผู้ป่วยชายอายุ 60 ปี น้ำหนัก 70 kg ปวด บวม แดง ร้อนที่ข้อโคนนิ้วหัวแม่เท้าซ้ายเฉียบพลัน เริ่มปวดเมื่อ 12 ชั่วโมงก่อน serum urate 9.5 mg/dL CrCl 85 mL/min ไม่มีประวัติแผลในกระเพาะอาหาร ไม่ได้ใช้ยาที่ยับยั้ง CYP3A4 หรือ P-glycoprotein และยังไม่เคยได้ยาลดกรดยูริก วินิจฉัย acute gout flare ข้อใดเป็นการรักษาที่เหมาะสมที่สุด",
+   "choices": [
+    {
+     "label": "A",
+     "text": "Colchicine 1.2 mg ทันที ตามด้วย 0.6 mg ในอีก 1 ชั่วโมง (รวม 1.8 mg ในวันแรก) แล้วต่อ 0.6 mg วันละ 1–2 ครั้งจนอาการหาย"
+    },
+    {
+     "label": "B",
+     "text": "Colchicine 0.6 mg ทุก 1 ชั่วโมงจนอาการปวดหายหรือเกิดท้องเสีย (สูงสุด 4.8 mg/วัน)"
+    },
+    {
+     "label": "C",
+     "text": "Allopurinol 300 mg วันละครั้งเพียงอย่างเดียว เพื่อรักษาอาการปวดข้อครั้งนี้"
+    },
+    {
+     "label": "D",
+     "text": "Febuxostat 80 mg วันละครั้งเพียงอย่างเดียว เพื่อรักษาอาการปวดข้อครั้งนี้"
+    }
+   ],
+   "correct_answer": "A",
+   "difficulty": "medium",
+   "explanation": "Acute gout flare ที่เริ่มภายใน 36 ชั่วโมงและไม่มีข้อห้าม ใช้ low-dose colchicine 1.2 mg ตามด้วย 0.6 mg ใน 1 ชั่วโมง (รวม 1.8 mg) ได้ผลเท่าสูตรขนาดสูงแต่ผลข้างเคียงน้อยกว่า ส่วนยาลดกรดยูริกไม่รักษา flare",
+   "detailed_explanation": {
+    "summary": "Colchicine ใช้ให้ได้ผลต้อง 'เร็ว-ต่ำ': เริ่มใน 36 ชม. 1.2 + 0.6 mg (1.8 mg/วันแรก) — ULT ไม่รักษา flare",
+    "reason": "โจทย์ถามอะไร: ผู้ป่วย gout flare ข้อโคนนิ้วหัวแม่เท้า (podagra) เริ่มมา 12 ชั่วโมง ไต/ยาร่วมไม่มีปัญหา ถามสูตรการรักษา flare ที่เหมาะที่สุด ต้องแยกยาต้านการอักเสบออกจากยาลดกรดยูริก และรู้สูตร colchicine ที่ถูกต้องรวมถึงช่วงเวลาที่ได้ผล\n\nหลักการ/กลไกเชิงลึก: ผลึก monosodium urate ถูก macrophage จับแล้วกระตุ้น NLRP3 inflammasome ปล่อย IL-1β ดึง neutrophil เข้าข้อ Colchicine จับ tubulin ยับยั้งการสร้าง microtubule ทำให้ neutrophil เคลื่อนที่ เกาะติด และ degranulate ไม่ได้ และยับยั้งการประกอบ NLRP3 inflammasome ยาจึงได้ผลดีที่สุดเมื่อให้ตั้งแต่ช่วงแรกที่ neutrophil กำลังถูกดึงเข้ามา (≤36 ชั่วโมง) หลังจากนั้นการอักเสบเต็มที่แล้วผลจะลดลง Colchicine มีช่วงการรักษาแคบ ถูกเมแทบอลิซึมโดย CYP3A4 และขับออกผ่าน P-gp ทางน้ำดีและไต ยาที่ยับยั้งทั้งสองทาง (clarithromycin, ketoconazole, cyclosporine, verapamil) หรือไตเสื่อมทำให้เกิดพิษ: ท้องเสียรุนแรง ไขกระดูกกด neuromyopathy\n\nทำไมข้อ A ถูก: สูตร 1.2 mg ตามด้วย 0.6 mg ใน 1 ชั่วโมง เป็นสูตร low-dose ที่ FDA อนุมัติ เริ่มภายใน 36 ชั่วโมงหลังมีอาการ ผู้ป่วยมาใน 12 ชั่วโมง ไม่มีข้อห้าม จึงเป็นตัวเลือกที่ดีที่สุด และสามารถให้ต่อ 0.6 mg วันละ 1–2 ครั้งจนอาการหายในวันต่อมา\n\nหลักฐานและแนวทางเวชปฏิบัติ: AGREE trial (Terkeltaub 2010): low-dose (1.8 mg ใน 1 ชั่วโมง) ได้ผลตอบสนอง ≥50% ที่ 24 ชั่วโมง 37.8% เทียบ high-dose (4.8 mg ใน 6 ชั่วโมง) 32.7% และ placebo 15.5% แต่ท้องเสีย 23% vs 77% ACR 2020 gout guideline: flare ใช้ colchicine, NSAID หรือ glucocorticoid (strong) เลือกตามโรคร่วม โดย colchicine ให้แบบ low-dose เหนือ high-dose (strong) EULAR 2016: เริ่มภายใน 12 ชั่วโมง 1 mg + 0.5 mg ใน 1 ชั่วโมง\n\nการประยุกต์กับผู้ป่วยจริง: จ่าย colchicine 0.6 mg (หรือ 0.5 mg ตามที่มีในไทย ปรับสูตรเป็น 1 mg + 0.5 mg) บอกผู้ป่วยว่า 'กิน 2 เม็ดทันที อีก 1 ชั่วโมงกินอีก 1 เม็ด วันนี้ไม่เกิน 3 เม็ด พรุ่งนี้กินวันละ 1–2 เม็ดจนหายปวด' พักข้อ ประคบเย็น ยกสูง งดแอลกอฮอล์ เครื่องดื่มน้ำตาลฟรุกโตสสูง ถ้ามีท้องเสียให้หยุดยา หลัง flare สงบ ประเมินข้อบ่งชี้ ULT (tophus, flare ≥2 ครั้ง/ปี, ภาพรังสีมี damage) และตรวจ HLA-B*58:01 ก่อน allopurinol\n\nการติดตามและสัญญาณอันตราย: หยุด colchicine เมื่อท้องเสีย ปวดท้อง อาเจียน กล้ามเนื้ออ่อนแรง ชาปลายมือเท้า หรือมีไข้/เจ็บคอ (สงสัยเม็ดเลือดขาวต่ำ) ถ้าไม่ดีขึ้นใน 2–3 วัน หรือมีไข้ ต้องแยก septic arthritis ห้ามให้ซ้ำคอร์สขนาด loading ภายใน 3 วัน (12 ชั่วโมงกรณีใช้ยาป้องกัน) ปรับขนาด/หลีกเลี่ยงเมื่อใช้ร่วม strong CYP3A4/P-gp inhibitor หรือ CrCl <30\n\nจุดที่มักสับสนและกับดักข้อสอบ: (1) สูตร 'ทุกชั่วโมงจนท้องเสีย' ล้าสมัย (2) เวลาต้นเหตุสำคัญ: เกิน 36 ชั่วโมง colchicine ได้ผลลดลง ให้เลือก NSAID หรือ steroid แทน (3) Allopurinol/febuxostat ไม่ใช่ยารักษา flare — แต่ถ้าผู้ป่วยกิน ULT อยู่แล้วห้ามหยุดระหว่าง flare (4) ข้อสอบไทยอาจใช้เม็ด 0.5 mg ให้คิดสัดส่วนตาม\n\nสรุปท่องสอบ: Gout flare: Colchicine low-dose ภายใน 36 ชม. (1.2 → 0.6 mg ใน 1 ชม., ≤1.8 mg/วันแรก) หรือ NSAID หรือ steroid; ULT ≠ ยาแก้ flare",
+    "choices": [
+     {
+      "label": "A",
+      "text": "Colchicine 1.2 mg ทันที ตามด้วย 0.6 mg ในอีก 1 ชั่วโมง (รวม 1.8 mg ในวันแรก) แล้วต่อ 0.6 mg วันละ 1–2 ครั้งจนอาการหาย",
+      "explanation": "✓ เป็นสูตร low-dose colchicine ตาม AGREE trial และ ACR 2020 เริ่มภายใน 36 ชั่วโมงแรกของ flare (ผู้ป่วยรายนี้ 12 ชั่วโมง) ได้ผลลดปวดเทียบเท่าสูตรขนาดสูง แต่ท้องเสียน้อยกว่ามาก ผู้ป่วยไม่มีปัญหาไต ไม่มียาที่ยับยั้ง CYP3A4/P-gp จึงใช้ได้เต็มสูตร วันต่อมาให้ 0.6 mg วันละ 1–2 ครั้งจน flare หาย"
+     },
+     {
+      "label": "B",
+      "text": "Colchicine 0.6 mg ทุก 1 ชั่วโมงจนอาการปวดหายหรือเกิดท้องเสีย (สูงสุด 4.8 mg/วัน)",
+      "explanation": "✗ เป็นสูตรขนาดสูงแบบเก่า AGREE trial พบว่าได้ผลไม่ต่างจาก low-dose (1.8 mg) แต่ท้องเสีย คลื่นไส้ อาเจียนมากกว่าอย่างชัดเจน (~77% vs ~23%) และเสี่ยงพิษ colchicine จึงไม่ใช้อีกแล้ว ไม่มีสถานการณ์ที่สูตรนี้ดีกว่า หากผู้ป่วยไม่ตอบสนองต่อ low-dose ควรเปลี่ยนเป็น NSAID หรือ glucocorticoid แทนการเพิ่มขนาด colchicine"
+     },
+     {
+      "label": "C",
+      "text": "Allopurinol 300 mg วันละครั้งเพียงอย่างเดียว เพื่อรักษาอาการปวดข้อครั้งนี้",
+      "explanation": "✗ Allopurinol เป็นยาลดกรดยูริก ไม่มีฤทธิ์ต้านการอักเสบ จึงไม่รักษา flare การลด urate เร็วยังอาจกระตุ้น flare เพิ่ม และขนาดเริ่มต้นควร ≤100 mg/วัน (ไทยต้องตรวจ HLA-B*58:01 ก่อน) ACR 2020 อนุญาตให้เริ่ม ULT ระหว่าง flare ได้ (conditional) แต่ต้องมียาต้านการอักเสบคุมร่วมเสมอ และเมื่อมีข้อบ่งชี้ ULT เช่น flare ≥2 ครั้ง/ปีหรือมี tophus"
+     },
+     {
+      "label": "D",
+      "text": "Febuxostat 80 mg วันละครั้งเพียงอย่างเดียว เพื่อรักษาอาการปวดข้อครั้งนี้",
+      "explanation": "✗ Febuxostat เป็น xanthine oxidase inhibitor ลด urate ไม่ต้านการอักเสบ จึงไม่รักษา flare และมี boxed warning เรื่อง CV death (CARES) ไม่ใช่ ULT ตัวแรก ขนาดเริ่มต้นควร 40 mg จะเหมาะเมื่อต้องใช้ ULT ในผู้ที่แพ้หรือ HLA-B*58:01 บวก (ห้าม allopurinol) และไม่มีโรคหัวใจ โดยให้ร่วมกับ flare prophylaxis"
+     }
+    ],
+    "key_takeaway": "Colchicine: ยิ่งเร็วยิ่งดี (≤36 ชม.) ยิ่งน้อยยิ่งดี (1.8 mg) — ULT ไม่รักษา flare"
+   }
+  },
+  {
+   "id": "67265d94-cca0-4376-a19e-5e12113ef640",
+   "scenario": "ผู้ป่วยชายอายุ 35 ปี เป็น ankylosing spondylitis (radiographic axial SpA) มีอาการปวดหลังแบบ inflammatory เป็นหลัก ไม่มีข้อส่วนปลายอักเสบ ไม่มี uveitis, IBD หรือ psoriasis ใช้ NSAIDs ขนาดเต็ม 2 ชนิด ชนิดละ 4 สัปดาห์ ร่วมกับกายภาพบำบัดแล้ว ยังมี ASDAS 3.4 และ CRP สูง ผลคัดกรอง TB และ HBV เป็นลบ ตามแนวทาง ASAS-EULAR 2022 ข้อใดเหมาะสมที่สุด",
+   "choices": [
+    {
+     "label": "A",
+     "text": "Rituximab (anti-CD20)"
+    },
+    {
+     "label": "B",
+     "text": "เพิ่ม methotrexate หรือ sulfasalazine"
+    },
+    {
+     "label": "C",
+     "text": "เริ่ม TNF inhibitor เช่น adalimumab หรือ etanercept (IL-17 inhibitor เช่น secukinumab เป็นทางเลือกที่เท่าเทียมกัน)"
+    },
+    {
+     "label": "D",
+     "text": "Tocilizumab (IL-6 receptor inhibitor)"
+    }
+   ],
+   "correct_answer": "C",
+   "difficulty": "hard",
+   "explanation": "AS ที่ยัง active หลังใช้ NSAIDs ≥2 ชนิดและกายภาพบำบัด ควรเริ่ม bDMARD คือ TNF inhibitor หรือ IL-17 inhibitor ตาม ASAS-EULAR 2022 ส่วน csDMARD, rituximab และ IL-6 inhibitor ไม่ได้ผลต่อโรคกระดูกสันหลัง",
+   "detailed_explanation": {
+    "summary": "AS ล้มเหลวต่อ NSAIDs ≥2 ชนิด → TNFi หรือ IL-17i; csDMARD/rituximab/IL-6i ไม่ช่วยกระดูกสันหลัง",
+    "reason": "โจทย์ถามอะไร: ผู้ป่วย radiographic axSpA ที่ยัง active (ASDAS 3.4, CRP สูง) หลังใช้ NSAIDs ขนาดเต็ม 2 ชนิดและกายภาพบำบัด ไม่มีอาการนอกข้อ ถามขั้นการรักษาถัดไป ต้องรู้ว่าเป้าหมายของยากลุ่มใดที่ได้ผลใน axSpA และกลุ่มใดไม่ได้ผล\n\nหลักการ/กลไกเชิงลึก: พยาธิกำเนิดของ axSpA เกี่ยวกับ HLA-B27, การอักเสบที่ enthesis และ subchondral bone ซึ่งขับเคลื่อนโดย TNF-α และแกน IL-23/IL-17 (ทั้งจาก Th17, γδ T cell, ILC3 ที่อยู่ที่ enthesis) TNF ทำให้เกิดการอักเสบและ bone erosion ส่วน IL-17A กระตุ้น neutrophil และมีบทบาทในการสร้างกระดูกใหม่ (syndesmophyte) ยาที่ยับยั้ง TNF (adalimumab, etanercept, infliximab, golimumab, certolizumab) หรือ IL-17A (secukinumab, ixekizumab) จึงลดอาการและ MRI inflammation ได้ชัด ตรงข้ามกับ B cell (rituximab) หรือ IL-6 (tocilizumab) ที่ไม่ใช่แกนหลัก และ csDMARD ไม่เข้าถึงการอักเสบที่ axial skeleton\n\nทำไมข้อ C ถูก: ผู้ป่วยเข้าเกณฑ์ bDMARD: ASDAS ≥2.1 และล้มเหลวต่อ NSAIDs ≥2 ชนิดรวม ≥4 สัปดาห์ แนวปฏิบัติทั่วไปเริ่มด้วย TNFi ซึ่งมีข้อมูลยาวที่สุดและมี biosimilar ราคาถูก ส่วน IL-17i ถือเป็นทางเลือกที่ ASAS-EULAR 2022 วางไว้ในระดับเดียวกัน คำตอบนี้ครอบคลุมทั้งสองกลุ่มจึงไม่คลุมเครือ\n\nหลักฐานและแนวทางเวชปฏิบัติ: ASAS-EULAR 2022 update (Ramiro, Ann Rheum Dis 2023): NSAIDs ขนาดเต็มเป็น first-line, ไม่แนะนำ csDMARD ใน axial disease เดี่ยว, ไม่ใช้ systemic glucocorticoid ระยะยาว ถ้ายัง active ให้ bDMARD (TNFi หรือ IL-17i) หรือ JAKi (tofacitinib/upadacitinib) โดยการปฏิบัติปกติเริ่มด้วย TNFi; uveitis ซ้ำหรือ IBD → monoclonal anti-TNF; psoriasis เด่น → IL-17i ACR/SAA/SPARTAN 2019 แนะนำ TNFi เหนือ secukinumab/ixekizumab (conditional) เพราะประสบการณ์ยาวกว่า แต่ยอมรับ IL-17i เป็นทางเลือก\n\nการประยุกต์กับผู้ป่วยจริง: ก่อนเริ่ม: คัดกรอง TB (IGRA/CXR), HBV, HCV, HIV และวัคซีนที่ยังไม่ได้ (เชื้อเป็นต้องให้ก่อน ≥4 สัปดาห์) adalimumab 40 mg SC ทุก 2 สัปดาห์ หรือ etanercept 50 mg SC สัปดาห์ละครั้ง หรือ secukinumab 150 mg SC สัปดาห์ที่ 0–4 แล้วทุก 4 สัปดาห์ สอนการฉีด เก็บยาในตู้เย็น 2–8°C ให้ผู้ป่วยทำกายภาพ/ออกกำลังกายต่อ งดบุหรี่ ประเมินผลที่ 12 สัปดาห์ (ASDAS ลด ≥1.1) ถ้าไม่ตอบสนองให้เปลี่ยนเป็นอีกกลุ่ม\n\nการติดตามและสัญญาณอันตราย: ติดตามการติดเชื้อ (ไข้ ไอเรื้อรัง น้ำหนักลด → TB) งดฉีดเมื่อมีไข้หรือติดเชื้อรุนแรง TNFi: ระวัง heart failure รุนแรง, demyelination, lupus-like syndrome ส่วน IL-17i: เสี่ยง Candida ในช่องปาก/เยื่อบุ และอาจกระตุ้นหรือทำให้ IBD ใหม่เกิดขึ้น จึงเลี่ยงในผู้ป่วย IBD\n\nจุดที่มักสับสนและกับดักข้อสอบ: (1) RA กับ AS ต่างกัน: MTX เป็น anchor ใน RA แต่ไม่ช่วย axial SpA (2) IL-6i ลด CRP แต่ไม่ช่วยอาการ AS (3) IL-12/23 inhibitor (ustekinumab) และ IL-23i ก็ล้มเหลวใน axSpA แม้ได้ผลใน psoriasis/PsA (4) etanercept ไม่ช่วย IBD และป้องกัน uveitis ได้น้อย\n\nสรุปท่องสอบ: axSpA: NSAID ≥2 ตัว → TNFi หรือ IL-17i (หรือ JAKi); uveitis/IBD → monoclonal anti-TNF; psoriasis → IL-17i; ห้าม csDMARD/IL-6i/rituximab สำหรับ axial",
+    "choices": [
+     {
+      "label": "A",
+      "text": "Rituximab (anti-CD20)",
+      "explanation": "✗ AS เป็นโรคที่ขับเคลื่อนด้วยแกน TNF และ IL-23/IL-17 ไม่ได้อาศัย B cell/autoantibody เป็นหลัก การศึกษา rituximab ใน axSpA ให้ผลไม่ดีในผู้ที่ไม่เคยได้ TNFi และไม่มีที่ใช้ในแนวทาง rituximab จะเหมาะกับโรคที่ขับเคลื่อนด้วย B cell เช่น seropositive RA ที่ล้มเหลวต่อ TNFi, ANCA-associated vasculitis หรือ refractory SLE"
+     },
+     {
+      "label": "B",
+      "text": "เพิ่ม methotrexate หรือ sulfasalazine",
+      "explanation": "✗ csDMARDs ไม่มีประสิทธิภาพต่ออาการทาง axial (กระดูกสันหลัง/sacroiliac) ASAS-EULAR 2022 จึงไม่แนะนำในผู้ป่วยที่มีเฉพาะ axial disease และการเพิ่ม csDMARD จะทำให้การรักษาที่ได้ผลล่าช้า sulfasalazine จะเหมาะเมื่อผู้ป่วยมี peripheral arthritis เด่น (ข้อส่วนปลายอักเสบ) ส่วน methotrexate ใช้ใน peripheral SpA/PsA หรือใช้ร่วมกับ infliximab เพื่อลด immunogenicity"
+     },
+     {
+      "label": "C",
+      "text": "เริ่ม TNF inhibitor เช่น adalimumab หรือ etanercept (IL-17 inhibitor เช่น secukinumab เป็นทางเลือกที่เท่าเทียมกัน)",
+      "explanation": "✓ ผู้ป่วยมี active disease (ASDAS ≥2.1) หลังล้มเหลวต่อ NSAIDs อย่างน้อย 2 ชนิดในเวลารวม 4 สัปดาห์ จึงมีข้อบ่งชี้ bDMARD ASAS-EULAR 2022 ระบุให้เริ่ม TNFi หรือ IL-17i (หรือพิจารณา JAKi) โดยแนวปฏิบัติปกติเริ่มด้วย TNFi ถ้ามี uveitis/IBD เลือก monoclonal anti-TNF ถ้ามี psoriasis เด่นอาจเลือก IL-17i ผู้ป่วยรายนี้ไม่มีอาการนอกข้อ จึงเลือกได้ทั้งสองกลุ่ม"
+     },
+     {
+      "label": "D",
+      "text": "Tocilizumab (IL-6 receptor inhibitor)",
+      "explanation": "✗ แม้ IL-6 สูงใน AS และ tocilizumab ลด CRP ได้ แต่ RCT (BUILDER-1/2 และ sarilumab ALIGN) ไม่พบการดีขึ้นทางคลินิกเหนือ placebo จึงไม่ใช้ใน axSpA ตัวอย่างนี้ใช้สอนว่า CRP ลดลงไม่ได้แปลว่าโรคดีขึ้น tocilizumab จะเหมาะใน RA ที่ล้มเหลวต่อ csDMARD/TNFi, giant cell arteritis หรือ systemic JIA"
+     }
+    ],
+    "key_takeaway": "AS ดื้อ NSAID → TNFi = IL-17i; MTX, tocilizumab, rituximab ไม่ช่วยกระดูกสันหลัง"
+   }
+  },
+  {
+   "id": "6e84c1b9-4e9a-457e-9b6f-050404335972",
+   "scenario": "ผู้ป่วยชายอายุ 55 ปี เป็นเกาต์ มี flare 3 ครั้งในปีที่ผ่านมา ตรวจร่างกายไม่พบ tophus ไม่มีนิ่วในไต ภาพรังสีไม่พบ erosion serum urate 9.8 mg/dL eGFR 80 mL/min/1.73m² HLA-B*58:01 เป็นลบ แพทย์เริ่ม allopurinol ร่วมกับ colchicine เพื่อป้องกัน flare ตามหลัก treat-to-target ควรตั้งเป้าหมาย serum urate ไว้ที่ระดับใดสำหรับผู้ป่วยรายนี้",
+   "choices": [
+    {
+     "label": "A",
+     "text": "< 8 mg/dL"
+    },
+    {
+     "label": "B",
+     "text": "< 7 mg/dL"
+    },
+    {
+     "label": "C",
+     "text": "< 3 mg/dL"
+    },
+    {
+     "label": "D",
+     "text": "< 6 mg/dL"
+    }
+   ],
+   "correct_answer": "D",
+   "difficulty": "medium",
+   "explanation": "ACR 2020 กำหนดเป้า serum urate <6 mg/dL สำหรับผู้ป่วยเกาต์ทุกรายที่ได้ ULT; EULAR 2016 ใช้ <6 mg/dL ทั่วไป และ <5 mg/dL ในโรครุนแรง (tophus, chronic arthropathy, flare บ่อย) จนผลึกละลาย ผู้ป่วยรายนี้ไม่มี tophus จึงใช้ <6 mg/dL",
+   "detailed_explanation": {
+    "summary": "เป้า urate ต้องต่ำกว่าจุดอิ่มตัว 6.8: ทั่วไป <6, มี tophus/รุนแรง <5 (EULAR), อย่าต่ำกว่า 3 นาน ๆ",
+    "reason": "โจทย์ถามอะไร: ผู้ป่วยเกาต์ flare บ่อย (≥2 ครั้ง/ปี) ไม่มี tophus เริ่ม allopurinol แบบ treat-to-target ถามเป้าหมาย serum urate ต้องรู้ทั้งเหตุผลเชิงเคมีและค่าที่แนวทางต่าง ๆ ใช้ โดยเฉพาะความต่างระหว่าง ACR และ EULAR ในผู้ที่มี tophus\n\nหลักการ/กลไกเชิงลึก: Monosodium urate อิ่มตัวที่ประมาณ 6.8 mg/dL ที่ 37°C และ pH ปกติ (ที่อุณหภูมิต่ำกว่า เช่น ข้อเท้า/นิ้วเท้า ~35°C จุดอิ่มตัวลดเหลือ ~6 mg/dL ซึ่งอธิบายว่าทำไมผลึกเกิดที่ข้อส่วนปลาย) ถ้า urate สูงกว่าจุดนี้ ผลึกจะสะสมเพิ่ม เมื่อลดต่ำกว่าจุดอิ่มตัว ผลึกจะละลายกลับเข้าสู่เลือด อัตราการละลายเป็นสัดส่วนกับความต่างระหว่างจุดอิ่มตัวกับระดับ urate จริง ยิ่งต่ำยิ่งเร็ว นี่คือเหตุผลที่โรครุนแรง (ผลึกสะสมมาก) EULAR ตั้งเป้า <5 mg/dL ระยะแรกของการละลายผลึกมักกระตุ้น flare (mobilization flare) จึงต้องมี prophylaxis\n\nทำไมข้อ D ถูก: ผู้ป่วยรายนี้มีข้อบ่งชี้ ULT (flare ≥2 ครั้ง/ปี) แต่ไม่มี tophus, erosion หรือ chronic arthropathy ทั้ง ACR 2020 และ EULAR 2016 ตรงกันว่าเป้าคือ <6 mg/dL จึงเป็นคำตอบเดียวที่ถูก\n\nหลักฐานและแนวทางเวชปฏิบัติ: ACR 2020 (FitzGerald, Arthritis Care Res): treat-to-target with serum urate <6 mg/dL สำหรับทุกราย (strong) เริ่ม allopurinol ≤100 mg/วัน (≤50 mg ใน CKD ≥ stage 3) titrate ทุก 2–5 สัปดาห์ ให้ flare prophylaxis 3–6 เดือน ACR ไม่ได้กำหนดเป้า <5 แยกต่างหาก EULAR 2016 (Richette, Ann Rheum Dis 2017): เป้า <6 mg/dL (360 µmol/L) ทุกราย และ <5 mg/dL (300 µmol/L) ในโรครุนแรง (tophus, chronic arthropathy, flare บ่อย) จนผลึกละลายหมด และไม่แนะนำ <3 mg/dL ระยะยาว แนวทางเวชปฏิบัติโรคเกาต์ของไทยใช้หลักการเดียวกัน\n\nการประยุกต์กับผู้ป่วยจริง: อธิบายผู้ป่วยว่า 'ยานี้ไม่ใช่ยาแก้ปวด แต่เป็นยาละลายผลึก ต้องกินทุกวันตลอดไปแม้ไม่ปวด' นัดตรวจ urate ทุก 2–5 สัปดาห์ระหว่างปรับขนาด เพิ่ม allopurinol ครั้งละ 50–100 mg จนถึงเป้า (อาจเกิน 300 mg ได้หากไตปกติ สูงสุด 800 mg/วัน) ถึงเป้าแล้วตรวจทุก 6 เดือน ช่วงแรกอาจกำเริบมากขึ้นซึ่งไม่ได้แปลว่ายาไม่ได้ผล ห้ามหยุด allopurinol ให้ใช้ colchicine 0.5–0.6 mg วันละ 1–2 ครั้งต่อ 3–6 เดือน ควบคุมน้ำหนัก ลดเบียร์ เหล้า น้ำหวาน fructose\n\nการติดตามและสัญญาณอันตราย: หยุด allopurinol ทันทีและพบแพทย์ถ้ามีผื่น ไข้ แผลในปาก ตาแดง (SJS/TEN/DRESS) แม้ HLA-B*58:01 ลบ ติดตาม LFT, SCr และ CBC เป็นระยะ ถ้าไปถึงเป้าแล้วยัง flare ต้องสอบถามการกินยา\n\nจุดที่มักสับสนและกับดักข้อสอบ: (1) 6.8 คือจุดอิ่มตัว ไม่ใช่เป้า — เป้าต้องต่ำกว่า (<6) (2) ผู้ที่มี tophus: ACR ยังพูด <6 แต่ EULAR ให้ <5 ข้อสอบที่ระบุ tophus อาจคาดหวัง <5 ต้องอ่านว่าอ้างแนวทางใด (3) <3 ไม่ใช่ 'ยิ่งต่ำยิ่งดี' ในระยะยาว (4) asymptomatic hyperuricemia ไม่ต้องตั้งเป้าเพราะไม่ต้องให้ยา\n\nสรุปท่องสอบ: Urate target: ทั่วไป <6 mg/dL (ACR+EULAR); tophus/รุนแรง <5 (EULAR) จนผลึกหมด; ไม่ต่ำกว่า 3 ระยะยาว; ต่ำกว่า 6.8 = ผลึกละลาย",
+    "choices": [
+     {
+      "label": "A",
+      "text": "< 8 mg/dL",
+      "explanation": "✗ ที่ 8 mg/dL urate ยังสูงกว่าจุดอิ่มตัวของ monosodium urate (~6.8 mg/dL ที่ 37°C) มาก ผลึกยังสร้างใหม่และไม่ละลาย flare จะเกิดต่อ ไม่มีแนวทางใดใช้เป็นเป้าหมาย ระดับนี้มีความหมายเฉพาะในบริบทอื่น เช่น บางแนวทางของญี่ปุ่นใช้ ≥8 mg/dL ร่วมกับโรคร่วมเป็นเกณฑ์พิจารณายาใน asymptomatic hyperuricemia ไม่ใช่เป้าหมายการรักษาเกาต์"
+     },
+     {
+      "label": "B",
+      "text": "< 7 mg/dL",
+      "explanation": "✗ 7 mg/dL ยังสูงกว่าจุดอิ่มตัว (~6.8 mg/dL) ผลึกยังคงอยู่และ flare จะเกิดซ้ำได้ ค่า ~7 mg/dL เป็นเพียงเกณฑ์นิยามคร่าว ๆ ของ hyperuricemia ในผู้ชาย (บางตำราใช้ >7.0 mg/dL) ไม่ใช่เป้าหมายของ ULT การหยุด titrate ที่ระดับนี้เป็นสาเหตุหลักที่ผู้ป่วยยังมี flare แม้กินยาสม่ำเสมอ"
+     },
+     {
+      "label": "C",
+      "text": "< 3 mg/dL",
+      "explanation": "✗ ต่ำเกินจำเป็นสำหรับผู้ป่วยไม่มี tophus EULAR 2016 แนะนำไม่ให้ urate <3 mg/dL ต่อเนื่องระยะยาว เพราะ urate เป็น antioxidant และมีข้อกังวลทางทฤษฎีเรื่องโรคระบบประสาทเสื่อม ระดับต่ำมากชั่วคราวอาจเกิดได้ในผู้ที่ได้ pegloticase เพื่อสลาย tophus ขนาดใหญ่ที่ดื้อต่อการรักษา"
+     },
+     {
+      "label": "D",
+      "text": "< 6 mg/dL",
+      "explanation": "✓ ACR 2020 (strong) ตั้งเป้า serum urate <6 mg/dL สำหรับผู้ป่วยทุกรายที่ได้ ULT และ EULAR 2016 ก็ใช้ <6 mg/dL สำหรับผู้ป่วยทั่วไป ระดับนี้ต่ำกว่าจุดอิ่มตัว ทำให้ผลึกละลายและ flare ลดลงในระยะยาว ผู้ป่วยรายนี้ไม่มี tophus/chronic arthropathy จึงใช้ <6 ส่วนเป้า <5 mg/dL ใช้ตาม EULAR ในโรครุนแรง เช่นมี tophus"
+     }
+    ],
+    "key_takeaway": "เกาต์ไม่มี tophus → urate <6; มี tophus → <5 (EULAR); อย่าต่ำกว่า 3 ระยะยาว"
+   }
+  },
+  {
+   "id": "739aa557-60c3-4e89-8a5b-e31ca46515e4",
+   "scenario": "ผู้ป่วยหญิงอายุ 70 ปี เป็น polymyalgia rheumatica ได้รับ prednisolone 10 mg/day มา 6 เดือน และคาดว่าต้องใช้ต่ออีกอย่างน้อย 6 เดือน ไม่เคยกระดูกหัก DXA: T-score femoral neck −2.0, lumbar spine −1.8 FRAX (ปรับตามขนาด glucocorticoid แล้ว) major osteoporotic fracture 14% และ hip fracture 2.2% CrCl 65 mL/min ไม่มีปัญหาหลอดอาหาร ตามแนวทาง ACR 2022 glucocorticoid-induced osteoporosis (GIOP) ข้อใดเหมาะสมที่สุด",
+   "choices": [
+    {
+     "label": "A",
+     "text": "ให้ vitamin D 1,000 IU/day เพียงอย่างเดียว"
+    },
+    {
+     "label": "B",
+     "text": "ประเมินเป็น moderate risk ให้ calcium + vitamin D และปรับพฤติกรรม ร่วมกับ oral bisphosphonate เช่น alendronate 70 mg สัปดาห์ละครั้ง"
+    },
+    {
+     "label": "C",
+     "text": "ประเมินเป็น low risk ให้ calcium 1,000 mg + vitamin D 800 IU/day และปรับพฤติกรรมเท่านั้น"
+    },
+    {
+     "label": "D",
+     "text": "เริ่ม estrogen (hormone therapy) เป็นยาหลักป้องกันกระดูกหัก"
+    }
+   ],
+   "correct_answer": "B",
+   "difficulty": "hard",
+   "explanation": "ตาม ACR 2022 GIOP ผู้ป่วยที่ FRAX (ปรับ GC) major 10–19% หรือ hip >1% ถึง <3% หรือ T-score −1 ถึง −2.5 เป็น moderate risk ควรได้ Ca/D + lifestyle ร่วมกับยาป้องกันกระดูกหัก โดย oral bisphosphonate เป็นตัวแรก",
+   "detailed_explanation": {
+    "summary": "GIOP: ทุกคนได้ Ca/D; ประเมิน FRAX ปรับ steroid → low = Ca/D, moderate/high = เพิ่ม oral bisphosphonate, very high = พิจารณา anabolic",
+    "reason": "โจทย์ถามอะไร: ผู้ป่วยหญิง 70 ปีใช้ prednisolone 10 mg/day มา 6 เดือนและต้องใช้ต่อ ถามการป้องกัน GIOP โดยให้ข้อมูล FRAX (ปรับ GC) และ T-score มาให้จัดระดับความเสี่ยงตาม ACR 2022 แล้วเลือกการรักษาที่สอดคล้อง\n\nหลักการ/กลไกเชิงลึก: Glucocorticoid ลดการสร้างกระดูกเป็นกลไกหลัก: ทำให้ osteoblast และ osteocyte เกิด apoptosis ยับยั้ง Wnt signaling (เพิ่ม sclerostin, DKK-1) และลดการเปลี่ยน stem cell ไปเป็น osteoblast ระยะแรกยังเพิ่มการสลายผ่านการเพิ่ม RANKL และลด OPG ร่วมกับลดการดูดซึม Ca ที่ลำไส้และเพิ่มการขับทางไต และทำให้กล้ามเนื้ออ่อนแรง (steroid myopathy) เพิ่มการล้ม การสูญเสียกระดูกเร็วที่สุดใน 3–6 เดือนแรก และเกิดที่กระดูก trabecular (กระดูกสันหลัง) ความเสี่ยงหักเพิ่มตั้งแต่ขนาด 2.5–7.5 mg/day และหักได้ที่ BMD สูงกว่าผู้ป่วย postmenopausal จึงต้องปรับ FRAX: ขนาด ≥7.5 mg/day คูณ major ×1.15 และ hip ×1.2\n\nทำไมข้อ B ถูก: ข้อมูลทุกตัวของผู้ป่วยอยู่ในช่วง moderate risk (FRAX major 14%, hip 2.2%, T-score −2.0) ACR 2022 แนะนำให้รักษาด้วยยา โดย oral bisphosphonate เป็นยาที่เลือกเป็นอันดับแรกเมื่อไม่มีข้อห้าม ร่วมกับ Ca/D และปรับพฤติกรรม\n\nหลักฐานและแนวทางเวชปฏิบัติ: ACR 2022 GIOP guideline (Humphrey, Arthritis Care Res 2023): ผู้ใช้ GC ≥2.5 mg/day นาน >3 เดือน ให้ Ca 800–1,000 mg + vitamin D 600–800 IU/วัน และ lifestyle ทุกราย; ประเมินความเสี่ยงใน 6 เดือน แบ่งระดับในผู้ใหญ่อายุ ≥40 ปี — high: เคยหักจาก osteoporosis, T-score ≤ −2.5 ในอายุ ≥50, FRAX major ≥20% หรือ hip ≥3%; very high: เคยหักหลายตำแหน่ง/หักระหว่างรักษา หรือ T ≤ −3.0 หรือ GC ขนาดสูงมาก (≥30 mg/day >30 วัน หรือสะสม >5 g/ปี); moderate: FRAX major 10–19% หรือ hip >1% และ <3% หรือ T-score −1 ถึง −2.5; low: FRAX major <10%, hip ≤1%, T > −1.0 ยา: moderate/high → oral BP ก่อน (หรือ IV BP, denosumab, PTH analog); very high → อาจพิจารณา PTH/PTHrP analog ก่อน\n\nการประยุกต์กับผู้ป่วยจริง: Alendronate 70 mg สัปดาห์ละครั้ง กินตอนเช้าก่อนอาหาร 30 นาทีกับน้ำเปล่า 1 แก้ว นั่ง/ยืนตรง 30 นาที calcium กินแยกเวลา ผู้ป่วยใช้ prednisolone ให้ลดเหลือขนาดต่ำสุดที่คุม PMR ได้ แนะนำให้ออกกำลังกายลงน้ำหนัก ป้องกันการหกล้ม งดบุหรี่ จำกัดแอลกอฮอล์ ≤2 drink/วัน\n\nการติดตามและสัญญาณอันตราย: ประเมินความเสี่ยงซ้ำทุก 12 เดือนระหว่างใช้ GC ตรวจ BMD ทุก 2–3 ปี หรือเร็วขึ้นเมื่อขนาดเพิ่ม เฝ้าระวังอาการระคายหลอดอาหาร ปวดต้นขา/ขาหนีบ (AFF) และแผลในปากไม่หาย (ONJ) ถ้าหยุด GC ได้และความเสี่ยงต่ำลง อาจหยุดยาป้องกันได้\n\nจุดที่มักสับสนและกับดักข้อสอบ: (1) เกณฑ์เดิม ACR 2017 ใช้ 'pred ≥7.5 mg ≥3 เดือน' แต่ ACR 2022 ใช้ ≥2.5 mg/day และแบ่งเป็น 4 ระดับความเสี่ยง (2) ต้องใช้ FRAX ที่ปรับตามขนาด GC แล้ว (3) moderate risk ก็ต้องรักษาด้วยยา ไม่ใช่แค่ Ca/D (4) teriparatide ไม่ใช่ตัวแรกใน moderate risk\n\nสรุปท่องสอบ: GIOP ACR 2022: GC ≥2.5 mg >3 เดือน → Ca/D ทุกคน + FRAX (ปรับ GC) → low: Ca/D; moderate (MOF 10–19%/hip 1–3%/T −1 ถึง −2.5): + oral BP; high: + oral BP/อื่น; very high: anabolic",
+    "choices": [
+     {
+      "label": "A",
+      "text": "ให้ vitamin D 1,000 IU/day เพียงอย่างเดียว",
+      "explanation": "✗ Vitamin D อย่างเดียวไม่พอ ACR 2022 แนะนำ calcium และ vitamin D ให้ 'ทุกราย' ที่ใช้ glucocorticoid ≥2.5 mg/day นานเกิน 3 เดือน เป็นพื้นฐาน แต่ไม่ได้ลดการหักเพียงพอในผู้ที่มีความเสี่ยงปานกลางขึ้นไป ข้อนี้จะพอเพียงได้เพียงบางส่วนในผู้ที่ได้ calcium จากอาหารเพียงพออยู่แล้วและจัดอยู่ใน low risk เท่านั้น"
+     },
+     {
+      "label": "B",
+      "text": "ประเมินเป็น moderate risk ให้ calcium + vitamin D และปรับพฤติกรรม ร่วมกับ oral bisphosphonate เช่น alendronate 70 mg สัปดาห์ละครั้ง",
+      "explanation": "✓ FRAX (ปรับ GC) major 14% (อยู่ในช่วง 10–19%) และ hip 2.2% (>1% แต่ <3%) และ T-score −2.0 (ระหว่าง −1 ถึง −2.5) ทั้งหมดเข้าเกณฑ์ moderate risk ตาม ACR 2022 ซึ่งแนะนำให้เริ่มยาป้องกันกระดูกหัก (conditional) ร่วมกับ Ca/D และ lifestyle โดย oral bisphosphonate เป็นตัวเลือกแรกเพราะประสิทธิภาพ ความปลอดภัย และราคา ผู้ป่วยไม่มีปัญหาหลอดอาหารและไตใช้ได้"
+     },
+     {
+      "label": "C",
+      "text": "ประเมินเป็น low risk ให้ calcium 1,000 mg + vitamin D 800 IU/day และปรับพฤติกรรมเท่านั้น",
+      "explanation": "✗ ผู้ป่วยไม่ใช่ low risk เกณฑ์ low risk ของ ACR 2022 (อายุ ≥40) คือ FRAX major <10% และ hip ≤1% และ T-score > −1.0 ผู้ป่วยรายนี้เกินทุกค่า Ca/D + lifestyle อย่างเดียวจึงเหมาะกับผู้ใช้ prednisolone ≥2.5 mg/day ที่เป็น low risk เช่นผู้หญิงอายุ 45 ปี FRAX major 6% hip 0.4% T-score −0.6"
+     },
+     {
+      "label": "D",
+      "text": "เริ่ม estrogen (hormone therapy) เป็นยาหลักป้องกันกระดูกหัก",
+      "explanation": "✗ ACR 2022 ไม่จัด hormone therapy เป็นยาหลักใน GIOP ยาที่แนะนำคือ oral/IV bisphosphonate, denosumab, teriparatide/abaloparatide ส่วน raloxifene เป็นทางเลือกสุดท้ายในหญิงหลังหมดประจำเดือน estrogen ในหญิง 70 ปีเพิ่มความเสี่ยง VTE, stroke และมะเร็งเต้านม จะพิจารณาได้ในหญิงก่อนอายุ 60 ที่มีอาการวัยทองรบกวนหรือ premature ovarian insufficiency"
+     }
+    ],
+    "key_takeaway": "GIOP moderate risk (MOF 10–19% / hip 1–3%) = Ca/D + oral bisphosphonate"
+   }
+  },
+  {
+   "id": "7bae685c-00e6-4637-a6e0-31e364b404b1",
+   "scenario": "ผู้ป่วยหญิงอายุ 45 ปี วินิจฉัย rheumatoid arthritis ใหม่ seropositive (RF และ anti-CCP บวก) DAS28-ESR 5.6 (high disease activity) ไม่เคยได้ DMARD ใดมาก่อน CBC และ LFT ปกติ CrCl 95 mL/min ไม่ดื่มสุรา ไม่มีโรคปอด ไม่ได้วางแผนตั้งครรภ์และคุมกำเนิดอยู่ ตามแนวทาง ACR 2021 และ EULAR 2022 ยา DMARD ตัวแรกที่เหมาะสมที่สุดคือข้อใด",
+   "choices": [
+    {
+     "label": "A",
+     "text": "Methotrexate เริ่ม 15 mg สัปดาห์ละครั้ง ร่วมกับ folic acid แล้วปรับขนาดเพิ่มตามการตอบสนองและการทนยา (สูงสุด 25 mg/สัปดาห์)"
+    },
+    {
+     "label": "B",
+     "text": "Hydroxychloroquine 400 mg/วัน เดี่ยว"
+    },
+    {
+     "label": "C",
+     "text": "Leflunomide 20 mg/วัน"
+    },
+    {
+     "label": "D",
+     "text": "Adalimumab 40 mg SC ทุก 2 สัปดาห์ เป็นยาตัวแรก"
+    }
+   ],
+   "correct_answer": "A",
+   "difficulty": "easy",
+   "explanation": "Methotrexate เป็น anchor DMARD สำหรับ RA ที่วินิจฉัยใหม่ตาม ACR 2021 และ EULAR 2022 เริ่มอย่างน้อย 15 mg สัปดาห์ละครั้งร่วมกับ folic acid แล้วปรับขนาดเพิ่ม HCQ ใช้ใน low disease activity, LEF เมื่อ MTX ใช้ไม่ได้ และ biologic เป็นขั้นถัดไป",
+   "detailed_explanation": {
+    "summary": "RA ใหม่ทุกระดับ moderate–high → MTX (anchor) ≥15 mg/สัปดาห์ + folic acid; biologic เติมทีหลัง",
+    "reason": "โจทย์ถามอะไร: ผู้ป่วย RA วินิจฉัยใหม่ seropositive และ high disease activity ไม่มีข้อห้ามของ MTX ถามยา DMARD ตัวแรกตาม ACR 2021/EULAR 2022 ต้องรู้ว่า MTX เป็น anchor และตำแหน่งของยาอื่นในลำดับการรักษา\n\nหลักการ/กลไกเชิงลึก: MTX ขนาดต่ำเข้าเซลล์ผ่าน reduced folate carrier แล้วถูกเติม glutamate เป็น MTX-polyglutamate ซึ่งค้างในเซลล์นาน ยับยั้ง AICAR transformylase ทำให้ AICAR สะสม ยับยั้ง adenosine deaminase จึงมี adenosine ออกนอกเซลล์มากขึ้น ไปจับ A2A receptor บนเซลล์อักเสบ ลด TNF, IL-6 และการเกาะติดของ neutrophil ผลจึงเกิดช้า (4–8 สัปดาห์) และให้สัปดาห์ละครั้งได้ MTX ดูดซึมทางปากได้ดีที่ขนาดต่ำ แต่ที่ขนาด >15 mg การดูดซึมอิ่มตัว (bioavailability ลด) จึงอาจเปลี่ยนเป็น SC เมื่อต้องการขนาดสูง ยาขับทางไตเป็นหลัก จึงต้องตรวจ CrCl ก่อนเริ่ม\n\nทำไมข้อ A ถูก: MTX มีประสิทธิภาพสูง ชะลอ joint damage ราคาถูก มีข้อมูลระยะยาวด้านความปลอดภัย และเป็นฐานที่ biologic/JAKi ได้ผลดีขึ้นเมื่อใช้ร่วม ผู้ป่วยไม่มีข้อห้าม จึงเป็นคำตอบที่ดีที่สุด\n\nหลักฐานและแนวทางเวชปฏิบัติ: ACR 2021 RA guideline (Fraenkel): ผู้ป่วยไม่เคยได้ DMARD และ moderate–high disease activity แนะนำ MTX monotherapy เหนือ HCQ หรือ SSZ (conditional), เหนือ LEF (conditional), เหนือ dual/triple csDMARD และเหนือ bDMARD/tsDMARD เดี่ยว ระบุขนาดเริ่ม ≥15 mg/สัปดาห์ แล้วเพิ่มขนาดภายในไม่กี่สัปดาห์จนได้ผลหรือถึงขนาดที่ทนได้ EULAR 2022 (Smolen): MTX ควรเป็นส่วนหนึ่งของกลยุทธ์การรักษาแรก ถ้ามีข้อห้ามใช้ LEF หรือ SSZ ร่วมกับ glucocorticoid ระยะสั้นได้ และประเมินแบบ treat-to-target\n\nการประยุกต์กับผู้ป่วยจริง: ก่อนเริ่ม: CBC, LFT, SCr, HBV/HCV serology, CXR, ตรวจการตั้งครรภ์และคุมกำเนิดที่มีประสิทธิภาพ สั่ง MTX 2.5 mg ครั้งละ 6 เม็ดสัปดาห์ละ 1 ครั้ง ระบุวันบนฉลาก folic acid 1 mg/วันหรือ 5 mg/สัปดาห์ (คนละวันกับ MTX) สอนผู้ป่วย: 'ยานี้กินสัปดาห์ละวันเดียว ห้ามกินทุกวัน' งดสุรา เลี่ยง co-trimoxazole เตือนอาการคลื่นไส้ แผลในปาก ให้วัคซีนไข้หวัดใหญ่/ปอดบวม และวัคซีนเชื้อเป็นก่อนเริ่มยา\n\nการติดตามและสัญญาณอันตราย: ตรวจ CBC, LFT, SCr ทุก 2–4 สัปดาห์ใน 3 เดือนแรก แล้วทุก 8–12 สัปดาห์ ถ้า ALT >3×ULN หยุดชั่วคราว หยุดยาและพบแพทย์เมื่อไอแห้ง หอบ ไข้ (MTX pneumonitis) เจ็บคอ จ้ำเลือด แผลในปากรุนแรง ประเมิน disease activity ทุก 1–3 เดือน ถ้าไม่ดีขึ้นใน 3 เดือนหรือไม่ถึงเป้าใน 6 เดือน ปรับการรักษา\n\nจุดที่มักสับสนและกับดักข้อสอบ: (1) ‘เริ่ม biologic เลยเพราะโรครุนแรง’ เป็นกับดัก — แม้ high activity ก็เริ่ม MTX ก่อน (2) HCQ เหมาะกับ low activity ไม่ใช่ high (3) ‘MTX ล้มเหลว’ ต้องได้ขนาดเพียงพอก่อน (4) MTX ในโรคข้อเป็น weekly ไม่ใช่ daily\n\nสรุปท่องสอบ: RA ใหม่: MTX anchor ≥15 mg/wk + folic acid; low activity → HCQ ได้; MTX ห้าม → LEF/SSZ; ไม่ถึงเป้า + poor prognosis → เติม bDMARD/JAKi",
+    "choices": [
+     {
+      "label": "A",
+      "text": "Methotrexate เริ่ม 15 mg สัปดาห์ละครั้ง ร่วมกับ folic acid แล้วปรับขนาดเพิ่มตามการตอบสนองและการทนยา (สูงสุด 25 mg/สัปดาห์)",
+      "explanation": "✓ MTX เป็น anchor drug ของ RA ตามทั้ง ACR 2021 (แนะนำ MTX monotherapy เหนือ HCQ, SSZ, LEF และเหนือ bDMARD/tsDMARD เดี่ยวในผู้ไม่เคยได้ DMARD) และ EULAR 2022 (MTX เป็นส่วนหนึ่งของกลยุทธ์แรก) ผู้ป่วยไม่มีข้อห้าม (ตับ ไต ปอด สุรา ตั้งครรภ์) ACR แนะนำเริ่ม ≥15 mg/สัปดาห์ แล้วเพิ่มขนาดเร็วจนได้ผล (มัก 20–25 mg/สัปดาห์) ร่วมกับ folic acid"
+     },
+     {
+      "label": "B",
+      "text": "Hydroxychloroquine 400 mg/วัน เดี่ยว",
+      "explanation": "✗ HCQ ฤทธิ์อ่อน ไม่ชะลอ radiographic progression ได้ดีเท่า MTX จึงไม่เหมาะเป็นยาเดี่ยวใน high disease activity และ seropositive ซึ่งเป็น poor prognostic factor ACR 2021 แนะนำ HCQ เป็นตัวแรก (conditional) เฉพาะใน low disease activity นอกจากนี้ HCQ ใช้ในหญิงตั้งครรภ์ได้ จึงเป็นตัวเลือกเมื่อผู้ป่วยวางแผนตั้งครรภ์หรือเป็นส่วนหนึ่งของ triple therapy"
+     },
+     {
+      "label": "C",
+      "text": "Leflunomide 20 mg/วัน",
+      "explanation": "✗ Leflunomide (DHODH inhibitor) มีประสิทธิภาพใกล้เคียง MTX แต่เป็นตัวเลือกรองเมื่อ MTX มีข้อห้ามหรือทนไม่ได้ เช่น มีปอดอักเสบจาก MTX ACR 2021 แนะนำ MTX เหนือ LEF (conditional) LEF มี half-life ยาวมาก (enterohepatic recirculation) เป็น teratogen ต้องทำ washout ด้วย cholestyramine ก่อนตั้งครรภ์ และมีผลข้างเคียงท้องเสีย ความดันสูง ตับอักเสบ"
+     },
+     {
+      "label": "D",
+      "text": "Adalimumab 40 mg SC ทุก 2 สัปดาห์ เป็นยาตัวแรก",
+      "explanation": "✗ ACR 2021 แนะนำ MTX monotherapy เหนือ bDMARD หรือ tsDMARD เดี่ยวในผู้ไม่เคยได้ DMARD และ EULAR ให้เพิ่ม bDMARD เมื่อไม่ถึงเป้าหลัง MTX 3–6 เดือนและมี poor prognostic factors TNFi ได้ผลดีที่สุดเมื่อใช้ร่วมกับ MTX ข้อนี้จะเหมาะเมื่อผู้ป่วยตอบสนองไม่เพียงพอต่อ MTX ขนาดเต็มแล้ว"
+     }
+    ],
+    "key_takeaway": "RA ใหม่ = MTX ก่อนเสมอ (ถ้าไม่มีข้อห้าม) — biologic คือ 'เติม' ไม่ใช่ 'เริ่ม'"
+   }
+  },
+  {
+   "id": "96f0b017-a88b-45b6-94bf-f4310ed45906",
+   "scenario": "ผู้ป่วยชายอายุ 35 ปี เป็น rheumatoid arthritis เริ่ม methotrexate 15 mg สัปดาห์ละครั้ง แพทย์สั่ง folic acid 5 mg สัปดาห์ละครั้ง (รับประทานวันถัดจากวันที่กิน MTX) ผู้ป่วยถามเภสัชกรว่า \"กิน folic acid ไปทำไม แล้วจะทำให้ยาข้อได้ผลน้อยลงไหม\" ข้อใดเป็นคำตอบที่ถูกต้องที่สุด",
+   "choices": [
+    {
+     "label": "A",
+     "text": "Folic acid ช่วยเสริมฤทธิ์ MTX ทำให้คุมข้ออักเสบได้ดีขึ้น"
+    },
+    {
+     "label": "B",
+     "text": "Folic acid ใช้ป้องกัน osteoporosis จาก RA และ glucocorticoid"
+    },
+    {
+     "label": "C",
+     "text": "Folic acid ลดผลข้างเคียงของ MTX เช่น แผลในปาก คลื่นไส้ และเอนไซม์ตับสูง และลดการหยุดยาจากพิษ โดยไม่ลดประสิทธิภาพในการคุมโรค"
+    },
+    {
+     "label": "D",
+     "text": "Folic acid ใช้แทน leucovorin ในกรณีที่ได้รับ MTX เกินขนาด"
+    }
+   ],
+   "correct_answer": "C",
+   "difficulty": "easy",
+   "explanation": "Folic acid เสริมเพื่อลดผลข้างเคียงของ MTX (แผลในปาก คลื่นไส้ ตับอักเสบ เม็ดเลือดต่ำ) และลดการหยุดยา โดยไม่ลดประสิทธิภาพ ส่วนกรณี MTX เกินขนาดต้องใช้ leucovorin ไม่ใช่ folic acid",
+   "detailed_explanation": {
+    "summary": "Folic acid กับ MTX = ลดพิษ ไม่ลดผล; MTX เกินขนาด = leucovorin ไม่ใช่ folic acid",
+    "reason": "โจทย์ถามอะไร: ผู้ป่วย RA ที่ได้ MTX 15 mg/สัปดาห์ร่วมกับ folic acid ถามเหตุผลของ folic acid และห่วงว่าจะลดฤทธิ์ยา เภสัชกรต้องอธิบายบทบาทของ folate supplementation และแยกจาก leucovorin rescue\n\nหลักการ/กลไกเชิงลึก: ที่ขนาดสูง (มะเร็ง) MTX ออกฤทธิ์หลักโดยยับยั้ง DHFR ทำให้ tetrahydrofolate ลดลง สังเคราะห์ purine และ thymidylate ไม่ได้ เซลล์ที่แบ่งตัวเร็ว (เยื่อบุปาก ลำไส้ ไขกระดูก ตับ) จึงได้รับพิษ ที่ขนาดต่ำในโรคข้อ ฤทธิ์ต้านการอักเสบหลักมาจาก MTX-polyglutamate ยับยั้ง AICAR transformylase แล้วเพิ่ม adenosine นอกเซลล์ ดังนั้นการเติม folate จะแก้เฉพาะส่วนที่เป็นพิษจากการขาด folate โดยไม่ลบล้างกลไก adenosine ผลข้างเคียงจึงลดลงโดยประสิทธิภาพคงอยู่ Leucovorin (5-formyl-THF) เป็น reduced folate เข้าสู่ folate pool โดยไม่ต้องผ่าน DHFR จึงใช้กู้ภาวะพิษ แต่ถ้าให้ใกล้เวลากิน MTX อาจลดประสิทธิภาพ\n\nทำไมข้อ C ถูก: คำตอบรวมทั้งประโยชน์ (ลด mucositis, GI, ALT สูง, การหยุดยา) และตอบคำถามผู้ป่วยตรง ๆ ว่าไม่ลดประสิทธิภาพ ตรงกับหลักฐานระดับ meta-analysis\n\nหลักฐานและแนวทางเวชปฏิบัติ: Cochrane review (Shea 2013, 6 RCTs, n=624): folic/folinic acid ลด GI side effects (RR ~0.74), ลด LFT ผิดปกติ (RR ~0.23) และลดการหยุด MTX ทุกสาเหตุ (RR ~0.39) โดยไม่ลดประสิทธิภาพ แนวทาง 3E Initiative และ EULAR แนะนำ folic acid ทุกรายที่ใช้ MTX อย่างน้อย 5 mg/สัปดาห์ (หรือ 1 mg/วัน) และเป็นมาตรฐานปฏิบัติร่วมกับแนวทาง ACR ถ้ายังมีผลข้างเคียงอาจเพิ่มขนาด folic acid หรือเปลี่ยน MTX เป็น SC\n\nการประยุกต์กับผู้ป่วยจริง: บอกผู้ป่วย: 'folic acid ช่วยให้ทนยาข้อได้ดีขึ้น แผลในปาก คลื่นไส้ ตับอักเสบน้อยลง และไม่ทำให้ยาข้อได้ผลน้อยลง' ให้กิน folic acid 5 mg สัปดาห์ละครั้ง วันถัดจาก MTX (เช่น MTX วันจันทร์ folic acid วันอังคาร) หรือ 1 mg ทุกวัน เขียนวันบนฉลากทั้งสองยาเพื่อป้องกันสลับกัน ห้ามกิน MTX ทุกวัน งดสุรา หลีกเลี่ยง co-trimoxazole และยาสมุนไพรที่ไม่ทราบส่วนประกอบ\n\nการติดตามและสัญญาณอันตราย: แม้ใช้ folic acid ยังต้องตรวจ CBC, LFT, SCr เป็นระยะ เพราะไม่ได้ป้องกันพิษทุกชนิด (เช่น pneumonitis) อาการที่ต้องรีบพบแพทย์: แผลในปากมากจนกินไม่ได้ ไข้ เจ็บคอ จ้ำเลือด ไอแห้ง หอบ ตัวเหลือง ถ้ามีภาวะ MTX เกินขนาด (เช่นกินทุกวัน) ต้องใช้ leucovorin ภายใน 24 ชั่วโมงและส่งโรงพยาบาล\n\nจุดที่มักสับสนและกับดักข้อสอบ: (1) Folic acid ≠ folinic acid (leucovorin) (2) folic acid ไม่ได้เพิ่ม efficacy (3) ไม่ต้องหยุด folic acid ในวันกิน MTX แต่บางแนวทางแนะนำเลี่ยงวันเดียวกันเพื่อความชัดเจน (4) MCV สูงในผู้ใช้ MTX ให้คิดถึงการขาด folate จากยา\n\nสรุปท่องสอบ: MTX + folic acid ≥5 mg/สัปดาห์ (หรือ 1 mg/วัน): ลด mucositis, GI, ALT สูง, หยุดยา — ไม่ลด efficacy; พิษเฉียบพลัน = leucovorin",
+    "choices": [
+     {
+      "label": "A",
+      "text": "Folic acid ช่วยเสริมฤทธิ์ MTX ทำให้คุมข้ออักเสบได้ดีขึ้น",
+      "explanation": "✗ Folic acid ไม่ได้เสริมฤทธิ์ต้านการอักเสบของ MTX ฤทธิ์ต้าน RA ของ MTX ขนาดต่ำมาจากการเพิ่ม adenosine ซึ่ง folate ไม่ได้รบกวนมากนัก การเพิ่มประสิทธิภาพของ MTX ทำได้โดยเพิ่มขนาด เปลี่ยนเป็น SC หรือเติม csDMARD/biologic ไม่ใช่ folic acid ข้อนี้ไม่ถูกในสถานการณ์ใดของ RA"
+     },
+     {
+      "label": "B",
+      "text": "Folic acid ใช้ป้องกัน osteoporosis จาก RA และ glucocorticoid",
+      "explanation": "✗ Folic acid ไม่มีบทบาทต่อมวลกระดูก การป้องกันกระดูกพรุนในผู้ป่วย RA ที่ใช้ glucocorticoid ทำโดย calcium, vitamin D, การปรับพฤติกรรม และยาเช่น bisphosphonate ตามระดับความเสี่ยงของ ACR 2022 GIOP ข้อนี้จะถูกถ้าเปลี่ยนจาก folic acid เป็น calcium + vitamin D"
+     },
+     {
+      "label": "C",
+      "text": "Folic acid ลดผลข้างเคียงของ MTX เช่น แผลในปาก คลื่นไส้ และเอนไซม์ตับสูง และลดการหยุดยาจากพิษ โดยไม่ลดประสิทธิภาพในการคุมโรค",
+      "explanation": "✓ ผลข้างเคียงของ MTX ขนาดต่ำส่วนใหญ่เกิดจากภาวะ folate ต่ำในเซลล์ที่แบ่งตัวเร็ว การเสริม folic acid จึงลด stomatitis, GI toxicity, ALT สูง และการหยุดยาจากพิษได้ (Cochrane: ALT สูงลด ~77%, การหยุดยาลด ~61%) โดยไม่ลด efficacy แนวทางสากลแนะนำให้ใช้ร่วมเป็นมาตรฐาน อย่างน้อย 5 mg/สัปดาห์"
+     },
+     {
+      "label": "D",
+      "text": "Folic acid ใช้แทน leucovorin ในกรณีที่ได้รับ MTX เกินขนาด",
+      "explanation": "✗ ในภาวะ MTX เป็นพิษหรือเกินขนาด ต้องใช้ leucovorin (folinic acid) ซึ่งเป็น reduced folate ไม่ต้องผ่าน dihydrofolate reductase (DHFR) ที่ถูก MTX ยับยั้ง folic acid ต้องผ่าน DHFR จึงใช้ไม่ได้ผลในภาวะนี้ ข้อนี้จะถูกถ้าเปลี่ยนเป็น 'leucovorin ใช้รักษา MTX toxicity หรือได้รับยาเกินขนาด'"
+     }
+    ],
+    "key_takeaway": "Folic acid = ลดพิษ MTX ไม่ลดผล; MTX overdose = leucovorin"
+   }
+  },
+  {
+   "id": "97322a12-016b-4067-aeb2-2789f2428f89",
+   "scenario": "ผู้ป่วยหญิงอายุ 40 ปี น้ำหนัก 60 kg เป็น SLE ได้รับ hydroxychloroquine 200 mg วันละครั้ง (≈3.3 mg/kg/วัน) มา 2 ปี eGFR 95 ไม่ได้ใช้ tamoxifen ไม่มีโรคจอประสาทตาเดิม และได้ตรวจตาพื้นฐานตอนเริ่มยาแล้วปกติ ผู้ป่วยถามว่าทำไมต้องตรวจตาและต้องตรวจบ่อยแค่ไหน ข้อใดถูกต้องที่สุด",
+   "choices": [
+    {
+     "label": "A",
+     "text": "เพื่อเฝ้าระวัง uveitis จาก SLE ต้องตรวจ slit-lamp ทุก 3 เดือน"
+    },
+    {
+     "label": "B",
+     "text": "เพื่อเฝ้าระวังต้อกระจกจาก HCQ ต้องตรวจทุก 6 เดือนตั้งแต่เริ่มยา"
+    },
+    {
+     "label": "C",
+     "text": "เพื่อเฝ้าระวัง corneal deposits ซึ่งต้องหยุด HCQ ทันทีเมื่อพบ"
+    },
+    {
+     "label": "D",
+     "text": "เพื่อเฝ้าระวัง HCQ retinopathy: ตรวจพื้นฐานภายในปีแรก แล้วคัดกรองทุกปีหลังใช้ยาครบ 5 ปี ด้วย SD-OCT ร่วมกับ automated visual field (เร็วกว่านั้นถ้ามีปัจจัยเสี่ยง)"
+    }
+   ],
+   "correct_answer": "D",
+   "difficulty": "easy",
+   "explanation": "Hydroxychloroquine ทำให้เกิด retinopathy ที่ไม่กลับคืน จึงต้องตรวจตาพื้นฐานในปีแรก แล้วตรวจคัดกรองทุกปีหลังใช้ยา 5 ปี (หรือเร็วกว่านั้นถ้ามีปัจจัยเสี่ยง) ด้วย SD-OCT และ automated visual field",
+   "detailed_explanation": {
+    "summary": "HCQ: ≤5 mg/kg จริง + ตรวจตาพื้นฐานปีแรก → ทุกปีหลัง 5 ปี (มีเสี่ยงทุกปีตั้งแต่ต้น) ด้วย SD-OCT + VF",
+    "reason": "โจทย์ถามอะไร: ผู้ป่วย SLE ใช้ HCQ ขนาดปลอดภัยมา 2 ปี ไม่มีปัจจัยเสี่ยง ถามเหตุผลและตารางการตรวจตาที่ถูกต้อง ต้องรู้ชนิดของพิษ วิธีตรวจคัดกรอง และความถี่ตามแนวทาง\n\nหลักการ/กลไกเชิงลึก: HCQ เป็น 4-aminoquinoline ที่มีความชอบ melanin จึงสะสมใน retinal pigment epithelium (RPE) และ choroid ยารบกวน lysosome ของ RPE ทำให้ phagocytosis ของ outer segment ของ photoreceptor เสียไป เกิดการเสื่อมของ photoreceptor/ellipsoid zone รอบ fovea (parafoveal) และในชาวเอเชียมักเป็นแบบ pericentral (ใกล้ arcade) อาการระยะแรกไม่มี ต่อมาเห็นเป็นวงแหวนมืดรอบจุดกลาง (paracentral scotoma) ระยะท้ายเป็น bull's-eye maculopathy ที่เห็นได้ด้วย fundoscopy ซึ่งสายเกินไป ความเสียหายไม่กลับคืน และอาจลุกลามต่อหลังหยุดยาเพราะยามี half-life ยาวมาก (~40–50 วัน) และสะสมในเนื้อเยื่อ ความเสี่ยงขึ้นกับขนาดต่อน้ำหนักจริงและระยะเวลา\n\nทำไมข้อ D ถูก: รวมเหตุผลที่ถูก (retinopathy) วิธีตรวจที่ถูก (SD-OCT + automated VF ซึ่งไวกว่า fundoscopy หรือ Amsler grid) และความถี่ที่ถูก (baseline ในปีแรก, ทุกปีหลัง 5 ปี) ผู้ป่วยไม่มีปัจจัยเสี่ยงจึงใช้ตารางมาตรฐาน\n\nหลักฐานและแนวทางเวชปฏิบัติ: AAO 2016 revised recommendations (Marmor): ขนาด ≤5.0 mg/kg/วันตามน้ำหนักจริง (ความเสี่ยง <1% ใน 5 ปีแรก, <2% ใน 10 ปี แต่ ~20% หลัง 20 ปี; Melles 2014), ตรวจ baseline ภายในปีแรก แล้วเริ่มคัดกรองทุกปีหลัง 5 ปี ในผู้ไม่มีปัจจัยเสี่ยง; ปัจจัยเสี่ยงหลัก: ขนาด >5 mg/kg, ใช้ >5 ปี, CKD (eGFR <60), tamoxifen, โรคจอตา/macula เดิม → ตรวจทุกปีตั้งแต่เริ่ม เครื่องมือหลัก: SD-OCT + automated VF (10-2 สำหรับ macula; ชาวเอเชียใช้ 24-2 หรือ 30-2 ร่วม) อาจเพิ่ม fundus autofluorescence หรือ mfERG ACR/AAO/EULAR ใช้หลักการเดียวกัน\n\nการประยุกต์กับผู้ป่วยจริง: ตรวจขนาด: 60 kg × 5 = 300 mg/วันสูงสุด ผู้ป่วยได้ 200 mg (3.3 mg/kg) จึงปลอดภัย บอกผู้ป่วย: 'ยานี้สำคัญมากสำหรับ SLE ลดการกำเริบและเพิ่มการรอดชีวิต ห้ามหยุดเอง แต่ต้องตรวจตาตามนัดเพราะพิษระยะแรกไม่มีอาการ' แนะนำบันทึกวันเริ่มยาและผลตรวจตา ถ้ามีไตเสื่อม ใช้ tamoxifen หรือน้ำหนักลดมาก ให้แจ้งทีม\n\nการติดตามและสัญญาณอันตราย: รีบพบจักษุแพทย์ถ้าอ่านหนังสือแล้วตัวอักษรหายเป็นช่อง ๆ มองเห็นเป็นวงมืดรอบจุดกลาง เห็นสีผิดเพี้ยน หรือตาพร่ามัวมากในที่มืด ถ้าพบ retinopathy ชัดเจนให้หยุดยาและหาทางเลือกอื่นร่วมกับแพทย์ นอกจากตา ติดตาม QT prolongation เมื่อใช้ร่วมยาที่ยืด QT, hypoglycemia, cardiomyopathy (พบน้อย) และผื่น\n\nจุดที่มักสับสนและกับดักข้อสอบ: (1) Fundoscopy/Amsler grid ไม่ไวพอ — ต้อง SD-OCT + VF (2) ‘ทุกปีหลัง 5 ปี’ ใช้กับผู้ไม่มีปัจจัยเสี่ยงเท่านั้น (3) ใช้น้ำหนักจริงไม่ใช่ ideal body weight (AAO 2016) (4) Corneal deposits/ต้อกระจกไม่ใช่เหตุผลหลักของการคัดกรอง\n\nสรุปท่องสอบ: HCQ ≤5 mg/kg จริง; ตา: baseline ปีแรก → ทุกปีหลัง 5 ปี (มีเสี่ยง: ทุกปีตั้งแต่ต้น); SD-OCT + automated VF; retinopathy ไม่กลับคืน",
+    "choices": [
+     {
+      "label": "A",
+      "text": "เพื่อเฝ้าระวัง uveitis จาก SLE ต้องตรวจ slit-lamp ทุก 3 เดือน",
+      "explanation": "✗ Uveitis ไม่ใช่อาการเด่นของ SLE (พบบ่อยใน spondyloarthritis, Behçet, JIA) และเหตุผลที่ต้องตรวจตาในผู้ใช้ HCQ คือพิษของยาต่อจอตา ไม่ใช่ตัวโรค การตรวจ slit-lamp ทุก 3–6 เดือนจะเหมาะกับการคัดกรอง uveitis ในเด็ก JIA ชนิด oligoarticular ที่ ANA บวก ซึ่งมี uveitis แบบไม่มีอาการ"
+     },
+     {
+      "label": "B",
+      "text": "เพื่อเฝ้าระวังต้อกระจกจาก HCQ ต้องตรวจทุก 6 เดือนตั้งแต่เริ่มยา",
+      "explanation": "✗ HCQ ไม่ใช่สาเหตุสำคัญของต้อกระจก ยาที่ทำให้เกิด posterior subcapsular cataract คือ glucocorticoid ระยะยาว ซึ่งผู้ป่วย SLE หลายรายได้ร่วม และการตรวจทุก 6 เดือนตั้งแต่เริ่มยาไม่ใช่แนวทางของ HCQ ข้อนี้จะเข้าใกล้ความจริงถ้าเปลี่ยนเป็น 'ผู้ใช้ prednisolone นานควรตรวจตาเรื่องต้อกระจกและต้อหิน'"
+     },
+     {
+      "label": "C",
+      "text": "เพื่อเฝ้าระวัง corneal deposits ซึ่งต้องหยุด HCQ ทันทีเมื่อพบ",
+      "explanation": "✗ Corneal deposits (vortex keratopathy) พบได้จาก antimalarial โดยเฉพาะ chloroquine แต่มักไม่มีอาการ ไม่ทำลายการมองเห็น กลับเป็นปกติได้ และไม่ใช่เหตุให้หยุดยา ยาอื่นที่ทำให้เกิดภาวะนี้ เช่น amiodarone ส่วนพิษที่สำคัญและไม่กลับคืนคือ retinopathy ซึ่งเป็นเหตุผลหลักของการคัดกรอง"
+     },
+     {
+      "label": "D",
+      "text": "เพื่อเฝ้าระวัง HCQ retinopathy: ตรวจพื้นฐานภายในปีแรก แล้วคัดกรองทุกปีหลังใช้ยาครบ 5 ปี ด้วย SD-OCT ร่วมกับ automated visual field (เร็วกว่านั้นถ้ามีปัจจัยเสี่ยง)",
+      "explanation": "✓ HCQ สะสมใน retinal pigment epithelium (จับ melanin) ทำลาย photoreceptor รอบ macula (bull's-eye maculopathy) ซึ่งไม่กลับคืนแม้หยุดยา AAO 2016 แนะนำตรวจพื้นฐานในปีแรก แล้วตรวจทุกปีหลังใช้ 5 ปีในผู้ไม่มีปัจจัยเสี่ยง ด้วย SD-OCT + automated VF (10-2; ชาวเอเชียเพิ่ม 24-2/30-2) ผู้ป่วยรายนี้ใช้ ≤5 mg/kg, ไตปกติ ไม่ใช้ tamoxifen จึงเริ่มตรวจรายปีเมื่อครบ 5 ปี"
+     }
+    ],
+    "key_takeaway": "HCQ = จอตา: ตรวจพื้นฐานปีแรก, ทุกปีหลัง 5 ปี, SD-OCT + VF"
+   }
+  },
+  {
+   "id": "a6514369-b5aa-4f1a-ad17-dd24fe1112e0",
+   "scenario": "ผู้ป่วยหญิงอายุ 74 ปี เป็น osteoporosis ล้มก้นกระแทกพื้นเมื่อ 5 วันก่อน ภาพรังสีพบ acute vertebral compression fracture ที่ L1 ปวดหลังมากจนลุกเดินลำบากแม้ได้ paracetamol แล้ว ไม่มีอาการทางระบบประสาท แพทย์ปรึกษาเภสัชกรเรื่องการใช้ calcitonin ข้อใดถูกต้องที่สุด",
+   "choices": [
+    {
+     "label": "A",
+     "text": "Calcitonin nasal spray เป็นยาหลักระยะยาวที่เหมาะสมที่สุดสำหรับป้องกันกระดูกหักซ้ำ เพราะลด hip fracture ได้ดีเท่า bisphosphonate"
+    },
+    {
+     "label": "B",
+     "text": "อาจใช้ calcitonin ระยะสั้น (ประมาณ 2–4 สัปดาห์) เพื่อบรรเทาปวดจาก acute vertebral fracture เท่านั้น ไม่ใช้ระยะยาวเพราะพบสัญญาณความเสี่ยงมะเร็งเพิ่มขึ้นและฤทธิ์ป้องกันกระดูกหักอ่อน แล้วเริ่มยารักษา osteoporosis ที่มีหลักฐาน"
+    },
+    {
+     "label": "C",
+     "text": "ห้ามใช้ calcitonin ในผู้ที่มี vertebral fracture เพราะเร่งการสลายกระดูกบริเวณที่หัก"
+    },
+    {
+     "label": "D",
+     "text": "ควรใช้ calcitonin ร่วมกับ bisphosphonate ต่อเนื่องระยะยาวเพื่อเสริมฤทธิ์ เพิ่ม BMD ได้มากขึ้น"
+    }
+   ],
+   "correct_answer": "B",
+   "difficulty": "medium",
+   "explanation": "Calcitonin มีบทบาทจำกัด: ใช้ระยะสั้นประมาณ 2–4 สัปดาห์เพื่อลดปวดจาก acute vertebral fracture เท่านั้น ไม่ใช้ระยะยาวเพราะฤทธิ์ป้องกันกระดูกหักอ่อน ไม่ลด hip fracture และพบสัญญาณความเสี่ยงมะเร็งเมื่อใช้ระยะยาว",
+   "detailed_explanation": {
+    "summary": "Calcitonin = ยาแก้ปวดกระดูกสันหลังหักเฉียบพลันระยะสั้น ไม่ใช่ยารักษา osteoporosis ระยะยาว (มะเร็ง, ไม่ลด hip)",
+    "reason": "โจทย์ถามอะไร: ผู้ป่วย osteoporosis ที่มี acute vertebral compression fracture ปวดมาก ถามบทบาทที่ถูกต้องของ calcitonin ในปัจจุบัน ต้องรู้ทั้งข้อบ่งใช้ที่เหลืออยู่ (ลดปวดระยะสั้น) และเหตุผลที่ไม่ใช้ระยะยาว (ประสิทธิภาพอ่อน + สัญญาณมะเร็ง)\n\nหลักการ/กลไกเชิงลึก: Calcitonin เป็น peptide hormone 32 amino acid จาก C cell ของต่อมไทรอยด์ ยาที่ใช้คือ salmon calcitonin ซึ่งมี potency สูงกว่าของมนุษย์ ~40–50 เท่า จับ calcitonin receptor (GPCR) บน osteoclast ทำให้ osteoclast หดตัว หลุดจากผิวกระดูก ลดการสลายอย่างรวดเร็ว แต่เกิด tachyphylaxis (receptor downregulation) เมื่อใช้ต่อเนื่อง ฤทธิ์ลดปวดเชื่อว่าเกิดจากการกระตุ้น β-endorphin, ปรับ serotonergic pathway ส่วนกลาง และลด prostaglandin ซึ่งไม่ขึ้นกับฤทธิ์ต่อกระดูก รูปแบบที่ใช้: nasal spray 200 IU/วัน (สลับรูจมูก) หรือ SC/IM 100 IU/วัน\n\nทำไมข้อ B ถูก: เป็นข้อเดียวที่บอกทั้งข้อบ่งใช้ที่ถูก (analgesia ระยะสั้นใน acute vertebral fracture) ข้อจำกัด (มะเร็ง, ฤทธิ์ป้องกันอ่อน) และแผนต่อไป (เริ่มยาที่มีหลักฐาน) ผู้ป่วยรายนี้เพิ่งมี fragility vertebral fracture จึงเป็นกลุ่มเสี่ยงสูงที่ต้องได้ยารักษา osteoporosis อยู่แล้ว\n\nหลักฐานและแนวทางเวชปฏิบัติ: PROOF trial (Chesnut 2000): nasal calcitonin 200 IU ลด new vertebral fracture ~33% แต่ขนาด 100 และ 400 IU ไม่ได้ผล และไม่ลด hip/non-vertebral fracture EMA (2012) ทบทวน RCT พบมะเร็งเพิ่ม 0.7% (oral) ถึง 2.4% (nasal) เมื่อใช้ระยะยาว จึงถอน nasal spray สำหรับ osteoporosis ในยุโรป และจำกัด injection ให้ใช้ใน Paget disease, hypercalcemia จากมะเร็ง และการสูญเสียกระดูกเฉียบพลันจากการนอนนิ่ง ไม่เกิน 2–4 สัปดาห์ FDA (2013) ให้ใช้ต่อได้เฉพาะเมื่อยาอื่นไม่เหมาะ AACE/ACE 2020: calcitonin ไม่ใช่ยาตัวแรก แต่อาจใช้ลดปวดจาก acute vertebral fracture Meta-analysis (Knopp-Sihota 2012): ลดปวดชัดในสัปดาห์ที่ 1–4 ไม่ได้ผลใน chronic pain\n\nการประยุกต์กับผู้ป่วยจริง: ถ้าแพทย์เลือกใช้: salmon calcitonin nasal 200 IU วันละครั้ง สลับข้างจมูกทุกวัน หรือ SC 100 IU วันละครั้ง ไม่เกิน 2–4 สัปดาห์ ร่วมกับ paracetamol กายภาพ และกระตุ้นให้ลุกเดินเร็ว จากนั้นเริ่ม bisphosphonate/denosumab หรือ anabolic ตามความเสี่ยง ร่วมกับ Ca/vitamin D และป้องกันการหกล้ม\n\nการติดตามและสัญญาณอันตราย: Nasal: เยื่อจมูกระคาย เลือดกำเดา rhinitis Injection: คลื่นไส้ หน้าแดง hypocalcemia (ระวังในผู้ที่ Ca ต่ำ) และแพ้ (แพ้ปลาแซลมอน/โปรตีน) ปวดหลังที่แย่ลงทันที ขาอ่อนแรง ชา หรือปัสสาวะผิดปกติ ต้องประเมินใหม่ (spinal cord compression หรือ fracture ใหม่) และต้องจำกัดระยะเวลาใช้ตามสัญญาณมะเร็ง\n\nจุดที่มักสับสนและกับดักข้อสอบ: (1) Calcitonin ‘ยังมีที่ใช้’ แต่เป็นยาแก้ปวดระยะสั้น ไม่ใช่ยาป้องกันกระดูกหัก (2) ไม่ลด hip fracture (เช่นเดียวกับ raloxifene, oral ibandronate) (3) ฤทธิ์ลดปวดได้ผลใน acute ไม่ใช่ chronic fracture pain (4) ข้อห้ามคือแพ้โปรตีนแซลมอน ไม่ใช่ vertebral fracture\n\nสรุปท่องสอบ: Calcitonin: ลดปวด acute vertebral fracture ≤4 สัปดาห์; ไม่ลด hip; ใช้นาน = สัญญาณมะเร็ง; ที่ใช้อื่น: hypercalcemia, Paget",
+    "choices": [
+     {
+      "label": "A",
+      "text": "Calcitonin nasal spray เป็นยาหลักระยะยาวที่เหมาะสมที่สุดสำหรับป้องกันกระดูกหักซ้ำ เพราะลด hip fracture ได้ดีเท่า bisphosphonate",
+      "explanation": "✗ Calcitonin มีฤทธิ์ป้องกันกระดูกหักอ่อนที่สุดในยารักษา osteoporosis ใน PROOF trial ลด vertebral fracture ได้เฉพาะขนาด 200 IU และไม่มีหลักฐานลด hip หรือ non-vertebral fracture จึงไม่เทียบเท่า bisphosphonate และไม่เป็นยาหลักระยะยาว ยาหลักสำหรับผู้ป่วยรายนี้ซึ่งเพิ่งมี vertebral fracture (high/very high risk) คือ bisphosphonate, denosumab หรือ anabolic agent"
+     },
+     {
+      "label": "B",
+      "text": "อาจใช้ calcitonin ระยะสั้น (ประมาณ 2–4 สัปดาห์) เพื่อบรรเทาปวดจาก acute vertebral fracture เท่านั้น ไม่ใช้ระยะยาวเพราะพบสัญญาณความเสี่ยงมะเร็งเพิ่มขึ้นและฤทธิ์ป้องกันกระดูกหักอ่อน แล้วเริ่มยารักษา osteoporosis ที่มีหลักฐาน",
+      "explanation": "✓ Calcitonin มีฤทธิ์ลดปวด (analgesic) ใน acute osteoporotic vertebral fracture ช่วง 4 สัปดาห์แรก (meta-analysis ลด VAS ได้ชัดและลุกเดินได้เร็วขึ้น) AACE 2020 ระบุว่าอาจใช้เพื่อลดปวดจาก acute vertebral fracture ได้ EMA 2012 จำกัดการใช้ระยะสั้นเพราะ meta-analysis พบมะเร็งเพิ่ม 0.7–2.4% เมื่อใช้ระยะยาว จึงต้องเริ่มยาป้องกันกระดูกหักที่มีหลักฐานควบคู่"
+     },
+     {
+      "label": "C",
+      "text": "ห้ามใช้ calcitonin ในผู้ที่มี vertebral fracture เพราะเร่งการสลายกระดูกบริเวณที่หัก",
+      "explanation": "✗ Calcitonin ไม่ได้เร่งการสลายกระดูก ตรงกันข้าม ยาจับ calcitonin receptor บน osteoclast ทำให้ osteoclast หดตัวและหยุดทำงานชั่วคราว (antiresorptive) และ acute vertebral fracture เป็นข้อบ่งใช้ระยะสั้นที่มีหลักฐาน ข้อห้ามจริงของ calcitonin คือแพ้โปรตีนปลาแซลมอนหรือส่วนประกอบของยา และควรระวังเมื่อมี hypocalcemia"
+     },
+     {
+      "label": "D",
+      "text": "ควรใช้ calcitonin ร่วมกับ bisphosphonate ต่อเนื่องระยะยาวเพื่อเสริมฤทธิ์ เพิ่ม BMD ได้มากขึ้น",
+      "explanation": "✗ ไม่มีหลักฐานว่าการใช้ antiresorptive 2 ชนิดร่วมกันระยะยาวลดกระดูกหักได้มากขึ้น และ calcitonin ระยะยาวเพิ่มความเสี่ยงมะเร็ง จึงไม่แนะนำ การใช้ร่วมกันในทางปฏิบัติอาจเกิดได้เพียงช่วงสั้น ๆ เช่น ใช้ calcitonin ลดปวด 2–4 สัปดาห์แรกขณะเริ่ม bisphosphonate แล้วหยุด calcitonin"
+     }
+    ],
+    "key_takeaway": "Calcitonin = แก้ปวด vertebral fracture เฉียบพลัน 2–4 สัปดาห์ — ไม่ใช่ยากระดูกพรุนระยะยาว"
+   }
+  },
+  {
+   "id": "d60e5d14-494f-4306-9cd0-299117577650",
+   "scenario": "ผู้ป่วยหญิงอายุ 32 ปี เป็น rheumatoid arthritis โรคสงบด้วย methotrexate 15 mg/สัปดาห์ + hydroxychloroquine 400 mg/วัน + sulfasalazine 2 g/วัน วางแผนจะเริ่มพยายามตั้งครรภ์ ตามแนวทาง ACR 2020 Reproductive Health ข้อใดเป็นคำแนะนำที่ถูกต้องที่สุด",
+   "choices": [
+    {
+     "label": "A",
+     "text": "หยุด methotrexate อย่างน้อย 1–3 เดือนก่อนเริ่มพยายามตั้งครรภ์ และใช้ hydroxychloroquine กับ sulfasalazine (ร่วมกับ folic acid) ต่อได้"
+    },
+    {
+     "label": "B",
+     "text": "หยุดยาทั้ง 3 ชนิดทันที และคุมโรคด้วย prednisolone ขนาดสูงตลอดการตั้งครรภ์"
+    },
+    {
+     "label": "C",
+     "text": "หยุด hydroxychloroquine เพราะสะสมในจอตาของทารก แต่ใช้ methotrexate ต่อจนกว่าจะทราบผลการตั้งครรภ์"
+    },
+    {
+     "label": "D",
+     "text": "ใช้ methotrexate ต่อได้ตลอดการตั้งครรภ์ หากลดขนาดเหลือ 7.5 mg/สัปดาห์"
+    }
+   ],
+   "correct_answer": "A",
+   "difficulty": "hard",
+   "explanation": "ACR 2020: หญิงที่ใช้ methotrexate ต้องหยุดยา 1–3 เดือนก่อนพยายามตั้งครรภ์ ส่วน hydroxychloroquine และ sulfasalazine (ร่วมกับ folic acid) เข้ากันได้กับการตั้งครรภ์และควรใช้ต่อเพื่อคุมโรค",
+   "detailed_explanation": {
+    "summary": "วางแผนท้อง: MTX หยุด 1–3 เดือนก่อน, LEF ต้อง washout; HCQ/SSZ/AZA/TNFi ใช้ต่อได้",
+    "reason": "โจทย์ถามอะไร: ผู้ป่วยหญิง RA โรคสงบด้วย triple therapy วางแผนตั้งครรภ์ ถามการปรับยาก่อนพยายามตั้งครรภ์ตาม ACR 2020 ต้องรู้ว่ายาใดต้องหยุด ต้องหยุดเมื่อไร และยาใดใช้ต่อได้\n\nหลักการ/กลไกเชิงลึก: MTX เป็น folate antagonist ยับยั้ง DHFR ทำให้การสังเคราะห์ DNA ในเซลล์ตัวอ่อนที่แบ่งตัวเร็วล้มเหลว ช่วงวิกฤตคือสัปดาห์ที่ 6–8 หลังปฏิสนธิ ทำให้เกิด methotrexate embryopathy (กะโหลกปิดไม่สมบูรณ์ ใบหน้าผิดรูป ความผิดปกติของแขนขา หัวใจ) และการแท้ง MTX-polyglutamate ค้างในเนื้อเยื่อเช่นตับและเม็ดเลือดแดงได้นานหลายสัปดาห์ จึงต้องเว้นระยะก่อนตั้งครรภ์ ไม่ใช่หยุดเมื่อตรวจพบว่าตั้งครรภ์ HCQ ผ่านรกแต่ข้อมูลใหญ่ไม่พบความผิดปกติเพิ่ม SSZ และ metabolite (sulfapyridine) ผ่านรกและยับยั้งการดูดซึม folate จึงให้ folic acid เสริม เพื่อลด neural tube defect\n\nทำไมข้อ A ถูก: ข้อ A ระบุช่วงเวลาตาม ACR 2020 (1–3 เดือน) และคงยาที่ปลอดภัยไว้ ทำให้คุมโรคได้ในช่วงเปลี่ยนผ่าน ซึ่งสำคัญเพราะ RA ที่ active ระหว่างตั้งครรภ์สัมพันธ์กับผลลัพธ์ไม่ดี\n\nหลักฐานและแนวทางเวชปฏิบัติ: ACR 2020 Guideline for Management of Reproductive Health in RMD (Sammaritano): หยุด MTX 1–3 เดือนก่อนพยายามตั้งครรภ์ (strong); หยุด leflunomide และทำ cholestyramine washout จนระดับ teriflunomide <0.02 mg/L; mycophenolate และ cyclophosphamide หยุดอย่างน้อย 6 สัปดาห์–3 เดือน; HCQ, SSZ, azathioprine, colchicine, tacrolimus ใช้ต่อได้; TNFi ใช้ต่อได้ (certolizumab ผ่านรกน้อยที่สุด); ฝ่ายชายใช้ MTX, LEF, MMF, AZA ต่อได้ แต่ cyclophosphamide ควรหยุด ส่วน ฉลาก FDA เดิมระบุ 3 เดือนสำหรับหญิง (1 ovulatory cycle) และ 3 เดือนสำหรับชาย EULAR 2016 ระบุหยุด MTX 3 เดือนก่อน แนวทางที่ใหม่กว่าจึงยืดหยุ่นขึ้น\n\nการประยุกต์กับผู้ป่วยจริง: แนะนำ: วางแผนหยุด MTX แล้วคุมกำเนิดต่ออย่างน้อย 1–3 เดือน ใช้ HCQ 400 mg/วัน (≤5 mg/kg) และ SSZ ≤2 g/วัน ต่อ เพิ่ม folic acid (อย่างน้อย 0.4 mg/วัน แต่ผู้ใช้ SSZ มักให้ 5 mg/วัน) นัดประเมิน disease activity ทุก 1–3 เดือน ถ้ากำเริบอาจใช้ prednisolone ขนาดต่ำ หรือ certolizumab/TNFi เตรียมก่อนตั้งครรภ์: วัคซีนที่จำเป็น ตรวจ anti-Ro/SSA และ aPL ถ้ามีข้อบ่งชี้ งดยา NSAID ช่วงพยายามตั้งครรภ์ถ้ามีปัญหาการตกไข่\n\nการติดตามและสัญญาณอันตราย: ถ้าเผลอตั้งครรภ์ขณะยังใช้ MTX: หยุดทันที ให้ folic acid ขนาดสูง ส่งพบสูติแพทย์เพื่อ ultrasound ประเมินทารก SSZ: ติดตาม CBC (agranulocytosis) HCQ: ตรวจตาตามตาราง ติดตามการกำเริบหลังหยุด MTX และหลังคลอด (RA มักกำเริบหลังคลอด 3 เดือน) ระวังการใช้ NSAID หลังสัปดาห์ที่ 20\n\nจุดที่มักสับสนและกับดักข้อสอบ: (1) ตัวเลข ‘3 เดือน’ มาจากฉลาก/แนวทางเก่า ACR 2020 ใช้ 1–3 เดือน (2) LEF หยุดเฉย ๆ ไม่พอ ต้อง washout (3) HCQ ไม่ใช่ยาที่ต้องหยุด (4) พ่อที่ใช้ MTX ไม่ต้องหยุดตาม ACR 2020 (5) หยุดยาทุกตัว = กับดัก เพราะโรคกำเริบเป็นอันตรายต่อการตั้งครรภ์\n\nสรุปท่องสอบ: หญิงวางแผนท้อง: MTX หยุด 1–3 เดือนก่อน; LEF washout; MMF/CYC หยุด ≥6 สัปดาห์–3 เดือน; HCQ/SSZ(+folic)/AZA/TNFi ใช้ต่อ",
+    "choices": [
+     {
+      "label": "A",
+      "text": "หยุด methotrexate อย่างน้อย 1–3 เดือนก่อนเริ่มพยายามตั้งครรภ์ และใช้ hydroxychloroquine กับ sulfasalazine (ร่วมกับ folic acid) ต่อได้",
+      "explanation": "✓ MTX เป็น teratogen (aminopterin syndrome: ความผิดปกติของกะโหลก ใบหน้า แขนขา และแท้ง) ACR 2020 แนะนำหยุด 1–3 เดือนก่อนพยายามตั้งครรภ์ (strong) ระหว่างนี้คุมกำเนิดต่อ HCQ และ SSZ ปลอดภัยและแนะนำให้ใช้ต่อระหว่างตั้งครรภ์เพื่อคุมโรค (SSZ ≤2 g/วันร่วมกับ folic acid) ช่วยลดการกำเริบหลังหยุด MTX"
+     },
+     {
+      "label": "B",
+      "text": "หยุดยาทั้ง 3 ชนิดทันที และคุมโรคด้วย prednisolone ขนาดสูงตลอดการตั้งครรภ์",
+      "explanation": "✗ การหยุดยาที่ปลอดภัย (HCQ, SSZ) ทำให้โรคกำเริบ ซึ่งเองเพิ่มความเสี่ยงคลอดก่อนกำหนดและทารกน้ำหนักน้อย prednisolone ขนาดสูงต่อเนื่องเพิ่มความเสี่ยงเบาหวานขณะตั้งครรภ์ ความดันสูง ถุงน้ำคร่ำแตกก่อนกำหนด ACR 2020 แนะนำใช้ GC ขนาดต่ำสุด (<10 mg/วัน) เฉพาะเมื่อจำเป็น ข้อนี้จะเหมาะเพียงบางส่วนเมื่อโรคกำเริบรุนแรงระหว่างตั้งครรภ์ ซึ่งใช้ GC ระยะสั้นได้"
+     },
+     {
+      "label": "C",
+      "text": "หยุด hydroxychloroquine เพราะสะสมในจอตาของทารก แต่ใช้ methotrexate ต่อจนกว่าจะทราบผลการตั้งครรภ์",
+      "explanation": "✗ กลับกันทั้งสองส่วน HCQ ผ่านรกแต่ไม่พบความผิดปกติของจอตาหรือทารกที่เพิ่มขึ้น ACR 2020 แนะนำให้ใช้ต่อ (ใน SLE ยังลดการกำเริบและ congenital heart block) ส่วน MTX ต้องหยุดก่อนพยายามตั้งครรภ์ เพราะช่วง organogenesis เกิดก่อนผู้หญิงจะทราบว่าตั้งครรภ์ ข้อนี้ไม่ถูกในสถานการณ์ใด"
+     },
+     {
+      "label": "D",
+      "text": "ใช้ methotrexate ต่อได้ตลอดการตั้งครรภ์ หากลดขนาดเหลือ 7.5 mg/สัปดาห์",
+      "explanation": "✗ ไม่มีขนาด MTX ที่ปลอดภัยในการตั้งครรภ์ แม้ขนาดต่ำ (≥10 mg/สัปดาห์ในไตรมาสแรกมีรายงานความผิดปกติชัด และขนาดต่ำกว่าก็เพิ่มการแท้ง) ACR 2020 จัด MTX เป็นยาที่ห้ามใช้ระหว่างตั้งครรภ์ ถ้าตั้งครรภ์ขณะใช้ MTX ให้หยุดทันที ให้ folic acid ขนาดสูง และประเมินทารก ส่วนฝ่ายชายที่ใช้ MTX ต่อได้ตาม ACR 2020"
+     }
+    ],
+    "key_takeaway": "MTX หยุด 1–3 เดือนก่อนพยายามตั้งครรภ์ — HCQ และ SSZ ใช้ต่อ"
+   }
+  },
+  {
+   "id": "ed47a7ee-81c7-403f-8e37-c9afc92f79e3",
+   "scenario": "ผู้ป่วยชายอายุ 62 ปี เป็น knee OA ทั้งสองข้าง และ hypertension ควบคุมได้ดีด้วย amlodipine 5 mg/วัน (BP เดิม 128/78 mmHg) ซื้อ diclofenac 75 mg วันละ 2 ครั้งกินต่อเนื่องมา 3 เดือน ตอนนี้มีข้อเท้าบวมกดบุ๋มทั้งสองข้าง น้ำหนักเพิ่ม 2 kg BP 152/94 mmHg SCr 1.0 mg/dL (เดิม 0.9) K 4.6 mmol/L ไม่มีเหนื่อยหอบหรือนอนราบไม่ได้ ปวดเข่าระดับพอทนได้ ข้อใดเป็นการจัดการที่เหมาะสมที่สุด",
+   "choices": [
+    {
+     "label": "A",
+     "text": "ใช้ diclofenac ต่อ และเพิ่ม furosemide 40 mg/วัน เพื่อลดอาการบวม"
+    },
+    {
+     "label": "B",
+     "text": "ใช้ diclofenac ต่อ และเพิ่ม amlodipine เป็น 10 mg/วัน เพื่อคุมความดัน"
+    },
+    {
+     "label": "C",
+     "text": "หยุด diclofenac ชนิดรับประทาน เปลี่ยนเป็น diclofenac gel ทาเข่า ร่วมกับออกกำลังกาย แล้วติดตาม BP น้ำหนัก และอาการบวมใน 1–2 สัปดาห์ ก่อนพิจารณาปรับยาลดความดัน"
+    },
+    {
+     "label": "D",
+     "text": "เปลี่ยน diclofenac เป็น celecoxib 200 mg/วัน เพราะ COX-2 selective ไม่ทำให้บวมหรือความดันสูง"
+    }
+   ],
+   "correct_answer": "C",
+   "difficulty": "medium",
+   "explanation": "บวมและความดันสูงขึ้นหลังใช้ diclofenac เป็น ADR จากการยับยั้ง prostaglandin ในไต การจัดการที่ถูกคือหยุด oral NSAID แล้วเปลี่ยนเป็น topical NSAID สำหรับเข่าและติดตามผล ไม่ใช่เพิ่ม diuretic/ยาลดความดัน (prescribing cascade) หรือเปลี่ยนเป็น coxib",
+   "detailed_explanation": {
+    "summary": "NSAID ทำบวม + BP ขึ้น → หยุดต้นเหตุ (ใช้ topical แทน) แล้วรอดู 1–2 สัปดาห์ — อย่าเติม furosemide/เพิ่มยาความดัน",
+    "reason": "โจทย์ถามอะไร: ผู้ป่วย knee OA ที่ BP เคยคุมได้ เกิดบวมกดบุ๋มและ BP สูงขึ้นหลังใช้ diclofenac 3 เดือน ไม่มีอาการหัวใจล้มเหลว ถามการตัดสินใจจัดการที่เหมาะที่สุด ประเด็นคือจำ ADR ได้แล้วแก้ที่ต้นเหตุ ไม่สร้าง prescribing cascade\n\nหลักการ/กลไกเชิงลึก: Prostaglandin (PGE2, PGI2) ในไตช่วยขยาย afferent arteriole ยับยั้งการดูดกลับ Na ที่ thick ascending limb และ collecting duct และกระตุ้น renin NSAID ยับยั้ง COX ทั้งสองชนิด (COX-2 เป็นตัวหลักใน macula densa และ medulla) ทำให้ Na และน้ำถูกดูดกลับเพิ่ม ปริมาตรในหลอดเลือดเพิ่ม บวมรอบข้อเท้า น้ำหนักขึ้น และ BP เพิ่มเฉลี่ย ~3–6 mmHg (มากกว่าในผู้ที่มีความดันสูงอยู่แล้ว) NSAID ยังลดผลของยาลดความดันหลายกลุ่ม (ACEI/ARB, β-blocker, diuretic) ที่ส่วนหนึ่งอาศัย prostaglandin ส่วน CCB อย่าง amlodipine ได้รับผลน้อย แต่ทำให้บวมเองจากการขยาย arteriole มากกว่า venule ผลของ NSAID ต่อไตกลับคืนได้เมื่อหยุดยา\n\nทำไมข้อ C ถูก: เป็นการแก้ที่สาเหตุ (หยุด oral diclofenac) ยังคุมปวดเข่าได้ด้วย topical NSAID ที่ ACR 2019 แนะนำแบบ strong สำหรับ knee OA และวางแผนติดตามผลเพื่อตัดสินว่าต้องปรับยาลดความดันหรือไม่ โดยไม่เพิ่มยาก่อนเวลา\n\nหลักฐานและแนวทางเวชปฏิบัติ: ACR/Arthritis Foundation 2019: topical NSAIDs strongly recommended สำหรับ knee OA และควรพิจารณาก่อน oral NSAID โดยเฉพาะในผู้สูงอายุ/มีโรคร่วม AHA 2017 และ ESC/ESH ระบุว่า NSAID เป็นสาเหตุที่พบบ่อยของ drug-induced hypertension และแนะนำหยุดหรือลดยาก่อนเพิ่มยาลดความดัน Meta-analysis (Johnson 1994; Pope 1993) พบ NSAID เพิ่ม MAP ~5 mmHg PRECISION-ABPM พบ celecoxib, ibuprofen, naproxen ล้วนเพิ่ม BP ได้ NSAID → antihypertensive เป็นตัวอย่างคลาสสิกของ prescribing cascade (Rochon 1997)\n\nการประยุกต์กับผู้ป่วยจริง: แนะนำผู้ป่วยหยุด diclofenac ชนิดกิน ใช้ diclofenac 1% gel ทาเข่าวันละ 4 ครั้ง (ขนาดตามแนวทางผลิตภัณฑ์) ทำ quadriceps strengthening และควบคุมน้ำหนัก ถ้าปวดมากใช้ paracetamol เสริมระยะสั้น ลดเกลือ วัด BP ที่บ้านเช้า-เย็น ชั่งน้ำหนักทุกวัน นัด 1–2 สัปดาห์ตรวจ BP, บวม และ SCr/K ถ้า BP ยังเกินเป้าหลัง 2–4 สัปดาห์จึงปรับยาลดความดัน ถามยาที่ซื้อเองเพื่อไม่ให้มี NSAID ซ้อน\n\nการติดตามและสัญญาณอันตราย: สัญญาณอันตราย: เหนื่อยหอบ นอนราบไม่ได้ น้ำหนักขึ้น >2 kg ใน 3 วัน (หัวใจล้มเหลว), ปัสสาวะออกน้อย SCr เพิ่ม ≥0.3 mg/dL หรือ K สูง (AKI/hyperkalemia), ปวดศีรษะรุนแรง BP ≥180/110, ถ่ายดำ ปวดท้อง (GI bleed) ถ้าบวมไม่ดีขึ้นหลังหยุด NSAID ต้องหาสาเหตุอื่น เช่น amlodipine, หัวใจ ไต ตับ\n\nจุดที่มักสับสนและกับดักข้อสอบ: (1) COX-2 selective ไม่ได้ปลอดภัยต่อไตและความดัน (2) บวมจาก NSAID เป็น Na retention แต่บวมจาก amlodipine เป็น capillary pressure ซึ่ง diuretic ไม่ค่อยช่วย (3) อย่าตอบ 'เพิ่ม furosemide' เพราะดูเหมือนรักษาอาการ (4) ข้อนี้เน้นการจัดการ ส่วนกลไกระดับ afferent arteriole/renin เป็นอีกคำถามหนึ่ง\n\nสรุปท่องสอบ: ADR ใหม่หลังเริ่มยา → สงสัยยาก่อน → หยุด/เปลี่ยน → ติดตาม; NSAID + บวม/BP สูง: knee OA → topical NSAID; อย่าเติม diuretic/CCB (prescribing cascade); coxib ไม่ช่วย",
+    "choices": [
+     {
+      "label": "A",
+      "text": "ใช้ diclofenac ต่อ และเพิ่ม furosemide 40 mg/วัน เพื่อลดอาการบวม",
+      "explanation": "✗ เป็น prescribing cascade คือใช้ยาใหม่ไปรักษาผลข้างเคียงของยาเดิม NSAID ยังลดผลขับโซเดียมของ loop diuretic (ต้านฤทธิ์กัน) และการใช้ NSAID + diuretic (± ACEI/ARB) เพิ่มความเสี่ยง AKI furosemide จะเหมาะเมื่อบวมเกิดจากภาวะน้ำเกินจากหัวใจล้มเหลว โรคไต หรือตับแข็ง และยังต้องหยุด NSAID ร่วมด้วย"
+     },
+     {
+      "label": "B",
+      "text": "ใช้ diclofenac ต่อ และเพิ่ม amlodipine เป็น 10 mg/วัน เพื่อคุมความดัน",
+      "explanation": "✗ เป็น prescribing cascade อีกแบบ ความดันสูงขึ้นจาก NSAID ซึ่งแก้ได้ที่ต้นเหตุ และการเพิ่ม amlodipine ทำให้ข้อเท้าบวมมากขึ้น (vasodilatory edema ขึ้นกับขนาด) การเพิ่ม amlodipine จะเหมาะเมื่อหยุด NSAID แล้ว 2–4 สัปดาห์ BP ยังไม่ถึงเป้า และอาการบวมไม่ได้เป็นปัญหา"
+     },
+     {
+      "label": "C",
+      "text": "หยุด diclofenac ชนิดรับประทาน เปลี่ยนเป็น diclofenac gel ทาเข่า ร่วมกับออกกำลังกาย แล้วติดตาม BP น้ำหนัก และอาการบวมใน 1–2 สัปดาห์ ก่อนพิจารณาปรับยาลดความดัน",
+      "explanation": "✓ บวมและ BP เพิ่มเกิดหลังเริ่ม diclofenac จึงเป็น ADR ที่ต้องแก้ที่ต้นเหตุ การหยุด oral NSAID ทำให้ Na/น้ำคั่งและ BP กลับคืนใน 1–2 สัปดาห์ ส่วน topical NSAID ที่เข่าได้รับ strong recommendation จาก ACR 2019 ระดับยาในเลือดต่ำ (~5% ของ oral) จึงแทบไม่มีผลต่อไตและความดัน คุมปวดได้ต่อ และการติดตามซ้ำช่วยหลีกเลี่ยงการเพิ่มยาโดยไม่จำเป็น"
+     },
+     {
+      "label": "D",
+      "text": "เปลี่ยน diclofenac เป็น celecoxib 200 mg/วัน เพราะ COX-2 selective ไม่ทำให้บวมหรือความดันสูง",
+      "explanation": "✗ COX-2 เป็น isoform หลักในไตที่ควบคุมการขับ Na และ renin ดังนั้น celecoxib ก็ทำให้ Na/น้ำคั่ง บวม และ BP สูงได้ใกล้เคียง nonselective NSAID (ข้อดีของ coxib อยู่ที่ GI) celecoxib จะเหมาะเมื่อผู้ป่วยมีความเสี่ยง GI สูงแต่ไม่มีปัญหา CV/ไต และต้องใช้ oral NSAID"
+     }
+    ],
+    "key_takeaway": "NSAID ทำบวม-ความดันขึ้น = หยุดต้นเหตุ ไม่ใช่เติมยา (prescribing cascade)"
+   }
+  },
+  {
+   "id": "f372dba3-38f4-486e-bb21-4b55fe3e5bd9",
+   "scenario": "ผู้ป่วยชายอายุ 48 ปี BMI 24 kg/m² วินิจฉัย knee OA ทั้งสองข้าง ทำ quadriceps exercise และทา diclofenac gel ที่เข่าสม่ำเสมอมา 4 สัปดาห์แล้วยังปวดเวลาเดินขึ้นบันได (pain score 6/10) ไม่มีโรคประจำตัว ไม่มีประวัติแผลในกระเพาะอาหารหรือเลือดออก BP 118/76 mmHg eGFR 100 mL/min/1.73m² ไม่ได้ใช้ aspirin หรือ anticoagulant ตามแนวทาง ACR/Arthritis Foundation 2019 ยารับประทานที่เหมาะสมที่สุดในขั้นนี้คือข้อใด",
+   "choices": [
+    {
+     "label": "A",
+     "text": "Paracetamol 1,000 mg วันละ 4 ครั้งต่อเนื่อง เพราะเป็น first-line ที่ปลอดภัยที่สุดและได้ผลดีกว่า NSAIDs"
+    },
+    {
+     "label": "B",
+     "text": "Naproxen 250–500 mg วันละ 2 ครั้งหลังอาหาร ใช้ขนาดต่ำสุดที่ได้ผลและทบทวนความจำเป็นเป็นระยะ"
+    },
+    {
+     "label": "C",
+     "text": "Tramadol 50 mg ทุก 6 ชั่วโมงเป็นประจำ"
+    },
+    {
+     "label": "D",
+     "text": "Prednisolone 10 mg/วัน รับประทาน 4 สัปดาห์"
+    }
+   ],
+   "correct_answer": "B",
+   "difficulty": "medium",
+   "explanation": "ACR 2019 ให้ oral NSAID เป็น strong recommendation สำหรับ knee OA ส่วน paracetamol เป็นเพียง conditional เพราะได้ผลน้อย ในผู้ป่วยอายุน้อยไม่มีความเสี่ยง GI/CV/ไต ที่ topical NSAID ไม่พอ ยากินที่เหมาะคือ NSAID ขนาดต่ำสุดที่ได้ผลระยะสั้น",
+   "detailed_explanation": {
+    "summary": "Knee OA ไม่มีความเสี่ยง + topical ไม่พอ → oral NSAID ขนาดต่ำสุด (strong) — paracetamol ได้แค่ conditional",
+    "reason": "โจทย์ถามอะไร: ผู้ป่วย knee OA อายุ 48 ปี ไม่มีความเสี่ยง GI/CV/ไต ทำ exercise และใช้ topical NSAID แล้วยังปวด ถามยารับประทานที่เหมาะที่สุดตาม ACR 2019 เพื่อทดสอบว่ารู้ว่าตำแหน่งของ paracetamol เปลี่ยนไปแล้ว\n\nหลักการ/กลไกเชิงลึก: ปวดใน OA เกิดจากการอักเสบของ synovium (synovitis), subchondral bone marrow lesion และ enthesis ร่วมกับ peripheral/central sensitization prostaglandin E2 ที่ COX-2 สร้างใน synovium และกระดูกอ่อนทำให้ nociceptor ไวต่อการกระตุ้น NSAID จึงลดปวดได้ชัดกว่า paracetamol ซึ่งยับยั้ง COX ได้อ่อนในเนื้อเยื่อที่มี peroxide สูง (บริเวณอักเสบ) และออกฤทธิ์ส่วนกลางเป็นหลัก Naproxen (t½ ~14 ชั่วโมง) ให้วันละ 2 ครั้ง CV risk ค่อนข้างเป็นกลางในกลุ่ม NSAID\n\nทำไมข้อ B ถูก: ผู้ป่วยไม่มีปัจจัยเสี่ยงใด (อายุ <65, ไม่มีแผล, ไม่ใช้ aspirin/anticoagulant/steroid/SSRI, BP ปกติ, ไตปกติ) ทำ non-drug และ topical แล้ว ขั้นต่อไปตาม ACR 2019 คือ oral NSAID ที่ขนาดต่ำสุดที่ได้ผล ไม่จำเป็นต้องให้ PPI ประจำในผู้ที่ไม่มีความเสี่ยง GI\n\nหลักฐานและแนวทางเวชปฏิบัติ: ACR/Arthritis Foundation 2019 (Kolasinski): strong for — exercise, weight loss (ถ้าอ้วน), oral NSAIDs, topical NSAIDs (knee), IA glucocorticoid (knee/hip); conditional for — paracetamol, tramadol, duloxetine, topical capsaicin (knee); strong against — glucosamine, chondroitin (hip/knee), bisphosphonates, hydroxychloroquine, MTX, biologics, fish oil ฯลฯ คำอธิบายระบุว่า paracetamol ได้ผลน้อยมากและอาจเป็นพิษต่อตับ OARSI 2019 ก็ไม่แนะนำ paracetamol เป็นยาหลักอีกต่อไป da Costa 2017 (Lancet): paracetamol ไม่ถึง minimum clinically important difference\n\nการประยุกต์กับผู้ป่วยจริง: Naproxen 250 mg BID หลังอาหาร เพิ่มเป็น 500 mg BID ถ้าจำเป็น ใช้ช่วงที่ปวด (as needed/ intermittent) ประเมินที่ 2–4 สัปดาห์ หยุด diclofenac gel เมื่อเริ่ม oral (หรือใช้แทนกันตามอาการ ไม่ใช้พร้อมกันประจำ) บอกผู้ป่วย: 'กินหลังอาหารพร้อมน้ำเต็มแก้ว ห้ามกินร่วมยาแก้ปวดกลุ่มเดียวกันที่ซื้อเอง (ibuprofen, ยาชุด, ยาแก้ปวดเมื่อยสูตรผสม)' ออกกำลังกายต่อ ควบคุมน้ำหนัก ทบทวนการใช้ยาทุก 3–6 เดือน\n\nการติดตามและสัญญาณอันตราย: หยุดยาและพบแพทย์ถ้ามีปวดท้อง จุกแน่นลิ้นปี่ อาเจียนเป็นเลือด ถ่ายดำ บวม ปัสสาวะออกน้อย ผื่น หอบหืดกำเริบ ถ้าใช้ต่อเนื่องนาน ตรวจ BP และ SCr เป็นระยะ หากต่อมามีโรคร่วม (อายุ ≥65, HT, CKD, ใช้ aspirin) ให้ประเมินใหม่ เช่นกลับไปใช้ topical หรือเพิ่ม PPI หรือเลือก celecoxib ตามความเสี่ยง\n\nจุดที่มักสับสนและกับดักข้อสอบ: (1) ‘Paracetamol first-line OA’ เป็นแนวทางเก่า (ACR 2012) (2) topical NSAID เป็น strong สำหรับ knee และควรใช้ก่อน oral โดยเฉพาะผู้สูงอายุ — แต่ผู้ป่วยรายนี้ใช้แล้วไม่พอ (3) ‘NSAID อันตราย’ ไม่เป็นจริงเสมอ ขึ้นกับปัจจัยเสี่ยงของผู้ป่วย (4) systemic steroid ≠ IA steroid\n\nสรุปท่องสอบ: Knee OA (ACR 2019): exercise/ลดน้ำหนัก → topical NSAID → oral NSAID ขนาดต่ำสุด (strong) → IA steroid; paracetamol/tramadol/duloxetine = conditional; glucosamine = strong against",
+    "choices": [
+     {
+      "label": "A",
+      "text": "Paracetamol 1,000 mg วันละ 4 ครั้งต่อเนื่อง เพราะเป็น first-line ที่ปลอดภัยที่สุดและได้ผลดีกว่า NSAIDs",
+      "explanation": "✗ แนวคิด 'paracetamol first-line ใน OA' ล้าสมัยแล้ว ACR 2019 ให้ paracetamol เพียง conditional recommendation เพราะ meta-analysis (Machado 2015 BMJ; da Costa 2017 Lancet) พบผลลดปวดน้อยมาก ต่ำกว่าระดับที่มีความหมายทางคลินิก และด้อยกว่า NSAIDs paracetamol ยังเหมาะเป็นทางเลือกระยะสั้นในผู้ที่มีข้อห้ามของ NSAID เช่น CKD, หัวใจล้มเหลว, เลือดออกในกระเพาะ หรือใช้ anticoagulant"
+     },
+     {
+      "label": "B",
+      "text": "Naproxen 250–500 mg วันละ 2 ครั้งหลังอาหาร ใช้ขนาดต่ำสุดที่ได้ผลและทบทวนความจำเป็นเป็นระยะ",
+      "explanation": "✓ ACR 2019 ให้ oral NSAIDs เป็น strong recommendation สำหรับ knee/hip/hand OA ผู้ป่วยอายุน้อย ไม่มีความเสี่ยง GI (ไม่มีแผล ไม่ใช้ aspirin/anticoagulant/steroid) CV (BP ปกติ ไม่มีโรคหัวใจ) และไต (eGFR 100) จึงใช้ oral NSAID ได้อย่างปลอดภัย โดยใช้ขนาดต่ำสุดที่ได้ผล ระยะเวลาสั้นที่สุด หรือใช้เป็นช่วง ๆ ตามอาการ และหยุด topical NSAID เมื่อเริ่ม oral เพื่อไม่ให้ซ้อนกัน"
+     },
+     {
+      "label": "C",
+      "text": "Tramadol 50 mg ทุก 6 ชั่วโมงเป็นประจำ",
+      "explanation": "✗ ACR 2019 ให้ tramadol เพียง conditional recommendation และเป็นทางเลือกหลังจาก NSAID ใช้ไม่ได้หรือไม่ได้ผล เพราะประโยชน์ต่อปวด OA น้อยและมีผลข้างเคียงคลื่นไส้ เวียนศีรษะ ท้องผูก การติดยา ชัก serotonin syndrome tramadol จะเหมาะในผู้ที่มีข้อห้ามของ NSAID ทุกรูปแบบและ paracetamol ไม่พอ โดยเริ่มขนาดต่ำและใช้ระยะสั้น"
+     },
+     {
+      "label": "D",
+      "text": "Prednisolone 10 mg/วัน รับประทาน 4 สัปดาห์",
+      "explanation": "✗ OA ไม่ใช่โรคอักเสบทั้งระบบ systemic glucocorticoid ไม่มีบทบาทใน OA และมีผลเสียต่อกระดูก น้ำตาล ความดัน ACR 2019 แนะนำ intra-articular glucocorticoid (strong สำหรับ knee) ซึ่งให้ผลระยะสั้นเฉพาะที่ จะเหมาะเมื่อมี flare ของเข่าข้างใดข้างหนึ่งร่วมกับมีน้ำในข้อ ไม่ใช่การให้ prednisolone ทางปาก"
+     }
+    ],
+    "key_takeaway": "OA ปี 2019+: NSAID (topical → oral) = strong, paracetamol = conditional"
+   }
+  }
+ ]
+}
