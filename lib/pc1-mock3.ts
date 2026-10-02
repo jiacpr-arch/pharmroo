@@ -1,6 +1,7 @@
 import type { McqQuestion } from "@/lib/types-mcq";
 import { buildPc1Mock, PC1_MOCK_DOMAINS, type Pc1MockItem } from "@/lib/pc1-mock-builder";
 import { MOCK3_DAY01 } from "@/lib/pc1-mock3-day01";
+import { MOCK3_DAY02 } from "@/lib/pc1-mock3-day02";
 import { MOCK3_REUSE } from "@/lib/pc1-mock3-reuse";
 
 // PC1 Mock Set 3 (120 ข้อ = 12 หมวด × 10 ข้อ)
@@ -11,6 +12,8 @@ const ITEMS: Record<string, Pc1MockItem[]> = {
   infection: [...MOCK3_REUSE.infection],
   renal: [...MOCK3_DAY01.renal],
   endocrine: [...MOCK3_DAY01.endocrine],
+  neuro: [...MOCK3_DAY02.neuro],
+  psych: [...MOCK3_DAY02.psych],
 };
 
 export const PC1_MOCK3: McqQuestion[] = buildPc1Mock(
