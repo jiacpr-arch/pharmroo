@@ -705,7 +705,7 @@ export const QA: Ip1MockDomainContent = [
       ],
       k: "Human error ≠ root cause สุดท้าย; ถามต่อว่าระบบเปิดโอกาสให้ผิดได้อย่างไร แล้วใช้ engineering/system controls",
       d: "hard",
-      ref: "PIC/S GMP Guide PE 009 Part I Ch.1.4(xiv) and Ch.8; ICH Q10 Section 3.2.2",
+      ref: "PIC/S GMP Guide PE 009 Part I Ch.1.4(xiv); ICH Q10 Section 3.2.2",
     },
   ],
 ];
