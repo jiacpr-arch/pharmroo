@@ -805,7 +805,7 @@ export const QA: Ip1MockDomainContent = [
       ],
       k: "DHT = ใช้เสร็จ→เริ่มล้าง; CHT = ล้างเสร็จ→ใช้ใหม่; เกินค่าที่ validate = deviation + verify ความสะอาด",
       d: "medium",
-      ref: "PIC/S GMP Guide PE 009 Annex 15 Section 10.11–10.12 (Cleaning validation hold times)",
+      ref: "PIC/S GMP Guide PE 009 Annex 15 Section 10 (Cleaning Validation)",
     },
     {
       t: "Retrospective validation acceptability",
@@ -943,7 +943,7 @@ export const QA: Ip1MockDomainContent = [
       ],
       k: "Reconciliation ฉลากพิมพ์: เบิก = ใช้ + ทำลาย + คืน; ส่วนต่างต้องสอบสวนและอธิบายได้ก่อนปล่อย batch",
       d: "hard",
-      ref: "PIC/S GMP Guide PE 009 Part I Ch.5.56 and 5.62; Annex 16 (batch record review prior to certification)",
+      ref: "PIC/S GMP Guide PE 009 Part I Ch.5 (Packaging materials and packaging operations); Annex 16",
       c: [
         "ยอดที่ตรวจนับได้ = 4,812 + 150 + 30 = 4,992 ดวง",
         "ส่วนต่าง = 5,000 − 4,992 = 8 ดวง",
