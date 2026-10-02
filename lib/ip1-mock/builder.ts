@@ -2,7 +2,7 @@ import type { McqQuestion } from "@/lib/types-mcq";
 import { IP1_MOCK_DOMAINS, IP1_MOCK_PER_DOMAIN, type Ip1MockDomain } from "@/lib/ip1-mock/domains";
 
 const labels = ["A", "B", "C", "D", "E"];
-// ทุก 10 ข้อมีคำตอบ A–E ตำแหน่งละ 2 ข้อ (ยกเว้นตัวเลือกเชิงตัวเลขที่คงลำดับจากน้อยไปมาก)
+// ลำดับตั้งต้นของตำแหน่งคำตอบ (ใช้ตัดสินเมื่อจำนวนเท่ากัน) — builder กระจายคำตอบ A–E ให้ใกล้เคียงกันทั้งเซต
 const KEY = [2, 0, 3, 1, 4, 1, 3, 0, 4, 2];
 const isNumeric = (t: string) => /^[<>≤≥~≈±+−-]?\s?\d/.test(t);
 
@@ -16,6 +16,7 @@ export function buildIp1Mock(setNo: number, domains: Ip1MockDomain[] = IP1_MOCK_
   const source = `PharmRU PLE-IP1 Mock Set ${setNo}`;
   const out: McqQuestion[] = [];
   let n = 0;
+  const used = [0, 0, 0, 0, 0];
   for (const dom of domains) {
     const items = (dom.sets[setNo - 1] ?? []).slice(0, IP1_MOCK_PER_DOMAIN);
     for (const q of items) {
@@ -23,12 +24,23 @@ export function buildIp1Mock(setNo: number, domains: Ip1MockDomain[] = IP1_MOCK_
       if (q.o.length !== 5 || q.w.length !== 5 || q.a < 0 || q.a > 4) {
         throw new Error(`IP1 Mock ${setNo} ${dom.key}: malformed item "${q.t}"`);
       }
-      const keep = q.o.every(isNumeric);
-      const order = q.o.map((_, j) => j).filter((j) => j !== q.a);
-      order.splice(keep ? q.a : KEY[(n - 1) % KEY.length], 0, q.a);
+      const pref = KEY[(n - 1) % KEY.length];
+      let order: number[];
+      if (q.o.every(isNumeric)) {
+        // ตัวเลือกตัวเลขต้องเรียงลำดับ: เลือกเรียงจากน้อยไปมากหรือมากไปน้อย แบบที่ตำแหน่งคำตอบถูกใช้น้อยกว่า
+        const asc = q.o.map((_, j) => j);
+        order = used[4 - q.a] < used[q.a] ? asc.reverse() : asc;
+      } else {
+        // ตัวเลือกข้อความ: วางคำตอบที่ตำแหน่งที่ถูกใช้น้อยที่สุดในเซตนี้ (เท่ากันให้ใช้ลำดับ KEY)
+        const min = Math.min(...used);
+        const target = [pref, ...[0, 1, 2, 3, 4]].find((j) => used[j] === min)!;
+        order = q.o.map((_, j) => j).filter((j) => j !== q.a);
+        order.splice(target, 0, q.a);
+      }
       const o = order.map((j) => q.o[j]);
       const w = order.map((j) => q.w[j]);
       const ai = order.indexOf(q.a);
+      used[ai]++;
       const ans = labels[ai];
       out.push({
         id: `ip1m${setNo}q${String(n).padStart(3, "0")}`,

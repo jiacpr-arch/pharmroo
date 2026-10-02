@@ -60,6 +60,28 @@ describe("IP1 Mock content", () => {
     }
   });
 
+  it("answer key is spread evenly across A–E in every ready set", () => {
+    for (const qs of Object.values(IP1_MOCK_SETS)) {
+      for (const label of ["A", "B", "C", "D", "E"]) {
+        const count = qs.filter((q) => q.correct_answer === label).length;
+        expect(count, label).toBeGreaterThanOrEqual(20);
+        expect(count, label).toBeLessThanOrEqual(28);
+      }
+    }
+  });
+
+  it("numeric options stay sorted after shuffling", () => {
+    for (const qs of Object.values(IP1_MOCK_SETS)) {
+      for (const q of qs) {
+        if (!q.choices.every((c) => /^\d/.test(c.text))) continue;
+        const nums = q.choices.map((c) => parseFloat(c.text.match(/^[\d.,]+/)![0].replace(/,/g, "")));
+        const asc = nums.every((v, i) => i === 0 || v >= nums[i - 1]);
+        const desc = nums.every((v, i) => i === 0 || v <= nums[i - 1]);
+        expect(asc || desc, q.id).toBe(true);
+      }
+    }
+  });
+
   it("builder keeps the correct option text for every item", () => {
     for (let no = 1; no <= IP1_MOCK_PLANNED_SETS; no++) {
       const domains = IP1_MOCK_DOMAINS.filter((d) => d.sets[no - 1]?.length);
