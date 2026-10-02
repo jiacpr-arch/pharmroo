@@ -22,6 +22,13 @@ describe("IP1 Mock content", () => {
       });
     });
 
+    it(`${dom.key}: each complete set has 2 easy / 5 medium / 3 hard`, () => {
+      dom.sets.filter((s) => s.length === IP1_MOCK_PER_DOMAIN).forEach((set, si) => {
+        const mix = ["easy", "medium", "hard"].map((d) => set.filter((q) => q.d === d).length);
+        expect(mix, `${dom.key} set ${si + 1}`).toEqual([2, 5, 3]);
+      });
+    });
+
     it(`${dom.key}: no topic repeated across sets`, () => {
       const topics = dom.sets.flat().map((q) => norm(q.t));
       const dup = topics.filter((t, i) => topics.indexOf(t) !== i);
