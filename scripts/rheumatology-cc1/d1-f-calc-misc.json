@@ -1,0 +1,770 @@
+{
+ "exam_day": 1,
+ "questions": [
+  {
+   "scenario": "ผู้ป่วยชายอายุ 72 ปี น้ำหนัก 60 kg เป็น gout มี tophi และ flare 3 ครั้ง/ปี serum urate 9.4 mg/dL, SCr 1.5 mg/dL ตรวจ HLA-B*5801 ให้ผลลบ แพทย์ต้องการเริ่ม allopurinol ข้อใดถูกต้องที่สุดเกี่ยวกับค่า CrCl (Cockcroft-Gault) และขนาดเริ่มต้น",
+   "choices": [
+    {
+     "label": "A",
+     "text": "CrCl ≈ 38 mL/min; เริ่ม allopurinol 300 mg/วัน ทันทีเพื่อให้ถึงเป้าหมายเร็ว"
+    },
+    {
+     "label": "B",
+     "text": "CrCl ≈ 38 mL/min; เริ่ม 50 mg/วัน แล้วเพิ่มครั้งละ 50 mg ทุก 2–5 สัปดาห์จน serum urate ถึงเป้าหมาย"
+    },
+    {
+     "label": "C",
+     "text": "CrCl ≈ 64 mL/min; เริ่ม 100 mg/วัน และคงขนาดนี้ไว้ตลอด"
+    },
+    {
+     "label": "D",
+     "text": "CrCl ≈ 38 mL/min; ให้ 50 mg/วัน ตลอดไปห้ามปรับเพิ่มเกินขนาดตาม CrCl (Hande dosing)"
+    }
+   ],
+   "correct_answer": "B",
+   "difficulty": "hard",
+   "explanation": "CrCl = (140−72)×60/(72×1.5) ≈ 38 mL/min; ACR 2020 ให้เริ่ม allopurinol ขนาดต่ำ (≤100 mg/วัน และต่ำกว่าใน CKD เช่น 50 mg/วัน) แล้ว titrate ตาม serum urate",
+   "detailed_explanation": {
+    "summary": "CrCl = (140−72)×60/(72×1.5) ≈ 38 mL/min; ACR 2020 ให้เริ่ม allopurinol ขนาดต่ำ (≤100 mg/วัน และต่ำกว่าใน CKD เช่น 50 mg/วัน) แล้ว titrate ตาม serum urate",
+    "reason": "โจทย์ถามอะไร: ให้คำนวณ CrCl ด้วย Cockcroft-Gault แล้วเลือกกลยุทธ์ขนาดยา allopurinol ที่เหมาะสมกับผู้ป่วย gout ที่มีไตเสื่อม\n\nหลักการ/กลไกเชิงลึก: Cockcroft-Gault (ชาย) = (140 − อายุ) × น้ำหนัก / (72 × SCr) = (140 − 72) × 60 / (72 × 1.5) = 68 × 60 / 108 = 4,080 / 108 ≈ 37.8 mL/min (CKD stage 3b). Allopurinol และ oxypurinol ขับทางไต ขนาดเริ่มสูงสัมพันธ์กับ allopurinol hypersensitivity syndrome/SJS-TEN และ flare จากการลด urate เร็ว\n\nทำไมข้อ B ถูก: ACR 2020 แนะนำ start-low-go-slow: เริ่ม ≤100 mg/วัน (CKD ให้ต่ำกว่า เช่น 50 mg/วัน) แล้วเพิ่ม 50 mg ทุก 2–5 สัปดาห์ (ไม่ใช่ 100 mg ใน CKD) จนถึง urate target และยอมให้ขนาดเกินค่าที่คำนวณจาก CrCl ได้\n\nการประยุกต์กับผู้ป่วยจริง: ผู้ป่วยนี้มี indication ชัด (tophi, flare ≥2/ปี) ผล HLA-B*5801 ลบ (ACR แนะนำตรวจในคนเชื้อสายเอเชียตะวันออกเฉียงใต้ รวมถึงคนไทย) ต้องให้ flare prophylaxis (เช่น colchicine ขนาดปรับตามไต) ร่วม 3–6 เดือน และติดตาม urate, LFT, ผื่น\n\nจุดที่มักสับสนและกับดักข้อสอบ: อย่าสับสนระหว่างการ 'จำกัดขนาดตาม CrCl ตลอดไป' (แนวคิดเก่า) กับ 'ขนาดเริ่มต้นตาม CrCl แล้ว titrate'; ระวังสูตรผู้หญิงต้องคูณ 0.85 แต่ผู้ป่วยรายนี้เป็นชาย\n\nสรุปท่องสอบ: CG ชาย = (140−อายุ)×BW/(72×SCr); allopurinol ใน CKD: เริ่ม 50 mg/วัน เพิ่มทีละ 50 mg ทุก 2–5 สัปดาห์ถึง urate เป้าหมาย",
+    "choices": [
+     {
+      "label": "A",
+      "text": "CrCl ≈ 38 mL/min; เริ่ม allopurinol 300 mg/วัน ทันทีเพื่อให้ถึงเป้าหมายเร็ว",
+      "explanation": "✗ ผิด — 300 mg/วันเป็นขนาดเริ่มที่สูงเกินไป โดยเฉพาะใน CKD เพิ่มทั้ง flare และความเสี่ยง severe cutaneous adverse reaction (SCAR)"
+     },
+     {
+      "label": "B",
+      "text": "CrCl ≈ 38 mL/min; เริ่ม 50 mg/วัน แล้วเพิ่มครั้งละ 50 mg ทุก 2–5 สัปดาห์จน serum urate ถึงเป้าหมาย",
+      "explanation": "✓ ถูก — ตรงตาม ACR 2020: start low (≤100 mg/วัน และต่ำกว่านั้นใน CKD) แล้ว go slow titrate ตาม urate ได้แม้เกินขนาดที่คำนวณจาก CrCl"
+     },
+     {
+      "label": "C",
+      "text": "CrCl ≈ 64 mL/min; เริ่ม 100 mg/วัน และคงขนาดนี้ไว้ตลอด",
+      "explanation": "✗ ผิด — คำนวณผิด (ลืมหารด้วย 72 × SCr ให้ถูกต้อง) และการคงขนาดไว้โดยไม่ titrate ทำให้ไม่ถึงเป้าหมาย"
+     },
+     {
+      "label": "D",
+      "text": "CrCl ≈ 38 mL/min; ให้ 50 mg/วัน ตลอดไปห้ามปรับเพิ่มเกินขนาดตาม CrCl (Hande dosing)",
+      "explanation": "✗ ผิด — แนวทางเดิมแบบ Hande ทำให้ผู้ป่วยส่วนใหญ่ไม่ถึงเป้าหมาย; ACR 2020 อนุญาตให้ titrate เกินขนาดตาม CrCl ได้ภายใต้การติดตาม"
+     }
+    ],
+    "key_takeaway": "Allopurinol ใน CKD: start low (50 mg) – go slow – titrate to target ไม่ติดเพดาน CrCl"
+   }
+  },
+  {
+   "scenario": "ผู้ป่วยหญิงอายุ 80 ปี น้ำหนัก 45 kg, SCr 1.4 mg/dL กำลังจะเริ่ม allopurinol 50 mg/วัน แพทย์ต้องการให้ colchicine (เม็ดละ 0.6 mg) เพื่อป้องกัน gout flare ผู้ป่วยไม่ได้ใช้ยาที่ยับยั้ง CYP3A4/P-gp ข้อใดถูกต้องที่สุด",
+   "choices": [
+    {
+     "label": "A",
+     "text": "CrCl ≈ 27 mL/min; colchicine 0.6 mg วันละ 2 ครั้ง"
+    },
+    {
+     "label": "B",
+     "text": "CrCl ≈ 23 mL/min; ห้ามใช้ colchicine ทุกกรณี"
+    },
+    {
+     "label": "C",
+     "text": "CrCl ≈ 23 mL/min; colchicine 0.3 mg/วัน (เช่น 0.6 mg วันเว้นวัน) และเฝ้าระวังอาการกล้ามเนื้ออ่อนแรง/ท้องเสีย"
+    },
+    {
+     "label": "D",
+     "text": "CrCl ≈ 23 mL/min; colchicine 1.2 mg ตามด้วย 0.6 mg ใน 1 ชั่วโมง ทุกวัน"
+    }
+   ],
+   "correct_answer": "C",
+   "difficulty": "hard",
+   "explanation": "CrCl หญิง = (140−80)×45/(72×1.4)×0.85 ≈ 23 mL/min; เมื่อ CrCl <30 ขนาด colchicine prophylaxis เริ่ม 0.3 mg/วัน (0.6 mg วันเว้นวัน)",
+   "detailed_explanation": {
+    "summary": "CrCl หญิง = (140−80)×45/(72×1.4)×0.85 ≈ 23 mL/min; เมื่อ CrCl <30 ขนาด colchicine prophylaxis เริ่ม 0.3 mg/วัน (0.6 mg วันเว้นวัน)",
+    "reason": "โจทย์ถามอะไร: คำนวณ CrCl ของผู้สูงอายุหญิงน้ำหนักน้อยแล้วเลือกขนาด colchicine สำหรับป้องกัน flare ช่วงเริ่มยาลดกรดยูริก\n\nหลักการ/กลไกเชิงลึก: CrCl = (140 − 80) × 45 / (72 × 1.4) × 0.85 = 2,700 / 100.8 × 0.85 = 26.8 × 0.85 ≈ 22.8 mL/min. Colchicine มี therapeutic index แคบ ขับทางไตและ P-gp/CYP3A4 การสะสมทำให้ neuromyopathy, rhabdomyolysis, bone marrow suppression\n\nทำไมข้อ C ถูก: ฉลาก colchicine: CrCl <30 mL/min สำหรับ prophylaxis ให้เริ่ม 0.3 mg/วัน และปรับเพิ่มด้วยความระมัดระวัง; ในไทยเม็ด 0.6 mg จึงให้ 0.6 mg วันเว้นวัน หรือครึ่งเม็ดต่อวันถ้าแบ่งได้\n\nการประยุกต์กับผู้ป่วยจริง: ACR 2020 แนะนำ flare prophylaxis 3–6 เดือนเมื่อเริ่ม ULT; ทางเลือกคือ prednisolone ขนาดต่ำ ส่วน NSAIDs ไม่เหมาะในผู้สูงอายุ CKD รายนี้ ต้องทบทวนยาที่ใช้ร่วมเช่น clarithromycin, ketoconazole, verapamil, diltiazem, cyclosporine\n\nจุดที่มักสับสนและกับดักข้อสอบ: กับดัก: ลืมตัวคูณ 0.85 ในหญิง; สับสนขนาด acute flare (1.2 mg + 0.6 mg) กับ prophylaxis; คิดว่า CrCl <30 ห้ามใช้เด็ดขาด (ข้อห้ามจริงคือร่วมกับ strong CYP3A4/P-gp inhibitor ในผู้ที่ไต/ตับบกพร่อง หรือผู้ฟอกไตห้ามให้ซ้ำ)\n\nสรุปท่องสอบ: หญิง ×0.85; colchicine prophylaxis ปกติ 0.6 mg 1–2 ครั้ง/วัน, CrCl <30 → 0.3 mg/วัน",
+    "choices": [
+     {
+      "label": "A",
+      "text": "CrCl ≈ 27 mL/min; colchicine 0.6 mg วันละ 2 ครั้ง",
+      "explanation": "✗ ผิด — ลืมคูณ 0.85 สำหรับผู้หญิง และ 0.6 mg bid เป็นขนาด prophylaxis ของไตปกติ เสี่ยง myotoxicity/neuromyopathy"
+     },
+     {
+      "label": "B",
+      "text": "CrCl ≈ 23 mL/min; ห้ามใช้ colchicine ทุกกรณี",
+      "explanation": "✗ ผิด — CrCl <30 ไม่ใช่ข้อห้ามเด็ดขาด (ข้อห้ามคือไต/ตับบกพร่องร่วมกับยายับยั้ง CYP3A4/P-gp) เพียงต้องลดขนาด"
+     },
+     {
+      "label": "C",
+      "text": "CrCl ≈ 23 mL/min; colchicine 0.3 mg/วัน (เช่น 0.6 mg วันเว้นวัน) และเฝ้าระวังอาการกล้ามเนื้ออ่อนแรง/ท้องเสีย",
+      "explanation": "✓ ถูก — ตามฉลาก CrCl <30 mL/min ให้ prophylaxis เริ่ม 0.3 mg/วัน และติดตามพิษอย่างใกล้ชิด"
+     },
+     {
+      "label": "D",
+      "text": "CrCl ≈ 23 mL/min; colchicine 1.2 mg ตามด้วย 0.6 mg ใน 1 ชั่วโมง ทุกวัน",
+      "explanation": "✗ ผิด — เป็นขนาดรักษา acute flare (ใช้ครั้งเดียว) ไม่ใช่ขนาด prophylaxis รายวัน จะเกิดพิษสะสม"
+     }
+    ],
+    "key_takeaway": "CrCl <30: colchicine prophylaxis 0.3 mg/วัน — อย่าลืม ×0.85 ในผู้หญิง"
+   }
+  },
+  {
+   "scenario": "ผู้ป่วยหญิงอายุ 78 ปี น้ำหนัก 50 kg เป็น osteoporosis มี vertebral fracture, SCr 1.3 mg/dL, serum Ca และ 25(OH)D ปกติ แพทย์ปรึกษาเภสัชกรเรื่องการเริ่ม zoledronic acid ทางเลือกใดเหมาะสมที่สุด",
+   "choices": [
+    {
+     "label": "A",
+     "text": "ให้ zoledronic acid 5 mg IV ปีละครั้งได้ตามปกติ ดื่มน้ำมากๆ ก่อนให้ยา"
+    },
+    {
+     "label": "B",
+     "text": "ลดขนาด zoledronic acid เหลือ 3.5 mg IV และยืดเวลาให้ยาเป็น 30 นาที"
+    },
+    {
+     "label": "C",
+     "text": "เปลี่ยนเป็น alendronate 70 mg สัปดาห์ละครั้ง"
+    },
+    {
+     "label": "D",
+     "text": "เปลี่ยนเป็น denosumab 60 mg SC ทุก 6 เดือน ร่วมกับ calcium + vitamin D และติดตาม serum Ca"
+    }
+   ],
+   "correct_answer": "D",
+   "difficulty": "medium",
+   "explanation": "CrCl = (140−78)×50/(72×1.3)×0.85 ≈ 28 mL/min (<35) จึงห้ามใช้ zoledronic acid และไม่แนะนำ alendronate; denosumab เป็นทางเลือกที่เหมาะสม",
+   "detailed_explanation": {
+    "summary": "CrCl = (140−78)×50/(72×1.3)×0.85 ≈ 28 mL/min (<35) จึงห้ามใช้ zoledronic acid และไม่แนะนำ alendronate; denosumab เป็นทางเลือกที่เหมาะสม",
+    "reason": "โจทย์ถามอะไร: ให้ตัดสินใจเลือกยา osteoporosis จากค่า CrCl ที่คำนวณเอง\n\nหลักการ/กลไกเชิงลึก: CrCl = (140 − 78) × 50 / (72 × 1.3) × 0.85 = 3,100 / 93.6 × 0.85 = 33.1 × 0.85 ≈ 28 mL/min. Zoledronic acid ถูกขับทางไตไม่เปลี่ยนแปลงและทำให้เกิด tubular toxicity/AKI ฉลากห้ามใช้เมื่อ CrCl <35 mL/min; bisphosphonate ชนิดกิน (alendronate <35, risedronate/ibandronate <30) ก็ไม่แนะนำ\n\nทำไมข้อ D ถูก: Denosumab เป็น monoclonal antibody ต่อ RANKL กำจัดผ่าน reticuloendothelial system ไม่ต้องปรับขนาดตามไต ใช้ได้ใน CKD แต่ผู้ป่วย CrCl <30 มีความเสี่ยง hypocalcemia รุนแรงกว่า\n\nการประยุกต์กับผู้ป่วยจริง: ก่อนให้ denosumab ต้องแก้ hypocalcemia/vitamin D deficiency ให้ Ca 1,000–1,200 mg/วัน + vitamin D และเจาะ Ca หลังฉีด ~2 สัปดาห์ในผู้ที่ไตเสื่อม ย้ำว่าห้ามหยุดยาหรือเลื่อนนัดเพราะเสี่ยง rebound multiple vertebral fractures\n\nจุดที่มักสับสนและกับดักข้อสอบ: กับดัก: ลืม ×0.85 แล้วได้ ~33 mL/min ก็ยัง <35 อยู่ดี; การลดขนาด zoledronic acid ตาม CrCl เป็นของสูตร 4 mg (oncology) ไม่ใช่ 5 mg (Aclasta)\n\nสรุปท่องสอบ: Zoledronic acid 5 mg ห้ามเมื่อ CrCl <35; alendronate <35; risedronate <30; denosumab ไม่ต้องปรับไตแต่ระวัง hypocalcemia",
+    "choices": [
+     {
+      "label": "A",
+      "text": "ให้ zoledronic acid 5 mg IV ปีละครั้งได้ตามปกติ ดื่มน้ำมากๆ ก่อนให้ยา",
+      "explanation": "✗ ผิด — CrCl ≈ 28 mL/min ต่ำกว่า 35 mL/min ซึ่งเป็นข้อห้ามของ zoledronic acid 5 mg เพราะเสี่ยง acute kidney injury"
+     },
+     {
+      "label": "B",
+      "text": "ลดขนาด zoledronic acid เหลือ 3.5 mg IV และยืดเวลาให้ยาเป็น 30 นาที",
+      "explanation": "✗ ผิด — การลดขนาดตาม CrCl ใช้กับ zoledronic acid 4 mg ในข้อบ่งใช้มะเร็ง ไม่ใช่สูตร 5 mg สำหรับ osteoporosis"
+     },
+     {
+      "label": "C",
+      "text": "เปลี่ยนเป็น alendronate 70 mg สัปดาห์ละครั้ง",
+      "explanation": "✗ ผิด — alendronate ไม่แนะนำเมื่อ CrCl <35 mL/min เช่นเดียวกับ bisphosphonate อื่น"
+     },
+     {
+      "label": "D",
+      "text": "เปลี่ยนเป็น denosumab 60 mg SC ทุก 6 เดือน ร่วมกับ calcium + vitamin D และติดตาม serum Ca",
+      "explanation": "✓ ถูก — denosumab ไม่ขับทางไต ใช้ได้ใน CrCl ต่ำ แต่เสี่ยง hypocalcemia จึงต้องให้ Ca/D และติดตามระดับ Ca"
+     }
+    ],
+    "key_takeaway": "CrCl <35 → ไม่ใช้ zoledronic/alendronate → denosumab + Ca/D + เฝ้าระวัง Ca"
+   }
+  },
+  {
+   "scenario": "ผู้ป่วยหญิงวัยหมดประจำเดือนอายุ 60 ปี เป็น osteopenia ประเมินว่าได้แคลเซียมจากอาหารประมาณ 200 mg/วัน แพทย์ต้องการให้ได้ elemental calcium รวม 1,200 mg/วัน โดยใช้ calcium carbonate เม็ดละ 1,250 mg ข้อใดเป็นวิธีจ่ายที่เหมาะสมที่สุด",
+   "choices": [
+    {
+     "label": "A",
+     "text": "วันละ 2 เม็ด แบ่งกินครั้งละ 1 เม็ด เช้า-เย็น พร้อมหรือหลังอาหารทันที"
+    },
+    {
+     "label": "B",
+     "text": "วันละ 1 เม็ด เพราะ 1 เม็ดให้แคลเซียม 1,250 mg เพียงพอแล้ว"
+    },
+    {
+     "label": "C",
+     "text": "วันละ 2 เม็ด กินพร้อมกันครั้งเดียวก่อนนอนตอนท้องว่าง"
+    },
+    {
+     "label": "D",
+     "text": "วันละ 3 เม็ด แบ่งกินวันละ 3 ครั้งหลังอาหาร"
+    }
+   ],
+   "correct_answer": "A",
+   "difficulty": "easy",
+   "explanation": "Calcium carbonate มี elemental Ca 40% → 1,250 mg = 500 mg/เม็ด ต้องเสริม 1,000 mg จึงให้ 2 เม็ด แบ่งครั้งละ 1 เม็ดพร้อมอาหาร",
+   "detailed_explanation": {
+    "summary": "Calcium carbonate มี elemental Ca 40% → 1,250 mg = 500 mg/เม็ด ต้องเสริม 1,000 mg จึงให้ 2 เม็ด แบ่งครั้งละ 1 เม็ดพร้อมอาหาร",
+    "reason": "โจทย์ถามอะไร: ให้คำนวณจำนวนเม็ด calcium carbonate จากปริมาณ elemental calcium ที่ต้องเสริม และเลือกวิธีกินที่ดูดซึมดีที่สุด\n\nหลักการ/กลไกเชิงลึก: เกลือแคลเซียมมี elemental ต่างกัน: carbonate 40%, citrate 21%, lactate 13%, gluconate 9%. ต้องการรวม 1,200 mg − อาหาร 200 mg = ต้องเสริม 1,000 mg; 1 เม็ด = 1,250 × 0.40 = 500 mg ดังนั้น 1,000 / 500 = 2 เม็ด/วัน\n\nทำไมข้อ A ถูก: การดูดซึม Ca ผ่าน active transport อิ่มตัวเมื่อ >500 mg/ครั้ง จึงควรแบ่งให้; carbonate ต้องอาศัยกรดในกระเพาะจึงควรกินพร้อม/หลังอาหารทันที\n\nการประยุกต์กับผู้ป่วยจริง: แนะนำเว้นห่างจาก levothyroxine, iron, quinolone, tetracycline อย่างน้อย 2–4 ชั่วโมง ผลข้างเคียงคือท้องอืด ท้องผูก; ผู้ที่ใช้ PPI หรือ achlorhydria อาจพิจารณา calcium citrate ซึ่งดูดซึมได้โดยไม่ต้องพึ่งกรด\n\nจุดที่มักสับสนและกับดักข้อสอบ: กับดักคลาสสิก: เอาขนาดเกลือ (1,250 mg) มาคิดเป็น elemental; ลืมหักแคลเซียมจากอาหาร; กินรวบครั้งเดียว\n\nสรุปท่องสอบ: Carbonate 40% (กินพร้อมอาหาร), citrate 21% (กินเวลาใดก็ได้), ครั้งละไม่เกิน 500 mg elemental",
+    "choices": [
+     {
+      "label": "A",
+      "text": "วันละ 2 เม็ด แบ่งกินครั้งละ 1 เม็ด เช้า-เย็น พร้อมหรือหลังอาหารทันที",
+      "explanation": "✓ ถูก — 1,250 mg × 40% = 500 mg elemental/เม็ด ต้องการเสริม 1,000 mg = 2 เม็ด แบ่งครั้งละ ≤500 mg และกินพร้อมอาหารเพื่อให้กรดช่วยละลาย"
+     },
+     {
+      "label": "B",
+      "text": "วันละ 1 เม็ด เพราะ 1 เม็ดให้แคลเซียม 1,250 mg เพียงพอแล้ว",
+      "explanation": "✗ ผิด — สับสนน้ำหนักเกลือกับ elemental calcium; calcium carbonate มี elemental เพียง 40%"
+     },
+     {
+      "label": "C",
+      "text": "วันละ 2 เม็ด กินพร้อมกันครั้งเดียวก่อนนอนตอนท้องว่าง",
+      "explanation": "✗ ผิด — การดูดซึมแคลเซียมอิ่มตัวเมื่อ >500 mg/ครั้ง และ carbonate ดูดซึมได้ไม่ดีตอนท้องว่าง"
+     },
+     {
+      "label": "D",
+      "text": "วันละ 3 เม็ด แบ่งกินวันละ 3 ครั้งหลังอาหาร",
+      "explanation": "✗ ผิด — ได้ elemental 1,500 mg + อาหาร 200 = 1,700 mg เกินเป้าหมาย เพิ่มความเสี่ยงนิ่วและท้องผูก"
+     }
+    ],
+    "key_takeaway": "CaCO3 1,250 mg = Ca 500 mg; แบ่งกินครั้งละ ≤500 mg พร้อมอาหาร"
+   }
+  },
+  {
+   "scenario": "ผู้ป่วยหญิงอายุ 66 ปี แพทย์สั่ง cholecalciferol (vitamin D3) 2,000 IU/วัน แต่ผลิตภัณฑ์ที่มีในร้านระบุบนฉลากว่า \"vitamin D3 25 mcg ต่อเม็ด\" ควรแนะนำให้ผู้ป่วยกินวันละกี่เม็ด",
+   "choices": [
+    {
+     "label": "A",
+     "text": "1 เม็ด"
+    },
+    {
+     "label": "B",
+     "text": "2 เม็ด"
+    },
+    {
+     "label": "C",
+     "text": "8 เม็ด"
+    },
+    {
+     "label": "D",
+     "text": "80 เม็ด"
+    }
+   ],
+   "correct_answer": "B",
+   "difficulty": "easy",
+   "explanation": "Vitamin D: 1 mcg = 40 IU → 25 mcg = 1,000 IU ดังนั้น 2,000 IU = 2 เม็ด/วัน",
+   "detailed_explanation": {
+    "summary": "Vitamin D: 1 mcg = 40 IU → 25 mcg = 1,000 IU ดังนั้น 2,000 IU = 2 เม็ด/วัน",
+    "reason": "โจทย์ถามอะไร: ให้แปลงหน่วย vitamin D ระหว่าง IU และ mcg เพื่อจ่ายยาให้ตรงกับใบสั่ง\n\nหลักการ/กลไกเชิงลึก: สำหรับ vitamin D2 และ D3: 1 mcg = 40 IU หรือ 1 IU = 0.025 mcg. ดังนั้น 25 mcg × 40 = 1,000 IU/เม็ด; ต้องการ 2,000 IU ÷ 1,000 = 2 เม็ด (หรือ 2,000 × 0.025 = 50 mcg ÷ 25 = 2 เม็ด)\n\nทำไมข้อ B ถูก: ข้อ B ได้ 50 mcg = 2,000 IU ตรงตามที่สั่ง ซึ่งอยู่ในช่วงขนาดบำรุงสำหรับผู้สูงอายุที่มีภาวะขาด/พร่อง (ปกติ 800–2,000 IU/วัน, tolerable upper limit 4,000 IU/วัน)\n\nการประยุกต์กับผู้ป่วยจริง: ผลิตภัณฑ์นำเข้าและฉลากโภชนาการใหม่มักระบุหน่วยเป็น mcg ส่วนใบสั่งแพทย์ไทยมักเป็น IU (เช่น ergocalciferol 20,000 IU) เภสัชกรต้องแปลงหน่วยให้ถูกเพื่อป้องกัน under/overdose ติดตาม 25(OH)D หลัง 3 เดือน\n\nจุดที่มักสับสนและกับดักข้อสอบ: ระวังสับสนกับ calcitriol ซึ่งระบุเป็น mcg (0.25 mcg) และเป็นรูป active ที่ไม่ใช้ตัวแปลง IU แบบเดียวกันในการสั่ง; อย่าใช้ 1:10 หรือ 1:1\n\nสรุปท่องสอบ: 1 mcg = 40 IU; 25 mcg = 1,000 IU; 50,000 IU = 1.25 mg",
+    "choices": [
+     {
+      "label": "A",
+      "text": "1 เม็ด",
+      "explanation": "✗ ผิด — 25 mcg = 1,000 IU เท่านั้น ได้เพียงครึ่งหนึ่งของขนาดที่สั่ง"
+     },
+     {
+      "label": "B",
+      "text": "2 เม็ด",
+      "explanation": "✓ ถูก — 1 mcg = 40 IU → 25 mcg = 1,000 IU; 2,000 IU = 2 เม็ด"
+     },
+     {
+      "label": "C",
+      "text": "8 เม็ด",
+      "explanation": "✗ ผิด — เกิดจากใช้ตัวแปลงผิด (1 mcg = 10 IU) ทำให้ได้ขนาดสูงเกินถึง 8,000 IU/วัน"
+     },
+     {
+      "label": "D",
+      "text": "80 เม็ด",
+      "explanation": "✗ ผิด — เกิดจากเข้าใจว่า 1 IU = 1 mcg ซึ่งผิด และเป็นขนาดที่เป็นพิษ"
+     }
+    ],
+    "key_takeaway": "Vitamin D: mcg × 40 = IU"
+   }
+  },
+  {
+   "scenario": "ผู้ป่วยหญิงอายุ 48 ปี เป็น rheumatoid arthritis ได้รับใบสั่งยา \"Methotrexate 2.5 mg tab, 15 mg/week, จ่าย 4 สัปดาห์\" ข้อใดเป็นวิธีจ่ายและฉลากที่ถูกต้อง",
+   "choices": [
+    {
+     "label": "A",
+     "text": "ครั้งละ 6 เม็ด วันละครั้งทุกวัน รวม 168 เม็ด"
+    },
+    {
+     "label": "B",
+     "text": "ครั้งละ 2 เม็ด วันละ 3 ครั้งทุกวัน รวม 168 เม็ด"
+    },
+    {
+     "label": "C",
+     "text": "ครั้งละ 1 เม็ด วันละครั้ง 6 วันต่อสัปดาห์ รวม 24 เม็ด"
+    },
+    {
+     "label": "D",
+     "text": "ครั้งละ 6 เม็ด สัปดาห์ละ 1 ครั้ง (วันเดิมทุกสัปดาห์ เช่น ทุกวันจันทร์) รวม 24 เม็ด"
+    }
+   ],
+   "correct_answer": "D",
+   "difficulty": "easy",
+   "explanation": "MTX 15 mg/สัปดาห์ = 6 เม็ด (2.5 mg) สัปดาห์ละครั้งในวันเดียวกัน จ่าย 4 สัปดาห์ = 24 เม็ด",
+   "detailed_explanation": {
+    "summary": "MTX 15 mg/สัปดาห์ = 6 เม็ด (2.5 mg) สัปดาห์ละครั้งในวันเดียวกัน จ่าย 4 สัปดาห์ = 24 เม็ด",
+    "reason": "โจทย์ถามอะไร: ให้คำนวณจำนวนเม็ด methotrexate รายสัปดาห์และจำนวนที่จ่ายทั้งหมด พร้อมเขียนฉลากที่ป้องกัน medication error\n\nหลักการ/กลไกเชิงลึก: MTX ในโรครูมาติกให้แบบ once weekly เพราะยับยั้ง dihydrofolate reductase/AICAR transformylase เพิ่ม adenosine ต้านอักเสบ การให้ทุกวันทำให้เซลล์แบ่งตัวเร็ว (mucosa, ไขกระดูก) ไม่มีเวลาฟื้นตัว เป็น high-alert medication ของ ISMP\n\nทำไมข้อ D ถูก: 15 mg ÷ 2.5 mg = 6 เม็ด ครั้งเดียวต่อสัปดาห์; 6 × 4 = 24 เม็ด ฉลากควรเขียนชื่อวันที่กิน ขีดเส้นใต้คำว่า 'สัปดาห์ละครั้ง' และจ่ายเฉพาะจำนวนที่ต้องใช้\n\nการประยุกต์กับผู้ป่วยจริง: ถ้าขนาดสูงขึ้น เช่น 20–25 mg/สัปดาห์ ต้องใช้ 8–10 เม็ดซึ่งการดูดซึมทางปากลดลง อาจพิจารณาแบ่งให้ใน 24 ชั่วโมงหรือเปลี่ยนเป็นฉีด SC; แนะนำผู้ป่วยกิน folic acid วันอื่นที่ไม่ใช่วัน MTX และนัดเจาะ CBC, LFT, SCr\n\nจุดที่มักสับสนและกับดักข้อสอบ: ข้อ C ดูเหมือนได้ 24 เม็ดเท่ากันแต่วิธีกินผิด กับดักคือดูแค่จำนวนเม็ดรวม; อีกกับดักคือใบสั่งที่เขียน '15 mg' โดยไม่มีคำว่า /week\n\nสรุปท่องสอบ: MTX = Weekly; 15 mg = 6 × 2.5 mg; 4 สัปดาห์ = 24 เม็ด; ระบุชื่อวันบนฉลาก",
+    "choices": [
+     {
+      "label": "A",
+      "text": "ครั้งละ 6 เม็ด วันละครั้งทุกวัน รวม 168 เม็ด",
+      "explanation": "✗ ผิด — เป็น daily dosing error ซึ่งทำให้เกิดพิษ MTX รุนแรง (mucositis, pancytopenia) และเสียชีวิตได้"
+     },
+     {
+      "label": "B",
+      "text": "ครั้งละ 2 เม็ด วันละ 3 ครั้งทุกวัน รวม 168 เม็ด",
+      "explanation": "✗ ผิด — เป็นการให้ 15 mg ทุกวัน เท่ากับได้ยา 105 mg/สัปดาห์ เป็นพิษร้ายแรง"
+     },
+     {
+      "label": "C",
+      "text": "ครั้งละ 1 เม็ด วันละครั้ง 6 วันต่อสัปดาห์ รวม 24 เม็ด",
+      "explanation": "✗ ผิด — ขนาดรวมต่อสัปดาห์เท่ากันแต่การกระจายรายวันเพิ่มพิษและไม่ใช่รูปแบบที่ใช้ใน RA ยังสับสนกับการกินทุกวัน"
+     },
+     {
+      "label": "D",
+      "text": "ครั้งละ 6 เม็ด สัปดาห์ละ 1 ครั้ง (วันเดิมทุกสัปดาห์ เช่น ทุกวันจันทร์) รวม 24 เม็ด",
+      "explanation": "✓ ถูก — 15 mg ÷ 2.5 mg = 6 เม็ด/สัปดาห์ × 4 สัปดาห์ = 24 เม็ด ระบุวันในฉลากชัดเจน"
+     }
+    ],
+    "key_takeaway": "MTX ใน RA: once WEEKLY — ระบุชื่อวันบนฉลากเสมอ"
+   }
+  },
+  {
+   "scenario": "ผู้ป่วยหญิงอายุ 52 ปี เป็น RA flare ขณะเริ่ม DMARD แพทย์สั่ง prednisolone (5 mg/tab) แบบ bridging ดังนี้ 30 mg/วัน × 7 วัน → 20 mg/วัน × 7 วัน → 10 mg/วัน × 7 วัน → 5 mg/วัน × 7 วัน แล้วหยุด ปริมาณ prednisolone รวมและจำนวนเม็ดที่ต้องจ่ายคือข้อใด",
+   "choices": [
+    {
+     "label": "A",
+     "text": "65 mg; 13 เม็ด"
+    },
+    {
+     "label": "B",
+     "text": "420 mg; 84 เม็ด"
+    },
+    {
+     "label": "C",
+     "text": "455 mg; 91 เม็ด"
+    },
+    {
+     "label": "D",
+     "text": "455 mg; 182 เม็ด"
+    }
+   ],
+   "correct_answer": "C",
+   "difficulty": "medium",
+   "explanation": "รวม = (30+20+10+5)×7 = 455 mg = 91 เม็ด (5 mg)",
+   "detailed_explanation": {
+    "summary": "รวม = (30+20+10+5)×7 = 455 mg = 91 เม็ด (5 mg)",
+    "reason": "โจทย์ถามอะไร: ให้คำนวณขนาด prednisolone รวมตลอดช่วง taper และจำนวนเม็ดที่ต้องจ่าย\n\nหลักการ/กลไกเชิงลึก: แต่ละขั้น: 30 × 7 = 210 mg (42 เม็ด), 20 × 7 = 140 mg (28 เม็ด), 10 × 7 = 70 mg (14 เม็ด), 5 × 7 = 35 mg (7 เม็ด). รวม 455 mg = 91 เม็ด ใช้เวลา 28 วัน\n\nทำไมข้อ C ถูก: EULAR แนะนำ glucocorticoid ระยะสั้นเป็น bridging ขณะเริ่ม/เปลี่ยน csDMARD และ taper ให้หยุดเร็วที่สุดภายใน ~3 เดือน การคำนวณ cumulative dose ช่วยประเมินความเสี่ยง (GIOP เมื่อ ≥2.5–7.5 mg/วัน ≥3 เดือน, hyperglycemia, infection)\n\nการประยุกต์กับผู้ป่วยจริง: เภสัชกรควรทำตารางกินยารายวันให้ผู้ป่วย แนะนำกินตอนเช้าหลังอาหาร (เลียนแบบ circadian cortisol ลด insomnia) ติดตามน้ำตาลในผู้เบาหวาน; การใช้ 4 สัปดาห์มีโอกาสกด HPA axis จึงไม่ควรหยุดทันทีจาก 30 mg\n\nจุดที่มักสับสนและกับดักข้อสอบ: กับดัก: บวกแค่ขนาดต่อวันลืมคูณวัน, ลืมขั้นสุดท้าย, ใช้ความแรงเม็ดผิด; ต้องอ่านความแรงเม็ดจากโจทย์ทุกครั้ง\n\nสรุปท่องสอบ: Cumulative dose = Σ(ขนาด × วัน); 455 mg = 91 เม็ด 5 mg",
+    "choices": [
+     {
+      "label": "A",
+      "text": "65 mg; 13 เม็ด",
+      "explanation": "✗ ผิด — เป็นผลรวมของขนาดต่อวันแต่ละขั้น ไม่ได้คูณจำนวนวัน"
+     },
+     {
+      "label": "B",
+      "text": "420 mg; 84 เม็ด",
+      "explanation": "✗ ผิด — ลืมรวมขั้นสุดท้าย 5 mg × 7 วัน (35 mg = 7 เม็ด)"
+     },
+     {
+      "label": "C",
+      "text": "455 mg; 91 เม็ด",
+      "explanation": "✓ ถูก — 210 + 140 + 70 + 35 = 455 mg ÷ 5 = 91 เม็ด"
+     },
+     {
+      "label": "D",
+      "text": "455 mg; 182 เม็ด",
+      "explanation": "✗ ผิด — ปริมาณ mg ถูกแต่แปลงจำนวนเม็ดผิด (คิดเป็นเม็ดละ 2.5 mg)"
+     }
+    ],
+    "key_takeaway": "Taper total = Σ(mg/วัน × จำนวนวัน) ÷ ความแรงเม็ด"
+   }
+  },
+  {
+   "scenario": "ผู้ป่วยชายอายุ 34 ปี น้ำหนัก 68 kg เป็น ankylosing spondylitis ที่ไม่ตอบสนองต่อ NSAIDs 2 ชนิด แพทย์สั่ง infliximab 5 mg/kg IV ที่สัปดาห์ 0, 2, 6 แล้วทุก 6–8 สัปดาห์ (vial ละ 100 mg ผสมด้วย SWFI 10 mL) ข้อใดถูกต้องสำหรับการเตรียมยาครั้งแรก",
+   "choices": [
+    {
+     "label": "A",
+     "text": "ขนาด 340 mg ใช้ 4 vials ดูดสารละลาย 34 mL เจือจางใน 0.9% NaCl ให้ได้ปริมาตรรวม 250 mL"
+    },
+    {
+     "label": "B",
+     "text": "ขนาด 204 mg ใช้ 3 vials"
+    },
+    {
+     "label": "C",
+     "text": "ขนาด 340 mg ใช้ 3 vials"
+    },
+    {
+     "label": "D",
+     "text": "ขนาด 340 mg ใช้ 4 vials เจือจางใน 5% dextrose 250 mL"
+    }
+   ],
+   "correct_answer": "A",
+   "difficulty": "medium",
+   "explanation": "Infliximab AS 5 mg/kg × 68 kg = 340 mg ต้องใช้ 4 vials (100 mg) ดูด 34 mL (10 mg/mL) เจือจางใน 0.9% NaCl 250 mL",
+   "detailed_explanation": {
+    "summary": "Infliximab AS 5 mg/kg × 68 kg = 340 mg ต้องใช้ 4 vials (100 mg) ดูด 34 mL (10 mg/mL) เจือจางใน 0.9% NaCl 250 mL",
+    "reason": "โจทย์ถามอะไร: ให้คำนวณขนาด infliximab ตามน้ำหนัก จำนวน vial และขั้นตอนเตรียมยาที่ถูกต้อง\n\nหลักการ/กลไกเชิงลึก: Infliximab เป็น chimeric anti-TNF monoclonal antibody ขนาดใน AS/PsA = 5 mg/kg ที่ 0, 2, 6 สัปดาห์ แล้วทุก 6–8 สัปดาห์ (AS ทุก 6 สัปดาห์ตามฉลาก) ส่วน RA = 3 mg/kg ร่วมกับ MTX. 68 kg × 5 mg/kg = 340 mg; vial 100 mg → 340/100 = 3.4 → เปิด 4 vials\n\nทำไมข้อ A ถูก: Reconstitute แต่ละ vial ด้วย SWFI 10 mL ได้ 10 mg/mL (หมุนเบาๆ ห้ามเขย่า) ดูด 340 mg = 34 mL เติมลงถุง 0.9% NaCl (ดูดน้ำเกลือออก 34 mL ก่อนให้ปริมาตรรวม 250 mL) ให้ทาง IV ≥2 ชั่วโมงผ่าน in-line filter ≤1.2 micron ส่วนที่เหลือทิ้ง\n\nการประยุกต์กับผู้ป่วยจริง: ก่อนเริ่มต้องคัดกรอง latent TB (IGRA/CXR) และ HBV; เฝ้าระวัง infusion reaction (อาจ premedicate ด้วย antihistamine/paracetamol) ห้ามใช้ใน heart failure NYHA III–IV\n\nจุดที่มักสับสนและกับดักข้อสอบ: กับดัก: ใช้ขนาด RA (3 mg/kg) กับ AS; ปัดจำนวน vial ลง; ใช้ D5W เป็นตัวเจือจาง\n\nสรุปท่องสอบ: Infliximab: RA 3 mg/kg, AS/PsA/IBD 5 mg/kg; 100 mg/vial + SWFI 10 mL = 10 mg/mL; NSS 250 mL; ≥2 h; filter 1.2 µm",
+    "choices": [
+     {
+      "label": "A",
+      "text": "ขนาด 340 mg ใช้ 4 vials ดูดสารละลาย 34 mL เจือจางใน 0.9% NaCl ให้ได้ปริมาตรรวม 250 mL",
+      "explanation": "✓ ถูก — 68 × 5 = 340 mg → ต้องเปิด 4 vials (3.4 vials ปัดขึ้น) ความเข้มข้นหลัง reconstitute 10 mg/mL จึงดูด 34 mL เจือจางใน NSS 250 mL"
+     },
+     {
+      "label": "B",
+      "text": "ขนาด 204 mg ใช้ 3 vials",
+      "explanation": "✗ ผิด — ใช้ขนาด 3 mg/kg ซึ่งเป็นขนาดใน RA (ร่วมกับ MTX) ไม่ใช่ AS"
+     },
+     {
+      "label": "C",
+      "text": "ขนาด 340 mg ใช้ 3 vials",
+      "explanation": "✗ ผิด — 3 vials ได้ยาเพียง 300 mg ไม่พอสำหรับ 340 mg"
+     },
+     {
+      "label": "D",
+      "text": "ขนาด 340 mg ใช้ 4 vials เจือจางใน 5% dextrose 250 mL",
+      "explanation": "✗ ผิด — ขนาดและจำนวน vial ถูก แต่ฉลาก infliximab กำหนดให้เจือจางใน 0.9% NaCl เท่านั้น"
+     }
+    ],
+    "key_takeaway": "Infliximab: mg/kg × BW ÷ 100 ปัดขึ้น; เจือจางใน NSS 250 mL เท่านั้น"
+   }
+  },
+  {
+   "scenario": "เด็กชายอายุ 5 ปี น้ำหนัก 18 kg ข้อเท้าแพลงจากการเล่นกีฬา ปวดบวม แพทย์สั่ง ibuprofen suspension (100 mg/5 mL) ขนาด 10 mg/kg/ครั้ง ข้อใดเป็นการจ่ายยาที่ถูกต้อง",
+   "choices": [
+    {
+     "label": "A",
+     "text": "3.6 mL ทุก 6–8 ชั่วโมง"
+    },
+    {
+     "label": "B",
+     "text": "4.5 mL ทุก 4 ชั่วโมง"
+    },
+    {
+     "label": "C",
+     "text": "9 mL ทุก 6–8 ชั่วโมง ไม่เกิน 36 mL/วัน"
+    },
+    {
+     "label": "D",
+     "text": "18 mL ทุก 6–8 ชั่วโมง"
+    }
+   ],
+   "correct_answer": "C",
+   "difficulty": "easy",
+   "explanation": "Ibuprofen 10 mg/kg × 18 kg = 180 mg; ความเข้มข้น 20 mg/mL → 9 mL ทุก 6–8 ชม. สูงสุด 40 mg/kg/วัน (36 mL)",
+   "detailed_explanation": {
+    "summary": "Ibuprofen 10 mg/kg × 18 kg = 180 mg; ความเข้มข้น 20 mg/mL → 9 mL ทุก 6–8 ชม. สูงสุด 40 mg/kg/วัน (36 mL)",
+    "reason": "โจทย์ถามอะไร: ให้คำนวณปริมาตร ibuprofen suspension ตามน้ำหนักเด็ก พร้อมความถี่และขนาดสูงสุดต่อวัน\n\nหลักการ/กลไกเชิงลึก: Ibuprofen ในเด็ก (analgesic/antipyretic) 5–10 mg/kg/ครั้ง ทุก 6–8 ชั่วโมง สูงสุด 40 mg/kg/วัน (ไม่เกิน 1,200 mg/วันแบบ OTC). ความเข้มข้น 100 mg/5 mL = 20 mg/mL; 18 kg × 10 mg/kg = 180 mg ÷ 20 = 9 mL\n\nทำไมข้อ C ถูก: ข้อ C ได้ขนาดและความถี่ถูก และขนาดสูงสุดต่อวัน 18 × 40 = 720 mg ÷ 20 = 36 mL (ประมาณ 4 ครั้ง × 9 mL) เภสัชกรควรระบุไว้บนฉลาก\n\nการประยุกต์กับผู้ป่วยจริง: แนะนำกินหลังอาหาร/นม ดื่มน้ำเพียงพอ หลีกเลี่ยงในเด็กที่ขาดน้ำ (เสี่ยง AKI) หอบหืดที่แพ้ NSAIDs หรือไข้เลือดออก ใช้ไซริงค์/ช้อนตวงที่มีขีดมิลลิลิตร; สำหรับ JIA ใช้ขนาดต้านอักเสบสูงกว่า 30–40 mg/kg/วัน แบ่ง 3–4 ครั้ง\n\nจุดที่มักสับสนและกับดักข้อสอบ: กับดัก: สับสนความเข้มข้น 100 mg/5 mL กับ 200 mg/5 mL (forte), แปลง mg เป็น mL ผิด, ให้ถี่ทุก 4 ชั่วโมงแบบ paracetamol\n\nสรุปท่องสอบ: Ibuprofen เด็ก 5–10 mg/kg q6–8h, max 40 mg/kg/วัน; 100 mg/5 mL = 20 mg/mL",
+    "choices": [
+     {
+      "label": "A",
+      "text": "3.6 mL ทุก 6–8 ชั่วโมง",
+      "explanation": "✗ ผิด — เป็นการคิดเหมือนความเข้มข้น 50 mg/mL ซึ่งผิด ได้ยาเพียง 72 mg/ครั้ง"
+     },
+     {
+      "label": "B",
+      "text": "4.5 mL ทุก 4 ชั่วโมง",
+      "explanation": "✗ ผิด — คำนวณจากความเข้มข้น 200 mg/5 mL และความถี่ทุก 4 ชั่วโมงถี่เกินกว่าที่แนะนำ"
+     },
+     {
+      "label": "C",
+      "text": "9 mL ทุก 6–8 ชั่วโมง ไม่เกิน 36 mL/วัน",
+      "explanation": "✓ ถูก — 10 × 18 = 180 mg ÷ 20 mg/mL = 9 mL; สูงสุด 40 mg/kg/วัน = 720 mg = 36 mL"
+     },
+     {
+      "label": "D",
+      "text": "18 mL ทุก 6–8 ชั่วโมง",
+      "explanation": "✗ ผิด — เป็นขนาด 20 mg/kg/ครั้ง สูงเกินขนาดต่อครั้ง เสี่ยงพิษต่อไตและทางเดินอาหาร"
+     }
+    ],
+    "key_takeaway": "Ibuprofen เด็ก: 10 mg/kg q6–8h; mL = mg ÷ 20 (สำหรับ 100 mg/5 mL)"
+   }
+  },
+  {
+   "scenario": "ผู้ป่วยชายอายุ 45 ปี ได้รับ tizanidine 4 mg วันละ 3 ครั้ง สำหรับ spasticity หลังบาดเจ็บไขสันหลัง ต่อมามีกรวยไตอักเสบ แพทย์ห้องฉุกเฉินสั่ง ciprofloxacin 500 mg วันละ 2 ครั้ง เภสัชกรควรให้คำแนะนำใด",
+   "choices": [
+    {
+     "label": "A",
+     "text": "ใช้ร่วมกันได้ ciprofloxacin เหนี่ยวนำ CYP1A2 จึงอาจต้องเพิ่มขนาด tizanidine"
+    },
+    {
+     "label": "B",
+     "text": "ห้ามใช้ร่วมกัน เพราะ ciprofloxacin ยับยั้ง CYP1A2 ทำให้ระดับ tizanidine สูงขึ้นมาก เกิดความดันต่ำและง่วงซึมรุนแรง ควรเสนอยาปฏิชีวนะที่ไม่ยับยั้ง CYP1A2"
+    },
+    {
+     "label": "C",
+     "text": "ใช้ร่วมกันได้ โดยลดขนาด tizanidine ลงครึ่งหนึ่งระหว่างได้ ciprofloxacin"
+    },
+    {
+     "label": "D",
+     "text": "ให้กิน ciprofloxacin ห่างจาก tizanidine อย่างน้อย 2 ชั่วโมงเพื่อลดการจับกัน"
+    }
+   ],
+   "correct_answer": "B",
+   "difficulty": "medium",
+   "explanation": "Tizanidine ถูกเมแทบอไลซ์ผ่าน CYP1A2; ciprofloxacin/fluvoxamine ยับยั้งอย่างแรงจนระดับยาเพิ่มหลายเท่า เกิด hypotension, bradycardia, ง่วงซึม จึงห้ามใช้ร่วมกัน",
+   "detailed_explanation": {
+    "summary": "Tizanidine ถูกเมแทบอไลซ์ผ่าน CYP1A2; ciprofloxacin/fluvoxamine ยับยั้งอย่างแรงจนระดับยาเพิ่มหลายเท่า เกิด hypotension, bradycardia, ง่วงซึม จึงห้ามใช้ร่วมกัน",
+    "reason": "โจทย์ถามอะไร: ให้ระบุอันตรกิริยาระหว่างยาคลายกล้ามเนื้อ tizanidine กับ ciprofloxacin และการจัดการที่ถูกต้อง\n\nหลักการ/กลไกเชิงลึก: Tizanidine เป็น central α2-adrenergic agonist มี first-pass metabolism สูงผ่าน CYP1A2 (bioavailability ~40%). ciprofloxacin ทำให้ AUC เพิ่ม ~10 เท่า Cmax ~7 เท่า, fluvoxamine เพิ่ม AUC ~33 เท่า ทำให้ความดันโลหิตต่ำ หัวใจเต้นช้า ง่วงซึม psychomotor impairment\n\nทำไมข้อ B ถูก: ฉลากระบุ contraindication ชัดเจน จึงต้องหลีกเลี่ยงการใช้ร่วม ทางเลือกคือเปลี่ยนยาปฏิชีวนะตามผลเพาะเชื้อ (เช่น ceftriaxone ตามด้วย cephalosporin รูปกิน หรือ co-trimoxazole ถ้าเชื้อไว) หรือถ้าจำเป็นต้องใช้ quinolone ต้องพิจารณาหยุด/เปลี่ยนยาคลายกล้ามเนื้อเป็น baclofen ซึ่งขับทางไตเป็นหลัก\n\nการประยุกต์กับผู้ป่วยจริง: ตัวยับยั้ง CYP1A2 อื่นที่ควรระวัง: oral contraceptives, cimetidine, amiodarone, mexiletine, zileuton, acyclovir; บุหรี่เหนี่ยวนำ CYP1A2 ทำให้ระดับลด การหยุดบุหรี่อาจทำให้ระดับยาเพิ่ม ควรติดตาม LFT ด้วยเพราะ tizanidine ทำให้ transaminase สูงได้\n\nจุดที่มักสับสนและกับดักข้อสอบ: กับดัก: สับสนกับ chelation ของ quinolone; คิดว่าลดขนาดก็พอ; เข้าใจว่า ciprofloxacin เป็น inducer. Levofloxacin/moxifloxacin ยับยั้ง CYP1A2 น้อยกว่ามาก\n\nสรุปท่องสอบ: Tizanidine + ciprofloxacin/fluvoxamine = ห้ามใช้ร่วม (CYP1A2) → hypotension + sedation",
+    "choices": [
+     {
+      "label": "A",
+      "text": "ใช้ร่วมกันได้ ciprofloxacin เหนี่ยวนำ CYP1A2 จึงอาจต้องเพิ่มขนาด tizanidine",
+      "explanation": "✗ ผิด — ciprofloxacin เป็นตัวยับยั้ง CYP1A2 ไม่ใช่ตัวเหนี่ยวนำ"
+     },
+     {
+      "label": "B",
+      "text": "ห้ามใช้ร่วมกัน เพราะ ciprofloxacin ยับยั้ง CYP1A2 ทำให้ระดับ tizanidine สูงขึ้นมาก เกิดความดันต่ำและง่วงซึมรุนแรง ควรเสนอยาปฏิชีวนะที่ไม่ยับยั้ง CYP1A2",
+      "explanation": "✓ ถูก — ฉลาก tizanidine ระบุ contraindication กับ ciprofloxacin และ fluvoxamine ซึ่งเพิ่ม AUC ~10 และ ~33 เท่า"
+     },
+     {
+      "label": "C",
+      "text": "ใช้ร่วมกันได้ โดยลดขนาด tizanidine ลงครึ่งหนึ่งระหว่างได้ ciprofloxacin",
+      "explanation": "✗ ผิด — เป็น contraindication ไม่ใช่ปฏิกิริยาที่จัดการด้วยการลดขนาด เพราะระดับยาเพิ่มขึ้นหลายเท่าและคาดการณ์ไม่ได้"
+     },
+     {
+      "label": "D",
+      "text": "ให้กิน ciprofloxacin ห่างจาก tizanidine อย่างน้อย 2 ชั่วโมงเพื่อลดการจับกัน",
+      "explanation": "✗ ผิด — เป็นกลไก chelation ของ quinolone กับแร่ธาตุ (Ca, Mg, Al, Fe) ไม่ใช่กลไกของคู่นี้ซึ่งเป็น metabolic inhibition"
+     }
+    ],
+    "key_takeaway": "Tizanidine เป็น CYP1A2 substrate: ห้ามคู่กับ ciprofloxacin, fluvoxamine"
+   }
+  },
+  {
+   "scenario": "ผู้ป่วยชายอายุ 74 ปี มีโรคต่อมลูกหมากโตที่ปัสสาวะลำบาก และต้อหินชนิดมุมปิด มาซื้อยาเนื่องจากปวดหลังส่วนล่างเฉียบพลันจากการยกของ มีกล้ามเนื้อหลังเกร็ง ทางเลือกใดควรหลีกเลี่ยงมากที่สุดในผู้ป่วยรายนี้",
+   "choices": [
+    {
+     "label": "A",
+     "text": "Eperisone"
+    },
+    {
+     "label": "B",
+     "text": "Tolperisone"
+    },
+    {
+     "label": "C",
+     "text": "Paracetamol ร่วมกับการประคบร้อนและการเคลื่อนไหวตามทน"
+    },
+    {
+     "label": "D",
+     "text": "Orphenadrine (เช่น สูตรผสม orphenadrine + paracetamol)"
+    }
+   ],
+   "correct_answer": "D",
+   "difficulty": "easy",
+   "explanation": "Orphenadrine มีฤทธิ์ anticholinergic สูง ห้ามใช้ใน angle-closure glaucoma และ BPH ที่มีปัสสาวะคั่ง และอยู่ในรายการ Beers ที่ควรหลีกเลี่ยงในผู้สูงอายุ",
+   "detailed_explanation": {
+    "summary": "Orphenadrine มีฤทธิ์ anticholinergic สูง ห้ามใช้ใน angle-closure glaucoma และ BPH ที่มีปัสสาวะคั่ง และอยู่ในรายการ Beers ที่ควรหลีกเลี่ยงในผู้สูงอายุ",
+    "reason": "โจทย์ถามอะไร: ให้เลือกยาคลายกล้ามเนื้อที่ควรหลีกเลี่ยงในผู้สูงอายุที่มี BPH และต้อหินมุมปิด\n\nหลักการ/กลไกเชิงลึก: Orphenadrine เป็นอนุพันธ์ของ diphenhydramine มีฤทธิ์ anticholinergic และ antihistamine ทำให้ม่านตาขยาย (angle-closure crisis), ปัสสาวะคั่ง, ท้องผูก, สับสน; AGS Beers Criteria จัด skeletal muscle relaxants (carisoprodol, chlorzoxazone, cyclobenzaprine, metaxalone, methocarbamol, orphenadrine) เป็นยาที่ควรหลีกเลี่ยงในผู้สูงอายุ\n\nทำไมข้อ D ถูก: ข้อ D จึงอันตรายที่สุดสำหรับผู้ป่วยรายนี้ ซึ่งยาสูตรผสม orphenadrine + paracetamol หาซื้อได้ง่ายในร้านยาไทย เภสัชกรต้องคัดกรองโรคร่วมก่อนจ่าย\n\nการประยุกต์กับผู้ป่วยจริง: ปวดหลังเฉียบพลันส่วนใหญ่หายเองใน 4–6 สัปดาห์ แนะนำให้เคลื่อนไหวตามทน ประคบร้อน ยาบรรเทาปวดตามความเหมาะสม; ถ้าจำเป็นต้องใช้ยาคลายกล้ามเนื้อในผู้สูงอายุ ให้ระยะสั้น ขนาดต่ำ เลือกตัวที่ไม่มี anticholinergic เช่น eperisone หรือ tolperisone (EMA จำกัดข้อบ่งใช้ tolperisone ไว้ที่ post-stroke spasticity เนื่องจาก hypersensitivity) และเตือนเรื่องง่วงซึม/หกล้ม\n\nจุดที่มักสับสนและกับดักข้อสอบ: กับดัก: คิดว่ายาคลายกล้ามเนื้อทุกตัวมีความเสี่ยงเท่ากัน; ลืมว่า orphenadrine มีโครงสร้างคล้าย antihistamine รุ่นแรก\n\nสรุปท่องสอบ: Orphenadrine = anticholinergic → ห้ามใน glaucoma มุมปิด, BPH/ปัสสาวะคั่ง, myasthenia gravis",
+    "choices": [
+     {
+      "label": "A",
+      "text": "Eperisone",
+      "explanation": "✗ ผิด — เป็นยาคลายกล้ามเนื้อที่ออกฤทธิ์ที่ไขสันหลังและขยายหลอดเลือด ไม่มีฤทธิ์ anticholinergic เด่น ง่วงน้อย จึงใช้ได้ด้วยความระวัง"
+     },
+     {
+      "label": "B",
+      "text": "Tolperisone",
+      "explanation": "✗ ผิด — เป็น centrally acting muscle relaxant แบบ sodium channel blocker ไม่มีฤทธิ์ anticholinergic ไม่ใช่ข้อห้ามในต่อมลูกหมากโต/ต้อหิน"
+     },
+     {
+      "label": "C",
+      "text": "Paracetamol ร่วมกับการประคบร้อนและการเคลื่อนไหวตามทน",
+      "explanation": "✗ ผิด — เป็นทางเลือกที่ปลอดภัยสำหรับผู้สูงอายุรายนี้ ไม่ทำให้อาการทางปัสสาวะหรือความดันลูกตาแย่ลง"
+     },
+     {
+      "label": "D",
+      "text": "Orphenadrine (เช่น สูตรผสม orphenadrine + paracetamol)",
+      "explanation": "✓ ถูก — orphenadrine มีฤทธิ์ anticholinergic ชัดเจน ทำให้ปัสสาวะคั่งและกระตุ้นต้อหินมุมปิดเฉียบพลัน และอยู่ใน Beers criteria"
+     }
+    ],
+    "key_takeaway": "ผู้สูงอายุ + BPH/glaucoma: เลี่ยง orphenadrine (anticholinergic)"
+   }
+  },
+  {
+   "scenario": "ผู้ป่วยหญิงอายุ 52 ปี ปวดหลังส่วนล่างเรื้อรังมา 6 เดือน ไม่มีอาการร้าวลงขา ไม่มี red flag ได้ทำกายภาพบำบัดและออกกำลังกายสม่ำเสมอ ใช้ naproxen แล้วอาการดีขึ้นเพียงเล็กน้อยและเริ่มมีอาการ dyspepsia ประเมินพบภาวะซึมเศร้าระดับเล็กน้อยร่วมด้วย ยาใดเหมาะสมที่สุดเป็นลำดับถัดไป",
+   "choices": [
+    {
+     "label": "A",
+     "text": "Duloxetine 30 mg/วัน × 1 สัปดาห์ แล้วเพิ่มเป็น 60 mg/วัน"
+    },
+    {
+     "label": "B",
+     "text": "Orphenadrine ร่วมกับ paracetamol ต่อเนื่องระยะยาว"
+    },
+    {
+     "label": "C",
+     "text": "Prednisolone 40 mg/วัน × 5 วัน"
+    },
+    {
+     "label": "D",
+     "text": "Pregabalin 150 mg วันละ 2 ครั้ง"
+    }
+   ],
+   "correct_answer": "A",
+   "difficulty": "medium",
+   "explanation": "Chronic LBP ที่ตอบสนอง NSAIDs ไม่เพียงพอ แนวทาง ACP แนะนำ tramadol หรือ duloxetine เป็นลำดับสอง ซึ่ง duloxetine เหมาะกับผู้ป่วยที่มีภาวะซึมเศร้าร่วม",
+   "detailed_explanation": {
+    "summary": "Chronic LBP ที่ตอบสนอง NSAIDs ไม่เพียงพอ แนวทาง ACP แนะนำ tramadol หรือ duloxetine เป็นลำดับสอง ซึ่ง duloxetine เหมาะกับผู้ป่วยที่มีภาวะซึมเศร้าร่วม",
+    "reason": "โจทย์ถามอะไร: ให้เลือกยาลำดับถัดไปสำหรับ chronic non-radicular LBP หลังจาก non-pharmacologic และ NSAIDs ให้ผลไม่เพียงพอ\n\nหลักการ/กลไกเชิงลึก: ACP 2017: chronic LBP เริ่มด้วย non-drug (exercise, multidisciplinary rehab, acupuncture, mindfulness, CBT, spinal manipulation); ถ้าต้องใช้ยา NSAIDs เป็นลำดับแรก tramadol หรือ duloxetine เป็นลำดับสอง และ opioids เมื่อทางเลือกอื่นล้มเหลวโดยชั่งประโยชน์-ความเสี่ยง. Duloxetine (SNRI) เพิ่ม serotonin/norepinephrine ใน descending inhibitory pain pathway\n\nทำไมข้อ A ถูก: ผู้ป่วยรายนี้ NSAID ไม่พอและมี dyspepsia ขณะที่มีภาวะซึมเศร้าร่วม duloxetine จึงตอบโจทย์ทั้งปวดและอารมณ์ เริ่ม 30 mg/วันเพื่อลดคลื่นไส้แล้วเพิ่มเป็น 60 mg/วัน (ขนาดสูงกว่า 60 mg ไม่เพิ่มประโยชน์)\n\nการประยุกต์กับผู้ป่วยจริง: ข้อควรระวัง duloxetine: หลีกเลี่ยงเมื่อ CrCl <30, โรคตับหรือดื่มสุรามาก, ระวังร่วมกับ tramadol/triptan/MAOI (serotonin syndrome) และ CYP1A2 inhibitor เช่น fluvoxamine, ciprofloxacin; ห้ามหยุดยาทันที (discontinuation syndrome) ติดตามความดันโลหิต\n\nจุดที่มักสับสนและกับดักข้อสอบ: กับดัก: นำยาคลายกล้ามเนื้อหรือสเตียรอยด์ที่ใช้ใน acute LBP มาใช้ใน chronic LBP; เชื่อว่า gabapentinoids ช่วยปวดหลังทุกชนิด\n\nสรุปท่องสอบ: Chronic LBP: non-drug → NSAIDs → tramadol/duloxetine → opioids (สุดท้าย); ไม่ใช้ steroid, ไม่ใช้ muscle relaxant ระยะยาว",
+    "choices": [
+     {
+      "label": "A",
+      "text": "Duloxetine 30 mg/วัน × 1 สัปดาห์ แล้วเพิ่มเป็น 60 mg/วัน",
+      "explanation": "✓ ถูก — ACP 2017 จัด duloxetine เป็นทางเลือกลำดับสองสำหรับ chronic LBP เมื่อ NSAIDs ไม่ได้ผล และช่วยภาวะซึมเศร้าร่วมด้วย"
+     },
+     {
+      "label": "B",
+      "text": "Orphenadrine ร่วมกับ paracetamol ต่อเนื่องระยะยาว",
+      "explanation": "✗ ผิด — หลักฐานของยาคลายกล้ามเนื้อมีเฉพาะ acute LBP ระยะสั้น ไม่แนะนำการใช้ระยะยาวใน chronic LBP และมีผลง่วง/anticholinergic"
+     },
+     {
+      "label": "C",
+      "text": "Prednisolone 40 mg/วัน × 5 วัน",
+      "explanation": "✗ ผิด — systemic corticosteroids ไม่มีประสิทธิภาพใน LBP ทั้งแบบเฉียบพลันและเรื้อรัง ไม่แนะนำ"
+     },
+     {
+      "label": "D",
+      "text": "Pregabalin 150 mg วันละ 2 ครั้ง",
+      "explanation": "✗ ผิด — ไม่มีหลักฐานว่าได้ประโยชน์ใน chronic LBP ที่ไม่มี radiculopathy และแม้ใน sciatica ก็ไม่ดีกว่ายาหลอก (PRECISE trial) แต่ได้ ADR มากขึ้น"
+     }
+    ],
+    "key_takeaway": "Chronic LBP หลัง NSAID ล้มเหลว: duloxetine หรือ tramadol"
+   }
+  },
+  {
+   "scenario": "ผู้ป่วยหญิงอายุ 40 ปี ได้รับการวินิจฉัย fibromyalgia ปวดกล้ามเนื้อทั่วตัว นอนไม่หลับ ตื่นมาไม่สดชื่น ไม่มีโรคหัวใจหรือต้อหิน ได้รับคำแนะนำเรื่องการออกกำลังกายแบบแอโรบิกแล้ว แพทย์ต้องการเริ่ม amitriptyline ข้อใดเป็นสูตรที่เหมาะสมที่สุด",
+   "choices": [
+    {
+     "label": "A",
+     "text": "Amitriptyline 75 mg วันละ 3 ครั้ง"
+    },
+    {
+     "label": "B",
+     "text": "Amitriptyline 10 mg ก่อนนอน แล้วค่อยๆ ปรับเพิ่มเป็น 25–50 mg ก่อนนอนตามการตอบสนอง"
+    },
+    {
+     "label": "C",
+     "text": "Amitriptyline 25 mg ตอนเช้าหลังอาหาร"
+    },
+    {
+     "label": "D",
+     "text": "Amitriptyline 150 mg/วัน เพราะต้องใช้ขนาดต้านซึมเศร้าจึงจะลดปวดได้"
+    }
+   ],
+   "correct_answer": "B",
+   "difficulty": "medium",
+   "explanation": "Fibromyalgia ใช้ amitriptyline ขนาดต่ำ เริ่ม 5–10 mg ก่อนนอน แล้ว titrate เป็น 25–50 mg ก่อนนอน เพื่อช่วยทั้งปวดและการนอน",
+   "detailed_explanation": {
+    "summary": "Fibromyalgia ใช้ amitriptyline ขนาดต่ำ เริ่ม 5–10 mg ก่อนนอน แล้ว titrate เป็น 25–50 mg ก่อนนอน เพื่อช่วยทั้งปวดและการนอน",
+    "reason": "โจทย์ถามอะไร: ให้เลือกขนาดและเวลาให้ amitriptyline ที่เหมาะสมใน fibromyalgia\n\nหลักการ/กลไกเชิงลึก: Amitriptyline (TCA) ยับยั้ง reuptake ของ serotonin/norepinephrine เสริม descending inhibition และเป็น H1/muscarinic/α1 antagonist จึงทำให้ง่วงช่วยการนอน; ฤทธิ์ลดปวดเกิดที่ขนาดต่ำ (10–50 mg) ต่างจากขนาดต้านซึมเศร้า (100–300 mg)\n\nทำไมข้อ B ถูก: EULAR 2016 ให้ non-pharmacologic (โดยเฉพาะ exercise) เป็นหลัก และแนะนำ amitriptyline ขนาดต่ำ, pregabalin หรือ duloxetine ตามอาการเด่น ผู้ที่นอนไม่หลับเด่นเหมาะกับ amitriptyline ขนาดต่ำก่อนนอน (หรือ pregabalin) ส่วนผู้ที่มีภาวะซึมเศร้าเด่นเหมาะกับ duloxetine\n\nการประยุกต์กับผู้ป่วยจริง: เริ่ม 10 mg ก่อนนอน 1–2 ชั่วโมง เพิ่มทุก 1–2 สัปดาห์ แจ้งผู้ป่วยว่าอาจง่วงตอนเช้า ปากแห้ง ท้องผูก น้ำหนักเพิ่ม ประเมินผลหลัง 4–6 สัปดาห์; ทางเลือก pregabalin ใน fibromyalgia ใช้ 300–450 mg/วัน แบ่งให้ (เริ่ม 75 mg bid) และต้องปรับขนาดเมื่อ CrCl <60\n\nจุดที่มักสับสนและกับดักข้อสอบ: กับดัก: ใช้ขนาดต้านซึมเศร้า; ให้ตอนเช้า; ลืมคัดกรอง QT prolongation, ต้อหินมุมปิด, BPH, ผู้สูงอายุ (Beers)\n\nสรุปท่องสอบ: Fibromyalgia: exercise เป็นหลัก; amitriptyline 10→25–50 mg hs; pregabalin 300–450 mg/วัน; duloxetine 60 mg/วัน",
+    "choices": [
+     {
+      "label": "A",
+      "text": "Amitriptyline 75 mg วันละ 3 ครั้ง",
+      "explanation": "✗ ผิด — เป็นขนาดสูงในช่วงรักษาซึมเศร้า ทำให้ anticholinergic, ง่วง, orthostatic hypotension และพิษต่อหัวใจโดยไม่จำเป็น"
+     },
+     {
+      "label": "B",
+      "text": "Amitriptyline 10 mg ก่อนนอน แล้วค่อยๆ ปรับเพิ่มเป็น 25–50 mg ก่อนนอนตามการตอบสนอง",
+      "explanation": "✓ ถูก — ขนาดต่ำก่อนนอนช่วยเรื่องการนอนและปวด ตามหลักฐานใน fibromyalgia และลด ADR"
+     },
+     {
+      "label": "C",
+      "text": "Amitriptyline 25 mg ตอนเช้าหลังอาหาร",
+      "explanation": "✗ ผิด — ยาทำให้ง่วงมาก ควรให้ก่อนนอนเพื่อช่วยเรื่องการนอนและลดง่วงช่วงกลางวัน"
+     },
+     {
+      "label": "D",
+      "text": "Amitriptyline 150 mg/วัน เพราะต้องใช้ขนาดต้านซึมเศร้าจึงจะลดปวดได้",
+      "explanation": "✗ ผิด — ฤทธิ์ระงับปวดของ TCA เกิดที่ขนาดต่ำกว่าขนาดต้านซึมเศร้า และขนาดสูงเพิ่มความเสี่ยงโดยไม่เพิ่มประโยชน์ใน fibromyalgia"
+     }
+    ],
+    "key_takeaway": "Amitriptyline ใน fibromyalgia: low dose, hs, titrate ช้า"
+   }
+  },
+  {
+   "scenario": "ผู้ป่วยชายอายุ 68 ปี ปวดกระดูกเชิงกรานและต้นขาซ้าย serum ALP 450 U/L (ค่าปกติ <120) ตรวจ bone scintigraphy และ X-ray เข้าได้กับ Paget's disease of bone หลายตำแหน่ง Ca, 25(OH)D ปกติ CrCl 70 mL/min การรักษาด้วยยาใดเหมาะสมที่สุดเป็นทางเลือกแรก",
+   "choices": [
+    {
+     "label": "A",
+     "text": "Zoledronic acid 5 mg IV ครั้งเดียว ร่วมกับ calcium และ vitamin D"
+    },
+    {
+     "label": "B",
+     "text": "Alendronate 70 mg สัปดาห์ละครั้ง ต่อเนื่อง 5 ปี"
+    },
+    {
+     "label": "C",
+     "text": "Calcitonin 100 IU SC ทุกวันเป็นยาหลักระยะยาว"
+    },
+    {
+     "label": "D",
+     "text": "Denosumab 60 mg SC ทุก 6 เดือน"
+    }
+   ],
+   "correct_answer": "A",
+   "difficulty": "medium",
+   "explanation": "Paget's disease of bone ที่มีอาการ: zoledronic acid 5 mg IV ครั้งเดียวเป็นการรักษาที่มีประสิทธิภาพสูงสุด ติดตามด้วย ALP",
+   "detailed_explanation": {
+    "summary": "Paget's disease of bone ที่มีอาการ: zoledronic acid 5 mg IV ครั้งเดียวเป็นการรักษาที่มีประสิทธิภาพสูงสุด ติดตามด้วย ALP",
+    "reason": "โจทย์ถามอะไร: ให้เลือกยาลำดับแรกสำหรับ Paget's disease of bone ที่มีอาการปวดและ ALP สูง\n\nหลักการ/กลไกเชิงลึก: Paget's disease เกิดจาก osteoclast ทำงานมากผิดปกติเฉพาะที่ (ขนาดใหญ่ หลายนิวเคลียส) ตามด้วย osteoblast สร้างกระดูกแบบ disorganized (woven bone) ทำให้กระดูกโต ผิดรูป ปวด หักง่าย ALP สะท้อน bone turnover. Bisphosphonate จับ hydroxyapatite และยับยั้ง farnesyl pyrophosphate synthase ใน osteoclast\n\nทำไมข้อ A ถูก: Endocrine Society 2014 แนะนำ zoledronic acid 5 mg IV infusion ≥15 นาที ครั้งเดียว เป็นทางเลือกแรกในผู้ที่ไม่มีข้อห้าม (CrCl ≥35) เพราะ normalize ALP ได้มากและ remission ยาวหลายปี; ทางเลือกอื่น risedronate 30 mg/วัน × 2 เดือน, alendronate 40 mg/วัน × 6 เดือน\n\nการประยุกต์กับผู้ป่วยจริง: ก่อนให้ต้องแก้ vitamin D deficiency และให้ calcium (เช่น 1,000–1,500 mg/วัน) + vitamin D ช่วง 10–14 วันหลังให้ยาเพื่อป้องกัน hypocalcemia เนื่องจากกระดูกดึงแคลเซียมไปสร้างมาก แจ้ง acute phase reaction (ไข้ ปวดเมื่อย) ใน 1–3 วัน; ติดตาม ALP ที่ 3–6 เดือนแล้วเป็นระยะ ให้ซ้ำเมื่อ ALP กลับขึ้น\n\nจุดที่มักสับสนและกับดักข้อสอบ: กับดัก: ใช้ขนาด osteoporosis กับ Paget; เลือก calcitonin เพราะช่วยปวด; ลืมเรื่อง hypocalcemia หลังให้ยาซึ่งพบบ่อยกว่าใน Paget มากกว่า osteoporosis\n\nสรุปท่องสอบ: Paget: zoledronic acid 5 mg IV × 1 ครั้ง; alendronate 40 mg/d × 6 mo; risedronate 30 mg/d × 2 mo; ติดตาม ALP",
+    "choices": [
+     {
+      "label": "A",
+      "text": "Zoledronic acid 5 mg IV ครั้งเดียว ร่วมกับ calcium และ vitamin D",
+      "explanation": "✓ ถูก — Endocrine Society แนะนำ zoledronic acid 5 mg IV single dose เป็นทางเลือกแรก ให้ remission ยาวนานที่สุด"
+     },
+     {
+      "label": "B",
+      "text": "Alendronate 70 mg สัปดาห์ละครั้ง ต่อเนื่อง 5 ปี",
+      "explanation": "✗ ผิด — เป็นขนาด osteoporosis; ขนาดสำหรับ Paget คือ 40 mg/วัน × 6 เดือน และด้อยกว่า zoledronic acid"
+     },
+     {
+      "label": "C",
+      "text": "Calcitonin 100 IU SC ทุกวันเป็นยาหลักระยะยาว",
+      "explanation": "✗ ผิด — calcitonin ด้อยประสิทธิภาพกว่า bisphosphonate และการใช้ระยะยาวสัมพันธ์กับความเสี่ยงมะเร็ง ใช้เฉพาะเมื่อใช้ bisphosphonate ไม่ได้"
+     },
+     {
+      "label": "D",
+      "text": "Denosumab 60 mg SC ทุก 6 เดือน",
+      "explanation": "✗ ผิด — ไม่ได้รับข้อบ่งใช้สำหรับ Paget's disease และหลักฐานไม่เพียงพอ"
+     }
+    ],
+    "key_takeaway": "Paget's disease: zoledronic acid 5 mg IV ครั้งเดียว + Ca/D, ติดตาม ALP"
+   }
+  },
+  {
+   "scenario": "ผู้ป่วยหญิงอายุ 45 ปี แต่งกายมิดชิดและแทบไม่ได้รับแสงแดด มีอาการปวดกระดูกทั่วไป กล้ามเนื้อต้นขาอ่อนแรง เดินแบบ waddling gait ผลตรวจ: Ca 8.1 mg/dL, phosphate 2.2 mg/dL (ต่ำ), ALP 280 U/L (สูง), PTH 125 pg/mL (สูง), 25(OH)D 6 ng/mL, BMD T-score −2.7 การวินิจฉัยและการรักษาใดเหมาะสมที่สุด",
+   "choices": [
+    {
+     "label": "A",
+     "text": "Osteoporosis เพราะ T-score ≤ −2.5; เริ่ม alendronate 70 mg สัปดาห์ละครั้งทันที"
+    },
+    {
+     "label": "B",
+     "text": "Osteomalacia; ให้ calcitriol 0.25 mcg/วัน เพียงอย่างเดียว"
+    },
+    {
+     "label": "C",
+     "text": "Osteomalacia จากการขาด vitamin D; ให้ vitamin D ขนาดรักษา (เช่น ergocalciferol 40,000–50,000 IU/สัปดาห์ × 8–12 สัปดาห์) ร่วมกับ calcium แล้วจึงประเมิน BMD ใหม่"
+    },
+    {
+     "label": "D",
+     "text": "Hypophosphatemic rickets/osteomalacia; ให้ phosphate supplement เพียงอย่างเดียว"
+    }
+   ],
+   "correct_answer": "C",
+   "difficulty": "hard",
+   "explanation": "Ca ต่ำ-ปกติ, phosphate ต่ำ, ALP และ PTH สูง, 25(OH)D <10 ng/mL = osteomalacia จากขาด vitamin D รักษาด้วย vitamin D ขนาดรักษาร่วมกับ calcium ก่อนพิจารณายา antiresorptive",
+   "detailed_explanation": {
+    "summary": "Ca ต่ำ-ปกติ, phosphate ต่ำ, ALP และ PTH สูง, 25(OH)D <10 ng/mL = osteomalacia จากขาด vitamin D รักษาด้วย vitamin D ขนาดรักษาร่วมกับ calcium ก่อนพิจารณายา antiresorptive",
+    "reason": "โจทย์ถามอะไร: ให้แยก osteomalacia ออกจาก osteoporosis จากผลทางห้องปฏิบัติการ แล้วเลือกการรักษาที่ถูกต้อง\n\nหลักการ/กลไกเชิงลึก: Osteomalacia คือความผิดปกติของ mineralization ของ osteoid ในผู้ใหญ่ สาเหตุพบบ่อยคือขาด vitamin D (แสงแดดน้อย, malabsorption, ยากันชักที่เหนี่ยวนำเอนไซม์ เช่น phenytoin, carbamazepine) ทำให้ดูดซึม Ca ลดลง → secondary hyperparathyroidism → phosphaturia (phosphate ต่ำ) และ ALP สูง; osteoporosis จะมีผลเลือดปกติ. DXA วัดได้แค่ความหนาแน่นแร่ธาตุ จึงให้ T-score ต่ำในทั้งสองภาวะ\n\nทำไมข้อ C ถูก: ข้อ C ถูกเพราะแก้สาเหตุ: vitamin D2/D3 ขนาดรักษา (Endocrine Society: 50,000 IU/สัปดาห์ หรือ 6,000 IU/วัน × 8 สัปดาห์; ในไทยใช้ ergocalciferol 20,000 IU 2–3 แคปซูล/สัปดาห์) ร่วมกับ elemental Ca 1,000–1,200 mg/วัน แล้วให้ขนาดบำรุง 1,000–2,000 IU/วัน\n\nการประยุกต์กับผู้ป่วยจริง: ติดตาม Ca, phosphate, ALP, PTH และ 25(OH)D หลัง ~3 เดือน (ALP อาจสูงขึ้นช่วงแรกจากการซ่อมแซม) ประเมิน BMD ใหม่หลังแก้ไข หากยังต่ำจึงพิจารณา bisphosphonate; แนะนำรับแสงแดดและอาหารที่มีแคลเซียม\n\nจุดที่มักสับสนและกับดักข้อสอบ: กับดัก: ใช้ T-score อย่างเดียววินิจฉัย osteoporosis; ให้ bisphosphonate/denosumab ขณะขาด vitamin D (เสี่ยง hypocalcemia รุนแรง); ใช้ calcitriol แทนการเติม 25(OH)D ใน nutritional deficiency\n\nสรุปท่องสอบ: Osteomalacia: ↓/N Ca, ↓PO4, ↑ALP, ↑PTH, ↓25(OH)D → vitamin D ขนาดรักษา + Ca; osteoporosis: labs ปกติ",
+    "choices": [
+     {
+      "label": "A",
+      "text": "Osteoporosis เพราะ T-score ≤ −2.5; เริ่ม alendronate 70 mg สัปดาห์ละครั้งทันที",
+      "explanation": "✗ ผิด — ผลเลือดเข้าได้กับ osteomalacia ซึ่ง T-score ต่ำจากการ mineralize ไม่ได้ การให้ bisphosphonate ก่อนแก้ vitamin D อาจทำให้ hypocalcemia และไม่แก้สาเหตุ"
+     },
+     {
+      "label": "B",
+      "text": "Osteomalacia; ให้ calcitriol 0.25 mcg/วัน เพียงอย่างเดียว",
+      "explanation": "✗ ผิด — calcitriol ใช้ใน CKD/hypoparathyroidism หรือ vitamin D–resistant ไม่ใช่การรักษาหลักของ nutritional deficiency และไม่เติมคลังของ 25(OH)D"
+     },
+     {
+      "label": "C",
+      "text": "Osteomalacia จากการขาด vitamin D; ให้ vitamin D ขนาดรักษา (เช่น ergocalciferol 40,000–50,000 IU/สัปดาห์ × 8–12 สัปดาห์) ร่วมกับ calcium แล้วจึงประเมิน BMD ใหม่",
+      "explanation": "✓ ถูก — ตรงตามพยาธิสภาพ: แก้การขาด vitamin D และแคลเซียมก่อน BMD มักดีขึ้นมากเมื่อ mineralization กลับมา"
+     },
+     {
+      "label": "D",
+      "text": "Hypophosphatemic rickets/osteomalacia; ให้ phosphate supplement เพียงอย่างเดียว",
+      "explanation": "✗ ผิด — ภาวะ phosphate ต่ำในรายนี้เป็นผลจาก secondary hyperparathyroidism จากการขาด vitamin D ไม่ใช่ FGF23-mediated; การให้ phosphate อย่างเดียวยิ่งกระตุ้น PTH"
+     }
+    ],
+    "key_takeaway": "T-score ต่ำ + ALP/PTH สูง + PO4 ต่ำ = คิดถึง osteomalacia: เติม vitamin D ก่อน"
+   }
+  }
+ ]
+}

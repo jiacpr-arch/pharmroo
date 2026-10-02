@@ -1,0 +1,1025 @@
+{
+  "exam_day": 1,
+  "questions": [
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 78 ปี น้ำหนัก 50 kg เป็น postmenopausal osteoporosis (T-score lumbar spine −3.1) เคยมี vertebral fracture SCr 1.4 mg/dL, Ca 9.2 mg/dL, 25(OH)D 34 ng/mL แพทย์ต้องการเริ่มยาต้านการสลายกระดูก ข้อใดเหมาะสมที่สุด (คำนวณ CrCl ด้วย Cockcroft-Gault)",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Alendronate 70 mg รับประทานสัปดาห์ละครั้ง"
+        },
+        {
+          "label": "B",
+          "text": "Zoledronic acid 2.5 mg IV ปีละครั้ง (ลดขนาดครึ่งหนึ่งตามการทำงานของไต)"
+        },
+        {
+          "label": "C",
+          "text": "Denosumab 60 mg SC ทุก 6 เดือน ร่วมกับ calcium และ vitamin D"
+        },
+        {
+          "label": "D",
+          "text": "Zoledronic acid 5 mg IV drip ใน 15 นาที ร่วมกับให้สารน้ำก่อนให้ยา"
+        }
+      ],
+      "correct_answer": "C",
+      "difficulty": "hard",
+      "explanation": "CrCl ≈ 26 mL/min ต่ำกว่าเกณฑ์ของ bisphosphonate ทั้งรูปแบบรับประทาน (alendronate <35) และ zoledronic acid (<35) จึงควรเลือก denosumab ซึ่งไม่ขับออกทางไต",
+      "detailed_explanation": {
+        "summary": "CrCl ≈ 26 mL/min ต่ำกว่าเกณฑ์ของ bisphosphonate ทั้งรูปแบบรับประทาน (alendronate <35) และ zoledronic acid (<35) จึงควรเลือก denosumab ซึ่งไม่ขับออกทางไต",
+        "reason": "โจทย์ถามอะไร: ให้คำนวณ CrCl แล้วเลือกยารักษากระดูกพรุนที่ใช้ได้ในระดับการทำงานของไตนั้น\n\nหลักการ/กลไกเชิงลึก: Cockcroft-Gault (หญิง): CrCl = [(140 − อายุ) × น้ำหนัก × 0.85] / (72 × SCr) = [(140 − 78) × 50 × 0.85] / (72 × 1.4) = 2,635 / 100.8 ≈ 26.1 mL/min. Bisphosphonate ขับออกทางไตในรูปเดิม ฉลากยาไม่แนะนำ alendronate เมื่อ CrCl <35, risedronate/ibandronate เมื่อ <30 และห้ามใช้ zoledronic acid 5 mg (Aclasta) เมื่อ CrCl <35 mL/min เพราะเสี่ยง acute kidney injury\n\nทำไมข้อ C ถูก: Denosumab เป็น monoclonal antibody ต่อ RANKL ถูกกำจัดผ่าน reticuloendothelial system ไม่ต้องปรับขนาดตามไต จึงใช้ได้ใน CKD แต่ต้องดูแลระดับ Ca และ vitamin D ให้เพียงพอเพราะเสี่ยง hypocalcemia\n\nการประยุกต์กับผู้ป่วยจริง: ผู้ป่วยรายนี้ 25(OH)D และ Ca ปกติแล้ว จึงเริ่ม denosumab ได้ ติดตาม Ca ราว 2 สัปดาห์หลังฉีดโดยเฉพาะเมื่อ CrCl <30 และต้องฉีดตรงเวลาทุก 6 เดือน\n\nจุดที่มักสับสนและกับดักข้อสอบ: Zoledronic acid ไม่มีการลดขนาดตามไตสำหรับข้อบ่งใช้กระดูกพรุน (การปรับขนาดมีใน oncology 4 mg เท่านั้น) การยืดเวลา infusion หรือให้สารน้ำช่วยลดความเสี่ยงต่อไตในผู้ที่ CrCl ≥35 แต่ไม่ได้ทำให้ใช้ได้เมื่อ CrCl <35\n\nสรุปท่องสอบ: BP ตัดที่ CrCl <35 (alendronate, zoledronic acid) / <30 (risedronate, ibandronate) → ไตไม่ดีเลือก denosumab",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Alendronate 70 mg รับประทานสัปดาห์ละครั้ง",
+            "explanation": "✗ ผิด — Alendronate ไม่แนะนำเมื่อ CrCl <35 mL/min ผู้ป่วยมี CrCl ราว 26"
+          },
+          {
+            "label": "B",
+            "text": "Zoledronic acid 2.5 mg IV ปีละครั้ง (ลดขนาดครึ่งหนึ่งตามการทำงานของไต)",
+            "explanation": "✗ ผิด — ไม่มีการลดขนาด zoledronic acid สำหรับโรคกระดูกพรุน เมื่อ CrCl <35 ห้ามใช้"
+          },
+          {
+            "label": "C",
+            "text": "Denosumab 60 mg SC ทุก 6 เดือน ร่วมกับ calcium และ vitamin D",
+            "explanation": "✓ ถูก — Denosumab ไม่ขับออกทางไต ใช้ได้ใน CKD เมื่อ Ca และ vitamin D เพียงพอ"
+          },
+          {
+            "label": "D",
+            "text": "Zoledronic acid 5 mg IV drip ใน 15 นาที ร่วมกับให้สารน้ำก่อนให้ยา",
+            "explanation": "✗ ผิด — การให้สารน้ำหรือยืดเวลา infusion ไม่ทำให้ใช้ได้เมื่อ CrCl <35 mL/min"
+          }
+        ],
+        "key_takeaway": "CrCl <35 → งด alendronate/zoledronic acid → พิจารณา denosumab"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 66 ปี ได้รับ zoledronic acid 5 mg IV เป็นครั้งแรกเมื่อวาน วันนี้มีไข้ 38.2 °C ปวดเมื่อยกล้ามเนื้อและข้อ อ่อนเพลียคล้ายเป็นไข้หวัด ไม่มีผื่น ไม่มีหายใจลำบาก ข้อใดเป็นการประเมินและจัดการที่เหมาะสมที่สุด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "เป็น acute-phase reaction ให้ paracetamol บรรเทาอาการ อาการมักหายใน 3 วัน และสามารถให้ยาครั้งถัดไปได้"
+        },
+        {
+          "label": "B",
+          "text": "เป็นปฏิกิริยาแพ้ยาชนิด anaphylaxis ต้องหยุด bisphosphonate ทุกชนิดตลอดชีวิต"
+        },
+        {
+          "label": "C",
+          "text": "เป็นอาการเริ่มต้นของ osteonecrosis of the jaw ควรส่งพบทันตแพทย์ด่วน"
+        },
+        {
+          "label": "D",
+          "text": "เป็นภาวะ hypocalcemia รุนแรง ต้องให้ calcium gluconate IV ทันที"
+        }
+      ],
+      "correct_answer": "A",
+      "difficulty": "medium",
+      "explanation": "ไข้ ปวดเมื่อยคล้ายไข้หวัดภายใน 1–3 วันหลังให้ zoledronic acid ครั้งแรกคือ acute-phase reaction จัดการด้วย paracetamol/NSAID ไม่ใช่ข้อห้ามในการให้ยาครั้งต่อไป",
+      "detailed_explanation": {
+        "summary": "ไข้ ปวดเมื่อยคล้ายไข้หวัดภายใน 1–3 วันหลังให้ zoledronic acid ครั้งแรกคือ acute-phase reaction จัดการด้วย paracetamol/NSAID ไม่ใช่ข้อห้ามในการให้ยาครั้งต่อไป",
+        "reason": "โจทย์ถามอะไร: ให้แยกแยะอาการไม่พึงประสงค์ที่เกิดหลังให้ zoledronic acid ครั้งแรก และเลือกการจัดการที่ถูกต้อง\n\nหลักการ/กลไกเชิงลึก: Nitrogen-containing bisphosphonate ยับยั้ง farnesyl pyrophosphate synthase ทำให้ isopentenyl pyrophosphate สะสม ซึ่งไปกระตุ้น γδ T cells หลั่ง cytokine (TNF-α, IL-6) เกิดไข้ ปวดกล้ามเนื้อ ปวดข้อ ปวดศีรษะ คล้ายไข้หวัด พบได้ราว 1 ใน 3 หลังให้ IV ครั้งแรก มักเกิดภายใน 3 วันและหายเองใน 1–3 วัน ครั้งถัดไปพบน้อยลงมาก\n\nทำไมข้อ A ถูก: อาการเข้าได้กับ acute-phase reaction ไม่มีลักษณะแพ้ยาแบบ IgE (ลมพิษ หลอดลมตีบ ความดันตก) การรักษาเป็นแบบประคับประคองด้วย paracetamol หรือ NSAID และให้ยาครั้งต่อไปได้ตามปกติ\n\nการประยุกต์กับผู้ป่วยจริง: เภสัชกรควรแจ้งผู้ป่วยล่วงหน้า อาจให้ paracetamol ป้องกันหลังให้ยา ดื่มน้ำให้เพียงพอ และยืนยันว่าระดับ vitamin D/Ca ปกติก่อนให้ยาเพื่อลดความเสี่ยง hypocalcemia\n\nจุดที่มักสับสนและกับดักข้อสอบ: Hypocalcemia หลัง zoledronic acid มักพบในผู้ที่ขาด vitamin D และมีอาการชาปลายมือ กล้ามเนื้อกระตุก ไม่ใช่ไข้ ส่วน ONJ เกิดหลังใช้ยานานและมีแผลกระดูกขากรรไกรโผล่ ไม่ใช่ภายใน 1 วัน\n\nสรุปท่องสอบ: Zoledronic acid ครั้งแรก + ไข้/ปวดเมื่อยภายใน 3 วัน = acute-phase reaction → paracetamol, ให้ยาต่อได้",
+        "choices": [
+          {
+            "label": "A",
+            "text": "เป็น acute-phase reaction ให้ paracetamol บรรเทาอาการ อาการมักหายใน 3 วัน และสามารถให้ยาครั้งถัดไปได้",
+            "explanation": "✓ ถูก — อาการและช่วงเวลาตรงกับ acute-phase reaction ใช้ยาบรรเทาอาการและให้ยาครั้งต่อไปได้"
+          },
+          {
+            "label": "B",
+            "text": "เป็นปฏิกิริยาแพ้ยาชนิด anaphylaxis ต้องหยุด bisphosphonate ทุกชนิดตลอดชีวิต",
+            "explanation": "✗ ผิด — ไม่มีลักษณะ anaphylaxis (ผื่น หายใจลำบาก ความดันต่ำ) จึงไม่ต้องหยุดยาถาวร"
+          },
+          {
+            "label": "C",
+            "text": "เป็นอาการเริ่มต้นของ osteonecrosis of the jaw ควรส่งพบทันตแพทย์ด่วน",
+            "explanation": "✗ ผิด — ONJ เป็นภาวะที่พบน้อยและเกิดหลังใช้ยานาน มีกระดูกขากรรไกรโผล่ ไม่ใช่ไข้หลังให้ยา 1 วัน"
+          },
+          {
+            "label": "D",
+            "text": "เป็นภาวะ hypocalcemia รุนแรง ต้องให้ calcium gluconate IV ทันที",
+            "explanation": "✗ ผิด — Hypocalcemia มีอาการชา เกร็ง tetany ไม่ใช่ไข้และปวดเมื่อยคล้ายไข้หวัด"
+          }
+        ],
+        "key_takeaway": "ไข้คล้ายไข้หวัดหลัง zoledronic acid เข็มแรก = acute-phase reaction ไม่ใช่แพ้ยา"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 70 ปี ได้รับ denosumab 60 mg SC ทุก 6 เดือนมาแล้ว 5 ปี BMD ดีขึ้นจน T-score total hip −1.9 ไม่มีกระดูกหักใหม่ แพทย์ต้องการหยุด denosumab ข้อใดเป็นแผนการรักษาที่เหมาะสมที่สุด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "หยุด denosumab ได้ทันทีแบบ drug holiday เหมือน bisphosphonate แล้วตรวจ BMD ซ้ำใน 2 ปี"
+        },
+        {
+          "label": "B",
+          "text": "หยุด denosumab แล้วให้เพียง calcium และ vitamin D ต่อเนื่อง"
+        },
+        {
+          "label": "C",
+          "text": "เปลี่ยนเป็น raloxifene 60 mg วันละครั้งต่อทันทีเพื่อลดความเสี่ยง VTE"
+        },
+        {
+          "label": "D",
+          "text": "ให้ zoledronic acid 5 mg IV ประมาณ 6 เดือนหลังเข็มสุดท้ายของ denosumab (ตรงกับเวลาที่ควรฉีดเข็มถัดไป) แล้วติดตาม BMD/bone turnover marker"
+        }
+      ],
+      "correct_answer": "D",
+      "difficulty": "hard",
+      "explanation": "การหยุด denosumab ทำให้ bone turnover เพิ่มแบบ rebound และเสี่ยง multiple vertebral fractures จึงต้องต่อด้วย bisphosphonate (เช่น zoledronic acid) ในเวลาที่ควรฉีดเข็มถัดไป",
+      "detailed_explanation": {
+        "summary": "การหยุด denosumab ทำให้ bone turnover เพิ่มแบบ rebound และเสี่ยง multiple vertebral fractures จึงต้องต่อด้วย bisphosphonate (เช่น zoledronic acid) ในเวลาที่ควรฉีดเข็มถัดไป",
+        "reason": "โจทย์ถามอะไร: ถามแผนการหยุด denosumab อย่างปลอดภัยหลังใช้มานาน\n\nหลักการ/กลไกเชิงลึก: Denosumab ยับยั้ง RANKL แบบ reversible ไม่สะสมในกระดูก เมื่อยาหมดฤทธิ์ (ราว 6–7 เดือนหลังเข็มสุดท้าย) osteoclast ที่ถูกกดไว้จะกลับมาทำงานมากเกินปกติ bone turnover marker สูงเกิน baseline BMD ที่เพิ่มขึ้นหายไปภายใน 1–2 ปี และมีรายงาน multiple spontaneous vertebral fractures ต่างจาก bisphosphonate ที่จับกระดูกนานจึงทำ drug holiday ได้\n\nทำไมข้อ D ถูก: แนวทาง ECTS/AACE/BHOF แนะนำไม่หยุด denosumab โดยไม่มียาต่อ ให้เปลี่ยนเป็น bisphosphonate โดยนิยม zoledronic acid 5 mg ที่ประมาณ 6 เดือนหลังเข็มสุดท้าย (หรือ alendronate รายสัปดาห์) และติดตาม CTX/BMD อาจต้องให้ zoledronic acid ซ้ำถ้า marker ยังสูง\n\nการประยุกต์กับผู้ป่วยจริง: เภสัชกรต้องเน้นผู้ป่วยไม่ให้เลื่อนนัดฉีดเกิน 7 เดือน ตรวจ CrCl ก่อนเปลี่ยนเป็น zoledronic acid และให้ calcium/vitamin D เพียงพอ\n\nจุดที่มักสับสนและกับดักข้อสอบ: กับดักคือคิดว่าทุกยาทำ drug holiday ได้เหมือน bisphosphonate; raloxifene มีฤทธิ์อ่อนเกินกว่าจะป้องกัน rebound และ raloxifene เพิ่ม (ไม่ใช่ลด) ความเสี่ยง VTE\n\nสรุปท่องสอบ: หยุด denosumab ต้องต่อด้วย bisphosphonate เสมอ — ห้ามมี drug holiday",
+        "choices": [
+          {
+            "label": "A",
+            "text": "หยุด denosumab ได้ทันทีแบบ drug holiday เหมือน bisphosphonate แล้วตรวจ BMD ซ้ำใน 2 ปี",
+            "explanation": "✗ ผิด — Denosumab ไม่มี residual effect แบบ bisphosphonate การหยุดเฉย ๆ ทำให้เกิด rebound fracture"
+          },
+          {
+            "label": "B",
+            "text": "หยุด denosumab แล้วให้เพียง calcium และ vitamin D ต่อเนื่อง",
+            "explanation": "✗ ผิด — Calcium/vitamin D อย่างเดียวไม่สามารถป้องกัน rebound bone loss ได้"
+          },
+          {
+            "label": "C",
+            "text": "เปลี่ยนเป็น raloxifene 60 mg วันละครั้งต่อทันทีเพื่อลดความเสี่ยง VTE",
+            "explanation": "✗ ผิด — Raloxifene มีฤทธิ์ต้านการสลายกระดูกอ่อนเกินไป และเพิ่มความเสี่ยง VTE ไม่ได้ลด"
+          },
+          {
+            "label": "D",
+            "text": "ให้ zoledronic acid 5 mg IV ประมาณ 6 เดือนหลังเข็มสุดท้ายของ denosumab (ตรงกับเวลาที่ควรฉีดเข็มถัดไป) แล้วติดตาม BMD/bone turnover marker",
+            "explanation": "✓ ถูก — การต่อด้วย bisphosphonate ในเวลาที่ควรฉีด denosumab เข็มถัดไปช่วยป้องกัน rebound bone loss และ vertebral fracture"
+          }
+        ],
+        "key_takeaway": "Denosumab: no drug holiday — stop แล้วต้อง bridge ด้วย bisphosphonate"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยชายอายุ 74 ปี เป็น CKD stage 4 (eGFR 22 mL/min/1.73 m²) มี osteoporosis และเคยกระดูกสะโพกหัก แพทย์สั่ง denosumab 60 mg SC ผลตรวจล่าสุด corrected Ca 8.3 mg/dL, 25(OH)D 12 ng/mL, PTH สูงเล็กน้อย ข้อใดเป็นคำแนะนำที่เหมาะสมที่สุดของเภสัชกร",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ฉีด denosumab ได้ทันทีเพราะไม่ต้องปรับขนาดตามไต"
+        },
+        {
+          "label": "B",
+          "text": "แก้ไขภาวะขาด vitamin D และให้ calcium ให้ระดับ Ca ปกติก่อนฉีด แล้วติดตามระดับ Ca หลังฉีด"
+        },
+        {
+          "label": "C",
+          "text": "เปลี่ยนเป็น alendronate 70 mg สัปดาห์ละครั้งเพราะปลอดภัยกว่าในผู้ป่วยไตเสื่อม"
+        },
+        {
+          "label": "D",
+          "text": "ลดขนาด denosumab เหลือ 30 mg ทุก 6 เดือนเพื่อป้องกัน hypocalcemia"
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "medium",
+      "explanation": "Denosumab ไม่ต้องปรับขนาดตามไต แต่ผู้ป่วย CKD รุนแรงเสี่ยง hypocalcemia รุนแรง ต้องแก้ hypocalcemia และขาด vitamin D ก่อนฉีด และตรวจ Ca หลังฉีด",
+      "detailed_explanation": {
+        "summary": "Denosumab ไม่ต้องปรับขนาดตามไต แต่ผู้ป่วย CKD รุนแรงเสี่ยง hypocalcemia รุนแรง ต้องแก้ hypocalcemia และขาด vitamin D ก่อนฉีด และตรวจ Ca หลังฉีด",
+        "reason": "โจทย์ถามอะไร: ถามการเตรียมผู้ป่วย CKD ที่มี Ca ต่ำและขาด vitamin D ก่อนเริ่ม denosumab\n\nหลักการ/กลไกเชิงลึก: Denosumab ยับยั้ง osteoclast อย่างรวดเร็วและแรง ทำให้ Ca ถูกปล่อยจากกระดูกลดลงทันที ในผู้ที่มี CrCl <30 หรือฟอกไต ระบบชดเชยด้วย PTH/calcitriol ทำงานไม่ดี จึงเกิด hypocalcemia รุนแรงได้ (FDA boxed warning ปี 2024 สำหรับ CKD ขั้นรุนแรงโดยเฉพาะผู้ที่มี CKD-MBD) มักต่ำสุดในช่วง 2–10 สัปดาห์หลังฉีด\n\nทำไมข้อ B ถูก: ฉลากยากำหนดให้แก้ hypocalcemia ก่อนเริ่มยา ให้ calcium 1,000 mg และ vitamin D ≥400 IU ต่อวัน และในผู้ป่วยไตเสื่อมรุนแรงควรประเมิน CKD-MBD ร่วมกับแพทย์โรคไต ติดตามระดับ Ca หลังฉีด\n\nการประยุกต์กับผู้ป่วยจริง: ผู้ป่วยรายนี้ Ca 8.3 และ 25(OH)D 12 ng/mL ควรให้ vitamin D (เช่น ergocalciferol) และ calcium จนปกติก่อนฉีด แนะนำสังเกตอาการชาปากหรือปลายมือ ตะคริว กล้ามเนื้อกระตุก\n\nจุดที่มักสับสนและกับดักข้อสอบ: กับดักคือคิดว่า 'ไม่ต้องปรับขนาดตามไต' = ปลอดภัยไม่ต้องเตรียม และไม่มีการลดขนาด denosumab ในโรคกระดูกพรุน ขนาดคือ 60 mg ทุก 6 เดือนเสมอ\n\nสรุปท่องสอบ: Denosumab + CKD = ไม่ปรับขนาด แต่ต้องแก้ Ca/vit D ก่อนฉีด และเฝ้าระวัง hypocalcemia",
+        "choices": [
+          {
+            "label": "A",
+            "text": "ฉีด denosumab ได้ทันทีเพราะไม่ต้องปรับขนาดตามไต",
+            "explanation": "✗ ผิด — ห้ามฉีดขณะ Ca ต่ำและขาด vitamin D เพราะเสี่ยง hypocalcemia รุนแรง"
+          },
+          {
+            "label": "B",
+            "text": "แก้ไขภาวะขาด vitamin D และให้ calcium ให้ระดับ Ca ปกติก่อนฉีด แล้วติดตามระดับ Ca หลังฉีด",
+            "explanation": "✓ ถูก — ต้องแก้ Ca และ vitamin D ให้ปกติก่อน และติดตาม Ca หลังฉีด"
+          },
+          {
+            "label": "C",
+            "text": "เปลี่ยนเป็น alendronate 70 mg สัปดาห์ละครั้งเพราะปลอดภัยกว่าในผู้ป่วยไตเสื่อม",
+            "explanation": "✗ ผิด — Alendronate ไม่แนะนำเมื่อ CrCl <35 mL/min"
+          },
+          {
+            "label": "D",
+            "text": "ลดขนาด denosumab เหลือ 30 mg ทุก 6 เดือนเพื่อป้องกัน hypocalcemia",
+            "explanation": "✗ ผิด — ไม่มีการลดขนาด denosumab ตามไต ขนาดคือ 60 mg ทุก 6 เดือน"
+          }
+        ],
+        "key_takeaway": "Denosumab ใน CKD: ไม่ปรับขนาด แต่แก้ Ca/vit D ก่อนเสมอ"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงในข้อใดต่อไปนี้ ไม่ควรได้รับ teriparatide 20 mcg SC วันละครั้ง มากที่สุด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "อายุ 72 ปี T-score −3.4 มี vertebral fracture 2 ตำแหน่ง"
+        },
+        {
+          "label": "B",
+          "text": "อายุ 65 ปี ใช้ prednisolone 10 mg/วัน มา 1 ปี มี vertebral fracture"
+        },
+        {
+          "label": "C",
+          "text": "อายุ 68 ปี เคยได้รับรังสีรักษาบริเวณอุ้งเชิงกรานจากมะเร็งปากมดลูก"
+        },
+        {
+          "label": "D",
+          "text": "อายุ 75 ปี กระดูกหักซ้ำขณะได้รับ alendronate มา 3 ปี"
+        }
+      ],
+      "correct_answer": "C",
+      "difficulty": "medium",
+      "explanation": "Teriparatide ควรหลีกเลี่ยงในผู้ที่มีความเสี่ยง osteosarcoma สูง ได้แก่ เคยได้รับรังสีรักษาที่กระดูก, Paget's disease, ALP สูงโดยไม่ทราบสาเหตุ, epiphysis ยังไม่ปิด และมะเร็งในกระดูก",
+      "detailed_explanation": {
+        "summary": "Teriparatide ควรหลีกเลี่ยงในผู้ที่มีความเสี่ยง osteosarcoma สูง ได้แก่ เคยได้รับรังสีรักษาที่กระดูก, Paget's disease, ALP สูงโดยไม่ทราบสาเหตุ, epiphysis ยังไม่ปิด และมะเร็งในกระดูก",
+        "reason": "โจทย์ถามอะไร: ถามข้อห้าม/ข้อควรหลีกเลี่ยงของ teriparatide ซึ่งสัมพันธ์กับความเสี่ยง osteosarcoma\n\nหลักการ/กลไกเชิงลึก: Teriparatide (PTH 1-34) และ abaloparatide (PTHrP analog) เมื่อให้แบบ intermittent กระตุ้น osteoblast สร้างกระดูกใหม่ การศึกษาในหนูที่ได้ขนาดสูงและนานพบ osteosarcoma เพิ่มขึ้น จึงต้องหลีกเลี่ยงในผู้ที่มีความเสี่ยงพื้นฐานของ osteosarcoma: Paget's disease of bone, ALP สูงไม่ทราบสาเหตุ, open epiphyses (เด็ก/วัยรุ่น), เคยได้รับรังสีรักษา (external beam หรือ implant) ที่โครงกระดูก, bone metastasis หรือมะเร็งกระดูก และ hypercalcemia\n\nทำไมข้อ C ถูก: ผู้ป่วยที่เคยได้รับรังสีรักษาบริเวณอุ้งเชิงกรานมีกระดูกเชิงกรานอยู่ในลำรังสี จึงมีความเสี่ยง osteosarcoma ที่ควรหลีกเลี่ยง anabolic agent กลุ่ม PTH\n\nการประยุกต์กับผู้ป่วยจริง: ผู้ป่วยกลุ่มนี้ควรเลือก antiresorptive เช่น zoledronic acid หรือ denosumab แทน เภสัชกรควรซักประวัติรังสีรักษา โรค Paget และค่า ALP ก่อนจ่าย teriparatide\n\nจุดที่มักสับสนและกับดักข้อสอบ: ตัวเลือกอื่นเป็น 'ข้อบ่งใช้' ที่เหมาะกับ anabolic agent เช่น very high risk (หลาย vertebral fracture, T-score ต่ำมาก), GIOP ที่มีกระดูกหัก และกระดูกหักขณะได้ antiresorptive\n\nสรุปท่องสอบ: Teriparatide ห้าม/เลี่ยง: radiation ที่กระดูก, Paget, ALP สูงไม่ทราบสาเหตุ, epiphysis เปิด, มะเร็งกระดูก",
+        "choices": [
+          {
+            "label": "A",
+            "text": "อายุ 72 ปี T-score −3.4 มี vertebral fracture 2 ตำแหน่ง",
+            "explanation": "✗ ผิด — เป็นผู้ป่วย very high risk ซึ่งเป็นข้อบ่งใช้ที่ดีของ anabolic agent"
+          },
+          {
+            "label": "B",
+            "text": "อายุ 65 ปี ใช้ prednisolone 10 mg/วัน มา 1 ปี มี vertebral fracture",
+            "explanation": "✗ ผิด — GIOP ที่มี vertebral fracture ใช้ teriparatide ได้และได้ผลดีกว่า alendronate"
+          },
+          {
+            "label": "C",
+            "text": "อายุ 68 ปี เคยได้รับรังสีรักษาบริเวณอุ้งเชิงกรานจากมะเร็งปากมดลูก",
+            "explanation": "✓ ถูก — การเคยได้รับรังสีรักษาที่กระดูกเพิ่มความเสี่ยง osteosarcoma จึงควรหลีกเลี่ยง teriparatide"
+          },
+          {
+            "label": "D",
+            "text": "อายุ 75 ปี กระดูกหักซ้ำขณะได้รับ alendronate มา 3 ปี",
+            "explanation": "✗ ผิด — กระดูกหักขณะได้ bisphosphonate เป็นเหตุผลให้พิจารณาเปลี่ยนเป็น anabolic agent"
+          }
+        ],
+        "key_takeaway": "เคยฉายแสงที่กระดูก = เลี่ยง teriparatide/abaloparatide (osteosarcoma)"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 69 ปี very high fracture risk ได้รับ teriparatide 20 mcg SC วันละครั้งครบ 24 เดือน BMD เพิ่มขึ้นชัดเจน CrCl 60 mL/min ข้อใดเป็นการรักษาขั้นต่อไปที่เหมาะสมที่สุด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "เริ่มยาต้านการสลายกระดูก เช่น alendronate, zoledronic acid หรือ denosumab ต่อทันทีเพื่อคง BMD ที่ได้"
+        },
+        {
+          "label": "B",
+          "text": "ใช้ teriparatide ต่อไปเรื่อย ๆ ตลอดชีวิตเพราะได้ผลดี"
+        },
+        {
+          "label": "C",
+          "text": "หยุดยาทุกชนิด ให้ calcium และ vitamin D อย่างเดียว เพราะ BMD ดีขึ้นแล้ว"
+        },
+        {
+          "label": "D",
+          "text": "เปลี่ยนเป็น abaloparatide 80 mcg SC วันละครั้งอีก 24 เดือน"
+        }
+      ],
+      "correct_answer": "A",
+      "difficulty": "medium",
+      "explanation": "หลังหยุด anabolic agent BMD ที่เพิ่มขึ้นจะลดลงอย่างรวดเร็ว จึงต้องตามด้วยยาต้านการสลายกระดูก (sequential therapy) เสมอ",
+      "detailed_explanation": {
+        "summary": "หลังหยุด anabolic agent BMD ที่เพิ่มขึ้นจะลดลงอย่างรวดเร็ว จึงต้องตามด้วยยาต้านการสลายกระดูก (sequential therapy) เสมอ",
+        "reason": "โจทย์ถามอะไร: ถามแนวทาง sequential therapy หลังครบคอร์ส teriparatide\n\nหลักการ/กลไกเชิงลึก: Teriparatide กระตุ้นการสร้างกระดูก แต่กระดูกใหม่ยังมีการ remodel สูง เมื่อหยุดยา BMD จะลดลงภายใน 1 ปีถ้าไม่ได้ antiresorptive ต่อ แนวทาง AACE 2020/Endocrine Society แนะนำ anabolic ก่อนแล้วตามด้วย antiresorptive ในผู้ป่วย very high risk ซึ่งให้ BMD เพิ่มมากกว่าการเรียงกลับกัน ระยะเวลา teriparatide ที่ใช้ตามหลักฐานคือ 24 เดือนตลอดชีวิต (การใช้นานกว่านั้นพิจารณาเฉพาะรายที่ยังเสี่ยงสูง) abaloparatide ใช้ไม่เกิน 24 เดือน\n\nทำไมข้อ A ถูก: การเริ่ม bisphosphonate หรือ denosumab ต่อทันทีช่วยคงและเพิ่ม BMD ต่อและลดความเสี่ยงกระดูกหัก\n\nการประยุกต์กับผู้ป่วยจริง: ผู้ป่วย CrCl 60 ใช้ alendronate หรือ zoledronic acid ได้ หากเลือก denosumab ต้องวางแผนระยะยาวเพราะหยุดแล้วต้อง bridge ด้วย bisphosphonate\n\nจุดที่มักสับสนและกับดักข้อสอบ: การเปลี่ยนจาก teriparatide ไป abaloparatide เท่ากับใช้ PTH-receptor agonist นานเกิน 24 เดือนรวม ไม่ใช่แนวทางมาตรฐาน\n\nสรุปท่องสอบ: Anabolic ครบคอร์ส → ต่อ antiresorptive ทันที (anabolic-first sequence)",
+        "choices": [
+          {
+            "label": "A",
+            "text": "เริ่มยาต้านการสลายกระดูก เช่น alendronate, zoledronic acid หรือ denosumab ต่อทันทีเพื่อคง BMD ที่ได้",
+            "explanation": "✓ ถูก — Sequential therapy ด้วย antiresorptive เป็นมาตรฐานหลังหยุด anabolic agent"
+          },
+          {
+            "label": "B",
+            "text": "ใช้ teriparatide ต่อไปเรื่อย ๆ ตลอดชีวิตเพราะได้ผลดี",
+            "explanation": "✗ ผิด — ระยะเวลาที่ใช้ตามหลักฐานคือ 24 เดือน ไม่ใช่ตลอดชีวิต"
+          },
+          {
+            "label": "C",
+            "text": "หยุดยาทุกชนิด ให้ calcium และ vitamin D อย่างเดียว เพราะ BMD ดีขึ้นแล้ว",
+            "explanation": "✗ ผิด — หยุดยาโดยไม่ต่อ antiresorptive จะทำให้ BMD ที่เพิ่มขึ้นสูญหายไป"
+          },
+          {
+            "label": "D",
+            "text": "เปลี่ยนเป็น abaloparatide 80 mcg SC วันละครั้งอีก 24 เดือน",
+            "explanation": "✗ ผิด — การใช้ PTH/PTHrP analog รวมเกิน 24 เดือนไม่ใช่แนวทางมาตรฐาน"
+          }
+        ],
+        "key_takeaway": "Teriparatide ครบ 2 ปี → ต้องต่อ antiresorptive ทันที"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 73 ปี T-score lumbar spine −3.6 มี vertebral fracture 3 ตำแหน่งในปีที่ผ่านมา (very high risk) มีประวัติ ischemic stroke เมื่อ 5 เดือนก่อน CrCl 55 mL/min ยาใดควรหลีกเลี่ยงมากที่สุด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Teriparatide 20 mcg SC วันละครั้ง"
+        },
+        {
+          "label": "B",
+          "text": "Romosozumab 210 mg SC เดือนละครั้ง"
+        },
+        {
+          "label": "C",
+          "text": "Zoledronic acid 5 mg IV ปีละครั้ง"
+        },
+        {
+          "label": "D",
+          "text": "Denosumab 60 mg SC ทุก 6 เดือน"
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "medium",
+      "explanation": "Romosozumab มี boxed warning เพิ่มความเสี่ยง MI, stroke และ CV death ไม่ควรเริ่มในผู้ที่เป็น MI หรือ stroke ภายใน 1 ปีที่ผ่านมา",
+      "detailed_explanation": {
+        "summary": "Romosozumab มี boxed warning เพิ่มความเสี่ยง MI, stroke และ CV death ไม่ควรเริ่มในผู้ที่เป็น MI หรือ stroke ภายใน 1 ปีที่ผ่านมา",
+        "reason": "โจทย์ถามอะไร: ถามยารักษากระดูกพรุนที่มีข้อห้ามเกี่ยวกับโรคหัวใจและหลอดเลือด\n\nหลักการ/กลไกเชิงลึก: Romosozumab เป็น monoclonal antibody ต่อ sclerostin มีฤทธิ์คู่ คือเพิ่มการสร้างกระดูก (เปิด Wnt signaling) และลดการสลายกระดูก ในการศึกษา ARCH (เทียบ alendronate) พบ serious CV events (MI, stroke) สูงกว่า สันนิษฐานว่า sclerostin อาจมีบทบาทในผนังหลอดเลือด จึงมี boxed warning: ไม่ควรเริ่มในผู้ที่เป็น MI หรือ stroke ภายใน 1 ปีที่ผ่านมา และให้หยุดยาถ้าเกิดเหตุการณ์ CV ระหว่างใช้\n\nทำไมข้อ B ถูก: ผู้ป่วยเป็น stroke เมื่อ 5 เดือนก่อน (<1 ปี) จึงไม่ควรใช้ romosozumab แม้จะเป็น very high risk ก็ตาม\n\nการประยุกต์กับผู้ป่วยจริง: ทางเลือกในรายนี้คือ teriparatide/abaloparatide (anabolic) ซึ่งไม่มีข้อห้ามด้าน CV หรือ zoledronic acid/denosumab ส่วนผู้ป่วยที่มีปัจจัยเสี่ยง CV อื่นควรชั่งประโยชน์–ความเสี่ยงก่อนใช้ romosozumab\n\nจุดที่มักสับสนและกับดักข้อสอบ: ข้อควรระวังของยาอื่น: teriparatide เกิด orthostatic hypotension ชั่วคราวได้ แต่ไม่ใช่ข้อห้ามจาก stroke; zoledronic acid ต้อง CrCl ≥35 ซึ่งผู้ป่วยผ่านเกณฑ์\n\nสรุปท่องสอบ: Romosozumab = boxed warning MI/stroke/CV death — เลี่ยงถ้าเป็นภายใน 1 ปี",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Teriparatide 20 mcg SC วันละครั้ง",
+            "explanation": "✗ ผิด — Teriparatide ไม่มีข้อห้ามจากประวัติ stroke ใช้ได้ในผู้ป่วย very high risk"
+          },
+          {
+            "label": "B",
+            "text": "Romosozumab 210 mg SC เดือนละครั้ง",
+            "explanation": "✓ ถูก — Romosozumab ไม่ควรเริ่มในผู้ที่เป็น MI หรือ stroke ภายใน 1 ปี"
+          },
+          {
+            "label": "C",
+            "text": "Zoledronic acid 5 mg IV ปีละครั้ง",
+            "explanation": "✗ ผิด — CrCl 55 mL/min ผ่านเกณฑ์ ≥35 ใช้ zoledronic acid ได้"
+          },
+          {
+            "label": "D",
+            "text": "Denosumab 60 mg SC ทุก 6 เดือน",
+            "explanation": "✗ ผิด — Denosumab ไม่มีข้อห้ามด้านหัวใจและหลอดเลือด"
+          }
+        ],
+        "key_takeaway": "Stroke/MI ใน 1 ปี → ห้ามเริ่ม romosozumab"
+      }
+    },
+    {
+      "scenario": "ข้อใดเป็นขนาดและระยะเวลาการใช้ romosozumab ในการรักษา postmenopausal osteoporosis ที่ถูกต้อง",
+      "choices": [
+        {
+          "label": "A",
+          "text": "20 mcg SC วันละครั้ง นานไม่เกิน 24 เดือน"
+        },
+        {
+          "label": "B",
+          "text": "60 mg SC ทุก 6 เดือน ต่อเนื่องโดยไม่กำหนดระยะเวลา"
+        },
+        {
+          "label": "C",
+          "text": "5 mg IV drip ปีละครั้ง นาน 3 ปี"
+        },
+        {
+          "label": "D",
+          "text": "210 mg SC (ฉีด 105 mg 2 เข็ม) เดือนละครั้ง รวม 12 เดือน แล้วตามด้วยยาต้านการสลายกระดูก"
+        }
+      ],
+      "correct_answer": "D",
+      "difficulty": "easy",
+      "explanation": "Romosozumab ให้ 210 mg SC เดือนละครั้งจำนวน 12 ครั้ง เพราะฤทธิ์สร้างกระดูกลดลงหลัง 12 เดือน แล้วต้องต่อด้วย antiresorptive",
+      "detailed_explanation": {
+        "summary": "Romosozumab ให้ 210 mg SC เดือนละครั้งจำนวน 12 ครั้ง เพราะฤทธิ์สร้างกระดูกลดลงหลัง 12 เดือน แล้วต้องต่อด้วย antiresorptive",
+        "reason": "โจทย์ถามอะไร: ถามขนาดยาและระยะเวลาการใช้ romosozumab\n\nหลักการ/กลไกเชิงลึก: Romosozumab (anti-sclerostin) ให้ 210 mg SC เดือนละครั้ง โดยฉีด prefilled syringe 105 mg 2 เข็มต่อเนื่องกัน รวม 12 ครั้ง ฤทธิ์ anabolic สูงสุดในช่วงแรกและลดลงหลังประมาณ 12 เดือน (มี feedback เพิ่ม sclerostin/DKK1) ฉลากจึงจำกัดไว้ 12 เดือน หลังจากนั้นต้องตามด้วย antiresorptive เช่น alendronate หรือ denosumab เพื่อคง BMD (ตามการศึกษา FRAME, ARCH)\n\nทำไมข้อ D ถูก: ข้อ D ตรงกับขนาดและระยะเวลาตามฉลาก\n\nการประยุกต์กับผู้ป่วยจริง: ระหว่างใช้ต้องได้ calcium และ vitamin D เพียงพอ เฝ้าระวังอาการ MI/stroke และอาจพบ hypocalcemia, ปวดข้อ, ปฏิกิริยาที่ตำแหน่งฉีด รวมถึง ONJ และ atypical femoral fracture (พบน้อย)\n\nจุดที่มักสับสนและกับดักข้อสอบ: ตัวเลือกอื่นเป็นขนาดยาของ teriparatide (A), denosumab (B) และ zoledronic acid (C) ซึ่งเป็นกับดักแบบสลับขนาดยา\n\nสรุปท่องสอบ: Romosozumab 210 mg SC q month × 12 → ต่อ antiresorptive",
+        "choices": [
+          {
+            "label": "A",
+            "text": "20 mcg SC วันละครั้ง นานไม่เกิน 24 เดือน",
+            "explanation": "✗ ผิด — เป็นขนาดของ teriparatide"
+          },
+          {
+            "label": "B",
+            "text": "60 mg SC ทุก 6 เดือน ต่อเนื่องโดยไม่กำหนดระยะเวลา",
+            "explanation": "✗ ผิด — เป็นขนาดของ denosumab"
+          },
+          {
+            "label": "C",
+            "text": "5 mg IV drip ปีละครั้ง นาน 3 ปี",
+            "explanation": "✗ ผิด — เป็นขนาดของ zoledronic acid สำหรับโรคกระดูกพรุน"
+          },
+          {
+            "label": "D",
+            "text": "210 mg SC (ฉีด 105 mg 2 เข็ม) เดือนละครั้ง รวม 12 เดือน แล้วตามด้วยยาต้านการสลายกระดูก",
+            "explanation": "✓ ถูก — ตรงตามฉลาก: 210 mg SC เดือนละครั้ง 12 ครั้ง แล้วต่อ antiresorptive"
+          }
+        ],
+        "key_takeaway": "Romosozumab: 210 mg/เดือน × 12 เดือนเท่านั้น"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 63 ปี ใช้ raloxifene 60 mg วันละครั้งเพื่อรักษา osteoporosis มา 2 ปี มีนัดผ่าตัดเปลี่ยนข้อเข่า ซึ่งคาดว่าต้องนอนพักบนเตียงหลายวัน ข้อใดเป็นคำแนะนำที่เหมาะสมที่สุด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ใช้ raloxifene ต่อได้ตามปกติเพราะไม่มีผลต่อการผ่าตัด"
+        },
+        {
+          "label": "B",
+          "text": "หยุด raloxifene 2 สัปดาห์หลังผ่าตัดเท่านั้น"
+        },
+        {
+          "label": "C",
+          "text": "หยุด raloxifene อย่างน้อย 72 ชั่วโมงก่อนช่วงที่ต้องนอนนิ่งนาน และเริ่มใหม่เมื่อกลับมาเดินได้เต็มที่"
+        },
+        {
+          "label": "D",
+          "text": "เพิ่มขนาด raloxifene เป็น 120 mg/วันเพื่อป้องกันการสูญเสียมวลกระดูกระหว่างนอนพัก"
+        }
+      ],
+      "correct_answer": "C",
+      "difficulty": "medium",
+      "explanation": "Raloxifene เพิ่มความเสี่ยง VTE จึงควรหยุดอย่างน้อย 72 ชั่วโมงก่อนและระหว่างช่วงที่ไม่ได้เคลื่อนไหวนาน (เช่น ผ่าตัด นอนพักบนเตียง) แล้วเริ่มใหม่เมื่อเดินได้เต็มที่",
+      "detailed_explanation": {
+        "summary": "Raloxifene เพิ่มความเสี่ยง VTE จึงควรหยุดอย่างน้อย 72 ชั่วโมงก่อนและระหว่างช่วงที่ไม่ได้เคลื่อนไหวนาน (เช่น ผ่าตัด นอนพักบนเตียง) แล้วเริ่มใหม่เมื่อเดินได้เต็มที่",
+        "reason": "โจทย์ถามอะไร: ถามการจัดการ raloxifene ก่อนช่วงที่ผู้ป่วยไม่ได้เคลื่อนไหวนาน\n\nหลักการ/กลไกเชิงลึก: Raloxifene เป็น SERM มีฤทธิ์ agonist ต่อ estrogen receptor ที่กระดูกและตับ จึงเพิ่มการสร้าง clotting factor และเพิ่มความเสี่ยง DVT/PE ประมาณ 2–3 เท่า (คล้าย estrogen) มี boxed warning เรื่อง VTE และ stroke death ในหญิงที่มีความเสี่ยงหลอดเลือดหัวใจ ข้อห้ามใช้คือมีหรือเคยเป็น VTE\n\nทำไมข้อ C ถูก: ฉลากแนะนำให้หยุด raloxifene อย่างน้อย 72 ชั่วโมงก่อนและระหว่างภาวะ prolonged immobilization (ผ่าตัดใหญ่ นอนพักบนเตียง) และเริ่มใหม่เมื่อผู้ป่วยกลับมาเคลื่อนไหวได้เต็มที่ ข้อ C จึงถูก\n\nการประยุกต์กับผู้ป่วยจริง: การผ่าตัดเปลี่ยนข้อเข่าเป็นความเสี่ยง VTE สูงอยู่แล้ว การคง raloxifene จะเพิ่มความเสี่ยงซ้อน ควรประสานกับศัลยแพทย์เรื่องการป้องกัน VTE ร่วมด้วย และแนะนำหลีกเลี่ยงการนั่งนิ่งนานระหว่างเดินทางไกล\n\nจุดที่มักสับสนและกับดักข้อสอบ: การหยุดเพียงหลังผ่าตัดไม่เพียงพอเพราะความเสี่ยงเริ่มตั้งแต่ระหว่างผ่าตัด และขนาดยาที่ใช้คือ 60 mg/วันเท่านั้น\n\nสรุปท่องสอบ: Raloxifene: หยุด ≥72 ชม. ก่อน immobilization; ห้ามใช้ถ้ามีประวัติ VTE",
+        "choices": [
+          {
+            "label": "A",
+            "text": "ใช้ raloxifene ต่อได้ตามปกติเพราะไม่มีผลต่อการผ่าตัด",
+            "explanation": "✗ ผิด — Raloxifene เพิ่มความเสี่ยง VTE ซึ่งสูงอยู่แล้วในการผ่าตัดใหญ่"
+          },
+          {
+            "label": "B",
+            "text": "หยุด raloxifene 2 สัปดาห์หลังผ่าตัดเท่านั้น",
+            "explanation": "✗ ผิด — ต้องหยุดก่อนผ่าตัด ไม่ใช่หลังผ่าตัด"
+          },
+          {
+            "label": "C",
+            "text": "หยุด raloxifene อย่างน้อย 72 ชั่วโมงก่อนช่วงที่ต้องนอนนิ่งนาน และเริ่มใหม่เมื่อกลับมาเดินได้เต็มที่",
+            "explanation": "✓ ถูก — ตรงตามคำแนะนำ: หยุด ≥72 ชั่วโมงก่อนและระหว่าง immobilization"
+          },
+          {
+            "label": "D",
+            "text": "เพิ่มขนาด raloxifene เป็น 120 mg/วันเพื่อป้องกันการสูญเสียมวลกระดูกระหว่างนอนพัก",
+            "explanation": "✗ ผิด — ขนาดยาคือ 60 mg/วัน การเพิ่มขนาดไม่เพิ่มประโยชน์และเพิ่มความเสี่ยง"
+          }
+        ],
+        "key_takeaway": "Raloxifene + ผ่าตัด/นอนนาน → หยุด ≥72 ชม. ก่อน"
+      }
+    },
+    {
+      "scenario": "ข้อใดกล่าวถึง raloxifene ได้ถูกต้อง",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ลดความเสี่ยง vertebral fracture และ invasive breast cancer (ER-positive) แต่ไม่พบว่าลด hip fracture"
+        },
+        {
+          "label": "B",
+          "text": "ช่วยบรรเทาอาการร้อนวูบวาบ (hot flashes) ในหญิงวัยหมดประจำเดือน"
+        },
+        {
+          "label": "C",
+          "text": "เพิ่มความเสี่ยงมะเร็งเยื่อบุโพรงมดลูกเช่นเดียวกับ tamoxifen"
+        },
+        {
+          "label": "D",
+          "text": "เป็นยาทางเลือกแรกสำหรับป้องกัน hip fracture ในหญิงสูงอายุ"
+        }
+      ],
+      "correct_answer": "A",
+      "difficulty": "easy",
+      "explanation": "Raloxifene ลด vertebral fracture และ ER-positive invasive breast cancer แต่ไม่ลด hip/non-vertebral fracture อาจทำให้ hot flashes แย่ลง และไม่กระตุ้นเยื่อบุโพรงมดลูก",
+      "detailed_explanation": {
+        "summary": "Raloxifene ลด vertebral fracture และ ER-positive invasive breast cancer แต่ไม่ลด hip/non-vertebral fracture อาจทำให้ hot flashes แย่ลง และไม่กระตุ้นเยื่อบุโพรงมดลูก",
+        "reason": "โจทย์ถามอะไร: ถามคุณสมบัติประสิทธิผลและอาการไม่พึงประสงค์ของ raloxifene\n\nหลักการ/กลไกเชิงลึก: Raloxifene เป็น SERM: agonist ที่กระดูก (ลดการสลายกระดูก) และตับ (ลด LDL, เพิ่ม clotting factor) แต่เป็น antagonist ที่เต้านมและเยื่อบุโพรงมดลูก ในการศึกษา MORE ลด vertebral fracture ราว 30–50% แต่ไม่ลด hip หรือ non-vertebral fracture และ STAR/CORE พบลด invasive ER-positive breast cancer\n\nทำไมข้อ A ถูก: ข้อ A สรุปประสิทธิผลถูกต้อง จึงเหมาะกับหญิงวัยหมดประจำเดือนอายุไม่มากที่มีความเสี่ยงกระดูกสันหลังหักและเสี่ยงมะเร็งเต้านม โดยไม่มีประวัติ VTE\n\nการประยุกต์กับผู้ป่วยจริง: เภสัชกรควรแจ้งว่าอาจมี hot flashes และตะคริวขา (leg cramps) โดยเฉพาะช่วงแรก ไม่ควรใช้ในหญิงที่ยังมีอาการวัยทองรุนแรง และต้องให้ calcium/vitamin D ร่วมด้วย\n\nจุดที่มักสับสนและกับดักข้อสอบ: ความต่างจาก tamoxifen: tamoxifen เป็น partial agonist ที่ endometrium จึงเพิ่มความเสี่ยงมะเร็งเยื่อบุโพรงมดลูก แต่ raloxifene ไม่เพิ่ม ทั้งคู่เพิ่ม VTE\n\nสรุปท่องสอบ: Raloxifene: ลด vertebral fx + breast cancer, ไม่ลด hip fx, hot flashes/leg cramps/VTE",
+        "choices": [
+          {
+            "label": "A",
+            "text": "ลดความเสี่ยง vertebral fracture และ invasive breast cancer (ER-positive) แต่ไม่พบว่าลด hip fracture",
+            "explanation": "✓ ถูก — ถูกต้องตามผลการศึกษา MORE/CORE/STAR"
+          },
+          {
+            "label": "B",
+            "text": "ช่วยบรรเทาอาการร้อนวูบวาบ (hot flashes) ในหญิงวัยหมดประจำเดือน",
+            "explanation": "✗ ผิด — Raloxifene ทำให้ hot flashes เป็นมากขึ้น ไม่ได้บรรเทา"
+          },
+          {
+            "label": "C",
+            "text": "เพิ่มความเสี่ยงมะเร็งเยื่อบุโพรงมดลูกเช่นเดียวกับ tamoxifen",
+            "explanation": "✗ ผิด — Raloxifene เป็น antagonist ที่ endometrium จึงไม่เพิ่มความเสี่ยงมะเร็งเยื่อบุโพรงมดลูก"
+          },
+          {
+            "label": "D",
+            "text": "เป็นยาทางเลือกแรกสำหรับป้องกัน hip fracture ในหญิงสูงอายุ",
+            "explanation": "✗ ผิด — ไม่มีหลักฐานลด hip fracture จึงไม่ใช่ทางเลือกแรกสำหรับป้องกัน hip fracture"
+          }
+        ],
+        "key_takeaway": "Raloxifene: spine yes, hip no, breast cancer ลด, hot flashes เพิ่ม"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 60 ปี เป็นโรคกระดูกพรุน ได้รับแคลเซียมจากอาหารประมาณ 600 mg/วัน เป้าหมายแคลเซียมรวมคือ 1,200 mg/วัน หากเลือกเสริมด้วย calcium carbonate (มี elemental calcium 40%) ควรได้รับ calcium carbonate วันละกี่มิลลิกรัม",
+      "choices": [
+        {
+          "label": "A",
+          "text": "600 mg"
+        },
+        {
+          "label": "B",
+          "text": "1,500 mg"
+        },
+        {
+          "label": "C",
+          "text": "2,857 mg"
+        },
+        {
+          "label": "D",
+          "text": "3,000 mg"
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "easy",
+      "explanation": "ต้องเสริม elemental Ca 1,200 − 600 = 600 mg; calcium carbonate มี elemental 40% จึงต้องใช้ 600 / 0.40 = 1,500 mg/วัน",
+      "detailed_explanation": {
+        "summary": "ต้องเสริม elemental Ca 1,200 − 600 = 600 mg; calcium carbonate มี elemental 40% จึงต้องใช้ 600 / 0.40 = 1,500 mg/วัน",
+        "reason": "โจทย์ถามอะไร: ให้คำนวณปริมาณเกลือ calcium carbonate ที่ต้องเสริมจากส่วนที่ขาด\n\nหลักการ/กลไกเชิงลึก: ปริมาณแคลเซียมที่แนะนำในหญิงอายุ >50 ปีคือ 1,200 mg/วัน (รวมอาหาร + เสริม) ปริมาณที่ระบุบนฉลากเกลือแคลเซียมคือน้ำหนักเกลือ ไม่ใช่ elemental: calcium carbonate 40%, calcium citrate 21%, calcium lactate 13%, calcium gluconate 9%\n\nทำไมข้อ B ถูก: ส่วนขาด = 1,200 − 600 = 600 mg elemental Ca; calcium carbonate ที่ต้องใช้ = 600 ÷ 0.40 = 1,500 mg/วัน ควรแบ่งให้ เช่น 750 mg (300 mg elemental) วันละ 2 ครั้งพร้อมอาหาร\n\nการประยุกต์กับผู้ป่วยจริง: การเสริมเกินความจำเป็น (รวม >2,000–2,500 mg/วัน) เพิ่มความเสี่ยงนิ่วในไต ท้องผูก และอาจสัมพันธ์กับเหตุการณ์ CV จึงควรเสริมเฉพาะส่วนที่ขาด\n\nจุดที่มักสับสนและกับดักข้อสอบ: ตัวลวง 600 mg คือสับสนน้ำหนักเกลือกับ elemental; 2,857 mg คือคำนวณด้วย calcium citrate (600 ÷ 0.21); 3,000 mg คือคิดจากเป้าหมายรวม 1,200 ÷ 0.40 โดยไม่หักอาหาร\n\nสรุปท่องสอบ: Carbonate 40% / Citrate 21% — หักแคลเซียมจากอาหารก่อนคำนวณเสริม",
+        "choices": [
+          {
+            "label": "A",
+            "text": "600 mg",
+            "explanation": "✗ ผิด — 600 mg เป็นปริมาณ elemental ที่ขาด ไม่ใช่น้ำหนักเกลือ (จะได้ elemental เพียง 240 mg)"
+          },
+          {
+            "label": "B",
+            "text": "1,500 mg",
+            "explanation": "✓ ถูก — 600 ÷ 0.40 = 1,500 mg calcium carbonate"
+          },
+          {
+            "label": "C",
+            "text": "2,857 mg",
+            "explanation": "✗ ผิด — เป็นการคำนวณด้วย elemental 21% ของ calcium citrate"
+          },
+          {
+            "label": "D",
+            "text": "3,000 mg",
+            "explanation": "✗ ผิด — คำนวณจากเป้าหมายรวมโดยไม่หักแคลเซียมจากอาหาร ทำให้ได้รับเกิน"
+          }
+        ],
+        "key_takeaway": "เกลือ Ca ที่ต้องเสริม = (เป้าหมาย − อาหาร) ÷ %elemental"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 67 ปี เป็น osteopenia ใช้ omeprazole 20 mg วันละครั้งต่อเนื่องเพื่อรักษา Barrett's esophagus และต้องการเสริมแคลเซียม โดยมักรับประทานยาตอนท้องว่าง เกลือแคลเซียมชนิดใดเหมาะสมที่สุด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Calcium carbonate เพราะมี elemental calcium สูงที่สุด"
+        },
+        {
+          "label": "B",
+          "text": "Calcium gluconate เพราะดูดซึมได้ดีที่สุด"
+        },
+        {
+          "label": "C",
+          "text": "Calcium carbonate ร่วมกับเปลี่ยน omeprazole เป็น famotidine"
+        },
+        {
+          "label": "D",
+          "text": "Calcium citrate เพราะการดูดซึมไม่ขึ้นกับกรดในกระเพาะอาหารและรับประทานตอนท้องว่างได้"
+        }
+      ],
+      "correct_answer": "D",
+      "difficulty": "easy",
+      "explanation": "Calcium carbonate ต้องอาศัยกรดในกระเพาะในการละลาย ผู้ที่ใช้ PPI หรือมี achlorhydria และรับประทานตอนท้องว่างจึงควรใช้ calcium citrate",
+      "detailed_explanation": {
+        "summary": "Calcium carbonate ต้องอาศัยกรดในกระเพาะในการละลาย ผู้ที่ใช้ PPI หรือมี achlorhydria และรับประทานตอนท้องว่างจึงควรใช้ calcium citrate",
+        "reason": "โจทย์ถามอะไร: ถามการเลือกเกลือแคลเซียมในผู้ที่ใช้ PPI ระยะยาว\n\nหลักการ/กลไกเชิงลึก: Calcium carbonate ไม่ละลายในสภาวะเป็นกลาง ต้องอาศัยกรด HCl เปลี่ยนเป็น CaCl₂ ที่ละลายได้ จึงควรรับประทานพร้อมอาหาร (อาหารกระตุ้นการหลั่งกรด) และดูดซึมได้ลดลงเมื่อใช้ PPI/H2RA หรือมี achlorhydria ส่วน calcium citrate ละลายได้โดยไม่ต้องใช้กรด จึงรับประทานพร้อมหรือไม่พร้อมอาหารได้\n\nทำไมข้อ D ถูก: ผู้ป่วยต้องใช้ PPI ต่อเนื่อง (Barrett's esophagus มีข้อบ่งใช้ชัดเจน) และชอบรับประทานตอนท้องว่าง calcium citrate จึงเหมาะที่สุด แม้มี elemental เพียง 21% ต้องรับประทานจำนวนเม็ดมากกว่า\n\nการประยุกต์กับผู้ป่วยจริง: PPI ระยะยาวเองก็สัมพันธ์กับความเสี่ยงกระดูกหักเพิ่มขึ้นเล็กน้อย ควรใช้ขนาดต่ำสุดที่จำเป็น แต่ไม่ควรเปลี่ยนยาที่มีข้อบ่งใช้ชัดเจนเพียงเพื่อให้ดูดซึมแคลเซียมดีขึ้น นอกจากนี้ calcium citrate ท้องผูกน้อยกว่า carbonate\n\nจุดที่มักสับสนและกับดักข้อสอบ: Calcium gluconate มี elemental เพียง 9% ไม่เหมาะเป็นยาเสริมรับประทาน (ใช้ IV ใน hypocalcemia) และ H2RA ก็ลดกรดเช่นกัน\n\nสรุปท่องสอบ: ใช้ PPI / ไม่มีกรด / ท้องว่าง → calcium citrate; carbonate ต้องกินพร้อมอาหาร",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Calcium carbonate เพราะมี elemental calcium สูงที่สุด",
+            "explanation": "✗ ผิด — แม้ elemental สูง (40%) แต่ต้องอาศัยกรด ดูดซึมได้ลดลงเมื่อใช้ PPI และท้องว่าง"
+          },
+          {
+            "label": "B",
+            "text": "Calcium gluconate เพราะดูดซึมได้ดีที่สุด",
+            "explanation": "✗ ผิด — Calcium gluconate มี elemental เพียง 9% ต้องกินปริมาณมาก ไม่ใช่ตัวเลือกเสริมรับประทาน"
+          },
+          {
+            "label": "C",
+            "text": "Calcium carbonate ร่วมกับเปลี่ยน omeprazole เป็น famotidine",
+            "explanation": "✗ ผิด — Famotidine ก็ลดกรดเช่นกัน และไม่ควรเปลี่ยน PPI ที่มีข้อบ่งใช้ชัดเจน"
+          },
+          {
+            "label": "D",
+            "text": "Calcium citrate เพราะการดูดซึมไม่ขึ้นกับกรดในกระเพาะอาหารและรับประทานตอนท้องว่างได้",
+            "explanation": "✓ ถูก — Calcium citrate ดูดซึมได้โดยไม่ต้องพึ่งกรด เหมาะกับผู้ใช้ PPI"
+          }
+        ],
+        "key_takeaway": "PPI + แคลเซียม → เลือก citrate"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 71 ปี มี hypothyroidism และ osteoporosis รับประทาน levothyroxine 75 mcg และ calcium carbonate 1,500 mg 2 เม็ด (elemental Ca 1,200 mg) พร้อมกันครั้งเดียวตอนตื่นนอนขณะท้องว่าง ผล TSH สูงขึ้นจากเดิม ข้อใดเป็นคำแนะนำที่เหมาะสมที่สุด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "รับประทานเหมือนเดิมแต่เพิ่มขนาด levothyroxine เป็น 100 mcg"
+        },
+        {
+          "label": "B",
+          "text": "เพิ่ม calcium carbonate เป็น 4 เม็ดครั้งเดียวเพราะการดูดซึมตอนท้องว่างต่ำ"
+        },
+        {
+          "label": "C",
+          "text": "รับประทาน levothyroxine ตอนท้องว่าง แล้วแบ่ง calcium carbonate เป็นครั้งละ 1 เม็ดพร้อมมื้ออาหาร (เช้าและเย็น) ห่างจาก levothyroxine อย่างน้อย 4 ชั่วโมง"
+        },
+        {
+          "label": "D",
+          "text": "เปลี่ยนเป็น calcium citrate 1,500 mg 2 เม็ดรับประทานพร้อม levothyroxine ได้เลยเพราะไม่ขึ้นกับกรด"
+        }
+      ],
+      "correct_answer": "C",
+      "difficulty": "hard",
+      "explanation": "Calcium carbonate ควรแบ่งให้ครั้งละ ≤500–600 mg elemental พร้อมอาหาร และต้องห่างจาก levothyroxine ≥4 ชั่วโมงเพราะแคลเซียมจับ levothyroxine ลดการดูดซึม (ทำให้ TSH สูง)",
+      "detailed_explanation": {
+        "summary": "Calcium carbonate ควรแบ่งให้ครั้งละ ≤500–600 mg elemental พร้อมอาหาร และต้องห่างจาก levothyroxine ≥4 ชั่วโมงเพราะแคลเซียมจับ levothyroxine ลดการดูดซึม (ทำให้ TSH สูง)",
+        "reason": "โจทย์ถามอะไร: ถามการแก้ปัญหาการใช้แคลเซียมที่ไม่ถูกวิธี ซึ่งทั้งลดการดูดซึมแคลเซียมเองและเกิด drug interaction กับ levothyroxine\n\nหลักการ/กลไกเชิงลึก: (1) การดูดซึมแคลเซียมผ่าน active transport อิ่มตัวได้ ขนาดต่อครั้ง >500–600 mg elemental ดูดซึมได้สัดส่วนน้อยลง จึงควรแบ่งให้ (2) calcium carbonate ต้องอาศัยกรด ควรรับประทานพร้อมอาหาร (3) แคลเซียม (และเหล็ก, antacid) จับ levothyroxine ในทางเดินอาหารเกิดสารที่ไม่ดูดซึม ทำให้ระดับ T4 ลดลงและ TSH สูงขึ้น ต้องรับประทานห่างกันอย่างน้อย 4 ชั่วโมง\n\nทำไมข้อ C ถูก: ข้อ C แก้ไขครบทุกปัญหา: levothyroxine ท้องว่างตอนเช้า, calcium carbonate 1,500 mg 1 เม็ด (600 mg elemental) พร้อมมื้ออาหาร 2 ครั้งที่ห่างจาก levothyroxine ≥4 ชั่วโมง ปริมาณรวมยังคง 1,200 mg elemental\n\nการประยุกต์กับผู้ป่วยจริง: ติดตาม TSH ซ้ำใน 6–8 สัปดาห์หลังแยกเวลาการรับประทาน ก่อนตัดสินใจปรับขนาด levothyroxine และทบทวนว่าแคลเซียมจากอาหารเพียงพออยู่แล้วหรือไม่ เพื่อไม่ให้ได้รับเกิน\n\nจุดที่มักสับสนและกับดักข้อสอบ: การเพิ่มขนาด levothyroxine โดยไม่แก้ interaction เป็นการแก้ที่ปลายเหตุ; calcium citrate ดูดซึมไม่ขึ้นกับกรดก็จริงแต่ยังจับ levothyroxine ได้เหมือนกัน และ calcium citrate 1,500 mg 2 เม็ดให้ elemental เพียงราว 630 mg\n\nสรุปท่องสอบ: แคลเซียม: ≤500–600 mg elemental/ครั้ง, carbonate พร้อมอาหาร, ห่าง levothyroxine ≥4 ชม.",
+        "choices": [
+          {
+            "label": "A",
+            "text": "รับประทานเหมือนเดิมแต่เพิ่มขนาด levothyroxine เป็น 100 mcg",
+            "explanation": "✗ ผิด — ไม่ได้แก้ต้นเหตุคือ interaction ระหว่างแคลเซียมกับ levothyroxine"
+          },
+          {
+            "label": "B",
+            "text": "เพิ่ม calcium carbonate เป็น 4 เม็ดครั้งเดียวเพราะการดูดซึมตอนท้องว่างต่ำ",
+            "explanation": "✗ ผิด — การเพิ่มขนาดต่อครั้งยิ่งทำให้สัดส่วนการดูดซึมลดลงและยังจับ levothyroxine"
+          },
+          {
+            "label": "C",
+            "text": "รับประทาน levothyroxine ตอนท้องว่าง แล้วแบ่ง calcium carbonate เป็นครั้งละ 1 เม็ดพร้อมมื้ออาหาร (เช้าและเย็น) ห่างจาก levothyroxine อย่างน้อย 4 ชั่วโมง",
+            "explanation": "✓ ถูก — แบ่งขนาด รับประทานพร้อมอาหาร และแยกเวลาจาก levothyroxine ≥4 ชั่วโมง"
+          },
+          {
+            "label": "D",
+            "text": "เปลี่ยนเป็น calcium citrate 1,500 mg 2 เม็ดรับประทานพร้อม levothyroxine ได้เลยเพราะไม่ขึ้นกับกรด",
+            "explanation": "✗ ผิด — Calcium citrate ยังจับ levothyroxine ได้ ต้องแยกเวลาเช่นกัน และให้ elemental เพียง ~630 mg"
+          }
+        ],
+        "key_takeaway": "Ca ห่าง levothyroxine ≥4 ชม.; แบ่ง ≤600 mg/ครั้ง"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 64 ปี เพิ่งได้รับการวินิจฉัย osteoporosis แพทย์ต้องการประเมินภาวะ vitamin D ก่อนเริ่ม bisphosphonate การตรวจทางห้องปฏิบัติการและเป้าหมายระดับยาใดเหมาะสมที่สุดสำหรับผู้ป่วยโรคกระดูกพรุน",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ตรวจ serum 25-hydroxyvitamin D [25(OH)D] โดยเป้าหมาย ≥30 ng/mL"
+        },
+        {
+          "label": "B",
+          "text": "ตรวจ serum 1,25-dihydroxyvitamin D [1,25(OH)₂D] โดยเป้าหมาย ≥30 ng/mL"
+        },
+        {
+          "label": "C",
+          "text": "ตรวจ serum 25(OH)D โดยเป้าหมาย ≥100 ng/mL"
+        },
+        {
+          "label": "D",
+          "text": "ตรวจ serum PTH เพียงอย่างเดียวก็เพียงพอในการประเมินภาวะ vitamin D"
+        }
+      ],
+      "correct_answer": "A",
+      "difficulty": "easy",
+      "explanation": "25(OH)D เป็นตัวบ่งชี้สถานะ vitamin D ในร่างกาย (ครึ่งชีวิต ~2–3 สัปดาห์) แนวทาง AACE/BHOF สำหรับผู้ป่วยกระดูกพรุนแนะนำรักษาระดับ ≥30 ng/mL",
+      "detailed_explanation": {
+        "summary": "25(OH)D เป็นตัวบ่งชี้สถานะ vitamin D ในร่างกาย (ครึ่งชีวิต ~2–3 สัปดาห์) แนวทาง AACE/BHOF สำหรับผู้ป่วยกระดูกพรุนแนะนำรักษาระดับ ≥30 ng/mL",
+        "reason": "โจทย์ถามอะไร: ถามการตรวจที่ใช้ประเมิน vitamin D status และเป้าหมายในผู้ป่วยกระดูกพรุน\n\nหลักการ/กลไกเชิงลึก: Vitamin D (D2/D3) ถูก hydroxylate ที่ตับเป็น 25(OH)D ซึ่งเป็นรูปที่หมุนเวียนมากที่สุดและครึ่งชีวิตยาว ~2–3 สัปดาห์ จึงสะท้อนปริมาณสะสม ส่วน 1,25(OH)₂D (calcitriol) สร้างที่ไตภายใต้การควบคุมของ PTH ครึ่งชีวิตสั้นเพียงชั่วโมง และอาจปกติหรือสูงในภาวะขาด vitamin D เพราะ PTH กระตุ้น 1α-hydroxylase\n\nทำไมข้อ A ถูก: AACE 2020 และ BHOF แนะนำระดับ 25(OH)D ≥30 ng/mL (75 nmol/L) ในผู้ป่วยกระดูกพรุน เพื่อให้การดูดซึมแคลเซียมเหมาะสม ลด secondary hyperparathyroidism และลดความเสี่ยง hypocalcemia เมื่อได้ยาต้านการสลายกระดูกโดยเฉพาะ zoledronic acid และ denosumab\n\nการประยุกต์กับผู้ป่วยจริง: ถ้าผู้ป่วยขาด vitamin D ควรเสริมให้ปกติก่อน IV bisphosphonate/denosumab ในไทยมักใช้ ergocalciferol (vitamin D2) 20,000 IU ตามบัญชียาหลัก แล้วตรวจซ้ำหลังเสริม ~3 เดือน\n\nจุดที่มักสับสนและกับดักข้อสอบ: ระดับ >100–150 ng/mL เสี่ยง toxicity (hypercalcemia) ไม่ใช่เป้าหมาย; PTH สูงเป็นผลตามมาของการขาด vitamin D แต่ไม่จำเพาะและไม่ใช่ตัวประเมินหลัก\n\nสรุปท่องสอบ: Vitamin D status = 25(OH)D; เป้าหมายผู้ป่วยกระดูกพรุน ≥30 ng/mL",
+        "choices": [
+          {
+            "label": "A",
+            "text": "ตรวจ serum 25-hydroxyvitamin D [25(OH)D] โดยเป้าหมาย ≥30 ng/mL",
+            "explanation": "✓ ถูก — 25(OH)D สะท้อนสถานะ vitamin D และเป้าหมาย ≥30 ng/mL ตาม AACE/BHOF"
+          },
+          {
+            "label": "B",
+            "text": "ตรวจ serum 1,25-dihydroxyvitamin D [1,25(OH)₂D] โดยเป้าหมาย ≥30 ng/mL",
+            "explanation": "✗ ผิด — 1,25(OH)₂D ครึ่งชีวิตสั้นและอาจปกติแม้ขาด vitamin D (หน่วยเป็น pg/mL ด้วย)"
+          },
+          {
+            "label": "C",
+            "text": "ตรวจ serum 25(OH)D โดยเป้าหมาย ≥100 ng/mL",
+            "explanation": "✗ ผิด — ระดับ ≥100 ng/mL ใกล้ช่วงที่เป็นพิษ ไม่ใช่เป้าหมาย"
+          },
+          {
+            "label": "D",
+            "text": "ตรวจ serum PTH เพียงอย่างเดียวก็เพียงพอในการประเมินภาวะ vitamin D",
+            "explanation": "✗ ผิด — PTH ไม่จำเพาะต่อภาวะขาด vitamin D ใช้ประกอบได้แต่ไม่ใช่ตัวหลัก"
+          }
+        ],
+        "key_takeaway": "วัด 25(OH)D ไม่ใช่ 1,25(OH)₂D — เป้า ≥30 ng/mL"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 62 ปี เป็นมะเร็งเต้านมชนิด hormone receptor-positive หลังผ่าตัด ผล DXA T-score femoral neck −2.7 ยาที่ใช้ปัจจุบัน: anastrozole 1 mg/วัน, amlodipine 5 mg/วัน, metformin 1,000 mg/วัน, atorvastatin 20 mg/วัน ยาใดน่าจะเป็นสาเหตุทุติยภูมิของการสูญเสียมวลกระดูกมากที่สุด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Amlodipine"
+        },
+        {
+          "label": "B",
+          "text": "Anastrozole"
+        },
+        {
+          "label": "C",
+          "text": "Metformin"
+        },
+        {
+          "label": "D",
+          "text": "Atorvastatin"
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "medium",
+      "explanation": "Aromatase inhibitor (anastrozole, letrozole) กดการสร้าง estrogen ในหญิงวัยหมดประจำเดือนจนเกือบหมด ทำให้ bone loss เร็วและเพิ่มความเสี่ยงกระดูกหัก",
+      "detailed_explanation": {
+        "summary": "Aromatase inhibitor (anastrozole, letrozole) กดการสร้าง estrogen ในหญิงวัยหมดประจำเดือนจนเกือบหมด ทำให้ bone loss เร็วและเพิ่มความเสี่ยงกระดูกหัก",
+        "reason": "โจทย์ถามอะไร: ให้ระบุยาที่เป็น secondary cause ของ osteoporosis จากรายการยาของผู้ป่วย\n\nหลักการ/กลไกเชิงลึก: หลังหมดประจำเดือน estrogen ส่วนใหญ่มาจาก aromatization ของ androgen ที่เนื้อเยื่อไขมัน aromatase inhibitor ยับยั้งขั้นตอนนี้ ทำให้ estradiol ต่ำมาก osteoclast ทำงานมากขึ้น BMD ลดลงราว 1–3% ต่อปีและความเสี่ยงกระดูกหักเพิ่มขึ้น ยาอื่นที่ทำให้กระดูกพรุนทุติยภูมิ: glucocorticoid, androgen deprivation therapy, thyroid hormone เกินขนาด, enzyme-inducing antiepileptics, heparin ระยะยาว, thiazolidinediones, PPI ระยะยาว, medroxyprogesterone depot และ SGLT2i (canagliflozin)\n\nทำไมข้อ B ถูก: ในรายการนี้มีเพียง anastrozole ที่สัมพันธ์ชัดเจนกับ bone loss ผู้ป่วยรายนี้ T-score −2.7 ควรได้ bisphosphonate (เช่น zoledronic acid หรือ alendronate) หรือ denosumab ตามแนวทาง AI-associated bone loss ร่วมกับ calcium/vitamin D\n\nการประยุกต์กับผู้ป่วยจริง: เภสัชกรควรแนะนำตรวจ DXA ก่อนเริ่ม AI และทุก 1–2 ปีระหว่างใช้ ไม่ควรหยุด AI เองเพราะเป็นการรักษามะเร็ง\n\nจุดที่มักสับสนและกับดักข้อสอบ: กับดัก: tamoxifen ในหญิงวัยหมดประจำเดือนกลับช่วยรักษามวลกระดูก (agonist ที่กระดูก) ต่างจาก AI; statin และ metformin ไม่ได้ทำให้กระดูกพรุน ส่วน amlodipine ไม่มีผลต่อกระดูก (ระวังเพียงการล้มจาก hypotension)\n\nสรุปท่องสอบ: AI (anastrozole/letrozole/exemestane) = bone loss; tamoxifen (postmenopause) = bone-protective",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Amlodipine",
+            "explanation": "✗ ผิด — Amlodipine ไม่มีผลทำให้มวลกระดูกลดลง"
+          },
+          {
+            "label": "B",
+            "text": "Anastrozole",
+            "explanation": "✓ ถูก — Aromatase inhibitor ทำให้ estrogen ต่ำมาก เป็นสาเหตุ bone loss ที่สำคัญ"
+          },
+          {
+            "label": "C",
+            "text": "Metformin",
+            "explanation": "✗ ผิด — Metformin ไม่สัมพันธ์กับการสูญเสียมวลกระดูก (ต่างจาก thiazolidinedione)"
+          },
+          {
+            "label": "D",
+            "text": "Atorvastatin",
+            "explanation": "✗ ผิด — Statin ไม่ทำให้กระดูกพรุน"
+          }
+        ],
+        "key_takeaway": "ผู้ป่วยมะเร็งเต้านมที่ใช้ AI → ตรวจ DXA และป้องกันกระดูกพรุน"
+      }
+    },
+    {
+      "scenario": "ข้อใดต่อไปนี้ ไม่ได้ เป็นปัจจัยที่นำมาใช้คำนวณใน FRAX® เพื่อประเมินความเสี่ยงกระดูกหักใน 10 ปี",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ประวัติบิดาหรือมารดากระดูกสะโพกหัก"
+        },
+        {
+          "label": "B",
+          "text": "การใช้ glucocorticoid ชนิดรับประทาน (เช่น prednisolone ≥5 mg/วัน นาน ≥3 เดือน)"
+        },
+        {
+          "label": "C",
+          "text": "ประวัติการหกล้ม (history of falls) ในปีที่ผ่านมา"
+        },
+        {
+          "label": "D",
+          "text": "การเป็นโรค rheumatoid arthritis"
+        }
+      ],
+      "correct_answer": "C",
+      "difficulty": "medium",
+      "explanation": "FRAX ใช้อายุ เพศ น้ำหนัก ส่วนสูง ประวัติกระดูกหัก ประวัติบิดามารดาสะโพกหัก การสูบบุหรี่ glucocorticoid, RA, secondary osteoporosis, แอลกอฮอล์ ≥3 units/วัน และ BMD ที่ femoral neck แต่ไม่รวมประวัติการหกล้ม",
+      "detailed_explanation": {
+        "summary": "FRAX ใช้อายุ เพศ น้ำหนัก ส่วนสูง ประวัติกระดูกหัก ประวัติบิดามารดาสะโพกหัก การสูบบุหรี่ glucocorticoid, RA, secondary osteoporosis, แอลกอฮอล์ ≥3 units/วัน และ BMD ที่ femoral neck แต่ไม่รวมประวัติการหกล้ม",
+        "reason": "โจทย์ถามอะไร: ถามองค์ประกอบของเครื่องมือ FRAX\n\nหลักการ/กลไกเชิงลึก: FRAX (WHO/University of Sheffield) คำนวณ 10-year probability ของ major osteoporotic fracture และ hip fracture โดยปรับตามประเทศ (มี FRAX Thailand) ปัจจัยที่ใช้: อายุ 40–90 ปี, เพศ, น้ำหนัก, ส่วนสูง, เคยกระดูกหักจากแรงกระทำน้อย, บิดา/มารดาสะโพกหัก, สูบบุหรี่ปัจจุบัน, glucocorticoid รับประทาน (≥5 mg prednisolone ≥3 เดือน), RA, secondary osteoporosis, แอลกอฮอล์ ≥3 units/วัน และ femoral neck BMD (ใส่หรือไม่ใส่ก็ได้)\n\nทำไมข้อ C ถูก: ประวัติการหกล้มเป็นปัจจัยเสี่ยงกระดูกหักที่สำคัญ แต่ FRAX ไม่ได้นำมาคำนวณ จึงอาจประเมินความเสี่ยงต่ำเกินจริงในผู้ที่หกล้มบ่อย\n\nการประยุกต์กับผู้ป่วยจริง: ข้อจำกัดอื่นของ FRAX ที่ควรรู้: ไม่คิดขนาดยา glucocorticoid (ต้องปรับเพิ่มเมื่อขนาดสูง), ไม่ใช้ lumbar spine BMD, ไม่คิดจำนวนกระดูกหักหรือระยะเวลาที่หัก (recent fracture = imminent risk), ไม่คิดโรคเบาหวานชนิดที่ 2 และไม่ใช้ในผู้ที่กำลังรักษาด้วยยากระดูกพรุนอยู่\n\nจุดที่มักสับสนและกับดักข้อสอบ: กับดัก: RA และ glucocorticoid ถูกรวมใน FRAX (เป็นข้อสอบบ่อย) ส่วน 'secondary osteoporosis' จะไม่ถูกนับเพิ่มถ้าใส่ BMD แล้ว เพราะถือว่าผลผ่านทาง BMD\n\nสรุปท่องสอบ: FRAX ไม่รวม: falls, spine BMD, ขนาด steroid, จำนวนกระดูกหัก",
+        "choices": [
+          {
+            "label": "A",
+            "text": "ประวัติบิดาหรือมารดากระดูกสะโพกหัก",
+            "explanation": "✗ ผิด — Parental hip fracture เป็นหนึ่งในปัจจัยของ FRAX"
+          },
+          {
+            "label": "B",
+            "text": "การใช้ glucocorticoid ชนิดรับประทาน (เช่น prednisolone ≥5 mg/วัน นาน ≥3 เดือน)",
+            "explanation": "✗ ผิด — Oral glucocorticoid เป็นปัจจัยของ FRAX (แบบ yes/no)"
+          },
+          {
+            "label": "C",
+            "text": "ประวัติการหกล้ม (history of falls) ในปีที่ผ่านมา",
+            "explanation": "✓ ถูก — ประวัติการหกล้มไม่ได้อยู่ในการคำนวณ FRAX"
+          },
+          {
+            "label": "D",
+            "text": "การเป็นโรค rheumatoid arthritis",
+            "explanation": "✗ ผิด — Rheumatoid arthritis เป็นปัจจัยของ FRAX โดยตรง"
+          }
+        ],
+        "key_takeaway": "FRAX ไม่นับ falls และใช้ femoral neck BMD เท่านั้น"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 66 ปี ไม่เคยกระดูกหัก ผล DXA: T-score femoral neck −1.9, lumbar spine −1.6 คำนวณ FRAX ได้ 10-year probability ของ hip fracture 3.4% และ major osteoporotic fracture 14% ตามเกณฑ์ NOF/BHOF ข้อใดถูกต้องที่สุด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ไม่ต้องรักษาด้วยยา เพราะยังไม่ถึงเกณฑ์ T-score ≤ −2.5"
+        },
+        {
+          "label": "B",
+          "text": "ตรวจ DXA ซ้ำใน 5 ปีแล้วค่อยตัดสินใจ"
+        },
+        {
+          "label": "C",
+          "text": "รักษาด้วยยาเมื่อ FRAX ทั้ง hip ≥3% และ major ≥20% เท่านั้น จึงยังไม่ต้องรักษา"
+        },
+        {
+          "label": "D",
+          "text": "ควรพิจารณาเริ่มยารักษาโรคกระดูกพรุน เพราะ FRAX hip fracture ≥3% ในผู้ที่มี osteopenia"
+        }
+      ],
+      "correct_answer": "D",
+      "difficulty": "hard",
+      "explanation": "ตามเกณฑ์ NOF/BHOF ผู้ที่ T-score −1.0 ถึง −2.5 ให้พิจารณารักษาด้วยยาเมื่อ FRAX hip ≥3% หรือ major osteoporotic ≥20% อย่างใดอย่างหนึ่ง ผู้ป่วยรายนี้ hip 3.4% จึงเข้าเกณฑ์",
+      "detailed_explanation": {
+        "summary": "ตามเกณฑ์ NOF/BHOF ผู้ที่ T-score −1.0 ถึง −2.5 ให้พิจารณารักษาด้วยยาเมื่อ FRAX hip ≥3% หรือ major osteoporotic ≥20% อย่างใดอย่างหนึ่ง ผู้ป่วยรายนี้ hip 3.4% จึงเข้าเกณฑ์",
+        "reason": "โจทย์ถามอะไร: ถามการใช้ FRAX ตัดสินใจรักษาในผู้ป่วย osteopenia ที่ยังไม่มีกระดูกหัก\n\nหลักการ/กลไกเชิงลึก: NOF/BHOF (และ AACE) แนะนำรักษาด้วยยาในหญิงวัยหมดประจำเดือน/ชาย ≥50 ปี เมื่อ (1) hip หรือ vertebral fracture, (2) T-score ≤ −2.5 ที่ femoral neck, total hip หรือ spine หรือ (3) T-score −1.0 ถึง −2.5 ร่วมกับ FRAX 10-year probability hip fracture ≥3% หรือ major osteoporotic fracture ≥20% (ใช้ 'หรือ' ไม่ใช่ 'และ')\n\nทำไมข้อ D ถูก: ผู้ป่วยมี osteopenia และ FRAX hip 3.4% ≥3% จึงเข้าเกณฑ์เริ่มยา (เช่น alendronate) แม้ major 14% จะยังต่ำกว่า 20% ก็ตาม\n\nการประยุกต์กับผู้ป่วยจริง: ในทางปฏิบัติ ประเทศไทยมี FRAX Thailand และเกณฑ์ intervention threshold ที่ปรับตามอายุ (คล้าย NOGG) แต่หลักคือ osteopenia ไม่ได้แปลว่า 'ไม่ต้องรักษา' ต้องประเมินความเสี่ยงสัมบูรณ์ ร่วมกับแก้ปัจจัยเสี่ยง ป้องกันการหกล้ม และ calcium/vitamin D\n\nจุดที่มักสับสนและกับดักข้อสอบ: กับดักหลักคือคิดว่าต้อง T-score ≤ −2.5 เท่านั้นจึงจะรักษา หรือจำว่าต้องผ่านทั้ง 2 เกณฑ์ FRAX; ถ้าความเสี่ยงสูงไม่ควรรอ 5 ปี\n\nสรุปท่องสอบ: Osteopenia + FRAX hip ≥3% หรือ MOF ≥20% → รักษาด้วยยา",
+        "choices": [
+          {
+            "label": "A",
+            "text": "ไม่ต้องรักษาด้วยยา เพราะยังไม่ถึงเกณฑ์ T-score ≤ −2.5",
+            "explanation": "✗ ผิด — Osteopenia ที่มี FRAX สูงก็ควรรักษา ไม่จำเป็นต้องรอ T-score ≤ −2.5"
+          },
+          {
+            "label": "B",
+            "text": "ตรวจ DXA ซ้ำใน 5 ปีแล้วค่อยตัดสินใจ",
+            "explanation": "✗ ผิด — ผู้ป่วยเข้าเกณฑ์รักษาแล้ว การรอ 5 ปีทำให้เสียโอกาสป้องกันกระดูกหัก"
+          },
+          {
+            "label": "C",
+            "text": "รักษาด้วยยาเมื่อ FRAX ทั้ง hip ≥3% และ major ≥20% เท่านั้น จึงยังไม่ต้องรักษา",
+            "explanation": "✗ ผิด — เกณฑ์ใช้ 'หรือ' ไม่ใช่ 'และ' เข้าเกณฑ์ข้อใดข้อหนึ่งก็พิจารณารักษา"
+          },
+          {
+            "label": "D",
+            "text": "ควรพิจารณาเริ่มยารักษาโรคกระดูกพรุน เพราะ FRAX hip fracture ≥3% ในผู้ที่มี osteopenia",
+            "explanation": "✓ ถูก — FRAX hip 3.4% ≥3% เข้าเกณฑ์เริ่มยาตาม NOF/BHOF"
+          }
+        ],
+        "key_takeaway": "FRAX threshold: hip ≥3% OR MOF ≥20%"
+      }
+    },
+    {
+      "scenario": "ในการตรวจ DXA เพื่อวินิจฉัยโรคกระดูกพรุน ผู้ป่วยในข้อใดที่ควรตรวจ BMD ที่ distal one-third (33%) radius เพิ่มเติม มากที่สุด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ผู้ป่วยหญิงอายุ 60 ปี ที่มี primary hyperparathyroidism"
+        },
+        {
+          "label": "B",
+          "text": "ผู้ป่วยหญิงอายุ 55 ปี ไม่มีโรคร่วม ตรวจคัดกรองครั้งแรก"
+        },
+        {
+          "label": "C",
+          "text": "ผู้ป่วยหญิงอายุ 70 ปี ที่ใช้ alendronate มา 2 ปี และต้องการติดตามผลการรักษา"
+        },
+        {
+          "label": "D",
+          "text": "ผู้ป่วยหญิงอายุ 65 ปี ที่เคยได้ glucocorticoid ระยะสั้น 2 สัปดาห์"
+        }
+      ],
+      "correct_answer": "A",
+      "difficulty": "hard",
+      "explanation": "ISCD แนะนำตรวจ 1/3 radius เมื่อวัด hip หรือ spine ไม่ได้/แปลผลไม่ได้, ผู้ป่วยอ้วนเกินขีดจำกัดเครื่อง และใน hyperparathyroidism ซึ่ง PTH ทำให้ cortical bone สูญเสียมาก",
+      "detailed_explanation": {
+        "summary": "ISCD แนะนำตรวจ 1/3 radius เมื่อวัด hip หรือ spine ไม่ได้/แปลผลไม่ได้, ผู้ป่วยอ้วนเกินขีดจำกัดเครื่อง และใน hyperparathyroidism ซึ่ง PTH ทำให้ cortical bone สูญเสียมาก",
+        "reason": "โจทย์ถามอะไร: ถามตำแหน่งการวัด BMD และข้อบ่งชี้การวัดที่ forearm\n\nหลักการ/กลไกเชิงลึก: ISCD กำหนดให้วัด BMD ที่ lumbar spine (L1–L4) และ hip (femoral neck, total hip) แล้วใช้ T-score ต่ำสุดในการวินิจฉัย (ไม่ใช้ Ward's area หรือ greater trochanter) ส่วน 33% radius ของแขนข้างไม่ถนัดใช้เมื่อ (1) วัดหรือแปลผล hip/spine ไม่ได้ (เช่น ข้อสะโพกเทียมทั้งสองข้าง, กระดูกสันหลังเสื่อมมาก/เคยผ่าตัด), (2) hyperparathyroidism, (3) น้ำหนักเกินขีดจำกัดของโต๊ะ DXA\n\nทำไมข้อ A ถูก: PTH ที่สูงเรื้อรังทำให้สูญเสีย cortical bone มากกว่า trabecular bone ส่วน 1/3 radius เป็น cortical bone เกือบทั้งหมด จึงไวต่อการตรวจพบ bone loss ในผู้ป่วย primary hyperparathyroidism และใช้ประกอบการตัดสินใจผ่าตัด parathyroid (T-score ≤ −2.5 ที่ตำแหน่งใดก็ตาม)\n\nการประยุกต์กับผู้ป่วยจริง: การติดตามผลการรักษาไม่ใช้ forearm เพราะเปลี่ยนแปลงน้อยและ precision ต่ำ ควรใช้ spine และ total hip เภสัชกรควรรู้ว่าการเปรียบเทียบต้องใช้เครื่องเดียวกันและเทียบกับ least significant change\n\nจุดที่มักสับสนและกับดักข้อสอบ: กับดัก: คิดว่า forearm ใช้คัดกรองทั่วไปหรือติดตามผลการรักษาได้ และ glucocorticoid ระยะสั้นไม่ใช่ข้อบ่งชี้วัด forearm (GIOP มีผลต่อ trabecular bone ที่ spine มากกว่า)\n\nสรุปท่องสอบ: 1/3 radius: hip/spine ใช้ไม่ได้, hyperparathyroidism, อ้วนเกินเครื่อง",
+        "choices": [
+          {
+            "label": "A",
+            "text": "ผู้ป่วยหญิงอายุ 60 ปี ที่มี primary hyperparathyroidism",
+            "explanation": "✓ ถูก — Hyperparathyroidism ทำให้ cortical bone loss เด่น เป็นข้อบ่งชี้วัด 1/3 radius"
+          },
+          {
+            "label": "B",
+            "text": "ผู้ป่วยหญิงอายุ 55 ปี ไม่มีโรคร่วม ตรวจคัดกรองครั้งแรก",
+            "explanation": "✗ ผิด — การคัดกรองทั่วไปใช้ spine และ hip เท่านั้น"
+          },
+          {
+            "label": "C",
+            "text": "ผู้ป่วยหญิงอายุ 70 ปี ที่ใช้ alendronate มา 2 ปี และต้องการติดตามผลการรักษา",
+            "explanation": "✗ ผิด — การติดตามผลการรักษาใช้ spine/total hip ไม่ใช้ forearm"
+          },
+          {
+            "label": "D",
+            "text": "ผู้ป่วยหญิงอายุ 65 ปี ที่เคยได้ glucocorticoid ระยะสั้น 2 สัปดาห์",
+            "explanation": "✗ ผิด — Glucocorticoid ระยะสั้นไม่ใช่ข้อบ่งชี้ และ steroid กระทบ trabecular bone (spine) มากกว่า"
+          }
+        ],
+        "key_takeaway": "PTH สูง → cortical loss → วัด 1/3 radius"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยชายอายุ 68 ปี มี vertebral fracture จากการยกของเบา ๆ T-score femoral neck −2.8 ระดับ testosterone ปกติ ไม่มีสาเหตุทุติยภูมิอื่น CrCl 70 mL/min ยาใดไม่เหมาะสมในการรักษาโรคกระดูกพรุนในผู้ป่วยรายนี้",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Alendronate 70 mg รับประทานสัปดาห์ละครั้ง"
+        },
+        {
+          "label": "B",
+          "text": "Raloxifene 60 mg รับประทานวันละครั้ง"
+        },
+        {
+          "label": "C",
+          "text": "Zoledronic acid 5 mg IV ปีละครั้ง"
+        },
+        {
+          "label": "D",
+          "text": "Denosumab 60 mg SC ทุก 6 เดือน"
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "medium",
+      "explanation": "Raloxifene ได้รับการรับรองเฉพาะหญิงวัยหมดประจำเดือน ไม่มีหลักฐานลดกระดูกหักในผู้ชาย ส่วน alendronate, risedronate, zoledronic acid, denosumab และ teriparatide มีข้อบ่งใช้ใน male osteoporosis",
+      "detailed_explanation": {
+        "summary": "Raloxifene ได้รับการรับรองเฉพาะหญิงวัยหมดประจำเดือน ไม่มีหลักฐานลดกระดูกหักในผู้ชาย ส่วน alendronate, risedronate, zoledronic acid, denosumab และ teriparatide มีข้อบ่งใช้ใน male osteoporosis",
+        "reason": "โจทย์ถามอะไร: ถามการเลือกยารักษาโรคกระดูกพรุนในผู้ชาย\n\nหลักการ/กลไกเชิงลึก: Endocrine Society guideline สำหรับ osteoporosis ในผู้ชาย แนะนำรักษาด้วยยาในชาย ≥50 ปีที่มี hip/vertebral fracture, T-score ≤ −2.5 หรือ osteopenia ที่ FRAX สูง ยาที่มีหลักฐาน/ข้อบ่งใช้ในผู้ชาย: alendronate, risedronate, zoledronic acid, denosumab, teriparatide (และ abaloparatide ได้รับอนุมัติเพิ่มในชาย) ขณะที่ raloxifene ซึ่งเป็น SERM ศึกษาเฉพาะหญิงวัยหมดประจำเดือน\n\nทำไมข้อ B ถูก: Raloxifene ไม่มีข้อบ่งใช้และไม่มีหลักฐานลดกระดูกหักในผู้ชาย จึงไม่เหมาะสม ข้ออื่นใช้ได้และผู้ป่วยมี CrCl 70 ผ่านเกณฑ์ bisphosphonate\n\nการประยุกต์กับผู้ป่วยจริง: ในผู้ชายควรหาสาเหตุทุติยภูมิเสมอ (hypogonadism, glucocorticoid, ADT, แอลกอฮอล์, hyperparathyroidism, hypercalciuria, multiple myeloma) หากมี hypogonadism การให้ testosterone ช่วยเพิ่ม BMD ได้แต่ไม่ใช่ยาหลักในผู้ที่เสี่ยงกระดูกหักสูง ต้องให้ยารักษากระดูกพรุนเฉพาะร่วมด้วย\n\nจุดที่มักสับสนและกับดักข้อสอบ: ผู้ชายที่ได้ androgen deprivation therapy จากมะเร็งต่อมลูกหมากมีข้อมูลสนับสนุน denosumab และ bisphosphonate; ระวังสับสนกับ toremifene (SERM ที่ศึกษาใน ADT) ซึ่งไม่ใช่ raloxifene\n\nสรุปท่องสอบ: Male osteoporosis: BP, denosumab, teriparatide ใช้ได้ — raloxifene (หญิงเท่านั้น) ใช้ไม่ได้",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Alendronate 70 mg รับประทานสัปดาห์ละครั้ง",
+            "explanation": "✗ ผิด — Alendronate มีข้อบ่งใช้ใน male osteoporosis"
+          },
+          {
+            "label": "B",
+            "text": "Raloxifene 60 mg รับประทานวันละครั้ง",
+            "explanation": "✓ ถูก — Raloxifene รับรองเฉพาะหญิงวัยหมดประจำเดือน ไม่มีหลักฐานในผู้ชาย"
+          },
+          {
+            "label": "C",
+            "text": "Zoledronic acid 5 mg IV ปีละครั้ง",
+            "explanation": "✗ ผิด — Zoledronic acid มีข้อบ่งใช้ในผู้ชาย และ CrCl 70 ใช้ได้"
+          },
+          {
+            "label": "D",
+            "text": "Denosumab 60 mg SC ทุก 6 เดือน",
+            "explanation": "✗ ผิด — Denosumab มีข้อบ่งใช้ในผู้ชาย รวมถึงผู้ที่ได้ ADT"
+          }
+        ],
+        "key_takeaway": "ผู้ชายกระดูกพรุน: ทุกยาใช้ได้ ยกเว้น raloxifene"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 67 ปี เริ่ม alendronate 70 mg สัปดาห์ละครั้งเพื่อรักษาโรคกระดูกพรุน ข้อใดเป็นแนวทางการติดตามผลการรักษาด้วย BMD ที่เหมาะสมที่สุด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ตรวจ DXA ทุก 3 เดือนเพื่อปรับขนาดยา"
+        },
+        {
+          "label": "B",
+          "text": "ไม่ต้องตรวจ DXA ซ้ำเลยตลอดการรักษา"
+        },
+        {
+          "label": "C",
+          "text": "ตรวจ DXA ที่ distal forearm ทุก 6 เดือนเพราะตอบสนองต่อยาเร็วที่สุด"
+        },
+        {
+          "label": "D",
+          "text": "ตรวจ DXA ที่ lumbar spine และ total hip ซ้ำทุก 1–2 ปี ด้วยเครื่องเดิม และเทียบการเปลี่ยนแปลงกับ least significant change (LSC)"
+        }
+      ],
+      "correct_answer": "D",
+      "difficulty": "easy",
+      "explanation": "การติดตามผลการรักษาทำโดยตรวจ DXA ที่ spine และ total hip ทุก 1–2 ปี ด้วยเครื่องเดิม และพิจารณาว่าการเปลี่ยนแปลงมีนัยสำคัญเมื่อเกิน LSC",
+      "detailed_explanation": {
+        "summary": "การติดตามผลการรักษาทำโดยตรวจ DXA ที่ spine และ total hip ทุก 1–2 ปี ด้วยเครื่องเดิม และพิจารณาว่าการเปลี่ยนแปลงมีนัยสำคัญเมื่อเกิน LSC",
+        "reason": "โจทย์ถามอะไร: ถามความถี่และวิธีการติดตาม BMD ระหว่างรักษาโรคกระดูกพรุน\n\nหลักการ/กลไกเชิงลึก: BMD เปลี่ยนแปลงช้า (ปีละประมาณ 1–5%) ขณะที่ความคลาดเคลื่อนของการวัด (precision error) อยู่ราว 1–2% การวัดถี่เกินไปจึงแยกการเปลี่ยนแปลงจริงจาก error ไม่ได้ ISCD แนะนำให้แต่ละศูนย์คำนวณ LSC (= 2.77 × precision error) และใช้เครื่องเดียวกัน เพราะ BMD (g/cm²) ต่างเครื่อง/ต่างยี่ห้อเทียบกันตรง ๆ ไม่ได้\n\nทำไมข้อ D ถูก: AACE/BHOF แนะนำตรวจ DXA ซ้ำ 1–2 ปีหลังเริ่มยา แล้วเมื่อคงที่อาจห่างขึ้น โดยดู lumbar spine และ total hip (ไม่ใช่ forearm) ข้อ D จึงถูกต้อง\n\nการประยุกต์กับผู้ป่วยจริง: หาก BMD ลดลงเกิน LSC หรือเกิดกระดูกหักใหม่ระหว่างรักษา ให้ประเมินความร่วมมือในการใช้ยา วิธีรับประทาน alendronate และสาเหตุทุติยภูมิ (ขาด vitamin D, hyperparathyroidism, celiac) ก่อนเปลี่ยนยา อาจใช้ bone turnover marker (CTX, P1NP) ประกอบการติดตามระยะสั้นได้\n\nจุดที่มักสับสนและกับดักข้อสอบ: กับดัก: forearm ไม่ใช่ตำแหน่งติดตามผล; การวัดทุก 3–6 เดือนไม่มีประโยชน์; การไม่ติดตามเลยทำให้ไม่ทราบผลการรักษาและเวลาที่เหมาะกับ drug holiday\n\nสรุปท่องสอบ: Monitor BMD: spine + total hip ทุก 1–2 ปี เครื่องเดิม เทียบ LSC",
+        "choices": [
+          {
+            "label": "A",
+            "text": "ตรวจ DXA ทุก 3 เดือนเพื่อปรับขนาดยา",
+            "explanation": "✗ ผิด — BMD เปลี่ยนช้ากว่าความคลาดเคลื่อนของการวัดในช่วง 3 เดือน และไม่ใช้ปรับขนาดยา"
+          },
+          {
+            "label": "B",
+            "text": "ไม่ต้องตรวจ DXA ซ้ำเลยตลอดการรักษา",
+            "explanation": "✗ ผิด — ควรติดตาม BMD เพื่อประเมินการตอบสนองและวางแผนระยะยาว"
+          },
+          {
+            "label": "C",
+            "text": "ตรวจ DXA ที่ distal forearm ทุก 6 เดือนเพราะตอบสนองต่อยาเร็วที่สุด",
+            "explanation": "✗ ผิด — Forearm ไม่ใช้ติดตามผลการรักษา"
+          },
+          {
+            "label": "D",
+            "text": "ตรวจ DXA ที่ lumbar spine และ total hip ซ้ำทุก 1–2 ปี ด้วยเครื่องเดิม และเทียบการเปลี่ยนแปลงกับ least significant change (LSC)",
+            "explanation": "✓ ถูก — ตรงตามแนวทาง ISCD/AACE: 1–2 ปี เครื่องเดิม เทียบ LSC"
+          }
+        ],
+        "key_takeaway": "ติดตาม BMD ทุก 1–2 ปี ที่ spine/hip ด้วยเครื่องเดิม"
+      }
+    }
+  ]
+}

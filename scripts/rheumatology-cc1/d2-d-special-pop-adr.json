@@ -1,0 +1,1025 @@
+{
+  "exam_day": 2,
+  "questions": [
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 31 ปี เป็น rheumatoid arthritis ควบคุมโรคได้ดีด้วย hydroxychloroquine 200 mg วันละ 2 ครั้ง ร่วมกับ sulfasalazine 1 g วันละ 2 ครั้ง มาพบเภสัชกรเพราะเพิ่งทราบว่าตั้งครรภ์ได้ 6 สัปดาห์ (ไม่ได้วางแผน) ผู้ป่วยกังวลมากว่ายาจะเป็นอันตรายต่อทารก คำแนะนำใดเหมาะสมที่สุด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "หยุดยาทั้งสองชนิดทันทีจนกว่าจะคลอด แล้วใช้ prednisolone ขนาดสูงแทน"
+        },
+        {
+          "label": "B",
+          "text": "ใช้ hydroxychloroquine และ sulfasalazine ต่อได้ โดยเสริม folic acid ระหว่างตั้งครรภ์"
+        },
+        {
+          "label": "C",
+          "text": "หยุด sulfasalazine เพราะเป็น teratogen แต่ใช้ hydroxychloroquine ต่อ"
+        },
+        {
+          "label": "D",
+          "text": "เปลี่ยนเป็น leflunomide วันละ 20 mg เพราะคุมโรคได้ดีกว่าและใช้ยาชนิดเดียว"
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "easy",
+      "explanation": "HCQ และ SSZ เป็น csDMARD ที่ใช้ได้ (compatible) ตลอดการตั้งครรภ์ตาม ACR 2020 โดยควรเสริม folic acid เมื่อใช้ SSZ; การหยุดยาทำให้โรคกำเริบซึ่งเป็นอันตรายต่อการตั้งครรภ์มากกว่า",
+      "detailed_explanation": {
+        "summary": "HCQ และ SSZ เป็น csDMARD ที่ใช้ได้ (compatible) ตลอดการตั้งครรภ์ตาม ACR 2020 โดยควรเสริม folic acid เมื่อใช้ SSZ; การหยุดยาทำให้โรคกำเริบซึ่งเป็นอันตรายต่อการตั้งครรภ์มากกว่า",
+        "reason": "โจทย์ถามอะไร: ต้องเลือกการจัดการ csDMARD ที่ปลอดภัยในหญิงตั้งครรภ์ RA ที่ตั้งครรภ์โดยไม่ได้วางแผน ขณะได้ HCQ + SSZ\n\nหลักการ/กลไกเชิงลึก: ACR 2020 Reproductive Health Guideline จัด hydroxychloroquine, sulfasalazine, azathioprine, cyclosporine, tacrolimus และ colchicine เป็นยาที่ใช้ต่อได้ระหว่างตั้งครรภ์ ส่วน methotrexate, leflunomide, mycophenolate, cyclophosphamide และ JAK inhibitor ต้องหลีกเลี่ยง SSZ เป็น dihydrofolate reductase inhibitor อ่อน ๆ และยับยั้งการดูดซึม folate จึงแนะนำเสริม folic acid (มักใช้ขนาด ≥0.4 mg/วัน หลายแหล่งแนะนำ 2 mg/วัน) เพื่อลดความเสี่ยง neural tube defect\n\nทำไมข้อ B ถูก: การใช้ HCQ + SSZ ต่อช่วยให้โรคสงบ ซึ่งสัมพันธ์กับผลลัพธ์การตั้งครรภ์ที่ดีกว่า (ลด preterm birth, low birth weight) การหยุด HCQ ยังเพิ่มโอกาส flare อย่างชัดเจน\n\nการประยุกต์กับผู้ป่วยจริง: เภสัชกรควรให้ความมั่นใจผู้ป่วย ทบทวนว่ายาทั้งสองไม่ใช่ teratogen แนะนำกินต่อขนาดเดิม เสริม folic acid และนัดติดตามกับแพทย์โรคข้อและสูติแพทย์ร่วมกัน SSZ ใช้ระหว่างให้นมบุตรได้ในทารกครบกำหนดที่แข็งแรง\n\nจุดที่มักสับสนและกับดักข้อสอบ: กับดักคือคิดว่าตั้งครรภ์ต้องหยุดยาทุกตัว หรือสับสน SSZ (มี sulfa) ว่าห้ามใช้ ความจริง SSZ ใช้ได้; ส่วน prednisolone ขนาดสูงเพิ่มความเสี่ยง GDM ความดันสูง และ PROM ควรใช้ขนาดต่ำสุด leflunomide เป็น teratogen ห้ามใช้เด็ดขาด\n\nสรุปท่องสอบ: Pregnancy-compatible DMARD = HCQ, SSZ (+folic acid), AZA, CNI; ห้าม MTX, LEF, MMF, CYC, JAKi",
+        "choices": [
+          {
+            "label": "A",
+            "text": "หยุดยาทั้งสองชนิดทันทีจนกว่าจะคลอด แล้วใช้ prednisolone ขนาดสูงแทน",
+            "explanation": "✗ ผิด — prednisolone ขนาดสูงมีความเสี่ยงต่อมารดาและทารก และการหยุด DMARD ทำให้ RA กำเริบโดยไม่จำเป็น"
+          },
+          {
+            "label": "B",
+            "text": "ใช้ hydroxychloroquine และ sulfasalazine ต่อได้ โดยเสริม folic acid ระหว่างตั้งครรภ์",
+            "explanation": "✓ ถูก — ทั้งสองยา compatible กับการตั้งครรภ์ และควรเสริม folic acid เมื่อใช้ SSZ"
+          },
+          {
+            "label": "C",
+            "text": "หยุด sulfasalazine เพราะเป็น teratogen แต่ใช้ hydroxychloroquine ต่อ",
+            "explanation": "✗ ผิด — SSZ ไม่ใช่ teratogen และใช้ต่อได้ตลอดการตั้งครรภ์"
+          },
+          {
+            "label": "D",
+            "text": "เปลี่ยนเป็น leflunomide วันละ 20 mg เพราะคุมโรคได้ดีกว่าและใช้ยาชนิดเดียว",
+            "explanation": "✗ ผิด — leflunomide เป็น teratogen ต้องหลีกเลี่ยงในหญิงตั้งครรภ์"
+          }
+        ],
+        "key_takeaway": "ตั้งครรภ์ + RA: HCQ/SSZ ใช้ต่อได้ เสริม folic acid — อย่าหยุดยาเอง"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 29 ปี เป็น RA ใช้ leflunomide 20 mg/วัน มา 2 ปี ต้องการตั้งครรภ์ แพทย์จะหยุด leflunomide และทำ accelerated elimination (washout) ข้อใดถูกต้องที่สุดเกี่ยวกับขั้นตอนนี้",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ให้ activated charcoal 50 g ครั้งเดียว แล้วตั้งครรภ์ได้ทันทีในเดือนถัดไป"
+        },
+        {
+          "label": "B",
+          "text": "หยุดยาเฉย ๆ 3 เดือนก็เพียงพอเช่นเดียวกับ methotrexate"
+        },
+        {
+          "label": "C",
+          "text": "ให้ cholestyramine 8 g วันละ 3 ครั้ง นาน 11 วัน แล้วตรวจระดับ teriflunomide ให้ <0.02 mg/L สองครั้งห่างกันอย่างน้อย 14 วัน"
+        },
+        {
+          "label": "D",
+          "text": "ให้ folinic acid (leucovorin) 15 mg ทุก 6 ชั่วโมง นาน 3 วัน เพื่อเร่งการกำจัดยา"
+        }
+      ],
+      "correct_answer": "C",
+      "difficulty": "hard",
+      "explanation": "Active metabolite teriflunomide มี enterohepatic recirculation ทำให้ค้างในร่างกายได้นานถึง 2 ปี จึงต้อง washout ด้วย cholestyramine 8 g TID × 11 วัน และยืนยันระดับ <0.02 mg/L สองครั้งห่างกัน ≥14 วัน",
+      "detailed_explanation": {
+        "summary": "Active metabolite teriflunomide มี enterohepatic recirculation ทำให้ค้างในร่างกายได้นานถึง 2 ปี จึงต้อง washout ด้วย cholestyramine 8 g TID × 11 วัน และยืนยันระดับ <0.02 mg/L สองครั้งห่างกัน ≥14 วัน",
+        "reason": "โจทย์ถามอะไร: ถามวิธี accelerated elimination ของ leflunomide ก่อนตั้งครรภ์ ทั้งยา ขนาด ระยะเวลา และเกณฑ์ยืนยัน\n\nหลักการ/กลไกเชิงลึก: leflunomide เปลี่ยนเป็น teriflunomide ซึ่งจับโปรตีนสูง (>99%) มี half-life ยาวประมาณ 2 สัปดาห์ และกลับเข้าสู่ลำไส้ผ่าน enterohepatic recirculation หากหยุดเฉย ๆ ระดับยาอาจลดต่ำกว่า 0.02 mg/L ได้ช้าถึง 2 ปี cholestyramine (bile acid sequestrant) จับยาในลำไส้และตัดวงจรนี้ ทำให้ระดับยาลดลงอย่างรวดเร็ว\n\nทำไมข้อ C ถูก: ขั้นตอนมาตรฐานตามฉลาก: cholestyramine 8 g วันละ 3 ครั้ง × 11 วัน (ไม่จำเป็นต้องต่อเนื่อง) หรือ activated charcoal 50 g ทุก 12 ชั่วโมง × 11 วัน จากนั้นตรวจระดับ teriflunomide สองครั้งห่างกันอย่างน้อย 14 วัน ต้อง <0.02 mg/L ทั้งสองครั้ง\n\nการประยุกต์กับผู้ป่วยจริง: หากตรวจระดับยาไม่ได้ ให้ washout ครบแล้วรอเพิ่มก่อนตั้งครรภ์ เภสัชกรต้องเตือนว่า cholestyramine ลดการดูดซึมยาอื่น ควรกินยาอื่นก่อน 1 ชม. หรือหลัง 4–6 ชม. และอาจเกิดท้องผูก ระหว่างนี้ให้คุมกำเนิดอย่างมีประสิทธิภาพ และเปลี่ยนไปใช้ DMARD ที่ปลอดภัย เช่น HCQ/SSZ\n\nจุดที่มักสับสนและกับดักข้อสอบ: กับดัก: สับสนกับ MTX ที่หยุด 3 เดือน (ไม่ต้อง washout) หรือคิดว่า leucovorin ใช้กับ leflunomide ซึ่งผิดเพราะ leucovorin เป็น antidote ของ MTX; activated charcoal ครั้งเดียวไม่พอ หากตั้งครรภ์ระหว่างใช้ LEF ให้หยุดและ washout ทันที\n\nสรุปท่องสอบ: LEF washout = cholestyramine 8 g TID × 11 d → teriflunomide <0.02 mg/L ×2 ห่าง ≥14 d",
+        "choices": [
+          {
+            "label": "A",
+            "text": "ให้ activated charcoal 50 g ครั้งเดียว แล้วตั้งครรภ์ได้ทันทีในเดือนถัดไป",
+            "explanation": "✗ ผิด — charcoal ต้องให้ 50 g q12h × 11 วัน ครั้งเดียวไม่พอ และยังต้องยืนยันระดับยา"
+          },
+          {
+            "label": "B",
+            "text": "หยุดยาเฉย ๆ 3 เดือนก็เพียงพอเช่นเดียวกับ methotrexate",
+            "explanation": "✗ ผิด — หยุด 3 เดือนเป็นหลักของ MTX ส่วน teriflunomide ค้างได้นานถึง 2 ปีหากไม่ washout"
+          },
+          {
+            "label": "C",
+            "text": "ให้ cholestyramine 8 g วันละ 3 ครั้ง นาน 11 วัน แล้วตรวจระดับ teriflunomide ให้ <0.02 mg/L สองครั้งห่างกันอย่างน้อย 14 วัน",
+            "explanation": "✓ ถูก — เป็นขั้นตอน accelerated elimination มาตรฐานตามฉลากยา"
+          },
+          {
+            "label": "D",
+            "text": "ให้ folinic acid (leucovorin) 15 mg ทุก 6 ชั่วโมง นาน 3 วัน เพื่อเร่งการกำจัดยา",
+            "explanation": "✗ ผิด — leucovorin เป็น antidote ของ MTX ไม่มีผลต่อการกำจัด teriflunomide"
+          }
+        ],
+        "key_takeaway": "Leflunomide ก่อนตั้งครรภ์: ต้อง cholestyramine washout + ตรวจระดับยา"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 33 ปี เป็น RA ตั้งครรภ์ 18 สัปดาห์ ได้ hydroxychloroquine, sulfasalazine และ prednisolone 7.5 mg/วัน แต่โรคยังกำเริบ (DAS28 = 5.4) แพทย์ต้องการเพิ่ม biologic ที่สามารถใช้ต่อได้ตลอดไตรมาสที่ 3 โดยผ่านรกน้อยที่สุด ยาใดเหมาะสมที่สุด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Certolizumab pegol"
+        },
+        {
+          "label": "B",
+          "text": "Tofacitinib"
+        },
+        {
+          "label": "C",
+          "text": "Infliximab"
+        },
+        {
+          "label": "D",
+          "text": "Rituximab"
+        }
+      ],
+      "correct_answer": "A",
+      "difficulty": "medium",
+      "explanation": "Certolizumab pegol เป็น PEGylated Fab' ที่ไม่มีส่วน Fc จึงไม่ถูกขนส่งผ่านรกด้วย FcRn ระดับยาในทารกแทบตรวจไม่พบ ใช้ต่อได้ตลอดการตั้งครรภ์",
+      "detailed_explanation": {
+        "summary": "Certolizumab pegol เป็น PEGylated Fab' ที่ไม่มีส่วน Fc จึงไม่ถูกขนส่งผ่านรกด้วย FcRn ระดับยาในทารกแทบตรวจไม่พบ ใช้ต่อได้ตลอดการตั้งครรภ์",
+        "reason": "โจทย์ถามอะไร: ต้องเลือก biologic สำหรับ RA ระหว่างตั้งครรภ์ที่ผ่านรกน้อยที่สุดและใช้ต่อได้ถึงไตรมาส 3\n\nหลักการ/กลไกเชิงลึก: IgG1 monoclonal antibody ทั่วไปผ่านรกโดยการจับ neonatal Fc receptor (FcRn) ที่ syncytiotrophoblast ซึ่งเพิ่มขึ้นมากหลังอายุครรภ์ 20 สัปดาห์ ทำให้ infliximab และ adalimumab ในทารกแรกเกิดอาจสูงกว่าในมารดา certolizumab เป็น Fab' fragment ต่อ PEG ไม่มี Fc จึงผ่านรกน้อยมาก (การศึกษา CRIB พบระดับในสายสะดือต่ำมากหรือตรวจไม่พบ) และผ่านน้ำนมน้อย\n\nทำไมข้อ A ถูก: ACR 2020 ระบุว่า TNF inhibitor ใช้ต่อได้ระหว่างตั้งครรภ์ โดย certolizumab ใช้ได้ตลอดทั้ง 3 ไตรมาส ส่วนตัวอื่นอาจพิจารณาหยุดหรือเว้นระยะในไตรมาส 3 เพื่อลดการสัมผัสยาของทารก\n\nการประยุกต์กับผู้ป่วยจริง: หากทารกได้รับ anti-TNF ที่ผ่านรกในไตรมาส 3 ควรเลี่ยง live vaccine (เช่น rotavirus, BCG) ในช่วง 6 เดือนแรก ซึ่งเป็นปัญหาน้อยกว่าเมื่อใช้ certolizumab การให้ยาต่อช่วยลดการใช้ steroid ขนาดสูง\n\nจุดที่มักสับสนและกับดักข้อสอบ: tofacitinib (JAKi) เป็น small molecule ผ่านรกได้และข้อมูลไม่พอ ต้องหลีกเลี่ยง rituximab ทำให้ B-cell ทารกลดลงหากให้ช่วงปลายครรภ์และไม่ใช่ทางเลือกแรก infliximab ใช้ได้ช่วงต้นแต่ผ่านรกสูงในไตรมาส 3\n\nสรุปท่องสอบ: ตั้งครรภ์ + ต้องการ anti-TNF ตลอดครรภ์ = certolizumab (ไม่มี Fc → ไม่ผ่าน FcRn)",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Certolizumab pegol",
+            "explanation": "✓ ถูก — ไม่มีส่วน Fc ผ่านรกน้อยที่สุด ใช้ได้ตลอดการตั้งครรภ์"
+          },
+          {
+            "label": "B",
+            "text": "Tofacitinib",
+            "explanation": "✗ ผิด — JAK inhibitor ต้องหลีกเลี่ยงในการตั้งครรภ์เพราะข้อมูลความปลอดภัยไม่พอและผ่านรกได้"
+          },
+          {
+            "label": "C",
+            "text": "Infliximab",
+            "explanation": "✗ ผิด — เป็น IgG1 ที่ผ่านรกมากในไตรมาส 3 ระดับในทารกอาจสูงกว่ามารดา"
+          },
+          {
+            "label": "D",
+            "text": "Rituximab",
+            "explanation": "✗ ผิด — anti-CD20 ทำให้ B-cell depletion ในทารกได้ ไม่เหมาะเป็น biologic ระหว่างตั้งครรภ์"
+          }
+        ],
+        "key_takeaway": "Certolizumab: PEG-Fab' ไม่มี Fc → ผ่านรก/น้ำนมน้อยที่สุด"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 27 ปี เป็น SLE with lupus nephritis class IV ปัจจุบันโรคสงบมา 8 เดือน ด้วย mycophenolate mofetil 1 g วันละ 2 ครั้ง, prednisolone 5 mg/วัน และ hydroxychloroquine 200 mg/วัน ต้องการมีบุตรในปีหน้า แผนการใช้ยาใดเหมาะสมที่สุด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ใช้ mycophenolate ต่อได้ แต่ลดขนาดเหลือ 500 mg วันละ 2 ครั้งเมื่อทราบว่าตั้งครรภ์"
+        },
+        {
+          "label": "B",
+          "text": "หยุดยาทั้งหมดรวมทั้ง hydroxychloroquine 3 เดือนก่อนตั้งครรภ์"
+        },
+        {
+          "label": "C",
+          "text": "เปลี่ยน mycophenolate เป็น methotrexate 15 mg/สัปดาห์ เพราะหยุดได้ใกล้กับการตั้งครรภ์มากกว่า"
+        },
+        {
+          "label": "D",
+          "text": "เปลี่ยน mycophenolate เป็น azathioprine โดยหยุด mycophenolate อย่างน้อย 6 สัปดาห์ก่อนตั้งครรภ์ และติดตามว่าโรคสงบต่อเนื่องก่อนพยายามมีบุตร"
+        }
+      ],
+      "correct_answer": "D",
+      "difficulty": "medium",
+      "explanation": "Mycophenolate เป็น teratogen (embryopathy) ต้องหยุดอย่างน้อย 6 สัปดาห์ก่อนตั้งครรภ์ และเปลี่ยนเป็น azathioprine ซึ่งใช้ได้ในการตั้งครรภ์ ร่วมกับคง HCQ ไว้",
+      "detailed_explanation": {
+        "summary": "Mycophenolate เป็น teratogen (embryopathy) ต้องหยุดอย่างน้อย 6 สัปดาห์ก่อนตั้งครรภ์ และเปลี่ยนเป็น azathioprine ซึ่งใช้ได้ในการตั้งครรภ์ ร่วมกับคง HCQ ไว้",
+        "reason": "โจทย์ถามอะไร: ถามแผนเปลี่ยนยากดภูมิคุ้มกันในหญิง lupus nephritis ที่วางแผนตั้งครรภ์\n\nหลักการ/กลไกเชิงลึก: mycophenolic acid ยับยั้ง IMPDH ทำให้เกิด mycophenolate embryopathy (ปากแหว่งเพดานโหว่ microtia ความผิดปกติของหู ตา หัวใจ) และเพิ่ม first-trimester loss อย่างชัดเจน ACR 2020 แนะนำหยุดอย่างน้อย 6 สัปดาห์ก่อนตั้งครรภ์ azathioprine แม้เป็น antimetabolite แต่ทารกขาด enzyme ที่เปลี่ยนเป็น 6-TGN จึงปลอดภัยพอสมควร ใช้ได้ขนาดไม่เกิน 2 mg/kg/วัน\n\nทำไมข้อ D ถูก: ควรเปลี่ยนเป็น azathioprine แล้วติดตามอย่างน้อย 3–6 เดือนว่าโรคยังสงบบนยาใหม่ เพราะ SLE ที่ active ขณะตั้งครรภ์เพิ่ม preeclampsia, fetal loss และ preterm birth ส่วน HCQ ควรใช้ต่อ\n\nการประยุกต์กับผู้ป่วยจริง: ก่อนเริ่ม azathioprine ควรตรวจ TPMT (และ NUDT15 ในคนเอเชีย) และติดตาม CBC/LFT ต้องคุมกำเนิดจนกว่าจะพร้อม ควรพิจารณา low-dose aspirin เริ่มอายุครรภ์ 12–16 สัปดาห์เพื่อลด preeclampsia ใน lupus\n\nจุดที่มักสับสนและกับดักข้อสอบ: กับดัก: MTX ก็เป็น teratogen ต้องหยุด 1–3 เดือนก่อนตั้งครรภ์ ไม่ใช่ทางเลือก ส่วนการหยุด HCQ เพิ่มความเสี่ยง flare ตัวเลข 3 เดือนเป็นของ MTX ไม่ใช่ MMF (6 สัปดาห์)\n\nสรุปท่องสอบ: MMF → AZA, หยุด MMF ≥6 สัปดาห์ก่อนตั้งครรภ์, คง HCQ",
+        "choices": [
+          {
+            "label": "A",
+            "text": "ใช้ mycophenolate ต่อได้ แต่ลดขนาดเหลือ 500 mg วันละ 2 ครั้งเมื่อทราบว่าตั้งครรภ์",
+            "explanation": "✗ ผิด — mycophenolate เป็น teratogen ทุกขนาด ลดขนาดไม่ช่วย"
+          },
+          {
+            "label": "B",
+            "text": "หยุดยาทั้งหมดรวมทั้ง hydroxychloroquine 3 เดือนก่อนตั้งครรภ์",
+            "explanation": "✗ ผิด — การหยุด HCQ ทำให้ lupus กำเริบและไม่จำเป็น เพราะ HCQ ใช้ได้ระหว่างตั้งครรภ์"
+          },
+          {
+            "label": "C",
+            "text": "เปลี่ยน mycophenolate เป็น methotrexate 15 mg/สัปดาห์ เพราะหยุดได้ใกล้กับการตั้งครรภ์มากกว่า",
+            "explanation": "✗ ผิด — MTX เป็น teratogen และไม่ใช่การรักษาที่เหมาะสมสำหรับ lupus nephritis"
+          },
+          {
+            "label": "D",
+            "text": "เปลี่ยน mycophenolate เป็น azathioprine โดยหยุด mycophenolate อย่างน้อย 6 สัปดาห์ก่อนตั้งครรภ์ และติดตามว่าโรคสงบต่อเนื่องก่อนพยายามมีบุตร",
+            "explanation": "✓ ถูก — เป็นแนวทางตาม ACR 2020: เปลี่ยนเป็น AZA หยุด MMF ≥6 สัปดาห์ และรอให้โรคสงบต่อเนื่อง"
+          }
+        ],
+        "key_takeaway": "Lupus อยากมีบุตร: MMF → azathioprine (หยุด MMF ≥6 สัปดาห์), HCQ ใช้ต่อ"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยชายอายุ 35 ปี เป็น psoriatic arthritis คุมโรคได้ดีด้วย methotrexate 15 mg/สัปดาห์ ร่วมกับ folic acid 5 mg/สัปดาห์ ภรรยาต้องการตั้งครรภ์ในอีก 2 เดือน ผู้ป่วยถามว่าต้องหยุด methotrexate หรือไม่ คำตอบใดสอดคล้องกับ ACR 2020 Reproductive Health Guideline มากที่สุด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ต้องหยุด methotrexate อย่างน้อย 3 เดือนก่อนพยายามมีบุตร เช่นเดียวกับฝ่ายหญิง"
+        },
+        {
+          "label": "B",
+          "text": "สามารถใช้ methotrexate ต่อได้ ไม่จำเป็นต้องหยุดก่อนพยายามมีบุตร"
+        },
+        {
+          "label": "C",
+          "text": "ควรเปลี่ยน methotrexate เป็น cyclophosphamide ชั่วคราวเพราะไม่มีผลต่ออสุจิ"
+        },
+        {
+          "label": "D",
+          "text": "ต้องหยุดยาและทำ washout ด้วย cholestyramine 11 วันก่อนพยายามมีบุตร"
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "hard",
+      "explanation": "ACR 2020 แนะนำ (conditional) ให้ผู้ชายที่วางแผนมีบุตรใช้ MTX ต่อได้ เพราะข้อมูลไม่พบการเพิ่มความพิการแต่กำเนิดหรือการแท้ง ยาที่ผู้ชายต้องหยุดคือ cyclophosphamide",
+      "detailed_explanation": {
+        "summary": "ACR 2020 แนะนำ (conditional) ให้ผู้ชายที่วางแผนมีบุตรใช้ MTX ต่อได้ เพราะข้อมูลไม่พบการเพิ่มความพิการแต่กำเนิดหรือการแท้ง ยาที่ผู้ชายต้องหยุดคือ cyclophosphamide",
+        "reason": "โจทย์ถามอะไร: ถามว่าผู้ชายที่ใช้ MTX ขนาดต่ำต้องหยุดยาก่อนภรรยาตั้งครรภ์หรือไม่\n\nหลักการ/กลไกเชิงลึก: ความเสี่ยงของ MTX ต่อทารกเกิดจากการสัมผัสยาโดยตรงในมารดา (folate antagonist ช่วง organogenesis) ส่วนในผู้ชาย ปริมาณยาที่อาจผ่านน้ำอสุจิน้อยมาก การศึกษาเชิงสังเกตขนาดใหญ่ไม่พบการเพิ่ม congenital malformation หรือ miscarriage เมื่อบิดาใช้ low-dose MTX ช่วงปฏิสนธิ ACR 2020 จึงแนะนำว่าผู้ชายใช้ MTX, MMF, leflunomide, AZA, HCQ, TNFi ต่อได้ ยกเว้น cyclophosphamide ซึ่งเป็น gonadotoxic ควรหยุดประมาณ 12 สัปดาห์ก่อน และ SSZ อาจลดจำนวนอสุจิ (กลับคืนได้)\n\nทำไมข้อ B ถูก: ดังนั้นคำตอบคือใช้ MTX ต่อได้ ไม่จำเป็นต้องหยุด การหยุดยาเสี่ยงต่อ psoriatic arthritis กำเริบโดยไม่มีประโยชน์ที่พิสูจน์ได้\n\nการประยุกต์กับผู้ป่วยจริง: เภสัชกรควรอธิบายด้วยข้อมูลที่ชัดเจน คงขนาด folic acid เดิม แนะนำหลีกเลี่ยงแอลกอฮอล์ และติดตาม CBC/LFT ตามปกติ บางฉลากยา (เก่า) ยังแนะนำให้ผู้ชายหยุด 3 เดือน หากผู้ป่วยต้องการความระมัดระวังสูงสุดสามารถพูดคุยร่วมกับแพทย์ได้\n\nจุดที่มักสับสนและกับดักข้อสอบ: กับดักใหญ่คือนำหลัก 'หยุด MTX 3 เดือนก่อนตั้งครรภ์' ของผู้หญิงมาใช้กับผู้ชาย และสับสนกับ cholestyramine washout ซึ่งเป็นของ leflunomide ในผู้หญิง cyclophosphamide ในผู้ชายต่างหากที่ต้องหยุด\n\nสรุปท่องสอบ: ผู้ชายวางแผนมีบุตร: MTX ใช้ต่อได้; CYC ต้องหยุด; SSZ อาจลด sperm count",
+        "choices": [
+          {
+            "label": "A",
+            "text": "ต้องหยุด methotrexate อย่างน้อย 3 เดือนก่อนพยายามมีบุตร เช่นเดียวกับฝ่ายหญิง",
+            "explanation": "✗ ผิด — หลักนี้ใช้กับผู้หญิง ACR 2020 ไม่แนะนำให้ผู้ชายหยุด MTX"
+          },
+          {
+            "label": "B",
+            "text": "สามารถใช้ methotrexate ต่อได้ ไม่จำเป็นต้องหยุดก่อนพยายามมีบุตร",
+            "explanation": "✓ ถูก — ตาม ACR 2020 ผู้ชายใช้ MTX ขนาดต่ำต่อได้"
+          },
+          {
+            "label": "C",
+            "text": "ควรเปลี่ยน methotrexate เป็น cyclophosphamide ชั่วคราวเพราะไม่มีผลต่ออสุจิ",
+            "explanation": "✗ ผิด — cyclophosphamide เป็น gonadotoxic ทำให้ภาวะมีบุตรยาก เป็นยาที่ผู้ชายต้องหยุด"
+          },
+          {
+            "label": "D",
+            "text": "ต้องหยุดยาและทำ washout ด้วย cholestyramine 11 วันก่อนพยายามมีบุตร",
+            "explanation": "✗ ผิด — cholestyramine washout ใช้กับ leflunomide ในผู้หญิง ไม่ใช่ MTX"
+          }
+        ],
+        "key_takeaway": "Paternal MTX = ใช้ต่อได้ (ACR 2020); ผู้ชายต้องหยุดแค่ cyclophosphamide"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 79 ปี เป็น knee OA และปวดหลังเรื้อรัง ยาปัจจุบัน: paracetamol 500 mg 2 เม็ด วันละ 3 ครั้ง, cyclobenzaprine 10 mg วันละ 3 ครั้ง, calcium carbonate 1,250 mg/วัน และ diclofenac gel ทาเข่าวันละ 3 ครั้ง ญาติบอกว่าช่วงนี้ผู้ป่วยง่วงซึม สับสน และหกล้ม 1 ครั้ง ยาใดเป็น potentially inappropriate medication ตาม AGS Beers Criteria ที่ควรหยุดเป็นอันดับแรก",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Paracetamol"
+        },
+        {
+          "label": "B",
+          "text": "Diclofenac gel"
+        },
+        {
+          "label": "C",
+          "text": "Cyclobenzaprine"
+        },
+        {
+          "label": "D",
+          "text": "Calcium carbonate"
+        }
+      ],
+      "correct_answer": "C",
+      "difficulty": "easy",
+      "explanation": "Skeletal muscle relaxant (cyclobenzaprine, carisoprodol, orphenadrine, methocarbamol) อยู่ใน Beers Criteria ให้หลีกเลี่ยงในผู้สูงอายุ เพราะมีฤทธิ์ anticholinergic ง่วงซึม เสี่ยงหกล้ม และประสิทธิภาพไม่ชัดเจน",
+      "detailed_explanation": {
+        "summary": "Skeletal muscle relaxant (cyclobenzaprine, carisoprodol, orphenadrine, methocarbamol) อยู่ใน Beers Criteria ให้หลีกเลี่ยงในผู้สูงอายุ เพราะมีฤทธิ์ anticholinergic ง่วงซึม เสี่ยงหกล้ม และประสิทธิภาพไม่ชัดเจน",
+        "reason": "โจทย์ถามอะไร: ต้องระบุยาที่เป็น PIM ตาม Beers Criteria ซึ่งอธิบายอาการง่วงซึม สับสน และหกล้มในผู้สูงอายุ\n\nหลักการ/กลไกเชิงลึก: cyclobenzaprine มีโครงสร้างคล้าย tricyclic antidepressant จึงมีฤทธิ์ anticholinergic และ sedation สูง ผู้สูงอายุทนยาได้น้อย เพิ่มความเสี่ยง delirium, falls, fracture, urinary retention และท้องผูก AGS Beers Criteria 2023 ระบุ 'Avoid' สำหรับ skeletal muscle relaxants ทุกตัว (คุณภาพหลักฐานปานกลาง ความหนักแน่นของคำแนะนำ strong)\n\nทำไมข้อ C ถูก: อาการง่วงซึม สับสน และหกล้มเข้ากับ ADR ของ cyclobenzaprine โดยตรง จึงควรหยุดเป็นอันดับแรก การหยุดสามารถทำได้เลยหรือ taper ลงในเวลาสั้นๆ\n\nการประยุกต์กับผู้ป่วยจริง: ทางเลือกสำหรับอาการปวด: คง paracetamol (ไม่เกิน 3–4 g/วัน ผู้สูงอายุมักแนะนำ ≤3 g), ใช้ topical NSAID ที่เข่า, exercise/physiotherapy, ประคบร้อน เภสัชกรควรประเมิน fall risk และยาอื่นที่มีฤทธิ์ anticholinergic ร่วมด้วย\n\nจุดที่มักสับสนและกับดักข้อสอบ: กับดัก: topical NSAID ไม่อยู่ในรายการ avoid ของ Beers เพราะ systemic exposure ต่ำ เป็นทางเลือกที่แนะนำใน knee OA ผู้สูงอายุ ส่วน oral NSAID ต่างหากที่ต้องเลี่ยงการใช้เรื้อรัง paracetamol ขนาด 3 g/วันเหมาะสม calcium ไม่ทำให้ง่วงซึม\n\nสรุปท่องสอบ: Beers: muscle relaxants = AVOID (anticholinergic, sedation, falls)",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Paracetamol",
+            "explanation": "✗ ผิด — paracetamol 3 g/วัน เป็นยาแก้ปวดที่เหมาะสมในผู้สูงอายุ ไม่ใช่ PIM"
+          },
+          {
+            "label": "B",
+            "text": "Diclofenac gel",
+            "explanation": "✗ ผิด — topical NSAID มี systemic exposure ต่ำ เป็นทางเลือกที่แนะนำใน knee OA ผู้สูงอายุ"
+          },
+          {
+            "label": "C",
+            "text": "Cyclobenzaprine",
+            "explanation": "✓ ถูก — skeletal muscle relaxant เป็น PIM ตาม Beers ทำให้ง่วงซึม สับสน และหกล้ม"
+          },
+          {
+            "label": "D",
+            "text": "Calcium carbonate",
+            "explanation": "✗ ผิด — calcium ไม่ใช่ PIM และไม่อธิบายอาการทางระบบประสาท"
+          }
+        ],
+        "key_takeaway": "ผู้สูงอายุ + muscle relaxant = ง่วง สับสน หกล้ม → หยุด"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 76 ปี น้ำหนัก 48 kg เป็น postmenopausal osteoporosis มี vertebral fracture serum creatinine 1.9 mg/dL (CrCl โดยประมาณ 19 mL/min ตาม Cockcroft-Gault) calcium และ 25(OH)D ปกติ ยาลดการสลายกระดูกชนิดใดเหมาะสมที่สุด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Alendronate 70 mg สัปดาห์ละครั้ง"
+        },
+        {
+          "label": "B",
+          "text": "Zoledronic acid 5 mg IV ปีละครั้ง"
+        },
+        {
+          "label": "C",
+          "text": "Risedronate 35 mg สัปดาห์ละครั้ง"
+        },
+        {
+          "label": "D",
+          "text": "Denosumab 60 mg SC ทุก 6 เดือน โดยติดตามระดับ calcium อย่างใกล้ชิด"
+        }
+      ],
+      "correct_answer": "D",
+      "difficulty": "medium",
+      "explanation": "Bisphosphonate ไม่แนะนำเมื่อ CrCl <30–35 mL/min (alendronate และ zoledronic acid <35, risedronate/ibandronate <30) ส่วน denosumab ไม่ขับทางไต ใช้ได้โดยต้องระวัง hypocalcemia",
+      "detailed_explanation": {
+        "summary": "Bisphosphonate ไม่แนะนำเมื่อ CrCl <30–35 mL/min (alendronate และ zoledronic acid <35, risedronate/ibandronate <30) ส่วน denosumab ไม่ขับทางไต ใช้ได้โดยต้องระวัง hypocalcemia",
+        "reason": "โจทย์ถามอะไร: ต้องเลือกยารักษา osteoporosis ที่ใช้ได้ในผู้ป่วยที่ CrCl ต่ำมาก\n\nหลักการ/กลไกเชิงลึก: คำนวณ CrCl (Cockcroft-Gault): [(140 − 76) × 48 × 0.85] / (72 × 1.9) = (64 × 48 × 0.85)/136.8 = 2,611/136.8 ≈ 19 mL/min bisphosphonate ขับออกทางไตในรูปไม่เปลี่ยนแปลง ส่วนที่ไม่จับกระดูกถูกขับทางปัสสาวะ จึงสะสมเมื่อไตเสื่อม และ zoledronic acid IV อาจทำให้เกิด acute kidney injury (acute tubular necrosis) จึงห้ามใช้เมื่อ CrCl <35 mL/min ฉลาก alendronate ไม่แนะนำเมื่อ CrCl <35 และ risedronate/ibandronate <30\n\nทำไมข้อ D ถูก: denosumab เป็น monoclonal antibody ต่อ RANKL กำจัดผ่าน reticuloendothelial system ไม่ต้องปรับขนาดตามไต จึงเป็นทางเลือกเหมาะสม แต่ผู้ป่วย CKD ระยะ 4–5 เสี่ยง hypocalcemia รุนแรง ต้องแก้ calcium/vitamin D ก่อนและติดตาม Ca ในช่วง 2 สัปดาห์แรก\n\nการประยุกต์กับผู้ป่วยจริง: ต้องแยก CKD-MBD (renal osteodystrophy, adynamic bone disease) ก่อนโดยตรวจ PTH, phosphate, ALP เมื่อ eGFR <30 เภสัชกรต้องเน้นว่า denosumab หยุดเองไม่ได้ เพราะเกิด rebound vertebral fractures ต้องวางแผนยาต่อเนื่อง\n\nจุดที่มักสับสนและกับดักข้อสอบ: กับดัก: เลือก zoledronic acid เพราะให้ปีละครั้ง สะดวก หรือคิดว่า risedronate ใช้ได้เพราะ cutoff 30 ซึ่ง CrCl 19 ยังต่ำกว่า\n\nสรุปท่องสอบ: Bisphosphonate: ห้าม CrCl <30–35 → ใช้ denosumab (ระวัง hypocalcemia, ห้ามหยุดเอง)",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Alendronate 70 mg สัปดาห์ละครั้ง",
+            "explanation": "✗ ผิด — alendronate ไม่แนะนำเมื่อ CrCl <35 mL/min"
+          },
+          {
+            "label": "B",
+            "text": "Zoledronic acid 5 mg IV ปีละครั้ง",
+            "explanation": "✗ ผิด — zoledronic acid ห้ามใช้เมื่อ CrCl <35 mL/min เสี่ยง AKI"
+          },
+          {
+            "label": "C",
+            "text": "Risedronate 35 mg สัปดาห์ละครั้ง",
+            "explanation": "✗ ผิด — risedronate ไม่แนะนำเมื่อ CrCl <30 mL/min"
+          },
+          {
+            "label": "D",
+            "text": "Denosumab 60 mg SC ทุก 6 เดือน โดยติดตามระดับ calcium อย่างใกล้ชิด",
+            "explanation": "✓ ถูก — denosumab ไม่ขับทางไต ใช้ได้ใน CKD แต่ต้องระวัง hypocalcemia"
+          }
+        ],
+        "key_takeaway": "CrCl <35: เลี่ยง bisphosphonate — denosumab + เฝ้าระวัง Ca"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยชายอายุ 70 ปี เป็น gout และ CKD stage 4 (CrCl 25 mL/min) ไม่ได้ฟอกไต แพทย์เริ่ม allopurinol และต้องการให้ colchicine ป้องกัน gout flare ระหว่างปรับขนาดยาลดกรดยูริก ขนาด colchicine สำหรับ prophylaxis ข้อใดเหมาะสมที่สุด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "0.3 mg วันละครั้ง"
+        },
+        {
+          "label": "B",
+          "text": "0.6 mg วันละ 2 ครั้ง"
+        },
+        {
+          "label": "C",
+          "text": "1.2 mg ทันที ตามด้วย 0.6 mg ในอีก 1 ชั่วโมง ทุกวัน"
+        },
+        {
+          "label": "D",
+          "text": "ห้ามใช้ colchicine ใน CKD ทุกระยะ ต้องใช้ naproxen แทน"
+        }
+      ],
+      "correct_answer": "A",
+      "difficulty": "medium",
+      "explanation": "Colchicine prophylaxis ปกติ 0.5–0.6 mg วันละ 1–2 ครั้ง แต่เมื่อ CrCl <30 mL/min ให้เริ่ม 0.3 mg/วัน (ฟอกไต 0.3 mg สัปดาห์ละ 2 ครั้ง) และเฝ้าระวัง myopathy/neuropathy",
+      "detailed_explanation": {
+        "summary": "Colchicine prophylaxis ปกติ 0.5–0.6 mg วันละ 1–2 ครั้ง แต่เมื่อ CrCl <30 mL/min ให้เริ่ม 0.3 mg/วัน (ฟอกไต 0.3 mg สัปดาห์ละ 2 ครั้ง) และเฝ้าระวัง myopathy/neuropathy",
+        "reason": "โจทย์ถามอะไร: ถามขนาด colchicine เพื่อป้องกัน flare ระหว่างเริ่ม ULT ในผู้ป่วย CrCl <30 mL/min\n\nหลักการ/กลไกเชิงลึก: colchicine ขับออกทางไตบางส่วนและผ่าน P-gp/CYP3A4 เมื่อไตเสื่อม ระดับยาสะสม เสี่ยง neuromyotoxicity (กล้ามเนื้ออ่อนแรง CK สูง ปลายประสาทอักเสบ) และ bone marrow suppression ฉลาก colchicine: CrCl 30–80 ไม่ต้องปรับแต่ติดตามใกล้ชิด, CrCl <30 เริ่ม 0.3 mg/วัน, ฟอกไต 0.3 mg สัปดาห์ละ 2 ครั้ง (dialyze ไม่ออก) ACR 2020 แนะนำให้ prophylaxis 3–6 เดือนเมื่อเริ่ม ULT\n\nทำไมข้อ A ถูก: 0.3 mg วันละครั้งเป็นขนาดเริ่มต้นตามฉลากเมื่อ CrCl <30 ในประเทศไทยที่มีเม็ด 0.6 mg อาจใช้ครึ่งเม็ด หรือ 0.6 mg วันเว้นวัน ซึ่งให้ปริมาณใกล้เคียง\n\nการประยุกต์กับผู้ป่วยจริง: เภสัชกรต้องตรวจ DDI ที่เพิ่มระดับ colchicine เช่น clarithromycin, ketoconazole, ritonavir, verapamil, diltiazem, cyclosporine ซึ่งใน CKD ห้ามใช้ร่วม และระวังเมื่อใช้ร่วม statin ให้ผู้ป่วยรายงานอาการอ่อนแรงหรือชาปลายมือปลายเท้า\n\nจุดที่มักสับสนและกับดักข้อสอบ: กับดัก: ข้อ C คือ low-dose regimen สำหรับ acute flare ไม่ใช่ prophylaxis และห้ามให้ทุกวัน NSAID ต้องหลีกเลี่ยงใน CKD stage 4 colchicine ไม่ได้ห้ามใช้ทุกระยะ เพียงลดขนาด\n\nสรุปท่องสอบ: Colchicine prophylaxis: CrCl <30 → 0.3 mg/วัน; HD → 0.3 mg สัปดาห์ละ 2 ครั้ง",
+        "choices": [
+          {
+            "label": "A",
+            "text": "0.3 mg วันละครั้ง",
+            "explanation": "✓ ถูก — เป็นขนาดเริ่มต้นที่เหมาะสมเมื่อ CrCl <30 mL/min"
+          },
+          {
+            "label": "B",
+            "text": "0.6 mg วันละ 2 ครั้ง",
+            "explanation": "✗ ผิด — 1.2 mg/วัน เป็นขนาดปกติสูงสุดของ prophylaxis ในไตปกติ เกินสำหรับ CrCl 25"
+          },
+          {
+            "label": "C",
+            "text": "1.2 mg ทันที ตามด้วย 0.6 mg ในอีก 1 ชั่วโมง ทุกวัน",
+            "explanation": "✗ ผิด — เป็น regimen รักษา acute flare ห้ามให้ซ้ำทุกวัน และเกินขนาดใน CKD"
+          },
+          {
+            "label": "D",
+            "text": "ห้ามใช้ colchicine ใน CKD ทุกระยะ ต้องใช้ naproxen แทน",
+            "explanation": "✗ ผิด — colchicine ใช้ได้โดยลดขนาด ส่วน NSAID ควรหลีกเลี่ยงใน CKD stage 4"
+          }
+        ],
+        "key_takeaway": "CKD + colchicine prophylaxis: ลดเป็น 0.3 mg/วัน + เช็ก DDI CYP3A4/P-gp"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยชายอายุ 66 ปี เป็น gout มี tophi และ CKD (eGFR 25 mL/min/1.73 m²) ผล HLA-B*5801 เป็นลบ แพทย์ต้องการเริ่ม allopurinol ตาม ACR 2020 Gout Guideline ขนาดเริ่มต้นและการปรับขนาดใดเหมาะสมที่สุด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "เริ่ม 300 mg/วัน เพื่อให้ถึงเป้าหมายโดยเร็ว"
+        },
+        {
+          "label": "B",
+          "text": "เริ่ม 50 mg/วัน แล้วค่อยๆ เพิ่มทีละ 50 mg ทุก 2–5 สัปดาห์จนถึงเป้าหมาย serum urate"
+        },
+        {
+          "label": "C",
+          "text": "เริ่ม 100 mg/วัน และห้ามเพิ่มเกิน 100 mg/วัน ตลอดไปเพราะไตเสื่อม"
+        },
+        {
+          "label": "D",
+          "text": "เริ่ม 100 mg วันเว้นวัน และหยุดยาทุกครั้งที่มี acute gout flare"
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "medium",
+      "explanation": "ACR 2020 แนะนำเริ่ม allopurinol ≤100 mg/วัน และ 50 mg/วัน ใน CKD stage ≥4 แล้ว titrate ขึ้นช้าๆ จนถึงเป้าหมาย โดยขนาดสุดท้ายอาจเกินขนาดที่คำนวณตาม CrCl ได้หากทนยา",
+      "detailed_explanation": {
+        "summary": "ACR 2020 แนะนำเริ่ม allopurinol ≤100 mg/วัน และ 50 mg/วัน ใน CKD stage ≥4 แล้ว titrate ขึ้นช้าๆ จนถึงเป้าหมาย โดยขนาดสุดท้ายอาจเกินขนาดที่คำนวณตาม CrCl ได้หากทนยา",
+        "reason": "โจทย์ถามอะไร: ถามขนาดเริ่มต้นและหลัก titration ของ allopurinol ในผู้ป่วย CKD stage 4\n\nหลักการ/กลไกเชิงลึก: ความเสี่ยง allopurinol hypersensitivity syndrome (AHS) สัมพันธ์กับ HLA-B*5801, CKD และขนาดเริ่มต้นที่สูง (start low ช่วยลด AHS) oxypurinol (active metabolite) ขับทางไต จึงสะสมใน CKD แต่ขนาด maintenance ที่จำกัดตาม CrCl (แนวคิดเดิมของ Hande) ทำให้ผู้ป่วยส่วนใหญ่ไม่ถึงเป้าหมาย ACR 2020 จึงแนะนำ start low–go slow: เริ่ม ≤100 mg/วัน (CKD ≥ stage 4 เริ่ม 50 mg/วัน) แล้วเพิ่มทีละ 50 mg ในผู้ป่วย CKD ทุก 2–5 สัปดาห์จนถึงเป้าหมาย\n\nทำไมข้อ B ถูก: ข้อ B ตรงกับคำแนะนำ เพราะผู้ป่วย eGFR 25 คือ CKD stage 4 และไม่มี HLA-B*5801 จึงใช้ allopurinol ได้แต่ต้องเริ่มต่ำ\n\nการประยุกต์กับผู้ป่วยจริง: ให้ colchicine (ลดขนาด) หรือ prednisolone ป้องกัน flare 3–6 เดือนช่วงเริ่มยา ติดตาม serum urate, eGFR, CBC, LFT และให้ความรู้เรื่องผื่นหรือไข้ซึ่งต้องหยุดยาทันทีและมาพบแพทย์\n\nจุดที่มักสับสนและกับดักข้อสอบ: กับดัก: เชื่อว่าห้ามเกินขนาดตาม CrCl ตลอดไป (ข้อ C) หรือหยุด ULT ระหว่าง flare ซึ่ง ACR แนะนำให้ใช้ต่อ การเริ่ม 300 mg ใน CKD เพิ่ม AHS\n\nสรุปท่องสอบ: Allopurinol CKD stage ≥4: start 50 mg/d → +50 mg q2–5 wk to target",
+        "choices": [
+          {
+            "label": "A",
+            "text": "เริ่ม 300 mg/วัน เพื่อให้ถึงเป้าหมายโดยเร็ว",
+            "explanation": "✗ ผิด — ขนาดเริ่มต้นสูงเพิ่มความเสี่ยง allopurinol hypersensitivity โดยเฉพาะใน CKD"
+          },
+          {
+            "label": "B",
+            "text": "เริ่ม 50 mg/วัน แล้วค่อยๆ เพิ่มทีละ 50 mg ทุก 2–5 สัปดาห์จนถึงเป้าหมาย serum urate",
+            "explanation": "✓ ถูก — เป็น start-low go-slow ตาม ACR 2020 สำหรับ CKD stage ≥4"
+          },
+          {
+            "label": "C",
+            "text": "เริ่ม 100 mg/วัน และห้ามเพิ่มเกิน 100 mg/วัน ตลอดไปเพราะไตเสื่อม",
+            "explanation": "✗ ผิด — ACR 2020 อนุญาตให้ titrate เกินขนาดที่จำกัดตาม CrCl เพื่อให้ถึงเป้าหมาย หากติดตามใกล้ชิด"
+          },
+          {
+            "label": "D",
+            "text": "เริ่ม 100 mg วันเว้นวัน และหยุดยาทุกครั้งที่มี acute gout flare",
+            "explanation": "✗ ผิด — ไม่ควรหยุด ULT ระหว่าง flare และขนาดวันเว้นวันไม่ใช่คำแนะนำมาตรฐาน"
+          }
+        ],
+        "key_takeaway": "Allopurinol: start low (50 mg ใน CKD 4), go slow, treat to target"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยชายไทยอายุ 54 ปี เป็น gout มี flare 3 ครั้ง/ปี serum urate 9.2 mg/dL แพทย์จะเริ่มยาลดกรดยูริก ผลตรวจ HLA-B*5801 พบเป็นบวก ข้อใดเหมาะสมที่สุด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "หลีกเลี่ยง allopurinol และเลือก febuxostat เป็นยาลดกรดยูริก"
+        },
+        {
+          "label": "B",
+          "text": "ใช้ allopurinol ได้ โดยเริ่ม 50 mg/วัน และให้ prednisolone ร่วมเพื่อป้องกันผื่น"
+        },
+        {
+          "label": "C",
+          "text": "ใช้ allopurinol ได้ แต่ทำ desensitization ก่อนเริ่มยาทุกครั้ง"
+        },
+        {
+          "label": "D",
+          "text": "ไม่ต้องใช้ยาลดกรดยูริก ใช้ colchicine ป้องกัน flare ตลอดชีวิตแทน"
+        }
+      ],
+      "correct_answer": "A",
+      "difficulty": "easy",
+      "explanation": "HLA-B*5801 สัมพันธ์อย่างมากกับ allopurinol-induced SJS/TEN/DRESS ในคนไทยและเอเชีย หากผลเป็นบวกให้หลีกเลี่ยง allopurinol และใช้ febuxostat (หรือ uricosuric) แทน",
+      "detailed_explanation": {
+        "summary": "HLA-B*5801 สัมพันธ์อย่างมากกับ allopurinol-induced SJS/TEN/DRESS ในคนไทยและเอเชีย หากผลเป็นบวกให้หลีกเลี่ยง allopurinol และใช้ febuxostat (หรือ uricosuric) แทน",
+        "reason": "โจทย์ถามอะไร: ต้องเลือกยาลดกรดยูริกในผู้ป่วย gout ที่มีข้อบ่งใช้ ULT และมียีน HLA-B*5801\n\nหลักการ/กลไกเชิงลึก: allopurinol/oxypurinol จับกับโปรตีน HLA-B*58:01 แล้วกระตุ้น cytotoxic T-cell โดยตรง (p-i concept) ทำให้เกิด severe cutaneous adverse reactions (SCAR) ได้แก่ SJS/TEN และ DRESS ซึ่งอัตราตายสูง (TEN ~30%) ในคนไทยพบ allele นี้ ~8–15% และผู้ที่มี allele มีความเสี่ยง SCAR เพิ่มขึ้นหลายสิบเท่า negative predictive value สูงมาก ACR 2020 แนะนำตรวจก่อนเริ่มในคนเชื้อสายเอเชียตะวันออกเฉียงใต้ ประเทศไทยมีการตรวจภายใต้สิทธิการรักษา\n\nทำไมข้อ A ถูก: เมื่อผลเป็นบวก ไม่ควรใช้ allopurinol ทุกขนาด ทางเลือกคือ febuxostat (เริ่ม 20–40 mg/วัน) หรือ benzbromarone/probenecid หากไตดีและไม่มีนิ่ว\n\nการประยุกต์กับผู้ป่วยจริง: ผู้ป่วยมีข้อบ่งใช้ ULT ชัดเจน (≥2 flares/ปี) ต้องให้ยาลดกรดยูริกพร้อม prophylaxis เภสัชกรควรบันทึกผล HLA ในประวัติแพ้ยา/บัตรแพ้ยา และระวัง febuxostat ในผู้ป่วยมีโรคหัวใจหลอดเลือด (CARES trial)\n\nจุดที่มักสับสนและกับดักข้อสอบ: กับดัก: เชื่อว่าเริ่มขนาดต่ำหรือให้ steroid ป้องกัน SCAR ได้ ซึ่งไม่ได้ผล desensitization ใช้เฉพาะผื่นไม่รุนแรงในผู้ที่ไม่มีทางเลือก ห้ามใช้ในผู้มีความเสี่ยง SCAR\n\nสรุปท่องสอบ: HLA-B*5801 บวก = ห้าม allopurinol → febuxostat",
+        "choices": [
+          {
+            "label": "A",
+            "text": "หลีกเลี่ยง allopurinol และเลือก febuxostat เป็นยาลดกรดยูริก",
+            "explanation": "✓ ถูก — หลีกเลี่ยง allopurinol ในผู้ที่มี HLA-B*5801 และใช้ febuxostat แทน"
+          },
+          {
+            "label": "B",
+            "text": "ใช้ allopurinol ได้ โดยเริ่ม 50 mg/วัน และให้ prednisolone ร่วมเพื่อป้องกันผื่น",
+            "explanation": "✗ ผิด — การเริ่มขนาดต่ำหรือให้ steroid ไม่ป้องกัน SJS/TEN/DRESS ที่เกิดจากกลไกทางพันธุกรรม"
+          },
+          {
+            "label": "C",
+            "text": "ใช้ allopurinol ได้ แต่ทำ desensitization ก่อนเริ่มยาทุกครั้ง",
+            "explanation": "✗ ผิด — desensitization ไม่ใช้ป้องกัน SCAR และไม่เหมาะเมื่อมีทางเลือกอื่น"
+          },
+          {
+            "label": "D",
+            "text": "ไม่ต้องใช้ยาลดกรดยูริก ใช้ colchicine ป้องกัน flare ตลอดชีวิตแทน",
+            "explanation": "✗ ผิด — ผู้ป่วยมีข้อบ่งใช้ ULT ชัดเจน การใช้ colchicine อย่างเดียวไม่ลดกรดยูริกและไม่ป้องกันข้อเสื่อม/tophi"
+          }
+        ],
+        "key_takeaway": "คนไทยก่อนเริ่ม allopurinol: ตรวจ HLA-B*5801 — บวกให้ใช้ febuxostat"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยชายอายุ 58 ปี เพิ่งได้รับการวินิจฉัยเป็น RA ระดับ moderate activity มีประวัติดื่มสุราหนักมานาน ตรวจพบ cirrhosis (Child-Pugh B) albumin 2.9 g/dL ALT 68 U/L ยังดื่มสุราอยู่ csDMARD ใดเหมาะสมที่สุดเป็นทางเลือกเริ่มต้น",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Methotrexate 7.5 mg/สัปดาห์ ร่วมกับ folic acid"
+        },
+        {
+          "label": "B",
+          "text": "Leflunomide 10 mg/วัน"
+        },
+        {
+          "label": "C",
+          "text": "Hydroxychloroquine 200–400 mg/วัน"
+        },
+        {
+          "label": "D",
+          "text": "Methotrexate ร่วมกับ leflunomide ขนาดต่ำ"
+        }
+      ],
+      "correct_answer": "C",
+      "difficulty": "medium",
+      "explanation": "MTX และ leflunomide มีความเป็นพิษต่อตับ ห้ามใช้ในผู้ป่วย cirrhosis และผู้ดื่มสุรา ส่วน hydroxychloroquine มีความเป็นพิษต่อตับต่ำมาก จึงเหมาะที่สุดในผู้ป่วยโรคตับ",
+      "detailed_explanation": {
+        "summary": "MTX และ leflunomide มีความเป็นพิษต่อตับ ห้ามใช้ในผู้ป่วย cirrhosis และผู้ดื่มสุรา ส่วน hydroxychloroquine มีความเป็นพิษต่อตับต่ำมาก จึงเหมาะที่สุดในผู้ป่วยโรคตับ",
+        "reason": "โจทย์ถามอะไร: ต้องเลือก csDMARD ที่ปลอดภัยที่สุดในผู้ป่วย RA ที่มี hepatic impairment (cirrhosis จากสุรา)\n\nหลักการ/กลไกเชิงลึก: MTX ทำให้เกิด hepatic fibrosis/cirrhosis แบบสะสม ความเสี่ยงเพิ่มขึ้นมากเมื่อดื่มสุรา มี fatty liver หรือโรคตับเดิม ACR ระบุว่า MTX ห้ามใช้ในผู้ป่วยมีโรคตับเรื้อรัง ALT >2–3 เท่า หรือดื่มสุราหนัก leflunomide/teriflunomide มี boxed warning เรื่อง hepatotoxicity ห้ามใช้ในโรคตับเดิมหรือ ALT >2 เท่า ULN และการใช้ร่วมกับ MTX ยิ่งเพิ่มพิษต่อตับ HCQ กำจัดผ่านตับบางส่วนแต่ไม่ค่อยเป็นพิษต่อตับ (แค่ปรับขนาดอย่างระมัดระวัง)\n\nทำไมข้อ C ถูก: HCQ (ไม่เกิน 5 mg/kg/วัน ของน้ำหนักจริง) เป็นทางเลือกที่ปลอดภัยที่สุดในบรรดาตัวเลือก ใช้เป็นเริ่มต้นได้ใน RA ความรุนแรงปานกลางที่มีข้อห้ามของ MTX หากไม่พอ อาจพิจารณา biologic (เช่น anti-TNF หลังคัดกรอง HBV/HCV/TB) ร่วมกับ steroid ขนาดต่ำระยะสั้น\n\nการประยุกต์กับผู้ป่วยจริง: เภสัชกรควรคัดกรอง HBV/HCV ก่อนเริ่ม DMARD ทุกตัว ให้คำปรึกษาเลิกสุรา ใช้ paracetamol ไม่เกิน 2 g/วันในผู้ป่วย cirrhosis และหลีกเลี่ยง NSAID (เสี่ยง GI bleed, AKI, ascites)\n\nจุดที่มักสับสนและกับดักข้อสอบ: กับดัก: คิดว่า MTX ขนาดต่ำ + folic acid ปลอดภัยพอ แต่ folic acid ไม่ป้องกัน fibrosis จากสุรา SSZ ก็เป็นพิษต่อตับได้ (hypersensitivity hepatitis) จึงไม่ใช่คำตอบที่ปลอดภัยที่สุด\n\nสรุปท่องสอบ: Cirrhosis/ดื่มสุรา + RA: ห้าม MTX/LEF → HCQ ปลอดภัยต่อตับที่สุด",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Methotrexate 7.5 mg/สัปดาห์ ร่วมกับ folic acid",
+            "explanation": "✗ ผิด — MTX ห้ามใช้ใน cirrhosis และผู้ดื่มสุรา เสี่ยง hepatic fibrosis แม้ขนาดต่ำ"
+          },
+          {
+            "label": "B",
+            "text": "Leflunomide 10 mg/วัน",
+            "explanation": "✗ ผิด — leflunomide มี boxed warning hepatotoxicity ห้ามใช้ในโรคตับเดิม"
+          },
+          {
+            "label": "C",
+            "text": "Hydroxychloroquine 200–400 mg/วัน",
+            "explanation": "✓ ถูก — HCQ มีความเป็นพิษต่อตับต่ำ เหมาะที่สุดในผู้ป่วยโรคตับ"
+          },
+          {
+            "label": "D",
+            "text": "Methotrexate ร่วมกับ leflunomide ขนาดต่ำ",
+            "explanation": "✗ ผิด — การใช้ร่วมกันเพิ่ม hepatotoxicity มากกว่าการใช้ตัวเดียว"
+          }
+        ],
+        "key_takeaway": "RA + โรคตับ: เลี่ยง MTX/LEF, HCQ ปลอดภัยต่อตับ"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 45 ปี เป็น RA เริ่ม sulfasalazine 1 g วันละ 2 ครั้ง มาได้ 7 สัปดาห์ มาโรงพยาบาลด้วยไข้ 39°C เจ็บคอ แผลในปาก ผล CBC: WBC 1,200/mm³, ANC 250/mm³, Hb 12.1 g/dL, platelet 210,000/mm³ การจัดการใดเหมาะสมที่สุด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ลดขนาด sulfasalazine เหลือ 500 mg วันละ 2 ครั้ง และนัดตรวจ CBC ซ้ำใน 1 เดือน"
+        },
+        {
+          "label": "B",
+          "text": "ให้ folic acid 5 mg/วัน เพื่อแก้ภาวะเม็ดเลือดขาวต่ำ แล้วใช้ sulfasalazine ต่อ"
+        },
+        {
+          "label": "C",
+          "text": "ใช้ sulfasalazine ต่อ และให้ amoxicillin รักษาคออักเสบ"
+        },
+        {
+          "label": "D",
+          "text": "หยุด sulfasalazine ทันทีและถาวร รับไว้รักษาเป็น febrile neutropenia ด้วย broad-spectrum antibiotic"
+        }
+      ],
+      "correct_answer": "D",
+      "difficulty": "easy",
+      "explanation": "เป็น sulfasalazine-induced agranulocytosis (ANC <500) ร่วมกับไข้ ซึ่งมักเกิดใน 3 เดือนแรก ต้องหยุดยาทันทีและถาวร และรักษาแบบ febrile neutropenia",
+      "detailed_explanation": {
+        "summary": "เป็น sulfasalazine-induced agranulocytosis (ANC <500) ร่วมกับไข้ ซึ่งมักเกิดใน 3 เดือนแรก ต้องหยุดยาทันทีและถาวร และรักษาแบบ febrile neutropenia",
+        "reason": "โจทย์ถามอะไร: ถามการจัดการผู้ป่วยที่มีไข้และ ANC ต่ำมากหลังเริ่ม SSZ 7 สัปดาห์\n\nหลักการ/กลไกเชิงลึก: agranulocytosis จาก SSZ เป็นปฏิกิริยา idiosyncratic (อาจผ่านกลไกภูมิคุ้มกันต่อ sulfapyridine) พบประมาณ 1:700–1:2,000 ส่วนใหญ่เกิดในช่วง 1–3 เดือนแรก จึงแนะนำตรวจ CBC ทุก 2–4 สัปดาห์ใน 3 เดือนแรก แล้วห่างออก ANC <500 ร่วมกับไข้คือ febrile neutropenia ซึ่งเสี่ยง sepsis\n\nทำไมข้อ D ถูก: ต้องหยุด SSZ ทันทีและห้าม rechallenge รับไว้ในโรงพยาบาล เพาะเชื้อ ให้ broad-spectrum antibiotic ที่ครอบคลุม Pseudomonas (เช่น ceftazidime หรือ piperacillin/tazobactam) อาจพิจารณา G-CSF ส่วนใหญ่ฟื้นตัวใน 1–2 สัปดาห์หลังหยุดยา\n\nการประยุกต์กับผู้ป่วยจริง: เภสัชกรควรบันทึกเป็นแพ้ยา และสอนผู้ป่วยที่เริ่ม SSZ ให้รีบมาพบแพทย์เมื่อมีไข้ เจ็บคอ แผลในปาก หรือจ้ำเลือด นอกจากนี้ต้องระวัง DRESS จาก SSZ (ไข้ ผื่น ต่อมน้ำเหลืองโต ตับอักเสบ eosinophilia ช่วง 2–8 สัปดาห์) และ hemolysis ในผู้ป่วย G6PD deficiency\n\nจุดที่มักสับสนและกับดักข้อสอบ: กับดัก: คิดว่าลดขนาดได้ (ไม่ใช่ dose-dependent) หรือ folic acid แก้ได้ (folic acid แก้ macrocytic anemia จาก folate deficiency ไม่ใช่ agranulocytosis) การให้ antibiotic แบบผู้ป่วยนอกขณะ ANC 250 ไม่ปลอดภัย\n\nสรุปท่องสอบ: SSZ + ไข้เจ็บคอ ใน 3 เดือนแรก → CBC; ANC ต่ำ = หยุดถาวร + รักษา febrile neutropenia",
+        "choices": [
+          {
+            "label": "A",
+            "text": "ลดขนาด sulfasalazine เหลือ 500 mg วันละ 2 ครั้ง และนัดตรวจ CBC ซ้ำใน 1 เดือน",
+            "explanation": "✗ ผิด — agranulocytosis เป็น idiosyncratic ไม่สัมพันธ์กับขนาด การลดขนาดไม่ปลอดภัย"
+          },
+          {
+            "label": "B",
+            "text": "ให้ folic acid 5 mg/วัน เพื่อแก้ภาวะเม็ดเลือดขาวต่ำ แล้วใช้ sulfasalazine ต่อ",
+            "explanation": "✗ ผิด — folic acid ไม่แก้ agranulocytosis จาก SSZ"
+          },
+          {
+            "label": "C",
+            "text": "ใช้ sulfasalazine ต่อ และให้ amoxicillin รักษาคออักเสบ",
+            "explanation": "✗ ผิด — การใช้ยาต่อทำให้ภาวะรุนแรงขึ้น และ ANC 250 + ไข้ต้องรักษาในโรงพยาบาล"
+          },
+          {
+            "label": "D",
+            "text": "หยุด sulfasalazine ทันทีและถาวร รับไว้รักษาเป็น febrile neutropenia ด้วย broad-spectrum antibiotic",
+            "explanation": "✓ ถูก — หยุดยาถาวรและรักษา febrile neutropenia คือการจัดการที่ถูกต้อง"
+          }
+        ],
+        "key_takeaway": "SSZ agranulocytosis: เกิดใน 3 เดือนแรก → หยุดถาวร ห้าม rechallenge"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 62 ปี เป็น RA ใช้ methotrexate 15 mg/สัปดาห์ มา 4 เดือน มาด้วยไอแห้ง เหนื่อยหอบมากขึ้น และไข้ต่ำๆ 2 สัปดาห์ SpO₂ 90% room air ภาพรังสีทรวงอกพบ bilateral interstitial infiltrates เพาะเชื้อและตรวจ PCP เป็นลบ การจัดการด้านยาใดเหมาะสมที่สุด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ใช้ methotrexate ต่อ และเพิ่ม folic acid เป็น 10 mg/สัปดาห์"
+        },
+        {
+          "label": "B",
+          "text": "ลดขนาด methotrexate เหลือ 7.5 mg/สัปดาห์ และให้ azithromycin"
+        },
+        {
+          "label": "C",
+          "text": "หยุด methotrexate อย่างถาวร และให้ corticosteroid ขนาดสูง พร้อมเลือก DMARD ชนิดอื่นแทน"
+        },
+        {
+          "label": "D",
+          "text": "เปลี่ยนเป็น methotrexate ชนิดฉีดใต้ผิวหนังเพราะลดพิษต่อปอด"
+        }
+      ],
+      "correct_answer": "C",
+      "difficulty": "medium",
+      "explanation": "อาการไอแห้ง เหนื่อย ไข้ และ bilateral infiltrates ในปีแรกของ MTX หลังแยกการติดเชื้อแล้ว เข้าได้กับ MTX pneumonitis ต้องหยุด MTX ถาวร ให้ steroid และห้าม rechallenge",
+      "detailed_explanation": {
+        "summary": "อาการไอแห้ง เหนื่อย ไข้ และ bilateral infiltrates ในปีแรกของ MTX หลังแยกการติดเชื้อแล้ว เข้าได้กับ MTX pneumonitis ต้องหยุด MTX ถาวร ให้ steroid และห้าม rechallenge",
+        "reason": "โจทย์ถามอะไร: ถามการจัดการ MTX-induced hypersensitivity pneumonitis\n\nหลักการ/กลไกเชิงลึก: MTX pneumonitis เป็น acute/subacute hypersensitivity reaction ไม่สัมพันธ์กับขนาด พบประมาณ 0.3–1% มักเกิดในปีแรก ปัจจัยเสี่ยง: อายุ >60, เบาหวาน, hypoalbuminemia, rheumatoid lung เดิม, เคยใช้ DMARD ที่เป็นพิษต่อปอด อาการ: ไอแห้ง หอบ ไข้ hypoxemia ภาพ infiltrates ทั้งสองข้าง อาจมี eosinophilia BAL พบ lymphocytosis\n\nทำไมข้อ C ถูก: การรักษาคือหยุด MTX ทันทีและถาวร ให้ supportive oxygen และ corticosteroid (เช่น prednisolone 1 mg/kg/วัน หรือ methylprednisolone IV ในรายรุนแรง) หลังแยกการติดเชื้อโดยเฉพาะ PCP การ rechallenge มีรายงานกลับเป็นซ้ำและเสียชีวิตได้ แล้วเปลี่ยนเป็น DMARD อื่น เช่น anti-TNF/abatacept/HCQ/SSZ\n\nการประยุกต์กับผู้ป่วยจริง: เภสัชกรควรบันทึกเป็น ADR ห้ามใช้ซ้ำ ก่อนเริ่ม MTX ควรมี baseline chest X-ray และสอนผู้ป่วยให้รายงานไอแห้งหรือหอบเหนื่อยทันที\n\nจุดที่มักสับสนและกับดักข้อสอบ: กับดัก: folic acid ช่วยลด GI/mucositis/LFT ผิดปกติ แต่ไม่ป้องกัน pneumonitis; การเปลี่ยนเป็นฉีดไม่ลดความเสี่ยง pneumonitis และต้องแยก PCP/ติดเชื้อก่อนให้ steroid\n\nสรุปท่องสอบ: MTX + ไอแห้ง หอบ ไข้ infiltrates = pneumonitis → หยุดถาวร + steroid",
+        "choices": [
+          {
+            "label": "A",
+            "text": "ใช้ methotrexate ต่อ และเพิ่ม folic acid เป็น 10 mg/สัปดาห์",
+            "explanation": "✗ ผิด — folic acid ไม่ป้องกันหรือรักษา MTX pneumonitis และต้องหยุดยา"
+          },
+          {
+            "label": "B",
+            "text": "ลดขนาด methotrexate เหลือ 7.5 mg/สัปดาห์ และให้ azithromycin",
+            "explanation": "✗ ผิด — pneumonitis ไม่ขึ้นกับขนาด การลดขนาดไม่เพียงพอ"
+          },
+          {
+            "label": "C",
+            "text": "หยุด methotrexate อย่างถาวร และให้ corticosteroid ขนาดสูง พร้อมเลือก DMARD ชนิดอื่นแทน",
+            "explanation": "✓ ถูก — หยุดถาวร ให้ steroid และเปลี่ยน DMARD คือการจัดการที่ถูกต้อง"
+          },
+          {
+            "label": "D",
+            "text": "เปลี่ยนเป็น methotrexate ชนิดฉีดใต้ผิวหนังเพราะลดพิษต่อปอด",
+            "explanation": "✗ ผิด — การเปลี่ยนวิธีให้ยาไม่ลดความเสี่ยง hypersensitivity pneumonitis"
+          }
+        ],
+        "key_takeaway": "MTX pneumonitis: หยุดถาวร ห้าม rechallenge"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 74 ปี น้ำหนัก 50 kg เป็น RA ได้รับ methotrexate 2.5 mg 4 เม็ดสัปดาห์ละครั้ง แต่เข้าใจผิดกินทุกวันติดต่อกัน 6 วัน มาด้วยแผลในปากรุนแรง ผล CBC: WBC 1,800/mm³, platelet 45,000/mm³, serum creatinine 1.3 mg/dL การรักษาด้วย antidote ข้อใดเหมาะสมที่สุด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Folic acid 5 mg รับประทานวันละ 3 ครั้ง จนกว่าเม็ดเลือดจะกลับมาปกติ"
+        },
+        {
+          "label": "B",
+          "text": "Glucarpidase IV ทันทีเป็นการรักษาหลัก โดยไม่จำเป็นต้องให้ยาอื่น"
+        },
+        {
+          "label": "C",
+          "text": "Cholestyramine 4 g วันละ 3 ครั้ง เพื่อเร่งการขับยา"
+        },
+        {
+          "label": "D",
+          "text": "Leucovorin (folinic acid) IV/PO เช่น 15 mg ทุก 6 ชั่วโมง เริ่มทันที ร่วมกับหยุด methotrexate และ hydration"
+        }
+      ],
+      "correct_answer": "D",
+      "difficulty": "hard",
+      "explanation": "MTX ยับยั้ง DHFR จึง folic acid ซึ่งต้องอาศัย DHFR ไม่ได้ผล antidote คือ leucovorin (reduced folate) ซึ่งข้าม DHFR ได้โดยตรง ควรเริ่มเร็วที่สุด และให้ต่อจนกว่าเม็ดเลือดและแผลในปากฟื้นตัว",
+      "detailed_explanation": {
+        "summary": "MTX ยับยั้ง DHFR จึง folic acid ซึ่งต้องอาศัย DHFR ไม่ได้ผล antidote คือ leucovorin (reduced folate) ซึ่งข้าม DHFR ได้โดยตรง ควรเริ่มเร็วที่สุด และให้ต่อจนกว่าเม็ดเลือดและแผลในปากฟื้นตัว",
+        "reason": "โจทย์ถามอะไร: ถาม antidote ที่ถูกต้องในผู้ป่วย low-dose MTX overdose (กินรายวันแทนรายสัปดาห์) ที่มี mucositis และ pancytopenia\n\nหลักการ/กลไกเชิงลึก: ผู้ป่วยได้ 10 mg/วัน × 6 วัน = 60 mg ใน 6 วัน เทียบกับขนาดที่ตั้งใจ 10 mg/สัปดาห์ = เกินขนาดประมาณ 6 เท่า (การกินทุกวันทำให้ไม่มีช่วงพักให้เซลล์ฟื้นตัว) MTX จับ DHFR แน่นมาก ทำให้ dihydrofolate เปลี่ยนเป็น tetrahydrofolate ไม่ได้ folic acid ต้องถูกรีดิวซ์ด้วย DHFR จึงช่วยไม่ได้ leucovorin (5-formyl-THF) เป็น reduced folate เข้าสู่วงจรโดยไม่ต้องผ่าน DHFR จึง rescue เซลล์ปกติได้\n\nทำไมข้อ D ถูก: หลักการ: หยุด MTX ให้ leucovorin เร็วที่สุด (ประสิทธิภาพลดลงเมื่อเริ่มช้า) ขนาดที่ใช้บ่อยใน low-dose toxicity คือ 10–15 mg/m² หรือ 15 mg IV/PO ทุก 6 ชั่วโมง ปรับตามระดับ MTX และติดตามจนกว่า ANC/platelet และแผลในปากดีขึ้น ร่วมกับ IV hydration, ดูแลไต, G-CSF หรือ antibiotic ตามความจำเป็น ตรวจระดับ MTX ถ้าทำได้\n\nการประยุกต์กับผู้ป่วยจริง: อายุมากและไตเสื่อม (CrCl ≈ [(140−74)×50×0.85]/(72×1.3) = 2,805/93.6 ≈ 30 mL/min) ทำให้ MTX สะสม เภสัชกรควรป้องกันความคลาดเคลื่อน: ระบุวันกินยาในฉลาก ใช้ blister รายสัปดาห์ และสอนผู้ป่วยทวนกลับ\n\nจุดที่มักสับสนและกับดักข้อสอบ: กับดัก: folic acid กับ folinic acid ชื่อคล้ายแต่ต่างกันมาก glucarpidase ใช้เมื่อ high-dose MTX + ไตวาย ระดับ MTX สูงมาก ไม่ใช่การรักษาหลักใน low-dose oral overdose และยังต้องให้ leucovorin ด้วย (แต่ห้ามให้ leucovorin ภายใน 2 ชม. ก่อน/หลัง glucarpidase) cholestyramine เป็น washout ของ leflunomide\n\nสรุปท่องสอบ: MTX overdose → leucovorin (folinic acid) ไม่ใช่ folic acid",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Folic acid 5 mg รับประทานวันละ 3 ครั้ง จนกว่าเม็ดเลือดจะกลับมาปกติ",
+            "explanation": "✗ ผิด — folic acid ต้องอาศัย DHFR ซึ่งถูก MTX ยับยั้ง จึงไม่ได้ผล"
+          },
+          {
+            "label": "B",
+            "text": "Glucarpidase IV ทันทีเป็นการรักษาหลัก โดยไม่จำเป็นต้องให้ยาอื่น",
+            "explanation": "✗ ผิด — glucarpidase สำหรับ high-dose MTX ร่วมกับไตวาย ไม่ใช่การรักษาหลักใน low-dose overdose"
+          },
+          {
+            "label": "C",
+            "text": "Cholestyramine 4 g วันละ 3 ครั้ง เพื่อเร่งการขับยา",
+            "explanation": "✗ ผิด — cholestyramine ใช้ washout leflunomide ไม่ใช่ antidote ของ MTX"
+          },
+          {
+            "label": "D",
+            "text": "Leucovorin (folinic acid) IV/PO เช่น 15 mg ทุก 6 ชั่วโมง เริ่มทันที ร่วมกับหยุด methotrexate และ hydration",
+            "explanation": "✓ ถูก — leucovorin ข้าม DHFR rescue เซลล์ปกติ เป็น antidote ที่ถูกต้อง"
+          }
+        ],
+        "key_takeaway": "Folinic (leucovorin) rescue MTX, Folic ช่วยไม่ได้เพราะ DHFR ถูกบล็อก"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 35 ปี เป็น ANCA-associated vasculitis แพทย์สั่ง cyclophosphamide รับประทาน 2 mg/kg/วัน เภสัชกรให้คำแนะนำเพื่อป้องกัน hemorrhagic cystitis ข้อใดถูกต้องที่สุด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "กินยาตอนเช้า ดื่มน้ำมากๆ (≥2–3 ลิตร/วัน) และปัสสาวะบ่อยๆ ไม่กลั้นปัสสาวะ เพื่อลดการสัมผัส acrolein กับกระเพาะปัสสาวะ"
+        },
+        {
+          "label": "B",
+          "text": "กินยาก่อนนอนเพื่อลดอาการคลื่นไส้ และจำกัดน้ำเพื่อลดการปัสสาวะกลางคืน"
+        },
+        {
+          "label": "C",
+          "text": "กินยาพร้อม sodium bicarbonate เพื่อทำให้ปัสสาวะเป็นด่างและละลาย metabolite"
+        },
+        {
+          "label": "D",
+          "text": "ให้ allopurinol ร่วมทุกครั้ง เพราะป้องกัน hemorrhagic cystitis ได้"
+        }
+      ],
+      "correct_answer": "A",
+      "difficulty": "easy",
+      "explanation": "Acrolein (metabolite ของ cyclophosphamide) ระคายเยื่อบุกระเพาะปัสสาวะ ป้องกันด้วยกินยาตอนเช้า ดื่มน้ำมาก ปัสสาวะบ่อย และให้ mesna ในกรณี IV pulse/ขนาดสูง",
+      "detailed_explanation": {
+        "summary": "Acrolein (metabolite ของ cyclophosphamide) ระคายเยื่อบุกระเพาะปัสสาวะ ป้องกันด้วยกินยาตอนเช้า ดื่มน้ำมาก ปัสสาวะบ่อย และให้ mesna ในกรณี IV pulse/ขนาดสูง",
+        "reason": "โจทย์ถามอะไร: ถามคำแนะนำป้องกัน hemorrhagic cystitis จาก cyclophosphamide\n\nหลักการ/กลไกเชิงลึก: cyclophosphamide ถูก CYP2B6/2C19 ในตับเปลี่ยนเป็น phosphoramide mustard (ออกฤทธิ์) และ acrolein ซึ่งถูกขับออกทางปัสสาวะ acrolein ทำลาย urothelium ทำให้เลือดออก และเพิ่มความเสี่ยงมะเร็งกระเพาะปัสสาวะในระยะยาว mesna (2-mercaptoethane sulfonate) จับ acrolein ในปัสสาวะให้เป็นสารไม่มีพิษ\n\nทำไมข้อ A ถูก: การกินยาตอนเช้าครั้งเดียวทำให้ metabolite ถูกขับระหว่างวันขณะที่ผู้ป่วยดื่มน้ำและปัสสาวะบ่อย ไม่ค้างในกระเพาะปัสสาวะตลอดคืน การดื่มน้ำมากช่วยเจือจาง acrolein\n\nการประยุกต์กับผู้ป่วยจริง: ติดตาม urinalysis หา microscopic hematuria และ CBC เป็นระยะ ผู้ที่เคยได้ CYC สะสมสูงต้องตรวจปัสสาวะต่อเนื่องตลอดชีวิต (เสี่ยง bladder cancer) ต้องคุมกำเนิด และพิจารณา PCP prophylaxis ด้วย trimethoprim-sulfamethoxazole ปัจจุบันนิยม IV pulse (Euro-Lupus/CYCLOPS) เพราะขนาดสะสมต่ำกว่า\n\nจุดที่มักสับสนและกับดักข้อสอบ: กับดัก: การกินก่อนนอนทำให้ acrolein ค้างในกระเพาะปัสสาวะทั้งคืน การทำให้ปัสสาวะเป็นด่างและ allopurinol ใช้กับ tumor lysis/uric acid ไม่ใช่ acrolein\n\nสรุปท่องสอบ: CYC → acrolein → hemorrhagic cystitis: เช้า + น้ำมาก + ปัสสาวะบ่อย ± mesna",
+        "choices": [
+          {
+            "label": "A",
+            "text": "กินยาตอนเช้า ดื่มน้ำมากๆ (≥2–3 ลิตร/วัน) และปัสสาวะบ่อยๆ ไม่กลั้นปัสสาวะ เพื่อลดการสัมผัส acrolein กับกระเพาะปัสสาวะ",
+            "explanation": "✓ ถูก — ลดเวลาสัมผัส acrolein กับเยื่อบุกระเพาะปัสสาวะ"
+          },
+          {
+            "label": "B",
+            "text": "กินยาก่อนนอนเพื่อลดอาการคลื่นไส้ และจำกัดน้ำเพื่อลดการปัสสาวะกลางคืน",
+            "explanation": "✗ ผิด — การกินก่อนนอนและจำกัดน้ำทำให้ acrolein ค้างในกระเพาะปัสสาวะนานขึ้น"
+          },
+          {
+            "label": "C",
+            "text": "กินยาพร้อม sodium bicarbonate เพื่อทำให้ปัสสาวะเป็นด่างและละลาย metabolite",
+            "explanation": "✗ ผิด — การทำให้ปัสสาวะเป็นด่างไม่ทำให้ acrolein หมดพิษ ยาที่ใช้คือ mesna"
+          },
+          {
+            "label": "D",
+            "text": "ให้ allopurinol ร่วมทุกครั้ง เพราะป้องกัน hemorrhagic cystitis ได้",
+            "explanation": "✗ ผิด — allopurinol ใช้ป้องกัน tumor lysis/hyperuricemia ไม่ป้องกัน hemorrhagic cystitis"
+          }
+        ],
+        "key_takeaway": "Cyclophosphamide: acrolein → mesna + hydration, กินตอนเช้า"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 70 ปี เป็น osteoporosis มี hip fracture แพทย์วางแผนให้ zoledronic acid 5 mg IV ปีละครั้ง ผู้ป่วยมีฟันผุหลายซี่และเหงือกอักเสบ ทันตแพทย์ประเมินว่าต้องถอนฟัน 2 ซี่ ข้อใดเหมาะสมที่สุดเพื่อลดความเสี่ยง osteonecrosis of the jaw (ONJ)",
+      "choices": [
+        {
+          "label": "A",
+          "text": "เริ่ม zoledronic acid ทันที แล้วจึงถอนฟันในอีก 1 เดือนเมื่อยาเข้าสู่กระดูกแล้ว"
+        },
+        {
+          "label": "B",
+          "text": "ทำการรักษาทางทันตกรรมที่รุกล้ำ (ถอนฟัน) ให้เสร็จก่อน และเริ่ม zoledronic acid เมื่อแผลถอนฟันหายดี (ประมาณ 2–3 สัปดาห์ขึ้นไป)"
+        },
+        {
+          "label": "C",
+          "text": "ไม่ต้องรักษาทางทันตกรรม เพราะ ONJ ไม่เกิดกับขนาดยาสำหรับ osteoporosis"
+        },
+        {
+          "label": "D",
+          "text": "ให้ antibiotic prophylaxis ตลอดชีวิตแทนการถอนฟัน และเริ่มยาทันที"
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "medium",
+      "explanation": "ปัจจัยเสี่ยงสำคัญของ ONJ คือการทำหัตถการที่รุกล้ำกระดูกขากรรไกร (ถอนฟัน) ขณะได้ antiresorptive จึงควรรักษาทันตกรรมที่จำเป็นให้เสร็จก่อนเริ่มยาและรอให้แผลหายดี",
+      "detailed_explanation": {
+        "summary": "ปัจจัยเสี่ยงสำคัญของ ONJ คือการทำหัตถการที่รุกล้ำกระดูกขากรรไกร (ถอนฟัน) ขณะได้ antiresorptive จึงควรรักษาทันตกรรมที่จำเป็นให้เสร็จก่อนเริ่มยาและรอให้แผลหายดี",
+        "reason": "โจทย์ถามอะไร: ต้องเลือกลำดับการรักษาที่ลดความเสี่ยง medication-related ONJ (MRONJ) ในผู้ป่วยที่จะเริ่ม IV bisphosphonate และต้องถอนฟัน\n\nหลักการ/กลไกเชิงลึก: bisphosphonate และ denosumab ลด bone remodeling ทำให้กระดูกขากรรไกร (ซึ่ง turnover สูง) ซ่อมแซมแผลไม่ได้เมื่อมีการบาดเจ็บหรือติดเชื้อ ความเสี่ยง ONJ ใน osteoporosis ต่ำ (~0.001–0.01%) แต่สูงกว่ามากในขนาด oncology (zoledronic acid 4 mg ทุกเดือน, denosumab 120 mg) ปัจจัยเสี่ยงร่วม: ถอนฟัน โรคปริทันต์ ฟันปลอมไม่พอดี steroid สูบบุหรี่ เบาหวาน และใช้ยานาน\n\nทำไมข้อ B ถูก: AAOMS และ ASBMR แนะนำตรวจสุขภาพช่องปากก่อนเริ่ม antiresorptive หากมีหัตถการที่จำเป็น ให้ทำให้เสร็จก่อนและเริ่มยาเมื่อแผลหาย (mucosal healing ประมาณ 14–21 วัน) เมื่อพิจารณาจากสภาพทางคลินิก\n\nการประยุกต์กับผู้ป่วยจริง: เภสัชกรควรสอนผู้ป่วยแปรงฟัน ใช้ไหมขัดฟัน พบทันตแพทย์ทุก 6 เดือน แจ้งทันตแพทย์ว่าใช้ยา และรายงานอาการปวดขากรรไกร ฟันโยก หรือกระดูกโผล่ในช่องปาก\n\nจุดที่มักสับสนและกับดักข้อสอบ: กับดัก: ความเสี่ยงต่ำไม่ได้แปลว่าเป็นศูนย์ ข้อ A กลับลำดับ การให้ antibiotic ตลอดชีวิตไม่ใช่มาตรฐาน ไม่ต้องเลื่อนการรักษา osteoporosis ที่มี hip fracture นานเกินจำเป็น เพราะความเสี่ยงหักซ้ำสูงกว่า ONJ มาก\n\nสรุปท่องสอบ: ก่อนเริ่ม BP/denosumab: ทำฟันที่รุกล้ำให้เสร็จก่อน รอแผลหาย",
+        "choices": [
+          {
+            "label": "A",
+            "text": "เริ่ม zoledronic acid ทันที แล้วจึงถอนฟันในอีก 1 เดือนเมื่อยาเข้าสู่กระดูกแล้ว",
+            "explanation": "✗ ผิด — การถอนฟันหลังได้ zoledronic acid เพิ่มความเสี่ยง ONJ ลำดับนี้กลับกัน"
+          },
+          {
+            "label": "B",
+            "text": "ทำการรักษาทางทันตกรรมที่รุกล้ำ (ถอนฟัน) ให้เสร็จก่อน และเริ่ม zoledronic acid เมื่อแผลถอนฟันหายดี (ประมาณ 2–3 สัปดาห์ขึ้นไป)",
+            "explanation": "✓ ถูก — ทำหัตถการทันตกรรมให้เสร็จและรอแผลหายก่อนเริ่มยา ลดความเสี่ยง ONJ"
+          },
+          {
+            "label": "C",
+            "text": "ไม่ต้องรักษาทางทันตกรรม เพราะ ONJ ไม่เกิดกับขนาดยาสำหรับ osteoporosis",
+            "explanation": "✗ ผิด — ONJ เกิดได้แม้ในขนาด osteoporosis แม้พบน้อย"
+          },
+          {
+            "label": "D",
+            "text": "ให้ antibiotic prophylaxis ตลอดชีวิตแทนการถอนฟัน และเริ่มยาทันที",
+            "explanation": "✗ ผิด — antibiotic ระยะยาวไม่ใช่มาตรฐาน และฟันที่ติดเชื้อเป็นปัจจัยเสี่ยง ONJ เอง"
+          }
+        ],
+        "key_takeaway": "ONJ: ถอนฟันก่อนเริ่ม antiresorptive ไม่ใช่หลัง"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 68 ปี ใช้ alendronate 70 mg สัปดาห์ละครั้ง ต่อเนื่องมา 8 ปี และ prednisolone 5 mg/วัน จาก polymyalgia rheumatica มาด้วยอาการปวดตื้อๆ บริเวณต้นขาด้านข้างทั้งสองข้างร้าวไปขาหนีบ เป็นมา 6 สัปดาห์ ไม่มีประวัติหกล้ม ข้อใดเป็นการจัดการที่เหมาะสมที่สุด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ให้ NSAID และกล้ามเนื้อคลายตัว เนื่องจากเป็นอาการปวดกล้ามเนื้อจาก polymyalgia rheumatica"
+        },
+        {
+          "label": "B",
+          "text": "เพิ่มขนาด alendronate เป็น 70 mg สัปดาห์ละ 2 ครั้ง เพราะกระดูกอาจบางลง"
+        },
+        {
+          "label": "C",
+          "text": "สงสัย atypical femoral fracture ส่งถ่ายภาพรังสี femur ทั้งสองข้าง (ทั้งกระดูก) หยุด alendronate และลดการลงน้ำหนัก"
+        },
+        {
+          "label": "D",
+          "text": "ตรวจ BMD ซ้ำ ถ้า T-score ยังต่ำกว่า −2.5 ให้ใช้ alendronate ต่อ"
+        }
+      ],
+      "correct_answer": "C",
+      "difficulty": "medium",
+      "explanation": "อาการปวดต้นขา/ขาหนีบแบบตื้อๆ (prodromal pain) ในผู้ใช้ bisphosphonate นานโดยเฉพาะร่วมกับ steroid เป็นสัญญาณเตือน atypical femoral fracture ต้องถ่ายภาพ femur ทั้งสองข้างและหยุด bisphosphonate",
+      "detailed_explanation": {
+        "summary": "อาการปวดต้นขา/ขาหนีบแบบตื้อๆ (prodromal pain) ในผู้ใช้ bisphosphonate นานโดยเฉพาะร่วมกับ steroid เป็นสัญญาณเตือน atypical femoral fracture ต้องถ่ายภาพ femur ทั้งสองข้างและหยุด bisphosphonate",
+        "reason": "โจทย์ถามอะไร: ถามการจัดการอาการเตือนของ atypical femoral fracture (AFF) ในผู้ใช้ bisphosphonate ระยะยาว\n\nหลักการ/กลไกเชิงลึก: การกด bone remodeling นานทำให้ microdamage สะสมที่ lateral cortex ของ subtrochanteric/diaphyseal femur ซึ่งรับแรงดึง เกิด stress fracture แบบ transverse โดยเริ่มจาก cortical thickening (beaking) ความเสี่ยงเพิ่มตามระยะเวลาใช้ (>3–5 ปี) และพบมากในผู้ใช้ glucocorticoid คนเอเชีย และกระดูกต้นขาโค้ง ประมาณ 70% มี prodromal thigh/groin pain นานหลายสัปดาห์ และพบทั้งสองข้างได้ถึง ~30–50%\n\nทำไมข้อ C ถูก: ASBMR แนะนำถ่ายภาพรังสี femur ทั้งกระดูกทั้งสองข้าง หาก X-ray ปกติแต่ยังสงสัยให้ทำ MRI/bone scan หยุด bisphosphonate ลดการลงน้ำหนัก (protected weight bearing) ให้ Ca/vitamin D เพียงพอ หากเป็น complete หรือ incomplete fracture ที่ปวดมากให้ปรึกษาออร์โธปิดิกส์เพื่อพิจารณา intramedullary nailing teriparatide อาจช่วยการหายของกระดูก\n\nการประยุกต์กับผู้ป่วยจริง: เภสัชกรควรสอบถามอาการปวดต้นขาหรือขาหนีบในผู้ที่ใช้ bisphosphonate มากกว่า 3–5 ปี และให้ผู้ป่วยรายงานอาการทันที ผู้ป่วยนี้ใช้ยาครบ 8 ปีแล้ว ควรทบทวนความจำเป็นของการใช้ยาต่อ\n\nจุดที่มักสับสนและกับดักข้อสอบ: กับดัก: เหมาอาการว่าเป็น PMR หรือ OA และให้แค่ยาแก้ปวด หรือเพิ่มขนาด bisphosphonate ซึ่งยิ่งเพิ่มความเสี่ยง การดู BMD ไม่ช่วยวินิจฉัย AFF\n\nสรุปท่องสอบ: BP นาน + ปวดต้นขา/ขาหนีบ = AFF จนกว่าจะพิสูจน์ได้ว่าไม่ใช่ → X-ray femur 2 ข้าง",
+        "choices": [
+          {
+            "label": "A",
+            "text": "ให้ NSAID และกล้ามเนื้อคลายตัว เนื่องจากเป็นอาการปวดกล้ามเนื้อจาก polymyalgia rheumatica",
+            "explanation": "✗ ผิด — การเหมาเป็นอาการ PMR อาจพลาด AFF ซึ่งจะกลายเป็น complete fracture"
+          },
+          {
+            "label": "B",
+            "text": "เพิ่มขนาด alendronate เป็น 70 mg สัปดาห์ละ 2 ครั้ง เพราะกระดูกอาจบางลง",
+            "explanation": "✗ ผิด — การเพิ่มขนาด bisphosphonate ยิ่งเพิ่มความเสี่ยง AFF และไม่ใช่ขนาดมาตรฐาน"
+          },
+          {
+            "label": "C",
+            "text": "สงสัย atypical femoral fracture ส่งถ่ายภาพรังสี femur ทั้งสองข้าง (ทั้งกระดูก) หยุด alendronate และลดการลงน้ำหนัก",
+            "explanation": "✓ ถูก — เป็นการจัดการตาม ASBMR: ภาพรังสีทั้งสองข้าง หยุดยา และลดการลงน้ำหนัก"
+          },
+          {
+            "label": "D",
+            "text": "ตรวจ BMD ซ้ำ ถ้า T-score ยังต่ำกว่า −2.5 ให้ใช้ alendronate ต่อ",
+            "explanation": "✗ ผิด — BMD ไม่ช่วยวินิจฉัย AFF และการใช้ยาต่อเพิ่มความเสี่ยง"
+          }
+        ],
+        "key_takeaway": "Prodromal thigh pain on BP = AFF until proven otherwise"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยชายอายุ 60 ปี น้ำหนัก 70 kg เป็น type 2 diabetes ควบคุมด้วย metformin (HbA1c 6.9%) แพทย์เริ่ม prednisolone 30 mg รับประทานวันละครั้งตอนเช้าเพื่อรักษา vasculitis หลังจากนั้นระดับน้ำตาลก่อนอาหารเช้า 115–125 mg/dL แต่ก่อนอาหารเย็นและก่อนนอน 260–310 mg/dL แนวทางเพิ่ม insulin ใดเหมาะสมที่สุด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Insulin glargine 21 units ฉีดก่อนนอน"
+        },
+        {
+          "label": "B",
+          "text": "เพิ่ม metformin เป็น 2,000 mg/วัน แบ่งให้เช้า–เย็น"
+        },
+        {
+          "label": "C",
+          "text": "ใช้ regular insulin sliding scale ตามระดับน้ำตาลก่อนนอนเพียงอย่างเดียว"
+        },
+        {
+          "label": "D",
+          "text": "NPH insulin ประมาณ 21 units ฉีดตอนเช้าพร้อมกับเวลาที่กิน prednisolone"
+        }
+      ],
+      "correct_answer": "D",
+      "difficulty": "hard",
+      "explanation": "Prednisolone ครั้งเดียวตอนเช้าทำให้น้ำตาลสูงช่วงบ่าย–ค่ำแต่ปกติตอนเช้า NPH ที่ฉีดตอนเช้าออกฤทธิ์สูงสุด 4–8 ชม. ตรงกับฤทธิ์ของ steroid; ขนาดเริ่ม 0.1 U/kg ต่อ prednisolone 10 mg → 0.3 U/kg × 70 kg = 21 units",
+      "detailed_explanation": {
+        "summary": "Prednisolone ครั้งเดียวตอนเช้าทำให้น้ำตาลสูงช่วงบ่าย–ค่ำแต่ปกติตอนเช้า NPH ที่ฉีดตอนเช้าออกฤทธิ์สูงสุด 4–8 ชม. ตรงกับฤทธิ์ของ steroid; ขนาดเริ่ม 0.1 U/kg ต่อ prednisolone 10 mg → 0.3 U/kg × 70 kg = 21 units",
+        "reason": "โจทย์ถามอะไร: ถามการรักษา glucocorticoid-induced hyperglycemia ที่ได้ prednisolone ครั้งเดียวตอนเช้า รวมถึงคำนวณขนาด NPH\n\nหลักการ/กลไกเชิงลึก: glucocorticoid เพิ่ม insulin resistance ที่กล้ามเนื้อและตับ และเพิ่ม gluconeogenesis prednisolone ระยะกลางให้ตอนเช้าออกฤทธิ์ต่อน้ำตาลสูงสุดประมาณ 4–8 ชั่วโมงหลังกิน แล้วลดลงช่วงกลางคืน จึงเกิดรูปแบบ 'ปกติตอนเช้า สูงช่วงบ่ายถึงค่ำ' NPH (onset 1–2 ชม., peak 4–8 ชม., duration 12–16 ชม.) ฉีดพร้อม steroid จะจับคู่กับ profile นี้พอดี\n\nทำไมข้อ D ถูก: สูตรที่ใช้บ่อย (Clore & Thurber, Endocrine Society): NPH 0.1 U/kg ต่อ prednisolone ทุก 10 mg (สูงสุด 0.4 U/kg ที่ ≥40 mg) คำนวณ: 30 mg/10 = 3 → 3 × 0.1 = 0.3 U/kg × 70 kg = 21 units ฉีดตอนเช้า\n\nการประยุกต์กับผู้ป่วยจริง: ติดตามน้ำตาลก่อนอาหารกลางวันและก่อนอาหารเย็นเป็นหลัก (ไม่ใช่ FPG อย่างเดียว) และลด NPH ตามสัดส่วนเมื่อ taper steroid เพื่อป้องกัน hypoglycemia เภสัชกรควรแนะนำผู้ป่วยให้ปรับ insulin ตามขนาด prednisolone เสมอ\n\nจุดที่มักสับสนและกับดักข้อสอบ: กับดัก: glargine ก่อนนอนออกฤทธิ์ 24 ชม. แบบไม่มี peak จะเพิ่มความเสี่ยง hypoglycemia ช่วงกลางคืน/เช้า (ซึ่งน้ำตาลปกติอยู่แล้ว) และคุมช่วงบ่ายไม่พอ การเพิ่ม metformin ช่วยได้จำกัด ไม่พอกับน้ำตาลช่วงบ่ายที่สูงถึง 260–310 mg/dL และไม่ตรงจุด sliding scale อย่างเดียวเป็นการแก้ปัญหาหลังเกิดและไม่แนะนำ\n\nสรุปท่องสอบ: Pred ตอนเช้า → น้ำตาลสูงบ่าย–ค่ำ → NPH เช้า 0.1 U/kg ต่อ pred 10 mg",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Insulin glargine 21 units ฉีดก่อนนอน",
+            "explanation": "✗ ผิด — glargine ก่อนนอนไม่ตรงกับ profile ของ steroid และเสี่ยง hypoglycemia ช่วงกลางคืน/เช้า"
+          },
+          {
+            "label": "B",
+            "text": "เพิ่ม metformin เป็น 2,000 mg/วัน แบ่งให้เช้า–เย็น",
+            "explanation": "✗ ผิด — การเพิ่ม metformin ลดน้ำตาลได้จำกัด ไม่แก้ hyperglycemia ช่วงบ่ายจาก steroid ได้เพียงพอ"
+          },
+          {
+            "label": "C",
+            "text": "ใช้ regular insulin sliding scale ตามระดับน้ำตาลก่อนนอนเพียงอย่างเดียว",
+            "explanation": "✗ ผิด — sliding scale อย่างเดียวเป็น reactive และไม่แนะนำเป็นการรักษาหลัก"
+          },
+          {
+            "label": "D",
+            "text": "NPH insulin ประมาณ 21 units ฉีดตอนเช้าพร้อมกับเวลาที่กิน prednisolone",
+            "explanation": "✓ ถูก — NPH เช้าตรงกับฤทธิ์ของ prednisolone และขนาด 0.3 U/kg × 70 kg = 21 units"
+          }
+        ],
+        "key_takeaway": "Steroid hyperglycemia: ดูน้ำตาลช่วงบ่าย ใช้ NPH เช้า ปรับตามขนาด steroid"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 50 ปี เป็น RA เริ่ม leflunomide 20 mg/วัน 6 สัปดาห์ต่อมาตรวจพบ ALT 180 U/L (ULN 40) ไม่มีอาการ ตรวจ HBsAg, anti-HCV เป็นลบ ไม่ดื่มสุรา ไม่ได้ใช้ยาหรือสมุนไพรอื่น อัลตราซาวนด์ตับปกติ แพทย์หยุดยาและทำ cholestyramine washout หลังจากนั้น 4 สัปดาห์ ALT ลดเหลือ 35 U/L ไม่มีการให้ยาซ้ำ ไม่ได้ตรวจระดับยา เมื่อประเมินด้วย Naranjo algorithm (มีรายงานว่า leflunomide ทำให้เกิด hepatotoxicity แล้ว) คะแนนและการแปลผลข้อใดถูกต้อง",
+      "choices": [
+        {
+          "label": "A",
+          "text": "7 คะแนน — Probable"
+        },
+        {
+          "label": "B",
+          "text": "9 คะแนน — Definite"
+        },
+        {
+          "label": "C",
+          "text": "4 คะแนน — Possible"
+        },
+        {
+          "label": "D",
+          "text": "5 คะแนน — Possible"
+        }
+      ],
+      "correct_answer": "A",
+      "difficulty": "hard",
+      "explanation": "Naranjo: มีรายงานมาก่อน +1, เกิดหลังได้ยา +2, ดีขึ้นเมื่อหยุดยา/ให้ antagonist +1, ไม่ได้ rechallenge 0, ตัดสาเหตุอื่นได้ +2, มีหลักฐานเชิงวัตถุ (ALT) +1 รวม 7 = Probable (5–8)",
+      "detailed_explanation": {
+        "summary": "Naranjo: มีรายงานมาก่อน +1, เกิดหลังได้ยา +2, ดีขึ้นเมื่อหยุดยา/ให้ antagonist +1, ไม่ได้ rechallenge 0, ตัดสาเหตุอื่นได้ +2, มีหลักฐานเชิงวัตถุ (ALT) +1 รวม 7 = Probable (5–8)",
+        "reason": "โจทย์ถามอะไร: ให้คำนวณคะแนน Naranjo ADR probability scale สำหรับ leflunomide-induced transaminitis และแปลผล\n\nหลักการ/กลไกเชิงลึก: Naranjo มี 10 คำถาม: (1) มีรายงานมาก่อน yes +1 (2) เกิดหลังได้ยา yes +2/no −1 (3) ดีขึ้นเมื่อหยุดยาหรือให้ specific antagonist yes +1 (4) เกิดซ้ำเมื่อให้ยาซ้ำ yes +2/no −1 (5) มีสาเหตุอื่นที่อธิบายได้ yes −1/no +2 (6) เกิดเมื่อให้ placebo yes −1/no +1 (7) ระดับยาในเลือดอยู่ในช่วงเป็นพิษ +1 (8) ขนาดสูงขึ้นอาการรุนแรงขึ้น +1 (9) เคยเกิดกับยาเดียวกันหรือคล้ายกันมาก่อน +1 (10) ยืนยันด้วยหลักฐานเชิงวัตถุ +1; ตอบ 'ไม่ทราบ/ไม่ได้ทำ' = 0 การแปลผล: ≥9 definite, 5–8 probable, 1–4 possible, ≤0 doubtful\n\nทำไมข้อ A ถูก: คำนวณ: ข้อ 1 = +1, ข้อ 2 = +2, ข้อ 3 = +1 (washout ด้วย cholestyramine ถือเป็นการหยุด/เร่งกำจัดยา), ข้อ 4 = 0 (ไม่ได้ rechallenge), ข้อ 5 = +2 (ตัด viral hepatitis สุรา ยาอื่น และโรคตับอื่นแล้ว), ข้อ 6 = 0, ข้อ 7 = 0, ข้อ 8 = 0, ข้อ 9 = 0, ข้อ 10 = +1 (ALT ผิดปกติชัดเจน) รวม 1+2+1+2+1 = 7 → Probable\n\nการประยุกต์กับผู้ป่วยจริง: เภสัชกรควรรายงาน ADR (ระบบ HPVC ของ อย.) บันทึกในประวัติ ADR ว่าเกิด hepatotoxicity จาก leflunomide หลีกเลี่ยงการให้ซ้ำ และติดตาม ALT ทุกเดือนใน 6 เดือนแรกสำหรับผู้ใช้ leflunomide ตามคำแนะนำ\n\nจุดที่มักสับสนและกับดักข้อสอบ: กับดัก: ให้ +2 กับ rechallenge ทั้งที่ไม่ได้ทำ (จะได้ 9 = definite) หรือลืมคะแนน +2 จากการตัดสาเหตุอื่น (เหลือ 5) และจำเกณฑ์สับสน: 5 คะแนนคือ probable ไม่ใช่ possible\n\nสรุปท่องสอบ: Naranjo: ≥9 definite, 5–8 probable, 1–4 possible, ≤0 doubtful",
+        "choices": [
+          {
+            "label": "A",
+            "text": "7 คะแนน — Probable",
+            "explanation": "✓ ถูก — คะแนนรวม 7 อยู่ในช่วง 5–8 = Probable"
+          },
+          {
+            "label": "B",
+            "text": "9 คะแนน — Definite",
+            "explanation": "✗ ผิด — จะได้ 9 ต้องมี rechallenge positive (+2) ซึ่งไม่ได้ทำ"
+          },
+          {
+            "label": "C",
+            "text": "4 คะแนน — Possible",
+            "explanation": "✗ ผิด — คะแนนต่ำเกินไป ลืมนับการตัดสาเหตุอื่น (+2) และหลักฐานเชิงวัตถุ"
+          },
+          {
+            "label": "D",
+            "text": "5 คะแนน — Possible",
+            "explanation": "✗ ผิด — 5 คะแนนแปลผลเป็น probable ไม่ใช่ possible และคะแนนจริงคือ 7"
+          }
+        ],
+        "key_takeaway": "Naranjo 5–8 = probable; ไม่ได้ rechallenge = 0 คะแนน"
+      }
+    },
+    {
+      "scenario": "เด็กหญิงอายุ 7 ปี เป็น polyarticular juvenile idiopathic arthritis ใช้ methotrexate 10 mg/m²/สัปดาห์ ร่วมกับ naproxen ขณะนี้เป็นไข้หวัดใหญ่ (influenza) มีไข้ 38.8°C มารดามาขอซื้อ aspirin ให้ลูกกินลดไข้แทน naproxen เภสัชกรควรแนะนำหลีกเลี่ยง aspirin เพราะความเสี่ยงข้อใดสำคัญที่สุด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Kawasaki disease"
+        },
+        {
+          "label": "B",
+          "text": "Reye's syndrome"
+        },
+        {
+          "label": "C",
+          "text": "Macrophage activation syndrome"
+        },
+        {
+          "label": "D",
+          "text": "Gray baby syndrome"
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "easy",
+      "explanation": "Aspirin ในเด็กที่ติดเชื้อไวรัส โดยเฉพาะ influenza และ varicella สัมพันธ์กับ Reye's syndrome (acute encephalopathy ร่วมกับ fatty liver/ตับวาย) จึงควรใช้ paracetamol ลดไข้แทน",
+      "detailed_explanation": {
+        "summary": "Aspirin ในเด็กที่ติดเชื้อไวรัส โดยเฉพาะ influenza และ varicella สัมพันธ์กับ Reye's syndrome (acute encephalopathy ร่วมกับ fatty liver/ตับวาย) จึงควรใช้ paracetamol ลดไข้แทน",
+        "reason": "โจทย์ถามอะไร: ถามเหตุผลที่ต้องเลี่ยง aspirin ในเด็ก JIA ที่ติดเชื้อไข้หวัดใหญ่\n\nหลักการ/กลไกเชิงลึก: Reye's syndrome เป็นภาวะ mitochondrial dysfunction ที่ทำให้เกิด acute non-inflammatory encephalopathy ร่วมกับ microvesicular fatty liver, hyperammonemia, hypoglycemia และ transaminase สูง สัมพันธ์กับ salicylate ในเด็กและวัยรุ่น (<16–19 ปี) ที่ติดเชื้อ influenza หรือ varicella อัตราตายสูง หลังรณรงค์เลิกใช้ aspirin ในเด็ก อุบัติการณ์ลดลงอย่างมาก\n\nทำไมข้อ B ถูก: ในอดีต high-dose aspirin เคยเป็นยาหลักของ JIA แต่ปัจจุบันใช้ NSAID อื่น (naproxen 10–20 mg/kg/วัน แบ่ง 2 ครั้ง, ibuprofen, meloxicam) ร่วมกับ MTX (10–15 mg/m²/สัปดาห์) และ biologic ส่วนหนึ่งเพราะความเสี่ยง Reye's syndrome ขณะติดเชื้อไวรัส ควรให้ paracetamol 10–15 mg/kg ทุก 4–6 ชม. เพื่อลดไข้\n\nการประยุกต์กับผู้ป่วยจริง: เด็กที่ใช้ MTX ควรได้รับ inactivated influenza vaccine ทุกปี ระหว่างติดเชื้อรุนแรงอาจเลื่อน MTX ตามดุลยพินิจแพทย์ หลีกเลี่ยง live vaccine เภสัชกรควรตรวจหาผลิตภัณฑ์ OTC ที่มี salicylate แฝง เช่น bismuth subsalicylate\n\nจุดที่มักสับสนและกับดักข้อสอบ: กับดัก: aspirin ใช้รักษา Kawasaki disease (ข้อยกเว้นที่เด็กใช้ aspirin ได้) ไม่ใช่สาเหตุ MAS เป็นภาวะแทรกซ้อนของ systemic JIA ไม่ใช่ผลของ aspirin gray baby syndrome เกิดจาก chloramphenicol\n\nสรุปท่องสอบ: เด็ก + ไวรัส (flu/varicella) + aspirin = Reye's syndrome → ใช้ paracetamol",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Kawasaki disease",
+            "explanation": "✗ ผิด — aspirin เป็นยารักษา Kawasaki disease ไม่ใช่สาเหตุ"
+          },
+          {
+            "label": "B",
+            "text": "Reye's syndrome",
+            "explanation": "✓ ถูก — aspirin ในเด็กที่ติด influenza/varicella สัมพันธ์กับ Reye's syndrome"
+          },
+          {
+            "label": "C",
+            "text": "Macrophage activation syndrome",
+            "explanation": "✗ ผิด — MAS เป็นภาวะแทรกซ้อนของ systemic JIA ไม่ใช่ ADR ของ aspirin"
+          },
+          {
+            "label": "D",
+            "text": "Gray baby syndrome",
+            "explanation": "✗ ผิด — gray baby syndrome เกิดจาก chloramphenicol ในทารกแรกเกิด"
+          }
+        ],
+        "key_takeaway": "เด็กไข้จากไวรัส: ห้าม aspirin (Reye's) — ใช้ paracetamol"
+      }
+    }
+  ]
+}

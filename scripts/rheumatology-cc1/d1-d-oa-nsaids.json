@@ -1,0 +1,1025 @@
+{
+  "exam_day": 1,
+  "questions": [
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 78 ปี เป็น knee OA ทั้งสองข้าง ปวดเมื่อเดินนาน (pain score 5/10) โรคร่วม: hypertension (BP 138/84 mmHg ขณะใช้ amlodipine 10 mg/day), CKD stage 3a (eGFR 50 mL/min/1.73 m²) ใช้ paracetamol 500 mg 2 เม็ด วันละ 3 ครั้ง มา 1 เดือนแล้วยังปวด ทำ exercise therapy อยู่ ยาใดเหมาะสมที่สุดที่จะเพิ่มให้ผู้ป่วยรายนี้",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Ibuprofen 400 mg รับประทานวันละ 3 ครั้ง หลังอาหาร"
+        },
+        {
+          "label": "B",
+          "text": "Diclofenac sodium 1% gel ทาบริเวณเข่าวันละ 4 ครั้ง"
+        },
+        {
+          "label": "C",
+          "text": "Celecoxib 200 mg รับประทานวันละ 1 ครั้ง"
+        },
+        {
+          "label": "D",
+          "text": "Tramadol 50 mg รับประทานทุก 6 ชั่วโมง"
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "easy",
+      "explanation": "ผู้สูงอายุ ≥75 ปีที่มี knee OA ร่วมกับ CKD/HTN ควรเลือก topical NSAID (เช่น diclofenac gel) ก่อน oral NSAID เพราะได้ผลใกล้เคียงแต่ systemic exposure ต่ำมาก",
+      "detailed_explanation": {
+        "summary": "ผู้สูงอายุ ≥75 ปีที่มี knee OA ร่วมกับ CKD/HTN ควรเลือก topical NSAID (เช่น diclofenac gel) ก่อน oral NSAID เพราะได้ผลใกล้เคียงแต่ systemic exposure ต่ำมาก",
+        "reason": "โจทย์ถามอะไร: เลือกยาเสริมสำหรับ knee OA ในผู้สูงอายุที่มีปัจจัยเสี่ยงต่อ ADR ของ NSAID ชนิดรับประทาน (อายุ 78 ปี, CKD 3a, HTN)\n\nหลักการ/กลไกเชิงลึก: Topical NSAID ซึมผ่านผิวหนังไปสะสมที่เนื้อเยื่อรอบข้อและ synovium ได้ แต่ระดับยาในพลาสมาเพียงประมาณ 5–6% ของการรับประทาน จึงยับยั้ง COX ในไต กระเพาะ และหลอดเลือดได้น้อย ACR/Arthritis Foundation 2019 ให้ topical NSAID เป็น strong recommendation สำหรับ knee OA และแนะนำให้ใช้ก่อน oral NSAID โดยเฉพาะผู้ป่วยอายุ ≥75 ปี ส่วน hand OA ให้เป็น conditional recommendation\n\nทำไมข้อ B ถูก: diclofenac 1% gel ทาวันละ 4 ครั้ง (ขนาดตามฉลาก เช่น 4 g ต่อเข่าต่อครั้งสำหรับรูปแบบ US) ให้ผลลดปวดใกล้เคียง oral NSAID ในข้อที่อยู่ตื้นอย่างเข่าและมือ ADR ส่วนใหญ่เป็นเพียงผื่นหรือระคายเคืองเฉพาะที่\n\nการประยุกต์กับผู้ป่วยจริง: แนะนำผู้ป่วยให้ทาบาง ๆ นวดเบา ๆ ล้างมือหลังทา ไม่ปิดทับด้วยผ้าพันหรือ heating pad หลีกเลี่ยงแผลเปิด และทำ exercise/ลดน้ำหนักต่อ ประเมินผลใน 2–4 สัปดาห์ แม้เป็นยาทาก็ยังควรติดตาม SCr/BP เป็นระยะในผู้ป่วย CKD\n\nจุดที่มักสับสนและกับดักข้อสอบ: อย่าคิดว่า celecoxib ปลอดภัยต่อไต COX-2 selectivity ช่วยแค่ GI ส่วนผลต่อไตและ BP ไม่ต่างจาก NSAID ทั่วไป tramadol ก็ไม่ใช่ยาที่ใช้ก่อน topical NSAID\n\nสรุปท่องสอบ: Knee/hand OA + อายุ ≥75 ปี หรือมีโรคไต/หัวใจ/GI → เริ่มที่ topical NSAID ก่อน oral NSAID",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Ibuprofen 400 mg รับประทานวันละ 3 ครั้ง หลังอาหาร",
+            "explanation": "✗ ผิด — oral NSAID ในผู้สูงอายุ ≥75 ปีที่มี CKD และ HTN เพิ่มความเสี่ยง AKI, BP สูงขึ้น และ GI bleed จึงไม่ใช่ตัวเลือกแรก"
+          },
+          {
+            "label": "B",
+            "text": "Diclofenac sodium 1% gel ทาบริเวณเข่าวันละ 4 ครั้ง",
+            "explanation": "✓ ถูก — ACR 2019 strongly recommend topical NSAID สำหรับ knee OA และควรลองก่อน oral NSAID โดยเฉพาะผู้สูงอายุ ≥75 ปี เพราะระดับยาในเลือดต่ำ (~5–6% ของ oral) จึงมี systemic ADR น้อย"
+          },
+          {
+            "label": "C",
+            "text": "Celecoxib 200 mg รับประทานวันละ 1 ครั้ง",
+            "explanation": "✗ ผิด — COX-2 inhibitor ลด GI risk แต่ยังมีผลต่อไตและ BP เท่ากับ NSAID ทั่วไป ไม่เหมาะเมื่อมีทางเลือก topical"
+          },
+          {
+            "label": "D",
+            "text": "Tramadol 50 mg รับประทานทุก 6 ชั่วโมง",
+            "explanation": "✗ ผิด — tramadol เป็นเพียง conditional recommendation ใน ACR 2019 มี ADR มึนงง หกล้ม คลื่นไส้ ในผู้สูงอายุ ไม่ใช่ขั้นถัดไปที่เหมาะที่สุดเมื่อยังไม่ได้ลอง topical NSAID"
+          }
+        ],
+        "key_takeaway": "OA ข้อเข่า/มือในผู้สูงอายุ: topical NSAID มาก่อน oral NSAID"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยชายอายุ 66 ปี มีประวัติ ischemic stroke เมื่อ 2 ปีก่อน ใช้ aspirin 81 mg วันละครั้งต่อเนื่อง ไม่มีประวัติ peptic ulcer ไม่ใช้ anticoagulant หรือ corticosteroid ปัจจุบันมี knee และ hip OA กำเริบ ปวดมาก แพทย์ตัดสินใจให้ NSAID ชนิดรับประทานระยะสั้น ข้อใดเป็นทางเลือกที่เหมาะสมที่สุดตามหลัก GI/CV risk",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Celecoxib 200 mg วันละครั้ง ร่วมกับ omeprazole 20 mg"
+        },
+        {
+          "label": "B",
+          "text": "Naproxen 250–500 mg วันละ 2 ครั้ง ร่วมกับ PPI และแนะนำให้กิน aspirin ก่อน naproxen"
+        },
+        {
+          "label": "C",
+          "text": "Diclofenac 50 mg วันละ 3 ครั้ง ร่วมกับ misoprostol"
+        },
+        {
+          "label": "D",
+          "text": "Ibuprofen 400 mg วันละ 3 ครั้ง โดยไม่ต้องให้ PPI เพราะใช้ระยะสั้น"
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "hard",
+      "explanation": "ผู้ป่วยที่ต้องใช้ low-dose aspirin (CV risk สูง) และ GI risk ปานกลาง ควรเลือก naproxen ร่วมกับ PPI",
+      "detailed_explanation": {
+        "summary": "ผู้ป่วยที่ต้องใช้ low-dose aspirin (CV risk สูง) และ GI risk ปานกลาง ควรเลือก naproxen ร่วมกับ PPI",
+        "reason": "โจทย์ถามอะไร: เลือก NSAID สำหรับผู้ป่วย CV risk สูงที่ใช้ aspirin และ GI risk ไม่สูงมาก\n\nหลักการ/กลไกเชิงลึก: ความเสี่ยงต่อ thrombosis ของ NSAID เกิดจากการยับยั้ง COX-2 ในเซลล์บุผนังหลอดเลือด (ลด PGI2) มากกว่าการยับยั้ง COX-1 ในเกล็ดเลือด (TXA2) ทำให้สมดุลเอนไปทาง prothrombotic naproxen ขนาด 500 mg BID มีค่าครึ่งชีวิตยาว (~12–17 ชม.) และยับยั้ง TXA2 ของเกล็ดเลือดได้ต่อเนื่อง meta-analysis (CNT Collaboration, Lancet 2013) จึงพบว่า naproxen ไม่เพิ่ม major vascular events อย่างมีนัยสำคัญ ขณะที่ diclofenac, high-dose ibuprofen และ coxibs เพิ่มราว 1/3\n\nทำไมข้อ B ถูก: อายุ >65 + aspirin = GI risk ปานกลาง และ prior stroke = CV risk สูง ตามแนวทาง ACG 2009 ให้ naproxen + PPI naproxen เองอาจรบกวน aspirin ได้คล้าย ibuprofen จึงแนะนำให้กิน aspirin ก่อน naproxen (ไม่กิน naproxen นำหน้า aspirin)\n\nการประยุกต์กับผู้ป่วยจริง: ใช้ขนาดต่ำสุด ระยะสั้น ติดตาม BP, SCr, K และอาการเลือดออก ไม่หยุด aspirin เอง อธิบายผู้ป่วยเรื่องอาการ GI bleed\n\nจุดที่มักสับสนและกับดักข้อสอบ: บางคนคิดว่า COX-2 + PPI ดีที่สุดเสมอ แต่ในผู้ป่วย CVD ควรเลี่ยง COX-2 นอกจากนี้ diclofenac แม้เป็น nonselective ในชื่อ แต่มี CV risk ใกล้เคียง coxib\n\nสรุปท่องสอบ: CV สูง (ใช้ aspirin) + GI ต่ำ/ปานกลาง → naproxen + PPI",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Celecoxib 200 mg วันละครั้ง ร่วมกับ omeprazole 20 mg",
+            "explanation": "✗ ผิด — COX-2 inhibitor เพิ่ม thrombotic CV risk ในผู้ป่วยที่มี CVD และเมื่อใช้ร่วม aspirin ข้อได้เปรียบด้าน GI ก็ลดลง"
+          },
+          {
+            "label": "B",
+            "text": "Naproxen 250–500 mg วันละ 2 ครั้ง ร่วมกับ PPI และแนะนำให้กิน aspirin ก่อน naproxen",
+            "explanation": "✓ ถูก — ผู้ป่วยมี CV risk สูง (ต้องใช้ aspirin) และ GI risk ปานกลาง (อายุ >65 + aspirin) แนวทางแนะนำ naproxen + PPI เพราะ naproxen มี CV risk ต่ำที่สุดในกลุ่ม"
+          },
+          {
+            "label": "C",
+            "text": "Diclofenac 50 mg วันละ 3 ครั้ง ร่วมกับ misoprostol",
+            "explanation": "✗ ผิด — diclofenac มี CV risk ใกล้เคียง COX-2 inhibitor (COX-2 selectivity ค่อนข้างสูง) จึงไม่เหมาะกับผู้ป่วย CVD"
+          },
+          {
+            "label": "D",
+            "text": "Ibuprofen 400 mg วันละ 3 ครั้ง โดยไม่ต้องให้ PPI เพราะใช้ระยะสั้น",
+            "explanation": "✗ ผิด — ibuprofen แย่งจับ COX-1 ของเกล็ดเลือด ลด cardioprotective effect ของ aspirin และผู้ป่วยอายุ >65 + aspirin ควรได้ PPI"
+          }
+        ],
+        "key_takeaway": "ต้องใช้ aspirin และต้องใช้ NSAID → naproxen + PPI"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 56 ปี น้ำหนัก 82 kg สูง 160 cm (BMI 32 kg/m²) ได้รับการวินิจฉัย knee OA ระยะเริ่มต้น ปวดเข่าเมื่อขึ้นลงบันได ยังไม่เคยได้รับการรักษาใด ๆ ตามคำแนะนำ ACR/Arthritis Foundation 2019 การรักษาแบบไม่ใช้ยาข้อใดมีระดับคำแนะนำ (strong recommendation) และควรแนะนำเป็นอันดับแรก",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ใช้เครื่อง TENS กระตุ้นไฟฟ้าที่เข่าทุกวัน"
+        },
+        {
+          "label": "B",
+          "text": "ใส่แผ่นรองเท้าแบบ lateral wedged insole"
+        },
+        {
+          "label": "C",
+          "text": "โปรแกรมออกกำลังกายร่วมกับการลดน้ำหนักอย่างน้อย 5% ของน้ำหนักตัว"
+        },
+        {
+          "label": "D",
+          "text": "ฉีดน้ำเกลือเข้าข้อ (joint lavage) ทุก 3 เดือน"
+        }
+      ],
+      "correct_answer": "C",
+      "difficulty": "easy",
+      "explanation": "ใน knee OA ที่มีน้ำหนักเกิน การออกกำลังกายร่วมกับลดน้ำหนัก ≥5% เป็น strong recommendation และเป็นการรักษาหลักอันดับแรก",
+      "detailed_explanation": {
+        "summary": "ใน knee OA ที่มีน้ำหนักเกิน การออกกำลังกายร่วมกับลดน้ำหนัก ≥5% เป็น strong recommendation และเป็นการรักษาหลักอันดับแรก",
+        "reason": "โจทย์ถามอะไร: แยกการรักษาแบบไม่ใช้ยาใน knee OA ที่ได้ strong recommendation ออกจากวิธีที่แนะนำไม่ให้ใช้\n\nหลักการ/กลไกเชิงลึก: แรงกดบนข้อเข่าขณะเดินประมาณ 3–4 เท่าของน้ำหนักตัว การลดน้ำหนัก 1 kg จึงลดแรงที่ข้อเข่าได้ราว 4 kg ต่อก้าว นอกจากนี้ไขมันยังหลั่ง adipokines ที่กระตุ้นการอักเสบของกระดูกอ่อน การลดน้ำหนัก ≥5% ช่วยลดปวดและเพิ่ม function ได้ และลดมากขึ้น (5–10% หรือมากกว่า) ก็ได้ประโยชน์มากขึ้น การออกกำลังกาย (aerobic, strengthening โดยเฉพาะกล้ามเนื้อ quadriceps, neuromuscular, aquatic, tai chi) เพิ่มความแข็งแรงของกล้ามเนื้อรอบข้อและลดปวด\n\nทำไมข้อ C ถูก: ACR/AF 2019 strongly recommend exercise, weight loss (ในผู้ที่น้ำหนักเกิน), self-efficacy/self-management program, tai chi, cane และ tibiofemoral knee brace ผู้ป่วยรายนี้ BMI 32 จึงควรเริ่มที่ exercise + weight loss ≥5% (ประมาณ ≥4 kg จาก 82 kg)\n\nการประยุกต์กับผู้ป่วยจริง: เภสัชกรควรตั้งเป้าหมายลดน้ำหนักอย่างเป็นรูปธรรม เช่น 82 × 0.05 = 4.1 kg ภายใน 3–6 เดือน แนะนำออกกำลังกายแบบแรงกระแทกต่ำ (เดินเร็ว ว่ายน้ำ จักรยาน) และฝึกกล้ามเนื้อต้นขา ใช้ยาเป็นส่วนเสริมเมื่อจำเป็น\n\nจุดที่มักสับสนและกับดักข้อสอบ: TENS เป็น strong recommendation against (ไม่ใช่ conditional) ส่วน wedged insole เป็น conditional against ข้อสอบมักสลับระดับคำแนะนำ และอย่าเลือก joint lavage ซึ่งไม่มีประโยชน์\n\nสรุปท่องสอบ: Knee OA: Exercise + Weight loss ≥5% = strong recommendation; TENS = strong against",
+        "choices": [
+          {
+            "label": "A",
+            "text": "ใช้เครื่อง TENS กระตุ้นไฟฟ้าที่เข่าทุกวัน",
+            "explanation": "✗ ผิด — ACR 2019 strongly recommend against TENS ใน knee/hip OA เพราะหลักฐานไม่แสดงประโยชน์ที่ชัดเจน"
+          },
+          {
+            "label": "B",
+            "text": "ใส่แผ่นรองเท้าแบบ lateral wedged insole",
+            "explanation": "✗ ผิด — ACR 2019 conditionally recommend against wedged insoles เพราะไม่ลดปวดอย่างมีนัยสำคัญ"
+          },
+          {
+            "label": "C",
+            "text": "โปรแกรมออกกำลังกายร่วมกับการลดน้ำหนักอย่างน้อย 5% ของน้ำหนักตัว",
+            "explanation": "✓ ถูก — exercise และ weight loss (≥5%) ได้ strong recommendation และเป็นแกนหลักของการรักษา knee OA ทุกระยะ"
+          },
+          {
+            "label": "D",
+            "text": "ฉีดน้ำเกลือเข้าข้อ (joint lavage) ทุก 3 เดือน",
+            "explanation": "✗ ผิด — joint lavage/arthroscopic debridement ไม่แนะนำใน OA ไม่มีประโยชน์เหนือ sham"
+          }
+        ],
+        "key_takeaway": "ลดน้ำหนัก ≥5% + ออกกำลังกาย คือยาที่ดีที่สุดของ knee OA"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 45 ปี เป็น hand OA และ knee OA ต้องใช้ diclofenac ระยะยาว มีประวัติ gastric ulcer แพทย์พิจารณาใช้ยาสูตรผสม diclofenac/misoprostol หรือให้ misoprostol แยก ข้อใดถูกต้องเกี่ยวกับ misoprostol",
+      "choices": [
+        {
+          "label": "A",
+          "text": "เป็น prostaglandin I2 analog ที่ป้องกันแผลโดยยับยั้ง H+/K+-ATPase ของ parietal cell"
+        },
+        {
+          "label": "B",
+          "text": "ขนาดที่ใช้ป้องกัน NSAID ulcer คือ 200 mcg วันละ 4 ครั้ง (ลดเป็น 100 mcg ได้ถ้าทนไม่ได้) ADR ที่พบบ่อยคือท้องเสีย ปวดท้อง และห้ามใช้ในหญิงตั้งครรภ์"
+        },
+        {
+          "label": "C",
+          "text": "บรรเทาอาการ dyspepsia จาก NSAID ได้ดีกว่า PPI จึงเป็นยาที่ผู้ป่วยทนได้มากที่สุด"
+        },
+        {
+          "label": "D",
+          "text": "ใช้ร่วมกับ NSAID ได้โดยไม่ต้องคุมกำเนิด เพราะไม่มีผลต่อมดลูกในขนาดป้องกันแผล"
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "medium",
+      "explanation": "Misoprostol (PGE1 analog) ใช้ 200 mcg QID ป้องกัน NSAID ulcer มี ADR ท้องเสีย และห้ามใช้ในหญิงตั้งครรภ์",
+      "detailed_explanation": {
+        "summary": "Misoprostol (PGE1 analog) ใช้ 200 mcg QID ป้องกัน NSAID ulcer มี ADR ท้องเสีย และห้ามใช้ในหญิงตั้งครรภ์",
+        "reason": "โจทย์ถามอะไร: ข้อมูลเภสัชวิทยาและการใช้ misoprostol ในการป้องกันแผลจาก NSAID\n\nหลักการ/กลไกเชิงลึก: NSAID ลด PG ในเยื่อบุกระเพาะ misoprostol เป็น synthetic PGE1 analog ทดแทน PG ที่หายไป ออกฤทธิ์ผ่าน EP receptors ลดการหลั่งกรดจาก parietal cell และเพิ่มการหลั่ง mucus/bicarbonate และ mucosal blood flow การศึกษา MUCOSA พบว่าลด serious GI complication ได้ราว 40% ข้อจำกัดคือ ADR ทางเดินอาหาร (ท้องเสีย 13–40%, ปวดท้อง) ที่ทำให้หยุดยาบ่อย และเพิ่มการบีบตัวของมดลูก (เป็นข้อบ่งใช้ทางสูติกรรมนอกฉลาก) จึง contraindicated ในหญิงตั้งครรภ์\n\nทำไมข้อ B ถูก: ข้อ B ระบุขนาด 200 mcg QID (หรือ 100 mcg QID หากทนไม่ได้) ADR ท้องเสีย และ contraindication ในการตั้งครรภ์ได้ถูกต้อง ยาสูตรผสม diclofenac 50 mg/misoprostol 200 mcg ก็ใช้วันละ 2–3 ครั้ง\n\nการประยุกต์กับผู้ป่วยจริง: ผู้ป่วยหญิงอายุ 45 ปียังอยู่ในวัยเจริญพันธุ์ ต้องตรวจการตั้งครรภ์ก่อนเริ่ม และใช้การคุมกำเนิดที่มีประสิทธิภาพ แนะนำให้กินพร้อมอาหาร เลี่ยง antacid ที่มี Mg ซึ่งเพิ่มท้องเสีย ในทางปฏิบัติ PPI มักเป็นตัวเลือกแรกเพราะทนได้ดีกว่า\n\nจุดที่มักสับสนและกับดักข้อสอบ: misoprostol ไม่ช่วย dyspepsia, ไม่ใช่ PGI2 analog และไม่ใช่ proton pump inhibitor อย่าสับสนกับ H2RA ขนาดมาตรฐานซึ่งไม่ป้องกัน gastric ulcer\n\nสรุปท่องสอบ: Misoprostol = PGE1 analog, 200 mcg QID, ADR ท้องเสีย, ห้ามในหญิงตั้งครรภ์",
+        "choices": [
+          {
+            "label": "A",
+            "text": "เป็น prostaglandin I2 analog ที่ป้องกันแผลโดยยับยั้ง H+/K+-ATPase ของ parietal cell",
+            "explanation": "✗ ผิด — misoprostol เป็น PGE1 analog ออกฤทธิ์ผ่าน EP3 receptor ลดการหลั่งกรด (ผ่าน adenylate cyclase) และเพิ่ม mucus/bicarbonate ไม่ได้ยับยั้ง proton pump โดยตรง"
+          },
+          {
+            "label": "B",
+            "text": "ขนาดที่ใช้ป้องกัน NSAID ulcer คือ 200 mcg วันละ 4 ครั้ง (ลดเป็น 100 mcg ได้ถ้าทนไม่ได้) ADR ที่พบบ่อยคือท้องเสีย ปวดท้อง และห้ามใช้ในหญิงตั้งครรภ์",
+            "explanation": "✓ ถูก — ตรงตามข้อมูลยา: ขนาดมาตรฐาน 200 mcg QID ท้องเสียพบบ่อยและ dose-dependent และกระตุ้นการบีบตัวของมดลูก จึงห้ามในหญิงตั้งครรภ์"
+          },
+          {
+            "label": "C",
+            "text": "บรรเทาอาการ dyspepsia จาก NSAID ได้ดีกว่า PPI จึงเป็นยาที่ผู้ป่วยทนได้มากที่สุด",
+            "explanation": "✗ ผิด — misoprostol ไม่บรรเทา dyspepsia และผู้ป่วยทนยาได้น้อยกว่า PPI เพราะท้องเสีย"
+          },
+          {
+            "label": "D",
+            "text": "ใช้ร่วมกับ NSAID ได้โดยไม่ต้องคุมกำเนิด เพราะไม่มีผลต่อมดลูกในขนาดป้องกันแผล",
+            "explanation": "✗ ผิด — ผลต่อมดลูกมีแม้ในขนาดรักษาทั่วไป หญิงวัยเจริญพันธุ์ต้องคุมกำเนิดที่มีประสิทธิภาพและตรวจการตั้งครรภ์ก่อนเริ่ม"
+          }
+        ],
+        "key_takeaway": "Misoprostol: PGE1, 200 mcg QID, ท้องเสีย, ห้ามตั้งครรภ์"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยชายอายุ 68 ปี เป็น hip OA ปวดปานกลางถึงมาก เคยมี bleeding gastric ulcer เมื่อ 1 ปีก่อน (ได้รับการรักษา H. pylori แล้ว) และเพิ่งเกิด acute MI ทำ PCI เมื่อ 4 เดือนก่อน ปัจจุบันได้ aspirin 81 mg + clopidogrel 75 mg, atorvastatin 80 mg, omeprazole 20 mg ผู้ป่วยขอซื้อยาแก้ปวดกลุ่ม NSAID ชนิดรับประทาน ข้อใดเป็นคำแนะนำที่เหมาะสมที่สุด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Celecoxib 200 mg วันละครั้ง ร่วมกับ omeprazole เดิม"
+        },
+        {
+          "label": "B",
+          "text": "Naproxen 250 mg วันละ 2 ครั้ง ร่วมกับ omeprazole เดิม"
+        },
+        {
+          "label": "C",
+          "text": "Ibuprofen 400 mg วันละ 3 ครั้ง ร่วมกับ misoprostol 200 mcg วันละ 4 ครั้ง"
+        },
+        {
+          "label": "D",
+          "text": "หลีกเลี่ยง oral NSAID ทุกชนิด รวมถึง COX-2 inhibitor และใช้วิธีอื่นแทน เช่น การรักษาแบบไม่ใช้ยา paracetamol หรือพิจารณา IA corticosteroid"
+        }
+      ],
+      "correct_answer": "D",
+      "difficulty": "medium",
+      "explanation": "เมื่อผู้ป่วยมีทั้ง GI risk สูง (เคย ulcer bleed, ใช้ DAPT) และ CV risk สูง (MI ล่าสุด) ควรหลีกเลี่ยง oral NSAID และ COX-2 inhibitor ทุกชนิด",
+      "detailed_explanation": {
+        "summary": "เมื่อผู้ป่วยมีทั้ง GI risk สูง (เคย ulcer bleed, ใช้ DAPT) และ CV risk สูง (MI ล่าสุด) ควรหลีกเลี่ยง oral NSAID และ COX-2 inhibitor ทุกชนิด",
+        "reason": "โจทย์ถามอะไร: ใช้ GI × CV risk matrix ในการเลือก NSAID สำหรับผู้ป่วยที่มีความเสี่ยงสูงทั้งสองด้าน\n\nหลักการ/กลไกเชิงลึก: แนวทาง ACG 2009 และ consensus ต่อมาแบ่งดังนี้: (1) GI ต่ำ/CV ต่ำ → nonselective NSAID ได้ (2) GI ปานกลาง/CV ต่ำ → NSAID + PPI หรือ COX-2 inhibitor เดี่ยว (3) GI สูง/CV ต่ำ → COX-2 inhibitor + PPI (4) CV สูง (ต้องใช้ low-dose aspirin) + GI ต่ำ–ปานกลาง → naproxen + PPI (5) CV สูง + GI สูง → หลีกเลี่ยง NSAID และ COX-2 inhibitor ปัจจัย GI สูงได้แก่ ประวัติ complicated ulcer (bleed/perforation) หรือมีปัจจัยเสี่ยงหลายข้อ เช่น อายุ >65 ปี ใช้ antiplatelet/anticoagulant/corticosteroid ร่วม\n\nทำไมข้อ D ถูก: ผู้ป่วยมีประวัติ bleeding ulcer + DAPT + อายุ >65 = GI risk สูง และ MI/PCI 4 เดือน = CV risk สูง จึงตกช่องที่ 5 ต้องหลีกเลี่ยง oral NSAID ทั้งหมด\n\nการประยุกต์กับผู้ป่วยจริง: ทางเลือกคือ exercise/ลดน้ำหนัก, ไม้เท้า, paracetamol ในขนาดที่เหมาะสม, IA corticosteroid สำหรับ hip OA (ทำภายใต้ imaging guidance), duloxetine หรือ tramadol ระยะสั้นอย่างระมัดระวัง สำหรับ hip OA ไม่แนะนำ topical NSAID เพราะข้ออยู่ลึก\n\nจุดที่มักสับสนและกับดักข้อสอบ: อย่าเลือก naproxen + PPI เพียงเพราะ CV profile ดี เพราะใช้ได้เฉพาะเมื่อ GI risk ไม่สูง และอย่าเลือก celecoxib + PPI ที่ใช้ได้เฉพาะ GI สูงแต่ CV ต่ำ\n\nสรุปท่องสอบ: GI สูง + CV สูง = NO NSAID/COX-2; CV สูง + GI ต่ำ–กลาง = naproxen + PPI; GI สูง + CV ต่ำ = COX-2 + PPI",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Celecoxib 200 mg วันละครั้ง ร่วมกับ omeprazole เดิม",
+            "explanation": "✗ ผิด — COX-2 selective ลด GI risk ได้ แต่ผู้ป่วยมี CV risk สูงมาก (MI ล่าสุด) COX-2 inhibitor เพิ่ม thrombotic event จึงไม่เหมาะ"
+          },
+          {
+            "label": "B",
+            "text": "Naproxen 250 mg วันละ 2 ครั้ง ร่วมกับ omeprazole เดิม",
+            "explanation": "✗ ผิด — naproxen มี CV profile ดีที่สุดในกลุ่ม แต่ใช้เมื่อ GI risk ต่ำ–ปานกลาง ผู้ป่วยรายนี้มี GI risk สูง (เคย bleed + DAPT) ร่วมกับ CV risk สูง จึงควรเลี่ยง NSAID ทั้งหมด"
+          },
+          {
+            "label": "C",
+            "text": "Ibuprofen 400 mg วันละ 3 ครั้ง ร่วมกับ misoprostol 200 mcg วันละ 4 ครั้ง",
+            "explanation": "✗ ผิด — ibuprofen ลด antiplatelet effect ของ aspirin และยังเพิ่ม CV/GI risk misoprostol ไม่ช่วยลดปัญหา CV"
+          },
+          {
+            "label": "D",
+            "text": "หลีกเลี่ยง oral NSAID ทุกชนิด รวมถึง COX-2 inhibitor และใช้วิธีอื่นแทน เช่น การรักษาแบบไม่ใช้ยา paracetamol หรือพิจารณา IA corticosteroid",
+            "explanation": "✓ ถูก — ผู้ป่วยมีทั้ง GI risk สูงและ CV risk สูง ตามแนวทาง (ACG/consensus) ควรหลีกเลี่ยง NSAID และ COX-2 inhibitor ทุกตัว"
+          }
+        ],
+        "key_takeaway": "GI สูงและ CV สูงพร้อมกัน → เลี่ยง oral NSAID ทุกชนิด"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 52 ปี ใช้ sertraline 100 mg/day รักษาโรคซึมเศร้า 3 วันก่อนได้รับ tramadol 50 mg ทุก 6 ชั่วโมง สำหรับ knee OA วันนี้มาด้วยอาการกระสับกระส่าย เหงื่อออกมาก ตัวสั่น อุณหภูมิ 38.6 °C HR 118 /min รูม่านตาขยาย ตรวจพบ inducible ankle clonus และ hyperreflexia ข้อใดอธิบายสาเหตุได้ถูกต้องที่สุด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Neuroleptic malignant syndrome จาก tramadol ยับยั้ง dopamine receptor"
+        },
+        {
+          "label": "B",
+          "text": "Serotonin syndrome จาก tramadol ยับยั้ง serotonin reuptake ร่วมกับ sertraline (SSRI)"
+        },
+        {
+          "label": "C",
+          "text": "Opioid toxicity จาก sertraline ยับยั้ง CYP2D6 ทำให้ tramadol สะสม"
+        },
+        {
+          "label": "D",
+          "text": "Anticholinergic toxicity จาก tramadol"
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "medium",
+      "explanation": "Tramadol มีฤทธิ์ยับยั้ง serotonin/NE reuptake เมื่อใช้ร่วม SSRI จึงเกิด serotonin syndrome (clonus, hyperthermia, diaphoresis, agitation)",
+      "detailed_explanation": {
+        "summary": "Tramadol มีฤทธิ์ยับยั้ง serotonin/NE reuptake เมื่อใช้ร่วม SSRI จึงเกิด serotonin syndrome (clonus, hyperthermia, diaphoresis, agitation)",
+        "reason": "โจทย์ถามอะไร: วินิจฉัย ADR จากการใช้ tramadol ร่วมกับยา serotonergic และแยกจาก toxidrome อื่น\n\nหลักการ/กลไกเชิงลึก: tramadol เป็น racemic mixture: (+)-enantiomer ยับยั้ง serotonin reuptake และเป็น weak μ-agonist, (−)-enantiomer ยับยั้ง NE reuptake ส่วน metabolite O-desmethyltramadol (M1) ผ่าน CYP2D6 เป็น μ-agonist ที่แรงกว่ามาก เมื่อใช้ร่วม SSRI/SNRI/MAOI/linezolid/triptan จึงเพิ่ม serotonin ใน CNS เกินจนเกิด serotonin syndrome เกณฑ์ Hunter: ใช้ยา serotonergic ร่วมกับ spontaneous clonus หรือ inducible/ocular clonus + agitation/diaphoresis หรือ tremor + hyperreflexia หรือ hypertonia + T >38 °C + clonus\n\nทำไมข้อ B ถูก: ผู้ป่วยมีอาการภายใน 3 วันหลังเพิ่ม tramadol มี clonus, hyperreflexia, mydriasis, diaphoresis, tachycardia และไข้ ตรงกับ serotonin syndrome\n\nการประยุกต์กับผู้ป่วยจริง: หยุด tramadol (และพิจารณาหยุด sertraline ชั่วคราว) ให้การรักษาแบบประคับประคอง ใช้ benzodiazepine ควบคุมกระสับกระส่าย ให้ cyproheptadine (5-HT2A antagonist) 12 mg loading แล้ว 2 mg ทุก 2 ชม. หากอาการไม่ดีขึ้น ไข้สูงมาก (>41 °C) ต้อง sedation/intubation ไม่ใช้ antipyretic เพราะไข้เกิดจากกล้ามเนื้อ เมื่อหายแล้วควรเลือกยาแก้ปวดที่ไม่ใช่ serotonergic\n\nจุดที่มักสับสนและกับดักข้อสอบ: NMS เกิดช้า (วัน) มี rigidity และ bradyreflexia ส่วน serotonin syndrome เกิดเร็ว (ชั่วโมง) มี clonus/hyperreflexia เด่นที่ขา จุดแยกจาก opioid toxicity คือรูม่านตาขยาย\n\nสรุปท่องสอบ: Tramadol + SSRI/SNRI/MAOI → serotonin syndrome: clonus, hyperreflexia, mydriasis, hyperthermia",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Neuroleptic malignant syndrome จาก tramadol ยับยั้ง dopamine receptor",
+            "explanation": "✗ ผิด — NMS เกิดจาก dopamine antagonist มีอาการแบบ lead-pipe rigidity เกิดช้าหลายวัน และ reflex ลดลง ไม่ใช่ clonus"
+          },
+          {
+            "label": "B",
+            "text": "Serotonin syndrome จาก tramadol ยับยั้ง serotonin reuptake ร่วมกับ sertraline (SSRI)",
+            "explanation": "✓ ถูก — อาการเข้าเกณฑ์ Hunter (clonus + agitation + diaphoresis + hyperthermia) ภายหลังเพิ่มยา serotonergic ตัวที่สอง"
+          },
+          {
+            "label": "C",
+            "text": "Opioid toxicity จาก sertraline ยับยั้ง CYP2D6 ทำให้ tramadol สะสม",
+            "explanation": "✗ ผิด — opioid toxicity ทำให้ซึม, หายใจช้า, miosis ตรงข้ามกับอาการของผู้ป่วย และ sertraline ยับยั้ง CYP2D6 ได้เพียงเล็กน้อย–ปานกลาง"
+          },
+          {
+            "label": "D",
+            "text": "Anticholinergic toxicity จาก tramadol",
+            "explanation": "✗ ผิด — anticholinergic toxicity ผิวแห้งร้อน ไม่มีเหงื่อ ลำไส้ไม่ทำงาน และไม่มี clonus"
+          }
+        ],
+        "key_takeaway": "Tramadol + SSRI → เฝ้าระวัง clonus = serotonin syndrome"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 72 ปี เป็น knee OA ปวดมาก (pain score 7/10) ใช้ topical NSAID และ paracetamol แล้วไม่ดีขึ้น มีประวัติ peptic ulcer มีเลือดออกเมื่อ 3 ปีก่อน ตรวจ H. pylori ผลลบ ไม่มีโรคหัวใจและหลอดเลือด ไม่สูบบุหรี่ BP 124/78 mmHg, eGFR 75 mL/min/1.73 m² ไม่ได้ใช้ aspirin หากแพทย์ต้องการให้ NSAID ชนิดรับประทาน ข้อใดเหมาะสมที่สุด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Celecoxib 200 mg วันละครั้ง ร่วมกับ PPI เช่น omeprazole 20 mg วันละครั้ง"
+        },
+        {
+          "label": "B",
+          "text": "Naproxen 500 mg วันละ 2 ครั้ง ร่วมกับ famotidine 20 mg วันละ 2 ครั้ง"
+        },
+        {
+          "label": "C",
+          "text": "Piroxicam 20 mg วันละครั้ง ร่วมกับ sucralfate 1 g วันละ 4 ครั้ง"
+        },
+        {
+          "label": "D",
+          "text": "Celecoxib 200 mg วันละครั้ง โดยไม่ต้องใช้ยาป้องกันกระเพาะร่วม"
+        }
+      ],
+      "correct_answer": "A",
+      "difficulty": "medium",
+      "explanation": "ผู้ป่วย GI risk สูง (เคย ulcer bleed) แต่ CV risk ต่ำ ควรได้ COX-2 inhibitor ร่วมกับ PPI",
+      "detailed_explanation": {
+        "summary": "ผู้ป่วย GI risk สูง (เคย ulcer bleed) แต่ CV risk ต่ำ ควรได้ COX-2 inhibitor ร่วมกับ PPI",
+        "reason": "โจทย์ถามอะไร: เลือกสูตร NSAID และ gastroprotection ที่เหมาะกับผู้ป่วย GI risk สูง แต่ CV risk ต่ำ\n\nหลักการ/กลไกเชิงลึก: COX-1 ในกระเพาะสร้าง PGE2/PGI2 ที่กระตุ้นการหลั่ง mucus และ bicarbonate เพิ่ม mucosal blood flow การยับยั้ง COX-1 จึงทำให้เกิด ulcer COX-2 selective inhibitor (celecoxib, etoricoxib) ไม่รบกวน COX-1 ในขนาดรักษา จึงลด GI ulcer ลงราวครึ่งหนึ่ง เมื่อให้ร่วมกับ PPI ความเสี่ยง rebleeding ต่ำกว่าการใช้ COX-2 เดี่ยว (การศึกษา Chan et al., Lancet 2007)\n\nทำไมข้อ A ถูก: ผู้ป่วยมีประวัติ complicated ulcer (bleeding) = GI risk สูง ไม่มี CVD และไม่ใช้ aspirin = CV risk ต่ำ จึงตรงกับ COX-2 inhibitor + PPI (celecoxib 200 mg/day เป็นขนาด OA ร่วมกับ omeprazole 20 mg/day)\n\nการประยุกต์กับผู้ป่วยจริง: ใช้ NSAID ในขนาดต่ำสุดและระยะสั้นที่สุด ติดตาม BP, SCr, อาการ GI (ถ่ายดำ, ปวดท้อง) และตรวจ CBC เป็นระยะ ทบทวนว่าไม่มี antiplatelet/anticoagulant/SSRI/corticosteroid ที่เพิ่มความเสี่ยงเลือดออก\n\nจุดที่มักสับสนและกับดักข้อสอบ: H2RA ขนาดมาตรฐานป้องกันได้เพียง duodenal ulcer ไม่ป้องกัน gastric ulcer, sucralfate ไม่มีหลักฐาน ส่วน COX-2 เดี่ยวโดยไม่มี PPI ใช้ได้แค่ GI risk ปานกลาง\n\nสรุปท่องสอบ: GI สูง + CV ต่ำ → COX-2 + PPI; GI ปานกลาง → NSAID + PPI หรือ COX-2 เดี่ยว",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Celecoxib 200 mg วันละครั้ง ร่วมกับ PPI เช่น omeprazole 20 mg วันละครั้ง",
+            "explanation": "✓ ถูก — GI risk สูง (เคยมี bleeding ulcer + อายุ >65) แต่ CV risk ต่ำ แนวทางแนะนำ COX-2 inhibitor ร่วมกับ PPI ซึ่งให้การป้องกัน GI สูงสุด"
+          },
+          {
+            "label": "B",
+            "text": "Naproxen 500 mg วันละ 2 ครั้ง ร่วมกับ famotidine 20 mg วันละ 2 ครั้ง",
+            "explanation": "✗ ผิด — nonselective NSAID ในผู้ป่วย GI risk สูงไม่เหมาะ และ H2RA ขนาดมาตรฐานไม่ป้องกัน gastric ulcer จาก NSAID ได้เพียงพอ"
+          },
+          {
+            "label": "C",
+            "text": "Piroxicam 20 mg วันละครั้ง ร่วมกับ sucralfate 1 g วันละ 4 ครั้ง",
+            "explanation": "✗ ผิด — piroxicam เป็น NSAID ที่มี GI risk สูงที่สุดตัวหนึ่ง และ sucralfate ไม่มีหลักฐานป้องกัน NSAID ulcer"
+          },
+          {
+            "label": "D",
+            "text": "Celecoxib 200 mg วันละครั้ง โดยไม่ต้องใช้ยาป้องกันกระเพาะร่วม",
+            "explanation": "✗ ผิด — COX-2 inhibitor เดี่ยวเหมาะกับ GI risk ปานกลาง ผู้ป่วยที่เคยมี complicated ulcer ควรได้ PPI ร่วมด้วย"
+          }
+        ],
+        "key_takeaway": "เคย ulcer bleed แต่หัวใจดี → celecoxib + PPI"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยชายอายุ 74 ปี เป็น HT และ heart failure ใช้ enalapril 10 mg วันละ 2 ครั้ง และ furosemide 40 mg วันละครั้ง SCr เดิม 1.1 mg/dL สัปดาห์ก่อนซื้อ diclofenac 50 mg วันละ 3 ครั้ง กินเองเพื่อแก้ปวดเข่า วันนี้มีอาการอ่อนเพลีย ปัสสาวะออกน้อย SCr 2.6 mg/dL, K 5.9 mmol/L ข้อใดอธิบายเหตุการณ์และการจัดการได้ถูกต้องที่สุด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Allergic interstitial nephritis จาก diclofenac ให้ prednisolone และใช้ diclofenac ต่อได้"
+        },
+        {
+          "label": "B",
+          "text": "Prerenal azotemia จาก furosemide เพียงอย่างเดียว ควรเพิ่ม enalapril เพื่อปกป้องไต"
+        },
+        {
+          "label": "C",
+          "text": "Rhabdomyolysis จากอันตรกิริยา enalapril–diclofenac ควรตรวจ CK และให้ IV fluid ปริมาณมาก"
+        },
+        {
+          "label": "D",
+          "text": "\"Triple whammy\" AKI จาก ACEI + diuretic + NSAID ควรหยุด diclofenac ทันที พักหรือปรับ enalapril/furosemide และติดตาม SCr, K อย่างใกล้ชิด"
+        }
+      ],
+      "correct_answer": "D",
+      "difficulty": "easy",
+      "explanation": "การใช้ NSAID ร่วมกับ ACEI/ARB และ diuretic (triple whammy) ทำให้เกิด AKI และ hyperkalemia ต้องหยุด NSAID และปรับยาร่วม",
+      "detailed_explanation": {
+        "summary": "การใช้ NSAID ร่วมกับ ACEI/ARB และ diuretic (triple whammy) ทำให้เกิด AKI และ hyperkalemia ต้องหยุด NSAID และปรับยาร่วม",
+        "reason": "โจทย์ถามอะไร: รู้จัก triple whammy AKI จาก ACEI/ARB + diuretic + NSAID และการจัดการเบื้องต้น\n\nหลักการ/กลไกเชิงลึก: GFR ขึ้นกับความดันใน glomerulus ซึ่งควบคุมโดย afferent (ขยายด้วย PGE2/PGI2) และ efferent arteriole (หดด้วย angiotensin II) diuretic ลด effective circulating volume ACEI ทำให้ efferent ขยาย ส่วน NSAID ตัด PG ที่ช่วยขยาย afferent เมื่อครบทั้งสามปัจจัย ความดันใน glomerulus ตกลงอย่างมาก จึงเกิด prerenal/hemodynamic AKI อย่างรวดเร็ว ส่วน hyperkalemia เกิดจาก ACEI ลด aldosterone และ NSAID ลด renin\n\nทำไมข้อ D ถูก: SCr เพิ่มจาก 1.1 เป็น 2.6 mg/dL (>1.5 เท่า) ภายในหนึ่งสัปดาห์หลังเริ่ม diclofenac เป็น AKI ตาม KDIGO และ K 5.9 การจัดการคือหยุด NSAID พัก ACEI จนไตฟื้น ปรับ diuretic ตาม volume status รักษา hyperkalemia และติดตาม SCr/K\n\nการประยุกต์กับผู้ป่วยจริง: เภสัชกรควรคัดกรองยาที่ผู้ป่วยซื้อเองทุกครั้ง ผู้ป่วยที่ใช้ ACEI/ARB + diuretic ควรได้รับคำแนะนำให้หลีกเลี่ยง NSAID ชนิดรับประทาน ใช้ paracetamol หรือ topical NSAID แทน และสอน 'sick day rules' ให้พักยา ACEI/ARB/diuretic/NSAID/metformin เมื่อท้องเสีย อาเจียน หรือขาดน้ำ\n\nจุดที่มักสับสนและกับดักข้อสอบ: AIN จาก NSAID พบน้อยกว่าและมักมี nephrotic-range proteinuria ร่วม ส่วนกลไกสำคัญคือ hemodynamic ไม่ใช่ allergy\n\nสรุปท่องสอบ: Triple whammy = ACEI/ARB + Diuretic + NSAID → AKI + hyperK → หยุด NSAID ก่อน",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Allergic interstitial nephritis จาก diclofenac ให้ prednisolone และใช้ diclofenac ต่อได้",
+            "explanation": "✗ ผิด — AIN จาก NSAID มักเกิดหลังใช้นานหลายเดือนร่วมกับ proteinuria และ prednisolone ไม่ใช่การจัดการหลัก ทั้งยังไม่ควรใช้ diclofenac ต่อ"
+          },
+          {
+            "label": "B",
+            "text": "Prerenal azotemia จาก furosemide เพียงอย่างเดียว ควรเพิ่ม enalapril เพื่อปกป้องไต",
+            "explanation": "✗ ผิด — ปัจจัยใหม่คือ NSAID และการเพิ่ม ACEI ในภาวะ AKI + hyperkalemia ยิ่งทำให้แย่ลง"
+          },
+          {
+            "label": "C",
+            "text": "Rhabdomyolysis จากอันตรกิริยา enalapril–diclofenac ควรตรวจ CK และให้ IV fluid ปริมาณมาก",
+            "explanation": "✗ ผิด — ไม่มีหลักฐานว่าคู่นี้ทำให้เกิด rhabdomyolysis และ IV fluid ปริมาณมากอาจเป็นอันตรายในผู้ป่วย HF"
+          },
+          {
+            "label": "D",
+            "text": "\"Triple whammy\" AKI จาก ACEI + diuretic + NSAID ควรหยุด diclofenac ทันที พักหรือปรับ enalapril/furosemide และติดตาม SCr, K อย่างใกล้ชิด",
+            "explanation": "✓ ถูก — ACEI ขยาย efferent, diuretic ลด volume และ NSAID หด afferent ทำให้ GFR ลดลงอย่างรวดเร็ว การจัดการคือหยุด NSAID และปรับยาที่เป็นปัจจัยร่วม"
+          }
+        ],
+        "key_takeaway": "ACEI/ARB + diuretic + NSAID = triple whammy AKI"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 63 ปี เป็น type 2 DM (HbA1c 7.2%) ใช้ metformin และ glipizide มี knee OA ข้างขวากำเริบ มีน้ำในข้อ แพทย์ฉีด triamcinolone acetonide 40 mg เข้าข้อเข่า (intra-articular) วันนี้ ข้อใดเป็นคำแนะนำที่เหมาะสมที่สุดสำหรับผู้ป่วย",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ฉีดซ้ำได้ทุก 2 สัปดาห์หากยังปวด เพราะเป็นยาเฉพาะที่ไม่มี systemic effect"
+        },
+        {
+          "label": "B",
+          "text": "ควรใช้เข่าข้างนั้นออกกำลังกายหนักทันทีในวันฉีด เพื่อให้ยากระจายทั่วข้อ"
+        },
+        {
+          "label": "C",
+          "text": "ระดับน้ำตาลในเลือดอาจสูงขึ้นชั่วคราวประมาณ 1–3 วันหลังฉีด ควรเจาะน้ำตาลปลายนิ้วถี่ขึ้นและสังเกตอาการ"
+        },
+        {
+          "label": "D",
+          "text": "ควรหยุด metformin 48 ชั่วโมงหลังฉีดยาเข้าข้อ"
+        }
+      ],
+      "correct_answer": "C",
+      "difficulty": "medium",
+      "explanation": "IA corticosteroid ทำให้น้ำตาลในเลือดสูงขึ้นชั่วคราว 1–3 วันในผู้ป่วยเบาหวาน ควรเฝ้าระวัง และไม่ควรฉีดซ้ำถี่กว่าทุก 3 เดือน",
+      "detailed_explanation": {
+        "summary": "IA corticosteroid ทำให้น้ำตาลในเลือดสูงขึ้นชั่วคราว 1–3 วันในผู้ป่วยเบาหวาน ควรเฝ้าระวัง และไม่ควรฉีดซ้ำถี่กว่าทุก 3 เดือน",
+        "reason": "โจทย์ถามอะไร: การให้คำแนะนำหลังฉีด intra-articular corticosteroid ในผู้ป่วยเบาหวาน\n\nหลักการ/กลไกเชิงลึก: ACR 2019 strongly recommend IA glucocorticoid สำหรับ knee และ hip OA (conditional สำหรับ hand) ช่วยลดปวดได้ระยะสั้น ประมาณ 1–4 สัปดาห์ บางรายนานถึง 3 เดือน ยาที่ใช้บ่อย ได้แก่ triamcinolone acetonide 40 mg หรือ methylprednisolone acetate 40–80 mg สำหรับเข่า ยาบางส่วนดูดซึมเข้าระบบ ทำให้กดแกน HPA ได้ชั่วคราวและทำให้ระดับน้ำตาลเพิ่มขึ้น โดยมากสูงสุดใน 1–3 วัน (บางรายนานถึง 5 วัน) การฉีดบ่อย (เช่น ทุก 3 เดือนนาน 2 ปี) มีข้อมูลว่าอาจเพิ่มการสูญเสียกระดูกอ่อน\n\nทำไมข้อ C ถูก: ผู้ป่วยใช้ glipizide และ metformin ควรตรวจ SMBG ถี่ขึ้นในช่วง 1–3 วันหลังฉีด และติดต่อแพทย์หากน้ำตาลสูงมากต่อเนื่อง\n\nการประยุกต์กับผู้ป่วยจริง: นอกจากนี้ให้แนะนำ: พักข้อ 24–48 ชม., อาจมี post-injection flare ปวดมากขึ้นใน 24–48 ชม. ประคบเย็นได้ และหากมีไข้ ข้อบวมแดงร้อนมากขึ้นหลัง 48 ชม. ต้องรีบมาพบแพทย์เพราะอาจเป็น septic arthritis ฉีดซ้ำห่างอย่างน้อย 3 เดือนต่อข้อ\n\nจุดที่มักสับสนและกับดักข้อสอบ: อย่าคิดว่ายาฉีดเฉพาะที่ไม่มี systemic effect และอย่าสับสนกับ metformin + contrast media\n\nสรุปท่องสอบ: IA steroid: ห่าง ≥3 เดือน, พักข้อ 1–2 วัน, DM น้ำตาลสูงชั่วคราว 1–3 วัน",
+        "choices": [
+          {
+            "label": "A",
+            "text": "ฉีดซ้ำได้ทุก 2 สัปดาห์หากยังปวด เพราะเป็นยาเฉพาะที่ไม่มี systemic effect",
+            "explanation": "✗ ผิด — IA corticosteroid มี systemic absorption และการฉีดถี่อาจทำลายกระดูกอ่อน แนะนำห่างอย่างน้อย 3 เดือน (≤3–4 ครั้ง/ปี)"
+          },
+          {
+            "label": "B",
+            "text": "ควรใช้เข่าข้างนั้นออกกำลังกายหนักทันทีในวันฉีด เพื่อให้ยากระจายทั่วข้อ",
+            "explanation": "✗ ผิด — หลังฉีดควรพักใช้งานหนัก 24–48 ชั่วโมง เพื่อลดการรั่วของยาออกจากข้อและลดการอักเสบหลังฉีด"
+          },
+          {
+            "label": "C",
+            "text": "ระดับน้ำตาลในเลือดอาจสูงขึ้นชั่วคราวประมาณ 1–3 วันหลังฉีด ควรเจาะน้ำตาลปลายนิ้วถี่ขึ้นและสังเกตอาการ",
+            "explanation": "✓ ถูก — triamcinolone ดูดซึมเข้าระบบได้บางส่วน ทำให้ glucose สูงขึ้นชั่วคราวในผู้ป่วยเบาหวาน โดยเฉพาะ 1–3 วันแรก"
+          },
+          {
+            "label": "D",
+            "text": "ควรหยุด metformin 48 ชั่วโมงหลังฉีดยาเข้าข้อ",
+            "explanation": "✗ ผิด — การฉีด steroid เข้าข้อไม่ใช่ข้อบ่งชี้ให้หยุด metformin (ต่างจากการฉีด iodinated contrast ในผู้ป่วยไตเสื่อม)"
+          }
+        ],
+        "key_takeaway": "หลังฉีด steroid เข้าข้อ คนไข้เบาหวานต้องเฝ้าระวังน้ำตาลสูง 1–3 วัน"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 60 ปี ใช้ aspirin 81 mg (immediate-release) วันละครั้งตอนเช้า 08.00 น. เพื่อ secondary prevention หลังเกิด MI วันนี้มาซื้อ ibuprofen 400 mg เพื่อบรรเทาปวดเข่าจาก OA โดยจะใช้เป็นครั้งคราว ข้อใดเป็นคำแนะนำที่ถูกต้องเพื่อลดอันตรกิริยาระหว่างยา",
+      "choices": [
+        {
+          "label": "A",
+          "text": "กิน ibuprofen ก่อน aspirin 30 นาที เพื่อให้ ibuprofen ถูกดูดซึมก่อน"
+        },
+        {
+          "label": "B",
+          "text": "กินพร้อมกันได้เลย เพราะทั้งสองยาเป็น NSAID เสริมฤทธิ์กันโดยไม่มีอันตรกิริยา"
+        },
+        {
+          "label": "C",
+          "text": "กิน ibuprofen อย่างน้อย 30 นาทีหลัง aspirin หรือมากกว่า 8 ชั่วโมงก่อนกิน aspirin"
+        },
+        {
+          "label": "D",
+          "text": "เปลี่ยนจาก aspirin เป็น ibuprofen เพราะ ibuprofen ก็มีฤทธิ์ต้านเกล็ดเลือด"
+        }
+      ],
+      "correct_answer": "C",
+      "difficulty": "medium",
+      "explanation": "ibuprofen แย่งจับ COX-1 ของเกล็ดเลือดและขัดขวางการ acetylate โดย aspirin ควรกิน ibuprofen ≥30 นาทีหลัง aspirin IR หรือ >8 ชั่วโมงก่อน aspirin",
+      "detailed_explanation": {
+        "summary": "ibuprofen แย่งจับ COX-1 ของเกล็ดเลือดและขัดขวางการ acetylate โดย aspirin ควรกิน ibuprofen ≥30 นาทีหลัง aspirin IR หรือ >8 ชั่วโมงก่อน aspirin",
+        "reason": "โจทย์ถามอะไร: จังหวะการให้ ibuprofen ร่วมกับ low-dose aspirin เพื่อคง antiplatelet effect\n\nหลักการ/กลไกเชิงลึก: aspirin acetylate serine 530 ของ COX-1 ในเกล็ดเลือดแบบ irreversible ทำให้เกล็ดเลือดสร้าง TXA2 ไม่ได้ตลอดอายุ (~7–10 วัน) aspirin ต้องผ่านช่อง hydrophobic channel ของ COX-1 ก่อนถึง Ser530 ibuprofen (และ naproxen) จับช่องเดียวกันแบบ reversible จึงบังไม่ให้ aspirin เข้าถึงตำแหน่งได้ เมื่อ ibuprofen หลุดออก aspirin ในเลือดซึ่งมี t½ เพียง ~15–20 นาทีถูก hydrolyze หมดแล้ว ผลคือเกล็ดเลือดกลับมาทำงานได้\n\nทำไมข้อ C ถูก: US FDA แนะนำ: ผู้ที่ใช้ aspirin IR ขนาดต่ำ หากต้องใช้ ibuprofen 400 mg ครั้งเดียว ให้กิน ibuprofen อย่างน้อย 30 นาทีหลัง aspirin หรือมากกว่า 8 ชั่วโมงก่อน aspirin สำหรับ enteric-coated aspirin ข้อมูลไม่ชัดเจน\n\nการประยุกต์กับผู้ป่วยจริง: ผู้ป่วยกิน aspirin 08.00 น. ดังนั้นกิน ibuprofen ได้หลัง 08.30 น. และช่วงเย็นโดยไม่ให้อยู่ภายใน 8 ชั่วโมงก่อนเช้าถัดไป ถ้าต้องใช้ประจำควรพิจารณา topical NSAID หรือยาอื่นแทน และประเมิน GI protection\n\nจุดที่มักสับสนและกับดักข้อสอบ: ข้อสอบมักสลับลำดับ: aspirin ต้องมาก่อน เสมอ celecoxib และ diclofenac รบกวนน้อยกว่าเพราะไม่ค่อยจับ COX-1 ส่วน paracetamol ไม่รบกวน\n\nสรุปท่องสอบ: Aspirin ก่อน → รอ ≥30 นาที → ibuprofen; หรือ ibuprofen ต้องห่าง >8 ชม. ก่อน aspirin",
+        "choices": [
+          {
+            "label": "A",
+            "text": "กิน ibuprofen ก่อน aspirin 30 นาที เพื่อให้ ibuprofen ถูกดูดซึมก่อน",
+            "explanation": "✗ ผิด — เป็นลำดับที่ผิด หาก ibuprofen จับ COX-1 ก่อน aspirin จะเข้าไป acetylate Ser530 ไม่ได้ ทำให้ antiplatelet effect ลดลง"
+          },
+          {
+            "label": "B",
+            "text": "กินพร้อมกันได้เลย เพราะทั้งสองยาเป็น NSAID เสริมฤทธิ์กันโดยไม่มีอันตรกิริยา",
+            "explanation": "✗ ผิด — มีอันตรกิริยาเชิง pharmacodynamic ที่ทำให้ aspirin ด้อยฤทธิ์ และยังเพิ่ม GI bleed"
+          },
+          {
+            "label": "C",
+            "text": "กิน ibuprofen อย่างน้อย 30 นาทีหลัง aspirin หรือมากกว่า 8 ชั่วโมงก่อนกิน aspirin",
+            "explanation": "✓ ถูก — ตรงกับคำแนะนำของ US FDA: ให้ aspirin acetylate COX-1 ของเกล็ดเลือดอย่างถาวรก่อน แล้วจึงให้ ibuprofen"
+          },
+          {
+            "label": "D",
+            "text": "เปลี่ยนจาก aspirin เป็น ibuprofen เพราะ ibuprofen ก็มีฤทธิ์ต้านเกล็ดเลือด",
+            "explanation": "✗ ผิด — ibuprofen ยับยั้ง COX-1 แบบ reversible และสั้น ไม่มี cardioprotection ห้ามใช้แทน aspirin"
+          }
+        ],
+        "key_takeaway": "Aspirin มาก่อน ibuprofen อย่างน้อย 30 นาที"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 80 ปี น้ำหนัก 50 kg SCr 1.4 mg/dL เป็น hip OA ปวดมาก ใช้ paracetamol แล้วไม่ได้ผลและไม่เหมาะกับ NSAID แพทย์ต้องการเริ่ม tramadol ชนิด immediate-release ไม่มีประวัติชัก ข้อใดคือ regimen ที่เหมาะสมที่สุด (คำนวณ CrCl ด้วย Cockcroft–Gault)",
+      "choices": [
+        {
+          "label": "A",
+          "text": "50–100 mg ทุก 4–6 ชั่วโมง ไม่เกิน 400 mg/day"
+        },
+        {
+          "label": "B",
+          "text": "50–100 mg ทุก 4–6 ชั่วโมง ไม่เกิน 300 mg/day"
+        },
+        {
+          "label": "C",
+          "text": "50–100 mg ทุก 12 ชั่วโมง ไม่เกิน 200 mg/day (เริ่มที่ขนาดต่ำ)"
+        },
+        {
+          "label": "D",
+          "text": "ห้ามใช้ tramadol ทุกรูปแบบในผู้ที่มี CrCl <30 mL/min"
+        }
+      ],
+      "correct_answer": "C",
+      "difficulty": "hard",
+      "explanation": "CrCl = [(140−80)×50]/(72×1.4)×0.85 ≈ 25 mL/min (<30) จึงให้ tramadol IR ทุก 12 ชั่วโมง ไม่เกิน 200 mg/day",
+      "detailed_explanation": {
+        "summary": "CrCl = [(140−80)×50]/(72×1.4)×0.85 ≈ 25 mL/min (<30) จึงให้ tramadol IR ทุก 12 ชั่วโมง ไม่เกิน 200 mg/day",
+        "reason": "โจทย์ถามอะไร: คำนวณ CrCl แล้วปรับขนาด tramadol ตามอายุและการทำงานของไต\n\nหลักการ/กลไกเชิงลึก: tramadol และ M1 metabolite ถูกขับทางไตประมาณ 90% (30% เป็นยารูปเดิม) ในผู้ป่วยไตบกพร่องยาและ metabolite สะสม เพิ่มความเสี่ยงชัก (ลด seizure threshold ผ่านการยับยั้ง reuptake ของ 5-HT/NE และผลต่อ GABA), ภาวะกดการหายใจ, serotonin syndrome และ hypoglycemia/hyponatremia ฉลากระบุ: ผู้ใหญ่ ≤400 mg/day; อายุ >75 ปี ≤300 mg/day; CrCl <30 mL/min ให้ทุก 12 ชม. ≤200 mg/day; cirrhosis 50 mg ทุก 12 ชม.\n\nทำไมข้อ C ถูก: Cockcroft–Gault (หญิง): CrCl = [(140 − อายุ) × น้ำหนัก] / (72 × SCr) × 0.85 = [(140 − 80) × 50] / (72 × 1.4) × 0.85 = 3,000 / 100.8 × 0.85 = 29.76 × 0.85 ≈ 25.3 mL/min ซึ่ง <30 จึงต้องใช้ทุก 12 ชม. และไม่เกิน 200 mg/day เนื่องจาก 200 < 300 (เพดานของอายุ >75) จึงใช้ค่าที่ต่ำกว่า คือ 200 mg/day\n\nการประยุกต์กับผู้ป่วยจริง: เริ่ม 25–50 mg แล้วค่อย ๆ titrate ('start low, go slow') ติดตามอาการง่วง สับสน หกล้ม ท้องผูก คลื่นไส้ ให้ยาระบาย ตรวจยาที่ใช้ร่วม เช่น SSRI/SNRI, bupropion (ลด seizure threshold) และ CYP2D6 inhibitor\n\nจุดที่มักสับสนและกับดักข้อสอบ: อย่าลืมคูณ 0.85 สำหรับหญิง หากลืมจะได้ ~30 ซึ่งอาจตัดสินผิด และเพดาน 300 mg/day เป็นเรื่องอายุ ไม่ใช่ไต อย่าสับสนกับฉลาก ER tramadol ที่ไม่ใช้เมื่อ CrCl <30\n\nสรุปท่องสอบ: Tramadol: ปกติ ≤400; อายุ >75 ≤300; CrCl <30 → q12h ≤200 mg/day",
+        "choices": [
+          {
+            "label": "A",
+            "text": "50–100 mg ทุก 4–6 ชั่วโมง ไม่เกิน 400 mg/day",
+            "explanation": "✗ ผิด — เป็นขนาดสำหรับผู้ใหญ่ทั่วไป ที่ CrCl ปกติและอายุ ≤75 ปี ผู้ป่วยรายนี้อายุ 80 และ CrCl ~25 mL/min จึงต้องลดลง"
+          },
+          {
+            "label": "B",
+            "text": "50–100 mg ทุก 4–6 ชั่วโมง ไม่เกิน 300 mg/day",
+            "explanation": "✗ ผิด — จำกัด 300 mg/day ตามอายุ >75 ปีถูกต้อง แต่ยังไม่ได้ปรับตามไต ซึ่ง CrCl <30 ต้องยืดช่วงเป็นทุก 12 ชั่วโมง"
+          },
+          {
+            "label": "C",
+            "text": "50–100 mg ทุก 12 ชั่วโมง ไม่เกิน 200 mg/day (เริ่มที่ขนาดต่ำ)",
+            "explanation": "✓ ถูก — CrCl ≈ 25 mL/min (<30) ตามฉลากให้ยืด dosing interval เป็นทุก 12 ชั่วโมง ขนาดสูงสุด 200 mg/day ซึ่งต่ำกว่าเพดาน 300 mg/day ของผู้สูงอายุ"
+          },
+          {
+            "label": "D",
+            "text": "ห้ามใช้ tramadol ทุกรูปแบบในผู้ที่มี CrCl <30 mL/min",
+            "explanation": "✗ ผิด — เฉพาะ extended-release tramadol ที่ไม่แนะนำเมื่อ CrCl <30 ส่วน immediate-release ใช้ได้โดยปรับขนาด"
+          }
+        ],
+        "key_takeaway": "Tramadol CrCl <30 → ทุก 12 ชม. สูงสุด 200 mg/วัน"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 65 ปี เป็น diabetic nephropathy (eGFR 45 mL/min/1.73 m²) ใช้ NSAID ต่อเนื่องเพื่อรักษา OA พบว่าระดับ K ในเลือดเพิ่มจาก 4.6 เป็น 5.7 mmol/L และมีบวมที่ขา ข้อใดอธิบายกลไกของ NSAID ต่อไตได้ถูกต้องที่สุด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ยับยั้งการสร้าง prostaglandin ทำให้ afferent arteriole หดตัว GFR ลดลง และลดการหลั่ง renin จนเกิด hyporeninemic hypoaldosteronism → hyperkalemia ร่วมกับคั่ง Na/น้ำ"
+        },
+        {
+          "label": "B",
+          "text": "ทำให้ efferent arteriole ขยายตัว GFR ลดลง และเพิ่ม aldosterone ทำให้ K สูง"
+        },
+        {
+          "label": "C",
+          "text": "เป็นพิษโดยตรงต่อ proximal tubule แบบ dose-dependent เหมือน aminoglycoside ทำให้เสีย K ทางปัสสาวะ"
+        },
+        {
+          "label": "D",
+          "text": "กระตุ้น ADH โดยตรงทำให้ hyponatremia เป็นกลไกหลักของ hyperkalemia"
+        }
+      ],
+      "correct_answer": "A",
+      "difficulty": "medium",
+      "explanation": "NSAID ลด PG ที่ขยาย afferent arteriole (GFR ลด) และลดการหลั่ง renin (hyporeninemic hypoaldosteronism → K สูง) พร้อมเพิ่มการดูดกลับ Na ทำให้บวม",
+      "detailed_explanation": {
+        "summary": "NSAID ลด PG ที่ขยาย afferent arteriole (GFR ลด) และลดการหลั่ง renin (hyporeninemic hypoaldosteronism → K สูง) พร้อมเพิ่มการดูดกลับ Na ทำให้บวม",
+        "reason": "โจทย์ถามอะไร: กลไกของ NSAID ต่อ hemodynamic ของไตและสมดุลอิเล็กโทรไลต์\n\nหลักการ/กลไกเชิงลึก: ในภาวะปกติ PG มีบทบาทน้อยต่อไต แต่ในภาวะที่ไตพึ่งพา PG (ผู้สูงอายุ, CKD, HF, cirrhosis, volume depletion, ใช้ diuretic/ACEI) PGE2 และ PGI2 ขยาย afferent arteriole เพื่อคง GFR, กระตุ้น juxtaglomerular cell หลั่ง renin และยับยั้ง Na reabsorption ที่ thick ascending limb และ collecting duct การยับยั้ง COX ทั้ง COX-1 และ COX-2 (COX-2 มี constitutive expression ใน macula densa) จึงทำให้ (1) GFR ลด (2) renin → aldosterone ลด → K สูง (type 4 RTA-like) (3) Na/น้ำคั่ง บวม BP สูง (4) เสริมฤทธิ์ ADH → hyponatremia\n\nทำไมข้อ A ถูก: ข้อ A รวมกลไก afferent vasoconstriction และ hyporeninemic hypoaldosteronism ได้ครบ อธิบายทั้ง GFR ลด K สูง และบวมของผู้ป่วยรายนี้\n\nการประยุกต์กับผู้ป่วยจริง: ผู้ป่วย diabetic nephropathy มักมี hyporeninemic hypoaldosteronism อยู่แล้ว และมักใช้ ACEI/ARB หรือ SGLT2i ร่วม การใช้ NSAID ต่อเนื่องจึงไม่เหมาะ ควรหยุด NSAID ตรวจ K/SCr ซ้ำ และเปลี่ยนเป็น topical NSAID, paracetamol หรือ duloxetine\n\nจุดที่มักสับสนและกับดักข้อสอบ: อย่าสับสนระหว่าง afferent (PG ขยาย, NSAID ทำให้หด) กับ efferent (Ang II หด, ACEI ทำให้ขยาย) COX-2 selective ก็มีผลต่อไตเท่ากัน\n\nสรุปท่องสอบ: NSAID → afferent หด, renin ลด → GFR ลด + K สูง + Na คั่ง",
+        "choices": [
+          {
+            "label": "A",
+            "text": "ยับยั้งการสร้าง prostaglandin ทำให้ afferent arteriole หดตัว GFR ลดลง และลดการหลั่ง renin จนเกิด hyporeninemic hypoaldosteronism → hyperkalemia ร่วมกับคั่ง Na/น้ำ",
+            "explanation": "✓ ถูก — PGE2/PGI2 รักษา afferent dilation และกระตุ้นการหลั่ง renin รวมทั้งยับยั้งการดูดกลับ Na เมื่อ NSAID ยับยั้ง จึงเกิด GFR ลดลง hyperK และบวม"
+          },
+          {
+            "label": "B",
+            "text": "ทำให้ efferent arteriole ขยายตัว GFR ลดลง และเพิ่ม aldosterone ทำให้ K สูง",
+            "explanation": "✗ ผิด — efferent dilation เป็นกลไกของ ACEI/ARB ไม่ใช่ NSAID และ aldosterone ที่เพิ่มจะทำให้ K ต่ำ ไม่ใช่สูง"
+          },
+          {
+            "label": "C",
+            "text": "เป็นพิษโดยตรงต่อ proximal tubule แบบ dose-dependent เหมือน aminoglycoside ทำให้เสีย K ทางปัสสาวะ",
+            "explanation": "✗ ผิด — NSAID ไม่ได้ทำให้เกิด tubular necrosis แบบ aminoglycoside และภาวะที่พบคือ K สูง ไม่ใช่เสีย K"
+          },
+          {
+            "label": "D",
+            "text": "กระตุ้น ADH โดยตรงทำให้ hyponatremia เป็นกลไกหลักของ hyperkalemia",
+            "explanation": "✗ ผิด — NSAID เสริมฤทธิ์ ADH ได้ (ลด PGE2 ที่ต้าน ADH) ทำให้ hyponatremia แต่ไม่ใช่กลไกของ hyperkalemia"
+          }
+        ],
+        "key_takeaway": "NSAID ไต: afferent หด + renin ต่ำ = GFR ลด, K สูง, บวม"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยชายอายุ 64 ปี เป็น knee OA ถามเภสัชกรเรื่องทางเลือกการรักษาต่าง ๆ ที่เห็นในโฆษณา ตามแนวทาง ACR/Arthritis Foundation 2019 สำหรับ knee OA ข้อใดถูกต้อง",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Intra-articular hyaluronic acid ได้รับ strong recommendation ให้ใช้ในผู้ป่วยทุกรายที่ NSAID ไม่ได้ผล"
+        },
+        {
+          "label": "B",
+          "text": "Chondroitin sulfate ได้รับ strong recommendation สำหรับ knee OA เพราะช่วยสร้างกระดูกอ่อนใหม่"
+        },
+        {
+          "label": "C",
+          "text": "Intra-articular corticosteroid ได้รับ strong recommendation against เพราะทำลายกระดูกอ่อน"
+        },
+        {
+          "label": "D",
+          "text": "Glucosamine ได้รับ strong recommendation against ทั้งใน knee และ hip OA"
+        }
+      ],
+      "correct_answer": "D",
+      "difficulty": "easy",
+      "explanation": "ACR 2019 ให้ glucosamine เป็น strong recommendation against สำหรับ knee/hip OA ส่วน IA corticosteroid เป็น strong for และ IA hyaluronic acid เป็น conditional against",
+      "detailed_explanation": {
+        "summary": "ACR 2019 ให้ glucosamine เป็น strong recommendation against สำหรับ knee/hip OA ส่วน IA corticosteroid เป็น strong for และ IA hyaluronic acid เป็น conditional against",
+        "reason": "โจทย์ถามอะไร: ระดับคำแนะนำของ ACR/AF 2019 ต่อ supplement และยาฉีดเข้าข้อใน knee OA\n\nหลักการ/กลไกเชิงลึก: ACR/AF 2019 ใช้วิธี GRADE ให้น้ำหนักกับ RCT ที่มีอคติต่ำและผลที่มีนัยสำคัญทางคลินิก glucosamine: การศึกษา GAIT (NIH) และ meta-analysis ไม่พบประโยชน์เหนือ placebo ในการลดปวด ผลบวกในบางการศึกษามักเป็นสูตร crystalline glucosamine sulfate ที่ได้ทุนจากผู้ผลิต → strong against (knee/hip/hand) chondroitin → strong against สำหรับ knee/hip แต่ conditional for สำหรับ hand OA IA hyaluronic acid → conditional against (knee, 1st CMC) และ strong against สำหรับ hip IA corticosteroid → strong for (knee/hip)\n\nทำไมข้อ D ถูก: ข้อ D ถูกเพราะ glucosamine เป็น strong recommendation against ทั้ง knee และ hip OA ตามแนวทาง\n\nการประยุกต์กับผู้ป่วยจริง: เภสัชกรควรอธิบายผู้ป่วยตามหลักฐาน หากผู้ป่วยต้องการลองใช้ ให้ประเมินค่าใช้จ่าย ระวัง glucosamine ที่สกัดจากเปลือกกุ้ง/ปู ในผู้แพ้อาหารทะเล และอาจเพิ่ม INR เมื่อใช้ร่วม warfarin หากไม่ดีขึ้นใน 3 เดือนควรหยุด และเน้น exercise, weight loss, NSAID ชนิดทา/รับประทานตามความเหมาะสม\n\nจุดที่มักสับสนและกับดักข้อสอบ: European guideline (ESCEO) ยังมีที่ทางให้ crystalline glucosamine sulfate ซึ่งต่างจาก ACR ในข้อสอบที่อ้าง ACR 2019 ให้ตอบตาม ACR และจำว่า chondroitin มีข้อยกเว้นสำหรับ hand OA\n\nสรุปท่องสอบ: ACR 2019: IA steroid = strong for; IA HA = conditional against (knee); glucosamine = strong against; chondroitin = strong against (knee/hip), conditional for (hand)",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Intra-articular hyaluronic acid ได้รับ strong recommendation ให้ใช้ในผู้ป่วยทุกรายที่ NSAID ไม่ได้ผล",
+            "explanation": "✗ ผิด — ACR 2019 ให้ IA hyaluronic acid เป็น conditional recommendation against สำหรับ knee OA เพราะเมื่อเทียบกับ saline injection แล้วผลต่างน้อย"
+          },
+          {
+            "label": "B",
+            "text": "Chondroitin sulfate ได้รับ strong recommendation สำหรับ knee OA เพราะช่วยสร้างกระดูกอ่อนใหม่",
+            "explanation": "✗ ผิด — chondroitin ได้ strong recommendation against ใน knee/hip OA (มีเพียง conditional for ใน hand OA)"
+          },
+          {
+            "label": "C",
+            "text": "Intra-articular corticosteroid ได้รับ strong recommendation against เพราะทำลายกระดูกอ่อน",
+            "explanation": "✗ ผิด — IA corticosteroid ได้ strong recommendation for สำหรับ knee และ hip OA"
+          },
+          {
+            "label": "D",
+            "text": "Glucosamine ได้รับ strong recommendation against ทั้งใน knee และ hip OA",
+            "explanation": "✓ ถูก — ข้อมูลจาก RCT คุณภาพสูงและ meta-analysis ไม่พบประโยชน์เหนือยาหลอกอย่างมีนัยสำคัญทางคลินิก ACR 2019 จึงให้ strong recommendation against"
+          }
+        ],
+        "key_takeaway": "ACR 2019 ไม่แนะนำ glucosamine อย่างหนักแน่น (strong against)"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยชายอายุ 58 ปี เป็น knee OA ได้รับ meloxicam ถามเภสัชกรเกี่ยวกับยาที่ได้รับ ข้อใดเป็นข้อมูลที่ถูกต้องเกี่ยวกับ meloxicam",
+      "choices": [
+        {
+          "label": "A",
+          "text": "เป็น sulfonamide-containing NSAID จึงห้ามใช้ในผู้ที่แพ้ยากลุ่ม sulfa"
+        },
+        {
+          "label": "B",
+          "text": "เป็น oxicam (enolic acid) มีค่าครึ่งชีวิตประมาณ 15–20 ชั่วโมง ให้ 7.5–15 mg วันละครั้ง และเลือกจับ COX-2 มากกว่า COX-1 เมื่อใช้ขนาดต่ำ แต่ความเลือกลดลงเมื่อเพิ่มขนาด"
+        },
+        {
+          "label": "C",
+          "text": "เป็น highly selective COX-2 inhibitor จึงไม่มีผลต่อไต ความดันโลหิต และหัวใจ"
+        },
+        {
+          "label": "D",
+          "text": "ต้องให้วันละ 3 ครั้งเพราะค่าครึ่งชีวิตสั้นประมาณ 2 ชั่วโมง ขนาดสูงสุด 30 mg/day"
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "medium",
+      "explanation": "Meloxicam เป็น oxicam มี t½ ~15–20 ชม. ให้ 7.5–15 mg วันละครั้ง เป็น preferential COX-2 inhibitor ที่ selectivity ลดลงเมื่อขนาดสูง",
+      "detailed_explanation": {
+        "summary": "Meloxicam เป็น oxicam มี t½ ~15–20 ชม. ให้ 7.5–15 mg วันละครั้ง เป็น preferential COX-2 inhibitor ที่ selectivity ลดลงเมื่อขนาดสูง",
+        "reason": "โจทย์ถามอะไร: เภสัชวิทยาของ meloxicam: กลุ่มโครงสร้าง ค่าครึ่งชีวิต ขนาดยา และ COX selectivity\n\nหลักการ/กลไกเชิงลึก: COX-2 selectivity เป็นสเปกตรัม จาก whole-blood assay: high selectivity (etoricoxib > celecoxib) / intermediate (diclofenac, meloxicam, etodolac, nimesulide) / nonselective หรือเลือก COX-1 (ibuprofen, naproxen, indomethacin, piroxicam, ketorolac) meloxicam ที่ 7.5 mg ยับยั้ง COX-2 มากกว่า COX-1 จึงมี GI ADR ต่ำกว่า NSAID ดั้งเดิม แต่ที่ 15 mg การยับยั้ง COX-1 เพิ่มขึ้นชัดเจน meloxicam ถูก metabolize ผ่าน CYP2C9 (หลัก) และ CYP3A4 จับโปรตีนสูง (~99%)\n\nทำไมข้อ B ถูก: ข้อ B ถูกต้องครบ: oxicam, t½ ~15–20 ชม. (วันละครั้ง), ขนาด OA 7.5 mg/day เพิ่มได้ถึง 15 mg/day และ selectivity ขึ้นกับขนาด\n\nการประยุกต์กับผู้ป่วยจริง: แนะนำกินหลังอาหารวันละครั้ง ใช้ขนาดต่ำสุดที่ได้ผล ระวังใน CKD/HF/HTN/GI risk และระวังยาที่ใช้ร่วมกัน เช่น warfarin, lithium, methotrexate, ACEI/ARB + diuretic และ CYP2C9 inhibitor (fluconazole) ที่เพิ่มระดับยา\n\nจุดที่มักสับสนและกับดักข้อสอบ: ข้อสอบมักสลับ celecoxib (sulfonamide, coxib) กับ meloxicam (oxicam, preferential) และหลอกว่า COX-2 selective ไม่มีผลต่อไต\n\nสรุปท่องสอบ: Meloxicam: oxicam, t½ ~20 ชม., 7.5–15 mg OD, preferential COX-2 (dose-dependent)",
+        "choices": [
+          {
+            "label": "A",
+            "text": "เป็น sulfonamide-containing NSAID จึงห้ามใช้ในผู้ที่แพ้ยากลุ่ม sulfa",
+            "explanation": "✗ ผิด — โครงสร้าง sulfonamide เป็นของ celecoxib ส่วน meloxicam เป็น enolic acid (มี thiazine-sulfonyl แต่ไม่ใช่ arylamine sulfonamide) ไม่ถูกจัดเป็นข้อห้ามในผู้แพ้ sulfa"
+          },
+          {
+            "label": "B",
+            "text": "เป็น oxicam (enolic acid) มีค่าครึ่งชีวิตประมาณ 15–20 ชั่วโมง ให้ 7.5–15 mg วันละครั้ง และเลือกจับ COX-2 มากกว่า COX-1 เมื่อใช้ขนาดต่ำ แต่ความเลือกลดลงเมื่อเพิ่มขนาด",
+            "explanation": "✓ ถูก — ถูกต้องตามเภสัชจลนศาสตร์และเภสัชพลศาสตร์ของ meloxicam ซึ่งเป็น preferential COX-2 inhibitor"
+          },
+          {
+            "label": "C",
+            "text": "เป็น highly selective COX-2 inhibitor จึงไม่มีผลต่อไต ความดันโลหิต และหัวใจ",
+            "explanation": "✗ ผิด — แม้แต่ coxib ก็มีผลต่อไต BP และ CV ได้ และ meloxicam เป็นเพียง preferential COX-2 ไม่ใช่ highly selective"
+          },
+          {
+            "label": "D",
+            "text": "ต้องให้วันละ 3 ครั้งเพราะค่าครึ่งชีวิตสั้นประมาณ 2 ชั่วโมง ขนาดสูงสุด 30 mg/day",
+            "explanation": "✗ ผิด — t½ ~20 ชม. ให้วันละครั้ง และขนาดสูงสุดสำหรับ OA คือ 15 mg/day"
+          }
+        ],
+        "key_takeaway": "Meloxicam = preferential COX-2 เฉพาะขนาดต่ำ, 7.5–15 mg วันละครั้ง"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 67 ปี เป็น knee OA ทั้งสองข้าง ปวดเรื้อรัง ใช้ topical NSAID แล้วไม่ดีขึ้น มีประวัติ GI bleed จึงไม่เหมาะกับ oral NSAID มีอาการซึมเศร้าเล็กน้อยร่วมด้วย CrCl 55 mL/min, LFT ปกติ ไม่ดื่มแอลกอฮอล์ ไม่ได้ใช้ยาต้านซึมเศร้าอื่น แพทย์ต้องการเริ่ม duloxetine การสั่งใช้ข้อใดเหมาะสมที่สุด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Duloxetine 30 mg วันละครั้ง 1 สัปดาห์ แล้วเพิ่มเป็น 60 mg วันละครั้ง"
+        },
+        {
+          "label": "B",
+          "text": "Duloxetine 60 mg วันละ 2 ครั้ง เพื่อให้ได้ผลแก้ปวดเร็วขึ้น"
+        },
+        {
+          "label": "C",
+          "text": "Duloxetine 20 mg วันละครั้ง ตลอดการรักษา เพราะ CrCl ต่ำกว่า 60 mL/min ต้องลดขนาด"
+        },
+        {
+          "label": "D",
+          "text": "ห้ามใช้ duloxetine เพราะมีประวัติ GI bleed"
+        }
+      ],
+      "correct_answer": "A",
+      "difficulty": "medium",
+      "explanation": "Duloxetine สำหรับ OA ให้ 60 mg วันละครั้ง โดยเริ่ม 30 mg 1 สัปดาห์ ไม่ต้องปรับขนาดเมื่อ CrCl ≥30 mL/min",
+      "detailed_explanation": {
+        "summary": "Duloxetine สำหรับ OA ให้ 60 mg วันละครั้ง โดยเริ่ม 30 mg 1 สัปดาห์ ไม่ต้องปรับขนาดเมื่อ CrCl ≥30 mL/min",
+        "reason": "โจทย์ถามอะไร: ขนาดยาและการปรับขนาด duloxetine เมื่อใช้รักษาปวดเรื้อรังจาก OA\n\nหลักการ/กลไกเชิงลึก: duloxetine เป็น SNRI ที่เพิ่ม serotonin และ norepinephrine ใน descending inhibitory pain pathway ของไขสันหลัง ช่วยลด central sensitization ซึ่งพบในผู้ป่วย OA ส่วนหนึ่ง ACR 2019 conditionally recommend สำหรับ knee OA (และ hip/hand) FDA อนุมัติสำหรับ chronic musculoskeletal pain รวม OA ด้วยขนาด 60 mg วันละครั้ง ไม่มีหลักฐานว่า 120 mg ดีกว่า เมแทบอลิซึมผ่าน CYP1A2 และ CYP2D6 (และเป็น moderate CYP2D6 inhibitor)\n\nทำไมข้อ A ถูก: เริ่ม 30 mg/day 1 สัปดาห์ช่วยลดคลื่นไส้ซึ่งเป็น ADR ที่พบบ่อยที่สุด แล้วเพิ่มเป็น 60 mg/day ผู้ป่วย CrCl 55 จึงไม่ต้องปรับ ควรหลีกเลี่ยงเมื่อ CrCl <30 mL/min, มี hepatic impairment หรือดื่มแอลกอฮอล์มาก\n\nการประยุกต์กับผู้ป่วยจริง: ติดตาม BP (NE เพิ่ม BP), Na (SIADH ในผู้สูงอายุ), อาการคลื่นไส้ ง่วง/นอนไม่หลับ เวียนศีรษะ ประเมินผลแก้ปวดใน 2–4 สัปดาห์ เมื่อหยุดยาต้องค่อย ๆ ลดขนาดเพื่อเลี่ยง discontinuation syndrome ระวังการใช้ร่วม tramadol, triptan, SSRI (serotonin syndrome) และ NSAID/antiplatelet (bleeding)\n\nจุดที่มักสับสนและกับดักข้อสอบ: ตัวเลข CrCl ที่ต้องจำคือ <30 (ไม่ใช่ <60) และขนาดมาตรฐานสำหรับปวดเรื้อรังคือ 60 mg/day ไม่ใช่ 120\n\nสรุปท่องสอบ: Duloxetine OA: 30 mg × 1 สัปดาห์ → 60 mg OD; เลี่ยงเมื่อ CrCl <30, โรคตับ, ดื่มหนัก",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Duloxetine 30 mg วันละครั้ง 1 สัปดาห์ แล้วเพิ่มเป็น 60 mg วันละครั้ง",
+            "explanation": "✓ ถูก — ขนาดสำหรับ chronic musculoskeletal pain/OA คือ 60 mg/day โดยเริ่ม 30 mg/day 1 สัปดาห์เพื่อลดคลื่นไส้ และ CrCl 55 ไม่ต้องปรับขนาด"
+          },
+          {
+            "label": "B",
+            "text": "Duloxetine 60 mg วันละ 2 ครั้ง เพื่อให้ได้ผลแก้ปวดเร็วขึ้น",
+            "explanation": "✗ ผิด — ขนาด 120 mg/day ไม่ได้ประสิทธิภาพเพิ่มในอาการปวดเรื้อรัง แต่ ADR มากขึ้น"
+          },
+          {
+            "label": "C",
+            "text": "Duloxetine 20 mg วันละครั้ง ตลอดการรักษา เพราะ CrCl ต่ำกว่า 60 mL/min ต้องลดขนาด",
+            "explanation": "✗ ผิด — ไม่ต้องปรับขนาดเมื่อ CrCl ≥30 mL/min ข้อห้าม/หลีกเลี่ยงคือ CrCl <30"
+          },
+          {
+            "label": "D",
+            "text": "ห้ามใช้ duloxetine เพราะมีประวัติ GI bleed",
+            "explanation": "✗ ผิด — duloxetine (SNRI) เพิ่ม bleeding risk ได้เล็กน้อย โดยเฉพาะเมื่อใช้ร่วม NSAID/antiplatelet ควรระวังแต่ไม่ใช่ข้อห้าม"
+          }
+        ],
+        "key_takeaway": "Duloxetine ปวดเรื้อรัง: 30 → 60 mg OD, ไม่ใช้เมื่อ CrCl <30"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยชายอายุ 70 ปี เป็น knee OA ได้รับ capsaicin 0.025% cream ทาวันละ 4 ครั้ง หลังใช้วันแรกมีอาการแสบร้อนบริเวณที่ทา และกังวลว่าจะแพ้ยา ข้อใดเป็นคำแนะนำที่เหมาะสมที่สุด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "หยุดยาทันทีเพราะอาการแสบร้อนเป็นสัญญาณของการแพ้ยาแบบ type I hypersensitivity"
+        },
+        {
+          "label": "B",
+          "text": "ทายาแล้วปิดด้วยผ้าพันหรือประคบร้อนเพื่อให้ยาซึมได้ดีขึ้น"
+        },
+        {
+          "label": "C",
+          "text": "ใช้เฉพาะเวลาปวดมากเท่านั้น เพราะยาออกฤทธิ์ภายใน 15 นาที"
+        },
+        {
+          "label": "D",
+          "text": "อาการแสบร้อนพบได้บ่อยและมักลดลงเมื่อใช้ต่อเนื่อง ควรทาสม่ำเสมอวันละ 3–4 ครั้ง ผลแก้ปวดเต็มที่ใช้เวลาประมาณ 2–4 สัปดาห์ และล้างมือหลังทา เลี่ยงสัมผัสตา"
+        }
+      ],
+      "correct_answer": "D",
+      "difficulty": "easy",
+      "explanation": "Capsaicin กระตุ้น TRPV1 จนเกิด desensitization และ deplete substance P อาการแสบร้อนช่วงแรกลดลงเมื่อใช้ต่อเนื่อง ต้องทาสม่ำเสมอ 2–4 สัปดาห์จึงเห็นผล",
+      "detailed_explanation": {
+        "summary": "Capsaicin กระตุ้น TRPV1 จนเกิด desensitization และ deplete substance P อาการแสบร้อนช่วงแรกลดลงเมื่อใช้ต่อเนื่อง ต้องทาสม่ำเสมอ 2–4 สัปดาห์จึงเห็นผล",
+        "reason": "โจทย์ถามอะไร: การให้คำแนะนำการใช้ capsaicin ชนิดทาและการจัดการ ADR ที่คาดได้\n\nหลักการ/กลไกเชิงลึก: capsaicin เป็นสารจากพริก เป็น agonist ของ TRPV1 (transient receptor potential vanilloid 1) บน nociceptive C-fiber การกระตุ้นครั้งแรกทำให้ปล่อย substance P และรู้สึกแสบร้อน เมื่อใช้ซ้ำ ปลายประสาทจะ desensitize และ substance P ถูกใช้จนหมด (depletion) รวมถึง defunctionalization ของปลายประสาท การนำสัญญาณปวดจึงลดลง ACR 2019 conditionally recommend topical capsaicin สำหรับ knee OA แต่ conditionally recommend against สำหรับ hand OA (เสี่ยงยาเข้าตา)\n\nทำไมข้อ D ถูก: ข้อ D ให้ข้อมูลครบ: แสบร้อนเป็นเรื่องปกติและลดลง, ต้องทาสม่ำเสมอ 3–4 ครั้ง/วัน, onset 2–4 สัปดาห์ และวิธีป้องกันยาเข้าตา/เยื่อบุ\n\nการประยุกต์กับผู้ป่วยจริง: แนะนำให้ล้างมือด้วยสบู่ทันทีหลังทา (หรือใส่ถุงมือ) ไม่ทาบนผิวที่มีแผลหรืออักเสบ ไม่ทาก่อนอาบน้ำร้อนหรือออกกำลังกายที่เหงื่อออกมาก หากแสบมากอาจเช็ดด้วยน้ำมันพืช/vegetable oil เพราะ capsaicin ละลายในไขมันได้ดีกว่าน้ำ\n\nจุดที่มักสับสนและกับดักข้อสอบ: ข้อสอบมักหลอกว่าเป็นการแพ้ยา หรือให้ใช้เฉพาะเวลาปวด ทั้งที่ต้องใช้สม่ำเสมอ และต้องจำว่า ACR ไม่แนะนำ capsaicin ใน hand OA\n\nสรุปท่องสอบ: Capsaicin: TRPV1 agonist → substance P depletion; แสบช่วงแรก, ทา 3–4 ครั้ง/วัน, เห็นผล 2–4 สัปดาห์; knee ได้ hand ไม่แนะนำ",
+        "choices": [
+          {
+            "label": "A",
+            "text": "หยุดยาทันทีเพราะอาการแสบร้อนเป็นสัญญาณของการแพ้ยาแบบ type I hypersensitivity",
+            "explanation": "✗ ผิด — อาการแสบร้อนเป็นผลทางเภสัชวิทยาที่คาดได้จากการกระตุ้น TRPV1 ไม่ใช่ allergy"
+          },
+          {
+            "label": "B",
+            "text": "ทายาแล้วปิดด้วยผ้าพันหรือประคบร้อนเพื่อให้ยาซึมได้ดีขึ้น",
+            "explanation": "✗ ผิด — การปิดทับหรือให้ความร้อนเพิ่มการดูดซึมและเพิ่มอาการแสบร้อน อาจทำให้ผิวไหม้"
+          },
+          {
+            "label": "C",
+            "text": "ใช้เฉพาะเวลาปวดมากเท่านั้น เพราะยาออกฤทธิ์ภายใน 15 นาที",
+            "explanation": "✗ ผิด — capsaicin ต้องใช้สม่ำเสมอหลายสัปดาห์จึงได้ผล ไม่เหมาะใช้เฉพาะเวลาปวด"
+          },
+          {
+            "label": "D",
+            "text": "อาการแสบร้อนพบได้บ่อยและมักลดลงเมื่อใช้ต่อเนื่อง ควรทาสม่ำเสมอวันละ 3–4 ครั้ง ผลแก้ปวดเต็มที่ใช้เวลาประมาณ 2–4 สัปดาห์ และล้างมือหลังทา เลี่ยงสัมผัสตา",
+            "explanation": "✓ ถูก — สอดคล้องกับกลไก TRPV1 desensitization และการ deplete substance P ซึ่งต้องใช้ยาต่อเนื่อง"
+          }
+        ],
+        "key_takeaway": "Capsaicin ต้องทาสม่ำเสมอ แสบช่วงแรกคือยาออกฤทธิ์ ไม่ใช่แพ้"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 25 ปี น้ำหนัก 50 kg กิน paracetamol 500 mg จำนวน 30 เม็ดครั้งเดียว (acute ingestion ทราบเวลาแน่นอน) มาถึงโรงพยาบาล ตรวจระดับ paracetamol ในเลือดที่ 4 ชั่วโมงหลังกินได้ 180 mcg/mL ไม่มีปัจจัยเสี่ยงอื่น ข้อใดเป็นการจัดการที่ถูกต้องที่สุด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ไม่ต้องให้ยาต้านพิษ เพราะระดับยาที่ 4 ชั่วโมงยังต่ำกว่า 200 mcg/mL"
+        },
+        {
+          "label": "B",
+          "text": "ให้ activated charcoal เพียงอย่างเดียวแล้วตรวจระดับยาซ้ำที่ 24 ชั่วโมง"
+        },
+        {
+          "label": "C",
+          "text": "ให้ naloxone และ flumazenil เพื่อแก้พิษ"
+        },
+        {
+          "label": "D",
+          "text": "เริ่ม N-acetylcysteine ทันที เพราะระดับยาอยู่เหนือ treatment line 150 mcg/mL ที่ 4 ชั่วโมงบน Rumack–Matthew nomogram"
+        }
+      ],
+      "correct_answer": "D",
+      "difficulty": "hard",
+      "explanation": "ระดับ 180 mcg/mL ที่ 4 ชั่วโมงอยู่เหนือ treatment line 150 mcg/mL ของ Rumack–Matthew nomogram จึงต้องเริ่ม NAC ทันที (ได้ประโยชน์สูงสุดเมื่อให้ภายใน 8 ชั่วโมง)",
+      "detailed_explanation": {
+        "summary": "ระดับ 180 mcg/mL ที่ 4 ชั่วโมงอยู่เหนือ treatment line 150 mcg/mL ของ Rumack–Matthew nomogram จึงต้องเริ่ม NAC ทันที (ได้ประโยชน์สูงสุดเมื่อให้ภายใน 8 ชั่วโมง)",
+        "reason": "โจทย์ถามอะไร: การใช้ Rumack–Matthew nomogram ตัดสินการให้ N-acetylcysteine ใน acute paracetamol overdose\n\nหลักการ/กลไกเชิงลึก: เมื่อกินเกินขนาด glucuronidation/sulfation อิ่มตัว ยาจึงถูกเปลี่ยนผ่าน CYP2E1 เป็น NAPQI มากขึ้น เมื่อ glutathione ลดลงต่ำกว่า ~30% NAPQI จะจับโปรตีนในเซลล์ตับ (centrilobular zone 3 necrosis) NAC ทำหน้าที่เป็น precursor ของ cysteine เพื่อสร้าง glutathione ใหม่ เป็น sulfhydryl donor และช่วยเพิ่ม sulfation nomogram ใช้ได้กับ acute single ingestion ที่ทราบเวลาแน่นอน ตรวจระดับยาตั้งแต่ 4 ชม. ถึง 24 ชม. หลังกิน\n\nทำไมข้อ D ถูก: ขนาดที่กิน = 500 × 30 = 15,000 mg ÷ 50 kg = 300 mg/kg (เกิน 150 mg/kg ซึ่งเป็นขนาดที่อาจเป็นพิษ) ระดับยา 180 mcg/mL ที่ 4 ชม. เหนือเส้น 150 mcg/mL (treatment line; เส้น 200 คือ probable toxicity line เดิม) จึงต้องให้ NAC ทันที เช่น IV 21 ชั่วโมง (150 mg/kg ใน 1 ชม. → 50 mg/kg ใน 4 ชม. → 100 mg/kg ใน 16 ชม.) หรือ oral 140 mg/kg loading แล้ว 70 mg/kg ทุก 4 ชม. อีก 17 ครั้ง\n\nการประยุกต์กับผู้ป่วยจริง: ตรวจ LFT, INR, SCr ก่อนและหลังให้ NAC ระวัง anaphylactoid reaction จาก IV NAC (ผื่น หลอดลมหดเกร็ง) ซึ่งมักจัดการได้ด้วยการหยุดชั่วคราวและให้ antihistamine ประเมินความเสี่ยงฆ่าตัวตายและส่งปรึกษาจิตแพทย์\n\nจุดที่มักสับสนและกับดักข้อสอบ: ระดับยาก่อน 4 ชม. แปลผลไม่ได้ และอย่าใช้เส้น 200 mcg/mL ในการตัดสินใจ การใช้ยานาน (repeated supratherapeutic ingestion) ใช้ nomogram ไม่ได้\n\nสรุปท่องสอบ: Paracetamol OD: ระดับที่ 4 ชม. ≥150 mcg/mL → NAC; ให้ภายใน 8 ชม. ได้ผลดีที่สุด",
+        "choices": [
+          {
+            "label": "A",
+            "text": "ไม่ต้องให้ยาต้านพิษ เพราะระดับยาที่ 4 ชั่วโมงยังต่ำกว่า 200 mcg/mL",
+            "explanation": "✗ ผิด — 200 mcg/mL ที่ 4 ชม. เป็นเส้นเดิมของ Rumack–Matthew (probable toxicity line) ปัจจุบันใช้ treatment line 150 mcg/mL เพื่อเพิ่ม safety margin"
+          },
+          {
+            "label": "B",
+            "text": "ให้ activated charcoal เพียงอย่างเดียวแล้วตรวจระดับยาซ้ำที่ 24 ชั่วโมง",
+            "explanation": "✗ ผิด — activated charcoal ได้ประโยชน์สูงสุดภายใน 1–2 ชม. หลังกิน และการรอ 24 ชม. ทำให้พลาดช่วงที่ NAC ได้ผลดีที่สุด (ภายใน 8 ชม.)"
+          },
+          {
+            "label": "C",
+            "text": "ให้ naloxone และ flumazenil เพื่อแก้พิษ",
+            "explanation": "✗ ผิด — naloxone/flumazenil ไม่มีบทบาทในพิษ paracetamol"
+          },
+          {
+            "label": "D",
+            "text": "เริ่ม N-acetylcysteine ทันที เพราะระดับยาอยู่เหนือ treatment line 150 mcg/mL ที่ 4 ชั่วโมงบน Rumack–Matthew nomogram",
+            "explanation": "✓ ถูก — 180 > 150 mcg/mL ที่ 4 ชม. → มีข้อบ่งชี้ให้ NAC และให้ภายใน 8 ชม. หลังกินจะป้องกัน hepatotoxicity ได้เกือบสมบูรณ์"
+          }
+        ],
+        "key_takeaway": "เส้น nomogram 150 mcg/mL ที่ 4 ชั่วโมง → ให้ NAC"
+      }
+    },
+    {
+      "scenario": "NSAID ข้อใดจัดอยู่ในกลุ่ม enolic acid derivative (oxicam) และมีค่าครึ่งชีวิตยาวประมาณ 50 ชั่วโมง จึงให้วันละครั้ง แต่ไม่เหมาะเป็นยาตัวแรกในผู้สูงอายุ",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Piroxicam"
+        },
+        {
+          "label": "B",
+          "text": "Naproxen"
+        },
+        {
+          "label": "C",
+          "text": "Diclofenac"
+        },
+        {
+          "label": "D",
+          "text": "Ibuprofen"
+        }
+      ],
+      "correct_answer": "A",
+      "difficulty": "easy",
+      "explanation": "Piroxicam เป็น enolic acid (oxicam) มีค่าครึ่งชีวิตยาวประมาณ 50 ชั่วโมง ให้วันละครั้ง แต่สะสมและมี GI ADR สูงในผู้สูงอายุ",
+      "detailed_explanation": {
+        "summary": "Piroxicam เป็น enolic acid (oxicam) มีค่าครึ่งชีวิตยาวประมาณ 50 ชั่วโมง ให้วันละครั้ง แต่สะสมและมี GI ADR สูงในผู้สูงอายุ",
+        "reason": "โจทย์ถามอะไร: การจำแนก NSAID ตามโครงสร้างเคมีและค่าครึ่งชีวิต\n\nหลักการ/กลไกเชิงลึก: กลุ่ม NSAID ตามโครงสร้าง: salicylates (aspirin, diflunisal); propionic acids (ibuprofen t½ ~2 ชม., naproxen ~12–17 ชม., ketoprofen); acetic acids (indomethacin, diclofenac ~1–2 ชม., sulindac, etodolac, ketorolac); fenamates (mefenamic acid); enolic acids/oxicams (piroxicam ~50 ชม., meloxicam ~15–20 ชม., tenoxicam ~70 ชม.); non-acidic (nabumetone); coxibs (celecoxib, etoricoxib) ยาที่ t½ ยาวจะใช้เวลาประมาณ 4–5 half-lives (สำหรับ piroxicam ~7–10 วัน) จึงถึง steady state\n\nทำไมข้อ A ถูก: piroxicam เป็น oxicam และ t½ ประมาณ 50 ชม. ยาวที่สุดในตัวเลือก ให้ 20 mg วันละครั้งได้\n\nการประยุกต์กับผู้ป่วยจริง: เพราะ t½ ยาวและยับยั้ง COX-1 มาก piroxicam จึงมีความเสี่ยง GI bleed และผื่นแพ้รุนแรง (SJS/TEN) สูง EMA (2007) จำกัดไม่ให้ใช้เป็นยาตัวแรก และขนาดไม่เกิน 20 mg/day Beers criteria แนะนำหลีกเลี่ยงการใช้ nonselective NSAID เรื้อรังในผู้สูงอายุ เว้นแต่ไม่มีทางเลือกและให้ร่วมกับ PPI/misoprostol\n\nจุดที่มักสับสนและกับดักข้อสอบ: meloxicam ก็เป็น oxicam แต่ t½ ~20 ชม. ไม่ยาวที่สุด ส่วน naproxen t½ ยาวพอให้วันละ 2 ครั้ง แต่ไม่ใช่ enolic acid\n\nสรุปท่องสอบ: Oxicam = enolic acid: piroxicam (t½ ~50 ชม.), meloxicam (~20 ชม.); t½ ยาว = สะสม = GI risk ในผู้สูงอายุ",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Piroxicam",
+            "explanation": "✓ ถูก — piroxicam เป็น oxicam (enolic acid) มี t½ ~50 ชม. (30–86 ชม.) ใช้ 20 mg วันละครั้ง สะสมได้ในผู้สูงอายุและมี GI risk สูง"
+          },
+          {
+            "label": "B",
+            "text": "Naproxen",
+            "explanation": "✗ ผิด — naproxen เป็น propionic acid derivative มี t½ ~12–17 ชม. ให้วันละ 2 ครั้ง"
+          },
+          {
+            "label": "C",
+            "text": "Diclofenac",
+            "explanation": "✗ ผิด — diclofenac เป็น acetic acid (phenylacetic acid) derivative มี t½ สั้น ~1–2 ชม."
+          },
+          {
+            "label": "D",
+            "text": "Ibuprofen",
+            "explanation": "✗ ผิด — ibuprofen เป็น propionic acid derivative มี t½ ~2 ชม. ต้องให้วันละ 3–4 ครั้ง"
+          }
+        ],
+        "key_takeaway": "Piroxicam: oxicam, t½ ~50 ชม., GI risk สูง"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยชายอายุ 60 ปี เป็น knee OA ปวดมาก มีโรค hypertension ซึ่งยังควบคุมไม่ได้ (BP วันนี้ 166/102 mmHg ขณะใช้ amlodipine 10 mg + losartan 100 mg) ไม่มีประวัติ GI bleed ผู้ป่วยต้องการซื้อ etoricoxib 90 mg เพราะเพื่อนแนะนำว่าเป็น COX-2 selective ที่ปลอดภัย ข้อใดเป็นการตอบสนองที่เหมาะสมที่สุดของเภสัชกร",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ไม่ควรจ่าย etoricoxib เพราะห้ามใช้ในผู้ป่วยความดันโลหิตสูงที่ยังควบคุมไม่ได้ (BP สูงเกิน 140/90 อย่างต่อเนื่อง) ควรส่งพบแพทย์เพื่อควบคุมความดันและเลือกยาแก้ปวดอื่น เช่น topical NSAID"
+        },
+        {
+          "label": "B",
+          "text": "จ่าย etoricoxib 120 mg วันละครั้ง ระยะยาว เพราะขนาดสูงให้ผลแก้ปวดดีกว่าใน OA"
+        },
+        {
+          "label": "C",
+          "text": "จ่าย etoricoxib 90 mg ได้ เพราะ COX-2 selective ไม่ส่งผลต่อความดันโลหิตและไต"
+        },
+        {
+          "label": "D",
+          "text": "แนะนำให้เปลี่ยนเป็น piroxicam 20 mg วันละ 2 ครั้ง เพราะ CV risk ต่ำที่สุด"
+        }
+      ],
+      "correct_answer": "A",
+      "difficulty": "hard",
+      "explanation": "Etoricoxib ห้ามใช้ในผู้ป่วยความดันโลหิตสูงที่ควบคุมไม่ได้ (>140/90 อย่างต่อเนื่อง) และขนาดสำหรับ OA คือ 30–60 mg วันละครั้ง",
+      "detailed_explanation": {
+        "summary": "Etoricoxib ห้ามใช้ในผู้ป่วยความดันโลหิตสูงที่ควบคุมไม่ได้ (>140/90 อย่างต่อเนื่อง) และขนาดสำหรับ OA คือ 30–60 mg วันละครั้ง",
+        "reason": "โจทย์ถามอะไร: ข้อห้ามใช้และขนาดยาของ etoricoxib ในผู้ป่วย OA ที่มีความดันโลหิตสูงควบคุมไม่ได้\n\nหลักการ/กลไกเชิงลึก: etoricoxib เป็น COX-2 inhibitor ที่ selectivity สูงที่สุดตัวหนึ่ง (COX-1/COX-2 ratio ~100 ใน whole-blood assay) t½ ~22 ชม. ให้วันละครั้ง ข้อมูลจาก MEDAL program พบการเพิ่ม BP และ edema มากกว่า diclofenac ขึ้นกับขนาด จึงมีข้อห้ามใช้ใน: uncontrolled hypertension (BP >140/90 อย่างต่อเนื่อง), established ischemic heart disease, peripheral arterial disease, cerebrovascular disease, CHF NYHA II–IV, CrCl <30 mL/min และ active peptic ulcer/GI bleeding ขนาดตามโรค: OA 30–60 mg OD, RA/AS 90 mg OD, acute gout 120 mg OD ไม่เกิน 8 วัน\n\nทำไมข้อ A ถูก: BP 166/102 ขณะใช้ยาลดความดัน 2 ตัว คือความดันโลหิตสูงที่ควบคุมไม่ได้ ซึ่งเป็น contraindication ของ etoricoxib และขนาดที่ผู้ป่วยต้องการ (90 mg) ก็เกินขนาดสำหรับ OA (สูงสุด 60 mg) ด้วย\n\nการประยุกต์กับผู้ป่วยจริง: เภสัชกรควรอธิบายว่า 'COX-2 selective' ปลอดภัยต่อกระเพาะมากขึ้นเท่านั้น ไม่ได้ปลอดภัยต่อ BP/หัวใจ/ไต แนะนำ topical NSAID, exercise, ลดน้ำหนัก, ลดเกลือ และส่งต่อแพทย์ปรับยาลดความดัน หลีกเลี่ยงการใช้ NSAID ชนิดรับประทานร่วมกับ losartan เพราะลดฤทธิ์ลดความดันและเพิ่มความเสี่ยงต่อไต\n\nจุดที่มักสับสนและกับดักข้อสอบ: จำขนาด etoricoxib ตามโรค (OA 30–60, RA/AS 90, gout 120 ≤8 วัน) และอย่าเชื่อว่า COX-2 selective ไม่มีผลต่อ BP\n\nสรุปท่องสอบ: Etoricoxib: OA 30–60 mg OD; ห้ามใน uncontrolled HTN >140/90, IHD, PAD, stroke, HF II–IV",
+        "choices": [
+          {
+            "label": "A",
+            "text": "ไม่ควรจ่าย etoricoxib เพราะห้ามใช้ในผู้ป่วยความดันโลหิตสูงที่ยังควบคุมไม่ได้ (BP สูงเกิน 140/90 อย่างต่อเนื่อง) ควรส่งพบแพทย์เพื่อควบคุมความดันและเลือกยาแก้ปวดอื่น เช่น topical NSAID",
+            "explanation": "✓ ถูก — etoricoxib มีข้อห้ามในผู้ที่ BP สูงกว่า 140/90 mmHg อย่างต่อเนื่องและควบคุมไม่ได้ และทำให้ BP เพิ่มได้มากกว่า NSAID หลายตัว"
+          },
+          {
+            "label": "B",
+            "text": "จ่าย etoricoxib 120 mg วันละครั้ง ระยะยาว เพราะขนาดสูงให้ผลแก้ปวดดีกว่าใน OA",
+            "explanation": "✗ ผิด — 120 mg ใช้เฉพาะ acute gouty arthritis ไม่เกิน 8 วัน ขนาดสำหรับ OA คือ 30–60 mg วันละครั้ง"
+          },
+          {
+            "label": "C",
+            "text": "จ่าย etoricoxib 90 mg ได้ เพราะ COX-2 selective ไม่ส่งผลต่อความดันโลหิตและไต",
+            "explanation": "✗ ผิด — COX-2 ใน macula densa และหลอดเลือดไตมีบทบาทในการควบคุม Na และ BP การยับยั้งจึงทำให้ BP เพิ่ม บวม และลด GFR ได้"
+          },
+          {
+            "label": "D",
+            "text": "แนะนำให้เปลี่ยนเป็น piroxicam 20 mg วันละ 2 ครั้ง เพราะ CV risk ต่ำที่สุด",
+            "explanation": "✗ ผิด — piroxicam ไม่ใช่ NSAID ที่มี CV risk ต่ำที่สุด (naproxen ต่างหาก) ขนาดสูงสุดคือ 20 mg/day และยังทำให้ BP เพิ่มเช่นกัน"
+          }
+        ],
+        "key_takeaway": "Etoricoxib ห้ามใช้เมื่อความดันโลหิตยังคุมไม่ได้"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยชายอายุ 70 ปี น้ำหนัก 60 kg เป็น knee OA ดื่มเหล้าวันละ 3–4 แก้วเป็นประจำ ซื้อ paracetamol 500 mg กินครั้งละ 2 เม็ด ทุก 6 ชั่วโมงตลอดวัน และกินยาคลายกล้ามเนื้อสูตรผสม orphenadrine citrate 35 mg + paracetamol 450 mg ครั้งละ 1 เม็ด วันละ 3 ครั้งร่วมด้วย ข้อใดประเมินได้ถูกต้องที่สุด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ได้รับ paracetamol รวม 4.0 g/day อยู่ในขนาดสูงสุดที่อนุญาต จึงใช้ต่อได้"
+        },
+        {
+          "label": "B",
+          "text": "ได้รับ paracetamol รวม 5.35 g/day ควรลดให้ไม่เกิน 4 g/day ก็ปลอดภัยเพียงพอ ไม่จำเป็นต้องคำนึงถึงการดื่มสุรา"
+        },
+        {
+          "label": "C",
+          "text": "ได้รับ paracetamol รวม 5.35 g/day เกินขนาด ควรหยุดยาสูตรผสมและจำกัด paracetamol รวมไม่เกิน 2 g/day เนื่องจากดื่มสุราเรื้อรัง"
+        },
+        {
+          "label": "D",
+          "text": "ได้รับ paracetamol รวม 4.45 g/day เกินเล็กน้อย ลดยาสูตรผสมเหลือวันละ 1 เม็ดก็พอ"
+        }
+      ],
+      "correct_answer": "C",
+      "difficulty": "hard",
+      "explanation": "Paracetamol รวม = (500×2×4) + (450×3) = 5,350 mg/day เกินขนาด ผู้ดื่มสุราเรื้อรังควรจำกัด ≤2 g/day และหลีกเลี่ยงการใช้ยาผสมที่มี paracetamol ซ้ำซ้อน",
+      "detailed_explanation": {
+        "summary": "Paracetamol รวม = (500×2×4) + (450×3) = 5,350 mg/day เกินขนาด ผู้ดื่มสุราเรื้อรังควรจำกัด ≤2 g/day และหลีกเลี่ยงการใช้ยาผสมที่มี paracetamol ซ้ำซ้อน",
+        "reason": "โจทย์ถามอะไร: คำนวณ paracetamol ที่ได้รับจากหลายผลิตภัณฑ์ และประเมินขนาดสูงสุดในผู้ที่ดื่มสุราเรื้อรัง\n\nหลักการ/กลไกเชิงลึก: paracetamol ส่วนใหญ่ถูก glucuronidation และ sulfation ส่วนน้อย (~5–10%) ผ่าน CYP2E1 (และ 3A4) เป็น NAPQI ซึ่งปกติถูก glutathione กำจัด ผู้ที่ดื่มสุราเรื้อรังมี CYP2E1 ถูก induce และมีภาวะทุพโภชนาการทำให้ glutathione สำรองลดลง จึงเกิด hepatotoxicity ได้ที่ขนาดต่ำกว่าคนทั่วไป ขนาดสูงสุดทั่วไปคือ 4 g/day (หลายแหล่งแนะนำ 3 g/day ในผู้สูงอายุหรือใช้ระยะยาว) และในผู้ดื่มสุราเรื้อรัง/โรคตับ/น้ำหนักน้อย/ทุพโภชนาการ แนะนำ ≤2 g/day\n\nทำไมข้อ C ถูก: ขั้นตอนคำนวณ: paracetamol เดี่ยว 500 mg × 2 เม็ด × 4 ครั้ง = 4,000 mg; ยาสูตรผสม 450 mg × 3 = 1,350 mg; รวม 4,000 + 1,350 = 5,350 mg/day (≈89 mg/kg/day สำหรับน้ำหนัก 60 kg) เกิน 4 g และเกินเพดาน 2 g/day สำหรับผู้ดื่มสุราเรื้อรังมาก\n\nการประยุกต์กับผู้ป่วยจริง: หยุดยาผสมที่มี paracetamol ซ้ำซ้อน ปรับ paracetamol ไม่เกิน 2 g/day (เช่น 500 mg ทุก 6–8 ชม. ไม่เกิน 4 ครั้ง) ตรวจ LFT แนะนำลด/งดสุรา สอนผู้ป่วยอ่านฉลากหาคำว่า paracetamol/acetaminophen ในยาแก้หวัด ยาคลายกล้ามเนื้อ และยาแก้ปวดสูตรผสมทุกชนิด และเน้นการรักษาแบบไม่ใช้ยาหรือ topical NSAID\n\nจุดที่มักสับสนและกับดักข้อสอบ: กับดักสำคัญคือ paracetamol ที่ซ่อนอยู่ในยาสูตรผสม (orphenadrine, tramadol/paracetamol, ยาแก้หวัด) และการใช้เพดาน 4 g/day กับผู้ป่วยทุกราย\n\nสรุปท่องสอบ: Paracetamol max: ทั่วไป 4 g/day; สูงอายุ/ระยะยาว ~3 g; ดื่มสุราเรื้อรัง/โรคตับ ≤2 g/day; นับยาสูตรผสมเสมอ",
+        "choices": [
+          {
+            "label": "A",
+            "text": "ได้รับ paracetamol รวม 4.0 g/day อยู่ในขนาดสูงสุดที่อนุญาต จึงใช้ต่อได้",
+            "explanation": "✗ ผิด — ลืมนับ paracetamol จากยาสูตรผสม (450 × 3 = 1,350 mg) ปริมาณจริงคือ 5.35 g/day"
+          },
+          {
+            "label": "B",
+            "text": "ได้รับ paracetamol รวม 5.35 g/day ควรลดให้ไม่เกิน 4 g/day ก็ปลอดภัยเพียงพอ ไม่จำเป็นต้องคำนึงถึงการดื่มสุรา",
+            "explanation": "✗ ผิด — คำนวณถูก แต่ผู้ที่ดื่มสุราเรื้อรังมี CYP2E1 induction และ glutathione ต่ำ จึงควรจำกัดต่ำกว่า 4 g/day"
+          },
+          {
+            "label": "C",
+            "text": "ได้รับ paracetamol รวม 5.35 g/day เกินขนาด ควรหยุดยาสูตรผสมและจำกัด paracetamol รวมไม่เกิน 2 g/day เนื่องจากดื่มสุราเรื้อรัง",
+            "explanation": "✓ ถูก — รวม 4,000 + 1,350 = 5,350 mg/day เกิน 4 g และในผู้ดื่มสุราเรื้อรังควรจำกัด ≤2 g/day"
+          },
+          {
+            "label": "D",
+            "text": "ได้รับ paracetamol รวม 4.45 g/day เกินเล็กน้อย ลดยาสูตรผสมเหลือวันละ 1 เม็ดก็พอ",
+            "explanation": "✗ ผิด — คำนวณผิด (คิด orphenadrine/paracetamol แค่ 1 เม็ด) และยังไม่คำนึงถึงความเสี่ยงจากสุรา"
+          }
+        ],
+        "key_takeaway": "รวม paracetamol ทุกผลิตภัณฑ์; คนดื่มสุราเรื้อรัง ≤2 g/วัน"
+      }
+    }
+  ]
+}
