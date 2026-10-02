@@ -14,6 +14,7 @@ import { IP1_SET2_DAY05 } from "@/lib/ip1-set2-day05";
 import { IP1_SET2_DAY06 } from "@/lib/ip1-set2-day06";
 import { IP1_SET2_DAY07 } from "@/lib/ip1-set2-day07";
 import { IP1_SET2_DAY08 } from "@/lib/ip1-set2-day08";
+import { IP1_MOCK_PLANNED_SETS } from "@/lib/ip1-mock/sets";
 import { PHCP1_DAY01 } from "@/lib/phcp1-day01";
 import { PHCP1_DAY02 } from "@/lib/phcp1-day02";
 import { PHCP1_DAY03 } from "@/lib/phcp1-day03";
@@ -86,6 +87,7 @@ async function PracticeContent({
               <p className="mt-2 text-sm text-muted-foreground">Industrial Pharmacy · Mock Set 1 จำนวน 150 ข้อ · ข้อ 101–150 เน้นอ่าน Monograph / Assay / Chromatography ระดับ Very Hard</p>
               <p className="mt-1 text-xs text-muted-foreground">Formulation · Manufacturing · Chromatography · Stability · Sterile · QA/QC · GMP · Validation</p>
               <p className="mt-1 text-xs text-muted-foreground">+ Daily Set 2 (ทยอยอัปเดตวันละ 10 ข้อ) · ตอนนี้มี {IP1_SET2_DAY01.length + IP1_SET2_DAY02.length + IP1_SET2_DAY03.length + IP1_SET2_DAY04.length + IP1_SET2_DAY05.length + IP1_SET2_DAY06.length + IP1_SET2_DAY07.length + IP1_SET2_DAY08.length} ข้อ — Day 1: Cleanroom/HVAC/GMP Grade · Day 2: Impurity/Cleaning/Elemental/Scale-up calculations · Day 3: Sterilization/Aseptic processing validation · Day 4: Process capability/Sampling/Qualification/Tech transfer · Day 5: Physical pharmacy/Biopharmaceutics/Packaging calculations · Day 6: Compaction physics/Stability design/DOE/Analytical technique · Day 7: Water systems/GDP/SPC/Manufacturing troubleshooting · Day 8: Suppository/Filter integrity/D-value/Biopharmaceutics</p>
+              <Link href="/ple/ip1-mock" className="mt-5 flex items-center justify-between rounded-2xl border border-amber-200 bg-amber-50/60 p-4 text-sm font-semibold hover:bg-amber-50">⏱️ จำลองสอบ IP1 · เลือกชุด Mock Set 1–{IP1_MOCK_PLANNED_SETS} (ชุดละ 120 ข้อ 12 หมวด จับเวลา ไม่ซ้ำกันทุกชุด)<span className="text-amber-600">เลือกชุด →</span></Link>
             </div>
           )}
           {track === "phcp1" && (
