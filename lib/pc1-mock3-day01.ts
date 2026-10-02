@@ -1,9 +1,141 @@
 import type { Pc1MockItem } from "@/lib/pc1-mock-builder";
 
-// PC1 Mock Set 3 — ข้อใหม่ชุดที่ 1: ไต/อิเล็กโทรไลต์ (10) + ต่อมไร้ท่อ (10)
+// PC1 Mock Set 3 — ข้อใหม่ชุดที่ 1: หัวใจ (4) + ไต/อิเล็กโทรไลต์ (10) + ต่อมไร้ท่อ (10)
 // ใช้ชื่อยา/รูปแบบยาที่มีใช้ในประเทศไทยเป็นหลัก และอธิบายเหตุผลเชิงลึกสำหรับเภสัชกร
 
 export const MOCK3_DAY01: Record<string, Pc1MockItem[]> = {
+  cardio: [
+    {
+      ref: "แนวทางการรักษาโรคความดันโลหิตสูงในเวชปฏิบัติทั่วไป พ.ศ. 2562 (สมาคมความดันโลหิตสูงแห่งประเทศไทย); 2023 ESH Guidelines for the Management of Arterial Hypertension; บัญชียาหลักแห่งชาติ",
+      qs: [
+        {
+          d: "easy",
+          p:
+            "ชายไทยอายุ 55 ปี น้ำหนัก 78 kg ตรวจพบความดันโลหิตสูงครั้งแรก วัดซ้ำหลายครั้งและวัดที่บ้านเฉลี่ย 162/98 mmHg ไม่มีเบาหวาน ไม่มีโรคไต (eGFR 85, UACR ปกติ) ไม่มีโรคหัวใจ ไม่มีโรคหืด ยังไม่เคยใช้ยาใด. " +
+            "นอกจากการปรับพฤติกรรม การเริ่มยาข้อใดเหมาะสมที่สุด?",
+          o: [
+            "เริ่มยา 2 ชนิดร่วมกัน เช่น losartan 50 mg + amlodipine 5 mg วันละครั้ง (ถ้าได้เป็นยาเม็ดรวมยิ่งดี)",
+            "Atenolol 50 mg OD เป็นยาเดี่ยวตัวแรก",
+            "ปรับพฤติกรรมอย่างเดียว 6 เดือนก่อนพิจารณายา",
+            "Enalapril 10 mg ร่วมกับ losartan 50 mg เพื่อยับยั้ง RAS ให้สมบูรณ์",
+            "Prazosin 1 mg ก่อนนอนเป็นยาตัวแรก",
+          ],
+          a: 0,
+          r:
+            "การประเมิน: BP เฉลี่ย 162/98 mmHg = ความดันโลหิตสูงระดับ 2 (160–179/100–109 ตามแนวทางไทย 2562; ESH 2023 จัดเป็น grade 2) และสูงกว่าเป้าหมาย (ต่ำกว่า 140/90 และถ้าทนได้ต่ำกว่า 130/80) มากกว่า 20/10 mmHg ผู้ป่วยรายนี้ต้องเริ่มยาทันทีร่วมกับการปรับพฤติกรรม\n\n" +
+            "หลักการเลือกยา (แนวทางไทย 2562 และ ESH 2023): (1) ยากลุ่มหลัก 4 กลุ่มที่ลดเหตุการณ์หัวใจและหลอดเลือดได้ ได้แก่ ACEI หรือ ARB, dihydropyridine CCB (amlodipine), thiazide หรือ thiazide-like diuretic (HCTZ, chlorthalidone, indapamide) (2) ผู้ป่วยส่วนใหญ่ โดยเฉพาะเมื่อ BP สูงกว่าเป้าหมายมากกว่า 20/10 mmHg แนะนำให้เริ่มด้วยยา 2 ชนิดขนาดต่ำร่วมกัน (ACEI/ARB + CCB หรือ ACEI/ARB + diuretic) เพราะคุมความดันได้เร็วกว่าและมากกว่าการเพิ่มขนาดยาเดี่ยว (ยาสองกลุ่มเสริมฤทธิ์กันและลดผลข้างเคียงของกันและกัน เช่น ACEI/ARB ลดขาบวมจาก amlodipine) (3) ยาเม็ดรวม (single-pill combination) เพิ่มความร่วมมือในการใช้ยา\n\n" +
+            "ทำไมตัวเลือกอื่นไม่เหมาะ: (1) beta-blocker ไม่ใช่ยาตัวแรกถ้าไม่มีข้อบ่งชี้เฉพาะ (เช่น หลังกล้ามเนื้อหัวใจตาย, HFrEF, คุมอัตราเต้นของ AF) เพราะป้องกัน stroke ได้น้อยกว่ายากลุ่มอื่น (atenolol โดยเฉพาะ) (2) การรอปรับพฤติกรรม 3–6 เดือนเหมาะกับความดันระดับ 1 ที่มีความเสี่ยงต่ำเท่านั้น (3) ACEI ร่วมกับ ARB ห้ามใช้ เพิ่ม hyperkalemia และไตวายโดยไม่มีประโยชน์ (ONTARGET) (4) alpha-blocker ใช้เป็นยาลำดับท้ายหรือในผู้ที่มี BPH ร่วม และทำให้ความดันตกเมื่อเปลี่ยนท่า\n\n" +
+            "ข้อควรรู้สำหรับเภสัชกร: ยาในบัญชียาหลักที่ใช้บ่อยในไทย ได้แก่ enalapril, losartan, amlodipine, HCTZ; ตรวจ K และ SCr ภายใน 1–2 สัปดาห์หลังเริ่ม ACEI/ARB; แนะนำวัดความดันที่บ้าน ลดเกลือ (โซเดียมต่ำกว่า 2,000 mg/วัน ระวังน้ำปลา ผงชูรส อาหารแปรรูป) ออกกำลังกาย ลดน้ำหนัก ลดแอลกอฮอล์",
+          w: [
+            "ถูก — ความดันระดับ 2 สูงกว่าเป้าหมายมากกว่า 20/10 ควรเริ่มยา 2 ชนิด (ARB/ACEI + CCB หรือ diuretic) และใช้ยาเม็ดรวมถ้าได้",
+            "Beta-blocker ไม่ใช่ยาตัวแรกเมื่อไม่มีข้อบ่งชี้เฉพาะ เพราะป้องกัน stroke ได้น้อยกว่ายากลุ่มหลักอื่น",
+            "การปรับพฤติกรรมอย่างเดียวใช้กับความดันระดับ 1 ที่ความเสี่ยงต่ำ ความดันระดับ 2 ต้องเริ่มยาทันที",
+            "ACEI ร่วมกับ ARB ห้ามใช้ เพิ่ม hyperkalemia และไตวายโดยไม่ลดเหตุการณ์หัวใจ (ONTARGET)",
+            "Alpha-blocker ไม่ใช่ยาตัวแรก ใช้เป็นยาเสริมลำดับท้ายหรือเมื่อมี BPH ร่วม",
+          ],
+          k: "HTN ระดับ 2 หรือสูงกว่าเป้า >20/10: เริ่มยา 2 ชนิด (ACEI/ARB + CCB หรือ thiazide) ยาเม็ดรวมดีที่สุด; ห้าม ACEI + ARB; BB ไม่ใช่ยาตัวแรกถ้าไม่มีข้อบ่งชี้",
+        },
+      ],
+    },
+    {
+      ref: "2016 AHA/ACC Guideline on the Management of Patients With Lower Extremity Peripheral Artery Disease (2024 update); Cilostazol prescribing information (boxed warning)",
+      qs: [
+        {
+          d: "medium",
+          p:
+            "ชายไทยอายุ 68 ปี เป็น peripheral artery disease (ABI 0.6) ปวดน่องเมื่อเดินประมาณ 100 เมตร (intermittent claudication) โรคร่วม: HFrEF (LVEF 30%), T2DM, เลิกบุหรี่แล้ว. " +
+            "ยาปัจจุบัน: aspirin 81 mg, atorvastatin 40 mg, sacubitril/valsartan, bisoprolol, spironolactone, dapagliflozin. แพทย์ปรึกษาว่าจะเพิ่มยาเพื่อเพิ่มระยะทางเดิน ข้อใดเหมาะสมที่สุด?",
+          o: [
+            "ไม่ควรใช้ cilostazol เพราะห้ามใช้ในผู้ป่วยหัวใจล้มเหลวทุกระดับความรุนแรง ควรเน้นโปรแกรมฝึกเดินภายใต้การดูแลและคุมปัจจัยเสี่ยง",
+            "เริ่ม cilostazol 100 mg วันละ 2 ครั้ง เพราะเพิ่มระยะทางเดินได้ชัดเจน",
+            "เริ่ม pentoxifylline ร่วมกับ cilostazol เพื่อเสริมฤทธิ์",
+            "เปลี่ยน aspirin เป็น warfarin เป้าหมาย INR 2–3 เพื่อเพิ่มระยะทางเดิน",
+            "หยุด bisoprolol เพราะ beta-blocker ทำให้อาการ claudication แย่ลง",
+          ],
+          a: 0,
+          r:
+            "กลไกของ cilostazol: เป็น phosphodiesterase-3 (PDE3) inhibitor เพิ่ม cAMP ในเกล็ดเลือดและกล้ามเนื้อเรียบหลอดเลือด จึงยับยั้งการเกาะกลุ่มของเกล็ดเลือดและขยายหลอดเลือด เพิ่มระยะทางเดินในผู้ป่วย claudication ได้ประมาณ 40–50% (ใช้เวลา 2–12 สัปดาห์จึงเห็นผล)\n\n" +
+            "ข้อห้ามสำคัญ (boxed warning): ห้ามใช้ในผู้ป่วยหัวใจล้มเหลวทุกระดับความรุนแรง เพราะ PDE3 inhibitor ชนิดรับประทานตัวอื่น (milrinone, amrinone) เพิ่มอัตราตายในผู้ป่วย HF class III–IV (การศึกษา PROMISE ของ milrinone รับประทาน) ผู้ป่วยรายนี้มี HFrEF จึงห้ามใช้\n\n" +
+            "การจัดการ PAD ที่มี claudication ที่ลดเหตุการณ์และเพิ่มระยะเดินได้: (1) โปรแกรมฝึกเดินภายใต้การดูแล (supervised exercise therapy) 30–45 นาที อย่างน้อย 3 ครั้ง/สัปดาห์ นาน 12 สัปดาห์ เป็นการรักษาหลักที่มีประสิทธิภาพสูง (2) statin ความเข้มสูง (3) antiplatelet: aspirin หรือ clopidogrel; ผู้ป่วยความเสี่ยงสูงอาจใช้ rivaroxaban 2.5 mg BID ร่วมกับ aspirin (COMPASS, VOYAGER-PAD) (4) เลิกบุหรี่ คุมเบาหวานและความดัน (5) พิจารณา revascularization ถ้าอาการจำกัดชีวิตประจำวันมาก\n\n" +
+            "ทำไมตัวเลือกอื่นไม่เหมาะ: pentoxifylline ได้ผลน้อยไม่ต่างจากยาหลอก ไม่แนะนำ; warfarin ไม่ได้เพิ่มระยะเดินและเพิ่มเลือดออก; beta-blocker ไม่ได้ทำให้ claudication แย่ลงอย่างมีนัยสำคัญ และ bisoprolol ลดการตายใน HFrEF ห้ามหยุด\n\n" +
+            "ข้อควรรู้สำหรับเภสัชกร: ถ้าผู้ป่วยไม่มี HF และจะใช้ cilostazol: 100 mg BID กินก่อนอาหาร 30 นาที หรือหลังอาหาร 2 ชั่วโมง (อาหารไขมันสูงเพิ่มการดูดซึม) ลดเหลือ 50 mg BID เมื่อใช้ร่วมกับ strong CYP3A4 inhibitor (เช่น ketoconazole, clarithromycin) หรือ CYP2C19 inhibitor (omeprazole); ผลข้างเคียงที่พบบ่อยคือ ปวดศีรษะ ท้องเสีย ใจสั่น",
+          w: [
+            "ถูก — cilostazol (PDE3 inhibitor) ห้ามใช้ในหัวใจล้มเหลวทุกระดับ ควรเน้นฝึกเดินภายใต้การดูแลและคุมปัจจัยเสี่ยง",
+            "Cilostazol มี boxed warning ห้ามใช้ใน HF ทุกระดับ ผู้ป่วยรายนี้มี HFrEF",
+            "Pentoxifylline ได้ผลน้อยและไม่แนะนำ และ cilostazol ใช้ไม่ได้ในรายนี้",
+            "Warfarin ไม่ได้เพิ่มระยะเดินใน PAD และเพิ่มความเสี่ยงเลือดออก",
+            "Beta-blocker ไม่ได้ทำให้ claudication แย่ลงอย่างมีนัยสำคัญ และ bisoprolol ลดการตายใน HFrEF",
+          ],
+          k: "Cilostazol (PDE3i) เพิ่มระยะเดินใน claudication แต่ห้ามใช้ใน HF ทุกระดับ; รักษาหลัก PAD = supervised exercise + statin + antiplatelet + เลิกบุหรี่",
+        },
+      ],
+    },
+    {
+      ref: "2018 ACC/AHA/HRS Guideline on the Evaluation and Management of Patients With Bradycardia and Cardiac Conduction Delay; 2020 AHA ACLS Guidelines (Bradycardia algorithm); Lexicomp Drug Interactions",
+      qs: [
+        {
+          d: "medium",
+          p:
+            "หญิงไทยอายุ 74 ปี ใช้ metoprolol tartrate 50 mg BID สำหรับ AF แพทย์อีกคลินิกเพิ่ม verapamil 80 mg TID เพราะอัตราเต้นหัวใจยังเร็ว. 5 วันต่อมามาด้วยเวียนศีรษะ เกือบเป็นลม. " +
+            "HR 38 bpm, BP 84/50 mmHg, ECG: slow AF กับ junctional escape rhythm. การจัดการข้อใดเหมาะสมที่สุด?",
+          o: [
+            "หยุดทั้ง metoprolol และ verapamil ให้ atropine 1 mg IV (ซ้ำได้) และเตรียม IV calcium, adrenaline/dopamine drip หรือ transcutaneous pacing ถ้าไม่ตอบสนอง",
+            "หยุดเฉพาะ verapamil แล้วให้ metoprolol ต่อในขนาดเดิมและนัดตรวจ 1 สัปดาห์",
+            "ให้ digoxin 0.25 mg IV เพื่อเพิ่มการบีบตัวของหัวใจ",
+            "ให้ amiodarone 150 mg IV เพื่อคุมจังหวะ AF",
+            "ให้ 0.9% NaCl 2 ลิตรอย่างเดียวเพราะความดันต่ำจากขาดน้ำ",
+          ],
+          a: 0,
+          r:
+            "กลไกอันตรกิริยา: beta-blocker และ non-dihydropyridine CCB (verapamil, diltiazem) ต่างกดการนำไฟฟ้าผ่าน AV node และ SA node (negative chronotropic และ dromotropic) และลดการบีบตัวของหัวใจ (negative inotropic) เมื่อใช้ร่วมกันจึงเสริมฤทธิ์กัน (pharmacodynamic interaction) ทำให้เกิด bradycardia รุนแรง AV block และความดันต่ำ นอกจากนี้ verapamil ยับยั้ง CYP3A4 และ P-gp แต่ metoprolol ถูกเปลี่ยนแปลงหลักผ่าน CYP2D6 จึงเป็นอันตรกิริยาเชิงเภสัชพลศาสตร์เป็นหลัก ผู้สูงอายุเสี่ยงมากขึ้นเพราะระบบนำไฟฟ้าเสื่อมตามวัย\n\n" +
+            "การจัดการ symptomatic bradycardia (ACLS): (1) หยุดยาที่เป็นสาเหตุทั้งสองตัว (2) atropine 1 mg IV ทุก 3–5 นาที (สูงสุด 3 mg) (3) ถ้าไม่ตอบสนอง: adrenaline 2–10 mcg/min หรือ dopamine 5–20 mcg/kg/min หยดต่อเนื่อง หรือ transcutaneous pacing (4) สำหรับพิษจาก CCB: 10% calcium gluconate 30 mL (หรือ calcium chloride 10 mL) IV; สำหรับพิษจาก beta-blocker: glucagon 3–5 mg IV แล้วหยดต่อ; กรณีรุนแรงใช้ high-dose insulin euglycemia therapy\n\n" +
+            "ทำไมตัวเลือกอื่นไม่เหมาะ: การหยุดเพียง verapamil ไม่พอในภาวะที่มีอาการรุนแรง และ metoprolol ยังกด AV node ต่อ; digoxin และ amiodarone ยิ่งกด AV node ทำให้ bradycardia แย่ลง; การให้สารน้ำอย่างเดียวไม่แก้สาเหตุ\n\n" +
+            "ข้อควรรู้สำหรับเภสัชกร: หลีกเลี่ยงการใช้ beta-blocker ร่วมกับ verapamil หรือ diltiazem โดยเฉพาะในผู้สูงอายุ ผู้ที่มี LV dysfunction หรือ conduction disease ถ้าจำเป็นต้องใช้ร่วมเพื่อคุมอัตราเต้นของ AF ต้องเริ่มขนาดต่ำและติดตาม HR, ECG ใกล้ชิด; ผู้ป่วยที่ไปหลายคลินิกเสี่ยงต่ออันตรกิริยาแบบนี้ การทำ medication reconciliation เป็นหน้าที่สำคัญของเภสัชกร",
+          w: [
+            "ถูก — หยุดยาทั้งสองตัว ให้ atropine และเตรียมยากระตุ้นหัวใจ, calcium หรือ pacing ตาม ACLS bradycardia algorithm",
+            "Metoprolol ยังกด AV node ต่อ ผู้ป่วยมีอาการรุนแรง (BP 84/50) ต้องหยุดทั้งสองตัวและรักษาทันที",
+            "Digoxin ยิ่งกด AV node ทำให้ bradycardia แย่ลง",
+            "Amiodarone กด SA และ AV node ทำให้ bradycardia แย่ลงอีก",
+            "ความดันต่ำเกิดจาก bradycardia และการบีบตัวลดลงจากยา การให้สารน้ำอย่างเดียวไม่แก้สาเหตุ",
+          ],
+          k: "BB + verapamil/diltiazem → bradycardia/AV block/ความดันต่ำ (เสริมฤทธิ์ที่ AV node); รักษา: หยุดยา + atropine → adrenaline/dopamine/pacing ± calcium (CCB), glucagon (BB)",
+        },
+      ],
+    },
+    {
+      ref: "ACOG Practice Bulletin No. 222: Gestational Hypertension and Preeclampsia (2020); ACOG Committee Opinion No. 767: Emergent Therapy for Acute-Onset, Severe Hypertension During Pregnancy (2019); แนวทางเวชปฏิบัติ ราชวิทยาลัยสูตินรีแพทย์แห่งประเทศไทย เรื่องความดันโลหิตสูงในสตรีตั้งครรภ์",
+      qs: [
+        {
+          d: "easy",
+          p:
+            "หญิงไทยตั้งครรภ์ 32 สัปดาห์ ครรภ์แรก มาด้วยปวดศีรษะ BP 166/112 mmHg วัดซ้ำใน 15 นาทีได้ 168/110 mmHg urine protein 2+, platelet 160,000/mm³, AST/ALT ปกติ, ไม่มีชัก. " +
+            "แพทย์ให้ magnesium sulfate ป้องกันชักแล้ว ยาลดความดันเร่งด่วนข้อใดเหมาะสมที่สุด?",
+          o: [
+            "Nifedipine ชนิดออกฤทธิ์เร็ว 10 mg รับประทาน ประเมิน BP ซ้ำใน 20 นาที ถ้ายังสูงให้ 20 mg (หรือใช้ hydralazine หรือ labetalol IV ตามแนวทาง)",
+            "Enalapril 10 mg รับประทานทันที",
+            "Methyldopa 250 mg รับประทาน แล้วรอดูผล 24 ชั่วโมง",
+            "Furosemide 40 mg IV เพื่อลดความดัน",
+            "ไม่ต้องให้ยาลดความดัน เพราะ magnesium sulfate ลดความดันได้เพียงพอแล้ว",
+          ],
+          a: 0,
+          r:
+            "การประเมิน: ตั้งครรภ์เกิน 20 สัปดาห์ มีความดันสูงร่วมกับ proteinuria = preeclampsia และ BP 160/110 ขึ้นไปที่ยืนยันใน 15 นาที = severe-range hypertension ซึ่งเป็นภาวะฉุกเฉิน เสี่ยง stroke ของมารดา (สาเหตุการเสียชีวิตสำคัญ) ต้องให้ยาลดความดันภายใน 30–60 นาที เป้าหมายลดให้อยู่ราว 140–150/90–100 mmHg ไม่ลดเร็วหรือต่ำเกินไปเพราะลดเลือดไปเลี้ยงรก\n\n" +
+            "ยาลดความดันเร่งด่วนที่แนะนำ (ACOG และ RTCOG): (1) nifedipine ชนิดออกฤทธิ์เร็ว (immediate-release) 10–20 mg รับประทาน ซ้ำได้ทุก 20–30 นาที (ห้ามเคี้ยวหรืออมใต้ลิ้น เพราะความดันลดลงเร็วเกินไป) (2) hydralazine 5–10 mg IV ทุก 20 นาที (3) labetalol 20 mg IV แล้วเพิ่มเป็น 40, 80 mg (หลีกเลี่ยงในหืดและหัวใจล้มเหลว) ยาทั้งสามมีประสิทธิภาพใกล้เคียงกัน ในประเทศไทย nifedipine รับประทานและ hydralazine IV ใช้บ่อยที่สุด\n\n" +
+            "magnesium sulfate: ใช้ป้องกันและรักษาอาการชัก (eclampsia) ไม่ใช่ยาลดความดัน การใช้ nifedipine ร่วมกับ MgSO₄ ปลอดภัยในทางปฏิบัติ แต่ควรติดตามความดันต่ำและอาการอ่อนแรง\n\n" +
+            "ทำไมตัวเลือกอื่นไม่เหมาะ: ACEI/ARB ห้ามใช้ในการตั้งครรภ์ (fetotoxicity ในไตรมาส 2–3: ไตทารกเสียหาย น้ำคร่ำน้อย กะโหลกเจริญไม่ดี); methyldopa ออกฤทธิ์ช้า 4–6 ชั่วโมง ใช้ควบคุมความดันเรื้อรังระหว่างตั้งครรภ์ ไม่ใช่ภาวะเร่งด่วน; diuretic ลดปริมาตรเลือดซึ่งต่ำอยู่แล้วใน preeclampsia\n\n" +
+            "ข้อควรรู้สำหรับเภสัชกร: ยาลดความดันที่ใช้ระยะยาวในหญิงตั้งครรภ์ ได้แก่ methyldopa, labetalol, nifedipine ชนิดออกฤทธิ์นาน; หญิงที่เสี่ยง preeclampsia สูงควรได้ aspirin ขนาดต่ำ (81–162 mg ก่อนนอน) เริ่มที่ 12–16 สัปดาห์จนถึง 36 สัปดาห์ เพื่อป้องกัน",
+          w: [
+            "ถูก — severe-range hypertension ในหญิงตั้งครรภ์: nifedipine ออกฤทธิ์เร็วรับประทาน หรือ hydralazine/labetalol IV ภายใน 30–60 นาที",
+            "ACEI ห้ามใช้ในการตั้งครรภ์ เป็นพิษต่อไตและการเจริญของทารก",
+            "Methyldopa ออกฤทธิ์ช้า ใช้คุมความดันเรื้อรัง ไม่เหมาะกับภาวะเร่งด่วน",
+            "Diuretic ลดปริมาตรเลือดซึ่งต่ำอยู่แล้วใน preeclampsia และลดเลือดไปเลี้ยงรก",
+            "MgSO₄ ใช้ป้องกันชัก ไม่ใช่ยาลดความดัน severe-range BP ต้องรักษาเพื่อป้องกัน stroke ของมารดา",
+          ],
+          k: "Severe HTN ในครรภ์ (≥160/110 ยืนยันใน 15 นาที): nifedipine IR รับประทาน, hydralazine IV หรือ labetalol IV ภายใน 30–60 นาที; MgSO₄ ป้องกันชัก ไม่ใช่ยาลดความดัน; ห้าม ACEI/ARB",
+        },
+      ],
+    },
+  ],
   renal: [
     {
       title: "Hypercalcemia of malignancy",

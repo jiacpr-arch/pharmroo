@@ -4,9 +4,10 @@ import { MOCK3_DAY01 } from "@/lib/pc1-mock3-day01";
 import { MOCK3_REUSE } from "@/lib/pc1-mock3-reuse";
 
 // PC1 Mock Set 3 (120 ข้อ = 12 หมวด × 10 ข้อ)
-// หัวใจ: Case 4, 9 และโรคติดเชื้อ: Case 10, 22 จากคลังเดิม (คำอธิบายเขียนใหม่) แล้วเติมหมวดอื่นด้วยข้อใหม่
+// หัวใจ: Case 9 และโรคติดเชื้อ: Case 10, 22 จากคลังเดิม (คำอธิบายเขียนใหม่) แล้วเติมหมวดอื่นด้วยข้อใหม่
+// ไม่ใช้ Case 4 (AF + apixaban) เพราะซ้ำแนวคิดกับข้อ apixaban ในเซต 1
 const ITEMS: Record<string, Pc1MockItem[]> = {
-  cardio: [...MOCK3_REUSE.cardio],
+  cardio: [...MOCK3_REUSE.cardio, ...MOCK3_DAY01.cardio],
   infection: [...MOCK3_REUSE.infection],
   renal: [...MOCK3_DAY01.renal],
   endocrine: [...MOCK3_DAY01.endocrine],
