@@ -8,6 +8,7 @@ import {
   spendCreditForUnlock,
 } from "@/lib/db/queries-credits";
 import { isPaidMember } from "@/lib/credits-gate";
+import { normalizeDetailedExplanation } from "@/lib/mcq-explanation";
 
 /**
  * Spend 1 credit to unlock a question's detailed explanation.
@@ -26,7 +27,12 @@ export async function POST(
 
   const { id } = await params;
   const question = await db
-    .select({ detailed_explanation: mcqQuestions.detailed_explanation })
+    .select({
+      detailed_explanation: mcqQuestions.detailed_explanation,
+      choices: mcqQuestions.choices,
+      correct_answer: mcqQuestions.correct_answer,
+      explanation: mcqQuestions.explanation,
+    })
     .from(mcqQuestions)
     .where(and(eq(mcqQuestions.id, id), eq(mcqQuestions.status, "active")))
     .then((rows) => rows[0]);
@@ -34,15 +40,11 @@ export async function POST(
   if (!question) {
     return NextResponse.json({ error: "Question not found" }, { status: 404 });
   }
-  // Legacy rows may store the JSONB double-encoded as a string.
-  let detailedExplanation = question.detailed_explanation;
-  if (typeof detailedExplanation === "string") {
-    try {
-      detailedExplanation = JSON.parse(detailedExplanation);
-    } catch {
-      // keep as-is
-    }
-  }
+  const detailedExplanation = normalizeDetailedExplanation(question.detailed_explanation, {
+    choices: question.choices,
+    correct_answer: question.correct_answer,
+    explanation: question.explanation,
+  });
   if (!detailedExplanation) {
     return NextResponse.json({ error: "No detailed explanation" }, { status: 400 });
   }

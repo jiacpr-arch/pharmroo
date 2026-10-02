@@ -2,6 +2,7 @@ import { db } from "./index";
 import { mcqSubjects, mcqQuestions, mcqAttempts, mcqSessions, questionSets, setPurchases, setQuestions } from "./schema";
 import { eq, and, inArray, sql, desc } from "drizzle-orm";
 import type { McqSubject, McqQuestion, QuestionSet, SetPurchase } from "../types-mcq";
+import { normalizeDetailedExplanation } from "../mcq-explanation";
 
 export type ExamCategory = "pharmacy" | "nursing";
 
@@ -504,6 +505,7 @@ function toMcqQuestion(
   row: typeof mcqQuestions.$inferSelect,
   subject?: typeof mcqSubjects.$inferSelect
 ): McqQuestion {
+  const choices = normalizeChoices(parseJsonbField(row.choices));
   return {
     id: row.id,
     subject_id: row.subject_id ?? "",
@@ -513,10 +515,14 @@ function toMcqQuestion(
     question_number: row.question_number,
     scenario: row.scenario,
     image_url: row.image_url,
-    choices: normalizeChoices(parseJsonbField(row.choices)),
+    choices,
     correct_answer: row.correct_answer,
     explanation: row.explanation,
-    detailed_explanation: parseJsonbField(row.detailed_explanation) as McqQuestion["detailed_explanation"],
+    detailed_explanation: normalizeDetailedExplanation(row.detailed_explanation, {
+      choices,
+      correct_answer: row.correct_answer,
+      explanation: row.explanation,
+    }),
     difficulty: row.difficulty,
     is_ai_enhanced: row.is_ai_enhanced,
     ai_notes: row.ai_notes,

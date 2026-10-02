@@ -16,6 +16,7 @@ export default defineConfig({
       "lib/exam-countdown.test.ts",
       "__tests__/exam-countdown-route.test.ts",
       "lib/ip1-mock/ip1-mock.test.ts",
+      "lib/mcq-explanation.test.ts",
     ],
     exclude: ["node_modules/**", ".next/**"],
   },

@@ -16,14 +16,16 @@ const errors = [];
 if (![1, 2].includes(batch.exam_day)) errors.push("exam_day must be 1 or 2");
 if (!Array.isArray(batch.questions) || batch.questions.length === 0) errors.push("questions[] missing");
 
-const LABELS = ["A", "B", "C", "D"];
+const ALL_LABELS = ["A", "B", "C", "D", "E"];
 const seen = new Set();
 batch.questions.forEach((q, i) => {
   const at = `#${i + 1}`;
   if (!q.scenario || q.scenario.length < 20) errors.push(`${at} scenario too short`);
   if (seen.has(q.scenario)) errors.push(`${at} duplicate scenario`);
   seen.add(q.scenario);
-  if (!Array.isArray(q.choices) || q.choices.length !== 4) errors.push(`${at} needs exactly 4 choices`);
+  // New questions use 4 choices; legacy rows (with an explicit id) may keep 5.
+  const LABELS = ALL_LABELS.slice(0, q.id ? q.choices?.length : 4);
+  if (!Array.isArray(q.choices) || q.choices.length !== LABELS.length || LABELS.length < 4) errors.push(`${at} needs exactly 4 choices (5 allowed for legacy rows)`);
   else q.choices.forEach((c, j) => {
     if (c.label !== LABELS[j]) errors.push(`${at} choice ${j} label must be ${LABELS[j]}`);
     if (!c.text) errors.push(`${at} choice ${c.label} empty`);
@@ -34,7 +36,7 @@ batch.questions.forEach((q, i) => {
   const de = q.detailed_explanation;
   if (!de) { errors.push(`${at} detailed_explanation missing`); return; }
   for (const k of ["summary", "reason", "key_takeaway"]) if (!de[k]) errors.push(`${at} detailed_explanation.${k} missing`);
-  if (!Array.isArray(de.choices) || de.choices.length !== 4) errors.push(`${at} detailed_explanation.choices needs 4`);
+  if (!Array.isArray(de.choices) || de.choices.length !== LABELS.length) errors.push(`${at} detailed_explanation.choices must mirror choices`);
   else de.choices.forEach((c, j) => {
     if (c.label !== LABELS[j] || c.text !== q.choices[j]?.text) errors.push(`${at} de.choices[${j}] must mirror choices`);
     const mark = c.label === q.correct_answer ? "✓" : "✗";
@@ -46,13 +48,14 @@ if (errors.length) {
   console.error(`${name}: ${errors.length} error(s)\n` + errors.join("\n"));
   process.exit(1);
 }
-const dist = Object.fromEntries(LABELS.map((l) => [l, batch.questions.filter((q) => q.correct_answer === l).length]));
+const dist = Object.fromEntries(ALL_LABELS.map((l) => [l, batch.questions.filter((q) => q.correct_answer === l).length]));
 console.error(`${name}: OK — ${batch.questions.length} questions, day ${batch.exam_day}, answers ${JSON.stringify(dist)}`);
 if (checkOnly) process.exit(0);
 
 const lit = (s) => (s == null ? "NULL" : "'" + String(s).replace(/'/g, "''") + "'");
 const rows = batch.questions.map((q, i) => {
-  const id = createHash("md5").update(`rheum-cc1:${name}:${i}`).digest("hex");
+  // Legacy rows keep their original id; new rows get a stable id from file name + index.
+  const id = q.id ?? createHash("md5").update(`rheum-cc1:${name}:${i}`).digest("hex");
   return `(${lit(id)}, ${lit(SUBJECT_ID)}, 'PLE-CC1', 'AI-draft', ${batch.exam_day}, ${lit(q.scenario)}, ${lit(JSON.stringify(q.choices))}::jsonb, ${lit(q.correct_answer)}, ${lit(q.explanation)}, ${lit(JSON.stringify(q.detailed_explanation))}::jsonb, ${lit(q.difficulty)}, false, 'AI-drafted; rheumatology CC1 top-up', 'active')`;
 });
 console.log(
