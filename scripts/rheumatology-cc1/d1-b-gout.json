@@ -23,33 +23,33 @@
       ],
       "correct_answer": "B",
       "difficulty": "easy",
-      "explanation": "เกาต์เกิดจากผลึก monosodium urate (MSU) ซึ่งมีรูปเข็มและหักเหแสงเป็นลบอย่างแรงใต้กล้อง polarized light",
+      "explanation": "เกาต์เกิดจากผลึก monosodium urate (MSU) ซึ่งใต้กล้อง compensated polarized light มีรูปเข็มและหักเหแสงเป็นลบอย่างแรง (สีเหลืองเมื่อขนานแกน) การเห็นผลึกนี้ในน้ำไขข้อคือ gold standard ของการวินิจฉัย",
       "detailed_explanation": {
-        "summary": "เกาต์เกิดจากผลึก monosodium urate (MSU) ซึ่งมีรูปเข็มและหักเหแสงเป็นลบอย่างแรงใต้กล้อง polarized light",
-        "reason": "โจทย์ถามอะไร: ให้แยกลักษณะผลึกในน้ำไขข้อที่ใช้วินิจฉัยโรคเกาต์ (gold standard) ออกจากผลึกชนิดอื่น\n\nหลักการ/กลไกเชิงลึก: กรดยูริกเป็นผลผลิตสุดท้ายของการสลาย purine ในมนุษย์ เพราะไม่มีเอนไซม์ uricase เมื่อ serum urate สูงเกินจุดอิ่มตัว (~6.8 mg/dL ที่ 37°C) จะตกผลึกเป็น monosodium urate สะสมในข้อและเนื้อเยื่อ ผลึกถูก phagocytose โดย macrophage กระตุ้น NLRP3 inflammasome → caspase-1 → หลั่ง IL-1β → neutrophil influx เกิดข้ออักเสบเฉียบพลัน (จึงเป็นเหตุผลที่ colchicine และ IL-1 inhibitor ได้ผล)\n\nทำไมข้อ B ถูก: ผลึก MSU มีรูปเข็ม เรียวยาว หักเหแสงเป็นลบอย่างแรง (strongly negative birefringence) คือเป็นสีเหลืองเมื่อวางขนานกับแกน compensator และเป็นสีน้ำเงินเมื่อตั้งฉาก\n\nการประยุกต์กับผู้ป่วยจริง: ผู้ป่วยรายนี้มี podagra (ข้อโคนนิ้วหัวแม่เท้า) หลังดื่มเบียร์ซึ่งมี purine (guanosine) และแอลกอฮอล์ที่เพิ่มการสร้างและลดการขับ urate การพบผลึก MSU ยืนยันการวินิจฉัย และในช่วง flare ระดับ serum urate อาจปกติได้ จึงไม่ควรใช้ระดับ urate ขณะ flare ตัดสินว่าไม่ใช่เกาต์\n\nจุดที่มักสับสนและกับดักข้อสอบ: ผลึก rhomboid หักเหแสงบวกอย่างอ่อนคือ CPPD (pseudogout) ซึ่งเป็นโรคต่างกัน ส่วน Maltese cross เป็นผลึกไขมัน/cholesterol และ calcium oxalate พบในภาวะ oxalosis ห้ามจำสลับ needle–negative กับ rhomboid–positive\n\nสรุปท่องสอบ: Gout = MSU = เข็ม + ลบแรง (Negative Needle) / CPPD = rhomboid + บวกอ่อน (Positive Pseudogout)",
+        "summary": "ผลึก MSU = รูปเข็ม หักเหแสงลบอย่างแรง ต่างจาก CPP ที่เป็นรูป rhomboid หักเหแสงบวกอย่างอ่อน การตรวจน้ำไขข้อหาผลึกเป็น gold standard ในการยืนยันเกาต์",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วยชายวัยกลางคนมีข้อโคนนิ้วหัวแม่เท้าอักเสบเฉียบพลัน (podagra) หลังดื่มเบียร์ ซึ่งเป็นภาพคลาสสิกของ acute gout flare โจทย์ถามว่าหากเจาะน้ำไขข้อมาส่องกล้อง polarized light ควรพบผลึกลักษณะใด จึงเป็นการทดสอบความรู้พื้นฐานเรื่องการวินิจฉัยแยก crystal arthritis ที่เภสัชกรต้องอ่านผลแล็บให้เป็น\n\nหลักการ/กลไกเชิงลึก: กรดยูริกเป็นผลผลิตสุดท้ายของการสลาย purine ในมนุษย์เพราะเราไม่มีเอนไซม์ uricase เมื่อ serum urate เกินจุดอิ่มตัวประมาณ 6.8 mg/dL ที่อุณหภูมิ 37°C จะตกผลึกเป็น monosodium urate (MSU) ได้ง่ายขึ้นในบริเวณที่อุณหภูมิต่ำ เช่น ข้อปลายเท้า ผลึก MSU ถูก phagocytose โดย macrophage แล้วกระตุ้น NLRP3 inflammasome → caspase-1 → หลั่ง IL-1β → ดึง neutrophil เข้าข้อ เกิดการอักเสบรุนแรงภายในชั่วโมง ใต้กล้อง compensated polarized light ผลึก MSU มีรูปเข็มยาว 2–20 μm และมี strong negative birefringence คือเป็นสีเหลืองเมื่อแกนยาวของผลึกขนานกับแกนของ compensator และเป็นสีฟ้าเมื่อตั้งฉาก ส่วนผลึก calcium pyrophosphate (CPP) มีรูป rhomboid หรือแท่งสั้น หักเหแสงบวกอย่างอ่อน (ฟ้าเมื่อขนาน)\n\nทำไมข้อ B ถูก: ผลึกรูปเข็มที่หักเหแสงเป็นลบอย่างแรงคือลักษณะเฉพาะของ MSU จึงยืนยันเกาต์ได้ ยิ่งพบผลึกอยู่ภายใน neutrophil (intracellular) ยิ่งสนับสนุนว่าเป็นการอักเสบเฉียบพลันจากผลึก\n\nหลักฐานและแนวทางเวชปฏิบัติ: เกณฑ์จำแนกโรค ACR/EULAR 2015 ถือว่าการพบผลึก MSU ในข้อที่มีอาการหรือใน tophus เป็น sufficient criterion คือวินิจฉัยเกาต์ได้ทันทีโดยไม่ต้องนับคะแนนอื่น EULAR แนะนำให้ตรวจน้ำไขข้อในทุกรายที่ทำได้ โดยเฉพาะเมื่อไม่แน่ใจหรือต้องแยกข้อติดเชื้อ ซึ่งต้องส่งย้อมแกรมและเพาะเชื้อคู่กันเสมอ\n\nการประยุกต์กับผู้ป่วยจริง: เมื่อยืนยันเกาต์แล้ว เภสัชกรควรช่วยเลือกยาระงับการอักเสบภายใน 24 ชั่วโมงแรก (colchicine, NSAIDs หรือ corticosteroid ตามโรคร่วม) แนะนำพักข้อ ประคบเย็น และอธิบายว่าระดับ serum urate ช่วง flare อาจต่ำลงหลอก ๆ จึงไม่ควรใช้ค่าเดียวตัดสินว่าไม่ใช่เกาต์ และควรตรวจซ้ำหลังหาย 2–4 สัปดาห์\n\nการติดตามและสัญญาณอันตราย: ไข้สูง หนาวสั่น ข้ออักเสบที่ไม่ดีขึ้นใน 48–72 ชั่วโมง หรือเม็ดเลือดขาวในน้ำไขข้อสูงมาก (>50,000/μL) ต้องนึกถึงข้อติดเชื้อร่วมด้วยเสมอ เพราะผลึกกับเชื้ออยู่ร่วมกันได้\n\nจุดที่มักสับสนและกับดักข้อสอบ: นักศึกษามักสลับเครื่องหมาย birefringence ระหว่าง MSU กับ CPP ให้จำว่า gout = Negative, Needle (N คู่) ส่วน pseudogout = Positive, Polygon/rhomboid (P คู่) นอกจากนี้ Maltese cross เป็นผลึกไขมัน และรูปซองจดหมายเป็น calcium oxalate ซึ่งพบน้อยในข้อ\n\nสรุปท่องสอบ: MSU = เข็ม + ลบแรง + เหลืองเมื่อขนาน; CPP = rhomboid + บวกอ่อน; พบผลึก MSU = วินิจฉัยเกาต์ได้ทันที และต้องแยกข้อติดเชื้อเสมอ",
         "choices": [
           {
             "label": "A",
             "text": "ผลึกรูปสี่เหลี่ยมขนมเปียกปูน (rhomboid) หักเหแสงเป็นบวกอย่างอ่อน (weakly positive birefringence)",
-            "explanation": "✗ ผิด — นี่คือลักษณะผลึก calcium pyrophosphate dihydrate (CPPD) ของ pseudogout ไม่ใช่เกาต์"
+            "explanation": "✗ ผิด — ผลึกรูปสี่เหลี่ยมขนมเปียกปูน (rhomboid) หรือแท่งสั้นที่หักเหแสงบวกอย่างอ่อนเป็นลักษณะของ calcium pyrophosphate (CPP) ใน CPPD disease หรือ pseudogout ซึ่งมักพบในผู้สูงอายุที่ข้อเข่าหรือข้อมือ และภาพรังสีอาจเห็น chondrocalcinosis คำตอบนี้จะถูกหากโจทย์ถามถึงผลึกของ pseudogout ไม่ใช่เกาต์"
           },
           {
             "label": "B",
             "text": "ผลึกรูปเข็ม (needle-shaped) หักเหแสงเป็นลบอย่างแรง (strongly negative birefringence)",
-            "explanation": "✓ ถูก — ผลึก monosodium urate เป็นรูปเข็มและหักเหแสงเป็นลบอย่างแรง เป็น gold standard ในการวินิจฉัยเกาต์"
+            "explanation": "✓ ถูก — ผลึก monosodium urate มีรูปเข็มยาวและหักเหแสงเป็นลบอย่างแรง (สีเหลืองเมื่อแกนผลึกขนานกับ compensator) การพบผลึกนี้ในน้ำไขข้อหรือใน tophus เป็น sufficient criterion ตาม ACR/EULAR 2015 วินิจฉัยเกาต์ได้ทันที ผู้ป่วยรายนี้มี podagra หลังดื่มเบียร์ซึ่งเข้ากับเกาต์อย่างยิ่ง"
           },
           {
             "label": "C",
             "text": "ผลึกรูปมอลทีสครอส (Maltese cross) จากไขมันในน้ำไขข้อ",
-            "explanation": "✗ ผิด — Maltese cross พบในผลึกไขมัน/lipid liquid crystals ไม่ใช่ลักษณะของเกาต์"
+            "explanation": "✗ ผิด — ผลึกรูป Maltese cross เป็นลักษณะของผลึกไขมัน (lipid liquid crystals เช่น cholesterol ester) ซึ่งพบได้ในน้ำไขข้อหลังการบาดเจ็บหรือการฉีดยาบางชนิด ไม่ได้บ่งชี้เกาต์ นอกจากนี้ corticosteroid ที่ฉีดเข้าข้อบางสูตรก็เกิดผลึกปลอมได้ คำตอบนี้จะถูกหากโจทย์ถามถึง lipid crystal arthritis หรือ lipid arthritis หลังอุบัติเหตุ"
           },
           {
             "label": "D",
             "text": "ผลึกรูปซองจดหมาย (envelope-shaped) ของ calcium oxalate",
-            "explanation": "✗ ผิด — รูปซองจดหมายเป็นผลึก calcium oxalate พบน้อยมากในข้อ (เช่น primary oxalosis หรือผู้ป่วยฟอกไต)"
+            "explanation": "✗ ผิด — ผลึกรูปซองจดหมาย (envelope/bipyramidal) เป็นลักษณะของ calcium oxalate dihydrate ซึ่งพบในปัสสาวะผู้ป่วยนิ่ว calcium oxalate หรือพิษ ethylene glycol และพบในข้อได้น้อยมากในผู้ป่วยฟอกไตระยะยาว (oxalosis) คำตอบนี้จะถูกหากโจทย์ถามถึงตะกอนปัสสาวะในพิษ ethylene glycol ไม่ใช่น้ำไขข้อของเกาต์"
           }
         ],
-        "key_takeaway": "Gout = Needle + Negative; CPPD = rhomboid + Positive"
+        "key_takeaway": "Gout = Needle + Negative (เหลืองเมื่อขนาน); CPPD = Rhomboid + Positive (ฟ้าเมื่อขนาน)"
       }
     },
     {
@@ -74,33 +74,33 @@
       ],
       "correct_answer": "C",
       "difficulty": "medium",
-      "explanation": "เมื่อ flare เป็นข้อใหญ่ข้อเดียวและมีข้อห้ามของ NSAIDs/colchicine รวมถึงเบาหวานคุมไม่ดี การฉีดสเตียรอยด์เข้าข้อเป็นทางเลือกที่ปลอดภัยและได้ผลที่สุด",
+      "explanation": "Flare ที่ข้อใหญ่ข้อเดียวในผู้ป่วยที่มีข้อห้ามของ NSAIDs (CKD, GI bleed, warfarin) และ colchicine (CKD + clarithromycin ซึ่งเป็น strong CYP3A4/P-gp inhibitor) และเบาหวานคุมไม่ดี การฉีด corticosteroid เข้าข้อเป็นทางเลือกที่ปลอดภัยและได้ผลที่สุด",
       "detailed_explanation": {
-        "summary": "เมื่อ flare เป็นข้อใหญ่ข้อเดียวและมีข้อห้ามของ NSAIDs/colchicine รวมถึงเบาหวานคุมไม่ดี การฉีดสเตียรอยด์เข้าข้อเป็นทางเลือกที่ปลอดภัยและได้ผลที่สุด",
-        "reason": "โจทย์ถามอะไร: เลือกยารักษา acute gout flare ในผู้ป่วยที่มีข้อห้ามหลายอย่างพร้อมกัน\n\nหลักการ/กลไกเชิงลึก: ACR 2020 แนะนำ colchicine, NSAIDs หรือ glucocorticoids (oral, intra-articular หรือ IM) เป็นทางเลือกแรกโดยเลือกตามโรคร่วม การฉีดสเตียรอยด์เข้าข้อ (เช่น triamcinolone acetonide 40 mg สำหรับเข่า) ให้ฤทธิ์ต้านอักเสบเฉพาะที่สูง ดูดซึมเข้ากระแสเลือดน้อย จึงลดผลต่อระดับน้ำตาล เลือดออก และไต\n\nทำไมข้อ C ถูก: ผู้ป่วยมี flare ข้อใหญ่ข้อเดียว (monoarticular) ที่เข้าถึงได้ง่าย และตัดข้อติดเชื้อแล้ว (เพาะเชื้อลบ) การฉีดเข้าข้อจึงเหมาะที่สุด แม้ใช้ warfarin ก็ฉีดเข้าข้อได้หาก INR อยู่ในช่วงรักษา\n\nการประยุกต์กับผู้ป่วยจริง: NSAIDs ห้ามใน eGFR <30, ประวัติ GI bleed และใช้ warfarin; colchicine ห้ามใช้ร่วมกับ strong CYP3A4/P-gp inhibitor (clarithromycin) โดยเฉพาะเมื่อมีไตเสื่อม เพราะเสี่ยงพิษถึงชีวิต (myopathy, bone marrow suppression); prednisolone ขนาดสูง 10 วันจะทำให้น้ำตาลซึ่งคุมไม่ได้อยู่แล้วสูงขึ้นมาก\n\nจุดที่มักสับสนและกับดักข้อสอบ: หลายคนเลือก colchicine low-dose เพราะจำว่าปลอดภัย แต่ลืม DDI กับ macrolide และ azole ส่วน NSAID + PPI ป้องกันเฉพาะแผลแต่ไม่แก้ปัญหาไตและเลือดออกจาก warfarin ต้องตัดข้อติดเชื้อก่อนฉีดสเตียรอยด์เข้าข้อเสมอ\n\nสรุปท่องสอบ: Flare 1–2 ข้อใหญ่ + ข้อห้าม NSAID/colchicine/systemic steroid → ฉีดสเตียรอยด์เข้าข้อ (หลังตัด septic arthritis)",
+        "summary": "ACR 2020 ให้ intra-articular corticosteroid เป็นหนึ่งในยาแรกของ gout flare โดยเหมาะที่สุดเมื่อเป็น 1–2 ข้อใหญ่และมีข้อห้ามของยาระบบ เช่นในผู้ป่วย CKD + warfarin + clarithromycin + เบาหวานคุมไม่ได้รายนี้",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วยสูงอายุมี gout flare ที่ข้อเข่าข้อเดียว ยืนยันด้วยผลึก MSU และแยกข้อติดเชื้อแล้ว แต่มีโรคร่วมและยาร่วมหลายอย่างที่ทำให้ยามาตรฐานทั้งสามกลุ่มมีปัญหา โจทย์จึงทดสอบการเลือกยารักษา flare ตามโรคร่วม (comorbidity-driven selection) ซึ่งเป็นทักษะหลักของเภสัชกร\n\nหลักการ/กลไกเชิงลึก: ยารักษา flare มีสามกลุ่มหลัก NSAIDs ยับยั้ง COX ลด prostaglandin แต่ลดการไหลเวียนเลือดที่ไต (afferent arteriole พึ่ง PGE2/PGI2 ใน CKD) และเพิ่มความเสี่ยงเลือดออกทางเดินอาหารซึ่งทวีคูณเมื่อใช้ร่วม warfarin Colchicine จับ tubulin ยับยั้งการเคลื่อนที่ของ neutrophil และการประกอบ NLRP3 inflammasome แต่ถูกกำจัดผ่าน CYP3A4 และ P-glycoprotein และขับทางไต clarithromycin ยับยั้งทั้งสองทาง ทำให้ระดับ colchicine สูงจนเกิดพิษถึงตายได้ Glucocorticoid ออกฤทธิ์ผ่าน glucocorticoid receptor ยับยั้ง NF-κB ลดการสร้าง cytokine แต่ยาระบบทำให้น้ำตาลสูง ส่วนการฉีดเข้าข้อให้ยาเข้มข้นเฉพาะที่ ผลต่อระบบน้อยกว่ามาก (แม้น้ำตาลอาจสูงชั่วคราว 1–3 วัน)\n\nทำไมข้อ C ถูก: การฉีด triamcinolone acetonide (เช่น 40 mg สำหรับข้อเข่า) เข้าข้อเข่าที่อักเสบเพียงข้อเดียว หลบเลี่ยงทั้งพิษต่อไต เลือดออก ปฏิกิริยากับ warfarin/clarithromycin และผลต่อน้ำตาลของยาระบบ และได้ผลระงับการอักเสบเร็ว เมื่อเพาะเชื้อไม่พบแบคทีเรียแล้วจึงปลอดภัยที่จะฉีด\n\nหลักฐานและแนวทางเวชปฏิบัติ: ACR 2020 Gout Guideline แนะนำอย่างหนัก (strong) ให้ใช้ colchicine, NSAIDs หรือ glucocorticoids (รับประทาน, ฉีดเข้าข้อ หรือฉีดเข้ากล้าม) เป็นยาแรก โดยเลือกตามปัจจัยผู้ป่วย EULAR 2016 ระบุชัดว่าการฉีด corticosteroid เข้าข้อเป็นทางเลือกที่มีประสิทธิภาพสำหรับ flare ข้อเดียวหรือสองข้อ ส่วนฉลาก colchicine ห้ามใช้ร่วม strong CYP3A4/P-gp inhibitor ในผู้ที่ไตหรือตับบกพร่อง\n\nการประยุกต์กับผู้ป่วยจริง: การใช้ warfarin ไม่ใช่ข้อห้ามเด็ดขาดของการเจาะข้อหาก INR อยู่ในช่วงรักษา แต่ควรตรวจ INR ก่อน ใช้เข็มขนาดเล็ก และกดห้ามเลือดนาน หลังฉีดแนะนำพักข้อ 24–48 ชั่วโมง ประคบเย็น เจาะน้ำตาลปลายนิ้วถี่ขึ้น 2–3 วัน และเฝ้าระวังอาการข้อติดเชื้อ ควรวางแผน ULT ต่อเมื่อพ้น flare\n\nการติดตามและสัญญาณอันตราย: ปวดมากขึ้นหลังฉีด 24–48 ชั่วโมง ไข้ หรือข้อบวมแดงมากขึ้นอาจเป็น post-injection flare หรือข้อติดเชื้อ ต้องกลับมาพบแพทย์ ไม่ควรฉีดข้อเดิมบ่อยกว่าทุก 3 เดือน\n\nจุดที่มักสับสนและกับดักข้อสอบ: การเติม PPI ไม่ได้ทำให้ NSAIDs ปลอดภัยต่อไตหรือหมดปัญหากับ warfarin ส่วน colchicine low-dose แม้เป็นขนาดมาตรฐาน แต่กับ clarithromycin + CKD คือ contraindication ส่วน prednisolone 40 mg นาน 10 วันจะทำให้น้ำตาลที่คุมไม่ได้อยู่แล้วแย่ลง\n\nสรุปท่องสอบ: Flare 1–2 ข้อใหญ่ + ข้อห้ามของยาระบบ → intra-articular corticosteroid หลังแยกข้อติดเชื้อ; colchicine + clarithromycin + CKD = ห้าม",
         "choices": [
           {
             "label": "A",
             "text": "Naproxen 500 mg วันละ 2 ครั้ง ร่วมกับ omeprazole 20 mg วันละครั้ง",
-            "explanation": "✗ ผิด — NSAIDs ห้ามใช้ใน eGFR 25, ประวัติเลือดออกทางเดินอาหาร และใช้ร่วมกับ warfarin เพิ่มเสี่ยงเลือดออก แม้ให้ PPI ร่วมก็ไม่แก้ปัญหาไต"
+            "explanation": "✗ ผิด — Naproxen ไม่เหมาะเพราะ eGFR 25 (NSAIDs ลดการไหลเวียนเลือดที่ไตและเสี่ยง AKI) มีประวัติเลือดออกทางเดินอาหาร และใช้ warfarin ร่วมซึ่งเพิ่มความเสี่ยงเลือดออกมาก การเติม omeprazole ลดได้เพียงแผลส่วนบน ไม่แก้ปัญหาไตหรือ antiplatelet effect ข้อนี้จะถูกในผู้ป่วยอายุน้อย ไตปกติ ไม่มีประวัติ GI bleed และไม่ใช้ยาต้านการแข็งตัวของเลือด"
           },
           {
             "label": "B",
             "text": "Colchicine 1.2 mg ทันที ตามด้วย 0.6 mg ในอีก 1 ชั่วโมง",
-            "explanation": "✗ ผิด — Clarithromycin เป็น strong CYP3A4 และ P-gp inhibitor ทำให้ระดับ colchicine สูง ห้ามใช้ร่วมในผู้ป่วยไตเสื่อม เสี่ยงพิษรุนแรง"
+            "explanation": "✗ ผิด — Colchicine ขนาด low-dose (1.2 mg ตามด้วย 0.6 mg) เป็นสูตรมาตรฐาน แต่ผู้ป่วยกำลังได้ clarithromycin ซึ่งยับยั้ง CYP3A4 และ P-gp อย่างแรง ร่วมกับ eGFR 25 ฉลากยาระบุว่าเป็นข้อห้ามใช้ร่วมในผู้ที่ไตหรือตับบกพร่อง เสี่ยงพิษ colchicine ถึงชีวิต ข้อนี้จะถูกหากผู้ป่วยไตปกติ ไม่มียาที่มีปฏิกิริยา และเริ่มยาภายใน 36 ชั่วโมงแรก"
           },
           {
             "label": "C",
             "text": "ฉีด triamcinolone acetonide เข้าข้อเข่าซ้าย",
-            "explanation": "✓ ถูก — สเตียรอยด์เข้าข้อเหมาะกับ flare ข้อใหญ่ 1–2 ข้อ ผลต่อระบบน้อย หลีกเลี่ยงข้อห้ามทั้งหมดของผู้ป่วย"
+            "explanation": "✓ ถูก — Flare เป็นข้อใหญ่ข้อเดียว เพาะเชื้อไม่พบแบคทีเรีย และผู้ป่วยมีข้อห้ามของทั้ง NSAIDs และ colchicine รวมทั้งเบาหวานคุมไม่ดี การฉีด triamcinolone acetonide เข้าข้อให้ยาเข้มข้นเฉพาะที่ ผลต่อระบบน้อย ได้ผลเร็ว เป็นทางเลือกที่ ACR 2020 และ EULAR รองรับ ควรตรวจ INR ก่อนเจาะและเฝ้าน้ำตาล 2–3 วันหลังฉีด"
           },
           {
             "label": "D",
             "text": "Prednisolone 40 mg/วัน รับประทาน 10 วัน",
-            "explanation": "✗ ผิด — สเตียรอยด์รับประทานขนาดสูงนานจะทำให้น้ำตาลในเลือดที่คุมไม่ได้แย่ลง ไม่ใช่ทางเลือกที่ดีที่สุดเมื่อฉีดเข้าข้อได้"
+            "explanation": "✗ ผิด — Prednisolone รับประทานเป็นยาแรกที่ได้ผลดีในผู้ป่วยหลายข้อหรือ CKD แต่ผู้ป่วยรายนี้ HbA1c 9.8% การใช้ 40 mg/วันนาน 10 วันจะทำให้น้ำตาลสูงมากและเสี่ยง hyperosmolar state อีกทั้งข้อเดียวไม่จำเป็นต้องใช้ยาระบบ ข้อนี้จะถูกหากเป็น polyarticular flare ในผู้ป่วยที่ไม่มีเบาหวานหรือน้ำตาลควบคุมได้ดี (ขนาดมาตรฐาน 30–35 mg/วัน 5 วัน)"
           }
         ],
-        "key_takeaway": "ข้อเดียว ข้อใหญ่ ข้อห้ามเยอะ → ฉีด steroid เข้าข้อ"
+        "key_takeaway": "ข้อเดียว ข้อใหญ่ ข้อห้ามเยอะ → ฉีด steroid เข้าข้อ (หลังแยกข้อติดเชื้อแล้ว)"
       }
     },
     {
@@ -125,33 +125,38 @@
       ],
       "correct_answer": "A",
       "difficulty": "medium",
-      "explanation": "ขนาด prednisolone สำหรับ gout flare คือ ~0.5 mg/kg/วัน หรือ 30–35 mg/วัน นาน 5 วัน (หรือ 5–10 วัน) ซึ่งผู้ป่วย 68 kg ได้ประมาณ 34 mg/วัน",
+      "explanation": "ขนาด prednisolone สำหรับ gout flare คือประมาณ 0.5 mg/kg/วัน หรือ 30–35 mg/วัน นาน 5 วัน (EULAR) ผู้ป่วย 68 kg ได้ประมาณ 34 mg/วัน เหมาะเพราะมีข้อห้าม NSAIDs (PUD, CKD) และ colchicine (itraconazole)",
       "detailed_explanation": {
-        "summary": "ขนาด prednisolone สำหรับ gout flare คือ ~0.5 mg/kg/วัน หรือ 30–35 mg/วัน นาน 5 วัน (หรือ 5–10 วัน) ซึ่งผู้ป่วย 68 kg ได้ประมาณ 34 mg/วัน",
-        "reason": "โจทย์ถามอะไร: ขนาดและระยะเวลาของ oral corticosteroid ในการรักษา acute gout flare\n\nหลักการ/กลไกเชิงลึก: Glucocorticoids ยับยั้ง transcription ของ cytokine อักเสบ (IL-1β, TNF) ผ่าน glucocorticoid receptor ลดการเคลื่อนที่ของ neutrophil เข้าข้อ แนวทาง ACR ระบุขนาด prednisone/prednisolone 0.5 mg/kg/วัน นาน 5–10 วัน หรือ 30–35 mg/วัน 5 วัน หรือให้ 2–5 วันแล้วลดขนาดลง 7–10 วัน เหมาะกับ flare หลายข้อซึ่งฉีดเข้าข้อไม่สะดวก\n\nทำไมข้อ A ถูก: คำนวณ: 0.5 mg/kg × 68 kg = 34 mg/วัน → ปัดเป็น 30–35 mg/วัน นาน 5 วัน ได้ผลเทียบเท่า NSAIDs ในการศึกษา RCT (prednisolone 35 mg vs naproxen)\n\nการประยุกต์กับผู้ป่วยจริง: ผู้ป่วยมี flare หลายข้อ มีประวัติแผลในกระเพาะ (เลี่ยง NSAIDs) และได้ itraconazole ซึ่งเป็น strong CYP3A4/P-gp inhibitor (เลี่ยง colchicine) สเตียรอยด์รับประทานระยะสั้นจึงเหมาะที่สุด ควรแนะนำทานหลังอาหารเช้าและติดตามน้ำตาล/ความดัน\n\nจุดที่มักสับสนและกับดักข้อสอบ: ขนาด 5 mg ต่ำเกินไป (เป็นขนาด prophylaxis) ส่วนการให้ขนาดสูงนานหลายสัปดาห์หรือ pulse methylprednisolone เกินความจำเป็นและเพิ่มผลข้างเคียง การหยุดเร็วเกินไป (<5 วัน) อาจเกิด rebound flare\n\nสรุปท่องสอบ: Gout flare: prednisolone 0.5 mg/kg/d (≈30–35 mg) × 5–10 วัน",
+        "summary": "Polyarticular flare + ห้าม NSAIDs (แผลกระเพาะ, eGFR 40) + ห้าม colchicine (itraconazole = strong CYP3A4/P-gp inhibitor ใน CKD) → prednisolone 0.5 mg/kg/วัน (30–35 mg) 5 วัน",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วยมี gout flare หลายข้อ (ข้อเท้าและข้อมือ) แพทย์เลือก prednisolone แล้ว โจทย์ถามขนาดและระยะเวลาที่เหมาะสม ซึ่งต้องรู้ทั้งขนาดตามน้ำหนักและเหตุผลที่ยาอีกสองกลุ่มใช้ไม่ได้\n\nหลักการ/กลไกเชิงลึก: Glucocorticoid จับกับ cytosolic glucocorticoid receptor แล้วเข้าสู่นิวเคลียส ยับยั้ง NF-κB และ AP-1 ลดการถอดรหัส IL-1β, TNF-α, COX-2 และ chemokine ที่ดึง neutrophil เข้าข้อ จึงระงับการอักเสบจากผลึก MSU ได้ใกล้เคียง NSAIDs ในการศึกษาเปรียบเทียบ (เช่น การศึกษาของ Janssen 2008 และ Rainer 2016 ที่ prednisolone 30–35 mg/วันเทียบ naproxen/indomethacin ได้ผลไม่ด้อยกว่า) Prednisolone ดูดซึมดี bioavailability ~80% ครึ่งชีวิตทางชีวภาพ 12–36 ชั่วโมงจึงให้วันละครั้งตอนเช้า ส่วนเหตุผลที่ยาอื่นใช้ไม่ได้ itraconazole ยับยั้ง CYP3A4 และ P-gp อย่างแรงทำให้ colchicine สะสม ประวัติแผลกระเพาะและ eGFR 40 ทำให้ NSAIDs เสี่ยงสูง\n\nทำไมข้อ A ถูก: คำนวณ 68 kg × 0.5 mg/kg = 34 mg/วัน ตรงกับขนาด 30–35 mg/วัน นาน 5 วันตามที่ EULAR 2016 แนะนำ เป็นขนาดที่สูงพอระงับการอักเสบและสั้นพอจนไม่ต้อง taper และไม่กด HPA axis อย่างมีนัยสำคัญ\n\nหลักฐานและแนวทางเวชปฏิบัติ: ACR 2020 แนะนำอย่างหนักให้ glucocorticoid เป็นหนึ่งในยาแรกของ flare และใช้รับประทานได้เมื่อหลายข้อ ACR 2012 ระบุขนาด prednisone 0.5 mg/kg/วัน นาน 5–10 วันแล้วหยุด หรือ 2–5 วันแล้วค่อย ๆ ลดใน 7–10 วัน EULAR 2016 ระบุ prednisolone 30–35 mg/วัน 3–5 วัน ทุกแนวทางเน้นเริ่มยาให้เร็วที่สุด (ภายใน 12–24 ชั่วโมง)\n\nการประยุกต์กับผู้ป่วยจริง: สั่ง prednisolone 5 mg 7 เม็ดหลังอาหารเช้า 5 วัน (หรือ 6 เม็ดถ้าจะใช้ 30 mg) แนะนำรับประทานพร้อมอาหาร ถึงแม้ระยะสั้นแต่ผู้ป่วยมีประวัติแผล จึงควรพิจารณาให้ PPI ร่วมช่วงนี้ ติดตามความดัน น้ำตาลในเลือด และอารมณ์ นอนไม่หลับ ส่วน itraconazole มีผลเพิ่มระดับ methylprednisolone ได้มากกว่า prednisolone จึงไม่ต้องลดขนาด prednisolone แต่ต้องสังเกตผลข้างเคียง\n\nการติดตามและสัญญาณอันตราย: ถ้ามี rebound flare หลังหยุดยา ให้พิจารณาสูตร taper ใน 7–10 วัน อาการถ่ายดำ ปวดท้องรุนแรง น้ำตาลสูงมาก ไข้ หรือข้อไม่ดีขึ้นใน 48–72 ชั่วโมงต้องกลับมาพบแพทย์\n\nจุดที่มักสับสนและกับดักข้อสอบ: 5 mg/วันเป็นขนาดสำหรับ prophylaxis ระหว่างเริ่ม ULT ไม่ใช่รักษา flare ส่วน 60 mg นาน 4 สัปดาห์และ pulse methylprednisolone เป็นขนาดสำหรับ vasculitis หรือ lupus nephritis ไม่ใช่เกาต์ อย่าสับสนสเตียรอยด์ขนาด \"anti-inflammatory\" กับ \"immunosuppressive\"\n\nสรุปท่องสอบ: Gout flare: prednisolone 0.5 mg/kg/วัน (30–35 mg) × 5 วัน; prophylaxis ≤10 mg/วัน; ห้าม colchicine เมื่อมี azole/macrolide ร่วม CKD",
         "choices": [
           {
             "label": "A",
             "text": "Prednisolone 30–35 mg/วัน นาน 5 วัน",
-            "explanation": "✓ ถูก — ขนาด 0.5 mg/kg (68 × 0.5 ≈ 34 mg) นาน 5 วัน ตรงตามแนวทางการรักษา gout flare"
+            "explanation": "✓ ถูก — 68 kg × 0.5 mg/kg = 34 mg/วัน ตรงกับขนาดมาตรฐาน 30–35 mg/วัน นาน 5 วัน (EULAR 2016; ACR 2012 ระบุ 0.5 mg/kg/วัน 5–10 วัน) ได้ผลไม่ด้อยกว่า NSAIDs ระยะสั้นจึงหยุดได้โดยไม่ต้อง taper เหมาะกับผู้ป่วยรายนี้ที่มีข้อห้ามทั้ง NSAIDs และ colchicine ควรให้ PPI ร่วมเพราะมีประวัติแผลและติดตามน้ำตาล"
           },
           {
             "label": "B",
             "text": "Prednisolone 5 mg/วัน นาน 5 วัน",
-            "explanation": "✗ ผิด — 5 mg/วัน เป็นขนาดต่ำเกินไปสำหรับ acute flare (ใกล้เคียงขนาดที่ใช้ป้องกัน flare)"
+            "explanation": "✗ ผิด — Prednisolone 5 mg/วันต่ำเกินไปสำหรับรักษา flare ที่เป็นหลายข้อ ระงับการอักเสบจากผลึก MSU ไม่ได้ ขนาดนี้ (หรือ ≤10 mg/วัน) เป็นขนาดสำหรับป้องกัน flare ระหว่างเริ่ม urate-lowering therapy ในผู้ที่ใช้ colchicine หรือ NSAIDs ไม่ได้ ข้อนี้จะถูกหากโจทย์ถามขนาด prednisolone สำหรับ prophylaxis"
           },
           {
             "label": "C",
             "text": "Prednisolone 60 mg/วัน นาน 4 สัปดาห์ แล้วค่อย ๆ ลดขนาด",
-            "explanation": "✗ ผิด — ขนาดสูงและนานเกินความจำเป็น เพิ่มความเสี่ยง hyperglycemia, ติดเชื้อ, กดแกน HPA"
+            "explanation": "✗ ผิด — Prednisolone 60 mg/วันนาน 4 สัปดาห์แล้วค่อย ๆ ลดเป็นขนาดสูงสำหรับโรค autoimmune ที่รุนแรง เช่น giant cell arteritis หรือ SLE organ-threatening ใช้ในเกาต์จะได้ผลข้างเคียงมากเกินจำเป็น (น้ำตาลสูง กดภูมิ แผลกระเพาะ กด HPA axis) โดยไม่ได้ประโยชน์เพิ่ม ข้อนี้จะถูกในบริบท GCA ที่ไม่มีอาการทางตา"
           },
           {
             "label": "D",
             "text": "Methylprednisolone 1 g IV ทุกวัน นาน 3 วัน",
-            "explanation": "✗ ผิด — Pulse methylprednisolone ใช้ในโรค autoimmune รุนแรง ไม่ใช่ gout flare"
+            "explanation": "✗ ผิด — Pulse methylprednisolone 1 g IV วันละครั้ง 3 วันใช้ในภาวะคุกคามอวัยวะ เช่น lupus nephritis, vasculitis รุนแรง หรือ GCA ที่มีอาการตามัว ไม่ใช่ขนาดสำหรับเกาต์ อีกทั้ง itraconazole ยับยั้ง CYP3A4 ทำให้ระดับ methylprednisolone สูงขึ้นมาก ข้อนี้จะถูกในผู้ป่วย ANCA vasculitis ที่มี rapidly progressive glomerulonephritis"
           }
         ],
-        "key_takeaway": "Pred 0.5 mg/kg (30–35 mg) × 5 วัน = มาตรฐาน gout flare"
+        "key_takeaway": "Pred 0.5 mg/kg (30–35 mg) × 5 วัน = สูตรมาตรฐาน gout flare",
+        "calculation_steps": [
+          "น้ำหนัก 68 kg × 0.5 mg/kg/วัน = 34 mg/วัน",
+          "ปัดเป็นขนาดที่ใช้จริง 30–35 mg/วัน (เช่น prednisolone 5 mg 6–7 เม็ด เช้าครั้งเดียว)",
+          "ระยะเวลา 5 วัน (ACR 2012: 5–10 วันแล้วหยุด หรือ 2–5 วันแล้ว taper 7–10 วัน) → รวม prednisolone ประมาณ 150–175 mg ต่อ course"
+        ]
       }
     },
     {
@@ -176,33 +181,33 @@
       ],
       "correct_answer": "D",
       "difficulty": "medium",
-      "explanation": "ACR 2020 แนะนำ (conditional) ให้ใช้ IL-1 inhibitor เมื่อ colchicine, NSAIDs และ glucocorticoids ไม่ได้ผล ใช้ไม่ได้ หรือมีข้อห้าม เพราะ IL-1β เป็น cytokine หลักของการอักเสบจากผลึก urate",
+      "explanation": "ACR 2020 แนะนำ (conditional) ให้ใช้ IL-1 inhibitor (anakinra, canakinumab) เมื่อ colchicine, NSAIDs และ glucocorticoids ไม่ได้ผล ทนไม่ได้ หรือมีข้อห้าม เพราะ IL-1β จาก NLRP3 inflammasome เป็น cytokine หลักของการอักเสบจากผลึก urate",
       "detailed_explanation": {
-        "summary": "ACR 2020 แนะนำ (conditional) ให้ใช้ IL-1 inhibitor เมื่อ colchicine, NSAIDs และ glucocorticoids ไม่ได้ผล ใช้ไม่ได้ หรือมีข้อห้าม เพราะ IL-1β เป็น cytokine หลักของการอักเสบจากผลึก urate",
-        "reason": "โจทย์ถามอะไร: ทางเลือกการรักษา gout flare เมื่อยาทางเลือกแรกทั้งสามกลุ่มมีข้อห้าม\n\nหลักการ/กลไกเชิงลึก: ผลึก MSU กระตุ้น NLRP3 inflammasome → caspase-1 ตัด pro-IL-1β เป็น IL-1β ที่ออกฤทธิ์ จึงเป็นตัวขับเคลื่อนหลักของ gout flare การยับยั้ง IL-1 (anakinra = IL-1 receptor antagonist 100 mg SC วันละครั้ง 3 วัน; canakinumab = anti-IL-1β monoclonal antibody 150 mg SC ครั้งเดียว) ลดอาการปวดได้รวดเร็ว\n\nทำไมข้อ D ถูก: ผู้ป่วยมีข้อห้ามทั้ง NSAIDs (HF, CKD), colchicine (เคย myopathy + ไตเสื่อม) และ systemic steroid (HHS) หลายข้อจนฉีดเข้าข้อทุกข้อไม่สะดวก ACR 2020 จึงแนะนำ IL-1 inhibitor เป็นทางเลือก\n\nการประยุกต์กับผู้ป่วยจริง: ก่อนให้ต้องคัดกรองการติดเชื้อที่กำลังเป็นอยู่ (contraindication) และพิจารณา TB/HBV โดยเฉพาะ canakinumab ซึ่งออกฤทธิ์ยาว; anakinra ขับทางไต ใน CrCl <30 อาจให้วันเว้นวัน ยากลุ่มนี้ราคาสูงและไม่ใช่ยาบัญชียาหลักทั่วไป\n\nจุดที่มักสับสนและกับดักข้อสอบ: TNF inhibitor, IL-6 inhibitor และ rituximab ใช้ใน RA/AS แต่ไม่มีบทบาทใน gout flare ข้อสอบมักวาง biologic ที่คุ้นเคยเป็นตัวลวง ต้องจำว่า gout = IL-1\n\nสรุปท่องสอบ: Gout flare ที่ยาแนวแรกใช้ไม่ได้ → IL-1 inhibitor (anakinra / canakinumab)",
+        "summary": "ผู้ป่วยมีข้อห้ามครบทั้งสามกลุ่ม (HF + CKD → NSAIDs; myopathy + CKD → colchicine; HHS จากสเตียรอยด์ → glucocorticoid) จึงเหลือ IL-1 inhibitor ตาม ACR 2020 ส่วน TNF, IL-6 และ CD20 ไม่มีที่ใช้ในเกาต์",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วย polyarticular gout flare ที่มีข้อห้ามของยาแรกทั้งสามกลุ่ม คือ heart failure EF 30% และ eGFR 22 (ห้าม NSAIDs) ประวัติ colchicine myopathy ร่วมกับ CKD (ห้าม colchicine) และเคยเกิด hyperosmolar hyperglycemic state จากสเตียรอยด์ (ห้าม glucocorticoid ระบบ และหลายข้อจึงฉีดเข้าข้อไม่สะดวก) โจทย์ถามว่ายากลุ่ม biologic ใดเหมาะตามแนวทาง ACR 2020\n\nหลักการ/กลไกเชิงลึก: ผลึก MSU ถูก macrophage กลืนแล้วทำให้ lysosome แตก ปล่อย cathepsin และเกิด K+ efflux กระตุ้น NLRP3 inflammasome ประกอบกับ ASC และ pro-caspase-1 → caspase-1 ตัด pro-IL-1β เป็น IL-1β ที่ออกฤทธิ์ (signal 1 มาจาก TLR/NF-κB เช่นกรดไขมันอิสระหลังมื้อใหญ่หรือแอลกอฮอล์) IL-1β จับ IL-1R1 บน endothelium และเซลล์อื่นทำให้มี adhesion molecule, chemokine (IL-8/CXCL8) และ neutrophil ไหลเข้าข้อ การบล็อก IL-1 จึงตัดวงจรตรงจุด Anakinra เป็น recombinant IL-1 receptor antagonist ครึ่งชีวิต 4–6 ชั่วโมง ให้ 100 mg SC วันละครั้ง 3–5 วัน (CrCl <30 พิจารณาให้วันเว้นวัน) ส่วน canakinumab เป็น monoclonal antibody ต่อ IL-1β ครึ่งชีวิต ~26 วัน ให้ 150 mg SC ครั้งเดียว\n\nทำไมข้อ D ถูก: IL-1 inhibitor เป็นกลุ่มเดียวในตัวเลือกที่มีหลักฐานลด flare (เช่น β-RELIEVED trials ของ canakinumab เทียบ triamcinolone IM) และได้รับการแนะนำโดย ACR 2020 สำหรับผู้ที่ยาแรกใช้ไม่ได้ ทั้งไม่กระทบไต ไม่เพิ่มน้ำตาล และไม่ทำให้ HF แย่ลง\n\nหลักฐานและแนวทางเวชปฏิบัติ: ACR 2020 แนะนำ (conditional) ให้ใช้ IL-1 inhibition ในผู้ที่ anti-inflammatory therapy ไม่ได้ผล ทนไม่ได้ หรือมีข้อห้าม US FDA อนุมัติ canakinumab สำหรับรักษา gout flare ในผู้ใหญ่ที่ใช้ NSAIDs และ colchicine ไม่ได้หรือไม่เหมาะ และไม่ควรใช้ glucocorticoid ซ้ำ (2023) ส่วน anakinra ใช้นอกข้อบ่งใช้แต่มีข้อมูลจาก RCT เทียบกับ triamcinolone IM (anaGO) และเทียบกับยามาตรฐาน (Janssen 2019) ว่าได้ผลไม่ด้อยกว่า\n\nการประยุกต์กับผู้ป่วยจริง: ก่อนให้ต้องคัดกรองการติดเชื้อที่ยังมีอยู่ ตรวจ CBC และพิจารณาคัดกรองวัณโรค/ไวรัสตับอักเสบบีโดยเฉพาะหากใช้ซ้ำ สอนผู้ป่วยฉีดใต้ผิวหนัง เก็บยาในตู้เย็น 2–8°C ไม่ใช้ร่วมกับ TNF inhibitor และหลีกเลี่ยง live vaccine\n\nการติดตามและสัญญาณอันตราย: เฝ้าระวังไข้ ไอ ปัสสาวะแสบขัด ผื่นบริเวณที่ฉีด neutropenia และติดเชื้อรุนแรง โดยเฉพาะ canakinumab ที่ออกฤทธิ์นานนับสัปดาห์ หลังพ้น flare ต้องวางแผน ULT เพื่อแก้ที่สาเหตุ\n\nจุดที่มักสับสนและกับดักข้อสอบ: TNF inhibitor, tocilizumab และ rituximab เป็น biologic ที่คุ้นเคยจาก RA จึงเป็นตัวลวง แต่ไม่มีบทบาทในเกาต์ นอกจากนี้ TNF inhibitor ขนาดสูงห้ามใช้ใน HF NYHA III–IV อีกด้วย อย่าจำผิดว่า pegloticase เป็นยารักษา flare เพราะ pegloticase เป็น ULT สำหรับ refractory gout\n\nสรุปท่องสอบ: ยาแรก flare = colchicine / NSAIDs / glucocorticoid; ใช้ไม่ได้ทั้งหมด → IL-1 inhibitor (anakinra, canakinumab) ตาม NLRP3–IL-1β pathway",
         "choices": [
           {
             "label": "A",
             "text": "TNF-α inhibitor เช่น infliximab",
-            "explanation": "✗ ผิด — Anti-TNF ใช้ใน RA, AS, IBD ไม่มีหลักฐานและไม่แนะนำในการรักษา gout flare"
+            "explanation": "✗ ผิด — Infliximab เป็น TNF-α inhibitor ที่ใช้ใน RA, spondyloarthritis และ IBD แต่ไม่มีหลักฐานหรือคำแนะนำให้ใช้รักษา gout flare เพราะ cytokine หลักของเกาต์คือ IL-1β ยิ่งไปกว่านั้น infliximab ขนาด >5 mg/kg เป็นข้อห้ามใน HF NYHA III–IV และผู้ป่วยมี EF 30% ข้อนี้จะถูกหากเป็น ankylosing spondylitis ที่ล้มเหลวจาก NSAIDs สองตัว"
           },
           {
             "label": "B",
             "text": "IL-6 receptor antagonist เช่น tocilizumab",
-            "explanation": "✗ ผิด — Tocilizumab ใช้ใน RA และ giant cell arteritis ไม่ใช่ยามาตรฐานของ gout flare"
+            "explanation": "✗ ผิด — Tocilizumab บล็อก IL-6 receptor ใช้ใน RA, giant cell arteritis และ cytokine release syndrome ไม่มีที่ใช้ในเกาต์ IL-6 เป็นเพียง cytokine ปลายน้ำ การบล็อกจึงไม่ตัดวงจร NLRP3–IL-1β ที่เป็นต้นเหตุ ทั้งยังเพิ่มไขมันและเสี่ยงลำไส้ทะลุ ข้อนี้จะถูกในผู้ป่วย GCA ที่ต้องการลดการใช้สเตียรอยด์ (steroid-sparing)"
           },
           {
             "label": "C",
             "text": "Anti-CD20 เช่น rituximab",
-            "explanation": "✗ ผิด — Rituximab ทำลาย B cell ใช้ใน RA/vasculitis ไม่เกี่ยวกับกลไก inflammasome ของเกาต์"
+            "explanation": "✗ ผิด — Rituximab ทำลาย B cell ที่มี CD20 ใช้ใน RA ที่ seropositive, ANCA-associated vasculitis และ lymphoma ซึ่งเป็นโรคที่ขับเคลื่อนด้วย autoantibody แต่เกาต์เป็น innate immune/autoinflammatory disease ไม่เกี่ยวกับ B cell จึงไม่ได้ผล และออกฤทธิ์ช้าหลายสัปดาห์ ข้อนี้จะถูกในการ induction ของ GPA หรือ RA ที่ล้มเหลวจาก TNF inhibitor"
           },
           {
             "label": "D",
             "text": "IL-1 inhibitor เช่น anakinra หรือ canakinumab",
-            "explanation": "✓ ถูก — IL-1β คือ cytokine หลักของ gout flare; ACR 2020 แนะนำ IL-1 inhibitor เมื่อยาแนวแรกมีข้อห้าม"
+            "explanation": "✓ ถูก — ผู้ป่วยมีข้อห้ามครบทั้ง NSAIDs (HF, eGFR 22), colchicine (myopathy + CKD) และ glucocorticoid (เคยเกิด HHS) ACR 2020 จึงแนะนำ IL-1 inhibitor เช่น anakinra 100 mg SC วันละครั้ง 3–5 วัน (CrCl <30 ให้วันเว้นวัน) หรือ canakinumab 150 mg SC ครั้งเดียว ตรงกับพยาธิกำเนิด NLRP3–IL-1β ต้องคัดกรองการติดเชื้อก่อนให้"
           }
         ],
-        "key_takeaway": "Gout คือโรคของ IL-1β → biologic ที่ใช้คือ anakinra/canakinumab"
+        "key_takeaway": "Gout คือโรคของ IL-1β → biologic สำหรับ flare คือ anakinra/canakinumab"
       }
     },
     {
@@ -227,33 +232,33 @@
       ],
       "correct_answer": "B",
       "difficulty": "easy",
-      "explanation": "ACR 2020 แนะนำอย่างหนัก (strong) ให้เริ่ม ULT เมื่อมี tophus ≥1 ก้อน หรือมีความเสียหายของข้อจากภาพรังสี หรือ flare ≥2 ครั้ง/ปี",
+      "explanation": "ACR 2020 แนะนำอย่างหนัก (strong) ให้เริ่ม ULT เมื่อมี tophus ≥1 ก้อน หรือมีความเสียหายของข้อจากภาพรังสี หรือ flare ≥2 ครั้ง/ปี โดยไม่ต้องรอให้ flare บ่อยหรือ urate สูงถึงเกณฑ์ใด",
       "detailed_explanation": {
-        "summary": "ACR 2020 แนะนำอย่างหนัก (strong) ให้เริ่ม ULT เมื่อมี tophus ≥1 ก้อน หรือมีความเสียหายของข้อจากภาพรังสี หรือ flare ≥2 ครั้ง/ปี",
-        "reason": "โจทย์ถามอะไร: ข้อบ่งใช้ในการเริ่ม ULT ตามแนวทาง ACR 2020\n\nหลักการ/กลไกเชิงลึก: Tophus คือก้อนผลึก MSU ที่สะสมในเนื้อเยื่อ แสดงว่าภาระผลึกในร่างกาย (urate burden) สูงมาก การลด serum urate ให้ต่ำกว่าจุดอิ่มตัวต่อเนื่องจะทำให้ผลึกละลายและ tophus ยุบลง ACR 2020 strong indications: (1) tophus ≥1 ก้อน (2) radiographic damage จากเกาต์ (3) flare บ่อย ≥2 ครั้ง/ปี\n\nทำไมข้อ B ถูก: ผู้ป่วยมี tophus ที่ใบหูและข้อศอก จึงเข้าเกณฑ์ strong indication ทันทีโดยไม่ต้องดูจำนวน flare หรือระดับ urate\n\nการประยุกต์กับผู้ป่วยจริง: ควรเริ่ม allopurinol ขนาดต่ำ (≤100 mg/วัน) แล้วปรับขึ้นทุก 2–5 สัปดาห์ (treat-to-target) พร้อมให้ยาป้องกัน flare ร่วม 3–6 เดือน และสามารถเริ่ม ULT ได้แม้ระหว่างมี flare\n\nจุดที่มักสับสนและกับดักข้อสอบ: ตัวลวงคือจำนวน flare <2 ครั้ง/ปี ซึ่งเป็นเพียงเกณฑ์หนึ่ง ไม่ต้องครบทุกข้อ ส่วน serum urate >9 mg/dL เป็นเกณฑ์ conditional สำหรับผู้ป่วย flare ครั้งแรกเท่านั้น\n\nสรุปท่องสอบ: Strong ULT = Tophus / X-ray damage / Flare ≥2 ครั้งต่อปี (มีข้อใดข้อหนึ่งก็พอ)",
+        "summary": "ข้อบ่งใช้ strong ของ ULT ตาม ACR 2020 มี 3 ข้อ: tophus ≥1, radiographic damage, flare ≥2/ปี ผู้ป่วยมี tophus หลายก้อนจึงควรเริ่ม ULT เลยแม้ flare เพียงปีละครั้ง",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วยเกาต์ที่ flare ไม่บ่อย (ปีละครั้ง) แต่ตรวจพบ tophus ที่ใบหูและข้อศอก ถามว่าจำเป็นต้องเริ่มยาลดกรดยูริก (ULT) หรือไม่ ซึ่งทดสอบความรู้เรื่องข้อบ่งใช้การเริ่ม ULT ตาม ACR 2020 ที่ต้องท่องให้แม่น\n\nหลักการ/กลไกเชิงลึก: Tophus คือก้อนผลึก MSU ที่สะสมในเนื้อเยื่อล้อมรอบด้วย granuloma ของ macrophage และ multinucleated giant cell เป็นหลักฐานว่าร่างกายมีคลังผลึก urate (urate pool) จำนวนมาก tophus ก่อการอักเสบเรื้อรังระดับต่ำ กัดกร่อนกระดูกจนเกิด punched-out erosion ที่มีขอบยื่น (overhanging edge) ทำให้ข้อพิการถาวร ผลึกจะละลายได้ก็ต่อเมื่อ serum urate ต่ำกว่าจุดอิ่มตัว (6.8 mg/dL) อย่างต่อเนื่อง ยิ่ง urate ต่ำ tophus ยิ่งยุบเร็ว ดังนั้นการมี tophus บ่งว่าโรคเข้าสู่ระยะ chronic tophaceous gout ซึ่งการรักษาแค่ flare ไม่เพียงพอ ต้องลดคลัง urate ด้วย ULT\n\nทำไมข้อ B ถูก: ACR 2020 แนะนำอย่างหนักให้เริ่ม ULT ในผู้ที่มี subcutaneous tophi ≥1 ก้อน ไม่ว่าจะ flare บ่อยแค่ไหน ผู้ป่วยรายนี้มี tophus อย่างน้อยสองตำแหน่ง จึงมีข้อบ่งใช้ชัดเจน\n\nหลักฐานและแนวทางเวชปฏิบัติ: ACR 2020 Gout Guideline (FitzGerald et al.) ระบุข้อบ่งใช้ strong 3 ข้อคือ (1) tophus ≥1 ก้อน (2) ภาพรังสีพบความเสียหายของข้อจากเกาต์ (3) flare ≥2 ครั้งต่อปี และข้อบ่งใช้ conditional เช่น flare >1 ครั้งแต่ <2 ครั้งต่อปี หรือ flare ครั้งแรกร่วมกับ CKD ≥ stage 3, serum urate >9 mg/dL หรือนิ่วในไต ส่วนแนวทาง EULAR 2016 แนะนำพิจารณา ULT ตั้งแต่วินิจฉัย โดยเฉพาะผู้ที่มี tophi, arthropathy หรือ flare บ่อย\n\nการประยุกต์กับผู้ป่วยจริง: เลือก allopurinol เป็นยาแรก (หลังตรวจ HLA-B*5801 ในผู้ป่วยเชื้อสายเอเชีย) เริ่ม ≤100 mg/วัน ปรับเพิ่มทุก 2–5 สัปดาห์ เป้าหมาย serum urate <6 mg/dL ร่วมกับยาป้องกัน flare 3–6 เดือน อธิบายผู้ป่วยว่า tophus จะค่อย ๆ ยุบใช้เวลาหลายเดือนถึงหลายปี และช่วงแรกอาจ flare มากขึ้นจากผลึกที่หลุดออก ไม่ได้แปลว่ายาไม่ได้ผล\n\nการติดตามและสัญญาณอันตราย: ตรวจ serum urate ทุก 2–5 สัปดาห์ระหว่างปรับยา แล้วทุก 6 เดือน ติดตามขนาด tophus ผื่น ไข้ แผลในปาก (สงสัย SCAR) และ tophus ที่แตกมีหนอง (ติดเชื้อซ้ำ)\n\nจุดที่มักสับสนและกับดักข้อสอบ: หลายคนจำเพียง \"flare ≥2 ครั้ง/ปี\" จึงตอบว่ายังไม่ต้องเริ่ม ซึ่งผิด เพราะ tophus เป็นข้อบ่งใช้อิสระ และไม่มีเกณฑ์ว่า urate ต้องเกิน 9 mg/dL ก่อนเริ่ม (urate >9 เป็นเพียง conditional หลัง flare ครั้งแรก)\n\nสรุปท่องสอบ: ULT strong = Tophus ≥1, X-ray damage, Flare ≥2/ปี (จำ \"T-X-F\") เป้าหมาย urate <6 (<5 ถ้ามี tophus ใหญ่ตาม EULAR)",
         "choices": [
           {
             "label": "A",
             "text": "ยังไม่จำเป็น เพราะ flare น้อยกว่า 2 ครั้งต่อปี",
-            "explanation": "✗ ผิด — Flare ≥2 ครั้ง/ปี เป็นเพียงหนึ่งในเกณฑ์ การมี tophus ก็เพียงพอให้เริ่ม ULT แล้ว"
+            "explanation": "✗ ผิด — Flare ≥2 ครั้งต่อปีเป็นเพียงหนึ่งในสามข้อบ่งใช้แบบ strong ส่วน tophus ≥1 ก้อนเป็นข้อบ่งใช้อิสระ จึงไม่ต้องรอให้ flare บ่อยก่อน การรอจะทำให้ tophus โตและข้อเสียหายถาวร ข้อนี้จะใกล้เคียงความจริงหากผู้ป่วยไม่มี tophus ไม่มีความเสียหายจากภาพรังสี และ flare เพียงครั้งเดียวโดยไม่มี CKD, urate >9 หรือนิ่ว (ACR แนะนำไม่เริ่ม conditional)"
           },
           {
             "label": "B",
             "text": "ควรเริ่ม urate-lowering therapy (ULT) เลย เพราะมี tophus อย่างน้อย 1 ก้อน (strong recommendation)",
-            "explanation": "✓ ถูก — การมี tophus ≥1 ก้อนเป็น strong indication ในการเริ่ม ULT ตาม ACR 2020"
+            "explanation": "✓ ถูก — ACR 2020 แนะนำอย่างหนักให้เริ่ม ULT เมื่อมี subcutaneous tophus ≥1 ก้อน เพราะบ่งชี้คลังผลึก urate ขนาดใหญ่ซึ่งต้องลด serum urate ให้ <6 mg/dL ต่อเนื่องจึงจะละลาย ผู้ป่วยมี tophus ที่ใบหูและข้อศอก จึงควรเริ่ม allopurinol ขนาดต่ำแล้ว titrate ร่วมกับยาป้องกัน flare 3–6 เดือน"
           },
           {
             "label": "C",
             "text": "เริ่ม ULT เฉพาะเมื่อ serum urate มากกว่า 9 mg/dL",
-            "explanation": "✗ ผิด — Serum urate >9 mg/dL เป็นเกณฑ์ conditional ในผู้ป่วยที่มี flare ครั้งแรก ไม่ใช่เงื่อนไขบังคับในผู้มี tophus"
+            "explanation": "✗ ผิด — แนวทาง ACR 2020 ไม่ได้กำหนดว่าต้องมี serum urate >9 mg/dL ก่อนเริ่ม ULT เมื่อมีข้อบ่งใช้ strong แล้ว ค่า 9 mg/dL ถูกใช้เป็นเพียงเกณฑ์ conditional ในผู้ที่ flare ครั้งแรกว่าอาจพิจารณาเริ่ม ULT ข้อนี้จะเกี่ยวข้องหากเป็นผู้ป่วย flare ครั้งแรกไม่มี tophus ที่มี urate >9 mg/dL"
           },
           {
             "label": "D",
             "text": "ให้ปรับพฤติกรรมอย่างเดียวก่อน 1 ปี แล้วจึงประเมินใหม่",
-            "explanation": "✗ ผิด — การรอ 1 ปีทำให้ tophus และการทำลายข้อลุกลาม ปรับพฤติกรรมอย่างเดียวลด urate ได้ไม่พอ"
+            "explanation": "✗ ผิด — การปรับพฤติกรรมช่วยลด urate ได้เพียง 1–2 mg/dL และไม่เพียงพอสำหรับละลาย tophus การรอ 1 ปีทำให้ผลึกสะสมเพิ่มและกระดูกถูกกัดกร่อน ACR 2020 แนะนำให้ปรับพฤติกรรมควบคู่กับยา ไม่ใช่แทนยา ข้อนี้จะเหมาะกับผู้ป่วย asymptomatic hyperuricemia ที่ไม่เคยมีข้ออักเสบหรือ tophus"
           }
         ],
-        "key_takeaway": "มี tophus แม้ก้อนเดียว = เริ่ม ULT"
+        "key_takeaway": "มี tophus แม้ก้อนเดียว = เริ่ม ULT (strong) ไม่ต้องรอ flare บ่อย"
       }
     },
     {
@@ -278,33 +283,33 @@
       ],
       "correct_answer": "C",
       "difficulty": "easy",
-      "explanation": "ACR 2020 แนะนำ (conditional) ไม่ให้เริ่ม ULT ในภาวะกรดยูริกสูงที่ไม่มีอาการ (asymptomatic hyperuricemia) แนะนำเพียงปรับพฤติกรรม",
+      "explanation": "ACR 2020 แนะนำ (conditional) ไม่ให้เริ่ม ULT ในภาวะกรดยูริกสูงที่ไม่มีอาการ (asymptomatic hyperuricemia) ไม่ว่าระดับ urate เท่าใด เพราะประโยชน์ไม่คุ้มความเสี่ยงและค่าใช้จ่าย แนะนำเพียงปรับพฤติกรรมและจัดการโรคร่วม",
       "detailed_explanation": {
-        "summary": "ACR 2020 แนะนำ (conditional) ไม่ให้เริ่ม ULT ในภาวะกรดยูริกสูงที่ไม่มีอาการ (asymptomatic hyperuricemia) แนะนำเพียงปรับพฤติกรรม",
-        "reason": "โจทย์ถามอะไร: การจัดการภาวะ asymptomatic hyperuricemia\n\nหลักการ/กลไกเชิงลึก: ผู้ที่มี serum urate สูงแต่ไม่มีอาการส่วนใหญ่ (มากกว่าครึ่ง) ไม่เคยเกิดเกาต์ตลอดชีวิต การให้ ULT จึงมี number needed to treat สูง และเสี่ยงผลข้างเคียง เช่น allopurinol hypersensitivity syndrome ข้อมูลที่ว่า ULT ชะลอ CKD หรือลดโรคหัวใจยังไม่ชัดเจน (เช่น การศึกษา CKD-FIX ไม่พบประโยชน์ต่อการชะลอไตเสื่อม)\n\nทำไมข้อ C ถูก: ผู้ป่วยไม่มีข้ออักเสบ ไม่มีนิ่ว ไม่มี tophus จึงไม่มีข้อบ่งใช้ ULT ควรแนะนำลดน้ำหนัก ลดแอลกอฮอล์ เครื่องดื่มที่มี fructose สูง และเนื้อสัตว์/อาหารทะเลที่มี purine สูง\n\nการประยุกต์กับผู้ป่วยจริง: ควรประเมินปัจจัยร่วมที่ทำให้ urate สูง เช่น ยาขับปัสสาวะ ภาวะ metabolic syndrome ความดันโลหิตสูง และติดตามเป็นระยะ หากเกิด flare ภายหลังจึงประเมินข้อบ่งใช้ ULT ใหม่\n\nจุดที่มักสับสนและกับดักข้อสอบ: ตัวลวงคือคิดว่า urate สูงกว่า 9 ต้องรักษาเสมอ ซึ่งเกณฑ์ >9 ใช้กับผู้ที่มี flare ครั้งแรกแล้วเท่านั้น และในบางประเทศ (เช่น ญี่ปุ่น) อาจรักษา แต่ ACR 2020 แนะนำไม่ให้เริ่ม\n\nสรุปท่องสอบ: ไม่มีอาการ = ไม่ให้ ULT (ACR 2020 conditional against) → lifestyle",
+        "summary": "Asymptomatic hyperuricemia (ไม่เคยมีข้ออักเสบ, tophus หรือนิ่ว) → ไม่เริ่มยาลดกรดยูริก แต่ปรับพฤติกรรม ลดน้ำหนัก และคัดกรอง metabolic syndrome",
+        "reason": "โจทย์ถามอะไร: ชายวัยกลางคนตรวจสุขภาพพบ serum urate 9.5 mg/dL แต่ไม่เคยมีข้ออักเสบ ไม่มี tophus และไม่มีนิ่ว ไตปกติ มีน้ำหนักเกิน โจทย์ถามว่าควรเริ่มยาลดกรดยูริกหรือไม่ ซึ่งทดสอบความเข้าใจเรื่อง asymptomatic hyperuricemia ที่พบบ่อยมากในร้านยาและคลินิกตรวจสุขภาพ\n\nหลักการ/กลไกเชิงลึก: Hyperuricemia นิยามเมื่อ serum urate >6.8 mg/dL (จุดอิ่มตัวทางเคมี) แต่ผู้ที่มี urate สูงส่วนใหญ่ (ประมาณ 2 ใน 3 ถึง 3 ใน 4) ไม่เคยเกิดเกาต์ตลอดชีวิต การตกผลึกขึ้นกับปัจจัยอื่นด้วย เช่น อุณหภูมิ pH การบาดเจ็บของกระดูกอ่อน และ nucleating factors สาเหตุหลักของ urate สูงคือไตขับออกน้อย (underexcretion ~90%) ผ่าน URAT1/GLUT9 ซึ่งได้รับอิทธิพลจาก insulin resistance โรคอ้วน แอลกอฮอล์ และฟรุกโตส ส่วนความสัมพันธ์ระหว่าง urate กับความดัน CKD และโรคหัวใจยังเป็น association ที่ RCT ยังพิสูจน์ไม่ได้ว่าการลด urate ช่วยได้\n\nทำไมข้อ C ถูก: ACR 2020 แนะนำไม่ให้เริ่ม ULT ใน asymptomatic hyperuricemia (urate >6.8 mg/dL ที่ไม่เคยมี flare หรือ tophus) ผู้ป่วยรายนี้จึงควรได้รับคำแนะนำปรับพฤติกรรม ลดน้ำหนัก ลดเครื่องดื่มหวานและแอลกอฮอล์ และคัดกรองความดัน น้ำตาล ไขมัน ซึ่งเป็นโรคร่วมที่พบบ่อย\n\nหลักฐานและแนวทางเวชปฏิบัติ: ACR 2020 Gout Guideline ให้เหตุผลว่าความเสี่ยงต่อปีที่จะเกิดเกาต์ต่ำ (แม้ urate ≥9 ก็ราว 5% ต่อปี) และยามีความเสี่ยง เช่น allopurinol hypersensitivity RCT สำคัญอย่าง CKD-FIX (allopurinol ใน CKD ระยะ 3–4) และ PERL (ผู้ป่วยเบาหวานชนิดที่ 1) พบว่าการลด urate ไม่ชะลอการเสื่อมของไต ส่วน FAST/CARES ไม่ได้แสดงประโยชน์ด้านหัวใจ แนวทาง EULAR ก็ไม่แนะนำการรักษา asymptomatic hyperuricemia เช่นกัน\n\nการประยุกต์กับผู้ป่วยจริง: อธิบายผู้ป่วยว่า \"ค่ากรดยูริกสูงยังไม่ใช่โรคเกาต์ ยายังไม่จำเป็น\" แนะนำลดน้ำหนักช้า ๆ ลดน้ำอัดลม/น้ำผลไม้ใส่น้ำตาล เบียร์และเหล้า ลดเครื่องในสัตว์และอาหารทะเลปริมาณมาก ดื่มน้ำเพียงพอ ออกกำลังกาย ทบทวนยาที่เพิ่ม urate เช่น thiazide หรือ loop diuretic ถ้ามี และนัดตรวจ urate ซ้ำร่วมกับ metabolic profile\n\nการติดตามและสัญญาณอันตราย: หากมีข้ออักเสบเฉียบพลัน (โดยเฉพาะนิ้วหัวแม่เท้า) ปวดเอวร้าวลงขาหนีบหรือปัสสาวะเป็นเลือด (นิ่ว) หรือคลำพบก้อนที่ใบหู/ข้อศอก ให้กลับมาพบแพทย์เพื่อประเมินใหม่\n\nจุดที่มักสับสนและกับดักข้อสอบ: ตัวเลข 9.5 mg/dL ล่อให้คิดว่าสูงพอจะต้องให้ยา แต่ระดับไม่ได้เปลี่ยนคำแนะนำหากไม่มีอาการ ข้อยกเว้นเฉพาะคือการป้องกัน tumor lysis syndrome ในผู้ป่วยมะเร็ง ซึ่งเป็นข้อบ่งใช้คนละบริบท และบางประเทศในเอเชีย (เช่นญี่ปุ่น) มีแนวทางที่ต่างออกไป แต่ข้อสอบอิง ACR\n\nสรุปท่องสอบ: Asymptomatic hyperuricemia → no ULT (ACR 2020 conditional against) → lifestyle + คัดกรอง metabolic syndrome; เริ่มยาเมื่อมีเกาต์ที่มีข้อบ่งใช้หรือป้องกัน TLS",
         "choices": [
           {
             "label": "A",
             "text": "เริ่ม allopurinol 100 mg/วัน เพื่อป้องกันการเกิดเกาต์",
-            "explanation": "✗ ผิด — Asymptomatic hyperuricemia ไม่มีข้อบ่งใช้ ULT ตาม ACR 2020 และ allopurinol มีความเสี่ยง SCAR"
+            "explanation": "✗ ผิด — ACR 2020 แนะนำไม่ให้เริ่ม allopurinol ใน asymptomatic hyperuricemia เพราะผู้ที่ urate สูงส่วนใหญ่ไม่เกิดเกาต์ และการใช้ยามีความเสี่ยง SJS/TEN/DRESS ซึ่งรุนแรงถึงชีวิต (โดยเฉพาะในคนไทยที่มี HLA-B*5801) ข้อนี้จะถูกหากผู้ป่วยเป็นเกาต์ที่มีข้อบ่งใช้ ULT เช่น tophus หรือ flare ≥2 ครั้งต่อปี หรือใช้ป้องกัน tumor lysis syndrome ก่อนเคมีบำบัด"
           },
           {
             "label": "B",
             "text": "เริ่ม febuxostat 40 mg/วัน เพื่อป้องกันโรคไตเรื้อรัง",
-            "explanation": "✗ ผิด — ยังไม่มีหลักฐานเพียงพอว่า ULT ชะลอ CKD ในผู้ไม่มีอาการ และ febuxostat มีคำเตือนด้าน CV"
+            "explanation": "✗ ผิด — RCT เช่น FEATHER (febuxostat ใน CKD stage 3 ที่มี hyperuricemia ไม่มีอาการ) และ CKD-FIX (allopurinol) ไม่พบว่าการลด urate ชะลอการเสื่อมของไต ผู้ป่วยรายนี้ไตปกติด้วย การใช้ febuxostat จึงไม่มีข้อบ่งใช้และมีคำเตือนด้านหัวใจ ข้อนี้จะเหมาะเฉพาะเมื่อผู้ป่วยเป็นเกาต์ที่มีข้อบ่งใช้ ULT แต่ใช้ allopurinol ไม่ได้ เช่น HLA-B*5801 บวก"
           },
           {
             "label": "C",
             "text": "ไม่ต้องเริ่มยาลดกรดยูริก แนะนำปรับพฤติกรรมและควบคุมน้ำหนัก",
-            "explanation": "✓ ถูก — ACR 2020 แนะนำไม่เริ่ม ULT ในผู้ไม่มีอาการ ให้ปรับพฤติกรรมและติดตาม"
+            "explanation": "✓ ถูก — ผู้ป่วยไม่เคยมีข้ออักเสบ ไม่มี tophus ไม่มีนิ่ว จึงเป็น asymptomatic hyperuricemia ACR 2020 แนะนำไม่เริ่ม ULT ให้ปรับพฤติกรรม ลดน้ำหนัก ลดเครื่องดื่มหวาน/แอลกอฮอล์ และคัดกรองโรคร่วม เช่น ความดันสูง เบาหวาน ไขมันผิดปกติ ซึ่งพบร่วมกับ urate สูงบ่อย และให้ความรู้ว่าอาการแบบใดควรกลับมาพบแพทย์"
           },
           {
             "label": "D",
             "text": "เริ่ม probenecid 250 mg วันละ 2 ครั้ง เพราะไตทำงานปกติ",
-            "explanation": "✗ ผิด — แม้ไตปกติก็ไม่มีข้อบ่งใช้ ULT และ probenecid ยังเพิ่มความเสี่ยงนิ่วกรดยูริก"
+            "explanation": "✗ ผิด — Probenecid เป็น uricosuric ที่เพิ่มการขับกรดยูริกทางปัสสาวะ ไม่มีข้อบ่งใช้ใน asymptomatic hyperuricemia และเพิ่มความเสี่ยงนิ่วกรดยูริก การที่ไตปกติเป็นเพียงเงื่อนไขให้ยาได้ผล ไม่ใช่เหตุผลให้เริ่มยา ข้อนี้จะเหมาะในผู้ป่วยเกาต์ที่ใช้ XOI ไม่ได้หรือใช้แล้วยังไม่ถึงเป้า มี CrCl ≥50 และไม่มีประวัตินิ่ว"
           }
         ],
-        "key_takeaway": "Urate สูงแต่ไม่มีอาการ → ไม่ต้องให้ยา"
+        "key_takeaway": "Urate สูงแต่ไม่มีอาการ → ไม่ต้องให้ยา แก้ที่พฤติกรรมและโรคร่วม"
       }
     },
     {
@@ -329,33 +334,42 @@
       ],
       "correct_answer": "A",
       "difficulty": "medium",
-      "explanation": "CrCl ≈ 26 mL/min (CKD stage 4) ACR 2020 แนะนำเริ่ม allopurinol ต่ำกว่า 100 mg/วัน (≈50 mg/วัน) ใน CKD stage ≥3 แล้วค่อยปรับขึ้นตามเป้าหมาย",
+      "explanation": "CrCl (Cockcroft-Gault) = (140−78)×60/(72×2.0) ≈ 26 mL/min (CKD stage 4) ACR 2020 แนะนำเริ่ม allopurinol ≤100 mg/วัน และต่ำกว่านั้น (≈50 mg/วัน) ใน CKD stage ≥3 แล้วปรับขึ้นทีละน้อยจนถึงเป้า urate <6 mg/dL",
       "detailed_explanation": {
-        "summary": "CrCl ≈ 26 mL/min (CKD stage 4) ACR 2020 แนะนำเริ่ม allopurinol ต่ำกว่า 100 mg/วัน (≈50 mg/วัน) ใน CKD stage ≥3 แล้วค่อยปรับขึ้นตามเป้าหมาย",
-        "reason": "โจทย์ถามอะไร: คำนวณ CrCl และเลือกขนาดเริ่มต้นของ allopurinol ใน CKD ตามหลัก start low, go slow\n\nหลักการ/กลไกเชิงลึก: Allopurinol ถูกเปลี่ยนเป็น oxypurinol (active metabolite, t½ ยาว ~15–30 ชม.) ซึ่งขับทางไต ใน CKD oxypurinol สะสม การเริ่มขนาดสูงสัมพันธ์กับ allopurinol hypersensitivity syndrome (AHS/DRESS, SJS/TEN) การศึกษาของ Stamp พบว่าเริ่ม ≤1.5 mg ต่อ mL/min ของ eGFR ลดความเสี่ยง AHS\n\nทำไมข้อ A ถูก: Cockcroft-Gault: CrCl = (140 − 78) × 60 / (72 × 2.0) = 62 × 60 / 144 = 3,720 / 144 ≈ 25.8 mL/min → CKD stage 4 ACR 2020: เริ่ม ≤100 mg/วัน และในผู้ป่วย CKD stage ≥3 ให้น้อยกว่านั้น (≈50 mg/วัน) แล้วปรับเพิ่มครั้งละ 50 mg ทุก 2–5 สัปดาห์\n\nการประยุกต์กับผู้ป่วยจริง: ผู้ป่วยมี flare ≥2 ครั้ง/ปีจึงมีข้อบ่งใช้ ULT และ HLA-B*5801 เป็นลบแล้ว ควรให้ colchicine ขนาดปรับตามไต (เช่น 0.3–0.6 mg/วัน หรือวันเว้นวัน) หรือ prednisolone ขนาดต่ำเป็น prophylaxis ร่วมด้วย และสอนสังเกตผื่น ไข้ แผลในปาก\n\nจุดที่มักสับสนและกับดักข้อสอบ: ความเชื่อเก่าว่าห้ามใช้ allopurinol ใน CKD หรือต้องจำกัดขนาดตาม CrCl ตลอดไป (Hande dosing) ไม่ถูกต้อง สามารถปรับขนาดเกินขนาดตาม CrCl ได้หากจำเป็นและติดตามใกล้ชิด\n\nสรุปท่องสอบ: Allopurinol: เริ่ม ≤100 mg/d; CKD ≥3 เริ่ม ~50 mg/d → titrate ทุก 2–5 สัปดาห์สู่เป้า",
+        "summary": "CrCl ≈ 26 mL/min → allopurinol เริ่ม 50 mg/วัน เพิ่มครั้งละ 50 mg ทุก 2–5 สัปดาห์ (start low, go slow, treat to target) ไม่ใช่ข้อห้ามใน CKD และไม่ต้องตรึงขนาดตาม CrCl",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วยสูงอายุ CKD มี flare 3 ครั้งต่อปี (ข้อบ่งใช้ ULT แบบ strong) HLA-B*5801 ลบแล้ว ถามขนาดเริ่มต้น allopurinol โดยต้องคำนวณ CrCl ด้วย Cockcroft-Gault ก่อน แล้วเลือกขนาดตามหลัก start low, go slow ของ ACR 2020\n\nหลักการ/กลไกเชิงลึก: Allopurinol เป็น purine analog ที่ยับยั้ง xanthine oxidase ถูกเปลี่ยนอย่างรวดเร็ว (t½ 1–2 ชั่วโมง) เป็น oxypurinol ซึ่งเป็น active metabolite ที่ยับยั้งเอนไซม์ได้แน่นและมี t½ 15–30 ชั่วโมงในคนไตปกติ oxypurinol ขับทางไตเกือบทั้งหมด ใน CKD จึงสะสมจน t½ ยาวหลายวัน ระดับ oxypurinol สูงและการเริ่มยาขนาดสูงสัมพันธ์กับ allopurinol hypersensitivity syndrome (DRESS, SJS/TEN) ซึ่งมีอัตราตายสูงถึง 20–25% กลไกคือ oxypurinol จับ HLA-B*58:01 กระตุ้น cytotoxic T cell โดยตรง (p-i concept) และความเสี่ยงสูงสุดใน 8 สัปดาห์แรก\n\nทำไมข้อ A ถูก: คำนวณ CrCl = (140 − 78) × 60 / (72 × 2.0) = 3,720 / 144 ≈ 25.8 mL/min อยู่ใน CKD stage 4 ตาม ACR 2020 ให้เริ่มน้อยกว่า 100 mg/วัน ประมาณ 50 mg/วัน แล้วเพิ่มครั้งละ 50 mg ทุก 2–5 สัปดาห์จน serum urate <6 mg/dL\n\nหลักฐานและแนวทางเวชปฏิบัติ: ACR 2020 แนะนำอย่างหนักให้เริ่ม allopurinol ≤100 mg/วัน (และต่ำกว่าใน CKD stage ≥3) และให้ titrate to target ไม่ใช่ใช้ขนาดตาม CrCl แบบเดิมของ Hande (1984) การศึกษา case-control ของ Stamp 2012 พบว่าเริ่มที่ ≤1.5 mg ต่อ mL/min ของ eGFR ลดความเสี่ยง AHS และ RCT ของ Stamp 2017 แสดงว่าการค่อย ๆ เพิ่มเกินขนาดตาม CrCl ทำได้ปลอดภัยเมื่อติดตามใกล้ชิด\n\nการประยุกต์กับผู้ป่วยจริง: สั่ง allopurinol 100 mg ครึ่งเม็ดวันละครั้งหลังอาหาร (หรือ 100 mg วันเว้นวัน) ร่วมกับยาป้องกัน flare ที่ปรับตามไต เช่น colchicine 0.3 mg/วัน หรือ 0.6 mg วันเว้นวัน หรือ prednisolone ≤10 mg/วัน 3–6 เดือน แนะนำดื่มน้ำ 2 ลิตร/วันหากไม่มีข้อจำกัด และสอนว่า \"ถ้ามีผื่น ไข้ ตาแดง แผลในปาก ให้หยุดยาแล้วมาโรงพยาบาลทันที\"\n\nการติดตามและสัญญาณอันตราย: ตรวจ serum urate, SCr, LFT และ CBC ทุก 2–5 สัปดาห์ช่วงปรับยา ระวังผื่นแดงลามเร็ว ไข้ หน้าบวม ต่อมน้ำเหลืองโต eosinophilia หรือ LFT สูง (DRESS) ระวังยาที่มีปฏิกิริยา เช่น azathioprine/6-MP\n\nจุดที่มักสับสนและกับดักข้อสอบ: อย่าลืมใช้สูตรผู้ชายไม่ต้องคูณ 0.85 และใช้น้ำหนักจริงเมื่อไม่อ้วน ความเชื่อเก่าว่าห้ามใช้ allopurinol ใน CKD หรือต้องตรึงขนาดตาม CrCl ตลอดไปไม่ถูกต้อง ขนาดเริ่มต้นต่ำมีไว้ลดความเสี่ยงแพ้ยาและลด flare จากการลด urate เร็ว ไม่ใช่เพดาน\n\nสรุปท่องสอบ: CrCl ≈ 26 → allopurinol 50 mg/วัน → +50 mg ทุก 2–5 สัปดาห์ → urate <6; HLA-B*5801 ก่อนเริ่มในคนเอเชีย; prophylaxis 3–6 เดือน",
         "choices": [
           {
             "label": "A",
             "text": "50 mg/วัน แล้วค่อย ๆ ปรับเพิ่มทุก 2–5 สัปดาห์จนถึงเป้าหมาย serum urate",
-            "explanation": "✓ ถูก — CrCl ≈ 26 mL/min เริ่ม 50 mg/วันแล้วปรับขึ้นอย่างช้าตามเป้าหมาย ตรงตาม ACR 2020"
+            "explanation": "✓ ถูก — CrCl = 62 × 60 / 144 ≈ 26 mL/min (CKD stage 4) ACR 2020 ให้เริ่ม allopurinol ต่ำกว่า 100 mg/วัน (≈50 mg/วัน) ใน CKD stage ≥3 แล้วเพิ่มครั้งละ 50 mg ทุก 2–5 สัปดาห์จนถึง urate <6 mg/dL ลดความเสี่ยง allopurinol hypersensitivity syndrome และลด flare ในช่วงเริ่มยา ควรให้ prophylaxis ที่ปรับตามไตร่วมด้วย"
           },
           {
             "label": "B",
             "text": "100 mg/วัน และคงขนาดนี้ตลอดไปตาม CrCl",
-            "explanation": "✗ ผิด — 100 mg สูงเกินไปสำหรับ CKD stage 4 และไม่ควรตรึงขนาดตาม CrCl หาก urate ยังไม่ถึงเป้า"
+            "explanation": "✗ ผิด — มีความผิดสองจุด: 100 mg/วันสูงกว่าขนาดเริ่มต้นที่แนะนำใน CKD stage 4 และการตรึงขนาดตาม CrCl ตลอดไป (Hande dosing) ทำให้ผู้ป่วยส่วนใหญ่ไม่ถึงเป้าหมาย ACR 2020 ให้ titrate to target ข้อนี้จะใกล้ถูกในผู้ป่วยไตปกติ (เริ่ม 100 mg/วัน) แต่ต้องปรับเพิ่มต่อจนได้ urate <6 mg/dL ไม่ใช่คงไว้"
           },
           {
             "label": "C",
             "text": "300 mg/วัน เพื่อให้ถึงเป้าหมายเร็ว",
-            "explanation": "✗ ผิด — เริ่มขนาดสูงใน CKD เพิ่มความเสี่ยง allopurinol hypersensitivity syndrome และ flare"
+            "explanation": "✗ ผิด — การเริ่ม allopurinol 300 mg/วันใน CrCl ≈ 26 ทำให้ oxypurinol สะสมมากและเพิ่มความเสี่ยง AHS/DRESS/SJS อย่างชัดเจน อีกทั้งการลด urate เร็วทำให้ผลึกหลุดและเกิด flare บ่อย ACR 2020 แนะนำไม่เริ่มสูงกว่า 100 mg/วันในทุกคน ข้อนี้อาจเป็นขนาดคงที่ (maintenance) ได้ภายหลังการ titrate ในผู้ป่วยไตปกติที่ยังไม่ถึงเป้า"
           },
           {
             "label": "D",
             "text": "ห้ามใช้ allopurinol เมื่อ CrCl <30 mL/min",
-            "explanation": "✗ ผิด — Allopurinol ใช้ได้ใน CKD ทุกระยะ เพียงเริ่มขนาดต่ำและปรับช้า"
+            "explanation": "✗ ผิด — Allopurinol ไม่ได้ห้ามใช้ใน CrCl <30 mL/min และยังเป็น ULT ตัวแรกที่แนะนำในผู้ป่วยทุกระดับไตรวมถึงผู้ป่วยฟอกไต (ให้หลังฟอกเพราะ oxypurinol ถูกขจัดด้วย dialysis) เพียงต้องเริ่มขนาดต่ำและปรับช้า ข้อห้ามใช้จริงคือผู้ที่เคยแพ้ allopurinol รุนแรงหรือมี HLA-B*5801 บวก ซึ่งควรเลือก febuxostat แทน"
           }
         ],
-        "key_takeaway": "CKD → allopurinol start 50 mg, go slow, ไม่มีเพดานตาม CrCl"
+        "key_takeaway": "CKD → allopurinol start 50 mg, go slow, treat to target (ไม่มีเพดานตาม CrCl)",
+        "calculation_steps": [
+          "Cockcroft-Gault (ชาย): CrCl = [(140 − อายุ) × น้ำหนัก] / (72 × SCr)",
+          "(140 − 78) = 62; 62 × 60 kg = 3,720",
+          "72 × 2.0 mg/dL = 144",
+          "CrCl = 3,720 / 144 ≈ 25.8 mL/min → CKD stage 4 (15–29)",
+          "ACR 2020: เริ่ม ≤100 mg/วัน ทั่วไป และ <100 mg/วัน (≈50 mg/วัน) ใน CKD stage ≥3 → 50 mg/วัน (ครึ่งเม็ดของ 100 mg)",
+          "ตรวจสอบกับเกณฑ์ Stamp: 1.5 mg × eGFR ≈ 1.5 × 26 ≈ 39 mg → 50 mg/วันหรือ 100 mg วันเว้นวันอยู่ในช่วงที่ยอมรับ",
+          "ปรับเพิ่มครั้งละ 50 mg ทุก 2–5 สัปดาห์จน serum urate <6 mg/dL"
+        ]
       }
     },
     {
@@ -380,30 +394,30 @@
       ],
       "correct_answer": "D",
       "difficulty": "hard",
-      "explanation": "ACR 2020 ใช้หลัก treat-to-target: หากผู้ป่วยทนยาได้และ urate ยังไม่ถึงเป้า ให้ปรับเพิ่ม allopurinol ต่อได้แม้เกินขนาดตาม CrCl โดยติดตามใกล้ชิด",
+      "explanation": "ACR 2020 ใช้หลัก treat-to-target: หากผู้ป่วยทนยาได้และ urate ยังไม่ถึง <6 mg/dL ให้ปรับเพิ่ม allopurinol ต่อได้แม้เกินขนาดตาม CrCl โดยเพิ่มทีละ 50 mg ทุก 2–5 สัปดาห์และติดตามอาการแพ้ ไต ตับ ใกล้ชิด",
       "detailed_explanation": {
-        "summary": "ACR 2020 ใช้หลัก treat-to-target: หากผู้ป่วยทนยาได้และ urate ยังไม่ถึงเป้า ให้ปรับเพิ่ม allopurinol ต่อได้แม้เกินขนาดตาม CrCl โดยติดตามใกล้ชิด",
-        "reason": "โจทย์ถามอะไร: การปรับขนาด allopurinol เมื่อยังไม่ถึงเป้าหมายในผู้ป่วยไตเสื่อมปานกลาง\n\nหลักการ/กลไกเชิงลึก: ความเสี่ยง AHS สัมพันธ์กับขนาดเริ่มต้นที่สูง (และเกิดในช่วง 2–3 เดือนแรก) มากกว่าขนาด maintenance ที่ค่อย ๆ ปรับขึ้น การศึกษา dose escalation (Stamp et al.) แสดงว่าการปรับขนาดเกินขนาดตาม CrCl ใน CKD ทำให้ถึงเป้าได้มากขึ้นโดยไม่เพิ่ม AE อย่างมีนัยสำคัญ\n\nทำไมข้อ D ถูก: ผู้ป่วยทนยาได้ดี ไม่มีผื่น LFT ปกติ และ adherence ดี จึงควร titrate ต่อทีละ 50 mg ทุก 2–5 สัปดาห์ (เช่น 250 → 300 mg) จนถึง urate <6 mg/dL ซึ่งสอดคล้อง treat-to-target ของ ACR 2020\n\nการประยุกต์กับผู้ป่วยจริง: ระหว่างปรับขนาดต้องให้ prophylaxis ต่อ ตรวจ urate ทุกครั้งที่ปรับ ติดตาม SCr, LFT, CBC และสอนอาการเตือน SCAR หากถึงขนาดสูงสุดที่ทนได้แล้วยังไม่ถึงเป้า จึงพิจารณาเปลี่ยน XOI หรือเพิ่ม uricosuric\n\nจุดที่มักสับสนและกับดักข้อสอบ: Hande dosing (ขนาดตาม CrCl) เคยเป็นมาตรฐาน แต่ทำให้ผู้ป่วยส่วนใหญ่ไม่ถึงเป้า ข้อสอบมักลวงว่าห้ามเกินขนาดตามไต การเปลี่ยนยาหรือเพิ่ม uricosuric ทำเมื่อใช้ XOI ขนาดสูงสุดที่ทนได้แล้วเท่านั้น และ probenecid ได้ผลน้อยเมื่อ eGFR <50\n\nสรุปท่องสอบ: ทนยาได้ + ยังไม่ถึงเป้า → titrate allopurinol ต่อ (เกินขนาดตาม CrCl ได้)",
+        "summary": "ขนาดตาม CrCl ไม่ใช่เพดาน ผู้ป่วยทนยาได้ดี ใช้ยาสม่ำเสมอ แต่ urate 7.6 → เพิ่ม allopurinol ต่อจน <6 mg/dL (สูงสุดได้ 800 mg/วัน) ก่อนพิจารณาเปลี่ยนยาหรือเพิ่ม uricosuric",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วย CKD stage 3a ใช้ allopurinol ที่ค่อย ๆ ปรับขึ้นมาถึง 200 mg/วัน ไม่มีผลข้างเคียงและใช้ยาสม่ำเสมอ แต่ serum urate ยัง 7.6 mg/dL แพทย์กังวลว่าเกินขนาดตาม CrCl แล้ว โจทย์ทดสอบหลัก treat-to-target และการแยก \"ขนาดเริ่มต้นที่ปลอดภัย\" ออกจาก \"เพดานขนาด\"\n\nหลักการ/กลไกเชิงลึก: ผลการลด urate ของ allopurinol ขึ้นกับระดับ oxypurinol ซึ่งแปรผันระหว่างบุคคลมาก ทั้งจากการขับทางไต ปฏิกิริยากับยาขับปัสสาวะ และพันธุกรรมของ transporter (เช่น ABCG2 Q141K ทำให้ตอบสนองต่ำ) ตารางขนาดยาตาม CrCl ของ Hande ออกแบบมาเพื่อให้ระดับ oxypurinol เท่ากับคนไตปกติที่ได้ 300 mg ไม่ได้คำนึงถึงเป้าหมาย urate ผลคือผู้ป่วย CKD ส่วนใหญ่ได้ขนาดต่ำเกินไปและไม่ถึงเป้า ความเสี่ยง AHS สัมพันธ์กับ \"ขนาดเริ่มต้นที่สูง\" และ HLA-B*5801 มากกว่าขนาดคงที่หลังทนยาได้นานแล้ว ผู้ป่วยรายนี้ใช้ยามา 3 เดือนโดยไม่มีอาการแพ้ จึงผ่านช่วงเสี่ยงสูงสุด\n\nทำไมข้อ D ถูก: ให้เพิ่ม allopurinol ครั้งละ 50 mg ทุก 2–5 สัปดาห์ (เช่น 250 → 300 mg/วัน) ตรวจ urate ทุกครั้งก่อนเพิ่ม จนได้ <6 mg/dL ร่วมกับติดตาม CBC, LFT, SCr และผื่น ตรงกับหลัก treat-to-target ของ ACR 2020\n\nหลักฐานและแนวทางเวชปฏิบัติ: ACR 2020 แนะนำอย่างหนักให้ใช้ treat-to-target โดยเป้า serum urate <6 mg/dL และให้ปรับขนาด ULT ตามระดับ urate ไม่ใช่ตามขนาดคงที่ RCT ของ Stamp et al. (2017) ในผู้ป่วยเกาต์รวมถึง CKD แสดงว่าการเพิ่ม allopurinol เกินขนาดตาม CrCl ช่วยให้ถึงเป้าได้มากขึ้นโดยไม่เพิ่มผลข้างเคียงร้ายแรง ขนาดสูงสุดตามฉลากคือ 800 mg/วัน EULAR 2016 ก็ยอมรับการปรับขนาดเกินตาราง CrCl เช่นกัน\n\nการประยุกต์กับผู้ป่วยจริง: ยืนยัน adherence อีกครั้งด้วยการนับเม็ดหรือสอบถาม ตรวจยาที่เพิ่ม urate (thiazide, loop diuretic, low-dose aspirin, cyclosporine) และดูการดื่มแอลกอฮอล์/ฟรุกโตส คงยาป้องกัน flare ต่อระหว่างปรับขนาด นัดตรวจ urate 2–5 สัปดาห์หลังเพิ่มแต่ละขั้น เมื่อถึงเป้าแล้วตรวจทุก 6 เดือน\n\nการติดตามและสัญญาณอันตราย: แม้ผ่าน 3 เดือนแรก ยังต้องสอนสังเกตผื่น ไข้ แผลในปาก ตาแดง ปัสสาวะสีเข้ม/ตัวเหลือง หาก SCr แย่ลงชัดเจนให้ทบทวนสาเหตุก่อนเพิ่มยา ถ้า titrate ถึงขนาดสูงสุดที่ทนได้แล้วยังไม่ถึงเป้า จึงพิจารณาเปลี่ยนเป็น XOI อีกตัวหรือเพิ่ม uricosuric\n\nจุดที่มักสับสนและกับดักข้อสอบ: ข้อสอบชอบล่อด้วย \"ยอมรับ urate ใกล้เป้า\" หรือ \"เปลี่ยนยาทันที\" ทั้งที่ยังไม่ได้ใช้ขนาดสูงสุดที่ทนได้ ACR ให้ switch หรือ add-on เฉพาะเมื่อ XOI ตัวแรกถึง maximum tolerated dose แล้วยังไม่ถึงเป้า ส่วน probenecid ไม่ได้ผลดีเมื่อ eGFR <50\n\nสรุปท่องสอบ: Treat-to-target <6 mg/dL; allopurinol titrate +50–100 mg ทุก 2–5 สัปดาห์ ได้ถึง 800 mg/วัน แม้ใน CKD; switch/add-on หลังใช้ขนาดสูงสุดที่ทนได้แล้วเท่านั้น",
         "choices": [
           {
             "label": "A",
             "text": "คงขนาด 200 mg/วัน เพราะเกินขนาดตาม CrCl แล้ว ยอมรับ urate 7.6 mg/dL",
-            "explanation": "✗ ผิด — Treat-to-target ไม่ยอมรับ urate 7.6 mg/dL; ขนาดตาม CrCl ไม่ใช่เพดาน"
+            "explanation": "✗ ผิด — Urate 7.6 mg/dL ยังสูงกว่าจุดอิ่มตัว 6.8 ผลึกจึงไม่ละลายและ flare จะยังเกิดต่อ ขนาดตาม CrCl ไม่ใช่เพดาน ACR 2020 แนะนำ treat-to-target อย่างหนัก การยอมรับค่านี้จึงไม่เหมาะ ข้อนี้จะเหมาะเฉพาะเมื่อผู้ป่วยเกิดผลข้างเคียงจนเพิ่มขนาดไม่ได้และไม่มีทางเลือกอื่น หรือผู้ป่วยระยะท้ายของชีวิตที่เป้าหมายคือความสบายเท่านั้น"
           },
           {
             "label": "B",
             "text": "เปลี่ยนเป็น febuxostat 80 mg/วัน ทันที",
-            "explanation": "✗ ผิด — ควรปรับ allopurinol ถึงขนาดสูงสุดที่ทนได้ก่อน และ febuxostat มีคำเตือน CV ไม่ใช่ขั้นถัดไปทันที"
+            "explanation": "✗ ผิด — การเปลี่ยนเป็น febuxostat ไม่จำเป็นเพราะผู้ป่วยยังไม่ได้ใช้ allopurinol ขนาดสูงสุดที่ทนได้ และ febuxostat 80 mg เป็นขนาดสูงที่ควรเริ่มจาก 20–40 mg (ACR แนะนำเริ่ม ≤40 mg) ทั้งยังมีคำเตือน CV death ข้อนี้จะเหมาะหากผู้ป่วยแพ้ allopurinol หรือมี HLA-B*5801 บวก หรือใช้ allopurinol ขนาดสูงสุดแล้วยังไม่ถึงเป้า"
           },
           {
             "label": "C",
             "text": "เพิ่ม probenecid 500 mg วันละ 2 ครั้ง ร่วมกับ allopurinol ขนาดเดิม",
-            "explanation": "✗ ผิด — Probenecid ได้ผลน้อยเมื่อ eGFR <50 และการเพิ่ม uricosuric ใช้หลังปรับ XOI เต็มที่แล้ว"
+            "explanation": "✗ ผิด — การเพิ่ม uricosuric เป็นทางเลือกหลังจากใช้ XOI ขนาดสูงสุดที่ทนได้แล้วยังไม่ถึงเป้า ไม่ใช่ขั้นตอนถัดไปทันที และ probenecid ได้ผลลดลงมากเมื่อ eGFR <50 (ผู้ป่วย eGFR 45) อีกทั้งเพิ่มความเสี่ยงนิ่วกรดยูริก ข้อนี้จะเหมาะในผู้ป่วย CrCl ≥50 ไม่มีประวัตินิ่ว ที่ใช้ allopurinol ขนาดสูงสุดแล้วยังไม่ถึงเป้า"
           },
           {
             "label": "D",
             "text": "ปรับเพิ่ม allopurinol ครั้งละ 50 mg ทุก 2–5 สัปดาห์จนได้ serum urate <6 mg/dL พร้อมติดตามอาการแพ้และการทำงานของไต/ตับ",
-            "explanation": "✓ ถูก — ปรับเพิ่มทีละ 50 mg ทุก 2–5 สัปดาห์ตามหลัก treat-to-target พร้อมติดตามความปลอดภัย"
+            "explanation": "✓ ถูก — ผู้ป่วยทนยาได้ดี ใช้ยาสม่ำเสมอ ผ่านช่วงเสี่ยงแพ้ยาแล้ว แต่ urate ยังไม่ถึงเป้า ACR 2020 ให้ปรับเพิ่ม allopurinol ต่อแม้เกินขนาดตาม CrCl (สูงสุด 800 mg/วัน) โดยเพิ่มทีละ 50 mg ทุก 2–5 สัปดาห์ ตรวจ urate ทุกขั้น และติดตามผื่น LFT CBC SCr ใกล้ชิด พร้อมคงยาป้องกัน flare"
           }
         ],
         "key_takeaway": "ขนาดตาม CrCl ไม่ใช่เพดาน — titrate จนถึง urate <6"
@@ -431,33 +445,33 @@
       ],
       "correct_answer": "B",
       "difficulty": "medium",
-      "explanation": "ACR 2020 แนะนำตรวจ HLA-B*5801 ก่อนเริ่ม allopurinol ในผู้ป่วยเชื้อสายเอเชียตะวันออกเฉียงใต้ (เช่น ไทย, จีนฮั่น, เกาหลี) และแอฟริกันอเมริกัน เพราะอัลลีลนี้สัมพันธ์กับ SJS/TEN/DRESS อย่างมาก",
+      "explanation": "ACR 2020 แนะนำ (conditional) ให้ตรวจ HLA-B*5801 ก่อนเริ่ม allopurinol ในผู้ป่วยเชื้อสายเอเชียตะวันออกเฉียงใต้ (เช่น ไทย จีนฮั่น เกาหลี) และแอฟริกันอเมริกัน เพราะอัลลีลนี้สัมพันธ์กับ SJS/TEN/DRESS จาก allopurinol อย่างมาก",
       "detailed_explanation": {
-        "summary": "ACR 2020 แนะนำตรวจ HLA-B*5801 ก่อนเริ่ม allopurinol ในผู้ป่วยเชื้อสายเอเชียตะวันออกเฉียงใต้ (เช่น ไทย, จีนฮั่น, เกาหลี) และแอฟริกันอเมริกัน เพราะอัลลีลนี้สัมพันธ์กับ SJS/TEN/DRESS อย่างมาก",
-        "reason": "โจทย์ถามอะไร: การคัดกรองทางพันธุกรรมก่อนใช้ allopurinol ในคนไทย\n\nหลักการ/กลไกเชิงลึก: HLA-B*5801 นำเสนอ oxypurinol ต่อ T cell ทำให้เกิด severe cutaneous adverse reactions (SCAR) ได้แก่ SJS/TEN และ DRESS ซึ่งมีอัตราตายสูง ความชุกของอัลลีลในคนไทยและจีนฮั่นสูง (~6–8% หรือมากกว่า) การศึกษาในไทยพบ odds ratio สูงมาก (>300 เท่า) จึงมีค่า negative predictive value สูง\n\nทำไมข้อ B ถูก: ACR 2020 conditional recommendation: ตรวจ HLA-B*5801 ก่อนเริ่ม allopurinol ในผู้ป่วย Southeast Asian (Han Chinese, Korean, Thai) และ African American ประเทศไทยมีการตรวจนี้ในระบบหลักประกันสุขภาพด้วย\n\nการประยุกต์กับผู้ป่วยจริง: หากผลเป็นบวก ให้หลีกเลี่ยง allopurinol และเลือก ULT อื่น เช่น febuxostat (ประเมินความเสี่ยง CV) หรือ uricosuric ตามการทำงานของไต หากผลลบ ก็ยังต้องเริ่มขนาดต่ำและสอนอาการเตือน เพราะ SCAR เกิดได้แม้ผลลบ\n\nจุดที่มักสับสนและกับดักข้อสอบ: HLA-B*1502 ใช้คัดกรองก่อนใช้ carbamazepine (และ phenytoin/oxcarbazepine) ไม่ใช่ allopurinol ยาแก้แพ้ไม่ป้องกัน SCAR และอาจบดบังอาการเตือน\n\nสรุปท่องสอบ: Allopurinol ↔ HLA-B*5801; Carbamazepine ↔ HLA-B*1502; Abacavir ↔ HLA-B*5701",
+        "summary": "ผู้ป่วยไทยที่จะเริ่ม allopurinol ควรตรวจ HLA-B*5801 ก่อน หากบวกให้หลีกเลี่ยง allopurinol ทุกขนาด ส่วน HLA-B*1502 เป็นยีนของ carbamazepine และยาแก้แพ้ไม่ได้ป้องกัน SCAR",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วยหญิงไทยเป็นเกาต์มี tophus (ข้อบ่งใช้ ULT แบบ strong) และ CKD stage 3a แพทย์จะเริ่ม allopurinol โจทย์ถามว่าเภสัชกรควรแนะนำสิ่งใดก่อนเริ่มยา ซึ่งทดสอบเภสัชพันธุศาสตร์ที่สำคัญที่สุดในบริบทคนไทย\n\nหลักการ/กลไกเชิงลึก: Severe cutaneous adverse reactions (SCAR) จาก allopurinol ได้แก่ SJS/TEN และ DRESS เป็น T cell-mediated (type IVc/IVb) hypersensitivity กลไกคือ oxypurinol จับเข้ากับร่องของโมเลกุล HLA-B*58:01 โดยตรงแบบ non-covalent (pharmacological interaction, p-i concept) ทำให้ CD8+ cytotoxic T cell จดจำเป็นสิ่งแปลกปลอม หลั่ง granulysin, perforin และ Fas ligand ทำลาย keratinocyte ผู้ที่มีอัลลีลนี้มี odds ratio ต่อ SJS/TEN จาก allopurinol สูงหลายสิบถึงหลายร้อยเท่าในประชากรเอเชีย และพบความถี่ของอัลลีลในคนไทยราว 6–10% ปัจจัยเสริมได้แก่ CKD (oxypurinol สะสม) ขนาดเริ่มต้นสูง และการใช้ thiazide ร่วม ผู้ป่วยรายนี้มี CKD จึงยิ่งเสี่ยง\n\nทำไมข้อ B ถูก: การตรวจ HLA-B*5801 ก่อนเริ่มยามีค่า negative predictive value สูงมาก (เกือบ 100% ในประชากรเอเชีย) หากผลบวกให้หลีกเลี่ยง allopurinol และเลือกยาอื่น เช่น febuxostat หรือ uricosuric ตามความเหมาะสม หากผลลบจึงเริ่ม allopurinol ขนาดต่ำได้\n\nหลักฐานและแนวทางเวชปฏิบัติ: ACR 2020 แนะนำ (conditional) ให้ตรวจ HLA-B*5801 ก่อนเริ่ม allopurinol ในผู้ป่วยเชื้อสายเอเชียตะวันออกเฉียงใต้ (Han Chinese, Korean, Thai) และแอฟริกันอเมริกัน CPIC guideline สำหรับ HLA-B และ allopurinol ระบุว่าผู้ที่เป็นพาหะ (*58:01 positive) ไม่ควรได้รับ allopurinol การศึกษาในไต้หวัน (Ko et al., BMJ 2015) พบว่าการคัดกรองก่อนให้ยาลดอุบัติการณ์ SCAR ได้อย่างมีนัยสำคัญ และการศึกษาความคุ้มค่าในประเทศไทยก็สนับสนุนการคัดกรอง\n\nการประยุกต์กับผู้ป่วยจริง: ส่งตรวจและรอผลก่อนสั่งยา ระหว่างรอสามารถให้ยาป้องกันหรือรักษา flare ได้ บันทึกผลในประวัติผู้ป่วยและบัตรแพ้ยาเพื่อใช้ตลอดชีวิต (ไม่ต้องตรวจซ้ำ) หากผลลบ เริ่ม 50 mg/วัน (CKD) และสอนสังเกตอาการแพ้ เพราะผลลบไม่ได้ป้องกัน SCAR ได้ 100%\n\nการติดตามและสัญญาณอันตราย: ช่วง 2–8 สัปดาห์แรกต้องเฝ้าระวังผื่นแดง ไข้ ตุ่มน้ำ ผิวลอก แผลในปาก/ตาแดง หน้าบวม ต่อมน้ำเหลืองโต LFT สูง eosinophilia หากพบให้หยุดยาทันทีและพบแพทย์ ห้ามกลับมาใช้ซ้ำ (no rechallenge)\n\nจุดที่มักสับสนและกับดักข้อสอบ: HLA-B*1502 คือยีนเสี่ยง SJS/TEN จาก carbamazepine (รวมถึง phenytoin, oxcarbazepine) ไม่ใช่ allopurinol ส่วน antihistamine หรือ steroid ไม่สามารถป้องกัน T cell-mediated SCAR ได้ และการลดขนาดยาก็ไม่ได้ทำให้ผู้ที่มีผลบวกใช้ยาได้อย่างปลอดภัย\n\nสรุปท่องสอบ: Allopurinol ↔ HLA-B*58:01; carbamazepine ↔ HLA-B*15:02; abacavir ↔ HLA-B*57:01; ผลบวก = เลี่ยงยาทุกขนาด; ผลลบ = เริ่มขนาดต่ำและยังต้องสอนสังเกตผื่น",
         "choices": [
           {
             "label": "A",
             "text": "เริ่ม allopurinol 300 mg/วัน แล้วเฝ้าระวังผื่นเอง",
-            "explanation": "✗ ผิด — เริ่มขนาดสูงโดยไม่ตรวจยีนในคนไทยเพิ่มความเสี่ยง SCAR และขัดหลัก start low"
+            "explanation": "✗ ผิด — การเริ่ม allopurinol 300 mg/วันโดยไม่คัดกรองยีนเป็นการเพิ่มความเสี่ยงสองชั้น ทั้งขนาดเริ่มต้นสูงเกินไปสำหรับ eGFR 50 (ACR ให้เริ่ม ≤100 mg/วัน และต่ำกว่านั้นใน CKD ≥3) และไม่ได้ตรวจ HLA-B*5801 ในผู้ป่วยไทยที่มีความถี่ของอัลลีลสูง การเฝ้าระวังผื่นเองไม่ได้ป้องกัน SCAR ข้อนี้ไม่ถูกในทุกบริบท เพราะขนาด 300 mg ไม่ใช่ขนาดเริ่มต้นสำหรับใคร"
           },
           {
             "label": "B",
             "text": "ส่งตรวจ HLA-B*5801 ก่อนเริ่ม allopurinol",
-            "explanation": "✓ ถูก — คนไทยมีความชุก HLA-B*5801 สูง ACR 2020 แนะนำให้ตรวจก่อนเริ่ม allopurinol"
+            "explanation": "✓ ถูก — ACR 2020 แนะนำตรวจ HLA-B*5801 ก่อนเริ่ม allopurinol ในผู้ป่วยเชื้อสายเอเชียตะวันออกเฉียงใต้ รวมถึงคนไทย การตรวจมี negative predictive value สูงมาก ผลบวกให้หลีกเลี่ยง allopurinol ทุกขนาด ผู้ป่วยรายนี้ยังมี CKD ซึ่งเป็นปัจจัยเสี่ยง SCAR เพิ่ม การคัดกรองจึงยิ่งสำคัญ ผลลบแล้วจึงเริ่ม 50 mg/วันและสอนสังเกตอาการแพ้"
           },
           {
             "label": "C",
             "text": "ให้ cetirizine ร่วมด้วยเพื่อป้องกันผื่นแพ้ยา",
-            "explanation": "✗ ผิด — ยาต้านฮิสตามีนไม่ป้องกัน SJS/TEN/DRESS ซึ่งเป็นปฏิกิริยาผ่าน T cell"
+            "explanation": "✗ ผิด — SJS/TEN และ DRESS จาก allopurinol เป็นปฏิกิริยาที่ขับเคลื่อนด้วย cytotoxic T cell ไม่ได้เกิดจาก histamine ดังนั้น cetirizine หรือ antihistamine อื่นป้องกันไม่ได้ และอาจกลบอาการเริ่มต้นจนวินิจฉัยช้า Antihistamine จะมีบทบาทในการบรรเทาอาการคันของลมพิษหรือ immediate hypersensitivity แบบ IgE-mediated ที่ไม่รุนแรง ไม่ใช่การป้องกัน SCAR"
           },
           {
             "label": "D",
             "text": "ส่งตรวจ HLA-B*1502 ก่อนเริ่ม allopurinol",
-            "explanation": "✗ ผิด — HLA-B*1502 เป็นยีนที่ใช้คัดกรองก่อนใช้ carbamazepine ไม่ใช่ allopurinol"
+            "explanation": "✗ ผิด — HLA-B*1502 เป็นยีนที่สัมพันธ์กับ SJS/TEN จาก carbamazepine (และ phenytoin, oxcarbazepine) ในประชากรเอเชียตะวันออกเฉียงใต้ ไม่เกี่ยวกับ allopurinol ข้อนี้จะถูกหากโจทย์เป็นผู้ป่วยไทยที่แพทย์จะเริ่ม carbamazepine รักษา trigeminal neuralgia หรือโรคลมชัก ซึ่งควรตรวจ HLA-B*1502 ก่อนเริ่มยา"
           }
         ],
-        "key_takeaway": "คนไทยก่อนเริ่ม allopurinol → ตรวจ HLA-B*5801"
+        "key_takeaway": "คนไทยก่อนเริ่ม allopurinol → ตรวจ HLA-B*5801 (บวก = เลี่ยง allopurinol ทุกขนาด)"
       }
     },
     {
@@ -482,84 +496,90 @@
       ],
       "correct_answer": "A",
       "difficulty": "easy",
-      "explanation": "การศึกษา CARES พบ CV death และ all-cause mortality สูงกว่าใน febuxostat เทียบกับ allopurinol ในผู้ป่วยเกาต์ที่มีโรคหัวใจ FDA จึงเพิ่ม boxed warning ในปี 2019",
+      "explanation": "การศึกษา CARES (2018) พบ CV death และ all-cause mortality สูงกว่าใน febuxostat เทียบกับ allopurinol ในผู้ป่วยเกาต์ที่มีโรคหัวใจและหลอดเลือด US FDA จึงเพิ่ม boxed warning ในปี 2019 และจำกัดให้ใช้เมื่อ allopurinol ใช้ไม่ได้หรือไม่ได้ผล",
       "detailed_explanation": {
-        "summary": "การศึกษา CARES พบ CV death และ all-cause mortality สูงกว่าใน febuxostat เทียบกับ allopurinol ในผู้ป่วยเกาต์ที่มีโรคหัวใจ FDA จึงเพิ่ม boxed warning ในปี 2019",
-        "reason": "โจทย์ถามอะไร: Boxed warning ของ febuxostat\n\nหลักการ/กลไกเชิงลึก: Febuxostat เป็น non-purine selective xanthine oxidase inhibitor เมแทบอลิซึมที่ตับ (glucuronidation/CYP) จึงใช้ใน CKD ได้โดยไม่ต้องปรับขนาดมาก การศึกษา CARES (ผู้ป่วยเกาต์ที่มีโรค CV ประมาณ 6,000 คน) พบ CV death สูงกว่า allopurinol (HR ~1.34) และ all-cause mortality สูงกว่า แม้ primary composite endpoint ไม่ต่างกัน\n\nทำไมข้อ A ถูก: US FDA ปี 2019 ให้ใส่ boxed warning เรื่อง CV death และจำกัดการใช้เป็นทางเลือกเมื่อ allopurinol ใช้ไม่ได้หรือไม่ได้ผล ACR 2020 แนะนำ (conditional) ให้เปลี่ยนเป็น ULT อื่นในผู้ป่วยที่ใช้ febuxostat และมีประวัติ CVD หรือเกิด CV event ใหม่ หากทำได้\n\nการประยุกต์กับผู้ป่วยจริง: ในผู้ป่วยไทยที่ HLA-B*5801 บวก febuxostat ยังเป็นทางเลือกสำคัญ แต่ต้องประเมินความเสี่ยงหัวใจ ใช้ขนาด 40–80 mg/วัน และให้ prophylaxis ร่วม ห้ามใช้ร่วมกับ azathioprine/mercaptopurine\n\nจุดที่มักสับสนและกับดักข้อสอบ: Fulminant hepatitis เป็นปัญหาของ benzbromarone; HLA-B*5801 เกี่ยวกับ allopurinol; ภาวะเม็ดเลือดแดงแตกใน G6PD deficiency เป็นข้อห้ามของ pegloticase/rasburicase ข้อสอบชอบสลับคำเตือนของยาลดกรดยูริกแต่ละตัว\n\nสรุปท่องสอบ: Febuxostat = CARES = boxed warning CV death",
+        "summary": "Febuxostat boxed warning = CV death (CARES) ACR 2020 แนะนำเปลี่ยนไปใช้ ULT อื่นหากผู้ป่วยมีประวัติโรคหัวใจหรือเกิด CV event ใหม่ ส่วนตับวาย SJS/HLA-B*5801 และ G6PD เป็นคำเตือนของยาอื่น",
+        "reason": "โจทย์ถามอะไร: ถามตรง ๆ ว่า boxed warning ของ febuxostat จาก US FDA เกี่ยวกับเรื่องใด ซึ่งเป็นความรู้ด้านความปลอดภัยของยาที่เภสัชกรต้องใช้ในการเลือก ULT ให้ผู้ป่วยที่มีโรคหัวใจ\n\nหลักการ/กลไกเชิงลึก: Febuxostat เป็น non-purine selective xanthine oxidase inhibitor จับกับ molybdenum-pterin active site ทั้งรูป oxidized และ reduced ของเอนไซม์ จึงลด urate ได้แรงกว่า allopurinol ขนาดทั่วไป ถูก metabolize ที่ตับ (glucuronidation และ CYP) ขับทั้งทางไตและน้ำดี จึงไม่ต้องปรับขนาดใน CKD เล็กน้อยถึงปานกลาง กลไกที่ทำให้เพิ่ม CV death ยังไม่ชัดเจน สมมติฐานมีทั้งการที่ allopurinol อาจมีผลปกป้องหัวใจ (ลด oxidative stress) มากกว่า หรือผลของ febuxostat ต่อการนำไฟฟ้าหัวใจ จึงอาจไม่ใช่ febuxostat ทำร้ายโดยตรง แต่ข้อมูลความปลอดภัยทำให้ต้องระวัง\n\nทำไมข้อ A ถูก: CARES trial (White et al., NEJM 2018) สุ่มผู้ป่วยเกาต์ที่มีโรคหัวใจและหลอดเลือดกว่า 6,000 ราย พบว่า febuxostat ไม่ด้อยกว่า allopurinol ใน primary composite MACE แต่ CV death (HR ~1.34) และ all-cause mortality (HR ~1.22) สูงกว่า FDA จึงเพิ่ม boxed warning เรื่อง increased risk of CV death ในปี 2019 และจำกัดการใช้เฉพาะผู้ที่ allopurinol ไม่ได้ผลหรือทนไม่ได้\n\nหลักฐานและแนวทางเวชปฏิบัติ: ต่อมา FAST trial (Mackenzie et al., Lancet 2020) ในยุโรปพบว่า febuxostat ไม่ด้อยกว่า allopurinol ด้าน CV death ทำให้ EMA ไม่ได้ออกคำเตือนรุนแรงแบบเดียวกัน แต่ ACR 2020 ยังแนะนำ (conditional) ให้เปลี่ยนไปใช้ ULT อื่นหากผู้ป่วยที่ใช้ febuxostat มีประวัติโรคหัวใจหรือเกิด CV event ใหม่ และแนะนำ allopurinol เป็นยาแรกเหนือ febuxostat ในทุกระดับไต\n\nการประยุกต์กับผู้ป่วยจริง: เมื่อจะใช้ febuxostat (เช่น HLA-B*5801 บวก) ให้ทบทวนประวัติ MI, stroke, HF และปัจจัยเสี่ยง อธิบายผู้ป่วยถึงประโยชน์และความเสี่ยง เริ่ม 20–40 mg/วัน ปรับได้ถึง 80 mg (บางประเทศ 120 mg) ให้ยาป้องกัน flare ร่วม และห้ามใช้ร่วม azathioprine/6-MP\n\nการติดตามและสัญญาณอันตราย: สอนผู้ป่วยให้รีบพบแพทย์หากเจ็บแน่นหน้าอก หายใจหอบ ใจสั่น แขนขาอ่อนแรงซีกเดียว พูดไม่ชัด ติดตาม LFT เป็นระยะเพราะ febuxostat ทำให้ transaminase สูงได้\n\nจุดที่มักสับสนและกับดักข้อสอบ: ตับวายรุนแรงเป็น boxed warning ของ benzbromarone (ถอนจากหลายประเทศ) SJS/TEN กับ HLA-B*5801 เป็นของ allopurinol ส่วน hemolysis ใน G6PD deficiency เป็น boxed warning ของ pegloticase และ rasburicase อย่าสลับกัน\n\nสรุปท่องสอบ: Febuxostat = หัวใจ (CARES); allopurinol = HLA-B*5801/SCAR; benzbromarone = ตับ; uricase (pegloticase, rasburicase) = G6PD + anaphylaxis",
         "choices": [
           {
             "label": "A",
             "text": "เพิ่มความเสี่ยงการเสียชีวิตจากโรคหัวใจและหลอดเลือด (CV death) เมื่อเทียบกับ allopurinol",
-            "explanation": "✓ ถูก — CARES trial พบ CV death สูงกว่า allopurinol จึงมี boxed warning ตั้งแต่ปี 2019"
+            "explanation": "✓ ถูก — CARES trial ในผู้ป่วยเกาต์ที่มีโรคหัวใจพบ CV death และ all-cause mortality สูงกว่าเมื่อใช้ febuxostat เทียบ allopurinol US FDA จึงเพิ่ม boxed warning ในปี 2019 และจำกัดการใช้เฉพาะเมื่อ allopurinol ไม่ได้ผลหรือทนไม่ได้ แม้ FAST trial จะไม่พบความเสี่ยงนี้ แต่ ACR 2020 ยังแนะนำให้ระวังในผู้ที่มีโรคหัวใจ"
           },
           {
             "label": "B",
             "text": "ตับวายเฉียบพลันรุนแรง (fulminant hepatitis)",
-            "explanation": "✗ ผิด — ตับวายรุนแรงเป็นคำเตือนเด่นของ benzbromarone (febuxostat ทำให้ LFT สูงได้แต่ไม่ใช่ boxed warning)"
+            "explanation": "✗ ผิด — Fulminant hepatitis และตับวายถึงแก่ชีวิตเป็นปัญหาหลักของ benzbromarone ซึ่งถูกถอนจากหลายประเทศ Febuxostat ทำให้ transaminase สูงได้เล็กน้อยและควรตรวจ LFT แต่ไม่ใช่ boxed warning ข้อนี้จะถูกหากโจทย์ถามถึงคำเตือนสำคัญของ benzbromarone หรือการติดตามที่สำคัญที่สุดเมื่อใช้ benzbromarone"
           },
           {
             "label": "C",
             "text": "SJS/TEN ในผู้ที่มี HLA-B*5801",
-            "explanation": "✗ ผิด — HLA-B*5801 สัมพันธ์กับ SCAR จาก allopurinol"
+            "explanation": "✗ ผิด — SJS/TEN และ DRESS ที่สัมพันธ์กับ HLA-B*5801 เป็นคำเตือนของ allopurinol ไม่ใช่ febuxostat ในทางกลับกัน febuxostat เป็นยาทางเลือกที่ใช้เมื่อผู้ป่วยมี HLA-B*5801 บวก (แม้ cross-reactivity ทางผิวหนังพบได้น้อย) ข้อนี้จะถูกหากโจทย์ถามว่าก่อนเริ่ม allopurinol ในคนไทยต้องระวังหรือตรวจอะไร"
           },
           {
             "label": "D",
             "text": "เม็ดเลือดแดงแตกในผู้ที่พร่องเอนไซม์ G6PD",
-            "explanation": "✗ ผิด — ภาวะเม็ดเลือดแดงแตกใน G6PD deficiency เป็นข้อห้ามของ pegloticase และ rasburicase"
+            "explanation": "✗ ผิด — Hemolysis และ methemoglobinemia ในผู้พร่อง G6PD เป็น boxed warning ของ uricase ได้แก่ pegloticase และ rasburicase เพราะการเปลี่ยน urate เป็น allantoin ผลิต hydrogen peroxide Febuxostat ยับยั้ง xanthine oxidase จึงไม่ผลิต H2O2 ข้อนี้จะถูกหากโจทย์ถามว่าต้องตรวจอะไรก่อนให้ pegloticase หรือ rasburicase"
           }
         ],
-        "key_takeaway": "Febuxostat → ระวังหัวใจ (CARES)"
+        "key_takeaway": "Febuxostat → ระวังหัวใจ (CARES → FDA boxed warning 2019)"
       }
     },
     {
-      "scenario": "ผู้ป่วยชายอายุ 55 ปี ปลูกถ่ายไตมา 3 ปี ใช้ azathioprine 100 mg/วัน, cyclosporine และ prednisolone 5 mg/วัน เกิดเกาต์ที่มี flare บ่อย eGFR 55 HLA-B*5801 เป็นลบ แพทย์ต้องการเริ่ม ULT และยังต้องการคง azathioprine ไว้ ข้อใดเหมาะสมที่สุด",
+      "scenario": "ผู้ป่วยชายอายุ 54 ปี เป็นเกาต์ ใช้ allopurinol 300 mg/วัน serum urate 5.6 mg/dL มีประวัติปวดเอวจากนิ่วซ้ำ 2 ครั้ง ภาพรังสีธรรมดามองไม่เห็นนิ่ว แต่ CT พบนิ่วขนาด 6 mm ในไตซ้าย วิเคราะห์นิ่วที่หลุดออกมาครั้งก่อนเป็น uric acid 100% ตรวจปัสสาวะพบ urine pH 5.0–5.3 ทุกครั้ง ปริมาณปัสสาวะ 24 ชั่วโมง 1.2 L, serum K 4.1 mEq/L, eGFR 75 ไม่ได้ใช้ ACEI/ARB หรือยาขับปัสสาวะชนิดสงวนโพแทสเซียม การดูแลด้วยยาข้อใดเหมาะสมที่สุดเพื่อช่วยละลายนิ่วและป้องกันการเกิดซ้ำ",
       "choices": [
         {
           "label": "A",
-          "text": "Febuxostat 40 mg/วัน ร่วมกับ azathioprine ขนาดเดิม เพราะ febuxostat ไม่ใช่ purine analog"
+          "text": "เพิ่ม probenecid 500 mg วันละ 2 ครั้ง เพื่อลด serum urate ให้ต่ำลงอีก"
         },
         {
           "label": "B",
-          "text": "Allopurinol 100 mg/วัน ร่วมกับ azathioprine ขนาดเดิม และติดตาม CBC"
+          "text": "เพิ่ม hydrochlorothiazide 25 mg/วัน เพื่อลดการเกิดนิ่วซ้ำ"
         },
         {
           "label": "C",
-          "text": "Probenecid 500 mg วันละ 2 ครั้ง เป็นยาตัวแรกเพราะไม่มีปฏิกิริยากับ azathioprine"
+          "text": "ให้ sodium bicarbonate ขนาดสูงจน urine pH มากกว่า 7.5 ตลอดวัน"
         },
         {
           "label": "D",
-          "text": "Allopurinol ขนาดต่ำ และลดขนาด azathioprine เหลือ 25–33% ของขนาดเดิม พร้อมติดตาม CBC ใกล้ชิด"
+          "text": "ให้ potassium citrate (เช่น 30–60 mEq/วัน แบ่งให้ 2–3 ครั้ง) ปรับให้ urine pH ประมาณ 6.0–7.0 ร่วมกับดื่มน้ำให้ปัสสาวะ ≥2–2.5 L/วัน"
         }
       ],
       "correct_answer": "D",
       "difficulty": "hard",
-      "explanation": "XOI ยับยั้งการทำลาย 6-mercaptopurine ทำให้ระดับยาสูงจนกดไขกระดูกรุนแรง หากจำเป็นต้องใช้ allopurinol ร่วมต้องลด azathioprine เหลือ 1/4–1/3 และติดตาม CBC; febuxostat ห้ามใช้ร่วม",
+      "explanation": "ปัจจัยหลักของนิ่วกรดยูริกคือปัสสาวะเป็นกรดจัด (pH <5.5) และปริมาณปัสสาวะน้อย การให้ potassium citrate ปรับ urine pH เป็นประมาณ 6.0–7.0 ร่วมกับดื่มน้ำมาก ทำให้กรดยูริกแตกตัวเป็น urate ที่ละลายน้ำได้ดี จึงละลายนิ่วเดิมและป้องกันนิ่วใหม่",
       "detailed_explanation": {
-        "summary": "XOI ยับยั้งการทำลาย 6-mercaptopurine ทำให้ระดับยาสูงจนกดไขกระดูกรุนแรง หากจำเป็นต้องใช้ allopurinol ร่วมต้องลด azathioprine เหลือ 1/4–1/3 และติดตาม CBC; febuxostat ห้ามใช้ร่วม",
-        "reason": "โจทย์ถามอะไร: ปฏิกิริยาระหว่างยา xanthine oxidase inhibitor กับ azathioprine ในผู้ป่วยปลูกถ่ายไต\n\nหลักการ/กลไกเชิงลึก: Azathioprine ถูกเปลี่ยนเป็น 6-mercaptopurine (6-MP) ซึ่งถูกทำลายได้ 3 ทาง: xanthine oxidase → 6-thiouric acid (ไม่ออกฤทธิ์), TPMT และ HGPRT → 6-thioguanine nucleotides (ออกฤทธิ์/เป็นพิษ) เมื่อยับยั้ง XO ยาจะถูกเบี่ยงไปเป็น 6-TGN มากขึ้น → pancytopenia รุนแรง\n\nทำไมข้อ D ถูก: ฉลากแนะนำว่าหากต้องใช้ allopurinol ร่วม ให้ลด azathioprine/6-MP เหลือ 1/4–1/3 ของขนาดเดิม (เช่น 100 mg → 25–33 mg/วัน) เริ่ม allopurinol ขนาดต่ำ ติดตาม CBC ทุก 1–2 สัปดาห์ในช่วงแรก ทางเลือกอื่นคือเปลี่ยน azathioprine เป็น mycophenolate แต่โจทย์ระบุว่าต้องการคง azathioprine\n\nการประยุกต์กับผู้ป่วยจริง: ผู้ป่วยปลูกถ่ายไตมักเกิด hyperuricemia จาก cyclosporine (ลดการขับ urate ทางไต) และยาขับปัสสาวะ ควรประสานทีมปลูกถ่ายก่อนปรับยากดภูมิคุ้มกัน\n\nจุดที่มักสับสนและกับดักข้อสอบ: Febuxostat แม้ไม่ใช่ purine analog แต่ยังยับยั้ง XO จึงห้ามใช้ร่วมกับ azathioprine/6-MP (contraindicated) ส่วน probenecid ไม่แนะนำเมื่อ eGFR <50–60 ข้อสอบมักหลอกว่า febuxostat ปลอดภัยกว่า\n\nสรุปท่องสอบ: XOI + AZA/6-MP → ลด AZA เหลือ 1/4–1/3 + CBC; febuxostat + AZA = ห้าม",
+        "summary": "นิ่วกรดยูริก (radiolucent) + urine pH ≤5.3 + ปัสสาวะน้อย → urinary alkalinization ด้วย potassium citrate เป้า pH ~6.0–7.0 (ไม่เกิน 7 เพื่อเลี่ยงนิ่ว calcium phosphate) + น้ำ ≥2–2.5 L/วัน; allopurinol เสริมเมื่อมี hyperuricosuria",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วยเกาต์ที่ urate ถึงเป้าแล้ว แต่ยังมีนิ่วกรดยูริกซ้ำ (radiolucent) ปัสสาวะเป็นกรดจัด (pH 5.0–5.3) และปริมาณน้อย โจทย์ถามยาที่เหมาะที่สุดเพื่อละลายนิ่วและป้องกันซ้ำ จึงทดสอบความเข้าใจพยาธิสรีรวิทยาของนิ่วกรดยูริกและหลัก urinary alkalinization\n\nหลักการ/กลไกเชิงลึก: นิ่วกรดยูริกเกิดจากสามปัจจัย ได้แก่ urine pH ต่ำ (สำคัญที่สุด) ปริมาณปัสสาวะน้อย และ hyperuricosuria กรดยูริกมี pKa ประมาณ 5.5 ที่ pH 5.0 ส่วนใหญ่อยู่ในรูปกรดยูริกที่ไม่แตกตัวซึ่งละลายน้ำได้ต่ำมาก (~90–100 mg/L) แต่ที่ pH 6.5 ส่วนใหญ่แตกตัวเป็น urate anion ที่ละลายได้ดีกว่ามาก ผู้ป่วยเกาต์ เบาหวาน และ metabolic syndrome มักมีปัสสาวะเป็นกรดจัดเพราะ insulin resistance ลดการสร้าง ammonia ที่ท่อไต (impaired ammoniagenesis) ทำให้ต้องขับกรดออกในรูป titratable acid แทน ส่วน citrate เมื่อถูก metabolize ที่ตับจะได้ bicarbonate 3 equivalent ต่อโมเลกุล จึงทำให้ปัสสาวะเป็นด่าง\n\nทำไมข้อ D ถูก: Potassium citrate 30–60 mEq/วัน แบ่งให้ 2–3 ครั้ง ปรับขนาดให้ urine pH อยู่ประมาณ 6.0–6.5 สำหรับป้องกัน และ 6.5–7.0 หากต้องการละลายนิ่ว ร่วมกับดื่มน้ำให้ได้ปัสสาวะ ≥2–2.5 ลิตร/วัน เป็นการแก้ที่ต้นเหตุโดยตรง นิ่วกรดยูริกละลายได้ด้วยยารับประทาน (oral chemolysis) จึงเหมาะกับนิ่ว 6 mm ที่ไม่อุดตันนี้\n\nหลักฐานและแนวทางเวชปฏิบัติ: AUA Medical Management of Kidney Stones guideline แนะนำให้ potassium citrate แก่ผู้ป่วยนิ่วกรดยูริกเพื่อเพิ่ม urine pH ให้เหมาะสม ให้ดื่มน้ำจนได้ปัสสาวะอย่างน้อย 2.5 ลิตร/วัน และไม่แนะนำ allopurinol เป็นยาแรกของนิ่วกรดยูริก (ใช้เมื่อ alkalinization ไม่พอหรือมี hyperuricosuria) EAU Urolithiasis guideline แนะนำ alkaline citrate เพื่อปรับ pH ไว้ราว 6.2–6.8 สำหรับละลายและป้องกัน\n\nการประยุกต์กับผู้ป่วยจริง: เริ่ม potassium citrate ER 10 mEq (1,080 mg) 1–2 เม็ด วันละ 2–3 ครั้งหลังอาหาร กลืนทั้งเม็ดพร้อมน้ำเต็มแก้ว (หรือรูปผงละลายน้ำ) สอนผู้ป่วยวัด urine pH ด้วยแถบกระดาษทดสอบช่วงเช้าและก่อนนอน ปรับขนาดตามค่า ดื่มน้ำกระจายทั้งวันรวมถึงก่อนนอน ลดเนื้อสัตว์ปริมาณมากและเกลือ และให้ allopurinol ต่อสำหรับเกาต์\n\nการติดตามและสัญญาณอันตราย: ตรวจ serum K และ SCr หลังเริ่ม 1–4 สัปดาห์และเป็นระยะ ระวัง hyperkalemia หากไตแย่ลงหรือเพิ่ม ACEI/ARB, spironolactone, NSAIDs สังเกตใจสั่น อ่อนแรง ปวดท้อง ถ่ายดำ ติดตามขนาดนิ่วด้วยภาพภายใน 1–3 เดือน หากปวดรุนแรง ไข้ หรือปัสสาวะไม่ออก ต้องพบแพทย์ทันที (นิ่วอุดตันร่วมติดเชื้อ)\n\nจุดที่มักสับสนและกับดักข้อสอบ: serum urate ที่ถึงเป้าไม่ได้หมายความว่านิ่วกรดยูริกจะหยุด เพราะต้นเหตุหลักอยู่ที่ pH ปัสสาวะ uricosuric เพิ่มกรดยูริกในปัสสาวะจึงยิ่งก่อนิ่ว ส่วน sodium bicarbonate ใช้ได้เป็นทางเลือกแต่ภาระ sodium เพิ่มการขับ calcium ในปัสสาวะ และ pH เกิน 7 เสี่ยงนิ่ว calcium phosphate\n\nสรุปท่องสอบ: Uric acid stone = radiolucent + urine pH ต่ำ → K-citrate เป้า pH 6.0–6.5 (ละลาย 6.5–7.0) + น้ำ ≥2.5 L + allopurinol ถ้า hyperuricosuria; ห้าม uricosuric; ระวัง K สูง",
         "choices": [
           {
             "label": "A",
-            "text": "Febuxostat 40 mg/วัน ร่วมกับ azathioprine ขนาดเดิม เพราะ febuxostat ไม่ใช่ purine analog",
-            "explanation": "✗ ผิด — Febuxostat ยับยั้ง XO เช่นกัน ห้ามใช้ร่วมกับ azathioprine เพราะกดไขกระดูกรุนแรง"
+            "text": "เพิ่ม probenecid 500 mg วันละ 2 ครั้ง เพื่อลด serum urate ให้ต่ำลงอีก",
+            "explanation": "✗ ผิด — Probenecid ยับยั้ง URAT1 ทำให้ขับกรดยูริกทางปัสสาวะเพิ่มขึ้น ซึ่งยิ่งเพิ่มความอิ่มตัวของกรดยูริกในปัสสาวะที่เป็นกรดอยู่แล้ว ทำให้นิ่วโตและเกิดซ้ำ ประวัตินิ่วกรดยูริกจึงเป็นข้อห้ามของ uricosuric อีกทั้ง serum urate 5.6 ถึงเป้าแล้ว ข้อนี้จะเหมาะในผู้ป่วยเกาต์ที่ไม่มีประวัตินิ่ว CrCl ≥50 และใช้ XOI ขนาดสูงสุดแล้ว urate ยังไม่ถึงเป้า"
           },
           {
             "label": "B",
-            "text": "Allopurinol 100 mg/วัน ร่วมกับ azathioprine ขนาดเดิม และติดตาม CBC",
-            "explanation": "✗ ผิด — ไม่ปรับขนาด azathioprine ทำให้ 6-MP สะสม เกิด pancytopenia แม้ติดตาม CBC ก็ไม่เพียงพอ"
+            "text": "เพิ่ม hydrochlorothiazide 25 mg/วัน เพื่อลดการเกิดนิ่วซ้ำ",
+            "explanation": "✗ ผิด — Thiazide ลดการขับ calcium ในปัสสาวะจึงใช้ป้องกันนิ่ว calcium oxalate/phosphate ในผู้ที่มี hypercalciuria แต่ไม่ช่วยนิ่วกรดยูริกซึ่งเกิดจาก pH ต่ำ ทั้งยังเพิ่ม serum urate และกระตุ้น gout flare ข้อนี้จะถูกหากผู้ป่วยมีนิ่ว calcium oxalate ซ้ำร่วมกับ idiopathic hypercalciuria และไม่เป็นเกาต์"
           },
           {
             "label": "C",
-            "text": "Probenecid 500 mg วันละ 2 ครั้ง เป็นยาตัวแรกเพราะไม่มีปฏิกิริยากับ azathioprine",
-            "explanation": "✗ ผิด — Probenecid ได้ผลลดลงเมื่อ eGFR ลด และ ACR 2020 แนะนำ XOI เป็นทางเลือกแรกมากกว่า uricosuric"
+            "text": "ให้ sodium bicarbonate ขนาดสูงจน urine pH มากกว่า 7.5 ตลอดวัน",
+            "explanation": "✗ ผิด — Sodium bicarbonate ทำให้ปัสสาวะเป็นด่างได้และใช้ได้เมื่อทน potassium ไม่ได้หรือมี hyperkalemia แต่ภาระ sodium เพิ่มการขับ calcium ในปัสสาวะและความดันโลหิต การดัน urine pH เกิน 7–7.5 ยังทำให้ calcium phosphate ตกผลึกเกิดนิ่วชนิดใหม่ ข้อนี้จะใกล้ถูกหากใช้ sodium bicarbonate ขนาดพอเหมาะเป้า pH 6.0–7.0 ในผู้ป่วยที่มี CKD ขั้นรุนแรงหรือ K สูง"
           },
           {
             "label": "D",
-            "text": "Allopurinol ขนาดต่ำ และลดขนาด azathioprine เหลือ 25–33% ของขนาดเดิม พร้อมติดตาม CBC ใกล้ชิด",
-            "explanation": "✓ ถูก — ลดขนาด azathioprine เหลือ 25–33% เมื่อใช้ร่วมกับ allopurinol และติดตาม CBC เป็นแนวทางที่ถูกต้อง"
+            "text": "ให้ potassium citrate (เช่น 30–60 mEq/วัน แบ่งให้ 2–3 ครั้ง) ปรับให้ urine pH ประมาณ 6.0–7.0 ร่วมกับดื่มน้ำให้ปัสสาวะ ≥2–2.5 L/วัน",
+            "explanation": "✓ ถูก — นิ่วกรดยูริกเกิดจากปัสสาวะเป็นกรดจัดเป็นหลัก potassium citrate ถูก metabolize ได้ bicarbonate ทำให้ urine pH สูงขึ้นเป็นประมาณ 6.0–7.0 กรดยูริกแตกตัวเป็น urate ที่ละลายได้ดีกว่ามาก จึงละลายนิ่วเดิมและป้องกันนิ่วใหม่ ร่วมกับดื่มน้ำให้ปัสสาวะ ≥2–2.5 L/วัน ตามแนวทาง AUA/EAU ผู้ป่วย K ปกติ ไม่มียาเพิ่ม K จึงใช้ได้ปลอดภัย"
           }
         ],
-        "key_takeaway": "Allopurinol + azathioprine → ลด AZA 2/3–3/4"
+        "key_takeaway": "นิ่วกรดยูริก = ปัสสาวะกรด → K-citrate ดัน pH 6–7 + ดื่มน้ำ (ไม่ใช่ uricosuric)",
+        "calculation_steps": [
+          "กรดยูริกมี pKa ≈ 5.5 ใช้ Henderson–Hasselbalch: สัดส่วน urate (แตกตัว) / uric acid (ไม่แตกตัว) = 10^(pH − pKa)",
+          "ที่ urine pH 5.0: 10^(5.0 − 5.5) = 10^−0.5 ≈ 0.32 → แตกตัวเพียง ~24% ส่วนที่ไม่แตกตัว (ละลายยาก) ~76%",
+          "ที่ urine pH 6.5: 10^(6.5 − 5.5) = 10^1 = 10 → แตกตัว ~91% ส่วนที่ไม่แตกตัวเหลือ ~9%",
+          "ดังนั้นการเพิ่ม urine pH จาก 5.0 เป็น 6.5 ลดสัดส่วนกรดยูริกที่ตกผลึกได้ลงราว 8 เท่า และเพิ่มความสามารถในการละลายรวมราว 10 เท่า"
+        ]
       }
     },
     {
@@ -584,33 +604,33 @@
       ],
       "correct_answer": "B",
       "difficulty": "medium",
-      "explanation": "Probenecid เพิ่มการขับกรดยูริกทางปัสสาวะ ทำให้เสี่ยงเกิดนิ่วกรดยูริก จึงไม่ควรใช้ในผู้มีประวัตินิ่ว (รวมถึง CrCl <50 และผู้ที่สร้าง urate มาก)",
+      "explanation": "Probenecid ยับยั้ง URAT1 เพิ่มการขับกรดยูริกทางปัสสาวะ จึงเพิ่มความเสี่ยงนิ่วกรดยูริก ประวัตินิ่วกรดยูริกจึงเป็นข้อห้ามสำคัญ (นอกจากนี้ไม่ควรใช้เมื่อ CrCl <50 และควรระวังในผู้ที่ขับกรดยูริกทางปัสสาวะสูง)",
       "detailed_explanation": {
-        "summary": "Probenecid เพิ่มการขับกรดยูริกทางปัสสาวะ ทำให้เสี่ยงเกิดนิ่วกรดยูริก จึงไม่ควรใช้ในผู้มีประวัตินิ่ว (รวมถึง CrCl <50 และผู้ที่สร้าง urate มาก)",
-        "reason": "โจทย์ถามอะไร: ข้อห้ามใช้ยา uricosuric กลุ่ม probenecid\n\nหลักการ/กลไกเชิงลึก: Probenecid ยับยั้ง URAT1 (และ OAT) ที่ proximal tubule ลดการดูดกลับ urate → urate ในปัสสาวะเพิ่มขึ้นมาก โดยเฉพาะในปัสสาวะที่เป็นกรด urate จะตกผลึกเป็นนิ่ว ประสิทธิภาพลดลงมากเมื่อ CrCl <50 mL/min และแทบไม่ได้ผลเมื่อ <30\n\nทำไมข้อ B ถูก: ประวัตินิ่วกรดยูริกเป็นข้อห้ามสำคัญ ACR 2020 แนะนำ XOI (allopurinol) เป็น ULT แรก และ uricosuric เหมาะกับผู้ที่ไตทำงานดี ไม่มีนิ่ว และเป็น underexcretor\n\nการประยุกต์กับผู้ป่วยจริง: ขนาดยา: 250 mg วันละ 2 ครั้ง 1 สัปดาห์ แล้ว 500 mg วันละ 2 ครั้ง (สูงสุด 2 g/วัน) แนะนำดื่มน้ำ ≥2 ลิตร/วัน ระวัง DDI: เพิ่มระดับ penicillin, cephalosporin, methotrexate, NSAIDs; salicylate ต้านฤทธิ์ uricosuric\n\nจุดที่มักสับสนและกับดักข้อสอบ: eGFR 80 และการดื่มน้ำมากเป็นปัจจัยที่เอื้อต่อการใช้ probenecid ไม่ใช่ข้อห้าม amlodipine ไม่มีปฏิกิริยาสำคัญ ต้องแยกว่า ‘ข้อห้าม’ คือ นิ่ว + ไตเสื่อม + overproducer\n\nสรุปท่องสอบ: Probenecid ห้าม: นิ่ว / CrCl <50 / overproducer — ดื่มน้ำมาก ๆ",
+        "summary": "Uricosuric (probenecid, benzbromarone, lesinurad) ห้ามในผู้มีประวัตินิ่วกรดยูริกและได้ผลน้อยเมื่อ CrCl <50 ส่วน eGFR 80, amlodipine และการดื่มน้ำมากไม่ใช่ข้อห้าม (การดื่มน้ำมากเป็นสิ่งที่ต้องแนะนำ)",
+        "reason": "โจทย์ถามอะไร: แพทย์พิจารณาใช้ probenecid ซึ่งเป็น uricosuric และถามว่าปัจจัยใดของผู้ป่วยเป็นข้อห้ามหรือเหตุผลสำคัญที่สุดที่ไม่ควรใช้ จึงทดสอบความเข้าใจเภสัชวิทยาของ uricosuric และการคัดผู้ป่วยที่เหมาะสม\n\nหลักการ/กลไกเชิงลึก: ที่ proximal tubule กรดยูริกถูกกรองอิสระที่ glomerulus แล้วถูกดูดกลับประมาณ 90% ผ่าน URAT1 (SLC22A12) ที่ apical membrane และออกทาง GLUT9 (SLC2A9) ที่ basolateral ส่วนการหลั่งออกผ่าน OAT1/OAT3 และ ABCG2 Probenecid ยับยั้ง URAT1 (ลดการดูดกลับ) จึงเพิ่ม fractional excretion ของ urate และลด serum urate แต่ผลที่ตามมาคือกรดยูริกในปัสสาวะสูงขึ้นมาก โดยเฉพาะช่วงสัปดาห์แรก ในปัสสาวะที่เป็นกรด กรดยูริกจะตกผลึกเป็นนิ่วหรือเกิด uric acid nephropathy ได้ นอกจากนี้ probenecid ยังยับยั้ง OAT1/OAT3 ซึ่งเป็นที่มาของปฏิกิริยากับ penicillin, methotrexate, cephalosporin และ NSAIDs บางตัว และต้องมี GFR เพียงพอจึงจะได้ผล\n\nทำไมข้อ B ถูก: ประวัตินิ่วกรดยูริกเป็นข้อห้ามที่สำคัญที่สุดในตัวเลือก เพราะยาจะเพิ่มกรดยูริกในปัสสาวะซึ่งเป็นวัตถุดิบของนิ่วโดยตรง ผู้ป่วยกลุ่มนี้ควรใช้ xanthine oxidase inhibitor ซึ่งลดทั้ง serum urate และกรดยูริกในปัสสาวะ\n\nหลักฐานและแนวทางเวชปฏิบัติ: ฉลาก probenecid ระบุข้อห้ามในผู้มีประวัตินิ่วกรดยูริก blood dyscrasias และเด็กอายุ <2 ปี ACR 2012 แนะนำไม่ใช้ probenecid เป็นยาเดี่ยวเมื่อ CrCl <50 mL/min ACR 2020 แนะนำ XOI (allopurinol) เป็นยาแรกเหนือ uricosuric และระบุว่าการตรวจ urine urate ก่อนให้ uricosuric ไม่จำเป็นในทุกราย (conditional against routine testing) แต่การมีนิ่วเป็นเหตุให้หลีกเลี่ยงยากลุ่มนี้\n\nการประยุกต์กับผู้ป่วยจริง: หากใช้ probenecid ในผู้ที่เหมาะสม เริ่ม 250 mg วันละ 2 ครั้ง 1 สัปดาห์ แล้วเพิ่มเป็น 500 mg วันละ 2 ครั้ง ปรับได้ถึง 2 g/วัน แนะนำดื่มน้ำ ≥2–2.5 ลิตร/วัน อาจให้ปัสสาวะเป็นด่างช่วงแรก หลีกเลี่ยง salicylate ขนาดสูงซึ่งต้านฤทธิ์ uricosuric และตรวจสอบยาร่วม เช่น methotrexate, penicillin, ketorolac\n\nการติดตามและสัญญาณอันตราย: ปวดเอวร้าวลงขาหนีบ ปัสสาวะเป็นเลือด ปัสสาวะลดลง ผื่น คลื่นไส้ และ serum urate ไม่ลดลงตามคาดในผู้ที่ไตเสื่อม ติดตาม SCr และ urate เป็นระยะ\n\nจุดที่มักสับสนและกับดักข้อสอบ: eGFR 80 เป็นภาวะที่ทำให้ probenecid ได้ผลดี ไม่ใช่ข้อห้าม การดื่มน้ำ 2.5 ลิตรเป็นคำแนะนำที่ถูกต้องเมื่อใช้ uricosuric ส่วน amlodipine ไม่มีปฏิกิริยาสำคัญ (ต่างจาก losartan ที่เสริมฤทธิ์ uricosuric เล็กน้อย) ระวังสับสนกับข้อห้ามของ benzbromarone ซึ่งเน้นโรคตับ\n\nสรุปท่องสอบ: Probenecid ห้าม: นิ่วกรดยูริก, CrCl <50 (ไม่ได้ผล), overproducer; DDI: MTX, penicillin (ยับยั้ง OAT); ต้องดื่มน้ำมาก",
         "choices": [
           {
             "label": "A",
             "text": "eGFR 80 mL/min/1.73m²",
-            "explanation": "✗ ผิด — ไตทำงานดีเป็นเงื่อนไขที่ทำให้ probenecid ได้ผล ไม่ใช่ข้อห้าม"
+            "explanation": "✗ ผิด — eGFR 80 mL/min/1.73m² แสดงว่าไตทำงานดี ซึ่งเป็นเงื่อนไขที่ทำให้ probenecid ออกฤทธิ์ได้เต็มที่ เพราะยาต้องอาศัยการกรองและการทำงานของท่อไต ข้อนี้จะเป็นเหตุผลที่ถูกหากค่า eGFR หรือ CrCl ต่ำกว่า 50 mL/min ซึ่ง ACR 2012 แนะนำไม่ให้ใช้ probenecid เป็นยาเดี่ยวเพราะประสิทธิภาพลดลงมาก"
           },
           {
             "label": "B",
             "text": "มีประวัตินิ่วกรดยูริกในไต (uric acid nephrolithiasis)",
-            "explanation": "✓ ถูก — Uricosuric เพิ่ม urate ในปัสสาวะ เสี่ยงนิ่วกรดยูริกซ้ำ จึงเป็นข้อห้าม"
+            "explanation": "✓ ถูก — Probenecid ยับยั้ง URAT1 ทำให้กรดยูริกถูกขับออกทางปัสสาวะมากขึ้น ในผู้ที่มีประวัตินิ่วกรดยูริกจะเพิ่มความเสี่ยงนิ่วซ้ำและ urate nephropathy อย่างมาก จึงเป็นข้อห้ามตามฉลากยา ผู้ป่วยกลุ่มนี้ควรใช้ allopurinol หรือ febuxostat ซึ่งลดทั้ง urate ในเลือดและในปัสสาวะ ร่วมกับดื่มน้ำมากและพิจารณา urinary alkalinization"
           },
           {
             "label": "C",
             "text": "ใช้ amlodipine ควบคุมความดันโลหิต",
-            "explanation": "✗ ผิด — Amlodipine ไม่มีปฏิกิริยาสำคัญกับ probenecid"
+            "explanation": "✗ ผิด — Amlodipine เป็น dihydropyridine CCB ที่ไม่มีปฏิกิริยาสำคัญกับ probenecid และไม่เพิ่ม serum urate จริง ๆ แล้ว ACR 2020 ไม่ได้ห้าม amlodipine ในผู้ป่วยเกาต์ และ CCB บางตัวสัมพันธ์กับความเสี่ยงเกาต์ที่ลดลง ข้อนี้จะเป็นประเด็นได้หากยาร่วมเป็น methotrexate หรือ penicillin ซึ่ง probenecid ยับยั้งการขับทาง OAT ทำให้ระดับยาสูงขึ้น"
           },
           {
             "label": "D",
             "text": "ดื่มน้ำวันละ 2.5 ลิตร",
-            "explanation": "✗ ผิด — การดื่มน้ำมากเป็นคำแนะนำที่ควรทำเมื่อใช้ uricosuric เพื่อลดนิ่ว"
+            "explanation": "✗ ผิด — การดื่มน้ำวันละ 2–2.5 ลิตรเป็นคำแนะนำที่ถูกต้องและควรส่งเสริมเมื่อใช้ uricosuric เพราะเจือจางกรดยูริกในปัสสาวะและลดความเสี่ยงนิ่ว ไม่ใช่ข้อห้าม ข้อนี้จะเป็นปัญหาเฉพาะในผู้ป่วยที่ต้องจำกัดน้ำ เช่น heart failure รุนแรงหรือ hyponatremia ซึ่งทำให้การใช้ uricosuric ปลอดภัยน้อยลง"
           }
         ],
-        "key_takeaway": "Uricosuric + ประวัตินิ่ว = ห้าม"
+        "key_takeaway": "Uricosuric + ประวัตินิ่ว = ห้าม; CrCl <50 = ไม่ได้ผล"
       }
     },
     {
@@ -635,33 +655,33 @@
       ],
       "correct_answer": "C",
       "difficulty": "hard",
-      "explanation": "Benzbromarone เป็น uricosuric (ยับยั้ง URAT1) ที่ยังได้ผลเมื่อ eGFR ~30 แต่มีรายงานตับอักเสบรุนแรง/ตับวายถึงแก่ชีวิต จึงต้องติดตาม LFT",
+      "explanation": "Benzbromarone เป็น uricosuric (ยับยั้ง URAT1) ที่ยังได้ผลเมื่อ eGFR ~30 จึงเป็นทางเลือกเมื่อ HLA-B*5801 บวกและมีโรคหัวใจ แต่มีรายงานตับอักเสบรุนแรง/ตับวายถึงแก่ชีวิต (idiosyncratic, ผ่าน CYP2C9 metabolite) จึงต้องติดตาม LFT",
       "detailed_explanation": {
-        "summary": "Benzbromarone เป็น uricosuric (ยับยั้ง URAT1) ที่ยังได้ผลเมื่อ eGFR ~30 แต่มีรายงานตับอักเสบรุนแรง/ตับวายถึงแก่ชีวิต จึงต้องติดตาม LFT",
-        "reason": "โจทย์ถามอะไร: เหตุผลการเลือก benzbromarone และการติดตามความปลอดภัย\n\nหลักการ/กลไกเชิงลึก: Benzbromarone ยับยั้ง URAT1 ที่ proximal tubule อย่างแรง ต่างจาก probenecid ตรงที่ยังลด urate ได้ในผู้ป่วย eGFR ลดลงถึงประมาณ 20–30 mL/min ถูกเมแทบอลิซึมผ่าน CYP2C9 และเกิด reactive metabolite ทำให้เกิดพิษต่อตับแบบ idiosyncratic จึงถูกถอนในหลายประเทศ แต่ยังใช้ในบางประเทศในเอเชียและยุโรป\n\nทำไมข้อ C ถูก: ผู้ป่วย HLA-B*5801 บวก (เลี่ยง allopurinol) และเคยมี MI (febuxostat ควรหลีกเลี่ยงตามคำเตือน CARES) eGFR 35 ทำให้ probenecid ไม่ได้ผล benzbromarone จึงเป็นทางเลือกที่สมเหตุผล และสิ่งสำคัญที่สุดที่ต้องติดตามคือ LFT ก่อนเริ่มและเป็นระยะ (เช่น ทุกเดือนใน 6 เดือนแรก)\n\nการประยุกต์กับผู้ป่วยจริง: สอนผู้ป่วยสังเกตอาการตับอักเสบ (ตัวเหลือง ตาเหลือง ปัสสาวะสีเข้ม คลื่นไส้ อ่อนเพลีย) ดื่มน้ำมาก ๆ ให้ยาป้องกัน flare ร่วม และระวังใช้ร่วมกับ warfarin (ยับยั้ง CYP2C9 เพิ่ม INR)\n\nจุดที่มักสับสนและกับดักข้อสอบ: G6PD เป็นการคัดกรองก่อน pegloticase/rasburicase; agranulocytosis ไม่ใช่ ADR เด่นของ benzbromarone; QT ไม่ใช่ประเด็นหลัก ข้อสอบมักหลอกให้คิดว่า uricosuric ทุกตัวใช้ไม่ได้ใน CKD แต่ benzbromarone ยังได้ผลใน CKD ปานกลาง\n\nสรุปท่องสอบ: Benzbromarone = URAT1 แรง ใช้ได้ถึง eGFR ~30 แต่ ‘ตับ’ คือจุดตาย",
+        "summary": "Benzbromarone → hepatotoxicity รุนแรง (ถอนจากหลายประเทศ) ต้องตรวจ LFT ก่อนและระหว่างใช้ โดยเฉพาะ 6 เดือนแรก; CBC/agranulocytosis, G6PD และ QT ไม่ใช่ปัญหาหลักของยานี้",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วยไทยเป็นเกาต์มี tophus แต่ใช้ allopurinol ไม่ได้ (HLA-B*5801 บวก) และมีประวัติ MI เมื่อ 1 ปีก่อน (ทำให้ febuxostat ไม่น่าใช้เพราะคำเตือน CV death) แพทย์จึงเลือก benzbromarone โจทย์ถามว่าเภสัชกรต้องติดตามผลข้างเคียงใดสำคัญที่สุด\n\nหลักการ/กลไกเชิงลึก: Benzbromarone เป็น benzofuran derivative ที่ยับยั้ง URAT1 อย่างแรง (แรงกว่า probenecid) จึงเพิ่มการขับกรดยูริกทางไต จุดเด่นคือยังได้ผลในผู้ป่วยที่ eGFR ลดลงถึงประมาณ 20–30 mL/min ซึ่ง probenecid ใช้ไม่ได้ ยาถูก metabolize ที่ตับผ่าน CYP2C9 เป็น 6-hydroxybenzbromarone และ metabolite ที่ไวต่อปฏิกิริยา (reactive quinone/catechol) ซึ่งทำลาย mitochondria ของเซลล์ตับ (ยับยั้ง respiratory chain, uncoupling, ยับยั้ง β-oxidation) จึงเกิด idiosyncratic hepatotoxicity ที่รุนแรงถึงตับวายและเสียชีวิต หรือต้องปลูกถ่ายตับ ผู้ที่มี CYP2C9 polymorphism หรือใช้ยาที่ยับยั้ง CYP2C9 อาจมีระดับยาเปลี่ยนแปลง\n\nทำไมข้อ C ถูก: พิษต่อตับเป็นผลข้างเคียงร้ายแรงและเฉพาะของ benzbromarone จนทำให้ถูกถอนจากตลาดในหลายประเทศ (เริ่มในยุโรปปี 2003) ยังใช้ได้ในบางประเทศรวมถึงในเอเชีย ภายใต้การเลือกผู้ป่วยและติดตาม LFT อย่างใกล้ชิด จึงเป็นสิ่งที่ต้องติดตามสำคัญที่สุด\n\nหลักฐานและแนวทางเวชปฏิบัติ: EULAR 2016 ระบุว่า benzbromarone ร่วมหรือไม่ร่วมกับ allopurinol ใช้ได้ในผู้ที่ไม่ถึงเป้า ยกเว้นผู้ที่ eGFR <30 และต้องติดตามความเสี่ยงต่อตับ ACR 2020 ไม่ได้รวม benzbromarone เพราะไม่มีจำหน่ายในสหรัฐฯ การทบทวนข้อมูลความปลอดภัยพบอัตราตับวายต่ำแต่รุนแรง ส่วนใหญ่เกิดในหลายเดือนแรกของการใช้ยา\n\nการประยุกต์กับผู้ป่วยจริง: ตรวจ LFT ก่อนเริ่ม หลีกเลี่ยงในผู้ที่มีโรคตับหรือดื่มแอลกอฮอล์มาก เริ่ม 25–50 mg/วัน ปรับได้ถึง 100 mg/วัน ตรวจ LFT ทุกเดือนใน 6 เดือนแรกแล้วเป็นระยะ ดื่มน้ำ ≥2 ลิตร/วัน พิจารณา urinary alkalinization ช่วงแรก ให้ยาป้องกัน flare ร่วม และทบทวนยาที่มีผลต่อตับหรือ CYP2C9 เช่น warfarin (benzbromarone เพิ่มฤทธิ์ warfarin ได้)\n\nการติดตามและสัญญาณอันตราย: สอนผู้ป่วยให้หยุดยาและมาพบแพทย์ทันทีหากมีอ่อนเพลียผิดปกติ เบื่ออาหาร คลื่นไส้ อาเจียน ปวดชายโครงขวา ปัสสาวะสีเข้ม ตัวเหลืองตาเหลือง หยุดยาหาก ALT >3 เท่าของค่าปกติร่วมกับอาการ หรือสูงต่อเนื่อง และติดตามนิ่วในไตด้วย\n\nจุดที่มักสับสนและกับดักข้อสอบ: agranulocytosis/CBC เป็นประเด็นของ azathioprine, clozapine หรือ antithyroid drug ไม่ใช่ benzbromarone G6PD เป็นประเด็นของ uricase (pegloticase, rasburicase) และ QT prolongation ไม่ใช่ปัญหาของ uricosuric นอกจากนี้อย่าเหมารวมว่า uricosuric ทุกตัวใช้ไม่ได้ใน eGFR <50 เพราะ benzbromarone ยังได้ผลถึงราว 30\n\nสรุปท่องสอบ: HLA-B*5801 บวก + โรคหัวใจ → พิจารณา benzbromarone (ได้ผลถึง eGFR ~30) → เฝ้า LFT ทุกเดือนช่วงแรก + ดื่มน้ำ + ระวังนิ่ว",
         "choices": [
           {
             "label": "A",
             "text": "CBC เพื่อเฝ้าระวัง agranulocytosis",
-            "explanation": "✗ ผิด — Agranulocytosis ไม่ใช่ผลข้างเคียงเด่นของ benzbromarone"
+            "explanation": "✗ ผิด — Agranulocytosis ไม่ใช่ผลข้างเคียงเด่นของ benzbromarone การตรวจ CBC ใกล้ชิดเป็นสิ่งสำคัญสำหรับยาอื่น เช่น azathioprine (โดยเฉพาะเมื่อใช้ร่วม allopurinol), methimazole/PTU, clozapine หรือ sulfasalazine ข้อนี้จะถูกหากโจทย์ถามการติดตามที่สำคัญที่สุดของผู้ป่วยที่ใช้ azathioprine หรือ antithyroid drug"
           },
           {
             "label": "B",
             "text": "ระดับเอนไซม์ G6PD ก่อนเริ่มยา",
-            "explanation": "✗ ผิด — การตรวจ G6PD จำเป็นก่อนใช้ pegloticase หรือ rasburicase ไม่ใช่ benzbromarone"
+            "explanation": "✗ ผิด — การตรวจ G6PD ก่อนเริ่มยาจำเป็นสำหรับ uricase ได้แก่ pegloticase และ rasburicase ซึ่งสร้าง hydrogen peroxide ระหว่างเปลี่ยน urate เป็น allantoin ทำให้เม็ดเลือดแดงแตกในผู้พร่อง G6PD ส่วน benzbromarone ยับยั้ง URAT1 ไม่ได้ผลิต oxidant ข้อนี้จะถูกหากแพทย์เลือก pegloticase หรือ rasburicase"
           },
           {
             "label": "C",
             "text": "Liver function test เพื่อเฝ้าระวังพิษต่อตับรุนแรง",
-            "explanation": "✓ ถูก — Benzbromarone มีรายงาน hepatotoxicity รุนแรงจนเสียชีวิต ต้องติดตาม LFT"
+            "explanation": "✓ ถูก — Benzbromarone ทำให้เกิด idiosyncratic hepatotoxicity ที่รุนแรงถึงตับวายและเสียชีวิต ผ่าน reactive metabolite จาก CYP2C9 ที่ทำลาย mitochondria จึงถูกถอนในหลายประเทศ เมื่อใช้ต้องตรวจ LFT ก่อนเริ่มและทุกเดือนใน 6 เดือนแรก สอนสังเกตตัวเหลือง ปัสสาวะสีเข้ม คลื่นไส้ เบื่ออาหาร และหยุดยาทันทีเมื่อมีอาการ"
           },
           {
             "label": "D",
             "text": "คลื่นไฟฟ้าหัวใจเพื่อเฝ้าระวัง QT prolongation",
-            "explanation": "✗ ผิด — QT prolongation ไม่ใช่ผลข้างเคียงที่สำคัญของ benzbromarone"
+            "explanation": "✗ ผิด — Benzbromarone ไม่มีผลยืด QT interval ที่มีนัยสำคัญ การตรวจ ECG เพื่อเฝ้าระวัง QT จำเป็นสำหรับยาอื่น เช่น hydroxychloroquine ร่วมกับ azithromycin, macrolide, fluoroquinolone หรือ antipsychotic แม้ผู้ป่วยมีประวัติ MI แต่ไม่ได้ทำให้ QT เป็นประเด็นหลัก ข้อนี้จะถูกหากผู้ป่วยได้รับยาที่ยืด QT หลายตัวร่วมกัน"
           }
         ],
-        "key_takeaway": "Benzbromarone → เฝ้าตับ (LFT)"
+        "key_takeaway": "Benzbromarone → เฝ้าตับ (LFT); ได้ผลแม้ eGFR ~30"
       }
     },
     {
@@ -686,33 +706,33 @@
       ],
       "correct_answer": "A",
       "difficulty": "easy",
-      "explanation": "ACR 2020 แนะนำอย่างหนักให้ยาป้องกัน flare (colchicine, NSAIDs หรือ prednisolone ขนาดต่ำ) ร่วมกับการเริ่ม ULT นาน 3–6 เดือน และประเมินต่อหากยังมี flare",
+      "explanation": "ACR 2020 แนะนำอย่างหนัก (strong) ให้ยาป้องกัน flare (colchicine, NSAIDs หรือ prednisolone ขนาดต่ำ) ร่วมกับการเริ่ม ULT นาน 3–6 เดือน และประเมินต่อเนื่อง ให้ต่อหากยังมี flare",
       "detailed_explanation": {
-        "summary": "ACR 2020 แนะนำอย่างหนักให้ยาป้องกัน flare (colchicine, NSAIDs หรือ prednisolone ขนาดต่ำ) ร่วมกับการเริ่ม ULT นาน 3–6 เดือน และประเมินต่อหากยังมี flare",
-        "reason": "โจทย์ถามอะไร: ระยะเวลาของ anti-inflammatory prophylaxis ขณะเริ่ม ULT\n\nหลักการ/กลไกเชิงลึก: เมื่อ serum urate ลดลงเร็ว ผลึก MSU ที่เกาะในข้อจะละลายและหลุดออก (crystal remodeling/shedding) กระตุ้นการอักเสบ ทำให้เกิด flare บ่อยในช่วงเดือนแรก ๆ ของ ULT การให้ยาต้านอักเสบขนาดต่ำช่วยลด flare และเพิ่ม adherence\n\nทำไมข้อ A ถูก: ACR 2020 (strong): ให้ prophylaxis 3–6 เดือน แทนการให้ <3 เดือน และประเมินต่อเนื่อง ให้ต่อหากยังมี flare ยาที่ใช้: colchicine 0.5–0.6 mg วันละ 1–2 ครั้ง (ปรับตามไตและ DDI), NSAID ขนาดต่ำ หรือ prednisolone ≤10 mg/วัน\n\nการประยุกต์กับผู้ป่วยจริง: ควรอธิบายผู้ป่วยว่า flare ในช่วงแรกไม่ได้แปลว่ายาลดกรดยูริกไม่ได้ผล ห้ามหยุด allopurinol เอง และหาก flare ให้รักษาโดยไม่หยุด ULT\n\nจุดที่มักสับสนและกับดักข้อสอบ: การให้แค่ 2 สัปดาห์สั้นเกินไป การหยุดเมื่อ urate ถึงเป้าครั้งแรกเร็วเกินไปเพราะผลึกยังละลายไม่หมด การให้ตลอดชีวิตไม่จำเป็นและเพิ่ม ADR (เช่น colchicine myopathy)\n\nสรุปท่องสอบ: Prophylaxis = 3–6 เดือน (ต่อถ้ายังมี flare)",
+        "summary": "ช่วงเริ่ม ULT urate ที่ลดลงทำให้ผลึกหลุดและ flare บ่อยขึ้น จึงให้ prophylaxis 3–6 เดือน (นานกว่านั้นหากยังมี flare หรือมี tophus) ไม่ใช่เพียง 2 สัปดาห์ ไม่หยุดเมื่อ urate ถึงเป้าครั้งแรก และไม่ใช่ตลอดชีวิต",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วยเริ่ม allopurinol พร้อม colchicine 0.6 mg วันละครั้งเพื่อป้องกัน flare โจทย์ถามระยะเวลาที่ควรให้ยาป้องกันตาม ACR 2020 ซึ่งเป็นคำถามพื้นฐานที่ผู้ป่วยถามเภสัชกรบ่อยมากว่า \"ต้องกินยาตัวนี้ไปถึงเมื่อไร\"\n\nหลักการ/กลไกเชิงลึก: เมื่อเริ่ม ULT ระดับ urate ในเลือดลดลงอย่างรวดเร็ว ทำให้ผลึก MSU ที่เกาะอยู่บนผิวกระดูกอ่อนและใน synovium เริ่มละลายและหลุดลอก (crystal shedding) รวมถึงการเปลี่ยนแปลงขนาดผลึกบางส่วน ผลึกที่หลุดออกมาจะถูก macrophage จับและกระตุ้น NLRP3–IL-1β ทำให้เกิด flare ช่วงแรกได้บ่อย ซึ่งเป็นสาเหตุสำคัญที่ผู้ป่วยหยุดยาเองเพราะเข้าใจผิดว่ายาทำให้เกาต์กำเริบ ความเสี่ยงสูงสุดในช่วง 3–6 เดือนแรก และนานกว่านั้นในผู้ที่มีคลังผลึกมาก (tophus) Colchicine ขนาดต่ำยับยั้ง microtubule ใน neutrophil และลดการตอบสนองของ inflammasome จึงลดอุบัติการณ์ flare ช่วงนี้ได้\n\nทำไมข้อ A ถูก: ACR 2020 แนะนำอย่างหนักให้ prophylaxis ร่วมกับการเริ่ม ULT เป็นเวลา 3–6 เดือน โดยประเมินผู้ป่วยต่อเนื่อง และให้ต่อหากผู้ป่วยยังมี flare เกิดขึ้น ตรงกับข้อ A\n\nหลักฐานและแนวทางเวชปฏิบัติ: การศึกษาของ Borstad (2004) พบว่า colchicine prophylaxis 6 เดือนลด flare ระหว่างเริ่ม allopurinol และข้อมูลจาก FACT/APEX พบ flare เพิ่มขึ้นชัดเจนหลังหยุด prophylaxis ที่ 8 สัปดาห์ ACR 2020 เลือก colchicine, NSAIDs หรือ prednisone/prednisolone ขนาดต่ำเป็นยาป้องกัน (strong) EULAR 2016 แนะนำ colchicine 0.5–1 mg/วันใน 6 เดือนแรกของ ULT นอกจากนี้ ACR แนะนำเริ่ม ULT ขนาดต่ำและปรับช้า ซึ่งช่วยลด flare ช่วงแรกได้อีกทาง\n\nการประยุกต์กับผู้ป่วยจริง: ให้ colchicine 0.6 mg วันละครั้ง (หรือวันละ 2 ครั้งหากไตปกติและทนได้) ลดเป็น 0.3 mg/วันเมื่อ CrCl <30 ตรวจยาที่ยับยั้ง CYP3A4/P-gp ทุกครั้ง หากใช้ colchicine ไม่ได้ ให้ NSAIDs ขนาดต่ำร่วมกับ PPI หรือ prednisolone ≤10 mg/วัน อธิบายผู้ป่วยว่า flare ช่วงแรกเป็นสัญญาณว่าผลึกกำลังละลาย ห้ามหยุด allopurinol เอง ให้รักษา flare ตามแผนเดิมโดยคงยาลดกรดยูริกไว้\n\nการติดตามและสัญญาณอันตราย: Colchicine ระยะยาวอาจทำให้ท้องเสีย กล้ามเนื้ออ่อนแรง (neuromyopathy) โดยเฉพาะใน CKD หรือใช้ร่วม statin และอาจกดไขกระดูก ติดตาม CBC, CK เมื่อมีอาการ และ SCr ประเมินจำนวน flare ทุกครั้งที่นัด หากครบ 6 เดือนและไม่มี flare ในช่วงหลัง ให้หยุดยาป้องกันได้\n\nจุดที่มักสับสนและกับดักข้อสอบ: การหยุด prophylaxis ทันทีที่ urate ถึงเป้าครั้งแรกไม่ถูก เพราะผลึกยังละลายไม่หมด ส่วน 2 สัปดาห์สั้นเกินไป และการให้ตลอดชีวิตทำให้ได้รับผลข้างเคียงสะสมโดยไม่จำเป็น อย่าสับสนกับการรักษา flare เฉียบพลันที่ใช้ colchicine ขนาด 1.2 + 0.6 mg\n\nสรุปท่องสอบ: ULT + prophylaxis (colchicine/NSAID/low-dose pred) 3–6 เดือน → ต่อถ้ายัง flare; ห้ามหยุด ULT เมื่อ flare; ปรับ colchicine ตามไตและ DDI",
         "choices": [
           {
             "label": "A",
             "text": "3–6 เดือน และให้ต่อหากยังมี flare เกิดขึ้น",
-            "explanation": "✓ ถูก — ตรงตาม ACR 2020 strong recommendation: 3–6 เดือน และประเมินต่อหากยังมี flare"
+            "explanation": "✓ ถูก — ACR 2020 แนะนำอย่างหนักให้ยาป้องกัน flare ร่วมกับการเริ่ม ULT นาน 3–6 เดือน แล้วประเมินต่อเนื่อง หากยังมี flare ให้ใช้ต่อ เพราะช่วงนี้ผลึกที่หลุดจากการลด urate กระตุ้นการอักเสบบ่อย ข้อมูลจาก RCT พบ flare เพิ่มขึ้นมากเมื่อหยุด prophylaxis เร็วเพียง 8 สัปดาห์ ผู้ที่มี tophus หรือคลังผลึกมากอาจต้องให้นานกว่า"
           },
           {
             "label": "B",
             "text": "2 สัปดาห์แรกของการเริ่ม allopurinol เท่านั้น",
-            "explanation": "✗ ผิด — 2 สัปดาห์สั้นเกินไป flare จาก crystal mobilization เกิดได้หลายเดือน"
+            "explanation": "✗ ผิด — 2 สัปดาห์สั้นเกินไปเมื่อเทียบกับช่วงเวลาที่ผลึกละลายและหลุดลอกซึ่งกินเวลาหลายเดือน flare จะเกิดต่อหลังหยุดยาและทำให้ผู้ป่วยเลิกใช้ ULT ข้อนี้ใกล้เคียงกับระยะเวลาในบริบทอื่น เช่น การให้ colchicine หรือ NSAIDs ต่ออีก 2–3 วันหลังอาการ flare เฉียบพลันหายจนเป็นปกติ ไม่ใช่ prophylaxis"
           },
           {
             "label": "C",
             "text": "หยุดทันทีเมื่อตรวจพบ serum urate <6 mg/dL ครั้งแรก",
-            "explanation": "✗ ผิด — Urate ถึงเป้าแล้วแต่ผลึกในข้อยังละลายไม่หมด อาจ flare ได้"
+            "explanation": "✗ ผิด — Serum urate ที่ถึงเป้าครั้งแรกไม่ได้แปลว่าผลึกในข้อละลายหมดแล้ว ความเสี่ยง flare ยังคงอยู่อีกหลายเดือน ACR จึงกำหนดระยะเวลา 3–6 เดือนและอิงอาการ flare เป็นหลัก ข้อนี้จะเป็นจุดเริ่มต้นการนับเวลาได้ในผู้ที่ urate ถึงเป้าแล้วและไม่มี flare ต่อเนื่องเกิน 3–6 เดือน แต่ไม่ใช่เกณฑ์หยุดทันที"
           },
           {
             "label": "D",
             "text": "ให้ตลอดชีวิตควบคู่กับ ULT",
-            "explanation": "✗ ผิด — ไม่จำเป็นต้องให้ตลอดชีวิต และเพิ่มความเสี่ยงผลข้างเคียงจากยา"
+            "explanation": "✗ ผิด — การให้ colchicine ตลอดชีวิตไม่จำเป็นเมื่อ urate ถึงเป้าและไม่มี flare เพราะเพิ่มความเสี่ยงผลข้างเคียงสะสม เช่น neuromyopathy (โดยเฉพาะใน CKD หรือใช้ร่วม statin) และกดไขกระดูก ข้อนี้จะใกล้เคียงในบริบทอื่น เช่น colchicine ระยะยาวใน familial Mediterranean fever หรือ Behçet หรือขนาด 0.5 mg ใน secondary prevention ของโรคหลอดเลือดหัวใจ"
           }
         ],
-        "key_takeaway": "เริ่ม ULT → prophylaxis 3–6 เดือน"
+        "key_takeaway": "เริ่ม ULT → prophylaxis 3–6 เดือน (ต่อถ้ายัง flare)"
       }
     },
     {
@@ -737,30 +757,30 @@
       ],
       "correct_answer": "D",
       "difficulty": "medium",
-      "explanation": "Pegloticase (recombinant uricase) สร้าง H2O2 ระหว่างเปลี่ยน urate เป็น allantoin ทำให้เกิด hemolysis และ methemoglobinemia ในผู้พร่อง G6PD จึงต้องตรวจ G6PD ก่อนเริ่ม",
+      "explanation": "Pegloticase (recombinant PEGylated uricase) เปลี่ยน urate เป็น allantoin และสร้าง H2O2 ทำให้เกิด hemolysis และ methemoglobinemia รุนแรงในผู้พร่อง G6PD จึงต้องตรวจ G6PD ก่อนเริ่มเสมอ (ACR 2020 strong; FDA boxed warning)",
       "detailed_explanation": {
-        "summary": "Pegloticase (recombinant uricase) สร้าง H2O2 ระหว่างเปลี่ยน urate เป็น allantoin ทำให้เกิด hemolysis และ methemoglobinemia ในผู้พร่อง G6PD จึงต้องตรวจ G6PD ก่อนเริ่ม",
-        "reason": "โจทย์ถามอะไร: การคัดกรองก่อนใช้ pegloticase\n\nหลักการ/กลไกเชิงลึก: Pegloticase เป็น PEGylated recombinant uricase เปลี่ยน urate → allantoin ซึ่งละลายน้ำดีและขับทางไตได้ง่าย ลด urate ได้เร็วและลึกมาก ปฏิกิริยาสร้าง hydrogen peroxide (H2O2) ซึ่งในผู้ป่วย G6PD deficiency (พบบ่อยในคนไทยและเอเชียตะวันออกเฉียงใต้) ทำให้เม็ดเลือดแดงแตกและ methemoglobinemia\n\nทำไมข้อ D ถูก: ฉลากระบุว่า G6PD deficiency เป็นข้อห้ามใช้ และแนะนำให้ตรวจก่อนเริ่มโดยเฉพาะผู้มีเชื้อสายเสี่ยง ACR 2020 แนะนำ pegloticase สำหรับผู้ที่ไม่ถึงเป้าด้วย XOI + uricosuric และยังมี tophus/flare บ่อย\n\nการประยุกต์กับผู้ป่วยจริง: ให้ premedication (antihistamine, glucocorticoid, ± paracetamol) เพื่อลด infusion reaction ตรวจ serum urate ก่อนทุกครั้ง หาก urate >6 mg/dL สองครั้งติดกันให้หยุด (บ่งชี้ anti-drug antibody → เสี่ยง anaphylaxis) และห้ามใช้ร่วมกับ oral ULT เพราะจะบดบังการสูญเสียการตอบสนอง การให้ methotrexate ร่วม (MIRROR trial) ลดการเกิด antibody\n\nจุดที่มักสับสนและกับดักข้อสอบ: HLA-B*5801 ใช้กับ allopurinol, TPMT ใช้กับ azathioprine/6-MP, anti-CCP ใช้วินิจฉัย RA ทั้งหมดไม่เกี่ยวกับ pegloticase\n\nสรุปท่องสอบ: Uricase (pegloticase/rasburicase) → ตรวจ G6PD ก่อน; urate >6 สองครั้ง → หยุด",
+        "summary": "Pegloticase = uricase → ตรวจ G6PD ก่อนเริ่ม (ห้ามใช้ในผู้พร่อง G6PD) + premedication ป้องกัน infusion reaction + หยุด oral ULT + ตรวจ urate ก่อนทุก infusion (urate >6 สองครั้งติด = หยุดยา)",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วย chronic tophaceous gout ที่ดื้อต่อ XOI ขนาดสูงสุดร่วม uricosuric (refractory gout) แพทย์จะเริ่ม pegloticase ร่วมกับ methotrexate โจทย์ถามสิ่งที่ต้องตรวจก่อนเริ่มยา ซึ่งทดสอบความรู้เรื่องกลไกและความปลอดภัยของยากลุ่ม uricase\n\nหลักการ/กลไกเชิงลึก: มนุษย์สูญเสียยีน uricase ระหว่างวิวัฒนาการ จึงมี urate เป็นผลผลิตสุดท้าย Pegloticase เป็น recombinant mammalian uricase ที่จับกับ polyethylene glycol (PEG) เพื่อยืดครึ่งชีวิตและลด immunogenicity เร่งปฏิกิริยา uric acid + O2 + H2O → 5-hydroxyisourate (ต่อไปเป็น allantoin ที่ละลายน้ำได้ดีมากและขับทางไต) + H2O2 ผลพลอยได้ hydrogen peroxide เป็น oxidant ปกติเม็ดเลือดแดงกำจัดได้ด้วย glutathione ซึ่งต้องอาศัย NADPH จาก G6PD ในผู้พร่อง G6PD เม็ดเลือดแดงจึงถูก oxidize เกิด Heinz body, hemolysis และ methemoglobinemia (NADPH-dependent methemoglobin reductase ทำงานไม่ได้ และ methylene blue ก็ใช้ไม่ได้) ซึ่งรุนแรงถึงชีวิต ภาวะพร่อง G6PD พบได้บ่อยในคนไทย (ราวร้อยละ 3–18 ขึ้นกับภูมิภาค)\n\nทำไมข้อ D ถูก: ACR 2020 แนะนำอย่างหนักให้ตรวจ G6PD ก่อนเริ่ม pegloticase ในผู้ที่มีความเสี่ยงตามเชื้อชาติ (แอฟริกัน เมดิเตอร์เรเนียน เอเชียตะวันออกเฉียงใต้) และฉลาก US FDA ระบุ boxed warning ห้ามใช้ในผู้พร่อง G6PD ผู้ป่วยไทยจึงต้องตรวจก่อนทุกราย\n\nหลักฐานและแนวทางเวชปฏิบัติ: ACR 2020 แนะนำ (strong) ให้ใช้ pegloticase เฉพาะผู้ที่ XOI, uricosuric และการรักษาอื่นไม่ถึงเป้า และยังมี flare บ่อย (≥2 ครั้ง/ปี) หรือมี tophus ที่ไม่ยุบ และแนะนำไม่ใช้เป็นยาแรก MIRROR RCT (2022) พบว่าการให้ methotrexate 15 mg/สัปดาห์ร่วมกับ pegloticase เพิ่มอัตราตอบสนองต่อเนื่องที่ 6 เดือนจากราว 39% เป็น 71% เพราะ MTX ลดการเกิด anti-PEG antibody FDA จึงอนุมัติการใช้ร่วมกันในปี 2022\n\nการประยุกต์กับผู้ป่วยจริง: ขนาด 8 mg IV infusion นาน ≥120 นาที ทุก 2 สัปดาห์ ให้ premedication (antihistamine, corticosteroid ± paracetamol) ทุกครั้ง หยุด oral ULT ทั้งหมดระหว่างใช้ เพราะจะบดบังการสูญเสียการตอบสนองที่บ่งชี้ว่าเกิด antibody ให้ยาป้องกัน flare ร่วม และเริ่ม MTX ประมาณ 4 สัปดาห์ก่อน infusion แรกพร้อม folic acid\n\nการติดตามและสัญญาณอันตราย: ตรวจ serum urate ก่อนทุก infusion หาก >6 mg/dL สองครั้งติดต่อกันให้หยุดยา เพราะเสี่ยง anaphylaxis และ infusion reaction สูงมาก เฝ้าระวังความดันต่ำ หายใจลำบาก ผื่นลมพิษระหว่างและหลังให้ยา 1 ชั่วโมง ระวังใน heart failure (มีรายงาน HF exacerbation) และติดตาม CBC, LFT, SCr สำหรับ MTX\n\nจุดที่มักสับสนและกับดักข้อสอบ: HLA-B*5801 เป็นยีนของ allopurinol, TPMT เป็นการตรวจก่อน azathioprine/6-MP ส่วน anti-CCP ใช้วินิจฉัย RA แม้ผู้ป่วยจะได้ MTX ร่วมด้วย แต่ MTX ในบริบทนี้ไม่ต้องตรวจ anti-CCP ข้อควรจำคือ rasburicase ซึ่งเป็น uricase ที่ใช้ป้องกัน tumor lysis syndrome ก็ต้องตรวจ G6PD เช่นเดียวกัน\n\nสรุปท่องสอบ: Uricase (pegloticase, rasburicase) = G6PD ก่อน + anaphylaxis; pegloticase: 8 mg IV q2wk + MTX + premed + หยุด oral ULT + เช็ก urate ก่อนทุกครั้ง",
         "choices": [
           {
             "label": "A",
             "text": "HLA-B*5801",
-            "explanation": "✗ ผิด — HLA-B*5801 ใช้คัดกรองก่อน allopurinol"
+            "explanation": "✗ ผิด — HLA-B*5801 เป็นตัวบ่งชี้ทางพันธุกรรมของ SJS/TEN/DRESS จาก allopurinol ไม่เกี่ยวข้องกับ pegloticase ซึ่งเป็นโปรตีนเอนไซม์และปฏิกิริยาแพ้ของยาเป็น infusion reaction/anaphylaxis จาก anti-PEG antibody ข้อนี้จะถูกหากโจทย์ถามสิ่งที่ต้องตรวจก่อนเริ่ม allopurinol ในผู้ป่วยไทย จีนฮั่น เกาหลี หรือแอฟริกันอเมริกัน"
           },
           {
             "label": "B",
             "text": "TPMT activity",
-            "explanation": "✗ ผิด — TPMT ใช้คัดกรองก่อน azathioprine/6-MP"
+            "explanation": "✗ ผิด — TPMT activity (และ NUDT15 ในคนเอเชีย) ใช้ประเมินความเสี่ยงกดไขกระดูกก่อนเริ่ม azathioprine หรือ 6-mercaptopurine ไม่เกี่ยวกับ pegloticase หรือ methotrexate ข้อนี้จะถูกหากแพทย์จะเริ่ม azathioprine เช่น ใน SLE, autoimmune hepatitis หรือ IBD ซึ่งผู้ที่มี TPMT ต่ำต้องลดขนาดหรือเลี่ยงยา"
           },
           {
             "label": "C",
             "text": "Anti-CCP antibody",
-            "explanation": "✗ ผิด — Anti-CCP เป็น autoantibody ใช้วินิจฉัย RA ไม่เกี่ยวกับการใช้ pegloticase"
+            "explanation": "✗ ผิด — Anti-CCP antibody เป็นการตรวจเพื่อวินิจฉัยและพยากรณ์โรค rheumatoid arthritis ไม่ใช่การตรวจความปลอดภัยก่อนให้ยา การที่ผู้ป่วยได้ MTX ร่วมไม่ได้ทำให้ต้องตรวจ anti-CCP เพราะ MTX ใช้เพื่อลด immunogenicity ของ pegloticase ข้อนี้จะถูกหากโจทย์ถามการตรวจที่จำเพาะสูงสำหรับวินิจฉัย RA ระยะแรก"
           },
           {
             "label": "D",
             "text": "ระดับเอนไซม์ G6PD",
-            "explanation": "✓ ถูก — Pegloticase ห้ามใช้ใน G6PD deficiency เพราะ H2O2 ทำให้ hemolysis และ methemoglobinemia"
+            "explanation": "✓ ถูก — Pegloticase เปลี่ยน urate เป็น allantoin และสร้าง hydrogen peroxide ผู้พร่อง G6PD มี NADPH ไม่พอสำหรับกำจัด oxidant จึงเกิด hemolysis และ methemoglobinemia รุนแรง ACR 2020 แนะนำตรวจ G6PD ก่อนเริ่มอย่างหนัก และ FDA ระบุ boxed warning ห้ามใช้ในผู้พร่อง G6PD ซึ่งพบบ่อยในคนไทย จึงต้องตรวจก่อนทุกราย"
           }
         ],
         "key_takeaway": "Pegloticase = uricase → G6PD ก่อนเสมอ"
@@ -788,30 +808,30 @@
       ],
       "correct_answer": "B",
       "difficulty": "medium",
-      "explanation": "ACR 2020 แนะนำ (conditional) ให้เปลี่ยน HCTZ เป็นยาลดความดันอื่นเมื่อทำได้ และเลือก losartan เป็นพิเศษ เพราะ losartan มีฤทธิ์ uricosuric ผ่านการยับยั้ง URAT1",
+      "explanation": "ACR 2020 แนะนำ (conditional) ให้เปลี่ยน hydrochlorothiazide เป็นยาลดความดันอื่นเมื่อทำได้ และเลือก losartan เป็นพิเศษ เพราะ losartan มีฤทธิ์ uricosuric ผ่านการยับยั้ง URAT1 ลด serum urate ได้ราว 0.5–1 mg/dL",
       "detailed_explanation": {
-        "summary": "ACR 2020 แนะนำ (conditional) ให้เปลี่ยน HCTZ เป็นยาลดความดันอื่นเมื่อทำได้ และเลือก losartan เป็นพิเศษ เพราะ losartan มีฤทธิ์ uricosuric ผ่านการยับยั้ง URAT1",
-        "reason": "โจทย์ถามอะไร: การเลือกยาลดความดันในผู้ป่วยเกาต์\n\nหลักการ/กลไกเชิงลึก: Thiazide และ loop diuretic เพิ่ม serum urate จาก (1) volume contraction เพิ่มการดูดกลับที่ proximal tubule (2) แข่งขันการหลั่งผ่าน OAT1/3 และเพิ่มการดูดกลับผ่าน URAT1/GLUT9 Losartan (แต่ไม่ใช่ ARB ส่วนใหญ่) ยับยั้ง URAT1 จึงเพิ่มการขับ urate ลด urate ได้ ~0.5–1 mg/dL\n\nทำไมข้อ B ถูก: ACR 2020 conditional: เปลี่ยน HCTZ เป็นยาอื่นเมื่อเป็นไปได้ และเลือก losartan เป็น preferred antihypertensive ในผู้ป่วยเกาต์ทุกราย (ถ้าเหมาะสมกับข้อบ่งใช้) ผู้ป่วยรายนี้ไม่มี HF ที่ต้องใช้ diuretic จึงเปลี่ยนได้ทันที\n\nการประยุกต์กับผู้ป่วยจริง: เริ่ม losartan 50 mg/วัน ติดตาม K+ และ SCr ภายใน 1–2 สัปดาห์ หากต้องการเพิ่มยาอีกชนิด amlodipine ก็เหมาะ (CCB ลดความเสี่ยงเกาต์เล็กน้อย) ไม่ควรเลือก beta-blocker หรือ ACEI ที่ไม่ใช่ losartan เพื่อเหตุผลเรื่อง urate\n\nจุดที่มักสับสนและกับดักข้อสอบ: Indapamide/chlorthalidone เป็น thiazide-like ซึ่งเพิ่ม urate เช่นกัน furosemide ก็เพิ่ม urate การเพิ่มขนาด HCTZ ยิ่งทำให้ urate สูงขึ้น ข้อสอบมักวาง diuretic อื่นเป็นตัวลวง\n\nสรุปท่องสอบ: เกาต์ + HT → ถอด thiazide ใส่ losartan (URAT1 inhibitor)",
+        "summary": "Gout + HT ที่ใช้ HCTZ และ BP ยังไม่ถึงเป้า → เปลี่ยนเป็น losartan (ARB เดียวที่ลด urate ชัด) ส่วน indapamide และ furosemide ก็เพิ่ม urate เช่นเดียวกับ thiazide",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วยเกาต์ที่มี flare ซ้ำ ความดันยังไม่ถึงเป้า (146/92 mmHg) ขณะใช้ hydrochlorothiazide 25 mg ไตดีและไม่มีหัวใจล้มเหลว (ซึ่งเป็นข้อบ่งใช้ที่จำเป็นของยาขับปัสสาวะ) โจทย์ถามการปรับยาลดความดันที่เหมาะสมตาม ACR 2020 จึงทดสอบความรู้เรื่องยาที่เพิ่มและลด serum urate\n\nหลักการ/กลไกเชิงลึก: ยาขับปัสสาวะทั้ง thiazide, thiazide-like และ loop diuretic เพิ่ม serum urate ผ่านสองกลไก คือ (1) ภาวะ volume contraction กระตุ้นการดูดกลับ sodium และ urate ที่ proximal tubule และ (2) ยาเองเป็น organic anion ที่แข่งขันการหลั่งผ่าน OAT1/OAT3 และ MRP4 รวมถึงเพิ่มการดูดกลับผ่าน URAT1/OAT4 ผลคือ urate เพิ่มราว 0.5–1.5 mg/dL ขึ้นกับขนาด และความเสี่ยงเกาต์สูงขึ้นชัดเจน ในทางตรงข้าม losartan (ทั้ง parent drug ไม่ใช่ metabolite EXP-3174) ยับยั้ง URAT1 จึงเพิ่มการขับ urate และลด serum urate ได้ ซึ่งเป็นผลเฉพาะของ losartan ไม่ใช่ class effect ของ ARB ทั้งหมด นอกจากนี้ CCB (amlodipine) ก็สัมพันธ์กับความเสี่ยงเกาต์ที่ลดลงในการศึกษาเชิงสังเกต\n\nทำไมข้อ B ถูก: การเปลี่ยน HCTZ เป็น losartan ตอบโจทย์ทั้งสองปัญหา คือเอายาที่เพิ่ม urate ออก และใช้ยาลดความดันที่มีฤทธิ์ลด urate เพิ่มเข้ามา ผู้ป่วยไม่มี HF จึงไม่จำเป็นต้องพึ่งยาขับปัสสาวะ\n\nหลักฐานและแนวทางเวชปฏิบัติ: ACR 2020 แนะนำ (conditional) ให้เปลี่ยน HCTZ เป็นยาลดความดันชนิดอื่นเมื่อทำได้ และแนะนำ (conditional) ให้เลือก losartan เป็นยาลดความดันเมื่อเป็นไปได้ การศึกษา case-control ขนาดใหญ่ (Choi et al., BMJ 2012) พบว่า losartan และ CCB สัมพันธ์กับความเสี่ยงเกาต์ที่ลดลง ส่วน diuretic, beta-blocker, ACEI และ ARB ตัวอื่นสัมพันธ์กับความเสี่ยงที่เพิ่มขึ้น\n\nการประยุกต์กับผู้ป่วยจริง: เริ่ม losartan 50 mg วันละครั้ง ปรับเป็น 100 mg ตามความดัน หากยังไม่ถึงเป้าเพิ่ม amlodipine ตรวจ serum K และ SCr ภายใน 1–2 สัปดาห์หลังเริ่ม แนะนำวัดความดันที่บ้าน และอธิบายว่า losartan ลด urate ได้เพียงเล็กน้อย ไม่สามารถแทน ULT ได้หากมีข้อบ่งใช้ ถ้าผู้ป่วยเป็นหญิงวัยเจริญพันธุ์ต้องคุมกำเนิดเพราะ ARB ห้ามใช้ในครรภ์\n\nการติดตามและสัญญาณอันตราย: เวียนศีรษะเมื่อลุกยืน hyperkalemia (โดยเฉพาะเมื่อใช้ NSAIDs ระหว่าง flare) SCr เพิ่ม >30% และ angioedema ซึ่งพบน้อยกว่า ACEI ติดตาม serum urate และจำนวน flare หลังเปลี่ยนยา\n\nจุดที่มักสับสนและกับดักข้อสอบ: indapamide และ chlorthalidone เป็น thiazide-like จึงเพิ่ม urate เช่นกัน furosemide และ loop diuretic อื่นก็เพิ่ม urate และไม่ใช่ยาลดความดันหลักเมื่อไตปกติ การเพิ่ม HCTZ เป็น 50 mg ยิ่งเพิ่ม urate และผลข้างเคียงทางเมตาบอลิก ข้อยกเว้นคือผู้ป่วย HFrEF ที่ต้องใช้ loop diuretic ไม่ควรหยุดยาเพียงเพราะเกาต์ แต่ให้คุม urate ด้วย ULT แทน\n\nสรุปท่องสอบ: ยาเพิ่ม urate: diuretic (thiazide/loop), low-dose aspirin, cyclosporine/tacrolimus, pyrazinamide/ethambutol, niacin; ยาลด urate: losartan, fenofibrate, SGLT2i, CCB (เล็กน้อย)",
         "choices": [
           {
             "label": "A",
             "text": "เพิ่ม hydrochlorothiazide เป็น 50 mg/วัน",
-            "explanation": "✗ ผิด — เพิ่มขนาด thiazide ทำให้ urate สูงขึ้นและเพิ่ม flare"
+            "explanation": "✗ ผิด — การเพิ่ม HCTZ เป็น 50 mg จะเพิ่ม serum urate มากขึ้นตามขนาดยา (dose-dependent) และเพิ่มความเสี่ยง flare รวมถึงผลข้างเคียงทางเมตาบอลิกอื่น เช่น hypokalemia น้ำตาลและไขมันสูง ขนาด >25 mg ยังเพิ่มประสิทธิภาพลดความดันได้น้อย ข้อนี้จะพอพิจารณาได้เฉพาะในผู้ป่วยความดันสูงที่ไม่มีเกาต์และต้องการยาขับปัสสาวะเพิ่ม ซึ่งปัจจุบันมักนิยมเพิ่มยากลุ่มอื่นแทน"
           },
           {
             "label": "B",
             "text": "เปลี่ยน hydrochlorothiazide เป็น losartan",
-            "explanation": "✓ ถูก — Losartan มีฤทธิ์ uricosuric ACR 2020 แนะนำให้เปลี่ยน HCTZ และเลือก losartan"
+            "explanation": "✓ ถูก — ACR 2020 แนะนำให้เปลี่ยน HCTZ เป็นยาลดความดันอื่นเมื่อทำได้ และเลือก losartan เป็นพิเศษ เพราะ losartan ยับยั้ง URAT1 เพิ่มการขับ urate ลด serum urate ได้ราว 0.5–1 mg/dL และสัมพันธ์กับความเสี่ยงเกาต์ที่ลดลง ผู้ป่วยไม่มี HF จึงไม่จำเป็นต้องใช้ยาขับปัสสาวะ ควรตรวจ K และ SCr หลังเริ่มยา 1–2 สัปดาห์"
           },
           {
             "label": "C",
             "text": "เปลี่ยน hydrochlorothiazide เป็น indapamide",
-            "explanation": "✗ ผิด — Indapamide เป็น thiazide-like diuretic เพิ่ม serum urate เช่นเดียวกับ HCTZ"
+            "explanation": "✗ ผิด — Indapamide เป็น thiazide-like diuretic ที่ลดการขับ urate ผ่านกลไกเดียวกับ HCTZ (volume contraction และแข่งขันที่ OAT) จึงเพิ่ม serum urate และความเสี่ยงเกาต์ได้เช่นกัน การเปลี่ยนจึงไม่แก้ปัญหา ข้อนี้จะเป็นทางเลือกที่ดีในผู้ป่วยความดันสูงที่ไม่มีเกาต์ โดยเฉพาะผู้สูงอายุหรือผู้ที่เคยมี stroke (PROGRESS, HYVET)"
           },
           {
             "label": "D",
             "text": "เปลี่ยน hydrochlorothiazide เป็น furosemide",
-            "explanation": "✗ ผิด — Loop diuretic เพิ่ม serum urate และไม่มีข้อบ่งใช้ในผู้ป่วยที่ไม่มีภาวะน้ำเกิน"
+            "explanation": "✗ ผิด — Furosemide เป็น loop diuretic ที่เพิ่ม serum urate เช่นกัน และไม่เหมาะเป็นยาลดความดันหลักในผู้ที่ไตปกติเพราะออกฤทธิ์สั้นและลดความดันได้ไม่ดี ข้อนี้จะเหมาะเมื่อผู้ป่วยมีภาวะน้ำเกินจาก heart failure หรือ CKD ระยะท้ายที่ thiazide ไม่ได้ผล ซึ่งในกรณีนั้นไม่ควรหยุด loop diuretic แต่ให้คุม urate ด้วย ULT แทน"
           }
         ],
         "key_takeaway": "Gout + HT: HCTZ ออก, losartan เข้า"
@@ -839,30 +859,30 @@
       ],
       "correct_answer": "C",
       "difficulty": "hard",
-      "explanation": "ACR 2020 แนะนำ (conditional) ไม่ให้หยุด low-dose aspirin ในผู้ป่วยเกาต์ที่ใช้ด้วยข้อบ่งใช้ที่เหมาะสม และไม่แนะนำเปลี่ยนยาลดไขมันเป็น fenofibrate",
+      "explanation": "ACR 2020 แนะนำ (conditional) ไม่ให้หยุด low-dose aspirin ในผู้ป่วยเกาต์ที่ใช้ด้วยข้อบ่งใช้ที่เหมาะสม เพราะประโยชน์ด้าน secondary prevention สูงกว่าผลเพิ่ม urate เพียงเล็กน้อย (~0.3–0.5 mg/dL) และไม่แนะนำเปลี่ยนยาลดไขมันเป็น fenofibrate",
       "detailed_explanation": {
-        "summary": "ACR 2020 แนะนำ (conditional) ไม่ให้หยุด low-dose aspirin ในผู้ป่วยเกาต์ที่ใช้ด้วยข้อบ่งใช้ที่เหมาะสม และไม่แนะนำเปลี่ยนยาลดไขมันเป็น fenofibrate",
-        "reason": "โจทย์ถามอะไร: การจัดการยาที่ส่งผลต่อ urate ในผู้ป่วยเกาต์ที่มีโรคหลอดเลือดหัวใจ\n\nหลักการ/กลไกเชิงลึก: Salicylate มี bimodal effect: ขนาดต่ำ (<1–2 g/วัน) ลดการขับ urate (แลกเปลี่ยนที่ URAT1/ยับยั้ง secretion) เพิ่ม urate เล็กน้อยราว 0.3–0.5 mg/dL ส่วนขนาดสูง (>3 g/วัน) มีฤทธิ์ uricosuric แต่ไม่ใช้เพื่อเกาต์เพราะพิษ Fenofibrate มีฤทธิ์ uricosuric (ลด urate 20–30%) แต่ประโยชน์ทางหัวใจด้อยกว่า statin และมีผลต่อไต\n\nทำไมข้อ C ถูก: ผู้ป่วยมี coronary stent จึงจำเป็นต้องใช้ aspirin เพื่อ secondary prevention ผลเพิ่ม urate เล็กน้อยจัดการได้ด้วยการปรับ ULT (urate ปัจจุบันยังถึงเป้า) ACR 2020 จึงแนะนำไม่ให้หยุด low-dose aspirin\n\nการประยุกต์กับผู้ป่วยจริง: เภสัชกรควรอธิบายว่าการหยุด aspirin เพิ่มความเสี่ยง stent thrombosis/MI อย่างมาก ติดตาม urate และปรับ allopurinol หากเกินเป้า และคง statin ไว้เพราะมีประโยชน์ต่อ CV ชัดเจน\n\nจุดที่มักสับสนและกับดักข้อสอบ: ACR 2020 มีคำแนะนำ ‘conditionally against’ 2 ข้อที่มักออกสอบคู่กัน: ไม่หยุด low-dose aspirin และไม่เพิ่ม/เปลี่ยนยาลดไขมันเป็น fenofibrate (ต่างจาก losartan ที่แนะนำให้เลือก) การใช้ aspirin ขนาดสูงเพื่อ uricosuric ไม่ใช้ในทางปฏิบัติ\n\nสรุปท่องสอบ: Low-dose aspirin: ใช้ต่อ; Fenofibrate: อย่าเปลี่ยนไปใช้เพื่อลด urate; Losartan: เลือกได้",
+        "summary": "Aspirin 81 mg หลังใส่ stent ต้องใช้ต่อ — urate ของผู้ป่วยถึงเป้าแล้ว (5.4) ด้วย allopurinol; aspirin 325 mg ยังเพิ่ม urate (uricosuric เฉพาะ >3 g/วัน) และ ACR ไม่แนะนำเปลี่ยน statin เป็น fenofibrate",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วยเกาต์ที่คุม urate ได้ถึงเป้าแล้ว (5.4 mg/dL) มีประวัติใส่ coronary stent ใช้ aspirin 81 mg และ atorvastatin ผู้ป่วยอ่านข้อมูลว่า aspirin ทำให้กรดยูริกสูงจึงขอหยุด โจทย์ทดสอบการชั่งประโยชน์และความเสี่ยง และความรู้เรื่องผลของ salicylate ต่อ urate แบบสองขั้ว (paradoxical effect)\n\nหลักการ/กลไกเชิงลึก: Salicylate มีผลต่อการขนส่ง urate ที่ proximal tubule แบบขึ้นกับขนาด ขนาดต่ำ (<1–2 g/วัน) ทำให้ salicylate ทำหน้าที่เป็น anion แลกเปลี่ยนกับ urate ที่ URAT1 (trans-stimulation) และยับยั้งการหลั่ง จึงเพิ่มการดูดกลับและเพิ่ม serum urate เล็กน้อย ประมาณ 0.3–0.5 mg/dL ส่วนขนาดสูงมาก (>3 g/วัน) salicylate ยับยั้ง URAT1 โดยตรงจึงเป็น uricosuric ซึ่งไม่ใช้ในทางปฏิบัติเพราะพิษ ส่วนการหยุด aspirin หลังใส่ stent เพิ่มความเสี่ยง stent thrombosis และ MI ซึ่งอันตรายถึงชีวิต ผลกระทบเล็กน้อยต่อ urate แก้ได้ง่ายด้วยการปรับ ULT\n\nทำไมข้อ C ถูก: ผู้ป่วยมีข้อบ่งใช้ aspirin ชัดเจน (secondary prevention หลัง PCI) และ urate ก็ยังถึงเป้าแม้ใช้ aspirin อยู่ จึงไม่มีเหตุผลให้หยุด ควรใช้ aspirin 81 mg ต่อและอธิบายให้ผู้ป่วยเข้าใจ\n\nหลักฐานและแนวทางเวชปฏิบัติ: ACR 2020 แนะนำ (conditional) ไม่ให้หยุด low-dose aspirin ในผู้ป่วยเกาต์ที่ใช้ด้วยข้อบ่งใช้ที่เหมาะสม และแนะนำ (conditional) ไม่ให้เปลี่ยนยาลดไขมันอื่นมาเป็น fenofibrate แม้ fenofibrate จะลด urate ได้ (เพราะความเสี่ยงของ fenofibrate โดยเฉพาะต่อไตและการใช้ร่วม statin มีมากกว่าประโยชน์ด้าน urate) แนวทาง ACC/AHA ระบุ aspirin ขนาดต่ำตลอดชีวิตหลัง PCI เว้นแต่มีข้อห้าม\n\nการประยุกต์กับผู้ป่วยจริง: อธิบายผู้ป่วยว่า \"แอสไพรินขนาดต่ำทำให้กรดยูริกเพิ่มเพียงเล็กน้อย แต่ช่วยป้องกันขดลวดหัวใจอุดตันซึ่งอันตรายกว่ามาก ค่ากรดยูริกตอนนี้ก็ยังอยู่ในเป้า\" ให้ใช้ยาเวลาเดิมทุกวัน หลีกเลี่ยงการใช้ NSAIDs ร่วมโดยไม่จำเป็น (ibuprofen รบกวนฤทธิ์ antiplatelet ของ aspirin ได้) ตรวจ urate ทุก 6 เดือน หากสูงขึ้นให้ปรับ allopurinol\n\nการติดตามและสัญญาณอันตราย: ถ่ายดำ อาเจียนเป็นเลือด ฟกช้ำง่าย เจ็บหน้าอก หอบเหนื่อย ให้รีบพบแพทย์ และหาก flare กลับมาให้ประเมิน adherence ของ allopurinol ก่อนโทษ aspirin\n\nจุดที่มักสับสนและกับดักข้อสอบ: บางคนจำว่า aspirin ขนาดสูงเป็น uricosuric จึงเลือกเพิ่มเป็น 325 mg ซึ่งผิด เพราะขนาดที่เป็น uricosuric คือ >3 g/วัน ส่วน 325 mg ยังอยู่ในช่วงที่เพิ่ม urate และเพิ่มเลือดออก อย่าสับสนกับข้อแนะนำเปลี่ยน HCTZ เป็น losartan ซึ่ง ACR ให้ทำ เพราะมียาลดความดันทดแทนที่ดีกว่า แต่ aspirin หลัง stent ไม่มีทางเลือกทดแทนที่ดีกว่าในเรื่องนี้\n\nสรุปท่องสอบ: Low-dose aspirin ↑ urate เล็กน้อย → ใช้ต่อถ้ามีข้อบ่งใช้หัวใจ; ACR: เปลี่ยน HCTZ → losartan ได้ แต่ไม่หยุด aspirin และไม่เปลี่ยน statin เป็น fenofibrate",
         "choices": [
           {
             "label": "A",
             "text": "หยุด aspirin เพราะยับยั้งการขับ urate ทางไต",
-            "explanation": "✗ ผิด — การหยุด aspirin ในผู้ป่วยมี stent อันตราย และ ACR 2020 แนะนำไม่หยุด low-dose aspirin"
+            "explanation": "✗ ผิด — แม้ low-dose aspirin จะลดการขับ urate ทางไตจริง แต่ผลเพิ่ม urate เพียง ~0.3–0.5 mg/dL และผู้ป่วยยังคุม urate ได้ถึงเป้า การหยุด aspirin หลังใส่ stent เพิ่มความเสี่ยง stent thrombosis และ MI อย่างมาก ACR 2020 แนะนำไม่ให้หยุด ข้อนี้จะเหมาะเฉพาะเมื่อใช้ aspirin โดยไม่มีข้อบ่งใช้ (เช่น primary prevention ในผู้ที่เสี่ยงเลือดออกสูง) หรือมีเลือดออกรุนแรง"
           },
           {
             "label": "B",
             "text": "เปลี่ยน aspirin เป็น aspirin 325 mg/วัน เพราะขนาดสูงมีฤทธิ์ uricosuric",
-            "explanation": "✗ ผิด — Aspirin ขนาดสูงเพิ่มเลือดออกและพิษ ไม่ใช้เป็นยา uricosuric ในทางปฏิบัติ"
+            "explanation": "✗ ผิด — Aspirin เป็น uricosuric เมื่อใช้ขนาดสูงมากเกิน 3 g/วันเท่านั้น ส่วน 325 mg ยังอยู่ในช่วงขนาดต่ำที่ทำให้ urate เพิ่มขึ้น และยังเพิ่มความเสี่ยงเลือดออกทางเดินอาหารโดยไม่ได้ประโยชน์ทางหัวใจเพิ่ม ข้อนี้ไม่ถูกในบริบทใดของเกาต์ แต่ aspirin ขนาดสูงเคยใช้ในอดีตเป็น anti-inflammatory ใน rheumatic fever หรือใช้ 162–325 mg ในช่วงแรกของ acute coronary syndrome"
           },
           {
             "label": "C",
             "text": "ใช้ aspirin 81 mg/วัน ต่อไป เพราะประโยชน์ด้านหัวใจเหนือกว่าผลต่อ urate เพียงเล็กน้อย",
-            "explanation": "✓ ถูก — ประโยชน์ CV ของ low-dose aspirin สูงกว่าผลเพิ่ม urate เล็กน้อย ACR 2020 แนะนำให้ใช้ต่อ"
+            "explanation": "✓ ถูก — ACR 2020 แนะนำไม่ให้หยุด low-dose aspirin ในผู้ป่วยเกาต์ที่มีข้อบ่งใช้เหมาะสม ผู้ป่วยรายนี้ใส่ coronary stent จึงต้องใช้ aspirin ต่อเนื่องเพื่อ secondary prevention ผลเพิ่ม urate เพียงเล็กน้อยและจัดการได้ด้วย ULT ซึ่งขณะนี้ urate 5.4 mg/dL ถึงเป้าแล้ว เภสัชกรควรอธิบายประโยชน์–ความเสี่ยงให้ผู้ป่วยเข้าใจและไม่หยุดยาเอง"
           },
           {
             "label": "D",
             "text": "เปลี่ยน atorvastatin เป็น fenofibrate เพื่อช่วยลดกรดยูริก",
-            "explanation": "✗ ผิด — ACR 2020 แนะนำไม่เปลี่ยน/เพิ่ม fenofibrate เพื่อลด urate และ statin มีประโยชน์ CV ที่ชัดเจนกว่า"
+            "explanation": "✗ ผิด — Fenofibrate ลด urate ได้ราว 20–30% แต่ ACR 2020 แนะนำไม่ให้เปลี่ยนยาลดไขมันเป็น fenofibrate เพราะ atorvastatin มีหลักฐานลด CV event หลัง PCI ชัดเจนกว่ามาก และ fenofibrate อาจเพิ่ม SCr ข้อนี้จะเหมาะเมื่อผู้ป่วยมี triglyceride สูงมาก (เช่น ≥500–1,000 mg/dL) ที่เสี่ยงตับอ่อนอักเสบ ซึ่งใช้ fenofibrate เพิ่มเติมจาก statin ได้"
           }
         ],
         "key_takeaway": "อย่าหยุด aspirin 81 ในเกาต์ — อย่าเปลี่ยน statin เป็น fenofibrate"
@@ -890,33 +910,33 @@
       ],
       "correct_answer": "A",
       "difficulty": "medium",
-      "explanation": "Pyrazinamide (ผ่าน metabolite pyrazinoic acid) ลดการขับ urate ทางไตอย่างมาก ทำให้เกิด hyperuricemia และ arthralgia บ่อย (ethambutol เพิ่ม urate ได้เช่นกันแต่น้อยกว่า)",
+      "explanation": "Pyrazinamide (ผ่าน metabolite pyrazinoic acid) ลดการขับ urate ทางไตอย่างมาก ทำให้เกิด hyperuricemia เกือบทุกรายและ arthralgia บ่อย ส่วน ethambutol เพิ่ม urate ได้แต่น้อยกว่า; isoniazid, rifampicin และ pyridoxine ไม่ใช่สาเหตุ",
       "detailed_explanation": {
-        "summary": "Pyrazinamide (ผ่าน metabolite pyrazinoic acid) ลดการขับ urate ทางไตอย่างมาก ทำให้เกิด hyperuricemia และ arthralgia บ่อย (ethambutol เพิ่ม urate ได้เช่นกันแต่น้อยกว่า)",
-        "reason": "โจทย์ถามอะไร: ระบุยาที่ทำให้ serum urate สูง\n\nหลักการ/กลไกเชิงลึก: Pyrazinamide ถูกเปลี่ยนเป็น pyrazinoic acid ซึ่งถูกหลั่งเข้า tubular lumen แล้วใช้เป็น anion แลกเปลี่ยนกับ urate ผ่าน URAT1 (trans-stimulation) → เพิ่มการดูดกลับ urate และยับยั้งการหลั่ง urate ทำให้การขับลดลงมากกว่า 80% อุบัติการณ์ hyperuricemia สูงมาก (>50%) และ arthralgia พบบ่อย\n\nทำไมข้อ A ถูก: จังหวะเวลา (ภายในสัปดาห์แรก ๆ ของการรักษา TB) และระดับ urate ที่สูงขึ้นมากสอดคล้องกับ pyrazinamide ซึ่งเป็นยาที่เพิ่ม urate มากที่สุดในสูตร ethambutol ลด urate clearance ได้เช่นกันแต่น้อยกว่า\n\nการประยุกต์กับผู้ป่วยจริง: Arthralgia จาก pyrazinamide มักตอบสนองต่อ NSAIDs/paracetamol โดยไม่ต้องหยุดยา และ asymptomatic hyperuricemia ไม่ต้องให้ ULT หากเกิด gout flare จริงพิจารณารักษา flare และอาจปรับสูตร ห้ามใช้ pyrazinamide ในผู้ป่วยมี acute gout ยาอื่นที่เพิ่ม urate: thiazide, loop diuretic, low-dose aspirin, cyclosporine, tacrolimus, niacin, ethanol\n\nจุดที่มักสับสนและกับดักข้อสอบ: Isoniazid และ rifampicin เด่นด้าน hepatotoxicity, isoniazid ทำ peripheral neuropathy (จึงให้ pyridoxine) ข้อสอบมักให้เลือกยาที่ทำให้ urate สูงในสูตร TB → pyrazinamide เป็นคำตอบหลัก\n\nสรุปท่องสอบ: Pyrazinamide → pyrazinoic acid → URAT1 ดูดกลับ urate ↑ → hyperuricemia/arthralgia",
+        "summary": "สูตรยา TB + urate เพิ่มสูงมาก + ปวดข้อ → pyrazinamide (pyrazinoic acid แลกเปลี่ยนที่ URAT1 เพิ่มการดูดกลับ urate) มักไม่ต้องหยุดยา รักษาอาการด้วย NSAIDs/paracetamol และจะดีขึ้นหลังจบ intensive phase",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วยวัณโรคปอดได้สูตร 2HRZE ร่วมกับ pyridoxine มา 4 สัปดาห์ มีปวดข้อหลายข้อและ serum urate เพิ่มจาก 6.0 เป็น 11.2 mg/dL โจทย์ถามว่ายาใดเป็นสาเหตุหลักของ hyperuricemia ซึ่งทดสอบความรู้เรื่องยาที่ทำให้กรดยูริกสูง (drug-induced hyperuricemia)\n\nหลักการ/กลไกเชิงลึก: Pyrazinamide เป็น prodrug ที่ถูก pyrazinamidase เปลี่ยนเป็น pyrazinoic acid (POA) ใน M. tuberculosis และในร่างกายมนุษย์ POA เป็น monocarboxylate ที่ถูกนำเข้าเซลล์ท่อไตผ่าน SMCT (SLC5A8/SLC5A12) แล้วทำหน้าที่เป็น counter-ion แลกเปลี่ยนกับ urate ที่ URAT1 (trans-stimulation) ทำให้การดูดกลับ urate จาก lumen เพิ่มขึ้นอย่างมาก และยังยับยั้งการหลั่ง urate จึงลดการขับ urate ได้ถึง 80% serum urate จึงเพิ่มขึ้นในผู้ป่วยเกือบทุกราย ในทางเภสัชวิทยาเคยใช้ \"pyrazinamide suppression test\" ศึกษาการหลั่ง urate ส่วน ethambutol ลดการขับ urate เช่นกันแต่ผลน้อยกว่า ส่วน isoniazid และ rifampicin ไม่มีผลสำคัญ\n\nทำไมข้อ A ถูก: Pyrazinamide เป็นยาต้านวัณโรคที่ทำให้ hyperuricemia บ่อยและรุนแรงที่สุด ระยะเวลา 4 สัปดาห์หลังเริ่มยาและการเพิ่มของ urate เกือบเท่าตัวเข้ากับผลของ pyrazinamide อาการ arthralgia ที่ไม่ใช่เกาต์แท้ก็พบได้บ่อยจากยานี้\n\nหลักฐานและแนวทางเวชปฏิบัติ: แนวทางรักษาวัณโรค (WHO และแนวทางวัณโรคประเทศไทย) ระบุ arthralgia และ hyperuricemia เป็นผลข้างเคียงที่พบบ่อยของ pyrazinamide ซึ่งส่วนใหญ่ไม่จำเป็นต้องหยุดยา ให้รักษาตามอาการด้วย NSAIDs หรือ paracetamol และ hyperuricemia ที่ไม่มีอาการไม่ต้องรักษา ส่วนผู้ที่เกิด acute gout flare จริงรักษา flare ตามปกติ และอาจพิจารณาปรับสูตรยาในรายที่รุนแรงหรือเป็นซ้ำ ข้อห้ามสัมพัทธ์ของ pyrazinamide คือผู้ป่วยเกาต์ที่มีอาการกำเริบอยู่\n\nการประยุกต์กับผู้ป่วยจริง: อธิบายผู้ป่วยว่าอาการปวดข้อเกิดจากยาวัณโรคตัวหนึ่งที่ใช้เพียง 2 เดือนแรก ห้ามหยุดยาเอง เพราะจะทำให้เชื้อดื้อยา ให้ paracetamol หรือ NSAID ระยะสั้นตามแพทย์สั่ง ดื่มน้ำมาก และหากข้อบวมแดงร้อนเฉียบพลันให้กลับมาพบแพทย์ ไม่จำเป็นต้องเริ่ม allopurinol สำหรับ urate ที่สูงจากยานี้หากไม่มีเกาต์\n\nการติดตามและสัญญาณอันตราย: pyrazinamide ยังเป็นพิษต่อตับ ร่วมกับ isoniazid และ rifampicin จึงต้องติดตาม LFT อาการตัวเหลือง เบื่ออาหาร คลื่นไส้ ส่วนผื่นรุนแรงและไข้ต้องหยุดยาทั้งสูตรและพบแพทย์ ติดตาม serum urate และ SCr หากมีอาการข้ออักเสบ\n\nจุดที่มักสับสนและกับดักข้อสอบ: rifampicin ทำให้ปัสสาวะ/น้ำตาสีส้มและเป็น enzyme inducer, isoniazid ทำให้ peripheral neuropathy (จึงให้ pyridoxine) และตับอักเสบ ส่วน pyridoxine เป็นวิตามิน B6 ที่ไม่ทำให้ urate สูง ตัวลวงที่ใกล้ที่สุดคือ ethambutol ซึ่งไม่ได้อยู่ในตัวเลือก แต่ควรจำไว้ว่าเพิ่ม urate ได้เป็นอันดับรอง\n\nสรุปท่องสอบ: TB drug ↑ urate: Pyrazinamide >> Ethambutol; ปวดข้อจาก PZA → รักษาตามอาการ ไม่ต้องหยุดยา; PZA + INH + RIF = ตับ; INH = ปลายประสาท (B6); RIF = ปัสสาวะส้ม + DDI",
         "choices": [
           {
             "label": "A",
             "text": "Pyrazinamide",
-            "explanation": "✓ ถูก — Pyrazinamide ผ่าน pyrazinoic acid เพิ่มการดูดกลับ urate ผ่าน URAT1 เป็นสาเหตุหลัก"
+            "explanation": "✓ ถูก — Pyrazinamide ถูกเปลี่ยนเป็น pyrazinoic acid ซึ่งแลกเปลี่ยนกับ urate ที่ URAT1 เพิ่มการดูดกลับและลดการหลั่ง urate ทำให้ serum urate สูงขึ้นเกือบทุกรายและมี arthralgia บ่อย ส่วนใหญ่ไม่ต้องหยุดยา ให้รักษาตามอาการและจะดีขึ้นหลังจบ intensive phase 2 เดือน หากเกิด gout flare จริงให้รักษา flare ตามปกติ"
           },
           {
             "label": "B",
             "text": "Isoniazid",
-            "explanation": "✗ ผิด — Isoniazid เด่นด้าน hepatotoxicity และ peripheral neuropathy ไม่ทำให้ urate สูงอย่างมีนัยสำคัญ"
+            "explanation": "✗ ผิด — Isoniazid ไม่มีผลสำคัญต่อการขับ urate ผลข้างเคียงเด่นคือ peripheral neuropathy จากการรบกวนเมแทบอลิซึมของ pyridoxine (จึงต้องให้ vitamin B6 ร่วม) ตับอักเสบ และ drug-induced lupus ข้อนี้จะถูกหากโจทย์ถามถึงยาที่ทำให้ชาปลายมือปลายเท้าหรือผลบวก ANA/anti-histone ในผู้ป่วยวัณโรค"
           },
           {
             "label": "C",
             "text": "Rifampicin",
-            "explanation": "✗ ผิด — Rifampicin เด่นด้าน hepatotoxicity, enzyme induction และปัสสาวะสีส้ม ไม่ใช่สาเหตุ hyperuricemia"
+            "explanation": "✗ ผิด — Rifampicin ไม่เพิ่ม serum urate ผลเด่นคือทำให้ปัสสาวะ น้ำตา เหงื่อเป็นสีส้มแดง ตับอักเสบ flu-like syndrome เมื่อใช้แบบไม่ต่อเนื่อง และเป็น potent inducer ของ CYP3A4/P-gp ที่ลดระดับยาอื่นจำนวนมาก ข้อนี้จะถูกหากโจทย์ถามว่ายาใดทำให้ยาคุมกำเนิดหรือ warfarin ได้ผลลดลงในผู้ป่วยวัณโรค"
           },
           {
             "label": "D",
             "text": "Pyridoxine",
-            "explanation": "✗ ผิด — Pyridoxine ใช้ป้องกัน neuropathy จาก isoniazid ไม่มีผลเพิ่ม urate"
+            "explanation": "✗ ผิด — Pyridoxine (vitamin B6) ให้เพื่อป้องกัน peripheral neuropathy จาก isoniazid ไม่มีผลต่อ urate และปลอดภัยในขนาดที่ใช้ (10–50 mg/วัน) แต่ขนาดสูงมากเป็นเวลานานอาจทำให้เกิด sensory neuropathy ได้เอง ข้อนี้จะถูกหากโจทย์ถามว่ายาใดในสูตรนี้ให้เพื่อป้องกันผลข้างเคียงทางระบบประสาทจาก isoniazid"
           }
         ],
-        "key_takeaway": "สูตร TB + urate พุ่ง → pyrazinamide"
+        "key_takeaway": "สูตร TB + urate พุ่ง → pyrazinamide (ethambutol รอง)"
       }
     },
     {
@@ -941,30 +961,30 @@
       ],
       "correct_answer": "D",
       "difficulty": "hard",
-      "explanation": "ผู้ป่วยเป็น acute CPP crystal arthritis (pseudogout) ซึ่งไม่ใช่ผลึก urate จึงไม่มีบทบาทของ ULT เช่น allopurinol ส่วนการรักษาอาการอักเสบเหมือนเกาต์ และควรหาสาเหตุทุติยภูมิ",
+      "explanation": "ผู้ป่วยเป็น acute CPP crystal arthritis (pseudogout) จากผลึก calcium pyrophosphate ไม่ใช่ urate (serum urate 5.2) ยาลดกรดยูริกอย่าง allopurinol จึงไม่มีบทบาท ส่วนการรักษาอาการอักเสบใช้หลักเดียวกับเกาต์ และควรหาสาเหตุทุติยภูมิ",
       "detailed_explanation": {
-        "summary": "ผู้ป่วยเป็น acute CPP crystal arthritis (pseudogout) ซึ่งไม่ใช่ผลึก urate จึงไม่มีบทบาทของ ULT เช่น allopurinol ส่วนการรักษาอาการอักเสบเหมือนเกาต์ และควรหาสาเหตุทุติยภูมิ",
-        "reason": "โจทย์ถามอะไร: การดูแล calcium pyrophosphate deposition (CPPD) disease / pseudogout และแยกจากเกาต์\n\nหลักการ/กลไกเชิงลึก: CPPD เกิดจาก pyrophosphate นอกเซลล์มากเกินในกระดูกอ่อน (เช่น จาก ANKH, อายุมาก, OA) จับกับ calcium ตกผลึก CPP ผลึกกระตุ้น NLRP3/IL-1β คล้ายเกาต์ แต่ยังไม่มียาที่ละลายผลึก CPP ได้ การรักษาจึงมุ่งควบคุมการอักเสบ ภาวะที่สัมพันธ์: hyperparathyroidism, hemochromatosis, hypomagnesemia, hypophosphatasia (ควรตรวจโดยเฉพาะผู้ป่วยอายุ <60 ปี หรือเป็นหลายข้อ)\n\nทำไมข้อ D ถูก: Allopurinol ลด urate ไม่มีผลต่อการสร้างผลึก CPP และ serum urate ของผู้ป่วยปกติ การเริ่ม ULT จึงไม่เหมาะสม และเพิ่มความเสี่ยง ADR โดยไม่มีประโยชน์\n\nการประยุกต์กับผู้ป่วยจริง: แนวทาง EULAR สำหรับ acute CPP arthritis: ฉีดสเตียรอยด์เข้าข้อ (หลังตัดการติดเชื้อ), colchicine ขนาดต่ำ, NSAIDs หรือ systemic steroid ระยะสั้น; recurrent: colchicine 0.5–1 mg/วัน หรือ NSAID ขนาดต่ำเป็น prophylaxis; กรณีดื้อยาอาจใช้ methotrexate, hydroxychloroquine หรือ IL-1 inhibitor ในผู้สูงอายุต้องระวังไตและ DDI ของ colchicine\n\nจุดที่มักสับสนและกับดักข้อสอบ: ผลึก rhomboid บวกอ่อน + chondrocalcinosis = CPPD ไม่ใช่เกาต์ แม้อาการเหมือนกันมาก ข้อสอบมักหลอกให้ใช้ยาลด urate กับ pseudogout\n\nสรุปท่องสอบ: Pseudogout: รักษาการอักเสบ + หาสาเหตุ (PTH, Mg, Fe) — ไม่มี ULT",
+        "summary": "CPPD: ผลึก rhomboid บวกอ่อน + chondrocalcinosis → รักษาด้วย IA steroid, colchicine, NSAIDs หรือ steroid ระยะสั้น; ไม่มียาละลายผลึก CPP และ allopurinol ไม่ช่วย; ตรวจ Ca/PTH, Mg, ferritin, phosphatase หาสาเหตุ",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วยหญิงสูงอายุมีข้อเข่าอักเสบเฉียบพลัน น้ำไขข้อพบผลึกรูป rhomboid หักเหแสงบวกอย่างอ่อน ภาพรังสีมี chondrocalcinosis และ serum urate ปกติ ซึ่งเข้าได้กับ acute CPP crystal arthritis (pseudogout) โจทย์ถามข้อที่ \"ไม่เหมาะสม\" ในการดูแล จึงทดสอบว่าแยก CPPD ออกจากเกาต์ได้หรือไม่ และรู้ว่าการรักษาใดใช้ร่วมกันได้และใดไม่ได้\n\nหลักการ/กลไกเชิงลึก: CPPD เกิดจากผลึก calcium pyrophosphate dihydrate ที่ก่อตัวในกระดูกอ่อนเมื่อมี inorganic pyrophosphate (PPi) นอกเซลล์มากเกิน ซึ่งเกี่ยวกับ ANKH (ขนส่ง PPi ออกนอกเซลล์), ENPP1 (สร้าง PPi) และการทำงานลดลงของ alkaline phosphatase ที่สลาย PPi ภาวะที่เพิ่ม Ca หรือรบกวนสมดุลนี้ ได้แก่ hyperparathyroidism, hemochromatosis (เหล็กยับยั้ง phosphatase), hypomagnesemia (Mg เป็น cofactor ของ phosphatase และเพิ่มการละลายผลึก) และ hypophosphatasia ผลึก CPP กระตุ้น NLRP3 inflammasome เช่นเดียวกับ MSU การรักษาอาการอักเสบจึงคล้ายเกาต์ แต่ต่างกันสำคัญคือไม่มียาที่ละลายผลึก CPP ได้ ยาลดกรดยูริกจึงไม่มีผลใด ๆ\n\nทำไมข้อ D ถูก (ไม่เหมาะสม): Allopurinol ลดการสร้าง urate ซึ่งไม่ได้เกี่ยวข้องกับผลึก calcium pyrophosphate ผู้ป่วยมี urate ปกติ (5.2 mg/dL) และไม่มีหลักฐานเกาต์ร่วม การให้ allopurinol จึงไม่ได้ป้องกันการกำเริบ แต่เพิ่มความเสี่ยงผลข้างเคียง เช่น SCAR โดยไม่มีประโยชน์\n\nหลักฐานและแนวทางเวชปฏิบัติ: EULAR recommendations for CPPD (2011) แนะนำการรักษา acute CPP crystal arthritis ด้วยการประคบเย็น พักข้อ เจาะดูดน้ำไขข้อร่วมกับฉีด corticosteroid เข้าข้อ หรือ colchicine ขนาดต่ำ (0.5 mg วันละ 3–4 ครั้ง ± loading 1 mg) หรือ NSAIDs ร่วมกับยาปกป้องกระเพาะ หรือ corticosteroid ระบบระยะสั้น การป้องกันการกำเริบซ้ำใช้ colchicine ขนาดต่ำ 0.5–1 mg/วัน หรือ NSAIDs ขนาดต่ำ และในรายเรื้อรังพิจารณา methotrexate หรือ hydroxychloroquine แนะนำตรวจหาโรคร่วมทางเมตาบอลิก โดยเฉพาะผู้ที่เริ่มเป็นก่อนอายุ 60 ปีหรือเป็นหลายข้อรุนแรง ส่วน ACR/EULAR 2023 เป็นเกณฑ์จำแนกโรค CPPD\n\nการประยุกต์กับผู้ป่วยจริง: ผู้สูงอายุมักมี CKD และยาหลายตัว การฉีด steroid เข้าข้อจึงมักปลอดภัยที่สุด หากใช้ colchicine ให้ปรับตามไตและตรวจยาที่ยับยั้ง CYP3A4/P-gp NSAIDs ใช้อย่างระมัดระวังในผู้สูงอายุ ตรวจ Ca, PTH, Mg, ferritin/transferrin saturation, ALP และ TSH ตามความเหมาะสม\n\nการติดตามและสัญญาณอันตราย: แยกข้อติดเชื้อเสมอ (ทำแล้วในรายนี้) และระวังว่าผลึกกับเชื้ออยู่ร่วมกันได้ เฝ้าระวังท้องเสียจาก colchicine และไตเสื่อมจาก NSAIDs ติดตามความถี่การกำเริบเพื่อตัดสินใจให้ยาป้องกัน\n\nจุดที่มักสับสนและกับดักข้อสอบ: เพราะการรักษา flare ของ CPPD และเกาต์คล้ายกันมาก ผู้สอบมักเหมารวมว่า ULT ใช้ได้ด้วย ซึ่งผิด จำว่า \"Rhomboid Positive = Pyrophosphate\" ไม่ใช่ urate นอกจากนี้ chondrocalcinosis ในผู้สูงอายุพบได้บ่อยโดยไม่มีอาการ\n\nสรุปท่องสอบ: CPPD = rhomboid + บวกอ่อน + chondrocalcinosis; รักษา flare เหมือนเกาต์ (IA steroid, colchicine, NSAID, steroid); ไม่มี ULT สำหรับ CPP; หาสาเหตุ: hyperPTH, hemochromatosis, low Mg, hypophosphatasia",
         "choices": [
           {
             "label": "A",
             "text": "ฉีด corticosteroid เข้าข้อเข่าเพื่อรักษาอาการอักเสบเฉียบพลัน",
-            "explanation": "✗ ผิด — Intra-articular steroid เป็นการรักษาที่มีประสิทธิภาพสำหรับ acute CPP arthritis ข้อเดียว"
+            "explanation": "✗ ผิด (เพราะข้อนี้เหมาะสม) — การฉีด corticosteroid เข้าข้อหลังแยกข้อติดเชื้อแล้วเป็นการรักษาที่ EULAR แนะนำสำหรับ acute CPP crystal arthritis ที่เป็นข้อใหญ่ข้อเดียว เหมาะกับผู้สูงอายุที่มักมีข้อห้ามของ NSAIDs หรือ colchicine จึงไม่ใช่คำตอบของคำถามที่ถามข้อไม่เหมาะสม ข้อนี้จะไม่เหมาะเฉพาะเมื่อยังไม่ได้แยกข้อติดเชื้อหรือผิวหนังบริเวณที่ฉีดติดเชื้อ"
           },
           {
             "label": "B",
             "text": "ใช้ colchicine ขนาดต่ำในการรักษาหรือป้องกันการกำเริบซ้ำ หากไม่มีข้อห้าม",
-            "explanation": "✗ ผิด — Colchicine ขนาดต่ำใช้ได้ทั้งรักษาและป้องกัน CPP crystal arthritis"
+            "explanation": "✗ ผิด (เพราะข้อนี้เหมาะสม) — Colchicine ขนาดต่ำใช้ได้ทั้งรักษา acute CPP crystal arthritis และป้องกันการกำเริบซ้ำตาม EULAR (เช่น 0.5–1 mg/วันสำหรับป้องกัน) โดยต้องปรับตามการทำงานของไตและตรวจยาที่ยับยั้ง CYP3A4/P-gp ข้อนี้จะไม่เหมาะหากผู้ป่วยมี CKD รุนแรงร่วมกับใช้ clarithromycin หรือ azole ซึ่งเสี่ยงพิษ colchicine"
           },
           {
             "label": "C",
             "text": "ตรวจหาสาเหตุทุติยภูมิ เช่น ระดับ calcium/PTH, magnesium และ ferritin/transferrin saturation",
-            "explanation": "✗ ผิด — ควรตรวจหาภาวะ hyperparathyroidism, hypomagnesemia, hemochromatosis ที่สัมพันธ์กับ CPPD"
+            "explanation": "✗ ผิด (เพราะข้อนี้เหมาะสม) — การตรวจหาสาเหตุทุติยภูมิของ CPPD เช่น hyperparathyroidism (Ca/PTH), hypomagnesemia, hemochromatosis (ferritin/transferrin saturation) และ hypophosphatasia (ALP) เป็นสิ่งที่ EULAR แนะนำ โดยเฉพาะในผู้ที่เริ่มเป็นอายุน้อยหรือเป็นหลายข้อ การรักษาโรคต้นเหตุอาจลดการกำเริบ ข้อนี้มีความสำคัญสูงสุดเมื่อผู้ป่วยอายุ <60 ปี"
           },
           {
             "label": "D",
             "text": "เริ่ม allopurinol เพื่อป้องกันการกำเริบซ้ำ",
-            "explanation": "✓ ถูก — Allopurinol ไม่มีผลต่อผลึก calcium pyrophosphate จึงไม่เหมาะสมใน pseudogout"
+            "explanation": "✓ ถูก (ข้อนี้ไม่เหมาะสม) — Allopurinol ลดการสร้าง urate แต่ผู้ป่วยเป็นโรคจากผลึก calcium pyrophosphate ซึ่งไม่เกี่ยวกับ urate และ serum urate ปกติ (5.2 mg/dL) จึงไม่ป้องกันการกำเริบและเพิ่มความเสี่ยงผลข้างเคียง เช่น SCAR โดยไม่ได้ประโยชน์ ปัจจุบันไม่มียาที่ละลายผลึก CPP ได้ การป้องกันใช้ colchicine หรือ NSAIDs ขนาดต่ำแทน"
           }
         ],
         "key_takeaway": "CPPD ไม่ใช่ urate — allopurinol ไม่ช่วย"
@@ -992,30 +1012,30 @@
       ],
       "correct_answer": "C",
       "difficulty": "easy",
-      "explanation": "ACR 2020 แนะนำ (conditional) ให้จำกัดแอลกอฮอล์ purine และ HFCS และลดน้ำหนัก แต่แนะนำไม่ให้เสริมวิตามินซี เพราะลด urate ได้น้อยมากและไม่มีผลต่อ flare",
+      "explanation": "ACR 2020 แนะนำ (conditional) ให้จำกัดแอลกอฮอล์ purine และ high-fructose corn syrup และลดน้ำหนักในผู้ที่น้ำหนักเกิน แต่แนะนำไม่ให้เสริมวิตามินซี เพราะลด urate ได้น้อยมากและไม่ลด flare",
       "detailed_explanation": {
-        "summary": "ACR 2020 แนะนำ (conditional) ให้จำกัดแอลกอฮอล์ purine และ HFCS และลดน้ำหนัก แต่แนะนำไม่ให้เสริมวิตามินซี เพราะลด urate ได้น้อยมากและไม่มีผลต่อ flare",
-        "reason": "โจทย์ถามอะไร: คำแนะนำด้าน lifestyle ในผู้ป่วยเกาต์ตาม ACR 2020\n\nหลักการ/กลไกเชิงลึก: แอลกอฮอล์เพิ่มการสลาย ATP เป็น purine และ lactate แข่งขันลดการขับ urate เบียร์ยังมี guanosine สูง Fructose ถูก phosphorylate โดย fructokinase อย่างรวดเร็ว ทำให้ ATP ลด → AMP ถูกสลายเป็น urate การลดน้ำหนักลด insulin resistance ซึ่งเพิ่มการดูดกลับ urate ที่ไต\n\nทำไมข้อ C ถูก: วิตามินซีมีฤทธิ์ uricosuric อ่อนมาก (ลด urate ~0.3–0.5 mg/dL) การศึกษา RCT ในผู้ป่วยเกาต์ไม่พบประโยชน์ทางคลินิก ACR 2020 จึง conditionally recommend against vitamin C supplementation\n\nการประยุกต์กับผู้ป่วยจริง: แนะนำผู้ป่วยลดเบียร์และน้ำอัดลม ดื่มน้ำเปล่าให้เพียงพอ ลดเนื้อแดง เครื่องในสัตว์ และอาหารทะเล ลดน้ำหนักอย่างค่อยเป็นค่อยไป (การอดอาหารรวดเร็วกระตุ้น flare) และย้ำว่าการปรับพฤติกรรมเป็นส่วนเสริม ไม่ใช่สิ่งทดแทน allopurinol\n\nจุดที่มักสับสนและกับดักข้อสอบ: หลายคนคิดว่าวิตามินซีแนะนำให้กินเพราะลด urate ได้จริงบางส่วน แต่ไม่มีประโยชน์ทางคลินิก ส่วนผลิตภัณฑ์นมไขมันต่ำและผักที่มี purine (เช่น ยอดผัก) ไม่จำเป็นต้องงด\n\nสรุปท่องสอบ: Lifestyle เกาต์: ลดเหล้า/purine/HFCS + ลดน้ำหนัก — ไม่เสริมวิตามินซี",
+        "summary": "ACR 2020 lifestyle ในเกาต์: ลดแอลกอฮอล์ (โดยเฉพาะเบียร์), ลดน้ำหวาน HFCS, ลดน้ำหนัก, จำกัด purine (conditional); ไม่แนะนำวิตามินซีเสริม (conditional against) — การปรับพฤติกรรมเป็นส่วนเสริม ไม่แทน ULT",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วยเกาต์ที่ใช้ allopurinol อยู่ มีภาวะอ้วน (BMI 30) ดื่มเบียร์และน้ำอัดลมเป็นประจำ โจทย์ถามคำแนะนำที่ \"ไม่สอดคล้อง\" กับ ACR 2020 จึงทดสอบรายละเอียดของคำแนะนำด้านอาหารและพฤติกรรม ซึ่งเป็นงานให้คำปรึกษาหลักของเภสัชกรชุมชน\n\nหลักการ/กลไกเชิงลึก: แอลกอฮอล์เพิ่ม urate โดยเร่งการสลาย ATP เป็น AMP และ purine (เพิ่มการสร้าง) และทำให้เกิด lactate ซึ่งแข่งขันกับการขับ urate ที่ไต (ลดการขับ) เบียร์ยังมี guanosine ซึ่งเป็น purine ที่ดูดซึมง่าย จึงเพิ่มความเสี่ยงมากกว่าเหล้าหรือไวน์ ฟรุกโตสถูก phosphorylate อย่างรวดเร็วโดย fructokinase ทำให้ ATP ถูกใช้หมดและได้ AMP ซึ่งสลายต่อเป็น urate ทั้งยังเพิ่ม insulin resistance ซึ่งลดการขับ urate ที่ไต (insulin เพิ่มการดูดกลับผ่าน URAT1/GLUT9) ส่วนวิตามินซีในขนาดสูง (500 mg/วัน) มีฤทธิ์ uricosuric อ่อน ลด urate ได้เพียงราว 0.3–0.5 mg/dL ในการศึกษาส่วนใหญ่ ซึ่งไม่มีความหมายทางคลินิกในผู้ป่วยเกาต์ที่มีคลังผลึก\n\nทำไมข้อ C ถูก (ไม่สอดคล้อง): ACR 2020 แนะนำ (conditional) ไม่ให้เสริมวิตามินซีในผู้ป่วยเกาต์ เพราะ RCT ในผู้ป่วยเกาต์ (Stamp et al., 2013) พบว่าวิตามินซี 500 mg/วันลด urate น้อยมากและไม่ลดการกำเริบ เมื่อเทียบกับการเพิ่มขนาด allopurinol ที่ได้ผลชัดเจนกว่า\n\nหลักฐานและแนวทางเวชปฏิบัติ: ACR 2020 แนะนำ (conditional) ให้ผู้ป่วยเกาต์จำกัดแอลกอฮอล์ จำกัดอาหาร purine สูง จำกัด HFCS และลดน้ำหนักในผู้ที่มีน้ำหนักเกินหรืออ้วน โดยระบุว่าการปรับพฤติกรรมเหล่านี้ลด urate ได้จำกัดและเป็นส่วนเสริม ULT ไม่ใช่การแทน ส่วนวิตามินซีเสริมได้รับคำแนะนำ conditional against ข้อมูลจาก cohort ขนาดใหญ่ (Health Professionals Follow-up Study) สนับสนุนว่าเบียร์ เนื้อแดง อาหารทะเล และน้ำหวานเพิ่มความเสี่ยงเกาต์ ส่วนผลิตภัณฑ์นมไขมันต่ำและกาแฟสัมพันธ์กับความเสี่ยงที่ลดลง\n\nการประยุกต์กับผู้ป่วยจริง: แนะนำลดเบียร์จาก 6 ขวดต่อสัปดาห์ให้น้อยที่สุดหรืองดโดยเฉพาะช่วง flare เปลี่ยนน้ำอัดลมเป็นน้ำเปล่าหรือเครื่องดื่มไม่หวาน ตั้งเป้าลดน้ำหนักช้า ๆ 5–10% ใน 6–12 เดือน หลีกเลี่ยงการอดอาหารหรือ crash diet ซึ่งเพิ่ม ketone และ urate ลดเครื่องในสัตว์ น้ำซุปกระดูก และอาหารทะเลปริมาณมาก และย้ำให้ใช้ allopurinol ต่อเนื่องทุกวัน\n\nการติดตามและสัญญาณอันตราย: ติดตามน้ำหนัก รอบเอว ความดัน น้ำตาล ไขมัน และ serum urate ทุก 6 เดือน หากดื่มหนักให้ประเมินโรคตับและเสนอการบำบัด สังเกตว่า flare มักตามหลังงานเลี้ยงหรือการดื่มหนัก\n\nจุดที่มักสับสนและกับดักข้อสอบ: คำถามแบบ \"ไม่สอดคล้อง\" ต้องเลือกข้อที่ผิด ไม่ใช่ข้อที่ถูก วิตามินซีเป็นตัวลวงเพราะฟังดูเป็นธรรมชาติและมีหลักฐานลด urate เล็กน้อยจริง แต่แนวทางไม่แนะนำ นอกจากนี้ ACR 2020 ยังไม่แนะนำ (conditional against) ให้เปลี่ยนยาลดไขมันเป็น fenofibrate หรือหยุด low-dose aspirin\n\nสรุปท่องสอบ: เกาต์ lifestyle (ACR 2020, conditional): ลดแอลกอฮอล์, purine, HFCS, ลดน้ำหนัก ✓ — วิตามินซีเสริม ✗ — ทั้งหมดเป็นส่วนเสริม ULT ไม่ใช่แทน",
         "choices": [
           {
             "label": "A",
             "text": "ลดหรือจำกัดการดื่มแอลกอฮอล์ โดยเฉพาะเบียร์",
-            "explanation": "✗ ผิด — การจำกัดแอลกอฮอล์ (โดยเฉพาะเบียร์) เป็นคำแนะนำของ ACR 2020"
+            "explanation": "✗ ผิด (เพราะข้อนี้สอดคล้อง) — ACR 2020 แนะนำ (conditional) ให้จำกัดแอลกอฮอล์ทุกชนิดในผู้ป่วยเกาต์ เบียร์มีความเสี่ยงสูงสุดเพราะทั้งแอลกอฮอล์เพิ่มการสลาย ATP/ลดการขับ urate และมี guanosine ซึ่งเป็น purine ดูดซึมง่าย ผู้ป่วยดื่ม 6 ขวดต่อสัปดาห์จึงควรลดลงมาก ข้อนี้จะเป็นคำแนะนำที่ไม่สอดคล้องก็ต่อเมื่อแนะนำให้เปลี่ยนเป็นไวน์แล้วดื่มได้ไม่จำกัด"
           },
           {
             "label": "B",
             "text": "ลดเครื่องดื่มที่มีน้ำตาล high-fructose corn syrup เช่น น้ำอัดลม",
-            "explanation": "✗ ผิด — ACR 2020 แนะนำจำกัด high-fructose corn syrup เพราะ fructose เพิ่มการสร้าง urate"
+            "explanation": "✗ ผิด (เพราะข้อนี้สอดคล้อง) — ACR 2020 แนะนำ (conditional) ให้จำกัด high-fructose corn syrup เพราะฟรุกโตสถูก phosphorylate เร็วจนใช้ ATP หมด ได้ AMP ที่สลายเป็น urate และยังเพิ่ม insulin resistance ซึ่งลดการขับ urate ผู้ป่วยดื่มน้ำอัดลมวันละ 2 กระป๋องจึงควรลดลง ข้อนี้ใช้ได้ทั้งการป้องกันเกาต์และลดน้ำหนัก"
           },
           {
             "label": "C",
             "text": "รับประทานวิตามินซีเสริมเพื่อช่วยลดกรดยูริก",
-            "explanation": "✓ ถูก — ACR 2020 แนะนำไม่ให้เสริมวิตามินซี เนื่องจากไม่มีประโยชน์ทางคลินิกที่ชัดเจน"
+            "explanation": "✓ ถูก (ข้อนี้ไม่สอดคล้อง) — ACR 2020 แนะนำ (conditional) ไม่ให้เสริมวิตามินซีในผู้ป่วยเกาต์ เพราะ RCT ในผู้ป่วยเกาต์พบว่าวิตามินซี 500 mg/วันลด urate ได้น้อยมากและไม่ลด flare เมื่อเทียบกับการเพิ่มขนาด allopurinol ทั้งขนาดสูงยังเพิ่มความเสี่ยงนิ่ว oxalate การลดเบียร์ ลดน้ำหวาน ลดน้ำหนัก และใช้ ULT สม่ำเสมอให้ผลมากกว่า"
           },
           {
             "label": "D",
             "text": "ควบคุมน้ำหนักในผู้ที่มีน้ำหนักเกิน",
-            "explanation": "✗ ผิด — ACR 2020 แนะนำลดน้ำหนักในผู้ป่วยเกาต์ที่มีน้ำหนักเกิน"
+            "explanation": "✗ ผิด (เพราะข้อนี้สอดคล้อง) — ACR 2020 แนะนำ (conditional) ให้ลดน้ำหนักในผู้ป่วยเกาต์ที่น้ำหนักเกินหรืออ้วน เพราะโรคอ้วนและ insulin resistance ลดการขับ urate และเพิ่มการสร้าง การลดน้ำหนักช่วยลด urate และโรคร่วม แต่ควรลดช้า ๆ หลีกเลี่ยงการอดอาหารรุนแรงซึ่งเพิ่ม ketone และ urate จนกระตุ้น flare ข้อนี้จะไม่เหมาะเฉพาะเมื่อแนะนำ crash diet"
           }
         ],
         "key_takeaway": "ACR 2020: ไม่แนะนำ vitamin C เสริมในเกาต์"

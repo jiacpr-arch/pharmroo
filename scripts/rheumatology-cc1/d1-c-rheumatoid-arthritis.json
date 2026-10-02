@@ -23,30 +23,30 @@
       ],
       "correct_answer": "B",
       "difficulty": "easy",
-      "explanation": "Anti-CCP มีความจำเพาะต่อ RA สูงราว 95% และค่าที่สูงสัมพันธ์กับโรคที่รุนแรง/มี erosion มากขึ้น",
+      "explanation": "Anti-CCP (ACPA) มี specificity ต่อ RA สูงราว 95% สูงกว่า RF อย่างชัดเจน และผลบวกโดยเฉพาะ titer สูงเป็น poor prognostic factor ที่สัมพันธ์กับ erosion เร็ว",
       "detailed_explanation": {
-        "summary": "Anti-CCP มีความจำเพาะต่อ RA สูงราว 95% และค่าที่สูงสัมพันธ์กับโรคที่รุนแรง/มี erosion มากขึ้น",
-        "reason": "โจทย์ถามอะไร: ถามว่า serologic test ใดจำเพาะต่อ RA มากที่สุดและมีค่าในการพยากรณ์โรค\n\nหลักการ/กลไกเชิงลึก: ACPA เกิดจากภูมิคุ้มกันต่อโปรตีนที่ถูกเปลี่ยน arginine เป็น citrulline (citrullination) ในเยื่อบุข้อ anti-CCP มี sensitivity ราว 60–70% ใกล้เคียง RF แต่ specificity ~95% ขณะที่ RF พบได้ในโรคอื่น เช่น Sjögren, HCV, endocarditis และผู้สูงอายุปกติ ในเกณฑ์ ACR/EULAR 2010 serology (RF หรือ ACPA) ให้ 2 คะแนนถ้า low-positive และ 3 คะแนนถ้า high-positive (>3 เท่าของ ULN) ร่วมกับการนับข้อ (0–5), acute phase reactant (ESR/CRP ผิดปกติ 1 คะแนน) และระยะเวลา ≥6 สัปดาห์ (1 คะแนน) รวม ≥6/10 = definite RA\n\nทำไมข้อ B ถูก: Anti-CCP จำเพาะสูงสุด และ ACPA-positive เป็น poor prognostic factor (erosion เร็ว) ร่วมกับ RF titer สูง, ESR/CRP สูง, erosion ระยะแรก\n\nการประยุกต์กับผู้ป่วยจริง: ผู้ป่วยรายนี้มีข้อเล็กหลายข้อ ระยะเวลา 8 สัปดาห์ ถ้า anti-CCP high-positive คะแนนจะถึงเกณฑ์ได้ง่าย และควรเริ่ม csDMARD (MTX) โดยเร็วภายใน window of opportunity\n\nจุดที่มักสับสนและกับดักข้อสอบ: RF ใช้ในเกณฑ์เช่นกันแต่จำเพาะน้อยกว่า ESR/CRP บอกการอักเสบแต่ไม่จำเพาะ ANA เป็น screening ของ SLE ไม่ใช่ RA; seronegative RA ก็มีได้ (ผลลบไม่ตัดโรค)\n\nสรุปท่องสอบ: Anti-CCP = specific + prognostic; RF = sensitive พอ ๆ กันแต่ไม่จำเพาะ; ESR/CRP = activity",
+        "summary": "Anti-CCP (ACPA) มี specificity ต่อ RA สูงราว 95% สูงกว่า RF อย่างชัดเจน และผลบวกโดยเฉพาะ titer สูงเป็น poor prognostic factor ที่สัมพันธ์กับ erosion เร็ว",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วยหญิงวัยกลางคนมี symmetric polyarthritis ของข้อเล็ก (MCP, PIP) ร่วมกับ morning stiffness >1 ชั่วโมง นาน 8 สัปดาห์ ซึ่งเป็นภาพคลาสสิกของ RA โจทย์ต้องการให้แยกว่าการตรวจทาง serology ใด \"จำเพาะ\" ต่อ RA ที่สุด และยังมีค่าพยากรณ์การทำลายข้อ (erosive disease) ด้วย ไม่ได้ถามว่าตัวใด sensitive ที่สุดหรือใช้ติดตาม disease activity\n\nหลักการ/กลไกเชิงลึก: ในเยื่อบุข้อที่อักเสบ เอนไซม์ peptidylarginine deiminase (PAD) เปลี่ยน arginine ในโปรตีน เช่น fibrinogen, vimentin, α-enolase ให้เป็น citrulline ผู้ที่มี HLA-DRB1 \"shared epitope\" จะนำเสนอ citrullinated peptide ได้ดีและสร้าง anti-citrullinated protein antibody (ACPA) ซึ่งวัดในห้องปฏิบัติการด้วย anti-cyclic citrullinated peptide (anti-CCP) การสูบบุหรี่กระตุ้น citrullination ในปอด จึงเป็นปัจจัยเสี่ยงร่วมกับ shared epitope ACPA ตรวจพบได้หลายปีก่อนข้ออักเสบ และกระตุ้น osteoclast ได้โดยตรง จึงสัมพันธ์กับ erosion ส่วน RF คือ IgM ต่อ Fc ของ IgG ที่พบได้ในภาวะกระตุ้นภูมิคุ้มกันเรื้อรังทั่วไป\n\nทำไมข้อ B ถูก: Anti-CCP มี sensitivity ราว 60–70% ใกล้เคียง RF แต่ specificity ประมาณ 95% (RF ประมาณ 80–85%) จึงเป็นการตรวจที่จำเพาะที่สุดในตัวเลือก และ ACPA-positive (โดยเฉพาะ high titer) ถูกจัดเป็น poor prognostic factor ร่วมกับ RF titer สูง ESR/CRP สูง จำนวนข้ออักเสบมาก และ erosion ระยะแรก\n\nหลักฐานและแนวทางเวชปฏิบัติ: เกณฑ์ ACR/EULAR 2010 ให้คะแนน 4 หมวด ได้แก่ จำนวนและชนิดข้อ (0–5), serology RF/ACPA (ลบ 0, low-positive 2, high-positive >3×ULN 3), acute-phase reactant ESR/CRP ผิดปกติ (1) และระยะเวลา ≥6 สัปดาห์ (1) คะแนนรวม ≥6/10 = definite RA EULAR ระบุว่า ACPA และ RF เป็น poor prognostic factors ที่ใช้ตัดสินใจเร่งการรักษาเมื่อ csDMARD แรกล้มเหลว\n\nการประยุกต์กับผู้ป่วยจริง: ผู้ป่วยรายนี้มีข้อเล็ก >10 ข้อหรือ 4–10 ข้อ (3–5 คะแนน) ระยะเวลา 8 สัปดาห์ (1 คะแนน) หาก anti-CCP high-positive (3 คะแนน) ก็ถึงเกณฑ์แล้วโดยไม่ต้องรอ ESR ควรเริ่ม methotrexate ให้เร็วที่สุดภายใน window of opportunity (ช่วง 3–6 เดือนแรก) เภสัชกรควรแนะนำเลิกบุหรี่เพราะสัมพันธ์ทั้งกับการเกิดโรค ACPA-positive และการตอบสนองต่อยาที่แย่ลง\n\nการติดตามและสัญญาณอันตราย: ACPA ไม่ต้องตรวจซ้ำเพื่อติดตามโรค เพราะ titer ไม่ได้สะท้อน activity รายวัน ให้ใช้ composite score (DAS28, CDAI, SDAI) ร่วมกับ ESR/CRP แทน ผู้ป่วย ACPA-positive ที่สูบบุหรี่ควรเฝ้าระวังอาการไอแห้ง เหนื่อยง่าย (RA-ILD) และติดตามภาพรังสีมือ/เท้าเป็นระยะเพื่อดู erosion\n\nจุดที่มักสับสนและกับดักข้อสอบ: RF อยู่ในเกณฑ์เช่นกันแต่พบได้ใน HCV, Sjögren, endocarditis, TB และผู้สูงอายุปกติ ESR/CRP บอกการอักเสบแต่ไม่บอกชนิดโรค ANA เป็น screening ของ SLE/CTD (พบ ANA บวกใน RA ได้ราว 30–40%) และ seronegative RA มีได้จริง ผลลบจึงไม่ตัดการวินิจฉัย\n\nสรุปท่องสอบ: Anti-CCP = specific (~95%) + prognostic (erosion); RF = sensitivity พอกันแต่จำเพาะน้อยกว่า; ESR/CRP = activity; ANA = SLE screen; เกณฑ์ 2010 ≥6/10",
         "choices": [
           {
             "label": "A",
             "text": "Rheumatoid factor (RF)",
-            "explanation": "✗ ผิด — RF sensitivity ~70% แต่พบใน HCV, Sjögren, ผู้สูงอายุ จึงจำเพาะน้อยกว่า anti-CCP"
+            "explanation": "✗ ผิด — RF (IgM anti-Fc IgG) มี sensitivity ราว 70% ใกล้ anti-CCP แต่พบได้ใน HCV, Sjögren, subacute bacterial endocarditis, TB, cryoglobulinemia และผู้สูงอายุปกติ จึง specificity เพียง 80–85% ต่ำกว่า anti-CCP ข้อนี้จะเป็นคำตอบหากโจทย์ถามการตรวจ serology ที่ใช้มายาวนานและอยู่ในเกณฑ์ ACR/EULAR 2010 หรือถามภาวะที่ RF titer สูงเป็น poor prognostic factor ร่วมกับ ACPA"
           },
           {
             "label": "B",
             "text": "Anti-cyclic citrullinated peptide antibody (anti-CCP/ACPA)",
-            "explanation": "✓ ถูก — anti-CCP specificity ~95% และ high titer สัมพันธ์กับ erosive disease"
+            "explanation": "✓ ถูก — Anti-CCP (ACPA) มี specificity ประมาณ 95% สูงที่สุดในตัวเลือก ตรวจพบได้ตั้งแต่ระยะก่อนมีอาการ และผลบวกโดยเฉพาะ high titer (>3×ULN ได้ 3 คะแนนในเกณฑ์ 2010) สัมพันธ์กับ erosive disease และการดำเนินโรครุนแรง จึงตอบได้ทั้งเรื่องความจำเพาะและการพยากรณ์ตามที่โจทย์ถาม และช่วยตัดสินใจเร่งการรักษาเมื่อ csDMARD แรกไม่ได้ผล"
           },
           {
             "label": "C",
             "text": "Erythrocyte sedimentation rate (ESR)",
-            "explanation": "✗ ผิด — ESR เป็น acute phase reactant ไม่จำเพาะต่อโรคใด ใช้ในเกณฑ์ได้เพียง 1 คะแนน"
+            "explanation": "✗ ผิด — ESR เป็น acute-phase reactant ที่สูงได้ในการติดเชื้อ มะเร็ง โลหิตจาง ตั้งครรภ์ และอายุมาก จึงไม่จำเพาะต่อโรคใด ในเกณฑ์ ACR/EULAR 2010 ได้เพียง 1 คะแนน ข้อนี้จะถูกหากโจทย์ถามค่าที่ใช้ร่วมคำนวณ DAS28-ESR เพื่อติดตาม disease activity หรือถาม poor prognostic factor ด้าน ESR/CRP สูงต่อเนื่อง"
           },
           {
             "label": "D",
             "text": "Antinuclear antibody (ANA)",
-            "explanation": "✗ ผิด — ANA ใช้คัดกรอง SLE/CTD ไม่ใช่การตรวจจำเพาะของ RA"
+            "explanation": "✗ ผิด — ANA มี sensitivity สูงมากต่อ SLE (>95%) จึงใช้คัดกรอง SLE และ connective tissue disease อื่น แต่พบใน RA ได้ราว 30–40% และในคนปกติจำนวนมาก จึงไม่จำเพาะต่อ RA และไม่บอกพยากรณ์ erosion ข้อนี้จะถูกหากผู้ป่วยมีผื่นผีเสื้อ แผลในปาก ไตอักเสบ หรือ cytopenia ที่ชวนนึกถึง SLE"
           }
         ],
         "key_takeaway": "RA: anti-CCP จำเพาะที่สุด + บอกพยากรณ์ erosion"
@@ -74,33 +74,41 @@
       ],
       "correct_answer": "C",
       "difficulty": "medium",
-      "explanation": "DAS28 >3.2 ถึง ≤5.1 = moderate disease activity ค่าที่คำนวณได้ ≈ 4.55 จึงเป็น moderate และยังไม่ถึงเป้าหมาย treat-to-target",
+      "explanation": "DAS28-ESR = 1.12 + 0.49 + 2.38 + 0.56 ≈ 4.55 ซึ่งอยู่ในช่วง >3.2 ถึง ≤5.1 จึงเป็น moderate disease activity และยังไม่ถึงเป้าหมาย treat-to-target",
       "detailed_explanation": {
-        "summary": "DAS28 >3.2 ถึง ≤5.1 = moderate disease activity ค่าที่คำนวณได้ ≈ 4.55 จึงเป็น moderate และยังไม่ถึงเป้าหมาย treat-to-target",
-        "reason": "โจทย์ถามอะไร: ให้ข้อมูลการนับข้อ ESR และ GH ให้คำนวณ DAS28-ESR แล้วแปลผล\n\nหลักการ/กลไกเชิงลึก: DAS28 รวม tender joint count (28 ข้อ), swollen joint count, ESR (หรือ CRP) และ patient global assessment แทนค่า: 0.56×√4 = 0.56×2 = 1.12; 0.28×√3 = 0.28×1.732 = 0.49; 0.70×ln30 = 0.70×3.40 = 2.38; 0.014×40 = 0.56 รวม DAS28-ESR = 1.12 + 0.49 + 2.38 + 0.56 ≈ 4.55 เกณฑ์แปลผล: <2.6 remission, 2.6–≤3.2 low, >3.2–≤5.1 moderate, >5.1 high\n\nทำไมข้อ C ถูก: 4.55 อยู่ในช่วง >3.2 ถึง ≤5.1 จึงเป็น moderate disease activity\n\nการประยุกต์กับผู้ป่วยจริง: หลัง MTX 3 เดือนยังไม่ถึงเป้าหมาย (remission หรือ low disease activity) ควรปรับการรักษา เช่น เพิ่ม MTX ให้ถึง 20–25 mg/สัปดาห์ (ถ้ายังไม่ถึง) เพิ่ม csDMARD (triple therapy) หรือเพิ่ม bDMARD/tsDMARD ถ้ามี poor prognostic factors\n\nจุดที่มักสับสนและกับดักข้อสอบ: อย่าสับสนกับจุดตัด CDAI (remission ≤2.8, low ≤10, moderate ≤22) หรือ SDAI (≤3.3, ≤11, ≤26) จุดตัด DAS28 ที่ต้องจำคือ 2.6 / 3.2 / 5.1\n\nสรุปท่องสอบ: DAS28: <2.6 remission | ≤3.2 low | ≤5.1 moderate | >5.1 high",
+        "summary": "DAS28-ESR = 1.12 + 0.49 + 2.38 + 0.56 ≈ 4.55 ซึ่งอยู่ในช่วง >3.2 ถึง ≤5.1 จึงเป็น moderate disease activity และยังไม่ถึงเป้าหมาย treat-to-target",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วย RA ใช้ methotrexate 15 mg/สัปดาห์มา 3 เดือน โจทย์ให้ tender joint count (TJC28) = 4, swollen joint count (SJC28) = 3, ESR 30 mm/h และ patient global health (GH) 40/100 พร้อมสูตร DAS28-ESR ให้คำนวณแล้วแปลผลระดับ disease activity เพื่อตัดสินว่าถึงเป้าหมายการรักษาหรือยัง\n\nหลักการ/กลไกเชิงลึก: DAS28 เป็น composite index ที่รวมมุมมอง 3 ด้าน ได้แก่ ข้อ (กดเจ็บและบวมจาก 28 ข้อ: ไหล่ ศอก ข้อมือ MCP PIP และเข่า โดยไม่นับข้อเท้าและเท้า), การอักเสบทางชีวเคมี (ESR หรือ CRP) และความรู้สึกของผู้ป่วย (GH) น้ำหนักของ TJC มากกว่า SJC และ ESR ใช้ค่า ln จึงเพิ่มแบบลอการิทึม ขั้นตอนคำนวณ: 0.56×√4 = 1.12; 0.28×√3 = 0.28×1.732 = 0.49; 0.70×ln30 = 0.70×3.401 = 2.38; 0.014×40 = 0.56 รวม = 4.55\n\nทำไมข้อ C ถูก: เกณฑ์ DAS28 คือ <2.6 remission, ≥2.6 ถึง ≤3.2 low, >3.2 ถึง ≤5.1 moderate และ >5.1 high ค่า 4.55 จึงเป็น moderate disease activity\n\nหลักฐานและแนวทางเวชปฏิบัติ: EULAR 2022 และ ACR 2021 กำหนดเป้าหมายเป็น sustained remission หรืออย่างน้อย low disease activity โดยประเมินด้วย validated composite measure ทุก 1–3 เดือนเมื่อโรค active ACR ยอมรับ DAS28, CDAI, SDAI, RAPID3 และ PAS-II ส่วน EULAR เน้นว่า DAS28 remission อาจยังมีข้อบวมเหลืออยู่ (โดยเฉพาะเมื่อ CRP ต่ำ) จึงแนะนำ Boolean หรือ SDAI/CDAI remission สำหรับงานวิจัย\n\nการประยุกต์กับผู้ป่วยจริง: หลัง MTX 3 เดือนโรคยัง moderate แปลว่ายังไม่ถึงเป้าหมาย ต้องปรับการรักษา ขั้นแรกตรวจ adherence และขนาดยา ถ้า MTX ยังไม่ถึง 20–25 mg/สัปดาห์ ให้เพิ่มขนาดหรือเปลี่ยนเป็นรูปแบบฉีด SC ถ้าไม่มี poor prognostic factors พิจารณาเพิ่ม csDMARD (triple therapy) ถ้ามี poor prognostic factors ให้พิจารณาเพิ่ม bDMARD หรือ tsDMARD ร่วมกับ MTX\n\nการติดตามและสัญญาณอันตราย: ประเมิน DAS28 ซ้ำทุก 1–3 เดือนจนถึงเป้า แล้วทุก 3–6 เดือนเมื่อคงที่ ระวังว่า ESR สูงได้จากโลหิตจาง ตั้งครรภ์ ผู้สูงอายุ หรือ hypergammaglobulinemia ซึ่งทำให้ DAS28-ESR สูงเกินจริง ส่วนผู้ใช้ tocilizumab/JAK inhibitor ค่า ESR/CRP ถูกกดจน DAS28 ต่ำเกินจริงได้\n\nจุดที่มักสับสนและกับดักข้อสอบ: อย่าลืมใช้ ln ไม่ใช่ log10 (log10 30 = 1.48 จะได้ผลผิดเป็น low) ใช้รากที่สองของ TJC/SJC ไม่ใช่ค่าเต็ม และ GH ใช้สเกล 0–100 mm อย่าสับสนจุดตัด CDAI (remission ≤2.8, low ≤10, moderate ≤22) และ SDAI (≤3.3, ≤11, ≤26) กับ DAS28\n\nสรุปท่องสอบ: DAS28: <2.6 remission | ≤3.2 low | ≤5.1 moderate | >5.1 high; ใช้ √ กับข้อ ใช้ ln กับ ESR; moderate หลัง 3 เดือน = ต้องปรับยา",
         "choices": [
           {
             "label": "A",
             "text": "Remission",
-            "explanation": "✗ ผิด — remission ต้อง DAS28 <2.6"
+            "explanation": "✗ ผิด — remission ตาม DAS28 ต้องได้ค่า <2.6 แต่ผู้ป่วยคำนวณได้ 4.55 ยังห่างจากเกณฑ์มาก ข้อนี้จะถูกหากผู้ป่วยไม่มีข้อกดเจ็บหรือบวม ESR ปกติ (เช่น 10 mm/h) และ GH ต่ำ ซึ่งจะได้ค่าราว 1.6–2.0 และควรระวังว่า DAS28 remission ยังอาจมีข้อบวมเหลือได้ จึงบางแนวทางใช้ Boolean/SDAI remission แทน"
           },
           {
             "label": "B",
             "text": "Low disease activity",
-            "explanation": "✗ ผิด — low disease activity คือ ≥2.6 ถึง ≤3.2"
+            "explanation": "✗ ผิด — low disease activity คือ DAS28 ≥2.6 ถึง ≤3.2 ค่าของผู้ป่วยสูงกว่าเกณฑ์นี้ ข้อนี้มักถูกเลือกเมื่อคำนวณผิดโดยใช้ log10 แทน ln (0.70×1.48 = 1.03 ทำให้รวมได้ ~3.2) ข้อนี้จะถูกหาก ESR ต่ำและข้ออักเสบเหลือเพียง 1–2 ข้อ ซึ่งถือว่าถึงเป้าหมายทางเลือกของ treat-to-target ในผู้ป่วยระยะยาว"
           },
           {
             "label": "C",
             "text": "Moderate disease activity",
-            "explanation": "✓ ถูก — DAS28 ≈ 4.55 อยู่ในช่วง >3.2–5.1 = moderate"
+            "explanation": "✓ ถูก — คำนวณได้ 1.12 + 0.49 + 2.38 + 0.56 = 4.55 อยู่ในช่วง >3.2 ถึง ≤5.1 จึงเป็น moderate disease activity ผู้ป่วยใช้ MTX มา 3 เดือนแล้วยังไม่ถึงเป้า (remission หรือ low) ตามหลัก treat-to-target ต้องปรับการรักษา เช่น เพิ่ม MTX ให้ถึง 20–25 mg/สัปดาห์ เปลี่ยนเป็น SC หรือเพิ่มยา DMARD ตัวอื่น"
           },
           {
             "label": "D",
             "text": "High disease activity",
-            "explanation": "✗ ผิด — high disease activity ต้อง >5.1"
+            "explanation": "✗ ผิด — high disease activity ต้อง DAS28 >5.1 ค่าของผู้ป่วยยังต่ำกว่าเกณฑ์ ข้อนี้จะถูกหากมีข้อกดเจ็บและบวมจำนวนมาก (เช่น 10–15 ข้อ) ESR สูง (เช่น 60–80 mm/h) และ GH สูง ซึ่งพบบ่อยในผู้ป่วยที่เพิ่งวินิจฉัยและเป็นเหตุผลให้ใช้ glucocorticoid bridging ระหว่างรอ csDMARD"
           }
         ],
-        "key_takeaway": "DAS28 จำ 2.6 – 3.2 – 5.1"
+        "key_takeaway": "DAS28 จำ 2.6 – 3.2 – 5.1 (√ข้อ, ln ESR)",
+        "calculation_steps": [
+          "0.56 × √TJC = 0.56 × √4 = 0.56 × 2 = 1.12",
+          "0.28 × √SJC = 0.28 × √3 = 0.28 × 1.732 = 0.485 ≈ 0.49",
+          "0.70 × ln(ESR) = 0.70 × ln 30 = 0.70 × 3.401 = 2.381 ≈ 2.38",
+          "0.014 × GH = 0.014 × 40 = 0.56",
+          "รวม DAS28-ESR = 1.12 + 0.49 + 2.38 + 0.56 = 4.55",
+          "แปลผล: >3.2 และ ≤5.1 → moderate disease activity"
+        ]
       }
     },
     {
@@ -125,30 +133,30 @@
       ],
       "correct_answer": "D",
       "difficulty": "medium",
-      "explanation": "Treat-to-target: เป้าหมายคือ remission หรือ low disease activity ประเมินทุก 1–3 เดือน ไม่ดีขึ้นใน 3 เดือนหรือไม่ถึงเป้าใน 6 เดือนต้องปรับยา",
+      "explanation": "หลัก treat-to-target ของ EULAR: ประเมิน disease activity ด้วย composite score ทุก 1–3 เดือนเมื่อโรค active ถ้าไม่ดีขึ้นภายใน 3 เดือนหรือไม่ถึงเป้าหมายภายใน 6 เดือนต้องปรับการรักษา",
       "detailed_explanation": {
-        "summary": "Treat-to-target: เป้าหมายคือ remission หรือ low disease activity ประเมินทุก 1–3 เดือน ไม่ดีขึ้นใน 3 เดือนหรือไม่ถึงเป้าใน 6 เดือนต้องปรับยา",
-        "reason": "โจทย์ถามอะไร: ถามหลักการ treat-to-target (T2T) เรื่องเป้าหมายและกรอบเวลาในการปรับยา\n\nหลักการ/กลไกเชิงลึก: T2T มาจากการศึกษา TICORA, CAMERA ที่แสดงว่าการติดตามถี่และปรับยาตามคะแนน composite (DAS28, CDAI, SDAI) ได้ผลดีกว่าการดูแลแบบปกติ EULAR 2022 กำหนดเป้าหมาย sustained remission (หรือ low disease activity ในโรคเรื้อรัง) ประเมินทุก 1–3 เดือนขณะ active และหากไม่ดีขึ้นอย่างน้อย 50% ภายใน 3 เดือน หรือยังไม่ถึงเป้าหมายใน 6 เดือน ให้ปรับยา\n\nทำไมข้อ D ถูก: ข้อ D สรุปกรอบเวลา 1–3 เดือน / 3 เดือน / 6 เดือน ได้ถูกต้องตาม EULAR\n\nการประยุกต์กับผู้ป่วยจริง: เภสัชกรควรช่วยตรวจว่า MTX ได้ขนาดเพียงพอ (titrate ถึง 20–25 mg/สัปดาห์ภายใน 4–8 สัปดาห์) ผู้ป่วยกินยาสม่ำเสมอ และมีนัดประเมินสม่ำเสมอ ก่อนสรุปว่าล้มเหลว\n\nจุดที่มักสับสนและกับดักข้อสอบ: csDMARD ออกฤทธิ์ช้าจริง (4–12 สัปดาห์) แต่ไม่ได้หมายความว่าต้องรอเป็นปี การรอ erosion จากภาพรังสีช้าเกินไป และ NSAID ไม่เปลี่ยนการดำเนินโรค\n\nสรุปท่องสอบ: T2T: target = remission/LDA; ดูทุก 1–3 เดือน; 3 เดือนต้องดีขึ้น, 6 เดือนต้องถึงเป้า",
+        "summary": "หลัก treat-to-target ของ EULAR: ประเมิน disease activity ด้วย composite score ทุก 1–3 เดือนเมื่อโรค active ถ้าไม่ดีขึ้นภายใน 3 เดือนหรือไม่ถึงเป้าหมายภายใน 6 เดือนต้องปรับการรักษา",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วย RA รายใหม่เริ่ม methotrexate โจทย์ถามแนวทาง treat-to-target (T2T) ว่าควรประเมินผลการรักษาถี่แค่ไหน และเมื่อใดต้องปรับยา ซึ่งเป็นหลักการบริหารโรค ไม่ใช่การเลือกยาตัวใดตัวหนึ่ง\n\nหลักการ/กลไกเชิงลึก: RA เป็นโรคที่การอักเสบของ synovium (pannus) ทำลายกระดูกอ่อนและกระดูกอย่างต่อเนื่อง การทำลายข้อเกิดเร็วที่สุดในช่วง 1–2 ปีแรก และความพิการสัมพันธ์กับผลรวมของ disease activity ตลอดเวลา (area under the curve) การควบคุมอย่างเข้มงวด (tight control) ด้วยการวัดผลเป็นตัวเลขและปรับยาเมื่อไม่ถึงเป้า จึงลด erosion และความพิการได้ดีกว่าการปรับยาตามความรู้สึกของแพทย์หรือผู้ป่วย csDMARD เช่น MTX มักเริ่มเห็นผลใน 4–8 สัปดาห์และเต็มที่ใน 12 สัปดาห์ จึงใช้ 3 เดือนเป็นจุดตัดของการ \"ต้องดีขึ้น\"\n\nทำไมข้อ D ถูก: ตรงกับ EULAR 2022 ทุกองค์ประกอบ: ประเมินทุก 1–3 เดือนในโรค active, ต้องเห็นการดีขึ้น (เช่น DAS28 ลด >1.2 หรือ CDAI ลด ≥50%) ภายใน 3 เดือน และต้องถึงเป้าหมายภายใน 6 เดือน มิฉะนั้นต้องปรับการรักษา\n\nหลักฐานและแนวทางเวชปฏิบัติ: การศึกษา TICORA และ CAMERA แสดงว่ากลุ่ม tight control มี remission สูงกว่าและ radiographic progression น้อยกว่ากลุ่มดูแลตามปกติชัดเจน T2T recommendations (2016 update) และ EULAR 2022 กำหนดเป้าหมายเป็น sustained remission หรือ low disease activity ส่วน ACR 2021 แนะนำ T2T เช่นกัน และใช้ validated measure (CDAI, SDAI, DAS28, RAPID3) เป็นประจำ\n\nการประยุกต์กับผู้ป่วยจริง: ตัวอย่างแผน: เริ่ม MTX 15 mg/สัปดาห์ + folic acid เพิ่ม 5 mg ทุก 2–4 สัปดาห์จนถึง 20–25 mg ประเมิน DAS28/CDAI ทุก 4–6 สัปดาห์ เดือนที่ 3 ถ้าไม่ดีขึ้นเลยให้ปรับทันที เดือนที่ 6 ถ้าดีขึ้นแต่ยังไม่ถึง low disease activity ก็ต้องปรับ เภสัชกรมีบทบาทตรวจ adherence วิธีใช้ยา และ ADR ก่อนสรุปว่ายาล้มเหลว\n\nการติดตามและสัญญาณอันตราย: บันทึก composite score ทุกครั้งเพื่อดูแนวโน้ม ระวังภาวะที่ทำให้คะแนนสูงโดยไม่ใช่ RA เช่น fibromyalgia (TJC และ GH สูงแต่ SJC/CRP ต่ำ) หรือ OA ร่วม ซึ่งไม่ควรนำไปสู่การเพิ่มยากดภูมิ และติดตามความปลอดภัยของ MTX (CBC, LFT, SCr) ควบคู่\n\nจุดที่มักสับสนและกับดักข้อสอบ: การรอ 12 เดือน หรือรอให้เห็น erosion ใหม่บนภาพรังสีแล้วจึงปรับยา ถือว่าช้าเกินไปและผิดหลัก T2T; NSAID และ glucocorticoid บรรเทาอาการแต่ไม่ใช่ตัวปรับโรคหลัก; เป้าหมายคือ disease activity ไม่ใช่แค่อาการปวดลดลง\n\nสรุปท่องสอบ: T2T = วัดเป็นตัวเลข ทุก 1–3 เดือน; 3 เดือนต้องดีขึ้น, 6 เดือนต้องถึงเป้า (remission/LDA); ไม่ถึง = ปรับยา",
         "choices": [
           {
             "label": "A",
             "text": "ประเมิน disease activity ปีละครั้ง และเปลี่ยนยาเมื่อพบ erosion ใหม่จากภาพถ่ายรังสีเท่านั้น",
-            "explanation": "✗ ผิด — ประเมินห่างเกินไป และการรอ erosion ทำให้เกิดความเสียหายถาวร"
+            "explanation": "✗ ผิด — การประเมินปีละครั้งและรอให้เกิด erosion ใหม่บนภาพรังสีแล้วจึงเปลี่ยนยา หมายถึงยอมให้ข้อถูกทำลายถาวรไปแล้ว ขัดกับหลัก tight control ที่ใช้ composite score ทุก 1–3 เดือน การประเมินห่างขึ้น (ทุก 3–6 เดือน) และการถ่ายภาพรังสีเป็นระยะจะเหมาะเมื่อผู้ป่วยอยู่ใน sustained remission แล้วเท่านั้น"
           },
           {
             "label": "B",
             "text": "รอประเมินผลการรักษาที่ 12 เดือนเพราะ csDMARD ออกฤทธิ์ช้า",
-            "explanation": "✗ ผิด — แม้ csDMARD ออกฤทธิ์ช้า แต่ควรเห็นการตอบสนองภายใน 3 เดือน"
+            "explanation": "✗ ผิด — แม้ csDMARD ออกฤทธิ์ช้า แต่ MTX ควรเห็นผลภายใน 4–12 สัปดาห์ การรอถึง 12 เดือนทำให้เสีย window of opportunity และเพิ่มความพิการ EULAR จึงใช้ 3 เดือนเป็นจุดประเมินการดีขึ้นและ 6 เดือนเป็นจุดประเมินเป้าหมาย ระยะ 12 เดือนจะเกี่ยวข้องเฉพาะการประเมิน radiographic progression หรือการพิจารณาลดยาเมื่อ remission คงที่"
           },
           {
             "label": "C",
             "text": "ตั้งเป้าหมายเพียงให้อาการปวดลดลง โดยใช้ NSAID เต็มขนาดแทนการปรับ DMARD",
-            "explanation": "✗ ผิด — NSAID บรรเทาอาการแต่ไม่ชะลอการทำลายข้อ เป้าหมายคือ remission/LDA"
+            "explanation": "✗ ผิด — การมุ่งลดปวดด้วย NSAID ขนาดเต็มโดยไม่ปรับ DMARD ไม่ชะลอการทำลายข้อ และเพิ่มความเสี่ยง GI bleed ไตเสื่อม และ CV event NSAID จะเหมาะเป็นยาเสริมระยะสั้นเพื่อคุมอาการระหว่างรอ DMARD ออกฤทธิ์ในผู้ที่ไม่มีข้อห้าม ส่วนเป้าหมายของ T2T คือ remission หรือ low disease activity ตาม composite score"
           },
           {
             "label": "D",
             "text": "ประเมินทุก 1–3 เดือนในโรค active; ถ้าไม่ดีขึ้นภายใน 3 เดือน หรือไม่ถึงเป้าหมายภายใน 6 เดือน ให้ปรับการรักษา",
-            "explanation": "✓ ถูก — ตรงตามหลัก treat-to-target ของ EULAR"
+            "explanation": "✓ ถูก — ตรงตาม EULAR 2022 และ T2T recommendations: ประเมินด้วย composite measure ทุก 1–3 เดือนเมื่อโรค active ถ้าไม่ดีขึ้นภายใน 3 เดือนหรือไม่ถึง remission/low disease activity ภายใน 6 เดือน ต้องปรับการรักษา (เพิ่มขนาด เพิ่ม csDMARD หรือเพิ่ม b/tsDMARD ตาม prognostic factors) หลักฐานจาก TICORA และ CAMERA สนับสนุนว่าลด erosion ได้จริง"
           }
         ],
         "key_takeaway": "Treat-to-target: 3 เดือนต้องดีขึ้น 6 เดือนต้องถึงเป้า"
@@ -176,84 +184,84 @@
       ],
       "correct_answer": "A",
       "difficulty": "easy",
-      "explanation": "MTX ขนาดต่ำออกฤทธิ์หลักผ่านการยับยั้ง AICAR transformylase ทำให้ adenosine สะสมและออกฤทธิ์ต้านการอักเสบผ่าน adenosine receptor",
+      "explanation": "Methotrexate ขนาดต่ำในรูป polyglutamate ยับยั้ง AICAR transformylase ทำให้ AICAR สะสมและมีการปล่อย adenosine นอกเซลล์มากขึ้น adenosine จับ A2A receptor ลดการอักเสบ",
       "detailed_explanation": {
-        "summary": "MTX ขนาดต่ำออกฤทธิ์หลักผ่านการยับยั้ง AICAR transformylase ทำให้ adenosine สะสมและออกฤทธิ์ต้านการอักเสบผ่าน adenosine receptor",
-        "reason": "โจทย์ถามอะไร: ถามกลไกออกฤทธิ์ของ MTX ขนาดต่ำในโรค RA ต่างจากขนาดสูงในมะเร็ง\n\nหลักการ/กลไกเชิงลึก: MTX เป็น folate analog ในขนาดสูง (เคมีบำบัด) ยับยั้ง DHFR เป็นหลักทำให้เซลล์หยุดแบ่งตัว แต่ในขนาดต่ำรายสัปดาห์ MTX เข้าเซลล์และถูกเปลี่ยนเป็น MTX-polyglutamate ซึ่งยับยั้ง AICAR transformylase → AICAR สะสม → ยับยั้ง adenosine deaminase/AMP deaminase → adenosine ถูกปล่อยออกนอกเซลล์ จับ A2A receptor ลดการทำงานของ neutrophil, macrophage และการหลั่ง cytokine\n\nทำไมข้อ A ถูก: ข้อ A อธิบายกลไก adenosine-mediated anti-inflammatory ซึ่งเป็นกลไกหลักที่ยอมรับในโรค RA\n\nการประยุกต์กับผู้ป่วยจริง: กลไกนี้อธิบายว่าทำไมกาเฟอีน (adenosine antagonist) ปริมาณมากอาจลดประสิทธิภาพ MTX ได้ในบางการศึกษา และทำไม folic acid เสริมยังคงประสิทธิภาพไว้ได้ (ไม่ได้อาศัยการยับยั้ง DHFR เป็นหลัก)\n\nจุดที่มักสับสนและกับดักข้อสอบ: DHODH คือกลไกของ leflunomide; การจับ TNF คือ anti-TNF biologics; calcineurin คือ cyclosporine/tacrolimus ข้อสอบมักสลับกลไกของ DMARD เหล่านี้\n\nสรุปท่องสอบ: MTX ขนาดต่ำ → AICAR transformylase ↓ → adenosine ↑ → anti-inflammatory",
+        "summary": "Methotrexate ขนาดต่ำในรูป polyglutamate ยับยั้ง AICAR transformylase ทำให้ AICAR สะสมและมีการปล่อย adenosine นอกเซลล์มากขึ้น adenosine จับ A2A receptor ลดการอักเสบ",
+        "reason": "โจทย์ถามอะไร: ถามกลไกต้านการอักเสบหลักของ methotrexate ขนาดต่ำแบบสัปดาห์ละครั้ง (7.5–25 mg) ที่ใช้ใน RA ซึ่งต่างจากกลไก antiproliferative ของ MTX ขนาดสูงในมะเร็ง ตัวเลือกที่เหลือเป็นกลไกของ DMARD/ยากดภูมิตัวอื่น จึงเป็นข้อสอบแยกกลไกยาโดยตรง\n\nหลักการ/กลไกเชิงลึก: MTX เข้าเซลล์ผ่าน reduced folate carrier แล้วถูกเติม glutamate หลายตัวโดย folylpolyglutamate synthase กลายเป็น MTX-polyglutamate ซึ่งค้างในเซลล์นานหลายสัปดาห์ (อธิบายการให้ยาสัปดาห์ละครั้งได้) polyglutamate ยับยั้ง 5-aminoimidazole-4-carboxamide ribonucleotide (AICAR) transformylase ทำให้ AICAR สะสม AICAR ยับยั้ง adenosine deaminase และ AMP deaminase ส่งผลให้ adenosine ถูกปล่อยออกนอกเซลล์มากขึ้น adenosine จับ A2A receptor บน neutrophil, macrophage และ T cell เพิ่ม cAMP ลดการสร้าง TNF-α, IL-6, IL-12 และลดการเกาะติดของ neutrophil ส่วนการยับยั้ง DHFR และ thymidylate synthase มีบทบาทรองในขนาดต่ำ และเป็นที่มาของพิษต่อเยื่อบุและไขกระดูก\n\nทำไมข้อ A ถูก: ข้อ A อธิบายเส้นทาง AICAR transformylase → adenosine ซึ่งเป็นกลไกต้านการอักเสบที่ได้รับการยอมรับมากที่สุดของ low-dose MTX\n\nหลักฐานและแนวทางเวชปฏิบัติ: การศึกษาในสัตว์ทดลองที่ขาด A2A/A3 receptor หรือได้ adenosine receptor antagonist พบว่าฤทธิ์ต้านการอักเสบของ MTX ลดลง ข้อมูลนี้เป็นเหตุผลที่มีข้อสังเกตว่าการดื่มกาแฟปริมาณมาก (caffeine เป็น adenosine antagonist) อาจลดผลของ MTX แม้หลักฐานทางคลินิกยังไม่สม่ำเสมอ ACR 2021 และ EULAR 2022 ยังคงให้ MTX เป็น anchor drug ตัวแรก\n\nการประยุกต์กับผู้ป่วยจริง: เพราะกลไกหลักไม่ได้มาจากการกด folate ทั้งหมด การให้ folic acid (เช่น 5 mg สัปดาห์ละครั้งห่างวัน MTX หรือ 1 mg/วัน) จึงลด ADR เช่น แผลในปาก คลื่นไส้ LFT สูง โดยไม่ลดประสิทธิภาพอย่างมีนัยสำคัญ ยาให้สัปดาห์ละครั้งเพราะ polyglutamate ค้างนาน การให้ทุกวันทำให้สะสมจนเกิดพิษรุนแรง\n\nการติดตามและสัญญาณอันตราย: แม้กลไกต้านการอักเสบเป็น adenosine แต่พิษที่สำคัญมาจาก antifolate ได้แก่ mucositis, cytopenia, transaminitis และ pneumonitis ต้องติดตาม CBC, LFT, SCr ตามตาราง และสอนผู้ป่วยให้รายงานแผลในปาก ไข้ ไอแห้ง หอบเหนื่อย\n\nจุดที่มักสับสนและกับดักข้อสอบ: DHODH inhibitor คือ leflunomide (teriflunomide) ลดการสร้าง pyrimidine; การจับ TNF-α โดยตรงคือ infliximab, adalimumab, etanercept ฯลฯ; calcineurin inhibitor คือ cyclosporine/tacrolimus ลด IL-2 อย่าสับสนว่ากลไก DHFR เป็นกลไกหลักใน RA\n\nสรุปท่องสอบ: Low-dose MTX → polyglutamate → ยับยั้ง AICAR transformylase → adenosine↑ → A2A → ต้านอักเสบ; LEF = DHODH; CsA/Tac = calcineurin",
         "choices": [
           {
             "label": "A",
             "text": "ยับยั้ง AICAR transformylase ทำให้ adenosine นอกเซลล์เพิ่มขึ้น ซึ่งมีฤทธิ์ต้านการอักเสบ",
-            "explanation": "✓ ถูก — กลไกหลักของ low-dose MTX คือเพิ่ม extracellular adenosine"
+            "explanation": "✓ ถูก — MTX-polyglutamate ยับยั้ง AICAR transformylase ทำให้ AICAR สะสม ยับยั้ง adenosine deaminase/AMP deaminase จึงมี adenosine นอกเซลล์มากขึ้น adenosine จับ A2A receptor เพิ่ม cAMP และลด cytokine อักเสบ เป็นกลไกหลักของ MTX ขนาดต่ำสัปดาห์ละครั้งใน RA และอธิบายว่าทำไม folic acid ลด ADR ได้โดยไม่ลดประสิทธิภาพ"
           },
           {
             "label": "B",
             "text": "ยับยั้ง dihydroorotate dehydrogenase (DHODH) ลดการสร้าง pyrimidine",
-            "explanation": "✗ ผิด — DHODH เป็นเป้าหมายของ leflunomide/teriflunomide"
+            "explanation": "✗ ผิด — การยับยั้ง dihydroorotate dehydrogenase (DHODH) ลดการสังเคราะห์ pyrimidine แบบ de novo ใน lymphocyte ที่แบ่งตัว เป็นกลไกของ leflunomide (active metabolite คือ teriflunomide) ข้อนี้จะถูกหากโจทย์ถามกลไกของ leflunomide ซึ่งใช้เป็น csDMARD ทางเลือกเมื่อใช้ MTX ไม่ได้ และมีปัญหาเรื่อง enterohepatic recirculation จน half-life ยาวมาก"
           },
           {
             "label": "C",
             "text": "จับกับ TNF-α โดยตรงและทำให้ TNF ไม่สามารถจับกับ receptor",
-            "explanation": "✗ ผิด — เป็นกลไกของ anti-TNF เช่น infliximab, adalimumab, etanercept"
+            "explanation": "✗ ผิด — การจับ TNF-α โดยตรงแล้วป้องกันไม่ให้จับ receptor เป็นกลไกของ TNF inhibitor เช่น infliximab, adalimumab, golimumab, certolizumab และ etanercept (soluble receptor) ซึ่งเป็น bDMARD ไม่ใช่กลไกของ MTX ข้อนี้จะถูกหากโจทย์ถามกลไกของ bDMARD กลุ่ม anti-TNF ที่มักใช้ร่วมกับ MTX หลัง csDMARD ล้มเหลว"
           },
           {
             "label": "D",
             "text": "ยับยั้ง calcineurin ทำให้ลดการสร้าง IL-2 ใน T cell",
-            "explanation": "✗ ผิด — เป็นกลไกของ calcineurin inhibitor (cyclosporine, tacrolimus)"
+            "explanation": "✗ ผิด — การยับยั้ง calcineurin ทำให้ NFAT ไม่เข้านิวเคลียส ลดการถอดรหัส IL-2 และการกระตุ้น T cell เป็นกลไกของ cyclosporine และ tacrolimus ซึ่งใช้ใน RA ได้น้อยเพราะพิษต่อไตและความดันโลหิตสูง ข้อนี้จะถูกหากโจทย์ถามกลไกของยาป้องกันการปฏิเสธอวัยวะ หรือ tacrolimus ใน lupus nephritis"
           }
         ],
         "key_takeaway": "Low-dose MTX = adenosine; LEF = DHODH"
       }
     },
     {
-      "scenario": "ผู้ป่วยหญิงอายุ 67 ปี เป็น RA ใช้ methotrexate 15 mg/สัปดาห์ ร่วมกับ folic acid 5 mg/สัปดาห์ คงที่มา 2 ปี ไปคลินิกได้รับยา co-trimoxazole (sulfamethoxazole/trimethoprim) รักษา UTI เป็นเวลา 7 วัน 10 วันต่อมามาด้วยแผลในปาก ไข้ WBC 1,800/mm³ Plt 60,000/mm³ ข้อใดอธิบายสาเหตุได้ดีที่สุด",
+      "scenario": "ผู้ป่วยหญิงอายุ 54 ปี เป็น RA ตอบสนองไม่เพียงพอต่อ methotrexate 25 mg/สัปดาห์ และ adalimumab ร่วมกันนาน 6 เดือน มีประวัติปอดอักเสบติดเชื้อต้องนอนโรงพยาบาล 2 ครั้งในปีที่ผ่านมา แพทย์เลือกเปลี่ยนเป็น abatacept ร่วมกับ MTX ข้อใดอธิบายกลไกการออกฤทธิ์ของ abatacept ได้ถูกต้องที่สุด",
       "choices": [
         {
           "label": "A",
-          "text": "Co-trimoxazole ทำให้เกิด drug-induced lupus จึงกดไขกระดูก"
+          "text": "Monoclonal antibody ต่อ CD20 บน B cell ทำให้เกิด B-cell depletion ผ่าน ADCC และ complement"
         },
         {
           "label": "B",
-          "text": "Trimethoprim ยับยั้ง DHFR เสริมฤทธิ์ antifolate และ sulfonamide ลดการขับ MTX ทางไต/แทนที่การจับโปรตีน ทำให้ MTX toxicity"
+          "text": "Fusion protein ของ CTLA-4 กับ Fc ของ IgG1 (CTLA4-Ig) จับ CD80/CD86 บน antigen-presenting cell ยับยั้งสัญญาณ costimulation ผ่าน CD28 จึงลดการกระตุ้น T cell"
         },
         {
           "label": "C",
-          "text": "Co-trimoxazole เหนี่ยวนำ CYP3A4 ทำให้ระดับ folic acid ลดลง"
+          "text": "Humanized monoclonal antibody ต่อ IL-6 receptor ทั้งชนิดละลายและชนิดยึดเยื่อหุ้มเซลล์"
         },
         {
           "label": "D",
-          "text": "ผู้ป่วยแพ้ sulfonamide แบบ Stevens–Johnson syndrome"
+          "text": "ยับยั้ง Janus kinase (JAK1/JAK3) ภายในเซลล์ ทำให้สัญญาณ cytokine หลายชนิดผ่าน STAT ลดลง"
         }
       ],
       "correct_answer": "B",
       "difficulty": "medium",
-      "explanation": "TMP-SMX + MTX เป็นอันตรกิริยาร้ายแรง: trimethoprim เป็น antifolate เสริมฤทธิ์ และ sulfonamide ลด renal tubular secretion/แทนที่ protein binding ของ MTX → pancytopenia, mucositis",
+      "explanation": "Abatacept (CTLA4-Ig) จับ CD80/CD86 บน APC แย่งไม่ให้จับ CD28 บน T cell จึงตัด \"สัญญาณที่ 2\" (costimulation) ทำให้ T cell ไม่ถูกกระตุ้นเต็มที่ ใช้ได้หลัง csDMARD หรือ TNFi ล้มเหลว และมีความเสี่ยงติดเชื้อรุนแรงค่อนข้างต่ำในกลุ่ม bDMARD",
       "detailed_explanation": {
-        "summary": "TMP-SMX + MTX เป็นอันตรกิริยาร้ายแรง: trimethoprim เป็น antifolate เสริมฤทธิ์ และ sulfonamide ลด renal tubular secretion/แทนที่ protein binding ของ MTX → pancytopenia, mucositis",
-        "reason": "โจทย์ถามอะไร: ผู้ป่วยใช้ MTX คงที่ แล้วเกิด pancytopenia + mucositis หลังได้ co-trimoxazole ถามกลไก\n\nหลักการ/กลไกเชิงลึก: Trimethoprim ยับยั้ง dihydrofolate reductase (แม้จำเพาะต่อแบคทีเรียมากกว่า แต่มีผลต่อคนเมื่อร่วมกับ MTX) จึงเกิด additive antifolate effect ส่วน sulfamethoxazole แข่งขันการหลั่งที่ท่อไต (OAT) และแทนที่ MTX จาก albumin ทำให้ MTX อิสระสูงขึ้น ผู้สูงอายุมีการทำงานของไตลดลงยิ่งเสี่ยง\n\nทำไมข้อ B ถูก: ข้อ B ครอบคลุมทั้ง pharmacodynamic (antifolate เสริมกัน) และ pharmacokinetic (ลดการขับ) ซึ่งอธิบาย bone marrow suppression ได้ครบ\n\nการประยุกต์กับผู้ป่วยจริง: ควรหลีกเลี่ยง TMP-SMX ในผู้ใช้ MTX เลือก nitrofurantoin หรือ fosfomycin สำหรับ cystitis แทน หากเกิด toxicity ให้หยุด MTX ให้ leucovorin (folinic acid) และดูแลแบบประคับประคอง (G-CSF ตามความจำเป็น) อันตรกิริยาอื่นที่ควรระวัง: NSAID ขนาดสูง, penicillins, PPI (ขนาดสูง), probenecid\n\nจุดที่มักสับสนและกับดักข้อสอบ: ยาที่เพิ่มพิษ MTX ส่วนใหญ่ผ่านการลดขับทางไต ไม่ใช่ CYP; SJS จะมีผื่น/เยื่อบุลอก ไม่ใช่ pancytopenia เด่น; prophylactic TMP-SMX ขนาดต่ำบางกรณีใช้ได้ภายใต้การติดตามใกล้ชิด แต่ treatment dose เสี่ยงสูง\n\nสรุปท่องสอบ: MTX + TMP-SMX = double antifolate + ลดขับ → pancytopenia",
+        "summary": "Abatacept (CTLA4-Ig) จับ CD80/CD86 บน APC แย่งไม่ให้จับ CD28 บน T cell จึงตัด \"สัญญาณที่ 2\" (costimulation) ทำให้ T cell ไม่ถูกกระตุ้นเต็มที่ ใช้ได้หลัง csDMARD หรือ TNFi ล้มเหลว และมีความเสี่ยงติดเชื้อรุนแรงค่อนข้างต่ำในกลุ่ม bDMARD",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วย RA ล้มเหลวต่อ MTX + adalimumab และมีประวัติติดเชื้อรุนแรงซ้ำ แพทย์จึงเลือก abatacept โจทย์ถามกลไกการออกฤทธิ์ของ abatacept โดยตัวเลือกอื่นเป็นกลไกของ bDMARD/tsDMARD ที่ใช้ในตำแหน่งเดียวกัน (rituximab, tocilizumab/sarilumab, tofacitinib) จึงต้องแยกเป้าหมายของยาแต่ละตัวให้ได้\n\nหลักการ/กลไกเชิงลึก: การกระตุ้น naive T cell ต้องมี 2 สัญญาณ สัญญาณที่ 1 คือ T-cell receptor จับ peptide-MHC บน antigen-presenting cell (APC) สัญญาณที่ 2 (costimulation) คือ CD28 บน T cell จับ CD80 (B7-1)/CD86 (B7-2) บน APC ถ้าไม่มีสัญญาณที่ 2 T cell จะไม่แบ่งตัว ไม่สร้าง IL-2 และอาจเข้าสู่ภาวะ anergy ตามธรรมชาติ CTLA-4 เป็นตัวเบรกที่จับ CD80/86 ได้แรงกว่า CD28 หลายเท่า abatacept คือ extracellular domain ของ CTLA-4 เชื่อมกับ Fc ของ IgG1 ที่ดัดแปลงไม่ให้กระตุ้น complement/ADCC จึงทำหน้าที่เป็น \"ตัวเบรกเทียม\" แย่งจับ CD80/86 ผลที่ตามมาคือลดการกระตุ้น T cell ลดการช่วย B cell สร้าง RF/ACPA และลด cytokine ปลายทาง (TNF, IL-6) ในเยื่อบุข้อ\n\nทำไมข้อ B ถูก: ข้อ B บอกครบทั้งโครงสร้าง (CTLA4-Ig fusion protein) เป้าหมาย (CD80/CD86 บน APC) และผล (ตัด costimulation ผ่าน CD28 ลดการกระตุ้น T cell) จึงเป็นคำอธิบายที่ถูกต้องที่สุด\n\nหลักฐานและแนวทางเวชปฏิบัติ: AIM ศึกษาในผู้ล้มเหลวต่อ MTX และ ATTAIN ในผู้ล้มเหลวต่อ TNFi พบ ACR20/50/70 ดีกว่ายาหลอกชัดเจน AMPLE เปรียบเทียบ abatacept SC กับ adalimumab (ทั้งคู่ร่วมกับ MTX) พบประสิทธิภาพใกล้เคียงกัน แต่ถอนยาจากผลข้างเคียงและ injection-site reaction น้อยกว่า ACR 2021 แนะนำให้เปลี่ยนไปใช้ bDMARD/tsDMARD กลไกอื่นเมื่อ TNFi ล้มเหลว ข้อมูลจากทะเบียนผู้ป่วยและ meta-analysis หลายชิ้นพบอัตราติดเชื้อรุนแรงของ abatacept ต่ำกว่า TNFi แพทย์จึงมักเลือก abatacept ในผู้ที่มีประวัติติดเชื้อรุนแรงซ้ำ\n\nการประยุกต์กับผู้ป่วยจริง: Abatacept มี 2 รูปแบบ IV ตามน้ำหนัก (<60 kg 500 mg; 60–100 kg 750 mg; >100 kg 1,000 mg) ที่สัปดาห์ 0, 2, 4 แล้วทุก 4 สัปดาห์ หรือ SC 125 mg สัปดาห์ละครั้ง ใช้ร่วมกับ MTX หรือเดี่ยวได้ ห้ามใช้ร่วมกับ TNFi หรือ bDMARD อื่น (เพิ่มการติดเชื้อโดยไม่เพิ่มประสิทธิภาพ) เริ่มออกฤทธิ์ช้ากว่า TNFi เล็กน้อย ประเมินผลที่ 3–6 เดือน ก่อนเริ่มต้องคัดกรอง TB (IGRA/TST) และ HBV และให้วัคซีนเชื้อตายให้ครบ\n\nการติดตามและสัญญาณอันตราย: ติดตามอาการติดเชื้อ (ไข้ ไอ ปัสสาวะแสบ) ซึ่งยังเกิดได้แม้น้อยกว่า TNFi ผู้ป่วย COPD พบ respiratory AE มากขึ้นในการศึกษา จึงต้องระวัง ห้ามให้ live vaccine ระหว่างใช้ยา\n\nจุดที่มักสับสนและกับดักข้อสอบ: abatacept ไม่ใช่ anti-CD20 (rituximab) ไม่ใช่ IL-6R antagonist (tocilizumab, sarilumab) และไม่ใช่ JAK inhibitor อย่าสับสนกับ belatacept ซึ่งเป็น CTLA4-Ig รุ่นที่จับ CD80/86 แรงกว่าและใช้ในปลูกถ่ายไต และอย่าสับสนกับยา anti-CTLA-4 ในมะเร็ง (ipilimumab) ซึ่งทำตรงข้ามคือ \"ปลดเบรก\" ทำให้เกิด immune-related AE รวมถึงข้ออักเสบได้\n\nสรุปท่องสอบ: Abatacept = CTLA4-Ig → จับ CD80/86 → ตัด CD28 costimulation → T cell ไม่ทำงาน; ใช้หลัง MTX/TNFi fail, ติดเชื้อรุนแรงค่อนข้างน้อย, ห้ามคู่ biologic อื่น",
         "choices": [
           {
             "label": "A",
-            "text": "Co-trimoxazole ทำให้เกิด drug-induced lupus จึงกดไขกระดูก",
-            "explanation": "✗ ผิด — co-trimoxazole ไม่ใช่สาเหตุคลาสสิกของ drug-induced lupus และไม่อธิบายภาพนี้"
+            "text": "Monoclonal antibody ต่อ CD20 บน B cell ทำให้เกิด B-cell depletion ผ่าน ADCC และ complement",
+            "explanation": "✗ ผิด — การจับ CD20 บน pre-B และ mature B cell แล้วทำลายด้วย ADCC, complement-dependent cytotoxicity และ apoptosis เป็นกลไกของ rituximab ซึ่งใช้ใน RA ที่ล้มเหลวต่อ TNFi โดยเฉพาะ seropositive หรือมีประวัติ lymphoma ข้อนี้จะถูกหากโจทย์ถามยาที่ต้องระวัง HBV reactivation สูงสุดและทำให้ระดับ immunoglobulin ลดลงหลังใช้ซ้ำหลายรอบ"
           },
           {
             "label": "B",
-            "text": "Trimethoprim ยับยั้ง DHFR เสริมฤทธิ์ antifolate และ sulfonamide ลดการขับ MTX ทางไต/แทนที่การจับโปรตีน ทำให้ MTX toxicity",
-            "explanation": "✓ ถูก — อันตรกิริยาทั้ง PD และ PK ทำให้เกิด MTX toxicity"
+            "text": "Fusion protein ของ CTLA-4 กับ Fc ของ IgG1 (CTLA4-Ig) จับ CD80/CD86 บน antigen-presenting cell ยับยั้งสัญญาณ costimulation ผ่าน CD28 จึงลดการกระตุ้น T cell",
+            "explanation": "✓ ถูก — Abatacept คือ CTLA4-Ig fusion protein จับ CD80/CD86 บน APC แย่งไม่ให้จับ CD28 บน T cell จึงตัดสัญญาณ costimulation ทำให้ T cell ไม่ถูกกระตุ้นเต็มที่ ลดการช่วย B cell และ cytokine ปลายทาง ใช้ได้ทั้ง IV ตามน้ำหนักและ SC 125 mg ทุกสัปดาห์ ร่วมกับ MTX และมีข้อมูลว่าติดเชื้อรุนแรงน้อยกว่า TNFi จึงเหมาะกับผู้ป่วยรายนี้"
           },
           {
             "label": "C",
-            "text": "Co-trimoxazole เหนี่ยวนำ CYP3A4 ทำให้ระดับ folic acid ลดลง",
-            "explanation": "✗ ผิด — co-trimoxazole ไม่ได้เหนี่ยวนำ CYP3A4 และ MTX ไม่ได้กำจัดผ่าน CYP เป็นหลัก"
+            "text": "Humanized monoclonal antibody ต่อ IL-6 receptor ทั้งชนิดละลายและชนิดยึดเยื่อหุ้มเซลล์",
+            "explanation": "✗ ผิด — Humanized monoclonal antibody ต่อ IL-6 receptor ทั้งแบบ soluble และ membrane-bound เป็นกลไกของ tocilizumab (และ sarilumab ซึ่งเป็น fully human) ยากลุ่มนี้ใช้เป็น monotherapy ได้ดี ข้อนี้จะถูกหากโจทย์ถามยาที่กด CRP และไข้จนบดบังการติดเชื้อ ทำให้ LDL สูงขึ้น และเพิ่มความเสี่ยง GI perforation โดยเฉพาะในผู้มี diverticulitis"
           },
           {
             "label": "D",
-            "text": "ผู้ป่วยแพ้ sulfonamide แบบ Stevens–Johnson syndrome",
-            "explanation": "✗ ผิด — ไม่มีผื่นหรือเยื่อบุลอกแบบ SJS อาการเข้ากับ MTX toxicity มากกว่า"
+            "text": "ยับยั้ง Janus kinase (JAK1/JAK3) ภายในเซลล์ ทำให้สัญญาณ cytokine หลายชนิดผ่าน STAT ลดลง",
+            "explanation": "✗ ผิด — การยับยั้ง JAK ภายในเซลล์จนสัญญาณ cytokine ผ่าน STAT ลดลง เป็นกลไกของ tsDMARD ได้แก่ tofacitinib, baricitinib และ upadacitinib ซึ่งเป็นยาเม็ด ไม่ใช่ biologic ข้อนี้จะถูกหากโจทย์ถามยาที่เพิ่มความเสี่ยง herpes zoster, VTE และ MACE ในผู้สูงอายุหรือผู้สูบบุหรี่ ตามผลการศึกษา ORAL Surveillance"
           }
         ],
-        "key_takeaway": "ใช้ MTX อยู่ ห้ามให้ co-trimoxazole ขนาดรักษา"
+        "key_takeaway": "Abatacept = CTLA4-Ig ปิด CD80/86 ตัดสัญญาณที่ 2 ของ T cell"
       }
     },
     {
@@ -278,84 +286,84 @@
       ],
       "correct_answer": "C",
       "difficulty": "medium",
-      "explanation": "ACR แนะนำติดตาม CBC, LFT, SCr ทุก 2–4 สัปดาห์ช่วง 3 เดือนแรก ทุก 8–12 สัปดาห์ช่วง 3–6 เดือน และทุก 12 สัปดาห์หลังจากนั้น",
+      "explanation": "ACR แนะนำติดตาม CBC, AST/ALT, albumin และ SCr ระหว่างใช้ MTX ทุก 2–4 สัปดาห์ใน 3 เดือนแรก (หรือหลังเพิ่มขนาด) ทุก 8–12 สัปดาห์ในเดือนที่ 3–6 และทุก 12 สัปดาห์หลัง 6 เดือน",
       "detailed_explanation": {
-        "summary": "ACR แนะนำติดตาม CBC, LFT, SCr ทุก 2–4 สัปดาห์ช่วง 3 เดือนแรก ทุก 8–12 สัปดาห์ช่วง 3–6 เดือน และทุก 12 สัปดาห์หลังจากนั้น",
-        "reason": "โจทย์ถามอะไร: ถามความถี่ของการติดตาม lab ระหว่างใช้ MTX\n\nหลักการ/กลไกเชิงลึก: พิษสำคัญของ MTX คือ bone marrow suppression, hepatotoxicity (transaminitis → fibrosis) และพิษสะสมเมื่อไตเสื่อม (ขับทางไต ~80–90%) ความเสี่ยงสูงสุดในช่วงเริ่มยาหรือเพิ่มขนาด ACR จึงให้ตรวจถี่ในช่วงแรกแล้วห่างขึ้นเมื่อขนาดคงที่: 2–4 สัปดาห์ (0–3 เดือน), 8–12 สัปดาห์ (3–6 เดือน), 12 สัปดาห์ (>6 เดือน) และกลับไปถี่ใหม่หลังปรับขนาดยา\n\nทำไมข้อ C ถูก: ข้อ C ตรงกับตารางของ ACR ทุกช่วงเวลา\n\nการประยุกต์กับผู้ป่วยจริง: หาก AST/ALT >3 เท่าของ ULN ให้หยุดยาและตรวจซ้ำ ถ้า 1–3 เท่า ให้ลดขนาด/ตรวจซ้ำใน 2–4 สัปดาห์ แนะนำงดหรือจำกัดแอลกอฮอล์ และให้ folic acid เสริม เภสัชกรควรตรวจว่ามีผลแล็บล่าสุดก่อนจ่ายยาซ้ำ\n\nจุดที่มักสับสนและกับดักข้อสอบ: การทำ liver biopsy ตามขนาดสะสม (1–1.5 g) เป็นแนวทางเก่าของ psoriasis ไม่ใช้เป็นประจำใน RA แล้ว; การไม่ติดตามเลยหรือติดตามทุกสัปดาห์ตลอดไปไม่เหมาะสม\n\nสรุปท่องสอบ: MTX lab: 2–4 สัปดาห์ → 8–12 สัปดาห์ → 12 สัปดาห์",
+        "summary": "ACR แนะนำติดตาม CBC, AST/ALT, albumin และ SCr ระหว่างใช้ MTX ทุก 2–4 สัปดาห์ใน 3 เดือนแรก (หรือหลังเพิ่มขนาด) ทุก 8–12 สัปดาห์ในเดือนที่ 3–6 และทุก 12 สัปดาห์หลัง 6 เดือน",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วยเพิ่งเริ่ม methotrexate 10 mg/สัปดาห์ และวางแผนเพิ่มขนาด ผลตรวจพื้นฐาน (baseline) ทั้ง CBC, LFT, SCr, HBV/HCV serology และ CXR ปกติ โจทย์ถามความถี่ของการตรวจติดตาม CBC, AST/ALT และ creatinine ระหว่างใช้ยาตามคำแนะนำ ACR\n\nหลักการ/กลไกเชิงลึก: พิษสำคัญของ MTX ได้แก่ myelosuppression (จาก antifolate ต่อเซลล์ที่แบ่งตัวเร็ว), hepatotoxicity (transaminitis ไปจนถึง fibrosis/cirrhosis ในระยะยาว โดยเฉพาะผู้ดื่มแอลกอฮอล์ อ้วน เบาหวาน) และการสะสมเมื่อไตเสื่อม เพราะ MTX ขับทางไตเป็นหลักทั้ง glomerular filtration และ tubular secretion (ผ่าน OAT) พิษเหล่านี้มักเกิดบ่อยในช่วงเริ่มยาหรือหลังเพิ่มขนาด และเกิดได้แม้ไม่มีอาการ จึงต้องตรวจถี่ในช่วงแรกแล้วห่างออกเมื่อขนาดคงที่\n\nทำไมข้อ C ถูก: ข้อ C ตรงกับตาราง ACR (2008 และยืนยันใน 2015) คือ <3 เดือน ทุก 2–4 สัปดาห์; 3–6 เดือน ทุก 8–12 สัปดาห์; >6 เดือน ทุก 12 สัปดาห์ และกลับมาตรวจถี่ใหม่เมื่อเพิ่มขนาดยาหรือเพิ่มยาที่มีพิษต่อตับ/ไขกระดูก\n\nหลักฐานและแนวทางเวชปฏิบัติ: ACR 2008/2015 ให้ตรวจ CBC, AST/ALT, albumin และ SCr ตามตารางข้างต้น EULAR (2009 MTX recommendations) แนะนำตรวจทุก 1–1.5 เดือนจนขนาดคงที่ แล้วทุก 1–3 เดือน การตรวจพื้นฐานก่อนเริ่มยาประกอบด้วย CBC, AST/ALT, albumin, SCr, HBV/HCV, CXR (ภายใน 1 ปี) และพิจารณา HIV และ pregnancy test ส่วน liver biopsy ไม่แนะนำเป็นประจำใน RA\n\nการประยุกต์กับผู้ป่วยจริง: เมื่อเพิ่มขนาดจาก 10 → 15 → 20 mg ทุก 2–4 สัปดาห์ ให้นัดเจาะเลือดก่อนเพิ่มขนาดครั้งถัดไป สอนผู้ป่วยให้งดแอลกอฮอล์หรือดื่มน้อยที่สุด ใช้ folic acid เป็นประจำ และแจ้งเภสัชกรเมื่อได้ยาใหม่ เช่น co-trimoxazole, NSAID ขนาดสูง, PPI หรือ probenecid ที่อาจเพิ่มระดับ MTX\n\nการติดตามและสัญญาณอันตราย: ALT/AST >3×ULN ให้หยุดยาชั่วคราว ระหว่าง 1–3×ULN ให้ลดขนาดและตรวจซ้ำใน 2–4 สัปดาห์ WBC <3,000/mm³, platelet <100,000/mm³ หรือ MCV สูงขึ้นต่อเนื่องเป็นสัญญาณกดไขกระดูก SCr ที่สูงขึ้นต้องคำนวณ CrCl ใหม่ ส่วนอาการไอแห้ง หอบ ไข้ อาจเป็น MTX pneumonitis ต้องหยุดยาทันที\n\nจุดที่มักสับสนและกับดักข้อสอบ: การตรวจ liver biopsy ทุก 1.5 g สะสมเป็นแนวทางเก่าของ psoriasis (Roenigk) ไม่ใช่ของ RA; การตรวจตาประจำปีเป็นของ hydroxychloroquine ไม่ใช่ MTX; ผล baseline ปกติไม่ได้แปลว่าไม่ต้องตรวจซ้ำ; การตรวจทุกสัปดาห์ตลอดไปไม่จำเป็นและเป็นภาระผู้ป่วย\n\nสรุปท่องสอบ: MTX labs (CBC, LFT, albumin, SCr): 2–4 wk (0–3 เดือน) → 8–12 wk (3–6 เดือน) → 12 wk (>6 เดือน); เพิ่มขนาด = กลับมาตรวจถี่",
         "choices": [
           {
             "label": "A",
             "text": "ไม่ต้องตรวจซ้ำหากผลพื้นฐานปกติ ยกเว้นมีอาการ",
-            "explanation": "✗ ผิด — MTX ต้องติดตาม lab เป็นระยะแม้ไม่มีอาการ เพราะพิษต่อไขกระดูก/ตับมักไม่มีอาการช่วงแรก"
+            "explanation": "✗ ผิด — พิษของ MTX ต่อไขกระดูกและตับเกิดได้โดยไม่มีอาการนำ ผล baseline ปกติจึงไม่รับประกันความปลอดภัยในอนาคต ACR และ EULAR ให้ตรวจเป็นระยะตลอดการใช้ยา แนวทาง \"ตรวจเมื่อมีอาการ\" จะใกล้เคียงความจริงเฉพาะยาที่ไม่มีพิษต่อตับ/ไขกระดูก เช่น hydroxychloroquine ซึ่งไม่ต้องเจาะเลือดติดตามประจำ (แต่ต้องตรวจตา)"
           },
           {
             "label": "B",
             "text": "ตรวจทุกสัปดาห์ตลอดการใช้ยา",
-            "explanation": "✗ ผิด — ถี่เกินความจำเป็นในระยะยาว ไม่ใช่คำแนะนำมาตรฐาน"
+            "explanation": "✗ ผิด — การตรวจทุกสัปดาห์ตลอดการใช้ยาเกินความจำเป็น เพิ่มค่าใช้จ่ายและภาระผู้ป่วยโดยไม่ได้ประโยชน์เพิ่ม ความถี่ทุกสัปดาห์อาจใช้ชั่วคราวเมื่อมีปัญหา เช่น หลังเกิด cytopenia หรือ transaminitis ที่ต้องติดตามใกล้ชิด หรือในยาบางตัว เช่น clozapine ช่วงแรก แต่ไม่ใช่ตารางมาตรฐานของ MTX ใน RA"
           },
           {
             "label": "C",
             "text": "ทุก 2–4 สัปดาห์ในช่วง 3 เดือนแรก (หรือหลังเพิ่มขนาด), ทุก 8–12 สัปดาห์ในเดือนที่ 3–6, และทุก 12 สัปดาห์หลัง 6 เดือน",
-            "explanation": "✓ ถูก — ตรงตามตาราง ACR"
+            "explanation": "✓ ถูก — ตรงตามตาราง ACR: ทุก 2–4 สัปดาห์ใน 3 เดือนแรกหรือหลังเพิ่มขนาด ทุก 8–12 สัปดาห์ในเดือนที่ 3–6 และทุก 12 สัปดาห์เมื่อใช้ยาเกิน 6 เดือน โดยตรวจ CBC, AST/ALT, albumin และ SCr เพื่อจับ myelosuppression, hepatotoxicity และไตเสื่อมที่ทำให้ MTX สะสม ก่อนเกิดอาการรุนแรง"
           },
           {
             "label": "D",
             "text": "ตรวจปีละครั้งพร้อมกับการตรวจตาและ liver biopsy ทุก 1.5 g สะสม",
-            "explanation": "✗ ผิด — ปีละครั้งห่างเกินไป และ liver biopsy ตามขนาดสะสมไม่ใช่ routine ใน RA"
+            "explanation": "✗ ผิด — การตรวจตาประจำปีเป็นการติดตาม retinopathy ของ hydroxychloroquine ส่วน liver biopsy ทุก 1.5 g สะสมเป็นแนวทางเก่าของ MTX ใน psoriasis ซึ่ง ACR ไม่แนะนำใน RA (ใช้ biopsy เฉพาะเมื่อ LFT ผิดปกติต่อเนื่องหรือ albumin ลดลง) และตรวจปีละครั้งถี่ไม่พอ ข้อนี้จะใกล้ถูกหากโจทย์ถามการติดตาม HCQ หรือ psoriasis ในอดีต"
           }
         ],
         "key_takeaway": "MTX: ตรวจ CBC/LFT/SCr ถี่ช่วงแรก ห่างขึ้นเมื่อขนาดคงที่"
       }
     },
     {
-      "scenario": "ผู้ป่วยหญิงอายุ 72 ปี ได้รับใบสั่ง methotrexate 2.5 mg ครั้งละ 4 เม็ด \"สัปดาห์ละครั้ง\" แต่เข้าใจผิดรับประทานทุกวันติดต่อกัน 6 วัน มาด้วยแผลในปากรุนแรง ท้องเสีย WBC 1,500/mm³ Plt 45,000/mm³ SCr 1.0 mg/dL นอกจากหยุด MTX แล้ว ยาต้านพิษที่เหมาะสมที่สุดคือข้อใด",
+      "scenario": "ผู้ป่วยหญิงอายุ 52 ปี เป็น seropositive RA ล้มเหลวต่อ MTX และ etanercept แพทย์สั่ง rituximab 1,000 mg IV ในวันที่ 1 และวันที่ 15 ร่วมกับ MTX นี่เป็นการได้รับ rituximab ครั้งแรก ข้อใดเป็นการเตรียมยาก่อนหยด (premedication) และวิธีให้ยาที่เหมาะสมที่สุดเพื่อลด infusion-related reaction",
       "choices": [
         {
           "label": "A",
-          "text": "Folic acid 5 mg รับประทานวันละครั้ง"
+          "text": "ไม่ต้องให้ premedication เพราะ rituximab เป็น fully human antibody จึงไม่กระตุ้นปฏิกิริยา"
         },
         {
           "label": "B",
-          "text": "N-acetylcysteine IV ตามสูตร 21 ชั่วโมง"
+          "text": "ให้ diphenhydramine เฉพาะเมื่อเกิดอาการระหว่างหยด และเริ่มหยดที่ 400 mg/ชั่วโมงเพื่อให้เสร็จเร็ว"
         },
         {
           "label": "C",
-          "text": "Vitamin B12 (cyanocobalamin) 1,000 mcg IM"
+          "text": "ให้ prednisolone 60 mg/วัน รับประทาน 7 วันก่อนวันให้ยา แทนการให้ยาก่อนหยด"
         },
         {
           "label": "D",
-          "text": "Leucovorin (folinic acid) เช่น 10–15 mg/m² ทุก 6 ชั่วโมง จนกว่าระดับ MTX ต่ำและ blood count ฟื้นตัว"
+          "text": "ให้ methylprednisolone 100 mg IV ประมาณ 30 นาทีก่อนหยดทุกครั้ง ร่วมกับ paracetamol และ antihistamine แล้วเริ่มหยดช้า (50 mg/ชั่วโมง) ค่อย ๆ เพิ่มอัตรา"
         }
       ],
       "correct_answer": "D",
       "difficulty": "medium",
-      "explanation": "Leucovorin เป็น reduced folate ที่ไม่ต้องผ่าน DHFR จึงช่วยข้ามการยับยั้งของ MTX ได้ เป็นยาต้านพิษหลักของ MTX overdose",
+      "explanation": "Infusion reaction ของ rituximab พบมากที่สุดในการให้ครั้งแรก จึงต้องให้ methylprednisolone 100 mg IV 30 นาทีก่อนหยด ร่วมกับ paracetamol และ antihistamine และเริ่มหยด 50 mg/ชั่วโมง เพิ่มทีละ 50 mg/ชั่วโมงทุก 30 นาทีจนสูงสุด 400 mg/ชั่วโมง",
       "detailed_explanation": {
-        "summary": "Leucovorin เป็น reduced folate ที่ไม่ต้องผ่าน DHFR จึงช่วยข้ามการยับยั้งของ MTX ได้ เป็นยาต้านพิษหลักของ MTX overdose",
-        "reason": "โจทย์ถามอะไร: ผู้ป่วยรับ MTX ผิดเป็นรายวัน (dosing error คลาสสิก) เกิด mucositis และ myelosuppression ถามยาต้านพิษ\n\nหลักการ/กลไกเชิงลึก: MTX ยับยั้ง dihydrofolate reductase (DHFR) ทำให้ไม่สามารถเปลี่ยน dihydrofolate เป็น tetrahydrofolate ได้ folic acid ต้องอาศัย DHFR ในการเปลี่ยนเป็นรูปออกฤทธิ์ จึงใช้ไม่ได้ผลในภาวะพิษ ขณะที่ leucovorin (5-formyl-tetrahydrofolate) เป็น folate รูปที่ reduce แล้ว ข้าม DHFR ได้โดยตรง ช่วยกอบกู้เซลล์ไขกระดูกและเยื่อบุทางเดินอาหาร ควรเริ่มโดยเร็วที่สุด (ประสิทธิภาพลดลงเมื่อเริ่มช้า) ร่วมกับ hydration, G-CSF ในรายที่ neutropenia รุนแรง ส่วน glucarpidase ใช้ในรายระดับ MTX สูงมากร่วมกับไตวาย (มักเป็น high-dose MTX)\n\nทำไมข้อ D ถูก: Leucovorin คือ antidote ที่ถูกต้องสำหรับ MTX toxicity\n\nการประยุกต์กับผู้ป่วยจริง: เป็นความคลาดเคลื่อนทางยาที่พบบ่อยในผู้สูงอายุ เภสัชกรควรเขียนฉลากชัดเจน ระบุ \"วันจันทร์ สัปดาห์ละครั้ง\" จ่ายในปริมาณเท่าที่จำเป็น ทวนสอบความเข้าใจ (teach-back) และหลีกเลี่ยงการสั่งแบบ prn\n\nจุดที่มักสับสนและกับดักข้อสอบ: หลายคนตอบ folic acid เพราะคุ้นเคยกับการให้ folic acid ป้องกันผลข้างเคียงระหว่างใช้ MTX ตามปกติ แต่ในภาวะพิษเฉียบพลันต้องใช้ folinic acid; NAC เป็นยาต้านพิษ paracetamol; B12 ไม่เกี่ยวกับ DHFR\n\nสรุปท่องสอบ: MTX overdose → Leucovorin (folinic) ไม่ใช่ folic",
+        "summary": "Infusion reaction ของ rituximab พบมากที่สุดในการให้ครั้งแรก จึงต้องให้ methylprednisolone 100 mg IV 30 นาทีก่อนหยด ร่วมกับ paracetamol และ antihistamine และเริ่มหยด 50 mg/ชั่วโมง เพิ่มทีละ 50 mg/ชั่วโมงทุก 30 นาทีจนสูงสุด 400 mg/ชั่วโมง",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วย RA ที่ล้มเหลวต่อ MTX และ TNF inhibitor จะได้ rituximab 1,000 mg IV × 2 ครั้ง ห่างกัน 2 สัปดาห์ เป็นครั้งแรก โจทย์ถามการเตรียมยาล่วงหน้า (premedication) และการตั้งอัตราหยดที่ถูกต้อง ซึ่งเป็นบทบาทโดยตรงของเภสัชกรในหน่วยผสมยาและหอผู้ป่วย\n\nหลักการ/กลไกเชิงลึก: Rituximab เป็น chimeric (mouse/human) IgG1 ต่อ CD20 เมื่อจับ B cell จำนวนมากในการให้ครั้งแรก จะเกิดการทำลายเซลล์ผ่าน complement และ ADCC ปล่อย cytokine (TNF-α, IL-6, IL-8) และกระตุ้น complement ทำให้เกิด cytokine-release type infusion reaction ได้แก่ ไข้ หนาวสั่น ผื่น คัน หน้าแดง ความดันต่ำหรือสูง หลอดลมหดเกร็ง ส่วนน้อยเป็น IgE-mediated anaphylaxis ปฏิกิริยาพบมากที่สุดในครั้งแรกเพราะจำนวน B cell ยังมาก และลดลงในครั้งถัดไป glucocorticoid ลดการสร้างและผลของ cytokine, antihistamine ลดผลของ histamine และ paracetamol ลดไข้/หนาวสั่น\n\nทำไมข้อ D ถูก: ข้อ D ระบุครบทั้งสามองค์ประกอบของ premedication ตามฉลากยาใน RA (methylprednisolone 100 mg IV 30 นาทีก่อนหยดทุกครั้ง + paracetamol + antihistamine) และเริ่มหยดช้าแบบ titrate ซึ่งเป็นวิธีมาตรฐานของการให้ครั้งแรก\n\nหลักฐานและแนวทางเวชปฏิบัติ: ในการศึกษา REFLEX และ DANCER พบ acute infusion reaction ในการให้ครั้งแรกบ่อยกว่ายาหลอก และ DANCER แสดงว่า methylprednisolone 100 mg IV ก่อนหยดลดความถี่และความรุนแรงของปฏิกิริยาครั้งแรกได้ราวหนึ่งในสาม ฉลากยาจึงกำหนดให้ใช้ใน RA ทุกครั้ง อัตราหยด: ครั้งแรกเริ่ม 50 mg/ชั่วโมง เพิ่มครั้งละ 50 mg/ชั่วโมงทุก 30 นาที สูงสุด 400 mg/ชั่วโมง ครั้งถัดไปเริ่ม 100 mg/ชั่วโมง เพิ่มครั้งละ 100 mg/ชั่วโมงทุก 30 นาที สูงสุด 400 mg/ชั่วโมง\n\nการประยุกต์กับผู้ป่วยจริง: ตัวอย่างคำสั่ง: paracetamol 1,000 mg PO + chlorpheniramine 10 mg IV (หรือ diphenhydramine) + methylprednisolone 100 mg IV ให้ 30 นาทีก่อนเริ่มหยด เจือจาง rituximab ใน NSS หรือ D5W ให้ความเข้มข้น 1–4 mg/mL ห้าม IV push หรือ bolus ฉลากแนะนำให้พิจารณางดยาลดความดันโลหิต 12 ชั่วโมงก่อนหยด เพราะอาจเกิดความดันต่ำ เตรียมยา anaphylaxis (epinephrine) ไว้ข้างเตียง วัด vital signs ทุก 15–30 นาที\n\nการติดตามและสัญญาณอันตราย: หากเกิดปฏิกิริยา ให้หยุดหยดทันที ให้ antihistamine/paracetamol/steroid และสารน้ำตามอาการ เมื่ออาการหายแล้วเริ่มใหม่ที่อัตราครึ่งหนึ่งของอัตราเดิม หากเป็น anaphylaxis หรือ hypotension/หลอดลมหดเกร็งรุนแรงให้ epinephrine IM และหยุดยาถาวร ระยะยาวติดตาม IgG (hypogammaglobulinemia), HBV reactivation, การติดเชื้อ และอาการทางระบบประสาทใหม่ (PML)\n\nจุดที่มักสับสนและกับดักข้อสอบ: Rituximab เป็น chimeric ไม่ใช่ fully human (ชื่อ -ximab = chimeric, -zumab = humanized, -umab = human); การรอให้มีอาการก่อนแล้วจึงให้ยาเป็น reactive ไม่ใช่ preventive; การเริ่มที่ 400 mg/ชั่วโมงผิดเพราะต้อง titrate; steroid รับประทานล่วงหน้าหลายวันไม่ใช่สูตรที่พิสูจน์และเพิ่ม ADR โดยไม่จำเป็น\n\nสรุปท่องสอบ: Rituximab RA: 1 g D1 + D15; premed = methylpred 100 mg IV + paracetamol + antihistamine 30 นาทีก่อน; ครั้งแรก 50 → +50 q30min → max 400 mg/h",
         "choices": [
           {
             "label": "A",
-            "text": "Folic acid 5 mg รับประทานวันละครั้ง",
-            "explanation": "✗ ผิด — folic acid ต้องผ่าน DHFR ที่ถูก MTX ยับยั้งอยู่ จึงไม่ได้ผลในภาวะพิษ"
+            "text": "ไม่ต้องให้ premedication เพราะ rituximab เป็น fully human antibody จึงไม่กระตุ้นปฏิกิริยา",
+            "explanation": "✗ ผิด — Rituximab เป็น chimeric antibody (-ximab) ไม่ใช่ fully human และปฏิกิริยาส่วนใหญ่เกิดจาก cytokine release จากการทำลาย B cell ไม่ใช่จากความเป็นโปรตีนแปลกปลอมเพียงอย่างเดียว จึงต้องให้ premedication ทุกครั้งใน RA การไม่ให้ premedication อาจใช้ได้กับ biologic บางตัวที่ infusion reaction ต่ำ เช่น tocilizumab IV หรือ abatacept IV"
           },
           {
             "label": "B",
-            "text": "N-acetylcysteine IV ตามสูตร 21 ชั่วโมง",
-            "explanation": "✗ ผิด — NAC เป็นยาต้านพิษ paracetamol"
+            "text": "ให้ diphenhydramine เฉพาะเมื่อเกิดอาการระหว่างหยด และเริ่มหยดที่ 400 mg/ชั่วโมงเพื่อให้เสร็จเร็ว",
+            "explanation": "✗ ผิด — การให้ antihistamine เฉพาะเมื่อมีอาการเป็นการแก้ไขหลังเกิดปัญหา ไม่ใช่การป้องกัน และการเริ่มหยดที่ 400 mg/ชั่วโมงในครั้งแรกเพิ่มความเสี่ยงปฏิกิริยารุนแรงมาก เพราะต้องเริ่ม 50 mg/ชั่วโมงแล้วเพิ่มทีละขั้น อัตรา 400 mg/ชั่วโมงเป็นเพดานที่ไปถึงได้หลัง titrate และใน rapid infusion 90 นาทีของบางข้อบ่งใช้ (เช่น lymphoma) เมื่อทนครั้งแรกได้ดีแล้ว"
           },
           {
             "label": "C",
-            "text": "Vitamin B12 (cyanocobalamin) 1,000 mcg IM",
-            "explanation": "✗ ผิด — B12 ไม่ได้แก้การยับยั้ง DHFR"
+            "text": "ให้ prednisolone 60 mg/วัน รับประทาน 7 วันก่อนวันให้ยา แทนการให้ยาก่อนหยด",
+            "explanation": "✗ ผิด — การให้ prednisolone ขนาดสูงรับประทาน 7 วันล่วงหน้าไม่ใช่สูตรที่มีหลักฐานหรือระบุในฉลาก เพิ่มความเสี่ยงน้ำตาลสูง ติดเชื้อ และอารมณ์แปรปรวนโดยไม่จำเป็น และยังขาด antihistamine กับ paracetamol สูตรรับประทานล่วงหน้าหลายครั้งจะใช้ในบริบทอื่น เช่น การป้องกันปฏิกิริยาต่อ iodinated contrast ในผู้เคยแพ้ (เช่น prednisolone 50 mg ที่ 13, 7, 1 ชั่วโมงก่อน)"
           },
           {
             "label": "D",
-            "text": "Leucovorin (folinic acid) เช่น 10–15 mg/m² ทุก 6 ชั่วโมง จนกว่าระดับ MTX ต่ำและ blood count ฟื้นตัว",
-            "explanation": "✓ ถูก — leucovorin ข้าม DHFR ช่วย rescue เซลล์ปกติ"
+            "text": "ให้ methylprednisolone 100 mg IV ประมาณ 30 นาทีก่อนหยดทุกครั้ง ร่วมกับ paracetamol และ antihistamine แล้วเริ่มหยดช้า (50 mg/ชั่วโมง) ค่อย ๆ เพิ่มอัตรา",
+            "explanation": "✓ ถูก — ตรงตามฉลากยาใน RA: methylprednisolone 100 mg IV 30 นาทีก่อนหยดทุกครั้ง ร่วมกับ paracetamol และ antihistamine และครั้งแรกเริ่มหยด 50 mg/ชั่วโมง เพิ่มทีละ 50 mg/ชั่วโมงทุก 30 นาทีจนสูงสุด 400 mg/ชั่วโมง ร่วมกับพิจารณางดยาลดความดัน 12 ชั่วโมงก่อนหยด และเตรียม epinephrine ไว้ หากเกิดปฏิกิริยาให้หยุดแล้วเริ่มใหม่ที่อัตราครึ่งหนึ่ง"
           }
         ],
-        "key_takeaway": "MTX พิษ = Leucovorin; ป้องกันด้วยฉลาก \"สัปดาห์ละครั้ง\""
+        "key_takeaway": "Rituximab ครั้งแรก: methylpred 100 mg + paracetamol + antihistamine แล้วหยดช้า 50 mg/h"
       }
     },
     {
@@ -380,88 +388,97 @@
       ],
       "correct_answer": "A",
       "difficulty": "hard",
-      "explanation": "CrCl = (140−70)×50×0.85/(72×1.6) ≈ 26 mL/min ซึ่ง <30 mL/min ถือเป็นข้อห้าม/ควรหลีกเลี่ยง MTX เพราะขับทางไตและเสี่ยงพิษสะสม",
+      "explanation": "CrCl = [(140−70) × 50] ÷ (72 × 1.6) × 0.85 ≈ 25.8 mL/min ซึ่งต่ำกว่า 30 mL/min จึงควรหลีกเลี่ยง methotrexate และเลือก csDMARD อื่นที่ปลอดภัยกว่าในไตเสื่อม",
       "detailed_explanation": {
-        "summary": "CrCl = (140−70)×50×0.85/(72×1.6) ≈ 26 mL/min ซึ่ง <30 mL/min ถือเป็นข้อห้าม/ควรหลีกเลี่ยง MTX เพราะขับทางไตและเสี่ยงพิษสะสม",
-        "reason": "โจทย์ถามอะไร: ให้คำนวณ CrCl แล้วตัดสินว่าใช้ MTX ได้หรือไม่\n\nหลักการ/กลไกเชิงลึก: Cockcroft–Gault (หญิง) = [(140 − อายุ) × น้ำหนัก × 0.85] / (72 × SCr) = [(140 − 70) × 50 × 0.85] / (72 × 1.6) = (70 × 50 × 0.85) / 115.2 = 2,975 / 115.2 ≈ 25.8 mL/min MTX ขับออกทางไตเป็นหลัก เมื่อไตเสื่อมระดับยาและ polyglutamate สะสม เสี่ยง pancytopenia และ mucositis ACR ระบุว่า MTX ห้ามใช้ (contraindicated) เมื่อ CrCl <30 mL/min และควรลดขนาดเมื่อ CrCl 30–59 mL/min\n\nทำไมข้อ A ถูก: ข้อ A คำนวณถูกและตัดสินถูกต้องว่าควรหลีกเลี่ยง MTX\n\nการประยุกต์กับผู้ป่วยจริง: ทางเลือก csDMARD เช่น hydroxychloroquine (ลดขนาดในไตเสื่อม) หรือ sulfasalazine (ใช้ด้วยความระวัง) ร่วมกับ glucocorticoid bridging ระยะสั้น หรือพิจารณา biologic บางตัวที่ไม่ต้องปรับตามไต ตามความรุนแรงของโรค\n\nจุดที่มักสับสนและกับดักข้อสอบ: อย่าลืมคูณ 0.85 สำหรับผู้หญิง และใช้ SCr จริง ไม่ปัดเป็น 1.0; ผู้สูงอายุน้ำหนักน้อยมี SCr ดูไม่สูงแต่ CrCl ต่ำ การให้ \"สัปดาห์ละครั้ง\" ไม่ได้ทำให้ปลอดภัยในไตเสื่อม และ NSAID ยิ่งลดการขับ MTX\n\nสรุปท่องสอบ: MTX: CrCl <30 = ห้ามใช้; 30–59 = ลดขนาด",
+        "summary": "CrCl = [(140−70) × 50] ÷ (72 × 1.6) × 0.85 ≈ 25.8 mL/min ซึ่งต่ำกว่า 30 mL/min จึงควรหลีกเลี่ยง methotrexate และเลือก csDMARD อื่นที่ปลอดภัยกว่าในไตเสื่อม",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วยหญิงสูงอายุ 70 ปี น้ำหนัก 50 kg SCr 1.6 mg/dL (คงที่) เป็น early active RA แพทย์อยากเริ่ม MTX โจทย์ให้คำนวณ CrCl ด้วย Cockcroft–Gault แล้วตัดสินว่าใช้ MTX ได้หรือไม่ ซึ่งต้องทั้งคำนวณถูกและรู้จุดตัดของการทำงานของไต\n\nหลักการ/กลไกเชิงลึก: MTX ขับออกทางไตในรูปเดิมราว 80–90% ผ่าน glomerular filtration และ active tubular secretion (OAT1/OAT3) เมื่อไตเสื่อม ระดับยาและ MTX-polyglutamate ในเซลล์สะสม เกิด pancytopenia, mucositis และ sepsis ซึ่งเป็นสาเหตุการเสียชีวิตจาก MTX ที่สำคัญ ผู้สูงอายุมีมวลกล้ามเนื้อน้อย SCr จึงดูไม่สูงมากแต่ CrCl ต่ำจริง การคำนวณ: (140−70) = 70; 70 × 50 = 3,500; 72 × 1.6 = 115.2; 3,500 ÷ 115.2 = 30.4; × 0.85 = 25.8 mL/min\n\nทำไมข้อ A ถูก: CrCl ≈ 26 mL/min ต่ำกว่า 30 mL/min ซึ่ง ACR ถือเป็นข้อห้ามของ MTX ควรเลือก csDMARD อื่น เช่น hydroxychloroquine (ปรับขนาดตามไต) หรือ sulfasalazine ด้วยความระมัดระวัง และพิจารณา bDMARD ที่ไม่ขับทางไตหากโรครุนแรง\n\nหลักฐานและแนวทางเวชปฏิบัติ: ACR 2008 ระบุว่า MTX contraindicated เมื่อ CrCl <30 mL/min และให้ลดขนาดเมื่อ CrCl 30–59 mL/min แนวทางลดขนาดที่นิยมอ้างอิง (Kintzel & Dorr) คือ CrCl 46–60 ให้ ~65%, 31–45 ให้ ~50% ของขนาดปกติ EULAR แนะนำปรับขนาดตาม GFR ในผู้สูงอายุและไม่ใช้ใน GFR <30 ผู้ป่วยฟอกไตห้ามใช้ MTX เพราะ dialysis ขจัดยาได้ไม่ดี\n\nการประยุกต์กับผู้ป่วยจริง: เภสัชกรควรคำนวณ CrCl ทุกครั้งก่อนจ่าย MTX ในผู้สูงอายุ ใช้น้ำหนักจริงในผู้ที่ไม่อ้วน แจ้งแพทย์ว่าไม่ควรเริ่ม MTX และเสนอทางเลือก เช่น HCQ ≤5 mg/kg/วัน + glucocorticoid ขนาดต่ำระยะสั้น หรือ bDMARD เช่น abatacept/tocilizumab ที่ไม่ต้องปรับตามไต ทบทวนยาอื่นที่ทำให้ไตแย่ลง เช่น NSAID\n\nการติดตามและสัญญาณอันตราย: ผู้ที่ใช้ MTX อยู่แล้วต้องติดตาม SCr ทุก 8–12 สัปดาห์ เมื่อมีภาวะขาดน้ำ ท้องเสีย อาเจียน หรือ AKI ต้องงด MTX ชั่วคราว สัญญาณพิษ ได้แก่ แผลในปาก ไข้ เจ็บคอ จ้ำเลือด WBC/platelet ลดลง หากเกิดต้องหยุดยาและพิจารณา leucovorin\n\nจุดที่มักสับสนและกับดักข้อสอบ: ลืมคูณ 0.85 ในผู้หญิงจะได้ 30.4 ซึ่งดูเหมือน \"พอใช้ได้\" ข้อ C/D ใช้ค่า 45 ที่คำนวณผิด; ความคิดว่าให้สัปดาห์ละครั้งจึงไม่สะสมเป็นความเข้าใจผิด เพราะ polyglutamate ค้างในเซลล์นาน; NSAID ยิ่งลดการขับ MTX\n\nสรุปท่องสอบ: Cockcroft–Gault ×0.85 ในหญิง; MTX: CrCl ≥60 ปกติ, 30–59 ลดขนาด, <30 ห้ามใช้",
         "choices": [
           {
             "label": "A",
             "text": "CrCl ≈ 26 mL/min ควรหลีกเลี่ยง methotrexate และพิจารณา csDMARD อื่น",
-            "explanation": "✓ ถูก — CrCl ≈ 26 mL/min (<30) ควรหลีกเลี่ยง MTX"
+            "explanation": "✓ ถูก — คำนวณ CrCl = (70 × 50) ÷ (72 × 1.6) × 0.85 ≈ 25.8 mL/min ต่ำกว่า 30 mL/min ซึ่ง ACR ถือเป็นข้อห้ามของ MTX เพราะยาและ polyglutamate สะสมจน pancytopenia รุนแรงได้ ควรเลือก csDMARD อื่น เช่น hydroxychloroquine ขนาดตามน้ำหนักและไต หรือพิจารณา bDMARD ที่ไม่ขับทางไตหากโรครุนแรง"
           },
           {
             "label": "B",
             "text": "CrCl ≈ 26 mL/min ใช้ MTX 15 mg/สัปดาห์ได้ตามปกติเพราะให้สัปดาห์ละครั้ง",
-            "explanation": "✗ ผิด — แม้ให้สัปดาห์ละครั้ง ยาก็สะสมในไตเสื่อมรุนแรง"
+            "explanation": "✗ ผิด — ค่า CrCl ≈ 26 ถูกต้อง แต่การสรุปว่าใช้ MTX 15 mg/สัปดาห์ได้ตามปกติเพราะให้สัปดาห์ละครั้งเป็นความเข้าใจผิดอันตราย เพราะ MTX-polyglutamate ค้างในเซลล์นาน และการขับช้าทำให้ระดับยาสูงนาน ข้อนี้จะใกล้ถูกหาก CrCl ≥60 mL/min ซึ่งใช้ขนาดปกติได้และเพิ่มถึง 20–25 mg/สัปดาห์"
           },
           {
             "label": "C",
             "text": "CrCl ≈ 45 mL/min ใช้ MTX ขนาดลดลงครึ่งหนึ่งได้",
-            "explanation": "✗ ผิด — คำนวณผิด (CrCl ≈ 26 ไม่ใช่ 45)"
+            "explanation": "✗ ผิด — ค่า 45 mL/min คำนวณผิด (อาจลืมใช้อายุหรือน้ำหนักจริง) ค่าที่ถูกคือราว 26 mL/min หากผู้ป่วยมี CrCl 30–59 mL/min จริง การลดขนาด MTX (เช่น ~50% เมื่อ CrCl 31–45) ร่วมกับติดตาม CBC/SCr ใกล้ชิดเป็นแนวทางที่ยอมรับได้ ข้อนี้จึงจะถูกในผู้ป่วยที่ไตเสื่อมปานกลาง"
           },
           {
             "label": "D",
             "text": "CrCl ≈ 45 mL/min ใช้ MTX ขนาดปกติร่วมกับ NSAID เพื่อเสริมฤทธิ์",
-            "explanation": "✗ ผิด — คำนวณผิด และ NSAID ลดการขับ MTX เพิ่มพิษ"
+            "explanation": "✗ ผิด — ค่า CrCl คำนวณผิด และการใช้ MTX ขนาดปกติร่วมกับ NSAID ในผู้สูงอายุไตเสื่อมยิ่งอันตราย เพราะ NSAID ลด renal prostaglandin และ GFR ทำให้การขับ MTX ลดลง NSAID ร่วมกับ MTX ขนาดต่ำใช้ได้ในผู้ที่ไตปกติภายใต้การติดตาม SCr/CBC แต่ไม่ใช่ \"เสริมฤทธิ์\" และไม่ควรใช้ในผู้ป่วยรายนี้"
           }
         ],
-        "key_takeaway": "ก่อนเริ่ม MTX คำนวณ CrCl เสมอ — ต่ำกว่า 30 ห้ามใช้"
+        "key_takeaway": "ก่อนเริ่ม MTX คำนวณ CrCl เสมอ — ต่ำกว่า 30 ห้ามใช้",
+        "calculation_steps": [
+          "Cockcroft–Gault: CrCl = [(140 − อายุ) × น้ำหนัก] ÷ (72 × SCr) × 0.85 (หญิง)",
+          "(140 − 70) = 70",
+          "70 × 50 kg = 3,500",
+          "72 × 1.6 = 115.2",
+          "3,500 ÷ 115.2 = 30.4 mL/min",
+          "30.4 × 0.85 = 25.8 ≈ 26 mL/min",
+          "CrCl <30 mL/min → หลีกเลี่ยง methotrexate (ACR)"
+        ]
       }
     },
     {
-      "scenario": "ผู้ป่วยหญิงอายุ 31 ปี เป็น RA ใช้ leflunomide 20 mg/วัน มา 2 ปี อาการควบคุมได้ดี ต้องการตั้งครรภ์ในอีก 3 เดือน ข้อใดเป็นแนวทางการหยุดยาที่ถูกต้องที่สุด",
+      "scenario": "ผู้ป่วยหญิงอายุ 58 ปี เป็น RA มา 6 ปี ใช้ methotrexate 20 mg/สัปดาห์ ร่วมกับ folic acid 5 mg/สัปดาห์ ไม่ได้ใช้ NSAID ปัจจุบัน DAS28-CRP 5.3 ผลตรวจ: Hb 9.8 g/dL, MCV 82 fL, reticulocyte 0.8%, serum iron 35 µg/dL (ต่ำ), TIBC 220 µg/dL (ต่ำ), transferrin saturation 16%, ferritin 310 ng/mL, CRP 38 mg/L, vitamin B12 และ folate ปกติ, stool occult blood ลบ ข้อใดแปลผลและให้แนวทางได้เหมาะสมที่สุด",
       "choices": [
         {
           "label": "A",
-          "text": "หยุด leflunomide แล้วรอ 3 เดือน ก็ตั้งครรภ์ได้โดยไม่ต้องตรวจระดับยา"
+          "text": "Iron deficiency anemia จากเลือดออกในทางเดินอาหาร ควรให้ ferrous sulfate วันละ 3 ครั้ง"
         },
         {
           "label": "B",
-          "text": "หยุดยาและให้ cholestyramine 8 g วันละ 3 ครั้ง นาน 11 วัน แล้วตรวจระดับ teriflunomide <0.02 mg/L สองครั้งห่างกันอย่างน้อย 14 วัน"
+          "text": "Anemia of chronic disease (anemia of inflammation) จาก IL-6 กระตุ้น hepcidin ทำให้เหล็กถูกกักในเซลล์ แนวทางหลักคือควบคุม disease activity ของ RA โดยไม่จำเป็นต้องให้เหล็ก"
         },
         {
           "label": "C",
-          "text": "หยุดยาและให้ activated charcoal 50 g ครั้งเดียว"
+          "text": "Megaloblastic anemia จาก methotrexate ต้องหยุด MTX และให้ leucovorin"
         },
         {
           "label": "D",
-          "text": "ลดขนาด leflunomide เหลือ 10 mg/วัน ระหว่างตั้งครรภ์ก็เพียงพอ"
+          "text": "Autoimmune hemolytic anemia ควรให้ prednisolone 1 mg/kg/วัน"
         }
       ],
       "correct_answer": "B",
       "difficulty": "hard",
-      "explanation": "Teriflunomide (active metabolite) มี enterohepatic recirculation ค่าครึ่งชีวิตยาวมาก จึงต้อง washout ด้วย cholestyramine 8 g TID × 11 วัน และยืนยันระดับ <0.02 mg/L สองครั้งห่างกัน ≥14 วัน",
+      "explanation": "ภาพ normocytic anemia ที่ serum iron และ TIBC ต่ำ แต่ ferritin สูง (>100 ng/mL) ร่วมกับ CRP สูงและโรค active คือ anemia of chronic disease จาก IL-6–hepcidin การรักษาหลักคือคุม RA ให้สงบ ไม่ใช่ให้เหล็ก",
       "detailed_explanation": {
-        "summary": "Teriflunomide (active metabolite) มี enterohepatic recirculation ค่าครึ่งชีวิตยาวมาก จึงต้อง washout ด้วย cholestyramine 8 g TID × 11 วัน และยืนยันระดับ <0.02 mg/L สองครั้งห่างกัน ≥14 วัน",
-        "reason": "โจทย์ถามอะไร: ถามวิธี accelerated elimination (washout) ของ leflunomide ก่อนตั้งครรภ์\n\nหลักการ/กลไกเชิงลึก: Leflunomide เป็น prodrug เปลี่ยนเป็น teriflunomide (A77 1726) ซึ่งยับยั้ง DHODH มี half-life ~2 สัปดาห์ และวนกลับผ่าน enterohepatic circulation ระดับยาอาจคงอยู่ได้นานถึง 2 ปีหากหยุดเฉย ๆ ยามี teratogenicity ในสัตว์ทดลอง จึงใช้ bile acid sequestrant (cholestyramine 8 g TID × 11 วัน) หรือ activated charcoal 50 g ทุก 12 ชั่วโมง × 11 วัน เพื่อตัดวงจร แล้วยืนยันระดับ teriflunomide <0.02 mg/L สองครั้งห่างกันอย่างน้อย 14 วัน\n\nทำไมข้อ B ถูก: ข้อ B ระบุทั้งขนาด ระยะเวลา และเกณฑ์ยืนยันระดับยาได้ถูกต้อง\n\nการประยุกต์กับผู้ป่วยจริง: ใช้หลักเดียวกันเมื่อเกิด hepatotoxicity รุนแรง (ALT >3 เท่า ULN ยืนยันแล้ว) หรือแพ้ยารุนแรง เภสัชกรควรแจ้งว่า cholestyramine จับยาอื่น ให้รับประทานยาอื่นก่อน 1 ชั่วโมงหรือหลัง 4–6 ชั่วโมง และเปลี่ยนไปใช้ DMARD ที่ปลอดภัยในการตั้งครรภ์ เช่น hydroxychloroquine, sulfasalazine\n\nจุดที่มักสับสนและกับดักข้อสอบ: \"หยุด 3 เดือน\" เป็นกฎของ MTX ไม่ใช่ leflunomide; activated charcoal ใช้ได้แต่ต้องให้ซ้ำ 11 วัน ไม่ใช่ครั้งเดียว; การลดขนาดระหว่างตั้งครรภ์ไม่ปลอดภัย\n\nสรุปท่องสอบ: LEF washout: cholestyramine 8 g TID × 11 วัน → teriflunomide <0.02 mg/L × 2 ครั้ง",
+        "summary": "ภาพ normocytic anemia ที่ serum iron และ TIBC ต่ำ แต่ ferritin สูง (>100 ng/mL) ร่วมกับ CRP สูงและโรค active คือ anemia of chronic disease จาก IL-6–hepcidin การรักษาหลักคือคุม RA ให้สงบ ไม่ใช่ให้เหล็ก",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วย RA ที่โรคยัง active (DAS28-CRP 5.3, CRP 38) มีโลหิตจางระดับปานกลาง โจทย์ให้ iron study ครบชุดและผลตรวจที่ตัดสาเหตุอื่น (B12/folate ปกติ, occult blood ลบ) ให้แยกระหว่าง anemia of chronic disease (ACD), iron deficiency, พิษของ MTX และ hemolysis แล้วเลือกแนวทางจัดการที่ถูก\n\nหลักการ/กลไกเชิงลึก: ในการอักเสบเรื้อรัง IL-6 กระตุ้นตับผ่าน JAK–STAT3 ให้สร้าง hepcidin ซึ่งจับ ferroportin บน enterocyte และ macrophage ทำให้ ferroportin ถูกทำลาย เหล็กจึงถูกกักไว้ในเซลล์ (ferritin สูง) และดูดซึมจากลำไส้น้อย ส่งผลให้ serum iron ต่ำ ร่วมกับ TNF/IL-1/IFN-γ กด erythropoiesis และการตอบสนองต่อ erythropoietin และทำให้อายุเม็ดเลือดแดงสั้นลง ได้ภาพ normocytic (บางครั้ง microcytic เล็กน้อย) reticulocyte ต่ำ transferrin ลดลงเพราะเป็น negative acute-phase protein จึงได้ TIBC ต่ำ ต่างจาก iron deficiency ที่ TIBC สูงและ ferritin ต่ำ\n\nทำไมข้อ B ถูก: ผลตรวจเข้ากับ ACD ทุกข้อ: Hb 9.8 (ระดับปกติของ ACD คือ 9–11), MCV 82, retic ต่ำ, iron ต่ำ, TIBC ต่ำ, ferritin 310 ซึ่งในภาวะอักเสบถ้า >100 ng/mL แทบตัด iron deficiency ได้ และ CRP สูงสะท้อนโรค active การรักษาหลักคือคุมการอักเสบ เมื่อ RA สงบ hepcidin ลดลง Hb จะดีขึ้นเอง\n\nหลักฐานและแนวทางเวชปฏิบัติ: แนวคิดทาง hematology ใช้ ferritin <30 ng/mL ยืนยันขาดเหล็ก แต่ในการอักเสบใช้ <100 ng/mL ร่วมกับ transferrin saturation <20% ช่วงก้ำกึ่ง 30–100 อาจเป็นขาดเหล็กร่วมด้วย ใช้ soluble transferrin receptor/log ferritin index >2 ช่วยแยก การศึกษาของ tocilizumab และ IL-6 inhibitor อื่นแสดงว่า Hb เพิ่มขึ้นชัดเจนจากการลด hepcidin ส่วน erythropoiesis-stimulating agent ไม่ใช่การรักษามาตรฐานใน RA ที่ไตปกติ\n\nการประยุกต์กับผู้ป่วยจริง: ผู้ป่วยใช้ MTX 20 mg มานานแต่ยัง DAS28 >5.1 ไม่ถึงเป้า จึงควรปรับการรักษาตาม treat-to-target เช่น เปลี่ยน MTX เป็น SC หรือเพิ่ม bDMARD/tsDMARD การเพิ่มยาที่ลด IL-6 อาจช่วย Hb ได้ด้วย เภสัชกรไม่ควรจ่ายธาตุเหล็กเสริมโดยไม่มีข้อบ่งชี้ เพราะเหล็กไม่ดูดซึมเมื่อ hepcidin สูงและทำให้ท้องผูก คลื่นไส้ อุจจาระดำ ซึ่งยังบดบังการประเมินเลือดออกด้วย\n\nการติดตามและสัญญาณอันตราย: ติดตาม CBC ทุกครั้งที่ตรวจตามตาราง MTX ถ้า Hb ลดลงเร็ว MCV สูงขึ้น (>100 fL) หรือมี WBC/platelet ต่ำร่วม ให้นึกถึงพิษ MTX หรือขาด folate ทบทวน adherence ของ folic acid และ DDI ถ้า MCV ลดลง ferritin ลดลง หรือมีถ่ายดำ ให้นึกถึงเลือดออกทางเดินอาหารร่วม (โดยเฉพาะผู้ใช้ NSAID/steroid) ถ้า retic สูง LDH/bilirubin สูง ให้ตรวจ hemolysis\n\nจุดที่มักสับสนและกับดักข้อสอบ: serum iron ต่ำไม่ได้แปลว่าขาดเหล็กเสมอ ต้องดู ferritin และ TIBC ประกอบ; MTX ทำให้ macrocytosis (MCV สูง) ไม่ใช่ normocytic และผู้ป่วยได้ folic acid และ folate ปกติ; hemolysis ต้องมี retic สูง; Felty syndrome มี neutropenia + ม้ามโต ไม่ใช่โลหิตจางอย่างเดียว\n\nสรุปท่องสอบ: ACD = iron↓ TIBC↓ ferritin↑ (>100) retic↓ → รักษา RA; IDA = iron↓ TIBC↑ ferritin↓; MTX toxicity = MCV↑ + cytopenia",
         "choices": [
           {
             "label": "A",
-            "text": "หยุด leflunomide แล้วรอ 3 เดือน ก็ตั้งครรภ์ได้โดยไม่ต้องตรวจระดับยา",
-            "explanation": "✗ ผิด — ระดับยาอาจคงอยู่นานถึง 2 ปี หากไม่ washout; 3 เดือนเป็นกฎของ MTX"
+            "text": "Iron deficiency anemia จากเลือดออกในทางเดินอาหาร ควรให้ ferrous sulfate วันละ 3 ครั้ง",
+            "explanation": "✗ ผิด — Iron deficiency จะมี TIBC สูง (transferrin เพิ่ม) และ ferritin ต่ำ (<30 หรือ <100 ng/mL ในภาวะอักเสบ) MCV มักต่ำชัด แต่ผู้ป่วยมี TIBC ต่ำ ferritin 310 และ occult blood ลบ การให้ ferrous sulfate จึงไม่ช่วยเพราะ hepcidin สูงขัดการดูดซึม ข้อนี้จะถูกหากผู้ป่วยใช้ NSAID แล้วถ่ายดำ ferritin ต่ำ และ TIBC สูง"
           },
           {
             "label": "B",
-            "text": "หยุดยาและให้ cholestyramine 8 g วันละ 3 ครั้ง นาน 11 วัน แล้วตรวจระดับ teriflunomide <0.02 mg/L สองครั้งห่างกันอย่างน้อย 14 วัน",
-            "explanation": "✓ ถูก — cholestyramine washout และยืนยันระดับยาตามเกณฑ์"
+            "text": "Anemia of chronic disease (anemia of inflammation) จาก IL-6 กระตุ้น hepcidin ทำให้เหล็กถูกกักในเซลล์ แนวทางหลักคือควบคุม disease activity ของ RA โดยไม่จำเป็นต้องให้เหล็ก",
+            "explanation": "✓ ถูก — Iron ต่ำ TIBC ต่ำ ferritin สูง retic ต่ำ ร่วมกับ CRP สูงและโรค active คือ anemia of inflammation จาก IL-6 → hepcidin → ferroportin ถูกทำลาย เหล็กถูกกักใน macrophage แนวทางหลักคือคุม RA ให้ถึงเป้า (ผู้ป่วยยัง DAS28 >5.1 ต้องปรับยาอยู่แล้ว) เมื่อการอักเสบลดลง Hb จะดีขึ้นเอง ไม่จำเป็นต้องให้เหล็ก"
           },
           {
             "label": "C",
-            "text": "หยุดยาและให้ activated charcoal 50 g ครั้งเดียว",
-            "explanation": "✗ ผิด — charcoal ต้องให้ 50 g ทุก 12 ชั่วโมง นาน 11 วัน ครั้งเดียวไม่พอ"
+            "text": "Megaloblastic anemia จาก methotrexate ต้องหยุด MTX และให้ leucovorin",
+            "explanation": "✗ ผิด — พิษ MTX ต่อการสร้างเม็ดเลือดทำให้เกิด macrocytosis (MCV >100 fL) มักมี mucositis, leukopenia หรือ thrombocytopenia ร่วม และพบใน folate ต่ำหรือ DDI/ไตเสื่อม แต่ผู้ป่วยมี MCV 82 ได้ folic acid และ folate ปกติ ข้อนี้จะถูกหาก MCV สูงขึ้นต่อเนื่องร่วมกับ pancytopenia หลังได้ co-trimoxazole หรือ CrCl ลดลง"
           },
           {
             "label": "D",
-            "text": "ลดขนาด leflunomide เหลือ 10 mg/วัน ระหว่างตั้งครรภ์ก็เพียงพอ",
-            "explanation": "✗ ผิด — leflunomide ห้ามใช้ระหว่างตั้งครรภ์ทุกขนาด"
+            "text": "Autoimmune hemolytic anemia ควรให้ prednisolone 1 mg/kg/วัน",
+            "explanation": "✗ ผิด — Autoimmune hemolytic anemia จะมี reticulocyte สูง LDH และ indirect bilirubin สูง haptoglobin ต่ำ และ direct Coombs test บวก พบใน SLE หรือ lymphoproliferative disease มากกว่า RA ผู้ป่วยรายนี้ retic ต่ำ จึงเป็นภาพของการสร้างลดลงไม่ใช่การทำลาย ข้อนี้จะถูกหากมีตัวเหลือง ปัสสาวะสีเข้ม และ Coombs บวก"
           }
         ],
-        "key_takeaway": "Leflunomide + อยากตั้งครรภ์/ตับอักเสบ → cholestyramine washout"
+        "key_takeaway": "Ferritin สูง + TIBC ต่ำ + CRP สูง = ACD → คุม RA ไม่ใช่ให้เหล็ก; MCV สูง = คิดถึง MTX"
       }
     },
     {
-      "scenario": "ผู้ป่วยชายอายุ 55 ปี เป็น RA ได้ methotrexate 20 mg/สัปดาห์ ครบ 3 เดือน DAS28 ยังอยู่ในระดับ moderate ไม่มี poor prognostic factors และสิทธิการรักษายังไม่ครอบคลุม biologic แพทย์เลือกใช้ \"triple therapy\" ข้อใดคือส่วนประกอบของ triple therapy (O'Dell regimen) ที่ถูกต้อง",
+      "scenario": "ผู้ป่วยชายอายุ 55 ปี เป็น RA ได้ methotrexate 20 mg/สัปดาห์ ครบ 3 เดือน DAS28 ยังอยู่ในระดับ moderate ไม่มี poor prognostic factors และมีข้อจำกัดด้านค่าใช้จ่ายทำให้ยังไม่สามารถใช้ biologic ได้ แพทย์เลือกใช้ \"triple therapy\" ข้อใดคือส่วนประกอบของ triple therapy (O'Dell regimen) ที่ถูกต้อง",
       "choices": [
         {
           "label": "A",
@@ -482,30 +499,30 @@
       ],
       "correct_answer": "C",
       "difficulty": "easy",
-      "explanation": "Triple csDMARD therapy คือ MTX + sulfasalazine + hydroxychloroquine ใช้เป็นทางเลือกเมื่อ MTX เดี่ยวไม่ถึงเป้าหมาย",
+      "explanation": "Triple therapy ตาม O'Dell คือ methotrexate + sulfasalazine + hydroxychloroquine ใช้ได้ผลดีและราคาถูก เหมาะกับผู้ไม่ถึงเป้าด้วย MTX ที่ไม่มี poor prognostic factors",
       "detailed_explanation": {
-        "summary": "Triple csDMARD therapy คือ MTX + sulfasalazine + hydroxychloroquine ใช้เป็นทางเลือกเมื่อ MTX เดี่ยวไม่ถึงเป้าหมาย",
-        "reason": "โจทย์ถามอะไร: ถามองค์ประกอบของ triple therapy ใน RA\n\nหลักการ/กลไกเชิงลึก: การศึกษาของ O'Dell (1996) และ TEAR, RACAT แสดงว่า MTX + SSZ + HCQ ให้ผลดีกว่า MTX เดี่ยว และในผู้ที่ตอบสนองไม่พอต่อ MTX ผลลัพธ์ทางคลินิกใกล้เคียงกับ MTX + etanercept ในหลายตัวชี้วัด โดยราคาถูกกว่ามาก ยาทั้งสามมีกลไกต่างกัน (adenosine, sulfapyridine/5-ASA ต้านการอักเสบ, ยับยั้ง lysosome/TLR signaling) จึงเสริมฤทธิ์กันโดยพิษไม่ซ้อนทับมาก\n\nทำไมข้อ C ถูก: ข้อ C ตรงกับ triple therapy มาตรฐาน\n\nการประยุกต์กับผู้ป่วยจริง: ขนาดทั่วไป: MTX 15–25 mg/สัปดาห์ + SSZ 1 g วันละ 2 ครั้ง (เริ่ม 500 mg/วัน แล้วค่อยเพิ่ม) + HCQ 200–400 mg/วัน (ไม่เกิน 5 mg/kg/วัน) เหมาะกับบริบทไทยที่ biologic มีข้อจำกัดเรื่องสิทธิ เภสัชกรควรติดตาม CBC/LFT และ GI intolerance ของ SSZ\n\nจุดที่มักสับสนและกับดักข้อสอบ: MTX + biologic เป็นอีกกลยุทธ์ ไม่ใช่ \"triple csDMARD\"; prednisolone ไม่นับเป็น DMARD ในสูตรนี้; ไม่ใช้ JAK inhibitor ร่วมกับ biologic/JAK อื่น\n\nสรุปท่องสอบ: Triple therapy = MTX + SSZ + HCQ",
+        "summary": "Triple therapy ตาม O'Dell คือ methotrexate + sulfasalazine + hydroxychloroquine ใช้ได้ผลดีและราคาถูก เหมาะกับผู้ไม่ถึงเป้าด้วย MTX ที่ไม่มี poor prognostic factors",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วยใช้ MTX ขนาดเพียงพอ (20 mg/สัปดาห์) ครบ 3 เดือนแต่ยังไม่ถึงเป้า ไม่มี poor prognostic factors และยังใช้ biologic ไม่ได้ แพทย์จึงเลือก csDMARD combination แบบ \"triple therapy\" โจทย์ถามส่วนประกอบที่ถูกต้องของสูตร O'Dell\n\nหลักการ/กลไกเชิงลึก: ยาทั้งสามออกฤทธิ์ต่างกลไก จึงเสริมกันโดยพิษไม่ซ้อนมาก: MTX เพิ่ม adenosine ต้านอักเสบ; sulfasalazine (SSZ) ถูกแบคทีเรียในลำไส้ใหญ่แยกเป็น sulfapyridine (ส่วนที่ออกฤทธิ์ใน RA ยับยั้ง NF-κB และการทำงานของ leukocyte) และ 5-ASA; hydroxychloroquine (HCQ) เป็น weak base ที่สะสมใน lysosome เพิ่ม pH รบกวนการนำเสนอ antigen และยับยั้ง toll-like receptor 7/9 HCQ ยังอาจลดระดับไขมันและน้ำตาล และเพิ่มระดับ MTX เล็กน้อย\n\nทำไมข้อ C ถูก: O'Dell (NEJM 1996) เปรียบเทียบ MTX + SSZ + HCQ กับ MTX เดี่ยว และ SSZ + HCQ พบว่า triple therapy ได้ผลดีที่สุด (ACR50 ที่ 2 ปีสูงกว่าชัดเจน) จึงเป็นนิยามของ triple therapy\n\nหลักฐานและแนวทางเวชปฏิบัติ: TEAR และ RACAT แสดงว่าการเพิ่ม SSZ + HCQ ในผู้ที่ตอบสนอง MTX ไม่พอ ได้ผลไม่ด้อยกว่า MTX + etanercept ในหลายผลลัพธ์ EULAR 2022 แนะนำว่าเมื่อไม่ถึงเป้าด้วย csDMARD แรกและไม่มี poor prognostic factors ให้เปลี่ยนหรือเพิ่ม csDMARD อื่น ส่วน ACR 2021 แนะนำแบบมีเงื่อนไขให้เพิ่ม b/tsDMARD มากกว่า triple therapy โดยเหตุผลหลักคือผู้ป่วยหยุด triple therapy บ่อยจาก ADR แต่ยอมรับ triple therapy เมื่อมีข้อจำกัดด้านค่าใช้จ่ายหรือความชอบของผู้ป่วย\n\nการประยุกต์กับผู้ป่วยจริง: ตัวอย่าง: คง MTX 20 mg/สัปดาห์ + folic acid; SSZ (enteric-coated) เริ่ม 500 mg วันละ 1–2 ครั้ง เพิ่มทุกสัปดาห์จนถึง 1 g วันละ 2 ครั้ง; HCQ ≤5 mg/kg/วันของน้ำหนักจริง (มัก 200–400 mg/วัน) แจ้งผู้ป่วยว่า SSZ ทำให้ปัสสาวะ/เหงื่อเป็นสีส้มเหลือง ควรรับประทานพร้อมอาหาร ประเมินผลที่ 3 เดือน\n\nการติดตามและสัญญาณอันตราย: SSZ: CBC และ LFT ทุก 2–4 สัปดาห์ใน 3 เดือนแรก (agranulocytosis มักเกิดช่วงนี้), ผื่น/DRESS, oligospermia ที่กลับคืนได้, ตรวจ G6PD ก่อนเริ่ม; HCQ: ตรวจตาพื้นฐานและทุกปีหลัง 5 ปี (เร็วกว่านั้นถ้ามีความเสี่ยง), ระวัง QT prolongation; MTX: CBC/LFT/SCr ตามตาราง\n\nจุดที่มักสับสนและกับดักข้อสอบ: MTX + leflunomide เป็น combination ที่ใช้ได้แต่ไม่ใช่ triple therapy และเพิ่ม hepatotoxicity; การรวม bDMARD (adalimumab) หรือ tsDMARD (tofacitinib) ไม่ใช่ csDMARD triple; prednisolone ไม่ใช่ DMARD ส่วนประกอบของสูตร\n\nสรุปท่องสอบ: Triple therapy = MTX + SSZ + HCQ (O'Dell 1996); ถูก ได้ผล ไม่ด้อยกว่า MTX + TNFi (RACAT); เหมาะเมื่อไม่มี poor prognostic factors หรือมีข้อจำกัดค่าใช้จ่าย",
         "choices": [
           {
             "label": "A",
             "text": "Methotrexate + leflunomide + prednisolone",
-            "explanation": "✗ ผิด — ไม่ใช่สูตร triple therapy และ MTX+LEF เพิ่มความเสี่ยง hepatotoxicity"
+            "explanation": "✗ ผิด — MTX + leflunomide เป็น csDMARD combination ที่มีหลักฐานว่าได้ผล แต่ไม่ใช่ triple therapy ตาม O'Dell และเพิ่มความเสี่ยงพิษต่อตับและไขกระดูกต้องติดตาม LFT ใกล้ชิด ส่วน prednisolone เป็นเพียง bridging ไม่ใช่ DMARD ข้อนี้จะถูกหากโจทย์ถาม combination ทางเลือกในผู้ที่ใช้ SSZ หรือ HCQ ไม่ได้"
           },
           {
             "label": "B",
             "text": "Methotrexate + adalimumab + hydroxychloroquine",
-            "explanation": "✗ ผิด — adalimumab เป็น bDMARD ไม่ใช่ส่วนหนึ่งของ triple csDMARD"
+            "explanation": "✗ ผิด — Adalimumab เป็น bDMARD (TNF inhibitor) ไม่ใช่ csDMARD จึงไม่เข้านิยาม triple therapy และไม่เหมาะกับผู้ป่วยที่มีข้อจำกัดในการใช้ biologic การเพิ่ม TNFi ร่วมกับ MTX จะเหมาะเมื่อผู้ป่วยมี poor prognostic factors หรือล้มเหลวต่อ csDMARD combination และไม่มีข้อจำกัดด้านค่าใช้จ่าย"
           },
           {
             "label": "C",
             "text": "Methotrexate + sulfasalazine + hydroxychloroquine",
-            "explanation": "✓ ถูก — MTX + SSZ + HCQ คือ triple therapy"
+            "explanation": "✓ ถูก — O'Dell regimen คือ MTX + sulfasalazine + hydroxychloroquine ทั้งสามเป็น csDMARD ราคาถูก ออกฤทธิ์ต่างกลไก การศึกษา O'Dell 1996, TEAR และ RACAT สนับสนุนว่าได้ผลดีและไม่ด้อยกว่า MTX + etanercept ในหลายผลลัพธ์ เหมาะกับผู้ป่วยที่ไม่ถึงเป้าด้วย MTX เดี่ยว ไม่มี poor prognostic factors และยังใช้ biologic ไม่ได้"
           },
           {
             "label": "D",
             "text": "Sulfasalazine + leflunomide + tofacitinib",
-            "explanation": "✗ ผิด — ไม่ใช่สูตรมาตรฐาน และ tofacitinib เป็น tsDMARD"
+            "explanation": "✗ ผิด — สูตรนี้ไม่มี MTX ซึ่งเป็น anchor drug และรวม leflunomide กับ tofacitinib (tsDMARD) ที่ทั้งคู่กดภูมิและมีพิษต่อตับ/ไขกระดูก ไม่มีหลักฐานรองรับ tofacitinib มักใช้เดี่ยวหรือร่วมกับ MTX หลังล้มเหลวต่อ csDMARD/TNFi และต้องประเมินความเสี่ยง MACE/VTE ในผู้อายุ ≥50 ปีที่มี CV risk ก่อนใช้"
           }
         ],
         "key_takeaway": "Triple = MTX + SSZ + HCQ (ถูกและได้ผล)"
@@ -533,84 +550,84 @@
       ],
       "correct_answer": "D",
       "difficulty": "easy",
-      "explanation": "Sulfasalazine ถูกแยกเป็น sulfapyridine (sulfonamide) จึงควรหลีกเลี่ยงในผู้แพ้ sulfonamide และเสี่ยงเม็ดเลือดแดงแตกในผู้พร่อง G6PD",
+      "explanation": "Sulfasalazine ถูกแยกเป็น sulfapyridine ซึ่งเป็น sulfonamide ที่มีกลุ่ม arylamine เหมือน sulfamethoxazole และทำให้เม็ดเลือดแดงแตกในผู้พร่อง G6PD จึงควรหลีกเลี่ยงมากที่สุดในผู้ป่วยรายนี้",
       "detailed_explanation": {
-        "summary": "Sulfasalazine ถูกแยกเป็น sulfapyridine (sulfonamide) จึงควรหลีกเลี่ยงในผู้แพ้ sulfonamide และเสี่ยงเม็ดเลือดแดงแตกในผู้พร่อง G6PD",
-        "reason": "โจทย์ถามอะไร: ผู้ป่วยมีทั้ง G6PD deficiency และแพ้ sulfonamide ถาม csDMARD ที่ควรหลีกเลี่ยง\n\nหลักการ/กลไกเชิงลึก: Sulfasalazine เป็น prodrug ถูกแบคทีเรียในลำไส้ใหญ่ตัดพันธะ azo ได้ sulfapyridine (ดูดซึม เป็นส่วนออกฤทธิ์หลักใน RA และเป็นต้นเหตุ ADR ส่วนใหญ่) และ 5-ASA sulfapyridine เป็น sulfonamide จึงมี cross-reactivity กับผู้แพ้ sulfa และเพิ่ม oxidative stress ต่อเม็ดเลือดแดงทำให้เกิด hemolytic anemia ใน G6PD deficiency ADR อื่น: คลื่นไส้, ผื่น, agranulocytosis (ช่วง 3 เดือนแรก), ปัสสาวะ/ผิวสีส้มเหลือง, oligospermia ที่กลับคืนได้, ลดการดูดซึม folate\n\nทำไมข้อ D ถูก: ผู้ป่วยมีข้อห้ามสองข้อพร้อมกัน ข้อ D จึงเป็นคำตอบที่ชัดที่สุด\n\nการประยุกต์กับผู้ป่วยจริง: สำหรับผู้ป่วยไทยซึ่งพบ G6PD deficiency ได้บ่อย ควรสอบถามประวัติหรือตรวจ G6PD ก่อนเริ่ม SSZ ทางเลือกในรายนี้คือ MTX + HCQ หรือ MTX + leflunomide (ติดตาม LFT ใกล้ชิด)\n\nจุดที่มักสับสนและกับดักข้อสอบ: HCQ ฉลากบางแหล่งเตือนเรื่อง G6PD แต่ความเสี่ยงต่ำมากในขนาดรักษา RA และไม่มีโครงสร้าง sulfonamide; leflunomide และ prednisolone ไม่เกี่ยวกับ G6PD\n\nสรุปท่องสอบ: SSZ = sulfa + G6PD hemolysis + ปัสสาวะสีส้ม",
+        "summary": "Sulfasalazine ถูกแยกเป็น sulfapyridine ซึ่งเป็น sulfonamide ที่มีกลุ่ม arylamine เหมือน sulfamethoxazole และทำให้เม็ดเลือดแดงแตกในผู้พร่อง G6PD จึงควรหลีกเลี่ยงมากที่สุดในผู้ป่วยรายนี้",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วย RA ที่ต้องเพิ่ม csDMARD ตัวที่สองร่วมกับ MTX มีปัญหา 2 อย่างพร้อมกัน คือ G6PD deficiency ที่เคยมี hemolysis และเคยแพ้ co-trimoxazole รุนแรง (ผื่นจาก sulfonamide antibiotic) โจทย์ถามว่ายาตัวใดควรหลีกเลี่ยง \"มากที่สุด\" จึงต้องหายาที่ขัดกับทั้งสองปัญหา\n\nหลักการ/กลไกเชิงลึก: Sulfasalazine (SSZ) เป็น prodrug ที่แบคทีเรียในลำไส้ใหญ่ตัด azo bond ได้ sulfapyridine (ดูดซึม ออกฤทธิ์ใน RA และเป็นตัวก่อ ADR ส่วนใหญ่) และ 5-ASA (ออกฤทธิ์เฉพาะที่ในลำไส้) sulfapyridine มีโครงสร้าง N4-arylamine เหมือน sulfamethoxazole ซึ่งถูก CYP2C9 เปลี่ยนเป็น hydroxylamine และ nitroso metabolite ที่ก่อปฏิกิริยาภูมิแพ้ (ผื่น, SJS/TEN, DRESS) และเป็น oxidant ที่ทำลายเม็ดเลือดแดงที่ขาด NADPH/glutathione ในผู้พร่อง G6PD ผู้ที่เป็น slow acetylator (NAT2) จะมีระดับ sulfapyridine สูงและเกิด ADR บ่อยขึ้น\n\nทำไมข้อ D ถูก: SSZ ขัดทั้งสองประเด็น คือมีโอกาส cross-reactivity กับผู้แพ้ sulfonamide antibiotic และเพิ่มความเสี่ยง hemolysis ในผู้พร่อง G6PD จึงเป็นยาที่ควรหลีกเลี่ยงมากที่สุด\n\nหลักฐานและแนวทางเวชปฏิบัติ: ฉลาก sulfasalazine ระบุข้อห้ามในผู้แพ้ sulfonamide หรือ salicylate และเตือนเรื่อง hemolysis ในผู้พร่อง G6PD หลายแนวทางแนะนำตรวจ G6PD ก่อนเริ่ม SSZ โดยเฉพาะในประชากรที่ภาวะนี้พบบ่อย (รวมประเทศไทย) ข้อมูลของ HCQ ในผู้พร่อง G6PD พบ hemolysis น้อยมาก ACR และ AAO ไม่ได้กำหนดให้ตรวจ G6PD ก่อนให้ HCQ เป็นประจำ\n\nการประยุกต์กับผู้ป่วยจริง: ทางเลือกในการเพิ่ม csDMARD สำหรับผู้ป่วยรายนี้คือ HCQ ≤5 mg/kg/วันของน้ำหนักจริง หรือ leflunomide (ระวังพิษตับเมื่อใช้ร่วม MTX) ถ้ายังไม่ถึงเป้าและไม่มีข้อจำกัด อาจพิจารณา bDMARD เภสัชกรควรบันทึกประวัติแพ้ยาแบบระบุอาการ (\"sulfonamide antibiotic: ผื่นรุนแรง\") ลงในระบบ และติดฉลาก G6PD deficiency ในแฟ้มผู้ป่วย\n\nการติดตามและสัญญาณอันตราย: หากผู้ป่วยพร่อง G6PD ได้ยา oxidant โดยไม่ตั้งใจ ให้เฝ้าระวังปัสสาวะสีโค้ก ตัวเหลือง เหนื่อย ซีด และตรวจ Hb, reticulocyte, LDH, bilirubin, peripheral smear (bite cell/Heinz body) สำหรับผู้ที่ใช้ SSZ ทั่วไปต้องติดตาม CBC/LFT ทุก 2–4 สัปดาห์ใน 3 เดือนแรก (agranulocytosis) และหยุดยาทันทีเมื่อมีผื่น ไข้ ต่อมน้ำเหลืองโต\n\nจุดที่มักสับสนและกับดักข้อสอบ: Leflunomide ไม่มีโครงสร้าง sulfonamide และไม่ทำให้ hemolysis จาก G6PD; HCQ มีข้อมูล hemolysis ในผู้พร่อง G6PD น้อยมาก จึงใช้ได้ด้วยความระมัดระวัง; prednisolone ขนาดต่ำระยะสั้นไม่ใช่ DMARD แต่ไม่มีข้อห้ามในสองภาวะนี้; สีปัสสาวะส้มจาก SSZ ไม่ใช่ hemolysis\n\nสรุปท่องสอบ: SSZ → sulfapyridine (sulfonamide) → แพ้ sulfa หรือพร่อง G6PD = เลี่ยง; ทางเลือก = HCQ / LEF",
         "choices": [
           {
             "label": "A",
             "text": "Leflunomide",
-            "explanation": "✗ ผิด — leflunomide ไม่มีโครงสร้าง sulfonamide และไม่ทำให้ hemolysis ใน G6PD"
+            "explanation": "✗ ผิด — Leflunomide ยับยั้ง DHODH ไม่มีโครงสร้าง sulfonamide และไม่เป็น oxidant ที่ทำให้เม็ดเลือดแดงแตกในผู้พร่อง G6PD จึงไม่ใช่ยาที่ต้องหลีกเลี่ยงที่สุด แต่ต้องระวัง hepatotoxicity เมื่อใช้ร่วม MTX และการ washout ก่อนตั้งครรภ์ ข้อนี้จะถูกหากผู้ป่วยมีโรคตับ ดื่มแอลกอฮอล์หนัก หรือวางแผนตั้งครรภ์เร็ว ๆ นี้"
           },
           {
             "label": "B",
             "text": "Hydroxychloroquine (ขนาดไม่เกิน 5 mg/kg/วัน)",
-            "explanation": "✗ ผิด — HCQ ขนาดรักษามีความเสี่ยง hemolysis ต่ำมากและไม่ใช่ sulfa"
+            "explanation": "✗ ผิด — Hydroxychloroquine มีรายงาน hemolysis ในผู้พร่อง G6PD น้อยมาก และไม่ใช่ sulfonamide จึงใช้ได้ภายใต้การติดตาม ถือเป็น csDMARD ที่ปลอดภัยต่อตับและไขกระดูก ข้อนี้จะถูกหากโจทย์ถามยาที่ต้องหลีกเลี่ยงในผู้ที่มี maculopathy เดิม QT prolongation รุนแรง หรือใช้ขนาดเกิน 5 mg/kg/วันในคนน้ำหนักน้อย"
           },
           {
             "label": "C",
             "text": "Prednisolone ขนาดต่ำระยะสั้น",
-            "explanation": "✗ ผิด — glucocorticoid ไม่เกี่ยวข้องกับ G6PD หรือ sulfa allergy"
+            "explanation": "✗ ผิด — Prednisolone ขนาดต่ำระยะสั้นใช้เป็น bridging ได้ ไม่เกี่ยวข้องกับ G6PD หรือการแพ้ sulfonamide แม้ไม่ใช่ DMARD และควร taper ให้หยุดเร็ว ข้อนี้จะถูกหากผู้ป่วยมีเบาหวานควบคุมไม่ได้ กระดูกพรุนรุนแรง หรือติดเชื้อที่ยังไม่ได้รักษา ซึ่งต้องหลีกเลี่ยง glucocorticoid"
           },
           {
             "label": "D",
             "text": "Sulfasalazine",
-            "explanation": "✓ ถูก — SSZ มี sulfapyridine เสี่ยงทั้งแพ้ sulfa และ hemolysis"
+            "explanation": "✓ ถูก — Sulfasalazine ถูกแยกเป็น sulfapyridine ซึ่งเป็น sulfonamide ที่มี arylamine เหมือน sulfamethoxazole จึงเสี่ยง cross-reactivity ในผู้เคยแพ้ co-trimoxazole รุนแรง และ metabolite เป็น oxidant ทำให้ hemolysis ในผู้พร่อง G6PD ผู้ป่วยรายนี้มีทั้งสองปัจจัย จึงควรเลือก HCQ หรือ leflunomide แทน"
           }
         ],
         "key_takeaway": "แพ้ sulfa หรือพร่อง G6PD → เลี่ยง sulfasalazine"
       }
     },
     {
-      "scenario": "ผู้ป่วยหญิงอายุ 45 ปี น้ำหนัก 52 kg เป็น RA จะเริ่ม hydroxychloroquine ร่วมกับ methotrexate ตามคำแนะนำ AAO 2016 เพื่อลดความเสี่ยง retinal toxicity ขนาดยาต่อวันข้อใดเหมาะสมที่สุด",
+      "scenario": "ผู้ป่วยหญิงอายุ 45 ปี เป็น RA ใช้ adalimumab ยาต้นแบบ (originator) 40 mg SC ทุก 2 สัปดาห์ ร่วมกับ MTX อยู่ใน remission มา 1 ปี โรงพยาบาลจะเปลี่ยนเป็น adalimumab biosimilar ผู้ป่วยกังวลว่าเป็น \"ยาเลียนแบบที่ด้อยกว่า\" เภสัชกรควรให้ข้อมูลข้อใดถูกต้องที่สุด",
       "choices": [
         {
           "label": "A",
-          "text": "200 mg วันละครั้ง (≈3.8 mg/kg/วัน)"
+          "text": "Biosimilar คือ biologic ที่คล้ายคลึงสูงกับยาต้นแบบ ผ่านการเปรียบเทียบด้านโครงสร้าง หน้าที่ PK และการศึกษาทางคลินิก โดยไม่มีความแตกต่างทางคลินิกที่มีนัยสำคัญด้านประสิทธิภาพ ความปลอดภัย และ immunogenicity เปลี่ยนได้ที่ขนาดและรอบเดิม และควรบันทึกชื่อการค้า/lot เพื่อติดตามความปลอดภัย"
         },
         {
           "label": "B",
-          "text": "400 mg วันละครั้ง (≈7.7 mg/kg/วัน)"
+          "text": "Biosimilar มีโครงสร้างเหมือนยาต้นแบบทุกประการเช่นเดียวกับยาสามัญ (generic) จึงไม่จำเป็นต้องติดตามความปลอดภัยหรือบันทึกชื่อการค้าหลังเปลี่ยน"
         },
         {
           "label": "C",
-          "text": "200 mg วันละ 3 ครั้ง ในช่วงแรกเพื่อให้ได้ผลเร็ว"
+          "text": "ต้องหยุด adalimumab ต้นแบบ 3 เดือนเพื่อ washout แล้วเริ่ม biosimilar ใหม่ด้วย loading dose 160 mg"
         },
         {
           "label": "D",
-          "text": "ไม่ต้องคำนวณตามน้ำหนัก ใช้ 400 mg/วันได้ทุกคน"
+          "text": "Biosimilar ต้องทำการศึกษา phase III แยกในทุกข้อบ่งใช้ จึงใช้ได้เฉพาะข้อบ่งใช้ที่ศึกษาโดยตรงเท่านั้น"
         }
       ],
       "correct_answer": "A",
       "difficulty": "medium",
-      "explanation": "HCQ ไม่ควรเกิน 5 mg/kg/วัน ตามน้ำหนักจริง: 5 × 52 = 260 mg/วัน ดังนั้น 200 mg/วันเหมาะสม",
+      "explanation": "Biosimilar เป็น biologic ที่ไม่ได้เหมือนยาต้นแบบทุกอะตอม แต่พิสูจน์ด้วย totality of evidence ว่าไม่มีความแตกต่างทางคลินิกที่มีนัยสำคัญ การเปลี่ยนในผู้ป่วยที่คงที่ทำได้ทันทีที่ขนาดเดิม และต้องบันทึกชื่อการค้าเพื่อ pharmacovigilance",
       "detailed_explanation": {
-        "summary": "HCQ ไม่ควรเกิน 5 mg/kg/วัน ตามน้ำหนักจริง: 5 × 52 = 260 mg/วัน ดังนั้น 200 mg/วันเหมาะสม",
-        "reason": "โจทย์ถามอะไร: ให้คำนวณขนาด HCQ สูงสุดตามน้ำหนักเพื่อลดความเสี่ยงจอประสาทตา\n\nหลักการ/กลไกเชิงลึก: ความเสี่ยง HCQ retinopathy สัมพันธ์กับขนาดยาต่อวันต่อน้ำหนักและระยะเวลาใช้ AAO 2016 แนะนำ ≤5 mg/kg/วัน ตาม actual body weight (เดิมใช้ 6.5 mg/kg ideal body weight) คำนวณ: 5 mg/kg × 52 kg = 260 mg/วัน ขนาด 200 mg/วัน = 200/52 ≈ 3.8 mg/kg/วัน อยู่ในเกณฑ์ ส่วน 400 mg/วัน = 7.7 mg/kg/วัน เกินเกณฑ์ ปัจจัยเสี่ยงเพิ่ม: ไตเสื่อม, ใช้ tamoxifen, โรคจอประสาทตาเดิม, ใช้ >5 ปี\n\nทำไมข้อ A ถูก: 200 mg/วัน ไม่เกิน 260 mg/วัน จึงเหมาะสมที่สุด\n\nการประยุกต์กับผู้ป่วยจริง: หากต้องการขนาดเฉลี่ยใกล้ 5 mg/kg อาจใช้ 200 mg สลับ 400 mg บางวันให้ค่าเฉลี่ยรายสัปดาห์ไม่เกินเกณฑ์ (เช่น 1,800 mg/สัปดาห์ ≈ 257 mg/วัน) ควรลดขนาดในไตเสื่อม HCQ ใช้ได้ในการตั้งครรภ์และให้นมบุตร ADR อื่น: GI upset, ผื่น, hypoglycemia, QT prolongation, cardiomyopathy (พบน้อย)\n\nจุดที่มักสับสนและกับดักข้อสอบ: อย่าใช้สูตร 6.5 mg/kg IBW แบบเก่า และอย่ายึดขนาด 400 mg/วันในคนน้ำหนักน้อย; HCQ ไม่มี loading dose ในการรักษา RA\n\nสรุปท่องสอบ: HCQ ≤5 mg/kg/วัน ตามน้ำหนักจริง",
+        "summary": "Biosimilar เป็น biologic ที่ไม่ได้เหมือนยาต้นแบบทุกอะตอม แต่พิสูจน์ด้วย totality of evidence ว่าไม่มีความแตกต่างทางคลินิกที่มีนัยสำคัญ การเปลี่ยนในผู้ป่วยที่คงที่ทำได้ทันทีที่ขนาดเดิม และต้องบันทึกชื่อการค้าเพื่อ pharmacovigilance",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วย RA ที่คุมโรคได้ดีด้วย adalimumab ต้นแบบจะถูกเปลี่ยนเป็น biosimilar (non-medical switch) และกังวลเรื่องคุณภาพ โจทย์ถามความรู้พื้นฐานเรื่องนิยามของ biosimilar วิธีอนุมัติ การเปลี่ยนยา และหน้าที่ของเภสัชกรในการให้ข้อมูล\n\nหลักการ/กลไกเชิงลึก: Biologic เช่น monoclonal antibody ผลิตในเซลล์สิ่งมีชีวิต (เช่น CHO cell) มีโมเลกุลใหญ่ ~150 kDa และมี post-translational modification เช่น glycosylation ที่แปรผันได้เล็กน้อยระหว่าง lot (microheterogeneity) แม้แต่ยาต้นแบบเองก็มีความแปรผันเมื่อเปลี่ยนกระบวนการผลิต ดังนั้น biosimilar จึงไม่สามารถ \"เหมือนทุกประการ\" แบบ generic ของยาโมเลกุลเล็กได้ การอนุมัติใช้หลัก totality of evidence เป็นขั้นบันได: analytical (ลำดับกรดอะมิโนเหมือนกัน, โครงสร้าง, glycan), functional (การจับ TNF, Fc function), PK ในอาสาสมัคร และ comparative clinical trial ในประชากรที่ไวพอ (มักเป็น RA หรือ psoriasis) เพื่อยืนยันว่าไม่มีความต่างทางคลินิก\n\nทำไมข้อ A ถูก: ข้อ A ระบุนิยามถูกต้อง (คล้ายคลึงสูง ไม่ใช่เหมือนทุกประการ) วิธีพิสูจน์ ผลที่ไม่ต่างทางคลินิก การเปลี่ยนที่ขนาด/รอบเดิมโดยไม่ต้อง washout และการบันทึกชื่อการค้า/lot ซึ่งเป็นหัวใจของ pharmacovigilance\n\nหลักฐานและแนวทางเวชปฏิบัติ: NOR-SWITCH (infliximab CT-P13) พบว่าการเปลี่ยนจากยาต้นแบบไม่ด้อยกว่าการใช้ต่อ VOLTAIRE-X ศึกษาการสลับไปมาหลายครั้งระหว่าง adalimumab ต้นแบบและ biosimilar โดยไม่พบความต่างของ PK, ประสิทธิภาพ หรือ immunogenicity และ EGALITY แสดงผลคล้ายกันสำหรับ etanercept EULAR points to consider (2017) ระบุว่า biosimilar ที่ได้รับอนุมัติไม่ดีกว่าหรือด้อยกว่ายาต้นแบบ การเปลี่ยนยอมรับได้ และอนุญาต extrapolation ข้อบ่งใช้ เมื่อกลไกออกฤทธิ์เดียวกันและมีเหตุผลทางวิทยาศาสตร์\n\nการประยุกต์กับผู้ป่วยจริง: แจ้งผู้ป่วยว่าใช้ขนาด 40 mg ทุก 2 สัปดาห์เหมือนเดิม ฉีดเข็มแรกในวันที่ครบรอบ ไม่ต้อง loading สอนการใช้ปากกาหรือเข็มฉีดยาใหม่เพราะอุปกรณ์อาจต่างกัน (บางผลิตภัณฑ์เป็นสูตรไม่มี citrate ทำให้เจ็บน้อยกว่า) แจ้งว่าการเปลี่ยนตัดสินใจร่วมกันระหว่างแพทย์ เภสัชกร และผู้ป่วย การสื่อสารเชิงบวกช่วยลด nocebo effect ที่พบว่าทำให้ผู้ป่วยรายงานอาการแย่ลงหรือขอกลับไปใช้ยาเดิม\n\nการติดตามและสัญญาณอันตราย: ประเมิน disease activity ที่ 3 เดือนหลังเปลี่ยน บันทึกชื่อการค้าและ lot ในเวชระเบียน และรายงาน ADR โดยระบุชื่อการค้า (biologic ต่างผู้ผลิตใช้ชื่อสามัญเดียวกัน หากไม่ระบุจะติดตามไม่ได้) ถ้าโรคกำเริบจริงให้ตรวจ adherence และวิธีฉีดก่อน และอาจตรวจ drug level/anti-drug antibody ถ้ามีบริการ\n\nจุดที่มักสับสนและกับดักข้อสอบ: biosimilar ≠ generic (ยาโมเลกุลเล็กเหมือนทุกประการ); ไม่ต้อง washout หรือ re-load; extrapolation อนุญาตได้โดยไม่ต้องทำ phase III ทุกข้อบ่งใช้; \"interchangeable\" เป็นสถานะทางกฎหมายของ US FDA ที่อนุญาตให้เปลี่ยนที่ร้านยาโดยไม่ต้องถามแพทย์ ไม่ได้แปลว่ายาอื่นด้อยกว่า\n\nสรุปท่องสอบ: Biosimilar = highly similar, no clinically meaningful difference; พิสูจน์ด้วย totality of evidence; switch ได้ที่ขนาดเดิม ไม่ washout; extrapolation ได้; บันทึกชื่อการค้า/lot เสมอ",
         "choices": [
           {
             "label": "A",
-            "text": "200 mg วันละครั้ง (≈3.8 mg/kg/วัน)",
-            "explanation": "✓ ถูก — 3.8 mg/kg/วัน ไม่เกิน 5 mg/kg/วัน"
+            "text": "Biosimilar คือ biologic ที่คล้ายคลึงสูงกับยาต้นแบบ ผ่านการเปรียบเทียบด้านโครงสร้าง หน้าที่ PK และการศึกษาทางคลินิก โดยไม่มีความแตกต่างทางคลินิกที่มีนัยสำคัญด้านประสิทธิภาพ ความปลอดภัย และ immunogenicity เปลี่ยนได้ที่ขนาดและรอบเดิม และควรบันทึกชื่อการค้า/lot เพื่อติดตามความปลอดภัย",
+            "explanation": "✓ ถูก — นิยามตรงตาม WHO/EMA/FDA คือคล้ายคลึงสูงโดยไม่มีความแตกต่างทางคลินิกที่มีนัยสำคัญ พิสูจน์ด้วย analytical, functional, PK และ clinical comparison หลักฐานจาก NOR-SWITCH, VOLTAIRE-X และ EGALITY สนับสนุนการเปลี่ยนในผู้ป่วยที่คงที่ ใช้ขนาดและรอบเดิมได้ทันที และต้องบันทึกชื่อการค้า/lot เพื่อให้รายงาน ADR ย้อนรอยได้"
           },
           {
             "label": "B",
-            "text": "400 mg วันละครั้ง (≈7.7 mg/kg/วัน)",
-            "explanation": "✗ ผิด — 7.7 mg/kg/วัน เกินเกณฑ์ เพิ่มความเสี่ยง retinopathy"
+            "text": "Biosimilar มีโครงสร้างเหมือนยาต้นแบบทุกประการเช่นเดียวกับยาสามัญ (generic) จึงไม่จำเป็นต้องติดตามความปลอดภัยหรือบันทึกชื่อการค้าหลังเปลี่ยน",
+            "explanation": "✗ ผิด — biologic ผลิตในเซลล์สิ่งมีชีวิต มี glycosylation และ microheterogeneity จึงเหมือนทุกประการไม่ได้ ต่างจาก generic ของยาโมเลกุลเล็กที่สังเคราะห์ทางเคมีได้เหมือนกันทุกอะตอมและพิสูจน์ด้วย bioequivalence อย่างเดียว ข้อนี้จะใกล้ถูกหากเป็นยาเม็ดโมเลกุลเล็ก เช่น generic methotrexate แต่ biologic ทุกตัวต้องมี pharmacovigilance ที่ระบุชื่อการค้า"
           },
           {
             "label": "C",
-            "text": "200 mg วันละ 3 ครั้ง ในช่วงแรกเพื่อให้ได้ผลเร็ว",
-            "explanation": "✗ ผิด — 600 mg/วัน สูงเกินมากและไม่มีหลักฐานว่าช่วยให้ออกฤทธิ์เร็วใน RA"
+            "text": "ต้องหยุด adalimumab ต้นแบบ 3 เดือนเพื่อ washout แล้วเริ่ม biosimilar ใหม่ด้วย loading dose 160 mg",
+            "explanation": "✗ ผิด — ไม่ต้อง washout เพราะเป็นโมเลกุลเป้าหมายเดียวกันและขนาดเท่ากัน การหยุดยา 3 เดือนเสี่ยงโรคกำเริบ และ loading 160 mg ใช้เฉพาะการเริ่ม adalimumab ใน Crohn's disease/ulcerative colitis หรือ hidradenitis suppurativa ไม่ใช่ RA การเว้นช่วงยาจะเกี่ยวข้องเมื่อเปลี่ยนไปยาต่างกลไกบางกรณี เช่น จาก leflunomide ก่อนตั้งครรภ์"
           },
           {
             "label": "D",
-            "text": "ไม่ต้องคำนวณตามน้ำหนัก ใช้ 400 mg/วันได้ทุกคน",
-            "explanation": "✗ ผิด — ต้องคำนวณตามน้ำหนักจริงเสมอ"
+            "text": "Biosimilar ต้องทำการศึกษา phase III แยกในทุกข้อบ่งใช้ จึงใช้ได้เฉพาะข้อบ่งใช้ที่ศึกษาโดยตรงเท่านั้น",
+            "explanation": "✗ ผิด — หน่วยงานกำกับยาอนุญาต extrapolation ข้อบ่งใช้ เมื่อกลไกออกฤทธิ์และ receptor เป็นชนิดเดียวกันและมีข้อมูลเปรียบเทียบในประชากรที่ไวพอ จึงไม่ต้องทำ phase III ซ้ำทุกข้อบ่งใช้ ข้อนี้สะท้อนแนวคิดของการพัฒนายาใหม่ (originator) ที่ต้องพิสูจน์ประสิทธิภาพแยกในแต่ละข้อบ่งใช้"
           }
         ],
-        "key_takeaway": "HCQ: น้ำหนัก × 5 = ขนาดสูงสุดต่อวัน"
+        "key_takeaway": "Biosimilar ≠ generic: คล้ายสูง ไม่ต่างทางคลินิก เปลี่ยนได้ที่ขนาดเดิม บันทึกชื่อการค้าเสมอ"
       }
     },
     {
@@ -635,30 +652,30 @@
       ],
       "correct_answer": "C",
       "difficulty": "medium",
-      "explanation": "EULAR แนะนำ glucocorticoid ระยะสั้นเป็น bridge ขณะรอ csDMARD ออกฤทธิ์ แล้ว taper และหยุดให้เร็วที่สุด (ส่วนใหญ่ภายใน 3 เดือน)",
+      "explanation": "EULAR แนะนำ glucocorticoid ขนาดต่ำระยะสั้นเป็น bridge ขณะรอ csDMARD ออกฤทธิ์ แล้ว taper และหยุดให้เร็วที่สุดเท่าที่ทำได้ทางคลินิก (โดยทั่วไปภายใน 3 เดือน)",
       "detailed_explanation": {
-        "summary": "EULAR แนะนำ glucocorticoid ระยะสั้นเป็น bridge ขณะรอ csDMARD ออกฤทธิ์ แล้ว taper และหยุดให้เร็วที่สุด (ส่วนใหญ่ภายใน 3 เดือน)",
-        "reason": "โจทย์ถามอะไร: ถามการใช้ glucocorticoid เป็น bridging ช่วงเริ่ม csDMARD\n\nหลักการ/กลไกเชิงลึก: MTX ใช้เวลา 6–12 สัปดาห์กว่าจะออกฤทธิ์เต็มที่ glucocorticoid ออกฤทธิ์เร็วผ่านการยับยั้ง NF-κB และ AP-1 ลด cytokine และยังมีหลักฐานว่าช่วยชะลอ radiographic progression ช่วงต้น แต่การใช้ระยะยาวเพิ่มความเสี่ยงกระดูกพรุน ติดเชื้อ เบาหวาน ต้อกระจก โรคหัวใจและหลอดเลือด EULAR 2022 จึงให้ใช้ระยะสั้นแล้ว taper ให้เร็ว (ส่วน ACR 2021 ยิ่งเข้มงวดกว่า โดยไม่แนะนำให้ใช้เป็นประจำ)\n\nทำไมข้อ C ถูก: ข้อ C ใช้ขนาดต่ำ ระยะสั้น และมีแผน taper ชัดเจนร่วมกับ DMARD\n\nการประยุกต์กับผู้ป่วยจริง: ตัวอย่าง: prednisolone 10 mg/วัน 4 สัปดาห์ แล้วลดลง 2.5 mg ทุก 2–4 สัปดาห์จนหยุด หรือฉีด methylprednisolone IM/ intra-articular เฉพาะข้อ ควรให้ calcium + vitamin D และประเมินความเสี่ยงกระดูกพรุนถ้าคาดว่าใช้ ≥3 เดือน\n\nจุดที่มักสับสนและกับดักข้อสอบ: Glucocorticoid ไม่ใช่ DMARD ที่ใช้เดี่ยว; ขนาดต่ำต่อเนื่องระยะยาวไม่ใช่เป้าหมาย; NSAID สองชนิดร่วมกันเพิ่มพิษโดยไม่เพิ่มประสิทธิภาพ\n\nสรุปท่องสอบ: GC bridging: ต่ำ – สั้น – taper ให้หยุดภายใน ~3 เดือน",
+        "summary": "EULAR แนะนำ glucocorticoid ขนาดต่ำระยะสั้นเป็น bridge ขณะรอ csDMARD ออกฤทธิ์ แล้ว taper และหยุดให้เร็วที่สุดเท่าที่ทำได้ทางคลินิก (โดยทั่วไปภายใน 3 เดือน)",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วย RA รายใหม่ที่ disease activity สูง (DAS28 5.8) ทำงานไม่ได้ แพทย์เริ่ม MTX ซึ่งออกฤทธิ์ช้า และต้องการ glucocorticoid (GC) เป็นตัวเชื่อม (bridging) โจทย์ถามขนาด ระยะเวลา และวิธีหยุดที่สอดคล้องกับ EULAR\n\nหลักการ/กลไกเชิงลึก: MTX ใช้เวลา 6–12 สัปดาห์กว่าจะได้ผลเต็มที่ GC ออกฤทธิ์ภายในวันผ่าน glucocorticoid receptor ทั้ง transrepression (ยับยั้ง NF-κB และ AP-1 ลด TNF, IL-1, IL-6, COX-2) และ transactivation (เพิ่ม annexin-1, IκB) จึงลดอาการได้เร็ว และมีหลักฐานว่าชะลอ radiographic progression ช่วงต้น แต่ผลไม่พึงประสงค์ขึ้นกับขนาดและระยะเวลา ได้แก่ กระดูกพรุน (ลดการสร้างกระดูกโดยยับยั้ง osteoblast), ติดเชื้อ, เบาหวาน, ความดันสูง, ต้อกระจก/ต้อหิน, adrenal suppression และ CV event\n\nทำไมข้อ C ถูก: ข้อ C ใช้ GC ขนาดต่ำ ร่วมกับ MTX (มี DMARD เป็นหลัก) และมีแผน taper ให้หยุดเร็วที่สุด ภายใน ~3 เดือน ตรงกับหลัก bridging\n\nหลักฐานและแนวทางเวชปฏิบัติ: EULAR 2022 แนะนำให้พิจารณา GC ระยะสั้นเมื่อเริ่มหรือเปลี่ยน csDMARD ในขนาดและวิธีให้ต่าง ๆ และให้ลดและหยุดเร็วที่สุดเท่าที่ทำได้ทางคลินิก การศึกษา COBRA, CAMERA-II และ CareRA สนับสนุนประโยชน์ระยะต้น ส่วน ACR 2021 เข้มงวดกว่า โดยแนะนำแบบมีเงื่อนไข \"ไม่ให้\" ใช้ GC เป็นประจำเมื่อเริ่ม csDMARD และหากจำเป็นให้ใช้ขนาดต่ำสุดในระยะสั้นที่สุด ทั้งสองแนวทางจึงตรงกันว่า GC ระยะยาวไม่ใช่เป้าหมาย\n\nการประยุกต์กับผู้ป่วยจริง: ตัวอย่าง: prednisolone 7.5–10 mg ทุกเช้าหลังอาหาร 2–4 สัปดาห์ แล้วลดครั้งละ 2.5 mg ทุก 1–2 สัปดาห์จนหยุดภายใน 8–12 สัปดาห์ หรือใช้ methylprednisolone IM/intra-articular เฉพาะข้อ แนะนำรับประทานตอนเช้าตามจังหวะ cortisol ให้ calcium + vitamin D ประเมินความเสี่ยงกระดูกพรุนถ้าคาดว่าใช้ ≥3 เดือน และไม่หยุดยาเองทันทีเมื่อใช้เกิน 3 สัปดาห์\n\nการติดตามและสัญญาณอันตราย: ติดตามน้ำตาลในเลือด (โดยเฉพาะช่วงบ่าย) ความดันโลหิต น้ำหนัก อารมณ์ การนอนหลับ และอาการติดเชื้อ ระหว่าง taper ถ้ามีอ่อนเพลียมาก ความดันต่ำ คลื่นไส้ อาจเป็น adrenal insufficiency หรือโรคกำเริบ ถ้าลดยาไม่ได้เพราะโรคกำเริบ แปลว่า DMARD ยังไม่พอ ต้องปรับ DMARD ไม่ใช่คง GC ไว้\n\nจุดที่มักสับสนและกับดักข้อสอบ: GC ไม่ใช่ DMARD เดี่ยวที่ใช้แทน MTX; prednisolone 5 mg ต่อเนื่องตลอดชีวิตไม่ใช่เป้าหมาย (แม้บางรายลดไม่ได้จริงก็ต้องพยายามใช้ขนาดต่ำสุด); การใช้ NSAID สองชนิดร่วมกันเพิ่มพิษโดยไม่เพิ่มประสิทธิภาพ\n\nสรุปท่องสอบ: GC bridging: ขนาดต่ำ – ระยะสั้น – คู่กับ DMARD – taper ให้หยุดภายใน ~3 เดือน; ลดไม่ได้ = ปรับ DMARD",
         "choices": [
           {
             "label": "A",
             "text": "Prednisolone 30 mg/วัน ต่อเนื่องเป็น monotherapy โดยไม่ต้องใช้ DMARD",
-            "explanation": "✗ ผิด — ขนาดสูงระยะยาวโดยไม่มี DMARD ไม่ชะลอโรคและมีพิษมาก"
+            "explanation": "✗ ผิด — prednisolone 30 mg/วันต่อเนื่องโดยไม่มี DMARD ไม่ชะลอการทำลายข้อในระยะยาว และสะสมพิษมาก ทั้งกระดูกพรุน ติดเชื้อ เบาหวาน ขนาดสูงเช่นนี้จะเหมาะกับภาวะ extra-articular ที่รุนแรงระยะสั้น เช่น rheumatoid vasculitis หรือในโรคอื่นอย่าง PMR/GCA ซึ่งต้องมีแผนลดขนาดและมักให้ร่วมกับยาประหยัด steroid"
           },
           {
             "label": "B",
             "text": "Prednisolone 5 mg/วัน ต่อเนื่องตลอดชีวิตเพื่อป้องกันการกำเริบ",
-            "explanation": "✗ ผิด — ไม่แนะนำให้ใช้ต่อเนื่องระยะยาว ควรหยุดเมื่อ DMARD ออกฤทธิ์"
+            "explanation": "✗ ผิด — การใช้ prednisolone 5 mg/วันตลอดชีวิตเพื่อป้องกันกำเริบไม่ใช่กลยุทธ์ที่แนะนำ แม้ขนาดต่ำก็สัมพันธ์กับกระดูกพรุน ติดเชื้อ และ CV event เมื่อใช้นาน ควรคุมโรคด้วย DMARD และ taper GC ออก ข้อนี้อาจยอมรับได้เฉพาะผู้ป่วยบางรายที่พยายามลดแล้วไม่สำเร็จจริง โดยใช้ขนาดต่ำสุดและป้องกันกระดูกพรุนร่วม"
           },
           {
             "label": "C",
             "text": "Prednisolone ขนาดต่ำ (เช่น ≤10 mg/วัน) ระยะสั้นร่วมกับ MTX แล้วลดขนาดและหยุดให้เร็วที่สุดเท่าที่ทำได้ทางคลินิก (โดยทั่วไปภายใน 3 เดือน)",
-            "explanation": "✓ ถูก — ตรงตามหลัก bridging ของ EULAR"
+            "explanation": "✓ ถูก — ตรงตามหลัก bridging ของ EULAR 2022: GC ขนาดต่ำ (เช่น prednisolone ≤10 mg/วัน) ระยะสั้นร่วมกับ MTX เพื่อคุมอาการระหว่างรอ MTX ออกฤทธิ์ แล้วลดขนาดและหยุดให้เร็วที่สุด โดยทั่วไปภายใน 3 เดือน พร้อมให้ calcium/vitamin D และติดตามน้ำตาล ความดัน ส่วน ACR 2021 เข้มงวดกว่าแต่ยอมให้ใช้ขนาดต่ำสุดระยะสั้นที่สุด"
           },
           {
             "label": "D",
             "text": "หลีกเลี่ยง glucocorticoid ทุกรูปแบบและใช้ NSAID 2 ชนิดร่วมกันแทน",
-            "explanation": "✗ ผิด — ห้ามใช้ NSAID สองชนิดร่วมกัน และ NSAID ไม่ใช่ bridge ที่ชะลอโรค"
+            "explanation": "✗ ผิด — การใช้ NSAID สองชนิดร่วมกันห้ามทำ เพราะเพิ่มพิษต่อทางเดินอาหาร ไต และหัวใจ โดยไม่เพิ่มประสิทธิภาพ และ NSAID ไม่ชะลอการทำลายข้อ การหลีกเลี่ยง GC ทุกรูปแบบจะเหมาะเมื่อผู้ป่วยมีข้อห้ามชัดเจน เช่น เบาหวานคุมไม่ได้ ติดเชื้อรุนแรง หรือกระดูกพรุนหักซ้ำ ซึ่งยังใช้ NSAID ชนิดเดียวขนาดต่ำสุดได้"
           }
         ],
         "key_takeaway": "Steroid ใน RA = สะพานชั่วคราว ไม่ใช่บ้านถาวร"
@@ -686,30 +703,30 @@
       ],
       "correct_answer": "D",
       "difficulty": "medium",
-      "explanation": "TNF inhibitor (เช่น infliximab) ควรหลีกเลี่ยงใน heart failure NYHA III–IV เพราะการศึกษา ATTACH พบว่า infliximab ขนาดสูงเพิ่มการเสียชีวิตและการนอนโรงพยาบาลจาก HF",
+      "explanation": "TNF inhibitor (โดยเฉพาะ infliximab ขนาดสูง) ทำให้ heart failure แย่ลงในผู้ป่วย NYHA III–IV ACR 2021 แนะนำให้ใช้ non-TNF bDMARD หรือ tsDMARD แทน",
       "detailed_explanation": {
-        "summary": "TNF inhibitor (เช่น infliximab) ควรหลีกเลี่ยงใน heart failure NYHA III–IV เพราะการศึกษา ATTACH พบว่า infliximab ขนาดสูงเพิ่มการเสียชีวิตและการนอนโรงพยาบาลจาก HF",
-        "reason": "โจทย์ถามอะไร: ผู้ป่วย RA ที่มี HFrEF NYHA III ถามว่า biologic ใดควรหลีกเลี่ยง\n\nหลักการ/กลไกเชิงลึก: TNF-α มีบทบาทซับซ้อนต่อกล้ามเนื้อหัวใจ การศึกษา ATTACH (infliximab) และ RENEWAL (etanercept) ในผู้ป่วย HF พบว่าไม่มีประโยชน์ และ infliximab 10 mg/kg เพิ่ม mortality/hospitalization ฉลากยาจึงห้ามใช้ infliximab >5 mg/kg ใน HF ปานกลาง-รุนแรง และ ACR 2021 แนะนำให้เลือก non-TNF biologic หรือ JAK แทน TNFi ในผู้ป่วย NYHA III–IV\n\nทำไมข้อ D ถูก: Infliximab เป็น TNF inhibitor จึงเป็นยาที่ควรหลีกเลี่ยงที่สุดในรายนี้\n\nการประยุกต์กับผู้ป่วยจริง: ทางเลือก: abatacept, rituximab หรือ tocilizumab ร่วมกับ MTX เภสัชกรควรคัดกรองโรคร่วมก่อนเริ่ม anti-TNF: HF NYHA III–IV, demyelinating disease (MS, optic neuritis), ประวัติมะเร็งบางชนิด, ติดเชื้อรุนแรง และ latent TB/HBV\n\nจุดที่มักสับสนและกับดักข้อสอบ: Tocilizumab เพิ่ม LDL แต่ไม่ได้มีข้อห้ามใน HF; rituximab ระวัง infusion reaction ในโรคหัวใจแต่ไม่ใช่ข้อห้าม ข้อห้ามที่จำเพาะต่อกลุ่ม anti-TNF คือ HF รุนแรงและ demyelinating disease\n\nสรุปท่องสอบ: Anti-TNF ห้าม: HF NYHA III–IV, MS/demyelinating",
+        "summary": "TNF inhibitor (โดยเฉพาะ infliximab ขนาดสูง) ทำให้ heart failure แย่ลงในผู้ป่วย NYHA III–IV ACR 2021 แนะนำให้ใช้ non-TNF bDMARD หรือ tsDMARD แทน",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วย RA ตอบสนองต่อ MTX ไม่พอและต้องเพิ่ม bDMARD แต่มีโรคร่วมคือ HFrEF (LVEF 30%) NYHA class III โจทย์ถามว่า bDMARD ตัวใด \"ควรหลีกเลี่ยง\" มากที่สุด ซึ่งต้องรู้ข้อควรระวังเฉพาะกลุ่มยาต่อโรคหัวใจ\n\nหลักการ/กลไกเชิงลึก: TNF-α มีบทบาทสองด้านในหัวใจ ระดับสูงทำให้กล้ามเนื้อหัวใจบีบตัวลดและ remodeling แต่ TNF ระดับต่ำผ่าน TNFR2 มีบทบาทปกป้อง cardiomyocyte จากภาวะเครียด แนวคิดเดิมคาดว่าการยับยั้ง TNF จะช่วย HF แต่การศึกษาจริงพบผลตรงข้าม เพราะยาตัดทั้งผลเสียและผลปกป้อง ทำให้หัวใจแย่ลงในผู้ที่มี HF อยู่เดิม ผลนี้ถือเป็น class effect ของ TNFi และเด่นที่สุดกับ infliximab ขนาดสูง\n\nทำไมข้อ D ถูก: Infliximab เป็น TNFi ที่มีหลักฐานชัดที่สุดว่าเพิ่มการเสียชีวิตและการนอนโรงพยาบาลจาก HF ในผู้ป่วย NYHA III–IV และฉลากระบุว่าห้ามใช้ขนาด >5 mg/kg ในผู้ป่วย HF ปานกลางถึงรุนแรง จึงเป็นยาที่ควรหลีกเลี่ยงมากที่สุดในตัวเลือก\n\nหลักฐานและแนวทางเวชปฏิบัติ: ATTACH (infliximab ใน HF NYHA III–IV) พบกลุ่ม 10 mg/kg มีการเสียชีวิตและนอนโรงพยาบาลจาก HF มากกว่ายาหลอก RENEWAL (etanercept) ยุติก่อนกำหนดเพราะไม่มีประโยชน์และมีแนวโน้มแย่ลง ACR 2021 แนะนำแบบมีเงื่อนไขให้ใช้ non-TNFi bDMARD หรือ tsDMARD แทน TNFi ในผู้ป่วย RA ที่มี HF NYHA III–IV และให้เปลี่ยนยาถ้า HF แย่ลงระหว่างใช้ TNFi\n\nการประยุกต์กับผู้ป่วยจริง: ทางเลือกในผู้ป่วยรายนี้ ได้แก่ abatacept, rituximab หรือ tocilizumab/sarilumab ร่วมกับ MTX โดยเลือกตามปัจจัยอื่น (ประวัติติดเชื้อ, serostatus, ไขมัน) ถ้าเลือก IV ให้ระวังปริมาณสารน้ำในผู้ป่วย HF เภสัชกรควรทบทวนยาที่ทำให้ HF แย่ลง เช่น NSAID และ thiazolidinedione และตรวจสอบว่ายา HF (ARNI/ACEI, beta-blocker, MRA, SGLT2i) ได้ครบ\n\nการติดตามและสัญญาณอันตราย: ติดตามน้ำหนักตัวรายวัน บวม หอบเหนื่อย นอนราบไม่ได้ หากผู้ป่วยที่ใช้ TNFi อยู่มีอาการ HF ใหม่หรือแย่ลงต้องหยุด TNFi และประเมินหัวใจ ผู้ใช้ tocilizumab ให้ติดตาม lipid ที่ 4–8 สัปดาห์ และผู้ใช้ JAK inhibitor ต้องประเมิน CV risk ก่อน\n\nจุดที่มักสับสนและกับดักข้อสอบ: แม้ทุก TNFi มีคำเตือนเดียวกัน ในข้อสอบที่มี TNFi เพียงตัวเดียวในตัวเลือก ให้เลือกตัวนั้น; abatacept, rituximab, tocilizumab ไม่มีหลักฐานว่าทำให้ HF แย่ลง; การที่ tocilizumab เพิ่ม LDL ไม่ได้ทำให้เป็นข้อห้ามใน HF; HF NYHA I–II ยังใช้ TNFi ได้ด้วยความระมัดระวัง\n\nสรุปท่องสอบ: HF NYHA III–IV + RA → หลีกเลี่ยง TNFi (infliximab >5 mg/kg ห้าม) → ใช้ abatacept / rituximab / IL-6R inhibitor",
         "choices": [
           {
             "label": "A",
             "text": "Abatacept",
-            "explanation": "✗ ผิด — abatacept ไม่มีข้อห้ามใน HF เป็นทางเลือกที่เหมาะสม"
+            "explanation": "✗ ผิด — Abatacept (CTLA4-Ig) ไม่มีหลักฐานว่าทำให้ HF แย่ลง จึงเป็นทางเลือกที่เหมาะในผู้ป่วยรายนี้ และมีอัตราติดเชื้อรุนแรงค่อนข้างต่ำ ข้อนี้จะเป็นตัวเลือกที่ควรระวังหากผู้ป่วยมี COPD รุนแรง ซึ่งการศึกษาพบ respiratory AE มากขึ้น หรือถ้าโจทย์ถามยาที่ห้ามใช้ร่วมกับ TNFi"
           },
           {
             "label": "B",
             "text": "Rituximab",
-            "explanation": "✗ ผิด — rituximab ใช้ได้ (ระวัง infusion reaction) ไม่มีข้อห้ามจำเพาะใน HF"
+            "explanation": "✗ ผิด — Rituximab ใช้ได้ในผู้ป่วย HF และเป็นทางเลือกหลัง MTX/TNFi ล้มเหลว โดยเฉพาะ seropositive RA แม้ฉลากเตือนเรื่อง cardiac arrhythmia/angina ระหว่างหยดในผู้มีโรคหัวใจ ซึ่งต้องเฝ้าระวัง ข้อนี้จะเป็นยาที่ควรหลีกเลี่ยงหาก HBsAg บวกโดยไม่ได้ prophylaxis หรือมี hypogammaglobulinemia รุนแรง"
           },
           {
             "label": "C",
             "text": "Tocilizumab",
-            "explanation": "✗ ผิด — tocilizumab ต้องติดตามไขมัน แต่ไม่ห้ามใน HF"
+            "explanation": "✗ ผิด — Tocilizumab ไม่ได้มีข้อห้ามใน HF และเป็น non-TNF bDMARD ที่ ACR สนับสนุนในกรณีนี้ แม้เพิ่ม LDL/TG แต่การศึกษา ENTRACTE ไม่พบ MACE เพิ่มขึ้นเมื่อเทียบกับ etanercept ข้อนี้จะเป็นยาที่ควรหลีกเลี่ยงหากผู้ป่วยมี diverticulitis หรือประวัติลำไส้ทะลุ เพราะเสี่ยง GI perforation"
           },
           {
             "label": "D",
             "text": "Infliximab",
-            "explanation": "✓ ถูก — infliximab (anti-TNF) เพิ่มความเสี่ยง HF แย่ลงใน NYHA III–IV"
+            "explanation": "✓ ถูก — Infliximab เป็น TNFi ที่มีหลักฐานจาก ATTACH ว่าเพิ่มการเสียชีวิต/นอนโรงพยาบาลจาก HF ในผู้ป่วย NYHA III–IV โดยเฉพาะขนาด 10 mg/kg และฉลากห้ามใช้ขนาด >5 mg/kg ใน HF ปานกลางถึงรุนแรง ACR 2021 แนะนำ non-TNFi bDMARD หรือ tsDMARD แทน TNFi ในผู้ป่วยกลุ่มนี้"
           }
         ],
         "key_takeaway": "HF รุนแรง + RA → เลือก non-TNF biologic"
@@ -737,33 +754,33 @@
       ],
       "correct_answer": "A",
       "difficulty": "medium",
-      "explanation": "IGRA บวก + CXR ปกติ + ไม่มีอาการ = latent TB ต้องรักษา LTBI (เช่น INH 9 เดือน) และเริ่ม anti-TNF ได้หลังรักษาไปอย่างน้อย 1 เดือน",
+      "explanation": "IGRA บวก CXR ปกติ ไม่มีอาการ = latent TB ต้องรักษา LTBI (เช่น isoniazid 9 เดือน + vitamin B6 หรือสูตรสั้นที่มี rifamycin) และเริ่ม adalimumab หลังรักษา LTBI ไปแล้วอย่างน้อย 1 เดือน",
       "detailed_explanation": {
-        "summary": "IGRA บวก + CXR ปกติ + ไม่มีอาการ = latent TB ต้องรักษา LTBI (เช่น INH 9 เดือน) และเริ่ม anti-TNF ได้หลังรักษาไปอย่างน้อย 1 เดือน",
-        "reason": "โจทย์ถามอะไร: ผลคัดกรองชี้ latent TB ก่อนเริ่ม anti-TNF ถามการจัดการ\n\nหลักการ/กลไกเชิงลึก: TNF-α สำคัญต่อการคงสภาพ granuloma ที่กักเชื้อ M. tuberculosis การยับยั้ง TNF (โดยเฉพาะ monoclonal antibody เช่น infliximab, adalimumab) ทำให้ TB reactivation สูงขึ้นหลายเท่า มักเป็น extrapulmonary/disseminated ในช่วงเดือนแรก ๆ ทุกคนก่อนเริ่ม bDMARD/tsDMARD ต้องคัดกรองด้วย TST หรือ IGRA ร่วมกับ CXR หากเป็น LTBI ให้รักษาด้วย INH 9 เดือน หรือสูตรทางเลือก (rifampicin 4 เดือน, 3HP) และเริ่ม biologic ได้หลังรักษาไปแล้ว ≥1 เดือน (ตามแนวทางสมาคมโรคข้อฯ และแนวทางสากล)\n\nทำไมข้อ A ถูก: ข้อ A คือการรักษา LTBI ที่ถูกต้องพร้อมระยะเวลาก่อนเริ่ม biologic\n\nการประยุกต์กับผู้ป่วยจริง: ไทยเป็นประเทศที่มี TB ชุก ควรติดตามอาการ TB ตลอดการใช้ยา ให้ pyridoxine ป้องกัน neuropathy ระวังตับอักเสบจาก INH (ติดตาม LFT โดยเฉพาะเมื่อใช้ร่วมกับ MTX) ถ้าเลือก rifampicin ต้องระวัง drug interaction กับยาอื่นของผู้ป่วย\n\nจุดที่มักสับสนและกับดักข้อสอบ: CXR ปกติไม่ได้ตัด latent TB; สูตร 4 ยาเป็นการรักษา active TB ไม่ใช่ LTBI; ไม่จำเป็นต้องรอจนครบ 9 เดือนก่อนเริ่ม biologic\n\nสรุปท่องสอบ: IGRA/TST บวก + CXR ปกติ = LTBI → รักษา ≥1 เดือนก่อนเริ่ม biologic",
+        "summary": "IGRA บวก CXR ปกติ ไม่มีอาการ = latent TB ต้องรักษา LTBI (เช่น isoniazid 9 เดือน + vitamin B6 หรือสูตรสั้นที่มี rifamycin) และเริ่ม adalimumab หลังรักษา LTBI ไปแล้วอย่างน้อย 1 เดือน",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วยจะเริ่ม TNF inhibitor (adalimumab) ผลคัดกรองพบ IGRA บวก แต่ CXR ปกติและไม่มีอาการ โจทย์ถามว่าควรจัดการอย่างไรก่อนเริ่ม biologic ซึ่งต้องแยก latent TB infection (LTBI) จาก active TB และรู้จังหวะเวลาเริ่มยา\n\nหลักการ/กลไกเชิงลึก: TNF-α จำเป็นต่อการสร้างและคงสภาพ granuloma ที่กัก Mycobacterium tuberculosis ไว้ การยับยั้ง TNF ทำให้ granuloma สลาย เชื้อที่สงบอยู่กลับมาแบ่งตัว เกิด reactivation TB มักภายใน 3–6 เดือนแรก และบ่อยครั้งเป็นแบบนอกปอดหรือแพร่กระจาย monoclonal antibody (infliximab, adalimumab) เสี่ยงสูงกว่า etanercept เพราะจับ membrane TNF และทำลายเซลล์ได้ IGRA วัด IFN-γ ที่ T cell ปล่อยเมื่อเจอ antigen จำเพาะของ M. tuberculosis (ESAT-6, CFP-10) จึงไม่ถูกรบกวนจาก BCG\n\nทำไมข้อ A ถูก: ผู้ป่วยเป็น LTBI (IGRA บวก + CXR ปกติ + ไม่มีอาการ) ซึ่งต้องรักษาด้วยยาเดี่ยวหรือสูตรสั้น ไม่ใช่สูตร 4 ยา และ ACR แนะนำให้รักษา LTBI ไปอย่างน้อย 1 เดือนก่อนเริ่มหรือกลับมาใช้ biologic ข้อ A ระบุทั้งสูตร ขนาด และจังหวะเวลาถูกต้อง\n\nหลักฐานและแนวทางเวชปฏิบัติ: ACR 2008/2012 กำหนดคัดกรอง TB (TST หรือ IGRA) ก่อนเริ่ม bDMARD/tsDMARD ทุกราย ถ้าผลบวกให้ CXR และถ้าเป็น LTBI ให้รักษาอย่างน้อย 1 เดือนก่อนเริ่ม biologic สูตร LTBI ที่ยอมรับ (CDC/WHO) ได้แก่ 3HP (isoniazid + rifapentine สัปดาห์ละครั้ง 12 ครั้ง), 4R (rifampicin 4 เดือน), 3HR และ 6–9H สำหรับประเทศที่ TB ชุกอย่างไทย แนะนำคัดกรองซ้ำเป็นระยะหรือเมื่อมีความเสี่ยงสัมผัสโรค\n\nการประยุกต์กับผู้ป่วยจริง: Isoniazid 300 mg (5 mg/kg) วันละครั้ง ท้องว่าง + pyridoxine 25–50 mg/วัน ป้องกัน peripheral neuropathy นาน 9 เดือน หากใช้สูตรที่มี rifamycin ต้องตรวจ DDI เพราะ rifampicin เหนี่ยวนำ CYP3A4 (ลดระดับ tofacitinib, glucocorticoid, warfarin, ยาคุมกำเนิด) และทำให้ปัสสาวะ/น้ำตาเป็นสีส้ม เริ่ม adalimumab ได้เมื่อรักษา LTBI ครบ 1 เดือนและทนยาได้ โดยต้องกินยา LTBI ต่อจนครบ\n\nการติดตามและสัญญาณอันตราย: Isoniazid ร่วมกับ MTX เพิ่มความเสี่ยงตับอักเสบ ควรตรวจ LFT พื้นฐานและเป็นระยะ (เช่น ทุกเดือนช่วงแรก) งดแอลกอฮอล์ หยุดยาถ้า ALT >3×ULN พร้อมอาการ หรือ >5×ULN แม้ไม่มีอาการ ระหว่างใช้ TNFi ให้เฝ้าระวังไข้เรื้อรัง ไอ เหงื่อออกกลางคืน น้ำหนักลด ต่อมน้ำเหลืองโต ซึ่งอาจเป็น TB แม้คัดกรองแล้ว\n\nจุดที่มักสับสนและกับดักข้อสอบ: CXR ปกติไม่ได้แปลว่าไม่ต้องรักษา (นั่นคือนิยามของ LTBI); สูตร 4 ยาใช้กับ active TB เท่านั้น; IGRA บวกไม่ได้ห้าม biologic ตลอดชีวิต; ผู้ป่วยที่ได้ยากดภูมิอยู่อาจให้ IGRA ลบลวง จึงควรตรวจก่อนเริ่มยากดภูมิหรือ steroid ขนาดสูง\n\nสรุปท่องสอบ: IGRA+ / CXR ปกติ = LTBI → INH 9 เดือน + B6 (หรือ 3HP/4R) → เริ่ม biologic หลัง ≥1 เดือน; CXR ผิดปกติ/มีอาการ = ตรวจ active TB ก่อน",
         "choices": [
           {
             "label": "A",
             "text": "เริ่มรักษา latent TB เช่น isoniazid 300 mg/วัน (+ vitamin B6) นาน 9 เดือน และเริ่ม adalimumab หลังรักษา LTBI ไปแล้วอย่างน้อย 1 เดือน",
-            "explanation": "✓ ถูก — รักษา LTBI และเริ่ม anti-TNF หลังรักษา ≥1 เดือน"
+            "explanation": "✓ ถูก — ผู้ป่วยเป็น latent TB จึงรักษาด้วย isoniazid 300 mg/วัน + vitamin B6 นาน 9 เดือน (หรือสูตรสั้นที่มี rifamycin เช่น 3HP/4R) และเริ่ม adalimumab ได้หลังรักษาไปแล้วอย่างน้อย 1 เดือนตาม ACR โดยต้องกินยา LTBI ต่อจนครบ ติดตาม LFT เพราะใช้ร่วมกับ MTX และเฝ้าระวังอาการ TB ตลอดการใช้ TNFi"
           },
           {
             "label": "B",
             "text": "เริ่ม adalimumab ได้ทันทีโดยไม่ต้องรักษา เพราะ chest X-ray ปกติ",
-            "explanation": "✗ ผิด — CXR ปกติไม่ได้หมายความว่าไม่มี LTBI เสี่ยง reactivation สูง"
+            "explanation": "✗ ผิด — CXR ปกติและไม่มีอาการคือนิยามของ latent TB ซึ่งมีความเสี่ยง reactivation สูงเมื่อได้ TNFi โดยเฉพาะ monoclonal antibody จึงต้องรักษาก่อน การเริ่ม biologic ได้ทันทีโดยไม่ต้องรักษาจะถูกเฉพาะเมื่อ IGRA/TST ลบ ไม่มีประวัติสัมผัสโรค และ CXR ปกติ หรือผู้ที่เคยรักษา LTBI/TB ครบแล้ว"
           },
           {
             "label": "C",
             "text": "ให้สูตร 4 ยา (isoniazid, rifampicin, pyrazinamide, ethambutol) นาน 6 เดือนก่อนเริ่ม biologic",
-            "explanation": "✗ ผิด — สูตร 4 ยาใช้กับ active TB ไม่จำเป็นใน LTBI"
+            "explanation": "✗ ผิด — สูตร 4 ยา (HRZE) นาน 6 เดือนเป็นการรักษา active TB ซึ่งผู้ป่วยไม่มีหลักฐาน (ไม่มีอาการ CXR ปกติ) การใช้สูตรนี้ใน LTBI เพิ่มพิษต่อตับและ DDI โดยไม่จำเป็น ข้อนี้จะถูกหาก CXR มี infiltrate/cavity หรือ sputum AFB/GeneXpert บวก ซึ่งต้องเลื่อน biologic ออกไปจนรักษา active TB ได้ระยะหนึ่ง"
           },
           {
             "label": "D",
             "text": "ห้ามใช้ biologic ทุกชนิดตลอดชีวิต เปลี่ยนเป็น glucocorticoid ขนาดสูงแทน",
-            "explanation": "✗ ผิด — LTBI ที่ได้รับการรักษาสามารถใช้ biologic ได้ และ GC ขนาดสูงก็เพิ่มความเสี่ยง TB"
+            "explanation": "✗ ผิด — IGRA บวกไม่ใช่ข้อห้ามถาวรของ biologic เมื่อรักษา LTBI แล้ว ผู้ป่วยส่วนใหญ่ใช้ biologic ได้อย่างปลอดภัย การใช้ glucocorticoid ขนาดสูงระยะยาวแทนเพิ่มความเสี่ยง TB reactivation (prednisolone ≥15 mg/วัน นาน ≥1 เดือน) และพิษอื่นมาก ไม่มีสถานการณ์ใดที่ทางเลือกนี้เหมาะสม"
           }
         ],
-        "key_takeaway": "ก่อน biologic: คัดกรอง TB + HBV/HCV เสมอ"
+        "key_takeaway": "ก่อน biologic: คัดกรอง TB + HBV/HCV เสมอ; IGRA+ = รักษา LTBI ≥1 เดือนก่อน"
       }
     },
     {
@@ -775,7 +792,7 @@
         },
         {
           "label": "B",
-          "text": "ให้ยาต้านไวรัสป้องกัน (เช่น entecavir หรือ tenofovir) เริ่มก่อนหรือพร้อม rituximab และให้ต่อหลังหยุด rituximab อย่างน้อย 12 เดือน"
+          "text": "ให้ยาต้านไวรัสป้องกัน (เช่น entecavir หรือ tenofovir) เริ่มก่อนหรือพร้อม rituximab และให้ต่อหลังหยุด rituximab อย่างน้อย 12–18 เดือน"
         },
         {
           "label": "C",
@@ -788,30 +805,30 @@
       ],
       "correct_answer": "B",
       "difficulty": "hard",
-      "explanation": "Resolved HBV (HBsAg−/anti-HBc+) ที่ได้ rituximab (anti-CD20) มีความเสี่ยง HBV reactivation สูง (>10%) จึงควรให้ entecavir/tenofovir ป้องกัน และต่อหลังหยุดยาอย่างน้อย 12 เดือน",
+      "explanation": "HBsAg ลบ/anti-HBc บวก (resolved HBV) ที่จะได้ rituximab จัดเป็นกลุ่มเสี่ยง HBV reactivation สูง แม้ anti-HBs บวก จึงต้องให้ entecavir หรือ tenofovir ป้องกันตั้งแต่ก่อน/พร้อมเริ่มยา และให้ต่อหลังหยุด rituximab อย่างน้อย 12–18 เดือน",
       "detailed_explanation": {
-        "summary": "Resolved HBV (HBsAg−/anti-HBc+) ที่ได้ rituximab (anti-CD20) มีความเสี่ยง HBV reactivation สูง (>10%) จึงควรให้ entecavir/tenofovir ป้องกัน และต่อหลังหยุดยาอย่างน้อย 12 เดือน",
-        "reason": "โจทย์ถามอะไร: ผู้ป่วยมีภาวะ resolved/occult HBV และจะได้ B-cell depleting therapy ถามการป้องกัน HBV reactivation\n\nหลักการ/กลไกเชิงลึก: anti-HBc บวกแปลว่าเคยติดเชื้อ HBV และ cccDNA ยังคงอยู่ในเซลล์ตับ การควบคุมไวรัสอาศัยภูมิคุ้มกันทั้ง T cell และ B cell (anti-HBs) rituximab กำจัด B cell ทำให้ anti-HBs ลดลงและไวรัสกลับมาแบ่งตัว อาจเกิด fulminant hepatitis แนวทาง AASLD/AGA จัด anti-CD20 ใน HBsAg−/anti-HBc+ เป็นความเสี่ยงสูง แนะนำ prophylaxis ด้วยยาที่มี high barrier to resistance (entecavir, tenofovir DF/AF) ต่อเนื่องอย่างน้อย 12 เดือนหลังหยุด (บางแนวทาง 18 เดือน) ส่วนยาเช่น anti-TNF ใน HBsAg−/anti-HBc+ ส่วนใหญ่เป็นความเสี่ยงต่ำ-ปานกลาง ใช้การติดตาม HBV DNA/ALT ได้\n\nทำไมข้อ B ถูก: ข้อ B ให้ prophylaxis ที่เหมาะสมกับยาที่เสี่ยงสูงและระยะเวลาที่ถูกต้อง\n\nการประยุกต์กับผู้ป่วยจริง: ก่อนเริ่ม biologic/JAK ทุกครั้ง ตรวจ HBsAg, anti-HBc (± anti-HBs) และ anti-HCV หาก HBsAg บวก ต้องให้ยาต้านไวรัสกับแทบทุก biologic เภสัชกรควรตรวจสอบระยะเวลาให้ entecavir ต่อหลังหยุด rituximab เพราะ B cell ฟื้นตัวช้า\n\nจุดที่มักสับสนและกับดักข้อสอบ: anti-HBs บวกไม่ได้ป้องกัน reactivation เมื่อได้ rituximab; วัคซีนไม่ช่วยในผู้ที่เคยติดเชื้อแล้ว; การรอให้ ALT สูงคือการรักษาเมื่อสายเกินไป และ lamivudine มี resistance สูง\n\nสรุปท่องสอบ: Rituximab + anti-HBc บวก → entecavir/tenofovir ป้องกัน ≥12 เดือนหลังหยุด",
+        "summary": "HBsAg ลบ/anti-HBc บวก (resolved HBV) ที่จะได้ rituximab จัดเป็นกลุ่มเสี่ยง HBV reactivation สูง แม้ anti-HBs บวก จึงต้องให้ entecavir หรือ tenofovir ป้องกันตั้งแต่ก่อน/พร้อมเริ่มยา และให้ต่อหลังหยุด rituximab อย่างน้อย 12–18 เดือน",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วย RA ที่ล้มเหลวต่อ MTX และ TNFi จะได้ rituximab ผล serology คือ HBsAg ลบ, anti-HBc บวก, anti-HBs บวก (15 mIU/mL), HBV DNA ไม่พบ และ ALT ปกติ ซึ่งหมายถึงเคยติดเชื้อ HBV และหายแล้ว (resolved/occult infection) โจทย์ถามว่าต้องป้องกัน HBV reactivation อย่างไร\n\nหลักการ/กลไกเชิงลึก: แม้ HBsAg หายไป cccDNA (covalently closed circular DNA) ของ HBV ยังคงอยู่ในนิวเคลียสของเซลล์ตับตลอดชีวิต ไวรัสถูกกดไว้ด้วยภูมิคุ้มกันทั้ง T cell และ antibody จาก B cell (anti-HBs, anti-HBc) rituximab ทำลาย CD20+ B cell อย่างลึกและนาน 6–12 เดือนหรือมากกว่า ทำให้การควบคุมไวรัสหายไป ไวรัสแบ่งตัวใหม่ (HBV DNA เพิ่ม, HBsAg กลับมาเป็นบวก = reverse seroconversion) และเมื่อภูมิคุ้มกันฟื้นจะเกิดตับอักเสบรุนแรงจนถึง fulminant hepatitis ได้ reactivation อาจเกิดช้าได้ถึง 12 เดือนขึ้นไปหลังรับยาครั้งสุดท้าย\n\nทำไมข้อ B ถูก: Rituximab ในผู้ที่ HBsAg ลบ/anti-HBc บวกจัดเป็นความเสี่ยงสูง (>10% ในหลายแนวทาง) จึงแนะนำ prophylaxis ด้วยยาต้านไวรัสที่มี high genetic barrier คือ entecavir หรือ tenofovir เริ่มก่อนหรือพร้อมยา และให้ต่อหลังหยุดยานานพอครอบคลุมช่วงที่ B cell ยังไม่ฟื้น\n\nหลักฐานและแนวทางเวชปฏิบัติ: AGA 2015 จัด B-cell depleting agent เป็นความเสี่ยงสูงทั้งใน HBsAg บวกและ HBsAg ลบ/anti-HBc บวก แนะนำ prophylaxis และให้ต่ออย่างน้อย 12 เดือนหลังหยุดยา EASL 2017 แนะนำ prophylaxis ในผู้ anti-HBc บวกที่ได้ rituximab และให้ต่ออย่างน้อย 18 เดือนหลังหยุด rituximab APASL และ AASLD ให้แนวทางคล้ายกัน การมี anti-HBs ลดความเสี่ยงลงบ้างแต่ไม่ได้ยกเว้นการป้องกัน\n\nการประยุกต์กับผู้ป่วยจริง: Entecavir 0.5 mg วันละครั้งท้องว่าง (ปรับตามไต) หรือ tenofovir disoproxil fumarate 300 mg/วัน (ระวังไตและกระดูก) หรือ tenofovir alafenamide 25 mg/วัน เริ่มก่อนหรือวันเดียวกับ rituximab อธิบายผู้ป่วยว่าห้ามหยุดยาต้านไวรัสเอง เพราะการหยุดก่อนกำหนดอาจทำให้ตับอักเสบกำเริบรุนแรง ประสานกับแพทย์ระบบทางเดินอาหารหรือโรคตับ\n\nการติดตามและสัญญาณอันตราย: ตรวจ ALT และ HBV DNA ทุก 3 เดือนระหว่างให้ยาและหลังหยุด prophylaxis อย่างน้อย 12 เดือน สัญญาณอันตรายคือ ALT สูงขึ้น HBV DNA ตรวจพบ HBsAg กลับเป็นบวก ตัวเหลือง ปัสสาวะสีเข้ม อ่อนเพลียมาก คลื่นไส้ ระหว่างใช้ rituximab ยังต้องติดตาม IgG และการติดเชื้ออื่นด้วย\n\nจุดที่มักสับสนและกับดักข้อสอบ: anti-HBs บวกไม่ได้ทำให้ปลอดภัยเมื่อได้ rituximab; การฉีดวัคซีนไม่ป้องกัน reactivation จาก cccDNA ที่มีอยู่แล้ว; lamivudine มี resistance สูงและการรอให้ ALT สูงแล้วค่อยรักษาอาจช้าเกินไป; TNFi ในผู้ anti-HBc บวกเดี่ยวมักใช้วิธีติดตาม HBV DNA ได้ แต่ rituximab ต้อง prophylaxis\n\nสรุปท่องสอบ: Rituximab + anti-HBc บวก (แม้ HBsAg ลบ, anti-HBs บวก) = prophylaxis entecavir/tenofovir; เริ่มก่อน/พร้อม, ต่อ ≥12–18 เดือนหลังหยุด rituximab",
         "choices": [
           {
             "label": "A",
             "text": "ไม่ต้องทำอะไรเพิ่ม เพราะ anti-HBs บวกแสดงว่ามีภูมิคุ้มกันแล้ว",
-            "explanation": "✗ ผิด — rituximab ทำให้ anti-HBs ลดลง reactivation เกิดได้แม้ anti-HBs บวก"
+            "explanation": "✗ ผิด — anti-HBs บวกบอกว่าเคยติดเชื้อและหายแล้ว แต่ cccDNA ยังอยู่ในเซลล์ตับ rituximab ทำลาย B cell ที่ควบคุมไวรัส ทำให้ reactivation ได้แม้ anti-HBs บวก ข้อนี้จะใกล้ถูกหากผู้ป่วยมี anti-HBs บวกจากวัคซีนอย่างเดียว (anti-HBc ลบ) ซึ่งไม่เคยติดเชื้อ จึงไม่ต้อง prophylaxis"
           },
           {
             "label": "B",
-            "text": "ให้ยาต้านไวรัสป้องกัน (เช่น entecavir หรือ tenofovir) เริ่มก่อนหรือพร้อม rituximab และให้ต่อหลังหยุด rituximab อย่างน้อย 12 เดือน",
-            "explanation": "✓ ถูก — prophylaxis ด้วย entecavir/tenofovir เหมาะกับความเสี่ยงสูงจาก anti-CD20"
+            "text": "ให้ยาต้านไวรัสป้องกัน (เช่น entecavir หรือ tenofovir) เริ่มก่อนหรือพร้อม rituximab และให้ต่อหลังหยุด rituximab อย่างน้อย 12–18 เดือน",
+            "explanation": "✓ ถูก — Rituximab ในผู้ HBsAg ลบ/anti-HBc บวกจัดเป็นความเสี่ยงสูง แนวทาง AGA, EASL และ APASL แนะนำ prophylaxis ด้วย entecavir หรือ tenofovir (high barrier to resistance) เริ่มก่อนหรือพร้อม rituximab และให้ต่ออย่างน้อย 12 เดือน (EASL แนะนำ 18 เดือน) หลังหยุดยา พร้อมติดตาม ALT และ HBV DNA ทุก 3 เดือน"
           },
           {
             "label": "C",
             "text": "ฉีดวัคซีนตับอักเสบบีกระตุ้น 3 เข็มแทนการให้ยาต้านไวรัส",
-            "explanation": "✗ ผิด — วัคซีนไม่ป้องกัน reactivation ในผู้ที่เคยติดเชื้อแล้ว"
+            "explanation": "✗ ผิด — วัคซีน HBV กระตุ้นการสร้าง anti-HBs ป้องกันการติดเชื้อใหม่ แต่ไม่กำจัด cccDNA ที่อยู่ในเซลล์ตับแล้ว และผู้ที่ได้ rituximab ตอบสนองต่อวัคซีนได้ไม่ดี ข้อนี้จะถูกหากผู้ป่วยไม่เคยติดเชื้อ (HBsAg ลบ, anti-HBc ลบ, anti-HBs ลบ) ซึ่งควรฉีดวัคซีนให้ครบก่อนเริ่ม rituximab อย่างน้อย 2 สัปดาห์"
           },
           {
             "label": "D",
             "text": "ให้ lamivudine เฉพาะเมื่อ ALT สูงเกิน 3 เท่าของค่าปกติ",
-            "explanation": "✗ ผิด — รอจน ALT สูงเป็นการรักษาช้าเกินไป และ lamivudine ดื้อยาง่าย"
+            "explanation": "✗ ผิด — การรอให้ ALT สูงเกิน 3 เท่าแล้วค่อยรักษาเป็น on-demand ที่อาจช้าเกินไป เพราะเมื่อ ALT สูงแล้วไวรัสแบ่งตัวมากและเกิด hepatic failure ได้ ส่วน lamivudine มี resistance สูงเมื่อใช้นาน การติดตาม HBV DNA ทุก 1–3 เดือนแล้วรักษาเมื่อตรวจพบ อาจยอมรับได้ในกลุ่มความเสี่ยงปานกลาง เช่น TNFi ในผู้ anti-HBc บวกเดี่ยว"
           }
         ],
         "key_takeaway": "Rituximab = เสี่ยง HBV reactivation สูงสุด ต้อง prophylaxis"
@@ -839,30 +856,30 @@
       ],
       "correct_answer": "C",
       "difficulty": "hard",
-      "explanation": "IL-6 เป็นตัวกระตุ้นการสร้าง CRP ที่ตับและทำให้เกิดไข้ เมื่อยับยั้ง IL-6R ด้วย tocilizumab CRP/ไข้อาจปกติแม้ติดเชื้อรุนแรง และยามีคำเตือน GI perforation",
+      "explanation": "Tocilizumab ยับยั้ง IL-6 receptor ทำให้ CRP และไข้ถูกกด จึงบดบังการติดเชื้อ ต้องประเมินทางคลินิกเป็นหลัก งดยาไว้ก่อน และระวัง GI perforation โดยเฉพาะผู้มี diverticulitis",
       "detailed_explanation": {
-        "summary": "IL-6 เป็นตัวกระตุ้นการสร้าง CRP ที่ตับและทำให้เกิดไข้ เมื่อยับยั้ง IL-6R ด้วย tocilizumab CRP/ไข้อาจปกติแม้ติดเชื้อรุนแรง และยามีคำเตือน GI perforation",
-        "reason": "โจทย์ถามอะไร: ผู้ป่วยใช้ tocilizumab มีอาการคล้ายติดเชื้อแต่ CRP ปกติ ถามการแปลผลและข้อควรระวัง\n\nหลักการ/กลไกเชิงลึก: Tocilizumab (และ sarilumab) เป็น monoclonal antibody ต่อ IL-6 receptor IL-6 กระตุ้น hepatocyte ให้สร้าง acute phase protein (CRP, fibrinogen, hepcidin) และเป็น endogenous pyrogen การยับยั้งจึงทำให้ CRP ต่ำเกือบเป็นศูนย์และไข้ต่ำแม้มีติดเชื้อ (ระวังการใช้ CRP ประเมินทั้ง disease activity และ sepsis) คำเตือนอื่น: GI perforation (โดยเฉพาะ diverticulitis และใช้ steroid/NSAID ร่วม), neutropenia, thrombocytopenia, ALT สูง, LDL/TG สูงขึ้น\n\nทำไมข้อ C ถูก: ข้อ C อธิบายกลไกการบดบังการติดเชื้อและชี้ประเด็น GI perforation ซึ่งสอดคล้องกับอาการปวดท้องซ้ายล่าง\n\nการประยุกต์กับผู้ป่วยจริง: ควรเลื่อนการให้ยาเมื่อสงสัยติดเชื้อ ตรวจร่างกาย CBC, CXR, เพาะเชื้อ และประเมินช่องท้อง; ติดตาม ANC, platelet, ALT ทุก 4–8 สัปดาห์ และไขมันที่ 4–8 สัปดาห์หลังเริ่มยา; หาก LDL สูงให้รักษาด้วย statin ตามแนวทาง\n\nจุดที่มักสับสนและกับดักข้อสอบ: ข้อสอบชอบหลอกว่า CRP ปกติ = ไม่มีการอักเสบ ในผู้ใช้ IL-6 inhibitor ไม่จริง; tocilizumab เพิ่ม ไม่ใช่ลด LDL; ต้องติดตาม LFT และ neutrophil\n\nสรุปท่องสอบ: Tocilizumab: CRP/ไข้ถูกกด, LDL↑, ALT↑, ANC↓, GI perforation",
+        "summary": "Tocilizumab ยับยั้ง IL-6 receptor ทำให้ CRP และไข้ถูกกด จึงบดบังการติดเชื้อ ต้องประเมินทางคลินิกเป็นหลัก งดยาไว้ก่อน และระวัง GI perforation โดยเฉพาะผู้มี diverticulitis",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วยได้ tocilizumab IV ร่วมกับ MTX มาด้วยไอมีเสมหะ เหนื่อย ปวดท้องด้านซ้ายล่าง ไข้ต่ำ ๆ 37.6°C แต่ CRP ปกติ โจทย์ถามข้อควรพิจารณาที่ถูกต้องที่สุด ซึ่งทดสอบความเข้าใจว่า IL-6 inhibitor เปลี่ยนการแปลผลทางห้องปฏิบัติการและมี ADR เฉพาะตัวอะไรบ้าง\n\nหลักการ/กลไกเชิงลึก: IL-6 เป็น cytokine หลักที่สั่งตับให้สร้าง acute-phase protein (CRP, fibrinogen, serum amyloid A, hepcidin) และทำให้ไข้ผ่าน prostaglandin E2 ที่ hypothalamus tocilizumab จับทั้ง soluble และ membrane-bound IL-6R จึงตัดทั้ง classic และ trans-signaling ผลคือ CRP ลดลงจนแทบเป็นศูนย์ ESR ลดลง และไข้ไม่ขึ้นแม้มีการติดเชื้อรุนแรง นอกจากนี้ IL-6 มีบทบาทซ่อมแซมเยื่อบุลำไส้ ทำให้เสี่ยง lower GI perforation โดยเฉพาะที่ sigmoid colon ในผู้มี diverticulitis และ IL-6 กด CYP450 เมื่อยับยั้ง IL-6 จึงทำให้ CYP3A4 กลับมาทำงาน (ระดับ simvastatin, cyclosporine, warfarin อาจลดลง)\n\nทำไมข้อ C ถูก: ข้อ C ครอบคลุมทั้งประเด็นการบดบังการติดเชื้อ (CRP/ไข้ใช้ไม่ได้) และ ADR เฉพาะคือ GI perforation ซึ่งตรงกับอาการปวดท้องด้านซ้ายล่างของผู้ป่วย การตัดสินใจจึงต้องอาศัยอาการและการตรวจร่างกาย งดยาครั้งนี้ไว้ก่อนและส่งประเมิน\n\nหลักฐานและแนวทางเวชปฏิบัติ: ฉลาก tocilizumab เตือนเรื่อง serious infection และ GI perforation (อุบัติการณ์สูงกว่า TNFi ในข้อมูลทะเบียนผู้ป่วย โดยเฉพาะเมื่อใช้ร่วม glucocorticoid/NSAID) ให้ติดตาม ANC, platelet และ ALT ทุก 4–8 สัปดาห์ใน 6 เดือนแรก แล้วทุก 3 เดือน และ lipid ที่ 4–8 สัปดาห์หลังเริ่มยา ENTRACTE พบว่าแม้ LDL สูงขึ้น แต่ MACE ไม่ต่างจาก etanercept\n\nการประยุกต์กับผู้ป่วยจริง: ผู้ป่วยรายนี้ควรงด tocilizumab ครั้งนี้ ส่งตรวจ CBC, CXR, เพาะเชื้อ และพิจารณา CT ช่องท้องถ้าสงสัย diverticulitis/perforation ให้ยาต้านจุลชีพตามข้อบ่งชี้ กลับมาให้ยาเมื่อการติดเชื้อหายแล้ว เภสัชกรควรสอนผู้ป่วยว่า \"ไข้ต่ำ ๆ ก็สำคัญ\" และให้มาพบแพทย์เมื่อปวดท้องรุนแรง อุจจาระมีเลือด หรือไอมีเสมหะ ไม่ควรรอให้ไข้สูง\n\nการติดตามและสัญญาณอันตราย: ANC 500–1,000/mm³ ให้งดยาแล้วเริ่มใหม่ที่ขนาดต่ำกว่าเมื่อ ANC >1,000; ANC <500 หยุดยา; ALT >3–5×ULN งดยา; ปวดท้องรุนแรง ท้องแข็ง ไข้ หรือถ่ายเป็นเลือด ให้สงสัย perforation ทันที; เมื่อเริ่มหรือหยุด tocilizumab ในผู้ใช้ warfarin หรือ cyclosporine ต้องติดตาม INR/ระดับยา\n\nจุดที่มักสับสนและกับดักข้อสอบ: CRP ปกติในผู้ใช้ IL-6 inhibitor ตัดการติดเชื้อไม่ได้; tocilizumab ทำให้ LDL \"สูงขึ้น\" ไม่ใช่ลดลง และไม่ต้องหยุด statin (กลับต้องใช้ statin ถ้าจำเป็น); tocilizumab ทำให้ neutropenia และ transaminitis ได้ จึงต้องติดตาม lab\n\nสรุปท่องสอบ: IL-6 inhibitor: CRP/ไข้ถูกกด → ประเมินคลินิก; ระวัง GI perforation (diverticulitis), neutropenia, ALT↑, LDL↑; ติดเชื้อ = งดยา",
         "choices": [
           {
             "label": "A",
             "text": "CRP ปกติจึงตัดการติดเชื้อรุนแรงออกได้ ให้ยาตามนัดต่อ",
-            "explanation": "✗ ผิด — CRP ถูกกดโดยยา จึงใช้ตัดการติดเชื้อไม่ได้"
+            "explanation": "✗ ผิด — Tocilizumab กดการสร้าง CRP ที่ตับโดยตรง CRP ปกติจึงตัดการติดเชื้อรุนแรงไม่ได้ และการให้ยาต่อขณะติดเชื้อเพิ่มความรุนแรง ผู้ป่วยมีไอ เสมหะ ไข้ต่ำ ปวดท้อง ต้องงดยาและประเมิน CRP ปกติจะช่วยตัดการติดเชื้อได้ในผู้ที่ไม่ได้ใช้ IL-6 inhibitor หรือ JAK inhibitor และไม่มีภาวะที่กดการตอบสนองของตับ"
           },
           {
             "label": "B",
             "text": "Tocilizumab ทำให้ LDL-cholesterol ลดลง จึงควรหยุด statin ระหว่างใช้ยา",
-            "explanation": "✗ ผิด — tocilizumab ทำให้ LDL เพิ่มขึ้น อาจต้องเริ่มหรือคง statin"
+            "explanation": "✗ ผิด — Tocilizumab ทำให้ total cholesterol, LDL และ TG \"สูงขึ้น\" ราว 20–30% ไม่ใช่ลดลง ควรตรวจ lipid ที่ 4–8 สัปดาห์หลังเริ่มยา และรักษาด้วย statin ตามแนวทาง CV risk การหยุด statin จึงผิด ข้อนี้อาจมีส่วนจริงเรื่อง DDI เพราะ tocilizumab ทำให้ CYP3A4 ฟื้นและระดับ simvastatin ลดลง แต่ไม่ใช่เหตุผลให้หยุด statin"
           },
           {
             "label": "C",
             "text": "Tocilizumab ยับยั้ง IL-6 receptor ทำให้ CRP และไข้ถูกกด จึงอาจบดบังการติดเชื้อ ต้องประเมินทางคลินิกและระวัง GI perforation โดยเฉพาะผู้มี diverticulitis",
-            "explanation": "✓ ถูก — IL-6R blockade บดบังไข้/CRP และมีความเสี่ยง GI perforation"
+            "explanation": "✓ ถูก — Tocilizumab ตัด IL-6 signaling ทำให้ CRP และไข้ถูกกด อาการติดเชื้อจึงดูไม่รุนแรง ต้องประเมินทางคลินิกและงดยา นอกจากนี้ยังเสี่ยง lower GI perforation โดยเฉพาะผู้มี diverticulitis หรือใช้ steroid/NSAID ร่วม อาการปวดท้องด้านซ้ายล่างของผู้ป่วยจึงต้องตรวจเพิ่มเติม ไม่ใช่ให้ยาต่อตามนัด"
           },
           {
             "label": "D",
             "text": "Tocilizumab ไม่มีผลต่อเอนไซม์ตับหรือ neutrophil จึงไม่ต้องติดตาม lab",
-            "explanation": "✗ ผิด — ต้องติดตาม ALT, ANC, platelet และไขมันเป็นระยะ"
+            "explanation": "✗ ผิด — Tocilizumab ทำให้ neutropenia, thrombocytopenia และ ALT/AST สูงได้ โดยเฉพาะเมื่อใช้ร่วม MTX จึงต้องติดตาม ANC, platelet, ALT ทุก 4–8 สัปดาห์ใน 6 เดือนแรก และ lipid ข้อนี้จะใกล้ถูกกับยาบางตัวที่แทบไม่ต้องติดตาม lab เช่น hydroxychloroquine (ต้องตรวจตาแทน) แต่ไม่ใช่ tocilizumab"
           }
         ],
         "key_takeaway": "ใช้ tocilizumab อยู่ — CRP ปกติไม่ได้แปลว่าไม่ติดเชื้อ"
@@ -890,30 +907,30 @@
       ],
       "correct_answer": "D",
       "difficulty": "easy",
-      "explanation": "Felty syndrome คือ triad ของ RA (มักเป็น seropositive ระยะยาว) + splenomegaly + neutropenia ทำให้ติดเชื้อซ้ำ",
+      "explanation": "Felty syndrome คือ triad ของ seropositive RA ระยะยาว + splenomegaly + neutropenia ทำให้ติดเชื้อซ้ำ ผู้ป่วยมีครบทุกองค์ประกอบโดยไม่ได้ใช้ยาที่กดไขกระดูก",
       "detailed_explanation": {
-        "summary": "Felty syndrome คือ triad ของ RA (มักเป็น seropositive ระยะยาว) + splenomegaly + neutropenia ทำให้ติดเชื้อซ้ำ",
-        "reason": "โจทย์ถามอะไร: ถาม extra-articular manifestation ของ RA ที่มีม้ามโตร่วมกับ neutropenia\n\nหลักการ/กลไกเชิงลึก: RA เป็นโรค systemic มี extra-articular manifestations มักพบในผู้ป่วย seropositive (RF/anti-CCP สูง) ระยะยาวและสูบบุหรี่ เช่น rheumatoid nodules, interstitial lung disease, pleural effusion, secondary Sjögren (ตาแห้งปากแห้ง), scleritis/episcleritis, pericarditis, rheumatoid vasculitis, anemia of chronic disease และ Felty syndrome (RA + splenomegaly + neutropenia) ซึ่งเกิดจาก autoantibody/ภูมิคุ้มกันทำลาย neutrophil และ sequestration ในม้าม บางรายมี large granular lymphocyte (LGL) ร่วม\n\nทำไมข้อ D ถูก: ผู้ป่วยมี triad ครบ: RA ระยะยาว + ม้ามโต + ANC ต่ำ (<1,500) โดยไม่มียากดไขกระดูก จึงเป็น Felty syndrome\n\nการประยุกต์กับผู้ป่วยจริง: การรักษาคือควบคุม RA ด้วย DMARD (MTX มักใช้ได้ผลแม้จะมี neutropenia โดยติดตามใกล้ชิด) หรือ rituximab ในรายดื้อ; G-CSF เมื่อมีการติดเชื้อรุนแรง; splenectomy เป็นทางเลือกสุดท้าย เภสัชกรต้องแยกให้ออกว่า neutropenia ไม่ได้เกิดจาก MTX/SSZ/tocilizumab ก่อน\n\nจุดที่มักสับสนและกับดักข้อสอบ: Caplan syndrome = RA + pneumoconiosis (nodules ในปอดของคนงานเหมือง); Sjögren = ตาแห้ง ปากแห้ง; rheumatoid vasculitis = แผลผิวหนัง, mononeuritis multiplex ไม่ใช่ม้ามโต + neutropenia\n\nสรุปท่องสอบ: Felty = RA + Spleen↑ + Neutrophil↓",
+        "summary": "Felty syndrome คือ triad ของ seropositive RA ระยะยาว + splenomegaly + neutropenia ทำให้ติดเชื้อซ้ำ ผู้ป่วยมีครบทุกองค์ประกอบโดยไม่ได้ใช้ยาที่กดไขกระดูก",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วยชายเป็น seropositive RA มานาน 15 ปี มีข้อผิดรูปและ rheumatoid nodules ตรวจพบม้ามโต WBC 2,200 (ANC 800) ติดเชื้อผิวหนังซ้ำ โดยไม่ได้ใช้ยากดไขกระดูก โจทย์ถามว่าเป็น extra-articular manifestation ใดของ RA\n\nหลักการ/กลไกเชิงลึก: Felty syndrome พบราว 1% ของผู้ป่วย RA มักในโรคที่เป็นนาน รุนแรง RF/ACPA บวก titer สูง มี HLA-DR4 และ nodules กลไกของ neutropenia มีหลายส่วน ได้แก่ antibody ต่อ neutrophil และ G-CSF, การที่ neutrophil ถูกกักและทำลายในม้ามที่โต (hypersplenism), การกดการสร้างใน bone marrow และ neutrophil extracellular trap (NET) ที่กระตุ้นภูมิต้านตนเอง ส่วนหนึ่งของผู้ป่วยมี large granular lymphocyte (LGL) expansion ซ้อนทับ เมื่อ ANC <1,000 ความเสี่ยงติดเชื้อแบคทีเรียผิวหนังและทางเดินหายใจสูงขึ้น\n\nทำไมข้อ D ถูก: ผู้ป่วยมีครบ triad: RA (seropositive, เป็นนาน, nodules), ม้ามโต และ neutropenia พร้อมการติดเชื้อซ้ำ โดยตัดสาเหตุจากยาไปแล้ว จึงเป็น Felty syndrome\n\nหลักฐานและแนวทางเวชปฏิบัติ: ตำราโรคข้อแนะนำให้ตัดสาเหตุ neutropenia อื่นก่อน ได้แก่ ยา (MTX, SSZ, leflunomide, tocilizumab), ไวรัส, ขาดสารอาหาร, LGL leukemia (ตรวจ flow cytometry/TCR rearrangement) การรักษาหลักคือควบคุม RA ด้วย DMARD โดย MTX ขนาดต่ำเป็นตัวเลือกแรกที่มีรายงานว่าเพิ่ม ANC ได้ rituximab เป็นทางเลือกในรายดื้อยา G-CSF ใช้ระยะสั้นเมื่อมีการติดเชื้อรุนแรง และ splenectomy สงวนไว้กรณีดื้อต่อการรักษา\n\nการประยุกต์กับผู้ป่วยจริง: เภสัชกรควรทบทวนรายการยาทั้งหมดเพื่อยืนยันว่าไม่มียาที่กดไขกระดูก (รวมยาที่ซื้อเอง เช่น ยาชุด) เมื่อเริ่ม MTX ต้องติดตาม CBC ใกล้ชิดเพราะ MTX เองก็กดไขกระดูกได้ ให้วัคซีนเชื้อตาย (pneumococcal, influenza, RZV) และสอนสุขอนามัยผิวหนัง หากมีไข้ขณะ ANC ต่ำต้องรีบมาโรงพยาบาลเพื่อรับยาต้านจุลชีพทันที\n\nการติดตามและสัญญาณอันตราย: ติดตาม ANC ทุกครั้งที่ปรับยา ไข้ ≥38°C ร่วม ANC <500 คือ febrile neutropenia ต้องรักษาเร่งด่วน สังเกตแผลที่ขา (leg ulcer), ภาวะ portal hypertension จาก nodular regenerative hyperplasia ของตับ และต่อมน้ำเหลืองโตผิดปกติที่อาจเป็น lymphoma\n\nจุดที่มักสับสนและกับดักข้อสอบ: Sjögren's มีตาแห้งปากแห้ง ไม่ใช่ triad นี้; rheumatoid vasculitis มี mononeuritis multiplex, digital infarct, แผลผิวหนัง; Caplan syndrome คือ RA ร่วม pneumoconiosis เกิดก้อนในปอด (คนงานเหมืองถ่านหิน/ซิลิกา); อย่าลืมว่า neutropenia ในผู้ป่วย RA ส่วนใหญ่ในทางปฏิบัติเกิดจากยา จึงต้องตัดก่อนเสมอ\n\nสรุปท่องสอบ: Felty = RA (seropositive, นาน, nodules) + splenomegaly + neutropenia → ติดเชื้อซ้ำ; รักษาด้วย MTX ขนาดต่ำ/rituximab; G-CSF เมื่อติดเชื้อ",
         "choices": [
           {
             "label": "A",
             "text": "Sjögren's syndrome",
-            "explanation": "✗ ผิด — Sjögren มีอาการตาแห้ง ปากแห้ง ไม่ใช่ม้ามโต + neutropenia"
+            "explanation": "✗ ผิด — Sjögren's syndrome (secondary ร่วมกับ RA ได้) มีอาการเด่นคือตาแห้ง ปากแห้ง ต่อมน้ำลาย parotid โต anti-Ro/La บวก ไม่ได้มี triad ม้ามโตร่วม neutropenia ข้อนี้จะถูกหากผู้ป่วยบ่นตาแห้งแสบ ต้องจิบน้ำบ่อย ฟันผุง่าย และ Schirmer test ผิดปกติ ซึ่งรักษาด้วยน้ำตาเทียมและ pilocarpine/cevimeline"
           },
           {
             "label": "B",
             "text": "Rheumatoid vasculitis",
-            "explanation": "✗ ผิด — rheumatoid vasculitis มีแผลผิวหนัง, digital infarct, neuropathy"
+            "explanation": "✗ ผิด — Rheumatoid vasculitis เป็นภาวะแทรกซ้อนในโรคที่รุนแรงและนาน เช่นเดียวกัน แต่แสดงออกด้วยแผลผิวหนังที่ขา nail-fold infarct, digital gangrene, mononeuritis multiplex (เช่น foot drop) และ complement ต่ำ ไม่ใช่ neutropenia + ม้ามโต ข้อนี้จะถูกหากผู้ป่วยมีเท้าตก ชาตามเส้นประสาท และแผลเนื้อตาย ซึ่งต้องใช้ steroid ขนาดสูงร่วม cyclophosphamide หรือ rituximab"
           },
           {
             "label": "C",
             "text": "Caplan syndrome",
-            "explanation": "✗ ผิด — Caplan syndrome คือ RA ร่วมกับ pneumoconiosis และ lung nodules"
+            "explanation": "✗ ผิด — Caplan syndrome คือ RA ร่วมกับ pneumoconiosis จากการสัมผัสฝุ่นถ่านหิน ซิลิกา หรือ asbestos ทำให้เกิด rheumatoid nodules หลายก้อนในปอดบริเวณรอบนอก ไม่เกี่ยวกับม้ามหรือ neutrophil ข้อนี้จะถูกหากผู้ป่วยมีประวัติทำงานเหมืองหรือโรงงานหิน และ CXR พบก้อนกลมหลายก้อนขนาด 0.5–5 cm"
           },
           {
             "label": "D",
             "text": "Felty syndrome",
-            "explanation": "✓ ถูก — triad RA + splenomegaly + neutropenia"
+            "explanation": "✓ ถูก — Felty syndrome = seropositive RA ที่เป็นนาน (มักมี nodules, ข้อผิดรูป) + splenomegaly + neutropenia ผู้ป่วยมีครบทุกข้อและติดเชื้อซ้ำโดยไม่ได้ใช้ยากดไขกระดูก ต้องตัด LGL leukemia และสาเหตุจากยาออก การรักษาหลักคือควบคุม RA ด้วย MTX ขนาดต่ำ (ติดตาม CBC ใกล้ชิด) หรือ rituximab และใช้ G-CSF เมื่อติดเชื้อรุนแรง"
           }
         ],
         "key_takeaway": "Felty syndrome: RA + ม้ามโต + neutropenia"
@@ -941,30 +958,30 @@
       ],
       "correct_answer": "A",
       "difficulty": "hard",
-      "explanation": "การศึกษา ORAL Surveillance พบ JAK inhibitor เพิ่ม MACE, VTE, มะเร็ง และการเสียชีวิตในผู้ป่วยอายุ ≥50 ปีที่มี CV risk; FDA/EMA ให้ใช้ JAK เฉพาะเมื่อไม่มีทางเลือกอื่นในผู้อายุ ≥65 ปี สูบบุหรี่ หรือมีโรคหัวใจ จึงควรเลือก non-TNF biologic",
+      "explanation": "ORAL Surveillance พบ JAK inhibitor เพิ่ม MACE, VTE, มะเร็ง และการเสียชีวิตในผู้ป่วยอายุ ≥50 ปีที่มี CV risk หน่วยงานกำกับยาให้ใช้ JAK เฉพาะเมื่อไม่มีทางเลือกที่เหมาะสมในผู้อายุ ≥65 ปี สูบบุหรี่ หรือมีโรคหัวใจ จึงควรเปลี่ยนเป็น bDMARD กลไกอื่น",
       "detailed_explanation": {
-        "summary": "การศึกษา ORAL Surveillance พบ JAK inhibitor เพิ่ม MACE, VTE, มะเร็ง และการเสียชีวิตในผู้ป่วยอายุ ≥50 ปีที่มี CV risk; FDA/EMA ให้ใช้ JAK เฉพาะเมื่อไม่มีทางเลือกอื่นในผู้อายุ ≥65 ปี สูบบุหรี่ หรือมีโรคหัวใจ จึงควรเลือก non-TNF biologic",
-        "reason": "โจทย์ถามอะไร: ผู้ป่วยล้มเหลวต่อ TNFi และมีความเสี่ยงหัวใจสูง ถามการรักษาลำดับถัดไป\n\nหลักการ/กลไกเชิงลึก: ORAL Surveillance เปรียบเทียบ tofacitinib กับ TNFi ในผู้ป่วย RA อายุ ≥50 ปีที่มี CV risk factor ≥1 พบ MACE (HR ~1.33) และมะเร็ง (HR ~1.48) สูงกว่า และ VTE/PE เพิ่มในขนาด 10 mg BID ส่งผลให้ FDA ออก boxed warning สำหรับ JAK inhibitor ทุกตัว (tofacitinib, baricitinib, upadacitinib) เรื่อง serious infection, mortality, malignancy, MACE และ thrombosis EMA (2022) แนะนำใช้ในผู้อายุ ≥65 ปี, สูบบุหรี่ (ปัจจุบัน/อดีตนาน), มี ASCVD หรือเสี่ยงมะเร็ง เฉพาะเมื่อไม่มีทางเลือกที่เหมาะสม\n\nทำไมข้อ A ถูก: ผู้ป่วยมีครบทั้งอายุ ≥65, สูบบุหรี่ และเคย MI การเปลี่ยนไปใช้ bDMARD กลไกอื่น (abatacept, tocilizumab, rituximab) ตามคำแนะนำ ACR 2021 ที่ให้เปลี่ยนกลไกหลังล้มเหลว TNFi จึงเหมาะที่สุด\n\nการประยุกต์กับผู้ป่วยจริง: เภสัชกรควรให้คำแนะนำเลิกบุหรี่ ควบคุมไขมัน/ความดัน และหากต้องใช้ tocilizumab ให้ติดตาม lipid; tofacitinib สำหรับ RA ใช้ 5 mg BID (หรือ XR 11 mg/วัน) ขนาด 10 mg BID ไม่ได้รับอนุมัติใน RA\n\nจุดที่มักสับสนและกับดักข้อสอบ: การเป็นยารับประทานไม่ได้ทำให้ปลอดภัยกว่า; ขนาด 10 mg BID เป็นขนาดที่เพิ่ม VTE ชัดเจน; prednisolone ขนาดสูงระยะยาวเพิ่มความเสี่ยงหัวใจและกระดูกพรุน\n\nสรุปท่องสอบ: JAK inhibitor: ระวังใน ≥65 ปี / สูบบุหรี่ / ASCVD / มะเร็ง / VTE",
+        "summary": "ORAL Surveillance พบ JAK inhibitor เพิ่ม MACE, VTE, มะเร็ง และการเสียชีวิตในผู้ป่วยอายุ ≥50 ปีที่มี CV risk หน่วยงานกำกับยาให้ใช้ JAK เฉพาะเมื่อไม่มีทางเลือกที่เหมาะสมในผู้อายุ ≥65 ปี สูบบุหรี่ หรือมีโรคหัวใจ จึงควรเปลี่ยนเป็น bDMARD กลไกอื่น",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วยชายอายุ 68 ปี สูบบุหรี่ 30 pack-years ยังสูบอยู่ เคย MI ตอบสนองไม่พอต่อ MTX + adalimumab แม้ใช้ยาสม่ำเสมอ โจทย์ถามการรักษาลำดับถัดไปที่เหมาะสม ซึ่งต้องชั่งทั้งประสิทธิภาพหลัง TNFi ล้มเหลวและความปลอดภัยด้านหัวใจและหลอดเลือด\n\nหลักการ/กลไกเชิงลึก: ผู้ป่วย RA มีความเสี่ยง ASCVD สูงกว่าประชากรทั่วไปราว 1.5–2 เท่า จากการอักเสบเรื้อรัง (IL-6, TNF ทำให้ endothelial dysfunction และ plaque ไม่เสถียร) ร่วมกับปัจจัยดั้งเดิม การคุมโรคให้สงบจึงลด CV risk ได้ส่วนหนึ่ง แต่ JAK inhibitor มีสัญญาณเพิ่ม MACE และ VTE โดยกลไกยังไม่ชัด (อาจเกี่ยวกับ lipid, platelet และ endothelium) เมื่อ TNFi ล้มเหลวทั้งที่ใช้ยาสม่ำเสมอ (primary/secondary failure) การเปลี่ยนไปยากลไกอื่นมักได้ผลดีกว่าการเปลี่ยน TNFi ตัวที่สอง\n\nทำไมข้อ A ถูก: ผู้ป่วยมีครบทั้งอายุ ≥65 ปี สูบบุหรี่ และ ASCVD จึงควรเลี่ยง JAK inhibitor และเปลี่ยนเป็น bDMARD กลไกอื่น เช่น abatacept หรือ tocilizumab ร่วมกับ MTX ซึ่งตรงกับ ACR 2021 ที่แนะนำเปลี่ยนกลไกเมื่อ TNFi ล้มเหลว\n\nหลักฐานและแนวทางเวชปฏิบัติ: ORAL Surveillance เปรียบเทียบ tofacitinib กับ TNFi ในผู้ป่วย RA อายุ ≥50 ปีที่มี CV risk factor ≥1 ไม่ผ่านเกณฑ์ non-inferiority โดย MACE (HR ~1.33) และมะเร็ง (HR ~1.48) สูงกว่า และ VTE/PE เพิ่มชัดในขนาด 10 mg BID FDA จึงออก boxed warning สำหรับ JAK inhibitor ทุกตัว และ EMA (2022–2023) ให้ใช้ในผู้อายุ ≥65 ปี ผู้สูบบุหรี่ (ปัจจุบันหรืออดีตนาน) หรือผู้มี ASCVD/เสี่ยงมะเร็ง เฉพาะเมื่อไม่มีทางเลือกที่เหมาะสม EULAR (2016) แนะนำประเมิน CV risk ในผู้ป่วย RA อย่างน้อยทุก 5 ปี และคุม lipid, ความดัน, บุหรี่ ตามแนวทางทั่วไป\n\nการประยุกต์กับผู้ป่วยจริง: เภสัชกรควรให้คำปรึกษาเลิกบุหรี่ (nicotine replacement, varenicline) ซึ่งช่วยทั้งหัวใจและการตอบสนองต่อ DMARD ตรวจว่าได้ antiplatelet, high-intensity statin และยาหลัง MI ครบ ลด glucocorticoid และ NSAID ให้น้อยที่สุด หากเลือก tocilizumab ให้ตรวจ lipid ที่ 4–8 สัปดาห์ และปรับ statin ตามเป้า LDL\n\nการติดตามและสัญญาณอันตราย: ติดตาม disease activity ที่ 3 และ 6 เดือนหลังเปลี่ยนยา ติดตามอาการเจ็บหน้าอก หอบเหนื่อย ขาบวมข้างเดียว (DVT) ความดันโลหิต และ lipid ถ้าในอนาคตจำเป็นต้องใช้ JAK เพราะไม่มีทางเลือกอื่น ต้องอธิบายความเสี่ยงให้ผู้ป่วยเข้าใจ ใช้ขนาดต่ำสุด และติดตามอย่างใกล้ชิด\n\nจุดที่มักสับสนและกับดักข้อสอบ: การเป็นยารับประทานไม่ได้ทำให้ปลอดภัยกว่า; boxed warning ครอบคลุม JAK ทุกตัว; tofacitinib สำหรับ RA คือ 5 mg BID (หรือ XR 11 mg/วัน) ขนาด 10 mg BID ไม่ได้รับอนุมัติใน RA; prednisolone ขนาดสูงระยะยาวเพิ่ม CV risk เช่นกัน\n\nสรุปท่องสอบ: TNFi fail → เปลี่ยนกลไก; ≥65 ปี / สูบบุหรี่ / ASCVD / มะเร็ง / VTE → เลี่ยง JAK → เลือก abatacept, IL-6R inhibitor หรือ rituximab",
         "choices": [
           {
             "label": "A",
             "text": "เปลี่ยน adalimumab เป็น bDMARD กลไกอื่น เช่น abatacept หรือ tocilizumab ร่วมกับ MTX",
-            "explanation": "✓ ถูก — เปลี่ยนกลไกเป็น non-TNF biologic หลีกเลี่ยงความเสี่ยง MACE จาก JAK"
+            "explanation": "✓ ถูก — ผู้ป่วยล้มเหลวต่อ TNFi และมีความเสี่ยงหัวใจครบ (อายุ ≥65, สูบบุหรี่, เคย MI) การเปลี่ยนเป็น bDMARD กลไกอื่น เช่น abatacept หรือ tocilizumab ร่วมกับ MTX สอดคล้องกับ ACR 2021 และหลีกเลี่ยงความเสี่ยง MACE/VTE ของ JAK ตามผล ORAL Surveillance ร่วมกับการช่วยเลิกบุหรี่และคุมปัจจัยเสี่ยงหัวใจ"
           },
           {
             "label": "B",
             "text": "เปลี่ยนเป็น tofacitinib 10 mg วันละ 2 ครั้ง เพื่อให้ได้ผลเร็ว",
-            "explanation": "✗ ผิด — JAK ในผู้มีความเสี่ยงหัวใจสูง และ 10 mg BID เพิ่ม VTE ไม่ใช่ขนาดสำหรับ RA"
+            "explanation": "✗ ผิด — Tofacitinib เป็น JAK inhibitor ที่ ORAL Surveillance พบว่าเพิ่ม MACE และมะเร็งในผู้ที่มี CV risk และขนาด 10 mg BID เพิ่ม VTE ชัด ทั้งไม่ใช่ขนาดที่อนุมัติใน RA (5 mg BID) ข้อนี้จะใกล้ถูกหากผู้ป่วยอายุน้อยกว่า 50 ปี ไม่สูบบุหรี่ ไม่มี ASCVD/VTE และใช้ขนาด 5 mg BID หลัง TNFi ล้มเหลว"
           },
           {
             "label": "C",
             "text": "เปลี่ยนเป็น baricitinib 4 mg/วัน โดยไม่ต้องประเมินความเสี่ยงหัวใจเพราะเป็นยารับประทาน",
-            "explanation": "✗ ผิด — boxed warning ครอบคลุม JAK ทุกตัว ต้องประเมินความเสี่ยงเสมอ"
+            "explanation": "✗ ผิด — Baricitinib เป็น JAK inhibitor ที่อยู่ภายใต้ boxed warning และคำแนะนำของ EMA เช่นเดียวกัน การเป็นยารับประทานไม่ได้ลดความเสี่ยง และต้องประเมิน CV/VTE/มะเร็งเสมอ (ผู้อายุ ≥75 ปีหรือ CrCl ต่ำใช้ 2 mg) ข้อนี้จะเป็นทางเลือกได้ในผู้ป่วยที่ไม่มีปัจจัยเสี่ยง หรือเมื่อไม่มีทางเลือกอื่นที่เหมาะสมหลังอธิบายความเสี่ยงแล้ว"
           },
           {
             "label": "D",
             "text": "เพิ่ม prednisolone 20 mg/วัน ต่อเนื่องระยะยาวร่วมกับ MTX + adalimumab เดิม",
-            "explanation": "✗ ผิด — glucocorticoid ขนาดสูงระยะยาวไม่ใช่กลยุทธ์ที่เหมาะสม และเพิ่มความเสี่ยงหัวใจ"
+            "explanation": "✗ ผิด — Prednisolone 20 mg/วันต่อเนื่องระยะยาวเพิ่มความเสี่ยงหัวใจ เบาหวาน กระดูกพรุน ติดเชื้อ และไม่ได้แก้ปัญหาว่า TNFi ไม่ได้ผล การคงยาเดิมที่ล้มเหลวไว้แล้วเพิ่ม steroid ขัดหลัก treat-to-target ข้อนี้อาจใช้ได้เพียงระยะสั้นมากเป็น bridging ระหว่างรอยาใหม่ออกฤทธิ์ ในขนาดต่ำที่สุดเท่านั้น"
           }
         ],
         "key_takeaway": "เคย MI + สูบบุหรี่ + อายุ ≥65 → หลีกเลี่ยง JAK inhibitor"
@@ -992,33 +1009,33 @@
       ],
       "correct_answer": "B",
       "difficulty": "easy",
-      "explanation": "JAK inhibitor เพิ่มความเสี่ยง herpes zoster ชัดเจน ACR แนะนำ RZV (Shingrix, non-live) ในผู้ป่วยอายุ ≥18 ปีที่ใช้ยากดภูมิ ควรฉีดก่อนเริ่มยา",
+      "explanation": "JAK inhibitor เพิ่มความเสี่ยง herpes zoster ชัดเจน (สูงในชาวเอเชีย) ACR 2022 แนะนำ recombinant zoster vaccine (RZV, non-live) 2 เข็มในผู้ป่วยอายุ ≥18 ปีที่ใช้ยากดภูมิ และควรเริ่มฉีดก่อนเริ่มยาเมื่อทำได้",
       "detailed_explanation": {
-        "summary": "JAK inhibitor เพิ่มความเสี่ยง herpes zoster ชัดเจน ACR แนะนำ RZV (Shingrix, non-live) ในผู้ป่วยอายุ ≥18 ปีที่ใช้ยากดภูมิ ควรฉีดก่อนเริ่มยา",
-        "reason": "โจทย์ถามอะไร: ถามการป้องกัน herpes zoster ก่อนเริ่ม JAK inhibitor\n\nหลักการ/กลไกเชิงลึก: JAK1/JAK3 signaling สำคัญต่อ interferon และ cytokine ที่ควบคุมการติดเชื้อไวรัส (เช่น IL-15, type I IFN ซึ่งสำคัญต่อ NK และ CD8 T cell) การยับยั้งจึงทำให้ VZV reactivation สูงกว่า biologic ประมาณ 2 เท่า พบมากขึ้นในชาวเอเชีย (รวมคนไทยและญี่ปุ่น/เกาหลี) ผู้สูงอายุ และผู้ที่ใช้ glucocorticoid ร่วม RZV เป็น recombinant glycoprotein E + adjuvant ไม่มีเชื้อมีชีวิต จึงใช้ได้ในผู้กดภูมิ ส่วน live vaccine (ZVL, MMR, varicella, yellow fever) ห้ามให้ระหว่างใช้ JAK/biologic\n\nทำไมข้อ B ถูก: ข้อ B ถูกทั้งชนิดวัคซีน จำนวนเข็ม และเวลาให้\n\nการประยุกต์กับผู้ป่วยจริง: เภสัชกรควรทบทวนประวัติวัคซีน (pneumococcal, influenza, HBV, RZV) ก่อนเริ่ม b/tsDMARD และสอนผู้ป่วยให้สังเกตผื่นตุ่มน้ำตามแนวเส้นประสาทเพื่อรีบรักษาด้วย antiviral ภายใน 72 ชั่วโมง\n\nจุดที่มักสับสนและกับดักข้อสอบ: ZVL เป็น live vaccine ห้ามให้หลังเริ่มยากดภูมิ; การให้ acyclovir ป้องกันระยะยาวไม่ใช่มาตรฐานสำหรับ JAK; JAK inhibitor เพิ่ม zoster ชัดเจนกว่ายากลุ่มอื่น\n\nสรุปท่องสอบ: JAK → งูสวัด↑ → ฉีด RZV (non-live) ก่อนเริ่มยา",
+        "summary": "JAK inhibitor เพิ่มความเสี่ยง herpes zoster ชัดเจน (สูงในชาวเอเชีย) ACR 2022 แนะนำ recombinant zoster vaccine (RZV, non-live) 2 เข็มในผู้ป่วยอายุ ≥18 ปีที่ใช้ยากดภูมิ และควรเริ่มฉีดก่อนเริ่มยาเมื่อทำได้",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วยหญิงอายุ 58 ปีจะเริ่ม tofacitinib 5 mg BID ร่วมกับ MTX ไม่เคยเป็นงูสวัด โจทย์ถามการป้องกันที่เหมาะสมที่สุด ซึ่งต้องรู้ทั้ง ADR เด่นของ JAK inhibitor และชนิดวัคซีนที่ใช้ได้ในผู้กดภูมิ\n\nหลักการ/กลไกเชิงลึก: VZV แฝงตัวใน dorsal root ganglion หลังเป็นอีสุกอีใส และถูกควบคุมด้วย cell-mediated immunity การส่งสัญญาณผ่าน JAK1/JAK3 จำเป็นต่อ type I/II interferon และ γc cytokine เช่น IL-2, IL-15 ซึ่งสำคัญต่อ NK cell และ CD8 T cell การยับยั้ง JAK จึงทำให้ VZV reactivate บ่อยกว่า bDMARD ราว 2 เท่า พบมากในชาวเอเชีย (ไทย ญี่ปุ่น เกาหลี) ผู้สูงอายุ และผู้ใช้ glucocorticoid ร่วม RZV ประกอบด้วย glycoprotein E + adjuvant AS01B ไม่มีเชื้อมีชีวิต จึงใช้ได้ในผู้กดภูมิและกระตุ้น CD4 T cell ได้ดี ส่วน live vaccine ทุกชนิดห้ามในผู้ใช้ JAK/biologic\n\nทำไมข้อ B ถูก: ข้อ B เลือกชนิดวัคซีนถูก (RZV, non-live), จำนวนเข็มถูก (2 เข็ม ห่าง 2–6 เดือน; ในผู้กดภูมิอาจย่นเหลือ 1–2 เดือน) และจังหวะเวลาถูก (เริ่มก่อนเริ่ม JAK เมื่อทำได้ เพื่อให้ภูมิขึ้นดีที่สุด)\n\nหลักฐานและแนวทางเวชปฏิบัติ: ACR 2022 vaccination guideline แนะนำ RZV ในผู้ป่วยโรคข้อและภูมิต้านตนเองอายุ ≥18 ปีที่ใช้ยากดภูมิ ACIP แนะนำ RZV ในผู้อายุ ≥19 ปีที่ภูมิคุ้มกันบกพร่อง และ ≥50 ปีในประชากรทั่วไป RZV มีประสิทธิภาพป้องกันงูสวัดเกิน 90% ในผู้สูงอายุ (ZOE-50/70) ข้อมูลในผู้ป่วย RA ที่ใช้ JAK แสดงว่ากระตุ้นภูมิได้ดีและไม่ทำให้โรคกำเริบอย่างมีนัยสำคัญ\n\nการประยุกต์กับผู้ป่วยจริง: ฉีด RZV 0.5 mL IM เข็มแรกก่อนเริ่ม tofacitinib (อย่างน้อย 2 สัปดาห์ถ้าทำได้) เข็มที่สองอีก 2–6 เดือน ไม่ต้องตรวจ VZV serology และให้ได้แม้ไม่เคยเป็นงูสวัด แจ้งผู้ป่วยว่าอาจปวด บวม แดงที่แขน อ่อนเพลีย ไข้ต่ำ 1–3 วัน ซึ่งไม่อันตราย ทบทวนวัคซีนอื่นก่อนเริ่ม b/tsDMARD ได้แก่ influenza, pneumococcal (PCV ตามด้วย PPSV23 หรือ PCV20), HBV ในผู้ไม่มีภูมิ\n\nการติดตามและสัญญาณอันตราย: สอนผู้ป่วยสังเกตอาการปวดแสบร้อนตามแนวเส้นประสาทข้างเดียว ตามด้วยตุ่มน้ำ ให้รีบมาพบแพทย์เพื่อรับ antiviral (acyclovir/valacyclovir) ภายใน 72 ชั่วโมง งด JAK ระหว่างติดเชื้อ ถ้าผื่นกระจายหลาย dermatome หรือขึ้นที่ตา (herpes zoster ophthalmicus) ต้องรักษาเร่งด่วน\n\nจุดที่มักสับสนและกับดักข้อสอบ: ZVL (Zostavax) เป็น live vaccine ห้ามให้ระหว่างใช้ยากดภูมิ; การให้ acyclovir ป้องกันระยะยาวไม่ใช่มาตรฐานสำหรับ JAK; การไม่เคยเป็นงูสวัดไม่ได้หมายความว่าไม่เสี่ยง (เกือบทุกคนในวัยนี้เคยติด VZV); JAK เพิ่ม zoster ชัดกว่า bDMARD\n\nสรุปท่องสอบ: JAK → งูสวัด↑ (โดยเฉพาะคนเอเชีย) → RZV (non-live) 2 เข็ม ก่อนเริ่มยา; ห้าม live vaccine",
         "choices": [
           {
             "label": "A",
             "text": "ฉีด live attenuated zoster vaccine (ZVL) หลังเริ่ม tofacitinib แล้ว 1 เดือน",
-            "explanation": "✗ ผิด — ZVL เป็น live vaccine ห้ามให้ระหว่างใช้ JAK inhibitor"
+            "explanation": "✗ ผิด — ZVL เป็น live attenuated vaccine ห้ามให้ในผู้ที่ใช้ JAK inhibitor, bDMARD หรือ MTX ขนาดสูงร่วม เพราะเสี่ยงติดเชื้อจากวัคซีนแบบแพร่กระจาย และปัจจุบันถูกแทนด้วย RZV ที่ได้ผลดีกว่า ในอดีต ZVL อาจให้ได้ก่อนเริ่มยากดภูมิอย่างน้อย 4 สัปดาห์ในผู้ที่ภูมิยังปกติ แต่ไม่ใช่หลังเริ่ม tofacitinib แล้ว"
           },
           {
             "label": "B",
             "text": "ฉีด recombinant zoster vaccine (RZV) ซึ่งเป็นวัคซีนชนิดไม่มีชีวิต 2 เข็ม ห่างกัน 2–6 เดือน โดยควรเริ่มก่อนเริ่ม tofacitinib",
-            "explanation": "✓ ถูก — RZV ปลอดภัยในผู้กดภูมิ และควรให้ก่อนเริ่มยา"
+            "explanation": "✓ ถูก — RZV (recombinant glycoprotein E + adjuvant) เป็นวัคซีนชนิดไม่มีชีวิต ใช้ได้อย่างปลอดภัยในผู้กดภูมิ ACR 2022 แนะนำในผู้ป่วยอายุ ≥18 ปีที่ใช้ยากดภูมิ ฉีด 2 เข็มห่างกัน 2–6 เดือน (ผู้กดภูมิอาจย่นเหลือ 1–2 เดือน) และควรเริ่มก่อน tofacitinib เพื่อให้ภูมิขึ้นดีที่สุด ป้องกัน ADR เด่นของ JAK คืองูสวัด"
           },
           {
             "label": "C",
             "text": "ไม่ต้องฉีดวัคซีนเพราะ tofacitinib ไม่เพิ่มความเสี่ยงงูสวัด",
-            "explanation": "✗ ผิด — herpes zoster เป็น ADR เด่นของ JAK inhibitor"
+            "explanation": "✗ ผิด — Herpes zoster เป็น ADR เด่นของ JAK inhibitor ทุกตัว อัตราสูงกว่า bDMARD ราว 2 เท่า โดยเฉพาะในคนเอเชียและผู้ใช้ steroid ร่วม การไม่ฉีดวัคซีนจึงผิด ข้อนี้จะใกล้ถูกหากผู้ป่วยใช้เพียง hydroxychloroquine หรือ sulfasalazine และอายุน้อยกว่า 50 ปี ซึ่งความเสี่ยงต่ำและวัคซีนเป็นทางเลือกไม่ใช่ข้อบังคับ"
           },
           {
             "label": "D",
             "text": "ให้ acyclovir รับประทานป้องกันตลอดระยะเวลาที่ใช้ tofacitinib แทนการฉีดวัคซีน",
-            "explanation": "✗ ผิด — antiviral prophylaxis ระยะยาวไม่ใช่คำแนะนำมาตรฐาน วัคซีนคือวิธีป้องกันหลัก"
+            "explanation": "✗ ผิด — Antiviral prophylaxis ระยะยาวไม่ใช่คำแนะนำมาตรฐานสำหรับ JAK inhibitor ใน RA มีภาระการกินยา ค่าใช้จ่าย และ ADR โดยวัคซีนเป็นวิธีป้องกันหลัก การให้ acyclovir/valacyclovir ป้องกันจะเหมาะในบางบริบท เช่น ผู้ป่วยมะเร็งที่ได้ bortezomib, หลังปลูกถ่ายไขกระดูก หรือ HSV กำเริบบ่อย"
           }
         ],
-        "key_takeaway": "JAK = งูสวัด; ป้องกันด้วย Shingrix (RZV)"
+        "key_takeaway": "JAK = งูสวัด; ป้องกันด้วย Shingrix (RZV) ก่อนเริ่มยา"
       }
     }
   ]
