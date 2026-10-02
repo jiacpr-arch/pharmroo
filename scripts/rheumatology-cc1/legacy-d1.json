@@ -27,7 +27,7 @@
         }
       ],
       "correct_answer": "E",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "explanation": "ผู้ป่วยมี fragility fracture ภายใน 12 เดือนและ T-score < −3.0 ซึ่งเป็นเกณฑ์ very high risk ตาม AACE 2020 จึงควรพิจารณา anabolic agent (teriparatide, abaloparatide หรือ romosozumab) เป็นยาเริ่มต้น แล้วตามด้วย antiresorptive เสมอ",
       "detailed_explanation": {
         "summary": "Fracture ภายใน 12 เดือน + T-score −3.3 = very high risk → anabolic first แล้วต่อด้วย antiresorptive",
@@ -88,7 +88,7 @@
         }
       ],
       "correct_answer": "A",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "explanation": "หญิงวัยหมดประจำเดือนที่เป็น osteoporosis ความเสี่ยงสูง (ไม่ใช่ very high risk) ควรเริ่มด้วย bisphosphonate ชนิดรับประทาน เช่น alendronate ซึ่งลด vertebral, hip และ non-vertebral fracture ได้ ราคาถูก และมีข้อมูลระยะยาว",
       "detailed_explanation": {
         "summary": "T-score −2.9 ไม่มีกระดูกหัก = high risk → alendronate เป็น first-line ร่วมกับ Ca/vitamin D",
@@ -149,7 +149,7 @@
         }
       ],
       "correct_answer": "C",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "explanation": "Bradykinesia เป็นอาการของ Parkinson's disease หรือ drug-induced parkinsonism จากยาต้าน dopamine ไม่เกี่ยวกับ bisphosphonate ส่วน esophageal ulcer, ONJ, atypical femoral fracture เป็น ADR ที่ยอมรับ และ atrial fibrillation เป็นสัญญาณที่มีรายงานแต่ข้อมูลยังไม่สอดคล้องกัน",
       "detailed_explanation": {
         "summary": "Bradykinesia ไม่ใช่ ADR ของ alendronate; ADR จริงคือ GI/esophagitis, ONJ, AFF, hypocalcemia, musculoskeletal pain (AF เป็นสัญญาณที่ยังไม่สอดคล้อง)",
@@ -295,7 +295,7 @@
           {
             "label": "D",
             "text": "T-score ≤ −1.5",
-            "explanation": "✗ ผิด — −1.5 ไม่มีความหมายในเกณฑ์ WHO ค่านี้อยู่ในช่วง osteopenia (−1.0 ถึง −2.5) เท่านั้น ในบางแนวทางค่าประมาณ −1.5 ถึง −2.0 ใช้ร่วมกับปัจจัยเสี่ยงในการตัดสินใจรักษา เช่น ACR GIOP ใช้ T-score −1.0 ถึง −2.5 ร่วมกับ FRAX ในผู้ที่ใช้ glucocorticoid ตัวเลือกนี้จะถูกเฉพาะเมื่อโจทย์ถามถึง T-score ที่อยู่ในช่วง osteopenia"
+            "explanation": "✗ ผิด — −1.5 ไม่ใช่จุดตัดใดในเกณฑ์ WHO ค่านี้อยู่ในช่วง osteopenia (ต่ำกว่า −1.0 แต่ยังสูงกว่า −2.5) ซึ่งการตัดสินใจเริ่มยาขึ้นกับ FRAX (hip ≥3% หรือ major osteoporotic ≥20%) ไม่ใช่ตัวเลข T-score เพียงอย่างเดียว ตัวเลือกนี้จะถูกเฉพาะเมื่อโจทย์ถามว่า T-score ค่าใดจัดอยู่ในช่วง osteopenia หรือเมื่อผู้ป่วยที่มี T-score −1.5 มี FRAX สูงเกินเกณฑ์ ซึ่งควรพิจารณารักษาแม้ T-score ไม่ถึง −2.5"
           },
           {
             "label": "E",
