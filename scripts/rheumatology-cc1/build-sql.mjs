@@ -5,12 +5,16 @@ import { readFileSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { basename } from "node:path";
 
-const SUBJECT_ID = "06991a85-412e-476e-89ff-32b0a7b92e6c"; // กระดูกและข้อ (Rheumatology)
+// Defaults are for the rheumatology batches; other subjects set `subject_id`, `id_prefix` and `ai_notes` in the batch file.
+const DEFAULT_SUBJECT_ID = "06991a85-412e-476e-89ff-32b0a7b92e6c"; // กระดูกและข้อ (Rheumatology)
 const file = process.argv[2];
 const checkOnly = process.argv.includes("--check");
 const upsert = process.argv.includes("--upsert");
 const batch = JSON.parse(readFileSync(file, "utf8"));
 const name = basename(file, ".json");
+const SUBJECT_ID = batch.subject_id ?? DEFAULT_SUBJECT_ID;
+const ID_PREFIX = batch.id_prefix ?? "rheum-cc1";
+const AI_NOTES = batch.ai_notes ?? "AI-drafted; rheumatology CC1 top-up";
 
 const errors = [];
 if (![1, 2].includes(batch.exam_day)) errors.push("exam_day must be 1 or 2");
@@ -55,8 +59,8 @@ if (checkOnly) process.exit(0);
 const lit = (s) => (s == null ? "NULL" : "'" + String(s).replace(/'/g, "''") + "'");
 const rows = batch.questions.map((q, i) => {
   // Legacy rows keep their original id; new rows get a stable id from file name + index.
-  const id = q.id ?? createHash("md5").update(`rheum-cc1:${name}:${i}`).digest("hex");
-  return `(${lit(id)}, ${lit(SUBJECT_ID)}, 'PLE-CC1', 'AI-draft', ${batch.exam_day}, ${lit(q.scenario)}, ${lit(JSON.stringify(q.choices))}::jsonb, ${lit(q.correct_answer)}, ${lit(q.explanation)}, ${lit(JSON.stringify(q.detailed_explanation))}::jsonb, ${lit(q.difficulty)}, false, 'AI-drafted; rheumatology CC1 top-up', 'active')`;
+  const id = q.id ?? createHash("md5").update(`${ID_PREFIX}:${name}:${i}`).digest("hex");
+  return `(${lit(id)}, ${lit(SUBJECT_ID)}, 'PLE-CC1', 'AI-draft', ${batch.exam_day}, ${lit(q.scenario)}, ${lit(JSON.stringify(q.choices))}::jsonb, ${lit(q.correct_answer)}, ${lit(q.explanation)}, ${lit(JSON.stringify(q.detailed_explanation))}::jsonb, ${lit(q.difficulty)}, false, ${lit(AI_NOTES)}, 'active')`;
 });
 console.log(
   `INSERT INTO mcq_questions (id, subject_id, exam_type, exam_source, exam_day, scenario, choices, correct_answer, explanation, detailed_explanation, difficulty, is_ai_enhanced, ai_notes, status) VALUES\n` +
