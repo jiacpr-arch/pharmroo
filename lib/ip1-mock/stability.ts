@@ -751,7 +751,7 @@ export const STABILITY: Ip1MockDomainContent = [
     },
     {
       t: "Decarboxylation of aminosalicylic acid",
-      p: "Para-aminosalicylic acid (PAS) ในรูป granule เมื่อสัมผัสความร้อนและความชื้นจะเปลี่ยนเป็นสีน้ำตาลและเกิดสารที่เป็นพิษต่อตับ ปฏิกิริยาหลักและผลิตภัณฑ์ที่เกิดคืออะไร",
+      p: "Para-aminosalicylic acid (PAS) ในรูป granule เมื่อสัมผัสความร้อนและความชื้นจะเปลี่ยนเป็นสีน้ำตาลและเกิดสารที่เป็นพิษมากกว่าตัวยาเดิม ปฏิกิริยาหลักและผลิตภัณฑ์ที่เกิดคืออะไร",
       o: [
         "Decarboxylation ได้ m-aminophenol และ CO₂",
         "Ester hydrolysis ได้ salicylic acid",
