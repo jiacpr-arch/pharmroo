@@ -7,6 +7,10 @@ export interface SubjectConfig {
   name_th: string;
   exam_type: "PLE-CC1" | "PLE-PC" | "NLE";
   exam_day?: 1 | 2;
+  /** Rotate generated questions across these exam days by batchIndex (overrides exam_day). */
+  exam_days?: (1 | 2)[];
+  /** Non-clinical subjects get a prompt that keeps questions on the subject instead of pharmacotherapy cases. */
+  focus?: "law";
   topic_areas: string[];
 }
 
@@ -103,15 +107,17 @@ export const SUBJECT_CONFIGS: SubjectConfig[] = [
     name: "PharmacyLaw",
     name_th: "กฎหมายยา/จริยธรรม",
     exam_type: "PLE-CC1",
-    exam_day: 2,
+    exam_days: [1, 2],
+    focus: "law",
     topic_areas: [
-      "พ.ร.บ.ยา พ.ศ. 2510: ประเภทยา, ใบอนุญาต, บทลงโทษ",
-      "ยาควบคุมพิเศษ vs ยาอันตราย vs ยาสามัญ",
-      "GPP/GMP มาตรฐาน",
-      "พ.ร.บ.วัตถุออกฤทธิ์ต่อจิตและประสาท: schedule I-IV",
-      "จรรยาบรรณวิชาชีพเภสัชกรรม",
-      "Pharmacovigilance: ADR reporting",
-      "พ.ร.บ.คุ้มครองผู้บริโภค และ พ.ร.บ.อาหาร",
+      "พ.ร.บ.ยา พ.ศ. 2510: ประเภทยา, ใบอนุญาต ขย.1/ขย.2, หน้าที่ผู้มีหน้าที่ปฏิบัติการ, บทลงโทษ",
+      "ยาควบคุมพิเศษ vs ยาอันตราย vs ยาสามัญประจำบ้าน, ทะเบียนตำรับ, ฉลาก, การโฆษณายา",
+      "มาตรฐาน GPP ร้านขายยา และ GMP",
+      "ประมวลกฎหมายยาเสพติด พ.ศ. 2564: ยาเสพติดให้โทษ/วัตถุออกฤทธิ์ การจัดประเภท ใบอนุญาต บัญชีรับ-จ่าย",
+      "พ.ร.บ.วิชาชีพเภสัชกรรม พ.ศ. 2537 และข้อบังคับจรรยาบรรณแห่งวิชาชีพเภสัชกรรม",
+      "จริยธรรม: การรักษาความลับ, informed consent, ผลประโยชน์ทับซ้อน, พ.ร.บ.สุขภาพแห่งชาติ, PDPA",
+      "Pharmacovigilance: ระบบรายงาน ADR, Safety Monitoring Program",
+      "พ.ร.บ.อาหาร, พ.ร.บ.เครื่องสำอาง, พ.ร.บ.เครื่องมือแพทย์, พ.ร.บ.ผลิตภัณฑ์สมุนไพร, พ.ร.บ.คุ้มครองผู้บริโภค",
     ],
   },
   {
@@ -484,7 +490,7 @@ export const SUBJECT_CONFIGS: SubjectConfig[] = [
 
 // ─── Prompt builder ────────────────────────────────────────────────────────────
 
-function buildPrompt(subject: SubjectConfig, count: number, batchIndex: number): string {
+export function buildPrompt(subject: SubjectConfig, count: number, batchIndex: number): string {
   const n = subject.topic_areas.length;
   const start = (batchIndex * 3) % n;
   const rotated = [
@@ -565,6 +571,66 @@ ${topics.map((t, i) => `${i + 1}. ${t}`).join("\n")}
 ]`;
   }
 
+  const contentRules =
+    subject.focus === "law"
+      ? `[ขอบเขต — สำคัญที่สุด]
+- ทุกข้อต้องวัดความรู้ด้านกฎหมาย ระเบียบ มาตรฐานวิชาชีพ หรือจริยธรรม คำตอบที่ถูกต้องต้องตัดสินได้ด้วยหลักกฎหมาย/จริยธรรม
+- ห้ามออกโจทย์เภสัชบำบัด: ห้ามถามการเลือกยา ขนาดยา การปรับยาตามไต drug interaction หรือการติดตามผลการรักษา
+- ข้อมูลผู้ป่วย (อายุ โรค ยา) ใส่ได้เฉพาะเป็นบริบท ไม่ต้องมีค่าแล็บ/vital signs
+- กฎหมายยาเสพติดให้อ้าง ประมวลกฎหมายยาเสพติด พ.ศ. 2564 (ไม่ใช่ พ.ร.บ.ยาเสพติดให้โทษ 2522 หรือ พ.ร.บ.วัตถุออกฤทธิ์ 2559 ที่ถูกยกเลิกแล้ว)
+- เลี่ยงตัวเลขค่าปรับ เลขมาตรา หรือการจัดประเภทยาที่ไม่แน่ใจ ให้วัดหลักการแทน
+- ใน batch เดียวกันห้ามถามประเด็นซ้ำกัน (เช่น "ยาใดเป็นยาควบคุมพิเศษ" ได้ไม่เกิน 1 ข้อ)
+
+[Difficulty distribution]
+- 30% easy / 50% medium / 20% hard (ต้องระบุใน field)
+
+[ความยาว + เนื้อหาตาม difficulty]
+- easy (1-2 ประโยค): recall — นิยาม ประเภทยา ประเภทใบอนุญาต หน้าที่ตามกฎหมาย
+- medium (3-5 ประโยค): สถานการณ์ในร้านยา/โรงพยาบาล/บริษัท ที่ต้องตัดสินใจตามกฎหมายหรือจรรยาบรรณ
+- hard (5-8 ประโยค): สถานการณ์ที่มีหลายประเด็นกฎหมาย/จริยธรรมพร้อมกัน ต้องชั่งน้ำหนักว่าข้อใดถูกต้องที่สุด
+`
+      : `[Difficulty distribution]
+- 15% easy / 50% medium / 35% hard (ต้องระบุใน field)
+
+[ความยาว + เนื้อหาตาม difficulty]
+- easy (1-2 ประโยค): pure recall — MoA, drug class, common ADR, brand-generic, schedule
+- medium (3-5 ประโยค): clinical decision — **บังคับมี patient context**: อายุ + เพศ + comorbidity ≥1 + current medications ≥1 + lab/vital signs ที่จำเป็นต่อการตอบ (เช่น SCr/eGFR, K, INR, BP, HR)
+- hard (5-8 ประโยค): integration multi-step — ต้อง integrate ≥2 concepts (เช่น renal-adjusted dose + drug interaction + monitoring plan + counseling, หรือ ADR identification + alternative selection + dose conversion)
+`;
+
+  const qualityExample =
+    subject.focus === "law"
+      ? `[ตัวอย่าง hard question คุณภาพดี — ใช้เป็น quality bar]
+{
+  "scenario": "ร้านขายยาแผนปัจจุบัน (ขย.1) แห่งหนึ่ง เภสัชกรผู้มีหน้าที่ปฏิบัติการออกไปธุระช่วงบ่าย 2 ชั่วโมง โดยมอบหมายให้พนักงานขายซึ่งไม่ใช่เภสัชกรดูแลร้าน ระหว่างนั้นมีลูกค้ามาขอซื้อยาอันตรายชนิดหนึ่งโดยไม่มีใบสั่งยา พนักงานจึงขายให้ ต่อมาเจ้าหน้าที่ตรวจพบ ข้อใดอธิบายความรับผิดชอบตามกฎหมายได้ถูกต้องที่สุด",
+  "choices": [
+    {"label": "A", "text": "พนักงานขายรับผิดเพียงผู้เดียว เพราะเป็นผู้ส่งมอบยาโดยตรง"},
+    {"label": "B", "text": "ไม่มีความผิด เพราะยาอันตรายขายได้โดยไม่ต้องมีใบสั่งยา"},
+    {"label": "C", "text": "ทั้งผู้รับอนุญาตและเภสัชกรผู้มีหน้าที่ปฏิบัติการอาจมีความผิด เพราะต้องมีเภสัชกรอยู่ประจำตลอดเวลาทำการและยาอันตรายต้องส่งมอบโดยเภสัชกร"},
+    {"label": "D", "text": "เภสัชกรไม่มีความผิด เพราะได้มอบหมายงานไว้แล้วเป็นลายลักษณ์อักษร"},
+    {"label": "E", "text": "เป็นเพียงการไม่ปฏิบัติตาม GPP ซึ่งไม่มีผลทางกฎหมาย"}
+  ],
+  "correct_answer": "C",
+  "difficulty": "hard"
+}
+
+`
+      : `[ตัวอย่าง hard question คุณภาพดี — ใช้เป็น quality bar]
+{
+  "scenario": "ผู้ป่วยชาย 72 ปี น้ำหนัก 60 กก. ประวัติ HFrEF (EF 28%), AF, CKD stage 3b (eGFR 32 mL/min/1.73m²) ปัจจุบันรับยาประจำ: furosemide 40 mg OD, bisoprolol 5 mg OD, sacubitril/valsartan 49/51 mg BID, warfarin (INR 2.4 last week), spironolactone 25 mg OD ผู้ป่วยมาด้วย ankle edema เพิ่มขึ้น 1 สัปดาห์ BP 108/68, HR 62, K 4.6 mEq/L แพทย์ขอเริ่ม dapagliflozin 10 mg OD เพื่อลด HF hospitalization คำแนะนำที่สำคัญที่สุดของเภสัชกรคือข้อใด",
+  "choices": [
+    {"label": "A", "text": "เริ่ม dapagliflozin 10 mg OD ทันที ไม่ต้องปรับยาอื่น"},
+    {"label": "B", "text": "ลด furosemide ลง 50% ชั่วคราว 1-2 สัปดาห์ + monitor BP/volume status เพราะ SGLT2i มี natriuretic effect ร่วมกัน"},
+    {"label": "C", "text": "หยุด spironolactone เพื่อป้องกัน hyperkalemia จาก SGLT2i"},
+    {"label": "D", "text": "ลด dapagliflozin เป็น 5 mg OD เพราะ eGFR <45"},
+    {"label": "E", "text": "เปลี่ยน warfarin เป็น apixaban เพราะ interaction กับ SGLT2i"}
+  ],
+  "correct_answer": "B",
+  "difficulty": "hard"
+}
+
+`;
+
   return `สร้างข้อสอบ PLE (Pharmacy Licensing Examination) ไทย จำนวน ${count} ข้อ
 หมวดวิชา: ${subject.name_th}
 หัวข้อที่ครอบคลุม:
@@ -572,14 +638,7 @@ ${topics.map((t, i) => `${i + 1}. ${t}`).join("\n")}
 
 มาตรฐานคุณภาพ (สำคัญ — ผู้ใช้รายงานว่าโจทย์เก่าสั้นและง่ายเกินไป):
 
-[Difficulty distribution]
-- 15% easy / 50% medium / 35% hard (ต้องระบุใน field)
-
-[ความยาว + เนื้อหาตาม difficulty]
-- easy (1-2 ประโยค): pure recall — MoA, drug class, common ADR, brand-generic, schedule
-- medium (3-5 ประโยค): clinical decision — **บังคับมี patient context**: อายุ + เพศ + comorbidity ≥1 + current medications ≥1 + lab/vital signs ที่จำเป็นต่อการตอบ (เช่น SCr/eGFR, K, INR, BP, HR)
-- hard (5-8 ประโยค): integration multi-step — ต้อง integrate ≥2 concepts (เช่น renal-adjusted dose + drug interaction + monitoring plan + counseling, หรือ ADR identification + alternative selection + dose conversion)
-
+${contentRules}
 [Distractor quality — สำคัญที่สุด]
 - ตัวเลือกผิดต้องเป็น "common trainee mistakes" ที่หน้าตาเหมือนคำตอบจริง:
   - ยาตระกูลเดียวกันแต่ผิด indication/contraindication
@@ -595,21 +654,7 @@ ${topics.map((t, i) => `${i + 1}. ${t}`).join("\n")}
 - ชื่อยาและขนาดต้องถูกต้องตามจริง (อ้างอิง guideline ไทย/สากลล่าสุด)
 - ครอบคลุมหลาย topic ใน batch ไม่ซ้ำ
 
-[ตัวอย่าง hard question คุณภาพดี — ใช้เป็น quality bar]
-{
-  "scenario": "ผู้ป่วยชาย 72 ปี น้ำหนัก 60 กก. ประวัติ HFrEF (EF 28%), AF, CKD stage 3b (eGFR 32 mL/min/1.73m²) ปัจจุบันรับยาประจำ: furosemide 40 mg OD, bisoprolol 5 mg OD, sacubitril/valsartan 49/51 mg BID, warfarin (INR 2.4 last week), spironolactone 25 mg OD ผู้ป่วยมาด้วย ankle edema เพิ่มขึ้น 1 สัปดาห์ BP 108/68, HR 62, K 4.6 mEq/L แพทย์ขอเริ่ม dapagliflozin 10 mg OD เพื่อลด HF hospitalization คำแนะนำที่สำคัญที่สุดของเภสัชกรคือข้อใด",
-  "choices": [
-    {"label": "A", "text": "เริ่ม dapagliflozin 10 mg OD ทันที ไม่ต้องปรับยาอื่น"},
-    {"label": "B", "text": "ลด furosemide ลง 50% ชั่วคราว 1-2 สัปดาห์ + monitor BP/volume status เพราะ SGLT2i มี natriuretic effect ร่วมกัน"},
-    {"label": "C", "text": "หยุด spironolactone เพื่อป้องกัน hyperkalemia จาก SGLT2i"},
-    {"label": "D", "text": "ลด dapagliflozin เป็น 5 mg OD เพราะ eGFR <45"},
-    {"label": "E", "text": "เปลี่ยน warfarin เป็น apixaban เพราะ interaction กับ SGLT2i"}
-  ],
-  "correct_answer": "B",
-  "difficulty": "hard"
-}
-
-ตอบเป็น JSON array เท่านั้น ห้ามใส่ข้อความหรือ markdown อื่น:
+${qualityExample}ตอบเป็น JSON array เท่านั้น ห้ามใส่ข้อความหรือ markdown อื่น:
 [
   {
     "scenario": "โจทย์ข้อสอบ",
@@ -679,6 +724,11 @@ export function explanationMatchesAnswer(
   return true;
 }
 
+export function pickExamDay(subject: SubjectConfig, batchIndex: number): 1 | 2 | undefined {
+  if (subject.exam_days?.length) return subject.exam_days[batchIndex % subject.exam_days.length];
+  return subject.exam_day;
+}
+
 // ─── Main export ───────────────────────────────────────────────────────────────
 
 /**
@@ -705,6 +755,7 @@ export async function generateMcqBatch(
   if (!raw || !Array.isArray(raw)) return [];
 
   const isNLE = subject.exam_type === "NLE";
+  const examDay = pickExamDay(subject, batchIndex);
   const expectedChoices = isNLE ? 4 : 5;
   const validAnswers = isNLE ? "ABCD" : "ABCDE";
 
@@ -722,7 +773,7 @@ export async function generateMcqBatch(
       questions.push({
         subject_id: subjectId,
         exam_type: subject.exam_type,
-        ...(subject.exam_day !== undefined && { exam_day: subject.exam_day }),
+        ...(examDay !== undefined && { exam_day: examDay }),
         scenario: item.scenario as string,
         choices: item.choices as { label: string; text: string }[],
         correct_answer: item.correct_answer as string,
