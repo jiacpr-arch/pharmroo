@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { explanationMatchesAnswer } from "./generate-mcq";
+import { SUBJECT_CONFIGS, buildPrompt, explanationMatchesAnswer, pickExamDay } from "./generate-mcq";
 
 const choices = (correct: string) =>
   ["A", "B", "C", "D", "E"].map((label) => ({
@@ -43,5 +43,24 @@ describe("explanationMatchesAnswer", () => {
     expect(explanationMatchesAnswer("A", { choices: multi })).toBe(false);
     expect(explanationMatchesAnswer("A", { choices: choices("Z") })).toBe(false);
     expect(explanationMatchesAnswer("A", null)).toBe(false);
+  });
+});
+
+describe("PharmacyLaw generation", () => {
+  const law = SUBJECT_CONFIGS.find((s) => s.name === "PharmacyLaw")!;
+  const cardio = SUBJECT_CONFIGS.find((s) => s.name === "Cardiovascular")!;
+
+  it("alternates law questions between exam Day 1 and Day 2", () => {
+    expect(pickExamDay(law, 0)).toBe(1);
+    expect(pickExamDay(law, 1)).toBe(2);
+    expect(pickExamDay(cardio, 7)).toBe(1);
+  });
+
+  it("keeps the law prompt off pharmacotherapy cases", () => {
+    const prompt = buildPrompt(law, 3, 0);
+    expect(prompt).toContain("ห้ามออกโจทย์เภสัชบำบัด");
+    expect(prompt).not.toContain("บังคับมี patient context");
+    expect(prompt).not.toContain("dapagliflozin");
+    expect(buildPrompt(cardio, 3, 0)).toContain("บังคับมี patient context");
   });
 });
