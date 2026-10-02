@@ -77,7 +77,7 @@ export const QA: Ip1MockDomainContent = [
       ],
       k: "Mix-up (ผิดความแรง/ผิดตัวยา/ผิดฉลาก) = critical deviation เสมอ ต้อง quarantine และขยายขอบเขตการสอบสวน",
       d: "medium",
-      ref: "PIC/S GMP Guide PE 009 Part I Ch.1 & Ch.8; WHO TRS 1025 Annex (deviation handling)",
+      ref: "PIC/S GMP Guide PE 009 Part I Ch.1.4 and Ch.5 (prevention of mix-ups)",
     },
     {
       t: "Ishikawa 6M categorization",
@@ -440,7 +440,7 @@ export const QA: Ip1MockDomainContent = [
       ],
       k: "Recall class ขึ้นกับ health hazard (Class I = อันตรายร้ายแรง/เสียชีวิต); ความลึกของ recall ขึ้นกับว่ายาไปถึงระดับใด",
       d: "hard",
-      ref: "PIC/S GMP Guide PE 009 Part I Ch.8 Complaints and Product Recalls; WHO TRS 961 Annex 9 / FDA 21 CFR 7.3(m)",
+      ref: "PIC/S GMP Guide PE 009 Part I Ch.8 Complaints and Product Recalls; US FDA 21 CFR 7.3(m) (recall classification)",
     },
     {
       t: "Lot acceptance and complaint rate metrics",
