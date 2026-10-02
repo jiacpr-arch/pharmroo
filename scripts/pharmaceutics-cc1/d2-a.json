@@ -1,0 +1,2005 @@
+[
+  {
+    "scenario": "Syrup USP เตรียมโดยละลาย sucrose 850 g ในน้ำบริสุทธิ์แล้วปรับปริมาตรสุดท้ายเป็น 1000 mL (85% w/v) หากวัดความหนาแน่น (density) ของ syrup ที่ได้เท่ากับ 1.313 g/mL ความเข้มข้นของ sucrose ใน syrup นี้คิดเป็นร้อยละโดยน้ำหนัก (% w/w) เท่าใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "85.0% w/w"
+      },
+      {
+        "label": "B",
+        "text": "111.6% w/w"
+      },
+      {
+        "label": "C",
+        "text": "64.7% w/w"
+      },
+      {
+        "label": "D",
+        "text": "45.9% w/w"
+      },
+      {
+        "label": "E",
+        "text": "35.3% w/w"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "มวลของ syrup 1000 mL = 1000 × 1.313 = 1313 g ดังนั้น % w/w = 850/1313 × 100 = 64.7% w/w",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. 64.7% w/w — Syrup USP 85% w/v เทียบเท่าประมาณ 64.7% w/w เมื่อคำนวณจากความหนาแน่น 1.313 g/mL",
+      "reason": "Syrup USP (simple syrup) มี sucrose 850 g ต่อ 1000 mL หรือ 85% w/v แต่เนื่องจาก syrup มีความหนาแน่นสูงกว่าน้ำมาก (ประมาณ 1.31–1.32 g/mL) ค่า % w/w จึงต่ำกว่า % w/v การแปลงหน่วยต้องหามวลรวมของสารละลายก่อน คือ ปริมาตร × ความหนาแน่น = 1313 g แล้วนำมวล sucrose หารด้วยมวลรวม ได้ 64.7% w/w ซึ่งในมวลนี้มีน้ำเพียง 1313 − 850 = 463 g ความเข้มข้นระดับนี้ใกล้จุดอิ่มตัวของ sucrose ที่อุณหภูมิห้อง (ประมาณ 2 ส่วนของ sucrose ต่อน้ำ 1 ส่วน หรือราว 66–67% w/w) ทำให้ simple syrup มี water activity ต่ำและ osmotic pressure สูงพอจะยับยั้งการเจริญของจุลินทรีย์ได้เอง (self-preserving) ถ้าเจือจางลงหรือมีน้ำระเหยมาควบแน่นที่ผิวหน้า ความเข้มข้นที่ผิวจะลดลงและเสี่ยงต่อเชื้อ ในทางกลับกันถ้าเข้มข้นเกินจุดอิ่มตัวจะเกิดการตกผลึกของน้ำตาล (crystallization) โดยเฉพาะบริเวณคอขวดและฝา จึงต้องใช้ความเข้มข้นใกล้ 85% w/v พอดี",
+      "choices": [
+        {
+          "label": "A",
+          "text": "85.0% w/w",
+          "is_correct": false,
+          "explanation": "เป็นการนำค่า % w/v (85 g/100 mL) มาตอบเป็น % w/w โดยตรง ซึ่งใช้ได้เฉพาะเมื่อความหนาแน่นของสารละลายเท่ากับ 1 g/mL เท่านั้น แต่ syrup มีความหนาแน่น 1.313 g/mL"
+        },
+        {
+          "label": "B",
+          "text": "111.6% w/w",
+          "is_correct": false,
+          "explanation": "เกิดจากการนำ 85 คูณด้วยความหนาแน่น (85 × 1.313) แทนที่จะหาร ซึ่งให้ค่าเกิน 100% เป็นไปไม่ได้ทางกายภาพ การแปลง w/v เป็น w/w ต้องหารด้วยความหนาแน่น"
+        },
+        {
+          "label": "C",
+          "text": "64.7% w/w",
+          "is_correct": true,
+          "explanation": "ถูกต้อง มวล syrup = 1313 g, sucrose 850 g จึงได้ 850/1313 × 100 = 64.7% w/w"
+        },
+        {
+          "label": "D",
+          "text": "45.9% w/w",
+          "is_correct": false,
+          "explanation": "เกิดจากการคิดว่ามี sucrose 850 g ในน้ำ 1000 g (850/1850) ซึ่งผิด เพราะโจทย์ปรับปริมาตรสุดท้ายเป็น 1000 mL ไม่ได้เติมน้ำ 1000 mL"
+        },
+        {
+          "label": "E",
+          "text": "35.3% w/w",
+          "is_correct": false,
+          "explanation": "ค่านี้คือร้อยละโดยน้ำหนักของน้ำใน syrup (463/1313 × 100 = 35.3%) ไม่ใช่ของ sucrose"
+        }
+      ],
+      "key_takeaway": "Syrup USP = 85% w/v ≈ 64.7% w/w (density ≈ 1.313 g/mL); แปลง w/v → w/w ให้หารด้วย density เสมอ",
+      "calculation_steps": [
+        "ขั้นที่ 1: มวลของ syrup = 1000 mL × 1.313 g/mL = 1313 g",
+        "ขั้นที่ 2: มวลของ sucrose = 850 g (มวลน้ำ = 1313 − 850 = 463 g)",
+        "ขั้นที่ 3: % w/w = (850 g / 1313 g) × 100 = 64.7% w/w"
+      ]
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ยาน้ำใสรับประทาน (oral solution) ตำรับหนึ่งต้องปรับ pH เป็น 6.5 เนื่องจากตัวยาสำคัญคงตัวดีที่สุดที่ pH นี้ ผู้ตั้งตำรับต้องการเลือกสารกันเสีย (preservative) ที่ยังคงมีประสิทธิภาพต้านจุลชีพดีที่ pH 6.5 และเหมาะกับยารับประทาน ข้อใดเหมาะสมที่สุด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Methylparaben 0.18% ร่วมกับ propylparaben 0.02%"
+      },
+      {
+        "label": "B",
+        "text": "Sodium benzoate 0.1%"
+      },
+      {
+        "label": "C",
+        "text": "Potassium sorbate 0.2%"
+      },
+      {
+        "label": "D",
+        "text": "Benzoic acid 0.1%"
+      },
+      {
+        "label": "E",
+        "text": "Benzalkonium chloride 0.01%"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Parabens เป็น ester ที่ไม่แตกตัว จึงมีฤทธิ์ในช่วง pH กว้าง (ประมาณ 4–8) ขณะที่ benzoate (pKa 4.2) และ sorbate (pKa 4.76) ออกฤทธิ์ได้ดีเฉพาะ pH ต่ำ",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. Methylparaben 0.18% ร่วมกับ propylparaben 0.02% — Methylparaben + propylparaben เหมาะที่ pH 6.5 เพราะเป็น ester ที่ไม่แตกตัวและออกฤทธิ์ได้ในช่วง pH ประมาณ 4–8",
+      "reason": "สารกันเสียกลุ่ม weak acid เช่น benzoic acid/sodium benzoate และ sorbic acid/potassium sorbate ออกฤทธิ์ด้วยรูปที่ไม่แตกตัว (unionized) ซึ่งผ่านเยื่อหุ้มเซลล์จุลชีพได้ สัดส่วนรูปไม่แตกตัวคำนวณจาก Henderson–Hasselbalch: fraction = 1/(1 + 10^(pH − pKa)) ที่ pH 6.5 benzoic acid (pKa 4.2) เหลือรูปไม่แตกตัวเพียงประมาณ 0.5% และ sorbic acid (pKa 4.76) เหลือประมาณ 1.8% จึงแทบไม่มีฤทธิ์ benzoate จึงใช้ได้ดีที่ pH ≤ 4.5 ส่วน sorbate ใช้ได้ถึงประมาณ pH 6 (ดีที่สุดเมื่อ pH ต่ำกว่า) parabens (methyl, ethyl, propyl, butyl p-hydroxybenzoate) เป็น ester ของ p-hydroxybenzoic acid ที่มีหมู่ phenolic OH pKa ประมาณ 8.2–8.5 จึงยังไม่แตกตัวในช่วง pH 4–8 ทำให้ออกฤทธิ์ได้ดีที่ pH 6.5 การใช้ methylparaben (ละลายน้ำดีกว่า เด่นต่อเชื้อรา/ยีสต์และแบคทีเรีย) ร่วมกับ propylparaben (lipophilic กว่า ฤทธิ์แรงกว่าแต่ละลายน้ำน้อย) ให้ฤทธิ์เสริมกันและครอบคลุมเชื้อกว้างขึ้น สัดส่วน 0.18%/0.02% เป็นสูตรมาตรฐานที่พบบ่อย ข้อควรระวังของ parabens คือถูก bind กับ nonionic surfactant (เช่น polysorbate 80) และพอลิเมอร์บางชนิด ทำให้ฤทธิ์ลดลง และอาจถูก hydrolyze ที่ pH > 8",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Methylparaben 0.18% ร่วมกับ propylparaben 0.02%",
+          "is_correct": true,
+          "explanation": "ถูกต้อง parabens ไม่แตกตัวในช่วง pH 4–8 จึงยังมีฤทธิ์ที่ pH 6.5 และเป็นสารกันเสียมาตรฐานของยาน้ำรับประทาน การผสม methyl- กับ propylparaben ให้ฤทธิ์เสริมกัน"
+        },
+        {
+          "label": "B",
+          "text": "Sodium benzoate 0.1%",
+          "is_correct": false,
+          "explanation": "Sodium benzoate ให้ benzoic acid (pKa 4.2) ซึ่งที่ pH 6.5 แตกตัวเกือบหมด (รูปไม่แตกตัว ~0.5%) จึงด้อยประสิทธิภาพ ควรใช้เมื่อ pH ≤ 4.5"
+        },
+        {
+          "label": "C",
+          "text": "Potassium sorbate 0.2%",
+          "is_correct": false,
+          "explanation": "Potassium sorbate ให้ sorbic acid (pKa 4.76) ซึ่งออกฤทธิ์ดีที่ pH ต่ำกว่า 6 ที่ pH 6.5 มีรูปไม่แตกตัวเพียง ~1.8% ประสิทธิภาพจึงไม่เพียงพอ"
+        },
+        {
+          "label": "D",
+          "text": "Benzoic acid 0.1%",
+          "is_correct": false,
+          "explanation": "Benzoic acid ในตำรับที่ pH 6.5 จะเปลี่ยนเป็น benzoate anion เกือบทั้งหมดเช่นเดียวกับ sodium benzoate การเติมในรูปกรดไม่ได้ทำให้ pH ของตำรับต่ำลงเมื่อมี buffer ควบคุม จึงไม่เหมาะ"
+        },
+        {
+          "label": "E",
+          "text": "Benzalkonium chloride 0.01%",
+          "is_correct": false,
+          "explanation": "Benzalkonium chloride เป็น quaternary ammonium (cationic) มีฤทธิ์ที่ pH กลางได้ดี แต่มีรสขม ระคายเคือง และใช้เป็นหลักในยาหยอดตา/พ่นจมูก ไม่ใช่ตัวเลือกมาตรฐานของยารับประทาน และเข้ากันไม่ได้กับสาร anionic"
+        }
+      ],
+      "key_takeaway": "Benzoate ใช้ pH ≤ 4.5 (pKa 4.2), sorbate ใช้ pH < 6 (pKa 4.76), parabens ใช้ pH 4–8 — กลุ่มกรดอ่อนออกฤทธิ์ด้วยรูป unionized"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ตำรับยาน้ำใสรับประทาน 100 mL ประกอบด้วย: ตัวยาที่มีหมู่ phenolic ซึ่งถูก oxidize ได้ง่าย 1 g, sodium metabisulfite 0.1 g, disodium edetate 0.05 g, sorbitol solution 70% 30 mL, sodium benzoate 0.1 g, citric acid q.s. ให้ pH 4.0 และ purified water q.s. 100 mL หน้าที่หลักของ disodium edetate ในตำรับนี้คือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Antioxidant ชนิด reducing agent ที่ถูก oxidize แทนตัวยา"
+      },
+      {
+        "label": "B",
+        "text": "Buffer ควบคุม pH ของตำรับให้คงที่ที่ 4.0"
+      },
+      {
+        "label": "C",
+        "text": "Preservative หลักของตำรับ"
+      },
+      {
+        "label": "D",
+        "text": "Chelating agent จับไอออนโลหะหนักที่เร่งปฏิกิริยา oxidation"
+      },
+      {
+        "label": "E",
+        "text": "Sweetening agent และเพิ่มความหนืด"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "Disodium edetate (EDTA) เป็น chelating agent จับ trace metal ions เช่น Cu²⁺, Fe³⁺ ที่เร่ง oxidation จึงทำหน้าที่เป็น antioxidant synergist ร่วมกับ sodium metabisulfite",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. Chelating agent จับไอออนโลหะหนักที่เร่งปฏิกิริยา oxidation — Disodium edetate เป็น chelating agent จับไอออนโลหะที่เป็นตัวเร่งปฏิกิริยา oxidation (antioxidant synergist)",
+      "reason": "ปฏิกิริยา oxidation ของยาส่วนใหญ่เป็น autoxidation แบบ free-radical chain reaction ซึ่งถูกเร่งอย่างมากโดย trace heavy metal ions เช่น Cu²⁺, Fe²⁺/Fe³⁺ ที่ปนมากับวัตถุดิบ น้ำ หรืออุปกรณ์ EDTA (ใช้ในรูป disodium edetate ซึ่งละลายน้ำได้ดี) เป็น hexadentate ligand ที่เกิด complex ที่เสถียรกับไอออนโลหะ ทำให้โลหะไม่สามารถเร่งการเกิด free radical ได้ EDTA เองไม่ใช่ antioxidant โดยตรง จึงเรียกว่า antioxidant synergist และมักใช้ร่วมกับ antioxidant จริง เช่น sodium metabisulfite (reducing agent ที่ถูก oxidize แทนยา เหมาะกับ pH กรด) ความเข้มข้นที่ใช้ทั่วไปประมาณ 0.005–0.1% นอกจากนี้ EDTA ยังช่วยเสริมฤทธิ์สารกันเสียต่อแบคทีเรีย Gram-negative โดยจับ Ca²⁺/Mg²⁺ ที่ทำให้ outer membrane คงตัว ในตำรับนี้ sodium metabisulfite เป็น antioxidant, sodium benzoate เป็น preservative (เหมาะเพราะ pH 4.0), citric acid ปรับ pH และ sorbitol เป็น sweetener/เพิ่มความหนืด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Antioxidant ชนิด reducing agent ที่ถูก oxidize แทนตัวยา",
+          "is_correct": false,
+          "explanation": "บทบาทนี้คือของ sodium metabisulfite ซึ่งเป็น reducing agent ถูก oxidize ได้ง่ายกว่าตัวยา EDTA ไม่ได้ถูก oxidize แทนยา แต่ทำงานโดยจับไอออนโลหะ"
+        },
+        {
+          "label": "B",
+          "text": "Buffer ควบคุม pH ของตำรับให้คงที่ที่ 4.0",
+          "is_correct": false,
+          "explanation": "ตำรับนี้ใช้ citric acid ปรับ pH แม้ EDTA เป็นเกลือของกรดอ่อน แต่ในความเข้มข้น 0.05% มีความจุบัฟเฟอร์ต่ำมาก ไม่ใช่หน้าที่หลัก"
+        },
+        {
+          "label": "C",
+          "text": "Preservative หลักของตำรับ",
+          "is_correct": false,
+          "explanation": "Preservative หลักของตำรับนี้คือ sodium benzoate (ใช้ได้ดีที่ pH 4.0) EDTA เพียงเสริมฤทธิ์สารกันเสียต่อ Gram-negative เท่านั้น ไม่ใช้เป็น preservative เดี่ยว"
+        },
+        {
+          "label": "D",
+          "text": "Chelating agent จับไอออนโลหะหนักที่เร่งปฏิกิริยา oxidation",
+          "is_correct": true,
+          "explanation": "ถูกต้อง EDTA เป็น chelating agent จับ Cu²⁺/Fe³⁺ ที่เร่ง oxidation ของยาที่มีหมู่ phenolic ทำหน้าที่เป็น antioxidant synergist"
+        },
+        {
+          "label": "E",
+          "text": "Sweetening agent และเพิ่มความหนืด",
+          "is_correct": false,
+          "explanation": "สารให้ความหวานและเพิ่มความหนืดในตำรับนี้คือ sorbitol solution 70% EDTA ไม่มีรสหวานและไม่เพิ่มความหนืด"
+        }
+      ],
+      "key_takeaway": "EDTA = chelating agent / antioxidant synergist (0.005–0.1%) — ใช้คู่กับ antioxidant จริง และเสริมฤทธิ์ preservative ต่อ Gram-negative"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "ครีมชนิด oil-in-water (o/w) ตำรับหนึ่งมี vitamin A palmitate ละลายอยู่ในวัฏภาคน้ำมัน ซึ่งไวต่อการถูก oxidize ผู้ตั้งตำรับต้องการเติมสารต้านออกซิเดชัน (antioxidant) เพื่อปกป้องสารในวัฏภาคน้ำมันโดยตรง สารใดเหมาะสมที่สุด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Sodium metabisulfite"
+      },
+      {
+        "label": "B",
+        "text": "Butylated hydroxytoluene (BHT)"
+      },
+      {
+        "label": "C",
+        "text": "Ascorbic acid"
+      },
+      {
+        "label": "D",
+        "text": "Sodium thiosulfate"
+      },
+      {
+        "label": "E",
+        "text": "Disodium edetate"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "BHT เป็น antioxidant ที่ละลายในน้ำมัน (oil-soluble) ทำหน้าที่เป็น free-radical scavenger ในวัฏภาคน้ำมันจึงปกป้อง vitamin A palmitate ได้โดยตรง",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. Butylated hydroxytoluene (BHT) — BHT เป็น oil-soluble antioxidant (chain terminator) ที่เหมาะสำหรับปกป้องสารในวัฏภาคน้ำมัน",
+      "reason": "การเลือก antioxidant ต้องเลือกให้ละลายอยู่ในวัฏภาคเดียวกับสารที่ต้องการปกป้อง เพราะปฏิกิริยา oxidation เกิดในวัฏภาคที่สารนั้นอยู่ antioxidant ที่ละลายในน้ำมัน (oil-soluble) ได้แก่ butylated hydroxytoluene (BHT), butylated hydroxyanisole (BHA), α-tocopherol (vitamin E), propyl gallate และ ascorbyl palmitate ใช้ความเข้มข้นต่ำ ประมาณ 0.01–0.1% สารกลุ่มนี้ทำงานเป็น chain terminator (free-radical scavenger) โดยให้ hydrogen atom แก่ peroxy radical ทำให้หยุดปฏิกิริยาลูกโซ่ ส่วน antioxidant ที่ละลายน้ำ (water-soluble) ได้แก่ sodium metabisulfite และ sodium bisulfite (เหมาะกับ pH กรด), sodium sulfite (เหมาะกับ pH ด่าง), sodium thiosulfate, ascorbic acid ซึ่งส่วนใหญ่เป็น reducing agent ที่ถูก oxidize แทนยาในวัฏภาคน้ำ ในตำรับ emulsion มักใช้ทั้งสองแบบร่วมกับ chelating agent (EDTA) เพื่อป้องกันทั้งสองวัฏภาค",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Sodium metabisulfite",
+          "is_correct": false,
+          "explanation": "Sodium metabisulfite เป็น water-soluble antioxidant (reducing agent) อยู่ในวัฏภาคน้ำ ไม่ปกป้องสารที่ละลายในน้ำมันโดยตรง และใช้ได้ดีใน pH กรด"
+        },
+        {
+          "label": "B",
+          "text": "Butylated hydroxytoluene (BHT)",
+          "is_correct": true,
+          "explanation": "ถูกต้อง BHT ละลายในน้ำมัน เป็น free-radical scavenger ใช้ 0.01–0.1% ในวัฏภาคน้ำมันของครีม/ขี้ผึ้ง/น้ำมัน"
+        },
+        {
+          "label": "C",
+          "text": "Ascorbic acid",
+          "is_correct": false,
+          "explanation": "Ascorbic acid ละลายน้ำ จึงอยู่ในวัฏภาคน้ำ ถ้าต้องการรูปที่ละลายในน้ำมันต้องใช้ ascorbyl palmitate แทน"
+        },
+        {
+          "label": "D",
+          "text": "Sodium thiosulfate",
+          "is_correct": false,
+          "explanation": "Sodium thiosulfate เป็น water-soluble reducing agent อยู่ในวัฏภาคน้ำ ไม่เหมาะกับการปกป้องสารในวัฏภาคน้ำมัน"
+        },
+        {
+          "label": "E",
+          "text": "Disodium edetate",
+          "is_correct": false,
+          "explanation": "Disodium edetate เป็น chelating agent ละลายน้ำ ทำหน้าที่ synergist โดยจับไอออนโลหะ ไม่ใช่ antioxidant ที่ปกป้องวัฏภาคน้ำมันโดยตรง"
+        }
+      ],
+      "key_takeaway": "Oil-soluble: BHT, BHA, α-tocopherol, propyl gallate, ascorbyl palmitate | Water-soluble: metabisulfite/bisulfite (กรด), sulfite (ด่าง), thiosulfate, ascorbic acid"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "ยาเตรียมชนิดหนึ่งเตรียมโดยเขย่า peppermint oil กับ talc แล้วเติมน้ำบริสุทธิ์ เขย่าซ้ำเป็นระยะ จากนั้นกรองจนใส ได้สารละลายใสที่อิ่มตัวด้วยน้ำมันหอมระเหย ไม่มีน้ำตาลและไม่มีแอลกอฮอล์เป็นส่วนประกอบ ยาเตรียมนี้จัดเป็นประเภทใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Elixir"
+      },
+      {
+        "label": "B",
+        "text": "Spirit"
+      },
+      {
+        "label": "C",
+        "text": "Syrup"
+      },
+      {
+        "label": "D",
+        "text": "Tincture"
+      },
+      {
+        "label": "E",
+        "text": "Aromatic water"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "Aromatic water คือสารละลายใสอิ่มตัวของน้ำมันหอมระเหยหรือสารระเหยในน้ำ เตรียมได้โดยวิธี solution (ใช้ talc เป็น dispersing agent แล้วกรอง) หรือ distillation",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. Aromatic water — Aromatic water (เช่น peppermint water) เป็นสารละลายใสอิ่มตัวของน้ำมันหอมระเหยในน้ำ",
+      "reason": "Aromatic waters เป็น clear, saturated aqueous solutions ของน้ำมันหอมระเหยหรือสารระเหยอื่น เนื่องจากน้ำมันหอมระเหยละลายน้ำได้น้อยมาก ความเข้มข้นจึงต่ำ เช่น peppermint water ใช้น้ำมันประมาณ 2 mL ต่อ 1000 mL (~0.2% v/v) วิธีเตรียมแบบ solution ใช้ talc หรือ pulped filter paper ช่วยกระจายน้ำมันให้มีพื้นที่ผิวสัมผัสน้ำมากขึ้นและช่วยดูดซับน้ำมันส่วนเกินเพื่อให้กรองได้ใส ส่วนอีกวิธีคือ distillation ใช้เป็น vehicle แต่งกลิ่นรส (flavored vehicle) ข้อควรระวังคือสารระเหยสูญหายได้ และถ้ามีเกลือหรือสารที่ละลายน้ำได้ดีความเข้มข้นสูงอาจเกิด salting out ทำให้น้ำมันแยกชั้น/ขุ่น ควรเก็บในภาชนะปิดสนิท ป้องกันแสงและความร้อน เปรียบเทียบกับ elixir (สารละลายใส hydroalcoholic มีรสหวาน), spirit (สารระเหยละลายในแอลกอฮอล์หรือ hydroalcoholic ความเข้มข้นสูง), syrup (น้ำตาลเข้มข้น) และ tincture (สารสกัดจากพืชหรือสารเคมีใน alcohol/hydroalcoholic)",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Elixir",
+          "is_correct": false,
+          "explanation": "Elixir เป็นสารละลายใสที่มีรสหวาน ใช้ตัวทำละลายผสมน้ำกับแอลกอฮอล์ (hydroalcoholic) เช่น phenobarbital elixir แต่ยาเตรียมในโจทย์ไม่มีน้ำตาลและแอลกอฮอล์"
+        },
+        {
+          "label": "B",
+          "text": "Spirit",
+          "is_correct": false,
+          "explanation": "Spirit คือสารละลายของสารระเหยในแอลกอฮอล์หรือ hydroalcoholic (เช่น peppermint spirit ~10% oil ใน ethanol) ความเข้มข้นสูงกว่า aromatic water มาก"
+        },
+        {
+          "label": "C",
+          "text": "Syrup",
+          "is_correct": false,
+          "explanation": "Syrup เป็นสารละลายน้ำตาลเข้มข้นในน้ำ (เช่น simple syrup 85% w/v sucrose) ไม่ตรงกับยาเตรียมที่ไม่มีน้ำตาล"
+        },
+        {
+          "label": "D",
+          "text": "Tincture",
+          "is_correct": false,
+          "explanation": "Tincture เป็นสารละลายใน alcohol/hydroalcoholic ที่ได้จากการสกัดพืชหรือละลายสารเคมี เช่น iodine tincture ไม่ใช่สารละลายในน้ำล้วน"
+        },
+        {
+          "label": "E",
+          "text": "Aromatic water",
+          "is_correct": true,
+          "explanation": "ถูกต้อง เป็น aromatic water: สารละลายใสอิ่มตัวของน้ำมันหอมระเหยในน้ำ เตรียมโดย solution method ร่วมกับ talc หรือโดย distillation"
+        }
+      ],
+      "key_takeaway": "Aromatic water = น้ำ + volatile oil (อิ่มตัว ~0.2%) | Spirit = alcohol + volatile | Elixir = hydroalcoholic + หวาน | Syrup = น้ำตาลเข้มข้น"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "ยาตัวหนึ่งละลายน้ำได้ 0.5 mg/mL แต่ต้องเตรียมเป็นยาน้ำใสความแรง 25 mg/5 mL ตำรับ 100 mL ประกอบด้วย: ตัวยา 0.5 g, ethanol 96% 10 mL, propylene glycol 20 mL, glycerin 10 mL, sorbitol solution 70% 20 mL, saccharin sodium 0.1 g, flavor q.s. และ purified water q.s. 100 mL หน้าที่หลักของ ethanol และ propylene glycol ในตำรับนี้คือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Cosolvent ที่ลด polarity ของตัวทำละลายเพื่อเพิ่มการละลายของยา"
+      },
+      {
+        "label": "B",
+        "text": "Surfactant ที่เกิด micelle เพื่อ solubilize ยา"
+      },
+      {
+        "label": "C",
+        "text": "Complexing agent ที่เกิด inclusion complex กับยา"
+      },
+      {
+        "label": "D",
+        "text": "Preservative เพียงอย่างเดียว"
+      },
+      {
+        "label": "E",
+        "text": "สารปรับ pH เพื่อทำให้ยาเกิดเกลือ"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "ยาต้องละลายได้ 5 mg/mL แต่ละลายน้ำได้เพียง 0.5 mg/mL จึงใช้ ethanol และ propylene glycol เป็น cosolvent ซึ่งลด dielectric constant/polarity ของ vehicle ให้ใกล้เคียงยาและเพิ่มการละลาย",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. Cosolvent ที่ลด polarity ของตัวทำละลายเพื่อเพิ่มการละลายของยา — Ethanol และ propylene glycol เป็น cosolvent เพิ่มการละลายของยาที่ละลายน้ำน้อยโดยลด polarity ของระบบตัวทำละลาย",
+      "reason": "ความแรง 25 mg/5 mL เท่ากับ 5 mg/mL ซึ่งสูงกว่าการละลายในน้ำ (0.5 mg/mL) ถึง 10 เท่า จึงต้องเพิ่มการละลาย Cosolvency คือการใช้ตัวทำละลายที่ผสมเข้ากับน้ำได้ (water-miscible) เช่น ethanol, propylene glycol, glycerin, PEG 400 เพื่อลด polarity และ dielectric constant ของ vehicle (น้ำ ~78, ethanol ~24, propylene glycol ~32, glycerin ~43) ทำให้ยาที่ไม่มีขั้วหรือมีขั้วน้อยละลายได้มากขึ้น โดยทั่วไป log ของการละลายเพิ่มขึ้นค่อนข้างเป็นเส้นตรงกับสัดส่วน cosolvent (log-linear model) ข้อควรระวังคือเมื่อเจือจางด้วยน้ำหรือในกระเพาะอาหาร ยาอาจตกตะกอน และ cosolvent มีข้อจำกัดด้านความปลอดภัย เช่น ปริมาณ ethanol ในยาเด็ก และ propylene glycol ในทารก แม้ ethanol ≥ 15–20% และ propylene glycol ความเข้มข้นสูงจะมีฤทธิ์กันเสียได้บ้าง แต่ในตำรับนี้ความเข้มข้นที่ใช้และเหตุผลของโจทย์ชี้ว่าหน้าที่หลักคือ cosolvent ส่วน glycerin ช่วยเป็น cosolvent และให้ความหวาน sorbitol และ saccharin sodium เป็น sweetener",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Cosolvent ที่ลด polarity ของตัวทำละลายเพื่อเพิ่มการละลายของยา",
+          "is_correct": true,
+          "explanation": "ถูกต้อง ethanol และ propylene glycol เป็น water-miscible cosolvent ลด polarity ของ vehicle ทำให้ยาที่ละลายน้ำ 0.5 mg/mL ละลายได้ถึง 5 mg/mL"
+        },
+        {
+          "label": "B",
+          "text": "Surfactant ที่เกิด micelle เพื่อ solubilize ยา",
+          "is_correct": false,
+          "explanation": "Micellar solubilization ต้องใช้ surfactant เช่น polysorbate 80 ที่ความเข้มข้นเหนือ CMC ethanol และ propylene glycol ไม่ใช่ surfactant และไม่เกิด micelle"
+        },
+        {
+          "label": "C",
+          "text": "Complexing agent ที่เกิด inclusion complex กับยา",
+          "is_correct": false,
+          "explanation": "Inclusion complex เกิดกับ cyclodextrin (เช่น hydroxypropyl-β-cyclodextrin) ไม่ใช่กับ ethanol หรือ propylene glycol"
+        },
+        {
+          "label": "D",
+          "text": "Preservative เพียงอย่างเดียว",
+          "is_correct": false,
+          "explanation": "Ethanol ความเข้มข้นสูง (≥15–20%) และ propylene glycol ประมาณ 15–30% มีฤทธิ์กันเสียเสริม แต่ในตำรับนี้มีวัตถุประสงค์หลักเพื่อเพิ่มการละลาย จึงไม่ใช่ \"preservative เพียงอย่างเดียว\""
+        },
+        {
+          "label": "E",
+          "text": "สารปรับ pH เพื่อทำให้ยาเกิดเกลือ",
+          "is_correct": false,
+          "explanation": "การเพิ่มการละลายด้วยการปรับ pH ต้องใช้กรดหรือด่าง/buffer เพื่อให้ยาที่เป็น weak acid/base แตกตัว ethanol และ propylene glycol ไม่เปลี่ยน pH อย่างมีนัยสำคัญ"
+        }
+      ],
+      "key_takeaway": "วิธีเพิ่มการละลาย: pH adjustment/salt, cosolvent (ethanol, PG, glycerin, PEG 400), surfactant/micelle (> CMC), complexation (cyclodextrin) — cosolvent เสี่ยงตกตะกอนเมื่อเจือจาง"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "ยาหยอดรับประทาน (oral drops) ของวิตามินที่ละลายในไขมันใช้ polysorbate 80 เพื่อทำให้ได้ผลิตภัณฑ์ใสในน้ำ ข้อใดอธิบายกลไกการเพิ่มการละลายของ polysorbate 80 ได้ถูกต้องที่สุด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "การละลายของวิตามินเพิ่มขึ้นมากที่สุดเมื่อใช้ polysorbate 80 ความเข้มข้นต่ำกว่า critical micelle concentration (CMC)"
+      },
+      {
+        "label": "B",
+        "text": "Polysorbate 80 ทำหน้าที่เป็น cosolvent ลด dielectric constant ของน้ำทั้งระบบ"
+      },
+      {
+        "label": "C",
+        "text": "เมื่อความเข้มข้นสูงกว่า CMC โมเลกุลรวมตัวเป็น micelle และวิตามินถูก solubilize ใน hydrophobic core ทำให้การละลายเพิ่มขึ้นตามความเข้มข้นของ surfactant"
+      },
+      {
+        "label": "D",
+        "text": "Polysorbate 80 เกิด inclusion complex 1:1 กับวิตามินในลักษณะเดียวกับ cyclodextrin"
+      },
+      {
+        "label": "E",
+        "text": "Polysorbate 80 เพิ่ม pH ของตำรับทำให้วิตามินแตกตัวและละลายน้ำได้มากขึ้น"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Micellar solubilization เกิดเมื่อความเข้มข้นของ surfactant สูงกว่า CMC สารที่ไม่ชอบน้ำจะเข้าไปอยู่ใน hydrophobic core (หรือ palisade layer) ของ micelle และการละลายเพิ่มขึ้นเกือบเป็นเส้นตรงกับความเข้มข้นของ surfactant เหนือ CMC",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. เมื่อความเข้มข้นสูงกว่า CMC โมเลกุลรวมตัวเป็น micelle และวิตามินถูก solubilize ใน hydrophobic core ทำให้การละลายเพิ่มขึ้นตามความเข้มข้นของ surfactant — Polysorbate 80 เพิ่มการละลายด้วย micellar solubilization ซึ่งเกิดเมื่อความเข้มข้นเกิน CMC",
+      "reason": "Surfactant เป็น amphiphile ที่ความเข้มข้นต่ำจะกระจายเป็นโมเลกุลเดี่ยวและไปเรียงตัวที่ผิวหน้า เมื่อความเข้มข้นถึง critical micelle concentration (CMC) โมเลกุลจะรวมตัวเป็น micelle โดยหันส่วน hydrocarbon tail เข้าด้านในเป็นแกนไม่มีขั้ว และหันส่วนมีขั้ว (สำหรับ polysorbate คือสาย polyoxyethylene) ออกสู่น้ำ สารที่ไม่มีขั้ว เช่น วิตามิน A, D, E, K หรือน้ำมันหอมระเหย จะถูก solubilize ใน core ส่วนสารที่มีขั้วปานกลางอาจอยู่ใน palisade layer ใกล้หัวมีขั้ว ที่ความเข้มข้นต่ำกว่า CMC การละลายเพิ่มขึ้นน้อยมาก เหนือ CMC การละลายเพิ่มขึ้นค่อนข้างเป็นเส้นตรงกับจำนวน micelle (ความเข้มข้นของ surfactant) การวัด CMC ทำได้จากจุดหักของกราฟคุณสมบัติทางกายภาพ เช่น surface tension, conductivity (สำหรับ ionic surfactant), light scattering Polysorbate 80 เป็น nonionic surfactant (HLB 15) มีพิษต่ำ CMC ต่ำ จึงนิยมใช้ในยารับประทานและยาฉีด ข้อควรระวังคือ micelle อาจดึง preservative เช่น parabens เข้าไปทำให้ฤทธิ์กันเสียอิสระลดลง และใช้มากเกินจะมีรสขม",
+      "choices": [
+        {
+          "label": "A",
+          "text": "การละลายของวิตามินเพิ่มขึ้นมากที่สุดเมื่อใช้ polysorbate 80 ความเข้มข้นต่ำกว่า critical micelle concentration (CMC)",
+          "is_correct": false,
+          "explanation": "ต่ำกว่า CMC ยังไม่มี micelle จึงแทบไม่มี solubilization การละลายเพิ่มขึ้นอย่างชัดเจนเฉพาะเมื่อเกิน CMC"
+        },
+        {
+          "label": "B",
+          "text": "Polysorbate 80 ทำหน้าที่เป็น cosolvent ลด dielectric constant ของน้ำทั้งระบบ",
+          "is_correct": false,
+          "explanation": "Cosolvent คือตัวทำละลายผสมน้ำ เช่น ethanol, propylene glycol ซึ่งต้องใช้ปริมาณมาก polysorbate 80 ใช้ปริมาณน้อยและทำงานผ่าน micelle ไม่ใช่การลด dielectric constant ของทั้งระบบ"
+        },
+        {
+          "label": "C",
+          "text": "เมื่อความเข้มข้นสูงกว่า CMC โมเลกุลรวมตัวเป็น micelle และวิตามินถูก solubilize ใน hydrophobic core ทำให้การละลายเพิ่มขึ้นตามความเข้มข้นของ surfactant",
+          "is_correct": true,
+          "explanation": "ถูกต้อง เหนือ CMC เกิด micelle ที่มี hydrophobic core รองรับวิตามินที่ละลายในไขมัน และการละลายเพิ่มขึ้นตามความเข้มข้นของ surfactant"
+        },
+        {
+          "label": "D",
+          "text": "Polysorbate 80 เกิด inclusion complex 1:1 กับวิตามินในลักษณะเดียวกับ cyclodextrin",
+          "is_correct": false,
+          "explanation": "Inclusion complex แบบ stoichiometric เป็นกลไกของ cyclodextrin ที่มีโพรงไม่มีขั้ว ไม่ใช่กลไกของ polysorbate"
+        },
+        {
+          "label": "E",
+          "text": "Polysorbate 80 เพิ่ม pH ของตำรับทำให้วิตามินแตกตัวและละลายน้ำได้มากขึ้น",
+          "is_correct": false,
+          "explanation": "Polysorbate 80 เป็น nonionic surfactant ไม่เปลี่ยน pH อย่างมีนัยสำคัญ และวิตามินที่ละลายในไขมันส่วนใหญ่ไม่มีหมู่ที่แตกตัวในช่วง pH ใช้งาน"
+        }
+      ],
+      "key_takeaway": "Micellar solubilization เกิดเหนือ CMC เท่านั้น; nonpolar drug อยู่ใน core, semipolar อยู่ใน palisade layer; ระวัง micelle ดึง parabens"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "Acetate buffer ประกอบด้วย acetic acid 0.05 M และ sodium acetate 0.05 M (pKa ของ acetic acid = 4.76) จงคำนวณ buffer capacity (β) ของ buffer นี้ตามสมการ Van Slyke",
+    "choices": [
+      {
+        "label": "A",
+        "text": "0.025"
+      },
+      {
+        "label": "B",
+        "text": "0.058"
+      },
+      {
+        "label": "C",
+        "text": "0.115"
+      },
+      {
+        "label": "D",
+        "text": "0.230"
+      },
+      {
+        "label": "E",
+        "text": "0.014"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "ความเข้มข้นรวม C = 0.10 M และ pH = pKa ดังนั้น Ka[H⁺]/(Ka + [H⁺])² = 1/4 จึงได้ β = 2.303 × 0.10 × 0.25 = 0.058",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. 0.058 — β = 2.303 × C × Ka[H⁺]/(Ka+[H⁺])² = 2.303 × 0.10 × 0.25 ≈ 0.058 (buffer capacity สูงสุดเมื่อ pH = pKa)",
+      "reason": "Buffer capacity (β) คือปริมาณกรดหรือเบสแก่ (gram-equivalent ต่อลิตร) ที่ต้องเติมเพื่อเปลี่ยน pH ไป 1 หน่วย (β = ΔB/ΔpH) สมการ Van Slyke คือ β = 2.303 C Ka[H⁺]/(Ka + [H⁺])² โดย C คือความเข้มข้นรวมของกรดและเกลือ (0.05 + 0.05 = 0.10 M) เมื่อ acid และ salt มีความเข้มข้นเท่ากัน pH = pKa ทำให้ [H⁺] = Ka พจน์ Ka[H⁺]/(Ka+[H⁺])² = Ka²/(2Ka)² = 1/4 จึงได้ β = 2.303 × 0.10 × 0.25 = 0.0576 ค่านี้เป็นค่าสูงสุด (βmax = 0.576C) สำหรับความเข้มข้นรวมนี้ ความหมายเชิงปฏิบัติคือถ้าเติม NaOH 0.005 mol/L จะเปลี่ยน pH ประมาณ 0.005/0.0576 ≈ 0.09 หน่วย buffer capacity เพิ่มขึ้นตามความเข้มข้นรวม และลดลงเมื่อ pH ห่างจาก pKa บัฟเฟอร์ใช้งานได้ดีในช่วง pKa ± 1 ในการตั้งตำรับยาน้ำ ควรเลือก buffer ที่ pKa ใกล้ pH เป้าหมายและใช้ความเข้มข้นต่ำที่สุดที่เพียงพอ โดยเฉพาะยาหยอดตาหรือยาฉีด เพื่อให้ร่างกายปรับ pH ได้เร็วและลดการระคายเคือง",
+      "choices": [
+        {
+          "label": "A",
+          "text": "0.025",
+          "is_correct": false,
+          "explanation": "เป็นค่าที่ได้เมื่อลืมคูณ 2.303 (0.10 × 0.25 = 0.025) ซึ่งเป็นค่าคงที่จากการแปลง ln เป็น log ในสมการ"
+        },
+        {
+          "label": "B",
+          "text": "0.058",
+          "is_correct": true,
+          "explanation": "ถูกต้อง β = 2.303 × 0.10 × 0.25 = 0.0576 ≈ 0.058"
+        },
+        {
+          "label": "C",
+          "text": "0.115",
+          "is_correct": false,
+          "explanation": "เกิดจากการใช้ C = 0.20 M (นับความเข้มข้นซ้ำ) แทน 0.10 M ความเข้มข้นรวมคือ 0.05 + 0.05 = 0.10 M"
+        },
+        {
+          "label": "D",
+          "text": "0.230",
+          "is_correct": false,
+          "explanation": "เกิดจากการไม่คูณพจน์ Ka[H⁺]/(Ka+[H⁺])² = 0.25 (2.303 × 0.10 = 0.230) ค่านี้ไม่ใช่ buffer capacity"
+        },
+        {
+          "label": "E",
+          "text": "0.014",
+          "is_correct": false,
+          "explanation": "เกิดจากการใช้ C = 0.025 M หรือคูณ 0.25 ซ้ำสองครั้ง ไม่ถูกต้องตามสมการ Van Slyke"
+        }
+      ],
+      "key_takeaway": "βmax ที่ pH = pKa = 0.576 × C (C = [acid] + [salt]); buffer ใช้ได้ดีในช่วง pKa ± 1",
+      "calculation_steps": [
+        "ขั้นที่ 1: C = [CH₃COOH] + [CH₃COO⁻] = 0.05 + 0.05 = 0.10 mol/L",
+        "ขั้นที่ 2: pH = pKa + log(0.05/0.05) = 4.76 ดังนั้น [H⁺] = Ka = 1.74 × 10⁻⁵ M",
+        "ขั้นที่ 3: Ka[H⁺]/(Ka + [H⁺])² = Ka²/(2Ka)² = 1/4 = 0.25",
+        "ขั้นที่ 4: β = 2.303 × 0.10 mol/L × 0.25 = 0.0576 ≈ 0.058 mol/L ต่อหน่วย pH"
+      ]
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "ร้านยาได้รับคำขอให้เตรียมยาน้ำแบบปราศจากน้ำตาล (sugar-free) สำหรับเด็กที่ได้รับการวินิจฉัยว่าเป็น phenylketonuria (PKU) สารให้ความหวานใดที่ควรหลีกเลี่ยงในตำรับนี้",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Sorbitol"
+      },
+      {
+        "label": "B",
+        "text": "Sucralose"
+      },
+      {
+        "label": "C",
+        "text": "Saccharin sodium"
+      },
+      {
+        "label": "D",
+        "text": "Acesulfame potassium"
+      },
+      {
+        "label": "E",
+        "text": "Aspartame"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "Aspartame เป็น dipeptide methyl ester ของ aspartic acid และ phenylalanine เมื่อถูกย่อยจะให้ phenylalanine จึงห้ามใช้ในผู้ป่วย PKU",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. Aspartame — Aspartame ต้องหลีกเลี่ยงในผู้ป่วย PKU เพราะถูกเมแทบอไลซ์ได้ phenylalanine",
+      "reason": "ผู้ป่วย phenylketonuria ขาดเอนไซม์ phenylalanine hydroxylase ทำให้ phenylalanine สะสมและเป็นพิษต่อระบบประสาท จึงต้องจำกัด phenylalanine ในอาหารและยา Aspartame (L-aspartyl-L-phenylalanine methyl ester) หวานกว่า sucrose ประมาณ 180–200 เท่า ถูก hydrolyze ในทางเดินอาหารได้ aspartic acid, phenylalanine และ methanol ผลิตภัณฑ์ที่มี aspartame จึงต้องมีคำเตือนสำหรับผู้ป่วย PKU นอกจากนี้ aspartame ยังไม่คงตัวในสารละลาย (hydrolysis และเกิด diketopiperazine) โดยคงตัวที่สุดประมาณ pH 4.3 และไม่ทนความร้อน สารให้ความหวานทางเลือกในยาน้ำปราศจากน้ำตาล ได้แก่ sorbitol (polyol หวานประมาณ 0.5–0.6 เท่าของ sucrose ไม่ก่อฟันผุ แต่ปริมาณมากทำให้ท้องเสียแบบ osmotic), sucralose (~600 เท่า คงตัวดี), saccharin sodium (~300–500 เท่า มีรสขมติดปลายลิ้น), acesulfame K (~200 เท่า คงตัวต่อความร้อน) มักใช้ร่วมกันเพื่อปรับรสให้กลมกล่อม",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Sorbitol",
+          "is_correct": false,
+          "explanation": "Sorbitol เป็น sugar alcohol ไม่มี phenylalanine ใช้ได้ในผู้ป่วย PKU ข้อควรระวังคือฤทธิ์ระบายแบบ osmotic เมื่อได้รับปริมาณมาก"
+        },
+        {
+          "label": "B",
+          "text": "Sucralose",
+          "is_correct": false,
+          "explanation": "Sucralose เป็น chlorinated sucrose derivative หวาน ~600 เท่า ไม่มี phenylalanine จึงใช้ได้ในผู้ป่วย PKU"
+        },
+        {
+          "label": "C",
+          "text": "Saccharin sodium",
+          "is_correct": false,
+          "explanation": "Saccharin sodium ไม่มี phenylalanine ใช้ได้ แต่มีรส metallic/bitter aftertaste ที่ความเข้มข้นสูง"
+        },
+        {
+          "label": "D",
+          "text": "Acesulfame potassium",
+          "is_correct": false,
+          "explanation": "Acesulfame potassium ไม่ได้มาจากกรดอะมิโน ไม่ให้ phenylalanine ใช้ได้ในผู้ป่วย PKU"
+        },
+        {
+          "label": "E",
+          "text": "Aspartame",
+          "is_correct": true,
+          "explanation": "ถูกต้อง Aspartame ถูกย่อยได้ phenylalanine จึงห้ามใช้ในผู้ป่วย PKU และต้องมีคำเตือนบนฉลาก"
+        }
+      ],
+      "key_takeaway": "Aspartame = Asp-Phe-OMe → ห้ามใน PKU; sorbitol ระวังท้องเสีย; saccharin ขมติดปลายลิ้น"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "สูตรยาแขวนตะกอน paracetamol 250 mg/5 mL ปริมาตร 100 mL ประกอบด้วย: paracetamol (micronized) 5 g, polysorbate 80 0.1 g, xanthan gum 0.3 g, sorbitol solution 70% 20 mL, glycerin 10 mL, methylparaben 0.1 g, propylparaben 0.02 g, citric acid/sodium citrate q.s. ให้ pH 5, strawberry flavor q.s. และ purified water q.s. 100 mL หน้าที่ของ polysorbate 80 ในสูตรนี้คือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Suspending agent เพิ่มความหนืดของ vehicle"
+      },
+      {
+        "label": "B",
+        "text": "Flocculating agent ลด zeta potential ของอนุภาค"
+      },
+      {
+        "label": "C",
+        "text": "Preservative ร่วมกับ parabens"
+      },
+      {
+        "label": "D",
+        "text": "Wetting agent ลด interfacial tension ระหว่างผงยากับ vehicle"
+      },
+      {
+        "label": "E",
+        "text": "Emulsifying agent ชนิด o/w"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "Polysorbate 80 ในความเข้มข้นต่ำ (0.1%) ทำหน้าที่ wetting agent ลด solid–liquid interfacial tension และ contact angle ทำให้ผงยาที่ไม่ชอบน้ำเปียกและกระจายในน้ำได้",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. Wetting agent ลด interfacial tension ระหว่างผงยากับ vehicle — Polysorbate 80 เป็น wetting agent ช่วยให้ผงยาที่ไม่ชอบน้ำเปียกและกระจายใน vehicle",
+      "reason": "ผงยาที่ hydrophobic หรือผ่านการ micronize มักมีอากาศเกาะที่ผิวและลอยที่ผิวน้ำหรือจับเป็นก้อน เพราะ contact angle ระหว่างผงยากับน้ำสูง (> 90° คือเปียกได้ไม่ดี) wetting agent ได้แก่ surfactant ที่มี HLB ประมาณ 7–9 ขึ้นไป เช่น polysorbate 80, sodium lauryl sulfate, docusate sodium จะดูดซับที่ผิวอนุภาค ลด interfacial tension ระหว่างของแข็งกับของเหลว ลด contact angle และไล่อากาศออก ทำให้ยากระจายตัวสม่ำเสมอ ใช้ในความเข้มข้นต่ำประมาณ 0.05–0.5% หากใช้มากเกินอาจเกิดฟอง รสขม และทำให้อนุภาค deflocculate จนเกิด caking ได้ Hydrophilic polymer และ glycerin ก็ช่วย wetting ได้บ้างโดยเคลือบอนุภาค ในสูตรนี้ xanthan gum เป็น suspending agent (pseudoplastic), sorbitol และ glycerin เป็น sweetener/humectant และช่วยเพิ่มความหนืดและป้องกัน cap-locking, methyl/propylparaben เป็น preservative, citrate buffer ควบคุม pH และ flavor ปรับรส ความเข้มข้น paracetamol 50 mg/mL สูงกว่าการละลาย (ประมาณ 14 mg/mL ที่ 20 °C) จึงอยู่ในรูปแขวนตะกอน",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Suspending agent เพิ่มความหนืดของ vehicle",
+          "is_correct": false,
+          "explanation": "Suspending agent ในสูตรนี้คือ xanthan gum ซึ่งเพิ่มความหนืดแบบ pseudoplastic polysorbate 80 ที่ 0.1% ไม่เพิ่มความหนืดอย่างมีนัยสำคัญ"
+        },
+        {
+          "label": "B",
+          "text": "Flocculating agent ลด zeta potential ของอนุภาค",
+          "is_correct": false,
+          "explanation": "Flocculating agent ได้แก่ electrolytes (เช่น AlCl₃, KH₂PO₄, citrate ปริมาณที่เหมาะสม) หรือ polymer ที่ทำ bridging โดยทั่วไป nonionic surfactant ไม่ใช่สารที่ใช้ลด zeta potential เพื่อทำ controlled flocculation"
+        },
+        {
+          "label": "C",
+          "text": "Preservative ร่วมกับ parabens",
+          "is_correct": false,
+          "explanation": "Polysorbate 80 ไม่มีฤทธิ์กันเสีย และกลับลดฤทธิ์ของ parabens โดยดึงเข้าไปใน micelle จึงต้องชดเชยความเข้มข้นของ preservative ในบางกรณี"
+        },
+        {
+          "label": "D",
+          "text": "Wetting agent ลด interfacial tension ระหว่างผงยากับ vehicle",
+          "is_correct": true,
+          "explanation": "ถูกต้อง polysorbate 80 เป็น nonionic surfactant ทำหน้าที่ wetting agent ลด contact angle ให้ paracetamol micronized เปียกและกระจายได้"
+        },
+        {
+          "label": "E",
+          "text": "Emulsifying agent ชนิด o/w",
+          "is_correct": false,
+          "explanation": "สูตรนี้ไม่มีวัฏภาคน้ำมันจึงไม่ใช่ emulsion แม้ polysorbate 80 (HLB 15) จะเป็น o/w emulsifier ได้ แต่หน้าที่ในยาแขวนตะกอนคือ wetting agent"
+        }
+      ],
+      "key_takeaway": "องค์ประกอบยาแขวนตะกอน: wetting agent (surfactant 0.05–0.5%), suspending agent (xanthan, CMC, MCC), flocculating agent (electrolyte), sweetener, preservative, buffer, flavor"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ผู้ตั้งตำรับเตรียมยาแขวนตะกอน sulfamerazine โดยใช้ docusate sodium (anionic surfactant) เป็น wetting agent พบว่าอนุภาคมี zeta potential เป็นลบสูง ตะกอนตกช้า supernatant ขุ่น แต่เมื่อเก็บไว้นานเกิดตะกอนแน่นที่ก้นขวดเขย่าไม่กระจาย จึงเติม aluminum chloride (AlCl₃) ในปริมาณที่ควบคุมอย่างเหมาะสม ข้อใดอธิบายผลของการเติม AlCl₃ ได้ถูกต้องที่สุด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Al³⁺ ลดค่า zeta potential ลงจนอนุภาคเกาะกันหลวม ๆ เป็น floc ได้ sediment volume สูงและเขย่ากระจายง่าย แต่ถ้าเติมมากเกินจะเกิด charge reversal และกลับไปเกิด caking ได้"
+      },
+      {
+        "label": "B",
+        "text": "Al³⁺ เพิ่มค่า zeta potential เชิงลบ ทำให้อนุภาคผลักกันมากขึ้นและตกตะกอนช้าลงจนไม่เกิด cake"
+      },
+      {
+        "label": "C",
+        "text": "AlCl₃ ทำหน้าที่ suspending agent เพิ่มความหนืดของ vehicle เป็น pseudoplastic"
+      },
+      {
+        "label": "D",
+        "text": "AlCl₃ ทำหน้าที่ preservative ยับยั้งเชื้อในตำรับ"
+      },
+      {
+        "label": "E",
+        "text": "AlCl₃ ทำหน้าที่ wetting agent ลด contact angle ของ sulfamerazine"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "AlCl₃ เป็น flocculating agent: ไอออน Al³⁺ ที่มีประจุสูงลดประจุลบที่ผิวอนุภาค (ลด zeta potential) จนแรงดึงดูดเหนือแรงผลัก เกิด controlled flocculation ได้ตะกอนฟูไม่เกาะเป็น cake",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. Al³⁺ ลดค่า zeta potential ลงจนอนุภาคเกาะกันหลวม ๆ เป็น floc ได้ sediment volume สูงและเขย่ากระจายง่าย แต่ถ้าเติมมากเกินจะเกิด charge reversal และกลับไปเกิด caking ได้ — AlCl₃ เป็น flocculating agent ลด zeta potential ทำให้เกิด controlled flocculation ป้องกัน caking",
+      "reason": "เมื่อใช้ anionic surfactant เช่น docusate sodium เป็น wetting agent อนุภาคจะดูดซับประจุลบไว้ที่ผิว ค่า zeta potential เป็นลบสูง อนุภาคผลักกันจึงอยู่ในสภาวะ deflocculated ตกตะกอนช้าแต่จัดเรียงตัวแน่นเมื่อตกถึงก้นขวด เกิด closely packed sediment และ caking ที่เขย่าไม่กระจาย ตามทฤษฎี DLVO การเติม electrolyte ที่มีประจุตรงข้าม (counter-ion) จะกด electrical double layer และลด zeta potential เมื่อ zeta potential ลดลงต่ำพอ แรง van der Waals ที่ secondary minimum จะทำให้อนุภาคเกาะกันหลวม ๆ เป็น floc ที่ตกตะกอนเร็ว ได้ supernatant ใส ตะกอนมีปริมาตรสูง (F ใกล้ 1) และเขย่ากระจายง่าย เรียกว่า controlled flocculation (ตามแนวทางของ Martin และคณะ ศึกษาในระบบ sulfamerazine–docusate–AlCl₃) ตาม Schulze–Hardy rule ไอออนประจุ 3+ มีประสิทธิภาพสูงกว่าไอออน 2+ และ 1+ มาก จึงใช้ปริมาณน้อย แต่ต้องควบคุมปริมาณ หากเติมมากเกิน Al³⁺ ที่ดูดซับมากขึ้นจะทำให้ประจุกลับเป็นบวก (charge reversal) zeta potential บวกสูงขึ้นจนอนุภาคกลับไป deflocculate และเกิด caking อีก ในทางปฏิบัติจึงมักใช้ร่วมกับ suspending agent เพื่อชะลอการตกตะกอนของ floc ให้ได้ผลิตภัณฑ์ที่ดูสม่ำเสมอ",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Al³⁺ ลดค่า zeta potential ลงจนอนุภาคเกาะกันหลวม ๆ เป็น floc ได้ sediment volume สูงและเขย่ากระจายง่าย แต่ถ้าเติมมากเกินจะเกิด charge reversal และกลับไปเกิด caking ได้",
+          "is_correct": true,
+          "explanation": "ถูกต้อง Al³⁺ เป็น counter-ion ลด zeta potential ทำให้เกิด floc ที่ redisperse ง่าย แต่เกินขนาดจะเกิด charge reversal และ caking"
+        },
+        {
+          "label": "B",
+          "text": "Al³⁺ เพิ่มค่า zeta potential เชิงลบ ทำให้อนุภาคผลักกันมากขึ้นและตกตะกอนช้าลงจนไม่เกิด cake",
+          "is_correct": false,
+          "explanation": "Al³⁺ มีประจุบวก จึงลด (ทำให้เป็นลบน้อยลง) ไม่ใช่เพิ่ม zeta potential เชิงลบ การเพิ่มแรงผลักจะทำให้ระบบ deflocculate และ caking มากขึ้น"
+        },
+        {
+          "label": "C",
+          "text": "AlCl₃ ทำหน้าที่ suspending agent เพิ่มความหนืดของ vehicle เป็น pseudoplastic",
+          "is_correct": false,
+          "explanation": "AlCl₃ เป็นเกลืออนินทรีย์ที่ละลายน้ำ ไม่เพิ่มความหนืด suspending agent ได้แก่ xanthan gum, CMC, MCC, bentonite"
+        },
+        {
+          "label": "D",
+          "text": "AlCl₃ ทำหน้าที่ preservative ยับยั้งเชื้อในตำรับ",
+          "is_correct": false,
+          "explanation": "AlCl₃ ปริมาณที่ใช้เพื่อ flocculation ต่ำมากและไม่ได้มีวัตถุประสงค์เป็นสารกันเสีย"
+        },
+        {
+          "label": "E",
+          "text": "AlCl₃ ทำหน้าที่ wetting agent ลด contact angle ของ sulfamerazine",
+          "is_correct": false,
+          "explanation": "Wetting agent ในสูตรนี้คือ docusate sodium AlCl₃ ไม่ใช่ surfactant และไม่ลด contact angle"
+        }
+      ],
+      "key_takeaway": "Controlled flocculation: เติม counter-ion (Al³⁺, PO₄ ฯลฯ) ลด zeta potential → floc หลวม ไม่ cake; เกินขนาด → charge reversal → cake อีก"
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "ยาแขวนตะกอนเจือจางมีอนุภาคทรงกลมเส้นผ่านศูนย์กลาง 10 µm ความหนาแน่นของอนุภาค 1.5 g/cm³ กระจายอยู่ใน vehicle ที่มีความหนาแน่น 1.0 g/cm³ และความหนืด 1 cP กำหนด g = 981 cm/s² จงคำนวณอัตราการตกตะกอนตาม Stokes' law",
+    "choices": [
+      {
+        "label": "A",
+        "text": "2.73 × 10⁻¹ cm/s"
+      },
+      {
+        "label": "B",
+        "text": "2.73 × 10⁻⁵ cm/s"
+      },
+      {
+        "label": "C",
+        "text": "2.73 × 10⁻³ cm/s"
+      },
+      {
+        "label": "D",
+        "text": "1.09 × 10⁻² cm/s"
+      },
+      {
+        "label": "E",
+        "text": "6.81 × 10⁻⁴ cm/s"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "v = d²(ρs − ρo)g/(18η) = (1×10⁻³ cm)² × 0.5 × 981/(18 × 0.01 poise) = 2.73 × 10⁻³ cm/s",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. 2.73 × 10⁻³ cm/s — v = d²(ρs − ρo)g/18η = 2.73 × 10⁻³ cm/s (ประมาณ 9.8 cm/h) เมื่อแปลงหน่วยเป็น cgs ถูกต้อง",
+      "reason": "Stokes' law อธิบายความเร็วการตกตะกอนของอนุภาคทรงกลมในของไหลแบบ Newtonian ภายใต้ laminar flow: v = d²(ρs − ρo)g/(18η) โดย d คือเส้นผ่านศูนย์กลาง (ไม่ใช่รัศมี) ρs และ ρo คือความหนาแน่นของอนุภาคและ vehicle และ η คือความหนืด สิ่งสำคัญที่สุดคือแปลงหน่วยให้เป็นระบบเดียวกัน (cgs): 10 µm = 10 × 10⁻⁴ cm = 1 × 10⁻³ cm และ 1 cP = 0.01 poise (g cm⁻¹ s⁻¹) แทนค่าได้ v = (1×10⁻⁶ × 0.5 × 981)/(0.18) = 4.905×10⁻⁴/0.18 = 2.725 × 10⁻³ cm/s หรือประมาณ 9.8 cm ต่อชั่วโมง ซึ่งเร็วมาก จึงต้องลดอัตราการตกตะกอนด้วยการลดขนาดอนุภาค (มีผลกำลังสอง), ลดความต่างของความหนาแน่น (เช่น เติม sorbitol/sucrose เพิ่มความหนาแน่นของ vehicle) และเพิ่มความหนืดด้วย suspending agent Stokes' law ใช้ได้ดีกับยาแขวนตะกอนเจือจาง (ประมาณ ≤ 2 g/100 mL) ที่อนุภาคไม่รบกวนกัน ในตำรับจริงที่เข้มข้นหรือ flocculated และ vehicle เป็น non-Newtonian จะเบี่ยงเบนจากสมการ แต่ยังใช้ทำนายแนวโน้มได้",
+      "choices": [
+        {
+          "label": "A",
+          "text": "2.73 × 10⁻¹ cm/s",
+          "is_correct": false,
+          "explanation": "เกิดจากแปลง 10 µm ผิดเป็น 1 × 10⁻² cm (d² = 10⁻⁴ cm²) ทำให้ค่าสูงเกินจริง 100 เท่า ที่ถูกต้องคือ 10 µm = 1 × 10⁻³ cm"
+        },
+        {
+          "label": "B",
+          "text": "2.73 × 10⁻⁵ cm/s",
+          "is_correct": false,
+          "explanation": "เกิดจากใช้ความหนืด 1 poise แทน 0.01 poise (ไม่แปลง cP เป็น poise) ทำให้ค่าต่ำเกินจริง 100 เท่า"
+        },
+        {
+          "label": "C",
+          "text": "2.73 × 10⁻³ cm/s",
+          "is_correct": true,
+          "explanation": "ถูกต้อง v = (10⁻³)² × 0.5 × 981/(18 × 0.01) = 2.73 × 10⁻³ cm/s"
+        },
+        {
+          "label": "D",
+          "text": "1.09 × 10⁻² cm/s",
+          "is_correct": false,
+          "explanation": "เกิดจากใช้เส้นผ่านศูนย์กลาง 20 µm (นำรัศมี 10 µm ไปคูณสองผิด) ทำให้ d² มากขึ้น 4 เท่า (4 × 2.73 × 10⁻³ ≈ 1.09 × 10⁻²)"
+        },
+        {
+          "label": "E",
+          "text": "6.81 × 10⁻⁴ cm/s",
+          "is_correct": false,
+          "explanation": "เกิดจากแทนค่ารัศมี (5 µm) ลงในตำแหน่งของ d ทำให้ค่าลดลง 4 เท่า สมการ Stokes รูป 18η ต้องใช้เส้นผ่านศูนย์กลาง"
+        }
+      ],
+      "key_takeaway": "v = d²(ρs−ρo)g/18η (cgs: d เป็น cm, η เป็น poise; 1 µm = 10⁻⁴ cm, 1 cP = 0.01 P); d มีผลกำลังสอง",
+      "calculation_steps": [
+        "ขั้นที่ 1: แปลงหน่วย d = 10 µm = 1 × 10⁻³ cm → d² = 1 × 10⁻⁶ cm²; η = 1 cP = 0.01 poise (g cm⁻¹ s⁻¹)",
+        "ขั้นที่ 2: ρs − ρo = 1.5 − 1.0 = 0.5 g/cm³",
+        "ขั้นที่ 3: ตัวเศษ = 1 × 10⁻⁶ cm² × 0.5 g/cm³ × 981 cm/s² = 4.905 × 10⁻⁴ g cm⁻¹ s⁻²",
+        "ขั้นที่ 4: ตัวส่วน = 18 × 0.01 g cm⁻¹ s⁻¹ = 0.18 g cm⁻¹ s⁻¹",
+        "ขั้นที่ 5: v = 4.905 × 10⁻⁴ / 0.18 = 2.725 × 10⁻³ cm/s ≈ 2.73 × 10⁻³ cm/s (≈ 9.8 cm/h)"
+      ]
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "ยาแขวนตะกอนเจือจางตำรับหนึ่งเดิมมีอนุภาคขนาดเส้นผ่านศูนย์กลาง 20 µm ผู้ตั้งตำรับปรับปรุงโดย micronize ผงยาให้มีขนาด 10 µm และเติม suspending agent ทำให้ความหนืดของ vehicle เพิ่มเป็น 2 เท่า (สมมติว่า vehicle ยังเป็น Newtonian และความหนาแน่นไม่เปลี่ยน) อัตราการตกตะกอนใหม่จะเป็นกี่เท่าของเดิมตาม Stokes' law",
+    "choices": [
+      {
+        "label": "A",
+        "text": "1/2 เท่า"
+      },
+      {
+        "label": "B",
+        "text": "1/4 เท่า"
+      },
+      {
+        "label": "C",
+        "text": "2 เท่า"
+      },
+      {
+        "label": "D",
+        "text": "1/16 เท่า"
+      },
+      {
+        "label": "E",
+        "text": "1/8 เท่า"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "v ∝ d²/η: ขนาดลดลงครึ่งหนึ่งทำให้ v ลดเหลือ (1/2)² = 1/4 และความหนืดเพิ่ม 2 เท่าทำให้ v ลดลงอีกครึ่ง รวมเป็น 1/4 × 1/2 = 1/8 เท่า",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. 1/8 เท่า — v ∝ d²/η ดังนั้น (10/20)² × (1/2) = 1/8 ของอัตราเดิม",
+      "reason": "จาก Stokes' law v = d²(ρs − ρo)g/(18η) เมื่อปัจจัยอื่นคงที่ v แปรผันตรงกับ d² และแปรผกผันกับ η การลดขนาดอนุภาคจาก 20 เป็น 10 µm (ครึ่งหนึ่ง) ทำให้ d² ลดลงเหลือ 1/4 การเพิ่มความหนืดเป็น 2 เท่าทำให้ v ลดลงเหลือ 1/2 ผลรวมจึงเป็น 1/4 × 1/2 = 1/8 หรือ 12.5% ของอัตราเดิม แสดงให้เห็นว่าการลดขนาดอนุภาคเป็นวิธีที่ทรงพลังที่สุดเพราะมีผลกำลังสอง อย่างไรก็ตาม อนุภาคที่เล็กมากมีพลังงานพื้นผิวสูง (surface free energy, ΔG = γΔA) มีแนวโน้มจับกลุ่ม และในระบบ deflocculated อาจอัดแน่นเกิด caking มากขึ้น ส่วนการเพิ่มความหนืดมากเกินไปทำให้เทยากและ redisperse ยาก จึงนิยมใช้ suspending agent ที่เป็น pseudoplastic หรือ thixotropic ซึ่งหนืดสูงขณะตั้งทิ้งแต่หนืดต่ำเมื่อเขย่าหรือเท นอกจากนี้การลด (ρs − ρo) ด้วยการเติม sorbitol/sucrose/glycerin เพื่อเพิ่มความหนาแน่นของ vehicle ก็ช่วยชะลอการตกตะกอนได้",
+      "choices": [
+        {
+          "label": "A",
+          "text": "1/2 เท่า",
+          "is_correct": false,
+          "explanation": "พิจารณาเฉพาะผลของความหนืด (1/2) โดยลืมผลของขนาดอนุภาค หรือคิดว่า v แปรผันกับ d แบบเส้นตรง (1/2) แล้วลืมความหนืด ซึ่งไม่ถูกต้อง"
+        },
+        {
+          "label": "B",
+          "text": "1/4 เท่า",
+          "is_correct": false,
+          "explanation": "พิจารณาเฉพาะผลของขนาดอนุภาค ((1/2)² = 1/4) แต่ลืมผลของความหนืดที่เพิ่มเป็น 2 เท่า"
+        },
+        {
+          "label": "C",
+          "text": "2 เท่า",
+          "is_correct": false,
+          "explanation": "เกิดจากคิดว่าความหนืดเพิ่มทำให้ตกตะกอนเร็วขึ้น ซึ่งผิด ความหนืดอยู่ในตัวส่วนของสมการ"
+        },
+        {
+          "label": "D",
+          "text": "1/16 เท่า",
+          "is_correct": false,
+          "explanation": "เกิดจากยกกำลังสองทั้งขนาดและความหนืด ((1/2)² × (1/2)² = 1/16) แต่ความหนืดมีผลแบบกำลังหนึ่ง"
+        },
+        {
+          "label": "E",
+          "text": "1/8 เท่า",
+          "is_correct": true,
+          "explanation": "ถูกต้อง (10/20)² × (1/2) = 1/4 × 1/2 = 1/8 เท่า"
+        }
+      ],
+      "key_takeaway": "v ∝ d²(ρs − ρo)/η — ลดขนาดครึ่งหนึ่ง → v เหลือ 1/4; เพิ่ม η 2 เท่า → v เหลือ 1/2",
+      "calculation_steps": [
+        "ขั้นที่ 1: v ∝ d²/η (เมื่อ ρs, ρo และ g คงที่)",
+        "ขั้นที่ 2: ผลของขนาด = (d ใหม่/d เดิม)² = (10 µm/20 µm)² = 1/4",
+        "ขั้นที่ 3: ผลของความหนืด = η เดิม/η ใหม่ = 1/2",
+        "ขั้นที่ 4: v ใหม่/v เดิม = 1/4 × 1/2 = 1/8 (12.5%)"
+      ]
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "เตรียมยาแขวนตะกอนตัวยาเดียวกันสองตำรับในกระบอกตวงขนาดเท่ากัน ความสูงเริ่มต้นของยาแขวนตะกอน 10.0 cm ทั้งสองตำรับ ตำรับ X เติม flocculating agent หลังตั้งทิ้งจนตะกอนคงที่มีความสูงตะกอน 7.5 cm ตำรับ Y ไม่เติม flocculating agent (deflocculated) มีความสูงตะกอนสุดท้าย 1.5 cm จงคำนวณ sedimentation volume (F) ของตำรับ X และ degree of flocculation (β) ของตำรับ X",
+    "choices": [
+      {
+        "label": "A",
+        "text": "F = 0.75 และ β = 0.20"
+      },
+      {
+        "label": "B",
+        "text": "F = 0.75 และ β = 5.0"
+      },
+      {
+        "label": "C",
+        "text": "F = 0.25 และ β = 5.0"
+      },
+      {
+        "label": "D",
+        "text": "F = 0.15 และ β = 0.20"
+      },
+      {
+        "label": "E",
+        "text": "F = 1.33 และ β = 5.0"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "F = Hu/Ho = 7.5/10.0 = 0.75; F∞ ของระบบ deflocculated = 1.5/10.0 = 0.15; β = F/F∞ = 0.75/0.15 = 5.0",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. F = 0.75 และ β = 5.0 — F ของตำรับ X = 0.75 และ β = F/F∞ = 0.75/0.15 = 5.0",
+      "reason": "Sedimentation volume (F) คืออัตราส่วนของปริมาตร (หรือความสูง) ตะกอนสุดท้ายต่อปริมาตร (หรือความสูง) เริ่มต้นของยาแขวนตะกอน F = Vu/Vo = Hu/Ho ค่า F อยู่ระหว่าง 0 ถึง 1 โดยทั่วไป (อาจมากกว่า 1 ได้ถ้า floc ขยายตัวเกินปริมาตรเดิม) ค่า F ยิ่งใกล้ 1 ยิ่งดี หมายถึงตะกอนฟูเต็มปริมาตร ไม่เห็นชั้น supernatant ชัด และเขย่ากระจายง่าย Degree of flocculation (β) เปรียบเทียบ F ของระบบ flocculated กับ F∞ ของระบบเดียวกันที่ deflocculated สมบูรณ์ β = F/F∞ = (Vu/Vo)/(V∞/Vo) = Vu/V∞ ค่า β = 5.0 หมายความว่า flocculating agent ทำให้ปริมาตรตะกอนเพิ่มขึ้นเป็น 5 เท่าของระบบ deflocculated β มีค่าน้อยที่สุดเท่ากับ 1 (ไม่มี flocculation) และเป็นพารามิเตอร์ที่ดีกว่า F สำหรับประเมินผลของ flocculating agent เพราะอ้างอิงกับค่าพื้นฐานของระบบเดียวกัน การทดสอบนี้ใช้ในการพัฒนาตำรับเพื่อเลือกชนิดและความเข้มข้นของ flocculating agent ร่วมกับการวัด zeta potential และ redispersibility",
+      "choices": [
+        {
+          "label": "A",
+          "text": "F = 0.75 และ β = 0.20",
+          "is_correct": false,
+          "explanation": "F = 0.75 ถูก แต่ β คำนวณกลับด้าน (0.15/0.75 = 0.20) ค่า β ต้องมากกว่าหรือเท่ากับ 1 เสมอสำหรับระบบที่มี flocculation"
+        },
+        {
+          "label": "B",
+          "text": "F = 0.75 และ β = 5.0",
+          "is_correct": true,
+          "explanation": "ถูกต้อง F = 7.5/10 = 0.75 และ β = 0.75/0.15 = 5.0"
+        },
+        {
+          "label": "C",
+          "text": "F = 0.25 และ β = 5.0",
+          "is_correct": false,
+          "explanation": "F = 0.25 ได้จาก (10 − 7.5)/10 คือสัดส่วนของ supernatant ไม่ใช่ sedimentation volume"
+        },
+        {
+          "label": "D",
+          "text": "F = 0.15 และ β = 0.20",
+          "is_correct": false,
+          "explanation": "F = 0.15 คือ F∞ ของตำรับ Y (deflocculated) ไม่ใช่ของตำรับ X และ β คำนวณกลับด้าน"
+        },
+        {
+          "label": "E",
+          "text": "F = 1.33 และ β = 5.0",
+          "is_correct": false,
+          "explanation": "F = 1.33 ได้จาก Ho/Hu (10/7.5) ซึ่งกลับด้าน สูตรที่ถูกคือ Hu/Ho"
+        }
+      ],
+      "key_takeaway": "F = Vu/Vo (ยิ่งใกล้ 1 ยิ่งดี); β = F/F∞ = Vu/V∞ (≥ 1)",
+      "calculation_steps": [
+        "ขั้นที่ 1: F (ตำรับ X) = Hu/Ho = 7.5 cm/10.0 cm = 0.75",
+        "ขั้นที่ 2: F∞ (ตำรับ Y, deflocculated) = 1.5 cm/10.0 cm = 0.15",
+        "ขั้นที่ 3: β = F/F∞ = 0.75/0.15 = 5.0"
+      ]
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "จากการประเมินยาแขวนตะกอน 5 ตำรับในระหว่างการพัฒนาสูตร ข้อสังเกตใดบ่งชี้ว่าตำรับนั้นอยู่ในสภาวะ deflocculated",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ตะกอนตกเร็ว มีเส้นแบ่งระหว่างชั้นตะกอนกับ supernatant ที่ใสชัดเจน"
+      },
+      {
+        "label": "B",
+        "text": "Sedimentation volume (F) มีค่าใกล้ 1"
+      },
+      {
+        "label": "C",
+        "text": "เขย่าเบา ๆ เพียงไม่กี่ครั้งตะกอนก็กระจายกลับสม่ำเสมอ"
+      },
+      {
+        "label": "D",
+        "text": "ตะกอนตกช้า supernatant ขุ่นอยู่นาน ตะกอนสุดท้ายมีปริมาตรน้อย อัดแน่นและเขย่ากระจายยาก"
+      },
+      {
+        "label": "E",
+        "text": "ภายใต้กล้องจุลทรรศน์เห็นอนุภาคเกาะกันหลวม ๆ เป็นกลุ่มคล้ายปุยสำลี"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "ระบบ deflocculated อนุภาคแยกเป็นอิสระเพราะแรงผลักสูง (zeta potential สูง) จึงตกช้า supernatant ขุ่น แต่เมื่อตกแล้วจัดเรียงแน่นได้ตะกอนปริมาตรน้อยและเกิด caking",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. ตะกอนตกช้า supernatant ขุ่นอยู่นาน ตะกอนสุดท้ายมีปริมาตรน้อย อัดแน่นและเขย่ากระจายยาก — ลักษณะของ deflocculated suspension: ตกช้า supernatant ขุ่น ตะกอนแน่นปริมาตรน้อย เกิด cake เขย่ากระจายยาก",
+      "reason": "ในระบบ deflocculated อนุภาคมีประจุผิวสูงและผลักกัน จึงคงสภาพเป็นอนุภาคเดี่ยว ขนาดเล็ก ตามกฎของ Stokes อนุภาคเล็กตกช้า supernatant จึงขุ่นนาน ทำให้ผลิตภัณฑ์ดูสม่ำเสมอในระยะสั้น อย่างไรก็ตาม อนุภาคแต่ละตัวค่อย ๆ ตกและเลื่อนเข้าไปอยู่ในช่องว่างระหว่างอนุภาคอื่นได้ จัดเรียงตัวแน่นที่สุด (closely packed) ภายใต้น้ำหนักของชั้นบน อนุภาคถูกบีบเข้าใกล้กันจนเอาชนะแรงผลักและตกลงใน primary minimum เกิดเป็นตะกอนแข็ง (cake) ที่ไม่สามารถเขย่าให้กระจายได้ ซึ่งทำให้ได้ขนาดยาไม่ถูกต้อง ระบบ flocculated มีลักษณะตรงข้าม คือ อนุภาคเกาะกันหลวม ๆ เป็น floc ตกเร็ว เส้นแบ่ง supernatant ใสชัด ตะกอนฟูมีปริมาตรมาก (F สูง) และเขย่ากระจายง่าย ข้อเสียคือดูไม่สวยงามเพราะแยกชั้นเร็ว แนวทางที่นิยมคือ controlled flocculation ร่วมกับ structured vehicle (suspending agent) เพื่อชะลอการตกของ floc",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ตะกอนตกเร็ว มีเส้นแบ่งระหว่างชั้นตะกอนกับ supernatant ที่ใสชัดเจน",
+          "is_correct": false,
+          "explanation": "เป็นลักษณะของ flocculated suspension: floc มีขนาดใหญ่จึงตกเร็ว และอนุภาคละเอียดถูกกวาดลงไปด้วย supernatant จึงใส"
+        },
+        {
+          "label": "B",
+          "text": "Sedimentation volume (F) มีค่าใกล้ 1",
+          "is_correct": false,
+          "explanation": "F ใกล้ 1 หมายถึงตะกอนฟูมีปริมาตรมาก เป็นลักษณะของระบบ flocculated ระบบ deflocculated จะมี F ต่ำ"
+        },
+        {
+          "label": "C",
+          "text": "เขย่าเบา ๆ เพียงไม่กี่ครั้งตะกอนก็กระจายกลับสม่ำเสมอ",
+          "is_correct": false,
+          "explanation": "การ redisperse ง่ายเป็นข้อดีของระบบ flocculated เพราะอนุภาคเกาะกันด้วยแรงอ่อนที่ secondary minimum"
+        },
+        {
+          "label": "D",
+          "text": "ตะกอนตกช้า supernatant ขุ่นอยู่นาน ตะกอนสุดท้ายมีปริมาตรน้อย อัดแน่นและเขย่ากระจายยาก",
+          "is_correct": true,
+          "explanation": "ถูกต้อง ตกช้า supernatant ขุ่น ตะกอนปริมาตรน้อยอัดแน่น และเกิด caking เป็นลักษณะเฉพาะของระบบ deflocculated"
+        },
+        {
+          "label": "E",
+          "text": "ภายใต้กล้องจุลทรรศน์เห็นอนุภาคเกาะกันหลวม ๆ เป็นกลุ่มคล้ายปุยสำลี",
+          "is_correct": false,
+          "explanation": "โครงสร้าง floc แบบหลวมคล้ายปุยสำลีเป็นลักษณะของระบบ flocculated"
+        }
+      ],
+      "key_takeaway": "Deflocculated: ตกช้า/ขุ่น/F ต่ำ/cake | Flocculated: ตกเร็ว/ใส/F สูง/redisperse ง่าย"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "อนุภาค bismuth subnitrate ในน้ำมีประจุผิวเป็นบวก (zeta potential เป็นบวกสูง) ผู้วิจัยเติม monobasic potassium phosphate (KH₂PO₄) ความเข้มข้นเพิ่มขึ้นเรื่อย ๆ พบว่า zeta potential ลดลงจากค่าบวก ผ่านศูนย์ แล้วกลายเป็นลบมากขึ้น ข้อใดสรุปความสัมพันธ์ระหว่าง zeta potential กับการเกิด caking ได้ถูกต้อง",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ไม่เกิด caking ในช่วงที่ zeta potential ลดลงใกล้ศูนย์ (บวกเล็กน้อยถึงลบเล็กน้อย) เพราะอนุภาค flocculate แต่เมื่อเติม phosphate มากจน zeta potential เป็นลบสูงจะกลับมาเกิด caking"
+      },
+      {
+        "label": "B",
+        "text": "Caking น้อยที่สุดเมื่อ zeta potential เป็นบวกสูงสุด เพราะอนุภาคผลักกันจึงไม่เกาะกัน"
+      },
+      {
+        "label": "C",
+        "text": "ยิ่งเติม phosphate มาก ยิ่งป้องกัน caking ได้ดีขึ้นเสมอโดยไม่มีขีดจำกัด"
+      },
+      {
+        "label": "D",
+        "text": "Caking รุนแรงที่สุดเมื่อ zeta potential ใกล้ศูนย์ เพราะอนุภาคไม่มีแรงผลักจึงอัดแน่น"
+      },
+      {
+        "label": "E",
+        "text": "Zeta potential ไม่มีผลต่อ caking ปัจจัยเดียวที่มีผลคือความหนืดของ vehicle"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "เมื่อ zeta potential ลดลงใกล้ศูนย์ แรงผลักน้อยลง อนุภาคเกาะกันหลวม ๆ (flocculated) ไม่เกิด cake แต่เมื่อเติม phosphate เกินจน zeta potential กลับเป็นลบสูง อนุภาคผลักกันอีกครั้ง (deflocculated) และเกิด caking",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. ไม่เกิด caking ในช่วงที่ zeta potential ลดลงใกล้ศูนย์ (บวกเล็กน้อยถึงลบเล็กน้อย) เพราะอนุภาค flocculate แต่เมื่อเติม phosphate มากจน zeta potential เป็นลบสูงจะกลับมาเกิด caking — ช่วงไม่เกิด caking คือช่วงที่ zeta potential ต่ำใกล้ศูนย์ (flocculated) ทั้งค่าบวกสูงและลบสูงทำให้ deflocculate และเกิด caking",
+      "reason": "การทดลองแบบคลาสสิกของ bismuth subnitrate กับ KH₂PO₄ (อ้างใน Martin's Physical Pharmacy) แสดงว่าในน้ำอนุภาคมีประจุบวก zeta potential สูง ระบบ deflocculated และเกิด cake เมื่อเติม phosphate anion ซึ่งดูดซับที่ผิวอนุภาค ประจุบวกถูกทำให้เป็นกลาง zeta potential ลดลง ที่ค่า zeta potential ต่ำพอ (บวกเล็กน้อย ผ่านศูนย์ ถึงลบเล็กน้อย) อนุภาคเกิด flocculation ค่า sedimentation volume สูงสุด และไม่เกิด caking เมื่อเติม phosphate ต่อไป anion ดูดซับมากเกินจน zeta potential กลับเป็นลบและลบมากขึ้น (charge reversal) แรงผลักกลับมาสูง ระบบ deflocculate อีกครั้ง sedimentation volume ลดลงและกลับมาเกิด caking ดังนั้น \"non-caking region\" จึงเป็นช่วงแคบ ๆ ของความเข้มข้น electrolyte ที่ต้องหาจากการทดลอง (วัด zeta potential, F และ redispersibility ร่วมกัน) หลักการนี้ใช้ได้กับ controlled flocculation ด้วย electrolyte ทุกชนิด ทั้งกรณีอนุภาคประจุบวกที่ใช้ anion และอนุภาคประจุลบที่ใช้ cation เช่น Al³⁺",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ไม่เกิด caking ในช่วงที่ zeta potential ลดลงใกล้ศูนย์ (บวกเล็กน้อยถึงลบเล็กน้อย) เพราะอนุภาค flocculate แต่เมื่อเติม phosphate มากจน zeta potential เป็นลบสูงจะกลับมาเกิด caking",
+          "is_correct": true,
+          "explanation": "ถูกต้อง non-caking region อยู่ที่ zeta potential ต่ำใกล้ศูนย์ ส่วน zeta potential บวกสูงหรือลบสูงทำให้ deflocculate และเกิด caking"
+        },
+        {
+          "label": "B",
+          "text": "Caking น้อยที่สุดเมื่อ zeta potential เป็นบวกสูงสุด เพราะอนุภาคผลักกันจึงไม่เกาะกัน",
+          "is_correct": false,
+          "explanation": "ที่ zeta potential บวกสูง ระบบ deflocculated อนุภาคตกทีละตัวและอัดแน่นเกิด cake ซึ่งตรงข้ามกับที่กล่าว"
+        },
+        {
+          "label": "C",
+          "text": "ยิ่งเติม phosphate มาก ยิ่งป้องกัน caking ได้ดีขึ้นเสมอโดยไม่มีขีดจำกัด",
+          "is_correct": false,
+          "explanation": "การเติมมากเกินทำให้เกิด charge reversal zeta potential ลบสูง และกลับมาเกิด caking จึงมีขีดจำกัด"
+        },
+        {
+          "label": "D",
+          "text": "Caking รุนแรงที่สุดเมื่อ zeta potential ใกล้ศูนย์ เพราะอนุภาคไม่มีแรงผลักจึงอัดแน่น",
+          "is_correct": false,
+          "explanation": "ที่ zeta potential ใกล้ศูนย์อนุภาคเกาะกันเป็น floc หลวม ๆ ไม่จัดเรียงแน่น จึงไม่เกิด cake ข้อนี้กลับด้าน"
+        },
+        {
+          "label": "E",
+          "text": "Zeta potential ไม่มีผลต่อ caking ปัจจัยเดียวที่มีผลคือความหนืดของ vehicle",
+          "is_correct": false,
+          "explanation": "Zeta potential เป็นตัวกำหนดสำคัญของสภาวะ flocculated/deflocculated ซึ่งมีผลโดยตรงต่อ caking ความหนืดเพียงชะลอการตกตะกอน"
+        }
+      ],
+      "key_takeaway": "Zeta สูง (± มาก) → deflocculated → cake; zeta ต่ำใกล้ 0 → flocculated → ไม่ cake; เติม electrolyte เกิน → charge reversal"
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "ยาแขวนตะกอนตัวยาไม่ละลายน้ำตำรับหนึ่งใช้ purified water เป็น vehicle พบปัญหาตะกอนตกเร็วระหว่างจ่ายยา ผู้ตั้งตำรับต้องการ structured vehicle ที่มีความหนืดสูงขณะตั้งทิ้งเพื่อพยุงอนุภาค แต่เมื่อเขย่าจะเหลวลงจนเทง่าย และค่อย ๆ กลับมาเป็นเจลเมื่อตั้งทิ้ง (thixotropic) สารใดเหมาะสมที่สุด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Simple syrup"
+      },
+      {
+        "label": "B",
+        "text": "Glycerin"
+      },
+      {
+        "label": "C",
+        "text": "Polyethylene glycol 400"
+      },
+      {
+        "label": "D",
+        "text": "Polysorbate 80"
+      },
+      {
+        "label": "E",
+        "text": "Microcrystalline cellulose ร่วมกับ carboxymethylcellulose sodium (MCC–CMC)"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "MCC–CMC (เช่น Avicel RC-591) กระจายในน้ำเป็นโครงข่ายเจลแบบ colloidal ที่แสดงพฤติกรรม thixotropic มี yield value พยุงอนุภาคขณะตั้งทิ้ง เขย่าแล้วเหลวและฟื้นกลับเป็นเจล",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. Microcrystalline cellulose ร่วมกับ carboxymethylcellulose sodium (MCC–CMC) — MCC–CMC เป็น suspending agent ที่ให้ structured vehicle แบบ thixotropic เหมาะกับยาแขวนตะกอนและผงแห้งสำหรับผสมน้ำ",
+      "reason": "Structured vehicle ที่ดีควรมีความหนืดหรือ yield value สูงขณะตั้งทิ้ง (shear rate ต่ำ) เพื่อชะลอหรือหยุดการตกตะกอน แต่ความหนืดลดลงเมื่อเขย่าหรือเท (shear rate สูง) และฟื้นตัวกลับเมื่อหยุดแรงเฉือน (thixotropy คือ isothermal, reversible gel–sol–gel transformation ที่ขึ้นกับเวลา) Microcrystalline cellulose ที่ผ่านการ co-process กับ carboxymethylcellulose sodium (เช่น Avicel RC-591, ใช้ประมาณ 0.5–2.0%) เมื่อกระจายในน้ำ CMC ช่วยให้ MCC ขนาด colloid กระจายตัว และอนุภาค MCC สร้างโครงข่ายสามมิติแบบ thixotropic พร้อมมี yield value นิยมใช้ทั้งในยาแขวนตะกอนและ dry powder for reconstitution สารที่ให้ thixotropy อื่น ๆ ได้แก่ bentonite, magnesium aluminum silicate (Veegum) และ colloidal silicon dioxide ส่วน xanthan gum, CMC, methylcellulose ให้การไหลแบบ pseudoplastic (shear-thinning โดยไม่มี time-dependence ชัดเจน) ส่วน syrup, glycerin, PEG 400 เป็นของเหลว Newtonian ซึ่งความหนืดไม่ขึ้นกับแรงเฉือน ถ้าใช้ให้หนืดพอจะพยุงอนุภาคก็จะเทยาก",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Simple syrup",
+          "is_correct": false,
+          "explanation": "Simple syrup เป็น Newtonian liquid ความหนืดคงที่ไม่ขึ้นกับแรงเฉือน ช่วยเพิ่มความหนาแน่นและความหนืดได้บ้าง แต่ไม่มี yield value หรือ thixotropy"
+        },
+        {
+          "label": "B",
+          "text": "Glycerin",
+          "is_correct": false,
+          "explanation": "Glycerin เป็น Newtonian liquid ใช้เป็น humectant/cosolvent/wetting aid ไม่ให้โครงสร้างเจลแบบ thixotropic"
+        },
+        {
+          "label": "C",
+          "text": "Polyethylene glycol 400",
+          "is_correct": false,
+          "explanation": "PEG 400 เป็นของเหลว Newtonian ใช้เป็น cosolvent ไม่สร้างโครงข่ายเจล"
+        },
+        {
+          "label": "D",
+          "text": "Polysorbate 80",
+          "is_correct": false,
+          "explanation": "Polysorbate 80 เป็น wetting agent/surfactant ที่ไม่เพิ่มความหนืดในความเข้มข้นที่ใช้ และไม่ทำให้เกิด thixotropy"
+        },
+        {
+          "label": "E",
+          "text": "Microcrystalline cellulose ร่วมกับ carboxymethylcellulose sodium (MCC–CMC)",
+          "is_correct": true,
+          "explanation": "ถูกต้อง MCC–CMC สร้างโครงข่ายเจลแบบ thixotropic มี yield value พยุงอนุภาคขณะตั้งทิ้งและเทง่ายเมื่อเขย่า"
+        }
+      ],
+      "key_takeaway": "Thixotropic suspending agents: MCC–CMC (Avicel RC-591), bentonite, Veegum, colloidal SiO₂ | Pseudoplastic: xanthan, CMC, MC, tragacanth"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "Cefalexin for oral suspension 250 mg/5 mL (ผงแห้งสำหรับผสมน้ำ) มีส่วนประกอบดังนี้: Cefalexin monohydrate, Sucrose, Xanthan gum, Sodium citrate, Colloidal silicon dioxide, Sodium benzoate, Strawberry flavor และ Erythrosine (สี) สารใดทำหน้าที่หลักในการชะลอการตกตะกอนของอนุภาคยาหลังผสมน้ำแล้ว",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Sucrose"
+      },
+      {
+        "label": "B",
+        "text": "Sodium citrate"
+      },
+      {
+        "label": "C",
+        "text": "Xanthan gum"
+      },
+      {
+        "label": "D",
+        "text": "Colloidal silicon dioxide"
+      },
+      {
+        "label": "E",
+        "text": "Sodium benzoate"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Xanthan gum เป็น suspending agent ชนิด anionic polysaccharide ที่เพิ่มความหนืดและมี yield value/pseudoplastic flow ทำให้อนุภาคตกตะกอนช้าลงเมื่อตั้งทิ้งไว้ และยังเทได้ง่ายเมื่อเขย่า",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. Xanthan gum — suspending agent ที่เพิ่มความหนืดของตัวกลาง ชะลอการตกตะกอนตาม Stokes' law",
+      "reason": "ตาม Stokes' law อัตราการตกตะกอน v = d²(ρs − ρ0)g / 18η แปรผกผันกับความหนืดของตัวกลาง (η) suspending agent จึงเป็นสารหลักที่ใช้ชะลอการตกตะกอนในยาแขวนตะกอน Xanthan gum เป็น high-molecular-weight anionic polysaccharide จากการหมักของ Xanthomonas campestris ใช้ที่ความเข้มข้นประมาณ 0.1–0.5% ให้สารละลายที่มีความหนืดสูงที่อัตราเฉือนต่ำ และมีพฤติกรรม pseudoplastic (shear-thinning) พร้อม yield value เล็กน้อย เมื่อตั้งทิ้งไว้ ความหนืดสูงจะพยุงอนุภาคไว้ แต่เมื่อเขย่าหรือเท ความหนืดลดลงทำให้เทและตวงได้ง่าย นอกจากนี้ xanthan gum ทนต่อ pH และอุณหภูมิในช่วงกว้าง และเข้ากันได้กับเกลือ จึงเหมาะกับ dry powder for reconstitution ที่ต้องกระจายตัวเร็วเมื่อเติมน้ำ สารอื่นในตำรับมีหน้าที่ต่างกัน: sucrose เป็นสารให้ความหวานและเพิ่มปริมาณ, sodium citrate เป็น buffer ปรับ pH ให้ยาคงตัวที่สุดหลังผสม, colloidal silicon dioxide เป็น glidant/anticaking ของผงแห้ง (ช่วยการไหลขณะบรรจุและป้องกันการจับเป็นก้อน), sodium benzoate เป็นสารกันเสียสำหรับช่วงใช้ยาหลังผสม (ได้ผลดีที่ pH ต่ำกว่า ~4.5–5 เพราะรูป unionized benzoic acid เป็นรูปที่ออกฤทธิ์)",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Sucrose",
+          "is_correct": false,
+          "explanation": "ผิด — Sucrose ทำหน้าที่ให้ความหวาน กลบรส และเป็น diluent ของผงแห้ง เมื่อผสมน้ำจะเพิ่มความหนืดได้เพียงเล็กน้อยที่ความเข้มข้นในตำรับ ไม่ใช่สารหลักในการพยุงอนุภาค"
+        },
+        {
+          "label": "B",
+          "text": "Sodium citrate",
+          "is_correct": false,
+          "explanation": "ผิด — Sodium citrate (ร่วมกับ citric acid ถ้ามี) เป็น buffer ปรับ pH ของยาหลังผสมให้อยู่ในช่วงที่ยาคงตัวและรสชาติยอมรับได้ ไม่ได้เพิ่มความหนืด (citrate ยังใช้เป็น flocculating agent ได้ในบางตำรับ แต่ไม่ใช่หน้าที่หลักที่นี่)"
+        },
+        {
+          "label": "C",
+          "text": "Xanthan gum",
+          "is_correct": true,
+          "explanation": "ถูก — Xanthan gum เป็น suspending agent เพิ่มความหนืดและให้ pseudoplastic flow ชะลอการตกตะกอนตาม Stokes' law และทำให้เขย่ากลับเป็นเนื้อเดียวได้ง่าย"
+        },
+        {
+          "label": "D",
+          "text": "Colloidal silicon dioxide",
+          "is_correct": false,
+          "explanation": "ผิด — Colloidal silicon dioxide (Aerosil) ในผงแห้งทำหน้าที่เป็น glidant และ anticaking agent ช่วยการไหลของผงขณะบรรจุและป้องกันผงจับเป็นก้อนเมื่อชื้น แม้ที่ความเข้มข้นสูงจะเพิ่มความหนืดในระบบน้ำมันได้ แต่ในตำรับนี้ไม่ใช่สารชะลอการตกตะกอนหลัก"
+        },
+        {
+          "label": "E",
+          "text": "Sodium benzoate",
+          "is_correct": false,
+          "explanation": "ผิด — Sodium benzoate เป็นสารกันเสียป้องกันการเจริญของจุลชีพระหว่างใช้ยาหลังผสม (multi-dose) ออกฤทธิ์ได้ดีในสภาวะกรดเมื่ออยู่ในรูป benzoic acid ไม่เกี่ยวกับการตกตะกอน"
+        }
+      ],
+      "key_takeaway": "Stokes' law: v ∝ 1/η → suspending agent (xanthan gum, CMC, MCC–CMC, tragacanth, bentonite) ชะลอการตกตะกอน; ในผงแห้งสำหรับผสมน้ำ: sucrose = หวาน, citrate = buffer, Aerosil = glidant/anticaking, benzoate = preservative"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "ผลการทดสอบอิมัลชันตำรับหนึ่งเป็นดังนี้: (1) เจือจางด้วยน้ำได้ง่ายและเข้ากันดี (2) เมื่อโรยผง methylene blue ซึ่งละลายน้ำ สีกระจายไปทั่วอิมัลชันอย่างรวดเร็ว (3) อิมัลชันนำไฟฟ้าได้ดีในการทดสอบ conductivity อิมัลชันนี้เป็นชนิดใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Water-in-oil (w/o)"
+      },
+      {
+        "label": "B",
+        "text": "Oil-in-water (o/w)"
+      },
+      {
+        "label": "C",
+        "text": "w/o เพราะการนำไฟฟ้าเกิดจากวัฏภาคน้ำมัน"
+      },
+      {
+        "label": "D",
+        "text": "สรุปไม่ได้ ต้องใช้ Sudan III เพียงวิธีเดียว"
+      },
+      {
+        "label": "E",
+        "text": "ไม่ใช่อิมัลชัน แต่เป็นยาแขวนตะกอน"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "ทุกการทดสอบบ่งชี้ว่าน้ำเป็นวัฏภาคภายนอก (continuous phase): เจือจางด้วยน้ำได้ สีที่ละลายน้ำกระจายทั่ว และนำไฟฟ้าได้ จึงเป็น o/w",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. Oil-in-water (o/w) — อิมัลชันที่เจือจางด้วยน้ำได้ ย้อมด้วยสีละลายน้ำได้ทั่ว และนำไฟฟ้าได้ เป็นชนิด o/w",
+      "reason": "การทดสอบชนิดของอิมัลชันอาศัยการระบุว่าวัฏภาคใดเป็นวัฏภาคภายนอก (external/continuous phase) (1) Dilution test: อิมัลชันจะผสมเข้ากันได้กับของเหลวที่เหมือนวัฏภาคภายนอก o/w เจือจางด้วยน้ำได้ ส่วน w/o เจือจางด้วยน้ำมันได้ (2) Dye solubility test: สีที่ละลายน้ำ เช่น methylene blue หรือ amaranth จะกระจายทั่วอิมัลชันถ้าน้ำเป็นวัฏภาคภายนอก ส่วนสีที่ละลายในน้ำมัน เช่น Sudan III จะกระจายทั่วเมื่อน้ำมันเป็นวัฏภาคภายนอก ถ้าดูด้วยกล้องจุลทรรศน์ใน o/w ที่ย้อมด้วย Sudan III จะเห็นหยดน้ำมันเป็นสีแดงบนพื้นไม่มีสี (3) Conductivity test: น้ำที่มีไอออนนำไฟฟ้าได้ o/w จึงนำไฟฟ้า ขณะที่ w/o นำไฟฟ้าได้น้อยมาก (ข้อจำกัดคืออิมัลชันที่ใช้ nonionic emulsifier หรือ w/o ที่มีวัฏภาคน้ำสูงอาจให้ผลคลาดเคลื่อน) (4) Fluorescence test: น้ำมันหลายชนิดเรืองแสงภายใต้ UV ถ้าทั้งสนามเรืองแสงเป็น w/o การใช้หลายวิธีร่วมกันช่วยยืนยันผล ตัวอย่าง o/w ได้แก่ vanishing cream, oral emulsion ส่วน w/o ได้แก่ cold cream, hydrous wool fat",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Water-in-oil (w/o)",
+          "is_correct": false,
+          "explanation": "w/o จะเจือจางด้วยน้ำมัน ไม่ใช่น้ำ สีที่ละลายน้ำจะอยู่เป็นจุดในหยดน้ำภายในไม่กระจายทั่ว และนำไฟฟ้าได้น้อยมาก"
+        },
+        {
+          "label": "B",
+          "text": "Oil-in-water (o/w)",
+          "is_correct": true,
+          "explanation": "ถูกต้อง ผลการทดสอบทั้งสามชี้ว่าน้ำเป็นวัฏภาคภายนอก จึงเป็น o/w"
+        },
+        {
+          "label": "C",
+          "text": "w/o เพราะการนำไฟฟ้าเกิดจากวัฏภาคน้ำมัน",
+          "is_correct": false,
+          "explanation": "น้ำมันไม่นำไฟฟ้า การนำไฟฟ้าได้ดีบ่งชี้ว่าวัฏภาคภายนอกเป็นน้ำ จึงเป็น o/w ไม่ใช่ w/o"
+        },
+        {
+          "label": "D",
+          "text": "สรุปไม่ได้ ต้องใช้ Sudan III เพียงวิธีเดียว",
+          "is_correct": false,
+          "explanation": "Sudan III เป็นเพียงหนึ่งในวิธีย้อมสี การทดสอบ dilution, dye ที่ละลายน้ำ และ conductivity ที่ให้ผลสอดคล้องกันเพียงพอที่จะสรุปชนิดได้"
+        },
+        {
+          "label": "E",
+          "text": "ไม่ใช่อิมัลชัน แต่เป็นยาแขวนตะกอน",
+          "is_correct": false,
+          "explanation": "การทดสอบเหล่านี้เป็นการทดสอบชนิดของอิมัลชัน และโจทย์ระบุว่าเป็นอิมัลชัน ไม่มีข้อมูลบ่งชี้ว่าเป็นยาแขวนตะกอน"
+        }
+      ],
+      "key_takeaway": "o/w: เจือจางด้วยน้ำ, methylene blue กระจายทั่ว, นำไฟฟ้า | w/o: เจือจางด้วยน้ำมัน, Sudan III กระจายทั่ว, ไม่นำไฟฟ้า, เรืองแสงทั่วสนาม"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "ต้องการเตรียม emulsifier blend 5 g ที่มีค่า HLB เท่ากับ 12 จาก polysorbate 80 (Tween 80, HLB 15.0) และ sorbitan monooleate (Span 80, HLB 4.3) ต้องใช้สารแต่ละชนิดอย่างละกี่กรัม",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Tween 80 1.40 g และ Span 80 3.60 g"
+      },
+      {
+        "label": "B",
+        "text": "Tween 80 2.50 g และ Span 80 2.50 g"
+      },
+      {
+        "label": "C",
+        "text": "Tween 80 4.00 g และ Span 80 1.00 g"
+      },
+      {
+        "label": "D",
+        "text": "Tween 80 3.60 g และ Span 80 1.40 g"
+      },
+      {
+        "label": "E",
+        "text": "Tween 80 3.20 g และ Span 80 1.80 g"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "ให้สัดส่วน Tween 80 = x: 15.0x + 4.3(1 − x) = 12 → x = 7.7/10.7 = 0.720 ดังนั้น Tween 80 = 0.720 × 5 = 3.60 g และ Span 80 = 1.40 g",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. Tween 80 3.60 g และ Span 80 1.40 g — Tween 80 3.60 g + Span 80 1.40 g ให้ HLB รวม = (3.60×15.0 + 1.40×4.3)/5 = 12.0",
+      "reason": "ค่า HLB ของ surfactant ผสมคำนวณแบบ weighted average ตามสัดส่วนโดยน้ำหนัก (algebraic additivity): HLB(mix) = fA × HLB(A) + fB × HLB(B) ให้ x เป็นสัดส่วนของ Tween 80 จะได้ 15.0x + 4.3(1 − x) = 12 → 10.7x = 7.7 → x = 0.7196 คิดเป็น Tween 80 = 0.7196 × 5 g = 3.598 ≈ 3.60 g และ Span 80 = 1.40 g ตรวจสอบ: (3.60 × 15.0 + 1.40 × 4.3)/5 = (54.0 + 6.02)/5 = 12.0 การใช้ surfactant คู่ hydrophilic + lipophilic (เช่น Tween/Span) มักให้อิมัลชันที่คงตัวกว่าการใช้ชนิดเดียวที่มี HLB เท่ากัน เพราะทั้งสองโมเลกุลจัดเรียงตัวที่ interface เป็น complex film ที่แน่นกว่า HLB 12 เหมาะกับ o/w emulsion (ช่วง 8–18) ส่วน w/o ใช้ HLB 3–6 wetting agent 7–9 detergent 13–16 และ solubilizer 15–18",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Tween 80 1.40 g และ Span 80 3.60 g",
+          "is_correct": false,
+          "explanation": "เป็นการสลับปริมาณของสองสาร ได้ HLB = (1.40×15.0 + 3.60×4.3)/5 = 7.3 ซึ่งต่ำกว่าที่ต้องการ"
+        },
+        {
+          "label": "B",
+          "text": "Tween 80 2.50 g และ Span 80 2.50 g",
+          "is_correct": false,
+          "explanation": "ผสมเท่ากันได้ HLB = (15.0 + 4.3)/2 = 9.65 ไม่ใช่ 12"
+        },
+        {
+          "label": "C",
+          "text": "Tween 80 4.00 g และ Span 80 1.00 g",
+          "is_correct": false,
+          "explanation": "ได้ HLB = (4.00×15.0 + 1.00×4.3)/5 = 12.86 สูงกว่าเป้าหมาย"
+        },
+        {
+          "label": "D",
+          "text": "Tween 80 3.60 g และ Span 80 1.40 g",
+          "is_correct": true,
+          "explanation": "ถูกต้อง สัดส่วน Tween 80 = (12 − 4.3)/(15.0 − 4.3) = 0.720 → 3.60 g และ Span 80 1.40 g"
+        },
+        {
+          "label": "E",
+          "text": "Tween 80 3.20 g และ Span 80 1.80 g",
+          "is_correct": false,
+          "explanation": "ได้ HLB = (3.20×15.0 + 1.80×4.3)/5 = 11.15 ต่ำกว่าเป้าหมาย"
+        }
+      ],
+      "key_takeaway": "สัดส่วนสาร HLB สูง = (HLB ที่ต้องการ − HLB ต่ำ)/(HLB สูง − HLB ต่ำ); Tween 80 = 15.0, Span 80 = 4.3",
+      "calculation_steps": [
+        "ขั้นที่ 1: ให้ x = สัดส่วนโดยน้ำหนักของ Tween 80 → 15.0x + 4.3(1 − x) = 12",
+        "ขั้นที่ 2: 10.7x = 12 − 4.3 = 7.7 → x = 0.7196",
+        "ขั้นที่ 3: Tween 80 = 0.7196 × 5 g = 3.60 g; Span 80 = 5 − 3.60 = 1.40 g",
+        "ขั้นที่ 4: ตรวจสอบ (3.60 × 15.0 + 1.40 × 4.3)/5 = (54.0 + 6.02)/5 = 12.0"
+      ]
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ครีม o/w ตำรับหนึ่งมีวัฏภาคน้ำมันประกอบด้วย liquid paraffin 30 g (required HLB สำหรับ o/w = 12), cetyl alcohol 6 g (required HLB = 15) และ white beeswax 4 g (required HLB = 9) หากใช้ emulsifier blend ระหว่าง Tween 80 (HLB 15.0) และ Span 80 (HLB 4.3) ค่า required HLB ของวัฏภาคน้ำมันและสัดส่วนโดยน้ำหนักของ Tween 80 ใน emulsifier blend คือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Required HLB 12.0; Tween 80 72.0%"
+      },
+      {
+        "label": "B",
+        "text": "Required HLB 12.15; Tween 80 26.6%"
+      },
+      {
+        "label": "C",
+        "text": "Required HLB 13.5; Tween 80 86.0%"
+      },
+      {
+        "label": "D",
+        "text": "Required HLB 12.15; Tween 80 81.0%"
+      },
+      {
+        "label": "E",
+        "text": "Required HLB 12.15; Tween 80 73.4%"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "RHLB = (30×12 + 6×15 + 4×9)/40 = 486/40 = 12.15; สัดส่วน Tween 80 = (12.15 − 4.3)/(15.0 − 4.3) = 7.85/10.7 = 0.734 หรือ 73.4%",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. Required HLB 12.15; Tween 80 73.4% — Required HLB ของวัฏภาคน้ำมัน = 12.15 และต้องใช้ Tween 80 73.4% (Span 80 26.6%) ใน emulsifier blend",
+      "reason": "Required HLB (RHLB) คือค่า HLB ของ emulsifier ที่ทำให้ได้อิมัลชันที่คงตัวที่สุดสำหรับน้ำมันชนิดนั้น ๆ และขึ้นกับชนิดของอิมัลชัน (o/w หรือ w/o) เมื่อวัฏภาคน้ำมันมีหลายส่วนประกอบ RHLB รวมคำนวณแบบ weighted average ตามสัดส่วนโดยน้ำหนักของแต่ละส่วนในวัฏภาคน้ำมัน (ไม่ใช่ค่าเฉลี่ยธรรมดา) น้ำหนักรวมของวัฏภาคน้ำมัน = 30 + 6 + 4 = 40 g RHLB = (30×12 + 6×15 + 4×9)/40 = (360 + 90 + 36)/40 = 486/40 = 12.15 จากนั้นหาสัดส่วนของ emulsifier คู่ด้วยสมการ x = (12.15 − 4.3)/(15.0 − 4.3) = 7.85/10.7 = 0.7336 ได้ Tween 80 73.4% และ Span 80 26.6% ของ emulsifier blend ตรวจสอบ: 0.734×15.0 + 0.266×4.3 = 11.01 + 1.14 = 12.15 ปริมาณ emulsifier รวมในครีมทั่วไปประมาณ 2–5% ของตำรับ ค่า RHLB ที่คำนวณได้เป็นจุดเริ่มต้น ในทางปฏิบัติควรเตรียมชุดอิมัลชันที่ HLB ใกล้เคียงกันหลายค่าเพื่อหาค่าที่ให้ความคงตัวดีที่สุดในการทดลอง",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Required HLB 12.0; Tween 80 72.0%",
+          "is_correct": false,
+          "explanation": "ค่า 12.0 ได้จากการเฉลี่ยธรรมดา (12 + 15 + 9)/3 โดยไม่ถ่วงน้ำหนัก ซึ่งผิด ต้องถ่วงตามน้ำหนักของแต่ละส่วนในวัฏภาคน้ำมัน"
+        },
+        {
+          "label": "B",
+          "text": "Required HLB 12.15; Tween 80 26.6%",
+          "is_correct": false,
+          "explanation": "RHLB ถูกต้อง แต่ 26.6% เป็นสัดส่วนของ Span 80 ไม่ใช่ Tween 80 (สลับกัน)"
+        },
+        {
+          "label": "C",
+          "text": "Required HLB 13.5; Tween 80 86.0%",
+          "is_correct": false,
+          "explanation": "13.5 ไม่ได้มาจากการถ่วงน้ำหนักที่ถูกต้อง สัดส่วน Tween 80 จึงสูงเกินจริงและจะได้ HLB สูงกว่าที่ต้องการ"
+        },
+        {
+          "label": "D",
+          "text": "Required HLB 12.15; Tween 80 81.0%",
+          "is_correct": false,
+          "explanation": "RHLB ถูกต้อง แต่ 81.0% ได้จาก 12.15/15.0 ซึ่งผิดวิธี ต้องคำนวณจาก (RHLB − HLB ต่ำ)/(HLB สูง − HLB ต่ำ)"
+        },
+        {
+          "label": "E",
+          "text": "Required HLB 12.15; Tween 80 73.4%",
+          "is_correct": true,
+          "explanation": "ถูกต้อง RHLB = 486/40 = 12.15 และ Tween 80 = 7.85/10.7 = 73.4%"
+        }
+      ],
+      "key_takeaway": "RHLB ของน้ำมันผสม = Σ(สัดส่วนน้ำหนัก × RHLB แต่ละตัว); แล้วใช้สมการ blending หาสัดส่วน emulsifier",
+      "calculation_steps": [
+        "ขั้นที่ 1: น้ำหนักวัฏภาคน้ำมันรวม = 30 + 6 + 4 = 40 g",
+        "ขั้นที่ 2: RHLB = (30 × 12 + 6 × 15 + 4 × 9)/40 = (360 + 90 + 36)/40 = 486/40 = 12.15",
+        "ขั้นที่ 3: สัดส่วน Tween 80 = (12.15 − 4.3)/(15.0 − 4.3) = 7.85/10.7 = 0.7336 ≈ 73.4%",
+        "ขั้นที่ 4: สัดส่วน Span 80 = 1 − 0.734 = 0.266 (26.6%)",
+        "ขั้นที่ 5: ตรวจสอบ 0.734 × 15.0 + 0.266 × 4.3 = 11.01 + 1.14 = 12.15"
+      ]
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "เภสัชกรต้องการเตรียม castor oil emulsion ที่มี castor oil 40 mL โดยใช้ acacia เป็น emulsifying agent ด้วยวิธี dry gum (continental method) ปริมาณ acacia และน้ำที่ใช้ในการเตรียม primary emulsion ควรเป็นเท่าใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Acacia 10 g และน้ำ 20 mL"
+      },
+      {
+        "label": "B",
+        "text": "Acacia 13.3 g และน้ำ 26.7 mL"
+      },
+      {
+        "label": "C",
+        "text": "Acacia 20 g และน้ำ 10 mL"
+      },
+      {
+        "label": "D",
+        "text": "Acacia 20 g และน้ำ 40 mL"
+      },
+      {
+        "label": "E",
+        "text": "Acacia 5 g และน้ำ 10 mL"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Castor oil เป็น fixed oil ใช้สัดส่วน oil : water : gum = 4 : 2 : 1 ดังนั้น 40 mL : 20 mL : 10 g",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. Acacia 10 g และน้ำ 20 mL — Fixed oil ใช้สัดส่วน 4:2:1 → castor oil 40 mL ใช้น้ำ 20 mL และ acacia 10 g สำหรับ primary emulsion",
+      "reason": "วิธี dry gum (continental หรือ 4:2:1 method) ใช้สัดส่วน oil : water : gum ตามชนิดของน้ำมัน คือ fixed oil (เช่น castor oil, almond oil, cod liver oil) 4 : 2 : 1, mineral oil (liquid paraffin) 3 : 2 : 1 และ volatile oil (เช่น turpentine oil) 2 : 2 : 1 สำหรับ castor oil 40 mL หนึ่งส่วนเท่ากับ 10 จึงต้องใช้น้ำ 20 mL และ acacia 10 g ขั้นตอน: บด acacia กับน้ำมันในโกร่งที่แห้งให้เข้ากัน (acacia ยังไม่พองตัวเพราะอยู่ในน้ำมัน) แล้วเติมน้ำทั้งหมดของ primary emulsion ในครั้งเดียว บดเร็ว ๆ ไปทางเดียวจนได้ primary emulsion สีขาวข้นที่มีเสียงแตกเปาะ (crackling sound) จากนั้นค่อย ๆ เติมน้ำส่วนที่เหลือและส่วนประกอบอื่นจนครบปริมาตร ส่วนวิธี wet gum (English method) ใช้สัดส่วนเดียวกัน แต่เตรียม mucilage ของ acacia กับน้ำก่อน แล้วค่อย ๆ เติมน้ำมันทีละน้อยพร้อมบด acacia ให้อิมัลชันชนิด o/w เพราะเป็น hydrophilic colloid ที่สร้าง multimolecular film รอบหยดน้ำมัน",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Acacia 10 g และน้ำ 20 mL",
+          "is_correct": true,
+          "explanation": "ถูกต้อง fixed oil ใช้ 4:2:1 → oil 40 mL : water 20 mL : acacia 10 g"
+        },
+        {
+          "label": "B",
+          "text": "Acacia 13.3 g และน้ำ 26.7 mL",
+          "is_correct": false,
+          "explanation": "เป็นการใช้สัดส่วน 3:2:1 ของ mineral oil (40/3 = 13.3) ซึ่งไม่ถูกต้องสำหรับ castor oil ที่เป็น fixed oil"
+        },
+        {
+          "label": "C",
+          "text": "Acacia 20 g และน้ำ 10 mL",
+          "is_correct": false,
+          "explanation": "สลับปริมาณ acacia กับน้ำ สัดส่วนที่ถูกคือน้ำ 2 ส่วน acacia 1 ส่วน"
+        },
+        {
+          "label": "D",
+          "text": "Acacia 20 g และน้ำ 40 mL",
+          "is_correct": false,
+          "explanation": "เป็นสัดส่วน 2:2:1 ของ volatile oil (oil 40 : water 40 : gum 20) ไม่ใช่ของ fixed oil"
+        },
+        {
+          "label": "E",
+          "text": "Acacia 5 g และน้ำ 10 mL",
+          "is_correct": false,
+          "explanation": "ใช้ acacia และน้ำเพียงครึ่งหนึ่งของที่ควรใช้ เหมาะกับน้ำมัน 20 mL ไม่ใช่ 40 mL primary emulsion จะไม่คงตัว"
+        }
+      ],
+      "key_takeaway": "Dry gum/wet gum: fixed oil 4:2:1, mineral oil 3:2:1, volatile oil 2:2:1 (oil:water:gum)",
+      "calculation_steps": [
+        "ขั้นที่ 1: castor oil เป็น fixed oil → สัดส่วน oil : water : gum = 4 : 2 : 1",
+        "ขั้นที่ 2: 1 ส่วน = 40 mL/4 = 10",
+        "ขั้นที่ 3: น้ำ = 2 × 10 = 20 mL; acacia = 1 × 10 = 10 g"
+      ]
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "อิมัลชัน liquid paraffin ชนิด o/w เก็บไว้ 2 สัปดาห์ พบว่าส่วนบนของขวดมีชั้นสีขาวขุ่นเข้มข้นกว่า ส่วนล่างจางและโปร่งกว่า เมื่อเขย่าเบา ๆ อิมัลชันกลับมาเป็นเนื้อเดียวกัน และการตรวจด้วยกล้องจุลทรรศน์พบว่าขนาดหยดน้ำมันไม่เปลี่ยนแปลง ปรากฏการณ์นี้คือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Cracking"
+      },
+      {
+        "label": "B",
+        "text": "Coalescence"
+      },
+      {
+        "label": "C",
+        "text": "Creaming"
+      },
+      {
+        "label": "D",
+        "text": "Phase inversion"
+      },
+      {
+        "label": "E",
+        "text": "Ostwald ripening"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Creaming คือการที่หยดวัฏภาคภายในเคลื่อนขึ้น (หรือลง) ไปรวมกันเป็นชั้นเข้มข้นตาม Stokes' law โดยหยดยังไม่รวมกัน จึงเขย่ากลับได้และขนาดหยดไม่เปลี่ยน",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. Creaming — Creaming เป็นความไม่คงตัวแบบผันกลับได้ หยดน้ำมันลอยขึ้นรวมเป็นชั้นบนแต่ไม่รวมตัวกัน",
+      "reason": "Creaming เกิดจากความต่างของความหนาแน่นระหว่างวัฏภาคภายในกับวัฏภาคภายนอก ใน o/w ที่น้ำมันเบากว่าน้ำ หยดน้ำมันจะลอยขึ้นด้านบน (upward creaming) ส่วนกรณีวัฏภาคภายในหนักกว่าจะเกิด downward creaming ความเร็วของ creaming อธิบายได้ด้วย Stokes' law ดังนั้นลดได้โดยลดขนาดหยด (homogenization) เพิ่มความหนืดของวัฏภาคภายนอก และลดความต่างของความหนาแน่น Creaming ผันกลับได้ด้วยการเขย่าเพราะแต่ละหยดยังมี interfacial film ล้อมรอบอยู่ ขนาดหยดจึงไม่เปลี่ยน แต่ถือเป็นข้อบกพร่องเพราะดูไม่สวยงาม และถ้าผู้ป่วยไม่เขย่าจะได้ขนาดยาไม่สม่ำเสมอ นอกจากนี้การที่หยดอยู่ชิดกันในชั้น cream เพิ่มโอกาสเกิด coalescence ตามมา ลำดับความไม่คงตัวของอิมัลชัน: flocculation และ creaming (ผันกลับได้) → coalescence → cracking/breaking (ผันกลับไม่ได้)",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Cracking",
+          "is_correct": false,
+          "explanation": "Cracking (breaking) คือการแยกชั้นของน้ำมันและน้ำอย่างสมบูรณ์เนื่องจาก interfacial film ถูกทำลาย เขย่าแล้วไม่กลับเป็นอิมัลชัน"
+        },
+        {
+          "label": "B",
+          "text": "Coalescence",
+          "is_correct": false,
+          "explanation": "Coalescence คือการที่หยดรวมตัวกันเป็นหยดใหญ่ขึ้นเพราะ film แตก ขนาดหยดจะเพิ่มขึ้นและผันกลับไม่ได้ ซึ่งขัดกับข้อมูลที่ขนาดหยดไม่เปลี่ยน"
+        },
+        {
+          "label": "C",
+          "text": "Creaming",
+          "is_correct": true,
+          "explanation": "ถูกต้อง เป็น creaming: หยดลอยขึ้นรวมเป็นชั้น เขย่ากลับได้ และขนาดหยดไม่เปลี่ยน"
+        },
+        {
+          "label": "D",
+          "text": "Phase inversion",
+          "is_correct": false,
+          "explanation": "Phase inversion คือการเปลี่ยนชนิดจาก o/w เป็น w/o หรือกลับกัน ซึ่งจะเห็นการเปลี่ยนความหนืด/การนำไฟฟ้าอย่างชัดเจน ไม่ใช่เพียงการแยกชั้นบน-ล่าง"
+        },
+        {
+          "label": "E",
+          "text": "Ostwald ripening",
+          "is_correct": false,
+          "explanation": "Ostwald ripening คือหยดเล็กละลายแล้วไปเกาะหยดใหญ่ ทำให้ขนาดหยดเฉลี่ยเพิ่มขึ้น ขัดกับข้อมูลที่ขนาดหยดไม่เปลี่ยน"
+        }
+      ],
+      "key_takeaway": "ผันกลับได้: flocculation, creaming | ผันกลับไม่ได้: coalescence, cracking/breaking"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "Nanoemulsion ชนิด o/w ที่ใช้น้ำมันซึ่งละลายน้ำได้เล็กน้อย (เช่น สาย hydrocarbon สั้น) เมื่อเก็บไว้พบว่าขนาดหยดเฉลี่ยเพิ่มขึ้นเรื่อย ๆ หยดเล็กหายไปขณะที่หยดใหญ่โตขึ้น โดยไม่พบการชนกันและแตกของ interfacial film ระหว่างหยด เมื่อเติมน้ำมันที่ไม่ละลายน้ำเลย (เช่น long-chain triglyceride) เล็กน้อยลงในวัฏภาคน้ำมัน ปรากฏการณ์นี้ช้าลงอย่างชัดเจน ปรากฏการณ์นี้คือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Coalescence"
+      },
+      {
+        "label": "B",
+        "text": "Ostwald ripening"
+      },
+      {
+        "label": "C",
+        "text": "Creaming"
+      },
+      {
+        "label": "D",
+        "text": "Flocculation"
+      },
+      {
+        "label": "E",
+        "text": "Sedimentation"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Ostwald ripening เกิดจากหยดเล็กมีความดันภายใน (Laplace pressure) และการละลายสูงกว่าหยดใหญ่ (Kelvin effect) โมเลกุลน้ำมันจึงแพร่ผ่านวัฏภาคน้ำจากหยดเล็กไปยังหยดใหญ่ โดยไม่ต้องมีการรวมตัวของหยด",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. Ostwald ripening — Ostwald ripening คือการโตของหยดใหญ่โดยการแพร่ของโมเลกุลจากหยดเล็กผ่านวัฏภาคภายนอก เนื่องจากหยดเล็กละลายได้มากกว่า",
+      "reason": "ตาม Kelvin equation อนุภาคหรือหยดที่มีรัศมีความโค้งเล็กจะมี chemical potential และการละลายสูงกว่าหยดใหญ่ (เกี่ยวข้องกับ Laplace pressure ΔP = 2γ/r) ในระบบที่วัฏภาคภายในละลายในวัฏภาคภายนอกได้บ้าง โมเลกุลน้ำมันจะละลายออกจากหยดเล็ก แพร่ผ่านน้ำ และไปเกาะที่หยดใหญ่ หยดเล็กจึงหดลงและหายไป ขณะที่หยดใหญ่โตขึ้น การกระจายขนาดหยดจึงเลื่อนไปทางขนาดใหญ่ กระบวนการนี้ไม่ต้องอาศัยการชนกันหรือการแตกของ interfacial film จึงต่างจาก coalescence ปรากฏการณ์เดียวกันเกิดใน suspension เป็นการโตของผลึก (crystal growth) โดยเฉพาะเมื่ออุณหภูมิขึ้นลง วิธีลด Ostwald ripening ได้แก่ เติมสารที่ไม่ละลายในวัฏภาคภายนอกเลย (ripening inhibitor เช่น long-chain triglyceride) ลงในวัฏภาคภายใน ซึ่งสร้าง osmotic/compositional gradient ต้านการแพร่ ทำให้การกระจายขนาดหยดแคบ (monodisperse) ลด interfacial tension และควบคุมอุณหภูมิการเก็บรักษา",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Coalescence",
+          "is_correct": false,
+          "explanation": "Coalescence ต้องมีการชนกันและการแตกของ interfacial film ระหว่างหยดที่อยู่ชิดกัน แต่โจทย์ระบุว่าไม่พบกระบวนการนั้น และการเติมน้ำมันที่ไม่ละลายน้ำไม่ได้ป้องกัน film แตก"
+        },
+        {
+          "label": "B",
+          "text": "Ostwald ripening",
+          "is_correct": true,
+          "explanation": "ถูกต้อง Ostwald ripening เกิดจากการแพร่ของโมเลกุลจากหยดเล็กไปหยดใหญ่ (Kelvin effect) และลดได้ด้วย ripening inhibitor ที่ไม่ละลายในวัฏภาคภายนอก"
+        },
+        {
+          "label": "C",
+          "text": "Creaming",
+          "is_correct": false,
+          "explanation": "Creaming คือการแยกชั้นตามความหนาแน่นโดยขนาดหยดไม่เปลี่ยน ซึ่งไม่ตรงกับการที่ขนาดหยดเฉลี่ยเพิ่มขึ้น"
+        },
+        {
+          "label": "D",
+          "text": "Flocculation",
+          "is_correct": false,
+          "explanation": "Flocculation คือหยดเกาะกันเป็นกลุ่มหลวม ๆ แต่แต่ละหยดยังคงขนาดเดิม เขย่าแล้วกระจายได้"
+        },
+        {
+          "label": "E",
+          "text": "Sedimentation",
+          "is_correct": false,
+          "explanation": "Sedimentation คือการตกตะกอนของอนุภาคหรือหยดที่หนักกว่าวัฏภาคภายนอก ไม่ได้ทำให้ขนาดหยดเปลี่ยน"
+        }
+      ],
+      "key_takeaway": "Ostwald ripening = หยดเล็กละลายง่ายกว่า (Kelvin) → แพร่ไปหยดใหญ่; ไม่ต้องชนกัน; ลดด้วย ripening inhibitor และ monodisperse droplets"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "อิมัลชัน o/w ที่ใช้ sodium oleate เป็น emulsifying agent ถูกผสมโดยไม่ตั้งใจกับสารละลายที่มี calcium chloride ปริมาณมาก หลังจากนั้นพบว่าอิมัลชันข้นขึ้น เจือจางด้วยน้ำไม่ได้แต่ผสมกับน้ำมันได้ และไม่นำไฟฟ้า ข้อใดอธิบายเหตุการณ์นี้ได้ถูกต้องที่สุด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Creaming เนื่องจาก CaCl₂ เพิ่มความหนาแน่นของวัฏภาคน้ำ"
+      },
+      {
+        "label": "B",
+        "text": "Ostwald ripening เนื่องจาก CaCl₂ เพิ่มการละลายของน้ำมันในน้ำ"
+      },
+      {
+        "label": "C",
+        "text": "Cracking เนื่องจากการปนเปื้อนจุลินทรีย์ที่ย่อย sodium oleate"
+      },
+      {
+        "label": "D",
+        "text": "Phase inversion เพราะเกิด calcium oleate ซึ่งเป็นสบู่ประจุสองที่ละลายในน้ำมันได้ดีกว่า (HLB ต่ำ) ตาม Bancroft rule น้ำมันจึงกลายเป็นวัฏภาคภายนอก"
+      },
+      {
+        "label": "E",
+        "text": "Salting out ของตัวยาทำให้เกิดตะกอนผลึกในวัฏภาคน้ำ"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "Ca²⁺ ทำปฏิกิริยากับ oleate ได้ calcium oleate (divalent soap) ที่ lipophilic และส่งเสริม w/o ตาม Bancroft rule วัฏภาคที่ emulsifier ละลายได้ดีกว่าจะเป็นวัฏภาคภายนอก จึงเกิด phase inversion จาก o/w เป็น w/o",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. Phase inversion เพราะเกิด calcium oleate ซึ่งเป็นสบู่ประจุสองที่ละลายในน้ำมันได้ดีกว่า (HLB ต่ำ) ตาม Bancroft rule น้ำมันจึงกลายเป็นวัฏภาคภายนอก — การเติม Ca²⁺ เปลี่ยน sodium oleate (o/w) เป็น calcium oleate (w/o) ทำให้เกิด phase inversion ตาม Bancroft rule",
+      "reason": "Bancroft rule กล่าวว่าวัฏภาคที่ emulsifying agent ละลายได้ดีกว่าจะเป็นวัฏภาคภายนอก (continuous phase) สบู่ของโลหะประจุหนึ่ง (monovalent soaps) เช่น sodium oleate, potassium stearate, triethanolamine stearate ละลายน้ำได้ดี (HLB สูง) จึงให้อิมัลชัน o/w ส่วนสบู่ของโลหะประจุสอง (divalent soaps) เช่น calcium oleate (ตัวอย่างคือ lime liniment ที่ผสม calcium hydroxide solution กับน้ำมันพืชจนเกิดสบู่ calcium ในที่และได้อิมัลชัน w/o) magnesium หรือ zinc soaps ละลายในน้ำมันได้ดีกว่า (HLB ต่ำ) จึงให้อิมัลชัน w/o เมื่อเติม CaCl₂ ลงในอิมัลชัน o/w ที่ใช้ sodium oleate จะเกิด calcium oleate ในที่ เปลี่ยนความสมดุลของ emulsifier ไปทาง lipophilic อิมัลชันจึงกลับชนิดเป็น w/o (phase inversion) สังเกตได้จากการผสมกับน้ำมันได้ ไม่นำไฟฟ้า และความหนืดเปลี่ยนไป Phase inversion ยังเกิดได้จากการเพิ่มสัดส่วนวัฏภาคภายในมากเกินประมาณ 74% (closest packing ของหยดทรงกลมขนาดเท่ากัน) หรือการเปลี่ยนอุณหภูมิสำหรับ nonionic surfactant (phase inversion temperature, PIT) ในบางกรณีใช้ประโยชน์จาก phase inversion เพื่อให้ได้หยดขนาดเล็ก",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Creaming เนื่องจาก CaCl₂ เพิ่มความหนาแน่นของวัฏภาคน้ำ",
+          "is_correct": false,
+          "explanation": "Creaming ไม่ทำให้อิมัลชันเปลี่ยนเป็นผสมกับน้ำมันได้และหยุดนำไฟฟ้า ข้อมูลในโจทย์ชี้ว่าชนิดของอิมัลชันเปลี่ยนไป"
+        },
+        {
+          "label": "B",
+          "text": "Ostwald ripening เนื่องจาก CaCl₂ เพิ่มการละลายของน้ำมันในน้ำ",
+          "is_correct": false,
+          "explanation": "Electrolyte ไม่ได้เพิ่มการละลายของน้ำมันในน้ำ (มักลดลงด้วย salting out) และ Ostwald ripening ไม่ทำให้ชนิดอิมัลชันเปลี่ยน"
+        },
+        {
+          "label": "C",
+          "text": "Cracking เนื่องจากการปนเปื้อนจุลินทรีย์ที่ย่อย sodium oleate",
+          "is_correct": false,
+          "explanation": "ไม่มีข้อมูลการปนเปื้อน และ cracking คือการแยกชั้นของน้ำมันกับน้ำอย่างสมบูรณ์ ไม่ใช่การได้อิมัลชันที่ข้นขึ้นและผสมกับน้ำมันได้"
+        },
+        {
+          "label": "D",
+          "text": "Phase inversion เพราะเกิด calcium oleate ซึ่งเป็นสบู่ประจุสองที่ละลายในน้ำมันได้ดีกว่า (HLB ต่ำ) ตาม Bancroft rule น้ำมันจึงกลายเป็นวัฏภาคภายนอก",
+          "is_correct": true,
+          "explanation": "ถูกต้อง Ca²⁺ เปลี่ยน emulsifier เป็น calcium oleate ที่ lipophilic ตาม Bancroft rule น้ำมันกลายเป็นวัฏภาคภายนอก อิมัลชันกลับเป็น w/o"
+        },
+        {
+          "label": "E",
+          "text": "Salting out ของตัวยาทำให้เกิดตะกอนผลึกในวัฏภาคน้ำ",
+          "is_correct": false,
+          "explanation": "ไม่มีข้อมูลเกี่ยวกับตัวยาที่ตกผลึก ลักษณะที่เปลี่ยน (เจือจางด้วยน้ำไม่ได้ ไม่นำไฟฟ้า) บ่งชี้การเปลี่ยนชนิดอิมัลชัน"
+        }
+      ],
+      "key_takeaway": "Bancroft: emulsifier ละลายในวัฏภาคใด วัฏภาคนั้นเป็นวัฏภาคภายนอก; Na/K/TEA soap → o/w; Ca/Mg/Zn soap → w/o"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ข้อใดจับคู่ระบบทางเภสัชกรรมกับพฤติกรรมการไหล (rheological behavior) ได้ถูกต้อง",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Simple syrup และ glycerin — pseudoplastic flow"
+      },
+      {
+        "label": "B",
+        "text": "สารละลาย methylcellulose 2% — dilatant flow"
+      },
+      {
+        "label": "C",
+        "text": "ยาแขวนตะกอนแบบ deflocculated ที่มีแป้งประมาณ 50% ในน้ำ — pseudoplastic flow"
+      },
+      {
+        "label": "D",
+        "text": "น้ำและ ethanol — plastic flow"
+      },
+      {
+        "label": "E",
+        "text": "ยาแขวนตะกอนเข้มข้นที่อนุภาคเกาะกันแบบ flocculated — plastic (Bingham) flow ซึ่งมี yield value"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "ยาแขวนตะกอนเข้มข้นแบบ flocculated มีโครงสร้างอนุภาคเชื่อมกันซึ่งต้องใช้แรงเฉือนค่าหนึ่ง (yield value) ทำลายก่อนจึงเริ่มไหล จึงเป็น plastic (Bingham) flow",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. ยาแขวนตะกอนเข้มข้นที่อนุภาคเกาะกันแบบ flocculated — plastic (Bingham) flow ซึ่งมี yield value — Concentrated flocculated suspension แสดง plastic (Bingham) flow ที่มี yield value",
+      "reason": "พฤติกรรมการไหลแบ่งเป็น Newtonian และ non-Newtonian ระบบ Newtonian มีความหนืดคงที่ไม่ขึ้นกับอัตราเฉือน ได้แก่ ของเหลวบริสุทธิ์และสารละลายโมเลกุลเล็ก เช่น น้ำ ethanol glycerin simple syrup และน้ำมันส่วนใหญ่ Plastic (Bingham) flow มี yield value คือต้องให้แรงเฉือนถึงค่าหนึ่งก่อนจึงเริ่มไหล หลังจากนั้น rheogram เป็นเส้นตรง (plastic viscosity คงที่) พบในยาแขวนตะกอนเข้มข้นที่อนุภาคเกาะกันแบบ flocculated ซึ่งต้องทำลายแรงยึดระหว่าง floc (van der Waals) ก่อน รวมทั้ง paste และขี้ผึ้งบางชนิด Pseudoplastic (shear-thinning) ไม่มี yield value ความหนืดลดลงเมื่ออัตราเฉือนเพิ่ม เพราะสายพอลิเมอร์ยาวคลายตัวและเรียงตามทิศการไหล พบในสารละลายพอลิเมอร์ เช่น tragacanth, sodium alginate, methylcellulose, Na CMC, xanthan gum Dilatant (shear-thickening) ความหนืดเพิ่มขึ้นเมื่ออัตราเฉือนเพิ่ม พบในยาแขวนตะกอนแบบ deflocculated ที่มีของแข็งสูง (ประมาณ ≥ 50%) เช่น แป้งในน้ำ การรู้ชนิดของการไหลมีความสำคัญต่อการออกแบบ (เทได้ พยุงอนุภาค) และการเลือกเครื่องมือวัด ระบบ non-Newtonian ต้องใช้ multipoint viscometer (เช่น cone-and-plate หรือ cup-and-bob) ไม่ใช่ capillary viscometer ซึ่งวัดได้เพียงอัตราเฉือนเดียว",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Simple syrup และ glycerin — pseudoplastic flow",
+          "is_correct": false,
+          "explanation": "Simple syrup และ glycerin เป็นของเหลว Newtonian ความหนืดไม่ขึ้นกับอัตราเฉือน"
+        },
+        {
+          "label": "B",
+          "text": "สารละลาย methylcellulose 2% — dilatant flow",
+          "is_correct": false,
+          "explanation": "สารละลาย methylcellulose เป็นสารละลายพอลิเมอร์ที่แสดง pseudoplastic (shear-thinning) ไม่ใช่ dilatant"
+        },
+        {
+          "label": "C",
+          "text": "ยาแขวนตะกอนแบบ deflocculated ที่มีแป้งประมาณ 50% ในน้ำ — pseudoplastic flow",
+          "is_correct": false,
+          "explanation": "Deflocculated suspension ที่มีของแข็งสูงประมาณ 50% ขึ้นไป เช่น แป้งในน้ำ แสดง dilatant (shear-thickening) ไม่ใช่ pseudoplastic"
+        },
+        {
+          "label": "D",
+          "text": "น้ำและ ethanol — plastic flow",
+          "is_correct": false,
+          "explanation": "น้ำและ ethanol เป็นของเหลว Newtonian ไม่มี yield value"
+        },
+        {
+          "label": "E",
+          "text": "ยาแขวนตะกอนเข้มข้นที่อนุภาคเกาะกันแบบ flocculated — plastic (Bingham) flow ซึ่งมี yield value",
+          "is_correct": true,
+          "explanation": "ถูกต้อง ยาแขวนตะกอนเข้มข้นแบบ flocculated มี yield value จึงแสดง plastic (Bingham) flow"
+        }
+      ],
+      "key_takeaway": "Newtonian: น้ำ, syrup, glycerin | Plastic: flocculated conc. suspension, paste | Pseudoplastic: polymer solutions | Dilatant: deflocculated ≥50% solids"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ระบบ colloid ชนิด lyophobic ที่อนุภาคมีประจุลบ (เช่น colloidal sulfur sol) ถูกทดสอบความไวต่อ electrolyte เมื่อใช้ความเข้มข้นในหน่วย molar เท่ากัน electrolyte ใดทำให้เกิดการตกตะกอน (coagulation) ของ sol ได้มีประสิทธิภาพสูงที่สุด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "AlCl₃"
+      },
+      {
+        "label": "B",
+        "text": "CaCl₂"
+      },
+      {
+        "label": "C",
+        "text": "NaCl"
+      },
+      {
+        "label": "D",
+        "text": "Na₃PO₄"
+      },
+      {
+        "label": "E",
+        "text": "K₂SO₄"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "ตาม Schulze–Hardy rule ความสามารถในการตกตะกอน lyophobic sol ขึ้นกับประจุของ counter-ion (ไอออนที่มีประจุตรงข้ามกับอนุภาค) สำหรับ sol ประจุลบ Al³⁺ มีประสิทธิภาพสูงสุด",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. AlCl₃ — AlCl₃ มีประสิทธิภาพสูงสุดเพราะ Al³⁺ เป็น counter-ion ที่มีประจุสูงสุดสำหรับ sol ประจุลบ (Schulze–Hardy rule)",
+      "reason": "Lyophobic colloids (เช่น gold sol, sulfur sol, silver halide sol) ไม่มีแรงดึงดูดกับตัวกลาง จึงคงตัวได้ด้วยประจุไฟฟ้าที่ผิว (electrical double layer) เท่านั้น เมื่อเติม electrolyte ไอออนที่มีประจุตรงข้ามจะกด double layer ลด zeta potential จนแรง van der Waals ชนะแรงผลักและเกิด coagulation Schulze–Hardy rule ระบุว่าความสามารถในการตกตะกอนเพิ่มขึ้นอย่างมากตาม valence ของ counter-ion โดย critical coagulation concentration แปรผกผันกับ valence ยกกำลังประมาณ 6 (ไอออน 3+ : 2+ : 1+ มีประสิทธิภาพสัมพัทธ์ประมาณ 729 : 64 : 1) สำหรับ sol ประจุลบ counter-ion คือ cation จึงเรียงความแรงได้ Al³⁺ > Ca²⁺ > Na⁺ ≈ K⁺ ส่วน anion (PO₄³⁻, SO₄²⁻) มีประจุเดียวกับอนุภาคจึงไม่ใช่ตัวกำหนดหลัก ในทางกลับกัน lyophilic colloids เช่น gelatin, acacia ละลายและถูก solvate ด้วยน้ำ จึงไม่ไวต่อ electrolyte ความเข้มข้นต่ำ ต้องใช้เกลือปริมาณมากเพื่อดึงน้ำออก (salting out) และสามารถทำหน้าที่ protective colloid ป้องกันการตกตะกอนของ lyophobic sol ได้ หลักเดียวกันนี้นำไปใช้ใน controlled flocculation ของยาแขวนตะกอน",
+      "choices": [
+        {
+          "label": "A",
+          "text": "AlCl₃",
+          "is_correct": true,
+          "explanation": "ถูกต้อง Al³⁺ เป็น counter-ion ประจุ 3+ มีประสิทธิภาพในการตกตะกอน sol ประจุลบสูงสุดตาม Schulze–Hardy rule"
+        },
+        {
+          "label": "B",
+          "text": "CaCl₂",
+          "is_correct": false,
+          "explanation": "Ca²⁺ เป็น counter-ion ประจุ 2+ มีประสิทธิภาพสูงกว่า Na⁺ แต่ต่ำกว่า Al³⁺ อย่างมาก"
+        },
+        {
+          "label": "C",
+          "text": "NaCl",
+          "is_correct": false,
+          "explanation": "Na⁺ เป็น counter-ion ประจุ 1+ มีประสิทธิภาพต่ำที่สุดในกลุ่ม ต้องใช้ความเข้มข้นสูงจึงตกตะกอนได้"
+        },
+        {
+          "label": "D",
+          "text": "Na₃PO₄",
+          "is_correct": false,
+          "explanation": "PO₄³⁻ มีประจุลบเหมือนอนุภาค จึงไม่ใช่ counter-ion ส่วน cation คือ Na⁺ ประจุ 1+ แม้ 1 โมลจะให้ Na⁺ 3 โมล ผลยังน้อยกว่า Al³⁺ มาก ประจุ 3− ของ phosphate จะมีผลเด่นกับ sol ประจุบวก"
+        },
+        {
+          "label": "E",
+          "text": "K₂SO₄",
+          "is_correct": false,
+          "explanation": "SO₄²⁻ มีประจุเดียวกับอนุภาค counter-ion คือ K⁺ ประจุ 1+ ประสิทธิภาพต่ำกว่า Al³⁺ มาก"
+        }
+      ],
+      "key_takeaway": "Schulze–Hardy: ประสิทธิภาพตกตะกอนขึ้นกับประจุของ counter-ion (3+ ≫ 2+ ≫ 1+); lyophilic colloid ทนเกลือ ต้อง salting out"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ในระหว่างการผลิต ยาแขวนตะกอนที่มีผงยาละเอียดประมาณ 55% w/v อยู่ในสภาวะ deflocculated มีลักษณะค่อนข้างเหลวและเทได้เมื่อกวนช้า ๆ แต่เมื่อนำเข้าเครื่อง colloid mill ที่ความเร็วสูง ผลิตภัณฑ์กลับแข็งตัวขึ้นทันทีจนเครื่องหยุดทำงาน และเมื่อหยุดเครื่องผลิตภัณฑ์กลับเหลวเช่นเดิม พฤติกรรมการไหลนี้คือข้อใด และเกิดจากสาเหตุใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Pseudoplastic flow — สายพอลิเมอร์คลายตัวและเรียงตามทิศการไหลเมื่อแรงเฉือนสูง"
+      },
+      {
+        "label": "B",
+        "text": "Thixotropy — โครงสร้างเจลถูกทำลายเมื่อมีแรงเฉือนและค่อย ๆ ฟื้นตัวเมื่อหยุด"
+      },
+      {
+        "label": "C",
+        "text": "Dilatant flow — ขณะพักอนุภาคจัดเรียงแน่น ช่องว่างน้อยและ vehicle เพียงพอ แต่เมื่อแรงเฉือนสูงอนุภาคเรียงตัวหลวม ช่องว่างเพิ่มขึ้นจน vehicle ไม่พอหล่อลื่น ความหนืดจึงเพิ่มขึ้น"
+      },
+      {
+        "label": "D",
+        "text": "Plastic (Bingham) flow — ต้องใช้แรงเฉือนเกิน yield value ก่อนจึงเริ่มไหล"
+      },
+      {
+        "label": "E",
+        "text": "Newtonian flow — ความหนืดคงที่ แต่เครื่องร้อนเกินไปจึงหยุดทำงาน"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "ระบบ deflocculated ที่มีของแข็งสูง (≥ ~50%) แสดง dilatant (shear-thickening) เพราะแรงเฉือนสูงทำให้การจัดเรียงอนุภาคเปลี่ยนจาก closely packed เป็น open packing ปริมาตรช่องว่างเพิ่ม vehicle ไม่พอเติมเต็ม ความต้านทานการไหลจึงเพิ่มขึ้น",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. Dilatant flow — ขณะพักอนุภาคจัดเรียงแน่น ช่องว่างน้อยและ vehicle เพียงพอ แต่เมื่อแรงเฉือนสูงอนุภาคเรียงตัวหลวม ช่องว่างเพิ่มขึ้นจน vehicle ไม่พอหล่อลื่น ความหนืดจึงเพิ่มขึ้น — เป็น dilatant flow ของ deflocculated suspension ที่มีของแข็งสูง ความหนืดเพิ่มขึ้นเมื่ออัตราเฉือนเพิ่ม",
+      "reason": "Dilatant flow (shear-thickening) คือพฤติกรรมที่ความหนืดเพิ่มขึ้นเมื่ออัตราเฉือนเพิ่ม และกลับคืนเมื่อหยุดแรงเฉือน (ไม่มี time dependence เด่นแบบ thixotropy) พบในระบบที่มีอนุภาคของแข็งขนาดเล็กแบบ deflocculated ความเข้มข้นสูงประมาณ 50% ขึ้นไป เช่น แป้งในน้ำ หรือ suspension ของ zinc oxide/ titanium dioxide บางสูตร กลไก: ขณะพักหรือที่แรงเฉือนต่ำ อนุภาคที่แยกเป็นอิสระจัดเรียงแบบ closely packed ช่องว่างระหว่างอนุภาค (void volume) น้อย และ vehicle มีปริมาณพอดีเติมช่องว่างและหล่อลื่นให้อนุภาคเคลื่อนผ่านกันได้ เมื่อแรงเฉือนสูงขึ้น อนุภาคถูกบังคับให้เคลื่อนผ่านกันเร็วและเรียงตัวแบบ open packing (ระบบขยายตัว ซึ่งเป็นที่มาของคำว่า dilatant) void volume เพิ่มขึ้น แต่ vehicle มีเท่าเดิมจึงไม่พอหล่อลื่น อนุภาคเสียดสีกันโดยตรง ความต้านทานการไหลเพิ่มขึ้นอย่างรวดเร็ว ในการผลิต สิ่งนี้ทำให้ mixer หรือ colloid mill ติดขัดและมอเตอร์เสียหายได้ วิธีแก้ ได้แก่ ลดสัดส่วนของแข็ง เติม flocculating agent เพื่อเปลี่ยนเป็นระบบ flocculated หรือลดความเร็วในการบด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Pseudoplastic flow — สายพอลิเมอร์คลายตัวและเรียงตามทิศการไหลเมื่อแรงเฉือนสูง",
+          "is_correct": false,
+          "explanation": "Pseudoplastic flow ความหนืดลดลงเมื่ออัตราเฉือนเพิ่ม ซึ่งตรงข้ามกับที่เกิดขึ้น และเป็นลักษณะของสารละลายพอลิเมอร์ ไม่ใช่ deflocculated suspension เข้มข้น"
+        },
+        {
+          "label": "B",
+          "text": "Thixotropy — โครงสร้างเจลถูกทำลายเมื่อมีแรงเฉือนและค่อย ๆ ฟื้นตัวเมื่อหยุด",
+          "is_correct": false,
+          "explanation": "Thixotropy ความหนืดลดลงเมื่อมีแรงเฉือน (gel → sol) และขึ้นกับเวลา ไม่ใช่การแข็งตัวขึ้นทันทีเมื่อแรงเฉือนสูง"
+        },
+        {
+          "label": "C",
+          "text": "Dilatant flow — ขณะพักอนุภาคจัดเรียงแน่น ช่องว่างน้อยและ vehicle เพียงพอ แต่เมื่อแรงเฉือนสูงอนุภาคเรียงตัวหลวม ช่องว่างเพิ่มขึ้นจน vehicle ไม่พอหล่อลื่น ความหนืดจึงเพิ่มขึ้น",
+          "is_correct": true,
+          "explanation": "ถูกต้อง เป็น dilatant flow: แรงเฉือนสูงเปลี่ยนการจัดเรียงอนุภาคเป็นแบบหลวม void volume เพิ่ม vehicle ไม่พอหล่อลื่น ความหนืดเพิ่มขึ้น"
+        },
+        {
+          "label": "D",
+          "text": "Plastic (Bingham) flow — ต้องใช้แรงเฉือนเกิน yield value ก่อนจึงเริ่มไหล",
+          "is_correct": false,
+          "explanation": "Plastic flow พบในระบบ flocculated และเมื่อแรงเฉือนเกิน yield value ระบบจะไหลง่ายขึ้น ไม่ใช่แข็งตัวขึ้นเมื่อแรงเฉือนสูง"
+        },
+        {
+          "label": "E",
+          "text": "Newtonian flow — ความหนืดคงที่ แต่เครื่องร้อนเกินไปจึงหยุดทำงาน",
+          "is_correct": false,
+          "explanation": "Newtonian มีความหนืดคงที่ ไม่อธิบายการแข็งตัวทันทีเมื่อเพิ่มความเร็วและกลับเหลวเมื่อหยุด"
+        }
+      ],
+      "key_takeaway": "Dilatant = shear-thickening ในระบบ deflocculated ของแข็งสูง (≥ 50%) → ระวังเครื่องบด/ผสมติดขัด; แก้โดยลดของแข็งหรือทำให้ flocculate"
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "ผลการวัดการไหลของ bentonite magma ด้วย rotational viscometer โดยเพิ่มอัตราเฉือนขึ้นแล้วลดลงทันที พบว่าเส้นขาลงไม่ทับเส้นขาขึ้น เกิดเป็น hysteresis loop โดยที่อัตราเฉือนเดียวกัน ความหนืดของเส้นขาลงต่ำกว่าเส้นขาขึ้น และเมื่อตั้งทิ้งไว้ระยะหนึ่ง magma กลับมามีลักษณะเป็นเจลเหมือนเดิม พฤติกรรมนี้คือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Rheopexy"
+      },
+      {
+        "label": "B",
+        "text": "Thixotropy"
+      },
+      {
+        "label": "C",
+        "text": "Dilatancy"
+      },
+      {
+        "label": "D",
+        "text": "Newtonian flow"
+      },
+      {
+        "label": "E",
+        "text": "Plastic flow ที่ไม่ขึ้นกับเวลา"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Thixotropy คือการเปลี่ยนแปลงแบบ isothermal และผันกลับได้จาก gel เป็น sol เมื่อมีแรงเฉือน และฟื้นกลับเป็น gel เมื่อพัก ทำให้เกิด hysteresis loop ที่เส้นขาลงมีความหนืดต่ำกว่าเส้นขาขึ้น",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. Thixotropy — Thixotropy เป็น time-dependent shear thinning: gel → sol เมื่อมีแรงเฉือน และ sol → gel เมื่อพัก (เกิด hysteresis loop)",
+      "reason": "Thixotropy เป็นพฤติกรรม non-Newtonian ที่ขึ้นกับเวลา เมื่อให้แรงเฉือน โครงสร้างสามมิติภายใน (เช่น โครงสร้าง card-house ของแผ่น bentonite ที่ขอบประจุบวกเกาะกับผิวประจุลบ) จะถูกทำลายทีละน้อย เมื่อลดอัตราเฉือนลงทันที โครงสร้างยังไม่ทันฟื้นตัว ความหนืดที่อัตราเฉือนเดียวกันในเส้นขาลงจึงต่ำกว่าเส้นขาขึ้น เกิดเป็น hysteresis loop ซึ่งพื้นที่ของ loop ใช้เป็นดัชนีวัดระดับ thixotropy (thixotropic breakdown) เมื่อพักไว้ โครงสร้างค่อย ๆ ฟื้นกลับเป็นเจล (isothermal, reversible gel–sol–gel transformation) พฤติกรรมนี้มักพบร่วมกับ plastic หรือ pseudoplastic flow ระบบที่เป็น thixotropic ได้แก่ bentonite magma, Veegum, MCC–CMC, ยาแขวนตะกอนเข้มข้นแบบ flocculated และครีม/ขี้ผึ้งบางชนิด ข้อดีในทางเภสัชกรรมคือขณะตั้งทิ้งมีความหนืดสูงช่วยพยุงอนุภาค เมื่อเขย่าก็เหลวพอเทหรือฉีดผ่านเข็ม (เช่น procaine penicillin G suspension ที่เป็น depot เข้มข้น) ในทางตรงข้าม rheopexy (antithixotropy ในบางนิยาม) คือระบบที่โครงสร้างก่อตัวเร็วขึ้นเมื่อมีแรงเฉือนเบา ๆ ความหนืดเส้นขาลงสูงกว่าเส้นขาขึ้น",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Rheopexy",
+          "is_correct": false,
+          "explanation": "Rheopexy เป็นระบบที่เกิดโครงสร้าง/เจลได้เร็วขึ้นเมื่อมีแรงเฉือนเบา ๆ (เช่น การกลิ้งหรือเขย่าเบา) ความหนืดเส้นขาลงไม่ต่ำกว่าขาขึ้นแบบในโจทย์"
+        },
+        {
+          "label": "B",
+          "text": "Thixotropy",
+          "is_correct": true,
+          "explanation": "ถูกต้อง เป็น thixotropy: gel ถูกทำลายเมื่อมีแรงเฉือน ความหนืดขาลงต่ำกว่าขาขึ้น (hysteresis loop) และฟื้นกลับเป็นเจลเมื่อพัก"
+        },
+        {
+          "label": "C",
+          "text": "Dilatancy",
+          "is_correct": false,
+          "explanation": "Dilatancy ความหนืดเพิ่มขึ้นเมื่ออัตราเฉือนเพิ่มและไม่ขึ้นกับเวลา ไม่เกิดการเปลี่ยน gel–sol แบบในโจทย์"
+        },
+        {
+          "label": "D",
+          "text": "Newtonian flow",
+          "is_correct": false,
+          "explanation": "Newtonian มีความหนืดคงที่ เส้นขาขึ้นและขาลงทับกัน ไม่มี hysteresis loop"
+        },
+        {
+          "label": "E",
+          "text": "Plastic flow ที่ไม่ขึ้นกับเวลา",
+          "is_correct": false,
+          "explanation": "Plastic flow ที่ไม่ขึ้นกับเวลาจะมีเส้นขาขึ้นและขาลงทับกัน การเกิด hysteresis loop และฟื้นตัวเมื่อพักแสดงว่าขึ้นกับเวลา"
+        }
+      ],
+      "key_takeaway": "Thixotropy = isothermal reversible gel–sol–gel, hysteresis loop (ขาลงหนืดต่ำกว่า); พบใน bentonite, Veegum, MCC–CMC, flocculated suspensions"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ต้องการทำนายว่า oleic acid จะแผ่กระจาย (spread) บนผิวน้ำหรือไม่ กำหนดให้ surface tension ของน้ำ = 72.8 dyn/cm, surface tension ของ oleic acid = 32.5 dyn/cm และ interfacial tension ระหว่าง oleic acid กับน้ำ = 15.6 dyn/cm ค่า initial spreading coefficient (S) และการทำนายผลคือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "S = −24.7 dyn/cm; oleic acid ไม่แผ่กระจาย เกิดเป็นหยดเลนส์"
+      },
+      {
+        "label": "B",
+        "text": "S = +40.3 dyn/cm; oleic acid แผ่กระจายบนผิวน้ำ"
+      },
+      {
+        "label": "C",
+        "text": "S = +120.9 dyn/cm; oleic acid แผ่กระจายบนผิวน้ำ"
+      },
+      {
+        "label": "D",
+        "text": "S = +24.7 dyn/cm; oleic acid แผ่กระจายบนผิวน้ำ"
+      },
+      {
+        "label": "E",
+        "text": "S = +16.9 dyn/cm; oleic acid แผ่กระจายบนผิวน้ำ"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "S = γ(sublayer) − [γ(spreading liquid) + γ(interface)] = 72.8 − (32.5 + 15.6) = +24.7 dyn/cm ค่าเป็นบวกจึงแผ่กระจาย",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. S = +24.7 dyn/cm; oleic acid แผ่กระจายบนผิวน้ำ — S = 72.8 − (32.5 + 15.6) = +24.7 dyn/cm เป็นบวก oleic acid จึงแผ่กระจายบนผิวน้ำ",
+      "reason": "Spreading coefficient (S) คือความแตกต่างระหว่าง work of adhesion (Wa) ของของเหลวที่แผ่กับของเหลวรองรับ และ work of cohesion (Wc) ของของเหลวที่แผ่ S = Wa − Wc = γS − (γL + γLS) โดย γS คือ surface tension ของของเหลวรองรับ (sublayer, น้ำ), γL คือ surface tension ของของเหลวที่แผ่ (oleic acid) และ γLS คือ interfacial tension ระหว่างทั้งสอง แทนค่า S = 72.8 − (32.5 + 15.6) = 72.8 − 48.1 = +24.7 dyn/cm ถ้า S เป็นบวก แรงยึดเกาะระหว่างของเหลวสองชนิดมากกว่าแรงยึดเหนี่ยวภายในของเหลวที่แผ่ ของเหลวจึงแผ่เป็นฟิล์มบาง ถ้า S เป็นลบ จะเกิดเป็นหยดเลนส์ (lens) oleic acid แผ่ได้ดีเพราะมีหมู่ COOH ที่มีขั้วหันเข้าหาน้ำ ส่วน liquid paraffin ที่ไม่มีหมู่มีขั้วมี S ติดลบ ค่า S ที่คำนวณเป็น initial spreading coefficient เมื่อเวลาผ่านไปของเหลวทั้งสองอิ่มตัวซึ่งกันและกัน surface tension เปลี่ยน ทำให้ final spreading coefficient อาจลดลงหรือกลายเป็นลบ (ฟิล์มหดตัวเป็นเลนส์) หลักการนี้ใช้ในการออกแบบโลชั่นหรือยาทาผิวหนังที่ต้องการให้แผ่กระจายบนผิวที่มีไขมันและเหงื่อ และใน wetting ของผงยา",
+      "choices": [
+        {
+          "label": "A",
+          "text": "S = −24.7 dyn/cm; oleic acid ไม่แผ่กระจาย เกิดเป็นหยดเลนส์",
+          "is_correct": false,
+          "explanation": "เครื่องหมายผิด เกิดจากคำนวณกลับด้าน (32.5 + 15.6 − 72.8) ค่าที่ถูกเป็นบวก ดังนั้น oleic acid แผ่กระจายได้"
+        },
+        {
+          "label": "B",
+          "text": "S = +40.3 dyn/cm; oleic acid แผ่กระจายบนผิวน้ำ",
+          "is_correct": false,
+          "explanation": "ได้จาก 72.8 − 32.5 โดยไม่ลบ interfacial tension ซึ่งผิดสูตร"
+        },
+        {
+          "label": "C",
+          "text": "S = +120.9 dyn/cm; oleic acid แผ่กระจายบนผิวน้ำ",
+          "is_correct": false,
+          "explanation": "ได้จากการบวกค่าทั้งสามเข้าด้วยกัน (72.8 + 32.5 + 15.6) ซึ่งไม่มีความหมายทางทฤษฎี"
+        },
+        {
+          "label": "D",
+          "text": "S = +24.7 dyn/cm; oleic acid แผ่กระจายบนผิวน้ำ",
+          "is_correct": true,
+          "explanation": "ถูกต้อง S = 72.8 − (32.5 + 15.6) = +24.7 dyn/cm เป็นบวกจึงแผ่กระจาย"
+        },
+        {
+          "label": "E",
+          "text": "S = +16.9 dyn/cm; oleic acid แผ่กระจายบนผิวน้ำ",
+          "is_correct": false,
+          "explanation": "ได้จาก 32.5 − 15.6 ซึ่งไม่ได้ใช้ surface tension ของน้ำที่เป็น sublayer และผิดสูตร"
+        }
+      ],
+      "key_takeaway": "S = γsublayer − (γspreading + γinterface); S > 0 แผ่กระจาย, S < 0 เป็นหยดเลนส์",
+      "calculation_steps": [
+        "ขั้นที่ 1: S = γ(น้ำ) − [γ(oleic acid) + γ(oleic acid/น้ำ)]",
+        "ขั้นที่ 2: γ(oleic acid) + γ(interface) = 32.5 + 15.6 = 48.1 dyn/cm",
+        "ขั้นที่ 3: S = 72.8 − 48.1 = +24.7 dyn/cm",
+        "ขั้นที่ 4: S > 0 → oleic acid แผ่กระจายบนผิวน้ำ (initial spreading)"
+      ]
+    },
+    "difficulty": "hard"
+  }
+]

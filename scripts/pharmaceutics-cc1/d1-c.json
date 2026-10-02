@@ -1,0 +1,2005 @@
+[
+  {
+    "scenario": "ผู้ผลิตต้องการบรรจุผงยาที่มีปริมาตรรวมต่อหน่วยค่อนข้างมากลงใน hard gelatin capsule ขนาดมาตรฐาน ข้อใดเป็นขนาดแคปซูลที่มีปริมาตรบรรจุ (fill volume) มากที่สุด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Size 5"
+      },
+      {
+        "label": "B",
+        "text": "Size 4"
+      },
+      {
+        "label": "C",
+        "text": "Size 000"
+      },
+      {
+        "label": "D",
+        "text": "Size 0"
+      },
+      {
+        "label": "E",
+        "text": "Size 1"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "ขนาดแคปซูลแข็งยิ่งตัวเลขน้อยยิ่งใหญ่ โดย Size 000 ใหญ่ที่สุดในกลุ่มที่ใช้ทั่วไปสำหรับมนุษย์ (ประมาณ 1.37 mL) และ Size 5 เล็กที่สุด (ประมาณ 0.13 mL)",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. Size 000 — ระบบขนาด hard capsule ตัวเลขยิ่งน้อยแคปซูลยิ่งใหญ่ Size 000 จุได้ประมาณ 1.37 mL",
+      "reason": "ขนาดของ hard gelatin capsule ที่ใช้ในมนุษย์เรียงจากใหญ่ไปเล็กคือ 000, 00, 0, 1, 2, 3, 4, 5 ปริมาตรบรรจุโดยประมาณ (ตามข้อมูลผู้ผลิตแคปซูล) คือ 000 = 1.37 mL, 00 = 0.95 mL, 0 = 0.68 mL, 1 = 0.50 mL, 2 = 0.37 mL, 3 = 0.30 mL, 4 = 0.21 mL และ 5 = 0.13 mL น้ำหนักผงที่บรรจุได้จริงขึ้นกับ bulk/tapped density ของผง คือ น้ำหนักบรรจุ ≈ ปริมาตรแคปซูล × tapped density ตัวอย่างเช่นผงที่มี density 0.8 g/mL บรรจุใน Size 0 ได้ประมาณ 0.68 × 0.8 ≈ 544 mg ในทางปฏิบัติ Size 000 กลืนยาก จึงนิยมใช้ Size 0–2 สำหรับยารับประทาน ส่วน Size 000 มักใช้ในงานวิจัย ยาสัตว์ หรือ double-blind overencapsulation การเลือกขนาดจึงต้องพิจารณาทั้งขนาดยา ปริมาณสารช่วย ความหนาแน่นของผง และความสะดวกในการกลืนของผู้ป่วย",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Size 5",
+          "is_correct": false,
+          "explanation": "Size 5 เป็นขนาดเล็กที่สุดในกลุ่มที่ใช้ทั่วไป (ประมาณ 0.13 mL) เหมาะกับยาขนาดต่ำมาก จึงไม่ใช่ขนาดที่จุมากที่สุด"
+        },
+        {
+          "label": "B",
+          "text": "Size 4",
+          "is_correct": false,
+          "explanation": "Size 4 จุประมาณ 0.21 mL ยังเล็กกว่า Size 0 และ 000 มาก"
+        },
+        {
+          "label": "C",
+          "text": "Size 000",
+          "is_correct": true,
+          "explanation": "ถูกต้อง Size 000 จุประมาณ 1.37 mL ใหญ่ที่สุดในกลุ่มขนาดมาตรฐานที่ใช้ในมนุษย์ แต่กลืนยากจึงใช้ไม่บ่อย"
+        },
+        {
+          "label": "D",
+          "text": "Size 0",
+          "is_correct": false,
+          "explanation": "Size 0 จุประมาณ 0.68 mL เป็นขนาดใหญ่ที่นิยมใช้มากที่สุดในยารับประทาน แต่ยังเล็กกว่า 00 และ 000"
+        },
+        {
+          "label": "E",
+          "text": "Size 1",
+          "is_correct": false,
+          "explanation": "Size 1 จุประมาณ 0.50 mL เล็กกว่า Size 0 เพราะตัวเลขยิ่งมากยิ่งเล็ก"
+        }
+      ],
+      "key_takeaway": "ตัวเลขน้อย = แคปซูลใหญ่: 000 (1.37) > 00 (0.95) > 0 (0.68) > 1 (0.50) > 2 (0.37) > 3 (0.30) > 4 (0.21) > 5 (0.13 mL)"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "ในการควบคุมคุณภาพเปลือก hard gelatin capsule เปล่าก่อนนำไปบรรจุ ปริมาณความชื้น (moisture content) ของเปลือกที่เหมาะสมโดยทั่วไปอยู่ในช่วงใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "13–16%"
+      },
+      {
+        "label": "B",
+        "text": "1–3%"
+      },
+      {
+        "label": "C",
+        "text": "4–6%"
+      },
+      {
+        "label": "D",
+        "text": "20–25%"
+      },
+      {
+        "label": "E",
+        "text": "30–35%"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "เปลือก hard gelatin capsule ปกติมีน้ำประมาณ 13–16% ซึ่งทำหน้าที่เป็น plasticizer ถ้าต่ำกว่านี้เปลือกจะเปราะแตก ถ้าสูงกว่านี้เปลือกจะนิ่มและเสียรูป",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. 13–16% — ความชื้นของเปลือก hard gelatin capsule ที่เหมาะสมคือประมาณ 13–16%",
+      "reason": "น้ำในเปลือกเจลาตินทำหน้าที่เป็น plasticizer ทำให้เปลือกมีความยืดหยุ่นพอที่จะผ่านเครื่องบรรจุความเร็วสูงได้โดยไม่แตก ช่วงความชื้นที่ยอมรับโดยทั่วไปคือประมาณ 13–16% ถ้าความชื้นลดต่ำกว่าประมาณ 12% (เช่นเก็บในที่แห้งมาก หรือบรรจุผงที่ดูดความชื้นสูง) เปลือกจะเปราะ (brittle) และแตกง่าย ถ้าความชื้นสูงเกินประมาณ 18% เปลือกจะนิ่ม เหนียว ติดกัน และเสียรูป ดังนั้นจึงควรเก็บแคปซูลเปล่าที่อุณหภูมิประมาณ 15–25 °C และ RH ประมาณ 35–65% สารที่บรรจุก็มีผล เช่น ผงที่ hygroscopic จะดึงน้ำจากเปลือกจนเปราะ ส่วนสารที่มีน้ำมากจะทำให้เปลือกนิ่มหรือละลาย เปรียบเทียบกับ HPMC capsule ที่มีความชื้นต่ำกว่ามาก (ประมาณ 4–6%) และไม่ต้องพึ่งน้ำเป็น plasticizer จึงเหมาะกับยาที่ไวต่อความชื้นมากกว่า",
+      "choices": [
+        {
+          "label": "A",
+          "text": "13–16%",
+          "is_correct": true,
+          "explanation": "ถูกต้อง เป็นช่วงความชื้นมาตรฐานของเปลือก hard gelatin capsule ที่ทำให้เปลือกยืดหยุ่นพอดี ไม่เปราะและไม่นิ่ม"
+        },
+        {
+          "label": "B",
+          "text": "1–3%",
+          "is_correct": false,
+          "explanation": "ความชื้น 1–3% ต่ำเกินไปสำหรับเจลาติน เปลือกจะเปราะแตกง่ายขณะบรรจุหรือขนส่ง"
+        },
+        {
+          "label": "C",
+          "text": "4–6%",
+          "is_correct": false,
+          "explanation": "ความชื้นประมาณ 4–6% เป็นค่าโดยทั่วไปของ HPMC capsule ไม่ใช่ gelatin capsule"
+        },
+        {
+          "label": "D",
+          "text": "20–25%",
+          "is_correct": false,
+          "explanation": "ความชื้น 20–25% สูงเกินไป เปลือกจะนิ่ม เหนียวติดกัน และเสียรูป"
+        },
+        {
+          "label": "E",
+          "text": "30–35%",
+          "is_correct": false,
+          "explanation": "ความชื้น 30–35% ใกล้เคียงกับเปลือก soft gelatin ขณะเพิ่งขึ้นรูปก่อนอบแห้ง ไม่ใช่ค่าของ hard capsule สำเร็จรูป"
+        }
+      ],
+      "key_takeaway": "Hard gelatin shell: น้ำ 13–16% (<12% เปราะ, >18% นิ่ม); HPMC shell: น้ำต่ำประมาณ 4–6%"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "เภสัชกรฝ่ายพัฒนาสูตรตำรับกำลังคัดเลือกรูปแบบสารที่จะบรรจุใน hard gelatin capsule ธรรมดา (ไม่มีการปรับเปลือกพิเศษ) ข้อใดเป็นสารบรรจุที่ไม่เหมาะสม (incompatible fill) มากที่สุด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Granules ที่เตรียมโดย wet granulation และอบแห้งแล้ว"
+      },
+      {
+        "label": "B",
+        "text": "Pellets เคลือบ ethylcellulose แบบ extended release"
+      },
+      {
+        "label": "C",
+        "text": "Mini-tablets ขนาด 2 mm"
+      },
+      {
+        "label": "D",
+        "text": "Thermosoftening semisolid เช่น Gelucire ที่หลอมเหลวแล้วเทบรรจุ แล้วแข็งตัวที่อุณหภูมิห้อง"
+      },
+      {
+        "label": "E",
+        "text": "สารละลายยาในน้ำ (aqueous solution) ที่มีน้ำประมาณ 40%"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "เจลาตินละลายน้ำได้ สารบรรจุที่มีน้ำปริมาณมากจะทำให้เปลือกนิ่ม บวม และละลาย จึงห้ามบรรจุสารละลายในน้ำลงใน hard gelatin capsule",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. สารละลายยาในน้ำ (aqueous solution) ที่มีน้ำประมาณ 40% — สารละลายในน้ำจะละลายเปลือกเจลาติน จึงเป็น incompatible fill",
+      "reason": "Hard gelatin capsule สามารถบรรจุสารได้หลายรูปแบบ ได้แก่ ผง granules pellets mini-tablets แม้แต่ของเหลวหรือ semisolid ที่ไม่ใช่น้ำ (non-aqueous) เช่น น้ำมัน PEG ที่หลอมเหลว หรือ Gelucire ซึ่งเมื่อบรรจุของเหลวมักต้องปิดรอยต่อด้วย banding หรือ sealing เพื่อกันรั่ว อย่างไรก็ตามเจลาตินเป็นโปรตีนที่ละลายน้ำ สารบรรจุที่มีน้ำเกินประมาณ 5–10% จะดึงเปลือกให้นิ่ม บวม และละลายได้ สารบรรจุอื่นที่ควรระวังได้แก่ สารที่ hygroscopic หรือ deliquescent (ดึงน้ำจากเปลือกจนเปราะ) สารที่มี aldehyde หรือเกิด aldehyde ได้ (ทำให้เกิด cross-linking) และสารที่มีค่า pH สุดขั้ว รวมถึงตัวทำละลายที่มีมวลโมเลกุลต่ำและผ่านเปลือกได้ ในกรณีที่จำเป็นต้องให้ยาในรูปสารละลายในน้ำ ควรเลือกรูปแบบยาน้ำแทน หรือปรับเป็นระบบที่ไม่มีน้ำ",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Granules ที่เตรียมโดย wet granulation และอบแห้งแล้ว",
+          "is_correct": false,
+          "explanation": "Granules ที่อบแห้งแล้วมีความชื้นต่ำ บรรจุลงแคปซูลได้ดีและไหลดีกว่าผง จึงเหมาะสม"
+        },
+        {
+          "label": "B",
+          "text": "Pellets เคลือบ ethylcellulose แบบ extended release",
+          "is_correct": false,
+          "explanation": "Pellets เคลือบเป็นรูปแบบ multiparticulate ที่นิยมบรรจุใน hard capsule เพื่อให้ได้ระบบ modified release"
+        },
+        {
+          "label": "C",
+          "text": "Mini-tablets ขนาด 2 mm",
+          "is_correct": false,
+          "explanation": "Mini-tablets บรรจุใน hard capsule ได้ ใช้ทำผลิตภัณฑ์ที่ผสมหลายอัตราการปลดปล่อยในแคปซูลเดียว"
+        },
+        {
+          "label": "D",
+          "text": "Thermosoftening semisolid เช่น Gelucire ที่หลอมเหลวแล้วเทบรรจุ แล้วแข็งตัวที่อุณหภูมิห้อง",
+          "is_correct": false,
+          "explanation": "Thermosoftening fill เช่น Gelucire หรือ PEG ที่หลอมเหลวไม่มีน้ำ และแข็งตัวในแคปซูล จึงบรรจุใน hard capsule ได้"
+        },
+        {
+          "label": "E",
+          "text": "สารละลายยาในน้ำ (aqueous solution) ที่มีน้ำประมาณ 40%",
+          "is_correct": true,
+          "explanation": "ถูกต้อง น้ำปริมาณมากจะทำให้เปลือกเจลาตินนิ่ม บวม และละลาย จึงเป็นสารบรรจุที่ไม่เหมาะสม"
+        }
+      ],
+      "key_takeaway": "Hard gelatin capsule บรรจุได้ทั้งผง granules pellets tablets และของเหลวที่ไม่มีน้ำ แต่ห้ามสารที่มีน้ำมาก สาร deliquescent และสารที่มี aldehyde"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ยา A บรรจุใน hard gelatin capsule สูตรตำรับมี povidone และ PEG 6000 ที่ตรวจพบ formaldehyde ปริมาณเล็กน้อยเป็นสิ่งเจือปน เมื่อทำ stability ที่ 40 °C/75% RH พบว่า dissolution ช้าลงเรื่อย ๆ และสังเกตเห็นเยื่อบาง ๆ (pellicle) ที่ไม่ละลายหุ้มอยู่รอบสารบรรจุ การเปลี่ยนแปลงสูตรตำรับ (formulation change) ข้อใดแก้ปัญหาที่ต้นเหตุได้ดีที่สุด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "เปลี่ยนเป็นแคปซูลเจลาตินขนาดใหญ่ขึ้นเพื่อเพิ่มพื้นที่ผิว"
+      },
+      {
+        "label": "B",
+        "text": "เปลี่ยนเปลือกเป็น HPMC (hypromellose) capsule"
+      },
+      {
+        "label": "C",
+        "text": "เพิ่ม magnesium stearate จาก 0.5% เป็น 2%"
+      },
+      {
+        "label": "D",
+        "text": "เปลี่ยนเป็นเจลาติน Type B แทน Type A"
+      },
+      {
+        "label": "E",
+        "text": "เติม pepsin ลงในตัวกลาง dissolution ทุกครั้ง"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "อาการดังกล่าวคือ gelatin cross-linking จาก aldehyde เปลือก HPMC ไม่มีหมู่ amino ของโปรตีนจึงไม่เกิด cross-linking กับ aldehyde เป็นการแก้ที่ต้นเหตุ",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. เปลี่ยนเปลือกเป็น HPMC (hypromellose) capsule — HPMC capsule ไม่เกิด cross-linking กับ aldehyde จึงแก้ปัญหา pellicle และ dissolution ช้าลงได้ที่ต้นเหตุ",
+      "reason": "Gelatin เป็นโปรตีนที่มีหมู่ amino (เช่น lysine) สามารถทำปฏิกิริยากับ aldehyde (formaldehyde, furfural, glucose ที่เสื่อม) เกิดพันธะข้ามสาย (cross-linking) ทำให้ผิวด้านในของเปลือกกลายเป็นเยื่อที่ไม่ละลายน้ำเรียกว่า pellicle ผลคือ dissolution ช้าลงเมื่อเก็บนานขึ้นโดยเฉพาะที่อุณหภูมิและความชื้นสูง แหล่งของ aldehyde ได้แก่ สิ่งเจือปน peroxide/aldehyde ใน PEG, povidone, polysorbate สีบางชนิด และ rayon ในขวด เปลือก HPMC (hypromellose) เป็น cellulose ether ที่ไม่มีหมู่ amino จึงไม่เกิด cross-linking กับ aldehyde และยังมีความชื้นต่ำ (ประมาณ 4–6%) เหมาะกับยาที่ไวต่อความชื้น อีกทั้งเป็นทางเลือกสำหรับผู้บริโภคมังสวิรัติหรือฮาลาล ในด้านการทดสอบ USP อนุญาตให้เติมเอนไซม์ (pepsin ในตัวกลางกรด หรือ pancreatin ในตัวกลาง pH ≥ 6.8) เมื่อแคปซูลเจลาตินไม่ผ่านเนื่องจาก cross-linking แต่เป็นเพียงการปรับวิธีทดสอบ ไม่ได้แก้ปัญหาในสูตรตำรับ ทางแก้อีกทางหนึ่งคือการคัดเลือกสารช่วยที่มี aldehyde/peroxide ต่ำ",
+      "choices": [
+        {
+          "label": "A",
+          "text": "เปลี่ยนเป็นแคปซูลเจลาตินขนาดใหญ่ขึ้นเพื่อเพิ่มพื้นที่ผิว",
+          "is_correct": false,
+          "explanation": "การเพิ่มขนาดแคปซูลไม่ได้หยุดปฏิกิริยา cross-linking ระหว่างเจลาตินกับ aldehyde ปัญหา pellicle จึงยังเกิดอยู่"
+        },
+        {
+          "label": "B",
+          "text": "เปลี่ยนเปลือกเป็น HPMC (hypromellose) capsule",
+          "is_correct": true,
+          "explanation": "ถูกต้อง HPMC capsule ไม่มีหมู่ amino จึงไม่เกิด cross-linking กับ aldehyde แก้ปัญหาที่ต้นเหตุ"
+        },
+        {
+          "label": "C",
+          "text": "เพิ่ม magnesium stearate จาก 0.5% เป็น 2%",
+          "is_correct": false,
+          "explanation": "การเพิ่ม magnesium stearate ซึ่งไม่ชอบน้ำจะยิ่งทำให้การเปียกและ dissolution ช้าลง และไม่ได้แก้ cross-linking"
+        },
+        {
+          "label": "D",
+          "text": "เปลี่ยนเป็นเจลาติน Type B แทน Type A",
+          "is_correct": false,
+          "explanation": "ทั้ง Type A (acid-processed จากหนังสุกร) และ Type B (alkali-processed จากกระดูก/หนังวัว) ยังเป็นโปรตีนที่มีหมู่ amino จึงเกิด cross-linking ได้เหมือนกัน"
+        },
+        {
+          "label": "E",
+          "text": "เติม pepsin ลงในตัวกลาง dissolution ทุกครั้ง",
+          "is_correct": false,
+          "explanation": "การเติม pepsin เป็นการปรับวิธีทดสอบ dissolution ที่ USP อนุญาตสำหรับแคปซูลเจลาตินที่เกิด cross-linking ไม่ใช่การเปลี่ยนสูตรตำรับที่ป้องกันปัญหาในตัวผลิตภัณฑ์"
+        }
+      ],
+      "key_takeaway": "Aldehyde + gelatin → cross-linking → pellicle → dissolution ช้าลง; แก้ด้วย HPMC capsule หรือเลือกสารช่วย aldehyde ต่ำ; การทดสอบใช้ pepsin/pancreatin ได้"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ต้องการผลิตแคปซูลยา B ขนาด 270 mg ต่อแคปซูล โดยยาคิดเป็น 60% w/w ของผงผสมทั้งหมด ผงผสมมี tapped density 0.75 g/mL กำหนดปริมาตรบรรจุของแคปซูล: Size 2 = 0.37 mL, Size 1 = 0.50 mL, Size 0 = 0.68 mL, Size 00 = 0.95 mL แคปซูลขนาดเล็กที่สุดที่สามารถบรรจุผงผสมได้ครบตามขนาดยาคือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Size 2"
+      },
+      {
+        "label": "B",
+        "text": "Size 1"
+      },
+      {
+        "label": "C",
+        "text": "Size 3"
+      },
+      {
+        "label": "D",
+        "text": "Size 0"
+      },
+      {
+        "label": "E",
+        "text": "Size 00"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "น้ำหนักผงผสม = 270/0.60 = 450 mg ต้องการปริมาตร = 0.45 g ÷ 0.75 g/mL = 0.60 mL Size 1 (0.50 mL) ไม่พอ Size 0 (0.68 mL) จึงเล็กที่สุดที่บรรจุได้",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. Size 0 — ต้องการปริมาตรผง 0.60 mL ซึ่งเกิน Size 1 (0.50 mL) แต่ไม่เกิน Size 0 (0.68 mL)",
+      "reason": "การเลือกขนาดแคปซูลอาศัยหลักว่าน้ำหนักผงที่บรรจุได้ ≈ ปริมาตรแคปซูล × tapped density ของผง ขั้นแรกต้องหาน้ำหนักผงผสมต่อแคปซูลจากความเข้มข้นของยาในผงผสม คือ 270 mg ÷ 0.60 = 450 mg จากนั้นเปลี่ยนเป็นปริมาตรที่ต้องการ 0.450 g ÷ 0.75 g/mL = 0.60 mL เมื่อเทียบกับปริมาตรแคปซูล Size 1 จุได้เพียง 0.50 mL (บรรจุผงได้ 0.50 × 0.75 = 375 mg ซึ่งน้อยกว่า 450 mg) ส่วน Size 0 จุได้ 0.68 mL (บรรจุได้ 0.68 × 0.75 = 510 mg) จึงพอและเป็นขนาดเล็กที่สุดที่ใช้ได้ ส่วนต่างปริมาตรที่เหลือ (ประมาณ 0.08 mL) อาจปรับโดยเพิ่ม diluent เพื่อให้บรรจุเต็มแคปซูล ซึ่งช่วยให้น้ำหนักบรรจุสม่ำเสมอบนเครื่องบรรจุแบบ dosator หรือ tamping ในทางปฏิบัติ density ขณะบรรจุจริงอาจสูงกว่า tapped density เล็กน้อยเพราะเครื่องอัดผง (tamping) แต่การใช้ tapped density เป็นการประมาณเบื้องต้นที่ยอมรับ",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Size 2",
+          "is_correct": false,
+          "explanation": "Size 2 จุเพียง 0.37 mL บรรจุผงได้ประมาณ 278 mg น้อยกว่า 450 mg ที่ต้องการมาก"
+        },
+        {
+          "label": "B",
+          "text": "Size 1",
+          "is_correct": false,
+          "explanation": "Size 1 จุ 0.50 mL บรรจุได้ประมาณ 375 mg ยังไม่พอสำหรับผงผสม 450 mg"
+        },
+        {
+          "label": "C",
+          "text": "Size 3",
+          "is_correct": false,
+          "explanation": "Size 3 (ประมาณ 0.30 mL) เล็กกว่า Size 2 อีก จึงไม่พออย่างชัดเจน"
+        },
+        {
+          "label": "D",
+          "text": "Size 0",
+          "is_correct": true,
+          "explanation": "ถูกต้อง Size 0 จุ 0.68 mL บรรจุได้ประมาณ 510 mg ซึ่งพอสำหรับ 450 mg และเป็นขนาดเล็กที่สุดที่ใช้ได้"
+        },
+        {
+          "label": "E",
+          "text": "Size 00",
+          "is_correct": false,
+          "explanation": "Size 00 บรรจุได้ แต่ใหญ่เกินความจำเป็นและกลืนยากกว่า ไม่ใช่ขนาดเล็กที่สุดตามที่โจทย์ถาม"
+        }
+      ],
+      "key_takeaway": "น้ำหนักผงผสม = dose ÷ สัดส่วนยา; ปริมาตรที่ต้องการ = น้ำหนักผง ÷ tapped density แล้วเลือกแคปซูลเล็กที่สุดที่ปริมาตร ≥ ค่าที่ต้องการ",
+      "calculation_steps": [
+        "ขั้นที่ 1 น้ำหนักผงผสมต่อแคปซูล = 270 mg ÷ 0.60 = 450 mg = 0.450 g",
+        "ขั้นที่ 2 ปริมาตรผงที่ต้องการ = 0.450 g ÷ 0.75 g/mL = 0.60 mL",
+        "ขั้นที่ 3 Size 1: 0.50 mL < 0.60 mL (บรรจุได้ 0.50 × 0.75 = 0.375 g) → ไม่พอ",
+        "ขั้นที่ 4 Size 0: 0.68 mL ≥ 0.60 mL (บรรจุได้ 0.68 × 0.75 = 0.510 g) → พอ จึงเลือก Size 0"
+      ]
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "สูตรเปลือก soft gelatin capsule ประกอบด้วย gelatin, purified water, สาร X, titanium dioxide และ methylparaben/propylparaben สาร X ทำหน้าที่เป็น plasticizer ให้เปลือกนุ่มและยืดหยุ่น สาร X น่าจะเป็นสารใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Glycerin"
+      },
+      {
+        "label": "B",
+        "text": "Titanium dioxide"
+      },
+      {
+        "label": "C",
+        "text": "Talc"
+      },
+      {
+        "label": "D",
+        "text": "Sodium lauryl sulfate"
+      },
+      {
+        "label": "E",
+        "text": "Colloidal silicon dioxide"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Glycerin (และ sorbitol) เป็น plasticizer หลักของเปลือก softgel ทำให้เปลือกคงความนุ่มยืดหยุ่นแม้หลังอบแห้ง",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. Glycerin — Glycerin เป็น plasticizer มาตรฐานของเปลือก soft gelatin capsule",
+      "reason": "เปลือก soft gelatin capsule ต่างจาก hard capsule ตรงที่มี plasticizer ปริมาณสูง ทำให้เปลือกหนาและยืดหยุ่น ส่วนประกอบหลักคือ gelatin, plasticizer และน้ำ โดย plasticizer ที่ใช้บ่อยที่สุดคือ glycerin รองลงมาคือ sorbitol (หรือ sorbitol special/sorbitol-sorbitan) และบางครั้งใช้ propylene glycol สัดส่วน plasticizer ต่อ gelatin เป็นตัวกำหนดความแข็งของเปลือก ยิ่งมาก plasticizer เปลือกยิ่งนิ่ม ส่วนประกอบอื่นได้แก่ opacifier (titanium dioxide) สี สารกันเสีย (parabens) และสารแต่งกลิ่น กระบวนการผลิตแบบ rotary die (Scherer) ขึ้นรูปและบรรจุในขั้นเดียว แล้วอบแห้งจนเปลือกเหลือน้ำประมาณ 6–10% ข้อควรระวังคือ glycerin และน้ำสามารถเคลื่อนที่ระหว่างเปลือกกับสารบรรจุได้ (migration) โดยเฉพาะเมื่อ fill เป็น PEG ซึ่งอาจทำให้เปลือกแข็งหรือนิ่มเปลี่ยนไป",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Glycerin",
+          "is_correct": true,
+          "explanation": "ถูกต้อง Glycerin เป็น plasticizer หลักของเปลือก softgel ช่วยให้เปลือกยืดหยุ่นไม่เปราะ"
+        },
+        {
+          "label": "B",
+          "text": "Titanium dioxide",
+          "is_correct": false,
+          "explanation": "Titanium dioxide เป็น opacifier ทำให้เปลือกทึบแสงและช่วยป้องกันยาที่ไวต่อแสง ไม่ได้ทำให้เปลือกนิ่ม"
+        },
+        {
+          "label": "C",
+          "text": "Talc",
+          "is_correct": false,
+          "explanation": "Talc ใช้เป็น glidant/lubricant ในผงหรือยาเม็ด ไม่ได้เป็นส่วนประกอบเพื่อเพิ่มความยืดหยุ่นของเปลือกเจลาติน"
+        },
+        {
+          "label": "D",
+          "text": "Sodium lauryl sulfate",
+          "is_correct": false,
+          "explanation": "Sodium lauryl sulfate เป็น surfactant ใช้เป็น wetting agent ในผงบรรจุแคปซูลแข็งหรือในเปลือกบางสูตร ไม่ใช่ plasticizer"
+        },
+        {
+          "label": "E",
+          "text": "Colloidal silicon dioxide",
+          "is_correct": false,
+          "explanation": "Colloidal silicon dioxide เป็น glidant และสารเพิ่มความหนืดใน fill ที่เป็นน้ำมัน ไม่ใช่ plasticizer ของเปลือก"
+        }
+      ],
+      "key_takeaway": "เปลือก softgel = gelatin + plasticizer (glycerin/sorbitol) + น้ำ + TiO2 + สี + กันเสีย"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "ในการพัฒนาสารบรรจุ (fill) สำหรับ soft gelatin capsule เพื่อไม่ให้เปลือกเจลาตินถูกไฮโดรไลซ์หรือเกิด tanning ระหว่างเก็บ ค่า pH ของสารบรรจุควรอยู่ในช่วงใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ต่ำกว่า 2.0"
+      },
+      {
+        "label": "B",
+        "text": "2.0–2.5 เท่านั้น"
+      },
+      {
+        "label": "C",
+        "text": "ประมาณ 2.5–7.5"
+      },
+      {
+        "label": "D",
+        "text": "ประมาณ 8.0–10.0"
+      },
+      {
+        "label": "E",
+        "text": "มากกว่า 10.0"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "สารบรรจุ softgel ควรมี pH ประมาณ 2.5–7.5 เพราะกรดแรงทำให้เจลาตินถูกไฮโดรไลซ์จนเปลือกรั่ว ส่วนด่างแรงทำให้เกิด tanning (cross-linking) จนเปลือกละลายช้า",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. ประมาณ 2.5–7.5 — Fill ของ softgel ควรมี pH ประมาณ 2.5–7.5 และน้ำไม่เกินประมาณ 5%",
+      "reason": "เปลือก soft gelatin เป็นโปรตีนที่ไวต่อสภาวะกรดด่าง ถ้าสารบรรจุมี pH ต่ำกว่าประมาณ 2.5 จะเกิดการไฮโดรไลซ์สายเปปไทด์ของเจลาติน ทำให้เปลือกอ่อนแอ รั่ว หรือเกิดรอยรั่วที่ seam ถ้า pH สูงกว่าประมาณ 7.5 จะเกิด tanning หรือ cross-linking ของเจลาติน ทำให้เปลือกละลายช้าและ dissolution ลดลง นอกจาก pH ยังต้องควบคุมข้อกำหนดอื่นของ fill ได้แก่ น้ำไม่ควรเกินประมาณ 5% สารที่มีมวลโมเลกุลต่ำและละลายน้ำได้ดี (เช่น ethanol ปริมาณมาก) อาจเคลื่อนผ่านเปลือก และ aldehyde ทำให้เกิด cross-linking Fill ที่นิยมได้แก่ น้ำมันพืช medium-chain triglycerides, PEG 400–600, ระบบ SEDDS/SMEDDS และ suspension ในน้ำมัน ยาที่มีความเป็นกรดหรือด่างอาจต้องใช้ buffer หรือเลือกรูปเกลือที่เหมาะสมเพื่อให้ pH ของ fill อยู่ในช่วงนี้",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ต่ำกว่า 2.0",
+          "is_correct": false,
+          "explanation": "pH ต่ำกว่า 2.0 เป็นกรดแรง ทำให้เจลาตินถูกไฮโดรไลซ์ เปลือกอ่อนแอและรั่ว"
+        },
+        {
+          "label": "B",
+          "text": "2.0–2.5 เท่านั้น",
+          "is_correct": false,
+          "explanation": "ช่วง 2.0–2.5 ยังเป็นกรดมากเกินไปและแคบผิดจากหลักการ ไม่ใช่ช่วงที่แนะนำ"
+        },
+        {
+          "label": "C",
+          "text": "ประมาณ 2.5–7.5",
+          "is_correct": true,
+          "explanation": "ถูกต้อง ช่วง pH ประมาณ 2.5–7.5 เป็นช่วงที่เปลือกเจลาตินคงตัว ไม่ถูกไฮโดรไลซ์และไม่เกิด tanning"
+        },
+        {
+          "label": "D",
+          "text": "ประมาณ 8.0–10.0",
+          "is_correct": false,
+          "explanation": "pH 8–10 เป็นด่าง ทำให้เกิด tanning หรือ cross-linking ของเจลาติน เปลือกละลายช้าลง"
+        },
+        {
+          "label": "E",
+          "text": "มากกว่า 10.0",
+          "is_correct": false,
+          "explanation": "pH มากกว่า 10 เป็นด่างแรง ทำลายโครงสร้างเจลาตินและทำให้ dissolution ผิดปกติ"
+        }
+      ],
+      "key_takeaway": "Softgel fill: pH 2.5–7.5, น้ำ ≤ 5%, หลีกเลี่ยง aldehyde และสารโมเลกุลเล็กที่ละลายน้ำปริมาณมาก"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ยาน้ำแขวนตะกอนแบบ extended release ตัวหนึ่งมี dextromethorphan polistirex ซึ่งเป็น drug-resin complex ระหว่างยาที่มีประจุบวกกับ sulfonated polystyrene ion-exchange resin กลไกหลักที่ทำให้ยาถูกปลดปล่อยจาก resin ในทางเดินอาหารคือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "การกร่อน (erosion) ของ resin โดยเอนไซม์ในลำไส้"
+      },
+      {
+        "label": "B",
+        "text": "การเกิด gel layer ที่ผิว resin"
+      },
+      {
+        "label": "C",
+        "text": "การละลายของ resin ในกรดกระเพาะ"
+      },
+      {
+        "label": "D",
+        "text": "แรงดัน osmotic ดันยาออกทาง orifice"
+      },
+      {
+        "label": "E",
+        "text": "การแลกเปลี่ยนไอออนกับไอออนที่มีประจุเดียวกันในของเหลวทางเดินอาหาร เช่น Na+, K+, H+"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "Drug-resin complex ปลดปล่อยยาเมื่อไอออนในของเหลวทางเดินอาหาร (Na+, K+, H+) เข้าแทนที่ยาที่จับอยู่บน resin อัตราการปลดปล่อยจึงขึ้นกับความเข้มข้นไอออนและการเคลือบ resin",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. การแลกเปลี่ยนไอออนกับไอออนที่มีประจุเดียวกันในของเหลวทางเดินอาหาร เช่น Na+, K+, H+ — Ion-exchange resin ปลดปล่อยยาโดยการแลกเปลี่ยนไอออนกับ counter-ion ในของเหลวทางเดินอาหาร",
+      "reason": "Ion-exchange resin เป็นพอลิเมอร์ที่ไม่ละลายน้ำ มีหมู่ประจุบนโครงสร้าง cation-exchange resin (เช่น sulfonated polystyrene–divinylbenzene) จับยาที่เป็นเบสซึ่งมีประจุบวก ส่วน anion-exchange resin จับยาที่เป็นกรด เมื่อรับประทาน ไอออนในทางเดินอาหาร เช่น H+ ในกระเพาะ และ Na+, K+ ในลำไส้ จะแลกเปลี่ยนตำแหน่งกับยา ทำให้ยาหลุดออกมาและถูกดูดซึม ปฏิกิริยาเขียนได้เป็น Resin–Drug+ + Na+ ⇌ Resin–Na+ + Drug+ เนื่องจากไอออนในทางเดินอาหารมีปริมาณค่อนข้างคงที่ การปลดปล่อยจึงไม่ค่อยขึ้นกับ pH หรืออาหาร เพื่อให้ปลดปล่อยช้าลงอีก นิยมเคลือบ resin complex ด้วย ethylcellulose (เช่นระบบ Pennkinetic ซึ่งผ่านการ impregnate ด้วย PEG ก่อนเคลือบเพื่อลดการบวมและแตกของเปลือก) ข้อดีอื่นได้แก่ช่วยกลบรสขม และทำเป็นยาน้ำแขวนตะกอนแบบ ER ได้ เพราะในขวดไม่มีไอออนแข่งขันจำนวนมาก ยาจึงไม่หลุดออกจาก resin ระหว่างเก็บ",
+      "choices": [
+        {
+          "label": "A",
+          "text": "การกร่อน (erosion) ของ resin โดยเอนไซม์ในลำไส้",
+          "is_correct": false,
+          "explanation": "Resin เป็นพอลิเมอร์ cross-linked ที่ไม่ถูกย่อยด้วยเอนไซม์ และขับออกทางอุจจาระโดยไม่เปลี่ยนแปลง"
+        },
+        {
+          "label": "B",
+          "text": "การเกิด gel layer ที่ผิว resin",
+          "is_correct": false,
+          "explanation": "Gel layer เป็นกลไกของ hydrophilic matrix เช่น HPMC ไม่ใช่กลไกของ ion-exchange resin"
+        },
+        {
+          "label": "C",
+          "text": "การละลายของ resin ในกรดกระเพาะ",
+          "is_correct": false,
+          "explanation": "Resin ไม่ละลายในกรดกระเพาะ เพียงแต่ H+ ในกระเพาะสามารถแลกเปลี่ยนกับยาได้บางส่วน"
+        },
+        {
+          "label": "D",
+          "text": "แรงดัน osmotic ดันยาออกทาง orifice",
+          "is_correct": false,
+          "explanation": "การใช้แรงดัน osmotic ผ่าน orifice เป็นกลไกของ osmotic pump (OROS)"
+        },
+        {
+          "label": "E",
+          "text": "การแลกเปลี่ยนไอออนกับไอออนที่มีประจุเดียวกันในของเหลวทางเดินอาหาร เช่น Na+, K+, H+",
+          "is_correct": true,
+          "explanation": "ถูกต้อง ไอออนในทางเดินอาหาร (Na+, K+, H+) เข้าแทนที่ยาบน resin ทำให้ยาถูกปลดปล่อย"
+        }
+      ],
+      "key_takeaway": "Ion-exchange ER: Resin–Drug + ไอออนใน GI → ยาหลุด; เคลือบ ethylcellulose ให้ช้าลง; ใช้ทำ ER suspension และกลบรส"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "ยาเม็ดฟู่บรรจุในหลอดอะลูมิเนียมพร้อมฝาที่มี desiccant หลังเก็บไประยะหนึ่งพบว่าฝาหลอดดันเปิดออก เม็ดยาพองและมีรูพรุนบนผิว สาเหตุและกลไกที่น่าจะเป็นมากที่สุดคือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "แรงตอกเม็ดต่ำเกินไป ทำให้เม็ดยาขยายตัวกลับ (elastic recovery)"
+      },
+      {
+        "label": "B",
+        "text": "ใช้ lubricant ที่ละลายน้ำ เช่น PEG 6000 แทน magnesium stearate"
+      },
+      {
+        "label": "C",
+        "text": "อุณหภูมิต่ำทำให้ CO2 ละลายในเม็ดยาน้อยลง"
+      },
+      {
+        "label": "D",
+        "text": "ความชื้นซึมเข้าไปเริ่มปฏิกิริยากรด–ด่าง ซึ่งให้น้ำออกมาเพิ่ม ทำให้ปฏิกิริยาเกิดต่อเนื่องและปล่อย CO2"
+      },
+      {
+        "label": "E",
+        "text": "ปริมาณ sodium bicarbonate มากเกินจึงสลายตัวเป็น Na2CO3 ที่อุณหภูมิห้อง"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "น้ำเพียงเล็กน้อยเริ่มปฏิกิริยาระหว่างกรดอินทรีย์กับ bicarbonate ซึ่งให้น้ำเป็นผลผลิต จึงเร่งปฏิกิริยาตัวเอง (autocatalytic) ทำให้เกิด CO2 สะสมจนดันฝาและเม็ดยาเสื่อม",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. ความชื้นซึมเข้าไปเริ่มปฏิกิริยากรด–ด่าง ซึ่งให้น้ำออกมาเพิ่ม ทำให้ปฏิกิริยาเกิดต่อเนื่องและปล่อย CO2 — ความชื้นเริ่มปฏิกิริยากรด–ด่างที่ผลิตน้ำเพิ่ม จึงเกิดต่อเนื่องและปล่อย CO2 จนเม็ดยาพองและฝาหลอดเปิด",
+      "reason": "ระบบฟู่ประกอบด้วยคู่กรด–ด่าง (acid–base couple) เช่น citric acid หรือ tartaric acid กับ sodium bicarbonate หรือ sodium carbonate ปฏิกิริยา H3C6H5O7 + 3NaHCO3 → Na3C6H5O7 + 3H2O + 3CO2 ต้องมีน้ำเป็นตัวกลาง และผลผลิตก็มีน้ำ ดังนั้นเมื่อความชื้นเข้ามาเพียงเล็กน้อย ปฏิกิริยาจะเกิดและผลิตน้ำเพิ่ม ทำให้เกิดต่อเนื่องแบบ chain/autocatalytic ผลคือเม็ดยาสูญเสียความฟู่ พอง แตก และ CO2 ที่เกิดขึ้นในภาชนะปิดสร้างแรงดันจนฝาเปิด การป้องกันได้แก่ ผลิตในห้องที่ควบคุม RH ต่ำ (ประมาณ ≤ 20–25% RH) ที่อุณหภูมิประมาณ 20–25 °C ใช้วัตถุดิบที่มีน้ำต่ำ (เช่น citric acid anhydrous แทน monohydrate หรือทำให้แห้งก่อน) บรรจุในหลอดอะลูมิเนียมหรือ strip foil พร้อม desiccant และเลือก lubricant ที่ละลายน้ำได้ (เช่น PEG 6000, sodium benzoate, L-leucine) เพื่อให้สารละลายใส เภสัชกรควรแนะนำผู้ป่วยให้ปิดฝาหลอดทันทีหลังหยิบเม็ดยา",
+      "choices": [
+        {
+          "label": "A",
+          "text": "แรงตอกเม็ดต่ำเกินไป ทำให้เม็ดยาขยายตัวกลับ (elastic recovery)",
+          "is_correct": false,
+          "explanation": "Elastic recovery ทำให้เม็ดยามีรอยแตกหรือ capping หลังตอก แต่ไม่อธิบายการเกิดแก๊สจนฝาเปิดระหว่างเก็บ"
+        },
+        {
+          "label": "B",
+          "text": "ใช้ lubricant ที่ละลายน้ำ เช่น PEG 6000 แทน magnesium stearate",
+          "is_correct": false,
+          "explanation": "PEG 6000 เป็น lubricant ที่ละลายน้ำ นิยมใช้ในยาเม็ดฟู่เพื่อให้สารละลายใส ไม่ใช่สาเหตุของการเกิดแก๊ส"
+        },
+        {
+          "label": "C",
+          "text": "อุณหภูมิต่ำทำให้ CO2 ละลายในเม็ดยาน้อยลง",
+          "is_correct": false,
+          "explanation": "อุณหภูมิต่ำไม่ได้ทำให้เกิดแก๊สเพิ่มขึ้น ปัญหานี้มักเกิดเมื่ออุณหภูมิและความชื้นสูง"
+        },
+        {
+          "label": "D",
+          "text": "ความชื้นซึมเข้าไปเริ่มปฏิกิริยากรด–ด่าง ซึ่งให้น้ำออกมาเพิ่ม ทำให้ปฏิกิริยาเกิดต่อเนื่องและปล่อย CO2",
+          "is_correct": true,
+          "explanation": "ถูกต้อง ความชื้นเริ่มปฏิกิริยากรด–ด่างซึ่งให้น้ำเพิ่ม จึงเกิดต่อเนื่อง ปล่อย CO2 ทำให้เม็ดพองและฝาเปิด"
+        },
+        {
+          "label": "E",
+          "text": "ปริมาณ sodium bicarbonate มากเกินจึงสลายตัวเป็น Na2CO3 ที่อุณหภูมิห้อง",
+          "is_correct": false,
+          "explanation": "NaHCO3 สลายด้วยความร้อนได้ที่อุณหภูมิสูง (เริ่มประมาณ 50 °C ขึ้นไป) ไม่ใช่ที่อุณหภูมิห้องในหลอดปิด และการมีด่างเกินพอไม่ใช่สาเหตุหลัก"
+        }
+      ],
+      "key_takeaway": "ระบบฟู่: น้ำเริ่มปฏิกิริยาและเป็นผลผลิต → autocatalytic; ควบคุม RH ต่ำ (≤ 20–25%) วัตถุดิบ anhydrous บรรจุกันชื้น + desiccant"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "สูตรผงฟู่ (effervescent granules) ใช้ citric acid monohydrate (MW 210) 2.10 g ต่อซอง ทำปฏิกิริยากับ sodium bicarbonate (MW 84) ตามสมการ C6H8O7 + 3NaHCO3 → Na3C6H5O7 + 3H2O + 3CO2 ต้องใช้ sodium bicarbonate อย่างน้อยกี่กรัมเพื่อทำปฏิกิริยาพอดีกับกรด (stoichiometric)",
+    "choices": [
+      {
+        "label": "A",
+        "text": "0.84 g"
+      },
+      {
+        "label": "B",
+        "text": "2.52 g"
+      },
+      {
+        "label": "C",
+        "text": "1.68 g"
+      },
+      {
+        "label": "D",
+        "text": "3.36 g"
+      },
+      {
+        "label": "E",
+        "text": "0.28 g"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "citric acid monohydrate 2.10 g = 0.010 mol ต้องใช้ NaHCO3 3 เท่า = 0.030 mol × 84 g/mol = 2.52 g",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. 2.52 g — Citric acid 0.010 mol ต้องใช้ NaHCO3 0.030 mol ซึ่งหนัก 2.52 g",
+      "reason": "Citric acid เป็นกรดสามโปรตอน (triprotic) หนึ่งโมเลกุลจึงทำปฏิกิริยากับ NaHCO3 ได้ 3 โมเลกุล ให้ CO2 3 โมเลกุล เมื่อใช้ citric acid monohydrate ต้องใช้ MW ของรูป monohydrate (210) ไม่ใช่รูป anhydrous (192) ในการคำนวณจำนวนโมล 2.10 g ÷ 210 g/mol = 0.010 mol ดังนั้น NaHCO3 ที่ต้องใช้ = 3 × 0.010 = 0.030 mol คิดเป็นน้ำหนัก 0.030 × 84 = 2.52 g และจะเกิด CO2 0.030 mol (ประมาณ 1.32 g) ในทางปฏิบัติสูตรยาฟู่มักใช้กรดเกินเล็กน้อย เพื่อให้ bicarbonate ทำปฏิกิริยาหมด สารละลายมีรสเปรี้ยวดีขึ้น และช่วยเพิ่มความคงตัวของยาบางชนิด นอกจากนี้มักใช้ citric ร่วมกับ tartaric acid เพราะ citric acid อย่างเดียวทำให้ granule เหนียว ส่วน tartaric acid อย่างเดียวทำให้ granule ร่วน tartaric acid เป็นกรดสองโปรตอนจึงใช้ NaHCO3 2 โมล ต่อกรด 1 โมล",
+      "choices": [
+        {
+          "label": "A",
+          "text": "0.84 g",
+          "is_correct": false,
+          "explanation": "0.84 g ได้จากการคิดอัตราส่วน 1:1 (0.010 mol × 84) ซึ่งลืมว่า citric acid เป็นกรดสามโปรตอน"
+        },
+        {
+          "label": "B",
+          "text": "2.52 g",
+          "is_correct": true,
+          "explanation": "ถูกต้อง 0.010 mol × 3 × 84 g/mol = 2.52 g"
+        },
+        {
+          "label": "C",
+          "text": "1.68 g",
+          "is_correct": false,
+          "explanation": "1.68 g ได้จากการคิดอัตราส่วน 1:2 ซึ่งเป็นอัตราส่วนของ tartaric acid ไม่ใช่ citric acid"
+        },
+        {
+          "label": "D",
+          "text": "3.36 g",
+          "is_correct": false,
+          "explanation": "3.36 g ได้จากการคิดอัตราส่วน 1:4 ซึ่งไม่ถูกต้องตามสมการ"
+        },
+        {
+          "label": "E",
+          "text": "0.28 g",
+          "is_correct": false,
+          "explanation": "0.28 g ได้จากการหารแทนการคูณด้วย 3 (0.010 ÷ 3 × 84) ซึ่งกลับทิศของอัตราส่วนโมล"
+        }
+      ],
+      "key_takeaway": "Citric acid : NaHCO3 = 1 : 3; tartaric acid : NaHCO3 = 1 : 2; ใช้ MW ให้ตรงกับรูป hydrate ที่ใช้จริง",
+      "calculation_steps": [
+        "ขั้นที่ 1 โมลของ citric acid monohydrate = 2.10 g ÷ 210 g/mol = 0.010 mol",
+        "ขั้นที่ 2 อัตราส่วนโมล citric acid : NaHCO3 = 1 : 3 → NaHCO3 = 0.010 × 3 = 0.030 mol",
+        "ขั้นที่ 3 น้ำหนัก NaHCO3 = 0.030 mol × 84 g/mol = 2.52 g",
+        "ขั้นที่ 4 (ตรวจสอบ) CO2 ที่เกิด = 0.030 mol × 44 g/mol = 1.32 g"
+      ]
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "ผู้ผลิตยาผงสำหรับเตรียมยาน้ำแขวนตะกอน (powder for oral suspension) ขนาดยา 125 mg/5 mL บรรจุขวดละ 60 mL พิจารณาเปลี่ยนจากการบรรจุผงผสมธรรมดา (simple powder blend ที่มีตัวยา sucrose ผงละเอียด suspending agent และสารแต่งกลิ่นรส) มาเป็นการทำแกรนูลก่อนบรรจุ (granules for oral suspension) ข้อใดเป็นข้อได้เปรียบหลักของการทำแกรนูล",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ทำให้ตัวยาละลายน้ำได้มากขึ้นจนได้ยาน้ำใสแทนยาแขวนตะกอน"
+      },
+      {
+        "label": "B",
+        "text": "ทำให้ยาที่ไม่คงตัวในน้ำคงตัวได้นานขึ้นหลังผสมน้ำแล้ว"
+      },
+      {
+        "label": "C",
+        "text": "ไม่ต้องควบคุมความชื้นของผลิตภัณฑ์อีกต่อไป เพราะแกรนูลไม่ดูดความชื้น"
+      },
+      {
+        "label": "D",
+        "text": "ทำให้สามารถตัด suspending agent ออกจากสูตรได้"
+      },
+      {
+        "label": "E",
+        "text": "ลดการแยกชั้นของส่วนประกอบ (segregation) ทำให้ปริมาณยาในแต่ละขวดสม่ำเสมอ ไหลดีขณะบรรจุ ฝุ่นน้อย และกระจายตัวเมื่อเติมน้ำได้ดีขึ้น"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "การทำแกรนูลทำให้ส่วนประกอบที่ขนาดและความหนาแน่นต่างกันยึดอยู่ในแกรนูลเดียวกัน จึงลด segregation ทำให้ยาแต่ละขวดสม่ำเสมอ ไหลดีขณะบรรจุ ฝุ่นน้อย และเปียกน้ำกระจายตัวง่ายเมื่อผสม",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. ลด segregation ทำให้ยาแต่ละขวดสม่ำเสมอ ไหลดี ฝุ่นน้อย และกระจายตัวเมื่อผสมน้ำได้ดี — นี่คือเหตุผลหลักของ granules for oral suspension",
+      "reason": "ผงผสมธรรมดาสำหรับเตรียมยาน้ำแขวนตะกอนประกอบด้วยส่วนประกอบที่ขนาดอนุภาคและความหนาแน่นต่างกันมาก เช่น ตัวยาที่ micronized, sucrose ผงที่มีปริมาณมากที่สุด, suspending agent (xanthan gum, CMC) ปริมาณน้อย และสารแต่งกลิ่นรส ระหว่างการขนส่งและการบรรจุด้วยเครื่อง (auger/volumetric filler) ซึ่งมีการสั่นสะเทือน อนุภาคเล็กจะไหลแทรกลงด้านล่าง (percolation segregation) ทำให้ขวดต้นรุ่นกับปลายรุ่นมีปริมาณยาต่างกัน — นี่คือความเสี่ยงต่อ content uniformity ของยาผงหลายขนาดยา (multi-dose) การทำแกรนูล (wet granulation หรือ dry granulation/roller compaction) ทำให้ส่วนประกอบทุกชนิดยึดอยู่ด้วยกันภายในแกรนูลแต่ละเม็ด สัดส่วนจึงคงที่แม้มีการสั่น นอกจากนี้แกรนูลมีขนาดใหญ่กว่าและรูปร่างสม่ำเสมอกว่า จึงไหลดี (flowability ดี) บรรจุได้น้ำหนักแม่นยำ เกิดฝุ่นน้อยลง (ลดการปนเปื้อนข้ามและการสัมผัสยาของผู้ปฏิบัติงาน) และเมื่อเติมน้ำ แกรนูลที่มีความพรุนจะเปียกน้ำได้ทั่วถึง ไม่จับเป็นก้อน suspending agent ที่กระจายอยู่ในแกรนูลจะไม่เกิดก้อนเจลแห้งด้านนอก (fish-eye/lump) ซึ่งมักเกิดเมื่อ gum ผงสัมผัสน้ำพร้อมกันทีเดียว ข้อควรระวังของการทำแกรนูลคือยาที่ไวต่อความชื้นและความร้อน (เช่น β-lactam) อาจต้องใช้ dry granulation หรือ non-aqueous granulation และต้องควบคุมความชื้นหลังอบแห้ง",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ทำให้ตัวยาละลายน้ำได้มากขึ้นจนได้ยาน้ำใสแทนยาแขวนตะกอน",
+          "is_correct": false,
+          "explanation": "ผิด — การทำแกรนูลไม่ได้เปลี่ยนค่าการละลายอิ่มตัว (solubility) ของตัวยา ซึ่งเป็นสมบัติเฉพาะของสาร อาจช่วยให้เปียกน้ำและกระจายตัวเร็วขึ้นเท่านั้น ยาที่ละลายน้ำน้อยจะยังคงเป็นยาแขวนตะกอนอยู่"
+        },
+        {
+          "label": "B",
+          "text": "ทำให้ยาที่ไม่คงตัวในน้ำคงตัวได้นานขึ้นหลังผสมน้ำแล้ว",
+          "is_correct": false,
+          "explanation": "ผิด — ความไม่คงตัวทางเคมีในน้ำ (เช่น hydrolysis ของ β-lactam) เกิดขึ้นหลังผสมน้ำไม่ว่าจะเป็นผงหรือแกรนูล beyond-use date หลังผสมจึงยังสั้นเท่าเดิม ความคงตัวที่ได้จากการเป็นผงแห้งเป็นผลของการไม่มีน้ำ ไม่ใช่ผลของการทำแกรนูล"
+        },
+        {
+          "label": "C",
+          "text": "ไม่ต้องควบคุมความชื้นของผลิตภัณฑ์อีกต่อไป เพราะแกรนูลไม่ดูดความชื้น",
+          "is_correct": false,
+          "explanation": "ผิด — แกรนูลยังมี sucrose และสารที่ดูดความชื้นได้ ต้องควบคุมความชื้นทั้งระหว่างผลิต (LOD หลังอบแห้ง) และในบรรจุภัณฑ์ (ฝาปิดสนิท) เหมือนเดิม การทำ wet granulation ยังเพิ่มขั้นตอนที่ต้องควบคุมความชื้นด้วย"
+        },
+        {
+          "label": "D",
+          "text": "ทำให้สามารถตัด suspending agent ออกจากสูตรได้",
+          "is_correct": false,
+          "explanation": "ผิด — suspending agent ยังจำเป็นต่อการเพิ่มความหนืดของตัวกลางหลังผสมน้ำ เพื่อชะลออัตราการตกตะกอนตาม Stokes' law และช่วยให้เขย่ากลับเป็นเนื้อเดียวได้ การทำแกรนูลไม่ได้ทดแทนหน้าที่นี้"
+        },
+        {
+          "label": "E",
+          "text": "ลดการแยกชั้นของส่วนประกอบ (segregation) ทำให้ปริมาณยาในแต่ละขวดสม่ำเสมอ ไหลดีขณะบรรจุ ฝุ่นน้อย และกระจายตัวเมื่อเติมน้ำได้ดีขึ้น",
+          "is_correct": true,
+          "explanation": "ถูก — แกรนูลยึดส่วนประกอบไว้ด้วยกัน จึงลด segregation ทำให้ content uniformity ระหว่างขวดดี ไหลดีขณะบรรจุ ฝุ่นน้อย และเปียกน้ำกระจายตัวได้ทั่วถึงโดยไม่จับเป็นก้อน"
+        }
+      ],
+      "key_takeaway": "Granules for reconstitution ดีกว่าผงผสมธรรมดาเพราะลด segregation (ยาสม่ำเสมอทุกขวด), ไหลดี/ฝุ่นน้อย และกระจายตัวง่ายเมื่อเติมน้ำ แต่ไม่ได้ทำให้ยาคงตัวหลังผสมน้ำนานขึ้น"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ฉลากยาผงสำหรับเตรียมยาน้ำแขวนตะกอนระบุว่า \"เติมน้ำ 60 mL จะได้ยาน้ำแขวนตะกอน 100 mL ความแรง 250 mg/5 mL\" แพทย์สั่งให้เตรียมความแรง 125 mg/5 mL สำหรับเด็กเล็ก โดยใช้ผงยาทั้งขวด (สมมติว่าขวดมีขนาดเพียงพอ) ต้องเติมน้ำทั้งหมดกี่ mL",
+    "choices": [
+      {
+        "label": "A",
+        "text": "120 mL"
+      },
+      {
+        "label": "B",
+        "text": "140 mL"
+      },
+      {
+        "label": "C",
+        "text": "160 mL"
+      },
+      {
+        "label": "D",
+        "text": "200 mL"
+      },
+      {
+        "label": "E",
+        "text": "100 mL"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "ยาทั้งขวด = 250 mg/5 mL × 100 mL = 5,000 mg ต้องการปริมาตรสุดท้าย 5,000 ÷ 25 mg/mL = 200 mL ผงยามีปริมาตร 100 − 60 = 40 mL จึงต้องเติมน้ำ 200 − 40 = 160 mL",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. 160 mL — ผงยามีปริมาตร 40 mL ต้องการปริมาตรสุดท้าย 200 mL จึงเติมน้ำ 160 mL",
+      "reason": "โจทย์ reconstitution ต้องคำนึงถึง powder volume (ปริมาตรที่ผงยาแทนที่) เสมอ จากฉลากเติมน้ำ 60 mL ได้ 100 mL แสดงว่าผงยามีปริมาตร 40 mL ปริมาณยาทั้งหมดในขวดคำนวณจากความแรงตามฉลาก 250 mg/5 mL = 50 mg/mL × 100 mL = 5,000 mg เมื่อต้องการความแรงใหม่ 125 mg/5 mL = 25 mg/mL ปริมาตรสุดท้ายต้องเป็น 5,000 ÷ 25 = 200 mL ปริมาตรน้ำที่ต้องเติม = ปริมาตรสุดท้าย − powder volume = 200 − 40 = 160 mL ข้อผิดพลาดที่พบบ่อยคือคิดว่าต้องเติมน้ำเป็นสองเท่าของที่ฉลากระบุ (120 mL) หรือคิดว่าเติมน้ำเท่ากับปริมาตรสุดท้าย (200 mL) ซึ่งลืมว่าผงยาเองมีปริมาตร ในทางปฏิบัติการเจือจางยาผงเช่นนี้ต้องพิจารณาความคงตัว ความเข้มข้นของสารกันเสียและสารช่วยแขวนตะกอนที่ลดลง และควรตรวจสอบข้อมูลจากผู้ผลิตก่อน",
+      "choices": [
+        {
+          "label": "A",
+          "text": "120 mL",
+          "is_correct": false,
+          "explanation": "120 mL ได้จากการเพิ่มน้ำเป็นสองเท่าของที่ฉลากระบุ (60 × 2) ซึ่งให้ปริมาตรสุดท้ายเพียง 160 mL ความแรงจะเป็นประมาณ 156 mg/5 mL"
+        },
+        {
+          "label": "B",
+          "text": "140 mL",
+          "is_correct": false,
+          "explanation": "140 mL ไม่สอดคล้องกับการคำนวณ จะได้ปริมาตรสุดท้าย 180 mL ความแรงประมาณ 139 mg/5 mL"
+        },
+        {
+          "label": "C",
+          "text": "160 mL",
+          "is_correct": true,
+          "explanation": "ถูกต้อง ปริมาตรสุดท้าย 200 mL ลบ powder volume 40 mL ได้น้ำ 160 mL"
+        },
+        {
+          "label": "D",
+          "text": "200 mL",
+          "is_correct": false,
+          "explanation": "200 mL คือปริมาตรสุดท้ายที่ต้องการ ถ้าเติมน้ำ 200 mL จะได้ปริมาตร 240 mL ความแรงประมาณ 104 mg/5 mL"
+        },
+        {
+          "label": "E",
+          "text": "100 mL",
+          "is_correct": false,
+          "explanation": "100 mL ทำให้ได้ปริมาตร 140 mL ความแรงประมาณ 179 mg/5 mL ไม่ใช่ 125 mg/5 mL"
+        }
+      ],
+      "key_takeaway": "Powder volume = ปริมาตรสุดท้ายตามฉลาก − น้ำที่เติม; น้ำที่ต้องเติมใหม่ = (ยาทั้งหมด ÷ ความแรงใหม่) − powder volume",
+      "calculation_steps": [
+        "ขั้นที่ 1 Powder volume = 100 mL − 60 mL = 40 mL",
+        "ขั้นที่ 2 ยาทั้งขวด = (250 mg ÷ 5 mL) × 100 mL = 50 mg/mL × 100 mL = 5,000 mg",
+        "ขั้นที่ 3 ความแรงใหม่ = 125 mg ÷ 5 mL = 25 mg/mL → ปริมาตรสุดท้าย = 5,000 mg ÷ 25 mg/mL = 200 mL",
+        "ขั้นที่ 4 น้ำที่ต้องเติม = 200 mL − 40 mL = 160 mL"
+      ]
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "ข้อใดจับคู่ USP dissolution apparatus กับรูปแบบยาที่เหมาะสมได้ถูกต้อง",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Apparatus 1 (basket) — แคปซูลและรูปแบบยาที่มีแนวโน้มลอยน้ำ"
+      },
+      {
+        "label": "B",
+        "text": "Apparatus 5 (paddle over disk) — ยาเหน็บ (suppositories)"
+      },
+      {
+        "label": "C",
+        "text": "Apparatus 6 (rotating cylinder) — ยาเม็ดเคลือบ enteric"
+      },
+      {
+        "label": "D",
+        "text": "Apparatus 3 (reciprocating cylinder) — แผ่นแปะผิวหนัง (transdermal patch)"
+      },
+      {
+        "label": "E",
+        "text": "Apparatus 7 (reciprocating holder) — ผงยาสำหรับเตรียมยาน้ำแขวนตะกอน"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Basket (Apparatus 1) กักเก็บยาไว้ในตะแกรงจึงเหมาะกับแคปซูลและยาที่ลอย ส่วน Apparatus 5, 6, 7 ใช้กับ transdermal และ Apparatus 3 ใช้กับ ER beads/ยาเม็ดที่ต้องเปลี่ยน pH",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. Apparatus 1 (basket) — แคปซูลและรูปแบบยาที่มีแนวโน้มลอยน้ำ — Apparatus 1 (basket) เหมาะกับแคปซูลและรูปแบบยาที่ลอย เพราะตะแกรงกักยาไว้ใต้ผิวตัวกลาง",
+      "reason": "USP <711> และ <724> กำหนดเครื่องมือทดสอบการละลาย 7 แบบ Apparatus 1 (rotating basket) ใช้ความเร็วโดยทั่วไป 100 rpm (ช่วง 50–100 rpm) เหมาะกับแคปซูล ยาที่ลอย และ multiparticulates Apparatus 2 (paddle) ใช้บ่อยที่สุดสำหรับยาเม็ดที่ 50–75 rpm ถ้ายาลอยสามารถใช้ sinker ได้ Apparatus 3 (reciprocating cylinder, Bio-Dis) เหมาะกับยา ER โดยเฉพาะ beads และการทดสอบที่ต้องเปลี่ยน pH ตามทางเดินอาหาร Apparatus 4 (flow-through cell) เหมาะกับยาละลายน้ำน้อย implants microspheres ยาเหน็บ และผงยา เพราะสามารถรักษา sink condition ด้วยตัวกลางที่ไหลผ่านตลอด Apparatus 5 (paddle over disk), 6 (rotating cylinder) และ 7 (reciprocating holder) ใช้กับระบบนำส่งยาทางผิวหนัง (transdermal) ที่อุณหภูมิ 32 °C ซึ่งเป็นอุณหภูมิผิวหนัง ส่วน Apparatus 7 ยังใช้กับยา ER ขนาดเล็กหรือ osmotic tablet ได้ด้วย ตัวกลางมักใช้ 500–1000 mL (ทั่วไป 900 mL) ที่ 37 ± 0.5 °C สำหรับยารับประทาน",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Apparatus 1 (basket) — แคปซูลและรูปแบบยาที่มีแนวโน้มลอยน้ำ",
+          "is_correct": true,
+          "explanation": "ถูกต้อง basket กักเก็บแคปซูลและยาที่ลอยไว้ในตัวกลาง ใช้ความเร็วโดยทั่วไป 100 rpm"
+        },
+        {
+          "label": "B",
+          "text": "Apparatus 5 (paddle over disk) — ยาเหน็บ (suppositories)",
+          "is_correct": false,
+          "explanation": "Apparatus 5 ใช้กับ transdermal patch โดยวางแผ่นยาบน disk ใต้ใบพาย ยาเหน็บมักทดสอบด้วย basket หรือ flow-through cell แบบพิเศษ"
+        },
+        {
+          "label": "C",
+          "text": "Apparatus 6 (rotating cylinder) — ยาเม็ดเคลือบ enteric",
+          "is_correct": false,
+          "explanation": "Apparatus 6 (rotating cylinder) ใช้กับ transdermal patch ที่ติดบนกระบอกหมุน ยาเม็ด enteric ทดสอบด้วย Apparatus 1 หรือ 2 แบบ acid stage และ buffer stage"
+        },
+        {
+          "label": "D",
+          "text": "Apparatus 3 (reciprocating cylinder) — แผ่นแปะผิวหนัง (transdermal patch)",
+          "is_correct": false,
+          "explanation": "Apparatus 3 เหมาะกับยา ER beads และการเปลี่ยน pH ไม่ใช่ transdermal patch"
+        },
+        {
+          "label": "E",
+          "text": "Apparatus 7 (reciprocating holder) — ผงยาสำหรับเตรียมยาน้ำแขวนตะกอน",
+          "is_correct": false,
+          "explanation": "Apparatus 7 ใช้กับ transdermal และยา ER ขนาดเล็ก ไม่ได้ใช้กับผงสำหรับเตรียมยาน้ำ"
+        }
+      ],
+      "key_takeaway": "USP: 1 basket (แคปซูล/ยาลอย, 100 rpm), 2 paddle (ยาเม็ด, 50–75 rpm), 3 reciprocating cylinder (ER beads), 4 flow-through (ยาละลายน้อย/implant), 5–6–7 transdermal (32 °C)"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ยาเม็ด gastroretentive แบบ floating (hydrodynamically balanced system) มีส่วนประกอบดังนี้: ยา, HPMC K4M, sodium bicarbonate, citric acid และ magnesium stearate ส่วนประกอบใดทำหน้าที่หลักในการสร้างแก๊สที่ทำให้เม็ดยาลอยในกระเพาะอาหาร",
+    "choices": [
+      {
+        "label": "A",
+        "text": "HPMC K4M"
+      },
+      {
+        "label": "B",
+        "text": "Magnesium stearate"
+      },
+      {
+        "label": "C",
+        "text": "ยา (active ingredient)"
+      },
+      {
+        "label": "D",
+        "text": "Sodium bicarbonate"
+      },
+      {
+        "label": "E",
+        "text": "Lactose"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "Sodium bicarbonate ทำปฏิกิริยากับกรดในกระเพาะ (และ citric acid) ปล่อย CO2 ซึ่งติดอยู่ใน gel layer ของ HPMC ทำให้ density ของเม็ดยาต่ำกว่ากระเพาะอาหารและลอยได้",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. Sodium bicarbonate — Sodium bicarbonate เป็น gas-generating agent ปล่อย CO2 ที่ติดอยู่ใน gel ของ HPMC ทำให้เม็ดยาลอย",
+      "reason": "ระบบ floating drug delivery ต้องมี density ต่ำกว่าของเหลวในกระเพาะ (ประมาณ 1.004 g/cm³) เพื่อให้ลอยและอยู่ในกระเพาะได้นานขึ้น ระบบแบบ effervescent ใช้ sodium bicarbonate หรือ calcium carbonate ร่วมกับกรดอินทรีย์ (citric/tartaric acid) หรือกรดในกระเพาะ ทำปฏิกิริยาปล่อย CO2 ขณะเดียวกัน HPMC ซึ่งเป็น hydrophilic polymer จะดูดน้ำและพองเป็น gel layer ที่กักแก๊สไว้ทำให้เม็ดยาลอยและควบคุมการปลดปล่อยยา ระบบ non-effervescent อาศัยพอลิเมอร์ที่พองตัวและมีความหนาแน่นต่ำ เช่น HPMC ร่วมกับไขมันหรือน้ำมัน ยาที่เหมาะกับ gastroretentive คือยาที่ออกฤทธิ์เฉพาะที่ในกระเพาะ (เช่นยาฆ่า H. pylori) ยาที่มี absorption window แคบในลำไส้ส่วนต้น (เช่น levodopa, riboflavin) และยาที่ไม่คงตัวหรือละลายได้น้อยใน pH ของลำไส้ ข้อจำกัดคือต้องมีของเหลวในกระเพาะเพียงพอ จึงมักแนะนำให้รับประทานพร้อมอาหารหรือน้ำปริมาณมาก ระบบอื่นของ gastroretention ได้แก่ swelling/expanding, bioadhesive และ high-density systems",
+      "choices": [
+        {
+          "label": "A",
+          "text": "HPMC K4M",
+          "is_correct": false,
+          "explanation": "HPMC K4M ทำหน้าที่สร้าง gel layer กักเก็บแก๊สและควบคุมการปลดปล่อยยา แต่ไม่ได้สร้างแก๊สเอง"
+        },
+        {
+          "label": "B",
+          "text": "Magnesium stearate",
+          "is_correct": false,
+          "explanation": "Magnesium stearate เป็น lubricant ช่วยในการตอกเม็ด ไม่เกี่ยวกับการสร้างแก๊ส"
+        },
+        {
+          "label": "C",
+          "text": "ยา (active ingredient)",
+          "is_correct": false,
+          "explanation": "ตัวยาไม่ได้ทำหน้าที่ทำให้เม็ดลอย"
+        },
+        {
+          "label": "D",
+          "text": "Sodium bicarbonate",
+          "is_correct": true,
+          "explanation": "ถูกต้อง Sodium bicarbonate ทำปฏิกิริยากับกรดปล่อย CO2 ซึ่งถูกกักใน gel ทำให้เม็ดยาลอย"
+        },
+        {
+          "label": "E",
+          "text": "Lactose",
+          "is_correct": false,
+          "explanation": "Lactose ไม่ได้อยู่ในสูตรที่ให้มา และเป็นเพียง diluent ที่ละลายน้ำ ไม่ได้สร้างแก๊ส"
+        }
+      ],
+      "key_takeaway": "Floating system: density < 1.004 g/cm³; NaHCO3 (+ กรด) → CO2 ถูกกักใน gel HPMC; เหมาะกับยาที่มี absorption window ในลำไส้ส่วนต้น"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "ยาเม็ด immediate release ตัวหนึ่งมีข้อกำหนด dissolution Q = 80% ใน 30 นาที ผลการทดสอบ S1 (6 เม็ด) ได้ 88, 92, 84, 90, 86, 91% จึงทดสอบ S2 อีก 6 เม็ดได้ 82, 79, 85, 88, 76, 90% ข้อสรุปตามเกณฑ์ USP <711> คือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ผ่านที่ S1 เพราะค่าเฉลี่ย 6 เม็ดแรกมากกว่า Q"
+      },
+      {
+        "label": "B",
+        "text": "ผ่านที่ S2"
+      },
+      {
+        "label": "C",
+        "text": "ต้องทดสอบ S3 เพราะมีเม็ดยาที่ต่ำกว่า Q (79% และ 76%)"
+      },
+      {
+        "label": "D",
+        "text": "ไม่ผ่าน ต้อง reject ทันทีเพราะมีเม็ดยาต่ำกว่า Q"
+      },
+      {
+        "label": "E",
+        "text": "ต้องทดสอบ S3 เพราะมีเม็ดยาต่ำกว่า Q − 5% (75%)"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "S1 ไม่ผ่านเพราะ 84% < Q + 5 (85%) ที่ S2 ค่าเฉลี่ย 12 เม็ด = 1031/12 ≈ 85.9% ≥ Q และไม่มีเม็ดใดต่ำกว่า Q − 15 (65%) จึงผ่านที่ S2",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. ผ่านที่ S2 — ค่าเฉลี่ย 12 เม็ด ≈ 85.9% ≥ 80% และไม่มีเม็ดใดต่ำกว่า 65% จึงผ่านที่ S2",
+      "reason": "เกณฑ์ acceptance ของยา immediate release ตาม USP <711> มี 3 ขั้น S1 ทดสอบ 6 หน่วย ทุกหน่วยต้องไม่น้อยกว่า Q + 5% S2 ทดสอบเพิ่มอีก 6 หน่วย ค่าเฉลี่ยของ 12 หน่วยต้อง ≥ Q และไม่มีหน่วยใดน้อยกว่า Q − 15% S3 ทดสอบเพิ่มอีก 12 หน่วย ค่าเฉลี่ยของ 24 หน่วยต้อง ≥ Q ไม่เกิน 2 หน่วยที่น้อยกว่า Q − 15% และไม่มีหน่วยใดน้อยกว่า Q − 25% ในโจทย์นี้ Q = 80% ดังนั้น Q + 5 = 85% และเม็ดที่ 3 ได้ 84% จึงไม่ผ่าน S1 ที่ S2 ผลรวม S1 = 531 และ S2 = 500 รวม 1031 ค่าเฉลี่ย 12 เม็ด = 85.9% ซึ่ง ≥ 80% และค่าต่ำสุดคือ 76% ซึ่งไม่ต่ำกว่า Q − 15 = 65% จึงผ่านเกณฑ์ S2 สิ่งที่มักเข้าใจผิดคือคิดว่าเม็ดเดี่ยวที่ต่ำกว่า Q ทำให้ไม่ผ่าน แต่เกณฑ์ S2 ยอมให้หน่วยเดี่ยวต่ำกว่า Q ได้ตราบที่ไม่ต่ำกว่า Q − 15% และค่าเฉลี่ยยังผ่าน ค่า Q แสดงเป็นร้อยละของ labeled content",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ผ่านที่ S1 เพราะค่าเฉลี่ย 6 เม็ดแรกมากกว่า Q",
+          "is_correct": false,
+          "explanation": "S1 ใช้เกณฑ์รายหน่วย ไม่ใช่ค่าเฉลี่ย ทุกเม็ดต้อง ≥ Q + 5 (85%) แต่มีเม็ดที่ได้ 84% จึงไม่ผ่าน S1"
+        },
+        {
+          "label": "B",
+          "text": "ผ่านที่ S2",
+          "is_correct": true,
+          "explanation": "ถูกต้อง ค่าเฉลี่ย 12 เม็ด 85.9% ≥ Q และค่าต่ำสุด 76% ไม่ต่ำกว่า Q − 15 (65%)"
+        },
+        {
+          "label": "C",
+          "text": "ต้องทดสอบ S3 เพราะมีเม็ดยาที่ต่ำกว่า Q (79% และ 76%)",
+          "is_correct": false,
+          "explanation": "การมีหน่วยต่ำกว่า Q ไม่ได้ทำให้ต้องไป S3 เกณฑ์ S2 ยอมให้หน่วยเดี่ยวต่ำกว่า Q ได้ถ้าไม่ต่ำกว่า Q − 15%"
+        },
+        {
+          "label": "D",
+          "text": "ไม่ผ่าน ต้อง reject ทันทีเพราะมีเม็ดยาต่ำกว่า Q",
+          "is_correct": false,
+          "explanation": "USP ไม่ reject ทันทีเมื่อหน่วยเดี่ยวต่ำกว่า Q ต้องประเมินตามเกณฑ์ S2 และ S3"
+        },
+        {
+          "label": "E",
+          "text": "ต้องทดสอบ S3 เพราะมีเม็ดยาต่ำกว่า Q − 5% (75%)",
+          "is_correct": false,
+          "explanation": "ไม่มีเกณฑ์ Q − 5% ใน USP <711> สำหรับ S2 ขีดจำกัดล่างของหน่วยเดี่ยวที่ S2 คือ Q − 15% (65%)"
+        }
+      ],
+      "key_takeaway": "IR: S1 (6) ทุกหน่วย ≥ Q+5; S2 (12) เฉลี่ย ≥ Q และไม่มีหน่วย < Q−15; S3 (24) เฉลี่ย ≥ Q, ไม่เกิน 2 หน่วย < Q−15, ไม่มีหน่วย < Q−25",
+      "calculation_steps": [
+        "ขั้นที่ 1 เกณฑ์ S1: ทุกเม็ด ≥ Q + 5 = 80 + 5 = 85% → มีเม็ด 84% → ไม่ผ่าน S1",
+        "ขั้นที่ 2 ผลรวม S1 = 88 + 92 + 84 + 90 + 86 + 91 = 531%; ผลรวม S2 = 82 + 79 + 85 + 88 + 76 + 90 = 500%",
+        "ขั้นที่ 3 ค่าเฉลี่ย 12 เม็ด = (531 + 500) ÷ 12 = 1031 ÷ 12 = 85.9% ≥ 80% (ผ่าน)",
+        "ขั้นที่ 4 ค่าต่ำสุด = 76% ≥ Q − 15 = 65% (ผ่าน) → สรุปผ่านที่ S2"
+      ]
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "ทดสอบ dissolution ยาเม็ดเคลือบ enteric (delayed release) ตาม USP <711> Method A ใน acid stage (0.1 N HCl 2 ชั่วโมง) ผล 6 เม็ดแรก (A1) ปล่อยยาออกมา 2, 4, 12, 3, 1 และ 5% ของ labeled content ขั้นตอนต่อไปที่ถูกต้องคือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ผ่าน acid stage แล้วไปทดสอบ buffer stage ได้ทันที เพราะค่าเฉลี่ยไม่เกิน 10%"
+      },
+      {
+        "label": "B",
+        "text": "ไม่ผ่าน reject ทั้ง batch ทันที"
+      },
+      {
+        "label": "C",
+        "text": "ทดสอบระดับ A2 โดยเพิ่มอีก 6 เม็ด"
+      },
+      {
+        "label": "D",
+        "text": "ทดสอบ buffer stage pH 6.8 กับเม็ดที่เหลือโดยไม่ต้องสนใจ acid stage"
+      },
+      {
+        "label": "E",
+        "text": "ทดสอบระดับ A3 อีก 12 เม็ดทันที"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "เกณฑ์ A1 คือไม่มีเม็ดใดปล่อยยาเกิน 10% แต่มีเม็ดที่ปล่อย 12% จึงไม่ผ่าน A1 ต้องทดสอบ A2 เพิ่ม 6 เม็ด (เกณฑ์ A2: ค่าเฉลี่ย 12 เม็ด ≤ 10% และไม่มีเม็ดใดเกิน 25%)",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. ทดสอบระดับ A2 โดยเพิ่มอีก 6 เม็ด — มีเม็ดปล่อยยา 12% (> 10%) จึงไม่ผ่าน A1 ต้องทดสอบระดับ A2 อีก 6 เม็ด",
+      "reason": "ยา delayed release (enteric-coated) ทดสอบสองช่วง ช่วงแรกคือ acid stage ใน 0.1 N HCl เป็นเวลา 2 ชั่วโมง เพื่อยืนยันว่าเปลือกเคลือบป้องกันยาไม่ให้ปล่อยในกระเพาะ เกณฑ์คือ A1 (6 หน่วย) ไม่มีหน่วยใดปล่อยยาเกิน 10% A2 (12 หน่วย) ค่าเฉลี่ยไม่เกิน 10% และไม่มีหน่วยใดเกิน 25% A3 (24 หน่วย) ค่าเฉลี่ยไม่เกิน 10% และไม่มีหน่วยใดเกิน 25% ช่วงที่สองคือ buffer stage ใน phosphate buffer pH 6.8 (เวลามักเป็น 45 นาทีหรือตามที่กำหนดใน monograph) เกณฑ์ B1/B2/B3 คล้าย S1/S2/S3 ของยา IR โดยถ้าไม่ระบุ Q ให้ใช้ Q = 75% ในโจทย์นี้ค่าเฉลี่ยของ A1 คือ 4.5% แต่เกณฑ์ A1 ดูรายหน่วย และมีหน่วยหนึ่งปล่อย 12% จึงต้องทดสอบ A2 โดยเพิ่มอีก 6 หน่วย ถ้าค่าเฉลี่ยของ 12 หน่วยไม่เกิน 10% และไม่มีหน่วยใดเกิน 25% ถือว่าผ่าน acid stage ใน Method A หน่วยเดียวกันจะถูกนำไปทดสอบต่อใน buffer stage การปล่อยยามากในกรดอาจเกิดจากความหนาของ enteric coat ไม่พอหรือเปลือกเคลือบแตก",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ผ่าน acid stage แล้วไปทดสอบ buffer stage ได้ทันที เพราะค่าเฉลี่ยไม่เกิน 10%",
+          "is_correct": false,
+          "explanation": "เกณฑ์ A1 ดูเป็นรายหน่วย ไม่ใช่ค่าเฉลี่ย ค่าเฉลี่ยไม่เกิน 10% เป็นเกณฑ์ของ A2 และ A3"
+        },
+        {
+          "label": "B",
+          "text": "ไม่ผ่าน reject ทั้ง batch ทันที",
+          "is_correct": false,
+          "explanation": "USP ไม่ reject ทันทีเมื่อไม่ผ่าน A1 ต้องทดสอบระดับ A2 และ A3 ก่อน"
+        },
+        {
+          "label": "C",
+          "text": "ทดสอบระดับ A2 โดยเพิ่มอีก 6 เม็ด",
+          "is_correct": true,
+          "explanation": "ถูกต้อง มีหน่วยหนึ่งปล่อย 12% เกิน 10% จึงไม่ผ่าน A1 ต้องเพิ่ม 6 หน่วยเป็น A2"
+        },
+        {
+          "label": "D",
+          "text": "ทดสอบ buffer stage pH 6.8 กับเม็ดที่เหลือโดยไม่ต้องสนใจ acid stage",
+          "is_correct": false,
+          "explanation": "ต้องผ่าน acid stage ก่อน เพราะเป็นการยืนยันว่า enteric coat ทำหน้าที่ป้องกันยาในกระเพาะ"
+        },
+        {
+          "label": "E",
+          "text": "ทดสอบระดับ A3 อีก 12 เม็ดทันที",
+          "is_correct": false,
+          "explanation": "ต้องทดสอบตามลำดับ A1 → A2 → A3 จะข้ามไป A3 ทันทีไม่ได้"
+        }
+      ],
+      "key_takeaway": "Enteric acid stage: A1 ทุกหน่วย ≤ 10%; A2/A3 ค่าเฉลี่ย ≤ 10% และไม่มีหน่วย > 25%; buffer stage pH 6.8 ใช้ Q = 75% ถ้าไม่ระบุ"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ตามวิธีการใน USP ก่อนนำตัวกลาง dissolution มาใช้ต้องทำการไล่อากาศ (deaeration) เช่น อุ่นตัวกลางประมาณ 41 °C แล้วกรองภายใต้สุญญากาศ เหตุผลหลักของการไล่อากาศคือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "เพื่อฆ่าเชื้อจุลินทรีย์ในตัวกลาง"
+      },
+      {
+        "label": "B",
+        "text": "เพื่อเพิ่มค่าการละลายของยาในตัวกลาง"
+      },
+      {
+        "label": "C",
+        "text": "เพื่อให้ตัวกลางมี pH คงที่ไม่ต้องใช้ buffer"
+      },
+      {
+        "label": "D",
+        "text": "เพื่อปรับอุณหภูมิตัวกลางให้เป็น 37 °C พอดี"
+      },
+      {
+        "label": "E",
+        "text": "เพื่อป้องกันฟองอากาศเกาะบนเม็ดยาหรือตะแกรง basket ซึ่งลดพื้นที่ผิวสัมผัสและทำให้ผลการละลายแปรปรวน"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "อากาศที่ละลายอยู่จะเกิดเป็นฟองเมื่อตัวกลางอุ่นขึ้น ฟองเกาะผิวยาหรือตะแกรง basket ทำให้พื้นที่ผิวสัมผัสลดลง ยาลอย หรือการไหลเปลี่ยนไป ผลจึงแปรปรวนหรือต่ำผิดจริง",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. เพื่อป้องกันฟองอากาศเกาะบนเม็ดยาหรือตะแกรง basket ซึ่งลดพื้นที่ผิวสัมผัสและทำให้ผลการละลายแปรปรวน — Deaeration ป้องกันฟองอากาศเกาะยาและอุปกรณ์ ซึ่งทำให้ผลการละลายแปรปรวนหรือต่ำผิดจริง",
+      "reason": "แก๊สที่ละลายในตัวกลางจะแยกตัวออกมาเป็นฟองเมื่ออุ่นตัวกลางเป็น 37 °C ฟองอากาศสามารถเกาะที่ผิวยาเม็ด ผงยา หรือตะแกรงของ basket ทำให้พื้นที่ผิวที่สัมผัสตัวกลางลดลง เกิดการลอยของอนุภาค และทำให้ hydrodynamics เปลี่ยน ผลการละลายจึงช้าลงหรือแปรปรวนมาก ในบางกรณีออกซิเจนที่ละลายอาจทำให้ยาที่ไวต่อ oxidation สลาย หรือฟองเกาะผนัง vessel และ probe วิธีที่ USP ระบุคือ อุ่นตัวกลางประมาณ 41 °C กรองภายใต้สุญญากาศ และคนต่อภายใต้สุญญากาศประมาณ 5 นาที หรือใช้วิธีอื่นที่พิสูจน์แล้วว่าเทียบเท่า เช่นใช้ helium sparging หรือเครื่อง deaerator อัตโนมัติ ตัวกลางที่มี surfactant (เช่น SLS) โดยทั่วไปไม่ไล่อากาศหลังเติม surfactant เพราะจะเกิดฟองมาก ดังนั้นมักไล่อากาศก่อนเติม การตรวจสอบเครื่องด้วย Performance Verification Test (PVT) ด้วย USP prednisone tablets ก็ไวต่อการไล่อากาศเช่นกัน",
+      "choices": [
+        {
+          "label": "A",
+          "text": "เพื่อฆ่าเชื้อจุลินทรีย์ในตัวกลาง",
+          "is_correct": false,
+          "explanation": "การไล่อากาศไม่ใช่กระบวนการทำให้ปราศจากเชื้อ และ dissolution ไม่ต้องใช้ตัวกลางปราศจากเชื้อ"
+        },
+        {
+          "label": "B",
+          "text": "เพื่อเพิ่มค่าการละลายของยาในตัวกลาง",
+          "is_correct": false,
+          "explanation": "การไล่อากาศไม่ได้เพิ่ม solubility ของยา การเพิ่มการละลายใช้ surfactant หรือปรับ pH"
+        },
+        {
+          "label": "C",
+          "text": "เพื่อให้ตัวกลางมี pH คงที่ไม่ต้องใช้ buffer",
+          "is_correct": false,
+          "explanation": "การไล่อากาศไม่ได้ทำให้ pH คงที่ อาจลด CO2 ได้บ้าง แต่ยังต้องใช้ buffer เพื่อควบคุม pH"
+        },
+        {
+          "label": "D",
+          "text": "เพื่อปรับอุณหภูมิตัวกลางให้เป็น 37 °C พอดี",
+          "is_correct": false,
+          "explanation": "การอุ่นที่ 41 °C เป็นส่วนหนึ่งของวิธีไล่อากาศ อุณหภูมิทดสอบ 37 ± 0.5 °C ควบคุมด้วย water bath"
+        },
+        {
+          "label": "E",
+          "text": "เพื่อป้องกันฟองอากาศเกาะบนเม็ดยาหรือตะแกรง basket ซึ่งลดพื้นที่ผิวสัมผัสและทำให้ผลการละลายแปรปรวน",
+          "is_correct": true,
+          "explanation": "ถูกต้อง ฟองอากาศเกาะยาหรือตะแกรงทำให้พื้นที่ผิวลดลงและผลการละลายแปรปรวน"
+        }
+      ],
+      "key_takeaway": "Deaeration (USP): อุ่น ~41 °C → กรองภายใต้สุญญากาศ → คนต่อ ~5 นาที; ป้องกันฟองอากาศที่ทำให้ผลต่ำหรือแปรปรวน"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "ยา C มีค่าการละลายในตัวกลาง dissolution (phosphate buffer pH 6.8, 37 °C) เท่ากับ 0.5 mg/mL ยาเม็ดมีขนาด 30 mg ทดสอบโดยใช้ตัวกลาง 900 mL ข้อใดสรุปเรื่อง sink condition ได้ถูกต้อง",
+    "choices": [
+      {
+        "label": "A",
+        "text": "เป็น sink condition เพราะปริมาตรที่ทำให้อิ่มตัวคือ 60 mL และ 900 mL มากกว่า 3 เท่าของปริมาตรนี้ (ประมาณ 15 เท่า)"
+      },
+      {
+        "label": "B",
+        "text": "ไม่เป็น sink condition เพราะความเข้มข้นสุดท้ายต้องไม่เกิน 1% ของค่าการละลาย"
+      },
+      {
+        "label": "C",
+        "text": "ไม่เป็น sink condition ต้องเติม sodium lauryl sulfate เพื่อเพิ่มการละลาย"
+      },
+      {
+        "label": "D",
+        "text": "ไม่เป็น sink condition เพราะต้องใช้ตัวกลาง 600 mL จึงจะทำให้ยาอิ่มตัว"
+      },
+      {
+        "label": "E",
+        "text": "จะเป็น sink condition ได้เฉพาะเมื่อใช้ Apparatus 4 (flow-through cell)"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "ปริมาตรที่ทำให้ยา 30 mg อิ่มตัว = 30 ÷ 0.5 = 60 mL ตัวกลาง 900 mL = 15 เท่า ซึ่งมากกว่า 3 เท่าตามนิยาม sink condition ของ USP",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. เป็น sink condition เพราะปริมาตรที่ทำให้อิ่มตัวคือ 60 mL และ 900 mL มากกว่า 3 เท่าของปริมาตรนี้ (ประมาณ 15 เท่า) — ปริมาตรอิ่มตัว 60 mL; ตัวกลาง 900 mL เป็น 15 เท่า จึงเป็น sink condition",
+      "reason": "USP <1092> นิยาม sink condition ว่าปริมาตรตัวกลางต้องมากกว่าอย่างน้อย 3 เท่าของปริมาตรที่ทำให้ยาทั้งหมดเป็นสารละลายอิ่มตัว เทียบได้กับความเข้มข้นสุดท้ายไม่เกินประมาณ 1/3 ของ Cs เพื่อให้แรงขับดัน (Cs − C) ใน Noyes–Whitney ไม่ลดลงมากจนอัตราการละลายถูกจำกัดด้วยการอิ่มตัว ผลที่วัดได้จึงสะท้อนคุณสมบัติของผลิตภัณฑ์จริง ในโจทย์นี้ ยา 30 mg ต้องใช้ตัวกลาง 30 ÷ 0.5 = 60 mL จึงจะอิ่มตัว ตัวกลาง 900 mL เป็น 900 ÷ 60 = 15 เท่า ความเข้มข้นสุดท้ายถ้ายาละลายหมด = 30 ÷ 900 = 0.033 mg/mL หรือประมาณ 6.7% ของ Cs จึงเป็น sink condition ถ้ายาละลายน้ำน้อยจนไม่เป็น sink การแก้ได้แก่ การเพิ่ม surfactant (SLS, polysorbate) ตามความจำเป็นและต้องมีเหตุผลรองรับ การปรับ pH การใช้ปริมาตรมากขึ้น หรือใช้ Apparatus 4 ที่ตัวกลางใหม่ไหลผ่านตลอด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "เป็น sink condition เพราะปริมาตรที่ทำให้อิ่มตัวคือ 60 mL และ 900 mL มากกว่า 3 เท่าของปริมาตรนี้ (ประมาณ 15 เท่า)",
+          "is_correct": true,
+          "explanation": "ถูกต้อง ปริมาตรอิ่มตัว 60 mL และ 900 mL เป็น 15 เท่า ซึ่งมากกว่าเกณฑ์ 3 เท่า"
+        },
+        {
+          "label": "B",
+          "text": "ไม่เป็น sink condition เพราะความเข้มข้นสุดท้ายต้องไม่เกิน 1% ของค่าการละลาย",
+          "is_correct": false,
+          "explanation": "ไม่มีเกณฑ์ 1% ของ Cs ใน USP เกณฑ์คือปริมาตรอย่างน้อย 3 เท่าของปริมาตรอิ่มตัว (ความเข้มข้นสุดท้าย ≤ ประมาณ 1/3 Cs)"
+        },
+        {
+          "label": "C",
+          "text": "ไม่เป็น sink condition ต้องเติม sodium lauryl sulfate เพื่อเพิ่มการละลาย",
+          "is_correct": false,
+          "explanation": "สภาวะนี้เป็น sink อยู่แล้ว การเติม SLS โดยไม่จำเป็นอาจลด discriminating power ของวิธีทดสอบ"
+        },
+        {
+          "label": "D",
+          "text": "ไม่เป็น sink condition เพราะต้องใช้ตัวกลาง 600 mL จึงจะทำให้ยาอิ่มตัว",
+          "is_correct": false,
+          "explanation": "600 mL ได้จากการคำนวณผิด (30 ÷ 0.05) ค่าที่ถูกคือ 30 ÷ 0.5 = 60 mL"
+        },
+        {
+          "label": "E",
+          "text": "จะเป็น sink condition ได้เฉพาะเมื่อใช้ Apparatus 4 (flow-through cell)",
+          "is_correct": false,
+          "explanation": "Apparatus 4 ช่วยรักษา sink สำหรับยาละลายน้อย แต่ไม่ใช่เงื่อนไขจำเป็น ระบบ basket/paddle 900 mL ในโจทย์นี้ก็เป็น sink แล้ว"
+        }
+      ],
+      "key_takeaway": "Sink condition (USP): V ตัวกลาง ≥ 3 × V อิ่มตัว (V อิ่มตัว = dose ÷ Cs); ไม่เป็น sink → เติม surfactant/ปรับ pH/ใช้ Apparatus 4",
+      "calculation_steps": [
+        "ขั้นที่ 1 ปริมาตรที่ทำให้ยาอิ่มตัว = 30 mg ÷ 0.5 mg/mL = 60 mL",
+        "ขั้นที่ 2 อัตราส่วนปริมาตร = 900 mL ÷ 60 mL = 15 เท่า (≥ 3 เท่า)",
+        "ขั้นที่ 3 ความเข้มข้นสุดท้ายเมื่อละลายหมด = 30 mg ÷ 900 mL = 0.033 mg/mL = 6.7% ของ Cs → เป็น sink condition"
+      ]
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "Pellets ยาเคลือบด้วย ethylcellulose aqueous dispersion (reservoir system) เพื่อทำเป็น extended release แต่ผล dissolution พบว่าปล่อยยาช้าเกินไป (ได้เพียง 40% ใน 12 ชั่วโมง ขณะที่เป้าหมายคือ ≥ 80%) การปรับสูตรข้อใดเหมาะสมที่สุดเพื่อเพิ่มอัตราการปลดปล่อย",
+    "choices": [
+      {
+        "label": "A",
+        "text": "เพิ่มความหนาของชั้นเคลือบ ethylcellulose"
+      },
+      {
+        "label": "B",
+        "text": "เติม pore former ที่ละลายน้ำ เช่น HPMC E5 หรือ PEG ลงในสารเคลือบ"
+      },
+      {
+        "label": "C",
+        "text": "เปลี่ยน ethylcellulose เป็น cellulose acetate และเจาะรูด้วยเลเซอร์"
+      },
+      {
+        "label": "D",
+        "text": "เพิ่มอุณหภูมิ curing ให้นานขึ้นเพื่อให้ฟิล์มรวมตัวสมบูรณ์"
+      },
+      {
+        "label": "E",
+        "text": "เปลี่ยนเป็นเคลือบด้วย Eudragit L100-55 แทน"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "ใน reservoir system อัตราการปลดปล่อยถูกควบคุมด้วยการแพร่ผ่านเยื่อ การเติม pore former ที่ละลายน้ำจะละลายออกเกิดช่องทางทำให้ยาแพร่ผ่านเร็วขึ้น",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. เติม pore former ที่ละลายน้ำ เช่น HPMC E5 หรือ PEG ลงในสารเคลือบ — Pore former ที่ละลายน้ำ (HPMC, PEG) สร้างช่องในฟิล์ม ethylcellulose ทำให้ยาแพร่ผ่านเยื่อเร็วขึ้น",
+      "reason": "ระบบ reservoir (membrane-controlled) ประกอบด้วยแกนยาหุ้มด้วยเยื่อพอลิเมอร์ที่ไม่ละลายน้ำ เช่น ethylcellulose หรือ Eudragit RS/RL ยาแพร่ผ่านเยื่อตามกฎของ Fick คือ dM/dt = (A·D·K·ΔC)/h โดย A คือพื้นที่ผิว D คือสัมประสิทธิ์การแพร่ K คือ partition coefficient ΔC คือความต่างของความเข้มข้น และ h คือความหนาของเยื่อ ถ้าแกนยามีความเข้มข้นอิ่มตัวคงที่ (constant activity source) การปลดปล่อยจะเป็นแบบ zero order การเพิ่มอัตราการปลดปล่อยทำได้โดยลดความหนาของเยื่อ (h) หรือเพิ่มการซึมผ่าน เช่น เติม pore former ที่ละลายน้ำ (HPMC low viscosity, PEG, lactose) ลงในสารเคลือบ เมื่อสัมผัสน้ำ pore former จะละลายออกเกิดช่องทางให้ยาแพร่ผ่าน อีกทางหนึ่งคือผสม Eudragit RL (ซึมผ่านได้มากกว่า RS เพราะมีหมู่ quaternary ammonium มากกว่า) ข้อควรระวังของ reservoir คือ ถ้าเยื่อแตก (จากการบดเคี้ยวหรือเคลือบไม่สมบูรณ์) จะเกิด dose dumping",
+      "choices": [
+        {
+          "label": "A",
+          "text": "เพิ่มความหนาของชั้นเคลือบ ethylcellulose",
+          "is_correct": false,
+          "explanation": "การเพิ่มความหนาของฟิล์ม (h เพิ่ม) จะลดอัตราการแพร่ ทำให้ปล่อยยาช้าลงไปอีก"
+        },
+        {
+          "label": "B",
+          "text": "เติม pore former ที่ละลายน้ำ เช่น HPMC E5 หรือ PEG ลงในสารเคลือบ",
+          "is_correct": true,
+          "explanation": "ถูกต้อง pore former ละลายออกเกิดช่องทางในฟิล์ม เพิ่มการซึมผ่านและอัตราการปลดปล่อย"
+        },
+        {
+          "label": "C",
+          "text": "เปลี่ยน ethylcellulose เป็น cellulose acetate และเจาะรูด้วยเลเซอร์",
+          "is_correct": false,
+          "explanation": "Cellulose acetate กับรูเจาะด้วยเลเซอร์เป็นการเปลี่ยนเป็นระบบ osmotic pump ซึ่งเป็นการเปลี่ยนแพลตฟอร์มทั้งหมด ไม่ใช่การปรับสูตรที่เหมาะสมสำหรับปัญหานี้"
+        },
+        {
+          "label": "D",
+          "text": "เพิ่มอุณหภูมิ curing ให้นานขึ้นเพื่อให้ฟิล์มรวมตัวสมบูรณ์",
+          "is_correct": false,
+          "explanation": "การ curing ให้สมบูรณ์ทำให้ฟิล์มรวมตัวแน่นขึ้น มักทำให้ปล่อยยาช้าลงและคงที่ ไม่ได้ช่วยเพิ่มอัตราการปลดปล่อย"
+        },
+        {
+          "label": "E",
+          "text": "เปลี่ยนเป็นเคลือบด้วย Eudragit L100-55 แทน",
+          "is_correct": false,
+          "explanation": "Eudragit L100-55 เป็นพอลิเมอร์ enteric ที่ละลายที่ pH ≥ 5.5 จะทำให้เป็น delayed release และปล่อยยาเร็วในลำไส้ ไม่ใช่ extended release"
+        }
+      ],
+      "key_takeaway": "Reservoir: dM/dt = ADKΔC/h → zero order เมื่อแกนอิ่มตัว; เพิ่มอัตรา = ลด h/เติม pore former/ผสม Eudragit RL; เยื่อแตก = dose dumping"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ยาเม็ด extended release มีข้อกำหนด dissolution: 1 ชั่วโมง 20–40%, 4 ชั่วโมง 45–70%, 8 ชั่วโมง ไม่น้อยกว่า 80% ในระดับ L1 (6 เม็ด) มีเม็ดหนึ่งปล่อยยา 43% ที่ 1 ชั่วโมง จึงทดสอบ L2 เพิ่มอีก 6 เม็ด ผลรวม 12 เม็ดเป็นดังนี้: 1 ชั่วโมง เฉลี่ย 33% (ช่วง 24–43%), 4 ชั่วโมง เฉลี่ย 58% (ช่วง 48–66%), 8 ชั่วโมง เฉลี่ย 91% (ช่วง 84–97%) ข้อสรุปตาม USP <711> Acceptance Table 2 คือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ผ่านที่ L1"
+      },
+      {
+        "label": "B",
+        "text": "ไม่ผ่าน เพราะมีเม็ดที่ปล่อยยาเกินช่วงที่ 1 ชั่วโมง"
+      },
+      {
+        "label": "C",
+        "text": "ต้องทดสอบ L3 เพราะมีเม็ดหนึ่งยังอยู่นอกช่วง"
+      },
+      {
+        "label": "D",
+        "text": "ผ่านที่ L2"
+      },
+      {
+        "label": "E",
+        "text": "ไม่ผ่าน เพราะค่าเฉลี่ยที่ 8 ชั่วโมงต้องไม่เกิน 90%"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "L2: ค่าเฉลี่ย 12 เม็ดอยู่ในช่วงทุกจุดเวลา ไม่มีเม็ดใดอยู่นอกช่วงเกิน 10% ของ labeled content (43% นอกช่วงเพียง 3%) และไม่มีเม็ดใดต่ำกว่าค่าที่จุดสุดท้ายเกิน 10% จึงผ่านที่ L2",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. ผ่านที่ L2 — ค่าเฉลี่ยอยู่ในช่วงและเม็ดที่ 43% เกินช่วงเพียง 3% (ไม่เกิน 10%) จึงผ่านที่ L2",
+      "reason": "เกณฑ์ยา extended release ตาม USP <711> Acceptance Table 2 มีสามระดับ L1 (6 หน่วย) ไม่มีหน่วยใดอยู่นอกช่วงที่กำหนดทุกจุดเวลา และไม่มีหน่วยใดน้อยกว่าค่าที่กำหนดที่เวลาสุดท้าย L2 (12 หน่วย) ค่าเฉลี่ยอยู่ในช่วงทุกจุดเวลาและไม่น้อยกว่าค่าที่กำหนดที่เวลาสุดท้าย ไม่มีหน่วยใดอยู่นอกช่วงเกิน 10% ของ labeled content และไม่มีหน่วยใดน้อยกว่าค่าที่เวลาสุดท้ายเกิน 10% ของ labeled content L3 (24 หน่วย) ค่าเฉลี่ยอยู่ในช่วงและไม่น้อยกว่าค่าที่กำหนดที่เวลาสุดท้าย ไม่เกิน 2 หน่วยที่อยู่นอกช่วงเกิน 10% และไม่มีหน่วยใดอยู่นอกช่วงเกิน 20% ไม่เกิน 2 หน่วยที่ต่ำกว่าค่าที่เวลาสุดท้ายเกิน 10% และไม่มีหน่วยใดต่ำกว่าเกิน 20% ในโจทย์นี้ L1 ไม่ผ่านเพราะ 43% อยู่นอกช่วง 20–40% ที่ L2 ค่าเฉลี่ยทุกจุดอยู่ในช่วง (33%, 58%, ≥ 80% คือ 91%) ค่าสูงสุดที่ 1 ชั่วโมงคือ 43% เกินขอบบน 3% ซึ่งไม่เกิน 10% ที่ 4 ชั่วโมงทุกเม็ดอยู่ในช่วง และที่ 8 ชั่วโมงทุกเม็ด ≥ 80% จึงผ่านที่ L2 การกำหนดจุดเวลาหลายจุดช่วยตรวจทั้ง dose dumping ในช่วงต้น (ขอบบน) และการปลดปล่อยไม่ครบในช่วงท้าย (ขอบล่าง)",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ผ่านที่ L1",
+          "is_correct": false,
+          "explanation": "L1 ต้องไม่มีหน่วยใดอยู่นอกช่วง แต่มีเม็ดที่ปล่อย 43% เกินขอบบน 40% จึงไม่ผ่าน L1"
+        },
+        {
+          "label": "B",
+          "text": "ไม่ผ่าน เพราะมีเม็ดที่ปล่อยยาเกินช่วงที่ 1 ชั่วโมง",
+          "is_correct": false,
+          "explanation": "การมีหน่วยอยู่นอกช่วงไม่ทำให้ไม่ผ่านทันที เกณฑ์ L2 ยอมให้อยู่นอกช่วงได้ไม่เกิน 10% ของ labeled content"
+        },
+        {
+          "label": "C",
+          "text": "ต้องทดสอบ L3 เพราะมีเม็ดหนึ่งยังอยู่นอกช่วง",
+          "is_correct": false,
+          "explanation": "ไม่ต้องทดสอบ L3 เพราะเกณฑ์ L2 ครบทุกข้อแล้ว การไป L3 จำเป็นเมื่อมีหน่วยที่นอกช่วงเกิน 10% หรือค่าเฉลี่ยไม่อยู่ในช่วง"
+        },
+        {
+          "label": "D",
+          "text": "ผ่านที่ L2",
+          "is_correct": true,
+          "explanation": "ถูกต้อง ค่าเฉลี่ยอยู่ในช่วงทุกจุด เม็ดที่ 43% เกินช่วงเพียง 3% และทุกเม็ดที่ 8 ชั่วโมง ≥ 80%"
+        },
+        {
+          "label": "E",
+          "text": "ไม่ผ่าน เพราะค่าเฉลี่ยที่ 8 ชั่วโมงต้องไม่เกิน 90%",
+          "is_correct": false,
+          "explanation": "ข้อกำหนดที่ 8 ชั่วโมงคือ \"ไม่น้อยกว่า 80%\" ไม่มีขีดจำกัดบน ค่า 91% จึงผ่าน"
+        }
+      ],
+      "key_takeaway": "ER (Table 2): L1 ทุกหน่วยอยู่ในช่วง; L2 เฉลี่ยในช่วง และไม่มีหน่วยนอกช่วง > 10%; L3 เฉลี่ยในช่วง ≤ 2 หน่วยนอกช่วง > 10% และไม่มีหน่วยนอกช่วง > 20%",
+      "calculation_steps": [
+        "ขั้นที่ 1 L1: 43% > ขอบบน 40% → ไม่ผ่าน L1",
+        "ขั้นที่ 2 L2 ค่าเฉลี่ย: 1 ชม. 33% (อยู่ใน 20–40%), 4 ชม. 58% (อยู่ใน 45–70%), 8 ชม. 91% (≥ 80%) → ผ่าน",
+        "ขั้นที่ 3 หน่วยเดี่ยว 1 ชม.: 43 − 40 = 3% นอกช่วง (≤ 10%); ต่ำสุด 24% อยู่ในช่วง → ผ่าน",
+        "ขั้นที่ 4 หน่วยเดี่ยว 4 ชม. 48–66% อยู่ในช่วง; 8 ชม. ต่ำสุด 84% ≥ 80% → ผ่านที่ L2"
+      ]
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "เปรียบเทียบ dissolution profile ของยาสามัญ (Test) กับยาต้นแบบ (Reference) ที่ 4 จุดเวลา (n = 12 เม็ดต่อผลิตภัณฑ์ CV อยู่ในเกณฑ์) ได้ค่าเฉลี่ยร้อยละที่ละลายดังนี้ Reference: 30, 55, 75, 90% และ Test: 25, 50, 70, 85% เมื่อคำนวณ similarity factor (f2) ได้ค่าประมาณเท่าใด และสรุปผลอย่างไร",
+    "choices": [
+      {
+        "label": "A",
+        "text": "f2 ≈ 65; profiles เหมือนกัน (similar)"
+      },
+      {
+        "label": "B",
+        "text": "f2 ≈ 35; profiles ไม่เหมือนกัน"
+      },
+      {
+        "label": "C",
+        "text": "f2 ≈ 65; profiles ไม่เหมือนกัน เพราะต้องมีค่า ≥ 75"
+      },
+      {
+        "label": "D",
+        "text": "f2 ≈ 50; อยู่ที่ขอบเขตพอดี ต้องทดสอบซ้ำ"
+      },
+      {
+        "label": "E",
+        "text": "f2 ≈ 25; profiles ไม่เหมือนกัน"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "ผลต่างทุกจุด = 5% ผลรวมกำลังสอง = 100 เฉลี่ย = 25 → f2 = 50·log[(1 + 25)^-0.5 × 100] = 50·log(19.61) ≈ 64.6 ซึ่ง ≥ 50 จึงถือว่าเหมือนกัน",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. f2 ≈ 65; profiles เหมือนกัน (similar) — f2 ≈ 64.6 ซึ่งอยู่ในช่วง 50–100 แสดงว่า dissolution profiles เหมือนกัน",
+      "reason": "Similarity factor คำนวณจาก f2 = 50 × log{[1 + (1/n)Σ(Rt − Tt)²]^-0.5 × 100} ค่า f2 อยู่ระหว่าง 0–100 โดย 100 คือเหมือนกันทุกจุด และ f2 = 50 เทียบได้กับผลต่างเฉลี่ยประมาณ 10% ทุกจุด เกณฑ์ยอมรับคือ f2 ≥ 50 (ช่วง 50–100) แสดงว่า profiles เหมือนกัน ในโจทย์นี้ผลต่างทุกจุดเท่ากับ 5% ผลรวมกำลังสอง = 4 × 25 = 100 เฉลี่ย 25 จึงได้ (1 + 25)^-0.5 = 0.1961 คูณ 100 = 19.61 log10(19.61) = 1.2925 คูณ 50 = 64.6 เงื่อนไขการใช้ f2 ตามแนวทาง FDA/EMA ได้แก่ ใช้อย่างน้อย 12 หน่วย ใช้อย่างน้อย 3 จุดเวลา (ไม่นับเวลา 0) สภาวะการทดสอบเหมือนกัน ใช้ได้ไม่เกิน 1 จุดหลังจากทั้งสองผลิตภัณฑ์ละลายถึง 85% และ CV ที่จุดเวลาแรก ๆ ไม่เกิน 20% ส่วนจุดอื่นไม่เกิน 10% ถ้าทั้งสองผลิตภัณฑ์ละลาย ≥ 85% ภายใน 15 นาที ถือว่าเหมือนกันโดยไม่ต้องคำนวณ f2 ค่า f2 ใช้สนับสนุนการเปลี่ยนแปลงหลังขึ้นทะเบียน (SUPAC) biowaiver ของความแรงอื่น และการเทียบยาสามัญ",
+      "choices": [
+        {
+          "label": "A",
+          "text": "f2 ≈ 65; profiles เหมือนกัน (similar)",
+          "is_correct": true,
+          "explanation": "ถูกต้อง f2 ≈ 64.6 ซึ่ง ≥ 50 จึงสรุปว่า profiles เหมือนกัน"
+        },
+        {
+          "label": "B",
+          "text": "f2 ≈ 35; profiles ไม่เหมือนกัน",
+          "is_correct": false,
+          "explanation": "ค่า 35 ไม่ตรงกับการคำนวณ ค่า f2 ต่ำกว่า 50 จะเกิดเมื่อผลต่างเฉลี่ยมากกว่าประมาณ 10%"
+        },
+        {
+          "label": "C",
+          "text": "f2 ≈ 65; profiles ไม่เหมือนกัน เพราะต้องมีค่า ≥ 75",
+          "is_correct": false,
+          "explanation": "ค่าที่คำนวณถูกแต่เกณฑ์ผิด เกณฑ์ยอมรับคือ f2 ≥ 50 ไม่ใช่ ≥ 75"
+        },
+        {
+          "label": "D",
+          "text": "f2 ≈ 50; อยู่ที่ขอบเขตพอดี ต้องทดสอบซ้ำ",
+          "is_correct": false,
+          "explanation": "f2 = 50 จะเกิดเมื่อผลต่างประมาณ 10% ทุกจุด แต่ที่นี่ผลต่างเพียง 5% จึงได้ f2 สูงกว่า 50"
+        },
+        {
+          "label": "E",
+          "text": "f2 ≈ 25; profiles ไม่เหมือนกัน",
+          "is_correct": false,
+          "explanation": "ค่า 25 ผิดจากการคำนวณ อาจเกิดจากการลืมคูณ 100 ก่อน log หรือใช้ผลรวมแทนค่าเฉลี่ย"
+        }
+      ],
+      "key_takeaway": "f2 = 50·log{[1 + (1/n)Σ(R−T)²]^-0.5 × 100}; f2 ≥ 50 = similar; ผลต่างเฉลี่ย 10% ≈ f2 50; ผลต่าง 5% ≈ f2 65",
+      "calculation_steps": [
+        "ขั้นที่ 1 ผลต่างแต่ละจุด (R − T) = 5, 5, 5, 5% → (R − T)² = 25, 25, 25, 25",
+        "ขั้นที่ 2 Σ(R − T)² = 100; (1/n)Σ = 100 ÷ 4 = 25",
+        "ขั้นที่ 3 (1 + 25)^-0.5 = 1/√26 = 1/5.099 = 0.1961; × 100 = 19.61",
+        "ขั้นที่ 4 f2 = 50 × log10(19.61) = 50 × 1.2925 = 64.6 ≥ 50 → similar"
+      ]
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ยา D ขนาดยาสูงสุด (highest single therapeutic dose) 500 mg มีค่าการละลายต่ำสุดในช่วง pH 1.2–6.8 ที่ 37 °C เท่ากับ 1.5 mg/mL และการศึกษาในมนุษย์พบว่าดูดซึมได้ 90% ของขนาดยา ตามหลัก ICH M9 ยา D จัดอยู่ใน BCS class ใด และมีสิทธิ์ขอ BCS-based biowaiver หรือไม่",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Class I; ขอ biowaiver ได้ถ้า dissolution rapid"
+      },
+      {
+        "label": "B",
+        "text": "Class III; ขอ biowaiver ได้ถ้า dissolution very rapid"
+      },
+      {
+        "label": "C",
+        "text": "Class I; ขอ biowaiver ได้ถ้า dissolution very rapid เท่านั้น"
+      },
+      {
+        "label": "D",
+        "text": "Class II; ไม่สามารถขอ BCS-based biowaiver ได้"
+      },
+      {
+        "label": "E",
+        "text": "Class IV; ไม่สามารถขอ biowaiver ได้"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "ปริมาตรที่ต้องใช้ละลายยา 500 mg = 500/1.5 ≈ 333 mL > 250 mL จึงเป็น low solubility ส่วนการดูดซึม 90% (≥ 85%) เป็น high permeability จึงเป็น Class II ซึ่ง ICH M9 ไม่ให้ biowaiver",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. Class II; ไม่สามารถขอ BCS-based biowaiver ได้ — Dose volume ≈ 333 mL (> 250 mL) = low solubility, ดูดซึม 90% = high permeability → BCS Class II ไม่มีสิทธิ์ biowaiver ตาม ICH M9",
+      "reason": "BCS แบ่งยาตาม solubility และ permeability ตาม ICH M9 ยาจะถือว่า highly soluble เมื่อขนาดยาสูงสุดละลายได้หมดในตัวกลางไม่เกิน 250 mL ตลอดช่วง pH 1.2–6.8 ที่ 37 ± 1 °C และถือว่า highly permeable เมื่อการดูดซึมในมนุษย์ ≥ 85% ของขนาดยา ในโจทย์นี้ dose volume = 500 mg ÷ 1.5 mg/mL = 333 mL ซึ่งเกิน 250 mL จึงเป็น low solubility ขณะที่การดูดซึม 90% เป็น high permeability ยา D จึงเป็น Class II (low solubility, high permeability) ICH M9 ให้ BCS-based biowaiver ได้เฉพาะ Class I และ Class III สำหรับ Class I ต้องมี dissolution แบบ rapid (≥ 85% ใน 30 นาที) หรือ very rapid (≥ 85% ใน 15 นาที) ใน 3 ตัวกลาง (pH 1.2, 4.5, 6.8) ปริมาตร ≤ 900 mL ด้วย paddle 50 rpm หรือ basket 100 rpm สำหรับ Class III ต้อง very rapid และสารช่วยต้องเหมือนกันเชิงคุณภาพและใกล้เคียงมากเชิงปริมาณ นอกจากนี้ยาที่มี narrow therapeutic index และยาที่ออกฤทธิ์ในช่องปาก/ดูดซึมทาง buccal ไม่เข้าข่าย ยา Class II ต้องทำการศึกษา bioequivalence ในมนุษย์ เพราะการดูดซึมถูกจำกัดด้วยการละลาย สูตรตำรับจึงมีผลต่อการดูดซึมสูง",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Class I; ขอ biowaiver ได้ถ้า dissolution rapid",
+          "is_correct": false,
+          "explanation": "ยาเป็น low solubility (dose volume 333 mL > 250 mL) จึงไม่ใช่ Class I"
+        },
+        {
+          "label": "B",
+          "text": "Class III; ขอ biowaiver ได้ถ้า dissolution very rapid",
+          "is_correct": false,
+          "explanation": "Class III คือ high solubility แต่ low permeability ยา D ดูดซึม 90% (high permeability) และละลายน้อย จึงไม่ใช่ Class III"
+        },
+        {
+          "label": "C",
+          "text": "Class I; ขอ biowaiver ได้ถ้า dissolution very rapid เท่านั้น",
+          "is_correct": false,
+          "explanation": "ยาไม่ใช่ Class I และสำหรับ Class I ICH M9 ยอมรับทั้ง rapid และ very rapid ไม่ใช่ very rapid เท่านั้น"
+        },
+        {
+          "label": "D",
+          "text": "Class II; ไม่สามารถขอ BCS-based biowaiver ได้",
+          "is_correct": true,
+          "explanation": "ถูกต้อง low solubility + high permeability = Class II ซึ่งไม่มีสิทธิ์ BCS-based biowaiver ตาม ICH M9"
+        },
+        {
+          "label": "E",
+          "text": "Class IV; ไม่สามารถขอ biowaiver ได้",
+          "is_correct": false,
+          "explanation": "Class IV คือทั้ง low solubility และ low permeability แต่ยา D ดูดซึม 90% จึงเป็น high permeability"
+        }
+      ],
+      "key_takeaway": "High solubility: dose ละลายใน ≤ 250 mL (pH 1.2–6.8); high permeability: ดูดซึม ≥ 85%; biowaiver ICH M9 ได้เฉพาะ Class I (rapid/very rapid) และ Class III (very rapid)",
+      "calculation_steps": [
+        "ขั้นที่ 1 Dose volume = 500 mg ÷ 1.5 mg/mL = 333.3 mL",
+        "ขั้นที่ 2 เทียบเกณฑ์ 333.3 mL > 250 mL → low solubility",
+        "ขั้นที่ 3 การดูดซึม 90% ≥ 85% → high permeability",
+        "ขั้นที่ 4 Low solubility + high permeability = BCS Class II → ไม่เข้าเกณฑ์ biowaiver ตาม ICH M9"
+      ]
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "ในการพัฒนายา extended release ทีมวิจัยหาความสัมพันธ์ระหว่าง mean dissolution time (MDT) จากการทดสอบในหลอดทดลอง กับ mean residence time (MRT) หรือ mean absorption time จากการศึกษาเภสัชจลนศาสตร์ ความสัมพันธ์นี้จัดเป็น IVIVC ระดับใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Level A"
+      },
+      {
+        "label": "B",
+        "text": "Level C"
+      },
+      {
+        "label": "C",
+        "text": "Level B"
+      },
+      {
+        "label": "D",
+        "text": "Multiple Level C"
+      },
+      {
+        "label": "E",
+        "text": "Level D"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Level B ใช้หลัก statistical moment analysis เปรียบเทียบ MDT in vitro กับ MRT หรือ MAT in vivo เป็นค่าเฉลี่ยเดียว จึงไม่สะท้อนรูปร่างของ profile",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. Level B — ความสัมพันธ์ MDT in vitro กับ MRT/MAT in vivo คือ IVIVC Level B",
+      "reason": "IVIVC (in vitro–in vivo correlation) ตาม FDA guidance แบ่งเป็นระดับต่าง ๆ Level A เป็นความสัมพันธ์แบบจุดต่อจุด (point-to-point) ระหว่างร้อยละที่ละลายในหลอดทดลองกับร้อยละที่ดูดซึม (fraction absorbed จาก deconvolution เช่นวิธี Wagner–Nelson หรือ Loo–Riegelman) เป็นระดับที่ให้ข้อมูลมากที่สุด และหน่วยงานกำกับดูแลยอมรับมากที่สุด ใช้ทำนาย plasma profile ทั้งหมด และใช้ขอ biowaiver สำหรับการเปลี่ยนแปลงบางอย่างได้ Level B ใช้ statistical moment โดยเปรียบเทียบ MDT in vitro กับ MRT หรือ mean absorption time in vivo แม้ใช้ข้อมูลทั้งหมด แต่ profile ต่างกันก็อาจให้ค่าเฉลี่ยเท่ากันได้ จึงไม่ใช้ในการขอ biowaiver Level C เป็นความสัมพันธ์แบบจุดเดียว ระหว่างค่าการละลายหนึ่งค่า (เช่น t50% หรือ % ที่ละลายที่ 4 ชั่วโมง) กับพารามิเตอร์ PK หนึ่งค่า (เช่น AUC หรือ Cmax) Multiple Level C เชื่อม PK parameter กับปริมาณที่ละลายหลายจุดเวลา อาจมีประโยชน์ใกล้เคียง Level A ส่วน Level D เป็นความสัมพันธ์เชิงคุณภาพ (rank order) ซึ่งไม่ใช้ในทางกฎหมาย",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Level A",
+          "is_correct": false,
+          "explanation": "Level A เป็นความสัมพันธ์แบบจุดต่อจุดระหว่าง % dissolved กับ % absorbed ไม่ใช่การเปรียบเทียบค่าเฉลี่ย MDT กับ MRT"
+        },
+        {
+          "label": "B",
+          "text": "Level C",
+          "is_correct": false,
+          "explanation": "Level C เป็นความสัมพันธ์ของค่าการละลายจุดเดียวกับ PK parameter ค่าเดียว เช่น % ละลายที่ 4 ชั่วโมงกับ Cmax"
+        },
+        {
+          "label": "C",
+          "text": "Level B",
+          "is_correct": true,
+          "explanation": "ถูกต้อง Level B เปรียบเทียบ MDT in vitro กับ MRT หรือ MAT in vivo ด้วย statistical moment"
+        },
+        {
+          "label": "D",
+          "text": "Multiple Level C",
+          "is_correct": false,
+          "explanation": "Multiple Level C เชื่อม PK parameter (AUC, Cmax) กับปริมาณที่ละลายหลายจุดเวลา ไม่ใช่การใช้ MDT/MRT"
+        },
+        {
+          "label": "E",
+          "text": "Level D",
+          "is_correct": false,
+          "explanation": "Level D เป็นความสัมพันธ์เชิงคุณภาพ (rank order) ใช้ช่วยพัฒนาสูตรเท่านั้น ไม่ใช่การเปรียบเทียบ MDT กับ MRT"
+        }
+      ],
+      "key_takeaway": "IVIVC: A = จุดต่อจุด (ดีที่สุด, ใช้ biowaiver ได้); B = MDT vs MRT/MAT; C = 1 จุด vs 1 PK parameter; Multiple C = หลายจุด; D = rank order"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ผู้ป่วยสูงอายุกลืนยาเม็ดลำบาก ญาติจึงขอให้เภสัชกรช่วยแนะนำการบดยา ยาข้อใดที่ห้ามบด (do not crush) มากที่สุด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Paracetamol 500 mg ชนิดเม็ดธรรมดา (uncoated)"
+      },
+      {
+        "label": "B",
+        "text": "Prednisolone 5 mg ชนิดเม็ดธรรมดา"
+      },
+      {
+        "label": "C",
+        "text": "Folic acid 5 mg ชนิดเม็ดธรรมดา"
+      },
+      {
+        "label": "D",
+        "text": "Calcium carbonate 1,250 mg ชนิดเม็ดเคี้ยว (chewable)"
+      },
+      {
+        "label": "E",
+        "text": "Nifedipine ชนิด osmotic push-pull (GITS) 30 mg"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "Nifedipine GITS เป็นระบบ osmotic extended release การบดทำลายเยื่อ semipermeable และระบบควบคุมการปลดปล่อย ทำให้ได้รับยาทั้งหมดในครั้งเดียว (dose dumping) เกิดความดันโลหิตต่ำรุนแรง",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. Nifedipine ชนิด osmotic push-pull (GITS) 30 mg — Nifedipine GITS เป็นระบบ osmotic ER การบดทำให้ยาออกมาทั้งหมดทันที (dose dumping)",
+      "reason": "ยาที่ห้ามบดได้แก่ 1) ยาออกฤทธิ์นาน (ER/SR/CR/XL/LA, OROS, matrix หรือ reservoir) เพราะการบดทำลายกลไกควบคุมการปลดปล่อย ทำให้ได้รับยาเกินขนาด (dose dumping) 2) ยาเคลือบ enteric เพราะยาอาจถูกกรดทำลายหรือระคายเคืองกระเพาะ 3) ยาที่ระคายเคืองเยื่อบุหรือมีรสขมมาก 4) ยาที่เป็นอันตรายต่อผู้บด เช่น ยาต้านมะเร็งหรือฮอร์โมนบางชนิด (teratogenic) และ 5) ยาอมใต้ลิ้นหรือยาเม็ดฟู่ที่ออกแบบให้ใช้เฉพาะวิธี Nifedipine GITS (push-pull osmotic) มีเปลือก cellulose acetate ซึ่งเป็นเยื่อ semipermeable รูเจาะด้วยเลเซอร์ ภายในมีชั้นยาและชั้นดัน (push layer) การบดทำให้ nifedipine ทั้ง 30 mg ถูกปล่อยออกทันที ความดันโลหิตลดลงฉับพลันและหัวใจเต้นเร็วสะท้อนกลับ นอกจากนี้ผู้ป่วยอาจเห็นเปลือกยาเปล่า (ghost tablet) ในอุจจาระ ซึ่งเป็นเรื่องปกติ เภสัชกรควรเลือกยาทางเลือก เช่น เปลี่ยนเป็นยารูปแบบน้ำ ยา IR ที่บดได้ (ปรับวิธีให้ยา) หรือยาในกลุ่มเดียวกันที่มีรูปแบบเหมาะสม",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Paracetamol 500 mg ชนิดเม็ดธรรมดา (uncoated)",
+          "is_correct": false,
+          "explanation": "Paracetamol เม็ดธรรมดาเป็น immediate release บดได้โดยไม่เปลี่ยนแปลงการปลดปล่อยยา"
+        },
+        {
+          "label": "B",
+          "text": "Prednisolone 5 mg ชนิดเม็ดธรรมดา",
+          "is_correct": false,
+          "explanation": "Prednisolone เม็ดธรรมดาบดผสมน้ำหรืออาหารได้ แม้มีรสขมเล็กน้อย"
+        },
+        {
+          "label": "C",
+          "text": "Folic acid 5 mg ชนิดเม็ดธรรมดา",
+          "is_correct": false,
+          "explanation": "Folic acid เม็ดธรรมดาบดได้ ไม่มีระบบควบคุมการปลดปล่อย"
+        },
+        {
+          "label": "D",
+          "text": "Calcium carbonate 1,250 mg ชนิดเม็ดเคี้ยว (chewable)",
+          "is_correct": false,
+          "explanation": "ยาเม็ดเคี้ยวออกแบบมาให้บดด้วยฟันอยู่แล้ว จึงบดได้"
+        },
+        {
+          "label": "E",
+          "text": "Nifedipine ชนิด osmotic push-pull (GITS) 30 mg",
+          "is_correct": true,
+          "explanation": "ถูกต้อง ระบบ osmotic ER การบดทำลายเยื่อควบคุมการปลดปล่อยทำให้เกิด dose dumping"
+        }
+      ],
+      "key_takeaway": "ห้ามบด: ER/SR/CR/XL/LA, OROS/GITS, enteric-coated, ยาระคายเคือง/รสขมจัด, ยาอันตรายต่อผู้บด, ยาอมใต้ลิ้น"
+    },
+    "difficulty": "easy"
+  },
+  {
+    "scenario": "ยาเม็ด hydrophilic matrix ที่ใช้ HPMC K15M (รูปทรงกระบอก) ทำการทดสอบ dissolution และนำข้อมูลช่วง Mt/M∞ ≤ 0.6 มา fit กับสมการ Korsmeyer–Peppas (Mt/M∞ = k·t^n) ได้ค่า n = 0.66 ข้อใดอธิบายกลไกการปลดปล่อยได้ถูกต้อง",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Fickian diffusion อย่างเดียว"
+      },
+      {
+        "label": "B",
+        "text": "Anomalous (non-Fickian) transport คือการแพร่ร่วมกับการพองตัว/กร่อนของพอลิเมอร์"
+      },
+      {
+        "label": "C",
+        "text": "Case II transport ให้การปลดปล่อยแบบ zero order"
+      },
+      {
+        "label": "D",
+        "text": "Super Case II transport"
+      },
+      {
+        "label": "E",
+        "text": "First-order release จากการละลายของยา"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "สำหรับรูปทรงกระบอก n ≈ 0.45 คือ Fickian diffusion, 0.45 < n < 0.89 คือ anomalous transport และ n ≈ 0.89 คือ Case II ค่า n = 0.66 จึงเป็น anomalous transport",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. Anomalous (non-Fickian) transport คือการแพร่ร่วมกับการพองตัว/กร่อนของพอลิเมอร์ — n = 0.66 อยู่ระหว่าง 0.45 และ 0.89 (รูปทรงกระบอก) = anomalous (non-Fickian) transport",
+      "reason": "สมการ Korsmeyer–Peppas (power law) Mt/M∞ = k·t^n ใช้กับข้อมูลช่วงแรกของการปลดปล่อย (ไม่เกินประมาณ 60%) ค่า n บ่งบอกกลไกการปลดปล่อยและขึ้นกับรูปทรงของระบบ สำหรับแผ่นบาง (thin film): n = 0.5 คือ Fickian และ n = 1.0 คือ Case II สำหรับทรงกระบอก: n = 0.45 คือ Fickian, 0.45 < n < 0.89 คือ anomalous และ n = 0.89 คือ Case II สำหรับทรงกลม: n = 0.43 และ 0.85 ตามลำดับ ค่าที่มากกว่าค่า Case II เรียกว่า Super Case II สำหรับ HPMC matrix เมื่อสัมผัสน้ำ HPMC จะดูดน้ำ เกิด glassy-to-rubbery transition และพองเป็น gel layer ยาแพร่ผ่าน gel (diffusion) ขณะที่ผิวนอกของ gel ค่อย ๆ กร่อน (erosion) การปลดปล่อยจึงเป็นผลรวมของทั้งสองกลไก ทำให้ได้ค่า n อยู่ระหว่างค่า Fickian และ Case II ยาที่ละลายน้ำได้ดีมักปล่อยด้วย diffusion เป็นหลัก (n ใกล้ 0.45) ส่วนยาที่ละลายน้ำน้อยมักปล่อยด้วย erosion (n สูงขึ้นเข้าใกล้ 0.89) การเพิ่ม viscosity grade หรือสัดส่วนของ HPMC ทำให้ gel แข็งแรงและปล่อยยาช้าลง",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Fickian diffusion อย่างเดียว",
+          "is_correct": false,
+          "explanation": "Fickian diffusion ของทรงกระบอกมี n ≈ 0.45 ค่า 0.66 สูงกว่ามาก จึงมีกลไกอื่นร่วมด้วย"
+        },
+        {
+          "label": "B",
+          "text": "Anomalous (non-Fickian) transport คือการแพร่ร่วมกับการพองตัว/กร่อนของพอลิเมอร์",
+          "is_correct": true,
+          "explanation": "ถูกต้อง 0.45 < n < 0.89 สำหรับทรงกระบอกคือ anomalous transport (diffusion + swelling/erosion)"
+        },
+        {
+          "label": "C",
+          "text": "Case II transport ให้การปลดปล่อยแบบ zero order",
+          "is_correct": false,
+          "explanation": "Case II (zero order, relaxation/erosion-controlled) สำหรับทรงกระบอกมี n ≈ 0.89 ค่า 0.66 จึงยังไม่ใช่ Case II"
+        },
+        {
+          "label": "D",
+          "text": "Super Case II transport",
+          "is_correct": false,
+          "explanation": "Super Case II มี n > 0.89 (ทรงกระบอก) ค่า 0.66 ต่ำกว่าเกณฑ์นี้"
+        },
+        {
+          "label": "E",
+          "text": "First-order release จากการละลายของยา",
+          "is_correct": false,
+          "explanation": "First-order เป็นแบบจำลองแยกต่างหาก (log ปริมาณยาที่เหลือเป็นเส้นตรงกับเวลา) ไม่ได้แปลผลจากค่า n ของ Korsmeyer–Peppas"
+        }
+      ],
+      "key_takeaway": "Korsmeyer–Peppas (ทรงกระบอก): n = 0.45 Fickian; 0.45–0.89 anomalous; 0.89 Case II (zero order); > 0.89 Super Case II; ใช้ข้อมูล ≤ 60%"
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "สูตรยาเม็ด propranolol HCl 80 mg ชนิด extended release ประกอบด้วย: propranolol HCl 80 mg, HPMC K100M 120 mg, microcrystalline cellulose 90 mg, lactose 50 mg, colloidal silicon dioxide 2 mg, magnesium stearate 3 mg ตอกด้วยวิธี direct compression หน้าที่หลักของ HPMC K100M ในสูตรนี้คือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Binder เพื่อเพิ่มความแข็งของเม็ด"
+      },
+      {
+        "label": "B",
+        "text": "Disintegrant ทำให้เม็ดแตกตัวเร็ว"
+      },
+      {
+        "label": "C",
+        "text": "Film coating ป้องกันความชื้น"
+      },
+      {
+        "label": "D",
+        "text": "Hydrophilic matrix former ที่พองเป็น gel layer ควบคุมการปลดปล่อยยา"
+      },
+      {
+        "label": "E",
+        "text": "Glidant ช่วยให้ผงไหลดี"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "HPMC เกรด viscosity สูง (K100M) ในสัดส่วนสูง (ประมาณ 35% ของน้ำหนักเม็ด) ทำหน้าที่เป็น hydrophilic matrix ที่พองเป็น gel layer ควบคุมการปลดปล่อยยาโดยการแพร่และการกร่อน",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: D. Hydrophilic matrix former ที่พองเป็น gel layer ควบคุมการปลดปล่อยยา — HPMC K100M ปริมาณสูงเป็น hydrophilic matrix former ที่สร้าง gel layer ควบคุมการปลดปล่อยยา",
+      "reason": "HPMC (hypromellose) เป็นพอลิเมอร์ที่นิยมที่สุดในการทำ hydrophilic matrix tablets ตัวอักษร K หมายถึงชนิดที่มีหมู่ methoxyl ประมาณ 19–24% และ hydroxypropyl ประมาณ 4–12% (HPMC 2208) ซึ่ง hydrate เร็ว เหมาะกับการทำ matrix ตัวเลขหลังตัวอักษรบอก viscosity ของสารละลาย 2% (K100M ≈ 100,000 mPa·s) เมื่อเม็ดยาสัมผัสน้ำ HPMC ที่ผิวจะ hydrate อย่างรวดเร็วกลายเป็น gel layer ซึ่งป้องกันไม่ให้น้ำเข้าไปเร็วเกินไปและเป็นเครื่องกีดขวางการแพร่ของยา ยาที่ละลายน้ำดี เช่น propranolol HCl จะแพร่ผ่าน gel เป็นหลัก ขณะที่ผิว gel ค่อย ๆ กร่อน ปริมาณ HPMC ที่ใช้ในการควบคุมการปลดปล่อยมักอยู่ประมาณ 20–40% หรือมากกว่า ในสูตรนี้ HPMC 120 mg จากน้ำหนักเม็ด 345 mg ≈ 35% MCC และ lactose เป็น diluent (lactose ที่ละลายน้ำช่วยเพิ่มอัตราการปลดปล่อย) colloidal silicon dioxide เป็น glidant และ magnesium stearate เป็น lubricant ข้อดีของ HPMC matrix คือผลิตง่ายด้วยการตอกตรง ต้นทุนต่ำ และมีความเสี่ยงต่อ dose dumping ต่ำ",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Binder เพื่อเพิ่มความแข็งของเม็ด",
+          "is_correct": false,
+          "explanation": "HPMC เกรด viscosity ต่ำ (เช่น E5) ใช้เป็น binder ใน wet granulation ได้ แต่ K100M ปริมาณสูงเช่นนี้มีบทบาทหลักในการควบคุมการปลดปล่อย"
+        },
+        {
+          "label": "B",
+          "text": "Disintegrant ทำให้เม็ดแตกตัวเร็ว",
+          "is_correct": false,
+          "explanation": "HPMC K100M ไม่ใช่ disintegrant แต่ทำหน้าที่ตรงข้าม คือเป็น gel ที่ทำให้เม็ดยาไม่แตกตัวและปล่อยยาช้า"
+        },
+        {
+          "label": "C",
+          "text": "Film coating ป้องกันความชื้น",
+          "is_correct": false,
+          "explanation": "ในสูตรนี้ HPMC ผสมอยู่ในเนื้อเม็ด (intragranular/matrix) ไม่ได้เป็นชั้นเคลือบ HPMC สำหรับเคลือบฟิล์มคือเกรด viscosity ต่ำ เช่น E5/E15"
+        },
+        {
+          "label": "D",
+          "text": "Hydrophilic matrix former ที่พองเป็น gel layer ควบคุมการปลดปล่อยยา",
+          "is_correct": true,
+          "explanation": "ถูกต้อง HPMC K100M ปริมาณสูงพองเป็น gel layer ควบคุมการปลดปล่อยด้วย diffusion และ erosion"
+        },
+        {
+          "label": "E",
+          "text": "Glidant ช่วยให้ผงไหลดี",
+          "is_correct": false,
+          "explanation": "Glidant ในสูตรนี้คือ colloidal silicon dioxide ไม่ใช่ HPMC"
+        }
+      ],
+      "key_takeaway": "HPMC K-series viscosity สูง (K4M, K15M, K100M) 20–40% = hydrophilic matrix (gel layer → diffusion + erosion); HPMC E5 = binder/film coat"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "Nifedipine เป็นยาที่ละลายน้ำได้น้อยมาก ผลิตเป็นยาเม็ด osmotic แบบ push-pull (GITS) ประกอบด้วยแกนสองชั้นคือ drug layer และ push layer หุ้มด้วยเยื่อ semipermeable ที่มีรูเจาะด้วยเลเซอร์ด้าน drug layer ส่วนประกอบหลักของ push layer คือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Cellulose acetate และ PEG"
+      },
+      {
+        "label": "B",
+        "text": "Polyethylene oxide มวลโมเลกุลสูงร่วมกับ sodium chloride"
+      },
+      {
+        "label": "C",
+        "text": "Ethylcellulose และ dibutyl sebacate"
+      },
+      {
+        "label": "D",
+        "text": "Eudragit L100 และ triethyl citrate"
+      },
+      {
+        "label": "E",
+        "text": "Microcrystalline cellulose และ croscarmellose sodium"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Push layer มี polyethylene oxide (PEO) มวลโมเลกุลสูงซึ่งพองตัวมากเมื่อดูดน้ำ ร่วมกับ osmotic agent (NaCl) ดึงน้ำเข้าผ่านเยื่อ ทำให้ชั้นดันขยายและดันสารแขวนตะกอนยาออกทางรูเจาะในอัตราคงที่",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: B. Polyethylene oxide มวลโมเลกุลสูงร่วมกับ sodium chloride — Push layer = polyethylene oxide มวลโมเลกุลสูง + NaCl (osmogen) ซึ่งพองดัน drug layer ออกทางรูเจาะ",
+      "reason": "ระบบ osmotic pump มีสองแบบหลัก แบบ elementary osmotic pump (EOP) ใช้กับยาที่ละลายน้ำได้ปานกลาง โดยแกนยาเป็นทั้งยาและ osmotic agent หุ้มด้วยเยื่อ semipermeable (cellulose acetate) ที่มีรูเจาะ น้ำซึมเข้าละลายยาและดันสารละลายออกทางรู ส่วนแบบ push-pull ใช้กับยาที่ละลายน้ำน้อยหรือละลายดีมาก แกนมีสองชั้น drug layer ประกอบด้วยยากับ PEO มวลโมเลกุลต่ำ (ช่วยแขวนตะกอนยา) และ push layer ประกอบด้วย PEO มวลโมเลกุลสูง (เช่น Polyox ประมาณ 5,000,000–7,000,000) กับ NaCl เป็น osmogen เมื่อน้ำซึมผ่านเยื่อเข้ามา push layer จะพองตัวและดัน drug suspension ออกทางรูเจาะด้านชั้นยา การปลดปล่อยจึงเป็นแบบ zero order เป็นส่วนใหญ่ ไม่ขึ้นกับ pH การบีบตัวของทางเดินอาหาร หรืออาหาร ข้อควรรู้ได้แก่ ห้ามบดหรือหัก เปลือกเปล่า (ghost tablet) จะถูกขับออกทางอุจจาระ และควรระวังในผู้ป่วยที่มีการตีบแคบของทางเดินอาหาร ตัวอย่างยาได้แก่ nifedipine GITS, methylphenidate OROS, glipizide GITS และ paliperidone ER",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Cellulose acetate และ PEG",
+          "is_correct": false,
+          "explanation": "Cellulose acetate (มักผสม PEG เป็น flux enhancer) เป็นส่วนประกอบของเยื่อ semipermeable ด้านนอก ไม่ใช่ push layer"
+        },
+        {
+          "label": "B",
+          "text": "Polyethylene oxide มวลโมเลกุลสูงร่วมกับ sodium chloride",
+          "is_correct": true,
+          "explanation": "ถูกต้อง PEO มวลโมเลกุลสูงพองตัวมาก และ NaCl สร้างแรงดัน osmotic ดึงน้ำเข้า ทำให้ชั้นดันขยายดันยาออก"
+        },
+        {
+          "label": "C",
+          "text": "Ethylcellulose และ dibutyl sebacate",
+          "is_correct": false,
+          "explanation": "Ethylcellulose กับ plasticizer dibutyl sebacate ใช้เป็นเยื่อของระบบ reservoir แบบแพร่ ไม่ใช่ชั้นดันของ osmotic pump"
+        },
+        {
+          "label": "D",
+          "text": "Eudragit L100 และ triethyl citrate",
+          "is_correct": false,
+          "explanation": "Eudragit L100 เป็นพอลิเมอร์ enteric (ละลายที่ pH ≥ 6) ใช้ทำ delayed release ไม่ใช่ชั้นดัน"
+        },
+        {
+          "label": "E",
+          "text": "Microcrystalline cellulose และ croscarmellose sodium",
+          "is_correct": false,
+          "explanation": "MCC และ croscarmellose เป็น diluent และ superdisintegrant ของยาเม็ด IR ไม่ใช่ส่วนประกอบของ push layer"
+        }
+      ],
+      "key_takeaway": "OROS push-pull: เยื่อ cellulose acetate + รูเจาะเลเซอร์; drug layer (ยา + PEO MW ต่ำ); push layer (PEO MW สูง + NaCl); zero order; ghost tablet; ห้ามบด"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "ยาเม็ด inert (insoluble) matrix ที่เตรียมจาก ethylcellulose ปลดปล่อยยาโดยการแพร่ผ่านช่องทางในโครงสร้างพอลิเมอร์ที่ไม่ละลาย และเป็นไปตามแบบจำลอง Higuchi (Q = k·√t) ถ้าที่ 1 ชั่วโมงยาถูกปลดปล่อย 20% คาดว่าที่ 9 ชั่วโมงจะปลดปล่อยยาได้กี่เปอร์เซ็นต์",
+    "choices": [
+      {
+        "label": "A",
+        "text": "100% (เพราะ 20% × 9 = 180% จึงปล่อยหมด)"
+      },
+      {
+        "label": "B",
+        "text": "86.6%"
+      },
+      {
+        "label": "C",
+        "text": "40%"
+      },
+      {
+        "label": "D",
+        "text": "6.7%"
+      },
+      {
+        "label": "E",
+        "text": "60%"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "Higuchi: Q ∝ √t; k = 20%/√1 h = 20%·h^-0.5 → ที่ 9 ชั่วโมง Q = 20 × √9 = 20 × 3 = 60%",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: E. 60% — ตามแบบจำลอง Higuchi Q = k√t: 20 × √9 = 60%",
+      "reason": "Inert หรือ insoluble matrix ทำจากพอลิเมอร์ที่ไม่ละลายน้ำ เช่น ethylcellulose, Eudragit RS/RL, polyvinyl acetate หรือไขมัน (สำหรับ lipid matrix) ยาที่ผิวละลายออกก่อน แล้วน้ำแทรกเข้าไปในช่องทาง (pores) ทำให้ยาที่อยู่ลึกขึ้นต้องแพร่ผ่านเส้นทางที่ยาวขึ้น อัตราการปลดปล่อยจึงลดลงตามเวลา Higuchi อธิบายว่าปริมาณยาที่ปล่อยต่อพื้นที่เป็นสัดส่วนกับรากที่สองของเวลา Q = k√t เมื่อนำมาคำนวณ k = 20/√1 = 20 ที่ 9 ชั่วโมง Q = 20 × √9 = 60% เปรียบเทียบกับแบบจำลองอื่น ถ้าเป็น zero order (Q = k0·t) จะได้ 20 × 9 = 180% ซึ่งเป็นไปไม่ได้ (จะปล่อยหมดที่ 5 ชั่วโมง) ถ้าเป็น first order (ปริมาณที่เหลือลดลงคงที่ 80% ต่อชั่วโมง) จะได้ 1 − 0.8^9 = 86.6% สมการ Higuchi ใช้ได้ดีในช่วงประมาณ 60% แรกของการปลดปล่อย การวิเคราะห์ทำได้โดย plot % released กับ √t ถ้าเป็นเส้นตรงแสดงว่าเป็น diffusion-controlled matrix เปลือกโครงสร้าง (ghost matrix) ของ inert matrix จะถูกขับออกทางอุจจาระโดยไม่เปลี่ยนแปลง",
+      "choices": [
+        {
+          "label": "A",
+          "text": "100% (เพราะ 20% × 9 = 180% จึงปล่อยหมด)",
+          "is_correct": false,
+          "explanation": "100% ได้จากการใช้ zero order (20% × 9) ซึ่งไม่ใช่แบบจำลองของ inert matrix ตาม Higuchi"
+        },
+        {
+          "label": "B",
+          "text": "86.6%",
+          "is_correct": false,
+          "explanation": "86.6% ได้จากแบบจำลอง first order (1 − 0.8^9) ไม่ใช่ Higuchi"
+        },
+        {
+          "label": "C",
+          "text": "40%",
+          "is_correct": false,
+          "explanation": "40% คือค่าที่ 4 ชั่วโมงตาม Higuchi (20 × √4) ไม่ใช่ค่าที่ 9 ชั่วโมง"
+        },
+        {
+          "label": "D",
+          "text": "6.7%",
+          "is_correct": false,
+          "explanation": "6.7% ได้จากการหารด้วย √9 (20 ÷ 3) แทนการคูณ ซึ่งกลับทิศของความสัมพันธ์ ปริมาณยาที่ปล่อยต้องเพิ่มขึ้นตามเวลา"
+        },
+        {
+          "label": "E",
+          "text": "60%",
+          "is_correct": true,
+          "explanation": "ถูกต้อง Q = 20 × √9 = 60% ตามแบบจำลอง Higuchi"
+        }
+      ],
+      "key_takeaway": "Zero order: Q = k0·t; first order: ln(ยาเหลือ) = ln(ยาเริ่มต้น) − k·t; Higuchi (matrix diffusion): Q = k·√t → เวลา ×9 ปริมาณยาที่ปล่อย ×3",
+      "calculation_steps": [
+        "ขั้นที่ 1 Higuchi: Q = k·√t → k = 20% ÷ √(1 h) = 20% h^-0.5",
+        "ขั้นที่ 2 ที่ t = 9 h: √9 = 3",
+        "ขั้นที่ 3 Q = 20% h^-0.5 × 3 h^0.5 = 60%",
+        "ขั้นที่ 4 (เปรียบเทียบ) zero order: 20 × 9 = 180% (เกิน 100%); first order: 1 − 0.8^9 = 1 − 0.134 = 86.6%"
+      ]
+    },
+    "difficulty": "hard"
+  },
+  {
+    "scenario": "ผู้ป่วยได้รับ opioid ชนิดแคปซูล extended release วันละครั้ง ญาติแจ้งว่าผู้ป่วยมักดื่มแอลกอฮอล์ในปริมาณมากตอนเย็นหลังรับประทานยา ความเสี่ยงสำคัญที่สุดทางเภสัชกรรมของรูปแบบยานี้ที่เภสัชกรควรเตือนคือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Alcohol-induced dose dumping คือระบบควบคุมการปลดปล่อยเสียหาย ยาออกมาเกือบทั้งหมดอย่างรวดเร็ว"
+      },
+      {
+        "label": "B",
+        "text": "แอลกอฮอล์ทำให้แคปซูลไม่ละลายจึงไม่ได้รับยา"
+      },
+      {
+        "label": "C",
+        "text": "แอลกอฮอล์ทำให้เปลือก enteric ละลายในกระเพาะ"
+      },
+      {
+        "label": "D",
+        "text": "แอลกอฮอล์ทำให้ยาตกตะกอนในทางเดินอาหารและดูดซึมลดลง"
+      },
+      {
+        "label": "E",
+        "text": "แอลกอฮอล์เปลี่ยนการปลดปล่อยยาให้เป็นแบบ zero order"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "พอลิเมอร์หรือสารควบคุมการปลดปล่อยบางชนิดละลายได้ในแอลกอฮอล์ ทำให้ยาที่ควรปล่อยในเวลา 24 ชั่วโมงถูกปล่อยออกมาในเวลาสั้น ได้รับยาเกินขนาด เช่นกรณี hydromorphone ER (Palladone) ที่ถูกถอนจากตลาด",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: A. Alcohol-induced dose dumping คือระบบควบคุมการปลดปล่อยเสียหาย ยาออกมาเกือบทั้งหมดอย่างรวดเร็ว — แอลกอฮอล์อาจทำลายระบบควบคุมการปลดปล่อยทำให้เกิด dose dumping ซึ่งอันตรายมากกับ opioid",
+      "reason": "Dose dumping คือการที่ยาในรูปแบบ modified release ถูกปลดปล่อยออกมาในปริมาณมากหรือทั้งหมดในเวลาสั้นโดยไม่ตั้งใจ ทำให้ระดับยาในเลือดสูงเกินจนเกิดพิษ โดยเฉพาะยาที่มี narrow therapeutic index หรือ opioid ที่อาจกดการหายใจ สาเหตุได้แก่ แอลกอฮอล์ (alcohol-induced dose dumping) อาหารไขมันสูง (food-induced) การบด เคี้ยว หรือหักยา และความบกพร่องในการผลิต เช่น เปลือกเคลือบบางเกินหรือแตก กรณีที่มีชื่อเสียงคือ hydromorphone ER capsules (Palladone) ซึ่ง FDA ให้ถอนจากตลาดในปี 2005 เพราะการดื่มแอลกอฮอล์ร่วมทำให้ Cmax ของ hydromorphone สูงขึ้นหลายเท่า ปัจจุบันหน่วยงานกำกับดูแลกำหนดให้ทดสอบ dissolution ของยา ER (โดยเฉพาะ opioid) ใน 0.1 N HCl ที่มี ethanol 5%, 20% และ 40% เพื่อประเมินความเสี่ยงนี้ ระบบที่ต้านทานแอลกอฮอล์ได้ดีมักใช้พอลิเมอร์ที่ไม่ละลายในแอลกอฮอล์ (เช่น HPMC matrix ร่วมกับสารช่วยบางชนิด หรือ PEO) เภสัชกรควรแนะนำให้หลีกเลี่ยงแอลกอฮอล์ กลืนยาทั้งเม็ด และไม่บดหรือเคี้ยว",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Alcohol-induced dose dumping คือระบบควบคุมการปลดปล่อยเสียหาย ยาออกมาเกือบทั้งหมดอย่างรวดเร็ว",
+          "is_correct": true,
+          "explanation": "ถูกต้อง แอลกอฮอล์อาจละลายพอลิเมอร์ที่ควบคุมการปลดปล่อย ทำให้ยาออกมาเกือบทั้งหมดเร็ว อันตรายจากภาวะกดการหายใจ"
+        },
+        {
+          "label": "B",
+          "text": "แอลกอฮอล์ทำให้แคปซูลไม่ละลายจึงไม่ได้รับยา",
+          "is_correct": false,
+          "explanation": "แอลกอฮอล์ไม่ได้ทำให้แคปซูลไม่ละลาย ปัญหาที่สำคัญกว่าคือการปล่อยยามากเกินไป"
+        },
+        {
+          "label": "C",
+          "text": "แอลกอฮอล์ทำให้เปลือก enteric ละลายในกระเพาะ",
+          "is_correct": false,
+          "explanation": "โจทย์ไม่ได้ระบุว่าเป็นยาเคลือบ enteric และความเสี่ยงหลักของยา ER คือการปล่อยยาทั้งหมดอย่างรวดเร็ว"
+        },
+        {
+          "label": "D",
+          "text": "แอลกอฮอล์ทำให้ยาตกตะกอนในทางเดินอาหารและดูดซึมลดลง",
+          "is_correct": false,
+          "explanation": "ความเสี่ยงที่ได้รับการยอมรับและเป็นอันตรายคือการได้รับยาเกินขนาด ไม่ใช่การดูดซึมลดลง"
+        },
+        {
+          "label": "E",
+          "text": "แอลกอฮอล์เปลี่ยนการปลดปล่อยยาให้เป็นแบบ zero order",
+          "is_correct": false,
+          "explanation": "แอลกอฮอล์ไม่ได้ทำให้การปลดปล่อยคงที่ขึ้น แต่ทำให้การควบคุมการปลดปล่อยเสียไป"
+        }
+      ],
+      "key_takeaway": "Dose dumping: แอลกอฮอล์/อาหารไขมันสูง/บดเคี้ยว/ข้อบกพร่องการเคลือบ; ตัวอย่าง Palladone (2005); ทดสอบ dissolution ใน ethanol 5–40%"
+    },
+    "difficulty": "medium"
+  },
+  {
+    "scenario": "การผลิต pellets ด้วยวิธี extrusion–spheronization สูตรประกอบด้วย ยา 20%, microcrystalline cellulose (Avicel PH-101) 80% และน้ำบริสุทธิ์ในปริมาณที่เหมาะสม หน้าที่สำคัญที่สุดของ MCC ในกระบวนการนี้คือข้อใด",
+    "choices": [
+      {
+        "label": "A",
+        "text": "เป็น superdisintegrant ทำให้ pellets แตกตัวเร็ว"
+      },
+      {
+        "label": "B",
+        "text": "เป็นสารเคลือบควบคุมการปลดปล่อย"
+      },
+      {
+        "label": "C",
+        "text": "เป็น extrusion–spheronization aid ที่ดูดและอุ้มน้ำ ทำให้ wet mass มีความเป็นพลาสติกพอดีสำหรับการอัดผ่านรูและการปั้นเป็นทรงกลม"
+      },
+      {
+        "label": "D",
+        "text": "เป็น lubricant ลดแรงเสียดทานในเครื่อง extruder"
+      },
+      {
+        "label": "E",
+        "text": "เป็นสารลดแรงตึงผิวช่วยให้ยาเปียกน้ำ"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "MCC ดูดและอุ้มน้ำได้มาก (เปรียบเสมือน molecular sponge) ทำให้ wet mass มี plasticity และ cohesiveness เหมาะกับการอัดผ่านรูเป็นแท่ง (extrudate) แล้วถูกตัดและกลิ้งเป็นทรงกลมบนจานหมุน",
+    "detailed_explanation": {
+      "summary": "คำตอบที่ถูกต้อง: C. เป็น extrusion–spheronization aid ที่ดูดและอุ้มน้ำ ทำให้ wet mass มีความเป็นพลาสติกพอดีสำหรับการอัดผ่านรูและการปั้นเป็นทรงกลม — MCC เป็น spheronization aid ที่อุ้มน้ำทำให้ wet mass มีความเป็นพลาสติกเหมาะกับ extrusion–spheronization",
+      "reason": "กระบวนการ extrusion–spheronization ประกอบด้วย 5 ขั้น คือ 1) ผสมผงแห้ง 2) เติมของเหลว (wet massing) 3) อัดผ่านรู (extrusion) ได้ extrudate เป็นแท่งยาวขนาดเส้นผ่านศูนย์กลางเท่ารู 4) spheronization บนจานหมุนที่มีผิวเป็นร่อง (friction plate) แท่งจะถูกตัดเป็นท่อนสั้น แล้วกลิ้งจนกลายเป็นทรงกลม และ 5) อบแห้ง ได้ pellets ขนาดประมาณ 0.5–1.5 mm มีความกลมสูง ขนาดสม่ำเสมอ และผิวเรียบ เหมาะสำหรับเคลือบฟิล์มต่อ MCC เป็นสารช่วยมาตรฐานของกระบวนการนี้ เพราะอุ้มน้ำได้มากและปล่อยน้ำออกอย่างช้า ๆ เมื่อถูกแรงอัด ทำให้ wet mass มีความเป็นพลาสติกและไม่ทำให้น้ำแยกตัวออก (ไม่เกิด water migration) ขณะผ่านรู ปริมาณน้ำมีความสำคัญมาก ถ้าน้ำน้อยจะได้ผงละเอียดและ pellets ไม่กลม ถ้าน้ำมากจะเกาะกันเป็นก้อน pellets ที่ได้เป็น multiparticulate ซึ่งกระจายตัวในทางเดินอาหารสม่ำเสมอ ลดความแปรปรวนจากการบีบตัวของกระเพาะ ลดความเสี่ยง dose dumping และการระคายเคืองเฉพาะที่ และสามารถผสม pellets ที่มีอัตราการปลดปล่อยต่างกันในแคปซูลเดียว วิธีอื่นในการผลิต pellets ได้แก่ drug layering บน sugar spheres หรือ MCC spheres และ hot-melt extrusion",
+      "choices": [
+        {
+          "label": "A",
+          "text": "เป็น superdisintegrant ทำให้ pellets แตกตัวเร็ว",
+          "is_correct": false,
+          "explanation": "MCC มีคุณสมบัติช่วยแตกตัวได้บ้างในยาเม็ด แต่ไม่ใช่ superdisintegrant และ pellets จาก MCC มักไม่แตกตัวแต่ปล่อยยาด้วยการแพร่"
+        },
+        {
+          "label": "B",
+          "text": "เป็นสารเคลือบควบคุมการปลดปล่อย",
+          "is_correct": false,
+          "explanation": "MCC อยู่ในเนื้อ pellets ไม่ได้เป็นชั้นเคลือบ การควบคุมการปลดปล่อยมักทำโดยเคลือบ ethylcellulose หรือ Eudragit ภายหลัง"
+        },
+        {
+          "label": "C",
+          "text": "เป็น extrusion–spheronization aid ที่ดูดและอุ้มน้ำ ทำให้ wet mass มีความเป็นพลาสติกพอดีสำหรับการอัดผ่านรูและการปั้นเป็นทรงกลม",
+          "is_correct": true,
+          "explanation": "ถูกต้อง MCC อุ้มน้ำและให้ความเป็นพลาสติกแก่ wet mass ทำให้อัดผ่านรูและปั้นเป็นทรงกลมได้ดี"
+        },
+        {
+          "label": "D",
+          "text": "เป็น lubricant ลดแรงเสียดทานในเครื่อง extruder",
+          "is_correct": false,
+          "explanation": "MCC ไม่ใช่ lubricant ในกระบวนการนี้ น้ำที่ MCC อุ้มไว้ช่วยในการไหลผ่านรู แต่หน้าที่หลักคือให้ plasticity"
+        },
+        {
+          "label": "E",
+          "text": "เป็นสารลดแรงตึงผิวช่วยให้ยาเปียกน้ำ",
+          "is_correct": false,
+          "explanation": "MCC ไม่ใช่สารลดแรงตึงผิว ถ้าต้องการช่วยการเปียกต้องเติม surfactant เช่น SLS หรือ polysorbate"
+        }
+      ],
+      "key_takeaway": "Extrusion–spheronization: dry mix → wet mass → extrude → spheronize → dry; MCC = molecular sponge/spheronization aid; pellets 0.5–1.5 mm"
+    },
+    "difficulty": "medium"
+  }
+]
