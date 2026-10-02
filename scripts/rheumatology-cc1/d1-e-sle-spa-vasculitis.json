@@ -1,0 +1,1037 @@
+{
+  "exam_day": 1,
+  "questions": [
+    {
+      "scenario": "ผู้ป่วยชายอายุ 58 ปี น้ำหนัก 65 kg มาด้วยไข้ น้ำมูกปนเลือดเรื้อรัง ไอเป็นเลือด ภาพรังสีทรวงอกพบ cavitary nodules หลายตำแหน่ง serum creatinine เพิ่มจาก 1.0 เป็น 3.2 mg/dL ภายใน 3 สัปดาห์ ปัสสาวะพบ RBC casts ผล PR3-ANCA positive และ renal biopsy พบ pauci-immune crescentic glomerulonephritis ได้รับการวินิจฉัย granulomatosis with polyangiitis (GPA) ชนิดรุนแรงคุกคามอวัยวะ ผลคัดกรอง HBV และ TB ลบ การรักษา induction ที่เหมาะสมที่สุดคือข้อใด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Methotrexate 20–25 mg/สัปดาห์ ร่วมกับ prednisolone"
+        },
+        {
+          "label": "B",
+          "text": "Rituximab (375 mg/m² สัปดาห์ละครั้ง × 4 ครั้ง หรือ 1 g × 2 ครั้งห่างกัน 2 สัปดาห์) ร่วมกับ IV methylprednisolone pulse แล้วตามด้วย prednisolone แบบลดขนาดเร็ว"
+        },
+        {
+          "label": "C",
+          "text": "Prednisolone 1 mg/kg/วัน เดี่ยว ๆ แล้วค่อยเพิ่ม immunosuppressant หากไม่ตอบสนองใน 3 เดือน"
+        },
+        {
+          "label": "D",
+          "text": "Azathioprine 2 mg/kg/วัน ร่วมกับ prednisolone"
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "medium",
+      "explanation": "GPA ชนิดรุนแรง (ไตอักเสบแบบ crescentic + ปอด) ต้อง induction ด้วย glucocorticoid ร่วมกับ rituximab หรือ cyclophosphamide เสมอ — rituximab ได้ผลไม่ด้อยกว่า cyclophosphamide (RAVE) และนิยมกว่าใน PR3-ANCA และผู้ที่อยากรักษาภาวะเจริญพันธุ์",
+      "detailed_explanation": {
+        "summary": "GPA ชนิดรุนแรง (ไตอักเสบแบบ crescentic + ปอด) ต้อง induction ด้วย glucocorticoid ร่วมกับ rituximab หรือ cyclophosphamide เสมอ — rituximab ได้ผลไม่ด้อยกว่า cyclophosphamide (RAVE) และนิยมกว่าใน PR3-ANCA และผู้ที่อยากรักษาภาวะเจริญพันธุ์",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วย GPA ที่มี rapidly progressive glomerulonephritis ร่วมกับ cavitary lung nodules และไอเป็นเลือด ถือเป็นโรคชนิด organ- หรือ life-threatening โจทย์ต้องการให้เลือก regimen ช่วง induction (3–6 เดือนแรก) ของ ANCA-associated vasculitis (AAV)\n\nหลักการ/กลไกเชิงลึก: AAV เป็น necrotizing small-vessel vasculitis ที่มี immune complex น้อย (pauci-immune) ANCA ต่อ PR3/MPO กระตุ้น neutrophil ให้ degranulate และสร้าง NETs ทำลายผนังหลอดเลือด โดยมี C5a (ผ่าน C5aR) ขยายวงจร B cell เป็นต้นกำเนิด ANCA rituximab (anti-CD20) จึงตรงเป้า ส่วน cyclophosphamide เป็น alkylating agent ที่ได้ผลแต่พิษต่อรังไข่/อัณฑะและกระเพาะปัสสาวะ glucocorticoid ใช้ดับการอักเสบเร็วระหว่างรอยาหลักออกฤทธิ์\n\nทำไมข้อ B ถูก: rituximab 375 mg/m² × 4 สัปดาห์ (หรือ 1 g × 2 ครั้ง) ร่วมกับ methylprednisolone pulse แล้วต่อด้วย prednisolone แบบ reduced-dose เป็น regimen มาตรฐานของ AAV รุนแรงทั้งแบบ new-onset และ relapse การศึกษา RAVE พบ rituximab ไม่ด้อยกว่า cyclophosphamide และเหนือกว่าใน relapsing disease/PR3-ANCA\n\nหลักฐานและแนวทางเวชปฏิบัติ: ACR/VF 2021 แนะนำ rituximab มากกว่า cyclophosphamide สำหรับ induction ใน GPA/MPA ชนิดรุนแรง การศึกษา PEXIVAS แสดงว่า reduced-dose glucocorticoid regimen ไม่ด้อยกว่าขนาดมาตรฐานในผลไตวาย/เสียชีวิต แต่ลดการติดเชื้อรุนแรง และ plasma exchange ไม่ใช้เป็นประจำ การศึกษา ADVOCATE แสดงว่า avacopan (C5a receptor antagonist 30 mg วันละ 2 ครั้ง) ใช้แทน prednisolone taper ได้ โดย sustained remission ที่ 52 สัปดาห์ดีกว่าและลดพิษจาก steroid (EULAR 2022 แนะนำเป็นส่วนหนึ่งของ induction)\n\nการประยุกต์กับผู้ป่วยจริง: ก่อนให้ rituximab คัดกรอง HBV, TB, IgG พื้นฐาน ให้ premedication (paracetamol, antihistamine, methylprednisolone) เริ่ม infusion ช้าแล้วค่อยเพิ่มอัตรา ให้ TMP-SMX ป้องกัน PJP (ปรับตามไต) และป้องกันกระดูกพรุนจาก steroid คำแนะนำ: ‘มีไข้ หนาวสั่น ผื่น แน่นหน้าอกระหว่างให้ยาให้บอกพยาบาลทันที หลังได้ยาถ้ามีไข้ ไอ เหนื่อยให้รีบมา’ หลัง remission ต้องให้ maintenance ด้วย rituximab 500 mg ทุก 6 เดือน (MAINRITSAN)\n\nการติดตามและสัญญาณอันตราย: ติดตาม creatinine, urinalysis และ CBC ทุก 1–2 สัปดาห์ช่วงแรก IgG ก่อนแต่ละรอบ (hypogammaglobulinemia) late-onset neutropenia และ PML ซึ่งพบน้อยแต่รุนแรง ไอเป็นเลือดมากขึ้นหรือหายใจลำบากอาจเป็น diffuse alveolar hemorrhage ซึ่งเป็นภาวะฉุกเฉิน ไม่ปรับยาตามระดับ ANCA เพียงอย่างเดียว\n\nจุดที่มักสับสนและกับดักข้อสอบ: MTX ใช้ induction ได้เฉพาะ GPA ชนิด non-severe และต้องการไตปกติ azathioprine เป็นยา maintenance ไม่ใช่ induction steroid เดี่ยวมีอัตราตายสูงมากในยุคก่อน cyclophosphamide ไม่ควรรอ 3 เดือน avacopan เป็นยาเสริมลด steroid ไม่ได้แทน rituximab/cyclophosphamide\n\nสรุปท่องสอบ: AAV รุนแรง (ไต ปอด เลือดออกในถุงลม เส้นประสาท) → glucocorticoid (pulse แล้ว reduced-dose ตาม PEXIVAS) + rituximab หรือ cyclophosphamide ± avacopan; non-severe → MTX/MMF + steroid; maintenance → rituximab q6 เดือน > azathioprine",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Methotrexate 20–25 mg/สัปดาห์ ร่วมกับ prednisolone",
+            "explanation": "✗ ผิด — MTX ร่วมกับ steroid ใช้เป็น induction ได้เฉพาะ GPA ชนิด non-severe ที่ไม่มีอวัยวะสำคัญถูกคุกคาม และ MTX ถูกขับทางไตจึงไม่ควรใช้เมื่อไตเสื่อมรุนแรงเช่นรายนี้ (creatinine 3.2 mg/dL, eGFR ต่ำกว่า 30) ข้อนี้จะถูกในผู้ป่วย GPA ที่มีเพียงไซนัสอักเสบ ข้ออักเสบหรือ nodules ที่ไม่มี cavitation ไตปกติ หรือใช้เป็น maintenance ในผู้ที่ไตดี"
+          },
+          {
+            "label": "B",
+            "text": "Rituximab (375 mg/m² สัปดาห์ละครั้ง × 4 ครั้ง หรือ 1 g × 2 ครั้งห่างกัน 2 สัปดาห์) ร่วมกับ IV methylprednisolone pulse แล้วตามด้วย prednisolone แบบลดขนาดเร็ว",
+            "explanation": "✓ ถูก — rituximab (375 mg/m² × 4 หรือ 1 g × 2) ร่วมกับ methylprednisolone pulse และ prednisolone แบบ reduced-dose เป็น induction มาตรฐานของ GPA/MPA ชนิดรุนแรงตาม ACR/VF 2021, EULAR 2022, KDIGO 2024 ไม่ด้อยกว่า cyclophosphamide (RAVE) เหนือกว่าใน PR3-ANCA/relapse และไม่ทำลายรังไข่/อัณฑะ อาจเพิ่ม avacopan เพื่อลดขนาด steroid"
+          },
+          {
+            "label": "C",
+            "text": "Prednisolone 1 mg/kg/วัน เดี่ยว ๆ แล้วค่อยเพิ่ม immunosuppressant หากไม่ตอบสนองใน 3 เดือน",
+            "explanation": "✗ ผิด — glucocorticoid เดี่ยวควบคุม AAV รุนแรงไม่ได้ อัตราตายสูงและไตจะเสียถาวรระหว่างรอ การรอ 3 เดือนจึงไม่เหมาะ ต้องเริ่ม rituximab หรือ cyclophosphamide ทันที steroid เดี่ยวใช้ได้ในบางภาวะ เช่น PMR, GCA (ร่วมกับ tocilizumab ได้) หรือ EGPA ที่ไม่รุนแรงในระยะแรก แต่ไม่ใช่ GPA ที่มี crescentic glomerulonephritis"
+          },
+          {
+            "label": "D",
+            "text": "Azathioprine 2 mg/kg/วัน ร่วมกับ prednisolone",
+            "explanation": "✗ ผิด — azathioprine ออกฤทธิ์ช้าและไม่มีหลักฐานเพียงพอในการ induction โรครุนแรง บทบาทหลักคือ maintenance หลัง remission (เช่น หลัง cyclophosphamide ตาม CYCAZAREM) แม้ rituximab ทุก 6 เดือนจะดีกว่าตาม MAINRITSAN ข้อนี้จะถูกหากถามถึงยา maintenance ในผู้ป่วยที่ใช้ rituximab ไม่ได้ หรือผู้ที่ต้องการยาที่ใช้ได้ระหว่างตั้งครรภ์"
+          }
+        ],
+        "key_takeaway": "ANCA vasculitis รุนแรง = steroid + (rituximab หรือ cyclophosphamide); MTX/AZA ไว้ non-severe หรือ maintenance"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 24 ปี เป็น SLE ตรวจพบ proteinuria 2.8 g/วัน ผล renal biopsy เป็น lupus nephritis class IV ผู้ป่วยยังไม่มีบุตรและต้องการมีบุตรในอนาคต ปัจจุบันได้ HCQ 200 mg/วัน การรักษา induction ที่เหมาะสมที่สุดคือข้อใด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Mycophenolate mofetil 2–3 g/วัน ร่วมกับ IV methylprednisolone pulse แล้วตามด้วย prednisolone และค่อย ๆ ลดขนาด"
+        },
+        {
+          "label": "B",
+          "text": "Cyclophosphamide IV 0.5–1 g/m² เดือนละครั้ง 6 เดือน (NIH regimen) ร่วมกับ prednisolone"
+        },
+        {
+          "label": "C",
+          "text": "เพิ่ม HCQ เป็น 400 mg/วัน เดี่ยว ๆ โดยไม่ต้องใช้ immunosuppressant"
+        },
+        {
+          "label": "D",
+          "text": "Azathioprine 2 mg/kg/วัน เป็น induction เดี่ยว"
+        }
+      ],
+      "correct_answer": "A",
+      "difficulty": "medium",
+      "explanation": "Lupus nephritis class IV ในหญิงที่ยังอยากมีบุตร ควร induction ด้วย MMF 2–3 g/วัน ร่วมกับ methylprednisolone pulse แล้วตามด้วย prednisolone ลดขนาด เพื่อหลีกเลี่ยงพิษต่อรังไข่จาก cyclophosphamide ขนาดสูง",
+      "detailed_explanation": {
+        "summary": "Lupus nephritis class IV ในหญิงที่ยังอยากมีบุตร ควร induction ด้วย MMF 2–3 g/วัน ร่วมกับ methylprednisolone pulse แล้วตามด้วย prednisolone ลดขนาด เพื่อหลีกเลี่ยงพิษต่อรังไข่จาก cyclophosphamide ขนาดสูง",
+        "reason": "โจทย์ถามอะไร: หญิงอายุ 24 ปีเป็น lupus nephritis (LN) class IV (diffuse proliferative) proteinuria 2.8 g/วัน ซึ่งเป็น LN ชนิดที่ต้องให้ immunosuppressive induction ทุกราย โจทย์เพิ่มเงื่อนไขสำคัญคือ ‘ยังไม่มีบุตรและต้องการมีบุตรในอนาคต’ จึงต้องเลือก regimen ที่ได้ผลเท่ากันแต่ไม่ทำลายรังไข่\n\nหลักการ/กลไกเชิงลึก: LN class III/IV เกิดจาก immune complex กระตุ้น complement และ inflammatory cell MMF เป็น prodrug ของ mycophenolic acid ยับยั้ง inosine monophosphate dehydrogenase (IMPDH) แบบ reversible ซึ่ง lymphocyte ต้องพึ่ง de novo purine synthesis จึงยับยั้ง T/B cell ค่อนข้างจำเพาะ ไม่เป็น alkylating agent จึงไม่ทำลาย oocyte ต่างจาก cyclophosphamide ที่ทำให้เกิด premature ovarian failure ตามขนาดสะสมและอายุ\n\nทำไมข้อ A ถูก: การศึกษา ALMS พบว่า MMF 3 g/วันให้อัตราตอบสนองที่ 24 สัปดาห์ไม่ต่างจาก IV cyclophosphamide (NIH) และมีแนวโน้มดีกว่าในผู้ป่วยเชื้อสายเอเชียและแอฟริกัน ร่วมกับ methylprednisolone pulse แล้ว prednisolone 0.3–0.5 mg/kg/วัน ลดลงจนเหลือ ≤5–7.5 mg/วันภายใน 3–6 เดือน จึงเป็นทางเลือกที่มีประสิทธิภาพเท่ากันและรักษาภาวะเจริญพันธุ์ได้\n\nหลักฐานและแนวทางเวชปฏิบัติ: EULAR 2023 และ KDIGO 2024 ระบุ MMF หรือ low-dose IV cyclophosphamide (Euro-Lupus 500 mg ทุก 2 สัปดาห์ × 6 ครั้ง) เป็นตัวเลือก induction โดยอาจเพิ่ม belimumab (BLISS-LN) หรือ calcineurin inhibitor เช่น voclosporin (AURORA) เป็น combination therapy ในผู้ป่วยบางกลุ่ม NIH regimen ขนาดสูง (0.5–1 g/m² รายเดือน × 6) ถูกสงวนไว้สำหรับโรครุนแรงมากหรือดื้อต่อการรักษา\n\nการประยุกต์กับผู้ป่วยจริง: เริ่ม MMF 500 mg–1 g วันละ 2 ครั้งแล้วเพิ่มจนถึง 1–1.5 g วันละ 2 ครั้งภายใน 2–4 สัปดาห์เพื่อลดอาการทางทางเดินอาหาร ให้ ACEI/ARB เพื่อลด proteinuria คำแนะนำสำคัญ: ‘ยานี้ทำให้ทารกพิการได้ ต้องคุมกำเนิดอย่างมีประสิทธิภาพตลอดที่ใช้ยาและ 6 สัปดาห์หลังหยุด ถ้าจะตั้งครรภ์ให้ปรึกษาแพทย์ล่วงหน้าเพื่อเปลี่ยนยา’\n\nการติดตามและสัญญาณอันตราย: ติดตาม UPCR, creatinine, urinalysis, C3/C4, anti-dsDNA และ CBC ทุก 2–4 สัปดาห์ช่วงแรก เป้าหมายคือลด proteinuria ≥25% ที่ 3 เดือน ≥50% ที่ 6 เดือน และ UPCR <0.5–0.7 g/g ที่ 12 เดือน (complete renal response) อาการไม่พึงประสงค์ของ MMF ได้แก่ ท้องเสีย leukopenia การติดเชื้อ หากไข้ ไอ ปัสสาวะออกน้อย บวมมากขึ้นต้องรีบมาพบแพทย์\n\nจุดที่มักสับสนและกับดักข้อสอบ: cyclophosphamide ไม่ได้ ‘ห้าม’ ในหญิงวัยเจริญพันธุ์เสมอ — Euro-Lupus ขนาดต่ำยังเป็นทางเลือก แต่ข้อ B เป็น NIH ขนาดสูง HCQ เดี่ยวไม่พอสำหรับ proliferative LN azathioprine ใช้เป็น maintenance หรือช่วงตั้งครรภ์ แต่ induction ด้อยกว่า อย่าลืมว่า MMF เองเป็น teratogen ต้องเปลี่ยนเป็น azathioprine ≥6 สัปดาห์ก่อนตั้งครรภ์\n\nสรุปท่องสอบ: LN III/IV → induction ด้วย MMF 2–3 g/วัน หรือ Euro-Lupus CYC + steroid pulse→taper ± belimumab/voclosporin + HCQ ทุกราย + ACEI/ARB; อยากมีบุตรเลือก MMF แต่ต้องคุมกำเนิดระหว่างใช้",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Mycophenolate mofetil 2–3 g/วัน ร่วมกับ IV methylprednisolone pulse แล้วตามด้วย prednisolone และค่อย ๆ ลดขนาด",
+            "explanation": "✓ ถูก — MMF 2–3 g/วัน ร่วมกับ methylprednisolone pulse แล้ว prednisolone ลดขนาด ได้ผล induction เทียบเท่า cyclophosphamide (ALMS) ไม่เป็นพิษต่อรังไข่ จึงเหมาะที่สุดกับหญิงที่ต้องการมีบุตรในอนาคต ต้องให้ HCQ ต่อ คุมกำเนิดอย่างมีประสิทธิภาพระหว่างใช้ MMF และอาจเพิ่ม belimumab หรือ voclosporin ตาม EULAR 2023/KDIGO 2024"
+          },
+          {
+            "label": "B",
+            "text": "Cyclophosphamide IV 0.5–1 g/m² เดือนละครั้ง 6 เดือน (NIH regimen) ร่วมกับ prednisolone",
+            "explanation": "✗ ผิด — NIH regimen (0.5–1 g/m² รายเดือน × 6) ได้ผลแต่ขนาดสะสมสูง เพิ่มความเสี่ยง premature ovarian failure, hemorrhagic cystitis, ติดเชื้อ และมะเร็ง ไม่ใช่ตัวเลือกแรกในหญิงอายุน้อยที่อยากมีบุตร ข้อนี้อาจเหมาะในโรครุนแรงมาก (crescent จำนวนมาก ไตเสื่อมเร็ว) ผู้ที่ไม่ตอบสนองต่อ MMF หรือมีปัญหาการรับประทานยาสม่ำเสมอ"
+          },
+          {
+            "label": "C",
+            "text": "เพิ่ม HCQ เป็น 400 mg/วัน เดี่ยว ๆ โดยไม่ต้องใช้ immunosuppressant",
+            "explanation": "✗ ผิด — HCQ เป็นยาพื้นฐานที่ต้องให้ทุกราย แต่ฤทธิ์ไม่พอควบคุม proliferative LN และขนาด 400 mg/วันอาจเกิน 5 mg/kg ในผู้ป่วยน้ำหนักน้อย การไม่ให้ immunosuppressant ทำให้ไตเสื่อมถาวร HCQ เดี่ยวเหมาะกับ SLE ที่มีอาการผิวหนังหรือข้อไม่รุนแรง หรือ LN class I/II ที่ proteinuria ต่ำร่วมกับการดูแลไตทั่วไป"
+          },
+          {
+            "label": "D",
+            "text": "Azathioprine 2 mg/kg/วัน เป็น induction เดี่ยว",
+            "explanation": "✗ ผิด — azathioprine มีหลักฐาน induction ด้อยกว่า MMF/CYC และมีอัตรา relapse สูงกว่า จึงไม่ใช่ induction ที่แนะนำใน class IV บทบาทหลักของ azathioprine คือ maintenance โดยเฉพาะในผู้ที่วางแผนตั้งครรภ์หรือกำลังตั้งครรภ์ หรือผู้ที่ทนผล GI ของ MMF ไม่ได้ ควรตรวจ TPMT/NUDT15 ก่อนเริ่มหากทำได้"
+          }
+        ],
+        "key_takeaway": "LN class III/IV + อยากมีบุตร → MMF 2–3 g/วัน + steroid (หลีกเลี่ยง NIH CYC ขนาดสูง)"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 35 ปี เป็น lupus nephritis ได้รับ cyclophosphamide IV ร่วมกับ mesna และให้สารน้ำอย่างเพียงพอ วัตถุประสงค์หลักของการให้ mesna คือข้อใด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ป้องกันภาวะรังไข่ล้มเหลวจาก cyclophosphamide"
+        },
+        {
+          "label": "B",
+          "text": "ป้องกันคลื่นไส้อาเจียนแบบ acute"
+        },
+        {
+          "label": "C",
+          "text": "จับกับ acrolein ในกระเพาะปัสสาวะเพื่อป้องกัน hemorrhagic cystitis"
+        },
+        {
+          "label": "D",
+          "text": "ป้องกัน Pneumocystis jirovecii pneumonia"
+        }
+      ],
+      "correct_answer": "C",
+      "difficulty": "easy",
+      "explanation": "Mesna (2-mercaptoethane sulfonate) จับกับ acrolein ซึ่งเป็น metabolite ของ cyclophosphamide ที่ถูกขับออกทางปัสสาวะ ทำให้หมดฤทธิ์ระคายเยื่อบุกระเพาะปัสสาวะ จึงป้องกัน hemorrhagic cystitis",
+      "detailed_explanation": {
+        "summary": "Mesna (2-mercaptoethane sulfonate) จับกับ acrolein ซึ่งเป็น metabolite ของ cyclophosphamide ที่ถูกขับออกทางปัสสาวะ ทำให้หมดฤทธิ์ระคายเยื่อบุกระเพาะปัสสาวะ จึงป้องกัน hemorrhagic cystitis",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วย lupus nephritis ที่ได้ IV cyclophosphamide ร่วมกับ mesna และ hydration โจทย์ต้องการทดสอบว่ารู้กลไกและวัตถุประสงค์ของ mesna ซึ่งเป็น uroprotective agent ไม่ใช่ยาป้องกันพิษอื่น ๆ ของ cyclophosphamide\n\nหลักการ/กลไกเชิงลึก: cyclophosphamide เป็น prodrug ถูก CYP2B6/2C19/3A4 ในตับเปลี่ยนเป็น 4-hydroxycyclophosphamide ซึ่งอยู่ในสมดุลกับ aldophosphamide แล้วแตกตัวเป็น phosphoramide mustard (ตัวออกฤทธิ์ alkylate DNA ทำให้ lymphocyte ตาย) และ acrolein acrolein ถูกขับออกทางปัสสาวะและสะสมในกระเพาะปัสสาวะ ทำลาย urothelium จนเกิด ulceration และ hemorrhage mesna เป็น thiol compound ที่ในเลือดอยู่ในรูป dimesna (ไม่มีฤทธิ์) เมื่อกรองผ่านไตจะถูก reduce กลับเป็น mesna อิสระในท่อไต กลุ่ม sulfhydryl จะจับกับ double bond ของ acrolein เกิด thioether ที่ไม่เป็นพิษ จึงออกฤทธิ์เฉพาะในทางเดินปัสสาวะและไม่ลดฤทธิ์ต้านการอักเสบของ cyclophosphamide\n\nทำไมข้อ C ถูก: วัตถุประสงค์ของ mesna คือป้องกัน hemorrhagic cystitis โดยจับ acrolein ในกระเพาะปัสสาวะ การให้สารน้ำอย่างเพียงพอและให้ผู้ป่วยปัสสาวะบ่อยช่วยลดความเข้มข้นและระยะเวลาที่ acrolein สัมผัสเยื่อบุ เป็นกลยุทธ์ที่ทำงานเสริมกัน\n\nหลักฐานและแนวทางเวชปฏิบัติ: mesna จำเป็นแน่นอนกับ ifosfamide และ cyclophosphamide ขนาดสูง (เช่น conditioning ก่อนปลูกถ่ายไขกระดูก) สำหรับ IV pulse ในโรคแพ้ภูมิตัวเอง แนวปฏิบัติในหลายสถาบันให้ mesna ร่วมกับ hydration โดยเฉพาะ NIH regimen ขนาดสูง แม้บางสถาบันใช้ hydration อย่างเดียวกับ Euro-Lupus ขนาดต่ำ ขนาดที่ใช้ทั่วไปคือ mesna รวมประมาณ 60–100% ของขนาด cyclophosphamide แบ่งให้ก่อนยาและที่ 4 และ 8 ชั่วโมงหลังยา\n\nการประยุกต์กับผู้ป่วยจริง: ให้ IV fluid หรือดื่มน้ำ 2–3 ลิตรในวันที่ได้ยาและวันถัดไป ปัสสาวะทุก 2–3 ชั่วโมง ไม่กลั้น และปัสสาวะก่อนนอน ให้ antiemetic (เช่น ondansetron) ป้องกันคลื่นไส้ ตรวจ CBC ที่ nadir ราว 10–14 วันหลังให้ยา ปรับขนาด cyclophosphamide ตาม eGFR และ WBC ให้ PJP prophylaxis คำแนะนำ: ‘ถ้าปัสสาวะเป็นเลือด แสบขัด ปวดท้องน้อย หรือมีไข้ให้รีบกลับมาโรงพยาบาล’\n\nการติดตามและสัญญาณอันตราย: ตรวจ urinalysis หา microscopic hematuria ก่อนให้ยาแต่ละครั้งและติดตามระยะยาว เพราะความเสี่ยงมะเร็งกระเพาะปัสสาวะสัมพันธ์กับขนาดสะสม (สูงขึ้นชัดเมื่อเกิน ~36 g) และอยู่ได้หลายปีหลังหยุดยา hematuria ที่ไม่อธิบายได้ต้องส่ง cystoscopy นอกจากนี้ติดตาม leukopenia ประจำเดือนขาด และ SIADH จากยาขนาดสูง\n\nจุดที่มักสับสนและกับดักข้อสอบ: mesna ไม่ช่วยป้องกัน ovarian failure (ใช้ GnRH agonist เช่น leuprolide), ไม่ใช่ antiemetic (ใช้ 5-HT3 antagonist) และไม่ป้องกัน PJP (ใช้ TMP-SMX) อย่าสับสน mesna กับ leucovorin (antidote ของ methotrexate) หรือ dexrazoxane (ป้องกัน cardiotoxicity ของ anthracycline) ตัวที่ทำให้เกิด cystitis คือ acrolein ไม่ใช่ phosphoramide mustard\n\nสรุปท่องสอบ: Cyclophosphamide → acrolein → hemorrhagic cystitis/มะเร็งกระเพาะปัสสาวะ → ป้องกันด้วย mesna + hydration + ปัสสาวะบ่อย + กินยาตอนเช้า (ถ้ารูปรับประทาน); ตรวจ urinalysis ตลอดชีวิต",
+        "choices": [
+          {
+            "label": "A",
+            "text": "ป้องกันภาวะรังไข่ล้มเหลวจาก cyclophosphamide",
+            "explanation": "✗ ผิด — mesna ไม่มีผลต่อรังไข่ การป้องกัน premature ovarian failure จาก cyclophosphamide ใช้ GnRH agonist (เช่น leuprolide) ก่อนแต่ละรอบ หรือเลือก regimen ขนาดต่ำ (Euro-Lupus) หรือ MMF แทน ข้อนี้จะเป็นคำตอบหากโจทย์ถามถึงวัตถุประสงค์ของการให้ GnRH agonist หรือการเก็บรักษาไข่ก่อนให้ยา"
+          },
+          {
+            "label": "B",
+            "text": "ป้องกันคลื่นไส้อาเจียนแบบ acute",
+            "explanation": "✗ ผิด — mesna ไม่มีฤทธิ์ต้านอาเจียน การป้องกันคลื่นไส้อาเจียนแบบ acute จาก cyclophosphamide ใช้ 5-HT3 antagonist เช่น ondansetron ± dexamethasone ข้อนี้จะเป็นคำตอบหากโจทย์ถามถึงยาที่ให้ก่อน cyclophosphamide เพื่อลดคลื่นไส้ ซึ่งเป็นอาการที่พบบ่อยในวันให้ยา"
+          },
+          {
+            "label": "C",
+            "text": "จับกับ acrolein ในกระเพาะปัสสาวะเพื่อป้องกัน hemorrhagic cystitis",
+            "explanation": "✓ ถูก — mesna ถูก reduce ในไตเป็นรูป free thiol แล้วจับกับ double bond ของ acrolein ในปัสสาวะได้ thioether ที่ไม่เป็นพิษ จึงป้องกัน hemorrhagic cystitis โดยไม่ลดฤทธิ์ของ phosphoramide mustard ใช้ร่วมกับการให้สารน้ำเพียงพอและปัสสาวะบ่อยเพื่อลดเวลาที่ acrolein สัมผัสเยื่อบุกระเพาะปัสสาวะ"
+          },
+          {
+            "label": "D",
+            "text": "ป้องกัน Pneumocystis jirovecii pneumonia",
+            "explanation": "✗ ผิด — mesna ไม่มีฤทธิ์ต้านเชื้อ การป้องกัน Pneumocystis jirovecii pneumonia ใช้ TMP-SMX (เช่น 1 SS วันละครั้งหรือ 1 DS สามวันต่อสัปดาห์) หรือ dapsone/atovaquone หากแพ้ sulfa ข้อนี้จะเป็นคำตอบหากโจทย์ถามถึงวัตถุประสงค์ของ TMP-SMX ในผู้ป่วยที่ได้ cyclophosphamide ร่วมกับ steroid ขนาดสูง"
+          }
+        ],
+        "key_takeaway": "Mesna = จับ acrolein ปกป้องกระเพาะปัสสาวะ (ร่วมกับดื่มน้ำมาก ปัสสาวะบ่อย)"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 30 ปี เป็น lupus nephritis class IV ปัจจุบันโรคสงบมา 12 เดือน ได้ mycophenolate mofetil 1 g วันละ 2 ครั้ง, prednisolone 5 mg/วัน และ HCQ 200 mg/วัน ผู้ป่วยวางแผนตั้งครรภ์ภายใน 6 เดือน การปรับยาที่เหมาะสมที่สุดคือข้อใด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ใช้ MMF ต่อได้เพราะโรคสงบดีและขนาดยาต่ำ"
+        },
+        {
+          "label": "B",
+          "text": "หยุดยาทุกตัวรวมถึง HCQ ก่อนตั้งครรภ์อย่างน้อย 3 เดือน"
+        },
+        {
+          "label": "C",
+          "text": "เปลี่ยน MMF เป็น methotrexate 15 mg/สัปดาห์"
+        },
+        {
+          "label": "D",
+          "text": "เปลี่ยน MMF เป็น azathioprine และหยุด MMF อย่างน้อย 6 สัปดาห์ก่อนตั้งครรภ์ โดยให้ HCQ ต่อ"
+        }
+      ],
+      "correct_answer": "D",
+      "difficulty": "medium",
+      "explanation": "หญิง SLE/LN ที่วางแผนตั้งครรภ์ต้องเปลี่ยน MMF (teratogen) เป็น azathioprine และหยุด MMF อย่างน้อย 6 สัปดาห์ก่อนพยายามตั้งครรภ์ ให้ HCQ และ prednisolone ขนาดต่ำต่อ เพื่อคุมโรคให้สงบตลอดการตั้งครรภ์",
+      "detailed_explanation": {
+        "summary": "หญิง SLE/LN ที่วางแผนตั้งครรภ์ต้องเปลี่ยน MMF (teratogen) เป็น azathioprine และหยุด MMF อย่างน้อย 6 สัปดาห์ก่อนพยายามตั้งครรภ์ ให้ HCQ และ prednisolone ขนาดต่ำต่อ เพื่อคุมโรคให้สงบตลอดการตั้งครรภ์",
+        "reason": "โจทย์ถามอะไร: หญิง LN class IV ที่โรคสงบมา 12 เดือนด้วย MMF + prednisolone 5 mg + HCQ และวางแผนตั้งครรภ์ใน 6 เดือน โจทย์ทดสอบการวางแผนยาก่อนตั้งครรภ์ (pre-conception planning) ว่ายาใดต้องหยุด ยาใดใช้ต่อได้ และควรเปลี่ยนเป็นยาอะไร\n\nหลักการ/กลไกเชิงลึก: mycophenolate เป็น teratogen ชัดเจน ทำให้แท้งในไตรมาสแรกและเกิด embryopathy (microtia, cleft lip/palate, หัวใจพิการ) จึงต้องหยุดก่อนตั้งครรภ์ azathioprine เป็น purine antimetabolite ที่รกของมนุษย์ขาดเอนไซม์ hypoxanthine-guanine phosphoribosyltransferase ในการเปลี่ยนเป็น active 6-thioguanine nucleotides ได้มาก ทารกจึงได้รับ metabolite ออกฤทธิ์น้อย ข้อมูลในหญิงตั้งครรภ์ไม่พบการเพิ่มความพิการอย่างมีนัยสำคัญ HCQ ข้ามรกได้ แต่ไม่ทำให้พิการ และลด flare, preeclampsia และ congenital heart block ในทารกของแม่ที่มี anti-Ro\n\nทำไมข้อ D ถูก: เปลี่ยน MMF เป็น azathioprine (1.5–2 mg/kg/วัน) และหยุด MMF อย่างน้อย 6 สัปดาห์ก่อนตั้งครรภ์ แล้วยืนยันว่าโรคยังสงบด้วยยาใหม่ก่อนพยายามมีบุตร ร่วมกับให้ HCQ ต่อเนื่องและ prednisolone ขนาดต่ำ ≤7.5 mg/วันตามจำเป็น\n\nหลักฐานและแนวทางเวชปฏิบัติ: ACR Reproductive Health Guideline 2020 ระบุ HCQ, azathioprine, sulfasalazine, colchicine, tacrolimus/cyclosporine และ prednisolone ขนาดต่ำเป็นยาที่ใช้ได้ระหว่างตั้งครรภ์ ส่วน MMF ต้องหยุด ≥6 สัปดาห์, methotrexate ≥1–3 เดือน, cyclophosphamide ห้ามใช้ นอกจากนี้แนะนำให้ผู้ป่วย SLE ที่ตั้งครรภ์ใช้ low-dose aspirin 81–100 mg/วัน เริ่มก่อนอายุครรภ์ 16 สัปดาห์เพื่อป้องกัน preeclampsia และคัดกรอง anti-Ro/La และ aPL\n\nการประยุกต์กับผู้ป่วยจริง: ตรวจ TPMT/NUDT15 (ถ้าทำได้) ก่อนเริ่ม azathioprine เริ่ม 50 mg/วันแล้วเพิ่มทุก 2 สัปดาห์ ติดตาม CBC/LFT ทุก 2 สัปดาห์ในช่วงแรก คุมกำเนิดในช่วงเปลี่ยนยา ACEI/ARB ที่ใช้ลด proteinuria ต้องหยุดเมื่อทราบว่าตั้งครรภ์ และเปลี่ยนเป็น labetalol/nifedipine คำแนะนำ: ‘อย่าหยุด HCQ เอง ยานี้ช่วยให้โรคไม่กำเริบระหว่างตั้งครรภ์ และไม่ทำอันตรายต่อทารก’\n\nการติดตามและสัญญาณอันตราย: ระหว่างตั้งครรภ์ติดตาม BP, UPCR, creatinine, C3/C4, anti-dsDNA, CBC ทุกเดือน แยก LN flare จาก preeclampsia (preeclampsia มักมี complement ปกติและไม่มี active sediment) ผู้ป่วยที่มี anti-Ro ต้องตรวจ fetal echocardiography ช่วง 16–26 สัปดาห์ อาการบวมมาก ปวดศีรษะ ตามัว หรือปัสสาวะเป็นฟองต้องรีบมาพบแพทย์\n\nจุดที่มักสับสนและกับดักข้อสอบ: ‘โรคสงบและขนาดยาต่ำ’ ไม่ทำให้ MMF ปลอดภัยต่อทารก ห้ามหยุด HCQ เพราะเพิ่ม flare ทั้งระหว่างและหลังคลอด methotrexate เป็น teratogen (abortifacient) ห้ามใช้ prednisolone ถูก 11β-HSD2 ในรกเปลี่ยนเป็นรูปไม่ออกฤทธิ์ จึงใช้ได้ ต่างจาก dexamethasone/betamethasone ที่ผ่านรกได้มาก\n\nสรุปท่องสอบ: ตั้งครรภ์ + SLE ใช้ได้: HCQ, AZA, tacrolimus, low-dose pred, aspirin 81 mg; ห้าม: MMF (หยุด ≥6 สัปดาห์), MTX, CYC, leflunomide (ต้อง washout), ACEI/ARB; วางแผนให้โรคสงบ ≥6 เดือนก่อน",
+        "choices": [
+          {
+            "label": "A",
+            "text": "ใช้ MMF ต่อได้เพราะโรคสงบดีและขนาดยาต่ำ",
+            "explanation": "✗ ผิด — แม้โรคสงบและขนาดยาไม่สูง MMF ยังเป็น teratogen ที่ทำให้แท้งในไตรมาสแรกและเกิด embryopathy (หูผิดรูป ปากแหว่งเพดานโหว่ หัวใจพิการ) ความเสี่ยงไม่ขึ้นกับความรุนแรงของโรค ข้อนี้จะถูกเฉพาะเมื่อผู้ป่วยไม่วางแผนมีบุตรและคุมกำเนิดอย่างมีประสิทธิภาพ ซึ่ง MMF เป็น maintenance ที่ดีของ LN"
+          },
+          {
+            "label": "B",
+            "text": "หยุดยาทุกตัวรวมถึง HCQ ก่อนตั้งครรภ์อย่างน้อย 3 เดือน",
+            "explanation": "✗ ผิด — การหยุดยาทุกตัวทำให้ SLE กำเริบสูงมาก โดยเฉพาะการหยุด HCQ ซึ่งเพิ่ม flare และผลเสียต่อการตั้งครรภ์ HCQ ปลอดภัยและควรให้ต่อตลอดการตั้งครรภ์และให้นมบุตร ข้อนี้จะใกล้เคียงความจริงเฉพาะกับยาที่ห้ามใช้ เช่น MMF, MTX, cyclophosphamide, leflunomide ซึ่งต้องหยุดหรือ washout ก่อนตั้งครรภ์"
+          },
+          {
+            "label": "C",
+            "text": "เปลี่ยน MMF เป็น methotrexate 15 mg/สัปดาห์",
+            "explanation": "✗ ผิด — methotrexate เป็น teratogen และ abortifacient (folate antagonist) ห้ามใช้ในหญิงที่วางแผนตั้งครรภ์ ต้องหยุดอย่างน้อย 1–3 เดือนก่อนตั้งครรภ์ และไม่ใช่ยามาตรฐานสำหรับ maintenance LN MTX จะเป็นตัวเลือกที่ดีใน SLE ที่มีอาการข้อหรือผิวหนังในผู้ที่ไม่มีแผนตั้งครรภ์ หรือในผู้ชายที่วางแผนมีบุตร (ACR 2020 ให้ใช้ต่อได้)"
+          },
+          {
+            "label": "D",
+            "text": "เปลี่ยน MMF เป็น azathioprine และหยุด MMF อย่างน้อย 6 สัปดาห์ก่อนตั้งครรภ์ โดยให้ HCQ ต่อ",
+            "explanation": "✓ ถูก — เปลี่ยน MMF เป็น azathioprine และหยุด MMF ≥6 สัปดาห์ก่อนตั้งครรภ์ ให้ HCQ และ prednisolone ขนาดต่ำต่อ แล้วยืนยันว่าโรคสงบอย่างต่อเนื่องก่อนพยายามมีบุตร ตาม ACR Reproductive Health 2020 พร้อมเริ่ม low-dose aspirin ก่อน 16 สัปดาห์ และเปลี่ยน ACEI/ARB เป็นยาลดความดันที่ปลอดภัยในการตั้งครรภ์"
+          }
+        ],
+        "key_takeaway": "SLE อยากตั้งครรภ์: MMF → azathioprine (หยุด MMF ≥6 สัปดาห์), ห้ามหยุด HCQ"
+      }
+    },
+    {
+      "scenario": "Belimumab ซึ่งใช้เป็น add-on therapy ในผู้ป่วย SLE ที่ยังมี disease activity และใน lupus nephritis มีกลไกการออกฤทธิ์อย่างไร",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Monoclonal antibody ต่อ CD20 บน B cell ทำให้ B cell ถูกทำลาย"
+        },
+        {
+          "label": "B",
+          "text": "Monoclonal antibody ต่อ B-lymphocyte stimulator (BLyS/BAFF) ลดการอยู่รอดของ B cell"
+        },
+        {
+          "label": "C",
+          "text": "Monoclonal antibody ต่อ type I interferon receptor (IFNAR1)"
+        },
+        {
+          "label": "D",
+          "text": "Calcineurin inhibitor ลดการกระตุ้น T cell"
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "easy",
+      "explanation": "Belimumab เป็น human monoclonal IgG1λ ที่จับ soluble B-lymphocyte stimulator (BLyS หรือ BAFF) ทำให้ BAFF ไม่สามารถส่งสัญญาณให้ B cell อยู่รอดและเจริญเป็น plasma cell ได้ จึงลด autoantibody",
+      "detailed_explanation": {
+        "summary": "Belimumab เป็น human monoclonal IgG1λ ที่จับ soluble B-lymphocyte stimulator (BLyS หรือ BAFF) ทำให้ BAFF ไม่สามารถส่งสัญญาณให้ B cell อยู่รอดและเจริญเป็น plasma cell ได้ จึงลด autoantibody",
+        "reason": "โจทย์ถามอะไร: กลไกการออกฤทธิ์ของ belimumab ชีววัตถุตัวแรกที่อนุมัติสำหรับ SLE โจทย์ต้องการแยก belimumab จาก biologic อื่นที่ใช้ใน SLE ได้แก่ rituximab (anti-CD20), anifrolumab (anti-IFNAR1) และ voclosporin (calcineurin inhibitor)\n\nหลักการ/กลไกเชิงลึก: BLyS (BAFF) เป็น cytokine ในกลุ่ม TNF superfamily ที่สร้างจาก monocyte, neutrophil และ dendritic cell จับกับ receptor 3 ชนิดบน B cell คือ BAFF-R, TACI และ BCMA ส่งสัญญาณ NF-κB ทำให้ transitional และ naive B cell อยู่รอดและเจริญเติบโต ผู้ป่วย SLE มีระดับ BLyS สูง ทำให้ autoreactive B cell ที่ควรถูกกำจัดที่ checkpoint รอดชีวิต belimumab จับ soluble BLyS และป้องกันการจับ receptor ทำให้ naive/transitional B cell ลดลงช้า ๆ anti-dsDNA ลด complement ดีขึ้น โดยไม่ทำให้ B cell หมดฉับพลันแบบ rituximab\n\nทำไมข้อ B ถูก: belimumab เป็น fully human IgG1λ monoclonal antibody ต่อ soluble BLyS/BAFF ลดการอยู่รอดและ differentiation ของ B cell ตรงตามกลไกที่ระบุ ขนาดยา 10 mg/kg IV สัปดาห์ที่ 0, 2, 4 แล้วทุก 4 สัปดาห์ หรือ 200 mg SC สัปดาห์ละครั้ง\n\nหลักฐานและแนวทางเวชปฏิบัติ: BLISS-52 และ BLISS-76 แสดงว่า belimumab ร่วมกับ standard therapy เพิ่มอัตรา SRI-4 response และลด severe flare รวมถึงลดการใช้ steroid ส่วน BLISS-LN พบว่าการเพิ่ม belimumab ใน LN ที่ได้ MMF หรือ Euro-Lupus CYC เพิ่ม primary efficacy renal response ที่ 104 สัปดาห์และลดเหตุการณ์ไตเสื่อม EULAR 2023 แนะนำ belimumab ใน SLE ที่ยังมี activity หรือ flare ซ้ำแม้ได้ HCQ ± immunosuppressant\n\nการประยุกต์กับผู้ป่วยจริง: ก่อนเริ่มควรทบทวนวัคซีนเชื้อตาย (influenza, pneumococcal, recombinant zoster) และหลีกเลี่ยงวัคซีนเชื้อเป็นระหว่างใช้ยา ให้ IV infusion 1 ชั่วโมง ไม่จำเป็นต้อง premedication ทุกราย แต่เฝ้าระวัง hypersensitivity/infusion reaction ซึ่งอาจเกิดล่าช้าหลายชั่วโมง รูป SC เก็บในตู้เย็น 2–8 °C วางให้ถึงอุณหภูมิห้องก่อนฉีด ประเมินผลหลัง 6 เดือน\n\nการติดตามและสัญญาณอันตราย: ติดตามการติดเชื้อ (ทางเดินหายใจ ทางเดินปัสสาวะ) อาการซึมเศร้าและความคิดฆ่าตัวตาย (มีรายงานในการศึกษาจึงมีคำเตือน) PML ซึ่งพบน้อย และ infusion reaction ติดตาม anti-dsDNA, C3/C4, CBC, urinalysis และ SLEDAI ระหว่างการรักษา หากมีไข้สูง หายใจลำบาก หรืออารมณ์เปลี่ยนแปลงชัดต้องรายงานแพทย์\n\nจุดที่มักสับสนและกับดักข้อสอบ: rituximab เป็น anti-CD20 ทำลาย B cell โดยตรง ใช้ off-label ใน refractory SLE ไม่ได้รับการอนุมัติเพราะ EXPLORER/LUNAR ไม่ผ่าน endpoint หลัก anifrolumab จับ IFNAR1 ไม่ใช่ BLyS ไม่มีข้อมูลใน LN voclosporin เป็น calcineurin inhibitor รับประทาน ใช้ใน LN ร่วม MMF ไม่ใช่ monoclonal antibody belimumab ไม่ควรใช้ร่วมกับ biologic B-cell therapy อื่นเป็นประจำ และไม่ได้ศึกษาใน active severe CNS lupus\n\nสรุปท่องสอบ: Belimumab = anti-BLyS/BAFF (B cell survival); Rituximab = anti-CD20 (B cell depletion); Anifrolumab = anti-IFNAR1 (type I IFN); Voclosporin = CNI; belimumab ใช้ได้ทั้ง SLE ทั่วไปและ LN",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Monoclonal antibody ต่อ CD20 บน B cell ทำให้ B cell ถูกทำลาย",
+            "explanation": "✗ ผิด — นี่คือกลไกของ rituximab (chimeric anti-CD20) ซึ่งทำลาย B cell ผ่าน ADCC, CDC และ apoptosis ทำให้ B cell ในเลือดหมดไปหลายเดือน ใน SLE ใช้แบบ off-label สำหรับโรคดื้อต่อการรักษา ข้อนี้จะถูกหากโจทย์ถามกลไกของ rituximab ซึ่งเป็นยามาตรฐานใน RA ที่ล้มเหลวต่อ TNFi และ ANCA-associated vasculitis"
+          },
+          {
+            "label": "B",
+            "text": "Monoclonal antibody ต่อ B-lymphocyte stimulator (BLyS/BAFF) ลดการอยู่รอดของ B cell",
+            "explanation": "✓ ถูก — belimumab เป็น human IgG1λ ที่จับ soluble BLyS/BAFF ป้องกันการจับ BAFF-R/TACI/BCMA บน B cell ทำให้ naive/transitional B cell ขาดสัญญาณอยู่รอด ลด autoantibody และลด flare ได้รับการรับรองทั้งใน SLE ที่ยังมี activity และ lupus nephritis (BLISS-LN) ให้ IV 10 mg/kg หรือ SC 200 mg/สัปดาห์"
+          },
+          {
+            "label": "C",
+            "text": "Monoclonal antibody ต่อ type I interferon receptor (IFNAR1)",
+            "explanation": "✗ ผิด — นี่คือกลไกของ anifrolumab ซึ่งเป็น human IgG1κ ต่อ type I interferon receptor subunit 1 (IFNAR1) ยับยั้งสัญญาณของ IFN-α, β, ω ใช้ใน SLE ที่ยังมี activity ปานกลาง–รุนแรง (ยกเว้น active LN และ CNS lupus) ข้อนี้จะถูกหากโจทย์ถามกลไกของ anifrolumab ซึ่งเสี่ยง herpes zoster"
+          },
+          {
+            "label": "D",
+            "text": "Calcineurin inhibitor ลดการกระตุ้น T cell",
+            "explanation": "✗ ผิด — calcineurin inhibitor (tacrolimus, cyclosporine, voclosporin) ยับยั้ง calcineurin → NFAT ไม่เข้า nucleus → ลดการสร้าง IL-2 และการกระตุ้น T cell และยังช่วยรักษาโครงสร้าง podocyte เป็นยารับประทานไม่ใช่ monoclonal antibody ข้อนี้จะถูกหากถามกลไกของ voclosporin ที่ใช้ร่วม MMF ใน lupus nephritis (AURORA)"
+          }
+        ],
+        "key_takeaway": "Belimumab → จับ BLyS/BAFF → B cell ขาดสัญญาณอยู่รอด (ไม่ใช่ anti-CD20)"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 33 ปี เป็น SLE ที่มีผื่นผิวหนังและข้ออักเสบ (ไม่มีไตอักเสบหรือ neuropsychiatric lupus) ยังมี disease activity ปานกลางทั้งที่ได้ HCQ, prednisolone 10 mg/วัน และ azathioprine แพทย์พิจารณาเริ่ม anifrolumab ข้อใดถูกต้องเกี่ยวกับยานี้",
+      "choices": [
+        {
+          "label": "A",
+          "text": "เป็น monoclonal antibody ต่อ BLyS ให้ IV 10 mg/kg ทุก 4 สัปดาห์"
+        },
+        {
+          "label": "B",
+          "text": "เป็น calcineurin inhibitor ชนิดรับประทาน ต้องติดตาม eGFR อย่างใกล้ชิด"
+        },
+        {
+          "label": "C",
+          "text": "ใช้เป็น first-line monotherapy แทน HCQ ได้ในผู้ป่วยรายใหม่"
+        },
+        {
+          "label": "D",
+          "text": "จับ type I interferon receptor ให้ 300 mg IV ทุก 4 สัปดาห์ และเพิ่มความเสี่ยง herpes zoster"
+        }
+      ],
+      "correct_answer": "D",
+      "difficulty": "hard",
+      "explanation": "Anifrolumab เป็น human monoclonal antibody ต่อ type I interferon receptor subunit 1 (IFNAR1) ให้ 300 mg IV ทุก 4 สัปดาห์ เป็น add-on ใน SLE ที่ยังมี activity ปานกลาง–รุนแรง และเพิ่มความเสี่ยง herpes zoster",
+      "detailed_explanation": {
+        "summary": "Anifrolumab เป็น human monoclonal antibody ต่อ type I interferon receptor subunit 1 (IFNAR1) ให้ 300 mg IV ทุก 4 สัปดาห์ เป็น add-on ใน SLE ที่ยังมี activity ปานกลาง–รุนแรง และเพิ่มความเสี่ยง herpes zoster",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วย SLE ที่มีผื่นและข้ออักเสบ ยังมี activity ปานกลางแม้ได้ HCQ, prednisolone 10 mg/วัน และ azathioprine (ไม่มีไตอักเสบหรือ neuropsychiatric lupus) แพทย์พิจารณา anifrolumab โจทย์ทดสอบความรู้เรื่องกลไก ขนาดยา ตำแหน่งในแนวทางการรักษา และอาการไม่พึงประสงค์เด่นของยานี้\n\nหลักการ/กลไกเชิงลึก: ผู้ป่วย SLE ราว 60–80% มี ‘interferon gene signature’ สูง เพราะ plasmacytoid dendritic cell ถูกกระตุ้นโดย immune complex ที่มี nucleic acid ผ่าน TLR7/9 แล้วหลั่ง IFN-α ปริมาณมาก type I IFN กระตุ้น B cell differentiation, การสร้าง autoantibody, dendritic cell maturation และ apoptosis ของเซลล์ผิวหนัง anifrolumab เป็น human IgG1κ จับ IFNAR1 ทำให้ IFN-α, β, ω และ κ ทุกชนิดส่งสัญญาณผ่าน JAK1/TYK2 ไม่ได้ ผลเสียคือการป้องกันไวรัสโดยธรรมชาติลดลง จึงพบการติดเชื้อไวรัสโดยเฉพาะ herpes zoster และทางเดินหายใจเพิ่มขึ้น\n\nทำไมข้อ D ถูก: ข้อ D ระบุครบทั้งกลไก (anti-IFNAR1) ขนาดยา (300 mg IV infusion 30 นาที ทุก 4 สัปดาห์) และ ADR เด่น (herpes zoster ซึ่งพบราว 6–7% เทียบ ~1–2% ในกลุ่มยาหลอก) ผู้ป่วยรายนี้มีอาการผิวหนังและข้อซึ่งเป็น domain ที่ anifrolumab ได้ผลดีชัดเจน และไม่มี LN/CNS lupus ซึ่งเป็นกลุ่มที่ไม่ได้อยู่ในการศึกษา\n\nหลักฐานและแนวทางเวชปฏิบัติ: TULIP-2 แสดงว่า anifrolumab เพิ่มอัตรา BICLA response (47.8% vs 31.5%) ลด CLASI ของผื่นผิวหนัง และทำให้ลด prednisolone เหลือ ≤7.5 mg/วันได้มากขึ้น (TULIP-1 ไม่ผ่าน endpoint SRI-4 แต่ผล secondary สอดคล้อง) EULAR 2023 แนะนำ belimumab หรือ anifrolumab เป็น add-on ใน SLE ที่ตอบสนองไม่พอต่อ HCQ ± steroid ± immunosuppressant หรือไม่สามารถลด steroid ลงต่ำกว่า 5 mg/วันได้\n\nการประยุกต์กับผู้ป่วยจริง: ทบทวนวัคซีนก่อนเริ่ม โดยเฉพาะ recombinant zoster vaccine (Shingrix 2 เข็ม) และ influenza/pneumococcal ห้ามวัคซีนเชื้อเป็นระหว่างใช้ยา ให้ยา IV 30 นาที ทุก 4 สัปดาห์ ประเมินผลที่ 16–24 สัปดาห์ และวางแผนลด prednisolone ให้ ≤5 mg/วัน ให้ HCQ ต่อ คำแนะนำ: ‘ถ้ามีผื่นแดงเป็นตุ่มน้ำปวดแสบเป็นแนวตามเส้นประสาท ให้มาพบแพทย์ภายใน 72 ชั่วโมงเพื่อรับยาต้านไวรัส’\n\nการติดตามและสัญญาณอันตราย: ติดตาม herpes zoster, การติดเชื้อทางเดินหายใจส่วนบนและหลอดลมอักเสบ, infusion-related reaction และ hypersensitivity (รวม anaphylaxis ซึ่งพบน้อย) ติดตาม SLEDAI-2K, CLASI, CBC, complement และระดับ steroid ที่ลดได้ ถ้ามีการติดเชื้อรุนแรงควรงดยาจนหายดี\n\nจุดที่มักสับสนและกับดักข้อสอบ: ข้อ A เป็นข้อมูลของ belimumab (anti-BLyS 10 mg/kg IV) ข้อ B คล้าย voclosporin ซึ่งเป็น calcineurin inhibitor ชนิดรับประทานใน LN anifrolumab ไม่ใช่ยาแทน HCQ และไม่ใช่ first-line ยังไม่มีข้อมูลเพียงพอใน active LN และ CNS lupus (การศึกษา TULIP-LN ระยะที่ 2) อย่าจำสลับกับ JAK inhibitor ที่ยับยั้งสัญญาณ IFN ภายในเซลล์\n\nสรุปท่องสอบ: Anifrolumab = anti-IFNAR1, 300 mg IV q4wk, add-on SLE ผิวหนัง/ข้อ (ไม่ใช่ LN/CNS), ADR เด่น herpes zoster → ฉีด RZV ก่อน; Belimumab = anti-BLyS ใช้ได้ทั้ง SLE และ LN",
+        "choices": [
+          {
+            "label": "A",
+            "text": "เป็น monoclonal antibody ต่อ BLyS ให้ IV 10 mg/kg ทุก 4 สัปดาห์",
+            "explanation": "✗ ผิด — anti-BLyS IV 10 mg/kg ทุก 4 สัปดาห์ (หลัง loading สัปดาห์ 0, 2, 4) เป็นข้อมูลของ belimumab ไม่ใช่ anifrolumab ข้อนี้จะถูกหากโจทย์ถามถึง belimumab ซึ่งเป็น add-on ใน SLE ที่ยังมี activity และเป็นชีววัตถุที่เลือกใช้ได้ใน lupus nephritis ร่วมกับ MMF หรือ Euro-Lupus cyclophosphamide (BLISS-LN)"
+          },
+          {
+            "label": "B",
+            "text": "เป็น calcineurin inhibitor ชนิดรับประทาน ต้องติดตาม eGFR อย่างใกล้ชิด",
+            "explanation": "✗ ผิด — calcineurin inhibitor ชนิดรับประทานที่ต้องติดตาม eGFR คือ voclosporin (หรือ tacrolimus) ซึ่งใช้ใน lupus nephritis ร่วมกับ MMF ตามการศึกษา AURORA ข้อนี้จะถูกหากโจทย์ถามถึง voclosporin ที่ต้องหยุดหรือลดขนาดเมื่อ eGFR ลดลงเกิน 20–30% และระวังปฏิกิริยากับ strong CYP3A4 inhibitor"
+          },
+          {
+            "label": "C",
+            "text": "ใช้เป็น first-line monotherapy แทน HCQ ได้ในผู้ป่วยรายใหม่",
+            "explanation": "✗ ผิด — HCQ ยังเป็นยาพื้นฐานที่ต้องให้ทุกรายตลอดชีวิตหากไม่มีข้อห้าม เพราะลด flare, thrombosis และ mortality anifrolumab เป็น add-on สำหรับผู้ที่ยังมี activity ทั้งที่ได้ standard therapy ไม่ใช่ first-line monotherapy ข้อนี้จะใกล้เคียงหากผู้ป่วยแพ้หรือมี retinopathy จาก HCQ แต่ก็ยังต้องใช้ร่วมกับยาอื่นตามความรุนแรง"
+          },
+          {
+            "label": "D",
+            "text": "จับ type I interferon receptor ให้ 300 mg IV ทุก 4 สัปดาห์ และเพิ่มความเสี่ยง herpes zoster",
+            "explanation": "✓ ถูก — anifrolumab เป็น human IgG1κ ต่อ IFNAR1 ยับยั้งสัญญาณ type I IFN ทุกชนิด ให้ 300 mg IV ทุก 4 สัปดาห์ TULIP-2 ลด disease activity และช่วยลด steroid โดยเฉพาะผื่นผิวหนังและข้อ ADR เด่นคือ herpes zoster และการติดเชื้อทางเดินหายใจ จึงควรฉีด recombinant zoster vaccine ก่อนเริ่มยา"
+          }
+        ],
+        "key_takeaway": "Anifrolumab: ปิดตัวรับ type I IFN → 300 mg IV q4wk → ระวังงูสวัด"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยชายอายุ 68 ปี เป็นความดันโลหิตสูงและหัวใจล้มเหลว ได้ hydralazine 50 mg วันละ 3 ครั้ง ร่วมกับ isosorbide dinitrate มา 2 ปี มาด้วยปวดข้อหลายข้อ ไข้ต่ำ ๆ และเจ็บหน้าอกแบบ pleuritic ผล ANA positive, anti-histone antibody positive, anti-dsDNA negative, C3/C4 ปกติ urinalysis ปกติ การจัดการที่เหมาะสมที่สุดคือข้อใด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "หยุด hydralazine เปลี่ยนเป็นยาลดความดันกลุ่มอื่น และให้ NSAID บรรเทาอาการระยะสั้น"
+        },
+        {
+          "label": "B",
+          "text": "เริ่ม prednisolone 1 mg/kg/วัน ร่วมกับ mycophenolate mofetil"
+        },
+        {
+          "label": "C",
+          "text": "ให้ hydralazine ต่อ และเริ่ม HCQ ระยะยาว"
+        },
+        {
+          "label": "D",
+          "text": "ลดขนาด hydralazine เหลือ 25 mg วันละ 3 ครั้ง แล้วติดตามอาการ"
+        }
+      ],
+      "correct_answer": "A",
+      "difficulty": "medium",
+      "explanation": "Drug-induced lupus จาก hydralazine (ANA+, anti-histone+, anti-dsDNA−, complement ปกติ ไม่มีไต) รักษาหลักคือหยุดยาที่เป็นสาเหตุ เปลี่ยนเป็นยาลดความดัน/หัวใจล้มเหลวกลุ่มอื่น และให้ NSAID บรรเทาอาการระยะสั้น อาการมักหายในหลายสัปดาห์",
+      "detailed_explanation": {
+        "summary": "Drug-induced lupus จาก hydralazine (ANA+, anti-histone+, anti-dsDNA−, complement ปกติ ไม่มีไต) รักษาหลักคือหยุดยาที่เป็นสาเหตุ เปลี่ยนเป็นยาลดความดัน/หัวใจล้มเหลวกลุ่มอื่น และให้ NSAID บรรเทาอาการระยะสั้น อาการมักหายในหลายสัปดาห์",
+        "reason": "โจทย์ถามอะไร: ชายสูงอายุใช้ hydralazine 150 mg/วันนาน 2 ปี มีปวดข้อ ไข้ต่ำ ๆ pleuritic chest pain ผล ANA+, anti-histone+, anti-dsDNA−, C3/C4 ปกติ และ urinalysis ปกติ ภาพนี้คือ drug-induced lupus erythematosus (DILE) โจทย์ถามการจัดการที่เหมาะสมที่สุด\n\nหลักการ/กลไกเชิงลึก: hydralazine และ procainamide เป็น aromatic amine ที่ถูก metabolize ผ่าน N-acetyltransferase 2 (NAT2) ผู้ที่เป็น slow acetylator จะมี parent drug และ reactive metabolite สูงขึ้น ยาเหล่านี้ยับยั้ง DNA methylation ใน T cell ทำให้ T cell แสดง gene ที่ปกติถูกปิดและกลายเป็น autoreactive รวมทั้งเปลี่ยนโครงสร้าง chromatin ทำให้เกิด antibody ต่อ histone (H2A–H2B) ความเสี่ยงสัมพันธ์กับขนาดยา (>100 mg/วัน) ระยะเวลา เพศหญิง และ HLA-DR4 DILE จึงต่างจาก SLE คือแทบไม่มีไต สมอง หรือ complement ต่ำ\n\nทำไมข้อ A ถูก: การรักษาหลักของ DILE คือหยุดยาต้นเหตุ อาการทางคลินิกมักดีขึ้นภายในไม่กี่วันถึงสัปดาห์ และหายเกือบทั้งหมดใน 1–2 เดือน (ANA อาจบวกต่อหลายเดือนถึงปี) ระหว่างนี้ให้ NSAID ระยะสั้นสำหรับปวดข้อ/serositis และเปลี่ยนการรักษา HF ไปตาม GDMT เช่น ACEI/ARB/ARNI, beta-blocker, MRA และ SGLT2 inhibitor\n\nหลักฐานและแนวทางเวชปฏิบัติ: ยาที่ความเสี่ยงสูงคือ procainamide (~15–20%) และ hydralazine (~5–8%) ความเสี่ยงปานกลาง–ต่ำ ได้แก่ isoniazid, minocycline, quinidine, methyldopa, chlorpromazine ส่วน anti-TNF ทำให้เกิด DILE ชนิดที่มี anti-dsDNA บวกได้ ซึ่งแตกต่างจาก classic DILE ตำรามาตรฐานและบทความทบทวนระบุตรงกันว่าการหยุดยาเป็นการรักษาที่ชี้ขาด ส่วน steroid ขนาดต่ำ–ปานกลางสงวนไว้เมื่อ serositis รุนแรงหรือไม่ดีขึ้นหลังหยุดยา\n\nการประยุกต์กับผู้ป่วยจริง: ประสานแพทย์เพื่อหยุด hydralazine และ isosorbide dinitrate (ซึ่งใช้คู่กันในผู้ที่ใช้ ACEI/ARB ไม่ได้) แล้วปรับ GDMT ใช้ NSAID สั้นที่สุดและขนาดต่ำที่สุดเพราะผู้ป่วยมี HF (NSAID ทำให้คั่งน้ำ เกลือ และ HF กำเริบ) ติดตามน้ำหนักตัวและอาการบวม อาจใช้ colchicine สำหรับ pleuritis ร่วม บันทึกประวัติ ADR ในเวชระเบียนและบัตรแพ้ยา คำแนะนำ: ‘อาการปวดข้อและเจ็บหน้าอกเกิดจากยาลดความดัน หลังหยุดยาจะค่อย ๆ หาย ไม่ใช่โรคพุ่มพวงที่ต้องกินยากดภูมิระยะยาว’\n\nการติดตามและสัญญาณอันตราย: ติดตามอาการทุก 2–4 สัปดาห์ หากไม่ดีขึ้นใน 4–6 สัปดาห์หลังหยุดยา ให้สงสัย idiopathic SLE หรือสาเหตุอื่น ตรวจ anti-dsDNA, complement และ urinalysis ซ้ำ เฝ้าระวัง pericardial effusion/tamponade (เหนื่อย ความดันต่ำ) และ HF กำเริบจาก NSAID\n\nจุดที่มักสับสนและกับดักข้อสอบ: ANA บวกเพียงอย่างเดียวในผู้ที่ใช้ hydralazine โดยไม่มีอาการ ไม่จำเป็นต้องหยุดยา (พบได้บ่อย) DILE ไม่ต้องใช้ immunosuppressant ขนาดสูง (ข้อ B) การลดขนาดยา (ข้อ D) ไม่เพียงพอเพราะภูมิต้านทานตนเองเริ่มแล้ว การให้ HCQ ระยะยาวพร้อมใช้ยาเดิมต่อ (ข้อ C) ไม่ใช่แนวทาง anti-histone บวกได้ถึง 50–80% ใน idiopathic SLE จึงต้องดูทั้ง pattern\n\nสรุปท่องสอบ: DILE = ยา (hydralazine, procainamide, isoniazid, minocycline, anti-TNF) + anti-histone+ + anti-dsDNA− + complement ปกติ + ไม่มีไต/CNS → หยุดยา ± NSAID/steroid ระยะสั้น",
+        "choices": [
+          {
+            "label": "A",
+            "text": "หยุด hydralazine เปลี่ยนเป็นยาลดความดันกลุ่มอื่น และให้ NSAID บรรเทาอาการระยะสั้น",
+            "explanation": "✓ ถูก — หยุด hydralazine คือการรักษาหลักของ drug-induced lupus เปลี่ยนเป็น GDMT ของหัวใจล้มเหลว และให้ NSAID ระยะสั้นบรรเทาปวดข้อ/pleuritis โดยใช้ขนาดต่ำสุดเพราะผู้ป่วยมี HF อาการมักหายใน 1–2 เดือน ถ้า serositis รุนแรงหรือไม่ดีขึ้นจึงพิจารณา prednisolone ขนาดต่ำระยะสั้น"
+          },
+          {
+            "label": "B",
+            "text": "เริ่ม prednisolone 1 mg/kg/วัน ร่วมกับ mycophenolate mofetil",
+            "explanation": "✗ ผิด — prednisolone 1 mg/kg ร่วมกับ MMF เป็นการรักษาของ SLE ที่มีอวัยวะสำคัญถูกคุกคาม เช่น lupus nephritis class III/IV DILE ไม่มีไตหรือ CNS และหายได้เมื่อหยุดยา การให้ยากดภูมิขนาดสูงทำให้เสี่ยงติดเชื้อโดยไม่จำเป็น ข้อนี้จะถูกหากผู้ป่วยมี anti-dsDNA บวก complement ต่ำ และ active urinary sediment ร่วมกับ biopsy ยืนยัน LN"
+          },
+          {
+            "label": "C",
+            "text": "ให้ hydralazine ต่อ และเริ่ม HCQ ระยะยาว",
+            "explanation": "✗ ผิด — การให้ยาต้นเหตุต่อไปจะทำให้กระบวนการภูมิต้านทานตนเองดำเนินต่อและอาการไม่หาย HCQ ระยะยาวเป็นการรักษาของ idiopathic SLE ไม่ใช่ DILE ข้อนี้จะถูกในผู้ป่วย SLE ที่เกิดขึ้นเองโดยไม่เกี่ยวข้องกับยา ซึ่ง HCQ ≤5 mg/kg/วันเป็นยาพื้นฐานที่ทุกรายควรได้รับ"
+          },
+          {
+            "label": "D",
+            "text": "ลดขนาด hydralazine เหลือ 25 mg วันละ 3 ครั้ง แล้วติดตามอาการ",
+            "explanation": "✗ ผิด — การลดขนาดลงไม่หยุดกระบวนการ autoimmunity ที่เกิดแล้ว และยายังคงสัมผัสต่อเนื่อง อาการจึงมักไม่หาย การลดขนาด hydralazine ให้ต่ำกว่า 100 mg/วันเป็นการป้องกันก่อนเกิด DILE ในผู้ที่เป็น slow acetylator ได้ ไม่ใช่การรักษาเมื่อมีอาการทางคลินิกแล้ว ข้อนี้จะเหมาะเมื่อผู้ป่วยมีเพียง ANA บวกโดยไม่มีอาการ"
+          }
+        ],
+        "key_takeaway": "Drug-induced lupus → หยุดยาต้นเหตุ คือการรักษาหลัก"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 38 ปี มีประวัติ ischemic stroke เมื่อ 6 เดือนก่อน ตรวจพบ lupus anticoagulant, anticardiolipin IgG และ anti-β2-glycoprotein I positive ทั้ง 3 ตัวซ้ำห่างกัน 12 สัปดาห์ ได้รับการวินิจฉัย antiphospholipid syndrome (APS) ปัจจุบันได้ rivaroxaban 20 mg วันละครั้ง ควรปรับการรักษาอย่างไร",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ใช้ rivaroxaban ต่อเพราะสะดวกและไม่ต้องตรวจ INR"
+        },
+        {
+          "label": "B",
+          "text": "เปลี่ยนเป็น apixaban 5 mg วันละ 2 ครั้ง"
+        },
+        {
+          "label": "C",
+          "text": "เปลี่ยนเป็น warfarin โดยตั้งเป้า INR 2–3 (ระยะยาว)"
+        },
+        {
+          "label": "D",
+          "text": "หยุด anticoagulant และให้ aspirin 81 mg เดี่ยว"
+        }
+      ],
+      "correct_answer": "C",
+      "difficulty": "medium",
+      "explanation": "APS แบบ triple-positive ที่มี arterial thrombosis (ischemic stroke) เป็นกลุ่มเสี่ยงสูง ต้องใช้ vitamin K antagonist (warfarin) ระยะยาว ไม่ใช้ DOAC เพราะ TRAPS พบ arterial event สูงกว่าเมื่อใช้ rivaroxaban",
+      "detailed_explanation": {
+        "summary": "APS แบบ triple-positive ที่มี arterial thrombosis (ischemic stroke) เป็นกลุ่มเสี่ยงสูง ต้องใช้ vitamin K antagonist (warfarin) ระยะยาว ไม่ใช้ DOAC เพราะ TRAPS พบ arterial event สูงกว่าเมื่อใช้ rivaroxaban",
+        "reason": "โจทย์ถามอะไร: หญิงอายุ 38 ปี มี ischemic stroke และ antiphospholipid antibodies บวกครบทั้ง 3 ชนิด (lupus anticoagulant, anticardiolipin IgG, anti-β2GPI) ซ้ำห่างกัน 12 สัปดาห์ เข้าเกณฑ์ thrombotic APS ปัจจุบันได้ rivaroxaban โจทย์ถามว่าควรปรับการรักษาอย่างไร\n\nหลักการ/กลไกเชิงลึก: antiphospholipid antibodies จับ β2-glycoprotein I บนผิว endothelial cell, monocyte และ platelet กระตุ้นการสร้าง tissue factor, complement activation และการเกาะกลุ่มของเกล็ดเลือด ทำให้เกิดลิ่มเลือดทั้งในหลอดเลือดดำและแดง DOAC ยับยั้ง factor Xa หรือ thrombin ตัวเดียว ส่วน warfarin ลด factor II, VII, IX, X และมีผลต่อหลายจุดของ coagulation cascade ในผู้ป่วย triple-positive ซึ่งมีภาวะ prothrombotic สูงมาก ประสิทธิภาพของ DOAC จึงไม่พอโดยเฉพาะกับ arterial thrombosis\n\nทำไมข้อ C ถูก: ผู้ป่วยมีทั้ง triple positivity และ arterial event จัดเป็นความเสี่ยงสูงสุด แนวทางแนะนำให้เปลี่ยนเป็น warfarin ระยะยาว (ไม่มีกำหนดหยุด) โดยตั้ง INR 2–3 (บางแนวทางพิจารณา INR 3–4 หรือ INR 2–3 ร่วม low-dose aspirin ตามความเสี่ยงเลือดออก) การเปลี่ยนจาก rivaroxaban ให้เริ่ม warfarin ร่วมกับ DOAC หรือ LMWH จน INR ถึงเป้า\n\nหลักฐานและแนวทางเวชปฏิบัติ: TRAPS (rivaroxaban vs warfarin ใน triple-positive APS) ยุติก่อนกำหนดเพราะกลุ่ม rivaroxaban เกิด thromboembolic event (ส่วนใหญ่เป็น stroke และ MI) มากกว่าอย่างชัดเจน ASTRO-APS (apixaban) ก็พบ stroke มากกว่า EULAR 2019 สำหรับ APS ในผู้ใหญ่ และ EMA/FDA ระบุว่าไม่แนะนำ DOAC ใน triple-positive APS หรือผู้ที่มี arterial thrombosis ส่วน ISTH ก็ให้ข้อแนะนำทำนองเดียวกัน\n\nการประยุกต์กับผู้ป่วยจริง: เริ่ม warfarin 3–5 mg/วัน ติดตาม INR ทุก 3–7 วันจนคงที่ ระวังว่า lupus anticoagulant อาจทำให้ INR จาก point-of-care ผิดพลาด ควรใช้ห้องปฏิบัติการมาตรฐาน คุมกำเนิดที่ไม่มี estrogen (เช่น copper IUD หรือ LNG-IUD) เพราะ warfarin เป็น teratogen และ estrogen เพิ่ม thrombosis คำแนะนำ: ‘กินยาเวลาเดิมทุกวัน กินผักใบเขียวสม่ำเสมอไม่เพิ่มลดฉับพลัน ห้ามซื้อยาแก้ปวด NSAID หรือสมุนไพรเอง และแจ้งทุกครั้งที่มีการเปลี่ยนยา’\n\nการติดตามและสัญญาณอันตราย: เลือดออกผิดปกติ (ปัสสาวะ/อุจจาระเป็นเลือด เลือดออกตามไรฟัน จ้ำเลือด) ปวดศีรษะรุนแรงฉับพลัน อ่อนแรงครึ่งซีกซ้ำ ปวดบวมขาข้างเดียว ติดตาม CBC (thrombocytopenia ใน APS) และ drug interaction เช่น antibiotic (TMP-SMX, metronidazole, fluconazole) ที่เพิ่ม INR\n\nจุดที่มักสับสนและกับดักข้อสอบ: ‘DOAC สะดวกกว่า’ ไม่ใช่เหตุผลเพียงพอในกลุ่มเสี่ยงสูง การเปลี่ยนเป็น DOAC ตัวอื่น (apixaban) ก็มีปัญหาเดียวกัน aspirin เดี่ยวใช้เป็น primary prophylaxis ในผู้ที่มี high-risk aPL profile แต่ยังไม่เคยมีลิ่มเลือด ไม่ใช่ secondary prevention หลัง stroke ระหว่างตั้งครรภ์ต้องเปลี่ยน warfarin เป็น LMWH ร่วมกับ aspirin ก่อนอายุครรภ์ 6 สัปดาห์\n\nสรุปท่องสอบ: Thrombotic APS → warfarin INR 2–3 ระยะยาว; triple-positive หรือ arterial → ห้าม DOAC; ไม่มีลิ่มเลือดแต่ aPL เสี่ยงสูง → aspirin 75–100 mg; ตั้งครรภ์ → LMWH + aspirin",
+        "choices": [
+          {
+            "label": "A",
+            "text": "ใช้ rivaroxaban ต่อเพราะสะดวกและไม่ต้องตรวจ INR",
+            "explanation": "✗ ผิด — แม้ rivaroxaban สะดวกและไม่ต้องตรวจ INR แต่ TRAPS แสดงว่าใน triple-positive APS เกิด arterial thromboembolism (stroke, MI) มากกว่า warfarin อย่างชัดเจนจนยุติการศึกษา DOAC อาจพิจารณาได้ในผู้ป่วย APS ที่มี venous thrombosis ครั้งแรก ไม่ใช่ triple-positive และไม่สามารถคุม INR ได้หรือแพ้ warfarin ตาม EULAR 2019"
+          },
+          {
+            "label": "B",
+            "text": "เปลี่ยนเป็น apixaban 5 mg วันละ 2 ครั้ง",
+            "explanation": "✗ ผิด — apixaban เป็น DOAC เช่นเดียวกัน ASTRO-APS พบ stroke มากกว่า warfarin และไม่มีหลักฐานว่าดีกว่า rivaroxaban ใน APS เสี่ยงสูง การเปลี่ยนจาก DOAC หนึ่งไปอีกตัวจึงไม่แก้ปัญหา apixaban 5 mg วันละ 2 ครั้งเป็นขนาดมาตรฐานสำหรับ AF หรือ VTE ทั่วไปที่ไม่ใช่ APS ซึ่งข้อนี้จะเหมาะในบริบทนั้น"
+          },
+          {
+            "label": "C",
+            "text": "เปลี่ยนเป็น warfarin โดยตั้งเป้า INR 2–3 (ระยะยาว)",
+            "explanation": "✓ ถูก — warfarin เป้า INR 2–3 ระยะยาวเป็นการรักษามาตรฐานของ thrombotic APS โดยเฉพาะ triple-positive และ arterial event ตาม EULAR 2019 และผล TRAPS เปลี่ยนจาก rivaroxaban โดย overlap จน INR ถึงเป้า อาจพิจารณา INR 3–4 หรือเพิ่ม aspirin ขนาดต่ำในรายที่เสี่ยงสูงและเลือดออกต่ำ ต้องคุมกำเนิดด้วยวิธีไม่มี estrogen"
+          },
+          {
+            "label": "D",
+            "text": "หยุด anticoagulant และให้ aspirin 81 mg เดี่ยว",
+            "explanation": "✗ ผิด — การหยุด anticoagulant ในผู้ที่มี stroke จาก APS ทำให้เกิด thrombosis ซ้ำสูงมาก aspirin เดี่ยวไม่เพียงพอสำหรับ secondary prevention ใน triple-positive APS aspirin 75–100 mg/วันเดี่ยวเหมาะสำหรับ primary prophylaxis ในผู้ที่มี high-risk aPL profile แต่ยังไม่เคยมีลิ่มเลือดหรือภาวะแทรกซ้อนจากการตั้งครรภ์"
+          }
+        ],
+        "key_takeaway": "APS triple-positive/arterial → warfarin ไม่ใช่ DOAC"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 52 ปี เป็น primary Sjögren syndrome มีอาการปากแห้งมากจนกลืนอาหารแห้งลำบาก ใช้น้ำลายเทียมและหมากฝรั่งไม่มีน้ำตาลแล้วไม่ดีขึ้น ตรวจพบว่ายังมีการทำงานของต่อมน้ำลายเหลืออยู่ ไม่มีโรคหอบหืดหรือต้อหินมุมปิด ยาที่เหมาะสมที่สุดคือข้อใด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Pilocarpine 5 mg รับประทานวันละ 4 ครั้ง"
+        },
+        {
+          "label": "B",
+          "text": "Hydroxychloroquine 200 mg วันละครั้ง"
+        },
+        {
+          "label": "C",
+          "text": "Amitriptyline 10 mg ก่อนนอน"
+        },
+        {
+          "label": "D",
+          "text": "Rituximab 1 g IV 2 ครั้งห่างกัน 2 สัปดาห์"
+        }
+      ],
+      "correct_answer": "A",
+      "difficulty": "easy",
+      "explanation": "ปากแห้งรุนแรงใน Sjögren ที่ต่อมน้ำลายยังทำงานอยู่และไม่ตอบสนองต่อการรักษาเฉพาะที่ ควรใช้ muscarinic agonist เช่น pilocarpine 5 mg วันละ 4 ครั้ง (หรือ cevimeline) กระตุ้นการหลั่งน้ำลาย",
+      "detailed_explanation": {
+        "summary": "ปากแห้งรุนแรงใน Sjögren ที่ต่อมน้ำลายยังทำงานอยู่และไม่ตอบสนองต่อการรักษาเฉพาะที่ ควรใช้ muscarinic agonist เช่น pilocarpine 5 mg วันละ 4 ครั้ง (หรือ cevimeline) กระตุ้นการหลั่งน้ำลาย",
+        "reason": "โจทย์ถามอะไร: หญิง primary Sjögren syndrome มี xerostomia รุนแรงจนกลืนลำบาก ใช้น้ำลายเทียมและหมากฝรั่งไม่มีน้ำตาลแล้วไม่ดีขึ้น ยังมี residual salivary function และไม่มีหอบหืดหรือต้อหินมุมปิด โจทย์ถามยาที่เหมาะสมที่สุดในขั้นต่อไปสำหรับอาการปากแห้ง\n\nหลักการ/กลไกเชิงลึก: Sjögren เกิดจาก lymphocytic infiltration ของต่อมน้ำลายและน้ำตา ร่วมกับ autoantibody (anti-Ro/SSA, anti-La/SSB) และ anti-M3 receptor antibody ที่ยับยั้งสัญญาณ cholinergic ทำให้หลั่งน้ำลายลดลง pilocarpine เป็น non-selective muscarinic agonist (ออกฤทธิ์เด่นที่ M3 บนต่อมน้ำลายและน้ำตา) กระตุ้นการหลั่งจากเนื้อต่อมที่ยังเหลืออยู่ จึงได้ผลเฉพาะในผู้ที่ยังมีการทำงานของต่อม cevimeline มีความจำเพาะต่อ M1/M3 มากกว่าและ half-life ยาวกว่า\n\nทำไมข้อ A ถูก: pilocarpine 5 mg รับประทานวันละ 4 ครั้ง (อาจเพิ่มได้ถึง 30 mg/วัน) เพิ่มการหลั่งน้ำลายและลดอาการปากแห้งได้อย่างมีนัยสำคัญในการศึกษาแบบสุ่ม เหมาะกับผู้ป่วยที่ล้มเหลวต่อการรักษาเฉพาะที่ ยังมีต่อมเหลือ และไม่มีข้อห้ามใช้ (หอบหืดที่ควบคุมไม่ได้ ต้อหินมุมปิด iritis)\n\nหลักฐานและแนวทางเวชปฏิบัติ: EULAR 2019 สำหรับ Sjögren แนะนำให้ประเมินการทำงานของต่อมน้ำลายก่อน ถ้าเหลือการทำงานน้อย–ปานกลางให้ใช้การกระตุ้นแบบไม่ใช้ยา (หมากฝรั่ง ลูกอมไม่มีน้ำตาล) ถ้าเหลือปานกลางแต่ไม่ดีขึ้นให้ใช้ muscarinic agonist (pilocarpine/cevimeline) เป็นอันดับแรก ถ้าไม่เหลือการทำงานแล้วใช้น้ำลายเทียม/สารทดแทน ส่วน HCQ, immunosuppressant และ rituximab ใช้สำหรับอาการ systemic ไม่ใช่ sicca\n\nการประยุกต์กับผู้ป่วยจริง: เริ่ม 5 mg วันละ 3–4 ครั้ง รับประทานพร้อมอาหารเพื่อลดเหงื่อออกและคลื่นไส้ อาจเริ่มขนาดต่ำแล้วค่อยเพิ่ม ใช้ต่อเนื่องอย่างน้อย 6–12 สัปดาห์เพื่อประเมินผล ระมัดระวังในผู้ที่ใช้ beta-blocker (conduction ผิดปกติ) และยา anticholinergic ที่ลดฤทธิ์ คำแนะนำ: ‘ยานี้อาจทำให้เหงื่อออกมาก หน้าแดง ปัสสาวะบ่อย ดื่มน้ำให้เพียงพอ ระวังการขับรถตอนกลางคืนเพราะอาจทำให้มองในที่มืดไม่ชัด’ ร่วมกับดูแลช่องปาก fluoride และพบทันตแพทย์ทุก 6 เดือน\n\nการติดตามและสัญญาณอันตราย: ติดตามเหงื่อออกมาก (พบบ่อยที่สุด) ปัสสาวะบ่อย หน้าแดง ท้องเสีย หัวใจเต้นช้า หลอดลมหดเกร็ง และการมองเห็นในที่มืดลดลง สำหรับโรคเอง ติดตามต่อมน้ำลายโตถาวร purpura cryoglobulinemia และ C4 ต่ำ เพราะเป็นสัญญาณเสี่ยง B-cell lymphoma\n\nจุดที่มักสับสนและกับดักข้อสอบ: HCQ ใช้สำหรับอาการข้อ ผิวหนัง และอ่อนเพลีย แต่ไม่ได้เพิ่มน้ำลายชัดเจน (JOQUER) amitriptyline มีฤทธิ์ anticholinergic ทำให้ปากแห้งมากขึ้น rituximab สงวนไว้สำหรับ systemic disease รุนแรง เช่น vasculitis หรือ cryoglobulinemia ยาที่ผู้ป่วยใช้อยู่ที่มีฤทธิ์ anticholinergic (TCA, antihistamine รุ่นแรก, oxybutynin) ควรทบทวนและหยุดถ้าทำได้\n\nสรุปท่องสอบ: Sjögren ปากแห้ง: ต่อมเหลือ → หมากฝรั่ง → pilocarpine 5 mg QID/cevimeline 30 mg TID; ไม่เหลือ → น้ำลายเทียม; ข้อห้าม: หอบหืดคุมไม่ได้ ต้อหินมุมปิด; HCQ/rituximab ไว้สำหรับ systemic",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Pilocarpine 5 mg รับประทานวันละ 4 ครั้ง",
+            "explanation": "✓ ถูก — pilocarpine เป็น muscarinic (M3) agonist กระตุ้นต่อมน้ำลายที่ยังเหลืออยู่ ขนาด 5 mg วันละ 4 ครั้ง ตาม EULAR 2019 เป็นยาลำดับแรกเมื่อการกระตุ้นแบบไม่ใช้ยาไม่ได้ผล ผู้ป่วยไม่มีหอบหืดหรือต้อหินมุมปิด ADR เด่นคือเหงื่อออก หน้าแดง ปัสสาวะบ่อย ควรรับประทานพร้อมอาหาร"
+          },
+          {
+            "label": "B",
+            "text": "Hydroxychloroquine 200 mg วันละครั้ง",
+            "explanation": "✗ ผิด — HCQ ใช้ใน Sjögren สำหรับอาการข้ออักเสบ ผื่นผิวหนัง และอาการอ่อนเพลียบางราย แต่การศึกษา JOQUER ไม่พบว่าลดอาการ sicca ได้ดีกว่ายาหลอก จึงไม่ใช่ยาสำหรับปากแห้ง ข้อนี้จะถูกหากผู้ป่วย Sjögren มีปวดข้อหรือข้ออักเสบแบบ non-erosive หรือผื่น annular ที่ต้องการยาพื้นฐานระยะยาว"
+          },
+          {
+            "label": "C",
+            "text": "Amitriptyline 10 mg ก่อนนอน",
+            "explanation": "✗ ผิด — amitriptyline มีฤทธิ์ anticholinergic แรง ทำให้น้ำลายลดลงและปากแห้งมากขึ้น จึงควรหลีกเลี่ยงในผู้ป่วย Sjögren ข้อนี้จะเหมาะในบางสถานการณ์ เช่น neuropathic pain หรือ fibromyalgia ที่ไม่ได้มีปัญหา sicca แต่ถ้าจำเป็นต้องใช้ยากลุ่มนี้ในผู้ป่วย Sjögren ควรเลือก duloxetine หรือ gabapentinoid แทน"
+          },
+          {
+            "label": "D",
+            "text": "Rituximab 1 g IV 2 ครั้งห่างกัน 2 สัปดาห์",
+            "explanation": "✗ ผิด — rituximab เป็น anti-CD20 ที่สงวนไว้สำหรับ systemic manifestation รุนแรงของ Sjögren เช่น cryoglobulinemic vasculitis, severe parotid swelling, peripheral neuropathy หรือ lymphoma การศึกษา TEARS และ TRACTISS ไม่พบประโยชน์ชัดเจนต่ออาการปากแห้ง ข้อนี้จะถูกหากโจทย์เป็น Sjögren ที่มี cryoglobulinemic vasculitis รุนแรง"
+          }
+        ],
+        "key_takeaway": "ปากแห้งใน Sjögren → pilocarpine/cevimeline (M3 agonist) เมื่อยังมีต่อมเหลือ"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 45 ปี เป็น diffuse cutaneous systemic sclerosis มา 1 ปี มาด้วยปวดศีรษะ ความดันโลหิต 190/110 mmHg serum creatinine เพิ่มจาก 0.8 เป็น 2.4 mg/dL ภายใน 1 สัปดาห์ มี microangiopathic hemolytic anemia และ thrombocytopenia ยาที่ควรเลือกเป็นอันดับแรกคือข้อใด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Methylprednisolone 1 g IV วันละครั้ง 3 วัน"
+        },
+        {
+          "label": "B",
+          "text": "Nifedipine เดี่ยว"
+        },
+        {
+          "label": "C",
+          "text": "Losartan เดี่ยว"
+        },
+        {
+          "label": "D",
+          "text": "Captopril โดยเริ่มขนาดต่ำแล้วเพิ่มขนาดทุก 4–8 ชั่วโมงจนคุมความดันได้ และให้ต่อแม้ creatinine สูงขึ้น"
+        }
+      ],
+      "correct_answer": "D",
+      "difficulty": "easy",
+      "explanation": "Scleroderma renal crisis (ความดันสูงเฉียบพลัน ไตวายเร็ว MAHA) รักษาด้วย ACE inhibitor ทันที เช่น captopril เริ่มขนาดต่ำแล้วเพิ่มทุก 4–8 ชั่วโมง และให้ต่อแม้ creatinine สูงขึ้นหรือต้องฟอกไต",
+      "detailed_explanation": {
+        "summary": "Scleroderma renal crisis (ความดันสูงเฉียบพลัน ไตวายเร็ว MAHA) รักษาด้วย ACE inhibitor ทันที เช่น captopril เริ่มขนาดต่ำแล้วเพิ่มทุก 4–8 ชั่วโมง และให้ต่อแม้ creatinine สูงขึ้นหรือต้องฟอกไต",
+        "reason": "โจทย์ถามอะไร: หญิง diffuse cutaneous systemic sclerosis (dcSSc) ระยะแรก (1 ปี) มาด้วยปวดศีรษะ BP 190/110 creatinine เพิ่มจาก 0.8 เป็น 2.4 ใน 1 สัปดาห์ ร่วมกับ microangiopathic hemolytic anemia และ thrombocytopenia เป็นภาพของ scleroderma renal crisis (SRC) โจทย์ถามยาที่ควรเลือกเป็นอันดับแรก\n\nหลักการ/กลไกเชิงลึก: SSc ทำให้ intima ของ interlobular/arcuate artery หนาตัวและเกิด vasospasm ทำให้ juxtaglomerular apparatus ขาดเลือด จึงหลั่ง renin มาก เกิดวงจร renin–angiotensin II → vasoconstriction → ขาดเลือดมากขึ้น และ malignant hypertension พร้อม thrombotic microangiopathy การยับยั้ง ACE ตัดวงจรนี้โดยตรง และยังลด bradykinin breakdown ช่วยขยายหลอดเลือดไต captopril ออกฤทธิ์เร็วและ half-life สั้น ปรับขนาดได้ง่าย\n\nทำไมข้อ D ถูก: ACE inhibitor ทำให้อัตรารอดที่ 1 ปีของ SRC เพิ่มจาก <20% เป็น >75% วิธีให้คือ captopril 6.25–12.5 mg แล้วเพิ่มทีละ 12.5–25 mg ทุก 4–8 ชั่วโมง (สูงสุด ~300 mg/วัน) เป้าหมายลด systolic BP 10–20 mmHg ต่อวันจนกลับสู่ baseline ภายใน 72 ชั่วโมง และต้องให้ต่อแม้ creatinine สูงขึ้นหรือต้องฟอกไต เพราะไตอาจฟื้นได้ในช่วง 6–24 เดือน\n\nหลักฐานและแนวทางเวชปฏิบัติ: EULAR 2017 recommendation for SSc แนะนำ ACE inhibitor ทันทีใน SRC ข้อมูลจาก cohort ขนาดใหญ่ (Steen และคณะ) แสดงประโยชน์ชัดเจน แต่ ACEI ‘เชิงป้องกัน’ ไม่ได้ลดการเกิด SRC และอาจสัมพันธ์กับผลลัพธ์ที่แย่กว่าเมื่อเกิดขึ้น ถ้าคุม BP ไม่ได้ด้วย ACEI ขนาดสูงสุด ให้เพิ่ม calcium channel blocker, alpha-blocker หรือ endothelin receptor antagonist เป็นยาเสริม ไม่ใช่ยาแทน\n\nการประยุกต์กับผู้ป่วยจริง: เภสัชกรควรตรวจสอบรายการยาที่เป็นปัจจัยเสี่ยง ได้แก่ prednisolone >15 mg/วัน (ในข้อนี้ห้ามให้ methylprednisolone pulse) และ cyclosporine ติดตาม BP ทุก 1–4 ชั่วโมงในช่วงปรับยา ติดตาม K+ (hyperkalemia), creatinine, CBC, LDH, haptoglobin และ urine output หลีกเลี่ยงการลด BP เร็วจนเกินไปซึ่งทำให้ไตขาดเลือดมากขึ้น ระวัง NSAID และ contrast media\n\nการติดตามและสัญญาณอันตราย: อาการชัก ตามัว (hypertensive encephalopathy) เหนื่อยจาก pulmonary edema ปัสสาวะออกน้อย หรือ K+ สูง ต้องรักษาเร่งด่วน ผู้ป่วยบางราย (~10%) มี normotensive SRC ซึ่งพยากรณ์โรคแย่กว่า จึงต้องติดตาม creatinine และ MAHA แม้ BP ไม่สูง ผู้ป่วย dcSSc ช่วง 4 ปีแรกที่มี anti-RNA polymerase III ควรวัดความดันเองที่บ้านสม่ำเสมอ\n\nจุดที่มักสับสนและกับดักข้อสอบ: steroid ขนาดสูงเป็น ‘ตัวกระตุ้น’ SRC ไม่ใช่การรักษา นี่ไม่ใช่ TTP ที่ต้อง plasma exchange เป็นหลัก ARB ไม่มีข้อมูลเท่า ACEI ไม่ควรใช้เดี่ยวแทน การหยุด ACEI เพราะ creatinine สูงขึ้นเป็นความผิดพลาดที่พบบ่อยและอันตราย\n\nสรุปท่องสอบ: SRC = dcSSc ระยะแรก + anti-RNA pol III + steroid ขนาดสูง → BP สูง + AKI + MAHA → captopril titrate ทุก 4–8 ชม. ให้ต่อแม้ฟอกไต; CCB เป็นยาเสริม; หลีกเลี่ยง prednisolone >15 mg/วัน",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Methylprednisolone 1 g IV วันละครั้ง 3 วัน",
+            "explanation": "✗ ผิด — glucocorticoid ขนาดสูง (prednisolone >15 mg/วัน) เป็นปัจจัยเสี่ยงที่กระตุ้นให้เกิด scleroderma renal crisis การให้ methylprednisolone pulse จะทำให้ภาวะแย่ลง ข้อนี้จะถูกหากโจทย์เป็น SLE ที่มี lupus nephritis หรือ ANCA vasculitis ที่มี rapidly progressive GN ซึ่งต้องใช้ pulse steroid ร่วมกับยากดภูมิ"
+          },
+          {
+            "label": "B",
+            "text": "Nifedipine เดี่ยว",
+            "explanation": "✗ ผิด — nifedipine ลดความดันได้แต่ไม่ยับยั้งระบบ renin–angiotensin ซึ่งเป็นกลไกหลักของ SRC ใช้เดี่ยว ๆ แล้วผลลัพธ์ทางไตและอัตรารอดด้อยกว่า ACEI อย่างชัดเจน ข้อนี้จะถูกในบทบาทยาเสริมเมื่อให้ ACEI ขนาดสูงสุดแล้วยังคุมความดันไม่ได้ หรือใช้รักษา Raynaud phenomenon ใน SSc"
+          },
+          {
+            "label": "C",
+            "text": "Losartan เดี่ยว",
+            "explanation": "✗ ผิด — ARB ไม่ลด bradykinin breakdown และมีข้อมูลใน SRC น้อยกว่ามาก (ไม่มีหลักฐานเรื่องอัตรารอดแบบ ACEI) มีรายงานผู้ป่วยที่เกิด SRC ระหว่างใช้ ARB จึงไม่แนะนำใช้แทน ACEI ข้อนี้อาจเหมาะในผู้ที่มี angioedema จาก ACEI จริง ๆ หรือใช้ลดความดันและ proteinuria ในโรคไตทั่วไปที่ไม่ใช่ SRC"
+          },
+          {
+            "label": "D",
+            "text": "Captopril โดยเริ่มขนาดต่ำแล้วเพิ่มขนาดทุก 4–8 ชั่วโมงจนคุมความดันได้ และให้ต่อแม้ creatinine สูงขึ้น",
+            "explanation": "✓ ถูก — captopril เริ่ม 6.25–12.5 mg แล้วเพิ่มทุก 4–8 ชั่วโมงจนความดันกลับสู่ baseline ภายใน 72 ชั่วโมง ยับยั้งวงจร renin–angiotensin ที่เป็นกลไกหลัก เพิ่มอัตรารอดชัดเจน และต้องให้ต่อแม้ creatinine สูงขึ้นหรือต้องฟอกไต เพราะไตอาจฟื้นได้ใน 6–24 เดือน ตาม EULAR 2017"
+          }
+        ],
+        "key_takeaway": "Scleroderma renal crisis = ACE inhibitor (captopril) ทันที แม้ creatinine สูง"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 72 ปี มาด้วยปวดศีรษะบริเวณขมับขวาเริ่มใหม่ 3 สัปดาห์ เจ็บหนังศีรษะ ปวดกรามเวลาเคี้ยว (jaw claudication) ESR 92 mm/hr CRP สูง ไม่มีอาการทางตา แพทย์นัดทำ temporal artery biopsy ในสัปดาห์หน้า การรักษาที่เหมาะสมที่สุดคือข้อใด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "รอผล biopsy ก่อนเริ่ม steroid เพื่อไม่ให้ผลตรวจเป็น false negative"
+        },
+        {
+          "label": "B",
+          "text": "เริ่ม prednisolone 40–60 mg/วัน ทันทีโดยไม่ต้องรอผล biopsy"
+        },
+        {
+          "label": "C",
+          "text": "เริ่ม prednisolone 15 mg/วัน แล้วปรับตามอาการ"
+        },
+        {
+          "label": "D",
+          "text": "ให้ naproxen 500 mg วันละ 2 ครั้ง และนัดติดตามหลังผล biopsy"
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "medium",
+      "explanation": "สงสัย giant cell arteritis (ปวดขมับใหม่ เจ็บหนังศีรษะ jaw claudication ESR สูง) ต้องเริ่ม prednisolone ขนาดสูง 40–60 mg/วันทันทีโดยไม่รอผล biopsy เพื่อป้องกันตาบอดถาวร ผลชิ้นเนื้อยังให้ผลบวกได้นาน 2–4 สัปดาห์หลังเริ่ม steroid",
+      "detailed_explanation": {
+        "summary": "สงสัย giant cell arteritis (ปวดขมับใหม่ เจ็บหนังศีรษะ jaw claudication ESR สูง) ต้องเริ่ม prednisolone ขนาดสูง 40–60 mg/วันทันทีโดยไม่รอผล biopsy เพื่อป้องกันตาบอดถาวร ผลชิ้นเนื้อยังให้ผลบวกได้นาน 2–4 สัปดาห์หลังเริ่ม steroid",
+        "reason": "โจทย์ถามอะไร: หญิงอายุ 72 ปี มีปวดศีรษะบริเวณขมับขึ้นใหม่ เจ็บหนังศีรษะ jaw claudication ESR 92 และ CRP สูง ซึ่งมีความน่าจะเป็นสูงของ giant cell arteritis (GCA) ยังไม่มีอาการทางตา และนัด temporal artery biopsy สัปดาห์หน้า โจทย์ถามว่าควรเริ่มรักษาเมื่อใดและขนาดเท่าใด\n\nหลักการ/กลไกเชิงลึก: GCA เป็น large-vessel vasculitis ที่ dendritic cell ในผนังหลอดเลือดถูกกระตุ้น ดึง CD4+ T cell (Th1 สร้าง IFN-γ, Th17 สร้าง IL-17) และ macrophage สร้าง IL-6, IL-1β, MMP และ growth factor ทำให้ intima หนาตัวและหลอดเลือดตีบ แขนงของ ophthalmic artery (posterior ciliary artery) ที่ตีบจะทำให้เกิด arteritic anterior ischemic optic neuropathy ตาบอดถาวรได้ใน 15–20% ของผู้ที่ไม่ได้รับการรักษา และเมื่อข้างหนึ่งบอดแล้วอีกข้างมีความเสี่ยงสูงในไม่กี่วัน glucocorticoid ขนาดสูงยับยั้ง NF-κB และ cytokine เหล่านี้อย่างรวดเร็ว\n\nทำไมข้อ B ถูก: เมื่อสงสัย GCA สูง ต้องเริ่ม prednisolone 40–60 mg/วัน (ประมาณ 1 mg/kg สูงสุด 60 mg) ทันที ไม่ต้องรอ biopsy หรือ imaging เพราะการอักเสบแบบ granulomatous ในผนังหลอดเลือดยังพบได้ใน biopsy ที่ทำภายใน 2 สัปดาห์ (บางรายถึง 4–6 สัปดาห์) หลังเริ่ม steroid ประโยชน์ในการป้องกันตาบอดจึงมากกว่าความเสี่ยงต่อการวินิจฉัยอย่างมาก\n\nหลักฐานและแนวทางเวชปฏิบัติ: EULAR 2018 แนะนำ prednisolone 40–60 mg/วันเป็น induction และให้ทำ biopsy หรือ imaging (ultrasound ของ temporal artery แสดง halo sign) โดยเร็วแต่ไม่ให้ล่าช้าการรักษา ACR/VF 2021 แนะนำ high-dose oral glucocorticoid และใช้ IV methylprednisolone pulse (500–1,000 mg/วัน × 3 วัน) เมื่อมีอาการทางตาหรือ stroke ส่วน tocilizumab แนะนำเป็นยาร่วมเพื่อลด steroid exposure (GiACTA)\n\nการประยุกต์กับผู้ป่วยจริง: ให้ prednisolone ครั้งเดียวตอนเช้าพร้อมอาหาร คงขนาดเริ่มต้น 2–4 สัปดาห์แล้วค่อยลด เป้าหมายเหลือ 15–20 mg/วันใน 2–3 เดือน และ ≤5 mg/วันหลัง 1 ปี เริ่ม calcium + vitamin D และพิจารณา bisphosphonate ป้องกัน GIOP ร่วมกับ PPI ถ้ามีความเสี่ยง GI ติดตามน้ำตาลและความดัน คำแนะนำ: ‘ถ้าตามัว เห็นภาพซ้อน หรือมองไม่เห็นชั่วขณะ ให้มาโรงพยาบาลทันที ห้ามหยุดยาเอง’\n\nการติดตามและสัญญาณอันตราย: visual disturbance (amaurosis fugax, diplopia) เป็นภาวะฉุกเฉิน ต้องให้ IV pulse ทันที ติดตามอาการปวดศีรษะ jaw claudication อาการ PMR ร่วม ESR/CRP เป็นระยะ ADR ของ steroid ระยะยาว ได้แก่ hyperglycemia, hypertension, osteoporosis, ต้อกระจก, การติดเชื้อ ในระยะยาวติดตาม aortic aneurysm ด้วย imaging\n\nจุดที่มักสับสนและกับดักข้อสอบ: ความกลัวผล biopsy false negative (ข้อ A) ไม่ใช่เหตุผลในการรอ prednisolone 15 mg (ข้อ C) เป็นขนาดสำหรับ PMR ไม่พอป้องกันตาบอดใน GCA NSAID (ข้อ D) ไม่มีบทบาทในการควบคุม vasculitis ห้ามสับสนระหว่าง PMR (ไหล่ สะโพก ไม่มีอาการหลอดเลือด) กับ GCA ซึ่งอาจเกิดร่วมกันได้\n\nสรุปท่องสอบ: GCA สงสัย → prednisolone 40–60 mg ทันที → biopsy/US ภายใน 1–2 สัปดาห์; ตาผิดปกติ → IV methylprednisolone pulse; PMR → 12.5–25 mg; tocilizumab ช่วยลด steroid",
+        "choices": [
+          {
+            "label": "A",
+            "text": "รอผล biopsy ก่อนเริ่ม steroid เพื่อไม่ให้ผลตรวจเป็น false negative",
+            "explanation": "✗ ผิด — การรอผล biopsy เสี่ยงต่อการเกิดตาบอดถาวรซึ่งเกิดได้เร็วและไม่ฟื้นตัว ขณะที่ histology ยังพบการอักเสบได้ภายใน 2–4 สัปดาห์หลังเริ่ม steroid การรอจึงไม่ได้ประโยชน์ ข้อนี้อาจพอรับได้เฉพาะเมื่อความน่าจะเป็นของ GCA ต่ำมาก (ไม่มีอาการเฉพาะ ESR/CRP ปกติ) และสามารถทำ biopsy หรือ ultrasound ได้ภายในวันเดียวกัน"
+          },
+          {
+            "label": "B",
+            "text": "เริ่ม prednisolone 40–60 mg/วัน ทันทีโดยไม่ต้องรอผล biopsy",
+            "explanation": "✓ ถูก — prednisolone 40–60 mg/วันทันทีเมื่อสงสัย GCA ตาม EULAR 2018 และ ACR/VF 2021 ป้องกัน arteritic ischemic optic neuropathy ขณะที่ biopsy ยังให้ผลบวกได้หากทำภายใน 1–2 สัปดาห์ ถ้ามีอาการทางตาให้ IV methylprednisolone pulse แทน เริ่มป้องกัน GIOP และพิจารณา tocilizumab เพื่อลด steroid"
+          },
+          {
+            "label": "C",
+            "text": "เริ่ม prednisolone 15 mg/วัน แล้วปรับตามอาการ",
+            "explanation": "✗ ผิด — prednisolone 15 mg/วันเป็นขนาดเริ่มต้นสำหรับ polymyalgia rheumatica ซึ่งไม่มี vasculitis ของหลอดเลือดแดงขนาดใหญ่ ขนาดนี้ต่ำเกินไปในการป้องกันการตีบของ posterior ciliary artery ใน GCA ข้อนี้จะถูกหากผู้ป่วยมีเพียงปวดฝืดไหล่และสะโพกโดยไม่มีปวดศีรษะ jaw claudication หรืออาการทางตา"
+          },
+          {
+            "label": "D",
+            "text": "ให้ naproxen 500 mg วันละ 2 ครั้ง และนัดติดตามหลังผล biopsy",
+            "explanation": "✗ ผิด — NSAID ลดปวดได้บ้างแต่ไม่ยับยั้งการอักเสบแบบ granulomatous ของผนังหลอดเลือด จึงไม่ป้องกันตาบอดหรือ stroke และยังเพิ่มความเสี่ยง GI bleed/ไตในผู้สูงอายุ ข้อนี้อาจเหมาะกับอาการปวดศีรษะแบบ tension-type หรือปวดข้อจาก OA ที่ไม่มีลักษณะ GCA และ ESR/CRP ปกติ"
+          }
+        ],
+        "key_takeaway": "GCA: steroid ก่อน biopsy — ตาสำคัญกว่าผลชิ้นเนื้อ"
+      }
+    },
+    {
+      "scenario": "เด็กชายอายุ 3 ปี น้ำหนัก 14 kg มีไข้สูงต่อเนื่อง 6 วัน ร่วมกับตาแดงทั้งสองข้างโดยไม่มีขี้ตา ริมฝีปากแดงแตกและลิ้นแดงแบบ strawberry tongue ผื่นแดงทั่วตัว มือเท้าบวมแดง และต่อมน้ำเหลืองที่คอโต 1.8 cm ข้างเดียว echocardiogram ยังไม่พบ coronary aneurysm ได้รับการวินิจฉัย Kawasaki disease เด็กมีนัดรับวัคซีน varicella (วัคซีนเชื้อเป็น) ในสัปดาห์หน้า ข้อใดถูกต้องที่สุดเกี่ยวกับการรักษาและการวางแผนวัคซีน",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ให้ aspirin 3–5 mg/kg/วัน เดี่ยว ๆ และสงวน IVIG ไว้เมื่อ echocardiogram พบ coronary aneurysm แล้ว"
+        },
+        {
+          "label": "B",
+          "text": "IVIG 2 g/kg (28 g) ร่วมกับ aspirin และให้วัคซีน varicella ตามนัดในสัปดาห์หน้าได้เลย"
+        },
+        {
+          "label": "C",
+          "text": "IVIG 2 g/kg (28 g) IV ครั้งเดียวนาน 10–12 ชั่วโมง ร่วมกับ aspirin ขนาดปานกลาง–สูงจนไข้ลง แล้วลดเป็น 3–5 mg/kg/วัน และเลื่อนวัคซีนเชื้อเป็นออกไปประมาณ 11 เดือนหลังได้ IVIG"
+        },
+        {
+          "label": "D",
+          "text": "Prednisolone 2 mg/kg/วัน แทน IVIG และใช้ ibuprofen ลดไข้ร่วมกับ aspirin"
+        }
+      ],
+      "correct_answer": "C",
+      "difficulty": "hard",
+      "explanation": "Kawasaki disease ให้ IVIG 2 g/kg (14 kg × 2 = 28 g) ครั้งเดียวภายใน 10 วันแรกของไข้ ร่วมกับ aspirin ขนาดปานกลาง–สูงแล้วลดเป็นขนาดต่ำ และต้องเลื่อนวัคซีนเชื้อเป็น (MMR, varicella) ประมาณ 11 เดือนเพราะ antibody ใน IVIG ยับยั้งการตอบสนองต่อวัคซีน",
+      "detailed_explanation": {
+        "summary": "Kawasaki disease ให้ IVIG 2 g/kg (14 kg × 2 = 28 g) ครั้งเดียวภายใน 10 วันแรกของไข้ ร่วมกับ aspirin ขนาดปานกลาง–สูงแล้วลดเป็นขนาดต่ำ และต้องเลื่อนวัคซีนเชื้อเป็น (MMR, varicella) ประมาณ 11 เดือนเพราะ antibody ใน IVIG ยับยั้งการตอบสนองต่อวัคซีน",
+        "reason": "โจทย์ถามอะไร: เด็ก 3 ปี ไข้ ≥5 วันร่วมกับ principal features 5 ข้อ (ตาแดงไม่มีขี้ตา, ปากและลิ้นเปลี่ยนแปลง, ผื่น, มือเท้าบวมแดง, ต่อมน้ำเหลืองคอ ≥1.5 cm) จึงเป็น complete Kawasaki disease โจทย์ทดสอบทั้งขนาดและวิธีให้ IVIG, การใช้ aspirin และผลของ IVIG ต่อวัคซีนเชื้อเป็นที่นัดไว้\n\nหลักการ/กลไกเชิงลึก: Kawasaki เป็น medium-vessel vasculitis ในเด็กเล็ก ซึ่งมีความเสี่ยงหลักคือ coronary artery aneurysm (~25% หากไม่รักษา) IVIG ขนาดสูงลดการอักเสบผ่าน Fc receptor blockade และลด cytokine จึงลดอุบัติการณ์ aneurysm เหลือ ~4–5% aspirin ขนาดปานกลาง–สูงให้ฤทธิ์ต้านการอักเสบช่วงไข้ ส่วนขนาดต่ำยับยั้ง COX-1 ในเกล็ดเลือดเพื่อป้องกันลิ่มเลือดใน coronary ที่ผิดปกติ antibody จำนวนมากใน IVIG จะ neutralize ไวรัสวัคซีนเชื้อเป็นก่อนที่ภูมิจะเกิด จึงต้องเลื่อนวัคซีน\n\nทำไมข้อ C ถูก: คำนวณ IVIG 2 g/kg × 14 kg = 28 g ให้ครั้งเดียวต่อเนื่อง 10–12 ชั่วโมง ภายใน 10 วันแรกของไข้ (ยิ่งเร็วยิ่งดี) ร่วมกับ aspirin 30–50 mg/kg/วัน (420–700 mg/วัน) หรือ 80–100 mg/kg/วัน จนไข้ลง 48–72 ชั่วโมง แล้วลดเป็น 3–5 mg/kg/วัน (42–70 mg/วัน) ต่อ 4–6 สัปดาห์ และเลื่อนวัคซีน varicella/MMR ไปประมาณ 11 เดือน ข้อ C จึงถูกครบทุกองค์ประกอบ\n\nหลักฐานและแนวทางเวชปฏิบัติ: AHA Scientific Statement 2017 แนะนำ IVIG 2 g/kg single infusion ร่วม aspirin สำหรับผู้ป่วยทุกรายที่วินิจฉัยภายใน 10 วัน (หรือหลังวันที่ 10 หากยังมีไข้หรือมีการอักเสบ) ส่วน ACIP/CDC ระบุช่วงห่างระหว่าง IVIG 2 g/kg กับวัคซีน MMR/varicella 11 เดือน และถ้าได้วัคซีนเชื้อเป็นไปไม่เกิน 14 วันก่อน IVIG ต้องฉีดซ้ำ วัคซีนเชื้อตายไม่ถูกรบกวน แนะนำ inactivated influenza vaccine รายปีในเด็กที่ได้ aspirin ระยะยาว\n\nการประยุกต์กับผู้ป่วยจริง: เริ่ม IVIG อัตราช้าในชั่วโมงแรก ติดตาม infusion reaction (ไข้ หนาวสั่น ความดันต่ำ) ระวัง volume overload เพราะปริมาตรมาก และ hemolysis ให้ aspirin พร้อมอาหาร หลีกเลี่ยง ibuprofen ระหว่างใช้ aspirin ขนาดต่ำ คำแนะนำผู้ปกครอง: ‘ถ้าลูกเป็นไข้หวัดใหญ่หรืออีสุกอีใสระหว่างกินแอสไพริน ให้ติดต่อแพทย์ทันทีเพราะเสี่ยง Reye syndrome และแจ้งคลินิกวัคซีนว่าลูกได้ IVIG เพื่อเลื่อนวัคซีนเชื้อเป็น’\n\nการติดตามและสัญญาณอันตราย: ไข้ไม่ลงหรือกลับมาเป็นซ้ำ ≥36 ชั่วโมงหลังหยุด IVIG = IVIG-resistant (~10–20%) ต้องให้ IVIG ครั้งที่ 2 หรือ steroid/infliximab ทำ echocardiogram ซ้ำที่ 1–2 และ 4–6 สัปดาห์ ติดตามผิวลอกที่ปลายนิ้ว อาการ Reye (อาเจียนรุนแรง ซึม สับสน) และเลือดออกผิดปกติ\n\nจุดที่มักสับสนและกับดักข้อสอบ: IVIG ให้เพื่อ ‘ป้องกัน’ aneurysm ไม่ใช่รอให้เกิดก่อน (ข้อ A) การฉีด varicella ตามนัดหลัง IVIG จะไม่เกิดภูมิ (ข้อ B) steroid เดี่ยวไม่ใช่ first-line แทน IVIG และ ibuprofen แย่งจับ COX-1 ทำให้ aspirin ต้านเกล็ดเลือดไม่ได้ (ข้อ D) Kawasaki เป็นข้อยกเว้นที่ใช้ aspirin ในเด็กได้ ต่างจากไข้ไวรัสทั่วไปที่ห้ามเพราะ Reye syndrome\n\nสรุปท่องสอบ: Kawasaki = ไข้ ≥5 วัน + 4/5 อาการ → IVIG 2 g/kg ครั้งเดียว + aspirin สูง/ปานกลาง → ต่ำ 3–5 mg/kg 6 สัปดาห์; เลื่อน MMR/varicella 11 เดือน; ฉีดไข้หวัดใหญ่เชื้อตาย; ห้าม ibuprofen ร่วม",
+        "calculation_steps": [
+          "IVIG = 2 g/kg × 14 kg = 28 g ให้ครั้งเดียว infusion 10–12 ชั่วโมง",
+          "Aspirin ขนาดปานกลาง 30–50 mg/kg/วัน = 420–700 mg/วัน แบ่งให้ทุก 6 ชั่วโมง (ขนาดสูง 80–100 mg/kg/วัน = 1,120–1,400 mg/วัน)",
+          "เมื่อไข้ลง 48–72 ชั่วโมง ลดเป็น 3–5 mg/kg/วัน = 42–70 mg/วัน วันละครั้ง ต่อ 4–6 สัปดาห์ (หรือจนกว่า echo ปกติ)",
+          "วัคซีนเชื้อเป็น (MMR, varicella) เลื่อนไป ≈11 เดือนหลัง IVIG 2 g/kg"
+        ],
+        "choices": [
+          {
+            "label": "A",
+            "text": "ให้ aspirin 3–5 mg/kg/วัน เดี่ยว ๆ และสงวน IVIG ไว้เมื่อ echocardiogram พบ coronary aneurysm แล้ว",
+            "explanation": "✗ ผิด — IVIG ให้ภายใน 10 วันแรกของไข้เพื่อป้องกันการเกิด coronary aneurysm หากรอจนพบ aneurysm แล้วจะเสียโอกาส aspirin เดี่ยวไม่ลดอุบัติการณ์ aneurysm ข้อนี้จะใกล้เคียงความจริงเฉพาะในเด็กที่มาหลังวันที่ 10 ซึ่งไข้หายแล้ว ไม่มีการอักเสบ (CRP/ESR ปกติ) และ echo ปกติ ซึ่งอาจให้เพียง aspirin ขนาดต่ำและติดตาม"
+          },
+          {
+            "label": "B",
+            "text": "IVIG 2 g/kg (28 g) ร่วมกับ aspirin และให้วัคซีน varicella ตามนัดในสัปดาห์หน้าได้เลย",
+            "explanation": "✗ ผิด — ขนาด IVIG 28 g และการให้ aspirin ถูกต้อง แต่ antibody ใน IVIG จะ neutralize ไวรัสในวัคซีน varicella และ MMR ทำให้ไม่เกิดภูมิคุ้มกัน ต้องเลื่อนไปประมาณ 11 เดือน นอกจากนี้ varicella vaccine ระหว่างใช้ aspirin เสี่ยง Reye syndrome ข้อนี้จะถูกหากวัคซีนที่นัดเป็นวัคซีนเชื้อตาย เช่น DTaP หรือ inactivated influenza ซึ่งให้ได้ตามปกติ"
+          },
+          {
+            "label": "C",
+            "text": "IVIG 2 g/kg (28 g) IV ครั้งเดียวนาน 10–12 ชั่วโมง ร่วมกับ aspirin ขนาดปานกลาง–สูงจนไข้ลง แล้วลดเป็น 3–5 mg/kg/วัน และเลื่อนวัคซีนเชื้อเป็นออกไปประมาณ 11 เดือนหลังได้ IVIG",
+            "explanation": "✓ ถูก — IVIG 2 g/kg = 28 g ครั้งเดียวนาน 10–12 ชั่วโมง ร่วม aspirin 30–50 หรือ 80–100 mg/kg/วันจนไข้ลง 48–72 ชั่วโมง แล้วลดเป็น 3–5 mg/kg/วันต่อ 4–6 สัปดาห์ ตาม AHA 2017 และเลื่อนวัคซีนเชื้อเป็นออกไป ≈11 เดือนตาม ACIP ลดอุบัติการณ์ coronary aneurysm จาก ~25% เหลือ ~4–5%"
+          },
+          {
+            "label": "D",
+            "text": "Prednisolone 2 mg/kg/วัน แทน IVIG และใช้ ibuprofen ลดไข้ร่วมกับ aspirin",
+            "explanation": "✗ ผิด — steroid เดี่ยวไม่ใช่ first-line แทน IVIG (ใช้เสริมในผู้ที่เสี่ยง IVIG resistance สูงหรือ IVIG-refractory) และ ibuprofen แย่งจับตำแหน่ง COX-1 ทำให้ aspirin acetylate เกล็ดเลือดไม่ได้ AHA จึงแนะนำหลีกเลี่ยง ibuprofen ในเด็กที่ใช้ aspirin ต้านเกล็ดเลือด ข้อนี้ใกล้เคียงหากเป็นเด็กที่ดื้อต่อ IVIG ซึ่งพิจารณา steroid ร่วมกับ IVIG ครั้งที่สอง"
+          }
+        ],
+        "key_takeaway": "Kawasaki: IVIG 2 g/kg + aspirin → เลื่อนวัคซีนเชื้อเป็น 11 เดือน"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 70 ปี มาด้วยปวดและข้อฝืดตอนเช้านานกว่า 1 ชั่วโมงบริเวณไหล่และสะโพกทั้งสองข้าง 6 สัปดาห์ ESR 60 mm/hr ไม่มีปวดศีรษะ ปวดกราม หรืออาการทางตา ไม่มีข้ออักเสบส่วนปลาย ได้รับการวินิจฉัย polymyalgia rheumatica การรักษาเริ่มต้นที่เหมาะสมคือข้อใด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Prednisolone 15 mg/วัน แล้วค่อย ๆ ลดขนาดเมื่ออาการดีขึ้น"
+        },
+        {
+          "label": "B",
+          "text": "Prednisolone 60 mg/วัน"
+        },
+        {
+          "label": "C",
+          "text": "Methotrexate 15 mg/สัปดาห์ เดี่ยว ๆ"
+        },
+        {
+          "label": "D",
+          "text": "Methylprednisolone 1 g IV วันละครั้ง 3 วัน"
+        }
+      ],
+      "correct_answer": "A",
+      "difficulty": "easy",
+      "explanation": "Polymyalgia rheumatica ที่ไม่มีลักษณะ GCA เริ่ม prednisolone ขนาดต่ำที่สุดที่ได้ผลในช่วง 12.5–25 mg/วัน (เช่น 15 mg) อาการมักดีขึ้นชัดใน 1 สัปดาห์ แล้วค่อย ๆ ลดขนาด",
+      "detailed_explanation": {
+        "summary": "Polymyalgia rheumatica ที่ไม่มีลักษณะ GCA เริ่ม prednisolone ขนาดต่ำที่สุดที่ได้ผลในช่วง 12.5–25 mg/วัน (เช่น 15 mg) อาการมักดีขึ้นชัดใน 1 สัปดาห์ แล้วค่อย ๆ ลดขนาด",
+        "reason": "โจทย์ถามอะไร: หญิงอายุ 70 ปี ปวดและฝืดไหล่และสะโพกทั้งสองข้างตอนเช้า >1 ชั่วโมง นาน 6 สัปดาห์ ESR 60 ไม่มีอาการของ GCA (ปวดศีรษะ ปวดกราม อาการทางตา) และไม่มีข้ออักเสบส่วนปลาย ได้รับการวินิจฉัย polymyalgia rheumatica (PMR) โจทย์ถามการรักษาเริ่มต้นที่เหมาะสม\n\nหลักการ/กลไกเชิงลึก: PMR เป็นการอักเสบของ bursa และ synovium รอบข้อไหล่และสะโพก (subdeltoid/subacromial bursitis, trochanteric bursitis) โดยมี IL-6 สูงเป็นตัวขับเคลื่อน อาการตอบสนองต่อ glucocorticoid ขนาดต่ำอย่างรวดเร็วและชัดเจน เพราะ steroid ยับยั้งการสร้าง IL-6 และ cytokine อื่นผ่าน glucocorticoid receptor การตอบสนองที่ดีภายในไม่กี่วันยังช่วยสนับสนุนการวินิจฉัย ขณะที่ GCA ต้องใช้ขนาดสูงกว่าเพราะต้องดับการอักเสบในผนังหลอดเลือดแดงเพื่อป้องกันตาบอด\n\nทำไมข้อ A ถูก: prednisolone 15 mg/วันอยู่ในช่วง 12.5–25 mg/วันที่แนะนำ เป็นขนาดต่ำสุดที่ได้ผลสำหรับผู้ป่วยทั่วไป เมื่ออาการดีขึ้น (มักภายใน 1–2 สัปดาห์) ให้ลดลงเหลือ 10 mg/วันภายใน 4–8 สัปดาห์ แล้วลดครั้งละ 1 mg ทุก 4 สัปดาห์ (หรือแบบวันเว้นวันสลับ) จนหยุด รวมระยะเวลามักอย่างน้อย 1–2 ปี\n\nหลักฐานและแนวทางเวชปฏิบัติ: EULAR/ACR 2015 recommendations for PMR แนะนำเริ่ม prednisolone 12.5–25 mg/วัน (ขนาดสูงในช่วงนี้สำหรับผู้ที่เสี่ยงกลับเป็นซ้ำ ขนาดต่ำในผู้ที่มีโรคร่วม เช่น เบาหวาน กระดูกพรุน ต้อหิน) ไม่แนะนำขนาดเริ่มต้น ≤7.5 หรือ >30 mg/วัน แนะนำพิจารณา MTX ร่วมตั้งแต่ต้นในผู้ที่เสี่ยงกลับเป็นซ้ำหรือมีโรคร่วมจาก steroid และ IM methylprednisolone เป็นทางเลือก ปัจจุบัน tocilizumab และ sarilumab มีหลักฐานในผู้ที่ relapse\n\nการประยุกต์กับผู้ป่วยจริง: ให้ prednisolone ครั้งเดียวตอนเช้าหลังอาหาร เริ่ม calcium + vitamin D และประเมินความเสี่ยงกระดูกพรุนเพื่อพิจารณา bisphosphonate ตรวจน้ำตาลและความดัน คำแนะนำ: ‘ถ้าอาการดีขึ้นแล้วห้ามหยุดยาเอง ต้องลดตามแพทย์สั่ง และถ้ามีปวดศีรษะขมับ เจ็บหนังศีรษะ ปวดกรามเวลาเคี้ยว หรือตามัว ให้มาโรงพยาบาลทันทีเพราะอาจเป็นโรคหลอดเลือดแดงอักเสบที่ต้องเพิ่มยา’\n\nการติดตามและสัญญาณอันตราย: ติดตามอาการ ESR/CRP ทุก 4–8 สัปดาห์ในปีแรก relapse พบได้ 30–50% ขณะลดยา ให้กลับไปใช้ขนาดก่อนหน้าที่ควบคุมได้ ผู้ที่ไม่ตอบสนองต่อ 15–20 mg ภายใน 1–2 สัปดาห์ต้องทบทวนการวินิจฉัย (late-onset RA, มะเร็ง, การติดเชื้อ, GCA) และติดตาม ADR ของ steroid ระยะยาว\n\nจุดที่มักสับสนและกับดักข้อสอบ: 60 mg/วัน (ข้อ B) เป็นขนาดของ GCA ไม่ใช่ PMR และเพิ่ม ADR โดยไม่จำเป็น MTX เดี่ยว (ข้อ C) ออกฤทธิ์ช้า บทบาทคือ steroid-sparing ร่วมกับ steroid ไม่ใช่ใช้แทน IV pulse (ข้อ D) สงวนไว้สำหรับ GCA ที่มีอาการทางตา NSAID ไม่เพียงพอสำหรับ PMR ส่วนใหญ่\n\nสรุปท่องสอบ: PMR → prednisolone 12.5–25 mg/วัน (เช่น 15) → 10 mg ใน 4–8 สัปดาห์ → ลด 1 mg/เดือน; ± MTX steroid-sparing; สอนสัญญาณ GCA; ป้องกันกระดูกพรุน",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Prednisolone 15 mg/วัน แล้วค่อย ๆ ลดขนาดเมื่ออาการดีขึ้น",
+            "explanation": "✓ ถูก — prednisolone 15 mg/วันอยู่ในช่วง 12.5–25 mg/วันที่ EULAR/ACR 2015 แนะนำสำหรับ PMR อาการมักดีขึ้นชัดภายใน 1–2 สัปดาห์ แล้วลดลงเหลือ 10 mg ใน 4–8 สัปดาห์และลดช้า ๆ ต่อ ร่วมกับป้องกันกระดูกพรุนจาก steroid และสอนผู้ป่วยให้สังเกตอาการของ GCA ที่ต้องมาพบแพทย์ทันที"
+          },
+          {
+            "label": "B",
+            "text": "Prednisolone 60 mg/วัน",
+            "explanation": "✗ ผิด — prednisolone 60 mg/วันเป็นขนาดสำหรับ giant cell arteritis ซึ่งต้องป้องกันตาบอด ผู้ป่วยรายนี้ไม่มีปวดศีรษะ ปวดกราม หรืออาการทางตา การใช้ขนาดสูงเกินจำเป็นใน PMR เพิ่มความเสี่ยงเบาหวาน กระดูกพรุน และการติดเชื้อในผู้สูงอายุ ข้อนี้จะถูกหากผู้ป่วยมีอาการของ GCA ร่วมด้วย"
+          },
+          {
+            "label": "C",
+            "text": "Methotrexate 15 mg/สัปดาห์ เดี่ยว ๆ",
+            "explanation": "✗ ผิด — methotrexate เดี่ยวออกฤทธิ์ช้าและไม่ได้เป็นยาหลักใน PMR บทบาทคือ steroid-sparing agent 7.5–10 mg/สัปดาห์ร่วมกับ prednisolone ในผู้ที่เสี่ยง relapse สูงหรือมีโรคร่วมที่ไวต่อ steroid ข้อนี้จะเหมาะเมื่อผู้ป่วยมีข้ออักเสบส่วนปลายแบบ late-onset RA ที่เลียนแบบ PMR หรือใช้ร่วมกับ steroid ในรายที่ relapse บ่อย"
+          },
+          {
+            "label": "D",
+            "text": "Methylprednisolone 1 g IV วันละครั้ง 3 วัน",
+            "explanation": "✗ ผิด — IV methylprednisolone pulse 1 g × 3 วันสงวนไว้สำหรับภาวะคุกคามอวัยวะ เช่น GCA ที่มีอาการทางตา ANCA vasculitis หรือ lupus nephritis การใช้ใน PMR ไม่จำเป็นและเพิ่ม ADR (น้ำตาลสูง ความดันสูง ติดเชื้อ) ข้อนี้จะถูกหากผู้ป่วย GCA มี amaurosis fugax หรือสูญเสียการมองเห็น"
+          }
+        ],
+        "key_takeaway": "PMR 12.5–25 mg — GCA 40–60 mg — ตาผิดปกติ IV pulse"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยชายอายุ 30 ปี เป็น axial spondyloarthritis (BASDAI 6.2) ใช้ naproxen และ etoricoxib ขนาดเต็มที่ต่อเนื่องอย่างละ 4 สัปดาห์แล้วไม่ดีขึ้น มีประวัติ acute anterior uveitis กำเริบ 3 ครั้งในปีที่ผ่านมา และเป็น Crohn's disease ที่ยังมีอาการ ผล TB screening ลบ ยาชีววัตถุที่เหมาะสมที่สุดคือข้อใด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Secukinumab 150 mg SC"
+        },
+        {
+          "label": "B",
+          "text": "Etanercept 50 mg SC สัปดาห์ละครั้ง"
+        },
+        {
+          "label": "C",
+          "text": "Sulfasalazine 1 g วันละ 2 ครั้ง"
+        },
+        {
+          "label": "D",
+          "text": "Adalimumab 40 mg SC ทุก 2 สัปดาห์"
+        }
+      ],
+      "correct_answer": "D",
+      "difficulty": "hard",
+      "explanation": "Axial SpA ที่ล้มเหลวต่อ NSAID 2 ชนิดและมี recurrent anterior uveitis ร่วมกับ active Crohn's disease ควรเลือก monoclonal anti-TNF เช่น adalimumab ซึ่งได้ผลทั้งข้อ ตา และลำไส้",
+      "detailed_explanation": {
+        "summary": "Axial SpA ที่ล้มเหลวต่อ NSAID 2 ชนิดและมี recurrent anterior uveitis ร่วมกับ active Crohn's disease ควรเลือก monoclonal anti-TNF เช่น adalimumab ซึ่งได้ผลทั้งข้อ ตา และลำไส้",
+        "reason": "โจทย์ถามอะไร: ชาย 30 ปี axial SpA BASDAI 6.2 ล้มเหลวต่อ NSAID 2 ชนิดขนาดเต็ม (ครบเกณฑ์ใช้ bDMARD) และมี extra-musculoskeletal manifestations สองอย่าง คือ acute anterior uveitis กำเริบ 3 ครั้งต่อปี และ active Crohn's disease โจทย์ให้เลือก biologic ที่ครอบคลุมทุกปัญหา\n\nหลักการ/กลไกเชิงลึก: TNF-α เป็น cytokine หลักใน enthesitis, uveitis และการอักเสบของลำไส้ monoclonal anti-TNF (adalimumab, infliximab, golimumab, certolizumab) จับทั้ง soluble และ transmembrane TNF ทำให้ activated T cell ในเยื่อบุลำไส้เกิด apoptosis (reverse signaling) จึงได้ผลใน Crohn's ส่วน etanercept เป็น soluble TNF receptor–Fc fusion protein จับ transmembrane TNF ได้น้อยกว่าและไม่ทำให้ lamina propria T cell ตาย จึงไม่ได้ผลใน IBD และป้องกัน uveitis ได้ด้อยกว่า IL-17A มีบทบาทป้องกันเยื่อบุลำไส้ (barrier function) การยับยั้ง IL-17 จึงทำให้ Crohn's แย่ลง\n\nทำไมข้อ D ถูก: adalimumab 40 mg SC ทุก 2 สัปดาห์ได้รับการรับรองทั้ง axial SpA, non-infectious uveitis (VISUAL) และ Crohn's disease (แม้ใน Crohn's จะใช้ loading 160/80 mg แล้ว 40 mg ทุก 2 สัปดาห์) ลดความถี่ของ uveitis flare ได้ราว 50% ขึ้นไป จึงเป็นยาที่ครอบคลุมทั้งสามปัญหามากที่สุด\n\nหลักฐานและแนวทางเวชปฏิบัติ: ASAS-EULAR 2022 แนะนำว่าในผู้ป่วยที่มี recurrent uveitis หรือ IBD ควรเลือก monoclonal anti-TNF มากกว่า IL-17 inhibitor และในผู้ที่มี IBD ให้หลีกเลี่ยง IL-17i และ etanercept ACR/SAA/SPARTAN 2019 แนะนำ TNFi monoclonal antibody มากกว่า etanercept เมื่อมี IBD หรือ recurrent iritis เช่นเดียวกัน\n\nการประยุกต์กับผู้ป่วยจริง: ก่อนเริ่มตรวจ TB (ผลลบแล้ว), HBV/HCV, ทบทวนวัคซีนเชื้อตายและพิจารณา recombinant zoster ห้ามวัคซีนเชื้อเป็นระหว่างใช้ยา สอนฉีดยา SC ที่หน้าท้องหรือต้นขา เก็บยาในตู้เย็น 2–8 °C ห้ามแช่แข็ง นำออกมาวาง 15–30 นาทีก่อนฉีด หมุนเวียนตำแหน่ง คำแนะนำ: ‘ถ้ามีไข้ ไอเรื้อรัง น้ำหนักลด ให้หยุดฉีดชั่วคราวและมาพบแพทย์ ถ้าตาแดงปวดตากลัวแสงให้พบจักษุแพทย์ภายใน 24 ชั่วโมง’\n\nการติดตามและสัญญาณอันตราย: ติดตาม BASDAI/ASDAS ที่ 12–16 สัปดาห์ (ตอบสนอง = ASDAS ลด ≥1.1 หรือ BASDAI ลด ≥2) ติดตามการติดเชื้อรุนแรง TB reactivation, injection site reaction, paradoxical psoriasis, demyelinating disease, heart failure ที่แย่ลง และ lupus-like syndrome ประเมินอาการลำไส้ร่วมกับแพทย์ทางเดินอาหาร\n\nจุดที่มักสับสนและกับดักข้อสอบ: secukinumab ได้ผลดีใน axSpA และ psoriasis แต่ทำให้ IBD กำเริบหรือเกิดใหม่ etanercept ไม่ได้ผลใน IBD และอาจสัมพันธ์กับ uveitis เกิดใหม่ sulfasalazine (ข้อ C) ไม่ได้ผลกับอาการกระดูกสันหลัง แม้ช่วย peripheral arthritis และ ulcerative colitis การมี IBD/uveitis เป็นตัวกำหนดเลือกยา ไม่ใช่ราคาหรือความสะดวก\n\nสรุปท่องสอบ: axSpA ล้มเหลว NSAID ≥2 ตัว → bDMARD; มี uveitis/IBD → adalimumab/infliximab/golimumab/certolizumab; มี psoriasis เด่น → IL-17i; IBD → ห้าม IL-17i และ etanercept",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Secukinumab 150 mg SC",
+            "explanation": "✗ ผิด — secukinumab (anti-IL-17A) ได้ผลดีต่อ axial SpA และ psoriasis แต่ IL-17 มีบทบาทปกป้องเยื่อบุลำไส้ การยับยั้งจึงทำให้ Crohn's disease กำเริบ และมีข้อมูลป้องกัน uveitis น้อย ข้อนี้จะเป็นตัวเลือกที่ดีในผู้ป่วย axSpA หรือ PsA ที่มี psoriasis เด่น ไม่มี IBD หรือล้มเหลวต่อ TNF inhibitor มาก่อน"
+          },
+          {
+            "label": "B",
+            "text": "Etanercept 50 mg SC สัปดาห์ละครั้ง",
+            "explanation": "✗ ผิด — etanercept เป็น TNF receptor–Fc fusion protein ได้ผลต่ออาการข้อและกระดูกสันหลังของ axSpA แต่ไม่ได้ผลใน Crohn's disease และป้องกัน uveitis ด้อยกว่า monoclonal anti-TNF (บางรายเกิด uveitis ใหม่) ข้อนี้จะเหมาะกับผู้ป่วย axSpA ที่ไม่มี IBD หรือ uveitis ซ้ำ หรือผู้ที่เสี่ยง TB สูงเพราะมีความเสี่ยง TB reactivation ต่ำกว่า"
+          },
+          {
+            "label": "C",
+            "text": "Sulfasalazine 1 g วันละ 2 ครั้ง",
+            "explanation": "✗ ผิด — sulfasalazine เป็น csDMARD ที่ไม่ได้ผลต่ออาการกระดูกสันหลังและ sacroiliitis ของ axial SpA แม้จะช่วย peripheral arthritis และใช้ใน ulcerative colitis ได้ แต่ไม่ใช่ biologic และไม่เพียงพอสำหรับ BASDAI 6.2 ข้อนี้จะเหมาะกับ peripheral SpA หรือ reactive arthritis ที่เรื้อรัง หรือ SpA ที่มีข้ออักเสบส่วนปลายเด่นร่วมกับ UC ไม่รุนแรง"
+          },
+          {
+            "label": "D",
+            "text": "Adalimumab 40 mg SC ทุก 2 สัปดาห์",
+            "explanation": "✓ ถูก — adalimumab เป็น monoclonal anti-TNF ที่ได้รับการรับรองทั้ง axial SpA, non-infectious uveitis และ Crohn's disease ลดการกำเริบของ uveitis และควบคุมลำไส้ได้ ASAS-EULAR 2022 และ ACR/SAA/SPARTAN 2019 แนะนำ monoclonal TNFi เมื่อมี recurrent uveitis หรือ IBD ร่วม ต้องคัดกรอง TB/HBV และงดวัคซีนเชื้อเป็นระหว่างใช้"
+          }
+        ],
+        "key_takeaway": "axSpA + uveitis/IBD → monoclonal anti-TNF (adalimumab/infliximab) ไม่ใช่ etanercept/IL-17i"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยชายอายุ 26 ปี ปวดหลังส่วนล่างแบบ inflammatory (ดีขึ้นเมื่อออกกำลัง ปวดตอนดึก ฝืดตอนเช้า) มา 8 เดือน HLA-B27 positive MRI พบ active sacroiliitis ไม่มีข้ออักเสบส่วนปลาย ไม่มีประวัติโรคกระเพาะหรือโรคไต การรักษาด้วยยาเริ่มต้นที่เหมาะสมที่สุดคือข้อใด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Methotrexate 15 mg/สัปดาห์"
+        },
+        {
+          "label": "B",
+          "text": "Sulfasalazine 1 g วันละ 2 ครั้ง"
+        },
+        {
+          "label": "C",
+          "text": "Naproxen 500 mg วันละ 2 ครั้ง ขนาดเต็มที่ต่อเนื่อง ร่วมกับกายภาพบำบัดและการออกกำลังกาย"
+        },
+        {
+          "label": "D",
+          "text": "Prednisolone 10 mg/วัน ระยะยาว"
+        }
+      ],
+      "correct_answer": "C",
+      "difficulty": "easy",
+      "explanation": "Axial SpA ระยะแรกที่ไม่มีข้อห้าม เริ่มด้วย NSAID ขนาดเต็มที่อย่างต่อเนื่อง (เช่น naproxen 500 mg วันละ 2 ครั้ง) ร่วมกับกายภาพบำบัดและการออกกำลังกาย csDMARD และ steroid ระบบไม่ได้ผลกับอาการกระดูกสันหลัง",
+      "detailed_explanation": {
+        "summary": "Axial SpA ระยะแรกที่ไม่มีข้อห้าม เริ่มด้วย NSAID ขนาดเต็มที่อย่างต่อเนื่อง (เช่น naproxen 500 mg วันละ 2 ครั้ง) ร่วมกับกายภาพบำบัดและการออกกำลังกาย csDMARD และ steroid ระบบไม่ได้ผลกับอาการกระดูกสันหลัง",
+        "reason": "โจทย์ถามอะไร: ชาย 26 ปี inflammatory back pain 8 เดือน HLA-B27 บวก MRI พบ active sacroiliitis ไม่มีข้ออักเสบส่วนปลาย และไม่มีข้อห้ามของ NSAID (ไม่มีโรคกระเพาะหรือโรคไต) จัดเป็น axial spondyloarthritis ที่เพิ่งวินิจฉัย โจทย์ถามการรักษาด้วยยาเริ่มต้นที่เหมาะสมที่สุด\n\nหลักการ/กลไกเชิงลึก: การอักเสบใน axSpA เกิดที่ enthesis และ subchondral bone marrow ของ sacroiliac joint และกระดูกสันหลัง ขับเคลื่อนโดย IL-23/IL-17 และ TNF prostaglandin E2 ที่สร้างผ่าน COX-2 มีบทบาททั้งในความปวด การอักเสบ และการสร้างกระดูกใหม่ (syndesmophyte) NSAID ยับยั้ง COX จึงลดปวดและฝืดได้รวดเร็ว (มักภายใน 48–72 ชั่วโมง) ผู้ป่วย axSpA ราว 70–80% ตอบสนองดีต่อ NSAID ซึ่งเป็นลักษณะเฉพาะของโรค\n\nทำไมข้อ C ถูก: naproxen 500 mg วันละ 2 ครั้งเป็นขนาดเต็มที่ ให้ต่อเนื่องอย่างน้อย 2–4 สัปดาห์เพื่อประเมินผล ร่วมกับกายภาพบำบัดและการออกกำลังกายสม่ำเสมอ (ยืดเหยียด การทรงตัว การหายใจ) และการเลิกบุหรี่ ถ้าตอบสนองดีให้ใช้ต่อเนื่องหรือตามอาการ ถ้าล้มเหลวต่อ NSAID 2 ชนิดที่ใช้ขนาดเต็มรวม 4 สัปดาห์จึงพิจารณา bDMARD\n\nหลักฐานและแนวทางเวชปฏิบัติ: ASAS-EULAR 2022 แนะนำ NSAID เป็น first-line ขนาดสูงสุดที่ทนได้ โดยพิจารณาประโยชน์และความเสี่ยงของแต่ละราย และระบุว่าไม่ควรใช้ csDMARD (MTX, SSZ) ใน pure axial disease และไม่ควรใช้ systemic glucocorticoid ระยะยาว ACR/SAA/SPARTAN 2019 แนะนำ continuous NSAID ในผู้ป่วยที่มีอาการ active และแนะนำกายภาพบำบัดแบบ active\n\nการประยุกต์กับผู้ป่วยจริง: รับประทาน naproxen พร้อมอาหาร ติดตาม BP, creatinine และอาการทางเดินอาหาร พิจารณา PPI หากอายุ >65 ปี มีประวัติแผล หรือใช้ steroid/anticoagulant/aspirin ร่วม แนะนำให้หลีกเลี่ยงการซื้อ NSAID ซ้ำซ้อนเอง คำแนะนำ: ‘ออกกำลังกายยืดหลังทุกวัน ว่ายน้ำเป็นกิจกรรมที่ดี เลิกบุหรี่ เพราะบุหรี่ทำให้กระดูกสันหลังเชื่อมเร็วขึ้น ถ้าปวดท้อง ถ่ายดำ หรือขาบวมให้หยุดยาและมาพบแพทย์’\n\nการติดตามและสัญญาณอันตราย: ประเมิน BASDAI/ASDAS และ CRP ทุก 3–6 เดือน ติดตาม GI bleed, ความดันสูง, eGFR ลดลง ตาแดงปวดกลัวแสง (acute anterior uveitis ซึ่งพบ 30–40% ต้องพบจักษุแพทย์ด่วน) และอาการลำไส้ (IBD) ถ้า ASDAS ≥2.1 แม้ใช้ NSAID 2 ตัวครบ 4 สัปดาห์ ให้พิจารณา TNFi หรือ IL-17i\n\nจุดที่มักสับสนและกับดักข้อสอบ: MTX และ SSZ ได้ผลใน RA และ peripheral SpA แต่ไม่ได้ผลกับ axial disease (ข้อ A, B) prednisolone ระยะยาว (ข้อ D) ไม่ได้ผลดีใน axSpA และมีพิษสูง (แต่ฉีด steroid เข้าข้อหรือ enthesis เฉพาะที่ได้) อย่าสับสนกับ peripheral SpA ที่ SSZ มีบทบาท\n\nสรุปท่องสอบ: axSpA → NSAID ขนาดเต็ม (ลอง ≥2 ตัว รวม 4 สัปดาห์) + exercise + เลิกบุหรี่ → ล้มเหลว → TNFi หรือ IL-17i; ห้ามพึ่ง csDMARD หรือ steroid ระบบสำหรับกระดูกสันหลัง",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Methotrexate 15 mg/สัปดาห์",
+            "explanation": "✗ ผิด — methotrexate ไม่มีประสิทธิภาพต่ออาการกระดูกสันหลังและ sacroiliitis ใน axSpA ตามการศึกษาแบบสุ่มหลายชิ้น และ ASAS-EULAR 2022 ไม่แนะนำใน pure axial disease ข้อนี้จะเหมาะในผู้ป่วย psoriatic arthritis หรือ RA ที่มีข้ออักเสบส่วนปลาย หรือใช้ร่วมกับ infliximab เพื่อลดการสร้าง anti-drug antibody"
+          },
+          {
+            "label": "B",
+            "text": "Sulfasalazine 1 g วันละ 2 ครั้ง",
+            "explanation": "✗ ผิด — sulfasalazine ช่วยเฉพาะ peripheral arthritis ของ SpA ไม่ได้ผลกับอาการปวดหลังจาก axial inflammation ผู้ป่วยรายนี้ไม่มีข้ออักเสบส่วนปลาย จึงไม่ได้ประโยชน์ ข้อนี้จะถูกหากผู้ป่วยเป็น peripheral SpA (เช่น เข่าและข้อเท้าอักเสบ) ที่ตอบสนองไม่ดีต่อ NSAID และฉีด steroid เข้าข้อ หรือมี ulcerative colitis ร่วม"
+          },
+          {
+            "label": "C",
+            "text": "Naproxen 500 mg วันละ 2 ครั้ง ขนาดเต็มที่ต่อเนื่อง ร่วมกับกายภาพบำบัดและการออกกำลังกาย",
+            "explanation": "✓ ถูก — NSAID ขนาดเต็มที่ต่อเนื่อง เช่น naproxen 500 mg วันละ 2 ครั้ง ร่วมกับกายภาพบำบัด การออกกำลังกาย และเลิกบุหรี่ เป็น first-line ของ axial SpA ตาม ASAS-EULAR 2022 และ ACR/SAA/SPARTAN 2019 ผู้ป่วยส่วนใหญ่ตอบสนองภายในไม่กี่วัน ประเมินผลที่ 2–4 สัปดาห์และติดตาม GI/ไต/BP"
+          },
+          {
+            "label": "D",
+            "text": "Prednisolone 10 mg/วัน ระยะยาว",
+            "explanation": "✗ ผิด — systemic glucocorticoid ระยะยาวไม่ได้ผลดีต่ออาการ axial และมี ADR สูง (กระดูกพรุน ซึ่งผู้ป่วย AS เสี่ยงอยู่แล้ว น้ำตาลสูง ติดเชื้อ) แนวทางไม่แนะนำ ข้อนี้ใกล้เคียงหากใช้ steroid ฉีดเฉพาะที่ เช่น ฉีดเข้า sacroiliac joint หรือข้อส่วนปลายที่อักเสบ หรือใช้ระยะสั้นมากในช่วง flare ที่รุนแรงบางกรณี"
+          }
+        ],
+        "key_takeaway": "Axial SpA: NSAID ขนาดเต็ม + ออกกำลังกาย — csDMARD/steroid ไม่ช่วยกระดูกสันหลัง"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 50 ปี เป็น psoriatic arthritis ชนิด oligoarticular ร่วมกับ plaque psoriasis ไม่รุนแรง CrCl 85 mL/min แพทย์สั่ง apremilast ข้อใดเป็นคำแนะนำที่ถูกต้องที่สุดสำหรับผู้ป่วย",
+      "choices": [
+        {
+          "label": "A",
+          "text": "ต้องเจาะ CBC และ LFT ทุกเดือนเนื่องจากยากดไขกระดูกและเป็นพิษต่อตับบ่อย"
+        },
+        {
+          "label": "B",
+          "text": "เริ่มยาโดยค่อย ๆ เพิ่มขนาดใน 5 วันแรกจนถึง 30 mg วันละ 2 ครั้ง อาจมีคลื่นไส้ ท้องเสีย และควรสังเกตน้ำหนักลดและอารมณ์ซึมเศร้า"
+        },
+        {
+          "label": "C",
+          "text": "เป็นยาฉีดใต้ผิวหนังทุก 2 สัปดาห์ เก็บในตู้เย็น"
+        },
+        {
+          "label": "D",
+          "text": "ต้องลดขนาดเป็น 30 mg วันละครั้งเมื่อ CrCl ต่ำกว่า 60 mL/min"
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "medium",
+      "explanation": "Apremilast (PDE4 inhibitor) ต้องค่อย ๆ เพิ่มขนาดใน 5 วันแรกจนถึง 30 mg วันละ 2 ครั้งเพื่อลดคลื่นไส้/ท้องเสีย ไม่ต้องเจาะเลือดติดตามประจำ แต่ควรติดตามน้ำหนักลดและอาการซึมเศร้า และลดขนาดเฉพาะเมื่อ CrCl <30 mL/min",
+      "detailed_explanation": {
+        "summary": "Apremilast (PDE4 inhibitor) ต้องค่อย ๆ เพิ่มขนาดใน 5 วันแรกจนถึง 30 mg วันละ 2 ครั้งเพื่อลดคลื่นไส้/ท้องเสีย ไม่ต้องเจาะเลือดติดตามประจำ แต่ควรติดตามน้ำหนักลดและอาการซึมเศร้า และลดขนาดเฉพาะเมื่อ CrCl <30 mL/min",
+        "reason": "โจทย์ถามอะไร: หญิงอายุ 50 ปี psoriatic arthritis ชนิด oligoarticular ร่วมกับ plaque psoriasis ไม่รุนแรง ไตปกติ (CrCl 85) แพทย์สั่ง apremilast โจทย์ถามคำแนะนำผู้ป่วยที่ถูกต้องที่สุด ซึ่งต้องรู้รูปแบบยา การ titrate ขนาด ADR เด่น และข้อที่ ‘ไม่จำเป็น’ ต้องทำ\n\nหลักการ/กลไกเชิงลึก: apremilast เป็น small molecule ยับยั้ง phosphodiesterase 4 (PDE4) ซึ่งเป็นเอนไซม์หลักที่ย่อย cAMP ในเซลล์ภูมิคุ้มกัน เมื่อ cAMP สูงขึ้นจะกระตุ้น protein kinase A ลดการสร้าง TNF-α, IL-17, IL-23, IFN-γ และเพิ่ม IL-10 ซึ่งเป็น anti-inflammatory cytokine ฤทธิ์จึงเป็นการ ‘ปรับ’ ภูมิคุ้มกันไม่ใช่กด ไม่กดไขกระดูก ไม่ต้องคัดกรอง TB แต่ PDE4 ใน GI tract และสมองทำให้เกิดคลื่นไส้ ท้องเสีย ปวดศีรษะ และอาจมีผลต่ออารมณ์ ยาถูก metabolize ผ่าน CYP3A4 และขับทางไตบางส่วน\n\nทำไมข้อ B ถูก: ขนาดเริ่ม titrate ใน 5 วัน: วันที่ 1 10 mg เช้า วันที่ 2 10 mg เช้า–เย็น วันที่ 3 10/20 mg วันที่ 4 20/20 mg วันที่ 5 20/30 mg และตั้งแต่วันที่ 6 30 mg วันละ 2 ครั้ง (มี starter pack) เพื่อลด GI intolerance ADR ที่ต้องแจ้งคือคลื่นไส้ ท้องเสีย (มักเกิดใน 2 สัปดาห์แรกและดีขึ้นเอง) น้ำหนักลด 5–10% ในบางราย และอาการซึมเศร้า/ความคิดฆ่าตัวตาย\n\nหลักฐานและแนวทางเวชปฏิบัติ: PALACE 1–3 แสดงว่า apremilast เพิ่ม ACR20 response ใน PsA เทียบยาหลอก และ ESTEEM ใน psoriasis GRAPPA 2021 และ EULAR 2023 ให้ apremilast เป็นทางเลือกสำหรับ oligoarticular PsA หรือโรคที่ไม่รุนแรง หรือเมื่อ csDMARD/bDMARD ไม่เหมาะสม ประสิทธิภาพต่ำกว่า biologic แต่ข้อดีคือรับประทาน ไม่ต้องติดตามผลเลือด\n\nการประยุกต์กับผู้ป่วยจริง: รับประทานพร้อมหรือไม่พร้อมอาหารก็ได้ กลืนทั้งเม็ด ห้ามบด ไม่ใช้ร่วมกับ strong CYP3A4 inducer (rifampicin, carbamazepine, phenytoin) เพราะลดระดับยามาก ถ้า CrCl <30 mL/min ให้ 30 mg วันละครั้ง (titrate เฉพาะขนาดเช้า) คำแนะนำ: ‘ช่วงแรกอาจคลื่นไส้หรือถ่ายเหลว มักดีขึ้นใน 2–4 สัปดาห์ ดื่มน้ำให้เพียงพอ ชั่งน้ำหนักเป็นระยะ ถ้ารู้สึกเศร้า หมดหวัง นอนไม่หลับมาก หรือมีความคิดทำร้ายตนเอง ให้แจ้งแพทย์ทันที’\n\nการติดตามและสัญญาณอันตราย: ไม่จำเป็นต้องตรวจ CBC/LFT ประจำ แต่ควรชั่งน้ำหนักทุกครั้งที่พบแพทย์ ประเมินอารมณ์โดยเฉพาะในผู้ที่มีประวัติซึมเศร้า ท้องเสียหรืออาเจียนรุนแรง (โดยเฉพาะผู้สูงอายุหรือใช้ยาที่ลด volume เช่น diuretic) อาจทำให้ขาดน้ำ ประเมินผลการรักษาที่ 16 สัปดาห์\n\nจุดที่มักสับสนและกับดักข้อสอบ: อย่าสับสนกับ MTX/leflunomide ที่ต้องเจาะ CBC/LFT สม่ำเสมอ (ข้อ A) apremilast เป็นยาเม็ดรับประทาน ไม่ใช่ biologic ที่ฉีดและเก็บในตู้เย็น (ข้อ C) และการลดขนาดตามไตทำเมื่อ CrCl <30 ไม่ใช่ <60 (ข้อ D) อีกจุดคือ apremilast ไม่ต้องคัดกรอง TB/HBV ก่อนเริ่มแบบ biologic\n\nสรุปท่องสอบ: Apremilast = PDE4i ↑cAMP; 30 mg BID หลัง titrate 5 วัน; ADR: GI, น้ำหนักลด, ซึมเศร้า; ไม่ต้องเจาะเลือดประจำ; CrCl <30 → 30 mg OD; หลีกเลี่ยง strong CYP3A4 inducer",
+        "choices": [
+          {
+            "label": "A",
+            "text": "ต้องเจาะ CBC และ LFT ทุกเดือนเนื่องจากยากดไขกระดูกและเป็นพิษต่อตับบ่อย",
+            "explanation": "✗ ผิด — apremilast ไม่กดไขกระดูกและไม่เป็นพิษต่อตับบ่อย จึงไม่ต้องเจาะ CBC/LFT ทุกเดือน การเจาะเลือดติดตามประจำเป็นข้อแนะนำของ csDMARD เช่น methotrexate, leflunomide และ sulfasalazine (ทุก 2–4 สัปดาห์ช่วงแรกแล้วทุก 8–12 สัปดาห์) ข้อนี้จะถูกหากโจทย์ถามการติดตามผู้ป่วย PsA ที่ใช้ methotrexate"
+          },
+          {
+            "label": "B",
+            "text": "เริ่มยาโดยค่อย ๆ เพิ่มขนาดใน 5 วันแรกจนถึง 30 mg วันละ 2 ครั้ง อาจมีคลื่นไส้ ท้องเสีย และควรสังเกตน้ำหนักลดและอารมณ์ซึมเศร้า",
+            "explanation": "✓ ถูก — ค่อย ๆ titrate จาก 10 mg ในวันที่ 1 จนถึง 30 mg วันละ 2 ครั้งในวันที่ 6 เพื่อลดคลื่นไส้ ท้องเสีย ปวดศีรษะ ADR สำคัญที่ต้องให้ผู้ป่วยเฝ้าระวังคือน้ำหนักลดและอาการซึมเศร้า/ความคิดฆ่าตัวตาย ยาไม่ต้องเจาะเลือดติดตามประจำและไม่ต้องคัดกรอง TB เหมาะกับ oligoarticular PsA ที่ไม่รุนแรง"
+          },
+          {
+            "label": "C",
+            "text": "เป็นยาฉีดใต้ผิวหนังทุก 2 สัปดาห์ เก็บในตู้เย็น",
+            "explanation": "✗ ผิด — apremilast เป็นยาเม็ดรับประทาน เก็บที่อุณหภูมิห้อง การฉีด SC ทุก 2 สัปดาห์และเก็บในตู้เย็นเป็นลักษณะของ biologic เช่น adalimumab หรือ certolizumab (หรือ secukinumab ทุก 4 สัปดาห์หลัง loading) ข้อนี้จะถูกหากโจทย์ถามการให้คำแนะนำผู้ป่วย PsA ที่ได้ adalimumab"
+          },
+          {
+            "label": "D",
+            "text": "ต้องลดขนาดเป็น 30 mg วันละครั้งเมื่อ CrCl ต่ำกว่า 60 mL/min",
+            "explanation": "✗ ผิด — การลดขนาดเป็น 30 mg วันละครั้งทำเมื่อ CrCl <30 mL/min (severe renal impairment) ไม่ใช่ <60 ผู้ป่วยรายนี้ CrCl 85 ใช้ขนาดปกติได้ ข้อนี้จะถูกหากผู้ป่วยมี CrCl ต่ำกว่า 30 mL/min ซึ่งต้องให้ 30 mg วันละครั้ง และ titrate เฉพาะขนาดเช้าในช่วงเริ่มต้น"
+          }
+        ],
+        "key_takeaway": "Apremilast: ค่อย ๆ เพิ่มยา — ระวังท้องเสีย น้ำหนักลด ซึมเศร้า — ไม่ต้องเจาะเลือดประจำ"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยชายอายุ 40 ปี เป็น psoriatic arthritis มีข้ออักเสบส่วนปลายหลายข้อ ร่วมกับปวดหลังแบบ inflammatory และ MRI พบ sacroiliitis มี plaque psoriasis 12% BSA ใช้ methotrexate 20 mg/สัปดาห์ 3 เดือนไม่ดีขึ้น ไม่มี IBD ยาที่เหมาะสมที่สุดในขั้นต่อไปคือข้อใด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Secukinumab (anti-IL-17A)"
+        },
+        {
+          "label": "B",
+          "text": "Ustekinumab (anti-IL-12/23)"
+        },
+        {
+          "label": "C",
+          "text": "Apremilast"
+        },
+        {
+          "label": "D",
+          "text": "Sulfasalazine"
+        }
+      ],
+      "correct_answer": "A",
+      "difficulty": "hard",
+      "explanation": "PsA ที่ล้มเหลวต่อ MTX และมีทั้ง peripheral arthritis, axial involvement และ psoriasis ผิวหนังปานกลาง ควรเลือก IL-17A inhibitor เช่น secukinumab ซึ่งได้ผลทั้งข้อ กระดูกสันหลัง และผิวหนัง ส่วน IL-12/23 inhibitor ไม่มีหลักฐานใน axial disease",
+      "detailed_explanation": {
+        "summary": "PsA ที่ล้มเหลวต่อ MTX และมีทั้ง peripheral arthritis, axial involvement และ psoriasis ผิวหนังปานกลาง ควรเลือก IL-17A inhibitor เช่น secukinumab ซึ่งได้ผลทั้งข้อ กระดูกสันหลัง และผิวหนัง ส่วน IL-12/23 inhibitor ไม่มีหลักฐานใน axial disease",
+        "reason": "โจทย์ถามอะไร: ชาย 40 ปี PsA ที่มี polyarticular peripheral arthritis ร่วมกับ inflammatory back pain และ sacroiliitis จาก MRI มี plaque psoriasis 12% BSA ล้มเหลวต่อ MTX 20 mg/สัปดาห์ 3 เดือน ไม่มี IBD โจทย์ให้เลือกยาขั้นต่อไปที่ครอบคลุมทุก domain\n\nหลักการ/กลไกเชิงลึก: แกน IL-23/IL-17 เป็นกลไกสำคัญของ psoriasis และ enthesitis IL-23 ที่สร้างจาก dendritic cell กระตุ้น Th17 และ innate lymphoid cell ให้หลั่ง IL-17A ซึ่งกระตุ้น keratinocyte และ osteoblast/osteoclast ที่ enthesis แต่ในกระดูกสันหลังมีเซลล์ที่สร้าง IL-17 ได้โดยไม่ผ่าน IL-23 (IL-23-independent) การยับยั้ง IL-23 หรือ IL-12/23 จึงไม่ได้ผลใน axial disease ขณะที่การยับยั้ง IL-17A โดยตรงได้ผลทั้งผิวหนัง ข้อส่วนปลาย enthesitis และกระดูกสันหลัง\n\nทำไมข้อ A ถูก: secukinumab (anti-IL-17A) ได้ผลใน peripheral PsA (FUTURE), axial PsA (MAXIMISE) และ psoriasis ระดับปานกลาง–รุนแรงได้ดีกว่า TNFi บางตัว (CLEAR, FIXTURE) ผู้ป่วยไม่มี IBD จึงไม่มีข้อห้าม ขนาดสำหรับ PsA ที่มี psoriasis ปานกลาง–รุนแรงคือ 300 mg SC สัปดาห์ที่ 0–4 แล้วทุก 4 สัปดาห์ (PsA ทั่วไปเริ่ม 150 mg)\n\nหลักฐานและแนวทางเวชปฏิบัติ: GRAPPA 2021 แนะนำ TNFi หรือ IL-17i สำหรับ axial PsA ที่ล้มเหลวต่อ NSAID และระบุว่า IL-12/23i, IL-23i ไม่มีหลักฐานเพียงพอใน axial domain EULAR 2023 แนะนำเลือก bDMARD ที่ครอบคลุม psoriasis เมื่อผิวหนังเด่น (IL-17i, IL-23i) และในผู้ที่มี axial disease เด่นให้เลือก TNFi หรือ IL-17i การศึกษาของ ustekinumab ใน AS ไม่ผ่าน endpoint\n\nการประยุกต์กับผู้ป่วยจริง: คัดกรอง TB, HBV/HCV ก่อนเริ่ม (IL-17i เสี่ยง TB reactivation ต่ำกว่า TNFi แต่ยังต้องคัดกรอง) ทบทวนวัคซีน สอนฉีด SC เก็บยาในตู้เย็น สามารถใช้ร่วมกับ MTX หรือหยุด MTX ได้ ในโรคที่ตอบสนองดี คำแนะนำ: ‘ยานี้อาจทำให้เกิดเชื้อราในปากหรือผิวหนังง่ายขึ้น ถ้ามีฝ้าขาวในปาก ท้องเสียเรื้อรัง ถ่ายเป็นเลือด หรือปวดท้อง ให้แจ้งแพทย์’\n\nการติดตามและสัญญาณอันตราย: Candida infection (mucocutaneous) พบบ่อยกว่ายาอื่นเพราะ IL-17 จำเป็นต่อการป้องกันเชื้อรา IBD เกิดใหม่หรือกำเริบ (ท้องเสียเรื้อรัง ถ่ายเป็นเลือด) neutropenia เล็กน้อย และ hypersensitivity ประเมินการตอบสนองที่ 12–16 สัปดาห์ด้วย joint count, BASDAI และ PASI\n\nจุดที่มักสับสนและกับดักข้อสอบ: ustekinumab (ข้อ B) ได้ผลในผิวหนังและ peripheral arthritis แต่ไม่ได้ผลใน axial disease apremilast (ข้อ C) ประสิทธิภาพต่ำเกินไปสำหรับโรคหลาย domain และไม่มีหลักฐานใน axial sulfasalazine (ข้อ D) ไม่ช่วย psoriasis และ axial disease ถ้าผู้ป่วยมี IBD ร่วม ควรเลี่ยง IL-17i และเลือก monoclonal TNFi หรือ IL-23i (ถ้าไม่มี axial)\n\nสรุปท่องสอบ: PsA + axial + psoriasis → IL-17i (secukinumab, ixekizumab) หรือ TNFi; ไม่มี axial + psoriasis เด่น → IL-17i/IL-23i; มี IBD → monoclonal TNFi; IL-17i: ระวัง Candida และ IBD",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Secukinumab (anti-IL-17A)",
+            "explanation": "✓ ถูก — secukinumab (anti-IL-17A) ได้ผลครบทั้ง peripheral arthritis, axial disease (MAXIMISE), enthesitis และ psoriasis ผิวหนัง ผู้ป่วยไม่มี IBD จึงไม่มีข้อห้าม GRAPPA 2021/EULAR 2023 แนะนำ IL-17i หรือ TNFi สำหรับ PsA ที่มี axial ADR สำคัญคือ mucocutaneous candidiasis ต้องคัดกรอง TB/HBV ก่อนเริ่ม"
+          },
+          {
+            "label": "B",
+            "text": "Ustekinumab (anti-IL-12/23)",
+            "explanation": "✗ ผิด — ustekinumab (anti-IL-12/23 p40) ได้ผลใน psoriasis ผิวหนังและ peripheral PsA แต่การศึกษาใน ankylosing spondylitis/axial SpA ไม่ผ่าน endpoint จึงไม่เหมาะกับผู้ป่วยที่มี sacroiliitis ข้อนี้จะเป็นตัวเลือกที่ดีใน PsA ที่มีเฉพาะ peripheral arthritis และ psoriasis ร่วมกับ Crohn's disease หรือผู้ที่มีประวัติติดเชื้อบ่อย"
+          },
+          {
+            "label": "C",
+            "text": "Apremilast",
+            "explanation": "✗ ผิด — apremilast เป็น PDE4 inhibitor ที่มีประสิทธิภาพปานกลาง ไม่มีหลักฐานใน axial disease และไม่เพียงพอสำหรับ polyarticular PsA ร่วม psoriasis 12% BSA ที่ล้มเหลวต่อ MTX ข้อนี้จะเหมาะกับ oligoarticular PsA ที่ไม่รุนแรง psoriasis ไม่มาก หรือผู้ที่ไม่ต้องการยาฉีดและมีข้อห้ามต่อ biologic"
+          },
+          {
+            "label": "D",
+            "text": "Sulfasalazine",
+            "explanation": "✗ ผิด — sulfasalazine เป็น csDMARD ที่ช่วย peripheral arthritis ได้บ้าง แต่ไม่ได้ผลต่อ psoriasis ผิวหนังและ axial disease และผู้ป่วยล้มเหลวต่อ csDMARD (MTX) แล้ว จึงควรขยับไป bDMARD ข้อนี้จะเหมาะกับ peripheral PsA ระยะแรกที่ไม่มี psoriasis เด่น หรือในหญิงที่วางแผนตั้งครรภ์ซึ่งต้องหยุด MTX"
+          }
+        ],
+        "key_takeaway": "PsA มีกระดูกสันหลัง → IL-17i หรือ TNFi ไม่ใช่ IL-12/23i"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยชายอายุ 24 ปี มีเข่าขวาและข้อเท้าซ้ายบวมอักเสบ ปวดส้นเท้า (enthesitis) และตาแดง (conjunctivitis) เกิดขึ้น 3 สัปดาห์หลังท้องเสียจาก Salmonella ซึ่งหายแล้ว ผลเจาะน้ำในข้อ Gram stain และเพาะเชื้อไม่พบเชื้อ urinalysis และการตรวจ Chlamydia ลบ การรักษาที่เหมาะสมที่สุดคือข้อใด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Ciprofloxacin 500 mg วันละ 2 ครั้ง นาน 3 เดือน"
+        },
+        {
+          "label": "B",
+          "text": "Ceftriaxone 2 g IV วันละครั้ง ร่วมกับ vancomycin"
+        },
+        {
+          "label": "C",
+          "text": "เริ่ม infliximab ทันที"
+        },
+        {
+          "label": "D",
+          "text": "NSAID เช่น naproxen 500 mg วันละ 2 ครั้ง ± ฉีด steroid เข้าข้อ"
+        }
+      ],
+      "correct_answer": "D",
+      "difficulty": "medium",
+      "explanation": "Reactive arthritis หลังติดเชื้อ Salmonella ทางเดินอาหารที่หายแล้ว รักษาด้วย NSAID ± ฉีด steroid เข้าข้อ antibiotic ไม่ช่วยอาการข้อและไม่ลดระยะเวลาโรค",
+      "detailed_explanation": {
+        "summary": "Reactive arthritis หลังติดเชื้อ Salmonella ทางเดินอาหารที่หายแล้ว รักษาด้วย NSAID ± ฉีด steroid เข้าข้อ antibiotic ไม่ช่วยอาการข้อและไม่ลดระยะเวลาโรค",
+        "reason": "โจทย์ถามอะไร: ชาย 24 ปีมี asymmetric oligoarthritis ขาส่วนล่าง (เข่าขวา ข้อเท้าซ้าย) enthesitis และ conjunctivitis เกิดขึ้น 3 สัปดาห์หลังท้องเสียจาก Salmonella ที่หายแล้ว น้ำในข้อไม่พบเชื้อ ตรวจ Chlamydia ลบ เป็นภาพ reactive arthritis (ReA) โจทย์ถามการรักษาที่เหมาะสมที่สุด\n\nหลักการ/กลไกเชิงลึก: ReA เป็น SpA ชนิดหนึ่งที่เกิดจากภูมิคุ้มกันต่อเชื้อทางเดินอาหาร (Salmonella, Shigella, Campylobacter, Yersinia) หรือทางเดินปัสสาวะ (Chlamydia trachomatis) ในผู้ที่มีพันธุกรรมเสี่ยง (HLA-B27 ~30–50%) แอนติเจนหรือชิ้นส่วนของแบคทีเรียที่ไม่มีชีวิตไปค้างใน synovium กระตุ้น T cell และ cytokine เช่น TNF, IL-17 ข้อจึงอักเสบแบบ ‘sterile’ เพาะเชื้อไม่ขึ้น การให้ antibiotic หลังจากการติดเชื้อหายแล้วจึงไม่เปลี่ยนการดำเนินโรคของข้อ\n\nทำไมข้อ D ถูก: NSAID ขนาดเต็มที่ เช่น naproxen 500 mg วันละ 2 ครั้ง เป็นการรักษาหลักสำหรับปวดข้อและ enthesitis ส่วนข้อที่อักเสบมากเพียงไม่กี่ข้อและตัดการติดเชื้อออกแล้ว (Gram stain/เพาะเชื้อลบ) สามารถฉีด corticosteroid เข้าข้อได้ ผู้ป่วยส่วนใหญ่หายใน 3–6 เดือน ราว 15–30% กลายเป็นเรื้อรัง\n\nหลักฐานและแนวทางเวชปฏิบัติ: การศึกษาแบบสุ่มของ antibiotic ระยะยาว (เช่น ciprofloxacin 3 เดือน) ใน post-enteric ReA ไม่พบประโยชน์ต่อข้อ ตำราและแนวทางของสมาคมโรคข้อจึงแนะนำ NSAID เป็น first-line, intra-articular steroid สำหรับ mono/oligoarthritis, systemic steroid ระยะสั้นในรายรุนแรง และ sulfasalazine หรือ MTX ในรายเรื้อรัง >3–6 เดือน ส่วน Chlamydia ที่ยังมีเชื้อต้องรักษาผู้ป่วยและคู่นอนด้วย doxycycline หรือ azithromycin ตามมาตรฐานโรคติดต่อทางเพศสัมพันธ์\n\nการประยุกต์กับผู้ป่วยจริง: ประเมินความเสี่ยงก่อนใช้ NSAID (GI, ไต, ความดัน) ให้รับประทานพร้อมอาหาร พิจารณา PPI ในรายเสี่ยง หลีกเลี่ยง NSAID ซ้ำซ้อน การพักข้อช่วงแรกและกายภาพบำบัดเมื่ออาการดีขึ้น คำแนะนำ: ‘โรคนี้เป็นการอักเสบหลังการติดเชื้อ ไม่ใช่เชื้อยังอยู่ในข้อ ยาฆ่าเชื้อจึงไม่ช่วย ส่วนใหญ่หายในไม่กี่เดือน ถ้าตาแดงปวดตาตามัว ให้รีบพบจักษุแพทย์’\n\nการติดตามและสัญญาณอันตราย: ติดตามอาการข้อทุก 2–4 สัปดาห์ ตาแดงพร้อมปวดตาและกลัวแสงอาจเป็น anterior uveitis ซึ่งต่างจาก conjunctivitis ต้องได้รับการรักษาเร่งด่วน ไข้สูงหรือข้ออักเสบเพิ่มขึ้นเร็วต้องเจาะข้อซ้ำเพื่อแยก septic arthritis ติดตาม GI bleed และ creatinine จาก NSAID ถ้าเรื้อรังเกิน 6 เดือนพิจารณา DMARD\n\nจุดที่มักสับสนและกับดักข้อสอบ: antibiotic ระยะยาว (ข้อ A) ไม่ช่วย post-enteric ReA ceftriaxone + vancomycin (ข้อ B) เป็นการรักษา septic arthritis ซึ่งน้ำในข้อมักมี WBC สูงมากและ Gram stain/เพาะเชื้อพบเชื้อ anti-TNF (ข้อ C) สงวนไว้สำหรับรายเรื้อรังที่ล้มเหลวต่อ NSAID และ csDMARD ไม่ใช่ทันที อย่าลืมคัดกรอง HIV ในผู้ที่มี ReA จาก STI\n\nสรุปท่องสอบ: ReA = ข้ออักเสบ sterile หลังติดเชื้อ GI/GU 1–4 สัปดาห์ → NSAID ± IA steroid → เรื้อรัง SSZ/MTX → ดื้อ TNFi; antibiotic เฉพาะ Chlamydia ที่ยังมีเชื้อ (รวมคู่นอน)",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Ciprofloxacin 500 mg วันละ 2 ครั้ง นาน 3 เดือน",
+            "explanation": "✗ ผิด — การศึกษาแบบสุ่มพบว่า ciprofloxacin ระยะยาวไม่ช่วยอาการข้อหรือระยะเวลาของ post-enteric reactive arthritis เพราะข้ออักเสบแบบ sterile และเชื้อในลำไส้หายแล้ว ข้อนี้จะใกล้เคียงหากผู้ป่วยยังมีการติดเชื้อ Salmonella อยู่ในกลุ่มเสี่ยง (เช่น ภูมิคุ้มกันต่ำ) หรือมี Chlamydia ที่ยังพบเชื้อซึ่งต้องรักษาตามมาตรฐาน STI"
+          },
+          {
+            "label": "B",
+            "text": "Ceftriaxone 2 g IV วันละครั้ง ร่วมกับ vancomycin",
+            "explanation": "✗ ผิด — ceftriaxone ร่วมกับ vancomycin เป็น empirical therapy ของ septic arthritis เมื่อสงสัยเชื้อหลายกลุ่มรวม MRSA แต่ผู้ป่วยรายนี้น้ำในข้อ Gram stain และเพาะเชื้อลบ อาการหลายข้อร่วม enthesitis และ conjunctivitis จึงเป็น ReA ข้อนี้จะถูกในผู้ป่วยที่มีข้อเดียวบวมแดงร้อน ไข้สูง และน้ำในข้อ WBC >50,000"
+          },
+          {
+            "label": "C",
+            "text": "เริ่ม infliximab ทันที",
+            "explanation": "✗ ผิด — anti-TNF ไม่ใช่การรักษาแรกของ ReA ที่เพิ่งเริ่ม ส่วนใหญ่หายเองใน 3–6 เดือนด้วย NSAID การให้ biologic ทันทีเพิ่มความเสี่ยงติดเชื้อโดยไม่จำเป็น ข้อนี้จะเหมาะในผู้ป่วย ReA เรื้อรัง (>6 เดือน) ที่ล้มเหลวต่อ NSAID, steroid และ csDMARD (sulfasalazine/MTX) หลังคัดกรอง TB/HBV แล้ว"
+          },
+          {
+            "label": "D",
+            "text": "NSAID เช่น naproxen 500 mg วันละ 2 ครั้ง ± ฉีด steroid เข้าข้อ",
+            "explanation": "✓ ถูก — NSAID ขนาดเต็มที่ เช่น naproxen 500 mg วันละ 2 ครั้ง เป็น first-line ของ reactive arthritis ลดปวดข้อและ enthesitis ข้อที่อักเสบไม่กี่ข้อหลังตัดการติดเชื้อแล้วฉีด corticosteroid เข้าข้อได้ ถ้าเรื้อรังเกิน 3–6 เดือนจึงพิจารณา sulfasalazine หรือ MTX และติดตาม uveitis"
+          }
+        ],
+        "key_takeaway": "Reactive arthritis = NSAID; antibiotic ไม่ช่วยข้อ (ยกเว้นรักษา Chlamydia ที่ยังมีเชื้อ)"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยหญิงอายุ 32 ปี เป็น Behçet disease มีแผลในปากซ้ำ ๆ แผลที่อวัยวะเพศ และ erythema nodosum ที่ขา ไม่มีอาการทางตา หลอดเลือด หรือระบบประสาท ใช้ยาทาสเตียรอยด์ในปากแล้วยังกำเริบบ่อย ยาที่ควรเลือกเป็นอันดับแรกคือข้อใด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Infliximab 5 mg/kg IV"
+        },
+        {
+          "label": "B",
+          "text": "Cyclophosphamide IV รายเดือน"
+        },
+        {
+          "label": "C",
+          "text": "Colchicine 0.5 mg วันละ 2–3 ครั้ง"
+        },
+        {
+          "label": "D",
+          "text": "Prednisolone 1 mg/kg/วัน ระยะยาว"
+        }
+      ],
+      "correct_answer": "C",
+      "difficulty": "medium",
+      "explanation": "Behçet disease ที่มีเพียงอาการผิวหนัง-เยื่อบุ (oral/genital ulcer, erythema nodosum) และกำเริบบ่อยแม้ใช้ยาทา ควรเริ่ม colchicine 0.5 mg วันละ 2–3 ครั้งเป็นอันดับแรก โดยเฉพาะเมื่อมี erythema nodosum และแผลอวัยวะเพศ",
+      "detailed_explanation": {
+        "summary": "Behçet disease ที่มีเพียงอาการผิวหนัง-เยื่อบุ (oral/genital ulcer, erythema nodosum) และกำเริบบ่อยแม้ใช้ยาทา ควรเริ่ม colchicine 0.5 mg วันละ 2–3 ครั้งเป็นอันดับแรก โดยเฉพาะเมื่อมี erythema nodosum และแผลอวัยวะเพศ",
+        "reason": "โจทย์ถามอะไร: หญิง 32 ปี Behçet disease ที่มี oral ulcer ซ้ำ ๆ genital ulcer และ erythema nodosum ไม่มีอาการทางตา หลอดเลือด หรือระบบประสาท และยังกำเริบบ่อยแม้ใช้ steroid ทาในปาก โจทย์ถามยาระบบที่ควรเลือกเป็นอันดับแรก\n\nหลักการ/กลไกเชิงลึก: Behçet เป็น variable-vessel vasculitis ที่มี neutrophil hyperactivity เด่น (เช่น pathergy) ร่วมกับ Th1/Th17 response และสัมพันธ์กับ HLA-B51 พบมากตามเส้นทางสายไหม colchicine จับ tubulin ยับยั้งการสร้าง microtubule ทำให้ neutrophil เคลื่อนที่ (chemotaxis) และเกาะติด endothelium ได้น้อยลง ลดการทำงานของ NLRP3 inflammasome และการหลั่ง IL-1β จึงตรงกับพยาธิสภาพที่ขับเคลื่อนโดย neutrophil ของรอยโรคผิวหนัง-เยื่อบุ\n\nทำไมข้อ C ถูก: colchicine 0.5 mg วันละ 2–3 ครั้ง (1–1.5 mg/วัน, สูงสุด ~2 mg/วัน) ลดการกำเริบของ erythema nodosum และ genital ulcer ได้ชัดเจน (โดยเฉพาะในเพศหญิง) และช่วย oral ulcer ได้บางส่วน ราคาถูก ปลอดภัยระยะยาว และใช้ได้ระหว่างตั้งครรภ์ จึงเป็นยาระบบตัวแรกสำหรับ mucocutaneous Behçet\n\nหลักฐานและแนวทางเวชปฏิบัติ: EULAR 2018 recommendations for Behçet syndrome แนะนำ topical steroid สำหรับแผลในปากและอวัยวะเพศ และ colchicine เป็นยาแรกในการป้องกันการกำเริบของ mucocutaneous lesions โดยเฉพาะ erythema nodosum และ genital ulcer ถ้าไม่ได้ผลให้พิจารณา apremilast (โดยเฉพาะ oral ulcer จากการศึกษา RELIEF), azathioprine, thalidomide, interferon-α หรือ TNFi ส่วนอาการตา หลอดเลือด และระบบประสาทต้องใช้ azathioprine, anti-TNF หรือ cyclophosphamide\n\nการประยุกต์กับผู้ป่วยจริง: เริ่ม 0.5 mg วันละ 2 ครั้งแล้วปรับ ประเมินผลหลัง 2–3 เดือน ลดขนาดเมื่อ CrCl ต่ำหรือมีโรคตับ ตรวจสอบยาที่เป็น strong CYP3A4/P-gp inhibitor (clarithromycin, ketoconazole, cyclosporine, verapamil) ซึ่งเพิ่มระดับ colchicine จนเป็นพิษ คำแนะนำ: ‘ยานี้ใช้ป้องกันการกำเริบ ต้องกินต่อเนื่องทุกวัน อาจถ่ายเหลวช่วงแรก ถ้าท้องเสียมาก ปวดกล้ามเนื้อ อ่อนแรง หรือชาปลายมือเท้า ให้หยุดยาและแจ้งแพทย์’\n\nการติดตามและสัญญาณอันตราย: ติดตามท้องเสีย (ADR ที่พบบ่อยที่สุด) myopathy/neuromyopathy โดยเฉพาะผู้ที่ไตบกพร่องหรือใช้ statin ร่วม และ CBC (bone marrow suppression พบน้อย) ติดตามอาการของโรคที่รุนแรงขึ้น เช่น ตามัว ตาแดง ปวดตา (uveitis) ปวดบวมขา (DVT) ปวดศีรษะรุนแรง ซึ่งต้องเปลี่ยนแผนการรักษา\n\nจุดที่มักสับสนและกับดักข้อสอบ: infliximab (ข้อ A) สงวนไว้สำหรับ uveitis รุนแรง, vascular หรือ neuro-Behçet cyclophosphamide (ข้อ B) ใช้ใน arterial aneurysm หรือ neuro-Behçet prednisolone 1 mg/kg ระยะยาว (ข้อ D) มีพิษสูงและไม่ป้องกันการกำเริบ ใช้แค่ระยะสั้น อย่าสับสนกับ gout ที่ใช้ colchicine ขนาดคนละแบบ\n\nสรุปท่องสอบ: Behçet: แผลปาก → topical steroid ± colchicine/apremilast; EN/แผลอวัยวะเพศ → colchicine; ตา → AZA/anti-TNF (infliximab, adalimumab); หลอดเลือด/สมอง → steroid + AZA/CYC/anti-TNF",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Infliximab 5 mg/kg IV",
+            "explanation": "✗ ผิด — infliximab เป็น anti-TNF ที่สงวนไว้สำหรับ Behçet ที่มีอวัยวะสำคัญ เช่น posterior uveitis/panuveitis ที่คุกคามการมองเห็น vascular Behçet หรือ neuro-Behçet หรือ mucocutaneous ที่ดื้อต่อยาหลายขนาน ข้อนี้จะถูกหากผู้ป่วยมี uveitis รุนแรง (ใช้ infliximab หรือ adalimumab ร่วมกับ azathioprine)"
+          },
+          {
+            "label": "B",
+            "text": "Cyclophosphamide IV รายเดือน",
+            "explanation": "✗ ผิด — cyclophosphamide IV มีพิษสูง (กดไขกระดูก รังไข่ล้มเหลว hemorrhagic cystitis) สงวนไว้สำหรับ pulmonary/peripheral arterial aneurysm หรือ parenchymal neuro-Behçet การใช้ในอาการผิวหนัง-เยื่อบุจึงไม่เหมาะ ข้อนี้จะถูกหากผู้ป่วยมี pulmonary artery aneurysm ซึ่งต้องใช้ steroid ขนาดสูงร่วมกับ cyclophosphamide หรือ anti-TNF"
+          },
+          {
+            "label": "C",
+            "text": "Colchicine 0.5 mg วันละ 2–3 ครั้ง",
+            "explanation": "✓ ถูก — colchicine 0.5 mg วันละ 2–3 ครั้งเป็นยาระบบตัวแรกสำหรับ mucocutaneous Behçet ตาม EULAR 2018 ได้ผลเด่นต่อ erythema nodosum และ genital ulcer ยับยั้ง neutrophil chemotaxis ราคาถูกและปลอดภัยระยะยาว ต้องระวังปฏิกิริยากับ strong CYP3A4/P-gp inhibitor และปรับขนาดในไตบกพร่อง"
+          },
+          {
+            "label": "D",
+            "text": "Prednisolone 1 mg/kg/วัน ระยะยาว",
+            "explanation": "✗ ผิด — prednisolone 1 mg/kg/วันระยะยาวมีพิษสูงและไม่ป้องกันการกำเริบของ mucocutaneous lesions steroid ระบบใช้ระยะสั้นเพื่อควบคุม flare หรือในโรคที่มีอวัยวะสำคัญร่วมกับยากดภูมิ ข้อนี้จะเหมาะเป็นส่วนหนึ่งของการรักษา neuro-Behçet, vascular Behçet หรือ uveitis เฉียบพลันร่วมกับ azathioprine/anti-TNF"
+          }
+        ],
+        "key_takeaway": "Behçet ผิวหนัง-เยื่อบุ → colchicine; ตา/หลอดเลือด/สมอง → AZA, anti-TNF"
+      }
+    },
+    {
+      "scenario": "ผู้ป่วยชายอายุ 60 ปี น้ำหนัก 70 kg CrCl 90 mL/min อาศัยในสถานดูแลผู้สูงอายุและเคยตรวจพบ MRSA colonization มาด้วยเข่าซ้ายบวมแดงร้อน ไข้ 39 °C ผลเจาะน้ำในข้อ WBC 85,000 cells/mm³ (neutrophil 92%) Gram stain พบ Gram-positive cocci in clusters นอกจากการระบายหนองในข้อแล้ว empirical antibiotic ที่เหมาะสมที่สุดคือข้อใด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Cefazolin 2 g IV ทุก 8 ชั่วโมง"
+        },
+        {
+          "label": "B",
+          "text": "Vancomycin 1,250 mg IV ทุก 12 ชั่วโมง (ประมาณ 15–20 mg/kg) แล้วปรับตาม AUC/trough"
+        },
+        {
+          "label": "C",
+          "text": "Ceftriaxone 1 g IV วันละครั้ง"
+        },
+        {
+          "label": "D",
+          "text": "Vancomycin 500 mg IV ทุก 12 ชั่วโมง"
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "hard",
+      "explanation": "Septic arthritis ที่ Gram stain พบ GPC in clusters ในผู้ที่มีความเสี่ยง MRSA ต้องให้ vancomycin empirical 15–20 mg/kg/ครั้งตามน้ำหนักจริง (70 kg → 1,050–1,400 mg; 1,250 mg ≈ 17.9 mg/kg) ทุก 8–12 ชั่วโมง แล้วปรับตาม AUC (หรือ trough)",
+      "detailed_explanation": {
+        "summary": "Septic arthritis ที่ Gram stain พบ GPC in clusters ในผู้ที่มีความเสี่ยง MRSA ต้องให้ vancomycin empirical 15–20 mg/kg/ครั้งตามน้ำหนักจริง (70 kg → 1,050–1,400 mg; 1,250 mg ≈ 17.9 mg/kg) ทุก 8–12 ชั่วโมง แล้วปรับตาม AUC (หรือ trough)",
+        "reason": "โจทย์ถามอะไร: ชายอายุ 60 ปี 70 kg CrCl 90 อยู่สถานดูแลผู้สูงอายุ เคยมี MRSA colonization มีเข่าบวมแดงร้อน ไข้ 39 °C น้ำในข้อ WBC 85,000 (neutrophil 92%) และ Gram stain พบ Gram-positive cocci in clusters ซึ่งบ่งชี้ Staphylococcus aureus โจทย์ถาม empirical antibiotic ที่ครอบคลุมและขนาดถูกต้อง นอกเหนือจากการระบายหนองในข้อ\n\nหลักการ/กลไกเชิงลึก: S. aureus เป็นสาเหตุที่พบบ่อยที่สุดของ septic arthritis ในผู้ใหญ่ MRSA มียีน mecA สร้าง PBP2a ที่จับ beta-lactam ได้น้อย จึงดื้อต่อ cefazolin, cloxacillin และ ceftriaxone vancomycin เป็น glycopeptide จับ D-Ala-D-Ala ของ peptidoglycan precursor ยับยั้งการสร้างผนังเซลล์ ฤทธิ์เป็น time-dependent แต่ PK/PD target ที่สัมพันธ์กับผลการรักษาคือ AUC24/MIC 400–600 ยาขับทางไตเกือบทั้งหมด จึงต้องคำนวณขนาดตามน้ำหนักจริงและความถี่ตาม CrCl\n\nทำไมข้อ B ถูก: ขนาด 15–20 mg/kg ของน้ำหนักจริง = 1,050–1,400 mg ต่อครั้ง ขนาด 1,250 mg (≈17.9 mg/kg) ทุก 12 ชั่วโมงเหมาะกับ CrCl 90 mL/min ในรายรุนแรงอาจให้ loading dose 20–35 mg/kg (เช่น 1,750–2,000 mg) แล้วปรับขนาดตาม AUC-guided dosing (Bayesian) หรือ trough ถ้าไม่มี AUC เมื่อได้ผลเพาะเชื้อเป็น MSSA ให้ de-escalate เป็น cefazolin หรือ cloxacillin ซึ่งดีกว่า vancomycin สำหรับ MSSA\n\nหลักฐานและแนวทางเวชปฏิบัติ: ASHP/IDSA/PIDS/SIDP 2020 consensus แนะนำ vancomycin AUC24 400–600 mg·h/L แทนการใช้ trough 15–20 mg/L เพื่อลด nephrotoxicity แนวทาง IDSA MRSA 2011 แนะนำ vancomycin สำหรับ MRSA septic arthritis ร่วมกับการระบายหนอง (needle aspiration ซ้ำ, arthroscopy หรือ arthrotomy) ระยะเวลาการรักษารวมประมาณ 3–4 สัปดาห์ ทางเลือกเมื่อแพ้หรือดื้อ ได้แก่ daptomycin หรือ linezolid\n\nการประยุกต์กับผู้ป่วยจริง: เก็บ blood culture และ synovial fluid culture ก่อนให้ยา ผสม vancomycin ให้ความเข้มข้น ≤5 mg/mL และ infuse อย่างน้อย 60 นาทีต่อ 1 g (1,250 mg ใช้ ≥90 นาที) เพื่อป้องกัน vancomycin infusion reaction (red man syndrome) เจาะระดับยาก่อนครั้งที่ 4 หรือใช้ 2 ระดับเพื่อคำนวณ AUC หลีกเลี่ยงยาที่เป็นพิษต่อไตร่วม (piperacillin-tazobactam, aminoglycoside, NSAID, contrast) ดูแลให้สารน้ำเพียงพอ\n\nการติดตามและสัญญาณอันตราย: ติดตาม SCr อย่างน้อยทุก 2–3 วัน (AKI = SCr เพิ่ม ≥0.3 mg/dL หรือ ≥50%) ปัสสาวะออก, ไข้, WBC, CRP, อาการข้อ ผลเพาะเชื้อและ MIC (ถ้า MIC ≥2 พิจารณายาอื่น) ผื่นแดงคันบริเวณหน้า คอ ลำตัวช่วงให้ยาบ่งชี้ infusion reaction ให้หยุดชั่วคราว ให้ antihistamine แล้วให้ช้าลง\n\nจุดที่มักสับสนและกับดักข้อสอบ: cefazolin (ข้อ A) ดีมากสำหรับ MSSA แต่ไม่ครอบคลุม MRSA ceftriaxone (ข้อ C) ใช้สำหรับ gonococcal arthritis หรือ GNR ไม่ครอบคลุม MRSA vancomycin 500 mg (ข้อ D) = 7.1 mg/kg ต่ำจนไม่ถึงเป้า AUC เสี่ยงล้มเหลวและเชื้อดื้อ การคิดขนาดตาม ideal body weight ในคนน้ำหนักปกติทำให้ได้ขนาดต่ำเกินไป\n\nสรุปท่องสอบ: Septic arthritis + GPC clusters + MRSA risk → vancomycin 15–20 mg/kg (น้ำหนักจริง) q8–12h ± loading 20–35 mg/kg → AUC 400–600; MSSA → de-escalate เป็น cefazolin/cloxacillin; ระบายหนองเสมอ",
+        "calculation_steps": [
+          "ขนาดต่อครั้ง: 15 × 70 = 1,050 mg ถึง 20 × 70 = 1,400 mg",
+          "ปัดเป็นขนาดที่เตรียมสะดวก: 1,250 mg ÷ 70 kg ≈ 17.9 mg/kg อยู่ในช่วง",
+          "CrCl 90 mL/min → ให้ทุก 12 ชั่วโมง = 2,500 mg/วัน (≈35.7 mg/kg/วัน)",
+          "ตรวจสอบตัวเลือก D: 500 mg ÷ 70 = 7.1 mg/kg ต่ำกว่าขนาดที่ได้ผล"
+        ],
+        "choices": [
+          {
+            "label": "A",
+            "text": "Cefazolin 2 g IV ทุก 8 ชั่วโมง",
+            "explanation": "✗ ผิด — cefazolin 2 g IV ทุก 8 ชั่วโมงเป็นยาที่ดีที่สุดสำหรับ MSSA septic arthritis แต่ไม่ครอบคลุม MRSA เพราะ PBP2a จับ beta-lactam ได้น้อย ผู้ป่วยรายนี้มีประวัติ MRSA colonization และอยู่สถานดูแลผู้สูงอายุ จึงต้องเริ่ม vancomycin ก่อน ข้อนี้จะถูกหลังผลเพาะเชื้อยืนยันเป็น MSSA ซึ่งควร de-escalate จาก vancomycin เป็น cefazolin"
+          },
+          {
+            "label": "B",
+            "text": "Vancomycin 1,250 mg IV ทุก 12 ชั่วโมง (ประมาณ 15–20 mg/kg) แล้วปรับตาม AUC/trough",
+            "explanation": "✓ ถูก — vancomycin 1,250 mg (≈17.9 mg/kg ของน้ำหนักจริง 70 kg) ทุก 12 ชั่วโมงอยู่ในช่วง 15–20 mg/kg เหมาะกับ CrCl 90 mL/min ครอบคลุม MRSA ต้องปรับขนาดตาม AUC24 400–600 (หรือ trough) ตาม ASHP/IDSA 2020 ติดตาม SCr และ de-escalate เมื่อผลเพาะเชื้อเป็น MSSA ร่วมกับการระบายหนองในข้อ"
+          },
+          {
+            "label": "C",
+            "text": "Ceftriaxone 1 g IV วันละครั้ง",
+            "explanation": "✗ ผิด — ceftriaxone ไม่ครอบคลุม MRSA และไม่ใช่ยาที่ดีที่สุดสำหรับ S. aureus แม้เป็น MSSA ข้อนี้จะเหมาะกับ septic arthritis จาก Neisseria gonorrhoeae (เช่น ผู้ใหญ่วัยหนุ่มสาวที่มี tenosynovitis และ pustular skin lesion ใช้ ceftriaxone 1 g IV วันละครั้ง) หรือเมื่อ Gram stain พบ Gram-negative rods ร่วมกับปัจจัยเสี่ยงอื่น"
+          },
+          {
+            "label": "D",
+            "text": "Vancomycin 500 mg IV ทุก 12 ชั่วโมง",
+            "explanation": "✗ ผิด — vancomycin 500 mg ทุก 12 ชั่วโมงในผู้ป่วย 70 kg = 7.1 mg/kg ต่ำกว่าช่วงขนาดที่ได้ผลอย่างมาก ระดับยาจะไม่ถึงเป้า AUC 400–600 เสี่ยงต่อการรักษาล้มเหลวและการเกิดเชื้อดื้อยา (VISA) ข้อนี้อาจใกล้เคียงในผู้ป่วยที่ไตบกพร่องรุนแรงซึ่งต้องลดความถี่ แต่ควรลดความถี่มากกว่าลดขนาดต่อครั้ง"
+          }
+        ],
+        "key_takeaway": "GPC clusters + MRSA risk → vancomycin 15–20 mg/kg ตามน้ำหนักจริง ปรับตาม AUC"
+      }
+    }
+  ]
+}

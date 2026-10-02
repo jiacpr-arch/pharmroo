@@ -1,0 +1,310 @@
+{
+  "exam_day": 1,
+  "questions": [
+    {
+      "id": "2b8a0d64-4315-4364-97f3-1b94f75826c9",
+      "scenario": "ผู้ป่วยหญิงอายุ 72 ปี หมดประจำเดือนมา 20 ปี เกิด vertebral compression fracture ที่ L1 จากการก้มยกถังน้ำเมื่อ 4 เดือนก่อน ผล DXA: T-score lumbar spine −3.3, total hip −2.7 ไม่มีประวัติ MI หรือ stroke, CrCl 55 mL/min, serum Ca และ 25(OH)D ปกติ ตามแนวทาง AACE/ACE 2020 ผู้ป่วยรายนี้จัดอยู่ในกลุ่มความเสี่ยงใด และควรพิจารณายาเริ่มต้นแบบใด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Osteopenia — ให้ calcium + vitamin D และออกกำลังกายเท่านั้น"
+        },
+        {
+          "label": "B",
+          "text": "High risk — เริ่ม oral alendronate เป็นยาตัวแรก และเก็บ anabolic agent ไว้ใช้เมื่อเกิดกระดูกหักซ้ำ"
+        },
+        {
+          "label": "C",
+          "text": "Very high risk — เริ่ม denosumab 2 ปี แล้วเปลี่ยนเป็น teriparatide"
+        },
+        {
+          "label": "D",
+          "text": "Very high risk — ให้ teriparatide ต่อเนื่องตลอดชีวิตโดยไม่ต้องตามด้วยยาอื่น"
+        },
+        {
+          "label": "E",
+          "text": "Very high risk — พิจารณา anabolic agent (teriparatide, abaloparatide หรือ romosozumab) เป็นยาเริ่มต้น แล้วตามด้วย antiresorptive"
+        }
+      ],
+      "correct_answer": "E",
+      "difficulty": "hard",
+      "explanation": "ผู้ป่วยมี fragility fracture ภายใน 12 เดือนและ T-score < −3.0 ซึ่งเป็นเกณฑ์ very high risk ตาม AACE 2020 จึงควรพิจารณา anabolic agent (teriparatide, abaloparatide หรือ romosozumab) เป็นยาเริ่มต้น แล้วตามด้วย antiresorptive เสมอ",
+      "detailed_explanation": {
+        "summary": "Fracture ภายใน 12 เดือน + T-score −3.3 = very high risk → anabolic first แล้วต่อด้วย antiresorptive",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วยมี vertebral fragility fracture 4 เดือนก่อน (ภายใน 12 เดือน) และ T-score −3.3 โจทย์ให้จัดระดับความเสี่ยงตาม AACE/ACE 2020 แล้วเลือกยาเริ่มต้นและลำดับยาให้ถูก\n\nหลักการ/กลไกเชิงลึก: กระดูกที่เพิ่งหักบ่งชี้ imminent fracture risk ซึ่งสูงสุดใน 1–2 ปีแรก จึงต้องการยาที่เพิ่ม BMD ได้เร็วและมาก Teriparatide (PTH 1-34) และ abaloparatide (PTHrP analog) แบบ intermittent กระตุ้น osteoblast สร้างกระดูกมากกว่าการสลาย ส่วน romosozumab ยับยั้ง sclerostin ทำให้ Wnt signaling ทำงาน เกิดทั้งสร้างเพิ่มและสลายลด (dual effect) ขณะที่ bisphosphonate/denosumab แค่ลดการสลาย BMD จึงเพิ่มช้ากว่า เมื่อหยุด anabolic agent มวลกระดูกที่ได้จะหายไป จึงต้องตามด้วย antiresorptive\n\nทำไมข้อ E ถูก: AACE/ACE 2020 จัด very high risk เมื่อมีข้อใดข้อหนึ่ง: fracture ภายใน 12 เดือน, fracture ขณะใช้ยารักษา, fracture หลายตำแหน่ง, fracture ขณะใช้ยาทำลายกระดูก (เช่น glucocorticoid ระยะยาว), T-score < −3.0, เสี่ยงหกล้มสูง หรือ FRAX major >30% / hip >4.5% ผู้ป่วยเข้าเกณฑ์สองข้อ จึงควรพิจารณา anabolic agent เป็นยาเริ่มต้น (denosumab หรือ zoledronate เป็นทางเลือกเมื่อใช้ไม่ได้) แล้วตามด้วย antiresorptive\n\nหลักฐานและแนวทางเวชปฏิบัติ: AACE/ACE 2020 และ Endocrine Society 2020 สนับสนุน anabolic-first สำหรับ very high risk จาก VERO (teriparatide ลด new vertebral fracture มากกว่า risedronate ~56%), ARCH (romosozumab → alendronate ลด vertebral fracture ~48% และลด hip fracture เทียบ alendronate อย่างเดียว) และ ACTIVE (abaloparatide เทียบ placebo) ลำดับ anabolic → antiresorptive ให้ BMD ดีกว่าการทำกลับกัน\n\nการประยุกต์กับผู้ป่วยจริง: ผู้ป่วยไม่มี MI/stroke ใน 1 ปีจึงใช้ romosozumab 210 mg SC เดือนละครั้งได้ 12 เดือน หรือ teriparatide 20 mcg SC วันละครั้งได้ไม่เกินประมาณ 2 ปี (abaloparatide 80 mcg SC วันละครั้ง) จากนั้นเริ่ม alendronate, zoledronic acid หรือ denosumab ต่อทันที ให้ calcium ~1,200 mg/วัน และ vitamin D ให้ 25(OH)D ≥30 ng/mL คำแนะนำ: \"ยานี้สร้างเนื้อกระดูกใหม่ ต้องใช้ครบคอร์สและต่อยาตัวถัดไปทันที ห้ามหยุดเอง\" ร่วมกับป้องกันการหกล้ม\n\nการติดตามและสัญญาณอันตราย: ติดตาม serum Ca (teriparatide อาจทำให้ hypercalcemia ชั่วคราว), orthostatic hypotension ช่วงแรก, อาการ MI/stroke ระหว่างใช้ romosozumab (เจ็บหน้าอก แขนขาอ่อนแรง พูดไม่ชัด ให้ไปโรงพยาบาลทันที) ตรวจ DXA ซ้ำทุก 1–2 ปี หากหักซ้ำให้ทบทวน adherence และสาเหตุทุติยภูมิ\n\nจุดที่มักสับสนและกับดักข้อสอบ: T-score ≤ −2.5 ร่วมกับ fracture ที่เก่ากว่า 12 เดือน (หักครั้งเดียว ไม่ได้หักขณะรักษา) อาจเป็นแค่ high risk ซึ่งเริ่ม alendronate ได้ very high risk ต้องมีเกณฑ์ชัด เช่น fracture ใน 1 ปีหรือ T-score < −3.0 อีกกับดักคือลำดับยา: denosumab → teriparatide ทำให้ BMD ลดลงชั่วคราว และไม่มี anabolic ตัวใดใช้ตลอดชีวิต\n\nสรุปท่องสอบ: Very high risk (fracture ใน 12 เดือน, หักขณะรักษา, หักหลายตำแหน่ง, T-score < −3.0, FRAX สูงมาก) → anabolic first: teriparatide/abaloparatide (สูงสุด ~2 ปี) หรือ romosozumab (12 เดือน) → แล้วต่อ antiresorptive ทันที",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Osteopenia — ให้ calcium + vitamin D และออกกำลังกายเท่านั้น",
+            "explanation": "✗ ผิด — Osteopenia คือ T-score ระหว่าง −1.0 ถึง −2.5 แต่ผู้ป่วยมี T-score −3.3 และมี vertebral fragility fracture ซึ่งแต่ละข้อวินิจฉัย osteoporosis ได้ด้วยตัวเอง การให้แค่ Ca/vitamin D ไม่ลดกระดูกหักอย่างมีนัยสำคัญ ข้อนี้จะถูกเมื่อผู้ป่วยมี T-score −1.0 ถึง −2.5 ไม่เคยกระดูกหัก และ FRAX ต่ำกว่าเกณฑ์รักษา (hip <3% และ major <20%)"
+          },
+          {
+            "label": "B",
+            "text": "High risk — เริ่ม oral alendronate เป็นยาตัวแรก และเก็บ anabolic agent ไว้ใช้เมื่อเกิดกระดูกหักซ้ำ",
+            "explanation": "✗ ผิด — ผู้ป่วยเข้าเกณฑ์ very high risk สองข้อ (fracture ภายใน 12 เดือน และ T-score < −3.0) การรอให้หักซ้ำก่อนใช้ anabolic agent ทำให้เสียช่วงเวลาที่เสี่ยงหักซ้ำสูงที่สุด ข้อนี้จะถูกในผู้ป่วย high risk เช่น T-score −2.5 ถึง −3.0 ที่ไม่มีกระดูกหักใน 1 ปีที่ผ่านมา ไม่เคยหักขณะรักษา และ FRAX ไม่สูงมาก ซึ่ง alendronate เป็น first-line ที่เหมาะสม"
+          },
+          {
+            "label": "C",
+            "text": "Very high risk — เริ่ม denosumab 2 ปี แล้วเปลี่ยนเป็น teriparatide",
+            "explanation": "✗ ผิด — จัดกลุ่มถูก แต่ลำดับยาผิด การเปลี่ยนจาก denosumab ไป teriparatide ทำให้ BMD ลดลงชั่วคราว โดยเฉพาะที่สะโพก (DATA-Switch) และการหยุด denosumab โดยไม่มี bisphosphonate ปิดท้ายเสี่ยง rebound vertebral fracture Denosumab จะเป็นยาเริ่มต้นที่เหมาะในผู้ป่วย very high risk ที่ใช้ anabolic agent ไม่ได้ (เช่น ฉีดยาเองทุกวันไม่ได้หรือมีข้อห้าม) แต่ต้องใช้ต่อเนื่องหรือปิดท้ายด้วย bisphosphonate ไม่ใช่ตามด้วย teriparatide"
+          },
+          {
+            "label": "D",
+            "text": "Very high risk — ให้ teriparatide ต่อเนื่องตลอดชีวิตโดยไม่ต้องตามด้วยยาอื่น",
+            "explanation": "✗ ผิด — Teriparatide โดยทั่วไปใช้ได้ไม่เกินประมาณ 2 ปีตลอดชีวิต (ฉลากเดิมจำกัดเพราะข้อกังวล osteosarcoma ในหนู) และเมื่อหยุด BMD ที่ได้จะหายไปภายใน 1–2 ปีถ้าไม่ตามด้วย antiresorptive ข้อนี้ไม่ถูกในทุกสถานการณ์ แนวทางที่ถูกคือใช้ teriparatide ครบคอร์สแล้วเริ่ม alendronate, zoledronic acid หรือ denosumab ต่อทันที (สามารถพิจารณาใช้คอร์สที่สองได้เฉพาะรายที่ยังเสี่ยงสูงมาก)"
+          },
+          {
+            "label": "E",
+            "text": "Very high risk — พิจารณา anabolic agent (teriparatide, abaloparatide หรือ romosozumab) เป็นยาเริ่มต้น แล้วตามด้วย antiresorptive",
+            "explanation": "✓ ถูก — Fracture ภายใน 12 เดือนและ T-score −3.3 (< −3.0) เป็นเกณฑ์ very high risk ตาม AACE/ACE 2020 แนวทางแนะนำ anabolic-first เพราะเพิ่ม BMD และลดกระดูกหักได้เร็วกว่า antiresorptive (VERO, ARCH) ผู้ป่วยไม่มี MI/stroke ใน 1 ปีจึงใช้ romosozumab ได้ด้วย เมื่อจบคอร์ส anabolic ต้องเริ่ม bisphosphonate หรือ denosumab ทันทีเพื่อรักษา BMD ที่ได้"
+          }
+        ],
+        "key_takeaway": "กระดูกหักใน 1 ปี หรือ T-score < −3.0 = very high risk → สร้างก่อน (anabolic) แล้วค่อยกันสลาย (antiresorptive)"
+      }
+    },
+    {
+      "id": "3fd4e212-de83-49a2-985a-d86a77621e27",
+      "scenario": "ผู้ป่วยหญิงอายุ 70 ปี หมดประจำเดือนแล้ว ผล DXA T-score lumbar spine −2.9 ไม่เคยมีกระดูกหัก ไม่มีโรคหลอดอาหาร สามารถนั่งตัวตรงได้ CrCl 60 mL/min ระดับ Ca และ 25(OH)D ปกติ ควรได้รับยารักษาโรคกระดูกพรุนชนิดใดเป็น first-line",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Alendronate"
+        },
+        {
+          "label": "B",
+          "text": "Calcitonin"
+        },
+        {
+          "label": "C",
+          "text": "Calcium + Vitamin D เท่านั้น"
+        },
+        {
+          "label": "D",
+          "text": "Estrogen"
+        },
+        {
+          "label": "E",
+          "text": "Teriparatide"
+        }
+      ],
+      "correct_answer": "A",
+      "difficulty": "medium",
+      "explanation": "หญิงวัยหมดประจำเดือนที่เป็น osteoporosis ความเสี่ยงสูง (ไม่ใช่ very high risk) ควรเริ่มด้วย bisphosphonate ชนิดรับประทาน เช่น alendronate ซึ่งลด vertebral, hip และ non-vertebral fracture ได้ ราคาถูก และมีข้อมูลระยะยาว",
+      "detailed_explanation": {
+        "summary": "T-score −2.9 ไม่มีกระดูกหัก = high risk → alendronate เป็น first-line ร่วมกับ Ca/vitamin D",
+        "reason": "โจทย์ถามอะไร: ผู้ป่วยหญิงวัยหมดประจำเดือน T-score −2.9 ซึ่งวินิจฉัยเป็น osteoporosis (≤ −2.5) แต่ไม่มีกระดูกหักและ T-score ไม่ต่ำกว่า −3.0 จึงเป็นกลุ่ม high risk ไม่ใช่ very high risk โจทย์ถามยา first-line ที่เหมาะสม และให้ข้อมูลว่าไม่มีโรคหลอดอาหาร นั่งตัวตรงได้ และไตปกติ เพื่อบอกว่าไม่มีข้อห้ามของ oral bisphosphonate\n\nหลักการ/กลไกเชิงลึก: Alendronate เป็น nitrogen-containing bisphosphonate ที่มีโครงสร้าง P-C-P คล้าย pyrophosphate จึงจับแน่นกับ hydroxyapatite ในบริเวณที่มีการสลายกระดูก เมื่อ osteoclast ดูดซับยาเข้าไป ยาจะยับยั้งเอนไซม์ farnesyl pyrophosphate synthase ใน mevalonate pathway ทำให้ไม่เกิด prenylation ของ small GTPase osteoclast จึงสูญเสียความสามารถในการสลายกระดูกและเกิด apoptosis ผลคือ bone turnover ลด BMD เพิ่ม และ microarchitecture ดีขึ้น ยาค้างในกระดูกได้หลายปี ดูดซึมทางปาก <1% และขับทางไตแบบไม่เปลี่ยนแปลง\n\nทำไมข้อ A ถูก: แนวทางหลักทั้ง AACE/ACE 2020, Endocrine Society 2020 และ ACP 2023 แนะนำ bisphosphonate (alendronate, risedronate, zoledronic acid) หรือ denosumab เป็นยาเริ่มต้นใน high risk โดย ACP ระบุให้เลือก bisphosphonate ก่อนเพราะประสิทธิภาพดี ปลอดภัย และราคาถูก Alendronate ลด vertebral, hip และ non-vertebral fracture และอยู่ในบัญชียาหลักแห่งชาติ จึงเหมาะที่สุดในผู้ป่วยรายนี้\n\nหลักฐานและแนวทางเวชปฏิบัติ: FIT trial แสดงว่า alendronate ลด vertebral fracture ประมาณ 47% และ hip fracture ประมาณ 51% ในหญิงที่มี vertebral fracture และลด vertebral fracture ในกลุ่ม T-score ≤ −2.5 ที่ไม่มีกระดูกหัก การศึกษา FLEX แสดงข้อมูลการใช้ต่อเนื่อง 10 ปี ส่วน calcitonin และ estrogen ไม่แนะนำเป็นยาหลักในการรักษา teriparatide สงวนไว้สำหรับ very high risk\n\nการประยุกต์กับผู้ป่วยจริง: ขนาดยา alendronate 70 mg รับประทานสัปดาห์ละครั้ง (หรือ 10 mg วันละครั้ง) ตอนเช้าท้องว่างกับน้ำเปล่า 1 แก้ว นั่งหรือยืนตัวตรงอย่างน้อย 30 นาที ก่อนอาหาร เครื่องดื่ม หรือยาอื่น ให้ calcium รวมประมาณ 1,000–1,200 mg/วัน และ vitamin D 800–1,000 IU/วัน ร่วมด้วย ห้ามใช้เมื่อ CrCl <35 mL/min ควรตรวจฟันก่อนเริ่มยา ประเมินซ้ำหลังใช้ 5 ปีเพื่อพิจารณา drug holiday\n\nการติดตามและสัญญาณอันตราย: เฝ้าระวังอาการกลืนเจ็บ แสบร้อนกลางอก (esophagitis/ulcer) ให้หยุดยาและพบแพทย์ ปวดต้นขาหรือขาหนีบเมื่อใช้ยานาน (atypical femoral fracture) อาการปวดหรือแผลที่ขากรรไกร (ONJ) และ hypocalcemia ในผู้ที่ขาด vitamin D ตรวจ DXA ซ้ำทุก 1–2 ปีด้วยเครื่องเดิม\n\nจุดที่มักสับสนและกับดักข้อสอบ: หลายคนเลือก Ca + vitamin D อย่างเดียว ซึ่งเป็นแค่การเสริมพื้นฐาน ไม่เพียงพอสำหรับ T-score ≤ −2.5 อีกกับดักคือ teriparatide ซึ่งเป็นยาที่แรงแต่สงวนไว้กลุ่ม very high risk (fracture ภายใน 1 ปี หรือ T-score < −3.0) ส่วน estrogen ใช้ป้องกันในหญิงหมดประจำเดือนช่วงต้นที่มีอาการ vasomotor ไม่ใช่ยารักษาหลักในอายุ 70 ปี\n\nสรุปท่องสอบ: Osteoporosis หญิงหมดประจำเดือน high risk → bisphosphonate (alendronate 70 mg/สัปดาห์) เป็น first-line + Ca/vitamin D; very high risk → anabolic first",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Alendronate",
+            "explanation": "✓ ถูก — Alendronate เป็น bisphosphonate ที่ลด vertebral, hip และ non-vertebral fracture มีหลักฐานจาก FIT/FLEX ราคาถูกและแนะนำเป็น first-line ใน AACE, Endocrine Society และ ACP ผู้ป่วยรายนี้เป็น high risk ไม่มีข้อห้าม (หลอดอาหารปกติ นั่งตัวตรงได้ CrCl 60) จึงเริ่ม 70 mg สัปดาห์ละครั้งพร้อม Ca/vitamin D ได้ทันที และประเมินซ้ำหลัง 5 ปีเพื่อพิจารณา drug holiday"
+          },
+          {
+            "label": "B",
+            "text": "Calcitonin",
+            "explanation": "✗ ผิด — Calcitonin มีผลลด vertebral fracture น้อยมาก ไม่ลด hip fracture และพบสัญญาณความเสี่ยงมะเร็งเพิ่มขึ้นเมื่อใช้ระยะยาว แนวทางปัจจุบันจึงไม่แนะนำเป็นยารักษาหลัก ข้อนี้จะเหมาะในบางกรณีเท่านั้น เช่น ใช้ระยะสั้นเพื่อบรรเทาปวดจาก acute vertebral compression fracture หรือเมื่อผู้ป่วยไม่สามารถใช้ยาตัวอื่นได้เลย"
+          },
+          {
+            "label": "C",
+            "text": "Calcium + Vitamin D เท่านั้น",
+            "explanation": "✗ ผิด — Calcium และ vitamin D เป็นพื้นฐานที่ต้องให้ร่วมกับยารักษาทุกตัว แต่การให้อย่างเดียวไม่ลดกระดูกหักได้เพียงพอเมื่อ T-score ≤ −2.5 ข้อนี้จะถูกในผู้ที่เป็น osteopenia (T-score −1.0 ถึง −2.5) ที่ FRAX ต่ำกว่าเกณฑ์รักษา หรือผู้ที่ขาด Ca/vitamin D ระหว่างรอแก้ไขก่อนเริ่ม bisphosphonate หรือ denosumab"
+          },
+          {
+            "label": "D",
+            "text": "Estrogen",
+            "explanation": "✗ ผิด — Estrogen ลดกระดูกหักได้ (WHI) แต่เพิ่มความเสี่ยง VTE, stroke, breast cancer และ CV event โดยเฉพาะเมื่อเริ่มในอายุ ≥60 ปีหรือหมดประจำเดือนนานเกิน 10 ปี จึงไม่ใช่ first-line ในหญิงอายุ 70 ปี ข้อนี้จะเหมาะในหญิงอายุ <60 ปีหรือหมดประจำเดือนไม่เกิน 10 ปีที่มีอาการ vasomotor และต้องการป้องกันกระดูกพรุนไปพร้อมกัน"
+          },
+          {
+            "label": "E",
+            "text": "Teriparatide",
+            "explanation": "✗ ผิด — Teriparatide เป็น anabolic agent ที่แรงแต่ราคาสูง ต้องฉีดทุกวันและใช้ได้จำกัดประมาณ 2 ปี แนวทางสงวนไว้สำหรับ very high risk เช่น กระดูกหักภายใน 12 เดือน หักขณะรักษา หักหลายตำแหน่ง หรือ T-score < −3.0 ผู้ป่วยรายนี้ T-score −2.9 และไม่เคยหักจึงยังไม่เข้าเกณฑ์ ข้อนี้จะถูกหากผู้ป่วยมี vertebral fracture ใหม่หรือ T-score ต่ำกว่า −3.0"
+          }
+        ],
+        "key_takeaway": "Osteoporosis ทั่วไป ไม่มีกระดูกหักล่าสุด → Alendronate นำทัพ, Ca/D เป็นแค่กองหนุน"
+      }
+    },
+    {
+      "id": "6f7040d2-44ba-4f5b-a7fb-b46855fe8290",
+      "scenario": "ผลข้างเคียงใดต่อไปนี้ \"ไม่ใช่\" ADR ของ Alendronate",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Esophageal ulcer"
+        },
+        {
+          "label": "B",
+          "text": "Osteonecrosis of the jaw (ONJ)"
+        },
+        {
+          "label": "C",
+          "text": "Bradykinesia"
+        },
+        {
+          "label": "D",
+          "text": "Atrial fibrillation"
+        },
+        {
+          "label": "E",
+          "text": "Atypical femur fracture"
+        }
+      ],
+      "correct_answer": "C",
+      "difficulty": "medium",
+      "explanation": "Bradykinesia เป็นอาการของ Parkinson's disease หรือ drug-induced parkinsonism จากยาต้าน dopamine ไม่เกี่ยวกับ bisphosphonate ส่วน esophageal ulcer, ONJ, atypical femoral fracture เป็น ADR ที่ยอมรับ และ atrial fibrillation เป็นสัญญาณที่มีรายงานแต่ข้อมูลยังไม่สอดคล้องกัน",
+      "detailed_explanation": {
+        "summary": "Bradykinesia ไม่ใช่ ADR ของ alendronate; ADR จริงคือ GI/esophagitis, ONJ, AFF, hypocalcemia, musculoskeletal pain (AF เป็นสัญญาณที่ยังไม่สอดคล้อง)",
+        "reason": "โจทย์ถามอะไร: โจทย์ให้เลือกอาการที่ไม่ใช่อาการไม่พึงประสงค์ของ alendronate ต้องแยกให้ได้ว่า ADR ใดเกิดจาก bisphosphonate จริง (เฉพาะที่และระบบ) และ ADR ใดเป็นของยากลุ่มอื่น โดยเฉพาะยาที่มีผลต่อระบบประสาทส่วนกลาง\n\nหลักการ/กลไกเชิงลึก: Alendronate ดูดซึมทางปากน้อยมาก ส่วนที่ไม่ถูกดูดซึมสัมผัสเยื่อบุหลอดอาหารและกระเพาะอาหารโดยตรง ทำให้เกิด chemical esophagitis และแผลเมื่อเม็ดยาค้างในหลอดอาหาร ส่วนที่ดูดซึมยับยั้ง farnesyl pyrophosphate synthase ใน osteoclast ทำให้ remodeling ลดลง ระยะยาว microdamage สะสมจนเกิด atypical femoral fracture (AFF) และกระดูกขากรรไกรซ่อมแซมไม่ได้หลังถอนฟันจนเกิด osteonecrosis of the jaw (ONJ) การลด resorption ยังทำให้ Ca ต่ำได้ในผู้ขาด vitamin D ยาไม่ผ่าน BBB และไม่มีผลต่อ dopamine\n\nทำไมข้อ C ถูก: Bradykinesia (การเคลื่อนไหวช้า) เป็น cardinal sign ของ parkinsonism ซึ่งเกิดจากการขาด dopamine ใน nigrostriatal pathway หรือเป็น drug-induced parkinsonism จากยาต้าน D2 receptor เช่น haloperidol, risperidone, metoclopramide, prochlorperazine, flunarizine ไม่มีกลไกหรือรายงานที่เชื่อมโยงกับ alendronate จึงเป็นคำตอบที่ถูก\n\nหลักฐานและแนวทางเวชปฏิบัติ: ฉลากยาระบุ esophagitis/ulcer, ONJ และ AFF เป็น ADR สำคัญ ASBMR task force รายงาน AFF เพิ่มตามระยะเวลาใช้ยา (>3–5 ปี) อุบัติการณ์ ONJ จาก oral bisphosphonate ในโรคกระดูกพรุนประมาณ 1 ใน 10,000–100,000 ต่อปี สำหรับ atrial fibrillation สัญญาณเริ่มจาก HORIZON-PFT (zoledronic acid พบ serious AF มากขึ้น) แต่ meta-analyses และการศึกษาของ alendronate ให้ผลไม่สอดคล้องกัน FDA ไม่สรุปว่ามีความสัมพันธ์ชัดเจน จึงถือเป็น possible ADR\n\nการประยุกต์กับผู้ป่วยจริง: เภสัชกรควรให้คำแนะนำเพื่อป้องกัน ADR: กินตอนเช้าท้องว่างกับน้ำเปล่าเต็มแก้ว นั่งหรือยืนตรง ≥30 นาที ไม่เคี้ยวหรืออมยา แจ้งทันตแพทย์ว่าใช้ยานี้ ดูแลสุขภาพช่องปาก ทำหัตถการทางฟันที่รุกล้ำก่อนเริ่มยา และให้แก้ไข hypocalcemia/ขาด vitamin D ก่อนเริ่ม หากผู้สูงอายุที่ใช้ alendronate เคลื่อนไหวช้าลงหรือสั่น ให้ทบทวนรายการยาหายาต้าน dopamine เช่น metoclopramide หรือ flunarizine\n\nการติดตามและสัญญาณอันตราย: อาการที่ต้องหยุดยาและพบแพทย์: กลืนเจ็บ กลืนลำบาก แสบร้อนกลางอกใหม่หรือแย่ลง ปวดต้นขาหรือขาหนีบตื้อ ๆ (สงสัย AFF ส่ง X-ray femur ทั้งสองข้าง) ฟันโยก เหงือกบวม กระดูกโผล่ในช่องปาก ใจสั่นผิดปกติ (ตรวจ ECG ตามความเหมาะสม) และอาการชาหรือตะคริวจาก hypocalcemia\n\nจุดที่มักสับสนและกับดักข้อสอบ: หลายคนเลือก atrial fibrillation เพราะคิดว่าไม่เกี่ยวกับยากระดูก แต่ AF มีรายงานกับ bisphosphonate (เด่นใน zoledronic acid) แม้ข้อมูลไม่สอดคล้องกัน จึงนับเป็น ADR ที่มีรายงาน ส่วน ONJ และ AFF แม้พบน้อยแต่เป็น ADR สำคัญของ bisphosphonate และ denosumab อาการปวดกล้ามเนื้อกระดูกรุนแรงก็มีรายงาน อย่าสับสนกับ acute-phase reaction ที่พบหลัง zoledronic acid IV\n\nสรุปท่องสอบ: ADR ของ alendronate: upper GI (esophagitis, ulcer), musculoskeletal pain, hypocalcemia, ONJ, AFF, (AF — signal ไม่สอดคล้อง) — bradykinesia = parkinsonism จาก anti-dopaminergic drugs",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Esophageal ulcer",
+            "explanation": "✗ ไม่ใช่คำตอบ — Esophageal ulcer/esophagitis เป็น ADR ที่สำคัญและพบบ่อยที่สุดของ oral bisphosphonate เกิดจากเม็ดยาสัมผัสเยื่อบุโดยตรง โดยเฉพาะเมื่อกินน้ำน้อย นอนราบหลังกินยา หรือมีหลอดอาหารตีบ ตัวเลือกนี้จะเป็นคำตอบได้ถ้าโจทย์ถามถึงยาฉีด เช่น zoledronic acid IV หรือ denosumab ซึ่งไม่สัมผัสหลอดอาหาร จึงไม่ทำให้เกิดแผลหลอดอาหาร"
+          },
+          {
+            "label": "B",
+            "text": "Osteonecrosis of the jaw (ONJ)",
+            "explanation": "✗ ไม่ใช่คำตอบ — ONJ เป็น ADR ที่ยอมรับของ bisphosphonate และ denosumab เกิดจากการกด bone remodeling ทำให้กระดูกขากรรไกรซ่อมแซมไม่ได้หลังถอนฟันหรือติดเชื้อ พบน้อยในขนาดรักษากระดูกพรุน แต่สูงขึ้นในขนาดยาสำหรับมะเร็ง ตัวเลือกนี้จะเป็นคำตอบได้ถ้าโจทย์ถามถึงยาที่ไม่ยับยั้ง bone resorption เช่น calcium, vitamin D หรือ raloxifene ซึ่งไม่สัมพันธ์กับ ONJ"
+          },
+          {
+            "label": "C",
+            "text": "Bradykinesia",
+            "explanation": "✓ ถูก (ไม่ใช่ ADR) — Bradykinesia เป็นอาการหลักของ parkinsonism เกิดจากการขาด dopamine ใน nigrostriatal pathway หรือจากยาต้าน D2 เช่น haloperidol, metoclopramide, flunarizine Alendronate ไม่ผ่าน blood–brain barrier อย่างมีนัยสำคัญและไม่มีผลต่อ dopaminergic system จึงไม่ทำให้เกิดอาการนี้ หากผู้ป่วยที่ใช้ alendronate มีอาการเคลื่อนไหวช้า ควรค้นหายาต้าน dopamine ตัวอื่น"
+          },
+          {
+            "label": "D",
+            "text": "Atrial fibrillation",
+            "explanation": "✗ ไม่ใช่คำตอบ — AF เป็นสัญญาณที่มีรายงาน เริ่มจาก HORIZON-PFT ที่พบ serious AF มากขึ้นในกลุ่ม zoledronic acid และมีรายงานในบางการศึกษาของ alendronate แต่ meta-analyses ให้ผลไม่สอดคล้องกันและยังสรุป causality ไม่ได้ จึงนับเป็น possible ADR ไม่ใช่ตัวที่ปฏิเสธได้ชัดเจน ตัวเลือกนี้จะเป็นคำตอบได้ถ้าโจทย์ระบุว่าให้เลือกเฉพาะ ADR ที่พิสูจน์ causality แล้ว"
+          },
+          {
+            "label": "E",
+            "text": "Atypical femur fracture",
+            "explanation": "✗ ไม่ใช่คำตอบ — Atypical femoral fracture เป็น ADR ที่ยอมรับของ bisphosphonate ระยะยาว (โดยเฉพาะ >3–5 ปี) และ denosumab เกิดจาก microdamage สะสมเมื่อ remodeling ถูกกด มักมีอาการปวดต้นขาหรือขาหนีบนำมาก่อน ความเสี่ยงลดลงเร็วหลังหยุดยา ตัวเลือกนี้จะเป็นคำตอบได้ถ้าโจทย์ถามถึง anabolic agent เช่น teriparatide ซึ่งไม่ได้กด bone remodeling"
+          }
+        ],
+        "key_takeaway": "Alendronate ทำร้าย 'หลอดอาหาร-ขากรรไกร-ต้นขา' ไม่ได้ทำให้เคลื่อนไหวช้า"
+      }
+    },
+    {
+      "id": "bf223239-c6d5-4279-9502-d28b3e275607",
+      "scenario": "ผู้ป่วยหญิงอายุ 66 ปี ได้รับ alendronate 70 mg สัปดาห์ละครั้งเป็นครั้งแรก คำแนะนำการรับประทาน Alendronate ข้อใดถูกต้องที่สุด",
+      "choices": [
+        {
+          "label": "A",
+          "text": "รับประทานพร้อมอาหารเพื่อลด GI irritation"
+        },
+        {
+          "label": "B",
+          "text": "ดื่มนมพร้อมยา"
+        },
+        {
+          "label": "C",
+          "text": "รับประทานก่อนนอน"
+        },
+        {
+          "label": "D",
+          "text": "รับประทานตอนเช้าท้องว่างกับน้ำเปล่า 200 mL ก่อนอาหาร เครื่องดื่ม และยาอื่นอย่างน้อย 30 นาที และนั่งหรือยืนตัวตรงอย่างน้อย 30 นาที"
+        },
+        {
+          "label": "E",
+          "text": "รับประทานได้ตลอดเวลา"
+        }
+      ],
+      "correct_answer": "D",
+      "difficulty": "easy",
+      "explanation": "Alendronate ต้องรับประทานตอนเช้าท้องว่างกับน้ำเปล่าประมาณ 200 mL ก่อนอาหาร เครื่องดื่ม และยาอื่นอย่างน้อย 30 นาที และนั่งหรือยืนตัวตรงอย่างน้อย 30 นาที เพื่อให้ยาดูดซึมได้และป้องกัน esophageal ulcer",
+      "detailed_explanation": {
+        "summary": "Alendronate: เช้า ท้องว่าง น้ำเปล่าเต็มแก้ว รอ ≥30 นาที ก่อนอาหาร/ยาอื่น และห้ามนอนราบ ≥30 นาที",
+        "reason": "โจทย์ถามอะไร: โจทย์ถามวิธีรับประทาน alendronate ที่ถูกต้อง ซึ่งเป็นหัวข้อ counselling คลาสสิก ต้องรู้ทั้งเหตุผลด้านการดูดซึม (ยาดูดซึมน้อยมากและถูกรบกวนง่าย) และด้านความปลอดภัย (ป้องกันการระคายเคืองหลอดอาหาร)\n\nหลักการ/กลไกเชิงลึก: Alendronate มี oral bioavailability เพียงประมาณ 0.6–0.7% เมื่อกินตอนท้องว่าง ยามีหมู่ phosphonate ที่มีประจุลบ จึงจับ (chelate) กับ cation สองประจุ เช่น Ca²⁺, Mg²⁺, Fe²⁺, Al³⁺ ในอาหาร นม น้ำแร่ ยาลดกรด หรือ calcium supplement กลายเป็นสารที่ไม่ดูดซึม การกินพร้อมอาหารหรือภายใน 30 นาทีก่อนอาหารลดการดูดซึมได้ถึงประมาณ 40% กาแฟและน้ำส้มลดการดูดซึมราว 60% ด้านความปลอดภัย ยามีฤทธิ์ระคายเคืองเยื่อบุโดยตรง หากเม็ดยาค้างในหลอดอาหารหรือมีการไหลย้อนจากกระเพาะจะเกิด chemical esophagitis และแผล การดื่มน้ำมากพอและอยู่ในท่าตั้งตรงช่วยให้ยาลงกระเพาะเร็ว\n\nทำไมข้อ D ถูก: ข้อ D ครอบคลุมทุกองค์ประกอบ: รับประทานตอนเช้าหลังตื่นนอน กลืนทั้งเม็ดพร้อมน้ำเปล่าประมาณ 180–240 mL (เต็มแก้ว) รออย่างน้อย 30 นาทีก่อนอาหาร เครื่องดื่มอื่น หรือยาอื่นของวัน และนั่งหรือยืนตัวตรงอย่างน้อย 30 นาทีและจนกว่าจะรับประทานอาหารมื้อแรก\n\nหลักฐานและแนวทางเวชปฏิบัติ: ฉลากยา alendronate (FDA/Thai PI) ระบุคำแนะนำนี้ชัดเจน และมีข้อห้ามใช้ในผู้ที่มีความผิดปกติของหลอดอาหารที่ทำให้อาหารผ่านช้า (stricture, achalasia) ผู้ที่ไม่สามารถนั่งหรือยืนตรงได้ 30 นาที hypocalcemia ที่ยังไม่แก้ไข และ CrCl <35 mL/min แนวทาง AACE และ Endocrine Society เน้นว่า adherence และวิธีรับประทานที่ถูกต้องเป็นปัจจัยสำคัญของประสิทธิภาพ\n\nการประยุกต์กับผู้ป่วยจริง: ตัวอย่างการให้คำปรึกษา: \"ยานี้กินสัปดาห์ละ 1 เม็ด เลือกวันประจำ เช่น ทุกวันอาทิตย์ ตื่นนอนแล้วกินทันทีกับน้ำเปล่าเต็มแก้ว ห้ามใช้นม กาแฟ น้ำผลไม้ หรือน้ำแร่ กลืนทั้งเม็ด ห้ามเคี้ยวหรืออม จากนั้นนั่งหรือเดินได้ แต่ห้ามนอนลงอย่างน้อย 30 นาที และรอ 30 นาทีก่อนกินข้าวหรือยาอื่น ส่วนแคลเซียมให้กินหลังอาหารมื้ออื่นของวัน\" ผู้ป่วยต้องได้ calcium และ vitamin D เพียงพอแต่ต้องแยกเวลาจาก alendronate\n\nการติดตามและสัญญาณอันตราย: แนะนำให้หยุดยาและพบแพทย์ทันทีหากกลืนลำบาก กลืนเจ็บ เจ็บหน้าอกหลังกระดูกอก หรือแสบร้อนกลางอกใหม่หรือแย่ลง ซึ่งอาจเป็น esophagitis หรือ esophageal ulcer ติดตาม adherence ทุกครั้งที่มารับยา และประเมินอาการปวดต้นขา ปัญหาช่องปาก และ BMD ตามระยะ\n\nจุดที่มักสับสนและกับดักข้อสอบ: กับดักที่พบบ่อยคือ \"กินพร้อมอาหารเพื่อลดการระคายเคือง\" ซึ่งใช้กับ NSAIDs ได้ แต่กับ alendronate จะทำให้ยาไม่ดูดซึม อีกกับดักคือเวลารอ: alendronate และ risedronate IR รอ 30 นาที ส่วน ibandronate ชนิดรับประทานต้องรอ 60 นาที และ risedronate delayed-release เป็นข้อยกเว้นที่กินทันทีหลังอาหารเช้า\n\nสรุปท่องสอบ: Alendronate: ตื่นนอน → น้ำเปล่า 180–240 mL → ตัวตรง ≥30 นาที → แล้วจึงอาหาร/ยาอื่น; ห้ามนม กาแฟ น้ำแร่ calcium หรือ antacid พร้อมยา",
+        "choices": [
+          {
+            "label": "A",
+            "text": "รับประทานพร้อมอาหารเพื่อลด GI irritation",
+            "explanation": "✗ ผิด — อาหารมี Ca²⁺ และ cation อื่นที่จับกับ alendronate ทำให้การดูดซึมซึ่งต่ำอยู่แล้ว (<1%) ลดลงอย่างมากจนยาไม่ได้ผล และไม่ได้ลดการระคายเคืองหลอดอาหารอย่างที่คิด การกินพร้อมอาหารเหมาะกับยาที่ต้องการลด GI irritation เช่น NSAIDs หรือ prednisolone และเป็นวิธีที่ถูกเฉพาะ risedronate 35 mg ชนิด delayed-release ซึ่งต้องกินทันทีหลังอาหารเช้า"
+          },
+          {
+            "label": "B",
+            "text": "ดื่มนมพร้อมยา",
+            "explanation": "✗ ผิด — นมมีแคลเซียมสูงซึ่ง chelate กับ alendronate เกิดสารที่ไม่ดูดซึม ทำให้ยาไม่ได้ผล ต้องใช้น้ำเปล่าเท่านั้น (รวมถึงห้ามน้ำแร่ที่มีแร่ธาตุสูง กาแฟ น้ำผลไม้) การดื่มนมเพื่อช่วยลดการระคายเคืองหรือเพิ่มการดูดซึมเหมาะกับยาบางตัว เช่น ยาที่ดูดซึมดีขึ้นเมื่อมีไขมัน แต่ไม่เหมาะกับ bisphosphonate ชนิดรับประทานตัวใดเลย"
+          },
+          {
+            "label": "C",
+            "text": "รับประทานก่อนนอน",
+            "explanation": "✗ ผิด — การกินก่อนนอนแล้วนอนราบทำให้เม็ดยาค้างหรือไหลย้อนกลับในหลอดอาหาร เพิ่มความเสี่ยง esophagitis และแผลหลอดอาหาร อีกทั้งช่วงเย็นมักมีอาหารตกค้างในกระเพาะทำให้ดูดซึมลดลง การกินก่อนนอนเหมาะกับยาที่ทำให้ง่วงหรือออกฤทธิ์ตอนกลางคืน เช่น simvastatin หรือ amitriptyline แต่ไม่เหมาะกับ alendronate"
+          },
+          {
+            "label": "D",
+            "text": "รับประทานตอนเช้าท้องว่างกับน้ำเปล่า 200 mL ก่อนอาหาร เครื่องดื่ม และยาอื่นอย่างน้อย 30 นาที และนั่งหรือยืนตัวตรงอย่างน้อย 30 นาที",
+            "explanation": "✓ ถูก — ครอบคลุมทั้งด้านการดูดซึมและความปลอดภัย: ท้องว่างและน้ำเปล่าหลีกเลี่ยงการ chelate กับ cation ในอาหาร/เครื่องดื่ม รอ ≥30 นาทีให้ยาดูดซึมก่อน น้ำเต็มแก้วและท่าตั้งตรงช่วยให้เม็ดยาลงกระเพาะเร็วไม่ค้างในหลอดอาหาร จึงลด esophagitis และแผลได้ ผู้ที่นั่งหรือยืนตรง 30 นาทีไม่ได้ควรพิจารณา zoledronic acid IV หรือ denosumab แทน"
+          },
+          {
+            "label": "E",
+            "text": "รับประทานได้ตลอดเวลา",
+            "explanation": "✗ ผิด — Alendronate มีข้อกำหนดเรื่องเวลาที่เคร่งครัดเพราะดูดซึมได้น้อยมากและถูกรบกวนด้วยอาหารได้ง่าย การกินเวลาใดก็ได้มักตรงกับมื้ออาหารทำให้ยาไม่ได้ผล คำแนะนำ \"กินได้ตลอดเวลาไม่ขึ้นกับอาหาร\" เหมาะกับยาที่ดูดซึมไม่ขึ้นกับอาหาร เช่น amlodipine หรือ atorvastatin แต่ใช้กับ bisphosphonate ชนิดรับประทานไม่ได้"
+          }
+        ],
+        "key_takeaway": "Alendronate = 'น้ำเปล่า-ท้องว่าง-ตัวตรง-30 นาที'"
+      }
+    },
+    {
+      "id": "e05fa4e2-8c4c-4bdb-b963-664d2e131245",
+      "scenario": "หญิงวัยหมดประจำเดือนอายุ 62 ปี ไม่เคยมีกระดูกหัก ตรวจ BMD ด้วย DXA ค่า T-score เท่าใดที่ใช้วินิจฉัย Osteoporosis ตาม WHO criteria",
+      "choices": [
+        {
+          "label": "A",
+          "text": "T-score ≤ −1.0"
+        },
+        {
+          "label": "B",
+          "text": "T-score ≤ −2.5"
+        },
+        {
+          "label": "C",
+          "text": "T-score ≤ −3.0"
+        },
+        {
+          "label": "D",
+          "text": "T-score ≤ −1.5"
+        },
+        {
+          "label": "E",
+          "text": "T-score ≤ −2.0"
+        }
+      ],
+      "correct_answer": "B",
+      "difficulty": "easy",
+      "explanation": "ตาม WHO: T-score ≥ −1.0 = ปกติ, ระหว่าง −1.0 ถึง −2.5 = osteopenia (low bone mass) และ ≤ −2.5 = osteoporosis โดยใช้กับหญิงวัยหมดประจำเดือนและชายอายุ ≥50 ปี",
+      "detailed_explanation": {
+        "summary": "WHO: T-score ≤ −2.5 ที่ lumbar spine, femoral neck หรือ total hip = osteoporosis",
+        "reason": "โจทย์ถามอะไร: โจทย์ถามจุดตัด T-score ที่ใช้วินิจฉัย osteoporosis ตามเกณฑ์ WHO ในหญิงวัยหมดประจำเดือนที่ยังไม่มีกระดูกหัก ซึ่งเป็นพื้นฐานที่ใช้ต่อยอดไปสู่การตัดสินใจรักษาและการแปลผล DXA\n\nหลักการ/กลไกเชิงลึก: T-score คือจำนวน standard deviation (SD) ที่ BMD ของผู้ป่วยแตกต่างจากค่าเฉลี่ย peak bone mass ของคนหนุ่มสาวเพศเดียวกัน (young adult reference, NHANES III สำหรับสะโพก) คำนวณจาก (BMD ผู้ป่วย − BMD เฉลี่ยของคนหนุ่มสาว) ÷ SD ของคนหนุ่มสาว ทุก 1 SD ที่ลดลงสัมพันธ์กับความเสี่ยงกระดูกหักเพิ่มประมาณ 1.5–2.6 เท่า (สูงสุดที่สะโพก) ส่วน Z-score เทียบกับคนอายุและเพศเดียวกัน ใช้ในเด็ก หญิงก่อนหมดประจำเดือน และชายอายุ <50 ปี โดย Z-score ≤ −2.0 แปลว่า \"below the expected range for age\" ซึ่งไม่ใช่การวินิจฉัย osteoporosis ด้วยตัวเอง\n\nทำไมข้อ B ถูก: WHO (1994) กำหนด: T-score ≥ −1.0 = normal; −1.0 > T-score > −2.5 = osteopenia (low bone mass); T-score ≤ −2.5 = osteoporosis; และ ≤ −2.5 ร่วมกับ fragility fracture = severe (established) osteoporosis ค่าที่ใช้คือค่าต่ำสุดจาก lumbar spine (L1–L4), femoral neck หรือ total hip (หรือ 33% radius ในบางกรณี) ดังนั้นคำตอบคือ T-score ≤ −2.5\n\nหลักฐานและแนวทางเวชปฏิบัติ: เกณฑ์ WHO ได้รับการยอมรับโดย ISCD, AACE/ACE 2020, Endocrine Society และมูลนิธิโรคกระดูกพรุนแห่งประเทศไทย AACE/ACE และ BHOF ขยายนิยามการวินิจฉัยทางคลินิกเพิ่มเติม: fragility fracture ที่สะโพกหรือกระดูกสันหลังวินิจฉัยได้โดยไม่ขึ้นกับ BMD และ T-score −1.0 ถึง −2.5 ร่วมกับ fragility fracture ที่ proximal humerus, pelvis หรือ distal forearm หรือ FRAX สูงเกินเกณฑ์ ก็จัดเป็น osteoporosis ได้\n\nการประยุกต์กับผู้ป่วยจริง: ในทางปฏิบัติ เภสัชกรควรอ่านรายงาน DXA โดยดูค่าต่ำสุดของบริเวณที่ใช้ได้ ตรวจว่าเป็น T-score หรือ Z-score ให้เหมาะกับอายุ/เพศ และตรวจหาเหตุทุติยภูมิ (vitamin D, Ca, PTH, TSH, การทำงานของไต, การใช้ glucocorticoid หรือ aromatase inhibitor) ก่อนเริ่มยา ในผู้ป่วยรายนี้ถ้า T-score ≤ −2.5 จะได้รับการวินิจฉัย osteoporosis และพิจารณาเริ่มยา เช่น bisphosphonate ร่วมกับ Ca/vitamin D และการป้องกันการหกล้ม\n\nการติดตามและสัญญาณอันตราย: ติดตาม DXA ซ้ำทุก 1–2 ปีด้วยเครื่องเดิมและเทียบกับ least significant change ระวังค่า lumbar spine ที่สูงเกินจริงจาก osteophyte, aortic calcification หรือ compression fracture ในผู้สูงอายุ และเฝ้าระวังอาการปวดหลังเฉียบพลันหรือส่วนสูงลด ≥4 cm ซึ่งอาจบ่งชี้ vertebral fracture\n\nจุดที่มักสับสนและกับดักข้อสอบ: กับดักคือ −1.0 (เกณฑ์ขอบล่างของปกติ ไม่ใช่ osteoporosis) และ −3.0 (เกณฑ์ very high risk ของ AACE ไม่ใช่เกณฑ์วินิจฉัย) นอกจากนี้ −2.0 คือเกณฑ์ Z-score ในคนอายุน้อย อย่าใช้ T-score ในหญิงก่อนหมดประจำเดือน และ T-score −2.5 พอดีถือเป็น osteoporosis (≤ ไม่ใช่ <)\n\nสรุปท่องสอบ: WHO T-score: ≥ −1.0 ปกติ | −1.0 ถึง −2.5 osteopenia | ≤ −2.5 osteoporosis | ≤ −2.5 + fracture = severe osteoporosis; Z-score ≤ −2.0 ใช้ในคนอายุน้อย",
+        "choices": [
+          {
+            "label": "A",
+            "text": "T-score ≤ −1.0",
+            "explanation": "✗ ผิด — −1.0 เป็นจุดตัดระหว่างปกติกับ osteopenia: T-score ≥ −1.0 คือปกติ และค่าต่ำกว่า −1.0 ถึงก่อน −2.5 คือ low bone mass (osteopenia) ซึ่งยังไม่ใช่ osteoporosis ตัวเลือกนี้จะถูกถ้าโจทย์ถามจุดเริ่มต้นของ osteopenia หรือเมื่อผู้ป่วยมี T-score −1.0 ถึง −2.5 ร่วมกับ fragility fracture ที่ proximal humerus, pelvis หรือ distal forearm ซึ่ง AACE จัดเป็น osteoporosis ทางคลินิก"
+          },
+          {
+            "label": "B",
+            "text": "T-score ≤ −2.5",
+            "explanation": "✓ ถูก — WHO กำหนด T-score ≤ −2.5 ที่ lumbar spine, femoral neck หรือ total hip (ค่าต่ำสุด) เป็นเกณฑ์วินิจฉัย osteoporosis ในหญิงวัยหมดประจำเดือนและชายอายุ ≥50 ปี ถ้ามี fragility fracture ร่วมด้วยจัดเป็น severe osteoporosis ผู้ป่วยรายนี้เป็นหญิงหมดประจำเดือนอายุ 62 ปี จึงใช้ T-score ได้โดยตรง ค่า −2.5 พอดีก็ถือว่าเป็น osteoporosis"
+          },
+          {
+            "label": "C",
+            "text": "T-score ≤ −3.0",
+            "explanation": "✗ ผิด — T-score < −3.0 ไม่ใช่เกณฑ์วินิจฉัยแต่เป็นหนึ่งในเกณฑ์ very high fracture risk ของ AACE/ACE 2020 ซึ่งใช้ตัดสินว่าควรเริ่มด้วย anabolic agent เช่น teriparatide หรือ romosozumab ตัวเลือกนี้จะถูกถ้าโจทย์ถามเกณฑ์ T-score ที่จัดผู้ป่วยเป็น very high risk ไม่ใช่เกณฑ์วินิจฉัยโรค ถ้าใช้ −3.0 วินิจฉัยจะพลาดผู้ป่วยที่มี T-score −2.5 ถึง −3.0"
+          },
+          {
+            "label": "D",
+            "text": "T-score ≤ −1.5",
+            "explanation": "✗ ผิด — −1.5 ไม่ใช่จุดตัดใดในเกณฑ์ WHO ค่านี้อยู่ในช่วง osteopenia (ต่ำกว่า −1.0 แต่ยังสูงกว่า −2.5) ซึ่งการตัดสินใจเริ่มยาขึ้นกับ FRAX (hip ≥3% หรือ major osteoporotic ≥20%) ไม่ใช่ตัวเลข T-score เพียงอย่างเดียว ตัวเลือกนี้จะถูกเฉพาะเมื่อโจทย์ถามว่า T-score ค่าใดจัดอยู่ในช่วง osteopenia หรือเมื่อผู้ป่วยที่มี T-score −1.5 มี FRAX สูงเกินเกณฑ์ ซึ่งควรพิจารณารักษาแม้ T-score ไม่ถึง −2.5"
+          },
+          {
+            "label": "E",
+            "text": "T-score ≤ −2.0",
+            "explanation": "✗ ผิด — −2.0 สับสนกับเกณฑ์ Z-score: ในเด็ก หญิงก่อนหมดประจำเดือน และชายอายุ <50 ปี ISCD ใช้ Z-score ≤ −2.0 แปลว่า \"below the expected range for age\" ส่วน T-score −2.0 ในหญิงหมดประจำเดือนยังเป็น osteopenia ตัวเลือกนี้จะถูกถ้าโจทย์ถามถึงจุดตัด Z-score ในผู้ป่วยอายุน้อย ไม่ใช่ T-score ตาม WHO"
+          }
+        ],
+        "key_takeaway": "−1 ปกติ, −2.5 ลงไปพรุน (ใช้ T-score เฉพาะหญิงหมดประจำเดือน/ชาย ≥50)"
+      }
+    }
+  ]
+}
